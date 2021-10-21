@@ -1,5 +1,3 @@
 theme: jekyll-theme-minimal
-.
-├── about.md    # => https://uwlib-cams.github.io/MARC2RDA/about.html
-├── index.html    # => https://uwlib-cams.github.io/MARC2RDA/
-└── contact.html  # => https://uwlib-cams.github.io/MARC2RDA/projectroster.html
+title: MARC21 to RDA-RDF Mapping Project
+description: This is a project of the Metadata and Cataloging Initiatives Unit of the Cataloging and Metadata Services Department at the University of Washington Libraries initiated in 2021 to create a more robust mapping between the MARC21 bibliographic format and RDA-RDF, with the goal of facilitating a future project to create a corresponding data conversion tool. Authority data is out of scope for this mapping. This project builds on the work of the RDA/MARC 21 Alignment Task Force within the RSC Technical Working Group.
