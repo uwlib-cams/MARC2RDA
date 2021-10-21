@@ -1,0 +1,28 @@
+"For all fields: If not applicable, leave blank. To indicate ""any number 0-9"" use 0-9. To indicate ""any value"" use *. MARC tag formatting: 3 digit tag, followed by space, followed by indicators (blank indicators use #), followed by either: space, then $ space [letter or number] for subfields, or /[number] for character positions. Examples: 264 #1 $c ; 007/07. Notes should be initialed and dated, with separate notes in the same column/row separated by ;",,
+SPREADSHEET COLUMN,EXAMPLE,DETAILS
+Not Mapped,x,"If field should be left out of mapping for any reason, mark this field with ""x"""
+MARCField,250,main MARC tag
+MARCFieldLabel,EDITION STATEMENT (R),label for MARC tag
+MARCInd1Label,Undefined,label for the first indicator (not individual values)
+MARCInd1Value,*,value for the first indicator
+MARCInd1ValueLabel,,label for the value of the first indicator
+MARCInd2Label,Undefined,label for the second indicator (not individual values)
+MARCInd2Value,*,value for the second indicator
+MARCInd2ValueLabel,,label for individual MARC second indicator values
+CharacterPosition,0,
+CharacterPositionLabel,category of material,label for the character position in the previous column (not the value)
+MARCSubfield,a,"do not include symbols, just the letter/number"
+MARCSubfieldLabel,Edition statement (NR),"label for the subfield, not for individual values"
+CodeValue,c,"for coded fields, such as 007, where MARC has specified the meanings, the code itself goes here."
+CodeValueLabel,,label for the specific code indicated in previous column
+Condition1,264 00 $b,"Mapping often needs to specify ""If A equals A1, then A maps to B"". (B=RDA Registry URI) Sometimes multiple layers of these statements are needed to achieve sufficient specificity. This should represent A for the first layer of If/then conditions."
+Condition1Value,University of Washington,"Mapping often needs to specify ""If A equals A1, then A maps to B"". (B=RDA Registry URI) Sometimes multiple layers of these statements are needed to achieve sufficient specificity. This should represent A1 of the first layer of conditions."
+MARCTagCondition2,007/00,"Mapping often needs to specify ""If A equals A1, then A maps to B"". (B=RDA Registry URI) Sometimes multiple layers of these statements are needed to achieve sufficient specificity. This should represent A of the second layer of conditions."
+Condition2Value,m,"Mapping often needs to specify ""If A equals A1, then A maps to B"". (B=RDA Registry URI) Sometimes multiple layers of these statements are needed to achieve sufficient specificity. This should represent A1 of the second layer of conditions. If more conditions are needed, add another pair of columns for ""MARCTagCondition3"" and ""Condition3Values"" and so on. Do not express multiple conditions in one column."
+RDA Registry URI,http://rdaregistry.info/Elements/m/P30107,"Full URI for the RDA Registry property the MARC maps to. Use constrained properties. If there is a one-to-many mapping, create a new row so that each row is limited to one URI."
+RDA Registry Label,has edition statement,label from the RDA Registry for the URI (for human readability). Do not include quotes.
+Recording Method,"one of the following: unstructured description, structured description, identifier, IRI","RDA Recording Method used in the MARC data, if known and if consistent."
+Justification for Mapping,Chose this property over that property because of reasons.,"Notes on why a particular mapping was chosen. Not required, but recommended when multiple choices are possible."
+Transformation Notes,This property should be paired with these other ones to create multiple RDA/RDF statements that look like this: [code example in .ttl],Notes on what the resulting RDA-RDF should look like.
+Problems with Mapping,Looks like this field with these conditions should map to some other property.,Notes on problems with the mapping
+Notes (Uncategorized),"This field is obsolete, but exists in legacy data so we should map it. -CEC 2021-09-29; Here's another note about another thing. - CEC 2021-10-01",All notes that do not fall under another notes category.
