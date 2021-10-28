@@ -15,11 +15,11 @@ Please post issues and related discussions [here.](https://github.com/uwlib-cams
 ### Tools
 [GitHub for Desktop](https://desktop.github.com/)<br>
 # Project Roster
--Crystal Clements [CECSpecialistI](https://github.com/CECSpecialistI)<br>
--Theo Gerontakos [gerontakos](https://github.com/gerontakos)<br>
--Adam Schiff [AdamSchiff](https://github.com/AdamSchiff)<br>
--Cate Gerhart [CatalogerCate](https://github.com/CatalogerCate)<br>
--Benjamin Riesenberg [briesenberg07](https://github.com/briesenberg07)<br>
--Jian Lee [JianPLee](https://github.com/JianPLee)<br>
--Junghae Lee [junghaelee](https://github.com/junghaelee)<br>
--Melissa Morgan [mcm104](https://github.com/mcm104)<br>
+-Crystal Clements [CECSpecialistI](https://github.com/CECSpecialistI), Mapping Contributor, Project Manager<br>
+-Theo Gerontakos [gerontakos](https://github.com/gerontakos), Mapping Contributor, Project Supervisor<br>
+-Adam Schiff [AdamSchiff](https://github.com/AdamSchiff), Mapping Contributor<br>
+-Cate Gerhart [CatalogerCate](https://github.com/CatalogerCate), Mapping Consultant<br>
+-Benjamin Riesenberg [briesenberg07](https://github.com/briesenberg07), Metadata Consultant, Limited Mapping Contributor<br>
+-Jian Lee [JianPLee](https://github.com/JianPLee), Mapping Contributor<br>
+-Junghae Lee [junghaelee](https://github.com/junghaelee), Mapping Contributor<br>
+-Melissa Morgan [mcm104](https://github.com/mcm104), Metadata Consultant, Limited Mapping Contributor<br>
