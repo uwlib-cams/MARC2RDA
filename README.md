@@ -18,8 +18,10 @@ Please post issues and related discussions [here.](https://github.com/uwlib-cams
 -Crystal Clements [CECSpecialistI](https://github.com/CECSpecialistI), Mapping Contributor, Project Manager<br>
 -Theo Gerontakos [gerontakos](https://github.com/gerontakos), Mapping Contributor, Project Supervisor<br>
 -Adam Schiff [AdamSchiff](https://github.com/AdamSchiff), Mapping Contributor<br>
--Cate Gerhart [CatalogerCate](https://github.com/CatalogerCate), Mapping Consultant<br>
--Benjamin Riesenberg [briesenberg07](https://github.com/briesenberg07), Metadata Consultant<br>
+-Sita Bhagwandin [Soersatie](https://github.com/Soersatie), Mapping Contributor<br>
+-Laura Akerman, Mapping Contributor<br>
 -Jian Lee [JianPLee](https://github.com/JianPLee), Mapping Contributor<br>
 -Junghae Lee [junghaelee](https://github.com/junghaelee), Mapping Contributor<br>
 -Melissa Morgan [mcm104](https://github.com/mcm104), Metadata Consultant, Mapping Contributor<br>
+-Cate Gerhart [CatalogerCate](https://github.com/CatalogerCate), Mapping Consultant<br>
+-Benjamin Riesenberg [briesenberg07](https://github.com/briesenberg07), Metadata Consultant<br>
