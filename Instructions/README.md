@@ -51,128 +51,154 @@ _Last updated 18 January 2022_
 | Example | Details |
 |---|---|
 | x | If field should be left out of mapping for any reason, mark this field with "x". |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
  ## MARCField
 | Example | Details |
 |---|---|
 | 250 | Main MARC tag. |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
  
  ## MARCFieldLabel
 | Example | Details |
 |---|---|
 | EDITION STATEMENT (R) | Label for MARC tag. |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
  
  ## MARCInd1Label
 | Example | Details |
 |---|---|
 | Undefined | Label for the first indicator (_not_ individual values). |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
  ## MARCInd1Value
 | Example | Details |
 |---|---|
 | * | Value for the first indicator. |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
  ## MARCInd1ValueLabel
 | Example | Details |
 |---|---|
 | \[blank\] | Label for the value of the first indicator |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
  ## MARCInd2Label
 | Example | Details |
 |---|---|
 | Undefined | Label for the second indicator (_not_ individual values). |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
  ## MARCInd2Value
 | Example | Details |
 |---|---|
 | * | Value for the second indicator. |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
  ## MARCInd2ValueLabel
 | Example | Details |
 |---|---|
 | \[blank\] | Label for individual MARC second indicator values. |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
  ## CharacterPosition
 | Example | Details |
 |---|---|
 | 0 |  |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
  ## CharacterPositionLabel
 | Example | Details |
 |---|---|
 | category of material | Label for the character position in the previous column (_not_ the value) |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
  ## MARCSubfield
 | Example | Details |
 |---|---|
 | a | Do not include symbols; just the letter/number. |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
  ## MARCSubfieldLabel
 | Example | Details |
 |---|---|
 | Edition statement (NR) | Label for the subfield (_not_ for individual values). |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
  ## CodeValue
 | Example | Details |
 |---|---|
 | c | For coded fields, such as 007, where MARC has specified the meanings, the code itself goes here. |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
  ## CodeValueLabel
 | Example | Details |
 |---|---|
 | \[blank\] | Label for the specific code indicated in previous column. |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
  ## MARCTagCondition1
 | Example | Details |
 |---|---|
 | 264 00 $b | Mapping often needs to specify "**If A equals A1, then A maps to B**". (B=RDA Registry URI) Sometimes multiple layers of these statements are needed to achieve sufficient specificity. **This should represent A** for the _first_ layer of conditions. |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
  ## Condition1Value
 | Example | Details |
 |---|---|
 | University of Washington | Mapping often needs to specify "**If A equals A1, then A maps to B**". (B=RDA Registry URI) Sometimes multiple layers of these statements are needed to achieve sufficient specificity. **This should represent A1** of the _first_ layer of conditions. |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
  ## MARCTagCondition2
 | Example | Details |
 |---|---|
 | 007/00 | Mapping often needs to specify "**If A equals A1, then A maps to B**". (B=RDA Registry URI) Sometimes multiple layers of these statements are needed to achieve sufficient specificity. This should represent **A** of the _second_ layer of conditions. |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
  ## Condition2Value
 | Example | Details |
 |---|---|
 | m | Mapping often needs to specify "**If A equals A1, then A maps to B**". (B=RDA Registry URI) Sometimes multiple layers of these statements are needed to achieve sufficient specificity. This should represent **A1** of the _second_ layer of conditions. If more conditions are needed, add another pair of columns for "MARCTagCondition3" and "Condition3Values" and so on. Do not express multiple conditions in one column. |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
  ## RDA Registry URI
 | Example | Details |
 |---|---|
 | <http://rdaregistry.info/Elements/m/P30107> | Full URI for the RDA Registry property the MARC maps to. Use constrained properties. If there is a one-to-many mapping, create a new row so that each row is limited to one URI. |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
  ## RDA Registry Label
 | Example | Details |
 |---|---|
 | has edition statement | Label from the RDA Registry for the URI (for human readability). Do _not_ include quotes. |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
  ## Recording Method
 | Example | Details |
 |---|---|
 | One of the following: unstructured description, structured description, identifier, IRI | RDA Recording Method used in the MARC data, if known and if consistent. |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
  ## Justification for Mapping
 | Example | Details |
 |---|---|
 | We chose this property over that property because of reasons. | Notes on why a particular mapping was chosen. Not required, but recommended when multiple choices are possible. |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
  ## Transformation Notes
 | Example | Details |
 |---|---|
 | This property should be paired with these other ones to create multiple RDA/RDF statements that look like this: \[code example in .ttl\] | Notes on what the resulting RDA-RDF should look like. Not required. |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
  ## Problems with Mapping
 | Example | Details |
 |---|---|
 | Looks like this field with these conditions should map to some other property. | Notes on problems with the mapping. Not required. |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
  ## Notes (Uncategorized)
 | Example | Details |
 |---|---|
 | This field is obsolete, but exists in legacy data so we should map it. -CEC 2021-09-29; Here's another note about another thing. - CEC 2021-10-01 | All notes that do not fall under another notes category. |
+_[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
