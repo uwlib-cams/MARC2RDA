@@ -1,8 +1,8 @@
 # Spreadsheet Instructions
 _Last updated 18 January 2022_
 ## Table of Contents
- - [General Rules](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#general_rules)
- - [Not Mapped](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#not_mapped)
+ - [General Rules](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#general-rules)
+ - [Not Mapped](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#not-mapped)
  - [MARCField](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#marcfield)
  - [MARCFieldLabel](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#marcfieldlabel)
  - [MARCInd1Label](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#marcind1label)
@@ -21,13 +21,13 @@ _Last updated 18 January 2022_
  - [Condition1Value](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#condition1value)
  - [MARCTagCondition2](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#marctagcondition2)
  - [Condition2Value](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#condition2value)
- - [RDA Registry URI](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#rda_registry_iri)
- - [RDA Registry Label](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#rda_registry_label)
- - [Recording Method](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#recording_Method)
- - [Justification for Mapping](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#justification_for_mapping)
- - [Transformation Notes](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#transformation_notes)
- - [Problems with Mapping](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#problems_with_mapping)
- - [Notes (Uncategorized)](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#notes_uncategorized)
+ - [RDA Registry URI](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#rda-registry-iri)
+ - [RDA Registry Label](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#rda-registry-label)
+ - [Recording Method](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#recording-Method)
+ - [Justification for Mapping](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#justification-for-mapping)
+ - [Transformation Notes](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#transformation-notes)
+ - [Problems with Mapping](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#problems-with-mapping)
+ - [Notes (Uncategorized)](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#notes-uncategorized)
  
  ## General Rules
  - If not applicable, leave blank.
