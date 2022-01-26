@@ -171,20 +171,44 @@ Not Mapped,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLab
 ,340,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI,,,,,,,http://rdaregistry.info/Elements/m/P30453,has illustrative content,,,,,,,
 ,340,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI,,,,,,,http://rdaregistry.info/Elements/m/P30456,has colour content,,,,,,,
 x,340,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,a,Material base and configuration (R),,,n/a,n/a,n/a,n/a,http://rdaregistry.info/Elements/e/P20573,has colour,n/a,n/a,n/a,n/a,n/a,n/a,Error in RDA Registry? No colour content in $a; that's in $g
-,340,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,a,Material base and configuration (R),,,,,,,http://rdaregistry.info/Elements/m/P30208,has base material,http://rdaregistry.info/Elements/m/P30208,has base material,n/a,340$a maps precidely to rdam:P30208,Enter value of 240$a as a string,,"1. ""Material base"" is clear, it maps to ""base material,"" but what is ""configuration""?
+,340,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,a,Material base and configuration (R),,,,,,,http://rdaregistry.info/Elements/m/P30208,has base material,http://rdaregistry.info/Elements/m/P30208,has base material,n/a,340$a maps precisely to rdam:P30208,Enter value of 340$a as a string,,"1. ""Material base"" is clear, it maps to ""base material,"" but what is ""configuration""?
 2. All 007s have material information in 007/01 and 007/02; some other 007s have additional material information; these should not affect the mapping of 340$a
 3. A few 008 positions describe materials; these should not affectr the mapping of 340$a
 4. Structured vs. unstructured distinction is unimportant here; it may be structured (from a VES) but it will appear the same as an unstructured value
 5. Ignore all $2; we will not do anything to alter the value of 240$a based on $2
 6. Entering IRIs as values for rdam:P30208 should not come into play for 340$a; that should be a concern for 340$0; it's difficult to conceive of the use of 340$1 as all the IRIs probably point toward concepts in a VES, not the property of a thing as an RWO -- however, in the Toolkit, the only option listed for recording an IRI is to ""Record an IRI for a term or concept as a real-worl object selected from a suitable vocabulary encoding scheme."" Compare this to the PCC example for 338 value from the RDA carriers vocabulary at  https://www.loc.gov/aba/pcc/bibframe/TaskGroups/URI%20FAQs.pdf ; also in that same document, look at section 13; it seems to affirm that RDA vocabs for base material at least would go in $0. "
-x,340,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,a,Material base and configuration (R),,,n/a,n/a,n/a,n/a,http://rdaregistry.info/Elements/m/P30304,has material,n/a,n/a,n/a,n/a,n/a,n/a,Broad parent property for both base material and applied material; $a should always be base material.
+x,340,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,a,Material base and configuration (R),,,n/a,n/a,n/a,n/a,http://rdaregistry.info/Elements/m/P30304,has material,n/a,n/a,n/a,n/a,n/a,"Might need this if we can't distinguish between ""applied material"" and ""base material""",Broad parent property for both base material and applied material; $a should always be base material.
 x,340,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,a,Material base and configuration (R),,,n/a,n/a,n/a,n/a,http://rdaregistry.info/Elements/m/P30456,has colour content,n/a,n/a,n/a,n/a,n/a,n/a,Error in RDA Registry? No colour content in $a; that's in $g
-,340,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,b,Dimensions (R),,,,,,,http://rdaregistry.info/Elements/m/P30169,has dimensions,,,,,,,
-,340,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,b,Dimensions (R),,,,,,,http://rdaregistry.info/Elements/m/P30170,has dimensions of cartographic image,,,,,,,
-,340,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,b,Dimensions (R),,,,,,,http://rdaregistry.info/Elements/m/P30171,has dimensions of still image,,,,,,,
-,340,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,c,Materials applied to surface (R),,,,,,,http://rdaregistry.info/Elements/m/P30084,has applied material,,,,,,,
-,340,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,c,Materials applied to surface (R),,,,,,,http://rdaregistry.info/Elements/m/P30122,has emulsion on microfilm and microfiche,,,,,,,
-,340,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,c,Materials applied to surface (R),,,,,,,http://rdaregistry.info/Elements/m/P30304,has material,,,,,,,
+,340,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,b,Dimensions (R),,,336$a,"not(""cartographic image"" OR ""still image"")",n/a,n/a,http://rdaregistry.info/Elements/m/P30169,has dimensions,http://rdaregistry.info/Elements/m/P30169,has dimensions,unstructured (can only be an unstrctured value),All dimensions except for dimensions for still images and cartographic images map to P30169,"choose:
+when: $2 = ""rdacontent"":
+   if: 
+        $a != ""still image""
+        OR
+        $a != ""cartographic image""
+        OR
+        $0 != rdaco:1014
+        OR
+        $0 != rdaco:1002
+map to P30169
+when: $2 != ""rdacontent""
+map to P30169",Is MARC 336 $a or $0 the best way to determine that we should use the broadest dimenstions property (i.e. P30169)?,NT=//m/30171
+,340,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,b,Dimensions (R),,,336$a,"""cartographic image""",n/a,n/a,http://rdaregistry.info/Elements/m/P30170,has dimensions of cartographic image,http://rdaregistry.info/Elements/m/P30170,has dimensions of cartographic image,unstructured (can only be an unstrctured value),"If we determine the item being described is a ""cartographic image,"" we should use the subproperty of ""has dimensions of still imageo","when:
+ $2 = ""rdacontent""
+AND
+    ($a = ""cartographic image"")
+    OR
+    ($0 = rdaco:1002)
+map to P30170",Is MARC 336 $a or $0 the best way to determine that we should use the property for cartographic image (i.e. P30170)?,BT=//m/P30171
+,340,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,b,Dimensions (R),,,336$a,"""still image""",n/a,n/a,http://rdaregistry.info/Elements/m/P30171,has dimensions of still image,http://rdaregistry.info/Elements/m/P30171,has dimensions of still image,unstructured (can only be an unstrctured value),"If we determine the item being described is a ""still image,"" we should use the subproperty of ""has dimensions""","when:
+ $2 = ""rdacontent""
+AND
+    ($a = ""still image"")
+    OR
+    ($0 = rdaco:1014)
+map to P30171",Is MARC 336 $a or $0 the best way to determine that we should use the property for still image (i.e. P30171)?,BT=//m/P30169; NT=//m/P30170
+,340,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,c,Materials applied to surface (R),,,n/a,n/a,n/a,n/a,http://rdaregistry.info/Elements/m/P30084,has applied material,http://rdaregistry.info/Elements/m/P30084,has applied material,n/a: all values will map to P30084,340$c maps precisely to P30084,Enter value of 340$c as a string,n/a,none
+x,340,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,c,Materials applied to surface (R),,,n/a,n/a,n/a,n/a,http://rdaregistry.info/Elements/m/P30122,has emulsion on microfilm and microfiche,n/a,n/a,n/a,n/a,n/a,"Doesn't seem to be any reliable way to determine if we need P30122 from an analysis of MARC data; the most promising field is 007 = (00=h) AND (10=a oOR b OR c OR m); however 007 can be decribing the whole or a part, so it's likely not a reliable determinant for the need of P30122",n/a
+x,340,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,c,Materials applied to surface (R),,,n/a,n/a,n/a,n/a,http://rdaregistry.info/Elements/m/P30304,has material,n/a,n/a,n/a,n/a,n/a,"Might need this if we can't distinguish between ""applied material"" and ""base material""",n/a
 ,340,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,d,Information recording technique (R),,,,,,,http://rdaregistry.info/Elements/m/P30187,has production method,,,,,,,
 ,340,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,e,Support (R),,,,,,,http://rdaregistry.info/Elements/m/P30186,has mount,,,,,,,
 ,340,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,e,Support (R),,,,,,,http://rdaregistry.info/Elements/m/P30304,has material,,,,,,,
