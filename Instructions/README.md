@@ -1,5 +1,6 @@
 # Spreadsheet Instructions
 _Last updated 19 January 2022_
+## [Video Demonstration](https://vimeo.com/675022150)
 ## Table of Contents
  - [Spreadsheet Structure](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#spreadsheet-structure)
  - [General Rules](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#general-rules)
