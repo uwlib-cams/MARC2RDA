@@ -5,7 +5,7 @@ _Last updated 19 January 2022_
  - [Spreadsheet Structure](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#spreadsheet-structure)
  - [General Rules](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#general-rules)
  - Spreadsheet columns
-   - [Not Mapped](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#not-mapped)
+   - [Status](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#status)
    - [MARCField](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#marcfield)
    - [MARCFieldLabel](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#marcfieldlabel)
    - [MARCInd1Label](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#marcind1label)
@@ -36,21 +36,21 @@ _Last updated 19 January 2022_
  ### Example of an incomplete mapping
  These rows only contain the information for a possible MARC 21 field. These rows will require mapping to an RDA property, and possibly the addition of conditions or notes. Additional rows may need to be added to articulate multiple conditions, or multiple possible RDA properties.
  
- | Not Mapped | MARCField | MARCFieldLabel | MARCInd1Label | MARCInd1Value | MARCInd1ValueLabel | MARCInd2Label | MARCInd2Value | MARCInd2ValueLabel | CharacterPosition | CharacterPositionLabel | MARCSubfield | MARCSubfieldLabel | CodeValue | CodeValueLabel | MARCTagCondition1 | Condition1Values | MARCTagCondition2 | Condition2Values | RDA Registry URI | RDA Registry Label | Recording Method | Justification for Mapping | Transformation Notes | Problems with Mapping | Notes (Uncategorized) | Milestone |
+ | Status | MARCField | MARCFieldLabel | MARCInd1Label | MARCInd1Value | MARCInd1ValueLabel | MARCInd2Label | MARCInd2Value | MARCInd2ValueLabel | CharacterPosition | CharacterPositionLabel | MARCSubfield | MARCSubfieldLabel | CodeValue | CodeValueLabel | MARCTagCondition1 | Condition1Values | MARCTagCondition2 | Condition2Values | RDA Registry URI | RDA Registry Label | Recording Method | Justification for Mapping | Transformation Notes | Problems with Mapping | Notes (Uncategorized) | Milestone |
  |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
  | | 210 | ABBREVIATED TITLE (R) | Title added entry | 0 | No added entry | Type | # | Abbreviated key title | | | a | Abbreviated title (NR) | | | | | | | | | | | | | | |
  
  ### Example of a partially-complete mapping
  These rows contain mappings adapted from the [RSC Technical Working Group's RDA-to-MARC 21 mapping](http://www.rdaregistry.info/Maps/mapRDA2M21B.html). These mappings should be reviewed and edited as necessary.
  
- | Not Mapped | MARCField | MARCFieldLabel | MARCInd1Label | MARCInd1Value | MARCInd1ValueLabel | MARCInd2Label | MARCInd2Value | MARCInd2ValueLabel | CharacterPosition | CharacterPositionLabel | MARCSubfield | MARCSubfieldLabel | CodeValue | CodeValueLabel | MARCTagCondition1 | Condition1Values | MARCTagCondition2 | Condition2Values | RDA Registry URI | RDA Registry Label | Recording Method | Justification for Mapping | Transformation Notes | Problems with Mapping | Notes (Uncategorized) | Milestone |
+ | Status | MARCField | MARCFieldLabel | MARCInd1Label | MARCInd1Value | MARCInd1ValueLabel | MARCInd2Label | MARCInd2Value | MARCInd2ValueLabel | CharacterPosition | CharacterPositionLabel | MARCSubfield | MARCSubfieldLabel | CodeValue | CodeValueLabel | MARCTagCondition1 | Condition1Values | MARCTagCondition2 | Condition2Values | RDA Registry URI | RDA Registry Label | Recording Method | Justification for Mapping | Transformation Notes | Problems with Mapping | Notes (Uncategorized) | Milestone |
  |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
  | | 264 | PRODUCTION, PUBLICATION, DISTRIBUTION, MANUFACTURE, AND COPYRIGHT NOTICE (R) | Sequence of statements | * | | Function of entity | 4 | Copyright notice date | | | c | Date of production, publication, distribution, manufacture, or copyright notice (R) | | | | | | | http://rdaregistry.info/Elements/m/P30007 | has copyright date | | | | | | |
  
  ### Example of a complete mapping
  These rows have been filled-out, reviewed, and marked as completed in the [project page](https://github.com/uwlib-cams/MARC2RDA/projects/1).
  
- | Not Mapped | MARCField | MARCFieldLabel | MARCInd1Label | MARCInd1Value | MARCInd1ValueLabel | MARCInd2Label | MARCInd2Value | MARCInd2ValueLabel | CharacterPosition | CharacterPositionLabel | MARCSubfield | MARCSubfieldLabel | CodeValue | CodeValueLabel | MARCTagCondition1 | Condition1Values | MARCTagCondition2 | Condition2Values | RDA Registry URI | RDA Registry Label | Recording Method | Justification for Mapping | Transformation Notes | Problems with Mapping | Notes (Uncategorized) | Milestone |
+ | Status | MARCField | MARCFieldLabel | MARCInd1Label | MARCInd1Value | MARCInd1ValueLabel | MARCInd2Label | MARCInd2Value | MARCInd2ValueLabel | CharacterPosition | CharacterPositionLabel | MARCSubfield | MARCSubfieldLabel | CodeValue | CodeValueLabel | MARCTagCondition1 | Condition1Values | MARCTagCondition2 | Condition2Values | RDA Registry URI | RDA Registry Label | Recording Method | Justification for Mapping | Transformation Notes | Problems with Mapping | Notes (Uncategorized) | Milestone |
  |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
  | | 490 | SERIES STATEMENT (R) | Series tracing policy | * | | Undefined | * | | | | a, x, v | | | | | | | | http://rdaregistry.info/Elements/m/P30106 | has series statement | structured description | Chose not to use sub-properties because number of conditions is not sustainable for transformation. MARC does not have separate subfields for each element. Chose to retain MARC subfields when ISBD punctuation is absent in order to maintain structure of description. | when LDR 18 = a or i, remove marc subfields and rely on ISBD punctuation. When LDR 18=c, retain marc subfield codes to separate pieces of information | | | |
  
@@ -72,10 +72,15 @@ _Last updated 19 January 2022_
  - 264 #1 $c
  - 007/07
  
- ## Not Mapped
+ ## Status
 | Example | Details |
 |---|---|
-| x | If field should be left out of mapping for any reason, mark this field with "x". |
+|  | Needs human review. A blank status field indicates that this mapping hasn't been changed since it was machine-generated. |
+| not mapped | If the MARC field identified in this row should be left out of the mapping for any reason, record "not mapped". |
+| first pass | Once a row has been initially mapped by a human, but has not yet been reviewed by someone else, record "first pass". |
+| delete | If you are certain that an existing row should be deleted from our mapping, record "delete". |
+| delete? | If you think a row should be deleted from our mapping, but are not entirely sure, record "delete?". |
+| ? | If you have questions or uncertainty about a row, or you think the row needs more attention from another human, record "?". |
 
 _[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
