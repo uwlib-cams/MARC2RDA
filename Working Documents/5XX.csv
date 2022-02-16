@@ -1091,8 +1091,8 @@ Not Mapped,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLab
 ,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30132,has designation of named revision of edition,,,,,
 ,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30133,has designation of edition,,,,,
 ,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30134,has title of manifestation,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30136,is electronic reproduction of manifestation of,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,,,,,
+d,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30136,is electronic reproduction of manifestation of,,,,,
+?,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,,"The note could be about the work, expression, manifestation or item, or a combination of them.  The only superclass for these entities is ""RDA Entity""",,,
 ,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30138,has special playback characteristic,,,,,
 ,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30141,has contact information,,,,,
 ,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,,,,,
@@ -1252,90 +1252,90 @@ Not Mapped,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLab
 ,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30378,has book designer collective agent,,,,,
 ,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30379,has engraver collective agent,,,,,
 ,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30380,has braille embosser collective agent,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30381,has printmaker collective agent,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30382,has caster collective agent,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30383,has lithographer collective agent,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30384,has platemaker collective agent,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30385,has etcher collective agent,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30386,has collotyper collective agent,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30387,has printer collective agent,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30388,has distributor collective agent,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30389,has producer collective agent of unpublished manifestation,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30390,has manufacturer collective agent,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30391,has publisher collective agent,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30392,has creator collective agent of manifestation,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30393,has papermaker collective agent,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30394,has contributor corporate body to aggregate,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30395,has surveyor corporate body,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30396,has contributor corporate body of cartography,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30397,has contributor corporate body of choreography,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30398,has contributor corporate body of moving image,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30399,has contributor corporate body of music,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30400,has contributor corporate body of speech,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30401,has contributor corporate body of still image,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30402,has contributor corporate body of text,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30403,has contributor corporate body of object,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30404,has contributor corporate body of computer content,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30405,has broadcaster corporate body,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30406,has film distributor corporate body,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30407,has book designer corporate body,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30408,has engraver corporate body,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30409,has braille embosser corporate body,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30410,has printmaker corporate body,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30411,has caster corporate body,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30412,has lithographer corporate body,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30413,has platemaker corporate body,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30414,has etcher corporate body,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30415,has collotyper corporate body,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30416,has printer corporate body,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30417,has distributor corporate body,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30418,has producer corporate body of unpublished manifestation,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30419,has manufacturer corporate body,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30420,has publisher corporate body,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30421,has creator corporate body of manifestation,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30422,has papermaker corporate body,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30423,has contributor family to aggregate,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30424,has surveyor family,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30425,has contributor family of cartography,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30426,has contributor family of choreography,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30427,has contributor family of moving image,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30428,has contributor family of music,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30429,has contributor family of speech,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30430,has contributor family of still image,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30431,has contributor family of text,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30432,has contributor family of object,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30433,has contributor family of computer content,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30434,has broadcaster family,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30435,has film distributor family,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30436,has book designer family,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30437,has engraver family,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30438,has braille embosser family,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30439,has printmaker family,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30440,has caster family,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30441,has lithographer family,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30442,has platemaker family,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30443,has etcher family,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30444,has collotyper family,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30445,has printer family,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30446,has distributor family,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30447,has producer family of unpublished manifestatio,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30448,has manufacturer family,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30449,has publisher family,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30450,has creator family of manifestation,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30451,has papermaker family,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30452,has accessibility content,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30453,has illustrative content,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30454,has sound content,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40003,has modification of item,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40004,has collector agent,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40005,has collection registrar agent,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40006,has depositor agent,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40007,has donor agent,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40008,has seller agent,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40009,is contained in item,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40010,has note on dimensions of item,,,,,
-,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40011,has note on extent of item,,,,,
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30381,has printmaker collective agent,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30382,has caster collective agent,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30383,has lithographer collective agent,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30384,has platemaker collective agent,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30385,has etcher collective agent,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30386,has collotyper collective agent,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30387,has printer collective agent,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30388,has distributor collective agent,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30389,has producer collective agent of unpublished manifestation,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30390,has manufacturer collective agent,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30391,has publisher collective agent,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30392,has creator collective agent of manifestation,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30393,has papermaker collective agent,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30394,has contributor corporate body to aggregate,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30395,has surveyor corporate body,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30396,has contributor corporate body of cartography,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30397,has contributor corporate body of choreography,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30398,has contributor corporate body of moving image,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30399,has contributor corporate body of music,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30400,has contributor corporate body of speech,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30401,has contributor corporate body of still image,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30402,has contributor corporate body of text,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30403,has contributor corporate body of object,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30404,has contributor corporate body of computer content,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30405,has broadcaster corporate body,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30406,has film distributor corporate body,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30407,has book designer corporate body,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30408,has engraver corporate body,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30409,has braille embosser corporate body,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30410,has printmaker corporate body,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30411,has caster corporate body,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30412,has lithographer corporate body,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30413,has platemaker corporate body,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30414,has etcher corporate body,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30415,has collotyper corporate body,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30416,has printer corporate body,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30417,has distributor corporate body,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30418,has producer corporate body of unpublished manifestation,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30419,has manufacturer corporate body,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30420,has publisher corporate body,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30421,has creator corporate body of manifestation,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30422,has papermaker corporate body,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30423,has contributor family to aggregate,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30424,has surveyor family,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30425,has contributor family of cartography,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30426,has contributor family of choreography,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30427,has contributor family of moving image,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30428,has contributor family of music,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30429,has contributor family of speech,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30430,has contributor family of still image,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30431,has contributor family of text,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30432,has contributor family of object,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30433,has contributor family of computer content,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30434,has broadcaster family,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30435,has film distributor family,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30436,has book designer family,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30437,has engraver family,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30438,has braille embosser family,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30439,has printmaker family,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30440,has caster family,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30441,has lithographer family,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30442,has platemaker family,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30443,has etcher family,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30444,has collotyper family,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30445,has printer family,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30446,has distributor family,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30447,has producer family of unpublished manifestatio,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30448,has manufacturer family,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30449,has publisher family,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30450,has creator family of manifestation,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30451,has papermaker family,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30452,has accessibility content,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30453,has illustrative content,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30454,has sound content,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40003,has modification of item,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40004,has collector agent,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40005,has collection registrar agent,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40006,has depositor agent,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40007,has donor agent,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40008,has seller agent,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40009,is contained in item,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40010,has note on dimensions of item,,,,,DELETE
+,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40011,has note on extent of item,,,,,DELETE
 ,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40012,has illuminator agent,,,,,DELETE
 ,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40013,has binder agent,,,,,DELETE
 ,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40014,has inscriber,,,,,DELETE
