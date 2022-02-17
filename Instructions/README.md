@@ -81,6 +81,7 @@ _Last updated 19 January 2022_
 | delete | If you are certain that an existing row should be deleted from our mapping, record "delete". |
 | delete? | If you think a row should be deleted from our mapping, but are not entirely sure, record "delete?". |
 | ? | If you have questions or uncertainty about a row, or you think the row needs more attention from another human, record "?". |
+* If a not-mapped row also contains an incorrect mapping, record "not mapped" rather than "delete". 
 
 _[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
