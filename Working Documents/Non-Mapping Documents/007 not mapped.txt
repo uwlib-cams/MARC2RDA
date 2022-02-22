@@ -1,0 +1,436 @@
+﻿007 not mapped
+a – Map
+01 - Specific material designation
+u - Unspecified
+z - Other
+| - No attempt to code
+
+02 - Undefined
+# - Undefined
+03 – Color
+| - No attempt to code
+04 - Physical medium
+u – Unknown
+x - Not applicable
+z - Other
+| - No attempt to code
+
+05 - Type of reproduction
+n - Not applicable
+u - Unknown
+z - Other
+| - No attempt to code
+
+06 - Production/reproduction details
+u - Unknown
+z - Other
+| - No attempt to code
+
+07 - Positive/negative aspect
+n - Not applicable
+| - No attempt to code
+
+c - Electronic resource
+01 - Specific material designation
+u - Unspecified
+z - Other
+| - No attempt to code
+02 - Undefined# - Undefined
+
+03 – Color
+n - Not applicable
+u - Unknown
+z - Other
+| - No attempt to code
+
+04 – Dimensions
+n - Not applicable
+u – Unknown
+z - Other
+| - No attempt to code
+
+05 – Sound
+u - Unknown
+| - No attempt to code
+
+06-08 - Image bit depth = 44355
+nnn - Not applicable
+--- - Unknown
+||| - No attempt to code
+
+09 - File formats
+u - Unknown
+| - No attempt to code
+
+10 - Quality assurance target(s)
+n - Not applicable
+u - Unknown
+| - No attempt to code
+
+11 - Antecedent/Source
+n - Not applicable
+u - Unknown
+| - No attempt to code
+
+12 - Level of compression
+u - Unknown
+| - No attempt to code
+
+13 - Reformatting Quality
+n - Not applicable
+u - Unknown
+| - No attempt to code
+
+d – Globe
+01 - Specific material designation
+u - Unspecified
+z - Other
+| - No attempt to code
+02 - Undefined
+# - Undefined
+03 – Color
+| - No attempt to code
+04 - Physical medium
+u – Unknown
+z - Other
+| - No attempt to code
+05 - Type of reproduction
+n - Not applicable
+u - Unknown
+z – Other ?
+| - No attempt to code
+f - Tactile material
+01 - Specific material designation
+u - Unspecified
+z - Other
+| - No attempt to code
+02 - Undefined
+# - Undefined
+03-04 - Class of braille writing
+# - No specified class of braille writing ?
+n - Not applicable
+u - Unknown
+z - Other
+|| - No attempt to code
+05 - Level of contraction
+n - Not applicable
+u - Unknown
+z - Other
+| - No attempt to code
+06-08 - Braille music format
+# - No specified braille music format
+n - Not applicable
+u - Unknown
+z - Other
+||| - No attempt to code
+09 - Special physical characteristics
+n - Not applicable
+u - Unknown
+z - Other
+| - No attempt to code
+g - Projected graphic
+01 - Specific material designation
+u - Unspecified
+z - Other
+| - No attempt to code
+02 - Undefined
+# - Undefined
+03 – Color
+n - Not applicable
+u - Unknown
+z - Other
+| - No attempt to code
+04 - Base of emulsion
+u - Unknown
+z - Other
+| - No attempt to code
+05 - Sound on medium or separate
+u - Unknown
+| - No attempt to code
+06 - Medium for sound
+u - Unknown
+z - Other
+| - No attempt to code
+07 – Dimensions
+u - Unknown
+z - Other
+| - No attempt to code
+08 - Secondary support material
+# - No secondary support
+u - Unknown
+z - Other
+| - No attempt to code
+h – Microform
+01 - Specific material designation
+u - Unspecified
+z - Other
+| - No attempt to code
+02 - Undefined
+# - Undefined
+03 - Positive/negative aspect
+u - Unknown
+| - No attempt to code
+04 – Dimensions
+Other
+u - Unknown
+z - Other
+| - No attempt to code
+05 - Reduction ratio range
+u – Unknown
+| - No attempt to code
+09 – Color
+u - Unknown
+z - Other
+| - No attempt to code
+10 - Emulsion on film
+n - Not applicable
+u - Unknown
+z - Other
+| - No attempt to code
+11 – Generation
+u - Unknown
+| - No attempt to code
+12 - Base of film
+n - Not applicable
+u - Unknown
+z - Other
+| - No attempt to code
+k - Nonprojected graphic
+01 - Specific material designation
+u – Unspecified
+z - Other
+| - No attempt to code
+02 - Undefined
+# - Undefined
+03 – Color
+u - Unknown
+z - Other
+| - No attempt to code
+04 - Primary support material
+u – Unknown
+z - Other
+| - No attempt to code
+05 - Secondary support material
+# - No secondary support
+u – Unknown
+z - Other
+| - No attempt to code
+m - Motion picture
+01 - Specific material designation
+u - Unspecified
+z - Other
+| - No attempt to code
+02 - Undefined
+# - Undefined
+03 – Color
+n - Not applicable
+u - Unknown
+z - Other
+| - No attempt to code
+04 - Motion picture presentation format
+u - Unknown
+z - Other
+| - No attempt to code
+05 - Sound on medium or separate
+u - Unknown
+| - No attempt to code
+06 - Medium for sound
+u - Unknown
+z - Other
+| - No attempt to code
+07 – Dimensions
+u - Unknown
+z - Other
+| - No attempt to code
+08 - Configuration of playback channels
+n - Not applicable
+u - Unknown
+z - Other
+| - No attempt to code
+09 - Production elements
+n - Not applicable
+z - Other
+| - No attempt to code
+10 - Positive/negative aspect
+n - Not applicable
+u - Unknown
+z - Other
+| - No attempt to code
+11 – Generation
+u - Unknown
+z - Other
+| - No attempt to code
+12 - Base of film
+n - Not applicable
+u - Unknown
+z - Other
+| - No attempt to code
+13 - Refined categories of color
+n - Not applicable
+u – Unknown
+z - Other
+| - No attempt to code
+14 - Kind of color stock or print
+n - Not applicable
+u - Unknown
+z - Other
+| - No attempt to code
+15 - Deterioration stage
+Other
+| - No attempt to code
+16 – Completeness
+n - Not applicable
+u - Unknown
+| - No attempt to code
+
+o – Kit
+u - Unspecified
+| - No attempt to code
+q - Notated music
+u - Unspecified
+| - No attempt to code
+r - Remote-sensing image
+01 - Specific material designation
+u - Unspecified
+| - No attempt to code
+02 - Undefined
+# - Undefined
+03 - Altitude of sensor, 06 - Platform construction type, 07 - Platform use category
+n - Not applicable
+u - Unknown
+z - Other
+| - No attempt to code
+04 - Attitude of sensor, 05 - Cloud cover
+n - Not applicable
+u - Unknown
+| - No attempt to code
+08 - Sensor type
+u - Unknown
+z - Other
+| - No attempt to code
+Other
+nn - Not applicable
+uu - Unknown
+zz - Other
+|| - No attempt to code
+s - Sound recording
+01 - Specific material designation
+u - Unspecified
+z - Other
+| - No attempt to code
+
+02 - Undefined
+# - Undefined
+
+03 – Speed
+n - Not applicable
+u - Unknown
+z - Other
+| - No attempt to code
+
+04 - Configuration of playback channels
+u - Unknown
+z - Other
+| - No attempt to code
+
+05 - Groove width/groove pitch
+n - Not applicable
+u - Unknown
+z - Other
+| - No attempt to code
+
+06 – Dimensions
+n - Not applicable
+u - Unknown
+z - Other
+| - No attempt to code
+
+07 - Tape width
+n - Not applicable
+u - Unknown
+z - Other
+| - No attempt to code
+
+08 - Tape Configuration
+n - Not applicable
+u - Unknown
+z – Other ?
+| - No attempt to code
+
+09 - Kind of disc, cylinder or tape
+n - Not applicable
+u - Unknown
+z - Other
+| - No attempt to code
+
+10 - Kind of material
+n - Not applicable
+u - Unknown
+z - Other
+| - No attempt to code
+
+11 - Kind of cutting
+n - Not applicable
+u - Unknown
+| - No attempt to code
+
+12 - Special playback characteristics
+n - Not applicable
+u - Unknown
+z - Other
+| - No attempt to code
+
+
+13 - Original capture and storage technique
+u - Unknown capture and storage
+z - Other
+| - No attempt to code
+
+t -Text
+u - Unspecified
+z - Other
+| - No attempt to code
+
+v – Videorecording
+01 - Specific material designation
+u - Unspecified
+z - Other
+| - No attempt to code
+02 - Undefined
+# - Undefined
+03 – Color
+n - Not applicable
+u - Unknown
+z - Other
+| - No attempt to code
+04 - Videorecording format
+u – Unknown
+z - Other
+| - No attempt to code
+
+05 - Sound on medium or separate
+u - Unknown
+| - No attempt to code
+
+06 - Medium for sound
+u - Unknown
+z - Other
+| - No attempt to code
+
+07 – Dimensions
+u - Unknown
+z - Other
+| - No attempt to code
+
+08 - Configuration of playback channels
+n - Not applicable
+u - Unknown
+z - Other
+| - No attempt to code
+
+z - Unspecified
+u - Unspecified
+z - Other
+| - No attempt to code
+
+
