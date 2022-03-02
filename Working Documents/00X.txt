@@ -594,6 +594,7 @@ delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							0	Categ
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							0	Category of material			s	Sound recording					http://rdaregistry.info/Elements/m/P30304	has material							
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							0	Category of material			s	Sound recording					http://rdaregistry.info/Elements/m/P30307	has groove pitch							
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							0	Category of material			s	Sound recording					http://rdaregistry.info/Elements/m/P30308	has groove width							
+?	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							0	Category of material			s	Sound recording					http://rdaregistry.info/Elements/m/P30335	has category of manifestation	structured				See also TAG 337		
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							0	Category of material			t	Text					http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							0	Category of material			t	Text					http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							0	Category of material			t	Text					http://rdaregistry.info/Elements/m/P30084	has applied material							
