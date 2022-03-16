@@ -669,68 +669,68 @@ DELETE	37	SOURCE OF ACQUISITION (R)	Source of acquisition sequence	*		Undefined	
 	40	CATALOGING SOURCE (NR)	Undefined	#	Undefined	Undefined	#	Undefined			c	Transcribing agency (NR)													
 	40	CATALOGING SOURCE (NR)	Undefined	#	Undefined	Undefined	#	Undefined			d	Modifying agency (R)													
 	40	CATALOGING SOURCE (NR)	Undefined	#	Undefined	Undefined	#	Undefined			e	Description conventions (R)													
-	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				a	Language code of text/sound track or separate title (R)							http://rdaregistry.info/Elements/e/P20006	has language of expression					
-	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				b	Language code of summary or abstract (R)							http://rdaregistry.info/Elements/e/P20006	has language of expression					
-	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				c	Languages of separate titles (VM) [OBSOLETE]							http://rdaregistry.info/Elements/e/P20006	has language of expression					
-	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				d	Language code of sung or spoken text (R)							http://rdaregistry.info/Elements/e/P20006	has language of expression					
-	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				e	Language code of librettos (R)							http://rdaregistry.info/Elements/e/P20006	has language of expression					
-	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				f	Language code of table of contents (R)							http://rdaregistry.info/Elements/e/P20006	has language of expression					
-	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				g	Language code of accompanying material other than librettos and transcripts (R)							http://rdaregistry.info/Elements/e/P20006	has language of expression					
-	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				i	Language code of intertitles (R)							http://rdaregistry.info/Elements/e/P20006	has language of expression					
-	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				j	Language code of subtitles (R)							http://rdaregistry.info/Elements/e/P20006	has language of expression					
-	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				p	Language code of captions (R)							http://rdaregistry.info/Elements/e/P20006	has language of expression					
-	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				q	Language code of accessible audio (R)							http://rdaregistry.info/Elements/e/P20006	has language of expression					
-	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				r	Language code of accessible visual language (non-textual) (R)							http://rdaregistry.info/Elements/e/P20006	has language of expression					
-	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				t	Language code of accompanying transcripts for audiovisual materials (R)							http://rdaregistry.info/Elements/e/P20006	has language of expression					
-	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				z								http://rdaregistry.info/Elements/e/P20006	has language of expression				Attention: MARCField/MARCSubfield combination does not exist	
-	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	#	MARC language code			2	Source of code (NR)													
-	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	#	MARC language code			6	Linkage (NR)													
-	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	#	MARC language code			8	Field link and sequence number (R)													
-	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	#	MARC language code			h	Language code of original and/or intermediate translations of text (R) [REDEFINED]													
-	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	#	MARC language code			h	Language code of original (R)													
-	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	#	MARC language code			k	Language code of intermediate translations (R)													
-	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	#	MARC language code			m	Language code of original accompanying materials other than librettos (R)													
-	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	#	MARC language code			n	Language code of original libretto (R)													
-	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	7	Source specified in subfield $2			2	Source of code (NR)													
-	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	7	Source specified in subfield $2			6	Linkage (NR)													
-	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	7	Source specified in subfield $2			8	Field link and sequence number (R)													
-	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	7	Source specified in subfield $2			h	Language code of original and/or intermediate translations of text (R) [REDEFINED]													
-	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	7	Source specified in subfield $2			h	Language code of original (R)													
-	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	7	Source specified in subfield $2			k	Language code of intermediate translations (R)													
-	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	7	Source specified in subfield $2			m	Language code of original accompanying materials other than librettos (R)													
-	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	7	Source specified in subfield $2			n	Language code of original libretto (R)													
-	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	#	MARC language code			2	Source of code (NR)													
-	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	#	MARC language code			6	Linkage (NR)													
-	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	#	MARC language code			8	Field link and sequence number (R)													
-	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	#	MARC language code			h	Language code of original and/or intermediate translations of text (R) [REDEFINED]													
-	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	#	MARC language code			h	Language code of original (R)													
-	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	#	MARC language code			k	Language code of intermediate translations (R)													
-	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	#	MARC language code			m	Language code of original accompanying materials other than librettos (R)													
-	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	#	MARC language code			n	Language code of original libretto (R)													
-	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	7	Source specified in subfield $2			2	Source of code (NR)													
-	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	7	Source specified in subfield $2			6	Linkage (NR)													
-	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	7	Source specified in subfield $2			8	Field link and sequence number (R)													
-	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	7	Source specified in subfield $2			h	Language code of original and/or intermediate translations of text (R) [REDEFINED]													
-	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	7	Source specified in subfield $2			h	Language code of original (R)													
-	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	7	Source specified in subfield $2			k	Language code of intermediate translations (R)													
-	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	7	Source specified in subfield $2			m	Language code of original accompanying materials other than librettos (R)													
-	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	7	Source specified in subfield $2			n	Language code of original libretto (R)													
-	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	#	MARC language code			2	Source of code (NR)													
-	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	#	MARC language code			6	Linkage (NR)													
-	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	#	MARC language code			8	Field link and sequence number (R)													
-	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	#	MARC language code			h	Language code of original and/or intermediate translations of text (R) [REDEFINED]													
-	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	#	MARC language code			h	Language code of original (R)													
-	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	#	MARC language code			k	Language code of intermediate translations (R)													
-	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	#	MARC language code			m	Language code of original accompanying materials other than librettos (R)													
-	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	#	MARC language code			n	Language code of original libretto (R)													
-	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	7	Source specified in subfield $2			2	Source of code (NR)													
-	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	7	Source specified in subfield $2			6	Linkage (NR)													
-	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	7	Source specified in subfield $2			8	Field link and sequence number (R)													
-	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	7	Source specified in subfield $2			h	Language code of original and/or intermediate translations of text (R) [REDEFINED]													
-	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	7	Source specified in subfield $2			h	Language code of original (R)													
-	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	7	Source specified in subfield $2			k	Language code of intermediate translations (R)													
-	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	7	Source specified in subfield $2			m	Language code of original accompanying materials other than librettos (R)													
-	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	7	Source specified in subfield $2			n	Language code of original libretto (R)													
+loss	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				a	Language code of text/sound track or separate title (R)							http://rdaregistry.info/Elements/e/P20006	has language of expression	identifier			How to deal with obsolete data where $a contains both the language being translated into and the language being translated from? -- ZP 3/8/2022; Order of subfields may be lost -- ZP 3/16/2022	
+loss	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				b	Language code of summary or abstract (R)							http://rdaregistry.info/Elements/e/P20006	has language of expression	identifier				
+?	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				c	Languages of separate titles (VM) [OBSOLETE]							http://rdaregistry.info/Elements/e/P20006	has language of expression	identifier			How to deal with obsolete data -- ZP 3/16/2022	
+loss	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				d	Language code of sung or spoken text (R)							http://rdaregistry.info/Elements/e/P20006	has language of expression	identifier				
+loss	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				e	Language code of librettos (R)							http://rdaregistry.info/Elements/e/P20006	has language of expression	identifier				
+loss	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				f	Language code of table of contents (R)							http://rdaregistry.info/Elements/e/P20006	has language of expression	identifier				
+loss	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				g	Language code of accompanying material other than librettos and transcripts (R)							http://rdaregistry.info/Elements/e/P20006	has language of expression	identifier				
+loss	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				i	Language code of intertitles (R)							http://rdaregistry.info/Elements/e/P20006	has language of expression	identifier				
+loss	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				j	Language code of subtitles (R)							http://rdaregistry.info/Elements/e/P20006	has language of expression	identifier				
+loss	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				p	Language code of captions (R)							http://rdaregistry.info/Elements/e/P20006	has language of expression	identifier				
+loss	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				q	Language code of accessible audio (R)							http://rdaregistry.info/Elements/e/P20006	has language of expression	identifier				
+loss	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				r	Language code of accessible visual language (non-textual) (R)							http://rdaregistry.info/Elements/e/P20006	has language of expression	identifier				
+loss	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				t	Language code of accompanying transcripts for audiovisual materials (R)							http://rdaregistry.info/Elements/e/P20006	has language of expression	identifier				
+delete	41	LANGUAGE CODE (R)	Translation indication	*		Source of code	*				z								http://rdaregistry.info/Elements/e/P20006	has language of expression				Attention: MARCField/MARCSubfield combination does not exist	
+delete	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	#	MARC language code			2	Source of code (NR)													$2 is not used when MARCInd2 is # -- ZP 3/5/2022
+?	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	#	MARC language code			6	Linkage (NR)													
+?	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	#	MARC language code			8	Field link and sequence number (R)													
+not mapped	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	#	MARC language code			h	Language code of original and/or intermediate translations of text (R) [REDEFINED]										Describes a related expression -- ZP 3/8/2022			
+not mapped	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	#	MARC language code			h	Language code of original (R)										Describes a related expression -- ZP 3/8/2022			
+not mapped	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	#	MARC language code			k	Language code of intermediate translations (R)										Describes a related expression -- ZP 3/8/2022			
+not mapped	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	#	MARC language code			m	Language code of original accompanying materials other than librettos (R)										Describes a related expression -- ZP 3/8/2022			
+not mapped	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	#	MARC language code			n	Language code of original libretto (R)										Describes a related expression -- ZP 3/8/2022			
+?	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	7	Source specified in subfield $2			2	Source of code (NR)													
+?	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	7	Source specified in subfield $2			6	Linkage (NR)													
+?	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	7	Source specified in subfield $2			8	Field link and sequence number (R)													
+not mapped	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	7	Source specified in subfield $2			h	Language code of original and/or intermediate translations of text (R) [REDEFINED]										Describes a related expression -- ZP 3/8/2022			
+not mapped	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	7	Source specified in subfield $2			h	Language code of original (R)										Describes a related expression -- ZP 3/8/2022			
+not mapped	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	7	Source specified in subfield $2			k	Language code of intermediate translations (R)										Describes a related expression -- ZP 3/8/2022			
+not mapped	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	7	Source specified in subfield $2			m	Language code of original accompanying materials other than librettos (R)										Describes a related expression -- ZP 3/8/2022			
+not mapped	41	LANGUAGE CODE (R)	Translation indication	#	No information provided	Source of code	7	Source specified in subfield $2			n	Language code of original libretto (R)										Describes a related expression -- ZP 3/8/2022			
+delete	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	#	MARC language code			2	Source of code (NR)													$2 is not used when MARCInd2 is # -- ZP 3/5/2022
+?	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	#	MARC language code			6	Linkage (NR)													
+?	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	#	MARC language code			8	Field link and sequence number (R)													
+delete	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	#	MARC language code			h	Language code of original and/or intermediate translations of text (R) [REDEFINED]													
+delete	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	#	MARC language code			h	Language code of original (R)													
+delete	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	#	MARC language code			k	Language code of intermediate translations (R)													
+delete	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	#	MARC language code			m	Language code of original accompanying materials other than librettos (R)													
+delete	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	#	MARC language code			n	Language code of original libretto (R)													
+?	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	7	Source specified in subfield $2			2	Source of code (NR)													
+?	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	7	Source specified in subfield $2			6	Linkage (NR)													
+?	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	7	Source specified in subfield $2			8	Field link and sequence number (R)													
+delete	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	7	Source specified in subfield $2			h	Language code of original and/or intermediate translations of text (R) [REDEFINED]													
+delete	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	7	Source specified in subfield $2			h	Language code of original (R)													
+delete	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	7	Source specified in subfield $2			k	Language code of intermediate translations (R)													
+delete	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	7	Source specified in subfield $2			m	Language code of original accompanying materials other than librettos (R)													
+delete	41	LANGUAGE CODE (R)	Translation indication	0	Item not a translation/does not include a translation	Source of code	7	Source specified in subfield $2			n	Language code of original libretto (R)													
+delete	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	#	MARC language code			2	Source of code (NR)													$2 is not used when MARCInd2 is # -- ZP 3/5/2022
+?	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	#	MARC language code			6	Linkage (NR)													
+?	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	#	MARC language code			8	Field link and sequence number (R)													
+not mapped	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	#	MARC language code			h	Language code of original and/or intermediate translations of text (R) [REDEFINED]										Describes a related expression -- ZP 3/8/2022			
+not mapped	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	#	MARC language code			h	Language code of original (R)										Describes a related expression -- ZP 3/8/2022			
+not mapped	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	#	MARC language code			k	Language code of intermediate translations (R)										Describes a related expression -- ZP 3/8/2022			
+not mapped	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	#	MARC language code			m	Language code of original accompanying materials other than librettos (R)										Describes a related expression -- ZP 3/8/2022			
+not mapped	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	#	MARC language code			n	Language code of original libretto (R)										Describes a related expression -- ZP 3/8/2022			
+?	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	7	Source specified in subfield $2			2	Source of code (NR)													
+?	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	7	Source specified in subfield $2			6	Linkage (NR)													
+?	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	7	Source specified in subfield $2			8	Field link and sequence number (R)													
+not mapped	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	7	Source specified in subfield $2			h	Language code of original and/or intermediate translations of text (R) [REDEFINED]										Describes a related expression -- ZP 3/8/2022			
+not mapped	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	7	Source specified in subfield $2			h	Language code of original (R)										Describes a related expression -- ZP 3/8/2022			
+not mapped	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	7	Source specified in subfield $2			k	Language code of intermediate translations (R)										Describes a related expression -- ZP 3/8/2022			
+not mapped	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	7	Source specified in subfield $2			m	Language code of original accompanying materials other than librettos (R)										Describes a related expression -- ZP 3/8/2022			
+not mapped	41	LANGUAGE CODE (R)	Translation indication	1	Item is or includes a translation	Source of code	7	Source specified in subfield $2			n	Language code of original libretto (R)										Describes a related expression -- ZP 3/8/2022			
 	42	AUTHENTICATION CODE (NR)	Undefined	#	Undefined	Undefined	#	Undefined			a	Authentication code (R)													
 	42	AUTHENTICATION CODE (NR)	Undefined	#	Undefined	Undefined	#	Undefined			dc	Dublin Core													
 	42	AUTHENTICATION CODE (NR)	Undefined	#	Undefined	Undefined	#	Undefined			dhca	Dance Heritage Coalition Access Project													
