@@ -496,7 +496,7 @@ Not Mapped	MARCField	MARCFieldLabel	MARCInd1Label	MARCInd1Value	MARCInd1ValueLab
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/w/P10164	has video screenplay work					DELETE
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/w/P10384	is transformation by audience of					DELETE
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/w/P10412	has dedicatee person of wor					DELETE
-	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/w/P10464	"has editorial director collective agent"""					DELETE
+	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/w/P10464	"""has editorial director collective agent"""""""					DELETE
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/w/P10564	has radio producer famil					DELETE
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/e/P20004	has date of capture					DELETE
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/e/P20005	has award					DELETE
@@ -548,7 +548,7 @@ Not Mapped	MARCField	MARCFieldLabel	MARCInd1Label	MARCInd1Value	MARCInd1ValueLab
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/e/P20066	is adapted as television program expression					DELETE
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/e/P20067	is adapted as video expression					DELETE
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/e/P20070	has voice actor agent					DELETE
-	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/e/P20071	has note on expression		"Could be a note on expression, but since MARC record is manifestation level, chose has note on manifestation."			DELETE
+	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/e/P20071	has note on expression		"""Could be a note on expression, but since MARC record is manifestation level, chose has note on manifestation."""			DELETE
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/e/P20073	is dramatized as expression					DELETE
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/e/P20074	is part of expression					DELETE
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/e/P20075	is replaced in part by expression					DELETE
@@ -1033,7 +1033,7 @@ Not Mapped	MARCField	MARCFieldLabel	MARCInd1Label	MARCInd1Value	MARCInd1ValueLab
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/m/P30046	has facsimile part					
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/m/P30047	is facsimile of manifestation of					
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/m/P30048	has related manifestation of manifestation					
-	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/m/P30050	"has note on issue, part, or iteration used as basis for identification of manifestation"					
+	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/m/P30050	"""has note on issue, part, or iteration used as basis for identification of manifestation"""					
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/m/P30051	has note on changes in carrier characteristics					
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/m/P30052	has note on distribution statement					
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/m/P30053	has note on manufacture statement					
@@ -1092,7 +1092,7 @@ Not Mapped	MARCField	MARCFieldLabel	MARCInd1Label	MARCInd1Value	MARCInd1ValueLab
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/m/P30133	has designation of edition					
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/m/P30134	has title of manifestation					
 d	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/m/P30136	is electronic reproduction of manifestation of					
-?	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/m/P30137	has note on manifestation		"The note could be about the work, expression, manifestation or item, or a combination of them.  The only superclass for these entities is ""RDA Entity"""			
+?	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/m/P30137	has note on manifestation		"""The note could be about the work, expression, manifestation or item, or a combination of them.  The only superclass for these entities is """"RDA Entity"""""""			
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/m/P30138	has special playback characteristic					
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/m/P30141	has contact information					
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/m/P30145	has restriction on access to manifestation					
@@ -1349,7 +1349,7 @@ d	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							htt
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/i/P40022	has honouree agent of item					DELETE
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/i/P40024	has restorationist agent of item					DELETE
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/i/P40025	has dedicatee agent of item					DELETE
-	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/i/P40028	has note on item		"Could be a note about an item, but since MARC is primarily manifestation description, go with note about a manifestation"			DELETE
+	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/i/P40028	has note on item		"""Could be a note about an item, but since MARC is primarily manifestation description, go with note about a manifestation"""			DELETE
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/i/P40029	is accompanied by item					DELETE
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/i/P40031	has equivalent item					DELETE
 	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/i/P40032	is bound with					DELETE
@@ -1489,10 +1489,10 @@ d	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							htt
 	502	DISSERTATION NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			8	Field link and sequence number (R)													
 	503	BIBLIOGRAPHIC HISTORY NOTE (R) (BK CF MU) [OBSOLETE]	Undefined	#	Undefined	Undefined	#	Undefined			6	Linkage (NR)													
 	503	BIBLIOGRAPHIC HISTORY NOTE (R) (BK CF MU) [OBSOLETE]	Undefined	#	Undefined	Undefined	#	Undefined			a	Bibliographic history note (NR)													
-	504	"BIBLIOGRAPHY, ETC. NOTE (R)"	Undefined	*		Undefined	*				a	"Bibliography, etc. note (NR)"							http://rdaregistry.info/Elements/m/P30455	has supplementary content					
-	504	"BIBLIOGRAPHY, ETC. NOTE (R)"	Undefined	#	Undefined	Undefined	#	Undefined			6	Linkage (NR)													
-	504	"BIBLIOGRAPHY, ETC. NOTE (R)"	Undefined	#	Undefined	Undefined	#	Undefined			8	Field link and sequence number (R)													
-	504	"BIBLIOGRAPHY, ETC. NOTE (R)"	Undefined	#	Undefined	Undefined	#	Undefined			b	Number of references (NR)													
+	504	"""BIBLIOGRAPHY, ETC. NOTE (R)"""	Undefined	*		Undefined	*				a	"""Bibliography, etc. note (NR)"""							http://rdaregistry.info/Elements/m/P30455	has supplementary content					
+	504	"""BIBLIOGRAPHY, ETC. NOTE (R)"""	Undefined	#	Undefined	Undefined	#	Undefined			6	Linkage (NR)													
+	504	"""BIBLIOGRAPHY, ETC. NOTE (R)"""	Undefined	#	Undefined	Undefined	#	Undefined			8	Field link and sequence number (R)													
+	504	"""BIBLIOGRAPHY, ETC. NOTE (R)"""	Undefined	#	Undefined	Undefined	#	Undefined			b	Number of references (NR)													
 	505	FORMATTED CONTENTS NOTE (R)	Display constant controller	*		Level of content designation	*				a	Formatted contents note (NR)							http://rdaregistry.info/Elements/e/P20219	has duration					
 	505	FORMATTED CONTENTS NOTE (R)	Display constant controller	*		Level of content designation	*				a	Formatted contents note (NR)							http://rdaregistry.info/Elements/e/P20307	has related timespan of expression					
 	505	FORMATTED CONTENTS NOTE (R)	Display constant controller	*		Level of content designation	*				a	Formatted contents note (NR)							http://rdaregistry.info/Elements/i/P40034	is container of item					
@@ -2005,48 +2005,48 @@ d	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							htt
 	518	DATE/TIME AND PLACE OF AN EVENT NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			3	Materials specified (NR)													
 	518	DATE/TIME AND PLACE OF AN EVENT NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			6	Linkage (NR)													
 	518	DATE/TIME AND PLACE OF AN EVENT NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			8	Field link and sequence number (R)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	*		Undefined	*				a	"Summary, etc. note (NR)"							http://rdaregistry.info/Elements/w/P10222	has nature of content					
-	520	"SUMMARY, ETC. (R)"	Display constant controller	*		Undefined	*				a	"Summary, etc. note (NR)"							http://rdaregistry.info/Elements/e/P20069	has summarization of content					
-	520	"SUMMARY, ETC. (R)"	Display constant controller	*		Undefined	*				b	Expansion of summary note (NR)							http://rdaregistry.info/Elements/w/P10222	has nature of content					
-	520	"SUMMARY, ETC. (R)"	Display constant controller	*		Undefined	*				b	Expansion of summary note (NR)							http://rdaregistry.info/Elements/e/P20069	has summarization of content					
-	520	"SUMMARY, ETC. (R)"	Display constant controller	*		Undefined	*				b	Expansion of summary note (NR)							http://rdaregistry.info/Elements/e/P20070	has voice actor agent					
-	520	"SUMMARY, ETC. (R)"	Display constant controller	*		Undefined	*				c	Assigning agency (NR)							http://rdaregistry.info/Elements/e/P20070	has voice actor agent					
-	520	"SUMMARY, ETC. (R)"	Display constant controller	*		Undefined	*				u	Uniform Resource Identifier (R)							http://rdaregistry.info/Elements/e/P20070	has voice actor agent					
-	520	"SUMMARY, ETC. (R)"	Display constant controller	#	Summary	Undefined	#	Undefined			2	Source (NR)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	#	Summary	Undefined	#	Undefined			3	Materials specified (NR)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	#	Summary	Undefined	#	Undefined			6	Linkage (NR)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	#	Summary	Undefined	#	Undefined			8	Field link and sequence number (R)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	#	Summary	Undefined	#	Undefined			z	Source of note information (NR) [OBSOLETE]													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	0	Subject	Undefined	#	Undefined			2	Source (NR)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	0	Subject	Undefined	#	Undefined			3	Materials specified (NR)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	0	Subject	Undefined	#	Undefined			6	Linkage (NR)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	0	Subject	Undefined	#	Undefined			8	Field link and sequence number (R)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	0	Subject	Undefined	#	Undefined			z	Source of note information (NR) [OBSOLETE]													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	1	Review	Undefined	#	Undefined			2	Source (NR)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	1	Review	Undefined	#	Undefined			3	Materials specified (NR)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	1	Review	Undefined	#	Undefined			6	Linkage (NR)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	1	Review	Undefined	#	Undefined			8	Field link and sequence number (R)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	1	Review	Undefined	#	Undefined			z	Source of note information (NR) [OBSOLETE]													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	2	Scope and content	Undefined	#	Undefined			2	Source (NR)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	2	Scope and content	Undefined	#	Undefined			3	Materials specified (NR)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	2	Scope and content	Undefined	#	Undefined			6	Linkage (NR)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	2	Scope and content	Undefined	#	Undefined			8	Field link and sequence number (R)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	2	Scope and content	Undefined	#	Undefined			z	Source of note information (NR) [OBSOLETE]													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	3	Abstract	Undefined	#	Undefined			2	Source (NR)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	3	Abstract	Undefined	#	Undefined			3	Materials specified (NR)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	3	Abstract	Undefined	#	Undefined			6	Linkage (NR)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	3	Abstract	Undefined	#	Undefined			8	Field link and sequence number (R)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	3	Abstract	Undefined	#	Undefined			z	Source of note information (NR) [OBSOLETE]													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	4	Content advice	Undefined	#	Undefined			2	Source (NR)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	4	Content advice	Undefined	#	Undefined			3	Materials specified (NR)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	4	Content advice	Undefined	#	Undefined			6	Linkage (NR)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	4	Content advice	Undefined	#	Undefined			8	Field link and sequence number (R)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	4	Content advice	Undefined	#	Undefined			z	Source of note information (NR) [OBSOLETE]													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	8	No display constant generated	Undefined	#	Undefined			2	Source (NR)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	8	No display constant generated	Undefined	#	Undefined			3	Materials specified (NR)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	8	No display constant generated	Undefined	#	Undefined			6	Linkage (NR)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	8	No display constant generated	Undefined	#	Undefined			8	Field link and sequence number (R)													
-	520	"SUMMARY, ETC. (R)"	Display constant controller	8	No display constant generated	Undefined	#	Undefined			z	Source of note information (NR) [OBSOLETE]													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	*		Undefined	*				a	"""Summary, etc. note (NR)"""							http://rdaregistry.info/Elements/w/P10222	has nature of content					
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	*		Undefined	*				a	"""Summary, etc. note (NR)"""							http://rdaregistry.info/Elements/e/P20069	has summarization of content					
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	*		Undefined	*				b	Expansion of summary note (NR)							http://rdaregistry.info/Elements/w/P10222	has nature of content					
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	*		Undefined	*				b	Expansion of summary note (NR)							http://rdaregistry.info/Elements/e/P20069	has summarization of content					
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	*		Undefined	*				b	Expansion of summary note (NR)							http://rdaregistry.info/Elements/e/P20070	has voice actor agent					
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	*		Undefined	*				c	Assigning agency (NR)							http://rdaregistry.info/Elements/e/P20070	has voice actor agent					
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	*		Undefined	*				u	Uniform Resource Identifier (R)							http://rdaregistry.info/Elements/e/P20070	has voice actor agent					
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	#	Summary	Undefined	#	Undefined			2	Source (NR)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	#	Summary	Undefined	#	Undefined			3	Materials specified (NR)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	#	Summary	Undefined	#	Undefined			6	Linkage (NR)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	#	Summary	Undefined	#	Undefined			8	Field link and sequence number (R)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	#	Summary	Undefined	#	Undefined			z	Source of note information (NR) [OBSOLETE]													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	0	Subject	Undefined	#	Undefined			2	Source (NR)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	0	Subject	Undefined	#	Undefined			3	Materials specified (NR)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	0	Subject	Undefined	#	Undefined			6	Linkage (NR)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	0	Subject	Undefined	#	Undefined			8	Field link and sequence number (R)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	0	Subject	Undefined	#	Undefined			z	Source of note information (NR) [OBSOLETE]													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	1	Review	Undefined	#	Undefined			2	Source (NR)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	1	Review	Undefined	#	Undefined			3	Materials specified (NR)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	1	Review	Undefined	#	Undefined			6	Linkage (NR)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	1	Review	Undefined	#	Undefined			8	Field link and sequence number (R)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	1	Review	Undefined	#	Undefined			z	Source of note information (NR) [OBSOLETE]													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	2	Scope and content	Undefined	#	Undefined			2	Source (NR)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	2	Scope and content	Undefined	#	Undefined			3	Materials specified (NR)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	2	Scope and content	Undefined	#	Undefined			6	Linkage (NR)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	2	Scope and content	Undefined	#	Undefined			8	Field link and sequence number (R)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	2	Scope and content	Undefined	#	Undefined			z	Source of note information (NR) [OBSOLETE]													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	3	Abstract	Undefined	#	Undefined			2	Source (NR)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	3	Abstract	Undefined	#	Undefined			3	Materials specified (NR)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	3	Abstract	Undefined	#	Undefined			6	Linkage (NR)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	3	Abstract	Undefined	#	Undefined			8	Field link and sequence number (R)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	3	Abstract	Undefined	#	Undefined			z	Source of note information (NR) [OBSOLETE]													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	4	Content advice	Undefined	#	Undefined			2	Source (NR)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	4	Content advice	Undefined	#	Undefined			3	Materials specified (NR)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	4	Content advice	Undefined	#	Undefined			6	Linkage (NR)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	4	Content advice	Undefined	#	Undefined			8	Field link and sequence number (R)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	4	Content advice	Undefined	#	Undefined			z	Source of note information (NR) [OBSOLETE]													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	8	No display constant generated	Undefined	#	Undefined			2	Source (NR)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	8	No display constant generated	Undefined	#	Undefined			3	Materials specified (NR)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	8	No display constant generated	Undefined	#	Undefined			6	Linkage (NR)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	8	No display constant generated	Undefined	#	Undefined			8	Field link and sequence number (R)													
+	520	"""SUMMARY, ETC. (R)"""	Display constant controller	8	No display constant generated	Undefined	#	Undefined			z	Source of note information (NR) [OBSOLETE]													
 	521	TARGET AUDIENCE NOTE (R)	Display constant controller	*		Undefined	*				a	Target audience note (R)							http://rdaregistry.info/Elements/e/P20322	has intended audience of expression					
 	521	TARGET AUDIENCE NOTE (R)	Display constant controller	*		Undefined	*				a	Target audience note (R)							http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation					
 	521	TARGET AUDIENCE NOTE (R)	Display constant controller	#	Audience	Undefined	#	Undefined			3	Materials specified (NR)													
@@ -2358,7 +2358,7 @@ d	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							htt
 	533	REPRODUCTION NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			6	Linkage (NR)													
 	533	REPRODUCTION NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			7	Fixed-length data elements of reproduction (NR)													
 	533	REPRODUCTION NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			8	Field link and sequence number (R)													
-	533	REPRODUCTION NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			44450	"Place of publication, production, or execution"													
+	533	REPRODUCTION NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			44450	"""Place of publication, production, or execution"""													
 	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				a	Main entry of original (NR)							http://rdaregistry.info/Elements/m/P30040	is digital transfer of manifestation of					
 	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				a	Main entry of original (NR)							http://rdaregistry.info/Elements/m/P30043	is reproduction of manifestation of					
 	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				a	Main entry of original (NR)							http://rdaregistry.info/Elements/m/P30045	is preservation facsimile of manifestation of					
@@ -2377,24 +2377,24 @@ d	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							htt
 	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				b	Edition statement of original (NR)							http://rdaregistry.info/Elements/m/P30301	is preservation facsimile of item of					
 	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				b	Edition statement of original (NR)							http://rdaregistry.info/Elements/m/P30302	is reprint of item of					
 	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				b	Edition statement of original (NR)							http://rdaregistry.info/Elements/m/P30303	is reproduction of item of					
-	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				c	"Publication, distribution, etc. of original (NR)"							http://rdaregistry.info/Elements/m/P30040	is digital transfer of manifestation of					
-	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				c	"Publication, distribution, etc. of original (NR)"							http://rdaregistry.info/Elements/m/P30043	is reproduction of manifestation of					
-	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				c	"Publication, distribution, etc. of original (NR)"							http://rdaregistry.info/Elements/m/P30045	is preservation facsimile of manifestation of					
-	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				c	"Publication, distribution, etc. of original (NR)"							http://rdaregistry.info/Elements/m/P30047	is facsimile of manifestation of					
-	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				c	"Publication, distribution, etc. of original (NR)"							http://rdaregistry.info/Elements/m/P30093	is reprint of manifestation of					
-	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				c	"Publication, distribution, etc. of original (NR)"							http://rdaregistry.info/Elements/m/P30136	is electronic reproduction of manifestation of					
-	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				c	"Publication, distribution, etc. of original (NR)"							http://rdaregistry.info/Elements/m/P30301	is preservation facsimile of item of					
-	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				c	"Publication, distribution, etc. of original (NR)"							http://rdaregistry.info/Elements/m/P30302	is reprint of item of					
-	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				c	"Publication, distribution, etc. of original (NR)"							http://rdaregistry.info/Elements/m/P30303	is reproduction of item of					
-	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				e	"Physical description, etc. of original (NR)"							http://rdaregistry.info/Elements/m/P30040	is digital transfer of manifestation of					
-	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				e	"Physical description, etc. of original (NR)"							http://rdaregistry.info/Elements/m/P30043	is reproduction of manifestation of					
-	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				e	"Physical description, etc. of original (NR)"							http://rdaregistry.info/Elements/m/P30045	is preservation facsimile of manifestation of					
-	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				e	"Physical description, etc. of original (NR)"							http://rdaregistry.info/Elements/m/P30047	is facsimile of manifestation of					
-	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				e	"Physical description, etc. of original (NR)"							http://rdaregistry.info/Elements/m/P30093	is reprint of manifestation of					
-	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				e	"Physical description, etc. of original (NR)"							http://rdaregistry.info/Elements/m/P30136	is electronic reproduction of manifestation of					
-	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				e	"Physical description, etc. of original (NR)"							http://rdaregistry.info/Elements/m/P30301	is preservation facsimile of item of					
-	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				e	"Physical description, etc. of original (NR)"							http://rdaregistry.info/Elements/m/P30302	is reprint of item of					
-	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				e	"Physical description, etc. of original (NR)"							http://rdaregistry.info/Elements/m/P30303	is reproduction of item of					
+	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				c	"""Publication, distribution, etc. of original (NR)"""							http://rdaregistry.info/Elements/m/P30040	is digital transfer of manifestation of					
+	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				c	"""Publication, distribution, etc. of original (NR)"""							http://rdaregistry.info/Elements/m/P30043	is reproduction of manifestation of					
+	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				c	"""Publication, distribution, etc. of original (NR)"""							http://rdaregistry.info/Elements/m/P30045	is preservation facsimile of manifestation of					
+	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				c	"""Publication, distribution, etc. of original (NR)"""							http://rdaregistry.info/Elements/m/P30047	is facsimile of manifestation of					
+	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				c	"""Publication, distribution, etc. of original (NR)"""							http://rdaregistry.info/Elements/m/P30093	is reprint of manifestation of					
+	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				c	"""Publication, distribution, etc. of original (NR)"""							http://rdaregistry.info/Elements/m/P30136	is electronic reproduction of manifestation of					
+	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				c	"""Publication, distribution, etc. of original (NR)"""							http://rdaregistry.info/Elements/m/P30301	is preservation facsimile of item of					
+	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				c	"""Publication, distribution, etc. of original (NR)"""							http://rdaregistry.info/Elements/m/P30302	is reprint of item of					
+	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				c	"""Publication, distribution, etc. of original (NR)"""							http://rdaregistry.info/Elements/m/P30303	is reproduction of item of					
+	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				e	"""Physical description, etc. of original (NR)"""							http://rdaregistry.info/Elements/m/P30040	is digital transfer of manifestation of					
+	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				e	"""Physical description, etc. of original (NR)"""							http://rdaregistry.info/Elements/m/P30043	is reproduction of manifestation of					
+	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				e	"""Physical description, etc. of original (NR)"""							http://rdaregistry.info/Elements/m/P30045	is preservation facsimile of manifestation of					
+	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				e	"""Physical description, etc. of original (NR)"""							http://rdaregistry.info/Elements/m/P30047	is facsimile of manifestation of					
+	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				e	"""Physical description, etc. of original (NR)"""							http://rdaregistry.info/Elements/m/P30093	is reprint of manifestation of					
+	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				e	"""Physical description, etc. of original (NR)"""							http://rdaregistry.info/Elements/m/P30136	is electronic reproduction of manifestation of					
+	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				e	"""Physical description, etc. of original (NR)"""							http://rdaregistry.info/Elements/m/P30301	is preservation facsimile of item of					
+	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				e	"""Physical description, etc. of original (NR)"""							http://rdaregistry.info/Elements/m/P30302	is reprint of item of					
+	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				e	"""Physical description, etc. of original (NR)"""							http://rdaregistry.info/Elements/m/P30303	is reproduction of item of					
 	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				f	Series statement of original (R)							http://rdaregistry.info/Elements/m/P30040	is digital transfer of manifestation of					
 	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				f	Series statement of original (R)							http://rdaregistry.info/Elements/m/P30043	is reproduction of manifestation of					
 	534	ORIGINAL VERSION NOTE (R)	Undefined	*		Undefined	*				f	Series statement of original (R)							http://rdaregistry.info/Elements/m/P30045	is preservation facsimile of manifestation of					
@@ -3432,7 +3432,7 @@ d	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							htt
 	586	AWARDS NOTE (R)	Display constant controller	8	No display constant generated	Undefined	#	Undefined			3	Materials specified (NR)													
 	586	AWARDS NOTE (R)	Display constant controller	8	No display constant generated	Undefined	#	Undefined			6	Linkage (NR)													
 	586	AWARDS NOTE (R)	Display constant controller	8	No display constant generated	Undefined	#	Undefined			8	Field link and sequence number (R)													
-	588	SOURCE OF DESCRIPTION NOTE (R)	Display constant controller	*		Undefined	*				a	Source of description note (NR)							http://rdaregistry.info/Elements/m/P30050	"has note on issue, part, or iteration used as basis for identification of manifestation"					
+	588	SOURCE OF DESCRIPTION NOTE (R)	Display constant controller	*		Undefined	*				a	Source of description note (NR)							http://rdaregistry.info/Elements/m/P30050	"""has note on issue, part, or iteration used as basis for identification of manifestation"""					
 	588	SOURCE OF DESCRIPTION NOTE (R)	Display constant controller	#	No information provided	Undefined	#	Undefined			5	Institution to which field applies (NR)													
 	588	SOURCE OF DESCRIPTION NOTE (R)	Display constant controller	#	No information provided	Undefined	#	Undefined			6	Linkage (NR)													
 	588	SOURCE OF DESCRIPTION NOTE (R)	Display constant controller	#	No information provided	Undefined	#	Undefined			8	Field link and sequence number (R)													
