@@ -2047,8 +2047,8 @@ d	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							htt
 	520	"""SUMMARY, ETC. (R)"""	Display constant controller	8	No display constant generated	Undefined	#	Undefined			6	Linkage (NR)													
 	520	"""SUMMARY, ETC. (R)"""	Display constant controller	8	No display constant generated	Undefined	#	Undefined			8	Field link and sequence number (R)													
 	520	"""SUMMARY, ETC. (R)"""	Display constant controller	8	No display constant generated	Undefined	#	Undefined			z	Source of note information (NR) [OBSOLETE]													
-	521	TARGET AUDIENCE NOTE (R)	Display constant controller	*		Undefined	*				a	Target audience note (R)							http://rdaregistry.info/Elements/e/P20322	has intended audience of expression					
-	521	TARGET AUDIENCE NOTE (R)	Display constant controller	*		Undefined	*				a	Target audience note (R)							http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation					
+	521	TARGET AUDIENCE NOTE (R)	Display constant controller	*		Undefined	*				a	Target audience note (R)							http://rdaregistry.info/Elements/e/P20322	has intended audience of expression		"Assume target audience will not vary between expression and manifestation since content is same, so selected expression property.  "	"There does not seem to be a property corresponding to display constant in RDA, so the textual value of Ind1 (if any) could be added as a prefix followed by colon before the value of $a."		
+	521	TARGET AUDIENCE NOTE (R)	Display constant controller	*		Undefined	*				a	Target audience note (R)							http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation					Delete
 	521	TARGET AUDIENCE NOTE (R)	Display constant controller	#	Audience	Undefined	#	Undefined			3	Materials specified (NR)													
 	521	TARGET AUDIENCE NOTE (R)	Display constant controller	#	Audience	Undefined	#	Undefined			6	Linkage (NR)													
 	521	TARGET AUDIENCE NOTE (R)	Display constant controller	#	Audience	Undefined	#	Undefined			8	Field link and sequence number (R)													
