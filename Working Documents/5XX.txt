@@ -3073,20 +3073,20 @@ delete	521	TARGET AUDIENCE NOTE (R)	Display constant controller	*		Undefined	*		
 	545	BIOGRAPHICAL OR HISTORICAL DATA (R)	Type of data	1	Administrative history	Undefined	#	Undefined			a	Biographical or historical note (NR)													
 	545	BIOGRAPHICAL OR HISTORICAL DATA (R)	Type of data	1	Administrative history	Undefined	#	Undefined			b	Expansion (NR)													
 	545	BIOGRAPHICAL OR HISTORICAL DATA (R)	Type of data	1	Administrative history	Undefined	#	Undefined			u	Uniform Resource Identifier (R)													
-	546	LANGUAGE NOTE (R)	Undefined	*		Undefined	*				a	Language note (NR)							http://rdaregistry.info/Elements/e/P20006	has language of expression					
-	546	LANGUAGE NOTE (R)	Undefined	*		Undefined	*				b	Information code or alphabet (R)							http://rdaregistry.info/Elements/e/P20061	has form of tactile notation					
-	546	LANGUAGE NOTE (R)	Undefined	*		Undefined	*				b	Information code or alphabet (R)							http://rdaregistry.info/Elements/e/P20062	has form of notation					
-	546	LANGUAGE NOTE (R)	Undefined	*		Undefined	*				b	Information code or alphabet (R)							http://rdaregistry.info/Elements/e/P20063	has form of notated movement					
-	546	LANGUAGE NOTE (R)	Undefined	*		Undefined	*				b	Information code or alphabet (R)							http://rdaregistry.info/Elements/e/P20064	has form of musical notation					
-	546	LANGUAGE NOTE (R)	Undefined	*		Undefined	*				b	Information code or alphabet (R)							http://rdaregistry.info/Elements/e/P20065	has script					
-	546	LANGUAGE NOTE (R)	Undefined	*		Undefined	*				b	Information code or alphabet (R)							http://rdaregistry.info/Elements/e/P20262	has details of form of musical notation					
-	546	LANGUAGE NOTE (R)	Undefined	*		Undefined	*				b	Information code or alphabet (R)							http://rdaregistry.info/Elements/e/P20263	has details of form of notated movement					
-	546	LANGUAGE NOTE (R)	Undefined	*		Undefined	*				b	Information code or alphabet (R)							http://rdaregistry.info/Elements/e/P20265	has details of form of tactile notation					
-	546	LANGUAGE NOTE (R)	Undefined	*		Undefined	*				b	Information code or alphabet (R)							http://rdaregistry.info/Elements/e/P20266	has details of script					
-	546	LANGUAGE NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			3	Materials specified (NR)													
-	546	LANGUAGE NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			6	Linkage (NR)													
-	546	LANGUAGE NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			8	Field link and sequence number (R)													
-	546	LANGUAGE NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			z	Source of note information (NR) (SE) [OBSOLETE]													
+first pass	546	LANGUAGE NOTE (R)	Undefined	*		Undefined	*				a	Language note (NR)							http://rdaregistry.info/Elements/e/P20006	has language of expression	unstructured description				
+delete	546	LANGUAGE NOTE (R)	Undefined	*		Undefined	*				b	Information code or alphabet (R)							http://rdaregistry.info/Elements/e/P20061	has form of tactile notation		The specific form of notation can't be readily determined -- ZP 3/16/2022			
+first pass	546	LANGUAGE NOTE (R)	Undefined	*		Undefined	*				b	Information code or alphabet (R)							http://rdaregistry.info/Elements/e/P20062	has form of notation	unstructured description				
+delete	546	LANGUAGE NOTE (R)	Undefined	*		Undefined	*				b	Information code or alphabet (R)							http://rdaregistry.info/Elements/e/P20063	has form of notated movement		The specific form of notation can't be readily determined -- ZP 3/16/2022			
+delete	546	LANGUAGE NOTE (R)	Undefined	*		Undefined	*				b	Information code or alphabet (R)							http://rdaregistry.info/Elements/e/P20064	has form of musical notation		The specific form of notation can't be readily determined -- ZP 3/16/2022			
+delete	546	LANGUAGE NOTE (R)	Undefined	*		Undefined	*				b	Information code or alphabet (R)							http://rdaregistry.info/Elements/e/P20065	has script		The specific form of notation can't be readily determined -- ZP 3/16/2022			
+delete	546	LANGUAGE NOTE (R)	Undefined	*		Undefined	*				b	Information code or alphabet (R)							http://rdaregistry.info/Elements/e/P20262	has details of form of musical notation		RDA recommends using rdae:P20064 -- ZP 3/16/2022			
+delete	546	LANGUAGE NOTE (R)	Undefined	*		Undefined	*				b	Information code or alphabet (R)							http://rdaregistry.info/Elements/e/P20263	has details of form of notated movement		RDA recommends using rdae:P20063 -- ZP 3/16/2022			
+delete	546	LANGUAGE NOTE (R)	Undefined	*		Undefined	*				b	Information code or alphabet (R)							http://rdaregistry.info/Elements/e/P20265	has details of form of tactile notation		RDA recommends using rdae:P20061 -- ZP 3/16/2022			
+delete	546	LANGUAGE NOTE (R)	Undefined	*		Undefined	*				b	Information code or alphabet (R)							http://rdaregistry.info/Elements/e/P20266	has details of script		RDA recommends using rdae:P20065 -- ZP 3/16/2022			
+?	546	LANGUAGE NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			3	Materials specified (NR)													
+?	546	LANGUAGE NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			6	Linkage (NR)													
+?	546	LANGUAGE NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			8	Field link and sequence number (R)													
+?	546	LANGUAGE NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			z	Source of note information (NR) (SE) [OBSOLETE]													
 	547	FORMER TITLE COMPLEXITY NOTE (R)	Undefined	*		Undefined	*				a	Former title complexity note (NR)							http://rdaregistry.info/Elements/m/P30063	has note on title					
 	547	FORMER TITLE COMPLEXITY NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			6	Linkage (NR)													
 	547	FORMER TITLE COMPLEXITY NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			8	Field link and sequence number (R)													
