@@ -1489,10 +1489,10 @@ d	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							htt
 	502	DISSERTATION NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			8	Field link and sequence number (R)													
 	503	BIBLIOGRAPHIC HISTORY NOTE (R) (BK CF MU) [OBSOLETE]	Undefined	#	Undefined	Undefined	#	Undefined			6	Linkage (NR)													
 	503	BIBLIOGRAPHIC HISTORY NOTE (R) (BK CF MU) [OBSOLETE]	Undefined	#	Undefined	Undefined	#	Undefined			a	Bibliographic history note (NR)													
-	504	"""BIBLIOGRAPHY, ETC. NOTE (R)"""	Undefined	*		Undefined	*				a	"""Bibliography, etc. note (NR)"""							http://rdaregistry.info/Elements/m/P30455	has supplementary content					
-	504	"""BIBLIOGRAPHY, ETC. NOTE (R)"""	Undefined	#	Undefined	Undefined	#	Undefined			6	Linkage (NR)													
-	504	"""BIBLIOGRAPHY, ETC. NOTE (R)"""	Undefined	#	Undefined	Undefined	#	Undefined			8	Field link and sequence number (R)													
-	504	"""BIBLIOGRAPHY, ETC. NOTE (R)"""	Undefined	#	Undefined	Undefined	#	Undefined			b	Number of references (NR)													
+first pass	504	"""BIBLIOGRAPHY, ETC. NOTE (R)"""	Undefined	*		Undefined	*				a	"""Bibliography, etc. note (NR)"""							http://rdaregistry.info/Elements/m/P30455	has supplementary content	unstructured description				
+?	504	"""BIBLIOGRAPHY, ETC. NOTE (R)"""	Undefined	#	Undefined	Undefined	#	Undefined			6	Linkage (NR)													
+?	504	"""BIBLIOGRAPHY, ETC. NOTE (R)"""	Undefined	#	Undefined	Undefined	#	Undefined			8	Field link and sequence number (R)													
+loss	504	"""BIBLIOGRAPHY, ETC. NOTE (R)"""	Undefined	#	Undefined	Undefined	#	Undefined			b	Number of references (NR)							http://rdaregistry.info/Elements/m/P30455	has supplementary content	unstructured description			"Number of references could be 'details or other unstructured information,' but it's unclear how this information should be presented. Should be more than just a number. -- ZP 3/17/2022"	
 	505	FORMATTED CONTENTS NOTE (R)	Display constant controller	*		Level of content designation	*				a	Formatted contents note (NR)							http://rdaregistry.info/Elements/e/P20219	has duration					
 	505	FORMATTED CONTENTS NOTE (R)	Display constant controller	*		Level of content designation	*				a	Formatted contents note (NR)							http://rdaregistry.info/Elements/e/P20307	has related timespan of expression					
 	505	FORMATTED CONTENTS NOTE (R)	Display constant controller	*		Level of content designation	*				a	Formatted contents note (NR)							http://rdaregistry.info/Elements/i/P40034	is container of item					
