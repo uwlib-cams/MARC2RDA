@@ -3425,13 +3425,13 @@ delete	546	LANGUAGE NOTE (R)	Undefined	*		Undefined	*				b	Information code or a
 	585	EXHIBITIONS NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			6	Linkage (NR)													
 	585	EXHIBITIONS NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			8	Field link and sequence number (R)													
 	585	EXHIBITIONS NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			a	Exhibitions note (NR)													
-	586	AWARDS NOTE (R)	Display constant controller	*		Undefined	*				a	Awards note (NR)							http://rdaregistry.info/Elements/e/P20005	has award					
-	586	AWARDS NOTE (R)	Display constant controller	#	Awards	Undefined	#	Undefined			3	Materials specified (NR)													
-	586	AWARDS NOTE (R)	Display constant controller	#	Awards	Undefined	#	Undefined			6	Linkage (NR)													
-	586	AWARDS NOTE (R)	Display constant controller	#	Awards	Undefined	#	Undefined			8	Field link and sequence number (R)													
-	586	AWARDS NOTE (R)	Display constant controller	8	No display constant generated	Undefined	#	Undefined			3	Materials specified (NR)													
-	586	AWARDS NOTE (R)	Display constant controller	8	No display constant generated	Undefined	#	Undefined			6	Linkage (NR)													
-	586	AWARDS NOTE (R)	Display constant controller	8	No display constant generated	Undefined	#	Undefined			8	Field link and sequence number (R)													
+first pass	586	AWARDS NOTE (R)	Display constant controller	*		Undefined	*				a	Awards note (NR)							http://rdaregistry.info/Elements/e/P20005	has award	unstructured description				
+?	586	AWARDS NOTE (R)	Display constant controller	#	Awards	Undefined	#	Undefined			3	Materials specified (NR)													
+?	586	AWARDS NOTE (R)	Display constant controller	#	Awards	Undefined	#	Undefined			6	Linkage (NR)													
+?	586	AWARDS NOTE (R)	Display constant controller	#	Awards	Undefined	#	Undefined			8	Field link and sequence number (R)													
+?	586	AWARDS NOTE (R)	Display constant controller	8	No display constant generated	Undefined	#	Undefined			3	Materials specified (NR)													
+?	586	AWARDS NOTE (R)	Display constant controller	8	No display constant generated	Undefined	#	Undefined			6	Linkage (NR)													
+?	586	AWARDS NOTE (R)	Display constant controller	8	No display constant generated	Undefined	#	Undefined			8	Field link and sequence number (R)													
 	588	SOURCE OF DESCRIPTION NOTE (R)	Display constant controller	*		Undefined	*				a	Source of description note (NR)							http://rdaregistry.info/Elements/m/P30050	"""has note on issue, part, or iteration used as basis for identification of manifestation"""					
 	588	SOURCE OF DESCRIPTION NOTE (R)	Display constant controller	#	No information provided	Undefined	#	Undefined			5	Institution to which field applies (NR)													
 	588	SOURCE OF DESCRIPTION NOTE (R)	Display constant controller	#	No information provided	Undefined	#	Undefined			6	Linkage (NR)													
