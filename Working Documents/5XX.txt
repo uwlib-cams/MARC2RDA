@@ -1944,13 +1944,13 @@ loss	504	"""BIBLIOGRAPHY, ETC. NOTE (R)"""	Undefined	#	Undefined	Undefined	#	Und
 	515	NUMBERING PECULIARITIES NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			6	Linkage (NR)													
 	515	NUMBERING PECULIARITIES NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			8	Field link and sequence number (R)													
 	515	NUMBERING PECULIARITIES NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			z	Source of note information (NR) (SE) [OBSOLETE]													
-	516	TYPE OF COMPUTER FILE OR DATA NOTE (R)	Display constant controller	*		Undefined	*				a	Type of computer file or data note (NR)							http://rdaregistry.info/Elements/w/P10222	has nature of content					
-	516	TYPE OF COMPUTER FILE OR DATA NOTE (R)	Display constant controller	*		Undefined	*				a	Type of computer file or data note (NR)							http://rdaregistry.info/Elements/m/P30018	has file type					
-	516	TYPE OF COMPUTER FILE OR DATA NOTE (R)	Display constant controller	*		Undefined	*				a	Type of computer file or data note (NR)							http://rdaregistry.info/Elements/m/P30225	has details of file type					
-	516	TYPE OF COMPUTER FILE OR DATA NOTE (R)	Display constant controller	#	Type of file	Undefined	#	Undefined			6	Linkage (NR)													
-	516	TYPE OF COMPUTER FILE OR DATA NOTE (R)	Display constant controller	#	Type of file	Undefined	#	Undefined			8	Field link and sequence number (R)													
-	516	TYPE OF COMPUTER FILE OR DATA NOTE (R)	Display constant controller	8	No display constant generated	Undefined	#	Undefined			6	Linkage (NR)													
-	516	TYPE OF COMPUTER FILE OR DATA NOTE (R)	Display constant controller	8	No display constant generated	Undefined	#	Undefined			8	Field link and sequence number (R)													
+delete?	516	TYPE OF COMPUTER FILE OR DATA NOTE (R)	Display constant controller	*		Undefined	*				a	Type of computer file or data note (NR)							http://rdaregistry.info/Elements/w/P10222	has nature of content	unstructured description	"The nature of content (biography, dictionaries, indexes, etc.) could be interpreted as 'details or other information' of file type -- ZP 3/21/2022"			
+first pass	516	TYPE OF COMPUTER FILE OR DATA NOTE (R)	Display constant controller	*		Undefined	*				a	Type of computer file or data note (NR)							http://rdaregistry.info/Elements/m/P30018	has file type	unstructured description				
+delete	516	TYPE OF COMPUTER FILE OR DATA NOTE (R)	Display constant controller	*		Undefined	*				a	Type of computer file or data note (NR)							http://rdaregistry.info/Elements/m/P30225	has details of file type	unstructured description	RDA recommends using rdam:P30018 -- ZP 3/21/2022			
+?	516	TYPE OF COMPUTER FILE OR DATA NOTE (R)	Display constant controller	#	Type of file	Undefined	#	Undefined			6	Linkage (NR)													
+?	516	TYPE OF COMPUTER FILE OR DATA NOTE (R)	Display constant controller	#	Type of file	Undefined	#	Undefined			8	Field link and sequence number (R)													
+?	516	TYPE OF COMPUTER FILE OR DATA NOTE (R)	Display constant controller	8	No display constant generated	Undefined	#	Undefined			6	Linkage (NR)													
+?	516	TYPE OF COMPUTER FILE OR DATA NOTE (R)	Display constant controller	8	No display constant generated	Undefined	#	Undefined			8	Field link and sequence number (R)													
 	517	CATEGORIES OF FILMS NOTE (ARCHIVAL) (VM) (NR) [OBSOLETE]	Undefined	#	Undefined	Undefined	#	Undefined			a	Different formats (NR)													
 	517	CATEGORIES OF FILMS NOTE (ARCHIVAL) (VM) (NR) [OBSOLETE]	Undefined	#	Undefined	Undefined	#	Undefined			b	Content descriptors (R)													
 	517	CATEGORIES OF FILMS NOTE (ARCHIVAL) (VM) (NR) [OBSOLETE]	Undefined	#	Undefined	Undefined	#	Undefined			c	Additional animation techniques (R)													
