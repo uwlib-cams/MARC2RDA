@@ -63,7 +63,8 @@ _Last updated 23 February 2022_
  - If not applicable, leave blank.
  - To indicate "any number 0-9" use 0-9.
  - To indicate "any value" use \*.
- - To indicate "not present" use !.
+ - To indicate "not present" use not(). 
+   - _Example: not(700$i) means "700 $i not present"._
  - Notes should be initialed and dated, with separate notes in the same column/row separated by ;
  ### MARC tag formatting
  - 3 digit tag,
