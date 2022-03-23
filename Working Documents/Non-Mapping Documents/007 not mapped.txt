@@ -18,7 +18,6 @@ z - Other
 05 - Type of reproduction
 n - Not applicable
 u - Unknown
-z - Other
 | - No attempt to code
 
 06 - Production/reproduction details
@@ -35,7 +34,10 @@ c - Electronic resource
 u - Unspecified
 z - Other
 | - No attempt to code
-02 - Undefined# - Undefined
+02 - Undefined
+# - Undefined
+
+
 
 03 – Color
 n - Not applicable
