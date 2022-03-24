@@ -1179,10 +1179,10 @@ delete	340	PHYSICAL MEDIUM (R)	Undefined	*		Undefined	*				e	Support (R)			n/a	n
 	377	ASSOCIATED LANGUAGE (R)	Undefined	#	Undefined	Source of code	7	Source specified in subfield $2			3	Materials specified (NR)															
 	377	ASSOCIATED LANGUAGE (R)	Undefined	#	Undefined	Source of code	7	Source specified in subfield $2			6	Linkage (NR)															
 	377	ASSOCIATED LANGUAGE (R)	Undefined	#	Undefined	Source of code	7	Source specified in subfield $2			8	Field link and sequence number (R)															
-first pass	380	FORM OF WORK (R)	Undefined	*		Undefined	*				0	Authority record control number or standard number (R)							http://rdaregistry.info/Elements/w/P10004	has category of work			identifier; IRI				
-first pass	380	FORM OF WORK (R)	Undefined	*		Undefined	*				1	Real World Object URI (R)							http://rdaregistry.info/Elements/w/P10004	has category of work			IRI				
-first pass	380	FORM OF WORK (R)	Undefined	*		Undefined	*				a	Form of work (R)			"380 ## $0, 380 ## $1, 380 ## $2"	!			http://rdaregistry.info/Elements/w/P10004	has category of work			unstructured description	"If the source of term is unspecified, we cannot ensure it's structured -- ZP 3/17/2022"			
-first pass	380	FORM OF WORK (R)	Undefined	*		Undefined	*				a	Form of work (R)							http://rdaregistry.info/Elements/w/P10004	has category of work			structured description				
+first pass	380	FORM OF WORK (R)	Undefined	*		Undefined	*				0	Authority record control number or standard number (R)							http://rdaregistry.info/Elements/w/P10004	has category of work			identifier; IRI		[Work]-->rdaw:P10004-->[entity2]-->[property indicating relationship between entity2 and an authority for entity 2]-->[value of $0] -- ZP 3/23/2022		
+first pass	380	FORM OF WORK (R)	Undefined	*		Undefined	*				1	Real World Object URI (R)							http://rdaregistry.info/Elements/w/P10004	has category of work			IRI		[Work]-->rdaw:P10004-->[value of $1] -- ZP 3/23/2022		
+first pass	380	FORM OF WORK (R)	Undefined	*		Undefined	*				a	Form of work (R)			380 ## $2	not(380$2)			http://rdaregistry.info/Elements/w/P10004	has category of work			unstructured description	"If the source of term is unspecified, we cannot ensure it's structured -- ZP 3/17/2022"	[Work]-->rdaw:P10004-->[value of $a] -- ZP 3/23/2022		
+first pass	380	FORM OF WORK (R)	Undefined	*		Undefined	*				a	Form of work (R)			380 ## $2	*			http://rdaregistry.info/Elements/w/P10004	has category of work			structured description		[Work]-->rdaw:P10004-->[value of $a] -- ZP 3/23/2022		
 ?	380	FORM OF WORK (R)	Undefined	#	Undefined	Undefined	#	Undefined			2	Source of term (NR)															
 ?	380	FORM OF WORK (R)	Undefined	#	Undefined	Undefined	#	Undefined			3	Materials specified (NR)															
 ?	380	FORM OF WORK (R)	Undefined	#	Undefined	Undefined	#	Undefined			6	Linkage (NR)															
