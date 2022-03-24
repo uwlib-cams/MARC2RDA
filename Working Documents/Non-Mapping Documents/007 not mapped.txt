@@ -431,6 +431,10 @@ z - Other
 | - No attempt to code
 
 z - Unspecified
+00 - Category of material
+z - Unspecified
+
+01 - Specific material designation
 u - Unspecified
 z - Other
 | - No attempt to code
