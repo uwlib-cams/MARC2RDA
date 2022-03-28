@@ -802,12 +802,12 @@ DELETE	250	EDITION STATEMENT (R)	Undefined	#	Undefined	Undefined	#	Undefined			8
 	256	COMPUTER FILE CHARACTERISTICS (NR)	Undefined	*		Undefined	*				a	Computer file characteristics (NR)							http://rdaregistry.info/Elements/m/P30183	has file size					
 	256	COMPUTER FILE CHARACTERISTICS (NR)	Undefined	#	Undefined	Undefined	#	Undefined			6	Linkage (NR)													
 	256	COMPUTER FILE CHARACTERISTICS (NR)	Undefined	#	Undefined	Undefined	#	Undefined			8	Field link and sequence number (R)													
-	257	COUNTRY OF PRODUCING ENTITY (R)	Undefined	*		Undefined	*				0	Authority record control number or standard number (R)							http://rdaregistry.info/Elements/m/P30086	has place of production					
-	257	COUNTRY OF PRODUCING ENTITY (R)	Undefined	*		Undefined	*				1	Real World Object URI (R)							http://rdaregistry.info/Elements/m/P30086	has place of production					
-	257	COUNTRY OF PRODUCING ENTITY (R)	Undefined	*		Undefined	*				a	Country of producing entity (R)							http://rdaregistry.info/Elements/m/P30086	has place of production					
-	257	COUNTRY OF PRODUCING ENTITY (R)	Undefined	#	Undefined	Undefined	#	Undefined			2	Source (NR)													
-	257	COUNTRY OF PRODUCING ENTITY (R)	Undefined	#	Undefined	Undefined	#	Undefined			6	Linkage (NR)													
-	257	COUNTRY OF PRODUCING ENTITY (R)	Undefined	#	Undefined	Undefined	#	Undefined			8	Field link and sequence number (R)													
+first pass	257	COUNTRY OF PRODUCING ENTITY (R)	Undefined	*		Undefined	*				0	Authority record control number or standard number (R)							http://rdaregistry.info/Elements/m/P30086	has place of production	identifier; IRI				
+first pass	257	COUNTRY OF PRODUCING ENTITY (R)	Undefined	*		Undefined	*				1	Real World Object URI (R)							http://rdaregistry.info/Elements/m/P30086	has place of production	IRI		[Manifestation]-->rdam:P30086-->[value of $1] -- ZP 3/27/2022		
+first pass	257	COUNTRY OF PRODUCING ENTITY (R)	Undefined	*		Undefined	*				a	Country of producing entity (R)							http://rdaregistry.info/Elements/m/P30086	has place of production	unstructured description; structured description		[Manifestation]-->rdam:P30086-->[value of $a] -- ZP 3/27/2022		
+?	257	COUNTRY OF PRODUCING ENTITY (R)	Undefined	#	Undefined	Undefined	#	Undefined			2	Source (NR)													
+?	257	COUNTRY OF PRODUCING ENTITY (R)	Undefined	#	Undefined	Undefined	#	Undefined			6	Linkage (NR)													
+?	257	COUNTRY OF PRODUCING ENTITY (R)	Undefined	#	Undefined	Undefined	#	Undefined			8	Field link and sequence number (R)													
 	258	PHILATELIC ISSUE DATE (R)	Undefined	#	Undefined	Undefined	#	Undefined			6	Linkage (NR)													
 	258	PHILATELIC ISSUE DATE (R)	Undefined	#	Undefined	Undefined	#	Undefined			8	Field link and sequence number (R)													
 	258	PHILATELIC ISSUE DATE (R)	Undefined	#	Undefined	Undefined	#	Undefined			a	Issuing jurisdiction (NR)													
