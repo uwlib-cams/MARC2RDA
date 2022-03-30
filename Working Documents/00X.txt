@@ -606,7 +606,7 @@ delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							0	Categ
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							0	Category of material			s	Sound recording					http://rdaregistry.info/Elements/m/P30304	has material							
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							0	Category of material			s	Sound recording					http://rdaregistry.info/Elements/m/P30307	has groove pitch							
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							0	Category of material			s	Sound recording					http://rdaregistry.info/Elements/m/P30308	has groove width							
-?	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							0	Category of material			t	Text					http://rdaregistry.info/Elements/m/P30335	has category of manifestation	structured						
+?	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							0	Category of material			t	Text					http://rdaregistry.info/Elements/m/P30002	has media type	structured				See also TAG 336 RDA content type 'text', 337 RDA mediatype 'unmediated'		
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							0	Category of material			t	Text					http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							0	Category of material			t	Text					http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							0	Category of material			t	Text					http://rdaregistry.info/Elements/m/P30084	has applied material							
@@ -1024,7 +1024,7 @@ delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Speci
 	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			a	Activity card	007 00	k			http://rdaregistry.info/Elements/m/P30304	has material							
 	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			a	Activity card	007 00	k			http://rdaregistry.info/Elements/m/P30307	has groove pitch							
 	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			a	Activity card	007 00	k			http://rdaregistry.info/Elements/m/P30308	has groove width							
-first pass	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			a	Regular print	007 00	t			http://rdaregistry.info/Elements/m/P30199	has font size	structured				Information also in TAG 340$n$0$1 , 300$a and 500$a		
+?	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			a	Regular print	007 00	t			http://rdaregistry.info/Elements/m/P30199	has font size	structured	compare with RDA Font Size			Information also in TAG 340$n$0$1 , 300$a and 500$a		
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			a	Regular print	007 00	t			http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			a	Regular print	007 00	t			http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			a	Regular print	007 00	t			http://rdaregistry.info/Elements/m/P30084	has applied material							
@@ -1136,7 +1136,7 @@ delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Speci
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			b	Belt	007 00	s			http://rdaregistry.info/Elements/m/P30304	has material							
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			b	Belt	007 00	s			http://rdaregistry.info/Elements/m/P30307	has groove pitch							
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			b	Belt	007 00	s			http://rdaregistry.info/Elements/m/P30308	has groove width							
-first pass	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			b	Large print	007 00	t			http://rdaregistry.info/Elements/m/P30199	has font size	structured				Information also in TAG 340$n$0$1 , 300$a and 500$a		
+?	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			b	Large print	007 00	t			http://rdaregistry.info/Elements/m/P30199	has font size	structured	compare with RDA Font Size			Information also in TAG 340$n$0$1 , 300$a and 500$a		
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			b	Large print	007 00	t			http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			b	Large print	007 00	t			http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			b	Large print	007 00	t			http://rdaregistry.info/Elements/m/P30084	has applied material							
@@ -1284,7 +1284,7 @@ delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Speci
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			c	Film cartridge	007 00	m			http://rdaregistry.info/Elements/m/P30304	has material							
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			c	Film cartridge	007 00	m			http://rdaregistry.info/Elements/m/P30307	has groove pitch							
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			c	Film cartridge	007 00	m			http://rdaregistry.info/Elements/m/P30308	has groove width							
-first pass	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			c	Braille	007 00	t			http://rdaregistry.info/Elements/m/P30199	has font size	structured				Information also in TAG 340$n$0$1 , 300$a and 500$a		
+?	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			c	Braille	007 00	t			http://rdaregistry.info/Elements/m/P30335	has category of manifestation	structured						
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			c	Braille	007 00	t			http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			c	Braille	007 00	t			http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			c	Braille	007 00	t			http://rdaregistry.info/Elements/m/P30084	has applied material							
@@ -1451,7 +1451,7 @@ delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Speci
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			d	Sound disc	007 00	s			http://rdaregistry.info/Elements/m/P30304	has material							
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			d	Sound disc	007 00	s			http://rdaregistry.info/Elements/m/P30307	has groove pitch							
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			d	Sound disc	007 00	s			http://rdaregistry.info/Elements/m/P30308	has groove width							
-first pass	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			d	Text in looseleaf binder	007 00	t			http://rdaregistry.info/Elements/m/P30199	has font size	structured				Information also in TAG 340$n$0$1 , 300$a and 500$a		
+?	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			d	Text in looseleaf binder	007 00	t			http://rdaregistry.info/Elements/m/P30137	has note on manifestation					See also TAG 500, 338 and RDA Carrier Extent Unit		
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			d	Text in looseleaf binder	007 00	t			http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			d	Text in looseleaf binder	007 00	t			http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							1	Specific material designation			d	Text in looseleaf binder	007 00	t			http://rdaregistry.info/Elements/m/P30084	has applied material							
@@ -8736,7 +8736,6 @@ not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							5	S
 	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							5	Secondary support material			w	Parchment	007 00	k			http://rdaregistry.info/Elements/m/P30304	has material							
 	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							5	Secondary support material			w	Parchment	007 00	k			http://rdaregistry.info/Elements/m/P30307	has groove pitch							
 	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							5	Secondary support material			w	Parchment	007 00	k			http://rdaregistry.info/Elements/m/P30308	has groove width							
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							5	Type of reproduction			z	Other													
 first pass	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							5	Type of reproduction			z	Other	007 00	a			http://rdaregistry.info/Elements/m/P30191	has generation	structured				Information also in TAG 340$j and 500$a. See also RDA VES Generation		
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							5	Type of reproduction			z	Other	007 00	a			http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							5	Type of reproduction			z	Other	007 00	a			http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
@@ -13919,330 +13918,330 @@ not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	
 not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			|	No attempt to code	007 00	s			http://rdaregistry.info/Elements/m/P30307	has groove pitch							
 not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			|	No attempt to code	007 00	s			http://rdaregistry.info/Elements/m/P30308	has groove width							
 ?	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			http://rdaregistry.info/Elements/m/P30053	has note on manufacture statement					should it be mapped?		
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			has form of tactile notation								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			has aspect ratio designation								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			has applied material								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			has video format								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			has emulsion on microfilm and microfiche								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			has special playback characteristic								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			has presentation format								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			has groove characteristic								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			has configuration of playback channels								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			has tape configuration								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			has polarity								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			has playing speed								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			has recording medium								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			has base material								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			has reduction ratio designation								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			has material								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			has groove pitch								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			has groove width								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			has form of tactile notation								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			has aspect ratio designation								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			has applied material								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			has video format								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			has emulsion on microfilm and microfiche								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			has special playback characteristic								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			has presentation format								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			has groove characteristic								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			has configuration of playback channels								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			has tape configuration								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			has polarity								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			has playing speed								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			has recording medium								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			has base material								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			has reduction ratio designation								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			has material								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			has groove pitch								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			has groove width								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			has form of tactile notation								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			has aspect ratio designation								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			has applied material								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			has video format								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			has emulsion on microfilm and microfiche								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			has special playback characteristic								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			has presentation format								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			has groove characteristic								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			has configuration of playback channels								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			has tape configuration								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			has polarity								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			has playing speed								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			has recording medium								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			has base material								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			has reduction ratio designation								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			has material								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			has groove pitch								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			has groove width								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			has form of tactile notation								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			has aspect ratio designation								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			has applied material								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			has video format								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			has emulsion on microfilm and microfiche								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			has special playback characteristic								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			has presentation format								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			has groove characteristic								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			has configuration of playback channels								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			has tape configuration								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			has polarity								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			has playing speed								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			has recording medium								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			has base material								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			has reduction ratio designation								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			has material		structured/RDA VES IRI				"Compare with RDA material VES ; Information also in TAG 340$a$c$e and 500$a"		
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			has groove pitch								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			has groove width								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			has form of tactile notation								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			has aspect ratio designation								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			has applied material								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			has video format								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			has emulsion on microfilm and microfiche								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			has special playback characteristic								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			has presentation format								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			has groove characteristic								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			has configuration of playback channels								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			has tape configuration								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			has polarity								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			has playing speed								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			has recording medium								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			has base material								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			has reduction ratio designation								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			has material								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			has groove pitch								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			has groove width								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			has form of tactile notation								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			has aspect ratio designation								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			has applied material								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			has video format								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			has emulsion on microfilm and microfiche								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			has special playback characteristic								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			has presentation format								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			has groove characteristic								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			has configuration of playback channels								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			has tape configuration								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			has polarity								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			has playing speed								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			has recording medium								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			has base material								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			has reduction ratio designation								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			has material								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			has groove pitch								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			has groove width								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			has form of tactile notation								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			has aspect ratio designation								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			has applied material								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			has video format								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			has emulsion on microfilm and microfiche								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			has special playback characteristic								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			has presentation format								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			has groove characteristic								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			has configuration of playback channels								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			has tape configuration								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			has polarity								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			has playing speed								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			has recording medium								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			has base material								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			has reduction ratio designation								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			has material		structured/RDA VES IRI				"Compare with RDA material VES ; Information also in TAG 340$a$c$e and 500$a"		
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			has groove pitch								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			has groove width								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			has form of tactile notation								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			has aspect ratio designation								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			has applied material								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			has video format								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			has emulsion on microfilm and microfiche								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			has special playback characteristic								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			has presentation format								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			has groove characteristic								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			has configuration of playback channels								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			has tape configuration								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			has polarity								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			has playing speed								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			has recording medium								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			has base material								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			has reduction ratio designation								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			has material								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			has groove pitch								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			has groove width								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			has form of tactile notation								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			has aspect ratio designation								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			has applied material								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			has video format								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			has emulsion on microfilm and microfiche								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			has special playback characteristic								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			has presentation format								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			has groove characteristic								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			has configuration of playback channels								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			has tape configuration								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			has polarity								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			has playing speed								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			has recording medium								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			has base material								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			has reduction ratio designation								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			has material		structured/RDA VES IRI				"Compare with RDA material VES ; Information also in TAG 340$a$c$e and 500$a"		
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			has groove pitch								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			has groove width								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			has form of tactile notation								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			has aspect ratio designation								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			has applied material								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			has video format								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			has emulsion on microfilm and microfiche								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			has special playback characteristic								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			has presentation format								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			has groove characteristic								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			has configuration of playback channels								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			has tape configuration								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			has polarity								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			has playing speed								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			has recording medium								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			has base material								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			has reduction ratio designation								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			has material		structured/RDA VES IRI				"Compare with RDA material VES ; Information also in TAG 340$a$c$e and 500$a"		
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			has groove pitch								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			has groove width								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			has form of tactile notation								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			has aspect ratio designation								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			has applied material								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			has video format								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			has emulsion on microfilm and microfiche								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			has special playback characteristic								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			has presentation format								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			has groove characteristic								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			has configuration of playback channels								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			has tape configuration								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			has polarity								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			has playing speed								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			has recording medium								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			has base material								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			has reduction ratio designation								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			has material		structured/RDA VES IRI				"Compare with RDA material VES ; Information also in TAG 340$a$c$e and 500$a"		
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			has groove pitch								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			has groove width								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			has form of tactile notation								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			has aspect ratio designation								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			has applied material								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			has video format								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			has emulsion on microfilm and microfiche								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			has special playback characteristic								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			has presentation format								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			has groove characteristic								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			has configuration of playback channels								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			has tape configuration								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			has polarity								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			has playing speed								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			has recording medium								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			has base material								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			has reduction ratio designation								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			has material		structured/RDA VES IRI				"Compare with RDA material VES ; Information also in TAG 340$a$c$e and 500$a"		
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			has groove pitch								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			has groove width								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			has form of tactile notation								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			has aspect ratio designation								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			has applied material								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			has video format								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			has emulsion on microfilm and microfiche								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			has special playback characteristic								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			has presentation format								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			has groove characteristic								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			has configuration of playback channels								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			has tape configuration								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			has polarity								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			has playing speed								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			has recording medium								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			has base material								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			has reduction ratio designation								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			has material								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			has groove pitch								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			has groove width								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			has form of tactile notation								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			has aspect ratio designation								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			has applied material								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			has video format								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			has emulsion on microfilm and microfiche								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			has special playback characteristic								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			has presentation format								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			has groove characteristic								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			has configuration of playback channels								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			has tape configuration								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			has polarity								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			has playing speed								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			has recording medium								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			has base material								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			has reduction ratio designation								
-	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			has material		structured/RDA VES IRI				"Compare with RDA material VES ; Information also in TAG 340$a$c$e and 500$a"		
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			has groove pitch								
-delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			has groove width								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			has form of tactile notation								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			has aspect ratio designation								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			has applied material								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			has video format								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			has emulsion on microfilm and microfiche								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			has special playback characteristic								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			has presentation format								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			has groove characteristic								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			has configuration of playback channels								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			has tape configuration								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			has polarity								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			has playing speed								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			has recording medium								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			has base material								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			has reduction ratio designation								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			has material								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			has groove pitch								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			has groove width								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			has form of tactile notation								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			has aspect ratio designation								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			has applied material								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			has video format								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			has emulsion on microfilm and microfiche								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			has special playback characteristic								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			has presentation format								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			has groove characteristic								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			has configuration of playback channels								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			has tape configuration								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			has polarity								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			has playing speed								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			has recording medium								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			has base material								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			has reduction ratio designation								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			has material								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			has groove pitch								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			has groove width								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			has form of tactile notation								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			has aspect ratio designation								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			has applied material								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			has video format								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			has emulsion on microfilm and microfiche								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			has special playback characteristic								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			has presentation format								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			has groove characteristic								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			has configuration of playback channels								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			has tape configuration								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			has polarity								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			has playing speed								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			has recording medium								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			has base material								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			has reduction ratio designation								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			has material								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			has groove pitch								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			has groove width								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			has form of tactile notation								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			has aspect ratio designation								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			has applied material								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			has video format								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			has emulsion on microfilm and microfiche								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			has special playback characteristic								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			has presentation format								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			has groove characteristic								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			has configuration of playback channels								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			has tape configuration								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			has polarity								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			has playing speed								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			has recording medium								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			has base material								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			has reduction ratio designation								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			has material								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			has groove pitch								
-not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			has groove width								
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			http://rdaregistry.info/Elements/m/P30084	has applied material							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			http://rdaregistry.info/Elements/m/P30104	has video format							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			http://rdaregistry.info/Elements/m/P30122	has emulsion on microfilm and microfiche							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			http://rdaregistry.info/Elements/m/P30138	has special playback characteristic							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			http://rdaregistry.info/Elements/m/P30163	has presentation format							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			http://rdaregistry.info/Elements/m/P30164	has groove characteristic							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			http://rdaregistry.info/Elements/m/P30184	has configuration of playback channels							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			http://rdaregistry.info/Elements/m/P30185	has tape configuration							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			http://rdaregistry.info/Elements/m/P30196	has polarity							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			http://rdaregistry.info/Elements/m/P30201	has playing speed							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			http://rdaregistry.info/Elements/m/P30206	has recording medium							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			http://rdaregistry.info/Elements/m/P30208	has base material							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			http://rdaregistry.info/Elements/m/P30263	has reduction ratio designation							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			http://rdaregistry.info/Elements/m/P30304	has material							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			http://rdaregistry.info/Elements/m/P30307	has groove pitch							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			a	Absent	007 00	c			http://rdaregistry.info/Elements/m/P30308	has groove width							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			http://rdaregistry.info/Elements/m/P30084	has applied material							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			http://rdaregistry.info/Elements/m/P30104	has video format							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			http://rdaregistry.info/Elements/m/P30122	has emulsion on microfilm and microfiche							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			http://rdaregistry.info/Elements/m/P30138	has special playback characteristic							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			http://rdaregistry.info/Elements/m/P30163	has presentation format							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			http://rdaregistry.info/Elements/m/P30164	has groove characteristic							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			http://rdaregistry.info/Elements/m/P30184	has configuration of playback channels							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			http://rdaregistry.info/Elements/m/P30185	has tape configuration							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			http://rdaregistry.info/Elements/m/P30196	has polarity							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			http://rdaregistry.info/Elements/m/P30201	has playing speed							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			http://rdaregistry.info/Elements/m/P30206	has recording medium							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			http://rdaregistry.info/Elements/m/P30208	has base material							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			http://rdaregistry.info/Elements/m/P30263	has reduction ratio designation							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			http://rdaregistry.info/Elements/m/P30304	has material							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			http://rdaregistry.info/Elements/m/P30307	has groove pitch							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			a	Silver halide	007 00	h			http://rdaregistry.info/Elements/m/P30308	has groove width							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			http://rdaregistry.info/Elements/m/P30084	has applied material							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			http://rdaregistry.info/Elements/m/P30104	has video format							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			http://rdaregistry.info/Elements/m/P30122	has emulsion on microfilm and microfiche							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			http://rdaregistry.info/Elements/m/P30138	has special playback characteristic							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			http://rdaregistry.info/Elements/m/P30163	has presentation format							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			http://rdaregistry.info/Elements/m/P30164	has groove characteristic							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			http://rdaregistry.info/Elements/m/P30184	has configuration of playback channels							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			http://rdaregistry.info/Elements/m/P30185	has tape configuration							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			http://rdaregistry.info/Elements/m/P30196	has polarity							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			http://rdaregistry.info/Elements/m/P30201	has playing speed							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			http://rdaregistry.info/Elements/m/P30206	has recording medium							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			http://rdaregistry.info/Elements/m/P30208	has base material							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			http://rdaregistry.info/Elements/m/P30263	has reduction ratio designation							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			http://rdaregistry.info/Elements/m/P30304	has material							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			http://rdaregistry.info/Elements/m/P30307	has groove pitch							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			a	Positive	007 00	m			http://rdaregistry.info/Elements/m/P30308	has groove width							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			http://rdaregistry.info/Elements/m/P30084	has applied material							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			http://rdaregistry.info/Elements/m/P30104	has video format							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			http://rdaregistry.info/Elements/m/P30122	has emulsion on microfilm and microfiche							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			http://rdaregistry.info/Elements/m/P30138	has special playback characteristic							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			http://rdaregistry.info/Elements/m/P30163	has presentation format							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			http://rdaregistry.info/Elements/m/P30164	has groove characteristic							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			http://rdaregistry.info/Elements/m/P30184	has configuration of playback channels							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			http://rdaregistry.info/Elements/m/P30185	has tape configuration							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			http://rdaregistry.info/Elements/m/P30196	has polarity							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			http://rdaregistry.info/Elements/m/P30201	has playing speed							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			http://rdaregistry.info/Elements/m/P30206	has recording medium							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			http://rdaregistry.info/Elements/m/P30208	has base material							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			http://rdaregistry.info/Elements/m/P30263	has reduction ratio designation							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			http://rdaregistry.info/Elements/m/P30304	has material	structured/RDA VES IRI				"Compare with RDA material VES ; Information also in TAG 340$a$c$e and 500$a"		
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			http://rdaregistry.info/Elements/m/P30307	has groove pitch							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			a	Lacquer coating	007 00	s			http://rdaregistry.info/Elements/m/P30308	has groove width							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			http://rdaregistry.info/Elements/m/P30084	has applied material							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			http://rdaregistry.info/Elements/m/P30104	has video format							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			http://rdaregistry.info/Elements/m/P30122	has emulsion on microfilm and microfiche							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			http://rdaregistry.info/Elements/m/P30138	has special playback characteristic							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			http://rdaregistry.info/Elements/m/P30163	has presentation format							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			http://rdaregistry.info/Elements/m/P30164	has groove characteristic							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			http://rdaregistry.info/Elements/m/P30184	has configuration of playback channels							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			http://rdaregistry.info/Elements/m/P30185	has tape configuration							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			http://rdaregistry.info/Elements/m/P30196	has polarity							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			http://rdaregistry.info/Elements/m/P30201	has playing speed							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			http://rdaregistry.info/Elements/m/P30206	has recording medium							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			http://rdaregistry.info/Elements/m/P30208	has base material							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			http://rdaregistry.info/Elements/m/P30263	has reduction ratio designation							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			http://rdaregistry.info/Elements/m/P30304	has material							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			http://rdaregistry.info/Elements/m/P30307	has groove pitch							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			b	Diazo	007 00	h			http://rdaregistry.info/Elements/m/P30308	has groove width							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			http://rdaregistry.info/Elements/m/P30084	has applied material							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			http://rdaregistry.info/Elements/m/P30104	has video format							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			http://rdaregistry.info/Elements/m/P30122	has emulsion on microfilm and microfiche							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			http://rdaregistry.info/Elements/m/P30138	has special playback characteristic							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			http://rdaregistry.info/Elements/m/P30163	has presentation format							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			http://rdaregistry.info/Elements/m/P30164	has groove characteristic							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			http://rdaregistry.info/Elements/m/P30184	has configuration of playback channels							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			http://rdaregistry.info/Elements/m/P30185	has tape configuration							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			http://rdaregistry.info/Elements/m/P30196	has polarity							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			http://rdaregistry.info/Elements/m/P30201	has playing speed							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			http://rdaregistry.info/Elements/m/P30206	has recording medium							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			http://rdaregistry.info/Elements/m/P30208	has base material							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			http://rdaregistry.info/Elements/m/P30263	has reduction ratio designation							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			http://rdaregistry.info/Elements/m/P30304	has material							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			http://rdaregistry.info/Elements/m/P30307	has groove pitch							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			b	Negative	007 00	m			http://rdaregistry.info/Elements/m/P30308	has groove width							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			http://rdaregistry.info/Elements/m/P30084	has applied material							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			http://rdaregistry.info/Elements/m/P30104	has video format							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			http://rdaregistry.info/Elements/m/P30122	has emulsion on microfilm and microfiche							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			http://rdaregistry.info/Elements/m/P30138	has special playback characteristic							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			http://rdaregistry.info/Elements/m/P30163	has presentation format							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			http://rdaregistry.info/Elements/m/P30164	has groove characteristic							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			http://rdaregistry.info/Elements/m/P30184	has configuration of playback channels							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			http://rdaregistry.info/Elements/m/P30185	has tape configuration							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			http://rdaregistry.info/Elements/m/P30196	has polarity							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			http://rdaregistry.info/Elements/m/P30201	has playing speed							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			http://rdaregistry.info/Elements/m/P30206	has recording medium							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			http://rdaregistry.info/Elements/m/P30208	has base material							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			http://rdaregistry.info/Elements/m/P30263	has reduction ratio designation							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			http://rdaregistry.info/Elements/m/P30304	has material	structured/RDA VES IRI				"Compare with RDA material VES ; Information also in TAG 340$a$c$e and 500$a"		
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			http://rdaregistry.info/Elements/m/P30307	has groove pitch							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			b	Cellulose nitrate	007 00	s			http://rdaregistry.info/Elements/m/P30308	has groove width							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			http://rdaregistry.info/Elements/m/P30084	has applied material							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			http://rdaregistry.info/Elements/m/P30104	has video format							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			http://rdaregistry.info/Elements/m/P30122	has emulsion on microfilm and microfiche							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			http://rdaregistry.info/Elements/m/P30138	has special playback characteristic							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			http://rdaregistry.info/Elements/m/P30163	has presentation format							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			http://rdaregistry.info/Elements/m/P30164	has groove characteristic							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			http://rdaregistry.info/Elements/m/P30184	has configuration of playback channels							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			http://rdaregistry.info/Elements/m/P30185	has tape configuration							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			http://rdaregistry.info/Elements/m/P30196	has polarity							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			http://rdaregistry.info/Elements/m/P30201	has playing speed							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			http://rdaregistry.info/Elements/m/P30206	has recording medium							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			http://rdaregistry.info/Elements/m/P30208	has base material							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			http://rdaregistry.info/Elements/m/P30263	has reduction ratio designation							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			http://rdaregistry.info/Elements/m/P30304	has material							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			http://rdaregistry.info/Elements/m/P30307	has groove pitch							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			c	Vesicular	007 00	h			http://rdaregistry.info/Elements/m/P30308	has groove width							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			http://rdaregistry.info/Elements/m/P30084	has applied material							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			http://rdaregistry.info/Elements/m/P30104	has video format							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			http://rdaregistry.info/Elements/m/P30122	has emulsion on microfilm and microfiche							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			http://rdaregistry.info/Elements/m/P30138	has special playback characteristic							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			http://rdaregistry.info/Elements/m/P30163	has presentation format							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			http://rdaregistry.info/Elements/m/P30164	has groove characteristic							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			http://rdaregistry.info/Elements/m/P30184	has configuration of playback channels							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			http://rdaregistry.info/Elements/m/P30185	has tape configuration							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			http://rdaregistry.info/Elements/m/P30196	has polarity							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			http://rdaregistry.info/Elements/m/P30201	has playing speed							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			http://rdaregistry.info/Elements/m/P30206	has recording medium							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			http://rdaregistry.info/Elements/m/P30208	has base material							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			http://rdaregistry.info/Elements/m/P30263	has reduction ratio designation							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			http://rdaregistry.info/Elements/m/P30304	has material	structured/RDA VES IRI				"Compare with RDA material VES ; Information also in TAG 340$a$c$e and 500$a"		
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			http://rdaregistry.info/Elements/m/P30307	has groove pitch							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			c	Acetate tape with ferrous oxide	007 00	s			http://rdaregistry.info/Elements/m/P30308	has groove width							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30084	has applied material							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30104	has video format							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30122	has emulsion on microfilm and microfiche							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30138	has special playback characteristic							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30163	has presentation format							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30164	has groove characteristic							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30184	has configuration of playback channels							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30185	has tape configuration							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30196	has polarity							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30201	has playing speed							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30206	has recording medium							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30208	has base material							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30263	has reduction ratio designation							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30304	has material	structured/RDA VES IRI				"Compare with RDA material VES ; Information also in TAG 340$a$c$e and 500$a"		
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30307	has groove pitch							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			g	Glass with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30308	has groove width							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30084	has applied material							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30104	has video format							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30122	has emulsion on microfilm and microfiche							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30138	has special playback characteristic							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30163	has presentation format							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30164	has groove characteristic							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30184	has configuration of playback channels							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30185	has tape configuration							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30196	has polarity							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30201	has playing speed							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30206	has recording medium							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30208	has base material							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30263	has reduction ratio designation							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30304	has material	structured/RDA VES IRI				"Compare with RDA material VES ; Information also in TAG 340$a$c$e and 500$a"		
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30307	has groove pitch							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			i	Aluminum with lacquer	007 00	s			http://rdaregistry.info/Elements/m/P30308	has groove width							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			http://rdaregistry.info/Elements/m/P30084	has applied material							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			http://rdaregistry.info/Elements/m/P30104	has video format							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			http://rdaregistry.info/Elements/m/P30122	has emulsion on microfilm and microfiche							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			http://rdaregistry.info/Elements/m/P30138	has special playback characteristic							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			http://rdaregistry.info/Elements/m/P30163	has presentation format							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			http://rdaregistry.info/Elements/m/P30164	has groove characteristic							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			http://rdaregistry.info/Elements/m/P30184	has configuration of playback channels							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			http://rdaregistry.info/Elements/m/P30185	has tape configuration							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			http://rdaregistry.info/Elements/m/P30196	has polarity							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			http://rdaregistry.info/Elements/m/P30201	has playing speed							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			http://rdaregistry.info/Elements/m/P30206	has recording medium							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			http://rdaregistry.info/Elements/m/P30208	has base material							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			http://rdaregistry.info/Elements/m/P30263	has reduction ratio designation							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			http://rdaregistry.info/Elements/m/P30304	has material	structured/RDA VES IRI				"Compare with RDA material VES ; Information also in TAG 340$a$c$e and 500$a"		
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			http://rdaregistry.info/Elements/m/P30307	has groove pitch							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			l	Metal	007 00	s			http://rdaregistry.info/Elements/m/P30308	has groove width							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			http://rdaregistry.info/Elements/m/P30084	has applied material							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			http://rdaregistry.info/Elements/m/P30104	has video format							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			http://rdaregistry.info/Elements/m/P30122	has emulsion on microfilm and microfiche							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			http://rdaregistry.info/Elements/m/P30138	has special playback characteristic							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			http://rdaregistry.info/Elements/m/P30163	has presentation format							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			http://rdaregistry.info/Elements/m/P30164	has groove characteristic							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			http://rdaregistry.info/Elements/m/P30184	has configuration of playback channels							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			http://rdaregistry.info/Elements/m/P30185	has tape configuration							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			http://rdaregistry.info/Elements/m/P30196	has polarity							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			http://rdaregistry.info/Elements/m/P30201	has playing speed							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			http://rdaregistry.info/Elements/m/P30206	has recording medium							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			http://rdaregistry.info/Elements/m/P30208	has base material							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			http://rdaregistry.info/Elements/m/P30263	has reduction ratio designation							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			http://rdaregistry.info/Elements/m/P30304	has material							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			http://rdaregistry.info/Elements/m/P30307	has groove pitch							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			m	Mixed emulsion	007 00	h			http://rdaregistry.info/Elements/m/P30308	has groove width							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			http://rdaregistry.info/Elements/m/P30084	has applied material							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			http://rdaregistry.info/Elements/m/P30104	has video format							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			http://rdaregistry.info/Elements/m/P30122	has emulsion on microfilm and microfiche							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			http://rdaregistry.info/Elements/m/P30138	has special playback characteristic							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			http://rdaregistry.info/Elements/m/P30163	has presentation format							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			http://rdaregistry.info/Elements/m/P30164	has groove characteristic							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			http://rdaregistry.info/Elements/m/P30184	has configuration of playback channels							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			http://rdaregistry.info/Elements/m/P30185	has tape configuration							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			http://rdaregistry.info/Elements/m/P30196	has polarity							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			http://rdaregistry.info/Elements/m/P30201	has playing speed							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			http://rdaregistry.info/Elements/m/P30206	has recording medium							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			http://rdaregistry.info/Elements/m/P30208	has base material							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			http://rdaregistry.info/Elements/m/P30263	has reduction ratio designation							
+	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			http://rdaregistry.info/Elements/m/P30304	has material	structured/RDA VES IRI				"Compare with RDA material VES ; Information also in TAG 340$a$c$e and 500$a"		
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			http://rdaregistry.info/Elements/m/P30307	has groove pitch							
+delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			m	Plastic with metal	007 00	s			http://rdaregistry.info/Elements/m/P30308	has groove width							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			http://rdaregistry.info/Elements/m/P30084	has applied material							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			http://rdaregistry.info/Elements/m/P30104	has video format							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			http://rdaregistry.info/Elements/m/P30122	has emulsion on microfilm and microfiche							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			http://rdaregistry.info/Elements/m/P30138	has special playback characteristic							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			http://rdaregistry.info/Elements/m/P30163	has presentation format							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			http://rdaregistry.info/Elements/m/P30164	has groove characteristic							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			http://rdaregistry.info/Elements/m/P30184	has configuration of playback channels							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			http://rdaregistry.info/Elements/m/P30185	has tape configuration							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			http://rdaregistry.info/Elements/m/P30196	has polarity							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			http://rdaregistry.info/Elements/m/P30201	has playing speed							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			http://rdaregistry.info/Elements/m/P30206	has recording medium							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			http://rdaregistry.info/Elements/m/P30208	has base material							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			http://rdaregistry.info/Elements/m/P30263	has reduction ratio designation							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			http://rdaregistry.info/Elements/m/P30304	has material							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			http://rdaregistry.info/Elements/m/P30307	has groove pitch							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			n	Not applicable	007 00	c			http://rdaregistry.info/Elements/m/P30308	has groove width							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			http://rdaregistry.info/Elements/m/P30084	has applied material							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			http://rdaregistry.info/Elements/m/P30104	has video format							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			http://rdaregistry.info/Elements/m/P30122	has emulsion on microfilm and microfiche							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			http://rdaregistry.info/Elements/m/P30138	has special playback characteristic							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			http://rdaregistry.info/Elements/m/P30163	has presentation format							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			http://rdaregistry.info/Elements/m/P30164	has groove characteristic							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			http://rdaregistry.info/Elements/m/P30184	has configuration of playback channels							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			http://rdaregistry.info/Elements/m/P30185	has tape configuration							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			http://rdaregistry.info/Elements/m/P30196	has polarity							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			http://rdaregistry.info/Elements/m/P30201	has playing speed							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			http://rdaregistry.info/Elements/m/P30206	has recording medium							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			http://rdaregistry.info/Elements/m/P30208	has base material							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			http://rdaregistry.info/Elements/m/P30263	has reduction ratio designation							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			http://rdaregistry.info/Elements/m/P30304	has material							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			http://rdaregistry.info/Elements/m/P30307	has groove pitch							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Emulsion on film			n	Not applicable	007 00	h			http://rdaregistry.info/Elements/m/P30308	has groove width							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			http://rdaregistry.info/Elements/m/P30084	has applied material							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			http://rdaregistry.info/Elements/m/P30104	has video format							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			http://rdaregistry.info/Elements/m/P30122	has emulsion on microfilm and microfiche							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			http://rdaregistry.info/Elements/m/P30138	has special playback characteristic							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			http://rdaregistry.info/Elements/m/P30163	has presentation format							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			http://rdaregistry.info/Elements/m/P30164	has groove characteristic							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			http://rdaregistry.info/Elements/m/P30184	has configuration of playback channels							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			http://rdaregistry.info/Elements/m/P30185	has tape configuration							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			http://rdaregistry.info/Elements/m/P30196	has polarity							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			http://rdaregistry.info/Elements/m/P30201	has playing speed							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			http://rdaregistry.info/Elements/m/P30206	has recording medium							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			http://rdaregistry.info/Elements/m/P30208	has base material							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			http://rdaregistry.info/Elements/m/P30263	has reduction ratio designation							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			http://rdaregistry.info/Elements/m/P30304	has material							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			http://rdaregistry.info/Elements/m/P30307	has groove pitch							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Positive/negative aspect			n	Not applicable	007 00	m			http://rdaregistry.info/Elements/m/P30308	has groove width							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			http://rdaregistry.info/Elements/m/P30084	has applied material							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			http://rdaregistry.info/Elements/m/P30104	has video format							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			http://rdaregistry.info/Elements/m/P30122	has emulsion on microfilm and microfiche							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			http://rdaregistry.info/Elements/m/P30138	has special playback characteristic							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			http://rdaregistry.info/Elements/m/P30163	has presentation format							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			http://rdaregistry.info/Elements/m/P30164	has groove characteristic							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			http://rdaregistry.info/Elements/m/P30184	has configuration of playback channels							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			http://rdaregistry.info/Elements/m/P30185	has tape configuration							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			http://rdaregistry.info/Elements/m/P30196	has polarity							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			http://rdaregistry.info/Elements/m/P30201	has playing speed							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			http://rdaregistry.info/Elements/m/P30206	has recording medium							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			http://rdaregistry.info/Elements/m/P30208	has base material							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			http://rdaregistry.info/Elements/m/P30263	has reduction ratio designation							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			http://rdaregistry.info/Elements/m/P30304	has material							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			http://rdaregistry.info/Elements/m/P30307	has groove pitch							
+not mapped	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Kind of material			n	Not applicable	007 00	s			http://rdaregistry.info/Elements/m/P30308	has groove width							
 ?	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			p	Present	007 00	c			http://rdaregistry.info/Elements/m/P30053	has note on manufacture statement					should it be mapped?		
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			p	Present	007 00	c			http://rdaregistry.info/Elements/e/P20061	has form of tactile notation							
 delete	7	PHYSICAL DESCRIPTION FIXED FIELD--GENERAL INFORMATION (R)							10	Quality assurance target(s)			p	Present	007 00	c			http://rdaregistry.info/Elements/e/P20290	has aspect ratio designation							
