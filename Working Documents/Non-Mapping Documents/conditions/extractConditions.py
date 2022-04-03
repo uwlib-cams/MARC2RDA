@@ -20,5 +20,5 @@ def createConditionSheet(merged):
                 if row['MARCTagCondition1']:
                     writer.writerow({'Field': row['MARCField'], 'condition1': row['MARCTagCondition1'], 'c1-values': row['Condition1Values'], 'condition2': row['MARCTagCondition2'], 'c2-values': row['Condition2Values']})
 
-createMainSheet(['../../1XX.txt', '../../2XX.txt', '../../3XX.txt', '../../4XX.txt', '../../5XX.txt', '../../6XX.txt', '../../7XX.txt', '../../8XX.txt', '../../LDR-DIR.txt'])
+createMainSheet(['../../00X.txt', '../../0XX.txt', '../../1XX.txt', '../../2XX.txt', '../../3XX.txt', '../../4XX.txt', '../../5XX.txt', '../../6XX.txt', '../../7XX.txt', '../../8XX.txt', '../../LDR-DIR.txt'])
 createConditionSheet('mergedSheet.csv')
