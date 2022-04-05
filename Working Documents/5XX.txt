@@ -1092,7 +1092,7 @@ Delete	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)					
 Delete	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/m/P30133	has designation of edition					
 Delete	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/m/P30134	has title of manifestation					
 Delete	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/m/P30136	is electronic reproduction of manifestation of					
-?	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/m/P30137	has note on manifestation		"The note could be about the work, expression, manifestation or item, or a combination of them.  The only superclass for these entities is RDA Entity.  "			
+?	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/m/P30137	has note on manifestation	unstructured description	"The note could be about the work, expression, manifestation or item, or a combination of them.  But since the MARC record represents a manifestation more than any other entity, map to that. "		The only superclass for these entities is RDA Entity.   It's unclear whether an entity for a Description Set could be used to apply properties whose Entity relation is unclear.  Mapping to Has note about the Manifestation is temporary pending RSC review.  	Discussion at https://github.com/uwlib-cams/MARC2RDA/discussions/330 
 Delete	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/m/P30138	has special playback characteristic					
 Delete	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/m/P30141	has contact information					
 Delete	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/m/P30145	has restriction on access to manifestation					
@@ -1444,13 +1444,13 @@ Delete	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)					
 Delete	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/i/P40158	has honouree family of item					
 Delete	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/i/P40159	has restorationist family of item					
 Delete	500	GENERAL NOTE (R)	Undefined	*		Undefined	*				a	General note (NR)							http://rdaregistry.info/Elements/i/P40160	has modifier family					
-	500	GENERAL NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			3	Materials specified (NR)													
-	500	GENERAL NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			5	Institution to which field applies (NR)													
-	500	GENERAL NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			6	Linkage (NR)													
-	500	GENERAL NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			8	Field link and sequence number (R)													
-	500	GENERAL NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			l	Library of Congress call number (SE) [OBSOLETE]													
-	500	GENERAL NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			x	International Standard Serial Number (SE) [OBSOLETE]													
-	500	GENERAL NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			z	Source of note information (AM SE) [OBSOLETE]													
+?	500	GENERAL NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			3	Materials specified (NR)													
+?	500	GENERAL NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			5	Institution to which field applies (NR)													
+?	500	GENERAL NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			6	Linkage (NR)													
+?	500	GENERAL NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			8	Field link and sequence number (R)													
+Delete	500	GENERAL NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			l	Library of Congress call number (SE) [OBSOLETE]													
+Delete	500	GENERAL NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			x	International Standard Serial Number (SE) [OBSOLETE]													
+Delete	500	GENERAL NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			z	Source of note information (AM SE) [OBSOLETE]													
 	501	WITH NOTE (R)	Undefined	*		Undefined	*				a	With note (NR)							http://rdaregistry.info/Elements/m/P30027	is accompanied by manifestation					
 	501	WITH NOTE (R)	Undefined	*		Undefined	*				a	With note (NR)							http://rdaregistry.info/Elements/m/P30035	is issued with					
 	501	WITH NOTE (R)	Undefined	*		Undefined	*				a	With note (NR)							http://rdaregistry.info/Elements/m/P30036	is on disc with manifestation					
