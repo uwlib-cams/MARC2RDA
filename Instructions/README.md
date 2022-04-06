@@ -5,6 +5,8 @@ _Last updated 23 February 2022_
  - [Video Demonstration](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#video-demonstration)
  - [Spreadsheet Structure](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#spreadsheet-structure)
  - [General Rules](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#general-rules)
+    - [MARC tag formatting](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#marc-tag-formatting)
+    - [Condition formatting]
  - Spreadsheet columns
    - [Status](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#status)
    - [MARCField](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#marcfield)
@@ -78,7 +80,9 @@ _Last updated 23 February 2022_
  #### Examples:
  - 264 #1 $c
  - 007/07
- 
+ ### Condition formatting
+
+
  ## Status
 | Example | Details |
 |---|---|
