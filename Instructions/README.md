@@ -5,6 +5,8 @@ _Last updated 23 February 2022_
  - [Video Demonstration](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#video-demonstration)
  - [Spreadsheet Structure](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#spreadsheet-structure)
  - [General Rules](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#general-rules)
+    - [MARC tag formatting](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#marc-tag-formatting)
+    - [Condition formatting](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#condition-formatting)
  - Spreadsheet columns
    - [Status](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#status)
    - [MARCField](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#marcfield)
@@ -59,17 +61,25 @@ _Last updated 23 February 2022_
  |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
  | | 490 | SERIES STATEMENT (R) | Series tracing policy | * | | Undefined | * | | | | a, x, v | | | | | | | | http://rdaregistry.info/Elements/m/P30106 | has series statement | structured description | Chose not to use sub-properties because number of conditions is not sustainable for transformation. MARC does not have separate subfields for each element. Chose to retain MARC subfields when ISBD punctuation is absent in order to maintain structure of description. | when LDR 18 = a or i, remove marc subfields and rely on ISBD punctuation. When LDR 18=c, retain marc subfield codes to separate pieces of information | | | |
  
- ## General Rules
+## General Rules
  - If not applicable, leave blank.
- - To indicate "any number 0-9" use 0-9.
- - To indicate "any value" use \*.
- - To indicate "not present" use not(). 
-   - _Example: not(700$i) means "700 $i not present"._
  - Notes should be initialed and dated, with separate notes in the same column/row separated by ;
- ### MARC tag formatting
+ - If many subfields need to be combined to produce a value for a single RDA element, list those separate subfields in the order they should appear using "MARCSubfield" using ", " and make a transformation note to indicate exactly what the resulting value should look like.
+ - Consistently use operators:
+### Operators
+| Operator | Example | Details |
+|---|---|---|
+| 0-9 | 0-9 | any number 0-9 |
+| * | * | any valid value |
+| not() | not($x) | To indicate "not present" |
+| # | # | Used only with indicators, to specify that the indicator is blank |
+| only() | only($a) | Used with conditions, to indicate a MARC field is limited to a single subfield |
+| [is[nodeType]] | [is IRI] | Value type constraint for conditions |
+| \| | special issue of\|is special issue of | OR |
+### MARC tag formatting
  - 3 digit tag,
  - followed by space,
- - followed by indicators (blank indicators use #),
+ - followed by indicators,
  - followed by either...
    - _for subfields:_
      - space, then $\[letter or number\]
@@ -78,7 +88,21 @@ _Last updated 23 February 2022_
  #### Examples:
  - 264 #1 $c
  - 007/07
- 
+ ### Condition formatting
+ #### Rules
+ - 1. To express a MARCTagCondition, follow the same MARC tag formatting as specified above, BUT: Do not repeat any information already expressed by other cells in the same row. For instance, if you want to express in the example row that $i has a value of "part of work", the MARCTagCondition is simply "$i".
+ - 2. To express a MARCTagCondition that only requires that a field/subfield is present, write the MARCTagCondition as in rule 1, but leave the Condition1Values blank.
+ - 3. To express a MARCTAgCondition where a specified subfield is the only subfield present in the field, express as in rule 1 but inside an only() operator, like so: "only($a)"
+ - 4. To specify the type of value of a MARCTagCondition, express the condition as in rule 1, and express the value as [is[nodeType]], like so: "[is IRI]" 
+ - 5. To express that a MARC tag or value is not present, express as in rule 1 but include either the MARC tag or value in a not() operator, like so: "not($1)"
+ - 6. It's ok to use an OR operator in either MARCTagConditions or ConditionValues. Use "|" to express these relationships, like so: "not($1|$0)"
+ - 7. "()" are ignored in literal values to prevent proliferation of conditions caused by similar RDA element labels. So, "part of (work)" and "part of work" are both expressed as "part of work"
+ - 8. Multiple conditions on the same row must have an "AND" relationship to one another. Additional sets of condition and condition value columns may be added to facilitate more layers of conditions. If you need to add an additional set of columns, let other participants know so all spreadsheets can remain uniform.
+ - 9. Conditions with "OR" relationships to one another must be expressed in separate rows of the spreadsheet.
+ #### Example
+ | Status | MARCField | MARCFieldLabel | MARCInd1Label | MARCInd1Value | MARCInd1ValueLabel | MARCInd2Label | MARCInd2Value | MARCInd2ValueLabel | CharacterPosition | CharacterPositionLabel | MARCSubfield | MARCSubfieldLabel | CodeValue | CodeValueLabel | MARCTagCondition1 | Condition1Values | MARCTagCondition2 | Condition2Values | RDA Registry URI | RDA Registry Label | Recording Method | Justification for Mapping | Transformation Notes | Problems with Mapping | Notes (Uncategorized) |
+ |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+ | | 700 | ADDED ENTRY--PERSONAL NAME (R) | Type of personal name entry element | * | | Type of added entry | * | | | | 0 | Authority record control number or standard number (R) | | | $i | part of work\|is part of work | | | http://rdaregistry.info/Elements/w/P10019 | is part of work | identifier\|IRI | | [entity]-->[property indicated]-->[entity2]-->[property indicating relationship between entity2 and an authority for entity 2]-->[value of $0] CEC 2022-03-01 | | |
  ## Status
 | Example | Details |
 |---|---|

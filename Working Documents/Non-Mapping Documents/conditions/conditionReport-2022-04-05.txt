@@ -1,0 +1,50 @@
+Current practice
+r = row ; c = condition 1 ; v = condition 1 value ; c2 = condition 2 ; v2 = condition 2 value
+1. Field/subfield has a specific value
+    a.	c = <subfield> ; v = <value>
+          i.	<row = 100> : c = $4 ; v = rsp
+    b.	c = <field><subfield> ; v = <value>
+          i.	<row = 340> : c = 336$a ; v = cartographic image
+          ii.	Note lack of space in above example; we should have spaces between field/indicator/subfield
+2. Field/subfield has specific indicator values and specific subfield value:
+    a.	c = <field> <indicator> <subfield> ; v = value
+          i.	c = 264 00 $b ; v = University of Washington
+          ii.	Above example appears only in “Spreadsheet Instructions”
+3. Field/subfield is present
+    a.	c=<subfield>
+          i.	$e
+4. Field is limited to a single subfield
+    a.	c = 340$a ; v = $a is only subfield
+    b.	Probably should have some “function” like: only(a)
+5. Value node constraint
+    a.	[is <nodeType>]
+          i.	[is TEXT}\]
+          ii.	[is IRI]
+6. Operators
+    a.	not()
+          i.	OK to use for condition or value.
+                1.	[in condition]: not(344$2)
+                2.	[in value]:not(of)
+          ii.	Can use an OR operator
+                1.	not(A OR B)
+    b.	|
+          i.	Currently only used for values
+          ii.	Could be used with conditions to prevent column proliferation.
+
+Possible error
+7. Completing c2 without a c1
+8. Entering a value of a condition without entering the condition
+9. No way to express a relationship between c and c2
+    a.	For example, is it an AND or OR relation?
+          i.	r = 100 ; c = $e ; v = librettist ; c2 = $4 ; v2 = lbt
+10. Adding conditions > c2 will make the sheets more difficult to process as a group.
+11. v = any value
+    a.	seems like an error; this means only that the field must be present, right?
+    b.	Both “any value” and “*”
+12. Repeating the field number in the condition when it is equivalent to the field number of the row
+    a.	r = 344 ; c = 344 ## $a
+13. [mentioned above]: should be a space between field/subfield, field/indicator/subfield
+    a.	336 $a …not… 336$a
+    b.	344 ## $2 …not…. 344##$2
+    c.	This also applies in “functions”:
+          i.	not(700 ** $i) … not … not(700**$i)
