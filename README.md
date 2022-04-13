@@ -8,7 +8,7 @@ This is a project of the Metadata and Cataloging Initiatives Unit of the Catalog
 -Crystal Clements [CECSpecialistI](https://github.com/CECSpecialistI), Mapping Contributor, Project Manager<br>
 -Theo Gerontakos [gerontakos](https://github.com/gerontakos), Mapping Contributor, Project Supervisor<br>
 -Adam Schiff [AdamSchiff](https://github.com/AdamSchiff), Mapping Contributor<br>
--Sita Bhagwandin [Soersatie](https://github.com/Soersatie), Mapping Contributor<br>
+-Sita Bhagwandin [SitaKB](https://github.com/SitaKB), Mapping Contributor<br>
 -Laura Akerman, [lake44me](https://github.com/lake44me), Mapping Contributor<br>
 -Jian Lee [JianPLee](https://github.com/JianPLee), Mapping Contributor<br>
 -Junghae Lee [junghaelee](https://github.com/junghaelee), Mapping Contributor<br>
