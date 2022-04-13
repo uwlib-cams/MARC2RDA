@@ -17324,120 +17324,120 @@ Attention: MARCField/MARCSubfield combination does not exist"
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			#	No determinable frequency					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			#	No determinable frequency					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			#	No determinable frequency					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			#	No determinable frequency					http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			#	No determinable frequency					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			#	No determinable frequency					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			|	No attempt to code					http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			|	No attempt to code					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			|	No attempt to code					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			#	No determinable frequency					http://rdaregistry.info/Elements/w/P10368	has frequency								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			#	No determinable frequency					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			#	No determinable frequency					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			|	No attempt to code					http://rdaregistry.info/Elements/w/P10368	has frequency								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			|	No attempt to code					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			|	No attempt to code					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			a	Annual					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			a	Annual					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			a	Annual					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			a	Annual					http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			a	Annual					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			a	Annual					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			a	Annual					http://rdaregistry.info/Elements/w/P10368	has frequency	structured				compare with RDA VES frequency			
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			a	Annual					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			a	Annual					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			b	Bimonthly					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			b	Bimonthly					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			b	Bimonthly					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			b	Bimonthly					http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			b	Bimonthly					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			b	Bimonthly					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			b	Bimonthly					http://rdaregistry.info/Elements/w/P10368	has frequency	structured				compare with RDA VES frequency			
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			b	Bimonthly					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			b	Bimonthly					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			c	Semiweekly					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			c	Semiweekly					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			c	Semiweekly					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			c	Semiweekly					http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			c	Semiweekly					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			c	Semiweekly					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			c	Semiweekly					http://rdaregistry.info/Elements/w/P10368	has frequency	structured				compare with RDA VES frequency			
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			c	Semiweekly					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			c	Semiweekly					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			d	Daily					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			d	Daily					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			d	Daily					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			d	Daily					http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			d	Daily					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			d	Daily					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			d	Daily					http://rdaregistry.info/Elements/w/P10368	has frequency	structured				compare with RDA VES frequency			
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			d	Daily					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			d	Daily					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			e	Biweekly					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			e	Biweekly					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			e	Biweekly					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			e	Biweekly					http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			e	Biweekly					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			e	Biweekly					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			e	Biweekly					http://rdaregistry.info/Elements/w/P10368	has frequency	structured				compare with RDA VES frequency			
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			e	Biweekly					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			e	Biweekly					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			f	Semiannual					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			f	Semiannual					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			f	Semiannual					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			f	Semiannual					http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			f	Semiannual					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			f	Semiannual					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			f	Semiannual					http://rdaregistry.info/Elements/w/P10368	has frequency	structured				compare with RDA VES frequency			
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			f	Semiannual					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			f	Semiannual					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			g	Biennial					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			g	Biennial					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			g	Biennial					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			g	Biennial					http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			g	Biennial					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			g	Biennial					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			g	Biennial					http://rdaregistry.info/Elements/w/P10368	has frequency	structured				compare with RDA VES frequency			
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			g	Biennial					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			g	Biennial					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			h	Triennial					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			h	Triennial					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			h	Triennial					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			h	Triennial					http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			h	Triennial					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			h	Triennial					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			h	Triennial					http://rdaregistry.info/Elements/w/P10368	has frequency	structured				compare with RDA VES frequency			
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			h	Triennial					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			h	Triennial					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			i	Three times a week					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			i	Three times a week					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			i	Three times a week					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			i	Three times a week					http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			i	Three times a week					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			i	Three times a week					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			i	Three times a week					http://rdaregistry.info/Elements/w/P10368	has frequency	structured				compare with RDA VES frequency			
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			i	Three times a week					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			i	Three times a week					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			j	Three times a month					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			j	Three times a month					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			j	Three times a month					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			j	Three times a month					http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			j	Three times a month					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			j	Three times a month					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			k	Continuously updated					http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			k	Continuously updated					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			k	Continuously updated					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			j	Three times a month					http://rdaregistry.info/Elements/w/P10368	has frequency	structured				compare with RDA VES frequency			
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			j	Three times a month					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			j	Three times a month					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			k	Continuously updated					http://rdaregistry.info/Elements/w/P10368	has frequency	structured				compare with RDA VES frequency			
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			k	Continuously updated					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			k	Continuously updated					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			m	Monthly					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			m	Monthly					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			m	Monthly					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			m	Monthly					http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			m	Monthly					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			m	Monthly					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			m	Monthly					http://rdaregistry.info/Elements/w/P10368	has frequency	structured				compare with RDA VES frequency			
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			m	Monthly					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			m	Monthly					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			n	Not applicable					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			n	Not applicable					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			n	Not applicable					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			q	Quarterly					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			q	Quarterly					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			q	Quarterly					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			q	Quarterly					http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			q	Quarterly					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			q	Quarterly					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			q	Quarterly					http://rdaregistry.info/Elements/w/P10368	has frequency	structured				compare with RDA VES frequency			
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			q	Quarterly					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			q	Quarterly					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			s	Semimonthly					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			s	Semimonthly					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			s	Semimonthly					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			s	Semimonthly					http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			s	Semimonthly					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			s	Semimonthly					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			s	Semimonthly					http://rdaregistry.info/Elements/w/P10368	has frequency	structured				compare with RDA VES frequency			
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			s	Semimonthly					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			s	Semimonthly					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			t	Three times a year					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			t	Three times a year					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			t	Three times a year					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			t	Three times a year					http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			t	Three times a year					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			t	Three times a year					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			t	Three times a year					http://rdaregistry.info/Elements/w/P10368	has frequency	structured				compare with RDA VES frequency			
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			t	Three times a year					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			t	Three times a year					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			u	Unknown					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			u	Unknown					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			u	Unknown					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			u	Unknown					http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			u	Unknown					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			u	Unknown					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			u	Unknown					http://rdaregistry.info/Elements/w/P10368	has frequency								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			u	Unknown					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			u	Unknown					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			w	Weekly					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			w	Weekly					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			w	Weekly					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			w	Weekly					http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			w	Weekly					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			w	Weekly					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			w	Weekly					http://rdaregistry.info/Elements/w/P10368	has frequency	structured				compare with RDA VES frequency			
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			w	Weekly					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+delete	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			w	Weekly					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			z	Other frequencies					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			z	Other frequencies					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency [OBSOLETE]			z	Other frequencies					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			z	Other					http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			z	Other					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			z	Other					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			z	Other					http://rdaregistry.info/Elements/w/P10368	has frequency								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			z	Other					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							18	Frequency			z	Other					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Form of composition			||	No attempt to code					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Form of composition			||	No attempt to code					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Form of composition			||	No attempt to code					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
@@ -17768,12 +17768,12 @@ Attention: MARCField/MARCSubfield combination does not exist"
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Relief			z	Other relief type					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Relief			z	Other relief type					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Relief			z	Other relief type					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							19	Regularity [OBSOLETE]			#	Not applicable					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							19	Regularity [OBSOLETE]			#	Not applicable					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							19	Regularity [OBSOLETE]			#	Not applicable					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
@@ -17984,9 +17984,9 @@ Attention: MARCField/MARCSubfield combination does not exist"
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							21	Type of continuing resource			w	Updating Web site					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							21	Type of continuing resource			w	Updating Web site					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							21	Type of continuing resource			w	Updating Web site					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							21	Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							21	Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							21	Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							21	Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							21	Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							21	Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							22	Target audience			#	Unknown or not specified					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							22	Target audience			#	Unknown or not specified					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							22	Target audience			#	Unknown or not specified					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
@@ -18299,9 +18299,9 @@ Attention: MARCField/MARCSubfield combination does not exist"
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Accompanying matter [OBSOLETE]			z	Other					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Accompanying matter [OBSOLETE]			z	Other					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Accompanying matter [OBSOLETE]			z	Other					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							24	Prime meridian [OBSOLETE]			#	Prime meridian not specified					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							24	Prime meridian [OBSOLETE]			#	Prime meridian not specified					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							24	Prime meridian [OBSOLETE]			#	Prime meridian not specified					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
@@ -18413,12 +18413,12 @@ Attention: MARCField/MARCSubfield combination does not exist"
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							24	Nature of entire work			z	Treaties					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							24	Nature of entire work			z	Treaties					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							24	Nature of entire work			z	Treaties					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							24	Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							24	Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							24	Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							24	Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							24	Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							24	Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Nature of contents			#	No specified nature of contents					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Nature of contents			#	No specified nature of contents					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Nature of contents			#	No specified nature of contents					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
@@ -18563,9 +18563,9 @@ Attention: MARCField/MARCSubfield combination does not exist"
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Accompanying matter			z	Other					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Accompanying matter			z	Other					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Accompanying matter			z	Other					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							25	Type of cartographic material			|	No attempt to code					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							25	Type of cartographic material			|	No attempt to code					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							25	Type of cartographic material			|	No attempt to code					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
@@ -18725,9 +18725,9 @@ Attention: MARCField/MARCSubfield combination does not exist"
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							26	Type of computer file			z	Other					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							26	Type of computer file			z	Other					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							26	Type of computer file			z	Other					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Publisher code [OBSOLETE]									http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Publisher code [OBSOLETE]									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Publisher code [OBSOLETE]									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
@@ -18737,9 +18737,9 @@ Attention: MARCField/MARCSubfield combination does not exist"
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							27	Type of machine [OBSOLETE]			z	Other					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							27	Type of machine [OBSOLETE]			z	Other					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							27	Type of machine [OBSOLETE]			z	Other					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							27	Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							27	Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							27	Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							27	Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							27	Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							27	Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							28	Government publication			#	Not a government publication					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							28	Government publication			#	Not a government publication					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							28	Government publication			#	Not a government publication					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
@@ -18821,9 +18821,9 @@ Attention: MARCField/MARCSubfield combination does not exist"
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							29	Form of item			s	Electronic					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							29	Form of item			s	Electronic					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							29	Form of item			s	Electronic					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							30	Title page availability [OBSOLETE]			#	No separate title page issued					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							30	Title page availability [OBSOLETE]			#	No separate title page issued					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							30	Title page availability [OBSOLETE]			#	No separate title page issued					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
@@ -18872,9 +18872,9 @@ Attention: MARCField/MARCSubfield combination does not exist"
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							30	Title page availability [OBSOLETE]			z	Other title page availability					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							30	Title page availability [OBSOLETE]			z	Other title page availability					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							30	Title page availability [OBSOLETE]			z	Other title page availability					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							30	Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							30	Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							30	Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							30	Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							30	Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							30	Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Literary text for sound recordings			#	Item is a musical sound recording					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Literary text for sound recordings			#	Item is a musical sound recording					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Literary text for sound recordings			#	Item is a musical sound recording					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
@@ -18941,9 +18941,9 @@ Attention: MARCField/MARCSubfield combination does not exist"
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Literary text for sound recordings			z	Other					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Literary text for sound recordings			z	Other					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Literary text for sound recordings			z	Other					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							31	Index availability [OBSOLETE]			#	No index published					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							31	Index availability [OBSOLETE]			#	No index published					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							31	Index availability [OBSOLETE]			#	No index published					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
@@ -19046,9 +19046,9 @@ Attention: MARCField/MARCSubfield combination does not exist"
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							32	Processing status code [OBSOLETE]			u	Unknown					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							32	Processing status code [OBSOLETE]			u	Unknown					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							32	Processing status code [OBSOLETE]			u	Unknown					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							32	Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							32	Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							32	Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							32	Undefined									http://rdaregistry.info/Elements/w/P10368	has frequency								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							32	Undefined									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							32	Undefined									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							32	Citation indicator [OBSOLETE]									http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							32	Citation indicator [OBSOLETE]									http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							32	Citation indicator [OBSOLETE]									http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
@@ -19307,9 +19307,9 @@ Attention: MARCField/MARCSubfield combination does not exist"
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Special format characteristics			z	Other					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Special format characteristics			z	Other					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)								Special format characteristics			z	Other					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			#	No biographical material					http://rdaregistry.info/Elements/w/P10368	has frequency								
-not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			#	No biographical material					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
-not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			#	No biographical material					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			#	No biographical material					http://rdaregistry.info/Elements/w/P10368	has frequency								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			#	No biographical material					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			#	No biographical material					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Technique			#	Not applicable [OBSOLETE]					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Technique			#	Not applicable [OBSOLETE]					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Technique			#	Not applicable [OBSOLETE]					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
@@ -19331,33 +19331,33 @@ not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biogr
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Entry convention			2	Integrated entry					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Entry convention			2	Integrated entry					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Entry convention			2	Integrated entry					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			a	Autobiography					http://rdaregistry.info/Elements/w/P10368	has frequency					See also 006/17			
-not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			a	Autobiography					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression					See also 006/17			
-not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			a	Autobiography					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation					See also 006/17			
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			a	Autobiography					http://rdaregistry.info/Elements/w/P10368	has frequency								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			a	Autobiography					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			a	Autobiography					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Technique			a	Animation					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Technique			a	Animation					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Technique			a	Animation					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Level of collection control code [OBSOLETE]			a	Control on collection level					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Level of collection control code [OBSOLETE]			a	Control on collection level					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Level of collection control code [OBSOLETE]			a	Control on collection level					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			b	Individual biography					http://rdaregistry.info/Elements/w/P10368	has frequency					See also 006/17			
-not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			b	Individual biography					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression					See also 006/17			
-not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			b	Individual biography					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation					See also 006/17			
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			b	Individual biography					http://rdaregistry.info/Elements/w/P10368	has frequency								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			b	Individual biography					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			b	Individual biography					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Level of collection control code [OBSOLETE]			b	Control by series					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Level of collection control code [OBSOLETE]			b	Control by series					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Level of collection control code [OBSOLETE]			b	Control by series					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			c	Collective biography					http://rdaregistry.info/Elements/w/P10368	has frequency					See also 006/17			
-not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			c	Collective biography					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression					See also 006/17			
-not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			c	Collective biography					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation					See also 006/17			
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			c	Collective biography					http://rdaregistry.info/Elements/w/P10368	has frequency								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			c	Collective biography					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			c	Collective biography					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Technique			c	Animation and live action					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Technique			c	Animation and live action					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Technique			c	Animation and live action					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Level of collection control code [OBSOLETE]			c	Control by container					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Level of collection control code [OBSOLETE]			c	Control by container					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Level of collection control code [OBSOLETE]			c	Control by container					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
-not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			d	Contains biographical information					http://rdaregistry.info/Elements/w/P10368	has frequency					See also 006/17			
-not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			d	Contains biographical information					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression					See also 006/17			
-not mapped	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			d	Contains biographical information					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation					See also 006/17			
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			d	Contains biographical information					http://rdaregistry.info/Elements/w/P10368	has frequency								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			d	Contains biographical information					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
+	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Biography			d	Contains biographical information					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Level of collection control code [OBSOLETE]			d	Control by folder					http://rdaregistry.info/Elements/w/P10368	has frequency								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Level of collection control code [OBSOLETE]			d	Control by folder					http://rdaregistry.info/Elements/e/P20322	has intended audience of expression								
 	8	FIXED-LENGTH DATA ELEMENTS--GENERAL INFORMATION (NR)							34	Level of collection control code [OBSOLETE]			d	Control by folder					http://rdaregistry.info/Elements/m/P30305	has intended audience of manifestation								
