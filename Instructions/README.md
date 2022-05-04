@@ -34,9 +34,6 @@ _Last updated 23 February 2022_
    - [Transformation Notes](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#transformation-notes)
    - [Problems with Mapping](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#problems-with-mapping)
    - [Notes (Uncategorized)](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#notes-uncategorized)
- - Troubleshooting
-   - [Default Program for text files](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#default-program-for-text-files)
-
 
  ## [Video Demonstration](https://vimeo.com/675022150)
  ## Spreadsheet Structure
@@ -293,17 +290,3 @@ _[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#
 | This field is obsolete, but exists in legacy data so we should map it. -CEC 2021-09-29; Here's another note about another thing. - CEC 2021-10-01 | All notes that do not fall under another notes category. |
 
 _[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
-
-## Default Program for Text Files
-* Problem: For Windows 10 Users, Excel is not a default program for .txt files, and is not presented as an option for opening files directly from the File Explorer. The System Settings does not allow users to change Excel to the default application in System Settings-->Default apps. 
-* Workaround: Open your repository in File Explorer, and open Excel. Click and drag the file you want to work on into an empty workbook. This workaround must be done each time a file is opened.
-* Workaround: Open Excel first, select File-->Open, navigate to local clone of the repository, and open files from there. Click through the import wizard to open file. This workaround must be done each time a file is opened. 
-* Workaround: Change the computer's default application for .txt files from the Command Prompt. This workaround only needs to be done once, but will apply to all .txt files you open until it is changed again.
- * Open Command Prompt as Administrator
- * Find your absolute path to Excel
-  * Right-click Excel shortcut, select "Properties", and copy from  "Target" in the "Shortcut" Tab. 
- * Enter command:
-  > ftype txtfile="your absolute path to excel" "%1"
-  > Example: ftype txtfile="C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE" "%1"
- * If something like this appears, you have successfully made Excel your default app for opening .txt files:
-  > txtfile="C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE" "%1"
