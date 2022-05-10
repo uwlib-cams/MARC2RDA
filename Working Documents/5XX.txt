@@ -2005,7 +2005,7 @@ delete	516	TYPE OF COMPUTER FILE OR DATA NOTE (R)	Display constant controller	*	
 	518	DATE/TIME AND PLACE OF AN EVENT NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			3	Materials specified (NR)													
 	518	DATE/TIME AND PLACE OF AN EVENT NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			6	Linkage (NR)													
 	518	DATE/TIME AND PLACE OF AN EVENT NOTE (R)	Undefined	#	Undefined	Undefined	#	Undefined			8	Field link and sequence number (R)													
-	520	"""SUMMARY, ETC. (R)"""	Display constant controller	*		Undefined	*				a	"""""""""""""""Summary, etc. note (NR)"""""""""""""""							http://rdaregistry.info/Elements/w/P10222	has nature of content					
+	520	SUMMARY, ETC. (R)	Display constant controller	*		Undefined	*				a	"""""""""""""""Summary, etc. note (NR)"""""""""""""""							http://rdaregistry.info/Elements/w/P10222	has nature of content					
 	520	SUMMARY ETC. (R)	Display constant controller	*		Undefined	*				a	"""""""""""""""Summary, etc. note (NR)"""""""""""""""							http://rdaregistry.info/Elements/e/P20069	has summarization of content					
 	520	"""""""""""""""SUMMARY, ETC. (R)"""""""""""""""	Display constant controller	*		Undefined	*				b	Expansion of summary note (NR)							http://rdaregistry.info/Elements/w/P10222	has nature of content					
 	520	"""""""""""""""SUMMARY, ETC. (R)"""""""""""""""	Display constant controller	*		Undefined	*				b	Expansion of summary note (NR)							http://rdaregistry.info/Elements/e/P20069	has summarization of content					
