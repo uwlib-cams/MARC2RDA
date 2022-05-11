@@ -2081,8 +2081,8 @@ first pass	347	DIGITAL FILE CHARACTERISTICS (R)	Undefined	*		Undefined	*				1	Re
 	355	SECURITY CLASSIFICATION CONTROL (R)	Controlled element	5	Record	Undefined	#	Undefined			8	Field link and sequence number (R)																																								
 	355	SECURITY CLASSIFICATION CONTROL (R)	Controlled element	8	Other element	Undefined	#	Undefined			6	Linkage (NR)																																								
 	355	SECURITY CLASSIFICATION CONTROL (R)	Controlled element	8	Other element	Undefined	#	Undefined			8	Field link and sequence number (R)																																								
-	357	ORIGINATOR DISSEMINATION CONTROL (NR)	Undefined	#	Undefined	Undefined	#	Undefined			6	Linkage (NR)																																								
-	357	ORIGINATOR DISSEMINATION CONTROL (NR)	Undefined	#	Undefined	Undefined	#	Undefined			8	Field link and sequence number (R)																																								
+first pass	357	ORIGINATOR DISSEMINATION CONTROL (NR)	Undefined	#	Undefined	Undefined	#	Undefined			6	Linkage (NR)							UNDECIDED						UNDECIDED																											
+first pass	357	ORIGINATOR DISSEMINATION CONTROL (NR)	Undefined	#	Undefined	Undefined	#	Undefined			8	Field link and sequence number (R)							UNDECIDED						UNDECIDED																											
 	362	DATES OF PUBLICATION AND/OR SEQUENTIAL DESIGNATION (R)	Format of date	0	Formatted style	Undefined	#	Undefined			6	Linkage (NR)																																								
 	362	DATES OF PUBLICATION AND/OR SEQUENTIAL DESIGNATION (R)	Format of date	0	Formatted style	Undefined	#	Undefined			8	Field link and sequence number (R)																																								
 	362	DATES OF PUBLICATION AND/OR SEQUENTIAL DESIGNATION (R)	Format of date	1	Unformatted note	Undefined	#	Undefined			6	Linkage (NR)																																								
@@ -3312,10 +3312,10 @@ loss	521	TARGET AUDIENCE NOTE (R)	Display constant controller	*	*	Undefined	#	Un
 	662	SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R)	Undefined	*		Undefined	*				1	Real World Object URI (R)							http://rdaregistry.info/Elements/w/P10316	has related place of work																																
 	662	SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R)	Undefined	*		Undefined	*				1	Real World Object URI (R)							http://rdaregistry.info/Elements/w/P10321	has subject place																																
 	662	SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R)	Undefined	*		Undefined	*				1	Real World Object URI (R)							http://rdaregistry.info/Elements/w/P10601	is description of place																																
-	668			*			*				0								http://rdaregistry.info/Elements/w/P10256	has subject				"Attention: MARCField/MARCField combination does not exist ;
-Attention: MARCField/MARCSubfield combination does not exist"																												
-	668			*			*				1								http://rdaregistry.info/Elements/w/P10256	has subject				"Attention: MARCField/MARCField combination does not exist ;
-Attention: MARCField/MARCSubfield combination does not exist"																												
+	668			*			*				0								http://rdaregistry.info/Elements/w/P10256	has subject				Attention: MARCField/MARCField combination does not exist ;																												
+"Attention: MARCField/MARCSubfield combination does not exist"""																																																				
+	668			*			*				1								http://rdaregistry.info/Elements/w/P10256	has subject				Attention: MARCField/MARCField combination does not exist ;																												
+"Attention: MARCField/MARCSubfield combination does not exist"""																																																				
 	688	SUBJECT ADDED ENTRY--TYPE OF ENTITY UNSPECIFIED (R)	Undefined	#	Undefined	"Source of name, title, or term"	7	Source specified in subfield $2			0	Authority record control number or standard number (R)																																								
 	688	SUBJECT ADDED ENTRY--TYPE OF ENTITY UNSPECIFIED (R)	Undefined	#	Undefined	"Source of name, title, or term"	7	Source specified in subfield $2			1	Real World Object URI (R)																																								
 	688	SUBJECT ADDED ENTRY--TYPE OF ENTITY UNSPECIFIED (R)	Undefined	#	Undefined	"Source of name, title, or term"	7	Source specified in subfield $2			2	"Source of name, title, or term (NR)"																																								
