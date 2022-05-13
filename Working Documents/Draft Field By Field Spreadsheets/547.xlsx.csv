@@ -1,0 +1,5 @@
+Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
+,547,FORMER TITLE COMPLEXITY NOTE (R),Undefined,*,,Undefined,*,,,,a,Former title complexity note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30063,has note on title,,,,,
+,547,FORMER TITLE COMPLEXITY NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+,547,FORMER TITLE COMPLEXITY NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+,547,FORMER TITLE COMPLEXITY NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,z,Source of note information (NR) (SE) [OBSOLETE],,,,,,,,,,,,,

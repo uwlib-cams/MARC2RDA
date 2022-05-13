@@ -1,0 +1,6 @@
+Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
+,590,LOCAL NOTE (BK CF MP MU SE VM MX) [OBSOLETE],Undefined,#,Undefined,Undefined,#,Undefined,,,a,Local note (NR),,,,,,,,,,,,,
+,590,RECEIPT DATE NOTE (VM) [OBSOLETE],Undefined,#,Undefined,Undefined,#,Undefined,,,a,Receipt date (NR),,,,,,,,,,,,,
+,590,RECEIPT DATE NOTE (VM) [OBSOLETE],Undefined,#,Undefined,Undefined,#,Undefined,,,b,Provenance (NR),,,,,,,,,,,,,
+,590,RECEIPT DATE NOTE (VM) [OBSOLETE],Undefined,#,Undefined,Undefined,#,Undefined,,,d,Condition of individual reels (NR),,,,,,,,,,,,,
+,590,RECEIPT DATE NOTE (VM) [OBSOLETE],Undefined,#,Undefined,Undefined,#,Undefined,,,d,Origin of safety copy (NR),,,,,,,,,,,,,
