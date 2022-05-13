@@ -1,5 +1,4 @@
-To convert .xsl from Google Sheets and convert to these: 
-Instructions
+To convert .xsl from Google Sheets to .csv for this folder:
 ---
 
 1. Copy both files into the directory containing the files you want converted
