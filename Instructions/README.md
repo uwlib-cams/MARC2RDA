@@ -1,5 +1,5 @@
 # Spreadsheet Instructions
-_Last updated 23 February 2022_
+_Last updated 27 April 2022_
 
 ## Table of Contents
  - [Video Demonstration](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#video-demonstration)
