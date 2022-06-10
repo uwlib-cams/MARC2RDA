@@ -1,0 +1,12 @@
+,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
+0,,343,PLANAR COORDINATE DATA (R),Undefined,#,Undefined,Undefined,#,Undefined,,,a,Planar coordinate encoding method (NR),,,,,,,,,,,,,
+1,,343,PLANAR COORDINATE DATA (R),Undefined,#,Undefined,Undefined,#,Undefined,,,b,Planar distance units (NR),,,,,,,,,,,,,
+2,,343,PLANAR COORDINATE DATA (R),Undefined,#,Undefined,Undefined,#,Undefined,,,c,Abscissa resolution (NR),,,,,,,,,,,,,
+3,,343,PLANAR COORDINATE DATA (R),Undefined,#,Undefined,Undefined,#,Undefined,,,d,Ordinate resolution (NR),,,,,,,,,,,,,
+4,,343,PLANAR COORDINATE DATA (R),Undefined,#,Undefined,Undefined,#,Undefined,,,e,Distance resolution (NR),,,,,,,,,,,,,
+5,,343,PLANAR COORDINATE DATA (R),Undefined,#,Undefined,Undefined,#,Undefined,,,f,Bearing resolution (NR),,,,,,,,,,,,,
+6,,343,PLANAR COORDINATE DATA (R),Undefined,#,Undefined,Undefined,#,Undefined,,,g,Bearing units (NR),,,,,,,,,,,,,
+7,,343,PLANAR COORDINATE DATA (R),Undefined,#,Undefined,Undefined,#,Undefined,,,h,Bearing reference direction (NR),,,,,,,,,,,,,
+8,,343,PLANAR COORDINATE DATA (R),Undefined,#,Undefined,Undefined,#,Undefined,,,i,Bearing reference meridian (NR),,,,,,,,,,,,,
+9,,343,PLANAR COORDINATE DATA (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+10,,343,PLANAR COORDINATE DATA (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,

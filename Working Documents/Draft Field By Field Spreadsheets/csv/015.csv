@@ -1,0 +1,7 @@
+,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
+0,,15,NATIONAL BIBLIOGRAPHY NUMBER (R),Undefined,*,,Undefined,*,,,,a,National bibliography number (R),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,,,,,
+1,,15,NATIONAL BIBLIOGRAPHY NUMBER (R),Undefined,*,,Undefined,*,,,,q,Qualifying information (R),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,,,,,
+2,,15,NATIONAL BIBLIOGRAPHY NUMBER (R),Undefined,*,,Undefined,*,,,,z,Canceled/Invalid national bibliography number (R),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,,,,,
+3,,15,NATIONAL BIBLIOGRAPHY NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,2,Source (NR),,,,,,,,,,,,,
+4,,15,NATIONAL BIBLIOGRAPHY NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+5,,15,NATIONAL BIBLIOGRAPHY NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,

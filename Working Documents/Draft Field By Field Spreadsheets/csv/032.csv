@@ -1,0 +1,5 @@
+,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
+0,,32,POSTAL REGISTRATION NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,a,Postal registration number (NR),,,,,,,,,,,,,
+1,,32,POSTAL REGISTRATION NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,b,Source (agency assigning number) (NR),,,,,,,,,,,,,
+2,,32,POSTAL REGISTRATION NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+3,,32,POSTAL REGISTRATION NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,

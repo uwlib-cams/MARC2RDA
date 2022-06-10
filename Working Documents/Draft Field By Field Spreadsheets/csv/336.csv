@@ -1,0 +1,9 @@
+,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
+0,,336,CONTENT TYPE (R),Undefined,*,,Undefined,*,,,,a,Content type term (R),,,,,,,http://rdaregistry.info/Elements/e/P20001,has content type,structured description or unstructured description,Term that describes the content type for a manifestation,,,
+1,,336,CONTENT TYPE (R),Undefined,*,,Undefined,*,,,,b,Content type code (R),,,,,,,http://rdaregistry.info/Elements/e/P20001,has content type,identifier,Code that represents the content type for a manifestation,,,
+2,,336,CONTENT TYPE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,2,Source (NR),,,,,,,,,,,,,
+3,,336,CONTENT TYPE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,,,,,,,
+4,,336,CONTENT TYPE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+5,,336,CONTENT TYPE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+6,,336,CONTENT TYPE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/e/P20001,has content type,,,identifier or IRI,Identifier or IRI that represents the content type for a manifestation,
+7,,336,CONTENT TYPE (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/e/P20001,has content type,,,IRI,IRI that represents the content type for a manifestation,

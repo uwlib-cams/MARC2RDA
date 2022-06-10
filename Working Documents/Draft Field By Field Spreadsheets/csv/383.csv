@@ -1,0 +1,13 @@
+,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
+0,,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Undefined,*,,Undefined,*,,,,a,Serial number (R),,,,,,,http://rdaregistry.info/Elements/w/P10079,has numeric designation of musical work,,,,,
+1,,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Undefined,*,,Undefined,*,,,,a,Serial number (R),,,,,,,http://rdaregistry.info/Elements/w/P10334,has serial number of musical work,,,,,
+2,,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Undefined,*,,Undefined,*,,,,b,Opus number (R),,,,,,,http://rdaregistry.info/Elements/w/P10079,has numeric designation of musical work,,,,,
+3,,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Undefined,*,,Undefined,*,,,,b,Opus number (R),,,,,,,http://rdaregistry.info/Elements/w/P10333,has opus number,,,,,
+4,,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Undefined,*,,Undefined,*,,,,c,Thematic index number (R),,,,,,,http://rdaregistry.info/Elements/w/P10079,has numeric designation of musical work,,,,,
+5,,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Undefined,*,,Undefined,*,,,,c,Thematic index number (R),,,,,,,http://rdaregistry.info/Elements/w/P10335,has thematic index number,,,,,
+6,,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Undefined,*,,Undefined,*,,,,d,Thematic index code (NR),,,,,,,http://rdaregistry.info/Elements/w/P10079,has numeric designation of musical work,,,,,
+7,,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Undefined,#,Undefined,Undefined,#,Undefined,,,e,Publisher associated with opus number (NR),,,,,,,,,,,,,
+8,,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Undefined,#,Undefined,Undefined,#,Undefined,,,2,Source (NR),,,,,,,,,,,,,
+9,,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials secified (NR),,,,,,,,,,,,,
+10,,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+11,,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
