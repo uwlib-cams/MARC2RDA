@@ -1,6 +1,0 @@
-Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-,882,REPLACEMENT RECORD INFORMATION (NR),Undefined,#,Undefined,Undefined,#,Undefined,,,a,Replacement title (R),,,,,,,,,,,,,
-,882,REPLACEMENT RECORD INFORMATION (NR),Undefined,#,Undefined,Undefined,#,Undefined,,,i,Explanatory text (R),,,,,,,,,,,,,
-,882,REPLACEMENT RECORD INFORMATION (NR),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-,882,REPLACEMENT RECORD INFORMATION (NR),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-,882,REPLACEMENT RECORD INFORMATION (NR),Undefined,#,Undefined,Undefined,#,Undefined,,,w,Replacement bibliographic record control number (R),,,,,,,,,,,,,

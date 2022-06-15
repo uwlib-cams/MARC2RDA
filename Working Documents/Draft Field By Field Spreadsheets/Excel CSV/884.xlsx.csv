@@ -1,6 +1,0 @@
-Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-,884,DESCRIPTION CONVERSION INFORMATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,a,Conversion process (NR),,,,,,,,,,,,,
-,884,DESCRIPTION CONVERSION INFORMATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,g,Conversion date (NR),,,,,,,,,,,,,
-,884,DESCRIPTION CONVERSION INFORMATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,k,Identifier of source metadata (NR),,,,,,,,,,,,,
-,884,DESCRIPTION CONVERSION INFORMATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,q,Conversion agency (NR),,,,,,,,,,,,,
-,884,DESCRIPTION CONVERSION INFORMATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,u,Uniform Resource Identifier (R),,,,,,,,,,,,,

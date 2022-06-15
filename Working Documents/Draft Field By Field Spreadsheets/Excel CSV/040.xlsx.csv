@@ -1,8 +1,0 @@
-Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-,040,CATALOGING SOURCE (NR),Undefined,#,Undefined,Undefined,#,Undefined,,,a,Original cataloging agency (NR),,,,,,,,,,,,,
-,040,CATALOGING SOURCE (NR),Undefined,#,Undefined,Undefined,#,Undefined,,,b,Language of cataloging (NR),,,,,,,,,,,,,
-,040,CATALOGING SOURCE (NR),Undefined,#,Undefined,Undefined,#,Undefined,,,c,Transcribing agency (NR),,,,,,,,,,,,,
-,040,CATALOGING SOURCE (NR),Undefined,#,Undefined,Undefined,#,Undefined,,,d,Modifying agency (R),,,,,,,,,,,,,
-,040,CATALOGING SOURCE (NR),Undefined,#,Undefined,Undefined,#,Undefined,,,e,Description conventions (R),,,,,,,,,,,,,
-,040,CATALOGING SOURCE (NR),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-,040,CATALOGING SOURCE (NR),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
