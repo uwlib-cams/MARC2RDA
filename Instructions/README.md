@@ -111,7 +111,7 @@ _Last updated 27 April 2022_
 | ? | If you have questions or uncertainty about a row, or you think the row needs more attention from another human, record "?". |
 | loss | If the MARC being expressed is more specific than available LRM/RDA/RDF allows, record "loss". We will review, compile, and send these to RSC requesting clarification or changes to Registry.  |
 | reviewed | Once a first pass has been reviewed, record "reviewed". |
-| done | When no further work is required for a row and it's ready to be published, record "done". |
+| done | When a row has been accounted for in the transformation code and it's ready to be published, record "done". |
 * If a not-mapped row also contains an incorrect mapping, record "not mapped" rather than "delete". 
 
 _[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
