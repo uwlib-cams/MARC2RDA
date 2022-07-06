@@ -6,18 +6,18 @@ import pandas as pd
 #2. Select ALL (all folders that is)
 #3. Download
 #4. Enter var values for python script (at present the way this is done varies for the vars):
-#   downloadPath
-#   downloadFile
-#   extractPath
-#   dir
-#   gitRepo
+#   downloadPath (currently OK for geron)
+#   downloadFile -- CHANGES EVERY TIME
+#   extractPath (currently OK for geron)
+#   dir (currently OK for geron)
+#   gitRepo (currently OK for geron)
 #5. Run
 #6. Manually delete:
 #    downloadFile
 #7. Go to git repo and manually add, commit, push
 
 downloadPath = r"C:\Users\geron\Downloads\\"
-downloadFile = "drive-download-20220610T170324Z-001.zip"
+downloadFile = "drive-download-20220706T151552Z-001.zip"
 extractPath = r"C:\Users\geron\OneDrive\Desktop\csvStage_folders\\"
 dir = r"C:\Users\geron\OneDrive\Desktop\csvStage_files"
 gitRepo = r"C:\Users\geron\OneDrive - UW\Documents\gitRepos\MARC2RDA\Working Documents\Draft Field By Field Spreadsheets\csv"

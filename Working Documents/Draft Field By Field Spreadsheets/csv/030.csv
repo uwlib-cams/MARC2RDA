@@ -1,5 +1,13 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,,30,CODEN DESIGNATION (R),Undefined,*,,Undefined,*,,,,a,CODEN (NR),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,,,,,
-1,,30,CODEN DESIGNATION (R),Undefined,*,,Undefined,*,,,,z,Canceled/invalid CODEN (R),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,,,,,
-2,,30,CODEN DESIGNATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-3,,30,CODEN DESIGNATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+0,first pass,30,CODEN DESIGNATION (R),Undefined,*,,Undefined,*,,,,a,CODEN (NR),,,$a,[A-Z]*,,,http://rdaregistry.info/Elements/w/datatype/P10002,has identifier for work,identifier,"When a CODEN starts with a capital letter, it identifies a serial and thus a work identifier -- ZP 6/11/2022","[Work]-->rdawd:P10002-->""(CODEN)"" + {value of $a} -- ZP 6/11/2022
+",,issue #64
+1,first pass,30,CODEN DESIGNATION (R),Undefined,*,,Undefined,*,,,,z,Canceled/invalid CODEN (R),,,$z,[A-Z]*,,,http://rdaregistry.info/Elements/w/datatype/P10002,has identifier for work,identifier,"When a CODEN starts with a capital letter, it identifies a serial and thus a work identifier -- ZP 6/11/2022","[Work]-->rdawd:P10002-->""(Canceled/invalid CODEN)"" + {value of $a} -- ZP 6/11/2022
+",,
+2,first pass,30,CODEN DESIGNATION (R),Undefined,*,,Undefined,*,,,,a,CODEN (NR),,,$a,[0-9]*,,,"
+http://rdaregistry.info/Elements/m/datatype/P30004",has identifier for manifestation,identifier,"When a CODEN starts with a digit, it identifies a non-serial and thus a manifestation identifier -- ZP 6/11/2022","[Manifestation]-->rdamd:P30004-->""(CODEN)"" + {value of $a} -- ZP 6/11/2022
+",,
+3,first pass,30,CODEN DESIGNATION (R),Undefined,*,,Undefined,*,,,,z,Canceled/invalid CODEN (R),,,$z,[0-9]*,,,"
+http://rdaregistry.info/Elements/m/datatype/P30004",has identifier for manifestation,identifier,"When a CODEN starts with a digit, it identifies a non-serial and thus a manifestation identifier -- ZP 6/11/2022","[Manifestation]-->rdamd:P30004-->""(Canceled/invalid CODEN)"" + {value of $a} -- ZP 6/11/2022
+",,
+4,delete,30,CODEN DESIGNATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,CODENs are alphanumeric codes -- ZP 6/11/2022,,,
+5,?,30,CODEN DESIGNATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,

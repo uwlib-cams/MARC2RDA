@@ -1,48 +1,48 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,,246,VARYING FORM OF TITLE (R),Note/added entry controller,*,,Type of title,*,,,,a,Title proper/short title (NR),,,,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,,,,,
-1,,246,VARYING FORM OF TITLE (R),Note/added entry controller,*,,Type of title,*,,,,a,Title proper/short title (NR),,,,,,,http://rdaregistry.info/Elements/e/P20312,has title of expression,,,,,
-2,,246,VARYING FORM OF TITLE (R),Note/added entry controller,*,,Type of title,*,,,,a,Title proper/short title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,,,
-3,,246,VARYING FORM OF TITLE (R),Note/added entry controller,*,,Type of title,*,,,,a,Title proper/short title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30203,has parallel title proper,,,,,
-4,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,#,No type specified,,,b,Remainder of title (NR),,,,,,,,,,,,,
-5,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,0,Portion of title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-6,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,1,Parallel title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-7,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,2,Distinctive title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-8,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,3,Other title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-9,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,4,Cover title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-10,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,5,Added title page title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-11,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,6,Caption title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-12,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,7,Running title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-13,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,8,Spine title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-14,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,#,No type specified,,,b,Remainder of title (NR),,,,,,,,,,,,,
-15,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,0,Portion of title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-16,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,1,Parallel title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-17,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,2,Distinctive title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-18,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,3,Other title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-19,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,4,Cover title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-20,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,5,Added title page title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-21,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,6,Caption title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-22,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,7,Running title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-23,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,8,Spine title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-24,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,#,No type specified,,,b,Remainder of title (NR),,,,,,,,,,,,,
-25,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,0,Portion of title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-26,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,1,Parallel title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-27,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,2,Distinctive title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-28,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,3,Other title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-29,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,4,Cover title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-30,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,5,Added title page title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-31,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,6,Caption title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-32,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,7,Running title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-33,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,8,Spine title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-34,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,#,No type specified,,,b,Remainder of title (NR),,,,,,,,,,,,,
-35,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,0,Portion of title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-36,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,1,Parallel title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-37,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,2,Distinctive title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-38,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,3,Other title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-39,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,4,Cover title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-40,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,5,Added title page title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-41,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,6,Caption title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-42,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,7,Running title,,,b,Remainder of title (NR),,,,,,,,,,,,,
-43,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,8,Spine title,,,b,Remainder of title (NR),,,,,,,,,,,,,
+0,,246,VARYING FORM OF TITLE (R),Note/added entry controller,*,,Type of title,*,,,,a,Title proper/short title (NR),,,,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,,,,,if $b is populated then convert $a +$b
+1,,246,VARYING FORM OF TITLE (R),Note/added entry controller,*,,Type of title,*,,,,a,Title proper/short title (NR),,,,,,,http://rdaregistry.info/Elements/e/P20312,has title of expression,,,,,if $b is populated then convert $a +$b
+2,,246,VARYING FORM OF TITLE (R),Note/added entry controller,*,,Type of title,*,,,,a,Title proper/short title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,,,if $b is populated then convert $a +$b
+3,,246,VARYING FORM OF TITLE (R),Note/added entry controller,*,,Type of title,*,,,,a,Title proper/short title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30203,has parallel title proper,,,,,if  TAG 245 has punctuation '=' 
+4,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,#,No type specified,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+5,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,0,Portion of title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+6,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,1,Parallel title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30203,has parallel title proper,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+7,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,2,Distinctive title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+8,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,3,Other title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+9,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,4,Cover title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+10,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,5,Added title page title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+11,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,6,Caption title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+12,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,7,Running title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+13,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,8,Spine title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+14,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,#,No type specified,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+15,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,0,Portion of title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+16,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,1,Parallel title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30203,has parallel title proper,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+17,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,2,Distinctive title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+18,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,3,Other title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+19,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,4,Cover title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+20,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,5,Added title page title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+21,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,6,Caption title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+22,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,7,Running title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+23,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,8,Spine title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+24,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,#,No type specified,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+25,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,0,Portion of title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+26,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,1,Parallel title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30203,has parallel title proper,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+27,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,2,Distinctive title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+28,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,3,Other title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+29,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,4,Cover title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+30,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,5,Added title page title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+31,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,6,Caption title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+32,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,7,Running title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+33,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,8,Spine title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+34,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,#,No type specified,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+35,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,0,Portion of title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+36,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,1,Parallel title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30203,has parallel title proper,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+37,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,2,Distinctive title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+38,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,3,Other title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+39,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,4,Cover title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+40,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,5,Added title page title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+41,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,6,Caption title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+42,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,7,Running title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
+43,first pass,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,8,Spine title,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30128,has variant title of manifestation,,,$b should be together with $a : $a+$b,,$b is not mapped separately
 44,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,#,No type specified,,,d,Designation of section (SE) [OBSOLETE],,,,,,,,,,,,,
 45,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,0,Portion of title,,,d,Designation of section (SE) [OBSOLETE],,,,,,,,,,,,,
 46,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,1,Parallel title,,,d,Designation of section (SE) [OBSOLETE],,,,,,,,,,,,,
@@ -124,8 +124,8 @@
 122,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,7,Running title,,,e,Name of part/section (SE) [OBSOLETE],,,,,,,,,,,,,
 123,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,8,Spine title,,,e,Name of part/section (SE) [OBSOLETE],,,,,,,,,,,,,
 124,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,#,No type specified,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
-125,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,0,Portion of title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
-126,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,1,Parallel title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
+125,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,0,Portion of title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
+126,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,1,Parallel title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
 127,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,2,Distinctive title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
 128,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,3,Other title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
 129,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,4,Cover title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
@@ -134,8 +134,8 @@
 132,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,7,Running title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
 133,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,8,Spine title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
 134,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,#,No type specified,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
-135,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,0,Portion of title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
-136,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,1,Parallel title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
+135,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,0,Portion of title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
+136,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,1,Parallel title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
 137,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,2,Distinctive title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
 138,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,3,Other title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
 139,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,4,Cover title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
@@ -144,8 +144,8 @@
 142,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,7,Running title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
 143,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,8,Spine title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
 144,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,#,No type specified,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
-145,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,0,Portion of title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
-146,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,1,Parallel title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
+145,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,0,Portion of title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
+146,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,1,Parallel title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
 147,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,2,Distinctive title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
 148,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,3,Other title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
 149,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,4,Cover title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
@@ -154,8 +154,8 @@
 152,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,7,Running title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
 153,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,8,Spine title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
 154,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,#,No type specified,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
-155,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,0,Portion of title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
-156,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,1,Parallel title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
+155,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,0,Portion of title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
+156,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,1,Parallel title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
 157,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,2,Distinctive title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
 158,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,3,Other title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
 159,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,4,Cover title,,,f,Date or sequential designation (NR),,,,,,,,,,,,,
@@ -243,46 +243,46 @@
 241,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,6,Caption title,,,h,Medium (NR),,,,,,,,,,,,,
 242,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,7,Running title,,,h,Medium (NR),,,,,,,,,,,,,
 243,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,8,Spine title,,,h,Medium (NR),,,,,,,,,,,,,
-244,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,#,No type specified,,,i,Display text (NR),,,,,,,,,,,,,
-245,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,0,Portion of title,,,i,Display text (NR),,,,,,,,,,,,,
-246,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,1,Parallel title,,,i,Display text (NR),,,,,,,,,,,,,
-247,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,2,Distinctive title,,,i,Display text (NR),,,,,,,,,,,,,
-248,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,3,Other title,,,i,Display text (NR),,,,,,,,,,,,,
-249,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,4,Cover title,,,i,Display text (NR),,,,,,,,,,,,,
-250,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,5,Added title page title,,,i,Display text (NR),,,,,,,,,,,,,
-251,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,6,Caption title,,,i,Display text (NR),,,,,,,,,,,,,
-252,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,7,Running title,,,i,Display text (NR),,,,,,,,,,,,,
-253,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,8,Spine title,,,i,Display text (NR),,,,,,,,,,,,,
-254,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,#,No type specified,,,i,Display text (NR),,,,,,,,,,,,,
-255,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,0,Portion of title,,,i,Display text (NR),,,,,,,,,,,,,
-256,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,1,Parallel title,,,i,Display text (NR),,,,,,,,,,,,,
-257,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,2,Distinctive title,,,i,Display text (NR),,,,,,,,,,,,,
-258,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,3,Other title,,,i,Display text (NR),,,,,,,,,,,,,
-259,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,4,Cover title,,,i,Display text (NR),,,,,,,,,,,,,
-260,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,5,Added title page title,,,i,Display text (NR),,,,,,,,,,,,,
-261,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,6,Caption title,,,i,Display text (NR),,,,,,,,,,,,,
-262,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,7,Running title,,,i,Display text (NR),,,,,,,,,,,,,
-263,,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,8,Spine title,,,i,Display text (NR),,,,,,,,,,,,,
-264,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,#,No type specified,,,i,Display text (NR),,,,,,,,,,,,,
-265,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,0,Portion of title,,,i,Display text (NR),,,,,,,,,,,,,
-266,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,1,Parallel title,,,i,Display text (NR),,,,,,,,,,,,,
-267,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,2,Distinctive title,,,i,Display text (NR),,,,,,,,,,,,,
-268,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,3,Other title,,,i,Display text (NR),,,,,,,,,,,,,
-269,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,4,Cover title,,,i,Display text (NR),,,,,,,,,,,,,
-270,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,5,Added title page title,,,i,Display text (NR),,,,,,,,,,,,,
-271,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,6,Caption title,,,i,Display text (NR),,,,,,,,,,,,,
-272,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,7,Running title,,,i,Display text (NR),,,,,,,,,,,,,
-273,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,8,Spine title,,,i,Display text (NR),,,,,,,,,,,,,
-274,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,#,No type specified,,,i,Display text (NR),,,,,,,,,,,,,
-275,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,0,Portion of title,,,i,Display text (NR),,,,,,,,,,,,,
-276,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,1,Parallel title,,,i,Display text (NR),,,,,,,,,,,,,
-277,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,2,Distinctive title,,,i,Display text (NR),,,,,,,,,,,,,
-278,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,3,Other title,,,i,Display text (NR),,,,,,,,,,,,,
-279,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,4,Cover title,,,i,Display text (NR),,,,,,,,,,,,,
-280,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,5,Added title page title,,,i,Display text (NR),,,,,,,,,,,,,
-281,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,6,Caption title,,,i,Display text (NR),,,,,,,,,,,,,
-282,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,7,Running title,,,i,Display text (NR),,,,,,,,,,,,,
-283,,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,8,Spine title,,,i,Display text (NR),,,,,,,,,,,,,
+244,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,#,No type specified,,,i,Display text (NR),,,,,,,,,,,,,
+245,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,0,Portion of title,,,i,Display text (NR),,,,,,,,,,,,,
+246,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,1,Parallel title,,,i,Display text (NR),,,,,,,,,,,,,
+247,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,2,Distinctive title,,,i,Display text (NR),,,,,,,,,,,,,
+248,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,3,Other title,,,i,Display text (NR),,,,,,,,,,,,,
+249,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,4,Cover title,,,i,Display text (NR),,,,,,,,,,,,,
+250,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,5,Added title page title,,,i,Display text (NR),,,,,,,,,,,,,
+251,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,6,Caption title,,,i,Display text (NR),,,,,,,,,,,,,
+252,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,7,Running title,,,i,Display text (NR),,,,,,,,,,,,,
+253,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,8,Spine title,,,i,Display text (NR),,,,,,,,,,,,,
+254,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,#,No type specified,,,i,Display text (NR),,,,,,,,,,,,,
+255,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,0,Portion of title,,,i,Display text (NR),,,,,,,,,,,,,
+256,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,1,Parallel title,,,i,Display text (NR),,,,,,,,,,,,,
+257,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,2,Distinctive title,,,i,Display text (NR),,,,,,,,,,,,,
+258,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,3,Other title,,,i,Display text (NR),,,,,,,,,,,,,
+259,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,4,Cover title,,,i,Display text (NR),,,,,,,,,,,,,
+260,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,5,Added title page title,,,i,Display text (NR),,,,,,,,,,,,,
+261,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,6,Caption title,,,i,Display text (NR),,,,,,,,,,,,,
+262,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,7,Running title,,,i,Display text (NR),,,,,,,,,,,,,
+263,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,1,"Note, added entry",Type of title,8,Spine title,,,i,Display text (NR),,,,,,,,,,,,,
+264,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,#,No type specified,,,i,Display text (NR),,,,,,,,,,,,,
+265,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,0,Portion of title,,,i,Display text (NR),,,,,,,,,,,,,
+266,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,1,Parallel title,,,i,Display text (NR),,,,,,,,,,,,,
+267,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,2,Distinctive title,,,i,Display text (NR),,,,,,,,,,,,,
+268,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,3,Other title,,,i,Display text (NR),,,,,,,,,,,,,
+269,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,4,Cover title,,,i,Display text (NR),,,,,,,,,,,,,
+270,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,5,Added title page title,,,i,Display text (NR),,,,,,,,,,,,,
+271,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,6,Caption title,,,i,Display text (NR),,,,,,,,,,,,,
+272,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,7,Running title,,,i,Display text (NR),,,,,,,,,,,,,
+273,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,8,Spine title,,,i,Display text (NR),,,,,,,,,,,,,
+274,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,#,No type specified,,,i,Display text (NR),,,,,,,,,,,,,
+275,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,0,Portion of title,,,i,Display text (NR),,,,,,,,,,,,,
+276,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,1,Parallel title,,,i,Display text (NR),,,,,,,,,,,,,
+277,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,2,Distinctive title,,,i,Display text (NR),,,,,,,,,,,,,
+278,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,3,Other title,,,i,Display text (NR),,,,,,,,,,,,,
+279,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,4,Cover title,,,i,Display text (NR),,,,,,,,,,,,,
+280,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,5,Added title page title,,,i,Display text (NR),,,,,,,,,,,,,
+281,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,6,Caption title,,,i,Display text (NR),,,,,,,,,,,,,
+282,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,7,Running title,,,i,Display text (NR),,,,,,,,,,,,,
+283,not mapped,246,VARYING FORM OF TITLE (R),Note/added entry controller,3,"No note, added entry",Type of title,8,Spine title,,,i,Display text (NR),,,,,,,,,,,,,
 284,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,#,No type specified,,,n,Number of part/section of a work (R),,,,,,,,,,,,,
 285,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,0,Portion of title,,,n,Number of part/section of a work (R),,,,,,,,,,,,,
 286,,246,VARYING FORM OF TITLE (R),Note/added entry controller,0,"Note, no added entry",Type of title,1,Parallel title,,,n,Number of part/section of a work (R),,,,,,,,,,,,,
@@ -426,7 +426,7 @@
 424,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,0,Portion of title,,,5,Institution to which field applies (NR),,,,,,,,,,,,,
 425,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,0,Portion of title,,,6,Linkage (NR),,,,,,,,,,,,,
 426,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,0,Portion of title,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-427,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,1,Parallel title,,,5,Institution to which field applies (NR),,,,,,,,,,,,,
+427,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,1,Parallel title,,,5,Institution to which field applies (NR),,,,,,,,,,,,,See also TAG 500$a$5
 428,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,1,Parallel title,,,6,Linkage (NR),,,,,,,,,,,,,
 429,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,1,Parallel title,,,8,Field link and sequence number (R),,,,,,,,,,,,,
 430,,246,VARYING FORM OF TITLE (R),Note/added entry controller,2,"No note, no title added entry",Type of title,2,Distinctive title,,,5,Institution to which field applies (NR),,,,,,,,,,,,,
