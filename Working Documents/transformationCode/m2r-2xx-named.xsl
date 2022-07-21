@@ -4,8 +4,15 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ex="http://fakeIRI.edu/"
     xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+    xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+    xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
     xmlns:rdae="http://rdaregistry.info/Elements/e/"
-    xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:fake="http://fakePropertiesForDemo"
+    xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+    xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+    xmlns:rdam="http://rdaregistry.info/Elements/m/"
+    xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+    xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+    xmlns:fake="http://fakePropertiesForDemo"
     exclude-result-prefixes="marc ex" version="3.0">
     <xsl:template name="F264-abc">
         <xsl:value-of
@@ -18,24 +25,24 @@
             <xsl:choose>
                 <!-- condition with = probably need toacocunt for a possible terminal colon -->
                 <xsl:when test="contains(., '=')">
-                    <rdam:P30086>
+                    <rdamd:P30086>
                         <xsl:value-of select="substring-before(., '=')"/>
-                    </rdam:P30086>
-                    <rdam:P30091>
+                    </rdamd:P30086>
+                    <rdamd:P30091>
                         <xsl:value-of select="substring-after(., '=')"/>
-                    </rdam:P30091>
+                    </rdamd:P30091>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:choose>
                         <xsl:when test="contains(., ' :')">
-                            <rdam:P30086>
+                            <rdamd:P30086>
                                 <xsl:value-of select="substring-before(., ' :')"/>
-                            </rdam:P30086>
+                            </rdamd:P30086>
                         </xsl:when>
                         <xsl:otherwise>
-                            <rdam:P30086>
+                            <rdamd:P30086>
                                 <xsl:value-of select="."/>
-                            </rdam:P30086>
+                            </rdamd:P30086>
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:otherwise>
@@ -48,24 +55,24 @@
             <xsl:choose>
                 <!-- condition with = probably need toacocunt for a possible terminal colon -->
                 <xsl:when test="contains(., '=')">
-                    <rdam:P30088>
+                    <rdamd:P30088>
                         <xsl:value-of select="substring-before(., '=')"/>
-                    </rdam:P30088>
-                    <rdam:P30092>
+                    </rdamd:P30088>
+                    <rdamd:P30092>
                         <xsl:value-of select="substring-after(., '=')"/>
-                    </rdam:P30092>
+                    </rdamd:P30092>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:choose>
                         <xsl:when test="contains(., ' :')">
-                            <rdam:P30088>
+                            <rdamd:P30088>
                                 <xsl:value-of select="substring-before(., ' :')"/>
-                            </rdam:P30088>
+                            </rdamd:P30088>
                         </xsl:when>
                         <xsl:otherwise>
-                            <rdam:P30088>
+                            <rdamd:P30088>
                                 <xsl:value-of select="."/>
-                            </rdam:P30088>
+                            </rdamd:P30088>
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:otherwise>
@@ -78,24 +85,24 @@
             <xsl:choose>
                 <!-- condition with = probably need toacocunt for a possible terminal colon -->
                 <xsl:when test="contains(., '=')">
-                    <rdam:P30087>
+                    <rdamd:P30087>
                         <xsl:value-of select="substring-before(., '=')"/>
-                    </rdam:P30087>
-                    <rdam:P30090>
+                    </rdamd:P30087>
+                    <rdamd:P30090>
                         <xsl:value-of select="substring-after(., '=')"/>
-                    </rdam:P30090>
+                    </rdamd:P30090>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:choose>
                         <xsl:when test="contains(., ' :')">
-                            <rdam:P30087>
+                            <rdamd:P30087>
                                 <xsl:value-of select="substring-before(., ' :')"/>
-                            </rdam:P30087>
+                            </rdamd:P30087>
                         </xsl:when>
                         <xsl:otherwise>
-                            <rdam:P30087>
+                            <rdamd:P30087>
                                 <xsl:value-of select="."/>
-                            </rdam:P30087>
+                            </rdamd:P30087>
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:otherwise>
@@ -108,24 +115,24 @@
             <xsl:choose>
                 <!-- condition with = probably need toacocunt for a possible terminal colon -->
                 <xsl:when test="contains(., '=')">
-                    <rdam:P30085>
+                    <rdamd:P30085>
                         <xsl:value-of select="substring-before(., '=')"/>
-                    </rdam:P30085>
-                    <rdam:P30089>
+                    </rdamd:P30085>
+                    <rdamd:P30089>
                         <xsl:value-of select="substring-after(., '=')"/>
-                    </rdam:P30089>
+                    </rdamd:P30089>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:choose>
                         <xsl:when test="contains(., ' :')">
-                            <rdam:P30085>
+                            <rdamd:P30085>
                                 <xsl:value-of select="substring-before(., ' :')"/>
-                            </rdam:P30085>
+                            </rdamd:P30085>
                         </xsl:when>
                         <xsl:otherwise>
-                            <rdam:P30085>
+                            <rdamd:P30085>
                                 <xsl:value-of select="."/>
-                            </rdam:P30085>
+                            </rdamd:P30085>
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:otherwise>

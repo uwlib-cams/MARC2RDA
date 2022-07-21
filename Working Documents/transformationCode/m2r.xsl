@@ -4,8 +4,15 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ex="http://fakeIRI.edu/"
     xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+    xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+    xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
     xmlns:rdae="http://rdaregistry.info/Elements/e/"
-    xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:fake="http://fakePropertiesForDemo"
+    xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+    xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+    xmlns:rdam="http://rdaregistry.info/Elements/m/"
+    xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+    xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+    xmlns:fake="http://fakePropertiesForDemo"
     exclude-result-prefixes="marc ex" version="3.0">
     <xsl:output encoding="UTF-8" method="xml" indent="yes"/>
     <xsl:strip-space elements="*"/>
@@ -31,27 +38,36 @@
         <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
             xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
             xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+            xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+            xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
             xmlns:rdae="http://rdaregistry.info/Elements/e/"
-            xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:ex="http://fakeIRI2.edu/">
+            xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+            xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+            xmlns:rdam="http://rdaregistry.info/Elements/m/"
+            xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+            xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+            xmlns:ex="http://fakeIRI2.edu/">
             <xsl:apply-templates select="marc:record"/>
         </rdf:RDF>
     </xsl:template>
     <xsl:template match="marc:record">
         <!-- *****WORKS***** -->
-        <rdf:Description rdf:about="{concat($base,marc:controlfield[@tag='001'],'wk')}">
+        <rdf:Description rdf:about="{concat($base,marc:controlfield[@tag='001'],'wor')}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-            <rdaw:P10078 rdf:resource="{concat($base,marc:controlfield[@tag='001'],'exp')}"/>
-            <xsl:apply-templates select="*" mode="work"/>
+            <rdawo:P10078 rdf:resource="{concat($base,marc:controlfield[@tag='001'],'exp')}"/>
+            <xsl:apply-templates select="*" mode="wor"/>
         </rdf:Description>
         <!-- *****EXPRESSIONS***** -->
         <rdf:Description rdf:about="{concat($base,marc:controlfield[@tag='001'],'exp')}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-            <rdae:P20059 rdf:resource="{concat($base,marc:controlfield[@tag='001'],'man')}"/>
+            <rdaeo:P20059 rdf:resource="{concat($base,marc:controlfield[@tag='001'],'man')}"/>
+            <rdaeo:P20231 rdf:resource="{concat($base,marc:controlfield[@tag='001'],'wor')}"/>
             <xsl:apply-templates select="*" mode="exp"/>
         </rdf:Description>
         <!-- *****MANIFESTATIONS***** -->
         <rdf:Description rdf:about="{concat($base,marc:controlfield[@tag='001'],'man')}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+            <rdamo:P30139 rdf:resource="{concat($base,marc:controlfield[@tag='001'],'exp')}"/>
             <xsl:apply-templates select="*" mode="man"/>
         </rdf:Description>
     </xsl:template>

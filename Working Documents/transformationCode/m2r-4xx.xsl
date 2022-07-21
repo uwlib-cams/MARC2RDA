@@ -4,8 +4,15 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ex="http://fakeIRI.edu/"
     xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+    xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+    xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
     xmlns:rdae="http://rdaregistry.info/Elements/e/"
-    xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:fake="http://fakePropertiesForDemo"
+    xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+    xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+    xmlns:rdam="http://rdaregistry.info/Elements/m/"
+    xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+    xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+    xmlns:fake="http://fakePropertiesForDemo"
     exclude-result-prefixes="marc ex" version="3.0">
     <xsl:include href="m2r-4xx-named.xsl"/>
     <xsl:template match="marc:datafield[@tag = '490']" mode="man">
@@ -23,7 +30,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    <xsl:template match="*" mode="work"/>
+    <xsl:template match="*" mode="wor"/>
     <xsl:template match="*" mode="exp"/>
     <xsl:template match="*" mode="man"/>
 </xsl:stylesheet>

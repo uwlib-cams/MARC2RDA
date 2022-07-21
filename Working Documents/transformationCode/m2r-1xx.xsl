@@ -7,17 +7,17 @@
     xmlns:rdae="http://rdaregistry.info/Elements/e/"
     xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:fake="http://fakePropertiesForDemo"
     exclude-result-prefixes="marc ex" version="3.0">
-    <xsl:template match="marc:datafield[@tag = '100']" mode="work">
+    <xsl:template match="marc:datafield[@tag = '100']" mode="wor">
         <fake:rdawP10065>
             <xsl:value-of select="marc:subfield" separator=" "/>
         </fake:rdawP10065>
     </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '110']" mode="work">
+    <xsl:template match="marc:datafield[@tag = '110']" mode="wor">
         <fake:rdawP10065>
             <xsl:value-of select="marc:subfield" separator=" "/>
         </fake:rdawP10065>
     </xsl:template>
-    <xsl:template match="*" mode="work"/>
+    <xsl:template match="*" mode="wor"/>
     <xsl:template match="*" mode="exp"/>
     <xsl:template match="*" mode="man"/>
 </xsl:stylesheet>
