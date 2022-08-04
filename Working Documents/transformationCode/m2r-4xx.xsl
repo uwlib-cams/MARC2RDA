@@ -30,7 +30,4 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    <xsl:template match="*" mode="wor"/>
-    <xsl:template match="*" mode="exp"/>
-    <xsl:template match="*" mode="man"/>
 </xsl:stylesheet>

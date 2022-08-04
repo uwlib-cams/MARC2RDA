@@ -12,6 +12,9 @@
     xmlns:rdam="http://rdaregistry.info/Elements/m/"
     xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
     xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+    xmlns:rdai="http://rdaregistry.info/Elements/m/"
+    xmlns:rdaid="http://rdaregistry.info/Elements/m/datatype/"
+    xmlns:rdaio="http://rdaregistry.info/Elements/m/object/"
     xmlns:fake="http://fakePropertiesForDemo"
     exclude-result-prefixes="marc ex" version="3.0">
     <xsl:output encoding="UTF-8" method="xml" indent="yes"/>
@@ -21,6 +24,7 @@
     <xsl:include href="m2r-2xx.xsl"/>
     <xsl:include href="m2r-3xx.xsl"/>
     <xsl:include href="m2r-4xx.xsl"/>
+    <xsl:include href="m2r-5xx.xsl"/>
     <xsl:template match="/">
         <!--        <test>
             <introduction>
@@ -68,7 +72,14 @@
         <rdf:Description rdf:about="{concat($base,marc:controlfield[@tag='001'],'man')}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
             <rdamo:P30139 rdf:resource="{concat($base,marc:controlfield[@tag='001'],'exp')}"/>
+            <rdamo:P30103 rdf:resource="{concat($base,marc:controlfield[@tag='001'],'ite')}"/>
             <xsl:apply-templates select="*" mode="man"/>
+        </rdf:Description>
+        <!-- *****ITEMS***** -->
+        <rdf:Description rdf:about="{concat($base,marc:controlfield[@tag='001'],'ite')}">
+            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+            <rdamo:P40049 rdf:resource="{concat($base,marc:controlfield[@tag='001'],'man')}"/>
+            <xsl:apply-templates select="*" mode="ite"/>
         </rdf:Description>
     </xsl:template>
 </xsl:stylesheet>

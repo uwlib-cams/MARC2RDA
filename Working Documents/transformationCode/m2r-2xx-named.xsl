@@ -15,8 +15,14 @@
     xmlns:fake="http://fakePropertiesForDemo"
     exclude-result-prefixes="marc ex" version="3.0">
     <xsl:template name="F264-abc">
+        <!-- THIS TEMPLATE MUST BE REPAIRED.
+            Subfields a, b, and c can all repeat and cannot simply be concatenated.
+            REQUIRED: logic that tests for the presence of a repeating $a, $b, or $c
+            ...then outputs a statement for the first, the second, the third, etc.
+            ...or finds a way to concatenate the repeating fields.
+            ERROR IN THE CODE BELOW: only position [1] is selected for each subfield.-->
         <xsl:value-of
-            select="concat(marc:subfield[@code = 'a'], ' ', marc:subfield[@code = 'b'], ' ', marc:subfield[@code = 'c'])"
+            select="concat(marc:subfield[@code = 'a'][1], ' ', marc:subfield[@code = 'b'][1], ' ', marc:subfield[@code = 'c'][1])"
         />
     </xsl:template>
 

@@ -36,7 +36,4 @@
         <xsl:call-template name="F338-string"/>
         <xsl:call-template name="F338-iri"/>
     </xsl:template>
-    <xsl:template match="*" mode="wor"/>
-    <xsl:template match="*" mode="exp"/>
-    <xsl:template match="*" mode="man"/>
 </xsl:stylesheet>

@@ -7,6 +7,7 @@
     xmlns:rdae="http://rdaregistry.info/Elements/e/"
     xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:fake="http://fakePropertiesForDemo"
     exclude-result-prefixes="marc ex" version="3.0">
+    <!-- The current template for the 100 field is not based on a mapping, it is stricly for improving human readability of the XSLT output; if authors names are present in the output RDA description sets, it's more clear what we're looking at -->
     <xsl:template match="marc:datafield[@tag = '100']" mode="wor">
         <fake:rdawP10065>
             <xsl:value-of select="marc:subfield" separator=" "/>
@@ -20,4 +21,5 @@
     <xsl:template match="*" mode="wor"/>
     <xsl:template match="*" mode="exp"/>
     <xsl:template match="*" mode="man"/>
+    <xsl:template match="*" mode="ite"/>
 </xsl:stylesheet>
