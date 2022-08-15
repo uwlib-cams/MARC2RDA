@@ -44,6 +44,11 @@
             </xsl:if>
         </rdamd:P30455>
     </xsl:template>
+    <xsl:template match="marc:datafield[@tag = '522']" mode="wor">
+        <rdawd:P10216>
+            <xsl:value-of select="concat('Geographic coverage: ', marc:subfield[@code = 'a'])"/>
+        </rdawd:P10216>
+    </xsl:template>
    <!-- <xsl:template match="*" mode="wor"/>
     <xsl:template match="*" mode="exp"/>
     <xsl:template match="*" mode="man"/>
