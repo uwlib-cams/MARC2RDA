@@ -8,7 +8,7 @@ _Last updated 27 April 2022_
     - [MARC tag formatting](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#marc-tag-formatting)
     - [Condition formatting](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#condition-formatting)
  - Spreadsheet columns
-   - [Status](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#status)
+   - [Status](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#status)
    - [MARCField](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#marcfield)
    - [MARCFieldLabel](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#marcfieldlabel)
    - [MARCInd1Label](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#marcind1label)
@@ -103,9 +103,9 @@ _Last updated 27 April 2022_
  ## Status
 | Example | Details |
 |---|---|
-|  | Needs human review. A blank status field indicates that this mapping hasn't been changed since it was machine-generated. |
+|  | Needs human review. A blank status field indicates that this mapping hasn't been reviewed by a human since it was machine-generated. If a machine-generated mapping is analyzed by a human and determined not to need changes, do not leave Status blank. |
 | not mapped | If the MARC field identified in this row should be left out of the mapping for any reason, record "not mapped". |
-| first pass | Once a row has been initially mapped by a human, but has not yet been reviewed by someone else, record "first pass". |
+| first pass | Once a row has been mapped by a human, but has not yet been reviewed by someone else, record "first pass". This applies even if a machine-generated mapping is reviewed and left unchanged. |
 | delete | If you are certain that an existing row should be deleted from our mapping, record "delete". |
 | delete? | If you think a row should be deleted from our mapping, but are not entirely sure, record "delete?". |
 | ? | If you have questions or uncertainty about a row, or you think the row needs more attention from another human, record "?". |

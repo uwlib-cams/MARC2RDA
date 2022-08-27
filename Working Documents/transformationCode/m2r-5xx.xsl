@@ -32,6 +32,20 @@
         </rdaid:P40028>
         <rdaio:P40161 rdf:resource="{$collBase}{lower-case(marc:subfield[@code='5'])}"/>
     </xsl:template>
+    <xsl:template match="marc:datafield[@tag = '504']" mode="man">
+        <rdamd:P30455>
+            <xsl:value-of select="marc:subfield[@code = 'a']"/>
+            <xsl:if test="marc:subfield[@code = 'b']">
+                <xsl:value-of
+                    select="concat(' Number of references: ', marc:subfield[@code = 'b'], '.')"/>
+            </xsl:if>
+        </rdamd:P30455>
+    </xsl:template>
+    <xsl:template match="marc:datafield[@tag = '522']" mode="wor">
+        <rdawd:P10216>
+            <xsl:value-of select="concat('Geographic coverage: ', marc:subfield[@code = 'a'])"/>
+        </rdawd:P10216>
+    </xsl:template>
    <!-- <xsl:template match="*" mode="wor"/>
     <xsl:template match="*" mode="exp"/>
     <xsl:template match="*" mode="man"/>
