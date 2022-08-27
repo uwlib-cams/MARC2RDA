@@ -25,15 +25,12 @@
                 <xsl:value-of select="marc:subfield[@code = 'a']"/>
             </rdamd:P30137>
         </xsl:if>
-        <xsl:if test="marc:subfield[@code = 'a'] and marc:subfield[@tag='5']">
-            
-        </xsl:if>
     </xsl:template>
   <xsl:template match="marc:datafield[@tag = '500'][marc:subfield[@code='5']]" mode="ite">
-        <rdaio:P40028>
+        <rdaid:P40028>
             <xsl:value-of select="marc:subfield[@code = 'a']"/>
-        </rdaio:P40028>
-        <rdaid:P40161 rdf:resource="{$collBase}{lower-case(marc:subfield[@code='5'])}"/>
+        </rdaid:P40028>
+        <rdaio:P40161 rdf:resource="{$collBase}{lower-case(marc:subfield[@code='5'])}"/>
     </xsl:template>
    <!-- <xsl:template match="*" mode="wor"/>
     <xsl:template match="*" mode="exp"/>
