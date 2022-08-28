@@ -14,6 +14,6 @@
 12,first pass,538,SYSTEM DETAILS NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified  (NR),,,,,,,,,,,"Append ""Applies to: "" + {value of $3} to the end of the value of rdam:P30162 -- ZP 6/17/2022",,
 13,,538,SYSTEM DETAILS NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,5,Institution to which field applies (NR),,,,,,,,,,,,,
 14,,538,SYSTEM DETAILS NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-15,,538,SYSTEM DETAILS NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+15,not mapped,538,SYSTEM DETAILS NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
 16,delete,538,SYSTEM DETAILS NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,i,Display text (NR),,,,,,,,,,,,,
 17,delete,538,SYSTEM DETAILS NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,u,Uniform Resource Identifier (R),,,,,,,,,,,,,

@@ -2,4 +2,4 @@
 0,first pass,88,REPORT NUMBER (R),Undefined,*,,Undefined,*,,,,a,Report number (NR),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,identifier,,"[Manifestation]-->rdam:P30004-->""(Report number)"" + {value of $a} -- ZP 6/16/2022",,
 1,first pass,88,REPORT NUMBER (R),Undefined,*,,Undefined,*,,,,z,Canceled/invalid report number (R),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,identifier,,"[Manifestation]-->rdam:P30004-->""(Canceled/invalid report number)"" + {value of $a} -- ZP 6/16/2022",,
 2,,88,REPORT NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-3,,88,REPORT NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+3,not mapped,88,REPORT NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,

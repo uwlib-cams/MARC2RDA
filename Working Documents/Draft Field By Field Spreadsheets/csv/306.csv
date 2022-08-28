@@ -2,4 +2,4 @@
 0,loss,306,PLAYING TIME (NR),Undefined,*,,Undefined,*,,,,a,Playing time (R),,,,,,,http://rdaregistry.info/Elements/e/P20219,has duration,structured description,,[Expression]-->rdae:P20219-->[value of $a] -- ZP 3/26/2022,"Coded in the time format hhmmss, which may be lost without the MARC tag context. A note on metadata could be added to clarify the encoding format -- ZP 3/26/2022",
 1,delete,306,PLAYING TIME (NR),Undefined,*,,Undefined,*,,,,a,Playing time (R),,,,,,,http://rdaregistry.info/Elements/e/P20307,has related timespan of expression,,,,,Not specific enough -- ZP 3/26/2022
 2,?,306,PLAYING TIME (NR),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-3,?,306,PLAYING TIME (NR),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+3,not mapped,306,PLAYING TIME (NR),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,

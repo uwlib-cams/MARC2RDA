@@ -11,5 +11,5 @@
 9,delete,546,LANGUAGE NOTE (R),Undefined,*,,Undefined,*,,,,b,Information code or alphabet (R),,,,,,,http://rdaregistry.info/Elements/e/P20266,has details of script,,,,,Soft-deprecated -- ZP 4/8/2022
 10,?,546,LANGUAGE NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,,,,,,,
 11,?,546,LANGUAGE NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-12,?,546,LANGUAGE NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+12,not mapped,546,LANGUAGE NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
 13,?,546,LANGUAGE NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,z,Source of note information (NR) (SE) [OBSOLETE],,,,,,,,,,,,,

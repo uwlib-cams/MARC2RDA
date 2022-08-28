@@ -7,4 +7,4 @@
 5,delete,27,STANDARD TECHNICAL REPORT NUMBER (R),Undefined,*,,Undefined,*,,,,q,Qualifying information (R),,,,,,,http://rdaregistry.info/Elements/m/P30309,has type of binding,,,,,
 6,delete,27,STANDARD TECHNICAL REPORT NUMBER (R),Undefined,*,,Undefined,*,,,,z,Canceled/invalid number (R),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,,,,,
 7,,27,STANDARD TECHNICAL REPORT NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-8,,27,STANDARD TECHNICAL REPORT NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+8,not mapped,27,STANDARD TECHNICAL REPORT NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
