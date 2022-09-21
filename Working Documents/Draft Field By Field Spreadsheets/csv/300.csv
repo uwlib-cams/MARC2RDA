@@ -1,16 +1,16 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,a,Extent (R),,,,,,,http://rdaregistry.info/Elements/e/P20219,has duration,,,,,
-1,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,a,Extent (R),,,,,,,http://rdaregistry.info/Elements/e/P20307,has related timespan of expression,,,,,
-2,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,a,Extent (R),,,,,,,http://rdaregistry.info/Elements/e/P20321,has extent of expression,,,,,
-3,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,a,Extent (R),,,,,,,http://rdaregistry.info/Elements/m/P30182,has extent of manifestation,,,,,
-4,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,a,Extent (R),,,,,,,http://rdaregistry.info/Elements/m/P30183,has file size,,,,,
-5,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,a,Extent (R),,,,,,,http://rdaregistry.info/Elements/m/P30199,has font size,,,,,
-6,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,a,Extent (R),,,,,,,http://rdaregistry.info/Elements/m/P30306,has font point size,,,,,
-7,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/e/P20573,has colour,,,,,
-8,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30084,has applied material,,,,,
-9,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30096,has encoding format,,,,,
-10,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30104,has video format,,,,,
-11,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30122,has emulsion on microfilm and microfiche,,,,,
+0,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,a,Extent (R),,,,,,,http://rdaregistry.info/Elements/e/P20219,has duration,,,,,"See  also TAG 306 and TAG 007/00 = m, s, or "
+1,delete?,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,a,Extent (R),,,,,,,http://rdaregistry.info/Elements/e/P20307,has related timespan of expression,,,,,
+2,delete?,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,a,Extent (R),,,,,,,http://rdaregistry.info/Elements/e/P20321,has extent of expression,,,,,
+3,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,a,Extent (R),,,,,,,http://rdaregistry.info/Elements/m/P30182,has extent of manifestation,,,,,
+4,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,a,Extent (R),,,,,,,http://rdaregistry.info/Elements/m/P30183,has file size,,,,,"See also TAG 256$a , 347$c and TAG 007/00= c"
+5,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,a,Extent (R),,,,,,,http://rdaregistry.info/Elements/m/P30199,has font size,,,,,"See also TAG 340$n and TAG 007/00= f, t"
+6,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,a,Extent (R),,,,,,,http://rdaregistry.info/Elements/m/P30306,has font point size,,,,,"See also TAG 340$n and TAG 007/00= f, t"
+7,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/e/P20573,has colour,,,,,See also TAG 340$a and TAG 007/00= a
+8,delete?,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30084,has applied material,,,,,
+9,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30096,has encoding format,,,,,See also 007/00 = c 
+10,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30104,has video format,,,,,"See also  TAG 346$a, 538$a, 500$a and 007/00= v"
+11,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30122,has emulsion on microfilm and microfiche,,,,,"See also in TAG 340$c,  500$a and 007/00=h"
 12,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30123,has broadcast standard,,,,,
 13,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,
 14,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30126,has video characteristic,,,,,
@@ -34,10 +34,10 @@
 32,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30453,has illustrative content,,,,,
 33,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30454,has sound content,,,,,
 34,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30456,has colour content,,,,,
-35,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,c,Dimensions (R),,,,,,,http://rdaregistry.info/Elements/m/P30169,has dimensions,,,,,
+35,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,c,Dimensions (R),,,,,,,http://rdaregistry.info/Elements/m/P30169,has dimensions,,,,,
 36,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,c,Dimensions (R),,,,,,,http://rdaregistry.info/Elements/m/P30170,has dimensions of cartographic image,,,,,
 37,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,c,Dimensions (R),,,,,,,http://rdaregistry.info/Elements/m/P30171,has dimensions of still image,,,,,
-38,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,c,Dimensions (R),,,,,,,http://rdaregistry.info/Elements/m/P30197,has bibliographic format,,,,,
+38,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,c,Dimensions (R),,,,,,,http://rdaregistry.info/Elements/m/P30197,has bibliographic format,,,,,See also TAG 340$m
 39,,300,PHYSICAL DESCRIPTION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,e,Accompanying material (NR),,,,,,,,,,,,,
 40,,300,PHYSICAL DESCRIPTION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,f,Type of unit (R),,,,,,,,,,,,,
 41,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,g,Size of unit (R),,,,,,,http://rdaregistry.info/Elements/m/P30169,has dimensions,,,,,
