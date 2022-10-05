@@ -26,37 +26,40 @@
         </fake:manTitleFrom245>
     </xsl:template>
     <xsl:template match="marc:datafield[@tag = '264']" mode="man">
-        <!-- main condition of F264: ind2 value; then process fields a, b, c -->
-        <!-- subfields not accounted-for: $3, $6, $8 -->
+        <!-- subfields not accounted-for: $3, $6, $7 $8 ;
+             need to code for $3 .
+        -->
         <xsl:choose>
             <xsl:when test="@ind2 = '0'">
                 <rdamd:P30110>
-                    <xsl:call-template name="F264-abc"/>
+                    <xsl:call-template name="F264-xx-abc"/>
                 </rdamd:P30110>
-                <xsl:call-template name="F264-0-a"/>
+                <xsl:call-template name="F264-x0-a_b_c"/>
             </xsl:when>
             <xsl:when test="@ind2 = '1'">
                 <rdamd:P30111>
-                    <xsl:call-template name="F264-abc"/>
+                    <xsl:call-template name="F264-xx-abc"/>
                 </rdamd:P30111>
-                <xsl:call-template name="F264-1-a"/>
+                <xsl:call-template name="F264-x1-a_b_c"/>
             </xsl:when>
             <xsl:when test="@ind2 = '2'">
                 <rdamd:P30108>
-                    <xsl:call-template name="F264-abc"/>
+                    <xsl:call-template name="F264-xx-abc"/>
                 </rdamd:P30108>
-                <xsl:call-template name="F264-2-a"/>
+                <xsl:call-template name="F264-x2-a_b_c"/>
             </xsl:when>
             <xsl:when test="@ind2 = '3'">
                 <rdamd:P30109>
-                    <xsl:call-template name="F264-abc"/>
+                    <xsl:call-template name="F264-xx-abc"/>
                 </rdamd:P30109>
-                <xsl:call-template name="F264-3-a"/>
+                <xsl:call-template name="F264-x3-a_b_c"/>
             </xsl:when>
             <xsl:when test="@ind2 = '4'">
-                <rdamd:P30007>
-                    <xsl:value-of select="marc:subfield[@code = 'c']"/>
-                </rdamd:P30007>
+                <xsl:for-each select="marc:subfield[@code='c']">
+                    <rdamd:P30280>
+                    <xsl:value-of select="."/>
+                </rdamd:P30280>
+                </xsl:for-each>
             </xsl:when>
             <xsl:otherwise>
                 <ex:ERROR>F264 IND2 ERROR</ex:ERROR>
