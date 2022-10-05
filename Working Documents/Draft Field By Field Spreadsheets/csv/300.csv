@@ -7,12 +7,12 @@
 5,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,a,Extent (R),,,,,,,http://rdaregistry.info/Elements/m/P30199,has font size,,,,,"See also TAG 340$n and TAG 007/00= f, t"
 6,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,a,Extent (R),,,,,,,http://rdaregistry.info/Elements/m/P30306,has font point size,,,,,"See also TAG 340$n and TAG 007/00= f, t"
 7,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/e/P20573,has colour,,,,,See also TAG 340$a and TAG 007/00= a
-8,delete?,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30084,has applied material,,,,,
+8,delete,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30084,has applied material,,,,,
 9,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30096,has encoding format,,,,,See also 007/00 = c 
 10,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30104,has video format,,,,,"See also  TAG 346$a, 538$a, 500$a and 007/00= v"
 11,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30122,has emulsion on microfilm and microfiche,,,,,"See also in TAG 340$c,  500$a and 007/00=h"
-12,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30123,has broadcast standard,,,,,
-13,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,
+12,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30123,has broadcast standard,,,,,See also TAG 346 $b and 007/00=v
+13,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Information also in TAG 344$j
 14,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30126,has video characteristic,,,,,
 15,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30127,has projection characteristic of motion picture film,,,,,
 16,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30138,has special playback characteristic,,,,,
