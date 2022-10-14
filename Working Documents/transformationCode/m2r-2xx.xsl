@@ -16,14 +16,19 @@
     exclude-result-prefixes="marc ex" version="3.0">
     <xsl:include href="m2r-2xx-named.xsl"/>
     <xsl:template match="marc:datafield[@tag = '245']" mode="wor">
-        <fake:rdawP10088>
-            <xsl:value-of select="marc:subfield" separator=" "/>
+        <fake:rdawP10088><!-- hasTitleOfWork -->
+            <xsl:text>NO TITLE</xsl:text>
+            <!--FOR WORKS USING MARC RECORDS WHERE THE ONLY TITLE FIELD IS 245. For works without titles, create well-formed RDA by creating an access point (AP) (or create an identifier, which can be a stringified IRI). Base of the AP should be an authorized AP (AAP) (QUESTION FROM TG: DOES IT HAVE TO BE AN AAP?) for an agent who creates the work, plus a title of the work derived from the manifestation (as should appear in the 245)-->
         </fake:rdawP10088>
     </xsl:template>
     <xsl:template match="marc:datafield[@tag = '245']" mode="man">
-        <fake:manTitleFrom245>
-            <xsl:value-of select="marc:subfield" separator=" "/>
-        </fake:manTitleFrom245>
+        <xsl:call-template name="F245-xx-anps"/>
+        <xsl:call-template name="F245-xx-a"/>
+        <xsl:call-template name="F245-xx-b"/>
+        <xsl:call-template name="F245-xx-c"/>
+        <xsl:call-template name="F245-xx-f-g"/>
+        <xsl:call-template name="F245-xx-h"/>
+        <xsl:call-template name="F245-xx-k"/>
     </xsl:template>
     <xsl:template match="marc:datafield[@tag = '264']" mode="man">
         <!-- subfields not accounted-for: $3, $6, $7 $8 ;

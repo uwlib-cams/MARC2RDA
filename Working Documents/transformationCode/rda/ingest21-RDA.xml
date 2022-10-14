@@ -1,0 +1,1320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
+         xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/m/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99152319230001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99152319230001452exp"/>
+      <fake:rdawP10065>American Society of Mechanical Engineers.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99152319230001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99152319230001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99152319230001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99152319230001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99152319230001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99152319230001452ite"/>
+      <rdam:P30134>Transactions of the American Society of Mechanical Engineers.</rdam:P30134>
+      <rdamd:P30111>New York City : The Society, [1880]-</rdamd:P30111>
+      <rdamd:P30088>New York City</rdamd:P30088>
+      <rdamd:P30176>The Society</rdamd:P30176>
+      <rdamd:P30011>[1880]-</rdamd:P30011>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99152319230001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99152319230001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99109646710001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99109646710001452exp"/>
+      <fake:rdawP10065>McKay, George Frederick, 1899-1970.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99109646710001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99109646710001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99109646710001452wor"/>
+      <rdaed:P20001>notated music</rdaed:P20001>
+      <rdaed:P20001>ntm</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99109646710001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99109646710001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99109646710001452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99109646710001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99109646710001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99146076470001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99146076470001452exp"/>
+      <fake:rdawP10065>McKay, George Frederick, 1899-1970, composer.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99146076470001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99146076470001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99146076470001452wor"/>
+      <rdaed:P20001>notated music</rdaed:P20001>
+      <rdaed:P20001>ntm</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99146076470001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99146076470001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99146076470001452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+      <rdamd:P30137>Caption title.</rdamd:P30137>
+      <rdamd:P30137>Duration: 4:00.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99146076470001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99146076470001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99136669830001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99136669830001452exp"/>
+      <fake:rdawP10065>Sessions, Roger, 1896-1985.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99136669830001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99136669830001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99136669830001452wor"/>
+      <rdaed:P20001>notated music</rdaed:P20001>
+      <rdaed:P20001>ntm</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99136669830001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99136669830001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99136669830001452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+      <rdamd:P30137>Copyright by Affiliated Music Corporation.</rdamd:P30137>
+      <rdamd:P30137>"This is a reduced fascimile [sic] of the composers manuscript."</rdamd:P30137>
+      <rdamd:P30137>Stamped on title page: John de Keyser and Company ..., Los Angeles, California.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99136669830001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99136669830001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99122078940001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99122078940001452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99122078940001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99122078940001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99122078940001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99122078940001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99122078940001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99122078940001452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdamd:P30111>Keijo [i.e. Seoul] : Government-General of Chosen, 1923-[1938?]</rdamd:P30111>
+      <rdamd:P30088>Keijo [i.e. Seoul]</rdamd:P30088>
+      <rdamd:P30176>Government-General of Chosen</rdamd:P30176>
+      <rdamd:P30011>1923-[1938?]</rdamd:P30011>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+      <rdamd:P30137>Abridged English version of the official Japanese language report; arrangement follows the order of the official report.</rdamd:P30137>
+      <rdamd:P30137>Title varies slightly.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99122078940001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99122078940001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99126300670001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99126300670001452exp"/>
+      <fake:rdawP10065>Leufstedt, G. J. (Gustaf Joakim), 1830-1901, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99126300670001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99126300670001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99126300670001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99126300670001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99126300670001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99126300670001452ite"/>
+      <rdam:P30134>Om yttersta domen :</rdam:P30134>
+      <rdamd:P30111>Stockholm : Författarens förlag, [1877]</rdamd:P30111>
+      <rdamd:P30088>Stockholm</rdamd:P30088>
+      <rdamd:P30176>Författarens förlag</rdamd:P30176>
+      <rdamd:P30011>[1877]</rdamd:P30011>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99126300670001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99126300670001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99128251380001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99128251380001452exp"/>
+      <fake:rdawP10065>Forrest, George, Sir, 1846-1926.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99128251380001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99128251380001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99128251380001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99128251380001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99128251380001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99128251380001452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99128251380001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99128251380001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162021925101452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99162021925101452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162021925101452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99162021925101452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99162021925101452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162021925101452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99162021925101452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99162021925101452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162021925101452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99162021925101452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99126631760001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99126631760001452exp"/>
+      <fake:rdawP10065>Löwenstern, Eduard von, 1790-1837, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99126631760001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99126631760001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99126631760001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99126631760001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99126631760001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99126631760001452ite"/>
+      <rdam:P30134>Mit Graf Pahlens Reiterei gegen Napoleon :</rdam:P30134>
+      <rdamd:P30111>Berlin : Ernst Siegfried Mittler und Sohn, 1910.</rdamd:P30111>
+      <rdamd:P30088>Berlin</rdamd:P30088>
+      <rdamd:P30176>Ernst Siegfried Mittler und Sohn</rdamd:P30176>
+      <rdamd:P30011>1910</rdamd:P30011>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+      <rdamd:P30455>Includes bibliographical references and index.</rdamd:P30455>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99126631760001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99126631760001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161865516301452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161865516301452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161865516301452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161865516301452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161865516301452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161865516301452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161865516301452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161865516301452ite"/>
+      <rdam:P30134>Number of females employed by Class I steam railways ...</rdam:P30134>
+      <rdamd:P30111>Washington : Interstate Commerce Commission, Bureau of Transport Economics and Statistics </rdamd:P30111>
+      <rdamd:P30088>Washington</rdamd:P30088>
+      <rdamd:P30176>Interstate Commerce Commission, Bureau of Transport Economics and Statistics</rdamd:P30176>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161865516301452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161865516301452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161865505501452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161865505501452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161865505501452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161865505501452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161865505501452wor"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161865505501452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161865505501452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161865505501452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdamd:P30106>Statement</rdamd:P30106>
+      <rdamd:P30137>Title varies slightly.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161865505501452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161865505501452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99106534030001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99106534030001452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99106534030001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99106534030001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99106534030001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99106534030001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99106534030001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99106534030001452ite"/>
+      <rdam:P30134>Tēvijas kalendārs.</rdam:P30134>
+      <rdamd:P30111>Dillingen, Donau : Ed. Alain̦a "Atauga" </rdamd:P30111>
+      <rdamd:P30088>Dillingen, Donau</rdamd:P30088>
+      <rdamd:P30176>Ed. Alain̦a "Atauga"</rdamd:P30176>
+      <rdamd:P30111>Memmingen, Bayern : "Atauga" </rdamd:P30111>
+      <rdamd:P30088>Memmingen, Bayern</rdamd:P30088>
+      <rdamd:P30176>"Atauga"</rdamd:P30176>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99106534030001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99106534030001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99123402110001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99123402110001452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99123402110001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99123402110001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99123402110001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99123402110001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99123402110001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99123402110001452ite"/>
+      <rdam:P30134>Daugavas gada grāmata.</rdam:P30134>
+      <rdamd:P30111>Rīgā : Valters un Rapa </rdamd:P30111>
+      <rdamd:P30088>Rīgā</rdamd:P30088>
+      <rdamd:P30176>Valters un Rapa</rdamd:P30176>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99123402110001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99123402110001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99129848870001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99129848870001452exp"/>
+      <fake:rdawP10065>United States. Maritime Commission.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99129848870001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99129848870001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99129848870001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99129848870001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99129848870001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99129848870001452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99129848870001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99129848870001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99155834370001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99155834370001452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99155834370001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99155834370001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99155834370001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99155834370001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99155834370001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99155834370001452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99155834370001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99155834370001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99140557070001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99140557070001452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99140557070001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99140557070001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99140557070001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99140557070001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99140557070001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99140557070001452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99140557070001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99140557070001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99115917340001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99115917340001452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99115917340001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99115917340001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99115917340001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99115917340001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99115917340001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99115917340001452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99115917340001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99115917340001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161951408701452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161951408701452exp"/>
+      <fake:rdawP10065>United States. Army.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161951408701452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161951408701452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161951408701452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161951408701452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161951408701452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161951408701452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161951408701452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161951408701452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161973520401452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161973520401452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161973520401452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161973520401452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161973520401452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161973520401452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161973520401452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161973520401452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161973520401452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161973520401452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161968297001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161968297001452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161968297001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161968297001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161968297001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161968297001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161968297001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161968297001452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161968297001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161968297001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99116481400001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99116481400001452exp"/>
+      <fake:rdawP10065>University of Washington. College of Forestry. Alumni Association.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99116481400001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99116481400001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99116481400001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99116481400001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99116481400001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99116481400001452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdamd:P30111>Seattle, Wash. : College of Forestry Alumni Association, University of Washington, 1935.</rdamd:P30111>
+      <rdamd:P30088>Seattle, Wash.</rdamd:P30088>
+      <rdamd:P30176>College of Forestry Alumni Association, University of Washington</rdamd:P30176>
+      <rdamd:P30011>1935</rdamd:P30011>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99116481400001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99116481400001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99125629060001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99125629060001452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99125629060001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99125629060001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99125629060001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99125629060001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99125629060001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99125629060001452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99125629060001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99125629060001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99123386480001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99123386480001452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99123386480001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99123386480001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99123386480001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99123386480001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99123386480001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99123386480001452ite"/>
+      <rdam:P30134>Annual report :</rdam:P30134>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99123386480001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99123386480001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99135866310001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99135866310001452exp"/>
+      <fake:rdawP10065>Walker, Abbie Phillips.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99135866310001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99135866310001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99135866310001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99135866310001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99135866310001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99135866310001452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99135866310001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99135866310001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162047944401452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99162047944401452exp"/>
+      <fake:rdawP10065>Ralphson, G. Harvey (George Harvey), 1879-1940, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162047944401452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99162047944401452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99162047944401452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162047944401452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99162047944401452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99162047944401452ite"/>
+      <rdam:P30134>Over there with the engineers at Cambrai /</rdam:P30134>
+      <rdamd:P30111>Chicago : M.A. Donohue &amp; Company, [1920]</rdamd:P30111>
+      <rdamd:P30088>Chicago</rdamd:P30088>
+      <rdamd:P30176>M.A. Donohue &amp; Company</rdamd:P30176>
+      <rdamd:P30011>[1920]</rdamd:P30011>
+      <rdamd:P30280>©1920</rdamd:P30280>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+      <rdamd:P30106>Over there series ; 5</rdamd:P30106>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162047944401452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99162047944401452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99141713170001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99141713170001452exp"/>
+      <fake:rdawP10065>Shaw, Bernard, 1856-1950.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99141713170001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99141713170001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99141713170001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99141713170001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99141713170001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99141713170001452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99141713170001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99141713170001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99128682360001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99128682360001452exp"/>
+      <fake:rdawP10065>Brandeis, Louis Dembitz, 1856-1941.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99128682360001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99128682360001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99128682360001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99128682360001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99128682360001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99128682360001452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+      <rdamd:P30137>Pages 1 to 18 in their brief for defendant in the Supreme Court of the United States, October term, 1913, no. 217; Anna Hawley vs. Joseph Walker.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99128682360001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99128682360001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99142222590001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99142222590001452exp"/>
+      <fake:rdawP10065>Seattle (Wash.). Board of Health.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99142222590001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99142222590001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99142222590001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99142222590001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99142222590001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99142222590001452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+      <rdamd:P30137>Title from cover.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99142222590001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99142222590001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99151190160001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99151190160001452exp"/>
+      <fake:rdawP10065>Clark, Thomas Arkle, 1862-1932.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99151190160001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99151190160001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99151190160001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99151190160001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99151190160001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99151190160001452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99151190160001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99151190160001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99141371640001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99141371640001452exp"/>
+      <fake:rdawP10065>Vatchaghandy, Rustom N.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99141371640001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99141371640001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99141371640001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99141371640001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99141371640001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99141371640001452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+      <rdamd:P30106>490 0  $a The Press congress of the world</rdamd:P30106>
+      <rdamd:P30137>Cover title.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99141371640001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99141371640001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162019547701452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99162019547701452exp"/>
+      <fake:rdawP10065>Cox, Alethea Crawford, 1852-1909, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162019547701452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99162019547701452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99162019547701452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162019547701452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99162019547701452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99162019547701452ite"/>
+      <rdam:P30134>Pictured lives of great musicians /</rdam:P30134>
+      <rdamd:P30111>Boston : C. C. Birchard &amp; Company, [1924]</rdamd:P30111>
+      <rdamd:P30088>Boston</rdamd:P30088>
+      <rdamd:P30176>C. C. Birchard &amp; Company</rdamd:P30176>
+      <rdamd:P30011>[1924]</rdamd:P30011>
+      <rdamd:P30280>©1924.</rdamd:P30280>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162019547701452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99162019547701452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162051549501452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99162051549501452exp"/>
+      <fake:rdawP10065>Whymper, Edward, 1840-1911, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162051549501452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99162051549501452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99162051549501452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162051549501452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99162051549501452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99162051549501452ite"/>
+      <rdam:P30134>Man on the Matterhorn /</rdam:P30134>
+      <rdamd:P30111>London : John Murray, 1940.</rdamd:P30111>
+      <rdamd:P30088>London</rdamd:P30088>
+      <rdamd:P30176>John Murray</rdamd:P30176>
+      <rdamd:P30011>1940</rdamd:P30011>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+      <rdamd:P30106>Journeys and adventures</rdamd:P30106>
+      <rdamd:P30137>Juvenile adaptation of Edward Whymper's Scrambles amongst the Alps.</rdamd:P30137>
+      <rdamd:P30137>Murray file copy no. 8A.</rdamd:P30137>
+      <rdamd:P30455>Includes bibliographical references (page 135).</rdamd:P30455>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162051549501452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99162051549501452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161950859301452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161950859301452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161950859301452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161950859301452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161950859301452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161950859301452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161950859301452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161950859301452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+      <rdamd:P30137>"LS 46-2911."</rdamd:P30137>
+      <rdamd:P30137>"[May 20, 1946]."</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161950859301452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161950859301452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99118522740001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99118522740001452exp"/>
+      <fake:rdawP10065>Thomsen, Eric H.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99118522740001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99118522740001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99118522740001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99118522740001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99118522740001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99118522740001452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+      <rdamd:P30137>Cover title.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99118522740001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99118522740001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161941504301452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161941504301452exp"/>
+      <fake:rdawP10065>United States. Children's Bureau.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161941504301452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161941504301452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161941504301452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161941504301452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161941504301452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161941504301452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+      <rdamd:P30137>Title varies slightly.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161941504301452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161941504301452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161950859101452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161950859101452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161950859101452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161950859101452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161950859101452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161950859101452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161950859101452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161950859101452ite"/>
+      <rdam:P30134>Union wage scales, newspaper printing trades, 1945.</rdam:P30134>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+      <rdamd:P30137>Cover title.</rdamd:P30137>
+      <rdamd:P30137>"LS 46-2913."</rdamd:P30137>
+      <rdamd:P30137>"May 20, 1946."</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161950859101452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161950859101452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162002032701452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99162002032701452exp"/>
+      <fake:rdawP10065>Duwez, Pol E., 1907-1984, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162002032701452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99162002032701452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99162002032701452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162002032701452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99162002032701452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99162002032701452ite"/>
+      <rdam:P30134>The behavior of long beams under impact loading /</rdam:P30134>
+      <rdamd:P30111>[Washington, D.C.?] : [National Defense Research Committee], [1943?]</rdamd:P30111>
+      <rdamd:P30088>[Washington, D.C.?]</rdamd:P30088>
+      <rdamd:P30176>[National Defense Research Committee]</rdamd:P30176>
+      <rdamd:P30011>[1943?]</rdamd:P30011>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+      <rdamd:P30106>OSRD ; no. 1828</rdamd:P30106>
+      <rdamd:P30106>Armor and ordnance report ; no. A-216</rdamd:P30106>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162002032701452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99162002032701452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162002031901452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99162002031901452exp"/>
+      <fake:rdawP10065>Bridgman, P. W. (Percy Williams), 1882-1961, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162002031901452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99162002031901452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99162002031901452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162002031901452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99162002031901452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99162002031901452ite"/>
+      <rdam:P30134>Third progress report on plastic deformation of steel under high pressure /</rdam:P30134>
+      <rdamd:P30111>[Washington, D.C.?] : [National Defense Research Committee], [1943?]</rdamd:P30111>
+      <rdamd:P30088>[Washington, D.C.?]</rdamd:P30088>
+      <rdamd:P30176>[National Defense Research Committee]</rdamd:P30176>
+      <rdamd:P30011>[1943?]</rdamd:P30011>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+      <rdamd:P30106>OSRD ; no. 1868</rdamd:P30106>
+      <rdamd:P30106>Armor and ordnance report ; no. A-218</rdamd:P30106>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162002031901452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99162002031901452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161956960801452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161956960801452exp"/>
+      <fake:rdawP10065>United States. Retraining and Reemployment Administration, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161956960801452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161956960801452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161956960801452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161956960801452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161956960801452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161956960801452ite"/>
+      <rdam:P30134>Activities of federal executive agencies within statutory coordinating jurisdiction of retraining and reemployment administration /</rdam:P30134>
+      <rdamd:P30111>[Washington, D.C.] : U.S. Department of Labor, Retraining and Reemployment Administration, January 1947.</rdamd:P30111>
+      <rdamd:P30088>[Washington, D.C.]</rdamd:P30088>
+      <rdamd:P30176>U.S. Department of Labor, Retraining and Reemployment Administration</rdamd:P30176>
+      <rdamd:P30011>January 1947</rdamd:P30011>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+      <rdamd:P30137>Cover title</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161956960801452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161956960801452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161970226201452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161970226201452exp"/>
+      <fake:rdawP10065>Dawson, Marshall.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161970226201452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161970226201452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161970226201452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161970226201452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161970226201452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161970226201452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161970226201452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161970226201452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99119712930001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99119712930001452exp"/>
+      <fake:rdawP10065>United States. Educational Radio Script and Transcription Exchange.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99119712930001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99119712930001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99119712930001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99119712930001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99119712930001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99119712930001452ite"/>
+      <BOGUS>not i</BOGUS>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+      <rdamd:P30106>Revised bulletin ; no. 100-B</rdamd:P30106>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99119712930001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99119712930001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162063559201452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99162063559201452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162063559201452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99162063559201452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99162063559201452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162063559201452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99162063559201452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99162063559201452ite"/>
+      <rdam:P30134>Information for returning soldiers bulletin.</rdam:P30134>
+      <rdamd:P30111>[Washington, D.C.?] : Department of Labor, Information and Education Service, 1918- </rdamd:P30111>
+      <rdamd:P30088>[Washington, D.C.?]</rdamd:P30088>
+      <rdamd:P30176>Department of Labor, Information and Education Service, 1918-</rdamd:P30176>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162063559201452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99162063559201452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162216359501452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99162216359501452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162216359501452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99162216359501452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99162216359501452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162216359501452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99162216359501452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99162216359501452ite"/>
+      <rdam:P30134>Europe starts to rebuild :</rdam:P30134>
+      <rdamd:P30111>[Washington, D.C.?] : Office of Public Affairs, Department of State, 1946.</rdamd:P30111>
+      <rdamd:P30088>[Washington, D.C.?]</rdamd:P30088>
+      <rdamd:P30176>Office of Public Affairs, Department of State</rdamd:P30176>
+      <rdamd:P30011>1946</rdamd:P30011>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+      <rdamd:P30137>Cover title.</rdamd:P30137>
+      <rdamd:P30137>"March 1946."</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162216359501452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99162216359501452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162170851801452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99162170851801452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162170851801452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99162170851801452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99162170851801452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162170851801452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99162170851801452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99162170851801452ite"/>
+      <rdam:P30134>Standard aeronautical symbols /</rdam:P30134>
+      <rdamd:P30111>[Washington, D.C.?] : National Advisory Committee for Aeronautics, 1940.</rdamd:P30111>
+      <rdamd:P30088>[Washington, D.C.?]</rdamd:P30088>
+      <rdamd:P30176>National Advisory Committee for Aeronautics</rdamd:P30176>
+      <rdamd:P30011>1940</rdamd:P30011>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+      <rdamd:P30137>Cover title.</rdamd:P30137>
+      <rdamd:P30137>"May 28, 1940."</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162170851801452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99162170851801452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162002032901452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99162002032901452exp"/>
+      <fake:rdawP10065>Duwez, Pol E., 1907-1984, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162002032901452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99162002032901452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99162002032901452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162002032901452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99162002032901452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99162002032901452ite"/>
+      <rdam:P30134>Discussion of energy measurements in tension impact tests at the California Institute of Technology /</rdam:P30134>
+      <rdamd:P30111>[Washington, D.C.?] : [National Defense Research Committee], [1943?]</rdamd:P30111>
+      <rdamd:P30088>[Washington, D.C.?]</rdamd:P30088>
+      <rdamd:P30176>[National Defense Research Committee]</rdamd:P30176>
+      <rdamd:P30011>[1943?]</rdamd:P30011>
+      <rdaed:P30002>unmediated</rdaed:P30002>
+      <rdaed:P30002>n</rdaed:P30002>
+      <rdaed:P30001>volume</rdaed:P30001>
+      <rdaed:P30001>nc</rdaed:P30001>
+      <rdamd:P30106>OSRD ; no. 1829</rdamd:P30106>
+      <rdamd:P30106>Armor and ordnance report ; no. A-217</rdamd:P30106>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162002032901452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99162002032901452man"/>
+   </rdf:Description>
+</rdf:RDF>

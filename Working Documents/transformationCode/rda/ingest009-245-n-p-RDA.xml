@@ -1,0 +1,1786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
+         xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/m/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99134615570001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99134615570001452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99134615570001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99134615570001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99134615570001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99134615570001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99134615570001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99134615570001452ite"/>
+      <rdamd:P30134>Statistical pocket book of Indonesia 1941(with comparative date for 1940 or earlier)</rdamd:P30134>
+      <rdamd:P30156>Statistical pocket book of Indonesia 1941(with comparative date for 1940 or earlier)</rdamd:P30156>
+      <rdamd:P30137>letter</rdamd:P30137>
+      <rdamd:P30137>records</rdamd:P30137>
+      <rdamd:P30111>[Batavia] : Department of Economic Affairs, Central Bureau of Statistics, [1947]</rdamd:P30111>
+      <rdamd:P30088>[Batavia]</rdamd:P30088>
+      <rdamd:P30176>Department of Economic Affairs, Central Bureau of Statistics</rdamd:P30176>
+      <rdamd:P30011>[1947]</rdamd:P30011>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>Maps on lining-papers.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99134615570001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99134615570001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161954255001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161954255001452exp"/>
+      <fake:rdawP10065>Leigh, Randolph, 1891- author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161954255001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161954255001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161954255001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161954255001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161954255001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161954255001452ite"/>
+      <rdamd:P30134>American enterprise in Europe</rdamd:P30134>
+      <rdamd:P30156>American enterprise in Europe</rdamd:P30156>
+      <rdamd:P30142>the rôle of the SOS in the defeat of Germany</rdamd:P30142>
+      <rdamd:P30111>[Paris?] : Information and Education Division, USFET, [1945]</rdamd:P30111>
+      <rdamd:P30088>[Paris?]</rdamd:P30088>
+      <rdamd:P30176>Information and Education Division, USFET</rdamd:P30176>
+      <rdamd:P30011>[1945]</rdamd:P30011>
+      <rdamd:P30109>Paris : Bellenand ; Brodard et Taupin, August 1945.</rdamd:P30109>
+      <rdamd:P30087>Paris</rdamd:P30087>
+      <rdamd:P30175>Bellenand ;</rdamd:P30175>
+      <rdamd:P30175>Brodard et Taupin</rdamd:P30175>
+      <rdamd:P30010>August 1945</rdamd:P30010>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>"Printed under the direction of Chief Information and Education Division, USFET"--Verso, title page.</rdamd:P30137>
+      <rdamd:P30137>Published in the United States as "Forty-eight million tons to Eisenhower."</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161954255001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161954255001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99111574030001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99111574030001452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99111574030001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99111574030001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99111574030001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99111574030001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99111574030001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99111574030001452ite"/>
+      <rdamd:P30134>Ṭuraf ʻArabīyah</rdamd:P30134>
+      <rdamd:P30156>Ṭuraf ʻArabīyah</rdamd:P30156>
+      <rdamd:P30105>jamʻ al-Shaykh ʻUmar al-Suwaydī = Primeus arabes / présentées par le Comte de Landberg</rdamd:P30105>
+      <rdamd:P30111>Laydan : Maṭbaʻat Brīll, 1886-1889.</rdamd:P30111>
+      <rdamd:P30088>Laydan</rdamd:P30088>
+      <rdamd:P30176>Maṭbaʻat Brīll</rdamd:P30176>
+      <rdamd:P30011>1886-1889</rdamd:P30011>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>Includes index.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99111574030001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99111574030001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99111574030001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99111574030001452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99111574030001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99111574030001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99111574030001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99111574030001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99111574030001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99111574030001452ite"/>
+      <rdamd:P30134>Ṭuraf ʻArabīyah</rdamd:P30134>
+      <rdamd:P30156>Ṭuraf ʻArabīyah</rdamd:P30156>
+      <rdamd:P30105>jamʻ al-Shaykh ʻUmar al-Suwaydī = Primeus arabes / présentées par le Comte de Landberg</rdamd:P30105>
+      <rdamd:P30111>Laydan : Maṭbaʻat Brīll, 1886-1889.</rdamd:P30111>
+      <rdamd:P30088>Laydan</rdamd:P30088>
+      <rdamd:P30176>Maṭbaʻat Brīll</rdamd:P30176>
+      <rdamd:P30011>1886-1889</rdamd:P30011>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>Includes index.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99111574030001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99111574030001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161951218101452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161951218101452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161951218101452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161951218101452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161951218101452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161951218101452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161951218101452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161951218101452ite"/>
+      <rdamd:P30134>Protocols of the meetings of the learned elders of Zion.</rdamd:P30134>
+      <rdamd:P30156>Protocols of the meetings of the learned elders of Zion.</rdamd:P30156>
+      <rdamd:P30105>translated from the Russian text by Victor E. Marsden</rdamd:P30105>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>"Reprinted from English edition of Briton publishing society, London, England."</rdamd:P30137>
+      <rdamd:P30137>The Protocols were published for the first time in 1905 at Tsarskoje Selo in a book by S. Nilus.</rdamd:P30137>
+      <rdamd:P30137>Addendum: "Startling new documents": 8 p. at end.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161951218101452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161951218101452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99143759060001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99143759060001452exp"/>
+      <fake:rdawP10065>Yānnawuttha (ʻĪamsilā), Phikkhu, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99143759060001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99143759060001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99143759060001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99143759060001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99143759060001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99143759060001452ite"/>
+      <rdamd:P30134>Nangsư̄ niyom sāraphan thansamai</rdamd:P30134>
+      <rdamd:P30156>Nangsư̄ niyom sāraphan thansamai</rdamd:P30156>
+      <rdamd:P30142>mī klō̜n lakthang 4 khư̄ Phut chāt sākon sātsanā phramahākasat ratthammanūn læ bettalet ư̄n ư̄n īk pen prayōt kǣ khrū phūsō̜n sāraphan læ naksūat talō̜t phūsončhai thūapai</rdamd:P30142>
+      <rdamd:P30105>tǣng dōi Yānnawuttha Phikkhu (ʻĪamsilā), Khān Kǣowichīan Nō̜. Thō̜. ʻĒk</rdamd:P30105>
+      <rdamd:P30111>Khō̜n Kǣn : Khlang Nānā Witthayā, Khlang Nānā Tham, 2500 [1957]</rdamd:P30111>
+      <rdamd:P30088>Khō̜n Kǣn</rdamd:P30088>
+      <rdamd:P30176>Khlang Nānā Witthayā, Khlang Nānā Tham</rdamd:P30176>
+      <rdamd:P30011>2500 [1957]</rdamd:P30011>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99143759060001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99143759060001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161941509901452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161941509901452exp"/>
+      <fake:rdawP10065>United States. Bureau of Reclamation, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161941509901452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161941509901452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161941509901452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161941509901452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161941509901452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161941509901452ite"/>
+      <rdamd:P30134>Columbia River Basin summary statement of salient items relating to hearings before the Senate Committee on Interior and Insular Affairs on proposed amendment to H.R. 5472</rdamd:P30134>
+      <rdamd:P30156>Columbia River Basin summary statement of salient items relating to hearings before the Senate Committee on Interior and Insular Affairs on proposed amendment to H.R. 5472</rdamd:P30156>
+      <rdamd:P30105>prepared at request of the Committee Chairman by the Department of the Interior, February 11, 1950</rdamd:P30105>
+      <rdamd:P30111>Washington, D.C. : United States Department of Interior, Bureau of Reclamation, 1950.</rdamd:P30111>
+      <rdamd:P30088>Washington, D.C.</rdamd:P30088>
+      <rdamd:P30176>United States Department of Interior, Bureau of Reclamation</rdamd:P30176>
+      <rdamd:P30011>1950</rdamd:P30011>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>Cover title.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161941509901452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161941509901452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99114474580001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99114474580001452exp"/>
+      <fake:rdawP10065>Chanthichai, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99114474580001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99114474580001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99114474580001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99114474580001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99114474580001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99114474580001452ite"/>
+      <rdamd:P30134>Somdet Phra Phutthāčhān (Tō)</rdamd:P30134>
+      <rdamd:P30156>Somdet Phra Phutthāčhān (Tō)</rdamd:P30156>
+      <rdamd:P30105>dōi "Chanthichai"</rdamd:P30105>
+      <rdamd:P30111>Phra Nakhō̜n : Samnakphim ʻAksō̜n Prasœ̄t, 2495 [1952]-2496 [1953]</rdamd:P30111>
+      <rdamd:P30088>Phra Nakhō̜n</rdamd:P30088>
+      <rdamd:P30176>Samnakphim ʻAksō̜n Prasœ̄t</rdamd:P30176>
+      <rdamd:P30011>2495 [1952]-2496 [1953]</rdamd:P30011>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99114474580001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99114474580001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99114474580001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99114474580001452exp"/>
+      <fake:rdawP10065>Chanthichai, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99114474580001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99114474580001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99114474580001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99114474580001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99114474580001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99114474580001452ite"/>
+      <rdamd:P30134>Somdet Phra Phutthāčhān (Tō)</rdamd:P30134>
+      <rdamd:P30156>Somdet Phra Phutthāčhān (Tō)</rdamd:P30156>
+      <rdamd:P30105>dōi "Chanthichai"</rdamd:P30105>
+      <rdamd:P30111>Phra Nakhō̜n : Samnakphim ʻAksō̜n Prasœ̄t, 2495 [1952]-2496 [1953]</rdamd:P30111>
+      <rdamd:P30088>Phra Nakhō̜n</rdamd:P30088>
+      <rdamd:P30176>Samnakphim ʻAksō̜n Prasœ̄t</rdamd:P30176>
+      <rdamd:P30011>2495 [1952]-2496 [1953]</rdamd:P30011>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99114474580001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99114474580001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99152871820001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99152871820001452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99152871820001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99152871820001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99152871820001452wor"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99152871820001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99152871820001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99152871820001452ite"/>
+      <rdamd:P30134>Nākotnes spēks</rdamd:P30134>
+      <rdamd:P30156>Nākotnes spēks</rdamd:P30156>
+      <rdamd:P30137>"Mēnešraksts bērnu kopšanai un audzināšanai."</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99152871820001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99152871820001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161955212901452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161955212901452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161955212901452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161955212901452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161955212901452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161955212901452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161955212901452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161955212901452ite"/>
+      <rdamd:P30134>U No. 1, C.A.A.W.T.S. Elementary.</rdamd:P30134>
+      <rdamd:P30156>U</rdamd:P30156>
+      <rdamd:P30109>Kansas City : LaRue Printers Lithographers, August 5, 1943.</rdamd:P30109>
+      <rdamd:P30087>Kansas City</rdamd:P30087>
+      <rdamd:P30175>LaRue Printers Lithographers</rdamd:P30175>
+      <rdamd:P30010>August 5, 1943</rdamd:P30010>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>Cover title.</rdamd:P30137>
+      <rdamd:P30137>"This Flight Training Manual has been prepared specifically for use with the CAA-WTS Navy Elementary Flight Training Program. Actual preparation of the manual was carried out by representatives of the Training Division of the Bureau of Aeronautics, the Aviation Psychology Section of the Bureau of Medicine and Surgery and the staff of the Naval Air Primary Training Command"--Page 5.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161955212901452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161955212901452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99138946540001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99138946540001452exp"/>
+      <fake:rdawP10065>Giusti, George, 1908-1991, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99138946540001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99138946540001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99138946540001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99138946540001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99138946540001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99138946540001452ite"/>
+      <rdamd:P30134>Drawing figures</rdamd:P30134>
+      <rdamd:P30156>Drawing figures</rdamd:P30156>
+      <rdamd:P30105>by George Giusti ; edited by Bryan Holme</rdamd:P30105>
+      <rdamd:P30111>New York ; London : The Studio Publications, Incorporated, [1944]</rdamd:P30111>
+      <rdamd:P30088>New York</rdamd:P30088>
+      <rdamd:P30088>London</rdamd:P30088>
+      <rdamd:P30176>The Studio Publications, Incorporated</rdamd:P30176>
+      <rdamd:P30011>[1944]</rdamd:P30011>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99138946540001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99138946540001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99156485290001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99156485290001452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99156485290001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99156485290001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99156485290001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99156485290001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99156485290001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99156485290001452ite"/>
+      <rdamd:P30134>Teoreticheskie i prikladnye voprosy different︠s︡ialʹnykh uravneniĭ i algebra</rdamd:P30134>
+      <rdamd:P30156>Teoreticheskie i prikladnye voprosy different︠s︡ialʹnykh uravneniĭ i algebra</rdamd:P30156>
+      <rdamd:P30142>Sb. nauch. tr.</rdamd:P30142>
+      <rdamd:P30105>AN USSR, In-t matematiki ; [Redkol. A.N. Sharkovskiĭ (otv. red.) and others]</rdamd:P30105>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>At head of title: Akademii︠a︡ nauk Ukrainskoĭ SSR. Institut matematiki.</rdamd:P30137>
+      <rdamd:P30455>Includes bibliographical references.</rdamd:P30455>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99156485290001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99156485290001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161832256401452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161832256401452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161832256401452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161832256401452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161832256401452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161832256401452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161832256401452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161832256401452ite"/>
+      <rdamd:P30134>Puti kino</rdamd:P30134>
+      <rdamd:P30156>Puti kino</rdamd:P30156>
+      <rdamd:P30105>Pervoe Vsesoi︠u︡znoe partiĭnoe soveshchanie po kinematografii ; pod redakt︠s︡ieĭ B.S. Olʹkhovogo</rdamd:P30105>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>At head of title: Otdel agitat︠s︡ii, propagandy i pechati T︠S︡K VKP (b).</rdamd:P30137>
+      <rdamd:P30137>Errata slip inserted.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161832256401452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161832256401452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161767116301452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161767116301452exp"/>
+      <fake:rdawP10065>Želivský, Jan, -1422, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161767116301452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161767116301452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161767116301452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161767116301452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161767116301452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161767116301452ite"/>
+      <rdamd:P30134>Výzva Jana Želivského</rdamd:P30134>
+      <rdamd:P30156>Výzva Jana Želivského</rdamd:P30156>
+      <rdamd:P30142>výbor z kázání</rdamd:P30142>
+      <rdamd:P30105>uspořádal Amedeo Molnár</rdamd:P30105>
+      <rdamd:P30111>Praha : Edice Kalich, 1954.</rdamd:P30111>
+      <rdamd:P30088>Praha</rdamd:P30088>
+      <rdamd:P30176>Edice Kalich</rdamd:P30176>
+      <rdamd:P30011>1954</rdamd:P30011>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161767116301452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161767116301452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161948460101452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161948460101452exp"/>
+      <fake:rdawP10065>United States. Surgeon-General's Office.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161948460101452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161948460101452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161948460101452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161948460101452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161948460101452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161948460101452ite"/>
+      <BOGUS>POSSIBLE ERROR WITH 245 WHERE rdamd:P30134 hasTitleOfManifestation WAS EXPECTED</BOGUS>
+      <rdamd:P30156>The navy as a special field for medical work</rdamd:P30156>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161948460101452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161948460101452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99114581380001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99114581380001452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99114581380001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99114581380001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99114581380001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99114581380001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99114581380001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99114581380001452ite"/>
+      <rdamd:P30134>Coal facts</rdamd:P30134>
+      <rdamd:P30156>Coal facts</rdamd:P30156>
+      <rdamd:P30111>New York, N.Y. : Coal age, a McGraw-Hill Publication, [1935]</rdamd:P30111>
+      <rdamd:P30088>New York, N.Y.</rdamd:P30088>
+      <rdamd:P30176>Coal age, a McGraw-Hill Publication</rdamd:P30176>
+      <rdamd:P30011>[1935]</rdamd:P30011>
+      <rdamd:P30280>©1935</rdamd:P30280>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30455>Includes bibliographical references.</rdamd:P30455>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99114581380001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99114581380001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161950958601452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161950958601452exp"/>
+      <fake:rdawP10065>United States. Children's Bureau, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161950958601452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161950958601452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161950958601452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161950958601452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161950958601452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161950958601452ite"/>
+      <rdamd:P30134>History and functions of the Children's Bureau, United States Department of Labor</rdamd:P30134>
+      <rdamd:P30156>History and functions of the Children's Bureau, United States Department of Labor</rdamd:P30156>
+      <rdamd:P30111>Washington : U.S. Department of Labor, Children's Bureau, September 1, 1944.</rdamd:P30111>
+      <rdamd:P30088>Washington</rdamd:P30088>
+      <rdamd:P30176>U.S. Department of Labor, Children's Bureau</rdamd:P30176>
+      <rdamd:P30011>September 1, 1944</rdamd:P30011>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>"September 1, 1944."</rdamd:P30137>
+      <rdamd:P30137>Cover title.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161950958601452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161950958601452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161947160601452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161947160601452exp"/>
+      <fake:rdawP10065>Kaufmann, Max, 1897-1987, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161947160601452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161947160601452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161947160601452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161947160601452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161947160601452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161947160601452ite"/>
+      <rdamd:P30134>Churbn Lettland</rdamd:P30134>
+      <rdamd:P30156>Churbn Lettland</rdamd:P30156>
+      <rdamd:P30142>die Vernichtung der Juden Lettlands</rdamd:P30142>
+      <rdamd:P30105>Max Kaufmann</rdamd:P30105>
+      <rdamd:P30111>München : Im Selbstverlag, 1947.</rdamd:P30111>
+      <rdamd:P30088>München</rdamd:P30088>
+      <rdamd:P30176>Im Selbstverlag</rdamd:P30176>
+      <rdamd:P30011>1947</rdamd:P30011>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161947160601452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161947160601452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99154989660001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99154989660001452exp"/>
+      <fake:rdawP10065>Bach, Johann Christoph, 1642-1703.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99154989660001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99154989660001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99154989660001452wor"/>
+      <rdaed:P20001>notated music</rdaed:P20001>
+      <rdaed:P20001>ntm</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99154989660001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99154989660001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99154989660001452ite"/>
+      <rdamd:P30134>44 Choräle zum Präambulieren</rdamd:P30134>
+      <rdamd:P30156>44 Choräle zum Präambulieren</rdamd:P30156>
+      <rdamd:P30105>Johann Christoph Bach ; nach den Handschriften erstmals herausgegeben von Martin Fischer ; im Anhang Choralvorspiele von Johann Pachelbel</rdamd:P30105>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30106>Bärenreiter-Ausgabe ; 285</rdamd:P30106>
+      <rdamd:P30137>For organ.</rdamd:P30137>
+      <rdamd:P30137>Publisher's no.: Bärenreiter-Ausgabe 285.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99154989660001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99154989660001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161993535501452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161993535501452exp"/>
+      <fake:rdawP10065>Gill, John, 1851-1929, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161993535501452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161993535501452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161993535501452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161993535501452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161993535501452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161993535501452ite"/>
+      <rdamd:P30134>Gill's dictionary of the Chinook jargon</rdamd:P30134>
+      <rdamd:P30156>Gill's dictionary of the Chinook jargon</rdamd:P30156>
+      <rdamd:P30142>with examples of use in conversation and notes upon tribes and tongues</rdamd:P30142>
+      <rdamd:P30111>Portland, Oregon : J.K. Gill Company, 1933.</rdamd:P30111>
+      <rdamd:P30088>Portland, Oregon</rdamd:P30088>
+      <rdamd:P30176>J.K. Gill Company</rdamd:P30176>
+      <rdamd:P30011>1933</rdamd:P30011>
+      <rdamd:P30280>copyright 1909</rdamd:P30280>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161993535501452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161993535501452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99145014760001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99145014760001452exp"/>
+      <fake:rdawP10065>Fénelon, François de Salignac de La Mothe-, 1651-1715, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99145014760001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99145014760001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99145014760001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99145014760001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99145014760001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99145014760001452ite"/>
+      <rdamd:P30134>Mawāqiʻ al-aflāk fī waqāʼiʻ Tilīmāk</rdamd:P30134>
+      <rdamd:P30156>Mawāqiʻ al-aflāk fī waqāʼiʻ Tilīmāk</rdamd:P30156>
+      <rdamd:P30105>; tarjamahu min al-Faransāwīyah al-ʻallāmah al-fāḍil wa-al-adīb al-bāriʻ Rifāʻah Bik Badawī Rāfiʻ, nāẓir Qalam Tarjamah wa-Arbāb Qūmisyūn bi-Dīwān al-Madāris</rdamd:P30105>
+      <rdamd:P30111>[Beirut?] : [publisher not identified], [between 1840 and 1900?]</rdamd:P30111>
+      <rdamd:P30088>[Beirut?]</rdamd:P30088>
+      <rdamd:P30176>[publisher not identified]</rdamd:P30176>
+      <rdamd:P30011>[between 1840 and 1900?]</rdamd:P30011>
+      <rdamd:P30109>Bayrūt : al-Maṭbaʻah al-Sūrīyah, [between 1840 and 1900?]</rdamd:P30109>
+      <rdamd:P30087>Bayrūt</rdamd:P30087>
+      <rdamd:P30175>al-Maṭbaʻah al-Sūrīyah</rdamd:P30175>
+      <rdamd:P30010>[between 1840 and 1900?]</rdamd:P30010>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>Translation of Les aventures de Télémaque, fils d'Ulysse.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99145014760001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99145014760001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161909154701452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161909154701452exp"/>
+      <fake:rdawP10065>Mirzaev, M. (Mustaqim), 1912- author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161909154701452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161909154701452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161909154701452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161909154701452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161909154701452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161909154701452ite"/>
+      <rdamd:P30134>Uzbek tili</rdamd:P30134>
+      <rdamd:P30156>Uzbek tili</rdamd:P30156>
+      <rdamd:P30142>pedagogika institutlarining boshlanghich maktab ŭqituvchilari taĭërlaĭdigan fakultetlari uchun</rdamd:P30142>
+      <rdamd:P30105>M. Mirzaev, S. Usmonov, I. Rasulov ; masʺul redaktor, Sh. Raḣmatullaev</rdamd:P30105>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161909154701452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161909154701452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99145541270001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99145541270001452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99145541270001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99145541270001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99145541270001452wor"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99145541270001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99145541270001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99145541270001452ite"/>
+      <rdamd:P30134>Raboty Volzhskoĭ biologicheskoĭ stant︠s︡ii</rdamd:P30134>
+      <rdamd:P30156>Raboty Volzhskoĭ biologicheskoĭ stant︠s︡ii</rdamd:P30156>
+      <rdamd:P30142>Arbeiten der Biologischen Wolga-Station</rdamd:P30142>
+      <rdamd:P30105>Narodnyĭ komissariat prosveshchenii︠a︡ R.S.F.S.R., Glavnauka</rdamd:P30105>
+      <rdamd:P30137>Some issues have individual title.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99145541270001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99145541270001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99133075330001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99133075330001452exp"/>
+      <fake:rdawP10065>Barcsay, Jenő, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99133075330001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99133075330001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99133075330001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99133075330001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99133075330001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99133075330001452ite"/>
+      <rdamd:P30134>Drapery and the human form</rdamd:P30134>
+      <rdamd:P30156>Drapery and the human form</rdamd:P30156>
+      <rdamd:P30105>drawings and text by Jenő Barcsay</rdamd:P30105>
+      <rdamd:P30111>Budapest : Corvina, [1958]</rdamd:P30111>
+      <rdamd:P30088>Budapest</rdamd:P30088>
+      <rdamd:P30176>Corvina</rdamd:P30176>
+      <rdamd:P30011>[1958]</rdamd:P30011>
+      <rdamd:P30280>©1958</rdamd:P30280>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>English translation of: Ember és drapéria.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99133075330001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99133075330001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99152013430001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99152013430001452exp"/>
+      <fake:rdawP10065>Acworth, Harry Arbuthnot, 1849-1933.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99152013430001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99152013430001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99152013430001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99152013430001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99152013430001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99152013430001452ite"/>
+      <BOGUS>POSSIBLE ERROR WITH 245 WHERE rdamd:P30134 hasTitleOfManifestation WAS EXPECTED</BOGUS>
+      <rdamd:P30156>History of the drainage and sewerage of Bombay, written at the request of the Bombay municipal corporation</rdamd:P30156>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>2 fold. maps in pocket.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99152013430001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99152013430001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99150720030001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99150720030001452exp"/>
+      <fake:rdawP10065>Vietnam. Hội đò̂ng Chính phủ, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99150720030001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99150720030001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99150720030001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99150720030001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99150720030001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99150720030001452ite"/>
+      <rdamd:P30134>Báo cáo của Hội đồng Chính phủ về thắng lợi vĩ đại của hai cuộc chiến tranh bảo vệ tổ quốc và nhiệm vụ của toàn dân và toàn quân ta trước tình hình mới</rdamd:P30134>
+      <rdamd:P30156>Báo cáo của Hội đồng Chính phủ về thắng lợi vĩ đại của hai cuộc chiến tranh bảo vệ tổ quốc và nhiệm vụ của toàn dân và toàn quân ta trước tình hình mới</rdamd:P30156>
+      <rdamd:P30105>do Đại tướng Võ Nguyên Giáp, Ủy viên Bộ chính trị trung ương Đảng, Phó thủ tướng Chính phủ kiêm Bộ trưởng Bộ quốc phòng trình bày</rdamd:P30105>
+      <rdamd:P30111>[Vietnam] : [Quốc hội], 1979.</rdamd:P30111>
+      <rdamd:P30088>[Vietnam]</rdamd:P30088>
+      <rdamd:P30176>[Quốc hội]</rdamd:P30176>
+      <rdamd:P30011>1979</rdamd:P30011>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>"Cộng hòa xã hội chủ nghĩa Việt Nam, Độc lập - Tự do - Hạnh phúc."</rdamd:P30137>
+      <rdamd:P30137>"Tháng 5 - 1979."</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99150720030001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99150720030001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161911553401452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161911553401452exp"/>
+      <fake:rdawP10065>880-01 Belbaeva, M. (Marua), author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161911553401452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161911553401452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161911553401452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161911553401452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161911553401452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161911553401452ite"/>
+      <rdamd:P30134>Qazaq tīlīnīn︠g︡ omonimder sȯzdīgī</rdamd:P30134>
+      <rdamd:P30156>Qazaq tīlīnīn︠g︡ omonimder sȯzdīgī</rdamd:P30156>
+      <rdamd:P30105>M. Belbaeva</rdamd:P30105>
+      <rdamd:P30111>Almaty : "Mektep", 1988.</rdamd:P30111>
+      <rdamd:P30088>Almaty</rdamd:P30088>
+      <rdamd:P30176>"Mektep"</rdamd:P30176>
+      <rdamd:P30011>1988</rdamd:P30011>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161911553401452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161911553401452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99113843540001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99113843540001452exp"/>
+      <fake:rdawP10065>Girard, Harry.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99113843540001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99113843540001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99113843540001452wor"/>
+      <rdaed:P20001>notated music</rdaed:P20001>
+      <rdaed:P20001>ntm</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99113843540001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99113843540001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99113843540001452ite"/>
+      <rdamd:P30134>The Alaskan</rdamd:P30134>
+      <rdamd:P30156>The Alaskan</rdamd:P30156>
+      <rdamd:P30142>an original comic opera</rdamd:P30142>
+      <rdamd:P30105>book and lyrics by Joseph Blethen ; music by Harry Girard</rdamd:P30105>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99113843540001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99113843540001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162115637401452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99162115637401452exp"/>
+      <fake:rdawP10065>Virza, Edvarts, 1883-1940, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162115637401452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99162115637401452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99162115637401452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162115637401452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99162115637401452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99162115637401452ite"/>
+      <rdamd:P30134>Edvarta Virzas pēdējas dzejas</rdamd:P30134>
+      <rdamd:P30156>Edvarta Virzas pēdējas dzejas</rdamd:P30156>
+      <rdamd:P30105>sakārtojusi Elza Sterste ; grafiski iekārtojis Valdemārs Tone</rdamd:P30105>
+      <rdamd:P30111>Rīgā : Apgāds Latvju grāmata, 1941.</rdamd:P30111>
+      <rdamd:P30088>Rīgā</rdamd:P30088>
+      <rdamd:P30176>Apgāds Latvju grāmata</rdamd:P30176>
+      <rdamd:P30011>1941</rdamd:P30011>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162115637401452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99162115637401452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162017656101452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99162017656101452exp"/>
+      <fake:rdawP10065>Fuerst, J. S., author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162017656101452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99162017656101452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99162017656101452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162017656101452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99162017656101452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99162017656101452ite"/>
+      <rdamd:P30134>Characteristics of children receiving service from public welfare agencies, January 1, 1945</rdamd:P30134>
+      <rdamd:P30156>Characteristics of children receiving service from public welfare agencies, January 1, 1945</rdamd:P30156>
+      <rdamd:P30105>report prepared by Jimmy S. Fuerst, Division of Statistical Research</rdamd:P30105>
+      <rdamd:P30111>[Washington D.C.] : [Division of Statistical Research, Children's Bureau, U.S. Department of Labor], [1945 or 1946]</rdamd:P30111>
+      <rdamd:P30088>[Washington D.C.]</rdamd:P30088>
+      <rdamd:P30176>[Division of Statistical Research, Children's Bureau, U.S. Department of Labor]</rdamd:P30176>
+      <rdamd:P30011>[1945 or 1946]</rdamd:P30011>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>Caption title.</rdamd:P30137>
+      <rdamd:P30137>"This analysis is based on an annual report on the characteristics of children receiving service from workers attached to State or local departments of welfare on January 1, 1945"--Page 1.</rdamd:P30137>
+      <rdamd:P30455>Includes bibliographical references.</rdamd:P30455>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162017656101452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99162017656101452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99153458140001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99153458140001452exp"/>
+      <fake:rdawP10065>Trapp, Gisela, 1873-1958.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99153458140001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99153458140001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99153458140001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99153458140001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99153458140001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99153458140001452ite"/>
+      <rdamd:P30134>En gammal ramsa</rdamd:P30134>
+      <rdamd:P30156>En gammal ramsa</rdamd:P30156>
+      <rdamd:P30105>illustrerad af Gisela Henckel</rdamd:P30105>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>Cover title: Rida ranka.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99153458140001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99153458140001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99156401660001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99156401660001452exp"/>
+      <fake:rdawP10065>Sáenz, Moisés, 1888-1941.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99156401660001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99156401660001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99156401660001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99156401660001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99156401660001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99156401660001452ite"/>
+      <rdamd:P30134>The Peruvian Indian</rdamd:P30134>
+      <rdamd:P30156>The Peruvian Indian</rdamd:P30156>
+      <rdamd:P30105>translated by the staff of the Strategic Index of the Americas ... </rdamd:P30105>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>Caption title.</rdamd:P30137>
+      <rdamd:P30137>At head of title: Coordinator of Inter-American affairs, Office for Emergency Management, Washington, D.C., Research Division. SI-T-2.</rdamd:P30137>
+      <rdamd:P30137>Reproduced from typewritten copy.</rdamd:P30137>
+      <rdamd:P30455>Includes bibliographical references (pages 139-144).</rdamd:P30455>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99156401660001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99156401660001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161949037901452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161949037901452exp"/>
+      <fake:rdawP10065>Franco, Hizkia M., 1875-1953.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161949037901452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161949037901452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161949037901452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161949037901452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161949037901452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161949037901452ite"/>
+      <rdamd:P30134>Les martyrs juifs de Rhodes et de Cos</rdamd:P30134>
+      <rdamd:P30156>Les martyrs juifs de Rhodes et de Cos</rdamd:P30156>
+      <rdamd:P30105>par Hizkia M. Franco, ex-Preśident de la Communauté Israélite de Rhodes</rdamd:P30105>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161949037901452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161949037901452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99106360250001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99106360250001452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99106360250001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99106360250001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99106360250001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99106360250001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99106360250001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99106360250001452ite"/>
+      <rdamd:P30134>Studia memoriae Belae Bartók sacra</rdamd:P30134>
+      <rdamd:P30156>Studia memoriae Belae Bartók sacra</rdamd:P30156>
+      <rdamd:P30105>[adiuvantibus Z. Kodály et L. Lajtha ; curant B. Rajeczky et L. Vargyas]</rdamd:P30105>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>Part of illustrative matter in pocket.</rdamd:P30137>
+      <rdamd:P30137>In English.</rdamd:P30137>
+      <rdamd:P30455>Includes bibliographical references.</rdamd:P30455>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99106360250001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99106360250001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161966474001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161966474001452exp"/>
+      <fake:rdawP10065>Columbia Basin Project (U.S.). Coordinating Committee for Problem No. 28 Joint Investigations.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161966474001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161966474001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161966474001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161966474001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161966474001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161966474001452ite"/>
+      <BOGUS>POSSIBLE ERROR WITH 245 WHERE rdamd:P30134 hasTitleOfManifestation WAS EXPECTED</BOGUS>
+      <rdamd:P30156>Local governmental units</rdamd:P30156>
+      <rdamd:P30142>the most advantageous pattern of local governmental units to meet prospective public needs, report of the Coordinating Committee for Problem No. 28 Joint Investigations, Columbia Basin Irrigation Project</rdamd:P30142>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>Report prepared under leadership of Washington State Planning Council and submitted to Official Investigators of Problem No. 28.</rdamd:P30137>
+      <rdamd:P30137>"Written by Earl C. Campbell."</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161966474001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161966474001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99153867570001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99153867570001452exp"/>
+      <fake:rdawP10065>Pin Muthukan, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99153867570001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99153867570001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99153867570001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99153867570001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99153867570001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99153867570001452ite"/>
+      <rdamd:P30134>Rư̄an channai</rdamd:P30134>
+      <rdamd:P30156>Rư̄an channai</rdamd:P30156>
+      <rdamd:P30105>Phō̜. Tō̜. Pin Muthukan</rdamd:P30105>
+      <rdamd:P30111>[Bangkok] : Sathiti Kānphim, 2498 [1955]</rdamd:P30111>
+      <rdamd:P30088>[Bangkok]</rdamd:P30088>
+      <rdamd:P30176>Sathiti Kānphim</rdamd:P30176>
+      <rdamd:P30011>2498 [1955]</rdamd:P30011>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>"Chabap phisēt"--Cover.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99153867570001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99153867570001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161951221601452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161951221601452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161951221601452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161951221601452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161951221601452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161951221601452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161951221601452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161951221601452ite"/>
+      <rdamd:P30134>Der Uḳrayner Id in Uḳrayne un Amerike</rdamd:P30134>
+      <rdamd:P30156>Der Uḳrayner Id in Uḳrayne un Amerike</rdamd:P30156>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161951221601452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161951221601452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99107167240001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99107167240001452exp"/>
+      <fake:rdawP10065>Liszt, Franz, 1811-1886.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99107167240001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99107167240001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99107167240001452wor"/>
+      <rdaed:P20001>notated music</rdaed:P20001>
+      <rdaed:P20001>ntm</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99107167240001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99107167240001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99107167240001452ite"/>
+      <rdamd:P30134>Lieder und Gesänge</rdamd:P30134>
+      <rdamd:P30156>Lieder und Gesänge</rdamd:P30156>
+      <rdamd:P30142>Singstimme mit Klavierbegleitung : [für mittlere Stimme]</rdamd:P30142>
+      <rdamd:P30105>von Franz Liszt ; rev. von W. Höhne</rdamd:P30105>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>Pl. no. 3819-75.</rdamd:P30137>
+      <rdamd:P30137>At head of title: Liszt-album.</rdamd:P30137>
+      <rdamd:P30137>Word in German and Italian.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99107167240001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99107167240001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99107275770001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99107275770001452exp"/>
+      <fake:rdawP10065>Lung Phī, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99107275770001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99107275770001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99107275770001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99107275770001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99107275770001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99107275770001452ite"/>
+      <rdamd:P30134>Rot phīsing</rdamd:P30134>
+      <rdamd:P30156>Rot phīsing</rdamd:P30156>
+      <rdamd:P30142>rư̄ang yāo (lēm dīeo čhop)</rdamd:P30142>
+      <rdamd:P30105>dōi "Lung Phī"</rdamd:P30105>
+      <rdamd:P30111>Kō̜. Thō̜. Mō̜. : Samnakphim Sapparœ̄, [between 1970 and 1979?]</rdamd:P30111>
+      <rdamd:P30088>Kō̜. Thō̜. Mō̜.</rdamd:P30088>
+      <rdamd:P30176>Samnakphim Sapparœ̄</rdamd:P30176>
+      <rdamd:P30011>[between 1970 and 1979?]</rdamd:P30011>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99107275770001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99107275770001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161956944201452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161956944201452exp"/>
+      <fake:rdawP10065>United States Boys' Working Reserve.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161956944201452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161956944201452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161956944201452wor"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161956944201452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161956944201452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161956944201452ite"/>
+      <rdamd:P30134>Boy power</rdamd:P30134>
+      <rdamd:P30156>Boy power</rdamd:P30156>
+      <rdamd:P30142>official bulletin of the United States Boys' Working Reserve, Department of Labor</rdamd:P30142>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161956944201452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161956944201452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99120058700001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99120058700001452exp"/>
+      <fake:rdawP10065>Aitken, William (Electrical engineer), author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99120058700001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99120058700001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99120058700001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99120058700001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99120058700001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99120058700001452ite"/>
+      <rdamd:P30134>Automatic telephone systems</rdamd:P30134>
+      <rdamd:P30156>Automatic telephone systems</rdamd:P30156>
+      <rdamd:P30105>by William Aitken, M.I.E.E., A. Am. I.E.E., author of "Aitken's manual of the telephone."</rdamd:P30105>
+      <rdamd:P30111>London : Benn Brothers Limited, 1921-1924.</rdamd:P30111>
+      <rdamd:P30088>London</rdamd:P30088>
+      <rdamd:P30176>Benn Brothers Limited</rdamd:P30176>
+      <rdamd:P30011>1921-1924</rdamd:P30011>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99120058700001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99120058700001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99120058700001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99120058700001452exp"/>
+      <fake:rdawP10065>Aitken, William (Electrical engineer), author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99120058700001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99120058700001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99120058700001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99120058700001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99120058700001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99120058700001452ite"/>
+      <rdamd:P30134>Automatic telephone systems</rdamd:P30134>
+      <rdamd:P30156>Automatic telephone systems</rdamd:P30156>
+      <rdamd:P30105>by William Aitken, M.I.E.E., A. Am. I.E.E., author of "Aitken's manual of the telephone."</rdamd:P30105>
+      <rdamd:P30111>London : Benn Brothers Limited, 1921-1924.</rdamd:P30111>
+      <rdamd:P30088>London</rdamd:P30088>
+      <rdamd:P30176>Benn Brothers Limited</rdamd:P30176>
+      <rdamd:P30011>1921-1924</rdamd:P30011>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99120058700001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99120058700001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99124449470001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99124449470001452exp"/>
+      <fake:rdawP10065>Mussorgsky, Modest Petrovich, 1839-1881.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99124449470001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99124449470001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99124449470001452wor"/>
+      <rdaed:P20001>notated music</rdaed:P20001>
+      <rdaed:P20001>ntm</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99124449470001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99124449470001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99124449470001452ite"/>
+      <BOGUS>POSSIBLE ERROR WITH 245 WHERE rdamd:P30134 hasTitleOfManifestation WAS EXPECTED</BOGUS>
+      <rdamd:P30156>Boris Godonov</rdamd:P30156>
+      <rdamd:P30142>Opera v 4kh di︠e︡ĭstvïi︠a︡kh s prologom</rdamd:P30142>
+      <rdamd:P30105>sochinenïe M.P. Musorgskago. Polnoe perelozhenïe (so vkli︠u︡chenïem st︠s︡en ne predpolagaemykh k t︠s︡ostanovkïʹ na st︠s︡enïʹ) dli︠a︡ fortepʹi︠a︡nos pi︠e︡nïem. Sobstvennostʹ izsdateleĭ dli︠a︡ vsi︠e︡kh stran</rdamd:P30105>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>Title page and text in Russian, French and English.</rdamd:P30137>
+      <rdamd:P30137>"National music drama in 4 acts and a prologue after Pouchkine and Karamzine. English Version by M.C.H. Collet ... Version Française de Robert Godet et Aloys Mooser.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99124449470001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99124449470001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161854260001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161854260001452exp"/>
+      <fake:rdawP10065>Rainis, Jānis, 1865-1929.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161854260001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161854260001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161854260001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161854260001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161854260001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161854260001452ite"/>
+      <rdamd:P30134>Daugava</rdamd:P30134>
+      <rdamd:P30156>Daugava</rdamd:P30156>
+      <rdamd:P30142>sērdienu dziesma</rdamd:P30142>
+      <rdamd:P30105>J. Rainis [i.e. Janis Pliekšans]</rdamd:P30105>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30106>Kursas biblioteka ; nr. 1</rdamd:P30106>
+      <rdamd:P30137>E. Ābeles ilustratīvais ietērps.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161854260001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161854260001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162011842901452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99162011842901452exp"/>
+      <fake:rdawP10065>Coulton, G. G. (George Gordon), 1858-1947, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162011842901452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99162011842901452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99162011842901452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162011842901452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99162011842901452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99162011842901452ite"/>
+      <rdamd:P30134>The black death</rdamd:P30134>
+      <rdamd:P30156>The black death</rdamd:P30156>
+      <rdamd:P30111>New York, N.Y. : Jonathan Cape and Harrison Smith Incorporated, [1930?]</rdamd:P30111>
+      <rdamd:P30088>New York, N.Y.</rdamd:P30088>
+      <rdamd:P30176>Jonathan Cape and Harrison Smith Incorporated</rdamd:P30176>
+      <rdamd:P30011>[1930?]</rdamd:P30011>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30455>Includes bibliographical references (pages 119-120).</rdamd:P30455>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99162011842901452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99162011842901452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99144253470001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99144253470001452exp"/>
+      <fake:rdawP10065>Conn, C. G. (Charles Gerard), 1844-1931.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99144253470001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99144253470001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99144253470001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99144253470001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99144253470001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99144253470001452ite"/>
+      <BOGUS>POSSIBLE ERROR WITH 245 WHERE rdamd:P30134 hasTitleOfManifestation WAS EXPECTED</BOGUS>
+      <rdamd:P30156>How the blue button was won,</rdamd:P30156>
+      <rdamd:P30142>tuna fishing at Catalina Island, California ..</rdamd:P30142>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>Cover title.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99144253470001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99144253470001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161900453801452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161900453801452exp"/>
+      <fake:rdawP10065>United States. Army-Navy-Civil Committee on Aircraft Design Criteria, author, issuing body.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161900453801452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161900453801452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161900453801452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161900453801452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161900453801452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161900453801452ite"/>
+      <rdamd:P30134>Strength of aircraft elements</rdamd:P30134>
+      <rdamd:P30156>Strength of aircraft elements</rdamd:P30156>
+      <rdamd:P30142>revised edition - December 1942</rdamd:P30142>
+      <rdamd:P30105>War Department, Army Air Forces, Navy Department, Bureau of Aeronautics, Department of Commerce, Civil Aeronautics Administration ; issued by the Army-Navy-Civil Committee on Aircraft Design Criteria, under the supervision of the Aeronautical Board</rdamd:P30105>
+      <rdamd:P30111>[Washington, D.C.?] : Army-Navy-Civil Committee on Aircraft Design Criteria, [1943]</rdamd:P30111>
+      <rdamd:P30088>[Washington, D.C.?]</rdamd:P30088>
+      <rdamd:P30176>Army-Navy-Civil Committee on Aircraft Design Criteria</rdamd:P30176>
+      <rdamd:P30011>[1943]</rdamd:P30011>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>"22 Oct. 1943."</rdamd:P30137>
+      <rdamd:P30137>Consists of sheets, with changes in texts, to be inserted in lieu of the same pages of ANC-5, (revised edition - December 1942).</rdamd:P30137>
+      <rdamd:P30137>At head of title: ANC bulletin.</rdamd:P30137>
+      <rdamd:P30137>"ANC-5."</rdamd:P30137>
+      <rdamd:P30137>Reproduced from typewritten copy.</rdamd:P30137>
+      <rdamd:P30137>Earlier editions issued in 1938 by the Army-Navy-Commerce Committee on Aircraft Requirements, and in 1940 by the Army-Navy-Civil Committee on Aircraft Requirements.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161900453801452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161900453801452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99107540720001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99107540720001452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99107540720001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99107540720001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99107540720001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99107540720001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99107540720001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99107540720001452ite"/>
+      <rdamd:P30134>Tamrā phrathāt</rdamd:P30134>
+      <rdamd:P30156>Tamrā phrathāt</rdamd:P30156>
+      <rdamd:P30142>phannanā dūai santhān lǣ wan phrabō̜rommasārīrikathāt lǣ phrathāt phutthasāwok khīnāsawa ʻarahančhao thanglāi dōi sangkhēp</rdamd:P30142>
+      <rdamd:P30111>[Bangkok] : Krom Kānsātsanā, 2495 [1952]</rdamd:P30111>
+      <rdamd:P30088>[Bangkok]</rdamd:P30088>
+      <rdamd:P30176>Krom Kānsātsanā</rdamd:P30176>
+      <rdamd:P30011>2495 [1952]</rdamd:P30011>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99107540720001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99107540720001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161781003301452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99161781003301452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161781003301452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99161781003301452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99161781003301452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161781003301452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161781003301452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161781003301452ite"/>
+      <rdamd:P30134>Svētku varavīksne</rdamd:P30134>
+      <rdamd:P30156>Svētku varavīksne</rdamd:P30156>
+      <rdamd:P30142>tradīciju gadagrāmata</rdamd:P30142>
+      <rdamd:P30105>[sastāditāja, Aina Brēde]</rdamd:P30105>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30455>Includes bibliographical references.</rdamd:P30455>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99161781003301452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99161781003301452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99138565480001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99138565480001452exp"/>
+      <fake:rdawP10065>Burch, John Q.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99138565480001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99138565480001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99138565480001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99138565480001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99138565480001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99138565480001452ite"/>
+      <rdamd:P30134>Check-list of west North American marine mollusks</rdamd:P30134>
+      <rdamd:P30156>Check-list of west North American marine mollusks</rdamd:P30156>
+      <rdamd:P30105>[compiled by John Q. Burch]</rdamd:P30105>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>Title from cover; author's statement from p. [36].</rdamd:P30137>
+      <rdamd:P30137>"The distribution and other data concerning these species will be found in the minutes of the Conchological Club of Southern California"--Introduction.</rdamd:P30137>
+      <rdamd:P30137>"Prices": pages [33-35].</rdamd:P30137>
+      <rdamd:P30137>Includes index.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99138565480001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99138565480001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99113759000001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99113759000001452exp"/>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99113759000001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99113759000001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99113759000001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99113759000001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99113759000001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99113759000001452ite"/>
+      <rdamd:P30134>Retiring message of Elisha P</rdamd:P30134>
+      <rdamd:P30156>Retiring message of Elisha P</rdamd:P30156>
+      <rdamd:P30111>Olympia, Wash. : O.C. White, State Printer, 1893.</rdamd:P30111>
+      <rdamd:P30088>Olympia, Wash.</rdamd:P30088>
+      <rdamd:P30176>O.C. White, State Printer</rdamd:P30176>
+      <rdamd:P30011>1893</rdamd:P30011>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>"Delivered at the Capitol January 11, 1893."</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99113759000001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99113759000001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99132946290001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99132946290001452exp"/>
+      <fake:rdawP10065>Tăng, Xuân An.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99132946290001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99132946290001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99132946290001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99132946290001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99132946290001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99132946290001452ite"/>
+      <rdamd:P30134>Địa-lý Việt-Nam</rdamd:P30134>
+      <rdamd:P30156>Địa-lý Việt-Nam</rdamd:P30156>
+      <rdamd:P30142>lớp đệ-nhị</rdamd:P30142>
+      <rdamd:P30105>Ông và Bà Tăng-xuân-An</rdamd:P30105>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30137>"Soạn theo chương-trình mới nhá̂t của Bộ Quó̂c-gia Giáo-dục."</rdamd:P30137>
+      <rdamd:P30455>Includes bibliographical references (page 7).</rdamd:P30455>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99132946290001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99132946290001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99146723740001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99146723740001452exp"/>
+      <fake:rdawP10065>Dufay, Guillaume, 1397-1474.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99146723740001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99146723740001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99146723740001452wor"/>
+      <rdaed:P20001>notated music</rdaed:P20001>
+      <rdaed:P20001>ntm</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99146723740001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99146723740001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99146723740001452ite"/>
+      <BOGUS>POSSIBLE ERROR WITH 245 WHERE rdamd:P30134 hasTitleOfManifestation WAS EXPECTED</BOGUS>
+      <rdamd:P30156>Opera omnia</rdamd:P30156>
+      <rdamd:P30105>Edidit: Guglielmus de Van</rdamd:P30105>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30106>490 1  $a Corpus mensurabilis musicae, $v 1</rdamd:P30106>
+      <rdamd:P30137>Re-edited and completed by Heinrich Besseler, 1951-66.</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99146723740001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99146723740001452man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99142210710001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/99142210710001452exp"/>
+      <fake:rdawP10065>Vajiravudh, King of Siam, 1881-1925, author.</fake:rdawP10065>
+      <fake:rdawP10088>NO TITLE</fake:rdawP10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99142210710001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/99142210710001452man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/99142210710001452wor"/>
+      <rdaed:P20001>text</rdaed:P20001>
+      <rdaed:P20001>txt</rdaed:P20001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99142210710001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99142210710001452exp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99142210710001452ite"/>
+      <rdamd:P30134>Phrarātchaniphon Phrabāt Somdet Phra Mongkutklao ...</rdamd:P30134>
+      <rdamd:P30156>Phrarātchaniphon Phrabāt Somdet Phra Mongkutklao ...</rdamd:P30156>
+      <rdamd:P30142>Krasūang Sưksāthikān khatlư̄ak samrap chan trīam ʻudommasưksā</rdamd:P30142>
+      <rdamd:P30111>[Bangkok] : Krom Sāmansưksā, Krasūang Sưksāthikān, 2500 [1957]</rdamd:P30111>
+      <rdamd:P30088>[Bangkok]</rdamd:P30088>
+      <rdamd:P30176>Krom Sāmansưksā, Krasūang Sưksāthikān</rdamd:P30176>
+      <rdamd:P30011>2500 [1957]</rdamd:P30011>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30002>n</rdamd:P30002>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/99142210710001452ite">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/99142210710001452man"/>
+   </rdf:Description>
+</rdf:RDF>

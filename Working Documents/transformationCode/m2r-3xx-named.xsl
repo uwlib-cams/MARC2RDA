@@ -45,60 +45,60 @@
     </xsl:template>
     <xsl:template name="F337-string">
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdaed:P30002>
+            <rdamd:P30002>
                 <xsl:value-of select="."/>
-            </rdaed:P30002>
+            </rdamd:P30002>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'b']">
-            <rdaed:P30002>
+            <rdamd:P30002>
                 <xsl:value-of select="."/>
-            </rdaed:P30002>
+            </rdamd:P30002>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = '0']">
             <xsl:if test="not(contains(., 'http:'))">
-                <rdaed:P30002>
+                <rdamd:P30002>
                     <xsl:value-of select="."/>
-                </rdaed:P30002>
+                </rdamd:P30002>
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
     <xsl:template name="F337-iri">
         <xsl:for-each select="marc:subfield[@code = '0']">
             <xsl:if test="contains(., 'http:')">
-                <rdaeo:P30002 rdf:resource="{.}"/>
+                <rdamo:P30002 rdf:resource="{.}"/>
             </xsl:if>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = '1']">
-            <rdaeo:P30002 rdf:resource="{.}"/>
+            <rdamo:P30002 rdf:resource="{.}"/>
         </xsl:for-each>
     </xsl:template>
     <xsl:template name="F338-string">
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdaed:P30001>
+            <rdamd:P30001>
                 <xsl:value-of select="."/>
-            </rdaed:P30001>
+            </rdamd:P30001>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'b']">
-            <rdaed:P30001>
+            <rdamd:P30001>
                 <xsl:value-of select="."/>
-            </rdaed:P30001>
+            </rdamd:P30001>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = '0']">
             <xsl:if test="not(contains(., 'http:'))">
-                <rdaed:P30001>
+                <rdamd:P30001>
                     <xsl:value-of select="."/>
-                </rdaed:P30001>
+                </rdamd:P30001>
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
     <xsl:template name="F338-iri">
         <xsl:for-each select="marc:subfield[@code = '0']">
             <xsl:if test="contains(., 'http:')">
-                <rdaeo:P30001 rdf:resource="{.}"/>
+                <rdamo:P30001 rdf:resource="{.}"/>
             </xsl:if>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = '1']">
-            <rdaeo:P30001 rdf:resource="{.}"/>
+            <rdamo:P30001 rdf:resource="{.}"/>
         </xsl:for-each>
     </xsl:template>
 </xsl:stylesheet>
