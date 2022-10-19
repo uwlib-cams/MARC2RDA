@@ -14,8 +14,9 @@
     xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
     xmlns:fake="http://fakePropertiesForDemo"
     exclude-result-prefixes="marc ex" version="3.0">
-    <xsl:include href="m2r-0xx-named.xsl"/>
+    <!-- <xsl:include href="m2r-0xx-named.xsl"/> -->
     <xsl:template match="marc:datafield[@tag = '030']" mode="wor">
+        <!-- subfields not coded: $6 $8 -->
         <xsl:if test="matches(marc:subfield[@code = 'a'], '^[A-Z]')">
             <rdawd:P10002>
                 <xsl:value-of select="concat('(CODEN)',marc:subfield[@code = 'a'])"/>

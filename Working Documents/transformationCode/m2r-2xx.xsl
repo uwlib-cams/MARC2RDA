@@ -22,6 +22,7 @@
         </fake:rdawP10088>
     </xsl:template>
     <xsl:template match="marc:datafield[@tag = '245']" mode="man">
+        <!-- subfields not coded: $6 $7 $8 -->
         <xsl:call-template name="F245-xx-anps"/>
         <xsl:call-template name="F245-xx-a"/>
         <xsl:call-template name="F245-xx-b"/>
@@ -31,8 +32,7 @@
         <xsl:call-template name="F245-xx-k"/>
     </xsl:template>
     <xsl:template match="marc:datafield[@tag = '264']" mode="man">
-        <!-- subfields not accounted-for: $3, $6, $7 $8 ;
-             need to code for $3 .
+        <!-- subfields not coded: $3, $6, $7 $8.
         -->
         <xsl:choose>
             <xsl:when test="@ind2 = '0'">

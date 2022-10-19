@@ -1261,7 +1261,7 @@
       </marc:datafield>
    </marc:record>
     <marc:record>
-      <marc:leader>01940cam a2200373Ii 4500</marc:leader>
+      <marc:leader>01940cam a2200373Ic 4500</marc:leader>
       <marc:controlfield tag="001">99161955212901452</marc:controlfield>
       <marc:controlfield tag="005">20180720114048.9</marc:controlfield>
       <marc:controlfield tag="008">960625e194308  moua     f   f000 0 eng d</marc:controlfield>
@@ -1301,7 +1301,7 @@
             <marc:subfield code="b">U58n 1943</marc:subfield>
         </marc:datafield>
       <marc:datafield tag="245" ind1="0" ind2="0">
-            <marc:subfield code="a">U.S. Navy flight training manual.</marc:subfield>
+            <marc:subfield code="a">U.S.A. Navy flight training manual.</marc:subfield>
             <marc:subfield code="n">No. 1,</marc:subfield>
             <marc:subfield code="p">C.A.A.W.T.S. Elementary.</marc:subfield>
         </marc:datafield>

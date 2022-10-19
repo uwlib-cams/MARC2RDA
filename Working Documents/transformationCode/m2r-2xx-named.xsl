@@ -16,18 +16,9 @@
     exclude-result-prefixes="marc ex" version="3.0">
     <xsl:template name="F245-xx-anps" expand-text="yes">
         <xsl:choose>
-            <xsl:when test="marc:subfield[@code='a'] and substring(preceding-sibling::marc:leader,19,1)='i' or substring(preceding-sibling::marc:leader,19,1)='a'">
+            <xsl:when test="marc:subfield[@code='a'] and (substring(preceding-sibling::marc:leader,19,1)='i' or substring(preceding-sibling::marc:leader,19,1)='a')">
                 <rdamd:P30134>
-                    <xsl:choose>
-                        <xsl:when test="ends-with(marc:subfield[@code='a'], ' /')">{substring-before(marc:subfield[@code='a'], ' /')}</xsl:when>
-                        <xsl:when test="ends-with(marc:subfield[@code='a'], ' :')">{substring-before(marc:subfield[@code='a'], ' :')}</xsl:when>
-                        <xsl:when test="ends-with(marc:subfield[@code='a'], '.')">{substring-before(marc:subfield[@code='a'], '.')}</xsl:when>
-                        <xsl:when test="ends-with(marc:subfield[@code='a'], ' =')">{substring-before(marc:subfield[@code='a'], ' =')}</xsl:when>
-                        <xsl:when test="ends-with(marc:subfield[@code='a'], ';')">{substring-before(marc:subfield[@code='a'], ';')}</xsl:when>
-                        <xsl:otherwise>
-                            <xsl:value-of select="marc:subfield[@code='a']"/>
-                        </xsl:otherwise>
-                    </xsl:choose>
+                    <xsl:value-of select="replace(marc:subfield[@code='a'], '\s*[:]$', '')"/>
                     <xsl:for-each select="marc:subfield[@code='n'] | marc:subfield[@code='p'] | marc:subfield[@code='s']">
                         <xsl:if test="not(preceding-sibling::marc:subfield[@code='b'])">
                             <xsl:text> </xsl:text>
@@ -39,16 +30,7 @@
             <xsl:when test="(marc:subfield[@code='a']) and (substring(preceding-sibling::marc:leader,19,1)=' ' or substring(preceding-sibling::marc:leader,19,1)='c' or substring(preceding-sibling::marc:leader,19,1)='u' or substring(preceding-sibling::marc:leader,19,1)='n') and (marc:subfield[@code='n'] or marc:subfield[@code='p'] or marc:subfield[@code='s'])">
                 <rdamd:P30134>
                     <xsl:text>$a </xsl:text>
-                    <xsl:choose>
-                        <xsl:when test="ends-with(marc:subfield[@code='a'], ' /')">{substring-before(marc:subfield[@code='a'], ' /')}</xsl:when>
-                        <xsl:when test="ends-with(marc:subfield[@code='a'], ' :')">{substring-before(marc:subfield[@code='a'], ' :')}</xsl:when>
-                        <xsl:when test="ends-with(marc:subfield[@code='a'], '.')">{substring-before(marc:subfield[@code='a'], '.')}</xsl:when>
-                        <xsl:when test="ends-with(marc:subfield[@code='a'], ' =')">{substring-before(marc:subfield[@code='a'], ' =')}</xsl:when>
-                        <xsl:when test="ends-with(marc:subfield[@code='a'], ';')">{substring-before(marc:subfield[@code='a'], ';')}</xsl:when>
-                        <xsl:otherwise>
-                            <xsl:value-of select="marc:subfield[@code='a']"/>
-                        </xsl:otherwise>
-                    </xsl:choose>
+                    <xsl:value-of select="replace(marc:subfield[@code='a'], '\s*[/:=;]$', '')"/>
                     <xsl:for-each select="marc:subfield[@code='n'] | marc:subfield[@code='p'] | marc:subfield[@code='s']">
                         <xsl:if test="not(preceding-sibling::marc:subfield[@code='b'])">
                             <xsl:if test="@code='n'">
@@ -74,16 +56,7 @@
     <xsl:template name="F245-xx-a" expand-text="yes">
         <xsl:if test="marc:subfield[@code='a']">
             <rdamd:P30156>
-                <xsl:choose>
-                    <xsl:when test="ends-with(marc:subfield[@code='a'], ' /')">{substring-before(marc:subfield[@code='a'], ' /')}</xsl:when>
-                    <xsl:when test="ends-with(marc:subfield[@code='a'], ' :')">{substring-before(marc:subfield[@code='a'], ' :')}</xsl:when>
-                    <xsl:when test="ends-with(marc:subfield[@code='a'], '.')">{substring-before(marc:subfield[@code='a'], '.')}</xsl:when>
-                    <xsl:when test="ends-with(marc:subfield[@code='a'], ' =')">{substring-before(marc:subfield[@code='a'], ' =')}</xsl:when>
-                    <xsl:when test="ends-with(marc:subfield[@code='a'], ';')">{substring-before(marc:subfield[@code='a'], ';')}</xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="marc:subfield[@code='a']"/>
-                    </xsl:otherwise>
-                </xsl:choose>
+                <xsl:value-of select="replace(marc:subfield[@code='a'], '(\s)*[/:\.=;]$', '')"/>
             </rdamd:P30156>
         </xsl:if>
     </xsl:template>

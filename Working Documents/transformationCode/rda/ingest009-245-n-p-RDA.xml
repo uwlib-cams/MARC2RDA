@@ -31,10 +31,8 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99134615570001452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99134615570001452ite"/>
-      <rdamd:P30134>Statistical pocket book of Indonesia 1941(with comparative date for 1940 or earlier)</rdamd:P30134>
+      <rdamd:P30134>Statistical pocket book of Indonesia 1941(with comparative date for 1940 or earlier).</rdamd:P30134>
       <rdamd:P30156>Statistical pocket book of Indonesia 1941(with comparative date for 1940 or earlier)</rdamd:P30156>
-      <rdamd:P30137>letter</rdamd:P30137>
-      <rdamd:P30137>records</rdamd:P30137>
       <rdamd:P30111>[Batavia] : Department of Economic Affairs, Central Bureau of Statistics, [1947]</rdamd:P30111>
       <rdamd:P30088>[Batavia]</rdamd:P30088>
       <rdamd:P30176>Department of Economic Affairs, Central Bureau of Statistics</rdamd:P30176>
@@ -105,7 +103,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99111574030001452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99111574030001452ite"/>
-      <rdamd:P30134>Ṭuraf ʻArabīyah</rdamd:P30134>
+      <rdamd:P30134>Ṭuraf ʻArabīyah /</rdamd:P30134>
       <rdamd:P30156>Ṭuraf ʻArabīyah</rdamd:P30156>
       <rdamd:P30105>jamʻ al-Shaykh ʻUmar al-Suwaydī = Primeus arabes / présentées par le Comte de Landberg</rdamd:P30105>
       <rdamd:P30111>Laydan : Maṭbaʻat Brīll, 1886-1889.</rdamd:P30111>
@@ -138,7 +136,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99111574030001452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99111574030001452ite"/>
-      <rdamd:P30134>Ṭuraf ʻArabīyah</rdamd:P30134>
+      <rdamd:P30134>Ṭuraf ʻArabīyah /</rdamd:P30134>
       <rdamd:P30156>Ṭuraf ʻArabīyah</rdamd:P30156>
       <rdamd:P30105>jamʻ al-Shaykh ʻUmar al-Suwaydī = Primeus arabes / présentées par le Comte de Landberg</rdamd:P30105>
       <rdamd:P30111>Laydan : Maṭbaʻat Brīll, 1886-1889.</rdamd:P30111>
@@ -171,7 +169,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161951218101452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161951218101452ite"/>
-      <rdamd:P30134>Protocols of the meetings of the learned elders of Zion.</rdamd:P30134>
+      <rdamd:P30134>Protocols of the meetings of the learned elders of Zion. /</rdamd:P30134>
       <rdamd:P30156>Protocols of the meetings of the learned elders of Zion.</rdamd:P30156>
       <rdamd:P30105>translated from the Russian text by Victor E. Marsden</rdamd:P30105>
       <rdamd:P30002>unmediated</rdamd:P30002>
@@ -237,7 +235,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161941509901452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161941509901452ite"/>
-      <rdamd:P30134>Columbia River Basin summary statement of salient items relating to hearings before the Senate Committee on Interior and Insular Affairs on proposed amendment to H.R. 5472</rdamd:P30134>
+      <rdamd:P30134>Columbia River Basin summary statement of salient items relating to hearings before the Senate Committee on Interior and Insular Affairs on proposed amendment to H.R. 5472 /</rdamd:P30134>
       <rdamd:P30156>Columbia River Basin summary statement of salient items relating to hearings before the Senate Committee on Interior and Insular Affairs on proposed amendment to H.R. 5472</rdamd:P30156>
       <rdamd:P30105>prepared at request of the Committee Chairman by the Department of the Interior, February 11, 1950</rdamd:P30105>
       <rdamd:P30111>Washington, D.C. : United States Department of Interior, Bureau of Reclamation, 1950.</rdamd:P30111>
@@ -271,7 +269,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99114474580001452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99114474580001452ite"/>
-      <rdamd:P30134>Somdet Phra Phutthāčhān (Tō)</rdamd:P30134>
+      <rdamd:P30134>Somdet Phra Phutthāčhān (Tō) /</rdamd:P30134>
       <rdamd:P30156>Somdet Phra Phutthāčhān (Tō)</rdamd:P30156>
       <rdamd:P30105>dōi "Chanthichai"</rdamd:P30105>
       <rdamd:P30111>Phra Nakhō̜n : Samnakphim ʻAksō̜n Prasœ̄t, 2495 [1952]-2496 [1953]</rdamd:P30111>
@@ -304,7 +302,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99114474580001452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99114474580001452ite"/>
-      <rdamd:P30134>Somdet Phra Phutthāčhān (Tō)</rdamd:P30134>
+      <rdamd:P30134>Somdet Phra Phutthāčhān (Tō) /</rdamd:P30134>
       <rdamd:P30156>Somdet Phra Phutthāčhān (Tō)</rdamd:P30156>
       <rdamd:P30105>dōi "Chanthichai"</rdamd:P30105>
       <rdamd:P30111>Phra Nakhō̜n : Samnakphim ʻAksō̜n Prasœ̄t, 2495 [1952]-2496 [1953]</rdamd:P30111>
@@ -334,7 +332,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99152871820001452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99152871820001452ite"/>
-      <rdamd:P30134>Nākotnes spēks</rdamd:P30134>
+      <rdamd:P30134>Nākotnes spēks.</rdamd:P30134>
       <rdamd:P30156>Nākotnes spēks</rdamd:P30156>
       <rdamd:P30137>"Mēnešraksts bērnu kopšanai un audzināšanai."</rdamd:P30137>
    </rdf:Description>
@@ -358,8 +356,8 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161955212901452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161955212901452ite"/>
-      <rdamd:P30134>U No. 1, C.A.A.W.T.S. Elementary.</rdamd:P30134>
-      <rdamd:P30156>U</rdamd:P30156>
+      <rdamd:P30134>$a U.S.A. Navy flight training manual. $n No. 1, $p C.A.A.W.T.S. Elementary.</rdamd:P30134>
+      <rdamd:P30156>U.S.A. Navy flight training manual</rdamd:P30156>
       <rdamd:P30109>Kansas City : LaRue Printers Lithographers, August 5, 1943.</rdamd:P30109>
       <rdamd:P30087>Kansas City</rdamd:P30087>
       <rdamd:P30175>LaRue Printers Lithographers</rdamd:P30175>
@@ -392,7 +390,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99138946540001452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99138946540001452ite"/>
-      <rdamd:P30134>Drawing figures</rdamd:P30134>
+      <rdamd:P30134>Drawing figures /</rdamd:P30134>
       <rdamd:P30156>Drawing figures</rdamd:P30156>
       <rdamd:P30105>by George Giusti ; edited by Bryan Holme</rdamd:P30105>
       <rdamd:P30111>New York ; London : The Studio Publications, Incorporated, [1944]</rdamd:P30111>
@@ -456,7 +454,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161832256401452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161832256401452ite"/>
-      <rdamd:P30134>Puti kino</rdamd:P30134>
+      <rdamd:P30134>Puti kino /</rdamd:P30134>
       <rdamd:P30156>Puti kino</rdamd:P30156>
       <rdamd:P30105>Pervoe Vsesoi︠u︡znoe partiĭnoe soveshchanie po kinematografii ; pod redakt︠s︡ieĭ B.S. Olʹkhovogo</rdamd:P30105>
       <rdamd:P30002>unmediated</rdamd:P30002>
@@ -548,7 +546,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99114581380001452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99114581380001452ite"/>
-      <rdamd:P30134>Coal facts</rdamd:P30134>
+      <rdamd:P30134>Coal facts.</rdamd:P30134>
       <rdamd:P30156>Coal facts</rdamd:P30156>
       <rdamd:P30111>New York, N.Y. : Coal age, a McGraw-Hill Publication, [1935]</rdamd:P30111>
       <rdamd:P30088>New York, N.Y.</rdamd:P30088>
@@ -582,7 +580,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161950958601452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161950958601452ite"/>
-      <rdamd:P30134>History and functions of the Children's Bureau, United States Department of Labor</rdamd:P30134>
+      <rdamd:P30134>History and functions of the Children's Bureau, United States Department of Labor.</rdamd:P30134>
       <rdamd:P30156>History and functions of the Children's Bureau, United States Department of Labor</rdamd:P30156>
       <rdamd:P30111>Washington : U.S. Department of Labor, Children's Bureau, September 1, 1944.</rdamd:P30111>
       <rdamd:P30088>Washington</rdamd:P30088>
@@ -650,7 +648,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99154989660001452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99154989660001452ite"/>
-      <rdamd:P30134>44 Choräle zum Präambulieren</rdamd:P30134>
+      <rdamd:P30134>44 Choräle zum Präambulieren /</rdamd:P30134>
       <rdamd:P30156>44 Choräle zum Präambulieren</rdamd:P30156>
       <rdamd:P30105>Johann Christoph Bach ; nach den Handschriften erstmals herausgegeben von Martin Fischer ; im Anhang Choralvorspiele von Johann Pachelbel</rdamd:P30105>
       <rdamd:P30002>unmediated</rdamd:P30002>
@@ -716,7 +714,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99145014760001452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99145014760001452ite"/>
-      <rdamd:P30134>Mawāqiʻ al-aflāk fī waqāʼiʻ Tilīmāk</rdamd:P30134>
+      <rdamd:P30134>Mawāqiʻ al-aflāk fī waqāʼiʻ Tilīmāk /</rdamd:P30134>
       <rdamd:P30156>Mawāqiʻ al-aflāk fī waqāʼiʻ Tilīmāk</rdamd:P30156>
       <rdamd:P30105>; tarjamahu min al-Faransāwīyah al-ʻallāmah al-fāḍil wa-al-adīb al-bāriʻ Rifāʻah Bik Badawī Rāfiʻ, nāẓir Qalam Tarjamah wa-Arbāb Qūmisyūn bi-Dīwān al-Madāris</rdamd:P30105>
       <rdamd:P30111>[Beirut?] : [publisher not identified], [between 1840 and 1900?]</rdamd:P30111>
@@ -781,7 +779,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99145541270001452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99145541270001452ite"/>
-      <rdamd:P30134>Raboty Volzhskoĭ biologicheskoĭ stant︠s︡ii</rdamd:P30134>
+      <rdamd:P30134>Raboty Volzhskoĭ biologicheskoĭ stant︠s︡ii =</rdamd:P30134>
       <rdamd:P30156>Raboty Volzhskoĭ biologicheskoĭ stant︠s︡ii</rdamd:P30156>
       <rdamd:P30142>Arbeiten der Biologischen Wolga-Station</rdamd:P30142>
       <rdamd:P30105>Narodnyĭ komissariat prosveshchenii︠a︡ R.S.F.S.R., Glavnauka</rdamd:P30105>
@@ -808,7 +806,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99133075330001452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99133075330001452ite"/>
-      <rdamd:P30134>Drapery and the human form</rdamd:P30134>
+      <rdamd:P30134>Drapery and the human form /</rdamd:P30134>
       <rdamd:P30156>Drapery and the human form</rdamd:P30156>
       <rdamd:P30105>drawings and text by Jenő Barcsay</rdamd:P30105>
       <rdamd:P30111>Budapest : Corvina, [1958]</rdamd:P30111>
@@ -872,7 +870,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99150720030001452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99150720030001452ite"/>
-      <rdamd:P30134>Báo cáo của Hội đồng Chính phủ về thắng lợi vĩ đại của hai cuộc chiến tranh bảo vệ tổ quốc và nhiệm vụ của toàn dân và toàn quân ta trước tình hình mới</rdamd:P30134>
+      <rdamd:P30134>Báo cáo của Hội đồng Chính phủ về thắng lợi vĩ đại của hai cuộc chiến tranh bảo vệ tổ quốc và nhiệm vụ của toàn dân và toàn quân ta trước tình hình mới /</rdamd:P30134>
       <rdamd:P30156>Báo cáo của Hội đồng Chính phủ về thắng lợi vĩ đại của hai cuộc chiến tranh bảo vệ tổ quốc và nhiệm vụ của toàn dân và toàn quân ta trước tình hình mới</rdamd:P30156>
       <rdamd:P30105>do Đại tướng Võ Nguyên Giáp, Ủy viên Bộ chính trị trung ương Đảng, Phó thủ tướng Chính phủ kiêm Bộ trưởng Bộ quốc phòng trình bày</rdamd:P30105>
       <rdamd:P30111>[Vietnam] : [Quốc hội], 1979.</rdamd:P30111>
@@ -907,7 +905,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161911553401452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161911553401452ite"/>
-      <rdamd:P30134>Qazaq tīlīnīn︠g︡ omonimder sȯzdīgī</rdamd:P30134>
+      <rdamd:P30134>Qazaq tīlīnīn︠g︡ omonimder sȯzdīgī /</rdamd:P30134>
       <rdamd:P30156>Qazaq tīlīnīn︠g︡ omonimder sȯzdīgī</rdamd:P30156>
       <rdamd:P30105>M. Belbaeva</rdamd:P30105>
       <rdamd:P30111>Almaty : "Mektep", 1988.</rdamd:P30111>
@@ -970,7 +968,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99162115637401452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99162115637401452ite"/>
-      <rdamd:P30134>Edvarta Virzas pēdējas dzejas</rdamd:P30134>
+      <rdamd:P30134>Edvarta Virzas pēdējas dzejas /</rdamd:P30134>
       <rdamd:P30156>Edvarta Virzas pēdējas dzejas</rdamd:P30156>
       <rdamd:P30105>sakārtojusi Elza Sterste ; grafiski iekārtojis Valdemārs Tone</rdamd:P30105>
       <rdamd:P30111>Rīgā : Apgāds Latvju grāmata, 1941.</rdamd:P30111>
@@ -1003,7 +1001,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99162017656101452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99162017656101452ite"/>
-      <rdamd:P30134>Characteristics of children receiving service from public welfare agencies, January 1, 1945</rdamd:P30134>
+      <rdamd:P30134>Characteristics of children receiving service from public welfare agencies, January 1, 1945 /</rdamd:P30134>
       <rdamd:P30156>Characteristics of children receiving service from public welfare agencies, January 1, 1945</rdamd:P30156>
       <rdamd:P30105>report prepared by Jimmy S. Fuerst, Division of Statistical Research</rdamd:P30105>
       <rdamd:P30111>[Washington D.C.] : [Division of Statistical Research, Children's Bureau, U.S. Department of Labor], [1945 or 1946]</rdamd:P30111>
@@ -1039,7 +1037,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99153458140001452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99153458140001452ite"/>
-      <rdamd:P30134>En gammal ramsa</rdamd:P30134>
+      <rdamd:P30134>En gammal ramsa /</rdamd:P30134>
       <rdamd:P30156>En gammal ramsa</rdamd:P30156>
       <rdamd:P30105>illustrerad af Gisela Henckel</rdamd:P30105>
       <rdamd:P30002>unmediated</rdamd:P30002>
@@ -1069,7 +1067,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99156401660001452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99156401660001452ite"/>
-      <rdamd:P30134>The Peruvian Indian</rdamd:P30134>
+      <rdamd:P30134>The Peruvian Indian /</rdamd:P30134>
       <rdamd:P30156>The Peruvian Indian</rdamd:P30156>
       <rdamd:P30105>translated by the staff of the Strategic Index of the Americas ... </rdamd:P30105>
       <rdamd:P30002>unmediated</rdamd:P30002>
@@ -1102,7 +1100,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161949037901452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161949037901452ite"/>
-      <rdamd:P30134>Les martyrs juifs de Rhodes et de Cos</rdamd:P30134>
+      <rdamd:P30134>Les martyrs juifs de Rhodes et de Cos /</rdamd:P30134>
       <rdamd:P30156>Les martyrs juifs de Rhodes et de Cos</rdamd:P30156>
       <rdamd:P30105>par Hizkia M. Franco, ex-Preśident de la Communauté Israélite de Rhodes</rdamd:P30105>
       <rdamd:P30002>unmediated</rdamd:P30002>
@@ -1130,7 +1128,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99106360250001452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99106360250001452ite"/>
-      <rdamd:P30134>Studia memoriae Belae Bartók sacra</rdamd:P30134>
+      <rdamd:P30134>Studia memoriae Belae Bartók sacra /</rdamd:P30134>
       <rdamd:P30156>Studia memoriae Belae Bartók sacra</rdamd:P30156>
       <rdamd:P30105>[adiuvantibus Z. Kodály et L. Lajtha ; curant B. Rajeczky et L. Vargyas]</rdamd:P30105>
       <rdamd:P30002>unmediated</rdamd:P30002>
@@ -1193,7 +1191,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99153867570001452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99153867570001452ite"/>
-      <rdamd:P30134>Rư̄an channai</rdamd:P30134>
+      <rdamd:P30134>Rư̄an channai /</rdamd:P30134>
       <rdamd:P30156>Rư̄an channai</rdamd:P30156>
       <rdamd:P30105>Phō̜. Tō̜. Pin Muthukan</rdamd:P30105>
       <rdamd:P30111>[Bangkok] : Sathiti Kānphim, 2498 [1955]</rdamd:P30111>
@@ -1226,7 +1224,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99161951221601452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99161951221601452ite"/>
-      <rdamd:P30134>Der Uḳrayner Id in Uḳrayne un Amerike</rdamd:P30134>
+      <rdamd:P30134>Der Uḳrayner Id in Uḳrayne un Amerike.</rdamd:P30134>
       <rdamd:P30156>Der Uḳrayner Id in Uḳrayne un Amerike</rdamd:P30156>
       <rdamd:P30002>unmediated</rdamd:P30002>
       <rdamd:P30002>n</rdamd:P30002>
@@ -1344,7 +1342,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99120058700001452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99120058700001452ite"/>
-      <rdamd:P30134>Automatic telephone systems</rdamd:P30134>
+      <rdamd:P30134>Automatic telephone systems /</rdamd:P30134>
       <rdamd:P30156>Automatic telephone systems</rdamd:P30156>
       <rdamd:P30105>by William Aitken, M.I.E.E., A. Am. I.E.E., author of "Aitken's manual of the telephone."</rdamd:P30105>
       <rdamd:P30111>London : Benn Brothers Limited, 1921-1924.</rdamd:P30111>
@@ -1377,7 +1375,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99120058700001452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99120058700001452ite"/>
-      <rdamd:P30134>Automatic telephone systems</rdamd:P30134>
+      <rdamd:P30134>Automatic telephone systems /</rdamd:P30134>
       <rdamd:P30156>Automatic telephone systems</rdamd:P30156>
       <rdamd:P30105>by William Aitken, M.I.E.E., A. Am. I.E.E., author of "Aitken's manual of the telephone."</rdamd:P30105>
       <rdamd:P30111>London : Benn Brothers Limited, 1921-1924.</rdamd:P30111>
@@ -1474,7 +1472,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99162011842901452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99162011842901452ite"/>
-      <rdamd:P30134>The black death</rdamd:P30134>
+      <rdamd:P30134>The black death.</rdamd:P30134>
       <rdamd:P30156>The black death</rdamd:P30156>
       <rdamd:P30111>New York, N.Y. : Jonathan Cape and Harrison Smith Incorporated, [1930?]</rdamd:P30111>
       <rdamd:P30088>New York, N.Y.</rdamd:P30088>
@@ -1639,7 +1637,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99138565480001452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99138565480001452ite"/>
-      <rdamd:P30134>Check-list of west North American marine mollusks</rdamd:P30134>
+      <rdamd:P30134>Check-list of west North American marine mollusks /</rdamd:P30134>
       <rdamd:P30156>Check-list of west North American marine mollusks</rdamd:P30156>
       <rdamd:P30105>[compiled by John Q. Burch]</rdamd:P30105>
       <rdamd:P30002>unmediated</rdamd:P30002>
@@ -1671,8 +1669,8 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/99113759000001452exp"/>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/99113759000001452ite"/>
-      <rdamd:P30134>Retiring message of Elisha P</rdamd:P30134>
-      <rdamd:P30156>Retiring message of Elisha P</rdamd:P30156>
+      <rdamd:P30134>Retiring message of Elisha P. Ferry, first governor of Washington, and Inaugural address of John H. McGraw, second governor of Washington.</rdamd:P30134>
+      <rdamd:P30156>Retiring message of Elisha P. Ferry, first governor of Washington, and Inaugural address of John H. McGraw, second governor of Washington</rdamd:P30156>
       <rdamd:P30111>Olympia, Wash. : O.C. White, State Printer, 1893.</rdamd:P30111>
       <rdamd:P30088>Olympia, Wash.</rdamd:P30088>
       <rdamd:P30176>O.C. White, State Printer</rdamd:P30176>
