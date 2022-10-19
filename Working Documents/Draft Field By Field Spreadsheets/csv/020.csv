@@ -5,5 +5,5 @@
 3,first pass,20,INTERNATIONAL STANDARD BOOK NUMBER (R),Undefined,*,,Undefined,*,,,,c,Terms of availability (NR),,,,,,,http://rdaregistry.info/Elements/m/datatype/P30160,has term of availability,unstructured description,,[Manifestation]-->rdamd:P30160-->[value of $c] -- ZP 5/29/2022,,
 4,delete,20,INTERNATIONAL STANDARD BOOK NUMBER (R),Undefined,*,,Undefined,*,,,,q,Qualifying information (R),,,,,,,http://rdaregistry.info/Elements/m/P30309,has type of binding,,,,,
 5,delete,20,INTERNATIONAL STANDARD BOOK NUMBER (R),Undefined,*,,Undefined,*,,,,z,Canceled/invalid ISBN (R),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,,,,,
-6,?,20,INTERNATIONAL STANDARD BOOK NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+6,not mapped,20,INTERNATIONAL STANDARD BOOK NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
 7,not mapped,20,INTERNATIONAL STANDARD BOOK NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,

@@ -12,8 +12,8 @@
 10,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30104,has video format,,,,,"See also  TAG 346$a, 538$a, 500$a and 007/00= v"
 11,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30122,has emulsion on microfilm and microfiche,,,,,"See also in TAG 340$c,  500$a and 007/00=h"
 12,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30123,has broadcast standard,,,,,See also TAG 346 $b and 007/00=v
-13,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Information also in TAG 344$j
-14,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30126,has video characteristic,,,,,
+13,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,See also in TAG 007/00=s and  344$j
+14,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30126,has video characteristic,,,,,"TAG 007/00=v , see als TAG 346"
 15,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30127,has projection characteristic of motion picture film,,,,,
 16,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30138,has special playback characteristic,,,,,
 17,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30155,has layout,,,,,
@@ -35,14 +35,14 @@
 33,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30454,has sound content,,,,,
 34,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,b,Other physical details (NR),,,,,,,http://rdaregistry.info/Elements/m/P30456,has colour content,,,,,
 35,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,c,Dimensions (R),,,,,,,http://rdaregistry.info/Elements/m/P30169,has dimensions,,,,,
-36,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,c,Dimensions (R),,,,,,,http://rdaregistry.info/Elements/m/P30170,has dimensions of cartographic image,,,,,
-37,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,c,Dimensions (R),,,,,,,http://rdaregistry.info/Elements/m/P30171,has dimensions of still image,,,,,
-38,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,c,Dimensions (R),,,,,,,http://rdaregistry.info/Elements/m/P30197,has bibliographic format,,,,,See also TAG 340$m
-39,,300,PHYSICAL DESCRIPTION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,e,Accompanying material (NR),,,,,,,,,,,,,
-40,,300,PHYSICAL DESCRIPTION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,f,Type of unit (R),,,,,,,,,,,,,
-41,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,g,Size of unit (R),,,,,,,http://rdaregistry.info/Elements/m/P30169,has dimensions,,,,,
-42,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,g,Size of unit (R),,,,,,,http://rdaregistry.info/Elements/m/P30170,has dimensions of cartographic image,,,,,
-43,,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,g,Size of unit (R),,,,,,,http://rdaregistry.info/Elements/m/P30171,has dimensions of still image,,,,,
-44,,300,PHYSICAL DESCRIPTION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,,,,,,,
-45,,300,PHYSICAL DESCRIPTION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-46,,300,PHYSICAL DESCRIPTION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+36,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,c,Dimensions (R),,,,,,,http://rdaregistry.info/Elements/m/P30170,has dimensions of cartographic image,,,,,
+37,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,c,Dimensions (R),,,,,,,http://rdaregistry.info/Elements/m/P30171,has dimensions of still image,,,,,
+38,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,c,Dimensions (R),,,,,,,http://rdaregistry.info/Elements/m/P30197,has bibliographic format,,,,,See also TAG 340$m ; compare with RDA Bibliographic format
+39,?,300,PHYSICAL DESCRIPTION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,e,Accompanying material (NR),,,,,,,http://rdaregistry.info/Elements/m/P30182,has extent of manifestation,,,,,
+40,?,300,PHYSICAL DESCRIPTION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,f,Type of unit (R),,,,,,,http://rdaregistry.info/Elements/m/P30001,has carrier type,,,,,
+41,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,g,Size of unit (R),,,,,,,http://rdaregistry.info/Elements/m/P30169,has dimensions,,,,,
+42,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,g,Size of unit (R),,,,,,,http://rdaregistry.info/Elements/m/P30170,has dimensions of cartographic image,,,TAG 007/00=a,,
+43,first pass,300,PHYSICAL DESCRIPTION (R),Undefined,*,,Undefined,*,,,,g,Size of unit (R),,,,,,,http://rdaregistry.info/Elements/m/P30171,has dimensions of still image,,,TAG 007/00=k,,
+44,?,300,PHYSICAL DESCRIPTION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,,,,,,,use as boilerplate for extent
+45,not mapped,300,PHYSICAL DESCRIPTION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+46,not mapped,300,PHYSICAL DESCRIPTION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
