@@ -13,7 +13,6 @@ This is a project of the Metadata and Cataloging Initiatives Unit of the Catalog
 -Theo Gerontakos [gerontakos](https://github.com/gerontakos), Mapping Contributor, Conversion Contributor, Project Supervisor<br>
 -Jian Lee [JianPLee](https://github.com/JianPLee), Mapping Contributor<br>
 -Junghae Lee [junghaelee](https://github.com/junghaelee), Mapping Contributor<br>
--Melissa Morgan [mcm104](https://github.com/mcm104), Metadata Consultant, Mapping Contributor<br>
 -Zhuo Pan [pan-zhuo](https://github.com/pan-zhuo), Mapping Contributor, Conversion Contributor<br>
 -Benjamin Riesenberg [briesenberg07](https://github.com/briesenberg07), Metadata Consultant, General<br>
 -Adam Schiff [AdamSchiff](https://github.com/AdamSchiff), Mapping Contributor<br>
