@@ -16,23 +16,22 @@
     exclude-result-prefixes="marc ex" version="3.0">
     <xsl:include href="m2r-3xx-named.xsl"/>
     <xsl:template match="marc:datafield[@tag = '336']" mode="exp">
-        <!-- Always maps to rdae:P20001, no matter the value -->
-        <!-- Accounted for: $a, $b, $0, $1 -->
-        <!--Not accounted for: $2, $3, $6, $8 -->
-        <xsl:call-template name="F336-string"/>
-        <xsl:call-template name="F336-iri"/>
+        <!-- Accounted for: $a, $b, $2-temporary, $3-partial, $0, $1 -->
+        <!--Not accounted for: $2 needs permanent solution, $3 with $0 and $1, $6, $7, $8 -->
+        <xsl:call-template name="F336-xx-ab0-string"/>
+        <xsl:call-template name="F336-xx-01-iri"/>
     </xsl:template>
     <xsl:template match="marc:datafield[@tag = '337']" mode="man">
         <!-- Always maps to rdam:P30002, no matter the value -->
         <!-- Accounted for: $a, $b, $0, $1 -->
-        <!--Not accounted for: $2, $3, $6, $8 -->
+        <!--Not accounted for: $2, $3, $6, $7, $8 -->
         <xsl:call-template name="F337-string"/>
         <xsl:call-template name="F337-iri"/>
     </xsl:template>
     <xsl:template match="marc:datafield[@tag = '338']" mode="man">
         <!-- Always maps to rdae:P30001, no matter the value -->
         <!-- Accounted for: $a, $b, $0, $1 -->
-        <!--Not accounted for: $2, $3, $6, $8 -->
+        <!--Not accounted for: $2, $3, $6, $7, $8 -->
         <xsl:call-template name="F338-string"/>
         <xsl:call-template name="F338-iri"/>
     </xsl:template>
