@@ -16,17 +16,19 @@
     exclude-result-prefixes="marc ex" version="3.0">
     <xsl:include href="m2r-4xx-named.xsl"/>
     <xsl:template match="marc:datafield[@tag = '490']" mode="man">
+        <!-- Accounted-for: $a + $x + $v when LDR/18 is a valid value -->
+        <!-- Not accounted for: $6, $7, $8, $l, $y, $z-->
         <xsl:choose>
             <xsl:when
                 test="substring(preceding-sibling::marc:leader, 19, 1) = 'a' or substring(preceding-sibling::marc:leader, 19, 1) = 'i'">
-                <xsl:call-template name="F490-isbd"/>
+                <xsl:call-template name="F490-xx-axv-isbd"/>
             </xsl:when>
             <xsl:when
-                test="not(substring(preceding-sibling::marc:leader, 19, 1) = 'a' or substring(preceding-sibling::marc:leader, 19, 1) = 'i')">
-                <xsl:call-template name="F490-marc"/>
+                test="substring(preceding-sibling::marc:leader, 19, 1) = '' or substring(preceding-sibling::marc:leader, 19, 1) = ' ' or substring(preceding-sibling::marc:leader, 19, 1) = 'c' or substring(preceding-sibling::marc:leader, 19, 1) = 'n' or substring(preceding-sibling::marc:leader, 19, 1) = 'u'">
+                <xsl:call-template name="F490-xx-axv-nonIsbd"/>
             </xsl:when>
             <xsl:otherwise>
-                <ex:ERROR>Looks like a LDR/18 error</ex:ERROR>
+                <xsl:comment>MARC 490 data lost; likely due to an unexpected value in LDR/18</xsl:comment>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
