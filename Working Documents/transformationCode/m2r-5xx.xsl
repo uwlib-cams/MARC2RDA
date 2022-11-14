@@ -15,22 +15,56 @@
     xmlns:rdai="http://rdaregistry.info/Elements/m/"
     xmlns:rdaid="http://rdaregistry.info/Elements/m/datatype/"
     xmlns:rdaio="http://rdaregistry.info/Elements/m/object/"
+    xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+    xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+    xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
     xmlns:fake="http://fakePropertiesForDemo" exclude-result-prefixes="marc ex" version="3.0">
     <!--<xsl:include href="m2r-5xx-named.xsl"/>-->
     <!-- Does not exist yet -->
-    <xsl:variable name="collBase">http://marc2rda.edu/fake/</xsl:variable>
+    <xsl:variable name="collBase">http://marc2rda.edu/fake/colMan/</xsl:variable>
+    <xsl:variable name="lookupDoc" select="document('rda/$5-preprocessedRDA.xml')"/>
+    <xsl:key name="normCode" match="rdf:Description[rdaad:P50006]" use="rdaad:P50006"/>
     <xsl:template match="marc:datafield[@tag = '500']" mode="man">
-        <xsl:if test="not(marc:subfield/@code='5')">
-            <rdamd:P30137>
-                <xsl:value-of select="marc:subfield[@code = 'a']"/>
-            </rdamd:P30137>
-        </xsl:if>
+        <xsl:choose>
+            <xsl:when test="marc:subfield[@code = '3']">
+                <rdamd:P30137>
+                    <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                    <xsl:text> (Applies to: </xsl:text>
+                    <xsl:value-of select="marc:subfield[@code = '3']"/>
+                    <xsl:if test="marc:subfield[@code = '5']">
+                        <xsl:text> at </xsl:text>
+                        <xsl:for-each select="marc:subfield[@code = '5']">
+                            <xsl:value-of select="."/>
+                            <xsl:if test="position() != last()">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:if>
+                    <xsl:text>)</xsl:text>
+                </rdamd:P30137>
+            </xsl:when>
+            <xsl:when test="not(marc:subfield[@code = '3']) and not(marc:subfield[@code = '5'])">
+                <rdamd:P30137>
+                    <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                </rdamd:P30137>
+            </xsl:when>
+        </xsl:choose>
     </xsl:template>
-  <xsl:template match="marc:datafield[@tag = '500'][marc:subfield[@code='5']]" mode="ite">
-        <rdaid:P40028>
-            <xsl:value-of select="marc:subfield[@code = 'a']"/>
-        </rdaid:P40028>
-        <rdaio:P40161 rdf:resource="{$collBase}{lower-case(marc:subfield[@code='5'])}"/>
+    <xsl:template match="marc:subfield[@code = '5'][../@tag = '500']" mode="ite">
+        <xsl:param name="baseIRI"/>
+        <xsl:if test="not(../marc:subfield[@code = '3'])">
+            <rdf:Description rdf:about="{concat($baseIRI,'ite',position())}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+                <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
+                <rdaid:P40028>
+                    <xsl:value-of select="../marc:subfield[@code = 'a']"/>
+                </rdaid:P40028>
+                <xsl:variable name="code5" select="."/>
+                <rdaio:P40161
+                    rdf:resource="{$collBase}{$lookupDoc/key('normCode',$code5)/rdaad:P50006[@rdf:datatype='http://id.loc.gov/datatypes/orgs/normalized']}"
+                />
+            </rdf:Description>
+        </xsl:if>
     </xsl:template>
     <xsl:template match="marc:datafield[@tag = '504']" mode="man">
         <rdamd:P30455>
