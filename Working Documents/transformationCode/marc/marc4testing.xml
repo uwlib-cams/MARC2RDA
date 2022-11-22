@@ -6,6 +6,25 @@
         <marc:leader>05115cam a2200553 i 4500</marc:leader>
         <marc:controlfield tag="001">123456789A</marc:controlfield>
         <marc:controlfield tag="008">200914t20202020waua    obm  s000 0 eng c</marc:controlfield>
+		<marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">0394170660</marc:subfield>
+            <marc:subfield code="q">Random House ;</marc:subfield>
+            <marc:subfield code="q">paperback</marc:subfield>
+			<marc:subfield code="c">$4.95</marc:subfield>
+        </marc:datafield>
+		<marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">0877790019</marc:subfield>
+            <marc:subfield code="q">black leather</marc:subfield>
+            <marc:subfield code="z">0877780116 :</marc:subfield>
+			<marc:subfield code="c">$14.00</marc:subfield>
+        </marc:datafield>
+		<marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="z">0567890123</marc:subfield>
+			<marc:subfield code="z">0567890124</marc:subfield>
+            <marc:subfield code="q">(Random House ;</marc:subfield>
+            <marc:subfield code="q">trade)</marc:subfield>
+			<marc:subfield code="c">Rs15.76 ($5.60 U.S.)</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="340" ind1=" " ind2=" ">
             <marc:subfield code="a">640 subfieldA original</marc:subfield>
             <marc:subfield code="b">640 subfieldB original</marc:subfield>
