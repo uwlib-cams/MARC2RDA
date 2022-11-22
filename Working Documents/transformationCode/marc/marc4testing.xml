@@ -52,5 +52,14 @@
             <marc:subfield code="0">http://id.loc.gov/vocabulary/contentTypes/fakeLC in subfield 0</marc:subfield>
             <marc:subfield code="1">http://rdaregistry.info/termList/fakeTerm/subfield1</marc:subfield>
         </marc:datafield>
+		<marc:datafield tag="561" ind1="0" ind2=" ">
+            <marc:subfield code="3">MoMA</marc:subfield>
+            <marc:subfield code="a">This publication was part of the Library of the Printed Web, a
+                collection founded and organized by Paul Soulellis and acquired by the MoMA Library
+                in 2016.</marc:subfield>
+			<marc:subfield code="u">http://fakeIRI2.edu/fake1</marc:subfield>
+			<marc:subfield code="u">http://fakeIRI2.edu/fake2</marc:subfield>
+            <marc:subfield code="5">NNMoMA</marc:subfield>
+        </marc:datafield>
     </marc:record>
 </marc:collection>

@@ -12,15 +12,14 @@
     xmlns:rdam="http://rdaregistry.info/Elements/m/"
     xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
     xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
-    xmlns:rdai="http://rdaregistry.info/Elements/m/"
-    xmlns:rdaid="http://rdaregistry.info/Elements/m/datatype/"
-    xmlns:rdaio="http://rdaregistry.info/Elements/m/object/"
+    xmlns:rdai="http://rdaregistry.info/Elements/i/"
+    xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+    xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
     xmlns:rdaa="http://rdaregistry.info/Elements/a/"
     xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
     xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
     xmlns:fake="http://fakePropertiesForDemo" exclude-result-prefixes="marc ex" version="3.0">
-    <!--<xsl:include href="m2r-5xx-named.xsl"/>-->
-    <!-- Does not exist yet -->
+    <xsl:include href="m2r-5xx-named.xsl"/>
     <xsl:variable name="collBase">http://marc2rda.edu/fake/colMan/</xsl:variable>
     <xsl:variable name="lookupDoc" select="document('rda/$5-preprocessedRDA.xml')"/>
     <xsl:key name="normCode" match="rdf:Description[rdaad:P50006]" use="rdaad:P50006"/>
@@ -50,20 +49,22 @@
             </xsl:when>
         </xsl:choose>
     </xsl:template>
-    <xsl:template match="marc:subfield[@code = '5'][../@tag = '500']" mode="ite">
+    <xsl:template match="marc:datafield[@tag = '500'][marc:subfield[@code = '5']]" mode="ite">
         <xsl:param name="baseIRI"/>
-        <xsl:if test="not(../marc:subfield[@code = '3'])">
-            <rdf:Description rdf:about="{concat($baseIRI,'ite',position())}">
-                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-                <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
-                <rdaid:P40028>
-                    <xsl:value-of select="../marc:subfield[@code = 'a']"/>
-                </rdaid:P40028>
-                <xsl:variable name="code5" select="."/>
-                <rdaio:P40161
-                    rdf:resource="{$collBase}{$lookupDoc/key('normCode',$code5)/rdaad:P50006[@rdf:datatype='http://id.loc.gov/datatypes/orgs/normalized']}"
-                />
-            </rdf:Description>
+        <xsl:if test="not(marc:subfield[@code = '3'])">
+            <xsl:for-each select="marc:subfield[@code = '5']">
+                <rdf:Description rdf:about="{concat($baseIRI,'ite',generate-id())}">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+                    <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
+                    <rdaid:P40028>
+                        <xsl:value-of select="../marc:subfield[@code = 'a']"/>
+                    </rdaid:P40028>
+                    <xsl:variable name="code5" select="."/>
+                    <rdaio:P40161
+                        rdf:resource="{$collBase}{$lookupDoc/key('normCode',$code5)/rdaad:P50006[@rdf:datatype='http://id.loc.gov/datatypes/orgs/normalized']}"
+                    />
+                </rdf:Description>
+            </xsl:for-each>
         </xsl:if>
     </xsl:template>
     <xsl:template match="marc:datafield[@tag = '504']" mode="man">
@@ -80,7 +81,41 @@
             <xsl:value-of select="concat('Geographic coverage: ', marc:subfield[@code = 'a'])"/>
         </rdawd:P10216>
     </xsl:template>
-   <!-- <xsl:template match="*" mode="wor"/>
+    <xsl:template match="marc:datafield[@tag = '561']" mode="ite">
+        <xsl:param name="baseIRI"/>
+        <xsl:variable name="itemID" select="generate-id()"/>
+        <rdf:Description rdf:about="{concat($baseIRI,'ite',$itemID)}">
+            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+            <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
+            <xsl:if test="marc:subfield[@code = '5']">
+                <xsl:variable name="code5" select="marc:subfield[@code = '5']"/>
+                <rdaio:P40161
+                    rdf:resource="{$collBase}{$lookupDoc/key('normCode',$code5)/rdaad:P50006[@rdf:datatype='http://id.loc.gov/datatypes/orgs/normalized']}"
+                />
+            </xsl:if>
+            <rdaid:P40026>
+                <xsl:call-template name="F561-xx-a"/>
+            </rdaid:P40026>
+            <xsl:for-each select="marc:subfield[@code = 'u']">
+                <rdaid:P40026>
+                    <xsl:call-template name="F561-xx-u"/>
+                </rdaid:P40026>
+            </xsl:for-each>
+        </rdf:Description>
+        <xsl:if test="@ind1 = '0'">
+            <xsl:call-template name="F561-0x-a">
+                <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                <xsl:with-param name="itemID" select="$itemID"/>
+            </xsl:call-template>
+            <xsl:for-each select="marc:subfield[@code = 'u']">
+                <xsl:call-template name="F561-0x-u">
+                    <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                    <xsl:with-param name="itemID" select="$itemID"/>
+                </xsl:call-template>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    <!-- <xsl:template match="*" mode="wor"/>
     <xsl:template match="*" mode="exp"/>
     <xsl:template match="*" mode="man"/>
     <xsl:template match="*" mode=""></xsl:template>-->
