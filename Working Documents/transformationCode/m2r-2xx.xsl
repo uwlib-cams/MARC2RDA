@@ -15,12 +15,7 @@
     xmlns:fake="http://fakePropertiesForDemo"
     exclude-result-prefixes="marc ex" version="3.0">
     <xsl:include href="m2r-2xx-named.xsl"/>
-    <xsl:template match="marc:datafield[@tag = '245']" mode="wor">
-        <fake:rdawP10088><!-- hasTitleOfWork -->
-            <xsl:text>NO TITLE</xsl:text>
-            <!--FOR WORKS USING MARC RECORDS WHERE THE ONLY TITLE FIELD IS 245. For works without titles, create well-formed RDA by creating an access point (AP) (or create an identifier, which can be a stringified IRI). Base of the AP should be an authorized AP (AAP) (QUESTION FROM TG: DOES IT HAVE TO BE AN AAP?) for an agent who creates the work, plus a title of the work derived from the manifestation (as should appear in the 245)-->
-        </fake:rdawP10088>
-    </xsl:template>
+    <xsl:template match="marc:datafield[@tag = '245']" mode="wor"/>
     <xsl:template match="marc:datafield[@tag = '245']" mode="man">
         <!-- subfields not coded: $6 $7 $8 -->
         <xsl:call-template name="F245-xx-anps"/>

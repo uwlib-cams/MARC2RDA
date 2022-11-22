@@ -57,12 +57,13 @@
             <xsl:apply-templates select="marc:record"/>
         </rdf:RDF>
     </xsl:template>
-    <xsl:template match="marc:record">
+    <xsl:template match="marc:record" expand-text="yes">
         <xsl:variable name="baseIRI" select="concat($base, marc:controlfield[@tag = '001'])"/>
         <!-- *****WORKS***** -->
         <rdf:Description rdf:about="{concat($baseIRI,'wor')}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
             <rdawo:P10078 rdf:resource="{concat($baseIRI,'exp')}"/>
+            <rdawd:P10002>{concat(marc:controlfield[@tag='001'],'wor')}</rdawd:P10002>
             <xsl:apply-templates select="*" mode="wor"/>
         </rdf:Description>
         <!-- *****EXPRESSIONS***** -->
@@ -70,6 +71,7 @@
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
             <rdaeo:P20059 rdf:resource="{concat($baseIRI,'man')}"/>
             <rdaeo:P20231 rdf:resource="{concat($baseIRI,'wor')}"/>
+            <rdaed:P20002>{concat(marc:controlfield[@tag='001'],'exp')}</rdaed:P20002>
             <xsl:apply-templates select="*" mode="exp"/>
         </rdf:Description>
         <!-- *****MANIFESTATIONS***** -->

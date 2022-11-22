@@ -154,7 +154,7 @@
             <rdamo:P30001 rdf:resource="{.}"/>
         </xsl:for-each>
     </xsl:template>
-    <xsl:template name="F340-xx-abcdefgijklm">
+    <xsl:template name="F340-xx-abcdefghijklmnop">
         <xsl:variable name="sub3" select="marc:subfield[@code = '3']"/>
         <xsl:variable name="sub0" select="marc:subfield[@code='0']"/>
         <xsl:variable name="sub1" select="marc:subfield[@code='1']"/>
