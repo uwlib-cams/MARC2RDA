@@ -35,4 +35,10 @@
         <xsl:call-template name="F338-string"/>
         <xsl:call-template name="F338-iri"/>
     </xsl:template>
+    <xsl:template match="marc:datafield[@tag='340']" mode="man">
+        <!-- Accounted-for: $a $b $c $d $e $f $g $i $j $k $l $m $n $o $p $3-->
+        <!-- Not accounted-for: $h (not mapped), $q (new field), $6, $8 -->
+        <!-- Temporary or partial solution for: $2 -->
+        <xsl:call-template name="F340-xx-abcdefgijklm"/>
+    </xsl:template>
 </xsl:stylesheet>

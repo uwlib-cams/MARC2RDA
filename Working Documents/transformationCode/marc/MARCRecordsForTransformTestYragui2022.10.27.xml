@@ -417,6 +417,28 @@
             <marc:subfield code="b">nc</marc:subfield>
             <marc:subfield code="2">rdacarrier</marc:subfield>
         </marc:datafield>
+        <!-- DELETE THE BELOW 340 -->
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="a">hard rock candy</marc:subfield>
+            <marc:subfield code="b">6 miles x 14 miles</marc:subfield>
+            <marc:subfield code="c">subfieldC</marc:subfield>
+            <marc:subfield code="d">subfieldD</marc:subfield>
+            <marc:subfield code="e">subfieldE</marc:subfield>
+            <marc:subfield code="f">subfieldF</marc:subfield>
+            <marc:subfield code="g">subfieldG</marc:subfield>
+            <marc:subfield code="h">subfieldH</marc:subfield>
+            <marc:subfield code="i">subfieldI</marc:subfield>
+            <marc:subfield code="j">subfieldJ</marc:subfield>
+            <marc:subfield code="k">subfieldK</marc:subfield>
+            <marc:subfield code="l">subfieldL</marc:subfield>
+            <marc:subfield code="m">subfieldM</marc:subfield>
+            <marc:subfield code="n">subfieldN</marc:subfield>
+            <marc:subfield code="o">subfieldO</marc:subfield>
+            <marc:subfield code="p">subfieldP</marc:subfield>
+            <marc:subfield code="2">subfield2 rdaBlaBlaBla</marc:subfield>
+            <!--<marc:subfield code="3">subfield3</marc:subfield>-->
+        </marc:datafield>
+        <!-- DELETE THE ABOVE 340 -->
         <marc:datafield tag="340" ind1=" " ind2=" ">
             <marc:subfield code="g">color</marc:subfield>
             <marc:subfield code="g">black and white</marc:subfield>

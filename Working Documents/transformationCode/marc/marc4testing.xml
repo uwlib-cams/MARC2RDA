@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>05115cam a2200553 i 4500</marc:leader>
+        <marc:controlfield tag="001">123456789A</marc:controlfield>
+        <marc:controlfield tag="008">200914t20202020waua    obm  s000 0 eng c</marc:controlfield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="a">640 subfieldA original</marc:subfield>
+            <marc:subfield code="b">640 subfieldB original</marc:subfield>
+            <marc:subfield code="a">640 subfieldA repeated 1</marc:subfield>
+            <marc:subfield code="b">640 subfieldB repeated 1</marc:subfield>
+            <marc:subfield code="b">640 subfieldB repeated 2</marc:subfield>
+            <marc:subfield code="c">640 subfieldC</marc:subfield>
+            <marc:subfield code="d">640 subfieldD</marc:subfield>
+            <marc:subfield code="e">640 subfieldE</marc:subfield>
+            <marc:subfield code="f">640 subfieldF</marc:subfield>
+            <marc:subfield code="g">640 subfieldG</marc:subfield>
+            <marc:subfield code="h">640 subfieldH</marc:subfield>
+            <marc:subfield code="i">640 subfieldI</marc:subfield>
+            <marc:subfield code="j">640 subfieldJ</marc:subfield>
+            <marc:subfield code="k">640 subfieldK</marc:subfield>
+            <marc:subfield code="l">640 subfieldL</marc:subfield>
+            <marc:subfield code="m">640 subfieldM</marc:subfield>
+            <marc:subfield code="n">640 subfieldN</marc:subfield>
+            <marc:subfield code="o">640 subfieldO</marc:subfield>
+            <marc:subfield code="p">640 subfieldP</marc:subfield>
+            <marc:subfield code="2">640 subfield2 rdaBlaBlaBla</marc:subfield>
+            <marc:subfield code="3">640 subfield3</marc:subfield>
+            <marc:subfield code="0">(fake)identifier-for-authority</marc:subfield>
+            <marc:subfield code="0">http://rdaregistry.info/termList/fakeTerm in subfield 0 from RDA vocab</marc:subfield>
+            <marc:subfield code="0">http://id.loc.gov/vocabulary/contentTypes/fakeLC in subfield 0</marc:subfield>
+            <marc:subfield code="1">http://rdaregistry.info/termList/fakeTerm/subfield1</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

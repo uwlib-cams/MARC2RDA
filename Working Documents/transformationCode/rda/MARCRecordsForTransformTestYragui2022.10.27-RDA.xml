@@ -122,6 +122,30 @@
       <rdamd:P30002>n</rdamd:P30002>
       <rdamd:P30001>volume</rdamd:P30001>
       <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30208>hard rock candy</rdamd:P30208>
+      <rdamd:P30169>6 miles x 14 miles (hard rock candy)</rdamd:P30169>
+      <rdamd:P30084>subfieldC</rdamd:P30084>
+      <rdamd:P30187>subfieldD</rdamd:P30187>
+      <rdamd:P30186>subfieldE</rdamd:P30186>
+      <rdamd:P30137>Use at a rate or ratio of subfieldF</rdamd:P30137>
+      <rdamd:P30456>subfieldG</rdamd:P30456>
+      <rdamd:P30162>subfieldI</rdamd:P30162>
+      <rdamd:P30191>subfieldJ</rdamd:P30191>
+      <rdamd:P30155>subfieldK</rdamd:P30155>
+      <rdamd:P30309>subfieldL</rdamd:P30309>
+      <rdamd:P30197>subfieldM</rdamd:P30197>
+      <rdamd:P30199>subfieldN</rdamd:P30199>
+      <rdamd:P30196>subfieldO</rdamd:P30196>
+      <rdamd:P30453>subfieldP</rdamd:P30453>
+      <!--Original MARC data describing this manifestation contained a 490 field with a subfield value taken from an RDA vocabulary. If needed, an IRI value can be entered for an object property by providing a lookup in the appropriate RDA vocabulary.-->
+      <rdamd:P30456>color</rdamd:P30456>
+      <rdamd:P30456>black and white</rdamd:P30456>
+      <rdamd:P30456>polychrome</rdamd:P30456>
+      <rdamd:P30456>monochrome</rdamd:P30456>
+      <!--Original MARC data describing this manifestation contained a 490 field with a subfield value taken from an RDA vocabulary. If needed, an IRI value can be entered for an object property by providing a lookup in the appropriate RDA vocabulary.-->
+      <rdamd:P30453>illustration</rdamd:P30453>
+      <rdamd:P30453>map</rdamd:P30453>
+      <!--Original MARC data describing this manifestation contained a 490 field with a subfield value taken from an RDA vocabulary. If needed, an IRI value can be entered for an object property by providing a lookup in the appropriate RDA vocabulary.-->
       <rdamd:P30106>Manuscript report ; no. 326</rdamd:P30106>
       <rdamd:P30455>Includes bibliographical references (pages 76-82).</rdamd:P30455>
    </rdf:Description>
@@ -382,6 +406,11 @@
       <rdamd:P30002>c</rdamd:P30002>
       <rdamd:P30001>online resource</rdamd:P30001>
       <rdamd:P30001>cr</rdamd:P30001>
+      <rdamd:P30456>color</rdamd:P30456>
+      <rdamd:P30456>polychrome</rdamd:P30456>
+      <!--Original MARC data describing this manifestation contained a 490 field with a subfield value taken from an RDA vocabulary. If needed, an IRI value can be entered for an object property by providing a lookup in the appropriate RDA vocabulary.-->
+      <rdamd:P30453>illustration</rdamd:P30453>
+      <!--Original MARC data describing this manifestation contained a 490 field with a subfield value taken from an RDA vocabulary. If needed, an IRI value can be entered for an object property by providing a lookup in the appropriate RDA vocabulary.-->
       <rdamd:P30106>Working paper ; 21/02-21/08</rdamd:P30106>
       <rdamd:P30455>Includes bibliographical references.</rdamd:P30455>
    </rdf:Description>
@@ -528,6 +557,11 @@
       <rdamd:P30002>n</rdamd:P30002>
       <rdamd:P30001>volume</rdamd:P30001>
       <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30456>color</rdamd:P30456>
+      <rdamd:P30456>black and white</rdamd:P30456>
+      <rdamd:P30456>polychrome</rdamd:P30456>
+      <rdamd:P30456>monochrome</rdamd:P30456>
+      <!--Original MARC data describing this manifestation contained a 490 field with a subfield value taken from an RDA vocabulary. If needed, an IRI value can be entered for an object property by providing a lookup in the appropriate RDA vocabulary.-->
       <rdamd:P30106>The Kansas school naturalist, 0022-877X ; volume 64, no. 2 (December 2020)</rdamd:P30106>
       <rdamd:P30137>Cover title.</rdamd:P30137>
       <rdamd:P30137>"Checklist of bees recorded from Kansas": pages 5-13.</rdamd:P30137>
@@ -566,6 +600,11 @@
       <rdamd:P30002>c</rdamd:P30002>
       <rdamd:P30001>online resource</rdamd:P30001>
       <rdamd:P30001>cr</rdamd:P30001>
+      <rdamd:P30456>color</rdamd:P30456>
+      <rdamd:P30456>polychrome</rdamd:P30456>
+      <!--Original MARC data describing this manifestation contained a 490 field with a subfield value taken from an RDA vocabulary. If needed, an IRI value can be entered for an object property by providing a lookup in the appropriate RDA vocabulary.-->
+      <rdamd:P30453>map</rdamd:P30453>
+      <!--Original MARC data describing this manifestation contained a 490 field with a subfield value taken from an RDA vocabulary. If needed, an IRI value can be entered for an object property by providing a lookup in the appropriate RDA vocabulary.-->
       <rdamd:P30106>Washington Natural Heritage Program report ; number 2021-04</rdamd:P30106>
       <rdamd:P30137>"August 31, 2021."</rdamd:P30137>
       <rdamd:P30455>Includes bibliographical references (page 6).</rdamd:P30455>
@@ -1541,6 +1580,11 @@
       <rdamd:P30002>n</rdamd:P30002>
       <rdamd:P30001>volume</rdamd:P30001>
       <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30456>color</rdamd:P30456>
+      <rdamd:P30456>polychrome</rdamd:P30456>
+      <!--Original MARC data describing this manifestation contained a 490 field with a subfield value taken from an RDA vocabulary. If needed, an IRI value can be entered for an object property by providing a lookup in the appropriate RDA vocabulary.-->
+      <rdamd:P30453>illustration</rdamd:P30453>
+      <!--Original MARC data describing this manifestation contained a 490 field with a subfield value taken from an RDA vocabulary. If needed, an IRI value can be entered for an object property by providing a lookup in the appropriate RDA vocabulary.-->
       <rdamd:P30137>Cover title.</rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1288024190ite">
@@ -1613,6 +1657,12 @@
       <rdamd:P30002>n</rdamd:P30002>
       <rdamd:P30001>volume</rdamd:P30001>
       <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30456>color</rdamd:P30456>
+      <rdamd:P30456>polychrome</rdamd:P30456>
+      <!--Original MARC data describing this manifestation contained a 490 field with a subfield value taken from an RDA vocabulary. If needed, an IRI value can be entered for an object property by providing a lookup in the appropriate RDA vocabulary.-->
+      <rdamd:P30453>illustration</rdamd:P30453>
+      <rdamd:P30453>map</rdamd:P30453>
+      <!--Original MARC data describing this manifestation contained a 490 field with a subfield value taken from an RDA vocabulary. If needed, an IRI value can be entered for an object property by providing a lookup in the appropriate RDA vocabulary.-->
       <rdamd:P30137>Includes index.</rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1257555338ite">
