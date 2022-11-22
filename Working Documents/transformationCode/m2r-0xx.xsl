@@ -15,6 +15,49 @@
     xmlns:fake="http://fakePropertiesForDemo"
     exclude-result-prefixes="marc ex" version="3.0">
     <!-- <xsl:include href="m2r-0xx-named.xsl"/> -->
+    <xsl:template match="marc:datafield[@tag = '020']" mode="man">
+        <xsl:if test="marc:subfield[@code = 'a']">
+            <rdamd:P30004>
+                <xsl:text>(ISBN) </xsl:text>
+                <xsl:value-of select="translate(marc:subfield[@code = 'a'], ' :', '')"/>
+                <xsl:if test="marc:subfield[@code = 'q']">
+                    <xsl:text> (</xsl:text>
+                    <xsl:for-each select="marc:subfield[@code = 'q']">
+                        <xsl:value-of select="normalize-space(translate(., '();', ''))"/>
+                        <xsl:if test="position() != last()">
+                            <xsl:text> ; </xsl:text>
+                        </xsl:if>
+                    </xsl:for-each>
+                    <xsl:text>)</xsl:text>
+                </xsl:if>
+            </rdamd:P30004>
+        </xsl:if>
+        <xsl:for-each select="marc:subfield[@code = 'z']">
+            <rdamd:P30004>
+                <xsl:text>(Canceled/invalid ISBN) </xsl:text>
+                <xsl:value-of select="translate(., ' :', '')"/>
+                <xsl:if test="following-sibling::marc:subfield[@code = 'q']">
+                    <xsl:text> (</xsl:text>
+                    <xsl:for-each select="following-sibling::marc:subfield[@code = 'q']">
+                        <xsl:value-of select="normalize-space(translate(., '();', ''))"/>
+                        <xsl:if test="position() != last()">
+                            <xsl:text> ; </xsl:text>
+                        </xsl:if>
+                    </xsl:for-each>
+                    <xsl:text>)</xsl:text>
+                </xsl:if>
+            </rdamd:P30004>
+        </xsl:for-each>
+        <xsl:if test="marc:subfield[@code = 'c']">
+            <xsl:choose>
+                <xsl:when test="not(marc:subfield[@code = 'z']) or marc:subfield[@code = 'a']">
+                    <rdamd:P30160>
+                        <xsl:value-of select="marc:subfield[@code = 'c']"/>
+                    </rdamd:P30160>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:if>
+    </xsl:template>
     <xsl:template match="marc:datafield[@tag = '030']" mode="wor">
         <!-- subfields not coded: $6 $8 -->
         <xsl:if test="matches(marc:subfield[@code = 'a'], '^[A-Z]')">

@@ -12,9 +12,9 @@
     xmlns:rdam="http://rdaregistry.info/Elements/m/"
     xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
     xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
-    xmlns:rdai="http://rdaregistry.info/Elements/m/"
-    xmlns:rdaid="http://rdaregistry.info/Elements/m/datatype/"
-    xmlns:rdaio="http://rdaregistry.info/Elements/m/object/"
+    xmlns:rdai="http://rdaregistry.info/Elements/i/"
+    xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+    xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
     xmlns:rdaa="http://rdaregistry.info/Elements/a/"
     xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
     xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
@@ -23,6 +23,7 @@
     <xsl:output encoding="UTF-8" method="xml" indent="yes"/>
     <xsl:strip-space elements="*"/>
     <xsl:variable name="base" select="'http://fakeIRI2.edu/'"/>
+    <xsl:include href="m2r-0xx.xsl"/>
     <xsl:include href="m2r-1xx.xsl"/>
     <xsl:include href="m2r-2xx.xsl"/>
     <xsl:include href="m2r-3xx.xsl"/>
@@ -81,7 +82,7 @@
             <xsl:apply-templates select="*" mode="man"/>
         </rdf:Description>
         <!-- *****ITEMS***** -->
-        <xsl:apply-templates select="descendant::marc:subfield[@code = '5']" mode="ite">
+        <xsl:apply-templates select="*" mode="ite">
             <xsl:with-param name="baseIRI" select="$baseIRI"/>
         </xsl:apply-templates>
     </xsl:template>

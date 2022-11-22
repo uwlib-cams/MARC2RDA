@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
          xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
          xmlns:rdae="http://rdaregistry.info/Elements/e/"
          xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
          xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
-         xmlns:rdai="http://rdaregistry.info/Elements/m/"
-         xmlns:rdaid="http://rdaregistry.info/Elements/m/datatype/"
-         xmlns:rdaio="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
          xmlns:rdam="http://rdaregistry.info/Elements/m/"
          xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
          xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
@@ -27,7 +30,13 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/123456789Aman">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/123456789Aexp"/>
-      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/123456789Aite"/>
+      <rdamd:P30004>(ISBN) 0394170660 (Random House ; paperback)</rdamd:P30004>
+      <rdamd:P30160>$4.95</rdamd:P30160>
+      <rdamd:P30004>(ISBN) 0877790019 (black leather)</rdamd:P30004>
+      <rdamd:P30004>(Canceled/invalid ISBN) 0877780116</rdamd:P30004>
+      <rdamd:P30160>$14.00</rdamd:P30160>
+      <rdamd:P30004>(Canceled/invalid ISBN) 0567890123 (Random House ; trade)</rdamd:P30004>
+      <rdamd:P30004>(Canceled/invalid ISBN) 0567890124 (Random House ; trade)</rdamd:P30004>
       <rdamd:P30208>640 subfieldA original</rdamd:P30208>
       <rdamd:P30137>rdamd:P30208 hasBaseMaterial "640 subfieldA original" applies to 640 subfield3</rdamd:P30137>
       <!--MARC data source at field 340 contains a $0 with a value representing authority data; a solution for outputting these in RDA is not yet devised.-->
@@ -143,8 +152,40 @@
       <P30453 xmlns="http://rdaregistry.info/Elements/m/object/"
               rdf:resource="http://rdaregistry.info/termList/fakeTerm/subfield1"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/123456789Aite">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/123456789Aited12e90">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdamo:P40049 rdf:resource="http://fakeIRI2.edu/123456789Aman"/>
+      <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/123456789Aman"/>
+      <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/nnmoma"/>
+      <rdaid:P40026>This publication was part of the Library of the Printed Web, a
+                collection founded and organized by Paul Soulellis and acquired by the MoMA Library
+                in 2016. (Applies to: MoMA)</rdaid:P40026>
+      <rdaid:P40026>http://fakeIRI2.edu/fake1</rdaid:P40026>
+      <rdaid:P40026>http://fakeIRI2.edu/fake2</rdaid:P40026>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d12e901">
+      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/123456789Aited12e90"/>
+      <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+      <rdf:subject rdf:resource="http://fakeIRI2.edu/123456789Aited12e90"/>
+      <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
+      <rdf:object>This publication was part of the Library of the Printed Web, a
+                collection founded and organized by Paul Soulellis and acquired by the MoMA Library
+                in 2016. (Applies to: MoMA)</rdf:object>
+      <rdawd:P10004>Private</rdawd:P10004>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d12e902">
+      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/123456789Aited12e90"/>
+      <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+      <rdf:subject rdf:resource="http://fakeIRI2.edu/123456789Aited12e90"/>
+      <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
+      <rdf:object>http://fakeIRI2.edu/fake1</rdf:object>
+      <rdawd:P10004>Private</rdawd:P10004>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d12e903">
+      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/123456789Aited12e90"/>
+      <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+      <rdf:subject rdf:resource="http://fakeIRI2.edu/123456789Aited12e90"/>
+      <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
+      <rdf:object>http://fakeIRI2.edu/fake2</rdf:object>
+      <rdawd:P10004>Private</rdawd:P10004>
    </rdf:Description>
 </rdf:RDF>
