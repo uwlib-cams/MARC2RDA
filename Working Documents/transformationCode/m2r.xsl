@@ -15,6 +15,9 @@
     xmlns:rdai="http://rdaregistry.info/Elements/m/"
     xmlns:rdaid="http://rdaregistry.info/Elements/m/datatype/"
     xmlns:rdaio="http://rdaregistry.info/Elements/m/object/"
+    xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+    xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+    xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
     xmlns:fake="http://fakePropertiesForDemo"
     exclude-result-prefixes="marc ex" version="3.0">
     <xsl:output encoding="UTF-8" method="xml" indent="yes"/>
@@ -55,31 +58,29 @@
         </rdf:RDF>
     </xsl:template>
     <xsl:template match="marc:record">
+        <xsl:variable name="baseIRI" select="concat($base, marc:controlfield[@tag = '001'])"/>
         <!-- *****WORKS***** -->
-        <rdf:Description rdf:about="{concat($base,marc:controlfield[@tag='001'],'wor')}">
+        <rdf:Description rdf:about="{concat($baseIRI,'wor')}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-            <rdawo:P10078 rdf:resource="{concat($base,marc:controlfield[@tag='001'],'exp')}"/>
+            <rdawo:P10078 rdf:resource="{concat($baseIRI,'exp')}"/>
             <xsl:apply-templates select="*" mode="wor"/>
         </rdf:Description>
         <!-- *****EXPRESSIONS***** -->
-        <rdf:Description rdf:about="{concat($base,marc:controlfield[@tag='001'],'exp')}">
+        <rdf:Description rdf:about="{concat($baseIRI,'exp')}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-            <rdaeo:P20059 rdf:resource="{concat($base,marc:controlfield[@tag='001'],'man')}"/>
-            <rdaeo:P20231 rdf:resource="{concat($base,marc:controlfield[@tag='001'],'wor')}"/>
+            <rdaeo:P20059 rdf:resource="{concat($baseIRI,'man')}"/>
+            <rdaeo:P20231 rdf:resource="{concat($baseIRI,'wor')}"/>
             <xsl:apply-templates select="*" mode="exp"/>
         </rdf:Description>
         <!-- *****MANIFESTATIONS***** -->
-        <rdf:Description rdf:about="{concat($base,marc:controlfield[@tag='001'],'man')}">
+        <rdf:Description rdf:about="{concat($baseIRI,'man')}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-            <rdamo:P30139 rdf:resource="{concat($base,marc:controlfield[@tag='001'],'exp')}"/>
-            <rdamo:P30103 rdf:resource="{concat($base,marc:controlfield[@tag='001'],'ite')}"/>
+            <rdamo:P30139 rdf:resource="{concat($baseIRI,'exp')}"/>
             <xsl:apply-templates select="*" mode="man"/>
         </rdf:Description>
         <!-- *****ITEMS***** -->
-        <rdf:Description rdf:about="{concat($base,marc:controlfield[@tag='001'],'ite')}">
-            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-            <rdamo:P40049 rdf:resource="{concat($base,marc:controlfield[@tag='001'],'man')}"/>
-            <xsl:apply-templates select="*" mode="ite"/>
-        </rdf:Description>
+        <xsl:apply-templates select="descendant::marc:subfield[@code = '5']" mode="ite">
+            <xsl:with-param name="baseIRI" select="$baseIRI"/>
+        </xsl:apply-templates>
     </xsl:template>
 </xsl:stylesheet>
