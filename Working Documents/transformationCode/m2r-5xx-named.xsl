@@ -29,11 +29,11 @@
     </xsl:template>
     <xsl:template name="F561-0x-a">
         <xsl:param name="baseIRI"></xsl:param>
-        <xsl:param name="itemID"></xsl:param>
-        <rdf:Description rdf:about="{concat('http://marc2rda.edu/fake/MetaWor/',$itemID,'1')}">
-            <rdawo:P10616 rdf:resource="{concat($baseIRI,'ite',$itemID)}"/>
+        <xsl:param name="genID"></xsl:param>
+        <rdf:Description rdf:about="{concat('http://marc2rda.edu/fake/MetaWor/',$genID,'1')}">
+            <rdawo:P10616 rdf:resource="{concat($baseIRI,'ite',$genID)}"/>
             <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-            <rdf:subject rdf:resource="{concat($baseIRI,'ite',$itemID)}"/>
+            <rdf:subject rdf:resource="{concat($baseIRI,'ite',$genID)}"/>
             <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
             <rdf:object>
                 <xsl:call-template name="F561-xx-a"/>
@@ -51,11 +51,11 @@
     </xsl:template>
     <xsl:template name="F561-0x-u">
         <xsl:param name="baseIRI"></xsl:param>
-        <xsl:param name="itemID"></xsl:param>
-        <rdf:Description rdf:about="{concat('http://marc2rda.edu/fake/MetaWor/',$itemID,position()+1)}">
-            <rdawo:P10616 rdf:resource="{concat($baseIRI,'ite',$itemID)}"/>
+        <xsl:param name="genID"></xsl:param>
+        <rdf:Description rdf:about="{concat('http://marc2rda.edu/fake/MetaWor/',$genID,position()+1)}">
+            <rdawo:P10616 rdf:resource="{concat($baseIRI,'ite',$genID)}"/>
             <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-            <rdf:subject rdf:resource="{concat($baseIRI,'ite',$itemID)}"/>
+            <rdf:subject rdf:resource="{concat($baseIRI,'ite',$genID)}"/>
             <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
             <rdf:object>
                 <xsl:call-template name="F561-xx-u"/>

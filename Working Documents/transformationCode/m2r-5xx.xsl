@@ -49,12 +49,15 @@
             </xsl:when>
         </xsl:choose>
     </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '500'][marc:subfield[@code = '5']]" mode="ite">
+    <xsl:template match="marc:datafield[@tag = '500'][marc:subfield[@code = '5']]" mode="ite" expand-text="yes">
         <xsl:param name="baseIRI"/>
+        <xsl:param name="almaID"/>
         <xsl:if test="not(marc:subfield[@code = '3'])">
             <xsl:for-each select="marc:subfield[@code = '5']">
-                <rdf:Description rdf:about="{concat($baseIRI,'ite',generate-id())}">
+                <xsl:variable name="genID" select="generate-id()"/>
+                <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+                    <rdaid:P40001>{concat($almaID,'ite',$genID)}</rdaid:P40001>
                     <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
                     <rdaid:P40028>
                         <xsl:value-of select="../marc:subfield[@code = 'a']"/>
@@ -81,10 +84,12 @@
             <xsl:value-of select="concat('Geographic coverage: ', marc:subfield[@code = 'a'])"/>
         </rdawd:P10216>
     </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '561']" mode="ite">
+    <xsl:template match="marc:datafield[@tag = '561']" mode="ite" expand-text="yes">
         <xsl:param name="baseIRI"/>
-        <xsl:variable name="itemID" select="generate-id()"/>
-        <rdf:Description rdf:about="{concat($baseIRI,'ite',$itemID)}">
+        <xsl:param name="almaID"/>
+        <xsl:variable name="genID" select="generate-id()"/>
+        <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
+            <rdaid:P40001>{concat($almaID, 'ite', $genID)}</rdaid:P40001>
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
             <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
             <xsl:if test="marc:subfield[@code = '5']">
@@ -105,12 +110,12 @@
         <xsl:if test="@ind1 = '0'">
             <xsl:call-template name="F561-0x-a">
                 <xsl:with-param name="baseIRI" select="$baseIRI"/>
-                <xsl:with-param name="itemID" select="$itemID"/>
+<!--                <xsl:with-param name="itemgenID" select="$itemID"/>-->
             </xsl:call-template>
             <xsl:for-each select="marc:subfield[@code = 'u']">
                 <xsl:call-template name="F561-0x-u">
                     <xsl:with-param name="baseIRI" select="$baseIRI"/>
-                    <xsl:with-param name="itemID" select="$itemID"/>
+                    <xsl:with-param name="genID" select="$genID"/>
                 </xsl:call-template>
             </xsl:for-each>
         </xsl:if>
