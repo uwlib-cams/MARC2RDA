@@ -27,27 +27,22 @@ coded. TG 2022-10-14.",,
 23,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,g,Bulk dates (NR),,,,,,,http://rdaregistry.info/Elements/e/P20214,has date of expression,structured,,,,
 24,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,g,Bulk dates (NR),,,,,,,http://rdaregistry.info/Elements/e/P20307,has related timespan of expression,structured,,,,
 25,reviewed,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,g,Bulk dates (NR),,,,,,,http://rdaregistry.info/Elements/m/P30278,has date of manifestation,unstructured,,coded. Stripped terminal punctuation. TG 2022-10-14.,,
-26,reviewed,245,TITLE STATEMENT (NR),Title added entry,0,No added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,h,Medium (NR),,,,,,,http://rdaregistry.info/Elements/m/P30002,has media type,structured,,"possible to look up URI's for most GMD's? SMD also exist...more specific ones.
+26,reviewed,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,0-9,Number of nonfiling characters,,,h,Medium (NR),,,,,,,http://rdaregistry.info/Elements/m/P30002,has media type,structured,,"possible to look up URI's for most GMD's? SMD also exist...more specific ones.
 
 coded. No lookup provided in phase 1. TG 2022-10-14.",,"See also TAG 007 , 336, 337 and 338
 
 See what? --TG 2022-10-14"
-27,reviewed,245,TITLE STATEMENT (NR),Title added entry,1,Added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,h,Medium (NR),,,,,,,http://rdaregistry.info/Elements/m/P30002,has media type,structured,,"possible to look up URI's for most GMD's? SMD also exist...more specific ones.
-
-coded. No lookup provided in phase 1. Stripped brackets and terminal punctuation. TG 2022-10-14.",,"See also TAG 007 , 336, 337 and 338
-
-See what? --TG 2022-10-14"
-28,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,k,Form (R),,,,,,,http://rdaregistry.info/Elements/w/P10222,has nature of content,structured,,,,
-29,reviewed,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,k,Form (R),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,,coded. Stripped terminal punctuation. TG 2022-10-14.,,
-30,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,n,Number of part/section of a work (R),,,,,,,http://rdaregistry.info/Elements/w/P10012,has numbering of part,unstructured,,,,Whole part relationships
-31,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,n,Number of part/section of a work (R),,,,,,,http://rdaregistry.info/Elements/m/P30165,has numbering of sequence,unstructured,,,,
-32,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,p,Name of part/section of a work (R),,,,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,unstructured,,,,Whole part relationships
-33,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,p,Name of part/section of a work (R),,,,,,,http://rdaregistry.info/Elements/m/P30156,has title proper,unstructured,,,,Whole part relationships
-34,delete,245,TITLE STATEMENT (NR),Title added entry,0,No added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,s,Version (NR),,,,,,,http://rdaregistry.info/Elements/m/P30142,has other title information,unstructured,,,,use for archival material?
-35,delete,245,TITLE STATEMENT (NR),Title added entry,0,No added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,s,Version (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,,,,use for archival material?
-36,delete,245,TITLE STATEMENT (NR),Title added entry,1,Added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,s,Version (NR),,,,,,,http://rdaregistry.info/Elements/m/P30142,has other title information,unstructured,,,,use for archival material?
-37,delete,245,TITLE STATEMENT (NR),Title added entry,1,Added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,s,Version (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,,,,use for archival material?
-38,not mapped,245,TITLE STATEMENT (NR),Title added entry,0,No added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,6,Linkage (NR),,,,,,,,,,,,,refers to a TAG 880 with title in different script
-39,not mapped,245,TITLE STATEMENT (NR),Title added entry,0,No added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,8,Field link and sequence number (R),,,,,,,,,,,,,refers to a TAG 880 with title in different script
-40,not mapped,245,TITLE STATEMENT (NR),Title added entry,1,Added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,6,Linkage (NR),,,,,,,,,,,,,refers to a TAG 880 with title in different script
-41,not mapped,245,TITLE STATEMENT (NR),Title added entry,1,Added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,8,Field link and sequence number (R),,,,,,,,,,,,,refers to a TAG 880 with title in different script
+27,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,k,Form (R),,,,,,,http://rdaregistry.info/Elements/w/P10222,has nature of content,structured,,,,
+28,reviewed,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,k,Form (R),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,,coded. Stripped terminal punctuation. TG 2022-10-14.,,
+29,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,n,Number of part/section of a work (R),,,,,,,http://rdaregistry.info/Elements/w/P10012,has numbering of part,unstructured,,,,Whole part relationships
+30,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,n,Number of part/section of a work (R),,,,,,,http://rdaregistry.info/Elements/m/P30165,has numbering of sequence,unstructured,,,,
+31,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,p,Name of part/section of a work (R),,,,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,unstructured,,,,Whole part relationships
+32,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,p,Name of part/section of a work (R),,,,,,,http://rdaregistry.info/Elements/m/P30156,has title proper,unstructured,,,,Whole part relationships
+33,delete,245,TITLE STATEMENT (NR),Title added entry,0,No added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,s,Version (NR),,,,,,,http://rdaregistry.info/Elements/m/P30142,has other title information,unstructured,,,,use for archival material?
+34,delete,245,TITLE STATEMENT (NR),Title added entry,0,No added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,s,Version (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,,,,use for archival material?
+35,delete,245,TITLE STATEMENT (NR),Title added entry,1,Added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,s,Version (NR),,,,,,,http://rdaregistry.info/Elements/m/P30142,has other title information,unstructured,,,,use for archival material?
+36,delete,245,TITLE STATEMENT (NR),Title added entry,1,Added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,s,Version (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,,,,use for archival material?
+37,not mapped,245,TITLE STATEMENT (NR),Title added entry,0,No added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,6,Linkage (NR),,,,,,,,,,,,,refers to a TAG 880 with title in different script
+38,not mapped,245,TITLE STATEMENT (NR),Title added entry,0,No added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,8,Field link and sequence number (R),,,,,,,,,,,,,refers to a TAG 880 with title in different script
+39,not mapped,245,TITLE STATEMENT (NR),Title added entry,1,Added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,6,Linkage (NR),,,,,,,,,,,,,refers to a TAG 880 with title in different script
+40,not mapped,245,TITLE STATEMENT (NR),Title added entry,1,Added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,8,Field link and sequence number (R),,,,,,,,,,,,,refers to a TAG 880 with title in different script

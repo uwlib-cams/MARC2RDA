@@ -1,5 +1,6 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,delete,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,*,,Undefined,*,,,,a,History (NR),,,,,,,http://rdaregistry.info/Elements/i/P40006,has depositor agent,,,,,
+0,delete,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,*,,Undefined,*,,,,a,History (NR),,,,,,,http://rdaregistry.info/Elements/i/P40006,has depositor agent,,,,,"Issue:  https://github.com/uwlib-cams/MARC2RDA/issues/225
+lna 10/19/2022"
 1,delete,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,*,,Undefined,*,,,,a,History (NR),,,,,,,http://rdaregistry.info/Elements/i/P40007,has donor agent,,,,,
 2,delete,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,*,,Undefined,*,,,,a,History (NR),,,,,,,http://rdaregistry.info/Elements/i/P40008,has seller agent,,,,,
 3,delete,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,*,,Undefined,*,,,,a,History (NR),,,,,,,http://rdaregistry.info/Elements/i/P40017,has curator agent,,,,,
@@ -40,30 +41,65 @@
 38,delete,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,*,,Undefined,*,,,,a,History (NR),,,,,,,http://rdaregistry.info/Elements/i/P40155,has depositor family,,,,,
 39,delete,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,*,,Undefined,*,,,,a,History (NR),,,,,,,http://rdaregistry.info/Elements/i/P40156,has donor family,,,,,
 40,delete,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,*,,Undefined,*,,,,a,History (NR),,,,,,,http://rdaregistry.info/Elements/i/P40157,has seller family,,,,,
-41,first pass,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,#,No information provided,Undefined,#,Undefined,,,a,History (NR),,,,,,,http://www.rdaregistry.info/Elements/i/#P40028,has note on item,unstructured,subfield a is a text string; no more specific property is defined,"Mint item IRI and associate with manifestation (has exemplar of manifestation)
+41,first pass,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,#,No information provided,Undefined,#,Undefined,,,a,History (NR),,,,,,,http://rdaregistry.info/Elements/i/P40026,has custodial history of item,unstructured,subfield a is a text string; no more specific property is defined,"(item - minted) has manifestation exemplified (manifestation the MARC is describing)
 ex: manifestationIRI rdamo:p30103  ex:itemIRI
-ex:itemIRI rdaid:p40028 ""contents of subfield a""
-",,
-42,first pass,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,0,Private,Undefined,#,Undefined,,,a,History (NR),,,,,,,http://www.rdaregistry.info/Elements/i/#P40028,has note on item,unstructured,subfield a is a text string; no more specific property is defined,"Create a set of reified triples derived from this MARC tag.  Included in that set, mint item IRI and associate with manifestation (has exemplar of manifestation ex: manifestationIRI rdamo:p30103  ex:itemIRI
-ex:itemIRI rdaid:p40028 ""contents of subfield a""
-Assign a Work IRI to this set of triples
-Associate a Manifestation IRI to the Work IRI  
-",,
-43,,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,#,No information provided,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,,,,,,,
-44,,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,#,No information provided,Undefined,#,Undefined,,,5,Institution to which field applies (NR),,,,,,,,,,,,,
-45,,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,#,No information provided,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-46,,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,#,No information provided,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-47,,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,#,No information provided,Undefined,#,Undefined,,,b,Time of collation (NR) [OBSOLETE],,,,,,,,,,,,,
-48,,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,#,No information provided,Undefined,#,Undefined,,,u,Uniform Resource Identifier (R),,,,,,,,,,,,,
-49,,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,0,Private,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,,,,,,,
-50,,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,0,Private,Undefined,#,Undefined,,,5,Institution to which field applies (NR),,,,,,,,,,,,,
-51,,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,0,Private,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-52,,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,0,Private,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-53,,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,0,Private,Undefined,#,Undefined,,,b,Time of collation (NR) [OBSOLETE],,,,,,,,,,,,,
-54,,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,0,Private,Undefined,#,Undefined,,,u,Uniform Resource Identifier (R),,,,,,,,,,,,,
-55,,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,1,Not private,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,,,,,,,
-56,,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,1,Not private,Undefined,#,Undefined,,,5,Institution to which field applies (NR),,,,,,,,,,,,,
-57,,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,1,Not private,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-58,,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,1,Not private,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-59,,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,1,Not private,Undefined,#,Undefined,,,b,Time of collation (NR) [OBSOLETE],,,,,,,,,,,,,
-60,,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,1,Not private,Undefined,#,Undefined,,,u,Uniform Resource Identifier (R),,,,,,,,,,,,,
+ex:itemIRI rdaid:p40026 ""contents of subfield a""
+
+",,"Same mapping as for ind1 = 1 (not private);
+See also instructions for subfield u, 3, 5, etc.;
+lna 10/19/2022"
+42,first pass,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,0,Private,Undefined,#,Undefined,,,a,History (NR),,,,,,,"http://rdaregistry.info/Elements/i/P40049
+http://rdaregistry.info/Elements/i/P40164
+http://rdaregistry.info/Elements/i/P40026
+http://rdaregistry.info/Elements/w/P10004
+","(item) has manifestation exemplified
+(item) is item described with metadata by (work)
+(work) has type rdf statement, su (item) predicate (has custocial history of item) object ""contents of subfield a""
+(work) category of work ""private""",unstructured,subfield a is a text string; no more specific property is defined,"(item - minted) has manifestation exemplified (manifestation the MARC is describing)
+(item) is item described with metadata by (work)
+(work) has type rdf statement, su (item) predicate (has note on item) object ""contents of subfield a""
+(work) category of work ""private""
+",,"Example output for ind1=0 in issue discussion:
+
+https://github.com/uwlib-cams/MARC2RDA/issues/225#issuecomment-1284306425 ;
+
+See also instructions for subfield u, 3, 5, etc
+lna 10/19/2022"
+43,first pass,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,1,Not private,Undefined,#,Undefined,,,a,History (NR),,,,,,,http://rdaregistry.info/Elements/i/P40026,has custodial history of item,unstructured,subfield a is a text string; no more specific property is defined,"(item - minted) has manifestation exemplified (manifestation the MARC is describing)
+ex: manifestationIRI rdamo:p30103  ex:itemIRI
+ex:itemIRI rdaid:p40026 ""contents of subfield a""
+
+",,"Same mapping as for ind1 = # (blank);
+See also instructions for subfield u, 3, 5, etc.;
+lna 10/19/2022"
+44,first pass,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,*,(All),Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,,,unstructured,clarifies what material part of the item the custodial history applies to,"Add after the end of the text string from subfield a, according to this pattern:  (applies to:  [contents of $3] )",,"Note that this would apply to reified statement if first indicator of field is 0.
+lna 10/19/2022"
+45,first pass,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,*,(All),Undefined,#,Undefined,,,5,Institution to which field applies (NR),,,,,,,See Decision,,,See Decision,"Pattern of $5 decision applied to associated item minted for application of descriptive elements ($a, etc.) based on indicator 1.
+https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iij-5",,"Follow the pattern of Decision:  https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iij-5 
+lna 10/19/2022"
+46,first pass,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,*,(All),Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,See Decision,,,See Decision,Follow pattern in $6 Decision https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iih-6,,
+47,not mapped,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,*,(All),Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,See Decision,,,Not mapped unless a case is presented,Decision not to map $8 https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iig-8,,
+48,not mapped (deferred),561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,#,No information provided,Undefined,#,Undefined,,,b,Time of collation (NR) [OBSOLETE],,,,,,,See Decision,,,Deferred decision to map any obsolete fields until valid fields have been mapped,Decision on obsolete fields:  https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iif-obsolete-fieldssubfieldscharacter-positions,,
+49,first pass,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,#,No information provided,Undefined,#,Undefined,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/i/P40026,has custodial history of item,structured,"contents of $u would be a url leading to information about custodial history of an item, but RDA only permits a structured description (quoted string) for this property.",Give URL as a quoted string.  Append contents of any $3.,,"Note, this would be a separate mapping from $a if there is one.
+lna 10/19/2022"
+50,first pass,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,0,Private,Undefined,#,Undefined,,,u,Uniform Resource Identifier (R),,,,,,,"http://www.rdaregistry.info/Elements/i/#P40049
+http://rdaregistry.info/Elements/i/P40164
+http://rdaregistry.info/Elements/i/P40026
+http://rdaregistry.info/Elements/w/P10004
+","(item) has manifestation exemplified
+(item) is item described with metadata by (work)
+(work) has type rdf statement, su (item) predicate (has custocial history of item) object ""contents of subfield u""
+(work) category of work ""private""",unstructured,"contents of $u would be a url leading to information about custodial history of an item, but RDA only permits a structured description (quoted string) for this property.","(item - minted) has manifestation exemplified (manifestation the MARC is describing)
+(item) is item described with metadata by (work)
+(work) has type rdf statement, subject (item) predicate (has note on item) object ""contents of subfield u""
+(work)  category of work  ""private""
+",,"Example output for ind1=0 in issue discussion:
+
+https://github.com/uwlib-cams/MARC2RDA/issues/225#issuecomment-1284306425 ;
+
+See also instructions for subfield u, 3, 5, etc.;
+
+Note this would be a separate metadata work from $a if there is one.
+lna 10/19/2022"
+51,first pass,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,1,Not private,Undefined,#,Undefined,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/i/P40026,has custodial history of item,structured,"contents of $u would be a url leading to information about custodial history of an item, but RDA only permits a structured description (quoted string) for this property.",Give URL as a quoted string.  Append contents of any $3.,,"Note, this would be a separate mapping from $a if there is one. 
+lna 10/19/2022"

@@ -2,7 +2,7 @@
 0,first pass,380,FORM OF WORK (R),Undefined,*,,Undefined,*,,,,a,Form of work (R),,,,,,,http://rdaregistry.info/Elements/w/P10004,has category of work,unstructured description; structured description,,[Work]-->rdaw:P10004-->[value of $a] -- ZP 3/23/2022,,Structured only when 380$2 is present; doesn't affect the mapping result -- ZP 3/26/2022
 1,?,380,FORM OF WORK (R),Undefined,#,Undefined,Undefined,#,Undefined,,,2,Source of term (NR),,,,,,,,,,,,,
 2,?,380,FORM OF WORK (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,,,,,,,
-3,?,380,FORM OF WORK (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+3,not mapped,380,FORM OF WORK (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
 4,not mapped,380,FORM OF WORK (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
 5,first pass,380,FORM OF WORK (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10004,has category of work,identifier; IRI,,,,
 6,first pass,380,FORM OF WORK (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10004,has category of work,IRI,,[Work]-->rdaw:P10004-->[value of $1] -- ZP 3/23/2022,,
