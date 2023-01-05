@@ -21,7 +21,7 @@
     xmlns:fake="http://fakePropertiesForDemo" exclude-result-prefixes="marc ex" version="3.0">
     <xsl:include href="m2r-5xx-named.xsl"/>
     <xsl:variable name="collBase">http://marc2rda.edu/fake/colMan/</xsl:variable>
-    <xsl:variable name="lookupDoc" select="document('rda/$5-preprocessedRDA.xml')"/>
+    <xsl:variable name="lookupDoc" select="document('output/$5-preprocessedRDA.xml')"/>
     <xsl:key name="normCode" match="rdf:Description[rdaad:P50006]" use="rdaad:P50006"/>
     <xsl:template match="marc:datafield[@tag = '500']" mode="man">
         <xsl:choose>
@@ -110,7 +110,7 @@
         <xsl:if test="@ind1 = '0'">
             <xsl:call-template name="F561-0x-a">
                 <xsl:with-param name="baseIRI" select="$baseIRI"/>
-<!--                <xsl:with-param name="itemgenID" select="$itemID"/>-->
+                <xsl:with-param name="genID" select="$genID"/>
             </xsl:call-template>
             <xsl:for-each select="marc:subfield[@code = 'u']">
                 <xsl:call-template name="F561-0x-u">

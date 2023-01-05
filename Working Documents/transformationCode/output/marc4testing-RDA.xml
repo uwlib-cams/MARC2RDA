@@ -21,11 +21,13 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/123456789Awor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/123456789Aexp"/>
+      <rdawd:P10002>123456789Awor</rdawd:P10002>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/123456789Aexp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/123456789Aman"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/123456789Awor"/>
+      <rdaed:P20002>123456789Aexp</rdaed:P20002>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/123456789Aman">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
@@ -153,6 +155,7 @@
               rdf:resource="http://rdaregistry.info/termList/fakeTerm/subfield1"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/123456789Aited12e90">
+      <rdaid:P40001>ited12e90</rdaid:P40001>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
       <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/123456789Aman"/>
       <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/nnmoma"/>
@@ -163,6 +166,8 @@
       <rdaid:P40026>http://fakeIRI2.edu/fake2</rdaid:P40026>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d12e901">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>MetaWor/d12e901</rdawd:P10002>
       <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/123456789Aited12e90"/>
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
       <rdf:subject rdf:resource="http://fakeIRI2.edu/123456789Aited12e90"/>
@@ -173,6 +178,8 @@
       <rdawd:P10004>Private</rdawd:P10004>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d12e902">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>MetaWor/d12e902</rdawd:P10002>
       <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/123456789Aited12e90"/>
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
       <rdf:subject rdf:resource="http://fakeIRI2.edu/123456789Aited12e90"/>
@@ -181,6 +188,8 @@
       <rdawd:P10004>Private</rdawd:P10004>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d12e903">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>MetaWor/d12e903</rdawd:P10002>
       <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/123456789Aited12e90"/>
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
       <rdf:subject rdf:resource="http://fakeIRI2.edu/123456789Aited12e90"/>
