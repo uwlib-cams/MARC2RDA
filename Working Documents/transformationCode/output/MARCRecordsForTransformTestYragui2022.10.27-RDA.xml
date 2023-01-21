@@ -7,9 +7,9 @@
          xmlns:rdae="http://rdaregistry.info/Elements/e/"
          xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
          xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
-         xmlns:rdai="http://rdaregistry.info/Elements/m/"
-         xmlns:rdaid="http://rdaregistry.info/Elements/m/datatype/"
-         xmlns:rdaio="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
          xmlns:rdam="http://rdaregistry.info/Elements/m/"
          xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
          xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
@@ -21,12 +21,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1191247519wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1191247519exp"/>
+      <rdawd:P10002>1191247519wor</rdawd:P10002>
       <fake:rdawP10065>880-01 ʻAbd al-Razzāq, Zaynab, author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1191247519exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1191247519man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1191247519wor"/>
+      <rdaed:P20002>1191247519exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -34,6 +36,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1191247519man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1191247519exp"/>
+      <rdamd:P30004>(ISBN) 9789777952569 (paperback)</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 9777952562 (paperback)</rdamd:P30004>
       <rdamd:P30134>Iḥsān ʻAbd al-Qaddūs</rdamd:P30134>
       <rdamd:P30156>Iḥsān ʻAbd al-Qaddūs</rdamd:P30156>
       <rdamd:P30142>maʻārik al-ḥubb wa-al-siyāsah, 1919-1990</rdamd:P30142>
@@ -52,12 +56,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1195596473wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1195596473exp"/>
+      <rdawd:P10002>1195596473wor</rdawd:P10002>
       <fake:rdawP10065>Abdirad, Hamid, author. http://www.wikidata.org/entity/Q101242292</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1195596473exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1195596473man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1195596473wor"/>
+      <rdaed:P20002>1195596473exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -83,12 +89,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1341307101wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1341307101exp"/>
+      <rdawd:P10002>1341307101wor</rdawd:P10002>
       <fake:rdawP10065>Adamczewski, Jan, 1958- author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1341307101exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1341307101man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1341307101wor"/>
+      <rdaed:P20002>1341307101exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -111,22 +119,6 @@
       <rdamd:P30002>n</rdamd:P30002>
       <rdamd:P30001>volume</rdamd:P30001>
       <rdamd:P30001>nc</rdamd:P30001>
-      <rdamd:P30208>hard rock candy</rdamd:P30208>
-      <rdamd:P30169>6 miles x 14 miles (hard rock candy)</rdamd:P30169>
-      <rdamd:P30084>subfieldC</rdamd:P30084>
-      <rdamd:P30187>subfieldD</rdamd:P30187>
-      <rdamd:P30186>subfieldE</rdamd:P30186>
-      <rdamd:P30137>Use at a rate or ratio of subfieldF</rdamd:P30137>
-      <rdamd:P30456>subfieldG</rdamd:P30456>
-      <rdamd:P30137>Location of the described materials within the material base: subfieldH</rdamd:P30137>
-      <rdamd:P30162>subfieldI</rdamd:P30162>
-      <rdamd:P30191>subfieldJ</rdamd:P30191>
-      <rdamd:P30155>subfieldK</rdamd:P30155>
-      <rdamd:P30309>subfieldL</rdamd:P30309>
-      <rdamd:P30197>subfieldM</rdamd:P30197>
-      <rdamd:P30199>subfieldN</rdamd:P30199>
-      <rdamd:P30196>subfieldO</rdamd:P30196>
-      <rdamd:P30453>subfieldP</rdamd:P30453>
       <rdamd:P30456>color</rdamd:P30456>
       <rdamd:P30456>black and white</rdamd:P30456>
       <rdamd:P30456>polychrome</rdamd:P30456>
@@ -139,12 +131,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1343966907wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1343966907exp"/>
+      <rdawd:P10002>1343966907wor</rdawd:P10002>
       <fake:rdawP10065>Ahmad, Feroz, author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1343966907exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1343966907man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1343966907wor"/>
+      <rdaed:P20002>1343966907exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -152,6 +146,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1343966907man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1343966907exp"/>
+      <rdamd:P30004>(ISBN) 9786052988268</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 6052988266</rdamd:P30004>
       <rdamd:P30134>Türkiye'de çok partili politikanın açıklamalı kronolojisi (1945-1971) /</rdamd:P30134>
       <rdamd:P30156>Türkiye'de çok partili politikanın açıklamalı kronolojisi (1945-1971)</rdamd:P30156>
       <rdamd:P30105>Feroz Ahmad ve Bedia Turgay Ahmad</rdamd:P30105>
@@ -170,12 +166,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1315589290wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1315589290exp"/>
+      <rdawd:P10002>1315589290wor</rdawd:P10002>
       <fake:rdawP10065>Ahmet Refik, 1880 or 1881-1937, author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1315589290exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1315589290man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1315589290wor"/>
+      <rdaed:P20002>1315589290exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -183,6 +181,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1315589290man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1315589290exp"/>
+      <rdamd:P30004>(ISBN) 9786051965628</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 6051965629</rdamd:P30004>
       <rdamd:P30134>Türkiye'de mülteciler meselesi</rdamd:P30134>
       <rdamd:P30156>Türkiye'de mülteciler meselesi</rdamd:P30156>
       <rdamd:P30142>1849-1851</rdamd:P30142>
@@ -204,12 +204,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1302865607wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1302865607exp"/>
+      <rdawd:P10002>1302865607wor</rdawd:P10002>
       <fake:rdawP10065>Ala, Mamtimin, 1971- author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1302865607exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1302865607man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1302865607wor"/>
+      <rdaed:P20002>1302865607exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -217,6 +219,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1302865607man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1302865607exp"/>
+      <rdamd:P30004>(ISBN) 9786056948671</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 6056948676</rdamd:P30004>
       <rdamd:P30134>Uyghur qătaiami</rdamd:P30134>
       <rdamd:P30156>Uyghur qătaiami</rdamd:P30156>
       <rdamd:P30142>piskhologiyălik năzăr</rdamd:P30142>
@@ -234,12 +238,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1186703336wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1186703336exp"/>
+      <rdawd:P10002>1186703336wor</rdawd:P10002>
       <fake:rdawP10065>Arata, Laura Joanne, 1984- author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1186703336exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1186703336man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1186703336wor"/>
+      <rdaed:P20002>1186703336exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -247,6 +253,10 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1186703336man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1186703336exp"/>
+      <rdamd:P30004>(ISBN) 9780806168173 (ebook)</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 080616817X (ebook)</rdamd:P30004>
+      <rdamd:P30004>(Canceled/invalid ISBN) 9780806164977</rdamd:P30004>
+      <rdamd:P30004>(Canceled/invalid ISBN) 0806164972</rdamd:P30004>
       <rdamd:P30134>Race and the wild west</rdamd:P30134>
       <rdamd:P30156>Race and the wild west</rdamd:P30156>
       <rdamd:P30142>Sarah Bickford, the Montana vigilantes, and the tourism of decline, 1870-1930</rdamd:P30142>
@@ -265,12 +275,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1295775763wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1295775763exp"/>
+      <rdawd:P10002>1295775763wor</rdawd:P10002>
       <fake:rdawP10065>Backhouse, E. (Edmund), Sir, 1873-1944, author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1295775763exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1295775763man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1295775763wor"/>
+      <rdaed:P20002>1295775763exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -278,6 +290,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1295775763man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1295775763exp"/>
+      <rdamd:P30004>(ISBN) 9780648801917</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 0648801918</rdamd:P30004>
       <rdamd:P30134>The dead past /</rdamd:P30134>
       <rdamd:P30156>The dead past</rdamd:P30156>
       <rdamd:P30105>Sir Edmund Trelawny Backhouse ; edited by Reinhard Hoeppli and Peter Jordaan</rdamd:P30105>
@@ -295,12 +309,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1196834847wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1196834847exp"/>
+      <rdawd:P10002>1196834847wor</rdawd:P10002>
       <fake:rdawP10065>Barrett, Ilsa, author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1196834847exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1196834847man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1196834847wor"/>
+      <rdaed:P20002>1196834847exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -326,12 +342,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1289938074wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1289938074exp"/>
+      <rdawd:P10002>1289938074wor</rdawd:P10002>
       <fake:rdawP10065>Bromell, David (Educator and policy advisor), author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1289938074exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1289938074man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1289938074wor"/>
+      <rdaed:P20002>1289938074exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -360,12 +378,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1196834877wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1196834877exp"/>
+      <rdawd:P10002>1196834877wor</rdawd:P10002>
       <fake:rdawP10065>Cai, Yuansi, author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1196834877exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1196834877man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1196834877wor"/>
+      <rdaed:P20002>1196834877exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -390,12 +410,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1343101912wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1343101912exp"/>
+      <rdawd:P10002>1343101912wor</rdawd:P10002>
       <fake:rdawP10065>880-01 Chihrahʹgushā, Amīr, 1979 or 1980- author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1343101912exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1343101912man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1343101912wor"/>
+      <rdaed:P20002>1343101912exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -403,6 +425,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1343101912man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1343101912exp"/>
+      <rdamd:P30004>(ISBN) 9786004862400</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 6004862401</rdamd:P30004>
       <rdamd:P30134>Tabrīz dar girdāb-i sāyahʹhā</rdamd:P30134>
       <rdamd:P30156>Tabrīz dar girdāb-i sāyahʹhā</rdamd:P30156>
       <rdamd:P30142>taḥavvulāt-i Tabrīz dar khilāl-i sālʹhā-yi 1326-1345 H. Sh. bā taʼkīd bar maṭbūʻāt va asnād-i nawyāft</rdamd:P30142>
@@ -420,12 +444,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1347751354wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1347751354exp"/>
+      <rdawd:P10002>1347751354wor</rdawd:P10002>
       <fake:rdawP10065>Duman, Faruk, 1974- author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1347751354exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1347751354man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1347751354wor"/>
+      <rdaed:P20002>1347751354exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -433,6 +459,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1347751354man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1347751354exp"/>
+      <rdamd:P30004>(ISBN) 9789750850547</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 9750850548</rdamd:P30004>
       <rdamd:P30134>İncir tarihi</rdamd:P30134>
       <rdamd:P30156>İncir tarihi</rdamd:P30156>
       <rdamd:P30142>roman</rdamd:P30142>
@@ -452,12 +480,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1268154196wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1268154196exp"/>
+      <rdawd:P10002>1268154196wor</rdawd:P10002>
       <fake:rdawP10065>Engel, Michael S., author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1268154196exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1268154196man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1268154196wor"/>
+      <rdaed:P20002>1268154196exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -488,12 +518,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1269445847wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1269445847exp"/>
+      <rdawd:P10002>1269445847wor</rdawd:P10002>
       <fake:rdawP10065>Fertig, Walter, author. aut</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1269445847exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1269445847man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1269445847wor"/>
+      <rdaed:P20002>1269445847exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -522,12 +554,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1288623721wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1288623721exp"/>
+      <rdawd:P10002>1288623721wor</rdawd:P10002>
       <fake:rdawP10065>880-01 Grigorovskai︠a︡, A. V. (Anastasii︠a︡ Vasilʹevna), author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1288623721exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1288623721man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1288623721wor"/>
+      <rdaed:P20002>1288623721exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -535,6 +569,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1288623721man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1288623721exp"/>
+      <rdamd:P30004>(ISBN) 9785976543942</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 5976543944</rdamd:P30004>
       <rdamd:P30134>Khudozhestvennoe tvorchestvo Aĭn Rėnd v russkom kontekste</rdamd:P30134>
       <rdamd:P30156>Khudozhestvennoe tvorchestvo Aĭn Rėnd v russkom kontekste</rdamd:P30156>
       <rdamd:P30142>monografii︠a︡</rdamd:P30142>
@@ -553,12 +589,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1342126635wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1342126635exp"/>
+      <rdawd:P10002>1342126635wor</rdawd:P10002>
       <fake:rdawP10065>880-01 Gulbū, Farīdah, author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1342126635exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1342126635man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1342126635wor"/>
+      <rdaed:P20002>1342126635exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -566,6 +604,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1342126635man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1342126635exp"/>
+      <rdamd:P30004>(ISBN) 9786008351450</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 6008351452</rdamd:P30004>
       <rdamd:P30134>Khusraw va Shīrīn /</rdamd:P30134>
       <rdamd:P30156>Khusraw va Shīrīn</rdamd:P30156>
       <rdamd:P30105>Farīdah Gulbū</rdamd:P30105>
@@ -582,12 +622,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1268154195wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1268154195exp"/>
+      <rdawd:P10002>1268154195wor</rdawd:P10002>
       <fake:rdawP10065>Hollenbeck, Brian, 1974- author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1268154195exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1268154195man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1268154195wor"/>
+      <rdaed:P20002>1268154195exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -612,12 +654,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1306953247wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1306953247exp"/>
+      <rdawd:P10002>1306953247wor</rdawd:P10002>
       <fake:rdawP10065>Hun, Mücahit Özden, 1958- author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1306953247exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1306953247man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1306953247wor"/>
+      <rdaed:P20002>1306953247exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -625,6 +669,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1306953247man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1306953247exp"/>
+      <rdamd:P30004>(ISBN) 9786051911731</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 6051911731</rdamd:P30004>
       <rdamd:P30134>Iğdır siyasi tarihi (1945-1965) /</rdamd:P30134>
       <rdamd:P30156>Iğdır siyasi tarihi (1945-1965)</rdamd:P30156>
       <rdamd:P30105>Mücahit Özden Hun</rdamd:P30105>
@@ -640,12 +686,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1344109235wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1344109235exp"/>
+      <rdawd:P10002>1344109235wor</rdawd:P10002>
       <fake:rdawP10065>Hun, Mücahit Özden, 1958- author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1344109235exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1344109235man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1344109235wor"/>
+      <rdaed:P20002>1344109235exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -653,6 +701,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1344109235man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1344109235exp"/>
+      <rdamd:P30004>(ISBN) 9786051911885</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 605191188X</rdamd:P30004>
       <rdamd:P30134>Kürt-Azeri Iğdır Cumhuriyeti</rdamd:P30134>
       <rdamd:P30156>Kürt-Azeri Iğdır Cumhuriyeti</rdamd:P30156>
       <rdamd:P30142>fıkralar &amp; anekdotlar</rdamd:P30142>
@@ -669,12 +719,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1346569241wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1346569241exp"/>
+      <rdawd:P10002>1346569241wor</rdawd:P10002>
       <fake:rdawP10065>Ḥusayn Bāyqarā, Sultan of Khorasan, 1438-1506, author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1346569241exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1346569241man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1346569241wor"/>
+      <rdaed:P20002>1346569241exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -682,6 +734,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1346569241man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1346569241exp"/>
+      <rdamd:P30004>(ISBN) 9789751748119</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 9751748119</rdamd:P30004>
       <rdamd:P30134>Dîvân</rdamd:P30134>
       <rdamd:P30156>Dîvân</rdamd:P30156>
       <rdamd:P30142>inceleme - metin - dizin - tıpkıbasım</rdamd:P30142>
@@ -701,12 +755,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1244554767wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1244554767exp"/>
+      <rdawd:P10002>1244554767wor</rdawd:P10002>
       <fake:rdawP10065>Jacobs, Sara (Professor of Landscape architecture), author. http://www.wikidata.org/entity/Q107281760</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1244554767exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1244554767man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1244554767wor"/>
+      <rdaed:P20002>1244554767exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -732,12 +788,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1153151947wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1153151947exp"/>
+      <rdawd:P10002>1153151947wor</rdawd:P10002>
       <fake:rdawP10065>Jarvis, Sean, author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1153151947exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1153151947man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1153151947wor"/>
+      <rdaed:P20002>1153151947exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -763,12 +821,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1344453109wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1344453109exp"/>
+      <rdawd:P10002>1344453109wor</rdawd:P10002>
       <fake:rdawP10065>Kaplan, Sefa, 1956- author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1344453109exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1344453109man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1344453109wor"/>
+      <rdaed:P20002>1344453109exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -776,6 +836,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1344453109man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1344453109exp"/>
+      <rdamd:P30004>(ISBN) 9786057489470</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 6057489470</rdamd:P30004>
       <rdamd:P30134>Oğuz Atay sözlüğü /</rdamd:P30134>
       <rdamd:P30156>Oğuz Atay sözlüğü</rdamd:P30156>
       <rdamd:P30105>Sefa Kaplan</rdamd:P30105>
@@ -793,12 +855,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1342460974wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1342460974exp"/>
+      <rdawd:P10002>1342460974wor</rdawd:P10002>
       <fake:rdawP10065>880-01 Kayvān, Farrukhʹmihr, 1958 or 1959- author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1342460974exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1342460974man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1342460974wor"/>
+      <rdaed:P20002>1342460974exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -806,6 +870,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1342460974man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1342460974exp"/>
+      <rdamd:P30004>(ISBN) 9789641919230</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 9641919237</rdamd:P30004>
       <rdamd:P30134>Pāyīz-i sarzamīn-i mā</rdamd:P30134>
       <rdamd:P30156>Pāyīz-i sarzamīn-i mā</rdamd:P30156>
       <rdamd:P30142>majmūʻah-i shiʻr</rdamd:P30142>
@@ -823,12 +889,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1164340179wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1164340179exp"/>
+      <rdawd:P10002>1164340179wor</rdawd:P10002>
       <fake:rdawP10065>880-01 Kim, Ŏk, 1896- author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1164340179exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1164340179man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1164340179wor"/>
+      <rdaed:P20002>1164340179exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -836,6 +904,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1164340179man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1164340179exp"/>
+      <rdamd:P30004>(ISBN) 9788908063150</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 8908063153</rdamd:P30004>
       <rdamd:P30134>Kim Ŏk sijip /</rdamd:P30134>
       <rdamd:P30156>Kim Ŏk sijip</rdamd:P30156>
       <rdamd:P30105>Kim Ŏk oe chiŭm ; Kim Yong-jik haesŏl</rdamd:P30105>
@@ -852,12 +922,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1342803276wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1342803276exp"/>
+      <rdawd:P10002>1342803276wor</rdawd:P10002>
       <fake:rdawP10065>880-01 Kishāvarz, Muḥammad, 1958 or 1959- author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1342803276exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1342803276man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1342803276wor"/>
+      <rdaed:P20002>1342803276exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -865,6 +937,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1342803276man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1342803276exp"/>
+      <rdamd:P30004>(ISBN) 9786220108535</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 6220108531</rdamd:P30004>
       <rdamd:P30134>Kulāhī kih pas-i maʻrakah mānd</rdamd:P30134>
       <rdamd:P30156>Kulāhī kih pas-i maʻrakah mānd</rdamd:P30156>
       <rdamd:P30142>majmūʻah-i dāstān</rdamd:P30142>
@@ -883,12 +957,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1347279765wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1347279765exp"/>
+      <rdawd:P10002>1347279765wor</rdawd:P10002>
       <fake:rdawP10065>Lazar, Maria, 1895-1948, author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1347279765exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1347279765man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1347279765wor"/>
+      <rdaed:P20002>1347279765exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -896,6 +972,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1347279765man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1347279765exp"/>
+      <rdamd:P30004>(ISBN) 9783903244061</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 3903244066</rdamd:P30004>
       <rdamd:P30134>Die Eingeborenen von Maria Blut</rdamd:P30134>
       <rdamd:P30156>Die Eingeborenen von Maria Blut</rdamd:P30156>
       <rdamd:P30142>Roman</rdamd:P30142>
@@ -915,12 +993,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1261648319wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1261648319exp"/>
+      <rdawd:P10002>1261648319wor</rdawd:P10002>
       <fake:rdawP10065>Marcus, Dylan, author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1261648319exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1261648319man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1261648319wor"/>
+      <rdaed:P20002>1261648319exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -946,12 +1026,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1291651698wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1291651698exp"/>
+      <rdawd:P10002>1291651698wor</rdawd:P10002>
       <fake:rdawP10065>Mavrot, Fabien, author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1291651698exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1291651698man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1291651698wor"/>
+      <rdaed:P20002>1291651698exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -977,12 +1059,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1196834730wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1196834730exp"/>
+      <rdawd:P10002>1196834730wor</rdawd:P10002>
       <fake:rdawP10065>Mulkern, Dorothy, author. http://www.wikidata.org/entity/Q106002796</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1196834730exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1196834730man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1196834730wor"/>
+      <rdaed:P20002>1196834730exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -1008,12 +1092,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1347381453wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1347381453exp"/>
+      <rdawd:P10002>1347381453wor</rdawd:P10002>
       <fake:rdawP10065>Mumcu, Uğur, author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1347381453exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1347381453man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1347381453wor"/>
+      <rdaed:P20002>1347381453exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -1021,6 +1107,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1347381453man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1347381453exp"/>
+      <rdamd:P30004>(ISBN) 9786054274451</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 6054274457</rdamd:P30004>
       <rdamd:P30134>Katiller demokrasisi, hırsızlar düzeni</rdamd:P30134>
       <rdamd:P30156>Katiller demokrasisi, hırsızlar düzeni</rdamd:P30156>
       <rdamd:P30142>Ağustos 1962-Kasım 1971 yazıları</rdamd:P30142>
@@ -1038,12 +1126,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1299233658wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1299233658exp"/>
+      <rdawd:P10002>1299233658wor</rdawd:P10002>
       <fake:rdawP10065>880-01 Myrzaliev, Qadyr, 1935- author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1299233658exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1299233658man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1299233658wor"/>
+      <rdaed:P20002>1299233658exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -1051,6 +1141,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1299233658man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1299233658exp"/>
+      <rdamd:P30004>(ISBN) 9786017468644</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 6017468642</rdamd:P30004>
       <rdamd:P30134>Iīrīm</rdamd:P30134>
       <rdamd:P30156>Iīrīm</rdamd:P30156>
       <rdamd:P30142>ėsse</rdamd:P30142>
@@ -1067,12 +1159,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1175597850wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1175597850exp"/>
+      <rdawd:P10002>1175597850wor</rdawd:P10002>
       <fake:rdawP10065>NACO (Program), author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1175597850exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1175597850man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1175597850wor"/>
+      <rdaed:P20002>1175597850exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -1096,18 +1190,22 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1259448624wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1259448624exp"/>
+      <rdawd:P10002>1259448624wor</rdawd:P10002>
       <fake:rdawP10065>880-01 Nakahodo, Masanori, author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1259448624exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1259448624man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1259448624wor"/>
+      <rdaed:P20002>1259448624exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1259448624man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1259448624exp"/>
+      <rdamd:P30004>(ISBN) 9784899823995</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 4899823991</rdamd:P30004>
       <rdamd:P30134>Okinawa bungaku no miryoku</rdamd:P30134>
       <rdamd:P30156>Okinawa bungaku no miryoku</rdamd:P30156>
       <rdamd:P30142>Okinawa no sakka to sono sakuhin o yomu</rdamd:P30142>
@@ -1124,12 +1222,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1336053697wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1336053697exp"/>
+      <rdawd:P10002>1336053697wor</rdawd:P10002>
       <fake:rdawP10065>Oskolkoff, Ruth Ann, author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1336053697exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1336053697man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1336053697wor"/>
+      <rdaed:P20002>1336053697exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -1137,6 +1237,7 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1336053697man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1336053697exp"/>
+      <rdamd:P30004>(ISBN) 9798795533872</rdamd:P30004>
       <rdamd:P30134>The bones of the poor /</rdamd:P30134>
       <rdamd:P30156>The bones of the poor</rdamd:P30156>
       <rdamd:P30105>poems by Ruth Ann Oskolkof</rdamd:P30105>
@@ -1154,12 +1255,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1343101818wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1343101818exp"/>
+      <rdawd:P10002>1343101818wor</rdawd:P10002>
       <fake:rdawP10065>880-01 Qanbarī, Dāvūd, 1977 or 1978- author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1343101818exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1343101818man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1343101818wor"/>
+      <rdaed:P20002>1343101818exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -1167,6 +1270,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1343101818man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1343101818exp"/>
+      <rdamd:P30004>(ISBN) 9786222019662</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 6222019668</rdamd:P30004>
       <rdamd:P30134>Mūnālīzā-yi ghārnishīn /</rdamd:P30134>
       <rdamd:P30156>Mūnālīzā-yi ghārnishīn</rdamd:P30156>
       <rdamd:P30105>Dāvūd Qanbarī</rdamd:P30105>
@@ -1184,12 +1289,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1226504970wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1226504970exp"/>
+      <rdawd:P10002>1226504970wor</rdawd:P10002>
       <fake:rdawP10065>Rose, Bob (Biology teacher), author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1226504970exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1226504970man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1226504970wor"/>
+      <rdaed:P20002>1226504970exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -1214,12 +1321,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1346432189wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1346432189exp"/>
+      <rdawd:P10002>1346432189wor</rdawd:P10002>
       <fake:rdawP10065>880-01 Safarli, Ėlʹchin, author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1346432189exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1346432189man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1346432189wor"/>
+      <rdaed:P20002>1346432189exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -1227,6 +1336,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1346432189man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1346432189exp"/>
+      <rdamd:P30004>(ISBN) 9785170991846</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 5170991843</rdamd:P30004>
       <rdamd:P30134>Rasskazhi mne o more</rdamd:P30134>
       <rdamd:P30156>Rasskazhi mne o more</rdamd:P30156>
       <rdamd:P30142>istorii︠a︡ o tom, chto poroi︠u︡ nado obʺezditʹ polmira, chtoby osoznatʹ : vse vazhnoe i t︠s︡ennoe zhdet tebi︠a︡ doma : roman</rdamd:P30142>
@@ -1244,12 +1355,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1345077169wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1345077169exp"/>
+      <rdawd:P10002>1345077169wor</rdawd:P10002>
       <fake:rdawP10065>Şahin, Göktüğ, author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1345077169exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1345077169man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1345077169wor"/>
+      <rdaed:P20002>1345077169exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -1257,6 +1370,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1345077169man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1345077169exp"/>
+      <rdamd:P30004>(ISBN) 9786257358958</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 6257358957</rdamd:P30004>
       <rdamd:P30134>Natural gas economics in the scope of long-term contracts of Turkey /</rdamd:P30134>
       <rdamd:P30156>Natural gas economics in the scope of long-term contracts of Turkey</rdamd:P30156>
       <rdamd:P30105>Dr. Göktüğ Şahin</rdamd:P30105>
@@ -1273,12 +1388,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1153152243wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1153152243exp"/>
+      <rdawd:P10002>1153152243wor</rdawd:P10002>
       <fake:rdawP10065>Seo, Miran, 1982- author. http://www.wikidata.org/entity/Q108156710</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1153152243exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1153152243man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1153152243wor"/>
+      <rdaed:P20002>1153152243exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -1304,12 +1421,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1288024190wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1288024190exp"/>
+      <rdawd:P10002>1288024190wor</rdawd:P10002>
       <fake:rdawP10065>Strautmann, Eva, 1963- artist. art</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1288024190exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1288024190man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1288024190wor"/>
+      <rdaed:P20002>1288024190exp</rdaed:P20002>
       <rdaed:P20001>still image</rdaed:P20001>
       <rdaed:P20001>sti</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -1336,12 +1455,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1292944532wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1292944532exp"/>
+      <rdawd:P10002>1292944532wor</rdawd:P10002>
       <fake:rdawP10065>Strubel, Antje Rávik, 1974- author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1292944532exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1292944532man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1292944532wor"/>
+      <rdaed:P20002>1292944532exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -1349,6 +1470,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1292944532man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1292944532exp"/>
+      <rdamd:P30004>(ISBN) 9783596037148</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 359603714X</rdamd:P30004>
       <rdamd:P30134>Unter Schnee</rdamd:P30134>
       <rdamd:P30156>Unter Schnee</rdamd:P30156>
       <rdamd:P30142>Roman</rdamd:P30142>
@@ -1366,11 +1489,13 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1257555338wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1257555338exp"/>
+      <rdawd:P10002>1257555338wor</rdawd:P10002>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1257555338exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1257555338man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1257555338wor"/>
+      <rdaed:P20002>1257555338exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -1378,6 +1503,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1257555338man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1257555338exp"/>
+      <rdamd:P30004>(ISBN) 9781736148013 (hardcover)</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 173614801X (hardcover)</rdamd:P30004>
       <rdamd:P30134>Telling stories</rdamd:P30134>
       <rdamd:P30156>Telling stories</rdamd:P30156>
       <rdamd:P30142>on culturally responsive artificial intelligence : 19 stories</rdamd:P30142>
@@ -1400,12 +1527,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1144406424wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1144406424exp"/>
+      <rdawd:P10002>1144406424wor</rdawd:P10002>
       <fake:rdawP10065>Truong, Nhan L., author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1144406424exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1144406424man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1144406424wor"/>
+      <rdaed:P20002>1144406424exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -1413,6 +1542,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1144406424man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1144406424exp"/>
+      <rdamd:P30004>(ISBN) 9781934092309</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 1934092304</rdamd:P30004>
       <rdamd:P30134>Asian American and Pacific Islander LGBTQ youth in U.S. schools /</rdamd:P30134>
       <rdamd:P30156>Asian American and Pacific Islander LGBTQ youth in U.S. schools</rdamd:P30156>
       <rdamd:P30105>by Nhan L. Truong, Ph.D., Adrian D. Zongrone, M.P.H., Joseph G. Kosciw, Ph.D</rdamd:P30105>
@@ -1432,12 +1563,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1145038627wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1145038627exp"/>
+      <rdawd:P10002>1145038627wor</rdawd:P10002>
       <fake:rdawP10065>Truong, Nhan L., author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1145038627exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1145038627man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1145038627wor"/>
+      <rdaed:P20002>1145038627exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -1445,6 +1578,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1145038627man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1145038627exp"/>
+      <rdamd:P30004>(ISBN) 9781934092293</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 1934092290</rdamd:P30004>
       <rdamd:P30134>Black LGBTQ youth in U.S. schools /</rdamd:P30134>
       <rdamd:P30156>Black LGBTQ youth in U.S. schools</rdamd:P30156>
       <rdamd:P30105>by Nhan L. Truong, Ph.D., Adrian D. Zongrone, M.P.H., Joseph G. Kosciw, Ph.D</rdamd:P30105>
@@ -1464,12 +1599,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1280150230wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1280150230exp"/>
+      <rdawd:P10002>1280150230wor</rdawd:P10002>
       <fake:rdawP10065>University of Washington. Libraries, author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1280150230exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1280150230man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1280150230wor"/>
+      <rdaed:P20002>1280150230exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -1493,12 +1630,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1291207240wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1291207240exp"/>
+      <rdawd:P10002>1291207240wor</rdawd:P10002>
       <fake:rdawP10065>880-01 Uzbekov, Dosmir Satarovich, author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1291207240exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1291207240man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1291207240wor"/>
+      <rdaed:P20002>1291207240exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -1506,6 +1645,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1291207240man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1291207240exp"/>
+      <rdamd:P30004>(ISBN) 9789967197497 (paperback)</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 9967197498 (paperback)</rdamd:P30004>
       <rdamd:P30134>Inostrannye razvedki v sobytii︠a︡kh 1916 goda v Turkestane /</rdamd:P30134>
       <rdamd:P30156>Inostrannye razvedki v sobytii︠a︡kh 1916 goda v Turkestane</rdamd:P30156>
       <rdamd:P30105>Dosmir Uzbekov, Murat Sui︠u︡nbaev</rdamd:P30105>
@@ -1523,12 +1664,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1192544354wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1192544354exp"/>
+      <rdawd:P10002>1192544354wor</rdawd:P10002>
       <fake:rdawP10065>Velasquez, Catalina, 1988- author. http://www.wikidata.org/entity/Q106762380</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1192544354exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1192544354man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1192544354wor"/>
+      <rdaed:P20002>1192544354exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -1554,12 +1697,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1193561426wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1193561426exp"/>
+      <rdawd:P10002>1193561426wor</rdawd:P10002>
       <fake:rdawP10065>Yin, Shuo, 1995- author. http://www.wikidata.org/entity/Q106759244</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1193561426exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1193561426man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1193561426wor"/>
+      <rdaed:P20002>1193561426exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -1585,12 +1730,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1138995641wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1138995641exp"/>
+      <rdawd:P10002>1138995641wor</rdawd:P10002>
       <fake:rdawP10065>Zapata, Michael, author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1138995641exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1138995641man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1138995641wor"/>
+      <rdaed:P20002>1138995641exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -1598,6 +1745,10 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1138995641man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1138995641exp"/>
+      <rdamd:P30004>(Canceled/invalid ISBN) 9781335010124 (hardcover)</rdamd:P30004>
+      <rdamd:P30004>(Canceled/invalid ISBN) 1335010122 (hardcover)</rdamd:P30004>
+      <rdamd:P30004>(Canceled/invalid ISBN) 9781488055737 (Ebook)</rdamd:P30004>
+      <rdamd:P30004>(Canceled/invalid ISBN) 1488055734 (Ebook)</rdamd:P30004>
       <rdamd:P30134>The lost book of Adana Moreau</rdamd:P30134>
       <rdamd:P30156>The lost book of Adana Moreau</rdamd:P30156>
       <rdamd:P30142>a novel</rdamd:P30142>
@@ -1615,12 +1766,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1342055674wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1342055674exp"/>
+      <rdawd:P10002>1342055674wor</rdawd:P10002>
       <fake:rdawP10065>880-01 Zāriʻ, Mūnā, 1990 or 1991- author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1342055674exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1342055674man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1342055674wor"/>
+      <rdaed:P20002>1342055674exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -1628,6 +1781,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1342055674man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1342055674exp"/>
+      <rdamd:P30004>(ISBN) 9786220109112</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 6220109112</rdamd:P30004>
       <rdamd:P30134>Īn jā bidūn-i mard /</rdamd:P30134>
       <rdamd:P30156>Īn jā bidūn-i mard</rdamd:P30156>
       <rdamd:P30105>Mūnā Zāriʻ</rdamd:P30105>
@@ -1645,12 +1800,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1144936404wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1144936404exp"/>
+      <rdawd:P10002>1144936404wor</rdawd:P10002>
       <fake:rdawP10065>Zongrone, Adrian D., author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1144936404exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1144936404man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1144936404wor"/>
+      <rdaed:P20002>1144936404exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -1658,6 +1815,8 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1144936404man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1144936404exp"/>
+      <rdamd:P30004>(ISBN) 9781934092316</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 1934092312</rdamd:P30004>
       <rdamd:P30134>Latinx LGBTQ youth in U.S. schools /</rdamd:P30134>
       <rdamd:P30156>Latinx LGBTQ youth in U.S. schools</rdamd:P30156>
       <rdamd:P30105>by Adrian D. Zongrone, M.P.H., Nhan L. Truong, Ph.D., Joseph G. Kosciw, Ph.D</rdamd:P30105>
@@ -1677,12 +1836,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1145068737wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/1145068737exp"/>
+      <rdawd:P10002>1145068737wor</rdawd:P10002>
       <fake:rdawP10065>Zongrone, Adrian D., author.</fake:rdawP10065>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/1145068737exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1145068737man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1145068737wor"/>
+      <rdaed:P20002>1145068737exp</rdaed:P20002>
       <rdaed:P20001>text</rdaed:P20001>
       <rdaed:P20001>txt</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -1690,6 +1851,10 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/1145068737man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1145068737exp"/>
+      <rdamd:P30004>(ISBN) 9781934092323</rdamd:P30004>
+      <rdamd:P30004>(ISBN) 1934092320</rdamd:P30004>
+      <rdamd:P30004>(Canceled/invalid ISBN) 9781934092309</rdamd:P30004>
+      <rdamd:P30004>(Canceled/invalid ISBN) 1934092304</rdamd:P30004>
       <rdamd:P30134>Native American, American Indian, and Alaska Native LGBTQ youth in U.S. schools /</rdamd:P30134>
       <rdamd:P30156>Native American, American Indian, and Alaska Native LGBTQ youth in U.S. schools</rdamd:P30156>
       <rdamd:P30105>by Adrian D. Zongrone, M.P.H., Nhan L. Truong, Ph.D., Joseph G. Kosciw, Ph.D</rdamd:P30105>
