@@ -83,14 +83,8 @@
         </rdf:Description>
         <!-- *****ITEMS***** -->
         <xsl:apply-templates select="*" mode="ite">
-            <!-- Note that the param below has same name as variable at top of template.
-                 This will be subject to precedence rules.
-                 TG believes: the apply-templates/with-param declaration gets highest presedence.
-                 Consequently this should work.
-                 However, it's recommended we change the param name.-->
             <xsl:with-param name="baseIRI" select="$baseIRI"/>
-            <!-- TG: do we need the param below? -->
-            <xsl:with-param name="almaID" select="../marc:controlfield[@tag='001']"/>
+            <xsl:with-param name="controlNumber" select="../marc:controlfield[@tag='001']"/>
         </xsl:apply-templates>
     </xsl:template>
 </xsl:stylesheet>

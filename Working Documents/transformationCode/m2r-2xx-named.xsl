@@ -18,7 +18,7 @@
         <xsl:choose>
             <xsl:when test="marc:subfield[@code='a'] and (substring(preceding-sibling::marc:leader,19,1)='i' or substring(preceding-sibling::marc:leader,19,1)='a')">
                 <rdamd:P30134>
-                    <xsl:value-of select="replace(marc:subfield[@code='a'], '\s*[:]$', '')"/>
+                    <xsl:value-of select="replace(marc:subfield[@code='a'], '\s*[:/]$', '')"/>
                     <xsl:for-each select="marc:subfield[@code='n'] | marc:subfield[@code='p'] | marc:subfield[@code='s']">
                         <xsl:if test="not(preceding-sibling::marc:subfield[@code='b'])">
                             <xsl:text> </xsl:text>

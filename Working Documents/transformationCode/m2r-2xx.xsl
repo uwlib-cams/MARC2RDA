@@ -17,7 +17,8 @@
     <xsl:include href="m2r-2xx-named.xsl"/>
     <xsl:template match="marc:datafield[@tag = '245']" mode="wor"/>
     <xsl:template match="marc:datafield[@tag = '245']" mode="man">
-        <!-- subfields not coded: $6 $7 $8 -->
+        <!-- subfields not coded: $6.codeASAP , $7.doNotCode.pendingDiscussion, $8.doNotCode ("We will not map $8 until a use case is provided. 2022-07-14").
+        -->
         <xsl:call-template name="F245-xx-anps"/>
         <xsl:call-template name="F245-xx-a"/>
         <xsl:call-template name="F245-xx-b"/>
@@ -27,8 +28,6 @@
         <xsl:call-template name="F245-xx-k"/>
     </xsl:template>
     <xsl:template match="marc:datafield[@tag = '264']" mode="man">
-        <!-- subfields not coded: $3, $6, $7 $8.
-        -->
         <xsl:choose>
             <xsl:when test="@ind2 = '0'">
                 <rdamd:P30110>
