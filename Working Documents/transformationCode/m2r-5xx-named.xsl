@@ -20,16 +20,24 @@
     xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
     xmlns:fake="http://fakePropertiesForDemo" exclude-result-prefixes="marc ex" version="3.0">
     <xsl:template name="F561-xx-a">
-        <xsl:value-of select="marc:subfield[@code = 'a']"/>
-        <xsl:if test="marc:subfield[@code = '3']">
-            <xsl:text> (Applies to: </xsl:text>
-            <xsl:value-of select="marc:subfield[@code = '3']"/>
-            <xsl:text>)</xsl:text>
+        <xsl:if test="marc:subfield[@code = '6']">
+            <xsl:variable name="occNum" select="substring(marc:subfield[@code = '6'], 5, 6)"/>
+            <xsl:for-each
+                select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 5, 6) = $occNum]">
+                <rdaid:P40026>
+                    <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                    <xsl:if test="marc:subfield[@code = '3']">
+                        <xsl:text> (Applies to: </xsl:text>
+                        <xsl:value-of select="marc:subfield[@code = '3']"/>
+                        <xsl:text>)</xsl:text>
+                    </xsl:if>
+                </rdaid:P40026>
+            </xsl:for-each>
         </xsl:if>
     </xsl:template>
     <xsl:template name="F561-0x-a" expand-text="yes">
-        <xsl:param name="baseIRI"></xsl:param>
-        <xsl:param name="genID"></xsl:param>
+        <xsl:param name="baseIRI"/>
+        <xsl:param name="genID"/>
         <rdf:Description rdf:about="{concat('http://marc2rda.edu/fake/MetaWor/',$genID,'1')}">
             <!--Does not meet min description of a work; needs to be linked to a metadata exp/man-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -53,9 +61,10 @@
         </xsl:if>
     </xsl:template>
     <xsl:template name="F561-0x-u" expand-text="yes">
-        <xsl:param name="baseIRI"></xsl:param>
-        <xsl:param name="genID"></xsl:param>
-        <rdf:Description rdf:about="{concat('http://marc2rda.edu/fake/MetaWor/',$genID,position()+1)}">
+        <xsl:param name="baseIRI"/>
+        <xsl:param name="genID"/>
+        <rdf:Description
+            rdf:about="{concat('http://marc2rda.edu/fake/MetaWor/',$genID,position()+1)}">
             <!--Does not meet min description of a work; needs to be linked to a metadata exp/man-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
             <rdawd:P10002>{concat('MetaWor/',$genID,position()+1)}</rdawd:P10002>

@@ -23,7 +23,9 @@
     <xsl:variable name="collBase">http://marc2rda.edu/fake/colMan/</xsl:variable>
     <xsl:variable name="lookupDoc" select="document('output/$5-preprocessedRDA.xml')"/>
     <xsl:key name="normCode" match="rdf:Description[rdaad:P50006]" use="rdaad:P50006"/>
-    <xsl:template match="marc:datafield[@tag = '500']" mode="man">
+    <xsl:template
+        match="marc:datafield[@tag = '500'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '500']"
+        mode="man">
         <xsl:choose>
             <xsl:when test="marc:subfield[@code = '3']">
                 <rdamd:P30137>
@@ -49,7 +51,9 @@
             </xsl:when>
         </xsl:choose>
     </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '500'][marc:subfield[@code = '5']]" mode="ite" expand-text="yes">
+    <xsl:template
+        match="marc:datafield[@tag = '500'][marc:subfield[@code = '5']] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '504'][marc:subfield[@code = '5']]"
+        mode="ite" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="controlNumber"/>
         <xsl:if test="not(marc:subfield[@code = '3'])">
@@ -70,7 +74,9 @@
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '504']" mode="man">
+    <xsl:template
+        match="marc:datafield[@tag = '504'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '504']"
+        mode="man">
         <rdamd:P30455>
             <xsl:value-of select="marc:subfield[@code = 'a']"/>
             <xsl:if test="marc:subfield[@code = 'b']">
@@ -79,7 +85,9 @@
             </xsl:if>
         </rdamd:P30455>
     </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '522']" mode="wor">
+    <xsl:template
+        match="marc:datafield[@tag = '522'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '522']"
+        mode="wor">
         <rdawd:P10216>
             <xsl:value-of select="concat('Geographic coverage: ', marc:subfield[@code = 'a'])"/>
         </rdawd:P10216>
@@ -98,9 +106,7 @@
                     rdf:resource="{$collBase}{$lookupDoc/key('normCode',$code5)/rdaad:P50006[@rdf:datatype='http://id.loc.gov/datatypes/orgs/normalized']}"
                 />
             </xsl:if>
-            <rdaid:P40026>
-                <xsl:call-template name="F561-xx-a"/>
-            </rdaid:P40026>
+            <xsl:call-template name="F561-xx-a"/>
             <xsl:for-each select="marc:subfield[@code = 'u']">
                 <rdaid:P40026>
                     <xsl:call-template name="F561-xx-u"/>
