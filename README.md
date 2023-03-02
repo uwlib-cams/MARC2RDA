@@ -11,7 +11,7 @@ This is a project of the Metadata and Cataloging Initiatives Unit of the Catalog
 -Gordon Dunsire [GordonDunsire](https://github.com/GordonDunsire), Metadata Consultant, LRM/RDA/RDF<br>
 -Cate Gerhart [CatalogerCate](https://github.com/CatalogerCate), Mapping Consultant, MARC21<br>
 -Theo Gerontakos [gerontakos](https://github.com/gerontakos), Mapping Contributor, Conversion Contributor, Project Supervisor<br>
--Ebe Kartus, Mapping Contributor<br>
+-Ebe Kartus [corialanus](https://github.com/corialanus), Mapping Contributor<br>
 -Jian Lee [JianPLee](https://github.com/JianPLee), Mapping Contributor<br>
 -Junghae Lee [junghaelee](https://github.com/junghaelee), Mapping Contributor<br>
 -Zhuo Pan [pan-zhuo](https://github.com/pan-zhuo), Mapping Contributor, Conversion Contributor<br>
@@ -20,4 +20,4 @@ This is a project of the Metadata and Cataloging Initiatives Unit of the Catalog
 -Crystal Yragui (Clements) [CECSpecialistI](https://github.com/CECSpecialistI), Mapping Contributor, Project Manager<br>
 -Sofia Zapounidou [szapoun](https://github.com/szapoun), Mapping Contributor<br>
 ## Past contributors
--Melissa Morgan, Mapping Contributor
+-Melissa Morgan [mcm104](https://github.com/mcm104), Mapping Contributor, Metadata Consultant
