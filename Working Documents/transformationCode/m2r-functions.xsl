@@ -50,5 +50,50 @@
             </xsl:choose>
         </xsl:for-each>
     </xsl:function>
-    
+    <!-- Proposal: Separate functions for RDA entities and concepts -->
+    <xsl:function name="uwf:conceptTest" expand-text="yes">
+        <xsl:param name="subfield"/>
+        <xsl:param name="property"/>
+        <xsl:variable name="ns-wemi">
+            <xsl:choose>
+                <xsl:when test="starts-with($property, 'P10')">rdaw</xsl:when>
+                <xsl:when test="starts-with($property, 'P20')">rdae</xsl:when>
+                <xsl:when test="starts-with($property, 'P30')">rdam</xsl:when>
+                <xsl:when test="starts-with($property, 'P40')">rdai</xsl:when>
+                <xsl:otherwise>namespaceError</xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:for-each select="$subfield">
+            <xsl:choose>
+                <xsl:when test="contains(., 'http://rdaregistry.info/termList')">
+                    <xsl:sequence>
+                        <xsl:element name="{$ns-wemi || ':' || $property}">
+                            <xsl:attribute name="rdf:resource">{'http://rdaregistry.info/termList'
+                                ||
+                                substring-after(.,'http://rdaregistry.info/termList')}</xsl:attribute>
+                        </xsl:element>
+                    </xsl:sequence>
+                </xsl:when>
+                <xsl:when test="contains(., 'http://id.loc.gov')">
+                    <xsl:sequence>
+                        <xsl:element name="{$ns-wemi || ':' || $property}">
+                            <xsl:attribute name="rdf:resource">{'http://id.loc.gov' ||
+                                substring-after(., 'http://id.loc.gov')}</xsl:attribute>
+                        </xsl:element>
+                    </xsl:sequence>
+                </xsl:when>
+                <xsl:when test="./@code = '1'">
+                    <xsl:element name="{$ns-wemi || ':' || $property}">
+                        <xsl:attribute name="rdf:resource">{.}</xsl:attribute>
+                    </xsl:element>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:sequence>
+                        <!-- TBD: HTML document of unused $0 -->
+                        <xsl:comment>MARC data source at field {../@tag} contains a $0 with a value that is not recognized or is not appropriate for RDA.</xsl:comment>
+                    </xsl:sequence>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:for-each>
+    </xsl:function>
 </xsl:stylesheet>
