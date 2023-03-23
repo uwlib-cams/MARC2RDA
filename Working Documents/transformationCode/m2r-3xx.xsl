@@ -13,7 +13,8 @@
     xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
     xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
     xmlns:fake="http://fakePropertiesForDemo"
-    exclude-result-prefixes="marc ex" version="3.0">
+    xmlns:uwf="http://universityOfWashington/functions"
+    exclude-result-prefixes="marc ex uwf" version="3.0">
     <xsl:include href="m2r-3xx-named.xsl"/>
     <xsl:template match="marc:datafield[@tag = '336']" mode="exp">
         <!-- Accounted for: $a, $b, $2-temporary, $3-partial, $0, $1 -->
@@ -40,5 +41,14 @@
         <!-- Not accounted-for: $h (not mapped), $q (new field), $6, $8 -->
         <!-- Temporary or partial solution for: $2 -->
         <xsl:call-template name="F340-xx-abcdefghijklmnop"/>
+    </xsl:template>
+    <xsl:template
+        match="marc:datafield[@tag = '380'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '380']"
+        mode="wor" expand-text="yes">
+        <!-- TBD: $2(lookup), $3(aggregate), $7 -->
+        <rdawd:P10004>{marc:subfield[@code='a']}</rdawd:P10004>
+        <xsl:copy-of
+            select="uwf:conceptTest(marc:subfield[@code = '0'] | marc:subfield[@code = '1'], 'P10004')"
+        />
     </xsl:template>
 </xsl:stylesheet>
