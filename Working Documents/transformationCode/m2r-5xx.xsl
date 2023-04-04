@@ -18,6 +18,9 @@
     xmlns:rdaa="http://rdaregistry.info/Elements/a/"
     xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
     xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+    xmlns:rdan="http://rdaregistry.info/Elements/n/"
+    xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+    xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
     xmlns:fake="http://fakePropertiesForDemo" exclude-result-prefixes="marc ex" version="3.0">
     <xsl:include href="m2r-5xx-named.xsl"/>
     <xsl:variable name="collBase">http://marc2rda.edu/fake/colMan/</xsl:variable>
@@ -73,6 +76,55 @@
                 </rdf:Description>
             </xsl:for-each>
         </xsl:if>
+    </xsl:template>
+    <xsl:template
+        match="marc:datafield[@tag = '502'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '502']"
+        mode="wor" expand-text="yes">
+        <xsl:if test="marc:subfield[@code = 'a']">
+            <rdawd:P10209>{marc:subfield[@code = 'a']}</rdawd:P10209>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'b']">
+            <rdawd:P10077>{marc:subfield[@code = 'b']}</rdawd:P10077>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'c']">
+            <rdawd:P10006>{marc:subfield[@code = 'c']}</rdawd:P10006>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'd']">
+            <rdawd:P10215>{replace(marc:subfield[@code = 'd'], '\.\s*$', '')}</rdawd:P10215>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'g']">
+            <rdawd:P10209>
+                <xsl:for-each select="marc:subfield[@code = 'g']">
+                    <xsl:value-of select="replace(., '\.\s*$', '')"/>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                </xsl:for-each>
+                <xsl:value-of select="
+                        ' (' || marc:subfield[@code = 'b'] ||
+                        ')--' || marc:subfield[@code = 'c'] || ', ' || replace(marc:subfield[@code = 'd'], '\.\s*$', '') || '.'"
+                />
+            </rdawd:P10209>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template
+        match="marc:datafield[@tag = '502'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '502']"
+        mode="man" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'o']">
+            <rdamo:P30004 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
+        </xsl:for-each>
+    </xsl:template>
+    <xsl:template
+        match="marc:datafield[@tag = '502'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '502']"
+        mode="nom" expand-text="yes">
+        <xsl:param name="baseIRI"/>
+        <xsl:for-each select="marc:subfield[@code = 'o']">
+            <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+                <rdand:P80068>{replace(., '\.\s*$', '')}</rdand:P80068>
+                <rdano:P80048 rdf:resource="{$baseIRI||'man'}"/>
+                <rdand:P80078>Dissertation identifier</rdand:P80078>
+            </rdf:Description>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template
         match="marc:datafield[@tag = '504'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '504']"

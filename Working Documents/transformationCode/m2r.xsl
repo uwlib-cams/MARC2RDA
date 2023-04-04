@@ -22,6 +22,8 @@
     exclude-result-prefixes="marc ex" version="3.0">
     <xsl:output encoding="UTF-8" method="xml" indent="yes"/>
     <xsl:strip-space elements="*"/>
+    <xsl:mode name="ite" on-no-match="deep-skip"/>
+    <xsl:mode name="nom" on-no-match="deep-skip"/>
     <xsl:variable name="base" select="'http://fakeIRI2.edu/'"/>
     <xsl:include href="m2r-0xx.xsl"/>
     <xsl:include href="m2r-1xx.xsl"/>
@@ -54,6 +56,12 @@
             xmlns:rdam="http://rdaregistry.info/Elements/m/"
             xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
             xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+            xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+            xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+            xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+            xmlns:rdan="http://rdaregistry.info/Elements/n/"
+            xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+            xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
             xmlns:ex="http://fakeIRI2.edu/">
             <xsl:apply-templates select="marc:record"/>
         </rdf:RDF>
@@ -85,6 +93,10 @@
         <xsl:apply-templates select="*" mode="ite">
             <xsl:with-param name="baseIRI" select="$baseIRI"/>
             <xsl:with-param name="controlNumber" select="../marc:controlfield[@tag='001']"/>
+        </xsl:apply-templates>
+        <!-- *****NOMENS***** -->
+        <xsl:apply-templates select="*" mode="nom">
+            <xsl:with-param name="baseIRI" select="$baseIRI"/>
         </xsl:apply-templates>
     </xsl:template>
 </xsl:stylesheet>
