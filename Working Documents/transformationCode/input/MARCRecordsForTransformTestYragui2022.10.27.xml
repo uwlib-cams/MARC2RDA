@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
     <marc:record>
-        <marc:leader>02145cam a2200481 i 4500</marc:leader>
+        <marc:leader>02145cam a2200481 c 4500</marc:leader>
         <marc:controlfield tag="001">1191247519</marc:controlfield>
         <marc:controlfield tag="008">200828s2020    ua a     b    000 0bara c</marc:controlfield>
         <marc:controlfield tag="005">20220916063402.7</marc:controlfield>
@@ -50,6 +50,13 @@
             <marc:subfield code="a">Iḥsān ʻAbd al-Qaddūs :</marc:subfield>
             <marc:subfield code="b">maʻārik al-ḥubb wa-al-siyāsah, 1919-1990 /</marc:subfield>
             <marc:subfield code="c">Zaynab ʻAbd al-Razzāq.</marc:subfield>
+            <!-- delete below -->
+            <marc:subfield code="n">number 1.</marc:subfield>
+            <marc:subfield code="p">part 1</marc:subfield>
+            <marc:subfield code="p">part 2.</marc:subfield>
+            <marc:subfield code="s">version 600.</marc:subfield>
+            <marc:subfield code="n">number 2.</marc:subfield>
+            <!-- delete above -->
         </marc:datafield>
         <marc:datafield tag="250" ind1=" " ind2=" ">
             <marc:subfield code="6">880-03</marc:subfield>
