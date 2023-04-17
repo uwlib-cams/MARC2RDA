@@ -14,9 +14,18 @@
     xmlns:rdam="http://rdaregistry.info/Elements/m/"
     xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
     xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+    xmlns:rdai="http://rdaregistry.info/Elements/i/"
+    xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+    xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+    xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+    xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+    xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
     xmlns:fake="http://fakePropertiesForDemo"
     xmlns:uwf="http://universityOfWashington/functions"
     version="3.0">
+    <xsl:variable name="collBase">http://marc2rda.edu/fake/colMan/</xsl:variable>
+    <xsl:variable name="lookupDoc" select="document('lookup/$5-preprocessedRDA.xml')"/>
+    <xsl:key name="normCode" match="rdf:Description[rdaad:P50006]" use="rdaad:P50006"/>
     
     <xsl:function name="uwf:test" expand-text="yes">
         <xsl:param name="subfield"/>
@@ -95,5 +104,12 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:for-each>
+    </xsl:function>
+    
+    <xsl:function name="uwf:S5lookup" expand-text="yes">
+        <xsl:param name="code5"/>
+        <rdaio:P40161
+            rdf:resource="{$collBase}{$lookupDoc/key('normCode',$code5)/rdaad:P50006[@rdf:datatype='http://id.loc.gov/datatypes/orgs/normalized']}"
+        />
     </xsl:function>
 </xsl:stylesheet>

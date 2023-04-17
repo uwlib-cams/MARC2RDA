@@ -19,29 +19,13 @@
     xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
     xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
     xmlns:fake="http://fakePropertiesForDemo" exclude-result-prefixes="marc ex" version="3.0">
-    <xsl:template name="F561-xx-a">
-        <rdaid:P40026>
+    <xsl:template name="F561-xx-a">        
             <xsl:value-of select="marc:subfield[@code = 'a']"/>
             <xsl:if test="marc:subfield[@code = '3']">
                 <xsl:text> (Applies to: </xsl:text>
                 <xsl:value-of select="marc:subfield[@code = '3']"/>
                 <xsl:text>)</xsl:text>
             </xsl:if>
-        </rdaid:P40026>
-        <xsl:if test="marc:subfield[@code = '6']">
-            <xsl:variable name="occNum" select="substring(marc:subfield[@code = '6'], 5, 6)"/>
-            <xsl:for-each
-                select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 5, 6) = $occNum]">
-                <rdaid:P40026>
-                    <xsl:value-of select="marc:subfield[@code = 'a']"/>
-                    <xsl:if test="marc:subfield[@code = '3']">
-                        <xsl:text> (Applies to: </xsl:text>
-                        <xsl:value-of select="marc:subfield[@code = '3']"/>
-                        <xsl:text>)</xsl:text>
-                    </xsl:if>
-                </rdaid:P40026>
-            </xsl:for-each>
-        </xsl:if>
     </xsl:template>
     <xsl:template name="F561-0x-a" expand-text="yes">
         <xsl:param name="baseIRI"/>
