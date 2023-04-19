@@ -21,11 +21,11 @@
     xmlns:rdan="http://rdaregistry.info/Elements/n/"
     xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
     xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
-    xmlns:fake="http://fakePropertiesForDemo" exclude-result-prefixes="marc ex" version="3.0">
+    xmlns:uwf="http://universityOfWashington/functions" xmlns:fake="http://fakePropertiesForDemo"
+    exclude-result-prefixes="marc ex uwf" version="3.0">
     <xsl:include href="m2r-5xx-named.xsl"/>
-    <xsl:variable name="collBase">http://marc2rda.edu/fake/colMan/</xsl:variable>
-    <xsl:variable name="lookupDoc" select="document('lookup/$5-preprocessedRDA.xml')"/>
-    <xsl:key name="normCode" match="rdf:Description[rdaad:P50006]" use="rdaad:P50006"/>
+    <xsl:import href="m2r-functions.xsl"/>
+
     <xsl:template
         match="marc:datafield[@tag = '500'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '500']"
         mode="man">
@@ -69,10 +69,7 @@
                     <rdaid:P40028>
                         <xsl:value-of select="../marc:subfield[@code = 'a']"/>
                     </rdaid:P40028>
-                    <xsl:variable name="code5" select="."/>
-                    <rdaio:P40161
-                        rdf:resource="{$collBase}{$lookupDoc/key('normCode',$code5)/rdaad:P50006[@rdf:datatype='http://id.loc.gov/datatypes/orgs/normalized']}"
-                    />
+                    <xsl:copy-of select="uwf:S5lookup(.)"/>
                 </rdf:Description>
             </xsl:for-each>
         </xsl:if>
@@ -153,12 +150,20 @@
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
             <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
             <xsl:if test="marc:subfield[@code = '5']">
-                <xsl:variable name="code5" select="marc:subfield[@code = '5']"/>
-                <rdaio:P40161
-                    rdf:resource="{$collBase}{$lookupDoc/key('normCode',$code5)/rdaad:P50006[@rdf:datatype='http://id.loc.gov/datatypes/orgs/normalized']}"
-                />
+                <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>
             </xsl:if>
-            <xsl:call-template name="F561-xx-a"/>
+            <rdaid:P40026>
+                <xsl:call-template name="F561-xx-a"/>
+            </rdaid:P40026>
+            <xsl:if test="marc:subfield[@code = '6']">
+                <xsl:variable name="occNum" select="substring(marc:subfield[@code = '6'], 5, 6)"/>
+                <xsl:for-each
+                    select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 5, 6) = $occNum]">
+                    <rdaid:P40026>
+                        <xsl:call-template name="F561-xx-a"/>
+                    </rdaid:P40026>
+                </xsl:for-each>
+            </xsl:if>
             <xsl:for-each select="marc:subfield[@code = 'u']">
                 <rdaid:P40026>
                     <xsl:call-template name="F561-xx-u"/>
@@ -170,6 +175,16 @@
                 <xsl:with-param name="baseIRI" select="$baseIRI"/>
                 <xsl:with-param name="genID" select="$genID"/>
             </xsl:call-template>
+            <xsl:if test="marc:subfield[@code = '6']">
+                <xsl:variable name="occNum" select="substring(marc:subfield[@code = '6'], 5, 6)"/>
+                <xsl:for-each
+                    select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 5, 6) = $occNum]">
+                    <xsl:call-template name="F561-0x-a">
+                        <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                        <xsl:with-param name="genID" select="generate-id()"/>
+                    </xsl:call-template>
+                </xsl:for-each>
+            </xsl:if>
             <xsl:for-each select="marc:subfield[@code = 'u']">
                 <xsl:call-template name="F561-0x-u">
                     <xsl:with-param name="baseIRI" select="$baseIRI"/>
@@ -178,8 +193,51 @@
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
+    <xsl:template
+        match="marc:datafield[@tag = '585'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '585']"
+        mode="man" expand-text="yes">
+        <xsl:if test="not(marc:subfield[@code = '5'])">
+            <rdamd:P30137>
+                <xsl:text>Exhibition note: {marc:subfield[@code = 'a']}</xsl:text>
+                <xsl:if test="marc:subfield[@code = '3']">
+                    <xsl:text> (Applies to: {marc:subfield[@code = '3']})</xsl:text>
+                </xsl:if>
+            </rdamd:P30137>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template match="marc:datafield[@tag = '585']" mode="ite" expand-text="yes">
+        <xsl:param name="baseIRI"/>
+        <xsl:param name="controlNumber"/>
+        <xsl:if test="marc:subfield[@code = '5']">
+            <xsl:variable name="genID" select="generate-id()"/>
+            <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+                <rdaid:P40001>{concat($controlNumber,'ite',$genID)}</rdaid:P40001>
+                <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
+                <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>
+                <rdaid:P40028>
+                    <xsl:text>Exhibition note: {marc:subfield[@code = 'a']}</xsl:text>
+                    <xsl:if test="marc:subfield[@code = '3']">
+                        <xsl:text> (Applies to: {marc:subfield[@code = '3']})</xsl:text>
+                    </xsl:if>
+                </rdaid:P40028>
+                <xsl:if test="marc:subfield[@code = '6']">
+                    <xsl:variable name="occNum" select="substring(marc:subfield[@code = '6'], 5, 6)"/>
+                    <xsl:for-each
+                        select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 5, 6) = $occNum]">
+                        <rdaid:P40028>
+                            <xsl:text>Exhibition note: {marc:subfield[@code = 'a']}</xsl:text>
+                            <xsl:if test="marc:subfield[@code = '3']">
+                                <xsl:text> (Applies to: {marc:subfield[@code = '3']})</xsl:text>
+                            </xsl:if>
+                        </rdaid:P40028>
+                    </xsl:for-each>
+                </xsl:if>
+            </rdf:Description>
+        </xsl:if>
+    </xsl:template>
     <!-- <xsl:template match="*" mode="wor"/>
-    <xsl:template match="*" mode="exp"/>
-    <xsl:template match="*" mode="man"/>
-    <xsl:template match="*" mode=""></xsl:template>-->
+        <xsl:template match="*" mode="exp"/>
+        <xsl:template match="*" mode="man"/>
+        <xsl:template match="*" mode=""></xsl:template>-->
 </xsl:stylesheet>
