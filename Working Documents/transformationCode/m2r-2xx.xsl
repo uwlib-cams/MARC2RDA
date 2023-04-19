@@ -14,11 +14,15 @@
     xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
     xmlns:fake="http://fakePropertiesForDemo" exclude-result-prefixes="marc ex" version="3.0">
     <xsl:include href="m2r-2xx-named.xsl"/>
-    <!-- There are no instructions for processing MARC 245 as either work or expression data -->
+    <xsl:template match="marc:datafield[@tag = '245']" mode="wor" >
+        <xsl:for-each select="marc:subfield[@code='a']">
+            <rdawd:P10088>
+                <xsl:value-of select="replace(.,'\s*[\.,;:/=]','')"/>
+            </rdawd:P10088>
+        </xsl:for-each>
+    </xsl:template>    
     <xsl:template match="marc:datafield[@tag = '245'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '245']" mode="man">
-        <rdamd:P30134>
-            <xsl:call-template name="F245-xx-anps"/>
-        </rdamd:P30134>
+        <xsl:call-template name="F245-xx-anps"/>
         <xsl:call-template name="F245-xx-a"/>
         <xsl:call-template name="F245-xx-b"/>
         <xsl:call-template name="F245-xx-c"/>
