@@ -12,8 +12,7 @@
     xmlns:rdam="http://rdaregistry.info/Elements/m/"
     xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
     xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
-    xmlns:fake="http://fakePropertiesForDemo"
-    xmlns:uwf="http://universityOfWashington/functions"
+    xmlns:fake="http://fakePropertiesForDemo" xmlns:uwf="http://universityOfWashington/functions"
     exclude-result-prefixes="marc ex uwf" version="3.0">
     <xsl:include href="m2r-3xx-named.xsl"/>
     <xsl:template match="marc:datafield[@tag = '336']" mode="exp">
@@ -36,7 +35,7 @@
         <xsl:call-template name="F338-string"/>
         <xsl:call-template name="F338-iri"/>
     </xsl:template>
-    <xsl:template match="marc:datafield[@tag='340']" mode="man">
+    <xsl:template match="marc:datafield[@tag = '340']" mode="man">
         <!-- Accounted-for: $a $b $c $d $e $f $g $i $j $k $l $m $n $o $p $3-->
         <!-- Not accounted-for: $h (not mapped), $q (new field), $6, $8 -->
         <!-- Temporary or partial solution for: $2 -->
@@ -50,5 +49,31 @@
         <xsl:copy-of
             select="uwf:conceptTest(marc:subfield[@code = '0'] | marc:subfield[@code = '1'], 'P10004')"
         />
+    </xsl:template>
+    <xsl:template
+        match="marc:datafield[@tag = '382'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '382']"
+        mode="exp">
+        <xsl:if test="@ind1 = ' ' or @ind1 = '0' or @ind1 = '1'">
+            <xsl:call-template name="F382-xx-a_b_d_p_2-exp"/>
+            <rdaed:P20215>
+                <xsl:call-template name="F382-xx-abdenprstv3"/>
+            </rdaed:P20215>
+            <xsl:copy-of
+                select="uwf:conceptTest(marc:subfield[@code = '0'] | marc:subfield[@code = '1'], 'P20215')"
+            />
+        </xsl:if>
+    </xsl:template>
+    <xsl:template
+        match="marc:datafield[@tag = '382'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '382']"
+        mode="wor">
+        <xsl:if test="@ind1 = '2' or @ind1 = '3'">
+            <xsl:call-template name="F382-xx-a_b_d_p_2-wor"/>
+            <rdawd:P10220>
+                <xsl:call-template name="F382-xx-abdenprstv3"/>
+            </rdawd:P10220>
+            <xsl:copy-of
+                select="uwf:conceptTest(marc:subfield[@code = '0'] | marc:subfield[@code = '1'], 'P10220')"
+            />
+        </xsl:if>
     </xsl:template>
 </xsl:stylesheet>

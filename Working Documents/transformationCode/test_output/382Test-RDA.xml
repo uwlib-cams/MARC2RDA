@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
+         xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/382-test1wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/382-test1exp"/>
+      <rdawd:P10002>382-test1wor</rdawd:P10002>
+      <rdawd:P10220 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">piano</rdawd:P10220>
+      <rdawd:P10220>For piano. Total performers: 2.</rdawd:P10220>
+      <rdaw:P10220 rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015550"/>
+      <!--MARC data source at field 382 contains a $0 with a value that is not recognized or is not appropriate for RDA.-->
+      <rdaw:P10220 rdf:resource="http://www.wikidata.org/wiki/Q5994"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/382-test1exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/382-test1man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/382-test1wor"/>
+      <rdaed:P20002>382-test1exp</rdaed:P20002>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">child's voice</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">piano</rdaed:P20215>
+      <rdaed:P20215>For child's voice; piano. Total performers: 2.</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">soprano voice</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">alto voice</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">tenor voice</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">mixed chorus</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">string orchestra</rdaed:P20215>
+      <rdaed:P20215>For solo soprano voice; solo alto voice; solo tenor voice; mixed chorus [SATB]; string orchestra. Total soloists: 3. Total ensembles: 2.</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">bass trombone</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">flute</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">flute</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">piccolo</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">clarinet</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">bass clarinet</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">horn</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">tuba</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">piano</rdaed:P20215>
+      <rdaed:P20215>For solo bass trombone; flute (2); flute/piccolo; clarinet; bass clarinet; horn (2); tuba; piano. Total performers: 10.</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">speaker</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">trombone</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">bassoon</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">violin</rdaed:P20215>
+      <rdaed:P20215>For speaker; trombone or bassoon; violin. Total performers: 3.</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">piano</rdaed:P20215>
+      <rdaed:P20215>For piano (3) [2 pianos, 6 hands]. Total performers: 3.</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">violin</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">viola</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">cello</rdaed:P20215>
+      <rdaed:P20215>String quartet: For violin (2); viola; cello. Total performers: 4.</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">percussion instrument</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">bongos</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">snare drum</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">guiro</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">cymbal</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">gong</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">timpani</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">cowbell</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">marimba</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">triangle</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">percussion idiophone</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">maraca</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">snare dum</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">percussion idiophone</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">bongos</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">tom-tom</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">chimes</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">piano</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">celesta</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">radio receiver</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">percussion idiophone</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">bass drum</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">chimes</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">toy instrument</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">triangle</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">percussion idiophone</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">bongos</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">tabla</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">timpani</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">chimes</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">percussion idiophone</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">xylophone</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">finger cymbals</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">claves</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">drum</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">cymbal</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">gong</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">bongos</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">tom-tom</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">percussion idiophone</rdaed:P20215>
+      <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums">vibraphone</rdaed:P20215>
+      <rdaed:P20215>For percussion instrument [high hat]/bongos/snare drum/guiro/cymbal/gong/timpani/cowbell/marimba; triangle/percussion idiophone [car coil]/maraca/snare dum/percussion idiophone [brake drums]/bongos/tom-tom/chimes; piano/celesta/radio receiver/percussion idiophone [anvil]/bass drum/chimes/toy instrument [small metal cricket]; triangle/percussion idiophone [carl coil]/bongos/tabla/timpani/chimes/percussion idiophone [brake drums]/xylophone; finger cymbals/claves/drum/cymbal/gong/bongos/tom-tom/percussion idiophone [temple blocks]/vibraphone. Total performers: 5.</rdaed:P20215>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/382-test1man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/382-test1exp"/>
+   </rdf:Description>
+</rdf:RDF>
