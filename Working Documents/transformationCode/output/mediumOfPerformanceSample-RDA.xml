@@ -204,6 +204,10 @@
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/28088962man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/28088962wor"/>
       <rdaed:P20002>28088962exp</rdaed:P20002>
+      <rdaed:P20219 rdf:datatype="xsd:time">00:22:28</rdaed:P20219>
+      <rdaed:P20219 rdf:datatype="xsd:time">00:12:45</rdaed:P20219>
+      <rdaed:P20219 rdf:datatype="xsd:time">00:15:32</rdaed:P20219>
+      <rdaed:P20219 rdf:datatype="xsd:time">00:17:20</rdaed:P20219>
       <rdaed:P20001>performed music</rdaed:P20001>
       <rdaed:P20001>prm</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -268,6 +272,7 @@
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1054014464man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1054014464wor"/>
       <rdaed:P20002>1054014464exp</rdaed:P20002>
+      <rdaed:P20219 rdf:datatype="xsd:time">00:11:00</rdaed:P20219>
       <rdaed:P20001>notated music</rdaed:P20001>
       <rdaed:P20001>ntm</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -313,6 +318,7 @@
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/807983332man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/807983332wor"/>
       <rdaed:P20002>807983332exp</rdaed:P20002>
+      <rdaed:P20219 rdf:datatype="xsd:time">00:19:00</rdaed:P20219>
       <rdaed:P20001>notated music</rdaed:P20001>
       <rdaed:P20001>ntm</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -408,6 +414,7 @@
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/457771332man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/457771332wor"/>
       <rdaed:P20002>457771332exp</rdaed:P20002>
+      <rdaed:P20219 rdf:datatype="xsd:time">00:13:00</rdaed:P20219>
       <rdaed:P20001>notated music</rdaed:P20001>
       <rdaed:P20001>ntm</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -499,6 +506,7 @@
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/1112144880man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/1112144880wor"/>
       <rdaed:P20002>1112144880exp</rdaed:P20002>
+      <rdaed:P20219 rdf:datatype="xsd:time">01:18:26</rdaed:P20219>
       <rdaed:P20001>performed music</rdaed:P20001>
       <rdaed:P20001>prm</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -639,6 +647,8 @@
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/14698923man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/14698923wor"/>
       <rdaed:P20002>14698923exp</rdaed:P20002>
+      <rdaed:P20219 rdf:datatype="xsd:time">00:33:56</rdaed:P20219>
+      <rdaed:P20219 rdf:datatype="xsd:time">00:26:50</rdaed:P20219>
       <rdaed:P20001>performed music</rdaed:P20001>
       <rdaed:P20001>prm</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -674,6 +684,10 @@
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/268925851man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/268925851wor"/>
       <rdaed:P20002>268925851exp</rdaed:P20002>
+      <rdaed:P20219 rdf:datatype="xsd:time">00:15:53</rdaed:P20219>
+      <rdaed:P20219 rdf:datatype="xsd:time">00:22:42</rdaed:P20219>
+      <rdaed:P20219 rdf:datatype="xsd:time">00:19:39</rdaed:P20219>
+      <rdaed:P20219 rdf:datatype="xsd:time">00:12:03</rdaed:P20219>
       <rdaed:P20001>performed music</rdaed:P20001>
       <rdaed:P20001>prm</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->
@@ -720,6 +734,7 @@
       <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/740415man"/>
       <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/740415wor"/>
       <rdaed:P20002>740415exp</rdaed:P20002>
+      <rdaed:P20219 rdf:datatype="xsd:time">00:09:00</rdaed:P20219>
       <rdaed:P20001>notated music</rdaed:P20001>
       <rdaed:P20001>ntm</rdaed:P20001>
       <!--Source of rdaed:P20001 'hasContentType' value is coded 'rdacontent': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.-->

@@ -15,6 +15,12 @@
     xmlns:fake="http://fakePropertiesForDemo" xmlns:uwf="http://universityOfWashington/functions"
     exclude-result-prefixes="marc ex uwf" version="3.0">
     <xsl:include href="m2r-3xx-named.xsl"/>
+    <xsl:template match="marc:datafield[@tag = '306']" mode="exp" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <rdaed:P20219 rdf:datatype="xsd:time"
+                >{replace(.,'([0-9][0-9])([0-9][0-9])([0-9][0-9])','$1:$2:$3')}</rdaed:P20219>
+        </xsl:for-each>
+    </xsl:template>
     <xsl:template match="marc:datafield[@tag = '336']" mode="exp">
         <!-- Accounted for: $a, $b, $2-temporary, $3-partial, $0, $1 -->
         <!--Not accounted for: $2 needs permanent solution, $3 with $0 and $1, $6, $7, $8 -->
