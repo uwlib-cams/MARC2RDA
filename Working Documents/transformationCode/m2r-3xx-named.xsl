@@ -12,9 +12,9 @@
     xmlns:rdam="http://rdaregistry.info/Elements/m/"
     xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
     xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
-    xmlns:fake="http://fakePropertiesForDemo"
+    xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:fake="http://fakePropertiesForDemo"
     xmlns:uwf="http://universityOfWashington/functions"
-    exclude-result-prefixes="marc ex uwf" version="3.0">
+    exclude-result-prefixes="marc ex uwf madsrdf" version="3.0">
     <xsl:include href="m2r-functions.xsl"/>
     <xsl:template name="F336-xx-ab0-string">
         <xsl:for-each select="marc:subfield[@code = 'a']">
@@ -70,7 +70,8 @@
                 </xsl:when>
                 <xsl:when
                     test="not(contains(marc:subfield[@code = '2'], 'rda')) and contains(marc:subfield[@code = '0'], 'http:') and not(marc:subfield[@code = '1'])"
-                    ><!-- do nothing --></xsl:when>               <xsl:otherwise>
+                    ><!-- do nothing --></xsl:when>
+                <xsl:otherwise>
                     <xsl:comment>$2 source not needed as $2 is rda and the $0 or $1 should be the direct value of P20001</xsl:comment>
                 </xsl:otherwise>
             </xsl:choose>
@@ -156,8 +157,8 @@
     </xsl:template>
     <xsl:template name="F340-xx-abcdefghijklmnop">
         <xsl:variable name="sub3" select="marc:subfield[@code = '3']"/>
-        <xsl:variable name="sub0" select="marc:subfield[@code='0']"/>
-        <xsl:variable name="sub1" select="marc:subfield[@code='1']"/>
+        <xsl:variable name="sub0" select="marc:subfield[@code = '0']"/>
+        <xsl:variable name="sub1" select="marc:subfield[@code = '1']"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdamd:P30208>
                 <xsl:value-of select="."/>
@@ -170,8 +171,8 @@
                     <xsl:value-of select="$sub3"/>
                 </rdamd:P30137>
             </xsl:if>
-            <xsl:copy-of select="uwf:test($sub0,'P30208')"/>
-            <xsl:copy-of select="uwf:test($sub1,'P30208')"/>
+            <xsl:copy-of select="uwf:test($sub0, 'P30208')"/>
+            <xsl:copy-of select="uwf:test($sub1, 'P30208')"/>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'b']">
             <rdamd:P30169>
@@ -201,8 +202,8 @@
                     <xsl:value-of select="$sub3"/>
                 </rdamd:P30137>
             </xsl:if>
-            <xsl:copy-of select="uwf:test($sub0,'P30084')"/>
-            <xsl:copy-of select="uwf:test($sub1,'P30084')"/>
+            <xsl:copy-of select="uwf:test($sub0, 'P30084')"/>
+            <xsl:copy-of select="uwf:test($sub1, 'P30084')"/>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'd']">
             <rdamd:P30187>
@@ -216,8 +217,8 @@
                     <xsl:value-of select="$sub3"/>
                 </rdamd:P30137>
             </xsl:if>
-            <xsl:copy-of select="uwf:test($sub0,'P30187')"/>
-            <xsl:copy-of select="uwf:test($sub1,'P30187')"/>
+            <xsl:copy-of select="uwf:test($sub0, 'P30187')"/>
+            <xsl:copy-of select="uwf:test($sub1, 'P30187')"/>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'e']">
             <rdamd:P30186>
@@ -231,8 +232,8 @@
                     <xsl:value-of select="$sub3"/>
                 </rdamd:P30137>
             </xsl:if>
-            <xsl:copy-of select="uwf:test($sub0,'P30186')"/>
-            <xsl:copy-of select="uwf:test($sub1,'P30186')"/>
+            <xsl:copy-of select="uwf:test($sub0, 'P30186')"/>
+            <xsl:copy-of select="uwf:test($sub1, 'P30186')"/>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'f']">
             <rdamd:P30137>
@@ -252,8 +253,8 @@
                     <xsl:value-of select="$sub3"/>
                 </rdamd:P30137>
             </xsl:if>
-            <xsl:copy-of select="uwf:test($sub0,'P30456')"/>
-            <xsl:copy-of select="uwf:test($sub1,'P30456')"/>
+            <xsl:copy-of select="uwf:test($sub0, 'P30456')"/>
+            <xsl:copy-of select="uwf:test($sub1, 'P30456')"/>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'h']">
             <rdamd:P30137>
@@ -285,8 +286,8 @@
                     <xsl:text>" applies to </xsl:text>
                     <xsl:value-of select="$sub3"/>
                 </rdamd:P30137>
-                <xsl:copy-of select="uwf:test($sub0,'P30191')"/>
-                <xsl:copy-of select="uwf:test($sub1,'P30191')"/>
+                <xsl:copy-of select="uwf:test($sub0, 'P30191')"/>
+                <xsl:copy-of select="uwf:test($sub1, 'P30191')"/>
             </xsl:if>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'k']">
@@ -300,8 +301,8 @@
                     <xsl:text>" applies to </xsl:text>
                     <xsl:value-of select="$sub3"/>
                 </rdamd:P30137>
-                <xsl:copy-of select="uwf:test($sub0,'P30155')"/>
-                <xsl:copy-of select="uwf:test($sub1,'P30155')"/>
+                <xsl:copy-of select="uwf:test($sub0, 'P30155')"/>
+                <xsl:copy-of select="uwf:test($sub1, 'P30155')"/>
             </xsl:if>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'l']">
@@ -315,8 +316,8 @@
                     <xsl:text>" applies to </xsl:text>
                     <xsl:value-of select="$sub3"/>
                 </rdamd:P30137>
-                <xsl:copy-of select="uwf:test($sub0,'P30309')"/>
-                <xsl:copy-of select="uwf:test($sub1,'P30309')"/>
+                <xsl:copy-of select="uwf:test($sub0, 'P30309')"/>
+                <xsl:copy-of select="uwf:test($sub1, 'P30309')"/>
             </xsl:if>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'm']">
@@ -331,8 +332,8 @@
                     <xsl:value-of select="$sub3"/>
                 </rdamd:P30137>
             </xsl:if>
-            <xsl:copy-of select="uwf:test($sub0,'P30197')"/>
-            <xsl:copy-of select="uwf:test($sub1,'P30197')"/>
+            <xsl:copy-of select="uwf:test($sub0, 'P30197')"/>
+            <xsl:copy-of select="uwf:test($sub1, 'P30197')"/>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'n']">
             <rdamd:P30199>
@@ -345,8 +346,8 @@
                     <xsl:text>" applies to </xsl:text>
                     <xsl:value-of select="$sub3"/>
                 </rdamd:P30137>
-                <xsl:copy-of select="uwf:test($sub0,'P30199')"/>
-                <xsl:copy-of select="uwf:test($sub1,'P30199')"/>
+                <xsl:copy-of select="uwf:test($sub0, 'P30199')"/>
+                <xsl:copy-of select="uwf:test($sub1, 'P30199')"/>
             </xsl:if>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'o']">
@@ -360,8 +361,8 @@
                     <xsl:text>" applies to </xsl:text>
                     <xsl:value-of select="$sub3"/>
                 </rdamd:P30137>
-                <xsl:copy-of select="uwf:test($sub0,'P30196')"/>
-                <xsl:copy-of select="uwf:test($sub1,'P30196')"/>
+                <xsl:copy-of select="uwf:test($sub0, 'P30196')"/>
+                <xsl:copy-of select="uwf:test($sub1, 'P30196')"/>
             </xsl:if>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'p']">
@@ -375,9 +376,98 @@
                     <xsl:text>" applies to </xsl:text>
                     <xsl:value-of select="$sub3"/>
                 </rdamd:P30137>
-                <xsl:copy-of select="uwf:test($sub0,'P30453')"/>
-                <xsl:copy-of select="uwf:test($sub1,'P30453')"/>
+                <xsl:copy-of select="uwf:test($sub0, 'P30453')"/>
+                <xsl:copy-of select="uwf:test($sub1, 'P30453')"/>
             </xsl:if>
         </xsl:for-each>
+    </xsl:template>
+    <xsl:template name="F382-xx-a_b_d_p_2-exp" expand-text="yes">
+        <xsl:variable name="s2code" select="marc:subfield[@code = '2']"/>
+        <xsl:variable name="musiccodeschemes"
+            select="document('http://id.loc.gov/vocabulary/musiccodeschemes.madsrdf.rdf')"/>
+        <xsl:variable name="sourceiri">
+            <xsl:for-each
+                select="$musiccodeschemes/rdf:RDF/madsrdf:MADSScheme/madsrdf:hasMADSSchemeMember/@rdf:resource">
+                <xsl:if
+                    test="substring-after(., 'http://id.loc.gov/vocabulary/musiccodeschemes/') = $s2code">
+                    <xsl:text>http://id.loc.gov/vocabulary/musiccodeschemes/</xsl:text>
+                    <xsl:value-of select="$s2code"/>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:if test="contains($sourceiri, 'lcmpt')">
+            <xsl:for-each
+                select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'p']">
+                <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums"
+                    >{.}</rdaed:P20215>
+            </xsl:for-each>
+        </xsl:if>
+        <xsl:if test="$sourceiri != '' and not(contains($sourceiri, 'lcmpt'))">
+            <xsl:for-each
+                select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'p']">
+                <rdaed:P20215 rdf:datatype="{$sourceiri}">{.}</rdaed:P20215>
+            </xsl:for-each>
+        </xsl:if>
+        <xsl:if test="$sourceiri = ''">
+            <xsl:for-each
+                select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'p']">
+                <rdaed:P20215>{.}</rdaed:P20215>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template name="F382-xx-abdenprstv3" expand-text="yes">
+        <xsl:if test="marc:subfield[@code = '3']">{marc:subfield[@code = '3']||': '}</xsl:if>
+        <xsl:text>For </xsl:text>
+        <xsl:variable name="delimited">
+            <xsl:for-each
+                select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'e'] | marc:subfield[@code = 'n'] | marc:subfield[@code = 'p'] | marc:subfield[@code = 'r'] | marc:subfield[@code = 's'] | marc:subfield[@code = 't'] | marc:subfield[@code = 'v']">
+                <xsl:if test=".[@code = 'a']">{.||'; '}</xsl:if>
+                <xsl:if test=".[@code = 'n' or @code = 'e']">{'('||.||'); '}</xsl:if>
+                <xsl:if test=".[@code = 'b']">{'solo '||.||'AFTERB '}</xsl:if>
+                <xsl:if test=".[@code = 'd']">{'/'||.||' '}</xsl:if>
+                <xsl:if test=".[@code = 'p']">{'or '||.||' '}</xsl:if>
+                <xsl:if test=".[@code = 'v']">{'['||.||'] '}</xsl:if>
+                <xsl:if test=".[@code = 'r']">{'Total soloists: '||.||'. '}</xsl:if>
+                <xsl:if test=".[@code = 's']">{'Total performers: '||.||'. '}</xsl:if>
+                <xsl:if test=".[@code = 't']">{'Total ensembles: '||.||'. '}</xsl:if>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:value-of
+            select="$delimited => replace(' \([0-9]+\); /', '/') => replace(' \([0-9]+\); or ', ' or ') => replace('Total soloists: 1\.', '') => replace('Total performers: 1\.', '') => replace('Total ensembles: 1\.', '') => replace(' \(0', ' (') => replace(' \(1\);', ';') => replace(';+ \[', ' [') => replace('\] /', ']/') => replace('\] ([a-z])', ']; $1') => replace('; Total ', '. Total ') => replace(' +$', '') => replace('\] Total', ']. Total') => replace(';;', ';') => replace(';\.', '.') => replace('; \(', ' (') => replace(';/', '/') => replace('; or ', ' or ') => replace(';$', '') => replace('AFTERB;', ';') => replace('AFTERB/', '/') => replace('AFTERB or ', ' or ') => replace('AFTERB \[', ' [') => replace('AFTERB', ';') => replace('::', ':')"
+        />
+    </xsl:template>
+    <xsl:template name="F382-xx-a_b_d_p_2-wor" expand-text="yes">
+        <xsl:variable name="s2code" select="marc:subfield[@code = '2']"/>
+        <xsl:variable name="musiccodeschemes"
+            select="document('http://id.loc.gov/vocabulary/musiccodeschemes.madsrdf.rdf')"/>
+        <xsl:variable name="sourceiri">
+            <xsl:for-each
+                select="$musiccodeschemes/rdf:RDF/madsrdf:MADSScheme/madsrdf:hasMADSSchemeMember/@rdf:resource">
+                <xsl:if
+                    test="substring-after(., 'http://id.loc.gov/vocabulary/musiccodeschemes/') = $s2code">
+                    <xsl:text>http://id.loc.gov/vocabulary/musiccodeschemes/</xsl:text>
+                    <xsl:value-of select="$s2code"/>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:if test="contains($sourceiri, 'lcmpt')">
+            <xsl:for-each
+                select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'p']">
+                <rdawd:P10220 rdf:datatype="http://id.loc.gov/authorities/performanceMediums"
+                    >{.}</rdawd:P10220>
+            </xsl:for-each>
+        </xsl:if>
+        <xsl:if test="$sourceiri != '' and not(contains($sourceiri, 'lcmpt'))">
+            <xsl:for-each
+                select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'p']">
+                <rdawd:P10220 rdf:datatype="{$sourceiri}">{.}</rdawd:P10220>
+            </xsl:for-each>
+        </xsl:if>
+        <xsl:if test="$sourceiri = ''">
+            <xsl:for-each
+                select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'p']">
+                <rdawd:P10220>{.}</rdawd:P10220>
+            </xsl:for-each>
+        </xsl:if>
     </xsl:template>
 </xsl:stylesheet>
