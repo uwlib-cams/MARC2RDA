@@ -25,12 +25,14 @@
     exclude-result-prefixes="marc ex uwf" version="3.0">
     <xsl:include href="m2r-5xx-named.xsl"/>
     <xsl:import href="m2r-functions.xsl"/>
+    <xsl:import href="getmarc.xsl"/>
 
     <xsl:template
         match="marc:datafield[@tag = '500'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '500']"
         mode="man">
         <xsl:choose>
             <xsl:when test="marc:subfield[@code = '3']">
+                <xsl:call-template name="getmarc"/>
                 <rdamd:P30137>
                     <xsl:value-of select="marc:subfield[@code = 'a']"/>
                     <xsl:text> (Applies to: </xsl:text>
@@ -48,6 +50,7 @@
                 </rdamd:P30137>
             </xsl:when>
             <xsl:when test="not(marc:subfield[@code = '3']) and not(marc:subfield[@code = '5'])">
+                <xsl:call-template name="getmarc"/>
                 <rdamd:P30137>
                     <xsl:value-of select="marc:subfield[@code = 'a']"/>
                 </rdamd:P30137>
@@ -59,6 +62,7 @@
         mode="ite" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="controlNumber"/>
+        <xsl:call-template name="getmarc"/>
         <xsl:if test="not(marc:subfield[@code = '3'])">
             <xsl:for-each select="marc:subfield[@code = '5']">
                 <xsl:variable name="genID" select="generate-id()"/>
@@ -77,6 +81,7 @@
     <xsl:template
         match="marc:datafield[@tag = '502'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '502']"
         mode="wor" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
         <xsl:if test="marc:subfield[@code = 'a']">
             <rdawd:P10209>{marc:subfield[@code = 'a']}</rdawd:P10209>
         </xsl:if>
@@ -126,6 +131,7 @@
     <xsl:template
         match="marc:datafield[@tag = '504'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '504']"
         mode="man">
+        <xsl:call-template name="getmarc"/>
         <rdamd:P30455>
             <xsl:value-of select="marc:subfield[@code = 'a']"/>
             <xsl:if test="marc:subfield[@code = 'b']">
@@ -137,6 +143,7 @@
     <xsl:template
         match="marc:datafield[@tag = '522'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '522']"
         mode="wor">
+        <xsl:call-template name="getmarc"/>
         <rdawd:P10216>
             <xsl:value-of select="concat('Geographic coverage: ', marc:subfield[@code = 'a'])"/>
         </rdawd:P10216>
@@ -144,6 +151,7 @@
     <xsl:template match="marc:datafield[@tag = '561']" mode="ite" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="controlNumber"/>
+        <xsl:call-template name="getmarc"/>
         <xsl:variable name="genID" select="generate-id()"/>
         <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
             <rdaid:P40001>{concat($controlNumber, 'ite', $genID)}</rdaid:P40001>
@@ -196,6 +204,7 @@
     <xsl:template
         match="marc:datafield[@tag = '585'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '585']"
         mode="man" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
         <xsl:if test="not(marc:subfield[@code = '5'])">
             <rdamd:P30137>
                 <xsl:text>Exhibition note: {marc:subfield[@code = 'a']}</xsl:text>
@@ -208,6 +217,7 @@
     <xsl:template match="marc:datafield[@tag = '585']" mode="ite" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="controlNumber"/>
+        <xsl:call-template name="getmarc"/>
         <xsl:if test="marc:subfield[@code = '5']">
             <xsl:variable name="genID" select="generate-id()"/>
             <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">

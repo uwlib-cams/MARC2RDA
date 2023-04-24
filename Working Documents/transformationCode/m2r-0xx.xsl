@@ -13,8 +13,10 @@
     xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
     xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
     xmlns:fake="http://fakePropertiesForDemo" exclude-result-prefixes="marc ex" version="3.0">
+    <xsl:import href="getmarc.xsl"/>
     <!-- <xsl:include href="m2r-0xx-named.xsl"/> -->
     <xsl:template match="marc:datafield[@tag = '020']" mode="man">
+        <xsl:call-template name="getmarc"/>
         <xsl:if test="marc:subfield[@code = 'a']">
             <rdamd:P30004>
                 <xsl:text>(ISBN) </xsl:text>
@@ -58,6 +60,7 @@
         </xsl:if>
     </xsl:template>
     <xsl:template match="marc:datafield[@tag = '030']" mode="wor">
+        <xsl:call-template name="getmarc"/>
         <!-- subfields not coded: $6 $8 -->
         <xsl:if test="matches(marc:subfield[@code = 'a'], '^[A-Z]')">
             <rdawd:P10002>
@@ -73,6 +76,7 @@
         </xsl:for-each>
     </xsl:template>
     <xsl:template match="marc:datafield[@tag = '030']" mode="man">
+        <xsl:call-template name="getmarc"/>
         <xsl:if test="matches(marc:subfield[@code = 'a'], '^[0-9]')">
             <rdamd:P30004>
                 <xsl:value-of select="concat('(CODEN)', marc:subfield[@code = 'a'])"/>
@@ -87,6 +91,7 @@
         </xsl:for-each>
     </xsl:template>
     <xsl:template match="marc:datafield[@tag = '043']" mode="wor" expand-text="true">
+        <xsl:call-template name="getmarc"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdawd:P10321 rdf:datatype="http://id.loc.gov/vocabulary/geographicAreas"
                 >{replace(.,'-+$','')}</rdawd:P10321>

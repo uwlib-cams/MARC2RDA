@@ -14,7 +14,9 @@
     xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
     xmlns:fake="http://fakePropertiesForDemo" exclude-result-prefixes="marc ex" version="3.0">
     <xsl:include href="m2r-2xx-named.xsl"/>
+    <xsl:import href="getmarc.xsl"/>
     <xsl:template match="marc:datafield[@tag = '245']" mode="wor" >
+        <xsl:call-template name="getmarc"/>
         <xsl:for-each select="marc:subfield[@code='a']">
             <rdawd:P10088>
                 <xsl:value-of select="replace(.,'\s*[\.,;:/=]','')"/>
@@ -22,6 +24,7 @@
         </xsl:for-each>
     </xsl:template>    
     <xsl:template match="marc:datafield[@tag = '245'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '245']" mode="man">
+        <xsl:call-template name="getmarc"/>
         <xsl:call-template name="F245-xx-anps"/>
         <xsl:call-template name="F245-xx-a"/>
         <xsl:call-template name="F245-xx-b"/>
@@ -40,6 +43,7 @@
          After statements are output, templates are called to process individual fields.
     -->
     <xsl:template match="marc:datafield[@tag = '264'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '264']" mode="man">
+        <xsl:call-template name="getmarc"/>
         <xsl:choose>
             <xsl:when
                 test="(substring(preceding-sibling::marc:leader, 19, 1) = 'i' or substring(preceding-sibling::marc:leader, 19, 1) = 'a')">

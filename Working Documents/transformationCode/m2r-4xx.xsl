@@ -15,7 +15,9 @@
     xmlns:fake="http://fakePropertiesForDemo"
     exclude-result-prefixes="marc ex" version="3.0">
     <xsl:include href="m2r-4xx-named.xsl"/>
+    <xsl:import href="getmarc.xsl"/>
     <xsl:template match="marc:datafield[@tag = '490']" mode="man">
+        <xsl:call-template name="getmarc"/>
         <!-- Accounted-for: $a + $x + $v when LDR/18 is a valid value -->
         <!-- Not accounted for: $6, $7, $8, $l, $y, $z-->
         <xsl:choose>

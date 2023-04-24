@@ -15,7 +15,7 @@
     xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:fake="http://fakePropertiesForDemo"
     xmlns:uwf="http://universityOfWashington/functions"
     exclude-result-prefixes="marc ex uwf madsrdf" version="3.0">
-    <xsl:include href="m2r-functions.xsl"/>
+    <xsl:import href="m2r-functions.xsl"/>
     <xsl:template name="F336-xx-ab0-string">
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdaed:P20001>
