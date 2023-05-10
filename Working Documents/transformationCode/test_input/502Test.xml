@@ -12,16 +12,16 @@
         </marc:datafield>
         <marc:datafield tag="502" ind1=" " ind2=" ">
             <marc:subfield code="g">Karl Schmidt's thesis</marc:subfield>
+			<marc:subfield code="g">Inaugural thesis</marc:subfield>
             <marc:subfield code="b">Doctoral</marc:subfield>
-            <marc:subfield code="g">Inaugural thesis</marc:subfield>
             <marc:subfield code="c">Ludwig-Maximilians-Universität, Munich</marc:subfield>
             <marc:subfield code="d">1965.</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="502" ind1=" " ind2=" ">
-            <marc:subfield code="g">Inaugural thesis.</marc:subfield>
             <marc:subfield code="b">M.A.</marc:subfield>
             <marc:subfield code="c">McGill University</marc:subfield>
             <marc:subfield code="d">1972</marc:subfield>
+			<marc:subfield code="g">Inaugural thesis.</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="880" ind1=" " ind2=" ">
             <marc:subfield code="6">502-01</marc:subfield>

@@ -82,9 +82,6 @@
         match="marc:datafield[@tag = '502'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '502']"
         mode="wor" expand-text="yes">
         <xsl:call-template name="getmarc"/>
-        <xsl:if test="marc:subfield[@code = 'a']">
-            <rdawd:P10209>{marc:subfield[@code = 'a']}</rdawd:P10209>
-        </xsl:if>
         <xsl:if test="marc:subfield[@code = 'b']">
             <rdawd:P10077>{marc:subfield[@code = 'b']}</rdawd:P10077>
         </xsl:if>
@@ -94,20 +91,14 @@
         <xsl:if test="marc:subfield[@code = 'd']">
             <rdawd:P10215>{replace(marc:subfield[@code = 'd'], '\.\s*$', '')}</rdawd:P10215>
         </xsl:if>
-        <xsl:if test="marc:subfield[@code = 'g']">
-            <rdawd:P10209>
-                <xsl:for-each select="marc:subfield[@code = 'g']">
-                    <xsl:value-of select="replace(., '\.\s*$', '')"/>
-                    <xsl:if test="position() != last()">
-                        <xsl:text>, </xsl:text>
-                    </xsl:if>
-                </xsl:for-each>
-                <xsl:value-of select="
-                        ' (' || marc:subfield[@code = 'b'] ||
-                        ')--' || marc:subfield[@code = 'c'] || ', ' || replace(marc:subfield[@code = 'd'], '\.\s*$', '') || '.'"
-                />
-            </rdawd:P10209>
-        </xsl:if>
+        <rdawd:P10209>
+            <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd']">
+                <xsl:value-of select="."/>
+                <xsl:if test="position() != last()">
+                    <xsl:text>; </xsl:text>
+                </xsl:if>
+            </xsl:for-each>
+        </rdawd:P10209>
     </xsl:template>
     <xsl:template
         match="marc:datafield[@tag = '502'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '502']"

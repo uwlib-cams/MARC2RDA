@@ -25,19 +25,31 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/502-testexp"/>
       <rdawd:P10002>502-testwor</rdawd:P10002>
+      <!--MARC data begins-->
+      <fake:marcfield>F502 ## $a Heidelberg, Phil. F., Diss. v. 1. Aug. 1958 (Nicht f. d. Aust.) $o 10211.8/388 $o U 58.4033.</fake:marcfield>
+      <!--RDA data begins-->
       <rdawd:P10209>Heidelberg, Phil. F., Diss. v. 1. Aug. 1958 (Nicht f. d. Aust.)</rdawd:P10209>
+      <!--MARC data begins-->
+      <fake:marcfield>F502 ## $g Karl Schmidt's thesis $g Inaugural thesis $b Doctoral $c Ludwig-Maximilians-Universität, Munich $d 1965.</fake:marcfield>
+      <!--RDA data begins-->
       <rdawd:P10077>Doctoral</rdawd:P10077>
       <rdawd:P10006>Ludwig-Maximilians-Universität, Munich</rdawd:P10006>
       <rdawd:P10215>1965</rdawd:P10215>
-      <rdawd:P10209>Karl Schmidt's thesis, Inaugural thesis (Doctoral)--Ludwig-Maximilians-Universität, Munich, 1965.</rdawd:P10209>
+      <rdawd:P10209>Karl Schmidt's thesis; Inaugural thesis; Doctoral; Ludwig-Maximilians-Universität, Munich; 1965.</rdawd:P10209>
+      <!--MARC data begins-->
+      <fake:marcfield>F502 ## $b M.A. $c McGill University $d 1972 $g Inaugural thesis.</fake:marcfield>
+      <!--RDA data begins-->
       <rdawd:P10077>M.A.</rdawd:P10077>
       <rdawd:P10006>McGill University</rdawd:P10006>
       <rdawd:P10215>1972</rdawd:P10215>
-      <rdawd:P10209>Inaugural thesis (M.A.)--McGill University, 1972.</rdawd:P10209>
+      <rdawd:P10209>M.A.; McGill University; 1972; Inaugural thesis.</rdawd:P10209>
+      <!--MARC data begins-->
+      <fake:marcfield>F880 ## $6 502-01 $g 880-g $b 880-b $c 880-c $d 880-d.</fake:marcfield>
+      <!--RDA data begins-->
       <rdawd:P10077>880-b</rdawd:P10077>
       <rdawd:P10006>880-c</rdawd:P10006>
       <rdawd:P10215>880-d</rdawd:P10215>
-      <rdawd:P10209>880-g (880-b)--880-c, 880-d.</rdawd:P10209>
+      <rdawd:P10209>880-g; 880-b; 880-c; 880-d.</rdawd:P10209>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/502-testexp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -48,15 +60,15 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/502-testman">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/502-testexp"/>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d12e9"/>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d12e11"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d14e9"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d14e11"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d12e9">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d14e9">
       <rdand:P80068>10211.8/388</rdand:P80068>
       <rdano:P80048 rdf:resource="http://fakeIRI2.edu/502-testman"/>
       <rdand:P80078>Dissertation identifier</rdand:P80078>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d12e11">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d14e11">
       <rdand:P80068>U 58.4033</rdand:P80068>
       <rdano:P80048 rdf:resource="http://fakeIRI2.edu/502-testman"/>
       <rdand:P80078>Dissertation identifier</rdand:P80078>
