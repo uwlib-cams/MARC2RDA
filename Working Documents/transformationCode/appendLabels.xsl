@@ -39,7 +39,7 @@
         use="substring-after(@rdf:about, '/P')"/>
     <xsl:key name="rdaiDoc" match="$i/rdf:RDF/rdf:Description"
         use="substring-after(@rdf:about, '/P')"/>
-    <xsl:key name="rdaiDoc" match="$n/rdf:RDF/rdf:Description"
+    <xsl:key name="rdanDoc" match="$n/rdf:RDF/rdf:Description"
         use="substring-after(@rdf:about, '/P')"/>
     <xsl:mode on-no-match="shallow-copy"/>
 
@@ -70,7 +70,7 @@
             </xsl:comment>
         </xsl:if>
         <xsl:if
-            test="contains(name(.), 'rdai:') or contains(name(.), 'rdawi:') or contains(name(.), 'rdaio:')">
+            test="contains(name(.), 'rdai:') or contains(name(.), 'rdaid:') or contains(name(.), 'rdaio:')">
             <xsl:comment>
                                 <xsl:value-of select="name(.)"/>
                 <xsl:text> = </xsl:text>
@@ -78,11 +78,11 @@
             </xsl:comment>
         </xsl:if>
         <xsl:if
-            test="contains(name(.), 'rdan:') or contains(name(.), 'rdani:') or contains(name(.), 'rdano:')">
+            test="contains(name(.), 'rdan:') or contains(name(.), 'rdand:') or contains(name(.), 'rdano:')">
             <xsl:comment>
                                 <xsl:value-of select="name(.)"/>
                 <xsl:text> = </xsl:text>
-                <xsl:value-of select="key('rdanDoc', substring-after(name(.), ':P'), $i)/rdfs:label[@xml:lang = 'en']"/>
+                <xsl:value-of select="key('rdanDoc', substring-after(name(.), ':P'), $n)/rdfs:label[@xml:lang = 'en']"/>
             </xsl:comment>
         </xsl:if>
     </xsl:template>
