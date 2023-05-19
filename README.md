@@ -7,7 +7,6 @@ This is a project of the Metadata and Cataloging Initiatives Unit of the Catalog
 # Project Roster
 -Laura Akerman, [lake44me](https://github.com/lake44me), Mapping Contributor<br>
 -Sita Bhagwandin [SitaKB](https://github.com/SitaKB), Mapping Contributor<br>
--Alice Chung [cwarc](https://github.com/cwarc), Mapping Contributor<br>
 -Gordon Dunsire [GordonDunsire](https://github.com/GordonDunsire), Metadata Consultant, LRM/RDA/RDF<br>
 -Cate Gerhart [CatalogerCate](https://github.com/CatalogerCate), Mapping Consultant, MARC21<br>
 -Theo Gerontakos [gerontakos](https://github.com/gerontakos), Mapping Contributor, Conversion Contributor, Project Supervisor<br>
@@ -20,4 +19,5 @@ This is a project of the Metadata and Cataloging Initiatives Unit of the Catalog
 -Crystal Yragui (Clements) [CECSpecialistI](https://github.com/CECSpecialistI), Mapping Contributor, Project Manager<br>
 -Sofia Zapounidou [szapoun](https://github.com/szapoun), Mapping Contributor<br>
 ## Past contributors
--Melissa Morgan [mcm104](https://github.com/mcm104), Mapping Contributor, Metadata Consultant
+-Melissa Morgan [mcm104](https://github.com/mcm104), Mapping Contributor, Metadata Consultant<br>
+-Alice Chung [cwarc](https://github.com/cwarc), Mapping Contributor<br>
