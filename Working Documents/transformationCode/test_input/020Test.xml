@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">020-test1</marc:controlfield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9780764212000</marc:subfield>
+			<marc:subfield code="q">(cloth ;</marc:subfield>
+			<marc:subfield code="q">alk. paper)</marc:subfield>
+        </marc:datafield>
+		    <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">0764212001</marc:subfield>
+			<marc:subfield code="q">(cloth ;</marc:subfield>
+			<marc:subfield code="q">alk. paper)</marc:subfield>
+        </marc:datafield>
+		    <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="z">9780764212017</marc:subfield>
+			<marc:subfield code="q">(large print ;</marc:subfield>
+			<marc:subfield code="q">alk. paper)</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>
