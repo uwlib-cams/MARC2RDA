@@ -8,6 +8,7 @@ This is a project of the Metadata and Cataloging Initiatives Unit of the Catalog
 -Laura Akerman, [lake44me](https://github.com/lake44me), Mapping Contributor<br>
 -Sita Bhagwandin [SitaKB](https://github.com/SitaKB), Mapping Contributor<br>
 -Gordon Dunsire [GordonDunsire](https://github.com/GordonDunsire), Metadata Consultant, LRM/RDA/RDF<br>
+-Deborah Fritz [tmqdeborah](https://github.com/tmqdeborah), Mapping Contributor<br>
 -Cate Gerhart [CatalogerCate](https://github.com/CatalogerCate), Mapping Consultant, MARC21<br>
 -Theo Gerontakos [gerontakos](https://github.com/gerontakos), Mapping Contributor, Conversion Contributor, Project Supervisor<br>
 -Ebe Kartus [corialanus](https://github.com/corialanus), Mapping Contributor<br>
