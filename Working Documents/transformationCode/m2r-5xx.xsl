@@ -139,6 +139,14 @@
             <xsl:value-of select="concat('Geographic coverage: ', marc:subfield[@code = 'a'])"/>
         </rdawd:P10216>
     </xsl:template>
+    <xsl:template
+        match="marc:datafield[@tag = '527'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '527']"
+        mode="exp">
+        <xsl:call-template name="getmarc"/>
+        <rdaed:P20071>
+            <xsl:value-of select="marc:subfield[@code = 'a']"/>
+        </rdaed:P20071>
+    </xsl:template>
     <xsl:template match="marc:datafield[@tag = '561']" mode="ite" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="controlNumber"/>
