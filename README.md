@@ -5,20 +5,22 @@ This is a project of the Metadata and Cataloging Initiatives Unit of the Catalog
 ## More information and resources for participants available [on the wiki](https://github.com/uwlib-cams/MARC2RDA/wiki).
 ## To get in touch, email Crystal Yragui at cec23@uw.edu.
 # Project Roster
--Laura Akerman, [lake44me](https://github.com/lake44me), Mapping Contributor<br>
--Sita Bhagwandin [SitaKB](https://github.com/SitaKB), Mapping Contributor<br>
--Gordon Dunsire [GordonDunsire](https://github.com/GordonDunsire), Metadata Consultant, LRM/RDA/RDF<br>
--Deborah Fritz [tmqdeborah](https://github.com/tmqdeborah), Mapping Consultant, Aggregates/RDA/MARC21<br>
--Cate Gerhart [CatalogerCate](https://github.com/CatalogerCate), Mapping Consultant, MARC21<br>
--Theo Gerontakos [gerontakos](https://github.com/gerontakos), Mapping Contributor, Conversion Contributor, Project Supervisor<br>
--Ebe Kartus [corialanus](https://github.com/corialanus), Mapping Contributor<br>
--Jian Lee [JianPLee](https://github.com/JianPLee), Mapping Contributor<br>
--Junghae Lee [junghaelee](https://github.com/junghaelee), Mapping Contributor<br>
--Zhuo Pan [pan-zhuo](https://github.com/pan-zhuo), Mapping Contributor, Conversion Contributor<br>
--Benjamin Riesenberg [briesenberg07](https://github.com/briesenberg07), Metadata Consultant, General<br>
--Adam Schiff [AdamSchiff](https://github.com/AdamSchiff), Mapping Contributor<br>
+-Laura Akerman, [lake44me](https://github.com/lake44me), Mapping Contributor<br><br>
+-Sita Bhagwandin [SitaKB](https://github.com/SitaKB), Mapping Contributor<br><br>
+-Gordon Dunsire [GordonDunsire](https://github.com/GordonDunsire), Metadata Consultant, LRM/RDA/RDF<br><br>
+-Deborah Fritz [tmqdeborah](https://github.com/tmqdeborah), Mapping Consultant, Aggregates/RDA/MARC21<br><br>
+-Cate Gerhart [CatalogerCate](https://github.com/CatalogerCate), Mapping Consultant, MARC21<br><br>
+-Theo Gerontakos [gerontakos](https://github.com/gerontakos), Mapping Contributor, Conversion Contributor, Project Supervisor<br><br>
+-Ebe Kartus [corialanus](https://github.com/corialanus), Mapping Contributor<br><br>
+-Jian Lee [JianPLee](https://github.com/JianPLee), Mapping Contributor<br><br>
+-Junghae Lee [junghaelee](https://github.com/junghaelee), Mapping Contributor<br><br>
+-Zhuo Pan [pan-zhuo](https://github.com/pan-zhuo), Mapping Contributor, Conversion Contributor<br><br>
+-Benjamin Riesenberg [briesenberg07](https://github.com/briesenberg07), Metadata Consultant, General<br><br>
+-Adam Schiff [AdamSchiff](https://github.com/AdamSchiff), Mapping Contributor<br><br>
 -Crystal Yragui (Clements) [CECSpecialistI](https://github.com/CECSpecialistI), Mapping Contributor, Project Manager<br>
+_Crystal Yragui (she/her/hers) is a Science Cataloger at the University of Washington Libraries. She earned an M.S. in Library and Information Science from the University of Washington in 2014. Crystal's work focuses on traditional MARC cataloging and linked data projects. She serves as a member of the PCC Identity Management Advisory Committee (IMAC) (2022-2025)._ <br><br>
 -Sofia Zapounidou [szapoun](https://github.com/szapoun), Mapping Contributor<br>
+_Dr. Sofia Zapounidou is a metadata specialist at the National Library of Greece. She holds a bachelor from the Department of Archives, Library Science and Museology of the Ionian University, and a master’s degree in Information Systems from the University of Macedonia. Her PhD, awarded in 2020 from the Ionian University, focuses on the semantic interoperability between bibliographic conceptual models. She is an elected member of the IFLA Cataloguing Section (2021-2025), and of the Bibliographic Conceptual Models Review Group (2023-2027). She collaborates with different research groups in Greece and abroad with main focus on the preparation, representation and conversion of bibliographic data into linked data._
 ## Past contributors
 -Melissa Morgan [mcm104](https://github.com/mcm104), Mapping Contributor, Metadata Consultant<br>
 -Alice Chung [cwarc](https://github.com/cwarc), Mapping Contributor<br>
