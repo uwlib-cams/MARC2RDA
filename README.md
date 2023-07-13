@@ -7,7 +7,8 @@ This is a project of the Metadata and Cataloging Initiatives Unit of the Catalog
 # Project Roster
 -Laura Akerman, [lake44me](https://github.com/lake44me), Mapping Contributor<br><br>
 -Sita Bhagwandin [SitaKB](https://github.com/SitaKB), Mapping Contributor<br><br>
--Gordon Dunsire [GordonDunsire](https://github.com/GordonDunsire), Metadata Consultant, LRM/RDA/RDF<br><br>
+-Gordon Dunsire [GordonDunsire](https://github.com/GordonDunsire), Metadata Consultant, LRM/RDA/RDF<br>
+_Gordon Dunsire is an independent consultant who lives in Edinburgh, Scotland. He was formerly Head of the Centre for Digital Library Research at the University of Strathclyde. He has been a member of various IFLA review groups and sections concerned with cataloguing and metadata standards, and is a recipient of an IFLA Medal for his work with linked open data. He is a former Chair of the RDA Steering Committee and the RSC Technical Working Group. He is co-author of "Bibliographic information organization in the semantic web"._ <br><br>
 -Deborah Fritz [tmqdeborah](https://github.com/tmqdeborah), Mapping Consultant, Aggregates/RDA/MARC21<br><br>
 -Cate Gerhart [CatalogerCate](https://github.com/CatalogerCate), Mapping Consultant, MARC21<br><br>
 -Theo Gerontakos [gerontakos](https://github.com/gerontakos), Mapping Contributor, Conversion Contributor, Project Supervisor<br><br>
