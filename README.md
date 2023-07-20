@@ -20,7 +20,9 @@ _Gordon Dunsire is an independent consultant who lives in Edinburgh, Scotland. H
 _Deborah Fritz is a semi-retired cataloging trainer who lives in Florida. She was formerly the president of TMQ Inc., a small company that provided training and software for catalogers. She is the co-author of "MARC21 for everyone", author of "Cataloging with AACR2 & MARC21", and co-developer of MARC Report, MARC Review, and MARC Global (quality control and global editing tools for MARC records), and RIMMF (a tool for creating and editing data compliant with RDA) all of which are now available free of charge. She was the former Chair of the RSC Aggregates Working Group and is currently a member of the RSC Technical Working Group._
 <br><br>
 -Cate Gerhart [CatalogerCate](https://github.com/CatalogerCate), Mapping Consultant, MARC21<br><br>
--Theo Gerontakos [gerontakos](https://github.com/gerontakos), Mapping Contributor, Conversion Contributor, Project Supervisor<br><br>
+-Theo Gerontakos [gerontakos](https://github.com/gerontakos), Mapping Contributor, Conversion Contributor, Project Supervisor<br>
+_Theo Gerontakos has been a Metadata Librarian since 2001 and is currently the Head of the Metadata and Cataloging Initiatives Unit at the University of Washington (UW) Libraries in Seattle, Washington, USA. He led the UW cohort contribution to the LD4P2 project from 2018-2020. He was the Chair of the UW Metadata Implementation Group from 2004-2021 and has been leading a Linked Data Team since 2013. He led several UW study groups from 2010-2019 on XSLT, XQuery, and SPARQL. He is a former Chair of the ALCTS/LITA Linked Library Data Interest group (2012-2014). He is currently working with various groups in the Program for Cooperative Cataloging (PCC): the URIs-in-MARC URIs Guidance Subgroup (2023); the Task Group on BIBFRAME-to-MARC Conversion; and is the Chair of the Linked Data Advisory Committee._
+<br><br>
 -Ebe Kartus [corialanus](https://github.com/corialanus), Mapping Contributor<br><br>
 -Jian Lee [JianPLee](https://github.com/JianPLee), Mapping Contributor<br><br>
 -Junghae Lee [junghaelee](https://github.com/junghaelee), Mapping Contributor<br>
