@@ -27,7 +27,9 @@ _Theo Gerontakos has been a Metadata Librarian since 2001 and is currently the H
 **-Ebe Kartus [corialanus](https://github.com/corialanus), Mapping Contributor**<br>
 _Ebe Kartus is currently the Team Leader, Serials Cataloguing Team at the National Library of New Zealand which she joined at the beginning of 2023. Previously she has worked in a number of different Library environments in Australia. She is a past Chair of ACOC and current member of ORDAC. She is a past member of the RSC as the ORDAC representative and the Wider Community Engagement Officer._
 <br><br>
-**-Jian Lee [JianPLee](https://github.com/JianPLee), Mapping Contributor**<br><br>
+**-Jian Lee [JianPLee](https://github.com/JianPLee), Mapping Contributor**<br>
+_Jian Lee (she/her/hers) is a Chinese Cataloging and Metadata Librarian at the University of Washington Libraries. Jian catalogs mostly Chinese print monographs. Outside of her cataloging duties, Jian participates in linked data projects, such as mapping RDA to BIBFRAME and mapping MARC to RDA/LRM/RDF. Jian is also an active member of Council on East Asian Libraries (CEAL). She’s a member of the Committee on Technical Processing and the CEAL Membership Committee._
+<br><br>
 **-Junghae Lee [junghaelee](https://github.com/junghaelee), Mapping Contributor**<br>
 _Junghae Lee is an Electronic Resources Metadata Librarian at the University of Washington Libraries. She completed a C.A.S. in Library and Information Science from the University of Illinois, Urbana-Champaign and holds an M.L.S. in Library and Information Science from Indiana University, Bloomington. Her current research interests include metadata quality, cataloging and discovery, and linked data implementation._ <br><br>
 **-Zhuo Pan [pan-zhuo](https://github.com/pan-zhuo), Mapping Contributor, Conversion Contributor**<br>
