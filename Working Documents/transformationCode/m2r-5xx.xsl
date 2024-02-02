@@ -26,7 +26,6 @@
     <xsl:include href="m2r-5xx-named.xsl"/>
     <xsl:import href="m2r-functions.xsl"/>
     <xsl:import href="getmarc.xsl"/>
-
     <xsl:template
         match="marc:datafield[@tag = '500'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '500']"
         mode="man">
@@ -92,7 +91,8 @@
             <rdawd:P10215>{replace(marc:subfield[@code = 'd'], '\.\s*$', '')}</rdawd:P10215>
         </xsl:if>
         <rdawd:P10209>
-            <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd']">
+            <xsl:for-each
+                select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd']">
                 <xsl:value-of select="."/>
                 <xsl:if test="position() != last()">
                     <xsl:text>; </xsl:text>
@@ -198,6 +198,38 @@
                     <xsl:with-param name="genID" select="$genID"/>
                 </xsl:call-template>
             </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    <!-- 583 - Action Note -->
+    <xsl:template match="marc:datafield[@tag = '583']" mode="ite" expand-text="yes">
+        <xsl:param name="baseIRI"/>
+        <xsl:param name="controlNumber"/>
+        <xsl:call-template name="getmarc"/>
+        <xsl:variable name="genID" select="generate-id()"/>
+        <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
+            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+            <rdaid:P40001>{concat($controlNumber,'ite',$genID)}</rdaid:P40001>
+            <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
+            <xsl:if test="marc:subfield[@code = '5']">
+                <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>
+            </xsl:if>
+            <xsl:if test="@ind1 != '0'">
+                <rdaid:P40028>
+                    <xsl:call-template name="F583-xx-abcdefhijklnouxz23"/>
+                </rdaid:P40028>
+            </xsl:if>
+        </rdf:Description>
+        <xsl:if test="@ind1 != '0'">
+            <xsl:call-template name="F583-xx-x">
+                <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                <xsl:with-param name="genID" select="$genID"/>
+            </xsl:call-template>
+        </xsl:if>
+        <xsl:if test="@ind1 = '0'">
+            <xsl:call-template name="F583-0x">
+                <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                <xsl:with-param name="genID" select="$genID"/>
+            </xsl:call-template>
         </xsl:if>
     </xsl:template>
     <xsl:template
