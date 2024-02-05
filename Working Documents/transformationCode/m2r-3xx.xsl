@@ -23,6 +23,15 @@
                 >{replace(.,'([0-9][0-9])([0-9][0-9])([0-9][0-9])','$1:$2:$3')}</rdaed:P20219>
         </xsl:for-each>
     </xsl:template>
+    <xsl:template match="marc:datafield[@tag = '307'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '307']" mode="man" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
+        <rdamd:P30137>
+            <xsl:text>{marc:subfield[@code = 'a']}</xsl:text>
+            <xsl:if test="marc:subfield[@code = 'b']">
+                <xsl:text> {marc:subfield[@code = 'b']}</xsl:text>
+            </xsl:if>
+        </rdamd:P30137>
+    </xsl:template>
     <xsl:template match="marc:datafield[@tag = '336']" mode="exp">
         <xsl:call-template name="getmarc"/>
         <!-- Accounted for: $a, $b, $2-temporary, $3-partial, $0, $1 -->
