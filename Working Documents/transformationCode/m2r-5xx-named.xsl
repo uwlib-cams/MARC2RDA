@@ -47,7 +47,7 @@
                 </xsl:if>
             </xsl:for-each>
             <xsl:if test="marc:subfield[@code = '5']">
-                <xsl:text>(At institution: {marc:subfield[@code = '5']})</xsl:text>
+                <xsl:text> (At institution: {marc:subfield[@code = '5']})</xsl:text>
             </xsl:if>
         </rdamd:P30137>
     </xsl:template>
