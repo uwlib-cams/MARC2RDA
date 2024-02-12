@@ -140,6 +140,29 @@
         </rdawd:P10216>
     </xsl:template>
     <xsl:template
+        match="marc:datafield[@tag = '526']"
+        mode="man">
+        <xsl:variable name="fieldPos" select="position()"/>
+        <xsl:call-template name="getmarc"/>
+        <xsl:call-template name="F526-xx-iabcdz5"/>
+        <xsl:for-each select="marc:subfield[@code = 'x']">
+            <rdamo:P30462 rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/',$fieldPos,position())}"/>
+        </xsl:for-each>
+    </xsl:template>
+    <xsl:template
+        match="marc:datafield[@tag = '526']"
+        mode="metaWor">
+        <xsl:param name="baseIRI"/>
+        <xsl:variable name="fieldPos" select="position()"/>
+        <xsl:call-template name="getmarc"/>
+        <xsl:for-each select="marc:subfield[@code = 'x']">
+            <xsl:call-template name="F526-xx-x">
+                <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                <xsl:with-param name="fieldPos" select="$fieldPos"/>
+            </xsl:call-template>
+        </xsl:for-each>
+    </xsl:template>
+    <xsl:template
         match="marc:datafield[@tag = '527'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '527']"
         mode="exp">
         <xsl:call-template name="getmarc"/>
@@ -215,7 +238,7 @@
             </xsl:if>
             <xsl:if test="@ind1 != '0'">
                 <rdaid:P40028>
-                    <xsl:call-template name="F583-xx-abcdefhijklnouxz23"/>
+                    <xsl:call-template name="F583-1x-abcdefhijklnouxz23"/>
                 </rdaid:P40028>
                 <!-- subfield 'x' is private note -->
                 <!-- for each one, create triple 'is item described with metadata by' [metadataWork IRI] -->
@@ -235,7 +258,7 @@
         <xsl:if test="@ind1 != '0'">
             <!-- for each sets same context as above, ensures position() value is the same -->
             <xsl:for-each select="marc:subfield[@code = 'x']">
-                <xsl:call-template name="F583-xx-x">
+                <xsl:call-template name="F583-1x-x">
                     <xsl:with-param name="baseIRI" select="$baseIRI"/>
                     <xsl:with-param name="genID" select="$genID"/>
                 </xsl:call-template>

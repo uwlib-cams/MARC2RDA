@@ -19,6 +19,56 @@
     xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
     xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
     xmlns:fake="http://fakePropertiesForDemo" exclude-result-prefixes="marc ex" version="3.0">
+    <xsl:template name="F526-xx-iabcdz5" expand-text="yes">
+        <rdamd:P30137>
+            <xsl:text>Reading program: </xsl:text>
+            <xsl:if test="marc:subfield[@code = 'i']">
+                <xsl:text>.</xsl:text>
+            </xsl:if>
+            <xsl:for-each
+                select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'z']">
+                <xsl:if test="@code = 'a'">
+                    <xsl:text>Program name: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'b'">
+                    <xsl:text>Interest level: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'c'">
+                    <xsl:text>Reading level: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'd'">
+                    <xsl:text>Title point value: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'z'">
+                    <xsl:text>Public note: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="position() != last()">
+                    <xsl:text>; </xsl:text>
+                </xsl:if>
+            </xsl:for-each>
+            <xsl:if test="marc:subfield[@code = '5']">
+                <xsl:text>(At institution: {marc:subfield[@code = '5']})</xsl:text>
+            </xsl:if>
+        </rdamd:P30137>
+    </xsl:template>
+    <xsl:template name="F526-xx-x" expand-text="yes">
+        <xsl:param name="baseIRI"/>
+        <xsl:param name="fieldPos"/>
+        <rdf:Description rdf:about="{concat('http://marc2rda.edu/fake/MetaWor/',$fieldPos,
+            position())}">
+            <!--Does not meet min description of a work; needs to be linked to a metadata exp/man-->
+            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+            <rdawd:P10002>{concat('MetaWor/',$fieldPos, position())}</rdawd:P10002>
+            <rdawo:P10617 rdf:resource="{concat($baseIRI,'man')}"/>
+            <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+            <rdf:subject rdf:resource="{concat($baseIRI,'man')}"/>
+            <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
+            <rdf:object>
+                <xsl:value-of select="."/>
+            </rdf:object>
+            <rdawd:P10004>Private</rdawd:P10004>
+        </rdf:Description>
+    </xsl:template>
     <xsl:template name="F561-xx-a">
         <xsl:value-of select="marc:subfield[@code = 'a']"/>
         <xsl:if test="marc:subfield[@code = '3']">
@@ -71,8 +121,8 @@
         </rdf:Description>
     </xsl:template>
     <!-- 583 - Action Note -->
-    <xsl:template name="F583-xx-abcdefhijklnouxz23" expand-text="yes">
-        <xsl:for-each select="marc:subfield">
+    <xsl:template name="F583-1x-abcdefhijklnouxz23" expand-text="yes">
+        <xsl:for-each select="marc:subfield[not(.[@code = '5'])]">
             <xsl:if test="@code = 'a'">
                 <xsl:text>Action: {.}</xsl:text>
             </xsl:if>
@@ -132,7 +182,7 @@
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
-    <xsl:template name="F583-xx-x" expand-text="yes">
+    <xsl:template name="F583-1x-x" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="genID"/>
         <rdf:Description rdf:about="{concat('http://marc2rda.edu/fake/MetaWor/',$genID,
@@ -163,7 +213,7 @@
             <rdf:subject rdf:resource="{concat($baseIRI,'ite',$genID)}"/>
             <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
             <rdf:object>
-                <xsl:call-template name="F583-xx-abcdefhijklnouxz23"/>
+                <xsl:call-template name="F583-1x-abcdefhijklnouxz23"/>
             </rdf:object>
             <rdawd:P10004>Private</rdawd:P10004>
         </rdf:Description>

@@ -98,5 +98,9 @@
         <xsl:apply-templates select="*" mode="nom">
             <xsl:with-param name="baseIRI" select="$baseIRI"/>
         </xsl:apply-templates>
+        <!-- *****METADATA WORKS***** -->
+        <xsl:apply-templates select="*" mode="metaWor">
+            <xsl:with-param name="baseIRI" select="$baseIRI"/>
+        </xsl:apply-templates>
     </xsl:template>
 </xsl:stylesheet>
