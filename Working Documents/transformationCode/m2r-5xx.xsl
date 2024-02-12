@@ -217,13 +217,29 @@
                 <rdaid:P40028>
                     <xsl:call-template name="F583-xx-abcdefhijklnouxz23"/>
                 </rdaid:P40028>
+                <!-- subfield 'x' is private note -->
+                <!-- for each one, create triple 'is item described with metadata by' [metadataWork IRI] -->
+                <!-- metadataWork IRI = 'http://marc2rda.edu/fake/MetaWor/' + end of item IRI + position of subfield x -->
+                <xsl:for-each select="marc:subfield[@code = 'x']">
+                    <!-- need to do a for-each to set context for subfield position() so that context = list of subfield x's -->
+                    <rdaio:P40164 rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/',$genID,position())}"/>
+                </xsl:for-each>
+            </xsl:if>
+            <!-- @ind1 = '0'is private field -->
+            <xsl:if test="@ind1 = '0'">
+                <!-- 'is item described with metadata by' 'https://marc2rda.edu/fake/MetaWor/[end of item id][position of marc field node] -->
+                <!-- position in this case is the location of the 583 field in the list of all fields, which is unique -->
+                <rdaio:P40164 rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/',$genID,position())}"/>
             </xsl:if>
         </rdf:Description>
         <xsl:if test="@ind1 != '0'">
-            <xsl:call-template name="F583-xx-x">
-                <xsl:with-param name="baseIRI" select="$baseIRI"/>
-                <xsl:with-param name="genID" select="$genID"/>
-            </xsl:call-template>
+            <!-- for each sets same context as above, ensures position() value is the same -->
+            <xsl:for-each select="marc:subfield[@code = 'x']">
+                <xsl:call-template name="F583-xx-x">
+                    <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                    <xsl:with-param name="genID" select="$genID"/>
+                </xsl:call-template>
+            </xsl:for-each>
         </xsl:if>
         <xsl:if test="@ind1 = '0'">
             <xsl:call-template name="F583-0x">
