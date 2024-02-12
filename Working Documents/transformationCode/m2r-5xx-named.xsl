@@ -69,53 +69,36 @@
             <rdawd:P10004>Private</rdawd:P10004>
         </rdf:Description>
     </xsl:template>
-    <xsl:template name="F561-xx-a">
+    <xsl:template name="F561-xx-au" expand-text="yes">
         <xsl:value-of select="marc:subfield[@code = 'a']"/>
+        <xsl:if test="marc:subfield[@code = 'u']">
+            <xsl:text> Additional information at: </xsl:text>
+            <xsl:for-each select="marc:subfield[@code = 'u']">
+                <xsl:value-of select="."/>
+                <xsl:if test="position() != last()">
+                    <xsl:text>, </xsl:text>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:if>
         <xsl:if test="marc:subfield[@code = '3']">
             <xsl:text> (Applies to: </xsl:text>
             <xsl:value-of select="marc:subfield[@code = '3']"/>
             <xsl:text>)</xsl:text>
         </xsl:if>
     </xsl:template>
-    <xsl:template name="F561-0x-a" expand-text="yes">
+    <xsl:template name="F561-0x" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="genID"/>
-        <rdf:Description rdf:about="{concat('http://marc2rda.edu/fake/MetaWor/',$genID,'1')}">
+        <rdf:Description rdf:about="{concat('http://marc2rda.edu/fake/MetaWor/',$genID,position())}">
             <!--Does not meet min description of a work; needs to be linked to a metadata exp/man-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-            <rdawd:P10002>{concat('MetaWor/',$genID,'1')}</rdawd:P10002>
+            <rdawd:P10002>{concat('MetaWor/',$genID,position())}</rdawd:P10002>
             <rdawo:P10616 rdf:resource="{concat($baseIRI,'ite',$genID)}"/>
             <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
             <rdf:subject rdf:resource="{concat($baseIRI,'ite',$genID)}"/>
             <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
             <rdf:object>
-                <xsl:call-template name="F561-xx-a"/>
-            </rdf:object>
-            <rdawd:P10004>Private</rdawd:P10004>
-        </rdf:Description>
-    </xsl:template>
-    <xsl:template name="F561-xx-u">
-        <xsl:value-of select="."/>
-        <xsl:if test="marc:subfield[@code = '3']">
-            <xsl:text> (Applies to: </xsl:text>
-            <xsl:value-of select="marc:subfield[@code = '3']"/>
-            <xsl:text>)</xsl:text>
-        </xsl:if>
-    </xsl:template>
-    <xsl:template name="F561-0x-u" expand-text="yes">
-        <xsl:param name="baseIRI"/>
-        <xsl:param name="genID"/>
-        <rdf:Description
-            rdf:about="{concat('http://marc2rda.edu/fake/MetaWor/',$genID,position()+1)}">
-            <!--Does not meet min description of a work; needs to be linked to a metadata exp/man-->
-            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-            <rdawd:P10002>{concat('MetaWor/',$genID,position()+1)}</rdawd:P10002>
-            <rdawo:P10616 rdf:resource="{concat($baseIRI,'ite',$genID)}"/>
-            <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-            <rdf:subject rdf:resource="{concat($baseIRI,'ite',$genID)}"/>
-            <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
-            <rdf:object>
-                <xsl:call-template name="F561-xx-u"/>
+                <xsl:call-template name="F561-xx-au"/>
             </rdf:object>
             <rdawd:P10004>Private</rdawd:P10004>
         </rdf:Description>

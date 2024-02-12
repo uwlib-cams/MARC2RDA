@@ -182,26 +182,25 @@
             <xsl:if test="marc:subfield[@code = '5']">
                 <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>
             </xsl:if>
-            <rdaid:P40026>
-                <xsl:call-template name="F561-xx-a"/>
-            </rdaid:P40026>
+            <xsl:if test="@ind1 != '0'">
+                <rdaid:P40026>
+                    <xsl:call-template name="F561-xx-au"/>
+                </rdaid:P40026>
+            </xsl:if>
             <xsl:if test="marc:subfield[@code = '6']">
                 <xsl:variable name="occNum" select="substring(marc:subfield[@code = '6'], 5, 6)"/>
                 <xsl:for-each
                     select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 5, 6) = $occNum]">
-                    <rdaid:P40026>
-                        <xsl:call-template name="F561-xx-a"/>
-                    </rdaid:P40026>
+                    <xsl:if test="@ind1 != '0'">
+                        <rdaid:P40026>
+                            <xsl:call-template name="F561-xx-au"/>
+                        </rdaid:P40026>
+                    </xsl:if>
                 </xsl:for-each>
             </xsl:if>
-            <xsl:for-each select="marc:subfield[@code = 'u']">
-                <rdaid:P40026>
-                    <xsl:call-template name="F561-xx-u"/>
-                </rdaid:P40026>
-            </xsl:for-each>
         </rdf:Description>
         <xsl:if test="@ind1 = '0'">
-            <xsl:call-template name="F561-0x-a">
+            <xsl:call-template name="F561-0x">
                 <xsl:with-param name="baseIRI" select="$baseIRI"/>
                 <xsl:with-param name="genID" select="$genID"/>
             </xsl:call-template>
@@ -209,18 +208,12 @@
                 <xsl:variable name="occNum" select="substring(marc:subfield[@code = '6'], 5, 6)"/>
                 <xsl:for-each
                     select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 5, 6) = $occNum]">
-                    <xsl:call-template name="F561-0x-a">
+                    <xsl:call-template name="F561-0x">
                         <xsl:with-param name="baseIRI" select="$baseIRI"/>
                         <xsl:with-param name="genID" select="generate-id()"/>
                     </xsl:call-template>
                 </xsl:for-each>
             </xsl:if>
-            <xsl:for-each select="marc:subfield[@code = 'u']">
-                <xsl:call-template name="F561-0x-u">
-                    <xsl:with-param name="baseIRI" select="$baseIRI"/>
-                    <xsl:with-param name="genID" select="$genID"/>
-                </xsl:call-template>
-            </xsl:for-each>
         </xsl:if>
     </xsl:template>
     <!-- 583 - Action Note -->
