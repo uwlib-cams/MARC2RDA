@@ -170,11 +170,14 @@
             <xsl:value-of select="marc:subfield[@code = 'a']"/>
         </rdaed:P20071>
     </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '561']" mode="ite" expand-text="yes">
+    <!-- 561 - Ownership and custodial history -->
+    <!-- match on tag 561 or an unlinked 880 field where $6 = 561-00 -->
+    <xsl:template match="marc:datafield[@tag = '561'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '561-00']" mode="ite" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="controlNumber"/>
         <xsl:call-template name="getmarc"/>
         <xsl:variable name="genID" select="generate-id()"/>
+        <!-- create the item IRI and rdf:description for this item -->
         <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
             <rdaid:P40001>{concat($controlNumber, 'ite', $genID)}</rdaid:P40001>
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
@@ -187,14 +190,22 @@
                     <xsl:call-template name="F561-xx-au"/>
                 </rdaid:P40026>
             </xsl:if>
-            <xsl:if test="marc:subfield[@code = '6']">
-                <xsl:variable name="occNum" select="substring(marc:subfield[@code = '6'], 5, 6)"/>
+            <xsl:if test="@ind1 = '0'">
+                <rdaio:P40164 rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/',$genID,position())}"/>
+            </xsl:if>
+            <!-- if 561 field has $6, find associated 880 andd do the same mapping -->
+            <xsl:if test="@tag = '561' and marc:subfield[@code = '6']">
+                <xsl:variable name="occNum" select="concat('561-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                <!-- use for-each - there may be more than one associated 880 -->
                 <xsl:for-each
-                    select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 5, 6) = $occNum]">
+                    select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
                     <xsl:if test="@ind1 != '0'">
                         <rdaid:P40026>
                             <xsl:call-template name="F561-xx-au"/>
                         </rdaid:P40026>
+                    </xsl:if>
+                    <xsl:if test="@ind1 = '0'">
+                        <rdaio:P40164 rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/',$genID,position())}"/>
                     </xsl:if>
                 </xsl:for-each>
             </xsl:if>
@@ -204,16 +215,19 @@
                 <xsl:with-param name="baseIRI" select="$baseIRI"/>
                 <xsl:with-param name="genID" select="$genID"/>
             </xsl:call-template>
-            <xsl:if test="marc:subfield[@code = '6']">
-                <xsl:variable name="occNum" select="substring(marc:subfield[@code = '6'], 5, 6)"/>
-                <xsl:for-each
-                    select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 5, 6) = $occNum]">
-                    <xsl:call-template name="F561-0x">
-                        <xsl:with-param name="baseIRI" select="$baseIRI"/>
-                        <xsl:with-param name="genID" select="generate-id()"/>
-                    </xsl:call-template>
-                </xsl:for-each>
-            </xsl:if>
+        </xsl:if>
+        <!-- again, match with the associated 880 field and do the same mapping -->
+        <xsl:if test="@tag = '561' and marc:subfield[@code = '6']">
+            <xsl:variable name="occNum" select="concat('561-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+            <xsl:for-each
+                select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                <xsl:if test="@ind1 = '0'">
+                 <xsl:call-template name="F561-0x">
+                     <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                     <xsl:with-param name="genID" select="$genID"/>
+                 </xsl:call-template>
+                </xsl:if>
+            </xsl:for-each>
         </xsl:if>
     </xsl:template>
     <!-- 583 - Action Note -->
