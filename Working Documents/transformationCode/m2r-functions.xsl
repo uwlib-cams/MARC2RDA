@@ -112,4 +112,10 @@
             rdf:resource="{$collBase}{$lookupDoc/key('normCode',$code5)/rdaad:P50006[@rdf:datatype='http://id.loc.gov/datatypes/orgs/normalized']}"
         />
     </xsl:function>
+    
+    <xsl:function name="uwf:S2" expand-text="yes">
+        <xsl:param name="marcField"/>
+        <xsl:comment>Handle $2 here when decision is made</xsl:comment>
+    </xsl:function>
+    
 </xsl:stylesheet>
