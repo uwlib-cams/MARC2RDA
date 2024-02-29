@@ -1,5 +1,6 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,,758,RESOURCE IDENTIFIER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,4,Relationship (R),,,,,,,,,,,,,
+0,,758,RESOURCE IDENTIFIER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,"4, 1",Relationship (R),,,4.0,starts with 'http://rdaregistry.info/Elements/w/' | 'http://www.rdaregistry.info/Elements/e/' | 'http://www.rdaregistry.info/Elements/m/' | 'http://www.rdaregistry.info/Elements/i/',1.0,,,,,"$4 provides a code or URI indicating the relationship of the record entity to the entity described in field 758 - if this URI is an rda registry uri for a work, expression, manifestation, or item property, the mapping can be taken from this value - CP 2024-01-18","use IRI for w/e/m/i based on $4 rda registry IRI.
+[IRI] [RDA property in $4] [value of $1]",,
 1,,758,RESOURCE IDENTIFIER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,a,Label (NR),,,,,,,,,,,,,
 2,,758,RESOURCE IDENTIFIER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,i,Relationship information (R),,,,,,,,,,,,,
 3,,758,RESOURCE IDENTIFIER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,0,Authority record control number or standard number (R),,,,,,,,,,,,,
@@ -7,5 +8,5 @@
 5,,758,RESOURCE IDENTIFIER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,2,Source of heading or term (NR),,,,,,,,,,,,,
 6,,758,RESOURCE IDENTIFIER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,,,,,,,
 7,,758,RESOURCE IDENTIFIER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,5,Institution to which field applies (NR),,,,,,,,,,,,,
-8,,758,RESOURCE IDENTIFIER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-9,,758,RESOURCE IDENTIFIER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+8,not mapped,758,RESOURCE IDENTIFIER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+9,not mapped,758,RESOURCE IDENTIFIER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,

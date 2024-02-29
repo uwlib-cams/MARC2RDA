@@ -1,30 +1,28 @@
-,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,first pass,336,CONTENT TYPE (R),Undefined,*,,Undefined,*,,,,a,Content type term (R),,,,,,,http://rdaregistry.info/Elements/e/datatype/P20001,has content type,structured description or unstructured description,Term that describes the content type for a manifestation. [MCM?],"coded. equivalent map. --TG, 2022-11-11",,
-1,first pass,336,CONTENT TYPE (R),Undefined,*,,Undefined,*,,,,b,Content type code (R),,,,,,,http://rdaregistry.info/Elements/e/datatype/P20001,has content type,identifier,Code that represents the content type for a manifestation (MCM?],"coded. equivalent map. --TG, 2022-11-11",,
-2,first pass,336,CONTENT TYPE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,2,Source (NR),,,,,,,[no direct mapping],,,,"Output source of term to an XML comment, one commentand another comment when it does not.
+,     ,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
+0,not mapped,336,CONTENT TYPE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,2,Source (NR),,,,,,,[no direct mapping]. Vocabulary encoding scheme (VES),,,,"Output source of term to an XML comment, one commentand another comment when it does not.
 comment 1 ( when $2 contains 'rda' and no $1 or $0): Source of rdaed:P20001 'hasContentType' value is coded '<xsl:value-of select=""marc:subfield[@code='2']""/>': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.
 comment 2 (when $2 does not contain 'rda' and no $1 or $0): Source of the rdaed:P20001 'hasContentType' value is coded '<xsl:value-of select=""marc:subfield[@code='2']""/>': it may be possible to consult that source to retrieve an IRI for the current value of rdaed:P20001.
 
-coded. --TG, 2022-11-11",,
-3,first pass,336,CONTENT TYPE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,http://rdaregistry.info/Elements/e/datatype/P20071,has note on expression,structured description or unstructured description,,"Construct a value for rdaed:P20071:
-""Content Type {336$a value} applies to a manifestation's {336$3 value}""
-and
-""Content Type {336$b value} applies to a manifestation's {336$3 value}""
+coded. --TG, 2022-11-11",,VES
+1,not mapped,336,CONTENT TYPE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,"At present not mapped. --TG, 2022-11-11",,
+2,not mapped,336,CONTENT TYPE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+3,reviewed,336,CONTENT TYPE (R),Undefined,*,,Undefined,*,,,,a,Content type term (R),,,,,,,http://rdaregistry.info/Elements/e/datatype/P20001,has content type,structured description or unstructured description,Term that describes the content type for a manifestation. [MCM?],"coded. equivalent map. --TG, 2022-11-11",,
+4,reviewed,336,CONTENT TYPE (R),Undefined,*,,Undefined,*,,,,b,Content type code (R),,,,,,,http://rdaregistry.info/Elements/e/datatype/P20001,has content type,identifier,Code that represents the content type for a manifestation (MCM?],"coded. equivalent map. --TG, 2022-11-11",,
+5,reviewed,336,CONTENT TYPE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation, unstructured ,,"Construct a value for rdaed:P20071:
+""Content Type {336$a value} applies to the manifestation's {336$3 value}""
 
-This has to be done for each $a and each $b as these subfields are repeatable; do note that $3 is not repeatable
+This has to be done for each $a as these subfields are repeatable; do note that $3 is not repeatable
 
 We are not at present associating the $0 or $1 with a $3 value.
 
 coded --TG, 2022-11-11",,
-4,first pass,336,CONTENT TYPE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,"At present not mapped. --TG, 2022-11-11",,
-5,do not map,336,CONTENT TYPE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-6,first pass,336,CONTENT TYPE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,Value is an identifier but not an IRI,,,,http://rdaregistry.info/Elements/e/datatype/P20001,has content type,structured decription,,"Treat same as $a and $b, which includes making a note if there is a $3 and a comment when there is a $2. --TG, 2022-11-11
+6,reviewed,336,CONTENT TYPE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,Value is an identifier but not an IRI,,,,http://rdaregistry.info/Elements/e/datatype/P20001,has content type,IDENTIFIER,,"Treat same as $a and $b, which includes making a note if there is a $3 and a comment when there is a $2. --TG, 2022-11-11
 
 Coded --TG, 2022-11-11",Identifier or IRI that represents the content type for a manifestation [MCM?],
-7,first pass,336,CONTENT TYPE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,Value is an IRI,,$2 contains 'rda',,http://rdaregistry.info/Elements/e/object/P20001,has content type,IRI,,,,
-8,first pass,336,CONTENT TYPE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,Value is an IRI,,$2 is either not present or does not contain 'rda',,[decision pending on mapping],,,,"Not yet mapped. Required ruling on how to handle $0 IRIs that are not from RDA vocabularies. 
+7,reviewed,336,CONTENT TYPE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,Value is an IRI,,$2 contains 'rda',,http://rdaregistry.info/Elements/e/object/P20001,has content type,IRI,,RDA Content Type,,
+8,reviewed,336,CONTENT TYPE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,Value is an IRI,,$2 is either not present or does not contain 'rda',,[decision pending on mapping],,IDENTIFIER,,"Not yet mapped. Required ruling on how to handle $0 IRIs that are not from RDA vocabularies. 
 
 Temporary solution: output XML comment: ""MARC data source and field 336 contains a $0 IRI value representing authority data; a solution for outputting these in RDA is not yet devised.""
 
 Temporary solution coded. --TG, 2022-11-11",,
-9,first pass,336,CONTENT TYPE (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/e/object/P20001,has content type,IRI,,"Coded. --TG, 2022-11-11",IRI that represents the content type for a manifestation [MCM?],
+9,reviewed,336,CONTENT TYPE (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/e/object/P20001,has content type,IRI,RDA Content Type,"Coded. --TG, 2022-11-11",IRI that represents the content type for a manifestation [MCM?],

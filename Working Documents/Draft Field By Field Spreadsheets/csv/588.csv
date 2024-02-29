@@ -1,11 +1,14 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,,588,SOURCE OF DESCRIPTION NOTE (R),Display constant controller,*,,Undefined,*,,,,a,Source of description note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30050,"""has note on issue, part, or iteration used as basis for identification of manifestation""",,,,,
-1,,588,SOURCE OF DESCRIPTION NOTE (R),Display constant controller,#,No information provided,Undefined,#,Undefined,,,5,Institution to which field applies (NR),,,,,,,,,,,,,
-2,,588,SOURCE OF DESCRIPTION NOTE (R),Display constant controller,#,No information provided,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-3,,588,SOURCE OF DESCRIPTION NOTE (R),Display constant controller,#,No information provided,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-4,,588,SOURCE OF DESCRIPTION NOTE (R),Display constant controller,0,Source of description,Undefined,#,Undefined,,,5,Institution to which field applies (NR),,,,,,,,,,,,,
-5,,588,SOURCE OF DESCRIPTION NOTE (R),Display constant controller,0,Source of description,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-6,,588,SOURCE OF DESCRIPTION NOTE (R),Display constant controller,0,Source of description,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-7,,588,SOURCE OF DESCRIPTION NOTE (R),Display constant controller,1,Latest issue consulted,Undefined,#,Undefined,,,5,Institution to which field applies (NR),,,,,,,,,,,,,
-8,,588,SOURCE OF DESCRIPTION NOTE (R),Display constant controller,1,Latest issue consulted,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-9,,588,SOURCE OF DESCRIPTION NOTE (R),Display constant controller,1,Latest issue consulted,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+0,first pass,588,SOURCE OF DESCRIPTION NOTE (R),Display constant controller,#,No information provided,Undefined,*,,,,a,Source of description note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,,,
+1,first pass,588,SOURCE OF DESCRIPTION NOTE (R),Display constant controller,0,Source of description,Undefined,*,,,,a,Source of description note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"Prefix $a by string ""Source of description: "" -- ZP 5/9/2023",,
+2,first pass,588,SOURCE OF DESCRIPTION NOTE (R),Display constant controller,1,Latest issue consulted,Undefined,*,,,,a,Source of description note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"Prefix $a by string ""Latest issue consulted: "" -- ZP 5/9/2023",,
+3,delete,588,SOURCE OF DESCRIPTION NOTE (R),Display constant controller,*,,Undefined,*,,,,a,Source of description note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30050,"""has note on issue, part, or iteration used as basis for identification of manifestation""",,,,,Soft-deprecated -- ZP 5/9/2023
+4,?,588,SOURCE OF DESCRIPTION NOTE (R),Display constant controller,#,No information provided,Undefined,#,Undefined,,,5,Institution to which field applies (NR),,,,,,,,,,,,,See comment here
+5,not mapped,588,SOURCE OF DESCRIPTION NOTE (R),Display constant controller,#,No information provided,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+6,not mapped,588,SOURCE OF DESCRIPTION NOTE (R),Display constant controller,#,No information provided,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+7,?,588,SOURCE OF DESCRIPTION NOTE (R),Display constant controller,0,Source of description,Undefined,#,Undefined,,,5,Institution to which field applies (NR),,,,,,,,,,,,,See comment here
+8,not mapped,588,SOURCE OF DESCRIPTION NOTE (R),Display constant controller,0,Source of description,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+9,not mapped,588,SOURCE OF DESCRIPTION NOTE (R),Display constant controller,0,Source of description,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+10,?,588,SOURCE OF DESCRIPTION NOTE (R),Display constant controller,1,Latest issue consulted,Undefined,#,Undefined,,,5,Institution to which field applies (NR),,,,,,,,,,,,,See comment here
+11,not mapped,588,SOURCE OF DESCRIPTION NOTE (R),Display constant controller,1,Latest issue consulted,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+12,not mapped,588,SOURCE OF DESCRIPTION NOTE (R),Display constant controller,1,Latest issue consulted,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,

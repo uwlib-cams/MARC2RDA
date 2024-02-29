@@ -1,21 +1,28 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,0,Reading program,Undefined,#,Undefined,,,5,Institution to which field applies (NR),,,,,,,,,,,,,
-1,,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,0,Reading program,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-2,,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,0,Reading program,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-3,,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,0,Reading program,Undefined,#,Undefined,,,a,Program name (NR),,,,,,,,,,,,,
-4,,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,0,Reading program,Undefined,#,Undefined,,,b,Interest level (NR),,,,,,,,,,,,,
-5,,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,0,Reading program,Undefined,#,Undefined,,,c,Reading level (NR),,,,,,,,,,,,,
-6,,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,0,Reading program,Undefined,#,Undefined,,,d,Title point value (NR),,,,,,,,,,,,,
-7,,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,0,Reading program,Undefined,#,Undefined,,,i,Display text (NR),,,,,,,,,,,,,
-8,,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,0,Reading program,Undefined,#,Undefined,,,x,Nonpublic note (R),,,,,,,,,,,,,
-9,,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,0,Reading program,Undefined,#,Undefined,,,z,Public note (R),,,,,,,,,,,,,
-10,,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,8,No display constant generated,Undefined,#,Undefined,,,5,Institution to which field applies (NR),,,,,,,,,,,,,
-11,,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,8,No display constant generated,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-12,,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,8,No display constant generated,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-13,,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,8,No display constant generated,Undefined,#,Undefined,,,a,Program name (NR),,,,,,,,,,,,,
-14,,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,8,No display constant generated,Undefined,#,Undefined,,,b,Interest level (NR),,,,,,,,,,,,,
-15,,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,8,No display constant generated,Undefined,#,Undefined,,,c,Reading level (NR),,,,,,,,,,,,,
-16,,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,8,No display constant generated,Undefined,#,Undefined,,,d,Title point value (NR),,,,,,,,,,,,,
-17,,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,8,No display constant generated,Undefined,#,Undefined,,,i,Display text (NR),,,,,,,,,,,,,
-18,,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,8,No display constant generated,Undefined,#,Undefined,,,x,Nonpublic note (R),,,,,,,,,,,,,
-19,,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,8,No display constant generated,Undefined,#,Undefined,,,z,Public note (R),,,,,,,,,,,,,
+0,first pass ,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,*,Reading program | No display constant generated,Undefined,#,Undefined,,,"i, a, b, c, d, z, 5",Program name (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"""Reading program: "" + [value of $i if present] + subfields a, b, c, d, x, z if present. 
+Separate subfield a, b, c, d, x, z values with "";"" Precede subfield values with ""[Subfield label] + "": "". 
+If $5 is present, append note with (At institution:  + [value of $5])",,$5 discussed here  - CP 2024-01-12
+1,first pass ,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,*,Reading program | No display constant generated,Undefined,#,Undefined,,,x,Nonpublic note (R),,,,,,,http://rdaregistry.info/Elements/m/P30462,is manifestation described with metadata by,IRI,,"[manifestationIRI] is manifestation described with metadata by [newly minted metadataIRI]
+[metadataIRI] rdf:type rdf:statement
+[metadataIRI] rdf:subject [manifestationIRI]
+[metadataIRI] rdf:predicate [rdam:p30137 has note on manifestation]
+[metadataIRI] rdf:object [value of $x]
+[metadataIRI] has category of work ""private""",,
+2,delete,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,0,Reading program,Undefined,#,Undefined,,,5,Institution to which field applies (NR),,,,,,,,,,,,,
+3,not mapped,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,0,Reading program,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+4,not mapped,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,0,Reading program,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+5,delete,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,0,Reading program,Undefined,#,Undefined,,,b,Interest level (NR),,,,,,,,,,,,,
+6,delete,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,0,Reading program,Undefined,#,Undefined,,,c,Reading level (NR),,,,,,,,,,,,,
+7,delete,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,0,Reading program,Undefined,#,Undefined,,,d,Title point value (NR),,,,,,,,,,,,,
+8,delete,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,0,Reading program,Undefined,#,Undefined,,,i,Display text (NR),,,,,,,,,,,,,
+9,delete,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,0,Reading program,Undefined,#,Undefined,,,z,Public note (R),,,,,,,,,,,,,
+10,delete,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,8,No display constant generated,Undefined,#,Undefined,,,5,Institution to which field applies (NR),,,,,,,,,,,,,
+11,not mapped,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,8,No display constant generated,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+12,not mapped,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,8,No display constant generated,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+13,delete,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,8,No display constant generated,Undefined,#,Undefined,,,a,Program name (NR),,,,,,,,,,,,,
+14,delete,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,8,No display constant generated,Undefined,#,Undefined,,,b,Interest level (NR),,,,,,,,,,,,,
+15,delete,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,8,No display constant generated,Undefined,#,Undefined,,,c,Reading level (NR),,,,,,,,,,,,,
+16,delete,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,8,No display constant generated,Undefined,#,Undefined,,,d,Title point value (NR),,,,,,,,,,,,,
+17,delete,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,8,No display constant generated,Undefined,#,Undefined,,,i,Display text (NR),,,,,,,,,,,,,
+18,delete,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,8,No display constant generated,Undefined,#,Undefined,,,x,Nonpublic note (R),,,,,,,,,,,,,
+19,delete,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,8,No display constant generated,Undefined,#,Undefined,,,z,Public note (R),,,,,,,,,,,,,

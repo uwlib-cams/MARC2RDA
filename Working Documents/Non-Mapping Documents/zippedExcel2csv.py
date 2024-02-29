@@ -3,7 +3,7 @@ import pandas as pd
 
 #Procedure:
 #1. Go to Mapping Documents top directory in Google Sheets
-#2. Select ALL (all folders that is)
+#2. Select ALL (all folders that is, but not "Non-Mapping Materials" -- only folders named after MARC fields)
 #3. Download
 #4. Enter var values for python script (at present the way this is done varies for the vars):
 #   downloadPath (currently OK for geron)
@@ -17,7 +17,7 @@ import pandas as pd
 #7. Go to git repo and manually add, commit, push
 
 downloadPath = r"C:\Users\geron\Downloads\\"
-downloadFile = "drive-download-20230121T031140Z-001.zip"
+downloadFile = "drive-download-20240228T202106Z-001.zip"
 extractPath = r"C:\Users\geron\OneDrive\Desktop\csvStage_folders\\"
 dir = r"C:\Users\geron\OneDrive\Desktop\csvStage_files"
 gitRepo = r"C:\Users\geron\OneDrive - UW\Documents\gitRepos\MARC2RDA\Working Documents\Draft Field By Field Spreadsheets\csv"

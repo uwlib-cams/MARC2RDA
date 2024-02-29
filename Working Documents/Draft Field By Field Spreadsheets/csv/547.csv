@@ -1,5 +1,6 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,,547,FORMER TITLE COMPLEXITY NOTE (R),Undefined,*,,Undefined,*,,,,a,Former title complexity note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30063,has note on title,,,,,
-1,,547,FORMER TITLE COMPLEXITY NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-2,,547,FORMER TITLE COMPLEXITY NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-3,,547,FORMER TITLE COMPLEXITY NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,z,Source of note information (NR) (SE) [OBSOLETE],,,,,,,,,,,,,
+0,first pass,547,FORMER TITLE COMPLEXITY NOTE (R),Undefined,*,,Undefined,*,,,,a,Former title complexity note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,"rdam:P30063 ""has note on title"" has been soft-deprecated, and rdam:P30137 ""has note on manifestation"" has been recommended instead.","""Former title complexity note: "" + value of $a.",,
+1,delete,547,FORMER TITLE COMPLEXITY NOTE (R),Undefined,*,,Undefined,*,,,,a,Former title complexity note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30063,has note on title,,,,,
+2,not mapped,547,FORMER TITLE COMPLEXITY NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+3,not mapped,547,FORMER TITLE COMPLEXITY NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+4,not mapped,547,FORMER TITLE COMPLEXITY NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,z,Source of note information (NR) (SE) [OBSOLETE],,,,,,,,,,,,,obsolete

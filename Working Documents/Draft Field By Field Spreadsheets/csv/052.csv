@@ -1,37 +1,106 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,a,Geographic classification area code (NR),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
-1,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,a,Geographic classification area code (NR),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-2,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,a,Geographic classification area code (NR),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,,,,,
-3,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,a,Geographic classification area code (NR),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,
-4,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,b,Geographic classification subarea code (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
-5,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,b,Geographic classification subarea code (R),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-6,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,b,Geographic classification subarea code (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,,,,,
-7,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,b,Geographic classification subarea code (R),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,
-8,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,#,Library of Congress Classification,Undefined,#,Undefined,,,c,Subject (MP) [OBSOLETE],,,,,,,,,,,,,
-9,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,0,U.S. Dept. of Defense Classification [OBSOLETE],Undefined,#,Undefined,,,c,Subject (MP) [OBSOLETE],,,,,,,,,,,,,
-10,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,1,U.S. Dept. of Defense Classification,Undefined,#,Undefined,,,c,Subject (MP) [OBSOLETE],,,,,,,,,,,,,
-11,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,7,Source specified in subfield $2,Undefined,#,Undefined,,,c,Subject (MP) [OBSOLETE],,,,,,,,,,,,,
-12,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,d,Populated place name (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
-13,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,d,Populated place name (R),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-14,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,d,Populated place name (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,,,,,
-15,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,d,Populated place name (R),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,
-16,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,0,U.S. Dept. of Defense Classification [OBSOLETE],Undefined,#,Undefined,,,2,Code source (NR),,,,,,,,,,,,,
-17,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,0,U.S. Dept. of Defense Classification [OBSOLETE],Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-18,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,0,U.S. Dept. of Defense Classification [OBSOLETE],Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-19,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,1,U.S. Dept. of Defense Classification,Undefined,#,Undefined,,,2,Code source (NR),,,,,,,,,,,,,
-20,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,1,U.S. Dept. of Defense Classification,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-21,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,1,U.S. Dept. of Defense Classification,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-22,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,7,Source specified in subfield $2,Undefined,#,Undefined,,,2,Code source (NR),,,,,,,,,,,,,
-23,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,7,Source specified in subfield $2,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-24,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,7,Source specified in subfield $2,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-25,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,#,Library of Congress Classification,Undefined,#,Undefined,,,2,Code source (NR),,,,,,,,,,,,,
-26,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,#,Library of Congress Classification,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-27,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,#,Library of Congress Classification,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-28,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
-29,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-30,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,,,,,
-31,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,
-32,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
-33,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-34,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,,,,,
-35,,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,
+0,not mapped,52,GEOGRAPHIC CLASSIFICATION (R),Code source,#,Library of Congress Classification,Undefined,#,Undefined,,,c,Subject (MP) [OBSOLETE],,,,,,,,,,,,,
+1,not mapped,52,GEOGRAPHIC CLASSIFICATION (R),Code source,0,U.S. Dept. of Defense Classification [OBSOLETE],Undefined,#,Undefined,,,c,Subject (MP) [OBSOLETE],,,,,,,,,,,,,
+2,not mapped,52,GEOGRAPHIC CLASSIFICATION (R),Code source,1,U.S. Dept. of Defense Classification,Undefined,#,Undefined,,,c,Subject (MP) [OBSOLETE],,,,,,,,,,,,,
+3,not mapped,52,GEOGRAPHIC CLASSIFICATION (R),Code source,7,Source specified in subfield $2,Undefined,#,Undefined,,,c,Subject (MP) [OBSOLETE],,,,,,,,,,,,,
+4,not mapped,52,GEOGRAPHIC CLASSIFICATION (R),Code source,#,Library of Congress Classification,Undefined,#,Undefined,,,2,Code source (NR),,,,,,,,,,,,,
+5,not mapped,52,GEOGRAPHIC CLASSIFICATION (R),Code source,#,Library of Congress Classification,Undefined,#,Undefined,,,6, Linkage (NR),,,,,,,,,,,,,
+6,not mapped,52,GEOGRAPHIC CLASSIFICATION (R),Code source,#,Library of Congress Classification,Undefined,#,Undefined,,,8, Field link and sequence number (R),,,,,,,,,,,,,
+7,first pass,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,"a,b","Geographic classification area code (NR),Geographic classification subarea code (R)",,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,IRI, ,"[Work] → has subject place → [Place] 
+[Place] → has related nomen of place → [Nomen]
+[Nomen] → has nomen string → [""$a value"" + ""$b value""]
+[Nomen] → has scheme of nomen → [URI for code source specified in 1st indicator or $2 if 1st indicator is 7]
+-CY & PS, 2023-12-06", ,Shape for identifiers: https://docs.google.com/document/d/1jbon0UHJhpj6WfgS2bAjtYWd04hQSNFtttKFtiLp_LU/edit#bookmark=id.n709x3nv341k 
+8,first pass,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,d,Populated place name (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,IRI,,"[Work] → has subject place → [Place] 
+[Place] → has related nomen of place → [Nomen]
+[Nomen] → has nomen string → [""$d value""]
+[Nomen] → has scheme of nomen → [URI for code source specified in 1st indicator or $2 if 1st indicator is 7]
+-CY & PS, 2023-12-06",,
+9,first pass,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,IRI,,"[Work] → has subject place → [Place] 
+[Place] → has related nomen of place → [Nomen]
+[Nomen] → has nomen string → [""$0 value""]
+[Nomen] → has scheme of nomen → [URI for code source specified in 1st indicator or $2 if 1st indicator is 7]
+-CY & PS, 2023-12-06",,
+10,first pass,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,1,"Real World Object URI (R)
+",,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,IRI,,,,
+11,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,a,Geographic classification area code (NR),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,too broad,,,
+12,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,a,Geographic classification area code (NR),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,too broad,,,
+13,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,a,Geographic classification area code (NR),,,,,,, http://rdaregistry.info/Elements/p/P70020,has identifier for place,Recording an identifier,,,,
+14,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,a,Geographic classification area code (NR),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,
+15,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,b,Geographic classification subarea code (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
+16,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,b,Geographic classification subarea code (R),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
+17,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,b,Geographic classification subarea code (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,structured description,,,,
+18,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,b,Geographic classification subarea code (R),,,,,,, http://rdaregistry.info/Elements/p/P70020,has identifier for place,Recording an identifier,,,,
+19,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,b,Geographic classification subarea code (R),,,,,,, http://rdaregistry.info/Elements/p/P70033, has part place, structured description/Recording an identifier,A place that is located within another place.,,,
+20,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,b,Geographic classification subarea code (R),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,
+21,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,d,Populated place name (R),,,,,,, http://rdaregistry.info/Elements/p/P70002,has preferred name of place,,too broad,,,
+22,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,d,Populated place name (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,too broad,,,
+23,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,d,Populated place name (R),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,too broad,,,
+24,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,d,Populated place name (R),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,too narrow,,,
+25,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,0,U.S. Dept. of Defense Classification [OBSOLETE],Undefined,#,Undefined,,,2,Code source (NR),,,,,,,,,,,,,
+26,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,0,U.S. Dept. of Defense Classification [OBSOLETE],Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+27,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,0,U.S. Dept. of Defense Classification [OBSOLETE],Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+28,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,#,Library of Congress Classification,Undefined,#,Undefined,,,"a, b",Geographic classification area code (NR),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,IRI, ,"[Work] → has subject place → [Place] 
+[Place] → has related nomen of place → [Nomen]
+[Nomen] → has nomen string → [""$a value"" + ""$b value]
+[Nomen] → has scheme of nomen → [URI for code source specified in 1st indicator or $2 if 1st indicator is 7]
+-CY & PS, 2023-12-06", ,
+29,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,#,Library of Congress Classification,Undefined,#,Undefined,,,a,Geographic classification area code (NR),,,,,,, http://rdaregistry.info/Elements/p/P70020,has identifier for place,Recording an identifier, ,URI,"Use a vocabulary encoding scheme as a source of information.
+Record an identifier found in a source of information. Do not amend the identifier.",
+30,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,#,Library of Congress Classification,Undefined,#,Undefined,,,b,Geographic classification subarea code (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,structured description, ,"""Geographic classification area code : "" + URI", ,
+31,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,#,Library of Congress Classification,Undefined,#,Undefined,,,b,Geographic classification subarea code (R),,,,,,, http://rdaregistry.info/Elements/p/P70020,has identifier for place,Recording an identifier, , URI,,
+32,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,#,Library of Congress Classification,Undefined,#,Undefined,,,b,Geographic classification subarea code (R),,,,,,, http://rdaregistry.info/Elements/p/P70033,has part place, structured description/Recording an identifier,A place that is located within another place.," LC/PCC practice: If a local encoding scheme is able to record the value of an element as an identifier or IRI, use judgment in applying the recording method.",,
+33,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,#,Library of Congress Classification,Undefined,#,Undefined,,,d,Populated place name (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,structured description,,,,
+34,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,#,Library of Congress Classification,Undefined,#,Undefined,,,d,Populated place name (R),,,,,,, http://rdaregistry.info/Elements/p/P70020,has identifier for place,Recording an identifier, ,URI,,
+35,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,#,Library of Congress Classification,Undefined,#,Undefined,,,d,Populated place name (R),,,,,,, http://rdaregistry.info/Elements/p/P70002,has preferred name of place,unstructured description,,"""Populated place name: "" + [$d value]",,
+36,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,#,Library of Congress Classification,Undefined,#,Undefined,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,IRI,,"[Work] → has subject place → [Place] 
+[Place] → has related nomen of place → [Nomen]
+[Nomen] → has nomen string → [""$0 value""]
+[Nomen] → has scheme of nomen → [URI for code source specified in 1st indicator or $2 if 1st indicator is 7]
+-CY & PS, 2023-12-06",,
+37,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,#,Library of Congress Classification,Undefined,#,Undefined,,,1,"Real World Object URI (R)
+",,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,IRI,,,,
+38,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,1,U.S. Dept. of Defense Classification,Undefined,#,Undefined,,,a,Geographic classification area code (NR),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,structured description, ,"""Geographic classification area code : "" + [$a value]",it is code,
+39,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,1,U.S. Dept. of Defense Classification,Undefined,#,Undefined,,,a,Geographic classification area code (NR),,,,,,, http://rdaregistry.info/Elements/p/P70020,has identifier for place,Recording an identifier, ,URI, ,
+40,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,1,U.S. Dept. of Defense Classification,Undefined,#,Undefined,,,b,Geographic classification subarea code (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,structured description, ,"""Geographic classification area code : "" + [$a value]",it is code,
+41,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,1,U.S. Dept. of Defense Classification,Undefined,#,Undefined,,,b,Geographic classification subarea code (R),,,,,,, http://rdaregistry.info/Elements/p/P70020,has identifier for place,Recording an identifier, , ,,
+42,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,1,U.S. Dept. of Defense Classification,Undefined,#,Undefined,,,b,Geographic classification subarea code (R),,,,,,, http://rdaregistry.info/Elements/p/P70033, has part place, structured description/Recording an identifier,A place that is located within another place.," LC/PCC practice: If a local encoding scheme is able to record the value of an element as an identifier or IRI, use judgment in applying the recording method.",,
+43,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,1,U.S. Dept. of Defense Classification,Undefined,#,Undefined,,,d,Populated place name (R),,,,,,, http://rdaregistry.info/Elements/p/P70020,has identifier for place,Recording an identifier, , ,,
+44,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,1,U.S. Dept. of Defense Classification,Undefined,#,Undefined,,,d,Populated place name (R),,,,,,, http://rdaregistry.info/Elements/p/P70002,has preferred name of place,unstructured description,,"""Populated place name: "" + [$d value]",,
+45,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,1,U.S. Dept. of Defense Classification,Undefined,#,Undefined,,,d,Populated place name (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,structured description,,"""Populated place name: "" + [$d value]",,
+46,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,1,U.S. Dept. of Defense Classification,Undefined,#,Undefined,,,0,Authority record control number or standard number (R),,,,,,,,,,,,,
+47,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,1,U.S. Dept. of Defense Classification,Undefined,#,Undefined,,,1,"Real World Object URI (R)
+",,,,,,,,,,,,,
+48,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,1,U.S. Dept. of Defense Classification,Undefined,#,Undefined,,,2,Code source (NR),,,,,,,,,,,,,
+49,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,1,U.S. Dept. of Defense Classification,Undefined,#,Undefined,,,6, Linkage (NR),,,,,,,,,,,,,
+50,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,1,U.S. Dept. of Defense Classification,Undefined,#,Undefined,,,8, Field link and sequence number (R),,,,,,,,,,,,,
+51,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,7," Source specified in subfield $2
+",Undefined,#,Undefined,,,a,Geographic classification area code (NR),,,,,,, http://rdaregistry.info/Elements/p/P70020,has identifier for place,Recording an identifier, ,,"Use a vocabulary encoding scheme as a source of information.
+Record an identifier found in a source of information. Do not amend the identifier.",
+52,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,7," Source specified in subfield $2
+",Undefined,#,Undefined,,,a,Geographic classification area code (NR),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,structured description, ,, ,
+53,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,7," Source specified in subfield $2
+",Undefined,#,Undefined,,,b,Geographic classification subarea code (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,structured description, ,"""Geographic classification area code : "" + [$a value]",it is code,
+54,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,7," Source specified in subfield $2
+",Undefined,#,Undefined,,,b,Geographic classification subarea code (R),,,,,,, http://rdaregistry.info/Elements/p/P70020,has identifier for place,Recording an identifier, , ,,
+55,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,7," Source specified in subfield $2
+",Undefined,#,Undefined,,,b,Geographic classification subarea code (R),,,,,,, http://rdaregistry.info/Elements/p/P70033, has part place, structured description/Recording an identifier,A place that is located within another place.," LC/PCC practice: If a local encoding scheme is able to record the value of an element as an identifier or IRI, use judgment in applying the recording method.",,
+56,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,7," Source specified in subfield $2
+",Undefined,#,Undefined,,,d,Populated place name (R),,,,,,, http://rdaregistry.info/Elements/p/P70020,has identifier for place,Recording an identifier, , ,,
+57,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,7," Source specified in subfield $2
+",Undefined,#,Undefined,,,d,Populated place name (R),,,,,,, http://rdaregistry.info/Elements/p/P70002,has preferred name of place,unstructured description,,"""Populated place name: "" + [$d value]",,
+58,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,7," Source specified in subfield $2
+",Undefined,#,Undefined,,,d,Populated place name (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,structured description,,"""Populated place name: "" + [$d value]",,
+59,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,7," Source specified in subfield $2
+",Undefined,#,Undefined,,,0,Authority record control number or standard number (R),,,,,,,,,,,,,
+60,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,7," Source specified in subfield $2
+",Undefined,#,Undefined,,,1,"Real World Object URI (R)
+",,,,,,,,,,,,,
+61,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,7," Source specified in subfield $2
+",Undefined,#,Undefined,,,2,Code source (NR),,,,,,,,,,,,,
+62,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,7," Source specified in subfield $2
+",Undefined,#,Undefined,,,6, Linkage (NR),,,,,,,,,,,,,
+63,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,7," Source specified in subfield $2
+",Undefined,#,Undefined,,,8, Field link and sequence number (R),,,,,,,,,,,,,
+64,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,,,,,
+65,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,

@@ -176,6 +176,7 @@
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'b']">
             <rdamd:P30169>
+                <!--the parens below are not working; probably should remove -->
                 <xsl:value-of select="."/>
                 <xsl:text> (</xsl:text>
                 <xsl:value-of select="preceding-sibling::marc:subfield[@code = 'a'][1]"/>
@@ -426,7 +427,7 @@
                 <xsl:if test=".[@code = 'b']">{'solo '||.||'AFTERB '}</xsl:if>
                 <xsl:if test=".[@code = 'd']">{'/'||.||' '}</xsl:if>
                 <xsl:if test=".[@code = 'p']">{'or '||.||' '}</xsl:if>
-                <xsl:if test=".[@code = 'v']">{'['||.||'] '}</xsl:if>
+                <xsl:if test=".[@code = 'v']">{'('||.||') '}</xsl:if>
                 <xsl:if test=".[@code = 'r']">{'Total soloists: '||.||'. '}</xsl:if>
                 <xsl:if test=".[@code = 's']">{'Total performers: '||.||'. '}</xsl:if>
                 <xsl:if test=".[@code = 't']">{'Total ensembles: '||.||'. '}</xsl:if>

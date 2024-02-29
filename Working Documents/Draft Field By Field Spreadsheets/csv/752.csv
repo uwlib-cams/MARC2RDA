@@ -1,45 +1,114 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,#,Undefined,Undefined,#,Undefined,,,4,Relationship (R),,,,,,,,,,,,,
-1,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,a,Country or larger entity (R),,,,related place of work|has related place of work,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-2,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,a,Country or larger entity (R),,,,place of capture|has place of capture,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,,,,
-3,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,a,Country or larger entity (R),,,,related place of expression|has related place of expression,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
-4,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,a,Country or larger entity (R),,,,related place of manifestation|has related place of manifestation,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,
-5,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,b,First-order political jurisdiction (NR),,,,related place of work|has related place of work,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-6,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,b,First-order political jurisdiction (NR),,,,place of capture|has place of capture,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,,,,
-7,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,b,First-order political jurisdiction (NR),,,,related place of expression|has related place of expression,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
-8,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,b,First-order political jurisdiction (NR),,,,related place of manifestation|has related place of manifestation,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,
-9,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,c,Intermediate political jurisdiction (R),,,,related place of work|has related place of work,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-10,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,c,Intermediate political jurisdiction (R),,,,place of capture|has place of capture,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,,,,
-11,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,c,Intermediate political jurisdiction (R),,,,related place of expression|has related place of expression,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
-12,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,c,Intermediate political jurisdiction (R),,,,related place of manifestation|has related place of manifestation,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,
-13,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,d,City (NR),,,,related place of work|has related place of work,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-14,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,d,City (NR),,,,place of capture|has place of capture,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,,,,
-15,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,d,City (NR),,,,related place of expression|has related place of expression,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
-16,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,d,City (NR),,,,related place of manifestation|has related place of manifestation,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,
-17,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,e,Relator term (R),,,,related place of work|has related place of work,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-18,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,e,Relator term (R),,,,place of capture|has place of capture,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,,,,
-19,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,e,Relator term (R),,,,related place of expression|has related place of expression,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
-20,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,e,Relator term (R),,,,related place of manifestation|has related place of manifestation,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,
-21,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,f,City subsection (R),,,,related place of work|has related place of work,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-22,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,f,City subsection (R),,,,place of capture|has place of capture,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,,,,
-23,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,f,City subsection (R),,,,related place of expression|has related place of expression,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
-24,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,f,City subsection (R),,,,related place of manifestation|has related place of manifestation,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,
-25,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,g,Other nonjurisdictional geographic region and feature (R),,,,related place of work|has related place of work,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-26,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,g,Other nonjurisdictional geographic region and feature (R),,,,place of capture|has place of capture,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,,,,
-27,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,g,Other nonjurisdictional geographic region and feature (R),,,,related place of expression|has related place of expression,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
-28,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,g,Other nonjurisdictional geographic region and feature (R),,,,related place of manifestation|has related place of manifestation,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,
-29,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,h,Extraterrestrial area (R),,,,related place of work|has related place of work,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-30,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,h,Extraterrestrial area (R),,,,place of capture|has place of capture,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,,,,
-31,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,h,Extraterrestrial area (R),,,,related place of expression|has related place of expression,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
-32,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,h,Extraterrestrial area (R),,,,related place of manifestation|has related place of manifestation,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,
-33,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,#,Undefined,Undefined,#,Undefined,,,2,Source of heading or term (NR),,,,,,,,,,,,,
-34,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-35,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-36,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,related place of work|has related place of work,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-37,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,place of capture|has place of capture,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,,,,
-38,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,related place of expression|has related place of expression,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
-39,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,related place of manifestation|has related place of manifestation,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,
-40,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,related place of work|has related place of work,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-41,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,place of capture|has place of capture,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,,,,
-42,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,related place of expression|has related place of expression,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
-43,,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,related place of manifestation|has related place of manifestation,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,
+0,first pass,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,not(4),Relationship (R),,,,,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,IRI,,"[manifestationIRI] rdam:P30272 [placeIRI]
+
+If $1: placeIRI is the value of subfield $1
+If not($1): placeIRI is minted
+
+[placeIRI] rdap:P70019 has appellation of place [placeNomen]
+
+[placeNomen] rdan:P80068 has nomen string [values of a, b, c, d, f, g, in order of appearance, with -- between each subfield. OR value of h (or multiple h subfields in order of appearance with -- between each subfield)]
+
+if $2: [placeNomen] rdan:P80069 has scheme of nomen [value of $2]",,
+1,first pass,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,4,Relationship (R),,,4.0,starts with 'http://www.rdaregistry.info/Elements/w/' | 'http://www.rdaregistry.info/Elements/e/' | 'http://www.rdaregistry.info/Elements/m/' | 'http://www.rdaregistry.info/Elements/i/',,,value of $4,,IRI,,"[manifestationIRI] [value of $4] [placeIRI]
+
+If $1: placeIRI is the value of subfield $1
+If not($1): placeIRI is minted
+
+[placeIRI] rdap:P70019 has appellation of place [placeNomen]
+
+[placeNomen] rdan:P80068 has nomen string [values of a, b, c, d, f, g, in order of appearance, with -- between each subfield. OR value of h (or multiple h subfields in order of appearance with -- between each subfield)]
+
+if $2: [placeNomen] rdan:P80069 has scheme of nomen [value of $2]",,
+2,first pass,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,4,Relationship (R),,,4.0,"""dbp""",,,http://rdaregistry.info/Elements/m/P30085,has place of distribution,IRI,,"""[manifestationIRI] rdam:P30085 [placeIRI]
+
+If $1: placeIRI is the value of subfield $1
+If not($1): placeIRI is minted
+
+[placeIRI] rdap:P70019 has appellation of place [placeNomen]
+
+[placeNomen] rdan:P80068 has nomen string [values of a, b, c, d, f, g, in order of appearance, with -- between each subfield. OR value of h (or multiple h subfields in order of appearance with -- between each subfield)]
+
+if $2: [placeNomen] rdan:P80069 has scheme of nomen [value of $2]""",,
+3,first pass,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,4,Relationship (R),,,4.0,"""mfp""",,,http://rdaregistry.info/Elements/m/P30087,has place of manufacture,IRI,,"[manifestationIRI] rdam:P30087 [placeIRI]
+
+If $1: placeIRI is the value of subfield $1
+If not($1): placeIRI is minted
+
+[placeIRI] rdap:P70019 has appellation of place [placeNomen]
+
+[placeNomen] rdan:P80068 has nomen string [values of a, b, c, d, f, g, in order of appearance, with -- between each subfield. OR value of h (or multiple h subfields in order of appearance with -- between each subfield)]
+
+if $2: [placeNomen] rdan:P80069 has scheme of nomen [value of $2]",,
+4,first pass,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,4,Relationship (R),,,4.0,"""prp""",,,http://rdaregistry.info/Elements/m/P30086,has place of production,IRI,,"[manifestationIRI] rdam:P30086 [placeIRI]
+
+If $1: placeIRI is the value of subfield $1
+If not($1): placeIRI is minted
+
+[placeIRI] rdap:P70019 has appellation of place [placeNomen]
+
+[placeNomen] rdan:P80068 has nomen string [values of a, b, c, d, f, g, in order of appearance, with -- between each subfield. OR value of h (or multiple h subfields in order of appearance with -- between each subfield)]
+
+if $2: [placeNomen] rdan:P80069 has scheme of nomen [value of $2]",,
+5,first pass,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,4,Relationship (R),,,4.0,"""pup""",,,http://rdaregistry.info/Elements/m/P30088,has place of publication,IRI,,"[manifestationIRI] rdam:P30088 [placeIRI]
+
+If $1: placeIRI is the value of subfield $1
+If not($1): placeIRI is minted
+
+[placeIRI] rdap:P70019 has appellation of place [placeNomen]
+
+[placeNomen] rdan:P80068 has nomen string [values of a, b, c, d, f, g, in order of appearance, with -- between each subfield. OR value of h (or multiple h subfields in order of appearance with -- between each subfield)]
+
+if $2: [placeNomen] rdan:P80069 has scheme of nomen [value of $2]",,
+6,first pass,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,4,Relationship (R),,,4.0,not any of the above conditions,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,IRI,,"[manifestationIRI] rdam:P30272 [placeIRI]
+
+If $1: placeIRI is the value of subfield $1
+If not($1): placeIRI is minted
+
+[placeIRI] rdap:P70019 has appellation of place [placeNomen]
+
+[placeNomen] rdan:P80068 has nomen string [values of a, b, c, d, f, g, in order of appearance, with -- between each subfield. OR value of h (or multiple h subfields in order of appearance with -- between each subfield)]
+
+if $2: [placeNomen] rdan:P80069 has scheme of nomen [value of $2]",,
+7,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,a,Country or larger entity (R),,,,related place of work|has related place of work,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
+8,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,a,Country or larger entity (R),,,,place of capture|has place of capture,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,,,,
+9,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,a,Country or larger entity (R),,,,related place of expression|has related place of expression,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
+10,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,a,Country or larger entity (R),,,,related place of manifestation|has related place of manifestation,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,
+11,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,b,First-order political jurisdiction (NR),,,,related place of work|has related place of work,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
+12,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,b,First-order political jurisdiction (NR),,,,place of capture|has place of capture,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,,,,
+13,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,b,First-order political jurisdiction (NR),,,,related place of expression|has related place of expression,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
+14,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,b,First-order political jurisdiction (NR),,,,related place of manifestation|has related place of manifestation,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,
+15,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,c,Intermediate political jurisdiction (R),,,,related place of work|has related place of work,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
+16,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,c,Intermediate political jurisdiction (R),,,,place of capture|has place of capture,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,,,,
+17,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,c,Intermediate political jurisdiction (R),,,,related place of expression|has related place of expression,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
+18,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,c,Intermediate political jurisdiction (R),,,,related place of manifestation|has related place of manifestation,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,
+19,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,d,City (NR),,,,related place of work|has related place of work,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
+20,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,d,City (NR),,,,place of capture|has place of capture,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,,,,
+21,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,d,City (NR),,,,related place of expression|has related place of expression,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
+22,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,d,City (NR),,,,related place of manifestation|has related place of manifestation,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,
+23,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,e,Relator term (R),,,,related place of work|has related place of work,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
+24,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,e,Relator term (R),,,,place of capture|has place of capture,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,,,,
+25,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,e,Relator term (R),,,,related place of expression|has related place of expression,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
+26,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,e,Relator term (R),,,,related place of manifestation|has related place of manifestation,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,
+27,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,f,City subsection (R),,,,related place of work|has related place of work,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
+28,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,f,City subsection (R),,,,place of capture|has place of capture,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,,,,
+29,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,f,City subsection (R),,,,related place of expression|has related place of expression,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
+30,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,f,City subsection (R),,,,related place of manifestation|has related place of manifestation,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,
+31,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,g,Other nonjurisdictional geographic region and feature (R),,,,related place of work|has related place of work,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
+32,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,g,Other nonjurisdictional geographic region and feature (R),,,,place of capture|has place of capture,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,,,,
+33,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,g,Other nonjurisdictional geographic region and feature (R),,,,related place of expression|has related place of expression,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
+34,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,g,Other nonjurisdictional geographic region and feature (R),,,,related place of manifestation|has related place of manifestation,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,
+35,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,h,Extraterrestrial area (R),,,,related place of work|has related place of work,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
+36,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,h,Extraterrestrial area (R),,,,place of capture|has place of capture,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,,,,
+37,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,h,Extraterrestrial area (R),,,,related place of expression|has related place of expression,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
+38,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,h,Extraterrestrial area (R),,,,related place of manifestation|has related place of manifestation,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,
+39,not mapped,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,#,Undefined,Undefined,#,Undefined,,,2,Source of heading or term (NR),,,,,,,,,,,,,
+40,not mapped,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+41,not mapped,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+42,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,related place of work|has related place of work,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
+43,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,place of capture|has place of capture,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,,,,
+44,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,related place of expression|has related place of expression,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
+45,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,related place of manifestation|has related place of manifestation,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,
+46,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,related place of work|has related place of work,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
+47,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,place of capture|has place of capture,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,,,,
+48,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,related place of expression|has related place of expression,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
+49,delete,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,related place of manifestation|has related place of manifestation,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,
