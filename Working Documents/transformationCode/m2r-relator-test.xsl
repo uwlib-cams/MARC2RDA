@@ -89,22 +89,9 @@
                 </xsl:if>
             </xsl:for-each>
             
-            <!-- any $0 matches -->
-            <xsl:for-each select="$field/marc:subfield[@code = '0']">
-                <xsl:if test="$relMatch/uwmisc:marcRelIri = .">
-                    <xsl:value-of select="$relMatch"/>
-                </xsl:if>
-            </xsl:for-each>
-            
-            <!-- any $1 matches -->
-            <xsl:for-each select="$field/marc:subfield[@code = '1']">
-                <xsl:if test="$relMatch/uwmisc:marcRelIri = .">
-                    <xsl:value-of select="$relMatch"/>
-                </xsl:if>
-            </xsl:for-each>
         </xsl:for-each>
         <!-- currently outputs the matching row. In implementation, this will return the appropriate curie instead -->
-        <!-- not checking for 4, 0, or 1 matching an rda prop IRI - this results in too many duplicates
+        <!-- not checking for 4 matching an rda prop IRI - this results in too many duplicates
              may just check if it's an rda WEMI IRI and map directly? -->
     </xsl:template>
 </xsl:stylesheet>

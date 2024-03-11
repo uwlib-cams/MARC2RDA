@@ -16,11 +16,11 @@
         </marc:datafield>
         <marc:datafield tag="700" ind1="3" ind2=" ">
             <marc:subfield code="a">Test project director family</marc:subfield>
-            <marc:subfield code="0">http://id.loc.gov/vocabulary/relators/pdr</marc:subfield>
+            <marc:subfield code="4">http://id.loc.gov/vocabulary/relators/pdr</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="100" ind1="1" ind2=" ">
             <marc:subfield code="a">Test originator</marc:subfield>
-            <marc:subfield code="1">http://rdaregistry.info/Elements/e/P20389</marc:subfield>
+            <marc:subfield code="4">http://rdaregistry.info/Elements/e/P20389</marc:subfield>
         </marc:datafield>
     </marc:record>
 </marc:collection>
