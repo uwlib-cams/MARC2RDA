@@ -32,11 +32,25 @@
         <xsl:for-each select="marc:collection">
             <xsl:for-each select="marc:record">
                 <!-- in actual implementation, a template will match on X00 fields in each mode and call relatorLookup template -->
-                <xsl:for-each select="marc:datafield[@tag = '100'] | marc:datafield[@tag = '700']">
+                <xsl:for-each select="marc:datafield[@tag = '100'] | marc:datafield[@tag = '700'] | 
+                    marc:datafield[@tag = '110'] | marc:datafield[@tag = '710']">
+                    <xsl:variable name="fieldValue">
+                        <xsl:choose>
+                            <xsl:when test="(@tag = '100') or (@tag = '700')">
+                                <xsl:value-of select="'X00'"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="@tag"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:variable>
                     <xsl:variable name="indValue">
                         <xsl:choose>
                             <xsl:when test="(@ind1 = '1') or (@ind1 = '0')">
                                 <xsl:value-of select="'1'"/>
+                            </xsl:when>
+                            <xsl:when test="(@ind1 = ' ')">
+                                <xsl:value-of select="'na'"/>
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:value-of select="@ind1"/>
@@ -47,7 +61,7 @@
                         <!-- the marc:datafield as a whole is passed in -->
                         <xsl:with-param name="field" select="."/>
                         <!-- The fieldNum = X00 -->
-                        <xsl:with-param name="fieldNum">X00</xsl:with-param>
+                        <xsl:with-param name="fieldNum" select="$fieldValue"/>
                         <!-- if the ind = 0 or 1, select 1 otherwise use actual ind value -->
                         <xsl:with-param name="ind" select="$indValue"/>
                         <!-- domain determined by mode -->
@@ -74,6 +88,9 @@
             <xsl:for-each select="$field/marc:subfield[@code = 'e']">
                 <xsl:if
                     test="lower-case($relMatch/uwmisc:subELabelMarc) = lower-case(replace(., '\.', ''))">
+                    <xsl:value-of select="$relMatch"/>
+                </xsl:if>
+                <xsl:if test="lower-case($relMatch/uwmisc:subELabelRda) = lower-case(replace(., '\.', ''))">
                     <xsl:value-of select="$relMatch"/>
                 </xsl:if>
             </xsl:for-each>

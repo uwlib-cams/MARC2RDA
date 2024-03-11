@@ -14,6 +14,10 @@
             <marc:subfield code="a">Test Auctioneer</marc:subfield>
             <marc:subfield code="e">Auctioneer</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="710" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test Depositor</marc:subfield>
+            <marc:subfield code="e">depositor corporate body</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="700" ind1="3" ind2=" ">
             <marc:subfield code="a">Test project director family</marc:subfield>
             <marc:subfield code="4">http://id.loc.gov/vocabulary/relators/pdr</marc:subfield>
