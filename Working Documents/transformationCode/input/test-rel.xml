@@ -12,7 +12,7 @@
         </marc:datafield>
         <marc:datafield tag="100" ind1="1" ind2=" ">
             <marc:subfield code="a">Test Auctioneer</marc:subfield>
-            <marc:subfield code="e">Auctioneer</marc:subfield>
+            <marc:subfield code="e">auctioneer</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="710" ind1=" " ind2=" ">
             <marc:subfield code="a">Test Depositor</marc:subfield>
