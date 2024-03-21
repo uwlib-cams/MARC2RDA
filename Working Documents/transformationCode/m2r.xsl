@@ -24,6 +24,7 @@
     <xsl:strip-space elements="*"/>
     <xsl:mode name="ite" on-no-match="deep-skip"/>
     <xsl:mode name="nom" on-no-match="deep-skip"/>
+    <xsl:mode name="metaWor" on-no-match="deep-skip"/>
     <xsl:variable name="base" select="'http://fakeIRI2.edu/'"/>
     <xsl:include href="m2r-0xx.xsl"/>
     <xsl:include href="m2r-1xx.xsl"/>
