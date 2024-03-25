@@ -253,7 +253,8 @@
         </xsl:if>
     </xsl:template>
     <!-- 583 - Action Note -->
-    <xsl:template match="marc:datafield[@tag = '583']" mode="ite" expand-text="yes">
+    <xsl:template match="marc:datafield[@tag = '583'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '583-00']" 
+        mode="ite" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="controlNumber"/>
         <xsl:call-template name="getmarc"/>
@@ -267,28 +268,50 @@
             </xsl:if>
             <xsl:if test="@ind1 != '0'">
                 <rdaid:P40028>
-                    <xsl:call-template name="F583-1x-abcdefhijklnouxz23"/>
+                    <xsl:call-template name="F583-xx-abcdefhijklnouxz23"/>
                 </rdaid:P40028>
                 <!-- subfield 'x' is private note -->
                 <!-- for each one, create triple 'is item described with metadata by' [metadataWork IRI] -->
-                <!-- metadataWork IRI = 'http://marc2rda.edu/fake/MetaWor/' + end of item IRI + position of subfield x -->
+                <!-- metadataWork IRI = 'http://marc2rda.edu/fake/MetaWor/' + generate-id() of subfield x -->
                 <xsl:for-each select="marc:subfield[@code = 'x']">
-                    <!-- need to do a for-each to set context for subfield position() so that context = list of subfield x's -->
+                    <!-- need to do a for-each to set context for subfield id -->
                     <rdaio:P40164
-                        rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/',$genID,position())}"
+                        rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"
                     />
                 </xsl:for-each>
             </xsl:if>
             <!-- @ind1 = '0'is private field -->
             <xsl:if test="@ind1 = '0'">
-                <!-- 'is item described with metadata by' 'https://marc2rda.edu/fake/MetaWor/[end of item id][position of marc field node] -->
-                <!-- position in this case is the location of the 583 field in the list of all fields, which is unique -->
+                <!-- 'is item described with metadata by' 'https://marc2rda.edu/fake/MetaWor/[end of item id] -->
                 <rdaio:P40164
-                    rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/',$genID,position())}"/>
+                    rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"/>
+            </xsl:if>
+            
+            <xsl:if test="@tag = '583' and marc:subfield[@code = '6']">
+                <xsl:variable name="occNum"
+                    select="concat('583-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                <!-- use for-each - there may be more than one associated 880 -->
+                <xsl:for-each
+                    select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                    <xsl:if test="@ind1 != '0'">
+                        <rdaid:P40028>
+                            <xsl:call-template name="F583-xx-abcdefhijklnouxz23"/>
+                        </rdaid:P40028>
+                        <xsl:for-each select="marc:subfield[@code = 'x']">
+                            <rdaio:P40164
+                                rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"
+                            />
+                        </xsl:for-each>
+                    </xsl:if>
+                    <xsl:if test="@ind1 = '0'">
+                        <rdaio:P40164
+                            rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"/>
+                    </xsl:if>
+                </xsl:for-each>
             </xsl:if>
         </rdf:Description>
         <xsl:if test="@ind1 != '0'">
-            <!-- for each sets same context as above, ensures position() value is the same -->
+            <!-- for each sets same context as above, ensures id value is the same -->
             <xsl:for-each select="marc:subfield[@code = 'x']">
                 <xsl:call-template name="F583-1x-x">
                     <xsl:with-param name="baseIRI" select="$baseIRI"/>
@@ -301,6 +324,30 @@
                 <xsl:with-param name="baseIRI" select="$baseIRI"/>
                 <xsl:with-param name="genID" select="$genID"/>
             </xsl:call-template>
+        </xsl:if>
+        
+        <!-- again, match with the associated 880 field and do the same mapping -->
+        <xsl:if test="@tag = '583' and marc:subfield[@code = '6']">
+            <xsl:variable name="occNum"
+                select="concat('583-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+            <xsl:for-each
+                select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                <xsl:if test="@ind1 != '0'">
+                    <!-- for each sets same context as above, ensures id value is the same -->
+                    <xsl:for-each select="marc:subfield[@code = 'x']">
+                        <xsl:call-template name="F583-1x-x">
+                            <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                            <xsl:with-param name="genID" select="$genID"/>
+                        </xsl:call-template>
+                    </xsl:for-each>
+                </xsl:if>
+                <xsl:if test="@ind1 = '0'">
+                    <xsl:call-template name="F583-0x">
+                        <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                        <xsl:with-param name="genID" select="$genID"/>
+                    </xsl:call-template>
+                </xsl:if>
+            </xsl:for-each>
         </xsl:if>
     </xsl:template>
     <xsl:template
