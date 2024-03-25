@@ -160,19 +160,20 @@
         <xsl:variable name="fieldPos" select="position()"/>
         <xsl:call-template name="getmarc"/>
         <xsl:call-template name="F526-xx-iabcdz5"/>
+        <!-- iterate through each x (nonpublic note) subfield -->
+        <!-- iri is 'http://marc2rda.edu/fake/MetaWor/' + x subfield's id-->
         <xsl:for-each select="marc:subfield[@code = 'x']">
             <rdamo:P30462
-                rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/',$fieldPos,position())}"/>
+                rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"/>
         </xsl:for-each>
     </xsl:template>
     <xsl:template match="marc:datafield[@tag = '526']" mode="metaWor">
         <xsl:param name="baseIRI"/>
-        <xsl:variable name="fieldPos" select="position()"/>
         <xsl:call-template name="getmarc"/>
+        <!-- iterate through each x (nonpublic note) subfield -->
         <xsl:for-each select="marc:subfield[@code = 'x']">
             <xsl:call-template name="F526-xx-x">
                 <xsl:with-param name="baseIRI" select="$baseIRI"/>
-                <xsl:with-param name="fieldPos" select="$fieldPos"/>
             </xsl:call-template>
         </xsl:for-each>
     </xsl:template>
