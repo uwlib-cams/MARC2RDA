@@ -142,7 +142,6 @@
         </rdawd:P10216>
     </xsl:template>
     <xsl:template match="marc:datafield[@tag = '526']" mode="man">
-        <xsl:variable name="fieldPos" select="position()"/>
         <xsl:call-template name="getmarc"/>
         <xsl:call-template name="F526-xx-iabcdz5"/>
         <!-- iterate through each x (nonpublic note) subfield -->
@@ -335,6 +334,7 @@
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
+    <!-- 585 - Exhibitions note -->
     <xsl:template
         match="marc:datafield[@tag = '585'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '585']"
         mode="man" expand-text="yes">
@@ -348,7 +348,7 @@
             </rdamd:P30137>
         </xsl:if>
     </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '585']" mode="ite" expand-text="yes">
+    <xsl:template match="marc:datafield[@tag = '585'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '585-00']" mode="ite" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="controlNumber"/>
         <xsl:call-template name="getmarc"/>

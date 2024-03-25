@@ -35,11 +35,26 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/585-testman">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/585-testexp"/>
+      <!--MARC data begins-->
+      <fake:marcfield>F585 ## $a Exhibited: "Le Brun à Versailles," sponsored by the Cabinet des dessins, Musée du Louvre, 1985-1986. $3 Color lithographs</fake:marcfield>
+      <!--RDA data begins-->
       <rdamd:P30137>Exhibition note: Exhibited: "Le Brun à Versailles," sponsored by the Cabinet des dessins, Musée du Louvre, 1985-1986. (Applies to: Color lithographs)</rdamd:P30137>
+      <!--MARC data begins-->
+      <fake:marcfield>F585 ## $6 880-01 $3 585-$3 $a 585-Some Latin script. $5 WaU</fake:marcfield>
+      <!--RDA data begins-->
+      <!--MARC data begins-->
+      <fake:marcfield>F880 ## $6 585-01 $3 880-$3 $a 880-Some non-Latin script. $5 WaU</fake:marcfield>
+      <!--RDA data begins-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/585-testited13e11">
+   <!--MARC data begins-->
+   <fake:marcfield>F585 ## $a Exhibited: "Le Brun à Versailles," sponsored by the Cabinet des dessins, Musée du Louvre, 1985-1986. $3 Color lithographs</fake:marcfield>
+   <!--RDA data begins-->
+   <!--MARC data begins-->
+   <fake:marcfield>F585 ## $6 880-01 $3 585-$3 $a 585-Some Latin script. $5 WaU</fake:marcfield>
+   <!--RDA data begins-->
+   <rdf:Description rdf:about="http://fakeIRI2.edu/585-testited14e11">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ited13e11</rdaid:P40001>
+      <rdaid:P40001>ited14e11</rdaid:P40001>
       <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/585-testman"/>
       <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/wau"/>
       <rdaid:P40028>Exhibition note: 585-Some Latin script. (Applies to: 585-$3)</rdaid:P40028>
