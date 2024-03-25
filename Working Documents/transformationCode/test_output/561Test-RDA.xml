@@ -36,54 +36,63 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/561-testexp"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/561-testited13e6">
-      <rdaid:P40001>ited13e6</rdaid:P40001>
+   <!--MARC data begins-->
+   <fake:marcfield>F561 ## $a History</fake:marcfield>
+   <!--RDA data begins-->
+   <rdf:Description rdf:about="http://fakeIRI2.edu/561-testited14e6">
+      <rdaid:P40001>ited14e6</rdaid:P40001>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/561-testman"/>
+      <rdaid:P40026>History</rdaid:P40026>
+   </rdf:Description>
+   <!--MARC data begins-->
+   <fake:marcfield>F561 0# $6 880-01 $3 561-$3 $a 561-Some Latin script. $u http://fakeIRI2.edu/fake1 $u http://fakeIRI2.edu/fake2 $5 WaU</fake:marcfield>
+   <!--RDA data begins-->
+   <rdf:Description rdf:about="http://fakeIRI2.edu/561-testited14e9">
+      <rdaid:P40001>ited14e9</rdaid:P40001>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
       <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/561-testman"/>
       <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/wau"/>
-      <rdaid:P40026>561-Some Latin script. (Applies to: 561-$3)</rdaid:P40026>
-      <rdaid:P40026>880-Some non-Latin script. (Applies to: 880-$3)</rdaid:P40026>
-      <rdaid:P40026>http://fakeIRI2.edu/fake1</rdaid:P40026>
-      <rdaid:P40026>http://fakeIRI2.edu/fake2</rdaid:P40026>
+      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d14e9"/>
+      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d14e22"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d13e61">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d14e9">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>MetaWor/d13e61</rdawd:P10002>
-      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/561-testited13e6"/>
+      <rdawd:P10002>MetaWor/d14e9</rdawd:P10002>
+      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/561-testited14e9"/>
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-      <rdf:subject rdf:resource="http://fakeIRI2.edu/561-testited13e6"/>
+      <rdf:subject rdf:resource="http://fakeIRI2.edu/561-testited14e9"/>
       <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
-      <rdf:object>561-Some Latin script. (Applies to: 561-$3)</rdf:object>
+      <rdf:object>561-Some Latin script. Additional information at: http://fakeIRI2.edu/fake1, http://fakeIRI2.edu/fake2 (Applies to: 561-$3)</rdf:object>
       <rdawd:P10004>Private</rdawd:P10004>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d13e191">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d14e22">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>MetaWor/d13e191</rdawd:P10002>
-      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/561-testited13e19"/>
+      <rdawd:P10002>MetaWor/d14e22</rdawd:P10002>
+      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/561-testited14e9"/>
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-      <rdf:subject rdf:resource="http://fakeIRI2.edu/561-testited13e19"/>
+      <rdf:subject rdf:resource="http://fakeIRI2.edu/561-testited14e9"/>
       <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
-      <rdf:object>880-Some non-Latin script. (Applies to: 880-$3)</rdf:object>
+      <rdf:object>880-Some non-Latin script. Additional information at: http://fakeIRI2.edu/fake1, http://fakeIRI2.edu/fake2 (Applies to: 880-$3)</rdf:object>
       <rdawd:P10004>Private</rdawd:P10004>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d13e62">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>MetaWor/d13e62</rdawd:P10002>
-      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/561-testited13e6"/>
-      <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-      <rdf:subject rdf:resource="http://fakeIRI2.edu/561-testited13e6"/>
-      <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
-      <rdf:object>http://fakeIRI2.edu/fake1</rdf:object>
-      <rdawd:P10004>Private</rdawd:P10004>
+   <!--MARC data begins-->
+   <fake:marcfield>F880 0# $6 561-00 $a Unlinked 880 for 561</fake:marcfield>
+   <!--RDA data begins-->
+   <rdf:Description rdf:about="http://fakeIRI2.edu/561-testited14e35">
+      <rdaid:P40001>ited14e35</rdaid:P40001>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/561-testman"/>
+      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d14e35"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d13e63">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d14e35">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>MetaWor/d13e63</rdawd:P10002>
-      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/561-testited13e6"/>
+      <rdawd:P10002>MetaWor/d14e35</rdawd:P10002>
+      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/561-testited14e35"/>
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-      <rdf:subject rdf:resource="http://fakeIRI2.edu/561-testited13e6"/>
+      <rdf:subject rdf:resource="http://fakeIRI2.edu/561-testited14e35"/>
       <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
-      <rdf:object>http://fakeIRI2.edu/fake2</rdf:object>
+      <rdf:object>Unlinked 880 for 561</rdf:object>
       <rdawd:P10004>Private</rdawd:P10004>
    </rdf:Description>
 </rdf:RDF>

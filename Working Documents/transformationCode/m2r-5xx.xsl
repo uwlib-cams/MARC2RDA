@@ -209,7 +209,7 @@
             </xsl:if>
             <xsl:if test="@ind1 = '0'">
                 <rdaio:P40164
-                    rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/',$genID,position())}"/>
+                    rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"/>
             </xsl:if>
             <!-- if 561 field has $6, find associated 880 andd do the same mapping -->
             <xsl:if test="@tag = '561' and marc:subfield[@code = '6']">
@@ -225,7 +225,7 @@
                     </xsl:if>
                     <xsl:if test="@ind1 = '0'">
                         <rdaio:P40164
-                            rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/',$genID,position())}"
+                            rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"
                         />
                     </xsl:if>
                 </xsl:for-each>

@@ -87,10 +87,10 @@
     <xsl:template name="F561-0x" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="genID"/>
-        <rdf:Description rdf:about="{concat('http://marc2rda.edu/fake/MetaWor/',$genID,position())}">
+        <rdf:Description rdf:about="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}">
             <!--Does not meet min description of a work; needs to be linked to a metadata exp/man-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-            <rdawd:P10002>{concat('MetaWor/',$genID,position())}</rdawd:P10002>
+            <rdawd:P10002>{concat('MetaWor/', generate-id())}</rdawd:P10002>
             <rdawo:P10616 rdf:resource="{concat($baseIRI,'ite',$genID)}"/>
             <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
             <rdf:subject rdf:resource="{concat($baseIRI,'ite',$genID)}"/>
