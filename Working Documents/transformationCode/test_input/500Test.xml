@@ -35,16 +35,6 @@
             <marc:subfield code="6">500-02</marc:subfield>
         </marc:datafield>
         
-        <marc:datafield tag="500" ind1=" " ind2=" ">
-            <marc:subfield code="a">General note 5 and 880</marc:subfield>
-            <marc:subfield code="5">wau</marc:subfield>
-            <marc:subfield code="6">880-03</marc:subfield>
-        </marc:datafield>
-        <marc:datafield tag="880" ind1=" " ind2=" ">
-            <marc:subfield code="a">Alternate 880 note with no 5</marc:subfield>
-            <marc:subfield code="6">500-03</marc:subfield>
-        </marc:datafield>
-        
         <marc:datafield tag="880" ind1=" " ind2=" ">
             <marc:subfield code="a">880 note no related 500</marc:subfield>
             <marc:subfield code="6">500-00</marc:subfield>
