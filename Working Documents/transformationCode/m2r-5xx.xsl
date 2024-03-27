@@ -141,6 +141,7 @@
             <xsl:value-of select="concat('Geographic coverage: ', marc:subfield[@code = 'a'])"/>
         </rdawd:P10216>
     </xsl:template>
+    <!-- 526 - Study Program Information Note -->
     <xsl:template match="marc:datafield[@tag = '526']" mode="man">
         <xsl:call-template name="getmarc"/>
         <xsl:call-template name="F526-xx-iabcdz5"/>
