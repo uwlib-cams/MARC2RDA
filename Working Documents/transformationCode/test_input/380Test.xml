@@ -5,7 +5,7 @@
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">380-test1</marc:controlfield>
-        <marc:datafield tag="380" ind1="" ind2="">
+        <marc:datafield tag="380" ind1=" " ind2=" ">
             <marc:subfield code="a">Television programs</marc:subfield>
             <marc:subfield code="0">http://id.loc.gov/authorities/genreForms/gf2011026673</marc:subfield>
             <marc:subfield code="1">http://www.wikidata.org/entity/Q15416</marc:subfield>
@@ -14,7 +14,7 @@
 	<marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">380-test2</marc:controlfield>
-        <marc:datafield tag="380" ind1="" ind2="">
+        <marc:datafield tag="380" ind1=" " ind2=" ">
             <marc:subfield code="a">Television programs</marc:subfield>
             <marc:subfield code="0">(uri)http://id.loc.gov/authorities/genreForms/gf2011026673</marc:subfield>
             <marc:subfield code="2">lcgft</marc:subfield>
@@ -23,10 +23,18 @@
 	<marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">380-test3</marc:controlfield>
-        <marc:datafield tag="380" ind1="" ind2="">
+        <marc:datafield tag="380" ind1=" " ind2=" ">
             <marc:subfield code="a">Television programs</marc:subfield>
 			<marc:subfield code="0">(DLC)gf2011026673</marc:subfield>
             <marc:subfield code="1">http://www.wikidata.org/entity/Q15416</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">380-test4</marc:controlfield>
+        <marc:datafield tag="380" ind1=" " ind2=" ">
+            <marc:subfield code="a">Television programs</marc:subfield>
             <marc:subfield code="2">lcgft</marc:subfield>
         </marc:datafield>
     </marc:record>

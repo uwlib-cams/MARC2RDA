@@ -13,6 +13,9 @@
          xmlns:rdam="http://rdaregistry.info/Elements/m/"
          xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
          xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
          xmlns:rdaw="http://rdaregistry.info/Elements/w/"
          xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
          xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
@@ -22,6 +25,9 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/380-test1exp"/>
       <rdawd:P10002>380-test1wor</rdawd:P10002>
+      <!--MARC data begins-->
+      <fake:marcfield>F380 ## $a Television programs $0 http://id.loc.gov/authorities/genreForms/gf2011026673 $1 http://www.wikidata.org/entity/Q15416</fake:marcfield>
+      <!--RDA data begins-->
       <rdawd:P10004>Television programs</rdawd:P10004>
       <rdaw:P10004 rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026673"/>
       <rdaw:P10004 rdf:resource="http://www.wikidata.org/entity/Q15416"/>
@@ -40,8 +46,12 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/380-test2exp"/>
       <rdawd:P10002>380-test2wor</rdawd:P10002>
+      <!--MARC data begins-->
+      <fake:marcfield>F380 ## $a Television programs $0 (uri)http://id.loc.gov/authorities/genreForms/gf2011026673 $2 lcgft</fake:marcfield>
+      <!--RDA data begins-->
       <rdawd:P10004>Television programs</rdawd:P10004>
       <rdaw:P10004 rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026673"/>
+      <!--Handle $2 here when decision is made-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/380-test2exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -57,9 +67,13 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/380-test3exp"/>
       <rdawd:P10002>380-test3wor</rdawd:P10002>
+      <!--MARC data begins-->
+      <fake:marcfield>F380 ## $a Television programs $0 (DLC)gf2011026673 $1 http://www.wikidata.org/entity/Q15416 $2 lcgft</fake:marcfield>
+      <!--RDA data begins-->
       <rdawd:P10004>Television programs</rdawd:P10004>
       <!--MARC data source at field 380 contains a $0 with a value that is not recognized or is not appropriate for RDA.-->
       <rdaw:P10004 rdf:resource="http://www.wikidata.org/entity/Q15416"/>
+      <!--Handle $2 here when decision is made-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/380-test3exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -70,5 +84,25 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/380-test3man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/380-test3exp"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/380-test4wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/380-test4exp"/>
+      <rdawd:P10002>380-test4wor</rdawd:P10002>
+      <!--MARC data begins-->
+      <fake:marcfield>F380 ## $a Television programs $2 lcgft</fake:marcfield>
+      <!--RDA data begins-->
+      <rdawd:P10004>Television programs</rdawd:P10004>
+      <!--Handle $2 here when decision is made-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/380-test4exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/380-test4man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/380-test4wor"/>
+      <rdaed:P20002>380-test4exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/380-test4man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/380-test4exp"/>
    </rdf:Description>
 </rdf:RDF>
