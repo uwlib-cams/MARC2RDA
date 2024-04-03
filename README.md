@@ -17,7 +17,7 @@ Her interest is RDA implemented as linked data. She participates in different pr
 **-Gordon Dunsire [GordonDunsire](https://github.com/GordonDunsire), Metadata Consultant, LRM/RDA/RDF**<br>
 _Gordon Dunsire is an independent consultant who lives in Edinburgh, Scotland. He was formerly Head of the Centre for Digital Library Research at the University of Strathclyde. He has been a member of various IFLA review groups and sections concerned with cataloguing and metadata standards, and is a recipient of an IFLA Medal for his work with linked open data. He is a former Chair of the RDA Steering Committee and the RSC Technical Working Group. He is co-author of "Bibliographic information organization in the semantic web"._ 
 <br><br>
-**-Erin Grant, Project Supervisor**<br>
+**-Erin Grant [ErinGrant](https://github.com/ErinMGrant), Project Supervisor**<br>
 _Erin Grant is the Head of Cataloging and Metadata Services at the University of Washington Libraries in Seattle. She supervises the MARC to RDA Project._
 <br><br>
 **-Deborah Fritz [tmqdeborah](https://github.com/tmqdeborah), Mapping Consultant, Aggregates/RDA/MARC21**<br>
