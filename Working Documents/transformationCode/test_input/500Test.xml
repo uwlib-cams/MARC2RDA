@@ -29,7 +29,7 @@
             <marc:subfield code="6">880-02</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="880" ind1=" " ind2=" ">
-            <marc:subfield code="a">Alternate 880 note with 5 and 3</marc:subfield>
+            <marc:subfield code="a">Alternate 880 note missing a 5</marc:subfield>
             <marc:subfield code="3">Volume 9</marc:subfield>
             <marc:subfield code="5">aacc</marc:subfield>
             <marc:subfield code="6">500-02</marc:subfield>

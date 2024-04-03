@@ -59,7 +59,7 @@
       <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/500-testman"/>
       <rdaid:P40028>General note 5 and 3 (Applies to: Volume 9)</rdaid:P40028>
       <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/aacc"/>
-      <rdaid:P40028>Alternate 880 note with 5 and 3 (Applies to: Volume 9)</rdaid:P40028>
+      <rdaid:P40028>Alternate 880 note missing a 5 (Applies to: Volume 9)</rdaid:P40028>
    </rdf:Description>
    <!--MARC data begins-->
    <fake:marcfield>F880 ## $a 880 note no related 500 with 5 $5 wauc $6 500-00</fake:marcfield>

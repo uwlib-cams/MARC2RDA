@@ -28,7 +28,7 @@
     <xsl:import href="getmarc.xsl"/>
     <!-- 500 - General Note -->
     <xsl:template
-        match="marc:datafield[@tag = '500'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '500']"
+        match="marc:datafield[@tag = '500'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '500-00']"
         mode="man">
         <!-- $5 handled by item template -->
         <xsl:if test="not(marc:subfield[@code = '5'])">
@@ -40,6 +40,21 @@
                     <xsl:text>)</xsl:text>
                 </xsl:if>
             </rdamd:P30137>
+            
+            <xsl:if test="(@tag = '500') and (marc:subfield[@code = '6'])">
+                <xsl:variable name="occNum" select="concat('500-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                <xsl:for-each
+                    select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                    <rdamd:P30137>
+                        <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                        <xsl:if test="marc:subfield[@code = '3']">
+                            <xsl:text> (Applies to: </xsl:text>
+                            <xsl:value-of select="marc:subfield[@code = '3']"/>
+                            <xsl:text>)</xsl:text>
+                        </xsl:if>
+                    </rdamd:P30137>
+                </xsl:for-each>
+            </xsl:if>
         </xsl:if>
     </xsl:template>
     <xsl:template
