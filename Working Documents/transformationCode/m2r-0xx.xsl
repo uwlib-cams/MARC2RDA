@@ -27,91 +27,16 @@
     <xsl:template match="marc:datafield[@tag = '020']" mode="man">
         <xsl:call-template name="getmarc"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <xsl:comment>Simple literal without qualifiers</xsl:comment>
-            <rdamd:P30004>
-                <xsl:value-of select="translate(., ' :', '')"/>
-            </rdamd:P30004>
-            <xsl:comment>Simple literal with qualifiers</xsl:comment>
-            <rdamd:P30004>
-                <xsl:text>ISBN: </xsl:text>
-                <xsl:value-of select="translate(., ' :', '')"/>
-                <xsl:if test="following-sibling::marc:subfield[@code = 'q']">
-                    <xsl:text> (</xsl:text>
-                    <xsl:for-each select="following-sibling::marc:subfield[@code = 'q']">
-                        <xsl:value-of select="normalize-space(translate(., '();', ''))"/>
-                        <xsl:if test="position() != last()">
-                            <xsl:text> ; </xsl:text>
-                        </xsl:if>
-                    </xsl:for-each>
-                    <xsl:text>)</xsl:text>
-                </xsl:if>
-            </rdamd:P30004>
-            <xsl:comment>Typed literal without qualifiers</xsl:comment>
-            <rdamd:P30004 rdf:datatype="http://id.loc.gov/vocabulary/identifiers/isbn">
-                <xsl:value-of select="translate(., ' :', '')"/>
-            </rdamd:P30004>
-            <xsl:comment>Typed literal with qualifiers</xsl:comment>
-            <rdamd:P30004 rdf:datatype="http://id.loc.gov/vocabulary/identifiers/isbn">
-                <xsl:value-of select="translate(., ' :', '')"/>
-                <xsl:if test="following-sibling::marc:subfield[@code = 'q']">
-                    <xsl:text> (</xsl:text>
-                    <xsl:for-each select="following-sibling::marc:subfield[@code = 'q']">
-                        <xsl:value-of select="normalize-space(translate(., '();', ''))"/>
-                        <xsl:if test="position() != last()">
-                            <xsl:text> ; </xsl:text>
-                        </xsl:if>
-                    </xsl:for-each>
-                    <xsl:text>)</xsl:text>
-                </xsl:if>
-            </rdamd:P30004>
             <xsl:comment>Nomen</xsl:comment>
             <rdamo:P30004 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'z']">
-            <xsl:comment>Simple literal without qualifiers</xsl:comment>
-            <rdamd:P30004>
-                <xsl:value-of select="translate(., ' :', '')"/>
-            </rdamd:P30004>
-            <xsl:comment>Simple literal with qualifiers</xsl:comment>
-            <rdamd:P30004>
-                <xsl:text>Canceled/invalid ISBN: </xsl:text>
-                <xsl:value-of select="translate(., ' :', '')"/>
-                <xsl:if test="following-sibling::marc:subfield[@code = 'q']">
-                    <xsl:text> (</xsl:text>
-                    <xsl:for-each select="following-sibling::marc:subfield[@code = 'q']">
-                        <xsl:value-of select="normalize-space(translate(., '();', ''))"/>
-                        <xsl:if test="position() != last()">
-                            <xsl:text> ; </xsl:text>
-                        </xsl:if>
-                    </xsl:for-each>
-                    <xsl:text>)</xsl:text>
-                </xsl:if>
-            </rdamd:P30004>
-            <xsl:comment>Typed literal without qualifiers</xsl:comment>
-            <rdamd:P30004 rdf:datatype="http://id.loc.gov/vocabulary/identifiers/isbn">
-                <xsl:value-of select="translate(., ' :', '')"/>
-            </rdamd:P30004>
-            <xsl:comment>Typed literal with qualifiers</xsl:comment>
-            <rdamd:P30004 rdf:datatype="http://id.loc.gov/vocabulary/identifiers/isbn">
-                <xsl:text>(Canceled/invalid) </xsl:text>
-                <xsl:value-of select="translate(., ' :', '')"/>
-                <xsl:if test="following-sibling::marc:subfield[@code = 'q']">
-                    <xsl:text> (</xsl:text>
-                    <xsl:for-each select="following-sibling::marc:subfield[@code = 'q']">
-                        <xsl:value-of select="normalize-space(translate(., '();', ''))"/>
-                        <xsl:if test="position() != last()">
-                            <xsl:text> ; </xsl:text>
-                        </xsl:if>
-                    </xsl:for-each>
-                    <xsl:text>)</xsl:text>
-                </xsl:if>
-            </rdamd:P30004>
             <xsl:comment>Nomen</xsl:comment>
             <rdamo:P30004 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
         </xsl:for-each>
         <xsl:if test="marc:subfield[@code = 'c']">
             <xsl:choose>
-                <xsl:when test="not(marc:subfield[@code = 'z']) or marc:subfield[@code = 'a']">
+                <xsl:when test="not(marc:subfield[@code = 'z'])">
                     <rdamd:P30160>
                         <xsl:value-of select="marc:subfield[@code = 'c']"/>
                     </rdamd:P30160>

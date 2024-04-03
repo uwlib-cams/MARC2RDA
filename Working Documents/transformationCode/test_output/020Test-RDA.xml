@@ -38,40 +38,16 @@
       <!--MARC data begins-->
       <fake:marcfield>F020 ## $a 9780764212000 $q (cloth ; $q alk. paper)</fake:marcfield>
       <!--RDA data begins-->
-      <!--Simple literal without qualifiers-->
-      <rdamd:P30004>9780764212000</rdamd:P30004>
-      <!--Simple literal with qualifiers-->
-      <rdamd:P30004>ISBN: 9780764212000 (cloth ; alk. paper)</rdamd:P30004>
-      <!--Typed literal without qualifiers-->
-      <rdamd:P30004 rdf:datatype="http://id.loc.gov/vocabulary/identifiers/isbn">9780764212000</rdamd:P30004>
-      <!--Typed literal with qualifiers-->
-      <rdamd:P30004 rdf:datatype="http://id.loc.gov/vocabulary/identifiers/isbn">9780764212000 (cloth ; alk. paper)</rdamd:P30004>
       <!--Nomen-->
       <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d14e7"/>
       <!--MARC data begins-->
       <fake:marcfield>F020 ## $a 0764212001 $q (cloth ; $q alk. paper)</fake:marcfield>
       <!--RDA data begins-->
-      <!--Simple literal without qualifiers-->
-      <rdamd:P30004>0764212001</rdamd:P30004>
-      <!--Simple literal with qualifiers-->
-      <rdamd:P30004>ISBN: 0764212001 (cloth ; alk. paper)</rdamd:P30004>
-      <!--Typed literal without qualifiers-->
-      <rdamd:P30004 rdf:datatype="http://id.loc.gov/vocabulary/identifiers/isbn">0764212001</rdamd:P30004>
-      <!--Typed literal with qualifiers-->
-      <rdamd:P30004 rdf:datatype="http://id.loc.gov/vocabulary/identifiers/isbn">0764212001 (cloth ; alk. paper)</rdamd:P30004>
       <!--Nomen-->
       <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d14e14"/>
       <!--MARC data begins-->
       <fake:marcfield>F020 ## $z 9780764212017 $q (large print ; $q alk. paper)</fake:marcfield>
       <!--RDA data begins-->
-      <!--Simple literal without qualifiers-->
-      <rdamd:P30004>9780764212017</rdamd:P30004>
-      <!--Simple literal with qualifiers-->
-      <rdamd:P30004>Canceled/invalid ISBN: 9780764212017 (large print ; alk. paper)</rdamd:P30004>
-      <!--Typed literal without qualifiers-->
-      <rdamd:P30004 rdf:datatype="http://id.loc.gov/vocabulary/identifiers/isbn">9780764212017</rdamd:P30004>
-      <!--Typed literal with qualifiers-->
-      <rdamd:P30004 rdf:datatype="http://id.loc.gov/vocabulary/identifiers/isbn">(Canceled/invalid) 9780764212017 (large print ; alk. paper)</rdamd:P30004>
       <!--Nomen-->
       <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d14e21"/>
    </rdf:Description>
