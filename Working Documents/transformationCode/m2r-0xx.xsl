@@ -143,4 +143,38 @@
             <rdawo:P10321 rdf:resource="{.}"/>
         </xsl:for-each>
     </xsl:template>
+    
+    <!-- 088 - Report number -->
+    <xsl:template match="marc:datafield[@tag = '088'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '088']" mode="man">
+        <xsl:call-template name="getmarc"/>
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <rdamo:P30004 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'z']">
+            <rdamo:P30004 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
+        </xsl:for-each>
+    </xsl:template>
+    <xsl:template match="marc:datafield[@tag = '088'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '088']" mode="nom">
+        <xsl:param name="baseIRI"/>
+        <xsl:call-template name="getmarc"/>
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+                <rdand:P80068>
+                    <xsl:value-of select="."/>
+                </rdand:P80068>
+                <rdano:P80048 rdf:resource="{$baseIRI||'man'}"/>
+                <rdand:P80078>Report number</rdand:P80078>
+            </rdf:Description>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'z']">
+            <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+                <rdand:P80068>
+                    <xsl:value-of select="."/>
+                </rdand:P80068>
+                <rdano:P80048 rdf:resource="{$baseIRI||'man'}"/>
+                <rdand:P80078>Report number</rdand:P80078>
+                <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+            </rdf:Description>
+        </xsl:for-each>
+    </xsl:template>
 </xsl:stylesheet>
