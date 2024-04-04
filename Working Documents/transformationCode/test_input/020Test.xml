@@ -15,10 +15,14 @@
 			<marc:subfield code="q">(cloth ;</marc:subfield>
 			<marc:subfield code="q">alk. paper)</marc:subfield>
         </marc:datafield>
-		    <marc:datafield tag="020" ind1=" " ind2=" ">
+        <marc:datafield tag="020" ind1=" " ind2=" ">
             <marc:subfield code="z">9780764212017</marc:subfield>
 			<marc:subfield code="q">(large print ;</marc:subfield>
 			<marc:subfield code="q">alk. paper)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="z">0716305119 (pbk.) </marc:subfield>
+            <marc:subfield code="6">020-00</marc:subfield>
         </marc:datafield>
     </marc:record>
 </marc:collection>

@@ -24,14 +24,12 @@
     xmlns:fake="http://fakePropertiesForDemo" exclude-result-prefixes="marc ex" version="3.0">
     <xsl:import href="getmarc.xsl"/>
     <!-- <xsl:include href="m2r-0xx-named.xsl"/> -->
-    <xsl:template match="marc:datafield[@tag = '020']" mode="man">
+    <xsl:template match="marc:datafield[@tag = '020'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '020']" mode="man">
         <xsl:call-template name="getmarc"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <xsl:comment>Nomen</xsl:comment>
             <rdamo:P30004 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'z']">
-            <xsl:comment>Nomen</xsl:comment>
             <rdamo:P30004 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
         </xsl:for-each>
         <xsl:if test="marc:subfield[@code = 'c']">
@@ -44,11 +42,10 @@
             </xsl:choose>
         </xsl:if>
     </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '020']" mode="nom">
+    <xsl:template match="marc:datafield[@tag = '020'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '020']" mode="nom">
         <xsl:param name="baseIRI"/>
         <xsl:call-template name="getmarc"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <xsl:comment>Nomen</xsl:comment>
             <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
                 <rdand:P80068>
                     <xsl:value-of select="translate(., ' :', '')"/>
@@ -68,7 +65,6 @@
             </rdf:Description>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'z']">
-            <xsl:comment>Nomen</xsl:comment>
             <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
                 <rdand:P80068>
                     <xsl:value-of select="translate(., ' :', '')"/>

@@ -50,6 +50,11 @@
       <!--RDA data begins-->
       <!--Nomen-->
       <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d14e21"/>
+      <!--MARC data begins-->
+      <fake:marcfield>F880 ## $z 0716305119 (pbk.)  $6 020-00</fake:marcfield>
+      <!--RDA data begins-->
+      <!--Nomen-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d14e28"/>
    </rdf:Description>
    <!--MARC data begins-->
    <fake:marcfield>F020 ## $a 9780764212000 $q (cloth ; $q alk. paper)</fake:marcfield>
@@ -81,5 +86,15 @@
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
       <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
       <rdand:P80071>large print; alk. paper</rdand:P80071>
+   </rdf:Description>
+   <!--MARC data begins-->
+   <fake:marcfield>F880 ## $z 0716305119 (pbk.)  $6 020-00</fake:marcfield>
+   <!--RDA data begins-->
+   <!--Nomen-->
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d14e28">
+      <rdand:P80068>0716305119(pbk.)</rdand:P80068>
+      <rdano:P80048 rdf:resource="http://fakeIRI2.edu/020-test1man"/>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+      <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
    </rdf:Description>
 </rdf:RDF>
