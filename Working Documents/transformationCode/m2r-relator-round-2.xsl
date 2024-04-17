@@ -32,6 +32,8 @@
     <xsl:key name="sub4KeyRda" match="uwmisc:row" use="uwmisc:rdaPropIri" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
     <xsl:key name="subEKeyMarc" match="uwmisc:row" use="uwmisc:subELabelMarc" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
     <xsl:key name="subEKeyRda" match="uwmisc:row" use="uwmisc:subELabelRda" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
+    <xsl:key name="subJKeyMarc" match="uwmisc:row" use="uwmisc:subJLabelMarc" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
+    <xsl:key name="subJKeyRda" match="uwmisc:row" use="uwmisc:subJLabelRda" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
     
     <xsl:key name="anyMatch" match="uwmisc:row" use="uwmisc:sub4Code | uwmisc:marcRelIri | uwmisc:unconIri | uwmisc:rdaPropIri | uwmisc:subELabelMarc | uwmisc:subELabelRda" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
     
@@ -95,10 +97,11 @@
     <!-- ***** VARIABLES ****** -->
         <!-- domain from field template mode -->
         <xsl:param name="domain"/>
-        <!-- IRI generated from field -->
+        <!-- IRI generated from field, this is a temporary value for now -->
         <xsl:variable name="agentIRI" select="concat('http://marc2rda.edu/agent/', translate(marc:subfield[@code='a'], ' ', ''))"/>
         
         <!-- namespace generated based on domain - this gives us the object namespace -->
+        <!-- are there cases where we will use a datatype instead of IRI? -->
         <xsl:variable name="ns-wemi">
             <xsl:choose>
                 <xsl:when test="starts-with($domain, 'work')">rdawo</xsl:when>
@@ -136,19 +139,19 @@
             <!-- no subfields have a match -->
             <!-- if no $4$e$j match, this needs to be a default value, there's no point doing any further lookup -->
             <xsl:when test="$anyMatch = 'DEFAULT'">
-                <!-- HANDLE -->
+                <!-- HANDLE THIS HERE -->
                 <xsl:value-of select="'NONE'"/>
             </xsl:when>
             
             <!-- at least one does -->
             <xsl:otherwise>
                 
-                <!-- if 4 matches rda iri - multipleDomains doesn't matter? double check -->
+                <!-- if 4 matches rda iri - multipleDomains doesn't matter -->
                 <!-- TESTED -->
                 <xsl:for-each select="marc:subfield[@code = '4']">
-                    <xsl:variable name="sub4Rda" select="uwf:relatorLookup4RDA(., $fieldType, $indValue, $domain)"/>
+                    <xsl:variable name="sub4Rda" select="uwf:relatorLookupRDA('sub4KeyRda', ., $fieldType, $indValue, $domain)"/>
                     <xsl:if test="not(contains($sub4Rda, 'NO MATCH'))">
-                        <xsl:element name="{$ns-wemi || ':' || substring-after($sub4Rda/uwmisc:curie, ':')}">
+                        <xsl:element name="{$ns-wemi || ':' || substring($sub4Rda/uwmisc:rdaPropIri, string-length($sub4Rda/uwmisc:rdaPropIri) - 5)}">
                             <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
                         </xsl:element>
                     </xsl:if>
@@ -157,9 +160,9 @@
                 <!-- if X00 or X10 and e matches rda label -->
                 <xsl:if test="$fieldType = 'X00' or $fieldType = 'X10'">
                     <xsl:for-each select="marc:subfield[@code = 'e']">
-                        <xsl:variable name="subERda" select="uwf:relatorLookupERDA(., $fieldType, $indValue, $domain)"/>
+                        <xsl:variable name="subERda" select="uwf:relatorLookupRDA('subEKeyRda', ., $fieldType, $indValue, $domain)"/>
                         <xsl:if test="not(contains($subERda, 'NO MATCH'))">
-                            <xsl:element name="{$ns-wemi || ':' || substring-after($subERda/uwmisc:curie, ':')}">
+                            <xsl:element name="{$ns-wemi || ':' || substring($subERda/uwmisc:rdaPropIri, string-length($subERda/uwmisc:rdaPropIri) - 5)}">
                                 <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
                             </xsl:element>
                         </xsl:if>
@@ -169,9 +172,9 @@
                 <!-- if X11 and j matches rda label -->
                 <xsl:if test="$fieldType = 'X11'">
                     <xsl:for-each select="marc:subfield[@code = 'j']">
-                        <xsl:variable name="subERda" select="uwf:relatorLookupERDA(., 'X00', $indValue, $domain)"/>
-                        <xsl:if test="not(contains($subERda, 'NO MATCH'))">
-                            <xsl:element name="{$ns-wemi || ':' || substring-after($subERda/uwmisc:curie, ':')}">
+                        <xsl:variable name="subJRda" select="uwf:relatorLookupRDA('subJKeyRda', ., 'X00', $indValue, $domain)"/>
+                        <xsl:if test="not(contains($subJRda, 'NO MATCH'))">
+                            <xsl:element name="{$ns-wemi || ':' || substring($subJRda/uwmisc:rdaPropIri, string-length($subJRda/uwmisc:rdaPropIri) - 5)}">
                                 <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
                             </xsl:element>
                         </xsl:if>
@@ -181,7 +184,7 @@
                 <!-- if e or 4 is marc and N multiple domains - match rda iri -->
                 <!-- if e or 4 is marc and Y multiple domains - default  -->
                 <xsl:for-each select="marc:subfield[@code = '4']">
-                    <xsl:variable name="sub4Marc" select="uwf:relatorLookup4Marc(., $fieldType, $indValue, $domain)"/>
+                    <xsl:variable name="sub4Marc" select="uwf:relatorLookupMarc('sub4KeyMarc', ., $fieldType, $indValue, $domain)"/>
                     <xsl:choose>
                         <xsl:when test="contains($sub4Marc, 'NO MATCH')">
                             <!-- do nothing on no match -->
@@ -192,7 +195,7 @@
                         </xsl:when>
                         <xsl:otherwise>
                             <!-- there was a match and not multiple domains, use given RDA prop IRI from table -->
-                            <xsl:element name="{$ns-wemi || ':' || substring-after($sub4Marc/uwmisc:curie, ':')}">
+                            <xsl:element name="{$ns-wemi || ':' || substring($sub4Marc/uwmisc:rdaPropIri, string-length($sub4Marc/uwmisc:rdaPropIri) - 5)}">
                                 <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
                             </xsl:element>
                         </xsl:otherwise>
@@ -201,7 +204,7 @@
                 
                 <xsl:if test="$fieldType = 'X00' or $fieldType = 'X10'">
                     <xsl:for-each select="marc:subfield[@code = 'e']">
-                    <xsl:variable name="subEMarc" select="uwf:relatorLookupEMarc(., $fieldType, $indValue, $domain)"/>
+                    <xsl:variable name="subEMarc" select="uwf:relatorLookupMarc('subEKeyMarc', ., $fieldType, $indValue, $domain)"/>
                     <xsl:choose>
                         <xsl:when test="contains($subEMarc, 'NO MATCH')">
                             <!-- do nothing on no match -->
@@ -212,7 +215,7 @@
                         </xsl:when>
                         <xsl:otherwise>
                             <!-- there was a match and not multiple domains, use given RDA prop IRI from table -->
-                            <xsl:element name="{$ns-wemi || ':' || substring-after($subEMarc/uwmisc:curie, ':')}">
+                            <xsl:element name="{$ns-wemi || ':' || substring($subEMarc/uwmisc:rdaPropIri, string-length($subEMarc/uwmisc:rdaPropIri) - 5)}">
                                 <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
                             </xsl:element>
                         </xsl:otherwise>
@@ -220,20 +223,39 @@
                     </xsl:for-each>
                 </xsl:if>
                 
-                <!-- HANDLE J -->
+                <xsl:if test="$fieldType = 'X11'">
+                    <xsl:for-each select="marc:subfield[@code = 'j']">
+                        <xsl:variable name="subJMarc" select="uwf:relatorLookupMarc('subJKeyMarc', ., $fieldType, $indValue, $domain)"/>
+                        <xsl:choose>
+                            <xsl:when test="contains($subJMarc, 'NO MATCH')">
+                                <!-- do nothing on no match -->
+                            </xsl:when>
+                            <xsl:when test="contains($subJMarc, 'DEFAULT')">
+                                <!-- this means there's a match but multiple domains - we default-->
+                                <xsl:copy-of select="uwf:defaultIRI(.., $fieldType, $domain, $agentIRI)"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <!-- there was a match and not multiple domains, use given RDA prop IRI from table -->
+                                <xsl:element name="{$ns-wemi || ':' || substring($subJMarc/uwmisc:rdaPropIri, string-length($subJMarc/uwmisc:rdaPropIri) - 5)}">
+                                    <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                </xsl:element>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:for-each>
+                </xsl:if>
                 
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
     
-    
+    <!-- if any $e$4$j matches in the relator table for that field (X00, X10, or X11) and ind1 value, returns match, otherwise default -->
     <xsl:function name="uwf:anyRelatorMatch">
         <xsl:param name="field"/>
         <xsl:param name="fieldNum"/>
-        <xsl:param name="ind"/>
+        <xsl:param name="ind1"/>
         
         <xsl:variable name="testMatch" select="if (some $subfield in ($field/marc:subfield[@code = 'e'] | $field/marc:subfield[@code = '4'] | $field/marc:subfield[@code = 'j']) satisfies (key('anyMatch', $subfield, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
-            intersect key('indKey', $ind, document($rel2rda)))) then 'true' else 'false' "/>
+            intersect key('indKey', $ind1, document($rel2rda)))) then 'true' else 'false' "/>
         <xsl:choose>
             <xsl:when test="$testMatch = 'false'">
                 <xsl:value-of select="'DEFAULT'"/>
@@ -245,15 +267,16 @@
     </xsl:function>
     
     <!-- if $4 or $e are rda values, domain is a given and we don't worry about multiple domains -->
-    <xsl:function name="uwf:relatorLookup4RDA" expand-text="yes">
+    <xsl:function name="uwf:relatorLookupRDA" expand-text="yes">
+        <xsl:param name="key"/>
         <xsl:param name="subfield"/>
         <xsl:param name="fieldNum"/>
         <xsl:param name="ind"/>
         <xsl:param name="domain"/>
             <xsl:choose>
-                <xsl:when test="key('sub4KeyRda', $subfield, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
+                <xsl:when test="key($key, $subfield, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
                     intersect key('indKey', $ind, document($rel2rda)) intersect key('domainKey', $domain, document($rel2rda))">
-                    <xsl:copy-of select="(key('sub4KeyRda', $subfield, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
+                    <xsl:copy-of select="(key($key, $subfield, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
                         intersect key('indKey', $ind, document($rel2rda)) intersect key('domainKey', $domain, document($rel2rda)))[1]"/>
                 </xsl:when>
                 <xsl:otherwise>
@@ -261,38 +284,23 @@
                 </xsl:otherwise>
             </xsl:choose>
     </xsl:function>
-    <xsl:function name="uwf:relatorLookupERDA" expand-text="yes">
-        <xsl:param name="subfield"/>
-        <xsl:param name="fieldNum"/>
-        <xsl:param name="ind"/>
-        <xsl:param name="domain"/>
-            <xsl:variable name="eValue" select="lower-case($subfield)"/>
-            <xsl:choose>
-                <xsl:when test="key('subEKeyRda', $eValue, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
-                    intersect key('indKey', $ind, document($rel2rda)) intersect key('domainKey', $domain, document($rel2rda))">
-                    <xsl:copy-of select="(key('subEKeyRda', $eValue, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
-                        intersect key('indKey', $ind, document($rel2rda)) intersect key('domainKey', $domain, document($rel2rda)))[1]"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:value-of select="'NO MATCH'"/>
-                </xsl:otherwise>
-            </xsl:choose>
-    </xsl:function>
+
     
     <!-- marc lookups -->
-    <xsl:function name="uwf:relatorLookup4Marc" expand-text="yes">
+    <xsl:function name="uwf:relatorLookupMarc" expand-text="yes">
+        <xsl:param name="key"/>
         <xsl:param name="subfield"/>
         <xsl:param name="fieldNum"/>
         <xsl:param name="ind"/>
         <xsl:param name="domain"/>
         <xsl:choose>
-            <xsl:when test="key('sub4KeyMarc', $subfield, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
+            <xsl:when test="key($key, $subfield, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
                 intersect key('indKey', $ind, document($rel2rda)) intersect key('domainKey', $domain, document($rel2rda))">
-                <xsl:variable name="sub4Match" select="(key('sub4KeyMarc', $subfield, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
+                <xsl:variable name="match" select="(key($key, $subfield, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
                     intersect key('indKey', $ind, document($rel2rda)) intersect key('domainKey', $domain, document($rel2rda)))[1]"/>
                 <xsl:choose>
-                    <xsl:when test="contains($sub4Match/uwmisc:multipleDomains, 'N')">
-                        <xsl:copy-of select="$sub4Match"/>
+                    <xsl:when test="contains($match/uwmisc:multipleDomains, 'N')">
+                        <xsl:copy-of select="$match"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:value-of select="'DEFAULT'"/>
@@ -304,32 +312,6 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
-    
-    <xsl:function name="uwf:relatorLookupEMarc" expand-text="yes">
-        <xsl:param name="subfield"/>
-        <xsl:param name="fieldNum"/>
-        <xsl:param name="ind"/>
-        <xsl:param name="domain"/>
-        <xsl:choose>
-            <xsl:when test="key('subEKeyMarc', $subfield, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
-                intersect key('indKey', $ind, document($rel2rda)) intersect key('domainKey', $domain, document($rel2rda))">
-                <xsl:variable name="subEMatch" select="(key('subEKeyMarc', $subfield, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
-                    intersect key('indKey', $ind, document($rel2rda)) intersect key('domainKey', $domain, document($rel2rda)))[1]"/>
-                <xsl:choose>
-                    <xsl:when test="contains($subEMatch/uwmisc:multipleDomains, 'N')">
-                        <xsl:copy-of select="$subEMatch"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="'DEFAULT'"/>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:value-of select="'NO MATCH'"/>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:function>
-    
     
     
     <xsl:function name="uwf:defaultIRI">
