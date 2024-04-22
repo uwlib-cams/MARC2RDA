@@ -41,19 +41,20 @@
     <xsl:mode name="wor" on-no-match="shallow-skip"/>
     <xsl:mode name="exp" on-no-match="shallow-skip"/>
     <xsl:mode name="man" on-no-match="shallow-skip"/>
+    <xsl:mode name="ite" on-no-match="shallow-skip"/>
     
     <xsl:template match="/" expand-text="true">
         <xsl:for-each select="marc:collection">
-        <rdf:RDF >
+        <rdf:RDF>
             <xsl:for-each select="marc:record">
-                <rdf:Description rdf:about="{concat('http://testrelator.org/','wor')}">
+                <rdf:Description rdf:about="{concat('http://testrelator.org/',marc:controlfield[@tag = '001'], '/wor')}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
                     <rdawo:P10078 rdf:resource="{concat('http://testrelator.org/','exp')}"/>
                     <rdawd:P10002>{concat(marc:controlfield[@tag='001'],'wor')}</rdawd:P10002>
                     <xsl:apply-templates select="*" mode="wor"/>
                 </rdf:Description>
                 
-                <rdf:Description rdf:about="{concat('http://testrelator.org/','exp')}">
+                <rdf:Description rdf:about="{concat('http://testrelator.org/',marc:controlfield[@tag = '001'],'/exp')}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
                     <rdaeo:P20059 rdf:resource="{concat('http://testrelator.org/','man')}"/>
                     <rdaeo:P20231 rdf:resource="{concat('http://testrelator.org/','wor')}"/>
@@ -61,11 +62,16 @@
                     <xsl:apply-templates select="*" mode="exp"/>
                 </rdf:Description>
                 
-                <rdf:Description rdf:about="{concat('http://testrelator.org/','man')}">
+                <rdf:Description rdf:about="{concat('http://testrelator.org/',marc:controlfield[@tag = '001'], '/man')}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
                     <rdamo:P30139 rdf:resource="{concat('http://testrelator.org/','exp')}"/>
                     <xsl:apply-templates select="*" mode="man"/>
                 </rdf:Description>
+                
+                <xsl:apply-templates select="*" mode="ite">
+                    <xsl:with-param name="baseIRI" select="concat('http://testrelator.org/', marc:controlfield[@tag = '001'], '/')"/>
+                    <xsl:with-param name="controlNumber" select="../marc:controlfield[@tag='001']"/>
+                </xsl:apply-templates>
                 
             </xsl:for-each>
             </rdf:RDF>
@@ -87,6 +93,25 @@
             <xsl:with-param name="domain" select="'manifestation'"/>
         </xsl:call-template>
     </xsl:template>
+    <xsl:template match="marc:datafield[@tag = '100']" mode = "ite" expand-text="true">
+        <xsl:param name="baseIRI"/>
+        <xsl:param name="controlNumber"/>
+        <xsl:variable name="testItem">
+            <xsl:call-template name="handleRelator">
+                <xsl:with-param name="domain" select="'item'"/>
+            </xsl:call-template>
+        </xsl:variable>
+        <xsl:if test="$testItem/node() or $testItem/@*">
+            <xsl:variable name="genID" select="generate-id()"/>
+            <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+                <rdaid:P40001>{concat($controlNumber,'ite',$genID)}</rdaid:P40001>
+                <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
+                <xsl:copy-of select="$testItem"/>
+            </rdf:Description>
+        </xsl:if>
+        
+    </xsl:template>
     
     <!-- handleRelator template sets the appropriate variables for lookup in the relator table -->
     <!-- can currently handle 1XX and some 7XXs, working on 6XXs -->
@@ -98,7 +123,7 @@
         <!-- domain from field template mode -->
         <xsl:param name="domain"/>
         <!-- IRI generated from field, this is a temporary value for now -->
-        <xsl:variable name="agentIRI" select="concat('http://marc2rda.edu/agent/', translate(marc:subfield[@code='a'], ' ', ''))"/>
+        <xsl:variable name="agentIRI" select="concat('http://marc2rda.edu/agent/', translate(translate(marc:subfield[@code='a'], ' ', ''), ',', ''))"/>
         
         <!-- namespace generated based on domain - this gives us the object namespace -->
         <!-- are there cases where we will use a datatype instead of IRI? -->
@@ -113,18 +138,34 @@
         </xsl:variable>
         
         <!-- the indValue is based off field's ind1 to match lookup table -->
-        <!-- options are '0 or 1', '#', and '3' -->
         <xsl:variable name="indValue">
             <xsl:choose>
-                <xsl:when test="(@ind1 = '1') or (@ind1 = '0')">
-                    <xsl:value-of select="'0 or 1'"/>
+                <!-- for 720, options are '1' or '# or 2' -->
+                <xsl:when test="@tag = '720'">
+                    <xsl:choose>
+                        <xsl:when test="not(@ind1 = '1')">
+                            <xsl:value-of select="'# or 2'"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="@ind1"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </xsl:when>
-                <xsl:when test="(@ind1 = ' ')">
-                    <xsl:value-of select="'#'"/>
-                </xsl:when>
+                <!-- options are '0 or 1', '#', and '3' -->
                 <xsl:otherwise>
-                    <xsl:value-of select="@ind1"/>
+                    <xsl:choose>
+                        <xsl:when test="(@ind1 = '1') or (@ind1 = '0')">
+                            <xsl:value-of select="'0 or 1'"/>
+                        </xsl:when>
+                        <xsl:when test="(@ind1 = ' ')">
+                            <xsl:value-of select="'#'"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="@ind1"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </xsl:otherwise>
+                
             </xsl:choose>
         </xsl:variable>
         
@@ -254,6 +295,7 @@
         <xsl:param name="fieldNum"/>
         <xsl:param name="ind1"/>
         
+        <!-- should double-check this logic -->
         <xsl:variable name="testMatch" select="if (some $subfield in ($field/marc:subfield[@code = 'e'] | $field/marc:subfield[@code = '4'] | $field/marc:subfield[@code = 'j']) satisfies (key('anyMatch', $subfield, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
             intersect key('indKey', $ind1, document($rel2rda)))) then 'true' else 'false' "/>
         <xsl:choose>
@@ -372,6 +414,7 @@
                 <xsl:value-of select="'X11'"/>
             </xsl:when>
             <xsl:otherwise>
+                <!-- otherwise it's 720 -->
                 <xsl:value-of select="$fieldNum"/>
             </xsl:otherwise>
         </xsl:choose>
