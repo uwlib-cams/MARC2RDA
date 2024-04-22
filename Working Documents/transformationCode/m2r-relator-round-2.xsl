@@ -78,22 +78,26 @@
         </xsl:for-each>
     </xsl:template>
     
-    <xsl:template match="marc:datafield[@tag = '100']" mode = "wor">
+    <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111']
+        | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" mode = "wor">
         <xsl:call-template name="handleRelator">
             <xsl:with-param name="domain" select="'work'"/>
         </xsl:call-template>
     </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '100']" mode = "exp">
+    <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111']
+        | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" mode = "exp">
         <xsl:call-template name="handleRelator">
             <xsl:with-param name="domain" select="'expression'"/>
         </xsl:call-template>
     </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '100']" mode = "man">
+    <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111']
+        | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" mode = "man">
         <xsl:call-template name="handleRelator">
             <xsl:with-param name="domain" select="'manifestation'"/>
         </xsl:call-template>
     </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '100']" mode = "ite" expand-text="true">
+    <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111']
+        | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" mode = "ite" expand-text="true">
         <xsl:param name="baseIRI"/>
         <xsl:param name="controlNumber"/>
         <xsl:variable name="testItem">
@@ -137,37 +141,8 @@
             </xsl:choose>
         </xsl:variable>
         
-        <!-- the indValue is based off field's ind1 to match lookup table -->
-        <xsl:variable name="indValue">
-            <xsl:choose>
-                <!-- for 720, options are '1' or '# or 2' -->
-                <xsl:when test="@tag = '720'">
-                    <xsl:choose>
-                        <xsl:when test="not(@ind1 = '1')">
-                            <xsl:value-of select="'# or 2'"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:value-of select="@ind1"/>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:when>
-                <!-- options are '0 or 1', '#', and '3' -->
-                <xsl:otherwise>
-                    <xsl:choose>
-                        <xsl:when test="(@ind1 = '1') or (@ind1 = '0')">
-                            <xsl:value-of select="'0 or 1'"/>
-                        </xsl:when>
-                        <xsl:when test="(@ind1 = ' ')">
-                            <xsl:value-of select="'#'"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:value-of select="@ind1"/>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:otherwise>
-                
-            </xsl:choose>
-        </xsl:variable>
+        <!-- the indValue is based off field's ind1 to match lookup table - see function uwf:ind1Type()-->
+        <xsl:variable name="indValue" select="uwf:ind1Type(@tag, @ind1)"/>
         
         <!-- fieldType is also for lookup - see function uwf:fieldType() -->
         <xsl:variable name="fieldType" select="uwf:fieldType(@tag)"/>
@@ -180,8 +155,7 @@
             <!-- no subfields have a match -->
             <!-- if no $4$e$j match, this needs to be a default value, there's no point doing any further lookup -->
             <xsl:when test="$anyMatch = 'DEFAULT'">
-                <!-- HANDLE THIS HERE -->
-                <xsl:value-of select="'NONE'"/>
+                <xsl:copy-of select="uwf:defaultProp(., $fieldType, $domain, $agentIRI)"/>
             </xsl:when>
             
             <!-- at least one does -->
@@ -199,7 +173,7 @@
                 </xsl:for-each>
                 
                 <!-- if X00 or X10 and e matches rda label -->
-                <xsl:if test="$fieldType = 'X00' or $fieldType = 'X10'">
+                <xsl:if test="$fieldType = 'X00' or $fieldType = 'X10' or $fieldType = '720'">
                     <xsl:for-each select="marc:subfield[@code = 'e']">
                         <xsl:variable name="subERda" select="uwf:relatorLookupRDA('subEKeyRda', uwf:normalize(.), $fieldType, $indValue, $domain)"/>
                         <xsl:if test="not(contains($subERda, 'NO MATCH'))">
@@ -232,7 +206,7 @@
                         </xsl:when>
                         <xsl:when test="contains($sub4Marc, 'DEFAULT')">
                             <!-- this means there's a match but multiple domains - we default-->
-                            <xsl:copy-of select="uwf:defaultIRI(.., $fieldType, $domain, $agentIRI)"/>
+                            <xsl:copy-of select="uwf:defaultProp(.., $fieldType, $domain, $agentIRI)"/>
                         </xsl:when>
                         <xsl:otherwise>
                             <!-- there was a match and not multiple domains, use given RDA prop IRI from table -->
@@ -243,7 +217,7 @@
                     </xsl:choose>
                 </xsl:for-each>
                 
-                <xsl:if test="$fieldType = 'X00' or $fieldType = 'X10'">
+                <xsl:if test="$fieldType = 'X00' or $fieldType = 'X10' or $fieldType = '720'">
                     <xsl:for-each select="marc:subfield[@code = 'e']">
                         <xsl:variable name="subEMarc" select="uwf:relatorLookupMarc('subEKeyMarc', uwf:normalize(.), $fieldType, $indValue, $domain)"/>
                     <xsl:choose>
@@ -252,7 +226,7 @@
                         </xsl:when>
                         <xsl:when test="contains($subEMarc, 'DEFAULT')">
                             <!-- this means there's a match but multiple domains - we default-->
-                            <xsl:copy-of select="uwf:defaultIRI(.., $fieldType, $domain, $agentIRI)"/>
+                            <xsl:copy-of select="uwf:defaultProp(.., $fieldType, $domain, $agentIRI)"/>
                         </xsl:when>
                         <xsl:otherwise>
                             <!-- there was a match and not multiple domains, use given RDA prop IRI from table -->
@@ -273,7 +247,7 @@
                             </xsl:when>
                             <xsl:when test="contains($subJMarc, 'DEFAULT')">
                                 <!-- this means there's a match but multiple domains - we default-->
-                                <xsl:copy-of select="uwf:defaultIRI(.., $fieldType, $domain, $agentIRI)"/>
+                                <xsl:copy-of select="uwf:defaultProp(.., $fieldType, $domain, $agentIRI)"/>
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- there was a match and not multiple domains, use given RDA prop IRI from table -->
@@ -356,7 +330,7 @@
     </xsl:function>
     
     
-    <xsl:function name="uwf:defaultIRI">
+    <xsl:function name="uwf:defaultProp">
         <xsl:param name="field"/>
         <xsl:param name="fieldType"/>
         <xsl:param name="domain"/>
@@ -418,6 +392,38 @@
                 <xsl:value-of select="$fieldNum"/>
             </xsl:otherwise>
         </xsl:choose>
+    </xsl:function>
+    
+    <xsl:function name="uwf:ind1Type">
+        <xsl:param name="tag"/>
+        <xsl:param name="ind1"/>
+            <xsl:choose>
+                <!-- for 720, options are '1' or '# or 2' -->
+                <xsl:when test="$tag = '720'">
+                    <xsl:choose>
+                        <xsl:when test="not($ind1 = '1')">
+                            <xsl:value-of select="'# or 2'"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="$ind1"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:when>
+                <!-- options are '0 or 1', '#', and '3' -->
+                <xsl:otherwise>
+                    <xsl:choose>
+                        <xsl:when test="($ind1 = '1') or ($ind1 = '0')">
+                            <xsl:value-of select="'0 or 1'"/>
+                        </xsl:when>
+                        <xsl:when test="($ind1 = ' ')">
+                            <xsl:value-of select="'#'"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="$ind1"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:otherwise>
+            </xsl:choose>
     </xsl:function>
     
     <xsl:function name="uwf:normalize">
