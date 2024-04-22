@@ -190,7 +190,7 @@
                 <!-- if 4 matches rda iri - multipleDomains doesn't matter -->
                 <!-- TESTED -->
                 <xsl:for-each select="marc:subfield[@code = '4']">
-                    <xsl:variable name="sub4Rda" select="uwf:relatorLookupRDA('sub4KeyRda', ., $fieldType, $indValue, $domain)"/>
+                    <xsl:variable name="sub4Rda" select="uwf:relatorLookupRDA('sub4KeyRda', uwf:normalize(.), $fieldType, $indValue, $domain)"/>
                     <xsl:if test="not(contains($sub4Rda, 'NO MATCH'))">
                         <xsl:element name="{$ns-wemi || ':' || substring($sub4Rda/uwmisc:rdaPropIri, string-length($sub4Rda/uwmisc:rdaPropIri) - 5)}">
                             <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
@@ -201,7 +201,7 @@
                 <!-- if X00 or X10 and e matches rda label -->
                 <xsl:if test="$fieldType = 'X00' or $fieldType = 'X10'">
                     <xsl:for-each select="marc:subfield[@code = 'e']">
-                        <xsl:variable name="subERda" select="uwf:relatorLookupRDA('subEKeyRda', ., $fieldType, $indValue, $domain)"/>
+                        <xsl:variable name="subERda" select="uwf:relatorLookupRDA('subEKeyRda', uwf:normalize(.), $fieldType, $indValue, $domain)"/>
                         <xsl:if test="not(contains($subERda, 'NO MATCH'))">
                             <xsl:element name="{$ns-wemi || ':' || substring($subERda/uwmisc:rdaPropIri, string-length($subERda/uwmisc:rdaPropIri) - 5)}">
                                 <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
@@ -213,7 +213,7 @@
                 <!-- if X11 and j matches rda label -->
                 <xsl:if test="$fieldType = 'X11'">
                     <xsl:for-each select="marc:subfield[@code = 'j']">
-                        <xsl:variable name="subJRda" select="uwf:relatorLookupRDA('subJKeyRda', ., 'X00', $indValue, $domain)"/>
+                        <xsl:variable name="subJRda" select="uwf:relatorLookupRDA('subJKeyRda', uwf:normalize(.), 'X00', $indValue, $domain)"/>
                         <xsl:if test="not(contains($subJRda, 'NO MATCH'))">
                             <xsl:element name="{$ns-wemi || ':' || substring($subJRda/uwmisc:rdaPropIri, string-length($subJRda/uwmisc:rdaPropIri) - 5)}">
                                 <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
@@ -225,7 +225,7 @@
                 <!-- if e or 4 is marc and N multiple domains - match rda iri -->
                 <!-- if e or 4 is marc and Y multiple domains - default  -->
                 <xsl:for-each select="marc:subfield[@code = '4']">
-                    <xsl:variable name="sub4Marc" select="uwf:relatorLookupMarc('sub4KeyMarc', ., $fieldType, $indValue, $domain)"/>
+                    <xsl:variable name="sub4Marc" select="uwf:relatorLookupMarc('sub4KeyMarc', uwf:normalize(.), $fieldType, $indValue, $domain)"/>
                     <xsl:choose>
                         <xsl:when test="contains($sub4Marc, 'NO MATCH')">
                             <!-- do nothing on no match -->
@@ -245,7 +245,7 @@
                 
                 <xsl:if test="$fieldType = 'X00' or $fieldType = 'X10'">
                     <xsl:for-each select="marc:subfield[@code = 'e']">
-                    <xsl:variable name="subEMarc" select="uwf:relatorLookupMarc('subEKeyMarc', ., $fieldType, $indValue, $domain)"/>
+                        <xsl:variable name="subEMarc" select="uwf:relatorLookupMarc('subEKeyMarc', uwf:normalize(.), $fieldType, $indValue, $domain)"/>
                     <xsl:choose>
                         <xsl:when test="contains($subEMarc, 'NO MATCH')">
                             <!-- do nothing on no match -->
@@ -266,7 +266,7 @@
                 
                 <xsl:if test="$fieldType = 'X11'">
                     <xsl:for-each select="marc:subfield[@code = 'j']">
-                        <xsl:variable name="subJMarc" select="uwf:relatorLookupMarc('subJKeyMarc', ., $fieldType, $indValue, $domain)"/>
+                        <xsl:variable name="subJMarc" select="uwf:relatorLookupMarc('subJKeyMarc', uwf:normalize(.), $fieldType, $indValue, $domain)"/>
                         <xsl:choose>
                             <xsl:when test="contains($subJMarc, 'NO MATCH')">
                                 <!-- do nothing on no match -->
@@ -296,7 +296,7 @@
         <xsl:param name="ind1"/>
         
         <!-- should double-check this logic -->
-        <xsl:variable name="testMatch" select="if (some $subfield in ($field/marc:subfield[@code = 'e'] | $field/marc:subfield[@code = '4'] | $field/marc:subfield[@code = 'j']) satisfies (key('anyMatch', $subfield, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
+        <xsl:variable name="testMatch" select="if (some $subfield in ($field/marc:subfield[@code = 'e'] | $field/marc:subfield[@code = '4'] | $field/marc:subfield[@code = 'j']) satisfies (key('anyMatch', uwf:normalize($subfield), document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
             intersect key('indKey', $ind1, document($rel2rda)))) then 'true' else 'false' "/>
         <xsl:choose>
             <xsl:when test="$testMatch = 'false'">
@@ -416,6 +416,21 @@
             <xsl:otherwise>
                 <!-- otherwise it's 720 -->
                 <xsl:value-of select="$fieldNum"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
+    <xsl:function name="uwf:normalize">
+        <xsl:param name="subfield"/>
+        <xsl:choose>
+            <xsl:when test="starts-with(normalize-space($subfield), 'jt')">
+                <xsl:value-of select="normalize-space(replace($subfield, 'jt', ''))"/>
+            </xsl:when>
+            <xsl:when test="starts-with(normalize-space($subfield), 'joint')">
+                <xsl:value-of select="normalize-space(replace($subfield, 'joint', ''))"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="normalize-space($subfield)"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
