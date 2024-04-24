@@ -78,6 +78,7 @@
         </xsl:for-each>
     </xsl:template>
     
+    
     <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111']" mode = "wor">
         <xsl:call-template name="handleRelator">
             <xsl:with-param name="domain" select="'work'"/>
@@ -87,33 +88,6 @@
         <xsl:call-template name="handleRelator">
             <xsl:with-param name="domain" select="'expression'"/>
         </xsl:call-template>
-    </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111']" mode = "man" expand-text="true">
-        <xsl:if test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
-            <xsl:choose>
-                <xsl:when test="../marc:datafield[@tag = '700'] or ../marc:datafield[@tag = '710'] or ../marc:datafield[@tag = '711'] or ../marc:datafield[@tag = '720']">
-                    <xsl:variable name="copied100">
-                        <xsl:copy select=".">
-                            <xsl:copy-of select="./@*"/>
-                            <xsl:copy-of select="./*"/>
-                            <xsl:for-each select="../marc:datafield[@tag = '700'] | ../marc:datafield[@tag = '710'] | ../marc:datafield[@tag = '711'] | ../marc:datafield[@tag = '720']">
-                                <xsl:for-each select="marc:subfield[@code = 'e'] | marc:subfield[@code = '4'] | marc:subfield[@code = 'j']">
-                                    <marc:subfield code="{@code}">{.}</marc:subfield>
-                                </xsl:for-each>
-                            </xsl:for-each>
-                        </xsl:copy>
-                    </xsl:variable>
-                    <xsl:if test="$copied100/marc:datafield/marc:subfield[@code = 'e'] or $copied100/marc:datafield/marc:subfield[@code = '4'] or $copied100/marc:datafield/marc:subfield[@code = 'j']">
-                        <xsl:for-each select="$copied100/marc:datafield">
-                            <xsl:text>TRYING</xsl:text>
-                            <xsl:call-template name="handleRelator">
-                                <xsl:with-param name="domain" select="'manifestation'"/>
-                            </xsl:call-template>
-                        </xsl:for-each>
-                    </xsl:if>
-                </xsl:when>
-            </xsl:choose>
-        </xsl:if>
     </xsl:template>
     <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111']" mode = "ite" expand-text="true">
         <xsl:param name="baseIRI"/>
@@ -135,7 +109,6 @@
         
     </xsl:template>
     
-    
     <xsl:template match="marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" mode = "wor">
         <xsl:call-template name="handleRelator">
             <xsl:with-param name="domain" select="'work'"/>
@@ -146,10 +119,26 @@
             <xsl:with-param name="domain" select="'expression'"/>
         </xsl:call-template>
     </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" mode = "man">
-        <xsl:call-template name="handleRelator">
-            <xsl:with-param name="domain" select="'manifestation'"/>
-        </xsl:call-template>
+    <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" mode = "man">
+        <xsl:choose>
+            <xsl:when test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
+                <xsl:choose>
+                    <xsl:when test=" @tag = '100' or @tag = '110' or @tag = '111'">
+                        <xsl:call-template name="handle1XXnorelator">
+                            <xsl:with-param name="domain" select="'manifestation'"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <!-- handle default no relators -->
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:call-template name="handleRelator">
+                    <xsl:with-param name="domain" select="'manifestation'"/>
+                </xsl:call-template>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     <xsl:template match="marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" mode = "ite" expand-text="true">
         <xsl:param name="baseIRI"/>
@@ -498,5 +487,36 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
+    
+    <xsl:template name="handle1XXnorelator" expand-text="true">
+        <xsl:param name="domain"/>
+        <xsl:choose>
+            <xsl:when test="../marc:datafield[@tag = '700'] or ../marc:datafield[@tag = '710'] or ../marc:datafield[@tag = '711'] or ../marc:datafield[@tag = '720']">
+                <xsl:variable name="copied100">
+                    <xsl:copy select=".">
+                        <xsl:copy-of select="./@*"/>
+                        <xsl:copy-of select="./*"/>
+                        <xsl:for-each select="../marc:datafield[@tag = '700'] | ../marc:datafield[@tag = '710'] | ../marc:datafield[@tag = '711'] | ../marc:datafield[@tag = '720']">
+                            <xsl:for-each select="marc:subfield[@code = 'e'] | marc:subfield[@code = '4'] | marc:subfield[@code = 'j']">
+                                <xsl:if test="starts-with(., 'joint') or starts-with(., 'jt')">
+                                    <marc:subfield code="{@code}">{.}</marc:subfield>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:for-each>
+                    </xsl:copy>
+                </xsl:variable>
+                <xsl:if test="$copied100/marc:datafield/marc:subfield[@code = 'e'] or $copied100/marc:datafield/marc:subfield[@code = '4'] or $copied100/marc:datafield/marc:subfield[@code = 'j']">
+                    <xsl:for-each select="$copied100/marc:datafield">
+                        <xsl:call-template name="handleRelator">
+                            <xsl:with-param name="domain" select="$domain"/>
+                        </xsl:call-template>
+                    </xsl:for-each>
+                </xsl:if>
+            </xsl:when>
+            <xsl:otherwise>
+                <!-- also default here -->
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
     
 </xsl:stylesheet>
