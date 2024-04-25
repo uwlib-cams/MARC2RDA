@@ -25,6 +25,7 @@
     version="3.0">
     <xsl:output encoding="UTF-8" method="xml" indent="yes"/>
     
+    <!-- keys -->
     <xsl:key name="fieldKey" match="uwmisc:row" use="uwmisc:field" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
     <xsl:key name="indKey" match="uwmisc:row" use="uwmisc:ind1" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
     <xsl:key name="domainKey" match="uwmisc:row" use="uwmisc:domain" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
@@ -34,7 +35,6 @@
     <xsl:key name="subEKeyRda" match="uwmisc:row" use="uwmisc:subELabelRda" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
     <xsl:key name="subJKeyMarc" match="uwmisc:row" use="uwmisc:subJLabelMarc" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
     <xsl:key name="subJKeyRda" match="uwmisc:row" use="uwmisc:subJLabelRda" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
-    
     <xsl:key name="anyMatch" match="uwmisc:row" use="uwmisc:sub4Code | uwmisc:marcRelIri | uwmisc:unconIri | uwmisc:rdaPropIri | uwmisc:subELabelMarc | uwmisc:subELabelRda" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
     
     <xsl:variable name="rel2rda" select="'./input/relator-table-xml.xml'"/>
@@ -43,6 +43,7 @@
     <xsl:mode name="man" on-no-match="shallow-skip"/>
     <xsl:mode name="ite" on-no-match="shallow-skip"/>
     
+    <!-- this is working as m2r.xsl for now -->
     <xsl:template match="/" expand-text="true">
         <xsl:for-each select="marc:collection">
         <rdf:RDF>
@@ -78,58 +79,57 @@
         </xsl:for-each>
     </xsl:template>
     
-    
-    <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111']" mode = "wor">
-        <xsl:call-template name="handleRelator">
-            <xsl:with-param name="domain" select="'work'"/>
-        </xsl:call-template>
+    <!-- field level templates - wor, exp, man, ite -->
+    <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" mode = "wor">
+        <xsl:choose>
+            <xsl:when test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
+                <xsl:choose>
+                    <xsl:when test=" @tag = '100' or @tag = '110' or @tag = '111'">
+                        <xsl:call-template name="handle1XXNoRelator">
+                            <xsl:with-param name="domain" select="'work'"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                    <xsl:otherwise/>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:call-template name="handleRelator">
+                    <xsl:with-param name="domain" select="'work'"/>
+                </xsl:call-template>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111']" mode = "exp">
-        <xsl:call-template name="handleRelator">
-            <xsl:with-param name="domain" select="'expression'"/>
-        </xsl:call-template>
-    </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111']" mode = "ite" expand-text="true">
-        <xsl:param name="baseIRI"/>
-        <xsl:param name="controlNumber"/>
-        <xsl:variable name="testItem">
-            <xsl:call-template name="handleRelator">
-                <xsl:with-param name="domain" select="'item'"/>
-            </xsl:call-template>
-        </xsl:variable>
-        <xsl:if test="$testItem/node() or $testItem/@*">
-            <xsl:variable name="genID" select="generate-id()"/>
-            <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
-                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-                <rdaid:P40001>{concat($controlNumber,'ite',$genID)}</rdaid:P40001>
-                <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
-                <xsl:copy-of select="$testItem"/>
-            </rdf:Description>
-        </xsl:if>
-        
-    </xsl:template>
-    
-    <xsl:template match="marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" mode = "wor">
-        <xsl:call-template name="handleRelator">
-            <xsl:with-param name="domain" select="'work'"/>
-        </xsl:call-template>
-    </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" mode = "exp">
-        <xsl:call-template name="handleRelator">
-            <xsl:with-param name="domain" select="'expression'"/>
-        </xsl:call-template>
+    <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" mode = "exp">
+        <xsl:choose>
+            <xsl:when test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
+                <xsl:choose>
+                    <xsl:when test=" @tag = '100' or @tag = '110' or @tag = '111'">
+                        <xsl:call-template name="handle1XXNoRelator">
+                            <xsl:with-param name="domain" select="'expression'"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                    <xsl:otherwise/>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:call-template name="handleRelator">
+                    <xsl:with-param name="domain" select="'expression'"/>
+                </xsl:call-template>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" mode = "man">
         <xsl:choose>
             <xsl:when test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
                 <xsl:choose>
                     <xsl:when test=" @tag = '100' or @tag = '110' or @tag = '111'">
-                        <xsl:call-template name="handle1XXnorelator">
+                        <xsl:call-template name="handle1XXNoRelator">
                             <xsl:with-param name="domain" select="'manifestation'"/>
                         </xsl:call-template>
                     </xsl:when>
                     <xsl:otherwise>
-                        <!-- handle default no relators -->
+                        <!-- default -->
+                        <xsl:copy-of select="uwf:defaultProp(., uwf:fieldType(@tag), 'manifestation', uwf:agentIRI(.))"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
@@ -140,14 +140,29 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" mode = "ite" expand-text="true">
+    <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" mode = "ite" expand-text="true">
         <xsl:param name="baseIRI"/>
         <xsl:param name="controlNumber"/>
         <xsl:variable name="testItem">
-            <xsl:call-template name="handleRelator">
-                <xsl:with-param name="domain" select="'item'"/>
-            </xsl:call-template>
+            <xsl:choose>
+                <xsl:when test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
+                    <xsl:choose>
+                        <xsl:when test=" @tag = '100' or @tag = '110' or @tag = '111'">
+                            <xsl:call-template name="handle1XXNoRelator">
+                                <xsl:with-param name="domain" select="'item'"/>
+                            </xsl:call-template>
+                        </xsl:when>
+                        <xsl:otherwise/>
+                    </xsl:choose>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:call-template name="handleRelator">
+                        <xsl:with-param name="domain" select="'item'"/>
+                    </xsl:call-template>
+                </xsl:otherwise>
+            </xsl:choose>
         </xsl:variable>
+        <!-- if handleRelator returns a property, then generate an item and apply property -->
         <xsl:if test="$testItem/node() or $testItem/@*">
             <xsl:variable name="genID" select="generate-id()"/>
             <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
@@ -160,17 +175,17 @@
         
     </xsl:template>
     
-    <!-- handleRelator template sets the appropriate variables for lookup in the relator table -->
-    <!-- can currently handle 1XX and some 7XXs, working on 6XXs -->
-    <!-- note: 720 will have its own template -->
+    <!-- handleRelator template sets the appropriate variables for lookup in the relator table
+         and outputs the property returned from the lookup -->
     
     <xsl:template name="handleRelator" expand-text="true">
     
-    <!-- ***** VARIABLES ****** -->
         <!-- domain from field template mode -->
         <xsl:param name="domain"/>
+        
+        <!-- ***** VARIABLES ****** -->
         <!-- IRI generated from field, this is a temporary value for now -->
-        <xsl:variable name="agentIRI" select="concat('http://marc2rda.edu/agent/', translate(translate(marc:subfield[@code='a'], ' ', ''), ',', ''))"/>
+        <xsl:variable name="agentIRI" select="uwf:agentIRI(.)"/>
         
         <!-- namespace generated based on domain - this gives us the object namespace -->
         <!-- are there cases where we will use a datatype instead of IRI? -->
@@ -184,7 +199,7 @@
             </xsl:choose>
         </xsl:variable>
         
-        <!-- fieldType is also for lookup - see function uwf:fieldType() -->
+        <!-- fieldType is for lookup - see function uwf:fieldType() -->
         <xsl:variable name="fieldType" select="uwf:fieldType(@tag)"/>
         
         <!-- the indValue is based off field's ind1 to match lookup table - see function uwf:ind1Type()-->
@@ -202,11 +217,10 @@
                 <xsl:copy-of select="uwf:defaultProp(., $fieldType, $domain, $agentIRI)"/>
             </xsl:when>
             
-            <!-- at least one does -->
+            <!-- otherwise at least one does -->
             <xsl:otherwise>
                 
                 <!-- if 4 matches rda iri - multipleDomains doesn't matter -->
-                <!-- TESTED -->
                 <xsl:for-each select="marc:subfield[@code = '4']">
                     <xsl:variable name="sub4Rda" select="uwf:relatorLookupRDA('sub4KeyRda', uwf:normalize(.), $fieldType, $indValue, $domain)"/>
                     <xsl:if test="not(contains($sub4Rda, 'NO MATCH'))">
@@ -216,7 +230,7 @@
                     </xsl:if>
                 </xsl:for-each>
                 
-                <!-- if X00 or X10 and e matches rda label -->
+                <!-- if X00, X10, or 720 and e matches rda label -->
                 <xsl:if test="$fieldType = 'X00' or $fieldType = 'X10' or $fieldType = '720'">
                     <xsl:for-each select="marc:subfield[@code = 'e']">
                         <xsl:variable name="subERda" select="uwf:relatorLookupRDA('subEKeyRda', uwf:normalize(.), $fieldType, $indValue, $domain)"/>
@@ -240,8 +254,9 @@
                     </xsl:for-each>
                 </xsl:if>
                 
-                <!-- if e or 4 is marc and N multiple domains - match rda iri -->
-                <!-- if e or 4 is marc and Y multiple domains - default  -->
+                <!-- if $e$4$j is marc and N multiple domains - match rda iri -->
+                <!-- if $e$4$j is marc and Y multiple domains - default  -->
+                
                 <xsl:for-each select="marc:subfield[@code = '4']">
                     <xsl:variable name="sub4Marc" select="uwf:relatorLookupMarc('sub4KeyMarc', uwf:normalize(.), $fieldType, $indValue, $domain)"/>
                     <xsl:choose>
@@ -302,18 +317,16 @@
                         </xsl:choose>
                     </xsl:for-each>
                 </xsl:if>
-                
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
     
-    <!-- if any $e$4$j matches in the relator table for that field (X00, X10, or X11) and ind1 value, returns match, otherwise default -->
+    <!-- if any $e$4$j matches in the relator table for that field type, ind1 value, and domain, returns match, otherwise default -->
     <xsl:function name="uwf:anyRelatorMatch">
         <xsl:param name="field"/>
         <xsl:param name="fieldNum"/>
         <xsl:param name="ind1"/>
-        
-        <!-- should double-check this logic -->
+    
         <xsl:variable name="testMatch" select="if (some $subfield in ($field/marc:subfield[@code = 'e'] | $field/marc:subfield[@code = '4'] | $field/marc:subfield[@code = 'j']) satisfies (key('anyMatch', uwf:normalize($subfield), document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
             intersect key('indKey', $ind1, document($rel2rda)))) then 'true' else 'false' "/>
         <xsl:choose>
@@ -386,7 +399,7 @@
                     <xsl:when test="starts-with($field/@tag, '1') or starts-with($field/@tag, '7')">
                         <!-- 1XX and 7XX -->
                         <xsl:choose>
-                            <xsl:when test="$fieldType = 'X00' and  ($field/@ind1 = '0' or $field/@ind1 = '1')">
+                            <xsl:when test="($fieldType = 'X00' and  ($field/@ind1 = '0' or $field/@ind1 = '1'))">
                                 <!-- person -->
                                 <xsl:element name="{'rdamo:P30268'}">
                                     <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
@@ -404,13 +417,26 @@
                                     <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
                                 </xsl:element>
                             </xsl:when>
+                            <xsl:when test="$fieldType = '720'">
+                                <xsl:choose>
+                                    <xsl:when test="$field/@ind = '1'">
+                                        <!-- person -->
+                                        <xsl:element name="{'rdamo:P30268'}">
+                                            <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                        </xsl:element>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <!-- agent -->
+                                        <xsl:element name="{'rdamo:P30267'}">
+                                            <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                        </xsl:element>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:when>
                             <xsl:otherwise/>
                         </xsl:choose>
                     </xsl:when>
                 </xsl:choose>
-            </xsl:when>
-            <xsl:when test="$domain = 'work'">
-                <!-- I think this is only for subjects, needs to be handled -->
             </xsl:when>
             <xsl:otherwise/>
         </xsl:choose>
@@ -473,6 +499,11 @@
             </xsl:choose>
     </xsl:function>
     
+    <xsl:function name="uwf:agentIRI">
+        <xsl:param name="field"/>
+        <xsl:value-of select="concat('http://marc2rda.edu/agent/', translate(translate($field/marc:subfield[@code='a'], ' ', ''), ',', ''))"/>
+    </xsl:function>
+    
     <xsl:function name="uwf:normalize">
         <xsl:param name="subfield"/>
         <xsl:choose>
@@ -488,14 +519,17 @@
         </xsl:choose>
     </xsl:function>
     
-    <xsl:template name="handle1XXnorelator" expand-text="true">
+    <xsl:template name="handle1XXNoRelator" expand-text="true">
         <xsl:param name="domain"/>
         <xsl:choose>
+            <!-- if 1XX has no relator and there is a 7XX field -->
             <xsl:when test="../marc:datafield[@tag = '700'] or ../marc:datafield[@tag = '710'] or ../marc:datafield[@tag = '711'] or ../marc:datafield[@tag = '720']">
-                <xsl:variable name="copied100">
+                <!-- copy the 1XX node as variable -->
+                <xsl:variable name="copied1XX">
                     <xsl:copy select=".">
                         <xsl:copy-of select="./@*"/>
                         <xsl:copy-of select="./*"/>
+                        <!-- add any relator subfields from the 7XX fields that start with 'joint' or 'jt' -->
                         <xsl:for-each select="../marc:datafield[@tag = '700'] | ../marc:datafield[@tag = '710'] | ../marc:datafield[@tag = '711'] | ../marc:datafield[@tag = '720']">
                             <xsl:for-each select="marc:subfield[@code = 'e'] | marc:subfield[@code = '4'] | marc:subfield[@code = 'j']">
                                 <xsl:if test="starts-with(., 'joint') or starts-with(., 'jt')">
@@ -505,16 +539,25 @@
                         </xsl:for-each>
                     </xsl:copy>
                 </xsl:variable>
-                <xsl:if test="$copied100/marc:datafield/marc:subfield[@code = 'e'] or $copied100/marc:datafield/marc:subfield[@code = '4'] or $copied100/marc:datafield/marc:subfield[@code = 'j']">
-                    <xsl:for-each select="$copied100/marc:datafield">
-                        <xsl:call-template name="handleRelator">
-                            <xsl:with-param name="domain" select="$domain"/>
-                        </xsl:call-template>
-                    </xsl:for-each>
-                </xsl:if>
+                <xsl:choose>
+                    <!-- if there were 'joint' or 'jt' relator subfields added to the copied 1XX,
+                         run the copied node through handleRelator template -->
+                    <xsl:when test="$copied1XX/marc:datafield/marc:subfield[@code = 'e'] or $copied1XX/marc:datafield/marc:subfield[@code = '4'] or $copied1XX/marc:datafield/marc:subfield[@code = 'j']">
+                        <xsl:for-each select="$copied1XX/marc:datafield">
+                            <xsl:call-template name="handleRelator">
+                                <xsl:with-param name="domain" select="$domain"/>
+                            </xsl:call-template>
+                        </xsl:for-each>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <!-- 7XXs had no 'joint' or 'jt' subfields -->
+                       <xsl:copy-of select="uwf:defaultProp(., uwf:fieldType(@tag), $domain, uwf:agentIRI(.))"/>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:when>
             <xsl:otherwise>
-                <!-- also default here -->
+                <!-- no 7XX fields -->
+                <xsl:copy-of select="uwf:defaultProp(., uwf:fieldType(@tag), $domain, uwf:agentIRI(.))"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
