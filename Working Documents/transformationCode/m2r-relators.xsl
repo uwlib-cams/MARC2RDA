@@ -37,7 +37,7 @@
     <xsl:key name="subJKeyRda" match="uwmisc:row" use="uwmisc:subJLabelRda" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
     <xsl:key name="anyMatch" match="uwmisc:row" use="uwmisc:sub4Code | uwmisc:marcRelIri | uwmisc:unconIri | uwmisc:rdaPropIri | uwmisc:subELabelMarc | uwmisc:subELabelRda" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
     
-    <xsl:variable name="rel2rda" select="'./input/relator-table-xml.xml'"/>
+    <xsl:variable name="rel2rda" select="'./lookup/relatorTable-2024-04-29.xml'"/>
     <xsl:mode name="wor" on-no-match="shallow-skip"/>
     <xsl:mode name="exp" on-no-match="shallow-skip"/>
     <xsl:mode name="man" on-no-match="shallow-skip"/>
@@ -480,7 +480,7 @@
                     </xsl:choose>
                 </xsl:when>
                 <xsl:when test="$tag = 'X10' or $tag = 'X11'">
-                    <xsl:value-of select="'#'"/>
+                    <xsl:value-of select="'any'"/>
                 </xsl:when>
                 <!-- options are '0 or 1', '#', and '3' -->
                 <xsl:otherwise>
