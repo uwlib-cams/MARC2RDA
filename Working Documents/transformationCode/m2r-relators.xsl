@@ -221,7 +221,7 @@
             <xsl:otherwise>
                 <!-- if 4 matches rda iri - multipleDomains doesn't matter -->
                 <xsl:for-each select="marc:subfield[@code = '4']">
-                    <xsl:variable name="sub4Rda" select="uwf:relatorLookupRDA('sub4KeyRda', ., $fieldType, $indValue, $domain)"/>
+                    <xsl:variable name="sub4Rda" select="uwf:relatorLookupRDA('sub4KeyRda', uwf:normalize(.), $fieldType, $indValue, $domain)"/>
                     <xsl:if test="not(contains($sub4Rda, 'NO MATCH'))">
                         <xsl:element name="{$ns-wemi || ':' || substring($sub4Rda/uwmisc:rdaPropIri, string-length($sub4Rda/uwmisc:rdaPropIri) - 5)}">
                             <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
@@ -257,7 +257,7 @@
                 <!-- if $e$4$j is marc and Y multiple domains - default  -->
                 
                 <xsl:for-each select="marc:subfield[@code = '4']">
-                    <xsl:variable name="sub4Marc" select="uwf:relatorLookupMarc('sub4KeyMarc', ., $fieldType, $indValue, $domain)"/>
+                    <xsl:variable name="sub4Marc" select="uwf:relatorLookupMarc('sub4KeyMarc', uwf:normalize(.), $fieldType, $indValue, $domain)"/>
                     <xsl:choose>
                         <xsl:when test="contains($sub4Marc, 'NO MATCH')">
                             <!-- do nothing on no match -->
@@ -534,7 +534,7 @@
                 </xsl:choose>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:value-of select="$subfield"/>
+                <xsl:value-of select="normalize-space($subfield)"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
