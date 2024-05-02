@@ -380,7 +380,22 @@
                 </xsl:choose>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:value-of select="'NO MATCH'"/>
+                <xsl:choose>
+                    <xsl:when test="$domain = 'manifestation'">
+                        <xsl:choose>
+                            <xsl:when test="contains((key($key, $subfield, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
+                                intersect key('indKey', $ind, document($rel2rda)))[1]/uwmisc:multipleDomains, 'Y')">
+                                <xsl:value-of select="'DEFAULT'"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="'NO MATCH'"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="'NO MATCH'"/>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
