@@ -25,7 +25,7 @@
     version="3.0">
     <xsl:output encoding="UTF-8" method="xml" indent="yes"/>
     
-    <!-- keys -->
+<!-- **KEYS FOR LOOKUP** -->
     <xsl:key name="fieldKey" match="uwmisc:row" use="uwmisc:field" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
     <xsl:key name="indKey" match="uwmisc:row" use="uwmisc:ind1" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
     <xsl:key name="domainKey" match="uwmisc:row" use="uwmisc:domain" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
@@ -38,6 +38,232 @@
     <xsl:key name="anyMatch" match="uwmisc:row" use="uwmisc:sub4Code | uwmisc:marcRelIri | uwmisc:unconIri | uwmisc:rdaPropIri | uwmisc:subELabelMarc | uwmisc:subELabelRda" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
     
     <xsl:variable name="rel2rda" select="'./lookup/relatorTable-2024-04-29.xml'"/>
+    
+<!-- **FUNCTIONS** -->   
+    
+    <!-- takes in the field number and returns the field type for lookup in relator table -->
+    <!-- either 'X00', 'X10', or 'X11' -->
+    <xsl:function name="uwf:fieldType">
+        <xsl:param name="fieldNum"/>
+        <xsl:choose>
+            <xsl:when test="($fieldNum = '100') or ($fieldNum = '600') or ($fieldNum = '700')" >
+                <xsl:value-of select="'X00'"/>
+            </xsl:when>
+            <xsl:when test="($fieldNum = '110') or ($fieldNum = '610') or ($fieldNum = '710')" >
+                <xsl:value-of select="'X10'"/>
+            </xsl:when>
+            <xsl:when test="($fieldNum = '111') or ($fieldNum = '611') or ($fieldNum = '711')" >
+                <xsl:value-of select="'X11'"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <!-- otherwise it's 720 -->
+                <xsl:value-of select="$fieldNum"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
+    <xsl:function name="uwf:ind1Type">
+        <xsl:param name="tag"/>
+        <xsl:param name="ind1"/>
+        <xsl:choose>
+            <!-- for 720, options are '1' or '# or 2' -->
+            <xsl:when test="$tag = '720'">
+                <xsl:choose>
+                    <xsl:when test="not($ind1 = '1')">
+                        <xsl:value-of select="'# or 2'"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="$ind1"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$tag = 'X10' or $tag = 'X11'">
+                <xsl:value-of select="'any'"/>
+            </xsl:when>
+            <!-- options are '0 or 1', '#', and '3' -->
+            <xsl:otherwise>
+                <xsl:choose>
+                    <xsl:when test="($ind1 = '1') or ($ind1 = '0')">
+                        <xsl:value-of select="'0 or 1'"/>
+                    </xsl:when>
+                    <xsl:when test="($ind1 = ' ')">
+                        <xsl:value-of select="'#'"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="$ind1"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
+    <xsl:function name="uwf:agentIRI">
+        <xsl:param name="field"/>
+        <xsl:value-of select="concat('http://marc2rda.edu/agent/', translate(translate($field/marc:subfield[@code='a'], ' ', ''), ',', ''))"/>
+    </xsl:function>
+    
+    <xsl:function name="uwf:normalize">
+        <xsl:param name="subfield"/>
+        <xsl:choose>
+            <xsl:when test="$subfield/@code = 'e' or $subfield/@code = 'j'">
+                <xsl:choose>
+                    <xsl:when test="starts-with(normalize-space($subfield), 'jt')">
+                        <xsl:value-of select="normalize-space(translate(replace($subfield, 'jt', ''), ',.', ''))"/>
+                    </xsl:when>
+                    <xsl:when test="starts-with(normalize-space($subfield), 'joint')">
+                        <xsl:value-of select="normalize-space(translate(replace($subfield, 'joint', ''), ',.', ''))"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="normalize-space(translate($subfield, ',.', ''))"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="normalize-space($subfield)"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
+    <!-- if any $e$4$j matches in the relator table for that field type, ind1 value, and domain, returns match, otherwise default -->
+    <xsl:function name="uwf:anyRelatorMatch">
+        <xsl:param name="field"/>
+        <xsl:param name="fieldNum"/>
+        <xsl:param name="ind1"/>
+        
+        <xsl:variable name="testMatch" select="if (some $subfield in ($field/marc:subfield[@code = 'e'] | $field/marc:subfield[@code = '4'] | $field/marc:subfield[@code = 'j']) satisfies (key('anyMatch', uwf:normalize($subfield), document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
+            intersect key('indKey', $ind1, document($rel2rda)))) then 'true' else 'false' "/>
+        <xsl:choose>
+            <xsl:when test="$testMatch = 'false'">
+                <xsl:value-of select="'DEFAULT'"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="'MATCH'"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
+    <!-- if $4 or $e are rda values, domain is a given and we don't worry about multiple domains -->
+    <xsl:function name="uwf:relatorLookupRDA" expand-text="yes">
+        <xsl:param name="key"/>
+        <xsl:param name="subfield"/>
+        <xsl:param name="fieldNum"/>
+        <xsl:param name="ind"/>
+        <xsl:param name="domain"/>
+        <xsl:choose>
+            <xsl:when test="key($key, $subfield, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
+                intersect key('indKey', $ind, document($rel2rda)) intersect key('domainKey', $domain, document($rel2rda))">
+                <xsl:copy-of select="(key($key, $subfield, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
+                    intersect key('indKey', $ind, document($rel2rda)) intersect key('domainKey', $domain, document($rel2rda)))[1]"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="'NO MATCH'"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
+    
+    <!-- marc lookups -->
+    <xsl:function name="uwf:relatorLookupMarc" expand-text="yes">
+        <xsl:param name="key"/>
+        <xsl:param name="subfield"/>
+        <xsl:param name="fieldNum"/>
+        <xsl:param name="ind"/>
+        <xsl:param name="domain"/>
+        <xsl:choose>
+            <xsl:when test="key($key, $subfield, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
+                intersect key('indKey', $ind, document($rel2rda)) intersect key('domainKey', $domain, document($rel2rda))">
+                <xsl:variable name="match" select="(key($key, $subfield, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
+                    intersect key('indKey', $ind, document($rel2rda)) intersect key('domainKey', $domain, document($rel2rda)))[1]"/>
+                <xsl:choose>
+                    <xsl:when test="contains($match/uwmisc:multipleDomains, 'N')">
+                        <xsl:copy-of select="$match"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="'DEFAULT'"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:choose>
+                    <xsl:when test="$domain = 'manifestation'">
+                        <xsl:choose>
+                            <xsl:when test="contains((key($key, $subfield, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
+                                intersect key('indKey', $ind, document($rel2rda)))[1]/uwmisc:multipleDomains, 'Y')">
+                                <xsl:value-of select="'DEFAULT'"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="'NO MATCH'"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="'NO MATCH'"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
+    
+    <xsl:function name="uwf:defaultProp">
+        <xsl:param name="field"/>
+        <xsl:param name="fieldType"/>
+        <xsl:param name="domain"/>
+        <xsl:param name="agentIRI"/>
+        <xsl:choose>
+            <xsl:when test="$domain = 'manifestation'">
+                <xsl:choose>
+                    <xsl:when test="starts-with($field/@tag, '1') or starts-with($field/@tag, '7')">
+                        <!-- 1XX and 7XX -->
+                        <xsl:choose>
+                            <xsl:when test="($fieldType = 'X00' and  ($field/@ind1 = '0' or $field/@ind1 = '1'))">
+                                <!-- person -->
+                                <xsl:element name="{'rdamo:P30268'}">
+                                    <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                </xsl:element>
+                            </xsl:when>
+                            <xsl:when test="$fieldType = 'X00' and $field/@ind1 = '3'">
+                                <!-- family -->
+                                <xsl:element name="{'rdamo:P30269'}">
+                                    <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                </xsl:element>
+                            </xsl:when>
+                            <xsl:when test="$fieldType = 'X10' or $fieldType = 'X11'">
+                                <!-- corporate body -->
+                                <xsl:element name="{'rdamo:P30270'}">
+                                    <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                </xsl:element>
+                            </xsl:when>
+                            <xsl:when test="$fieldType = '720'">
+                                <xsl:choose>
+                                    <xsl:when test="$field/@ind = '1'">
+                                        <!-- person -->
+                                        <xsl:element name="{'rdamo:P30268'}">
+                                            <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                        </xsl:element>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <!-- agent -->
+                                        <xsl:element name="{'rdamo:P30267'}">
+                                            <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                        </xsl:element>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:when>
+                            <xsl:otherwise/>
+                        </xsl:choose>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise/>
+        </xsl:choose>
+    </xsl:function>
+    
+    
+   
+    
+
+<!-- **TEMPLATES** -->
     <xsl:mode name="wor" on-no-match="shallow-skip"/>
     <xsl:mode name="exp" on-no-match="shallow-skip"/>
     <xsl:mode name="man" on-no-match="shallow-skip"/>
@@ -319,225 +545,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    
-    <!-- if any $e$4$j matches in the relator table for that field type, ind1 value, and domain, returns match, otherwise default -->
-    <xsl:function name="uwf:anyRelatorMatch">
-        <xsl:param name="field"/>
-        <xsl:param name="fieldNum"/>
-        <xsl:param name="ind1"/>
-    
-        <xsl:variable name="testMatch" select="if (some $subfield in ($field/marc:subfield[@code = 'e'] | $field/marc:subfield[@code = '4'] | $field/marc:subfield[@code = 'j']) satisfies (key('anyMatch', uwf:normalize($subfield), document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
-            intersect key('indKey', $ind1, document($rel2rda)))) then 'true' else 'false' "/>
-        <xsl:choose>
-            <xsl:when test="$testMatch = 'false'">
-                <xsl:value-of select="'DEFAULT'"/>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:value-of select="'MATCH'"/>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:function>
-    
-    <!-- if $4 or $e are rda values, domain is a given and we don't worry about multiple domains -->
-    <xsl:function name="uwf:relatorLookupRDA" expand-text="yes">
-        <xsl:param name="key"/>
-        <xsl:param name="subfield"/>
-        <xsl:param name="fieldNum"/>
-        <xsl:param name="ind"/>
-        <xsl:param name="domain"/>
-            <xsl:choose>
-                <xsl:when test="key($key, $subfield, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
-                    intersect key('indKey', $ind, document($rel2rda)) intersect key('domainKey', $domain, document($rel2rda))">
-                    <xsl:copy-of select="(key($key, $subfield, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
-                        intersect key('indKey', $ind, document($rel2rda)) intersect key('domainKey', $domain, document($rel2rda)))[1]"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:value-of select="'NO MATCH'"/>
-                </xsl:otherwise>
-            </xsl:choose>
-    </xsl:function>
 
-    
-    <!-- marc lookups -->
-    <xsl:function name="uwf:relatorLookupMarc" expand-text="yes">
-        <xsl:param name="key"/>
-        <xsl:param name="subfield"/>
-        <xsl:param name="fieldNum"/>
-        <xsl:param name="ind"/>
-        <xsl:param name="domain"/>
-        <xsl:choose>
-            <xsl:when test="key($key, $subfield, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
-                intersect key('indKey', $ind, document($rel2rda)) intersect key('domainKey', $domain, document($rel2rda))">
-                <xsl:variable name="match" select="(key($key, $subfield, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
-                    intersect key('indKey', $ind, document($rel2rda)) intersect key('domainKey', $domain, document($rel2rda)))[1]"/>
-                <xsl:choose>
-                    <xsl:when test="contains($match/uwmisc:multipleDomains, 'N')">
-                        <xsl:copy-of select="$match"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="'DEFAULT'"/>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:choose>
-                    <xsl:when test="$domain = 'manifestation'">
-                        <xsl:choose>
-                            <xsl:when test="contains((key($key, $subfield, document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
-                                intersect key('indKey', $ind, document($rel2rda)))[1]/uwmisc:multipleDomains, 'Y')">
-                                <xsl:value-of select="'DEFAULT'"/>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:value-of select="'NO MATCH'"/>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="'NO MATCH'"/>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:function>
-    
-    
-    <xsl:function name="uwf:defaultProp">
-        <xsl:param name="field"/>
-        <xsl:param name="fieldType"/>
-        <xsl:param name="domain"/>
-        <xsl:param name="agentIRI"/>
-        <xsl:choose>
-            <xsl:when test="$domain = 'manifestation'">
-                <xsl:choose>
-                    <xsl:when test="starts-with($field/@tag, '1') or starts-with($field/@tag, '7')">
-                        <!-- 1XX and 7XX -->
-                        <xsl:choose>
-                            <xsl:when test="($fieldType = 'X00' and  ($field/@ind1 = '0' or $field/@ind1 = '1'))">
-                                <!-- person -->
-                                <xsl:element name="{'rdamo:P30268'}">
-                                    <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
-                                </xsl:element>
-                            </xsl:when>
-                            <xsl:when test="$fieldType = 'X00' and $field/@ind1 = '3'">
-                                <!-- family -->
-                                <xsl:element name="{'rdamo:P30269'}">
-                                    <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
-                                </xsl:element>
-                            </xsl:when>
-                            <xsl:when test="$fieldType = 'X10' or $fieldType = 'X11'">
-                                <!-- corporate body -->
-                                <xsl:element name="{'rdamo:P30270'}">
-                                    <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
-                                </xsl:element>
-                            </xsl:when>
-                            <xsl:when test="$fieldType = '720'">
-                                <xsl:choose>
-                                    <xsl:when test="$field/@ind = '1'">
-                                        <!-- person -->
-                                        <xsl:element name="{'rdamo:P30268'}">
-                                            <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
-                                        </xsl:element>
-                                    </xsl:when>
-                                    <xsl:otherwise>
-                                        <!-- agent -->
-                                        <xsl:element name="{'rdamo:P30267'}">
-                                            <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
-                                        </xsl:element>
-                                    </xsl:otherwise>
-                                </xsl:choose>
-                            </xsl:when>
-                            <xsl:otherwise/>
-                        </xsl:choose>
-                    </xsl:when>
-                </xsl:choose>
-            </xsl:when>
-            <xsl:otherwise/>
-        </xsl:choose>
-    </xsl:function>
-    
-    
-    <!-- takes in the field number and returns the field type for lookup in relator table -->
-    <!-- either 'X00', 'X10', or 'X11' -->
-    <xsl:function name="uwf:fieldType">
-        <xsl:param name="fieldNum"/>
-        <xsl:choose>
-            <xsl:when test="($fieldNum = '100') or ($fieldNum = '600') or ($fieldNum = '700')" >
-                <xsl:value-of select="'X00'"/>
-            </xsl:when>
-            <xsl:when test="($fieldNum = '110') or ($fieldNum = '610') or ($fieldNum = '710')" >
-                <xsl:value-of select="'X10'"/>
-            </xsl:when>
-            <xsl:when test="($fieldNum = '111') or ($fieldNum = '611') or ($fieldNum = '711')" >
-                <xsl:value-of select="'X11'"/>
-            </xsl:when>
-            <xsl:otherwise>
-                <!-- otherwise it's 720 -->
-                <xsl:value-of select="$fieldNum"/>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:function>
-    
-    <xsl:function name="uwf:ind1Type">
-        <xsl:param name="tag"/>
-        <xsl:param name="ind1"/>
-            <xsl:choose>
-                <!-- for 720, options are '1' or '# or 2' -->
-                <xsl:when test="$tag = '720'">
-                    <xsl:choose>
-                        <xsl:when test="not($ind1 = '1')">
-                            <xsl:value-of select="'# or 2'"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:value-of select="$ind1"/>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:when>
-                <xsl:when test="$tag = 'X10' or $tag = 'X11'">
-                    <xsl:value-of select="'any'"/>
-                </xsl:when>
-                <!-- options are '0 or 1', '#', and '3' -->
-                <xsl:otherwise>
-                    <xsl:choose>
-                        <xsl:when test="($ind1 = '1') or ($ind1 = '0')">
-                            <xsl:value-of select="'0 or 1'"/>
-                        </xsl:when>
-                        <xsl:when test="($ind1 = ' ')">
-                            <xsl:value-of select="'#'"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:value-of select="$ind1"/>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:otherwise>
-            </xsl:choose>
-    </xsl:function>
-    
-    <xsl:function name="uwf:agentIRI">
-        <xsl:param name="field"/>
-        <xsl:value-of select="concat('http://marc2rda.edu/agent/', translate(translate($field/marc:subfield[@code='a'], ' ', ''), ',', ''))"/>
-    </xsl:function>
-    
-    <xsl:function name="uwf:normalize">
-        <xsl:param name="subfield"/>
-        <xsl:choose>
-            <xsl:when test="$subfield/@code = 'e' or $subfield/@code = 'j'">
-                <xsl:choose>
-                    <xsl:when test="starts-with(normalize-space($subfield), 'jt')">
-                        <xsl:value-of select="normalize-space(translate(replace($subfield, 'jt', ''), ',.', ''))"/>
-                    </xsl:when>
-                    <xsl:when test="starts-with(normalize-space($subfield), 'joint')">
-                        <xsl:value-of select="normalize-space(translate(replace($subfield, 'joint', ''), ',.', ''))"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="normalize-space(translate($subfield, ',.', ''))"/>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:value-of select="normalize-space($subfield)"/>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:function>
     
     <xsl:template name="handle1XXNoRelator" expand-text="true">
         <xsl:param name="domain"/>
