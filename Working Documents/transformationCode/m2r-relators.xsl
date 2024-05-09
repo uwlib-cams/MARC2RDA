@@ -28,7 +28,6 @@
 <!-- **KEYS FOR LOOKUP** -->
     <xsl:key name="fieldKey" match="uwmisc:row" use="uwmisc:field" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
     <xsl:key name="indKey" match="uwmisc:row" use="uwmisc:ind1" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
-    <xsl:key name="domainKey" match="uwmisc:row" use="uwmisc:domain" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
     <xsl:key name="sub4KeyMarc" match="uwmisc:row" use="uwmisc:sub4Code | uwmisc:marcRelIri | uwmisc:unconIri" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
     <xsl:key name="sub4KeyRda" match="uwmisc:row" use="uwmisc:rdaPropIri" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
     <xsl:key name="subEKeyMarc" match="uwmisc:row" use="uwmisc:subELabelMarc" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
@@ -124,7 +123,7 @@
         </xsl:choose>
     </xsl:function>
     
-    <!-- if any $e$4$j matches in the relator table for that field type, ind1 value, and domain, returns match, otherwise default -->
+    <!-- if any $e$4$j matches in the relator table for that field type and ind1 value, returns match, otherwise default -->
     <xsl:function name="uwf:anyRelatorMatch">
         <xsl:param name="field"/>
         <xsl:param name="fieldNum"/>
@@ -625,60 +624,6 @@
         </xsl:choose>
     </xsl:template>
 
-    
-    <xsl:template name="handle1XXNoRelator" expand-text="true">
-        <xsl:param name="domain"/>
-        <xsl:param name="baseIRI"/>
-        <xsl:choose>
-            <!-- if 1XX has no relator and there is a 7XX field -->
-            <xsl:when test="../marc:datafield[@tag = '700'] or ../marc:datafield[@tag = '710'] or ../marc:datafield[@tag = '711'] or ../marc:datafield[@tag = '720']">
-                <!-- copy the 1XX node as variable -->
-                <xsl:variable name="copied1XX">
-                    <xsl:copy select=".">
-                        <xsl:copy-of select="./@*"/>
-                        <xsl:copy-of select="./*"/>
-                        <!-- add any relator subfields from the 7XX fields that start with 'joint' or 'jt' -->
-                        <xsl:for-each select="../marc:datafield[@tag = '700'] | ../marc:datafield[@tag = '710'] | ../marc:datafield[@tag = '711'] | ../marc:datafield[@tag = '720']">
-                            <xsl:for-each select="marc:subfield[@code = 'e'] | marc:subfield[@code = '4'] | marc:subfield[@code = 'j']">
-                                <xsl:if test="starts-with(., 'joint') or starts-with(., 'jt')">
-                                    <marc:subfield code="{@code}">{.}</marc:subfield>
-                                </xsl:if>
-                            </xsl:for-each>
-                        </xsl:for-each>
-                    </xsl:copy>
-                </xsl:variable>
-                <xsl:choose>
-                    <!-- if there were 'joint' or 'jt' relator subfields added to the copied 1XX,
-                         run the copied node through handleRelator template -->
-                    <xsl:when test="$copied1XX/marc:datafield/marc:subfield[@code = 'e'] or $copied1XX/marc:datafield/marc:subfield[@code = '4'] or $copied1XX/marc:datafield/marc:subfield[@code = 'j']">
-                        <xsl:for-each select="$copied1XX/marc:datafield">
-                            <xsl:choose>
-                                <xsl:when test="$domain = 'agent'">
-                                    <xsl:call-template name="handleInvRelator">
-                                        <xsl:with-param name="baseIRI" select="$baseIRI"/>
-                                    </xsl:call-template>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <xsl:call-template name="handleRelator">
-                                        <xsl:with-param name="domain" select="$domain"/>
-                                    </xsl:call-template>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                        </xsl:for-each>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <!-- 7XXs had no 'joint' or 'jt' subfields -->
-                       <xsl:copy-of select="uwf:defaultProp(., uwf:fieldType(@tag), $domain, uwf:agentIRI(.))"/>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:when>
-            <xsl:otherwise>
-                <!-- no 7XX fields -->
-                <xsl:copy-of select="uwf:defaultProp(., uwf:fieldType(@tag), $domain, uwf:agentIRI(.))"/>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    
     <xsl:template name="handleInvRelator" expand-text="true">
         <xsl:param name="baseIRI"/>
         <!-- ***** VARIABLES ****** -->
@@ -899,6 +844,59 @@
                         </xsl:choose>
                     </xsl:for-each>
                 </xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template name="handle1XXNoRelator" expand-text="true">
+        <xsl:param name="domain"/>
+        <xsl:param name="baseIRI"/>
+        <xsl:choose>
+            <!-- if 1XX has no relator and there is a 7XX field -->
+            <xsl:when test="../marc:datafield[@tag = '700'] or ../marc:datafield[@tag = '710'] or ../marc:datafield[@tag = '711'] or ../marc:datafield[@tag = '720']">
+                <!-- copy the 1XX node as variable -->
+                <xsl:variable name="copied1XX">
+                    <xsl:copy select=".">
+                        <xsl:copy-of select="./@*"/>
+                        <xsl:copy-of select="./*"/>
+                        <!-- add any relator subfields from the 7XX fields that start with 'joint' or 'jt' -->
+                        <xsl:for-each select="../marc:datafield[@tag = '700'] | ../marc:datafield[@tag = '710'] | ../marc:datafield[@tag = '711'] | ../marc:datafield[@tag = '720']">
+                            <xsl:for-each select="marc:subfield[@code = 'e'] | marc:subfield[@code = '4'] | marc:subfield[@code = 'j']">
+                                <xsl:if test="starts-with(., 'joint') or starts-with(., 'jt')">
+                                    <marc:subfield code="{@code}">{.}</marc:subfield>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:for-each>
+                    </xsl:copy>
+                </xsl:variable>
+                <xsl:choose>
+                    <!-- if there were 'joint' or 'jt' relator subfields added to the copied 1XX,
+                         run the copied node through handleRelator template -->
+                    <xsl:when test="$copied1XX/marc:datafield/marc:subfield[@code = 'e'] or $copied1XX/marc:datafield/marc:subfield[@code = '4'] or $copied1XX/marc:datafield/marc:subfield[@code = 'j']">
+                        <xsl:for-each select="$copied1XX/marc:datafield">
+                            <xsl:choose>
+                                <xsl:when test="$domain = 'agent'">
+                                    <xsl:call-template name="handleInvRelator">
+                                        <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                                    </xsl:call-template>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:call-template name="handleRelator">
+                                        <xsl:with-param name="domain" select="$domain"/>
+                                    </xsl:call-template>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:for-each>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <!-- 7XXs had no 'joint' or 'jt' subfields -->
+                       <xsl:copy-of select="uwf:defaultProp(., uwf:fieldType(@tag), $domain, uwf:agentIRI(.))"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise>
+                <!-- no 7XX fields -->
+                <xsl:copy-of select="uwf:defaultProp(., uwf:fieldType(@tag), $domain, uwf:agentIRI(.))"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
