@@ -7,19 +7,44 @@
 5,,50,LIBRARY OF CONGRESS CALL NUMBER (R),Existence in LC collection,#,No information provided,Series call number (SE) [OBSOLETE],3,Sub-subseries,,,a,Classification number (R),,,,,,,,,,,,,
 6,,50,LIBRARY OF CONGRESS CALL NUMBER (R),Existence in LC collection,#,No information provided,Source of call number,4,Assigned by agency other than LC,,,a,Classification number (R),,,,,,,,,,,,,
 7,,50,LIBRARY OF CONGRESS CALL NUMBER (R),Existence in LC collection,0,Item is in LC,Source of call number,#,No information provided [OBSOLETE],,,a,Classification number (R),,,,,,,,,,,,,
-8,,50,LIBRARY OF CONGRESS CALL NUMBER (R),Existence in LC collection,0,Item is in LC,Source of call number,0,Assigned by LC,,,a,Classification number (R),,,,,,,,,,,,,
+8,first pass,50,LIBRARY OF CONGRESS CALL NUMBER (R),Existence in LC collection,*, ,Source of call number,*, ,,,a,Classification number (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,structured description,"The approach connects an RDA element, e.g. rdawo:P10256, to an instance of an external entity, i.e. skos:Concept. The transform avoids loss of information from the MARC record by representing it in SKOS, which is also used by the RDA Registry to map concepts, etc. SKOS is also used, sometimes partially, in existing representations of subject and classification schemes, so all of this is a 'best' fit with community norms. This transform is essentially creating RDF representations of those concept vocabularies from legacy records, independently from the M212RDA transform, and then connecting them to the RDA graph. Personally, I wonder why this has not been done before (it has nothing to do with RDA, and SKOS is a W3C recommended standard); perhaps we will find out when we run the transform! RDA is designed to be used in this way.-- Gordon 03/01/2024","<work> rdawo:P10256 <ConceptLCC(“value of $a”)> . // duplicates https://id.loc.gov/authorities/classification/“value of $a”
+
+<ConceptLCC(“value of $a”)> skos:notation “value of $a”^^<SchemeNotationLCC> .
+
+<ConceptLCC(“value of $a”)> skos:altLabel “value of $a” .
+
+<ConceptLCC(“value of $a”)> skos:inScheme https://id.loc.gov/vocabulary/classSchemes/lcc .","See Example 1 below. The transform mints the concept URI ConceptLCC(“Z699.35.M28”) (e.g. http://transform/lcc/hash(Z699.35.M28)), but LCC already has a URI for the same concept: https://id.loc.gov/authorities/classification/Z699.35.M28 .
+After the transform is run, the transform URI can be de-duplicated agains the LoC URI if required. The outcome is a merging of the transform concept graph with the official scheme graph.
+We have decided not to directly use the LCC URI for 2 reasons:
+1. Not all LCC numbers have an LCC RDF URI.
+2. The LCC graph contains statements using fuzzy semantics from MADS and other LoC ontologies that appear to be inconsistent. The transform allows its used to merge with LoC or not.
+Example 1: 050 00 $a Z699.35.M28 $b W55 2013
+<work> rdawo:P10256 <ConceptLCC(“Z699.35.M28”)> . // duplicates https://id.loc.gov/authorities/classification/Z699.35.M28 
+<ConceptLCC(“Z699.35.M28”)> skos:notation “Z699.35.M28”^^<SchemeNotationLCC> .
+<ConceptLCC(“Z699.35.M28”)> skos:altLabel “Z699.35.M28” .
+<ConceptLCC(“Z699.35.M28”)> skos:inScheme https://id.loc.gov/vocabulary/classSchemes/lcc.
+--Gordon 03/01/2024","The instance of skos:Concept is an opaque URI, and tConcept() is the transform for the skos sub-graph. The concept transform invokes a label transform (tLabel()), a notation transform (tNotation()), and notation datatype transform (tSchemeNotation()), and a scheme transform (tScheme()). For field 050:
+
+tLabel(050) = ""value of $a""
+tNotation(050) = ""value of $a""
+tSchemeNotation(050) = datatype for LCC
+tScheme(050) = https://id.loc.gov/vocabulary/classSchemes/lcc
+
+It is a good idea to mint the opaque URI with a base domain that differentiates the scheme. A main reason for doing this is to allow subsequent matching against the scheme's own URIs, if they exist. So ConceptLCC(“Z699.35.M28”) in Example 1 is a URI constructed as transformBaseDomain + schemeSubDomain + hash(value), such as http://transform/lcc/123456
+
+SchemeNotationLCC in the example is the datatype for LCC classification numbers."
 9,,50,LIBRARY OF CONGRESS CALL NUMBER (R),Existence in LC collection,0,Item is in LC,Series call number (SE) [OBSOLETE],0,No series involved,,,a,Classification number (R),,,,,,,,,,,,,
 10,,50,LIBRARY OF CONGRESS CALL NUMBER (R),Existence in LC collection,0,Item is in LC,Series call number (SE) [OBSOLETE],1,Main series,,,a,Classification number (R),,,,,,,,,,,,,
 11,,50,LIBRARY OF CONGRESS CALL NUMBER (R),Existence in LC collection,0,Item is in LC,Series call number (SE) [OBSOLETE],2,Subseries,,,a,Classification number (R),,,,,,,,,,,,,
 12,,50,LIBRARY OF CONGRESS CALL NUMBER (R),Existence in LC collection,0,Item is in LC,Series call number (SE) [OBSOLETE],3,Sub-subseries,,,a,Classification number (R),,,,,,,,,,,,,
-13,,50,LIBRARY OF CONGRESS CALL NUMBER (R),Existence in LC collection,0,Item is in LC,Source of call number,4,Assigned by agency other than LC,,,a,Classification number (R),,,,,,,,,,,,,
+13, ,50,LIBRARY OF CONGRESS CALL NUMBER (R),Existence in LC collection,0,Item is in LC,Source of call number,4,Assigned by agency other than LC,,,a,Classification number (R),,,,,,,,,,,,,
 14,,50,LIBRARY OF CONGRESS CALL NUMBER (R),Existence in LC collection,1,Item is not in LC,Source of call number,#,No information provided [OBSOLETE],,,a,Classification number (R),,,,,,,,,,,,,
 15,,50,LIBRARY OF CONGRESS CALL NUMBER (R),Existence in LC collection,1,Item is not in LC,Source of call number,0,Assigned by LC,,,a,Classification number (R),,,,,,,,,,,,,
-16,,50,LIBRARY OF CONGRESS CALL NUMBER (R),Existence in LC collection,1,Item is not in LC,Series call number (SE) [OBSOLETE],0,No series involved,,,a,Classification number (R),,,,,,,,,,,,,
+16, ,50,LIBRARY OF CONGRESS CALL NUMBER (R),Existence in LC collection,1,Item is not in LC,Series call number (SE) [OBSOLETE],0,No series involved,,,a,Classification number (R),,,,,,,,,,,,,
 17,,50,LIBRARY OF CONGRESS CALL NUMBER (R),Existence in LC collection,1,Item is not in LC,Series call number (SE) [OBSOLETE],1,Main series,,,a,Classification number (R),,,,,,,,,,,,,
 18,,50,LIBRARY OF CONGRESS CALL NUMBER (R),Existence in LC collection,1,Item is not in LC,Series call number (SE) [OBSOLETE],2,Subseries,,,a,Classification number (R),,,,,,,,,,,,,
 19,,50,LIBRARY OF CONGRESS CALL NUMBER (R),Existence in LC collection,1,Item is not in LC,Series call number (SE) [OBSOLETE],3,Sub-subseries,,,a,Classification number (R),,,,,,,,,,,,,
-20,,50,LIBRARY OF CONGRESS CALL NUMBER (R),Existence in LC collection,1,Item is not in LC,Source of call number,4,Assigned by agency other than LC,,,a,Classification number (R),,,,,,,,,,,,,
+20, ,50,LIBRARY OF CONGRESS CALL NUMBER (R),Existence in LC collection,1,Item is not in LC,Source of call number,4,Assigned by agency other than LC,,,a,Classification number (R),,,,,,,,,,,,,
 21,,50,LIBRARY OF CONGRESS CALL NUMBER (R),Existence in LC collection,#,No information provided,Source of call number,#,No information provided [OBSOLETE],,,b,Item number (NR),,,,,,,,,,,,,
 22,,50,LIBRARY OF CONGRESS CALL NUMBER (R),Existence in LC collection,#,No information provided,Source of call number,0,Assigned by LC,,,b,Item number (NR),,,,,,,,,,,,,
 23,,50,LIBRARY OF CONGRESS CALL NUMBER (R),Existence in LC collection,#,No information provided,Series call number (SE) [OBSOLETE],0,No series involved,,,b,Item number (NR),,,,,,,,,,,,,

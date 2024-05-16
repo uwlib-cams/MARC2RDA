@@ -13,7 +13,7 @@
 6,delete,518,DATE/TIME AND PLACE OF AN EVENT NOTE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/e/P20214,has date of expression,,$0 is related to $p which is place,,,
 7,delete,518,DATE/TIME AND PLACE OF AN EVENT NOTE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,too specific,,,
 8,delete,518,DATE/TIME AND PLACE OF AN EVENT NOTE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/e/P20307,has related timespan of expression,,$0 is related to $p which is place,,,
-9,p?,518,DATE/TIME AND PLACE OF AN EVENT NOTE (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,,,,,,,
+9,?,518,DATE/TIME AND PLACE OF AN EVENT NOTE (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,,,,,,,
 10,,518,DATE/TIME AND PLACE OF AN EVENT NOTE (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10218,has place of origin of work,,,,,
 11,,518,DATE/TIME AND PLACE OF AN EVENT NOTE (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10219,has date of work,,,,,
 12,,518,DATE/TIME AND PLACE OF AN EVENT NOTE (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,

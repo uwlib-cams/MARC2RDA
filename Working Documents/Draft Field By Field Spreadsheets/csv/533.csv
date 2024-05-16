@@ -116,13 +116,10 @@ Delete.  This decision was revisited 11/8/2023 in context of 535 mapping and an 
 112,not mapped,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,y,Data provenance (R),,,,,,,,,,,,,"Provisionally, not mapped - this is a new subfield, and it is not clear from the documentation how the ""data provenance"" might translate to RDA.  We don't have a model for using Metadata Work to express provenance for RDA statements at a granular level and haven't seen this in the wild (yet)  --lna 12/7/2023"
 113,not mapped,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,5,Institution to which field applies (NR),,,,,,,,,,,,,"Not mapped - the interpretation of  $5""Institution to which the field applies"" is not clear for 533.  The examples show the institution whose symbol appears in $5 also appearing as the publisher/creator of the reproduction.  --la 12/7/2023"
 114,not mapped,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,value not mapped; used to link field to corresponding 880 Alternate Graphic Representation
-115,First pass,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,7/0,"Fixed-length data elements of reproduction (NR)/
-Type of date/Publication status",c,Continuing resource continuously published,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,,"value = ""Continuing resource currently published.""",,"For $7, follow the 008 mappings.  Only two of the position 6 date status values are mapped.  --la 12/7/2023"
-116,First pass,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,7/0,"Fixed-length data elements of reproduction (NR)/
-Type of date/Publication status",d,Continuing resource ceased publication,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured, ,"value = ""Continuing resource ceased publication.""",,
-117,,,,,,,,,,,,7/1-4,Fixed-length data elements of reproduction (NR)/Date1,,,7/0,c,,,,,,,,,
+115,,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,7,"Fixed-length data elements of reproduction (NR)/
+Type of date/Publication status",*,,,,,,,,,,,,"For $7, follow the 008 mappings.  Only two of the position 6 date status values are mapped.  --la 12/7/2023"
+116,,,,,,,,,,,,,,,,,,,,,,,,,,
+117,,,,,,,,,,,,,,,,,,,,,,,,,,
 118,,,,,,,,,,,,,,,,,,,,,,,,,,
 119,,,,,,,,,,,,,,,,,,,,,,,,,,
-120,,,,,,,,,,,,,,,,,,,,,,,,,,
-121,,,,,,,,,,,,,,,,,,,,,,,,,,
-122,not mapped,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,Decision not to map:  https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iig-8 
+120,not mapped,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,Decision not to map:  https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iig-8 
