@@ -1,4 +1,4 @@
-import zipfile, os, glob, shutil
+import zipfile, os, glob, shutil, re
 import pandas as pd
 
 #Procedure:
@@ -16,44 +16,59 @@ import pandas as pd
 #    downloadFile
 #7. Go to git repo and manually add, commit, push
 
-downloadPath = r"C:\Users\geron\Downloads\\"
-downloadFile = "drive-download-20240228T202106Z-001.zip"
-extractPath = r"C:\Users\geron\OneDrive\Desktop\csvStage_folders\\"
-dir = r"C:\Users\geron\OneDrive\Desktop\csvStage_files"
-gitRepo = r"C:\Users\geron\OneDrive - UW\Documents\gitRepos\MARC2RDA\Working Documents\Draft Field By Field Spreadsheets\csv"
+downloadPath = input('''Enter path to downloaded .xslx folder (this should end in .zip): 
+                     ''')
+# downloadPath = r"/mnt/c/Users/cpayn/Downloads/drive-download-20240522T012037Z-001.zip"
+extractPath =  re.sub('.zip', '', downloadPath) + "-temp/"
+gitRepoInput = input('''Enter path to your local copy of the MARC2RDA GitHub Repo (this should end in /MARC2RDA):
+                ''')
+gitRepo = gitRepoInput + "/Working Documents/Draft Field By Field Spreadsheets/csv"
+# gitRepo = r"/mnt/c/move/linked_data/MARC2RDA/Working Documents/Draft Field By Field Spreadsheets/csv"
+
+if not(os.path.exists(downloadPath)):
+    print("Please doublecheck path to .xlsx folder and rerun.")
+    exit()
+
+if not(os.path.exists(gitRepo)):
+    print("Please doublecheck path to local GitHub repo and re-run.")
+    exit()
 
 #extract all dir/files downloaded from Sheets
-with zipfile.ZipFile(downloadPath + downloadFile,"r") as zip_ref:
+print('Extracting files from zip folder\n')
+with zipfile.ZipFile(downloadPath,"r") as zip_ref:
     zip_ref.extractall(extractPath)
 
-#move all .xlsx files out of Sheets directories into a common directory
-for name in glob.glob(extractPath + '*\\*'):
-    if name.endswith(".xlsx"):
-        shutil.copy(name, dir)
-
 #convert .xlsx to .csv and remove the .xlsx files
-for file in glob.glob(dir + "\\" + "*.xlsx"):
+print('Converting files to csv\n')
+for file in glob.glob(extractPath + "*/*.xlsx"):
     excel = pd.read_excel(file)
     excel.to_csv(file + '.csv' )
     os.remove(file)
 
 #strip .xlsx from file name
-for fi in glob.glob(dir + '\\' + '*.csv'):
+print("Renaming files\n")
+for fi in glob.glob(extractPath + '*/*.csv'):
     new_name = fi.replace('.xlsx','')
     os.rename(fi, new_name)
 
-#src = r"C:\Users\geron\OneDrive\Desktop\testing2-sheets2csv-ok2del"
-for f in os.listdir(dir):
-    startFile = dir + '\\' +  f
-    finalFile = gitRepo + '\\' + f
-    if os.path.isfile(startFile):
-        shutil.move(startFile, finalFile)
+# move files to GitHub repo
+print("moving files")
+for folder in os.listdir(extractPath):
+    for f in os.listdir(extractPath + '/' + folder):
+        startFile = extractPath + '/' +  folder + '/' + f
+        print(startFile)
+        finalFile = gitRepo + '/' + f
+        if os.path.isfile(startFile):
+            shutil.move(startFile, finalFile)
+            finalFile = gitRepo + '/' + f
 
-#Delete local dir containing all unzipped Excel files in original Google Sheets directory structure
+# Delete local dir containing all unzipped Excel files in original Google Sheets directory structure
+print("Deleting temp folder")
 deletePath = extractPath + "*"
 dirs = glob.glob(extractPath + '*')
 for d in dirs:
     shutil.rmtree(d)
+shutil.rmtree(extractPath)
 
 #Possible additional steps:
 #1.	Delete Google Sheets zip download in local Downloads
