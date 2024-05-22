@@ -1,11 +1,13 @@
 import zipfile, os, glob, shutil, re
 import pandas as pd
+# Originally written by Theo Gerontakos
+# Updated by Cypress Payne
 
 #Procedure:
 #1. Go to Mapping Documents top directory in Google Sheets
 #2. Select ALL (all folders that is, but not "Non-Mapping Materials" -- only folders named after MARC fields)
 #3. Download
-#4. Run Python script which will prompt youto enter values for:
+#4. Run Python script which will prompt you to enter values for:
 #   downloadPath - path to .zip folder containing downloaded Google Sheets
 #   gitRepo - path to local copy of MARC2RDA git repo
 #5. Manually delete:
