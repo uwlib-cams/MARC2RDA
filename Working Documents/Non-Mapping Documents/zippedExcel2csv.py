@@ -5,26 +5,26 @@ import pandas as pd
 #1. Go to Mapping Documents top directory in Google Sheets
 #2. Select ALL (all folders that is, but not "Non-Mapping Materials" -- only folders named after MARC fields)
 #3. Download
-#4. Enter var values for python script (at present the way this is done varies for the vars):
-#   downloadPath (currently OK for geron)
-#   downloadFile -- CHANGES EVERY TIME
-#   extractPath (currently OK for geron)
-#   dir (currently OK for geron)
-#   gitRepo (currently OK for geron)
-#5. Run
-#6. Manually delete:
+#4. Run Python script which will prompt youto enter values for:
+#   downloadPath - path to .zip folder containing downloaded Google Sheets
+#   gitRepo - path to local copy of MARC2RDA git repo
+#5. Manually delete:
 #    downloadFile
-#7. Go to git repo and manually add, commit, push
+#6. Go to git repo and manually add, commit, push
 
-downloadPath = input('''Enter path to downloaded .xslx folder (this should end in .zip): 
+# downloadPath e.g. /mnt/c/Users/cpayn/Downloads/drive-download-20240522T012037Z-001.zip or c:\Users\cpayn\Downloads\drive-download-20240522T012037Z-001.zip
+downloadPath = input('''Enter path to downloaded .xslx folder (this should end in .zip):
                      ''')
-# downloadPath = r"/mnt/c/Users/cpayn/Downloads/drive-download-20240522T012037Z-001.zip"
-extractPath =  re.sub('.zip', '', downloadPath) + "-temp/"
+# gitRepo e.g. /mnt/c/move/linked_data/MARC2RDA or c:\Move\linked_data\MARC2RDA
 gitRepoInput = input('''Enter path to your local copy of the MARC2RDA GitHub Repo (this should end in /MARC2RDA):
-                ''')
-gitRepo = gitRepoInput + "/Working Documents/Draft Field By Field Spreadsheets/csv"
-# gitRepo = r"/mnt/c/move/linked_data/MARC2RDA/Working Documents/Draft Field By Field Spreadsheets/csv"
+               ''')
 
+#set temporary extractPath for unzipping and editing files
+extractPath =  re.sub('.zip', '', downloadPath) + "-temp/"
+#set path to csv folder in MARC2RDA repo
+gitRepo = gitRepoInput + "/Working Documents/Draft Field By Field Spreadsheets/csv"
+
+# check that input paths for downloadPath and gitRepo exist
 if not(os.path.exists(downloadPath)):
     print("Please doublecheck path to .xlsx folder and rerun.")
     exit()
