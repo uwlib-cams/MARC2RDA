@@ -69,7 +69,10 @@
         mode="wor" expand-text="yes">
         <xsl:call-template name="getmarc"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdawd:P10004>{.}</rdawd:P10004>
+            <rdawd:P10004>
+                <xsl:if test="../marc:subfield[@code = '2']">
+                    <xsl:copy-of select="uwf:S2lookup(../marc:subfield[@code = '2'])"/>
+                </xsl:if>{.}</rdawd:P10004>
             <xsl:if test="../marc:subfield[@code = '3']">
                 <rdawd:P10330>
                     <xsl:text>Category of work {.} applies only to {../marc:subfield[@code = '3']}.</xsl:text>
@@ -77,12 +80,27 @@
             </xsl:if>
         </xsl:for-each>
         <!-- 0s, 1s, and 2s will need updating once decision is made -->
-        <xsl:copy-of
+        <!--<xsl:copy-of
             select="uwf:conceptTest(marc:subfield[@code = '0'] | marc:subfield[@code = '1'], 'P10004')"
-        />
-        <xsl:if test="marc:subfield[@code = '2']">
-            <xsl:copy-of select="uwf:S2(.)"/>
-        </xsl:if>
+        />-->
+        <xsl:for-each select="marc:subfield[@code = '1']">
+            <rdaw:P10004>
+                <xsl:attribute name="rdf:resource">{.}</xsl:attribute> 
+            </rdaw:P10004>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = '0']">
+            <xsl:choose>
+                <xsl:when test="starts-with(., 'http')">
+                    <rdaw:P10004>
+                        <xsl:attribute name="rdf:resource">{.}</xsl:attribute> 
+                    </rdaw:P10004>
+                </xsl:when>
+                <xsl:otherwise>
+                    <rdaw:P10004>{.}</rdaw:P10004>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:for-each>
+        
     </xsl:template>
     <xsl:template
         match="marc:datafield[@tag = '382'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '382']"
