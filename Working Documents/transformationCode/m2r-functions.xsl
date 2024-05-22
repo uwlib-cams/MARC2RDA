@@ -22,10 +22,16 @@
     xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
     xmlns:fake="http://fakePropertiesForDemo"
     xmlns:uwf="http://universityOfWashington/functions"
+    xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
     version="3.0">
     <xsl:variable name="collBase">http://marc2rda.edu/fake/colMan/</xsl:variable>
+    
     <xsl:variable name="lookupDoc" select="document('lookup/$5-preprocessedRDA.xml')"/>
+    <xsl:variable name="locSubjectSchemesDoc" select="document('https://id.loc.gov/vocabulary/subjectSchemes.rdf')"/>
+    <xsl:variable name="locGenreFormSchemesDoc" select="document('https://id.loc.gov/vocabulary/genreFormSchemes.rdf')"/>
+    
     <xsl:key name="normCode" match="rdf:Description[rdaad:P50006]" use="rdaad:P50006"/>
+    <xsl:key name="schemeKey" match="madsrdf:hasMADSSchemeMember" use="madsrdf:Authority/@rdf:about"/>
     
     <xsl:function name="uwf:test" expand-text="yes">
         <xsl:param name="subfield"/>
@@ -116,6 +122,61 @@
     <xsl:function name="uwf:S2" expand-text="yes">
         <xsl:param name="marcField"/>
         <xsl:comment>Handle $2 here when decision is made</xsl:comment>
+    </xsl:function>
+    
+    <xsl:function name="uwf:S2lookup">
+        <xsl:param name="code2"/>
+        <xsl:choose>
+            <xsl:when test="$locSubjectSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/subjectSchemes/', lower-case($code2)))">
+                <xsl:attribute name="rdf:datatype">
+                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/subjectSchemes/', lower-case($code2))"/>
+                </xsl:attribute>
+            </xsl:when>
+            <xsl:when test="$locGenreFormSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/genreFormSchemes/', lower-case($code2)))">
+                <xsl:attribute name="rdf:datatype">
+                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/genreFormSchemes/', lower-case($code2))"/>
+                </xsl:attribute>
+            </xsl:when>
+            <xsl:otherwise/>
+        </xsl:choose>
+    </xsl:function>
+    
+    <!-- untested -->
+    <xsl:function name="uwf:ind2Thesaurus">
+        <xsl:param name="ind2"/>
+        <xsl:choose>
+            <xsl:when test="$ind2 = '0'">
+                <xsl:attribute name="rdf:datatype">
+                    <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/lcsh'"/>
+                </xsl:attribute>
+            </xsl:when>
+            <xsl:when test="$ind2 = '1'">
+                <xsl:attribute name="rdf:datatype">
+                    <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/cyac'"/>
+                </xsl:attribute>
+            </xsl:when>
+            <xsl:when test="$ind2 = '2'">
+                <xsl:attribute name="rdf:datatype">
+                    <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/mesh'"/>
+                </xsl:attribute>
+            </xsl:when>
+            <xsl:when test="$ind2 = '3'">
+                <xsl:attribute name="rdf:datatype">
+                    <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/nal'"/>
+                </xsl:attribute>
+            </xsl:when>
+            <xsl:when test="$ind2 = '5'">
+                <xsl:attribute name="rdf:datatype">
+                    <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/cash'"/>
+                </xsl:attribute>
+            </xsl:when>
+            <xsl:when test="$ind2 = '6'">
+                <xsl:attribute name="rdf:datatype">
+                    <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/rvm'"/>
+                </xsl:attribute>
+            </xsl:when>
+            <xsl:otherwise/>
+        </xsl:choose>
     </xsl:function>
     
 </xsl:stylesheet>
