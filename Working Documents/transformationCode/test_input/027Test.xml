@@ -7,14 +7,18 @@
         <marc:controlfield tag="001">020-test1</marc:controlfield>
         <marc:datafield tag="027" ind1=" " ind2=" ">
             <marc:subfield code="a">FWS/OBS-84/15</marc:subfield>
+            <marc:subfield code="q">qualifying info.</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="027" ind1=" " ind2=" ">
             <marc:subfield code="a">FOA--89-40265/C--SE</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="027" ind1=" " ind2=" ">
             <marc:subfield code="a">METPRO/CB/TR--74/216+PR.ENVR.WI</marc:subfield>
-            <marc:subfield code="q">qualifying info 1</marc:subfield>
-            <marc:subfield code="z">invalidnumber</marc:subfield>
+            <marc:subfield code="q">(qualifying info 1 ; </marc:subfield>
+            <marc:subfield code="q">qualifying info 2)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="027" ind1=" " ind2=" ">
+            <marc:subfield code="z">1234567</marc:subfield>
             <marc:subfield code="q">qualifying info for z</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="880" ind1=" " ind2=" ">
