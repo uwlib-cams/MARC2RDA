@@ -73,7 +73,64 @@
     
     <!-- 534 -->
     <xsl:template name="F534-xx-pabcefklmnotxz" expand-text="yes">
-        
+        <xsl:choose>
+            <xsl:when test="marc:subfield[@code = 'p']">
+                <xsl:text>{.} </xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:text>Original version note: </xsl:text>
+            </xsl:otherwise>
+        </xsl:choose>
+        <xsl:for-each
+            select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'e'] | 
+            marc:subfield[@code = 'f'] | marc:subfield[@code = 'k'] | marc:subfield[@code = 'l'] | marc:subfield[@code = 'm']
+            | marc:subfield[@code = 'n'] | marc:subfield[@code = 'o'] | marc:subfield[@code = 't'] | marc:subfield[@code = 'x'] | marc:subfield[@code = 'z']">
+            <xsl:if test="@code = 'a'">
+                <xsl:text>Main entry of original: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'b'">
+                <xsl:text>Edition statement of original: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'c'">
+                <xsl:text>Publication, distribution, etc. of original: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'e'">
+                <xsl:text>Physical description, etc. of original: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'f'">
+                <xsl:text>Series statement of original: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'k'">
+                <xsl:text>Key title of original: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'l'">
+                <xsl:text>Location of original: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'm'">
+                <xsl:text>Material specific details: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'n'">
+                <xsl:text>Note about original: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'o'">
+                <xsl:text>Other resource identifier: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 't'">
+                <xsl:text>Title statement of original: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'x'">
+                <xsl:text>International Standard Serial Number: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'z'">
+                <xsl:text>International Standard Book Number: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="position() != last()">
+                <xsl:text>; </xsl:text>
+            </xsl:if>
+        </xsl:for-each>
+        <xsl:if test="marc:subfield[@code = '3']">
+            <xsl:text> (Applies to: {marc:subfield[@code = '3']})</xsl:text>
+        </xsl:if>
     </xsl:template>
     
     <xsl:template name="F534-xx-origMan" expand-text="yes">
