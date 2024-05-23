@@ -196,12 +196,14 @@
             <xsl:call-template name="F534-xx-pabcefklmnotxz"/>
         </rdamd:P30137>
         <xsl:if test="$leader0608 != 'ab' and $leader0608 != 'ai' and $leader0608 != 'as'">
-            <rdamo:P30024 rdf:resource="{concat('http://marc2rda.edu/fake/man/', generate-id())}"/>
+            <xsl:if test="@tag = '534' or (@tag = '880' and substring(marc:subfield[@code = '6'], 1, 6) = '534-00')">
+                <rdamo:P30024 rdf:resource="{concat('http://marc2rda.edu/fake/man/', generate-id())}"/>
+            </xsl:if>
         </xsl:if>
     </xsl:template>
     
     <xsl:template
-        match="marc:datafield[@tag = '534'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '534']"
+        match="marc:datafield[@tag = '534'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '534-00']"
         mode="man2">
         <xsl:param name="baseIRI"/>
         <xsl:variable name="leader0608" select="concat(substring(preceding-sibling::marc:leader, 6, 1), substring(preceding-sibling::marc:leader, 8, 1))"/>
@@ -209,14 +211,16 @@
             <rdf:Description rdf:about="{concat('http://marc2rda.edu/fake/man/', generate-id())}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
                 <rdamo:P30139 rdf:resource="{concat($baseIRI,'exp')}"/>
-                <xsl:for-each select="marc:subfield[@code = 'x']">
-                    <xsl:if test="preceding::marc:datafield[@tag = '022'][marc:subfield[@code = 'a']]">
-                        <xsl:variable name="field022a" select="preceding::marc:datafield[@tag = '022']/marc:subfield[@code = 'a']"/>
-                        <xsl:if test="normalize-space(.) = normalize-space($field022a) and not(../marc:subfield[@code = '3'])">
+                <xsl:variable name="field022" select="preceding-sibling::marc:datafield[@tag = '022'][marc:subfield[@code = 'a']]"/>
+                <xsl:if test="$field022/marc:subfield[@code = 'a'] = marc:subfield[@code = 'x']">
+                    <xsl:call-template name="F534-xx-origMan"/>
+                    <xsl:if test="marc:subfield[@code = '6']">
+                        <xsl:variable name="occNum" select="concat('534-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                        <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
                             <xsl:call-template name="F534-xx-origMan"/>
-                        </xsl:if>
+                        </xsl:for-each>
                     </xsl:if>
-                </xsl:for-each>
+                </xsl:if>
             </rdf:Description>
         </xsl:if>
     </xsl:template>

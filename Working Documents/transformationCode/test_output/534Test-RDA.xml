@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
+         xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/526-testwor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/526-testexp"/>
+      <rdawd:P10002>526-testwor</rdawd:P10002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/526-testexp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/526-testman"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/526-testwor"/>
+      <rdaed:P20002>526-testexp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/526-testman">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/526-testexp"/>
+      <rdamd:P30137>Original version note: Main entry of original: original version note; Edition statement of original: contents of b; Publication, distribution, etc. of original: contents of c; Physical description, etc. of original: contents of e; Series statement of original: contents of f; Material specific details: contents of m; Note about original: contents of n; Other resource identifier: contents of o; Title statement of original: contents of t; International Standard Book Number: contents of z; International Standard Serial Number: 0376-4583</rdamd:P30137>
+      <rdamo:P30024 rdf:resource="http://marc2rda.edu/fake/man/d14e9"/>
+      <rdamd:P30137>Original version note: Main entry of original: non-roman a; Material specific details: non-roman m</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/man/d14e9">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/526-testexp"/>
+      <rdamd:P30107>contents of b</rdamd:P30107>
+      <rdamd:P30111>contents of c</rdamd:P30111>
+      <rdamd:P30137>Physical description, etc.: contents of e</rdamd:P30137>
+      <rdamd:P30106>contents of f</rdamd:P30106>
+      <rdamd:P30137>Material specific details: contents of m</rdamd:P30137>
+      <rdamd:P30137>contents of n</rdamd:P30137>
+      <rdamd:P30004>contents of o</rdamd:P30004>
+      <rdamd:P30134>contents of t</rdamd:P30134>
+      <rdamd:P30004>contents of z</rdamd:P30004>
+      <rdamd:P30137>Material specific details: non-roman m</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/526-testwor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/526-testexp"/>
+      <rdawd:P10002>526-testwor</rdawd:P10002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/526-testexp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/526-testman"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/526-testwor"/>
+      <rdaed:P20002>526-testexp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/526-testman">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/526-testexp"/>
+      <rdamd:P30137>Original version note: Main entry of original: original version note; Edition statement of original: contents of b; Publication, distribution, etc. of original: contents of c; Physical description, etc. of original: contents of e; Series statement of original: contents of f; Material specific details: contents of m; Note about original: contents of n; Other resource identifier: contents of o; Title statement of original: contents of t; International Standard Book Number: contents of z; International Standard Serial Number: 0376-4583</rdamd:P30137>
+   </rdf:Description>
+</rdf:RDF>

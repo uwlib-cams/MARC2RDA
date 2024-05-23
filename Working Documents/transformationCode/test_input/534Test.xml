@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111aam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">526-test</marc:controlfield>
+        <marc:datafield tag="022" ind1=" " ind2=" ">
+            <marc:subfield code="a">0376-4583</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="534" ind1=" " ind2=" ">
+            <marc:subfield code="a">original version note</marc:subfield>
+            <marc:subfield code="b">contents of b</marc:subfield>
+            <marc:subfield code="c">contents of c</marc:subfield>
+            <marc:subfield code="e">contents of e</marc:subfield>
+            <marc:subfield code="f">contents of f</marc:subfield>
+            <marc:subfield code="m">contents of m</marc:subfield>
+            <marc:subfield code="n">contents of n</marc:subfield>
+            <marc:subfield code="o">contents of o</marc:subfield>
+            <marc:subfield code="t">contents of t</marc:subfield>
+            <marc:subfield code="z">contents of z</marc:subfield>
+            <marc:subfield code="x">0376-4583</marc:subfield>
+            <marc:subfield code="6">880-01</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">534-01</marc:subfield>
+            <marc:subfield code="a">non-roman a</marc:subfield>
+            <marc:subfield code="m">non-roman m</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111aab a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">526-test</marc:controlfield>
+        <marc:datafield tag="534" ind1=" " ind2=" ">
+            <marc:subfield code="a">original version note</marc:subfield>
+            <marc:subfield code="b">contents of b</marc:subfield>
+            <marc:subfield code="c">contents of c</marc:subfield>
+            <marc:subfield code="e">contents of e</marc:subfield>
+            <marc:subfield code="f">contents of f</marc:subfield>
+            <marc:subfield code="m">contents of m</marc:subfield>
+            <marc:subfield code="n">contents of n</marc:subfield>
+            <marc:subfield code="o">contents of o</marc:subfield>
+            <marc:subfield code="t">contents of t</marc:subfield>
+            <marc:subfield code="z">contents of z</marc:subfield>
+            <marc:subfield code="x">0376-4583</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>
