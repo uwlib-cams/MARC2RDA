@@ -156,6 +156,7 @@
             <xsl:value-of select="concat('Geographic coverage: ', marc:subfield[@code = 'a'])"/>
         </rdawd:P10216>
     </xsl:template>
+    
     <!-- 526 - Study Program Information Note -->
     <xsl:template match="marc:datafield[@tag = '526']" mode="man">
         <xsl:call-template name="getmarc"/>
@@ -184,6 +185,40 @@
         <rdaed:P20071>
             <xsl:value-of select="marc:subfield[@code = 'a']"/>
         </rdaed:P20071>
+    </xsl:template>
+    
+    <!-- 534 - Original version note -->
+    <xsl:template
+        match="marc:datafield[@tag = '534'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '534']"
+        mode="man">
+        <xsl:variable name="leader0608" select="concat(substring(preceding-sibling::marc:leader, 6, 1), substring(preceding-sibling::marc:leader, 8, 1))"/>
+        <rdamd:P30137>
+            <xsl:call-template name="F534-xx-pabcefklmnotxz"/>
+        </rdamd:P30137>
+        <xsl:if test="$leader0608 != 'ab' and $leader0608 != 'ai' and $leader0608 != 'as'">
+            <rdamo:P30024 rdf:resource="{concat('http://marc2rda.edu/fake/man/', generate-id())}"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template
+        match="marc:datafield[@tag = '534'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '534']"
+        mode="man2">
+        <xsl:param name="baseIRI"/>
+        <xsl:variable name="leader0608" select="concat(substring(preceding-sibling::marc:leader, 6, 1), substring(preceding-sibling::marc:leader, 8, 1))"/>
+        <xsl:if test="$leader0608 != 'ab' and $leader0608 != 'ai' and $leader0608 != 'as'">
+            <rdf:Description rdf:about="{concat('http://marc2rda.edu/fake/man/', generate-id())}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+                <rdamo:P30139 rdf:resource="{concat($baseIRI,'exp')}"/>
+                <xsl:for-each select="marc:subfield[@code = 'x']">
+                    <xsl:if test="preceding::marc:datafield[@tag = '022'][marc:subfield[@code = 'a']]">
+                        <xsl:variable name="field022a" select="preceding::marc:datafield[@tag = '022']/marc:subfield[@code = 'a']"/>
+                        <xsl:if test="normalize-space(.) = normalize-space($field022a) and not(../marc:subfield[@code = '3'])">
+                            <xsl:call-template name="F534-xx-origMan"/>
+                        </xsl:if>
+                    </xsl:if>
+                </xsl:for-each>
+            </rdf:Description>
+        </xsl:if>
     </xsl:template>
     
     <!-- 541 - Immediate source of acquisition note -->

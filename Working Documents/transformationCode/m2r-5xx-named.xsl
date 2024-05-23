@@ -71,6 +71,45 @@
         </rdf:Description>
     </xsl:template>
     
+    <!-- 534 -->
+    <xsl:template name="F534-xx-pabcefklmnotxz" expand-text="yes">
+        
+    </xsl:template>
+    
+    <xsl:template name="F534-xx-origMan" expand-text="yes">
+        <xsl:for-each select="../marc:subfield[@code = 'b']">
+            <rdamd:P30107>{.}</rdamd:P30107>
+        </xsl:for-each>
+        <xsl:for-each select="../marc:subfield[@code = 'c']">
+            <rdamd:P30111>{.}</rdamd:P30111>
+        </xsl:for-each>
+        <xsl:for-each select="../marc:subfield[@code = 'e']">
+            <rdamd:P30137>
+                <xsl:text>Physical description, etc.: {.}</xsl:text>
+            </rdamd:P30137>
+        </xsl:for-each>
+        <xsl:for-each select="../marc:subfield[@code = 'f']">
+            <rdamd:P30106>{.}</rdamd:P30106>
+        </xsl:for-each>
+        <xsl:for-each select="../marc:subfield[@code = 'm']">
+            <rdamd:P30137>
+                <xsl:text>Material specific details: {.}</xsl:text>
+            </rdamd:P30137>
+        </xsl:for-each>
+        <xsl:for-each select="../marc:subfield[@code = 'n']">
+            <rdamd:P30137>{.}</rdamd:P30137>
+        </xsl:for-each>
+        <xsl:for-each select="../marc:subfield[@code = 'o']">
+            <rdamd:P30004>{.}</rdamd:P30004>
+        </xsl:for-each>
+        <xsl:for-each select="../marc:subfield[@code = 't']">
+            <rdamd:P30134>{.}</rdamd:P30134>
+        </xsl:for-each>
+        <xsl:for-each select="../marc:subfield[@code = 'z']">
+            <rdamd:P30004>{.}</rdamd:P30004>
+        </xsl:for-each>
+    </xsl:template>
+    
     <!-- 541 -->
     <xsl:template name="F541-xx-abcdefhno" expand-text="yes">
         <!-- for-each loop accounts for repeatable subfields and regular punctuation -->
