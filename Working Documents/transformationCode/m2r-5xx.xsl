@@ -191,11 +191,11 @@
     <xsl:template
         match="marc:datafield[@tag = '534'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '534']"
         mode="man">
-        <xsl:variable name="leader0608" select="concat(substring(preceding-sibling::marc:leader, 6, 1), substring(preceding-sibling::marc:leader, 8, 1))"/>
+        <xsl:variable name="leader0607" select="substring(preceding-sibling::marc:leader, 6, 2)"/>
         <rdamd:P30137>
             <xsl:call-template name="F534-xx-pabcefklmnotxz"/>
         </rdamd:P30137>
-        <xsl:if test="$leader0608 != 'ab' and $leader0608 != 'ai' and $leader0608 != 'as'">
+        <xsl:if test="$leader0607 != 'ab' and $leader0607 != 'ai' and $leader0607 != 'as'">
             <xsl:if test="@tag = '534' or (@tag = '880' and substring(marc:subfield[@code = '6'], 1, 6) = '534-00')">
                 <rdamo:P30024 rdf:resource="{concat('http://marc2rda.edu/fake/man/', generate-id())}"/>
             </xsl:if>
