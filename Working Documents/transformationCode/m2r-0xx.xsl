@@ -95,7 +95,7 @@
                     <rdamo:P30004 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
                 </xsl:when>
                 <xsl:otherwise>
-                    <rdamo:P30004>
+                    <rdamd:P30004>
                         <xsl:text>(STRN) </xsl:text>
                         <xsl:value-of select="."/>
                         <xsl:if test="../marc:subfield[@code = 'q']">
@@ -108,14 +108,14 @@
                             </xsl:for-each>
                             <xsl:text>)</xsl:text>
                         </xsl:if>
-                    </rdamo:P30004>
+                    </rdamd:P30004>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'z']">
             <xsl:choose>
                 <xsl:when test="contains(., '--')">
-                    <rdamo:P30004>
+                    <rdamd:P30004>
                         <xsl:text>(Canceled/invalid ISRN) </xsl:text>
                         <xsl:value-of select="."/>
                         <xsl:if test="../marc:subfield[@code = 'q']">
@@ -128,10 +128,10 @@
                             </xsl:for-each>
                             <xsl:text>)</xsl:text>
                         </xsl:if>
-                    </rdamo:P30004>
+                    </rdamd:P30004>
                 </xsl:when>
                 <xsl:otherwise>
-                    <rdamo:P30004>
+                    <rdamd:P30004>
                         <xsl:text>(Canceled/invalid STRN) </xsl:text>
                         <xsl:value-of select="."/>
                         <xsl:if test="../marc:subfield[@code = 'q']">
@@ -144,7 +144,7 @@
                             </xsl:for-each>
                             <xsl:text>)</xsl:text>
                         </xsl:if>
-                    </rdamo:P30004>
+                    </rdamd:P30004>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:for-each>
@@ -156,7 +156,7 @@
         <xsl:if test="contains(marc:subfield[@code = 'a'], '--')">
             <xsl:for-each select="marc:subfield[@code = 'a']">
                 <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
-                    <rdand:P80068><xsl:value-of select="marc:subfield[@code = 'a']"/></rdand:P80068>
+                    <rdand:P80068><xsl:value-of select="."/></rdand:P80068>
                     <rdand:P80069>ISRN</rdand:P80069>
                     <rdand:P80078>Standard Technical Report Number</rdand:P80078>
                     <xsl:if test="following-sibling::marc:subfield[@code = 'q']">

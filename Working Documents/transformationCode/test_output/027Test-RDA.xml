@@ -38,7 +38,7 @@
       <!--MARC data begins-->
       <fake:marcfield>F027 ## $a FWS/OBS-84/15 $q qualifying info.</fake:marcfield>
       <!--RDA data begins-->
-      <rdamo:P30004>(STRN) FWS/OBS-84/15 (qualifying info.)</rdamo:P30004>
+      <rdamd:P30004>(STRN) FWS/OBS-84/15 (qualifying info.)</rdamd:P30004>
       <!--MARC data begins-->
       <fake:marcfield>F027 ## $a FOA--89-40265/C--SE</fake:marcfield>
       <!--RDA data begins-->
@@ -50,11 +50,11 @@
       <!--MARC data begins-->
       <fake:marcfield>F027 ## $z 1234567 $q qualifying info for z</fake:marcfield>
       <!--RDA data begins-->
-      <rdamo:P30004>(Canceled/invalid STRN) 1234567 (qualifying info for z)</rdamo:P30004>
+      <rdamd:P30004>(Canceled/invalid STRN) 1234567 (qualifying info for z)</rdamd:P30004>
       <!--MARC data begins-->
       <fake:marcfield>F880 ## $z 0716305119 (pbk.)  $6 027-00</fake:marcfield>
       <!--RDA data begins-->
-      <rdamo:P30004>(Canceled/invalid STRN) 0716305119 (pbk.) </rdamo:P30004>
+      <rdamd:P30004>(Canceled/invalid STRN) 0716305119 (pbk.) </rdamd:P30004>
    </rdf:Description>
    <!--MARC data begins-->
    <fake:marcfield>F027 ## $a FWS/OBS-84/15 $q qualifying info.</fake:marcfield>
@@ -63,7 +63,7 @@
    <fake:marcfield>F027 ## $a FOA--89-40265/C--SE</fake:marcfield>
    <!--RDA data begins-->
    <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d14e12">
-      <rdand:P80068/>
+      <rdand:P80068>FOA--89-40265/C--SE</rdand:P80068>
       <rdand:P80069>ISRN</rdand:P80069>
       <rdand:P80078>Standard Technical Report Number</rdand:P80078>
    </rdf:Description>
@@ -71,7 +71,7 @@
    <fake:marcfield>F027 ## $a METPRO/CB/TR--74/216+PR.ENVR.WI $q (qualifying info 1 ;  $q qualifying info 2)</fake:marcfield>
    <!--RDA data begins-->
    <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d14e15">
-      <rdand:P80068/>
+      <rdand:P80068>METPRO/CB/TR--74/216+PR.ENVR.WI</rdand:P80068>
       <rdand:P80069>ISRN</rdand:P80069>
       <rdand:P80078>Standard Technical Report Number</rdand:P80078>
       <rdand:P80071>qualifying info 1; qualifying info 2</rdand:P80071>
