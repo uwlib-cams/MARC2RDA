@@ -27,6 +27,7 @@
         <marc:datafield tag="380" ind1=" " ind2=" ">
             <marc:subfield code="a">Open educational resources</marc:subfield>
             <marc:subfield code="2">lcsh</marc:subfield>
+            <marc:subfield code="3">Introduction</marc:subfield>
         </marc:datafield>
         <!-- 380 with 2 -->
         <marc:datafield tag="380" ind1=" " ind2=" ">
@@ -36,6 +37,11 @@
         <!-- 380 just a -->
         <marc:datafield tag="380" ind1=" " ind2=" ">
             <marc:subfield code="a">Fiction</marc:subfield>
+        </marc:datafield>
+        <!-- 380 with 2 no match -->
+        <marc:datafield tag="380" ind1=" " ind2=" ">
+            <marc:subfield code="a">Some form of work</marc:subfield>
+            <marc:subfield code="2">abcde</marc:subfield>
         </marc:datafield>
     </marc:record>
 </marc:collection>

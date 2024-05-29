@@ -42,13 +42,10 @@
       <rdaw:P10004 rdf:resource="http://www.wikidata.org/entity/Q15416"/>
       <rdaw:P10004>(DLC)gf2011026673</rdaw:P10004>
       <!--MARC data begins-->
-      <fake:marcfield>F380 ## $a Open educational resources $2 lcsh</fake:marcfield>
+      <fake:marcfield>F380 ## $a Open educational resources $2 lcsh $3 Introduction</fake:marcfield>
       <!--RDA data begins-->
       <rdawd:P10004 rdf:datatype="http://id.loc.gov/vocabulary/subjectSchemes/lcsh">Open educational resources</rdawd:P10004>
-      <!--MARC data begins-->
-      <fake:marcfield>F380 ## $a Fiction $2 marcgt</fake:marcfield>
-      <!--RDA data begins-->
-      <rdawd:P10004 rdf:datatype="http://id.loc.gov/vocabulary/genreFormSchemes/marcgt">Fiction</rdawd:P10004>
+      <rdawd:P10330>Category of work Open educational resources applies only to Introduction.</rdawd:P10330>
       <!--MARC data begins-->
       <fake:marcfield>F380 ## $a Fiction $2 marcgt</fake:marcfield>
       <!--RDA data begins-->
@@ -57,6 +54,10 @@
       <fake:marcfield>F380 ## $a Fiction</fake:marcfield>
       <!--RDA data begins-->
       <rdawd:P10004>Fiction</rdawd:P10004>
+      <!--MARC data begins-->
+      <fake:marcfield>F380 ## $a Some form of work $2 abcde</fake:marcfield>
+      <!--RDA data begins-->
+      <rdawd:P10004><!--EXCEPTION: $2 value of abcde has been lost-->Some form of work</rdawd:P10004>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/380-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
