@@ -124,7 +124,7 @@
         <xsl:comment>Handle $2 here when decision is made</xsl:comment>
     </xsl:function>
     
-    <xsl:function name="uwf:S2lookup">
+    <xsl:function name="uwf:S2lookup" expand-text="true">
         <xsl:param name="code2"/>
         <xsl:choose>
             <xsl:when test="$locSubjectSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/subjectSchemes/', lower-case($code2)))">
@@ -137,7 +137,9 @@
                     <xsl:value-of select="concat('http://id.loc.gov/vocabulary/genreFormSchemes/', lower-case($code2))"/>
                 </xsl:attribute>
             </xsl:when>
-            <xsl:otherwise/>
+            <xsl:otherwise>
+                <xsl:comment>EXCEPTION: $2 value of {$code2} has been lost</xsl:comment>
+            </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
     
