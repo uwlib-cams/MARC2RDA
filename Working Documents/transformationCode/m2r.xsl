@@ -22,6 +22,13 @@
     exclude-result-prefixes="marc ex" version="3.0">
     <xsl:output encoding="UTF-8" method="xml" indent="yes"/>
     <xsl:strip-space elements="*"/>
+    
+    <!-- skips fields not yet handled -->
+    <xsl:mode name="wor" on-no-match="shallow-skip"/>
+    <xsl:mode name="exp" on-no-match="shallow-skip"/>
+    <xsl:mode name="man" on-no-match="shallow-skip"/>
+
+    
     <xsl:mode name="ite" on-no-match="deep-skip"/>
     <xsl:mode name="nom" on-no-match="deep-skip"/>
     <xsl:mode name="metaWor" on-no-match="deep-skip"/>
@@ -72,8 +79,10 @@
             <xsl:apply-templates select="marc:record"/>
         </rdf:RDF>
     </xsl:template>
+    
     <xsl:template match="marc:record" expand-text="yes">
         <xsl:variable name="baseIRI" select="concat($base, marc:controlfield[@tag = '001'])"/>
+        
         <!-- *****WORKS***** -->
         <rdf:Description rdf:about="{concat($baseIRI,'wor')}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -81,6 +90,7 @@
             <rdawd:P10002>{concat(marc:controlfield[@tag='001'],'wor')}</rdawd:P10002>
             <xsl:apply-templates select="*" mode="wor"/>
         </rdf:Description>
+        
         <!-- *****EXPRESSIONS***** -->
         <rdf:Description rdf:about="{concat($baseIRI,'exp')}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -89,29 +99,35 @@
             <rdaed:P20002>{concat(marc:controlfield[@tag='001'],'exp')}</rdaed:P20002>
             <xsl:apply-templates select="*" mode="exp"/>
         </rdf:Description>
+        
         <!-- *****MANIFESTATIONS***** -->
         <rdf:Description rdf:about="{concat($baseIRI,'man')}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
             <rdamo:P30139 rdf:resource="{concat($baseIRI,'exp')}"/>
             <xsl:apply-templates select="*" mode="man"/>
         </rdf:Description>
+        
         <!-- *****ITEMS***** -->
         <xsl:apply-templates select="*" mode="ite">
             <xsl:with-param name="baseIRI" select="$baseIRI"/>
             <xsl:with-param name="controlNumber" select="../marc:controlfield[@tag='001']"/>
         </xsl:apply-templates>
+        
         <!-- *****NOMENS***** -->
         <xsl:apply-templates select="*" mode="nom">
             <xsl:with-param name="baseIRI" select="$baseIRI"/>
         </xsl:apply-templates>
+        
         <!-- *****METADATA WORKS***** -->
         <xsl:apply-templates select="*" mode="metaWor">
             <xsl:with-param name="baseIRI" select="$baseIRI"/>
         </xsl:apply-templates>
+        
         <!-- *****RELATED MANIFESTATIONS***** -->
         <xsl:apply-templates select="*" mode="man2">
             <xsl:with-param name="baseIRI" select="$baseIRI"/>
         </xsl:apply-templates>
+        
         <!-- *****RELATED AGENTS***** -->
         <xsl:apply-templates select="*" mode="age">
             <xsl:with-param name="baseIRI" select="$baseIRI"/>
