@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test1</marc:controlfield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Strautmann, Eva,</marc:subfield>
+            <marc:subfield code="d">1963-</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test2</marc:controlfield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Boulanger, John,</marc:subfield>
+            <marc:subfield code="d">1965-</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Williams, Judy</marc:subfield>
+            <marc:subfield code="c">(Wildlife manager),</marc:subfield>
+            <marc:subfield code="e">author.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test3</marc:controlfield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Boulanger, John,</marc:subfield>
+            <marc:subfield code="d">1965-</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Williams, Judy</marc:subfield>
+            <marc:subfield code="c">(Wildlife manager),</marc:subfield>
+            <marc:subfield code="e">joint author.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test4</marc:controlfield>
+        <marc:datafield tag="110" ind1="2" ind2=" ">
+            <marc:subfield code="a">University of Washington.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="a">Gay, Lesbian, and Straight Education Network,</marc:subfield>
+            <marc:subfield code="e">publisher.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="a">National Queer Asian Pacific Islander Alliance,</marc:subfield>
+            <marc:subfield code="e">joint author,</marc:subfield>
+            <marc:subfield code="e">joint issuing body.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test5</marc:controlfield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Williams, Judy</marc:subfield>
+            <marc:subfield code="c">(Wildlife manager),</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test6</marc:controlfield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Oskolkoff, Ruth Ann,</marc:subfield>
+            <marc:subfield code="4">no match</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test7</marc:controlfield>
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="a">Emporia State University.</marc:subfield>
+            <marc:subfield code="b">Department of Biological Sciences,</marc:subfield>
+            <marc:subfield code="4">http://fakeiri.org/fake</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test8</marc:controlfield>
+        <marc:datafield tag="710" ind1="1" ind2=" ">
+            <marc:subfield code="a">Northwest Territories.</marc:subfield>
+            <marc:subfield code="b">Department of Environment and Natural Resources,</marc:subfield>
+            <marc:subfield code="e">issuing corporate body.</marc:subfield>
+            <marc:subfield code="4">http://rdaregistry.info/Elements/m/P30420</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test9</marc:controlfield>
+        <marc:datafield tag="111" ind1="2" ind2=" ">
+            <marc:subfield code="a">ACM-SIAM Symposium on Discrete Algorithms,</marc:subfield>
+            <marc:subfield code="j">author.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="711" ind1="2" ind2=" ">
+            <marc:subfield code="a">Elora Festival.</marc:subfield>
+            <marc:subfield code="4">prf</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test9</marc:controlfield>
+        <marc:datafield tag="711" ind1="2" ind2=" ">
+            <marc:subfield code="a">Elora Festival.</marc:subfield>
+            <marc:subfield code="4">http://id.loc.gov/vocabulary/relators/prf</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test10</marc:controlfield>
+        <marc:datafield tag="711" ind1="2" ind2=" ">
+            <marc:subfield code="a">Elora Festival.</marc:subfield>
+            <marc:subfield code="4">http://rdaregistry.info/Elements/u/P60387</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
+         xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test1wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/relator-test1exp"/>
+      <rdawd:P10002>relator-test1wor</rdawd:P10002>11111nam a2200553ui 4500relator-test1</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test1exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/relator-test1man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/relator-test1wor"/>
+      <rdaed:P20002>relator-test1exp</rdaed:P20002>11111nam a2200553ui 4500relator-test1</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test1man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/relator-test1exp"/>11111nam a2200553ui 4500relator-test1<rdamo:P30268 rdf:resource="http://marc2rda.edu/agent/Strautmann%2CEva%2C1963-"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/agent/Strautmann%2CEva%2C1963-">
+      <rdaad:P50378>Strautmann, Eva, 1963-</rdaad:P50378>
+      <rdaao:P50313 rdf:resource="http://marc2rda.edu/agent/Strautmann%2CEva%2C1963-"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test2wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/relator-test2exp"/>
+      <rdawd:P10002>relator-test2wor</rdawd:P10002>11111nam a2200553ui 4500relator-test2</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test2exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/relator-test2man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/relator-test2wor"/>
+      <rdaed:P20002>relator-test2exp</rdaed:P20002>11111nam a2200553ui 4500relator-test2</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test2man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/relator-test2exp"/>11111nam a2200553ui 4500relator-test2<rdamo:P30268 rdf:resource="http://marc2rda.edu/agent/Boulanger%2CJohn%2C1965-"/>
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/agent/Williams%2CJudy%28Wildlifemanager%29"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/agent/Boulanger%2CJohn%2C1965-">
+      <rdaad:P50378>Boulanger, John, 1965-</rdaad:P50378>
+      <rdaao:P50313 rdf:resource="http://marc2rda.edu/agent/Boulanger%2CJohn%2C1965-"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/agent/Williams%2CJudy%28Wildlifemanager%29">
+      <rdaad:P50378>Williams, Judy (Wildlife manager)</rdaad:P50378>
+      <rdaao:P50313 rdf:resource="http://fakeIRI2.edu/relator-test2/man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test3wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/relator-test3exp"/>
+      <rdawd:P10002>relator-test3wor</rdawd:P10002>11111nam a2200553ui 4500relator-test3</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test3exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/relator-test3man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/relator-test3wor"/>
+      <rdaed:P20002>relator-test3exp</rdaed:P20002>11111nam a2200553ui 4500relator-test3</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test3man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/relator-test3exp"/>11111nam a2200553ui 4500relator-test3<rdamo:P30268 rdf:resource="http://marc2rda.edu/agent/Boulanger%2CJohn%2C1965-"/>
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/agent/Williams%2CJudy%28Wildlifemanager%29"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/agent/Boulanger%2CJohn%2C1965-">
+      <rdaad:P50378>Boulanger, John, 1965-</rdaad:P50378>
+      <rdaao:P50313 rdf:resource="http://fakeIRI2.edu/relator-test3/man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/agent/Williams%2CJudy%28Wildlifemanager%29">
+      <rdaad:P50378>Williams, Judy (Wildlife manager)</rdaad:P50378>
+      <rdaao:P50313 rdf:resource="http://fakeIRI2.edu/relator-test3/man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test4wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/relator-test4exp"/>
+      <rdawd:P10002>relator-test4wor</rdawd:P10002>11111nam a2200553ui 4500relator-test4</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test4exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/relator-test4man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/relator-test4wor"/>
+      <rdaed:P20002>relator-test4exp</rdaed:P20002>11111nam a2200553ui 4500relator-test4</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test4man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/relator-test4exp"/>11111nam a2200553ui 4500relator-test4<rdamo:P30270 rdf:resource="http://marc2rda.edu/agent/UniversityofWashington."/>
+      <rdamo:P30270 rdf:resource="http://marc2rda.edu/agent/Gay%2CLesbian%2CandStraightEducationNetwork"/>
+      <rdamo:P30270 rdf:resource="http://marc2rda.edu/agent/NationalQueerAsianPacificIslanderAlliance"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/agent/UniversityofWashington.">
+      <rdaad:P50378>University of Washington.</rdaad:P50378>
+      <rdaao:P50331 rdf:resource="http://fakeIRI2.edu/relator-test4/man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/agent/Gay%2CLesbian%2CandStraightEducationNetwork">
+      <rdaad:P50378>Gay, Lesbian, and Straight Education Network</rdaad:P50378>
+      <rdaao:P50331 rdf:resource="http://fakeIRI2.edu/relator-test4/man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/agent/NationalQueerAsianPacificIslanderAlliance">
+      <rdaad:P50378>National Queer Asian Pacific Islander Alliance</rdaad:P50378>
+      <rdaao:P50331 rdf:resource="http://fakeIRI2.edu/relator-test4/man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test5wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/relator-test5exp"/>
+      <rdawd:P10002>relator-test5wor</rdawd:P10002>11111nam a2200553ui 4500relator-test5</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test5exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/relator-test5man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/relator-test5wor"/>
+      <rdaed:P20002>relator-test5exp</rdaed:P20002>11111nam a2200553ui 4500relator-test5</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test5man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/relator-test5exp"/>11111nam a2200553ui 4500relator-test5<rdamo:P30268 rdf:resource="http://marc2rda.edu/agent/Williams%2CJudy%28Wildlifemanager%29"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/agent/Williams%2CJudy%28Wildlifemanager%29">
+      <rdaad:P50378>Williams, Judy (Wildlife manager)</rdaad:P50378>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test6wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/relator-test6exp"/>
+      <rdawd:P10002>relator-test6wor</rdawd:P10002>11111nam a2200553ui 4500relator-test6</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test6exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/relator-test6man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/relator-test6wor"/>
+      <rdaed:P20002>relator-test6exp</rdaed:P20002>11111nam a2200553ui 4500relator-test6</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test6man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/relator-test6exp"/>11111nam a2200553ui 4500relator-test6<rdamo:P30268 rdf:resource="http://marc2rda.edu/agent/Oskolkoff%2CRuthAnn"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/agent/Oskolkoff%2CRuthAnn">
+      <rdaad:P50378>Oskolkoff, Ruth Ann</rdaad:P50378>
+      <rdaao:P50313 rdf:resource="http://fakeIRI2.edu/relator-test6/man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test7wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/relator-test7exp"/>
+      <rdawd:P10002>relator-test7wor</rdawd:P10002>11111nam a2200553ui 4500relator-test7</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test7exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/relator-test7man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/relator-test7wor"/>
+      <rdaed:P20002>relator-test7exp</rdaed:P20002>11111nam a2200553ui 4500relator-test7</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test7man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/relator-test7exp"/>11111nam a2200553ui 4500relator-test7<rdamo:P30270 rdf:resource="http://marc2rda.edu/agent/EmporiaStateUniversity.DepartmentofBiologicalSciences"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/agent/EmporiaStateUniversity.DepartmentofBiologicalSciences">
+      <rdaad:P50378>Emporia State University. Department of Biological Sciences</rdaad:P50378>
+      <rdaao:P50331 rdf:resource="http://fakeIRI2.edu/relator-test7/man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test8wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/relator-test8exp"/>
+      <rdawd:P10002>relator-test8wor</rdawd:P10002>11111nam a2200553ui 4500relator-test8</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test8exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/relator-test8man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/relator-test8wor"/>
+      <rdaed:P20002>relator-test8exp</rdaed:P20002>11111nam a2200553ui 4500relator-test8</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test8man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/relator-test8exp"/>11111nam a2200553ui 4500relator-test8<rdamo:P30270 rdf:resource="http://marc2rda.edu/agent/NorthwestTerritories.DepartmentofEnvironmentandNaturalResources"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/agent/NorthwestTerritories.DepartmentofEnvironmentandNaturalResources">
+      <rdaad:P50378>Northwest Territories. Department of Environment and Natural Resources</rdaad:P50378>
+      <rdaao:P50331 rdf:resource="http://fakeIRI2.edu/relator-test8/man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test9wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/relator-test9exp"/>
+      <rdawd:P10002>relator-test9wor</rdawd:P10002>11111nam a2200553ui 4500relator-test9</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test9exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/relator-test9man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/relator-test9wor"/>
+      <rdaed:P20002>relator-test9exp</rdaed:P20002>11111nam a2200553ui 4500relator-test9</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test9man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/relator-test9exp"/>11111nam a2200553ui 4500relator-test9<rdamo:P30270 rdf:resource="http://marc2rda.edu/agent/ACM-SIAMSymposiumonDiscreteAlgorithms"/>
+      <rdamo:P30270 rdf:resource="http://marc2rda.edu/agent/EloraFestival."/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/agent/ACM-SIAMSymposiumonDiscreteAlgorithms">
+      <rdaad:P50378>ACM-SIAM Symposium on Discrete Algorithms</rdaad:P50378>
+      <rdaao:P50331 rdf:resource="http://fakeIRI2.edu/relator-test9/man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/agent/EloraFestival.">
+      <rdaad:P50378>Elora Festival.</rdaad:P50378>
+      <rdaao:P50331 rdf:resource="http://fakeIRI2.edu/relator-test9/man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test9wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/relator-test9exp"/>
+      <rdawd:P10002>relator-test9wor</rdawd:P10002>11111nam a2200553ui 4500relator-test9</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test9exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/relator-test9man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/relator-test9wor"/>
+      <rdaed:P20002>relator-test9exp</rdaed:P20002>11111nam a2200553ui 4500relator-test9</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test9man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/relator-test9exp"/>11111nam a2200553ui 4500relator-test9<rdamo:P30270 rdf:resource="http://marc2rda.edu/agent/EloraFestival."/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/agent/EloraFestival.">
+      <rdaad:P50378>Elora Festival.</rdaad:P50378>
+      <rdaao:P50331 rdf:resource="http://fakeIRI2.edu/relator-test9/man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test10wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/relator-test10exp"/>
+      <rdawd:P10002>relator-test10wor</rdawd:P10002>11111nam a2200553ui 4500relator-test10</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test10exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/relator-test10man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/relator-test10wor"/>
+      <rdaed:P20002>relator-test10exp</rdaed:P20002>11111nam a2200553ui 4500relator-test10</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test10man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/relator-test10exp"/>11111nam a2200553ui 4500relator-test10<rdamo:P30270 rdf:resource="http://marc2rda.edu/agent/EloraFestival."/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/agent/EloraFestival.">
+      <rdaad:P50378>Elora Festival.</rdaad:P50378>
+      <rdaao:P50331 rdf:resource="http://fakeIRI2.edu/relator-test10/man"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test11wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/relator-test11exp"/>
+      <rdawd:P10002>relator-test11wor</rdawd:P10002>11111nam a2200553ui 4500relator-test11</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test11exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/relator-test11man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/relator-test11wor"/>
+      <rdaed:P20002>relator-test11exp</rdaed:P20002>11111nam a2200553ui 4500relator-test11</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test11man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/relator-test11exp"/>11111nam a2200553ui 4500relator-test11<rdamo:P30270 rdf:resource="http://marc2rda.edu/agent/UnitedStates.Congress.House.CommitteeonRevolutionaryClaims.%281825-1873%29"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/agent/UnitedStates.Congress.House.CommitteeonRevolutionaryClaims.%281825-1873%29">
+      <rdaad:P50378>United States. Congress. House. Committee on Revolutionary Claims. (1825-1873)</rdaad:P50378>
+      <rdaao:P50331 rdf:resource="http://marc2rda.edu/agent/UnitedStates.Congress.House.CommitteeonRevolutionaryClaims.%281825-1873%29"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test12wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/relator-test12exp"/>
+      <rdawd:P10002>relator-test12wor</rdawd:P10002>11111nam a2200553ui 4500relator-test12</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test12exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/relator-test12man"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/relator-test12wor"/>
+      <rdaed:P20002>relator-test12exp</rdaed:P20002>11111nam a2200553ui 4500relator-test12</rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test12man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/relator-test12exp"/>11111nam a2200553ui 4500relator-test12<rdamo:P30270 rdf:resource="http://marc2rda.edu/agent/UnitedStates.1817-1825Monroe"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/agent/UnitedStates.1817-1825Monroe">
+      <rdaad:P50378>United States. 1817-1825 Monroe</rdaad:P50378>
+      <rdaao:P50331 rdf:resource="http://marc2rda.edu/agent/UnitedStates.1817-1825Monroe"/>
+   </rdf:Description>
+</rdf:RDF>
