@@ -27,9 +27,11 @@
     exclude-result-prefixes="marc ex uwf uwmisc" version="3.0">
     
     <xsl:include href="m2r-relators.xsl"/>
+    <xsl:include href="getmarc.xsl"/>
 
     <!-- field level templates - wor, exp, man, ite -->
     <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" mode = "wor">
+        <xsl:call-template name="getmarc"/>
         <xsl:choose>
             <xsl:when test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
                 <xsl:choose>
@@ -126,6 +128,7 @@
     
     <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" mode = "age">
         <xsl:param name="baseIRI"/>
+        <xsl:call-template name="getmarc"/>
         <rdf:Description rdf:about="{uwf:agentIRI(.)}">
             <xsl:element name="rdaad:P50378"><xsl:value-of select="uwf:agentAccessPoint(.)"/></xsl:element>
             <xsl:choose>
