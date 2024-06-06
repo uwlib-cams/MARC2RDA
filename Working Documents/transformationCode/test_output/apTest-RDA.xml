@@ -25,6 +25,12 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/ap-test1exp"/>
       <rdawd:P10002>ap-test1wor</rdawd:P10002>
+      <!--MARC data begins-->
+      <fake:marcfield>F100 1# $a Strautmann, Eva, $d 1963-</fake:marcfield>
+      <!--RDA data begins-->
+      <!--MARC data begins-->
+      <fake:marcfield>F720 ## $a Deyle, Kaycie M $4 cre</fake:marcfield>
+      <!--RDA data begins-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/ap-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -38,10 +44,16 @@
       <rdamo:P30268 rdf:resource="http://marc2rda.edu/agent/Strautmann%2CEva%2C1963-"/>
       <rdamo:P30267 rdf:resource="http://marc2rda.edu/agent/Deyle%2CKaycieM"/>
    </rdf:Description>
+   <!--MARC data begins-->
+   <fake:marcfield>F100 1# $a Strautmann, Eva, $d 1963-</fake:marcfield>
+   <!--RDA data begins-->
    <rdf:Description rdf:about="http://marc2rda.edu/agent/Strautmann%2CEva%2C1963-">
       <rdaad:P50378>Strautmann, Eva, 1963-</rdaad:P50378>
       <rdaao:P50313 rdf:resource="http://marc2rda.edu/agent/Strautmann%2CEva%2C1963-"/>
    </rdf:Description>
+   <!--MARC data begins-->
+   <fake:marcfield>F720 ## $a Deyle, Kaycie M $4 cre</fake:marcfield>
+   <!--RDA data begins-->
    <rdf:Description rdf:about="http://marc2rda.edu/agent/Deyle%2CKaycieM">
       <rdaad:P50378>Deyle, Kaycie M</rdaad:P50378>
       <rdaao:P50307 rdf:resource="http://fakeIRI2.edu/ap-test1/man"/>
@@ -50,6 +62,10 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/ap-test2exp"/>
       <rdawd:P10002>ap-test2wor</rdawd:P10002>
+      <!--MARC data begins-->
+      <fake:marcfield>F700 1# $a Williams, Judy $c (Wildlife manager), $e author.</fake:marcfield>
+      <!--RDA data begins-->
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/agent/Williams%2CJudy%28Wildlifemanager%29"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/ap-test2exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -60,16 +76,21 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/ap-test2man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/ap-test2exp"/>
-      <rdamo:P30268 rdf:resource="http://marc2rda.edu/agent/Williams%2CJudy%28Wildlifemanager%29"/>
    </rdf:Description>
+   <!--MARC data begins-->
+   <fake:marcfield>F700 1# $a Williams, Judy $c (Wildlife manager), $e author.</fake:marcfield>
+   <!--RDA data begins-->
    <rdf:Description rdf:about="http://marc2rda.edu/agent/Williams%2CJudy%28Wildlifemanager%29">
       <rdaad:P50378>Williams, Judy (Wildlife manager)</rdaad:P50378>
-      <rdaao:P50313 rdf:resource="http://fakeIRI2.edu/ap-test2/man"/>
+      <rdaao:P50541 rdf:resource="http://fakeIRI2.edu/ap-test2/wor"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/ap-test3wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/ap-test3exp"/>
       <rdawd:P10002>ap-test3wor</rdawd:P10002>
+      <!--MARC data begins-->
+      <fake:marcfield>F110 1# $a United States. $b Congress. $b House. $b Committee on Revolutionary Claims. $g (1825-1873)</fake:marcfield>
+      <!--RDA data begins-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/ap-test3exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -82,6 +103,9 @@
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/ap-test3exp"/>
       <rdamo:P30270 rdf:resource="http://marc2rda.edu/agent/UnitedStates.Congress.House.CommitteeonRevolutionaryClaims.%281825-1873%29"/>
    </rdf:Description>
+   <!--MARC data begins-->
+   <fake:marcfield>F110 1# $a United States. $b Congress. $b House. $b Committee on Revolutionary Claims. $g (1825-1873)</fake:marcfield>
+   <!--RDA data begins-->
    <rdf:Description rdf:about="http://marc2rda.edu/agent/UnitedStates.Congress.House.CommitteeonRevolutionaryClaims.%281825-1873%29">
       <rdaad:P50378>United States. Congress. House. Committee on Revolutionary Claims. (1825-1873)</rdaad:P50378>
       <rdaao:P50331 rdf:resource="http://marc2rda.edu/agent/UnitedStates.Congress.House.CommitteeonRevolutionaryClaims.%281825-1873%29"/>
@@ -90,6 +114,9 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/ap-test4exp"/>
       <rdawd:P10002>ap-test4wor</rdawd:P10002>
+      <!--MARC data begins-->
+      <fake:marcfield>F110 1# $a United States. $t Treaties, etc. $d 1817-1825 Monroe</fake:marcfield>
+      <!--RDA data begins-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/ap-test4exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -102,6 +129,9 @@
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/ap-test4exp"/>
       <rdamo:P30270 rdf:resource="http://marc2rda.edu/agent/UnitedStates."/>
    </rdf:Description>
+   <!--MARC data begins-->
+   <fake:marcfield>F110 1# $a United States. $t Treaties, etc. $d 1817-1825 Monroe</fake:marcfield>
+   <!--RDA data begins-->
    <rdf:Description rdf:about="http://marc2rda.edu/agent/UnitedStates.">
       <rdaad:P50378>United States.</rdaad:P50378>
       <rdaao:P50331 rdf:resource="http://marc2rda.edu/agent/UnitedStates."/>
