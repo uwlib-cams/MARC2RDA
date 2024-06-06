@@ -181,4 +181,10 @@
         </xsl:choose>
     </xsl:function>
     
+    <xsl:function name="uwf:stripEndPunctuation">
+        <xsl:param name="string"/>
+            <xsl:value-of select="substring($string, 1, string-length($string) - 1)"/>
+            <xsl:value-of select="translate(substring($string, string-length($string)), ',', '')"/>
+    </xsl:function>
+    
 </xsl:stylesheet>

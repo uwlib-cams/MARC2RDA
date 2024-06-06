@@ -24,6 +24,7 @@
     xmlns:uwmisc="http://uw.edu/all-purpose-namespace/" exclude-result-prefixes="marc ex uwf"
     version="3.0">
     <xsl:output encoding="UTF-8" method="xml" indent="yes"/>
+    <xsl:include href="m2r-functions.xsl"/>
     
 <!-- **KEYS FOR LOOKUP** -->
     <xsl:key name="fieldKey" match="uwmisc:row" use="uwmisc:field" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
@@ -98,8 +99,61 @@
     
     <xsl:function name="uwf:agentIRI">
         <xsl:param name="field"/>
-        <xsl:value-of select="concat('http://marc2rda.edu/agent/', translate(translate($field/marc:subfield[@code='a'], ' ', ''), ',', ''))"/>
+        <xsl:variable name="ap" select="string-join(uwf:agentAccessPoint($field))"/> 
+        <xsl:value-of select="concat('http://marc2rda.edu/agent/', encode-for-uri(translate($ap, ' ', '')))"/>
     </xsl:function>
+    
+    <xsl:function name="uwf:agentAccessPoint" expand-text="true">
+        <xsl:param name="field"/>
+        <xsl:choose>
+            <xsl:when test="$field/@tag = '100' or $field/@tag = '600' or $field/@tag = '700'">
+                <xsl:for-each select="$field/marc:subfield[@code = 'a'] | $field/marc:subfield[@code = 'b'] | $field/marc:subfield[@code = 'c']
+                    | $field/marc:subfield[@code = 'd'] | $field/marc:subfield[@code = 'j'] | $field/marc:subfield[@code = 'q']
+                    | $field/marc:subfield[@code = 'u'] | $field/marc:subfield[@code = 'g'][not(preceding-sibling::marc:subfield[@code='t'])]">
+                    <xsl:choose>
+                        <xsl:when test="position() != last()">
+                            <xsl:text>{.} </xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:for-each>
+            </xsl:when>
+            <xsl:when test="$field/@tag = '720'">
+                <xsl:value-of select="$field/marc:subfield[@code = 'a']"/>
+            </xsl:when>
+            <xsl:when test="$field/@tag = '110' or $field/@tag = '610' or $field/@tag = '710'">
+                <xsl:for-each select="$field/marc:subfield[@code = 'a'] | $field/marc:subfield[@code = 'b'] | $field/marc:subfield[@code = 'c']
+                    | $field/marc:subfield[@code = 'u'] | $field/marc:subfield[@code = 'd'][not(preceding-sibling::marc:subfield[@code='t'])]
+                    | $field/marc:subfield[@code = 'g'][not(preceding-sibling::marc:subfield[@code='t'])] | $field/marc:subfield[@code = 'n'][not(preceding-sibling::marc:subfield[@code='t'])]">
+                    <xsl:choose>
+                        <xsl:when test="position() != last()">
+                            <xsl:text>{.} </xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:for-each>
+            </xsl:when>
+            <xsl:when test="$field/@tag = '111' or $field/@tag = '611' or $field/@tag = '711'">
+                <xsl:for-each select="$field/marc:subfield[@code = 'a']  | $field/marc:subfield[@code = 'c'] | $field/marc:subfield[@code = 'e'] | $field/marc:subfield[@code = 'q']
+                    | $field/marc:subfield[@code = 'u'] | $field/marc:subfield[@code = 'd'][not(preceding-sibling::marc:subfield[@code='t'])]
+                    | $field/marc:subfield[@code = 'g'][not(preceding-sibling::marc:subfield[@code='t'])] | $field/marc:subfield[@code = 'n'][not(preceding-sibling::marc:subfield[@code='t'])]">
+                    <xsl:choose>
+                        <xsl:when test="position() != last()">
+                            <xsl:text>{.} </xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:for-each>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:function>
+    
     
     <xsl:function name="uwf:normalize">
         <xsl:param name="subfield"/>
@@ -304,172 +358,6 @@
     
    
 <!-- **TEMPLATES** -->
-    <xsl:mode name="wor" on-no-match="shallow-skip"/>
-    <xsl:mode name="exp" on-no-match="shallow-skip"/>
-    <xsl:mode name="man" on-no-match="shallow-skip"/>
-    <xsl:mode name="ite" on-no-match="shallow-skip"/>
-    <xsl:mode name="age" on-no-match="shallow-skip"/>
-    
-    <!-- this is working as m2r.xsl for now -->
-    <xsl:template match="/" expand-text="true">
-        <xsl:for-each select="marc:collection">
-        <rdf:RDF>
-            <xsl:for-each select="marc:record">
-                <rdf:Description rdf:about="{concat('http://testrelator.org/',marc:controlfield[@tag = '001'], '/wor')}">
-                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-                    <rdawo:P10078 rdf:resource="{concat('http://testrelator.org/','exp')}"/>
-                    <rdawd:P10002>{concat(marc:controlfield[@tag='001'],'wor')}</rdawd:P10002>
-                    <xsl:apply-templates select="*" mode="wor"/>
-                </rdf:Description>
-                
-                <rdf:Description rdf:about="{concat('http://testrelator.org/',marc:controlfield[@tag = '001'],'/exp')}">
-                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-                    <rdaeo:P20059 rdf:resource="{concat('http://testrelator.org/','man')}"/>
-                    <rdaeo:P20231 rdf:resource="{concat('http://testrelator.org/','wor')}"/>
-                    <rdaed:P20002>{concat(marc:controlfield[@tag='001'],'exp')}</rdaed:P20002>
-                    <xsl:apply-templates select="*" mode="exp"/>
-                </rdf:Description>
-                
-                <rdf:Description rdf:about="{concat('http://testrelator.org/',marc:controlfield[@tag = '001'], '/man')}">
-                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-                    <rdamo:P30139 rdf:resource="{concat('http://testrelator.org/','exp')}"/>
-                    <xsl:apply-templates select="*" mode="man"/>
-                </rdf:Description>
-                
-                <xsl:apply-templates select="*" mode="ite">
-                    <xsl:with-param name="baseIRI" select="concat('http://testrelator.org/', marc:controlfield[@tag = '001'], '/')"/>
-                    <xsl:with-param name="controlNumber" select="../marc:controlfield[@tag='001']"/>
-                </xsl:apply-templates>
-                
-                <xsl:apply-templates select="*" mode="age">
-                    <xsl:with-param name="baseIRI" select="concat('http://testrelator.org/',marc:controlfield[@tag = '001'])"/>
-                </xsl:apply-templates>
-                
-            </xsl:for-each>
-            </rdf:RDF>
-        </xsl:for-each>
-    </xsl:template>
-    
-    <!-- field level templates - wor, exp, man, ite -->
-    <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" mode = "wor">
-        <xsl:choose>
-            <xsl:when test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
-                <xsl:choose>
-                    <xsl:when test=" @tag = '100' or @tag = '110' or @tag = '111'">
-                        <xsl:call-template name="handle1XXNoRelator">
-                            <xsl:with-param name="domain" select="'work'"/>
-                        </xsl:call-template>
-                    </xsl:when>
-                    <xsl:otherwise/>
-                </xsl:choose>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:call-template name="handleRelator">
-                    <xsl:with-param name="domain" select="'work'"/>
-                </xsl:call-template>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" mode = "exp">
-        <xsl:choose>
-            <xsl:when test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
-                <xsl:choose>
-                    <xsl:when test=" @tag = '100' or @tag = '110' or @tag = '111'">
-                        <xsl:call-template name="handle1XXNoRelator">
-                            <xsl:with-param name="domain" select="'expression'"/>
-                        </xsl:call-template>
-                    </xsl:when>
-                    <xsl:otherwise/>
-                </xsl:choose>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:call-template name="handleRelator">
-                    <xsl:with-param name="domain" select="'expression'"/>
-                </xsl:call-template>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" mode = "man">
-        <xsl:choose>
-            <xsl:when test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
-                <xsl:choose>
-                    <xsl:when test=" @tag = '100' or @tag = '110' or @tag = '111'">
-                        <xsl:call-template name="handle1XXNoRelator">
-                            <xsl:with-param name="domain" select="'manifestation'"/>
-                        </xsl:call-template>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <!-- default -->
-                        <xsl:copy-of select="uwf:defaultProp(., uwf:fieldType(@tag), 'manifestation', uwf:agentIRI(.))"/>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:call-template name="handleRelator">
-                    <xsl:with-param name="domain" select="'manifestation'"/>
-                </xsl:call-template>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" mode = "ite" expand-text="true">
-        <xsl:param name="baseIRI"/>
-        <xsl:param name="controlNumber"/>
-        <xsl:variable name="testItem">
-            <xsl:choose>
-                <xsl:when test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
-                    <xsl:choose>
-                        <xsl:when test=" @tag = '100' or @tag = '110' or @tag = '111'">
-                            <xsl:call-template name="handle1XXNoRelator">
-                                <xsl:with-param name="domain" select="'item'"/>
-                            </xsl:call-template>
-                        </xsl:when>
-                        <xsl:otherwise/>
-                    </xsl:choose>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:call-template name="handleRelator">
-                        <xsl:with-param name="domain" select="'item'"/>
-                    </xsl:call-template>
-                </xsl:otherwise>
-            </xsl:choose>
-        </xsl:variable>
-        <!-- if handleRelator returns a property, then generate an item and apply property -->
-        <xsl:if test="$testItem/node() or $testItem/@*">
-            <xsl:variable name="genID" select="generate-id()"/>
-            <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
-                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-                <rdaid:P40001>{concat($controlNumber,'ite',$genID)}</rdaid:P40001>
-                <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
-                <xsl:copy-of select="$testItem"/>
-            </rdf:Description>
-        </xsl:if>
-        
-    </xsl:template>
-    
-    <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" mode = "age">
-        <xsl:param name="baseIRI"/>
-        <rdf:Description rdf:about="{uwf:agentIRI(.)}">
-            <xsl:element name="rdaad:P50378"><xsl:value-of select="./marc:subfield[@code = 'a']"/></xsl:element>
-            <xsl:choose>
-                <xsl:when test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
-                    <xsl:choose>
-                        <xsl:when test=" @tag = '100' or @tag = '110' or @tag = '111'">
-                            <xsl:call-template name="handle1XXNoRelator">
-                                <xsl:with-param name="domain" select="'agent'"/>
-                                <xsl:with-param name="baseIRI" select="$baseIRI"/>
-                            </xsl:call-template>
-                        </xsl:when>
-                        <xsl:otherwise/>
-                    </xsl:choose>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:call-template name="handleInvRelator">
-                        <xsl:with-param name="baseIRI" select="$baseIRI"/>
-                    </xsl:call-template>
-                </xsl:otherwise>
-            </xsl:choose>
-        </rdf:Description>
-    </xsl:template>
     
     <!-- handleRelator template sets the appropriate variables for lookup in the relator table
          and outputs the property returned from the lookup -->
