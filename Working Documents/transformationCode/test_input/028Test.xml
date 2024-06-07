@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">028-test1</marc:controlfield>
+        <marc:datafield tag="028" ind1="0" ind2="0">
+            <marc:subfield code="a">38876</marc:subfield>
+            <marc:subfield code="b">Sony Classical</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="028" ind1="0" ind2="0">
+            <marc:subfield code="a">414 274-2</marc:subfield>
+            <marc:subfield code="b">Decca</marc:subfield>
+            <marc:subfield code="q">(set)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="028" ind1="2" ind2="2">
+            <marc:subfield code="a">U. E. 5904</marc:subfield>
+            <marc:subfield code="b">Universal Edition</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="028" ind1="3" ind2="2">
+            <marc:subfield code="a">HL48002596</marc:subfield>
+            <marc:subfield code="b">H. Leonard</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

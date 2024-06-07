@@ -174,6 +174,54 @@
         </xsl:if>
     </xsl:template>
     
+    <xsl:template match="marc:datafield[@tag = '028'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '028']"
+        mode="man">
+        <xsl:call-template name="getmarc"/>
+        <xsl:choose>
+            <xsl:when test="@ind1 = '3'">
+                <rdamo:P30065 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
+            </xsl:when>
+            <xsl:when test="@ind1 = '2'">
+                <rdamo:P30066 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <rdamo:P30004 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '028'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '028']" mode="nom">
+        <xsl:param name="baseIRI"/>
+        <xsl:call-template name="getmarc"/>
+        <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+            <rdand:P80068><xsl:value-of select="marc:subfield[@code = 'a']"/></rdand:P80068>
+            <xsl:if test="marc:subfield[@code = 'b']">
+                <rdand:P80073><xsl:value-of select="marc:subfield[@code = 'b']"/></rdand:P80073>
+            </xsl:if>
+            <xsl:if test="marc:subfield[@code = 'q']">
+                <rdand:P80071>
+                    <xsl:for-each select="marc:subfield[@code = 'q']">
+                        <xsl:value-of select="normalize-space(translate(., '();', ''))"/>
+                        <xsl:if test="position() != last()">
+                            <xsl:text>; </xsl:text>
+                        </xsl:if>
+                    </xsl:for-each>
+                </rdand:P80071>
+            </xsl:if>
+            <xsl:choose>
+                <xsl:when test="@ind1 = '0'"><rdand:P80078>Issue number</rdand:P80078></xsl:when>
+                <xsl:when test="@ind1 = '1'"><rdand:P80078>Matrix number</rdand:P80078></xsl:when>
+                <xsl:when test="@ind1 = '2'"><rdand:P80078>Plate number</rdand:P80078></xsl:when>
+                <xsl:when test="@ind1 = '3'"><rdand:P80078>Other music publisher number</rdand:P80078></xsl:when>
+                <xsl:when test="@ind1 = '4'"><rdand:P80078>Video recording publisher number</rdand:P80078></xsl:when>
+                <xsl:when test="@ind1 = '5'"><rdand:P80078>Other publisher number</rdand:P80078></xsl:when>
+                <xsl:when test="@ind1 = '6'"><rdand:P80078>Distributor number</rdand:P80078></xsl:when>
+                <xsl:otherwise/>
+                </xsl:choose>
+        </rdf:Description>
+    </xsl:template>
+    
+    
     <xsl:template match="marc:datafield[@tag = '030']" mode="wor">
         <xsl:call-template name="getmarc"/>
         <!-- subfields not coded: $6 $8 -->
