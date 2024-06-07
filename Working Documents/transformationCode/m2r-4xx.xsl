@@ -20,6 +20,7 @@
         <xsl:call-template name="getmarc"/>
         <!-- Accounted-for: $a + $x + $v when LDR/18 is a valid value -->
         <!-- Not accounted for: $6, $7, $8, $l, $y, $z-->
+        <!-- 880s not accounted for -->
         <xsl:choose>
             <xsl:when
                 test="substring(preceding-sibling::marc:leader, 19, 1) = 'a' or substring(preceding-sibling::marc:leader, 19, 1) = 'i'">

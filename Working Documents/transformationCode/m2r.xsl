@@ -76,6 +76,7 @@
             xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
             xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
             xmlns:ex="http://fakeIRI2.edu/">
+            <!--<xsl:apply-templates select="marc:record[not(marc:datafield[@tag='533'])]"/>-->
             <xsl:apply-templates select="marc:record"/>
         </rdf:RDF>
     </xsl:template>
