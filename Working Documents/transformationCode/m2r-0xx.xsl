@@ -89,89 +89,36 @@
     <!-- 027 - Standard technical report number -->
     <xsl:template match="marc:datafield[@tag = '027'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '027']" mode="man">
         <xsl:call-template name="getmarc"/>
-        <xsl:for-each select="marc:subfield[@code = 'a']">
-            <xsl:choose>
-                <xsl:when test="contains(., '--')">
-                    <rdamo:P30004 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <rdamd:P30004>
-                        <xsl:text>(STRN) </xsl:text>
-                        <xsl:value-of select="."/>
-                        <xsl:if test="../marc:subfield[@code = 'q']">
-                            <xsl:text> (</xsl:text>
-                            <xsl:for-each select="../marc:subfield[@code = 'q']">
-                                <xsl:value-of select="normalize-space(translate(., '();', ''))"/>
-                                <xsl:if test="position() != last()">
-                                    <xsl:text>; </xsl:text>
-                                </xsl:if>
-                            </xsl:for-each>
-                            <xsl:text>)</xsl:text>
-                        </xsl:if>
-                    </rdamd:P30004>
-                </xsl:otherwise>
-            </xsl:choose>
-        </xsl:for-each>
-        <xsl:for-each select="marc:subfield[@code = 'z']">
-            <xsl:choose>
-                <xsl:when test="contains(., '--')">
-                    <rdamd:P30004>
-                        <xsl:text>(Canceled/invalid ISRN) </xsl:text>
-                        <xsl:value-of select="."/>
-                        <xsl:if test="../marc:subfield[@code = 'q']">
-                            <xsl:text> (</xsl:text>
-                            <xsl:for-each select="../marc:subfield[@code = 'q']">
-                                <xsl:value-of select="normalize-space(translate(., '();', ''))"/>
-                                <xsl:if test="position() != last()">
-                                    <xsl:text>; </xsl:text>
-                                </xsl:if>
-                            </xsl:for-each>
-                            <xsl:text>)</xsl:text>
-                        </xsl:if>
-                    </rdamd:P30004>
-                </xsl:when>
-                <xsl:otherwise>
-                    <rdamd:P30004>
-                        <xsl:text>(Canceled/invalid STRN) </xsl:text>
-                        <xsl:value-of select="."/>
-                        <xsl:if test="../marc:subfield[@code = 'q']">
-                            <xsl:text> (</xsl:text>
-                            <xsl:for-each select="../marc:subfield[@code = 'q']">
-                                <xsl:value-of select="normalize-space(translate(., '();', ''))"/>
-                                <xsl:if test="position() != last()">
-                                    <xsl:text>; </xsl:text>
-                                </xsl:if>
-                            </xsl:for-each>
-                            <xsl:text>)</xsl:text>
-                        </xsl:if>
-                    </rdamd:P30004>
-                </xsl:otherwise>
-            </xsl:choose>
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
+            <rdamo:P30004 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
         </xsl:for-each>
     </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '027'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '027']" mode="nom">
         <xsl:param name="baseIRI"/>
         <xsl:call-template name="getmarc"/>
-        <xsl:if test="contains(marc:subfield[@code = 'a'], '--')">
-            <xsl:for-each select="marc:subfield[@code = 'a']">
+            <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
                 <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
                     <rdand:P80068><xsl:value-of select="."/></rdand:P80068>
-                    <rdand:P80069>ISRN</rdand:P80069>
+                    <xsl:choose>
+                        <xsl:when test="contains(., '--')">
+                            <rdand:P80069>ISRN</rdand:P80069>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <rdand:P80069>STRN</rdand:P80069>
+                        </xsl:otherwise>
+                    </xsl:choose>
                     <rdand:P80078>Standard Technical Report Number</rdand:P80078>
+                    <xsl:if test="@code = 'z'">
+                        <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+                    </xsl:if>
                     <xsl:if test="following-sibling::marc:subfield[@code = 'q']">
-                        <rdand:P80071>
-                            <xsl:for-each select="following-sibling::marc:subfield[@code = 'q']">
-                                <xsl:value-of select="normalize-space(translate(., '();', ''))"/>
-                                <xsl:if test="position() != last()">
-                                    <xsl:text>; </xsl:text>
-                                </xsl:if>
-                            </xsl:for-each>
-                        </rdand:P80071>
+                        <xsl:for-each select="following-sibling::marc:subfield[@code = 'q']">
+                            <rdand:P80071><xsl:value-of select="normalize-space(translate(., '();', ''))"/></rdand:P80071>
+                        </xsl:for-each>
                     </xsl:if>
                 </rdf:Description>
             </xsl:for-each>
-        </xsl:if>
     </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '028'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '028']"
