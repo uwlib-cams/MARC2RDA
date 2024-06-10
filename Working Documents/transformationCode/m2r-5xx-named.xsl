@@ -20,13 +20,66 @@
     xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
     xmlns:fake="http://fakePropertiesForDemo" exclude-result-prefixes="marc ex" version="3.0">
     
+    <xsl:template name="F514-xx-zabcdefghijkmu" expand-text="yes">
+        <xsl:if test="marc:subfield[@code = 'z']">
+            <xsl:text>{marc:subfield[@code = 'z']} </xsl:text>
+        </xsl:if>
+        <xsl:for-each
+            select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd']
+            | marc:subfield[@code = 'e'] | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h']
+            | marc:subfield[@code = 'i'] | marc:subfield[@code = 'j'] | marc:subfield[@code = 'k'] | marc:subfield[@code = 'm'] | marc:subfield[@code = 'u']">
+            <xsl:if test="@code = 'a'">
+                <xsl:text>Attribute accuracy report: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'b'">
+                <xsl:text>Attribute accuracy value: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'c'">
+                <xsl:text>Attribute accuracy explanation: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'd'">
+                <xsl:text>Logical consistency report: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'e'">
+                <xsl:text>Completeness report: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'f'">
+                <xsl:text>Horizontal position accuracy report: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'g'">
+                <xsl:text>Horizontal position accuracy value: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'h'">
+                <xsl:text>Horizontal position accuracy explanation: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'i'">
+                <xsl:text>Vertical positional accuracy report: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'j'">
+                <xsl:text>Vertical positional accuracy value: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'k'">
+                <xsl:text>Vertical positional accuracy explanation: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'm'">
+                <xsl:text>Cloud cover: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'u'">
+                <xsl:text>Uniform Resource Identifier: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="position() != last()">
+                <xsl:text>; </xsl:text>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
+    
     <!-- 526 -->
     <xsl:template name="F526-xx-iabcdz5" expand-text="yes">
         <!-- for-each loop accounts for repeatable subfields and regular punctuation -->
         <rdamd:P30137>
             <xsl:text>Reading program: </xsl:text>
             <xsl:if test="marc:subfield[@code = 'i']">
-                <xsl:text>.</xsl:text>
+                <xsl:text>{marc:subfield[@code = 'i']} </xsl:text>
             </xsl:if>
             <xsl:for-each
                 select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'z']">
@@ -75,7 +128,7 @@
     <xsl:template name="F534-xx-pabcefklmnotxz" expand-text="yes">
         <xsl:choose>
             <xsl:when test="marc:subfield[@code = 'p']">
-                <xsl:text>{.} </xsl:text>
+                <xsl:text>{marc:subfield[@code = 'p']} </xsl:text>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:text>Original version note: </xsl:text>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">508-test</marc:controlfield>
+        <marc:datafield tag="514" ind1=" " ind2=" ">
+            <marc:subfield code="b">Estimated to be 98.5%.</marc:subfield>
+            <marc:subfield code="c">Village names compared to source map -- all match, therefore errors are possible only if source maps are incorrect.</marc:subfield>
+            <marc:subfield code="d">Node-to-line, line-to-area topological relationships maintained. Line and area attributes maintained. GRASS 4.0 program "v.support" checks topological relationships.</marc:subfield>
+            <marc:subfield code="e">All incorporated limits shown on USGS quads were digitized.</marc:subfield>
+            <marc:subfield code="f">The accuracy of this data is based upon the use of the source maps ... </marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">514-00/</marc:subfield>
+            <marc:subfield code="a">Horizontal position accuracy 1-3 meters</marc:subfield>
+            <marc:subfield code="f">Differential GPS</marc:subfield>
+            <marc:subfield code="g">3 meters</marc:subfield>
+            <marc:subfield code="i">Bar test</marc:subfield>
+            <marc:subfield code="j">One foot</marc:subfield>
+            <marc:subfield code="k">Bar check.</marc:subfield>            
+        </marc:datafield>
+        <marc:datafield tag="514" ind1=" " ind2=" ">
+            <marc:subfield code="z">Completeness:</marc:subfield>
+            <marc:subfield code="u">uri</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>
+

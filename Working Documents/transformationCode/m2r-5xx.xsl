@@ -57,6 +57,8 @@
             </xsl:if>
         </xsl:if>
     </xsl:template>
+    
+    <!-- 500 - General Note -->
     <xsl:template
         match="marc:datafield[@tag = '500'][marc:subfield[@code = '5']] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '500-00'][marc:subfield[@code = '5']]"
         mode="ite" expand-text="yes">
@@ -94,6 +96,8 @@
             </xsl:if>
         </rdf:Description>
     </xsl:template>
+    
+    <!-- 502 - Dissertation Note -->
     <xsl:template
         match="marc:datafield[@tag = '502'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '502']"
         mode="wor" expand-text="yes">
@@ -136,6 +140,8 @@
             </rdf:Description>
         </xsl:for-each>
     </xsl:template>
+    
+    <!-- 504 - Bibliography, etc. Note -->
     <xsl:template
         match="marc:datafield[@tag = '504'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '504']"
         mode="man">
@@ -164,6 +170,14 @@
         </rdamd:P30137>
     </xsl:template>
     
+    <!-- 514 - Data Quality Note -->
+    <xsl:template match="marc:datafield[@tag='514'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '514']" 
+        mode="wor">
+        <rdawd:P10330>
+            <xsl:call-template name="F514-xx-zabcdefghijkmu"/>
+        </rdawd:P10330>
+    </xsl:template>
+    
     <!-- 516 - Type of Computer File or Data Note -->
     <xsl:template match="marc:datafield[@tag='516'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '516']" 
         mode="man">
@@ -172,6 +186,7 @@
         </rdamd:P30018>
     </xsl:template>
     
+    <!-- 522 - Geographic Coverage Note -->
     <xsl:template
         match="marc:datafield[@tag = '522'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '522']"
         mode="wor">
@@ -202,6 +217,8 @@
             </xsl:call-template>
         </xsl:for-each>
     </xsl:template>
+    
+    <!-- 527 - Censorship Note -->
     <xsl:template
         match="marc:datafield[@tag = '527'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '527']"
         mode="exp">
@@ -381,6 +398,7 @@
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
+    
     <!-- 583 - Action Note -->
     <xsl:template match="marc:datafield[@tag = '583'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '583-00']" 
         mode="ite" expand-text="yes">
@@ -479,6 +497,7 @@
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
+    
     <!-- 585 - Exhibitions note -->
     <xsl:template
         match="marc:datafield[@tag = '585'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '585']"
