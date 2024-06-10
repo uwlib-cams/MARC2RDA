@@ -408,4 +408,25 @@
             <rdawd:P10004>Private</rdawd:P10004>
         </rdf:Description>
     </xsl:template>
+    
+    <xsl:template name="F584-xx-ab35" expand-text="true">
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']">
+            <xsl:if test="@code = 'a'">
+                <xsl:text>Accumulation: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'b'">
+                <xsl:text>Frequency of use: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="position() != last()">
+                <xsl:text>; </xsl:text>
+            </xsl:if>
+        </xsl:for-each>
+        <xsl:if test="marc:subfield[@code = '3']">
+            <xsl:text> (Applies to: {marc:subfield[@code = '3']})</xsl:text>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = '5']">
+            <xsl:text> (At institution: {marc:subfield[@code = '5']})</xsl:text>
+        </xsl:if>
+    </xsl:template>
+
 </xsl:stylesheet>

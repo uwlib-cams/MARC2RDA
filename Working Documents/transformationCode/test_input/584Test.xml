@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">583-test</marc:controlfield>
+        
+        <marc:datafield tag="584" ind1=" " ind2=" ">
+            <marc:subfield code="3">General subject files</marc:subfield>
+            <marc:subfield code="a">45 cu. ft. average annual accumulation 1970-1979.</marc:subfield>
+            <marc:subfield code="a">5.4 cu. ft. average monthly accumulation, 1979-82.</marc:subfield>
+            <marc:subfield code="a">Current average monthly accumulation is 2 cu. ft. </marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">584-00</marc:subfield>
+            <marc:subfield code="b">An average of 15 reference requests per month, with peak demand during June and December.</marc:subfield>
+            <marc:subfield code="b">Total reference requests for 1984: 179. </marc:subfield>
+            <marc:subfield code="3">Test</marc:subfield>
+            <marc:subfield code="5">WAU</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

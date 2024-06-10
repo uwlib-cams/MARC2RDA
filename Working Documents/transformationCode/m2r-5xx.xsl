@@ -498,6 +498,16 @@
         </xsl:if>
     </xsl:template>
     
+    <!-- 584 - Accumulation and Frequency of Use Note -->
+    <xsl:template
+        match="marc:datafield[@tag = '584'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '584']"
+        mode="wor" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
+        <rdawd:P10330>
+            <xsl:call-template name="F584-xx-ab35"/>
+        </rdawd:P10330>
+    </xsl:template>
+    
     <!-- 585 - Exhibitions note -->
     <xsl:template
         match="marc:datafield[@tag = '585'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '585']"
