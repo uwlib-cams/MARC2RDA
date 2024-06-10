@@ -155,6 +155,15 @@
         <rdamd:P30137><xsl:value-of select="concat('Credits: ', marc:subfield[@code = 'a'])"/></rdamd:P30137>
     </xsl:template>
     
+    <!-- 511 - Participant or Performer Note -->
+    <xsl:template match="marc:datafield[@tag='511'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '511']" 
+        mode="man">
+        <rdamd:P30137>
+            <xsl:if test="@ind1 = '1'"><xsl:text>Cast: </xsl:text></xsl:if>
+            <xsl:value-of select="marc:subfield[@code = 'a']"/>
+        </rdamd:P30137>
+    </xsl:template>
+    
     <xsl:template
         match="marc:datafield[@tag = '522'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '522']"
         mode="wor">
