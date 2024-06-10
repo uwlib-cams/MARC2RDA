@@ -164,6 +164,14 @@
         </rdamd:P30137>
     </xsl:template>
     
+    <!-- 516 - Type of Computer File or Data Note -->
+    <xsl:template match="marc:datafield[@tag='516'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '516']" 
+        mode="man">
+        <rdamd:P30018>
+            <xsl:value-of select="marc:subfield[@code = 'a']"/>
+        </rdamd:P30018>
+    </xsl:template>
+    
     <xsl:template
         match="marc:datafield[@tag = '522'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '522']"
         mode="wor">
