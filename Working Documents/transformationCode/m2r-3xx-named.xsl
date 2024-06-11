@@ -16,6 +16,7 @@
     xmlns:uwf="http://universityOfWashington/functions"
     exclude-result-prefixes="marc ex uwf madsrdf" version="3.0">
     <xsl:import href="m2r-functions.xsl"/>
+    
     <xsl:template name="F336-xx-ab0-string">
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdaed:P20001>
@@ -382,6 +383,68 @@
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
+    
+    <!-- 346 -->
+    <xsl:template name="F346-string" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <rdamd:P30104>{.}</rdamd:P30104>
+            <xsl:if test="../marc:subfield[@code = '3']">
+                <rdamd:P30137>
+                    <xsl:text>Video Format ({.}) applies to {../marc:subfield[@code = '3']}</xsl:text> 
+                </rdamd:P30137>
+            </xsl:if>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'b']">
+            <rdamd:P30123>{.}</rdamd:P30123>
+            <xsl:if test="../marc:subfield[@code = '3']">
+                <rdamd:P30137>
+                    <xsl:text>Broadcast Standard ({.}) applies to {../marc:subfield[@code = '3']}</xsl:text> 
+                </rdamd:P30137>
+            </xsl:if>
+        </xsl:for-each>
+        <xsl:if test="marc:subfield[@code = 'a'] and not(marc:subfield[@code = 'b'])">
+            <xsl:for-each select="marc:subfield[@code = '0']">
+                <xsl:if test="not(contains(., 'http:'))">
+                    <rdamd:P30104>
+                        <xsl:value-of select="."/>
+                    </rdamd:P30104>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'b'] and not(marc:subfield[@code = 'a'])">
+            <xsl:for-each select="marc:subfield[@code = '0']">
+                <xsl:if test="not(contains(., 'http:'))">
+                    <rdamd:P30123>
+                        <xsl:value-of select="."/>
+                    </rdamd:P30123>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F346-iri" expand-text="yes">
+            <xsl:if test="marc:subfield[@code = 'a'] and not(marc:subfield[@code = 'b'])">
+                <xsl:for-each select="marc:subfield[@code = '0']">
+                    <xsl:if test="contains(., 'http:')">
+                        <rdam:P30104 rdf:resource="{.}"/>
+                    </xsl:if>
+                </xsl:for-each>
+                <xsl:for-each select="marc:subfield[@code = '1']">
+                    <rdam:P30104 rdf:resource="{.}"/>
+                </xsl:for-each>
+            </xsl:if>
+            <xsl:if test="marc:subfield[@code = 'b'] and not(marc:subfield[@code = 'a'])">
+                <xsl:for-each select="marc:subfield[@code = '0']">
+                    <xsl:if test="contains(., 'http:')">
+                        <rdam:P30123 rdf:resource="{.}"/>
+                    </xsl:if>
+                </xsl:for-each>
+                <xsl:for-each select="marc:subfield[@code = '1']">
+                    <rdam:P30123 rdf:resource="{.}"/>
+                </xsl:for-each>
+            </xsl:if>
+    </xsl:template>
+    
     <xsl:template name="F382-xx-a_b_d_p_2-exp" expand-text="yes">
         <xsl:variable name="s2code" select="marc:subfield[@code = '2']"/>
         <xsl:variable name="musiccodeschemes"

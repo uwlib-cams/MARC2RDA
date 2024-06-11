@@ -16,6 +16,7 @@
     exclude-result-prefixes="marc ex uwf" version="3.0">
     <xsl:include href="m2r-3xx-named.xsl"/>
     <xsl:import href="getmarc.xsl"/>
+    <xsl:import href="m2r-functions.xsl"/>
     
     <xsl:template match="marc:datafield[@tag = '306'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '306']"
         mode="exp" expand-text="yes">
@@ -66,6 +67,14 @@
         <!-- Temporary or partial solution for: $2 -->
         <xsl:call-template name="F340-xx-abcdefghijklmnop"/>
     </xsl:template>
+    
+    <!-- 346 - Video Characteristics -->
+    <xsl:template match="marc:datafield[@tag = '346'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '346']" mode="man">
+        <xsl:call-template name="getmarc"/>
+        <xsl:call-template name="F346-string"/>
+        <xsl:call-template name="F346-iri"/>
+    </xsl:template>
+    
     <xsl:template
         match="marc:datafield[@tag = '380'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '380']"
         mode="wor" expand-text="yes">
