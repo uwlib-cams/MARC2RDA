@@ -312,6 +312,20 @@
         </rdf:Description>
     </xsl:template>
     
+    <!-- 581 -->
+    <xsl:template name="F581-xx-az3" expand-text="yes">
+        <xsl:text>Publications: {marc:subfield[@code = 'a']}</xsl:text>
+        <xsl:for-each select="marc:subfield[@code = 'z']">
+            <xsl:text> ISBN: {.}</xsl:text>
+            <xsl:if test="position() != last()">
+                <xsl:text>;</xsl:text>
+            </xsl:if>
+        </xsl:for-each>
+        <xsl:if test="marc:subfield[@code = '3']">
+            <xsl:text> (Applies to: {marc:subfield[@code = '3']})</xsl:text>
+        </xsl:if>
+    </xsl:template>
+    
     <!-- 583 -->
     <xsl:template name="F583-xx-abcdefhijklnouxz23" expand-text="yes">
         <xsl:for-each select="marc:subfield[not(.[@code = '5']) and not(.[@code = '6'])]">

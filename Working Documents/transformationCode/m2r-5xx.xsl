@@ -399,6 +399,16 @@
         </xsl:if>
     </xsl:template>
     
+    <!-- 581 - Publications about Described Materials Note -->
+    <xsl:template
+        match="marc:datafield[@tag = '581'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '581']"
+        mode="man">
+        <xsl:call-template name="getmarc"/>
+        <rdamd:P30137>
+            <xsl:call-template name="F581-xx-az3"/>
+        </rdamd:P30137>
+    </xsl:template>
+    
     <!-- 583 - Action Note -->
     <xsl:template match="marc:datafield[@tag = '583'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '583-00']" 
         mode="ite" expand-text="yes">
@@ -501,7 +511,7 @@
     <!-- 584 - Accumulation and Frequency of Use Note -->
     <xsl:template
         match="marc:datafield[@tag = '584'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '584']"
-        mode="wor" expand-text="yes">
+        mode="wor">
         <xsl:call-template name="getmarc"/>
         <rdawd:P10330>
             <xsl:call-template name="F584-xx-ab35"/>
