@@ -42,16 +42,16 @@
       <!--MARC data begins-->
       <fake:marcfield>F346 ## $a VHS $2 rdavf</fake:marcfield>
       <!--RDA data begins-->
-      <rdamd:P30104>VHS</rdamd:P30104>
+      <rdamd:P30104 rdf:datatype="http://id.loc.gov/vocabulary/genreFormSchemes/rdavf">VHS</rdamd:P30104>
       <!--MARC data begins-->
       <fake:marcfield>F346 ## $b NTSC $2 rdabs $0 http://rdaregistry.info/termList/broadcastStand/1002</fake:marcfield>
       <!--RDA data begins-->
-      <rdamd:P30123>NTSC</rdamd:P30123>
+      <rdamd:P30123 rdf:datatype="http://id.loc.gov/vocabulary/genreFormSchemes/rdabs">NTSC</rdamd:P30123>
       <rdam:P30123 rdf:resource="http://rdaregistry.info/termList/broadcastStand/1002"/>
       <!--MARC data begins-->
       <fake:marcfield>F346 ## $3 videodisc $b NTSC $2 rdabs</fake:marcfield>
       <!--RDA data begins-->
-      <rdamd:P30123>NTSC</rdamd:P30123>
+      <rdamd:P30123 rdf:datatype="http://id.loc.gov/vocabulary/genreFormSchemes/rdabs">NTSC</rdamd:P30123>
       <rdamd:P30137>Broadcast Standard (NTSC) applies to videodisc</rdamd:P30137>
       <!--MARC data begins-->
       <fake:marcfield>F346 ## $a laser optical $0 testzero</fake:marcfield>

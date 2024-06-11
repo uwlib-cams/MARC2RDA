@@ -388,7 +388,12 @@
     <!-- $2 not accounted for - may apply once decisions made -->
     <xsl:template name="F346-string" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdamd:P30104>{.}</rdamd:P30104>
+            <rdamd:P30104>
+                <xsl:if test="../marc:subfield[@code = '2']">
+                    <xsl:copy-of select="uwf:S2lookup(../marc:subfield[@code = '2'])"/>
+                </xsl:if>
+                <xsl:value-of select="."/>
+            </rdamd:P30104>
             <xsl:if test="../marc:subfield[@code = '3']">
                 <rdamd:P30137>
                     <xsl:text>Video Format ({.}) applies to {../marc:subfield[@code = '3']}</xsl:text> 
@@ -396,7 +401,12 @@
             </xsl:if>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'b']">
-            <rdamd:P30123>{.}</rdamd:P30123>
+            <rdamd:P30123>
+                <xsl:if test="../marc:subfield[@code = '2']">
+                    <xsl:copy-of select="uwf:S2lookup(../marc:subfield[@code = '2'])"/>
+                </xsl:if>
+                <xsl:value-of select="."/>
+            </rdamd:P30123>
             <xsl:if test="../marc:subfield[@code = '3']">
                 <rdamd:P30137>
                     <xsl:text>Broadcast Standard ({.}) applies to {../marc:subfield[@code = '3']}</xsl:text> 
@@ -407,6 +417,9 @@
             <xsl:for-each select="marc:subfield[@code = '0']">
                 <xsl:if test="not(contains(., 'http:'))">
                     <rdamd:P30104>
+                        <xsl:if test="../marc:subfield[@code = '2']">
+                            <xsl:copy-of select="uwf:S2lookup(../marc:subfield[@code = '2'])"/>
+                        </xsl:if>
                         <xsl:value-of select="."/>
                     </rdamd:P30104>
                 </xsl:if>
