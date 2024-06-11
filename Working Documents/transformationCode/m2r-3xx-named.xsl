@@ -385,6 +385,7 @@
     </xsl:template>
     
     <!-- 346 -->
+    <!-- $2 not accounted for - may apply once decisions made -->
     <xsl:template name="F346-string" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdamd:P30104>{.}</rdamd:P30104>
