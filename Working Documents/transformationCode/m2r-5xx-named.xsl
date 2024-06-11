@@ -312,6 +312,22 @@
         </rdf:Description>
     </xsl:template>
     
+    <!-- 567 -->
+    <xsl:template name="F567-xx-ab2" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <xsl:text>Methodology: {.}</xsl:text>
+            <xsl:if test="following-sibling::marc:subfield[@code = 'b'] and following-sibling::marc:subfield[@code = '2']">
+                <xsl:text>; </xsl:text>
+            </xsl:if>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'b'][following-sibling::marc:subfield[@code = '2']]">
+            <xsl:text>Controlled term: {.}; </xsl:text>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = '2'][preceding-sibling::marc:subfield[@code = 'b']]">
+            <xsl:text>Source of term: {.}</xsl:text>
+        </xsl:for-each>
+    </xsl:template>
+    
     <!-- 581 -->
     <xsl:template name="F581-xx-az3" expand-text="yes">
         <xsl:text>Publications: {marc:subfield[@code = 'a']}</xsl:text>

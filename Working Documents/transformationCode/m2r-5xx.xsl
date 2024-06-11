@@ -399,6 +399,17 @@
         </xsl:if>
     </xsl:template>
     
+    <!-- 567 - Methodology Note -->
+    <xsl:template
+        match="marc:datafield[@tag = '567'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '567']"
+        mode="wor">
+        <xsl:call-template name="getmarc"/>
+        <rdawd:P10330>
+            <xsl:call-template name="F567-xx-ab2"/>
+        </rdawd:P10330>
+    </xsl:template>
+    
+    
     <!-- 581 - Publications about Described Materials Note -->
     <xsl:template
         match="marc:datafield[@tag = '581'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '581']"
