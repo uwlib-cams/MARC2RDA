@@ -331,6 +331,16 @@
         </xsl:if>
     </xsl:template>
     
+    <!-- 547 - Former Title Complexity Note -->
+    <xsl:template
+        match="marc:datafield[@tag = '547'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '547']"
+        mode="man" expand-text="true">
+        <xsl:call-template name="getmarc"/>
+        <rdamd:P30137>
+            <xsl:text>Former title complexity note: {marc:subfield[@code = 'a']}</xsl:text>
+        </rdamd:P30137>
+    </xsl:template>
+    
     <!-- 561 - Ownership and custodial history -->
     <!-- match on tag 561 or an unlinked 880 field where $6 = 561-00 -->
     <xsl:template
