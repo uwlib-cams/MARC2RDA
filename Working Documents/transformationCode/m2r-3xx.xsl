@@ -16,7 +16,9 @@
     exclude-result-prefixes="marc ex uwf" version="3.0">
     <xsl:include href="m2r-3xx-named.xsl"/>
     <xsl:import href="getmarc.xsl"/>
-    <xsl:template match="marc:datafield[@tag = '306']" mode="exp" expand-text="yes">
+    
+    <xsl:template match="marc:datafield[@tag = '306'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '306']"
+        mode="exp" expand-text="yes">
         <xsl:call-template name="getmarc"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdaed:P20219 rdf:datatype="xsd:time"
