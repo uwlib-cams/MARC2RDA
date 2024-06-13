@@ -38,24 +38,28 @@
       <!--MARC data begins-->
       <fake:marcfield>F028 00 $a 38876 $b Sony Classical</fake:marcfield>
       <!--RDA data begins-->
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d15e6"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d16e6"/>
       <!--MARC data begins-->
       <fake:marcfield>F028 00 $a 414 274-2 $b Decca $q (set)</fake:marcfield>
       <!--RDA data begins-->
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d15e11"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d16e11"/>
       <!--MARC data begins-->
       <fake:marcfield>F028 22 $a U. E. 5904 $b Universal Edition</fake:marcfield>
       <!--RDA data begins-->
-      <rdamo:P30066 rdf:resource="http://marc2rda.edu/fake/nom/d15e18"/>
+      <rdamo:P30066 rdf:resource="http://marc2rda.edu/fake/nom/d16e18"/>
       <!--MARC data begins-->
       <fake:marcfield>F028 32 $a HL48002596 $b H. Leonard</fake:marcfield>
       <!--RDA data begins-->
-      <rdamo:P30065 rdf:resource="http://marc2rda.edu/fake/nom/d15e23"/>
+      <rdamo:P30065 rdf:resource="http://marc2rda.edu/fake/nom/d16e23"/>
+      <!--MARC data begins-->
+      <fake:marcfield>F028 22 $6 880-01 $a s 4871 k $b Kompozitor</fake:marcfield>
+      <!--RDA data begins-->
+      <rdamo:P30066 rdf:resource="http://marc2rda.edu/fake/nom/d16e28"/>
    </rdf:Description>
    <!--MARC data begins-->
    <fake:marcfield>F028 00 $a 38876 $b Sony Classical</fake:marcfield>
    <!--RDA data begins-->
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d15e6">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d16e6">
       <rdand:P80068>38876</rdand:P80068>
       <rdand:P80073>Sony Classical</rdand:P80073>
       <rdand:P80078>Issue number</rdand:P80078>
@@ -63,7 +67,7 @@
    <!--MARC data begins-->
    <fake:marcfield>F028 00 $a 414 274-2 $b Decca $q (set)</fake:marcfield>
    <!--RDA data begins-->
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d15e11">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d16e11">
       <rdand:P80068>414 274-2</rdand:P80068>
       <rdand:P80073>Decca</rdand:P80073>
       <rdand:P80071>set</rdand:P80071>
@@ -72,7 +76,7 @@
    <!--MARC data begins-->
    <fake:marcfield>F028 22 $a U. E. 5904 $b Universal Edition</fake:marcfield>
    <!--RDA data begins-->
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d15e18">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d16e18">
       <rdand:P80068>U. E. 5904</rdand:P80068>
       <rdand:P80073>Universal Edition</rdand:P80073>
       <rdand:P80078>Plate number</rdand:P80078>
@@ -80,9 +84,17 @@
    <!--MARC data begins-->
    <fake:marcfield>F028 32 $a HL48002596 $b H. Leonard</fake:marcfield>
    <!--RDA data begins-->
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d15e23">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d16e23">
       <rdand:P80068>HL48002596</rdand:P80068>
       <rdand:P80073>H. Leonard</rdand:P80073>
-      <rdand:P80078>Other music publisher number</rdand:P80078>
+   </rdf:Description>
+   <!--MARC data begins-->
+   <fake:marcfield>F028 22 $6 880-01 $a s 4871 k $b Kompozitor</fake:marcfield>
+   <!--RDA data begins-->
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d16e28">
+      <rdand:P80068>s 4871 k</rdand:P80068>
+      <rdand:P80073>Kompozitor</rdand:P80073>
+      <rdand:P80078>Plate number</rdand:P80078>
+      <rdand:P80113>С 4871 К</rdand:P80113>
    </rdf:Description>
 </rdf:RDF>
