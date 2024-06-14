@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">257-test1</marc:controlfield>
+        <marc:datafield tag="257" ind1=" " ind2=" ">
+            <marc:subfield code="a">Germany</marc:subfield>
+            <marc:subfield code="0">http://id.loc.gov/authorities/names/n80125931</marc:subfield>
+            <marc:subfield code="2">naf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="257" ind1=" " ind2=" ">
+            <marc:subfield code="a">Italy ; France.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="257" ind1=" " ind2=" ">
+            <marc:subfield code="a">Wisconsin</marc:subfield>
+            <marc:subfield code="0">http://id.loc.gov/authorities/names/n79022855-781</marc:subfield>
+            <marc:subfield code="1">https://www.wikidata.org/wiki/Q1537</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

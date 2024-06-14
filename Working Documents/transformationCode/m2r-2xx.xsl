@@ -12,9 +12,16 @@
     xmlns:rdam="http://rdaregistry.info/Elements/m/"
     xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
     xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
-    xmlns:fake="http://fakePropertiesForDemo" exclude-result-prefixes="marc ex" version="3.0">
+    xmlns:rdap="http://rdaregistry.info/Elements/p/"
+    xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+    xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+    xmlns:fake="http://fakePropertiesForDemo" xmlns:uwf="http://universityOfWashington/functions"
+    exclude-result-prefixes="marc ex uwf" version="3.0">
     <xsl:include href="m2r-2xx-named.xsl"/>
     <xsl:import href="getmarc.xsl"/>
+    <xsl:import href="m2r-functions.xsl"/>
+    
+    
     <xsl:template match="marc:datafield[@tag = '245']" mode="wor" >
         <xsl:call-template name="getmarc"/>
         <xsl:for-each select="marc:subfield[@code='a']">
@@ -23,7 +30,8 @@
             </rdawd:P10088>
         </xsl:for-each>
     </xsl:template>    
-    <xsl:template match="marc:datafield[@tag = '245'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '245']" mode="man">
+    <xsl:template match="marc:datafield[@tag = '245'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '245']" 
+        mode="man">
         <xsl:call-template name="getmarc"/>
         <xsl:call-template name="F245-xx-anps"/>
         <xsl:call-template name="F245-xx-a"/>
@@ -33,6 +41,37 @@
         <xsl:call-template name="F245-xx-h"/>
         <xsl:call-template name="F245-xx-k"/>
     </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '257'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '257']"
+        mode="man" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <rdamd:P30086>
+                <xsl:if test="../marc:subfield[@code = '2']">
+                    <xsl:copy-of select="uwf:S2lookup(../marc:subfield[@code = '2'])"/>
+                </xsl:if>{.}</rdamd:P30086>
+        </xsl:for-each>
+        <!-- this may need to be revisited for determining IRI vs identifier-->
+        <xsl:for-each select="marc:subfield[@code = '0']">
+            <xsl:if test="not(../marc:subfield[@code = '1'])">
+                <rdam:P30086>{.}</rdam:P30086>
+            </xsl:if>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = '1']">
+            <xsl:choose>
+                <xsl:when test="../marc:subfield[@code = '0']">
+                    <rdamo:P30086>
+                        <rdf:Description rdf:about="{.}">
+                            <xsl:for-each select="../marc:subfield[@code = '0']">
+                                <rdap:P70057>{.}</rdap:P70057>
+                            </xsl:for-each>
+                        </rdf:Description>
+                    </rdamo:P30086>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:for-each>
+    </xsl:template>
+    
+    
     <!-- template immediately below, MARC 264:
          all values cocatenated go into RDA "statements";
          if there's isbd punctuation, subfield are not output;
