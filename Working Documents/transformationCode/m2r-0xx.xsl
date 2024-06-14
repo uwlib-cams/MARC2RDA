@@ -249,6 +249,41 @@
         </xsl:for-each>
     </xsl:template>
     
+    <!-- 074 - GPO Item Number -->
+    <xsl:template match="marc:datafield[@tag = '074']" mode="ite" expand-text="yes">
+        <xsl:param name="baseIRI"/>
+        <xsl:param name="controlNumber"/>
+        <xsl:call-template name="getmarc"/>
+        <xsl:variable name="genID" select="generate-id()"/>
+        
+        <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
+            <rdaid:P40001>{concat($controlNumber, 'ite', $genID)}</rdaid:P40001>
+            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+            <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
+            <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
+                <rdaio:P40001 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
+            </xsl:for-each>
+        </rdf:Description>
+    </xsl:template>
+    <xsl:template match="marc:datafield[@tag = '074']" mode="nom" expand-text="yes">
+        <xsl:param name="baseIRI"/>
+        <xsl:call-template name="getmarc"/>
+        <xsl:variable name="genID" select="generate-id()"/>
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
+            <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+                <rdand:P80068>
+                    <xsl:value-of select="."/>
+                </rdand:P80068>
+                <rdano:P80047 rdf:resource="{concat($baseIRI,'ite', $genID)}"/>
+                <rdand:P80078>GPO item number</rdand:P80078>
+                <xsl:if test="@code = 'z'">
+                    <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+                </xsl:if>
+            </rdf:Description>
+        </xsl:for-each>
+    </xsl:template>
+    
+    
     <!-- 088 - Report number -->
     <xsl:template match="marc:datafield[@tag = '088'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '088-00']" 
         mode="man">
