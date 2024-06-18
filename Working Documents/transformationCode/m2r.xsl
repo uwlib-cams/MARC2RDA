@@ -78,6 +78,7 @@
             xmlns:rdap="http://rdaregistry.info/Elements/p/"
             xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
             xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+            xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
             xmlns:ex="http://fakeIRI2.edu/">
             <!--<xsl:apply-templates select="marc:record[not(marc:datafield[@tag='533'])]"/>-->
             <xsl:apply-templates select="marc:record"/>

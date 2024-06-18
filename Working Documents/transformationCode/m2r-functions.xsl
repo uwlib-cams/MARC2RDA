@@ -114,9 +114,17 @@
     
     <xsl:function name="uwf:S5lookup" expand-text="yes">
         <xsl:param name="code5"/>
-        <rdaio:P40161
-            rdf:resource="{$collBase}{$lookupDoc/key('normCode',$code5)/rdaad:P50006[@rdf:datatype='http://id.loc.gov/datatypes/orgs/normalized']}"
-        />
+        <xsl:variable name="lowerCode5" select="lower-case($code5)"/>
+        <xsl:variable name="lookup5" select="$lookupDoc/key('normCode',$lowerCode5)/rdaad:P50006[@rdf:datatype='http://id.loc.gov/datatypes/orgs/normalized']"/>
+        <xsl:choose>
+            <xsl:when test="$lookup5">
+                <rdaio:P40161 rdf:resource="{$collBase}{$lookup5}"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:comment>Unable to match {$code5} with Cultural Heritage Organization</xsl:comment>
+            </xsl:otherwise>
+        </xsl:choose>
+        
     </xsl:function>
     
     <xsl:function name="uwf:S2" expand-text="yes">
