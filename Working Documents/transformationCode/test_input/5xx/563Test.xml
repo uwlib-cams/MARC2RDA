@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">563-test</marc:controlfield>
+        
+        <marc:datafield tag="563" ind1=" " ind2=" ">
+            <marc:subfield code="a">Original color printed paper wrappers.</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="563" ind1=" " ind2=" ">
+            <marc:subfield code="a">Late 16th century blind-tooled centrepiece binding, dark brown calf.</marc:subfield>
+            <marc:subfield code="u">http://uri</marc:subfield>
+            <marc:subfield code="3">Cover</marc:subfield>
+            <marc:subfield code="5">StEdNL</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="563" ind1=" " ind2=" ">
+            <marc:subfield code="6">880-01</marc:subfield>
+            <marc:subfield code="a">Gold-tooled morocco binding by Benjamin West, ca. 1840.</marc:subfield>
+            <marc:subfield code="5">Uk</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">563-01</marc:subfield>
+            <marc:subfield code="a">linked 880</marc:subfield>
+            <marc:subfield code="5">Uk</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">563-00</marc:subfield>
+            <marc:subfield code="a">Publisher's illustrated red cloth binding.</marc:subfield>
+            <marc:subfield code="5">ICN</marc:subfield>
+        </marc:datafield>
+        
+    </marc:record>
+</marc:collection>

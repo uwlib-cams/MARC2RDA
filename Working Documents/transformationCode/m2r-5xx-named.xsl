@@ -312,6 +312,24 @@
         </rdf:Description>
     </xsl:template>
     
+    <!-- 563 -->
+    <xsl:template name="F563-xx-au3" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'u']">
+            <xsl:if test="@code = 'a'">
+                <xsl:text>{.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'u'">
+                <xsl:text>URI: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="position() != last()">
+                <xsl:text>; </xsl:text>
+            </xsl:if>
+        </xsl:for-each>
+        <xsl:if test="marc:subfield[@code = '3']">
+            <xsl:text> (Applies to: {marc:subfield[@code = '3']})</xsl:text>
+        </xsl:if>
+    </xsl:template>
+    
     <!-- 567 -->
     <xsl:template name="F567-xx-ab2" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'a']">
