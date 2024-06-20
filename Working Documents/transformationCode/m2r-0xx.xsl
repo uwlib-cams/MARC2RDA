@@ -47,9 +47,9 @@
     <xsl:template match="marc:datafield[@tag = '020'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '020-00']" 
         mode="nom">
         <xsl:param name="baseIRI"/>
-        <xsl:call-template name="getmarc"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+                <xsl:call-template name="getmarc"/>
                 <rdand:P80068>
                     <xsl:value-of select="translate(., ' :', '')"/>
                 </rdand:P80068>
@@ -109,32 +109,32 @@
     <xsl:template match="marc:datafield[@tag = '027'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '027-00']" 
         mode="nom">
         <xsl:param name="baseIRI"/>
-        <xsl:call-template name="getmarc"/>
-            <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
-                <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
-                    <rdand:P80068><xsl:value-of select="."/></rdand:P80068>
-                    <xsl:choose>
-                        <xsl:when test="contains(., '--')">
-                            <rdand:P80069>ISRN</rdand:P80069>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <rdand:P80069>STRN</rdand:P80069>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                    <rdand:P80078>Standard Technical Report Number</rdand:P80078>
-                    <xsl:if test="@code = 'z'">
-                        <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
-                    </xsl:if>
-                    <xsl:if test="following-sibling::marc:subfield[@code = 'q']">
-                        <xsl:for-each select="following-sibling::marc:subfield[@code = 'q']">
-                            <rdand:P80071><xsl:value-of select="normalize-space(translate(., '();', ''))"/></rdand:P80071>
-                        </xsl:for-each>
-                    </xsl:if>
-                    <xsl:call-template name="handle6NomenSibling">
-                        <xsl:with-param name="fieldTag" select="'027'"/>
-                        <xsl:with-param name="mainSubfield" select="@code"/>
-                    </xsl:call-template>
-                </rdf:Description>
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
+            <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+                <xsl:call-template name="getmarc"/>
+                <rdand:P80068><xsl:value-of select="."/></rdand:P80068>
+                <xsl:choose>
+                    <xsl:when test="contains(., '--')">
+                        <rdand:P80069>ISRN</rdand:P80069>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <rdand:P80069>STRN</rdand:P80069>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <rdand:P80078>Standard Technical Report Number</rdand:P80078>
+                <xsl:if test="@code = 'z'">
+                    <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+                </xsl:if>
+                <xsl:if test="following-sibling::marc:subfield[@code = 'q']">
+                    <xsl:for-each select="following-sibling::marc:subfield[@code = 'q']">
+                        <rdand:P80071><xsl:value-of select="normalize-space(translate(., '();', ''))"/></rdand:P80071>
+                    </xsl:for-each>
+                </xsl:if>
+                <xsl:call-template name="handle6NomenSibling">
+                    <xsl:with-param name="fieldTag" select="'027'"/>
+                    <xsl:with-param name="mainSubfield" select="@code"/>
+                </xsl:call-template>
+            </rdf:Description>
             </xsl:for-each>
     </xsl:template>
     
@@ -157,8 +157,8 @@
     <xsl:template match="marc:datafield[@tag = '028'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '028-00']" 
         mode="nom">
         <xsl:param name="baseIRI"/>
-        <xsl:call-template name="getmarc"/>
         <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+            <xsl:call-template name="getmarc"/>
             <rdand:P80068><xsl:value-of select="marc:subfield[@code = 'a']"/></rdand:P80068>
             <xsl:if test="marc:subfield[@code = 'b']">
                 <rdand:P80073><xsl:value-of select="marc:subfield[@code = 'b']"/></rdand:P80073>
@@ -253,10 +253,10 @@
     <xsl:template match="marc:datafield[@tag = '074']" mode="ite" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="controlNumber"/>
-        <xsl:call-template name="getmarc"/>
         <xsl:variable name="genID" select="generate-id()"/>
         
         <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
+            <xsl:call-template name="getmarc"/>
             <rdaid:P40001>{concat($controlNumber, 'ite', $genID)}</rdaid:P40001>
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
             <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
@@ -267,10 +267,10 @@
     </xsl:template>
     <xsl:template match="marc:datafield[@tag = '074']" mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
-        <xsl:call-template name="getmarc"/>
         <xsl:variable name="genID" select="generate-id()"/>
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
             <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+                <xsl:call-template name="getmarc"/>
                 <rdand:P80068>
                     <xsl:value-of select="."/>
                 </rdand:P80068>
@@ -299,9 +299,9 @@
     <xsl:template match="marc:datafield[@tag = '088'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '088-00']" 
         mode="nom">
         <xsl:param name="baseIRI"/>
-        <xsl:call-template name="getmarc"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+                <xsl:call-template name="getmarc"/>
                 <rdand:P80068>
                     <xsl:value-of select="."/>
                 </rdand:P80068>

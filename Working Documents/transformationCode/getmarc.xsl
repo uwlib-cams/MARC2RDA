@@ -21,7 +21,7 @@
     xmlns:fake="http://fakePropertiesForDemo" exclude-result-prefixes="marc ex" version="3.0">
 
     <xsl:template name="getmarc">
-        <xsl:comment>MARC data begins</xsl:comment>
+       <!-- <xsl:comment>MARC data begins</xsl:comment>-->
         <xsl:element name="{'fake:marcfield'}">
             <xsl:value-of select="'F'||@tag"/>
             <xsl:text> </xsl:text>
@@ -48,6 +48,6 @@
                 </xsl:if>
             </xsl:for-each>
         </xsl:element>
-        <xsl:comment>RDA data begins</xsl:comment>
+<!--        <xsl:comment>RDA data begins</xsl:comment>-->
     </xsl:template>
 </xsl:stylesheet>

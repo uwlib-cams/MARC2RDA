@@ -64,9 +64,9 @@
         mode="ite" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="controlNumber"/>
-        <xsl:call-template name="getmarc"/>
         <xsl:variable name="genID" select="generate-id()"/>
         <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
+            <xsl:call-template name="getmarc"/>
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
             <rdaid:P40001>{concat($controlNumber,'ite',$genID)}</rdaid:P40001>
             <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
@@ -272,10 +272,10 @@
         mode="ite" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="controlNumber"/>
-        <xsl:call-template name="getmarc"/>
         <xsl:variable name="genID" select="generate-id()"/>
         <!-- create the item IRI and rdf:description for this item -->
         <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
+            <xsl:call-template name="getmarc"/>
             <rdaid:P40001>{concat($controlNumber, 'ite', $genID)}</rdaid:P40001>
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
             <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
@@ -348,10 +348,10 @@
         mode="ite" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="controlNumber"/>
-        <xsl:call-template name="getmarc"/>
         <xsl:variable name="genID" select="generate-id()"/>
         <!-- create the item IRI and rdf:description for this item -->
         <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
+            <xsl:call-template name="getmarc"/>
             <rdaid:P40001>{concat($controlNumber, 'ite', $genID)}</rdaid:P40001>
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
             <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
@@ -423,10 +423,10 @@
         mode="ite" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="controlNumber"/>
-        <xsl:call-template name="getmarc"/>
         <xsl:variable name="genID" select="generate-id()"/>
         <xsl:if test="marc:subfield[@code = '5']">
             <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
+                <xsl:call-template name="getmarc"/>
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                 <rdaid:P40001>{concat($controlNumber,'ite',$genID)}</rdaid:P40001>
                 <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
@@ -473,9 +473,9 @@
         mode="ite" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="controlNumber"/>
-        <xsl:call-template name="getmarc"/>
         <xsl:variable name="genID" select="generate-id()"/>
         <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
+            <xsl:call-template name="getmarc"/>
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
             <rdaid:P40001>{concat($controlNumber,'ite',$genID)}</rdaid:P40001>
             <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
@@ -591,13 +591,14 @@
             </rdamd:P30137>
         </xsl:if>
     </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '585'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '585-00']" mode="ite" expand-text="yes">
+    <xsl:template match="marc:datafield[@tag = '585'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '585-00']" 
+        mode="ite" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="controlNumber"/>
-        <xsl:call-template name="getmarc"/>
         <xsl:if test="marc:subfield[@code = '5']">
             <xsl:variable name="genID" select="generate-id()"/>
             <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
+                <xsl:call-template name="getmarc"/>
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                 <rdaid:P40001>{concat($controlNumber,'ite',$genID)}</rdaid:P40001>
                 <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
