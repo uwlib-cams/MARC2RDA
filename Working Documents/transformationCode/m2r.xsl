@@ -27,15 +27,17 @@
     <xsl:mode name="wor" on-no-match="shallow-skip"/>
     <xsl:mode name="exp" on-no-match="shallow-skip"/>
     <xsl:mode name="man" on-no-match="shallow-skip"/>
-
     
     <xsl:mode name="ite" on-no-match="shallow-skip"/>
     <xsl:mode name="nom" on-no-match="shallow-skip"/>
     <xsl:mode name="metaWor" on-no-match="shallow-skip"/>
     <xsl:mode name="age" on-no-match="shallow-skip"/>
     
+    <!-- base IRI for now - all minted entities begin with this -->
     <xsl:variable name="base" select="'http://fakeIRI2.edu/'"/>
     
+    <!-- include all files containing main field templates
+         each main field template will include its own -named file if it exists-->
     <xsl:include href="m2r-0xx.xsl"/>
     <xsl:include href="m2r-1xx7xx.xsl"/>
     <xsl:include href="m2r-2xx.xsl"/>
@@ -43,6 +45,8 @@
     <xsl:include href="m2r-4xx.xsl"/>
     <xsl:include href="m2r-5xx.xsl"/>
     
+    <!-- This template matches at the root
+        It's only purpose is to apply-templates to the marc:collection -->
     <xsl:template match="/">
         <!--        <test>
             <introduction>
@@ -56,6 +60,10 @@
         <xsl:apply-templates select="marc:collection"/>
         <!--     </test>  -->
     </xsl:template>
+    
+    <!-- This template matches the marc:collection 
+        and creates the <rdf:RDF> elements with the necessary namespaces for the resulting document
+        if additional namespaces are used they should be added here as well. -->
     <xsl:template match="marc:collection">
         <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
             xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -79,12 +87,20 @@
             xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
             xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
             xmlns:ex="http://fakeIRI2.edu/">
+            <!-- at some point, filtering for aggregates will need to happen before apply-templates is called here -->
             <!--<xsl:apply-templates select="marc:record[not(marc:datafield[@tag='533'])]"/>-->
             <xsl:apply-templates select="marc:record"/>
         </rdf:RDF>
     </xsl:template>
     
+    <!-- Set up the WEMI stack for the marc:record -->
+    <!-- an rdf:Description is created for the Work, Expression, and Manifestation 
+        and apply-templates is called with the correct mode 
+        to create the appropriate relationships within each rdf:Description element -->
+ 
     <xsl:template match="marc:record" expand-text="yes">
+        
+        <!-- currently we are using the 001 control field to generate the baseIRI -->
         <xsl:variable name="baseIRI" select="concat($base, marc:controlfield[@tag = '001'])"/>
         
         <!-- *****WORKS***** -->
@@ -110,6 +126,10 @@
             <rdamo:P30139 rdf:resource="{concat($baseIRI,'exp')}"/>
             <xsl:apply-templates select="*" mode="man"/>
         </rdf:Description>
+        
+        <!-- Items, nomens, metadata works, and agents are generated as needed
+             so the rdf:Description elements are generated within the field-specific templates.
+             How IRIs are minted vary, see documentation -->
         
         <!-- *****ITEMS***** -->
         <xsl:apply-templates select="*" mode="ite">
