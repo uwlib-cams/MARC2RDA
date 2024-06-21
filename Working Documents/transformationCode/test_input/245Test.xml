@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test1</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">--as others see us</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test2</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="2">
+            <marc:subfield code="a">A report to the legislature for the year ...</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test3</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">Concerto for piano, with chamber music ensemble, op. 26 (1961).</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test4</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">[Seventeen poems].</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test5</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">[Diary].</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test6</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">[Diary].</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test7</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Cancer research :</marc:subfield>
+            <marc:subfield code="b">official organ of the American Association for Cancer Research, Inc.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test8</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">ETZ :</marc:subfield>
+            <marc:subfield code="b">...</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test9</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Trade Union Fellowship Program :</marc:subfield>
+            <marc:subfield code="b">[announcement].</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test10</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Rock mechanics :</marc:subfield>
+            <marc:subfield code="b">journal of the International Society for Rock Mechanics = Felsmechanik.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test11</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="5">
+            <marc:subfield code="a">Tōn Diōnos Rōmaikōn historiōn eikositria biblia =</marc:subfield>
+            <marc:subfield code="b">Dionis Romanarum historiarum libri XXIII, à XXXVI ad LVIII vsque.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test12</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="5">
+            <marc:subfield code="a">Tōn meionotētōn eunoia :</marc:subfield>
+            <marc:subfield code="b">mythistorēma /</marc:subfield>
+            <marc:subfield code="c">Spyrou Gkrintzou.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test13</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="4">
+            <marc:subfield code="a">The charity ball :</marc:subfield>
+            <marc:subfield code="b">a comedy in four acts :</marc:subfield>
+            <marc:subfield code="k">typescript,</marc:subfield>
+            <marc:subfield code="f">1889 /</marc:subfield>
+            <marc:subfield code="c">by David Belasco and Henry C. DeMille.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test14</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">Love from Joy :</marc:subfield>
+            <marc:subfield code="b">letters from a farmer’s wife.</marc:subfield>
+            <marc:subfield code="n">Part III,</marc:subfield>
+            <marc:subfield code="p">1987-1995, At the bungalow.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test15</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">Proceedings /</marc:subfield>
+            <marc:subfield code="c">Fake Society</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test16</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">Project directory / /</marc:subfield>
+            <marc:subfield code="c">TDC = Répertoire des projets / CDT.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test17</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">Short-Harrison-Symmes family papers,</marc:subfield>
+            <marc:subfield code="f">1760-1878.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test18</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="4">
+            <marc:subfield code="a">The New Lost City Ramblers with Cousin Emmy</marc:subfield>
+            <marc:subfield code="h">[sound recording].</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test19</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="3">
+            <marc:subfield code="a">Le Bureau</marc:subfield>
+            <marc:subfield code="h">[filmstrip] =</marc:subfield>
+            <marc:subfield code="b">La Oficina = Das Büro.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test20</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">Oklahoma</marc:subfield>
+            <marc:subfield code="h">[sound recording] ;</marc:subfield>
+            <marc:subfield code="b">Carousel ; South Pacific ; Yokels in Paradise</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test21</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="3">
+            <marc:subfield code="a">La mer</marc:subfield>
+            <marc:subfield code="h">[sound recording] ;</marc:subfield>
+            <marc:subfield code="b">Khamma ; Rhapsody for clarinet and orchestra /</marc:subfield>
+            <marc:subfield code="c">Claude Debussy.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test22</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a"></marc:subfield>
+            <marc:subfield code="h">[sound recording] ;</marc:subfield>
+            <marc:subfield code="b">inet and orchestra /</marc:subfield>
+            <marc:subfield code="c">Claude Debussy.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test23</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">Concerto per piano n. 21, K 467</marc:subfield>
+            <marc:subfield code="h">[sound recording] ;</marc:subfield>
+            <marc:subfield code="c">W.A. Mozart. L’assedio di Corinto. Ouverture / G. Rossini.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test24</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Four years at Yale :</marc:subfield>
+            <marc:subfield code="k">diaries,</marc:subfield>
+            <marc:subfield code="f">1903 Sept. 16-1907 Oct. 5.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test25</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">PL 17 Hearing Files</marc:subfield>
+            <marc:subfield code="k">Case Files</marc:subfield>
+            <marc:subfield code="f">1974</marc:subfield>
+            <marc:subfield code="p">District 6</marc:subfield>
+            <marc:subfield code="h">microfilm (jacketted in fiche).</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test26</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Faust.</marc:subfield>
+            <marc:subfield code="n">Part one.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test27</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">Management report.</marc:subfield>
+            <marc:subfield code="n">Part I /</marc:subfield>
+            <marc:subfield code="c">U.S. Navy's Military Sealift Command.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test28</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene.</marc:subfield>
+            <marc:subfield code="n">1. Abt. Originale.</marc:subfield>
+            <marc:subfield code="n">Reihe B,</marc:subfield>
+            <marc:subfield code="p">Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test29</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">Dissertation abstracts.</marc:subfield>
+            <marc:subfield code="n">A,</marc:subfield>
+            <marc:subfield code="p">The humanities and social sciences.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test30</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">Heritage Books archives.</marc:subfield>
+            <marc:subfield code="p">Underwood biographical dictionary.</marc:subfield>
+            <marc:subfield code="n">Volumes 1 &amp; 2 revised</marc:subfield>
+            <marc:subfield code="h">[electronic resource] /</marc:subfield>
+            <marc:subfield code="c">Laverne Galeener-Moore.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test31</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act.</marc:subfield>
+            <marc:subfield code="n">Part II,</marc:subfield>
+            <marc:subfield code="p">Labour unions =</marc:subfield>
+            <marc:subfield code="b">Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers.</marc:subfield>
+            <marc:subfield code="n">Partie II,</marc:subfield>
+            <marc:subfield code="p">Syndicats ouvriers.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test32</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Advanced calculus.</marc:subfield>
+            <marc:subfield code="p">Student handbook.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test33</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Internationale Strassenkarte.</marc:subfield>
+            <marc:subfield code="p">Europe 1:2.5 Mio. :</marc:subfield>
+            <marc:subfield code="b">mit Register = International road map.</marc:subfield>
+            <marc:subfield code="p">Europe, 1:2.5 mio : with index /</marc:subfield>
+            <marc:subfield code="c">RV Reise- und Verkehrsverlag.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test34</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Island series.</marc:subfield>
+            <marc:subfield code="p">Penrhyn, bethymetry /</marc:subfield>
+            <marc:subfield code="c">compilation by K.B. Lewis, P. Larkin, and T.T. Rongo ; bathymetric compilation and contouring by K.B. Lewis, T.T. Rongo and A.T. Utanga ; drawn by S.C. Glover.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test35</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">Deutsche Bibliographie.</marc:subfield>
+            <marc:subfield code="p">Wöchentliches Verzeichnis.</marc:subfield>
+            <marc:subfield code="n">Reihe B,</marc:subfield>
+            <marc:subfield code="p">Beilage, Erscheinungen ausserhalb des Verlagsbuchhandels :</marc:subfield>
+            <marc:subfield code="b">Amtsblatt der Deutschen Bibliothek.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test36</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">Portals to the world.</marc:subfield>
+            <marc:subfield code="p">Selected Internet resources.</marc:subfield>
+            <marc:subfield code="p">Maldives</marc:subfield>
+            <marc:subfield code="h">[electronic resource] /</marc:subfield>
+            <marc:subfield code="c">created and maintained by the Asian Division, Area Studies Directorate.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test37</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Director's report of the Association of Insurance Adjusters.</marc:subfield>
+            <marc:subfield code="s">Member release.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test38</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Second director's report of the Association.</marc:subfield>
+            <marc:subfield code="s">Member release, </marc:subfield>
+            <marc:subfield code="s">General release.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test39</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="k">Letter,</marc:subfield>
+            <marc:subfield code="f">1901 March 6,</marc:subfield>
+            <marc:subfield code="b">Dublin, to Henrik Ibsen, Kristiana [Oslo].</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test40</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="k">Records,</marc:subfield>
+            <marc:subfield code="f">1939-1973</marc:subfield>
+            <marc:subfield code="g">1965-1972.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test41</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="k">Employment applications</marc:subfield>
+            <marc:subfield code="g">Jan.-Dec. 1985.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test42</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="5">
+            <marc:subfield code="a">Tōn meionotētōn eunoia :</marc:subfield>
+            <marc:subfield code="b">mythistorēma /</marc:subfield>
+            <marc:subfield code="c">Spyrou Gkrintzou.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ua 4500</marc:leader>
+        <marc:controlfield tag="001">245-test43</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="5">
+            <marc:subfield code="a">Tōn meionotētōn eunoia :</marc:subfield>
+            <marc:subfield code="b">mythistorēma /</marc:subfield>
+            <marc:subfield code="c">Spyrou Gkrintzou.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553u  4500</marc:leader>
+        <marc:controlfield tag="001">245-test44</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="5">
+            <marc:subfield code="a">Tōn meionotētōn eunoia</marc:subfield>
+            <marc:subfield code="b">mythistorēma</marc:subfield>
+            <marc:subfield code="c">Spyrou Gkrintzou.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553uc 4500</marc:leader>
+        <marc:controlfield tag="001">245-test45</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="5">
+            <marc:subfield code="a">Tōn meionotētōn eunoia :</marc:subfield>
+            <marc:subfield code="b">mythistorēma</marc:subfield>
+            <marc:subfield code="c">Spyrou Gkrintzou.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553uu 4500</marc:leader>
+        <marc:controlfield tag="001">245-test46</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="5">
+            <marc:subfield code="a">Tōn meionotētōn eunoia</marc:subfield>
+            <marc:subfield code="b">mythistorēma</marc:subfield>
+            <marc:subfield code="c">Spyrou Gkrintzou</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553un 4500</marc:leader>
+        <marc:controlfield tag="001">245-test47</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="5">
+            <marc:subfield code="a">Tōn meionotētōn eunoia</marc:subfield>
+            <marc:subfield code="b">mythistorēma /</marc:subfield>
+            <marc:subfield code="c">Spyrou Gkrintzou.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test48</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="4">
+            <marc:subfield code="a">The charity ball :</marc:subfield>
+            <marc:subfield code="b">a comedy in four acts :</marc:subfield>
+            <marc:subfield code="k">typescript,</marc:subfield>
+            <marc:subfield code="f">1889 /</marc:subfield>
+            <marc:subfield code="c">by David Belasco and Henry C. DeMille.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ua 4500</marc:leader>
+        <marc:controlfield tag="001">245-test49</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="4">
+            <marc:subfield code="a">The charity ball :</marc:subfield>
+            <marc:subfield code="b">a comedy in four acts :</marc:subfield>
+            <marc:subfield code="k">typescript,</marc:subfield>
+            <marc:subfield code="f">1889 /</marc:subfield>
+            <marc:subfield code="c">by David Belasco and Henry C. DeMille.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553u  4500</marc:leader>
+        <marc:controlfield tag="001">245-test50</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="4">
+            <marc:subfield code="a">The charity ball :</marc:subfield>
+            <marc:subfield code="b">a comedy in four acts</marc:subfield>
+            <marc:subfield code="k">typescript</marc:subfield>
+            <marc:subfield code="f">1889 </marc:subfield>
+            <marc:subfield code="c">by David Belasco and Henry C. DeMille.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553uc 4500</marc:leader>
+        <marc:controlfield tag="001">245-test51</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="4">
+            <marc:subfield code="a">The charity ball :</marc:subfield>
+            <marc:subfield code="b">a comedy in four acts :</marc:subfield>
+            <marc:subfield code="k">typescript</marc:subfield>
+            <marc:subfield code="f">1889 /</marc:subfield>
+            <marc:subfield code="c">by David Belasco and Henry C. DeMille.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553uu 4500</marc:leader>
+        <marc:controlfield tag="001">245-test52</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="4">
+            <marc:subfield code="a">The charity ball</marc:subfield>
+            <marc:subfield code="b">a comedy in four acts</marc:subfield>
+            <marc:subfield code="k">typescript</marc:subfield>
+            <marc:subfield code="f">1889</marc:subfield>
+            <marc:subfield code="c">by David Belasco and Henry C. DeMille.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553un 4500</marc:leader>
+        <marc:controlfield tag="001">245-test53</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="4">
+            <marc:subfield code="a">The charity ball</marc:subfield>
+            <marc:subfield code="b">a comedy in four acts</marc:subfield>
+            <marc:subfield code="k">typescript,</marc:subfield>
+            <marc:subfield code="f">1889</marc:subfield>
+            <marc:subfield code="c">by David Belasco and Henry C. DeMille.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test54</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="3">
+            <marc:subfield code="a">Le Bureau</marc:subfield>
+            <marc:subfield code="h">[filmstrip] =</marc:subfield>
+            <marc:subfield code="b">La Oficina = Das Büro.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ua 4500</marc:leader>
+        <marc:controlfield tag="001">245-test55</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="3">
+            <marc:subfield code="a">Le Bureau</marc:subfield>
+            <marc:subfield code="h">[filmstrip] =</marc:subfield>
+            <marc:subfield code="b">La Oficina = Das Büro.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553u  4500</marc:leader>
+        <marc:controlfield tag="001">245-test56</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="3">
+            <marc:subfield code="a">Le Bureau</marc:subfield>
+            <marc:subfield code="h">[filmstrip] =</marc:subfield>
+            <marc:subfield code="b">La Oficina ALSO KNOWN AS Das Büro.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553uc 4500</marc:leader>
+        <marc:controlfield tag="001">245-test57</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="3">
+            <marc:subfield code="a">Le Bureau</marc:subfield>
+            <marc:subfield code="h">[filmstrip]</marc:subfield>
+            <marc:subfield code="b">La Oficina : Das Büro.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553uu 4500</marc:leader>
+        <marc:controlfield tag="001">245-test58</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="3">
+            <marc:subfield code="a">Le Bureau</marc:subfield>
+            <marc:subfield code="h">filmstrip</marc:subfield>
+            <marc:subfield code="b">La Oficina. Das Büro.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553un 4500</marc:leader>
+        <marc:controlfield tag="001">245-test59</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="3">
+            <marc:subfield code="a">Le Bureau</marc:subfield>
+            <marc:subfield code="h">filmstrip</marc:subfield>
+            <marc:subfield code="b">La Oficina = Das Büro.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test60</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene.</marc:subfield>
+            <marc:subfield code="n">1. Abt. Originale.</marc:subfield>
+            <marc:subfield code="n">Reihe B,</marc:subfield>
+            <marc:subfield code="p">Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ua 4500</marc:leader>
+        <marc:controlfield tag="001">245-test61</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene.</marc:subfield>
+            <marc:subfield code="n">1. Abt. Originale.</marc:subfield>
+            <marc:subfield code="n">Reihe B,</marc:subfield>
+            <marc:subfield code="p">Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553u  4500</marc:leader>
+        <marc:controlfield tag="001">245-test62</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene</marc:subfield>
+            <marc:subfield code="n">1. Abt. Originale</marc:subfield>
+            <marc:subfield code="n">Reihe B</marc:subfield>
+            <marc:subfield code="p">Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553uc 4500</marc:leader>
+        <marc:controlfield tag="001">245-test63</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene.</marc:subfield>
+            <marc:subfield code="n">1. Abt. Originale</marc:subfield>
+            <marc:subfield code="n">Reihe B,</marc:subfield>
+            <marc:subfield code="p">Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553uu 4500</marc:leader>
+        <marc:controlfield tag="001">245-test64</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene</marc:subfield>
+            <marc:subfield code="n">1. Abt. Originale</marc:subfield>
+            <marc:subfield code="n">Reihe B</marc:subfield>
+            <marc:subfield code="p">Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553un 4500</marc:leader>
+        <marc:controlfield tag="001">245-test65</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene: </marc:subfield>
+            <marc:subfield code="n">1. Abt. Originale:</marc:subfield>
+            <marc:subfield code="n">Reihe B:</marc:subfield>
+            <marc:subfield code="p">Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>
