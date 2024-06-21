@@ -134,6 +134,7 @@
         <xsl:param name="baseIRI"/>
         <xsl:for-each select="marc:subfield[@code = 'o']">
             <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>{replace(., '\.\s*$', '')}</rdand:P80068>
                 <rdano:P80048 rdf:resource="{$baseIRI||'man'}"/>
                 <rdand:P80078>Dissertation identifier</rdand:P80078>

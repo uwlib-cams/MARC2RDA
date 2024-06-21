@@ -49,6 +49,7 @@
         <xsl:param name="baseIRI"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
                     <xsl:value-of select="translate(., ' :', '')"/>
                 </rdand:P80068>
@@ -110,6 +111,7 @@
         <xsl:param name="baseIRI"/>
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
             <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068><xsl:value-of select="."/></rdand:P80068>
                 <xsl:choose>
                     <xsl:when test="contains(., '--')">
@@ -156,6 +158,7 @@
         mode="nom">
         <xsl:param name="baseIRI"/>
         <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
             <rdand:P80068><xsl:value-of select="marc:subfield[@code = 'a']"/></rdand:P80068>
             <xsl:if test="marc:subfield[@code = 'b']">
                 <rdand:P80073><xsl:value-of select="marc:subfield[@code = 'b']"/></rdand:P80073>
@@ -267,6 +270,7 @@
         <xsl:variable name="genID" select="generate-id()"/>
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
             <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
                     <xsl:value-of select="."/>
                 </rdand:P80068>
@@ -297,6 +301,7 @@
         <xsl:param name="baseIRI"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
                     <xsl:value-of select="."/>
                 </rdand:P80068>
@@ -310,6 +315,7 @@
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'z']">
             <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
                     <xsl:value-of select="."/>
                 </rdand:P80068>
