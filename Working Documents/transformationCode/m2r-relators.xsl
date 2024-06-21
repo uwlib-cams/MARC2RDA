@@ -268,7 +268,7 @@
                     <xsl:when test="starts-with($field/@tag, '1') or starts-with($field/@tag, '7')">
                         <!-- 1XX and 7XX -->
                         <xsl:choose>
-                            <xsl:when test="($fieldType = 'X00' and  ($field/@ind1 = '0' or $field/@ind1 = '1'))">
+                            <xsl:when test="($fieldType = 'X00' and  ($field/@ind1 = '0' or $field/@ind1 = '1' or $field/@ind1 = '2'))">
                                 <!-- person -->
                                 <xsl:element name="{'rdamo:P30268'}">
                                     <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
@@ -312,7 +312,7 @@
                     <xsl:when test="starts-with($field/@tag, '1') or starts-with($field/@tag, '7')">
                         <!-- 1XX and 7XX -->
                         <xsl:choose>
-                            <xsl:when test="($fieldType = 'X00' and  ($field/@ind1 = '0' or $field/@ind1 = '1'))">
+                            <xsl:when test="($fieldType = 'X00' and  ($field/@ind1 = '0' or $field/@ind1 = '1' or $field/@ind1 = '2'))">
                                 <!-- person -->
                                 <xsl:element name="{'rdaao:P50313'}">
                                     <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>

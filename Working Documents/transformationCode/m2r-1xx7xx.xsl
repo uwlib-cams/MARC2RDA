@@ -141,6 +141,25 @@
         <xsl:param name="baseIRI"/>
         <rdf:Description rdf:about="{uwf:agentIRI(.)}">
             <xsl:call-template name="getmarc"/>
+            <xsl:choose>
+                <xsl:when test="@tag = '100' or @tag = '700'">
+                    <xsl:choose>
+                        <xsl:when test="@ind1 = '0' or @ind1 = '1' or @ind1 = '2'">
+                            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+                        </xsl:when>
+                        <xsl:when test="@ind1 = '3'">
+                            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10008"/>
+                        </xsl:when>
+                        <xsl:otherwise/>
+                    </xsl:choose>
+                </xsl:when>
+                <xsl:when test="@tag = '110' or @tag = '111' or @tag = '710' or @tag = '711'">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+                </xsl:when>
+                <xsl:when test="@tag = '720'">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10002"/>
+                </xsl:when>
+            </xsl:choose>
             <xsl:element name="rdaad:P50378"><xsl:value-of select="uwf:agentAccessPoint(.)"/></xsl:element>
             <xsl:choose>
                 <xsl:when test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
