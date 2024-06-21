@@ -64,7 +64,7 @@
                         </xsl:for-each>
                     </rdand:P80071>
                 </xsl:if>
-                <xsl:call-template name="handle6NomenSibling">
+                <xsl:call-template name="X00-xx-6-nomen-sibling">
                     <xsl:with-param name="fieldTag" select="'020'"/>
                     <xsl:with-param name="mainSubfield" select="'a'"/>
                 </xsl:call-template>
@@ -88,7 +88,7 @@
                         </xsl:for-each>
                     </rdand:P80071>
                 </xsl:if>
-                <xsl:call-template name="handle6NomenSibling">
+                <xsl:call-template name="X00-xx-6-nomen-sibling">
                     <xsl:with-param name="fieldTag" select="'020'"/>
                     <xsl:with-param name="mainSubfield" select="'z'"/>
                 </xsl:call-template>
@@ -128,7 +128,7 @@
                         <rdand:P80071><xsl:value-of select="normalize-space(translate(., '();', ''))"/></rdand:P80071>
                     </xsl:for-each>
                 </xsl:if>
-                <xsl:call-template name="handle6NomenSibling">
+                <xsl:call-template name="X00-xx-6-nomen-sibling">
                     <xsl:with-param name="fieldTag" select="'027'"/>
                     <xsl:with-param name="mainSubfield" select="@code"/>
                 </xsl:call-template>
@@ -179,7 +179,7 @@
                 <xsl:when test="@ind1 = '6'"><rdand:P80078>Distributor number</rdand:P80078></xsl:when>
                 <xsl:otherwise/>
             </xsl:choose>
-            <xsl:call-template name="handle6NomenChild">
+            <xsl:call-template name="X00-xx-6-nomen-child">
                 <xsl:with-param name="fieldTag" select="'028'"/>
                 <xsl:with-param name="mainSubfield" select="'a'"/>
             </xsl:call-template>
@@ -302,7 +302,7 @@
                 </rdand:P80068>
                 <rdano:P80048 rdf:resource="{$baseIRI||'man'}"/>
                 <rdand:P80078>Report number</rdand:P80078>
-                <xsl:call-template name="handle6NomenSibling">
+                <xsl:call-template name="X00-xx-6-nomen-sibling">
                     <xsl:with-param name="fieldTag" select="'088'"/>
                     <xsl:with-param name="mainSubfield" select="'a'"/>
                 </xsl:call-template>
@@ -316,7 +316,7 @@
                 <rdano:P80048 rdf:resource="{$baseIRI||'man'}"/>
                 <rdand:P80078>Report number</rdand:P80078>
                 <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
-                <xsl:call-template name="handle6NomenSibling">
+                <xsl:call-template name="X00-xx-6-nomen-sibling">
                     <xsl:with-param name="fieldTag" select="'088'"/>
                     <xsl:with-param name="mainSubfield" select="'z'"/>
                 </xsl:call-template>

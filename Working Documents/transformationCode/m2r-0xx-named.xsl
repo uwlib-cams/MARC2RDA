@@ -23,7 +23,7 @@
     xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
     xmlns:fake="http://fakePropertiesForDemo" exclude-result-prefixes="marc ex" version="3.0">
     
-    <xsl:template name="handle6NomenChild" expand-text="yes">
+    <xsl:template name="X00-xx-6-nomen-child" expand-text="yes">
         <xsl:param name="fieldTag"/>
         <xsl:param name="mainSubfield"/>
         <xsl:if test="marc:subfield[@code = '6']">
@@ -39,7 +39,7 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="handle6NomenSibling" expand-text="yes">
+    <xsl:template name="X00-xx-6-nomen-sibling" expand-text="yes">
         <xsl:param name="fieldTag"/>
         <xsl:param name="mainSubfield"/>
         <xsl:if test="../marc:subfield[@code = '6']">
