@@ -611,6 +611,23 @@
         </rdawd:P10330>
     </xsl:template>
     
+    <!-- 586 - Awards Note -->
+    <xsl:template
+        match="marc:datafield[@tag = '586'] |  marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '586']"
+        mode="exp" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
+        <xsl:if test="marc:subfield[@code = 'a']">
+            <rdaed:P20005>
+                <xsl:value-of select="marc:subfield[@code = 'a']"/>
+            </rdaed:P20005>
+            <xsl:if test="marc:subfield[@code = '3']">
+                <rdaed:P20071>
+                    <xsl:text>{marc:subfield[@code = 'a']} applies to: {marc:subfield[@code = '3']}</xsl:text>
+                </rdaed:P20071>
+            </xsl:if>
+        </xsl:if>
+    </xsl:template>
+    
     <!-- 585 - Exhibitions note -->
     <xsl:template
         match="marc:datafield[@tag = '585'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '585']"
