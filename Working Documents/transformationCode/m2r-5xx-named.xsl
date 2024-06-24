@@ -276,6 +276,21 @@
         </rdf:Description>
     </xsl:template>
     
+    <!-- 556 -->
+    <xsl:template name="F556-xx-az" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
+            <xsl:if test="@code = 'a'">
+                <xsl:text>Information about documentation note: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'z'">
+                <xsl:text>ISBN: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="position() != last()">
+                <xsl:text>; </xsl:text>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
+    
     <!-- 561 -->
     <xsl:template name="F561-xx-au" expand-text="yes">
         <xsl:value-of select="marc:subfield[@code = 'a']"/>
