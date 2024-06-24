@@ -448,6 +448,28 @@
         </xsl:if>
     </xsl:template>
     
+    <!-- 565 - Case File Characteristics Note -->
+    <xsl:template
+        match="marc:datafield[@tag = '565'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '565']"
+        mode="man" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
+        <rdamd:P30137>
+            <xsl:if test="marc:subfield[@code = '3']">
+                <xsl:text>{marc:subfield[@code = '3']}: </xsl:text>
+            </xsl:if>
+            <xsl:choose>
+                <xsl:when test="@ind1 = '0'">
+                    <xsl:text>Case file characteristics: </xsl:text>
+                </xsl:when>
+                <xsl:when test="@ind1 = '8'"/>
+                <xsl:otherwise>
+                    <xsl:text>File size: </xsl:text>
+                </xsl:otherwise>
+            </xsl:choose>
+            <xsl:call-template name="F565-xx-abcde"/>
+        </rdamd:P30137>
+    </xsl:template>
+    
     <!-- 567 - Methodology Note -->
     <xsl:template
         match="marc:datafield[@tag = '567'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '567']"

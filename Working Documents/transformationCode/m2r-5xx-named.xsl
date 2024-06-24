@@ -330,6 +330,36 @@
         </xsl:if>
     </xsl:template>
     
+    <!-- 565 -->
+    <xsl:template name="F565-xx-abcde" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
+            | marc:subfield[@code = 'd'] | marc:subfield[@code = 'e']">
+            <xsl:if test="@code = 'a'">
+                <xsl:text>Number of cases/variables: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'b'">
+                <xsl:text>Name of variable: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'c'">
+                <xsl:text>Unit of analysis: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'd'">
+                <xsl:text>Universe of data: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'e'">
+                <xsl:text>Filing scheme or code: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="position() != last()">
+                <xsl:if test="not(matches(., '^.*?;\s*$'))">
+                    <xsl:text>;</xsl:text>
+                </xsl:if>
+                <xsl:if test="not(matches(., '\s$'))">
+                    <xsl:text> </xsl:text>
+                </xsl:if>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
+    
     <!-- 567 -->
     <xsl:template name="F567-xx-ab2" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'a']">
