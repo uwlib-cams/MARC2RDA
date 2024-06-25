@@ -276,6 +276,73 @@
         </rdf:Description>
     </xsl:template>
     
+    <!-- 552 -->
+    <xsl:template name="F552-xx-zabcdefghijklmnopu" expand-text="yes">
+        <xsl:if test="marc:subfield[@code = 'z']">
+            <xsl:text>{marc:subfield[@code = 'z']} </xsl:text>
+        </xsl:if>
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
+            | marc:subfield[@code = 'd'] | marc:subfield[@code = 'e'] | marc:subfield[@code = 'f']  | marc:subfield[@code = 'g']
+            | marc:subfield[@code = 'h'] | marc:subfield[@code = 'i'] | marc:subfield[@code = 'j'] | marc:subfield[@code = 'k']
+            | marc:subfield[@code = 'l'] | marc:subfield[@code = 'm'] | marc:subfield[@code = 'n'] | marc:subfield[@code = 'o']
+            | marc:subfield[@code = 'p'] | marc:subfield[@code = 'u']">
+            <xsl:if test="@code = 'a'">
+                <xsl:text>Entity type label: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'b'">
+                <xsl:text> Entity type definition and source: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'c'">
+                <xsl:text>Attribute label: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'd'">
+                <xsl:text>Attribute definition and source: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'e'">
+                <xsl:text>Attribute definition and source: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'f'">
+                <xsl:text>Enumerated domain value definition and source: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'g'">
+                <xsl:text>Range domain minimum and maximum: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'h'">
+                <xsl:text>Codeset name and source: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'i'">
+                <xsl:text>Unrepresentable domain: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'j'">
+                <xsl:text>Attribute units of measurement and resolution: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'k'">
+                <xsl:text>Beginning and ending date of attribute values: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'l'">
+                <xsl:text>Attribute value accuracy: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'm'">
+                <xsl:text>Attribute value accuracy explanation: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'n'">
+                <xsl:text>Attribute measurement frequency: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'o'">
+                <xsl:text>Entity and attribute overview: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'p'">
+                <xsl:text>Entity and attribute detail citation: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'u'">
+                <xsl:text>Uniform Resource Identifier: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="position() != last()">
+                <xsl:text>; </xsl:text>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
+    
     <!-- 556 -->
     <xsl:template name="F556-xx-az" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
@@ -334,7 +401,7 @@
                 <xsl:text>{.}</xsl:text>
             </xsl:if>
             <xsl:if test="@code = 'u'">
-                <xsl:text>URI: {.}</xsl:text>
+                <xsl:text>Uniform Resource Identifier: {.}</xsl:text>
             </xsl:if>
             <xsl:if test="position() != last()">
                 <xsl:text>; </xsl:text>

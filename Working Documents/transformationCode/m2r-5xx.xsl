@@ -342,6 +342,16 @@
         </rdamd:P30137>
     </xsl:template>
     
+    <!-- 552 - Entity and Attribute Information Note -->
+    <xsl:template
+        match="marc:datafield[@tag = '552'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '552']"
+        mode="wor">
+        <xsl:call-template name="getmarc"/>
+        <rdawd:P10330>
+            <xsl:call-template name="F552-xx-zabcdefghijklmnopu"/>
+        </rdawd:P10330>
+    </xsl:template>
+    
     <!-- 556 - Information About Documentation Note -->
     <xsl:template
         match="marc:datafield[@tag = '556'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '556']"
