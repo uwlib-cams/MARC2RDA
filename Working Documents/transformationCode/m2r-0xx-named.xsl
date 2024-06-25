@@ -23,42 +23,7 @@
     xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
     xmlns:fake="http://fakePropertiesForDemo" exclude-result-prefixes="marc ex" version="3.0">
     
-    <!-- handle a $6 from the context of the marc:datafield 
-        i.e. the $6 is a child of the context node -->
-    <xsl:template name="X00-xx-6-nomen-child" expand-text="yes">
-        <xsl:param name="fieldTag"/>
-        <xsl:param name="mainSubfield"/>
-        <xsl:if test="marc:subfield[@code = '6']">
-            <xsl:variable name="occNum" select="concat($fieldTag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
-            <xsl:for-each
-                select="//marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
-                <xsl:if test="marc:subfield[@code = $mainSubfield]">
-                    <rdand:P80113>
-                        <xsl:value-of select="marc:subfield[@code = $mainSubfield]"/>
-                    </rdand:P80113>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:if>
-    </xsl:template>
-    
-    <!-- handle a $6 from the context of a marc:subfield within the marc:datafield 
-        i.e. the $6 is a sibling of the context node -->
-    <xsl:template name="X00-xx-6-nomen-sibling" expand-text="yes">
-        <xsl:param name="fieldTag"/>
-        <xsl:param name="mainSubfield"/>
-        <xsl:if test="../marc:subfield[@code = '6']">
-            <xsl:variable name="occNum" select="concat($fieldTag, '-', substring(../marc:subfield[@code = '6'], 5, 6))"/>
-            <xsl:for-each
-                select="//marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
-                <xsl:if test="marc:subfield[@code = $mainSubfield]">
-                    <rdand:P80113>
-                        <xsl:value-of select="marc:subfield[@code = $mainSubfield]"/>
-                    </rdand:P80113>
-                </xsl:if>
-            </xsl:for-each>
-        </xsl:if>
-    </xsl:template>
-    
+    <!-- 026 -->
     <xsl:template name="F026-xx-abcde" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
             | marc:subfield[@code = 'd'] | marc:subfield[@code = 'e']">

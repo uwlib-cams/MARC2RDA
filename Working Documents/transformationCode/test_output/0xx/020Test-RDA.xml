@@ -74,6 +74,5 @@
       <rdano:P80048 rdf:resource="http://fakeIRI2.edu/020-test1man"/>
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
       <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
-      <rdand:P80113>0716305119 (pbk.) </rdand:P80113>
    </rdf:Description>
 </rdf:RDF>
