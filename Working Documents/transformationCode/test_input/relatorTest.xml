@@ -115,4 +115,12 @@
             <marc:subfield code="4">http://rdaregistry.info/Elements/u/P60387</marc:subfield>
         </marc:datafield>
     </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-testItem</marc:controlfield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Item, Test</marc:subfield>
+            <marc:subfield code="4">sgn</marc:subfield>
+        </marc:datafield>
+    </marc:record>
 </marc:collection>

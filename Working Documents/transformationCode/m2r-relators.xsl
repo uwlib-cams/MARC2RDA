@@ -518,7 +518,7 @@
         <xsl:variable name="worIRI" select="concat($baseIRI, '/wor')"/>
         <xsl:variable name="expIRI" select="concat($baseIRI, '/exp')"/>
         <xsl:variable name="manIRI" select="concat($baseIRI, '/man')"/>
-        <xsl:variable name="iteIRI" select="concat($baseIRI, '/ite', generate-id())"/>
+        <xsl:variable name="iteIRI" select="concat($baseIRI, 'ite', generate-id())"/>
         
         <!-- namespace generated based on domain - this gives us the object namespace -->
         <xsl:variable name="ns-wemi" select="'rdaao'"/>

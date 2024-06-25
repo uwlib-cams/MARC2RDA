@@ -355,4 +355,36 @@
       <rdaad:P50378>Elora Festival.</rdaad:P50378>
       <rdaao:P50905 rdf:resource="http://fakeIRI2.edu/relator-test10/exp"/>
    </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-testItemwor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/relator-testItemexp"/>
+      <rdawd:P10002>relator-testItemwor</rdawd:P10002>
+      <fake:marcfield>F700 1# $a Item, Test $4 sgn</fake:marcfield>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-testItemexp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/relator-testItemman"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/relator-testItemwor"/>
+      <rdaed:P20002>relator-testItemexp</rdaed:P20002>
+      <fake:marcfield>F700 1# $a Item, Test $4 sgn</fake:marcfield>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-testItemman">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/relator-testItemexp"/>
+      <fake:marcfield>F700 1# $a Item, Test $4 sgn</fake:marcfield>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/relator-testItemited16e141"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/relator-testItemited16e141">
+      <fake:marcfield>F700 1# $a Item, Test $4 sgn</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdaid:P40001>ited16e141</rdaid:P40001>
+      <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/relator-testItemman"/>
+      <rdaio:P40014 rdf:resource="http://marc2rda.edu/agent/Item%2CTest"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/agent/Item%2CTest">
+      <fake:marcfield>F700 1# $a Item, Test $4 sgn</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50378>Item, Test</rdaad:P50378>
+      <rdaao:P50125 rdf:resource="http://fakeIRI2.edu/relator-testItemited16e141"/>
+   </rdf:Description>
 </rdf:RDF>

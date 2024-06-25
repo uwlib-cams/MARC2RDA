@@ -76,6 +76,7 @@
     
     <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" 
         mode = "man">
+        <xsl:param name="baseIRI"/>
         <xsl:call-template name="getmarc"/>
         <xsl:choose>
             <xsl:when test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
@@ -97,6 +98,30 @@
                 </xsl:call-template>
             </xsl:otherwise>
         </xsl:choose>
+        
+        <!-- check if an item will be minted -->
+        <xsl:variable name="testItem">
+            <xsl:choose>
+                <xsl:when test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
+                    <xsl:choose>
+                        <xsl:when test=" @tag = '100' or @tag = '110' or @tag = '111'">
+                            <xsl:call-template name="handle1XXNoRelator">
+                                <xsl:with-param name="domain" select="'item'"/>
+                            </xsl:call-template>
+                        </xsl:when>
+                        <xsl:otherwise/>
+                    </xsl:choose>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:call-template name="handleRelator">
+                        <xsl:with-param name="domain" select="'item'"/>
+                    </xsl:call-template>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:if test="$testItem/node() or $testItem/@*">
+            <rdamo:P30103 rdf:resource="{concat($baseIRI,'ite', generate-id())}"/>
+        </xsl:if>
     </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" 
