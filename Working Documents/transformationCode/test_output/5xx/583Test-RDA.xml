@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
          xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
          xmlns:rdaa="http://rdaregistry.info/Elements/a/"
          xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
          xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
@@ -16,6 +17,9 @@
          xmlns:rdan="http://rdaregistry.info/Elements/n/"
          xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
          xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
          xmlns:rdaw="http://rdaregistry.info/Elements/w/"
          xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
          xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
@@ -35,148 +39,143 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/583-testman">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/583-testexp"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/583-testited16e6"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/583-testited16e13"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/583-testited16e52"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/583-testited16e66"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/583-testited16e71"/>
    </rdf:Description>
-   <!--MARC data begins-->
-   <fake:marcfield>F583 ## $a This 583 has two nonpublic notes $x nonpublic note 1 $x nonpublic note 2</fake:marcfield>
-   <!--RDA data begins-->
-   <rdf:Description rdf:about="http://fakeIRI2.edu/583-testited14e6">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/583-testited16e6">
+      <fake:marcfield>F583 ## $a This 583 has two nonpublic notes $x nonpublic note 1 $x nonpublic note 2</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ited14e6</rdaid:P40001>
+      <rdaid:P40001>ited16e6</rdaid:P40001>
       <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/583-testman"/>
       <rdaid:P40028>Action: This 583 has two nonpublic notes; ; </rdaid:P40028>
-      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d14e9"/>
-      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d14e11"/>
+      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e9"/>
+      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e11"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d14e9">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e9">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>MetaWor/d14e9</rdawd:P10002>
-      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/583-testited14e6"/>
+      <rdawd:P10002>MetaWor/d16e9</rdawd:P10002>
+      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/583-testited16e6"/>
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-      <rdf:subject rdf:resource="http://fakeIRI2.edu/583-testited14e6"/>
+      <rdf:subject rdf:resource="http://fakeIRI2.edu/583-testited16e6"/>
       <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
       <rdf:object>nonpublic note 1</rdf:object>
       <rdawd:P10004>Private</rdawd:P10004>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d14e11">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e11">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>MetaWor/d14e11</rdawd:P10002>
-      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/583-testited14e6"/>
+      <rdawd:P10002>MetaWor/d16e11</rdawd:P10002>
+      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/583-testited16e6"/>
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-      <rdf:subject rdf:resource="http://fakeIRI2.edu/583-testited14e6"/>
+      <rdf:subject rdf:resource="http://fakeIRI2.edu/583-testited16e6"/>
       <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
       <rdf:object>nonpublic note 2</rdf:object>
       <rdawd:P10004>Private</rdawd:P10004>
    </rdf:Description>
-   <!--MARC data begins-->
-   <fake:marcfield>F583 0# $6 880-01 $a This is a private 583 $u http://fakeIRI2.edu/fake1 $u http://fakeIRI2.edu/fake2 $3 section $5 WaU</fake:marcfield>
-   <!--RDA data begins-->
-   <rdf:Description rdf:about="http://fakeIRI2.edu/583-testited14e13">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/583-testited16e13">
+      <fake:marcfield>F583 0# $6 880-01 $a This is a private 583 $u http://fakeIRI2.edu/fake1 $u http://fakeIRI2.edu/fake2 $3 section $5 WaU</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ited14e13</rdaid:P40001>
+      <rdaid:P40001>ited16e13</rdaid:P40001>
       <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/583-testman"/>
       <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/wau"/>
-      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d14e13"/>
-      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d14e26"/>
-      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d14e39"/>
+      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e13"/>
+      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e26"/>
+      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e39"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d14e13">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e13">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>MetaWor/d14e13</rdawd:P10002>
-      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/583-testited14e13"/>
+      <rdawd:P10002>MetaWor/d16e13</rdawd:P10002>
+      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/583-testited16e13"/>
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-      <rdf:subject rdf:resource="http://fakeIRI2.edu/583-testited14e13"/>
+      <rdf:subject rdf:resource="http://fakeIRI2.edu/583-testited16e13"/>
       <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
       <rdf:object>Action: This is a private 583; Uniform Resource Identifier: http://fakeIRI2.edu/fake1; Uniform Resource Identifier: http://fakeIRI2.edu/fake2; (Applies to: section)</rdf:object>
       <rdawd:P10004>Private</rdawd:P10004>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d14e26">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e26">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>MetaWor/d14e26</rdawd:P10002>
-      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/583-testited14e13"/>
+      <rdawd:P10002>MetaWor/d16e26</rdawd:P10002>
+      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/583-testited16e13"/>
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-      <rdf:subject rdf:resource="http://fakeIRI2.edu/583-testited14e13"/>
+      <rdf:subject rdf:resource="http://fakeIRI2.edu/583-testited16e13"/>
       <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
       <rdf:object>Action: This is an associated private 880; Uniform Resource Identifier: http://fakeIRI2.edu/fake1; Uniform Resource Identifier: http://fakeIRI2.edu/fake2; (Applies to: section)</rdf:object>
       <rdawd:P10004>Private</rdawd:P10004>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d14e39">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e39">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>MetaWor/d14e39</rdawd:P10002>
-      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/583-testited14e13"/>
+      <rdawd:P10002>MetaWor/d16e39</rdawd:P10002>
+      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/583-testited16e13"/>
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-      <rdf:subject rdf:resource="http://fakeIRI2.edu/583-testited14e13"/>
+      <rdf:subject rdf:resource="http://fakeIRI2.edu/583-testited16e13"/>
       <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
       <rdf:object>Action: second associated private 880; Uniform Resource Identifier: http://fakeIRI2.edu/fake1; Uniform Resource Identifier: http://fakeIRI2.edu/fake2; (Applies to: section)</rdf:object>
       <rdawd:P10004>Private</rdawd:P10004>
    </rdf:Description>
-   <!--MARC data begins-->
-   <fake:marcfield>F583 ## $6 880-02 $a 583 with a nonpublic note $x Nonpublic Latin note</fake:marcfield>
-   <!--RDA data begins-->
-   <rdf:Description rdf:about="http://fakeIRI2.edu/583-testited14e52">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/583-testited16e52">
+      <fake:marcfield>F583 ## $6 880-02 $a 583 with a nonpublic note $x Nonpublic Latin note</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ited14e52</rdaid:P40001>
+      <rdaid:P40001>ited16e52</rdaid:P40001>
       <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/583-testman"/>
       <rdaid:P40028>Action: 583 with a nonpublic note; </rdaid:P40028>
-      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d14e57"/>
+      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e57"/>
       <rdaid:P40028>Action: Associated 880 with a nonpublic note; </rdaid:P40028>
-      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d14e64"/>
+      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e64"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d14e57">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e57">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>MetaWor/d14e57</rdawd:P10002>
-      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/583-testited14e52"/>
+      <rdawd:P10002>MetaWor/d16e57</rdawd:P10002>
+      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/583-testited16e52"/>
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-      <rdf:subject rdf:resource="http://fakeIRI2.edu/583-testited14e52"/>
+      <rdf:subject rdf:resource="http://fakeIRI2.edu/583-testited16e52"/>
       <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
       <rdf:object>Nonpublic Latin note</rdf:object>
       <rdawd:P10004>Private</rdawd:P10004>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d14e64">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e64">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>MetaWor/d14e64</rdawd:P10002>
-      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/583-testited14e52"/>
+      <rdawd:P10002>MetaWor/d16e64</rdawd:P10002>
+      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/583-testited16e52"/>
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-      <rdf:subject rdf:resource="http://fakeIRI2.edu/583-testited14e52"/>
+      <rdf:subject rdf:resource="http://fakeIRI2.edu/583-testited16e52"/>
       <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
       <rdf:object>Nonpublic non-Latin note</rdf:object>
       <rdawd:P10004>Private</rdawd:P10004>
    </rdf:Description>
-   <!--MARC data begins-->
-   <fake:marcfield>F880 0# $6 583-00 $a Private 880 with no associated 583</fake:marcfield>
-   <!--RDA data begins-->
-   <rdf:Description rdf:about="http://fakeIRI2.edu/583-testited14e66">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/583-testited16e66">
+      <fake:marcfield>F880 0# $6 583-00 $a Private 880 with no associated 583</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ited14e66</rdaid:P40001>
+      <rdaid:P40001>ited16e66</rdaid:P40001>
       <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/583-testman"/>
-      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d14e66"/>
+      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e66"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d14e66">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e66">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>MetaWor/d14e66</rdawd:P10002>
-      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/583-testited14e66"/>
+      <rdawd:P10002>MetaWor/d16e66</rdawd:P10002>
+      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/583-testited16e66"/>
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-      <rdf:subject rdf:resource="http://fakeIRI2.edu/583-testited14e66"/>
+      <rdf:subject rdf:resource="http://fakeIRI2.edu/583-testited16e66"/>
       <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
       <rdf:object>Action: Private 880 with no associated 583</rdf:object>
       <rdawd:P10004>Private</rdawd:P10004>
    </rdf:Description>
-   <!--MARC data begins-->
-   <fake:marcfield>F880 ## $6 583-00 $a 880 with no associated 583 and nonpublic note $x 880 nonpublic note $5 WaU</fake:marcfield>
-   <!--RDA data begins-->
-   <rdf:Description rdf:about="http://fakeIRI2.edu/583-testited14e71">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/583-testited16e71">
+      <fake:marcfield>F880 ## $6 583-00 $a 880 with no associated 583 and nonpublic note $x 880 nonpublic note $5 WaU</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ited14e71</rdaid:P40001>
+      <rdaid:P40001>ited16e71</rdaid:P40001>
       <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/583-testman"/>
       <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/wau"/>
       <rdaid:P40028>Action: 880 with no associated 583 and nonpublic note; </rdaid:P40028>
-      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d14e76"/>
+      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e76"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d14e76">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e76">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>MetaWor/d14e76</rdawd:P10002>
-      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/583-testited14e71"/>
+      <rdawd:P10002>MetaWor/d16e76</rdawd:P10002>
+      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/583-testited16e71"/>
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-      <rdf:subject rdf:resource="http://fakeIRI2.edu/583-testited14e71"/>
+      <rdf:subject rdf:resource="http://fakeIRI2.edu/583-testited16e71"/>
       <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
       <rdf:object>880 nonpublic note</rdf:object>
       <rdawd:P10004>Private</rdawd:P10004>

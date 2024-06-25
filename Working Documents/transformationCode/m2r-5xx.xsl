@@ -31,32 +31,38 @@
     <xsl:template
         match="marc:datafield[@tag = '500'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '500-00']"
         mode="man">
-        <!-- $5 handled by item template -->
-        <xsl:if test="not(marc:subfield[@code = '5'])">
-            <rdamd:P30137>
-                <xsl:value-of select="marc:subfield[@code = 'a']"/>
-                <xsl:if test="marc:subfield[@code = '3']">
-                    <xsl:text> (Applies to: </xsl:text>
-                    <xsl:value-of select="marc:subfield[@code = '3']"/>
-                    <xsl:text>)</xsl:text>
+        <xsl:param name="baseIRI"/>
+        <xsl:call-template name="getmarc"/>
+        <xsl:choose>
+            <xsl:when test="marc:subfield[@code = '5']">
+                <rdamo:P30103 rdf:resource="{concat($baseIRI,'ite', generate-id())}"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <rdamd:P30137>
+                    <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                    <xsl:if test="marc:subfield[@code = '3']">
+                        <xsl:text> (Applies to: </xsl:text>
+                        <xsl:value-of select="marc:subfield[@code = '3']"/>
+                        <xsl:text>)</xsl:text>
+                    </xsl:if>
+                </rdamd:P30137>
+                
+                <xsl:if test="(@tag = '500') and (marc:subfield[@code = '6'])">
+                    <xsl:variable name="occNum" select="concat('500-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                    <xsl:for-each
+                        select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                        <rdamd:P30137>
+                            <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                            <xsl:if test="marc:subfield[@code = '3']">
+                                <xsl:text> (Applies to: </xsl:text>
+                                <xsl:value-of select="marc:subfield[@code = '3']"/>
+                                <xsl:text>)</xsl:text>
+                            </xsl:if>
+                        </rdamd:P30137>
+                    </xsl:for-each>
                 </xsl:if>
-            </rdamd:P30137>
-            
-            <xsl:if test="(@tag = '500') and (marc:subfield[@code = '6'])">
-                <xsl:variable name="occNum" select="concat('500-', substring(marc:subfield[@code = '6'], 5, 6))"/>
-                <xsl:for-each
-                    select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
-                    <rdamd:P30137>
-                        <xsl:value-of select="marc:subfield[@code = 'a']"/>
-                        <xsl:if test="marc:subfield[@code = '3']">
-                            <xsl:text> (Applies to: </xsl:text>
-                            <xsl:value-of select="marc:subfield[@code = '3']"/>
-                            <xsl:text>)</xsl:text>
-                        </xsl:if>
-                    </rdamd:P30137>
-                </xsl:for-each>
-            </xsl:if>
-        </xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <xsl:template
@@ -270,6 +276,14 @@
     <!-- 541 - Immediate source of acquisition note -->
     <xsl:template
         match="marc:datafield[@tag = '541'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '541-00']"
+        mode="man">
+        <xsl:param name="baseIRI"/>
+        <xsl:call-template name="getmarc"/>
+        <rdamo:P30103 rdf:resource="{concat($baseIRI,'ite', generate-id())}"/>
+    </xsl:template> 
+        
+    <xsl:template
+        match="marc:datafield[@tag = '541'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '541-00']"
         mode="ite" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="controlNumber"/>
@@ -367,6 +381,14 @@
     <!-- match on tag 561 or an unlinked 880 field where $6 = 561-00 -->
     <xsl:template
         match="marc:datafield[@tag = '561'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '561-00']"
+        mode="man">
+        <xsl:param name="baseIRI"/>
+        <xsl:call-template name="getmarc"/>
+        <rdamo:P30103 rdf:resource="{concat($baseIRI,'ite', generate-id())}"/>
+    </xsl:template> 
+    
+    <xsl:template
+        match="marc:datafield[@tag = '561'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '561-00']"
         mode="ite" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="controlNumber"/>
@@ -434,11 +456,20 @@
     <!-- 563 - Binding Information -->
     <xsl:template match="marc:datafield[@tag = '563'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '563']"
         mode="man">
-        <xsl:if test="not(marc:subfield[@code = '5'])">
-            <rdamd:P30137>
-                <xsl:call-template name="F563-xx-au3"/>
-            </rdamd:P30137>
-        </xsl:if>
+        <xsl:param name="baseIRI"/>
+        <xsl:call-template name="getmarc"/>
+        <xsl:choose>
+            <xsl:when test="marc:subfield[@code = '5']">
+                <xsl:if test=".[@tag = '563'] or .[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '563-00']">
+                    <rdamo:P30103 rdf:resource="{concat($baseIRI,'ite', generate-id())}"/>
+                </xsl:if>
+            </xsl:when>
+            <xsl:otherwise>
+                <rdamd:P30137>
+                    <xsl:call-template name="F563-xx-au3"/>
+                </rdamd:P30137>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '563'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '563-00']"
@@ -456,7 +487,7 @@
                 <rdaid:P40028>
                     <xsl:call-template name="F563-xx-au3"/>
                 </rdaid:P40028>
-                <xsl:if test="marc:subfield[@code = '6'] and @code = '563'">
+                <xsl:if test="marc:subfield[@code = '6'] and @tag = '563'">
                     <xsl:variable name="occNum" select="substring(marc:subfield[@code = '6'], 5, 6)"/>
                     <xsl:for-each
                         select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 5, 6) = $occNum]">
@@ -513,6 +544,13 @@
     </xsl:template>
     
     <!-- 583 - Action Note -->
+    <xsl:template match="marc:datafield[@tag = '583'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '583-00']"
+        mode="man">
+        <xsl:param name="baseIRI"/>
+        <xsl:call-template name="getmarc"/>
+        <rdamo:P30103 rdf:resource="{concat($baseIRI,'ite', generate-id())}"/>
+    </xsl:template>
+    
     <xsl:template match="marc:datafield[@tag = '583'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '583-00']" 
         mode="ite" expand-text="yes">
         <xsl:param name="baseIRI"/>
@@ -642,16 +680,25 @@
     <xsl:template
         match="marc:datafield[@tag = '585'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '585']"
         mode="man" expand-text="yes">
+        <xsl:param name="baseIRI"/>
         <xsl:call-template name="getmarc"/>
-        <xsl:if test="not(marc:subfield[@code = '5'])">
-            <rdamd:P30137>
-                <xsl:text>Exhibition note: {marc:subfield[@code = 'a']}</xsl:text>
-                <xsl:if test="marc:subfield[@code = '3']">
-                    <xsl:text> (Applies to: {marc:subfield[@code = '3']})</xsl:text>
+        <xsl:choose>
+            <xsl:when test="marc:subfield[@code = '5']">
+                <xsl:if test=".[@tag = '585'] or .[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '585-00']">
+                    <rdamo:P30103 rdf:resource="{concat($baseIRI,'ite', generate-id())}"/>
                 </xsl:if>
-            </rdamd:P30137>
-        </xsl:if>
+            </xsl:when>
+            <xsl:otherwise>
+                <rdamd:P30137>
+                    <xsl:text>Exhibition note: {marc:subfield[@code = 'a']}</xsl:text>
+                    <xsl:if test="marc:subfield[@code = '3']">
+                        <xsl:text> (Applies to: {marc:subfield[@code = '3']})</xsl:text>
+                    </xsl:if>
+                </rdamd:P30137>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
+    
     <xsl:template match="marc:datafield[@tag = '585'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '585-00']" 
         mode="ite" expand-text="yes">
         <xsl:param name="baseIRI"/>

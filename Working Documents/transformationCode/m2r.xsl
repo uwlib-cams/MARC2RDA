@@ -124,7 +124,9 @@
         <rdf:Description rdf:about="{concat($baseIRI,'man')}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
             <rdamo:P30139 rdf:resource="{concat($baseIRI,'exp')}"/>
-            <xsl:apply-templates select="*" mode="man"/>
+            <xsl:apply-templates select="*" mode="man">
+                <xsl:with-param name="baseIRI" select="$baseIRI"/>
+            </xsl:apply-templates>
         </rdf:Description>
         
         <!-- Items, nomens, metadata works, and agents are generated as needed

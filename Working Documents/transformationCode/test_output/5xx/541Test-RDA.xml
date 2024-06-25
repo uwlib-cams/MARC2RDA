@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
          xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
          xmlns:rdaa="http://rdaregistry.info/Elements/a/"
          xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
          xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
@@ -16,6 +17,9 @@
          xmlns:rdan="http://rdaregistry.info/Elements/n/"
          xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
          xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
          xmlns:rdaw="http://rdaregistry.info/Elements/w/"
          xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
          xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
@@ -35,91 +39,90 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/541-testman">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/541-testexp"/>
+      <fake:marcfield>F541 ## $c Purchase; $a Richard Sasaki; $d 2011; $e MS 2011-22.</fake:marcfield>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/541-testited16e6"/>
+      <fake:marcfield>F541 ## $c Gift of  $a Charles E. Rosenberg $d August 2017 $5 PPAmP</fake:marcfield>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/541-testited16e15"/>
+      <fake:marcfield>F541 0# $3 Diary $a Buckingham Books $b 8058 Stone Bridge Road, Greencastle, PA, 17225; $c Purchase; $d 20181220; $h $1,875.</fake:marcfield>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/541-testited16e25"/>
+      <fake:marcfield>F541 0# $6 880-01 $a 541-Some Latin script.</fake:marcfield>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/541-testited16e39"/>
+      <fake:marcfield>F880 0# $6 541-00 $a Unlinked 880 for 541</fake:marcfield>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/541-testited16e49"/>
    </rdf:Description>
-   <!--MARC data begins-->
-   <fake:marcfield>F541 ## $c Purchase; $a Richard Sasaki; $d 2011; $e MS 2011-22.</fake:marcfield>
-   <!--RDA data begins-->
-   <rdf:Description rdf:about="http://fakeIRI2.edu/541-testited14e6">
-      <rdaid:P40001>ited14e6</rdaid:P40001>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/541-testited16e6">
+      <fake:marcfield>F541 ## $c Purchase; $a Richard Sasaki; $d 2011; $e MS 2011-22.</fake:marcfield>
+      <rdaid:P40001>ited16e6</rdaid:P40001>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
       <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/541-testman"/>
       <rdaid:P40050>Method of acquisition: Purchase;; Source of acquisition: Richard Sasaki;; Date of acquisition: 2011;; Accession number: MS 2011-22.</rdaid:P40050>
    </rdf:Description>
-   <!--MARC data begins-->
-   <fake:marcfield>F541 ## $c Gift of  $a Charles E. Rosenberg $d August 2017 $5 PPAmP</fake:marcfield>
-   <!--RDA data begins-->
-   <rdf:Description rdf:about="http://fakeIRI2.edu/541-testited14e15">
-      <rdaid:P40001>ited14e15</rdaid:P40001>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/541-testited16e15">
+      <fake:marcfield>F541 ## $c Gift of  $a Charles E. Rosenberg $d August 2017 $5 PPAmP</fake:marcfield>
+      <rdaid:P40001>ited16e15</rdaid:P40001>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
       <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/541-testman"/>
-      <rdaio:P40161 xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
-                    rdf:resource="http://marc2rda.edu/fake/colMan/ppamp"/>
+      <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/ppamp"/>
       <rdaid:P40050>Method of acquisition: Gift of ; Source of acquisition: Charles E. Rosenberg; Date of acquisition: August 2017</rdaid:P40050>
    </rdf:Description>
-   <!--MARC data begins-->
-   <fake:marcfield>F541 0# $3 Diary $a Buckingham Books $b 8058 Stone Bridge Road, Greencastle, PA, 17225; $c Purchase; $d 20181220; $h $1,875.</fake:marcfield>
-   <!--RDA data begins-->
-   <rdf:Description rdf:about="http://fakeIRI2.edu/541-testited14e25">
-      <rdaid:P40001>ited14e25</rdaid:P40001>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/541-testited16e25">
+      <fake:marcfield>F541 0# $3 Diary $a Buckingham Books $b 8058 Stone Bridge Road, Greencastle, PA, 17225; $c Purchase; $d 20181220; $h $1,875.</fake:marcfield>
+      <rdaid:P40001>ited16e25</rdaid:P40001>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
       <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/541-testman"/>
-      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d14e25"/>
+      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e25"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d14e25">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e25">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>MetaWor/d14e25</rdawd:P10002>
-      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/541-testited14e25"/>
+      <rdawd:P10002>MetaWor/d16e25</rdawd:P10002>
+      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/541-testited16e25"/>
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-      <rdf:subject rdf:resource="http://fakeIRI2.edu/541-testited14e25"/>
+      <rdf:subject rdf:resource="http://fakeIRI2.edu/541-testited16e25"/>
       <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
       <rdf:object>Source of acquisition: Buckingham Books; Address: 8058 Stone Bridge Road, Greencastle, PA, 17225;; Method of acquisition: Purchase;; Date of acquisition: 20181220;; Purchase price: $1,875. (Applies to: Diary)</rdf:object>
       <rdawd:P10004>Private</rdawd:P10004>
    </rdf:Description>
-   <!--MARC data begins-->
-   <fake:marcfield>F541 0# $6 880-01 $a 541-Some Latin script.</fake:marcfield>
-   <!--RDA data begins-->
-   <rdf:Description rdf:about="http://fakeIRI2.edu/541-testited14e39">
-      <rdaid:P40001>ited14e39</rdaid:P40001>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/541-testited16e39">
+      <fake:marcfield>F541 0# $6 880-01 $a 541-Some Latin script.</fake:marcfield>
+      <rdaid:P40001>ited16e39</rdaid:P40001>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
       <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/541-testman"/>
-      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d14e39"/>
-      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d14e44"/>
+      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e39"/>
+      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e44"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d14e39">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e39">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>MetaWor/d14e39</rdawd:P10002>
-      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/541-testited14e39"/>
+      <rdawd:P10002>MetaWor/d16e39</rdawd:P10002>
+      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/541-testited16e39"/>
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-      <rdf:subject rdf:resource="http://fakeIRI2.edu/541-testited14e39"/>
+      <rdf:subject rdf:resource="http://fakeIRI2.edu/541-testited16e39"/>
       <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
       <rdf:object>Source of acquisition: 541-Some Latin script.</rdf:object>
       <rdawd:P10004>Private</rdawd:P10004>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d14e44">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e44">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>MetaWor/d14e44</rdawd:P10002>
-      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/541-testited14e39"/>
+      <rdawd:P10002>MetaWor/d16e44</rdawd:P10002>
+      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/541-testited16e39"/>
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-      <rdf:subject rdf:resource="http://fakeIRI2.edu/541-testited14e39"/>
+      <rdf:subject rdf:resource="http://fakeIRI2.edu/541-testited16e39"/>
       <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
       <rdf:object>Source of acquisition: 880-Some non-Latin script.</rdf:object>
       <rdawd:P10004>Private</rdawd:P10004>
    </rdf:Description>
-   <!--MARC data begins-->
-   <fake:marcfield>F880 0# $6 541-00 $a Unlinked 880 for 541</fake:marcfield>
-   <!--RDA data begins-->
-   <rdf:Description rdf:about="http://fakeIRI2.edu/541-testited14e49">
-      <rdaid:P40001>ited14e49</rdaid:P40001>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/541-testited16e49">
+      <fake:marcfield>F880 0# $6 541-00 $a Unlinked 880 for 541</fake:marcfield>
+      <rdaid:P40001>ited16e49</rdaid:P40001>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
       <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/541-testman"/>
-      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d14e49"/>
+      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e49"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d14e49">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e49">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>MetaWor/d14e49</rdawd:P10002>
-      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/541-testited14e49"/>
+      <rdawd:P10002>MetaWor/d16e49</rdawd:P10002>
+      <rdawo:P10616 rdf:resource="http://fakeIRI2.edu/541-testited16e49"/>
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-      <rdf:subject rdf:resource="http://fakeIRI2.edu/541-testited14e49"/>
+      <rdf:subject rdf:resource="http://fakeIRI2.edu/541-testited16e49"/>
       <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
       <rdf:object>Source of acquisition: Unlinked 880 for 541</rdf:object>
       <rdawd:P10004>Private</rdawd:P10004>
