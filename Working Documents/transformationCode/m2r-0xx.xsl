@@ -21,9 +21,12 @@
     xmlns:rdan="http://rdaregistry.info/Elements/n/"
     xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
     xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
-    xmlns:fake="http://fakePropertiesForDemo" exclude-result-prefixes="marc ex" version="3.0">
-    <xsl:import href="getmarc.xsl"/>
+    xmlns:fake="http://fakePropertiesForDemo" xmlns:uwf="http://universityOfWashington/functions"
+    exclude-result-prefixes="marc ex uwf" version="3.0">
+    
     <xsl:include href="m2r-0xx-named.xsl"/> 
+    <xsl:import href="getmarc.xsl"/>
+    <xsl:import href="m2r-functions.xsl"/>
     
     <xsl:template match="marc:datafield[@tag = '020'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '020-00']" 
         mode="man">
@@ -95,6 +98,47 @@
                 </xsl:call-template>
             </rdf:Description>
         </xsl:for-each>
+    </xsl:template>
+    
+    <!-- 026 - Fingerprint Identifier -->
+    <xsl:template match="marc:datafield[@tag = '026'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '026']"
+        mode="man">
+        <xsl:param name="baseIRI"/>
+        <rdamo:P30296 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
+        <xsl:if test="marc:subfield[@code = '5']">
+            <rdamo:P30103 rdf:resource="{concat($baseIRI,'ite', generate-id())}"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '026'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '026']"
+        mode="nom">
+        <xsl:param name="baseIRI"/>
+        <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+            <rdano:P80003 rdf:resource="{concat($baseIRI,'man')}"/>
+            <rdand:P80068>
+                <xsl:call-template name="F026-xx-abcde"/>
+            </rdand:P80068>
+            <xsl:if test="marc:subfield[@code = '2']">
+                <xsl:copy-of select="uwf:S2Nomen(marc:subfield[@code = '2'])"/>
+            </xsl:if>
+        </rdf:Description>
+        
+    </xsl:template>
+    <xsl:template match="marc:datafield[@tag = '026'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '026']"
+        mode="ite" expand-text="yes">
+        <xsl:param name="baseIRI"/>
+        <xsl:param name="controlNumber"/>
+        <xsl:variable name="genID" select="generate-id()"/>
+        <xsl:if test="marc:subfield[@code = '5']">
+            <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
+                <xsl:call-template name="getmarc"/>
+                <rdaid:P40001>{concat($controlNumber, 'ite', $genID)}</rdaid:P40001>
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+                <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
+                <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>
+            </rdf:Description>
+        </xsl:if>
     </xsl:template>
     
     <!-- 027 - Standard technical report number -->
@@ -268,7 +312,8 @@
             </xsl:for-each>
         </rdf:Description>
     </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '074']" mode="nom" expand-text="yes">
+    <xsl:template match="marc:datafield[@tag = '074']" 
+        mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:variable name="genID" select="generate-id()"/>
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">

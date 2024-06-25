@@ -20,6 +20,9 @@
     xmlns:rdaa="http://rdaregistry.info/Elements/a/"
     xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
     xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+    xmlns:rdan="http://rdaregistry.info/Elements/n/"
+    xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+    xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
     xmlns:fake="http://fakePropertiesForDemo"
     xmlns:uwf="http://universityOfWashington/functions"
     xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
@@ -29,6 +32,7 @@
     <xsl:variable name="lookupDoc" select="document('lookup/$5-preprocessedRDA.xml')"/>
     <xsl:variable name="locSubjectSchemesDoc" select="document('https://id.loc.gov/vocabulary/subjectSchemes.rdf')"/>
     <xsl:variable name="locGenreFormSchemesDoc" select="document('https://id.loc.gov/vocabulary/genreFormSchemes.rdf')"/>
+    <xsl:variable name="locFingerprintSchemesDoc" select="document('https://id.loc.gov/vocabulary/fingerprintschemes.rdf')"/>
     
     <xsl:key name="normCode" match="rdf:Description[rdaad:P50006]" use="rdaad:P50006"/>
     <xsl:key name="schemeKey" match="madsrdf:hasMADSSchemeMember" use="madsrdf:Authority/@rdf:about"/>
@@ -132,6 +136,22 @@
         <xsl:comment>Handle $2 here when decision is made</xsl:comment>
     </xsl:function>
     
+    <xsl:function name="uwf:S2Nomen" expand-text="yes">
+        <xsl:param name="code2"/>
+        <xsl:choose>
+            <xsl:when test="$locFingerprintSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/fingerprintschemes/', lower-case($code2)))">
+                <rdan:P80069>
+                    <xsl:attribute name="rdf:resource">
+                        <xsl:value-of select="concat('http://id.loc.gov/vocabulary/fingerprintschemes/', lower-case($code2))"/>
+                    </xsl:attribute>
+                </rdan:P80069>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:comment>$2 value of {$code2} has been lost</xsl:comment>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
     <xsl:function name="uwf:S2lookup" expand-text="true">
         <xsl:param name="code2"/>
         <xsl:choose>
@@ -146,7 +166,7 @@
                 </xsl:attribute>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:comment>EXCEPTION: $2 value of {$code2} has been lost</xsl:comment>
+                <xsl:comment>$2 value of {$code2} has been lost</xsl:comment>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>

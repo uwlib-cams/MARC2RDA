@@ -23,6 +23,8 @@
     xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
     xmlns:fake="http://fakePropertiesForDemo" exclude-result-prefixes="marc ex" version="3.0">
     
+    <!-- handle a $6 from the context of the marc:datafield 
+        i.e. the $6 is a child of the context node -->
     <xsl:template name="X00-xx-6-nomen-child" expand-text="yes">
         <xsl:param name="fieldTag"/>
         <xsl:param name="mainSubfield"/>
@@ -39,6 +41,8 @@
         </xsl:if>
     </xsl:template>
     
+    <!-- handle a $6 from the context of a marc:subfield within the marc:datafield 
+        i.e. the $6 is a sibling of the context node -->
     <xsl:template name="X00-xx-6-nomen-sibling" expand-text="yes">
         <xsl:param name="fieldTag"/>
         <xsl:param name="mainSubfield"/>
@@ -53,5 +57,29 @@
                 </xsl:if>
             </xsl:for-each>
         </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F026-xx-abcde" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
+            | marc:subfield[@code = 'd'] | marc:subfield[@code = 'e']">
+            <xsl:if test="@code = 'a'">
+                <xsl:text>First and second groups of characters: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'b'">
+                <xsl:text>Third and fourth groups of characters: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'c'">
+                <xsl:text>Date: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'd'">
+                <xsl:text>Number of volume or part: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'e'">
+                <xsl:text>Unparsed fingerprint: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="position() != last()">
+                <xsl:text>; </xsl:text>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
 </xsl:stylesheet>
