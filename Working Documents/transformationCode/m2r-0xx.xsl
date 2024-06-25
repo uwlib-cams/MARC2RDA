@@ -189,38 +189,41 @@
         </rdf:Description>
     </xsl:template>
     
+    <!-- 030 - CODEN Designation -->
     
-    <xsl:template match="marc:datafield[@tag = '030']" mode="wor">
+    <xsl:template match="marc:datafield[@tag = '030']" 
+        mode="wor" expand-text="yes">
         <xsl:call-template name="getmarc"/>
-        <!-- subfields not coded: $6 $8 -->
-        <xsl:if test="matches(marc:subfield[@code = 'a'], '^[A-Z]')">
-            <rdawd:P10002>
-                <xsl:value-of select="concat('(CODEN)', marc:subfield[@code = 'a'])"/>
-            </rdawd:P10002>
-        </xsl:if>
-        <xsl:for-each select="marc:subfield[@code = 'z']">
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
             <xsl:if test="matches(., '^[A-Z]')">
-                <rdawd:P10002>
-                    <xsl:value-of select="concat('(Canceled/invalid CODEN)', .)"/>
-                </rdawd:P10002>
+                <rdawd:P10002 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '030']" mode="man">
+    <xsl:template match="marc:datafield[@tag = '030']" 
+        mode="man">
         <xsl:call-template name="getmarc"/>
-        <xsl:if test="matches(marc:subfield[@code = 'a'], '^[0-9]')">
-            <rdamd:P30004>
-                <xsl:value-of select="concat('(CODEN)', marc:subfield[@code = 'a'])"/>
-            </rdamd:P30004>
-        </xsl:if>
-        <xsl:for-each select="marc:subfield[@code = 'z']">
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
             <xsl:if test="matches(., '^[0-9]')">
-                <rdamd:P30004>
-                    <xsl:value-of select="concat('(Canceled/invalid CODEN)', .)"/>
-                </rdamd:P30004>
+                <rdamd:P30004 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
+    <xsl:template match="marc:datafield[@tag = '030']"
+        mode="nom">
+        <xsl:param name="baseIRI"/>
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
+            <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                <rdand:P80068><xsl:value-of select="."/></rdand:P80068>
+                <rdand:P80069>CODEN</rdand:P80069>
+                <xsl:if test="@code = 'z'">
+                    <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+                </xsl:if>
+            </rdf:Description>
+        </xsl:for-each>
+    </xsl:template>
+    
     <xsl:template match="marc:datafield[@tag = '043']" mode="wor" expand-text="true">
         <xsl:call-template name="getmarc"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
