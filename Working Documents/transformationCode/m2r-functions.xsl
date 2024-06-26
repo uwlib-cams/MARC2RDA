@@ -219,8 +219,9 @@
     
     <xsl:function name="uwf:stripEndPunctuation">
         <xsl:param name="string"/>
-            <xsl:value-of select="substring($string, 1, string-length($string) - 1)"/>
-            <xsl:value-of select="translate(substring($string, string-length($string)), ',', '')"/>
+            <xsl:variable name="normalString" select="normalize-space($string)"/>
+            <xsl:value-of select="substring($normalString, 1, string-length($normalString) - 1)"/>
+            <xsl:value-of select="translate(substring($normalString, string-length($normalString)), ',', '')"/>
     </xsl:function>
     
 </xsl:stylesheet>
