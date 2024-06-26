@@ -100,7 +100,35 @@
     <xsl:function name="uwf:agentIRI">
         <xsl:param name="field"/>
         <xsl:variable name="ap" select="string-join(uwf:agentAccessPoint($field))"/> 
-        <xsl:value-of select="concat('http://marc2rda.edu/agent/', encode-for-uri(translate($ap, ' ', '')))"/>
+        <xsl:choose>
+            <!-- If $1, return value of $1, otherwise construct an IRI based on the access point -->
+            <xsl:when test="$field/marc:subfield[@code = '1']">
+                <xsl:value-of select="$field/marc:subfield[@code = '1']"/>
+            </xsl:when>
+            <!-- If $0 or $2, it's authorized, construct an IRI from authorized access point -->
+            <xsl:when test="$field/marc:subfield[@code = '0'] or $field/marc:subfield[@code = '2']">
+                <xsl:value-of select="concat('http://marc2rda.edu/agent/', encode-for-uri(translate($ap, ' ', '')))"/>
+            </xsl:when>
+            <!-- otherwise it's an opaque IRI to avoid conflating different agents under one IRI -->
+            <xsl:otherwise>
+                <xsl:value-of select="'http://marc2rda.edu/agent/'||generate-id($field)"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
+    <xsl:function name="uwf:agentNomenIRI">
+        <xsl:param name="field"/>
+        <xsl:variable name="ap" select="string-join(uwf:agentAccessPoint($field))"/> 
+        <xsl:choose>
+            <!-- If $0 or $1 or $2, it's authorized, construct an IRI from authorized access point -->
+            <xsl:when test="$field/marc:subfield[@code = '1'] or $field/marc:subfield[@code = '0'] or $field/marc:subfield[@code = '2']">
+                <xsl:value-of select="concat('http://marc2rda.edu/fake/nom/', encode-for-uri(translate($ap, ' ', '')))"/>
+            </xsl:when>
+            <!-- otherwise it's an opaque IRI to avoid conflating different agents under one IRI -->
+            <xsl:otherwise>
+                <xsl:value-of select="'http://marc2rda.edu/agent/'||generate-id($field)"/>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:function>
     
     <xsl:function name="uwf:agentAccessPoint" expand-text="true">

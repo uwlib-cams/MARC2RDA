@@ -21,22 +21,20 @@
     xmlns:rdan="http://rdaregistry.info/Elements/n/"
     xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
     xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
-    xmlns:uwf="http://universityOfWashington/functions" 
-    xmlns:fake="http://fakePropertiesForDemo"
-    xmlns:uwmisc="http://uw.edu/all-purpose-namespace/"
-    exclude-result-prefixes="marc ex uwf uwmisc" version="3.0">
-    
+    xmlns:uwf="http://universityOfWashington/functions" xmlns:fake="http://fakePropertiesForDemo"
+    xmlns:uwmisc="http://uw.edu/all-purpose-namespace/" exclude-result-prefixes="marc ex uwf uwmisc"
+    version="3.0">
     <xsl:include href="m2r-relators.xsl"/>
     <xsl:include href="getmarc.xsl"/>
-
     <!-- field level templates - wor, exp, man, ite -->
-    <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" 
-        mode = "wor">
-        <xsl:call-template name="getmarc"/>
+    <xsl:template
+        match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']"
+        mode="wor">
         <xsl:choose>
-            <xsl:when test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
+            <xsl:when
+                test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
                 <xsl:choose>
-                    <xsl:when test=" @tag = '100' or @tag = '110' or @tag = '111'">
+                    <xsl:when test="@tag = '100' or @tag = '110' or @tag = '111'">
                         <xsl:call-template name="handle1XXNoRelator">
                             <xsl:with-param name="domain" select="'work'"/>
                         </xsl:call-template>
@@ -51,14 +49,14 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    
-    <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" 
-        mode = "exp">
-        <xsl:call-template name="getmarc"/>
+    <xsl:template
+        match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']"
+        mode="exp">
         <xsl:choose>
-            <xsl:when test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
+            <xsl:when
+                test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
                 <xsl:choose>
-                    <xsl:when test=" @tag = '100' or @tag = '110' or @tag = '111'">
+                    <xsl:when test="@tag = '100' or @tag = '110' or @tag = '111'">
                         <xsl:call-template name="handle1XXNoRelator">
                             <xsl:with-param name="domain" select="'expression'"/>
                         </xsl:call-template>
@@ -73,22 +71,24 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    
-    <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" 
-        mode = "man">
+    <xsl:template
+        match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']"
+        mode="man">
         <xsl:param name="baseIRI"/>
-        <xsl:call-template name="getmarc"/>
         <xsl:choose>
-            <xsl:when test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
+            <xsl:when
+                test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
                 <xsl:choose>
-                    <xsl:when test=" @tag = '100' or @tag = '110' or @tag = '111'">
+                    <xsl:when test="@tag = '100' or @tag = '110' or @tag = '111'">
                         <xsl:call-template name="handle1XXNoRelator">
                             <xsl:with-param name="domain" select="'manifestation'"/>
                         </xsl:call-template>
                     </xsl:when>
                     <xsl:otherwise>
                         <!-- default -->
-                        <xsl:copy-of select="uwf:defaultProp(., uwf:fieldType(@tag), 'manifestation', uwf:agentIRI(.))"/>
+                        <xsl:copy-of
+                            select="uwf:defaultProp(., uwf:fieldType(@tag), 'manifestation', uwf:agentIRI(.))"
+                        />
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
@@ -98,13 +98,13 @@
                 </xsl:call-template>
             </xsl:otherwise>
         </xsl:choose>
-        
         <!-- check if an item will be minted -->
         <xsl:variable name="testItem">
             <xsl:choose>
-                <xsl:when test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
+                <xsl:when
+                    test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
                     <xsl:choose>
-                        <xsl:when test=" @tag = '100' or @tag = '110' or @tag = '111'">
+                        <xsl:when test="@tag = '100' or @tag = '110' or @tag = '111'">
                             <xsl:call-template name="handle1XXNoRelator">
                                 <xsl:with-param name="domain" select="'item'"/>
                             </xsl:call-template>
@@ -123,16 +123,17 @@
             <rdamo:P30103 rdf:resource="{concat($baseIRI,'ite', generate-id())}"/>
         </xsl:if>
     </xsl:template>
-    
-    <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" 
-        mode = "ite" expand-text="true">
+    <xsl:template
+        match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']"
+        mode="ite" expand-text="true">
         <xsl:param name="baseIRI"/>
         <xsl:param name="controlNumber"/>
         <xsl:variable name="testItem">
             <xsl:choose>
-                <xsl:when test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
+                <xsl:when
+                    test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
                     <xsl:choose>
-                        <xsl:when test=" @tag = '100' or @tag = '110' or @tag = '111'">
+                        <xsl:when test="@tag = '100' or @tag = '110' or @tag = '111'">
                             <xsl:call-template name="handle1XXNoRelator">
                                 <xsl:with-param name="domain" select="'item'"/>
                             </xsl:call-template>
@@ -151,17 +152,15 @@
         <xsl:if test="$testItem/node() or $testItem/@*">
             <xsl:variable name="genID" select="generate-id()"/>
             <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
-                <xsl:call-template name="getmarc"/>
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                 <rdaid:P40001>{concat($controlNumber,'ite',$genID)}</rdaid:P40001>
                 <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
                 <xsl:copy-of select="$testItem"/>
             </rdf:Description>
         </xsl:if>
-        
     </xsl:template>
-    
-    <xsl:template match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']" 
+    <xsl:template
+        match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']"
         mode="age">
         <xsl:param name="baseIRI"/>
         <rdf:Description rdf:about="{uwf:agentIRI(.)}">
@@ -171,25 +170,68 @@
                     <xsl:choose>
                         <xsl:when test="@ind1 = '0' or @ind1 = '1' or @ind1 = '2'">
                             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+                            <xsl:choose>
+                                <xsl:when test="marc:subfield[@code = '0'] or marc:subfield[@code = '1'] or marc:subfield[@code = '2']">
+                                    <rdaao:P50411 rdf:resource="{uwf:agentNomenIRI(.)}"/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <rdaad:P50377>
+                                        <xsl:value-of select="uwf:agentAccessPoint(.)"/>
+                                    </rdaad:P50377>
+                                </xsl:otherwise>
+                            </xsl:choose>
                         </xsl:when>
                         <xsl:when test="@ind1 = '3'">
                             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10008"/>
+                            <xsl:choose>
+                                <xsl:when test="marc:subfield[@code = '0'] or marc:subfield[@code = '1'] or marc:subfield[@code = '2']">
+                                    <rdaao:P50409 rdf:resource="{uwf:agentNomenIRI(.)}"/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <rdaad:P50376>
+                                        <xsl:value-of select="uwf:agentAccessPoint(.)"/>
+                                    </rdaad:P50376>
+                                </xsl:otherwise>
+                            </xsl:choose>
                         </xsl:when>
                         <xsl:otherwise/>
                     </xsl:choose>
                 </xsl:when>
                 <xsl:when test="@tag = '110' or @tag = '111' or @tag = '710' or @tag = '711'">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+                    <xsl:choose>
+                        <xsl:when test="marc:subfield[@code = '0'] or marc:subfield[@code = '1'] or marc:subfield[@code = '2']">
+                            <rdaao:P50407 rdf:resource="{uwf:agentNomenIRI(.)}"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <rdaad:P50375>
+                                <xsl:value-of select="uwf:agentAccessPoint(.)"/>
+                            </rdaad:P50375>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </xsl:when>
                 <xsl:when test="@tag = '720'">
-                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10002"/>
+                    <xsl:choose>
+                        <xsl:when test="@ind1 = '1'">
+                            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+                            <rdaad:P50377>
+                                <xsl:value-of select="uwf:agentAccessPoint(.)"/>
+                            </rdaad:P50377>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10002"/>
+                            <rdaad:P50373>
+                                <xsl:value-of select="uwf:agentAccessPoint(.)"/>
+                            </rdaad:P50373>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </xsl:when>
             </xsl:choose>
-            <xsl:element name="rdaad:P50378"><xsl:value-of select="uwf:agentAccessPoint(.)"/></xsl:element>
             <xsl:choose>
-                <xsl:when test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
+                <xsl:when
+                    test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
                     <xsl:choose>
-                        <xsl:when test=" @tag = '100' or @tag = '110' or @tag = '111'">
+                        <xsl:when test="@tag = '100' or @tag = '110' or @tag = '111'">
                             <xsl:call-template name="handle1XXNoRelator">
                                 <xsl:with-param name="domain" select="'agent'"/>
                                 <xsl:with-param name="baseIRI" select="$baseIRI"/>
@@ -205,5 +247,36 @@
                 </xsl:otherwise>
             </xsl:choose>
         </rdf:Description>
+    </xsl:template>
+    
+    <xsl:template
+        match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']"
+        mode="nom" expand-text="yes">
+        <xsl:param name="baseIRI"/>
+        <xsl:if test="marc:subfield[@code = '0'] | marc:subfield[@code = '1'] | marc:subfield[@code = '2']">
+            <rdf:Description rdf:about="{uwf:agentNomenIRI(.)}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                <rdand:P80068>
+                    <xsl:value-of select="uwf:agentAccessPoint(.)"/>
+                </rdand:P80068>
+                <xsl:choose>
+                    <xsl:when test="@tag = '100' or @tag = '700'">
+                        <xsl:choose>
+                            <xsl:when test="@ind1 = '0' or @ind1 = '1' or @ind1 = '2'">
+                                <rdano:P80107 rdf:resource="{uwf:agentIRI(.)}"/>
+                            </xsl:when>
+                            <xsl:when test="@ind1 = '3'">
+                                <rdano:P80105 rdf:resource="{uwf:agentIRI(.)}"/>
+                            </xsl:when>
+                            <xsl:otherwise/>
+                        </xsl:choose>
+                    </xsl:when>
+                    <xsl:when test="@tag = '110' or @tag = '111' or @tag = '710' or @tag = '711'">
+                        <rdano:P80103 rdf:resource="{uwf:agentIRI(.)}"/>
+                    </xsl:when>
+                </xsl:choose>
+                <xsl:comment>Has scheme of nomen here</xsl:comment>
+            </rdf:Description>
+        </xsl:if>
     </xsl:template>
 </xsl:stylesheet>
