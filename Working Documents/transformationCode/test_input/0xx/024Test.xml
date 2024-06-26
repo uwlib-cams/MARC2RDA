@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">026-test1</marc:controlfield>
+        <marc:datafield tag="024" ind1="1" ind2=" ">
+            <marc:subfield code="z">5539143515</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="024" ind1="2" ind2=" ">
+            <marc:subfield code="a">M570406203</marc:subfield>
+            <marc:subfield code="q">score</marc:subfield>
+            <marc:subfield code="q">sewn</marc:subfield>
+            <marc:subfield code="c">EUR28.50</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="024" ind1="3" ind2=" ">
+            <marc:subfield code="a">99780449906200</marc:subfield>
+            <marc:subfield code="d">51000</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="024" ind1="4" ind2="1">
+            <marc:subfield code="a">8756-2324(198603/04)65:21.4QTP;1-E</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="024" ind1="7" ind2=" ">
+            <marc:subfield code="a">0A3200912B4A1057$</marc:subfield>
+            <marc:subfield code="2">istc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="024" ind1="8" ind2=" ">
+            <marc:subfield code="a">abcdefghi</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

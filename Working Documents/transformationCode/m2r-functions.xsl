@@ -33,6 +33,7 @@
     <xsl:variable name="locSubjectSchemesDoc" select="document('https://id.loc.gov/vocabulary/subjectSchemes.rdf')"/>
     <xsl:variable name="locGenreFormSchemesDoc" select="document('https://id.loc.gov/vocabulary/genreFormSchemes.rdf')"/>
     <xsl:variable name="locFingerprintSchemesDoc" select="document('https://id.loc.gov/vocabulary/fingerprintschemes.rdf')"/>
+    <xsl:variable name="locStandardIdSchemesDoc" select="document('https://id.loc.gov/vocabulary/identifiers.rdf')"/>
     
     <xsl:key name="normCode" match="rdf:Description[rdaad:P50006]" use="rdaad:P50006"/>
     <xsl:key name="schemeKey" match="madsrdf:hasMADSSchemeMember" use="madsrdf:Authority/@rdf:about"/>
@@ -143,6 +144,13 @@
                 <rdan:P80069>
                     <xsl:attribute name="rdf:resource">
                         <xsl:value-of select="concat('http://id.loc.gov/vocabulary/fingerprintschemes/', lower-case($code2))"/>
+                    </xsl:attribute>
+                </rdan:P80069>
+            </xsl:when>
+            <xsl:when test="$locStandardIdSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/identifiers/', lower-case($code2)))">
+                <rdan:P80069>
+                    <xsl:attribute name="rdf:resource">
+                        <xsl:value-of select="concat('http://id.loc.gov/vocabulary/identifiers/', lower-case($code2))"/>
                     </xsl:attribute>
                 </rdan:P80069>
             </xsl:when>

@@ -92,6 +92,77 @@
         </xsl:for-each>
     </xsl:template>
     
+    <!-- 024 - Other Standard Identifier -->
+    <xsl:template match="marc:datafield[@tag = '024'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '024']"
+        mode="man">
+        <xsl:call-template name="getmarc"/>
+        <xsl:choose>
+            <xsl:when test="@ind1 = '8'">
+                <xsl:if test="marc:subfield[@code = 'a']">
+                    <rdamd:P30004>
+                        <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                    </rdamd:P30004>
+                </xsl:if>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
+                    <rdamo:P30296 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
+                </xsl:for-each>
+            </xsl:otherwise>
+        </xsl:choose>
+        <xsl:if test="marc:subfield[@code = 'c']">
+            <rdamd:P30160>
+                <xsl:value-of select="marc:subfield[@code = 'c']"/>
+            </rdamd:P30160>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '024'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '024']"
+        mode="nom">
+        <xsl:param name="baseIRI"/>
+        <xsl:if test="@ind1 != '8'">
+            <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
+                <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                    <rdano:P80003 rdf:resource="{concat($baseIRI,'man')}"/>
+                    <rdand:P80068>
+                        <xsl:value-of select="."/>
+                    </rdand:P80068>
+                    <xsl:for-each select="../marc:subfield[@code = 'q']">
+                        <rdand:P80071>
+                            <xsl:value-of select="."/>
+                        </rdand:P80071>
+                    </xsl:for-each>
+                    <xsl:choose>
+                        <xsl:when test="../@ind1 = '0'">
+                            <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/identifiers/isrc"/>
+                        </xsl:when>
+                        <xsl:when test="../@ind1 = '1'">
+                            <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/identifiers/upc"/>
+                        </xsl:when>
+                        <xsl:when test="../@ind1 = '2'">
+                            <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/identifiers/ismm"/>
+                        </xsl:when>
+                        <xsl:when test="../@ind1 = '3'">
+                            <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/identifiers/ean"/>
+                        </xsl:when>
+                        <xsl:when test="../@ind1 = '4'">
+                            <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/identifiers/sici"/>
+                        </xsl:when>
+                        <xsl:when test="../@ind1 = '7'">
+                            <xsl:if test="../marc:subfield[@code = '2']">
+                                <xsl:copy-of select="uwf:S2Nomen(../marc:subfield[@code = '2'])"/>
+                            </xsl:if>
+                        </xsl:when>
+                    </xsl:choose>
+                    <xsl:if test="@code = 'z'">
+                        <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+                    </xsl:if>
+                </rdf:Description>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    
     <!-- 026 - Fingerprint Identifier -->
     <xsl:template match="marc:datafield[@tag = '026'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '026']"
         mode="man">
@@ -115,8 +186,8 @@
                 <xsl:copy-of select="uwf:S2Nomen(marc:subfield[@code = '2'])"/>
             </xsl:if>
         </rdf:Description>
-        
     </xsl:template>
+    
     <xsl:template match="marc:datafield[@tag = '026'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '026']"
         mode="ite" expand-text="yes">
         <xsl:param name="baseIRI"/>
