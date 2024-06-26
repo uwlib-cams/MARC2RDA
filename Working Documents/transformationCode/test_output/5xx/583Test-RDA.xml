@@ -39,10 +39,15 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/583-testman">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/583-testexp"/>
+      <fake:marcfield>F583 ## $a This 583 has two nonpublic notes $x nonpublic note 1 $x nonpublic note 2</fake:marcfield>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/583-testited16e6"/>
+      <fake:marcfield>F583 0# $6 880-01 $a This is a private 583 $u http://fakeIRI2.edu/fake1 $u http://fakeIRI2.edu/fake2 $3 section $5 WaU</fake:marcfield>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/583-testited16e13"/>
+      <fake:marcfield>F583 ## $6 880-02 $a 583 with a nonpublic note $x Nonpublic Latin note</fake:marcfield>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/583-testited16e52"/>
+      <fake:marcfield>F880 0# $6 583-00 $a Private 880 with no associated 583</fake:marcfield>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/583-testited16e66"/>
+      <fake:marcfield>F880 ## $6 583-00 $a 880 with no associated 583 and nonpublic note $x 880 nonpublic note $5 WaU</fake:marcfield>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/583-testited16e71"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/583-testited16e6">
@@ -53,6 +58,42 @@
       <rdaid:P40028>Action: This 583 has two nonpublic notes; ; </rdaid:P40028>
       <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e9"/>
       <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e11"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/583-testited16e13">
+      <fake:marcfield>F583 0# $6 880-01 $a This is a private 583 $u http://fakeIRI2.edu/fake1 $u http://fakeIRI2.edu/fake2 $3 section $5 WaU</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdaid:P40001>ited16e13</rdaid:P40001>
+      <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/583-testman"/>
+      <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/wau"/>
+      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e13"/>
+      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e26"/>
+      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e39"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/583-testited16e52">
+      <fake:marcfield>F583 ## $6 880-02 $a 583 with a nonpublic note $x Nonpublic Latin note</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdaid:P40001>ited16e52</rdaid:P40001>
+      <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/583-testman"/>
+      <rdaid:P40028>Action: 583 with a nonpublic note; </rdaid:P40028>
+      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e57"/>
+      <rdaid:P40028>Action: Associated 880 with a nonpublic note; </rdaid:P40028>
+      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e64"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/583-testited16e66">
+      <fake:marcfield>F880 0# $6 583-00 $a Private 880 with no associated 583</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdaid:P40001>ited16e66</rdaid:P40001>
+      <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/583-testman"/>
+      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e66"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/583-testited16e71">
+      <fake:marcfield>F880 ## $6 583-00 $a 880 with no associated 583 and nonpublic note $x 880 nonpublic note $5 WaU</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdaid:P40001>ited16e71</rdaid:P40001>
+      <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/583-testman"/>
+      <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/wau"/>
+      <rdaid:P40028>Action: 880 with no associated 583 and nonpublic note; </rdaid:P40028>
+      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e76"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e9">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -73,16 +114,6 @@
       <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
       <rdf:object>nonpublic note 2</rdf:object>
       <rdawd:P10004>Private</rdawd:P10004>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/583-testited16e13">
-      <fake:marcfield>F583 0# $6 880-01 $a This is a private 583 $u http://fakeIRI2.edu/fake1 $u http://fakeIRI2.edu/fake2 $3 section $5 WaU</fake:marcfield>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ited16e13</rdaid:P40001>
-      <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/583-testman"/>
-      <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/wau"/>
-      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e13"/>
-      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e26"/>
-      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e39"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e13">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -114,16 +145,6 @@
       <rdf:object>Action: second associated private 880; Uniform Resource Identifier: http://fakeIRI2.edu/fake1; Uniform Resource Identifier: http://fakeIRI2.edu/fake2; (Applies to: section)</rdf:object>
       <rdawd:P10004>Private</rdawd:P10004>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/583-testited16e52">
-      <fake:marcfield>F583 ## $6 880-02 $a 583 with a nonpublic note $x Nonpublic Latin note</fake:marcfield>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ited16e52</rdaid:P40001>
-      <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/583-testman"/>
-      <rdaid:P40028>Action: 583 with a nonpublic note; </rdaid:P40028>
-      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e57"/>
-      <rdaid:P40028>Action: Associated 880 with a nonpublic note; </rdaid:P40028>
-      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e64"/>
-   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e57">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>MetaWor/d16e57</rdawd:P10002>
@@ -144,13 +165,6 @@
       <rdf:object>Nonpublic non-Latin note</rdf:object>
       <rdawd:P10004>Private</rdawd:P10004>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/583-testited16e66">
-      <fake:marcfield>F880 0# $6 583-00 $a Private 880 with no associated 583</fake:marcfield>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ited16e66</rdaid:P40001>
-      <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/583-testman"/>
-      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e66"/>
-   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e66">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>MetaWor/d16e66</rdawd:P10002>
@@ -160,15 +174,6 @@
       <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
       <rdf:object>Action: Private 880 with no associated 583</rdf:object>
       <rdawd:P10004>Private</rdawd:P10004>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/583-testited16e71">
-      <fake:marcfield>F880 ## $6 583-00 $a 880 with no associated 583 and nonpublic note $x 880 nonpublic note $5 WaU</fake:marcfield>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ited16e71</rdaid:P40001>
-      <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/583-testman"/>
-      <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/wau"/>
-      <rdaid:P40028>Action: 880 with no associated 583 and nonpublic note; </rdaid:P40028>
-      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e76"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e76">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>

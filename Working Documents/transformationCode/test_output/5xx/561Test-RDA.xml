@@ -62,6 +62,13 @@
       <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e9"/>
       <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e22"/>
    </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/561-testited16e35">
+      <fake:marcfield>F880 0# $6 561-00 $a Unlinked 880 for 561</fake:marcfield>
+      <rdaid:P40001>ited16e35</rdaid:P40001>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/561-testman"/>
+      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e35"/>
+   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e9">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>MetaWor/d16e9</rdawd:P10002>
@@ -81,13 +88,6 @@
       <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
       <rdf:object>880-Some non-Latin script. Additional information at: http://fakeIRI2.edu/fake1, http://fakeIRI2.edu/fake2 (Applies to: 880-$3)</rdf:object>
       <rdawd:P10004>Private</rdawd:P10004>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/561-testited16e35">
-      <fake:marcfield>F880 0# $6 561-00 $a Unlinked 880 for 561</fake:marcfield>
-      <rdaid:P40001>ited16e35</rdaid:P40001>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/561-testman"/>
-      <rdaio:P40164 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e35"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e35">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>

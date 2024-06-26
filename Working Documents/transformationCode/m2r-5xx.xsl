@@ -204,7 +204,8 @@
     </xsl:template>
     
     <!-- 526 - Study Program Information Note -->
-    <xsl:template match="marc:datafield[@tag = '526']" mode="man">
+    <xsl:template match="marc:datafield[@tag = '526']" 
+        mode="man">
         <xsl:call-template name="getmarc"/>
         <xsl:call-template name="F526-xx-iabcdz5"/>
         <!-- iterate through each x (nonpublic note) subfield -->
@@ -214,7 +215,8 @@
                 rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"/>
         </xsl:for-each>
     </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '526']" mode="metaWor">
+    <xsl:template match="marc:datafield[@tag = '526']" 
+        mode="metaWor">
         <xsl:param name="baseIRI"/>
         <xsl:call-template name="getmarc"/>
         <!-- iterate through each x (nonpublic note) subfield -->
@@ -431,6 +433,12 @@
                 </xsl:for-each>
             </xsl:if>
         </rdf:Description>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '561'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '561-00']"
+        mode="metaWor" expand-text="yes">
+        <xsl:param name="baseIRI"/>
+        <xsl:variable name="genID" select="generate-id()"/>
         <xsl:if test="@ind1 = '0'">
             <xsl:call-template name="F561-0x">
                 <xsl:with-param name="baseIRI" select="$baseIRI"/>
@@ -608,6 +616,12 @@
                 </xsl:for-each>
             </xsl:if>
         </rdf:Description>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '583'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '583-00']" 
+        mode="metaWor" expand-text="yes">
+        <xsl:param name="baseIRI"/>
+        <xsl:variable name="genID" select="generate-id()"/>
         <xsl:if test="@ind1 != '0'">
             <!-- for each sets same context as above, ensures id value is the same -->
             <xsl:for-each select="marc:subfield[@code = 'x']">
