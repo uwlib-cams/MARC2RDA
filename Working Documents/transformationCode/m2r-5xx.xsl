@@ -348,6 +348,37 @@
         </xsl:if>
     </xsl:template>
     
+    <!-- 546 - Language Note -->
+    <xsl:template
+        match="marc:datafield[@tag = '546'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '546']"
+        mode="exp" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
+        <xsl:for-each select="marc:subfield[@code = 'b']">
+            <rdaed:P20062>
+                <xsl:value-of select="."/>
+            </rdaed:P20062>
+            <xsl:if test="../marc:subfield[@code = '3']">
+                <rdaed:P20071>
+                    <xsl:text>Form of notation {.} applies to a manifestation's {../marc:subfield[@code = '3']}.</xsl:text>
+                </rdaed:P20071>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template
+        match="marc:datafield[@tag = '546'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '546']"
+        mode="man" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <rdamd:P30137>
+                <xsl:value-of select="."/>
+                <xsl:if test="../marc:subfield[@code = '3']">
+                    <xsl:text> (Applies to: {../marc:subfield[@code = '3']})</xsl:text>
+                </xsl:if>
+            </rdamd:P30137>
+        </xsl:for-each>
+    </xsl:template>
+    
     <!-- 547 - Former Title Complexity Note -->
     <xsl:template
         match="marc:datafield[@tag = '547'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '547']"
