@@ -290,6 +290,7 @@
         <xsl:param name="fieldType"/>
         <xsl:param name="domain"/>
         <xsl:param name="objIRI"/>
+        <xsl:param name="objString"/>
         <xsl:choose>
             <xsl:when test="$domain = 'manifestation'">
                 <xsl:choose>
@@ -318,14 +319,14 @@
                                 <xsl:choose>
                                     <xsl:when test="$field/@ind = '1'">
                                         <!-- person -->
-                                        <xsl:element name="{'rdamo:P30268'}">
-                                            <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
+                                        <xsl:element name="{'rdamd:P30268'}">
+                                            <xsl:copy-of select="$objString"/>
                                         </xsl:element>
                                     </xsl:when>
                                     <xsl:otherwise>
                                         <!-- agent -->
-                                        <xsl:element name="{'rdamo:P30267'}">
-                                            <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
+                                        <xsl:element name="{'rdamd:P30267'}">
+                                            <xsl:copy-of select="$objString"/>
                                         </xsl:element>
                                     </xsl:otherwise>
                                 </xsl:choose>
@@ -358,22 +359,6 @@
                                     <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
                                 </xsl:element>
                             </xsl:when>
-                            <xsl:when test="$fieldType = '720'">
-                                <xsl:choose>
-                                    <xsl:when test="$field/@ind = '1'">
-                                        <!-- person -->
-                                        <xsl:element name="{'rdaao:P50313'}">
-                                            <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
-                                        </xsl:element>
-                                    </xsl:when>
-                                    <xsl:otherwise>
-                                        <!-- agent -->
-                                        <xsl:element name="{'rdaao:P50307'}">
-                                            <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
-                                        </xsl:element>
-                                    </xsl:otherwise>
-                                </xsl:choose>
-                            </xsl:when>
                             <xsl:otherwise/>
                         </xsl:choose>
                     </xsl:when>
@@ -399,14 +384,17 @@
         <!-- IRI generated from field, this is a temporary value for now -->
         <xsl:variable name="agentIRI" select="uwf:agentIRI(.)"/>
         
+        <!-- Access point -->
+        <xsl:variable name="agentAP" select="uwf:agentAccessPoint(.)"/>
+        
         <!-- namespace generated based on domain - this gives us the object namespace -->
         <!-- are there cases where we will use a datatype instead of IRI? -->
         <xsl:variable name="ns-wemi">
             <xsl:choose>
-                <xsl:when test="starts-with($domain, 'work')">rdawo</xsl:when>
-                <xsl:when test="starts-with($domain, 'expression')">rdaeo</xsl:when>
-                <xsl:when test="starts-with($domain, 'manifestation')">rdamo</xsl:when>
-                <xsl:when test="starts-with($domain, 'item')">rdaio</xsl:when>
+                <xsl:when test="starts-with($domain, 'work')">rdaw</xsl:when>
+                <xsl:when test="starts-with($domain, 'expression')">rdae</xsl:when>
+                <xsl:when test="starts-with($domain, 'manifestation')">rdam</xsl:when>
+                <xsl:when test="starts-with($domain, 'item')">rdai</xsl:when>
                 <xsl:otherwise>namespaceError</xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
@@ -426,7 +414,7 @@
             <!-- no subfields have a match -->
             <!-- if no $4$e$j match, this needs to be a default value, there's no point doing any further lookup -->
             <xsl:when test="$anyMatch = 'DEFAULT'">
-                <xsl:copy-of select="uwf:defaultProp(., $fieldType, $domain, $agentIRI)"/>
+                <xsl:copy-of select="uwf:defaultProp(., $fieldType, $domain, $agentIRI, $agentAP)"/>
             </xsl:when>
             
             <!-- otherwise at least one does -->
@@ -435,20 +423,38 @@
                 <xsl:for-each select="marc:subfield[@code = '4']">
                     <xsl:variable name="sub4Rda" select="uwf:relatorLookupRDA('sub4KeyRda', uwf:normalize(.), $fieldType, $indValue)"/>
                     <xsl:if test="not(contains($sub4Rda, 'NO MATCH')) and $sub4Rda/uwmisc:domain = $domain">
-                        <xsl:element name="{$ns-wemi || ':' || substring($sub4Rda/uwmisc:rdaPropIri, string-length($sub4Rda/uwmisc:rdaPropIri) - 5)}">
-                            <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
-                        </xsl:element>
+                        <xsl:choose>
+                            <xsl:when test="$fieldType = '720'">
+                                <xsl:element name="{$ns-wemi || 'd:' || substring($sub4Rda/uwmisc:rdaPropIri, string-length($sub4Rda/uwmisc:rdaPropIri) - 5)}">
+                                    <xsl:copy-of select="$agentAP"/>
+                                </xsl:element>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:element name="{$ns-wemi || 'o:' || substring($sub4Rda/uwmisc:rdaPropIri, string-length($sub4Rda/uwmisc:rdaPropIri) - 5)}">
+                                    <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                </xsl:element>
+                            </xsl:otherwise>
+                        </xsl:choose>
                     </xsl:if>
                 </xsl:for-each>
                 
-                <!-- if X00, X10, or 720 and e matches rda label -->
+                <!-- if X00, or X10 and e matches rda label -->
                 <xsl:if test="$fieldType = 'X00' or $fieldType = 'X10' or $fieldType = '720'">
                     <xsl:for-each select="marc:subfield[@code = 'e']">
                         <xsl:variable name="subERda" select="uwf:relatorLookupRDA('subEKeyRda', uwf:normalize(.), $fieldType, $indValue)"/>
                         <xsl:if test="not(contains($subERda, 'NO MATCH')) and $subERda/uwmisc:domain = $domain">
-                            <xsl:element name="{$ns-wemi || ':' || substring($subERda/uwmisc:rdaPropIri, string-length($subERda/uwmisc:rdaPropIri) - 5)}">
-                                <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
-                            </xsl:element>
+                            <xsl:choose>
+                                <xsl:when test="$fieldType = '720'">
+                                    <xsl:element name="{$ns-wemi || 'd:' || substring($subERda/uwmisc:rdaPropIri, string-length($subERda/uwmisc:rdaPropIri) - 5)}">
+                                        <xsl:copy-of select="$agentAP"/>
+                                    </xsl:element>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:element name="{$ns-wemi || 'o:' || substring($subERda/uwmisc:rdaPropIri, string-length($subERda/uwmisc:rdaPropIri) - 5)}">
+                                        <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                    </xsl:element>
+                                </xsl:otherwise>
+                            </xsl:choose>
                         </xsl:if>
                     </xsl:for-each>
                 </xsl:if>
@@ -458,7 +464,7 @@
                     <xsl:for-each select="marc:subfield[@code = 'j']">
                         <xsl:variable name="subJRda" select="uwf:relatorLookupRDA('subJKeyRda', uwf:normalize(.), 'X00', $indValue)"/>
                         <xsl:if test="not(contains($subJRda, 'NO MATCH')) and $subJRda/uwmisc:domain = $domain">
-                            <xsl:element name="{$ns-wemi || ':' || substring($subJRda/uwmisc:rdaPropIri, string-length($subJRda/uwmisc:rdaPropIri) - 5)}">
+                            <xsl:element name="{$ns-wemi || 'o:' || substring($subJRda/uwmisc:rdaPropIri, string-length($subJRda/uwmisc:rdaPropIri) - 5)}">
                                 <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
                             </xsl:element>
                         </xsl:if>
@@ -476,14 +482,23 @@
                         </xsl:when>
                         <xsl:when test="contains($sub4Marc, 'DEFAULT')">
                             <!-- this means there's a match but multiple domains - we default-->
-                            <xsl:copy-of select="uwf:defaultProp(.., $fieldType, $domain, $agentIRI)"/>
+                            <xsl:copy-of select="uwf:defaultProp(.., $fieldType, $domain, $agentIRI, $agentAP)"/>
                         </xsl:when>
                         <xsl:otherwise>
                             <!-- there was a match and not multiple domains, use given RDA prop IRI from table -->
                             <xsl:if test="$sub4Marc/uwmisc:domain = $domain">
-                                <xsl:element name="{$ns-wemi || ':' || substring($sub4Marc/uwmisc:rdaPropIri, string-length($sub4Marc/uwmisc:rdaPropIri) - 5)}">
-                                    <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
-                                </xsl:element>
+                                <xsl:choose>
+                                    <xsl:when test="$fieldType = '720'">
+                                        <xsl:element name="{$ns-wemi || 'd:' || substring($sub4Marc/uwmisc:rdaPropIri, string-length($sub4Marc/uwmisc:rdaPropIri) - 5)}">
+                                            <xsl:copy-of select="$agentAP"/>
+                                        </xsl:element>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:element name="{$ns-wemi || 'o:' || substring($sub4Marc/uwmisc:rdaPropIri, string-length($sub4Marc/uwmisc:rdaPropIri) - 5)}">
+                                            <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                        </xsl:element>
+                                    </xsl:otherwise>
+                                </xsl:choose>
                             </xsl:if>
                         </xsl:otherwise>
                     </xsl:choose>
@@ -498,14 +513,23 @@
                         </xsl:when>
                         <xsl:when test="contains($subEMarc, 'DEFAULT')">
                             <!-- this means there's a match but multiple domains - we default-->
-                            <xsl:copy-of select="uwf:defaultProp(.., $fieldType, $domain, $agentIRI)"/>
+                            <xsl:copy-of select="uwf:defaultProp(.., $fieldType, $domain, $agentIRI, $agentAP)"/>
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:if test="$subEMarc/uwmisc:domain = $domain">
                             <!-- there was a match and not multiple domains, use given RDA prop IRI from table -->
-                             <xsl:element name="{$ns-wemi || ':' || substring($subEMarc/uwmisc:rdaPropIri, string-length($subEMarc/uwmisc:rdaPropIri) - 5)}">
-                                 <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
-                             </xsl:element>
+                                <xsl:choose>
+                                    <xsl:when test="$fieldType = '720'">
+                                        <xsl:element name="{$ns-wemi || 'd:' || substring($subEMarc/uwmisc:rdaPropIri, string-length($subEMarc/uwmisc:rdaPropIri) - 5)}">
+                                            <xsl:copy-of select="$agentAP"/>
+                                        </xsl:element>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:element name="{$ns-wemi || 'o:' || substring($subEMarc/uwmisc:rdaPropIri, string-length($subEMarc/uwmisc:rdaPropIri) - 5)}">
+                                            <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                        </xsl:element>
+                                    </xsl:otherwise>
+                                </xsl:choose>
                             </xsl:if>
                         </xsl:otherwise>
                     </xsl:choose>
@@ -521,12 +545,12 @@
                             </xsl:when>
                             <xsl:when test="contains($subJMarc, 'DEFAULT')">
                                 <!-- this means there's a match but multiple domains - we default-->
-                                <xsl:copy-of select="uwf:defaultProp(.., $fieldType, $domain, $agentIRI)"/>
+                                <xsl:copy-of select="uwf:defaultProp(.., $fieldType, $domain, $agentIRI, $agentAP)"/>
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:if test="$subJMarc/uwmisc:domain = $domain">
                                     <!-- there was a match and not multiple domains, use given RDA prop IRI from table -->
-                                    <xsl:element name="{$ns-wemi || ':' || substring($subJMarc/uwmisc:rdaPropIri, string-length($subJMarc/uwmisc:rdaPropIri) - 5)}">
+                                    <xsl:element name="{$ns-wemi || 'o:' || substring($subJMarc/uwmisc:rdaPropIri, string-length($subJMarc/uwmisc:rdaPropIri) - 5)}">
                                         <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
                                     </xsl:element>
                                 </xsl:if>
@@ -549,7 +573,7 @@
         <xsl:variable name="iteIRI" select="concat($baseIRI, 'ite', generate-id())"/>
         
         <!-- namespace generated based on domain - this gives us the object namespace -->
-        <xsl:variable name="ns-wemi" select="'rdaao'"/>
+        <xsl:variable name="ns-wemi" select="'rdaa'"/>
         
         <!-- fieldType is for lookup - see function uwf:fieldType() -->
         <xsl:variable name="fieldType" select="uwf:fieldType(@tag)"/>
@@ -566,7 +590,7 @@
             <!-- no subfields have a match -->
             <!-- if no $4$e$j match, this needs to be a default value, there's no point doing any further lookup -->
             <xsl:when test="$anyMatch = 'DEFAULT'">
-                <xsl:copy-of select="uwf:defaultProp(., $fieldType, 'agent', $manIRI)"/>
+                <xsl:copy-of select="uwf:defaultProp(., $fieldType, 'agent', $manIRI, '')"/>
             </xsl:when>
             
             <!-- otherwise at least one does -->
@@ -575,7 +599,7 @@
                 <xsl:for-each select="marc:subfield[@code = '4']">
                     <xsl:variable name="sub4Rda" select="uwf:relatorLookupRDA('sub4KeyRda', uwf:normalize(.), $fieldType, $indValue)"/>
                     <xsl:if test="not(contains($sub4Rda, 'NO MATCH'))">
-                        <xsl:element name="{$ns-wemi || ':' || substring($sub4Rda/uwmisc:invRdaPropIri, string-length($sub4Rda/uwmisc:invRdaPropIri) - 5)}">
+                        <xsl:element name="{$ns-wemi || 'o:' || substring($sub4Rda/uwmisc:invRdaPropIri, string-length($sub4Rda/uwmisc:invRdaPropIri) - 5)}">
                             <xsl:attribute name="rdf:resource">
                                 <xsl:choose>
                                     <xsl:when test="$sub4Rda/uwmisc:domain = 'work'">
@@ -597,11 +621,11 @@
                 </xsl:for-each>
                 
                 <!-- if X00, X10, or 720 and e matches rda label -->
-                <xsl:if test="$fieldType = 'X00' or $fieldType = 'X10' or $fieldType = '720'">
+                <xsl:if test="$fieldType = 'X00' or $fieldType = 'X10'">
                     <xsl:for-each select="marc:subfield[@code = 'e']">
                         <xsl:variable name="subERda" select="uwf:relatorLookupRDA('subEKeyRda', uwf:normalize(.), $fieldType, $indValue)"/>
                         <xsl:if test="not(contains($subERda, 'NO MATCH'))">
-                            <xsl:element name="{$ns-wemi || ':' || substring($subERda/uwmisc:invRdaPropIri, string-length($subERda/uwmisc:invRdaPropIri) - 5)}">
+                            <xsl:element name="{$ns-wemi || 'o:' || substring($subERda/uwmisc:invRdaPropIri, string-length($subERda/uwmisc:invRdaPropIri) - 5)}">
                                 <xsl:attribute name="rdf:resource">
                                     <xsl:choose>
                                         <xsl:when test="$subERda/uwmisc:domain = 'work'">
@@ -628,7 +652,7 @@
                     <xsl:for-each select="marc:subfield[@code = 'j']">
                         <xsl:variable name="subJRda" select="uwf:relatorLookupRDA('subJKeyRda', uwf:normalize(.), 'X00', $indValue)"/>
                         <xsl:if test="not(contains($subJRda, 'NO MATCH'))">
-                            <xsl:element name="{$ns-wemi || ':' || substring($subJRda/uwmisc:invRdaPropIri, string-length($subJRda/uwmisc:invRdaPropIri) - 5)}">
+                            <xsl:element name="{$ns-wemi || 'o:' || substring($subJRda/uwmisc:invRdaPropIri, string-length($subJRda/uwmisc:invRdaPropIri) - 5)}">
                                 <xsl:attribute name="rdf:resource">
                                     <xsl:choose>
                                         <xsl:when test="$subJRda/uwmisc:domain = 'work'">
@@ -661,11 +685,11 @@
                         </xsl:when>
                         <xsl:when test="contains($sub4Marc, 'DEFAULT')">
                             <!-- this means there's a match but multiple domains - we default-->
-                            <xsl:copy-of select="uwf:defaultProp(.., $fieldType, 'agent', $manIRI)"/>
+                            <xsl:copy-of select="uwf:defaultProp(.., $fieldType, 'agent', $manIRI, '')"/>
                         </xsl:when>
                         <xsl:otherwise>
                             <!-- there was a match and not multiple domains, use given RDA prop IRI from table -->
-                            <xsl:element name="{$ns-wemi || ':' || substring($sub4Marc/uwmisc:invRdaPropIri, string-length($sub4Marc/uwmisc:invRdaPropIri) - 5)}">
+                            <xsl:element name="{$ns-wemi || 'o:' || substring($sub4Marc/uwmisc:invRdaPropIri, string-length($sub4Marc/uwmisc:invRdaPropIri) - 5)}">
                                 <xsl:attribute name="rdf:resource">
                                     <xsl:choose>
                                         <xsl:when test="$sub4Marc/uwmisc:domain = 'work'">
@@ -687,7 +711,7 @@
                     </xsl:choose>
                 </xsl:for-each>
                 
-                <xsl:if test="$fieldType = 'X00' or $fieldType = 'X10' or $fieldType = '720'">
+                <xsl:if test="$fieldType = 'X00' or $fieldType = 'X10'">
                     <xsl:for-each select="marc:subfield[@code = 'e']">
                         <xsl:variable name="subEMarc" select="uwf:relatorLookupMarc('subEKeyMarc', uwf:normalize(.), $fieldType, $indValue, 'manifestation')"/>
                         <xsl:choose>
@@ -696,11 +720,11 @@
                             </xsl:when>
                             <xsl:when test="contains($subEMarc, 'DEFAULT')">
                                 <!-- this means there's a match but multiple domains - we default-->
-                                <xsl:copy-of select="uwf:defaultProp(.., $fieldType, 'agent', $manIRI)"/>
+                                <xsl:copy-of select="uwf:defaultProp(.., $fieldType, 'agent', $manIRI, '')"/>
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- there was a match and not multiple domains, use given RDA prop IRI from table -->
-                                <xsl:element name="{$ns-wemi || ':' || substring($subEMarc/uwmisc:invRdaPropIri, string-length($subEMarc/uwmisc:invRdaPropIri) - 5)}">
+                                <xsl:element name="{$ns-wemi || 'o:' || substring($subEMarc/uwmisc:invRdaPropIri, string-length($subEMarc/uwmisc:invRdaPropIri) - 5)}">
                                     <xsl:attribute name="rdf:resource">
                                         <xsl:choose>
                                             <xsl:when test="$subEMarc/uwmisc:domain = 'work'">
@@ -732,11 +756,11 @@
                             </xsl:when>
                             <xsl:when test="contains($subJMarc, 'DEFAULT')">
                                 <!-- this means there's a match but multiple domains - we default-->
-                                <xsl:copy-of select="uwf:defaultProp(.., $fieldType, 'agent', $manIRI)"/>
+                                <xsl:copy-of select="uwf:defaultProp(.., $fieldType, 'agent', $manIRI, '')"/>
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- there was a match and not multiple domains, use given RDA prop IRI from table -->
-                                <xsl:element name="{$ns-wemi || ':' || substring($subJMarc/uwmisc:invRdaPropIri, string-length($subJMarc/uwmisc:invRdaPropIri) - 5)}">
+                                <xsl:element name="{$ns-wemi || 'o:' || substring($subJMarc/uwmisc:invRdaPropIri, string-length($subJMarc/uwmisc:invRdaPropIri) - 5)}">
                                     <xsl:attribute name="rdf:resource">
                                         <xsl:choose>
                                             <xsl:when test="$subJMarc/uwmisc:domain = 'work'">
@@ -804,13 +828,13 @@
                     </xsl:when>
                     <xsl:otherwise>
                         <!-- 7XXs had no 'joint' or 'jt' subfields -->
-                       <xsl:copy-of select="uwf:defaultProp(., uwf:fieldType(@tag), $domain, uwf:agentIRI(.))"/>
+                       <xsl:copy-of select="uwf:defaultProp(., uwf:fieldType(@tag), $domain, uwf:agentIRI(.), uwf:agentAccessPoint(.))"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
             <xsl:otherwise>
                 <!-- no 7XX fields -->
-                <xsl:copy-of select="uwf:defaultProp(., uwf:fieldType(@tag), $domain, uwf:agentIRI(.))"/>
+                <xsl:copy-of select="uwf:defaultProp(., uwf:fieldType(@tag), $domain, uwf:agentIRI(.), uwf:agentAccessPoint(.))"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>

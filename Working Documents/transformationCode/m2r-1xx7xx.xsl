@@ -87,7 +87,7 @@
                     <xsl:otherwise>
                         <!-- default -->
                         <xsl:copy-of
-                            select="uwf:defaultProp(., uwf:fieldType(@tag), 'manifestation', uwf:agentIRI(.))"
+                            select="uwf:defaultProp(., uwf:fieldType(@tag), 'manifestation', uwf:agentIRI(.), uwf:agentAccessPoint(.))"
                         />
                     </xsl:otherwise>
                 </xsl:choose>
@@ -160,7 +160,7 @@
         </xsl:if>
     </xsl:template>
     <xsl:template
-        match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']"
+        match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711']"
         mode="age">
         <xsl:param name="baseIRI"/>
         <rdf:Description rdf:about="{uwf:agentIRI(.)}">
@@ -210,22 +210,7 @@
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:when>
-                <xsl:when test="@tag = '720'">
-                    <xsl:choose>
-                        <xsl:when test="@ind1 = '1'">
-                            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-                            <rdaad:P50377>
-                                <xsl:value-of select="uwf:agentAccessPoint(.)"/>
-                            </rdaad:P50377>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10002"/>
-                            <rdaad:P50373>
-                                <xsl:value-of select="uwf:agentAccessPoint(.)"/>
-                            </rdaad:P50373>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:when>
+                <xsl:otherwise/>
             </xsl:choose>
             <xsl:choose>
                 <xsl:when
@@ -250,7 +235,7 @@
     </xsl:template>
     
     <xsl:template
-        match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711'] | marc:datafield[@tag = '720']"
+        match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711']"
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:if test="marc:subfield[@code = '0'] | marc:subfield[@code = '1'] | marc:subfield[@code = '2']">
