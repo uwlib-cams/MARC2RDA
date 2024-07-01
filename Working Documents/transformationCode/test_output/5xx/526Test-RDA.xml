@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
          xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
          xmlns:rdaa="http://rdaregistry.info/Elements/a/"
          xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
          xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
@@ -16,6 +17,9 @@
          xmlns:rdan="http://rdaregistry.info/Elements/n/"
          xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
          xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
          xmlns:rdaw="http://rdaregistry.info/Elements/w/"
          xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
          xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
@@ -35,19 +39,18 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/526-testman">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/526-testexp"/>
-      <!--MARC data begins-->
       <fake:marcfield>F526 ## $a Accelerated Reader $b Grades 5-8 $c 3.7 $d 6 $x First private note $x Second private note $z Quiz 70876 $z English fiction, vocabulary quiz available. $5 UkLNAL</fake:marcfield>
-      <!--RDA data begins-->
       <rdamd:P30137>Reading program: Program name: Accelerated Reader; Interest level: Grades 5-8; Reading level: 3.7; Title point value: 6; Public note: Quiz 70876; Public note: English fiction, vocabulary quiz available. (At institution: UkLNAL)</rdamd:P30137>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/MetaWor/d14e15"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/MetaWor/d14e17"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e15"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e17"/>
+      <fake:marcfield>F880 ## $6 526-00 $a Test 880 $x Test private 880</fake:marcfield>
+      <rdamd:P30137>Reading program: Program name: Test 880</rdamd:P30137>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e30"/>
    </rdf:Description>
-   <!--MARC data begins-->
    <fake:marcfield>F526 ## $a Accelerated Reader $b Grades 5-8 $c 3.7 $d 6 $x First private note $x Second private note $z Quiz 70876 $z English fiction, vocabulary quiz available. $5 UkLNAL</fake:marcfield>
-   <!--RDA data begins-->
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d14e15">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e15">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>MetaWor/d14e15</rdawd:P10002>
+      <rdawd:P10002>MetaWor/d16e15</rdawd:P10002>
       <rdawo:P10617 rdf:resource="http://fakeIRI2.edu/526-testman"/>
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
       <rdf:subject rdf:resource="http://fakeIRI2.edu/526-testman"/>
@@ -55,14 +58,25 @@
       <rdf:object>First private note</rdf:object>
       <rdawd:P10004>Private</rdawd:P10004>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d14e17">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e17">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>MetaWor/d14e17</rdawd:P10002>
+      <rdawd:P10002>MetaWor/d16e17</rdawd:P10002>
       <rdawo:P10617 rdf:resource="http://fakeIRI2.edu/526-testman"/>
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
       <rdf:subject rdf:resource="http://fakeIRI2.edu/526-testman"/>
       <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
       <rdf:object>Second private note</rdf:object>
+      <rdawd:P10004>Private</rdawd:P10004>
+   </rdf:Description>
+   <fake:marcfield>F880 ## $6 526-00 $a Test 880 $x Test private 880</fake:marcfield>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e30">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>MetaWor/d16e30</rdawd:P10002>
+      <rdawo:P10617 rdf:resource="http://fakeIRI2.edu/526-testman"/>
+      <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+      <rdf:subject rdf:resource="http://fakeIRI2.edu/526-testman"/>
+      <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
+      <rdf:object>Test private 880</rdf:object>
       <rdawd:P10004>Private</rdawd:P10004>
    </rdf:Description>
 </rdf:RDF>

@@ -16,5 +16,10 @@
             <marc:subfield code="z">English fiction, vocabulary quiz available.</marc:subfield>
             <marc:subfield code="5">UkLNAL</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">526-00</marc:subfield>
+            <marc:subfield code="a">Test 880</marc:subfield>
+            <marc:subfield code="x">Test private 880</marc:subfield>
+        </marc:datafield>
     </marc:record>
 </marc:collection>
