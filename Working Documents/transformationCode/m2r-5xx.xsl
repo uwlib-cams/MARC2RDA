@@ -103,6 +103,55 @@
         </rdf:Description>
     </xsl:template>
     
+    <!-- 501 - With Note -->
+    <xsl:template
+        match="marc:datafield[@tag = '501'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '501']"
+        mode="man">
+        <xsl:param name="baseIRI"/>
+        <xsl:call-template name="getmarc"/>
+        <xsl:choose>
+            <xsl:when test="marc:subfield[@code = '5']">
+                <xsl:if test="@tag = '501' or (@tag = '880' and substring(marc:subfield[@code = '6'], 1, 6) = '501-00')">
+                    <rdamo:P30103 rdf:resource="{concat($baseIRI,'ite', generate-id())}"/>
+                </xsl:if>
+            </xsl:when>
+            <xsl:otherwise>
+                <rdamd:P30137>
+                    <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                </rdamd:P30137>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template
+        match="marc:datafield[@tag = '501'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '501-00']"
+        mode="ite" expand-text="yes">
+        <xsl:param name="baseIRI"/>
+        <xsl:param name="controlNumber"/>
+        <xsl:variable name="genID" select="generate-id()"/>
+        <xsl:if test="marc:subfield[@code = '5']">
+            <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
+                <xsl:call-template name="getmarc"/>
+                <rdaid:P40001>{concat($controlNumber, 'ite', $genID)}</rdaid:P40001>
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+                <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
+                <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>
+                <rdaid:P40028>
+                    <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                </rdaid:P40028>
+                <xsl:if test="marc:subfield[@code = '6'] and @tag = '501'">
+                    <xsl:variable name="occNum" select="substring(marc:subfield[@code = '6'], 5, 6)"/>
+                    <xsl:for-each
+                        select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 5, 6) = $occNum]">
+                        <rdaid:P40028>
+                           <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                        </rdaid:P40028>
+                    </xsl:for-each>
+                </xsl:if>
+            </rdf:Description>
+        </xsl:if>
+    </xsl:template>
+    
     <!-- 502 - Dissertation Note -->
     <xsl:template
         match="marc:datafield[@tag = '502'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '502']"
@@ -238,6 +287,7 @@
     </xsl:template>
     
     <!-- 534 - Original version note -->
+    <!-- CODE ON HOLD -->
     <xsl:template
         match="marc:datafield[@tag = '534'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '534']"
         mode="man">
