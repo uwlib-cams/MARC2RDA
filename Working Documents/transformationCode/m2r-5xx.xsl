@@ -325,7 +325,17 @@
         </xsl:if>
     </xsl:template>
     
-    <!-- 541 - Immediate source of acquisition note -->
+    <!-- 536 - Funding Information Note -->
+    <xsl:template
+        match="marc:datafield[@tag = '536'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '536']"
+        mode="wor">
+        <xsl:call-template name="getmarc"/>
+        <rdawd:P10330>
+            <xsl:call-template name="F536-xx-abcdefgh"/>
+        </rdawd:P10330>
+    </xsl:template> 
+    
+    <!-- 541 - Immediate Source of Acquisition Note -->
     <xsl:template
         match="marc:datafield[@tag = '541'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '541-00']"
         mode="man">

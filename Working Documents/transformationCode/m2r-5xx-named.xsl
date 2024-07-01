@@ -220,6 +220,41 @@
         </xsl:for-each>
     </xsl:template>
     
+    <!-- 536 -->
+    <xsl:template name="F536-xx-abcdefgh" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
+            | marc:subfield[@code = 'd'] | marc:subfield[@code = 'e'] | marc:subfield[@code = 'f']
+            | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h']">
+            <xsl:if test="@code = 'a'">
+                <xsl:text>Funding information note: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'b'">
+                <xsl:text>Contract number: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'c'">
+                <xsl:text>Grant number: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'd'">
+                <xsl:text>Undifferentiated number: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'e'">
+                <xsl:text>Program element number: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'f'">
+                <xsl:text>Project number: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'g'">
+                <xsl:text>Task number: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'h'">
+                <xsl:text>Work unit number: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="position() != last()">
+                <xsl:text>; </xsl:text>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
+    
     <!-- 541 -->
     <xsl:template name="F541-xx-abcdefhno" expand-text="yes">
         <!-- for-each loop accounts for repeatable subfields and regular punctuation -->
