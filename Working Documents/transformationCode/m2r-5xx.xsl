@@ -252,6 +252,25 @@
         </rdawd:P10216>
     </xsl:template>
     
+    <!-- 524 - Preferred Citation of Described Materials Note -->
+    <xsl:template match="marc:datafield[@tag = '524'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '524']" 
+        mode="man" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
+        <rdamd:P30005>
+            <xsl:value-of select="marc:subfield[@code = 'a']"/>
+        </rdamd:P30005>
+        <xsl:if test="marc:subfield[@code = '2']">
+            <rdamd:P30137>
+                <xsl:text>Preferred citation {marc:subfield[@code = 'a']} has source of schema used: {marc:subfield[@code = '2']}</xsl:text>
+            </rdamd:P30137>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = '3']">
+            <rdamd:P30137>
+                <xsl:text>Preferred citation {marc:subfield[@code = 'a']} applies to: {marc:subfield[@code = '3']}</xsl:text>
+            </rdamd:P30137>
+        </xsl:if>
+    </xsl:template>
+    
     <!-- 526 - Study Program Information Note -->
     <xsl:template match="marc:datafield[@tag = '526'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '526']" 
         mode="man">
@@ -264,6 +283,7 @@
                 rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"/>
         </xsl:for-each>
     </xsl:template>
+    
     <xsl:template match="marc:datafield[@tag = '526'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '526']" 
         mode="metaWor">
         <xsl:param name="baseIRI"/>
