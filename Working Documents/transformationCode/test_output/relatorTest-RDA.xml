@@ -39,12 +39,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/relator-test1exp"/>
+      <!--Default relationship property used for http://marc2rda.edu/agent/d16e6-->
       <rdamo:P30268 rdf:resource="http://marc2rda.edu/agent/d16e6"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/agent/d16e6">
       <fake:marcfield>F100 1# $a Strautmann, Eva, $d 1963-</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Strautmann, Eva, 1963-</rdaad:P50377>
+      <!--Default relationship property used for http://marc2rda.edu/agent/d16e6-->
       <rdaao:P50313 rdf:resource="http://marc2rda.edu/agent/d16e6"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test2wor">
@@ -62,12 +64,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test2man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/relator-test2exp"/>
+      <!--Default relationship property used for http://marc2rda.edu/agent/d16e15-->
       <rdamo:P30268 rdf:resource="http://marc2rda.edu/agent/d16e15"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/agent/d16e15">
       <fake:marcfield>F100 1# $a Boulanger, John, $d 1965-</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Boulanger, John, 1965-</rdaad:P50377>
+      <!--Default relationship property used for http://marc2rda.edu/agent/d16e15-->
       <rdaao:P50313 rdf:resource="http://marc2rda.edu/agent/d16e15"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/agent/d16e20">
@@ -159,6 +163,7 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test5man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/relator-test5exp"/>
+      <!--Default relationship property used for http://marc2rda.edu/agent/d16e66-->
       <rdamo:P30268 rdf:resource="http://marc2rda.edu/agent/d16e66"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/agent/d16e66">
@@ -180,12 +185,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test6man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/relator-test6exp"/>
+      <!--Default relationship property used for http://marc2rda.edu/agent/d16e75-->
       <rdamo:P30268 rdf:resource="http://marc2rda.edu/agent/d16e75"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/agent/d16e75">
       <fake:marcfield>F100 1# $a Oskolkoff, Ruth Ann, $4 no match</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Oskolkoff, Ruth Ann</rdaad:P50377>
+      <!--Default relationship property used for http://fakeIRI2.edu/relator-test6/man-->
       <rdaao:P50313 rdf:resource="http://fakeIRI2.edu/relator-test6/man"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test7wor">
@@ -202,12 +209,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test7man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/relator-test7exp"/>
+      <!--Default relationship property used for http://marc2rda.edu/agent/d16e84-->
       <rdamo:P30270 rdf:resource="http://marc2rda.edu/agent/d16e84"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/agent/d16e84">
       <fake:marcfield>F710 2# $a Emporia State University. $b Department of Biological Sciences, $4 http://fakeiri.org/fake</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
       <rdaad:P50375>Emporia State University. Department of Biological Sciences</rdaad:P50375>
+      <!--Default relationship property used for http://fakeIRI2.edu/relator-test7/man-->
       <rdaao:P50331 rdf:resource="http://fakeIRI2.edu/relator-test7/man"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/relator-test8wor">
