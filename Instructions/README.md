@@ -2,7 +2,6 @@
 _Last updated 27 April 2022_
 
 ## Table of Contents
- - [Video Demonstration](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#video-demonstration)
  - [Spreadsheet Structure](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#spreadsheet-structure)
  - [General Rules](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#general-rules)
     - [MARC tag formatting](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#marc-tag-formatting)
