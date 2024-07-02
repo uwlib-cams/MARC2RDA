@@ -23,7 +23,10 @@
     xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
     xmlns:rdaw="http://rdaregistry.info/Elements/w/"
     xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
-    xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" exclude-result-prefixes=""
+    xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" 
+    xmlns:rdan="http://rdaregistry.info/Elements/n/"
+    xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+    xmlns:rdano="http://rdaregistry.info/Elements/n/object/" exclude-result-prefixes=""
     version="3.0">
 
     <xsl:variable name="w" select="document('http://www.rdaregistry.info/xml/Elements/w.xml')"/>
