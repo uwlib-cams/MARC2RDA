@@ -99,7 +99,7 @@
     
     <xsl:function name="uwf:agentIRI">
         <xsl:param name="field"/>
-        <xsl:variable name="ap" select="string-join(uwf:agentAccessPoint($field))"/> 
+        <xsl:variable name="ap" select="lower-case(string-join(uwf:agentAccessPoint($field)))"/> 
         <xsl:choose>
             <!-- If $1, return value of $1, otherwise construct an IRI based on the access point -->
             <xsl:when test="$field/marc:subfield[@code = '1']">
@@ -118,7 +118,7 @@
     
     <xsl:function name="uwf:agentNomenIRI">
         <xsl:param name="field"/>
-        <xsl:variable name="ap" select="string-join(uwf:agentAccessPoint($field))"/> 
+        <xsl:variable name="ap" select="lower-case(string-join(uwf:agentAccessPoint($field)))"/> 
         <xsl:choose>
             <!-- If $0 or $1 or $2, it's authorized, construct an IRI from authorized access point -->
             <xsl:when test="$field/marc:subfield[@code = '1'] or $field/marc:subfield[@code = '0'] or $field/marc:subfield[@code = '2']">
