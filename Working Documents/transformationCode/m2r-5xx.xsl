@@ -287,7 +287,6 @@
     <xsl:template match="marc:datafield[@tag = '526'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '526']" 
         mode="metaWor">
         <xsl:param name="baseIRI"/>
-        <xsl:call-template name="getmarc"/>
         <!-- iterate through each x (nonpublic note) subfield -->
         <xsl:for-each select="marc:subfield[@code = 'x']">
             <xsl:call-template name="F526-xx-x">
