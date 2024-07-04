@@ -32,6 +32,7 @@
     <xsl:mode name="nom" on-no-match="shallow-skip"/>
     <xsl:mode name="metaWor" on-no-match="shallow-skip"/>
     <xsl:mode name="age" on-no-match="shallow-skip"/>
+    <xsl:mode name="con" on-no-match="shallow-skip"/>
     
     <!-- base IRI for now - all minted entities begin with this -->
     <xsl:variable name="base" select="'http://fakeIRI2.edu/'"/>
@@ -86,6 +87,7 @@
             xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
             xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
             xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+            xmlns:skos="http://www.w3.org/2004/02/skos/core#"
             xmlns:ex="http://fakeIRI2.edu/">
             <!-- at some point, filtering for aggregates will need to happen before apply-templates is called here -->
             <!--<xsl:apply-templates select="marc:record[not(marc:datafield[@tag='533'])]"/>-->
@@ -153,5 +155,8 @@
         <xsl:apply-templates select="*" mode="age">
             <xsl:with-param name="baseIRI" select="$baseIRI"/>
         </xsl:apply-templates>
+        
+        <!-- *****CONCEPTS***** -->
+        <xsl:apply-templates select="*" mode="con"/>
     </xsl:template>
 </xsl:stylesheet>

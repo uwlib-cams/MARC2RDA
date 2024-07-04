@@ -26,6 +26,7 @@
     xmlns:fake="http://fakePropertiesForDemo"
     xmlns:uwf="http://universityOfWashington/functions"
     xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     version="3.0">
     <xsl:variable name="collBase">http://marc2rda.edu/fake/colMan/</xsl:variable>
     
@@ -224,4 +225,49 @@
             <xsl:value-of select="translate(substring($normalString, string-length($normalString)), ',', '')"/>
     </xsl:function>
     
+    <!-- CONCEPT FUNCTIONS -->
+    
+    <xsl:function name="uwf:S2Concept" expand-text="true">
+        <xsl:param name="code2"/>
+        <xsl:choose>
+            <xsl:when test="$locSubjectSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/subjectSchemes/', lower-case($code2)))">
+                <skos:inScheme rdf:resource="{concat('http://id.loc.gov/vocabulary/subjectSchemes/', lower-case($code2))}"/>
+            </xsl:when>
+            <xsl:when test="$locGenreFormSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/genreFormSchemes/', lower-case($code2)))">
+                <skos:inScheme rdf:resource="{concat('http://id.loc.gov/vocabulary/genreFormSchemes/', lower-case($code2))}"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:comment>$2 value of {$code2} has been lost</xsl:comment>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
+    <xsl:function name="uwf:conceptIRI">
+        <xsl:param name="scheme"/>
+        <xsl:param name="value"/>
+        <xsl:value-of select="'http://marc2rda.edu/fake/concept/'||lower-case($scheme)||encode-for-uri(translate(lower-case($value), ' ', ''))"/>
+    </xsl:function>
+    
+    <xsl:function name="uwf:mintConcept">
+        <xsl:param name="value"/>
+        <xsl:param name="prefLabel"/>
+        <xsl:param name="scheme"/>
+        <xsl:param name="notation"/>
+        
+        <rdf:Description rdf:about="{uwf:conceptIRI($scheme, $value)}">
+            <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <xsl:if test="$prefLabel">
+                <skos:prefLabel>
+                    <xsl:value-of select="$prefLabel"/>
+                </skos:prefLabel>
+            </xsl:if>
+            <xsl:if test="$notation">
+                <skos:notation>
+                    <xsl:comment>rdf:datatype to be added</xsl:comment>
+                    <xsl:value-of select="$notation"/>
+                </skos:notation>
+            </xsl:if>
+            <xsl:copy-of select="uwf:S2Concept($scheme)"/>
+        </rdf:Description>
+    </xsl:function>
 </xsl:stylesheet>
