@@ -24,7 +24,8 @@
          xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
          xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
    <rdf:Description rdf:about="http://fakeIRI2.edu/ap-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/ap-test1exp"/>
@@ -41,16 +42,16 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/ap-test1exp"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/Lully%2CJean-Baptiste%2C1632-1687">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/lully%2Cjean-baptiste%2C1632-1687">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Lully, Jean-Baptiste, 1632-1687</rdand:P80068>
       <rdano:P80107 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJwdjw9FW8TFDvMQ3VdG73"/>
       <!--Has scheme of nomen here-->
    </rdf:Description>
    <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJwdjw9FW8TFDvMQ3VdG73">
-      <fake:marcfield>F100 1# $a Lully, Jean-Baptiste, $d 1632-1687, $e composer. $1 https://id.oclc.org/worldcat/entity/E39PBJwdjw9FW8TFDvMQ3VdG73</fake:marcfield>
+      <fake:marcfield>F100 1# $a Lully, Jean-Baptiste, $d 1632-1687, $e composer. $1 https://id.oclc.org/worldcat/entity/E39PBJwdjw9FW8TFDvMQ3VdG73 $1 second 1</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/nom/Lully%2CJean-Baptiste%2C1632-1687"/>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/nom/lully%2Cjean-baptiste%2C1632-1687"/>
       <rdaao:P50522 rdf:resource="http://fakeIRI2.edu/ap-test1/wor"/>
    </rdf:Description>
 </rdf:RDF>

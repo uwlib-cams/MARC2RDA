@@ -41,69 +41,20 @@
     
 <!-- **FUNCTIONS** -->   
     
-    <!-- takes in the field number and returns the field type for lookup in relator table -->
-    <!-- either 'X00', 'X10', or 'X11' -->
-    <xsl:function name="uwf:fieldType">
-        <xsl:param name="fieldNum"/>
-        <xsl:choose>
-            <xsl:when test="($fieldNum = '100') or ($fieldNum = '600') or ($fieldNum = '700')" >
-                <xsl:value-of select="'X00'"/>
-            </xsl:when>
-            <xsl:when test="($fieldNum = '110') or ($fieldNum = '610') or ($fieldNum = '710')" >
-                <xsl:value-of select="'X10'"/>
-            </xsl:when>
-            <xsl:when test="($fieldNum = '111') or ($fieldNum = '611') or ($fieldNum = '711')" >
-                <xsl:value-of select="'X11'"/>
-            </xsl:when>
-            <xsl:otherwise>
-                <!-- otherwise it's 720 -->
-                <xsl:value-of select="$fieldNum"/>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:function>
-    
-    <xsl:function name="uwf:ind1Type">
-        <xsl:param name="tag"/>
-        <xsl:param name="ind1"/>
-        <xsl:choose>
-            <!-- for 720, options are '1' or '# or 2' -->
-            <xsl:when test="$tag = '720'">
-                <xsl:choose>
-                    <xsl:when test="not($ind1 = '1')">
-                        <xsl:value-of select="'# or 2'"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="$ind1"/>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:when>
-            <xsl:when test="$tag = 'X10' or $tag = 'X11'">
-                <xsl:value-of select="'any'"/>
-            </xsl:when>
-            <!-- options are '0 or 1 or 2', '#', and '3' -->
-            <xsl:otherwise>
-                <xsl:choose>
-                    <xsl:when test="($ind1 = '1') or ($ind1 = '0') or ($ind1 = '2')">
-                        <xsl:value-of select="'0 or 1 or 2'"/>
-                    </xsl:when>
-                    <xsl:when test="($ind1 = ' ')">
-                        <xsl:value-of select="'#'"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="$ind1"/>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:function>
-    
     <xsl:function name="uwf:agentIRI">
         <xsl:param name="field"/>
         <xsl:variable name="ap" select="lower-case(string-join(uwf:agentAccessPoint($field)))"/> 
         <xsl:choose>
             <!-- If $1, return value of $1, otherwise construct an IRI based on the access point -->
             <xsl:when test="$field/marc:subfield[@code = '1']">
-                <xsl:value-of select="$field/marc:subfield[@code = '1']"/>
+                <xsl:choose>
+                    <xsl:when test="count($field/marc:subfield[@code = '1']) > 1">
+                        <xsl:value-of select="uwf:multiple1s($field)"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="$field/marc:subfield[@code = '1']"/>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:when>
             <!-- If $0 or $2, it's authorized, construct an IRI from authorized access point -->
             <xsl:when test="$field/marc:subfield[@code = '0'] or $field/marc:subfield[@code = '2']">
@@ -183,7 +134,7 @@
     </xsl:function>
     
     
-    <xsl:function name="uwf:normalize">
+    <xsl:function name="uwf:normalizeRelatorTerm">
         <xsl:param name="subfield"/>
         <xsl:choose>
             <xsl:when test="$subfield/@code = 'e' or $subfield/@code = 'j'">
@@ -205,13 +156,76 @@
         </xsl:choose>
     </xsl:function>
     
+    <!-- This is a placeholder for handling multiple $1 values, it currently returns the first $1 value -->
+    <xsl:function name="uwf:multiple1s">
+        <xsl:param name="field"/>
+        <xsl:value-of select="$field/marc:subfield[@code = '1'][1]"/>
+    </xsl:function>
+    
+    <!-- takes in the field number and returns the field type for lookup in relator table -->
+    <!-- either 'X00', 'X10', or 'X11' -->
+    <xsl:function name="uwf:fieldType">
+        <xsl:param name="fieldNum"/>
+        <xsl:choose>
+            <xsl:when test="($fieldNum = '100') or ($fieldNum = '600') or ($fieldNum = '700')" >
+                <xsl:value-of select="'X00'"/>
+            </xsl:when>
+            <xsl:when test="($fieldNum = '110') or ($fieldNum = '610') or ($fieldNum = '710')" >
+                <xsl:value-of select="'X10'"/>
+            </xsl:when>
+            <xsl:when test="($fieldNum = '111') or ($fieldNum = '611') or ($fieldNum = '711')" >
+                <xsl:value-of select="'X11'"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <!-- otherwise it's 720 -->
+                <xsl:value-of select="$fieldNum"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
+    <xsl:function name="uwf:ind1Type">
+        <xsl:param name="tag"/>
+        <xsl:param name="ind1"/>
+        <xsl:choose>
+            <!-- for 720, options are '1' or '# or 2' -->
+            <xsl:when test="$tag = '720'">
+                <xsl:choose>
+                    <xsl:when test="not($ind1 = '1')">
+                        <xsl:value-of select="'# or 2'"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="$ind1"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$tag = 'X10' or $tag = 'X11'">
+                <xsl:value-of select="'any'"/>
+            </xsl:when>
+            <!-- options are '0 or 1 or 2', '#', and '3' -->
+            <xsl:otherwise>
+                <xsl:choose>
+                    <xsl:when test="($ind1 = '1') or ($ind1 = '0') or ($ind1 = '2')">
+                        <xsl:value-of select="'0 or 1 or 2'"/>
+                    </xsl:when>
+                    <xsl:when test="($ind1 = ' ')">
+                        <xsl:value-of select="'#'"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="$ind1"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
+    
     <!-- if any $e$4$j matches in the relator table for that field type and ind1 value, returns match, otherwise default -->
     <xsl:function name="uwf:anyRelatorMatch">
         <xsl:param name="field"/>
         <xsl:param name="fieldNum"/>
         <xsl:param name="ind1"/>
         
-        <xsl:variable name="testMatch" select="if (some $subfield in ($field/marc:subfield[@code = 'e'] | $field/marc:subfield[@code = '4'] | $field/marc:subfield[@code = 'j']) satisfies (key('anyMatch', uwf:normalize($subfield), document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
+        <xsl:variable name="testMatch" select="if (some $subfield in ($field/marc:subfield[@code = 'e'] | $field/marc:subfield[@code = '4'] | $field/marc:subfield[@code = 'j']) satisfies (key('anyMatch', uwf:normalizeRelatorTerm($subfield), document($rel2rda)) intersect key('fieldKey', $fieldNum, document($rel2rda)) 
             intersect key('indKey', $ind1, document($rel2rda)))) then 'true' else 'false' "/>
         <xsl:choose>
             <xsl:when test="$testMatch = 'false'">
@@ -429,7 +443,7 @@
             <xsl:otherwise>
                 <!-- if 4 matches rda iri - multipleDomains doesn't matter -->
                 <xsl:for-each select="marc:subfield[@code = '4']">
-                    <xsl:variable name="sub4Rda" select="uwf:relatorLookupRDA('sub4KeyRda', uwf:normalize(.), $fieldType, $indValue)"/>
+                    <xsl:variable name="sub4Rda" select="uwf:relatorLookupRDA('sub4KeyRda', uwf:normalizeRelatorTerm(.), $fieldType, $indValue)"/>
                     <xsl:if test="not(contains($sub4Rda, 'NO MATCH')) and $sub4Rda/uwmisc:domain = $domain">
                         <xsl:choose>
                             <xsl:when test="$fieldType = '720'">
@@ -449,7 +463,7 @@
                 <!-- if X00, or X10 and e matches rda label -->
                 <xsl:if test="$fieldType = 'X00' or $fieldType = 'X10' or $fieldType = '720'">
                     <xsl:for-each select="marc:subfield[@code = 'e']">
-                        <xsl:variable name="subERda" select="uwf:relatorLookupRDA('subEKeyRda', uwf:normalize(.), $fieldType, $indValue)"/>
+                        <xsl:variable name="subERda" select="uwf:relatorLookupRDA('subEKeyRda', uwf:normalizeRelatorTerm(.), $fieldType, $indValue)"/>
                         <xsl:if test="not(contains($subERda, 'NO MATCH')) and $subERda/uwmisc:domain = $domain">
                             <xsl:choose>
                                 <xsl:when test="$fieldType = '720'">
@@ -470,7 +484,7 @@
                 <!-- if X11 and j matches rda label -->
                 <xsl:if test="$fieldType = 'X11'">
                     <xsl:for-each select="marc:subfield[@code = 'j']">
-                        <xsl:variable name="subJRda" select="uwf:relatorLookupRDA('subJKeyRda', uwf:normalize(.), 'X00', $indValue)"/>
+                        <xsl:variable name="subJRda" select="uwf:relatorLookupRDA('subJKeyRda', uwf:normalizeRelatorTerm(.), 'X00', $indValue)"/>
                         <xsl:if test="not(contains($subJRda, 'NO MATCH')) and $subJRda/uwmisc:domain = $domain">
                             <xsl:element name="{$ns-wemi || 'o:' || substring($subJRda/uwmisc:rdaPropIri, string-length($subJRda/uwmisc:rdaPropIri) - 5)}">
                                 <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
@@ -483,7 +497,7 @@
                 <!-- if $e$4$j is marc and Y multiple domains - default  -->
                 
                 <xsl:for-each select="marc:subfield[@code = '4']">
-                    <xsl:variable name="sub4Marc" select="uwf:relatorLookupMarc('sub4KeyMarc', uwf:normalize(.), $fieldType, $indValue, $domain)"/>
+                    <xsl:variable name="sub4Marc" select="uwf:relatorLookupMarc('sub4KeyMarc', uwf:normalizeRelatorTerm(.), $fieldType, $indValue, $domain)"/>
                     <xsl:choose>
                         <xsl:when test="contains($sub4Marc, 'NO MATCH')">
                             <!-- do nothing on no match -->
@@ -514,7 +528,7 @@
                 
                 <xsl:if test="$fieldType = 'X00' or $fieldType = 'X10' or $fieldType = '720'">
                     <xsl:for-each select="marc:subfield[@code = 'e']">
-                        <xsl:variable name="subEMarc" select="uwf:relatorLookupMarc('subEKeyMarc', uwf:normalize(.), $fieldType, $indValue, $domain)"/>
+                        <xsl:variable name="subEMarc" select="uwf:relatorLookupMarc('subEKeyMarc', uwf:normalizeRelatorTerm(.), $fieldType, $indValue, $domain)"/>
                     <xsl:choose>
                         <xsl:when test="contains($subEMarc, 'NO MATCH')">
                             <!-- do nothing on no match -->
@@ -546,7 +560,7 @@
                 
                 <xsl:if test="$fieldType = 'X11'">
                     <xsl:for-each select="marc:subfield[@code = 'j']">
-                        <xsl:variable name="subJMarc" select="uwf:relatorLookupMarc('subJKeyMarc', uwf:normalize(.), $fieldType, $indValue, $domain)"/>
+                        <xsl:variable name="subJMarc" select="uwf:relatorLookupMarc('subJKeyMarc', uwf:normalizeRelatorTerm(.), $fieldType, $indValue, $domain)"/>
                         <xsl:choose>
                             <xsl:when test="contains($subJMarc, 'NO MATCH')">
                                 <!-- do nothing on no match -->
@@ -605,7 +619,7 @@
             <xsl:otherwise>
                 <!-- if 4 matches rda iri - multipleDomains doesn't matter -->
                 <xsl:for-each select="marc:subfield[@code = '4']">
-                    <xsl:variable name="sub4Rda" select="uwf:relatorLookupRDA('sub4KeyRda', uwf:normalize(.), $fieldType, $indValue)"/>
+                    <xsl:variable name="sub4Rda" select="uwf:relatorLookupRDA('sub4KeyRda', uwf:normalizeRelatorTerm(.), $fieldType, $indValue)"/>
                     <xsl:if test="not(contains($sub4Rda, 'NO MATCH'))">
                         <xsl:element name="{$ns-wemi || 'o:' || substring($sub4Rda/uwmisc:invRdaPropIri, string-length($sub4Rda/uwmisc:invRdaPropIri) - 5)}">
                             <xsl:attribute name="rdf:resource">
@@ -631,7 +645,7 @@
                 <!-- if X00, X10, or 720 and e matches rda label -->
                 <xsl:if test="$fieldType = 'X00' or $fieldType = 'X10'">
                     <xsl:for-each select="marc:subfield[@code = 'e']">
-                        <xsl:variable name="subERda" select="uwf:relatorLookupRDA('subEKeyRda', uwf:normalize(.), $fieldType, $indValue)"/>
+                        <xsl:variable name="subERda" select="uwf:relatorLookupRDA('subEKeyRda', uwf:normalizeRelatorTerm(.), $fieldType, $indValue)"/>
                         <xsl:if test="not(contains($subERda, 'NO MATCH'))">
                             <xsl:element name="{$ns-wemi || 'o:' || substring($subERda/uwmisc:invRdaPropIri, string-length($subERda/uwmisc:invRdaPropIri) - 5)}">
                                 <xsl:attribute name="rdf:resource">
@@ -658,7 +672,7 @@
                 <!-- if X11 and j matches rda label -->
                 <xsl:if test="$fieldType = 'X11'">
                     <xsl:for-each select="marc:subfield[@code = 'j']">
-                        <xsl:variable name="subJRda" select="uwf:relatorLookupRDA('subJKeyRda', uwf:normalize(.), 'X00', $indValue)"/>
+                        <xsl:variable name="subJRda" select="uwf:relatorLookupRDA('subJKeyRda', uwf:normalizeRelatorTerm(.), 'X00', $indValue)"/>
                         <xsl:if test="not(contains($subJRda, 'NO MATCH'))">
                             <xsl:element name="{$ns-wemi || 'o:' || substring($subJRda/uwmisc:invRdaPropIri, string-length($subJRda/uwmisc:invRdaPropIri) - 5)}">
                                 <xsl:attribute name="rdf:resource">
@@ -686,7 +700,7 @@
                 <!-- if $e$4$j is marc and Y multiple domains - default  -->
                 
                 <xsl:for-each select="marc:subfield[@code = '4']">
-                    <xsl:variable name="sub4Marc" select="uwf:relatorLookupMarc('sub4KeyMarc', uwf:normalize(.), $fieldType, $indValue, 'manifestation')"/>
+                    <xsl:variable name="sub4Marc" select="uwf:relatorLookupMarc('sub4KeyMarc', uwf:normalizeRelatorTerm(.), $fieldType, $indValue, 'manifestation')"/>
                     <xsl:choose>
                         <xsl:when test="contains($sub4Marc, 'NO MATCH')">
                             <!-- do nothing on no match -->
@@ -721,7 +735,7 @@
                 
                 <xsl:if test="$fieldType = 'X00' or $fieldType = 'X10'">
                     <xsl:for-each select="marc:subfield[@code = 'e']">
-                        <xsl:variable name="subEMarc" select="uwf:relatorLookupMarc('subEKeyMarc', uwf:normalize(.), $fieldType, $indValue, 'manifestation')"/>
+                        <xsl:variable name="subEMarc" select="uwf:relatorLookupMarc('subEKeyMarc', uwf:normalizeRelatorTerm(.), $fieldType, $indValue, 'manifestation')"/>
                         <xsl:choose>
                             <xsl:when test="contains($subEMarc, 'NO MATCH')">
                                 <!-- do nothing on no match -->
@@ -757,7 +771,7 @@
                 
                 <xsl:if test="$fieldType = 'X11'">
                     <xsl:for-each select="marc:subfield[@code = 'j']">
-                        <xsl:variable name="subJMarc" select="uwf:relatorLookupMarc('subJKeyMarc', uwf:normalize(.), $fieldType, $indValue, 'manifestation')"/>
+                        <xsl:variable name="subJMarc" select="uwf:relatorLookupMarc('subJKeyMarc', uwf:normalizeRelatorTerm(.), $fieldType, $indValue, 'manifestation')"/>
                         <xsl:choose>
                             <xsl:when test="contains($subJMarc, 'NO MATCH')">
                                 <!-- do nothing on no match -->

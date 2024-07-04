@@ -10,6 +10,7 @@
             <marc:subfield code="d">1632-1687,</marc:subfield>
             <marc:subfield code="e">composer.</marc:subfield>
             <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PBJwdjw9FW8TFDvMQ3VdG73</marc:subfield>
+            <marc:subfield code="1">second 1</marc:subfield>
         </marc:datafield>
 <!--        <marc:datafield tag="100" ind1="1" ind2=" ">
             <marc:subfield code="a">Fitzgerald, Stephanie J.</marc:subfield>
