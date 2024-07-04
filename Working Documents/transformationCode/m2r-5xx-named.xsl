@@ -316,6 +316,136 @@
         </rdf:Description>
     </xsl:template>
     
+    <!-- 542 -->
+    <xsl:template name="F542-xx-abcdefghijklmnopqrsu3" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] |
+            marc:subfield[@code = 'd'] | marc:subfield[@code = 'e'] | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g'] |
+            marc:subfield[@code = 'h'] | marc:subfield[@code = 'i'] |marc:subfield[@code = 'j'] | marc:subfield[@code = 'k'] |
+            marc:subfield[@code = 'l'] | marc:subfield[@code = 'm'] | marc:subfield[@code = 'n'] |marc:subfield[@code = 'o'] |
+            marc:subfield[@code = 'p'] | marc:subfield[@code = 'q'] | marc:subfield[@code = 'r'] | marc:subfield[@code = 's'] |
+            marc:subfield[@code = 'u']">
+            
+            <xsl:if test="@code = 'a'">
+                <xsl:text>Personal creator: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'b'">
+                <xsl:text>Personal creator death date: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'c'">
+                <xsl:text>Corporate creator: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'd'">
+                <xsl:text>Copyright holder: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'e'">
+               <xsl:text>Copyright holder contact information: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'f'">
+               <xsl:text>Copyright statement: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'g'">
+                <xsl:text>Copyright date: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'h'">
+                <xsl:text>Copyright renewal date: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'i'">
+               <xsl:text>Publication date: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'j'">
+                <xsl:text>Creation date: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'k'">
+               <xsl:text>Publisher: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'l'">
+                <xsl:text>Copyright status: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'm'">
+                <xsl:text>Publication status: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'n'">
+                <xsl:text>Note: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'o'">
+                <xsl:text>Research date: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'p'">
+                <xsl:text>Country of publication or creation: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'q'">
+                <xsl:text>Supplying agency: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'r'">
+                <xsl:text>Jurisdiction of copyright assessment: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 's'">
+                <xsl:text>Source of information: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'u'">
+                <xsl:text>Uniform Resource Identifier: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="position() != last()">
+                <xsl:text>; </xsl:text>
+            </xsl:if>
+        </xsl:for-each>
+        <xsl:if test="marc:subfield[@code = '3']">
+            <xsl:text> (Applies to: {marc:subfield[@code = '3']}</xsl:text>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F542-1x-e_f_g_i_j_p" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'e'] | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g']
+            | marc:subfield[@code = 'i'] | marc:subfield[@code = 'j'] | marc:subfield[@code = 'p']">
+            <xsl:if test="@code = 'e'">
+                <rdamd:P30141>
+                    <xsl:text>Copyright holder contact information: {.}</xsl:text>
+                </rdamd:P30141>
+            </xsl:if>
+            <xsl:if test="@code = 'f'">
+                <rdamd:P30280>
+                    <xsl:value-of select="."/>
+                </rdamd:P30280>
+            </xsl:if>
+            <xsl:if test="@code = 'g'">
+                <rdamd:P30280>
+                    <xsl:text>©{.}</xsl:text>
+                </rdamd:P30280>
+            </xsl:if>
+            <xsl:if test="@code = 'i'">
+                <rdamd:P30011>
+                    <xsl:value-of select="."/>
+                </rdamd:P30011>
+            </xsl:if>
+            <xsl:if test="@code = 'j'">
+                <rdamd:P30009>
+                    <xsl:value-of select="."/>
+                </rdamd:P30009>
+            </xsl:if>
+            <xsl:if test="@code = 'p'">
+                <rdamd:P30279>
+                    <xsl:value-of select="."/>
+                </rdamd:P30279>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template name="F542-0x" expand-text="yes">
+        <xsl:param name="baseIRI"/>
+        <rdf:Description rdf:about="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}">
+            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+            <rdawd:P10002>{concat('MetaWor/', generate-id())}</rdawd:P10002>
+            <rdawo:P10617 rdf:resource="{concat($baseIRI,'man')}"/>
+            <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+            <rdf:subject rdf:resource="{concat($baseIRI,'man')}"/>
+            <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
+            <rdf:object>
+                <xsl:call-template name="F542-xx-abcdefghijklmnopqrsu3"/>
+            </rdf:object>
+            <rdawd:P10004>Private</rdawd:P10004>
+        </rdf:Description>
+    </xsl:template>
+    
     <!-- 552 -->
     <xsl:template name="F552-xx-zabcdefghijklmnopu" expand-text="yes">
         <xsl:if test="marc:subfield[@code = 'z']">

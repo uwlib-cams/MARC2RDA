@@ -362,7 +362,7 @@
         <xsl:call-template name="getmarc"/>
         <rdamo:P30103 rdf:resource="{concat($baseIRI,'ite', generate-id())}"/>
     </xsl:template> 
-        
+    
     <xsl:template
         match="marc:datafield[@tag = '541'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '541-00']"
         mode="ite" expand-text="yes">
@@ -424,6 +424,36 @@
                     </xsl:call-template>
                 </xsl:if>
             </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    
+    <!-- 542 - Information Relating to Copyright Status -->
+    <xsl:template
+        match="marc:datafield[@tag = '542'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '542']"
+        mode="man">
+        <xsl:param name="baseIRI"/>
+        <xsl:call-template name="getmarc"/>
+        <rdamd:P30137>
+            <xsl:call-template name="F542-xx-abcdefghijklmnopqrsu3"/>
+        </rdamd:P30137>
+        <xsl:choose>
+            <xsl:when test="@ind1 = '0'">
+                <rdamo:P30462 rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:call-template name="F542-1x-e_f_g_i_j_p"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template> 
+    
+    <xsl:template
+        match="marc:datafield[@tag = '542'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '542']"
+        mode="metaWor">
+        <xsl:param name="baseIRI"/>
+        <xsl:if test="@ind1 = '0'">
+            <xsl:call-template name="F542-0x">
+                <xsl:with-param name="baseIRI" select="$baseIRI"/>
+            </xsl:call-template>
         </xsl:if>
     </xsl:template>
     
