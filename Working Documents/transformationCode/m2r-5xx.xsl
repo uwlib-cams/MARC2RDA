@@ -857,6 +857,28 @@
         </xsl:if>
     </xsl:template>
     
+    <!-- 588 - Source of Description Note -->
+    <xsl:template
+        match="marc:datafield[@tag = '588'] |  marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '588']"
+        mode="man" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
+        <xsl:if test="marc:subfield[@code = 'a']">
+            <rdamd:P30137>
+                <xsl:if test="@ind1 = '0'">
+                    <xsl:text>Source of description: </xsl:text>
+                </xsl:if>
+                <xsl:if test="@ind1 = '1'">
+                    <xsl:text>Latest issue consulted: </xsl:text>
+                </xsl:if>
+                <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                <xsl:if test="marc:subfield[@code = '5']">
+                    <xsl:text> (Applies to: {uwf:S5NameLookup(marc:subfield[@code = '5'])})</xsl:text>
+                </xsl:if>
+            </rdamd:P30137>
+        </xsl:if>
+    </xsl:template>
+    
+    
     <!-- <xsl:template match="*" mode="wor"/>
         <xsl:template match="*" mode="exp"/>
         <xsl:template match="*" mode="man"/>
