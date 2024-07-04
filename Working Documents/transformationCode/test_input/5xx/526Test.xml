@@ -14,7 +14,7 @@
             <marc:subfield code="x">Second private note</marc:subfield>
             <marc:subfield code="z">Quiz 70876</marc:subfield>
             <marc:subfield code="z">English fiction, vocabulary quiz available.</marc:subfield>
-            <marc:subfield code="5">UkLNAL</marc:subfield>
+            <marc:subfield code="5">wau</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="880" ind1=" " ind2=" ">
             <marc:subfield code="6">526-00</marc:subfield>

@@ -24,7 +24,8 @@
          xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
          xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
    <rdf:Description rdf:about="http://fakeIRI2.edu/526-testwor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/526-testexp"/>
@@ -39,15 +40,15 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/526-testman">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/526-testexp"/>
-      <fake:marcfield>F526 ## $a Accelerated Reader $b Grades 5-8 $c 3.7 $d 6 $x First private note $x Second private note $z Quiz 70876 $z English fiction, vocabulary quiz available. $5 UkLNAL</fake:marcfield>
-      <rdamd:P30137>Reading program: Program name: Accelerated Reader; Interest level: Grades 5-8; Reading level: 3.7; Title point value: 6; Public note: Quiz 70876; Public note: English fiction, vocabulary quiz available. (At institution: UkLNAL)</rdamd:P30137>
+      <fake:marcfield>F526 ## $a Accelerated Reader $b Grades 5-8 $c 3.7 $d 6 $x First private note $x Second private note $z Quiz 70876 $z English fiction, vocabulary quiz available. $5 wau</fake:marcfield>
+      <rdamd:P30137>Reading program: Program name: Accelerated Reader; Interest level: Grades 5-8; Reading level: 3.7; Title point value: 6; Public note: Quiz 70876; Public note: English fiction, vocabulary quiz available. (Applies to: University of Washington)</rdamd:P30137>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e15"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e17"/>
       <fake:marcfield>F880 ## $6 526-00 $a Test 880 $x Test private 880</fake:marcfield>
       <rdamd:P30137>Reading program: Program name: Test 880</rdamd:P30137>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/MetaWor/d16e30"/>
    </rdf:Description>
-   <fake:marcfield>F526 ## $a Accelerated Reader $b Grades 5-8 $c 3.7 $d 6 $x First private note $x Second private note $z Quiz 70876 $z English fiction, vocabulary quiz available. $5 UkLNAL</fake:marcfield>
+   <fake:marcfield>F526 ## $a Accelerated Reader $b Grades 5-8 $c 3.7 $d 6 $x First private note $x Second private note $z Quiz 70876 $z English fiction, vocabulary quiz available. $5 wau</fake:marcfield>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e15">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>MetaWor/d16e15</rdawd:P10002>
@@ -55,7 +56,7 @@
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
       <rdf:subject rdf:resource="http://fakeIRI2.edu/526-testman"/>
       <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
-      <rdf:object>First private note</rdf:object>
+      <rdf:object>First private note (Applies to: University of Washington)</rdf:object>
       <rdawd:P10004>Private</rdawd:P10004>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/MetaWor/d16e17">
@@ -65,7 +66,7 @@
       <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
       <rdf:subject rdf:resource="http://fakeIRI2.edu/526-testman"/>
       <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
-      <rdf:object>Second private note</rdf:object>
+      <rdf:object>Second private note (Applies to: University of Washington)</rdf:object>
       <rdawd:P10004>Private</rdawd:P10004>
    </rdf:Description>
    <fake:marcfield>F880 ## $6 526-00 $a Test 880 $x Test private 880</fake:marcfield>

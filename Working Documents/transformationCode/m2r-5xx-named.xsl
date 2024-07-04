@@ -18,7 +18,9 @@
     xmlns:rdaa="http://rdaregistry.info/Elements/a/"
     xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
     xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
-    xmlns:fake="http://fakePropertiesForDemo" exclude-result-prefixes="marc ex" version="3.0">
+    xmlns:fake="http://fakePropertiesForDemo" 
+    xmlns:uwf="http://universityOfWashington/functions" exclude-result-prefixes="marc uwf ex" version="3.0">
+    <xsl:import href="m2r-functions.xsl"/>
     
     <xsl:template name="F514-xx-zabcdefghijkmu" expand-text="yes">
         <xsl:if test="marc:subfield[@code = 'z']">
@@ -103,7 +105,7 @@
                 </xsl:if>
             </xsl:for-each>
             <xsl:if test="marc:subfield[@code = '5']">
-                <xsl:text> (At institution: {marc:subfield[@code = '5']})</xsl:text>
+                <xsl:text> (Applies to: {uwf:S5NameLookup(marc:subfield[@code = '5'])})</xsl:text>
             </xsl:if>
         </rdamd:P30137>
     </xsl:template>
@@ -119,6 +121,9 @@
             <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
             <rdf:object>
                 <xsl:value-of select="."/>
+                <xsl:if test="../marc:subfield[@code = '5']">
+                    <xsl:text> (Applies to: {uwf:S5NameLookup(../marc:subfield[@code = '5'])})</xsl:text>
+                </xsl:if>
             </rdf:object>
             <rdawd:P10004>Private</rdawd:P10004>
         </rdf:Description>
