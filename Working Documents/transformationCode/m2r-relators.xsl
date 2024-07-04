@@ -41,6 +41,7 @@
     
 <!-- **FUNCTIONS** -->   
     
+    <!-- returns an IRI for an agent entity -->
     <xsl:function name="uwf:agentIRI">
         <xsl:param name="field"/>
         <xsl:variable name="ap" select="lower-case(string-join(uwf:agentAccessPoint($field)))"/> 
@@ -67,6 +68,7 @@
         </xsl:choose>
     </xsl:function>
     
+    <!-- returns an IRI for a nomen related to an agent entity -->
     <xsl:function name="uwf:agentNomenIRI">
         <xsl:param name="field"/>
         <xsl:variable name="ap" select="lower-case(string-join(uwf:agentAccessPoint($field)))"/> 
@@ -82,6 +84,7 @@
         </xsl:choose>
     </xsl:function>
     
+    <!-- generates an access point for an agent based on the subfields present in the field -->
     <xsl:function name="uwf:agentAccessPoint" expand-text="true">
         <xsl:param name="field"/>
         <xsl:choose>
@@ -133,7 +136,7 @@
         </xsl:choose>
     </xsl:function>
     
-    
+    <!-- processes a relator term before lookup in the relator table -->
     <xsl:function name="uwf:normalizeRelatorTerm">
         <xsl:param name="subfield"/>
         <xsl:choose>
