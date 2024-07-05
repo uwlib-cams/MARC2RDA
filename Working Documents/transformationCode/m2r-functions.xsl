@@ -118,6 +118,7 @@
         </xsl:for-each>
     </xsl:function>
     
+    <!-- returns the minted IRI for the organization's collection if found, otherwise outputs comment -->
     <xsl:function name="uwf:S5lookup" expand-text="yes">
         <xsl:param name="code5"/>
         <xsl:variable name="lowerCode5" select="lower-case($code5)"/>
