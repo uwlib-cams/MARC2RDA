@@ -390,7 +390,7 @@
             </xsl:if>
         </xsl:for-each>
         <xsl:if test="marc:subfield[@code = '3']">
-            <xsl:text> (Applies to: {marc:subfield[@code = '3']}</xsl:text>
+            <xsl:text> (Applies to: {marc:subfield[@code = '3']})</xsl:text>
         </xsl:if>
     </xsl:template>
     
