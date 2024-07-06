@@ -260,6 +260,22 @@
         </xsl:for-each>
     </xsl:template>
     
+    <!-- 538 -->
+    <xsl:template name="F538-xx-aiu" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'i'] | marc:subfield[@code = 'u']">
+            <xsl:value-of select="."/>
+            <xsl:if test="(@code = 'a' or @code = 'u') and position() != last()">
+                <xsl:text>;</xsl:text>
+            </xsl:if>
+            <xsl:if test="position() != last()">
+                <xsl:text> </xsl:text>
+            </xsl:if>
+        </xsl:for-each>
+        <xsl:if test="marc:subfield[@code = '3']">
+            <xsl:text>(Applies to: {marc:subfield[@code = '3']})</xsl:text>
+        </xsl:if>
+    </xsl:template>
+    
     <!-- 541 -->
     <xsl:template name="F541-xx-abcdefhno" expand-text="yes">
         <!-- for-each loop accounts for repeatable subfields and regular punctuation -->

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111aam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">536-test</marc:controlfield>
+        <marc:datafield tag="022" ind1=" " ind2=" ">
+            <marc:subfield code="a">0376-4583</marc:subfield>
+        </marc:datafield>
+         
+        <marc:datafield tag="538" ind1=" " ind2=" "> 
+            <marc:subfield code="3">v.1-49(1927-1975)</marc:subfield>
+            <marc:subfield code="a">Mode of access: World Wide Web. System requirements: DJVU Plugin or Adobe Acrobat Reader</marc:subfield>
+            <marc:subfield code="5">WRJ</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="538" ind1=" " ind2=" ">
+            <marc:subfield code="6">880-02</marc:subfield>
+            <marc:subfield code="a">Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002.            </marc:subfield>
+            <marc:subfield code="u">http://purl.oclc.org/DLF/benchrepro0212</marc:subfield>
+            <marc:subfield code="5">MiAaHDL</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="538" ind1=" " ind2=" ">
+            <marc:subfield code="6">880-01</marc:subfield>
+            <marc:subfield code="a">Project methodology for digital version</marc:subfield>
+            <marc:subfield code="i">Technical details:</marc:subfield>
+            <marc:subfield code="u">http://www.columbia.edu/dlc/linglung/methodology.html </marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">538-01</marc:subfield>
+            <marc:subfield code="a">non-roman a</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">538-02</marc:subfield>
+            <marc:subfield code="a">non-roman a with 5</marc:subfield>
+            <marc:subfield code="5">MiAaHDL</marc:subfield>
+        </marc:datafield>
+        
+    </marc:record>
+</marc:collection>
