@@ -234,6 +234,14 @@
         </rdawd:P10330>
     </xsl:template>
     
+    <!-- 515 - Numbering Peculiarities Notes -->
+    <xsl:template match="marc:datafield[@tag='515'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '515']" 
+        mode="man" expand-text="yes">
+        <rdamd:P30137>
+            <xsl:text>Numbering peculiarities note: {marc:subfield[@code = 'a']}</xsl:text>
+        </rdamd:P30137>
+    </xsl:template>
+    
     <!-- 516 - Type of Computer File or Data Note -->
     <xsl:template match="marc:datafield[@tag='516'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '516']" 
         mode="man">
