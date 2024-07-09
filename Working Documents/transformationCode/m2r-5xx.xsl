@@ -313,6 +313,14 @@
         </rdaed:P20071>
     </xsl:template>
     
+    <!-- 532 - Accessibility Note -->
+    <xsl:template
+        match="marc:datafield[@tag = '532'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '532']"
+        mode="man">
+        <xsl:call-template name="getmarc"/>
+        <xsl:call-template name="F532-xx-a"/>
+    </xsl:template>
+    
     <!-- 534 - Original version note -->
     <!-- CODE ON HOLD -->
     <xsl:template

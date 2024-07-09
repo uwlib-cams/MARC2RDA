@@ -129,6 +129,36 @@
         </rdf:Description>
     </xsl:template>
     
+    <!-- 532 -->
+    <xsl:template name="F532-xx-a" expand-text="yes">
+        <xsl:choose>
+            <xsl:when test="@ind1 = '0'">
+                <rdamd:P30162>
+                    <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                    <xsl:if test="marc:subfield[@code = '3']">
+                        <xsl:text> (Applies to: {marc:subfield[@code = '3']})</xsl:text>
+                    </xsl:if>
+                </rdamd:P30162>
+            </xsl:when>
+            <xsl:when test="@ind1 = '1'">
+                <rdamd:P30452>
+                    <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                    <xsl:if test="marc:subfield[@code = '3']">
+                        <xsl:text> (Applies to: {marc:subfield[@code = '3']})</xsl:text>
+                    </xsl:if>
+                </rdamd:P30452>
+            </xsl:when>
+            <xsl:otherwise>
+                <rdamd:P30137>
+                    <xsl:value-of select="marc:subfield[@code='a']"/>
+                    <xsl:if test="marc:subfield[@code = '3']">
+                        <xsl:text> (Applies to: {marc:subfield[@code = '3']})</xsl:text>
+                    </xsl:if>
+                </rdamd:P30137>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
     <!-- 534 -->
     <xsl:template name="F534-xx-pabcefklmnotxz" expand-text="yes">
         <xsl:choose>
