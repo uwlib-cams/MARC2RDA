@@ -24,8 +24,8 @@
     xmlns:uwf="http://universityOfWashington/functions" xmlns:fake="http://fakePropertiesForDemo"
     xmlns:uwmisc="http://uw.edu/all-purpose-namespace/" exclude-result-prefixes="marc ex uwf uwmisc"
     version="3.0">
-    <xsl:include href="m2r-relators.xsl"/>
-    <xsl:include href="getmarc.xsl"/>
+    <xsl:import href="m2r-relators.xsl"/>
+    <xsl:import href="getmarc.xsl"/>
     <!-- field level templates - wor, exp, man, ite -->
     <xsl:template
         match="marc:datafield[@tag = '600'] | marc:datafield[@tag = '610'] | marc:datafield[@tag = '611']"

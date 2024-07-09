@@ -45,6 +45,7 @@
     <xsl:include href="m2r-3xx.xsl"/>
     <xsl:include href="m2r-4xx.xsl"/>
     <xsl:include href="m2r-5xx.xsl"/>
+    <xsl:include href="m2r-6xx.xsl"/>
     
     <!-- This template matches at the root
         It's only purpose is to apply-templates to the marc:collection -->
