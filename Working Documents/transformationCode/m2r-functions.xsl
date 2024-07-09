@@ -28,17 +28,7 @@
     xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     version="3.0">
-    <xsl:variable name="collBase">http://marc2rda.edu/fake/colMan/</xsl:variable>
-    
-    <xsl:variable name="lookupDoc" select="document('lookup/$5-preprocessedRDA.xml')"/>
-    <xsl:variable name="locSubjectSchemesDoc" select="document('https://id.loc.gov/vocabulary/subjectSchemes.rdf')"/>
-    <xsl:variable name="locGenreFormSchemesDoc" select="document('https://id.loc.gov/vocabulary/genreFormSchemes.rdf')"/>
-    <xsl:variable name="locFingerprintSchemesDoc" select="document('https://id.loc.gov/vocabulary/fingerprintschemes.rdf')"/>
-    <xsl:variable name="locStandardIdSchemesDoc" select="document('https://id.loc.gov/vocabulary/identifiers.rdf')"/>
-    
-    <xsl:key name="normCode" match="rdf:Description[rdaad:P50006]" use="rdaad:P50006"/>
-    <xsl:key name="schemeKey" match="madsrdf:hasMADSSchemeMember" use="madsrdf:Authority/@rdf:about"/>
-    
+
     <xsl:function name="uwf:test" expand-text="yes">
         <xsl:param name="subfield"/>
         <xsl:param name="property"/>
@@ -118,11 +108,16 @@
         </xsl:for-each>
     </xsl:function>
     
-    <!-- returns the minted IRI for the organization's collection if found, otherwise outputs comment -->
+<!-- $5 FUNCTIONS -->
+    <xsl:variable name="collBase">http://marc2rda.edu/fake/colMan/</xsl:variable>
+    <xsl:variable name="lookup5Doc" select="document('lookup/$5-preprocessedRDA.xml')"/>
+    <xsl:key name="normCode" match="rdf:Description[rdaad:P50006]" use="rdaad:P50006"/>
+    
+    <!-- returns "is holding of" the minted IRI for the organization's collection if found, otherwise outputs comment -->
     <xsl:function name="uwf:S5lookup" expand-text="yes">
         <xsl:param name="code5"/>
         <xsl:variable name="lowerCode5" select="lower-case($code5)"/>
-        <xsl:variable name="lookup5" select="$lookupDoc/key('normCode',$lowerCode5)/rdaad:P50006[@rdf:datatype='http://id.loc.gov/datatypes/orgs/normalized']"/>
+        <xsl:variable name="lookup5" select="$lookup5Doc/key('normCode',$lowerCode5)/rdaad:P50006[@rdf:datatype='http://id.loc.gov/datatypes/orgs/normalized']"/>
         <xsl:choose>
             <xsl:when test="$lookup5">
                 <rdaio:P40161 rdf:resource="{$collBase}{$lookup5}"/>
@@ -137,7 +132,7 @@
     <xsl:function name="uwf:S5NameLookup" expand-text="yes">
         <xsl:param name="code5"/>
         <xsl:variable name="lowerCode5" select="lower-case($code5)"/>
-        <xsl:variable name="lookup5Name" select="$lookupDoc/key('normCode',$lowerCode5)/rdaad:P50375"/>
+        <xsl:variable name="lookup5Name" select="$lookup5Doc/key('normCode',$lowerCode5)/rdaad:P50375"/>
         <xsl:choose>
             <xsl:when test="$lookup5Name">
                 <xsl:value-of select="$lookup5Name"/>
@@ -147,6 +142,15 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
+    
+<!-- $2 FUNCTIONS -->
+    
+    <xsl:variable name="locSubjectSchemesDoc" select="document('https://id.loc.gov/vocabulary/subjectSchemes.rdf')"/>
+    <xsl:variable name="locGenreFormSchemesDoc" select="document('https://id.loc.gov/vocabulary/genreFormSchemes.rdf')"/>
+    <xsl:variable name="locFingerprintSchemesDoc" select="document('https://id.loc.gov/vocabulary/fingerprintschemes.rdf')"/>
+    <xsl:variable name="locStandardIdSchemesDoc" select="document('https://id.loc.gov/vocabulary/identifiers.rdf')"/>
+    
+    <xsl:key name="schemeKey" match="madsrdf:hasMADSSchemeMember" use="madsrdf:Authority/@rdf:about"/>
     
     <xsl:function name="uwf:S2" expand-text="yes">
         <xsl:param name="marcField"/>
@@ -233,15 +237,9 @@
         </xsl:choose>
     </xsl:function>
     
-    <xsl:function name="uwf:stripEndPunctuation">
-        <xsl:param name="string"/>
-            <xsl:variable name="normalString" select="normalize-space($string)"/>
-            <xsl:value-of select="substring($normalString, 1, string-length($normalString) - 1)"/>
-            <xsl:value-of select="translate(substring($normalString, string-length($normalString)), ',', '')"/>
-    </xsl:function>
+<!-- CONCEPT FUNCTIONS -->
     
-    <!-- CONCEPT FUNCTIONS -->
-    
+    <!-- lookup a scheme code and return the skos:inScheme with the associated IRI from id.loc.gov -->
     <xsl:function name="uwf:S2Concept" expand-text="true">
         <xsl:param name="code2"/>
         <xsl:choose>
@@ -257,12 +255,14 @@
         </xsl:choose>
     </xsl:function>
     
+    <!-- return an IRI for a concept generated from the scheme and the provided value -->
     <xsl:function name="uwf:conceptIRI">
         <xsl:param name="scheme"/>
         <xsl:param name="value"/>
         <xsl:value-of select="'http://marc2rda.edu/fake/concept/'||lower-case($scheme)||encode-for-uri(translate(lower-case($value), ' ', ''))"/>
     </xsl:function>
     
+    <!-- return an rdf:Description for a concept, with the prefLabel, scheme, and notation as provided -->
     <xsl:function name="uwf:mintConcept">
         <xsl:param name="value"/>
         <xsl:param name="prefLabel"/>
@@ -284,5 +284,12 @@
             </xsl:if>
             <xsl:copy-of select="uwf:S2Concept($scheme)"/>
         </rdf:Description>
+    </xsl:function>
+    
+    <xsl:function name="uwf:stripEndPunctuation">
+        <xsl:param name="string"/>
+        <xsl:variable name="normalString" select="normalize-space($string)"/>
+        <xsl:value-of select="substring($normalString, 1, string-length($normalString) - 1)"/>
+        <xsl:value-of select="translate(substring($normalString, string-length($normalString)), ',', '')"/>
     </xsl:function>
 </xsl:stylesheet>
