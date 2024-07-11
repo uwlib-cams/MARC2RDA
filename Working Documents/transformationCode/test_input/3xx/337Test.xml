@@ -6,6 +6,24 @@
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">337-test1</marc:controlfield>
         
+        <!-- rdamt term -->
+<!--        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">unmediated</marc:subfield>
+            <marc:subfield code="2">rdamt</marc:subfield>
+        </marc:datafield>-->
+        
+        <!-- $1 -->
+<!--    <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="1">http://www.rdaregistry.info/termList/RDAMediaType/#1001</marc:subfield>
+        </marc:datafield>-->
+        
+        <!-- $0 with others -->
+<!--        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">audio</marc:subfield>
+            <marc:subfield code="2">rdamt</marc:subfield>
+            <marc:subfield code="0">http://www.rdaregistry.info/termList/RDAMediaType/#1001</marc:subfield>
+        </marc:datafield>-->
+        
         <!-- abab --><!--
         <marc:datafield tag="337" ind1=" " ind2=" ">
             <marc:subfield code="a">audio</marc:subfield>

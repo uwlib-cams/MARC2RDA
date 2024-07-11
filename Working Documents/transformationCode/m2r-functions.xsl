@@ -149,7 +149,7 @@
     <xsl:variable name="locSubjectSchemesDoc" select="document('https://id.loc.gov/vocabulary/subjectSchemes.rdf')"/>
     <xsl:variable name="locGenreFormSchemesDoc" select="document('https://id.loc.gov/vocabulary/genreFormSchemes.rdf')"/>
     <xsl:variable name="locFingerprintSchemesDoc" select="document('https://id.loc.gov/vocabulary/fingerprintschemes.rdf')"/>
-    <xsl:variable name="locStandardIdSchemesDoc" select="document('https://id.loc.gov/vocabulary/identifiers.rdf')"/>
+    <xsl:variable name="locIdentifiersDoc" select="document('https://id.loc.gov/vocabulary/identifiers.rdf')"/>
     <xsl:variable name="locAccessRestrictionTermDoc" select="document('https://id.loc.gov/vocabulary/accessrestrictionterm.rdf')"/>
     
     <xsl:key name="schemeKey" match="madsrdf:hasMADSSchemeMember" use="madsrdf:Authority/@rdf:about"/>
@@ -169,7 +169,7 @@
                     </xsl:attribute>
                 </rdan:P80069>
             </xsl:when>
-            <xsl:when test="$locStandardIdSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/identifiers/', lower-case($code2)))">
+            <xsl:when test="$locIdentifiersDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/identifiers/', lower-case($code2)))">
                 <rdan:P80069>
                     <xsl:attribute name="rdf:resource">
                         <xsl:value-of select="concat('http://id.loc.gov/vocabulary/identifiers/', lower-case($code2))"/>
@@ -198,44 +198,6 @@
             <xsl:otherwise>
                 <xsl:comment>$2 value of {$code2} has been lost</xsl:comment>
             </xsl:otherwise>
-        </xsl:choose>
-    </xsl:function>
-    
-    <!-- untested -->
-    <xsl:function name="uwf:ind2Thesaurus">
-        <xsl:param name="ind2"/>
-        <xsl:choose>
-            <xsl:when test="$ind2 = '0'">
-                <xsl:attribute name="rdf:datatype">
-                    <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/lcsh'"/>
-                </xsl:attribute>
-            </xsl:when>
-            <xsl:when test="$ind2 = '1'">
-                <xsl:attribute name="rdf:datatype">
-                    <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/cyac'"/>
-                </xsl:attribute>
-            </xsl:when>
-            <xsl:when test="$ind2 = '2'">
-                <xsl:attribute name="rdf:datatype">
-                    <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/mesh'"/>
-                </xsl:attribute>
-            </xsl:when>
-            <xsl:when test="$ind2 = '3'">
-                <xsl:attribute name="rdf:datatype">
-                    <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/nal'"/>
-                </xsl:attribute>
-            </xsl:when>
-            <xsl:when test="$ind2 = '5'">
-                <xsl:attribute name="rdf:datatype">
-                    <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/cash'"/>
-                </xsl:attribute>
-            </xsl:when>
-            <xsl:when test="$ind2 = '6'">
-                <xsl:attribute name="rdf:datatype">
-                    <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/rvm'"/>
-                </xsl:attribute>
-            </xsl:when>
-            <xsl:otherwise/>
         </xsl:choose>
     </xsl:function>
     
@@ -312,19 +274,54 @@
     <xsl:variable name="lookupRdaDoc" select="document('lookup/rdaVocabularies.xml')"/>
     <xsl:key name="sourceCode" match="uwmisc:row" use="uwmisc:sourceCode"/>
     <xsl:key name="rdaCode" match="skos:Concept" use="skos:prefLabel"/>
-    <xsl:function name="uwf:rdaLookup">
+    <xsl:key name="lcCode" match="madsrdf:Authority" use="@rdf:about"/>
+    <xsl:key name="lcTerm" match="madsrdf:Authority" use="madsrdf:authoritativeLabel"/>
+    
+    <xsl:function name="uwf:rdaTermLookup" expand-text="yes">
         <xsl:param name="rdaCode"/>
-        <xsl:param name="prefLabel"/>
-        <xsl:if test="$lookupRdaDoc/uwmisc:root/uwmisc:row/key('sourceCode', $rdaCode)">
-            <xsl:variable name="lookupDoc" select="$lookupRdaDoc/uwmisc:root/uwmisc:row/key('sourceCode', $rdaCode)/uwmisc:lookupDoc/@iri"/>
-            <xsl:comment>
-                <xsl:value-of select="$lookupDoc"/>
-            </xsl:comment>
-            <xsl:if test="document($lookupDoc)/rdf:RDF/skos:Concept/key('rdaCode', $prefLabel)">
-                <xsl:value-of select="document($lookupDoc)/rdf:RDF/skos:Concept/key('rdaCode', $prefLabel)/@rdf:about"/>
-            </xsl:if>
-        </xsl:if>
-        
+        <xsl:param name="term"/>
+        <xsl:choose>
+            <xsl:when test="$lookupRdaDoc/uwmisc:root/uwmisc:row/key('sourceCode', $rdaCode)">
+                <xsl:variable name="lookupDoc" select="$lookupRdaDoc/uwmisc:root/uwmisc:row/key('sourceCode', $rdaCode)/uwmisc:lookupDoc/@iri"/>
+                <xsl:choose>
+                    <xsl:when test="contains($lookupDoc, 'id.loc.gov')">
+                        <xsl:if test="document($lookupDoc)/rdf:RDF/madsrdf:MADSScheme/madsrdf:hasMADSSchemeMember/madsrdf:Authority/key('lcTerm', $term)">
+                            <xsl:value-of select="document($lookupDoc)/rdf:RDF/madsrdf:MADSScheme/madsrdf:hasMADSSchemeMember/madsrdf:Authority/key('lcTerm', $term)/@rdf:about"/>
+                        </xsl:if>
+                    </xsl:when>
+                    <xsl:when test="contains($lookupDoc, 'rdaregistry')">
+                        <xsl:if test="document($lookupDoc)/rdf:RDF/skos:Concept/key('rdaCode', $term)">
+                            <xsl:value-of select="document($lookupDoc)/rdf:RDF/skos:Concept/key('rdaCode', $term)/@rdf:about"/>
+                        </xsl:if>   
+                    </xsl:when>
+                    <xsl:otherwise/>
+                </xsl:choose>
+            </xsl:when>
+            <!-- otherwise rda code not in rdaVocabularies.xml, cannot lookup term -->
+            <xsl:otherwise/>
+        </xsl:choose>
+    </xsl:function>
+    
+    <xsl:function name="uwf:rdaCodeLookup" expand-text="yes">
+        <xsl:param name="rdaCode"/>
+        <xsl:param name="code"/>
+        <xsl:choose>
+            <xsl:when test="$lookupRdaDoc/uwmisc:root/uwmisc:row/key('sourceCode', $rdaCode)">
+                <xsl:variable name="lookupDoc" select="$lookupRdaDoc/uwmisc:root/uwmisc:row/key('sourceCode', $rdaCode)/uwmisc:lookupDoc/@iri"/>
+                <xsl:variable name="codeIRI"
+                    select="substring-before($lookupDoc, '.rdf')||'/'||$code"/>
+                <xsl:choose>
+                    <!-- if we're looking up a code, it has to be in id.loc.gov, not rdaregistry -->
+                    <xsl:when test="contains($lookupDoc, 'id.loc.gov')">
+                        <xsl:if test="document($lookupDoc)/rdf:RDF/madsrdf:MADSScheme/madsrdf:hasMADSSchemeMember/madsrdf:Authority/key('lcCode', $codeIRI)">
+                            <xsl:value-of select="document($lookupDoc)/rdf:RDF/madsrdf:MADSScheme/madsrdf:hasMADSSchemeMember/madsrdf:Authority/key('lcCode', $codeIRI)/@rdf:about"/>
+                        </xsl:if>
+                    </xsl:when>
+                    <xsl:otherwise/>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise/>
+        </xsl:choose>
     </xsl:function>
     
     <xsl:function name="uwf:stripEndPunctuation">

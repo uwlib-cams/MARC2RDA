@@ -111,13 +111,14 @@
                 <xsl:when test="marc:subfield[@code = '2']">
                     <xsl:variable name="sub2" select="marc:subfield[@code = '2']"/>
                     <xsl:choose>
-                        <!-- when $2 is rdamedia -->
-                        <xsl:when test="contains(marc:subfield[@code = '2'], 'rdamedia')">
-                            
-                        </xsl:when>
-                        <!-- when $2 is rdamt -->
-                        <xsl:when test="contains(marc:subfield[@code = '2'], 'rdamt')">
-                            
+                        <!-- when $2 starts with rda -->
+                        <xsl:when test="contains(marc:subfield[@code = '2'], 'rda')">
+                            <xsl:for-each select="marc:subfield[@code = 'a']">
+                                <rdam:P30002 rdf:resource="{uwf:rdaTermLookup($sub2, .)}"/>
+                            </xsl:for-each>
+                            <xsl:for-each select="marc:subfield[@code = 'b']">
+                                <rdam:P30002 rdf:resource="{uwf:rdaCodeLookup($sub2, .)}"/>
+                            </xsl:for-each>
                         </xsl:when>
                         <!-- other $2s -->
                         <!-- ignoring b, can't figure it out :( -->
@@ -154,7 +155,23 @@
                 </xsl:when>
                 <!-- no $2 -->
                 <xsl:otherwise>
-                    <rdamd:P30002/>
+                    <xsl:choose>
+                        <!-- use $a's as string values, if no a's then use b's -->
+                        <xsl:when test="marc:subfield[@code = 'a']">
+                            <xsl:for-each select="marc:subfield[@code = 'a']">
+                                <rdamd:P30002>
+                                    <xsl:value-of select="."/>
+                                </rdamd:P30002>
+                            </xsl:for-each>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:for-each select="marc:subfield[@code = 'b']">
+                                <rdamd:P30002>
+                                    <xsl:value-of select="."/>
+                                </rdamd:P30002>
+                            </xsl:for-each>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:if>
@@ -203,14 +220,6 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:function name="uwf:abTest">
-        <xsl:param name="ab"/>
-        <xsl:value-of select="if (every $a in $ab satisfies 
-            ($a[@code = 'a'][following-sibling::marc:subfield[1][@code = 'b']] and
-            $a[@code = 'b'][preceding-sibling::marc:subfield[1][@code = 'a']])) then 'Yes' else 'No'"/>
-        
-    </xsl:function>
-    
     <xsl:template name="F337-iri">
         <!-- If $1 value (or multiple), use those -->
         <xsl:for-each select="marc:subfield[@code = '1']">
@@ -225,7 +234,6 @@
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
-    
     
     <xsl:template name="F338-string">
         <xsl:for-each select="marc:subfield[@code = 'a']">

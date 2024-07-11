@@ -41,12 +41,7 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/337-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/337-test1exp"/>
-      <fake:marcfield>F337 ## $a audio $2 isbdmedia</fake:marcfield>
-      <rdam:P30002 rdf:resource="http://marc2rda.edu/fake/concept/isbdmedia/audio"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/isbdmedia/audio">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>audio</skos:prefLabel>
-      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/isbdmedia"/>
+      <fake:marcfield>F337 ## $a unmediated $2 rdamt</fake:marcfield>
+      <rdam:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
    </rdf:Description>
 </rdf:RDF>
