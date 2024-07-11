@@ -99,6 +99,7 @@
         </xsl:for-each>
     </xsl:template>
     
+    <!-- 337 -->
     <xsl:template name="F337-string" expand-text="yes">
         <!-- if there are no IRIs to use, continue to $a's and $b's -->
         <xsl:if test="not(marc:subfield[@code = '1']) and not(starts-with(marc:subfield[@code = '0'], 'http'))">

@@ -51,16 +51,14 @@
         <xsl:call-template name="F336-xx-01-iri"/>
     </xsl:template>
     
-    <xsl:template match="marc:datafield[@tag = '337']" mode="man">
-        <xsl:call-template name="getmarc"/>
-        <!-- Always maps to rdam:P30002, no matter the value -->
-        <!-- Accounted for: $a, $b, $0, $1 -->
-        <!--Not accounted for: $2, $3, $6, $7, $8 -->
+    <xsl:template match="marc:datafield[@tag = '337'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '337']" 
+        mode="man">
         <xsl:call-template name="F337-string"/>
         <xsl:call-template name="F337-iri"/>
     </xsl:template>
     
-    <xsl:template match="marc:datafield[@tag = '337']" mode="con">
+    <xsl:template match="marc:datafield[@tag = '337'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '337']" 
+        mode="con">
         <xsl:call-template name="F337-concept"/>
     </xsl:template>
     
