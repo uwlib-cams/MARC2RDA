@@ -18,7 +18,7 @@
     <row>
         <vocabulary>Term and Code List for RDA Carrier Types</vocabulary>
         <sourceCode>rdacarrier</sourceCode>
-        <lookupDoc iri="https://id.loc.gov/vocabulary/carriers.rdf"/>
+        <lookupDoc iri="http://id.loc.gov/vocabulary/carriers.rdf"/>
     </row>
     <row>
         <vocabulary>RDA Colour Content</vocabulary>
@@ -33,7 +33,7 @@
     <row>
         <vocabulary>Term and Code List for RDA Content Types</vocabulary>
         <sourceCode>rdacontent</sourceCode>
-        <lookupDoc iri="https://id.loc.gov/vocabulary/contentTypes.rdf"/>
+        <lookupDoc iri="http://id.loc.gov/vocabulary/contentTypes.rdf"/>
     </row>
     <row>
         <vocabulary>RDA Configuration of Playback Channels</vocabulary>
@@ -93,7 +93,7 @@
     <row>
         <vocabulary>RDA Illustrative Content</vocabulary>
         <sourceCode>rdaill</sourceCode>
-        <lookupDoc iri="https://www.rdaregistry.info/xml/termList/IllusContent.xml"/>
+        <lookupDoc iri="http://www.rdaregistry.info/xml/termList/IllusContent.xml"/>
     </row>
     <row>
         <vocabulary>RDA Layout</vocabulary>
@@ -108,7 +108,7 @@
     <row>
         <vocabulary>Term and Code List for RDA Media Types</vocabulary>
         <sourceCode>rdamedia</sourceCode>
-        <lookupDoc iri="https://id.loc.gov/vocabulary/mediaTypes.rdf"/>
+        <lookupDoc iri="http://id.loc.gov/vocabulary/mediaTypes.rdf"/>
     </row>
     <row>
         <vocabulary>RDA Mode of Issuance</vocabulary>
@@ -153,7 +153,7 @@
     <row>
         <vocabulary>RDA Sound Content</vocabulary>
         <sourceCode>rdasco</sourceCode>
-        <lookupDoc iri="https://www.rdaregistry.info/xml/termList/soundCont.xml"/>
+        <lookupDoc iri="http://www.rdaregistry.info/xml/termList/soundCont.xml"/>
     </row>
     <row>
         <vocabulary>RDA Special Playback Characteristic</vocabulary>

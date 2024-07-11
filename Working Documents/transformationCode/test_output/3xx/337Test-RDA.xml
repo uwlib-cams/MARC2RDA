@@ -41,7 +41,13 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/337-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/337-test1exp"/>
-      <fake:marcfield>F337 ## $a unmediated $2 rdamt</fake:marcfield>
-      <rdam:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+      <fake:marcfield>F337 ## $a computer $a unmediated $3 test3</fake:marcfield>
+      <rdamd:P30002>computer</rdamd:P30002>
+      <rdamd:P30137>Media type computer applies to the manifestation's test3</rdamd:P30137>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30137>Media type unmediated applies to the manifestation's test3</rdamd:P30137>
+      <fake:marcfield>F337 ## $b c $3 test3</fake:marcfield>
+      <rdamd:P30002>c</rdamd:P30002>
+      <rdamd:P30137>Media type c applies to the manifestation's test3</rdamd:P30137>
    </rdf:Description>
 </rdf:RDF>
