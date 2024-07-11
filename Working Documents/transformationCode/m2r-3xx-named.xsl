@@ -98,35 +98,135 @@
             <rdaeo:P20001 rdf:resource="{.}"/>
         </xsl:for-each>
     </xsl:template>
+    
     <xsl:template name="F337-string">
-        <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdamd:P30002>
-                <xsl:value-of select="."/>
-            </rdamd:P30002>
-        </xsl:for-each>
-        <xsl:for-each select="marc:subfield[@code = 'b']">
-            <rdamd:P30002>
-                <xsl:value-of select="."/>
-            </rdamd:P30002>
-        </xsl:for-each>
-        <xsl:for-each select="marc:subfield[@code = '0']">
-            <xsl:if test="not(contains(., 'http:'))">
-                <rdamd:P30002>
-                    <xsl:value-of select="."/>
-                </rdamd:P30002>
-            </xsl:if>
-        </xsl:for-each>
+        <xsl:variable name="aTest" select="if (every $a in ./marc:subfield[@code = 'a'] satisfies 
+            ($a[following-sibling::marc:subfield[1][@code = 'b']])) then 'Yes' else 'No'"/>
+        <xsl:variable name="bTest" select="if (every $b in ./marc:subfield[@code = 'b'] satisfies
+            ($b[preceding-sibling::marc:subfield[1][@code = 'a']])) then 'Yes' else 'No'"/>
+        
+        <!-- if there are no IRIs to use, continue to $a's and $b's -->
+        <xsl:if test="not(marc:subfield[@code = '1']) and not(starts-with(marc:subfield[@code = '0'], 'http'))">
+            <xsl:choose>
+                <xsl:when test="marc:subfield[@code = '2']">
+                    <xsl:variable name="sub2" select="marc:subfield[@code = '2']"/>
+                    <xsl:choose>
+                        <!-- when $2 is rdamedia -->
+                        <xsl:when test="contains(marc:subfield[@code = '2'], 'rdamedia')">
+                            
+                        </xsl:when>
+                        <!-- when $2 is rdamt -->
+                        <xsl:when test="contains(marc:subfield[@code = '2'], 'rdamt')">
+                            
+                        </xsl:when>
+                        <!-- other $2s -->
+                        <!-- ignoring b, can't figure it out :( -->
+                        <xsl:otherwise>
+                            <xsl:choose>
+                                <!-- no b's -->
+                                <xsl:when test="not(marc:subfield[@code = 'b'])">
+                                    <xsl:for-each select="marc:subfield[@code = 'a']">
+                                        <rdam:P30002 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
+                                    </xsl:for-each>
+                                </xsl:when>
+                                <!-- no a's - use b's -->
+                                <xsl:when test="not(marc:subfield[@code = 'a'])">
+                                    <xsl:for-each select="marc:subfield[@code = 'b']">
+                                        <rdam:P30002 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
+                                    </xsl:for-each>
+                                </xsl:when>
+                                <!-- a's and b's in abab pattern -->
+                                <xsl:when test="$aTest = 'Yes' and $bTest = 'Yes'">
+                                    <xsl:comment> every a has a b</xsl:comment>
+                                    <xsl:for-each select="marc:subfield[@code = 'a']">
+                                        <rdam:P30002 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
+                                    </xsl:for-each>
+                                </xsl:when>
+                                <!-- a's and b's in any other pattern - ignore b's -->
+                                <xsl:otherwise>
+                                    <xsl:for-each select="marc:subfield[@code = 'a']">
+                                        <rdam:P30002 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
+                                    </xsl:for-each>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:when>
+                <!-- no $2 -->
+                <xsl:otherwise>
+                    <rdamd:P30002/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:if>
     </xsl:template>
+    
+    <xsl:template name="F337-concept">
+        <xsl:variable name="aTest" select="if (every $a in ./marc:subfield[@code = 'a'] satisfies 
+            ($a[following-sibling::marc:subfield[1][@code = 'b']])) then 'Yes' else 'No'"/>
+        <xsl:variable name="bTest" select="if (every $b in ./marc:subfield[@code = 'b'] satisfies
+            ($b[preceding-sibling::marc:subfield[1][@code = 'a']])) then 'Yes' else 'No'"/>
+        
+        <!-- mint concepts when $2 is not rdamedia or rdamt -->
+        <xsl:if test="not(marc:subfield[@code = '1']) and not(starts-with(marc:subfield[@code = '0'], 'http'))">
+            <xsl:if test="marc:subfield[@code = '2']">
+                <xsl:variable name="sub2" select="marc:subfield[@code = '2']"/>
+                    <xsl:if test="not(contains($sub2, 'rdamedia')) and not(contains($sub2, 'rdamt'))">
+                        <xsl:choose>
+                            <!-- no b's -->
+                            <xsl:when test="not(marc:subfield[@code = 'b'])">
+                                <xsl:for-each select="marc:subfield[@code = 'a']">
+                                    <xsl:copy-of select="uwf:mintConcept(., ., $sub2, '', '337')"/>
+                                </xsl:for-each>
+                            </xsl:when>
+                            <!-- no a's - use b's -->
+                            <xsl:when test="not(marc:subfield[@code = 'a'])">
+                                <xsl:for-each select="marc:subfield[@code = 'b']">
+                                    <xsl:copy-of select="uwf:mintConcept(., ., $sub2, '', '337')"/>
+                                </xsl:for-each>
+                            </xsl:when>
+                            <!-- a's and b's in abab pattern -->
+                            <xsl:when test="$aTest = 'Yes' and $bTest = 'Yes'">
+                                <xsl:comment> every a has a b</xsl:comment>
+                                <xsl:for-each select="marc:subfield[@code = 'a']">
+                                    <xsl:copy-of select="uwf:mintConcept(., ., $sub2, ./following-sibling::marc:subfield[1], '337')"/>
+                                </xsl:for-each>
+                            </xsl:when>
+                            <!-- a's and b's in any other pattern - ignore b's -->
+                            <xsl:otherwise>
+                                <xsl:for-each select="marc:subfield[@code = 'a']">
+                                    <xsl:copy-of select="uwf:mintConcept(., ., $sub2, '', '337')"/>
+                                </xsl:for-each>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:if>
+            </xsl:if>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:function name="uwf:abTest">
+        <xsl:param name="ab"/>
+        <xsl:value-of select="if (every $a in $ab satisfies 
+            ($a[@code = 'a'][following-sibling::marc:subfield[1][@code = 'b']] and
+            $a[@code = 'b'][preceding-sibling::marc:subfield[1][@code = 'a']])) then 'Yes' else 'No'"/>
+        
+    </xsl:function>
+    
     <xsl:template name="F337-iri">
-        <xsl:for-each select="marc:subfield[@code = '0']">
-            <xsl:if test="contains(., 'http:')">
-                <rdamo:P30002 rdf:resource="{.}"/>
-            </xsl:if>
-        </xsl:for-each>
+        <!-- If $1 value (or multiple), use those -->
         <xsl:for-each select="marc:subfield[@code = '1']">
-            <rdamo:P30002 rdf:resource="{.}"/>
+            <rdam:P30002 rdf:resource="{.}"/>
         </xsl:for-each>
+        <!-- If there's no $1 but there are $0s that begin with http(s), use these -->
+        <xsl:if test="not(marc:subfield[@code = '1'])">
+            <xsl:for-each select="marc:subfield[@code = '0']">
+                <xsl:if test="starts-with(., 'http')">
+                    <rdam:P30002 rdf:resource="{.}"/>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:if>
     </xsl:template>
+    
+    
     <xsl:template name="F338-string">
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdamd:P30001>

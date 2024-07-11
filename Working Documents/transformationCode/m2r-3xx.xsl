@@ -37,6 +37,12 @@
             </xsl:if>
         </rdamd:P30137>
     </xsl:template>
+    
+<!--    <xsl:template match="marc:datafield[@tag = '334']" 
+        mode="man">
+        <xsl:copy-of select="uwf:rdaLookup('rdami', 'single unit')"/>
+    </xsl:template>-->
+    
     <xsl:template match="marc:datafield[@tag = '336']" mode="exp">
         <xsl:call-template name="getmarc"/>
         <!-- Accounted for: $a, $b, $2-temporary, $3-partial, $0, $1 -->
@@ -44,6 +50,7 @@
         <xsl:call-template name="F336-xx-ab0-string"/>
         <xsl:call-template name="F336-xx-01-iri"/>
     </xsl:template>
+    
     <xsl:template match="marc:datafield[@tag = '337']" mode="man">
         <xsl:call-template name="getmarc"/>
         <!-- Always maps to rdam:P30002, no matter the value -->
@@ -52,6 +59,11 @@
         <xsl:call-template name="F337-string"/>
         <xsl:call-template name="F337-iri"/>
     </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '337']" mode="con">
+        <xsl:call-template name="F337-concept"/>
+    </xsl:template>
+    
     <xsl:template match="marc:datafield[@tag = '338']" mode="man">
         <xsl:call-template name="getmarc"/>
         <!-- Always maps to rdae:P30001, no matter the value -->

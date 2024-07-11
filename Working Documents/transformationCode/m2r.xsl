@@ -89,6 +89,7 @@
             xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
             xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
             xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+            xmlns:uwmisc="http://uw.edu/all-purpose-namespace/"
             xmlns:ex="http://fakeIRI2.edu/">
             <!-- at some point, filtering for aggregates will need to happen before apply-templates is called here -->
             <!--<xsl:apply-templates select="marc:record[not(marc:datafield[@tag='533'])]"/>-->

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    exclude-result-prefixes="xs marc ex uwf"
+    exclude-result-prefixes="xs marc ex uwf uwmisc"
     xmlns:marc="http://www.loc.gov/MARC21/slim"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ex="http://fakeIRI.edu/"
@@ -25,6 +25,7 @@
     xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
     xmlns:fake="http://fakePropertiesForDemo"
     xmlns:uwf="http://universityOfWashington/functions"
+    xmlns:uwmisc="http://uw.edu/all-purpose-namespace/"
     xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     version="3.0">
@@ -149,6 +150,7 @@
     <xsl:variable name="locGenreFormSchemesDoc" select="document('https://id.loc.gov/vocabulary/genreFormSchemes.rdf')"/>
     <xsl:variable name="locFingerprintSchemesDoc" select="document('https://id.loc.gov/vocabulary/fingerprintschemes.rdf')"/>
     <xsl:variable name="locStandardIdSchemesDoc" select="document('https://id.loc.gov/vocabulary/identifiers.rdf')"/>
+    <xsl:variable name="locAccessRestrictionTermDoc" select="document('https://id.loc.gov/vocabulary/accessrestrictionterm.rdf')"/>
     
     <xsl:key name="schemeKey" match="madsrdf:hasMADSSchemeMember" use="madsrdf:Authority/@rdf:about"/>
     
@@ -255,11 +257,24 @@
         </xsl:choose>
     </xsl:function>
     
+    <!-- lookup for field 506 concepts -->
+    <xsl:function name="uwf:S2Concept506" expand-text="true">
+        <xsl:param name="code2"/>
+        <xsl:choose>
+            <xsl:when test="$locAccessRestrictionTermDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/accessrestrictionterm/', lower-case($code2)))">
+                <skos:inScheme rdf:resource="{concat('http://id.loc.gov/vocabulary/accessrestrictionterm/', lower-case($code2))}"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:comment>$2 value of {$code2} has been lost</xsl:comment>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
     <!-- return an IRI for a concept generated from the scheme and the provided value -->
     <xsl:function name="uwf:conceptIRI">
         <xsl:param name="scheme"/>
         <xsl:param name="value"/>
-        <xsl:value-of select="'http://marc2rda.edu/fake/concept/'||lower-case($scheme)||encode-for-uri(translate(lower-case($value), ' ', ''))"/>
+        <xsl:value-of select="'http://marc2rda.edu/fake/concept/'||lower-case($scheme)||'/'||encode-for-uri(translate(lower-case($value), ' ', ''))"/>
     </xsl:function>
     
     <!-- return an rdf:Description for a concept, with the prefLabel, scheme, and notation as provided -->
@@ -268,6 +283,7 @@
         <xsl:param name="prefLabel"/>
         <xsl:param name="scheme"/>
         <xsl:param name="notation"/>
+        <xsl:param name="fieldNum"/>
         
         <rdf:Description rdf:about="{uwf:conceptIRI($scheme, $value)}">
             <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -282,8 +298,33 @@
                     <xsl:value-of select="$notation"/>
                 </skos:notation>
             </xsl:if>
-            <xsl:copy-of select="uwf:S2Concept($scheme)"/>
+            <xsl:choose>
+                <xsl:when test="$fieldNum = '506'">
+                    <xsl:copy-of select="uwf:S2Concept506($scheme)"/>
+                </xsl:when> 
+                <xsl:otherwise>
+                    <xsl:copy-of select="uwf:S2Concept($scheme)"/>
+                </xsl:otherwise>
+            </xsl:choose>
         </rdf:Description>
+    </xsl:function>
+    
+    <xsl:variable name="lookupRdaDoc" select="document('lookup/rdaVocabularies.xml')"/>
+    <xsl:key name="sourceCode" match="uwmisc:row" use="uwmisc:sourceCode"/>
+    <xsl:key name="rdaCode" match="skos:Concept" use="skos:prefLabel"/>
+    <xsl:function name="uwf:rdaLookup">
+        <xsl:param name="rdaCode"/>
+        <xsl:param name="prefLabel"/>
+        <xsl:if test="$lookupRdaDoc/uwmisc:root/uwmisc:row/key('sourceCode', $rdaCode)">
+            <xsl:variable name="lookupDoc" select="$lookupRdaDoc/uwmisc:root/uwmisc:row/key('sourceCode', $rdaCode)/uwmisc:lookupDoc/@iri"/>
+            <xsl:comment>
+                <xsl:value-of select="$lookupDoc"/>
+            </xsl:comment>
+            <xsl:if test="document($lookupDoc)/rdf:RDF/skos:Concept/key('rdaCode', $prefLabel)">
+                <xsl:value-of select="document($lookupDoc)/rdf:RDF/skos:Concept/key('rdaCode', $prefLabel)/@rdf:about"/>
+            </xsl:if>
+        </xsl:if>
+        
     </xsl:function>
     
     <xsl:function name="uwf:stripEndPunctuation">
