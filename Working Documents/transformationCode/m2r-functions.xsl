@@ -201,8 +201,6 @@
         </xsl:choose>
     </xsl:function>
     
-<!-- CONCEPT FUNCTIONS -->
-    
     <!-- lookup a scheme code and return the skos:inScheme with the associated IRI from id.loc.gov -->
     <xsl:function name="uwf:S2Concept" expand-text="true">
         <xsl:param name="code2"/>
@@ -220,6 +218,7 @@
     </xsl:function>
     
     <!-- lookup for field 506 concepts -->
+    <!-- there's a very small vocabulary for this, so it's worth a separate quicker function -->
     <xsl:function name="uwf:S2Concept506" expand-text="true">
         <xsl:param name="code2"/>
         <xsl:choose>
@@ -231,6 +230,8 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
+    
+<!-- CONCEPT FUNCTIONS -->
     
     <!-- return an IRI for a concept generated from the scheme and the provided value -->
     <xsl:function name="uwf:conceptIRI">
@@ -245,6 +246,7 @@
         <xsl:param name="scheme"/>
         <xsl:param name="notation"/>
         <xsl:param name="fieldNum"/>
+        
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <xsl:if test="$prefLabel">
             <skos:prefLabel>
@@ -269,7 +271,8 @@
         </xsl:if>
     </xsl:function>
     
-    <!-- RDA source vocabularies lookup functions -->
+<!-- RDA source vocabularies lookup functions -->
+    
     <!-- These functions use rdaVocabularies.xml to retrieve an rda or id.loc.gov document 
         based on a $2 code that begins with 'rda'
         these documents can then be used to match terms and codes from rda vocabularies to their IRIs-->
@@ -279,6 +282,7 @@
     <xsl:key name="lcTerm" match="madsrdf:Authority" use="madsrdf:authoritativeLabel"/>
     <xsl:key name="rdaCode" match="skos:Concept" use="@rdf:about"/>
     <xsl:key name="lcCode" match="madsrdf:Authority" use="@rdf:about"/>
+    
     <!-- If it's a term, a lookup needs to be done to find the IRI -->
     <xsl:function name="uwf:rdaTermLookup" expand-text="yes">
         <xsl:param name="rda2"/>
@@ -305,7 +309,7 @@
         </xsl:choose>
     </xsl:function>
     
-    <!-- If there's a code, we need to be checking that the resulting IRI exists -->
+    <!-- If there's a code, we are checking that the resulting IRI exists -->
     <xsl:function name="uwf:rdaCodeLookup" expand-text="yes">
         <xsl:param name="rda2"/>
         <xsl:param name="code"/>
@@ -334,6 +338,7 @@
         </xsl:choose>
     </xsl:function>
     
+<!-- string functions -->
     <xsl:function name="uwf:stripEndPunctuation">
         <xsl:param name="string"/>
         <xsl:variable name="normalString" select="normalize-space($string)"/>
