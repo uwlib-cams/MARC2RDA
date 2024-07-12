@@ -57,7 +57,7 @@
         <xsl:call-template name="F337-iri"/>
     </xsl:template>
     
-    <xsl:template match="marc:datafield[@tag = '337'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '337']" 
+    <xsl:template match="marc:datafield[@tag = '337'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '337-00']" 
         mode="con">
         <xsl:call-template name="F337-concept"/>
     </xsl:template>

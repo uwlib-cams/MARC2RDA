@@ -41,9 +41,13 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/337-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/337-test1exp"/>
-      <rdam:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
-      <rdamd:P30137>Media type http://rdaregistry.info/termList/RDAMediaType/1007 applies to the manifestation's test3</rdamd:P30137>
-      <rdam:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
-      <rdamd:P30137>Media type http://rdaregistry.info/termList/RDAMediaType/1007 applies to the manifestation's test3</rdamd:P30137>
+      <rdam:P30002 rdf:resource="http://marc2rda.edu/fake/concept/isbdmedia/audio"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/isbdmedia/audio">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>audio</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/isbdmedia"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>音频</skos:prefLabel>
    </rdf:Description>
 </rdf:RDF>

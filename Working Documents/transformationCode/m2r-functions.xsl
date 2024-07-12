@@ -239,27 +239,25 @@
         <xsl:value-of select="'http://marc2rda.edu/fake/concept/'||lower-case($scheme)||'/'||encode-for-uri(translate(lower-case($value), ' ', ''))"/>
     </xsl:function>
     
-    <!-- return an rdf:Description for a concept, with the prefLabel, scheme, and notation as provided -->
+    <!-- returns triples to fill an rdf:Description for a concept, with the prefLabel, scheme, and notation as provided -->
     <xsl:function name="uwf:mintConcept">
-        <xsl:param name="value"/>
         <xsl:param name="prefLabel"/>
         <xsl:param name="scheme"/>
         <xsl:param name="notation"/>
         <xsl:param name="fieldNum"/>
-        
-        <rdf:Description rdf:about="{uwf:conceptIRI($scheme, $value)}">
-            <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            <xsl:if test="$prefLabel">
-                <skos:prefLabel>
-                    <xsl:value-of select="$prefLabel"/>
-                </skos:prefLabel>
-            </xsl:if>
-            <xsl:if test="$notation">
-                <skos:notation>
-                    <xsl:comment>rdf:datatype to be added</xsl:comment>
-                    <xsl:value-of select="$notation"/>
-                </skos:notation>
-            </xsl:if>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <xsl:if test="$prefLabel">
+            <skos:prefLabel>
+                <xsl:value-of select="$prefLabel"/>
+            </skos:prefLabel>
+        </xsl:if>
+        <xsl:if test="$notation">
+            <skos:notation>
+                <xsl:comment>rdf:datatype to be added</xsl:comment>
+                <xsl:value-of select="$notation"/>
+            </skos:notation>
+        </xsl:if>
+        <xsl:if test="$scheme">
             <xsl:choose>
                 <xsl:when test="$fieldNum = '506'">
                     <xsl:copy-of select="uwf:S2Concept506($scheme)"/>
@@ -268,7 +266,7 @@
                     <xsl:copy-of select="uwf:S2Concept($scheme)"/>
                 </xsl:otherwise>
             </xsl:choose>
-        </rdf:Description>
+        </xsl:if>
     </xsl:function>
     
     <!-- RDA source vocabularies lookup functions -->
