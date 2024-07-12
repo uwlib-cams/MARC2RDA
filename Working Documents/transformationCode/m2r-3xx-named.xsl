@@ -226,7 +226,7 @@
             <xsl:if test="marc:subfield[@code = '2']">
                 <xsl:variable name="sub2" select="marc:subfield[@code = '2']"/>
                 <xsl:variable name="linked880">
-                    <xsl:if test="marc:subfield[@code = '6']">
+                    <xsl:if test="@tag = '337' and marc:subfield[@code = '6']">
                         <xsl:variable name="occNum"
                             select="concat('337-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                         <xsl:copy-of
