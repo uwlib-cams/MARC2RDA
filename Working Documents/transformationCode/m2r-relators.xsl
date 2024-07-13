@@ -57,10 +57,6 @@
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
-            <!-- If $0 or $2, it's authorized, construct an IRI from authorized access point -->
-            <xsl:when test="$field/marc:subfield[@code = '0'] or $field/marc:subfield[@code = '2']">
-                <xsl:value-of select="concat('http://marc2rda.edu/agent/', encode-for-uri(translate($ap, ' ', '')))"/>
-            </xsl:when>
             <!-- otherwise it's an opaque IRI to avoid conflating different agents under one IRI -->
             <xsl:otherwise>
                 <xsl:value-of select="'http://marc2rda.edu/agent/'||generate-id($field)"/>
@@ -77,7 +73,7 @@
             <xsl:when test="$field/marc:subfield[@code = '1'] or $field/marc:subfield[@code = '0'] or $field/marc:subfield[@code = '2']">
                 <xsl:value-of select="concat('http://marc2rda.edu/fake/nom/', encode-for-uri(translate($ap, ' ', '')))"/>
             </xsl:when>
-            <!-- otherwise it's an opaque IRI to avoid conflating different agents under one IRI -->
+            <!-- otherwise it's an opaque IRI -->
             <xsl:otherwise>
                 <xsl:value-of select="'http://marc2rda.edu/agent/'||generate-id($field)"/>
             </xsl:otherwise>
@@ -592,9 +588,9 @@
         <!-- ***** VARIABLES ****** -->
         <!-- IRI generated from field, this is a temporary value for now -->
         <xsl:variable name="agentIRI" select="uwf:agentIRI(.)"/>
-        <xsl:variable name="worIRI" select="concat($baseIRI, '/wor')"/>
-        <xsl:variable name="expIRI" select="concat($baseIRI, '/exp')"/>
-        <xsl:variable name="manIRI" select="concat($baseIRI, '/man')"/>
+        <xsl:variable name="worIRI" select="concat($baseIRI, 'wor')"/>
+        <xsl:variable name="expIRI" select="concat($baseIRI, 'exp')"/>
+        <xsl:variable name="manIRI" select="concat($baseIRI, 'man')"/>
         <xsl:variable name="iteIRI" select="concat($baseIRI, 'ite', generate-id())"/>
         
         <!-- namespace generated based on domain - this gives us the object namespace -->

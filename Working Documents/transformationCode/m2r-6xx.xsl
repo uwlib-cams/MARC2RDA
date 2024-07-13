@@ -89,7 +89,7 @@
                 </xsl:when>
                 <xsl:when test="@tag = '610' or @tag = '611'">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-                    <rdaao:P50251 rdf:resource="{$baseIRI||'/wor'}"/>
+                    <rdaao:P50251 rdf:resource="{$baseIRI||'wor'}"/>
                     <xsl:choose>
                         <xsl:when test="marc:subfield[@code = '0'] or marc:subfield[@code = '1'] or marc:subfield[@code = '2'] or @ind2 != '4'">
                             <rdaao:P50407 rdf:resource="{uwf:agentNomenIRI(.)}"/>
