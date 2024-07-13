@@ -22,6 +22,74 @@
     xmlns:uwf="http://universityOfWashington/functions" exclude-result-prefixes="marc uwf ex" version="3.0">
     <xsl:import href="m2r-functions.xsl"/>
     
+    <!-- 506 -->
+    <xsl:template name="F506-xx-abcdegqu3" expand-text="yes">
+        <xsl:if test="@ind1 = '1'">
+            <xsl:text>Restrictions apply: </xsl:text>
+        </xsl:if>
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
+            | marc:subfield[@code = 'd'] | marc:subfield[@code = 'e'] | marc:subfield[@code = 'g']
+            | marc:subfield[@code = 'q'] | marc:subfield[@code = 'u']">
+            <xsl:if test="@code = 'a'">
+                <xsl:text>Terms governing access: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'b'">
+                <xsl:text>Jurisdiction: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'c'">
+                <xsl:text>Physical access provisions: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'd'">
+                <xsl:text>Authorized users: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'e'">
+                <xsl:text>Authorization: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'g'">
+                <xsl:text>Availability date: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'q'">
+                <xsl:text>Supplying agency: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'u'">
+                <xsl:text>Additional information at: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="position() != last()">
+                <xsl:text>; </xsl:text>
+            </xsl:if>
+        </xsl:for-each>
+        <xsl:if test="marc:subfield[@code = '3']">
+            <xsl:text> (Applies to: {marc:subfield[@code = '3']})</xsl:text>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F506-xx-f2">
+        <xsl:if test="marc:subfield[@code = '2']">
+            <xsl:variable name="sub2" select="marc:subfield[@code = '2']"/>
+            
+            <xsl:variable name="linked880">
+                <xsl:if test="@tag = '506' and marc:subfield[@code = '6']">
+                    <xsl:variable name="occNum"
+                        select="concat('506-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                    <xsl:copy-of
+                        select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]"/>
+                </xsl:if>
+            </xsl:variable>
+            
+            <xsl:for-each select="marc:subfield[@code = 'f']">
+                <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
+                    <xsl:copy-of select="uwf:mintConcept(., $sub2, '', '506')"/>
+                    <xsl:if test="$linked880">
+                        <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'f']">
+                            <xsl:copy-of select="uwf:mintConcept(., '', '', '506')"/>
+                        </xsl:for-each>
+                    </xsl:if>
+                </rdf:Description>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    
+    <!-- 514 -->
     <xsl:template name="F514-xx-zabcdefghijkmu" expand-text="yes">
         <xsl:if test="marc:subfield[@code = 'z']">
             <xsl:text>{marc:subfield[@code = 'z']} </xsl:text>
