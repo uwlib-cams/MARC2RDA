@@ -51,6 +51,7 @@
         <xsl:call-template name="F336-xx-01-iri"/>
     </xsl:template>
     
+    <!-- 337 - Media Type -->
     <xsl:template match="marc:datafield[@tag = '337'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '337']" 
         mode="man">
         <xsl:call-template name="F337-string"/>
@@ -62,14 +63,18 @@
         <xsl:call-template name="F337-concept"/>
     </xsl:template>
     
-    <xsl:template match="marc:datafield[@tag = '338']" mode="man">
-        <xsl:call-template name="getmarc"/>
-        <!-- Always maps to rdae:P30001, no matter the value -->
-        <!-- Accounted for: $a, $b, $0, $1 -->
-        <!--Not accounted for: $2, $3, $6, $7, $8 -->
+    <!-- 338 - Carrier Type -->
+    <xsl:template match="marc:datafield[@tag = '338'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '338']" 
+        mode="man">
         <xsl:call-template name="F338-string"/>
         <xsl:call-template name="F338-iri"/>
     </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '338'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '338-00']" 
+        mode="con">
+        <xsl:call-template name="F338-concept"/>
+    </xsl:template>
+    
     <xsl:template match="marc:datafield[@tag = '340']" mode="man">
         <xsl:call-template name="getmarc"/>
         <!-- Accounted-for: $a $b $c $d $e $f $g $i $j $k $l $m $n $o $p $3-->
