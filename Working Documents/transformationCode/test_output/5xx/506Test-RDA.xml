@@ -41,14 +41,21 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/506-testman">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/506-testexp"/>
-      <fake:marcfield>F506 1# $3 Office files of Under Secretary $a No one may examine these records or obtain information from them or copies of them except by written permission; $b Secretary of the Treasury or his duly authorized representative;$cKept in remote storage; access requires 24 hours advance notice.</fake:marcfield>
+      <fake:marcfield>F506 1# $a Access restricted to users with a valid Harvard ID. $f License $2 star $5 MH</fake:marcfield>
       <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/506-testited17e6"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/506-testited17e6">
-      <fake:marcfield>F506 1# $3 Office files of Under Secretary $a No one may examine these records or obtain information from them or copies of them except by written permission; $b Secretary of the Treasury or his duly authorized representative;$cKept in remote storage; access requires 24 hours advance notice.</fake:marcfield>
+      <fake:marcfield>F506 1# $a Access restricted to users with a valid Harvard ID. $f License $2 star $5 MH</fake:marcfield>
       <rdaid:P40001>ited17e6</rdaid:P40001>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
       <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/506-testman"/>
-      <rdaid:P40047>Restrictions apply: Terms governing access: No one may examine these records or obtain information from them or copies of them except by written permission;; Jurisdiction: Secretary of the Treasury or his duly authorized representative;$cKept in remote storage; access requires 24 hours advance notice. (Applies to: Office files of Under Secretary)</rdaid:P40047>
+      <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/mh"/>
+      <rdaid:P40047>Restrictions apply: Terms governing access: Access restricted to users with a valid Harvard ID.</rdaid:P40047>
+      <rdai:P40047 rdf:resource="http://marc2rda.edu/fake/concept/star/license"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/star/license">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>License</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/accessrestrictionterm/star"/>
    </rdf:Description>
 </rdf:RDF>
