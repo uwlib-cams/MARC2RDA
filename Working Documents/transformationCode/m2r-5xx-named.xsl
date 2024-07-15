@@ -78,10 +78,10 @@
             
             <xsl:for-each select="marc:subfield[@code = 'f']">
                 <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
-                    <xsl:copy-of select="uwf:mintConcept(., $sub2, '', '506')"/>
+                    <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '506')"/>
                     <xsl:if test="$linked880">
                         <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'f']">
-                            <xsl:copy-of select="uwf:mintConcept(., '', '', '506')"/>
+                            <xsl:copy-of select="uwf:fillConcept(., '', '', '506')"/>
                         </xsl:for-each>
                     </xsl:if>
                 </rdf:Description>

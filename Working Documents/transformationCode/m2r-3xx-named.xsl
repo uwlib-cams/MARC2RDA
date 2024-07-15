@@ -246,10 +246,10 @@
                             <xsl:when test="not(marc:subfield[@code = 'b'])">
                                 <xsl:for-each select="marc:subfield[@code = 'a']">
                                     <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
-                                        <xsl:copy-of select="uwf:mintConcept(., $sub2, '', '337')"/>
+                                        <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '337')"/>
                                         <xsl:if test="$linked880">
                                             <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'a']">
-                                                <xsl:copy-of select="uwf:mintConcept(., '', '', '337')"/>
+                                                <xsl:copy-of select="uwf:fillConcept(., '', '', '337')"/>
                                             </xsl:for-each>
                                         </xsl:if>
                                     </rdf:Description>
@@ -259,10 +259,10 @@
                             <xsl:when test="not(marc:subfield[@code = 'a'])">
                                 <xsl:for-each select="marc:subfield[@code = 'b']">
                                     <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
-                                        <xsl:copy-of select="uwf:mintConcept(., $sub2, '', '337')"/>
+                                        <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '337')"/>
                                         <xsl:if test="$linked880">
                                             <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'b']">
-                                                <xsl:copy-of select="uwf:mintConcept(., '', '', '337')"/>
+                                                <xsl:copy-of select="uwf:fillConcept(., '', '', '337')"/>
                                             </xsl:for-each>
                                         </xsl:if>
                                     </rdf:Description>
@@ -272,10 +272,10 @@
                             <xsl:when test="$aTest = 'Yes' and $bTest = 'Yes'">
                                 <xsl:for-each select="marc:subfield[@code = 'a']">
                                     <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
-                                        <xsl:copy-of select="uwf:mintConcept( ., $sub2, ./following-sibling::marc:subfield[@code = 'b'][1], '337')"/>
+                                        <xsl:copy-of select="uwf:fillConcept( ., $sub2, ./following-sibling::marc:subfield[@code = 'b'][1], '337')"/>
                                         <xsl:if test="$linked880">
                                             <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'a']">
-                                                <xsl:copy-of select="uwf:mintConcept( ., '', ./following-sibling::marc:subfield[@code = 'b'][1], '337')"/>
+                                                <xsl:copy-of select="uwf:fillConcept( ., '', ./following-sibling::marc:subfield[@code = 'b'][1], '337')"/>
                                             </xsl:for-each>
                                         </xsl:if>
                                     </rdf:Description>
@@ -285,10 +285,10 @@
                             <xsl:otherwise>
                                 <xsl:for-each select="marc:subfield[@code = 'a']">
                                     <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
-                                        <xsl:copy-of select="uwf:mintConcept( ., $sub2, '', '337')"/>
+                                        <xsl:copy-of select="uwf:fillConcept( ., $sub2, '', '337')"/>
                                         <xsl:if test="$linked880">
                                             <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'a']">
-                                                <xsl:copy-of select="uwf:mintConcept( ., '', '', '337')"/>
+                                                <xsl:copy-of select="uwf:fillConcept( ., '', '', '337')"/>
                                             </xsl:for-each>
                                         </xsl:if>
                                     </rdf:Description>
@@ -340,7 +340,7 @@
                 <xsl:when test="marc:subfield[@code = '2']">
                     <xsl:variable name="sub2" select="marc:subfield[@code = '2']"/>
                     <xsl:choose>
-                        <!-- when $2 starts with rda, we lookup the $2 code and then the $a/$b terms from there-->
+                        <!-- when $2 starts with rda, we look up the $2 code and then the $a/$b terms from there-->
                         <xsl:when test="contains($sub2, 'rda')">
                             <!-- for $a's, rdaTermLookup is called -->
                             <xsl:for-each select="marc:subfield[@code = 'a']">
@@ -385,7 +385,7 @@
                                 <xsl:when test="not(marc:subfield[@code = 'a'])">
                                     <xsl:if test="@tag = '337' or substring(marc:subfield[@code = '6'], 1, 6) = '337-00'">
                                         <xsl:for-each select="marc:subfield[@code = 'b']">
-                                            <rdam:P30002 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
+                                            <rdam:P30001 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
                                                 <rdamd:P30137>Media type {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</rdamd:P30137>
                                             </xsl:if>
@@ -422,17 +422,17 @@
                 <!-- no $2 -->
                 <xsl:otherwise>
                     <xsl:for-each select="marc:subfield[@code = 'a']">
-                        <rdamd:P30002>
+                        <rdamd:P30001>
                             <xsl:value-of select="."/>
-                        </rdamd:P30002>
+                        </rdamd:P30001>
                         <xsl:if test="../marc:subfield[@code = '3']">
                             <rdamd:P30137>Carrier type {.} applies to the manifestation's {../marc:subfield[@code = '3']}</rdamd:P30137>
                         </xsl:if>
                     </xsl:for-each>
                     <xsl:for-each select="marc:subfield[@code = 'b']">
-                        <rdamd:P30002>
+                        <rdamd:P30001>
                             <xsl:value-of select="."/>
-                        </rdamd:P30002>
+                        </rdamd:P30001>
                         <xsl:if test="../marc:subfield[@code = '3']">
                             <rdamd:P30137>Carrier type {.} applies to the manifestation's {../marc:subfield[@code = '3']}</rdamd:P30137>
                         </xsl:if>
@@ -466,10 +466,10 @@
                         <xsl:when test="not(marc:subfield[@code = 'b'])">
                             <xsl:for-each select="marc:subfield[@code = 'a']">
                                 <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
-                                    <xsl:copy-of select="uwf:mintConcept(., $sub2, '', '338')"/>
+                                    <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '338')"/>
                                     <xsl:if test="$linked880">
                                         <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'a']">
-                                            <xsl:copy-of select="uwf:mintConcept(., '', '', '338')"/>
+                                            <xsl:copy-of select="uwf:fillConcept(., '', '', '338')"/>
                                         </xsl:for-each>
                                     </xsl:if>
                                 </rdf:Description>
@@ -479,10 +479,10 @@
                         <xsl:when test="not(marc:subfield[@code = 'a'])">
                             <xsl:for-each select="marc:subfield[@code = 'b']">
                                 <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
-                                    <xsl:copy-of select="uwf:mintConcept(., $sub2, '', '338')"/>
+                                    <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '338')"/>
                                     <xsl:if test="$linked880">
                                         <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'b']">
-                                            <xsl:copy-of select="uwf:mintConcept(., '', '', '338')"/>
+                                            <xsl:copy-of select="uwf:fillConcept(., '', '', '338')"/>
                                         </xsl:for-each>
                                     </xsl:if>
                                 </rdf:Description>
@@ -492,10 +492,10 @@
                         <xsl:when test="$aTest = 'Yes' and $bTest = 'Yes'">
                             <xsl:for-each select="marc:subfield[@code = 'a']">
                                 <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
-                                    <xsl:copy-of select="uwf:mintConcept( ., $sub2, ./following-sibling::marc:subfield[@code = 'b'][1], '338')"/>
+                                    <xsl:copy-of select="uwf:fillConcept( ., $sub2, ./following-sibling::marc:subfield[@code = 'b'][1], '338')"/>
                                     <xsl:if test="$linked880">
                                         <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'a']">
-                                            <xsl:copy-of select="uwf:mintConcept( ., '', ./following-sibling::marc:subfield[@code = 'b'][1], '338')"/>
+                                            <xsl:copy-of select="uwf:fillConcept( ., '', ./following-sibling::marc:subfield[@code = 'b'][1], '338')"/>
                                         </xsl:for-each>
                                     </xsl:if>
                                 </rdf:Description>
@@ -505,10 +505,10 @@
                         <xsl:otherwise>
                             <xsl:for-each select="marc:subfield[@code = 'a']">
                                 <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
-                                    <xsl:copy-of select="uwf:mintConcept( ., $sub2, '', '338')"/>
+                                    <xsl:copy-of select="uwf:fillConcept( ., $sub2, '', '338')"/>
                                     <xsl:if test="$linked880">
                                         <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'a']">
-                                            <xsl:copy-of select="uwf:mintConcept( ., '', '', '338')"/>
+                                            <xsl:copy-of select="uwf:fillConcept( ., '', '', '338')"/>
                                         </xsl:for-each>
                                     </xsl:if>
                                 </rdf:Description>
@@ -547,7 +547,7 @@
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdamd:P30104>
                 <xsl:if test="../marc:subfield[@code = '2']">
-                    <xsl:copy-of select="uwf:S2lookup(../marc:subfield[@code = '2'])"/>
+                    <xsl:copy-of select="uwf:s2lookup(../marc:subfield[@code = '2'])"/>
                 </xsl:if>
                 <xsl:value-of select="."/>
             </rdamd:P30104>
@@ -560,7 +560,7 @@
         <xsl:for-each select="marc:subfield[@code = 'b']">
             <rdamd:P30123>
                 <xsl:if test="../marc:subfield[@code = '2']">
-                    <xsl:copy-of select="uwf:S2lookup(../marc:subfield[@code = '2'])"/>
+                    <xsl:copy-of select="uwf:s2lookup(../marc:subfield[@code = '2'])"/>
                 </xsl:if>
                 <xsl:value-of select="."/>
             </rdamd:P30123>
@@ -575,7 +575,7 @@
                 <xsl:if test="not(contains(., 'http:'))">
                     <rdamd:P30104>
                         <xsl:if test="../marc:subfield[@code = '2']">
-                            <xsl:copy-of select="uwf:S2lookup(../marc:subfield[@code = '2'])"/>
+                            <xsl:copy-of select="uwf:s2lookup(../marc:subfield[@code = '2'])"/>
                         </xsl:if>
                         <xsl:value-of select="."/>
                     </rdamd:P30104>

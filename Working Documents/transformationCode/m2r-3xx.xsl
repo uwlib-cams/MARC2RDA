@@ -80,7 +80,7 @@
         <!-- Accounted-for: $a $b $c $d $e $f $g $i $j $k $l $m $n $o $p $3-->
         <!-- Not accounted-for: $h (not mapped), $q (new field), $6, $8 -->
         <!-- Temporary or partial solution for: $2 -->
-        <xsl:call-template name="F340-xx-abcdefghijklmnop"/>
+        <!--<xsl:call-template name="F340-xx-abcdefghijklmnop"/>-->
     </xsl:template>
     
     <!-- 346 - Video Characteristics -->
@@ -97,7 +97,7 @@
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdawd:P10004>
                 <xsl:if test="../marc:subfield[@code = '2']">
-                    <xsl:copy-of select="uwf:S2lookup(../marc:subfield[@code = '2'])"/>
+                    <xsl:copy-of select="uwf:s2lookup(../marc:subfield[@code = '2'])"/>
                 </xsl:if>{.}</rdawd:P10004>
             <xsl:if test="../marc:subfield[@code = '3']">
                 <rdawd:P10330>

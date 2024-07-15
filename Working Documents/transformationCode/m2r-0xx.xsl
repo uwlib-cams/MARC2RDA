@@ -151,7 +151,7 @@
                         </xsl:when>
                         <xsl:when test="../@ind1 = '7'">
                             <xsl:if test="../marc:subfield[@code = '2']">
-                                <xsl:copy-of select="uwf:S2Nomen(../marc:subfield[@code = '2'])"/>
+                                <xsl:copy-of select="uwf:s2Nomen(../marc:subfield[@code = '2'])"/>
                             </xsl:if>
                         </xsl:when>
                     </xsl:choose>
@@ -183,7 +183,7 @@
                 <xsl:call-template name="F026-xx-abcde"/>
             </rdand:P80068>
             <xsl:if test="marc:subfield[@code = '2']">
-                <xsl:copy-of select="uwf:S2Nomen(marc:subfield[@code = '2'])"/>
+                <xsl:copy-of select="uwf:s2Nomen(marc:subfield[@code = '2'])"/>
             </xsl:if>
         </rdf:Description>
     </xsl:template>

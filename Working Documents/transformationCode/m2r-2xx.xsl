@@ -47,7 +47,7 @@
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdamd:P30086>
                 <xsl:if test="../marc:subfield[@code = '2']">
-                    <xsl:copy-of select="uwf:S2lookup(../marc:subfield[@code = '2'])"/>
+                    <xsl:copy-of select="uwf:s2lookup(../marc:subfield[@code = '2'])"/>
                 </xsl:if>{.}</rdamd:P30086>
         </xsl:for-each>
         <!-- this may need to be revisited for determining IRI vs identifier-->

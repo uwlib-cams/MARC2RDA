@@ -30,6 +30,8 @@
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     version="3.0">
 
+<!-- uwf:test and uwf:conceptTest are old functions for handling $0s and $1s that will be removed when 
+     all templates using them have been updated to match our decisions on treating $0's and $1's -->
     <xsl:function name="uwf:test" expand-text="yes">
         <xsl:param name="subfield"/>
         <xsl:param name="property"/>
@@ -110,7 +112,12 @@
     </xsl:function>
     
 <!-- $5 FUNCTIONS -->
+    
+    <!-- collBase is the base URI we use for the minted collection manifestation for an institution -->
     <xsl:variable name="collBase">http://marc2rda.edu/fake/colMan/</xsl:variable>
+    
+    <!-- $5-preprocessedRDA.xml contains minted collection works and collection manifestations for
+         organizations with codes in the MARC Organization Codes Database -->
     <xsl:variable name="lookup5Doc" select="document('lookup/$5-preprocessedRDA.xml')"/>
     <xsl:key name="normCode" match="rdf:Description[rdaad:P50006]" use="rdaad:P50006"/>
     
@@ -146,6 +153,7 @@
     
 <!-- $2 FUNCTIONS -->
     
+    <!-- loc docs containing codes used in $2 for different fields -->
     <xsl:variable name="locSubjectSchemesDoc" select="document('https://id.loc.gov/vocabulary/subjectSchemes.rdf')"/>
     <xsl:variable name="locGenreFormSchemesDoc" select="document('https://id.loc.gov/vocabulary/genreFormSchemes.rdf')"/>
     <xsl:variable name="locFingerprintSchemesDoc" select="document('https://id.loc.gov/vocabulary/fingerprintschemes.rdf')"/>
@@ -154,12 +162,34 @@
     
     <xsl:key name="schemeKey" match="madsrdf:hasMADSSchemeMember" use="madsrdf:Authority/@rdf:about"/>
     
-    <xsl:function name="uwf:S2" expand-text="yes">
+    <!-- This function will be deleted when functions using it have been updated -->
+    <xsl:function name="uwf:s2" expand-text="yes">
         <xsl:param name="marcField"/>
         <xsl:comment>Handle $2 here when decision is made</xsl:comment>
     </xsl:function>
     
-    <xsl:function name="uwf:S2Nomen" expand-text="yes">
+    <!-- uwf:s2lookup returns an rdf:datatype, this will be deleted once all templates using it have been updated -->
+    <xsl:function name="uwf:s2lookup" expand-text="true">
+        <xsl:param name="code2"/>
+        <xsl:choose>
+            <xsl:when test="$locSubjectSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/subjectSchemes/', lower-case($code2)))">
+                <xsl:attribute name="rdf:datatype">
+                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/subjectSchemes/', lower-case($code2))"/>
+                </xsl:attribute>
+            </xsl:when>
+            <xsl:when test="$locGenreFormSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/genreFormSchemes/', lower-case($code2)))">
+                <xsl:attribute name="rdf:datatype">
+                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/genreFormSchemes/', lower-case($code2))"/>
+                </xsl:attribute>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:comment>$2 value of {$code2} has been lost</xsl:comment>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
+    <!-- uwf:s2Nomen returns the property "has scheme of nomen" with the appropriate IRI if it is found, otherwise it outputs a comment -->
+    <xsl:function name="uwf:s2Nomen" expand-text="yes">
         <xsl:param name="code2"/>
         <xsl:choose>
             <xsl:when test="$locFingerprintSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/fingerprintschemes/', lower-case($code2)))">
@@ -182,27 +212,10 @@
         </xsl:choose>
     </xsl:function>
     
-    <xsl:function name="uwf:S2lookup" expand-text="true">
-        <xsl:param name="code2"/>
-        <xsl:choose>
-            <xsl:when test="$locSubjectSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/subjectSchemes/', lower-case($code2)))">
-                <xsl:attribute name="rdf:datatype">
-                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/subjectSchemes/', lower-case($code2))"/>
-                </xsl:attribute>
-            </xsl:when>
-            <xsl:when test="$locGenreFormSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/genreFormSchemes/', lower-case($code2)))">
-                <xsl:attribute name="rdf:datatype">
-                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/genreFormSchemes/', lower-case($code2))"/>
-                </xsl:attribute>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:comment>$2 value of {$code2} has been lost</xsl:comment>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:function>
-    
-    <!-- lookup a scheme code and return the skos:inScheme with the associated IRI from id.loc.gov -->
-    <xsl:function name="uwf:S2Concept" expand-text="true">
+    <!-- uwf:s2Concept looks up a scheme code and return the skos:inScheme with the associated IRI from id.loc.gov -->
+    <!-- docs can be added as needed based on the sources of $2 from different fields -->
+    <!-- if a field has a very small VES or only one, a separate function can be made to handle that field (see uwf:s2Concept506) -->
+    <xsl:function name="uwf:s2Concept" expand-text="true">
         <xsl:param name="code2"/>
         <xsl:choose>
             <xsl:when test="$locSubjectSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/subjectSchemes/', lower-case($code2)))">
@@ -219,7 +232,7 @@
     
     <!-- lookup for field 506 concepts -->
     <!-- there's a very small vocabulary for this, so it's worth a separate quicker function -->
-    <xsl:function name="uwf:S2Concept506" expand-text="true">
+    <xsl:function name="uwf:s2Concept506" expand-text="true">
         <xsl:param name="code2"/>
         <xsl:choose>
             <xsl:when test="$locAccessRestrictionTermDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/accessrestrictionterm/', lower-case($code2)))">
@@ -241,7 +254,7 @@
     </xsl:function>
     
     <!-- returns triples to fill an rdf:Description for a concept, with the prefLabel, scheme, and notation as provided -->
-    <xsl:function name="uwf:mintConcept">
+    <xsl:function name="uwf:fillConcept">
         <xsl:param name="prefLabel"/>
         <xsl:param name="scheme"/>
         <xsl:param name="notation"/>
@@ -262,10 +275,10 @@
         <xsl:if test="$scheme">
             <xsl:choose>
                 <xsl:when test="$fieldNum = '506'">
-                    <xsl:copy-of select="uwf:S2Concept506($scheme)"/>
+                    <xsl:copy-of select="uwf:s2Concept506($scheme)"/>
                 </xsl:when> 
                 <xsl:otherwise>
-                    <xsl:copy-of select="uwf:S2Concept($scheme)"/>
+                    <xsl:copy-of select="uwf:s2Concept($scheme)"/>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:if>
