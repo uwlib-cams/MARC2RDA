@@ -102,7 +102,7 @@
     <!-- 337 -->
     <xsl:template name="F337-string" expand-text="yes">
         <!-- if there are no IRIs to use, continue to $a's and $b's -->
-        <xsl:if test="not(marc:subfield[@code = '1']) and not(starts-with(marc:subfield[@code = '0'], 'http'))">
+        <xsl:if test="not(marc:subfield[@code = '1']) and not(contains(marc:subfield[@code = '0'], 'http'))">
             
             <!-- pattern testing variables -->
             <!-- aTest determines whether all $a's are followed by $b's -->
@@ -222,7 +222,7 @@
     
     <xsl:template name="F337-concept">
         <!-- mint concepts when $2 is not rdamedia or rdamt -->
-        <xsl:if test="not(marc:subfield[@code = '1']) and not(starts-with(marc:subfield[@code = '0'], 'http'))">
+        <xsl:if test="not(marc:subfield[@code = '1']) and not(contains(marc:subfield[@code = '0'], 'http'))">
             <xsl:if test="marc:subfield[@code = '2']">
                 <xsl:variable name="sub2" select="marc:subfield[@code = '2']"/>
                 <xsl:variable name="linked880">
@@ -311,10 +311,23 @@
         <!-- If there's no $1 but there are $0s that begin with http(s), use these -->
         <xsl:if test="not(marc:subfield[@code = '1'])">
             <xsl:for-each select="marc:subfield[@code = '0']">
-                <xsl:if test="starts-with(., 'http')">
-                    <rdam:P30002 rdf:resource="{.}"/>
+                <!-- $0's contianing a uri may start with (uri) -->
+                <xsl:if test="contains(., 'http')">
+                    <xsl:variable name="iri0">
+                        <xsl:choose>
+                            <xsl:when test="starts-with(., 'http')">
+                                <xsl:value-of select="."/>
+                            </xsl:when>
+                            <xsl:when test="starts-with(., '(')">
+                                <xsl:value-of select="substring-after(., ')')"/>
+                            </xsl:when>
+                        </xsl:choose>
+                    </xsl:variable>
+                    <xsl:if test="$iri0">
+                        <rdam:P30002 rdf:resource="{$iri0}"/>
+                    </xsl:if>
                     <xsl:if test="../marc:subfield[@code = '3']">
-                        <rdamd:P30137>Media type {.} applies to the manifestation's {../marc:subfield[@code = '3']}</rdamd:P30137>
+                        <rdamd:P30137>Carrier type {$iri0} applies to the manifestation's {../marc:subfield[@code = '3']}</rdamd:P30137>
                     </xsl:if>
                 </xsl:if>
             </xsl:for-each>
@@ -324,7 +337,7 @@
     <!-- 338 -->
     <xsl:template name="F338-string" expand-text="yes">
         <!-- if there are no IRIs to use, continue to $a's and $b's -->
-        <xsl:if test="not(marc:subfield[@code = '1']) and not(starts-with(marc:subfield[@code = '0'], 'http'))">
+        <xsl:if test="not(marc:subfield[@code = '1']) and not(contains(marc:subfield[@code = '0'], 'http'))">
             
             <!-- pattern testing variables -->
             <!-- aTest determines whether all $a's are followed by $b's -->
@@ -383,7 +396,7 @@
                                 </xsl:when>
                                 <!-- no a's - use b's -->
                                 <xsl:when test="not(marc:subfield[@code = 'a'])">
-                                    <xsl:if test="@tag = '337' or substring(marc:subfield[@code = '6'], 1, 6) = '337-00'">
+                                    <xsl:if test="@tag = '338' or substring(marc:subfield[@code = '6'], 1, 6) = '338-00'">
                                         <xsl:for-each select="marc:subfield[@code = 'b']">
                                             <rdam:P30001 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
@@ -443,7 +456,7 @@
     </xsl:template>
     
     <xsl:template name="F338-concept">
-        <xsl:if test="not(marc:subfield[@code = '1']) and not(starts-with(marc:subfield[@code = '0'], 'http'))">
+        <xsl:if test="not(marc:subfield[@code = '1']) and not(contains(marc:subfield[@code = '0'], 'http'))">
             <xsl:if test="marc:subfield[@code = '2']">
                 <xsl:variable name="sub2" select="marc:subfield[@code = '2']"/>
                 <xsl:variable name="linked880">
@@ -531,10 +544,22 @@
         <!-- If there's no $1 but there are $0s that begin with http(s), use these -->
         <xsl:if test="not(marc:subfield[@code = '1'])">
             <xsl:for-each select="marc:subfield[@code = '0']">
-                <xsl:if test="starts-with(., 'http')">
-                    <rdam:P30001 rdf:resource="{.}"/>
+                <xsl:if test="contains(., 'http')">
+                    <xsl:variable name="iri0">
+                        <xsl:choose>
+                            <xsl:when test="starts-with(., 'http')">
+                                <xsl:value-of select="."/>
+                            </xsl:when>
+                            <xsl:when test="starts-with(., '(')">
+                                <xsl:value-of select="substring-after(., ')')"/>
+                            </xsl:when>
+                        </xsl:choose>
+                    </xsl:variable>
+                    <xsl:if test="$iri0">
+                        <rdam:P30002 rdf:resource="{$iri0}"/>
+                    </xsl:if>
                     <xsl:if test="../marc:subfield[@code = '3']">
-                        <rdamd:P30137>Carrier type {.} applies to the manifestation's {../marc:subfield[@code = '3']}</rdamd:P30137>
+                        <rdamd:P30137>Carrier type {$iri0} applies to the manifestation's {../marc:subfield[@code = '3']}</rdamd:P30137>
                     </xsl:if>
                 </xsl:if>
             </xsl:for-each>

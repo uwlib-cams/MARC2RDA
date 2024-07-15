@@ -250,7 +250,7 @@
     <xsl:function name="uwf:conceptIRI">
         <xsl:param name="scheme"/>
         <xsl:param name="value"/>
-        <xsl:value-of select="'http://marc2rda.edu/fake/concept/'||lower-case($scheme)||'/'||encode-for-uri(translate(lower-case($value), ' ', ''))"/>
+        <xsl:value-of select="'http://marc2rda.edu/fake/concept/'||encode-for-uri(lower-case($scheme))||'/'||encode-for-uri(translate(lower-case($value), ' ', ''))"/>
     </xsl:function>
     
     <!-- returns triples to fill an rdf:Description for a concept, with the prefLabel, scheme, and notation as provided -->

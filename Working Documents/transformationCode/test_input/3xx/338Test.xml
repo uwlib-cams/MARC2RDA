@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">338-test1</marc:controlfield>
+        
+        <!-- no source -->
+<!--        <marc:datafield tag="338" ind1= " " ind2=" ">
+            <marc:subfield code="a">audio disc</marc:subfield>
+            <marc:subfield code="a">videodisc</marc:subfield>
+            <marc:subfield code="3">test3</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="b">sd</marc:subfield>
+            <marc:subfield code="3">test3</marc:subfield>
+        </marc:datafield>-->
+        
+        <!-- rdacarrier term and code (will output duplicate) -->
+<!--        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">audio disc</marc:subfield>
+            <marc:subfield code="b">sd</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+            <marc:subfield code="3">test3</marc:subfield>
+        </marc:datafield>-->
+        
+        <!-- rdact term -->
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">audio disc</marc:subfield>
+            <marc:subfield code="b">1004</marc:subfield>
+            <marc:subfield code="2">rdact</marc:subfield>
+            <marc:subfield code="3">test3</marc:subfield>
+        </marc:datafield>
+        
+        <!-- $1 -->
+<!--        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="1">http://id.loc.gov/vocabulary/carriers/sd</marc:subfield>
+            <marc:subfield code="3">test3</marc:subfield>
+        </marc:datafield>
+        -->
+        <!-- $0 with others -->
+<!--        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">audio disc</marc:subfield>
+            <marc:subfield code="0">(uri)http://id.loc.gov/vocabulary/carriers/sd</marc:subfield>
+            <marc:subfield code="3">test3</marc:subfield>
+        </marc:datafield>
+        -->
+        <!-- abab -->
+<!--        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">volume</marc:subfield>
+            <marc:subfield code="b">made up b</marc:subfield>
+            <marc:subfield code="a">other</marc:subfield>
+            <marc:subfield code="b">made up b 2</marc:subfield>
+            <marc:subfield code="2">made up source</marc:subfield>
+            <marc:subfield code="3">test3</marc:subfield>
+        </marc:datafield>-->
+        
+        <!-- abb -->
+        <!-- should output no skos:notation -->
+<!--        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">audio disc</marc:subfield>
+            <marc:subfield code="b">made up b</marc:subfield>
+            <marc:subfield code="b">made up b 2</marc:subfield>
+            <marc:subfield code="2">source</marc:subfield>
+            <marc:subfield code="3">test3</marc:subfield>
+        </marc:datafield>-->
+        
+        <!-- no a -->
+<!--        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="b">made up b</marc:subfield>
+            <marc:subfield code="2">source</marc:subfield>
+            <marc:subfield code="3">test3</marc:subfield>
+        </marc:datafield>-->
+        
+        <!-- no b -->
+        
+        <!-- linked 880 -->
+<!--        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="6">880-01</marc:subfield>
+            <marc:subfield code="a">online resource</marc:subfield>
+            <marc:subfield code="b">cr</marc:subfield>
+            <marc:subfield code="2">source</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">338-01</marc:subfield>
+            <marc:subfield code="a">test 880 a</marc:subfield>
+            <marc:subfield code="b">test 880 b</marc:subfield>
+            <marc:subfield code="2">source</marc:subfield>
+        </marc:datafield>-->
+        
+        <!-- unlinked 880 -->
+<!--        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">338-00</marc:subfield>
+            <marc:subfield code="b">sd</marc:subfield>
+            <marc:subfield code="2">source</marc:subfield>
+        </marc:datafield>-->
+    </marc:record>
+</marc:collection>
