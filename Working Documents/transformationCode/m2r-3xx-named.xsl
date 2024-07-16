@@ -569,76 +569,174 @@
     
     <!-- 346 -->
     <xsl:template name="F346-string" expand-text="yes">
-        <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdamd:P30104>
-                <xsl:if test="../marc:subfield[@code = '2']">
-                    <xsl:copy-of select="uwf:s2lookup(../marc:subfield[@code = '2'])"/>
-                </xsl:if>
-                <xsl:value-of select="."/>
-            </rdamd:P30104>
-            <xsl:if test="../marc:subfield[@code = '3']">
-                <rdamd:P30137>
-                    <xsl:text>Video Format ({.}) applies to {../marc:subfield[@code = '3']}</xsl:text> 
-                </rdamd:P30137>
-            </xsl:if>
-        </xsl:for-each>
-        <xsl:for-each select="marc:subfield[@code = 'b']">
-            <rdamd:P30123>
-                <xsl:if test="../marc:subfield[@code = '2']">
-                    <xsl:copy-of select="uwf:s2lookup(../marc:subfield[@code = '2'])"/>
-                </xsl:if>
-                <xsl:value-of select="."/>
-            </rdamd:P30123>
-            <xsl:if test="../marc:subfield[@code = '3']">
-                <rdamd:P30137>
-                    <xsl:text>Broadcast Standard ({.}) applies to {../marc:subfield[@code = '3']}</xsl:text> 
-                </rdamd:P30137>
-            </xsl:if>
-        </xsl:for-each>
-        <xsl:if test="marc:subfield[@code = 'a'] and not(marc:subfield[@code = 'b'])">
-            <xsl:for-each select="marc:subfield[@code = '0']">
-                <xsl:if test="not(contains(., 'http:'))">
-                    <rdamd:P30104>
-                        <xsl:if test="../marc:subfield[@code = '2']">
-                            <xsl:copy-of select="uwf:s2lookup(../marc:subfield[@code = '2'])"/>
+        <!-- if it's only $a or only $b but no $0 or $1, or it's $a and $b -->
+        <!-- need to test this logic -->
+        <xsl:if test="((not(marc:subfield[@code = 'b']) or not(marc:subfield[@code = 'a'])) 
+            and (not(marc:subfield[@code = '1']) and not(contains(marc:subfield[@code = '0'], 'http'))))
+            or (marc:subfield[@code = 'a'] and marc:subfield[@code = 'b'])">
+            <xsl:choose>
+                <xsl:when test="marc:subfield[@code = '2']">
+                    <xsl:variable name="sub2" select="marc:subfield[@code = '2']"/>
+                    <xsl:choose>
+                        <xsl:when test="contains($sub2, 'rda')">
+                            <xsl:for-each select="marc:subfield[@code = 'a']">
+                                <xsl:variable name="rdaIRI" select="uwf:rdaTermLookup($sub2, .)"/>
+                                <!-- only output the property if the function returns a value -->
+                                <!-- we don't want a triple with no object -->
+                                <xsl:if test="$rdaIRI">
+                                    <rdam:P30104 rdf:resource="{$rdaIRI}"/>
+                                    <xsl:if test="../marc:subfield[@code = '3']">
+                                        <rdamd:P30137>Video format {$rdaIRI} applies to the manifestation's {../marc:subfield[@code = '3']}</rdamd:P30137>
+                                    </xsl:if>
+                                </xsl:if>
+                            </xsl:for-each>
+                            <xsl:for-each select="marc:subfield[@code = 'b']">
+                                <xsl:variable name="rdaIRI" select="uwf:rdaTermLookup($sub2, .)"/>
+                                <!-- only output the property if the function returns a value -->
+                                <!-- we don't want a triple with no object -->
+                                <xsl:if test="$rdaIRI">
+                                    <rdam:P30123 rdf:resource="{$rdaIRI}"/>
+                                    <xsl:if test="../marc:subfield[@code = '3']">
+                                        <rdamd:P30137>Broadcast standard {$rdaIRI} applies to the manifestation's {../marc:subfield[@code = '3']}</rdamd:P30137>
+                                    </xsl:if>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:when>
+                        <!-- mint concepts -->
+                        <xsl:otherwise>
+                            <xsl:if test="@tag = '346' or substring(marc:subfield[@code = '6'], 1, 6) = '346-00'">
+                                <xsl:for-each select="marc:subfield[@code = 'a']">
+                                    <rdam:P30104 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
+                                    <xsl:if test="../marc:subfield[@code = '3']">
+                                        <rdamd:P30137>Video format {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</rdamd:P30137>
+                                    </xsl:if>
+                                </xsl:for-each>
+                                <xsl:for-each select="marc:subfield[@code = 'b']">
+                                    <rdam:P30123 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
+                                    <xsl:if test="../marc:subfield[@code = '3']">
+                                        <rdamd:P30137>Broadcast standard {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</rdamd:P30137>
+                                    </xsl:if>
+                                </xsl:for-each>
+                            </xsl:if>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:when>
+                <!-- no $2 - value from $a and $b -->
+                <xsl:otherwise>
+                    <xsl:for-each select="marc:subfield[@code = 'a']">
+                        <rdamd:P30104>{.}</rdamd:P30104>
+                        <xsl:if test="../marc:subfield[@code = '3']">
+                            <rdamd:P30137>Video format {.} applies to the manifestation's {../marc:subfield[@code = '3']}</rdamd:P30137>
                         </xsl:if>
-                        <xsl:value-of select="."/>
-                    </rdamd:P30104>
-                </xsl:if>
-            </xsl:for-each>
+                    </xsl:for-each>
+                    <xsl:for-each select="marc:subfield[@code = 'b']">
+                        <rdamd:P30123>{.}</rdamd:P30123>
+                        <xsl:if test="../marc:subfield[@code = '3']">
+                            <rdamd:P30137>Broadcast standard {.} applies to the manifestation's {../marc:subfield[@code = '3']}</rdamd:P30137>
+                        </xsl:if>
+                    </xsl:for-each>
+                </xsl:otherwise>
+            </xsl:choose>
         </xsl:if>
-        <xsl:if test="marc:subfield[@code = 'b'] and not(marc:subfield[@code = 'a'])">
-            <xsl:for-each select="marc:subfield[@code = '0']">
-                <xsl:if test="not(contains(., 'http:'))">
-                    <rdamd:P30123>
-                        <xsl:value-of select="."/>
-                    </rdamd:P30123>
+    </xsl:template>
+    
+    <xsl:template name="F346-concept" expand-text="yes">
+        <!-- if it's only $a or only $b but no $0 or $1, or it's $a and $b -->
+        <!-- need to test this logic -->
+        <xsl:if test="((not(marc:subfield[@code = 'b']) or not(marc:subfield[@code = 'a'])) 
+            and (not(marc:subfield[@code = '1']) and not(contains(marc:subfield[@code = '0'], 'http'))))
+            or (marc:subfield[@code = 'a'] and marc:subfield[@code = 'b'])">
+            <xsl:if test="marc:subfield[@code = '2']">
+                <xsl:variable name="sub2" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="linked880">
+                    <xsl:if test="@tag = '346' and marc:subfield[@code = '6']">
+                        <xsl:variable name="occNum"
+                            select="concat('346-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                        <xsl:copy-of
+                            select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]"/>
+                    </xsl:if>
+                </xsl:variable>
+         
+                <xsl:if test="not(contains($sub2, 'rda'))">
+                    <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']">
+                        <xsl:variable name="currentCode" select="@code"/>
+                        <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
+                            <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '346')"/>
+                            <xsl:if test="$linked880">
+                                <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = $currentCode]">
+                                    <xsl:copy-of select="uwf:fillConcept(., '', '', '346')"/>
+                                </xsl:for-each>
+                            </xsl:if>
+                        </rdf:Description>
+                    </xsl:for-each>
                 </xsl:if>
-            </xsl:for-each>
+            </xsl:if>
         </xsl:if>
     </xsl:template>
     
     <xsl:template name="F346-iri" expand-text="yes">
-            <xsl:if test="marc:subfield[@code = 'a'] and not(marc:subfield[@code = 'b'])">
+        <!-- a and not b -->
+        <xsl:if test="marc:subfield[@code = 'a'] and not(marc:subfield[@code = 'b'])">
+            <!-- for each 1, use 1 -->
+            <xsl:for-each select="marc:subfield[@code = '1']">
+                <rdam:P30104 rdf:resource="{.}"/>
+            </xsl:for-each>
+            <!-- if no 1, check 0 -->
+            <xsl:if test="not(marc:subfield[@code = '1'])">
+                <!-- if 0 contains http, get iri -->
                 <xsl:for-each select="marc:subfield[@code = '0']">
-                    <xsl:if test="contains(., 'http:')">
-                        <rdam:P30104 rdf:resource="{.}"/>
+                    <xsl:if test="contains(., 'http')">
+                        <xsl:variable name="iri0">
+                            <xsl:choose>
+                                <xsl:when test="starts-with(., 'http')">
+                                    <xsl:value-of select="."/>
+                                </xsl:when>
+                                <xsl:when test="starts-with(., '(')">
+                                    <xsl:value-of select="substring-after(., ')')"/>
+                                </xsl:when>
+                            </xsl:choose>
+                        </xsl:variable>
+                        <!-- if getting iri was successful (started with 'http' or '(') 
+                                 use 0s-->
+                        <xsl:if test="$iri0">
+                            <rdam:P30104 rdf:resource="{$iri0}"/>
+                            <rdamd:P30137>Video format {$iri0} applies to the manifestation's {../marc:subfield[@code = '3']}</rdamd:P30137>
+                        </xsl:if>
                     </xsl:if>
                 </xsl:for-each>
-                <xsl:for-each select="marc:subfield[@code = '1']">
-                    <rdam:P30104 rdf:resource="{.}"/>
-                </xsl:for-each>
             </xsl:if>
-            <xsl:if test="marc:subfield[@code = 'b'] and not(marc:subfield[@code = 'a'])">
+        </xsl:if>
+        <!-- b and not a -->
+        <xsl:if test="marc:subfield[@code = 'b'] and not(marc:subfield[@code = 'a'])">
+            <!-- for each 1, use 1 -->
+            <xsl:for-each select="marc:subfield[@code = '1']">
+                <rdam:P30123 rdf:resource="{.}"/>
+            </xsl:for-each>
+            <!-- if no 1, check 0 -->
+            <xsl:if test="not(marc:subfield[@code = '1'])">
+                <!-- if 0 contains http, get iri -->
                 <xsl:for-each select="marc:subfield[@code = '0']">
-                    <xsl:if test="contains(., 'http:')">
-                        <rdam:P30123 rdf:resource="{.}"/>
+                    <xsl:if test="contains(., 'http')">
+                        <xsl:variable name="iri0">
+                            <xsl:choose>
+                                <xsl:when test="starts-with(., 'http')">
+                                    <xsl:value-of select="."/>
+                                </xsl:when>
+                                <xsl:when test="starts-with(., '(')">
+                                    <xsl:value-of select="substring-after(., ')')"/>
+                                </xsl:when>
+                            </xsl:choose>
+                        </xsl:variable>
+                        <!-- if getting iri was successful (started with 'http' or '(') 
+                                 use 0s-->
+                        <xsl:if test="$iri0">
+                            <rdam:P30123 rdf:resource="{$iri0}"/>
+                            <rdamd:P30137>Broadcast standard {$iri0} applies to the manifestation's {../marc:subfield[@code = '3']}</rdamd:P30137>
+                        </xsl:if>
                     </xsl:if>
                 </xsl:for-each>
-                <xsl:for-each select="marc:subfield[@code = '1']">
-                    <rdam:P30123 rdf:resource="{.}"/>
-                </xsl:for-each>
             </xsl:if>
+        </xsl:if>
     </xsl:template>
     
     <xsl:template name="F382-xx-a_b_d_p_2-exp" expand-text="yes">

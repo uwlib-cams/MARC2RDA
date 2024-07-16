@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
          xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
          xmlns:rdaa="http://rdaregistry.info/Elements/a/"
          xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
          xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
@@ -16,11 +17,16 @@
          xmlns:rdan="http://rdaregistry.info/Elements/n/"
          xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
          xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
          xmlns:rdaw="http://rdaregistry.info/Elements/w/"
          xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
          xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
    <rdf:Description rdf:about="http://fakeIRI2.edu/346-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/346-test1exp"/>
@@ -35,33 +41,15 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/346-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/346-test1exp"/>
-      <!--MARC data begins-->
-      <fake:marcfield>F346 ## $a Beta</fake:marcfield>
-      <!--RDA data begins-->
-      <rdamd:P30104>Beta</rdamd:P30104>
-      <!--MARC data begins-->
-      <fake:marcfield>F346 ## $a VHS $2 rdavf</fake:marcfield>
-      <!--RDA data begins-->
-      <rdamd:P30104 rdf:datatype="http://id.loc.gov/vocabulary/genreFormSchemes/rdavf">VHS</rdamd:P30104>
-      <!--MARC data begins-->
-      <fake:marcfield>F346 ## $b NTSC $2 rdabs $0 http://rdaregistry.info/termList/broadcastStand/1002</fake:marcfield>
-      <!--RDA data begins-->
-      <rdamd:P30123 rdf:datatype="http://id.loc.gov/vocabulary/genreFormSchemes/rdabs">NTSC</rdamd:P30123>
-      <rdam:P30123 rdf:resource="http://rdaregistry.info/termList/broadcastStand/1002"/>
-      <!--MARC data begins-->
-      <fake:marcfield>F346 ## $3 videodisc $b NTSC $2 rdabs</fake:marcfield>
-      <!--RDA data begins-->
-      <rdamd:P30123 rdf:datatype="http://id.loc.gov/vocabulary/genreFormSchemes/rdabs">NTSC</rdamd:P30123>
-      <rdamd:P30137>Broadcast Standard (NTSC) applies to videodisc</rdamd:P30137>
-      <!--MARC data begins-->
-      <fake:marcfield>F346 ## $a laser optical $0 testzero</fake:marcfield>
-      <!--RDA data begins-->
-      <rdamd:P30104>laser optical</rdamd:P30104>
-      <rdamd:P30104>testzero</rdamd:P30104>
-      <!--MARC data begins-->
-      <fake:marcfield>F880 ## $6 346-00 $b NTSC $1 http://rdaregistry.info/termList/broadcastStand/1002</fake:marcfield>
-      <!--RDA data begins-->
-      <rdamd:P30123>NTSC</rdamd:P30123>
-      <rdam:P30123 rdf:resource="http://rdaregistry.info/termList/broadcastStand/1002"/>
+      <fake:marcfield>F346 ## $6 880-01 $b NTSC $2 source</fake:marcfield>
+      <rdam:P30123 rdf:resource="http://marc2rda.edu/fake/concept/source/ntsc"/>
+      <fake:marcfield>F880 ## $6 346-01 $b test 880 $2 source</fake:marcfield>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/source/ntsc">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>NTSC</skos:prefLabel>
+      <!--$2 value of source has been lost-->
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>test 880</skos:prefLabel>
    </rdf:Description>
 </rdf:RDF>

@@ -54,6 +54,7 @@
     <!-- 337 - Media Type -->
     <xsl:template match="marc:datafield[@tag = '337'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '337']" 
         mode="man">
+        <xsl:call-template name="getmarc"/>
         <xsl:call-template name="F337-string"/>
         <xsl:call-template name="F337-iri"/>
     </xsl:template>
@@ -66,6 +67,7 @@
     <!-- 338 - Carrier Type -->
     <xsl:template match="marc:datafield[@tag = '338'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '338']" 
         mode="man">
+        <xsl:call-template name="getmarc"/>
         <xsl:call-template name="F338-string"/>
         <xsl:call-template name="F338-iri"/>
     </xsl:template>
@@ -84,10 +86,16 @@
     </xsl:template>
     
     <!-- 346 - Video Characteristics -->
-    <xsl:template match="marc:datafield[@tag = '346'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '346']" mode="man">
+    <xsl:template match="marc:datafield[@tag = '346'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '346']" 
+        mode="man">
         <xsl:call-template name="getmarc"/>
         <xsl:call-template name="F346-string"/>
         <xsl:call-template name="F346-iri"/>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '346'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '346-00']" 
+        mode="con">
+        <xsl:call-template name="F346-concept"/>
     </xsl:template>
     
     <xsl:template

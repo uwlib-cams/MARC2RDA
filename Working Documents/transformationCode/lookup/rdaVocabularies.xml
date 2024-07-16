@@ -15,7 +15,7 @@
     <row>
         <vocabulary>RDA Broadcast Standard</vocabulary>
         <sourceCode>rdabs</sourceCode>
-        <lookupDoc iri="http://rdaregistry.info/xml/termList/broadcastStand.xml"/>
+        <lookupDoc iri="http://www.rdaregistry.info/xml/termList/broadcastStand.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/broadcastStand/"/>
     </row>
     <row>
