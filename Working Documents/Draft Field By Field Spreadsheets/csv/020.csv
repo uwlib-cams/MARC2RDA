@@ -1,18 +1,18 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,reviewed,20,INTERNATIONAL STANDARD BOOK NUMBER (R),Undefined,*,,Undefined,*,,,,"a, q",,,,,,,,https://www.rdaregistry.info/Elements/m/object/#P30004,has identifier for manifestation,"IRI (minted Nomen) with Nomen properties
+0,done,20,INTERNATIONAL STANDARD BOOK NUMBER (R),Undefined,*,,Undefined,*,,,,"a, q",,,,,,,,https://www.rdaregistry.info/Elements/m/object/#P30004,has identifier for manifestation,"IRI (minted Nomen) with Nomen properties
 - has nomen string https://www.rdaregistry.info/Elements/n/#P80068   
 - has scheme of nomen https://www.rdaregistry.info/Elements/n/#P80069  
 - has note on nomen (if $q) https://www.rdaregistry.info/Elements/n/#P80071
 ","Apply option to record as instance of Nomen, ","[Manifestation]-->rdamo:P30004-->[Nomen]-->rdan:P80068-->($a) .  [Nomen]--rdan:P80069--><http://id.loc.gov/vocabulary/identifiers/isbn> . [Nomen]-->rdan:P80071-->($q)
 LA 10/11/2023",,
-1,reviewed,20,INTERNATIONAL STANDARD BOOK NUMBER (R),Undefined,*,,Undefined,*,,,,"z, q",,,,,,,,http://rdaregistry.info/Elements/m/datatype/P30004,has identifier for manifestation,"IRI (minted Nomen) with Nomen properties
+1,done,20,INTERNATIONAL STANDARD BOOK NUMBER (R),Undefined,*,,Undefined,*,,,,"z, q",,,,,,,,http://rdaregistry.info/Elements/m/datatype/P30004,has identifier for manifestation,"IRI (minted Nomen) with Nomen properties
 - has nomen string https://www.rdaregistry.info/Elements/n/#P80068  
 - has scheme of nomen https://www.rdaregistry.info/Elements/n/#P80069 
 - has note on nomen (if $q) https://www.rdaregistry.info/Elements/n/#P80071
 ",Apply option https://access.rdatoolkit.org/en-US_ala-95f6a60f-3d2b-32d8-9486-cf810708d4ba/div_ddq_vws_dfb -- ZP 6/12/2022,"[Manifestation]-->rdamo:P30004-->[Nomen]-->rdan:P80068-->($z) .  [Nomen]--rdan:P80069--><http://id.loc.gov/vocabulary/identifiers/isbn> . [Nomen]-->rdan:P80071-->($q) .  [Nomen]--rdan:P80168--><http://id.loc.gov/vocabulary/mstatus/cancinv> 
 LA 10/11/2023",,
 2,delete (reviewed),20,INTERNATIONAL STANDARD BOOK NUMBER (R),Undefined,*,,Undefined,*,,,,a,International Standard Book Number (NR),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,,,,,
-3,reviewed,20,INTERNATIONAL STANDARD BOOK NUMBER (R),Undefined,*,,Undefined,*,,,,c,Terms of availability (NR),,,,not($z),,,http://rdaregistry.info/Elements/m/datatype/P30160,has term of availability,unstructured description,$c only applies to the current manifestation when used alone or with $a; does not apply to the current manifestation when used with $z -- ZP 11/21/2022,[Manifestation]-->rdamd:P30160-->[value of $c] -- ZP 5/29/2022,,
+3,done,20,INTERNATIONAL STANDARD BOOK NUMBER (R),Undefined,*,,Undefined,*,,,,c,Terms of availability (NR),,,,not($z),,,http://rdaregistry.info/Elements/m/datatype/P30160,has term of availability,unstructured description,$c only applies to the current manifestation when used alone or with $a; does not apply to the current manifestation when used with $z -- ZP 11/21/2022,[Manifestation]-->rdamd:P30160-->[value of $c] -- ZP 5/29/2022,,
 4,delete (reviewed),20,INTERNATIONAL STANDARD BOOK NUMBER (R),Undefined,*,,Undefined,*,,,,q,Qualifying information (R),,,,,,,http://rdaregistry.info/Elements/m/P30309,has type of binding,,,,,
 5,delete (reviewed),20,INTERNATIONAL STANDARD BOOK NUMBER (R),Undefined,*,,Undefined,*,,,,z,Canceled/invalid ISBN (R),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,,,,,
 6,not mapped,20,INTERNATIONAL STANDARD BOOK NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,"subfield contains linkage code which is not mappable, but mapping of linked 880 tag may occur and may utilize contents of the $6.  ",,,

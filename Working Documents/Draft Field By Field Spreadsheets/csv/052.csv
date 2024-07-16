@@ -6,21 +6,21 @@
 4,not mapped,52,GEOGRAPHIC CLASSIFICATION (R),Code source,#,Library of Congress Classification,Undefined,#,Undefined,,,2,Code source (NR),,,,,,,,,,,,,
 5,not mapped,52,GEOGRAPHIC CLASSIFICATION (R),Code source,#,Library of Congress Classification,Undefined,#,Undefined,,,6, Linkage (NR),,,,,,,,,,,,,
 6,not mapped,52,GEOGRAPHIC CLASSIFICATION (R),Code source,#,Library of Congress Classification,Undefined,#,Undefined,,,8, Field link and sequence number (R),,,,,,,,,,,,,
-7,first pass,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,"a,b","Geographic classification area code (NR),Geographic classification subarea code (R)",,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,IRI, ,"[Work] → has subject place → [Place] 
-[Place] → has related nomen of place → [Nomen]
-[Nomen] → has nomen string → [""$a value"" + ""$b value""]
-[Nomen] → has scheme of nomen → [URI for code source specified in 1st indicator or $2 if 1st indicator is 7]
--CY & PS, 2023-12-06", ,Shape for identifiers: https://docs.google.com/document/d/1jbon0UHJhpj6WfgS2bAjtYWd04hQSNFtttKFtiLp_LU/edit#bookmark=id.n709x3nv341k 
-8,first pass,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,d,Populated place name (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,IRI,,"[Work] → has subject place → [Place] 
-[Place] → has related nomen of place → [Nomen]
-[Nomen] → has nomen string → [""$d value""]
-[Nomen] → has scheme of nomen → [URI for code source specified in 1st indicator or $2 if 1st indicator is 7]
--CY & PS, 2023-12-06",,
-9,first pass,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,IRI,,"[Work] → has subject place → [Place] 
-[Place] → has related nomen of place → [Nomen]
-[Nomen] → has nomen string → [""$0 value""]
-[Nomen] → has scheme of nomen → [URI for code source specified in 1st indicator or $2 if 1st indicator is 7]
--CY & PS, 2023-12-06",,
+7,first pass,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,"a,b","Geographic classification area code (NR),Geographic classification subarea code (R)",,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,IRI,mint a nomen with nomen properity,"[work] rdam:P10321 has subject place [place]
+[place] rdap:P70019 has appellation of place [placeNomen]
+[placeNomen] rdan:P80068 has nomen string [""$a value"", ""$b value""]
+[placeNomen] rdan:P80069 has scheme of nomen [URI for code source specified in 1st indicator or $2 if 1st indicator is 7]
+PS, 2024-06-14", ,
+8,first pass,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,d,Populated place name (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,IRI,mint a nomen with nomen properity,"[work] rdam:P10321 has subject place [place]
+[place] rdap:P70019 has appellation of place [placeNomen]
+[placeNomen] rdan:P80068 has nomen string [""$d value""]
+[placeNomen] rdan:P80069 has scheme of nomen [URI for code source specified in 1st indicator or $2 if 1st indicator is 7]
+PS, 2024-06-14", ,
+9,first pass,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,identifier or IRI,,"[work] rdam:P10321 has subject place [place]
+[place] rdap:P70019 has appellation of place [placeNomen]
+[placeNomen] rdan:P80068 has nomen string [""$0 value""]
+[placeNomen] rdan:P80069 has scheme of nomen [URI for code source specified in 1st indicator or $2 if 1st indicator is 7]
+PS, 2024-06-14",,
 10,first pass,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,1,"Real World Object URI (R)
 ",,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,IRI,,,,
 11,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,a,Geographic classification area code (NR),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,too broad,,,

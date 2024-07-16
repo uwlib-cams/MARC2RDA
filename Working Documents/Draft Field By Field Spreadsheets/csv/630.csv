@@ -206,84 +206,123 @@
 204,delete,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,d,Date of treaty signing (R),,,,,,,http://rdaregistry.info/Elements/w/P10282,is commentary on expression,,,,,SZ. the value of this subfield will be a part of the name of the work
 205,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,the field does not contain $f $h $l $m $o $r $s $v $x $y $z,,AND If $4 =,http://rdaregistry.info/Elements/w/P10100,http://rdaregistry.info/Elements/w/P10100,is description of work,,,"1. ISBD Punctuation -- When LDR 18=a or i, then remove subfields and use punctuation. If LDR 18 = c, then keep subfield codes. 
 2. Order of subfields -- Retain the order of subfields that exists in the MARC tag
-3. 2nd indicator -- rdf:datatype -- Check decision II.K.",,"SZ. 
+3. 2nd indicator -- rdf:datatype -- Check decision II.K.
+4. Perform mapping according to step 4 in cell X214  - change the relationship rdawo:P10257 to rdawo:P10100",,"SZ. 
 1. Both MARCTagCondition 1 or MARCTagCondition 2 must be true."
 206,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,the field does not contain $f $h $l $m $o $r $s $v $x $y $z,,AND If $4 =,http://rdaregistry.info/Elements/w/P10140,http://rdaregistry.info/Elements/w/P10140,is analysis of work,,,"1. ISBD Punctuation -- When LDR 18=a or i, then remove subfields and use punctuation. If LDR 18 = c, then keep subfield codes. 
 2. Order of subfields -- Retain the order of subfields that exists in the MARC tag
-3. 2nd indicator -- rdf:datatype -- Check decision II.K.",,"SZ. 
+3. 2nd indicator -- rdf:datatype -- Check decision II.K.
+4. Perform mapping according to step 4 in cell X214  - change the relationship rdawo:P10257 to rdawo:P10140",,"SZ. 
 1. Both MARCTagCondition 1 or MARCTagCondition 2 must be true."
 207,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,the field does not contain $f $h $l $m $o $r $s $v $x $y $z,,AND If $4 =,http://rdaregistry.info/Elements/w/P10153,http://rdaregistry.info/Elements/w/P10153,is evaluation of work,,,"1. ISBD Punctuation -- When LDR 18=a or i, then remove subfields and use punctuation. If LDR 18 = c, then keep subfield codes. 
 2. Order of subfields -- Retain the order of subfields that exists in the MARC tag
-3. 2nd indicator -- rdf:datatype -- Check decision II.K.",,"SZ. 
+3. 2nd indicator -- rdf:datatype -- Check decision II.K.
+4. Perform mapping according to step 4 in cell X214  - change the relationship rdawo:P10257 to rdawo:P10153",,"SZ. 
 1. Both MARCTagCondition 1 or MARCTagCondition 2 must be true."
 208,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,the field does not contain $f $h $l $m $o $r $s $v $x $y $z,,AND If $4 =,http://rdaregistry.info/Elements/w/P10178,http://rdaregistry.info/Elements/w/P10178,is review of work,,,"1. ISBD Punctuation -- When LDR 18=a or i, then remove subfields and use punctuation. If LDR 18 = c, then keep subfield codes. 
 2. Order of subfields -- Retain the order of subfields that exists in the MARC tag
-3. 2nd indicator -- rdf:datatype -- Check decision II.K.",,"SZ. 
+3. 2nd indicator -- rdf:datatype -- Check decision II.K.
+4. Perform mapping according to step 4 in cell X214  - change the relationship rdawo:P10257 to rdawo:P10178",,"SZ. 
 1. Both MARCTagCondition 1 or MARCTagCondition 2 must be true."
 209,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,the field does not contain $f $h $l $m $o $r $s $v $x $y $z,,AND If $4 =,http://rdaregistry.info/Elements/w/P10182,http://rdaregistry.info/Elements/w/P10182,is critique of work,,,"1. ISBD Punctuation -- When LDR 18=a or i, then remove subfields and use punctuation. If LDR 18 = c, then keep subfield codes. 
 2. Order of subfields -- Retain the order of subfields that exists in the MARC tag
-3. 2nd indicator -- rdf:datatype -- Check decision II.K.",,"SZ. 
+3. 2nd indicator -- rdf:datatype -- Check decision II.K.
+4. Perform mapping according to step 4 in cell X214  - change the relationship rdawo:P10257 to rdawo:P10182",,"SZ. 
 1. Both MARCTagCondition 1 or MARCTagCondition 2 must be true."
 210,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,the field does not contain $f $h $l $m $o $r $s $v $x $y $z,,AND If $4 =,http://rdaregistry.info/Elements/w/P10187,http://rdaregistry.info/Elements/w/P10187,is commentary on work,,,"1. ISBD Punctuation -- When LDR 18=a or i, then remove subfields and use punctuation. If LDR 18 = c, then keep subfield codes. 
 2. Order of subfields -- Retain the order of subfields that exists in the MARC tag
-3. 2nd indicator -- rdf:datatype -- Check decision II.K.",,"SZ. 
+3. 2nd indicator -- rdf:datatype -- Check decision II.K.
+4. Perform mapping according to step 4 in cell X214  - change the relationship rdawo:P10257 to rdawo:P10187",,"SZ. 
 1. Both MARCTagCondition 1 or MARCTagCondition 2 must be true."
-211,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,The field contains one of the subfields $v $x $y $z,,AND If $4 =,http://rdaregistry.info/Elements/w/P10256,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
+211,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,The field contains one of the subfields $v $x $y $z,,OR If $4 =,http://rdaregistry.info/Elements/w/P10256,http://rdaregistry.info/Elements/w/P10256,has subject,,,"Create an instance of a skos:Concept
+
+<work> rdawo:P10256 <Concept(all 630 subfields)> . // has subject; complete heading
+<Concept> skos:prefLabel “630 subfields with ISBD Punctuation for Work & Expression related subfields. Subject related subfields are separated using 'space--space' e.g., Bible. Old Testament. Greek -- Versions -- Septuagint .
+<Concept)> skos:inScheme http://id.loc.gov/vocabulary/subjectSchemes/xxxx (depending on the value of the 2nd indicator).
+",,"SZ. 
+1. Either MARCTagCondition 1 or MARCTagCondition 2 must be true."
 212,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,the field does not contain $f $h $l $m $o $r $s $v $x $y $z,,If there is no $4 or if there is $4 with value http://rdaregistry.info/Elements/w/P10257,,http://rdaregistry.info/Elements/w/P10257,has subject work,,,"1. ISBD Punctuation -- When LDR 18=a or i, then remove subfields and use punctuation. If LDR 18 = c, then keep subfield codes. 
 2. Order of subfields -- Retain the order of subfields that exists in the MARC tag
-3. 2nd indicator -- rdf:datatype -- Check decision II.K.",,
+3. 2nd indicator -- rdf:datatype -- Check decision II.K.
+4. Create a Work instance for Work in 630 and a nomen instance as follows:
+
+<work> rdawo:P10257 <workS> . // has subject work
+<workS> rdawo:P10331 <nomenW> . // has authorized access point for work
+<nomenW> rdand:P80068 “Values of all 630 subfields in the order of the MARCtag” . // has nomen string
+ <nomenW> rdano:P80069 http://id.loc.gov/vocabulary/subjectSchemes/xxxx (depending on the value of the 2nd indicator) // has scheme of nomen
+
+",,
 213,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,Please check notes column,,,,http://rdaregistry.info/Elements/w/P10258,has subject expression,,,"1. ISBD Punctuation -- When LDR 18=a or i, then remove subfields and use punctuation. If LDR 18 = c, then keep subfield codes. 
 2. Order of subfields -- Retain the order of subfields that exists in the MARC tag
-3. 2nd indicator -- rdf:datatype -- Check decision II.K.",,"3 conditions
+3. 2nd indicator -- rdf:datatype -- Check decision II.K.
+4. Create instances for Expression, Work, and Nomen
+
+<work> rdawo:P10258 <expressionS> . // has subject expression
+<expressionS> rdaeo:P20313 <nomenE> . // has authorized access point for expression
+<nomenE> rdand:P80068 “Values of all 630 subfields in the order of the MARCtag” . // has nomen string, please check punctuation
+<nomenE> rdano:P80069 http://id.loc.gov/vocabulary/subjectSchemes/xxxx (depending on the value of the 2nd indicator) // has scheme of nomen
+<expressionS> rdaed:P20006 “value of subfield $l ” . // has language of expression
+<expressionS> rdaed:P20572 “value of subfield $s ” // has designation of version
+<expressionS> rdaeo:P20231 <workS> . // has work expressed
+<workS> rdawo:P10331 <nomenW> . // has authorized access point for work
+<nomenW> rdand:P80068 “values of all 630 subfields except for $f $h $l $m $o $r $s $v $x $y $z. Subfields in the order of the MARC21 tag” . // has nomen string
+<nomenW> rdano:P80069 http://id.loc.gov/vocabulary/subjectSchemes/xxxx (depending on the value of the 2nd indicator) // has scheme of nomen
+",,"3 conditions
 1. the field contains one of the subfields $h $l $m $o $r $s 
 2. If subfield $f exists and 040$e=rda 
 3. If there is no $4 or if there is $4 with value http://rdaregistry.info/Elements/w/P10258"
-214,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,If subfield $f exists and 040$e=aacr ,,If there is no $4 or if there is $4 with value http://rdaregistry.info/Elements/w/P10259,,http://rdaregistry.info/Elements/w/P10259,has subject manifestation,,,"1. ISBD Punctuation -- When LDR 18=a or i, then remove subfields and use punctuation. If LDR 18 = c, then keep subfield codes. 
+214,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,If subfield $f exists and 040$e=aacr ,,OR If there is no $4 or if there is $4 with value http://rdaregistry.info/Elements/w/P10259,,http://rdaregistry.info/Elements/w/P10259,has subject manifestation,,,"1. ISBD Punctuation -- When LDR 18=a or i, then remove subfields and use punctuation. If LDR 18 = c, then keep subfield codes. 
 2. Order of subfields -- Retain the order of subfields that exists in the MARC tag
 3. 2nd indicator -- rdf:datatype -- Check decision II.K.",,
-215,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,If subfield $f exists and 040$e=aacr ,,Or If $4 =,http://rdaregistry.info/Elements/w/P10271,http://rdaregistry.info/Elements/w/P10271,is description of manifestation,,,,,
-216,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,If subfield $f exists and 040$e=aacr ,,Or If $4 =,http://rdaregistry.info/Elements/w/P10272,http://rdaregistry.info/Elements/w/P10272,is analysis of manifestation,,,,,
-217,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,If subfield $f exists and 040$e=aacr ,,Or If $4 =,http://rdaregistry.info/Elements/w/P10273,http://rdaregistry.info/Elements/w/P10273,is evaluation of manifestation,,,,,
-218,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,If subfield $f exists and 040$e=aacr ,,Or If $4 =,http://rdaregistry.info/Elements/w/P10274,http://rdaregistry.info/Elements/w/P10274,is review of manifestation,,,,,
-219,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,If subfield $f exists and 040$e=aacr ,,Or If $4 =,http://rdaregistry.info/Elements/w/P10275,http://rdaregistry.info/Elements/w/P10275,is critique of manifestation,,,,,
-220,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,If subfield $f exists and 040$e=aacr ,,Or If $4 =,http://rdaregistry.info/Elements/w/P10276,http://rdaregistry.info/Elements/w/P10276,is commentary on manifestation,,,,,
+215,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,If subfield $f exists and 040$e=aacr ,,AND If $4 =,http://rdaregistry.info/Elements/w/P10271,http://rdaregistry.info/Elements/w/P10271,is description of manifestation,,,,,
+216,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,If subfield $f exists and 040$e=aacr ,,AND If $4 =,http://rdaregistry.info/Elements/w/P10272,http://rdaregistry.info/Elements/w/P10272,is analysis of manifestation,,,,,
+217,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,If subfield $f exists and 040$e=aacr ,,AND If $4 =,http://rdaregistry.info/Elements/w/P10273,http://rdaregistry.info/Elements/w/P10273,is evaluation of manifestation,,,,,
+218,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,If subfield $f exists and 040$e=aacr ,,AND If $4 =,http://rdaregistry.info/Elements/w/P10274,http://rdaregistry.info/Elements/w/P10274,is review of manifestation,,,,,
+219,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,If subfield $f exists and 040$e=aacr ,,AND If $4 =,http://rdaregistry.info/Elements/w/P10275,http://rdaregistry.info/Elements/w/P10275,is critique of manifestation,,,,,
+220,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,If subfield $f exists and 040$e=aacr ,,AND If $4 =,http://rdaregistry.info/Elements/w/P10276,http://rdaregistry.info/Elements/w/P10276,is commentary on manifestation,,,,,
 221,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,Please check notes column,,,,http://rdaregistry.info/Elements/w/P10277,is description of expression,,,"1. ISBD Punctuation -- When LDR 18=a or i, then remove subfields and use punctuation. If LDR 18 = c, then keep subfield codes. 
 2. Order of subfields -- Retain the order of subfields that exists in the MARC tag
-3. 2nd indicator -- rdf:datatype -- Check decision II.K.",,"3 conditions
+3. 2nd indicator -- rdf:datatype -- Check decision II.K.
+4. Perform mapping according to step 4 in cell X215 - change the relationship rdawo:P10258 to rdawo:P10277",,"3 conditions
 1. the field contains one of the subfields $h $l $m $o $r $s 
 2. If subfield $f exists and 040$e=rda 
 3. If there is no $4 or if there is $4 with value http://rdaregistry.info/Elements/w/P10277"
 222,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,Please check notes column,,If $4 =,http://rdaregistry.info/Elements/w/P10278,http://rdaregistry.info/Elements/w/P10278,is analysis of expression,,,"1. ISBD Punctuation -- When LDR 18=a or i, then remove subfields and use punctuation. If LDR 18 = c, then keep subfield codes. 
 2. Order of subfields -- Retain the order of subfields that exists in the MARC tag
-3. 2nd indicator -- rdf:datatype -- Check decision II.K.",,"3 conditions
+3. 2nd indicator -- rdf:datatype -- Check decision II.K.
+4. Perform mapping according to step 4 in cell X215  - change the relationship rdawo:P10258 to rdawo:P10278",,"3 conditions
 1. the field contains one of the subfields $h $l $m $o $r $s 
 2. If subfield $f exists and 040$e=rda 
 3. If there is no $4 or if there is $4 with value http://rdaregistry.info/Elements/w/P10278"
 223,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,Please check notes column,,If $4 =,http://rdaregistry.info/Elements/w/P10279,http://rdaregistry.info/Elements/w/P10279,is evaluation of expression,,,"1. ISBD Punctuation -- When LDR 18=a or i, then remove subfields and use punctuation. If LDR 18 = c, then keep subfield codes. 
 2. Order of subfields -- Retain the order of subfields that exists in the MARC tag
-3. 2nd indicator -- rdf:datatype -- Check decision II.K.",,"3 conditions
+3. 2nd indicator -- rdf:datatype -- Check decision II.K.
+4. Perform mapping according to step 4 in cell X215 - change the relationship rdawo:P10258 to rdawo:P10279",,"3 conditions
 1. the field contains one of the subfields $h $l $m $o $r $s 
 2. If subfield $f exists and 040$e=rda 
 3. If there is no $4 or if there is $4 with value http://rdaregistry.info/Elements/w/P10279"
 224,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,Please check notes column,,If $4 =,http://rdaregistry.info/Elements/w/P10280,http://rdaregistry.info/Elements/w/P10280,is review of expression,,,"1. ISBD Punctuation -- When LDR 18=a or i, then remove subfields and use punctuation. If LDR 18 = c, then keep subfield codes. 
 2. Order of subfields -- Retain the order of subfields that exists in the MARC tag
-3. 2nd indicator -- rdf:datatype -- Check decision II.K.",,"3 conditions
+3. 2nd indicator -- rdf:datatype -- Check decision II.K.
+4. Perform mapping according to step 4 in cell X215 - change the relationship rdawo:P10258 to rdawo:P10280",,"3 conditions
 1. the field contains one of the subfields $h $l $m $o $r $s 
 2. If subfield $f exists and 040$e=rda 
 3. If there is no $4 or if there is $4 with value http://rdaregistry.info/Elements/w/P10280"
 225,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,Please check notes column,,If $4 =,http://rdaregistry.info/Elements/w/P10281,http://rdaregistry.info/Elements/w/P10281,is critique of expression,,,"1. ISBD Punctuation -- When LDR 18=a or i, then remove subfields and use punctuation. If LDR 18 = c, then keep subfield codes. 
 2. Order of subfields -- Retain the order of subfields that exists in the MARC tag
-3. 2nd indicator -- rdf:datatype -- Check decision II.K.",,"3 conditions
+3. 2nd indicator -- rdf:datatype -- Check decision II.K.
+4. Perform mapping according to step 4 in cell X215 - change the relationship rdawo:P10258 to rdawo:P10281",,"3 conditions
 1. the field contains one of the subfields $h $l $m $o $r $s 
 2. If subfield $f exists and 040$e=rda 
 3. If there is no $4 or if there is $4 with value http://rdaregistry.info/Elements/w/P10281"
 226,first pass,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,a,Uniform title (NR),,,Please check notes column,,If $4 =,http://rdaregistry.info/Elements/w/P10282,http://rdaregistry.info/Elements/w/P10282,is commentary on expression,,,"1. ISBD Punctuation -- When LDR 18=a or i, then remove subfields and use punctuation. If LDR 18 = c, then keep subfield codes. 
 2. Order of subfields -- Retain the order of subfields that exists in the MARC tag
-3. 2nd indicator -- rdf:datatype -- Check decision II.K.",,"3 conditions
+3. 2nd indicator -- rdf:datatype -- Check decision II.K.
+4. Perform mapping according to step 4 in cell X215  - change the relationship rdawo:P10258 to rdawo:P10282",,"3 conditions
 1. the field contains one of the subfields $h $l $m $o $r $s 
 2. If subfield $f exists and 040$e=rda 
 3. If there is no $4 or if there is $4 with value http://rdaregistry.info/Elements/w/P10282"
-227,,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,,,,,,,,,http://rdaregistry.info/Elements/w/P10198,has related work of work,,,,,
+227,delete,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,,,,,,,,,http://rdaregistry.info/Elements/w/P10198,has related work of work,,,,,
 228,,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10100,is description of work,,,,,
 229,,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10140,is analysis of work,,,,,
 230,,630,SUBJECT ADDED ENTRY--UNIFORM TITLE (R),Nonfiling characters,*,,Thesaurus,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10153,is evaluation of work,,,,,

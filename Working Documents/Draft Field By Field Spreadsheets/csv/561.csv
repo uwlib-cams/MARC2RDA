@@ -1,14 +1,14 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
 0,not mapped,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,#,No information provided,Undefined,#,Undefined,,,b,Time of collation (NR) [OBSOLETE],,,,,,,See Decision,,,Deferred decision to map any obsolete fields until valid fields have been mapped,Decision on obsolete fields:  https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iif-obsolete-fieldssubfieldscharacter-positions,,
 1,not mapped,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,*,(All),Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,See Decision,,,Not mapped unless a case is presented,Decision not to map $8 https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iig-8,,
-2,reviewed,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,#,No information provided,Undefined,#,Undefined,,,a,History (NR),,,,,,,http://rdaregistry.info/Elements/i/P40026,has custodial history of item,unstructured,subfield a is a text string; no more specific property is defined,"(item - minted) has manifestation exemplified (manifestation the MARC is describing)
+2,done,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,#,No information provided,Undefined,#,Undefined,,,a,History (NR),,,,,,,http://rdaregistry.info/Elements/i/P40026,has custodial history of item,unstructured,subfield a is a text string; no more specific property is defined,"(item - minted) has manifestation exemplified (manifestation the MARC is describing)
 ex: manifestationIRI rdamo:p30103  ex:itemIRI
 ex:itemIRI rdaid:p40026 ""contents of subfield a""
 
 ",,"Same mapping as for ind1 = 1 (not private);
 See also instructions for subfield u, 3, 5, etc.;
 lna 10/19/2022"
-3,reviewed,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,0,Private,Undefined,#,Undefined,,,a,History (NR),,,,,,,"http://rdaregistry.info/Elements/i/P40049
+3,done,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,0,Private,Undefined,#,Undefined,,,a,History (NR),,,,,,,"http://rdaregistry.info/Elements/i/P40049
 http://rdaregistry.info/Elements/i/P40164
 http://rdaregistry.info/Elements/i/P40026
 http://rdaregistry.info/Elements/w/P10004
@@ -25,27 +25,27 @@ https://github.com/uwlib-cams/MARC2RDA/issues/225#issuecomment-1284306425 ;
 
 See also instructions for subfield u, 3, 5, etc
 lna 10/19/2022"
-4,reviewed,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,1,Not private,Undefined,#,Undefined,,,a,History (NR),,,,,,,http://rdaregistry.info/Elements/i/P40026,has custodial history of item,unstructured,subfield a is a text string; no more specific property is defined,"(item - minted) has manifestation exemplified (manifestation the MARC is describing)
+4,done,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,1,Not private,Undefined,#,Undefined,,,a,History (NR),,,,,,,http://rdaregistry.info/Elements/i/P40026,has custodial history of item,unstructured,subfield a is a text string; no more specific property is defined,"(item - minted) has manifestation exemplified (manifestation the MARC is describing)
 ex: manifestationIRI rdamo:p30103  ex:itemIRI
 ex:itemIRI rdaid:p40026 ""contents of subfield a""
 
 ",,"Same mapping as for ind1 = # (blank);
 See also instructions for subfield u, 3, 5, etc.;
 lna 10/19/2022"
-5,reviewed,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,*,(All),Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,,,unstructured,clarifies what material part of the item the custodial history applies to,"Add after the end of the text string from subfield a, according to this pattern:  (applies to:  [contents of $3] )",,"Note that this would apply to reified statement if first indicator of field is 0.
+5,done,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,*,(All),Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,,,unstructured,clarifies what material part of the item the custodial history applies to,"Add after the end of the text string from subfield a, according to this pattern:  (applies to:  [contents of $3] )",,"Note that this would apply to reified statement if first indicator of field is 0.
 lna 10/19/2022"
-6,reviewed,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,*,(All),Undefined,#,Undefined,,,5,Institution to which field applies (NR),,,,,,,See Decision,,,See Decision,"Pattern of $5 decision applied to associated item minted for application of descriptive elements ($a, etc.) based on indicator 1.
+6,done,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,*,(All),Undefined,#,Undefined,,,5,Institution to which field applies (NR),,,,,,,See Decision,,,See Decision,"Pattern of $5 decision applied to associated item minted for application of descriptive elements ($a, etc.) based on indicator 1.
 https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iij-5",,"Follow the pattern of Decision:  https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iij-5 
 lna 10/19/2022"
-7,reviewed,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,*,(All),Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,See Decision,,,See Decision,Follow pattern in $6 Decision https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iih-6,,
-8,reviewed,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,#,No information provided,Undefined,#,Undefined,,,u,Uniform Resource Identifier (R),,,,,,,,,,"contents of $u would be a url leading to information about custodial history of an item, but RDA only permits a structured description (quoted string) for this property.","Give URL as a quoted string. Append after the end of the text string from subfield a, prior to subfield $3 in this pattern: 
+7,done,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,*,(All),Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,See Decision,,,See Decision,Follow pattern in $6 Decision https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iih-6,,
+8,done,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,#,No information provided,Undefined,#,Undefined,,,u,Uniform Resource Identifier (R),,,,,,,,,,"contents of $u would be a url leading to information about custodial history of an item, but RDA only permits a structured description (quoted string) for this property.","Give URL as a quoted string. Append after the end of the text string from subfield a, prior to subfield $3 in this pattern: 
 additional information at: [contents of $u]",,"Note, this would be a separate mapping from $a if there is one.
 lna 10/19/2022
 
 Edit: 
 Combined with note mapped from $a based on discussion in issue https://github.com/uwlib-cams/MARC2RDA/issues/225#issuecomment-1323217050 
 CP 02/12/2024"
-9,reviewed,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,0,Private,Undefined,#,Undefined,,,u,Uniform Resource Identifier (R),,,,,,,,,,"contents of $u would be a url leading to information about custodial history of an item, but RDA only permits a structured description (quoted string) for this property.","Give URL as a quoted string. Append after the end of the text string from subfield a, prior to subfield $3 in this pattern: 
+9,done,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,0,Private,Undefined,#,Undefined,,,u,Uniform Resource Identifier (R),,,,,,,,,,"contents of $u would be a url leading to information about custodial history of an item, but RDA only permits a structured description (quoted string) for this property.","Give URL as a quoted string. Append after the end of the text string from subfield a, prior to subfield $3 in this pattern: 
 additional information at: [contents of $u]",,"Example output for ind1=0 in issue discussion:
 
 https://github.com/uwlib-cams/MARC2RDA/issues/225#issuecomment-1284306425 ;
@@ -58,7 +58,7 @@ lna 10/19/2022
 Edit: 
 Combined with note mapped from $a based on discussion in issue https://github.com/uwlib-cams/MARC2RDA/issues/225#issuecomment-1323217050 
 CP 02/12/2024"
-10,reviewed,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,1,Not private,Undefined,#,Undefined,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/i/P40026,has custodial history of item,structured,"contents of $u would be a url leading to information about custodial history of an item, but RDA only permits a structured description (quoted string) for this property.","Give URL as a quoted string. Append after the end of the text string from subfield a, prior to subfield $3 in this pattern: 
+10,done,561,OWNERSHIP AND CUSTODIAL HISTORY (R),Privacy,1,Not private,Undefined,#,Undefined,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/i/P40026,has custodial history of item,structured,"contents of $u would be a url leading to information about custodial history of an item, but RDA only permits a structured description (quoted string) for this property.","Give URL as a quoted string. Append after the end of the text string from subfield a, prior to subfield $3 in this pattern: 
 additional information at: [contents of $u]",,"Note, this would be a separate mapping from $a if there is one. 
 lna 10/19/2022
 

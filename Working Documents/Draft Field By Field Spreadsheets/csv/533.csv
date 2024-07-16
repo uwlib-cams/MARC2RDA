@@ -116,8 +116,34 @@ Delete.  This decision was revisited 11/8/2023 in context of 535 mapping and an 
 112,not mapped,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,y,Data provenance (R),,,,,,,,,,,,,"Provisionally, not mapped - this is a new subfield, and it is not clear from the documentation how the ""data provenance"" might translate to RDA.  We don't have a model for using Metadata Work to express provenance for RDA statements at a granular level and haven't seen this in the wild (yet)  --lna 12/7/2023"
 113,not mapped,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,5,Institution to which field applies (NR),,,,,,,,,,,,,"Not mapped - the interpretation of  $5""Institution to which the field applies"" is not clear for 533.  The examples show the institution whose symbol appears in $5 also appearing as the publisher/creator of the reproduction.  --la 12/7/2023"
 114,not mapped,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,value not mapped; used to link field to corresponding 880 Alternate Graphic Representation
-115,,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,7,"Fixed-length data elements of reproduction (NR)/
-Type of date/Publication status",*,,,,,,,,,,,,"For $7, follow the 008 mappings.  Only two of the position 6 date status values are mapped.  --la 12/7/2023"
+115,First pass,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,7,"Fixed-length data elements of reproduction (NR)/
+Type of date/Publication status",*,,,,,,,,various,This is data about the reproduction (this manifestation) that parallels values in 008 field.  We should use the 008 mappings for each data element: -- la 2024-6-13,"/0 - Type of date/Publication status
+  Use 008 06 mappings
+  Note:  code r (original and reproduction dates) should not be used here! 
+
+ /1-4 - Date 1
+  Use 008 07-10 mappings
+
+ /5-8 - Date 2
+  Use 008 11-14 mappings
+
+/9-11 - Place of publication, production, or execution
+  Use 008 15-17 mappings
+
+ /12 - Frequency
+Format must be CONTINUING RESOURCES.  
+  Use 008 18 mappings
+
+/13 - Regularity
+Format must be CONTINUING RESOURCES
+  Use 008 19 mapping
+
+/14 - Form of item
+If Format is BOOKS, COMPUTER FILES, MUSIC, CONTINUING RESOURCES, or MIXED MATERIALS
+  Use 008 23 mapping for the respective format
+
+If Format is MAPS or VISUAL MATERIALS
+  Use 008 29 mapping",,
 116,,,,,,,,,,,,,,,,,,,,,,,,,,
 117,,,,,,,,,,,,,,,,,,,,,,,,,,
 118,,,,,,,,,,,,,,,,,,,,,,,,,,

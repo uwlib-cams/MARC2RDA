@@ -1,5 +1,5 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,reviewed,28.0,PUBLISHER NUMBER OR DISTRIBUTOR NUMBER (R),Type of number,"0, 1, 4, 5, or 6","0 = Issue number
+0,done,28.0,PUBLISHER NUMBER OR DISTRIBUTOR NUMBER (R),Type of number,"0, 1, 4, 5, or 6","0 = Issue number
 1 = Matrix number
 4 = Video recording publisher number
 5 = Other publisher number 
@@ -17,7 +17,7 @@ lna 2024_02_14",,"""[Manifestation]-->rdamo:P30004-->[Nomen]-->rdan:P80068-->($a
 
 
 LA 2/14/2024",,
-1,reviewed,28.0,PUBLISHER NUMBER OR DISTRIBUTOR NUMBER (R),Type of number,2,Plate number,Note/added entry controller,*,,,,a.b. q,"a Publisher or distributor number (NR)
+1,done,28.0,PUBLISHER NUMBER OR DISTRIBUTOR NUMBER (R),Type of number,2,Plate number,Note/added entry controller,*,,,,a.b. q,"a Publisher or distributor number (NR)
 b Source
 c Qualifying information",,,,,,,http://rdaregistry.info/Elements/m/P30066,has plate number for notated music,"IRI (minted Nomen) with Nomen properties
 - has nomen string $a https://www.rdaregistry.info/Elements/n/#P80068  
@@ -37,8 +37,6 @@ lna 2024_02_14",,"""[Manifestation]-->rdamo:P30066-->[Nomen]-->rdan:P80068-->($a
 lna 2024_02_14",,"""[Manifestation]-->rdamo:P30065-->[Nomen]-->rdan:P80068-->($a) .  
 [Nomen]--rdan:P80073--> ($b) . 
 [Nomen]-->rdan:P80071-->($q) .
-
-
 ",,
 4,delete,28.0,PUBLISHER NUMBER OR DISTRIBUTOR NUMBER (R),Type of number,0,Issue number,Note/added entry controller,0,"No note, no added entry",,,b,Source (NR),,,,,,,http://rdaregistry.info/Elements/n/P80073,is assigned by agent,unstructured,,,,For printed music and music-related materials
 5,delete,28.0,PUBLISHER NUMBER OR DISTRIBUTOR NUMBER (R),Type of number,0,Issue number,Note/added entry controller,1,"Note, added entry",,,b,Source (NR),,,,,,,http://rdaregistry.info/Elements/n/P80073,is assigned by agent,unstructured,,,,For printed music and music-related materials

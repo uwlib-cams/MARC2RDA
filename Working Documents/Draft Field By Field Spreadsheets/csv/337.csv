@@ -1,9 +1,22 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,reviewed,337,MEDIA TYPE (R),Undefined,*,,Undefined,*,,,,a,Media type term (R),,,,,,,http://rdaregistry.info/Elements/m/P30002,has media type,structured description or unstructured description,Term that describes the media type for a manifestation,RDA Media Type,,
-1,reviewed,337,MEDIA TYPE (R),Undefined,*,,Undefined,*,,,,b,Media type code (R),,,,,,,http://rdaregistry.info/Elements/m/P30002,has media type,identifier,Code that represents the media type for a manifestation,,,
-2,not mapped,337,MEDIA TYPE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,2,Source (NR),,,,,,,,,,,VES,,
-3,reviewed,337,MEDIA TYPE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation, unstructured ,,Construct a value for rdam:P30002: Media Type {337$a value} applies to the manifestation’s {337$3 value},,
-4,not mapped,337,MEDIA TYPE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-5,not mapped,337,MEDIA TYPE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-6,reviewed,337,MEDIA TYPE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/m/P30002,has media type,identifier or IRI,,value is an IRI if $2 contains 'rda',Identifier or IRI that represents the media type for a manifestation,
-7,reviewed,337,MEDIA TYPE (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/m/P30002,has media type,IRI,,RDA Media Type,IRI that represents the media type for a manifestation,
+0,done,337,MEDIA TYPE (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/m/P30002,has media type,IRI,,[Manifestation] rdam:P30002 [value of $1],,
+1,done,337,MEDIA TYPE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,0,starts with 'http',not($1),,http://rdaregistry.info/Elements/m/P30002,has media type,IRI,,"If $0 starts with http, and there is no $1, map as [manifestation] rdam:P30002 [$0 value]",,
+2,not mapped (reviewed),337,MEDIA TYPE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,0,does not start with 'http',not($1),,,,,,do not map a $0 that does not begin with 'http',,
+3,reviewed,337,MEDIA TYPE (R),Undefined,*,,Undefined,*,,,,"a, b",Media type term (R),,,2,not(rdamt or rdamedia),"not($1, or $0 begnning with http)",,http://rdaregistry.info/Elements/m/P30002,has media type,IRI,,"[Manifestation] rdam:P30002 skos:Concept(mintedIRI)
+skos:Concept skos:prefLabel <$a or $b if no $a>
+skos:Concept skos:notation 
+<$b>^^datatypeIRI
+skos:Concept skos:inScheme <$2>
+
+only include $b as skos:notation when pattern is $a$b$a$b
+mint a concept for each $a value present in the field, or in the case that it is all $b, for each $b value",,
+4,done,337,MEDIA TYPE (R),Undefined,*,,Undefined,*,,,,"a, b",Media type term (R),,,2,rdamt,"not($1, or $0 begnning with http)",,http://rdaregistry.info/Elements/m/P30002,has media type,IRI,,[Manifestation] rdam:P30002 [lookup IRI at https://www.rdaregistry.info/termList/RDAMediaType/],,
+5,done,337,MEDIA TYPE (R),Undefined,*,,Undefined,*,,,,"a, b",Media type term (R),,,2,rdamedia,"not($1, or $0 begnning with http)",,http://rdaregistry.info/Elements/m/P30002,has media type,IRI,,"[Manifestation] rdam:P30002 [IRI] 
+lookup IRI at https://id.loc.gov/vocabulary/mediaTypes/",,
+6,done,337,MEDIA TYPE (R),Undefined,*,,Undefined,*,,,,a,Media type term (R),,,not($2),,"not($1, or $0 begnning with http)",,http://rdaregistry.info/Elements/m/P30002,has media type,unstructured description,,[Manifestation] rdamd:P30002 [value of $a],,
+7,done,337,MEDIA TYPE (R),Undefined,*,,Undefined,*,,,,b,Media type code (R),,,not($2),,"not($1, or $0 begnning with http)",,http://rdaregistry.info/Elements/m/P30002,has media type,unstructured description,,[Manifestation] rdamd:P30002 [value of $b],,
+8,done,337,MEDIA TYPE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation, unstructured ,,If $3: [Manifestation] rdamd:P30137 [“media type” + value of $1|$0|concept|$b|$a + “applies to the manifestation’s” + [value of $3],,
+9,delete,337,MEDIA TYPE (R),Undefined,*,,Undefined,*,,,,b,Media type code (R),,,,,,,http://rdaregistry.info/Elements/m/P30002,has media type,identifier,Code that represents the media type for a manifestation,,,
+10,delete,337,MEDIA TYPE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,2,Source (NR),,,,,,,,,,,VES,,
+11,done,337,MEDIA TYPE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+12,not mapped,337,MEDIA TYPE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,

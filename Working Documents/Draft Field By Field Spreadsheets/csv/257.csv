@@ -1,8 +1,34 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,first pass,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,,,,a,Country of producing entity (R),,,,,,,http://rdaregistry.info/Elements/m/P30086,has place of production,unstructured description; structured description,,[Manifestation]-->rdam:P30086-->[value of $a] -- ZP 3/27/2022,,
-1,?,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,#,Undefined,Undefined,#,Undefined,,,2,Source (NR),,,,,,,,,,,,,
-2,?,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-3,not mapped,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-4,first pass,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,not($1),,,,http://rdaregistry.info/Elements/m/P30086,has place of production,identifier; IRI,,[Manifestation]-->rdam:P30086-->[value of $0] -- ZP 5/24/2022,,
-5,first pass,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$1,,,,http://rdaregistry.info/Elements/m/P30086,has place of production,identifier; IRI,,[Manifestation]-->rdam:P30086-->[value of $1]-->rdap:P70057-->[value of $0] -- ZP 5/24/2022,,
-6,first pass,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/m/P30086,has place of production,IRI,,[Manifestation]-->rdam:P30086-->[value of $1] -- ZP 3/27/2022,,
+0,delete,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,,,,a,Country of producing entity (R),,,,,,,http://rdaregistry.info/Elements/m/P30086,has place of production,unstructured description; structured description,,[Manifestation]-->rdam:P30086-->[value of $a] -- ZP 3/27/2022,,
+1,delete,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,not($1),,,,http://rdaregistry.info/Elements/m/P30086,has place of production,identifier,,[Manifestation]-->rdam:P30086-->[value of $0] -- ZP 5/24/2022,,refer to Transform structure for $0/$1
+2,delete,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$1,,,,http://rdaregistry.info/Elements/m/P30086,has place of production,identifier or IRI,,[Manifestation]-->rdam:P30086-->[value of $1]-->rdap:P70057-->[value of $0] -- ZP 5/24/2022,,
+3,delete,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/m/P30086,has place of production,IRI,,[Manifestation]-->rdam:P30086-->[value of $1] -- ZP 3/27/2022,,
+4,delete,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,Undefined,,,"a, 2",Source (NR),,, ,,,,http://rdaregistry.info/Elements/m/P30086,has place of production,IRI,,"[Manifestation]-->rdam:P30086-->[PlaceIRI]
+
+[placeIRI] rdap:P70019 has appellation of place [placeNomen]
+
+[placeNomen] rdan:P80068 has nomen string [values of $a]
+
+[placeNomen] rdan:P80069 has scheme of nomen [value of $2]
+
+PS 6/25/2024",,
+5,delete,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+6,delete,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+7,reviewed,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,0.0,starts with 'http://id.loc.gov/authorities/names/',,,,http://rdaregistry.info/Elements/w/P10316,related place of work,IRI,,"Use the LC Geographic Areas IRI: the geographic area code can be retrieved from this name authority file, tidied up (removing trailing spaces and hyphens), and combined with 'http://id.loc.gov/vocabulary/geographicAreas/' to get the geographic area code IRI
+- CP 2024-07-12",,
+8,not mapped (reviewed),257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,0.0,does not start with  'http://id.loc.gov/authorities/names/',,,,,,,,,,
+9,reviewed,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,1.0,starts with ''http://id.loc.gov/rwo/',,,,http://rdaregistry.info/Elements/w/P10316,related place of work,IRI,,"Use the LC Geographic Areas IRI: the geographic area code can be retrieved from this name authority file, which can be found using the Agent IRI, tidied up (removing trailing spaces and hyphens), and combined with 'http://id.loc.gov/vocabulary/geographicAreas/' to get the geographic area code IRI
+- CP 2024-07-12",,
+10,reviewed,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,1.0,does not start with 'http://id.loc.gov/rwo/',,,,http://rdaregistry.info/Elements/w/P10316,related place of work,IRI,,[Manifestation] rdawo:P10316 [value of $1],,
+11,reviewed,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,,,,a,Country of producing entity (R),,,not($2),,,,http://rdaregistry.info/Elements/w/P10316,related place of work,unstructured description,,[Manifestation]-->rdawd:P10316-->[value of $a] ,,
+12,reviewed,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,Undefined,,,"a, 2",Source (NR),,, ,,,,http://rdaregistry.info/Elements/w/P10316,related place of work,IRI,,"[Manifestation]-->rdam:P10316-->[PlaceIRI]
+
+[placeIRI] rdap:P70019 has appellation of place [placeNomen]
+
+[placeNomen] rdan:P80068 has nomen string [values of $a]
+
+[placeNomen] rdan:P80069 has scheme of nomen [lookup $2]
+
+PS 6/25/2024",,
+13,not mapped,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+14,not mapped,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,

@@ -1,61 +1,260 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,delete,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,a,Type of recording (R),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Not specific enough -- ZP 3/26/2022
-1,first pass,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,a,Type of recording (R),,,,,,,http://rdaregistry.info/Elements/m/P30172,has type of recording,unstructured description; structured description,,[Manifestation]-->rdam:P30172-->[value of $a] -- ZP 3/26/2022,,Structured only when 344$2 is present; doesn't affect the mapping result -- ZP 3/26/2022
-2,delete,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,b,Recording medium (R),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Not specific enough -- ZP 3/26/2022
-3,first pass,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,b,Recording medium (R),,,,,,,http://rdaregistry.info/Elements/m/P30206,has recording medium,unstructured description; structured description,,[Manifestation]-->rdam:P30206-->[value of $b] -- ZP 3/26/2022,,Structured only when 344$2 is present; doesn't affect the mapping result -- ZP 3/26/2022
-4,delete,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,c,Playing speed (R),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Not specific enough -- ZP 3/26/2022
-5,first pass,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,c,Playing speed (R),,,,,,,http://rdaregistry.info/Elements/m/P30201,has playing speed,unstructured description; structured description,,[Manifestation]-->rdam:P30201-->[value of $c] -- ZP 3/26/2022,,Structured only when 344$2 is present; doesn't affect the mapping result -- ZP 3/26/2022
-6,delete,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,d,Groove characteristic (R),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Not specific enough -- ZP 3/26/2022
-7,first pass,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,d,Groove characteristic (R),,,$d,not(fine|standard|coarse groove|microgroove),,,http://rdaregistry.info/Elements/m/P30164,has groove characteristic,unstructured description,"When $d is not is taken from the RDA VES for groove pitch or the one for groove width, can only map to a more general element -- ZP 3/27/2022",[Manifestation]-->rdam:P30164-->[value of $d] -- ZP 3/27/2022,,
-8,first pass,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,d,Groove characteristic (R),,,$d,fine|standard,,,http://rdaregistry.info/Elements/m/P30307,has groove pitch,structured description,"When $d = fine|standard, the value is taken from the RDA VES for groove pitch -- ZP 3/27/2022",[Manifestation]-->rdam:P30307-->[value of $d] -- ZP 3/27/2022,,
-9,first pass,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,d,Groove characteristic (R),,,$d,coarse groove|microgroove,,,http://rdaregistry.info/Elements/m/P30308,has groove width,structured description,"When $d = coarse groove|microgroove, the value is taken from the RDA VES for groove width -- ZP 3/27/2022",[Manifestation]-->rdam:P30308-->[value of $d] -- ZP 3/27/2022,,
-10,delete,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,e,Track configuration (R),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Not specific enough -- ZP 3/26/2022
-11,first pass,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,e,Track configuration (R),,,,,,,http://rdaregistry.info/Elements/m/P30161,has track configuration,unstructured description; structured description,,[Manifestation]-->rdam:P30161-->[value of $e] -- ZP 3/27/2022,,Structured only when 344$2 is present; doesn't affect the mapping result -- ZP 3/27/2022
-12,delete,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,f,Tape configuration (R),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Not specific enough -- ZP 3/26/2022
-13,first pass,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,f,Tape configuration (R),,,,,,,http://rdaregistry.info/Elements/m/P30185,has tape configuration,unstructured description; structured description,,[Manifestation]-->rdam:P30185-->[value of $f] -- ZP 3/27/2022,,Structured only when 344$2 is present; doesn't affect the mapping result -- ZP 3/27/2022
-14,delete,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,g,Configuration of playback channels (R),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Not specific enough -- ZP 3/26/2022
-15,first pass,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,g,Configuration of playback channels (R),,,,,,,http://rdaregistry.info/Elements/m/P30184,has configuration of playback channels,unstructured description; structured description,,[Manifestation]-->rdam:P30184-->[value of $g] -- ZP 3/27/2022,,Structured only when 344$2 is present; doesn't affect the mapping result -- ZP 3/27/2022
-16,delete,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,h,Special playback characteristics (R),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Not specific enough -- ZP 3/26/2022
-17,first pass,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,h,Special playback characteristics (R),,,,,,,http://rdaregistry.info/Elements/m/P30138,has special playback characteristic,unstructured description; structured description,,[Manifestation]-->rdam:P30138-->[value of $h] -- ZP 3/27/2022,,Structured only when 344$2 is present; doesn't affect the mapping result -- ZP 3/27/2022
-18,first pass,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,i,Sound content (R),,,,,,,http://rdaregistry.info/Elements/m/P30454,has sound content,unstructured description; structured description,,[Manifestation]-->rdam:P30454-->[value of $i] -- ZP 3/27/2022,,Structured only when 344$2 is present; doesn't affect the mapping result -- ZP 3/27/2022
-19,first pass,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,j,Original capture and storage technique (R),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,unstructured description; structured description,,[Manifestation]-->rdam:P30125-->[value of $j] -- ZP 3/27/2022,"A new MARC subfield added in 2021, RDA may develop a new element for it, for now it's mapped to a broader element -- ZP 3/27/2022",
-20,not mapped,344.0,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,2,Source (NR),,,,,,,,,,,,,
-21,first pass,344.0,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,$a,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"[Manifestation]-->rdam:P30137-->""Type of recording ("" + {value of $a} + "") applies to "" + {value of $3} + ""."" -- ZP 5/15/2022",,
-22,first pass,344.0,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,$b,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"[Manifestation]-->rdam:P30137-->""Recording medium ("" + {value of $b} + "") applies to "" + {value of $3} + ""."" -- ZP 5/15/2022",,
-23,first pass,344.0,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,$c,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"[Manifestation]-->rdam:P30137-->""Playing speed ("" + {value of $c} + "") applies to "" + {value of $3} + ""."" -- ZP 5/15/2022",,
-24,first pass,344.0,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,$d,not(fine|standard|coarse groove|microgroove),,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"[Manifestation]-->rdam:P30137-->""Groove characteristic ("" + {value of $d} + "") applies to "" + {value of $3} + ""."" -- ZP 5/15/2022",,
-25,first pass,344.0,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,$d,fine|standard,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"[Manifestation]-->rdam:P30137-->""Groove pitch ("" + {value of $d} + "") applies to "" + {value of $3} + ""."" -- ZP 5/15/2022",,
-26,first pass,344.0,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,$d,coarse groove|microgroove,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"[Manifestation]-->rdam:P30137-->""Groove width ("" + {value of $d} + "") applies to "" + {value of $3} + ""."" -- ZP 5/15/2022",,
-27,first pass,344.0,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,$e,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"[Manifestation]-->rdam:P30137-->""Track configuration ("" + {value of $e} + "") applies to "" + {value of $3} + ""."" -- ZP 5/15/2022",,
-28,first pass,344.0,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,$f,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"[Manifestation]-->rdam:P30137-->""Tape configuration ("" + {value of $f} + "") applies to "" + {value of $3} + ""."" -- ZP 5/15/2022",,
-29,first pass,344.0,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,$g,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"[Manifestation]-->rdam:P30137-->""Configuration of playback channels ("" + {value of $g} + "") applies to "" + {value of $3} + ""."" -- ZP 5/15/2022",,
-30,first pass,344.0,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,$h,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"[Manifestation]-->rdam:P30137-->""Special playback characteristic ("" + {value of $h} + "") applies to "" + {value of $3} + ""."" -- ZP 5/15/2022",,
-31,first pass,344.0,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,$i,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"[Manifestation]-->rdam:P30137-->""Sound content ("" + {value of $i} + "") applies to "" + {value of $3} + ""."" -- ZP 5/15/2022",,
-32,first pass,344.0,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,$j,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"[Manifestation]-->rdam:P30137-->""Sound characteristic ("" + {value of $j} + "") applies to "" + {value of $3} + ""."" -- ZP 5/15/2022","A new MARC subfield added in 2021, RDA may develop a new element for it, for now it's mapped to a broader element -- ZP 3/27/2022",
-33,not mapped,344.0,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-34,not mapped,344.0,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-35, ,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$j AND not($a|$b|$c|$d|$e|$f|$g|$h|$i),,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,identifier; IRI,,,"A new MARC subfield added in 2021, RDA may develop a new element for it, for now it's mapped to a broader element -- ZP 3/27/2022",refer to Transform structure for $0/$1
-36, ,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$h AND not($a|$b|$c|$d|$e|$f|$g|$i|$j),,,,http://rdaregistry.info/Elements/m/P30138,has special playback characteristic,identifier; IRI,,,,
-37, ,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$e AND not($a|$b|$c|$d|$f|$g|$h|$i|$j),,,,http://rdaregistry.info/Elements/m/P30161,has track configuration,identifier; IRI,,,,
-38, ,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$d AND not($a|$b|$c|$e|$f|$g|$h|$i|$j),,$d,not(fine|standard|coarse groove|microgroove),http://rdaregistry.info/Elements/m/P30164,has groove characteristic,identifier; IRI,"When $d != fine|standard|coarse groove|microgroove, can only map to a more general element -- ZP 3/27/2022",,,
-39, ,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$a AND not($b|$c|$d|$e|$f|$g|$h|$i|$j),,,,http://rdaregistry.info/Elements/m/P30172,has type of recording,identifier; IRI,,,,
-40, ,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$g AND not($a|$b|$c|$d|$e|$f|$h|$i|$j),,,,http://rdaregistry.info/Elements/m/P30184,has configuration of playback channels,identifier; IRI,,,,
-41, ,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$f AND not($a|$b|$c|$d|$e|$g|$h|$i|$j),,,,http://rdaregistry.info/Elements/m/P30185,has tape configuration,identifier; IRI,,,,
-42, ,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$c AND not($a|$b|$d|$e|$f|$g|$h|$i|$j),,,,http://rdaregistry.info/Elements/m/P30201,has playing speed,identifier; IRI,,,,
-43, ,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$b AND not($a|$c|$d|$e|$f|$g|$h|$i|$j),,,,http://rdaregistry.info/Elements/m/P30206,has recording medium,identifier; IRI,,,,
-44, ,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$d AND not($a|$b|$c|$e|$f|$g|$h|$i|$j),,$d,fine|standard,http://rdaregistry.info/Elements/m/P30307,has groove pitch,identifier; IRI,"When $d = fine|standard, the value is taken from the RDA VES for groove pitch -- ZP 3/27/2022",,,
-45, ,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$d AND not($a|$b|$c|$e|$f|$g|$h|$i|$j),,$d,coarse groove|microgroove,http://rdaregistry.info/Elements/m/P30308,has groove width,identifier; IRI,"When $d = coarse groove|microgroove, the value is taken from the RDA VES for groove width -- ZP 3/27/2022",,,
-46, ,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$i AND not($a|$b|$c|$d|$e|$f|$g|$h|$j),,,,http://rdaregistry.info/Elements/m/P30454,has sound content,identifier; IRI,,,,
-47, ,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,$j AND not($a|$b|$c|$d|$e|$f|$g|$h|$i),,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,IRI,,[Manifestation]-->rdam:P30125-->[value of $1] -- ZP 3/27/2022,"A new MARC subfield added in 2021, RDA may develop a new element for it, for now it's mapped to a broader element -- ZP 3/27/2022",refer to Transform structure for $0/$1
-48, ,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,$h AND not($a|$b|$c|$d|$e|$f|$g|$i|$j),,,,http://rdaregistry.info/Elements/m/P30138,has special playback characteristic,IRI,,[Manifestation]-->rdam:P30138-->[value of $1] -- ZP 3/27/2022,,
-49, ,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,$e AND not($a|$b|$c|$d|$f|$g|$h|$i|$j),,,,http://rdaregistry.info/Elements/m/P30161,has track configuration,IRI,,[Manifestation]-->rdam:P30161-->[value of $1] -- ZP 3/27/2022,,
-50, ,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,$d AND not($a|$b|$c|$e|$f|$g|$h|$i|$j),,$d,not(fine|standard|coarse groove|microgroove),http://rdaregistry.info/Elements/m/P30164,has groove characteristic,IRI,"When $d != fine|standard|coarse groove|microgroove, can only map to a more general element -- ZP 3/27/2022",[Manifestation]-->rdam:P30164-->[value of $1] -- ZP 3/27/2022,,
-51, ,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,$a AND not($b|$c|$d|$e|$f|$g|$h|$i|$j),,,,http://rdaregistry.info/Elements/m/P30172,has type of recording,IRI,,[Manifestation]-->rdam:P30172-->[value of $1] -- ZP 3/27/2022,,
-52, ,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,$g AND not($a|$b|$c|$d|$e|$f|$h|$i|$j),,,,http://rdaregistry.info/Elements/m/P30184,has configuration of playback channels,IRI,,[Manifestation]-->rdam:P30184-->[value of $1] -- ZP 3/27/2022,,
-53, ,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,$f AND not($a|$b|$c|$d|$e|$g|$h|$i|$j),,,,http://rdaregistry.info/Elements/m/P30185,has tape configuration,IRI,,[Manifestation]-->rdam:P30185-->[value of $1] -- ZP 3/27/2022,,
-54, ,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,$c AND not($a|$b|$d|$e|$f|$g|$h|$i|$j),,,,http://rdaregistry.info/Elements/m/P30201,has playing speed,IRI,,[Manifestation]-->rdam:P30201-->[value of $1] -- ZP 3/27/2022,,
-55, ,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,$b AND not($a|$c|$d|$e|$f|$g|$h|$i|$j),,,,http://rdaregistry.info/Elements/m/P30206,has recording medium,IRI,,[Manifestation]-->rdam:P30206-->[value of $1] -- ZP 3/27/2022,,
-56, ,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,$d AND not($a|$b|$c|$e|$f|$g|$h|$i|$j),,$d,fine|standard,http://rdaregistry.info/Elements/m/P30307,has groove pitch,IRI,"When $d = fine|standard, the value is taken from the RDA VES for groove pitch -- ZP 3/27/2022",[Manifestation]-->rdam:P30307-->[value of $1] -- ZP 3/27/2022,,
-57, ,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,$d AND not($a|$b|$c|$e|$f|$g|$h|$i|$j),,$d,coarse groove|microgroove,http://rdaregistry.info/Elements/m/P30308,has groove width,IRI,"When $d = coarse groove|microgroove, the value is taken from the RDA VES for groove width -- ZP 3/27/2022",[Manifestation]-->rdam:P30308-->[value of $1] -- ZP 3/27/2022,,
-58, ,344.0,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,$i AND not($a|$b|$c|$d|$e|$f|$g|$h|$j),,,,http://rdaregistry.info/Elements/m/P30454,has sound content,IRI,,[Manifestation]-->rdam:P30454-->[value of $1] -- ZP 3/27/2022,,
-59, ,,,,,,,,,,,,,,,,,,,,,,,,,
+0,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,a,Type of recording (R),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Not specific enough -- ZP 3/26/2022
+1,reviewed,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,a,Type of recording (R),,,,,,,http://rdaregistry.info/Elements/m/P30172,has type of recording,unstructured description; structured description; iri,,"[Manifestation] rdam:P30172 [value of $1 or $0 containing ""http""]
+If there is both $1 and $0, select the $1 value.
+
+If no $1, and $2 does not contain ""rdatr""
+[Manifestation] rdam:P30172 skos:Concept(mintedIRI)
+skos:Concept skos:prefLabel <$a>
+skos:Concept skos:inScheme <$2>
+
+If $2 contains “rdatr”
+[Manifestation] rdam:P30172 [look up the uri at https://www.rdaregistry.info/termList/typeRec/ ]
+
+If no $2
+[Manifestation] rdamd:P30172 [value of $a]
+
+If $3
+[Manifestation] rdamd:P30137 [""Type of recording ("" + {value of $a} + "") applies to "" + {value of $3} + "".""]
+PS 7/8/2024
+
+[Manifestation]-->rdam:P30172-->[value of $a] -- ZP 3/26/2022",,"
+Structured only when 344$2 is present; doesn't affect the mapping result -- ZP 3/26/2022"
+2,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,b,Recording medium (R),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Not specific enough -- ZP 3/26/2022
+3,reviewed,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,b,Recording medium (R),,,,,,,http://rdaregistry.info/Elements/m/P30206,has recording medium,unstructured description; structured description; iri,,"[Manifestation] rdam:P30206 [value of $1 or $0 containing ""http""]
+If there is both $1 and $0, select the $1 value.
+
+If no $1, and $2 does not contain ""rdarm""
+[Manifestation] rdam:P30206 skos:Concept(mintedIRI)
+skos:Concept skos:prefLabel <$b>
+skos:Concept skos:inScheme <$2>
+
+If $2 contains  ""rdarm""
+[Manifestation] rdam:P30206 [look up the uri at https://www.rdaregistry.info/termList/recMedium/ ]
+
+If no $2
+[Manifestation] rdamd:P30206 [""value of $b""]
+
+If $3
+[Manifestation] rdamd:P30137 [""Recording medium ("" + {value of $b} + "") applies to "" + {value of $3} + "".""]
+PS 7/8/2024
+
+[Manifestation]-->rdam:P30206-->[value of $b] -- ZP 3/26/2022
+",,"
+Structured only when 344$2 is present; doesn't affect the mapping result -- ZP 3/26/2022"
+4,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,c,Playing speed (R),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Not specific enough -- ZP 3/26/2022
+5,reviewed,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,c,Playing speed (R),,,,,,,http://rdaregistry.info/Elements/m/P30201,has playing speed,unstructured description; structured description; iri,,"[Manifestation] rdam:P30201 [value of $1 or $0 containing ""http""]
+If there is both $1 and $0, select the $1 value.
+
+If no $1, and $2 in all 344 fields do not contain ""rda""
+[Manifestation] rdam:P30201 skos:Concept(mintedIRI)
+skos:Concept skos:prefLabel <$c>
+skos:Concept skos:inScheme <$2>
+
+If $2  in any 344 field contains “rda”
+[Manifestation] rdam:P30201 [look up uri at http://id.loc.gov/vocabulary/mplayspeed.html]
+
+If no $1, and no $2 in all 344 fields
+[Manifestation] rdamd:P30201 [value of $c]
+
+If $3
+[Manifestation] rdamd:P30137 [""Playing speed ("" + {value of $c} + "") applies to "" + {value of $3} + ""."" ]
+PS 7/8/2024
+
+[Manifestation]-->rdam:P30201-->[value of $c] -- ZP 3/26/2022
+","$c - Playing speed is often recorded alone with no $2, but may be a term from https://id.loc.gov/vocabulary/mplayspeed and can be looked up to retrieve an IRI PS, CP 7/8/2024",Structured only when 344$2 is present; doesn't affect the mapping result -- ZP 3/26/2022
+6,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,d,Groove characteristic (R),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Not specific enough -- ZP 3/26/2022
+7,reviewed,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,d,Groove characteristic (R),,,$d,not(fine|standard|coarse groove|microgroove),,,http://rdaregistry.info/Elements/m/P30164,has groove characteristic,unstructured description; structured description; iri,"When $d is not is taken from the RDA VES for groove pitch or the one for groove width, can only map to a more general element -- ZP 3/27/2022","If $d is not(fine|standard|coarse groove|microgroove)
+
+[Manifestation] rdam:P30164 [value of $1 or $0 containing ""http""]
+If there is both $1 and $0, select the $1 value.
+
+If no $1
+[Manifestation] rdam:P30164 skos:Concept(mintedIRI)
+skos:Concept skos:prefLabel <$d>
+skos:Concept skos:inScheme <$2>
+
+If no $2
+[Manifestation] rdamd:P30164 [""value of $d""]
+
+If $3
+[Manifestation] rdamd:P30137 [""Groove characteristic ("" + {value of $d} + "") applies to "" + {value of $3} + "".""]
+PS 7/8/2024
+
+[Manifestation]-->rdam:P30164-->[value of $d] -- ZP 3/27/2022
+",,
+8,reviewed,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,d,Groove characteristic (R),,,$d,fine|standard,,,http://rdaregistry.info/Elements/m/P30307,has groove pitch,unstructured description; structured description; iri,"When $d = fine|standard, the value is taken from the RDA VES for groove pitch -- ZP 3/27/2022","If $d is fine|standard
+[Manifestation] rdam:P30307 [value of $1 or $0 containing ""http""]
+If there is both $1 and $0, select the $1 value.
+
+If no $1, 
+[Manifestation] rdam:P30307 [look up uri at https://www.rdaregistry.info/termList/groovePitch/]
+
+If no $2
+[Manifestation] rdamd:P30307 [""value of $d""]
+
+If $3
+[Manifestation] rdamd:P30137 [""Groove pitch ("" + {value of $d} + "") applies to "" + {value of $3} + "".""]
+PS 7/8/2024
+
+[Manifestation]-->rdam:P30307-->[value of $d] -- ZP 3/27/2022",,
+9,reviewed,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,d,Groove characteristic (R),,,$d,coarse groove|microgroove,,,http://rdaregistry.info/Elements/m/P30308,has groove width,unstructured description; structured description; iri,"When $d = coarse groove|microgroove, the value is taken from the RDA VES for groove width -- ZP 3/27/2022","If $d is coarse groove|microgroove
+[Manifestation] rdam:P30308 [value of $1 or $0 containing ""http""]
+If there is both $1 and $0, select the $1 value.
+
+If no $1,
+[Manifestation] rdam:P30308 [look up uri at https://www.rdaregistry.info/termList/grooveWidth/  ]
+
+If no $2
+[Manifestation] rdamd:P30308 [""value of $d""]
+
+If $3
+[Manifestation] rdamd:P30137 [""Groove width ("" + {value of $d} + "") applies to "" + {value of $3} + "".""]
+PS 7/8/2024
+
+[Manifestation]-->rdam:P30308-->[value of $d] -- ZP 3/27/2022
+",,
+10,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,e,Track configuration (R),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Not specific enough -- ZP 3/26/2022
+11,reviewed,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,e,Track configuration (R),,,,,,,http://rdaregistry.info/Elements/m/P30161,has track configuration,unstructured description; structured description; iri,,"[Manifestation] rdam:P30161 [value of $1 or $0 containing ""http""]
+If there is both $1 and $0, select the $1 value.
+
+If no $1, and $2 does not contain ""rdatc""
+[Manifestation] rdamo:P30161 skos:Concept(mintedIRI)
+skos:Concept skos:prefLabel <$e>
+skos:Concept skos:inScheme <$2>
+
+If $2 contains ""rdatc""
+[Manifestation] rdam:P30161 [look up the uri at https://www.rdaregistry.info/termList/trackConfig/  ]
+
+If no $2
+[Manifestation] rdamd:P30161 [""value of $e""]
+
+If $3
+[Manifestation] rdamd:P30137 [""Track configuration ("" + {value of $e} + "") applies to "" + {value of $3} + "".""]
+PS 7/8/2024
+
+[Manifestation]-->rdam:P30161-->[value of $e] -- ZP 3/27/2022
+",,Structured only when 344$2 is present; doesn't affect the mapping result -- ZP 3/27/2022
+12,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,f,Tape configuration (R),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Not specific enough -- ZP 3/26/2022
+13,reviewed,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,f,Tape configuration (R),,,,,,,http://rdaregistry.info/Elements/m/P30185,has  tape configuration,unstructured description; structured description; iri,,"[Manifestation] rdam:P30185 [value of $1 or $0 containing ""http""]
+If there is both $1 and $0, select the $1 value.
+
+If no $1, and $2 in all 344 fields does not contain ""rda""
+[Manifestation] rdam:P30185 skos:Concept(mintedIRI)
+skos:Concept skos:prefLabel <$f>
+skos:Concept skos:inScheme <$2>
+
+If $2 in any 344 field contains “rda”
+[Manifestation] rdam:P30185 [look up the uri at https://id.loc.gov/vocabulary/mtapeconfig.html  ]
+
+If no $1, and no $2 in all 344 fields
+[Manifestation] rdamd:P30185 [value of $f]
+
+If $3
+[Manifestation] rdamd:P30137 [""Tape configuration ("" + {value of $f} + "") applies to "" + {value of $3} + "".""]
+PS 7/8/2024
+
+[Manifestation]-->rdam:P30185-->[value of $f] -- ZP 3/27/2022","Like $c - Playing speed, $f - Tape configuration is recorded alone with no $2. $2 maybe recorded in other 344 fields. The uri may be looked up at https://id.loc.gov/vocabulary/mtapeconfig.html ",Structured only when 344$2 is present; doesn't affect the mapping result -- ZP 3/27/2022
+14,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,g,Configuration of playback channels (R),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Not specific enough -- ZP 3/26/2022
+15,reviewed,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,g,Configuration of playback channels (R),,,,,,,http://rdaregistry.info/Elements/m/P30184,has configuration of playback channels,unstructured description; structured description; iri,,"[Manifestation] rdam:P30184 [value of $1 or $0 containing ""http""]
+If there is both $1 and $0, select the $1 value.
+
+If no $1, and $2 does not contain ""rdapc""
+[Manifestation] rdam:P30184 skos:Concept(mintedIRI)
+skos:Concept skos:prefLabel <$g>
+skos:Concept skos:inScheme <$2>
+
+If $2 contains “rdapc”
+[Manifestation] rdam:P30184 [look up the uri at https://www.rdaregistry.info/termList/configPlayback/  ]
+
+If no $2
+[Manifestation] rdamd:P30184 [""value of $g""]
+
+If $3
+[Manifestation] rdamd:P30137 [""Configuration of playback channels ("" + {value of $g} + "") applies to "" + {value of $3} + "".""]
+PS 7/8/2024
+
+[Manifestation]-->rdam:P30184-->[value of $g] -- ZP 3/27/2022",,Structured only when 344$2 is present; doesn't affect the mapping result -- ZP 3/27/2022
+16,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,h,Special playback characteristics (R),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Not specific enough -- ZP 3/26/2022
+17,reviewed,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,h,Special playback characteristics (R),,,,,,,http://rdaregistry.info/Elements/m/P30138,has special playback characteristic,unstructured description; structured description; iri,,"[Manifestation] rdam:P30138 [value of $1 or $0 containing ""http""]
+If there is both $1 and $0, select the $1 value.
+
+If no $1, and $2 does not contain ""rdaspc""
+[Manifestation] rdam:P30138 skos:Concept(mintedIRI)
+skos:Concept skos:prefLabel <$h>
+skos:Concept skos:inScheme <$2>
+
+If $2 contains ""rdaspc""
+[Manifestation] rdam:P30138 [look up the uri at https://www.rdaregistry.info/termList/specPlayback/  ]
+
+If no $2
+[Manifestation] rdamd:P30138 [""value of $h""]
+
+If $3
+[Manifestation] rdamd:P30137 [""Special playback characteristic ("" + {value of $h} + "") applies to "" + {value of $3} + ""."" ]
+PS 7/8/2024
+
+[Manifestation]-->rdam:P30138-->[value of $h] -- ZP 3/27/2022",,Structured only when 344$2 is present; doesn't affect the mapping result -- ZP 3/27/2022
+18,reviewed,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,i,Sound content (R),,,,,,,http://rdaregistry.info/Elements/m/P30454,has sound content,unstructured description; structured description; iri,,"[Manifestation] rdam:P30454 [value of $1 or $0 containing ""http""]
+If there is both $1 and $0, select the $1 value.
+
+If no $1, and $2 does not contain ""rdasco""
+[Manifestation] rdam:P30454 skos:Concept(mintedIRI)
+skos:Concept skos:prefLabel <$i>
+skos:Concept skos:inScheme <$2>
+
+If $2 contains ""rdasco""
+[Manifestation] rdam:P30454 [look up the uri at https://www.rdaregistry.info/termList/soundCont/]
+
+If no $2
+[Manifestation] rdamd:P30454 [""value of $i""]
+
+If $3
+[Manifestation] rdamd:P30137 [""Sound content ("" + {value of $i} + "") applies to "" + {value of $3} + "".""]
+PS 7/8/2024
+
+[Manifestation]-->rdam:P30454-->[value of $i] -- ZP 3/27/2022",,Structured only when 344$2 is present; doesn't affect the mapping result -- ZP 3/27/2022
+19,not mapped,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,j,Original capture and storage technique (R),,,,,,,http://rdaregistry.info/Elements/m/P30125, , ,,"[Manifestation]-->rdam:P30125-->[value of $j] -- ZP 3/27/2022
+
+","I assume we are not mapping subfield $j because it is not associated with the manifestation in focus. --Gordon 7/7/2024
+
+A new MARC subfield added in 2021, RDA may develop a new element for it, for now it's mapped to a broader element -- ZP 3/27/2022",
+20,delete,344,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,$a,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"[Manifestation]-->rdam:P30137-->""Type of recording ("" + {value of $a} + "") applies to "" + {value of $3} + ""."" -- ZP 5/15/2022","If subfield $3 is present, I don't see how we can transform the field, because we don't know if it pertains to a sub-unit or an 'accompanying' manifestation. --Gordon 7/7/2024",
+21,delete,344,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,$b,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"[Manifestation]-->rdam:P30137-->""Recording medium ("" + {value of $b} + "") applies to "" + {value of $3} + ""."" -- ZP 5/15/2022",,
+22,delete,344,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,$c,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"[Manifestation]-->rdam:P30137-->""Playing speed ("" + {value of $c} + "") applies to "" + {value of $3} + ""."" -- ZP 5/15/2022",,
+23,delete,344,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,$d,not(fine|standard|coarse groove|microgroove),,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"[Manifestation]-->rdam:P30137-->""Groove characteristic ("" + {value of $d} + "") applies to "" + {value of $3} + ""."" -- ZP 5/15/2022",,
+24,delete,344,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,$d,fine|standard,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"[Manifestation]-->rdam:P30137-->""Groove pitch ("" + {value of $d} + "") applies to "" + {value of $3} + ""."" -- ZP 5/15/2022",,
+25,delete,344,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,$d,coarse groove|microgroove,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"[Manifestation]-->rdam:P30137-->""Groove width ("" + {value of $d} + "") applies to "" + {value of $3} + ""."" -- ZP 5/15/2022",,
+26,delete,344,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,$e,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"[Manifestation]-->rdam:P30137-->""Track configuration ("" + {value of $e} + "") applies to "" + {value of $3} + ""."" -- ZP 5/15/2022",,
+27,delete,344,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,$f,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"[Manifestation]-->rdam:P30137-->""Tape configuration ("" + {value of $f} + "") applies to "" + {value of $3} + ""."" -- ZP 5/15/2022",,
+28,delete,344,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,$g,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"[Manifestation]-->rdam:P30137-->""Configuration of playback channels ("" + {value of $g} + "") applies to "" + {value of $3} + ""."" -- ZP 5/15/2022",,
+29,delete,344,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,$h,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"[Manifestation]-->rdam:P30137-->""Special playback characteristic ("" + {value of $h} + "") applies to "" + {value of $3} + ""."" -- ZP 5/15/2022",,
+30,delete,344,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,$i,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"[Manifestation]-->rdam:P30137-->""Sound content ("" + {value of $i} + "") applies to "" + {value of $3} + ""."" -- ZP 5/15/2022",,
+31,delete,344,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,$j,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"[Manifestation]-->rdam:P30137-->""Sound characteristic ("" + {value of $j} + "") applies to "" + {value of $3} + ""."" -- ZP 5/15/2022","A new MARC subfield added in 2021, RDA may develop a new element for it, for now it's mapped to a broader element -- ZP 3/27/2022",
+32,not mapped,344,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+33,not mapped,344,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+34,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$j AND not($a|$b|$c|$d|$e|$f|$g|$h|$i),,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,identifier; IRI,,,"A new MARC subfield added in 2021, RDA may develop a new element for it, for now it's mapped to a broader element -- ZP 3/27/2022",refer to Transform structure for $0/$1
+35,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$h AND not($a|$b|$c|$d|$e|$f|$g|$i|$j),,,,http://rdaregistry.info/Elements/m/P30138,has special playback characteristic,identifier; IRI,,,,
+36,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$e AND not($a|$b|$c|$d|$f|$g|$h|$i|$j),,,,http://rdaregistry.info/Elements/m/P30161,has track configuration,identifier; IRI,,,,
+37,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$d AND not($a|$b|$c|$e|$f|$g|$h|$i|$j),,$d,not(fine|standard|coarse groove|microgroove),http://rdaregistry.info/Elements/m/P30164,has groove characteristic,identifier; IRI,"When $d != fine|standard|coarse groove|microgroove, can only map to a more general element -- ZP 3/27/2022",,,
+38,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$a AND not($b|$c|$d|$e|$f|$g|$h|$i|$j),,,,http://rdaregistry.info/Elements/m/P30172,has type of recording,identifier; IRI,,,,
+39,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$g AND not($a|$b|$c|$d|$e|$f|$h|$i|$j),,,,http://rdaregistry.info/Elements/m/P30184,has configuration of playback channels,identifier; IRI,,,,
+40,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$f AND not($a|$b|$c|$d|$e|$g|$h|$i|$j),,,,http://rdaregistry.info/Elements/m/P30185,has tape configuration,identifier; IRI,,,,
+41,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$c AND not($a|$b|$d|$e|$f|$g|$h|$i|$j),,,,http://rdaregistry.info/Elements/m/P30201,has playing speed,identifier; IRI,,,,
+42,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$b AND not($a|$c|$d|$e|$f|$g|$h|$i|$j),,,,http://rdaregistry.info/Elements/m/P30206,has recording medium,identifier; IRI,,,,
+43,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$d AND not($a|$b|$c|$e|$f|$g|$h|$i|$j),,$d,fine|standard,http://rdaregistry.info/Elements/m/P30307,has groove pitch,identifier; IRI,"When $d = fine|standard, the value is taken from the RDA VES for groove pitch -- ZP 3/27/2022",,,
+44,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$d AND not($a|$b|$c|$e|$f|$g|$h|$i|$j),,$d,coarse groove|microgroove,http://rdaregistry.info/Elements/m/P30308,has groove width,identifier; IRI,"When $d = coarse groove|microgroove, the value is taken from the RDA VES for groove width -- ZP 3/27/2022",,,
+45,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,$i AND not($a|$b|$c|$d|$e|$f|$g|$h|$j),,,,http://rdaregistry.info/Elements/m/P30454,has sound content,identifier; IRI,,,,
+46,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,$j AND not($a|$b|$c|$d|$e|$f|$g|$h|$i),,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,IRI,,[Manifestation]-->rdam:P30125-->[value of $1] -- ZP 3/27/2022,"A new MARC subfield added in 2021, RDA may develop a new element for it, for now it's mapped to a broader element -- ZP 3/27/2022",refer to Transform structure for $0/$1
+47,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,$h AND not($a|$b|$c|$d|$e|$f|$g|$i|$j),,,,http://rdaregistry.info/Elements/m/P30138,has special playback characteristic,IRI,,[Manifestation]-->rdam:P30138-->[value of $1] -- ZP 3/27/2022,,
+48,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,$e AND not($a|$b|$c|$d|$f|$g|$h|$i|$j),,,,http://rdaregistry.info/Elements/m/P30161,has track configuration,IRI,,[Manifestation]-->rdam:P30161-->[value of $1] -- ZP 3/27/2022,,
+49,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,$d AND not($a|$b|$c|$e|$f|$g|$h|$i|$j),,$d,not(fine|standard|coarse groove|microgroove),http://rdaregistry.info/Elements/m/P30164,has groove characteristic,IRI,"When $d != fine|standard|coarse groove|microgroove, can only map to a more general element -- ZP 3/27/2022",[Manifestation]-->rdam:P30164-->[value of $1] -- ZP 3/27/2022,,
+50,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,$a AND not($b|$c|$d|$e|$f|$g|$h|$i|$j),,,,http://rdaregistry.info/Elements/m/P30172,has type of recording,IRI,,[Manifestation]-->rdam:P30172-->[value of $1] -- ZP 3/27/2022,,
+51,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,$g AND not($a|$b|$c|$d|$e|$f|$h|$i|$j),,,,http://rdaregistry.info/Elements/m/P30184,has configuration of playback channels,IRI,,[Manifestation]-->rdam:P30184-->[value of $1] -- ZP 3/27/2022,,
+52,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,$f AND not($a|$b|$c|$d|$e|$g|$h|$i|$j),,,,http://rdaregistry.info/Elements/m/P30185,has tape configuration,IRI,,[Manifestation]-->rdam:P30185-->[value of $1] -- ZP 3/27/2022,,
+53,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,$c AND not($a|$b|$d|$e|$f|$g|$h|$i|$j),,,,http://rdaregistry.info/Elements/m/P30201,has playing speed,IRI,,[Manifestation]-->rdam:P30201-->[value of $1] -- ZP 3/27/2022,,
+54,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,$b AND not($a|$c|$d|$e|$f|$g|$h|$i|$j),,,,http://rdaregistry.info/Elements/m/P30206,has recording medium,IRI,,[Manifestation]-->rdam:P30206-->[value of $1] -- ZP 3/27/2022,,
+55,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,$d AND not($a|$b|$c|$e|$f|$g|$h|$i|$j),,$d,fine|standard,http://rdaregistry.info/Elements/m/P30307,has groove pitch,IRI,"When $d = fine|standard, the value is taken from the RDA VES for groove pitch -- ZP 3/27/2022",[Manifestation]-->rdam:P30307-->[value of $1] -- ZP 3/27/2022,,
+56,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,$d AND not($a|$b|$c|$e|$f|$g|$h|$i|$j),,$d,coarse groove|microgroove,http://rdaregistry.info/Elements/m/P30308,has groove width,IRI,"When $d = coarse groove|microgroove, the value is taken from the RDA VES for groove width -- ZP 3/27/2022",[Manifestation]-->rdam:P30308-->[value of $1] -- ZP 3/27/2022,,
+57,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,$i AND not($a|$b|$c|$d|$e|$f|$g|$h|$j),,,,http://rdaregistry.info/Elements/m/P30454,has sound content,IRI,,[Manifestation]-->rdam:P30454-->[value of $1] -- ZP 3/27/2022,,
+58,delete,344,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,2,Source (NR),,,,,,, ,,,,look up iri and use as rdf:datatype,, 

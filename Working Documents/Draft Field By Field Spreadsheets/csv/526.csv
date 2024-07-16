@@ -1,12 +1,12 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,first pass ,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,*,Reading program | No display constant generated,Undefined,#,Undefined,,,"i, a, b, c, d, z, 5",Program name (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"""Reading program: "" + [value of $i if present] + subfields a, b, c, d, x, z if present. 
-Separate subfield a, b, c, d, x, z values with "";"" Precede subfield values with ""[Subfield label] + "": "". 
-If $5 is present, append note with (At institution:  + [value of $5])",,$5 discussed here  - CP 2024-01-12
-1,first pass ,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,*,Reading program | No display constant generated,Undefined,#,Undefined,,,x,Nonpublic note (R),,,,,,,http://rdaregistry.info/Elements/m/P30462,is manifestation described with metadata by,IRI,,"[manifestationIRI] is manifestation described with metadata by [newly minted metadataIRI]
+0,done,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,*,Reading program | No display constant generated,Undefined,#,Undefined,,,"i, a, b, c, d, z, 5",Program name (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"""Reading program: "" + [value of $i if present] + subfields a, b, c, d, z if present. 
+Separate subfield a, b, c, d, z values with "";"" Precede subfield values with ""[Subfield label] + "": "". 
+If $5 is present, append note with (Applies to:  + [value of $5])",,$5 discussed here  - CP 2024-01-12
+1,done,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,*,Reading program | No display constant generated,Undefined,#,Undefined,,,x,Nonpublic note (R),,,,,,,http://rdaregistry.info/Elements/m/P30462,is manifestation described with metadata by,IRI,,"[manifestationIRI] is manifestation described with metadata by [newly minted metadataIRI]
 [metadataIRI] rdf:type rdf:statement
 [metadataIRI] rdf:subject [manifestationIRI]
 [metadataIRI] rdf:predicate [rdam:p30137 has note on manifestation]
-[metadataIRI] rdf:object [value of $x]
+[metadataIRI] rdf:object [value of $x]+(Applies to: [$value of $5]) if $5
 [metadataIRI] has category of work ""private""",,
 2,delete,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,0,Reading program,Undefined,#,Undefined,,,5,Institution to which field applies (NR),,,,,,,,,,,,,
 3,not mapped,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,0,Reading program,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,

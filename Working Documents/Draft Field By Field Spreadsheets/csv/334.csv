@@ -1,10 +1,32 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,first pass,334,MODE OF ISSUANCE (R),Undefined,*,,Undefined,*,,,,a,Mode of issuance term (NR),,,,,,,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,structured description or unstructured description,,,,
-1,first pass,334,MODE OF ISSUANCE (R),Undefined,*,,Undefined,*,,,,b,Mode of issuance code (NR),,,,,,,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,identifier,,,,
-2,not mapped,334,MODE OF ISSUANCE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,2,Source (NR),,,,,,,,,,,,,
-3,not mapped,334,MODE OF ISSUANCE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-4,not mapped,334,MODE OF ISSUANCE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-5, ,334,MODE OF ISSUANCE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,Value is an identifier but not an IRI,, ,,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,identifier,,,,refer to Transform structure for $0/$1
-6, ,334,MODE OF ISSUANCE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,Value is an IRI,,$2 is either not present or does not contain 'rda',,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,identifier,,,,refer to Transform structure for $0/$1
-7, ,334,MODE OF ISSUANCE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,Value is an IRI,,$2 contains 'rda',,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,IRI,,,,refer to Transform structure for $0/$1
-8, ,334,MODE OF ISSUANCE (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,IRI,,,,refer to Transform structure for $0/$1
+0,reviewed,334,MODE OF ISSUANCE (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,, , ,IRI,,"[Manifestation] rdam:P30003 [[value of $1]
+PS 2024-7-11",,
+1,reviewed,334,MODE OF ISSUANCE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,0,starts with 'http',not($1),, , ,IRI,,"[Manifestation] rdam:P30003 [[value of $0]
+PS 2024-7-11",, 
+2,reviewed,334,MODE OF ISSUANCE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,0,does not start with 'http',not($1),, , ,IRI,,do not map a $0 that does not begin with 'http',, 
+3,reviewed,334,MODE OF ISSUANCE (R),Undefined,*,,Undefined,*,,,,"a, b",Mode of issuance term (NR),,,2,not rdami,"not($1, or $0 begnning with http)",,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,IRI,,"[Manifestation] rdamo:P30003 skos:Concept(mintedIRI)
+skos:Concept skos:prefLabel <$a or $b if no $a>
+skos:Concept skos:notation <$b>^^datatypeIRI
+skos:Concept skos:inScheme <$2>
+
+only include $b as skos:notation when pattern is $a$b$a$b
+mint a concept for each $a value present in the field, or in the case that it is all $b, for each $b value
+PS 2024-7-11",, 
+4,reviewed,334,MODE OF ISSUANCE (R),Undefined,*,,Undefined,*,,,,a,Mode of issuance term (NR),,,2,rdami,"not($1, or $0 begnning with http)",,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,IRI,,"[Manifestation] rdam:P30003 [look up IRI at https://www.rdaregistry.info/termList/ModeIssue/ ]
+PS 2024-7-11",, 
+5,reviewed,334,MODE OF ISSUANCE (R),Undefined,*,,Undefined,*,,,,a,Mode of issuance term (NR),,,not($2), ,"not($1, or $0 begnning with http)",,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,unstructured description,,[Manifestation] rdamd:P30003 [value of $a],, 
+6,reviewed,334,MODE OF ISSUANCE (R),Undefined,*,,Undefined,*,,,,b,Mode of issuance code (NR),,,not($2),,"not($1, or $0 begnning with http)",,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,unstructured description,,[Manifestation] rdamd:P30003 [value of $b],, 
+7,delete,334,MODE OF ISSUANCE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,2,Source (NR),,,,,,,,,,,,,look up iri and use as rdf:datatype
+8,not mapped,334,MODE OF ISSUANCE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+9,not mapped,334,MODE OF ISSUANCE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+10,delete,334,MODE OF ISSUANCE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,Value is an identifier but not an IRI,,,,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,IDENTIFIER,,"[Manifestation]-->rdamo:P30003-->[value of $0]
+
+PS 6/25/2025",, 
+11,delete,334,MODE OF ISSUANCE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,Value is an IRI,,$2 contains 'rda',,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,IRI,,"
+RDA mode of issuance
+
+",, 
+12,delete,334,MODE OF ISSUANCE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,Value is an IRI,,$2 is either not present or does not contain 'rda',,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,IDENTIFIER,,"Temporary solution: output XML comment: ""MARC data source and field 334 contains a $0 IRI value representing authority data; a solution for outputting these in RDA is not yet devised.""",, 
+13,delete,334,MODE OF ISSUANCE (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,IRI,,"[Manifestation]-->rdamo:P30003-->[value of $1]
+
+PS 6/25/2025",, 

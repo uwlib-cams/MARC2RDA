@@ -52,7 +52,7 @@
 35,delete,33,DATE/TIME AND PLACE OF AN EVENT (R),Type of date in subfield $a,*,,Type of event,*,,,,p,Place of event (R),,,,,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
 36,delete,33,DATE/TIME AND PLACE OF AN EVENT (R),Type of date in subfield $a,*,,Type of event,0,Capture,,,p,Place of event (R),,,,,,,http://rdaregistry.info/Elements/e/P20217,has capture information,,,,,
 37,delete,33,DATE/TIME AND PLACE OF AN EVENT (R),Type of date in subfield $a,0,Single date,Type of event,1,Broadcast,,,2,Source of term (R),,,,,,,,,,,,,
-38,delete,33,DATE/TIME AND PLACE OF AN EVENT (R),Type of date in subfield $a,0,Single date,Type of event,1,Broadcast,,,3,Materials specified (NR),,,,,,,,,,,,,
+38,not mapped,33,DATE/TIME AND PLACE OF AN EVENT (R),Type of date in subfield $a,0,Single date,Type of event,1,Broadcast,,,3,Materials specified (NR),,,,,,,,,,,,,
 39,delete,33,DATE/TIME AND PLACE OF AN EVENT (R),Type of date in subfield $a,0,Single date,Type of event,1,Broadcast,,,6,Linkage (NR),,,,,,,,,,,,,
 40,delete,33,DATE/TIME AND PLACE OF AN EVENT (R),Type of date in subfield $a,0,Single date,Type of event,1,Broadcast,,,8,Field link and sequence number (R),,,,,,,,,,,,,
 41,delete,33,DATE/TIME AND PLACE OF AN EVENT (R),Type of date in subfield $a,0,Single date,Type of event,2,Finding,,,2,Source of term (R),,,,,,,,,,,,,
