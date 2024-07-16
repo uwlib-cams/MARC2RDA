@@ -49,7 +49,6 @@
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>NTSC</skos:prefLabel>
       <!--$2 value of source has been lost-->
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>test 880</skos:prefLabel>
    </rdf:Description>
 </rdf:RDF>

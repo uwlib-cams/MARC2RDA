@@ -275,7 +275,9 @@
         <xsl:param name="notation"/>
         <xsl:param name="fieldNum"/>
         
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <xsl:if test="not(contains($fieldNum, '880'))">
+            <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        </xsl:if>
         <xsl:if test="$prefLabel">
             <skos:prefLabel>
                 <xsl:value-of select="$prefLabel"/>

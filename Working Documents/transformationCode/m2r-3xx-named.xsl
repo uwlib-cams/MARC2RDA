@@ -249,7 +249,7 @@
                                         <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '337')"/>
                                         <xsl:if test="$linked880">
                                             <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'a']">
-                                                <xsl:copy-of select="uwf:fillConcept(., '', '', '337')"/>
+                                                <xsl:copy-of select="uwf:fillConcept(., '', '', '880')"/>
                                             </xsl:for-each>
                                         </xsl:if>
                                     </rdf:Description>
@@ -262,7 +262,7 @@
                                         <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '337')"/>
                                         <xsl:if test="$linked880">
                                             <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'b']">
-                                                <xsl:copy-of select="uwf:fillConcept(., '', '', '337')"/>
+                                                <xsl:copy-of select="uwf:fillConcept(., '', '', '880')"/>
                                             </xsl:for-each>
                                         </xsl:if>
                                     </rdf:Description>
@@ -275,7 +275,7 @@
                                         <xsl:copy-of select="uwf:fillConcept( ., $sub2, ./following-sibling::marc:subfield[@code = 'b'][1], '337')"/>
                                         <xsl:if test="$linked880">
                                             <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'a']">
-                                                <xsl:copy-of select="uwf:fillConcept( ., '', ./following-sibling::marc:subfield[@code = 'b'][1], '337')"/>
+                                                <xsl:copy-of select="uwf:fillConcept( ., '', ./following-sibling::marc:subfield[@code = 'b'][1], '880')"/>
                                             </xsl:for-each>
                                         </xsl:if>
                                     </rdf:Description>
@@ -288,7 +288,7 @@
                                         <xsl:copy-of select="uwf:fillConcept( ., $sub2, '', '337')"/>
                                         <xsl:if test="$linked880">
                                             <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'a']">
-                                                <xsl:copy-of select="uwf:fillConcept( ., '', '', '337')"/>
+                                                <xsl:copy-of select="uwf:fillConcept( ., '', '', '880')"/>
                                             </xsl:for-each>
                                         </xsl:if>
                                     </rdf:Description>
@@ -482,7 +482,7 @@
                                     <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '338')"/>
                                     <xsl:if test="$linked880">
                                         <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'a']">
-                                            <xsl:copy-of select="uwf:fillConcept(., '', '', '338')"/>
+                                            <xsl:copy-of select="uwf:fillConcept(., '', '', '880')"/>
                                         </xsl:for-each>
                                     </xsl:if>
                                 </rdf:Description>
@@ -495,7 +495,7 @@
                                     <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '338')"/>
                                     <xsl:if test="$linked880">
                                         <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'b']">
-                                            <xsl:copy-of select="uwf:fillConcept(., '', '', '338')"/>
+                                            <xsl:copy-of select="uwf:fillConcept(., '', '', '880')"/>
                                         </xsl:for-each>
                                     </xsl:if>
                                 </rdf:Description>
@@ -508,7 +508,7 @@
                                     <xsl:copy-of select="uwf:fillConcept( ., $sub2, ./following-sibling::marc:subfield[@code = 'b'][1], '338')"/>
                                     <xsl:if test="$linked880">
                                         <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'a']">
-                                            <xsl:copy-of select="uwf:fillConcept( ., '', ./following-sibling::marc:subfield[@code = 'b'][1], '338')"/>
+                                            <xsl:copy-of select="uwf:fillConcept( ., '', ./following-sibling::marc:subfield[@code = 'b'][1], '880')"/>
                                         </xsl:for-each>
                                     </xsl:if>
                                 </rdf:Description>
@@ -521,7 +521,7 @@
                                     <xsl:copy-of select="uwf:fillConcept( ., $sub2, '', '338')"/>
                                     <xsl:if test="$linked880">
                                         <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'a']">
-                                            <xsl:copy-of select="uwf:fillConcept( ., '', '', '338')"/>
+                                            <xsl:copy-of select="uwf:fillConcept( ., '', '', '880')"/>
                                         </xsl:for-each>
                                     </xsl:if>
                                 </rdf:Description>
@@ -664,7 +664,7 @@
                             <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '346')"/>
                             <xsl:if test="$linked880">
                                 <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = $currentCode]">
-                                    <xsl:copy-of select="uwf:fillConcept(., '', '', '346')"/>
+                                    <xsl:copy-of select="uwf:fillConcept(., '', '', '880')"/>
                                 </xsl:for-each>
                             </xsl:if>
                         </rdf:Description>
