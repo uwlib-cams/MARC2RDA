@@ -1025,7 +1025,7 @@
                 </xsl:if>
                 <xsl:value-of select="marc:subfield[@code = 'a']"/>
                 <xsl:if test="marc:subfield[@code = '5']">
-                    <xsl:text> (Applies to: {uwf:S5NameLookup(marc:subfield[@code = '5'])})</xsl:text>
+                    <xsl:text> (Applies to: {uwf:s5NameLookup(marc:subfield[@code = '5'])})</xsl:text>
                 </xsl:if>
             </rdamd:P30137>
         </xsl:if>

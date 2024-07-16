@@ -173,7 +173,7 @@
                 </xsl:if>
             </xsl:for-each>
             <xsl:if test="marc:subfield[@code = '5']">
-                <xsl:text> (Applies to: {uwf:S5NameLookup(marc:subfield[@code = '5'])})</xsl:text>
+                <xsl:text> (Applies to: {uwf:s5NameLookup(marc:subfield[@code = '5'])})</xsl:text>
             </xsl:if>
         </rdamd:P30137>
     </xsl:template>
@@ -190,7 +190,7 @@
             <rdf:object>
                 <xsl:value-of select="."/>
                 <xsl:if test="../marc:subfield[@code = '5']">
-                    <xsl:text> (Applies to: {uwf:S5NameLookup(../marc:subfield[@code = '5'])})</xsl:text>
+                    <xsl:text> (Applies to: {uwf:s5NameLookup(../marc:subfield[@code = '5'])})</xsl:text>
                 </xsl:if>
             </rdf:object>
             <rdawd:P10004>Private</rdawd:P10004>
@@ -869,7 +869,7 @@
             <xsl:text> (Applies to: {marc:subfield[@code = '3']})</xsl:text>
         </xsl:if>
         <xsl:if test="marc:subfield[@code = '5']">
-            <xsl:text> (At institution: {marc:subfield[@code = '5']})</xsl:text>
+            <xsl:text> (At institution: {uwf:s5NameLookup(marc:subfield[@code = '5'])})</xsl:text>
         </xsl:if>
     </xsl:template>
 
