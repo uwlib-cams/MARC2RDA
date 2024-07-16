@@ -685,24 +685,12 @@
             <xsl:if test="not(marc:subfield[@code = '1'])">
                 <!-- if 0 contains http, get iri -->
                 <xsl:for-each select="marc:subfield[@code = '0']">
-                    <xsl:if test="contains(., 'http')">
-                        <xsl:variable name="iri0">
-                            <xsl:choose>
-                                <xsl:when test="starts-with(., 'http')">
-                                    <xsl:value-of select="."/>
-                                </xsl:when>
-                                <xsl:when test="starts-with(., '(')">
-                                    <xsl:value-of select="substring-after(., ')')"/>
-                                </xsl:when>
-                            </xsl:choose>
-                        </xsl:variable>
-                        <!-- if getting iri was successful (started with 'http' or '(') 
-                                 use 0s-->
+                    <xsl:variable name="iri0" select="uwf:process0(marc:subfield[@code = '0'])"/>
+                        <!-- if getting iri was successful (started with 'http' or '('), use 0s-->
                         <xsl:if test="$iri0">
                             <rdam:P30104 rdf:resource="{$iri0}"/>
                             <rdamd:P30137>Video format {$iri0} applies to the manifestation's {../marc:subfield[@code = '3']}</rdamd:P30137>
                         </xsl:if>
-                    </xsl:if>
                 </xsl:for-each>
             </xsl:if>
         </xsl:if>
@@ -716,23 +704,12 @@
             <xsl:if test="not(marc:subfield[@code = '1'])">
                 <!-- if 0 contains http, get iri -->
                 <xsl:for-each select="marc:subfield[@code = '0']">
-                    <xsl:if test="contains(., 'http')">
-                        <xsl:variable name="iri0">
-                            <xsl:choose>
-                                <xsl:when test="starts-with(., 'http')">
-                                    <xsl:value-of select="."/>
-                                </xsl:when>
-                                <xsl:when test="starts-with(., '(')">
-                                    <xsl:value-of select="substring-after(., ')')"/>
-                                </xsl:when>
-                            </xsl:choose>
-                        </xsl:variable>
-                        <!-- if getting iri was successful (started with 'http' or '(') 
+                    <xsl:variable name="iri0" select="uwf:process0(.)"/>
+                    <!-- if getting iri was successful (started with 'http' or '(') 
                                  use 0s-->
-                        <xsl:if test="$iri0">
-                            <rdam:P30123 rdf:resource="{$iri0}"/>
-                            <rdamd:P30137>Broadcast standard {$iri0} applies to the manifestation's {../marc:subfield[@code = '3']}</rdamd:P30137>
-                        </xsl:if>
+                    <xsl:if test="$iri0">
+                        <rdam:P30123 rdf:resource="{$iri0}"/>
+                        <rdamd:P30137>Broadcast standard {$iri0} applies to the manifestation's {../marc:subfield[@code = '3']}</rdamd:P30137>
                     </xsl:if>
                 </xsl:for-each>
             </xsl:if>

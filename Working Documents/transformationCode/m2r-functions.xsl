@@ -111,6 +111,21 @@
         </xsl:for-each>
     </xsl:function>
     
+    <xsl:function name="uwf:process0">
+        <xsl:param name="code0"/>
+        <xsl:if test="contains($code0, 'http')">
+            <xsl:choose>
+                <xsl:when test="starts-with($code0, 'http')">
+                    <xsl:value-of select="$code0"/>
+                </xsl:when>
+                <xsl:when test="starts-with($code0, '(')">
+                    <xsl:value-of select="substring-after($code0, ')')"/>
+                </xsl:when>
+                <xsl:otherwise/>
+            </xsl:choose>
+        </xsl:if>
+    </xsl:function>
+    
 <!-- $5 FUNCTIONS -->
     
     <!-- collBase is the base URI we use for the minted collection manifestation for an institution -->
