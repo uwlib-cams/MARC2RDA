@@ -566,6 +566,44 @@
         </xsl:if>
     </xsl:template>
     
+    <!-- 340 -->
+    <xsl:template name="F340-b_f_h_i" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'b']">
+            <rdamd:P30169>
+                <xsl:value-of select="."/>
+                <xsl:if test="../marc:subfield[@code = 'a']">
+                    <xsl:text> ({../marc:subfield[@code = 'a']})</xsl:text>
+                </xsl:if>
+            </rdamd:P30169>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'f']">
+            <rdamd:P30137>
+                <xsl:text>Use at a rate or ratio of: {.}</xsl:text>
+            </rdamd:P30137>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'h']">
+            <rdamd:P30137>
+                <xsl:text>Location of the described materials within the material base: {.}</xsl:text>
+            </rdamd:P30137>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'i']">
+            <rdamd:P30162>
+                <xsl:value-of select="."/>
+            </rdamd:P30162>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template name="F340-a_c_d_e_g_j_k_l_m_n_o_p_q-string" expand-text="yes">
+        
+    </xsl:template>
+    
+    <xsl:template name="F340-a_c_d_e_g_j_k_l_m_n_o_p_q-concept" expand-text="yes">
+        
+    </xsl:template>
+    
+    <xsl:template name="F340-a_c_d_e_g_j_k_l_m_n_o_p_q-iri" expand-text="yes">
+        
+    </xsl:template>
     
     <!-- 346 -->
     <xsl:template name="F346-string" expand-text="yes">

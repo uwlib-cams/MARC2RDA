@@ -77,12 +77,11 @@
         <xsl:call-template name="F338-concept"/>
     </xsl:template>
     
-    <xsl:template match="marc:datafield[@tag = '340']" mode="man">
+    <!-- 340 - Physical Medium -->
+    <xsl:template match="marc:datafield[@tag = '340']" 
+        mode="man">
         <xsl:call-template name="getmarc"/>
-        <!-- Accounted-for: $a $b $c $d $e $f $g $i $j $k $l $m $n $o $p $3-->
-        <!-- Not accounted-for: $h (not mapped), $q (new field), $6, $8 -->
-        <!-- Temporary or partial solution for: $2 -->
-        <!--<xsl:call-template name="F340-xx-abcdefghijklmnop"/>-->
+        <xsl:call-template name="F340-b_f_h_i"/>
     </xsl:template>
     
     <!-- 346 - Video Characteristics -->

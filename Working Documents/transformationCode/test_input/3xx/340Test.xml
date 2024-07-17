@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">340-test1</marc:controlfield>
+        
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="a">parchment</marc:subfield>
+            <marc:subfield code="b">20 cm. folded to 10 x 12 cm.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="f">24:1</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="h">center panel.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="i">bord Model 74 tape reader.</marc:subfield>
+        </marc:datafield>
+        
+        
+    </marc:record>
+</marc:collection>
