@@ -82,7 +82,7 @@
         mode="man">
         <xsl:call-template name="getmarc"/>
         <xsl:call-template name="F340-b_f_h_i"/>
-        <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q"/>
+        <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1"/>
     </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '340'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '340-00']"

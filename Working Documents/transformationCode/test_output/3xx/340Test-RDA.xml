@@ -41,20 +41,12 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/340-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/340-test1exp"/>
-      <fake:marcfield>F340 ## $c </fake:marcfield>
-      <rdamd:P30304/>
-      <fake:marcfield>F340 ## $d stamping $2 rdapm</fake:marcfield>
-      <rdam:P30187 rdf:resource="http://rdaregistry.info/termList/RDAproductionMethod/1017"/>
-      <fake:marcfield>F340 ## $e wood $2 rdamat</fake:marcfield>
-      <rdam:P30304 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1045"/>
-      <fake:marcfield>F340 ## $g monochrome $2 rdacc</fake:marcfield>
-      <rdam:P30456 rdf:resource="http://rdaregistry.info/termList/RDAColourContent/1002"/>
-      <fake:marcfield>F340 ## $j printing master $2 rdagen</fake:marcfield>
-      <rdam:P30191 rdf:resource="http://rdaregistry.info/termList/RDAGeneration/1010"/>
-      <fake:marcfield>F340 ## $k double sided $2 rdalay</fake:marcfield>
-      <rdam:P30155 rdf:resource="http://rdaregistry.info/termList/layout/1001"/>
-      <fake:marcfield>F340 ## $l Coptic bindings $2 aat</fake:marcfield>
+      <fake:marcfield>F340 ## $3 workbook $l spiral binding $2 rdatb</fake:marcfield>
+      <rdam:P30309 rdf:resource="http://rdaregistry.info/termList/RDATypeOfBinding/1003"/>
+      <rdamd:P30137>Has type of binding http://rdaregistry.info/termList/RDATypeOfBinding/1003 applies to workbook</rdamd:P30137>
+      <fake:marcfield>F340 ## $3 part $l Coptic bindings $2 aat</fake:marcfield>
       <rdam:P30309 rdf:resource="http://marc2rda.edu/fake/concept/aat/copticbindings"/>
+      <rdamd:P30137>Has type of binding http://marc2rda.edu/fake/concept/aat/copticbindings applies to part</rdamd:P30137>
       <fake:marcfield>F340 ## $m folio $2 rdabf</fake:marcfield>
       <rdam:P30197 rdf:resource="http://rdaregistry.info/termList/bookFormat/1001"/>
       <fake:marcfield>F340 ## $n 36 point</fake:marcfield>

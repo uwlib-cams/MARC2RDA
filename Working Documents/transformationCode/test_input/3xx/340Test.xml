@@ -44,12 +44,14 @@
             <marc:subfield code="2">othersource</marc:subfield>
         </marc:datafield>-->
         
-        <marc:datafield tag="340" ind1=" " ind2=" ">
-            <marc:subfield code="c"></marc:subfield>
-        </marc:datafield>
-        <marc:datafield tag="340" ind1=" " ind2=" ">
+       <!-- <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="3">self-portrait</marc:subfield>
+            <marc:subfield code="c">colored inks</marc:subfield>
+        </marc:datafield>-->
+<!--        <marc:datafield tag="340" ind1=" " ind2=" ">
             <marc:subfield code="d">stamping</marc:subfield>
             <marc:subfield code="2">rdapm</marc:subfield>
+            
         </marc:datafield>
         <marc:datafield tag="340" ind1=" " ind2=" ">
             <marc:subfield code="e">wood</marc:subfield>
@@ -66,8 +68,14 @@
         <marc:datafield tag="340" ind1=" " ind2=" ">
             <marc:subfield code="k">double sided</marc:subfield>
             <marc:subfield code="2">rdalay</marc:subfield>
+        </marc:datafield>-->
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="3">workbook</marc:subfield>
+            <marc:subfield code="l">spiral binding</marc:subfield>
+            <marc:subfield code="2">rdatb</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="3">part</marc:subfield>
             <marc:subfield code="l">Coptic bindings</marc:subfield>
             <marc:subfield code="2">aat</marc:subfield>
         </marc:datafield>

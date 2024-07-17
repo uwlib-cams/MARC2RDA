@@ -635,43 +635,44 @@
             | marc:subfield[@code = 'q']">
             <xsl:choose>
                 <xsl:when test="@code = 'd'">
-                    <xsl:copy-of select="uwf:handle340('P30187', .., .)"/>
+                    <xsl:copy-of select="uwf:F340logic('P30187', .., .)"/>
                 </xsl:when>
                 <xsl:when test="@code = 'g'">
-                    <xsl:copy-of select="uwf:handle340('P30456', .., .)"/>
+                    <xsl:copy-of select="uwf:F340logic('P30456', .., .)"/>
                 </xsl:when>
                 <xsl:when test="@code = 'j'">
-                    <xsl:copy-of select="uwf:handle340('P30191', .., .)"/>
+                    <xsl:copy-of select="uwf:F340logic('P30191', .., .)"/>
                 </xsl:when>
                 <xsl:when test="@code = 'k'">
-                    <xsl:copy-of select="uwf:handle340('P30155', .., .)"/>
+                    <xsl:copy-of select="uwf:F340logic('P30155', .., .)"/>
                 </xsl:when>
                 <xsl:when test="@code = 'l'">
-                    <xsl:copy-of select="uwf:handle340('P30309', .., .)"/>
+                    <xsl:copy-of select="uwf:F340logic('P30309', .., .)"/>
                 </xsl:when>
                 <xsl:when test="@code = 'm'">
-                    <xsl:copy-of select="uwf:handle340('P30197', .., .)"/>
+                    <xsl:copy-of select="uwf:F340logic('P30197', .., .)"/>
                 </xsl:when>
                 <xsl:when test="@code = 'n'">
-                    <xsl:copy-of select="uwf:handle340('P30199', .., .)"/>
+                    <xsl:copy-of select="uwf:F340logic('P30199', .., .)"/>
                 </xsl:when>
                 <xsl:when test="@code = 'o'">
-                    <xsl:copy-of select="uwf:handle340('P30196', .., .)"/>
+                    <xsl:copy-of select="uwf:F340logic('P30196', .., .)"/>
                 </xsl:when>
                 <xsl:when test="@code = 'p'">
-                    <xsl:copy-of select="uwf:handle340('P30453', .., .)"/>
+                    <xsl:copy-of select="uwf:F340logic('P30453', .., .)"/>
                 </xsl:when>
                 <xsl:when test="@code = 'q'">
-                    <xsl:copy-of select="uwf:handle340('P30263', .., .)"/>
+                    <xsl:copy-of select="uwf:F340logic('P30263', .., .)"/>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:copy-of select="uwf:handle340('P30304', .., .)"/>
+                    <xsl:copy-of select="uwf:F340logic('P30304', .., .)"/>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:for-each>
     </xsl:template>
     
-    <xsl:function name="uwf:handle340">
+    <!-- function for minimizing repitition when handling all the many 340 subfields -->
+    <xsl:function name="uwf:F340logic">
         <xsl:param name="propertyNum"/>
         <xsl:param name="field"/>
         <xsl:param name="subfield"/>
@@ -681,6 +682,9 @@
                     <xsl:element name="rdam:{$propertyNum}">
                         <xsl:attribute name="rdf:resource" select="."/>
                     </xsl:element>
+                    <xsl:if test="$field/marc:subfield[@code = '3']">
+                        <xsl:copy-of select="uwf:F340handle3($field/marc:subfield[@code = '3'], $subfield, .)"/>
+                    </xsl:if>
                 </xsl:for-each>
             </xsl:when>
             <!-- no $1 -->
@@ -695,6 +699,9 @@
                                 <xsl:element name="rdam:{$propertyNum}">
                                     <xsl:attribute name="rdf:resource" select="$iri0"/>
                                 </xsl:element>
+                                <xsl:if test="$field/marc:subfield[@code = '3']">
+                                    <xsl:copy-of select="uwf:F340handle3($field/marc:subfield[@code = '3'], $subfield, $iri0)"/>
+                                </xsl:if>
                             </xsl:if>
                         </xsl:for-each>
                     </xsl:when>
@@ -714,6 +721,9 @@
                                             <xsl:element name="rdam:{$propertyNum}">
                                                 <xsl:attribute name="rdf:resource" select="$rdaIRI"/>
                                             </xsl:element>
+                                            <xsl:if test="$field/marc:subfield[@code = '3']">
+                                                <xsl:copy-of select="uwf:F340handle3($field/marc:subfield[@code = '3'], $subfield, $rdaIRI)"/>
+                                            </xsl:if>
                                         </xsl:if>
                                     </xsl:when>
                                     <!-- other $2s not rda -->
@@ -722,6 +732,9 @@
                                             <xsl:element name="rdam:{$propertyNum}">
                                                 <xsl:attribute name="rdf:resource" select="uwf:conceptIRI($sub2, $subfield)"/>
                                             </xsl:element>
+                                            <xsl:if test="$field/marc:subfield[@code = '3']">
+                                                <xsl:copy-of select="uwf:F340handle3($field/marc:subfield[@code = '3'], $subfield, uwf:conceptIRI($sub2, $subfield))"/>
+                                            </xsl:if>
                                         </xsl:if>
                                     </xsl:otherwise>
                                 </xsl:choose>
@@ -731,12 +744,63 @@
                                 <xsl:element name="rdamd:{$propertyNum}">
                                     <xsl:value-of select="$subfield"/>
                                 </xsl:element>
+                                <xsl:if test="$field/marc:subfield[@code = '3']">
+                                    <xsl:copy-of select="uwf:F340handle3($field/marc:subfield[@code = '3'], $subfield, $subfield)"/>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:otherwise>
         </xsl:choose>
+    </xsl:function>
+    
+    <xsl:function name="uwf:F340handle3" expand-text="yes">
+        <xsl:param name="sub3"/>
+        <xsl:param name="subfield"/>
+        <xsl:param name="value"/>
+        <rdamd:P30137>
+            <xsl:if test="$subfield/@code = 'a'">
+                <xsl:text>Has material base and configuration {$value}</xsl:text>
+            </xsl:if> 
+            <xsl:if test="$subfield/@code = 'c'">
+                <xsl:text>has materials applied to surface {$value}</xsl:text>
+            </xsl:if>
+            <xsl:if test="$subfield/@code = 'd'">
+                <xsl:text>Has information recording technique {$value}</xsl:text>
+            </xsl:if>
+            <xsl:if test="$subfield/@code = 'e'">
+                <xsl:text>Has support {$value}</xsl:text>
+            </xsl:if>
+            <xsl:if test="$subfield/@code = 'g'">
+                <xsl:text>Has color content {$value}</xsl:text>
+            </xsl:if>
+            <xsl:if test="$subfield/@code = 'j'">
+                <xsl:text>Has generation {$value}</xsl:text>
+            </xsl:if>
+            <xsl:if test="$subfield/@code = 'k'">
+                <xsl:text>Has layout {$value}</xsl:text>
+            </xsl:if>
+            <xsl:if test="$subfield/@code = 'l'">
+                <xsl:text>Has type of binding {$value}</xsl:text>
+            </xsl:if>
+            <xsl:if test="$subfield/@code = 'm'">
+                <xsl:text>Has book format {$value}</xsl:text>
+            </xsl:if>
+            <xsl:if test="$subfield/@code = 'n'">
+                <xsl:text>Has font size {$value}</xsl:text>
+            </xsl:if>
+            <xsl:if test="$subfield/@code = 'o'">
+                <xsl:text>Has polarity {$value}</xsl:text>
+            </xsl:if>
+            <xsl:if test="$subfield/@code = 'p'">
+                <xsl:text>Has illustrative content {$value}</xsl:text>
+            </xsl:if>
+            <xsl:if test="$subfield/@code = 'q'">
+                <xsl:text>Has reduction ratio designator {$value}</xsl:text>
+            </xsl:if>
+            <xsl:text> applies to {$sub3}</xsl:text>
+        </rdamd:P30137>
     </xsl:function>
     
     <!-- 346 -->
