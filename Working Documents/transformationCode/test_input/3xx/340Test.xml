@@ -6,8 +6,8 @@
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">340-test1</marc:controlfield>
         
-        <marc:datafield tag="340" ind1=" " ind2=" ">
-            <marc:subfield code="a">parchment</marc:subfield>
+        <!--<marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="a">canvas</marc:subfield>
             <marc:subfield code="b">20 cm. folded to 10 x 12 cm.</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="340" ind1=" " ind2=" ">
@@ -18,8 +18,77 @@
         </marc:datafield>
         <marc:datafield tag="340" ind1=" " ind2=" ">
             <marc:subfield code="i">bord Model 74 tape reader.</marc:subfield>
+        </marc:datafield>-->
+        
+        <!--<marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="a">canvas</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="a">canvas</marc:subfield>
+            <marc:subfield code="2">rdamat</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="a">canvas</marc:subfield>
+            <marc:subfield code="0">http://rdaregistry.info/termList/RDAMaterial/1005</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="a">canvas</marc:subfield>
+            <marc:subfield code="0">non uri zero</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="a">canvas</marc:subfield>
+            <marc:subfield code="1">http://rdaregistry.info/termList/RDAMaterial/1005</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="a">canvas</marc:subfield>
+            <marc:subfield code="2">othersource</marc:subfield>
+        </marc:datafield>-->
         
-        
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="c"></marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="d">stamping</marc:subfield>
+            <marc:subfield code="2">rdapm</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="e">wood</marc:subfield>
+            <marc:subfield code="2">rdamat</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="g">monochrome</marc:subfield>
+            <marc:subfield code="2">rdacc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="j">printing master</marc:subfield>
+            <marc:subfield code="2">rdagen</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="k">double sided</marc:subfield>
+            <marc:subfield code="2">rdalay</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="l">Coptic bindings</marc:subfield>
+            <marc:subfield code="2">aat</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="m">folio</marc:subfield>
+            <marc:subfield code="2">rdabf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="n">36 point</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="o">positive</marc:subfield>
+            <marc:subfield code="2">rdapo</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="p">illustration</marc:subfield>
+            <marc:subfield code="2">rdaill</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="q">high reduction</marc:subfield>
+            <marc:subfield code="2">rdarr</marc:subfield>
+        </marc:datafield>
     </marc:record>
 </marc:collection>

@@ -41,13 +41,34 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/340-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/340-test1exp"/>
-      <fake:marcfield>F340 ## $a parchment $b 20 cm. folded to 10 x 12 cm.</fake:marcfield>
-      <rdamd:P30169>20 cm. folded to 10 x 12 cm. (parchment)</rdamd:P30169>
-      <fake:marcfield>F340 ## $f 24:1</fake:marcfield>
-      <rdamd:P30137>Use at a rate or ratio of: 24:1</rdamd:P30137>
-      <fake:marcfield>F340 ## $h center panel.</fake:marcfield>
-      <rdamd:P30137>Location of the described materials within the material base: center panel.</rdamd:P30137>
-      <fake:marcfield>F340 ## $i bord Model 74 tape reader.</fake:marcfield>
-      <rdamd:P30162>bord Model 74 tape reader.</rdamd:P30162>
+      <fake:marcfield>F340 ## $c </fake:marcfield>
+      <rdamd:P30304/>
+      <fake:marcfield>F340 ## $d stamping $2 rdapm</fake:marcfield>
+      <rdam:P30187 rdf:resource="http://rdaregistry.info/termList/RDAproductionMethod/1017"/>
+      <fake:marcfield>F340 ## $e wood $2 rdamat</fake:marcfield>
+      <rdam:P30304 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1045"/>
+      <fake:marcfield>F340 ## $g monochrome $2 rdacc</fake:marcfield>
+      <rdam:P30456 rdf:resource="http://rdaregistry.info/termList/RDAColourContent/1002"/>
+      <fake:marcfield>F340 ## $j printing master $2 rdagen</fake:marcfield>
+      <rdam:P30191 rdf:resource="http://rdaregistry.info/termList/RDAGeneration/1010"/>
+      <fake:marcfield>F340 ## $k double sided $2 rdalay</fake:marcfield>
+      <rdam:P30155 rdf:resource="http://rdaregistry.info/termList/layout/1001"/>
+      <fake:marcfield>F340 ## $l Coptic bindings $2 aat</fake:marcfield>
+      <rdam:P30309 rdf:resource="http://marc2rda.edu/fake/concept/aat/copticbindings"/>
+      <fake:marcfield>F340 ## $m folio $2 rdabf</fake:marcfield>
+      <rdam:P30197 rdf:resource="http://rdaregistry.info/termList/bookFormat/1001"/>
+      <fake:marcfield>F340 ## $n 36 point</fake:marcfield>
+      <rdamd:P30199>36 point</rdamd:P30199>
+      <fake:marcfield>F340 ## $o positive $2 rdapo</fake:marcfield>
+      <rdam:P30196 rdf:resource="http://rdaregistry.info/termList/RDAPolarity/1001"/>
+      <fake:marcfield>F340 ## $p illustration $2 rdaill</fake:marcfield>
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/>
+      <fake:marcfield>F340 ## $q high reduction $2 rdarr</fake:marcfield>
+      <rdam:P30263 rdf:resource="http://rdaregistry.info/termList/RDAReductionRatio/1003"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/aat/copticbindings">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Coptic bindings</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
    </rdf:Description>
 </rdf:RDF>
