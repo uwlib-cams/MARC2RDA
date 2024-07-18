@@ -24,7 +24,7 @@
     xmlns:uwmisc="http://uw.edu/all-purpose-namespace/" exclude-result-prefixes="marc ex uwf"
     version="3.0">
     <xsl:output encoding="UTF-8" method="xml" indent="yes"/>
-    <xsl:include href="m2r-functions.xsl"/>
+    <xsl:import href="m2r-functions.xsl"/>
     
 <!-- **KEYS FOR LOOKUP** -->
     <xsl:key name="fieldKey" match="uwmisc:row" use="uwmisc:field" collation="http://saxon.sf.net/collation?ignore-case=yes"/>
@@ -67,17 +67,19 @@
     <!-- returns an IRI for a nomen related to an agent entity -->
     <xsl:function name="uwf:agentNomenIRI">
         <xsl:param name="field"/>
-        <xsl:variable name="ap" select="lower-case(string-join(uwf:agentAccessPoint($field)))"/> 
+        <!-- function bc how we do this might change -->
+<!--        <xsl:variable name="ap" select="lower-case(string-join(uwf:agentAccessPoint($field)))"/> 
         <xsl:choose>
-            <!-- If $0 or $1 or $2, it's authorized, construct an IRI from authorized access point -->
+            <!-\- If $0 or $1 or $2, it's authorized, construct an IRI from authorized access point -\->
             <xsl:when test="$field/marc:subfield[@code = '1'] or $field/marc:subfield[@code = '0'] or $field/marc:subfield[@code = '2']">
                 <xsl:value-of select="concat('http://marc2rda.edu/fake/nom/', encode-for-uri(translate($ap, ' ', '')))"/>
             </xsl:when>
-            <!-- otherwise it's an opaque IRI -->
+            <!-\- otherwise it's an opaque IRI -\->
             <xsl:otherwise>
-                <xsl:value-of select="'http://marc2rda.edu/agent/'||generate-id($field)"/>
+                <xsl:value-of select="'http://marc2rda.edu/agent/nom/'||generate-id($field)"/>
             </xsl:otherwise>
-        </xsl:choose>
+        </xsl:choose>-->
+        <xsl:value-of select="'http://marc2rda.edu/agent/nom/'||generate-id($field)"/>
     </xsl:function>
     
     <!-- generates an access point for an agent based on the subfields present in the field -->
