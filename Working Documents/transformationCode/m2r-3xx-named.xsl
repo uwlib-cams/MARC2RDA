@@ -570,25 +570,46 @@
     <xsl:template name="F340-b_f_h_i" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'b']">
             <rdamd:P30169>
+                <xsl:value-of select="."/>
                 <xsl:if test="../marc:subfield[@code = 'a']">
-                    <xsl:value-of select="."/>
                     <xsl:text> ({../marc:subfield[@code = 'a']})</xsl:text>
                 </xsl:if>
             </rdamd:P30169>
+            <xsl:if test="../marc:subfield[@code = '3']">
+                <rdamd:P30137>
+                    <xsl:text>Has dimensions </xsl:text>
+                    <xsl:value-of select="."/>
+                    <xsl:if test="../marc:subfield[@code = 'a']">
+                        <xsl:text> ({../marc:subfield[@code = 'a']})</xsl:text>
+                    </xsl:if>    
+                    <xsl:text> applies to {../marc:subfield[@code = '3']}</xsl:text>
+                </rdamd:P30137>
+            </xsl:if>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'f']">
-            <rdamd:P30137>
+            <rdamd:P30198>
                 <xsl:text>Use at a rate or ratio of: {.}</xsl:text>
-            </rdamd:P30137>
+            </rdamd:P30198>
+            <xsl:if test="../marc:subfield[@code = '3']">
+                <rdamd:P30137>
+                    <xsl:text>Has reduction ratio {.} applies to {../marc:subfield[@code = '3']}</xsl:text>
+                </rdamd:P30137>
+            </xsl:if>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'h']">
             <rdamd:P30137>
                 <xsl:text>Location of the described materials within the material base: {.}</xsl:text>
+                <xsl:if test="../marc:subfield[@code = '3']">
+                    <xsl:text>(applies to: {../marc:subfield[@code = '3']})</xsl:text>
+                </xsl:if>
             </rdamd:P30137>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'i']">
             <rdamd:P30162>
                 <xsl:value-of select="."/>
+                <xsl:if test="../marc:subfield[@code = '3']">
+                    <xsl:text>(applies to: {../marc:subfield[@code = '3']})</xsl:text>
+                </xsl:if>
             </rdamd:P30162>
         </xsl:for-each>
     </xsl:template>
