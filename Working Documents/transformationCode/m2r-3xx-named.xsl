@@ -600,7 +600,7 @@
             <rdamd:P30137>
                 <xsl:text>Location of the described materials within the material base: {.}</xsl:text>
                 <xsl:if test="../marc:subfield[@code = '3']">
-                    <xsl:text>(applies to: {../marc:subfield[@code = '3']})</xsl:text>
+                    <xsl:text> (applies to: {../marc:subfield[@code = '3']})</xsl:text>
                 </xsl:if>
             </rdamd:P30137>
         </xsl:for-each>
@@ -608,7 +608,7 @@
             <rdamd:P30162>
                 <xsl:value-of select="."/>
                 <xsl:if test="../marc:subfield[@code = '3']">
-                    <xsl:text>(applies to: {../marc:subfield[@code = '3']})</xsl:text>
+                    <xsl:text> (applies to: {../marc:subfield[@code = '3']})</xsl:text>
                 </xsl:if>
             </rdamd:P30162>
         </xsl:for-each>
