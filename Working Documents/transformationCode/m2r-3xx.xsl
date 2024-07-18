@@ -44,11 +44,11 @@
     </xsl:template>-->
     
     <xsl:template match="marc:datafield[@tag = '336']" mode="exp">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <!-- Accounted for: $a, $b, $2-temporary, $3-partial, $0, $1 -->
         <!--Not accounted for: $2 needs permanent solution, $3 with $0 and $1, $6, $7, $8 -->
-        <xsl:call-template name="F336-xx-ab0-string"/>
-        <xsl:call-template name="F336-xx-01-iri"/>
+        <!--<xsl:call-template name="F336-xx-ab0-string"/>
+        <xsl:call-template name="F336-xx-01-iri"/>-->
     </xsl:template>
     
     <!-- 337 - Media Type -->
