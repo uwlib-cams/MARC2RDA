@@ -587,14 +587,12 @@
             </xsl:if>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'f']">
-            <rdamd:P30198>
-                <xsl:value-of select="."/>
-            </rdamd:P30198>
-            <xsl:if test="../marc:subfield[@code = '3']">
-                <rdamd:P30137>
-                    <xsl:text>Has reduction ratio {.} applies to {../marc:subfield[@code = '3']}</xsl:text>
-                </rdamd:P30137>
-            </xsl:if>
+            <rdamd:P30137>
+                <xsl:text>Reduction ratio or production rate/ratio: {.}</xsl:text>
+                <xsl:if test="../marc:subfield[@code = '3']">
+                    <xsl:text> (applies to: {../marc:subfield[@code = '3']})</xsl:text>
+                </xsl:if>
+            </rdamd:P30137>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'h']">
             <rdamd:P30137>
