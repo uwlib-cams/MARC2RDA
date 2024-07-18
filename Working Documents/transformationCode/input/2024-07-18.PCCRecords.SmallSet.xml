@@ -1,0 +1,2216 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim
+    http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>07298cam a2200613 i 4500</marc:leader>
+        <marc:controlfield tag="001">1400208651</marc:controlfield>
+        <marc:controlfield tag="005">20240717000000.0</marc:controlfield>
+        <marc:controlfield tag="008">230928t20222022waua    obm   000 0 eng c</marc:controlfield>
+        <marc:controlfield tag="006">m     o  d s      </marc:controlfield>
+        <marc:controlfield tag="007">cr ||||||||||</marc:controlfield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAU</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="e">rda</marc:subfield>
+            <marc:subfield code="e">pn</marc:subfield>
+            <marc:subfield code="c">WAU</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCF</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="024" ind1="7" ind2=" ">
+            <marc:subfield code="a">1773/49194</marc:subfield>
+            <marc:subfield code="2">hdl</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="042" ind1=" " ind2=" ">
+            <marc:subfield code="a">pcc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="049" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAUW</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Ramirez Arreola, Maria Elizabeth,</marc:subfield>
+            <marc:subfield code="e">author.</marc:subfield>
+            <marc:subfield code="1">https://orcid.org/0009-0002-6426-7532</marc:subfield>
+            <marc:subfield code="1">http://www.wikidata.org/entity/Q127550946</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Quieren mi labor más no mi intelecto :</marc:subfield>
+            <marc:subfield code="b">they want my hands not my brains : mapping the gendered and racialized journeys of adult English learner immigrant Latin American women in the US higher education system /</marc:subfield>
+            <marc:subfield code="c">Maria Elizabeth Ramirez Arreola.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">[Seattle] :</marc:subfield>
+            <marc:subfield code="b">[University of Washington Libraries],</marc:subfield>
+            <marc:subfield code="c">[2022]</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="4">
+            <marc:subfield code="c">©2022</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 online resource (124 pages) :</marc:subfield>
+            <marc:subfield code="b">color illustrations</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer</marc:subfield>
+            <marc:subfield code="b">c</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">online resource</marc:subfield>
+            <marc:subfield code="b">cr</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="347" ind1=" " ind2=" ">
+            <marc:subfield code="a">text file</marc:subfield>
+            <marc:subfield code="2">rdaft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="347" ind1=" " ind2=" ">
+            <marc:subfield code="b">PDF</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="502" ind1=" " ind2=" ">
+            <marc:subfield code="b">Ph. D.</marc:subfield>
+            <marc:subfield code="c">University of Washington</marc:subfield>
+            <marc:subfield code="d">2022</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="504" ind1=" " ind2=" ">
+            <marc:subfield code="a">Includes bibliographical references (pages 107-116).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="506" ind1="1" ind2=" ">
+            <marc:subfield code="a">Restrict to UW for 2 years -- then make Open Access</marc:subfield>
+            <marc:subfield code="g">20240912</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="520" ind1="3" ind2=" ">
+            <marc:subfield code="a">This qualitative study examines the gendered and racialized educational experiences of eight nontraditional, adult English learners (EL), Latin American, and immigrant women. The study focuses on those that after migrating as in adults age to the United States, have eventually continued their higher educational attainment, disrupting the conventional narratives about adult immigrants and their lack of aspirations in higher education attainment. Such experiences have been largely excluded from U.S academic literature, as they are a minority within a minority. Nontraditional, adult EL, Latin American, immigrant students entering the United States higher education system are navigating college access in a system new to them as their access path is very different from international students or Latinx peers who attended the K-12 education system. Factors such as age, the digital divide, and typically being monolingual for the first 20-30 years of their lives increase exponentially, often becoming the first barriers on their path to higher education. They are navigating a new education system while facing immigration challenges such as family and financial responsibilities in their country of origin and receptor country. The data collected from eight qualitative testimonio interviews sought to capture information about their access path to higher education and the path access that they followed, the gendered and racialized experiences and their impact on the participants' education, and lastly, to identify how the participants successfully navigated the United States higher education system at the undergraduate and graduate level as they were either recently graduated or currently enrolled in universities and community colleges. The study was intentional in utilizing testimonio as a method of research, a qualitative approach that gave participants a space to share their individual experiences and to collectively reclaim their invisibilized academic journeys as they resonated with one another. Conceptualized through a Latino Critical Race Theory and intersectionality lens framework provided an interdisciplinary perspective to examine how identity markers such as race, class, gender, national origin, phenotype, etc., and complex structures of oppression such as institutionalized racism and white privilege impacted the educational experiences of nontraditional, adult EL, Latin American immigrant, women. Migration studies theory illuminated allowed me to better understand the different contexts for migration from countries in Latin America, and finally, grounded in Chicana feminism allowed me to center the women's experiences and draw from their experiences as a source of knowledge (Delgado Bernal, 1998). The study provides recommendations for universities administrative &amp; faculty personal in practice &amp; policy, advocating for different ways to positively create educational access for nontraditional, adult English learner students. To perform a thorough analysis of their journeys, the following questions guided the study: a) What were the educational paths that adult Latin American immigrant women followed to access and succeed in the U.S higher education system? b) How do their testimonios reveal the gendered and racialized journey to college attainment? And c) How can an intersectional discussion of their academic journey depict the privileges and barriers that came into place for immigrant Latin American women to defy spaces where they have only been seen as laborers? These questions were informed by my own journey as an adult immigrant woman from Mexico who grew up monolingual and acquired English as a second language to enroll and obtain a college education in the U.S. I am also informed by the minimal literature on the subject and the historical context of the practices of exclusion from higher education institutions and how those continue to affect the experiences of underrepresented students in the United States (Long 2016). My testimonio, joined by eight others of nontraditional adult English learners, Latin American immigrant women, are critically analyzed to shine a light on the intersectional journeys of accessing and surviving in the U.S. higher education system, a system. that, according to the data produced in this study, severely ignores this small but growing population of adult English learners seeking access to postsecondary education (National Center for Education Statistics, 2017).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="588" ind1="0" ind2=" ">
+            <marc:subfield code="a">Online resource; title from PDF title page (ResearchWorks Archive, viewed September 28, 2023).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Hispanic American women college students</marc:subfield>
+            <marc:subfield code="z">United States</marc:subfield>
+            <marc:subfield code="x">Social conditions.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Hispanic American women</marc:subfield>
+            <marc:subfield code="x">Education (Higher)</marc:subfield>
+            <marc:subfield code="z">United States.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Immigrant students</marc:subfield>
+            <marc:subfield code="z">United States</marc:subfield>
+            <marc:subfield code="x">Social conditions.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Women immigrants</marc:subfield>
+            <marc:subfield code="x">Education (Higher)</marc:subfield>
+            <marc:subfield code="z">United States.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">English language</marc:subfield>
+            <marc:subfield code="x">Study and teaching (Continuing education)</marc:subfield>
+            <marc:subfield code="x">Spanish speakers.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Feminism and higher education</marc:subfield>
+            <marc:subfield code="z">United States.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Sexism in higher education</marc:subfield>
+            <marc:subfield code="z">United States.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Racism in higher education</marc:subfield>
+            <marc:subfield code="z">United States.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Critical race theory.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Adult English learner (EL)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Gender Studies</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Intersectionality</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Latino Studies</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Nontraditional Student</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Testimonio</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Education</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Ethnic studies</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Gender, women, and sexuality</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="4">
+            <marc:subfield code="a">Theses</marc:subfield>
+            <marc:subfield code="x">Gender, women, and sexuality.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">dissertations.</marc:subfield>
+            <marc:subfield code="2">aat</marc:subfield>
+            <marc:subfield code="0">(CStmoGRI)aatgf300028029</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Academic theses</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01726453</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Academic theses.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Thèses et écrits académiques.</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)RVMGF-000001173</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Ginorio, Angela B.,</marc:subfield>
+            <marc:subfield code="e">degree supervisor.</marc:subfield>
+            <marc:subfield code="1">http://www.wikidata.org/entity/Q107956183</marc:subfield>
+            <marc:subfield code="1">http://viaf.org/viaf/70643896</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="u">http://hdl.handle.net/1773/49194</marc:subfield>
+            <marc:subfield code="7">1</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>07476cam a2201165 i 4500</marc:leader>
+        <marc:controlfield tag="001">945006014</marc:controlfield>
+        <marc:controlfield tag="005">20240717211608.4</marc:controlfield>
+        <marc:controlfield tag="008">160317t20162016ncua    ob    001 0 eng c</marc:controlfield>
+        <marc:controlfield tag="006">m     o  d        </marc:controlfield>
+        <marc:controlfield tag="007">cr cn|||||||||</marc:controlfield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">NDD</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="e">rda</marc:subfield>
+            <marc:subfield code="e">pn</marc:subfield>
+            <marc:subfield code="c">NDD</marc:subfield>
+            <marc:subfield code="d">YDXCP</marc:subfield>
+            <marc:subfield code="d">N$T</marc:subfield>
+            <marc:subfield code="d">IDEBK</marc:subfield>
+            <marc:subfield code="d">N$T</marc:subfield>
+            <marc:subfield code="d">CUS</marc:subfield>
+            <marc:subfield code="d">EBLCP</marc:subfield>
+            <marc:subfield code="d">CDX</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+            <marc:subfield code="d">IDB</marc:subfield>
+            <marc:subfield code="d">VLB</marc:subfield>
+            <marc:subfield code="d">UAB</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">U3W</marc:subfield>
+            <marc:subfield code="d">MERUC</marc:subfield>
+            <marc:subfield code="d">IOG</marc:subfield>
+            <marc:subfield code="d">TJC</marc:subfield>
+            <marc:subfield code="d">OCLCF</marc:subfield>
+            <marc:subfield code="d">VOD</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">H9Z</marc:subfield>
+            <marc:subfield code="d">RRP</marc:subfield>
+            <marc:subfield code="d">INT</marc:subfield>
+            <marc:subfield code="d">OTZ</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">LEAUB</marc:subfield>
+            <marc:subfield code="d">OCLCE</marc:subfield>
+            <marc:subfield code="d">CNTRU</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">AU@</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">GZM</marc:subfield>
+            <marc:subfield code="d">P@U</marc:subfield>
+            <marc:subfield code="d">JSTOR</marc:subfield>
+            <marc:subfield code="d">SFB</marc:subfield>
+            <marc:subfield code="d">OCLCA</marc:subfield>
+            <marc:subfield code="d">DEGRU</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">KCC</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">DGITA</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCL</marc:subfield>
+            <marc:subfield code="d">SXB</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="019" ind1=" " ind2=" ">
+            <marc:subfield code="a">930451494</marc:subfield>
+            <marc:subfield code="a">961003783</marc:subfield>
+            <marc:subfield code="a">965412932</marc:subfield>
+            <marc:subfield code="a">1058932277</marc:subfield>
+            <marc:subfield code="a">1089720674</marc:subfield>
+            <marc:subfield code="a">1097119212</marc:subfield>
+            <marc:subfield code="a">1097268914</marc:subfield>
+            <marc:subfield code="a">1127173689</marc:subfield>
+            <marc:subfield code="a">1136363830</marc:subfield>
+            <marc:subfield code="a">1143615885</marc:subfield>
+            <marc:subfield code="a">1144328903</marc:subfield>
+            <marc:subfield code="a">1158220829</marc:subfield>
+            <marc:subfield code="a">1266910474</marc:subfield>
+            <marc:subfield code="a">1303455338</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9780822374213</marc:subfield>
+            <marc:subfield code="q">(electronic book)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">0822374218</marc:subfield>
+            <marc:subfield code="q">(electronic book)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="z">9780822361404</marc:subfield>
+            <marc:subfield code="q">(hardcover)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="z">082236140X</marc:subfield>
+            <marc:subfield code="q">(hardcover)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="z">9780822361596</marc:subfield>
+            <marc:subfield code="q">(paperback)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="z">0822361590</marc:subfield>
+            <marc:subfield code="q">(paperback)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="024" ind1="7" ind2=" ">
+            <marc:subfield code="a">10.1515/9780822374213</marc:subfield>
+            <marc:subfield code="2">doi</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="037" ind1=" " ind2=" ">
+            <marc:subfield code="a">22573/ctv1134bj3</marc:subfield>
+            <marc:subfield code="b">JSTOR</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="042" ind1=" " ind2=" ">
+            <marc:subfield code="a">dlr</marc:subfield>
+            <marc:subfield code="a">pcc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="050" ind1=" " ind2="4">
+            <marc:subfield code="a">HQ980</marc:subfield>
+            <marc:subfield code="b">.W555 2016eb</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="072" ind1=" " ind2="7">
+            <marc:subfield code="a">POL</marc:subfield>
+            <marc:subfield code="x">038000</marc:subfield>
+            <marc:subfield code="2">bisacsh</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="072" ind1=" " ind2="7">
+            <marc:subfield code="a">SOC</marc:subfield>
+            <marc:subfield code="x">002010</marc:subfield>
+            <marc:subfield code="2">bisacsh</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="072" ind1=" " ind2="7">
+            <marc:subfield code="a">SOC</marc:subfield>
+            <marc:subfield code="x">022000</marc:subfield>
+            <marc:subfield code="2">bisacsh</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="072" ind1=" " ind2="7">
+            <marc:subfield code="a">SOC</marc:subfield>
+            <marc:subfield code="x">026010</marc:subfield>
+            <marc:subfield code="2">bisacsh</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="072" ind1=" " ind2="7">
+            <marc:subfield code="a">SOC</marc:subfield>
+            <marc:subfield code="x">010000</marc:subfield>
+            <marc:subfield code="2">bisacsh</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="072" ind1=" " ind2="7">
+            <marc:subfield code="a">SOC</marc:subfield>
+            <marc:subfield code="x">017000</marc:subfield>
+            <marc:subfield code="2">bisacsh</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="082" ind1="0" ind2="4">
+            <marc:subfield code="a">306.8423</marc:subfield>
+            <marc:subfield code="2">23</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="049" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAUW</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Willey, Angela,</marc:subfield>
+            <marc:subfield code="d">1978-</marc:subfield>
+            <marc:subfield code="e">author.</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PBJfh8qkpKYQ6cBkFFQdRKd</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Undoing monogamy :</marc:subfield>
+            <marc:subfield code="b">the politics of science and the possibilities of biology /</marc:subfield>
+            <marc:subfield code="c">Angela Willey.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">Durham :</marc:subfield>
+            <marc:subfield code="b">Duke University Press,</marc:subfield>
+            <marc:subfield code="c">[2016]</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="4">
+            <marc:subfield code="c">©2016</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 online resource (xiv, 195 pages) :</marc:subfield>
+            <marc:subfield code="b">illustrations</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer</marc:subfield>
+            <marc:subfield code="b">c</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">online resource</marc:subfield>
+            <marc:subfield code="b">cr</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="g">monochrome</marc:subfield>
+            <marc:subfield code="2">rdacc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="g">black and white</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="p">illustration</marc:subfield>
+            <marc:subfield code="2">rdaill</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="504" ind1=" " ind2=" ">
+            <marc:subfield code="a">Includes bibliographical references (pages 147-190) and index.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="505" ind1="0" ind2=" ">
+            <marc:subfield code="a">Politics and possibility: a queer feminist introduction to monogamy -- Monogamy's nature: colonial sexual science and its naturecultural fruits -- Making the monogamous human: mating, measurement, and the new science of bonding -- Making our poly nature: monogamy's inversion and the reproduction of difference -- Rethinking monogamy's nature: from the truth of non/monogamy to a dyke ethics of &quot;antimonogamy&quot; -- Biopossibility: molecular monogamy and Audre Lorde's erotic -- Dreams of a dyke science.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="588" ind1="0" ind2=" ">
+            <marc:subfield code="a">Print version record.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="520" ind1=" " ind2=" ">
+            <marc:subfield code="a">&quot;In Undoing Monogamy Angela Willey offers a radically interdisciplinary exploration of the concept of monogamy in U.S. science and culture, propelled by queer feminist desires for new modes of conceptualization and new forms of belonging. She approaches the politics and materiality of monogamy as intertwined with one another such that disciplinary ways of knowing themselves become an object of critical inquiry. Refusing to answer the naturalization of monogamy with a naturalization of nonmonogamy, Willey demands a critical reorientation toward the monogamy question in the natural sciences, social sciences, and humanities. The book examines colonial sexual science, monogamous voles, polyamory, and the work of Alison Bechdel and Audre Lorde to show how challenging the lens through which human nature is seen as monogamous or nonmonogamous forces us to reconsider our investments in coupling and in disciplinary notions of biological bodies&quot;--Provided by publisher.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Non-monogamous relationships.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Monogamous relationships.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Sexual minorities</marc:subfield>
+            <marc:subfield code="x">Sexual behavior.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Sexual ethics.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Non-monogamie.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0347162</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Monogamie.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0460566</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Minorités sexuelles</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0427879</marc:subfield>
+            <marc:subfield code="x">Sexualité.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0379013</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Morale sexuelle.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0002493</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">POLITICAL SCIENCE</marc:subfield>
+            <marc:subfield code="x">Public Policy</marc:subfield>
+            <marc:subfield code="x">Cultural Policy.</marc:subfield>
+            <marc:subfield code="2">bisacsh</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">SOCIAL SCIENCE</marc:subfield>
+            <marc:subfield code="x">Anthropology</marc:subfield>
+            <marc:subfield code="x">Cultural.</marc:subfield>
+            <marc:subfield code="2">bisacsh</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">SOCIAL SCIENCE</marc:subfield>
+            <marc:subfield code="x">Popular Culture.</marc:subfield>
+            <marc:subfield code="2">bisacsh</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">SOCIAL SCIENCE</marc:subfield>
+            <marc:subfield code="x">Sociology</marc:subfield>
+            <marc:subfield code="x">Marriage &amp; Family.</marc:subfield>
+            <marc:subfield code="2">bisacsh</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Monogamous relationships</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01737818</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Non-monogamous relationships</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01038560</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Sexual ethics</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01114835</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Monogamie</marc:subfield>
+            <marc:subfield code="2">gnd</marc:subfield>
+            <marc:subfield code="0">(DE-588)4170463-0</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Sexuelle Sozialisation</marc:subfield>
+            <marc:subfield code="2">gnd</marc:subfield>
+            <marc:subfield code="0">(DE-588)4181119-7</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Generatives Verhalten</marc:subfield>
+            <marc:subfield code="2">gnd</marc:subfield>
+            <marc:subfield code="0">(DE-588)4020118-1</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Sozialwissenschaften</marc:subfield>
+            <marc:subfield code="2">gnd</marc:subfield>
+            <marc:subfield code="0">(DE-588)4055916-6</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Non-monogamy.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0001659</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Relationship orientation.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0001636</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Monogamy.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0001019</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Sexual relationships.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0001302</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Partner preference.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0001081</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Polyamory.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0001123</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Sexual minorities.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="1">https://homosaurus.org/v3/homoit0001297</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Sexual practices.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0001299</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="758" ind1=" " ind2=" ">
+            <marc:subfield code="i">has work:</marc:subfield>
+            <marc:subfield code="a">Undoing monogamy (Text)</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PCFRPjFtMkdbHR3DQj6pPFC</marc:subfield>
+            <marc:subfield code="4">https://id.oclc.org/worldcat/ontology/hasWork</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="776" ind1="0" ind2="8">
+            <marc:subfield code="i">Print version:</marc:subfield>
+            <marc:subfield code="a">Willey, Angela, 1978-</marc:subfield>
+            <marc:subfield code="t">Undoing monogamy.</marc:subfield>
+            <marc:subfield code="d">Durham : Duke University Press, 2016</marc:subfield>
+            <marc:subfield code="z">9780822361404</marc:subfield>
+            <marc:subfield code="w">(DLC)  2015045617</marc:subfield>
+            <marc:subfield code="w">(OCoLC)915120389</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">De Gruyter</marc:subfield>
+            <marc:subfield code="u">https://doi.org/10.1515/9780822374213</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">De Gruyter</marc:subfield>
+            <marc:subfield code="u">https://www.degruyter.com/isbn/9780822374213</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">Digitalia English</marc:subfield>
+            <marc:subfield code="u">http://english.digitaliapublishing.com/a/72049/</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">ebrary</marc:subfield>
+            <marc:subfield code="u">http://site.ebrary.com/id/11207910</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">EBSCOhost</marc:subfield>
+            <marc:subfield code="u">https://search.ebscohost.com/login.aspx?direct=true&amp;scope=site&amp;db=nlebk&amp;db=nlabk&amp;AN=1223481</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">eDuke</marc:subfield>
+            <marc:subfield code="u">https://doi.org/10.1215/9780822374213</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">HathiTrust Digital Library</marc:subfield>
+            <marc:subfield code="u">http://catalog.hathitrust.org/api/volumes/oclc/915120389.html</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">JSTOR</marc:subfield>
+            <marc:subfield code="u">https://www.jstor.org/stable/10.2307/j.ctv1134cs6</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">MyiLibrary</marc:subfield>
+            <marc:subfield code="u">http://www.myilibrary.com?id=917339</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">MyiLibrary</marc:subfield>
+            <marc:subfield code="u">https://idp.warwick.ac.uk/idp/shibboleth</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">ProQuest Ebook Central</marc:subfield>
+            <marc:subfield code="u">https://public.ebookcentral.proquest.com/choice/publicfullrecord.aspx?p=4510795</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">Project MUSE</marc:subfield>
+            <marc:subfield code="u">https://muse.jhu.edu/book/70733</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">Scholars Portal</marc:subfield>
+            <marc:subfield code="u">http://books.scholarsportal.info/viewdoc.html?id=/ebooks/ebooks0/duke/2016-06-23/1/9780822374213</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="2">
+            <marc:subfield code="3">De Gruyter, Cover</marc:subfield>
+            <marc:subfield code="u">https://www.degruyter.com/cover/covers/9780822374213.jpg</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="u">https://doi.org/10.1515/9780822374213?locatt=mode:legacy</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">Coutts Information Services</marc:subfield>
+            <marc:subfield code="b">COUT</marc:subfield>
+            <marc:subfield code="n">33320531</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">De Gruyter</marc:subfield>
+            <marc:subfield code="b">DEGR</marc:subfield>
+            <marc:subfield code="n">9780822374213</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">Digitalia Publishing</marc:subfield>
+            <marc:subfield code="b">DGIT</marc:subfield>
+            <marc:subfield code="n">DIGDUKEUP1088</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">EBL - Ebook Library</marc:subfield>
+            <marc:subfield code="b">EBLB</marc:subfield>
+            <marc:subfield code="n">EBL4510795</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">EBSCOhost</marc:subfield>
+            <marc:subfield code="b">EBSC</marc:subfield>
+            <marc:subfield code="n">1223481</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">ProQuest MyiLibrary Digital eBook Collection</marc:subfield>
+            <marc:subfield code="b">IDEB</marc:subfield>
+            <marc:subfield code="n">cis33320531</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">Project MUSE</marc:subfield>
+            <marc:subfield code="b">MUSE</marc:subfield>
+            <marc:subfield code="n">muse81097</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">YBP Library Services</marc:subfield>
+            <marc:subfield code="b">YANK</marc:subfield>
+            <marc:subfield code="n">12713422</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="029" ind1="1" ind2=" ">
+            <marc:subfield code="a">AU@</marc:subfield>
+            <marc:subfield code="b">000056595147</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="029" ind1="1" ind2=" ">
+            <marc:subfield code="a">AU@</marc:subfield>
+            <marc:subfield code="b">000060915036</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="029" ind1="1" ind2=" ">
+            <marc:subfield code="a">ZWZ</marc:subfield>
+            <marc:subfield code="b">242689833</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>05132cam a2200817 i 4500</marc:leader>
+        <marc:controlfield tag="001">915120389</marc:controlfield>
+        <marc:controlfield tag="005">20240717211531.2</marc:controlfield>
+        <marc:controlfield tag="008">151123t20162016ncua     b    001 0 eng c</marc:controlfield>
+        <marc:datafield tag="010" ind1=" " ind2=" ">
+            <marc:subfield code="a">  2015045617</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">NcD/DLC</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="e">rda</marc:subfield>
+            <marc:subfield code="c">NDD</marc:subfield>
+            <marc:subfield code="d">DLC</marc:subfield>
+            <marc:subfield code="d">YDXCP</marc:subfield>
+            <marc:subfield code="d">BTCTA</marc:subfield>
+            <marc:subfield code="d">BDX</marc:subfield>
+            <marc:subfield code="d">NKM</marc:subfield>
+            <marc:subfield code="d">INU</marc:subfield>
+            <marc:subfield code="d">CHVBK</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OBE</marc:subfield>
+            <marc:subfield code="d">VP@</marc:subfield>
+            <marc:subfield code="d">OCLCF</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">UKMGB</marc:subfield>
+            <marc:subfield code="d">WLU</marc:subfield>
+            <marc:subfield code="d">U9X</marc:subfield>
+            <marc:subfield code="d">OCLCA</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">LVO</marc:subfield>
+            <marc:subfield code="d">CUV</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">CUV</marc:subfield>
+            <marc:subfield code="d">EMRUN</marc:subfield>
+            <marc:subfield code="d">OCLCL</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="015" ind1=" " ind2=" ">
+            <marc:subfield code="a">GBB669164</marc:subfield>
+            <marc:subfield code="2">bnb</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="016" ind1="7" ind2=" ">
+            <marc:subfield code="a">017856226</marc:subfield>
+            <marc:subfield code="2">Uk</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9780822361404</marc:subfield>
+            <marc:subfield code="q">(hardcover)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">082236140X</marc:subfield>
+            <marc:subfield code="q">(hardcover)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9780822361596</marc:subfield>
+            <marc:subfield code="q">(paperback)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">0822361590</marc:subfield>
+            <marc:subfield code="q">(paperback)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="z">9780822374213</marc:subfield>
+            <marc:subfield code="q">(e-book)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="z">0822374218</marc:subfield>
+            <marc:subfield code="q">(e-book)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="024" ind1="7" ind2=" ">
+            <marc:subfield code="z">10.1515/9780822374213</marc:subfield>
+            <marc:subfield code="2">doi</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="042" ind1=" " ind2=" ">
+            <marc:subfield code="a">pcc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="050" ind1="0" ind2="0">
+            <marc:subfield code="a">HQ980</marc:subfield>
+            <marc:subfield code="b">.W555 2016</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="082" ind1="0" ind2="0">
+            <marc:subfield code="a">176/.4</marc:subfield>
+            <marc:subfield code="2">23</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="049" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAUW</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Willey, Angela,</marc:subfield>
+            <marc:subfield code="d">1978-</marc:subfield>
+            <marc:subfield code="e">author.</marc:subfield>
+            <marc:subfield code="1">http://www.wikidata.org/entity/Q57179709</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Undoing monogamy :</marc:subfield>
+            <marc:subfield code="b">the politics of science and the possibilities of biology /</marc:subfield>
+            <marc:subfield code="c">Angela Willey.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">Durham :</marc:subfield>
+            <marc:subfield code="b">Duke University Press,</marc:subfield>
+            <marc:subfield code="c">2016.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="4">
+            <marc:subfield code="c">©2016</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">xiv, 195 pages :</marc:subfield>
+            <marc:subfield code="b">illustrations ;</marc:subfield>
+            <marc:subfield code="c">24 cm</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">unmediated</marc:subfield>
+            <marc:subfield code="b">n</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">volume</marc:subfield>
+            <marc:subfield code="b">nc</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="g">monochrome</marc:subfield>
+            <marc:subfield code="2">rdacc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="g">black and white</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="p">illustration</marc:subfield>
+            <marc:subfield code="2">rdaill</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="504" ind1=" " ind2=" ">
+            <marc:subfield code="a">Includes bibliographical references (pages 147-190) and index.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="505" ind1="0" ind2=" ">
+            <marc:subfield code="a">Politics and possibility : a queer feminist introduction to monogamy -- Monogamy's nature : colonial sexual science and its naturecultural fruits -- Making the monogamous human : mating, measurement, and the new science of bonding -- Making our poly nature : monogamy's inversion and the reproduction of difference -- Rethinking monogamy's nature : from the truth of non/monogamy to a dyke ethics of &quot;antimonogamy&quot; -- Biopossibility : molecular monogamy and Audre Lorde's erotic -- Dreams of a dyke science.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="520" ind1=" " ind2=" ">
+            <marc:subfield code="a">&quot;In Undoing Monogamy Angela Willey offers a radically interdisciplinary exploration of the concept of monogamy in U.S. science and culture, propelled by queer feminist desires for new modes of conceptualization and new forms of belonging. She approaches the politics and materiality of monogamy as intertwined with one another such that disciplinary ways of knowing themselves become an object of critical inquiry. Refusing to answer the naturalization of monogamy with a naturalization of nonmonogamy, Willey demands a critical reorientation toward the monogamy question in the natural sciences, social sciences, and humanities. The book examines colonial sexual science, monogamous voles, polyamory, and the work of Alison Bechdel and Audre Lorde to show how challenging the lens through which human nature is seen as monogamous or nonmonogamous forces us to reconsider our investments in coupling and in disciplinary notions of biological bodies&quot;--Provided by publisher.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Non-monogamous relationships.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Monogamous relationships.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Sexual minorities</marc:subfield>
+            <marc:subfield code="x">Sexual behavior.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Sexual ethics.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Non-monogamie.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0347162</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Monogamie.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0460566</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Minorités sexuelles</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0427879</marc:subfield>
+            <marc:subfield code="x">Sexualité.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0379013</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Morale sexuelle.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0002493</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Monogamous relationships</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01737818</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Non-monogamous relationships</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01038560</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Sexual ethics</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01114835</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Monogamie</marc:subfield>
+            <marc:subfield code="2">gnd</marc:subfield>
+            <marc:subfield code="0">(DE-588)4170463-0</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Sexuelle Sozialisation</marc:subfield>
+            <marc:subfield code="2">gnd</marc:subfield>
+            <marc:subfield code="0">(DE-588)4181119-7</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Generatives Verhalten</marc:subfield>
+            <marc:subfield code="2">gnd</marc:subfield>
+            <marc:subfield code="0">(DE-588)4020118-1</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Sozialwissenschaften</marc:subfield>
+            <marc:subfield code="2">gnd</marc:subfield>
+            <marc:subfield code="0">(DE-588)4055916-6</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Non-monogamy.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0001659</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Relationship orientation.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0001636</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Monogamy.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0001019</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Sexual relationships.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0001302</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Partner preference.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0001081</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Sexual minorities.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0001297</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Sexual practices.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0001299</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Polyamory.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0001123</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="758" ind1=" " ind2=" ">
+            <marc:subfield code="i">has work:</marc:subfield>
+            <marc:subfield code="a">Undoing monogamy (Text)</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PCFRPjFtMkdbHR3DQj6pPFC</marc:subfield>
+            <marc:subfield code="4">https://id.oclc.org/worldcat/ontology/hasWork</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="776" ind1="0" ind2="8">
+            <marc:subfield code="i">Online version:</marc:subfield>
+            <marc:subfield code="a">Willey, Angela, 1978-</marc:subfield>
+            <marc:subfield code="t">Undoing monogamy.</marc:subfield>
+            <marc:subfield code="d">Durham : Duke University Press, [2016]</marc:subfield>
+            <marc:subfield code="z">9780822374213</marc:subfield>
+            <marc:subfield code="w">(OCoLC)945006014</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">Brodart</marc:subfield>
+            <marc:subfield code="b">BROD</marc:subfield>
+            <marc:subfield code="n">113426518</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">Baker and Taylor</marc:subfield>
+            <marc:subfield code="b">BTCP</marc:subfield>
+            <marc:subfield code="n">BK0017478919</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">YBP Library Services</marc:subfield>
+            <marc:subfield code="b">YANK</marc:subfield>
+            <marc:subfield code="n">12544646</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">YBP Library Services</marc:subfield>
+            <marc:subfield code="b">YANK</marc:subfield>
+            <marc:subfield code="n">12544647</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="029" ind1="1" ind2=" ">
+            <marc:subfield code="a">CHSLU</marc:subfield>
+            <marc:subfield code="b">001241522</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="029" ind1="1" ind2=" ">
+            <marc:subfield code="a">CHVBK</marc:subfield>
+            <marc:subfield code="b">363146172</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="029" ind1="1" ind2=" ">
+            <marc:subfield code="a">GBVCP</marc:subfield>
+            <marc:subfield code="b">840761937</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="029" ind1="1" ind2=" ">
+            <marc:subfield code="a">AU@</marc:subfield>
+            <marc:subfield code="b">000057874059</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="029" ind1="1" ind2=" ">
+            <marc:subfield code="a">UKMGB</marc:subfield>
+            <marc:subfield code="b">017856226</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>02975cam a2200685 i 4500</marc:leader>
+        <marc:controlfield tag="001">1296117130</marc:controlfield>
+        <marc:controlfield tag="005">20240426182120.8</marc:controlfield>
+        <marc:controlfield tag="008">220926s2022    nyua   j      000 0 eng d</marc:controlfield>
+        <marc:datafield tag="010" ind1=" " ind2=" ">
+            <marc:subfield code="a">  2022289436</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">YDX</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="e">rda</marc:subfield>
+            <marc:subfield code="c">DLC</marc:subfield>
+            <marc:subfield code="d">BDX</marc:subfield>
+            <marc:subfield code="d">UKMGB</marc:subfield>
+            <marc:subfield code="d">OPW</marc:subfield>
+            <marc:subfield code="d">JSZ</marc:subfield>
+            <marc:subfield code="d">OCLCF</marc:subfield>
+            <marc:subfield code="d">OQX</marc:subfield>
+            <marc:subfield code="d">TOH</marc:subfield>
+            <marc:subfield code="d">UAP</marc:subfield>
+            <marc:subfield code="d">YEQ</marc:subfield>
+            <marc:subfield code="d">FAU</marc:subfield>
+            <marc:subfield code="d">IUL</marc:subfield>
+            <marc:subfield code="d">BKL</marc:subfield>
+            <marc:subfield code="d">SFU</marc:subfield>
+            <marc:subfield code="d">TAW</marc:subfield>
+            <marc:subfield code="d">YDX</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="015" ind1=" " ind2=" ">
+            <marc:subfield code="a">GBC258397</marc:subfield>
+            <marc:subfield code="2">bnb</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="016" ind1="7" ind2=" ">
+            <marc:subfield code="a">020543132</marc:subfield>
+            <marc:subfield code="2">Uk</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="019" ind1=" " ind2=" ">
+            <marc:subfield code="a">1295807005</marc:subfield>
+            <marc:subfield code="a">1296086159</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9780744063172</marc:subfield>
+            <marc:subfield code="q">(hardcover)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">0744063175</marc:subfield>
+            <marc:subfield code="q">(hardcover)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9780241572542</marc:subfield>
+            <marc:subfield code="q">(hardback)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">0241572541</marc:subfield>
+            <marc:subfield code="q">(hardback)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="z">9780241596975 (ebook)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="042" ind1=" " ind2=" ">
+            <marc:subfield code="a">lccopycat</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="050" ind1="0" ind2="0">
+            <marc:subfield code="a">HQ73.2</marc:subfield>
+            <marc:subfield code="b">.B36 2022</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="082" ind1="0" ind2="0">
+            <marc:subfield code="a">306.76/6</marc:subfield>
+            <marc:subfield code="2">23/eng/20230621</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="049" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAUW</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Barnes, Elly,</marc:subfield>
+            <marc:subfield code="d">1971-</marc:subfield>
+            <marc:subfield code="e">author.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">ABC pride /</marc:subfield>
+            <marc:subfield code="c">written by Dr Elly Barnes MBE and Louie Stowell ; illustrations by Amy Phelps.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="250" ind1=" " ind2=" ">
+            <marc:subfield code="a">First American edition.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">New York, NY :</marc:subfield>
+            <marc:subfield code="b">DK Publishing,</marc:subfield>
+            <marc:subfield code="c">2022.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 volume (unpaged) :</marc:subfield>
+            <marc:subfield code="b">color illustrations ;</marc:subfield>
+            <marc:subfield code="c">25 cm</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">still image</marc:subfield>
+            <marc:subfield code="b">sti</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">unmediated</marc:subfield>
+            <marc:subfield code="b">n</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">volume</marc:subfield>
+            <marc:subfield code="b">nc</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="385" ind1=" " ind2=" ">
+            <marc:subfield code="a">Children</marc:subfield>
+            <marc:subfield code="2">lcdgt</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="520" ind1=" " ind2=" ">
+            <marc:subfield code="a">ABC Pride introduces little readers to the alphabet through the colorful world of Pride. Children can discover letters and words while also learning more about the LGBTQIA+ community and how to be inclusive.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Sexual minorities</marc:subfield>
+            <marc:subfield code="v">Juvenile literature.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Sexual minority community</marc:subfield>
+            <marc:subfield code="v">Juvenile literature.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Gay pride celebrations</marc:subfield>
+            <marc:subfield code="v">Juvenile literature.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Alphabet books</marc:subfield>
+            <marc:subfield code="v">Juvenile literature.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="1">
+            <marc:subfield code="a">LGBTQ+ people.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="1">
+            <marc:subfield code="a">Gay pride celebrations.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="1">
+            <marc:subfield code="a">Alphabet.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Communautés de minorités sexuelles</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)000347580</marc:subfield>
+            <marc:subfield code="v">Ouvrages pour la jeunesse.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0377026</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Célébrations de la fierté gaie</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)000301477</marc:subfield>
+            <marc:subfield code="v">Ouvrages pour la jeunesse.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0377026</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Abécédaires.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0090939</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">JUVENILE FICTION / Concepts / Alphabet.</marc:subfield>
+            <marc:subfield code="2">bisacsh</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">JUVENILE FICTION / LGBT.</marc:subfield>
+            <marc:subfield code="2">bisacsh</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">LGBTQ+ communities.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0000297</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Gay pride.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0000522</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Inclusivity.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0002291</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="0">
+            <marc:subfield code="a">Picture books for children.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">alphabet books.</marc:subfield>
+            <marc:subfield code="2">aat</marc:subfield>
+            <marc:subfield code="0">(CStmoGRI)aatgf300202510</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Picture books.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Alphabet books.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Abécédaires.</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)RVMGF-000313209</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Stowell, Louie,</marc:subfield>
+            <marc:subfield code="e">author.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Phelps, Amy,</marc:subfield>
+            <marc:subfield code="e">illustrator.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="776" ind1="0" ind2="8">
+            <marc:subfield code="i">ebook version :</marc:subfield>
+            <marc:subfield code="z">9780241596975</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">YBP Library Services</marc:subfield>
+            <marc:subfield code="b">YANK</marc:subfield>
+            <marc:subfield code="n">17819685</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">Brodart</marc:subfield>
+            <marc:subfield code="b">BROD</marc:subfield>
+            <marc:subfield code="n">131894382</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="029" ind1="1" ind2=" ">
+            <marc:subfield code="a">AU@</marc:subfield>
+            <marc:subfield code="b">000072301240</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="029" ind1="1" ind2=" ">
+            <marc:subfield code="a">UKMGB</marc:subfield>
+            <marc:subfield code="b">020543132</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>04178cam a2200589 i 4500</marc:leader>
+        <marc:controlfield tag="001">1349350316</marc:controlfield>
+        <marc:controlfield tag="005">20240717214053.9</marc:controlfield>
+        <marc:controlfield tag="008">221031s2014    mdua    ob   f000 0 eng c</marc:controlfield>
+        <marc:controlfield tag="006">m     o  d f      </marc:controlfield>
+        <marc:controlfield tag="007">cr ||||||||||</marc:controlfield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">GPO</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="e">rda</marc:subfield>
+            <marc:subfield code="e">pn</marc:subfield>
+            <marc:subfield code="c">GPO</marc:subfield>
+            <marc:subfield code="d">OCLCF</marc:subfield>
+            <marc:subfield code="d">OSO</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCL</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="042" ind1=" " ind2=" ">
+            <marc:subfield code="a">pcc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="043" ind1=" " ind2=" ">
+            <marc:subfield code="a">n-us---</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="074" ind1=" " ind2=" ">
+            <marc:subfield code="a">0497-D-01 (online)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="086" ind1="0" ind2=" ">
+            <marc:subfield code="a">HE 20.402:AF 2</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="049" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAUW</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">Affordable Care Act enrollment assistance for LGBT communities :</marc:subfield>
+            <marc:subfield code="b">a resource for behavioral health providers.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="246" ind1="1" ind2="7">
+            <marc:subfield code="a">ACA enrollment assistance for LGBT communities</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="246" ind1="3" ind2=" ">
+            <marc:subfield code="a">Affordable Care Act enrollment assistance for lesbian, gay, bisexual, and transgender communities</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="246" ind1="3" ind2="0">
+            <marc:subfield code="a">Resource for behavioral health providers</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">[Rockville, Maryland] :</marc:subfield>
+            <marc:subfield code="b">Substance Abuse and Mental Health Services Administration,</marc:subfield>
+            <marc:subfield code="c">2014.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 online resource (19 pages) :</marc:subfield>
+            <marc:subfield code="b">illustrations</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer</marc:subfield>
+            <marc:subfield code="b">c</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">online resource</marc:subfield>
+            <marc:subfield code="b">cr</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="g">monochrome</marc:subfield>
+            <marc:subfield code="2">rdacc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="g">black and white</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="g">polychrome</marc:subfield>
+            <marc:subfield code="2">rdacc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="g">color</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="p">illustration</marc:subfield>
+            <marc:subfield code="2">rdaill</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="385" ind1=" " ind2=" ">
+            <marc:subfield code="a">Mental health personnel</marc:subfield>
+            <marc:subfield code="2">lcsh</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="588" ind1=" " ind2=" ">
+            <marc:subfield code="a">Description based on online resource, PDF version; title from cover (SAMHSA, viewed October 26, 2022).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">&quot;First printed in 2014&quot;--Back cover.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">&quot;PEP14-LGBTACAENROLL&quot;--Back cover.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="504" ind1=" " ind2=" ">
+            <marc:subfield code="a">Includes bibliographical references.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="520" ind1=" " ind2=" ">
+            <marc:subfield code="a">&quot;This toolkit is designed to help behavioral health providers assist lesbian, gay, bisexual, and transgender (LGBT) people enroll in health coverage. Many LGBT people in the United States lack health coverage, and therefore often lack access to behavioral health services and could benefit from enrollment support. They may be unaware of new health coverage options under the Affordable Care Act that could affect their health outcomes. Behavioral health providers can promote enrollment by educating patients about the law and directing them to appropriate resources for further assistance. The Toolkit has three parts. Part 1 is a briefing document that provides background information on behavioral health issues affecting LGBT communities. It summarizes research on barriers that LGBT individuals may face when seeking health coverage. Topics include the Affordable Care Act, responding to enrollment concerns, choosing an appropriate health plan, and finding providers who are sensitive to LGBT needs. It concludes with resources, most of them online, that provide additional enrollment support. Part 2 is a slide deck that summarizes main points from the briefing document. Part 3 is a Question and Answer brochure that health care practitioners can provide to LGBT patients&quot;--Introduction.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="610" ind1="1" ind2="0">
+            <marc:subfield code="a">United States.</marc:subfield>
+            <marc:subfield code="t">Patient Protection and Affordable Care Act.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Sexual minorities</marc:subfield>
+            <marc:subfield code="x">Mental health services</marc:subfield>
+            <marc:subfield code="z">United States.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Health insurance</marc:subfield>
+            <marc:subfield code="x">Law and legislation</marc:subfield>
+            <marc:subfield code="z">United States.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Mental health services</marc:subfield>
+            <marc:subfield code="z">United States.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Minorités sexuelles</marc:subfield>
+            <marc:subfield code="z">États-Unis.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)000336571</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="630" ind1="0" ind2="7">
+            <marc:subfield code="a">Patient Protection and Affordable Care Act (United States)</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01916081</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Health insurance</marc:subfield>
+            <marc:subfield code="x">Law and legislation</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01715845</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Mental health personnel</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01016457</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Sexual minorities</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01202158</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="7">
+            <marc:subfield code="a">United States</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01204155</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Health care for LGBTQ+ people.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0000614</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Mental health care for LGBTQ+ people.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0001012</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">LGBTQ+ people.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0000915</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="710" ind1="1" ind2=" ">
+            <marc:subfield code="a">United States.</marc:subfield>
+            <marc:subfield code="b">Substance Abuse and Mental Health Services Administration,</marc:subfield>
+            <marc:subfield code="e">issuing body.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="u">https://purl.fdlp.gov/GPO/gpo188026</marc:subfield>
+            <marc:subfield code="7">0</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2=" ">
+            <marc:subfield code="z">Address at time of PURL creation</marc:subfield>
+            <marc:subfield code="u">https://store.samhsa.gov/sites/default/files/d7/priv/pep14-lgbtacaenrolla.pdf</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>07285cam a2201129 i 4500</marc:leader>
+        <marc:controlfield tag="001">989789790</marc:controlfield>
+        <marc:controlfield tag="005">20240717215753.9</marc:controlfield>
+        <marc:controlfield tag="008">170606s2017    bcca    ob    000 0 eng  </marc:controlfield>
+        <marc:controlfield tag="006">m     o  d        </marc:controlfield>
+        <marc:controlfield tag="007">cr un|||||||||</marc:controlfield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">NLC</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="e">rda</marc:subfield>
+            <marc:subfield code="e">pn</marc:subfield>
+            <marc:subfield code="c">NLC</marc:subfield>
+            <marc:subfield code="d">OCLCF</marc:subfield>
+            <marc:subfield code="d">N$T</marc:subfield>
+            <marc:subfield code="d">IDEBK</marc:subfield>
+            <marc:subfield code="d">EBLCP</marc:subfield>
+            <marc:subfield code="d">UAB</marc:subfield>
+            <marc:subfield code="d">YDX</marc:subfield>
+            <marc:subfield code="d">CNCGM</marc:subfield>
+            <marc:subfield code="d">IDB</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+            <marc:subfield code="d">CELBN</marc:subfield>
+            <marc:subfield code="d">CEF</marc:subfield>
+            <marc:subfield code="d">NLC</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">RRP</marc:subfield>
+            <marc:subfield code="d">OTZ</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OSU</marc:subfield>
+            <marc:subfield code="d">TKN</marc:subfield>
+            <marc:subfield code="d">CNTRU</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">SFB</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCL</marc:subfield>
+            <marc:subfield code="d">OCLCE</marc:subfield>
+            <marc:subfield code="d">ORU</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="016" ind1=" " ind2=" ">
+            <marc:subfield code="a">(AMICUS)000045225142</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="016" ind1=" " ind2=" ">
+            <marc:subfield code="z">20179036211 (print)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="019" ind1=" " ind2=" ">
+            <marc:subfield code="a">1162343101</marc:subfield>
+            <marc:subfield code="a">1417739830</marc:subfield>
+            <marc:subfield code="a">1420762393</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9780774890229</marc:subfield>
+            <marc:subfield code="q">(PDF)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9780774890236</marc:subfield>
+            <marc:subfield code="q">(EPUB)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9780774890243</marc:subfield>
+            <marc:subfield code="q">(Kindle)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">0774890223</marc:subfield>
+            <marc:subfield code="q">(electronic bk.)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">0774890231</marc:subfield>
+            <marc:subfield code="q">(electronic bk.)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">077489024X</marc:subfield>
+            <marc:subfield code="q">(electronic bk.)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="z">9780774890205</marc:subfield>
+            <marc:subfield code="q">(hardcover)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="z">0774890207</marc:subfield>
+            <marc:subfield code="q">(hardcover)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="z">9780774890212</marc:subfield>
+            <marc:subfield code="q">(softcover)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="z">0774890215</marc:subfield>
+            <marc:subfield code="q">(softcover)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="042" ind1=" " ind2=" ">
+            <marc:subfield code="a">dlr</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="043" ind1=" " ind2=" ">
+            <marc:subfield code="a">n-cn---</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="050" ind1=" " ind2="4">
+            <marc:subfield code="a">LC2576.C3</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="055" ind1=" " ind2="0">
+            <marc:subfield code="a">LC2576 C3</marc:subfield>
+            <marc:subfield code="b">S56 2017</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="072" ind1=" " ind2="7">
+            <marc:subfield code="a">EDU</marc:subfield>
+            <marc:subfield code="x">001000</marc:subfield>
+            <marc:subfield code="2">bisacsh</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="072" ind1=" " ind2="7">
+            <marc:subfield code="a">EDU</marc:subfield>
+            <marc:subfield code="x">036000</marc:subfield>
+            <marc:subfield code="2">bisacsh</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="082" ind1="0" ind2="4">
+            <marc:subfield code="a">371.826/60971</marc:subfield>
+            <marc:subfield code="2">23</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="084" ind1=" " ind2=" ">
+            <marc:subfield code="a">cci1icc</marc:subfield>
+            <marc:subfield code="2">lacc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="084" ind1=" " ind2=" ">
+            <marc:subfield code="a">coll13</marc:subfield>
+            <marc:subfield code="2">lacc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="049" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAUW</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Short, Donn,</marc:subfield>
+            <marc:subfield code="e">author.</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PCjBdfKBh4HVqrJt6vbQDv3</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Am I safe here? :</marc:subfield>
+            <marc:subfield code="b">LGBTQ teens and bullying in schools /</marc:subfield>
+            <marc:subfield code="c">Donn Short.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="263" ind1=" " ind2=" ">
+            <marc:subfield code="a">1710</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">Vancouver ;</marc:subfield>
+            <marc:subfield code="a">Toronto :</marc:subfield>
+            <marc:subfield code="b">On Point Press, a UBC Press imprint,</marc:subfield>
+            <marc:subfield code="c">[2017]</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="4">
+            <marc:subfield code="c">©2017</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 online resource (xix, 140 pages) :</marc:subfield>
+            <marc:subfield code="b">illustrations</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer</marc:subfield>
+            <marc:subfield code="b">c</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">online resource</marc:subfield>
+            <marc:subfield code="b">cr</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="504" ind1=" " ind2=" ">
+            <marc:subfield code="a">Includes bibliographical references.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="505" ind1="0" ind2=" ">
+            <marc:subfield code="a">Changing the culture -- How safe is my school? -- Homophobia, heterosexism, and heteronormativity -- Rules to live by, or how to succeed in school without really changing anything -- What now?</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="520" ind1=" " ind2=" ">
+            <marc:subfield code="a">&quot;Am I safe here?&quot; Every day, LGBTQ students ask this question within the school system. This book shines a light on the marginalization and bullying faced by LGBTQ youth, offering a new conceptualization of school safety. Donn Short treats students as the experts on what happens in their schools, giving them a chance to speak for themselves. They identify what it would take to make a school truly safe--insightfully explaining that safety doesn't come merely from security cameras, ID tags, and dress codes, but from a culture that values equity and social justice. Revealing the reality of going to school in an environment that implicitly (and sometimes explicitly) endorses homophobia, heterosexism, and heteronormativity, the students share their ideas about how to change school culture. They envision a future in which LGBTQ youth are an expected, respected, and celebrated part of school life. Am I Safe Here? explores what needs to be done to create equitable and inclusive schools--but it is not strictly about formal professional development plans. Rather, it draws from the informal, spontaneous, timely, and relevant words of gay, lesbian, bisexual, and transgendered students to show that nothing less than a total culture change is needed.&quot;--</marc:subfield>
+            <marc:subfield code="c">Provided by publisher.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="588" ind1="0" ind2=" ">
+            <marc:subfield code="a">Print version record.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="506" ind1=" " ind2=" ">
+            <marc:subfield code="3">Use copy</marc:subfield>
+            <marc:subfield code="f">Restrictions unspecified</marc:subfield>
+            <marc:subfield code="2">star</marc:subfield>
+            <marc:subfield code="5">MiAaHDL</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="533" ind1=" " ind2=" ">
+            <marc:subfield code="a">Electronic reproduction.</marc:subfield>
+            <marc:subfield code="b">[Place of publication not identified]:</marc:subfield>
+            <marc:subfield code="c">HathiTrust Digital Library.</marc:subfield>
+            <marc:subfield code="d">2024.</marc:subfield>
+            <marc:subfield code="5">MiAaHDL</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="538" ind1=" " ind2=" ">
+            <marc:subfield code="a">Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002.</marc:subfield>
+            <marc:subfield code="u">http://purl.oclc.org/DLF/benchrepro0212</marc:subfield>
+            <marc:subfield code="5">MiAaHDL</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="583" ind1="1" ind2=" ">
+            <marc:subfield code="a">digitized</marc:subfield>
+            <marc:subfield code="c">2024.</marc:subfield>
+            <marc:subfield code="h">HathiTrust Digital Library</marc:subfield>
+            <marc:subfield code="l">committed to preserve</marc:subfield>
+            <marc:subfield code="2">pda</marc:subfield>
+            <marc:subfield code="5">MiAaHDL</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Lesbian students</marc:subfield>
+            <marc:subfield code="z">Canada.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Gay students</marc:subfield>
+            <marc:subfield code="z">Canada.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Bisexual students</marc:subfield>
+            <marc:subfield code="z">Canada.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Transgender youth</marc:subfield>
+            <marc:subfield code="z">Canada.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Sexual minorities</marc:subfield>
+            <marc:subfield code="z">Canada.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Teenagers</marc:subfield>
+            <marc:subfield code="z">Canada.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Bullying in schools</marc:subfield>
+            <marc:subfield code="z">Canada.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Jeunes transgenres</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)000265325</marc:subfield>
+            <marc:subfield code="z">Canada.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0407174</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Minorités sexuelles</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0427879</marc:subfield>
+            <marc:subfield code="z">Canada.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0407174</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Adolescents</marc:subfield>
+            <marc:subfield code="z">Canada.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0196401</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Intimidation dans les écoles</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0369221</marc:subfield>
+            <marc:subfield code="z">Canada.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0407174</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">EDUCATION</marc:subfield>
+            <marc:subfield code="x">Administration</marc:subfield>
+            <marc:subfield code="x">General.</marc:subfield>
+            <marc:subfield code="2">bisacsh</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">EDUCATION</marc:subfield>
+            <marc:subfield code="x">Organizations &amp; Institutions.</marc:subfield>
+            <marc:subfield code="2">bisacsh</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Bisexual students</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00833337</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Bullying in schools</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00841563</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Gay students</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00939226</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Lesbian students</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00996503</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Sexual minorities</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01202158</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Teenagers</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01145551</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Transgender youth</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01743062</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="7">
+            <marc:subfield code="a">Canada</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PBJkMHVW4rfVXPrhVP4VwG3</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01204310</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">LGBTQ+ youth.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0001521</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Queer youth.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0001215</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Bullying.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0000228</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Homophobia.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0000646</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Heterosexism.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0000619</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Heteronormativity.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0000620</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">LGBTQ+ victims of bullying.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0001989</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="758" ind1=" " ind2=" ">
+            <marc:subfield code="i">has work:</marc:subfield>
+            <marc:subfield code="a">Am I safe here? (Text)</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PCFwgxvrkWTpVKtHTbpRmHP</marc:subfield>
+            <marc:subfield code="4">https://id.oclc.org/worldcat/ontology/hasWork</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="776" ind1="1" ind2=" ">
+            <marc:subfield code="a">Short, Donn.</marc:subfield>
+            <marc:subfield code="t">Am I safe here?.:</marc:subfield>
+            <marc:subfield code="d">Vancouver ; Toronto : On Point Press, a UBC Press imprint, 2017</marc:subfield>
+            <marc:subfield code="w">(CaOONL)20179036211</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="776" ind1="0" ind2="8">
+            <marc:subfield code="i">Print version:</marc:subfield>
+            <marc:subfield code="a">Short, Donn.</marc:subfield>
+            <marc:subfield code="t">Am I safe here?</marc:subfield>
+            <marc:subfield code="d">Vancouver ; Toronto : On Point Press, a UBC Press imprint, [2017]</marc:subfield>
+            <marc:subfield code="z">9780774890205</marc:subfield>
+            <marc:subfield code="w">(DLC)  2017448093</marc:subfield>
+            <marc:subfield code="w">(OCoLC)989789649</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">desLibris</marc:subfield>
+            <marc:subfield code="u">https://www.deslibris.ca/ID/453888</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">EBSCOhost</marc:subfield>
+            <marc:subfield code="u">https://search.ebscohost.com/login.aspx?direct=true&amp;scope=site&amp;db=nlebk&amp;db=nlabk&amp;AN=1609130</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">MyiLibrary</marc:subfield>
+            <marc:subfield code="u">http://www.myilibrary.com?id=1040120</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">ProQuest Ebook Central</marc:subfield>
+            <marc:subfield code="u">https://public.ebookcentral.proquest.com/choice/publicfullrecord.aspx?p=5086649</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">Scholars Portal</marc:subfield>
+            <marc:subfield code="u">http://books.scholarsportal.info/viewdoc.html?id=/ebooks/ebooks3/upress/2018-01-18/1/9780774890229</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">HathiTrust Digital Library</marc:subfield>
+            <marc:subfield code="u">http://catalog.hathitrust.org/api/volumes/oclc/989789649.html</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">Google</marc:subfield>
+            <marc:subfield code="u">http://books.google.com/books?id=c1uPTxVgW90C</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">Canadian Electronic Library</marc:subfield>
+            <marc:subfield code="b">CELB</marc:subfield>
+            <marc:subfield code="n">453888</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">EBL - Ebook Library</marc:subfield>
+            <marc:subfield code="b">EBLB</marc:subfield>
+            <marc:subfield code="n">EBL5086649</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">EBSCOhost</marc:subfield>
+            <marc:subfield code="b">EBSC</marc:subfield>
+            <marc:subfield code="n">1609130</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">ProQuest MyiLibrary Digital eBook Collection</marc:subfield>
+            <marc:subfield code="b">IDEB</marc:subfield>
+            <marc:subfield code="n">cis38349662</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">YBP Library Services</marc:subfield>
+            <marc:subfield code="b">YANK</marc:subfield>
+            <marc:subfield code="n">14859135</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">YBP Library Services</marc:subfield>
+            <marc:subfield code="b">YANK</marc:subfield>
+            <marc:subfield code="n">14716463</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="029" ind1="0" ind2=" ">
+            <marc:subfield code="a">NLC</marc:subfield>
+            <marc:subfield code="b">000045225142</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="029" ind1="0" ind2=" ">
+            <marc:subfield code="a">NLC</marc:subfield>
+            <marc:subfield code="b">2017903622X</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>05771cam a2200937 i 4500</marc:leader>
+        <marc:controlfield tag="001">989789649</marc:controlfield>
+        <marc:controlfield tag="005">20240713165855.2</marc:controlfield>
+        <marc:controlfield tag="008">170606t20172017bcca     b    000 0 eng  </marc:controlfield>
+        <marc:datafield tag="010" ind1=" " ind2=" ">
+            <marc:subfield code="a">  2017448093</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">NLC</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="e">rda</marc:subfield>
+            <marc:subfield code="c">NLC</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCF</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">CNTCS</marc:subfield>
+            <marc:subfield code="d">IQU</marc:subfield>
+            <marc:subfield code="d">VP@</marc:subfield>
+            <marc:subfield code="d">BTCTA</marc:subfield>
+            <marc:subfield code="d">YDX</marc:subfield>
+            <marc:subfield code="d">DLC</marc:subfield>
+            <marc:subfield code="d">OCLCA</marc:subfield>
+            <marc:subfield code="d">GUA</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">CLU</marc:subfield>
+            <marc:subfield code="d">CNKEY</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">CN5CF</marc:subfield>
+            <marc:subfield code="d">UWO</marc:subfield>
+            <marc:subfield code="d">NLC</marc:subfield>
+            <marc:subfield code="d">BDX</marc:subfield>
+            <marc:subfield code="d">LMR</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">TOH</marc:subfield>
+            <marc:subfield code="d">WTU</marc:subfield>
+            <marc:subfield code="d">KUK</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">NLC</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCL</marc:subfield>
+            <marc:subfield code="d">ORU</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="015" ind1=" " ind2=" ">
+            <marc:subfield code="a">20179036211</marc:subfield>
+            <marc:subfield code="2">can</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="016" ind1=" " ind2=" ">
+            <marc:subfield code="a">(AMICUS)000045225134</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="016" ind1=" " ind2=" ">
+            <marc:subfield code="a">20179036211</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="019" ind1=" " ind2=" ">
+            <marc:subfield code="a">985071427</marc:subfield>
+            <marc:subfield code="a">1008855634</marc:subfield>
+            <marc:subfield code="a">1008895319</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9780774890205</marc:subfield>
+            <marc:subfield code="q">(hardcover)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">0774890207</marc:subfield>
+            <marc:subfield code="q">(hardcover)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9780774890212</marc:subfield>
+            <marc:subfield code="q">(softcover)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">0774890215</marc:subfield>
+            <marc:subfield code="q">(softcover)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="z">9780774890229</marc:subfield>
+            <marc:subfield code="q">(PDF)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="z">9780774890236</marc:subfield>
+            <marc:subfield code="q">(EPUB)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="z">9780774890243</marc:subfield>
+            <marc:subfield code="q">(Kindle)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="042" ind1=" " ind2=" ">
+            <marc:subfield code="a">pcc</marc:subfield>
+            <marc:subfield code="a">lac</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="043" ind1=" " ind2=" ">
+            <marc:subfield code="a">n-cn---</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="050" ind1=" " ind2="4">
+            <marc:subfield code="a">LC2576.C2</marc:subfield>
+            <marc:subfield code="b">S56 2017</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="055" ind1="0" ind2="0">
+            <marc:subfield code="a">LC2576.C3</marc:subfield>
+            <marc:subfield code="b">S56 2017</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="082" ind1="0" ind2="4">
+            <marc:subfield code="a">371.826/60971</marc:subfield>
+            <marc:subfield code="2">23</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="084" ind1=" " ind2=" ">
+            <marc:subfield code="a">cci1icc</marc:subfield>
+            <marc:subfield code="2">lacc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="084" ind1=" " ind2=" ">
+            <marc:subfield code="a">coll13</marc:subfield>
+            <marc:subfield code="2">lacc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="049" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAUW</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Short, Donn,</marc:subfield>
+            <marc:subfield code="e">author.</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PCjBdfKBh4HVqrJt6vbQDv3</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Am I safe here? :</marc:subfield>
+            <marc:subfield code="b">LGBTQ teens and bullying in schools /</marc:subfield>
+            <marc:subfield code="c">Donn Short.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">Vancouver ;</marc:subfield>
+            <marc:subfield code="a">Toronto :</marc:subfield>
+            <marc:subfield code="b">On Point Press, a UBC Press imprint,</marc:subfield>
+            <marc:subfield code="c">[2017]</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="4">
+            <marc:subfield code="c">©2017</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">xix, 140 pages :</marc:subfield>
+            <marc:subfield code="b">illustrations ;</marc:subfield>
+            <marc:subfield code="c">24 cm</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">unmediated</marc:subfield>
+            <marc:subfield code="b">n</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">volume</marc:subfield>
+            <marc:subfield code="b">nc</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="504" ind1=" " ind2=" ">
+            <marc:subfield code="a">Includes bibliographical references.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="505" ind1="0" ind2=" ">
+            <marc:subfield code="a">Changing the culture -- How safe is my school? -- Homophobia, heterosexism, and heteronormativity -- Rules to live by, or, How to succeed in school without really changing anything -- What now?</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="520" ind1=" " ind2=" ">
+            <marc:subfield code="a">&quot;Am I safe here?&quot; Every day, LGBTQ students ask this question within the school system. This book shines a light on the marginalization and bullying faced by LGBTQ youth, offering a new conceptualization of school safety. Donn Short treats students as the experts on what happens in their schools, giving them a chance to speak for themselves. They identify what it would take to make a school truly safe--insightfully explaining that safety doesn't come merely from security cameras, ID tags, and dress codes, but from a culture that values equity and social justice. Revealing the reality of going to school in an environment that implicitly (and sometimes explicitly) endorses homophobia, heterosexism, and heteronormativity, the students share their ideas about how to change school culture. They envision a future in which LGBTQ youth are an expected, respected, and celebrated part of school life. Am I Safe Here? explores what needs to be done to create equitable and inclusive schools--but it is not strictly about formal professional development plans. Rather, it draws from the informal, spontaneous, timely, and relevant words of gay, lesbian, bisexual, and transgendered students to show that nothing less than a total culture change is needed.&quot;--</marc:subfield>
+            <marc:subfield code="c">Provided by publisher.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="530" ind1=" " ind2=" ">
+            <marc:subfield code="a">Issued also in electronic format.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Lesbian students</marc:subfield>
+            <marc:subfield code="z">Canada.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Gay students</marc:subfield>
+            <marc:subfield code="z">Canada.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Bisexual students</marc:subfield>
+            <marc:subfield code="z">Canada.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Transgender youth</marc:subfield>
+            <marc:subfield code="z">Canada.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Sexual minorities</marc:subfield>
+            <marc:subfield code="z">Canada.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Teenagers</marc:subfield>
+            <marc:subfield code="z">Canada.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Bullying in schools</marc:subfield>
+            <marc:subfield code="z">Canada.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Élèves lesbiennes</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0337623</marc:subfield>
+            <marc:subfield code="z">Canada.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0407174</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Élèves homosexuels</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0273907</marc:subfield>
+            <marc:subfield code="z">Canada.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0407174</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Jeunes transgenres</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)000265325</marc:subfield>
+            <marc:subfield code="z">Canada.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0407174</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Minorités sexuelles</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0427879</marc:subfield>
+            <marc:subfield code="z">Canada.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0407174</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Adolescents</marc:subfield>
+            <marc:subfield code="z">Canada.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0196401</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Intimidation dans les écoles</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0369221</marc:subfield>
+            <marc:subfield code="z">Canada.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0407174</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Bisexual students</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00833337</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Bullying in schools</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00841563</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Gay students</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00939226</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Lesbian students</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00996503</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Sexual minorities</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01202158</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Teenagers</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01145551</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Transgender youth</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01743062</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="7">
+            <marc:subfield code="a">Canada</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PBJkMHVW4rfVXPrhVP4VwG3</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01204310</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">LGBTQ+ youth.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0001521</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Queer youth.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0001215</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Bullying.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0000228</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Homophobia.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0000646</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Heterosexism.</marc:subfield>
+            <marc:subfield code="2">homoit https://homosaurus.org/v3/homoit0000619</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Heteronormativity.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0000620</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">LGBTQ+ victims of bullying.</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0001989</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="758" ind1=" " ind2=" ">
+            <marc:subfield code="i">has work:</marc:subfield>
+            <marc:subfield code="a">Am I safe here? (Text)</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PCFwgxvrkWTpVKtHTbpRmHP</marc:subfield>
+            <marc:subfield code="4">https://id.oclc.org/worldcat/ontology/hasWork</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="776" ind1="1" ind2=" ">
+            <marc:subfield code="a">Short, Donn.</marc:subfield>
+            <marc:subfield code="t">Am I safe here?.</marc:subfield>
+            <marc:subfield code="w">(CaOONL)2017903622X</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="776" ind1="0" ind2="8">
+            <marc:subfield code="i">Online version:</marc:subfield>
+            <marc:subfield code="a">Short, Donn.</marc:subfield>
+            <marc:subfield code="t">Am I safe here?</marc:subfield>
+            <marc:subfield code="d">Vancouver ; Toronto : On Point Press, a UBC Press imprint, [2017]</marc:subfield>
+            <marc:subfield code="z">9780774890229</marc:subfield>
+            <marc:subfield code="w">(OCoLC)989789790</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">Brodart</marc:subfield>
+            <marc:subfield code="b">BROD</marc:subfield>
+            <marc:subfield code="n">120593920</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">Brodart</marc:subfield>
+            <marc:subfield code="b">BROD</marc:subfield>
+            <marc:subfield code="n">120593939</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">YBP Library Services</marc:subfield>
+            <marc:subfield code="b">YANK</marc:subfield>
+            <marc:subfield code="n">14578321</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">YBP Library Services</marc:subfield>
+            <marc:subfield code="b">YANK</marc:subfield>
+            <marc:subfield code="n">14578320</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">Baker and Taylor</marc:subfield>
+            <marc:subfield code="b">BTCP</marc:subfield>
+            <marc:subfield code="n">BK0020691152</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="029" ind1="0" ind2=" ">
+            <marc:subfield code="a">NLC</marc:subfield>
+            <marc:subfield code="b">20179036211</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="029" ind1="1" ind2=" ">
+            <marc:subfield code="a">NLC</marc:subfield>
+            <marc:subfield code="b">000045225134</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="029" ind1="1" ind2=" ">
+            <marc:subfield code="a">AU@</marc:subfield>
+            <marc:subfield code="b">000060936723</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="029" ind1="1" ind2=" ">
+            <marc:subfield code="a">AU@</marc:subfield>
+            <marc:subfield code="b">000076160158</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim
+    http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>07298cam a2200613 i 4500</marc:leader>
+        <marc:controlfield tag="001">1400208651</marc:controlfield>
+        <marc:controlfield tag="005">20240717000000.0</marc:controlfield>
+        <marc:controlfield tag="008">230928t20222022waua    obm   000 0 eng c</marc:controlfield>
+        <marc:controlfield tag="006">m     o  d s      </marc:controlfield>
+        <marc:controlfield tag="007">cr ||||||||||</marc:controlfield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAU</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="e">rda</marc:subfield>
+            <marc:subfield code="e">pn</marc:subfield>
+            <marc:subfield code="c">WAU</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCF</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="024" ind1="7" ind2=" ">
+            <marc:subfield code="a">1773/49194</marc:subfield>
+            <marc:subfield code="2">hdl</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="042" ind1=" " ind2=" ">
+            <marc:subfield code="a">pcc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="049" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAUW</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Ramirez Arreola, Maria Elizabeth,</marc:subfield>
+            <marc:subfield code="e">author.</marc:subfield>
+            <marc:subfield code="1">https://orcid.org/0009-0002-6426-7532</marc:subfield>
+            <marc:subfield code="1">http://www.wikidata.org/entity/Q127550946</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Quieren mi labor más no mi intelecto :</marc:subfield>
+            <marc:subfield code="b">they want my hands not my brains : mapping the gendered and racialized journeys of adult English learner immigrant Latin American women in the US higher education system /</marc:subfield>
+            <marc:subfield code="c">Maria Elizabeth Ramirez Arreola.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">[Seattle] :</marc:subfield>
+            <marc:subfield code="b">[University of Washington Libraries],</marc:subfield>
+            <marc:subfield code="c">[2022]</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="4">
+            <marc:subfield code="c">©2022</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 online resource (124 pages) :</marc:subfield>
+            <marc:subfield code="b">color illustrations</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer</marc:subfield>
+            <marc:subfield code="b">c</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">online resource</marc:subfield>
+            <marc:subfield code="b">cr</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="347" ind1=" " ind2=" ">
+            <marc:subfield code="a">text file</marc:subfield>
+            <marc:subfield code="2">rdaft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="347" ind1=" " ind2=" ">
+            <marc:subfield code="b">PDF</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="502" ind1=" " ind2=" ">
+            <marc:subfield code="b">Ph. D.</marc:subfield>
+            <marc:subfield code="c">University of Washington</marc:subfield>
+            <marc:subfield code="d">2022</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="504" ind1=" " ind2=" ">
+            <marc:subfield code="a">Includes bibliographical references (pages 107-116).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="506" ind1="1" ind2=" ">
+            <marc:subfield code="a">Restrict to UW for 2 years -- then make Open Access</marc:subfield>
+            <marc:subfield code="g">20240912</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="520" ind1="3" ind2=" ">
+            <marc:subfield code="a">This qualitative study examines the gendered and racialized educational experiences of eight nontraditional, adult English learners (EL), Latin American, and immigrant women. The study focuses on those that after migrating as in adults age to the United States, have eventually continued their higher educational attainment, disrupting the conventional narratives about adult immigrants and their lack of aspirations in higher education attainment. Such experiences have been largely excluded from U.S academic literature, as they are a minority within a minority. Nontraditional, adult EL, Latin American, immigrant students entering the United States higher education system are navigating college access in a system new to them as their access path is very different from international students or Latinx peers who attended the K-12 education system. Factors such as age, the digital divide, and typically being monolingual for the first 20-30 years of their lives increase exponentially, often becoming the first barriers on their path to higher education. They are navigating a new education system while facing immigration challenges such as family and financial responsibilities in their country of origin and receptor country. The data collected from eight qualitative testimonio interviews sought to capture information about their access path to higher education and the path access that they followed, the gendered and racialized experiences and their impact on the participants' education, and lastly, to identify how the participants successfully navigated the United States higher education system at the undergraduate and graduate level as they were either recently graduated or currently enrolled in universities and community colleges. The study was intentional in utilizing testimonio as a method of research, a qualitative approach that gave participants a space to share their individual experiences and to collectively reclaim their invisibilized academic journeys as they resonated with one another. Conceptualized through a Latino Critical Race Theory and intersectionality lens framework provided an interdisciplinary perspective to examine how identity markers such as race, class, gender, national origin, phenotype, etc., and complex structures of oppression such as institutionalized racism and white privilege impacted the educational experiences of nontraditional, adult EL, Latin American immigrant, women. Migration studies theory illuminated allowed me to better understand the different contexts for migration from countries in Latin America, and finally, grounded in Chicana feminism allowed me to center the women's experiences and draw from their experiences as a source of knowledge (Delgado Bernal, 1998). The study provides recommendations for universities administrative &amp; faculty personal in practice &amp; policy, advocating for different ways to positively create educational access for nontraditional, adult English learner students. To perform a thorough analysis of their journeys, the following questions guided the study: a) What were the educational paths that adult Latin American immigrant women followed to access and succeed in the U.S higher education system? b) How do their testimonios reveal the gendered and racialized journey to college attainment? And c) How can an intersectional discussion of their academic journey depict the privileges and barriers that came into place for immigrant Latin American women to defy spaces where they have only been seen as laborers? These questions were informed by my own journey as an adult immigrant woman from Mexico who grew up monolingual and acquired English as a second language to enroll and obtain a college education in the U.S. I am also informed by the minimal literature on the subject and the historical context of the practices of exclusion from higher education institutions and how those continue to affect the experiences of underrepresented students in the United States (Long 2016). My testimonio, joined by eight others of nontraditional adult English learners, Latin American immigrant women, are critically analyzed to shine a light on the intersectional journeys of accessing and surviving in the U.S. higher education system, a system. that, according to the data produced in this study, severely ignores this small but growing population of adult English learners seeking access to postsecondary education (National Center for Education Statistics, 2017).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="588" ind1="0" ind2=" ">
+            <marc:subfield code="a">Online resource; title from PDF title page (ResearchWorks Archive, viewed September 28, 2023).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Hispanic American women college students</marc:subfield>
+            <marc:subfield code="z">United States</marc:subfield>
+            <marc:subfield code="x">Social conditions.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Hispanic American women</marc:subfield>
+            <marc:subfield code="x">Education (Higher)</marc:subfield>
+            <marc:subfield code="z">United States.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Immigrant students</marc:subfield>
+            <marc:subfield code="z">United States</marc:subfield>
+            <marc:subfield code="x">Social conditions.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Women immigrants</marc:subfield>
+            <marc:subfield code="x">Education (Higher)</marc:subfield>
+            <marc:subfield code="z">United States.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">English language</marc:subfield>
+            <marc:subfield code="x">Study and teaching (Continuing education)</marc:subfield>
+            <marc:subfield code="x">Spanish speakers.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Feminism and higher education</marc:subfield>
+            <marc:subfield code="z">United States.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Sexism in higher education</marc:subfield>
+            <marc:subfield code="z">United States.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Racism in higher education</marc:subfield>
+            <marc:subfield code="z">United States.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Critical race theory.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Adult English learner (EL)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Gender Studies</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Intersectionality</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Latino Studies</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Nontraditional Student</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Testimonio</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Education</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Ethnic studies</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Gender, women, and sexuality</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="4">
+            <marc:subfield code="a">Theses</marc:subfield>
+            <marc:subfield code="x">Gender, women, and sexuality.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">dissertations.</marc:subfield>
+            <marc:subfield code="2">aat</marc:subfield>
+            <marc:subfield code="0">(CStmoGRI)aatgf300028029</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Academic theses</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01726453</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Academic theses.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Thèses et écrits académiques.</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)RVMGF-000001173</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Ginorio, Angela B.,</marc:subfield>
+            <marc:subfield code="e">degree supervisor.</marc:subfield>
+            <marc:subfield code="1">http://www.wikidata.org/entity/Q107956183</marc:subfield>
+            <marc:subfield code="1">http://viaf.org/viaf/70643896</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="u">http://hdl.handle.net/1773/49194</marc:subfield>
+            <marc:subfield code="7">1</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>
