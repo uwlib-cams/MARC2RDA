@@ -89,7 +89,7 @@
       <fake:marcfield>F340 ## $3 workbook $l spiral binding $2 rdatb</fake:marcfield>
       <rdam:P30309 rdf:resource="http://rdaregistry.info/termList/RDATypeOfBinding/1003"/>
       <rdamd:P30137>Has type of binding http://rdaregistry.info/termList/RDATypeOfBinding/1003 applies to workbook</rdamd:P30137>
-      <fake:marcfield>F340 ## $3 part $l Coptic bindings $2 aat</fake:marcfield>
+      <fake:marcfield>F340 ## $6 880-01 $3 part $l Coptic bindings $2 aat</fake:marcfield>
       <rdam:P30309 rdf:resource="http://marc2rda.edu/fake/concept/aat/copticbindings"/>
       <rdamd:P30137>Has type of binding http://marc2rda.edu/fake/concept/aat/copticbindings applies to part</rdamd:P30137>
       <fake:marcfield>F340 ## $m folio $2 rdabf</fake:marcfield>
@@ -102,6 +102,9 @@
       <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/>
       <fake:marcfield>F340 ## $q high reduction $2 rdarr</fake:marcfield>
       <rdam:P30263 rdf:resource="http://rdaregistry.info/termList/RDAReductionRatio/1003"/>
+      <fake:marcfield>F880 ## $6 340 $a 醋酸纤维素 $2 rdamat</fake:marcfield>
+      <rdam:P30304 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1001"/>
+      <fake:marcfield>F880 ## $6 340-01 $3 part $l linked 880 $2 aat</fake:marcfield>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rda/vinyl">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -117,5 +120,6 @@
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Coptic bindings</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
+      <skos:prefLabel>linked 880</skos:prefLabel>
    </rdf:Description>
 </rdf:RDF>

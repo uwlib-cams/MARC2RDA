@@ -97,6 +97,7 @@
             <marc:subfield code="2">rdatb</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="6">880-01</marc:subfield>
             <marc:subfield code="3">part</marc:subfield>
             <marc:subfield code="l">Coptic bindings</marc:subfield>
             <marc:subfield code="2">aat</marc:subfield>
@@ -119,6 +120,19 @@
         <marc:datafield tag="340" ind1=" " ind2=" ">
             <marc:subfield code="q">high reduction</marc:subfield>
             <marc:subfield code="2">rdarr</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">340</marc:subfield>
+            <marc:subfield code="a">醋酸纤维素</marc:subfield>
+            <marc:subfield code="2">rdamat</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">340-01</marc:subfield>
+            <marc:subfield code="3">part</marc:subfield>
+            <marc:subfield code="l">linked 880</marc:subfield>
+            <marc:subfield code="2">aat</marc:subfield>
         </marc:datafield>
     </marc:record>
 </marc:collection>
