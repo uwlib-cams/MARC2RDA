@@ -106,7 +106,7 @@
             </xsl:when>
             <xsl:otherwise>
                 <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
-                    <rdamo:P30296 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
+                    <rdamo:P30004 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
                 </xsl:for-each>
             </xsl:otherwise>
         </xsl:choose>
