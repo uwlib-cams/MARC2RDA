@@ -7,7 +7,7 @@
         <marc:controlfield tag="001">340-test1</marc:controlfield>
         
         <!-- multiple subfields -->
-        <marc:datafield tag="340" ind1=" " ind2=" ">
+<!--        <marc:datafield tag="340" ind1=" " ind2=" ">
             <marc:subfield code="a">vinyl</marc:subfield>
             <marc:subfield code="b">12 in.</marc:subfield>
             <marc:subfield code="2">rda</marc:subfield>
@@ -23,10 +23,10 @@
             <marc:subfield code="a">canvas</marc:subfield>
             <marc:subfield code="b">20 cm. folded to 10 x 12 cm.</marc:subfield>
             <marc:subfield code="3">part</marc:subfield>
-        </marc:datafield>
+        </marc:datafield>-->
         
         <!-- literal subfields -->
-        <marc:datafield tag="340" ind1=" " ind2=" ">
+        <!--<marc:datafield tag="340" ind1=" " ind2=" ">
             <marc:subfield code="f">24:1</marc:subfield>
             <marc:subfield code="3">part</marc:subfield>
         </marc:datafield>
@@ -40,10 +40,10 @@
         </marc:datafield>
         <marc:datafield tag="340" ind1=" " ind2=" ">
             <marc:subfield code="a">canvas</marc:subfield>
-        </marc:datafield>
+        </marc:datafield>-->
         
         <!-- testing $0, $1, and $2 with a -->
-        <marc:datafield tag="340" ind1=" " ind2=" ">
+        <!--<marc:datafield tag="340" ind1=" " ind2=" ">
             <marc:subfield code="a">canvas</marc:subfield>
             <marc:subfield code="2">rdamat</marc:subfield>
         </marc:datafield>
@@ -63,15 +63,15 @@
             <marc:subfield code="a">canvas</marc:subfield>
             <marc:subfield code="2">othersource</marc:subfield>
         </marc:datafield>
-        
+        -->
         <!-- 3 -->
-        <marc:datafield tag="340" ind1=" " ind2=" ">
+        <!--<marc:datafield tag="340" ind1=" " ind2=" ">
             <marc:subfield code="3">self-portrait</marc:subfield>
             <marc:subfield code="c">colored inks</marc:subfield>
-        </marc:datafield>
+        </marc:datafield>-->
         
         <!-- each subfield -->
-        <marc:datafield tag="340" ind1=" " ind2=" ">
+<!--        <marc:datafield tag="340" ind1=" " ind2=" ">
             <marc:subfield code="d">stamping</marc:subfield>
             <marc:subfield code="2">rdapm</marc:subfield>
         </marc:datafield>
@@ -133,6 +133,20 @@
             <marc:subfield code="3">part</marc:subfield>
             <marc:subfield code="l">linked 880</marc:subfield>
             <marc:subfield code="2">aat</marc:subfield>
+        </marc:datafield>-->
+        
+        <!-- test 0s and 1s when property cannot be determined -->
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="a">wove paper</marc:subfield>
+            <marc:subfield code="c">ink</marc:subfield>
+            <marc:subfield code="0">http://rdaregistry.info/termList/RDAMaterial/1017</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="a">vinyl</marc:subfield>
+            <marc:subfield code="b">12 in.</marc:subfield>
+            <marc:subfield code="2">rda</marc:subfield>
+            <marc:subfield code="1">http://rdaregistry.info/termList/RDAMaterial/1045</marc:subfield>
         </marc:datafield>
     </marc:record>
 </marc:collection>

@@ -82,7 +82,69 @@
         mode="man">
         <xsl:call-template name="getmarc"/>
         <xsl:call-template name="F340-b_f_h_i"/>
-        <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1"/>
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd']
+            | marc:subfield[@code = 'e'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'j']
+            | marc:subfield[@code = 'k'] | marc:subfield[@code = 'l'] | marc:subfield[@code = 'm']
+            | marc:subfield[@code = 'n'] | marc:subfield[@code = 'o'] | marc:subfield[@code = 'p']
+            | marc:subfield[@code = 'q']">
+            <xsl:choose>
+                <xsl:when test="@code = 'd'">
+                    <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1">
+                        <xsl:with-param name="propertyNum">P30187</xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="@code = 'g'">
+                    <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1">
+                        <xsl:with-param name="propertyNum">P30456</xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="@code = 'j'">
+                    <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1">
+                        <xsl:with-param name="propertyNum">P30191</xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="@code = 'k'">
+                    <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1">
+                        <xsl:with-param name="propertyNum">P30155</xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="@code = 'l'">
+                    <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1">
+                        <xsl:with-param name="propertyNum">P30309</xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="@code = 'm'">
+                    <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1">
+                        <xsl:with-param name="propertyNum">P30197</xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="@code = 'n'">
+                    <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1">
+                        <xsl:with-param name="propertyNum">P30199</xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="@code = 'o'">
+                    <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1">
+                        <xsl:with-param name="propertyNum">P30196</xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="@code = 'p'">
+                    <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1">
+                        <xsl:with-param name="propertyNum">P30453</xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="@code = 'q'">
+                    <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1">
+                        <xsl:with-param name="propertyNum">P30263</xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1">
+                        <xsl:with-param name="propertyNum">P30304</xsl:with-param>
+                    </xsl:call-template>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:for-each>
     </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '340'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '340-00']"
