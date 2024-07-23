@@ -30,7 +30,7 @@
     
     <xsl:mode name="ite" on-no-match="shallow-skip"/>
     <xsl:mode name="nom" on-no-match="shallow-skip"/>
-    <xsl:mode name="meta-wor" on-no-match="shallow-skip"/>
+    <xsl:mode name="metaWor" on-no-match="shallow-skip"/>
     <xsl:mode name="age" on-no-match="shallow-skip"/>
     <xsl:mode name="con" on-no-match="shallow-skip"/>
     
@@ -149,7 +149,7 @@
         </xsl:apply-templates>
         
         <!-- *****METADATA WORKS***** -->
-        <xsl:apply-templates select="*" mode="meta-wor">
+        <xsl:apply-templates select="*" mode="metaWor">
             <xsl:with-param name="baseIRI" select="$baseIRI"/>
         </xsl:apply-templates>
         

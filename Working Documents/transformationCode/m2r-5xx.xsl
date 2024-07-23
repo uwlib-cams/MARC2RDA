@@ -340,15 +340,15 @@
         <xsl:call-template name="getmarc"/>
         <xsl:call-template name="F526-xx-iabcdz5"/>
         <!-- iterate through each x (nonpublic note) subfield -->
-        <!-- iri is 'http://marc2rda.edu/fake/meta-wor/' + x subfield's id-->
+        <!-- iri is 'http://marc2rda.edu/fake/MetaWor/' + x subfield's id-->
         <xsl:for-each select="marc:subfield[@code = 'x']">
             <rdamo:P30462
-                rdf:resource="{concat('http://marc2rda.edu/fake/meta-wor/', generate-id())}"/>
+                rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"/>
         </xsl:for-each>
     </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '526'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '526']" 
-        mode="meta-wor">
+        mode="metaWor">
         <xsl:param name="baseIRI"/>
         <!-- iterate through each x (nonpublic note) subfield -->
         <xsl:for-each select="marc:subfield[@code = 'x']">
@@ -508,7 +508,7 @@
             </xsl:if>
             <xsl:if test="@ind1 = '0'">
                 <rdaio:P40164
-                    rdf:resource="{concat('http://marc2rda.edu/fake/meta-wor/', generate-id())}"/>
+                    rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"/>
             </xsl:if>
             <xsl:if test="@tag = '541' and marc:subfield[@code = '6']">
                 <xsl:variable name="occNum"
@@ -522,7 +522,7 @@
                     </xsl:if>
                     <xsl:if test="@ind1 = '0'">
                         <rdaio:P40164
-                            rdf:resource="{concat('http://marc2rda.edu/fake/meta-wor/', generate-id())}"
+                            rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"
                         />
                     </xsl:if>
                 </xsl:for-each>
@@ -561,7 +561,7 @@
         </rdamd:P30137>
         <xsl:choose>
             <xsl:when test="@ind1 = '0'">
-                <rdamo:P30462 rdf:resource="{concat('http://marc2rda.edu/fake/meta-wor/', generate-id())}"/>
+                <rdamo:P30462 rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"/>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:call-template name="F542-1x-e_f_g_i_j_p"/>
@@ -571,7 +571,7 @@
     
     <xsl:template
         match="marc:datafield[@tag = '542'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '542']"
-        mode="meta-wor">
+        mode="metaWor">
         <xsl:param name="baseIRI"/>
         <xsl:if test="@ind1 = '0'">
             <xsl:call-template name="F542-0x">
@@ -674,7 +674,7 @@
             </xsl:if>
             <xsl:if test="@ind1 = '0'">
                 <rdaio:P40164
-                    rdf:resource="{concat('http://marc2rda.edu/fake/meta-wor/', generate-id())}"/>
+                    rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"/>
             </xsl:if>
             <!-- if 561 field has $6, find associated 880 andd do the same mapping -->
             <xsl:if test="@tag = '561' and marc:subfield[@code = '6']">
@@ -690,7 +690,7 @@
                     </xsl:if>
                     <xsl:if test="@ind1 = '0'">
                         <rdaio:P40164
-                            rdf:resource="{concat('http://marc2rda.edu/fake/meta-wor/', generate-id())}"
+                            rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"
                         />
                     </xsl:if>
                 </xsl:for-each>
@@ -699,7 +699,7 @@
     </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '561'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '561-00']"
-        mode="meta-wor" expand-text="yes">
+        mode="metaWor" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:variable name="genID" select="generate-id()"/>
         <xsl:if test="@ind1 = '0'">
@@ -841,19 +841,19 @@
                 </rdaid:P40028>
                 <!-- subfield 'x' is private note -->
                 <!-- for each one, create triple 'is item described with metadata by' [metadataWork IRI] -->
-                <!-- metadataWork IRI = 'http://marc2rda.edu/fake/meta-wor/' + generate-id() of subfield x -->
+                <!-- metadataWork IRI = 'http://marc2rda.edu/fake/MetaWor/' + generate-id() of subfield x -->
                 <xsl:for-each select="marc:subfield[@code = 'x']">
                     <!-- need to do a for-each to set context for subfield id -->
                     <rdaio:P40164
-                        rdf:resource="{concat('http://marc2rda.edu/fake/meta-wor/', generate-id())}"
+                        rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"
                     />
                 </xsl:for-each>
             </xsl:if>
             <!-- @ind1 = '0'is private field -->
             <xsl:if test="@ind1 = '0'">
-                <!-- 'is item described with metadata by' 'https://marc2rda.edu/fake/meta-wor/[end of item id] -->
+                <!-- 'is item described with metadata by' 'https://marc2rda.edu/fake/MetaWor/[end of item id] -->
                 <rdaio:P40164
-                    rdf:resource="{concat('http://marc2rda.edu/fake/meta-wor/', generate-id())}"/>
+                    rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"/>
             </xsl:if>
             
             <xsl:if test="@tag = '583' and marc:subfield[@code = '6']">
@@ -868,13 +868,13 @@
                         </rdaid:P40028>
                         <xsl:for-each select="marc:subfield[@code = 'x']">
                             <rdaio:P40164
-                                rdf:resource="{concat('http://marc2rda.edu/fake/meta-wor/', generate-id())}"
+                                rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"
                             />
                         </xsl:for-each>
                     </xsl:if>
                     <xsl:if test="@ind1 = '0'">
                         <rdaio:P40164
-                            rdf:resource="{concat('http://marc2rda.edu/fake/meta-wor/', generate-id())}"/>
+                            rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"/>
                     </xsl:if>
                 </xsl:for-each>
             </xsl:if>
@@ -882,7 +882,7 @@
     </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '583'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '583-00']" 
-        mode="meta-wor" expand-text="yes">
+        mode="metaWor" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:variable name="genID" select="generate-id()"/>
         <xsl:if test="@ind1 != '0'">
