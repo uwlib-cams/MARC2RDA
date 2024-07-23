@@ -186,7 +186,7 @@
             <rdawo:P10617 rdf:resource="{concat($baseIRI,'man')}"/>
             <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
             <rdf:subject rdf:resource="{concat($baseIRI,'man')}"/>
-            <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
+            <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/m/datatype/P30137"/>
             <rdf:object>
                 <xsl:value-of select="."/>
                 <xsl:if test="../marc:subfield[@code = '5']">
@@ -422,7 +422,7 @@
             <rdawo:P10616 rdf:resource="{concat($baseIRI,'ite',$genID)}"/>
             <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
             <rdf:subject rdf:resource="{concat($baseIRI,'ite',$genID)}"/>
-            <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
+            <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40050"/>
             <rdf:object>
                 <xsl:call-template name="F541-xx-abcdefhno"/>
             </rdf:object>
@@ -552,7 +552,7 @@
             <rdawo:P10617 rdf:resource="{concat($baseIRI,'man')}"/>
             <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
             <rdf:subject rdf:resource="{concat($baseIRI,'man')}"/>
-            <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
+            <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/m/datatype/p30137"/>
             <rdf:object>
                 <xsl:call-template name="F542-xx-abcdefghijklmnopqrsu3"/>
             </rdf:object>
@@ -828,7 +828,7 @@
             <rdawo:P10616 rdf:resource="{concat($baseIRI,'ite',$genID)}"/>
             <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
             <rdf:subject rdf:resource="{concat($baseIRI,'ite',$genID)}"/>
-            <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
+            <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40028"/>
             <rdf:object>
                 <xsl:value-of select="."/>
             </rdf:object>
@@ -845,7 +845,7 @@
             <rdawo:P10616 rdf:resource="{concat($baseIRI,'ite',$genID)}"/>
             <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
             <rdf:subject rdf:resource="{concat($baseIRI,'ite',$genID)}"/>
-            <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
+            <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40028"/>
             <rdf:object>
                 <xsl:call-template name="F583-xx-abcdefhijklnouxz23"/>
             </rdf:object>
