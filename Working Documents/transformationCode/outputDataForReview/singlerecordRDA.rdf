@@ -52,7 +52,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/1400208651exp"/>
       <fake:marcfield>F024 7# $a 1773/49194 $2 hdl</fake:marcfield>
-      <rdamo:P30296 rdf:resource="http://marc2rda.edu/fake/nom/d17e38"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d17e38"/>
       <fake:marcfield>F245 10 $a Quieren mi labor más no mi intelecto : $b they want my hands not my brains : mapping the gendered and racialized journeys of adult English learner immigrant Latin American women in the US higher education system / $c Maria Elizabeth Ramirez Arreola.</fake:marcfield>
       <rdamd:P30134>Quieren mi labor más no mi intelecto</rdamd:P30134>
       <rdamd:P30156>Quieren mi labor más no mi intelecto</rdamd:P30156>
