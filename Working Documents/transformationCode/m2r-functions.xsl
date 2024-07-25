@@ -214,6 +214,13 @@
                     </xsl:attribute>
                 </rdan:P80069>
             </xsl:when>
+            <xsl:when test="$locSubjectSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/subjectSchemes/', lower-case($code2)))">
+                <rdan:P80069>
+                    <xsl:attribute name="rdf:resource">
+                        <xsl:value-of select="concat('http://id.loc.gov/vocabulary/subjectSchemes/', lower-case($code2))"/>
+                    </xsl:attribute>
+                </rdan:P80069>
+            </xsl:when>
             <xsl:when test="$locIdentifiersDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/identifiers/', lower-case($code2)))">
                 <rdan:P80069>
                     <xsl:attribute name="rdf:resource">

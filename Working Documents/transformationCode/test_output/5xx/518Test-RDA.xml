@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
+         xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/518-testwor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/518-testexp"/>
+      <rdawd:P10002>518-testwor</rdawd:P10002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/518-testexp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/518-testman"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/518-testwor"/>
+      <rdaed:P20002>518-testexp</rdaed:P20002>
+      <fake:marcfield>F518 ## $a Recorded in Vienna in 1961, previously released as WST 17035.</fake:marcfield>
+      <rdamd:P20071>Date/time and place of an event note: Recorded in Vienna in 1961, previously released as WST 17035.</rdamd:P20071>
+      <fake:marcfield>F518 ## $d 1997 April 22-23 $p Paradise Studios, Sydney.</fake:marcfield>
+      <rdamd:P20214>Date of event: 1997 April 22-23</rdamd:P20214>
+      <rdamo:P50411>Paradise Studios, Sydney.</rdamo:P50411>
+      <fake:marcfield>F518 ## $o Broadcast $d 1954 October 17 at 7:30 p.m. (PST).</fake:marcfield>
+      <rdamd:P20214>Date of event: 1954 October 17 at 7:30 p.m. (PST).</rdamd:P20214>
+      <rdamd:P20071>Other event information: Broadcast</rdamd:P20071>
+      <fake:marcfield>F518 ## $o Filmed on location $p Rome and Venice $d 1976 January through June. $o [Repeat] Filmed on location $p [Repeat] Rome and Venice $d [Repeat] 1976 January through June.</fake:marcfield>
+      <rdamd:P20214>Date of event: 1976 January through June.</rdamd:P20214>
+      <rdamd:P20214>Date of event: [Repeat] 1976 January through June.</rdamd:P20214>
+      <rdamd:P20071>Other event information: Filmed on location</rdamd:P20071>
+      <rdamd:P20071>Other event information: [Repeat] Filmed on location</rdamd:P20071>
+      <rdamo:P50411>Rome and Venice</rdamo:P50411>
+      <rdamo:P50411>[Repeat] Rome and Venice</rdamo:P50411>
+      <fake:marcfield>F518 ## $d 2002 September 13 $p Coolidge Auditorium, Library of Congress, Washington, D.C. $2 rdaill</fake:marcfield>
+      <rdamd:P20214>Date of event: 2002 September 13</rdamd:P20214>
+      <rdamo:P50411 rdf:resource="http://marc2rda.edu/fake/pla/d16e35"/>
+      <fake:marcfield>F518 ## $3 Horse $a Cast in 1925.</fake:marcfield>
+      <rdamd:P20071>Date/time and place of an event note: Cast in 1925.</rdamd:P20071>
+      <rdamd:P20071>Cast in 1925. (applies to: Horse)</rdamd:P20071>
+      <fake:marcfield>F518 ## $0 test 0 $p Coolidge Auditorium, Library of Congress, Washington, D.C.</fake:marcfield>
+      <rdamo:P50411>Coolidge Auditorium, Library of Congress, Washington, D.C.</rdamo:P50411>
+      <fake:marcfield>F880 ## $6 518-00/ $a Recorded in Vienna in 1961, previously released as WST 17035.</fake:marcfield>
+      <rdamd:P20071>Date/time and place of an event note: Recorded in Vienna in 1961, previously released as WST 17035.</rdamd:P20071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/518-testman">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/518-testexp"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d16e35">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdan:P80068>Coolidge Auditorium, Library of Congress, Washington, D.C.</rdan:P80068>
+      <rdan:P80025 rdf:resource="http://marc2rda.edu/fake/pla/d16e35"/>
+      <!--$2 value of rdaill has been lost-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/d16e35">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdamo:P70018 rdf:resource="http://marc2rda.edu/fake/nom/d16e35"/>
+   </rdf:Description>
+</rdf:RDF>

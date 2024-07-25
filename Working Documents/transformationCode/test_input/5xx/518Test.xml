@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">518-test</marc:controlfield>
+        <marc:datafield tag="518" ind1=" " ind2=" ">
+            <marc:subfield code="a">Recorded in Vienna in 1961, previously released as WST 17035.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="518" ind1=" " ind2=" ">
+            <marc:subfield code="d">1997 April 22-23</marc:subfield>
+            <marc:subfield code="p">Paradise Studios, Sydney.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="518" ind1=" " ind2=" ">
+            <marc:subfield code="o">Broadcast</marc:subfield>
+            <marc:subfield code="d">1954 October 17 at 7:30 p.m. (PST).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="518" ind1=" " ind2=" ">
+            <marc:subfield code="o">Filmed on location</marc:subfield>
+            <marc:subfield code="p">Rome and Venice</marc:subfield>
+            <marc:subfield code="d">1976 January through June.</marc:subfield>
+            <marc:subfield code="o">[Repeat] Filmed on location</marc:subfield>
+            <marc:subfield code="p">[Repeat] Rome and Venice</marc:subfield>
+            <marc:subfield code="d">[Repeat] 1976 January through June.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="518" ind1=" " ind2=" ">
+            <marc:subfield code="d">2002 September 13</marc:subfield>
+            <marc:subfield code="p">Coolidge Auditorium, Library of Congress, Washington, D.C.</marc:subfield>
+            <marc:subfield code="2">rdaill</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="518" ind1=" " ind2=" ">
+            <marc:subfield code="3">Horse</marc:subfield>
+            <marc:subfield code="a">Cast in 1925.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="518" ind1=" " ind2=" ">
+            <marc:subfield code="0">test 0</marc:subfield>
+            <marc:subfield code="p">Coolidge Auditorium, Library of Congress, Washington, D.C.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">518-00/</marc:subfield>
+            <marc:subfield code="a">Recorded in Vienna in 1961, previously released as WST 17035.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>
