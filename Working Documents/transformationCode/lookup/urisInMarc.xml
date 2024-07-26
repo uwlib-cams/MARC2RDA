@@ -2,7 +2,7 @@
 <root xmlns="http://uw.edu/all-purpose-namespace/">
     <!-- https://www.wikidata.org/wiki/Wikidata:WikiProject_URIs_in_MARC -->
     <row>
-        <vocabulary>AAT (Art &amp; Architecture Thesaurus)</vocabulary>
+        <source>AAT (Art &amp; Architecture Thesaurus)</source>
         <marc024Code>gettyaat</marc024Code>
         <marc3XXCode>aat</marc3XXCode>
         <baseIRI iri="http://vocab.getty.edu/aat/"/>
@@ -12,7 +12,7 @@
         <termType iri="http://www.w3.org/2004/02/skos/core#Concept"/>
     </row>
     <row>
-        <vocabulary>AGROVOC</vocabulary>
+        <source>AGROVOC</source>
         <marc024Code>agrovoc</marc024Code>
         <marc3XXCode>agrovoc</marc3XXCode>
         <baseIRI iri="http://aims.fao.org/aos/agrovoc/"/>
