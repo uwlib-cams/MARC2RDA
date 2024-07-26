@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns="http://uw.edu/all-purpose-namespace/">
+    <!-- https://www.wikidata.org/wiki/Wikidata:WikiProject_URIs_in_MARC -->
+    <row>
+        <vocabulary>AAT (Art &amp; Architecture Thesaurus)</vocabulary>
+        <marc024Code>gettyaat</marc024Code>
+        <marc3XXCode>aat</marc3XXCode>
+        <baseIRI iri="http://vocab.getty.edu/aat/"/>
+        <subfieldUsed>0</subfieldUsed>
+        <termType iri="http://vocab.getty.edu/ontology#Concept"/>
+        <termType iri="http://vocab.getty.edu/ontology#Subject"/>
+        <termType iri="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </row>
+    <row>
+        <vocabulary>AGROVOC</vocabulary>
+        <marc024Code>agrovoc</marc024Code>
+        <marc3XXCode>agrovoc</marc3XXCode>
+        <baseIRI iri="http://aims.fao.org/aos/agrovoc/"/>
+        <subfieldUsed>0</subfieldUsed>
+        <termType iri="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </row>
+    
+</root>
