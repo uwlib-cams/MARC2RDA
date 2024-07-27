@@ -84,6 +84,7 @@
     <xsl:template match="marc:datafield[@tag = '264'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '264']" mode="man">
         <xsl:call-template name="getmarc"/>
         <xsl:choose>
+            <!-- check if ISBD punctuation -->
             <xsl:when
                 test="(substring(preceding-sibling::marc:leader, 19, 1) = 'i' or substring(preceding-sibling::marc:leader, 19, 1) = 'a')">
                 <xsl:choose>
@@ -112,17 +113,14 @@
                         <xsl:call-template name="F264-x3-a_b_c"/>
                     </xsl:when>
                     <xsl:when test="@ind2 = '4'">
-                        <xsl:for-each select="marc:subfield[@code = 'c']">
-                            <rdamd:P30280>
-                                <xsl:value-of select="."/>
-                            </rdamd:P30280>
-                        </xsl:for-each>
+                        <xsl:call-template name="F264-x4-c"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <ex:ERROR>F264 IND2 ERROR</ex:ERROR>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
+            <!-- no ISBD punctuation -->
             <xsl:otherwise>
                 <xsl:choose>
                     <xsl:when test="@ind2 = '0'">
@@ -150,11 +148,7 @@
                         <xsl:call-template name="F264-x3-a_b_c"/>
                     </xsl:when>
                     <xsl:when test="@ind2 = '4'">
-                        <xsl:for-each select="marc:subfield[@code = 'c']">
-                            <rdamd:P30280>
-                                <xsl:value-of select="."/>
-                            </rdamd:P30280>
-                        </xsl:for-each>
+                        <xsl:call-template name="F264-x4-c"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <ex:ERROR>F264 IND2 ERROR</ex:ERROR>

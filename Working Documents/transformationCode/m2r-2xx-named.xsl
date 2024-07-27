@@ -175,48 +175,23 @@
          All subfield values are concatenated with a space added between
              (may result in double-spaces in the output)-->
     <xsl:template name="F264-xx-abc" expand-text="yes">
-        <xsl:choose>
-            <xsl:when test="marc:subfield/@code = '3'">
-                <xsl:value-of select="marc:subfield[not(@code = '6')][not(@code = '3')]"
+        <xsl:value-of select="marc:subfield[not(@code = '6')][not(@code = '3')]"
                     separator=" "/>
-                <xsl:text> (Applies to: </xsl:text>
-                <xsl:value-of select="marc:subfield[@code = '3']"/>
-                <xsl:text>)</xsl:text>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:value-of select="marc:subfield[not(@code = '6')]" separator=" "/>
-            </xsl:otherwise>
-        </xsl:choose>
+        <xsl:if test="marc:subfield[@code = '3']">
+            <xsl:text> (Applies to: {marc:subfield[@code = '3']})</xsl:text>
+        </xsl:if>
     </xsl:template>
     <!-- F264-xx-abc-notISBD processes MARC 264 entered without ISBD punctuation as an RDA "statement". All subfield values are concatenated with subfield codes and a space inserted. There may be double spaces in the output. -->
     <xsl:template name="F264-xx-abc-notISBD" expand-text="yes">
-        <xsl:choose>
-            <xsl:when test="marc:subfield/@code = '3'">
-                <xsl:for-each select="marc:subfield[not(@code = '6')][not(@code = '3')]">
-                    <xsl:text>$</xsl:text>
-                    <xsl:value-of select="@code"/>
-                    <xsl:text> </xsl:text>
-                    <xsl:value-of select="."/>
-                </xsl:for-each>
-                <xsl:text> (Applies to: </xsl:text>
-                <xsl:value-of select="marc:subfield[@code = '3']"/>
-                <xsl:text>)</xsl:text>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:for-each select="marc:subfield[not(@code = '6')]">
-                    <xsl:text>$</xsl:text>
-                    <xsl:value-of select="@code"/>
-                    <xsl:text> </xsl:text>
-                    <xsl:value-of select="."/>
-                    <xsl:choose>
-                        <xsl:when test="position() = last()"/>
-                        <xsl:otherwise>
-                            <xsl:text> </xsl:text>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:for-each>
-            </xsl:otherwise>
-        </xsl:choose>
+        <xsl:for-each select="marc:subfield[not(@code = '6')][not(@code = '3')]">
+            <xsl:text>$</xsl:text>
+            <xsl:value-of select="@code"/>
+            <xsl:text> </xsl:text>
+            <xsl:value-of select="."/>
+        </xsl:for-each>
+        <xsl:if test="marc:subfield[@code = '3']">
+            <xsl:text> (Applies to: {marc:subfield[@code = '3']})</xsl:text>
+        </xsl:if>
     </xsl:template>
     <!-- F264-x0-a_b_c processes each MARC 264 subfield even if repeated then creates values for every value on either side of an equal sign, if present, except for $c, where no parallel statements are anticipated. Also strips terminal punctuation in the subfields. -->
     <xsl:template name="F264-x0-a_b_c" expand-text="yes">
@@ -226,11 +201,17 @@
                     <xsl:for-each select="tokenize(., ' = ')">
                         <rdamd:P30086>
                             <xsl:choose>
-                                <xsl:when test="ends-with(., ' :')">{normalize-space(.) =>
-                                    substring-before(' :')}</xsl:when>
-                                <xsl:when test="ends-with(., ' ;')">{normalize-space(.) =>
-                                    substring-before(' ;')}</xsl:when>
-                                <xsl:otherwise>{normalize-space(.)}</xsl:otherwise>
+                                <xsl:when test="ends-with(., ' :')">
+                                    <xsl:value-of select="normalize-space(.) =>
+                                    substring-before(' :') => translate('[]', '')"/>
+                                </xsl:when>
+                                <xsl:when test="ends-with(., ' ;')">
+                                    <xsl:value-of select="normalize-space(.) =>
+                                    substring-before(' ;')  => translate('[]', '')"/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="normalize-space(.) => translate('[]', '')"/>
+                                </xsl:otherwise>
                             </xsl:choose>
                         </rdamd:P30086>
                     </xsl:for-each>
@@ -238,11 +219,16 @@
                 <xsl:otherwise>
                     <rdamd:P30086>
                         <xsl:choose>
-                            <xsl:when test="ends-with(., ' :')">{normalize-space(.) =>
-                                substring-before(' :')}</xsl:when>
-                            <xsl:when test="ends-with(., ' ;')">{normalize-space(.) =>
-                                substring-before(' ;')}</xsl:when>
-                            <xsl:otherwise>{.}</xsl:otherwise>
+                            <xsl:when test="ends-with(., ' :')">
+                                <xsl:value-of select="normalize-space(.) =>
+                                substring-before(' :') => translate('[]', '')"/></xsl:when>
+                            <xsl:when test="ends-with(., ' ;')">
+                                <xsl:value-of select="normalize-space(.) =>
+                                    substring-before(' ;') => translate('[]', '')"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="normalize-space(.) => translate('[]', '')"/>
+                            </xsl:otherwise>
                         </xsl:choose>
                     </rdamd:P30086>
                 </xsl:otherwise>
@@ -256,7 +242,9 @@
                             <xsl:choose>
                                 <xsl:when test="ends-with(., ',')">
                                     <xsl:analyze-string select="." regex="(.*)(,$)">
-                                        <xsl:matching-substring>{normalize-space(regex-group(1))}</xsl:matching-substring>
+                                        <xsl:matching-substring>
+                                            <xsl:value-of select="normalize-space(regex-group(1)) => translate('[]', '')"/>
+                                        </xsl:matching-substring>
                                     </xsl:analyze-string>
                                 </xsl:when>
                                 <xsl:otherwise>{normalize-space(.)}</xsl:otherwise>
@@ -269,7 +257,9 @@
                         <xsl:choose>
                             <xsl:when test="ends-with(., ',')">
                                 <xsl:analyze-string select="." regex="(.*)(,$)">
-                                    <xsl:matching-substring>{normalize-space(regex-group(1))}</xsl:matching-substring>
+                                    <xsl:matching-substring>
+                                        <xsl:value-of select="normalize-space(regex-group(1)) => translate('[]', '')"/>
+                                    </xsl:matching-substring>
                                 </xsl:analyze-string>
                             </xsl:when>
                             <xsl:otherwise>{normalize-space(.)}</xsl:otherwise>
@@ -279,13 +269,20 @@
             </xsl:choose>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'c']">
-            <rdamd:P30009>
-                <xsl:choose>
-                    <xsl:when test="ends-with(., '.')">{normalize-space(.) =>
-                        substring-before('.')}</xsl:when>
-                    <xsl:otherwise>{normalize-space(.)}</xsl:otherwise>
-                </xsl:choose>
-            </rdamd:P30009>
+            <xsl:if test="not(matches(., '[^\d\[\]]'))">
+                <rdamd:P30009>
+                    <xsl:value-of select="replace(., '[^\d]', '')"/>
+                   <!-- <xsl:choose>
+                        <xsl:when test="ends-with(., '.')">
+                            <xsl:value-of select="normalize-space(.) =>
+                                substring-before('.') => translate('[]', '')"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="normalize-space(.) => translate('[]', '')"/>
+                        </xsl:otherwise>
+                    </xsl:choose>-->
+                </rdamd:P30009>
+            </xsl:if>
         </xsl:for-each>
     </xsl:template>
     <!-- F264-x1-a_b_c duplicates F264-x0-a_b_c except it outputs different RDA properties-->
@@ -296,11 +293,17 @@
                     <xsl:for-each select="tokenize(., ' = ')">
                         <rdamd:P30088>
                             <xsl:choose>
-                                <xsl:when test="ends-with(., ' :')">{normalize-space(.) =>
-                                    substring-before(' :')}</xsl:when>
-                                <xsl:when test="ends-with(., ' ;')">{normalize-space(.) =>
-                                    substring-before(' ;')}</xsl:when>
-                                <xsl:otherwise>{normalize-space(.)}</xsl:otherwise>
+                                <xsl:when test="ends-with(., ' :')">
+                                    <xsl:value-of select="normalize-space(.) =>
+                                        substring-before(' :') => translate('[]', '')"/>
+                                </xsl:when>
+                                <xsl:when test="ends-with(., ' ;')">
+                                    <xsl:value-of select="normalize-space(.) =>
+                                    substring-before(' ;')"/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="normalize-space(.) => translate('[]', '')"/>
+                                </xsl:otherwise>
                             </xsl:choose>
                         </rdamd:P30088>
                     </xsl:for-each>
@@ -308,11 +311,17 @@
                 <xsl:otherwise>
                     <rdamd:P30088>
                         <xsl:choose>
-                            <xsl:when test="ends-with(., ' :')">{normalize-space(.) =>
-                                substring-before(' :')}</xsl:when>
-                            <xsl:when test="ends-with(., ' ;')">{normalize-space(.) =>
-                                substring-before(' ;')}</xsl:when>
-                            <xsl:otherwise>{.}</xsl:otherwise>
+                            <xsl:when test="ends-with(., ' :')">
+                                <xsl:value-of select="normalize-space(.) =>
+                                    substring-before(' :') => translate('[]', '')"/>
+                            </xsl:when>
+                            <xsl:when test="ends-with(., ' ;')">
+                                <xsl:value-of select="normalize-space(.) =>
+                                    substring-before(' ;') => translate('[]', '')"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="normalize-space(.) => translate('[]', '')"/>
+                            </xsl:otherwise>
                         </xsl:choose>
                     </rdamd:P30088>
                 </xsl:otherwise>
@@ -326,10 +335,14 @@
                             <xsl:choose>
                                 <xsl:when test="ends-with(., ',')">
                                     <xsl:analyze-string select="." regex="(.*)(,$)">
-                                        <xsl:matching-substring>{normalize-space(regex-group(1))}</xsl:matching-substring>
+                                        <xsl:matching-substring>
+                                            <xsl:value-of select="normalize-space(regex-group(1)) => translate('[]', '')"/>
+                                        </xsl:matching-substring>
                                     </xsl:analyze-string>
                                 </xsl:when>
-                                <xsl:otherwise>{normalize-space(.)}</xsl:otherwise>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="normalize-space(.) => translate('[]', '')"/>
+                                </xsl:otherwise>
                             </xsl:choose>
                         </rdamd:P30176>
                     </xsl:for-each>
@@ -339,23 +352,34 @@
                         <xsl:choose>
                             <xsl:when test="ends-with(., ',')">
                                 <xsl:analyze-string select="." regex="(.*)(,$)">
-                                    <xsl:matching-substring>{normalize-space(regex-group(1))}</xsl:matching-substring>
+                                    <xsl:matching-substring>
+                                        <xsl:value-of select="normalize-space(regex-group(1)) => translate('[]', '')"/>
+                                    </xsl:matching-substring>
                                 </xsl:analyze-string>
                             </xsl:when>
-                            <xsl:otherwise>{normalize-space(.)}</xsl:otherwise>
+                            <xsl:otherwise>
+                                <xsl:value-of select="normalize-space(.) => translate('[]', '')"/>
+                            </xsl:otherwise>
                         </xsl:choose>
                     </rdamd:P30176>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'c']">
-            <rdamd:P30011>
-                <xsl:choose>
-                    <xsl:when test="ends-with(., '.')">{normalize-space(.) =>
-                        substring-before('.')}</xsl:when>
-                    <xsl:otherwise>{normalize-space(.)}</xsl:otherwise>
-                </xsl:choose>
-            </rdamd:P30011>
+            <xsl:if test="not(matches(., '[^\d\[\]]'))">
+                <rdamd:P30011>
+                    <xsl:value-of select="replace(., '[^\d]', '')"/>
+                    <!--<xsl:choose>
+                        <xsl:when test="ends-with(., '.')">
+                            <xsl:value-of select="normalize-space(.) =>
+                                substring-before('.') => translate('[]', '')"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="normalize-space(.) => translate('[]', '')"/>
+                        </xsl:otherwise>
+                    </xsl:choose>-->
+                </rdamd:P30011>
+            </xsl:if>
         </xsl:for-each>
     </xsl:template>
     <!-- F264-x2-a_b_c duplicates F264-x0-a_b_c except it outputs different RDA properties-->
@@ -366,11 +390,17 @@
                     <xsl:for-each select="tokenize(., ' = ')">
                         <rdamd:P30085>
                             <xsl:choose>
-                                <xsl:when test="ends-with(., ' :')">{normalize-space(.) =>
-                                    substring-before(' :')}</xsl:when>
-                                <xsl:when test="ends-with(., ' ;')">{normalize-space(.) =>
-                                    substring-before(' ;')}</xsl:when>
-                                <xsl:otherwise>{normalize-space(.)}</xsl:otherwise>
+                                <xsl:when test="ends-with(., ' :')">
+                                    <xsl:value-of select="normalize-space(.) =>
+                                        substring-before(' :') => translate('[]', '')"/>
+                                </xsl:when>
+                                <xsl:when test="ends-with(., ' ;')">
+                                    <xsl:value-of select="normalize-space(.) =>
+                                    substring-before(' ;')"/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="normalize-space(.) => translate('[]', '')"/>
+                                </xsl:otherwise>
                             </xsl:choose>
                         </rdamd:P30085>
                     </xsl:for-each>
@@ -378,11 +408,17 @@
                 <xsl:otherwise>
                     <rdamd:P30085>
                         <xsl:choose>
-                            <xsl:when test="ends-with(., ' :')">{normalize-space(.) =>
-                                substring-before(' :')}</xsl:when>
-                            <xsl:when test="ends-with(., ' ;')">{normalize-space(.) =>
-                                substring-before(' ;')}</xsl:when>
-                            <xsl:otherwise>{.}</xsl:otherwise>
+                            <xsl:when test="ends-with(., ' :')">
+                                <xsl:value-of select="normalize-space(.) =>
+                                    substring-before(' :') => translate('[]', '')"/>
+                            </xsl:when>
+                            <xsl:when test="ends-with(., ' ;')">
+                                <xsl:value-of select="normalize-space(.) =>
+                                    substring-before(' ;') => translate('[]', '')"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="normalize-space(.) => translate('[]', '')"/>
+                            </xsl:otherwise>
                         </xsl:choose>
                     </rdamd:P30085>
                 </xsl:otherwise>
@@ -396,10 +432,14 @@
                             <xsl:choose>
                                 <xsl:when test="ends-with(., ',')">
                                     <xsl:analyze-string select="." regex="(.*)(,$)">
-                                        <xsl:matching-substring>{normalize-space(regex-group(1))}</xsl:matching-substring>
+                                        <xsl:matching-substring>
+                                            <xsl:value-of select="normalize-space(regex-group(1)) => translate('[]', '')"/>
+                                        </xsl:matching-substring>
                                     </xsl:analyze-string>
                                 </xsl:when>
-                                <xsl:otherwise>{normalize-space(.)}</xsl:otherwise>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="normalize-space(.) => translate('[]', '')"/>
+                                </xsl:otherwise>
                             </xsl:choose>
                         </rdamd:P30173>
                     </xsl:for-each>
@@ -409,23 +449,34 @@
                         <xsl:choose>
                             <xsl:when test="ends-with(., ',')">
                                 <xsl:analyze-string select="." regex="(.*)(,$)">
-                                    <xsl:matching-substring>{normalize-space(regex-group(1))}</xsl:matching-substring>
+                                    <xsl:matching-substring>
+                                        <xsl:value-of select="normalize-space(regex-group(1)) => translate('[]', '')"/>
+                                    </xsl:matching-substring>
                                 </xsl:analyze-string>
                             </xsl:when>
-                            <xsl:otherwise>{normalize-space(.)}</xsl:otherwise>
+                            <xsl:otherwise>
+                                <xsl:value-of select="normalize-space(.) => translate('[]', '')"/>
+                            </xsl:otherwise>
                         </xsl:choose>
                     </rdamd:P30173>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'c']">
-            <rdamd:P30008>
-                <xsl:choose>
-                    <xsl:when test="ends-with(., '.')">{normalize-space(.) =>
-                        substring-before('.')}</xsl:when>
-                    <xsl:otherwise>{normalize-space(.)}</xsl:otherwise>
-                </xsl:choose>
-            </rdamd:P30008>
+            <xsl:if test="not(matches(., '[^\d\[\]]'))">
+                <rdamd:P30008>
+                    <xsl:value-of select="replace(., '[^\d]', '')"/>
+                    <!--<xsl:choose>
+                        <xsl:when test="ends-with(., '.')">
+                            <xsl:value-of select="normalize-space(.) =>
+                                substring-before('.') => translate('[]', '')"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="normalize-space(.) => translate('[]', '')"/>
+                        </xsl:otherwise>
+                    </xsl:choose>-->
+                </rdamd:P30008>
+            </xsl:if>
         </xsl:for-each>
     </xsl:template>
     <!-- F264-x3-a_b_c duplicates F264-x0-a_b_c except it outputs different RDA properties-->
@@ -436,11 +487,17 @@
                     <xsl:for-each select="tokenize(., ' = ')">
                         <rdamd:P30087>
                             <xsl:choose>
-                                <xsl:when test="ends-with(., ' :')">{normalize-space(.) =>
-                                    substring-before(' :')}</xsl:when>
-                                <xsl:when test="ends-with(., ' ;')">{normalize-space(.) =>
-                                    substring-before(' ;')}</xsl:when>
-                                <xsl:otherwise>{normalize-space(.)}</xsl:otherwise>
+                                <xsl:when test="ends-with(., ' :')">
+                                    <xsl:value-of select="normalize-space(.) =>
+                                        substring-before(' :') => translate('[]', '')"/>
+                                </xsl:when>
+                                <xsl:when test="ends-with(., ' ;')">
+                                    <xsl:value-of select="normalize-space(.) =>
+                                        substring-before(' ;') => translate('[]', '')"/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="normalize-space(.) => translate('[]', '')"/>
+                                </xsl:otherwise>
                             </xsl:choose>
                         </rdamd:P30087>
                     </xsl:for-each>
@@ -448,11 +505,17 @@
                 <xsl:otherwise>
                     <rdamd:P30087>
                         <xsl:choose>
-                            <xsl:when test="ends-with(., ' :')">{normalize-space(.) =>
-                                substring-before(' :')}</xsl:when>
-                            <xsl:when test="ends-with(., ' ;')">{ normalize-space(.) =>
-                                substring-before(' ;')}</xsl:when>
-                            <xsl:otherwise>{normalize-space(.)}</xsl:otherwise>
+                            <xsl:when test="ends-with(., ' :')">
+                                <xsl:value-of select="normalize-space(.) =>
+                                    substring-before(' :') => translate('[]', '')"/>
+                            </xsl:when>
+                            <xsl:when test="ends-with(., ' ;')">
+                                <xsl:value-of select="normalize-space(.) =>
+                                    substring-before(' ;') => translate('[]', '')"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="normalize-space(.) => translate('[]', '')"/>
+                            </xsl:otherwise>
                         </xsl:choose>
                     </rdamd:P30087>
                 </xsl:otherwise>
@@ -466,10 +529,14 @@
                             <xsl:choose>
                                 <xsl:when test="ends-with(., ',')">
                                     <xsl:analyze-string select="." regex="(.*)(,$)">
-                                        <xsl:matching-substring>{normalize-space(regex-group(1))}</xsl:matching-substring>
+                                        <xsl:matching-substring>
+                                            <xsl:value-of select="normalize-space(regex-group(1)) => translate('[]', '')"/>
+                                        </xsl:matching-substring>
                                     </xsl:analyze-string>
                                 </xsl:when>
-                                <xsl:otherwise>{normalize-space(.)}</xsl:otherwise>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="normalize-space(.) => translate('[]', '')"/>
+                                </xsl:otherwise>
                             </xsl:choose>
                         </rdamd:P30175>
                     </xsl:for-each>
@@ -479,25 +546,38 @@
                         <xsl:choose>
                             <xsl:when test="ends-with(., ',')">
                                 <xsl:analyze-string select="." regex="(.*)(,$)">
-                                    <xsl:matching-substring>{normalize-space(regex-group(1))}</xsl:matching-substring>
+                                    <xsl:matching-substring>
+                                        <xsl:value-of select="normalize-space(regex-group(1)) => translate('[]', '')"/>
+                                    </xsl:matching-substring>
                                 </xsl:analyze-string>
                             </xsl:when>
-                            <xsl:otherwise>{normalize-space(.)}</xsl:otherwise>
+                            <xsl:otherwise>
+                                <xsl:value-of select="normalize-space(.) => translate('[]', '')"/>
+                            </xsl:otherwise>
                         </xsl:choose>
                     </rdamd:P30175>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'c']">
-            <rdamd:P30010>
-                <xsl:choose>
-                    <xsl:when test="ends-with(., '.')">{normalize-space(.) =>
-                        substring-before('.')}</xsl:when>
-                    <xsl:otherwise>{normalize-space(.)}</xsl:otherwise>
-                </xsl:choose>
-            </rdamd:P30010>
+            <xsl:if test="not(matches(., '[^\d\[\]]'))">
+                <rdamd:P30010>
+                    <xsl:value-of select="replace(., '[^\d]', '')"/>
+                </rdamd:P30010>
+            </xsl:if>
         </xsl:for-each>
-
+    </xsl:template>
+    
+    <xsl:template name="F264-x4-c" expand-text="yes">
+        <rdamd:P30137>
+            <xsl:text>Copyright date: </xsl:text>
+            <xsl:value-of select="marc:subfield[@code = 'c']" separator="; "/>
+        </rdamd:P30137>
+        <xsl:for-each select="marc:subfield[@code = 'c']">
+            <rdamd:P30007>
+                <xsl:value-of select="replace(., '[^\d]', '')"/>
+            </rdamd:P30007>
+        </xsl:for-each>
     </xsl:template>
 
 </xsl:stylesheet>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/264-test1wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/264-test1exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>264-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/264-test1exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/264-test1man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/264-test1wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>264-test1exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/264-test1man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/264-test1exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F264 #1 $a [Seattle] : $b [University of Washington Libraries], $c [2020]</fake:marcfield>
+      <rdamd:P30111>[Seattle] : [University of Washington Libraries], [2020]</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Seattle</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>University of Washington Libraries</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>2020</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <fake:marcfield>F264 #4 $c ©2020</fake:marcfield>
+      <rdamd:P30137>Copyright date: ©2020</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30007>2020</rdamd:P30007><!--rdamd:P30007 = has copyright date-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/264-test2wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/264-test2exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>264-test2wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/264-test2exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/264-test2man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/264-test2wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>264-test2exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/264-test2man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/264-test2exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F264 #1 $a [Yellowknife] : $b Northwest Territories Environment and Natural Resources, $c 2022.</fake:marcfield>
+      <rdamd:P30111>[Yellowknife] : Northwest Territories Environment and Natural Resources, 2022.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Yellowknife</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Northwest Territories Environment and Natural Resources</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/264-test3wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/264-test3exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>264-test3wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/264-test3exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/264-test3man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/264-test3wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>264-test3exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/264-test3man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/264-test3exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F264 #1 $a İstanbul : $b Kırmızı Kedi, $c Haziran 2021.</fake:marcfield>
+      <rdamd:P30111>İstanbul : Kırmızı Kedi, Haziran 2021.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>İstanbul</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Kırmızı Kedi</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <fake:marcfield>F264 #4 $c ©2020</fake:marcfield>
+      <rdamd:P30137>Copyright date: ©2020</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30007>2020</rdamd:P30007><!--rdamd:P30007 = has copyright date-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/264-test4wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/264-test4exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>264-test4wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/264-test4exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/264-test4man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/264-test4wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>264-test4exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/264-test4man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/264-test4exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F264 #1 $6 880-04 $a al-Qāhirah : $b al-Dār al-Miṣrīyah al-Lubnānīyah, $c 2020.</fake:marcfield>
+      <rdamd:P30111>$a al-Qāhirah :$b al-Dār al-Miṣrīyah al-Lubnānīyah,$c 2020.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>al-Qāhirah</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>al-Dār al-Miṣrīyah al-Lubnānīyah</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/264-test4wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/264-test4exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>264-test4wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/264-test4exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/264-test4man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/264-test4wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>264-test4exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/264-test4man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/264-test4exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F264 #1 $6 880-04 $a Tihrān : $b Nashr-i Chashmah, $c Zamistān-i 1400 [2021 or 2022]</fake:marcfield>
+      <rdamd:P30111>Tihrān : Nashr-i Chashmah, Zamistān-i 1400 [2021 or 2022]</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Tihrān</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Nashr-i Chashmah</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+   </rdf:Description>
+</rdf:RDF>
