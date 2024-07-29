@@ -19,12 +19,13 @@
         <termType iri="http://www.w3.org/2004/02/skos/core#Concept"/>
     </row>
     <row>
-        <source>AGROVOC</source>
-        <marc024Code>agrovoc</marc024Code>
-        <marc3XXCode>agrovoc</marc3XXCode>
-        <baseIRI iri="http://aims.fao.org/aos/agrovoc/"/>
-        <subfieldUsed>0</subfieldUsed>
-        <termType iri="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <source>CERL Thesaurus</source>
+        <marc024Code>cerl</marc024Code>
+        <marc3XXCode>cerlt</marc3XXCode>
+        <baseIRI iri="http://thesaurus.cerl.org/record/"/>
+        <subfieldUsed>1</subfieldUsed>
+        <termType iri="http://rdvocab.info/uri/schema/FRBRentitiesRDA/Person"/>
+        <!-- I followed this IRI and saw that their Person is also sub class of Agent -->
+        <termType iri="http://rdvocab.info/uri/schema/FRBRentitiesRDA/Agent"/>
     </row>
-    
 </root>
