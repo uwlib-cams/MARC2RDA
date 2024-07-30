@@ -14,6 +14,9 @@ Previously she has worked as a cataloguer at the Utrecht University library for 
 She represents the KB, National Library of the Netherlands at the EURIG. <br>
 Her interest is RDA implemented as linked data. She participates in different projects in the Netherlands and abroad concerning the mapping and conversion of legacy bibliographic and authority data into RDA-RDF._ <br>
 <br><br>
+**-Doreen Chen [dchen077](https://github.com/dchen077), Mapping Contributor, Transformation Contributor**<br>
+_Doreen Chen (she/her/hers) is a second-year residential student currently pursuing her Master of Library and Information Science degree at the University of Washington. She works as a Linked Data Metadata Student Specialist at the University of Washington Libraries and contributes to MARC2RDA among other projects. Her academic interests include open data, data curation, and metadata management._
+<br><br>
 **-Gordon Dunsire [GordonDunsire](https://github.com/GordonDunsire), Metadata Consultant, LRM/RDA/RDF**<br>
 _Gordon Dunsire is an independent consultant who lives in Edinburgh, Scotland. He was formerly Head of the Centre for Digital Library Research at the University of Strathclyde. He has been a member of various IFLA review groups and sections concerned with cataloguing and metadata standards, and is a recipient of an IFLA Medal for his work with linked open data. He is a former Chair of the RDA Steering Committee and the RSC Technical Working Group. He is co-author of "Bibliographic information organization in the semantic web"._ 
 <br><br>
@@ -26,7 +29,7 @@ _Deborah Fritz is a semi-retired cataloging trainer who lives in Florida. She wa
 **-Cate Gerhart [CatalogerCate](https://github.com/CatalogerCate), Mapping Consultant, MARC21**<br>
 _Cate Gerhart is the Head of the Monographic Service Unit in the University of Washington Libraries. In addition to supervising both classified staff and librarians, Cate is the music cataloger for the Libraries.  Presently, Cate is active in a wide range of groups outside the UW including chairing the Library of Congress MARC Advisory Committee (2020- ) and serving in a number of capacities on the Career Development Standing Committee of the Music Library Association.  In the past Cate has had a number of leadership roles in OLAC, Cataloger’s Network and in the Pacific Northwest Chapter of the Music Library Association.   Cate served for 14 years on the Editorial Board of the Journal of Map and Geography Libraries and was the editor for the Music Cataloging Bulletin (a monthly publication) for 5 years. Cate will be celebrating her 40th year of being a librarian this coming year._
 <br><br>
-**-Ying-Hsiang Huang [hinxcode](https://github.com/hinxcode), Mapping Contributor**<br>
+**-Ying-Hsiang Huang [hinxcode](https://github.com/hinxcode), Mapping Contributor, Transformation Contributor**<br>
 Ying-Hsiang Huang (he/him) is currently a second-year residential Master of Library and Information Science student at the University of Washington-Seattle. He works as a Library Linked Data Metadata Student Specialist at the University of Washington Libraries, where he contributes to mapping MARC21 to RDA among other linked data projects. With a robust background in software engineering, he is committed to enhancing library services through digital transformation initiatives.
 <br><br>
 **-Ebe Kartus [corialanus](https://github.com/corialanus), Mapping Contributor**<br>
