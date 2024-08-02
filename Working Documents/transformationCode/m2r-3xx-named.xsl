@@ -567,6 +567,8 @@
     </xsl:template>
     
     <!-- 340 -->
+    
+    <!-- template for subfields that are mapped to properties with text values (subfields b, f, h, i) -->
     <xsl:template name="F340-b_f_h_i" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'b']">
             <rdamd:P30169>
@@ -612,55 +614,79 @@
         </xsl:for-each>
     </xsl:template>
     
+    <!-- mints concepts for 340 subfields as needed -->
     <xsl:template name="F340-concept" expand-text="yes">
+        <!-- if there is a $0 that begins with 'http' or there is a $1 value 
+            AND there is only one subfield that this IRI could be referring to, 
+            then we use that value, so a concept is not minted -->
+        <!-- The if test here uses count() to check that there are not multiple subfields the $0 or $1 could be referring to
+             these subfields may differ in other fields that require a similar approach-->
         <xsl:if test="not(marc:subfield[@code = '1'] and count(*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3' 
             or @code = '6' or @code = '8' or @code = 'b' or @code = 'f' or @code = 'h' or @code = 'i')]) = 1)
             and not(contains(marc:subfield[@code = '0'], 'http') and count(*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3' 
             or @code = '6' or @code = '8' or @code = 'b' or @code = 'f' or @code = 'h' or @code = 'i')]) = 1)">
-                <xsl:if test="marc:subfield[@code = '2']">
-                    <xsl:variable name="sub2" select="marc:subfield[@code = '2']"/>
-                    <xsl:variable name="linked880">
-                        <xsl:if test="@tag = '340' and marc:subfield[@code = '6']">
-                            <xsl:variable name="occNum"
-                                select="concat('340-', substring(marc:subfield[@code = '6'], 5, 6))"/>
-                            <xsl:copy-of
-                                select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]"/>
-                        </xsl:if>
-                    </xsl:variable>
-                    
-                    <xsl:if test="not(matches($sub2, '^rda.+'))">
-                        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd']
-                            | marc:subfield[@code = 'e'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'j']
-                            | marc:subfield[@code = 'k'] | marc:subfield[@code = 'l'] | marc:subfield[@code = 'm']
-                            | marc:subfield[@code = 'n'] | marc:subfield[@code = 'o'] | marc:subfield[@code = 'p']
-                            | marc:subfield[@code = 'q']">
-                            <xsl:variable name="currentCode" select="@code"/>
-                            <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
-                                <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '340')"/>
-                                <xsl:if test="$linked880">
-                                    <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = $currentCode]">
-                                        <xsl:copy-of select="uwf:fillConcept(., '', '', '880')"/>
-                                    </xsl:for-each>
-                                </xsl:if>
-                            </rdf:Description>
-                        </xsl:for-each>
+            <!-- otherwise, there is no $0 that begins with 'http', no $1, OR there are these values but we can't know
+              what property to use with them - then we check the $2 -->
+            <xsl:if test="marc:subfield[@code = '2']">
+                <xsl:variable name="sub2" select="marc:subfield[@code = '2']"/>
+                <!-- if there's a $6, retrieve a copy of the linked 880 field -->
+                <xsl:variable name="linked880">
+                    <xsl:if test="@tag = '340' and marc:subfield[@code = '6']">
+                        <xsl:variable name="occNum"
+                            select="concat('340-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                        <xsl:copy-of
+                            select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]"/>
                     </xsl:if>
+                </xsl:variable>
+                
+                <!-- if the $2 value does not begin with rda and include additional characters 
+                    (this prevents a match on just 'rda', which can't be looked up as it doesn't tell us which vocabulary is in use) -->
+                <xsl:if test="not(matches($sub2, '^rda.+'))">
+                    <!-- for each subfield that requires it (not $b, $f, $h, and $i which map to strings, or numeric subfields)
+                        we mint a concept -->
+                    <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd']
+                        | marc:subfield[@code = 'e'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'j']
+                        | marc:subfield[@code = 'k'] | marc:subfield[@code = 'l'] | marc:subfield[@code = 'm']
+                        | marc:subfield[@code = 'n'] | marc:subfield[@code = 'o'] | marc:subfield[@code = 'p']
+                        | marc:subfield[@code = 'q']">
+                        <!-- save the code value in a variable for if there's a linked 880, 
+                            we need to find the associated subfield in that field using it -->
+                        <xsl:variable name="currentCode" select="@code"/>
+                        <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
+                            <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '340')"/>
+                            <!-- if it exists, include the linked 880 as part of this concept -->
+                            <xsl:if test="$linked880">
+                                <!-- select all matching subfields in the same position 
+                                    (for-each accounts for if there are multiple linked 880s) -->
+                                <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = $currentCode]">
+                                    <xsl:copy-of select="uwf:fillConcept(., '', '', '880')"/>
+                                </xsl:for-each>
+                            </xsl:if>
+                        </rdf:Description>
+                    </xsl:for-each>
                 </xsl:if>
             </xsl:if>
+        </xsl:if>
     </xsl:template>
     
-    <!-- function for minimizing repitition when handling all the many 340 subfields -->
+    <!-- handles 340 subfields that map to concepts -->
     <xsl:template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1" expand-text="yes">
+        <!-- propertyNum is the appropriate rda property passed from the 340 match template
+             these are all manifestation properties, so only the P##### number is needed-->
         <xsl:param name="propertyNum"/>
+        <!-- the subfield is stored in a variable so that 
+            context can be moved to perform checks without losing it -->
         <xsl:variable name="subfield" select="."/>
         <xsl:choose>
-            <!-- 1 and only one other subfield -->
+            <!-- If there is a $1 and only one subfield that it could refer to, 
+                we know the property to use and can use the $1 value as the object -->
             <xsl:when test="../marc:subfield[@code = '1'] and count(../*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3' 
                 or @code = '6' or @code = '8' or @code = 'b' or @code = 'f' or @code = 'h' or @code = 'i')]) = 1">
                 <xsl:for-each select="../marc:subfield[@code = '1']">
                     <xsl:element name="rdam:{$propertyNum}">
                         <xsl:attribute name="rdf:resource" select="."/>
                     </xsl:element>
+                    <!-- if there's a $3, call the F340-xx-3 template to output a note -->
                     <xsl:if test="../marc:subfield[@code = '3']">
                         <xsl:call-template name="F340-xx-3">
                             <xsl:with-param name="sub3" select="../marc:subfield[@code = '3']"/>
@@ -670,19 +696,23 @@
                     </xsl:if>
                 </xsl:for-each>
             </xsl:when>
-            <!-- no $1 -->
+            <!-- otherwise, if there is no $1 or no way to know which property to use
+                because multiple subfields that the $1 could be attached to are present -->
             <xsl:otherwise>
                 <xsl:choose>
-                    <!-- $0 with http and only one other subfield -->
+                    <!-- we check if there is a $0 with 'http' and only one subfield that could be referred to.
+                        if there is, we can use this $0 value as an object of the appropriate property -->
                     <xsl:when test="contains(../marc:subfield[@code = '0'], 'http') and count(../*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3' 
                         or @code = '6' or @code = '8' or @code = 'b' or @code = 'f' or @code = 'h' or @code = 'i')]) = 1">
                         <xsl:for-each select="../marc:subfield[@code = '0']">
+                            <!-- uwf:process0 takes a $0 and strips anything not part of the IRI -->
                             <xsl:variable name="iri0" select="uwf:process0(.)"/>
-                            <!-- if getting iri was successful (started with 'http' or '('), use 0s-->
+                            <!-- if getting iri was successful (started with 'http' or '('), then we can use the $0-->
                             <xsl:if test="$iri0">
                                 <xsl:element name="rdam:{$propertyNum}">
                                     <xsl:attribute name="rdf:resource" select="$iri0"/>
                                 </xsl:element>
+                                <!-- if there's a 3, output a note -->
                                 <xsl:if test="../marc:subfield[@code = '3']">
                                     <xsl:call-template name="F340-xx-3">
                                         <xsl:with-param name="sub3" select="../marc:subfield[@code = '3']"/>
@@ -693,15 +723,18 @@
                             </xsl:if>
                         </xsl:for-each>
                     </xsl:when>
-                    <!-- no $1 or $0 (http) or multiple text subfields -->
+                    <!-- if there is no $1 or $0 (http) or multiple subfields that these IRIs could refer to
+                       we move on to subfield $2 -->
                     <xsl:otherwise>
                         <xsl:choose>
                             <!-- $2 -->
                             <xsl:when test="../marc:subfield[@code = '2']">
                                 <xsl:variable name="sub2" select="../marc:subfield[@code = '2']"/>
                                 <xsl:choose>
-                                    <!-- when $2 starts with rda, we lookup the $2 code and then the $a/$b terms from there-->
+                                    <!-- when $2 starts with rda (but is not only 'rda'), we lookup the $2 code and then the term from there-->
                                     <xsl:when test="matches($sub2, '^rda.+')">
+                                        <!-- uwf:rdaTermLookup() does all the lookup work and returns an IRI 
+                                            if one is found for that term from that source -->
                                         <xsl:variable name="rdaIRI" select="uwf:rdaTermLookup($sub2, $subfield)"/>
                                         <!-- only output the property if the function returns a value -->
                                         <!-- we don't want a triple with no object -->
@@ -718,7 +751,8 @@
                                             </xsl:if>
                                         </xsl:if>
                                     </xsl:when>
-                                    <!-- other $2s not rda -->
+                                    <!-- if there is a $2 that is not rda (or is only 'rda') 
+                                        then a concept is minted -->
                                     <xsl:otherwise>
                                         <xsl:if test="../@tag = '340' or substring(../marc:subfield[@code = '6'], 1, 6) = '340-00'">
                                             <xsl:element name="rdam:{$propertyNum}">
@@ -735,7 +769,7 @@
                                     </xsl:otherwise>
                                 </xsl:choose>
                             </xsl:when>
-                            <!-- no $0 (http), $1, or $2 -->
+                            <!-- If there were not $0s, $1s, or $2s that fit the above checks, a string value is used -->
                             <xsl:otherwise>
                                 <xsl:element name="rdamd:{$propertyNum}">
                                     <xsl:value-of select="$subfield"/>
@@ -755,10 +789,12 @@
         </xsl:choose>
     </xsl:template>
     
+    <!-- handle subfield $3 for 340 -->
     <xsl:template name="F340-xx-3" expand-text="yes">
         <xsl:param name="sub3"/>
         <xsl:param name="subfield"/>
         <xsl:param name="value"/>
+        <!-- 340 has many subfields, so F340-xx-3 determines what the note about the $3 part says -->
         <rdamd:P30137>
             <xsl:if test="$subfield/@code = 'a'">
                 <xsl:text>Has material base and configuration {$value}</xsl:text>

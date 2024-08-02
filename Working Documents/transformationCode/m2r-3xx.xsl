@@ -82,12 +82,15 @@
         mode="man">
         <xsl:call-template name="getmarc"/>
         <xsl:call-template name="F340-b_f_h_i"/>
+        <!-- these fields require lookups or minted concepts -->
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd']
             | marc:subfield[@code = 'e'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'j']
             | marc:subfield[@code = 'k'] | marc:subfield[@code = 'l'] | marc:subfield[@code = 'm']
             | marc:subfield[@code = 'n'] | marc:subfield[@code = 'o'] | marc:subfield[@code = 'p']
             | marc:subfield[@code = 'q']">
             <xsl:choose>
+                <!-- different subfields require different properties, 
+                    the templates are set up to accommodate this with the param $propertyNum-->
                 <xsl:when test="@code = 'd'">
                     <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1">
                         <xsl:with-param name="propertyNum">P30187</xsl:with-param>
