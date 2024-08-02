@@ -39,16 +39,22 @@
                     <xsl:when test="@tag = '100' or @tag = '110' or @tag = '111'">
                         <xsl:call-template name="handle1XXNoRelator">
                             <xsl:with-param name="domain" select="'work'"/>
+                            <xsl:with-param name="agentIRI" select="uwf:agentIRI(.)"/>
                         </xsl:call-template>
                     </xsl:when>
-                    <!-- otherwise do nothing (this is the work template, the default property has the manifestation as domain -->
-                    <xsl:otherwise/>
+                    <xsl:otherwise>
+                        <!-- default -->
+                        <xsl:copy-of
+                            select="uwf:defaultAgentProp(., uwf:fieldType(@tag), 'work', uwf:agentIRI(.), uwf:agentAccessPoint(.))"
+                        />
+                    </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
             <!-- if there is a relator subfield, call handleRelator with the appropriate domain -->
             <xsl:otherwise>
                 <xsl:call-template name="handleRelator">
                     <xsl:with-param name="domain" select="'work'"/>
+                    <xsl:with-param name="agentIRI" select="uwf:agentIRI(.)"/>
                 </xsl:call-template>
             </xsl:otherwise>
         </xsl:choose>
@@ -66,12 +72,14 @@
                             <xsl:with-param name="domain" select="'expression'"/>
                         </xsl:call-template>
                     </xsl:when>
+                    <!-- only work and manifestation domains have default values -->
                     <xsl:otherwise/>
                 </xsl:choose>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:call-template name="handleRelator">
                     <xsl:with-param name="domain" select="'expression'"/>
+                    <xsl:with-param name="agentIRI" select="uwf:agentIRI(.)"/>
                 </xsl:call-template>
             </xsl:otherwise>
         </xsl:choose>
@@ -93,7 +101,7 @@
                     <xsl:otherwise>
                         <!-- default -->
                         <xsl:copy-of
-                            select="uwf:defaultProp(., uwf:fieldType(@tag), 'manifestation', uwf:agentIRI(.), uwf:agentAccessPoint(.))"
+                            select="uwf:defaultAgentProp(., uwf:fieldType(@tag), 'manifestation', uwf:agentIRI(.), uwf:agentAccessPoint(.))"
                         />
                     </xsl:otherwise>
                 </xsl:choose>
@@ -101,6 +109,7 @@
             <xsl:otherwise>
                 <xsl:call-template name="handleRelator">
                     <xsl:with-param name="domain" select="'manifestation'"/>
+                    <xsl:with-param name="agentIRI" select="uwf:agentIRI(.)"/>
                 </xsl:call-template>
             </xsl:otherwise>
         </xsl:choose>
@@ -121,6 +130,7 @@
                 <xsl:otherwise>
                     <xsl:call-template name="handleRelator">
                         <xsl:with-param name="domain" select="'item'"/>
+                        <xsl:with-param name="agentIRI" select="uwf:agentIRI(.)"/>
                     </xsl:call-template>
                 </xsl:otherwise>
             </xsl:choose>
@@ -152,6 +162,7 @@
                 <xsl:otherwise>
                     <xsl:call-template name="handleRelator">
                         <xsl:with-param name="domain" select="'item'"/>
+                        <xsl:with-param name="agentIRI" select="uwf:agentIRI(.)"/>
                     </xsl:call-template>
                 </xsl:otherwise>
             </xsl:choose>
@@ -228,7 +239,7 @@
                 <xsl:otherwise/>
             </xsl:choose>
             <!-- create inverse property from agent to WEMI entity -->
-            <xsl:choose>
+            <!--<xsl:choose>
                 <xsl:when
                     test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
                     <xsl:choose>
@@ -246,7 +257,7 @@
                         <xsl:with-param name="baseIRI" select="$baseIRI"/>
                     </xsl:call-template>
                 </xsl:otherwise>
-            </xsl:choose>
+            </xsl:choose>-->
         </rdf:Description>
     </xsl:template>
     

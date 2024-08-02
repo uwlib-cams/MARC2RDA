@@ -300,17 +300,48 @@
     </xsl:function>
     
     
-    <xsl:function name="uwf:defaultProp">
+    <xsl:function name="uwf:defaultAgentProp">
         <xsl:param name="field"/>
         <xsl:param name="fieldType"/>
         <xsl:param name="domain"/>
         <xsl:param name="objIRI"/>
         <xsl:param name="objString"/>
         <xsl:choose>
+            <xsl:when test="$domain = 'work'">
+                <xsl:choose>
+                    <xsl:when test="starts-with($field/@tag, '1')">
+                        <!-- 1XX -->
+                        <xsl:choose>
+                            <xsl:when test="($fieldType = 'X00' and  ($field/@ind1 = '0' or $field/@ind1 = '1' or $field/@ind1 = '2'))">
+                                <!-- person -->
+                                <xsl:comment>Default relationship property used for <xsl:value-of select="$objIRI"/></xsl:comment>
+                                <xsl:element name="{'rdawo:P10312'}">
+                                    <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
+                                </xsl:element>
+                            </xsl:when>
+                            <xsl:when test="$fieldType = 'X00' and $field/@ind1 = '3'">
+                                <!-- family -->
+                                <xsl:comment>Default relationship property used for <xsl:value-of select="$objIRI"/></xsl:comment>
+                                <xsl:element name="{'rdawo:P10313'}">
+                                    <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
+                                </xsl:element>
+                            </xsl:when>
+                            <xsl:when test="$fieldType = 'X10' or $fieldType = 'X11'">
+                                <!-- corporate body -->
+                                <xsl:comment>Default relationship property used for <xsl:value-of select="$objIRI"/></xsl:comment>
+                                <xsl:element name="{'rdawo:P10314'}">
+                                    <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
+                                </xsl:element>
+                            </xsl:when>
+                            <xsl:otherwise/>
+                        </xsl:choose>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="$domain = 'manifestation'">
                 <xsl:choose>
-                    <xsl:when test="starts-with($field/@tag, '1') or starts-with($field/@tag, '7')">
-                        <!-- 1XX and 7XX -->
+                    <xsl:when test="starts-with($field/@tag, '7')">
+                        <!-- 7XX -->
                         <xsl:choose>
                             <xsl:when test="($fieldType = 'X00' and  ($field/@ind1 = '0' or $field/@ind1 = '1' or $field/@ind1 = '2'))">
                                 <!-- person -->
@@ -356,27 +387,27 @@
                     </xsl:when>
                 </xsl:choose>
             </xsl:when>
-            <xsl:when test="$domain = 'agent'">
+<!--            <xsl:when test="$domain = 'agent'">
                 <xsl:choose>
                     <xsl:when test="starts-with($field/@tag, '1') or starts-with($field/@tag, '7')">
-                        <!-- 1XX and 7XX -->
+                        <!-\- 1XX and 7XX -\->
                         <xsl:choose>
                             <xsl:when test="($fieldType = 'X00' and  ($field/@ind1 = '0' or $field/@ind1 = '1' or $field/@ind1 = '2'))">
-                                <!-- person -->
+                                <!-\- person -\->
                                 <xsl:comment>Default relationship property used for <xsl:value-of select="$objIRI"/></xsl:comment>
                                 <xsl:element name="{'rdaao:P50313'}">
                                     <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
                                 </xsl:element>
                             </xsl:when>
                             <xsl:when test="$fieldType = 'X00' and $field/@ind1 = '3'">
-                                <!-- family -->
+                                <!-\- family -\->
                                 <xsl:comment>Default relationship property used for <xsl:value-of select="$objIRI"/></xsl:comment>
                                 <xsl:element name="{'rdaao:P50322'}">
                                     <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
                                 </xsl:element>
                             </xsl:when>
                             <xsl:when test="$fieldType = 'X10' or $fieldType = 'X11'">
-                                <!-- corporate body -->
+                                <!-\- corporate body -\->
                                 <xsl:comment>Default relationship property used for <xsl:value-of select="$objIRI"/></xsl:comment>
                                 <xsl:element name="{'rdaao:P50331'}">
                                     <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
@@ -386,7 +417,7 @@
                         </xsl:choose>
                     </xsl:when>
                 </xsl:choose>
-            </xsl:when>
+            </xsl:when>-->
             <xsl:otherwise/>
         </xsl:choose>
     </xsl:function>
@@ -402,10 +433,10 @@
     
         <!-- domain from field template mode -->
         <xsl:param name="domain"/>
+        <!-- IRI generated from field, this is a temporary value for now -->
+        <xsl:param name="agentIRI"/>
         
         <!-- ***** VARIABLES ****** -->
-        <!-- IRI generated from field, this is a temporary value for now -->
-        <xsl:variable name="agentIRI" select="uwf:agentIRI(.)"/>
         
         <!-- Access point -->
         <xsl:variable name="agentAP" select="uwf:agentAccessPoint(.)"/>
@@ -437,7 +468,7 @@
             <!-- no subfields have a match -->
             <!-- if no $4$e$j match, this needs to be a default value, there's no point doing any further lookup -->
             <xsl:when test="$anyMatch = 'DEFAULT'">
-                <xsl:copy-of select="uwf:defaultProp(., $fieldType, $domain, $agentIRI, $agentAP)"/>
+                <xsl:copy-of select="uwf:defaultAgentProp(., $fieldType, $domain, $agentIRI, $agentAP)"/>
             </xsl:when>
             
             <!-- otherwise at least one does -->
@@ -505,7 +536,7 @@
                         </xsl:when>
                         <xsl:when test="contains($sub4Marc, 'DEFAULT')">
                             <!-- this means there's a match but multiple domains - we default-->
-                            <xsl:copy-of select="uwf:defaultProp(.., $fieldType, $domain, $agentIRI, $agentAP)"/>
+                            <xsl:copy-of select="uwf:defaultAgentProp(.., $fieldType, $domain, $agentIRI, $agentAP)"/>
                         </xsl:when>
                         <xsl:otherwise>
                             <!-- there was a match and not multiple domains, use given RDA prop IRI from table -->
@@ -536,7 +567,7 @@
                         </xsl:when>
                         <xsl:when test="contains($subEMarc, 'DEFAULT')">
                             <!-- this means there's a match but multiple domains - we default-->
-                            <xsl:copy-of select="uwf:defaultProp(.., $fieldType, $domain, $agentIRI, $agentAP)"/>
+                            <xsl:copy-of select="uwf:defaultAgentProp(.., $fieldType, $domain, $agentIRI, $agentAP)"/>
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:if test="$subEMarc/uwmisc:domain = $domain">
@@ -568,7 +599,7 @@
                             </xsl:when>
                             <xsl:when test="contains($subJMarc, 'DEFAULT')">
                                 <!-- this means there's a match but multiple domains - we default-->
-                                <xsl:copy-of select="uwf:defaultProp(.., $fieldType, $domain, $agentIRI, $agentAP)"/>
+                                <xsl:copy-of select="uwf:defaultAgentProp(.., $fieldType, $domain, $agentIRI, $agentAP)"/>
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:if test="$subJMarc/uwmisc:domain = $domain">
@@ -587,9 +618,9 @@
 
     <xsl:template name="handleInvRelator" expand-text="true">
         <xsl:param name="baseIRI"/>
+        <xsl:param name="agentIRI"/>
         <!-- ***** VARIABLES ****** -->
         <!-- IRI generated from field, this is a temporary value for now -->
-        <xsl:variable name="agentIRI" select="uwf:agentIRI(.)"/>
         <xsl:variable name="worIRI" select="concat($baseIRI, 'wor')"/>
         <xsl:variable name="expIRI" select="concat($baseIRI, 'exp')"/>
         <xsl:variable name="manIRI" select="concat($baseIRI, 'man')"/>
@@ -613,7 +644,7 @@
             <!-- no subfields have a match -->
             <!-- if no $4$e$j match, this needs to be a default value, there's no point doing any further lookup -->
             <xsl:when test="$anyMatch = 'DEFAULT'">
-                <xsl:copy-of select="uwf:defaultProp(., $fieldType, 'agent', $manIRI, '')"/>
+                <xsl:copy-of select="uwf:defaultAgentProp(., $fieldType, 'agent', $manIRI, '')"/>
             </xsl:when>
             
             <!-- otherwise at least one does -->
@@ -708,7 +739,7 @@
                         </xsl:when>
                         <xsl:when test="contains($sub4Marc, 'DEFAULT')">
                             <!-- this means there's a match but multiple domains - we default-->
-                            <xsl:copy-of select="uwf:defaultProp(.., $fieldType, 'agent', $manIRI, '')"/>
+                            <xsl:copy-of select="uwf:defaultAgentProp(.., $fieldType, 'agent', $manIRI, '')"/>
                         </xsl:when>
                         <xsl:otherwise>
                             <!-- there was a match and not multiple domains, use given RDA prop IRI from table -->
@@ -743,7 +774,7 @@
                             </xsl:when>
                             <xsl:when test="contains($subEMarc, 'DEFAULT')">
                                 <!-- this means there's a match but multiple domains - we default-->
-                                <xsl:copy-of select="uwf:defaultProp(.., $fieldType, 'agent', $manIRI, '')"/>
+                                <xsl:copy-of select="uwf:defaultAgentProp(.., $fieldType, 'agent', $manIRI, '')"/>
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- there was a match and not multiple domains, use given RDA prop IRI from table -->
@@ -779,7 +810,7 @@
                             </xsl:when>
                             <xsl:when test="contains($subJMarc, 'DEFAULT')">
                                 <!-- this means there's a match but multiple domains - we default-->
-                                <xsl:copy-of select="uwf:defaultProp(.., $fieldType, 'agent', $manIRI, '')"/>
+                                <xsl:copy-of select="uwf:defaultAgentProp(.., $fieldType, 'agent', $manIRI, '')"/>
                             </xsl:when>
                             <xsl:otherwise>
                                 <!-- there was a match and not multiple domains, use given RDA prop IRI from table -->
@@ -812,6 +843,7 @@
     <xsl:template name="handle1XXNoRelator" expand-text="true">
         <xsl:param name="domain"/>
         <xsl:param name="baseIRI"/>
+        <xsl:param name="agentIRI"/>
         <xsl:choose>
             <!-- if 1XX has no relator and there is a 7XX field -->
             <xsl:when test="../marc:datafield[@tag = '700'] or ../marc:datafield[@tag = '710'] or ../marc:datafield[@tag = '711'] or ../marc:datafield[@tag = '720']">
@@ -844,6 +876,7 @@
                                 <xsl:otherwise>
                                     <xsl:call-template name="handleRelator">
                                         <xsl:with-param name="domain" select="$domain"/>
+                                        <xsl:with-param name="agentIRI" select="$agentIRI"/>
                                     </xsl:call-template>
                                 </xsl:otherwise>
                             </xsl:choose>
@@ -851,13 +884,13 @@
                     </xsl:when>
                     <xsl:otherwise>
                         <!-- 7XXs had no 'joint' or 'jt' subfields -->
-                       <xsl:copy-of select="uwf:defaultProp(., uwf:fieldType(@tag), $domain, uwf:agentIRI(.), uwf:agentAccessPoint(.))"/>
+                       <xsl:copy-of select="uwf:defaultAgentProp(., uwf:fieldType(@tag), $domain, $agentIRI, uwf:agentAccessPoint(.))"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
             <xsl:otherwise>
                 <!-- no 7XX fields -->
-                <xsl:copy-of select="uwf:defaultProp(., uwf:fieldType(@tag), $domain, uwf:agentIRI(.), uwf:agentAccessPoint(.))"/>
+                <xsl:copy-of select="uwf:defaultAgentProp(., uwf:fieldType(@tag), $domain, $agentIRI, uwf:agentAccessPoint(.))"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
