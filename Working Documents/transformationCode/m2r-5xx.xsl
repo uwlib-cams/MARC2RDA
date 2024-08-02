@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:java="java:edu.uwlib.cams.RdfPredicateExtractor"
     xmlns:marc="http://www.loc.gov/MARC21/slim"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ex="http://fakeIRI.edu/"
@@ -21,8 +22,10 @@
     xmlns:rdan="http://rdaregistry.info/Elements/n/"
     xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
     xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
-    xmlns:uwf="http://universityOfWashington/functions" xmlns:fake="http://fakePropertiesForDemo"
-    exclude-result-prefixes="marc ex uwf" version="3.0">
+    xmlns:uwf="http://universityOfWashington/functions"
+    xmlns:uwmisc="http://uw.edu/all-purpose-namespace/"
+    xmlns:fake="http://fakePropertiesForDemo"
+    exclude-result-prefixes="marc ex uwf uwmisc java" version="3.0">
     <xsl:include href="m2r-5xx-named.xsl"/>
     <xsl:import href="m2r-functions.xsl"/>
     <xsl:import href="getmarc.xsl"/>
@@ -310,6 +313,7 @@
         mode="exp" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:call-template name="getmarc"/>
+        <xsl:variable name="placeUris" select="document('lookup/placeUris.xml')/uwmisc:root/uwmisc:row"/>
         <xsl:if test="marc:subfield[@code = 'a']">
             <rdamd:P20071>
                 <xsl:text>Date/time and place of an event note: {marc:subfield[@code = 'a']}</xsl:text>
@@ -329,7 +333,17 @@
             <xsl:choose>
                 <xsl:when test="../marc:subfield[@code = '2']">
                     <!-- [Expression] → has related place of expression → [Place]  -->
-                    <rdamo:P50411 rdf:resource="{'http://marc2rda.edu/fake/pla/'||generate-id()}"/>
+                    <xsl:if test="../marc:subfield[@code = '0']">
+                        <xsl:variable name="p" select="."/>
+                        <xsl:variable name="uri" select="../marc:subfield[@code = '0']"/>
+                        <xsl:variable name="types" select="tokenize(java:getFirstLevelTypes($uri))"/>
+                        <xsl:for-each select="$types">
+                            <xsl:variable name="currentUri" select="."/>
+                            <xsl:if test="$placeUris[. = $currentUri]">
+                                <rdamo:P50411 rdf:resource="{'http://marc2rda.edu/fake/pla/'||generate-id($p)}"/>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:if>
                 </xsl:when>
                 <xsl:otherwise> <!-- if there is no $2 -->
                     <!-- [Expression] → has related place of expression → "$p value" -->
