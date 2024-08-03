@@ -986,6 +986,36 @@
                                             </xsl:otherwise>
                                         </xsl:choose>
                                     </xsl:when>
+                                    <!-- f may be part of LC's tape configuration vocabulary -->
+                                    <xsl:when test="$subfield/@code = 'f'">
+                                        <xsl:variable name="lcIRI" select="uwf:lcTermLookup('Tape Configuration', $subfield)"/>  
+                                        <xsl:choose>
+                                            <xsl:when test="$lcIRI">
+                                                <xsl:element name="rdam:{$propertyNum}">
+                                                    <xsl:attribute name="rdf:resource" select="$lcIRI"/>
+                                                </xsl:element>
+                                                <xsl:if test="../marc:subfield[@code = '3']">
+                                                    <xsl:call-template name="F344-xx-3">
+                                                        <xsl:with-param name="sub3" select="../marc:subfield[@code = '3']"/>
+                                                        <xsl:with-param name="subfield" select="$subfield"/>
+                                                        <xsl:with-param name="value" select="$lcIRI"/>
+                                                    </xsl:call-template>
+                                                </xsl:if>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <xsl:element name="rdamd:{$propertyNum}">
+                                                    <xsl:value-of select="$subfield"/>
+                                                </xsl:element>
+                                                <xsl:if test="../marc:subfield[@code = '3']">
+                                                    <xsl:call-template name="F344-xx-3">
+                                                        <xsl:with-param name="sub3" select="../marc:subfield[@code = '3']"/>
+                                                        <xsl:with-param name="subfield" select="$subfield"/>
+                                                        <xsl:with-param name="value" select="$subfield"/>
+                                                    </xsl:call-template>
+                                                </xsl:if>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                    </xsl:when>
                                     <xsl:otherwise>
                                         <xsl:element name="rdamd:{$propertyNum}">
                                             <xsl:value-of select="$subfield"/>

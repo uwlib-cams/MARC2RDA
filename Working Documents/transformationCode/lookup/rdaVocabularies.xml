@@ -221,4 +221,9 @@
         <lookupDoc iri="http://id.loc.gov/vocabulary/mplayspeed.rdf"/>
         <baseIRI iri="http://id.loc.gov/vocabulary/mplayspeed/"/>
     </row>
+    <row>
+        <vocabulary>Tape Configuration</vocabulary>
+        <lookupDoc iri="http://id.loc.gov/vocabulary/mtapeconfig.rdf"/>
+        <baseIRI iri="http://id.loc.gov/vocabulary/mtapeconfig/"/>
+    </row>
 </root>

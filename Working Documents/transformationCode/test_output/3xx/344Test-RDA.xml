@@ -63,7 +63,7 @@
       <fake:marcfield>F344 ## $e edge track $2 rdatc</fake:marcfield>
       <rdam:P30161 rdf:resource="http://rdaregistry.info/termList/trackConfig/1002"/>
       <fake:marcfield>F344 ## $f 12 track</fake:marcfield>
-      <rdamd:P30185>12 track</rdamd:P30185>
+      <rdam:P30185 rdf:resource="http://id.loc.gov/vocabulary/mtapeconfig/12"/>
       <fake:marcfield>F344 ## $g stereo $2 rdacpc</fake:marcfield>
       <rdam:P30184 rdf:resource="http://rdaregistry.info/termList/configPlayback/1002"/>
       <fake:marcfield>F344 ## $h Dolby-B encoded $2 rdaspc</fake:marcfield>
