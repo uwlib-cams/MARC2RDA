@@ -41,20 +41,25 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/340-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/340-test1exp"/>
-      <fake:marcfield>F344 ## $a analog $2 rdatr</fake:marcfield>
+      <fake:marcfield>F344 ## $a analog $2 rdatr $3 part</fake:marcfield>
       <rdam:P30172 rdf:resource="http://rdaregistry.info/termList/typeRec/1001"/>
+      <rdamd:P30137>Type of recording http://rdaregistry.info/termList/typeRec/1001 applies to part</rdamd:P30137>
       <fake:marcfield>F344 ## $b optical $2 rdarm</fake:marcfield>
       <rdam:P30206 rdf:resource="http://rdaregistry.info/termList/recMedium/1003"/>
-      <fake:marcfield>F344 ## $c 78 rpm</fake:marcfield>
+      <fake:marcfield>F344 ## $c 78 rpm $3 part</fake:marcfield>
       <rdam:P30201 rdf:resource="http://id.loc.gov/vocabulary/mplayspeed/d"/>
-      <fake:marcfield>F344 ## $c 1.4 m. per second</fake:marcfield>
+      <rdamd:P30137>Playing speed http://id.loc.gov/vocabulary/mplayspeed/d applies to part</rdamd:P30137>
+      <fake:marcfield>F344 ## $c 1.4 m. per second $3 part</fake:marcfield>
       <rdamd:P30201>1.4 m. per second</rdamd:P30201>
+      <rdamd:P30137>Playing speed 1.4 m. per second applies to part</rdamd:P30137>
       <fake:marcfield>F344 ## $d coarse groove $2 rdagw</fake:marcfield>
       <rdam:P30308 rdf:resource="http://rdaregistry.info/termList/grooveWidth/1001"/>
-      <fake:marcfield>F344 ## $d fine</fake:marcfield>
+      <fake:marcfield>F344 ## $d fine $3 part</fake:marcfield>
       <rdam:P30307 rdf:resource="http://rdaregistry.info/termList/groovePitch/1005"/>
-      <fake:marcfield>F344 ## $d something else $2 source</fake:marcfield>
+      <rdamd:P30137>Groove pitch http://rdaregistry.info/termList/groovePitch/1005 applies to part</rdamd:P30137>
+      <fake:marcfield>F344 ## $d something else $2 source $3 part</fake:marcfield>
       <rdam:P30164 rdf:resource="http://marc2rda.edu/fake/concept/source/somethingelse"/>
+      <rdamd:P30137>Groove characteristic http://marc2rda.edu/fake/concept/source/somethingelse applies to part</rdamd:P30137>
       <fake:marcfield>F344 ## $e edge track $2 rdatc</fake:marcfield>
       <rdam:P30161 rdf:resource="http://rdaregistry.info/termList/trackConfig/1002"/>
       <fake:marcfield>F344 ## $f 12 track</fake:marcfield>

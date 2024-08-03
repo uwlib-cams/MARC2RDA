@@ -9,6 +9,7 @@
         <marc:datafield tag="344" ind1=" " ind2=" ">
             <marc:subfield code="a">analog</marc:subfield>
             <marc:subfield code="2">rdatr</marc:subfield>
+            <marc:subfield code="3">part</marc:subfield>
         </marc:datafield>
         
         <marc:datafield tag="344" ind1=" " ind2=" ">
@@ -18,10 +19,12 @@
         
         <marc:datafield tag="344" ind1=" " ind2=" ">
             <marc:subfield code="c">78 rpm</marc:subfield>
+            <marc:subfield code="3">part</marc:subfield>
         </marc:datafield>
         
         <marc:datafield tag="344" ind1=" " ind2=" ">
             <marc:subfield code="c">1.4 m. per second</marc:subfield>
+            <marc:subfield code="3">part</marc:subfield>
         </marc:datafield>
         
         <marc:datafield tag="344" ind1=" " ind2=" ">
@@ -31,11 +34,13 @@
         
         <marc:datafield tag="344" ind1=" " ind2=" ">
             <marc:subfield code="d">fine</marc:subfield>
+            <marc:subfield code="3">part</marc:subfield>
         </marc:datafield>
         
         <marc:datafield tag="344" ind1=" " ind2=" ">
             <marc:subfield code="d">something else</marc:subfield>
             <marc:subfield code="2">source</marc:subfield>
+            <marc:subfield code="3">part</marc:subfield>
         </marc:datafield>
         
         <marc:datafield tag="344" ind1=" " ind2=" ">

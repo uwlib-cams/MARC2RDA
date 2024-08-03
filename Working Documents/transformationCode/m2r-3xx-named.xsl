@@ -1022,7 +1022,17 @@
                 <xsl:text>Playing speed {$value}</xsl:text>
             </xsl:if>
             <xsl:if test="$subfield/@code = 'd'">
-                
+                <xsl:choose>
+                    <xsl:when test="(text() = 'fine') or (text() = 'standard')">
+                        <xsl:text>Groove pitch {$value}</xsl:text>
+                    </xsl:when>
+                    <xsl:when test="(text() = 'coarse groove') or (text() = 'microgroove')">
+                        <xsl:text>Groove width {$value}</xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:text>Groove characteristic {$value}</xsl:text>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:if>
             <xsl:if test="$subfield/@code = 'e'">
                 <xsl:text>Track configuration {$value}</xsl:text>
