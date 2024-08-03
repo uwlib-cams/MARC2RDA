@@ -24,7 +24,9 @@
          xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
          xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
    <rdf:Description rdf:about="http://fakeIRI2.edu/500-testwor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/500-testexp"/>
@@ -42,38 +44,38 @@
       <fake:marcfield>F500 ## $a General note, not 5</fake:marcfield>
       <rdamd:P30137>General note, not 5</rdamd:P30137>
       <fake:marcfield>F500 ## $a General note with 5 $5 wau</fake:marcfield>
-      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/500-testited16e9"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/500-testited17e9"/>
       <fake:marcfield>F500 ## $a General note, linked 880 $6 880-01</fake:marcfield>
       <rdamd:P30137>General note, linked 880</rdamd:P30137>
       <rdamd:P30137>Alternate 880 note</rdamd:P30137>
       <fake:marcfield>F500 ## $a General note 5 and 3 $3 Volume 9 $5 aacc $6 880-02</fake:marcfield>
-      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/500-testited16e24"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/500-testited17e24"/>
       <fake:marcfield>F880 ## $a 880 note no related 500 $6 500-00</fake:marcfield>
       <rdamd:P30137>880 note no related 500</rdamd:P30137>
       <fake:marcfield>F880 ## $a 880 note no related 500 with 5 $5 wauc $6 500-00</fake:marcfield>
-      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/500-testited16e47"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/500-testited17e47"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/500-testited16e9">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/500-testited17e9">
       <fake:marcfield>F500 ## $a General note with 5 $5 wau</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ited16e9</rdaid:P40001>
+      <rdaid:P40001>ited17e9</rdaid:P40001>
       <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/500-testman"/>
       <rdaid:P40028>General note with 5</rdaid:P40028>
       <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/wau"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/500-testited16e24">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/500-testited17e24">
       <fake:marcfield>F500 ## $a General note 5 and 3 $3 Volume 9 $5 aacc $6 880-02</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ited16e24</rdaid:P40001>
+      <rdaid:P40001>ited17e24</rdaid:P40001>
       <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/500-testman"/>
       <rdaid:P40028>General note 5 and 3 (Applies to: Volume 9)</rdaid:P40028>
       <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/aacc"/>
       <rdaid:P40028>Alternate 880 note missing a 5 (Applies to: Volume 9)</rdaid:P40028>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/500-testited16e47">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/500-testited17e47">
       <fake:marcfield>F880 ## $a 880 note no related 500 with 5 $5 wauc $6 500-00</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ited16e47</rdaid:P40001>
+      <rdaid:P40001>ited17e47</rdaid:P40001>
       <rdaio:P40049 rdf:resource="http://fakeIRI2.edu/500-testman"/>
       <rdaid:P40028>880 note no related 500 with 5</rdaid:P40028>
       <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/wauc"/>
