@@ -216,4 +216,9 @@
         <lookupDoc iri="http://www.rdaregistry.info/xml/termList/videoFormat.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/videoFormat"/>
     </row>
+    <row>
+        <vocabulary>Playing Speed</vocabulary>
+        <lookupDoc iri="http://id.loc.gov/vocabulary/mplayspeed.rdf"/>
+        <baseIRI iri="http://id.loc.gov/vocabulary/mplayspeed/"/>
+    </row>
 </root>

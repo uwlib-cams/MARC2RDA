@@ -155,6 +155,103 @@
         <xsl:call-template name="F340-concept"/>
     </xsl:template>
     
+    <!-- 344 - Sound Characteristics -->
+    <xsl:template match="marc:datafield[@tag = '344'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '344']" 
+        mode="man">
+        <xsl:call-template name="getmarc"/>
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
+            | marc:subfield[@code = 'd']| marc:subfield[@code = 'e'] | marc:subfield[@code = 'f'] 
+            | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h'] | marc:subfield[@code = 'i']">
+            <xsl:choose>
+                <xsl:when test="@code = 'a'">
+                    <xsl:call-template name="F344-xx-a_b_c_d_e_f_g_h_i_0_1">
+                        <xsl:with-param name="propertyNum">P30172</xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="@code = 'b'">
+                    <xsl:call-template name="F344-xx-a_b_c_d_e_f_g_h_i_0_1">
+                        <xsl:with-param name="propertyNum">P30206</xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="@code = 'c'">
+                    <xsl:call-template name="F344-xx-a_b_c_d_e_f_g_h_i_0_1">
+                        <xsl:with-param name="propertyNum">P30201</xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="@code = 'd'">
+                    <xsl:choose>
+                        <xsl:when test="(text() = 'fine') or (text() = 'standard')">
+                            <xsl:variable name="rdaIRI" select="uwf:rdaTermLookup('rdagrp', .)"/>                                        
+                            <xsl:if test="$rdaIRI">
+                                <rdam:P30307>
+                                    <xsl:attribute name="rdf:resource" select="$rdaIRI"/>
+                                </rdam:P30307>
+                                <xsl:if test="../marc:subfield[@code = '3']">
+                                    <xsl:call-template name="F344-xx-3">
+                                        <xsl:with-param name="sub3" select="../marc:subfield[@code = '3']"/>
+                                        <xsl:with-param name="subfield" select="."/>
+                                        <xsl:with-param name="value" select="$rdaIRI"/>
+                                    </xsl:call-template>
+                                </xsl:if>
+                            </xsl:if>
+                        </xsl:when>
+                        <xsl:when test="(text() = 'coarse groove') or (text() = 'microgroove')">
+                            <xsl:variable name="rdaIRI" select="uwf:rdaTermLookup('rdagw', .)"/>                                        
+                            <xsl:if test="$rdaIRI">
+                                <rdam:P30308>
+                                    <xsl:attribute name="rdf:resource" select="$rdaIRI"/>
+                                </rdam:P30308>
+                                <xsl:if test="../marc:subfield[@code = '3']">
+                                    <xsl:call-template name="F344-xx-3">
+                                        <xsl:with-param name="sub3" select="../marc:subfield[@code = '3']"/>
+                                        <xsl:with-param name="subfield" select="."/>
+                                        <xsl:with-param name="value" select="$rdaIRI"/>
+                                    </xsl:call-template>
+                                </xsl:if>
+                            </xsl:if>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:call-template name="F344-xx-a_b_c_d_e_f_g_h_i_0_1">
+                                <xsl:with-param name="propertyNum">P30164</xsl:with-param>
+                            </xsl:call-template>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:when>
+                <xsl:when test="@code = 'e'">
+                    <xsl:call-template name="F344-xx-a_b_c_d_e_f_g_h_i_0_1">
+                        <xsl:with-param name="propertyNum">P30161</xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="@code = 'f'">
+                    <xsl:call-template name="F344-xx-a_b_c_d_e_f_g_h_i_0_1">
+                        <xsl:with-param name="propertyNum">P30185</xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="@code = 'g'">
+                    <xsl:call-template name="F344-xx-a_b_c_d_e_f_g_h_i_0_1">
+                        <xsl:with-param name="propertyNum">P30184</xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="@code = 'h'">
+                    <xsl:call-template name="F344-xx-a_b_c_d_e_f_g_h_i_0_1">
+                        <xsl:with-param name="propertyNum">P30138</xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="@code = 'i'">
+                    <xsl:call-template name="F344-xx-a_b_c_d_e_f_g_h_i_0_1">
+                        <xsl:with-param name="propertyNum">P30454</xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:otherwise/>
+            </xsl:choose>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '344'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '344-00']"
+        mode="con">
+        <xsl:call-template name="F344-concept"/>
+    </xsl:template>
+    
     <!-- 346 - Video Characteristics -->
     <xsl:template match="marc:datafield[@tag = '346'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '346']" 
         mode="man">

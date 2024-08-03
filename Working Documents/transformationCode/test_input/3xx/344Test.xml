@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">340-test1</marc:controlfield>
+        
+        <marc:datafield tag="344" ind1=" " ind2=" ">
+            <marc:subfield code="a">analog</marc:subfield>
+            <marc:subfield code="2">rdatr</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="344" ind1=" " ind2=" ">
+            <marc:subfield code="b">optical</marc:subfield>
+            <marc:subfield code="2">rdarm</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="344" ind1=" " ind2=" ">
+            <marc:subfield code="c">78 rpm</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="344" ind1=" " ind2=" ">
+            <marc:subfield code="c">1.4 m. per second</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="344" ind1=" " ind2=" ">
+            <marc:subfield code="d">coarse groove</marc:subfield>
+            <marc:subfield code="2">rdagw</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="344" ind1=" " ind2=" ">
+            <marc:subfield code="d">fine</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="344" ind1=" " ind2=" ">
+            <marc:subfield code="d">something else</marc:subfield>
+            <marc:subfield code="2">source</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="344" ind1=" " ind2=" ">
+            <marc:subfield code="e">edge track</marc:subfield>
+            <marc:subfield code="2">rdatc</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="344" ind1=" " ind2=" ">
+            <marc:subfield code="f">12 track</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="344" ind1=" " ind2=" ">
+            <marc:subfield code="g">stereo</marc:subfield>
+            <marc:subfield code="2">rdacpc</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="344" ind1=" " ind2=" ">
+            <marc:subfield code="h">Dolby-B encoded</marc:subfield>
+            <marc:subfield code="2">rdaspc</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="344" ind1=" " ind2=" ">
+            <marc:subfield code="i">sound</marc:subfield>
+            <marc:subfield code="0">http://id.loc.gov/vocabulary/msoundcontent/sound</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="344" ind1=" " ind2=" ">
+            <marc:subfield code="i">silent</marc:subfield>
+            <marc:subfield code="0">http://rdaregistry.info/termList/soundCont/1002</marc:subfield>
+            <marc:subfield code="2">rdasco</marc:subfield>
+        </marc:datafield>
+        
+        <!-- should use text values, ignoring IRI -->
+        <marc:datafield tag="344" ind1=" " ind2=" ">
+            <marc:subfield code="a">analog</marc:subfield>
+            <marc:subfield code="b">optical</marc:subfield>
+            <marc:subfield code="i">silent</marc:subfield>
+            <marc:subfield code="0">http://rdaregistry.info/termList/soundCont/1002</marc:subfield>
+        </marc:datafield>
+        
+        <!-- should use 1 value -->
+        <marc:datafield tag="344" ind1=" " ind2=" ">
+            <marc:subfield code="i">silent</marc:subfield>
+            <marc:subfield code="0">zero</marc:subfield>
+            <marc:subfield code="1">http://rdaregistry.info/termList/soundCont/1002</marc:subfield>
+        </marc:datafield>
+        
+        <!-- this one shouldn't output anything -->
+        <marc:datafield tag="344" ind1=" " ind2=" ">
+            <marc:subfield code="1">http://rdaregistry.info/termList/soundCont/1002</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

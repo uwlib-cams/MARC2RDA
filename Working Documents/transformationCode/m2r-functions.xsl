@@ -315,6 +315,7 @@
         these documents can then be used to match terms and codes from rda vocabularies to their IRIs-->
     <xsl:variable name="lookupRdaDoc" select="document('lookup/rdaVocabularies.xml')"/>
     <xsl:key name="sourceCode" match="uwmisc:row" use="uwmisc:sourceCode"/>
+    <xsl:key name="vocabName" match="uwmisc:row" use="uwmisc:vocabulary"/>
     <xsl:key name="rdaTerm" match="skos:Concept" use="skos:prefLabel"/>
     <xsl:key name="lcTerm" match="madsrdf:Authority" use="madsrdf:authoritativeLabel"/>
     <xsl:key name="rdaCode" match="skos:Concept" use="@rdf:about"/>
@@ -366,6 +367,30 @@
                     <xsl:when test="contains($lookupDoc, 'rdaregistry')">
                         <xsl:if test="document($lookupDoc)/rdf:RDF/skos:Concept/key('rdaCode', $codeIRI)">
                             <xsl:value-of select="$codeIRI"/>
+                        </xsl:if>   
+                    </xsl:when>
+                    <xsl:otherwise/>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise/>
+        </xsl:choose>
+    </xsl:function>
+    
+    <xsl:function name="uwf:lcTermLookup" expand-text="yes">
+        <xsl:param name="vocabName"/>
+        <xsl:param name="term"/>
+        <xsl:choose>
+            <xsl:when test="$lookupRdaDoc/uwmisc:root/uwmisc:row/key('vocabName', $vocabName)">
+                <xsl:variable name="lookupDoc" select="$lookupRdaDoc/uwmisc:root/uwmisc:row/key('vocabName', $vocabName)/uwmisc:lookupDoc/@iri"/>
+                <xsl:choose>
+                    <xsl:when test="contains($lookupDoc, 'id.loc.gov')">
+                        <xsl:if test="document($lookupDoc)/rdf:RDF/madsrdf:MADSScheme/madsrdf:hasMADSSchemeMember/madsrdf:Authority/key('lcTerm', $term)">
+                            <xsl:value-of select="document($lookupDoc)/rdf:RDF/madsrdf:MADSScheme/madsrdf:hasMADSSchemeMember/madsrdf:Authority/key('lcTerm', $term)/@rdf:about"/>
+                        </xsl:if>
+                    </xsl:when>
+                    <xsl:when test="contains($lookupDoc, 'rdaregistry')">
+                        <xsl:if test="document($lookupDoc)/rdf:RDF/skos:Concept/key('rdaTerm', $term)">
+                            <xsl:value-of select="document($lookupDoc)/rdf:RDF/skos:Concept/key('rdaTerm', $term)/@rdf:about"/>
                         </xsl:if>   
                     </xsl:when>
                     <xsl:otherwise/>
