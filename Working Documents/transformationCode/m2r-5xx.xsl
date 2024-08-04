@@ -344,6 +344,17 @@
                             </xsl:if>
                         </xsl:for-each>
                     </xsl:if>
+                    <xsl:if test="../marc:subfield[@code = '1']">
+                        <xsl:variable name="p" select="."/>
+                        <xsl:variable name="uri" select="../marc:subfield[@code = '1']"/>
+                        <xsl:variable name="types" select="tokenize(java:getFirstLevelTypes($uri))"/>
+                        <xsl:for-each select="$types">
+                            <xsl:variable name="currentUri" select="."/>
+                            <xsl:if test="$placeUris[. = $currentUri]">
+                                <rdamo:P50411 rdf:resource="{'http://marc2rda.edu/fake/pla/'||generate-id($p)}"/>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:if>
                 </xsl:when>
                 <xsl:otherwise> <!-- if there is no $2 -->
                     <!-- [Expression] → has related place of expression → "$p value" -->
