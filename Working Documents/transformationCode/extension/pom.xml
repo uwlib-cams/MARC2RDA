@@ -9,7 +9,7 @@
   <artifactId>marc2rda</artifactId>
   <version>1.0</version>
 
-  <name>MARC2RDA</name>
+  <name>MARC2RDA Extensions</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

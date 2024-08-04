@@ -1,18 +1,33 @@
+# Extensions for MARC2RDA
+
+MARC2RDA Extensions is a Java-based project designed to extend the capabilities of the [MARC2RDA](https://github.com/uwlib-cams/MARC2RDA). It enables the Oxygen XML Editor to execute Java through Saxon, facilitating the extraction of RDF types from various URIs.
+
+## Extensions List
+
+### RdfPredicateExtractor
+
+RdfPredicateExtractor is a Java application designed to fetch RDF models from various URI domains and extract the first-level RDF types of a given resource. It handles different domain-specific rules for constructing RDF URLs and supports multiple content types.
+
+## Prerequisites
+
+- Java Development Kit (JDK) 11 or higher
+- Maven 22 or higher https://maven.apache.org/download.cgi
+
 ## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+### Build the project
 
-## Folder Structure
+```sh
+mvn clean package
+```
 
-The workspace contains two folders by default, where:
+### Run the application
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+```sh
+java -jar target/[EXT_NAME]-[VERSION_NUMBER].jar
+```
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### Local development
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+VS Code is recommend for this project...TBD
+```
