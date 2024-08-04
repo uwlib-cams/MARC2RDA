@@ -62,8 +62,15 @@ public class RdfPredicateExtractor {
                 model = tryFetchRdfModel("https://ontobee.org/ontology/rdf/GSSO?iri=" + uri);
                 resource = model.getResource(uri);
                 break;
+            case "w3id.org":
+                model = tryFetchRdfModel(
+                        "https://api.haf.vhmml.org/" + baseUri.substring(baseUri.indexOf("/") + 1).replace("haf/", "")
+                                + "/export/xml");
+                resource = model.getResource("https://w3id.org/" + baseUri.substring(baseUri.indexOf("/") + 1));
+                break;
             case "haf.vhmml.org":
-                model = tryFetchRdfModel("https://api." + baseUri + "/export/xml");
+                model = tryFetchRdfModel(
+                        "https://api.haf.vhmml.org/" + baseUri.substring(baseUri.indexOf("/") + 1) + "/export/xml");
                 resource = model.getResource("https://w3id.org/haf/" + baseUri.substring(baseUri.indexOf("/") + 1));
                 break;
             case "lod.nal.usda.gov":
