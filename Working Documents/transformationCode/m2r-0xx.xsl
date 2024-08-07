@@ -198,7 +198,6 @@
                 <xsl:call-template name="getmarc"/>
                 <rdaid:P40001>{concat($controlNumber, 'ite', $genID)}</rdaid:P40001>
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-                <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
                 <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>
             </rdf:Description>
         </xsl:if>
@@ -363,7 +362,6 @@
             <xsl:call-template name="getmarc"/>
             <rdaid:P40001>{concat($controlNumber, 'ite', $genID)}</rdaid:P40001>
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-            <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
             <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
                 <rdaio:P40001 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
             </xsl:for-each>

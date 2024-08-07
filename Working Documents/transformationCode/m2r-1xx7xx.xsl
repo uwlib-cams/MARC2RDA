@@ -181,7 +181,6 @@
             <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                 <rdaid:P40001>{concat($controlNumber,'ite',$genID)}</rdaid:P40001>
-                <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
                 <xsl:copy-of select="$testItem"/>
             </rdf:Description>
         </xsl:if>
