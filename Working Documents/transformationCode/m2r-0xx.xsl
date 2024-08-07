@@ -56,7 +56,6 @@
                 <rdand:P80068>
                     <xsl:value-of select="translate(., ' :', '')"/>
                 </rdand:P80068>
-                <rdano:P80048 rdf:resource="{$baseIRI||'man'}"/>
                 <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
                 <xsl:if test="following-sibling::marc:subfield[@code = 'q']">
                     <rdand:P80071>
@@ -75,7 +74,6 @@
                 <rdand:P80068>
                     <xsl:value-of select="translate(., ' :', '')"/>
                 </rdand:P80068>
-                <rdano:P80048 rdf:resource="{$baseIRI||'man'}"/>
                 <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
                 <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
                 <xsl:if test="following-sibling::marc:subfield[@code = 'q']">
@@ -124,7 +122,6 @@
             <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
                 <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-                    <rdano:P80003 rdf:resource="{concat($baseIRI,'man')}"/>
                     <rdand:P80068>
                         <xsl:value-of select="."/>
                     </rdand:P80068>
@@ -178,7 +175,6 @@
         <xsl:param name="baseIRI"/>
         <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-            <rdano:P80003 rdf:resource="{concat($baseIRI,'man')}"/>
             <rdand:P80068>
                 <xsl:call-template name="F026-xx-abcde"/>
             </rdand:P80068>
@@ -377,7 +373,6 @@
                 <rdand:P80068>
                     <xsl:value-of select="."/>
                 </rdand:P80068>
-                <rdano:P80047 rdf:resource="{concat($baseIRI,'ite', $genID)}"/>
                 <rdand:P80078>GPO item number</rdand:P80078>
                 <xsl:if test="@code = 'z'">
                     <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
@@ -408,7 +403,6 @@
                 <rdand:P80068>
                     <xsl:value-of select="."/>
                 </rdand:P80068>
-                <rdano:P80048 rdf:resource="{$baseIRI||'man'}"/>
                 <rdand:P80078>Report number</rdand:P80078>
             </rdf:Description>
         </xsl:for-each>
@@ -418,7 +412,6 @@
                 <rdand:P80068>
                     <xsl:value-of select="."/>
                 </rdand:P80068>
-                <rdano:P80048 rdf:resource="{$baseIRI||'man'}"/>
                 <rdand:P80078>Report number</rdand:P80078>
                 <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
             </rdf:Description>

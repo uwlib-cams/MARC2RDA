@@ -280,22 +280,6 @@
                 <rdand:P80068>
                     <xsl:value-of select="uwf:agentAccessPoint(.)"/>
                 </rdand:P80068>
-                <xsl:choose>
-                    <xsl:when test="@tag = '100' or @tag = '700'">
-                        <xsl:choose>
-                            <xsl:when test="@ind1 = '0' or @ind1 = '1' or @ind1 = '2'">
-                                <rdano:P80107 rdf:resource="{uwf:agentIRI(.)}"/>
-                            </xsl:when>
-                            <xsl:when test="@ind1 = '3'">
-                                <rdano:P80105 rdf:resource="{uwf:agentIRI(.)}"/>
-                            </xsl:when>
-                            <xsl:otherwise/>
-                        </xsl:choose>
-                    </xsl:when>
-                    <xsl:when test="@tag = '110' or @tag = '111' or @tag = '710' or @tag = '711'">
-                        <rdano:P80103 rdf:resource="{uwf:agentIRI(.)}"/>
-                    </xsl:when>
-                </xsl:choose>
                 <xsl:comment>Has scheme of nomen here</xsl:comment>
             </rdf:Description>
         </xsl:if>
