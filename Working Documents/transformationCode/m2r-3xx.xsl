@@ -265,6 +265,50 @@
         <xsl:call-template name="F346-concept"/>
     </xsl:template>
     
+    <!-- 347 - Digital File Characteristics -->
+    
+    <xsl:template match="marc:datafield[@tag = '347'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '347']" 
+        mode="man">
+        <xsl:call-template name="getmarc"/>
+        <xsl:call-template name="F347-c"/>
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']
+            | marc:subfield[@code = 'd'] | marc:subfield[@code = 'e'] | marc:subfield[@code = 'f']">
+            <xsl:choose>
+                <xsl:when test="@code = 'a'">
+                    <xsl:call-template name="F347-xx-a_b_d_e_f_0_1">
+                        <xsl:with-param name="propertyNum">P30018</xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="@code = 'b'">
+                    <xsl:call-template name="F347-xx-a_b_d_e_f_0_1">
+                        <xsl:with-param name="propertyNum">P30096</xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="@code = 'd'">
+                    <xsl:call-template name="F347-xx-a_b_d_e_f_0_1">
+                        <xsl:with-param name="propertyNum">P30159</xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="@code = 'e'">
+                    <xsl:call-template name="F347-xx-a_b_d_e_f_0_1">
+                        <xsl:with-param name="propertyNum">P30006</xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:when test="@code = 'f'">
+                    <xsl:call-template name="F347-xx-a_b_d_e_f_0_1">
+                        <xsl:with-param name="propertyNum">P30202</xsl:with-param>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:otherwise/>
+            </xsl:choose>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '347'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '347-00']"
+        mode="con">
+        <xsl:call-template name="F347-concept"/>
+    </xsl:template>
+    
     <xsl:template
         match="marc:datafield[@tag = '380'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '380']"
         mode="wor" expand-text="yes">
@@ -301,8 +345,8 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:for-each>
-        
     </xsl:template>
+    
     <xsl:template
         match="marc:datafield[@tag = '382'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '382']"
         mode="exp">

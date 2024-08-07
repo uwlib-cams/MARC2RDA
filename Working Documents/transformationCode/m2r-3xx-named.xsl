@@ -1231,6 +1231,216 @@
         </xsl:if>
     </xsl:template>
     
+    <!-- 347 -->
+ 
+    <xsl:template name="F347-c" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'c']">
+            <rdamd:P30183>
+                <xsl:value-of select="."/>
+            </rdamd:P30183>
+            <xsl:if test="../marc:subfield[@code = '3']">
+                <xsl:call-template name="F347-xx-3">
+                    <xsl:with-param name="sub3" select="../marc:subfield[@code = '3']"/>
+                    <xsl:with-param name="subfield" select="."/>
+                    <xsl:with-param name="value" select="."/>
+                </xsl:call-template>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template name="F347-concept" expand-text="yes">
+        <xsl:if test="not(marc:subfield[@code = '1'] and count(*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3' 
+            or @code = '6' or @code = '8')]) = 1)
+            and not(contains(marc:subfield[@code = '0'], 'http') and count(*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3' 
+            or @code = '6' or @code = '8')]) = 1)">
+            <xsl:if test="marc:subfield[@code = '2']">
+                <xsl:variable name="sub2" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="linked880">
+                    <xsl:if test="@tag = '347' and marc:subfield[@code = '6']">
+                        <xsl:variable name="occNum"
+                            select="concat('347-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                        <xsl:copy-of
+                            select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]"/>
+                    </xsl:if>
+                </xsl:variable>
+                
+                <xsl:if test="not(matches($sub2, '^rda.+'))">
+                    <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'e']">
+                        <xsl:variable name="currentCode" select="@code"/>
+                        <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
+                            <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '347')"/>
+                            <xsl:if test="$linked880">
+                                <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = $currentCode]">
+                                    <xsl:copy-of select="uwf:fillConcept(., '', '', '880')"/>
+                                </xsl:for-each>
+                            </xsl:if>
+                        </rdf:Description>
+                    </xsl:for-each>
+                </xsl:if>
+            </xsl:if>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F347-xx-a_b_d_e_f_0_1" expand-text="yes">
+        <xsl:param name="propertyNum"/>
+        <xsl:variable name="subfield" select="."/>
+        <xsl:choose>
+            <xsl:when test="../marc:subfield[@code = '1'] and count(../*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3' 
+                or @code = '6' or @code = '8')]) = 1">
+                <xsl:for-each select="../marc:subfield[@code = '1']">
+                    <xsl:element name="rdam:{$propertyNum}">
+                        <xsl:attribute name="rdf:resource" select="."/>
+                    </xsl:element>
+                    <xsl:if test="../marc:subfield[@code = '3']">
+                        <xsl:call-template name="F347-xx-3">
+                            <xsl:with-param name="sub3" select="../marc:subfield[@code = '3']"/>
+                            <xsl:with-param name="subfield" select="$subfield"/>
+                            <xsl:with-param name="value" select="."/>
+                        </xsl:call-template>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:choose>
+                    <xsl:when test="contains(../marc:subfield[@code = '0'], 'http') and count(../*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3' 
+                        or @code = '6' or @code = '8')]) = 1">
+                        <xsl:for-each select="../marc:subfield[@code = '0']">
+                            <xsl:variable name="iri0" select="uwf:process0(.)"/>
+                            <xsl:if test="$iri0">
+                                <xsl:element name="rdam:{$propertyNum}">
+                                    <xsl:attribute name="rdf:resource" select="$iri0"/>
+                                </xsl:element>
+                                <xsl:if test="../marc:subfield[@code = '3']">
+                                    <xsl:call-template name="F347-xx-3">
+                                        <xsl:with-param name="sub3" select="../marc:subfield[@code = '3']"/>
+                                        <xsl:with-param name="subfield" select="$subfield"/>
+                                        <xsl:with-param name="value" select="$iri0"/>
+                                    </xsl:call-template>
+                                </xsl:if>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:choose>
+                            <!-- $2 -->
+                            <xsl:when test="../marc:subfield[@code = '2']">
+                                <xsl:variable name="sub2" select="../marc:subfield[@code = '2']"/>
+                                <xsl:choose>
+                                    <xsl:when test="matches($sub2, '^rda.+')">
+                                        <xsl:variable name="rdaIRI" select="uwf:rdaTermLookup($sub2, $subfield)"/>
+                                        <xsl:if test="$rdaIRI">
+                                            <xsl:element name="rdam:{$propertyNum}">
+                                                <xsl:attribute name="rdf:resource" select="$rdaIRI"/>
+                                            </xsl:element>
+                                            <xsl:if test="../marc:subfield[@code = '3']">
+                                                <xsl:call-template name="F347-xx-3">
+                                                    <xsl:with-param name="sub3" select="../marc:subfield[@code = '3']"/>
+                                                    <xsl:with-param name="subfield" select="$subfield"/>
+                                                    <xsl:with-param name="value" select="$rdaIRI"/>
+                                                </xsl:call-template>
+                                            </xsl:if>
+                                        </xsl:if>
+                                    </xsl:when>
+                                    <!-- if there is a $2 that is not rda (or is only 'rda') 
+                                        then a concept is minted -->
+                                    <xsl:otherwise>
+                                        <xsl:if test="../@tag = '347' or substring(../marc:subfield[@code = '6'], 1, 6) = '340-00'">
+                                            <xsl:element name="rdam:{$propertyNum}">
+                                                <xsl:attribute name="rdf:resource" select="uwf:conceptIRI($sub2, $subfield)"/>
+                                            </xsl:element>
+                                            <xsl:if test="../marc:subfield[@code = '3']">
+                                                <xsl:call-template name="F347-xx-3">
+                                                    <xsl:with-param name="sub3" select="../marc:subfield[@code = '3']"/>
+                                                    <xsl:with-param name="subfield" select="$subfield"/>
+                                                    <xsl:with-param name="value" select="uwf:conceptIRI($sub2, $subfield)"/>
+                                                </xsl:call-template>
+                                            </xsl:if>
+                                        </xsl:if>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:when>
+                            <!-- If there were not $0s, $1s, or $2s that fit the above checks, a string value is used -->
+                            <xsl:otherwise>
+                                <xsl:choose>
+                                    <xsl:when test="$subfield/@code = 'b'">
+                                        <xsl:variable name="lcIRI" select="uwf:lcTermLookup('Encoding Format', $subfield)"/>  
+                                        <xsl:choose>
+                                            <xsl:when test="$lcIRI">
+                                                <xsl:element name="rdam:{$propertyNum}">
+                                                    <xsl:attribute name="rdf:resource" select="$lcIRI"/>
+                                                </xsl:element>
+                                                <xsl:if test="../marc:subfield[@code = '3']">
+                                                    <xsl:call-template name="F347-xx-3">
+                                                        <xsl:with-param name="sub3" select="../marc:subfield[@code = '3']"/>
+                                                        <xsl:with-param name="subfield" select="$subfield"/>
+                                                        <xsl:with-param name="value" select="$lcIRI"/>
+                                                    </xsl:call-template>
+                                                </xsl:if>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <xsl:element name="rdamd:{$propertyNum}">
+                                                    <xsl:value-of select="$subfield"/>
+                                                </xsl:element>
+                                                <xsl:if test="../marc:subfield[@code = '3']">
+                                                    <xsl:call-template name="F347-xx-3">
+                                                        <xsl:with-param name="sub3" select="../marc:subfield[@code = '3']"/>
+                                                        <xsl:with-param name="subfield" select="$subfield"/>
+                                                        <xsl:with-param name="value" select="$subfield"/>
+                                                    </xsl:call-template>
+                                                </xsl:if>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:element name="rdamd:{$propertyNum}">
+                                            <xsl:value-of select="$subfield"/>
+                                        </xsl:element>
+                                        <xsl:if test="../marc:subfield[@code = '3']">
+                                            <xsl:call-template name="F347-xx-3">
+                                                <xsl:with-param name="sub3" select="../marc:subfield[@code = '3']"/>
+                                                <xsl:with-param name="subfield" select="$subfield"/>
+                                                <xsl:with-param name="value" select="$subfield"/>
+                                            </xsl:call-template>
+                                        </xsl:if>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+  
+    <xsl:template name="F347-xx-3" expand-text="yes">
+        <xsl:param name="sub3"/>
+        <xsl:param name="subfield"/>
+        <xsl:param name="value"/>
+        <rdamd:P30137>
+            <xsl:if test="$subfield/@code = 'a'">
+                <xsl:text>File type {$value}</xsl:text>
+            </xsl:if> 
+            <xsl:if test="$subfield/@code = 'b'">
+                <xsl:text>Encoding format {$value}</xsl:text>
+            </xsl:if>
+            <xsl:if test="$subfield/@code = 'c'">
+                <xsl:text>File size {$value}</xsl:text>
+            </xsl:if>
+            <xsl:if test="$subfield/@code = 'd'">
+                <xsl:text>Resolution {$value}</xsl:text>
+            </xsl:if>
+            <xsl:if test="$subfield/@code = 'e'">
+                <xsl:text>Regional encoding {$value}</xsl:text>
+            </xsl:if>
+            <xsl:if test="$subfield/@code = 'f'">
+                <xsl:text>Encoded bitrate {$value}</xsl:text>
+            </xsl:if>
+            <xsl:text> applies to {$sub3}</xsl:text>
+        </rdamd:P30137>
+    </xsl:template>
+    
+    
     <xsl:template name="F382-xx-a_b_d_p_2-exp" expand-text="yes">
         <xsl:variable name="s2code" select="marc:subfield[@code = '2']"/>
         <xsl:variable name="musiccodeschemes"

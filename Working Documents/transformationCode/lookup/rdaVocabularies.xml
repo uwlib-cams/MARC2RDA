@@ -226,4 +226,9 @@
         <lookupDoc iri="http://id.loc.gov/vocabulary/mtapeconfig.rdf"/>
         <baseIRI iri="http://id.loc.gov/vocabulary/mtapeconfig/"/>
     </row>
+    <row>
+        <vocabulary>Encoding Format</vocabulary>
+        <lookupDoc iri="http://id.loc.gov/vocabulary/mencformat.rdf"/>
+        <baseIRI iri="http://id.loc.gov/vocabulary/mencformat/"/>
+    </row>
 </root>
