@@ -269,20 +269,9 @@
             </xsl:choose>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'c']">
-            <xsl:if test="not(matches(., '[^\d\[\]]'))">
-                <rdamd:P30009>
-                    <xsl:value-of select="replace(., '[^\d]', '')"/>
-                   <!-- <xsl:choose>
-                        <xsl:when test="ends-with(., '.')">
-                            <xsl:value-of select="normalize-space(.) =>
-                                substring-before('.') => translate('[]', '')"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:value-of select="normalize-space(.) => translate('[]', '')"/>
-                        </xsl:otherwise>
-                    </xsl:choose>-->
-                </rdamd:P30009>
-            </xsl:if>
+            <xsl:call-template name="F264-xx-c">
+                <xsl:with-param name="rdaProp">rdamd:P30009</xsl:with-param>
+            </xsl:call-template>
         </xsl:for-each>
     </xsl:template>
     <!-- F264-x1-a_b_c duplicates F264-x0-a_b_c except it outputs different RDA properties-->
@@ -366,20 +355,9 @@
             </xsl:choose>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'c']">
-            <xsl:if test="not(matches(., '[^\d\[\]]'))">
-                <rdamd:P30011>
-                    <xsl:value-of select="replace(., '[^\d]', '')"/>
-                    <!--<xsl:choose>
-                        <xsl:when test="ends-with(., '.')">
-                            <xsl:value-of select="normalize-space(.) =>
-                                substring-before('.') => translate('[]', '')"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:value-of select="normalize-space(.) => translate('[]', '')"/>
-                        </xsl:otherwise>
-                    </xsl:choose>-->
-                </rdamd:P30011>
-            </xsl:if>
+            <xsl:call-template name="F264-xx-c">
+                <xsl:with-param name="rdaProp">rdamd:P30011</xsl:with-param>
+            </xsl:call-template>
         </xsl:for-each>
     </xsl:template>
     <!-- F264-x2-a_b_c duplicates F264-x0-a_b_c except it outputs different RDA properties-->
@@ -463,20 +441,9 @@
             </xsl:choose>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'c']">
-            <xsl:if test="not(matches(., '[^\d\[\]]'))">
-                <rdamd:P30008>
-                    <xsl:value-of select="replace(., '[^\d]', '')"/>
-                    <!--<xsl:choose>
-                        <xsl:when test="ends-with(., '.')">
-                            <xsl:value-of select="normalize-space(.) =>
-                                substring-before('.') => translate('[]', '')"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:value-of select="normalize-space(.) => translate('[]', '')"/>
-                        </xsl:otherwise>
-                    </xsl:choose>-->
-                </rdamd:P30008>
-            </xsl:if>
+            <xsl:call-template name="F264-xx-c">
+                <xsl:with-param name="rdaProp">rdamd:P30008</xsl:with-param>
+            </xsl:call-template>
         </xsl:for-each>
     </xsl:template>
     <!-- F264-x3-a_b_c duplicates F264-x0-a_b_c except it outputs different RDA properties-->
@@ -560,24 +527,55 @@
             </xsl:choose>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'c']">
-            <xsl:if test="not(matches(., '[^\d\[\]]'))">
-                <rdamd:P30010>
-                    <xsl:value-of select="replace(., '[^\d]', '')"/>
-                </rdamd:P30010>
-            </xsl:if>
+            <xsl:call-template name="F264-xx-c">
+                <xsl:with-param name="rdaProp">rdamd:P30010</xsl:with-param>
+            </xsl:call-template>
         </xsl:for-each>
     </xsl:template>
     
     <xsl:template name="F264-x4-c" expand-text="yes">
         <rdamd:P30137>
-            <xsl:text>Copyright date: </xsl:text>
+            <xsl:text>Copyright notice date: </xsl:text>
             <xsl:value-of select="marc:subfield[@code = 'c']" separator="; "/>
         </rdamd:P30137>
         <xsl:for-each select="marc:subfield[@code = 'c']">
-            <rdamd:P30007>
-                <xsl:value-of select="replace(., '[^\d]', '')"/>
-            </rdamd:P30007>
+            <xsl:call-template name="F264-xx-c">
+                <xsl:with-param name="rdaProp">rdamd:P30007</xsl:with-param>
+            </xsl:call-template>
         </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template name="F264-xx-c">
+        <xsl:param name="rdaProp"/>
+        <xsl:choose>
+            <!-- 1234 or [1234] -->
+            <xsl:when test="matches(., '^\[?\d\d\d\d\]?$')">
+                <!-- use as date but remove any brackets -->
+                <xsl:element name="{$rdaProp}">
+                    <xsl:value-of select="translate(., '[]', '')"/>
+                </xsl:element>
+            </xsl:when>
+            <xsl:otherwise>
+                <!-- more complicated. multiple dates, other characters, etc. -->
+                <!-- separate out all groups of 4 digits -->
+                <xsl:variable name="c">
+                    <xsl:analyze-string select="." regex="\d\d\d\d">
+                        <xsl:matching-substring>
+                            <xsl:sequence select="."/>
+                        </xsl:matching-substring>
+                    </xsl:analyze-string>
+                </xsl:variable>
+                <!-- select first group of 4 digits to use -->
+                <xsl:analyze-string select="$c[1]"
+                    regex="^\d\d\d\d">
+                    <xsl:matching-substring>
+                        <xsl:element name="{$rdaProp}">
+                            <xsl:value-of select="."/>
+                        </xsl:element>
+                    </xsl:matching-substring>
+                </xsl:analyze-string>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
 </xsl:stylesheet>

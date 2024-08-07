@@ -19,7 +19,7 @@
       <rdamd:P30176>University of Washington Libraries</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
       <rdamd:P30011>2020</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
       <fake:marcfield>F264 #4 $c ©2020</fake:marcfield>
-      <rdamd:P30137>Copyright date: ©2020</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Copyright notice date: ©2020</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30007>2020</rdamd:P30007><!--rdamd:P30007 = has copyright date-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/264-test2wor">
@@ -40,6 +40,7 @@
       <rdamd:P30111>[Yellowknife] : Northwest Territories Environment and Natural Resources, 2022.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
       <rdamd:P30088>Yellowknife</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
       <rdamd:P30176>Northwest Territories Environment and Natural Resources</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>2022</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/264-test3wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -59,8 +60,9 @@
       <rdamd:P30111>İstanbul : Kırmızı Kedi, Haziran 2021.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
       <rdamd:P30088>İstanbul</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
       <rdamd:P30176>Kırmızı Kedi</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>2021</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
       <fake:marcfield>F264 #4 $c ©2020</fake:marcfield>
-      <rdamd:P30137>Copyright date: ©2020</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Copyright notice date: ©2020</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30007>2020</rdamd:P30007><!--rdamd:P30007 = has copyright date-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/264-test4wor">
@@ -81,6 +83,7 @@
       <rdamd:P30111>$a al-Qāhirah :$b al-Dār al-Miṣrīyah al-Lubnānīyah,$c 2020.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
       <rdamd:P30088>al-Qāhirah</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
       <rdamd:P30176>al-Dār al-Miṣrīyah al-Lubnānīyah</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>2020</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/264-test4wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -100,5 +103,6 @@
       <rdamd:P30111>Tihrān : Nashr-i Chashmah, Zamistān-i 1400 [2021 or 2022]</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
       <rdamd:P30088>Tihrān</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
       <rdamd:P30176>Nashr-i Chashmah</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>1400</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
    </rdf:Description>
 </rdf:RDF>
