@@ -41,13 +41,13 @@
                     <xsl:when test="@tag = '100' or @tag = '110' or @tag = '111'">
                         <xsl:call-template name="handle1XXNoRelator">
                             <xsl:with-param name="domain" select="'work'"/>
-                            <xsl:with-param name="agentIRI" select="uwf:agentIRI(.)"/>
+                            <xsl:with-param name="agentIRI" select="uwf:generateIRI(., 'agent')"/>
                         </xsl:call-template>
                     </xsl:when>
                     <xsl:otherwise>
                         <!-- default -->
                         <xsl:copy-of
-                            select="uwf:defaultAgentProp(., uwf:fieldType(@tag), 'work', uwf:agentIRI(.), uwf:agentAccessPoint(.))"
+                            select="uwf:defaultAgentProp(., uwf:fieldType(@tag), 'work', uwf:generateIRI(., 'agent'), uwf:agentAccessPoint(.))"
                         />
                     </xsl:otherwise>
                 </xsl:choose>
@@ -56,7 +56,7 @@
             <xsl:otherwise>
                 <xsl:call-template name="handleRelator">
                     <xsl:with-param name="domain" select="'work'"/>
-                    <xsl:with-param name="agentIRI" select="uwf:agentIRI(.)"/>
+                    <xsl:with-param name="agentIRI" select="uwf:generateIRI(., 'agent')"/>
                 </xsl:call-template>
             </xsl:otherwise>
         </xsl:choose>
@@ -83,7 +83,7 @@
             <xsl:otherwise>
                 <xsl:call-template name="handleRelator">
                     <xsl:with-param name="domain" select="'expression'"/>
-                    <xsl:with-param name="agentIRI" select="uwf:agentIRI(.)"/>
+                    <xsl:with-param name="agentIRI" select="uwf:generateIRI(., 'agent')"/>
                 </xsl:call-template>
             </xsl:otherwise>
         </xsl:choose>
@@ -107,7 +107,7 @@
                     <xsl:otherwise>
                         <!-- default -->
                         <xsl:copy-of
-                            select="uwf:defaultAgentProp(., uwf:fieldType(@tag), 'manifestation', uwf:agentIRI(.), uwf:agentAccessPoint(.))"
+                            select="uwf:defaultAgentProp(., uwf:fieldType(@tag), 'manifestation', uwf:generateIRI(., 'agent'), uwf:agentAccessPoint(.))"
                         />
                     </xsl:otherwise>
                 </xsl:choose>
@@ -115,7 +115,7 @@
             <xsl:otherwise>
                 <xsl:call-template name="handleRelator">
                     <xsl:with-param name="domain" select="'manifestation'"/>
-                    <xsl:with-param name="agentIRI" select="uwf:agentIRI(.)"/>
+                    <xsl:with-param name="agentIRI" select="uwf:generateIRI(., 'agent')"/>
                 </xsl:call-template>
             </xsl:otherwise>
         </xsl:choose>
@@ -136,7 +136,7 @@
                 <xsl:otherwise>
                     <xsl:call-template name="handleRelator">
                         <xsl:with-param name="domain" select="'item'"/>
-                        <xsl:with-param name="agentIRI" select="uwf:agentIRI(.)"/>
+                        <xsl:with-param name="agentIRI" select="uwf:generateIRI(., 'agent')"/>
                     </xsl:call-template>
                 </xsl:otherwise>
             </xsl:choose>
@@ -167,7 +167,7 @@
                         <xsl:otherwise>
                             <!-- default -->
                             <xsl:copy-of
-                                select="uwf:defaultAgentProp(., uwf:fieldType(@tag), 'item', uwf:agentIRI(.), uwf:agentAccessPoint(.))"
+                                select="uwf:defaultAgentProp(., uwf:fieldType(@tag), 'item', uwf:generateIRI(., 'agent'), uwf:agentAccessPoint(.))"
                             />
                         </xsl:otherwise>
                     </xsl:choose>
@@ -175,7 +175,7 @@
                 <xsl:otherwise>
                     <xsl:call-template name="handleRelator">
                         <xsl:with-param name="domain" select="'item'"/>
-                        <xsl:with-param name="agentIRI" select="uwf:agentIRI(.)"/>
+                        <xsl:with-param name="agentIRI" select="uwf:generateIRI(., 'agent')"/>
                     </xsl:call-template>
                 </xsl:otherwise>
             </xsl:choose>
@@ -203,7 +203,7 @@
         <xsl:param name="baseIRI"/>
         <!-- get agentIRI and set up rdf:Description for that agent -->
         <!-- note: this isn't done for 720, where an agent is not minted -->
-        <rdf:Description rdf:about="{uwf:agentIRI(.)}">
+        <rdf:Description rdf:about="{uwf:generateIRI(., 'agent')}">
             <xsl:call-template name="getmarc"/>
             <!-- create rdf:type and relationship to nomen or nomen string triples -->
             <xsl:choose>
@@ -279,7 +279,9 @@
     </xsl:template>
     
     <xsl:template
-        match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] | marc:datafield[@tag = '700'] | marc:datafield[@tag = '710'] | marc:datafield[@tag = '711']"
+        match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111']
+        | marc:datafield[@tag = '700'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '710'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '711'][not(marc:subfield[@code = 't'])] 
+        | marc:datafield[@tag = '720']"
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:if test="marc:subfield[@code = '0'] | marc:subfield[@code = '1'] | marc:subfield[@code = '2']">
@@ -290,6 +292,14 @@
                 </rdand:P80068>
                 <xsl:comment>Has scheme of nomen here</xsl:comment>
             </rdf:Description>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template
+        match="marc:datafield[@tag = '730'] | marc:datafield[@tag = '740']"
+        mode="man">
+        <xsl:if test="@ind2 != '2'">
+            <rdamo:P30265 rdf:resource="{concat('a', 'b')}"/>
         </xsl:if>
     </xsl:template>
 </xsl:stylesheet>

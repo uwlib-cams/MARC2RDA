@@ -34,15 +34,15 @@
             <xsl:when test="@tag = '600'">
                 <xsl:choose>
                     <xsl:when test="@ind1 = '0' or @ind1 = '1' or @ind1 = '2'">
-                        <rdawo:P10261 rdf:resource="{uwf:agentIRI(.)}"/>
+                        <rdawo:P10261 rdf:resource="{uwf:generateIRI(., 'agent')}"/>
                     </xsl:when>
                     <xsl:when test="@ind1 = '3'">
-                        <rdawo:P10262 rdf:resource="{uwf:agentIRI(.)}"/>
+                        <rdawo:P10262 rdf:resource="{uwf:generateIRI(., 'agent')}"/>
                     </xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:otherwise>
-                <rdawo:P10263 rdf:resource="{uwf:agentIRI(.)}"/>
+                <rdawo:P10263 rdf:resource="{uwf:generateIRI(., 'agent')}"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -51,7 +51,7 @@
         match="marc:datafield[@tag = '600'] | marc:datafield[@tag = '610'] | marc:datafield[@tag = '611']"
         mode="age">
         <xsl:param name="baseIRI"/>
-        <rdf:Description rdf:about="{uwf:agentIRI(.)}">
+        <rdf:Description rdf:about="{uwf:generateIRI(., 'agent')}">
             <xsl:call-template name="getmarc"/>
             <xsl:choose>
                 <xsl:when test="@tag = '600'">
@@ -119,16 +119,16 @@
                     <xsl:when test="@tag = '600'">
                         <xsl:choose>
                             <xsl:when test="@ind1 = '0' or @ind1 = '1' or @ind1 = '2'">
-                                <rdano:P80107 rdf:resource="{uwf:agentIRI(.)}"/>
+                                <rdano:P80107 rdf:resource="{uwf:generateIRI(., 'agent')}"/>
                             </xsl:when>
                             <xsl:when test="@ind1 = '3'">
-                                <rdano:P80105 rdf:resource="{uwf:agentIRI(.)}"/>
+                                <rdano:P80105 rdf:resource="{uwf:generateIRI(., 'agent')}"/>
                             </xsl:when>
                             <xsl:otherwise/>
                         </xsl:choose>
                     </xsl:when>
                     <xsl:when test="@tag = '610' or @tag = '611'">
-                        <rdano:P80103 rdf:resource="{uwf:agentIRI(.)}"/>
+                        <rdano:P80103 rdf:resource="{uwf:generateIRI(., 'agent')}"/>
                     </xsl:when>
                 </xsl:choose>
                 <xsl:comment>Has scheme of nomen here based on something</xsl:comment>

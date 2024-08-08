@@ -42,8 +42,9 @@
 <!-- **FUNCTIONS** -->   
     
     <!-- returns an IRI for an agent entity -->
-    <xsl:function name="uwf:agentIRI">
+    <xsl:function name="uwf:generateIRI">
         <xsl:param name="field"/>
+        <xsl:param name="type"/>
         <xsl:variable name="ap" select="lower-case(string-join(uwf:agentAccessPoint($field)))"/> 
         <xsl:choose>
             <!-- If $1, return value of $1, otherwise construct an IRI based on the access point -->
@@ -59,7 +60,14 @@
             </xsl:when>
             <!-- otherwise it's an opaque IRI to avoid conflating different agents under one IRI -->
             <xsl:otherwise>
-                <xsl:value-of select="'http://marc2rda.edu/agent/'||generate-id($field)"/>
+                <xsl:choose>
+                    <xsl:when test="$type = 'agent'">
+                        <xsl:value-of select="'http://marc2rda.edu/fake/agent/'||generate-id($field)"/>
+                    </xsl:when>
+                    <xsl:when test="$type = 'work'">
+                        <xsl:value-of select="'http://marc2rda.edu/fake/work/'||generate-id($field)"/>
+                    </xsl:when>
+                </xsl:choose>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
