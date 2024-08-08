@@ -58,6 +58,28 @@
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
+            <!-- If $0 -->
+            <xsl:when test="count($field/marc:subfield[@code = '0']) = 1">
+                <xsl:choose>
+                    <!-- and IRI, use -->
+                    <xsl:when test="contains($field/marc:subfield[@code = '0'], 'http')">
+                        <xsl:variable name="processed0" select="uwf:process0($field/marc:subfield[@code = '0'])"/>
+                        <xsl:choose>
+                            <xsl:when test="$processed0">
+                                <xsl:value-of select="$processed0"/>
+                            </xsl:when>
+                            <!-- if IRI can't be retrieved, generate opaque -->
+                            <xsl:otherwise>
+                                <xsl:value-of select="'http://marc2rda.edu/fake/'||$type||'/'||generate-id($field)"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:when>
+                    <!-- and FAST, translate to IRI and use -->
+                    <xsl:when test="starts-with($field/marc:subfield[@code = '0'], '(OCoLC)')">
+                        <xsl:value-of select="concat('https://id.worldcat.org/fast/', substring-after($field/marc:subfield[@code = '0'], 'fst'))"/>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:when>
             <!-- otherwise it's an opaque IRI to avoid conflating different agents under one IRI -->
             <xsl:otherwise>
                 <xsl:value-of select="'http://marc2rda.edu/fake/'||$type||'/'||generate-id($field)"/>
@@ -122,7 +144,7 @@
     <xsl:function name="uwf:relWorkAccessPoint" expand-text="true">
         <xsl:param name="field"/>
         <xsl:choose>
-            <xsl:when test="$field/@tag = '700'">
+            <xsl:when test="$field/@tag = '600' or $field/@tag = '700'">
                 <xsl:for-each select="$field/marc:subfield[@code = 'a'] | $field/marc:subfield[@code = 'b'] | $field/marc:subfield[@code = 'c']
                     | $field/marc:subfield[@code = 'd'] | $field/marc:subfield[@code = 'j'] | $field/marc:subfield[@code = 'q']
                     | $field/marc:subfield[@code = 'u'] | $field/marc:subfield[@code = 'g'] | $field/marc:subfield[@code = 't']
@@ -137,7 +159,7 @@
                     </xsl:choose>
                 </xsl:for-each>
             </xsl:when>
-            <xsl:when test="$field/@tag = '710'">
+            <xsl:when test="$field/@tag = '610' or $field/@tag = '710'">
                 <xsl:for-each select="$field/marc:subfield[@code = 'a'] | $field/marc:subfield[@code = 'b'] | $field/marc:subfield[@code = 'c']
                     | $field/marc:subfield[@code = 'u'] | $field/marc:subfield[@code = 'd']
                     | $field/marc:subfield[@code = 'g'] | $field/marc:subfield[@code = 'n'] 
@@ -152,7 +174,7 @@
                     </xsl:choose>
                 </xsl:for-each>
             </xsl:when>
-            <xsl:when test="$field/@tag = '711'">
+            <xsl:when test="$field/@tag = '611' or $field/@tag = '711'">
                 <xsl:for-each select="$field/marc:subfield[@code = 'a']  | $field/marc:subfield[@code = 'c'] | $field/marc:subfield[@code = 'e'] | $field/marc:subfield[@code = 'q']
                     | $field/marc:subfield[@code = 'u'] | $field/marc:subfield[@code = 'd']
                     | $field/marc:subfield[@code = 'g'] | $field/marc:subfield[@code = 'n']
@@ -167,7 +189,7 @@
                     </xsl:choose>
                 </xsl:for-each>
             </xsl:when>
-            <xsl:when test="$field/@tag = '730'">
+            <xsl:when test="$field/@tag = '630' or $field/@tag = '730'">
                 <xsl:for-each select="$field/marc:subfield[@code = 'a'] | $field/marc:subfield[@code = 'd'] | $field/marc:subfield[@code = 'k']
                     | $field/marc:subfield[@code = 'n'] | $field/marc:subfield[@code = 'p']">
                     <xsl:choose>
