@@ -60,34 +60,9 @@
             </xsl:when>
             <!-- otherwise it's an opaque IRI to avoid conflating different agents under one IRI -->
             <xsl:otherwise>
-                <xsl:choose>
-                    <xsl:when test="$type = 'agent'">
-                        <xsl:value-of select="'http://marc2rda.edu/fake/agent/'||generate-id($field)"/>
-                    </xsl:when>
-                    <xsl:when test="$type = 'work'">
-                        <xsl:value-of select="'http://marc2rda.edu/fake/work/'||generate-id($field)"/>
-                    </xsl:when>
-                </xsl:choose>
+                <xsl:value-of select="'http://marc2rda.edu/fake/'||$type||'/'||generate-id($field)"/>
             </xsl:otherwise>
         </xsl:choose>
-    </xsl:function>
-    
-    <!-- returns an IRI for a nomen related to an agent entity -->
-    <xsl:function name="uwf:agentNomenIRI">
-        <xsl:param name="field"/>
-        <!-- function bc how we do this might change -->
-<!--        <xsl:variable name="ap" select="lower-case(string-join(uwf:agentAccessPoint($field)))"/> 
-        <xsl:choose>
-            <!-\- If $0 or $1 or $2, it's authorized, construct an IRI from authorized access point -\->
-            <xsl:when test="$field/marc:subfield[@code = '1'] or $field/marc:subfield[@code = '0'] or $field/marc:subfield[@code = '2']">
-                <xsl:value-of select="concat('http://marc2rda.edu/fake/nom/', encode-for-uri(translate($ap, ' ', '')))"/>
-            </xsl:when>
-            <!-\- otherwise it's an opaque IRI -\->
-            <xsl:otherwise>
-                <xsl:value-of select="'http://marc2rda.edu/agent/nom/'||generate-id($field)"/>
-            </xsl:otherwise>
-        </xsl:choose>-->
-        <xsl:value-of select="'http://marc2rda.edu/agent/nom/'||generate-id($field)"/>
     </xsl:function>
     
     <!-- generates an access point for an agent based on the subfields present in the field -->
@@ -129,6 +104,84 @@
                 <xsl:for-each select="$field/marc:subfield[@code = 'a']  | $field/marc:subfield[@code = 'c'] | $field/marc:subfield[@code = 'e'] | $field/marc:subfield[@code = 'q']
                     | $field/marc:subfield[@code = 'u'] | $field/marc:subfield[@code = 'd'][not(preceding-sibling::marc:subfield[@code='t'])]
                     | $field/marc:subfield[@code = 'g'][not(preceding-sibling::marc:subfield[@code='t'])] | $field/marc:subfield[@code = 'n'][not(preceding-sibling::marc:subfield[@code='t'])]">
+                    <xsl:choose>
+                        <xsl:when test="position() != last()">
+                            <xsl:text>{.} </xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:for-each>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:function>
+    
+    <!-- generates an access point for a related work based on the subfields present in the field -->
+    <!-- may need updates -->
+    <xsl:function name="uwf:relWorkAccessPoint" expand-text="true">
+        <xsl:param name="field"/>
+        <xsl:choose>
+            <xsl:when test="$field/@tag = '700'">
+                <xsl:for-each select="$field/marc:subfield[@code = 'a'] | $field/marc:subfield[@code = 'b'] | $field/marc:subfield[@code = 'c']
+                    | $field/marc:subfield[@code = 'd'] | $field/marc:subfield[@code = 'j'] | $field/marc:subfield[@code = 'q']
+                    | $field/marc:subfield[@code = 'u'] | $field/marc:subfield[@code = 'g'] | $field/marc:subfield[@code = 't']
+                    | $field/marc:subfield[@code = 'n'] | $field/marc:subfield[@code = 'p'] | $field/marc:subfield[@code = 'k']">
+                    <xsl:choose>
+                        <xsl:when test="position() != last()">
+                            <xsl:text>{.} </xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:for-each>
+            </xsl:when>
+            <xsl:when test="$field/@tag = '710'">
+                <xsl:for-each select="$field/marc:subfield[@code = 'a'] | $field/marc:subfield[@code = 'b'] | $field/marc:subfield[@code = 'c']
+                    | $field/marc:subfield[@code = 'u'] | $field/marc:subfield[@code = 'd']
+                    | $field/marc:subfield[@code = 'g'] | $field/marc:subfield[@code = 'n'] 
+                    | $field/marc:subfield[@code = 't'] | $field/marc:subfield[@code = 'p'] | $field/marc:subfield[@code = 'k']">
+                    <xsl:choose>
+                        <xsl:when test="position() != last()">
+                            <xsl:text>{.} </xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:for-each>
+            </xsl:when>
+            <xsl:when test="$field/@tag = '711'">
+                <xsl:for-each select="$field/marc:subfield[@code = 'a']  | $field/marc:subfield[@code = 'c'] | $field/marc:subfield[@code = 'e'] | $field/marc:subfield[@code = 'q']
+                    | $field/marc:subfield[@code = 'u'] | $field/marc:subfield[@code = 'd']
+                    | $field/marc:subfield[@code = 'g'] | $field/marc:subfield[@code = 'n']
+                    | $field/marc:subfield[@code = 't'] | $field/marc:subfield[@code = 'p'] | $field/marc:subfield[@code = 'k']">
+                    <xsl:choose>
+                        <xsl:when test="position() != last()">
+                            <xsl:text>{.} </xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:for-each>
+            </xsl:when>
+            <xsl:when test="$field/@tag = '730'">
+                <xsl:for-each select="$field/marc:subfield[@code = 'a'] | $field/marc:subfield[@code = 'd'] | $field/marc:subfield[@code = 'k']
+                    | $field/marc:subfield[@code = 'n'] | $field/marc:subfield[@code = 'p']">
+                    <xsl:choose>
+                        <xsl:when test="position() != last()">
+                            <xsl:text>{.} </xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:for-each>
+            </xsl:when>
+            <xsl:when test="$field/@tag = '740'">
+                <xsl:for-each select="$field/marc:subfield[@code = 'a'] | $field/marc:subfield[@code = 'n'] | $field/marc:subfield[@code = 'p']">
                     <xsl:choose>
                         <xsl:when test="position() != last()">
                             <xsl:text>{.} </xsl:text>

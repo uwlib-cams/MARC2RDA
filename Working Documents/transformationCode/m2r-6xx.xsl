@@ -61,7 +61,7 @@
                             <rdaao:P50249 rdf:resource="{$baseIRI||'/wor'}"/>
                             <xsl:choose>
                                 <xsl:when test="marc:subfield[@code = '0'] or marc:subfield[@code = '1'] or marc:subfield[@code = '2'] or @ind2 != '4'">
-                                    <rdaao:P50411 rdf:resource="{uwf:agentNomenIRI(.)}"/>
+                                    <rdaao:P50411 rdf:resource="{uwf:generateIRI(., 'nomen')}"/>
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <rdaad:P50377>
@@ -75,7 +75,7 @@
                             <rdaao:P50250 rdf:resource="{$baseIRI||'/wor'}"/>
                             <xsl:choose>
                                 <xsl:when test="marc:subfield[@code = '0'] or marc:subfield[@code = '1'] or marc:subfield[@code = '2'] or @ind2 != '4'">
-                                    <rdaao:P50409 rdf:resource="{uwf:agentNomenIRI(.)}"/>
+                                    <rdaao:P50409 rdf:resource="{uwf:generateIRI(., 'nomen')}"/>
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <rdaad:P50376>
@@ -92,7 +92,7 @@
                     <rdaao:P50251 rdf:resource="{$baseIRI||'wor'}"/>
                     <xsl:choose>
                         <xsl:when test="marc:subfield[@code = '0'] or marc:subfield[@code = '1'] or marc:subfield[@code = '2'] or @ind2 != '4'">
-                            <rdaao:P50407 rdf:resource="{uwf:agentNomenIRI(.)}"/>
+                            <rdaao:P50407 rdf:resource="{uwf:generateIRI(., 'nomen')}"/>
                         </xsl:when>
                         <xsl:otherwise>
                             <rdaad:P50375>
@@ -110,7 +110,7 @@
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:if test="marc:subfield[@code = '0'] | marc:subfield[@code = '1'] | marc:subfield[@code = '2'] | @ind2 != '4'">
-            <rdf:Description rdf:about="{uwf:agentNomenIRI(.)}">
+            <rdf:Description rdf:about="{uwf:generateIRI(., 'nomen')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
                     <xsl:value-of select="uwf:agentAccessPoint(.)"/>

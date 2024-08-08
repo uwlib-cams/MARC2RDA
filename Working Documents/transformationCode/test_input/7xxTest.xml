@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>03159cgm a2200637Ii 4500</marc:leader>
+        <marc:controlfield tag="001">99162128928301452</marc:controlfield>
+        <marc:controlfield tag="005">20220702083340.0</marc:controlfield>
+        <marc:controlfield tag="007">vf mbahou</marc:controlfield>
+        <marc:controlfield tag="008">920616p19911985wau057 g vleng d</marc:controlfield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(OCoLC)42509943</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(OCoLC)ocm42509943 </marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(EXLNZ-01ALLIANCE_NETWORK)99179131880001451</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(01ALLIANCE_UW)99162128928301452</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">WaSpCo</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="e">rda</marc:subfield>
+            <marc:subfield code="c">WSN</marc:subfield>
+            <marc:subfield code="d">OCL</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCA</marc:subfield>
+            <marc:subfield code="d">OCLCF</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+            <marc:subfield code="d">OCL</marc:subfield>
+            <marc:subfield code="d">OCLCA</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="043" ind1=" " ind2=" ">
+            <marc:subfield code="a">n-us-wa</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="046" ind1=" " ind2=" ">
+            <marc:subfield code="k">1985</marc:subfield>
+            <marc:subfield code="2">edtf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="049" ind1=" " ind2=" ">
+            <marc:subfield code="a">MAIN</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">Vision of an era, Kirtland Kelsey Cutter /</marc:subfield>
+            <marc:subfield code="c">a production of KHQ Public Affairs.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="257" ind1=" " ind2=" ">
+            <marc:subfield code="a">United States</marc:subfield>
+            <marc:subfield code="2">naf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">Spokane, WA :</marc:subfield>
+            <marc:subfield code="b">KHQ-TV,</marc:subfield>
+            <marc:subfield code="c">[1991]</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="4">
+            <marc:subfield code="c">©1991</marc:subfield>
+            <marc:subfield code="c">© 1985</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 videocassette (approximately 57 min.) :</marc:subfield>
+            <marc:subfield code="b">sound, color with black and white sequences ;</marc:subfield>
+            <marc:subfield code="c">1/2 in.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">two-dimensional moving image</marc:subfield>
+            <marc:subfield code="b">tdi</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">video</marc:subfield>
+            <marc:subfield code="b">v</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">videocassette</marc:subfield>
+            <marc:subfield code="b">vf</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="b">1/2 in.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="344" ind1=" " ind2=" ">
+            <marc:subfield code="b">magnetic</marc:subfield>
+            <marc:subfield code="2">rda</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="346" ind1=" " ind2=" ">
+            <marc:subfield code="a">VHS</marc:subfield>
+            <marc:subfield code="b">NTSC</marc:subfield>
+            <marc:subfield code="2">rdabs</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="347" ind1=" " ind2=" ">
+            <marc:subfield code="a">video file</marc:subfield>
+            <marc:subfield code="2">rdaft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="380" ind1=" " ind2=" ">
+            <marc:subfield code="a">Television programs</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="511" ind1="0" ind2=" ">
+            <marc:subfield code="a">Interviewees: Dennis Andersen, Mark Brack, Elizabeth Ware.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="520" ind1=" " ind2=" ">
+            <marc:subfield code="a">"Tall pines, basalt outcroppings, and the majestic falls of the
+                Spokane river provided an ideal setting for a young artist named Kirtland Kelsey
+                Cutter to establish himself as one of the premier architects in the Pacific
+                Northwest. KHQ Telvison's documentary visually summarizes the highlights of Cutter's
+                architectural career."--Container.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">On cassette label: Q6 presents, Vision of an era, the legend of
+                Kirtland Kelsey Cutter.</marc:subfield>
+            <marc:subfield code="5">WSN</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">Container title: Vision of an era, the architecture of Kirtland
+                Kelsey Cutter.</marc:subfield>
+            <marc:subfield code="5">WaU</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">Originally produced as a television program in 1985.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="590" ind1=" " ind2=" ">
+            <marc:subfield code="a">University of Washington Libraries copy : Container title: Vision of
+                an era, the architecture of Kirtland Kelsey Cutter.</marc:subfield>
+            <marc:subfield code="9">LOCAL</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Architects</marc:subfield>
+            <marc:subfield code="z">Washington (State)</marc:subfield>
+            <marc:subfield code="z">Spokane</marc:subfield>
+            <marc:subfield code="v">Biography.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Architectes</marc:subfield>
+            <marc:subfield code="z">Washington (État)</marc:subfield>
+            <marc:subfield code="z">Spokane</marc:subfield>
+            <marc:subfield code="v">Biographies.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Architects.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00813114</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="7">
+            <marc:subfield code="a">Washington (State)</marc:subfield>
+            <marc:subfield code="z">Spokane.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01206731</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Biographical television programs.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01726117</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Biographies.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01919896</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Documentary television programs.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01710387</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Nonfiction television programs.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01710270</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Documentary television programs.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Nonfiction television programs.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Biographical television programs.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Documentaires télévisés.</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Émissions télévisées autres que de fiction.</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Biographies télévisées.</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="600" ind1="1" ind2="0">
+            <marc:subfield code="a">Cutter, Kirtland Kelsey,</marc:subfield>
+            <marc:subfield code="d">1860-1939.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="600" ind1="1" ind2="7">
+            <marc:subfield code="a">Cutter, Kirtland Kelsey,</marc:subfield>
+            <marc:subfield code="d">1860-1939.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00201694</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="a">Q6 Community Affairs (Firm)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="a">KHQ-TV (Television station : Spokane, Wash.)</marc:subfield>
+            <marc:subfield code="e">publisher.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="740" ind1="0" ind2=" ">
+            <marc:subfield code="a">Vision of an era, the legend of Kirtland Kelsey Cutter.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="740" ind1="0" ind2=" ">
+            <marc:subfield code="a">Vison of an era, the architecture of Kirtland Kelsey
+                Cutter.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Andersen, Dennis Alan,</marc:subfield>
+            <marc:subfield code="e">on-screen participant.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Brack, Mark L.,</marc:subfield>
+            <marc:subfield code="e">on-screen participant.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="973" ind1=" " ind2=" ">
+            <marc:subfield code="a">videocassettes</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="994" ind1=" " ind2=" ">
+            <marc:subfield code="a">92</marc:subfield>
+            <marc:subfield code="b">OCACL</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

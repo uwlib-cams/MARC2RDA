@@ -214,7 +214,7 @@
                             <xsl:choose>
                                 <!-- if there's a $0, $1, or $2, a nomen is minted -->
                                 <xsl:when test="marc:subfield[@code = '0'] or marc:subfield[@code = '1'] or marc:subfield[@code = '2']">
-                                    <rdaao:P50411 rdf:resource="{uwf:agentNomenIRI(.)}"/>
+                                    <rdaao:P50411 rdf:resource="{uwf:generateIRI(., 'nomen')}"/>
                                 </xsl:when>
                                 <!-- else a nomen string is used directly -->
                                 <xsl:otherwise>
@@ -228,7 +228,7 @@
                             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10008"/>
                             <xsl:choose>
                                 <xsl:when test="marc:subfield[@code = '0'] or marc:subfield[@code = '1'] or marc:subfield[@code = '2']">
-                                    <rdaao:P50409 rdf:resource="{uwf:agentNomenIRI(.)}"/>
+                                    <rdaao:P50409 rdf:resource="{uwf:generateIRI(., 'nomen')}"/>
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <rdaad:P50376>
@@ -244,7 +244,7 @@
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
                     <xsl:choose>
                         <xsl:when test="marc:subfield[@code = '0'] or marc:subfield[@code = '1'] or marc:subfield[@code = '2']">
-                            <rdaao:P50407 rdf:resource="{uwf:agentNomenIRI(.)}"/>
+                            <rdaao:P50407 rdf:resource="{uwf:generateIRI(., 'nomen')}"/>
                         </xsl:when>
                         <xsl:otherwise>
                             <rdaad:P50375>
@@ -285,7 +285,7 @@
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:if test="marc:subfield[@code = '0'] | marc:subfield[@code = '1'] | marc:subfield[@code = '2']">
-            <rdf:Description rdf:about="{uwf:agentNomenIRI(.)}">
+            <rdf:Description rdf:about="{uwf:generateIRI(., 'nomen')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
                     <xsl:value-of select="uwf:agentAccessPoint(.)"/>
@@ -295,11 +295,113 @@
         </xsl:if>
     </xsl:template>
     
+    
+    <!-- 700, 710, 711 $t -->
+    <xsl:template
+        match="marc:datafield[@tag = '700'][marc:subfield[@code = 't']] | marc:datafield[@tag = '710'][marc:subfield[@code = 't']] | marc:datafield[@tag = '711'][marc:subfield[@code = 't']]"
+        mode="man">
+        <xsl:if test="@ind2 != '2'">
+            <rdamo:P30265 rdf:resource="{uwf:generateIRI(., 'work')}"/>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template
+        match="marc:datafield[@tag = '700'][marc:subfield[@code = 't']] | marc:datafield[@tag = '710'][marc:subfield[@code = 't']] | marc:datafield[@tag = '711'][marc:subfield[@code = 't']]"
+        mode="relWor" expand-text="yes">
+        <xsl:if test="@ind2 != '2'">
+            <rdf:Description rdf:about="{uwf:generateIRI(., 'work')}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+                <rdawd:P10002>{concat(generate-id(), 'wor')}</rdawd:P10002>
+                <rdawd:P10328>
+                    <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
+                </rdawd:P10328>
+                <xsl:choose>
+                    <xsl:when test="@tag = '700' and @ind1 != '3'">
+                        <rdawo:P10312 rdf:resource="{uwf:generateIRI(., 'agent')}"/>
+                    </xsl:when>
+                    <xsl:when test="@tag = '700' and @ind1 = '3'">
+                        <rdawo:P10313 rdf:resource="{uwf:generateIRI(., 'agent')}"/>
+                    </xsl:when>
+                    <xsl:when test="@tag = '710' or @tag = '711'">
+                        <rdawo:P10314 rdf:resource="{uwf:generateIRI(., 'agent')}"/>
+                    </xsl:when>
+                    <xsl:otherwise/>
+                </xsl:choose>
+            </rdf:Description>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template
+        match="marc:datafield[@tag = '700'][marc:subfield[@code = 't']] | marc:datafield[@tag = '710'][marc:subfield[@code = 't']] | marc:datafield[@tag = '711'][marc:subfield[@code = 't']]"
+        mode="age" expand-text="yes">
+        <xsl:if test="@ind2 != '2'">
+            <xsl:call-template name="getmarc"/>
+            <rdf:Description rdf:about="{uwf:generateIRI(., 'agent')}">
+                <xsl:choose>
+                    <xsl:when test="@tag = '700' and @ind1 != '3'">
+                        <xsl:choose>
+                            <!-- if there's a $0, $1, or $2, a nomen is minted -->
+                            <xsl:when test="marc:subfield[@code = '0'] or marc:subfield[@code = '1'] or marc:subfield[@code = '2']">
+                                <rdaao:P50411 rdf:resource="{uwf:generateIRI(., 'nomen')}"/>
+                            </xsl:when>
+                            <!-- else a nomen string is used directly -->
+                            <xsl:otherwise>
+                                <rdaad:P50377>
+                                    <xsl:value-of select="uwf:agentAccessPoint(.)"/>
+                                </rdaad:P50377>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:when>
+                    <xsl:when test="@tag = '700' and @ind1 = '3'">
+                        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10008"/>
+                        <xsl:choose>
+                            <xsl:when test="marc:subfield[@code = '0'] or marc:subfield[@code = '1'] or marc:subfield[@code = '2']">
+                                <rdaao:P50409 rdf:resource="{uwf:generateIRI(., 'nomen')}"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <rdaad:P50376>
+                                    <xsl:value-of select="uwf:agentAccessPoint(.)"/>
+                                </rdaad:P50376>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:when>
+                    <xsl:when test="@tag = '710' or @tag = '711'">
+                        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+                        <xsl:choose>
+                            <xsl:when test="marc:subfield[@code = '0'] or marc:subfield[@code = '1'] or marc:subfield[@code = '2']">
+                                <rdaao:P50407 rdf:resource="{uwf:generateIRI(., 'nomen')}"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <rdaad:P50375>
+                                    <xsl:value-of select="uwf:agentAccessPoint(.)"/>
+                                </rdaad:P50375>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:when>
+                    <xsl:otherwise/>
+                </xsl:choose>
+            </rdf:Description>
+        </xsl:if>
+    </xsl:template>
+    
+    <!-- 730, 740 -->
     <xsl:template
         match="marc:datafield[@tag = '730'] | marc:datafield[@tag = '740']"
         mode="man">
         <xsl:if test="@ind2 != '2'">
-            <rdamo:P30265 rdf:resource="{concat('a', 'b')}"/>
+            <rdamo:P30265 rdf:resource="{uwf:generateIRI(., 'work')}"/>
         </xsl:if>
     </xsl:template>
+    <xsl:template
+        match="marc:datafield[@tag = '730'] | marc:datafield[@tag = '740']"
+        mode="relWor" expand-text="yes">
+        <xsl:if test="@ind2 != '2'">
+            <rdf:Description rdf:about="{uwf:generateIRI(., 'work')}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+                <rdawd:P10002>{concat(generate-id(), 'wor')}</rdawd:P10002>
+                <rdawd:P10328>
+                    <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
+                </rdawd:P10328>
+            </rdf:Description>
+        </xsl:if>
+    </xsl:template>
+    
 </xsl:stylesheet>

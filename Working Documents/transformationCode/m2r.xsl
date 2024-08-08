@@ -32,6 +32,7 @@
     <xsl:mode name="nom" on-no-match="shallow-skip"/>
     <xsl:mode name="metaWor" on-no-match="shallow-skip"/>
     <xsl:mode name="age" on-no-match="shallow-skip"/>
+    <xsl:mode name="relWor" on-no-match="shallow-skip"/>
     <xsl:mode name="con" on-no-match="shallow-skip"/>
     <xsl:mode name="pla" on-no-match="shallow-skip"/>
     
@@ -158,6 +159,9 @@
         <xsl:apply-templates select="*" mode="age">
             <xsl:with-param name="baseIRI" select="$baseIRI"/>
         </xsl:apply-templates>
+        
+        <!-- *****RELATED WORKS***** -->
+        <xsl:apply-templates select="*" mode="relWor"/>
         
         <!-- *****CONCEPTS***** -->
         <xsl:apply-templates select="*" mode="con"/>
