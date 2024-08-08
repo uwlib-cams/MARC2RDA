@@ -407,4 +407,46 @@
         <xsl:value-of select="substring($normalString, 1, string-length($normalString) - 1)"/>
         <xsl:value-of select="translate(substring($normalString, string-length($normalString)), ',', '')"/>
     </xsl:function>
+    
+<!-- subject headings -->
+    <xsl:function name="uwf:ind2Thesaurus">
+        <xsl:param name="ind2"/>
+        <xsl:choose>
+            <xsl:when test="$ind2 = '0'">
+                <xsl:attribute name="rdf:resource">
+                    <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/lcsh'"/>
+                </xsl:attribute>
+            </xsl:when>
+            <xsl:when test="$ind2 = '1'">
+                <xsl:attribute name="rdf:resource">
+                    <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/cyac'"/>
+                </xsl:attribute>
+            </xsl:when>
+            <xsl:when test="$ind2 = '2'">
+                <xsl:attribute name="rdf:resource">
+                    <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/mesh'"/>
+                </xsl:attribute>
+            </xsl:when>
+            <xsl:when test="$ind2 = '3'">
+                <xsl:attribute name="rdf:resource">
+                    <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/nal'"/>
+                </xsl:attribute>
+            </xsl:when>
+            <xsl:when test="$ind2 = '5'">
+                <xsl:attribute name="rdf:resource">
+                    <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/cash'"/>
+                </xsl:attribute>
+            </xsl:when>
+            <xsl:when test="$ind2 = '6'">
+                <xsl:attribute name="rdf:resource">
+                    <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/rvm'"/>
+                </xsl:attribute>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:comment>ind2 value error</xsl:comment>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
 </xsl:stylesheet>
+
