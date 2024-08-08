@@ -333,8 +333,8 @@
         match="marc:datafield[@tag = '700'][marc:subfield[@code = 't']] | marc:datafield[@tag = '710'][marc:subfield[@code = 't']] | marc:datafield[@tag = '711'][marc:subfield[@code = 't']]"
         mode="age" expand-text="yes">
         <xsl:if test="@ind2 != '2'">
-            <xsl:call-template name="getmarc"/>
             <rdf:Description rdf:about="{uwf:generateIRI(., 'agent')}">
+                <xsl:call-template name="getmarc"/>
                 <xsl:choose>
                     <xsl:when test="@tag = '700' and @ind1 != '3'">
                         <xsl:choose>
