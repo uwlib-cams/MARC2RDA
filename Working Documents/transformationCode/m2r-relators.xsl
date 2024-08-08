@@ -340,7 +340,7 @@
             </xsl:when>
             <xsl:when test="$domain = 'manifestation'">
                 <xsl:choose>
-                    <xsl:when test="starts-with($field/@tag, '7')">
+                    <xsl:when test="starts-with($field/@tag, '7') and not($field/marc:subfield[@code = '5'])">
                         <!-- 7XX -->
                         <xsl:choose>
                             <xsl:when test="($fieldType = 'X00' and  ($field/@ind1 = '0' or $field/@ind1 = '1' or $field/@ind1 = '2'))">
@@ -377,6 +377,55 @@
                                         <!-- agent -->
                                         <xsl:comment>Default relationship property used for <xsl:value-of select="$objString"/></xsl:comment>
                                         <xsl:element name="{'rdamd:P30267'}">
+                                            <xsl:copy-of select="$objString"/>
+                                        </xsl:element>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:when>
+                            <xsl:otherwise/>
+                        </xsl:choose>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$domain = 'item'">
+                <xsl:choose>
+                    <xsl:when test="starts-with($field/@tag, '7') and $field/marc:subfield[@code = '5']">
+                        <!-- 7XX -->
+                        <xsl:choose>
+                            <xsl:when test="($fieldType = 'X00' and  ($field/@ind1 = '0' or $field/@ind1 = '1' or $field/@ind1 = '2'))">
+                                <!-- person -->
+                                <xsl:comment>Default relationship property used for <xsl:value-of select="$objIRI"/></xsl:comment>
+                                <xsl:element name="{'rdaio:P40073'}">
+                                    <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
+                                </xsl:element>
+                            </xsl:when>
+                            <xsl:when test="$fieldType = 'X00' and $field/@ind1 = '3'">
+                                <!-- family -->
+                                <xsl:comment>Default relationship property used for <xsl:value-of select="$objIRI"/></xsl:comment>
+                                <xsl:element name="{'rdamo:P40074'}">
+                                    <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
+                                </xsl:element>
+                            </xsl:when>
+                            <xsl:when test="$fieldType = 'X10' or $fieldType = 'X11'">
+                                <!-- corporate body -->
+                                <xsl:comment>Default relationship property used for <xsl:value-of select="$objIRI"/></xsl:comment>
+                                <xsl:element name="{'rdamo:P40075'}">
+                                    <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
+                                </xsl:element>
+                            </xsl:when>
+                            <xsl:when test="$fieldType = '720'">
+                                <xsl:choose>
+                                    <xsl:when test="$field/@ind = '1'">
+                                        <!-- person -->
+                                        <xsl:comment>Default relationship property used for <xsl:value-of select="$objString"/></xsl:comment>
+                                        <xsl:element name="{'rdamd:P40073'}">
+                                            <xsl:copy-of select="$objString"/>
+                                        </xsl:element>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <!-- agent -->
+                                        <xsl:comment>Default relationship property used for <xsl:value-of select="$objString"/></xsl:comment>
+                                        <xsl:element name="{'rdamd:P40072'}">
                                             <xsl:copy-of select="$objString"/>
                                         </xsl:element>
                                     </xsl:otherwise>

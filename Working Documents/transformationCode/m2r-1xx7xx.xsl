@@ -164,7 +164,12 @@
                                 <xsl:with-param name="domain" select="'item'"/>
                             </xsl:call-template>
                         </xsl:when>
-                        <xsl:otherwise/>
+                        <xsl:otherwise>
+                            <!-- default -->
+                            <xsl:copy-of
+                                select="uwf:defaultAgentProp(., uwf:fieldType(@tag), 'item', uwf:agentIRI(.), uwf:agentAccessPoint(.))"
+                            />
+                        </xsl:otherwise>
                     </xsl:choose>
                 </xsl:when>
                 <xsl:otherwise>
@@ -181,6 +186,9 @@
             <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                 <rdaid:P40001>{concat($controlNumber,'ite',$genID)}</rdaid:P40001>
+                <xsl:if test="marc:subfield[@code = '5']">
+                    <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>
+                </xsl:if>
                 <xsl:copy-of select="$testItem"/>
             </rdf:Description>
         </xsl:if>
