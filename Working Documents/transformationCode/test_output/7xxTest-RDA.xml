@@ -182,8 +182,8 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Valdez, Daniel, 1949-</rdaad:P50377>
    </rdf:Description>
-   <fake:marcfield>F700 1# $i Motion picture adaptation of (work): $a Valdez, Luis. $t Zoot suit.</fake:marcfield>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/agent/d17e536">
+      <fake:marcfield>F700 1# $i Motion picture adaptation of (work): $a Valdez, Luis. $t Zoot suit.</fake:marcfield>
       <rdaad:P50377>Valdez, Luis.</rdaad:P50377>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/work/d17e536">

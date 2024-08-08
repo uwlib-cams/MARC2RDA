@@ -2,71 +2,131 @@
 <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
-    <marc:record>
-        <marc:leader>03159cgm a2200637Ii 4500</marc:leader>
-        <marc:controlfield tag="001">99162128928301452</marc:controlfield>
-        <marc:controlfield tag="005">20220702083340.0</marc:controlfield>
-        <marc:controlfield tag="007">vf mbahou</marc:controlfield>
-        <marc:controlfield tag="008">920616p19911985wau057 g vleng d</marc:controlfield>
-        <marc:datafield tag="035" ind1=" " ind2=" ">
-            <marc:subfield code="a">(OCoLC)42509943</marc:subfield>
+        <marc:record>
+        <marc:leader>05701cgm a2201141 i 4500</marc:leader>
+        <marc:controlfield tag="001">99162304135901452</marc:controlfield>
+        <marc:controlfield tag="005">20240210213018.0</marc:controlfield>
+        <marc:controlfield tag="006">m     o  c        </marc:controlfield>
+        <marc:controlfield tag="007">cr cna||||||||</marc:controlfield>
+        <marc:controlfield tag="007">vz czazuu</marc:controlfield>
+        <marc:controlfield tag="008">120712p20201981cau104 e      o   vleng d</marc:controlfield>
+        <marc:datafield tag="019" ind1=" " ind2=" ">
+            <marc:subfield code="a">878943795</marc:subfield>
+            <marc:subfield code="a">956659398</marc:subfield>
+            <marc:subfield code="a">1123202092</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="z">9780783276762</marc:subfield>
+            <marc:subfield code="q">(physical video recording)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="z">0783276761</marc:subfield>
+            <marc:subfield code="q">(physical video recording)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="028" ind1="4" ind2="2">
+            <marc:subfield code="a">MWT11031811</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="035" ind1=" " ind2=" ">
-            <marc:subfield code="a">(OCoLC)ocm42509943 </marc:subfield>
+            <marc:subfield code="a">(OCoLC)798922048</marc:subfield>
+            <marc:subfield code="z">(OCoLC)878943795</marc:subfield>
+            <marc:subfield code="z">(OCoLC)956659398</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1123202092</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="035" ind1=" " ind2=" ">
-            <marc:subfield code="a">(EXLNZ-01ALLIANCE_NETWORK)99179131880001451</marc:subfield>
+            <marc:subfield code="a">(OCoLC)ocn798922048</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="035" ind1=" " ind2=" ">
-            <marc:subfield code="a">(01ALLIANCE_UW)99162128928301452</marc:subfield>
+            <marc:subfield code="a">(EXLNZ-01ALLIANCE_NETWORK)99324529597701451</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(01ALLIANCE_UW)99162304135901452</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="037" ind1=" " ind2=" ">
+            <marc:subfield code="a">11031811</marc:subfield>
+            <marc:subfield code="b">Midwest Tape, LLC</marc:subfield>
+            <marc:subfield code="n">http://www.midwesttapes.com</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="040" ind1=" " ind2=" ">
-            <marc:subfield code="a">WaSpCo</marc:subfield>
+            <marc:subfield code="a">IAC</marc:subfield>
             <marc:subfield code="b">eng</marc:subfield>
             <marc:subfield code="e">rda</marc:subfield>
-            <marc:subfield code="c">WSN</marc:subfield>
-            <marc:subfield code="d">OCL</marc:subfield>
-            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="e">pn</marc:subfield>
+            <marc:subfield code="c">IAC</marc:subfield>
             <marc:subfield code="d">OCLCO</marc:subfield>
             <marc:subfield code="d">OCLCQ</marc:subfield>
-            <marc:subfield code="d">OCLCA</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
             <marc:subfield code="d">OCLCF</marc:subfield>
-            <marc:subfield code="d">WAU</marc:subfield>
-            <marc:subfield code="d">OCL</marc:subfield>
-            <marc:subfield code="d">OCLCA</marc:subfield>
             <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCL</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">TEF</marc:subfield>
+            <marc:subfield code="d">MOSMP</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCA</marc:subfield>
+            <marc:subfield code="d">OCL</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+            <marc:subfield code="d">UHC</marc:subfield>
+            <marc:subfield code="d">TOH</marc:subfield>
+            <marc:subfield code="d">DAD</marc:subfield>
+            <marc:subfield code="d">NJR</marc:subfield>
+            <marc:subfield code="d">CDS</marc:subfield>
+            <marc:subfield code="d">OCL</marc:subfield>
+            <marc:subfield code="d">VGM</marc:subfield>
+            <marc:subfield code="d">OCL</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">ORE</marc:subfield>
+            <marc:subfield code="d">N$V</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">MNU</marc:subfield>
+            <marc:subfield code="d">GZM</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCL</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="041" ind1="0" ind2=" ">
+            <marc:subfield code="a">eng</marc:subfield>
+            <marc:subfield code="p">eng</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="043" ind1=" " ind2=" ">
-            <marc:subfield code="a">n-us-wa</marc:subfield>
+            <marc:subfield code="a">n-us-ca</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="046" ind1=" " ind2=" ">
-            <marc:subfield code="k">1985</marc:subfield>
+            <marc:subfield code="k">1981</marc:subfield>
             <marc:subfield code="2">edtf</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="049" ind1=" " ind2=" ">
             <marc:subfield code="a">MAIN</marc:subfield>
         </marc:datafield>
-        <marc:datafield tag="245" ind1="0" ind2="0">
-            <marc:subfield code="a">Vision of an era, Kirtland Kelsey Cutter /</marc:subfield>
-            <marc:subfield code="c">a production of KHQ Public Affairs.</marc:subfield>
+        <marc:datafield tag="050" ind1=" " ind2="4">
+            <marc:subfield code="a">PN1997</marc:subfield>
         </marc:datafield>
-        <marc:datafield tag="257" ind1=" " ind2=" ">
-            <marc:subfield code="a">United States</marc:subfield>
-            <marc:subfield code="2">naf</marc:subfield>
+        <marc:datafield tag="082" ind1="0" ind2="4">
+            <marc:subfield code="a">791.43/72</marc:subfield>
+            <marc:subfield code="2">23</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="130" ind1="0" ind2=" ">
+            <marc:subfield code="a">Zoot suit (Motion picture)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Zoot suit /</marc:subfield>
+            <marc:subfield code="c">a a Universal picture ; a Luis Valdez film ; a Center Theatre Group, Mark Taper Forum presentation ; written for the screen by Luis Valdez ; produced by Peter Burrell ; directed by Luis Valdez.</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="264" ind1=" " ind2="1">
-            <marc:subfield code="a">Spokane, WA :</marc:subfield>
-            <marc:subfield code="b">KHQ-TV,</marc:subfield>
-            <marc:subfield code="c">[1991]</marc:subfield>
+            <marc:subfield code="a">[Universal City, CA] :</marc:subfield>
+            <marc:subfield code="b">Universal,</marc:subfield>
+            <marc:subfield code="c">[1981]</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="2">
+            <marc:subfield code="a">St. Louis, Missouri :</marc:subfield>
+            <marc:subfield code="b">Swank Motion Pictures,</marc:subfield>
+            <marc:subfield code="c">[2020]</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="264" ind1=" " ind2="4">
-            <marc:subfield code="c">©1991</marc:subfield>
-            <marc:subfield code="c">© 1985</marc:subfield>
+            <marc:subfield code="c">©1981</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="300" ind1=" " ind2=" ">
-            <marc:subfield code="a">1 videocassette (approximately 57 min.) :</marc:subfield>
-            <marc:subfield code="b">sound, color with black and white sequences ;</marc:subfield>
-            <marc:subfield code="c">1/2 in.</marc:subfield>
+            <marc:subfield code="a">1 online resource (1 video file (104 min.)) :</marc:subfield>
+            <marc:subfield code="b">sound, color</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="336" ind1=" " ind2=" ">
             <marc:subfield code="a">two-dimensional moving image</marc:subfield>
@@ -74,164 +134,273 @@
             <marc:subfield code="2">rdacontent</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="337" ind1=" " ind2=" ">
-            <marc:subfield code="a">video</marc:subfield>
-            <marc:subfield code="b">v</marc:subfield>
+            <marc:subfield code="a">computer</marc:subfield>
+            <marc:subfield code="b">c</marc:subfield>
             <marc:subfield code="2">rdamedia</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="338" ind1=" " ind2=" ">
-            <marc:subfield code="a">videocassette</marc:subfield>
-            <marc:subfield code="b">vf</marc:subfield>
+            <marc:subfield code="a">online resource</marc:subfield>
+            <marc:subfield code="b">cr</marc:subfield>
             <marc:subfield code="2">rdacarrier</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="340" ind1=" " ind2=" ">
-            <marc:subfield code="b">1/2 in.</marc:subfield>
+            <marc:subfield code="g">polychrome</marc:subfield>
+            <marc:subfield code="2">rdacc</marc:subfield>
         </marc:datafield>
-        <marc:datafield tag="344" ind1=" " ind2=" ">
-            <marc:subfield code="b">magnetic</marc:subfield>
-            <marc:subfield code="2">rda</marc:subfield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="g">color</marc:subfield>
         </marc:datafield>
-        <marc:datafield tag="346" ind1=" " ind2=" ">
-            <marc:subfield code="a">VHS</marc:subfield>
-            <marc:subfield code="b">NTSC</marc:subfield>
-            <marc:subfield code="2">rdabs</marc:subfield>
+        <marc:datafield tag="341" ind1="0" ind2=" ">
+            <marc:subfield code="a">auditory</marc:subfield>
+            <marc:subfield code="b">captions</marc:subfield>
+            <marc:subfield code="2">sapdv</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="347" ind1=" " ind2=" ">
-            <marc:subfield code="a">video file</marc:subfield>
-            <marc:subfield code="2">rdaft</marc:subfield>
+            <marc:subfield code="a">streaming video file</marc:subfield>
+            <marc:subfield code="2">rda</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="380" ind1=" " ind2=" ">
-            <marc:subfield code="a">Television programs</marc:subfield>
+            <marc:subfield code="a">Motion pictures</marc:subfield>
             <marc:subfield code="2">lcgft</marc:subfield>
         </marc:datafield>
-        <marc:datafield tag="511" ind1="0" ind2=" ">
-            <marc:subfield code="a">Interviewees: Dennis Andersen, Mark Brack, Elizabeth Ware.</marc:subfield>
+        <marc:datafield tag="532" ind1="1" ind2=" ">
+            <marc:subfield code="a">Closed captioning in English.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="511" ind1="1" ind2=" ">
+            <marc:subfield code="a">Edward James Olmos, Charles Aidman, Tyne Daly, John Anderson, Daniel Valdez.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="533" ind1=" " ind2=" ">
+            <marc:subfield code="a">Electronic reproduction.</marc:subfield>
+            <marc:subfield code="b">St. Louis, Mo. :</marc:subfield>
+            <marc:subfield code="c">Swank Motion Pictures Inc.,</marc:subfield>
+            <marc:subfield code="d">2011?.</marc:subfield>
+            <marc:subfield code="n">Available via World Wide Web.</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="520" ind1=" " ind2=" ">
-            <marc:subfield code="a">"Tall pines, basalt outcroppings, and the majestic falls of the
-                Spokane river provided an ideal setting for a young artist named Kirtland Kelsey
-                Cutter to establish himself as one of the premier architects in the Pacific
-                Northwest. KHQ Telvison's documentary visually summarizes the highlights of Cutter's
-                architectural career."--Container.</marc:subfield>
+            <marc:subfield code="a">Lawyers seek justice for a group of Mexican-Americans being sent to prison. Based on the Sleepy Lagoon murder case and the zoot suit riots of 1940s Los Angeles.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="521" ind1="8" ind2=" ">
+            <marc:subfield code="a">MPAA rating: R.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="588" ind1="0" ind2=" ">
+            <marc:subfield code="a">Description based on DVD version record; title from title screen (viewed May 4, 2020)</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="500" ind1=" " ind2=" ">
-            <marc:subfield code="a">On cassette label: Q6 presents, Vision of an era, the legend of
-                Kirtland Kelsey Cutter.</marc:subfield>
-            <marc:subfield code="5">WSN</marc:subfield>
+            <marc:subfield code="a">Originally issued as a motion picture in 1981.</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="500" ind1=" " ind2=" ">
-            <marc:subfield code="a">Container title: Vision of an era, the architecture of Kirtland
-                Kelsey Cutter.</marc:subfield>
-            <marc:subfield code="5">WaU</marc:subfield>
+            <marc:subfield code="a">Based on the play by Luis Valdez.</marc:subfield>
         </marc:datafield>
-        <marc:datafield tag="500" ind1=" " ind2=" ">
-            <marc:subfield code="a">Originally produced as a television program in 1985.</marc:subfield>
+        <marc:datafield tag="546" ind1=" " ind2=" ">
+            <marc:subfield code="a">English dialogue, optional English language closed captions.</marc:subfield>
         </marc:datafield>
-        <marc:datafield tag="590" ind1=" " ind2=" ">
-            <marc:subfield code="a">University of Washington Libraries copy : Container title: Vision of
-                an era, the architecture of Kirtland Kelsey Cutter.</marc:subfield>
-            <marc:subfield code="9">LOCAL</marc:subfield>
+        <marc:datafield tag="508" ind1=" " ind2=" ">
+            <marc:subfield code="a">Original music and adaptation, Daniel Valdez ; additional music and arrangements, Shorty Rogers ; choreography, Patricia Birch ; editor, Jacqueline Cambas ; director of photography, David Myers.</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="650" ind1=" " ind2="0">
-            <marc:subfield code="a">Architects</marc:subfield>
-            <marc:subfield code="z">Washington (State)</marc:subfield>
-            <marc:subfield code="z">Spokane</marc:subfield>
-            <marc:subfield code="v">Biography.</marc:subfield>
+            <marc:subfield code="a">Sleepy Lagoon Trial, Los Angeles, Calif., 1942-1943</marc:subfield>
+            <marc:subfield code="v">Drama.</marc:subfield>
         </marc:datafield>
-        <marc:datafield tag="650" ind1=" " ind2="6">
-            <marc:subfield code="a">Architectes</marc:subfield>
-            <marc:subfield code="z">Washington (État)</marc:subfield>
-            <marc:subfield code="z">Spokane</marc:subfield>
-            <marc:subfield code="v">Biographies.</marc:subfield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Zoot Suit Riots, Los Angeles, Calif., 1943</marc:subfield>
+            <marc:subfield code="v">Drama.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Mexican Americans</marc:subfield>
+            <marc:subfield code="z">California</marc:subfield>
+            <marc:subfield code="z">Los Angeles</marc:subfield>
+            <marc:subfield code="v">Drama.</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="650" ind1=" " ind2="7">
-            <marc:subfield code="a">Architects.</marc:subfield>
+            <marc:subfield code="a">Mexican Americans</marc:subfield>
             <marc:subfield code="2">fast</marc:subfield>
-            <marc:subfield code="0">(OCoLC)fst00813114</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="651" ind1=" " ind2="7">
-            <marc:subfield code="a">Washington (State)</marc:subfield>
-            <marc:subfield code="z">Spokane.</marc:subfield>
+            <marc:subfield code="a">California</marc:subfield>
+            <marc:subfield code="z">Los Angeles</marc:subfield>
             <marc:subfield code="2">fast</marc:subfield>
-            <marc:subfield code="0">(OCoLC)fst01206731</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PBJfWYmJkDYcpGWYVDfWxDq</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="2">
+            <marc:subfield code="a">Webcast</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="655" ind1=" " ind2="7">
-            <marc:subfield code="a">Biographical television programs.</marc:subfield>
+            <marc:subfield code="a">Video recordings for the hearing impaired</marc:subfield>
             <marc:subfield code="2">fast</marc:subfield>
-            <marc:subfield code="0">(OCoLC)fst01726117</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="655" ind1=" " ind2="7">
-            <marc:subfield code="a">Biographies.</marc:subfield>
+            <marc:subfield code="a">Musical films</marc:subfield>
             <marc:subfield code="2">fast</marc:subfield>
-            <marc:subfield code="0">(OCoLC)fst01919896</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="655" ind1=" " ind2="7">
-            <marc:subfield code="a">Documentary television programs.</marc:subfield>
+            <marc:subfield code="a">Internet videos</marc:subfield>
             <marc:subfield code="2">fast</marc:subfield>
-            <marc:subfield code="0">(OCoLC)fst01710387</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="655" ind1=" " ind2="7">
-            <marc:subfield code="a">Nonfiction television programs.</marc:subfield>
+            <marc:subfield code="a">Film adaptations</marc:subfield>
             <marc:subfield code="2">fast</marc:subfield>
-            <marc:subfield code="0">(OCoLC)fst01710270</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="655" ind1=" " ind2="7">
-            <marc:subfield code="a">Documentary television programs.</marc:subfield>
+            <marc:subfield code="a">Fiction films</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Drama</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Feature films</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Melodramas (Motion pictures)</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Internet videos.</marc:subfield>
             <marc:subfield code="2">lcgft</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="655" ind1=" " ind2="7">
-            <marc:subfield code="a">Nonfiction television programs.</marc:subfield>
+            <marc:subfield code="a">Musical films.</marc:subfield>
             <marc:subfield code="2">lcgft</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="655" ind1=" " ind2="7">
-            <marc:subfield code="a">Biographical television programs.</marc:subfield>
+            <marc:subfield code="a">Film adaptations.</marc:subfield>
             <marc:subfield code="2">lcgft</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="655" ind1=" " ind2="7">
-            <marc:subfield code="a">Documentaires télévisés.</marc:subfield>
+            <marc:subfield code="a">Fiction films.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Feature films.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Melodramas (Motion pictures)</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Video recordings for the hearing impaired.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Vidéos sur Internet.</marc:subfield>
             <marc:subfield code="2">rvmgf</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="655" ind1=" " ind2="7">
-            <marc:subfield code="a">Émissions télévisées autres que de fiction.</marc:subfield>
+            <marc:subfield code="a">Films musicaux.</marc:subfield>
             <marc:subfield code="2">rvmgf</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="655" ind1=" " ind2="7">
-            <marc:subfield code="a">Biographies télévisées.</marc:subfield>
+            <marc:subfield code="a">Adaptations cinématographiques.</marc:subfield>
             <marc:subfield code="2">rvmgf</marc:subfield>
         </marc:datafield>
-        <marc:datafield tag="600" ind1="1" ind2="0">
-            <marc:subfield code="a">Cutter, Kirtland Kelsey,</marc:subfield>
-            <marc:subfield code="d">1860-1939.</marc:subfield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Films de fiction.</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
         </marc:datafield>
-        <marc:datafield tag="600" ind1="1" ind2="7">
-            <marc:subfield code="a">Cutter, Kirtland Kelsey,</marc:subfield>
-            <marc:subfield code="d">1860-1939.</marc:subfield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Mélodrames (Films)</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Vidéos pour personnes handicapées auditives.</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="647" ind1=" " ind2="7">
+            <marc:subfield code="a">Sleepy Lagoon Trial</marc:subfield>
+            <marc:subfield code="c">(Los Angeles, California :</marc:subfield>
+            <marc:subfield code="d">1942-1943)</marc:subfield>
             <marc:subfield code="2">fast</marc:subfield>
-            <marc:subfield code="0">(OCoLC)fst00201694</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39Qhp4vBbvj7JjCtMPYrVBgHK</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="647" ind1=" " ind2="7">
+            <marc:subfield code="a">Zoot Suit Riots</marc:subfield>
+            <marc:subfield code="c">(Los Angeles, California :</marc:subfield>
+            <marc:subfield code="d">1943)</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39Qhp4vB9tJdG697P4DB4YQKm</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="648" ind1=" " ind2="7">
+            <marc:subfield code="a">1942-1943</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="710" ind1="2" ind2=" ">
-            <marc:subfield code="a">Q6 Community Affairs (Firm)</marc:subfield>
+            <marc:subfield code="a">Center Theatre Group of Los Angeles,</marc:subfield>
+            <marc:subfield code="e">presenter.</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="710" ind1="2" ind2=" ">
-            <marc:subfield code="a">KHQ-TV (Television station : Spokane, Wash.)</marc:subfield>
+            <marc:subfield code="a">Mark Taper Forum (Los Angeles, Calif.),</marc:subfield>
+            <marc:subfield code="e">presenter.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="a">Universal Pictures (Firm),</marc:subfield>
+            <marc:subfield code="e">production company,</marc:subfield>
             <marc:subfield code="e">publisher.</marc:subfield>
         </marc:datafield>
-        <marc:datafield tag="740" ind1="0" ind2=" ">
-            <marc:subfield code="a">Vision of an era, the legend of Kirtland Kelsey Cutter.</marc:subfield>
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="a">Swank Motion Pictures, Inc.</marc:subfield>
         </marc:datafield>
-        <marc:datafield tag="740" ind1="0" ind2=" ">
-            <marc:subfield code="a">Vison of an era, the architecture of Kirtland Kelsey
-                Cutter.</marc:subfield>
+        <marc:datafield tag="776" ind1="0" ind2="8">
+            <marc:subfield code="i">DVD version:</marc:subfield>
+            <marc:subfield code="t">Zoot suit.</marc:subfield>
+            <marc:subfield code="d">Universal City, CA : Universal, [2003]</marc:subfield>
+            <marc:subfield code="z">0783276761</marc:subfield>
+            <marc:subfield code="w">(OCoLC)52861528</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="758" ind1=" " ind2=" ">
+            <marc:subfield code="i">has work:</marc:subfield>
+            <marc:subfield code="a">Zoot suit (MovingImage)</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PCFGFryXtXb8QYHKHxbxx6q</marc:subfield>
+            <marc:subfield code="4">https://id.oclc.org/worldcat/ontology/hasWork</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="700" ind1="1" ind2=" ">
-            <marc:subfield code="a">Andersen, Dennis Alan,</marc:subfield>
-            <marc:subfield code="e">on-screen participant.</marc:subfield>
+            <marc:subfield code="a">Valdez, Luis,</marc:subfield>
+            <marc:subfield code="e">screenwriter,</marc:subfield>
+            <marc:subfield code="e">film director,</marc:subfield>
+            <marc:subfield code="e">screen writer.</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="700" ind1="1" ind2=" ">
-            <marc:subfield code="a">Brack, Mark L.,</marc:subfield>
-            <marc:subfield code="e">on-screen participant.</marc:subfield>
+            <marc:subfield code="a">Burrell, Peter</marc:subfield>
+            <marc:subfield code="q">(Peter J.),</marc:subfield>
+            <marc:subfield code="e">film producer.</marc:subfield>
         </marc:datafield>
-        <marc:datafield tag="973" ind1=" " ind2=" ">
-            <marc:subfield code="a">videocassettes</marc:subfield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Olmos, Edward James.</marc:subfield>
+            <marc:subfield code="e">actor.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Aidman, Charles.</marc:subfield>
+            <marc:subfield code="e">actor.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Daly, Tyne.</marc:subfield>
+            <marc:subfield code="e">actor.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Anderson, John,</marc:subfield>
+            <marc:subfield code="d">1922-1992,</marc:subfield>
+            <marc:subfield code="e">actor.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Valdez, Daniel,</marc:subfield>
+            <marc:subfield code="d">1949-</marc:subfield>
+            <marc:subfield code="e">actor,</marc:subfield>
+            <marc:subfield code="e">composer (expression)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="i">Motion picture adaptation of (work):</marc:subfield>
+            <marc:subfield code="a">Valdez, Luis.</marc:subfield>
+            <marc:subfield code="t">Zoot suit.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">Swank Digital Campus</marc:subfield>
+            <marc:subfield code="u">http://digitalcampus.swank.com/0004094</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="u">https://www.hoopladigital.com/title/11031811</marc:subfield>
+            <marc:subfield code="z">Instantly available on hoopla.</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="994" ind1=" " ind2=" ">
             <marc:subfield code="a">92</marc:subfield>
