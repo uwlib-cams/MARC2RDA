@@ -6,7 +6,8 @@
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">518-test</marc:controlfield>
         <!-- <marc:datafield tag="518" ind1=" " ind2=" ">
-            <marc:subfield code="a">Recorded in Vienna in 1961, previously released as WST 17035.</marc:subfield>
+            <marc:subfield code="a">Recorded in Vienna in 1961, previously released as WST
+        17035.</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="518" ind1=" " ind2=" ">
             <marc:subfield code="d">1997 April 22-23</marc:subfield>
@@ -45,7 +46,8 @@
         </marc:datafield>
         <!-- <marc:datafield tag="880" ind1=" " ind2=" ">
             <marc:subfield code="6">518-00/</marc:subfield>
-            <marc:subfield code="a">Recorded in Vienna in 1961, previously released as WST 17035.</marc:subfield>
+            <marc:subfield code="a">Recorded in Vienna in 1961, previously released as WST
+        17035.</marc:subfield>
         </marc:datafield> -->
     </marc:record>
 </marc:collection>

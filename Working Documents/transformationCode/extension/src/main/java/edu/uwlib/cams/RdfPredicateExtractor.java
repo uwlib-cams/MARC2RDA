@@ -1,5 +1,6 @@
 package edu.uwlib.cams;
 
+import net.sf.saxon.s9api.*;
 import org.apache.jena.rdf.model.*;
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -13,10 +14,28 @@ import java.nio.charset.StandardCharsets;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class RdfPredicateExtractor {
-    public static void main(String[] args) throws Exception {
-        // for debugging purposes
-        System.out.println(getFirstLevelTypes("http://www.wikidata.org/entity/Q19526"));
+public class RdfPredicateExtractor implements ExtensionFunction {
+
+    @Override
+    public QName getName() {
+        return new QName("http://uw.edu/extensions", "getFirstLevelTypes");
+    }
+
+    @Override
+    public SequenceType getResultType() {
+        return SequenceType.makeSequenceType(ItemType.STRING, OccurrenceIndicator.ONE);
+    }
+
+    @Override
+    public SequenceType[] getArgumentTypes() {
+        return new SequenceType[] { SequenceType.makeSequenceType(ItemType.STRING, OccurrenceIndicator.ONE) };
+    }
+
+    @Override
+    public XdmValue call(XdmValue[] arguments) throws SaxonApiException {
+        String uri = ((XdmAtomicValue) arguments[0].itemAt(0)).getStringValue();
+        String result = getFirstLevelTypes(uri);
+        return new XdmAtomicValue(result);
     }
 
     public static String getFirstLevelTypes(String uri) {
