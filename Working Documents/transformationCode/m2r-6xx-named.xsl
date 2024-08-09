@@ -25,9 +25,10 @@
     xmlns:uwmisc="http://uw.edu/all-purpose-namespace/" exclude-result-prefixes="marc ex uwf uwmisc"
     version="3.0">
     <xsl:import href="m2r-relators.xsl"/>
+    <xsl:import href="m2r-iris.xsl"/>
     <xsl:import href="getmarc.xsl"/>
     
-    <xsl:template name="F6xx-xx-xyz-label" expand-text="yes">
+    <xsl:template name="F6XX-xyz-label" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']">
             <xsl:choose>
                 <xsl:when test="position() != last()">
@@ -46,9 +47,79 @@
             | marc:subfield[@code = 't'] | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h']
             | marc:subfield[@code = 'k'] | marc:subfield[@code = 'l'] | marc:subfield[@code = 'm'] | marc:subfield[@code = 'n']
             | marc:subfield[@code = 'o'] | marc:subfield[@code = 'p'] | marc:subfield[@code = 'r'] | marc:subfield[@code = 's']
-            | marc:subfield[@code = 'v'] | marc:subfield[@code = 'x'] | marc:subfield[@code = 'z']" separator=" "/>
+            | marc:subfield[@code = 'v'] | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" "/>
     </xsl:template>
     
+    <xsl:template name="F630-label" expand-text="yes">
+        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'f']
+            | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h'] | marc:subfield[@code = 'k'] | marc:subfield[@code = 'l']
+            | marc:subfield[@code = 'm'] | marc:subfield[@code = 'n'] | marc:subfield[@code = 'o'] | marc:subfield[@code = 'p']
+            | marc:subfield[@code = 'r'] | marc:subfield[@code = 's'] | marc:subfield[@code = 't'] | marc:subfield[@code = 'v']
+            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" "/>
+    </xsl:template>
     
+    <xsl:template name="F6XX-subject">
+        <xsl:param name="prefLabel"/>
+        <xsl:choose>
+            <xsl:when test="@ind2 = '4'">
+                <rdawd:P10256>
+                    <xsl:value-of select="$prefLabel"/>
+                </rdawd:P10256>
+            </xsl:when>
+            <xsl:otherwise>
+                <rdaw:P10256 rdf:resource="{uwf:subjectIRI(., uwf:getSubjectSchemeCode(.), $prefLabel)}"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
     
+    <xsl:template name="F6XX-xx-xyz">
+        <xsl:variable name="prefLabelXYZ">
+            <xsl:call-template name="F6XX-xyz-label"/>
+        </xsl:variable>
+            <xsl:choose>
+                <xsl:when test="@ind2 = '4'">
+                    <rdawd:P10256>
+                        <xsl:value-of select="$prefLabelXYZ"/>
+                    </rdawd:P10256>
+                </xsl:when>
+                <xsl:otherwise>
+                    <rdaw:P10256 rdf:resource="{uwf:subjectIRI(., uwf:getSubjectSchemeCode(.), $prefLabelXYZ)}"/>
+                </xsl:otherwise>
+            </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template name="F6XX-xx-v">
+        <xsl:choose>
+            <xsl:when test="@ind2 = '4'">
+                <rdawd:P10004>
+                    <xsl:value-of select="."/>
+                </rdawd:P10004>
+            </xsl:when>
+            <xsl:otherwise>
+                <rdaw:P10004 rdf:resource="{uwf:subjectIRI(., uwf:getSubjectSchemeCode(parent::node()), .)}"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template name="F6XX-concept">
+        <xsl:param name="prefLabel"/>
+        <xsl:if test="starts-with(uwf:subjectIRI(., uwf:getSubjectSchemeCode(.), $prefLabel), 'http://marc2rda.edu')">
+            <rdf:Description rdf:about="{uwf:conceptIRI(uwf:getSubjectSchemeCode(.), $prefLabel)}">
+                <xsl:copy-of select="uwf:fillConcept($prefLabel, uwf:getSubjectSchemeCode(.), '', '600')"/>
+            </rdf:Description>
+            <xsl:if test="marc:subfield[@code = 'x'] or marc:subfield[@code = 'y'] or marc:subfield[@code = 'z']">
+                <xsl:variable name="prefLabelXYZ">
+                    <xsl:call-template name="F6XX-xyz-label"/>
+                </xsl:variable>
+                <rdf:Description rdf:about="{uwf:conceptIRI(uwf:getSubjectSchemeCode(.), $prefLabelXYZ)}">
+                    <xsl:copy-of select="uwf:fillConcept($prefLabelXYZ, uwf:getSubjectSchemeCode(.), '', '600')"/>
+                </rdf:Description>
+            </xsl:if>
+            <xsl:for-each select="marc:subfield[@code = 'v']">
+                <rdf:Description rdf:about="{uwf:conceptIRI(uwf:getSubjectSchemeCode(parent::node()), .)}">
+                    <xsl:copy-of select="uwf:fillConcept(., uwf:getSubjectSchemeCode(parent::node()), '', '600')"/>
+                </rdf:Description>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
 </xsl:stylesheet>
