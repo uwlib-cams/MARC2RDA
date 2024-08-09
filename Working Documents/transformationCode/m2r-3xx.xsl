@@ -17,6 +17,7 @@
     <xsl:include href="m2r-3xx-named.xsl"/>
     <xsl:import href="getmarc.xsl"/>
     <xsl:import href="m2r-functions.xsl"/>
+    <xsl:import href="m2r-iris.xsl"/>
     
     <xsl:template match="marc:datafield[@tag = '306'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '306']"
         mode="exp" expand-text="yes">

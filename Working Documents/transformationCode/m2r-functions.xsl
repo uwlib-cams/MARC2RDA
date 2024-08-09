@@ -240,14 +240,39 @@
     <xsl:function name="uwf:s2Concept" expand-text="true">
         <xsl:param name="code2"/>
         <xsl:choose>
-            <xsl:when test="$locSubjectSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/subjectSchemes/', lower-case($code2)))">
-                <skos:inScheme rdf:resource="{concat('http://id.loc.gov/vocabulary/subjectSchemes/', lower-case($code2))}"/>
+            <!-- ind2 values from subject schemes -->
+            <!-- hardcoding prevents speeds up lookup -->
+            <xsl:when test="$code2 = 'lcsh'">
+                <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/lcsh'"/>
             </xsl:when>
-            <xsl:when test="$locGenreFormSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/genreFormSchemes/', lower-case($code2)))">
-                <skos:inScheme rdf:resource="{concat('http://id.loc.gov/vocabulary/genreFormSchemes/', lower-case($code2))}"/>
+            <xsl:when test="$code2 = 'cyac'">
+                <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/cyac'"/>
             </xsl:when>
+            <xsl:when test="$code2 = 'mesh'">
+                <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/mesh'"/>
+            </xsl:when>
+            <xsl:when test="$code2 = 'nal'">
+                <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/nal'"/>
+            </xsl:when>
+            <xsl:when test="$code2 = 'cash'">
+                <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/cash'"/>
+            </xsl:when>
+            <xsl:when test="$code2 = 'rvm'">
+                <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/rvm'"/>
+            </xsl:when>
+            <!-- otherwise lookup code2 value -->
             <xsl:otherwise>
-                <xsl:comment>$2 value of {$code2} has been lost</xsl:comment>
+                <xsl:choose>
+                    <xsl:when test="$locSubjectSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/subjectSchemes/', lower-case($code2)))">
+                        <skos:inScheme rdf:resource="{concat('http://id.loc.gov/vocabulary/subjectSchemes/', lower-case($code2))}"/>
+                    </xsl:when>
+                    <xsl:when test="$locGenreFormSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/genreFormSchemes/', lower-case($code2)))">
+                        <skos:inScheme rdf:resource="{concat('http://id.loc.gov/vocabulary/genreFormSchemes/', lower-case($code2))}"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:comment>$2 value of {$code2} has been lost</xsl:comment>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
@@ -268,12 +293,6 @@
     
 <!-- CONCEPT FUNCTIONS -->
     
-    <!-- return an IRI for a concept generated from the scheme and the provided value -->
-    <xsl:function name="uwf:conceptIRI">
-        <xsl:param name="scheme"/>
-        <xsl:param name="value"/>
-        <xsl:value-of select="'http://marc2rda.edu/fake/concept/'||encode-for-uri(lower-case($scheme))||'/'||encode-for-uri(translate(lower-case($value), ' ', ''))"/>
-    </xsl:function>
     
     <!-- returns triples to fill an rdf:Description for a concept, with the prefLabel, scheme, and notation as provided -->
     <xsl:function name="uwf:fillConcept">
@@ -329,6 +348,9 @@
             <xsl:when test="$lookupRdaDoc/uwmisc:root/uwmisc:row/key('sourceCode', $rda2)">
                 <xsl:variable name="lookupDoc" select="$lookupRdaDoc/uwmisc:root/uwmisc:row/key('sourceCode', $rda2)/uwmisc:lookupDoc/@iri"/>
                 <xsl:choose>
+                    <xsl:when test="$term = 'lcsh'">
+                        
+                    </xsl:when>
                     <xsl:when test="contains($lookupDoc, 'id.loc.gov')">
                         <xsl:if test="document($lookupDoc)/rdf:RDF/madsrdf:MADSScheme/madsrdf:hasMADSSchemeMember/madsrdf:Authority/key('lcTerm', $term)">
                             <xsl:value-of select="document($lookupDoc)/rdf:RDF/madsrdf:MADSScheme/madsrdf:hasMADSSchemeMember/madsrdf:Authority/key('lcTerm', $term)/@rdf:about"/>
@@ -408,43 +430,58 @@
         <xsl:value-of select="translate(substring($normalString, string-length($normalString)), ',', '')"/>
     </xsl:function>
     
-<!-- subject headings -->
+    <!-- subject headings -->
     <xsl:function name="uwf:ind2Thesaurus">
         <xsl:param name="ind2"/>
         <xsl:choose>
             <xsl:when test="$ind2 = '0'">
-                <xsl:attribute name="rdf:resource">
-                    <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/lcsh'"/>
-                </xsl:attribute>
+                <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/lcsh'"/>
             </xsl:when>
             <xsl:when test="$ind2 = '1'">
-                <xsl:attribute name="rdf:resource">
-                    <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/cyac'"/>
-                </xsl:attribute>
+                <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/cyac'"/>
             </xsl:when>
             <xsl:when test="$ind2 = '2'">
-                <xsl:attribute name="rdf:resource">
-                    <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/mesh'"/>
-                </xsl:attribute>
+                <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/mesh'"/>
             </xsl:when>
             <xsl:when test="$ind2 = '3'">
-                <xsl:attribute name="rdf:resource">
-                    <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/nal'"/>
-                </xsl:attribute>
+                <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/nal'"/>
             </xsl:when>
             <xsl:when test="$ind2 = '5'">
-                <xsl:attribute name="rdf:resource">
-                    <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/cash'"/>
-                </xsl:attribute>
+                <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/cash'"/>
             </xsl:when>
             <xsl:when test="$ind2 = '6'">
-                <xsl:attribute name="rdf:resource">
-                    <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/rvm'"/>
-                </xsl:attribute>
+                <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/rvm'"/>
             </xsl:when>
-            <xsl:otherwise>
-                <xsl:comment>ind2 value error</xsl:comment>
-            </xsl:otherwise>
+            <xsl:otherwise/>
+        </xsl:choose>
+    </xsl:function>
+    
+    <xsl:function name="uwf:getSubjectSchemeCode">
+        <xsl:param name="field"/>
+        <xsl:choose>
+            <xsl:when test="$field/@ind2 = '0'">
+                <xsl:value-of select="'lcsh'"/>
+            </xsl:when>
+            <xsl:when test="$field/@ind2 = '1'">
+                <xsl:value-of select="'cyac'"/>
+            </xsl:when>
+            <xsl:when test="$field/@ind2 = '2'">
+                <xsl:value-of select="'mesh'"/>
+            </xsl:when>
+            <xsl:when test="$field/@ind2 = '3'">
+                <xsl:value-of select="'nal'"/>
+            </xsl:when>
+            <xsl:when test="$field/@ind2 = '5'">
+                <xsl:value-of select="'cash'"/>
+            </xsl:when>
+            <xsl:when test="$field/@ind2 = '6'">
+                <xsl:value-of select="'rvm'"/>
+            </xsl:when>
+            <xsl:when test="$field/@ind2 = '7'">
+                <xsl:if test="$field/marc:subfield[@code = '2']">
+                    <xsl:value-of select="$field/marc:subfield[@code = '2']"/>
+                </xsl:if>
+            </xsl:when>
         </xsl:choose>
     </xsl:function>
     

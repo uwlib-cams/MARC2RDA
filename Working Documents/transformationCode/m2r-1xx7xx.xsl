@@ -25,6 +25,7 @@
     xmlns:uwmisc="http://uw.edu/all-purpose-namespace/" exclude-result-prefixes="marc ex uwf uwmisc"
     version="3.0">
     <xsl:import href="m2r-relators.xsl"/>
+    <xsl:import href="m2r-iris.xsl"/>
     <xsl:import href="getmarc.xsl"/>
     <!-- field level templates - wor, exp, man, ite -->
     <xsl:template
@@ -41,13 +42,13 @@
                     <xsl:when test="@tag = '100' or @tag = '110' or @tag = '111'">
                         <xsl:call-template name="handle1XXNoRelator">
                             <xsl:with-param name="domain" select="'work'"/>
-                            <xsl:with-param name="agentIRI" select="uwf:generateIRI(., 'agent')"/>
+                            <xsl:with-param name="agentIRI" select="uwf:agentIRI(.)"/>
                         </xsl:call-template>
                     </xsl:when>
                     <xsl:otherwise>
                         <!-- default -->
                         <xsl:copy-of
-                            select="uwf:defaultAgentProp(., uwf:fieldType(@tag), 'work', uwf:generateIRI(., 'agent'), uwf:agentAccessPoint(.))"
+                            select="uwf:defaultAgentProp(., uwf:fieldType(@tag), 'work', uwf:agentIRI(.), uwf:agentAccessPoint(.))"
                         />
                     </xsl:otherwise>
                 </xsl:choose>
@@ -56,7 +57,7 @@
             <xsl:otherwise>
                 <xsl:call-template name="handleRelator">
                     <xsl:with-param name="domain" select="'work'"/>
-                    <xsl:with-param name="agentIRI" select="uwf:generateIRI(., 'agent')"/>
+                    <xsl:with-param name="agentIRI" select="uwf:agentIRI(.)"/>
                 </xsl:call-template>
             </xsl:otherwise>
         </xsl:choose>
@@ -83,7 +84,7 @@
             <xsl:otherwise>
                 <xsl:call-template name="handleRelator">
                     <xsl:with-param name="domain" select="'expression'"/>
-                    <xsl:with-param name="agentIRI" select="uwf:generateIRI(., 'agent')"/>
+                    <xsl:with-param name="agentIRI" select="uwf:agentIRI(.)"/>
                 </xsl:call-template>
             </xsl:otherwise>
         </xsl:choose>
@@ -107,7 +108,7 @@
                     <xsl:otherwise>
                         <!-- default -->
                         <xsl:copy-of
-                            select="uwf:defaultAgentProp(., uwf:fieldType(@tag), 'manifestation', uwf:generateIRI(., 'agent'), uwf:agentAccessPoint(.))"
+                            select="uwf:defaultAgentProp(., uwf:fieldType(@tag), 'manifestation', uwf:agentIRI(.), uwf:agentAccessPoint(.))"
                         />
                     </xsl:otherwise>
                 </xsl:choose>
@@ -115,7 +116,7 @@
             <xsl:otherwise>
                 <xsl:call-template name="handleRelator">
                     <xsl:with-param name="domain" select="'manifestation'"/>
-                    <xsl:with-param name="agentIRI" select="uwf:generateIRI(., 'agent')"/>
+                    <xsl:with-param name="agentIRI" select="uwf:agentIRI(.)"/>
                 </xsl:call-template>
             </xsl:otherwise>
         </xsl:choose>
@@ -136,7 +137,7 @@
                 <xsl:otherwise>
                     <xsl:call-template name="handleRelator">
                         <xsl:with-param name="domain" select="'item'"/>
-                        <xsl:with-param name="agentIRI" select="uwf:generateIRI(., 'agent')"/>
+                        <xsl:with-param name="agentIRI" select="uwf:agentIRI(.)"/>
                     </xsl:call-template>
                 </xsl:otherwise>
             </xsl:choose>
@@ -167,7 +168,7 @@
                         <xsl:otherwise>
                             <!-- default -->
                             <xsl:copy-of
-                                select="uwf:defaultAgentProp(., uwf:fieldType(@tag), 'item', uwf:generateIRI(., 'agent'), uwf:agentAccessPoint(.))"
+                                select="uwf:defaultAgentProp(., uwf:fieldType(@tag), 'item', uwf:agentIRI(.), uwf:agentAccessPoint(.))"
                             />
                         </xsl:otherwise>
                     </xsl:choose>
@@ -175,7 +176,7 @@
                 <xsl:otherwise>
                     <xsl:call-template name="handleRelator">
                         <xsl:with-param name="domain" select="'item'"/>
-                        <xsl:with-param name="agentIRI" select="uwf:generateIRI(., 'agent')"/>
+                        <xsl:with-param name="agentIRI" select="uwf:agentIRI(.)"/>
                     </xsl:call-template>
                 </xsl:otherwise>
             </xsl:choose>
@@ -203,7 +204,7 @@
         <xsl:param name="baseIRI"/>
         <!-- get agentIRI and set up rdf:Description for that agent -->
         <!-- note: this isn't done for 720, where an agent is not minted -->
-        <rdf:Description rdf:about="{uwf:generateIRI(., 'agent')}">
+        <rdf:Description rdf:about="{uwf:agentIRI(.)}">
             <xsl:call-template name="getmarc"/>
             <!-- create rdf:type and relationship to nomen or nomen string triples -->
             <xsl:choose>
@@ -214,7 +215,7 @@
                             <!--<xsl:choose>
                                 <!-\- if there's a $2, a nomen is minted -\->
                                 <xsl:when test="marc:subfield[@code = '2']">
-                                    <rdaao:P50411 rdf:resource="{uwf:generateIRI(., 'nomen')}"/>
+                                    <rdaao:P50411 rdf:resource="{uwf:nomenIRI(., 'age/nom')}"/>
                                 </xsl:when>
                                 <!-\- else a nomen string is used directly -\->
                                 <xsl:otherwise>-->
@@ -228,7 +229,7 @@
                             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10008"/>
                            <!-- <xsl:choose>
                                 <xsl:when test="marc:subfield[@code = '2']">
-                                    <rdaao:P50409 rdf:resource="{uwf:generateIRI(., 'nomen')}"/>
+                                    <rdaao:P50409 rdf:resource="{uwf:nomenIRI(., 'age/nom')}"/>
                                 </xsl:when>
                                 <xsl:otherwise>-->
                                     <rdaad:P50376>
@@ -244,7 +245,7 @@
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
                     <!--<xsl:choose>
                         <xsl:when test="marc:subfield[@code = '2']">
-                            <rdaao:P50407 rdf:resource="{uwf:generateIRI(., 'nomen')}"/>
+                            <rdaao:P50407 rdf:resource="{uwf:nomenIRI(., 'age/nom')}"/>
                         </xsl:when>
                         <xsl:otherwise>-->
                             <rdaad:P50375>
@@ -285,7 +286,7 @@
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:if test="marc:subfield[@code = '2']">
-            <rdf:Description rdf:about="{uwf:generateIRI(., 'nomen')}">
+            <rdf:Description rdf:about="{uwf:nomenIRI(., 'age/nom')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
                     <xsl:value-of select="uwf:agentAccessPoint(.)"/>
@@ -301,14 +302,14 @@
         match="marc:datafield[@tag = '700'][marc:subfield[@code = 't']] | marc:datafield[@tag = '710'][marc:subfield[@code = 't']] | marc:datafield[@tag = '711'][marc:subfield[@code = 't']]"
         mode="man">
         <xsl:if test="@ind2 != '2'">
-            <rdamo:P30265 rdf:resource="{uwf:generateIRI(., 'work')}"/>
+            <rdamo:P30265 rdf:resource="{uwf:relWorkIRI(.)}"/>
         </xsl:if>
     </xsl:template>
     <xsl:template
         match="marc:datafield[@tag = '700'][marc:subfield[@code = 't']] | marc:datafield[@tag = '710'][marc:subfield[@code = 't']] | marc:datafield[@tag = '711'][marc:subfield[@code = 't']]"
         mode="relWor" expand-text="yes">
         <xsl:if test="@ind2 != '2'">
-            <rdf:Description rdf:about="{uwf:generateIRI(., 'work')}">
+            <rdf:Description rdf:about="{uwf:relWorkIRI(.)}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
                 <rdawd:P10002>{concat(generate-id(), 'wor')}</rdawd:P10002>
                 <rdawd:P10328>
@@ -316,13 +317,13 @@
                 </rdawd:P10328>
                 <xsl:choose>
                     <xsl:when test="@tag = '700' and @ind1 != '3'">
-                        <rdawo:P10312 rdf:resource="{uwf:generateIRI(., 'agent')}"/>
+                        <rdawo:P10312 rdf:resource="{uwf:agentIRI(.)}"/>
                     </xsl:when>
                     <xsl:when test="@tag = '700' and @ind1 = '3'">
-                        <rdawo:P10313 rdf:resource="{uwf:generateIRI(., 'agent')}"/>
+                        <rdawo:P10313 rdf:resource="{uwf:agentIRI(.)}"/>
                     </xsl:when>
                     <xsl:when test="@tag = '710' or @tag = '711'">
-                        <rdawo:P10314 rdf:resource="{uwf:generateIRI(., 'agent')}"/>
+                        <rdawo:P10314 rdf:resource="{uwf:agentIRI(.)}"/>
                     </xsl:when>
                     <xsl:otherwise/>
                 </xsl:choose>
@@ -333,14 +334,14 @@
         match="marc:datafield[@tag = '700'][marc:subfield[@code = 't']] | marc:datafield[@tag = '710'][marc:subfield[@code = 't']] | marc:datafield[@tag = '711'][marc:subfield[@code = 't']]"
         mode="age" expand-text="yes">
         <xsl:if test="@ind2 != '2'">
-            <rdf:Description rdf:about="{uwf:generateIRI(., 'agent')}">
+            <rdf:Description rdf:about="{uwf:agentIRI(.)}">
                 <xsl:call-template name="getmarc"/>
                 <xsl:choose>
                     <xsl:when test="@tag = '700' and @ind1 != '3'">
                        <!-- <xsl:choose>
                             <!-\- if there's a $0, $1, or $2, a nomen is minted -\->
                             <xsl:when test="marc:subfield[@code = '0'] or marc:subfield[@code = '1'] or marc:subfield[@code = '2']">
-                                <rdaao:P50411 rdf:resource="{uwf:generateIRI(., 'nomen')}"/>
+                                <rdaao:P50411 rdf:resource="{uwf:nomenIRI(., 'age/nom')}"/>
                             </xsl:when>
                             <!-\- else a nomen string is used directly -\->
                             <xsl:otherwise>-->
@@ -354,7 +355,7 @@
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10008"/>
                        <!-- <xsl:choose>
                             <xsl:when test="marc:subfield[@code = '0'] or marc:subfield[@code = '1'] or marc:subfield[@code = '2']">
-                                <rdaao:P50409 rdf:resource="{uwf:generateIRI(., 'nomen')}"/>
+                                <rdaao:P50409 rdf:resource="{uwf:nomenIRI(., 'age/nom')}"/>
                             </xsl:when>
                             <xsl:otherwise>-->
                                 <rdaad:P50376>
@@ -367,7 +368,7 @@
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
                         <!--<xsl:choose>
                             <xsl:when test="marc:subfield[@code = '0'] or marc:subfield[@code = '1'] or marc:subfield[@code = '2']">
-                                <rdaao:P50407 rdf:resource="{uwf:generateIRI(., 'nomen')}"/>
+                                <rdaao:P50407 rdf:resource="{uwf:nomenIRI(., 'age/nom')}"/>
                             </xsl:when>
                             <xsl:otherwise>-->
                                 <rdaad:P50375>
@@ -387,14 +388,14 @@
         match="marc:datafield[@tag = '730'] | marc:datafield[@tag = '740']"
         mode="man">
         <xsl:if test="@ind2 != '2'">
-            <rdamo:P30265 rdf:resource="{uwf:generateIRI(., 'work')}"/>
+            <rdamo:P30265 rdf:resource="{uwf:relWorkIRI(.)}"/>
         </xsl:if>
     </xsl:template>
     <xsl:template
         match="marc:datafield[@tag = '730'] | marc:datafield[@tag = '740']"
         mode="relWor" expand-text="yes">
         <xsl:if test="@ind2 != '2'">
-            <rdf:Description rdf:about="{uwf:generateIRI(., 'work')}">
+            <rdf:Description rdf:about="{uwf:relWorkIRI(.)}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
                 <rdawd:P10002>{concat(generate-id(), 'wor')}</rdawd:P10002>
                 <rdawd:P10328>

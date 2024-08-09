@@ -41,51 +41,7 @@
     
 <!-- **FUNCTIONS** -->   
     
-    <!-- returns an IRI for an agent entity -->
-    <xsl:function name="uwf:generateIRI">
-        <xsl:param name="field"/>
-        <xsl:param name="type"/>
-        <xsl:variable name="ap" select="lower-case(string-join(uwf:agentAccessPoint($field)))"/> 
-        <xsl:choose>
-            <!-- If $1, return value of $1, otherwise construct an IRI based on the access point -->
-            <xsl:when test="$field/marc:subfield[@code = '1']">
-                <xsl:choose>
-                    <xsl:when test="count($field/marc:subfield[@code = '1']) > 1">
-                        <xsl:value-of select="uwf:multiple1s($field)"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="$field/marc:subfield[@code = '1']"/>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:when>
-            <!-- If $0 -->
-            <xsl:when test="count($field/marc:subfield[@code = '0']) = 1">
-                <xsl:choose>
-                    <!-- and IRI, use -->
-                    <xsl:when test="contains($field/marc:subfield[@code = '0'], 'http')">
-                        <xsl:variable name="processed0" select="uwf:process0($field/marc:subfield[@code = '0'])"/>
-                        <xsl:choose>
-                            <xsl:when test="$processed0">
-                                <xsl:value-of select="$processed0"/>
-                            </xsl:when>
-                            <!-- if IRI can't be retrieved, generate opaque -->
-                            <xsl:otherwise>
-                                <xsl:value-of select="'http://marc2rda.edu/fake/'||$type||'/'||generate-id($field)"/>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:when>
-                    <!-- and FAST, translate to IRI and use -->
-                    <xsl:when test="starts-with($field/marc:subfield[@code = '0'], '(OCoLC)')">
-                        <xsl:value-of select="concat('https://id.worldcat.org/fast/', substring-after($field/marc:subfield[@code = '0'], 'fst'))"/>
-                    </xsl:when>
-                </xsl:choose>
-            </xsl:when>
-            <!-- otherwise it's an opaque IRI to avoid conflating different agents under one IRI -->
-            <xsl:otherwise>
-                <xsl:value-of select="'http://marc2rda.edu/fake/'||$type||'/'||generate-id($field)"/>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:function>
+    
     
     <!-- generates an access point for an agent based on the subfields present in the field -->
     <xsl:function name="uwf:agentAccessPoint" expand-text="true">
@@ -240,11 +196,6 @@
         </xsl:choose>
     </xsl:function>
     
-    <!-- This is a placeholder for handling multiple $1 values, it currently returns the first $1 value -->
-    <xsl:function name="uwf:multiple1s">
-        <xsl:param name="field"/>
-        <xsl:value-of select="$field/marc:subfield[@code = '1'][1]"/>
-    </xsl:function>
     
     <!-- takes in the field number and returns the field type for lookup in relator table -->
     <!-- either 'X00', 'X10', or 'X11' -->

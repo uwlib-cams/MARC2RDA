@@ -30,12 +30,9 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>6xx-test1wor</rdawd:P10002>
-      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/agent/d17e6"/>
-      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/agent/d17e13"/>
-      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/agent/d17e18"/>
-      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/agent/d17e25"/>
-      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/agent/d17e32"/>
-      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/work/d17e32"/>
+      <rdawo:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/haydn%2Cjoseph%2C1732-1809.symphonies."/>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age/d19e6"/>
+      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/wor/d19e6"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -46,60 +43,26 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/6xx-test1exp"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nomen/d17e6">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/d19e6">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Dante Alighieri, 1265-1321</rdand:P80068>
+      <rdand:P80068>Haydn, Joseph, 1732-1809.</rdand:P80068>
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nomen/d17e13">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/nom/d19e6">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Dante Alighieri, 1265-1321</rdand:P80068>
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/mesh"/>
+      <rdand:P50311>Haydn, Joseph, 1732-1809. Symphonies.</rdand:P50311>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nomen/d17e18">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Dante Alighieri, 1265-1321</rdand:P80068>
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nomen/d17e25">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Dante Alighieri, 1265-1321</rdand:P80068>
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gnd"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nomen/d17e32">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Dante Alighieri.</rdand:P80068>
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/idsbb"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/agent/d17e6">
-      <fake:marcfield>F600 00 $a Dante Alighieri, $d 1265-1321 $x Criticism and interpretation.</fake:marcfield>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d19e6">
+      <fake:marcfield>F600 10 $a Haydn, Joseph, $d 1732-1809. $t Symphonies.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/nomen/d17e6"/>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/d19e6"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/agent/d17e13">
-      <fake:marcfield>F600 02 $a Dante Alighieri, $d 1265-1321</fake:marcfield>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/nomen/d17e13"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/agent/d17e18">
-      <fake:marcfield>F600 07 $a Dante Alighieri, $d 1265-1321 $2 fast</fake:marcfield>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/nomen/d17e18"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/agent/d17e25">
-      <fake:marcfield>F600 07 $a Dante Alighieri, $d 1265-1321 $2 gnd</fake:marcfield>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/nomen/d17e25"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/agent/d17e32">
-      <fake:marcfield>F600 07 $a Dante $c Alighieri. $t Divina commedia. $2 idsbb</fake:marcfield>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/nomen/d17e32"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/work/d17e32">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/d19e6">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>d17e32wor</rdawd:P10002>
-      <rdawd:P10328>Dante Alighieri. Divina commedia.</rdawd:P10328>
-      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/agent/d17e32"/>
+      <rdawd:P10002>d19e6wor</rdawd:P10002>
+      <rdawd:P10328 rdf:resource="http://marc2rda.edu/fake/wor/nom/d19e6"/>
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d19e6"/>
    </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/haydn%2Cjoseph%2C1732-1809.symphonies."/>
 </rdf:RDF>
