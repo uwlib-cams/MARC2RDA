@@ -30,9 +30,10 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>6xx-test1wor</rdawd:P10002>
-      <rdawo:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/haydn%2Cjoseph%2C1732-1809.symphonies."/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/pushkin%2Caleksandrsergeevich%2C1799-1837museumsrussia%28federation%29moscowmaps."/>
       <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age/d19e6"/>
-      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/wor/d19e6"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/museumsrussia%28federation%29moscow"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/maps."/>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -45,24 +46,27 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/d19e6">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Haydn, Joseph, 1732-1809.</rdand:P80068>
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/nom/d19e6">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P50311>Haydn, Joseph, 1732-1809. Symphonies.</rdand:P50311>
+      <rdand:P80068>Pushkin, Aleksandr Sergeevich, 1799-1837</rdand:P80068>
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d19e6">
-      <fake:marcfield>F600 10 $a Haydn, Joseph, $d 1732-1809. $t Symphonies.</fake:marcfield>
+      <fake:marcfield>F600 10 $a Pushkin, Aleksandr Sergeevich, $d 1799-1837 $x Museums $z Russia (Federation) $z Moscow $v Maps.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/d19e6"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/d19e6">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>d19e6wor</rdawd:P10002>
-      <rdawd:P10328 rdf:resource="http://marc2rda.edu/fake/wor/nom/d19e6"/>
-      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d19e6"/>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/pushkin%2Caleksandrsergeevich%2C1799-1837museumsrussia%28federation%29moscowmaps.">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Pushkin, Aleksandr Sergeevich, 1799-1837 Museums Russia (Federation) Moscow Maps.</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/haydn%2Cjoseph%2C1732-1809.symphonies."/>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/museumsrussia%28federation%29moscow">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Museums Russia (Federation) Moscow</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/maps.">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Maps.</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
 </rdf:RDF>

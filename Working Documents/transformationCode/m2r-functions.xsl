@@ -243,22 +243,22 @@
             <!-- ind2 values from subject schemes -->
             <!-- hardcoding prevents speeds up lookup -->
             <xsl:when test="$code2 = 'lcsh'">
-                <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/lcsh'"/>
+                <skos:inScheme rdf:resource="{'https://id.loc.gov/vocabulary/subjectSchemes/lcsh'}"/>
             </xsl:when>
             <xsl:when test="$code2 = 'cyac'">
-                <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/cyac'"/>
+                <skos:inScheme rdf:resource="{'https://id.loc.gov/vocabulary/subjectSchemes/cyac'}"/>
             </xsl:when>
             <xsl:when test="$code2 = 'mesh'">
-                <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/mesh'"/>
+                <skos:inScheme rdf:resource="{'https://id.loc.gov/vocabulary/subjectSchemes/mesh'}"/>
             </xsl:when>
             <xsl:when test="$code2 = 'nal'">
-                <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/nal'"/>
+                <skos:inScheme rdf:resource="{'https://id.loc.gov/vocabulary/subjectSchemes/nal'}"/>
             </xsl:when>
             <xsl:when test="$code2 = 'cash'">
-                <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/cash'"/>
+                <skos:inScheme rdf:resource="{'https://id.loc.gov/vocabulary/subjectSchemes/cash'}"/>
             </xsl:when>
             <xsl:when test="$code2 = 'rvm'">
-                <xsl:value-of select="'https://id.loc.gov/vocabulary/subjectSchemes/rvm'"/>
+                <skos:inScheme rdf:resource="{'https://id.loc.gov/vocabulary/subjectSchemes/rvm'}"/>
             </xsl:when>
             <!-- otherwise lookup code2 value -->
             <xsl:otherwise>
@@ -270,7 +270,10 @@
                         <skos:inScheme rdf:resource="{concat('http://id.loc.gov/vocabulary/genreFormSchemes/', lower-case($code2))}"/>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:comment>$2 value of {$code2} has been lost</xsl:comment>
+                        <xsl:comment>IRI could not be found for {$code2}</xsl:comment>
+                        <skos:inScheme>
+                            <xsl:value-of select="$code2"/>
+                        </skos:inScheme>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:otherwise>
@@ -484,6 +487,5 @@
             </xsl:when>
         </xsl:choose>
     </xsl:function>
-    
 </xsl:stylesheet>
 
