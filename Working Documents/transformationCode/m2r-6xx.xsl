@@ -32,6 +32,7 @@
     <xsl:template
         match="marc:datafield[@tag = '600'] | marc:datafield[@tag = '610'] | marc:datafield[@tag = '611']"
         mode="wor">
+        <xsl:call-template name="getmarc"/>
         <xsl:variable name="prefLabel">
             <xsl:call-template name="F600-label"/>
         </xsl:variable>
@@ -189,6 +190,7 @@
         mode="relWor" expand-text="yes">
         <xsl:if test="@ind2 != '2'">
             <rdf:Description rdf:about="{uwf:relWorkIRI(.)}">
+                <xsl:call-template name="getmarc"/>
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
                 <rdawd:P10002>{concat(generate-id(), 'wor')}</rdawd:P10002>
                 <xsl:choose>
@@ -221,6 +223,7 @@
     <xsl:template
         match="marc:datafield[@tag = '630']"
         mode="wor">
+        <xsl:call-template name="getmarc"/>
         <xsl:variable name="prefLabel">
             <xsl:call-template name="F630-label"/>
         </xsl:variable>
@@ -241,6 +244,7 @@
         mode="relWor" expand-text="yes">
         <xsl:if test="starts-with(uwf:relWorkIRI(.), 'http://marc2rda.edu/fake/')">
             <rdf:Description rdf:about="{uwf:relWorkIRI(.)}">
+                <xsl:call-template name="getmarc"/>
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
                 <rdawd:P10002>{concat(generate-id(), 'wor')}</rdawd:P10002>
                 <xsl:choose>
