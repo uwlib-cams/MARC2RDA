@@ -57,6 +57,26 @@
                         <xsl:value-of select="'http://rdaregistry.info/Elements/c/Work.en'"/>
                     </xsl:attribute>
                 </xsl:when>
+                <xsl:when test="@rdf:resource= 'http://rdaregistry.info/Elements/c/C10002'">
+                    <xsl:attribute name="rdf:resource">
+                        <xsl:value-of select="'http://rdaregistry.info/Elements/c/Agent.en'"/>
+                    </xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@rdf:resource = 'http://rdaregistry.info/Elements/c/C10003'">
+                    <xsl:attribute name="rdf:resource">
+                        <xsl:value-of select="'http://rdaregistry.info/Elements/c/Item.en'"/>
+                    </xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@rdf:resource = 'http://rdaregistry.info/Elements/c/C10004'">
+                    <xsl:attribute name="rdf:resource">
+                        <xsl:value-of select="'http://rdaregistry.info/Elements/c/Person.en'"/>
+                    </xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@rdf:resource = 'http://rdaregistry.info/Elements/c/C10005'">
+                    <xsl:attribute name="rdf:resource">
+                        <xsl:value-of select="'http://rdaregistry.info/Elements/c/CorporateBody.en'"/>
+                    </xsl:attribute>
+                </xsl:when>
                 <xsl:when test="@rdf:resource = 'http://rdaregistry.info/Elements/c/C10006'">
                     <xsl:attribute name="rdf:resource">
                         <xsl:value-of select="'http://rdaregistry.info/Elements/c/Expression.en'"/>
@@ -67,9 +87,24 @@
                         <xsl:value-of select="'http://rdaregistry.info/Elements/c/Manifestation.en'"/>
                     </xsl:attribute>
                 </xsl:when>
-                <xsl:when test="@rdf:resource = 'http://rdaregistry.info/Elements/c/C10003'">
+                <xsl:when test="@rdf:resource = 'http://rdaregistry.info/Elements/c/C10008'">
                     <xsl:attribute name="rdf:resource">
-                        <xsl:value-of select="'http://rdaregistry.info/Elements/c/Item.en'"/>
+                        <xsl:value-of select="'http://rdaregistry.info/Elements/c/Family.en'"/>
+                    </xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@rdf:resource = 'http://rdaregistry.info/Elements/c/C10009'">
+                    <xsl:attribute name="rdf:resource">
+                        <xsl:value-of select="'http://rdaregistry.info/Elements/c/Place.en'"/>
+                    </xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@rdf:resource = 'http://rdaregistry.info/Elements/c/C10010'">
+                    <xsl:attribute name="rdf:resource">
+                        <xsl:value-of select="'http://rdaregistry.info/Elements/c/Timespan.en'"/>
+                    </xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@rdf:resource = 'http://rdaregistry.info/Elements/c/C10011'">
+                    <xsl:attribute name="rdf:resource">
+                        <xsl:value-of select="'http://rdaregistry.info/Elements/c/CollectiveAgent.en'"/>
                     </xsl:attribute>
                 </xsl:when>
                 <xsl:when test="@rdf:resource = 'http://rdaregistry.info/Elements/c/C10012'">
@@ -77,9 +112,9 @@
                         <xsl:value-of select="'http://rdaregistry.info/Elements/c/Nomen.en'"/>
                     </xsl:attribute>
                 </xsl:when>
-                <xsl:when test="@rdf:resource= 'http://rdaregistry.info/Elements/c/C10004'">
+                <xsl:when test="@rdf:resource = 'http://rdaregistry.info/Elements/c/C10013'">
                     <xsl:attribute name="rdf:resource">
-                        <xsl:value-of select="'http://rdaregistry.info/Elements/c/Agent.en'"/>
+                        <xsl:value-of select="'http://rdaregistry.info/Elements/c/RDAEntity.en'"/>
                     </xsl:attribute>
                 </xsl:when>
             </xsl:choose>
