@@ -348,7 +348,7 @@
         </xsl:for-each>
     </xsl:template>
     
-    <xsl:template
+    <!--<xsl:template
         match="marc:datafield[@tag = '382'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '382']"
         mode="exp">
         <xsl:if test="@ind1 = ' ' or @ind1 = '0' or @ind1 = '1'">
@@ -375,5 +375,5 @@
                 select="uwf:conceptTest(marc:subfield[@code = '0'] | marc:subfield[@code = '1'], 'P10220')"
             />
         </xsl:if>
-    </xsl:template>
+    </xsl:template>-->
 </xsl:stylesheet>
