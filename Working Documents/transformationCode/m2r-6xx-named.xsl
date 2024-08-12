@@ -49,12 +49,33 @@
             | marc:subfield[@code = 'o'] | marc:subfield[@code = 'p'] | marc:subfield[@code = 'r'] | marc:subfield[@code = 's']
             | marc:subfield[@code = 'v'] | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" "/>
     </xsl:template>
+    <xsl:template name="F610-label" expand-text="yes">
+        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
+            | marc:subfield[@code = 'd'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'u']
+            | marc:subfield[@code = 't'] | marc:subfield[@code = 'f'] | marc:subfield[@code = 'h'] | marc:subfield[@code = 'k']
+            | marc:subfield[@code = 'l'] | marc:subfield[@code = 'm'] | marc:subfield[@code = 'n'] | marc:subfield[@code = 'o']
+            | marc:subfield[@code = 'p'] | marc:subfield[@code = 'r'] | marc:subfield[@code = 's'] | marc:subfield[@code = 'v']
+            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" "/>
+    </xsl:template>
+    <xsl:template name="F611-label" expand-text="yes">
+        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd'] 
+            | marc:subfield[@code = 'e'] | marc:subfield[@code = 'u'] | marc:subfield[@code = 't'] 
+            | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h'] 
+            | marc:subfield[@code = 'k'] | marc:subfield[@code = 'l'] | marc:subfield[@code = 'n'] 
+            | marc:subfield[@code = 'p'] | marc:subfield[@code = 'q'] | marc:subfield[@code = 's'] | marc:subfield[@code = 'v']
+            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" "/>
+    </xsl:template>
     
     <xsl:template name="F630-label" expand-text="yes">
         <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'f']
             | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h'] | marc:subfield[@code = 'k'] | marc:subfield[@code = 'l']
             | marc:subfield[@code = 'm'] | marc:subfield[@code = 'n'] | marc:subfield[@code = 'o'] | marc:subfield[@code = 'p']
             | marc:subfield[@code = 'r'] | marc:subfield[@code = 's'] | marc:subfield[@code = 't'] | marc:subfield[@code = 'v']
+            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" "/>
+    </xsl:template>
+    <xsl:template name="F650-label" expand-text="yes">
+        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
+            | marc:subfield[@code = 'd'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'v']
             | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" "/>
     </xsl:template>
     
@@ -90,7 +111,7 @@
     
     <xsl:template name="F6XX-xx-v">
         <xsl:choose>
-            <xsl:when test="@ind2 = '4'">
+            <xsl:when test="../@ind2 = '4'">
                 <rdawd:P10004>
                     <xsl:value-of select="."/>
                 </rdawd:P10004>
@@ -101,25 +122,52 @@
         </xsl:choose>
     </xsl:template>
     
+    <xsl:template name="F6XX-xx-y">
+        <xsl:param name="prefLabel"/>
+        <xsl:choose>
+            <xsl:when test="@ind2 = '4'">
+                <rdawd:P10322>
+                    <xsl:value-of select="$prefLabel"/>
+                </rdawd:P10322>
+            </xsl:when>
+            <xsl:otherwise>
+                <rdawo:P10322 rdf:resource="{uwf:timespanIRI(.)}"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template name="F6XX-xx-z">
+        <xsl:param name="prefLabel"/>
+        <xsl:choose>
+            <xsl:when test="@ind2 = '4'">
+                <rdawd:P10321>
+                    <xsl:value-of select="$prefLabel"/>
+                </rdawd:P10321>
+            </xsl:when>
+            <xsl:otherwise>
+                <rdawo:P10321 rdf:resource="{uwf:placeIRI(.)}"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
     <xsl:template name="F6XX-concept">
         <xsl:param name="prefLabel"/>
-        <xsl:if test="starts-with(uwf:subjectIRI(., uwf:getSubjectSchemeCode(.), $prefLabel), 'http://marc2rda.edu')">
-            <rdf:Description rdf:about="{uwf:conceptIRI(uwf:getSubjectSchemeCode(.), $prefLabel)}">
-                <xsl:copy-of select="uwf:fillConcept($prefLabel, uwf:getSubjectSchemeCode(.), '', '600')"/>
+        <xsl:param name="fieldNum"/>
+        <rdf:Description rdf:about="{uwf:conceptIRI(uwf:getSubjectSchemeCode(.), $prefLabel)}">
+                <xsl:copy-of select="uwf:fillConcept($prefLabel, uwf:getSubjectSchemeCode(.), '', $fieldNum)"/>
             </rdf:Description>
             <xsl:if test="marc:subfield[@code = 'x'] or marc:subfield[@code = 'y'] or marc:subfield[@code = 'z']">
                 <xsl:variable name="prefLabelXYZ">
                     <xsl:call-template name="F6XX-xyz-label"/>
                 </xsl:variable>
                 <rdf:Description rdf:about="{uwf:conceptIRI(uwf:getSubjectSchemeCode(.), $prefLabelXYZ)}">
-                    <xsl:copy-of select="uwf:fillConcept($prefLabelXYZ, uwf:getSubjectSchemeCode(.), '', '600')"/>
+                    <xsl:copy-of select="uwf:fillConcept($prefLabelXYZ, uwf:getSubjectSchemeCode(.), '', $fieldNum)"/>
                 </rdf:Description>
             </xsl:if>
             <xsl:for-each select="marc:subfield[@code = 'v']">
                 <rdf:Description rdf:about="{uwf:conceptIRI(uwf:getSubjectSchemeCode(parent::node()), .)}">
-                    <xsl:copy-of select="uwf:fillConcept(., uwf:getSubjectSchemeCode(parent::node()), '', '600')"/>
+                    <xsl:copy-of select="uwf:fillConcept(., uwf:getSubjectSchemeCode(parent::node()), '', $fieldNum)"/>
                 </rdf:Description>
             </xsl:for-each>
-        </xsl:if>
     </xsl:template>
 </xsl:stylesheet>

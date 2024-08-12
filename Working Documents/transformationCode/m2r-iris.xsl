@@ -86,6 +86,17 @@
         <xsl:value-of select="'http://marc2rda.edu/fake/'||$type||'/'||generate-id($field)"/>
     </xsl:function>
     
+    <!-- don't forget about subjects - where $1 is not for the timespan but for the whole subject -->
+    <xsl:function name="uwf:timespanIRI">
+        <xsl:param name="field"/>
+        <xsl:value-of select="'http://marc2rda.edu/fake/timespan/'||generate-id($field)"/>
+    </xsl:function>
+    
+    <xsl:function name="uwf:placeIRI">
+        <xsl:param name="field"/>
+        <xsl:value-of select="'http://marc2rda.edu/fake/place/'||generate-id($field)"/>
+    </xsl:function>
+    
     <!-- return an IRI for a concept generated from the scheme and the provided value -->
     <xsl:function name="uwf:conceptIRI">
         <xsl:param name="scheme"/>
@@ -110,7 +121,7 @@
                 </xsl:choose>
             </xsl:when>
             <!-- If $0 -->
-            <xsl:when test="count($field/marc:subfield[@code = '0']) = 1">
+            <xsl:when test="not($field/marc:subfield[@code = '1']) and count($field/marc:subfield[@code = '0']) = 1">
                 <xsl:choose>
                     <!-- and IRI, use -->
                     <xsl:when test="contains($field/marc:subfield[@code = '0'], 'http')">
@@ -129,6 +140,9 @@
                     <xsl:when test="starts-with($field/marc:subfield[@code = '0'], '(OCoLC)')">
                         <xsl:value-of select="concat('https://id.worldcat.org/fast/', substring-after($field/marc:subfield[@code = '0'], 'fst'))"/>
                     </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="uwf:conceptIRI($scheme, $value)"/>
+                    </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
             <!-- otherwise it's an opaque IRI to avoid conflating different agents under one IRI -->
