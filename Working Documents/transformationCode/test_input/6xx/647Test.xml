@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">6xx-test1</marc:controlfield> 
+        <marc:datafield tag="647" ind1=" " ind2="7">
+            <marc:subfield code="a">American Revolution</marc:subfield>
+            <marc:subfield code="c">(United States :</marc:subfield>
+            <marc:subfield code="d">1775-1783)</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01351668</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39Qhp4vB989PWKg6VGKmH6MwK</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="647" ind1=" " ind2="7">
+            <marc:subfield code="a">Christchurch Mosque Shootings</marc:subfield>
+            <marc:subfield code="c">(Christchurch, New Zealand :</marc:subfield>
+            <marc:subfield code="d">2019)</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst02007190</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="647" ind1=" " ind2="7">
+            <marc:subfield code="a">Cold War</marc:subfield>
+            <marc:subfield code="d">(1945-1989)</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

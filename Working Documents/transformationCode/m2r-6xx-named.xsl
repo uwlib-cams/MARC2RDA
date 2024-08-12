@@ -73,6 +73,11 @@
             | marc:subfield[@code = 'r'] | marc:subfield[@code = 's'] | marc:subfield[@code = 't'] | marc:subfield[@code = 'v']
             | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" "/>
     </xsl:template>
+    <xsl:template name="F647-label" expand-text="yes">
+        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'c']
+            | marc:subfield[@code = 'd'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'v']
+            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" "/>
+    </xsl:template>
     <xsl:template name="F650-label" expand-text="yes">
         <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
             | marc:subfield[@code = 'd'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'v']
