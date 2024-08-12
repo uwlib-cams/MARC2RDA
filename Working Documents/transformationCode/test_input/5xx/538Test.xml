@@ -20,6 +20,7 @@
             <marc:subfield code="a">Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002.            </marc:subfield>
             <marc:subfield code="u">http://purl.oclc.org/DLF/benchrepro0212</marc:subfield>
             <marc:subfield code="5">MiAaHDL</marc:subfield>
+            <marc:subfield code="5">WaU</marc:subfield>
         </marc:datafield>
         
         <marc:datafield tag="538" ind1=" " ind2=" ">
@@ -38,6 +39,7 @@
             <marc:subfield code="6">538-02</marc:subfield>
             <marc:subfield code="a">non-roman a with 5</marc:subfield>
             <marc:subfield code="5">MiAaHDL</marc:subfield>
+            <marc:subfield code="5">WaU</marc:subfield>
         </marc:datafield>
         
     </marc:record>

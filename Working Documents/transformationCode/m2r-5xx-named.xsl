@@ -21,6 +21,7 @@
     xmlns:fake="http://fakePropertiesForDemo" 
     xmlns:uwf="http://universityOfWashington/functions" exclude-result-prefixes="marc uwf ex" version="3.0">
     <xsl:import href="m2r-functions.xsl"/>
+    <xsl:import href="m2r-iris.xsl"/>
     
     <!-- 506 -->
     <xsl:template name="F506-xx-abcdegqu3" expand-text="yes">
