@@ -20,6 +20,9 @@
          xmlns:rdap="http://rdaregistry.info/Elements/p/"
          xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
          xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
          xmlns:rdaw="http://rdaregistry.info/Elements/w/"
          xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
          xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
@@ -30,10 +33,25 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>6xx-test1wor</rdawd:P10002>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/pushkin%2Caleksandrsergeevich%2C1799-1837museumsrussia%28federation%29moscowmaps."/>
-      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age/d19e6"/>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/museumsrussia%28federation%29moscow"/>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/maps."/>
+      <fake:marcfield>F600 17 $a Bickford, Sarah Gammon, $d 1855-1931 $2 fast $0 (OCoLC)fst01583751</fake:marcfield>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01583751"/>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age/d19e14"/>
+      <fake:marcfield>F600 11 $a Harnoncourt, Nikolaus.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/cyac/harnoncourt%2Cnikolaus."/>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age/d19e24"/>
+      <fake:marcfield>F600 17 $a Bajwa, Rupa $d 1976- $2 gnd</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/gnd/bajwa%2Crupa1976-"/>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age/d19e27"/>
+      <fake:marcfield>F600 10 $a Backhouse, E. $q (Edmund), $c Sir, $d 1873-1944.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/backhouse%2Ce.%28edmund%29%2Csir%2C1873-1944."/>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age/d19e34"/>
+      <fake:marcfield>F610 20 $a Seattle City Light $x Landscape architecture.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/seattlecitylightlandscapearchitecture."/>
+      <rdawo:P10263 rdf:resource="http://marc2rda.edu/fake/age/d19e43"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/landscapearchitecture."/>
+      <fake:marcfield>F610 27 $a NACO (Program) $2 fast $0 (OCoLC)fst00697555</fake:marcfield>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00697555"/>
+      <rdawo:P10263 rdf:resource="http://marc2rda.edu/fake/age/d19e48"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -44,29 +62,89 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/6xx-test1exp"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/d19e6">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/d19e14">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Pushkin, Aleksandr Sergeevich, 1799-1837</rdand:P80068>
+      <rdand:P80068>Bickford, Sarah Gammon, 1855-1931</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/d19e24">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Harnoncourt, Nikolaus.</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/cyac"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/d19e27">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Bajwa, Rupa 1976-</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gnd"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/d19e34">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Backhouse, E. (Edmund), Sir, 1873-1944.</rdand:P80068>
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d19e6">
-      <fake:marcfield>F600 10 $a Pushkin, Aleksandr Sergeevich, $d 1799-1837 $x Museums $z Russia (Federation) $z Moscow $v Maps.</fake:marcfield>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/d19e43">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Seattle City Light</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/d19e48">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>NACO (Program)</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d19e14">
+      <fake:marcfield>F600 17 $a Bickford, Sarah Gammon, $d 1855-1931 $2 fast $0 (OCoLC)fst01583751</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/d19e6"/>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/d19e14"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/pushkin%2Caleksandrsergeevich%2C1799-1837museumsrussia%28federation%29moscowmaps.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d19e24">
+      <fake:marcfield>F600 11 $a Harnoncourt, Nikolaus.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/d19e24"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d19e27">
+      <fake:marcfield>F600 17 $a Bajwa, Rupa $d 1976- $2 gnd</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/d19e27"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d19e34">
+      <fake:marcfield>F600 10 $a Backhouse, E. $q (Edmund), $c Sir, $d 1873-1944.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/d19e34"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d19e43">
+      <fake:marcfield>F610 20 $a Seattle City Light $x Landscape architecture.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/age/nom/d19e43"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d19e48">
+      <fake:marcfield>F610 27 $a NACO (Program) $2 fast $0 (OCoLC)fst00697555</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/age/nom/d19e48"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/cyac/harnoncourt%2Cnikolaus.">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Pushkin, Aleksandr Sergeevich, 1799-1837 Museums Russia (Federation) Moscow Maps.</skos:prefLabel>
+      <skos:prefLabel>Harnoncourt, Nikolaus.</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/cyac"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/gnd/bajwa%2Crupa1976-">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Bajwa, Rupa 1976-</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gnd"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/backhouse%2Ce.%28edmund%29%2Csir%2C1873-1944.">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Backhouse, E. (Edmund), Sir, 1873-1944.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/museumsrussia%28federation%29moscow">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/seattlecitylightlandscapearchitecture.">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Museums Russia (Federation) Moscow</skos:prefLabel>
+      <skos:prefLabel>Seattle City Light Landscape architecture.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/maps.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/landscapearchitecture.">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Maps.</skos:prefLabel>
+      <skos:prefLabel>Landscape architecture.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
 </rdf:RDF>
