@@ -35,6 +35,7 @@
     <xsl:mode name="relWor" on-no-match="shallow-skip"/>
     <xsl:mode name="con" on-no-match="shallow-skip"/>
     <xsl:mode name="pla" on-no-match="shallow-skip"/>
+    <xsl:mode name="tim" on-no-match="shallow-skip"/>
     
     <!-- base IRI for now - all minted entities begin with this -->
     <xsl:variable name="base" select="'http://fakeIRI2.edu/'"/>
@@ -89,6 +90,9 @@
             xmlns:rdap="http://rdaregistry.info/Elements/p/"
             xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
             xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+            xmlns:rdat="http://rdaregistry.info/Elements/t/"
+            xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+            xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
             xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
             xmlns:skos="http://www.w3.org/2004/02/skos/core#"
             xmlns:uwmisc="http://uw.edu/all-purpose-namespace/"
@@ -170,5 +174,9 @@
         <xsl:apply-templates select="*" mode="pla">
             <xsl:with-param name="baseIRI" select="$baseIRI"/>
         </xsl:apply-templates>
+        
+        <!-- *****TIMESPANS***** -->
+        <xsl:apply-templates select="*" mode="tim"/>
+        
     </xsl:template>
 </xsl:stylesheet>

@@ -32,6 +32,8 @@
     <xsl:variable name="i" select="document('http://www.rdaregistry.info/xml/Elements/i.xml')"/>
     <xsl:variable name="n" select="document('http://www.rdaregistry.info/xml/Elements/n.xml')"/>
     <xsl:variable name="a" select="document('http://www.rdaregistry.info/xml/Elements/a.xml')"/>
+    <xsl:variable name="p" select="document('http://www.rdaregistry.info/xml/Elements/p.xml')"/>
+    <xsl:variable name="t" select="document('http://www.rdaregistry.info/xml/Elements/t.xml')"/>
     <xsl:key name="rdawDoc" match="$w/rdf:RDF/rdf:Description"
         use="substring-after(@rdf:about, '/P')"/>
     <xsl:key name="rdaeDoc" match="$e/rdf:RDF/rdf:Description"
@@ -43,6 +45,10 @@
     <xsl:key name="rdanDoc" match="$n/rdf:RDF/rdf:Description"
         use="substring-after(@rdf:about, '/P')"/>
     <xsl:key name="rdaaDoc" match="$a/rdf:RDF/rdf:Description"
+        use="substring-after(@rdf:about, '/P')"/>
+    <xsl:key name="rdapDoc" match="$p/rdf:RDF/rdf:Description"
+        use="substring-after(@rdf:about, '/P')"/>
+    <xsl:key name="rdatDoc" match="$t/rdf:RDF/rdf:Description"
         use="substring-after(@rdf:about, '/P')"/>
     <xsl:mode on-no-match="shallow-copy"/>
 
@@ -94,6 +100,22 @@
                                 <xsl:value-of select="name(.)"/>
                 <xsl:text> = </xsl:text>
                 <xsl:value-of select="key('rdaaDoc', substring-after(name(.), ':P'), $a)/rdfs:label[@xml:lang = 'en']"/>
+            </xsl:comment>
+        </xsl:if>
+        <xsl:if
+            test="contains(name(.), 'rdap:') or contains(name(.), 'rdapd:') or contains(name(.), 'rdapo:')">
+            <xsl:comment>
+                                <xsl:value-of select="name(.)"/>
+                <xsl:text> = </xsl:text>
+                <xsl:value-of select="key('rdapDoc', substring-after(name(.), ':P'), $p)/rdfs:label[@xml:lang = 'en']"/>
+            </xsl:comment>
+        </xsl:if>
+        <xsl:if
+            test="contains(name(.), 'rdat:') or contains(name(.), 'rdatd:') or contains(name(.), 'rdato:')">
+            <xsl:comment>
+                                <xsl:value-of select="name(.)"/>
+                <xsl:text> = </xsl:text>
+                <xsl:value-of select="key('rdatDoc', substring-after(name(.), ':P'), $t)/rdfs:label[@xml:lang = 'en']"/>
             </xsl:comment>
         </xsl:if>
     </xsl:template>
