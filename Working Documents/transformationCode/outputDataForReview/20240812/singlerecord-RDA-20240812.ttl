@@ -1,0 +1,211 @@
+@prefix ex: <http://fakeIRI2.edu/> .
+@prefix fake: <http://fakePropertiesForDemo> .
+@prefix rdaad: <http://rdaregistry.info/Elements/a/datatype/> .
+@prefix rdaed: <http://rdaregistry.info/Elements/e/datatype/> .
+@prefix rdaeo: <http://rdaregistry.info/Elements/e/object/> .
+@prefix rdaid: <http://rdaregistry.info/Elements/i/datatype/> .
+@prefix rdam: <http://rdaregistry.info/Elements/m/> .
+@prefix rdamd: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix rdamo: <http://rdaregistry.info/Elements/m/object/> .
+@prefix rdan: <http://rdaregistry.info/Elements/n/> .
+@prefix rdand: <http://rdaregistry.info/Elements/n/datatype/> .
+@prefix rdapo: <http://rdaregistry.info/Elements/p/object/> .
+@prefix rdaw: <http://rdaregistry.info/Elements/w/> .
+@prefix rdawd: <http://rdaregistry.info/Elements/w/datatype/> .
+@prefix rdawo: <http://rdaregistry.info/Elements/w/object/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+ex:1400208651man a <http://rdaregistry.info/Elements/c/C10007> ;
+    fake:marcfield "F024 7# $a 1773/49194 $2 hdl",
+        "F245 10 $a Quieren mi labor más no mi intelecto : $b they want my hands not my brains : mapping the gendered and racialized journeys of adult English learner immigrant Latin American women in the US higher education system / $c Maria Elizabeth Ramirez Arreola.",
+        "F264 #1 $a [Seattle] : $b [University of Washington Libraries], $c [2022]",
+        "F264 #4 $c ©2022",
+        "F337 ## $a computer $b c $2 rdamedia",
+        "F338 ## $a online resource $b cr $2 rdacarrier",
+        "F347 ## $a text file $2 rdaft",
+        "F347 ## $b PDF",
+        "F504 ## $a Includes bibliographical references (pages 107-116).",
+        "F506 1# $a Restrict to UW for 2 years -- then make Open Access $g 20240912",
+        "F588 0# $a Online resource; title from PDF title page (ResearchWorks Archive, viewed September 28, 2023)." ;
+    rdam:P30001 <http://id.loc.gov/vocabulary/carriers/cr> ;
+    rdam:P30002 <http://id.loc.gov/vocabulary/mediaTypes/c> ;
+    rdam:P30018 <http://rdaregistry.info/termList/fileType/1002> ;
+    rdamd:P30007 "2022" ;
+    rdamd:P30011 "2022" ;
+    rdamd:P30088 "Seattle" ;
+    rdamd:P30096 "PDF" ;
+    rdamd:P30105 "Maria Elizabeth Ramirez Arreola" ;
+    rdamd:P30111 "[Seattle] : [University of Washington Libraries], [2022]" ;
+    rdamd:P30137 "Copyright notice date: ©2022",
+        "Source of description: Online resource; title from PDF title page (ResearchWorks Archive, viewed September 28, 2023)." ;
+    rdamd:P30142 "they want my hands not my brains : mapping the gendered and racialized journeys of adult English learner immigrant Latin American women in the US higher education system" ;
+    rdamd:P30156 "Quieren mi labor más no mi intelecto" ;
+    rdamd:P30176 "University of Washington Libraries" ;
+    rdamd:P30455 "Includes bibliographical references (pages 107-116)." ;
+    rdamo:P30004 <http://marc2rda.edu/fake/nom/d19e38> ;
+    rdamo:P30103 ex:1400208651ited19e120 ;
+    rdamo:P30139 ex:1400208651exp .
+
+ex:1400208651exp a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "1400208651exp" ;
+    rdaeo:P20231 ex:1400208651wor .
+
+ex:1400208651ited19e120 a <http://rdaregistry.info/Elements/c/C10003> ;
+    fake:marcfield "F506 1# $a Restrict to UW for 2 years -- then make Open Access $g 20240912" ;
+    rdaid:P40001 "ited19e120" ;
+    rdaid:P40047 "Restrictions apply: Terms governing access: Restrict to UW for 2 years -- then make Open Access; Availability date: 20240912" .
+
+ex:1400208651wor a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F245 10 $a Quieren mi labor más no mi intelecto : $b they want my hands not my brains : mapping the gendered and racialized journeys of adult English learner immigrant Latin American women in the US higher education system / $c Maria Elizabeth Ramirez Arreola.",
+        "F502 ## $b Ph. D. $c University of Washington $d 2022",
+        "F650 #0 $a Critical race theory.",
+        "F650 #0 $a English language $x Study and teaching (Continuing education) $x Spanish speakers.",
+        "F650 #0 $a Feminism and higher education $z United States.",
+        "F650 #0 $a Hispanic American women $x Education (Higher) $z United States.",
+        "F650 #0 $a Hispanic American women college students $z United States $x Social conditions.",
+        "F650 #0 $a Immigrant students $z United States $x Social conditions.",
+        "F650 #0 $a Racism in higher education $z United States.",
+        "F650 #0 $a Sexism in higher education $z United States.",
+        "F650 #0 $a Women immigrants $x Education (Higher) $z United States." ;
+    rdaw:P10256 <http://marc2rda.edu/fake/concept/lcsh/criticalracetheory.>,
+        <http://marc2rda.edu/fake/concept/lcsh/education%28higher%29unitedstates.>,
+        <http://marc2rda.edu/fake/concept/lcsh/englishlanguagestudyandteaching%28continuingeducation%29spanishspeakers.>,
+        <http://marc2rda.edu/fake/concept/lcsh/feminismandhighereducationunitedstates.>,
+        <http://marc2rda.edu/fake/concept/lcsh/hispanicamericanwomencollegestudentsunitedstatessocialconditions.>,
+        <http://marc2rda.edu/fake/concept/lcsh/hispanicamericanwomeneducation%28higher%29unitedstates.>,
+        <http://marc2rda.edu/fake/concept/lcsh/immigrantstudentsunitedstatessocialconditions.>,
+        <http://marc2rda.edu/fake/concept/lcsh/racisminhighereducationunitedstates.>,
+        <http://marc2rda.edu/fake/concept/lcsh/sexisminhighereducationunitedstates.>,
+        <http://marc2rda.edu/fake/concept/lcsh/studyandteaching%28continuingeducation%29spanishspeakers.>,
+        <http://marc2rda.edu/fake/concept/lcsh/unitedstates.>,
+        <http://marc2rda.edu/fake/concept/lcsh/unitedstatessocialconditions.>,
+        <http://marc2rda.edu/fake/concept/lcsh/womenimmigrantseducation%28higher%29unitedstates.> ;
+    rdawd:P10002 "1400208651wor" ;
+    rdawd:P10006 "University of Washington" ;
+    rdawd:P10077 "Ph. D." ;
+    rdawd:P10088 "Quieren mi labor más no mi intelecto" ;
+    rdawd:P10209 "Ph. D.; University of Washington; 2022" ;
+    rdawd:P10215 "2022" ;
+    rdawo:P10041 <http://www.wikidata.org/entity/Q107956183> ;
+    rdawo:P10321 <http://marc2rda.edu/fake/place/d19e134>,
+        <http://marc2rda.edu/fake/place/d19e143>,
+        <http://marc2rda.edu/fake/place/d19e148>,
+        <http://marc2rda.edu/fake/place/d19e157>,
+        <http://marc2rda.edu/fake/place/d19e169>,
+        <http://marc2rda.edu/fake/place/d19e174>,
+        <http://marc2rda.edu/fake/place/d19e179> ;
+    rdawo:P10436 <https://orcid.org/0009-0002-6426-7532> .
+
+<http://marc2rda.edu/fake/concept/lcsh/criticalracetheory.> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Critical race theory." .
+
+<http://marc2rda.edu/fake/concept/lcsh/education%28higher%29unitedstates.> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Education (Higher) United States." .
+
+<http://marc2rda.edu/fake/concept/lcsh/englishlanguagestudyandteaching%28continuingeducation%29spanishspeakers.> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "English language Study and teaching (Continuing education) Spanish speakers." .
+
+<http://marc2rda.edu/fake/concept/lcsh/feminismandhighereducationunitedstates.> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Feminism and higher education United States." .
+
+<http://marc2rda.edu/fake/concept/lcsh/hispanicamericanwomencollegestudentsunitedstatessocialconditions.> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Hispanic American women college students United States Social conditions." .
+
+<http://marc2rda.edu/fake/concept/lcsh/hispanicamericanwomeneducation%28higher%29unitedstates.> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Hispanic American women Education (Higher) United States." .
+
+<http://marc2rda.edu/fake/concept/lcsh/immigrantstudentsunitedstatessocialconditions.> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Immigrant students United States Social conditions." .
+
+<http://marc2rda.edu/fake/concept/lcsh/racisminhighereducationunitedstates.> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Racism in higher education United States." .
+
+<http://marc2rda.edu/fake/concept/lcsh/sexisminhighereducationunitedstates.> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Sexism in higher education United States." .
+
+<http://marc2rda.edu/fake/concept/lcsh/studyandteaching%28continuingeducation%29spanishspeakers.> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Study and teaching (Continuing education) Spanish speakers." .
+
+<http://marc2rda.edu/fake/concept/lcsh/unitedstates.> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "United States." .
+
+<http://marc2rda.edu/fake/concept/lcsh/unitedstatessocialconditions.> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "United States Social conditions." .
+
+<http://marc2rda.edu/fake/concept/lcsh/womenimmigrantseducation%28higher%29unitedstates.> a skos:Concept ;
+    skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    skos:prefLabel "Women immigrants Education (Higher) United States." .
+
+<http://marc2rda.edu/fake/nom/d19e38> a <http://rdaregistry.info/Elements/c/C10012> ;
+    rdan:P80069 <http://id.loc.gov/vocabulary/identifiers/hdl> ;
+    rdand:P80068 "1773/49194" .
+
+<http://marc2rda.edu/fake/pla/nom/d19e134> a <http://rdaregistry.info/Elements/c/C10009> ;
+    rdan:P80069 <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    rdand:P80068 "United States" .
+
+<http://marc2rda.edu/fake/pla/nom/d19e143> a <http://rdaregistry.info/Elements/c/C10009> ;
+    rdan:P80069 <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    rdand:P80068 "United States." .
+
+<http://marc2rda.edu/fake/pla/nom/d19e148> a <http://rdaregistry.info/Elements/c/C10009> ;
+    rdan:P80069 <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    rdand:P80068 "United States" .
+
+<http://marc2rda.edu/fake/pla/nom/d19e157> a <http://rdaregistry.info/Elements/c/C10009> ;
+    rdan:P80069 <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    rdand:P80068 "United States." .
+
+<http://marc2rda.edu/fake/pla/nom/d19e169> a <http://rdaregistry.info/Elements/c/C10009> ;
+    rdan:P80069 <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    rdand:P80068 "United States." .
+
+<http://marc2rda.edu/fake/pla/nom/d19e174> a <http://rdaregistry.info/Elements/c/C10009> ;
+    rdan:P80069 <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    rdand:P80068 "United States." .
+
+<http://marc2rda.edu/fake/pla/nom/d19e179> a <http://rdaregistry.info/Elements/c/C10009> ;
+    rdan:P80069 <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
+    rdand:P80068 "United States." .
+
+<http://marc2rda.edu/fake/place/d19e134> a <http://rdaregistry.info/Elements/c/C10010> ;
+    rdapo:P70045 <http://marc2rda.edu/fake/pla/nom/d19e134> .
+
+<http://marc2rda.edu/fake/place/d19e143> a <http://rdaregistry.info/Elements/c/C10010> ;
+    rdapo:P70045 <http://marc2rda.edu/fake/pla/nom/d19e143> .
+
+<http://marc2rda.edu/fake/place/d19e148> a <http://rdaregistry.info/Elements/c/C10010> ;
+    rdapo:P70045 <http://marc2rda.edu/fake/pla/nom/d19e148> .
+
+<http://marc2rda.edu/fake/place/d19e157> a <http://rdaregistry.info/Elements/c/C10010> ;
+    rdapo:P70045 <http://marc2rda.edu/fake/pla/nom/d19e157> .
+
+<http://marc2rda.edu/fake/place/d19e169> a <http://rdaregistry.info/Elements/c/C10010> ;
+    rdapo:P70045 <http://marc2rda.edu/fake/pla/nom/d19e169> .
+
+<http://marc2rda.edu/fake/place/d19e174> a <http://rdaregistry.info/Elements/c/C10010> ;
+    rdapo:P70045 <http://marc2rda.edu/fake/pla/nom/d19e174> .
+
+<http://marc2rda.edu/fake/place/d19e179> a <http://rdaregistry.info/Elements/c/C10010> ;
+    rdapo:P70045 <http://marc2rda.edu/fake/pla/nom/d19e179> .
+
+<http://www.wikidata.org/entity/Q107956183> a <http://rdaregistry.info/Elements/c/C10004> ;
+    fake:marcfield "F700 1# $a Ginorio, Angela B., $e degree supervisor. $1 http://www.wikidata.org/entity/Q107956183 $1 http://viaf.org/viaf/70643896" ;
+    rdaad:P50377 "Ginorio, Angela B." .
+
+<https://orcid.org/0009-0002-6426-7532> a <http://rdaregistry.info/Elements/c/C10004> ;
+    fake:marcfield "F100 1# $a Ramirez Arreola, Maria Elizabeth, $e author. $1 https://orcid.org/0009-0002-6426-7532 $1 http://www.wikidata.org/entity/Q127550946" ;
+    rdaad:P50377 "Ramirez Arreola, Maria Elizabeth" .
+
