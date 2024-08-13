@@ -66,7 +66,7 @@
                 </xsl:choose>
             </xsl:when>
             <!-- not handling $0s yet -->
-            <!-- otherwise it's an opaque IRI to avoid conflating different agents under one IRI -->
+            <!-- otherwise it's an opaque IRI to avoid conflating different works under one IRI -->
             <xsl:otherwise>
                 <xsl:value-of select="'http://marc2rda.edu/fake/wor/'||generate-id($field)"/>
             </xsl:otherwise>
