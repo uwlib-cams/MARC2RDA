@@ -91,11 +91,15 @@
         <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'v']
             | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" "/>
     </xsl:template>
+    <xsl:template name="F654-label" expand-text="yes">
+        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
+            | marc:subfield[@code = 'v'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" "/>
+    </xsl:template>
     
     <xsl:template name="F6XX-subject">
         <xsl:param name="prefLabel"/>
         <xsl:choose>
-            <xsl:when test="@ind2 = '4'">
+            <xsl:when test="@ind2 = '4' or (@ind2 = ' ' and not(marc:subfield[@code = '2']))">
                 <rdawd:P10256>
                     <xsl:value-of select="$prefLabel"/>
                 </rdawd:P10256>

@@ -804,5 +804,36 @@
             </xsl:if>
         </xsl:if>
     </xsl:template>
+    
+    
+    <!-- 654 - Subject Added Entry - Faceted Topical Terms-->
+    
+    <xsl:template
+        match="marc:datafield[@tag = '654']"
+        mode="wor">
+        <xsl:call-template name="getmarc"/>
+        <xsl:variable name="prefLabel">
+            <xsl:call-template name="F654-label"/>
+        </xsl:variable>
+        <xsl:call-template name="F6XX-subject">
+            <xsl:with-param name="prefLabel" select="$prefLabel"/>
+        </xsl:call-template>
+    </xsl:template>
+    <xsl:template match="marc:datafield[@tag = '654']"
+        mode="con" expand-text="yes">
+        <xsl:variable name="prefLabel">
+            <xsl:call-template name="F654-label"/>
+        </xsl:variable>
+        <xsl:if test="marc:subfield[@code = '2']">
+            <xsl:if test="starts-with(uwf:subjectIRI(., marc:subfield[@code = '2'], $prefLabel), 'http://marc2rda.edu')">
+                <xsl:if test="@ind2 != '4'">
+                    <xsl:call-template name="F6XX-concept">
+                        <xsl:with-param name="prefLabel" select="$prefLabel"/>
+                        <xsl:with-param name="fieldNum" select="@tag"/>
+                    </xsl:call-template>
+                </xsl:if>
+            </xsl:if>
+        </xsl:if>
+    </xsl:template>
 </xsl:stylesheet>
 

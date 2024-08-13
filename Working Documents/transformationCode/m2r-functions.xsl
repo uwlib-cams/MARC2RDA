@@ -480,11 +480,12 @@
             <xsl:when test="$field/@ind2 = '6'">
                 <xsl:value-of select="'rvm'"/>
             </xsl:when>
-            <xsl:when test="$field/@ind2 = '7'">
+            <!-- @ind2 = 7 or blank -->
+            <xsl:otherwise>
                 <xsl:if test="$field/marc:subfield[@code = '2']">
                     <xsl:value-of select="$field/marc:subfield[@code = '2']"/>
                 </xsl:if>
-            </xsl:when>
+            </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
 </xsl:stylesheet>
