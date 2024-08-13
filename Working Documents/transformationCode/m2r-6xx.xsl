@@ -903,7 +903,7 @@
         </xsl:if>
     </xsl:template>
     
-    <!-- 655 - Subject Added Entry - Faceted Topical Terms-->
+    <!-- 655 - Index Term-Genre/Form-->
     
     <xsl:template
         match="marc:datafield[@tag = '655']"
@@ -930,6 +930,35 @@
         </xsl:variable>
         <xsl:if test="marc:subfield[@code = '2']">
             <xsl:if test="starts-with(uwf:subjectIRI(., marc:subfield[@code = '2'], $prefLabel), 'http://marc2rda.edu')">
+                <xsl:if test="@ind2 != '4'">
+                    <rdf:Description rdf:about="{uwf:conceptIRI(uwf:getSubjectSchemeCode(.), $prefLabel)}">
+                        <xsl:copy-of select="uwf:fillConcept($prefLabel, uwf:getSubjectSchemeCode(.), '', @tag)"/>
+                    </rdf:Description>
+                </xsl:if>
+            </xsl:if>
+        </xsl:if>
+    </xsl:template>
+    
+    <!-- 656 - Index Term - Occupation-->
+    
+    <xsl:template
+        match="marc:datafield[@tag = '656']"
+        mode="wor">
+        <xsl:call-template name="getmarc"/>
+        <xsl:variable name="prefLabel">
+            <xsl:call-template name="F656-label"/>
+        </xsl:variable>
+        <xsl:call-template name="F6XX-subject">
+            <xsl:with-param name="prefLabel" select="$prefLabel"/>
+        </xsl:call-template>
+    </xsl:template>
+    <xsl:template match="marc:datafield[@tag = '656']"
+        mode="con" expand-text="yes">
+        <xsl:variable name="prefLabel">
+            <xsl:call-template name="F656-label"/>
+        </xsl:variable>
+        <xsl:if test="marc:subfield[@code = '2']">
+            <xsl:if test="starts-with(uwf:subjectIRI(., uwf:getSubjectSchemeCode(.), $prefLabel), 'http://marc2rda.edu')">
                 <xsl:if test="@ind2 != '4'">
                     <rdf:Description rdf:about="{uwf:conceptIRI(uwf:getSubjectSchemeCode(.), $prefLabel)}">
                         <xsl:copy-of select="uwf:fillConcept($prefLabel, uwf:getSubjectSchemeCode(.), '', @tag)"/>
