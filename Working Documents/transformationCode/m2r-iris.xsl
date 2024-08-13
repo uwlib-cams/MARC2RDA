@@ -101,7 +101,7 @@
     <xsl:function name="uwf:conceptIRI">
         <xsl:param name="scheme"/>
         <xsl:param name="value"/>
-        <xsl:value-of select="'http://marc2rda.edu/fake/concept/'||encode-for-uri(lower-case($scheme))||'/'||encode-for-uri(uwf:stripConceptPunctuation($value))"/>
+        <xsl:value-of select="'http://marc2rda.edu/fake/concept/'||encode-for-uri(translate(lower-case($scheme), ' ', ''))||'/'||encode-for-uri(uwf:stripConceptPunctuation($value))"/>
     </xsl:function>
 
     <xsl:function name="uwf:subjectIRI">

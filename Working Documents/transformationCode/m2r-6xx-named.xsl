@@ -90,12 +90,16 @@
             | marc:subfield[@code = 'v'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
     </xsl:template>
     <xsl:template name="F655-label" expand-text="yes">
-        <xsl:value-of select="marc:subfield[@code = 'a']
-            | marc:subfield[@code = 'v'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
+        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'v'] 
+            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
     </xsl:template>
     <xsl:template name="F656-label" expand-text="yes">
-        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'k']
-            | marc:subfield[@code = 'v'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
+        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'k'] | marc:subfield[@code = 'v'] 
+            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
+    </xsl:template>
+    <xsl:template name="F657-label" expand-text="yes">
+        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'v'] 
+            | marc:subfield[@code = 'x'] |marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
     </xsl:template>
     
     <!-- This template outputs "has subject" as either a datatype or object property
