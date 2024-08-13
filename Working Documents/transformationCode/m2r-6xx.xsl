@@ -1001,5 +1001,42 @@
             </xsl:if>
         </xsl:if>
     </xsl:template>
+    
+    
+    <!-- 658 -  Index Term - Curriculum Objective -->
+    
+    <xsl:template
+        match="marc:datafield[@tag = '658']"
+        mode="wor">
+        <xsl:call-template name="getmarc"/>
+        <xsl:variable name="prefLabel">
+            <xsl:call-template name="F658-label"/>
+        </xsl:variable>
+        <xsl:choose>
+            <xsl:when test="not(marc:subfield[@code = '2'])">
+                <rdawd:P10004>
+                    <xsl:value-of select="$prefLabel"/>
+                </rdawd:P10004>
+            </xsl:when>
+            <xsl:otherwise>
+                <rdaw:P10004 rdf:resource="{uwf:subjectIRI(., uwf:getSubjectSchemeCode(.), $prefLabel)}"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    <xsl:template match="marc:datafield[@tag = '658']"
+        mode="con" expand-text="yes">
+        <xsl:variable name="prefLabel">
+            <xsl:call-template name="F658-label"/>
+        </xsl:variable>
+        <xsl:if test="marc:subfield[@code = '2']">
+            <xsl:if test="starts-with(uwf:subjectIRI(., marc:subfield[@code = '2'], $prefLabel), 'http://marc2rda.edu')">
+                <xsl:if test="@ind2 != '4'">
+                    <rdf:Description rdf:about="{uwf:conceptIRI(uwf:getSubjectSchemeCode(.), $prefLabel)}">
+                        <xsl:copy-of select="uwf:fillConcept($prefLabel, uwf:getSubjectSchemeCode(.), '', @tag)"/>
+                    </rdf:Description>
+                </xsl:if>
+            </xsl:if>
+        </xsl:if>
+    </xsl:template>
 </xsl:stylesheet>
 
