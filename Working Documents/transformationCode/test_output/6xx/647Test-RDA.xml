@@ -38,7 +38,7 @@
       <fake:marcfield>F647 #7 $a Christchurch Mosque Shootings $c (Christchurch, New Zealand : $d 2019) $2 fast $0 (OCoLC)fst02007190</fake:marcfield>
       <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/02007190"/>
       <fake:marcfield>F647 #7 $a Cold War $d (1945-1989) $2 fast</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/coldwar%281945-1989%29"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/coldwar19451989"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -49,9 +49,9 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/6xx-test1exp"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/coldwar%281945-1989%29">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/coldwar19451989">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Cold War (1945-1989)</skos:prefLabel>
+      <skos:prefLabel>Cold War -- (1945-1989)</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
 </rdf:RDF>

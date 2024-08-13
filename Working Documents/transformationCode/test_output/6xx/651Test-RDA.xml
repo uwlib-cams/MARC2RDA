@@ -9,17 +9,17 @@
       <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01208963"/><!--rdaw:P10256 = has subject-->
       <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/d19e9"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F651 #0 $a Turkey $x Foreign relations $z Russia.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/turkeyforeignrelationsrussia."/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/turkeyforeignrelationsrussia"/><!--rdaw:P10256 = has subject-->
       <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/d19e16"/><!--rdawo:P10321 = has subject place-->
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/foreignrelationsrussia."/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/foreignrelationsrussia"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F651 #0 $a Xinjiang Uygur Zizhiqu (China) $x Ethnic relations.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/xinjianguygurzizhiqu%28china%29ethnicrelations."/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/xinjianguygurzizhiquchinaethnicrelations"/><!--rdaw:P10256 = has subject-->
       <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/d19e23"/><!--rdawo:P10321 = has subject place-->
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/ethnicrelations."/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/ethnicrelations"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F651 #0 $a Tabrīz (Iran) $x Press coverage $x History $y 20th century.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/tabri%CC%84z%28iran%29presscoveragehistory20thcentury."/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/tabri%CC%84ziranpresscoveragehistory20thcentury"/><!--rdaw:P10256 = has subject-->
       <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/d19e28"/><!--rdawo:P10321 = has subject place-->
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/presscoveragehistory20thcentury."/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/presscoveragehistory20thcentury"/><!--rdaw:P10256 = has subject-->
       <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/d19e35"/><!--rdawo:P10322 = has subject timespan-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1exp">
@@ -61,34 +61,34 @@
       <rdand:P80068>20th century.</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/turkeyforeignrelationsrussia.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/turkeyforeignrelationsrussia">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Turkey Foreign relations Russia.</skos:prefLabel>
+      <skos:prefLabel>Turkey -- Foreign relations -- Russia.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/foreignrelationsrussia.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/foreignrelationsrussia">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Foreign relations Russia.</skos:prefLabel>
+      <skos:prefLabel>Foreign relations -- Russia.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/xinjianguygurzizhiqu%28china%29ethnicrelations.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/xinjianguygurzizhiquchinaethnicrelations">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Xinjiang Uygur Zizhiqu (China) Ethnic relations.</skos:prefLabel>
+      <skos:prefLabel>Xinjiang Uygur Zizhiqu (China) -- Ethnic relations.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/ethnicrelations.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/ethnicrelations">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Ethnic relations.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/tabri%CC%84z%28iran%29presscoveragehistory20thcentury.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/tabri%CC%84ziranpresscoveragehistory20thcentury">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Tabrīz (Iran) Press coverage History 20th century.</skos:prefLabel>
+      <skos:prefLabel>Tabrīz (Iran) -- Press coverage -- History -- 20th century.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/presscoveragehistory20thcentury.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/presscoveragehistory20thcentury">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Press coverage History 20th century.</skos:prefLabel>
+      <skos:prefLabel>Press coverage -- History -- 20th century.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/d19e9">

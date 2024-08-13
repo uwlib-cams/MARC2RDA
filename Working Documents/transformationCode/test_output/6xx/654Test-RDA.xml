@@ -36,9 +36,9 @@
       <fake:marcfield>F654 ## $a MUSIC / Genres &amp; Styles / Jazz.</fake:marcfield>
       <rdawd:P10256>MUSIC / Genres &amp; Styles / Jazz.</rdawd:P10256>
       <fake:marcfield>F654 ## $a SOCIAL SCIENCE / General. $2 bisacsh</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/bisacsh/socialscience%2Fgeneral."/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/bisacsh/socialsciencegeneral"/>
       <fake:marcfield>F654 2# $c k $a Urban planning $c z $b United States $c y $b 1800-1940. $2 aat</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/aat/kurbanplanningzunitedstatesy1800-1940."/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/aat/kurbanplanningzunitedstatesy18001940"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -49,14 +49,14 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/6xx-test1exp"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/bisacsh/socialscience%2Fgeneral.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/bisacsh/socialsciencegeneral">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>SOCIAL SCIENCE / General.</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/bisacsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/aat/kurbanplanningzunitedstatesy1800-1940.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/aat/kurbanplanningzunitedstatesy18001940">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>k Urban planning z United States y 1800-1940.</skos:prefLabel>
+      <skos:prefLabel>k -- Urban planning -- z -- United States -- y -- 1800-1940.</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
    </rdf:Description>
 </rdf:RDF>

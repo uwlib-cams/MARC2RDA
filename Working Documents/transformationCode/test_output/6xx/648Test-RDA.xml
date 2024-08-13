@@ -37,16 +37,16 @@
       <rdawd:P10256>2000</rdawd:P10256>
       <rdawd:P10322>2000</rdawd:P10322>
       <fake:marcfield>F648 #7 $a 1861-1865 $2 fast</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/1861-1865"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/18611865"/>
       <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/d19e9"/>
       <fake:marcfield>F648 #7 $a Since 1875 $2 fast</fake:marcfield>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/since1875"/>
       <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/d19e14"/>
       <fake:marcfield>F648 #7 $a Geschichte. $2 gnd</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/gnd/geschichte."/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/gnd/geschichte"/>
       <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/d19e19"/>
       <fake:marcfield>F648 #7 $a 1500-1600. $0 (NL-LeOCL)241923875 $2 gtt</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/gtt/1500-1600."/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/gtt/15001600"/>
       <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/d19e24"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1exp">
@@ -78,7 +78,7 @@
       <rdand:P80068>1500-1600.</rdand:P80068>
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gtt"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/1861-1865">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/18611865">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>1861-1865</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
@@ -88,12 +88,12 @@
       <skos:prefLabel>Since 1875</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/gnd/geschichte.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/gnd/geschichte">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Geschichte.</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gnd"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/gtt/1500-1600.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/gtt/15001600">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>1500-1600.</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gtt"/>
