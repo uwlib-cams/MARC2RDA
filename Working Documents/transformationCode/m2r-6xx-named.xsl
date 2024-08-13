@@ -83,7 +83,7 @@
     </xsl:template>
     <xsl:template name="F651-label" expand-text="yes">
         <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'v']
-            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" --"/>
+            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
     </xsl:template>
     <xsl:template name="F654-label" expand-text="yes">
         <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
@@ -141,7 +141,7 @@
         </xsl:choose>
     </xsl:template>
     
-    <!-- handles subfield $y as category of work
+    <!-- handles subfield $y as timespan
         Outputs "has subject timespan" as datatype or object property -->
     <xsl:template name="F6XX-xx-y">
         <xsl:param name="prefLabel"/>
@@ -157,7 +157,7 @@
         </xsl:choose>
     </xsl:template>
     
-    <!-- handles subfield $z as category of work
+    <!-- handles subfield $z as place
         Outputs "has subject place" as datatype or object property -->
     <xsl:template name="F6XX-xx-z">
         <xsl:param name="prefLabel"/>
@@ -172,28 +172,4 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    
-  
-    <xsl:template name="F6XX-concept">
-        <xsl:param name="prefLabel"/>
-        <xsl:param name="fieldNum"/>
-        <rdf:Description rdf:about="{uwf:conceptIRI(uwf:getSubjectSchemeCode(.), $prefLabel)}">
-                <xsl:copy-of select="uwf:fillConcept($prefLabel, uwf:getSubjectSchemeCode(.), '', $fieldNum)"/>
-            </rdf:Description>
-            <xsl:if test="marc:subfield[@code = 'x'] or marc:subfield[@code = 'y'] or marc:subfield[@code = 'z']">
-                <xsl:variable name="prefLabelXYZ">
-                    <xsl:call-template name="F6XX-xyz-label"/>
-                </xsl:variable>
-                <rdf:Description rdf:about="{uwf:conceptIRI(uwf:getSubjectSchemeCode(.), $prefLabelXYZ)}">
-                    <xsl:copy-of select="uwf:fillConcept($prefLabelXYZ, uwf:getSubjectSchemeCode(.), '', $fieldNum)"/>
-                </rdf:Description>
-            </xsl:if>
-            <xsl:for-each select="marc:subfield[@code = 'v']">
-                <rdf:Description rdf:about="{uwf:conceptIRI(uwf:getSubjectSchemeCode(parent::node()), .)}">
-                    <xsl:copy-of select="uwf:fillConcept(., uwf:getSubjectSchemeCode(parent::node()), '', $fieldNum)"/>
-                </rdf:Description>
-            </xsl:for-each>
-    </xsl:template>
-    
-    
 </xsl:stylesheet>
