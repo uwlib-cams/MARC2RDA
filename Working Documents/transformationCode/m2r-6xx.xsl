@@ -179,7 +179,7 @@
         match="marc:datafield[@tag = '600'] | marc:datafield[@tag = '610'] | marc:datafield[@tag = '611']"
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
-        <xsl:if test="(marc:subfield[@code = '2'] | @ind2 != '4') and starts-with(uwf:agentIRI(.), 'http://marc2rda.edu/fake/')">
+        <xsl:if test="(marc:subfield[@code = '2'] | @ind2 != '4')">
             <rdf:Description rdf:about="{uwf:nomenIRI(., 'age/nom')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
@@ -200,7 +200,7 @@
                 </xsl:choose>
             </rdf:Description>
         </xsl:if>
-        <xsl:if test="marc:subfield[@code = 't'] and (marc:subfield[@code = '2'] | @ind2 != '4') and starts-with(uwf:relWorkIRI(.), 'http://marc2rda.edu/fake/')">
+        <xsl:if test="marc:subfield[@code = 't'] and (marc:subfield[@code = '2'] | @ind2 != '4')">
             <rdf:Description rdf:about="{uwf:nomenIRI(., 'wor/nom')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
@@ -282,29 +282,27 @@
     <xsl:template
         match="marc:datafield[@tag = '630']"
         mode="relWor" expand-text="yes">
-        <xsl:if test="starts-with(uwf:relWorkIRI(.), 'http://marc2rda.edu/fake/')">
-            <rdf:Description rdf:about="{uwf:relWorkIRI(.)}">
-                <xsl:call-template name="getmarc"/>
-                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-                <rdawd:P10002>{concat(generate-id(), 'wor')}</rdawd:P10002>
-                <xsl:choose>
-                    <xsl:when test="marc:subfield[@code = '2'] or @ind2 != '4'">
-                        <rdawo:P10331 rdf:resource="{uwf:nomenIRI(., 'wor/nom')}"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <rdawd:P10328>
-                            <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
-                        </rdawd:P10328>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </rdf:Description>
-        </xsl:if>
+        <rdf:Description rdf:about="{uwf:relWorkIRI(.)}">
+            <xsl:call-template name="getmarc"/>
+            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+            <rdawd:P10002>{concat(generate-id(), 'wor')}</rdawd:P10002>
+            <xsl:choose>
+                <xsl:when test="marc:subfield[@code = '2'] or @ind2 != '4'">
+                    <rdawo:P10331 rdf:resource="{uwf:nomenIRI(., 'wor/nom')}"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <rdawd:P10328>
+                        <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
+                    </rdawd:P10328>
+                </xsl:otherwise>
+            </xsl:choose>
+        </rdf:Description>
     </xsl:template>
     
     <xsl:template
         match="marc:datafield[@tag = '630']"
         mode="nom" expand-text="yes">
-        <xsl:if test="(marc:subfield[@code = '2'] | @ind2 != '4') and starts-with(uwf:relWorkIRI(.), 'http://marc2rda.edu/fake/')">
+        <xsl:if test="(marc:subfield[@code = '2'] | @ind2 != '4')">
             <rdf:Description rdf:about="{uwf:nomenIRI(., 'wor/nom')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
@@ -473,7 +471,7 @@
                 </xsl:for-each>
                 <xsl:for-each select="marc:subfield[@code = 'z']">
                     <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom')}">
-                        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+                        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                         <rdand:P80068>
                             <xsl:value-of select="."/>
                         </rdand:P80068>
@@ -569,29 +567,27 @@
         mode="nom" expand-text="yes">
         <xsl:variable name="prefLabel">
             <xsl:call-template name="F648-label"/>
-        </xsl:variable>
-        <xsl:if test="starts-with(uwf:subjectIRI(., uwf:getSubjectSchemeCode(.), $prefLabel), 'http://marc2rda.edu')"> 
-            <xsl:if test="@ind2 != '4'">
-                <rdf:Description rdf:about="{uwf:nomenIRI(., 'tim/nom')}">
-                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-                    <rdand:P80068>
-                        <xsl:value-of select="marc:subfield[@code = 'a']"/>
-                    </rdand:P80068>
-                    <xsl:choose>
-                        <xsl:when test="@ind2 = '7'">
-                            <xsl:choose>
-                                <xsl:when test="marc:subfield[@code = '2']">
-                                    <xsl:copy-of select="uwf:s2Nomen(marc:subfield[@code = '2'])"/>
-                                </xsl:when>
-                                <xsl:otherwise/>
-                            </xsl:choose>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <rdan:P80069 rdf:resource="{uwf:ind2Thesaurus(@ind2)}"/>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </rdf:Description>
-            </xsl:if>
+        </xsl:variable> 
+        <xsl:if test="@ind2 != '4'">
+            <rdf:Description rdf:about="{uwf:nomenIRI(., 'tim/nom')}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                <rdand:P80068>
+                    <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                </rdand:P80068>
+                <xsl:choose>
+                    <xsl:when test="@ind2 = '7'">
+                        <xsl:choose>
+                            <xsl:when test="marc:subfield[@code = '2']">
+                                <xsl:copy-of select="uwf:s2Nomen(marc:subfield[@code = '2'])"/>
+                            </xsl:when>
+                            <xsl:otherwise/>
+                        </xsl:choose>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <rdan:P80069 rdf:resource="{uwf:ind2Thesaurus(@ind2)}"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </rdf:Description>
         </xsl:if>
     </xsl:template>
     
@@ -832,7 +828,7 @@
             <xsl:call-template name="F651-label"/>
         </xsl:variable>
         <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom')}">
-            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
             <rdand:P80068>
                 <xsl:value-of select="marc:subfield[@code = 'a']"/>
             </rdand:P80068>
