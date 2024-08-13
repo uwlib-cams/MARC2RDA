@@ -89,6 +89,10 @@
         <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
             | marc:subfield[@code = 'v'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
     </xsl:template>
+    <xsl:template name="F655-label" expand-text="yes">
+        <xsl:value-of select="marc:subfield[@code = 'a']
+            | marc:subfield[@code = 'v'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
+    </xsl:template>
     
     <!-- This template outputs "has subject" as either a datatype or object property
         If it is an object property (there is a source present in the field)
