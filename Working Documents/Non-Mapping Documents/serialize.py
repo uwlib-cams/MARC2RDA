@@ -22,7 +22,7 @@ def serialize(file_path):
     #     g.bind(ns_prefix, namespace, override=False)
 
     # generate each serialization
-    def format_rdf(g, uri_path):
+    def format_rdf(g):
 
         destination = file_path_noext + "." + "rdf"
 
@@ -34,7 +34,7 @@ def serialize(file_path):
         # file.close()
 
 
-    def format_nt(g, uri_path):
+    def format_nt(g):
         nt = g.serialize(format='nt')
 
         path = file_path_noext + "." + "nt"
@@ -52,7 +52,7 @@ def serialize(file_path):
         file.close()
 
 
-    def format_jsonld(g, uri_path):
+    def format_jsonld(g):
         
         jsonld = g.serialize(format='json-ld')
         path = file_path_noext + "." + "jsonld"
@@ -60,10 +60,10 @@ def serialize(file_path):
         file.write(jsonld)
         file.close()
     
-    # format_rdf(g, uri_path)
-    # format_nt(g, uri_path)
+    # format_rdf(g)
+    format_nt(g)
     format_ttl(g)
-    # format_jsonld(g, uri_path)
+    # format_jsonld(g)
 
 
 # only_serialize can be run from this script to produce all serializations
