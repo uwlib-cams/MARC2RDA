@@ -34,31 +34,31 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>6xx-test1wor</rdawd:P10002>
       <fake:marcfield>F650 #0 $a Personals $x Computer simulation.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/personalscomputersimulation."/>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/computersimulation."/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/personalscomputersimulation"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/computersimulation"/>
       <fake:marcfield>F650 #4 $a Personals $v Poetry.</fake:marcfield>
-      <rdawd:P10256>Personals Poetry.</rdawd:P10256>
+      <rdawd:P10256>Personals -- Poetry.</rdawd:P10256>
       <rdawd:P10004>Poetry.</rdawd:P10004>
       <fake:marcfield>F650 #0 $a Online dating $v Poetry.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/onlinedatingpoetry."/>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/poetry."/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/onlinedatingpoetry"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/poetry"/>
       <fake:marcfield>F650 #0 $a Body image in art.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/bodyimageinart."/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/bodyimageinart"/>
       <fake:marcfield>F650 #0 $a On-demand printing.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/on-demandprinting."/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/ondemandprinting"/>
       <fake:marcfield>F650 #6 $a Petites annonces personnelles $0 (CaQQLa)201-0120220 $x Simulation par ordinateur. $0 (CaQQLa)201-0379159</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/petitesannoncespersonnellessimulationparordinateur."/>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/simulationparordinateur."/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/petitesannoncespersonnellessimulationparordinateur"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/simulationparordinateur"/>
       <fake:marcfield>F650 #6 $a Petites annonces personnelles $0 (CaQQLa)201-0120220 $v Poésie. $0 (CaQQLa)201-0378101</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/petitesannoncespersonnellespoe%CC%81sie."/>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvm/poe%CC%81sie."/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/petitesannoncespersonnellespoe%CC%81sie"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvm/poe%CC%81sie"/>
       <fake:marcfield>F650 #6 $a Rencontres amoureuses sur Internet $0 (CaQQLa)201-0396908 $v Poésie. $0 (CaQQLa)201-0378101</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/rencontresamoureusessurinternetpoe%CC%81sie."/>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvm/poe%CC%81sie."/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/rencontresamoureusessurinternetpoe%CC%81sie"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvm/poe%CC%81sie"/>
       <fake:marcfield>F650 #6 $a Image du corps dans l'art. $0 (CaQQLa)000275394</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/imageducorpsdansl%27art."/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/imageducorpsdanslart"/>
       <fake:marcfield>F650 #6 $a Impression à la demande. $0 (CaQQLa)000299998</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/impressiona%CC%80lademande."/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/impressiona%CC%80lademande"/>
       <fake:marcfield>F650 #7 $a Body image in art. $2 fast $0 (OCoLC)fst00835355</fake:marcfield>
       <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00835355"/>
       <fake:marcfield>F650 #7 $a On-demand printing. $2 fast $0 (OCoLC)fst01045708</fake:marcfield>
@@ -70,21 +70,21 @@
       <fake:marcfield>F650 #7 $a Percussion ensembles $x Scores and parts. $2 fast $0 (OCoLC)fst01906126</fake:marcfield>
       <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01906126"/>
       <fake:marcfield>F650 #0 $a Barren ground caribou populations $x Estimates $z Nunavut $z Bathurst Inlet Region.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/barrengroundcariboupopulationsestimatesnunavutbathurstinletregion."/>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/estimatesnunavutbathurstinletregion."/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/barrengroundcariboupopulationsestimatesnunavutbathurstinletregion"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/estimatesnunavutbathurstinletregion"/>
       <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/d19e107"/>
       <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/d19e109"/>
       <fake:marcfield>F650 #0 $a Caribou calving grounds $z Nunavut $z Bathurst Inlet Region.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/cariboucalvinggroundsnunavutbathurstinletregion."/>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/nunavutbathurstinletregion."/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/cariboucalvinggroundsnunavutbathurstinletregion"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/nunavutbathurstinletregion"/>
       <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/d19e114"/>
       <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/d19e116"/>
       <fake:marcfield>F650 #0 $a Democracy $z Turkey $x History $y 20th century $v Chronology.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/democracyturkeyhistory20thcenturychronology."/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/democracyturkeyhistory20thcenturychronology"/>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/turkeyhistory20thcentury"/>
       <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/d19e125"/>
       <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/d19e121"/>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/chronology."/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/chronology"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -125,107 +125,107 @@
       <rdand:P80068>Turkey</rdand:P80068>
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/personalscomputersimulation.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/personalscomputersimulation">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Personals Computer simulation.</skos:prefLabel>
+      <skos:prefLabel>Personals -- Computer simulation.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/computersimulation.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/computersimulation">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Computer simulation.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/onlinedatingpoetry.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/onlinedatingpoetry">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Online dating Poetry.</skos:prefLabel>
+      <skos:prefLabel>Online dating -- Poetry.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/poetry.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/poetry">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Poetry.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/bodyimageinart.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/bodyimageinart">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Body image in art.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/on-demandprinting.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/ondemandprinting">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>On-demand printing.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/petitesannoncespersonnellessimulationparordinateur.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/petitesannoncespersonnellessimulationparordinateur">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Petites annonces personnelles Simulation par ordinateur.</skos:prefLabel>
+      <skos:prefLabel>Petites annonces personnelles -- Simulation par ordinateur.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/simulationparordinateur.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/simulationparordinateur">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Simulation par ordinateur.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/petitesannoncespersonnellespoe%CC%81sie.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/petitesannoncespersonnellespoe%CC%81sie">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Petites annonces personnelles Poésie.</skos:prefLabel>
+      <skos:prefLabel>Petites annonces personnelles -- Poésie.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/poe%CC%81sie.">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Poésie.</skos:prefLabel>
-      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/rencontresamoureusessurinternetpoe%CC%81sie.">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Rencontres amoureuses sur Internet Poésie.</skos:prefLabel>
-      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/poe%CC%81sie.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/poe%CC%81sie">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Poésie.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/imageducorpsdansl%27art.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/rencontresamoureusessurinternetpoe%CC%81sie">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Rencontres amoureuses sur Internet -- Poésie.</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/poe%CC%81sie">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Poésie.</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/imageducorpsdanslart">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Image du corps dans l'art.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/impressiona%CC%80lademande.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/impressiona%CC%80lademande">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Impression à la demande.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/barrengroundcariboupopulationsestimatesnunavutbathurstinletregion.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/barrengroundcariboupopulationsestimatesnunavutbathurstinletregion">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Barren ground caribou populations Estimates Nunavut Bathurst Inlet Region.</skos:prefLabel>
+      <skos:prefLabel>Barren ground caribou populations -- Estimates -- Nunavut -- Bathurst Inlet Region.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/estimatesnunavutbathurstinletregion.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/estimatesnunavutbathurstinletregion">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Estimates Nunavut Bathurst Inlet Region.</skos:prefLabel>
+      <skos:prefLabel>Estimates -- Nunavut -- Bathurst Inlet Region.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/cariboucalvinggroundsnunavutbathurstinletregion.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/cariboucalvinggroundsnunavutbathurstinletregion">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Caribou calving grounds Nunavut Bathurst Inlet Region.</skos:prefLabel>
+      <skos:prefLabel>Caribou calving grounds -- Nunavut -- Bathurst Inlet Region.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/nunavutbathurstinletregion.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/nunavutbathurstinletregion">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Nunavut Bathurst Inlet Region.</skos:prefLabel>
+      <skos:prefLabel>Nunavut -- Bathurst Inlet Region.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/democracyturkeyhistory20thcenturychronology.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/democracyturkeyhistory20thcenturychronology">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Democracy Turkey History 20th century Chronology.</skos:prefLabel>
+      <skos:prefLabel>Democracy -- Turkey -- History -- 20th century -- Chronology.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/turkeyhistory20thcentury">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Turkey History 20th century</skos:prefLabel>
+      <skos:prefLabel>Turkey -- History -- 20th century</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/chronology.">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/chronology">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Chronology.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>

@@ -28,17 +28,11 @@
     <xsl:import href="m2r-iris.xsl"/>
     <xsl:import href="getmarc.xsl"/>
     
+    <!-- Concept labels -->
+    <!-- these vary by field. Each field has a label template that outputs the label based on the present subfields -->
     <xsl:template name="F6XX-xyz-label" expand-text="yes">
-        <xsl:for-each select="marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']">
-            <xsl:choose>
-                <xsl:when test="position() != last()">
-                    <xsl:text>{.} </xsl:text>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
-                </xsl:otherwise>
-            </xsl:choose>
-        </xsl:for-each>
+        <xsl:value-of select="marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']"
+            separator=" -- "/>
     </xsl:template>
     
     <xsl:template name="F600-label" expand-text="yes">
@@ -47,7 +41,7 @@
             | marc:subfield[@code = 't'] | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h']
             | marc:subfield[@code = 'k'] | marc:subfield[@code = 'l'] | marc:subfield[@code = 'm'] | marc:subfield[@code = 'n']
             | marc:subfield[@code = 'o'] | marc:subfield[@code = 'p'] | marc:subfield[@code = 'r'] | marc:subfield[@code = 's']
-            | marc:subfield[@code = 'v'] | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" "/>
+            | marc:subfield[@code = 'v'] | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
     </xsl:template>
     <xsl:template name="F610-label" expand-text="yes">
         <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
@@ -55,7 +49,7 @@
             | marc:subfield[@code = 't'] | marc:subfield[@code = 'f'] | marc:subfield[@code = 'h'] | marc:subfield[@code = 'k']
             | marc:subfield[@code = 'l'] | marc:subfield[@code = 'm'] | marc:subfield[@code = 'n'] | marc:subfield[@code = 'o']
             | marc:subfield[@code = 'p'] | marc:subfield[@code = 'r'] | marc:subfield[@code = 's'] | marc:subfield[@code = 'v']
-            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" "/>
+            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
     </xsl:template>
     <xsl:template name="F611-label" expand-text="yes">
         <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd'] 
@@ -63,7 +57,7 @@
             | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h'] 
             | marc:subfield[@code = 'k'] | marc:subfield[@code = 'l'] | marc:subfield[@code = 'n'] 
             | marc:subfield[@code = 'p'] | marc:subfield[@code = 'q'] | marc:subfield[@code = 's'] | marc:subfield[@code = 'v']
-            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" "/>
+            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
     </xsl:template>
     
     <xsl:template name="F630-label" expand-text="yes">
@@ -71,31 +65,34 @@
             | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h'] | marc:subfield[@code = 'k'] | marc:subfield[@code = 'l']
             | marc:subfield[@code = 'm'] | marc:subfield[@code = 'n'] | marc:subfield[@code = 'o'] | marc:subfield[@code = 'p']
             | marc:subfield[@code = 'r'] | marc:subfield[@code = 's'] | marc:subfield[@code = 't'] | marc:subfield[@code = 'v']
-            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" "/>
+            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
     </xsl:template>
     <xsl:template name="F647-label" expand-text="yes">
         <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'c']
             | marc:subfield[@code = 'd'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'v']
-            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" "/>
+            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
     </xsl:template>
     <xsl:template name="F648-label" expand-text="yes">
         <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'v']
-            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" "/>
+            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
     </xsl:template>
     <xsl:template name="F650-label" expand-text="yes">
         <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
             | marc:subfield[@code = 'd'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'v']
-            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" "/>
+            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
     </xsl:template>
     <xsl:template name="F651-label" expand-text="yes">
         <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'v']
-            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" "/>
+            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" --"/>
     </xsl:template>
     <xsl:template name="F654-label" expand-text="yes">
         <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
-            | marc:subfield[@code = 'v'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" "/>
+            | marc:subfield[@code = 'v'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
     </xsl:template>
     
+    <!-- This template outputs "has subject" as either a datatype or object property
+        If it is an object property (there is a source present in the field)
+        uwf:subjectIRI (located in m2r-iris.xsl) is called to return the subject IRI -->
     <xsl:template name="F6XX-subject">
         <xsl:param name="prefLabel"/>
         <xsl:choose>
@@ -110,6 +107,9 @@
         </xsl:choose>
     </xsl:template>
     
+    <!-- This template handles subfields x, y, and z
+        outputting "has subject" as either a datatype or object property.
+        If it is an object property, uwf:subjectIRI is called to return the XYZ subject IRI-->
     <xsl:template name="F6XX-xx-xyz">
         <xsl:variable name="prefLabelXYZ">
             <xsl:call-template name="F6XX-xyz-label"/>
@@ -126,6 +126,8 @@
             </xsl:choose>
     </xsl:template>
     
+    <!-- handles subfield $v as category of work
+        Outputs "has category of work" as datatype or object property -->
     <xsl:template name="F6XX-xx-v">
         <xsl:choose>
             <xsl:when test="../@ind2 = '4'">
@@ -139,6 +141,8 @@
         </xsl:choose>
     </xsl:template>
     
+    <!-- handles subfield $y as category of work
+        Outputs "has subject timespan" as datatype or object property -->
     <xsl:template name="F6XX-xx-y">
         <xsl:param name="prefLabel"/>
         <xsl:choose>
@@ -153,6 +157,8 @@
         </xsl:choose>
     </xsl:template>
     
+    <!-- handles subfield $z as category of work
+        Outputs "has subject place" as datatype or object property -->
     <xsl:template name="F6XX-xx-z">
         <xsl:param name="prefLabel"/>
         <xsl:choose>
@@ -167,6 +173,7 @@
         </xsl:choose>
     </xsl:template>
     
+  
     <xsl:template name="F6XX-concept">
         <xsl:param name="prefLabel"/>
         <xsl:param name="fieldNum"/>
@@ -187,4 +194,6 @@
                 </rdf:Description>
             </xsl:for-each>
     </xsl:template>
+    
+    
 </xsl:stylesheet>
