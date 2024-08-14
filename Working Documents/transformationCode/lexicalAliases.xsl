@@ -132,7 +132,7 @@
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:attribute name="rdf:resource">
-                        <xsl:value-of select="."/>
+                        <xsl:value-of select="@rdf:resource"/>
                     </xsl:attribute>
                 </xsl:otherwise>
             </xsl:choose>
