@@ -44,6 +44,8 @@
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/506-testexp"/>
       <fake:marcfield>F338 ## $b cr $2 rdacarrier</fake:marcfield>
       <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/>
+      <fake:marcfield>F338 ## $b cr $2 rdacarrier</fake:marcfield>
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/>
       <fake:marcfield>F506 1# $a Access restricted to users with a valid Harvard ID. $5 MH</fake:marcfield>
       <rdamd:P30145>Restrictions apply: Terms governing access: Access restricted to users with a valid Harvard ID. (at institution: Harvard University)</rdamd:P30145>
       <fake:marcfield>F880 1# $6 506-00 $a 880 text $5 WaU</fake:marcfield>
@@ -73,19 +75,19 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/506-test2exp"/>
       <fake:marcfield>F506 1# $3 Office files of Under Secretary $a No one may examine these records or obtain information from them or copies of them except by written permission; $b Secretary of the Treasury or his duly authorized representative;$cKept in remote storage; access requires 24 hours advance notice.</fake:marcfield>
-      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/506-test2ited19e45"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/506-test2ited19e50"/>
       <fake:marcfield>F506 0# $6 880-01 $a Access copy available to the general public. $f Unrestricted $2 star $5 MH</fake:marcfield>
-      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/506-test2ited19e52"/>
+      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/506-test2ited19e57"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/506-test2ited19e45">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/506-test2ited19e50">
       <fake:marcfield>F506 1# $3 Office files of Under Secretary $a No one may examine these records or obtain information from them or copies of them except by written permission; $b Secretary of the Treasury or his duly authorized representative;$cKept in remote storage; access requires 24 hours advance notice.</fake:marcfield>
-      <rdaid:P40001>ited19e45</rdaid:P40001>
+      <rdaid:P40001>ited19e50</rdaid:P40001>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
       <rdaid:P40047>Restrictions apply: Terms governing access: No one may examine these records or obtain information from them or copies of them except by written permission;; Jurisdiction: Secretary of the Treasury or his duly authorized representative;$cKept in remote storage; access requires 24 hours advance notice. (Applies to: Office files of Under Secretary)</rdaid:P40047>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/506-test2ited19e52">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/506-test2ited19e57">
       <fake:marcfield>F506 0# $6 880-01 $a Access copy available to the general public. $f Unrestricted $2 star $5 MH</fake:marcfield>
-      <rdaid:P40001>ited19e52</rdaid:P40001>
+      <rdaid:P40001>ited19e57</rdaid:P40001>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
       <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/mh"/>
       <rdaid:P40047>Terms governing access: Access copy available to the general public.</rdaid:P40047>

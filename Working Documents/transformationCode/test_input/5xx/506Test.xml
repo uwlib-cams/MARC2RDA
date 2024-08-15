@@ -9,6 +9,10 @@
             <marc:subfield code="b">cr</marc:subfield>
             <marc:subfield code="2">rdacarrier</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="b">cr</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="506" ind1="1" ind2=" ">
             <marc:subfield code="a">Access restricted to users with a valid Harvard ID.</marc:subfield>
             <marc:subfield code="5">MH</marc:subfield>

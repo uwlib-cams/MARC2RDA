@@ -215,11 +215,15 @@
         mode="man" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:call-template name="getmarc"/>
+        <xsl:variable name="online_resource">
+            <xsl:value-of select="if (some $F338 in ../marc:datafield[@tag = '338']
+                satisfies ((starts-with($F338/marc:subfield[@code = '2'], 'rda')
+                and (contains($F338/marc:subfield[@code = 'a'], 'online resource')
+                or contains($F338/marc:subfield[@code = 'b'], 'cr')
+                or contains($F338/marc:subfield[@code = 'b'], '1018'))))) then 'true' else 'false'"/>
+        </xsl:variable>
         <xsl:choose>
-            <xsl:when test="starts-with(../marc:datafield[@tag = '338']/marc:subfield[@code = '2'], 'rda') 
-                and (contains(../marc:datafield[@tag = '338']/marc:subfield[@code = 'a'], 'online resource')
-                or contains(../marc:datafield[@tag = '338']/marc:subfield[@code = 'b'], 'cr')
-                or contains(../marc:datafield[@tag = '338']/marc:subfield[@code = 'b'], '1018'))">
+            <xsl:when test="$online_resource = 'true'">
                 <rdamd:P30145>
                     <xsl:call-template name="F506-xx-abcdegqu3"/>
                     <xsl:if test="marc:subfield[@code = '5']">
@@ -259,11 +263,15 @@
         <xsl:param name="baseIRI"/>
         <xsl:param name="controlNumber"/>
         <xsl:variable name="genID" select="generate-id()"/>
+        <xsl:variable name="online_resource">
+            <xsl:value-of select="if (some $F338 in ../marc:datafield[@tag = '338']
+                satisfies ((starts-with($F338/marc:subfield[@code = '2'], 'rda')
+                and (contains($F338/marc:subfield[@code = 'a'], 'online resource')
+                or contains($F338/marc:subfield[@code = 'b'], 'cr')
+                or contains($F338/marc:subfield[@code = 'b'], '1018'))))) then 'true' else 'false'"/>
+        </xsl:variable>
         <!-- create the item IRI and rdf:description for this item -->
-        <xsl:if test="not(starts-with(../marc:datafield[@tag = '338']/marc:subfield[@code = '2'], 'rda') 
-            and (contains(../marc:datafield[@tag = '338']/marc:subfield[@code = 'a'], 'online resource')
-            or contains(../marc:datafield[@tag = '338']/marc:subfield[@code = 'b'], 'cr')
-            or contains(../marc:datafield[@tag = '338']/marc:subfield[@code = 'b'], '1018')))">
+        <xsl:if test="$online_resource = 'false'">
             <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
                 <xsl:call-template name="getmarc"/>
                 <rdaid:P40001>{concat($controlNumber, 'ite', $genID)}</rdaid:P40001>
