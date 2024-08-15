@@ -43,10 +43,10 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/521-testexp"/>
       <fake:marcfield>F521 2# $a 2nd grade. $b Little, Brown and Company. $3 Customized footage and curricula</fake:marcfield>
-      <rdawd:P30131>Interest grade level: 2nd grade.; According to: Little, Brown and Company.; (Applies to: Customized footage and curricula)</rdawd:P30131>
+      <rdawd:P30137>Interest grade level: 2nd grade.; According to: Little, Brown and Company.; (Applies to: Customized footage and curricula)</rdawd:P30137>
       <fake:marcfield>F521 3# $3 Customized footage and curricula</fake:marcfield>
-      <rdawd:P30131>Special audience characteristics: (Applies to: Customized footage and curricula)</rdawd:P30131>
+      <rdawd:P30137>Special audience characteristics: (Applies to: Customized footage and curricula)</rdawd:P30137>
       <fake:marcfield>F880 ## $6 521-00/ $a 2nd grade.</fake:marcfield>
-      <rdawd:P30131>2nd grade.</rdawd:P30131>
+      <rdawd:P30137>2nd grade.</rdawd:P30137>
    </rdf:Description>
 </rdf:RDF>
