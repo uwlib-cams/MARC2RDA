@@ -5,6 +5,7 @@
         <source>AAT (Art &amp; Architecture Thesaurus)</source> <!-- taken from wikidata table Source column -->
         <marc024Code>gettyaat</marc024Code> <!-- taken from wikidata table MARC 024 Source Code column -->
         <marc3XXCode>aat</marc3XXCode> <!-- taken from wikidata table MARC 3XX Source Code column -->
+        <marc0Code>CStmoGRI</marc0Code> <!-- taken from example MARC records and confirmed with Adam -->
         <baseIRI iri="http://vocab.getty.edu/aat/"/> <!-- taken from wikidata table How to Formulate URI column -->
         <subfieldUsed>0</subfieldUsed> <!-- taken from wikidata table MARC Subfield column -->
         <!-- info found through https://www.getty.edu/research/tools/vocabularies/aat/
