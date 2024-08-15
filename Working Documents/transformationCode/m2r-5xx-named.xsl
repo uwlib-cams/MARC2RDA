@@ -144,6 +144,45 @@
         </xsl:for-each>
     </xsl:template>
     
+    <!-- 521 -->
+    <xsl:template name="F521-xx-ab3" expand-text="yes">
+        <xsl:if test="@ind1 = '0'">
+            <xsl:text>Reading grade level: </xsl:text>
+        </xsl:if>
+        <xsl:if test="@ind1 = '1'">
+            <xsl:text>Interest age level: </xsl:text>
+        </xsl:if>
+        <xsl:if test="@ind1 = '2'">
+            <xsl:text>Interest grade level: </xsl:text>
+        </xsl:if>
+        <xsl:if test="@ind1 = '3'">
+            <xsl:text>Special audience characteristics: </xsl:text>
+        </xsl:if>
+        <xsl:if test="@ind1 = '4'">
+            <xsl:text>Motivation/interest level: </xsl:text>
+        </xsl:if>
+        <xsl:if test="@ind1 = '#'">
+            <xsl:text>Target audience note:</xsl:text>
+        </xsl:if>
+        <xsl:if test="@ind1 = '8'">
+            <xsl:text>Target audience note:</xsl:text>
+        </xsl:if>
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = '3']">
+            <xsl:if test="@code = 'a'">
+                <xsl:text>{.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'b'">
+                <xsl:text>According to: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = '3'">
+                <xsl:text>(Applies to: {.})</xsl:text>
+            </xsl:if>
+            <xsl:if test="position() != last()">
+                <xsl:text>; </xsl:text>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
+    
     <!-- 526 -->
     <xsl:template name="F526-xx-iabcdz5" expand-text="yes">
         <!-- for-each loop accounts for repeatable subfields and regular punctuation -->

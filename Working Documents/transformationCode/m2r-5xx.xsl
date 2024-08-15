@@ -441,6 +441,16 @@
             </xsl:choose>
         </xsl:for-each>
     </xsl:template>
+    
+    <!-- 521 - Target Audience Note-->
+    <xsl:template
+        match="marc:datafield[@tag = '521'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '521']"
+        mode="man">
+        <xsl:call-template name="getmarc"/>
+        <rdawd:P30131>
+            <xsl:call-template name="F521-xx-ab3"/>
+        </rdawd:P30131>
+    </xsl:template> 
 
     <!-- 522 - Geographic Coverage Note -->
     <xsl:template
