@@ -20,61 +20,63 @@
     ISBD punctuation was eliminated.
 -->
     <xsl:template name="F245-xx-anps">
-        <xsl:choose>
-            <xsl:when test="not(ends-with(marc:subfield[@code = 'b']/preceding-sibling::*[1], '='))">
-                <rdamd:P30134>
-                    <xsl:for-each
-                        select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'n'] | marc:subfield[@code = 'p'] | marc:subfield[@code = 's']">
-                        <xsl:choose>
-                            <xsl:when test="position() != last()">
-                                <xsl:value-of select="replace(., '\s*[:/=\.,]$', '')" separator=", "/>
-                                <xsl:text>, </xsl:text>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:value-of select="replace(., '\s*[:/=\.,]$', '')"/>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:for-each>
-                </rdamd:P30134>
-            </xsl:when>
-            <xsl:when test="marc:subfield[@code = 'b']">
-                <xsl:for-each select="marc:subfield[@code = 'b']">
-                    <xsl:choose>
-                        <xsl:when test="ends-with(preceding-sibling::marc:subfield[1], '=')">
-                            <rdamd:P30134>
-                                <xsl:for-each
-                                    select="preceding-sibling::*[@code = 'a' or @code = 'n' or @code = 'p' or @code = 's']">
-                                    <xsl:value-of select="replace(., '\s*[/:\.=,]$', '')"/>
-                                    <xsl:if test="position() != last()">
-                                        <xsl:text>, </xsl:text>
-                                    </xsl:if>
-                                </xsl:for-each>
-                            </rdamd:P30134>
-                            <rdamd:P30134>
-                                <xsl:value-of select="replace(., '\s*[/:\.]$', '')"/>
-                                <xsl:if
-                                    test="following-sibling::*[@code = 'p' or @code = 'n' or @code = 's']">
+        <xsl:if test="marc:subfield[@code = 'n'] or marc:subfield[@code = 'p'] or marc:subfield[@code = 's']">
+            <xsl:choose>
+                <xsl:when test="not(ends-with(marc:subfield[@code = 'b']/preceding-sibling::*[1], '='))">
+                    <rdamd:P30134>
+                        <xsl:for-each
+                            select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'n'] | marc:subfield[@code = 'p'] | marc:subfield[@code = 's']">
+                            <xsl:choose>
+                                <xsl:when test="position() != last()">
+                                    <xsl:value-of select="replace(., '\s*[:/=\.,]$', '')" separator=", "/>
                                     <xsl:text>, </xsl:text>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="replace(., '\s*[:/=\.,]$', '')"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:for-each>
+                    </rdamd:P30134>
+                </xsl:when>
+                <xsl:when test="marc:subfield[@code = 'b']">
+                    <xsl:for-each select="marc:subfield[@code = 'b']">
+                        <xsl:choose>
+                            <xsl:when test="ends-with(preceding-sibling::marc:subfield[1], '=')">
+                                <rdamd:P30134>
                                     <xsl:for-each
-                                        select="following-sibling::*[@code = 'n' or @code = 'p' or @code = 's']">
+                                        select="preceding-sibling::*[@code = 'a' or @code = 'n' or @code = 'p' or @code = 's']">
                                         <xsl:value-of select="replace(., '\s*[/:\.=,]$', '')"/>
                                         <xsl:if test="position() != last()">
                                             <xsl:text>, </xsl:text>
                                         </xsl:if>
                                     </xsl:for-each>
-                                </xsl:if>
-                            </rdamd:P30134>
-                        </xsl:when>
-                        <xsl:otherwise/>
-                    </xsl:choose>
-                </xsl:for-each>
-            </xsl:when>
-            <xsl:otherwise/>
-        </xsl:choose>
+                                </rdamd:P30134>
+                                <rdamd:P30134>
+                                    <xsl:value-of select="replace(., '\s*[/:\.]$', '')"/>
+                                    <xsl:if
+                                        test="following-sibling::*[@code = 'p' or @code = 'n' or @code = 's']">
+                                        <xsl:text>, </xsl:text>
+                                        <xsl:for-each
+                                            select="following-sibling::*[@code = 'n' or @code = 'p' or @code = 's']">
+                                            <xsl:value-of select="replace(., '\s*[/:\.=,]$', '')"/>
+                                            <xsl:if test="position() != last()">
+                                                <xsl:text>, </xsl:text>
+                                            </xsl:if>
+                                        </xsl:for-each>
+                                    </xsl:if>
+                                </rdamd:P30134>
+                            </xsl:when>
+                            <xsl:otherwise/>
+                        </xsl:choose>
+                    </xsl:for-each>
+                </xsl:when>
+                <xsl:otherwise/>
+            </xsl:choose>
+        </xsl:if>
     </xsl:template>
     <!-- F245-xx-a treats all $a the same -->
     <xsl:template name="F245-xx-a" expand-text="yes">
-        <xsl:if test="marc:subfield[@code = 'a']">
+        <xsl:if test="not(marc:subfield[@code = 'n']) and not(marc:subfield[@code = 'p']) and not(marc:subfield[@code = 's'])">
             <rdamd:P30156>
                 <xsl:value-of select="replace(marc:subfield[@code = 'a'], '(\s)*[/:\.=;,]$', '')"/>
             </rdamd:P30156>
@@ -160,7 +162,7 @@
     <xsl:template name="F245-xx-h" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'h']">
             <rdamd:P30002>
-                <xsl:value-of select="replace(.,'^\[','') => replace('[=]$','') => replace('[\]]$','')"/>
+                <xsl:value-of select="replace(.,'^\[','') => replace('[ ]?[=/\.;]$','') => replace('[\]]$','')"/>
             </rdamd:P30002>
         </xsl:for-each>
     </xsl:template>

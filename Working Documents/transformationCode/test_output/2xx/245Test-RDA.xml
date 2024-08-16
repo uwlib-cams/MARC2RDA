@@ -1,0 +1,1242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
+         xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test1wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test1wor</rdawd:P10002>
+      <fake:marcfield>F245 10 $a --as others see us</fake:marcfield>
+      <rdawd:P10088>--as others see us</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test1exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test1wor"/>
+      <rdaed:P20002>245-test1exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test1man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test1exp"/>
+      <fake:marcfield>F245 10 $a --as others see us</fake:marcfield>
+      <rdamd:P30156>--as others see us</rdamd:P30156>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test2wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test2wor</rdawd:P10002>
+      <fake:marcfield>F245 12 $a A report to the legislature for the year ...</fake:marcfield>
+      <rdawd:P10088>A report to the legislature for the year</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test2exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test2wor"/>
+      <rdaed:P20002>245-test2exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test2man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test2exp"/>
+      <fake:marcfield>F245 12 $a A report to the legislature for the year ...</fake:marcfield>
+      <rdamd:P30156>A report to the legislature for the year ..</rdamd:P30156>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test3wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test3wor</rdawd:P10002>
+      <fake:marcfield>F245 00 $a Concerto for piano, with chamber music ensemble, op. 26 (1961).</fake:marcfield>
+      <rdawd:P10088>Concerto for piano with chamber music ensemble op 26 (1961)</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test3exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test3wor"/>
+      <rdaed:P20002>245-test3exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test3man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test3exp"/>
+      <fake:marcfield>F245 00 $a Concerto for piano, with chamber music ensemble, op. 26 (1961).</fake:marcfield>
+      <rdamd:P30156>Concerto for piano, with chamber music ensemble, op. 26 (1961)</rdamd:P30156>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test4wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test4wor</rdawd:P10002>
+      <fake:marcfield>F245 10 $a [Seventeen poems].</fake:marcfield>
+      <rdawd:P10088>[Seventeen poems]</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test4exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test4wor"/>
+      <rdaed:P20002>245-test4exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test4man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test4exp"/>
+      <fake:marcfield>F245 10 $a [Seventeen poems].</fake:marcfield>
+      <rdamd:P30156>[Seventeen poems]</rdamd:P30156>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test5wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test5wor</rdawd:P10002>
+      <fake:marcfield>F245 00 $a [Diary].</fake:marcfield>
+      <rdawd:P10088>[Diary]</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test5exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test5wor"/>
+      <rdaed:P20002>245-test5exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test5man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test5exp"/>
+      <fake:marcfield>F245 00 $a [Diary].</fake:marcfield>
+      <rdamd:P30156>[Diary]</rdamd:P30156>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test6wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test6wor</rdawd:P10002>
+      <fake:marcfield>F245 00 $a [Diary].</fake:marcfield>
+      <rdawd:P10088>[Diary]</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test6exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test6wor"/>
+      <rdaed:P20002>245-test6exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test6man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test6exp"/>
+      <fake:marcfield>F245 00 $a [Diary].</fake:marcfield>
+      <rdamd:P30156>[Diary]</rdamd:P30156>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test7wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test7wor</rdawd:P10002>
+      <fake:marcfield>F245 10 $a Cancer research : $b official organ of the American Association for Cancer Research, Inc.</fake:marcfield>
+      <rdawd:P10088>Cancer research</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test7exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test7wor"/>
+      <rdaed:P20002>245-test7exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test7man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test7exp"/>
+      <fake:marcfield>F245 10 $a Cancer research : $b official organ of the American Association for Cancer Research, Inc.</fake:marcfield>
+      <rdamd:P30156>Cancer research</rdamd:P30156>
+      <rdamd:P30142>official organ of the American Association for Cancer Research, Inc</rdamd:P30142>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test8wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test8wor</rdawd:P10002>
+      <fake:marcfield>F245 10 $a ETZ : $b ...</fake:marcfield>
+      <rdawd:P10088>ETZ</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test8exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test8wor"/>
+      <rdaed:P20002>245-test8exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test8man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test8exp"/>
+      <fake:marcfield>F245 10 $a ETZ : $b ...</fake:marcfield>
+      <rdamd:P30156>ETZ</rdamd:P30156>
+      <rdamd:P30142>..</rdamd:P30142>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test9wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test9wor</rdawd:P10002>
+      <fake:marcfield>F245 10 $a Trade Union Fellowship Program : $b [announcement].</fake:marcfield>
+      <rdawd:P10088>Trade Union Fellowship Program</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test9exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test9wor"/>
+      <rdaed:P20002>245-test9exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test9man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test9exp"/>
+      <fake:marcfield>F245 10 $a Trade Union Fellowship Program : $b [announcement].</fake:marcfield>
+      <rdamd:P30156>Trade Union Fellowship Program</rdamd:P30156>
+      <rdamd:P30142>[announcement]</rdamd:P30142>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test10wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test10wor</rdawd:P10002>
+      <fake:marcfield>F245 10 $a Rock mechanics : $b journal of the International Society for Rock Mechanics = Felsmechanik.</fake:marcfield>
+      <rdawd:P10088>Rock mechanics</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test10exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test10wor"/>
+      <rdaed:P20002>245-test10exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test10man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test10exp"/>
+      <fake:marcfield>F245 10 $a Rock mechanics : $b journal of the International Society for Rock Mechanics = Felsmechanik.</fake:marcfield>
+      <rdamd:P30156>Rock mechanics</rdamd:P30156>
+      <rdamd:P30142>journal of the International Society for Rock Mechanics</rdamd:P30142>
+      <rdamd:P30142>Felsmechanik</rdamd:P30142>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test11wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test11wor</rdawd:P10002>
+      <fake:marcfield>F245 15 $a Tōn Diōnos Rōmaikōn historiōn eikositria biblia = $b Dionis Romanarum historiarum libri XXIII, à XXXVI ad LVIII vsque.</fake:marcfield>
+      <rdawd:P10088>Tōn Diōnos Rōmaikōn historiōn eikositria biblia</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test11exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test11wor"/>
+      <rdaed:P20002>245-test11exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test11man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test11exp"/>
+      <fake:marcfield>F245 15 $a Tōn Diōnos Rōmaikōn historiōn eikositria biblia = $b Dionis Romanarum historiarum libri XXIII, à XXXVI ad LVIII vsque.</fake:marcfield>
+      <rdamd:P30156>Tōn Diōnos Rōmaikōn historiōn eikositria biblia</rdamd:P30156>
+      <rdamd:P30134>Dionis Romanarum historiarum libri XXIII, à XXXVI ad LVIII vsque.</rdamd:P30134>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test12wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test12wor</rdawd:P10002>
+      <fake:marcfield>F245 15 $a Tōn meionotētōn eunoia : $b mythistorēma / $c Spyrou Gkrintzou.</fake:marcfield>
+      <rdawd:P10088>Tōn meionotētōn eunoia</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test12exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test12wor"/>
+      <rdaed:P20002>245-test12exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test12man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test12exp"/>
+      <fake:marcfield>F245 15 $a Tōn meionotētōn eunoia : $b mythistorēma / $c Spyrou Gkrintzou.</fake:marcfield>
+      <rdamd:P30156>Tōn meionotētōn eunoia</rdamd:P30156>
+      <rdamd:P30142>mythistorēma</rdamd:P30142>
+      <rdamd:P30105>Spyrou Gkrintzou</rdamd:P30105>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test13wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test13wor</rdawd:P10002>
+      <fake:marcfield>F245 14 $a The charity ball : $b a comedy in four acts : $k typescript, $f 1889 / $c by David Belasco and Henry C. DeMille.</fake:marcfield>
+      <rdawd:P10088>The charity ball</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test13exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test13wor"/>
+      <rdaed:P20002>245-test13exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test13man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test13exp"/>
+      <fake:marcfield>F245 14 $a The charity ball : $b a comedy in four acts : $k typescript, $f 1889 / $c by David Belasco and Henry C. DeMille.</fake:marcfield>
+      <rdamd:P30156>The charity ball</rdamd:P30156>
+      <rdamd:P30142>a comedy in four acts</rdamd:P30142>
+      <rdamd:P30105>by David Belasco and Henry C. DeMille</rdamd:P30105>
+      <rdamd:P30278>1889 /</rdamd:P30278>
+      <rdamd:P30137>typescript</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test14wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test14wor</rdawd:P10002>
+      <fake:marcfield>F245 00 $a Love from Joy : $b letters from a farmer’s wife. $n Part III, $p 1987-1995, At the bungalow.</fake:marcfield>
+      <rdawd:P10088>Love from Joy</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test14exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test14wor"/>
+      <rdaed:P20002>245-test14exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test14man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test14exp"/>
+      <fake:marcfield>F245 00 $a Love from Joy : $b letters from a farmer’s wife. $n Part III, $p 1987-1995, At the bungalow.</fake:marcfield>
+      <rdamd:P30134>Love from Joy, Part III, 1987-1995, At the bungalow</rdamd:P30134>
+      <rdamd:P30142>letters from a farmer’s wife</rdamd:P30142>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test15wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test15wor</rdawd:P10002>
+      <fake:marcfield>F245 00 $a Proceedings / $c Fake Society</fake:marcfield>
+      <rdawd:P10088>Proceedings</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test15exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test15wor"/>
+      <rdaed:P20002>245-test15exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test15man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test15exp"/>
+      <fake:marcfield>F245 00 $a Proceedings / $c Fake Society</fake:marcfield>
+      <rdamd:P30156>Proceedings</rdamd:P30156>
+      <rdamd:P30105>Fake Society</rdamd:P30105>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test16wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test16wor</rdawd:P10002>
+      <fake:marcfield>F245 00 $a Project directory / / $c TDC = Répertoire des projets / CDT.</fake:marcfield>
+      <rdawd:P10088>Project directory</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test16exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test16wor"/>
+      <rdaed:P20002>245-test16exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test16man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test16exp"/>
+      <fake:marcfield>F245 00 $a Project directory / / $c TDC = Répertoire des projets / CDT.</fake:marcfield>
+      <rdamd:P30156>Project directory /</rdamd:P30156>
+      <rdamd:P30105>TDC</rdamd:P30105>
+      <rdamd:P30105>Répertoire des projets / CDT</rdamd:P30105>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test17wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test17wor</rdawd:P10002>
+      <fake:marcfield>F245 00 $a Short-Harrison-Symmes family papers, $f 1760-1878.</fake:marcfield>
+      <rdawd:P10088>Short-Harrison-Symmes family papers</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test17exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test17wor"/>
+      <rdaed:P20002>245-test17exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test17man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test17exp"/>
+      <fake:marcfield>F245 00 $a Short-Harrison-Symmes family papers, $f 1760-1878.</fake:marcfield>
+      <rdamd:P30156>Short-Harrison-Symmes family papers</rdamd:P30156>
+      <rdamd:P30278>1760-1878</rdamd:P30278>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test18wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test18wor</rdawd:P10002>
+      <fake:marcfield>F245 14 $a The New Lost City Ramblers with Cousin Emmy $h [sound recording].</fake:marcfield>
+      <rdawd:P10088>The New Lost City Ramblers with Cousin Emmy</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test18exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test18wor"/>
+      <rdaed:P20002>245-test18exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test18man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test18exp"/>
+      <fake:marcfield>F245 14 $a The New Lost City Ramblers with Cousin Emmy $h [sound recording].</fake:marcfield>
+      <rdamd:P30156>The New Lost City Ramblers with Cousin Emmy</rdamd:P30156>
+      <rdamd:P30002>sound recording</rdamd:P30002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test19wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test19wor</rdawd:P10002>
+      <fake:marcfield>F245 03 $a Le Bureau $h [filmstrip] = $b La Oficina = Das Büro.</fake:marcfield>
+      <rdawd:P10088>Le Bureau</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test19exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test19wor"/>
+      <rdaed:P20002>245-test19exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test19man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test19exp"/>
+      <fake:marcfield>F245 03 $a Le Bureau $h [filmstrip] = $b La Oficina = Das Büro.</fake:marcfield>
+      <rdamd:P30156>Le Bureau</rdamd:P30156>
+      <rdamd:P30134>La Oficina</rdamd:P30134>
+      <rdamd:P30134>Das Büro</rdamd:P30134>
+      <rdamd:P30002>filmstrip</rdamd:P30002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test20wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test20wor</rdawd:P10002>
+      <fake:marcfield>F245 00 $a Oklahoma $h [sound recording] ; $b Carousel ; South Pacific ; Yokels in Paradise</fake:marcfield>
+      <rdawd:P10088>Oklahoma</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test20exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test20wor"/>
+      <rdaed:P20002>245-test20exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test20man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test20exp"/>
+      <fake:marcfield>F245 00 $a Oklahoma $h [sound recording] ; $b Carousel ; South Pacific ; Yokels in Paradise</fake:marcfield>
+      <rdamd:P30156>Oklahoma</rdamd:P30156>
+      <rdamd:P30142>Carousel ; South Pacific ; Yokels in Paradise</rdamd:P30142>
+      <rdamd:P30002>sound recording</rdamd:P30002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test21wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test21wor</rdawd:P10002>
+      <fake:marcfield>F245 03 $a La mer $h [sound recording] ; $b Khamma ; Rhapsody for clarinet and orchestra / $c Claude Debussy.</fake:marcfield>
+      <rdawd:P10088>La mer</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test21exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test21wor"/>
+      <rdaed:P20002>245-test21exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test21man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test21exp"/>
+      <fake:marcfield>F245 03 $a La mer $h [sound recording] ; $b Khamma ; Rhapsody for clarinet and orchestra / $c Claude Debussy.</fake:marcfield>
+      <rdamd:P30156>La mer</rdamd:P30156>
+      <rdamd:P30142>Khamma ; Rhapsody for clarinet and orchestra</rdamd:P30142>
+      <rdamd:P30105>Claude Debussy</rdamd:P30105>
+      <rdamd:P30002>sound recording</rdamd:P30002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test22wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test22wor</rdawd:P10002>
+      <fake:marcfield>F245 00 $a $h [sound recording] ; $b inet and orchestra / $c Claude Debussy.</fake:marcfield>
+      <rdawd:P10088/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test22exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test22wor"/>
+      <rdaed:P20002>245-test22exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test22man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test22exp"/>
+      <fake:marcfield>F245 00 $a $h [sound recording] ; $b inet and orchestra / $c Claude Debussy.</fake:marcfield>
+      <rdamd:P30156/>
+      <rdamd:P30142>inet and orchestra</rdamd:P30142>
+      <rdamd:P30105>Claude Debussy</rdamd:P30105>
+      <rdamd:P30002>sound recording</rdamd:P30002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test23wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test23wor</rdawd:P10002>
+      <fake:marcfield>F245 00 $a Concerto per piano n. 21, K 467 $h [sound recording] ; $c W.A. Mozart. L’assedio di Corinto. Ouverture / G. Rossini.</fake:marcfield>
+      <rdawd:P10088>Concerto per piano n 21 K 467</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test23exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test23wor"/>
+      <rdaed:P20002>245-test23exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test23man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test23exp"/>
+      <fake:marcfield>F245 00 $a Concerto per piano n. 21, K 467 $h [sound recording] ; $c W.A. Mozart. L’assedio di Corinto. Ouverture / G. Rossini.</fake:marcfield>
+      <rdamd:P30156>Concerto per piano n. 21, K 467</rdamd:P30156>
+      <rdamd:P30105>W.A. Mozart. L’assedio di Corinto. Ouverture / G. Rossini</rdamd:P30105>
+      <rdamd:P30002>sound recording</rdamd:P30002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test24wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test24wor</rdawd:P10002>
+      <fake:marcfield>F245 10 $a Four years at Yale : $k diaries, $f 1903 Sept. 16-1907 Oct. 5.</fake:marcfield>
+      <rdawd:P10088>Four years at Yale</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test24exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test24wor"/>
+      <rdaed:P20002>245-test24exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test24man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test24exp"/>
+      <fake:marcfield>F245 10 $a Four years at Yale : $k diaries, $f 1903 Sept. 16-1907 Oct. 5.</fake:marcfield>
+      <rdamd:P30156>Four years at Yale</rdamd:P30156>
+      <rdamd:P30278>1903 Sept 16-1907 Oct 5</rdamd:P30278>
+      <rdamd:P30137>diaries</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test25wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test25wor</rdawd:P10002>
+      <fake:marcfield>F245 00 $a PL 17 Hearing Files $k Case Files $f 1974 $p District 6 $h microfilm (jacketted in fiche).</fake:marcfield>
+      <rdawd:P10088>PL 17 Hearing Files</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test25exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test25wor"/>
+      <rdaed:P20002>245-test25exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test25man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test25exp"/>
+      <fake:marcfield>F245 00 $a PL 17 Hearing Files $k Case Files $f 1974 $p District 6 $h microfilm (jacketted in fiche).</fake:marcfield>
+      <rdamd:P30134>PL 17 Hearing Files, District 6</rdamd:P30134>
+      <rdamd:P30278>1974</rdamd:P30278>
+      <rdamd:P30002>microfilm (jacketted in fiche)</rdamd:P30002>
+      <rdamd:P30137>Case Files</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test26wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test26wor</rdawd:P10002>
+      <fake:marcfield>F245 10 $a Faust. $n Part one.</fake:marcfield>
+      <rdawd:P10088>Faust</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test26exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test26wor"/>
+      <rdaed:P20002>245-test26exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test26man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test26exp"/>
+      <fake:marcfield>F245 10 $a Faust. $n Part one.</fake:marcfield>
+      <rdamd:P30134>Faust, Part one</rdamd:P30134>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test27wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test27wor</rdawd:P10002>
+      <fake:marcfield>F245 00 $a Management report. $n Part I / $c U.S. Navy's Military Sealift Command.</fake:marcfield>
+      <rdawd:P10088>Management report</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test27exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test27wor"/>
+      <rdaed:P20002>245-test27exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test27man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test27exp"/>
+      <fake:marcfield>F245 00 $a Management report. $n Part I / $c U.S. Navy's Military Sealift Command.</fake:marcfield>
+      <rdamd:P30134>Management report, Part I</rdamd:P30134>
+      <rdamd:P30105>U.S. Navy's Military Sealift Command</rdamd:P30105>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test28wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test28wor</rdawd:P10002>
+      <fake:marcfield>F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. $n 1. Abt. Originale. $n Reihe B, $p Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</fake:marcfield>
+      <rdawd:P10088>Zentralblatt für Bakteriologie Parasitenkunde Infektionskrankheiten und Hygiene</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test28exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test28wor"/>
+      <rdaed:P20002>245-test28exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test28man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test28exp"/>
+      <fake:marcfield>F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. $n 1. Abt. Originale. $n Reihe B, $p Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</fake:marcfield>
+      <rdamd:P30134>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene, 1. Abt. Originale, Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</rdamd:P30134>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test29wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test29wor</rdawd:P10002>
+      <fake:marcfield>F245 00 $a Dissertation abstracts. $n A, $p The humanities and social sciences.</fake:marcfield>
+      <rdawd:P10088>Dissertation abstracts</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test29exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test29wor"/>
+      <rdaed:P20002>245-test29exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test29man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test29exp"/>
+      <fake:marcfield>F245 00 $a Dissertation abstracts. $n A, $p The humanities and social sciences.</fake:marcfield>
+      <rdamd:P30134>Dissertation abstracts, A, The humanities and social sciences</rdamd:P30134>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test30wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test30wor</rdawd:P10002>
+      <fake:marcfield>F245 00 $a Heritage Books archives. $p Underwood biographical dictionary. $n Volumes 1 &amp; 2 revised $h [electronic resource] / $c Laverne Galeener-Moore.</fake:marcfield>
+      <rdawd:P10088>Heritage Books archives</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test30exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test30wor"/>
+      <rdaed:P20002>245-test30exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test30man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test30exp"/>
+      <fake:marcfield>F245 00 $a Heritage Books archives. $p Underwood biographical dictionary. $n Volumes 1 &amp; 2 revised $h [electronic resource] / $c Laverne Galeener-Moore.</fake:marcfield>
+      <rdamd:P30134>Heritage Books archives, Underwood biographical dictionary, Volumes 1 &amp; 2 revised</rdamd:P30134>
+      <rdamd:P30105>Laverne Galeener-Moore</rdamd:P30105>
+      <rdamd:P30002>electronic resource</rdamd:P30002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test31wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test31wor</rdawd:P10002>
+      <fake:marcfield>F245 00 $a Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. $n Part II, $p Labour unions = $b Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers. $n Partie II, $p Syndicats ouvriers.</fake:marcfield>
+      <rdawd:P10088>Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test31exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test31wor"/>
+      <rdaed:P20002>245-test31exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test31man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test31exp"/>
+      <fake:marcfield>F245 00 $a Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. $n Part II, $p Labour unions = $b Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers. $n Partie II, $p Syndicats ouvriers.</fake:marcfield>
+      <rdamd:P30134>Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act, Part II, Labour unions</rdamd:P30134>
+      <rdamd:P30134>Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers, Partie II, Syndicats ouvriers</rdamd:P30134>
+      <rdamd:P30142/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test32wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test32wor</rdawd:P10002>
+      <fake:marcfield>F245 10 $a Advanced calculus. $p Student handbook.</fake:marcfield>
+      <rdawd:P10088>Advanced calculus</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test32exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test32wor"/>
+      <rdaed:P20002>245-test32exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test32man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test32exp"/>
+      <fake:marcfield>F245 10 $a Advanced calculus. $p Student handbook.</fake:marcfield>
+      <rdamd:P30134>Advanced calculus, Student handbook</rdamd:P30134>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test33wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test33wor</rdawd:P10002>
+      <fake:marcfield>F245 10 $a Internationale Strassenkarte. $p Europe 1:2.5 Mio. : $b mit Register = International road map. $p Europe, 1:2.5 mio : with index / $c RV Reise- und Verkehrsverlag.</fake:marcfield>
+      <rdawd:P10088>Internationale Strassenkarte</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test33exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test33wor"/>
+      <rdaed:P20002>245-test33exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test33man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test33exp"/>
+      <fake:marcfield>F245 10 $a Internationale Strassenkarte. $p Europe 1:2.5 Mio. : $b mit Register = International road map. $p Europe, 1:2.5 mio : with index / $c RV Reise- und Verkehrsverlag.</fake:marcfield>
+      <rdamd:P30134>Internationale Strassenkarte, Europe 1:2.5 Mio., Europe, 1:2.5 mio : with index</rdamd:P30134>
+      <rdamd:P30142>mit Register</rdamd:P30142>
+      <rdamd:P30142>International road map</rdamd:P30142>
+      <rdamd:P30105>RV Reise- und Verkehrsverlag</rdamd:P30105>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test34wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test34wor</rdawd:P10002>
+      <fake:marcfield>F245 10 $a Island series. $p Penrhyn, bethymetry / $c compilation by K.B. Lewis, P. Larkin, and T.T. Rongo ; bathymetric compilation and contouring by K.B. Lewis, T.T. Rongo and A.T. Utanga ; drawn by S.C. Glover.</fake:marcfield>
+      <rdawd:P10088>Island series</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test34exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test34wor"/>
+      <rdaed:P20002>245-test34exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test34man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test34exp"/>
+      <fake:marcfield>F245 10 $a Island series. $p Penrhyn, bethymetry / $c compilation by K.B. Lewis, P. Larkin, and T.T. Rongo ; bathymetric compilation and contouring by K.B. Lewis, T.T. Rongo and A.T. Utanga ; drawn by S.C. Glover.</fake:marcfield>
+      <rdamd:P30134>Island series, Penrhyn, bethymetry</rdamd:P30134>
+      <rdamd:P30105>compilation by K.B. Lewis, P. Larkin, and T.T. Rongo ; bathymetric compilation and contouring by K.B. Lewis, T.T. Rongo and A.T. Utanga ; drawn by S.C. Glover</rdamd:P30105>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test35wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test35wor</rdawd:P10002>
+      <fake:marcfield>F245 00 $a Deutsche Bibliographie. $p Wöchentliches Verzeichnis. $n Reihe B, $p Beilage, Erscheinungen ausserhalb des Verlagsbuchhandels : $b Amtsblatt der Deutschen Bibliothek.</fake:marcfield>
+      <rdawd:P10088>Deutsche Bibliographie</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test35exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test35wor"/>
+      <rdaed:P20002>245-test35exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test35man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test35exp"/>
+      <fake:marcfield>F245 00 $a Deutsche Bibliographie. $p Wöchentliches Verzeichnis. $n Reihe B, $p Beilage, Erscheinungen ausserhalb des Verlagsbuchhandels : $b Amtsblatt der Deutschen Bibliothek.</fake:marcfield>
+      <rdamd:P30134>Deutsche Bibliographie, Wöchentliches Verzeichnis, Reihe B, Beilage, Erscheinungen ausserhalb des Verlagsbuchhandels</rdamd:P30134>
+      <rdamd:P30142>Amtsblatt der Deutschen Bibliothek</rdamd:P30142>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test36wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test36wor</rdawd:P10002>
+      <fake:marcfield>F245 00 $a Portals to the world. $p Selected Internet resources. $p Maldives $h [electronic resource] / $c created and maintained by the Asian Division, Area Studies Directorate.</fake:marcfield>
+      <rdawd:P10088>Portals to the world</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test36exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test36wor"/>
+      <rdaed:P20002>245-test36exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test36man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test36exp"/>
+      <fake:marcfield>F245 00 $a Portals to the world. $p Selected Internet resources. $p Maldives $h [electronic resource] / $c created and maintained by the Asian Division, Area Studies Directorate.</fake:marcfield>
+      <rdamd:P30134>Portals to the world, Selected Internet resources, Maldives</rdamd:P30134>
+      <rdamd:P30105>created and maintained by the Asian Division, Area Studies Directorate</rdamd:P30105>
+      <rdamd:P30002>electronic resource</rdamd:P30002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test37wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test37wor</rdawd:P10002>
+      <fake:marcfield>F245 10 $a Director's report of the Association of Insurance Adjusters. $s Member release.</fake:marcfield>
+      <rdawd:P10088>Director's report of the Association of Insurance Adjusters</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test37exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test37wor"/>
+      <rdaed:P20002>245-test37exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test37man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test37exp"/>
+      <fake:marcfield>F245 10 $a Director's report of the Association of Insurance Adjusters. $s Member release.</fake:marcfield>
+      <rdamd:P30134>Director's report of the Association of Insurance Adjusters, Member release</rdamd:P30134>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test38wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test38wor</rdawd:P10002>
+      <fake:marcfield>F245 10 $a Second director's report of the Association. $s Member release,  $s General release.</fake:marcfield>
+      <rdawd:P10088>Second director's report of the Association</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test38exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test38wor"/>
+      <rdaed:P20002>245-test38exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test38man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test38exp"/>
+      <fake:marcfield>F245 10 $a Second director's report of the Association. $s Member release,  $s General release.</fake:marcfield>
+      <rdamd:P30134>Second director's report of the Association, Member release, , General release</rdamd:P30134>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test39wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test39wor</rdawd:P10002>
+      <fake:marcfield>F245 00 $k Letter, $f 1901 March 6, $b Dublin, to Henrik Ibsen, Kristiana [Oslo].</fake:marcfield>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test39exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test39wor"/>
+      <rdaed:P20002>245-test39exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test39man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test39exp"/>
+      <fake:marcfield>F245 00 $k Letter, $f 1901 March 6, $b Dublin, to Henrik Ibsen, Kristiana [Oslo].</fake:marcfield>
+      <rdamd:P30156/>
+      <rdamd:P30142>Dublin, to Henrik Ibsen, Kristiana [Oslo]</rdamd:P30142>
+      <rdamd:P30278>1901 March 6</rdamd:P30278>
+      <rdamd:P30137>Letter</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test40wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test40wor</rdawd:P10002>
+      <fake:marcfield>F245 00 $k Records, $f 1939-1973 $g 1965-1972.</fake:marcfield>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test40exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test40wor"/>
+      <rdaed:P20002>245-test40exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test40man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test40exp"/>
+      <fake:marcfield>F245 00 $k Records, $f 1939-1973 $g 1965-1972.</fake:marcfield>
+      <rdamd:P30156/>
+      <rdamd:P30278>1939-1973</rdamd:P30278>
+      <rdamd:P30278>1965-1972</rdamd:P30278>
+      <rdamd:P30137>Records</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test41wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test41wor</rdawd:P10002>
+      <fake:marcfield>F245 10 $k Employment applications $g Jan.-Dec. 1985.</fake:marcfield>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test41exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test41wor"/>
+      <rdaed:P20002>245-test41exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test41man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test41exp"/>
+      <fake:marcfield>F245 10 $k Employment applications $g Jan.-Dec. 1985.</fake:marcfield>
+      <rdamd:P30156/>
+      <rdamd:P30278>Jan-Dec 1985</rdamd:P30278>
+      <rdamd:P30137>Employment applications</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test42wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test42wor</rdawd:P10002>
+      <fake:marcfield>F245 15 $a Tōn meionotētōn eunoia : $b mythistorēma / $c Spyrou Gkrintzou.</fake:marcfield>
+      <rdawd:P10088>Tōn meionotētōn eunoia</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test42exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test42wor"/>
+      <rdaed:P20002>245-test42exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test42man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test42exp"/>
+      <fake:marcfield>F245 15 $a Tōn meionotētōn eunoia : $b mythistorēma / $c Spyrou Gkrintzou.</fake:marcfield>
+      <rdamd:P30156>Tōn meionotētōn eunoia</rdamd:P30156>
+      <rdamd:P30142>mythistorēma</rdamd:P30142>
+      <rdamd:P30105>Spyrou Gkrintzou</rdamd:P30105>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test43wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test43wor</rdawd:P10002>
+      <fake:marcfield>F245 15 $a Tōn meionotētōn eunoia : $b mythistorēma / $c Spyrou Gkrintzou.</fake:marcfield>
+      <rdawd:P10088>Tōn meionotētōn eunoia</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test43exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test43wor"/>
+      <rdaed:P20002>245-test43exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test43man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test43exp"/>
+      <fake:marcfield>F245 15 $a Tōn meionotētōn eunoia : $b mythistorēma / $c Spyrou Gkrintzou.</fake:marcfield>
+      <rdamd:P30156>Tōn meionotētōn eunoia</rdamd:P30156>
+      <rdamd:P30142>mythistorēma</rdamd:P30142>
+      <rdamd:P30105>Spyrou Gkrintzou</rdamd:P30105>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test44wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test44wor</rdawd:P10002>
+      <fake:marcfield>F245 15 $a Tōn meionotētōn eunoia $b mythistorēma $c Spyrou Gkrintzou.</fake:marcfield>
+      <rdawd:P10088>Tōn meionotētōn eunoia</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test44exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test44wor"/>
+      <rdaed:P20002>245-test44exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test44man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test44exp"/>
+      <fake:marcfield>F245 15 $a Tōn meionotētōn eunoia $b mythistorēma $c Spyrou Gkrintzou.</fake:marcfield>
+      <rdamd:P30156>Tōn meionotētōn eunoia</rdamd:P30156>
+      <rdamd:P30142>mythistorēma</rdamd:P30142>
+      <rdamd:P30105>Spyrou Gkrintzou</rdamd:P30105>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test45wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test45wor</rdawd:P10002>
+      <fake:marcfield>F245 15 $a Tōn meionotētōn eunoia : $b mythistorēma $c Spyrou Gkrintzou.</fake:marcfield>
+      <rdawd:P10088>Tōn meionotētōn eunoia</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test45exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test45wor"/>
+      <rdaed:P20002>245-test45exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test45man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test45exp"/>
+      <fake:marcfield>F245 15 $a Tōn meionotētōn eunoia : $b mythistorēma $c Spyrou Gkrintzou.</fake:marcfield>
+      <rdamd:P30156>Tōn meionotētōn eunoia</rdamd:P30156>
+      <rdamd:P30142>mythistorēma</rdamd:P30142>
+      <rdamd:P30105>Spyrou Gkrintzou</rdamd:P30105>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test46wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test46wor</rdawd:P10002>
+      <fake:marcfield>F245 15 $a Tōn meionotētōn eunoia $b mythistorēma $c Spyrou Gkrintzou</fake:marcfield>
+      <rdawd:P10088>Tōn meionotētōn eunoia</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test46exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test46wor"/>
+      <rdaed:P20002>245-test46exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test46man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test46exp"/>
+      <fake:marcfield>F245 15 $a Tōn meionotētōn eunoia $b mythistorēma $c Spyrou Gkrintzou</fake:marcfield>
+      <rdamd:P30156>Tōn meionotētōn eunoia</rdamd:P30156>
+      <rdamd:P30142>mythistorēma</rdamd:P30142>
+      <rdamd:P30105>Spyrou Gkrintzou</rdamd:P30105>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test47wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test47wor</rdawd:P10002>
+      <fake:marcfield>F245 15 $a Tōn meionotētōn eunoia $b mythistorēma / $c Spyrou Gkrintzou.</fake:marcfield>
+      <rdawd:P10088>Tōn meionotētōn eunoia</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test47exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test47wor"/>
+      <rdaed:P20002>245-test47exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test47man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test47exp"/>
+      <fake:marcfield>F245 15 $a Tōn meionotētōn eunoia $b mythistorēma / $c Spyrou Gkrintzou.</fake:marcfield>
+      <rdamd:P30156>Tōn meionotētōn eunoia</rdamd:P30156>
+      <rdamd:P30142>mythistorēma</rdamd:P30142>
+      <rdamd:P30105>Spyrou Gkrintzou</rdamd:P30105>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test48wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test48wor</rdawd:P10002>
+      <fake:marcfield>F245 14 $a The charity ball : $b a comedy in four acts : $k typescript, $f 1889 / $c by David Belasco and Henry C. DeMille.</fake:marcfield>
+      <rdawd:P10088>The charity ball</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test48exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test48wor"/>
+      <rdaed:P20002>245-test48exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test48man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test48exp"/>
+      <fake:marcfield>F245 14 $a The charity ball : $b a comedy in four acts : $k typescript, $f 1889 / $c by David Belasco and Henry C. DeMille.</fake:marcfield>
+      <rdamd:P30156>The charity ball</rdamd:P30156>
+      <rdamd:P30142>a comedy in four acts</rdamd:P30142>
+      <rdamd:P30105>by David Belasco and Henry C. DeMille</rdamd:P30105>
+      <rdamd:P30278>1889 /</rdamd:P30278>
+      <rdamd:P30137>typescript</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test49wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test49wor</rdawd:P10002>
+      <fake:marcfield>F245 14 $a The charity ball : $b a comedy in four acts : $k typescript, $f 1889 / $c by David Belasco and Henry C. DeMille.</fake:marcfield>
+      <rdawd:P10088>The charity ball</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test49exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test49wor"/>
+      <rdaed:P20002>245-test49exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test49man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test49exp"/>
+      <fake:marcfield>F245 14 $a The charity ball : $b a comedy in four acts : $k typescript, $f 1889 / $c by David Belasco and Henry C. DeMille.</fake:marcfield>
+      <rdamd:P30156>The charity ball</rdamd:P30156>
+      <rdamd:P30142>a comedy in four acts</rdamd:P30142>
+      <rdamd:P30105>by David Belasco and Henry C. DeMille</rdamd:P30105>
+      <rdamd:P30278>1889 /</rdamd:P30278>
+      <rdamd:P30137>typescript</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test50wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test50wor</rdawd:P10002>
+      <fake:marcfield>F245 14 $a The charity ball : $b a comedy in four acts $k typescript $f 1889  $c by David Belasco and Henry C. DeMille.</fake:marcfield>
+      <rdawd:P10088>The charity ball</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test50exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test50wor"/>
+      <rdaed:P20002>245-test50exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test50man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test50exp"/>
+      <fake:marcfield>F245 14 $a The charity ball : $b a comedy in four acts $k typescript $f 1889  $c by David Belasco and Henry C. DeMille.</fake:marcfield>
+      <rdamd:P30156>The charity ball</rdamd:P30156>
+      <rdamd:P30142>a comedy in four acts</rdamd:P30142>
+      <rdamd:P30105>by David Belasco and Henry C. DeMille</rdamd:P30105>
+      <rdamd:P30278>1889 </rdamd:P30278>
+      <rdamd:P30137>typescript</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test51wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test51wor</rdawd:P10002>
+      <fake:marcfield>F245 14 $a The charity ball : $b a comedy in four acts : $k typescript $f 1889 / $c by David Belasco and Henry C. DeMille.</fake:marcfield>
+      <rdawd:P10088>The charity ball</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test51exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test51wor"/>
+      <rdaed:P20002>245-test51exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test51man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test51exp"/>
+      <fake:marcfield>F245 14 $a The charity ball : $b a comedy in four acts : $k typescript $f 1889 / $c by David Belasco and Henry C. DeMille.</fake:marcfield>
+      <rdamd:P30156>The charity ball</rdamd:P30156>
+      <rdamd:P30142>a comedy in four acts</rdamd:P30142>
+      <rdamd:P30105>by David Belasco and Henry C. DeMille</rdamd:P30105>
+      <rdamd:P30278>1889 /</rdamd:P30278>
+      <rdamd:P30137>typescript</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test52wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test52wor</rdawd:P10002>
+      <fake:marcfield>F245 14 $a The charity ball $b a comedy in four acts $k typescript $f 1889 $c by David Belasco and Henry C. DeMille.</fake:marcfield>
+      <rdawd:P10088>The charity ball</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test52exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test52wor"/>
+      <rdaed:P20002>245-test52exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test52man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test52exp"/>
+      <fake:marcfield>F245 14 $a The charity ball $b a comedy in four acts $k typescript $f 1889 $c by David Belasco and Henry C. DeMille.</fake:marcfield>
+      <rdamd:P30156>The charity ball</rdamd:P30156>
+      <rdamd:P30142>a comedy in four acts</rdamd:P30142>
+      <rdamd:P30105>by David Belasco and Henry C. DeMille</rdamd:P30105>
+      <rdamd:P30278>1889</rdamd:P30278>
+      <rdamd:P30137>typescript</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test53wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test53wor</rdawd:P10002>
+      <fake:marcfield>F245 14 $a The charity ball $b a comedy in four acts $k typescript, $f 1889 $c by David Belasco and Henry C. DeMille.</fake:marcfield>
+      <rdawd:P10088>The charity ball</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test53exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test53wor"/>
+      <rdaed:P20002>245-test53exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test53man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test53exp"/>
+      <fake:marcfield>F245 14 $a The charity ball $b a comedy in four acts $k typescript, $f 1889 $c by David Belasco and Henry C. DeMille.</fake:marcfield>
+      <rdamd:P30156>The charity ball</rdamd:P30156>
+      <rdamd:P30142>a comedy in four acts</rdamd:P30142>
+      <rdamd:P30105>by David Belasco and Henry C. DeMille</rdamd:P30105>
+      <rdamd:P30278>1889</rdamd:P30278>
+      <rdamd:P30137>typescript</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test54wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test54wor</rdawd:P10002>
+      <fake:marcfield>F245 03 $a Le Bureau $h [filmstrip] = $b La Oficina = Das Büro.</fake:marcfield>
+      <rdawd:P10088>Le Bureau</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test54exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test54wor"/>
+      <rdaed:P20002>245-test54exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test54man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test54exp"/>
+      <fake:marcfield>F245 03 $a Le Bureau $h [filmstrip] = $b La Oficina = Das Büro.</fake:marcfield>
+      <rdamd:P30156>Le Bureau</rdamd:P30156>
+      <rdamd:P30134>La Oficina</rdamd:P30134>
+      <rdamd:P30134>Das Büro</rdamd:P30134>
+      <rdamd:P30002>filmstrip</rdamd:P30002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test55wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test55wor</rdawd:P10002>
+      <fake:marcfield>F245 03 $a Le Bureau $h [filmstrip] = $b La Oficina = Das Büro.</fake:marcfield>
+      <rdawd:P10088>Le Bureau</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test55exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test55wor"/>
+      <rdaed:P20002>245-test55exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test55man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test55exp"/>
+      <fake:marcfield>F245 03 $a Le Bureau $h [filmstrip] = $b La Oficina = Das Büro.</fake:marcfield>
+      <rdamd:P30156>Le Bureau</rdamd:P30156>
+      <rdamd:P30134>La Oficina</rdamd:P30134>
+      <rdamd:P30134>Das Büro</rdamd:P30134>
+      <rdamd:P30002>filmstrip</rdamd:P30002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test56wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test56wor</rdawd:P10002>
+      <fake:marcfield>F245 03 $a Le Bureau $h [filmstrip] = $b La Oficina ALSO KNOWN AS Das Büro.</fake:marcfield>
+      <rdawd:P10088>Le Bureau</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test56exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test56wor"/>
+      <rdaed:P20002>245-test56exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test56man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test56exp"/>
+      <fake:marcfield>F245 03 $a Le Bureau $h [filmstrip] = $b La Oficina ALSO KNOWN AS Das Büro.</fake:marcfield>
+      <rdamd:P30156>Le Bureau</rdamd:P30156>
+      <rdamd:P30134>La Oficina ALSO KNOWN AS Das Büro.</rdamd:P30134>
+      <rdamd:P30002>filmstrip</rdamd:P30002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test57wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test57wor</rdawd:P10002>
+      <fake:marcfield>F245 03 $a Le Bureau $h [filmstrip] $b La Oficina : Das Büro.</fake:marcfield>
+      <rdawd:P10088>Le Bureau</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test57exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test57wor"/>
+      <rdaed:P20002>245-test57exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test57man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test57exp"/>
+      <fake:marcfield>F245 03 $a Le Bureau $h [filmstrip] $b La Oficina : Das Büro.</fake:marcfield>
+      <rdamd:P30156>Le Bureau</rdamd:P30156>
+      <rdamd:P30142>La Oficina : Das Büro</rdamd:P30142>
+      <rdamd:P30002>filmstrip</rdamd:P30002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test58wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test58wor</rdawd:P10002>
+      <fake:marcfield>F245 03 $a Le Bureau $h filmstrip $b La Oficina. Das Büro.</fake:marcfield>
+      <rdawd:P10088>Le Bureau</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test58exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test58wor"/>
+      <rdaed:P20002>245-test58exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test58man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test58exp"/>
+      <fake:marcfield>F245 03 $a Le Bureau $h filmstrip $b La Oficina. Das Büro.</fake:marcfield>
+      <rdamd:P30156>Le Bureau</rdamd:P30156>
+      <rdamd:P30142>La Oficina. Das Büro</rdamd:P30142>
+      <rdamd:P30002>filmstrip</rdamd:P30002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test59wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test59wor</rdawd:P10002>
+      <fake:marcfield>F245 03 $a Le Bureau $h filmstrip $b La Oficina = Das Büro.</fake:marcfield>
+      <rdawd:P10088>Le Bureau</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test59exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test59wor"/>
+      <rdaed:P20002>245-test59exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test59man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test59exp"/>
+      <fake:marcfield>F245 03 $a Le Bureau $h filmstrip $b La Oficina = Das Büro.</fake:marcfield>
+      <rdamd:P30156>Le Bureau</rdamd:P30156>
+      <rdamd:P30142>La Oficina</rdamd:P30142>
+      <rdamd:P30142>Das Büro</rdamd:P30142>
+      <rdamd:P30002>filmstrip</rdamd:P30002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test60wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test60wor</rdawd:P10002>
+      <fake:marcfield>F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. $n 1. Abt. Originale. $n Reihe B, $p Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</fake:marcfield>
+      <rdawd:P10088>Zentralblatt für Bakteriologie Parasitenkunde Infektionskrankheiten und Hygiene</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test60exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test60wor"/>
+      <rdaed:P20002>245-test60exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test60man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test60exp"/>
+      <fake:marcfield>F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. $n 1. Abt. Originale. $n Reihe B, $p Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</fake:marcfield>
+      <rdamd:P30134>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene, 1. Abt. Originale, Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</rdamd:P30134>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test61wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test61wor</rdawd:P10002>
+      <fake:marcfield>F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. $n 1. Abt. Originale. $n Reihe B, $p Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</fake:marcfield>
+      <rdawd:P10088>Zentralblatt für Bakteriologie Parasitenkunde Infektionskrankheiten und Hygiene</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test61exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test61wor"/>
+      <rdaed:P20002>245-test61exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test61man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test61exp"/>
+      <fake:marcfield>F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. $n 1. Abt. Originale. $n Reihe B, $p Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</fake:marcfield>
+      <rdamd:P30134>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene, 1. Abt. Originale, Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</rdamd:P30134>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test62wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test62wor</rdawd:P10002>
+      <fake:marcfield>F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene $n 1. Abt. Originale $n Reihe B $p Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</fake:marcfield>
+      <rdawd:P10088>Zentralblatt für Bakteriologie Parasitenkunde Infektionskrankheiten und Hygiene</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test62exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test62wor"/>
+      <rdaed:P20002>245-test62exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test62man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test62exp"/>
+      <fake:marcfield>F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene $n 1. Abt. Originale $n Reihe B $p Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</fake:marcfield>
+      <rdamd:P30134>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene, 1. Abt. Originale, Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</rdamd:P30134>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test63wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test63wor</rdawd:P10002>
+      <fake:marcfield>F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. $n 1. Abt. Originale $n Reihe B, $p Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</fake:marcfield>
+      <rdawd:P10088>Zentralblatt für Bakteriologie Parasitenkunde Infektionskrankheiten und Hygiene</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test63exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test63wor"/>
+      <rdaed:P20002>245-test63exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test63man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test63exp"/>
+      <fake:marcfield>F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. $n 1. Abt. Originale $n Reihe B, $p Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</fake:marcfield>
+      <rdamd:P30134>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene, 1. Abt. Originale, Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</rdamd:P30134>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test64wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test64wor</rdawd:P10002>
+      <fake:marcfield>F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene $n 1. Abt. Originale $n Reihe B $p Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</fake:marcfield>
+      <rdawd:P10088>Zentralblatt für Bakteriologie Parasitenkunde Infektionskrankheiten und Hygiene</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test64exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test64wor"/>
+      <rdaed:P20002>245-test64exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test64man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test64exp"/>
+      <fake:marcfield>F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene $n 1. Abt. Originale $n Reihe B $p Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</fake:marcfield>
+      <rdamd:P30134>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene, 1. Abt. Originale, Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</rdamd:P30134>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test65wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test65wor</rdawd:P10002>
+      <fake:marcfield>F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene:  $n 1. Abt. Originale: $n Reihe B: $p Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</fake:marcfield>
+      <rdawd:P10088>Zentralblatt für Bakteriologie Parasitenkunde Infektionskrankheiten und Hygiene </rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test65exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test65wor"/>
+      <rdaed:P20002>245-test65exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test65man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test65exp"/>
+      <fake:marcfield>F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene:  $n 1. Abt. Originale: $n Reihe B: $p Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</fake:marcfield>
+      <rdamd:P30134>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene: , 1. Abt. Originale, Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</rdamd:P30134>
+   </rdf:Description>
+</rdf:RDF>
