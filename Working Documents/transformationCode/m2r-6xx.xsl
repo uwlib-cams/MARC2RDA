@@ -433,7 +433,7 @@
             <xsl:if test="@ind2 != '4'">
                 <xsl:for-each select="marc:subfield[@code = 'z']">
                     <rdf:Description rdf:about="{uwf:placeIRI(.)}">
-                        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+                        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
                         <rdapo:P70045 rdf:resource="{uwf:nomenIRI(., 'pla/nom')}"/>
                     </rdf:Description>
                 </xsl:for-each>
@@ -673,7 +673,7 @@
             <xsl:if test="@ind2 != '4'">
                 <xsl:for-each select="marc:subfield[@code = 'z']">
                     <rdf:Description rdf:about="{uwf:placeIRI(.)}">
-                        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+                        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
                         <rdapo:P70045 rdf:resource="{uwf:nomenIRI(., 'pla/nom')}"/>
                     </rdf:Description>
                 </xsl:for-each>
@@ -711,7 +711,7 @@
                 </xsl:for-each>
                 <xsl:for-each select="marc:subfield[@code = 'z']">
                     <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom')}">
-                        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+                        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                         <rdand:P80068>
                             <xsl:value-of select="."/>
                         </rdand:P80068>
@@ -816,7 +816,7 @@
         mode="pla">
         <xsl:if test="@ind2 != '4'">
             <rdf:Description rdf:about="{uwf:placeIRI(.)}">
-                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
                 <rdapo:P70045 rdf:resource="{uwf:nomenIRI(., 'pla/nom')}"/>
             </rdf:Description>
         </xsl:if>
@@ -1038,5 +1038,71 @@
             </xsl:if>
         </xsl:if>
     </xsl:template>
+    
+    <!-- 662 - Subject Added Entry - Hierarchical Place Name-->
+    
+    <xsl:template
+        match="marc:datafield[@tag = '662']"
+        mode="wor">
+        <xsl:call-template name="getmarc"/>
+        <xsl:variable name="prefLabel">
+            <xsl:call-template name="F662-label"/>
+        </xsl:variable>
+        <xsl:call-template name="F6XX-subject">
+            <xsl:with-param name="prefLabel" select="$prefLabel"/>
+        </xsl:call-template>
+        <xsl:choose>
+            <xsl:when test="not(marc:subfield[@code = '2'])">
+                <rdawd:P10321>
+                    <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                </rdawd:P10321>
+            </xsl:when>
+            <xsl:otherwise>
+                <rdawo:P10321 rdf:resource="{uwf:placeIRI(.)}"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    <xsl:template match="marc:datafield[@tag = '662']"
+        mode="con" expand-text="yes">
+        <xsl:variable name="prefLabel">
+            <xsl:call-template name="F662-label"/>
+        </xsl:variable>
+        <xsl:if test="starts-with(uwf:subjectIRI(., uwf:getSubjectSchemeCode(.), $prefLabel), 'http://marc2rda.edu')">
+            <xsl:if test="marc:subfield[@code = '2']">
+                <rdf:Description rdf:about="{uwf:conceptIRI(uwf:getSubjectSchemeCode(.), $prefLabel)}">
+                    <xsl:copy-of select="uwf:fillConcept($prefLabel, uwf:getSubjectSchemeCode(.), '', @tag)"/>
+                </rdf:Description>
+            </xsl:if>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template match="marc:datafield[@tag = '662']"
+        mode="pla">
+        <xsl:if test="marc:subfield[@code = '2']">
+            <rdf:Description rdf:about="{uwf:placeIRI(.)}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+                <rdapo:P70045 rdf:resource="{uwf:nomenIRI(., 'pla/nom')}"/>
+            </rdf:Description>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template
+        match="marc:datafield[@tag = '662']"
+        mode="nom" expand-text="yes">
+        <xsl:variable name="prefLabel">
+            <xsl:call-template name="F662-label"/>
+        </xsl:variable>
+        <xsl:if test="starts-with(uwf:subjectIRI(., uwf:getSubjectSchemeCode(.), $prefLabel), 'http://marc2rda.edu')">
+            <xsl:if test="marc:subfield[@code = '2']">
+                <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom')}">
+                    <rdf:type rdf:resource="httsp://rdaregistry.info/Elements/c/C10012"/>
+                    <rdand:P80068>
+                        <xsl:value-of select="$prefLabel"/>
+                    </rdand:P80068>
+                    <xsl:copy-of select="uwf:s2Nomen(marc:subfield[@code = '2'])"/>
+                </rdf:Description>
+            </xsl:if>
+        </xsl:if>
+    </xsl:template>
+    
+    
 </xsl:stylesheet>
 
