@@ -161,26 +161,26 @@
         <xsl:if test="@ind1 = '4'">
             <xsl:text>Motivation/interest level: </xsl:text>
         </xsl:if>
-        <xsl:if test="@ind1 = '#'">
-            <xsl:text>Target audience note:</xsl:text>
+        <xsl:if test="@ind1 = ' '">
+            <xsl:text>Audience: </xsl:text>
         </xsl:if>
         <xsl:if test="@ind1 = '8'">
-            <xsl:text>Target audience note:</xsl:text>
+            <xsl:text>Audience: </xsl:text>
         </xsl:if>
-        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = '3']">
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']">
             <xsl:if test="@code = 'a'">
                 <xsl:text>{.}</xsl:text>
             </xsl:if>
             <xsl:if test="@code = 'b'">
                 <xsl:text>According to: {.}</xsl:text>
             </xsl:if>
-            <xsl:if test="@code = '3'">
-                <xsl:text>(Applies to: {.})</xsl:text>
-            </xsl:if>
             <xsl:if test="position() != last()">
                 <xsl:text>; </xsl:text>
             </xsl:if>
         </xsl:for-each>
+        <xsl:if test="marc:subfield[@code = '3']">
+            <xsl:text> (Applies to: {marc:subfield[@code = '3']})</xsl:text>
+        </xsl:if>
     </xsl:template>
     
     <!-- 526 -->

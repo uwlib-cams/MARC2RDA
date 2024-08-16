@@ -12,7 +12,8 @@
             <marc:subfield code="3">Customized footage and curricula</marc:subfield>
         </marc:datafield>
         
-        <marc:datafield tag="521" ind1="3" ind2=" ">
+        <marc:datafield tag="521" ind1="2" ind2=" ">
+            <marc:subfield code="a">Grades 2-3.</marc:subfield>
             <marc:subfield code="3">Customized footage and curricula</marc:subfield>
         </marc:datafield>
         
