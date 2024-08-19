@@ -167,13 +167,13 @@
     <xsl:template name="F6XX-xx-y">
         <xsl:param name="prefLabel"/>
         <xsl:choose>
-            <xsl:when test="@ind2 = '4'">
+            <xsl:when test="../@ind2 = '4'">
                 <rdawd:P10322>
                     <xsl:value-of select="$prefLabel"/>
                 </rdawd:P10322>
             </xsl:when>
             <xsl:otherwise>
-                <rdawo:P10322 rdf:resource="{uwf:timespanIRI(., $prefLabel)}"/>
+                <rdawo:P10322 rdf:resource="{uwf:yTimespanIRI(.., ., $prefLabel)}"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -183,13 +183,13 @@
     <xsl:template name="F6XX-xx-z">
         <xsl:param name="prefLabel"/>
         <xsl:choose>
-            <xsl:when test="@ind2 = '4'">
+            <xsl:when test="../@ind2 = '4'">
                 <rdawd:P10321>
                     <xsl:value-of select="$prefLabel"/>
                 </rdawd:P10321>
             </xsl:when>
             <xsl:otherwise>
-                <rdawo:P10321 rdf:resource="{uwf:placeIRI(., $prefLabel)}"/>
+                <rdawo:P10321 rdf:resource="{uwf:zPlaceIRI(.., ., $prefLabel)}"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
