@@ -433,7 +433,7 @@
         <xsl:value-of select="translate(substring($normalString, string-length($normalString)), ',', '')"/>
     </xsl:function>
     
-    <xsl:function name="uwf:stripConceptPunctuation">
+    <xsl:function name="uwf:stripAllPunctuation">
         <xsl:param name="conceptString"/>
         <xsl:value-of select="lower-case($conceptString) => translate(' ', '') => replace('[\p{P}]', '')"/>
     </xsl:function>

@@ -25,14 +25,21 @@
     xmlns:uwmisc="http://uw.edu/all-purpose-namespace/" exclude-result-prefixes="marc ex uwf"
     version="3.0">
     <xsl:import href="m2r-functions.xsl"/>
+    <xsl:import href="m2r-relators.xsl"/>
     
     <!-- returns an IRI for an entity -->
     
     <xsl:function name="uwf:agentIRI">
         <xsl:param name="field"/>
+        <xsl:variable name="ap">
+            <xsl:value-of select="uwf:agentAccessPoint($field)"/>
+        </xsl:variable>
         <xsl:choose>
-            <!-- For a 1XX or 7XX, If $1, return value of $1, otherwise construct an IRI based on the access point -->
-            <xsl:when test="$field/marc:subfield[@code = '1'] and not(starts-with($field/@tag, '6'))">
+            <!-- For a 1XX or 7XX, or 6XX with only name part subfields - 
+                If $1, return value of $1, otherwise construct an IRI based on the access point -->
+            <xsl:when test="$field/marc:subfield[@code = '1'] and (not(starts-with($field/@tag, '6'))
+                or (starts-with($field/@tag, '6') and 
+                not($field/marc:subfield[@code = 'v' or @code = 'x' or @code = 'y' or @code = 'z'])))">
                 <xsl:choose>
                     <xsl:when test="count($field/marc:subfield[@code = '1']) > 1">
                         <xsl:value-of select="uwf:multiple1s($field)"/>
@@ -45,7 +52,17 @@
             <!-- not handling $0s yet -->
             <!-- otherwise it's an opaque IRI to avoid conflating different agents under one IRI -->
             <xsl:otherwise>
-                <xsl:value-of select="'http://marc2rda.edu/fake/age/'||generate-id($field)"/>
+                <xsl:choose>
+                    <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4')">
+                        <xsl:value-of select="'http://marc2rda.edu/fake/age/'||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                    </xsl:when>
+                    <xsl:when test="not(starts-with($field/@tag, '6')) and $field/marc:subfield[@code = '2']">
+                        <xsl:value-of select="'http://marc2rda.edu/fake/age/'||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2']), ' ', ''))||'/'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="'http://marc2rda.edu/fake/age/'||generate-id($field)"/>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
@@ -53,9 +70,15 @@
     
     <xsl:function name="uwf:relWorkIRI">
         <xsl:param name="field"/>
+        <xsl:variable name="ap">
+            <xsl:value-of select="uwf:relWorkAccessPoint($field)"/>
+        </xsl:variable>
         <xsl:choose>
-            <!-- For a 1XX or 7XX, If $1, return value of $1, otherwise construct an IRI based on the access point -->
-            <xsl:when test="$field/marc:subfield[@code = '1'] and not(starts-with($field/@tag, '6'))">
+            <!-- For a 1XX or 7XX or 6XX and only name/title subfields - 
+                If $1, return value of $1, otherwise construct an IRI based on the access point -->
+            <xsl:when test="$field/marc:subfield[@code = '1'] and (not(starts-with($field/@tag, '6'))
+                or (starts-with($field/@tag, '6') and 
+                not($field/marc:subfield[@code = 'v' or @code = 'x' or @code = 'y' or @code = 'z'])))">
                 <xsl:choose>
                     <xsl:when test="count($field/marc:subfield[@code = '1']) > 1">
                         <xsl:value-of select="uwf:multiple1s($field)"/>
@@ -68,12 +91,23 @@
             <!-- not handling $0s yet -->
             <!-- otherwise it's an opaque IRI to avoid conflating different works under one IRI -->
             <xsl:otherwise>
-                <xsl:value-of select="'http://marc2rda.edu/fake/wor/'||generate-id($field)"/>
+                <xsl:choose>
+                    <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4')">
+                        <xsl:value-of select="'http://marc2rda.edu/fake/wor/'||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                    </xsl:when>
+                    <xsl:when test="not(starts-with($field/@tag, '6')) and $field/marc:subfield[@code = '2']">
+                        <xsl:value-of select="'http://marc2rda.edu/fake/wor/'||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2']), ' ', ''))||'/'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="'http://marc2rda.edu/fake/wor/'||generate-id($field)"/>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
     
-    <!-- This is a placeholder for handling multiple $1 values, it currently returns the first $1 value -->
+    <!-- This is a placeholder for handling multiple $1 values, it currently returns the first $1 value.
+         In the future it will return the preferred $1 value -->
     <xsl:function name="uwf:multiple1s">
         <xsl:param name="field"/>
         <xsl:value-of select="$field/marc:subfield[@code = '1'][1]"/>
@@ -89,19 +123,41 @@
     <!-- don't forget about subjects - where $1 is not for the timespan but for the whole subject -->
     <xsl:function name="uwf:timespanIRI">
         <xsl:param name="field"/>
-        <xsl:value-of select="'http://marc2rda.edu/fake/timespan/'||generate-id($field)"/>
+        <xsl:param name="ap"/>
+        <xsl:choose>
+            <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4')">
+                <xsl:value-of select="'http://marc2rda.edu/fake/timespan/'||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+            </xsl:when>
+            <xsl:when test="not(starts-with($field/@tag, '6')) and $field/marc:subfield[@code = '2']">
+                <xsl:value-of select="'http://marc2rda.edu/fake/timespan/'||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2']), ' ', ''))||'/'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="'http://marc2rda.edu/fake/timespan/'||generate-id($field)"/>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:function>
     
     <xsl:function name="uwf:placeIRI">
         <xsl:param name="field"/>
-        <xsl:value-of select="'http://marc2rda.edu/fake/place/'||generate-id($field)"/>
+        <xsl:param name="ap"/>
+        <xsl:choose>
+            <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4')">
+                <xsl:value-of select="'http://marc2rda.edu/fake/place/'||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+            </xsl:when>
+            <xsl:when test="not(starts-with($field/@tag, '6')) and $field/marc:subfield[@code = '2']">
+                <xsl:value-of select="'http://marc2rda.edu/fake/place/'||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2']), ' ', ''))||'/'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="'http://marc2rda.edu/fake/place/'||generate-id($field)"/>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:function>
     
     <!-- return an IRI for a concept generated from the scheme and the provided value -->
     <xsl:function name="uwf:conceptIRI">
         <xsl:param name="scheme"/>
         <xsl:param name="value"/>
-        <xsl:value-of select="'http://marc2rda.edu/fake/concept/'||encode-for-uri(translate(lower-case($scheme), ' ', ''))||'/'||encode-for-uri(uwf:stripConceptPunctuation($value))"/>
+        <xsl:value-of select="'http://marc2rda.edu/fake/concept/'||encode-for-uri(translate(lower-case($scheme), ' ', ''))||'/'||encode-for-uri(uwf:stripAllPunctuation($value))"/>
     </xsl:function>
 
     <xsl:function name="uwf:subjectIRI">
@@ -130,7 +186,7 @@
                             <xsl:when test="$processed0">
                                 <xsl:value-of select="$processed0"/>
                             </xsl:when>
-                            <!-- if IRI can't be retrieved, generate opaque -->
+                            <!-- if IRI can't be retrieved use concept IRI -->
                             <xsl:otherwise>
                                 <xsl:value-of select="uwf:conceptIRI($scheme, $value)"/>
                             </xsl:otherwise>
@@ -145,7 +201,7 @@
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
-            <!-- otherwise it's an opaque IRI to avoid conflating different agents under one IRI -->
+            <!-- otherwise use concept IRI based on scheme and prefLabel -->
             <xsl:otherwise>
                 <xsl:value-of select="uwf:conceptIRI($scheme, $value)"/>
             </xsl:otherwise>

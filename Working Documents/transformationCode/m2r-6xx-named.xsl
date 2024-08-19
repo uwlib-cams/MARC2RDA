@@ -173,7 +173,7 @@
                 </rdawd:P10322>
             </xsl:when>
             <xsl:otherwise>
-                <rdawo:P10322 rdf:resource="{uwf:timespanIRI(.)}"/>
+                <rdawo:P10322 rdf:resource="{uwf:timespanIRI(., $prefLabel)}"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -189,7 +189,7 @@
                 </rdawd:P10321>
             </xsl:when>
             <xsl:otherwise>
-                <rdawo:P10321 rdf:resource="{uwf:placeIRI(.)}"/>
+                <rdawo:P10321 rdf:resource="{uwf:placeIRI(., $prefLabel)}"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
