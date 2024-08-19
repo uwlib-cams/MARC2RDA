@@ -36,8 +36,10 @@
       <fake:marcfield>F650 #0 $a Personals $x Computer simulation.</fake:marcfield>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/personalscomputersimulation"/>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/computersimulation"/>
-      <fake:marcfield>F650 #4 $a Personals $v Poetry.</fake:marcfield>
-      <rdawd:P10256>Personals -- Poetry.</rdawd:P10256>
+      <fake:marcfield>F650 #4 $a Personals $v Poetry. $y 2000</fake:marcfield>
+      <rdawd:P10256>Personals -- Poetry. -- 2000</rdawd:P10256>
+      <rdawd:P10256>2000</rdawd:P10256>
+      <rdawd:P10322>2000</rdawd:P10322>
       <rdawd:P10004>Poetry.</rdawd:P10004>
       <fake:marcfield>F650 #0 $a Online dating $v Poetry.</fake:marcfield>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/onlinedatingpoetry"/>
@@ -72,18 +74,18 @@
       <fake:marcfield>F650 #0 $a Barren ground caribou populations $x Estimates $z Nunavut $z Bathurst Inlet Region.</fake:marcfield>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/barrengroundcariboupopulationsestimatesnunavutbathurstinletregion"/>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/estimatesnunavutbathurstinletregion"/>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/d19e107"/>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/d19e109"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/nunavut"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/bathurstinletregion"/>
       <fake:marcfield>F650 #0 $a Caribou calving grounds $z Nunavut $z Bathurst Inlet Region.</fake:marcfield>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/cariboucalvinggroundsnunavutbathurstinletregion"/>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/nunavutbathurstinletregion"/>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/d19e114"/>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/d19e116"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/nunavut"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/bathurstinletregion"/>
       <fake:marcfield>F650 #0 $a Democracy $z Turkey $x History $y 20th century $v Chronology.</fake:marcfield>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/democracyturkeyhistory20thcenturychronology"/>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/turkeyhistory20thcentury"/>
-      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/d19e125"/>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/d19e121"/>
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/lcsh/20thcentury"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/turkey"/>
       <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/chronology"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1exp">
@@ -95,33 +97,33 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/6xx-test1exp"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d19e107">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdand:P80068>Nunavut</rdand:P80068>
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d19e109">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdand:P80068>Bathurst Inlet Region.</rdand:P80068>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Nunavut</rdand:P80068>
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d19e114">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdand:P80068>Nunavut</rdand:P80068>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d19e111">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Bathurst Inlet Region.</rdand:P80068>
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d19e116">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Nunavut</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d19e118">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Bathurst Inlet Region.</rdand:P80068>
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/d19e125">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/d19e127">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>20th century</rdand:P80068>
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d19e121">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d19e123">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Turkey</rdand:P80068>
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
@@ -230,28 +232,28 @@
       <skos:prefLabel>Chronology.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/d19e107">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/d19e107"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/d19e109">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/nunavut">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
       <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/d19e109"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/d19e114">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/d19e114"/>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/bathurstinletregion">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/d19e111"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/d19e116">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/nunavut">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
       <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/d19e116"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/d19e121">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/d19e121"/>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/bathurstinletregion">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/d19e118"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/d19e125">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/turkey">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/d19e123"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/lcsh/20thcentury">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
-      <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/tim/nom/d19e125"/>
+      <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/tim/nom/d19e127"/>
    </rdf:Description>
 </rdf:RDF>

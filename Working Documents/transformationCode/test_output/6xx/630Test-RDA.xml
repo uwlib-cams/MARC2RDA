@@ -35,17 +35,14 @@
       <rdawd:P10002>6xx-test1wor</rdawd:P10002>
       <fake:marcfield>F630 00 $a Bible. $p Old Testament. $l Greek $x Versions $x Septuagint.</fake:marcfield>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/bibleoldtestamentgreekversionsseptuagint"/>
-      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/wor/d19e6"/>
+      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/wor/lcsh/bibleoldtestament"/>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/versionsseptuagint"/>
       <fake:marcfield>F630 07 $a Bible $p Philemonbrief $2 gnd</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/gnd/biblephilemonbrief"/>
-      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/wor/d19e17"/>
+      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/wor/gnd/biblephilemonbrief"/>
       <fake:marcfield>F630 00 $a Old town road (Song)</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/oldtownroadsong"/>
-      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/wor/d19e24"/>
+      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/wor/lcsh/oldtownroadsong"/>
       <fake:marcfield>F630 07 $a Health Information Technology for Economic and Clinical Health Act (United States) $2 fast $0 (OCoLC)fst01937910</fake:marcfield>
-      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01937910"/>
-      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/wor/d19e27"/>
+      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/wor/fast/healthinformationtechnologyforeconomicandclinicalhealthactunitedstates"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -76,25 +73,25 @@
       <rdand:P80068>Health Information Technology for Economic and Clinical Health Act (United States)</rdand:P80068>
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/d19e6">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/lcsh/bibleoldtestament">
       <fake:marcfield>F630 00 $a Bible. $p Old Testament. $l Greek $x Versions $x Septuagint.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>d19e6wor</rdawd:P10002>
       <rdawo:P10331 rdf:resource="http://marc2rda.edu/fake/wor/nom/d19e6"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/d19e17">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/gnd/biblephilemonbrief">
       <fake:marcfield>F630 07 $a Bible $p Philemonbrief $2 gnd</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>d19e17wor</rdawd:P10002>
       <rdawo:P10331 rdf:resource="http://marc2rda.edu/fake/wor/nom/d19e17"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/d19e24">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/lcsh/oldtownroadsong">
       <fake:marcfield>F630 00 $a Old town road (Song)</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>d19e24wor</rdawd:P10002>
       <rdawo:P10331 rdf:resource="http://marc2rda.edu/fake/wor/nom/d19e24"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/d19e27">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/fast/healthinformationtechnologyforeconomicandclinicalhealthactunitedstates">
       <fake:marcfield>F630 07 $a Health Information Technology for Economic and Clinical Health Act (United States) $2 fast $0 (OCoLC)fst01937910</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>d19e27wor</rdawd:P10002>
