@@ -48,49 +48,34 @@
         <xsl:param name="field"/>
         <xsl:choose>
             <xsl:when test="$field/@tag = '100' or $field/@tag = '600' or $field/@tag = '700'">
-                <xsl:for-each select="$field/marc:subfield[@code = 'a'] | $field/marc:subfield[@code = 'b'] | $field/marc:subfield[@code = 'c']
+                <xsl:variable name="ap">
+                    <xsl:value-of select="$field/marc:subfield[@code = 'a'] | $field/marc:subfield[@code = 'b'] | $field/marc:subfield[@code = 'c']
                     | $field/marc:subfield[@code = 'd'] | $field/marc:subfield[@code = 'j'] | $field/marc:subfield[@code = 'q']
-                    | $field/marc:subfield[@code = 'u'] | $field/marc:subfield[@code = 'g'][not(preceding-sibling::marc:subfield[@code='t'])]">
-                    <xsl:choose>
-                        <xsl:when test="position() != last()">
-                            <xsl:text>{.} </xsl:text>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:for-each>
+                    | $field/marc:subfield[@code = 'u'] | $field/marc:subfield[@code = 'g'][not(preceding-sibling::marc:subfield[@code='t'])]"
+                    separator=" "/>
+                </xsl:variable>
+                <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
             </xsl:when>
             <xsl:when test="$field/@tag = '720'">
-                <xsl:value-of select="$field/marc:subfield[@code = 'a']"/>
+                <xsl:value-of select="uwf:stripEndPunctuation($field/marc:subfield[@code = 'a'])"/>
             </xsl:when>
             <xsl:when test="$field/@tag = '110' or $field/@tag = '610' or $field/@tag = '710'">
-                <xsl:for-each select="$field/marc:subfield[@code = 'a'] | $field/marc:subfield[@code = 'b'] | $field/marc:subfield[@code = 'c']
-                    | $field/marc:subfield[@code = 'u'] | $field/marc:subfield[@code = 'd'][not(preceding-sibling::marc:subfield[@code='t'])]
-                    | $field/marc:subfield[@code = 'g'][not(preceding-sibling::marc:subfield[@code='t'])] | $field/marc:subfield[@code = 'n'][not(preceding-sibling::marc:subfield[@code='t'])]">
-                    <xsl:choose>
-                        <xsl:when test="position() != last()">
-                            <xsl:text>{.} </xsl:text>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:for-each>
+                <xsl:variable name="ap">
+                    <xsl:value-of select="$field/marc:subfield[@code = 'a'] | $field/marc:subfield[@code = 'b'] | $field/marc:subfield[@code = 'c']
+                        | $field/marc:subfield[@code = 'u'] | $field/marc:subfield[@code = 'd'][not(preceding-sibling::marc:subfield[@code='t'])]
+                        | $field/marc:subfield[@code = 'g'][not(preceding-sibling::marc:subfield[@code='t'])] | $field/marc:subfield[@code = 'n'][not(preceding-sibling::marc:subfield[@code='t'])]"
+                    separator=" "/>
+                </xsl:variable>
+                <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
             </xsl:when>
             <xsl:when test="$field/@tag = '111' or $field/@tag = '611' or $field/@tag = '711'">
-                <xsl:for-each select="$field/marc:subfield[@code = 'a']  | $field/marc:subfield[@code = 'c'] | $field/marc:subfield[@code = 'e'] | $field/marc:subfield[@code = 'q']
-                    | $field/marc:subfield[@code = 'u'] | $field/marc:subfield[@code = 'd'][not(preceding-sibling::marc:subfield[@code='t'])]
-                    | $field/marc:subfield[@code = 'g'][not(preceding-sibling::marc:subfield[@code='t'])] | $field/marc:subfield[@code = 'n'][not(preceding-sibling::marc:subfield[@code='t'])]">
-                    <xsl:choose>
-                        <xsl:when test="position() != last()">
-                            <xsl:text>{.} </xsl:text>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:for-each>
+                <xsl:variable name="ap">
+                    <xsl:value-of select="$field/marc:subfield[@code = 'a']  | $field/marc:subfield[@code = 'c'] | $field/marc:subfield[@code = 'e'] | $field/marc:subfield[@code = 'q']
+                        | $field/marc:subfield[@code = 'u'] | $field/marc:subfield[@code = 'd'][not(preceding-sibling::marc:subfield[@code='t'])]
+                        | $field/marc:subfield[@code = 'g'][not(preceding-sibling::marc:subfield[@code='t'])] | $field/marc:subfield[@code = 'n'][not(preceding-sibling::marc:subfield[@code='t'])]"
+                        separator=" "/>
+                </xsl:variable>
+                <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
             </xsl:when>
         </xsl:choose>
     </xsl:function>
