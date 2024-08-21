@@ -33,16 +33,11 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>6xx-test1wor</rdawd:P10002>
-      <fake:marcfield>F630 00 $a Bible. $p Old Testament. $l Greek $x Versions $x Septuagint.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/bibleoldtestamentgreekversionsseptuagint"/>
-      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/wor/lcsh/bibleoldtestament"/>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/versionsseptuagint"/>
-      <fake:marcfield>F630 07 $a Bible $p Philemonbrief $2 gnd</fake:marcfield>
-      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/wor/gnd/biblephilemonbrief"/>
-      <fake:marcfield>F630 00 $a Old town road (Song)</fake:marcfield>
-      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/wor/lcsh/oldtownroadsong"/>
-      <fake:marcfield>F630 07 $a Health Information Technology for Economic and Clinical Health Act (United States) $2 fast $0 (OCoLC)fst01937910</fake:marcfield>
-      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/wor/fast/healthinformationtechnologyforeconomicandclinicalhealthactunitedstates"/>
+      <fake:marcfield>F630 06 $a Bible $x Lecture $z Angleterre $x Histoire.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/biblelectureangleterrehistoire"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/lectureangleterrehistoire"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/rvm/angleterre"/>
+      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/wor/rvm/bible"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -53,68 +48,33 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/6xx-test1exp"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/nom/d19e6">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/nom/rvm/bible">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Bible. Old Testament.</rdand:P80068>
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+      <rdand:P80068>Bible</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/nom/d19e17">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/angleterre">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Bible Philemonbrief</rdand:P80068>
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gnd"/>
+      <rdand:P80068>Angleterre</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/nom/d19e24">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Old town road (Song)</rdand:P80068>
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/nom/d19e27">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Health Information Technology for Economic and Clinical Health Act (United States)</rdand:P80068>
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/lcsh/bibleoldtestament">
-      <fake:marcfield>F630 00 $a Bible. $p Old Testament. $l Greek $x Versions $x Septuagint.</fake:marcfield>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/rvm/bible">
+      <fake:marcfield>F630 06 $a Bible $x Lecture $z Angleterre $x Histoire.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>d19e6wor</rdawd:P10002>
-      <rdawo:P10331 rdf:resource="http://marc2rda.edu/fake/wor/nom/d19e6"/>
+      <rdawo:P10331 rdf:resource="http://marc2rda.edu/fake/wor/nom/rvm/bible"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/gnd/biblephilemonbrief">
-      <fake:marcfield>F630 07 $a Bible $p Philemonbrief $2 gnd</fake:marcfield>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>d19e17wor</rdawd:P10002>
-      <rdawo:P10331 rdf:resource="http://marc2rda.edu/fake/wor/nom/d19e17"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/lcsh/oldtownroadsong">
-      <fake:marcfield>F630 00 $a Old town road (Song)</fake:marcfield>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>d19e24wor</rdawd:P10002>
-      <rdawo:P10331 rdf:resource="http://marc2rda.edu/fake/wor/nom/d19e24"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/fast/healthinformationtechnologyforeconomicandclinicalhealthactunitedstates">
-      <fake:marcfield>F630 07 $a Health Information Technology for Economic and Clinical Health Act (United States) $2 fast $0 (OCoLC)fst01937910</fake:marcfield>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>d19e27wor</rdawd:P10002>
-      <rdawo:P10331 rdf:resource="http://marc2rda.edu/fake/wor/nom/d19e27"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/bibleoldtestamentgreekversionsseptuagint">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/biblelectureangleterrehistoire">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Bible. -- Old Testament. -- Greek -- Versions -- Septuagint.</skos:prefLabel>
-      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+      <skos:prefLabel>Bible -- Lecture -- Angleterre -- Histoire.</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/versionsseptuagint">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/lectureangleterrehistoire">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Versions -- Septuagint.</skos:prefLabel>
-      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+      <skos:prefLabel>Lecture -- Angleterre -- Histoire.</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/gnd/biblephilemonbrief">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Bible -- Philemonbrief</skos:prefLabel>
-      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gnd"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/oldtownroadsong">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Old town road (Song)</skos:prefLabel>
-      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/rvm/angleterre">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/angleterre"/>
    </rdf:Description>
 </rdf:RDF>
