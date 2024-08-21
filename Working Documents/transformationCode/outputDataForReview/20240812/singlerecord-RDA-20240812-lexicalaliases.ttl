@@ -79,13 +79,7 @@ ex:1400208651wor a <http://rdaregistry.info/Elements/c/Work.en> ;
     rdawd:yearDegreeGranted.en "2022" ;
     rdawo:authorPerson.en <https://orcid.org/0009-0002-6426-7532> ;
     rdawo:degreeSupervisor.en <http://www.wikidata.org/entity/Q107956183> ;
-    rdawo:subjectPlace.en <http://marc2rda.edu/fake/place/d19e134>,
-        <http://marc2rda.edu/fake/place/d19e143>,
-        <http://marc2rda.edu/fake/place/d19e148>,
-        <http://marc2rda.edu/fake/place/d19e157>,
-        <http://marc2rda.edu/fake/place/d19e169>,
-        <http://marc2rda.edu/fake/place/d19e174>,
-        <http://marc2rda.edu/fake/place/d19e179> ;
+    rdawo:subjectPlace.en <http://marc2rda.edu/fake/place/lcsh/unitedstates> ;
     rdaw:subject.en <http://marc2rda.edu/fake/concept/lcsh/criticalracetheory>,
         <http://marc2rda.edu/fake/concept/lcsh/educationhigherunitedstates>,
         <http://marc2rda.edu/fake/concept/lcsh/englishlanguagestudyandteachingcontinuingeducationspanishspeakers>,
@@ -168,54 +162,13 @@ ex:1400208651wor a <http://rdaregistry.info/Elements/c/Work.en> ;
     rdand:nomenString.en "1773/49194" ;
     rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/identifiers/hdl> .
 
-<http://marc2rda.edu/fake/pla/nom/d19e134> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "United States" ;
+<http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+    rdand:nomenString.en "United States",
+        "United States." ;
     rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
 
-<http://marc2rda.edu/fake/pla/nom/d19e143> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "United States." ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
-
-<http://marc2rda.edu/fake/pla/nom/d19e148> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "United States" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
-
-<http://marc2rda.edu/fake/pla/nom/d19e157> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "United States." ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
-
-<http://marc2rda.edu/fake/pla/nom/d19e169> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "United States." ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
-
-<http://marc2rda.edu/fake/pla/nom/d19e174> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "United States." ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
-
-<http://marc2rda.edu/fake/pla/nom/d19e179> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "United States." ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
-
-<http://marc2rda.edu/fake/place/d19e134> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/d19e134> .
-
-<http://marc2rda.edu/fake/place/d19e143> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/d19e143> .
-
-<http://marc2rda.edu/fake/place/d19e148> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/d19e148> .
-
-<http://marc2rda.edu/fake/place/d19e157> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/d19e157> .
-
-<http://marc2rda.edu/fake/place/d19e169> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/d19e169> .
-
-<http://marc2rda.edu/fake/place/d19e174> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/d19e174> .
-
-<http://marc2rda.edu/fake/place/d19e179> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/d19e179> .
+<http://marc2rda.edu/fake/place/lcsh/unitedstates> a <http://rdaregistry.info/Elements/c/Place.en> ;
+    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates> .
 
 <http://www.wikidata.org/entity/Q107956183> a <http://rdaregistry.info/Elements/c/Person.en> ;
     fake:marcfield "F700 1# $a Ginorio, Angela B., $e degree supervisor. $1 http://www.wikidata.org/entity/Q107956183 $1 http://viaf.org/viaf/70643896" ;
