@@ -34,15 +34,31 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>6xx-test1wor</rdawd:P10002>
       <fake:marcfield>F648 #4 $a 2000</fake:marcfield>
-      <rdawd:P10322>2000</rdawd:P10322>
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/d19e6"/>
+      <fake:marcfield>F648 #7 $a 2014 $2 fast $1 http://fakeiri.edu/5678</fake:marcfield>
+      <rdawo:P10322 rdf:resource="http://fakeiri.edu/5678"/>
       <fake:marcfield>F648 #7 $a 1861-1865 $2 fast</fake:marcfield>
       <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/fast/18611865"/>
-      <fake:marcfield>F648 #7 $a Since 1875 $2 fast</fake:marcfield>
-      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/fast/since1875"/>
+      <fake:marcfield>F648 #7 $a Since 1875 $2 fast $1 http://fakeiri.edu/1234</fake:marcfield>
+      <rdawo:P10322 rdf:resource="http://fakeiri.edu/1234"/>
       <fake:marcfield>F648 #7 $a Geschichte. $2 gnd</fake:marcfield>
       <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/gnd/geschichte"/>
       <fake:marcfield>F648 #7 $a 1500-1600. $0 (NL-LeOCL)241923875 $2 gtt</fake:marcfield>
       <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/gtt/15001600"/>
+      <fake:marcfield>F648 #7 $a 1997 $v v $x x $y y $z z $2 fast</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/1997vxyz"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/xyz"/>
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/fast/y"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/fast/z"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/fast/v"/>
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/fast/1997"/>
+      <fake:marcfield>F648 #4 $a 1997 $v v $x x $y y $z z</fake:marcfield>
+      <rdawd:P10256>1997 -- v -- x -- y -- z</rdawd:P10256>
+      <rdawd:P10256>x -- y -- z</rdawd:P10256>
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/d19e60"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/d19e62"/>
+      <rdawd:P10004>v</rdawd:P10004>
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/d19e53"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -55,32 +71,47 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/d19e9">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>2014</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/fast/18611865">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>1861-1865</rdand:P80068>
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/d19e14">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/d19e21">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Since 1875</rdand:P80068>
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/d19e19">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/gnd/geschichte">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Geschichte.</rdand:P80068>
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gnd"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/d19e24">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/gtt/15001600">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>1500-1600.</rdand:P80068>
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gtt"/>
    </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/fast/1997">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>1997</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/fast/y">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>y</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/fast/z">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>z</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/18611865">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>1861-1865</skos:prefLabel>
-      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/since1875">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Since 1875</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/gnd/geschichte">
@@ -93,20 +124,67 @@
       <skos:prefLabel>1500-1600.</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gtt"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/fast/18611865">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/1997vxyz">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>1997 -- v -- x -- y -- z</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/xyz">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>x -- y -- z</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/v">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>v</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/fast/z">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/fast/z"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/d19e62">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapd:P70018>z</rdapd:P70018>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/d19e6">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+      <rdatd:P70015>2000</rdatd:P70015>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeiri.edu/5678">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
       <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/tim/nom/d19e9"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/fast/since1875">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/fast/18611865">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
-      <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/tim/nom/d19e14"/>
+      <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/tim/nom/fast/18611865"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeiri.edu/1234">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+      <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/tim/nom/d19e21"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/gnd/geschichte">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
-      <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/tim/nom/d19e19"/>
+      <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/tim/nom/gnd/geschichte"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/gtt/15001600">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
-      <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/tim/nom/d19e24"/>
+      <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/tim/nom/gtt/15001600"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/fast/1997">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+      <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/tim/nom/fast/1997"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/fast/y">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+      <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/tim/nom/fast/y"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/d19e53">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+      <rdatd:P70015>1997vxyz</rdatd:P70015>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/d19e60">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+      <rdatd:P70015>y</rdatd:P70015>
    </rdf:Description>
 </rdf:RDF>
