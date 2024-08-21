@@ -49,6 +49,9 @@
     <xsl:include href="m2r-4xx.xsl"/>
     <xsl:include href="m2r-5xx.xsl"/>
     <xsl:include href="m2r-6xx.xsl"/>
+
+    <!-- This template will append corresponding aggregate manifestations based on a sequential pattern matches -->
+    <!-- <xsl:include href="aggregate-manifestations.xsl"/> -->
     
     <!-- This template matches at the root
         It's only purpose is to apply-templates to the marc:collection -->
