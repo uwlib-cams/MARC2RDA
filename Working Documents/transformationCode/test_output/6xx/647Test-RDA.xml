@@ -39,6 +39,12 @@
       <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/02007190"/>
       <fake:marcfield>F647 #7 $a Cold War $d (1945-1989) $2 fast</fake:marcfield>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/coldwar19451989"/>
+      <fake:marcfield>F647 #7 $a Text vxyz $v v $x x $y y $z z $2 fast</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/textvxyzvxyz"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/xyz"/>
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/fast/y"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/fast/z"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/fast/v"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -49,9 +55,42 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/6xx-test1exp"/>
    </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/fast/y">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>y</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/fast/z">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>z</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/coldwar19451989">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Cold War -- (1945-1989)</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/textvxyzvxyz">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Text vxyz -- v -- x -- y -- z</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/xyz">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>x -- y -- z</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/v">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>v</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/fast/z">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/fast/z"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/fast/y">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+      <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/tim/nom/fast/y"/>
    </rdf:Description>
 </rdf:RDF>
