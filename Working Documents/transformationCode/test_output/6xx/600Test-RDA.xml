@@ -33,8 +33,9 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>6xx-test1wor</rdawd:P10002>
-      <fake:marcfield>F600 17 $a Bickford, Sarah Gammon, $d 1855-1931 $2 fast $0 (OCoLC)fst01583751</fake:marcfield>
-      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age/fast/bickfordsarahgammon18551931"/>
+      <fake:marcfield>F600 10 $a Romero, George A. $t Made up work $1 https://iriforthiswork.com/12345</fake:marcfield>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age/lcsh/romerogeorgea"/>
+      <rdawo:P10257 rdf:resource="https://iriforthiswork.com/12345"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -45,14 +46,25 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/6xx-test1exp"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/d19e14">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/lcsh/romerogeorgea">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Bickford, Sarah Gammon, 1855-1931</rdand:P80068>
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+      <rdand:P80068>Romero, George A.</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/fast/bickfordsarahgammon18551931">
-      <fake:marcfield>F600 17 $a Bickford, Sarah Gammon, $d 1855-1931 $2 fast $0 (OCoLC)fst01583751</fake:marcfield>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/nom/d19e26">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Romero, George A. Made up work</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/lcsh/romerogeorgea">
+      <fake:marcfield>F600 10 $a Romero, George A. $t Made up work $1 https://iriforthiswork.com/12345</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/d19e14"/>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/lcsh/romerogeorgea"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://iriforthiswork.com/12345">
+      <fake:marcfield>F600 10 $a Romero, George A. $t Made up work $1 https://iriforthiswork.com/12345</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10331 rdf:resource="http://marc2rda.edu/fake/wor/nom/d19e26"/>
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/lcsh/romerogeorgea"/>
    </rdf:Description>
 </rdf:RDF>
