@@ -7,7 +7,6 @@
 
     <!-- Template to identify different types of aggregate manifestations -->
     <xsl:template name="identify-collection-aggregate">
-        <!-- lower-case(), is exists() needed? maybe, matches() is regex -->
         <xsl:variable name="isCollectionAggregate" as="xs:boolean">
           <xsl:sequence select="
             marc:datafield[@tag='245']/marc:subfield[@code='h'][translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz') = 'graphic']
