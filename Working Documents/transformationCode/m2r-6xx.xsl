@@ -1243,12 +1243,19 @@
                 <xsl:with-param name="prefLabel" select="$prefLabel"/>
             </xsl:call-template>
             <xsl:if test="starts-with(uwf:subjectIRI(., uwf:getSubjectSchemeCode(.), $prefLabel), 'http://marc2rda.edu')">   
-                <xsl:call-template name="F6XX-xx-xyz"/>
-                <xsl:for-each select="marc:subfield[@code = 'y']">
-                    <xsl:call-template name="F6XX-xx-y">
-                        <xsl:with-param name="prefLabel" select="."/>
-                    </xsl:call-template>
-                </xsl:for-each>
+                <xsl:if test="marc:subfield[@code = 'x'] or marc:subfield[@code = 'y'] or marc:subfield[@code = 'z']">
+                    <xsl:call-template name="F6XX-xx-xyz"/>
+                    <xsl:for-each select="marc:subfield[@code = 'y']">
+                        <xsl:call-template name="F6XX-xx-y">
+                            <xsl:with-param name="prefLabel" select="."/>
+                        </xsl:call-template>
+                    </xsl:for-each>
+                    <xsl:for-each select="marc:subfield[@code = 'z']">
+                        <xsl:call-template name="F6XX-xx-z">
+                            <xsl:with-param name="prefLabel" select="."/>
+                        </xsl:call-template>
+                    </xsl:for-each>
+                </xsl:if>
                 <xsl:for-each select="marc:subfield[@code = 'v']">
                     <xsl:call-template name="F6XX-xx-v"/>
                 </xsl:for-each>
@@ -1287,28 +1294,57 @@
     </xsl:template>
     <xsl:template match="marc:datafield[@tag = '651'][marc:subfield[@code = 'y']]"
         mode="tim">
-        <xsl:if test="@ind2 != '4'">
-            <xsl:variable name="prefLabel">
-                <xsl:call-template name="F651-label"/>
-            </xsl:variable>
-            <xsl:variable name="scheme" select="uwf:getSubjectSchemeCode(.)"/>
-            <xsl:if test="starts-with(uwf:subjectIRI(., $scheme, $prefLabel), 'http://marc2rda.edu')">
-                    <xsl:for-each select="marc:subfield[@code = 'y']">
-                        <rdf:Description rdf:about="{uwf:yTimespanIRI(.., ., .)}">
-                            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
-                            <rdato:P70047 rdf:resource="{uwf:subjectNomenIRI(., 'tim/nom', $prefLabel, $scheme)}"/>
-                        </rdf:Description>
-                    </xsl:for-each>
-            </xsl:if>
+        <xsl:variable name="prefLabel">
+            <xsl:call-template name="F651-label"/>
+        </xsl:variable>
+        <xsl:variable name="scheme" select="uwf:getSubjectSchemeCode(.)"/>
+        <xsl:if test="starts-with(uwf:subjectIRI(., $scheme, $prefLabel), 'http://marc2rda.edu')">
+            <xsl:for-each select="marc:subfield[@code = 'y']">
+                <rdf:Description rdf:about="{uwf:yTimespanIRI(.., ., .)}">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+                    <xsl:choose>
+                        <xsl:when test="../@ind2 = '4'">
+                            <rdatd:P70015>
+                                <xsl:value-of select="."/>
+                            </rdatd:P70015>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <rdato:P70047 rdf:resource="{uwf:subjectNomenIRI(., 'tim/nom', ., $scheme)}"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </rdf:Description>
+            </xsl:for-each>
         </xsl:if>
     </xsl:template>
+    
     <xsl:template match="marc:datafield[@tag = '651']"
         mode="pla">
-        <xsl:if test="@ind2 != '4' and marc:subfield[@code = 'a']">
+        <xsl:variable name="prefLabel">
+            <xsl:call-template name="F651-label"/>
+        </xsl:variable>
+        <xsl:variable name="scheme" select="uwf:getSubjectSchemeCode(.)"/>
+        <xsl:if test="marc:subfield[@code = 'a']">
             <rdf:Description rdf:about="{uwf:placeIRI(.,  marc:subfield[@code = 'a'])}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-                <rdapo:P70045 rdf:resource="{uwf:subjectNomenIRI(., 'pla/nom', marc:subfield[@code = 'a'], uwf:getSubjectSchemeCode(.))}"/>
+                <rdapo:P70045 rdf:resource="{uwf:subjectNomenIRI(., 'pla/nom', marc:subfield[@code = 'a'], $scheme)}"/>
             </rdf:Description>
+        </xsl:if>
+        <xsl:if test="starts-with(uwf:subjectIRI(., $scheme, $prefLabel), 'http://marc2rda.edu')">
+            <xsl:for-each select="marc:subfield[@code = 'z']">
+                <rdf:Description rdf:about="{uwf:zPlaceIRI(.., ., .)}">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+                    <xsl:choose>
+                        <xsl:when test="../@ind2 = '4'">
+                            <rdapd:P70018>
+                                <xsl:value-of select="."/>
+                            </rdapd:P70018>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <rdapo:P70045 rdf:resource="{uwf:subjectNomenIRI(., 'pla/nom', ., $scheme)}"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </rdf:Description>
+            </xsl:for-each>
         </xsl:if>
     </xsl:template>
     <xsl:template
@@ -1318,7 +1354,17 @@
             <xsl:call-template name="F651-label"/>
         </xsl:variable>
         <xsl:variable name="scheme" select="uwf:getSubjectSchemeCode(.)"/>
-        <rdf:Description rdf:about="{uwf:subjectNomenIRI(., 'pla/nom', marc:subfield[@code = 'a'], $scheme)}">
+        <xsl:variable name="nomIRI">
+            <xsl:choose>
+                <xsl:when test="starts-with(uwf:placeIRI(., marc:subfield[@code = 'a']), 'http://marc2rda.edu')">
+                    <xsl:value-of select="uwf:subjectNomenIRI(., 'pla/nom', marc:subfield[@code = 'a'], $scheme)"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="uwf:nomenIRI(., 'pla/nom')"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <rdf:Description rdf:about="{$nomIRI}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
             <rdand:P80068>
                 <xsl:value-of select="marc:subfield[@code = 'a']"/>
@@ -1337,30 +1383,49 @@
                 </xsl:otherwise>
             </xsl:choose>
         </rdf:Description>
-        <xsl:if test="@ind2 != '4'">
-            <xsl:if test="starts-with(uwf:subjectIRI(., $scheme, $prefLabel), 'http://marc2rda.edu')"> 
-                    <xsl:for-each select="marc:subfield[@code = 'y']">
-                        <rdf:Description rdf:about="{uwf:subjectNomenIRI(., 'tim/nom', . , $scheme)}">
-                            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-                            <rdand:P80068>
-                                <xsl:value-of select="."/>
-                            </rdand:P80068>
+        <xsl:if test="starts-with(uwf:subjectIRI(., $scheme, $prefLabel), 'http://marc2rda.edu')"> 
+            <xsl:for-each select="marc:subfield[@code = 'y']">
+                <rdf:Description rdf:about="{uwf:subjectNomenIRI(., 'tim/nom', ., $scheme)}">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                    <rdand:P80068>
+                        <xsl:value-of select="."/>
+                    </rdand:P80068>
+                    <xsl:choose>
+                        <xsl:when test="../@ind2 = '7'">
                             <xsl:choose>
-                                <xsl:when test="@ind2 = '7'">
-                                    <xsl:choose>
-                                        <xsl:when test="../marc:subfield[@code = '2']">
-                                            <xsl:copy-of select="uwf:s2Nomen(../marc:subfield[@code = '2'])"/>
-                                        </xsl:when>
-                                        <xsl:otherwise/>
-                                    </xsl:choose>
+                                <xsl:when test="../marc:subfield[@code = '2']">
+                                    <xsl:copy-of select="uwf:s2Nomen(../marc:subfield[@code = '2'])"/>
                                 </xsl:when>
-                                <xsl:otherwise>
-                                    <rdan:P80069 rdf:resource="{uwf:ind2Thesaurus(../@ind2)}"/>
-                                </xsl:otherwise>
+                                <xsl:otherwise/>
                             </xsl:choose>
-                        </rdf:Description>
-                    </xsl:for-each>
-            </xsl:if>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <rdan:P80069 rdf:resource="{uwf:ind2Thesaurus(../@ind2)}"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </rdf:Description>
+            </xsl:for-each>
+            <xsl:for-each select="marc:subfield[@code = 'z']">
+                <rdf:Description rdf:about="{uwf:subjectNomenIRI(., 'pla/nom', ., $scheme)}">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                    <rdand:P80068>
+                        <xsl:value-of select="."/>
+                    </rdand:P80068>
+                    <xsl:choose>
+                        <xsl:when test="../@ind2 = '7'">
+                            <xsl:choose>
+                                <xsl:when test="../marc:subfield[@code = '2']">
+                                    <xsl:copy-of select="uwf:s2Nomen(../marc:subfield[@code = '2'])"/>
+                                </xsl:when>
+                                <xsl:otherwise/>
+                            </xsl:choose>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <rdan:P80069 rdf:resource="{uwf:ind2Thesaurus(../@ind2)}"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </rdf:Description>
+            </xsl:for-each>
         </xsl:if>
     </xsl:template>
 
@@ -1438,6 +1503,7 @@
         <xsl:variable name="prefLabel">
             <xsl:call-template name="F656-label"/>
         </xsl:variable>
+        
         <xsl:call-template name="F6XX-subject">
             <xsl:with-param name="prefLabel" select="$prefLabel"/>
         </xsl:call-template>
