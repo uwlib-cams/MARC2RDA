@@ -2140,7 +2140,8 @@
         </marc:datafield>
         <marc:datafield tag="650" ind1=" " ind2="7">
             <marc:subfield code="a">Heterosexism.</marc:subfield>
-            <marc:subfield code="2">homoit https://homosaurus.org/v3/homoit0000619</marc:subfield>
+            <marc:subfield code="2">homoit</marc:subfield>
+            <marc:subfield code="0">https://homosaurus.org/v3/homoit0000619</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="650" ind1=" " ind2="7">
             <marc:subfield code="a">Heteronormativity.</marc:subfield>
