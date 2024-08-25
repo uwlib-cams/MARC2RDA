@@ -51,7 +51,7 @@
     <xsl:include href="m2r-6xx.xsl"/>
 
     <!-- This template will append corresponding aggregate manifestations based on a sequential pattern matches -->
-    <!-- <xsl:include href="aggregate-manifestations.xsl"/> -->
+    <xsl:include href="aggregate.xsl"/>
     
     <!-- This template matches at the root
         It's only purpose is to apply-templates to the marc:collection -->
@@ -122,6 +122,9 @@
 <!--            <rdawo:P10078 rdf:resource="{concat($baseIRI,'exp')}"/>-->
             <rdawd:P10002>{concat(marc:controlfield[@tag='001'],'wor')}</rdawd:P10002>
             <xsl:apply-templates select="*" mode="wor"/>
+            <!-- <xsl:call-template name="append-aggregate-manifestations">
+                <xsl:with-param name="wemi" select="'wor'"/>
+            </xsl:call-template> -->
         </rdf:Description>
         
         <!-- *****EXPRESSIONS***** -->
@@ -131,6 +134,9 @@
             <rdaeo:P20231 rdf:resource="{concat($baseIRI,'wor')}"/>
             <rdaed:P20002>{concat(marc:controlfield[@tag='001'],'exp')}</rdaed:P20002>
             <xsl:apply-templates select="*" mode="exp"/>
+            <!-- <xsl:call-template name="append-aggregate-manifestations">
+                <xsl:with-param name="wemi" select="'exp'"/>
+            </xsl:call-template> -->
         </rdf:Description>
         
         <!-- *****MANIFESTATIONS***** -->
@@ -140,6 +146,9 @@
             <xsl:apply-templates select="*" mode="man">
                 <xsl:with-param name="baseIRI" select="$baseIRI"/>
             </xsl:apply-templates>
+            <!-- <xsl:call-template name="append-aggregate-manifestations">
+                <xsl:with-param name="wemi" select="'man'"/>
+            </xsl:call-template> -->
         </rdf:Description>
         
         <!-- Items, nomens, metadata works, and agents are generated as needed
