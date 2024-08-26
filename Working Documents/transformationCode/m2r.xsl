@@ -122,7 +122,7 @@
 <!--            <rdawo:P10078 rdf:resource="{concat($baseIRI,'exp')}"/>-->
             <rdawd:P10002>{concat(marc:controlfield[@tag='001'],'wor')}</rdawd:P10002>
             <xsl:apply-templates select="*" mode="wor"/>
-            <!-- <xsl:call-template name="append-aggregate-manifestations">
+            <!-- <xsl:call-template name="append-aggregates">
                 <xsl:with-param name="wemi" select="'wor'"/>
             </xsl:call-template> -->
         </rdf:Description>
@@ -134,7 +134,7 @@
             <rdaeo:P20231 rdf:resource="{concat($baseIRI,'wor')}"/>
             <rdaed:P20002>{concat(marc:controlfield[@tag='001'],'exp')}</rdaed:P20002>
             <xsl:apply-templates select="*" mode="exp"/>
-            <!-- <xsl:call-template name="append-aggregate-manifestations">
+            <!-- <xsl:call-template name="append-aggregates">
                 <xsl:with-param name="wemi" select="'exp'"/>
             </xsl:call-template> -->
         </rdf:Description>
@@ -146,7 +146,7 @@
             <xsl:apply-templates select="*" mode="man">
                 <xsl:with-param name="baseIRI" select="$baseIRI"/>
             </xsl:apply-templates>
-            <!-- <xsl:call-template name="append-aggregate-manifestations">
+            <!-- <xsl:call-template name="append-aggregates">
                 <xsl:with-param name="wemi" select="'man'"/>
             </xsl:call-template> -->
         </rdf:Description>

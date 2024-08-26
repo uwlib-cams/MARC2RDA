@@ -30,15 +30,25 @@
           <type>collection</type>
           <xpath>exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][contains(lower-case(.), ' atlas')])</xpath>
       </pattern>
+      <pattern>
+        <name>6XX$a Atlases</name>
+        <type>collection</type>
+        <xpath>exists(marc:datafield[starts-with(@tag, '6')]/marc:subfield[@code='a'][contains(lower-case(.), 'atlases')])</xpath>
+      </pattern>
+      <pattern>
+        <name>6XX$v$x Atlases</name>
+        <type>collection</type>
+        <xpath>marc:datafield[starts-with(@tag, '6')]/marc:subfield[@code='x'][matches(., '^Atlases\.?$')] or marc:datafield[starts-with(@tag, '6')]/marc:subfield[@code='v'][matches(., '^Atlases\.?$')]</xpath>
+      </pattern>
     </xsl:variable>
 
-    <xsl:template name="append-aggregate-manifestations" expand-text="yes">
+    <xsl:template name="append-aggregates" expand-text="yes">
       <xsl:param name="wemi"/>
       <xsl:variable name="record" select="."/>
 
       <!--
-        the block below is an additional iteration for appending review names in the patterns
-        so that we can calculate the number of review names for the patterns presented in the output XML
+        the block below is an additional iteration for appending review names in the spreadsheet
+        so that we can calculate and compare the number of review names for the patterns presented in the output XML
         it's for development only
       -->
       <xsl:iterate select="$patterns/pattern">
