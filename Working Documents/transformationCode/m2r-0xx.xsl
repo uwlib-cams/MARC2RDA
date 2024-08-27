@@ -27,6 +27,7 @@
     <xsl:include href="m2r-0xx-named.xsl"/> 
     <xsl:import href="getmarc.xsl"/>
     <xsl:import href="m2r-functions.xsl"/>
+    <xsl:import href="m2r-iris.xsl"/>
     
     <xsl:template match="marc:datafield[@tag = '020'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '020']" 
         mode="man">
@@ -345,6 +346,24 @@
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = '1']">
             <rdawo:P10321 rdf:resource="{.}"/>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <!-- 050 - Library of Congress Call Number -->
+    <xsl:template match="marc:datafield[@tag = '050']" 
+        mode="wor" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <rdaw:P10256 rdf:resource="{uwf:conceptIRI('lcc', .)}"/>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '050']" 
+        mode="con" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <rdf:Description rdf:about="{uwf:conceptIRI('lcc', .)}">
+                <xsl:copy-of select="uwf:fillConcept('', 'lcc', ., '050')"/>
+            </rdf:Description>
         </xsl:for-each>
     </xsl:template>
     
