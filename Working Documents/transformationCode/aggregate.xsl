@@ -40,6 +40,11 @@
         <type>collection</type>
         <xpath>marc:datafield[starts-with(@tag, '6')]/marc:subfield[@code='x'][matches(., '^Atlases\.?$')] or marc:datafield[starts-with(@tag, '6')]/marc:subfield[@code='v'][matches(., '^Atlases\.?$')]</xpath>
       </pattern>
+      <pattern>
+        <name>130 Radio program</name>
+        <type>collection</type>
+        <xpath>exists(marc:datafield[@tag='130']/marc:subfield[@code='a'][contains(., '(Radio program)')])</xpath>
+      </pattern>
     </xsl:variable>
 
     <xsl:template name="append-aggregates" expand-text="yes">
