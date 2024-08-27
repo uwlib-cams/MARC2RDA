@@ -538,7 +538,19 @@
     <xsl:template name="F264-x4-c" expand-text="yes">
         <rdamd:P30137>
             <xsl:text>Copyright notice date: </xsl:text>
-            <xsl:value-of select="marc:subfield[@code = 'c']" separator="; "/>
+            <xsl:for-each select="marc:subfield[@code = 'c']">
+                <xsl:value-of select="."/>
+                <xsl:choose>
+                    <xsl:when test="position() != last()">
+                        <xsl:text>; </xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:if test="not(ends-with(., '.'))">
+                            <xsl:text>.</xsl:text>
+                        </xsl:if>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:for-each>
         </rdamd:P30137>
         <xsl:for-each select="marc:subfield[@code = 'c']">
             <xsl:call-template name="F264-xx-c">
