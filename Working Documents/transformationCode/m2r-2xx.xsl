@@ -26,7 +26,14 @@
         <xsl:call-template name="getmarc"/>
         <xsl:for-each select="marc:subfield[@code='a']">
             <rdawd:P10088>
-                <xsl:value-of select="replace(.,'\s*[\.,;:/=]','')"/>
+                <xsl:choose>
+                    <xsl:when test="ends-with(., '...')">
+                        <xsl:value-of select="."/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="replace(., '\s*[\.,;=/:]$', '') => translate('[]', '')"/>
+                    </xsl:otherwise>
+                </xsl:choose>
             </rdawd:P10088>
         </xsl:for-each>
     </xsl:template>    
