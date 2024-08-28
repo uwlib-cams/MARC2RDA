@@ -72,6 +72,7 @@
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'z']">
             <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
                     <xsl:value-of select="translate(., ' :', '')"/>
                 </rdand:P80068>
