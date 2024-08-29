@@ -1445,6 +1445,40 @@
         </xsl:if>
     </xsl:template>
 
+    <!-- 653 - Index Term - Uncontrolled -->
+    <xsl:template
+        match="marc:datafield[@tag = '654']"
+        mode="wor">
+        <xsl:call-template name="getmarc"/>
+        <xsl:variable name="prefLabel">
+            <xsl:call-template name="F653-label"/>
+        </xsl:variable>
+        <xsl:choose>
+            <xsl:when test="@ind2 = '1'">
+                <!-- person -->
+            </xsl:when>
+            <xsl:when test="@ind2 = '2' or @ind2 = '3'">
+                <!-- corporate body -->
+            </xsl:when>
+            <xsl:when test="@ind2 = '4'">
+                <!-- timespan -->
+            </xsl:when>
+            <xsl:when test="@ind2 = '5'">
+                <!-- place -->
+            </xsl:when>
+            <xsl:when test="@ind2 = '6'">
+                <rdawd:P10004>
+                    <xsl:value-of select="$prefLabel"/>
+                </rdawd:P10004>
+            </xsl:when>
+            <xsl:otherwise>
+                <rdawd:P10256>
+                    <xsl:value-of select="$prefLabel"/>
+                </rdawd:P10256>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
     <!-- 654 - Subject Added Entry - Faceted Topical Terms-->
     
     <xsl:template
