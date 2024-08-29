@@ -111,22 +111,36 @@
     <xsl:template name="F662-label" expand-text="yes">
         <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] 
             | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd']
-            | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h']" separator=" "/>
+            | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h']" separator=" -- "/>
     </xsl:template>
+    <xsl:template name="F688-label" expand-text="yes">
+        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'g']" separator=" -- "/>
+    </xsl:template>
+    
     
     <!-- This template outputs "has subject" as either a datatype or object property
         If it is an object property (there is a source present in the field)
         uwf:subjectIRI (located in m2r-iris.xsl) is called to return the subject IRI -->
     <xsl:template name="F6XX-subject">
         <xsl:param name="prefLabel"/>
+        <xsl:variable name="scheme" select="uwf:getSubjectSchemeCode(.)"/>
         <xsl:choose>
             <xsl:when test="@ind2 = '4' or ((@ind2 = '4' or @ind2 = '7'  or @ind2 = ' ') and not(marc:subfield[@code = '2']))">
-                <rdawd:P10256>
-                    <xsl:value-of select="$prefLabel"/>
-                </rdawd:P10256>
+                <xsl:choose>
+                    <!-- no $0 or $1 to use -->
+                    <xsl:when test="starts-with(uwf:subjectIRI(., $scheme, $prefLabel), 'http://marc2rda.edu')">
+                        <rdawd:P10256>
+                            <xsl:value-of select="$prefLabel"/>
+                        </rdawd:P10256>
+                    </xsl:when>
+                    <!-- $0 or $1 present, use that value -->
+                    <xsl:otherwise>
+                        <rdaw:P10256 rdf:resource="{uwf:subjectIRI(., $scheme, $prefLabel)}"/>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:when>
             <xsl:otherwise>
-                <rdaw:P10256 rdf:resource="{uwf:subjectIRI(., uwf:getSubjectSchemeCode(.), $prefLabel)}"/>
+                <rdaw:P10256 rdf:resource="{uwf:subjectIRI(., $scheme, $prefLabel)}"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
