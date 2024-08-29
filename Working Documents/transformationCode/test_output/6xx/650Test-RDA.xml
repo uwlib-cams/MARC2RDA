@@ -38,8 +38,7 @@
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/computersimulation"/>
       <fake:marcfield>F650 #4 $a Personals $v Poetry. $y 2000</fake:marcfield>
       <rdawd:P10256>Personals -- Poetry. -- 2000</rdawd:P10256>
-      <rdawd:P10256>2000</rdawd:P10256>
-      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/d19e16"/>
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/d20e16"/>
       <rdawd:P10004>Poetry.</rdawd:P10004>
       <fake:marcfield>F650 #0 $a Online dating $v Poetry.</fake:marcfield>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/onlinedatingpoetry"/>
@@ -52,15 +51,15 @@
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/petitesannoncespersonnellessimulationparordinateur"/>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/simulationparordinateur"/>
       <fake:marcfield>F650 #6 $a Petites annonces personnelles $0 (CaQQLa)201-0120220 $v Poésie. $0 (CaQQLa)201-0378101</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/petitesannoncespersonnellespoe%CC%81sie"/>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvm/poe%CC%81sie"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/petitesannoncespersonnellespoésie"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvm/poésie"/>
       <fake:marcfield>F650 #6 $a Rencontres amoureuses sur Internet $0 (CaQQLa)201-0396908 $v Poésie. $0 (CaQQLa)201-0378101</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/rencontresamoureusessurinternetpoe%CC%81sie"/>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvm/poe%CC%81sie"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/rencontresamoureusessurinternetpoésie"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvm/poésie"/>
       <fake:marcfield>F650 #6 $a Image du corps dans l'art. $0 (CaQQLa)000275394</fake:marcfield>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/imageducorpsdanslart"/>
       <fake:marcfield>F650 #6 $a Impression à la demande. $0 (CaQQLa)000299998</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/impressiona%CC%80lademande"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/impressionàlademande"/>
       <fake:marcfield>F650 #7 $a Body image in art. $2 fast $0 (OCoLC)fst00835355</fake:marcfield>
       <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00835355"/>
       <fake:marcfield>F650 #7 $a On-demand printing. $2 fast $0 (OCoLC)fst01045708</fake:marcfield>
@@ -167,22 +166,22 @@
       <skos:prefLabel>Simulation par ordinateur.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/petitesannoncespersonnellespoe%CC%81sie">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/petitesannoncespersonnellespoésie">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Petites annonces personnelles -- Poésie.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/poe%CC%81sie">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/poésie">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Poésie.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/rencontresamoureusessurinternetpoe%CC%81sie">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/rencontresamoureusessurinternetpoésie">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Rencontres amoureuses sur Internet -- Poésie.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/poe%CC%81sie">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/poésie">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Poésie.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
@@ -192,7 +191,7 @@
       <skos:prefLabel>Image du corps dans l'art.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/impressiona%CC%80lademande">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/impressionàlademande">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Impression à la demande.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
@@ -252,7 +251,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
       <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/turkey"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/d19e16">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/d20e16">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
       <rdatd:P70015>2000</rdatd:P70015>
    </rdf:Description>

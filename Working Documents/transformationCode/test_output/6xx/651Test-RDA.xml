@@ -34,7 +34,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>6xx-test1wor</rdawd:P10002>
       <fake:marcfield>F651 #4 $a Iran.</fake:marcfield>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/d19e6"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/d20e6"/>
       <fake:marcfield>F651 #7 $a Turkey. $2 fast $0 (OCoLC)fst01208963</fake:marcfield>
       <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/fast/turkey"/>
       <fake:marcfield>F651 #0 $a Turkey $x Foreign relations $z Russia.</fake:marcfield>
@@ -47,10 +47,10 @@
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/ethnicrelations"/>
       <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/xinjianguygurzizhiquchina"/>
       <fake:marcfield>F651 #0 $a Tabrīz (Iran) $x Press coverage $x History $y 20th century.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/tabri%CC%84ziranpresscoveragehistory20thcentury"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/tabrīziranpresscoveragehistory20thcentury"/>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/presscoveragehistory20thcentury"/>
       <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/lcsh/20thcentury"/>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/tabri%CC%84ziran"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/tabrīziran"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -86,7 +86,7 @@
       <rdand:P80068>Xinjiang Uygur Zizhiqu (China)</rdand:P80068>
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/tabri%CC%84ziran">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/tabrīziran">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Tabrīz (Iran)</rdand:P80068>
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
@@ -116,7 +116,7 @@
       <skos:prefLabel>Ethnic relations.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/tabri%CC%84ziranpresscoveragehistory20thcentury">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/tabrīziranpresscoveragehistory20thcentury">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Tabrīz (Iran) -- Press coverage -- History -- 20th century.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
@@ -126,7 +126,7 @@
       <skos:prefLabel>Press coverage -- History -- 20th century.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/d19e6">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/d20e6">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
       <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom//iran"/>
    </rdf:Description>
@@ -146,9 +146,9 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
       <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/xinjianguygurzizhiquchina"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/tabri%CC%84ziran">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/tabrīziran">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/tabri%CC%84ziran"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/tabrīziran"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/lcsh/20thcentury">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>

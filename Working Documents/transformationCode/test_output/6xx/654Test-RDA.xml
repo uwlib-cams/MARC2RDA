@@ -42,8 +42,8 @@
       <fake:marcfield>F654 0# $c r $a landscape $y 18th century $z England. $v test v $2 aat</fake:marcfield>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/aat/rlandscape18thcenturyenglandtestv"/>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/aat/18thcenturyengland"/>
-      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/d20e34"/>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/d20e36"/>
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/aat/18thcentury"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/aat/england"/>
       <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/aat/testv"/>
       <fake:marcfield>F654 0# $a landscape $y 18th century $z England. $v test v</fake:marcfield>
       <rdawd:P10256>landscape -- 18th century -- England. -- test v</rdawd:P10256>
@@ -104,7 +104,7 @@
       <skos:prefLabel>test v</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/d20e36">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/aat/england">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
       <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/aat/england"/>
    </rdf:Description>
@@ -112,7 +112,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
       <rdapd:P70018>England.</rdapd:P70018>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/d20e34">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/aat/18thcentury">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
       <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/tim/nom/aat/18thcentury"/>
    </rdf:Description>
