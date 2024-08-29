@@ -39,6 +39,18 @@
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/bisacsh/socialsciencegeneral"/>
       <fake:marcfield>F654 2# $c k $a Urban planning $c z $b United States $c y $b 1800-1940. $2 aat</fake:marcfield>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/aat/kurbanplanningzunitedstatesy18001940"/>
+      <fake:marcfield>F654 0# $c r $a landscape $y 18th century $z England. $v test v $2 aat</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/aat/rlandscape18thcenturyenglandtestv"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/aat/18thcenturyengland"/>
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/d20e34"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/d20e36"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/aat/testv"/>
+      <fake:marcfield>F654 0# $a landscape $y 18th century $z England. $v test v</fake:marcfield>
+      <rdawd:P10256>landscape -- 18th century -- England. -- test v</rdawd:P10256>
+      <rdawd:P10256>18th century -- England.</rdawd:P10256>
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/d20e45"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/d20e47"/>
+      <rdawd:P10004>test v</rdawd:P10004>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -49,6 +61,24 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/6xx-test1exp"/>
    </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/aat/18thcentury">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>18th century</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/aat/england">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>England.</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom//18thcentury">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>18th century</rdand:P80068>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom//england">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>England.</rdand:P80068>
+   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/bisacsh/socialsciencegeneral">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>SOCIAL SCIENCE / General.</skos:prefLabel>
@@ -58,5 +88,36 @@
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>k -- Urban planning -- z -- United States -- y -- 1800-1940.</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/aat/rlandscape18thcenturyenglandtestv">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>r -- landscape -- 18th century -- England. -- test v</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/aat/18thcenturyengland">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>18th century -- England.</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/aat/testv">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>test v</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/d20e36">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/aat/england"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/d20e47">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapd:P70018>England.</rdapd:P70018>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/d20e34">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+      <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/tim/nom/aat/18thcentury"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/d20e45">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+      <rdatd:P70015>18th century</rdatd:P70015>
    </rdf:Description>
 </rdf:RDF>

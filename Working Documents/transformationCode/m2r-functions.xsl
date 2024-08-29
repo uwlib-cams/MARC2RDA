@@ -316,7 +316,7 @@
             <!-- @ind2 = 7 or blank -->
             <xsl:otherwise>
                 <xsl:if test="$field/marc:subfield[@code = '2']">
-                    <xsl:value-of select="$field/marc:subfield[@code = '2']"/>
+                    <xsl:value-of select="$field/marc:subfield[@code = '2'][1]"/>
                 </xsl:if>
             </xsl:otherwise>
         </xsl:choose>

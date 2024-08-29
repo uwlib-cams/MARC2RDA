@@ -21,5 +21,19 @@
             <marc:subfield code="b">1800-1940.</marc:subfield>
             <marc:subfield code="2">aat</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="654" ind1="0" ind2=" ">
+            <marc:subfield code="c">r</marc:subfield>
+            <marc:subfield code="a">landscape</marc:subfield>
+            <marc:subfield code="y">18th century</marc:subfield>
+            <marc:subfield code="z">England.</marc:subfield>
+            <marc:subfield code="v">test v</marc:subfield>
+            <marc:subfield code="2">aat</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="654" ind1="0" ind2=" ">
+            <marc:subfield code="a">landscape</marc:subfield>
+            <marc:subfield code="y">18th century</marc:subfield>
+            <marc:subfield code="z">England.</marc:subfield>
+            <marc:subfield code="v">test v</marc:subfield>
+        </marc:datafield>
     </marc:record>
 </marc:collection>
