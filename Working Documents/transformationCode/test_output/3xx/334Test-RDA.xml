@@ -44,5 +44,61 @@
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/334-test1exp"/>
       <fake:marcfield>F334 ## $a single unit $2 rdami</fake:marcfield>
       <rdam:P30003 rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+      <fake:marcfield>F334 ## $a computer $a unmediated $3 test3</fake:marcfield>
+      <rdamd:P30002>computer</rdamd:P30002>
+      <rdamd:P30137>Media type computer applies to the manifestation's test3</rdamd:P30137>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30137>Media type unmediated applies to the manifestation's test3</rdamd:P30137>
+      <fake:marcfield>F334 ## $b c $3 test3</fake:marcfield>
+      <rdamd:P30002>c</rdamd:P30002>
+      <rdamd:P30137>Media type c applies to the manifestation's test3</rdamd:P30137>
+      <fake:marcfield>F334 ## $a computer $b x $2 rdamedia $3 test3</fake:marcfield>
+      <rdam:P30003 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/c"/>
+      <rdam:P30003 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/x"/>
+      <fake:marcfield>F334 ## $a unmediated $b 1007 $2 rdami $3 test3</fake:marcfield>
+      <fake:marcfield>F334 ## $1 http://www.rdaregistry.info/termList/ModeIssue/#1001 $3 test3</fake:marcfield>
+      <rdam:P30003 rdf:resource="http://www.rdaregistry.info/termList/ModeIssue/#1001"/>
+      <fake:marcfield>F334 ## $a audio $2 rdami $0 http://www.rdaregistry.info/termList/ModeIssue/#1001 $3 test3</fake:marcfield>
+      <rdam:P30003 rdf:resource="http://www.rdaregistry.info/termList/ModeIssue/#1001"/>
+      <fake:marcfield>F334 ## $a audio $b made up b $a video $b made up b 2 $2 isbdmedia $3 test3</fake:marcfield>
+      <rdam:P30003 rdf:resource="http://marc2rda.edu/fake/concept/isbdmedia/audio"/>
+      <rdam:P30003 rdf:resource="http://marc2rda.edu/fake/concept/isbdmedia/video"/>
+      <fake:marcfield>F334 ## $a audio $b made up b $b made up b 2 $2 isbdmedia $3 test3</fake:marcfield>
+      <rdam:P30003 rdf:resource="http://marc2rda.edu/fake/concept/isbdmedia/audio"/>
+      <fake:marcfield>F334 ## $b made up b $2 isbdmedia $3 test3</fake:marcfield>
+      <rdam:P30003 rdf:resource="http://marc2rda.edu/fake/concept/isbdmedia/madeupb"/>
+      <fake:marcfield>F334 ## $6 880-01 $a audio $b a $2 rdami</fake:marcfield>
+      <fake:marcfield>F880 ## $6 334-01 $a audio $b a $2 rdami</fake:marcfield>
+      <fake:marcfield>F880 ## $6 334-00 $a audio $2 isbdmedia</fake:marcfield>
+      <rdam:P30003 rdf:resource="http://marc2rda.edu/fake/concept/isbdmedia/audio"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/isbdmedia/audio">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>audio</skos:prefLabel>
+      <!--rdf:datatype to be added-->
+      <skos:notation>made up b</skos:notation>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/isbdmedia"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/isbdmedia/video">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>video</skos:prefLabel>
+      <!--rdf:datatype to be added-->
+      <skos:notation>made up b 2</skos:notation>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/isbdmedia"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/isbdmedia/audio">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>audio</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/isbdmedia"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/isbdmedia/madeupb">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>made up b</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/isbdmedia"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/isbdmedia/audio">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>audio</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/isbdmedia"/>
    </rdf:Description>
 </rdf:RDF>
