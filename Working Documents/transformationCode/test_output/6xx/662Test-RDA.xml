@@ -33,12 +33,14 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>6xx-test1wor</rdawd:P10002>
-      <fake:marcfield>F658 ## $a Math manipulatives $d highly correlated</fake:marcfield>
-      <rdawd:P10004>Math manipulatives -- highly correlated</rdawd:P10004>
-      <fake:marcfield>F658 ## $a Reading objective 1 (fictional) $b understanding language, elements of plots, themes, motives, characteres, setting b responding to the multiple-meaning word $c NRPO2-1991 $d highly correlated. $2 ohco</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/ohco/readingobjective1fictionalunderstandinglanguageelementsofplotsthemesmotivescharacteressettingbrespondingtothemultiplemeaningwordnrpo21991highlycorrelated"/>
-      <fake:marcfield>F658 ## $a Matematikk 1P-Y BA $c MAT1111 $2 udir $1 http://psi.udir.no/kl06/MAT1111</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://psi.udir.no/kl06/MAT1111"/>
+      <fake:marcfield>F662 ## $a Antarctica $2 lcsh</fake:marcfield>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/antarctica"/>
+      <fake:marcfield>F662 ## $a Africa $g Nile River $g Sixth Cataract. $2 tgn</fake:marcfield>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/tgn/africanileriversixthcataract"/>
+      <fake:marcfield>F662 ## $a World</fake:marcfield>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/d20e20"/>
+      <fake:marcfield>F662 ## $a place $1 http://realworldiri.edu/12345</fake:marcfield>
+      <rdawo:P10321 rdf:resource="http://realworldiri.edu/12345"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -49,10 +51,30 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/6xx-test1exp"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/ohco/readingobjective1fictionalunderstandinglanguageelementsofplotsthemesmotivescharacteressettingbrespondingtothemultiplemeaningwordnrpo21991highlycorrelated">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Reading objective 1 (fictional) -- understanding language, elements of plots, themes, motives, characteres, setting b responding to the multiple-meaning word -- NRPO2-1991 -- highly correlated.</skos:prefLabel>
-      <!--IRI could not be found for ohco-->
-      <skos:inScheme>ohco</skos:inScheme>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/antarctica">
+      <rdf:type rdf:resource="httsp://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Antarctica</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/tgn/africanileriversixthcataract">
+      <rdf:type rdf:resource="httsp://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Africa Nile River Sixth Cataract.</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/tgn"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/antarctica">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/antarctica"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/tgn/africanileriversixthcataract">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/tgn/africanileriversixthcataract"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/d20e20">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapd:P70018>World</rdapd:P70018>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://realworldiri.edu/12345">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapd:P70045>place</rdapd:P70045>
    </rdf:Description>
 </rdf:RDF>

@@ -5,22 +5,22 @@
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">6xx-test1</marc:controlfield> 
-        <marc:datafield tag="658" ind1=" " ind2=" ">
-            <marc:subfield code="a">Math manipulatives</marc:subfield>
-            <marc:subfield code="d">highly correlated</marc:subfield>
+        <marc:datafield tag="662" ind1=" " ind2=" ">
+            <marc:subfield code="a">Antarctica</marc:subfield>
+            <marc:subfield code="2">lcsh</marc:subfield>
         </marc:datafield>
-        <marc:datafield tag="658" ind1=" " ind2=" ">
-            <marc:subfield code="a">Reading objective 1 (fictional)</marc:subfield>
-            <marc:subfield code="b">understanding language, elements of plots, themes, motives, characteres, setting b responding to the multiple-meaning word</marc:subfield>
-            <marc:subfield code="c">NRPO2-1991</marc:subfield>
-            <marc:subfield code="d">highly correlated.</marc:subfield>
-            <marc:subfield code="2">ohco</marc:subfield>
+        <marc:datafield tag="662" ind1=" " ind2=" ">
+            <marc:subfield code="a">Africa</marc:subfield>
+            <marc:subfield code="g">Nile River</marc:subfield>
+            <marc:subfield code="g">Sixth Cataract.</marc:subfield>
+            <marc:subfield code="2">tgn</marc:subfield>
         </marc:datafield>
-        <marc:datafield tag="658" ind1=" " ind2=" ">
-            <marc:subfield code="a">Matematikk 1P-Y BA</marc:subfield>
-            <marc:subfield code="c">MAT1111</marc:subfield>
-            <marc:subfield code="2">udir</marc:subfield>
-            <marc:subfield code="1">http://psi.udir.no/kl06/MAT1111</marc:subfield>
+        <marc:datafield tag="662" ind1=" " ind2=" ">
+            <marc:subfield code="a">World</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="662" ind1=" " ind2=" ">
+            <marc:subfield code="a">place</marc:subfield>
+            <marc:subfield code="1">http://realworldiri.edu/12345</marc:subfield>
         </marc:datafield>
     </marc:record>
 </marc:collection>
