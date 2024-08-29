@@ -35,8 +35,15 @@
       <rdawd:P10002>6xx-test1wor</rdawd:P10002>
       <fake:marcfield>F656 #7 $a Composers $z United States. $2 lcsh</fake:marcfield>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/composersunitedstates"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/unitedstates"/>
       <fake:marcfield>F656 #7 $a Printers $2 lcsh</fake:marcfield>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/printers"/>
+      <fake:marcfield>F656 #7 $a Migrant laborers. $k School district case files. $v v $x x $y y $z z</fake:marcfield>
+      <rdawd:P10256>Migrant laborers. -- School district case files. -- v -- x -- y -- z</rdawd:P10256>
+      <rdawd:P10256>x -- y -- z</rdawd:P10256>
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/d20e28"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/d20e30"/>
+      <rdawd:P10004>v</rdawd:P10004>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -47,6 +54,19 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/6xx-test1exp"/>
    </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>United States.</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom//y">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>y</rdand:P80068>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom//z">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>z</rdand:P80068>
+   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/composersunitedstates">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Composers -- United States.</skos:prefLabel>
@@ -56,5 +76,17 @@
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Printers</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/unitedstates">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/d20e30">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapd:P70018>z</rdapd:P70018>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/d20e28">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+      <rdatd:P70015>y</rdatd:P70015>
    </rdf:Description>
 </rdf:RDF>

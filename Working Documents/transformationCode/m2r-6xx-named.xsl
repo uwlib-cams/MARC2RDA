@@ -117,7 +117,7 @@
     <xsl:template name="F6XX-subject">
         <xsl:param name="prefLabel"/>
         <xsl:choose>
-            <xsl:when test="@ind2 = '4' or (@ind2 = ' ' and not(marc:subfield[@code = '2']))">
+            <xsl:when test="@ind2 = '4' or ((@ind2 = '4' or @ind2 = '7'  or @ind2 = ' ') and not(marc:subfield[@code = '2']))">
                 <rdawd:P10256>
                     <xsl:value-of select="$prefLabel"/>
                 </rdawd:P10256>
@@ -136,7 +136,7 @@
             <xsl:call-template name="F6XX-xyz-label"/>
         </xsl:variable>
             <xsl:choose>
-                <xsl:when test="@ind2 = '4' or (@ind2 = ' ' and not(marc:subfield[@code = '2']))">
+                <xsl:when test="@ind2 = '4' or ((@ind2 = '4' or @ind2 = '7' or @ind2 = ' ') and not(marc:subfield[@code = '2']))">
                     <rdawd:P10256>
                         <xsl:value-of select="$prefLabelXYZ"/>
                     </rdawd:P10256>
@@ -151,7 +151,7 @@
         Outputs "has category of work" as datatype or object property -->
     <xsl:template name="F6XX-xx-v">
         <xsl:choose>
-            <xsl:when test="../@ind2 = '4' or (../@ind2 = ' ' and not(../marc:subfield[@code = '2']))">
+            <xsl:when test="../@ind2 = '4' or ((../@ind2 = '4' or ../@ind2 = '7'  or ../@ind2 = ' ') and not(../marc:subfield[@code = '2']))">
                 <rdawd:P10004>
                     <xsl:value-of select="."/>
                 </rdawd:P10004>
