@@ -1839,17 +1839,15 @@
     </xsl:template>
     <xsl:template match="marc:datafield[@tag = '658']"
         mode="con" expand-text="yes">
-        <xsl:if test="@ind2 != '4'">
-            <xsl:if test="marc:subfield[@code = '2']">
-                <xsl:variable name="prefLabel">
-                    <xsl:call-template name="F658-label"/>
-                </xsl:variable>
-                <xsl:variable name="scheme" select="uwf:getSubjectSchemeCode(.)"/>
-                <xsl:if test="starts-with(uwf:subjectIRI(., $scheme, $prefLabel), 'http://marc2rda.edu')">
-                    <rdf:Description rdf:about="{uwf:conceptIRI($scheme, $prefLabel)}">
-                        <xsl:copy-of select="uwf:fillConcept($prefLabel, $scheme, '', @tag)"/>
-                    </rdf:Description>
-                </xsl:if>
+        <xsl:if test="marc:subfield[@code = '2']">
+            <xsl:variable name="prefLabel">
+                <xsl:call-template name="F658-label"/>
+            </xsl:variable>
+            <xsl:variable name="scheme" select="uwf:getSubjectSchemeCode(.)"/>
+            <xsl:if test="starts-with(uwf:subjectIRI(., $scheme, $prefLabel), 'http://marc2rda.edu')">
+                <rdf:Description rdf:about="{uwf:conceptIRI($scheme, $prefLabel)}">
+                    <xsl:copy-of select="uwf:fillConcept($prefLabel, $scheme, '', @tag)"/>
+                </rdf:Description>
             </xsl:if>
         </xsl:if>
     </xsl:template>
