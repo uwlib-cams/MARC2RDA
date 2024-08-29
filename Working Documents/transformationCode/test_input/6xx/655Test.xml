@@ -30,5 +30,14 @@
             <marc:subfield code="a">Academic theses.</marc:subfield>
             <marc:subfield code="2">lcgft</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="655" ind1="0" ind2="7">
+            <marc:subfield code="c">k</marc:subfield>
+            <marc:subfield code="b">Laminated</marc:subfield>
+            <marc:subfield code="c">m</marc:subfield>
+            <marc:subfield code="b">marblewood</marc:subfield>
+            <marc:subfield code="c">v</marc:subfield>
+            <marc:subfield code="a">bust.</marc:subfield>
+            <marc:subfield code="2">aat</marc:subfield>
+        </marc:datafield>
     </marc:record>
 </marc:collection>

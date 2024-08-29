@@ -45,6 +45,8 @@
       <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01726453"/>
       <fake:marcfield>F655 #7 $a Academic theses. $2 lcgft</fake:marcfield>
       <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcgft/academictheses"/>
+      <fake:marcfield>F655 07 $c k $b Laminated $c m $b marblewood $c v $a bust. $2 aat</fake:marcfield>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/aat/laminatedmarblewoodbust"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -74,5 +76,10 @@
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Academic theses.</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/aat/laminatedmarblewoodbust">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Laminated -- marblewood -- bust.</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
    </rdf:Description>
 </rdf:RDF>
