@@ -33,6 +33,40 @@
    <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>6xx-test1wor</rdawd:P10002>
+      <fake:marcfield>F600 10 $a Pushkin, Aleksandr Sergeevich, $d 1799-1837 $x Museums $z Russia (Federation) $z Moscow $v Maps.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/pushkinaleksandrsergeevich17991837museumsrussiafederationmoscowmaps"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/museumsrussiafederationmoscow"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/russiafederation"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/moscow"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/maps"/>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age/lcsh/pushkinaleksandrsergeevich17991837"/>
+      <fake:marcfield>F600 17 $a Harnoncourt, Nikolaus. $2 fast $0 https://id.worldcat.org/fast/00076606</fake:marcfield>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age/fast/harnoncourtnikolaus"/>
+      <fake:marcfield>F600 10 $a Haydn, Joseph, $d 1732-1809. $t Symphonies.</fake:marcfield>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age/lcsh/haydnjoseph17321809"/>
+      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/wor/lcsh/haydnjoseph17321809symphonies"/>
+      <fake:marcfield>F600 10 $a Arne, Thomas Augustine, $d 1710-1778. $t Concertos, $m keyboard instrument, orchestra. $n No. 3. $p Con Spirito, $m keyboard instrument.</fake:marcfield>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age/lcsh/arnethomasaugustine17101778"/>
+      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/wor/lcsh/arnethomasaugustine17101778concertosno3conspirito"/>
+      <fake:marcfield>F600 30 $a Clark family $v Fiction</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/clarkfamilyfiction"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/fiction"/>
+      <rdawo:P10262 rdf:resource="http://marc2rda.edu/fake/age/lcsh/clarkfamily"/>
+      <fake:marcfield>F600 00 $a Dante Alighieri, $d 1265-1321 $x Criticism and interpretation.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/dantealighieri12651321criticismandinterpretation"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/criticismandinterpretation"/>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age/lcsh/dantealighieri12651321"/>
+      <fake:marcfield>F600 07 $a Dante Alighieri, $d 1265-1321 $2 fast</fake:marcfield>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age/fast/dantealighieri12651321"/>
+      <fake:marcfield>F600 07 $a Dante Alighieri, $d 1265-1321 $2 gnd</fake:marcfield>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age/gnd/dantealighieri12651321"/>
+      <fake:marcfield>F600 17 $a Bickford, Sarah Gammon, $d 1855-1931 $2 fast $0 (OCoLC)fst01583751</fake:marcfield>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age/fast/bickfordsarahgammon18551931"/>
+      <fake:marcfield>F600 10 $a O'Neill, Eugene, $d 1888-1953 $x Homes and haunts $z California. $0 https://id.loc.gov/authorities/subjects/sh85094784</fake:marcfield>
+      <rdaw:P10256 rdf:resource="https://id.loc.gov/authorities/subjects/sh85094784"/>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age/lcsh/oneilleugene18881953"/>
+      <fake:marcfield>F600 10 $a Romero, George A. $1 https://isni.org/isni/0000000121363861</fake:marcfield>
+      <rdawo:P10261 rdf:resource="https://isni.org/isni/0000000121363861"/>
       <fake:marcfield>F600 10 $a Romero, George A. $t Made up work $1 https://iriforthiswork.com/12345</fake:marcfield>
       <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age/lcsh/romerogeorgea"/>
       <rdawo:P10257 rdf:resource="https://iriforthiswork.com/12345"/>
@@ -46,25 +80,210 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/6xx-test1exp"/>
    </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/lcsh/pushkinaleksandrsergeevich17991837">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Pushkin, Aleksandr Sergeevich, 1799-1837</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/russiafederation">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Russia (Federation)</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/moscow">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Moscow</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/fast/harnoncourtnikolaus">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Harnoncourt, Nikolaus.</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/lcsh/haydnjoseph17321809">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Haydn, Joseph, 1732-1809.</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/nom/lcsh/haydnjoseph17321809symphonies">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Haydn, Joseph, 1732-1809. Symphonies.</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/lcsh/arnethomasaugustine17101778">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Arne, Thomas Augustine, 1710-1778.</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/nom/lcsh/arnethomasaugustine17101778concertosno3conspirito">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Arne, Thomas Augustine, 1710-1778. Concertos, No. 3. Con Spirito</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/lcsh/clarkfamily">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Clark family</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/lcsh/dantealighieri12651321">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Dante Alighieri, 1265-1321</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/fast/dantealighieri12651321">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Dante Alighieri, 1265-1321</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/gnd/dantealighieri12651321">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Dante Alighieri, 1265-1321</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gnd"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/fast/bickfordsarahgammon18551931">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Bickford, Sarah Gammon, 1855-1931</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/lcsh/oneilleugene18881953">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>O'Neill, Eugene, 1888-1953</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/d20e107">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Romero, George A.</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/lcsh/romerogeorgea">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Romero, George A.</rdand:P80068>
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/nom/d19e26">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/nom/d20e113">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Romero, George A. Made up work</rdand:P80068>
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/lcsh/pushkinaleksandrsergeevich17991837">
+      <fake:marcfield>F600 10 $a Pushkin, Aleksandr Sergeevich, $d 1799-1837 $x Museums $z Russia (Federation) $z Moscow $v Maps.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/lcsh/pushkinaleksandrsergeevich17991837"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/fast/harnoncourtnikolaus">
+      <fake:marcfield>F600 17 $a Harnoncourt, Nikolaus. $2 fast $0 https://id.worldcat.org/fast/00076606</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/fast/harnoncourtnikolaus"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/lcsh/haydnjoseph17321809">
+      <fake:marcfield>F600 10 $a Haydn, Joseph, $d 1732-1809. $t Symphonies.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/lcsh/haydnjoseph17321809"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/lcsh/arnethomasaugustine17101778">
+      <fake:marcfield>F600 10 $a Arne, Thomas Augustine, $d 1710-1778. $t Concertos, $m keyboard instrument, orchestra. $n No. 3. $p Con Spirito, $m keyboard instrument.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/lcsh/arnethomasaugustine17101778"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/lcsh/clarkfamily">
+      <fake:marcfield>F600 30 $a Clark family $v Fiction</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10008"/>
+      <rdaao:P50409 rdf:resource="http://marc2rda.edu/fake/age/nom/lcsh/clarkfamily"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/lcsh/dantealighieri12651321">
+      <fake:marcfield>F600 00 $a Dante Alighieri, $d 1265-1321 $x Criticism and interpretation.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/lcsh/dantealighieri12651321"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/fast/dantealighieri12651321">
+      <fake:marcfield>F600 07 $a Dante Alighieri, $d 1265-1321 $2 fast</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/fast/dantealighieri12651321"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/gnd/dantealighieri12651321">
+      <fake:marcfield>F600 07 $a Dante Alighieri, $d 1265-1321 $2 gnd</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/gnd/dantealighieri12651321"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/fast/bickfordsarahgammon18551931">
+      <fake:marcfield>F600 17 $a Bickford, Sarah Gammon, $d 1855-1931 $2 fast $0 (OCoLC)fst01583751</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/fast/bickfordsarahgammon18551931"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/lcsh/oneilleugene18881953">
+      <fake:marcfield>F600 10 $a O'Neill, Eugene, $d 1888-1953 $x Homes and haunts $z California. $0 https://id.loc.gov/authorities/subjects/sh85094784</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/lcsh/oneilleugene18881953"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://isni.org/isni/0000000121363861">
+      <fake:marcfield>F600 10 $a Romero, George A. $1 https://isni.org/isni/0000000121363861</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/d20e107"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age/lcsh/romerogeorgea">
       <fake:marcfield>F600 10 $a Romero, George A. $t Made up work $1 https://iriforthiswork.com/12345</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/lcsh/romerogeorgea"/>
    </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/lcsh/haydnjoseph17321809symphonies">
+      <fake:marcfield>F600 10 $a Haydn, Joseph, $d 1732-1809. $t Symphonies.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10331 rdf:resource="http://marc2rda.edu/fake/wor/nom/lcsh/haydnjoseph17321809symphonies"/>
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/lcsh/haydnjoseph17321809"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/lcsh/arnethomasaugustine17101778concertosno3conspirito">
+      <fake:marcfield>F600 10 $a Arne, Thomas Augustine, $d 1710-1778. $t Concertos, $m keyboard instrument, orchestra. $n No. 3. $p Con Spirito, $m keyboard instrument.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10331 rdf:resource="http://marc2rda.edu/fake/wor/nom/lcsh/arnethomasaugustine17101778concertosno3conspirito"/>
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/lcsh/arnethomasaugustine17101778"/>
+   </rdf:Description>
    <rdf:Description rdf:about="https://iriforthiswork.com/12345">
       <fake:marcfield>F600 10 $a Romero, George A. $t Made up work $1 https://iriforthiswork.com/12345</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10331 rdf:resource="http://marc2rda.edu/fake/wor/nom/d19e26"/>
+      <rdawo:P10331 rdf:resource="http://marc2rda.edu/fake/wor/nom/d20e113"/>
       <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/lcsh/romerogeorgea"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/pushkinaleksandrsergeevich17991837museumsrussiafederationmoscowmaps">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Pushkin, Aleksandr Sergeevich, -- 1799-1837 -- Museums -- Russia (Federation) -- Moscow -- Maps.</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/museumsrussiafederationmoscow">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Museums -- Russia (Federation) -- Moscow</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/maps">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Maps.</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/clarkfamilyfiction">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Clark family -- Fiction</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/fiction">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Fiction</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/dantealighieri12651321criticismandinterpretation">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Dante Alighieri, -- 1265-1321 -- Criticism and interpretation.</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/criticismandinterpretation">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Criticism and interpretation.</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/russiafederation">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/russiafederation"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/moscow">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/moscow"/>
    </rdf:Description>
 </rdf:RDF>
