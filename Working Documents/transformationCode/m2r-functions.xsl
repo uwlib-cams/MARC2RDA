@@ -417,6 +417,12 @@
         </xsl:choose>
     </xsl:function>
     
+    <xsl:function name="uwf:lcNamesToGeographicAreas" expand-text="yes">
+        <xsl:param name="nameIRI"/>
+        <xsl:variable name="nameFile" select="document(concat($nameIRI, '.rdf'))"/>
+        <xsl:value-of select="$nameFile//madsrdf:code[@rdf:datatype = 'http://id.loc.gov/datatypes/codes/gac']"/>
+    </xsl:function>
+    
 <!-- string functions -->
     <xsl:function name="uwf:stripEndPunctuation">
         <xsl:param name="string"/>

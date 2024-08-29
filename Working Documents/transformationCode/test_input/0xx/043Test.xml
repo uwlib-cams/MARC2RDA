@@ -13,7 +13,10 @@
 			<marc:subfield code="2">marcgac</marc:subfield>
 			<marc:subfield code="c">us</marc:subfield>
             <marc:subfield code="0">http://id.loc.gov/vocabulary/geographicAreas/n-usm</marc:subfield>
+            <marc:subfield code="0">https://id.loc.gov/authorities/names/n78095330</marc:subfield>
+            <marc:subfield code="0">test</marc:subfield>
             <marc:subfield code="1">http://www.wikidata.org/wiki/Q30</marc:subfield>
+            <marc:subfield code="1">http://id.loc.gov/rwo/agents/n80125931</marc:subfield>
         </marc:datafield>
     </marc:record>
 </marc:collection>

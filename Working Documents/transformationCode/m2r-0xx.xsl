@@ -21,6 +21,9 @@
     xmlns:rdan="http://rdaregistry.info/Elements/n/"
     xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
     xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+    xmlns:rdap="http://rdaregistry.info/Elements/p/"
+    xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+    xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
     xmlns:fake="http://fakePropertiesForDemo" xmlns:uwf="http://universityOfWashington/functions"
     exclude-result-prefixes="marc ex uwf" version="3.0">
     
@@ -322,31 +325,115 @@
         </xsl:for-each>
     </xsl:template>
     
-    <xsl:template match="marc:datafield[@tag = '043']"  mode="wor" expand-text="true">
+    <xsl:template match="marc:datafield[@tag = '043']"  
+        mode="wor" expand-text="yes">
         <xsl:call-template name="getmarc"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdawd:P10321 rdf:datatype="http://id.loc.gov/vocabulary/geographicAreas"
-                >{replace(.,'-+$','')}</rdawd:P10321>
+            <rdawo:P10321 rdf:resource="{concat('http://id.loc.gov/vocabulary/geographicAreas/', replace(.,'-+$',''))}"/>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'b']">
-            <xsl:if test="following-sibling::marc:subfield[@code = '2'][1] != 'marcgac'">
-                <rdawd:P10321
-                    rdf:datatype="{'http://marc2rda.edu/fake/datatype/'||following-sibling::marc:subfield[@code = '2'][1]}"
-                    >{.}</rdawd:P10321>
-            </xsl:if>
-            <xsl:if test="following-sibling::marc:subfield[@code = '2'][1] = 'marcgac'">
-                <rdawd:P10321 rdf:datatype="http://id.loc.gov/vocabulary/geographicAreas"
-                    >{replace(.,'-+$','')}</rdawd:P10321>
+            <xsl:if test="following-sibling::marc:subfield[@code = '2'][1]">
+                <rdawd:P10321 rdf:resource="{uwf:placeIRI(., .)}"/>
             </xsl:if>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'c']">
-            <rdawd:P10321 rdf:datatype="http://purl.org/dc/terms/ISO3166">{.}</rdawd:P10321>
+            <rdawd:P10321 rdf:resource="{uwf:placeIRI(., .)}"/>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = '0']">
-            <xsl:comment>Unused $0 value in field 043</xsl:comment>
+            <xsl:choose>
+                <xsl:when test="contains(., 'id.loc.gov/vocabulary/geographicAreas')">
+                    <rdawo:P10321 rdf:resource="{.}"/>
+                </xsl:when>
+                <xsl:when test="contains(., 'id.loc.gov/authorities/names/')">
+                    <xsl:variable name="gac" select="uwf:lcNamesToGeographicAreas(.)"/>
+                    <xsl:choose>
+                        <xsl:when test="$gac">
+                            <rdawo:P10321 rdf:resource="{concat('http://id.loc.gov/vocabulary/geographicAreas/', replace($gac,'-+$',''))}"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:comment>Geographic Area Code could not be retrieved from {.}</xsl:comment>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:comment>Unable to parse 040 $0 value of {.}</xsl:comment>
+                </xsl:otherwise>
+            </xsl:choose>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = '1']">
-            <rdawo:P10321 rdf:resource="{.}"/>
+            <xsl:choose>
+                <xsl:when test="contains(., 'id.loc.gov/vocabulary/geographicAreas')">
+                    <rdawo:P10321 rdf:resource="{.}"/>
+                </xsl:when>
+                <xsl:when test="contains(., 'id.loc.gov/authorities/names/')">
+                    <xsl:variable name="gac" select="uwf:lcNamesToGeographicAreas(.)"/>
+                    <xsl:choose>
+                        <xsl:when test="$gac">
+                            <rdawo:P10321 rdf:resource="{concat('http://id.loc.gov/vocabulary/geographicAreas/', replace($gac,'-+$',''))}"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:comment>Geographic Area Code could not be retrieved from {.}</xsl:comment>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:when>
+                <xsl:when test="contains(., 'id.loc.gov/rwo/')">
+                    <xsl:variable name="id">
+                        <xsl:variable name="tokenizedIRI" select="tokenize(., '/')"/>
+                        <xsl:value-of select="$tokenizedIRI[last()]"/>
+                    </xsl:variable>
+                    <xsl:variable name="authorityFile" select="concat('http://id.loc.gov/authorities/names/', $id)"/>
+                    <xsl:variable name="gac" select="uwf:lcNamesToGeographicAreas($authorityFile)"/>
+                    <xsl:choose>
+                        <xsl:when test="$gac">
+                            <rdawo:P10321 rdf:resource="{concat('http://id.loc.gov/vocabulary/geographicAreas/', replace($gac,'-+$',''))}"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:comment>Geographic Area Code could not be retrieved from {$authorityFile}</xsl:comment>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:when>
+                <xsl:otherwise>
+                    <rdawo:P10321 rdf:resource="{.}"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '043']"
+        mode="pla" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'b']">
+            <xsl:if test="following-sibling::marc:subfield[@code = '2'][1]">
+                <rdf:Description rdf:about="{uwf:placeIRI(., .)}">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+                    <rdapo:P70020 rdf:resource="{uwf:nomenIRI(., 'pla/nom')}"/>
+                </rdf:Description>
+            </xsl:if>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'c']">
+            <rdf:Description rdf:about="{uwf:placeIRI(., .)}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+                <rdapo:P70020 rdf:resource="{uwf:nomenIRI(., 'pla/nom')}"/>
+            </rdf:Description>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '043']"
+        mode="nom" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'b']">
+            <xsl:if test="following-sibling::marc:subfield[@code = '2'][1]">
+                <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom')}">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                    <rdand:P80068>{.}</rdand:P80068>
+                    <rdand:P80069>{following-sibling::marc:subfield[@code = '2'][1]}</rdand:P80069>
+                </rdf:Description>
+            </xsl:if>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'c']">
+            <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom')}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                <rdand:P80068>{.}</rdand:P80068>
+                <rdan:P80069 rdf:resource="http://purl.org/dc/terms/ISO3166"/>
+            </rdf:Description>
         </xsl:for-each>
     </xsl:template>
     
