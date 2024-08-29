@@ -39,10 +39,17 @@
         </rdamd:P30137>
     </xsl:template>
     
-<!--    <xsl:template match="marc:datafield[@tag = '334']" 
+   <xsl:template match="marc:datafield[@tag = '334'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '334']" 
         mode="man">
-        <xsl:copy-of select="uwf:rdaLookup('rdami', 'single unit')"/>
-    </xsl:template>-->
+        <xsl:call-template name="getmarc"/>
+        <xsl:call-template name="F334-string"/>
+        <xsl:call-template name="F334-iri"/>
+    </xsl:template>
+
+    <xsl:template match="marc:datafield[@tag = '334'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '334-00']" 
+        mode="con">
+        <xsl:call-template name="F334-concept"/>
+    </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '336']" mode="exp">
         <!--<xsl:call-template name="getmarc"/>-->
