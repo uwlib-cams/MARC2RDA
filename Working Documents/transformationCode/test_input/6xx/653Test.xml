@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">6xx-test1</marc:controlfield> 
+        <marc:datafield tag="653" ind1=" " ind2="0">
+            <marc:subfield code="a">Mann</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1=" " ind2="1">
+            <marc:subfield code="a">Joyce</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1=" " ind2="2">
+            <marc:subfield code="a">UNICEF</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1=" " ind2="3">
+            <marc:subfield code="a">Meeting name</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1=" " ind2="4">
+            <marc:subfield code="a">Chronological term</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1=" " ind2="5">
+            <marc:subfield code="a">Dublin</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1=" " ind2="6">
+            <marc:subfield code="a">Genre/Form term</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

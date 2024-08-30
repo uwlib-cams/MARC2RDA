@@ -1447,7 +1447,7 @@
 
     <!-- 653 - Index Term - Uncontrolled -->
     <xsl:template
-        match="marc:datafield[@tag = '654']"
+        match="marc:datafield[@tag = '653']"
         mode="wor">
         <xsl:call-template name="getmarc"/>
         <xsl:variable name="prefLabel">
@@ -1455,16 +1455,24 @@
         </xsl:variable>
         <xsl:choose>
             <xsl:when test="@ind2 = '1'">
-                <!-- person -->
+                <rdawd:P10261>
+                    <xsl:value-of select="$prefLabel"/>
+                </rdawd:P10261>
             </xsl:when>
             <xsl:when test="@ind2 = '2' or @ind2 = '3'">
-                <!-- corporate body -->
+                <rdawd:P10263>
+                    <xsl:value-of select="$prefLabel"/>
+                </rdawd:P10263>
             </xsl:when>
             <xsl:when test="@ind2 = '4'">
-                <!-- timespan -->
+                <rdawd:P10322>
+                    <xsl:value-of select="$prefLabel"/>
+                </rdawd:P10322>
             </xsl:when>
             <xsl:when test="@ind2 = '5'">
-                <!-- place -->
+                <rdawd:P10321>
+                    <xsl:value-of select="$prefLabel"/>
+                </rdawd:P10321>
             </xsl:when>
             <xsl:when test="@ind2 = '6'">
                 <rdawd:P10004>
