@@ -14,7 +14,7 @@
         <!-- rdami term and code (will output duplicate) -->
         <marc:datafield tag="334" ind1=" " ind2=" ">
             <marc:subfield code="a">multiple unit</marc:subfield>
-            <marc:subfield code="b">mu</marc:subfield>
+            <marc:subfield code="b">1005</marc:subfield>
             <marc:subfield code="2">rdami</marc:subfield>
         </marc:datafield>
 
@@ -44,7 +44,7 @@
 
         <!-- no $2, with $b only -->
         <marc:datafield tag="334" ind1=" " ind2=" ">
-            <marc:subfield code="b">su</marc:subfield>
+            <marc:subfield code="b">1001</marc:subfield>
         </marc:datafield>
         
         <!-- linked 880 -->

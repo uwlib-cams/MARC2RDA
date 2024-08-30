@@ -13,7 +13,8 @@
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/334-test1exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F334 ## $a single unit $2 rdami</fake:marcfield>
       <rdam:P30003 rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/><!--rdam:P30003 = has mode of issuance-->
-      <fake:marcfield>F334 ## $a multiple unit $b mu $2 rdami</fake:marcfield>
+      <fake:marcfield>F334 ## $a multiple unit $b 1005 $2 rdami</fake:marcfield>
+      <rdam:P30003 rdf:resource="http://rdaregistry.info/termList/ModeIssue/1005"/><!--rdam:P30003 = has mode of issuance-->
       <rdam:P30003 rdf:resource="http://rdaregistry.info/termList/ModeIssue/1005"/><!--rdam:P30003 = has mode of issuance-->
       <fake:marcfield>F334 ## $1 http://www.rdaregistry.info/termList/ModeIssue/#1001</fake:marcfield>
       <rdam:P30003 rdf:resource="http://www.rdaregistry.info/termList/ModeIssue/#1001"/><!--rdam:P30003 = has mode of issuance-->
@@ -23,8 +24,8 @@
       <rdam:P30003 rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/><!--rdam:P30003 = has mode of issuance-->
       <fake:marcfield>F334 ## $a single unit</fake:marcfield>
       <rdamd:P30003>single unit</rdamd:P30003><!--rdamd:P30003 = has mode of issuance-->
-      <fake:marcfield>F334 ## $b su</fake:marcfield>
-      <rdamd:P30003>su</rdamd:P30003><!--rdamd:P30003 = has mode of issuance-->
+      <fake:marcfield>F334 ## $b 1001</fake:marcfield>
+      <rdamd:P30003>1001</rdamd:P30003><!--rdamd:P30003 = has mode of issuance-->
       <fake:marcfield>F334 ## $6 880-01 $a single unit $2 rdami</fake:marcfield>
       <rdam:P30003 rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/><!--rdam:P30003 = has mode of issuance-->
       <fake:marcfield>F880 ## $6 334-01 $a single unit $2 rdami</fake:marcfield>
