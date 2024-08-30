@@ -455,6 +455,24 @@
         </xsl:for-each>
     </xsl:template>
     
+    <!-- 051 - Library of Congress Copy, Issue, Offprint Statement -->
+    <xsl:template match="marc:datafield[@tag = '051']" 
+        mode="wor" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <rdaw:P10256 rdf:resource="{uwf:conceptIRI('lcc', .)}"/>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '051']" 
+        mode="con" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <rdf:Description rdf:about="{uwf:conceptIRI('lcc', .)}">
+                <xsl:copy-of select="uwf:fillClassConcept('lcc', ., ., '051')"/>
+            </rdf:Description>
+        </xsl:for-each>
+    </xsl:template>
+    
     <!-- 074 - GPO Item Number -->
     <xsl:template match="marc:datafield[@tag = '074']" mode="ite" expand-text="yes">
         <xsl:param name="baseIRI"/>
