@@ -450,7 +450,7 @@
         mode="con" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdf:Description rdf:about="{uwf:conceptIRI('lcc', .)}">
-                <xsl:copy-of select="uwf:fillConcept('', 'lcc', ., '050')"/>
+                <xsl:copy-of select="uwf:fillClassConcept('lcc', ., ., '050')"/>
             </rdf:Description>
         </xsl:for-each>
     </xsl:template>

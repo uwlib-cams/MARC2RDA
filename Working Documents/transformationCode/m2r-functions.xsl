@@ -266,6 +266,28 @@
         </xsl:if>
     </xsl:function>
     
+    <xsl:function name="uwf:fillClassConcept">
+        <xsl:param name="scheme"/>
+        <xsl:param name="notation"/>
+        <xsl:param name="altLabel"/>
+        <xsl:param name="fieldNum"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <xsl:if test="$notation">
+            <xsl:comment>rdf:datatype to be added</xsl:comment>
+            <skos:notation>
+                <xsl:value-of select="$notation"/>
+            </skos:notation>
+        </xsl:if>
+        <xsl:if test="$altLabel">
+            <skos:altLabel>
+                <xsl:value-of select="$altLabel"/>
+            </skos:altLabel>
+        </xsl:if>
+        <xsl:if test="$scheme">
+            <xsl:copy-of select="uwf:s2ConceptClassSchemes($scheme)"/>
+        </xsl:if>
+    </xsl:function>
+    
 <!-- subject headings -->
     <xsl:function name="uwf:ind2Thesaurus">
         <xsl:param name="ind2"/>
