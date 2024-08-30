@@ -351,7 +351,7 @@
     </xsl:template>
     
     <!-- 518 - Date/Time and Place of an Event Note -->
-    <!--<xsl:template match="marc:datafield[@tag='518'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '518']" 
+    <xsl:template match="marc:datafield[@tag='518'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '518']" 
         mode="exp" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:call-template name="getmarc"/>
@@ -373,11 +373,11 @@
         <xsl:for-each select="marc:subfield[@code = 'p']">
             <xsl:choose>
                 <xsl:when test="../marc:subfield[@code = '2']">
-                    <!-\- [Expression] → has related place of expression → [Place]  -\->
+                    <!-- [Expression] → has related place of expression → [Place]  -->
                     <rdamo:P50411 rdf:resource="{'http://marc2rda.edu/fake/pla/'||generate-id()}"/>
                 </xsl:when>
-                <xsl:otherwise> <!-\- if there is no $2 -\->
-                    <!-\- [Expression] → has related place of expression → "$p value" -\->
+                <xsl:otherwise> <!-- if there is no $2 -->
+                    <!-- [Expression] → has related place of expression → "$p value" -->
                     <rdamo:P50411>
                         <xsl:value-of select="." />
                     </rdamo:P50411 >
@@ -408,7 +408,7 @@
                 <xsl:when test="../marc:subfield[@code = '2']">
                     <rdf:Description rdf:about="{'http://marc2rda.edu/fake/pla/'||generate-id()}">
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-                        <!-\- [Place] → has access point → [Nomen] -\->
+                        <!-- [Place] → has access point → [Nomen] -->
                         <rdamo:P70018 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
                     </rdf:Description>
                 </xsl:when>
@@ -423,14 +423,14 @@
                 <xsl:when test="../marc:subfield[@code = '2']">
                     <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-                        <!-\- [Nomen] → has nomen string → [$p value] -\->
+                        <!-- [Nomen] → has nomen string → [$p value] -->
                         <rdan:P80068>
                             <xsl:value-of select="." />
                         </rdan:P80068>
                         <rdan:P80025 rdf:resource="{'http://marc2rda.edu/fake/pla/'||generate-id()}"/>
-                        <!-\- [Nomen] → has scheme of nomen → [URI for source of the term in $p] -\->
+                        <!-- [Nomen] → has scheme of nomen → [URI for source of the term in $p] -->
                         <xsl:copy-of select="uwf:s2Nomen(../marc:subfield[@code = '2'])"/>
-                        <!-\- [Nomen] → has related nomen of nomen → "$0 value" -\->
+                        <!-- [Nomen] → has related nomen of nomen → "$0 value" -->
                         <xsl:if test="../marc:subfield[@code = '0']">
                             <rdan:P80009>
                                 <xsl:value-of select="../marc:subfield[@code = '0']"></xsl:value-of>
@@ -440,7 +440,7 @@
                 </xsl:when>
             </xsl:choose>
         </xsl:for-each>
-    </xsl:template>-->
+    </xsl:template>
     
     <!-- 521 - Target Audience Note-->
     <xsl:template
