@@ -52,13 +52,13 @@
         <xsl:call-template name="F334-concept"/>
     </xsl:template>
     
-    <xsl:template match="marc:datafield[@tag = '336']" mode="exp">
-        <!--<xsl:call-template name="getmarc"/>-->
-        <!-- Accounted for: $a, $b, $2-temporary, $3-partial, $0, $1 -->
-        <!--Not accounted for: $2 needs permanent solution, $3 with $0 and $1, $6, $7, $8 -->
-        <!--<xsl:call-template name="F336-xx-ab0-string"/>
-        <xsl:call-template name="F336-xx-01-iri"/>-->
-    </xsl:template>
+<!--    <xsl:template match="marc:datafield[@tag = '336']" mode="exp">
+        <xsl:call-template name="getmarc"/>
+         Accounted for: $a, $b, $2-temporary, $3-partial, $0, $1 
+        <!-\-Not accounted for: $2 needs permanent solution, $3 with $0 and $1, $6, $7, $8 -\->
+        <xsl:call-template name="F336-xx-ab0-string"/>
+        <xsl:call-template name="F336-xx-01-iri"/>
+    </xsl:template>-->
     
     <!-- 337 - Media Type -->
     <xsl:template match="marc:datafield[@tag = '337'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '337']" 
@@ -318,7 +318,7 @@
         <xsl:call-template name="F347-concept"/>
     </xsl:template>
     
-    <xsl:template
+<!--    <xsl:template
         match="marc:datafield[@tag = '380'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '380']"
         mode="wor" expand-text="yes">
         <xsl:call-template name="getmarc"/>
@@ -333,10 +333,10 @@
                 </rdawd:P10330>
             </xsl:if>
         </xsl:for-each>
-        <!-- 0s, 1s, and 2s will need updating once decision is made -->
-        <!--<xsl:copy-of
+        <!-\- 0s, 1s, and 2s will need updating once decision is made -\->
+        <!-\-<xsl:copy-of
             select="uwf:conceptTest(marc:subfield[@code = '0'] | marc:subfield[@code = '1'], 'P10004')"
-        />-->
+        />-\->
         <xsl:for-each select="marc:subfield[@code = '1']">
             <rdaw:P10004>
                 <xsl:attribute name="rdf:resource">{.}</xsl:attribute> 
@@ -354,7 +354,7 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:for-each>
-    </xsl:template>
+    </xsl:template>-->
     
     <!--<xsl:template
         match="marc:datafield[@tag = '382'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '382']"

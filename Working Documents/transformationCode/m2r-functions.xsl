@@ -97,12 +97,6 @@
     
     <xsl:key name="schemeKey" match="madsrdf:hasMADSSchemeMember" use="madsrdf:Authority/@rdf:about"/>
     
-    <!-- This function will be deleted when functions using it have been updated -->
-    <xsl:function name="uwf:s2" expand-text="yes">
-        <xsl:param name="marcField"/>
-        <xsl:comment>Handle $2 here when decision is made</xsl:comment>
-    </xsl:function>
-    
     <!-- uwf:s2lookup returns an rdf:datatype, this will be deleted once all templates using it have been updated -->
     <xsl:function name="uwf:s2lookup" expand-text="true">
         <xsl:param name="code2"/>
