@@ -56,11 +56,11 @@
                 <xsl:choose>
                     <!-- If it's a 6XX field and not ind2 = 4, we use the source and aap -->
                     <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4')">
-                        <xsl:value-of select="'http://marc2rda.edu/fake/age/'||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                        <xsl:value-of select="'http://marc2rda.edu/fake/age/'||translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', '')||'/'||uwf:stripAllPunctuation($ap)"/>
                     </xsl:when>
                     <!-- same if it's not a 6XX field but there's a 2 -->
                     <xsl:when test="not(starts-with($field/@tag, '6')) and $field/marc:subfield[@code = '2']">
-                        <xsl:value-of select="'http://marc2rda.edu/fake/age/'||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2']), ' ', ''))||'/'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                        <xsl:value-of select="'http://marc2rda.edu/fake/age/'||translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', '')||'/'||uwf:stripAllPunctuation($ap)"/>
                     </xsl:when>
                     <!-- otherwise it's an opaque IRI -->
                     <xsl:otherwise>
@@ -97,10 +97,10 @@
             <xsl:otherwise>
                 <xsl:choose>
                     <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4')">
-                        <xsl:value-of select="'http://marc2rda.edu/fake/wor/'||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                        <xsl:value-of select="'http://marc2rda.edu/fake/wor/'||translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', '')||'/'||uwf:stripAllPunctuation($ap)"/>
                     </xsl:when>
                     <xsl:when test="not(starts-with($field/@tag, '6')) and $field/marc:subfield[@code = '2']">
-                        <xsl:value-of select="'http://marc2rda.edu/fake/wor/'||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2']), ' ', ''))||'/'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                        <xsl:value-of select="'http://marc2rda.edu/fake/wor/'||translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', '')||'/'||uwf:stripAllPunctuation($ap)"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:value-of select="'http://marc2rda.edu/fake/wor/'||generate-id($field)"/>
@@ -129,7 +129,7 @@
         <xsl:param name="type"/>
         <xsl:param name="ap"/>
         <xsl:param name="source"/>
-        <xsl:value-of select="'http://marc2rda.edu/fake/'||$type||'/'||encode-for-uri(translate(lower-case($source), ' ', ''))||'/'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+        <xsl:value-of select="'http://marc2rda.edu/fake/'||$type||'/'||translate(lower-case($source), ' ', '')||'/'||uwf:stripAllPunctuation($ap)"/>
     </xsl:function>
     
     <xsl:function name="uwf:timespanIRI">
@@ -149,11 +149,11 @@
             </xsl:when>
             <xsl:otherwise>
                 <xsl:choose>
-                    <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4')">
-                        <xsl:value-of select="'http://marc2rda.edu/fake/timespan/'||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                    <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4' or $field/@ind2 = ' ' or $field/@ind2 = '7')">
+                        <xsl:value-of select="'http://marc2rda.edu/fake/timespan/'||translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', '')||'/'||uwf:stripAllPunctuation($ap)"/>
                     </xsl:when>
-                    <xsl:when test="not(starts-with($field/@tag, '6')) and $field/marc:subfield[@code = '2']">
-                        <xsl:value-of select="'http://marc2rda.edu/fake/timespan/'||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2']), ' ', ''))||'/'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                    <xsl:when test="$field/marc:subfield[@code = '2']">
+                        <xsl:value-of select="'http://marc2rda.edu/fake/timespan/'||translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', '')||'/'||uwf:stripAllPunctuation($ap)"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:value-of select="'http://marc2rda.edu/fake/timespan/'||generate-id($field)"/>
@@ -168,11 +168,11 @@
         <xsl:param name="node"/>
         <xsl:param name="ap"/>
         <xsl:choose>
-            <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4')">
-                <xsl:value-of select="'http://marc2rda.edu/fake/timespan/'||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+            <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4' or $field/@ind2 = ' ' or $field/@ind2 = '7')">
+                <xsl:value-of select="'http://marc2rda.edu/fake/timespan/'||translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', '')||'/'||uwf:stripAllPunctuation($ap)"/>
             </xsl:when>
-            <xsl:when test="not(starts-with($field/@tag, '6')) and $field/marc:subfield[@code = '2']">
-                <xsl:value-of select="'http://marc2rda.edu/fake/timespan/'||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2']), ' ', ''))||'/'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+            <xsl:when test="$field/marc:subfield[@code = '2']">
+                <xsl:value-of select="'http://marc2rda.edu/fake/timespan/'||translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', '')||'/'||uwf:stripAllPunctuation($ap)"/>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="'http://marc2rda.edu/fake/timespan/'||generate-id($node)"/>
@@ -197,11 +197,11 @@
             </xsl:when>
             <xsl:otherwise>
                 <xsl:choose>
-                    <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4')">
-                        <xsl:value-of select="'http://marc2rda.edu/fake/place/'||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                    <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4' or $field/@ind2 = ' ' or $field/@ind2 = '7')">
+                        <xsl:value-of select="'http://marc2rda.edu/fake/place/'||translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', '')||'/'||uwf:stripAllPunctuation($ap)"/>
                     </xsl:when>
-                    <xsl:when test="not(starts-with($field/@tag, '6')) and $field/marc:subfield[@code = '2']">
-                        <xsl:value-of select="'http://marc2rda.edu/fake/place/'||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2']), ' ', ''))||'/'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                    <xsl:when test="$field/marc:subfield[@code = '2']">
+                        <xsl:value-of select="'http://marc2rda.edu/fake/place/'||translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', '')||'/'||uwf:stripAllPunctuation($ap)"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:value-of select="'http://marc2rda.edu/fake/place/'||generate-id($field)"/>
@@ -216,11 +216,11 @@
         <xsl:param name="node"/>
         <xsl:param name="ap"/>
         <xsl:choose>
-            <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4')">
-                <xsl:value-of select="'http://marc2rda.edu/fake/place/'||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+            <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4' or $field/@ind2 = ' ' or $field/@ind2 = '7')">
+                <xsl:value-of select="'http://marc2rda.edu/fake/place/'||translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', '')||'/'||uwf:stripAllPunctuation($ap)"/>
             </xsl:when>
-            <xsl:when test="not(starts-with($field/@tag, '6')) and $field/marc:subfield[@code = '2']">
-                <xsl:value-of select="'http://marc2rda.edu/fake/place/'||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2']), ' ', ''))||'/'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+            <xsl:when test="$field/marc:subfield[@code = '2']">
+                <xsl:value-of select="'http://marc2rda.edu/fake/place/'||translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', '')||'/'||uwf:stripAllPunctuation($ap)"/>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="'http://marc2rda.edu/fake/place/'||generate-id($node)"/>
@@ -232,7 +232,7 @@
     <xsl:function name="uwf:conceptIRI">
         <xsl:param name="scheme"/>
         <xsl:param name="value"/>
-        <xsl:value-of select="'http://marc2rda.edu/fake/concept/'||encode-for-uri(translate(lower-case($scheme), ' ', ''))||'/'||encode-for-uri(uwf:stripAllPunctuation($value))"/>
+        <xsl:value-of select="'http://marc2rda.edu/fake/concept/'||translate(lower-case($scheme), ' ', '')||'/'||uwf:stripAllPunctuation($value)"/>
     </xsl:function>
 
     <xsl:function name="uwf:subjectIRI">

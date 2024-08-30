@@ -66,7 +66,7 @@
     
     <xsl:template name="F506-xx-f2">
         <xsl:if test="marc:subfield[@code = '2']">
-            <xsl:variable name="sub2" select="marc:subfield[@code = '2']"/>
+            <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
             
             <xsl:variable name="linked880">
                 <xsl:if test="@tag = '506' and marc:subfield[@code = '6']">
@@ -773,7 +773,7 @@
         <xsl:for-each select="marc:subfield[@code = 'b'][following-sibling::marc:subfield[@code = '2']]">
             <xsl:text>Controlled term: {.}; </xsl:text>
         </xsl:for-each>
-        <xsl:for-each select="marc:subfield[@code = '2'][preceding-sibling::marc:subfield[@code = 'b']]">
+        <xsl:for-each select="marc:subfield[@code = '2'][preceding-sibling::marc:subfield[@code = 'b']][1]">
             <xsl:text>Source of term: {.}</xsl:text>
         </xsl:for-each>
     </xsl:template>

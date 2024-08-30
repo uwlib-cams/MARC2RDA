@@ -324,7 +324,7 @@
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdawd:P10004>
                 <xsl:if test="../marc:subfield[@code = '2']">
-                    <xsl:copy-of select="uwf:s2lookup(../marc:subfield[@code = '2'])"/>
+                    <xsl:copy-of select="uwf:s2lookup(../marc:subfield[@code = '2'][1])"/>
                 </xsl:if>{.}</rdawd:P10004>
             <xsl:if test="../marc:subfield[@code = '3']">
                 <rdawd:P10330>

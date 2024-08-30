@@ -142,30 +142,9 @@
                         </rdamd:P30134>
                     </xsl:for-each>
                 </xsl:when>
-                <xsl:when test="not(ends-with(preceding-sibling::*[1], '='))">
-                    <xsl:for-each select="tokenize(., ' = ')">
-                        <rdamd:P30142>
-                            <xsl:choose>
-                                <xsl:when test="ends-with(., '...')">
-                                    <xsl:value-of select="."/>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <xsl:value-of select="replace(., '\s*[/:\.=,]$', '') => translate('[]', '')"/>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                        </rdamd:P30142>
-                    </xsl:for-each>
-                </xsl:when>
                 <xsl:otherwise>
                     <rdamd:P30142>
-                        <xsl:choose>
-                            <xsl:when test="ends-with(., '...')">
-                                <xsl:value-of select="."/>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:value-of select="replace(., '\s*[/:\.=,]$', '') => translate('[]', '')"/>
-                            </xsl:otherwise>
-                        </xsl:choose>
+                        <xsl:value-of select="replace(., '\s*[/:=,]$', '') => translate('[]', '')"/>
                     </rdamd:P30142>
                 </xsl:otherwise>
             </xsl:choose>
@@ -174,34 +153,11 @@
     <!-- F245-xx-c allows for two conditions: when there is ' = ' in the subfield and when there isn't -->
     <xsl:template name="F245-xx-c">
         <xsl:for-each select="marc:subfield[@code = 'c']">
-            <xsl:choose>
-                <xsl:when test="contains(.,' = ')">
-                    <xsl:for-each select="tokenize(., ' = ')">
-                        <rdamd:P30105>
-                            <xsl:choose>
-                                <xsl:when test="ends-with(., '...')">
-                                    <xsl:value-of select="."/>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <xsl:value-of select="replace(., '\s*[\.,;=/:]$', '') => translate('[]', '')"/>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                        </rdamd:P30105>
-                    </xsl:for-each>
-                </xsl:when>
-                <xsl:otherwise>
-                    <rdamd:P30105>
-                        <xsl:choose>
-                            <xsl:when test="ends-with(., '...')">
-                                <xsl:value-of select="."/>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:value-of select="replace(., '\s*[\.,;=/:]$', '') => translate('[]', '')"/>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </rdamd:P30105>
-                </xsl:otherwise>
-            </xsl:choose>
+            <xsl:for-each select="tokenize(., ' = ')">
+                <rdamd:P30105>
+                    <xsl:value-of select="replace(., '\s*[;=/:,]$', '') => translate('[]', '')"/>
+                </rdamd:P30105>
+            </xsl:for-each>
         </xsl:for-each>
     </xsl:template>
     <xsl:template name="F245-xx-f-g">

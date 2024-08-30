@@ -153,7 +153,7 @@
                         </xsl:when>
                         <xsl:when test="../@ind1 = '7'">
                             <xsl:if test="../marc:subfield[@code = '2']">
-                                <xsl:copy-of select="uwf:s2Nomen(../marc:subfield[@code = '2'])"/>
+                                <xsl:copy-of select="uwf:s2Nomen(../marc:subfield[@code = '2'][1])"/>
                             </xsl:if>
                         </xsl:when>
                     </xsl:choose>

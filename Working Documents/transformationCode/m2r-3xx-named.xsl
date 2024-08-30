@@ -35,7 +35,7 @@
             <xsl:choose>
                 <!-- if there's a $2 -->
                 <xsl:when test="marc:subfield[@code = '2']">
-                    <xsl:variable name="sub2" select="marc:subfield[@code = '2']"/>
+                    <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
                     <xsl:choose>
                         <!-- when $2 starts with rda, we lookup the $2 code and then the $a/$b terms from there-->
                         <xsl:when test="matches($sub2, '^rda.+')">
@@ -125,7 +125,7 @@
         <!-- mint concepts when $2 is not rdamedia or rdamt -->
         <xsl:if test="not(marc:subfield[@code = '1']) and not(contains(marc:subfield[@code = '0'], 'http'))">
             <xsl:if test="marc:subfield[@code = '2']">
-                <xsl:variable name="sub2" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
                 <xsl:variable name="linked880">
                     <xsl:if test="@tag = '334' and marc:subfield[@code = '6']">
                         <xsl:variable name="occNum"
@@ -273,15 +273,15 @@
         <xsl:if test="marc:subfield[@code = '2']">
             <xsl:choose>
                 <xsl:when
-                    test="matches(marc:subfield[@code = '2'], '^rda.+') and not(contains(marc:subfield[@code = '0'], 'http:')) and not(marc:subfield[@code = '1'])">
-                    <xsl:comment>Source of rdaed:P20001 'hasContentType' value is coded '<xsl:value-of select="marc:subfield[@code = '2']"/>': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.</xsl:comment>
+                    test="matches(marc:subfield[@code = '2'][1], '^rda.+') and not(contains(marc:subfield[@code = '0'], 'http:')) and not(marc:subfield[@code = '1'])">
+                    <xsl:comment>Source of rdaed:P20001 'hasContentType' value is coded '<xsl:value-of select="marc:subfield[@code = '2'][1]"/>': lookup the value of rdaed:P20001 in that source, retrieve the IRI and insert it into the data as the direct value of rdaeo:P20001.</xsl:comment>
                 </xsl:when>
                 <xsl:when
-                    test="not(matches(marc:subfield[@code = '2'], '^rda.+')) and not(contains(marc:subfield[@code = '0'], 'http:')) and not(marc:subfield[@code = '1'])">
-                    <xsl:comment>Source of the rdaed:P20001 'hasContentType' value is coded '<xsl:value-of select="marc:subfield[@code = '2']"/>': it may be possible to consult that source to retrieve an IRI for the current value of rdaed:P20001.</xsl:comment>
+                    test="not(matches(marc:subfield[@code = '2'][1], '^rda.+')) and not(contains(marc:subfield[@code = '0'], 'http:')) and not(marc:subfield[@code = '1'])">
+                    <xsl:comment>Source of the rdaed:P20001 'hasContentType' value is coded '<xsl:value-of select="marc:subfield[@code = '2'][1]"/>': it may be possible to consult that source to retrieve an IRI for the current value of rdaed:P20001.</xsl:comment>
                 </xsl:when>
                 <xsl:when
-                    test="not(matches(marc:subfield[@code = '2'], '^rda.+')) and contains(marc:subfield[@code = '0'], 'http:') and not(marc:subfield[@code = '1'])"
+                    test="not(matches(marc:subfield[@code = '2'][1], '^rda.+')) and contains(marc:subfield[@code = '0'], 'http:') and not(marc:subfield[@code = '1'])"
                     ><!-- do nothing --></xsl:when>
                 <xsl:otherwise>
                     <xsl:comment>$2 source not needed as $2 is rda and the $0 or $1 should be the direct value of P20001</xsl:comment>
@@ -290,7 +290,7 @@
         </xsl:if>
     </xsl:template>
     <xsl:template name="F336-xx-01-iri">
-        <xsl:if test="matches(marc:subfield[@code = '2'], '^rda.+')">
+        <xsl:if test="matches(marc:subfield[@code = '2'][1], '^rda.+')">
             <xsl:for-each select="marc:subfield[@code = '0']">
                 <xsl:if test="contains(., 'http:')">
                     <rdaeo:P20001 rdf:resource="{replace(., '^\(uri\)','')}"/>
@@ -298,7 +298,7 @@
             </xsl:for-each>
         </xsl:if>
         <xsl:if
-            test="not(matches(marc:subfield[@code = '2'], '^rda.+')) or not(marc:subfield[@code = '2'])">
+            test="not(matches(marc:subfield[@code = '2'][1], '^rda.+')) or not(marc:subfield[@code = '2'][1])">
             <xsl:for-each select="marc:subfield[@code = '0']">
                 <xsl:if test="contains(., 'http:')">
                     <xsl:comment>MARC data source at field 336 contains a $0 IRI value representing authority data without the presence of a $1; a solution for outputting these in RDA is not yet devised.</xsl:comment>
@@ -327,7 +327,7 @@
             <xsl:choose>
                 <!-- if there's a $2 -->
                 <xsl:when test="marc:subfield[@code = '2']">
-                    <xsl:variable name="sub2" select="marc:subfield[@code = '2']"/>
+                    <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
                     <xsl:choose>
                         <!-- when $2 starts with rda, we lookup the $2 code and then the $a/$b terms from there-->
                         <xsl:when test="matches($sub2, '^rda.+')">
@@ -435,7 +435,7 @@
         <!-- mint concepts when $2 is not rdamedia or rdamt -->
         <xsl:if test="not(marc:subfield[@code = '1']) and not(contains(marc:subfield[@code = '0'], 'http'))">
             <xsl:if test="marc:subfield[@code = '2']">
-                <xsl:variable name="sub2" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
                 <xsl:variable name="linked880">
                     <xsl:if test="@tag = '337' and marc:subfield[@code = '6']">
                         <xsl:variable name="occNum"
@@ -562,7 +562,7 @@
             <xsl:choose>
                 <!-- if there's a $2 -->
                 <xsl:when test="marc:subfield[@code = '2']">
-                    <xsl:variable name="sub2" select="marc:subfield[@code = '2']"/>
+                    <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
                     <xsl:choose>
                         <!-- when $2 starts with rda (but isn't 'rda'), we look up the $2 code and then the $a/$b terms from there-->
                         <xsl:when test="matches($sub2, '^rda.+')">
@@ -669,7 +669,7 @@
     <xsl:template name="F338-concept">
         <xsl:if test="not(marc:subfield[@code = '1']) and not(contains(marc:subfield[@code = '0'], 'http'))">
             <xsl:if test="marc:subfield[@code = '2']">
-                <xsl:variable name="sub2" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
                 <xsl:variable name="linked880">
                     <xsl:if test="@tag = '338' and marc:subfield[@code = '6']">
                         <xsl:variable name="occNum"
@@ -839,7 +839,7 @@
             <!-- otherwise, there is no $0 that begins with 'http', no $1, OR there are these values but we can't know
               what property to use with them - then we check the $2 -->
             <xsl:if test="marc:subfield[@code = '2']">
-                <xsl:variable name="sub2" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
                 <!-- if there's a $6, retrieve a copy of the linked 880 field -->
                 <xsl:variable name="linked880">
                     <xsl:if test="@tag = '340' and marc:subfield[@code = '6']">
@@ -940,7 +940,7 @@
                         <xsl:choose>
                             <!-- $2 -->
                             <xsl:when test="../marc:subfield[@code = '2']">
-                                <xsl:variable name="sub2" select="../marc:subfield[@code = '2']"/>
+                                <xsl:variable name="sub2" select="../marc:subfield[@code = '2'][1]"/>
                                 <xsl:choose>
                                     <!-- when $2 starts with rda (but is not only 'rda'), we lookup the $2 code and then the term from there-->
                                     <xsl:when test="matches($sub2, '^rda.+')">
@@ -1058,7 +1058,7 @@
             and not(contains(marc:subfield[@code = '0'], 'http') and count(*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3' 
             or @code = '6' or @code = '8')]) = 1)">
             <xsl:if test="marc:subfield[@code = '2']">
-                <xsl:variable name="sub2" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
                 <xsl:variable name="linked880">
                     <xsl:if test="@tag = '340' and marc:subfield[@code = '6']">
                         <xsl:variable name="occNum"
@@ -1131,7 +1131,7 @@
                         <xsl:choose>
                             <!-- $2 -->
                             <xsl:when test="../marc:subfield[@code = '2']">
-                                <xsl:variable name="sub2" select="../marc:subfield[@code = '2']"/>
+                                <xsl:variable name="sub2" select="../marc:subfield[@code = '2'][1]"/>
                                 <xsl:choose>
                                     <xsl:when test="matches($sub2, '^rda.+')">
                                         <xsl:variable name="rdaIRI" select="uwf:rdaTermLookup($sub2, $subfield)"/>                                        
@@ -1303,7 +1303,7 @@
             or (marc:subfield[@code = 'a'] and marc:subfield[@code = 'b'])">
             <xsl:choose>
                 <xsl:when test="marc:subfield[@code = '2']">
-                    <xsl:variable name="sub2" select="marc:subfield[@code = '2']"/>
+                    <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
                     <xsl:choose>
                         <xsl:when test="matches($sub2, '^rda.+')">
                             <xsl:for-each select="marc:subfield[@code = 'a']">
@@ -1373,7 +1373,7 @@
             and (not(marc:subfield[@code = '1']) and not(contains(marc:subfield[@code = '0'], 'http'))))
             or (marc:subfield[@code = 'a'] and marc:subfield[@code = 'b'])">
             <xsl:if test="marc:subfield[@code = '2']">
-                <xsl:variable name="sub2" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
                 <xsl:variable name="linked880">
                     <xsl:if test="@tag = '346' and marc:subfield[@code = '6']">
                         <xsl:variable name="occNum"
@@ -1465,7 +1465,7 @@
             and not(contains(marc:subfield[@code = '0'], 'http') and count(*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3' 
             or @code = '6' or @code = '8')]) = 1)">
             <xsl:if test="marc:subfield[@code = '2']">
-                <xsl:variable name="sub2" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
                 <xsl:variable name="linked880">
                     <xsl:if test="@tag = '347' and marc:subfield[@code = '6']">
                         <xsl:variable name="occNum"
@@ -1535,7 +1535,7 @@
                         <xsl:choose>
                             <!-- $2 -->
                             <xsl:when test="../marc:subfield[@code = '2']">
-                                <xsl:variable name="sub2" select="../marc:subfield[@code = '2']"/>
+                                <xsl:variable name="sub2" select="../marc:subfield[@code = '2'][1]"/>
                                 <xsl:choose>
                                     <xsl:when test="matches($sub2, '^rda.+')">
                                         <xsl:variable name="rdaIRI" select="uwf:rdaTermLookup($sub2, $subfield)"/>
@@ -1653,7 +1653,7 @@
     
     
     <xsl:template name="F382-xx-a_b_d_p_2-exp" expand-text="yes">
-        <xsl:variable name="s2code" select="marc:subfield[@code = '2']"/>
+        <xsl:variable name="s2code" select="marc:subfield[@code = '2'][1]"/>
         <xsl:variable name="musiccodeschemes"
             select="document('http://id.loc.gov/vocabulary/musiccodeschemes.madsrdf.rdf')"/>
         <xsl:variable name="sourceiri">
@@ -1708,7 +1708,7 @@
         />
     </xsl:template>
     <xsl:template name="F382-xx-a_b_d_p_2-wor" expand-text="yes">
-        <xsl:variable name="s2code" select="marc:subfield[@code = '2']"/>
+        <xsl:variable name="s2code" select="marc:subfield[@code = '2'][1]"/>
         <xsl:variable name="musiccodeschemes"
             select="document('http://id.loc.gov/vocabulary/musiccodeschemes.madsrdf.rdf')"/>
         <xsl:variable name="sourceiri">
