@@ -36,10 +36,10 @@
         mode="man">
         <xsl:call-template name="getmarc"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdamo:P30004 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
+            <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'z']">
-            <rdamo:P30004 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
+            <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
         </xsl:for-each>
         <xsl:if test="marc:subfield[@code = 'c']">
             <xsl:choose>
@@ -55,7 +55,7 @@
         mode="nom">
         <xsl:param name="baseIRI"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+            <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
                     <xsl:value-of select="translate(., ' :', '')"/>
@@ -74,7 +74,7 @@
             </rdf:Description>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'z']">
-            <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+            <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
                     <xsl:value-of select="translate(., ' :', '')"/>
@@ -109,7 +109,7 @@
             </xsl:when>
             <xsl:otherwise>
                 <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
-                    <rdamo:P30004 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
+                    <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
                 </xsl:for-each>
             </xsl:otherwise>
         </xsl:choose>
@@ -125,7 +125,7 @@
         <xsl:param name="baseIRI"/>
         <xsl:if test="@ind1 != '8'">
             <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
-                <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+                <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom')}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                     <rdand:P80068>
                         <xsl:value-of select="."/>
@@ -169,7 +169,7 @@
     <xsl:template match="marc:datafield[@tag = '026'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '026']"
         mode="man">
         <xsl:param name="baseIRI"/>
-        <rdamo:P30296 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
+        <rdamo:P30296 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
         <xsl:if test="marc:subfield[@code = '5']">
             <rdamo:P30103 rdf:resource="{concat($baseIRI,'ite', generate-id())}"/>
         </xsl:if>
@@ -178,7 +178,7 @@
     <xsl:template match="marc:datafield[@tag = '026'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '026']"
         mode="nom">
         <xsl:param name="baseIRI"/>
-        <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+        <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom')}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
             <rdand:P80068>
                 <xsl:call-template name="F026-xx-abcde"/>
@@ -209,7 +209,7 @@
         mode="man">
         <xsl:call-template name="getmarc"/>
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
-            <rdamo:P30004 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
+            <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
         </xsl:for-each>
     </xsl:template>
     
@@ -217,7 +217,7 @@
         mode="nom">
         <xsl:param name="baseIRI"/>
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
-            <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+            <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068><xsl:value-of select="."/></rdand:P80068>
                 <xsl:choose>
@@ -246,13 +246,13 @@
         <xsl:call-template name="getmarc"/>
         <xsl:choose>
             <xsl:when test="@ind1 = '3'">
-                <rdamo:P30065 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
+                <rdamo:P30065 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
             </xsl:when>
             <xsl:when test="@ind1 = '2'">
-                <rdamo:P30066 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
+                <rdamo:P30066 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
             </xsl:when>
             <xsl:otherwise>
-                <rdamo:P30004 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
+                <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -260,7 +260,7 @@
     <xsl:template match="marc:datafield[@tag = '028'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '028']" 
         mode="nom">
         <xsl:param name="baseIRI"/>
-        <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+        <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom')}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
             <rdand:P80068><xsl:value-of select="marc:subfield[@code = 'a']"/></rdand:P80068>
             <xsl:if test="marc:subfield[@code = 'b']">
@@ -295,7 +295,7 @@
         <xsl:call-template name="getmarc"/>
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
             <xsl:if test="matches(., '^[A-Z]')">
-                <rdawd:P10002 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
+                <rdawd:P10002 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
@@ -305,7 +305,7 @@
         <xsl:call-template name="getmarc"/>
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
             <xsl:if test="matches(., '^[0-9]')">
-                <rdamd:P30004 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
+                <rdamd:P30004 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
@@ -314,7 +314,7 @@
         mode="nom">
         <xsl:param name="baseIRI"/>
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
-            <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+            <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068><xsl:value-of select="."/></rdand:P80068>
                 <rdand:P80069>CODEN</rdand:P80069>
@@ -484,7 +484,7 @@
             <rdaid:P40001>{concat($controlNumber, 'ite', $genID)}</rdaid:P40001>
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
             <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
-                <rdaio:P40001 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
+                <rdaio:P40001 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
             </xsl:for-each>
         </rdf:Description>
     </xsl:template>
@@ -493,7 +493,7 @@
         <xsl:param name="baseIRI"/>
         <xsl:variable name="genID" select="generate-id()"/>
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
-            <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+            <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
                     <xsl:value-of select="."/>
@@ -512,10 +512,10 @@
         mode="man">
         <xsl:call-template name="getmarc"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdamo:P30004 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
+            <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'z']">
-            <rdamo:P30004 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
+            <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
         </xsl:for-each>
     </xsl:template>
     
@@ -523,7 +523,7 @@
         mode="nom">
         <xsl:param name="baseIRI"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+            <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
                     <xsl:value-of select="."/>
@@ -532,7 +532,7 @@
             </rdf:Description>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'z']">
-            <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+            <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
                     <xsl:value-of select="."/>
