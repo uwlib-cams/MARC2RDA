@@ -101,20 +101,14 @@
                 <!-- no $2 -->
                 <xsl:otherwise>
                     <xsl:for-each select="marc:subfield[@code = 'a']">
-                        <rdamd:P30002>
+                        <rdamd:P30003>
                             <xsl:value-of select="."/>
-                        </rdamd:P30002>
-                        <xsl:if test="../marc:subfield[@code = '3']">
-                            <rdamd:P30137>Media type {.} applies to the manifestation's {../marc:subfield[@code = '3']}</rdamd:P30137>
-                        </xsl:if>
+                        </rdamd:P30003>
                     </xsl:for-each>
                     <xsl:for-each select="marc:subfield[@code = 'b']">
-                        <rdamd:P30002>
+                        <rdamd:P30003>
                             <xsl:value-of select="."/>
-                        </rdamd:P30002>
-                        <xsl:if test="../marc:subfield[@code = '3']">
-                            <rdamd:P30137>Media type {.} applies to the manifestation's {../marc:subfield[@code = '3']}</rdamd:P30137>
-                        </xsl:if>
+                        </rdamd:P30003>
                     </xsl:for-each>
                 </xsl:otherwise>
             </xsl:choose>
@@ -128,10 +122,8 @@
                 <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
                 <xsl:variable name="linked880">
                     <xsl:if test="@tag = '334' and marc:subfield[@code = '6']">
-                        <xsl:variable name="occNum"
-                            select="concat('334-', substring(marc:subfield[@code = '6'], 5, 6))"/>
-                        <xsl:copy-of
-                            select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]"/>
+                        <xsl:variable name="occNum" select="concat('334-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                        <xsl:copy-of select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]"/>
                     </xsl:if>
                 </xsl:variable>
                 <xsl:if test="not(matches($sub2, '^rda.+'))">

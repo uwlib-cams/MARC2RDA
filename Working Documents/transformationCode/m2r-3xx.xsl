@@ -39,8 +39,9 @@
         </rdamd:P30137>
     </xsl:template>
     
-   <xsl:template match="marc:datafield[@tag = '334'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '334']" 
-        mode="man">
+    <!-- 334 - Mode of Issuance -->
+    <xsl:template match="marc:datafield[@tag = '334'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '334']" 
+            mode="man">
         <xsl:call-template name="getmarc"/>
         <xsl:call-template name="F334-string"/>
         <xsl:call-template name="F334-iri"/>
