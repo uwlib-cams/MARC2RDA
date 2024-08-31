@@ -473,6 +473,56 @@
         </xsl:for-each>
     </xsl:template>
     
+    <!-- 055 - Classification Numbers Assigned in Canada -->
+    <xsl:template match="marc:datafield[@tag = '055']" 
+        mode="wor" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
+        <xsl:choose>
+            <xsl:when test="@ind2 = '6' or @ind2 = '7' or @ind2 = '8' or @ind2 = '9'">
+                <xsl:choose>
+                    <xsl:when test="marc:subfield[@code = '2']">
+                        <xsl:for-each select="marc:subfield[@code = 'a']">
+                            <rdaw:P10256 rdf:resource="{uwf:conceptIRI(../marc:subfield[@code = '2'][1], .)}"/>
+                        </xsl:for-each>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <ex:ERROR>F055 with @ind2 of 6, 7, 8, or 9 missing subfield $2. Field not transformed.</ex:ERROR>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:for-each select="marc:subfield[@code = 'a']">
+                    <rdaw:P10256 rdf:resource="{uwf:conceptIRI('lcc', .)}"/>
+                </xsl:for-each>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '055']" 
+        mode="con" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <rdf:Description rdf:about="{uwf:conceptIRI('lcc', .)}">
+                <xsl:copy-of select="uwf:fillClassConcept('lcc', ., ., '051')"/>
+            </rdf:Description>
+        </xsl:for-each>
+        <xsl:choose>
+            <xsl:when test="@ind2 = '6' or @ind2 = '7' or @ind2 = '8' or @ind2 = '9'">
+                <xsl:if test="marc:subfield[@code = '2']">
+                    <xsl:for-each select="marc:subfield[@code = 'a']">
+                        <rdf:Description rdf:about="{uwf:conceptIRI(../marc:subfield[@code = '2'][1], .)}">
+                            <xsl:copy-of select="uwf:fillClassConcept(../marc:subfield[@code = '2'][1], ., ., '051')"/>
+                        </rdf:Description>
+                    </xsl:for-each>
+                </xsl:if>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:for-each select="marc:subfield[@code = 'a']">
+                    <rdaw:P10256 rdf:resource="{uwf:conceptIRI('lcc', .)}"/>
+                </xsl:for-each>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
     <!-- 074 - GPO Item Number -->
     <xsl:template match="marc:datafield[@tag = '074']" mode="ite" expand-text="yes">
         <xsl:param name="baseIRI"/>
