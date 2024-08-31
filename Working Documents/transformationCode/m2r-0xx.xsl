@@ -502,7 +502,7 @@
         mode="con" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdf:Description rdf:about="{uwf:conceptIRI('lcc', .)}">
-                <xsl:copy-of select="uwf:fillClassConcept('lcc', ., ., '051')"/>
+                <xsl:copy-of select="uwf:fillClassConcept('lcc', ., ., '055')"/>
             </rdf:Description>
         </xsl:for-each>
         <xsl:choose>
@@ -510,7 +510,7 @@
                 <xsl:if test="marc:subfield[@code = '2']">
                     <xsl:for-each select="marc:subfield[@code = 'a']">
                         <rdf:Description rdf:about="{uwf:conceptIRI(../marc:subfield[@code = '2'][1], .)}">
-                            <xsl:copy-of select="uwf:fillClassConcept(../marc:subfield[@code = '2'][1], ., ., '051')"/>
+                            <xsl:copy-of select="uwf:fillClassConcept(../marc:subfield[@code = '2'][1], ., ., '055')"/>
                         </rdf:Description>
                     </xsl:for-each>
                 </xsl:if>
@@ -521,6 +521,38 @@
                 </xsl:for-each>
             </xsl:otherwise>
         </xsl:choose>
+    </xsl:template>
+    
+    <!-- 060 - National Library of Medicine Call Number -->
+    <xsl:template match="marc:datafield[@tag = '060']" 
+        mode="wor" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <xsl:choose>
+                <xsl:when test="matches(., '(^Q[S-Z])|(^W)')">
+                    <rdaw:P10256 rdf:resource="{uwf:conceptIRI('nlm', .)}"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <rdaw:P10256 rdf:resource="{uwf:conceptIRI('lcc', .)}"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '060']" 
+        mode="con" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <rdf:Description rdf:about="{uwf:conceptIRI('lcc', .)}">
+                <xsl:choose>
+                    <xsl:when test="matches(., '(^Q[S-Z])|(^W)')">
+                        <xsl:copy-of select="uwf:fillClassConcept('nlm', ., ., '060')"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:copy-of select="uwf:fillClassConcept('lcc', ., ., '060')"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </rdf:Description>
+        </xsl:for-each>
     </xsl:template>
     
     <!-- 074 - GPO Item Number -->
