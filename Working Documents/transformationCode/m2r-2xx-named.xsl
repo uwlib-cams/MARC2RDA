@@ -19,11 +19,88 @@
      No other scenarios were considered.
     ISBD punctuation was eliminated.
 -->
+    <xsl:template name="F245-xx-anps-ISBD">
+        <xsl:variable name="isISBD">
+            <xsl:choose>
+                <xsl:when test="(substring(preceding-sibling::marc:leader, 19, 1) = 'i' or substring(preceding-sibling::marc:leader, 19, 1) = 'a')">
+                    <xsl:value-of select="true()"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="false()"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:choose>
+            <!-- a with no following n, p, or s subfields -->
+            <xsl:when test="marc:subfield[@code = 'a'][not(following-sibling::*)] or
+                marc:subfield[@code = 'a']/following-sibling::marc:subfield[1][not(@code = 'n' or @code = 'p' or @code = 's')]">
+                <rdamd:P30156>
+                    <xsl:choose>
+                        <!-- remove ending = : ; / if ISBD-->
+                        <!-- remove any square brackets [] -->
+                        <xsl:when test="$isISBD">
+                            <xsl:value-of select="replace(marc:subfield[@code = 'a'], '\s*[=:;/]$', '') => translate('[]', '')"/>
+                        </xsl:when>
+                        <!-- remove any square brackets [] if not ISBD -->
+                        <xsl:otherwise>
+                            <xsl:value-of select="translate(marc:subfield[@code = 'a'], '[]', '')"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </rdamd:P30156>
+                <!-- if square brackets [] were removed, add not on manifestation -->
+                <xsl:if test="contains(marc:subfield[@code = 'a'], '[') and contains(marc:subfield[@code = 'a'], ']')">
+                    <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137>
+                </xsl:if>
+            </xsl:when>
+            <!-- a with following n, p, s -->
+            <xsl:otherwise>
+                <!-- put together title from a and any directly following n, p, s fields -->
+                <!-- remove ending = : ; / -->
+                <xsl:variable name="title">
+                    <xsl:choose>
+                        <!-- remove ISBD punctuation if ISBD -->
+                        <xsl:when test="$isISBD">
+                            <xsl:value-of select="replace(marc:subfield[@code = 'a'], '\s*[=:;/]$', '')"/>
+                            <xsl:text> </xsl:text>
+                            <xsl:for-each select="marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::*[@code = 'b'])]">
+                                <xsl:value-of select="replace(., '\s*[=:;/]$', '')"/>
+                                <xsl:if test="position() != last()">
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                            <xsl:text> </xsl:text>
+                            <xsl:for-each select="marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::*[@code = 'b'])]">
+                                <xsl:value-of select="."/>
+                                <xsl:if test="position() != last()">
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                    
+                </xsl:variable>
+                <!-- remove any square brackets -->
+                <rdamd:P30156>
+                    <xsl:value-of select="translate($title, '[]', '')"/>
+                </rdamd:P30156>
+                <!-- if square brackets [] were removed, add not on manifestation -->
+                <xsl:if test="contains($title, '[') and contains($title, ']')">
+                    <xsl:if test="contains(marc:subfield[@code = 'a'], '[') and contains(marc:subfield[@code = 'a'], ']')">
+                        <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137>
+                    </xsl:if>
+                </xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
     <xsl:template name="F245-xx-anps">
         <xsl:if test="marc:subfield[@code = 'n'] or marc:subfield[@code = 'p'] or marc:subfield[@code = 's']">
             <xsl:choose>
                 <xsl:when test="not(ends-with(marc:subfield[@code = 'b']/preceding-sibling::*[1], '='))">
-                    <rdamd:P30134>
+                    <rdamd:P30156>
                         <xsl:for-each
                             select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'n'] | marc:subfield[@code = 'p'] | marc:subfield[@code = 's']">
                             <xsl:choose>
@@ -51,7 +128,7 @@
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:for-each>
-                    </rdamd:P30134>
+                    </rdamd:P30156>
                 </xsl:when>
                 <xsl:when test="marc:subfield[@code = 'b']">
                     <xsl:for-each select="marc:subfield[@code = 'b']">

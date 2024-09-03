@@ -27,11 +27,11 @@
         <xsl:for-each select="marc:subfield[@code='a']">
             <rdawd:P10088>
                 <xsl:choose>
-                    <xsl:when test="ends-with(., '...')">
-                        <xsl:value-of select="."/>
+                    <xsl:when test="(substring(../preceding-sibling::marc:leader, 19, 1) = 'i' or substring(../preceding-sibling::marc:leader, 19, 1) = 'a')">
+                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => translate('[]', '')"/>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="replace(., '\s*[\.,;=/:]$', '') => translate('[]', '')"/>
+                        <xsl:value-of select="."/>
                     </xsl:otherwise>
                 </xsl:choose>
             </rdawd:P10088>
@@ -40,13 +40,19 @@
     <xsl:template match="marc:datafield[@tag = '245'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '245']" 
         mode="man">
         <xsl:call-template name="getmarc"/>
-        <xsl:call-template name="F245-xx-anps"/>
-        <xsl:call-template name="F245-xx-a"/>
-        <xsl:call-template name="F245-xx-b"/>
-        <xsl:call-template name="F245-xx-c"/>
+        <xsl:choose>
+            <xsl:when
+                test="(substring(preceding-sibling::marc:leader, 19, 1) = 'i' or substring(preceding-sibling::marc:leader, 19, 1) = 'a')">
+                <xsl:call-template name="F245-xx-anps-ISBD"/>
+                
+              <!--  <xsl:call-template name="F245-xx-a"/>
+                <xsl:call-template name="F245-xx-b"/>-->
+            </xsl:when>
+        </xsl:choose>
+      <!--  <xsl:call-template name="F245-xx-c"/>
         <xsl:call-template name="F245-xx-f-g"/>
         <xsl:call-template name="F245-xx-h"/>
-        <xsl:call-template name="F245-xx-k"/>
+        <xsl:call-template name="F245-xx-k"/>-->
     </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '257'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '257']"
