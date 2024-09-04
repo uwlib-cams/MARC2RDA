@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim
+    http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>04538cam a2200577 i 4500</marc:leader>
+        <marc:controlfield tag="001">1423078359</marc:controlfield>
+        <marc:controlfield tag="005">20240828164108.6</marc:controlfield>
+        <marc:controlfield tag="008">240223t20222022wauab   obm   000 0 eng c</marc:controlfield>
+        <marc:controlfield tag="006">m     o  d s      </marc:controlfield>
+        <marc:controlfield tag="007">cr ||||||||||</marc:controlfield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAU</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="e">rda</marc:subfield>
+            <marc:subfield code="e">pn</marc:subfield>
+            <marc:subfield code="c">WAU</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="024" ind1="7" ind2=" ">
+            <marc:subfield code="a">1773/49682</marc:subfield>
+            <marc:subfield code="2">hdl</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="042" ind1=" " ind2=" ">
+            <marc:subfield code="a">pcc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="049" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAUW</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Laughlin, Madison Marie,</marc:subfield>
+            <marc:subfield code="e">author.</marc:subfield>
+            <marc:subfield code="1">http://www.wikidata.org/entity/Q130014744</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a"
+                >Patterns and drivers of conifer regeneration following stand-replacing wildfire across western Cascadia /</marc:subfield>
+            <marc:subfield code="c">Madison Marie Laughlin.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">[Seattle] :</marc:subfield>
+            <marc:subfield code="b">[University of Washington Libraries],</marc:subfield>
+            <marc:subfield code="c">[2022]</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="4">
+            <marc:subfield code="c">©2022</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 online resource (54 pages) :</marc:subfield>
+            <marc:subfield code="b">illustrations (some color), color maps</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer</marc:subfield>
+            <marc:subfield code="b">c</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">online resource</marc:subfield>
+            <marc:subfield code="b">cr</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="g">monochrome</marc:subfield>
+            <marc:subfield code="2">rdacc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="g">black and white</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="g">polychrome</marc:subfield>
+            <marc:subfield code="2">rdacc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="g">color</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="p">illustration</marc:subfield>
+            <marc:subfield code="2">rdaill</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="340" ind1=" " ind2=" ">
+            <marc:subfield code="p">map</marc:subfield>
+            <marc:subfield code="2">rdaill</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="347" ind1=" " ind2=" ">
+            <marc:subfield code="a">text file</marc:subfield>
+            <marc:subfield code="2">rdaft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="347" ind1=" " ind2=" ">
+            <marc:subfield code="b">PDF</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="502" ind1=" " ind2=" ">
+            <marc:subfield code="b">M.S.</marc:subfield>
+            <marc:subfield code="c">University of Washington</marc:subfield>
+            <marc:subfield code="d">2022</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="504" ind1=" " ind2=" ">
+            <marc:subfield code="a"
+                >Includes bibliographical references (pages 37-43).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="520" ind1="3" ind2=" ">
+            <marc:subfield code="a"
+                >Tree regeneration is a critical mechanism of forest resilience to stand-replacing wildfire. Post-fire tree regeneration dynamics have been relatively well-studied in historically fire-frequent forests across western North America, though are understudied within forests characterized by infrequent and severe fire regimes like those of the western Cascades in Washington and Oregon, USA (western Cascadia). Recent wildfire activity (2015-2020) in western Cascadia has provided a unique opportunity to address this knowledge gap. Here, we asked: how is post-fire conifer regeneration across western Cascadia affected by pre-fire stand age, burn-patch size, and topo-climatic conditions? We established 39 1-hectare long-term monitoring plots across strata of pre-fire stand age and forest zone in four wildfires in western Cascadia. At each plot, we collected data on post-fire conifer species composition and abundance. We used generalized linear models to test how conifer establishment rates (seedlings ha-1yr-1 above 10 cm) and regeneration rates (seedlings ha-1yr-1 of all heights) responded to pre-fire stand age/seral stage, distance to the nearest live seed source, and post-fire topo-climatic conditions. Conifer regeneration rates and tree species richness increased with pre-fire stand age/seral stage, regeneration rates decreased with greater distances to the nearest live seed source but were present out to 450 m, and establishment rates were greater in areas characterized by cooler and wetter macrosite (e.g. greater post-fire precipitation) and microsite (e.g., greater bryophyte ground cover) conditions. In general, initial seedling densities suggest that post-fire regeneration is abundant following stand-replacing fire in most areas across the region. For example, regeneration and establishment rates were above forest practice minimum density thresholds (i.e., 470 seedlings per ha) in 82.1% and 64.1% of plots, respectively. Our study provides critical insight on the drivers of post-fire tree regeneration following stand-replacing wildfires in western Cascadia, and informs what factors are likely to support greater forest resilience to fire. Our findings can help inform land management strategies for post-fire responses which is of critical importance under the uncertainties of climate change and fire in infrequent, stand-replacing fire regimes.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="588" ind1="0" ind2=" ">
+            <marc:subfield code="a"
+                >Online resource; title from PDF title page (ResearchWorks Archive, viewed February 23, 2024).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Forest regeneration</marc:subfield>
+            <marc:subfield code="z">Cascades (Or. and Wash.)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Conifers</marc:subfield>
+            <marc:subfield code="x">Effect of fires on</marc:subfield>
+            <marc:subfield code="z">Cascades (Or. and Wash.)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Conifers</marc:subfield>
+            <marc:subfield code="x">Regeneration</marc:subfield>
+            <marc:subfield code="z">Cascades (Or. and Wash.)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Cascades</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Conifer</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Recovery</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Regeneration</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Resilience</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Wildfire</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Ecology</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Forestry</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="4">
+            <marc:subfield code="a">Theses</marc:subfield>
+            <marc:subfield code="x">Forestry.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">dissertations.</marc:subfield>
+            <marc:subfield code="2">aat</marc:subfield>
+            <marc:subfield code="0">(CStmoGRI)aatgf300028029</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Academic theses.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Thèses et écrits académiques.</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)RVMGF-000001173</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Harvey, Brian J.,</marc:subfield>
+            <marc:subfield code="d">1981-</marc:subfield>
+            <marc:subfield code="e">degree supervisor.</marc:subfield>
+            <marc:subfield code="1">http://www.wikidata.org/entity/Q100701057</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="g">http://hdl.handle.net/1773/49682</marc:subfield>
+            <marc:subfield code="u">http://hdl.handle.net/1773/49682</marc:subfield>
+            <marc:subfield code="7">0</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

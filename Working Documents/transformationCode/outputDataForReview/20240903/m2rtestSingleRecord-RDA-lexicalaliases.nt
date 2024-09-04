@@ -1,0 +1,124 @@
+<http://marc2rda.edu/fake/concept/lcsh/forestregenerationcascadesorandwash> <http://www.w3.org/2004/02/skos/core#prefLabel> "Forest regeneration -- Cascades (Or. and Wash.)" .
+<http://fakeIRI2.edu/1423078359man> <http://fakePropertiesForDemomarcfield> "F264 #1 $a [Seattle] : $b [University of Washington Libraries], $c [2022]" .
+<http://www.wikidata.org/entity/Q130014744> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdaregistry.info/Elements/c/Person.en> .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/datatype/subject.en> "Regeneration" .
+<http://fakeIRI2.edu/1423078359man> <http://rdaregistry.info/Elements/m/colourContent.en> <http://rdaregistry.info/termList/RDAColourContent/1002> .
+<http://marc2rda.edu/fake/pla/nom/lcsh/cascadesorandwash> <http://rdaregistry.info/Elements/n/datatype/nomenString.en> "Cascades (Or. and Wash.)" .
+<http://marc2rda.edu/fake/concept/lcsh/regenerationcascadesorandwash> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/subject.en> <http://marc2rda.edu/fake/concept/lcsh/coniferseffectoffiresoncascadesorandwash> .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/categoryOfWork.en> <http://marc2rda.edu/fake/concept/lcgft/academictheses> .
+<http://fakeIRI2.edu/1423078359man> <http://fakePropertiesForDemomarcfield> "F340 ## $g black and white" .
+<http://fakeIRI2.edu/1423078359man> <http://fakePropertiesForDemomarcfield> "F588 0# $a Online resource; title from PDF title page (ResearchWorks Archive, viewed February 23, 2024)." .
+<http://fakeIRI2.edu/1423078359man> <http://rdaregistry.info/Elements/m/illustrativeContent.en> <http://rdaregistry.info/termList/IllusContent/1014> .
+<http://marc2rda.edu/fake/concept/rvmgf/thèsesetécritsacadémiques> <http://www.w3.org/2004/02/skos/core#prefLabel> "Thèses et écrits académiques." .
+<http://marc2rda.edu/fake/concept/lcsh/conifersregenerationcascadesorandwash> <http://www.w3.org/2004/02/skos/core#prefLabel> "Conifers -- Regeneration -- Cascades (Or. and Wash.)" .
+<http://www.wikidata.org/entity/Q130014744> <http://fakePropertiesForDemomarcfield> "F100 1# $a Laughlin, Madison Marie, $e author. $1 http://www.wikidata.org/entity/Q130014744" .
+<http://fakeIRI2.edu/1423078359man> <http://rdaregistry.info/Elements/m/datatype/noteOnManifestation.en> "Source of description: Online resource; title from PDF title page (ResearchWorks Archive, viewed February 23, 2024)." .
+<http://marc2rda.edu/fake/concept/lcsh/conifersregenerationcascadesorandwash> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/object/subjectPlace.en> <http://marc2rda.edu/fake/place/lcsh/cascadesorandwash> .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/datatype/subject.en> "Conifer" .
+<http://fakeIRI2.edu/1423078359man> <http://rdaregistry.info/Elements/m/colourContent.en> <http://rdaregistry.info/termList/RDAColourContent/1003> .
+<http://fakeIRI2.edu/1423078359wor> <http://fakePropertiesForDemomarcfield> "F655 #7 $a Academic theses. $2 lcgft" .
+<http://fakeIRI2.edu/1423078359man> <http://rdaregistry.info/Elements/m/datatype/titleProper.en> "Patterns and drivers of conifer regeneration following stand-replacing wildfire across western Cascadia" .
+<http://marc2rda.edu/fake/concept/aat/dissertations> <http://www.w3.org/2004/02/skos/core#prefLabel> "dissertations." .
+<http://marc2rda.edu/fake/concept/rvmgf/thèsesetécritsacadémiques> <http://www.w3.org/2004/02/skos/core#inScheme> <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> .
+<http://fakeIRI2.edu/1423078359man> <http://rdaregistry.info/Elements/m/mediaType.en> <http://id.loc.gov/vocabulary/mediaTypes/c> .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/subject.en> <http://marc2rda.edu/fake/concept/lcsh/regenerationcascadesorandwash> .
+<http://marc2rda.edu/fake/concept/lcgft/academictheses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://fakeIRI2.edu/1423078359man> <http://fakePropertiesForDemomarcfield> "F245 10 $a Patterns and drivers of conifer regeneration following stand-replacing wildfire across western Cascadia / $c Madison Marie Laughlin." .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/datatype/academicDegree.en> "M.S." .
+<http://marc2rda.edu/fake/concept/lcsh/effectoffiresoncascadesorandwash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://marc2rda.edu/fake/concept/lcsh/conifersregenerationcascadesorandwash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://fakeIRI2.edu/1423078359wor> <http://fakePropertiesForDemomarcfield> "F655 #7 $a Thèses et écrits académiques. $2 rvmgf $0 (CaQQLa)RVMGF-000001173" .
+<http://fakeIRI2.edu/1423078359man> <http://fakePropertiesForDemomarcfield> "F024 7# $a 1773/49682 $2 hdl" .
+<http://fakeIRI2.edu/1423078359man> <http://rdaregistry.info/Elements/m/datatype/colourContent.en> "color" .
+<http://fakeIRI2.edu/1423078359wor> <http://fakePropertiesForDemomarcfield> "F650 #0 $a Forest regeneration $z Cascades (Or. and Wash.)" .
+<http://fakeIRI2.edu/1423078359man> <http://rdaregistry.info/Elements/m/datatype/noteOnManifestation.en> "Copyright notice date: ©2022." .
+<http://fakeIRI2.edu/1423078359man> <http://rdaregistry.info/Elements/m/object/identifierForManifestation.en> <http://marc2rda.edu/fake/nom/d20e30> .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/datatype/yearDegreeGranted.en> "2022" .
+<http://fakeIRI2.edu/1423078359man> <http://rdaregistry.info/Elements/m/datatype/encodingFormat.en> "PDF" .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/object/degreeSupervisor.en> <http://www.wikidata.org/entity/Q100701057> .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/subject.en> <http://marc2rda.edu/fake/concept/lcsh/forestregenerationcascadesorandwash> .
+<http://fakeIRI2.edu/1423078359wor> <http://fakePropertiesForDemomarcfield> "F653 0# $a Conifer" .
+<http://fakeIRI2.edu/1423078359man> <http://fakePropertiesForDemomarcfield> "F340 ## $g polychrome $2 rdacc" .
+<http://fakeIRI2.edu/1423078359wor> <http://fakePropertiesForDemomarcfield> "F655 #4 $a Theses $x Forestry." .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/datatype/titleOfWork.en> "Patterns and drivers of conifer regeneration following stand-replacing wildfire across western Cascadia" .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/datatype/subject.en> "Resilience" .
+<http://fakeIRI2.edu/1423078359man> <http://rdaregistry.info/Elements/m/datatype/supplementaryContent.en> "Includes bibliographical references (pages 37-43)." .
+<http://www.wikidata.org/entity/Q130014744> <http://rdaregistry.info/Elements/a/datatype/accessPointForPerson.en> "Laughlin, Madison Marie" .
+<http://fakeIRI2.edu/1423078359man> <http://rdaregistry.info/Elements/m/fileType.en> <http://rdaregistry.info/termList/fileType/1002> .
+<http://www.wikidata.org/entity/Q100701057> <http://rdaregistry.info/Elements/a/datatype/accessPointForPerson.en> "Harvey, Brian J., 1981-" .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/subject.en> <http://marc2rda.edu/fake/concept/lcsh/conifersregenerationcascadesorandwash> .
+<http://marc2rda.edu/fake/concept/lcsh/forestregenerationcascadesorandwash> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
+<http://fakeIRI2.edu/1423078359wor> <http://fakePropertiesForDemomarcfield> "F245 10 $a Patterns and drivers of conifer regeneration following stand-replacing wildfire across western Cascadia / $c Madison Marie Laughlin." .
+<http://fakeIRI2.edu/1423078359wor> <http://fakePropertiesForDemomarcfield> "F502 ## $b M.S. $c University of Washington $d 2022" .
+<http://fakeIRI2.edu/1423078359man> <http://fakePropertiesForDemomarcfield> "F347 ## $b PDF" .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/datatype/subject.en> "Recovery" .
+<http://fakeIRI2.edu/1423078359man> <http://fakePropertiesForDemomarcfield> "F340 ## $p illustration $2 rdaill" .
+<http://fakeIRI2.edu/1423078359man> <http://fakePropertiesForDemomarcfield> "F337 ## $a computer $b c $2 rdamedia" .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/datatype/degreeGrantingInstitution.en> "University of Washington" .
+<http://www.wikidata.org/entity/Q100701057> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdaregistry.info/Elements/c/Person.en> .
+<http://fakeIRI2.edu/1423078359wor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdaregistry.info/Elements/c/Work.en> .
+<http://marc2rda.edu/fake/concept/lcgft/academictheses> <http://www.w3.org/2004/02/skos/core#prefLabel> "Academic theses." .
+<http://marc2rda.edu/fake/concept/rvmgf/thèsesetécritsacadémiques> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://fakeIRI2.edu/1423078359wor> <http://fakePropertiesForDemomarcfield> "F650 #0 $a Conifers $x Effect of fires on $z Cascades (Or. and Wash.)" .
+<http://fakeIRI2.edu/1423078359man> <http://rdaregistry.info/Elements/m/illustrativeContent.en> <http://rdaregistry.info/termList/IllusContent/1008> .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/datatype/subject.en> "Ecology" .
+<http://fakeIRI2.edu/1423078359man> <http://fakePropertiesForDemomarcfield> "F504 ## $a Includes bibliographical references (pages 37-43)." .
+<http://fakeIRI2.edu/1423078359man> <http://rdaregistry.info/Elements/m/datatype/placeOfPublication.en> "Seattle" .
+<http://marc2rda.edu/fake/concept/lcsh/effectoffiresoncascadesorandwash> <http://www.w3.org/2004/02/skos/core#prefLabel> "Effect of fires on -- Cascades (Or. and Wash.)" .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/subject.en> <http://marc2rda.edu/fake/concept/lcsh/effectoffiresoncascadesorandwash> .
+<http://marc2rda.edu/fake/concept/lcgft/academictheses> <http://www.w3.org/2004/02/skos/core#inScheme> <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> .
+<http://fakeIRI2.edu/1423078359exp> <http://rdaregistry.info/Elements/e/datatype/identifierForExpression.en> "1423078359exp" .
+<http://fakeIRI2.edu/1423078359man> <http://rdaregistry.info/Elements/m/datatype/nameOfPublisher.en> "University of Washington Libraries" .
+<http://fakeIRI2.edu/1423078359wor> <http://fakePropertiesForDemomarcfield> "F653 0# $a Cascades" .
+<http://marc2rda.edu/fake/concept/lcsh/regenerationcascadesorandwash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/datatype/dissertationOrThesisInformation.en> "M.S.; University of Washington; 2022" .
+<http://marc2rda.edu/fake/concept/aat/dissertations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://fakeIRI2.edu/1423078359man> <http://rdaregistry.info/Elements/m/object/expressionManifested.en> <http://fakeIRI2.edu/1423078359exp> .
+<http://fakeIRI2.edu/1423078359man> <http://fakePropertiesForDemomarcfield> "F340 ## $g monochrome $2 rdacc" .
+<http://fakeIRI2.edu/1423078359man> <http://fakePropertiesForDemomarcfield> "F338 ## $a online resource $b cr $2 rdacarrier" .
+<http://marc2rda.edu/fake/concept/lcsh/coniferseffectoffiresoncascadesorandwash> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
+<http://fakeIRI2.edu/1423078359man> <http://rdaregistry.info/Elements/m/datatype/statementOfResponsibilityRelatingToTitleProper.en> "Madison Marie Laughlin." .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/categoryOfWork.en> <http://marc2rda.edu/fake/concept/rvmgf/thèsesetécritsacadémiques> .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/datatype/subject.en> "Wildfire" .
+<http://marc2rda.edu/fake/pla/nom/lcsh/cascadesorandwash> <http://rdaregistry.info/Elements/n/schemeOfNomen.en> <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
+<http://fakeIRI2.edu/1423078359wor> <http://fakePropertiesForDemomarcfield> "F653 0# $a Forestry" .
+<http://fakeIRI2.edu/1423078359man> <http://rdaregistry.info/Elements/m/datatype/copyrightDate.en> "2022" .
+<http://marc2rda.edu/fake/concept/aat/dissertations> <http://www.w3.org/2004/02/skos/core#inScheme> <http://id.loc.gov/vocabulary/subjectSchemes/aat> .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/object/authorPerson.en> <http://www.wikidata.org/entity/Q130014744> .
+<http://fakeIRI2.edu/1423078359man> <http://fakePropertiesForDemomarcfield> "F264 #4 $c ©2022" .
+<http://marc2rda.edu/fake/concept/lcsh/effectoffiresoncascadesorandwash> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
+<http://fakeIRI2.edu/1423078359exp> <http://rdaregistry.info/Elements/e/object/workExpressed.en> <http://fakeIRI2.edu/1423078359wor> .
+<http://fakeIRI2.edu/1423078359wor> <http://fakePropertiesForDemomarcfield> "F653 0# $a Ecology" .
+<http://fakeIRI2.edu/1423078359man> <http://rdaregistry.info/Elements/m/carrierType.en> <http://id.loc.gov/vocabulary/carriers/cr> .
+<http://marc2rda.edu/fake/concept/lcsh/coniferseffectoffiresoncascadesorandwash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://marc2rda.edu/fake/nom/d20e30> <http://rdaregistry.info/Elements/n/schemeOfNomen.en> <http://id.loc.gov/vocabulary/identifiers/hdl> .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/datatype/identifierForWork.en> "1423078359wor" .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/categoryOfWork.en> <http://marc2rda.edu/fake/concept/aat/dissertations> .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/datatype/subject.en> "Cascades" .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/datatype/categoryOfWork.en> "Theses -- Forestry." .
+<http://fakeIRI2.edu/1423078359man> <http://rdaregistry.info/Elements/m/datatype/dateOfPublication.en> "2022" .
+<http://fakeIRI2.edu/1423078359wor> <http://fakePropertiesForDemomarcfield> "F653 0# $a Wildfire" .
+<http://fakeIRI2.edu/1423078359man> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdaregistry.info/Elements/c/Manifestation.en> .
+<http://fakeIRI2.edu/1423078359wor> <http://fakePropertiesForDemomarcfield> "F653 0# $a Recovery" .
+<http://fakeIRI2.edu/1423078359wor> <http://fakePropertiesForDemomarcfield> "F655 #7 $a dissertations. $2 aat $0 (CStmoGRI)aatgf300028029" .
+<http://fakeIRI2.edu/1423078359man> <http://rdaregistry.info/Elements/m/datatype/colourContent.en> "black and white" .
+<http://fakeIRI2.edu/1423078359man> <http://fakePropertiesForDemomarcfield> "F340 ## $g color" .
+<http://marc2rda.edu/fake/nom/d20e30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdaregistry.info/Elements/c/Nomen.en> .
+<http://fakeIRI2.edu/1423078359man> <http://fakePropertiesForDemomarcfield> "F347 ## $a text file $2 rdaft" .
+<http://marc2rda.edu/fake/concept/lcsh/coniferseffectoffiresoncascadesorandwash> <http://www.w3.org/2004/02/skos/core#prefLabel> "Conifers -- Effect of fires on -- Cascades (Or. and Wash.)" .
+<http://marc2rda.edu/fake/concept/lcsh/regenerationcascadesorandwash> <http://www.w3.org/2004/02/skos/core#prefLabel> "Regeneration -- Cascades (Or. and Wash.)" .
+<http://fakeIRI2.edu/1423078359wor> <http://rdaregistry.info/Elements/w/datatype/subject.en> "Forestry" .
+<http://fakeIRI2.edu/1423078359exp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdaregistry.info/Elements/c/Expression.en> .
+<http://marc2rda.edu/fake/place/lcsh/cascadesorandwash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdaregistry.info/Elements/c/Place.en> .
+<http://fakeIRI2.edu/1423078359man> <http://rdaregistry.info/Elements/m/datatype/publicationStatement.en> "[Seattle] : [University of Washington Libraries], [2022]" .
+<http://www.wikidata.org/entity/Q100701057> <http://fakePropertiesForDemomarcfield> "F700 1# $a Harvey, Brian J., $d 1981- $e degree supervisor. $1 http://www.wikidata.org/entity/Q100701057" .
+<http://fakeIRI2.edu/1423078359wor> <http://fakePropertiesForDemomarcfield> "F653 0# $a Resilience" .
+<http://marc2rda.edu/fake/place/lcsh/cascadesorandwash> <http://rdaregistry.info/Elements/p/object/authorizedAccessPointForPlace.en> <http://marc2rda.edu/fake/pla/nom/lcsh/cascadesorandwash> .
+<http://marc2rda.edu/fake/pla/nom/lcsh/cascadesorandwash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdaregistry.info/Elements/c/Nomen.en> .
+<http://marc2rda.edu/fake/nom/d20e30> <http://rdaregistry.info/Elements/n/datatype/nomenString.en> "1773/49682" .
+<http://marc2rda.edu/fake/concept/lcsh/forestregenerationcascadesorandwash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://fakeIRI2.edu/1423078359wor> <http://fakePropertiesForDemomarcfield> "F653 0# $a Regeneration" .
+<http://fakeIRI2.edu/1423078359man> <http://fakePropertiesForDemomarcfield> "F340 ## $p map $2 rdaill" .
+<http://fakeIRI2.edu/1423078359wor> <http://fakePropertiesForDemomarcfield> "F650 #0 $a Conifers $x Regeneration $z Cascades (Or. and Wash.)" .
