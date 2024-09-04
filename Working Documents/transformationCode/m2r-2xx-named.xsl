@@ -200,11 +200,10 @@
         3. preceedingSibling doesn't endWith ' = ' AND contains ' = '
         4. Just a $b, no MARC "parallel statements.
     -->
-    <xsl:template name="F245-xx-abnps-ISBD">
+    <xsl:template name="F245-xx-ISBD">
         <!-- does not account for subsequent titles (aggregates) -->
         <xsl:variable name="titleStatement">
-           <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'n']
-               | marc:subfield[@code = 'p'] | marc:subfield[@code = 's']" separator=" "/>
+            <xsl:value-of select="marc:subfield" separator=" "/>
         </xsl:variable>
         <xsl:comment>
             <xsl:value-of select="$titleStatement"/>
@@ -223,15 +222,25 @@
                                         <!-- this means it came before / and is other title info -->
                                         <xsl:when test="position() = 1">
                                             <rdamd:P30142>
-                                                <xsl:value-of select="."/>
+                                                <xsl:value-of select="translate(., '[]', '')"/>
                                             </rdamd:P30142>
+                                            <xsl:if test="contains(., '[') and contains(., ']')">
+                                                <rdamd:P30137>
+                                                    <xsl:text>Other title information is assigned by the cataloguing agency.</xsl:text>
+                                                </rdamd:P30137>
+                                            </xsl:if>
                                         </xsl:when>
                                         <!-- this is statement of responsibility, split by ;  -->
                                         <xsl:otherwise>
                                             <xsl:for-each select="tokenize(., ' ; ')">
                                                 <rdamd:P30105>
-                                                    <xsl:value-of select="."/>
+                                                    <xsl:value-of select="translate(., '[]', '')"/>
                                                 </rdamd:P30105>
+                                                <xsl:if test="contains(., '[') and contains(., ']')">
+                                                    <rdamd:P30137>
+                                                        <xsl:text>Statement of responsibility is assigned by the cataloguing agency.</xsl:text>
+                                                    </rdamd:P30137>
+                                                </xsl:if>
                                             </xsl:for-each>
                                         </xsl:otherwise>
                                     </xsl:choose>
@@ -242,14 +251,24 @@
                                     <!-- this means it came before the : and is title proper -->
                                     <xsl:when test="position() = 1">
                                         <rdamd:P30156>
-                                            <xsl:value-of select="."/>
+                                            <xsl:value-of select="translate(., '[]', '')"/>
                                         </rdamd:P30156>
+                                        <xsl:if test="contains(., '[') and contains(., ']')">
+                                            <rdamd:P30137>
+                                                <xsl:text>Title proper is assigned by the cataloguing agency.</xsl:text>
+                                            </rdamd:P30137>
+                                        </xsl:if>
                                     </xsl:when>
                                     <!-- this is other title info -->
                                     <xsl:otherwise>
                                         <rdamd:P30142>
-                                            <xsl:value-of select="."/>
+                                            <xsl:value-of select="translate(., '[]', '')"/>
                                         </rdamd:P30142>
+                                        <xsl:if test="contains(., '[') and contains(., ']')">
+                                            <rdamd:P30137>
+                                                <xsl:text>Other title information is assigned by the cataloguing agency.</xsl:text>
+                                            </rdamd:P30137>
+                                        </xsl:if>
                                     </xsl:otherwise>
                                 </xsl:choose>
                             </xsl:otherwise>
@@ -263,15 +282,25 @@
                             <!-- first is title -->
                             <xsl:when test="position() = 1">
                                 <rdamd:P30156>
-                                    <xsl:value-of select="."/>
+                                    <xsl:value-of select="translate(., '[]', '')"/>
                                 </rdamd:P30156>
+                                <xsl:if test="contains(., '[') and contains(., ']')">
+                                    <rdamd:P30137>
+                                        <xsl:text>Title proper is assigned by the cataloguing agency.</xsl:text>
+                                    </rdamd:P30137>
+                                </xsl:if>
                             </xsl:when>
                             <!-- the rest is statement of responsibility, split by ;  -->
                             <xsl:otherwise>
                                 <xsl:for-each select="tokenize(., ' ; ')">
                                     <rdamd:P30105>
-                                        <xsl:value-of select="."/>
+                                        <xsl:value-of select="translate(., '[]', '')"/>
                                     </rdamd:P30105>
+                                    <xsl:if test="contains(., '[') and contains(., ']')">
+                                        <rdamd:P30137>
+                                            <xsl:text>Statement of responsibility is assigned by the cataloguing agency.</xsl:text>
+                                        </rdamd:P30137>
+                                    </xsl:if>
                                 </xsl:for-each>
                             </xsl:otherwise>
                         </xsl:choose>
@@ -280,8 +309,13 @@
                 <xsl:otherwise>
                     <!-- no other ISBD punctuation, only title(s) -->
                     <rdamd:P30156>
-                        <xsl:value-of select="."/>
+                        <xsl:value-of select="translate(., '[]', '')"/>
                     </rdamd:P30156>
+                    <xsl:if test="contains(., '[') and contains(., ']')">
+                        <rdamd:P30137>
+                            <xsl:text>Title proper is assigned by the cataloguing agency.</xsl:text>
+                        </rdamd:P30137>
+                    </xsl:if>
                 </xsl:otherwise>
             </xsl:choose> 
         </xsl:for-each>

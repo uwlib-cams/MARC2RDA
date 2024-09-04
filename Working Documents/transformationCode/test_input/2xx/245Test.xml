@@ -11,6 +11,15 @@
     </marc:record>
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test1</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Uyghur qătaiami :</marc:subfield>
+            <marc:subfield code="b">piskhologiyălik năzăr /</marc:subfield>
+            <marc:subfield code="c">Mămtimin Ăla = The Uyghur genocide : a psychological perspective / Mamtimin Ala.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">245-test2</marc:controlfield>
         <marc:datafield tag="245" ind1="1" ind2="2">
             <marc:subfield code="a">A report to the legislature for the year ...</marc:subfield>
