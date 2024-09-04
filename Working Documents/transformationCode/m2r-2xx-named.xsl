@@ -19,7 +19,7 @@
      No other scenarios were considered.
     ISBD punctuation was eliminated.
 -->
-    <xsl:template name="F245-xx-anps-ISBD">
+    <!--<xsl:template name="F245-xx-anps">
         <xsl:variable name="isISBD">
             <xsl:choose>
                 <xsl:when test="(substring(preceding-sibling::marc:leader, 19, 1) = 'i' or substring(preceding-sibling::marc:leader, 19, 1) = 'a')">
@@ -31,34 +31,34 @@
             </xsl:choose>
         </xsl:variable>
         <xsl:choose>
-            <!-- a with no following n, p, or s subfields -->
+            <!-\- a with no following n, p, or s subfields -\->
             <xsl:when test="marc:subfield[@code = 'a'][not(following-sibling::*)] or
                 marc:subfield[@code = 'a']/following-sibling::marc:subfield[1][not(@code = 'n' or @code = 'p' or @code = 's')]">
                 <rdamd:P30156>
                     <xsl:choose>
-                        <!-- remove ending = : ; / if ISBD-->
-                        <!-- remove any square brackets [] -->
+                        <!-\- remove ending = : ; / if ISBD-\->
+                        <!-\- remove any square brackets [] -\->
                         <xsl:when test="$isISBD">
                             <xsl:value-of select="replace(marc:subfield[@code = 'a'], '\s*[=:;/]$', '') => translate('[]', '')"/>
                         </xsl:when>
-                        <!-- remove any square brackets [] if not ISBD -->
+                        <!-\- remove any square brackets [] if not ISBD -\->
                         <xsl:otherwise>
                             <xsl:value-of select="translate(marc:subfield[@code = 'a'], '[]', '')"/>
                         </xsl:otherwise>
                     </xsl:choose>
                 </rdamd:P30156>
-                <!-- if square brackets [] were removed, add not on manifestation -->
+                <!-\- if square brackets [] were removed, add not on manifestation -\->
                 <xsl:if test="contains(marc:subfield[@code = 'a'], '[') and contains(marc:subfield[@code = 'a'], ']')">
                     <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137>
                 </xsl:if>
             </xsl:when>
-            <!-- a with following n, p, s -->
+            <!-\- a with following n, p, s -\->
             <xsl:otherwise>
-                <!-- put together title from a and any directly following n, p, s fields -->
-                <!-- remove ending = : ; / -->
+                <!-\- put together title from a and any directly following n, p, s fields -\->
+                <!-\- remove ending = : ; / -\->
                 <xsl:variable name="title">
                     <xsl:choose>
-                        <!-- remove ISBD punctuation if ISBD -->
+                        <!-\- remove ISBD punctuation if ISBD -\->
                         <xsl:when test="$isISBD">
                             <xsl:value-of select="replace(marc:subfield[@code = 'a'], '\s*[=:;/]$', '')"/>
                             <xsl:text> </xsl:text>
@@ -80,13 +80,12 @@
                             </xsl:for-each>
                         </xsl:otherwise>
                     </xsl:choose>
-                    
                 </xsl:variable>
-                <!-- remove any square brackets -->
+                <!-\- remove any square brackets -\->
                 <rdamd:P30156>
                     <xsl:value-of select="translate($title, '[]', '')"/>
                 </rdamd:P30156>
-                <!-- if square brackets [] were removed, add not on manifestation -->
+                <!-\- if square brackets [] were removed, add not on manifestation -\->
                 <xsl:if test="contains($title, '[') and contains($title, ']')">
                     <xsl:if test="contains(marc:subfield[@code = 'a'], '[') and contains(marc:subfield[@code = 'a'], ']')">
                         <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137>
@@ -95,8 +94,8 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    
-    <xsl:template name="F245-xx-anps">
+    -->
+    <!--<xsl:template name="F245-xx-anps">
         <xsl:if test="marc:subfield[@code = 'n'] or marc:subfield[@code = 'p'] or marc:subfield[@code = 's']">
             <xsl:choose>
                 <xsl:when test="not(ends-with(marc:subfield[@code = 'b']/preceding-sibling::*[1], '='))">
@@ -179,9 +178,9 @@
                 <xsl:otherwise/>
             </xsl:choose>
         </xsl:if>
-    </xsl:template>
+    </xsl:template>-->
     <!-- F245-xx-a treats all $a the same -->
-    <xsl:template name="F245-xx-a" expand-text="yes">
+    <!--<xsl:template name="F245-xx-a" expand-text="yes">
         <xsl:if test="marc:subfield[@code = 'a'] and (not(marc:subfield[@code = 'n']) and not(marc:subfield[@code = 'p']) and not(marc:subfield[@code = 's']))">
             <rdamd:P30156>
                 <xsl:choose>
@@ -194,13 +193,100 @@
                 </xsl:choose>
             </rdamd:P30156>
         </xsl:if>
-    </xsl:template>
+    </xsl:template>-->
     <!-- F245-xx-b processes 4 conditions
         1. preceedingSibling endswith '=' AND doesn't contain ' = ' sp AND followingSibling is neither $n $p or $s
         2. preceedingSibling endsWith '=' AND does contain ' = ' sp AND followingSibling is neither $n $p or $s
         3. preceedingSibling doesn't endWith ' = ' AND contains ' = '
         4. Just a $b, no MARC "parallel statements.
     -->
+    <xsl:template name="F245-xx-abnps-ISBD">
+        <!-- does not account for subsequent titles (aggregates) -->
+        <xsl:variable name="titleStatement">
+           <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'n']
+               | marc:subfield[@code = 'p'] | marc:subfield[@code = 's']" separator=" "/>
+        </xsl:variable>
+        <xsl:comment>
+            <xsl:value-of select="$titleStatement"/>
+        </xsl:comment>
+        <!-- separate by parallel statements = -->
+        <xsl:for-each select="tokenize($titleStatement, ' = ')">
+            <xsl:choose>
+                <!-- additionial info - other title info -->
+                <xsl:when test="contains(., ' : ')">
+                    <xsl:for-each select="tokenize(., ' : ')"> 
+                        <xsl:choose>
+                            <!-- there is statement of responsibility -->
+                            <xsl:when test="contains(., ' / ')">
+                                <xsl:for-each select="tokenize(., ' / ')">
+                                    <xsl:choose>
+                                        <!-- this means it came before / and is other title info -->
+                                        <xsl:when test="position() = 1">
+                                            <rdamd:P30142>
+                                                <xsl:value-of select="."/>
+                                            </rdamd:P30142>
+                                        </xsl:when>
+                                        <!-- this is statement of responsibility, split by ;  -->
+                                        <xsl:otherwise>
+                                            <xsl:for-each select="tokenize(., ' ; ')">
+                                                <rdamd:P30105>
+                                                    <xsl:value-of select="."/>
+                                                </rdamd:P30105>
+                                            </xsl:for-each>
+                                        </xsl:otherwise>
+                                    </xsl:choose>
+                                </xsl:for-each>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:choose>
+                                    <!-- this means it came before the : and is title proper -->
+                                    <xsl:when test="position() = 1">
+                                        <rdamd:P30156>
+                                            <xsl:value-of select="."/>
+                                        </rdamd:P30156>
+                                    </xsl:when>
+                                    <!-- this is other title info -->
+                                    <xsl:otherwise>
+                                        <rdamd:P30142>
+                                            <xsl:value-of select="."/>
+                                        </rdamd:P30142>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:for-each>
+                </xsl:when>
+                <!-- no other title info, but has statement of responsibility -->
+                <xsl:when test="contains(., ' / ') and not(contains(., ' : '))">
+                    <xsl:for-each select="tokenize(., ' / ')">
+                        <xsl:choose>
+                            <!-- first is title -->
+                            <xsl:when test="position() = 1">
+                                <rdamd:P30156>
+                                    <xsl:value-of select="."/>
+                                </rdamd:P30156>
+                            </xsl:when>
+                            <!-- the rest is statement of responsibility, split by ;  -->
+                            <xsl:otherwise>
+                                <xsl:for-each select="tokenize(., ' ; ')">
+                                    <rdamd:P30105>
+                                        <xsl:value-of select="."/>
+                                    </rdamd:P30105>
+                                </xsl:for-each>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:for-each>
+                </xsl:when>
+                <xsl:otherwise>
+                    <!-- no other ISBD punctuation, only title(s) -->
+                    <rdamd:P30156>
+                        <xsl:value-of select="."/>
+                    </rdamd:P30156>
+                </xsl:otherwise>
+            </xsl:choose> 
+        </xsl:for-each>
+    </xsl:template>
+    
     <xsl:template name="F245-xx-b">
         <xsl:for-each select="marc:subfield[@code = 'b']">
             <xsl:choose>
