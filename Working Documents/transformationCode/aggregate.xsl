@@ -51,12 +51,11 @@
       <pattern>
         <name>130$k Selections</name>
         <type>collection</type>
-        <xpath>marc:datafield[@tag='130']/marc:subfield[@code='k'][contains(lower-case(.), 'selections')] and not(substring(marc:leader, 7, 1) = 'c' or substring(marc:leader, 7, 1) = 'd' or substring(marc:leader, 7, 1) = 'j')</xpath>
+        <xpath>exists(marc:datafield[@tag='130']/marc:subfield[@code='k'][contains(lower-case(.), 'selections')])</xpath>
       </pattern>
       <pattern>
         <name>240$k Selections</name>
         <type>collection</type>
-        <!-- <xpath>marc:datafield[@tag='240']/marc:subfield[@code='k'][contains(lower-case(.), 'selections')] and not(substring(marc:leader, 7, 1) = 'c' or substring(marc:leader, 7, 1) = 'd' or substring(marc:leader, 7, 1) = 'j')</xpath> -->
         <xpath>exists(marc:datafield[@tag='240']/marc:subfield[@code='k'][contains(lower-case(.), 'selections')])</xpath>
       </pattern>
       <pattern>
@@ -90,8 +89,7 @@
         <xpath>
           not(exists(marc:datafield[@tag='700']/marc:subfield[@code='5']))
           and exists(marc:datafield[@tag='700' and @ind2='2']/marc:subfield[@code='t'])
-          and exists(marc:datafield[@tag='505']/marc:subfield[@code='r'])
-          or exists(marc:datafield[@tag='505']/marc:subfield[@code='a'][contains(., ' / ')])
+          and (exists(marc:datafield[@tag='505']/marc:subfield[@code='r']) or exists(marc:datafield[@tag='505']/marc:subfield[@code='a'][contains(., ' / ')]))
         </xpath>
       </pattern>
       <pattern>
@@ -101,7 +99,7 @@
           not(exists(marc:datafield[@tag='700']/marc:subfield[@code='5']))
           and exists(marc:datafield[@tag='700' and @ind2='2']/marc:subfield[@code='t'])
           and not(exists(marc:datafield[@tag='505']/marc:subfield[@code='r']))
-          or exists(marc:datafield[@tag='505']/marc:subfield[@code='a'][contains(., ' / ')])
+          and (exists(marc:datafield[@tag='505']/marc:subfield[@code='a']) and not(exists(marc:datafield[@tag='505']/marc:subfield[@code='a'][contains(., ' / ')])))
         </xpath>
       </pattern>
       <pattern>
@@ -110,8 +108,7 @@
         <xpath>
           not(exists(marc:datafield[@tag='710']/marc:subfield[@code='5']))
           and exists(marc:datafield[@tag='710' and @ind2='2']/marc:subfield[@code='t'])
-          and exists(marc:datafield[@tag='505']/marc:subfield[@code='r'])
-          or exists(marc:datafield[@tag='505']/marc:subfield[@code='a'][contains(., ' / ')])
+          and (exists(marc:datafield[@tag='505']/marc:subfield[@code='r']) or exists(marc:datafield[@tag='505']/marc:subfield[@code='a'][contains(., ' / ')]))
         </xpath>
       </pattern>
       <pattern>
@@ -121,7 +118,7 @@
           not(exists(marc:datafield[@tag='710']/marc:subfield[@code='5']))
           and exists(marc:datafield[@tag='710' and @ind2='2']/marc:subfield[@code='t'])
           and not(exists(marc:datafield[@tag='505']/marc:subfield[@code='r']))
-          or exists(marc:datafield[@tag='505']/marc:subfield[@code='a'][contains(., ' / ')])
+          and (exists(marc:datafield[@tag='505']/marc:subfield[@code='a']) and not(exists(marc:datafield[@tag='505']/marc:subfield[@code='a'][contains(., ' / ')])))
         </xpath>
       </pattern>
       <pattern>
@@ -130,8 +127,7 @@
         <xpath>
           not(exists(marc:datafield[@tag='711']/marc:subfield[@code='5']))
           and exists(marc:datafield[@tag='711' and @ind2='2']/marc:subfield[@code='t'])
-          and exists(marc:datafield[@tag='505']/marc:subfield[@code='r'])
-          or exists(marc:datafield[@tag='505']/marc:subfield[@code='a'][contains(., ' / ')])
+          and (exists(marc:datafield[@tag='505']/marc:subfield[@code='r']) or exists(marc:datafield[@tag='505']/marc:subfield[@code='a'][contains(., ' / ')]))
         </xpath>
       </pattern>
       <pattern>
@@ -141,7 +137,7 @@
           not(exists(marc:datafield[@tag='711']/marc:subfield[@code='5']))
           and exists(marc:datafield[@tag='711' and @ind2='2']/marc:subfield[@code='t'])
           and not(exists(marc:datafield[@tag='505']/marc:subfield[@code='r']))
-          or exists(marc:datafield[@tag='505']/marc:subfield[@code='a'][contains(., ' / ')])
+          and (exists(marc:datafield[@tag='505']/marc:subfield[@code='a']) and not(exists(marc:datafield[@tag='505']/marc:subfield[@code='a'][contains(., ' / ')])))
         </xpath>
       </pattern>
     </xsl:variable>
