@@ -40,18 +40,21 @@
     <xsl:template match="marc:datafield[@tag = '245'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '245']" 
         mode="man">
         <xsl:call-template name="getmarc"/>
-        <xsl:call-template name="F245-xx-anps"/>
+        <xsl:call-template name="F245-xx-a"/>
         <xsl:choose>
             <xsl:when
                 test="(substring(preceding-sibling::marc:leader, 19, 1) = 'i' or substring(preceding-sibling::marc:leader, 19, 1) = 'a')">
 <!--                <xsl:call-template name="F245-xx-ISBD"/>-->
                 <xsl:call-template name="F245-xx-bc-ISBD"/>
             </xsl:when>
+            <xsl:otherwise>
+                <xsl:call-template name="F245-xx-b-notISBD"/>
+                <xsl:call-template name="F245-xx-c-notISBD"/>
+            </xsl:otherwise>
         </xsl:choose>
-      <!--  <xsl:call-template name="F245-xx-c"/>
         <xsl:call-template name="F245-xx-f-g"/>
         <xsl:call-template name="F245-xx-h"/>
-        <xsl:call-template name="F245-xx-k"/>-->
+        <xsl:call-template name="F245-xx-k"/>
     </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '257'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '257']"

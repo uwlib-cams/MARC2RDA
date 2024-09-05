@@ -2,7 +2,18 @@
 <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+   
     <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test00</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Countries of the world.</marc:subfield>
+            <marc:subfield code="p">Brazil =</marc:subfield>
+            <marc:subfield code="b">Countries of the world.</marc:subfield>
+            <marc:subfield code="p">Brasil /</marc:subfield>
+            <marc:subfield code="c">by Adam.</marc:subfield>
+        </marc:datafield>
+    </marc:record><marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">245-test0</marc:controlfield>
         <marc:datafield tag="245" ind1="1" ind2="0">
@@ -400,7 +411,8 @@
             <marc:subfield code="c">Spyrou Gkrintzou.</marc:subfield>
         </marc:datafield>
     </marc:record>
-    <marc:record>
+    <!-- not isbd -->
+    <!--<marc:record>
         <marc:leader>11111nam a2200553u  4500</marc:leader>
         <marc:controlfield tag="001">245-test44</marc:controlfield>
         <marc:datafield tag="245" ind1="1" ind2="5">
@@ -417,8 +429,8 @@
             <marc:subfield code="b">mythistorēma</marc:subfield>
             <marc:subfield code="c">Spyrou Gkrintzou.</marc:subfield>
         </marc:datafield>
-    </marc:record>
-    <marc:record>
+    </marc:record>-->
+    <!--<marc:record>
         <marc:leader>11111nam a2200553uu 4500</marc:leader>
         <marc:controlfield tag="001">245-test46</marc:controlfield>
         <marc:datafield tag="245" ind1="1" ind2="5">
@@ -435,7 +447,7 @@
             <marc:subfield code="b">mythistorēma /</marc:subfield>
             <marc:subfield code="c">Spyrou Gkrintzou.</marc:subfield>
         </marc:datafield>
-    </marc:record>
+    </marc:record>-->
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">245-test48</marc:controlfield>
@@ -458,7 +470,7 @@
             <marc:subfield code="c">by David Belasco and Henry C. DeMille.</marc:subfield>
         </marc:datafield>
     </marc:record>
-    <marc:record>
+    <!--<marc:record>
         <marc:leader>11111nam a2200553u  4500</marc:leader>
         <marc:controlfield tag="001">245-test50</marc:controlfield>
         <marc:datafield tag="245" ind1="1" ind2="4">
@@ -468,8 +480,8 @@
             <marc:subfield code="f">1889 </marc:subfield>
             <marc:subfield code="c">by David Belasco and Henry C. DeMille.</marc:subfield>
         </marc:datafield>
-    </marc:record>
-    <marc:record>
+    </marc:record>-->
+   <!-- <marc:record>
         <marc:leader>11111nam a2200553uc 4500</marc:leader>
         <marc:controlfield tag="001">245-test51</marc:controlfield>
         <marc:datafield tag="245" ind1="1" ind2="4">
@@ -479,8 +491,8 @@
             <marc:subfield code="f">1889 /</marc:subfield>
             <marc:subfield code="c">by David Belasco and Henry C. DeMille.</marc:subfield>
         </marc:datafield>
-    </marc:record>
-    <marc:record>
+    </marc:record>-->
+    <!--<marc:record>
         <marc:leader>11111nam a2200553uu 4500</marc:leader>
         <marc:controlfield tag="001">245-test52</marc:controlfield>
         <marc:datafield tag="245" ind1="1" ind2="4">
@@ -490,8 +502,10 @@
             <marc:subfield code="f">1889</marc:subfield>
             <marc:subfield code="c">by David Belasco and Henry C. DeMille.</marc:subfield>
         </marc:datafield>
-    </marc:record>
-    <marc:record>
+    </marc:record>-->
+    
+    <!-- not isbd -->
+    <!--<marc:record>
         <marc:leader>11111nam a2200553un 4500</marc:leader>
         <marc:controlfield tag="001">245-test53</marc:controlfield>
         <marc:datafield tag="245" ind1="1" ind2="4">
@@ -501,7 +515,7 @@
             <marc:subfield code="f">1889</marc:subfield>
             <marc:subfield code="c">by David Belasco and Henry C. DeMille.</marc:subfield>
         </marc:datafield>
-    </marc:record>
+    </marc:record>-->
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">245-test54</marc:controlfield>
@@ -520,7 +534,7 @@
             <marc:subfield code="b">La Oficina = Das Büro.</marc:subfield>
         </marc:datafield>
     </marc:record>
-    <marc:record>
+    <!--<marc:record>
         <marc:leader>11111nam a2200553u  4500</marc:leader>
         <marc:controlfield tag="001">245-test56</marc:controlfield>
         <marc:datafield tag="245" ind1="0" ind2="3">
@@ -528,8 +542,8 @@
             <marc:subfield code="h">[filmstrip] =</marc:subfield>
             <marc:subfield code="b">La Oficina ALSO KNOWN AS Das Büro.</marc:subfield>
         </marc:datafield>
-    </marc:record>
-    <marc:record>
+    </marc:record>-->
+    <!--<marc:record>
         <marc:leader>11111nam a2200553uc 4500</marc:leader>
         <marc:controlfield tag="001">245-test57</marc:controlfield>
         <marc:datafield tag="245" ind1="0" ind2="3">
@@ -537,8 +551,8 @@
             <marc:subfield code="h">[filmstrip]</marc:subfield>
             <marc:subfield code="b">La Oficina : Das Büro.</marc:subfield>
         </marc:datafield>
-    </marc:record>
-    <marc:record>
+    </marc:record>-->
+   <!-- <marc:record>
         <marc:leader>11111nam a2200553uu 4500</marc:leader>
         <marc:controlfield tag="001">245-test58</marc:controlfield>
         <marc:datafield tag="245" ind1="0" ind2="3">
@@ -546,8 +560,8 @@
             <marc:subfield code="h">filmstrip</marc:subfield>
             <marc:subfield code="b">La Oficina. Das Büro.</marc:subfield>
         </marc:datafield>
-    </marc:record>
-    <marc:record>
+    </marc:record>-->
+    <!--<marc:record>
         <marc:leader>11111nam a2200553un 4500</marc:leader>
         <marc:controlfield tag="001">245-test59</marc:controlfield>
         <marc:datafield tag="245" ind1="0" ind2="3">
@@ -555,7 +569,7 @@
             <marc:subfield code="h">filmstrip</marc:subfield>
             <marc:subfield code="b">La Oficina = Das Büro.</marc:subfield>
         </marc:datafield>
-    </marc:record>
+    </marc:record>-->
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">245-test60</marc:controlfield>
@@ -576,7 +590,7 @@
             <marc:subfield code="p">Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</marc:subfield>
         </marc:datafield>
     </marc:record>
-    <marc:record>
+    <!--<marc:record>
         <marc:leader>11111nam a2200553u  4500</marc:leader>
         <marc:controlfield tag="001">245-test62</marc:controlfield>
         <marc:datafield tag="245" ind1="1" ind2="0">
@@ -615,5 +629,5 @@
             <marc:subfield code="n">Reihe B:</marc:subfield>
             <marc:subfield code="p">Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</marc:subfield>
         </marc:datafield>
-    </marc:record>
+    </marc:record>-->
 </marc:collection>
