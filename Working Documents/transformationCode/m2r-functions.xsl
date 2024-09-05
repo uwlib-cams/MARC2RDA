@@ -452,5 +452,29 @@
         <xsl:value-of select="lower-case($conceptString) => translate(' ', '') => replace('[\p{P}]', '')"/>
     </xsl:function>
     
+    <xsl:function name="uwf:testBrackets">
+        <xsl:param name="string"/>
+        <xsl:choose>
+            <xsl:when test="matches($string, '^\[.*\][\W]*$')">
+                <xsl:value-of select="true()"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="false()"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
+    <xsl:function name="uwf:removeBrackets">
+        <xsl:param name="string"/>
+        <xsl:choose>
+            <xsl:when test="uwf:testBrackets($string) = true()">
+                <xsl:value-of select="translate($string, '[]', '')"/>
+            </xsl:when>
+            <xsl:otherwise>
+               <xsl:value-of select="$string"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
 </xsl:stylesheet>
 

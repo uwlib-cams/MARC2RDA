@@ -313,6 +313,26 @@
       <rdamd:P30156>Proceedings</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30105>Fake Society</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
    </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test16wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test16wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <fake:marcfield>F245 00 $a Project directory / $c TDC = Répertoire des projets / CDT.</fake:marcfield>
+      <rdawd:P10088>Project directory</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test16exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test16wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>245-test16exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test16man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test16exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F245 00 $a Project directory / $c TDC = Répertoire des projets / CDT.</fake:marcfield>
+      <rdamd:P30156>Project directory</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30105>TDC</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30156>Répertoire des projets</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30105>CDT.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+   </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test17wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>245-test17wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
@@ -627,6 +647,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>245-test39wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <fake:marcfield>F245 00 $k Letter, $f 1901 March 6, $b Dublin, to Henrik Ibsen, Kristiana [Oslo].</fake:marcfield>
+      <rdawd:P10088>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo].</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test39exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -637,8 +658,8 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test39exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 00 $k Letter, $f 1901 March 6, $b Dublin, to Henrik Ibsen, Kristiana [Oslo].</fake:marcfield>
-      <rdamd:P30156> </rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <ex:ERROR xmlns:ex="http://fakeIRI.edu/">No ISBD punctuation present in 245 subfield preceding subfield b</ex:ERROR>
+      <rdamd:P30156>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo].</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30278>1901 March 6</rdamd:P30278><!--rdamd:P30278 = has date of manifestation-->
       <rdamd:P30137>Letter.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
@@ -646,6 +667,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>245-test40wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <fake:marcfield>F245 00 $k Records, $f 1939-1973 $g 1965-1972.</fake:marcfield>
+      <rdawd:P10088>Records, 1939-1973 1965-1972.</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test40exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -656,7 +678,8 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test40exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 00 $k Records, $f 1939-1973 $g 1965-1972.</fake:marcfield>
-      <rdamd:P30156> </rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30156>Records, 1939-1973 1965-1972.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30278>1939-1973</rdamd:P30278><!--rdamd:P30278 = has date of manifestation-->
       <rdamd:P30278>1965-1972</rdamd:P30278><!--rdamd:P30278 = has date of manifestation-->
       <rdamd:P30137>Records.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
@@ -665,6 +688,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>245-test41wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <fake:marcfield>F245 10 $k Employment applications $g Jan.-Dec. 1985.</fake:marcfield>
+      <rdawd:P10088>Employment applications Jan.-Dec. 1985.</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test41exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -675,7 +699,8 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test41exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $k Employment applications $g Jan.-Dec. 1985.</fake:marcfield>
-      <rdamd:P30156> </rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30156>Employment applications Jan.-Dec. 1985.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30278>Jan.-Dec. 1985</rdamd:P30278><!--rdamd:P30278 = has date of manifestation-->
       <rdamd:P30137>Employment applications.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>

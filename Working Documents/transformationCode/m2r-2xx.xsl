@@ -24,31 +24,81 @@
     
     <xsl:template match="marc:datafield[@tag = '245']" mode="wor" >
         <xsl:call-template name="getmarc"/>
-        <xsl:for-each select="marc:subfield[@code='a']">
-            <rdawd:P10088>
-                <xsl:choose>
-                    <xsl:when test="(substring(../preceding-sibling::marc:leader, 19, 1) = 'i' or substring(../preceding-sibling::marc:leader, 19, 1) = 'a')">
-                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => translate('[]', '')"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="."/>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </rdawd:P10088>
-        </xsl:for-each>
+        <xsl:variable name="isISBD">
+            <xsl:choose>
+                <xsl:when test="(substring(preceding-sibling::marc:leader, 19, 1) = 'i' or substring(preceding-sibling::marc:leader, 19, 1) = 'a')">
+                    <xsl:value-of select="true()"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="false()"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:choose>
+            <xsl:when test="marc:subfield[@code = 'a']">
+                <xsl:for-each select="marc:subfield[@code='a']">
+                    <rdawd:P10088>
+                        <xsl:choose>
+                            <xsl:when test="$isISBD = true()">
+                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="uwf:removeBrackets(.)"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </rdawd:P10088>
+                </xsl:for-each>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:variable name="title">
+                    <xsl:choose>
+                        <xsl:when test="marc:subfield[@code = 'c']">
+                            <xsl:value-of select="marc:subfield[@code = 'c']/preceding-sibling::*" separator=" "/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="marc:subfield" separator=" "/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:variable>
+                <rdawd:P10088>
+                    <xsl:choose>
+                        <!-- remove ISBD punctuation if ISBD -->
+                        <xsl:when test="$isISBD = true()">
+                            <xsl:value-of select="replace($title, '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="uwf:removeBrackets($title)"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </rdawd:P10088>
+            </xsl:otherwise>
+        </xsl:choose>
+        
     </xsl:template>    
     <xsl:template match="marc:datafield[@tag = '245'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '245']" 
         mode="man">
         <xsl:call-template name="getmarc"/>
-        <xsl:call-template name="F245-xx-a"/>
+        <xsl:choose>
+            <xsl:when test="marc:subfield[@code = 'a']">
+                <xsl:call-template name="F245-xx-a"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:call-template name="F245-xx-notA"/>
+            </xsl:otherwise>
+        </xsl:choose>
         <xsl:choose>
             <xsl:when
                 test="(substring(preceding-sibling::marc:leader, 19, 1) = 'i' or substring(preceding-sibling::marc:leader, 19, 1) = 'a')">
 <!--                <xsl:call-template name="F245-xx-ISBD"/>-->
-                <xsl:call-template name="F245-xx-bc-ISBD"/>
+                <xsl:if test="marc:subfield[@code = 'a']">
+                    <xsl:call-template name="F245-xx-b-ISBD"/>
+                </xsl:if>
+                <xsl:call-template name="F245-xx-c-ISBD"/>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:call-template name="F245-xx-b-notISBD"/>
+                <xsl:if test="marc:subfield[@code = 'a']">
+                    <xsl:call-template name="F245-xx-b-notISBD"/>
+                </xsl:if>
                 <xsl:call-template name="F245-xx-c-notISBD"/>
             </xsl:otherwise>
         </xsl:choose>

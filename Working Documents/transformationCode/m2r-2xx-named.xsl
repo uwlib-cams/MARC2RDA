@@ -12,7 +12,11 @@
     xmlns:rdam="http://rdaregistry.info/Elements/m/"
     xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
     xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
-    xmlns:fake="http://fakePropertiesForDemo" exclude-result-prefixes="marc ex" version="3.0">
+    xmlns:fake="http://fakePropertiesForDemo" 
+    xmlns:uwf="http://universityOfWashington/functions"
+    xmlns:uwmisc="http://uw.edu/all-purpose-namespace/" exclude-result-prefixes="marc uwf ex" version="3.0">
+    
+    <xsl:import href="m2r-functions.xsl"/>
     
     <xsl:template name="F245-xx-a">
         <xsl:variable name="isISBD">
@@ -33,17 +37,17 @@
                     <xsl:choose>
                         <!-- remove ending = : ; / if ISBD-->
                         <!-- remove any square brackets [] -->
-                        <xsl:when test="$isISBD">
-                            <xsl:value-of select="replace(marc:subfield[@code = 'a'], '\s*[=:;/]$', '') => translate('[]', '')"/>
+                        <xsl:when test="$isISBD = true()">
+                            <xsl:value-of select="replace(marc:subfield[@code = 'a'], '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                         </xsl:when>
                         <!-- remove any square brackets [] if not ISBD -->
                         <xsl:otherwise>
-                            <xsl:value-of select="translate(marc:subfield[@code = 'a'], '[]', '')"/>
+                            <xsl:value-of select="uwf:removeBrackets(marc:subfield[@code = 'a'])"/>
                         </xsl:otherwise>
                     </xsl:choose>
                 </rdamd:P30156>
                 <!-- if square brackets [] were removed, add not on manifestation -->
-                <xsl:if test="contains(marc:subfield[@code = 'a'], '[') and contains(marc:subfield[@code = 'a'], ']')">
+                <xsl:if test="uwf:testBrackets(marc:subfield[@code = 'a']) = true()">
                     <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137>
                 </xsl:if>
             </xsl:when>
@@ -54,7 +58,7 @@
                 <xsl:variable name="title">
                     <xsl:choose>
                         <!-- remove ISBD punctuation if ISBD -->
-                        <xsl:when test="$isISBD">
+                        <xsl:when test="$isISBD = true()">
                             <xsl:value-of select="replace(marc:subfield[@code = 'a'], '\s*[=:;/]$', '')"/>
                             <xsl:text> </xsl:text>
                             <xsl:for-each select="marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::*[@code = 'b'])]">
@@ -78,20 +82,61 @@
                 </xsl:variable>
                 <!-- remove any square brackets -->
                 <rdamd:P30156>
-                    <xsl:value-of select="translate($title, '[]', '')"/>
+                    <xsl:value-of select="uwf:removeBrackets($title)"/>
                 </rdamd:P30156>
                 <!-- if square brackets [] were removed, add not on manifestation -->
-                <xsl:if test="contains($title, '[') and contains($title, ']')">
-                    <xsl:if test="contains(marc:subfield[@code = 'a'], '[') and contains(marc:subfield[@code = 'a'], ']')">
-                        <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137>
-                    </xsl:if>
+                <xsl:if test="uwf:testBrackets($title) = true()">
+                    <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137>
                 </xsl:if>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template name="F245-xx-bc-ISBD">
-        <xsl:for-each select="marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']">
+    <xsl:template name="F245-xx-notA">
+        <xsl:variable name="isISBD">
+            <xsl:choose>
+                <xsl:when test="(substring(preceding-sibling::marc:leader, 19, 1) = 'i' or substring(preceding-sibling::marc:leader, 19, 1) = 'a')">
+                    <xsl:value-of select="true()"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="false()"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:variable name="title">
+            <xsl:choose>
+                <xsl:when test="marc:subfield[@code = 'c']">
+                    <xsl:value-of select="marc:subfield[@code = 'c']/preceding-sibling::*" separator=" "/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="marc:subfield" separator=" "/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <rdamd:P30156>
+            <xsl:choose>
+                <!-- remove ISBD punctuation if ISBD -->
+                <xsl:when test="$isISBD = true()">
+                    <xsl:value-of select="replace($title, '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                </xsl:when>
+                <xsl:otherwise>
+                   <xsl:value-of select="$title"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </rdamd:P30156>
+        <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137>
+    </xsl:template>
+    
+    <xsl:template name="F245-xx-b-ISBD">
+        <xsl:for-each select="marc:subfield[@code = 'b']">
+            <xsl:call-template name="F245-xx-ISBD">
+                <xsl:with-param name="subfield" select="."/>
+            </xsl:call-template>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template name="F245-xx-c-ISBD">
+        <xsl:for-each select="marc:subfield[@code = 'c']">
             <xsl:call-template name="F245-xx-ISBD">
                 <xsl:with-param name="subfield" select="."/>
             </xsl:call-template>
@@ -130,9 +175,9 @@
                                                     <!-- this means it came before / and is other title info -->
                                                     <xsl:when test="position() = 1">
                                                         <rdamd:P30142>
-                                                            <xsl:value-of select="replace(., '\s*[=:;/]$', '') => translate('[]', '')"/>
+                                                            <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                                                         </rdamd:P30142>
-                                                        <xsl:if test="contains(., '[') and contains(., ']')">
+                                                        <xsl:if test="uwf:testBrackets(.) = true()">
                                                             <rdamd:P30137>
                                                                 <xsl:text>Other title information is assigned by the cataloguing agency.</xsl:text>
                                                             </rdamd:P30137>
@@ -142,9 +187,9 @@
                                                     <xsl:otherwise>
                                                         <xsl:for-each select="tokenize(., ' ; ')">
                                                             <rdamd:P30105>
-                                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => translate('[]', '')"/>
+                                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                                                             </rdamd:P30105>
-                                                            <xsl:if test="contains(., '[') and contains(., ']')">
+                                                            <xsl:if test="uwf:testBrackets(.) = true()">
                                                                 <rdamd:P30137>
                                                                     <xsl:text>Statement of responsibility is assigned by the cataloguing agency.</xsl:text>
                                                                 </rdamd:P30137>
@@ -162,9 +207,9 @@
                                                     <xsl:choose>
                                                         <xsl:when test="ends-with($subfield/preceding-sibling::*[1], '=')">
                                                             <rdamd:P30156>
-                                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => translate('[]', '')"/>
+                                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                                                             </rdamd:P30156>
-                                                            <xsl:if test="contains(., '[') and contains(., ']')">
+                                                            <xsl:if test="uwf:testBrackets(.) = true()">
                                                                 <rdamd:P30137>
                                                                     <xsl:text>Title proper is assigned by the cataloguing agency.</xsl:text>
                                                                 </rdamd:P30137>
@@ -172,9 +217,9 @@
                                                         </xsl:when>
                                                         <xsl:when test="ends-with($subfield/preceding-sibling::*[1], ':')">
                                                             <rdamd:P30142>
-                                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => translate('[]', '')"/>
+                                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                                                             </rdamd:P30142>
-                                                            <xsl:if test="contains(., '[') and contains(., ']')">
+                                                            <xsl:if test="uwf:testBrackets(.) = true()">
                                                                 <rdamd:P30137>
                                                                     <xsl:text>Other title information is assigned by the cataloguing agency.</xsl:text>
                                                                 </rdamd:P30137>
@@ -183,9 +228,9 @@
                                                         <xsl:when test="ends-with($subfield/preceding-sibling::*[1], '/')">
                                                             <xsl:for-each select="tokenize(., ' ; ')">
                                                                 <rdamd:P30105>
-                                                                    <xsl:value-of select="replace(., '\s*[=:;/]$', '') => translate('[]', '')"/>
+                                                                    <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                                                                 </rdamd:P30105>
-                                                                <xsl:if test="contains(., '[') and contains(., ']')">
+                                                                <xsl:if test="uwf:testBrackets(.) = true()">
                                                                     <rdamd:P30137>
                                                                         <xsl:text>Statement of responsibility is assigned by the cataloguing agency.</xsl:text>
                                                                     </rdamd:P30137>
@@ -193,16 +238,40 @@
                                                             </xsl:for-each>   
                                                         </xsl:when>
                                                         <xsl:otherwise>
-                                                            <ex:ERROR>No ISBD punctuation present in 245 subfield preceding subfield {$subfield/@code}</ex:ERROR>
+                                                            <xsl:choose>
+                                                                <xsl:when test="$subfield/@code = 'b'">
+                                                                    <rdamd:P30142>
+                                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                                    </rdamd:P30142>
+                                                                    <xsl:if test="uwf:testBrackets(.) = true()">
+                                                                        <rdamd:P30137>
+                                                                            <xsl:text>Other title information is assigned by the cataloguing agency.</xsl:text>
+                                                                        </rdamd:P30137>
+                                                                    </xsl:if>
+                                                                </xsl:when>
+                                                                <xsl:when test="$subfield/@code = 'c'">
+                                                                    <xsl:for-each select="tokenize(., ' ; ')">
+                                                                        <rdamd:P30105>
+                                                                            <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                                        </rdamd:P30105>
+                                                                        <xsl:if test="uwf:testBrackets(.) = true()">
+                                                                            <rdamd:P30137>
+                                                                                <xsl:text>Statement of responsibility is assigned by the cataloguing agency.</xsl:text>
+                                                                            </rdamd:P30137>
+                                                                        </xsl:if>
+                                                                    </xsl:for-each> 
+                                                                </xsl:when>
+                                                                <xsl:otherwise/>
+                                                            </xsl:choose>
                                                         </xsl:otherwise>
                                                     </xsl:choose>
                                                 </xsl:when>
                                                 <!-- this is after : and is other title info -->
                                                 <xsl:otherwise>
                                                     <rdamd:P30142>
-                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => translate('[]', '')"/>
+                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                                                     </rdamd:P30142>
-                                                    <xsl:if test="contains(., '[') and contains(., ']')">
+                                                    <xsl:if test="uwf:testBrackets(.) = true()">
                                                         <rdamd:P30137>
                                                             <xsl:text>Other title information is assigned by the cataloguing agency.</xsl:text>
                                                         </rdamd:P30137>
@@ -222,9 +291,9 @@
                                             <xsl:choose>
                                                 <xsl:when test="ends-with($subfield/preceding-sibling::*[1], ':')">
                                                     <rdamd:P30142>
-                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => translate('[]', '')"/>
+                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                                                     </rdamd:P30142>
-                                                    <xsl:if test="contains(., '[') and contains(., ']')">
+                                                    <xsl:if test="uwf:testBrackets(.) = true()">
                                                         <rdamd:P30137>
                                                             <xsl:text>Other title information is assigned by the cataloguing agency.</xsl:text>
                                                         </rdamd:P30137>
@@ -232,9 +301,9 @@
                                                 </xsl:when>
                                                 <xsl:when test="ends-with($subfield/preceding-sibling::*[1], '=')">
                                                     <rdamd:P30156>
-                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => translate('[]', '')"/>
+                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                                                     </rdamd:P30156>
-                                                    <xsl:if test="contains(., '[') and contains(., ']')">
+                                                    <xsl:if test="uwf:testBrackets(.) = true()">
                                                         <rdamd:P30137>
                                                             <xsl:text>Title proper is assigned by the cataloguing agency.</xsl:text>
                                                         </rdamd:P30137>
@@ -243,9 +312,9 @@
                                                 <xsl:when test="ends-with($subfield/preceding-sibling::*[1], '/')">
                                                     <xsl:for-each select="tokenize(., ' ; ')">
                                                         <rdamd:P30105>
-                                                            <xsl:value-of select="replace(., '\s*[=:;/]$', '') => translate('[]', '')"/>
+                                                            <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                                                         </rdamd:P30105>
-                                                        <xsl:if test="contains(., '[') and contains(., ']')">
+                                                        <xsl:if test="uwf:testBrackets(.) = true()">
                                                             <rdamd:P30137>
                                                                 <xsl:text>Statement of responsibility is assigned by the cataloguing agency.</xsl:text>
                                                             </rdamd:P30137>
@@ -253,7 +322,31 @@
                                                     </xsl:for-each>   
                                                 </xsl:when>
                                                 <xsl:otherwise>
-                                                    <ex:ERROR>No ISBD punctuation present in 245 subfield preceding subfield {$subfield/@code}</ex:ERROR>
+                                                    <xsl:choose>
+                                                        <xsl:when test="$subfield/@code = 'b'">
+                                                            <rdamd:P30142>
+                                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                            </rdamd:P30142>
+                                                            <xsl:if test="uwf:testBrackets(.) = true()">
+                                                                <rdamd:P30137>
+                                                                    <xsl:text>Other title information is assigned by the cataloguing agency.</xsl:text>
+                                                                </rdamd:P30137>
+                                                            </xsl:if>
+                                                        </xsl:when>
+                                                        <xsl:when test="$subfield/@code = 'c'">
+                                                            <xsl:for-each select="tokenize(., ' ; ')">
+                                                                <rdamd:P30105>
+                                                                    <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                                </rdamd:P30105>
+                                                                <xsl:if test="uwf:testBrackets(.) = true()">
+                                                                    <rdamd:P30137>
+                                                                        <xsl:text>Statement of responsibility is assigned by the cataloguing agency.</xsl:text>
+                                                                    </rdamd:P30137>
+                                                                </xsl:if>
+                                                            </xsl:for-each> 
+                                                        </xsl:when>
+                                                        <xsl:otherwise/>
+                                                    </xsl:choose>
                                                 </xsl:otherwise>
                                             </xsl:choose>
                                         </xsl:when>
@@ -261,9 +354,9 @@
                                         <xsl:otherwise>
                                             <xsl:for-each select="tokenize(., ' ; ')">
                                                 <rdamd:P30105>
-                                                    <xsl:value-of select="replace(., '\s*[=:;/]$', '') => translate('[]', '')"/>
+                                                    <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                                                 </rdamd:P30105>
-                                                <xsl:if test="contains(., '[') and contains(., ']')">
+                                                <xsl:if test="uwf:testBrackets(.) = true()">
                                                     <rdamd:P30137>
                                                         <xsl:text>Statement of responsibility is assigned by the cataloguing agency.</xsl:text>
                                                     </rdamd:P30137>
@@ -278,9 +371,9 @@
                                 <xsl:choose>
                                     <xsl:when test="ends-with($subfield/preceding-sibling::*[1], ':')">
                                         <rdamd:P30142>
-                                            <xsl:value-of select="replace(., '\s*[=:;/]$', '') => translate('[]', '')"/>
+                                            <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                                         </rdamd:P30142>
-                                        <xsl:if test="contains(., '[') and contains(., ']')">
+                                        <xsl:if test="uwf:testBrackets(.) = true()">
                                             <rdamd:P30137>
                                                 <xsl:text>Other title information is assigned by the cataloguing agency.</xsl:text>
                                             </rdamd:P30137>
@@ -288,9 +381,9 @@
                                     </xsl:when>
                                     <xsl:when test="ends-with($subfield/preceding-sibling::*[1], '=')">
                                         <rdamd:P30156>
-                                            <xsl:value-of select="replace(., '\s*[=:;/]$', '') => translate('[]', '')"/>
+                                            <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                                         </rdamd:P30156>
-                                        <xsl:if test="contains(., '[') and contains(., ']')">
+                                        <xsl:if test="uwf:testBrackets(.) = true()">
                                             <rdamd:P30137>
                                                 <xsl:text>Title proper is assigned by the cataloguing agency.</xsl:text>
                                             </rdamd:P30137>
@@ -299,9 +392,9 @@
                                     <xsl:when test="ends-with($subfield/preceding-sibling::*[1], '/')">
                                         <xsl:for-each select="tokenize(., ' ; ')">
                                             <rdamd:P30105>
-                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => translate('[]', '')"/>
+                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                                             </rdamd:P30105>
-                                            <xsl:if test="contains(., '[') and contains(., ']')">
+                                            <xsl:if test="uwf:testBrackets(.) = true()">
                                                 <rdamd:P30137>
                                                     <xsl:text>Statement of responsibility is assigned by the cataloguing agency.</xsl:text>
                                                 </rdamd:P30137>
@@ -309,7 +402,31 @@
                                         </xsl:for-each>   
                                     </xsl:when>
                                     <xsl:otherwise>
-                                        <ex:ERROR>No ISBD punctuation present in 245 subfield preceding subfield {$subfield/@code}</ex:ERROR>
+                                        <xsl:choose>
+                                            <xsl:when test="$subfield/@code = 'b'">
+                                                <rdamd:P30142>
+                                                    <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                </rdamd:P30142>
+                                                <xsl:if test="uwf:testBrackets(.) = true()">
+                                                    <rdamd:P30137>
+                                                        <xsl:text>Other title information is assigned by the cataloguing agency.</xsl:text>
+                                                    </rdamd:P30137>
+                                                </xsl:if>
+                                            </xsl:when>
+                                            <xsl:when test="$subfield/@code = 'c'">
+                                                <xsl:for-each select="tokenize(., ' ; ')">
+                                                    <rdamd:P30105>
+                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                    </rdamd:P30105>
+                                                    <xsl:if test="uwf:testBrackets(.) = true()">
+                                                        <rdamd:P30137>
+                                                            <xsl:text>Statement of responsibility is assigned by the cataloguing agency.</xsl:text>
+                                                        </rdamd:P30137>
+                                                    </xsl:if>
+                                                </xsl:for-each> 
+                                            </xsl:when>
+                                            <xsl:otherwise/>
+                                        </xsl:choose>
                                     </xsl:otherwise>
                                 </xsl:choose>
                             </xsl:otherwise>
@@ -330,9 +447,9 @@
                                                     <!-- this means it came before / and is other title info -->
                                                     <xsl:when test="position() = 1">
                                                         <rdamd:P30142>
-                                                            <xsl:value-of select="replace(., '\s*[=:;/]$', '') => translate('[]', '')"/>
+                                                            <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                                                         </rdamd:P30142>
-                                                        <xsl:if test="contains(., '[') and contains(., ']')">
+                                                        <xsl:if test="uwf:testBrackets(.) = true()">
                                                             <rdamd:P30137>
                                                                 <xsl:text>Other title information is assigned by the cataloguing agency.</xsl:text>
                                                             </rdamd:P30137>
@@ -342,9 +459,9 @@
                                                     <xsl:otherwise>
                                                         <xsl:for-each select="tokenize(., ' ; ')">
                                                             <rdamd:P30105>
-                                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => translate('[]', '')"/>
+                                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                                                             </rdamd:P30105>
-                                                            <xsl:if test="contains(., '[') and contains(., ']')">
+                                                            <xsl:if test="uwf:testBrackets(.) = true()">
                                                                 <rdamd:P30137>
                                                                     <xsl:text>Statement of responsibility is assigned by the cataloguing agency.</xsl:text>
                                                                 </rdamd:P30137>
@@ -360,9 +477,9 @@
                                                 <!-- this means it came before the : is title proper -->
                                                 <xsl:when test="position() = 1">
                                                     <rdamd:P30156>
-                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => translate('[]', '')"/>
+                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                                                     </rdamd:P30156>
-                                                    <xsl:if test="contains(., '[') and contains(., ']')">
+                                                    <xsl:if test="uwf:testBrackets(.) = true()">
                                                         <rdamd:P30137>
                                                             <xsl:text>Title proper is assigned by the cataloguing agency.</xsl:text>
                                                         </rdamd:P30137>
@@ -371,9 +488,9 @@
                                                 <!-- this is after : and is other title info -->
                                                 <xsl:otherwise>
                                                     <rdamd:P30142>
-                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => translate('[]', '')"/>
+                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                                                     </rdamd:P30142>
-                                                    <xsl:if test="contains(., '[') and contains(., ']')">
+                                                    <xsl:if test="uwf:testBrackets(.) = true()">
                                                         <rdamd:P30137>
                                                             <xsl:text>Other title information is assigned by the cataloguing agency.</xsl:text>
                                                         </rdamd:P30137>
@@ -391,9 +508,9 @@
                                         <!-- first is title proper -->
                                         <xsl:when test="position() = 1">
                                             <rdamd:P30156>
-                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => translate('[]', '')"/>
+                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                                             </rdamd:P30156>
-                                            <xsl:if test="contains(., '[') and contains(., ']')">
+                                            <xsl:if test="uwf:testBrackets(.) = true()">
                                                 <rdamd:P30137>
                                                     <xsl:text>Title proper is assigned by the cataloguing agency.</xsl:text>
                                                 </rdamd:P30137>
@@ -403,9 +520,9 @@
                                         <xsl:otherwise>
                                             <xsl:for-each select="tokenize(., ' ; ')">
                                                 <rdamd:P30105>
-                                                    <xsl:value-of select="replace(., '\s*[=:;/]$', '') => translate('[]', '')"/>
+                                                    <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                                                 </rdamd:P30105>
-                                                <xsl:if test="contains(., '[') and contains(., ']')">
+                                                <xsl:if test="uwf:testBrackets(.) = true()">
                                                     <rdamd:P30137>
                                                         <xsl:text>Statement of responsibility is assigned by the cataloguing agency.</xsl:text>
                                                     </rdamd:P30137>
@@ -418,9 +535,9 @@
                             <!-- If there is no additional punctuation, it is a parallel title -->
                             <xsl:otherwise>
                                 <rdamd:P30156>
-                                    <xsl:value-of select="replace(., '\s*[=:;/]$', '') => translate('[]', '')"/>
+                                    <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                                 </rdamd:P30156>
-                                <xsl:if test="contains(., '[') and contains(., ']')">
+                                <xsl:if test="uwf:testBrackets(.) = true()">
                                     <rdamd:P30137>
                                         <xsl:text>Title proper is assigned by the cataloguing agency.</xsl:text>
                                     </rdamd:P30137>
@@ -445,7 +562,7 @@
                                     <xsl:value-of select="."/>
                                 </xsl:when>
                                 <xsl:otherwise>
-                                    <xsl:value-of select="replace(., '\s*[/:\.=,]$', '') => translate('[]', '')"/>
+                                    <xsl:value-of select="replace(., '\s*[/:\.=,]$', '') => uwf:removeBrackets()"/>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </rdamd:P30134>
@@ -453,7 +570,7 @@
                 </xsl:when>
                 <xsl:otherwise>
                     <rdamd:P30142>
-                        <xsl:value-of select="replace(., '\s*[/:=,]$', '') => translate('[]', '')"/>
+                        <xsl:value-of select="replace(., '\s*[/:=,]$', '') => uwf:removeBrackets()"/>
                     </rdamd:P30142>
                 </xsl:otherwise>
             </xsl:choose>

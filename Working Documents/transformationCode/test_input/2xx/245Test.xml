@@ -150,14 +150,14 @@
             <marc:subfield code="c">Fake Society</marc:subfield>
         </marc:datafield>
     </marc:record>
-    <!--<marc:record>
+    <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">245-test16</marc:controlfield>
         <marc:datafield tag="245" ind1="0" ind2="0">
-            <marc:subfield code="a">Project directory / /</marc:subfield>
+            <marc:subfield code="a">Project directory /</marc:subfield>
             <marc:subfield code="c">TDC = Répertoire des projets / CDT.</marc:subfield>
         </marc:datafield>
-    </marc:record>-->
+    </marc:record>
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">245-test17</marc:controlfield>
