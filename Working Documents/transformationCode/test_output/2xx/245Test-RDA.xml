@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
-   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test1wor">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test0wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>245-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10002>245-test0wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <fake:marcfield>F245 10 $a --as others see us</fake:marcfield>
       <rdawd:P10088>--as others see us</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test1exp">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test0exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test1wor"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20002>245-test1exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test0wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>245-test0exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test1man">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test0man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test1exp"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test0exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a --as others see us</fake:marcfield>
-      <!--- -as others see us-->
       <rdamd:P30156>--as others see us</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test1wor">
@@ -32,13 +31,33 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test1exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a Uyghur qătaiami : $b piskhologiyălik năzăr / $c Mămtimin Ăla = The Uyghur genocide : a psychological perspective / Mamtimin Ala.</fake:marcfield>
-      <!--Uyghur qătaiami : piskhologiyălik năzăr / Mămtimin Ăla = The Uyghur genocide : a psychological perspective / Mamtimin Ala.-->
       <rdamd:P30156>Uyghur qătaiami</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <!--piskhologiyălik năzăr /-->
       <rdamd:P30142>piskhologiyălik năzăr</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <!--Mămtimin Ăla = The Uyghur genocide : a psychological perspective / Mamtimin Ala.-->
       <rdamd:P30105>Mămtimin Ăla</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
       <rdamd:P30156>The Uyghur genocide</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30142>a psychological perspective</rdamd:P30142><!--rdamd:P30142 = has other title information-->
       <rdamd:P30105>Mamtimin Ala.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test01wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test01wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <fake:marcfield>F245 10 $a Uluru / Ayers Rock / $c by John Smith.</fake:marcfield>
+      <rdawd:P10088>Uluru / Ayers Rock</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test01exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test01wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>245-test01exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test01man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test01exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F245 10 $a Uluru / Ayers Rock / $c by John Smith.</fake:marcfield>
+      <rdamd:P30156>Uluru / Ayers Rock</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <!--by John Smith.-->
+      <rdamd:P30105>by John Smith.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test2wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -55,7 +74,6 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test2exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 12 $a A report to the legislature for the year ...</fake:marcfield>
-      <!--A report to the legislature for the year ...-->
       <rdamd:P30156>A report to the legislature for the year ...</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test3wor">
@@ -73,7 +91,6 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test3exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 00 $a Concerto for piano, with chamber music ensemble, op. 26 (1961).</fake:marcfield>
-      <!--Concerto for piano, with chamber music ensemble, op. 26 (1961).-->
       <rdamd:P30156>Concerto for piano, with chamber music ensemble, op. 26 (1961).</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test4wor">
@@ -91,7 +108,6 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test4exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a [Seventeen poems].</fake:marcfield>
-      <!--[Seventeen poems].-->
       <rdamd:P30156>Seventeen poems.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
@@ -110,7 +126,6 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test5exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 00 $a [Diary].</fake:marcfield>
-      <!--[Diary].-->
       <rdamd:P30156>Diary.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
@@ -129,7 +144,6 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test6exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 00 $a [Diary]</fake:marcfield>
-      <!--[Diary]-->
       <rdamd:P30156>Diary</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
@@ -148,28 +162,9 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test7exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a Cancer research : $b official organ of the American Association for Cancer Research, Inc.</fake:marcfield>
-      <!--Cancer research : official organ of the American Association for Cancer Research, Inc.-->
       <rdamd:P30156>Cancer research</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <!--official organ of the American Association for Cancer Research, Inc.-->
       <rdamd:P30142>official organ of the American Association for Cancer Research, Inc.</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test8wor">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>245-test8wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <fake:marcfield>F245 10 $a ETZ : $b ...</fake:marcfield>
-      <rdawd:P10088>ETZ</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test8exp">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test8wor"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20002>245-test8exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test8man">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test8exp"/><!--rdamo:P30139 = has expression manifested-->
-      <fake:marcfield>F245 10 $a ETZ : $b ...</fake:marcfield>
-      <!--ETZ : ...-->
-      <rdamd:P30156>ETZ</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30142>...</rdamd:P30142><!--rdamd:P30142 = has other title information-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test9wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -186,8 +181,8 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test9exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a Trade Union Fellowship Program : $b [announcement].</fake:marcfield>
-      <!--Trade Union Fellowship Program : [announcement].-->
       <rdamd:P30156>Trade Union Fellowship Program</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <!--[announcement].-->
       <rdamd:P30142>announcement.</rdamd:P30142><!--rdamd:P30142 = has other title information-->
       <rdamd:P30137>Other title information is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
@@ -206,8 +201,8 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test10exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a Rock mechanics : $b journal of the International Society for Rock Mechanics = Felsmechanik.</fake:marcfield>
-      <!--Rock mechanics : journal of the International Society for Rock Mechanics = Felsmechanik.-->
       <rdamd:P30156>Rock mechanics</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <!--journal of the International Society for Rock Mechanics = Felsmechanik.-->
       <rdamd:P30142>journal of the International Society for Rock Mechanics</rdamd:P30142><!--rdamd:P30142 = has other title information-->
       <rdamd:P30156>Felsmechanik.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
@@ -226,8 +221,8 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test11exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 15 $a Tōn Diōnos Rōmaikōn historiōn eikositria biblia = $b Dionis Romanarum historiarum libri XXIII, à XXXVI ad LVIII vsque.</fake:marcfield>
-      <!--Tōn Diōnos Rōmaikōn historiōn eikositria biblia = Dionis Romanarum historiarum libri XXIII, à XXXVI ad LVIII vsque.-->
       <rdamd:P30156>Tōn Diōnos Rōmaikōn historiōn eikositria biblia</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <!--Dionis Romanarum historiarum libri XXIII, à XXXVI ad LVIII vsque.-->
       <rdamd:P30156>Dionis Romanarum historiarum libri XXIII, à XXXVI ad LVIII vsque.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test12wor">
@@ -245,9 +240,10 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test12exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 15 $a Tōn meionotētōn eunoia : $b mythistorēma / $c Spyrou Gkrintzou.</fake:marcfield>
-      <!--Tōn meionotētōn eunoia : mythistorēma / Spyrou Gkrintzou.-->
       <rdamd:P30156>Tōn meionotētōn eunoia</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <!--mythistorēma /-->
       <rdamd:P30142>mythistorēma</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <!--Spyrou Gkrintzou.-->
       <rdamd:P30105>Spyrou Gkrintzou.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test13wor">
@@ -265,10 +261,10 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test13exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 14 $a The charity ball : $b a comedy in four acts : $k typescript, $f 1889 / $c by David Belasco and Henry C. DeMille.</fake:marcfield>
-      <!--The charity ball : a comedy in four acts : typescript, 1889 / by David Belasco and Henry C. DeMille.-->
       <rdamd:P30156>The charity ball</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <!--a comedy in four acts :-->
       <rdamd:P30142>a comedy in four acts</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30142>typescript, 1889</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <!--by David Belasco and Henry C. DeMille.-->
       <rdamd:P30105>by David Belasco and Henry C. DeMille.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test14wor">
@@ -286,8 +282,8 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test14exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 00 $a Love from Joy : $b letters from a farmer’s wife. $n Part III, $p 1987-1995, At the bungalow.</fake:marcfield>
-      <!--Love from Joy : letters from a farmer’s wife. Part III, 1987-1995, At the bungalow.-->
       <rdamd:P30156>Love from Joy</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <!--letters from a farmer’s wife. Part III, 1987-1995, At the bungalow.-->
       <rdamd:P30142>letters from a farmer’s wife. Part III, 1987-1995, At the bungalow.</rdamd:P30142><!--rdamd:P30142 = has other title information-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test15wor">
@@ -305,30 +301,9 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test15exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 00 $a Proceedings / $c Fake Society</fake:marcfield>
-      <!--Proceedings / Fake Society-->
       <rdamd:P30156>Proceedings</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <!--Fake Society-->
       <rdamd:P30105>Fake Society</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test16wor">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>245-test16wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <fake:marcfield>F245 00 $a Project directory / / $c TDC = Répertoire des projets / CDT.</fake:marcfield>
-      <rdawd:P10088>Project directory /</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test16exp">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test16wor"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20002>245-test16exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test16man">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test16exp"/><!--rdamo:P30139 = has expression manifested-->
-      <fake:marcfield>F245 00 $a Project directory / / $c TDC = Répertoire des projets / CDT.</fake:marcfield>
-      <!--Project directory / / TDC = Répertoire des projets / CDT.-->
-      <rdamd:P30156>Project directory</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30105>/ TDC</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30156>Répertoire des projets</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30105>CDT.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test17wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -345,8 +320,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test17exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 00 $a Short-Harrison-Symmes family papers, $f 1760-1878.</fake:marcfield>
-      <!--Short-Harrison-Symmes family papers, 1760-1878.-->
-      <rdamd:P30156>Short-Harrison-Symmes family papers, 1760-1878.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30156>Short-Harrison-Symmes family papers,</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test18wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -363,9 +337,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test18exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 14 $a The New Lost City Ramblers with Cousin Emmy $h [sound recording].</fake:marcfield>
-      <!--The New Lost City Ramblers with Cousin Emmy [sound recording].-->
-      <rdamd:P30156>The New Lost City Ramblers with Cousin Emmy sound recording.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30156>The New Lost City Ramblers with Cousin Emmy</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test19wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -382,90 +354,10 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test19exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 03 $a Le Bureau $h [filmstrip] = $b La Oficina = Das Büro.</fake:marcfield>
-      <!--Le Bureau [filmstrip] = La Oficina = Das Büro.-->
-      <rdamd:P30156>Le Bureau filmstrip</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30156>Le Bureau</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <!--La Oficina = Das Büro.-->
       <rdamd:P30156>La Oficina</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30156>Das Büro.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test20wor">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>245-test20wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <fake:marcfield>F245 00 $a Oklahoma $h [sound recording] ; $b Carousel ; South Pacific ; Yokels in Paradise</fake:marcfield>
-      <rdawd:P10088>Oklahoma</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test20exp">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test20wor"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20002>245-test20exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test20man">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test20exp"/><!--rdamo:P30139 = has expression manifested-->
-      <fake:marcfield>F245 00 $a Oklahoma $h [sound recording] ; $b Carousel ; South Pacific ; Yokels in Paradise</fake:marcfield>
-      <!--Oklahoma [sound recording] ; Carousel ; South Pacific ; Yokels in Paradise-->
-      <rdamd:P30156>Oklahoma sound recording ; Carousel ; South Pacific ; Yokels in Paradise</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test21wor">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>245-test21wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <fake:marcfield>F245 03 $a La mer $h [sound recording] ; $b Khamma ; Rhapsody for clarinet and orchestra / $c Claude Debussy.</fake:marcfield>
-      <rdawd:P10088>La mer</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test21exp">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test21wor"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20002>245-test21exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test21man">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test21exp"/><!--rdamo:P30139 = has expression manifested-->
-      <fake:marcfield>F245 03 $a La mer $h [sound recording] ; $b Khamma ; Rhapsody for clarinet and orchestra / $c Claude Debussy.</fake:marcfield>
-      <!--La mer [sound recording] ; Khamma ; Rhapsody for clarinet and orchestra / Claude Debussy.-->
-      <rdamd:P30156>La mer sound recording ; Khamma ; Rhapsody for clarinet and orchestra</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30105>Claude Debussy.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test22wor">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>245-test22wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <fake:marcfield>F245 00 $a $h [sound recording] ; $b inet and orchestra / $c Claude Debussy.</fake:marcfield>
-      <rdawd:P10088/><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test22exp">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test22wor"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20002>245-test22exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test22man">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test22exp"/><!--rdamo:P30139 = has expression manifested-->
-      <fake:marcfield>F245 00 $a $h [sound recording] ; $b inet and orchestra / $c Claude Debussy.</fake:marcfield>
-      <!-- [sound recording] ; inet and orchestra / Claude Debussy.-->
-      <rdamd:P30156> sound recording ; inet and orchestra</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30105>Claude Debussy.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test23wor">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>245-test23wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <fake:marcfield>F245 00 $a Concerto per piano n. 21, K 467 $h [sound recording] ; $c W.A. Mozart. L’assedio di Corinto. Ouverture / G. Rossini.</fake:marcfield>
-      <rdawd:P10088>Concerto per piano n. 21, K 467</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test23exp">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test23wor"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20002>245-test23exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test23man">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test23exp"/><!--rdamo:P30139 = has expression manifested-->
-      <fake:marcfield>F245 00 $a Concerto per piano n. 21, K 467 $h [sound recording] ; $c W.A. Mozart. L’assedio di Corinto. Ouverture / G. Rossini.</fake:marcfield>
-      <!--Concerto per piano n. 21, K 467 [sound recording] ; W.A. Mozart. L’assedio di Corinto. Ouverture / G. Rossini.-->
-      <rdamd:P30156>Concerto per piano n. 21, K 467 sound recording ; W.A. Mozart. L’assedio di Corinto. Ouverture</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30105>G. Rossini.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test24wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -482,27 +374,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test24exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a Four years at Yale : $k diaries, $f 1903 Sept. 16-1907 Oct. 5.</fake:marcfield>
-      <!--Four years at Yale : diaries, 1903 Sept. 16-1907 Oct. 5.-->
       <rdamd:P30156>Four years at Yale</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30142>diaries, 1903 Sept. 16-1907 Oct. 5.</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test25wor">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>245-test25wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <fake:marcfield>F245 00 $a PL 17 Hearing Files $k Case Files $f 1974 $p District 6 $h microfilm (jacketted in fiche).</fake:marcfield>
-      <rdawd:P10088>PL 17 Hearing Files</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test25exp">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/245-test25wor"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20002>245-test25exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/245-test25man">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test25exp"/><!--rdamo:P30139 = has expression manifested-->
-      <fake:marcfield>F245 00 $a PL 17 Hearing Files $k Case Files $f 1974 $p District 6 $h microfilm (jacketted in fiche).</fake:marcfield>
-      <!--PL 17 Hearing Files Case Files 1974 District 6 microfilm (jacketted in fiche).-->
-      <rdamd:P30156>PL 17 Hearing Files Case Files 1974 District 6 microfilm (jacketted in fiche).</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test26wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -519,7 +391,6 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test26exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a Faust. $n Part one.</fake:marcfield>
-      <!--Faust. Part one.-->
       <rdamd:P30156>Faust. Part one.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test27wor">
@@ -537,8 +408,8 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test27exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 00 $a Management report. $n Part I / $c U.S. Navy's Military Sealift Command.</fake:marcfield>
-      <!--Management report. Part I / U.S. Navy's Military Sealift Command.-->
       <rdamd:P30156>Management report. Part I</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <!--U.S. Navy's Military Sealift Command.-->
       <rdamd:P30105>U.S. Navy's Military Sealift Command.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test28wor">
@@ -556,7 +427,6 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test28exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. $n 1. Abt. Originale. $n Reihe B, $p Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</fake:marcfield>
-      <!--Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. 1. Abt. Originale. Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.-->
       <rdamd:P30156>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. 1. Abt. Originale. Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test29wor">
@@ -574,7 +444,6 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test29exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 00 $a Dissertation abstracts. $n A, $p The humanities and social sciences.</fake:marcfield>
-      <!--Dissertation abstracts. A, The humanities and social sciences.-->
       <rdamd:P30156>Dissertation abstracts. A, The humanities and social sciences.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test30wor">
@@ -592,9 +461,8 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test30exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 00 $a Heritage Books archives. $p Underwood biographical dictionary. $n Volumes 1 &amp; 2 revised $h [electronic resource] / $c Laverne Galeener-Moore.</fake:marcfield>
-      <!--Heritage Books archives. Underwood biographical dictionary. Volumes 1 & 2 revised [electronic resource] / Laverne Galeener-Moore.-->
-      <rdamd:P30156>Heritage Books archives. Underwood biographical dictionary. Volumes 1 &amp; 2 revised electronic resource</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30156>Heritage Books archives. Underwood biographical dictionary. Volumes 1 &amp; 2 revised</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <!--Laverne Galeener-Moore.-->
       <rdamd:P30105>Laverne Galeener-Moore.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test31wor">
@@ -612,8 +480,8 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test31exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 00 $a Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. $n Part II, $p Labour unions = $b Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers. $n Partie II, $p Syndicats ouvriers.</fake:marcfield>
-      <!--Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. Part II, Labour unions = Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers. Partie II, Syndicats ouvriers.-->
       <rdamd:P30156>Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. Part II, Labour unions</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <!--Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers. Partie II, Syndicats ouvriers.-->
       <rdamd:P30156>Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers. Partie II, Syndicats ouvriers.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test32wor">
@@ -631,7 +499,6 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test32exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a Advanced calculus. $p Student handbook.</fake:marcfield>
-      <!--Advanced calculus. Student handbook.-->
       <rdamd:P30156>Advanced calculus. Student handbook.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test33wor">
@@ -649,11 +516,12 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test33exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a Internationale Strassenkarte. $p Europe 1:2.5 Mio. : $b mit Register = International road map. $p Europe, 1:2.5 mio : with index / $c RV Reise- und Verkehrsverlag.</fake:marcfield>
-      <!--Internationale Strassenkarte. Europe 1:2.5 Mio. : mit Register = International road map. Europe, 1:2.5 mio : with index / RV Reise- und Verkehrsverlag.-->
       <rdamd:P30156>Internationale Strassenkarte. Europe 1:2.5 Mio.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <!--mit Register = International road map. Europe, 1:2.5 mio : with index /-->
       <rdamd:P30142>mit Register</rdamd:P30142><!--rdamd:P30142 = has other title information-->
       <rdamd:P30156>International road map. Europe, 1:2.5 mio</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30142>with index</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <!--RV Reise- und Verkehrsverlag.-->
       <rdamd:P30105>RV Reise- und Verkehrsverlag.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test34wor">
@@ -671,8 +539,8 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test34exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a Island series. $p Penrhyn, bethymetry / $c compilation by K.B. Lewis, P. Larkin, and T.T. Rongo ; bathymetric compilation and contouring by K.B. Lewis, T.T. Rongo and A.T. Utanga ; drawn by S.C. Glover.</fake:marcfield>
-      <!--Island series. Penrhyn, bethymetry / compilation by K.B. Lewis, P. Larkin, and T.T. Rongo ; bathymetric compilation and contouring by K.B. Lewis, T.T. Rongo and A.T. Utanga ; drawn by S.C. Glover.-->
       <rdamd:P30156>Island series. Penrhyn, bethymetry</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <!--compilation by K.B. Lewis, P. Larkin, and T.T. Rongo ; bathymetric compilation and contouring by K.B. Lewis, T.T. Rongo and A.T. Utanga ; drawn by S.C. Glover.-->
       <rdamd:P30105>compilation by K.B. Lewis, P. Larkin, and T.T. Rongo</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
       <rdamd:P30105>bathymetric compilation and contouring by K.B. Lewis, T.T. Rongo and A.T. Utanga</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
       <rdamd:P30105>drawn by S.C. Glover.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
@@ -692,8 +560,8 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test35exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 00 $a Deutsche Bibliographie. $p Wöchentliches Verzeichnis. $n Reihe B, $p Beilage, Erscheinungen ausserhalb des Verlagsbuchhandels : $b Amtsblatt der Deutschen Bibliothek.</fake:marcfield>
-      <!--Deutsche Bibliographie. Wöchentliches Verzeichnis. Reihe B, Beilage, Erscheinungen ausserhalb des Verlagsbuchhandels : Amtsblatt der Deutschen Bibliothek.-->
       <rdamd:P30156>Deutsche Bibliographie. Wöchentliches Verzeichnis. Reihe B, Beilage, Erscheinungen ausserhalb des Verlagsbuchhandels</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <!--Amtsblatt der Deutschen Bibliothek.-->
       <rdamd:P30142>Amtsblatt der Deutschen Bibliothek.</rdamd:P30142><!--rdamd:P30142 = has other title information-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test36wor">
@@ -711,9 +579,8 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test36exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 00 $a Portals to the world. $p Selected Internet resources. $p Maldives $h [electronic resource] / $c created and maintained by the Asian Division, Area Studies Directorate.</fake:marcfield>
-      <!--Portals to the world. Selected Internet resources. Maldives [electronic resource] / created and maintained by the Asian Division, Area Studies Directorate.-->
-      <rdamd:P30156>Portals to the world. Selected Internet resources. Maldives electronic resource</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30156>Portals to the world. Selected Internet resources. Maldives</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <!--created and maintained by the Asian Division, Area Studies Directorate.-->
       <rdamd:P30105>created and maintained by the Asian Division, Area Studies Directorate.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test37wor">
@@ -731,7 +598,6 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test37exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a Director's report of the Association of Insurance Adjusters. $s Member release.</fake:marcfield>
-      <!--Director's report of the Association of Insurance Adjusters. Member release.-->
       <rdamd:P30156>Director's report of the Association of Insurance Adjusters. Member release.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test38wor">
@@ -749,7 +615,6 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test38exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a Second director's report of the Association. $s Member release,  $s General release.</fake:marcfield>
-      <!--Second director's report of the Association. Member release,  General release.-->
       <rdamd:P30156>Second director's report of the Association. Member release,  General release.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test39wor">
@@ -766,9 +631,9 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test39exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 00 $k Letter, $f 1901 March 6, $b Dublin, to Henrik Ibsen, Kristiana [Oslo].</fake:marcfield>
-      <!--Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo].-->
-      <rdamd:P30156>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana Oslo.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30156> </rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <!--Dublin, to Henrik Ibsen, Kristiana [Oslo].-->
+      <ex:ERROR xmlns:ex="http://fakeIRI.edu/">No ISBD punctuation present in 245 subfield preceding subfield b</ex:ERROR>
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test40wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -784,8 +649,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test40exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 00 $k Records, $f 1939-1973 $g 1965-1972.</fake:marcfield>
-      <!--Records, 1939-1973 1965-1972.-->
-      <rdamd:P30156>Records, 1939-1973 1965-1972.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30156> </rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test41wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -801,8 +665,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test41exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $k Employment applications $g Jan.-Dec. 1985.</fake:marcfield>
-      <!--Employment applications Jan.-Dec. 1985.-->
-      <rdamd:P30156>Employment applications Jan.-Dec. 1985.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30156> </rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test42wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -819,9 +682,10 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test42exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 15 $a Tōn meionotētōn eunoia : $b mythistorēma / $c Spyrou Gkrintzou.</fake:marcfield>
-      <!--Tōn meionotētōn eunoia : mythistorēma / Spyrou Gkrintzou.-->
       <rdamd:P30156>Tōn meionotētōn eunoia</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <!--mythistorēma /-->
       <rdamd:P30142>mythistorēma</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <!--Spyrou Gkrintzou.-->
       <rdamd:P30105>Spyrou Gkrintzou.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test43wor">
@@ -839,9 +703,10 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test43exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 15 $a Tōn meionotētōn eunoia : $b mythistorēma / $c Spyrou Gkrintzou.</fake:marcfield>
-      <!--Tōn meionotētōn eunoia : mythistorēma / Spyrou Gkrintzou.-->
       <rdamd:P30156>Tōn meionotētōn eunoia</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <!--mythistorēma /-->
       <rdamd:P30142>mythistorēma</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <!--Spyrou Gkrintzou.-->
       <rdamd:P30105>Spyrou Gkrintzou.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test44wor">
@@ -859,6 +724,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test44exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 15 $a Tōn meionotētōn eunoia $b mythistorēma $c Spyrou Gkrintzou.</fake:marcfield>
+      <rdamd:P30156>Tōn meionotētōn eunoia</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test45wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -875,6 +741,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test45exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 15 $a Tōn meionotētōn eunoia : $b mythistorēma $c Spyrou Gkrintzou.</fake:marcfield>
+      <rdamd:P30156>Tōn meionotētōn eunoia</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test46wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -891,6 +758,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test46exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 15 $a Tōn meionotētōn eunoia $b mythistorēma $c Spyrou Gkrintzou</fake:marcfield>
+      <rdamd:P30156>Tōn meionotētōn eunoia</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test47wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -907,6 +775,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test47exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 15 $a Tōn meionotētōn eunoia $b mythistorēma / $c Spyrou Gkrintzou.</fake:marcfield>
+      <rdamd:P30156>Tōn meionotētōn eunoia</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test48wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -923,10 +792,10 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test48exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 14 $a The charity ball : $b a comedy in four acts : $k typescript, $f 1889 / $c by David Belasco and Henry C. DeMille.</fake:marcfield>
-      <!--The charity ball : a comedy in four acts : typescript, 1889 / by David Belasco and Henry C. DeMille.-->
       <rdamd:P30156>The charity ball</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <!--a comedy in four acts :-->
       <rdamd:P30142>a comedy in four acts</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30142>typescript, 1889</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <!--by David Belasco and Henry C. DeMille.-->
       <rdamd:P30105>by David Belasco and Henry C. DeMille.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test49wor">
@@ -944,10 +813,10 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test49exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 14 $a The charity ball : $b a comedy in four acts : $k typescript, $f 1889 / $c by David Belasco and Henry C. DeMille.</fake:marcfield>
-      <!--The charity ball : a comedy in four acts : typescript, 1889 / by David Belasco and Henry C. DeMille.-->
       <rdamd:P30156>The charity ball</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <!--a comedy in four acts :-->
       <rdamd:P30142>a comedy in four acts</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30142>typescript, 1889</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <!--by David Belasco and Henry C. DeMille.-->
       <rdamd:P30105>by David Belasco and Henry C. DeMille.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test50wor">
@@ -965,6 +834,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test50exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 14 $a The charity ball : $b a comedy in four acts $k typescript $f 1889  $c by David Belasco and Henry C. DeMille.</fake:marcfield>
+      <rdamd:P30156>The charity ball</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test51wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -981,6 +851,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test51exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 14 $a The charity ball : $b a comedy in four acts : $k typescript $f 1889 / $c by David Belasco and Henry C. DeMille.</fake:marcfield>
+      <rdamd:P30156>The charity ball</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test52wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -997,6 +868,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test52exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 14 $a The charity ball $b a comedy in four acts $k typescript $f 1889 $c by David Belasco and Henry C. DeMille.</fake:marcfield>
+      <rdamd:P30156>The charity ball</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test53wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -1013,6 +885,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test53exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 14 $a The charity ball $b a comedy in four acts $k typescript, $f 1889 $c by David Belasco and Henry C. DeMille.</fake:marcfield>
+      <rdamd:P30156>The charity ball</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test54wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -1029,9 +902,8 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test54exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 03 $a Le Bureau $h [filmstrip] = $b La Oficina = Das Büro.</fake:marcfield>
-      <!--Le Bureau [filmstrip] = La Oficina = Das Büro.-->
-      <rdamd:P30156>Le Bureau filmstrip</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30156>Le Bureau</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <!--La Oficina = Das Büro.-->
       <rdamd:P30156>La Oficina</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30156>Das Büro.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
@@ -1050,9 +922,8 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test55exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 03 $a Le Bureau $h [filmstrip] = $b La Oficina = Das Büro.</fake:marcfield>
-      <!--Le Bureau [filmstrip] = La Oficina = Das Büro.-->
-      <rdamd:P30156>Le Bureau filmstrip</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30156>Le Bureau</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <!--La Oficina = Das Büro.-->
       <rdamd:P30156>La Oficina</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30156>Das Büro.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
@@ -1071,6 +942,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test56exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 03 $a Le Bureau $h [filmstrip] = $b La Oficina ALSO KNOWN AS Das Büro.</fake:marcfield>
+      <rdamd:P30156>Le Bureau</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test57wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -1087,6 +959,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test57exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 03 $a Le Bureau $h [filmstrip] $b La Oficina : Das Büro.</fake:marcfield>
+      <rdamd:P30156>Le Bureau</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test58wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -1103,6 +976,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test58exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 03 $a Le Bureau $h filmstrip $b La Oficina. Das Büro.</fake:marcfield>
+      <rdamd:P30156>Le Bureau</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test59wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -1119,6 +993,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test59exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 03 $a Le Bureau $h filmstrip $b La Oficina = Das Büro.</fake:marcfield>
+      <rdamd:P30156>Le Bureau</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test60wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -1135,7 +1010,6 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test60exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. $n 1. Abt. Originale. $n Reihe B, $p Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</fake:marcfield>
-      <!--Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. 1. Abt. Originale. Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.-->
       <rdamd:P30156>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. 1. Abt. Originale. Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test61wor">
@@ -1153,7 +1027,6 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test61exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. $n 1. Abt. Originale. $n Reihe B, $p Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</fake:marcfield>
-      <!--Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. 1. Abt. Originale. Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.-->
       <rdamd:P30156>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. 1. Abt. Originale. Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test62wor">
@@ -1171,6 +1044,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test62exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene $n 1. Abt. Originale $n Reihe B $p Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</fake:marcfield>
+      <rdamd:P30156>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene 1. Abt. Originale Reihe B Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test63wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -1187,6 +1061,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test63exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. $n 1. Abt. Originale $n Reihe B, $p Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</fake:marcfield>
+      <rdamd:P30156>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. 1. Abt. Originale Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test64wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -1203,6 +1078,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test64exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene $n 1. Abt. Originale $n Reihe B $p Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</fake:marcfield>
+      <rdamd:P30156>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene 1. Abt. Originale Reihe B Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://fakeIRI2.edu/245-test65wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -1219,5 +1095,6 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/245-test65exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene:  $n 1. Abt. Originale: $n Reihe B: $p Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</fake:marcfield>
+      <rdamd:P30156>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene:  1. Abt. Originale Reihe B Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
 </rdf:RDF>

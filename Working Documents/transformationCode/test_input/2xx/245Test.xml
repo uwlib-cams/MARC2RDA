@@ -4,7 +4,7 @@
     xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
-        <marc:controlfield tag="001">245-test1</marc:controlfield>
+        <marc:controlfield tag="001">245-test0</marc:controlfield>
         <marc:datafield tag="245" ind1="1" ind2="0">
             <marc:subfield code="a">--as others see us</marc:subfield>
         </marc:datafield>
@@ -16,6 +16,14 @@
             <marc:subfield code="a">Uyghur qătaiami :</marc:subfield>
             <marc:subfield code="b">piskhologiyălik năzăr /</marc:subfield>
             <marc:subfield code="c">Mămtimin Ăla = The Uyghur genocide : a psychological perspective / Mamtimin Ala.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test01</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Uluru / Ayers Rock /</marc:subfield>
+            <marc:subfield code="c">by John Smith.</marc:subfield>
         </marc:datafield>
     </marc:record>
     <marc:record>
@@ -61,14 +69,14 @@
             <marc:subfield code="b">official organ of the American Association for Cancer Research, Inc.</marc:subfield>
         </marc:datafield>
     </marc:record>
-    <marc:record>
+    <!--<marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">245-test8</marc:controlfield>
         <marc:datafield tag="245" ind1="1" ind2="0">
             <marc:subfield code="a">ETZ :</marc:subfield>
             <marc:subfield code="b">...</marc:subfield>
         </marc:datafield>
-    </marc:record>
+    </marc:record>-->
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">245-test9</marc:controlfield>
@@ -131,14 +139,14 @@
             <marc:subfield code="c">Fake Society</marc:subfield>
         </marc:datafield>
     </marc:record>
-    <marc:record>
+    <!--<marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">245-test16</marc:controlfield>
         <marc:datafield tag="245" ind1="0" ind2="0">
             <marc:subfield code="a">Project directory / /</marc:subfield>
             <marc:subfield code="c">TDC = Répertoire des projets / CDT.</marc:subfield>
         </marc:datafield>
-    </marc:record>
+    </marc:record>-->
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">245-test17</marc:controlfield>
@@ -164,7 +172,7 @@
             <marc:subfield code="b">La Oficina = Das Büro.</marc:subfield>
         </marc:datafield>
     </marc:record>
-    <marc:record>
+    <!--<marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">245-test20</marc:controlfield>
         <marc:datafield tag="245" ind1="0" ind2="0">
@@ -201,7 +209,7 @@
             <marc:subfield code="h">[sound recording] ;</marc:subfield>
             <marc:subfield code="c">W.A. Mozart. L’assedio di Corinto. Ouverture / G. Rossini.</marc:subfield>
         </marc:datafield>
-    </marc:record>
+    </marc:record>-->
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">245-test24</marc:controlfield>
@@ -211,7 +219,7 @@
             <marc:subfield code="f">1903 Sept. 16-1907 Oct. 5.</marc:subfield>
         </marc:datafield>
     </marc:record>
-    <marc:record>
+    <!--<marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">245-test25</marc:controlfield>
         <marc:datafield tag="245" ind1="0" ind2="0">
@@ -221,7 +229,7 @@
             <marc:subfield code="p">District 6</marc:subfield>
             <marc:subfield code="h">microfilm (jacketted in fiche).</marc:subfield>
         </marc:datafield>
-    </marc:record>
+    </marc:record>-->
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">245-test26</marc:controlfield>
