@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:java="java:edu.uwlib.cams.RdfPredicateExtractor"
     xmlns:marc="http://www.loc.gov/MARC21/slim"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ex="http://fakeIRI.edu/"
@@ -21,8 +22,13 @@
     xmlns:rdan="http://rdaregistry.info/Elements/n/"
     xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
     xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
-    xmlns:uwf="http://universityOfWashington/functions" xmlns:fake="http://fakePropertiesForDemo"
-    exclude-result-prefixes="marc ex uwf" version="3.0">
+    xmlns:rdap="http://rdaregistry.info/Elements/p/"
+    xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+    xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+    xmlns:uwf="http://universityOfWashington/functions"
+    xmlns:uwmisc="http://uw.edu/all-purpose-namespace/"
+    xmlns:fake="http://fakePropertiesForDemo"
+    exclude-result-prefixes="marc ex uwf uwmisc java" version="3.0">
     <xsl:include href="m2r-5xx-named.xsl"/>
     <xsl:import href="m2r-functions.xsl"/>
     <xsl:import href="getmarc.xsl"/>
@@ -355,37 +361,71 @@
         mode="exp" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:call-template name="getmarc"/>
+        <xsl:variable name="placeUris" select="document('lookup/placeUris.xml')/uwmisc:root/uwmisc:row"/>
         <xsl:if test="marc:subfield[@code = 'a']">
-            <rdamd:P20071>
+            <rdae:P20071>
                 <xsl:text>Date/time and place of an event note: {marc:subfield[@code = 'a']}</xsl:text>
-            </rdamd:P20071>
+            </rdae:P20071>
         </xsl:if>
         <xsl:for-each select="marc:subfield[@code = 'd']">
-            <rdamd:P20214>
+            <rdae:P20214>
                 <xsl:text>Date of event: {.}</xsl:text>
-            </rdamd:P20214>
+            </rdae:P20214>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'o']">
-            <rdamd:P20071>
+            <rdae:P20071>
                 <xsl:text>Other event information: {.}</xsl:text>
-            </rdamd:P20071>
+            </rdae:P20071>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'p']">
             <xsl:choose>
                 <xsl:when test="../marc:subfield[@code = '2']">
-                    <!-- [Expression] → has related place of expression → [Place]  -->
-                    <rdamo:P50411 rdf:resource="{'http://marc2rda.edu/fake/pla/'||generate-id()}"/>
-                </xsl:when>
-                <xsl:otherwise> <!-- if there is no $2 -->
                     <!-- [Expression] → has related place of expression → "$p value" -->
-                    <rdamo:P50411>
-                        <xsl:value-of select="." />
-                    </rdamo:P50411 >
+
+                    
+                </xsl:when>
+                <xsl:otherwise>
+                    <!-- if there is no $2 -->
+                    <xsl:choose>
+                        <!-- if there is no $2 but $0 -->
+                        <xsl:when test="../marc:subfield[@code = '0']">
+                            <!-- [Expression] → has related place of expression → [Place]  -->
+                            <xsl:if test="../marc:subfield[@code = '0']">
+                                <xsl:variable name="p" select="."/>
+                                <xsl:variable name="uri" select="../marc:subfield[@code = '0']"/>
+                                <xsl:variable name="types" select="tokenize(java:getFirstLevelTypes($uri))"/>
+                                <xsl:for-each select="$types">
+                                    <xsl:variable name="currentUri" select="."/>
+                                    <xsl:if test="$placeUris[. = $currentUri]">
+                                        <rdamo:P50411 rdf:resource="{'http://marc2rda.edu/fake/pla/'||generate-id($p)}"/>
+                                    </xsl:if>
+                                </xsl:for-each>
+                            </xsl:if>
+                            <xsl:if test="../marc:subfield[@code = '1']">
+                                <xsl:variable name="p" select="."/>
+                                <xsl:variable name="uri" select="../marc:subfield[@code = '1']"/>
+                                <xsl:variable name="types" select="tokenize(java:getFirstLevelTypes($uri))"/>
+                                <xsl:for-each select="$types">
+                                    <xsl:variable name="currentUri" select="."/>
+                                    <xsl:if test="$placeUris[. = $currentUri]">
+                                        <rdamo:P50411 rdf:resource="{'http://marc2rda.edu/fake/pla/'||generate-id($p)}"/>
+                                    </xsl:if>
+                                </xsl:for-each>
+                            </xsl:if>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <!-- if there is no $2 and no $0 -->
+                            <!-- [Expression] → has related place of expression → "$p value" -->
+                            <rdae:P20306>
+                                <xsl:value-of select="." />
+                            </rdae:P20306 >
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:for-each>
         <xsl:if test="marc:subfield[@code = '3']">
-            <rdamd:P20071>
+            <rdae:P20071>
                 <xsl:choose>
                     <xsl:when test="marc:subfield[@code = 'a'] or marc:subfield[@code = 'o']">
                         <xsl:text>{marc:subfield[@code = 'a'] | marc:subfield[@code = 'o']} (applies to: {marc:subfield[@code = '3']})</xsl:text>
@@ -397,7 +437,7 @@
                         <xsl:text>related place of expression {marc:subfield[@code = 'p'] | $baseIRI} applies to: {marc:subfield[@code = '3']}</xsl:text>
                     </xsl:when>
                 </xsl:choose>
-            </rdamd:P20071>
+            </rdae:P20071>
         </xsl:if>
     </xsl:template>
     <xsl:template
@@ -409,7 +449,7 @@
                     <rdf:Description rdf:about="{'http://marc2rda.edu/fake/pla/'||generate-id()}">
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
                         <!-- [Place] → has access point → [Nomen] -->
-                        <rdamo:P70018 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
+                        <rdap:P70018 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
                     </rdf:Description>
                 </xsl:when>
             </xsl:choose>
@@ -439,6 +479,15 @@
                     </rdf:Description>
                 </xsl:when>
             </xsl:choose>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = '0']">
+            <!-- [Nomen] → has related nomen of nomen → "$0 value" -->
+            <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                <rdae:P20306>
+                    <xsl:value-of select="." />
+                </rdae:P20306>
+            </rdf:Description>
         </xsl:for-each>
     </xsl:template>
     
