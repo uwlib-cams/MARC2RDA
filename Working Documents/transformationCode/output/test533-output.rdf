@@ -1,273 +1,241 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
-         xmlns:fake="http://fakePropertiesForDemo"
-         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
-         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
-         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
-         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
-         xmlns:rdae="http://rdaregistry.info/Elements/e/"
-         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
-         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
-         xmlns:rdai="http://rdaregistry.info/Elements/i/"
-         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
-         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
-         xmlns:rdam="http://rdaregistry.info/Elements/m/"
-         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
-         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
-         xmlns:rdan="http://rdaregistry.info/Elements/n/"
-         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
-         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
-         xmlns:rdap="http://rdaregistry.info/Elements/p/"
-         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
-         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
-         xmlns:rdat="http://rdaregistry.info/Elements/t/"
-         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
-         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
-         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
-         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
-         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
-         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:uwf="http://universityOfWashington/functions"
-         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99161827425101452wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>99161827425101452wor</rdawd:P10002>
+      <rdawd:P10002>99161827425101452wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <fake:marcfield>F043 ## $a n-us--- $a a-ir---</fake:marcfield>
-      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us"/>
-      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/a-ir"/>
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us"/><!--rdawo:P10321 = has subject place-->
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/a-ir"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F050 #4 $a KF27 $b .A7 2014k</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcc/kf27"/>
-      <rdawo:P10530 rdf:resource="http://marc2rda.edu/fake/age/d20e220"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcc/kf27"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10530 rdf:resource="http://marc2rda.edu/fake/age/d20e220"/><!--rdawo:P10530 = has author corporate body-->
       <fake:marcfield>F245 10 $a P5+1 negotiations over Iran's nuclear program and its implications for United States defense : $b Committee on Armed Services, House of Representatives, One Hundred Thirteenth Congress, second session, hearing held June 19, 2014.</fake:marcfield>
-      <rdawd:P10088>P5+1 negotiations over Iran's nuclear program and its implications for United States defense</rdawd:P10088>
+      <rdawd:P10088>P5+1 negotiations over Iran's nuclear program and its implications for United States defense</rdawd:P10088><!--rdawd:P10088 = has title of work-->
       <fake:marcfield>F650 #0 $a Nuclear nonproliferation $x Government policy $z Iran.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/nuclearnonproliferationgovernmentpolicyiran"/>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/governmentpolicyiran"/>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/iran"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/nuclearnonproliferationgovernmentpolicyiran"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/governmentpolicyiran"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/iran"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F650 #0 $a Nuclear weapons $x Government policy $z Iran.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/nuclearweaponsgovernmentpolicyiran"/>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/governmentpolicyiran"/>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/iran"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/nuclearweaponsgovernmentpolicyiran"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/governmentpolicyiran"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/iran"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F650 #0 $a Nuclear arms control $z Iran.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/nucleararmscontroliran"/>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/iran"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/nucleararmscontroliran"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/iran"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F650 #0 $a Nuclear nonproliferation $x International cooperation.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/nuclearnonproliferationinternationalcooperation"/>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/internationalcooperation"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/nuclearnonproliferationinternationalcooperation"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/internationalcooperation"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #0 $a Economic sanctions $z Iran.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/economicsanctionsiran"/>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/iran"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/economicsanctionsiran"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/iran"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F650 #0 $a National security $z United States.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/nationalsecurityunitedstates"/>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/unitedstates"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/nationalsecurityunitedstates"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/unitedstates"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F650 #0 $a Diplomatic negotiations in international disputes.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/diplomaticnegotiationsininternationaldisputes"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/diplomaticnegotiationsininternationaldisputes"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #6 $a Non-prolifération nucléaire $x Politique gouvernementale $z Iran.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/nonproliférationnucléairepolitiquegouvernementaleiran"/>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/politiquegouvernementaleiran"/>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/rvm/iran"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/nonproliférationnucléairepolitiquegouvernementaleiran"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/politiquegouvernementaleiran"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/rvm/iran"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F650 #6 $a Armes nucléaires $x Politique gouvernementale $z Iran.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/armesnucléairespolitiquegouvernementaleiran"/>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/politiquegouvernementaleiran"/>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/rvm/iran"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/armesnucléairespolitiquegouvernementaleiran"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/politiquegouvernementaleiran"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/rvm/iran"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F650 #6 $a Armes nucléaires $x Contrôle $z Iran.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/armesnucléairescontrôleiran"/>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/contrôleiran"/>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/rvm/iran"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/armesnucléairescontrôleiran"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/contrôleiran"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/rvm/iran"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F650 #6 $a Non-prolifération nucléaire $x Coopération internationale.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/nonproliférationnucléairecoopérationinternationale"/>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/coopérationinternationale"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/nonproliférationnucléairecoopérationinternationale"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/coopérationinternationale"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #6 $a Négociations diplomatiques dans les conflits internationaux.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/négociationsdiplomatiquesdanslesconflitsinternationaux"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/négociationsdiplomatiquesdanslesconflitsinternationaux"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #7 $a Diplomatic negotiations in international disputes $2 fast</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/diplomaticnegotiationsininternationaldisputes"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/diplomaticnegotiationsininternationaldisputes"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #7 $a Economic sanctions $2 fast</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/economicsanctions"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/economicsanctions"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #7 $a Military readiness $2 fast</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/militaryreadiness"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/militaryreadiness"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #7 $a National security $2 fast</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/nationalsecurity"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/nationalsecurity"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #7 $a Nuclear arms control $2 fast</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/nucleararmscontrol"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/nucleararmscontrol"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #7 $a Nuclear nonproliferation $x Government policy $2 fast</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/nuclearnonproliferationgovernmentpolicy"/>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/governmentpolicy"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/nuclearnonproliferationgovernmentpolicy"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/governmentpolicy"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #7 $a Nuclear nonproliferation $x International cooperation $2 fast</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/nuclearnonproliferationinternationalcooperation"/>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/internationalcooperation"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/nuclearnonproliferationinternationalcooperation"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/internationalcooperation"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #7 $a Nuclear weapons $x Government policy $2 fast</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/nuclearweaponsgovernmentpolicy"/>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/governmentpolicy"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/nuclearweaponsgovernmentpolicy"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/governmentpolicy"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #7 $a Strategic aspects of individual places $2 fast</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/strategicaspectsofindividualplaces"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/strategicaspectsofindividualplaces"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F651 #0 $a Iran $x Strategic aspects.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/iranstrategicaspects"/>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/strategicaspects"/>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/iran"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/iranstrategicaspects"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/strategicaspects"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/iran"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F651 #0 $a United States $x Defenses.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/unitedstatesdefenses"/>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/defenses"/>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/unitedstates"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/unitedstatesdefenses"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/defenses"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/unitedstates"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F651 #6 $a États-Unis $x Défense nationale.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/étatsunisdéfensenationale"/>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/défensenationale"/>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/rvm/étatsunis"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/étatsunisdéfensenationale"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/défensenationale"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/rvm/étatsunis"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F651 #7 $a Iran $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJtrYvcVTwChrDqytBvJXd</fake:marcfield>
-      <rdawo:P10321 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJtrYvcVTwChrDqytBvJXd"/>
+      <rdawo:P10321 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJtrYvcVTwChrDqytBvJXd"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F651 #7 $a United States $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq</fake:marcfield>
-      <rdawo:P10321 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq"/>
+      <rdawo:P10321 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F655 #7 $a Legislative hearings $2 fast</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/fast/legislativehearings"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/fast/legislativehearings"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F655 #7 $a Legislative hearings. $2 lcgft</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcgft/legislativehearings"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcgft/legislativehearings"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F655 #7 $a Audiences législatives. $2 rvmgf</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvmgf/audienceslégislatives"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvmgf/audienceslégislatives"/><!--rdaw:P10004 = has category of work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99161827425101452exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/99161827425101452wor"/>
-      <rdaed:P20002>99161827425101452exp</rdaed:P20002>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/99161827425101452wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>99161827425101452exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99161827425101452man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99161827425101452exp"/>
-      <rdamo:P30136 rdf:resource="http://marc2rda.edu/fake/99161827425101452origMan"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99161827425101452exp"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30136 rdf:resource="http://marc2rda.edu/fake/99161827425101452origMan"/><!--rdamo:P30136 = is electronic reproduction of manifestation of-->
       <fake:marcfield>F088 ## $a H.A.S.C. no. 113-112</fake:marcfield>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d20e218"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d20e218"/><!--rdamo:P30004 = has identifier for manifestation-->
       <fake:marcfield>F245 10 $a P5+1 negotiations over Iran's nuclear program and its implications for United States defense : $b Committee on Armed Services, House of Representatives, One Hundred Thirteenth Congress, second session, hearing held June 19, 2014.</fake:marcfield>
-      <rdamd:P30156>P5+1 negotiations over Iran's nuclear program and its implications for United States defense</rdamd:P30156>
-      <rdamd:P30142>Committee on Armed Services, House of Representatives, One Hundred Thirteenth Congress, second session, hearing held June 19, 2014.</rdamd:P30142>
+      <rdamd:P30156>P5+1 negotiations over Iran's nuclear program and its implications for United States defense</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30142>Committee on Armed Services, House of Representatives, One Hundred Thirteenth Congress, second session, hearing held June 19, 2014.</rdamd:P30142><!--rdamd:P30142 = has other title information-->
       <fake:marcfield>F264 #1 $a Washington : $b U.S. Government Printing Office, $c 2015.</fake:marcfield>
       <fake:marcfield>F337 ## $a computer $b c $2 rdamedia</fake:marcfield>
-      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/c"/>
-      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/c"/>
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/c"/><!--rdam:P30002 = has media type-->
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/c"/><!--rdam:P30002 = has media type-->
       <fake:marcfield>F338 ## $a online resource $b cr $2 rdacarrier</fake:marcfield>
-      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/>
-      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/>
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/><!--rdam:P30001 = has carrier type-->
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/><!--rdam:P30001 = has carrier type-->
       <fake:marcfield>F538 ## $a Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002. $u http://purl.oclc.org/DLF/benchrepro0212 $5 MiAaHDL</fake:marcfield>
-      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/99161827425101452ited20e287"/>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/99161827425101452ited20e287"/><!--rdamo:P30103 = has exemplar of manifestation-->
       <fake:marcfield>F583 1# $a digitized $c 2011 $h HathiTrust Digital Library $l committed to preserve $2 pda $5 MiAaHDL</fake:marcfield>
-      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/99161827425101452ited20e289"/>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/99161827425101452ited20e289"/><!--rdamo:P30103 = has exemplar of manifestation-->
       <fake:marcfield>F500 ## $a Title from title screen (viewed on January 28, 2015).</fake:marcfield>
-      <rdamd:P30137>Title from title screen (viewed on January 28, 2015).</rdamd:P30137>
+      <rdamd:P30137>Title from title screen (viewed on January 28, 2015).</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <fake:marcfield>F500 ## $a Paper version available for sale by the Superintendent of Documents, U.S. Government Printing Office.</fake:marcfield>
-      <rdamd:P30137>Paper version available for sale by the Superintendent of Documents, U.S. Government Printing Office.</rdamd:P30137>
+      <rdamd:P30137>Paper version available for sale by the Superintendent of Documents, U.S. Government Printing Office.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <fake:marcfield>F500 ## $a "H.A.S.C. no. 113-112."</fake:marcfield>
-      <rdamd:P30137>"H.A.S.C. no. 113-112."</rdamd:P30137>
+      <rdamd:P30137>"H.A.S.C. no. 113-112."</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <fake:marcfield>F506 ## $3 Use copy $f Restrictions unspecified $2 star $5 MiAaHDL</fake:marcfield>
-      <rdamd:P30145> (Applies to: Use copy) (at institution: HathiTrust Digital Library)</rdamd:P30145>
-      <rdam:P30145 rdf:resource="http://marc2rda.edu/fake/concept/star/restrictionsunspecified"/>
-      <rdamd:P30137>Restriction on access http://marc2rda.edu/fake/concept/star/restrictionsunspecified applies to </rdamd:P30137>
+      <rdamd:P30145> (Applies to: Use copy) (at institution: HathiTrust Digital Library)</rdamd:P30145><!--rdamd:P30145 = has restriction on access to manifestation-->
+      <rdam:P30145 rdf:resource="http://marc2rda.edu/fake/concept/star/restrictionsunspecified"/><!--rdam:P30145 = has restriction on access to manifestation-->
+      <rdamd:P30137>Restriction on access http://marc2rda.edu/fake/concept/star/restrictionsunspecified applies to </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99161827425101452origMan">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99161827425101452exp"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99161827425101452exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F264 #1 $a Washington : $b U.S. Government Printing Office, $c 2015.</fake:marcfield>
-      <rdamd:P30111>Washington : U.S. Government Printing Office, 2015.</rdamd:P30111>
-      <rdamd:P30088>Washington</rdamd:P30088>
-      <rdamd:P30176>U.S. Government Printing Office</rdamd:P30176>
-      <rdamd:P30011>2015</rdamd:P30011>
+      <rdamd:P30111>Washington : U.S. Government Printing Office, 2015.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Washington</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>U.S. Government Printing Office</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>2015</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99161827425101452ited20e211">
       <fake:marcfield>F074 ## $a 1012-F (online)</fake:marcfield>
-      <rdaid:P40001>ited20e211</rdaid:P40001>
+      <rdaid:P40001>ited20e211</rdaid:P40001><!--rdaid:P40001 = has identifier for item-->
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaio:P40001 rdf:resource="http://marc2rda.edu/fake/nom/d20e212"/>
+      <rdaio:P40001 rdf:resource="http://marc2rda.edu/fake/nom/d20e212"/><!--rdaio:P40001 = has identifier for item-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99161827425101452ited20e287">
-      <rdaid:P40001>ited20e287</rdaid:P40001>
+      <rdaid:P40001>ited20e287</rdaid:P40001><!--rdaid:P40001 = has identifier for item-->
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/miaahdl"/>
-      <rdaid:P40028>Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002.; http://purl.oclc.org/DLF/benchrepro0212</rdaid:P40028>
+      <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/miaahdl"/><!--rdaio:P40161 = is holding of-->
+      <rdaid:P40028>Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002.; http://purl.oclc.org/DLF/benchrepro0212</rdaid:P40028><!--rdaid:P40028 = has note on item-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99161827425101452ited20e289">
       <fake:marcfield>F583 1# $a digitized $c 2011 $h HathiTrust Digital Library $l committed to preserve $2 pda $5 MiAaHDL</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ited20e289</rdaid:P40001>
-      <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/miaahdl"/>
-      <rdaid:P40028>Action: digitized; Time/date of action: 2011; Jurisdiction: HathiTrust Digital Library; Status: committed to preserve; Source of term: pda</rdaid:P40028>
+      <rdaid:P40001>ited20e289</rdaid:P40001><!--rdaid:P40001 = has identifier for item-->
+      <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/miaahdl"/><!--rdaio:P40161 = is holding of-->
+      <rdaid:P40028>Action: digitized; Time/date of action: 2011; Jurisdiction: HathiTrust Digital Library; Status: committed to preserve; Source of term: pda</rdaid:P40028><!--rdaid:P40028 = has note on item-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d20e212">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>1012-F (online)</rdand:P80068>
-      <rdand:P80078>GPO item number</rdand:P80078>
+      <rdand:P80068>1012-F (online)</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80078>GPO item number</rdand:P80078><!--rdand:P80078 = has category of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d20e218">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>H.A.S.C. no. 113-112</rdand:P80068>
-      <rdand:P80078>Report number</rdand:P80078>
+      <rdand:P80068>H.A.S.C. no. 113-112</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80078>Report number</rdand:P80078><!--rdand:P80078 = has category of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/iran">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Iran.</rdand:P80068>
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+      <rdand:P80068>Iran.</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/iran">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Iran.</rdand:P80068>
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+      <rdand:P80068>Iran.</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/iran">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Iran.</rdand:P80068>
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+      <rdand:P80068>Iran.</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/iran">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Iran.</rdand:P80068>
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+      <rdand:P80068>Iran.</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>United States.</rdand:P80068>
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+      <rdand:P80068>United States.</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/iran">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Iran.</rdand:P80068>
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+      <rdand:P80068>Iran.</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/iran">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Iran.</rdand:P80068>
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+      <rdand:P80068>Iran.</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/iran">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Iran.</rdand:P80068>
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+      <rdand:P80068>Iran.</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/iran">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Iran</rdand:P80068>
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+      <rdand:P80068>Iran</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>United States</rdand:P80068>
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+      <rdand:P80068>United States</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/étatsunis">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>États-Unis</rdand:P80068>
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+      <rdand:P80068>États-Unis</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d20e455">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Iran</rdand:P80068>
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+      <rdand:P80068>Iran</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d20e462">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>United States</rdand:P80068>
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+      <rdand:P80068>United States</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d20e220">
       <fake:marcfield>F110 1# $a United States. $b Congress. $b House. $b Committee on Armed Services, $e author.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375>United States. Congress. House. Committee on Armed Services</rdaad:P50375>
+      <rdaad:P50375>United States. Congress. House. Committee on Armed Services</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/kf27">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -483,54 +451,54 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/iran">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/iran"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/iran"/><!--rdapo:P70045 = has authorized access point for place-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/iran">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/iran"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/iran"/><!--rdapo:P70045 = has authorized access point for place-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/iran">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/iran"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/iran"/><!--rdapo:P70045 = has authorized access point for place-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/iran">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/iran"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/iran"/><!--rdapo:P70045 = has authorized access point for place-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/unitedstates">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates"/><!--rdapo:P70045 = has authorized access point for place-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/rvm/iran">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/iran"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/iran"/><!--rdapo:P70045 = has authorized access point for place-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/rvm/iran">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/iran"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/iran"/><!--rdapo:P70045 = has authorized access point for place-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/rvm/iran">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/iran"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/iran"/><!--rdapo:P70045 = has authorized access point for place-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/iran">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/iran"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/iran"/><!--rdapo:P70045 = has authorized access point for place-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/unitedstates">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates"/><!--rdapo:P70045 = has authorized access point for place-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/rvm/étatsunis">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/étatsunis"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/étatsunis"/><!--rdapo:P70045 = has authorized access point for place-->
    </rdf:Description>
    <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJtrYvcVTwChrDqytBvJXd">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/fast/iran"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/fast/iran"/><!--rdapo:P70045 = has authorized access point for place-->
    </rdf:Description>
    <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/fast/unitedstates"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/fast/unitedstates"/><!--rdapo:P70045 = has authorized access point for place-->
    </rdf:Description>
 </rdf:RDF>
