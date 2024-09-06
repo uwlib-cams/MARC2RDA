@@ -352,96 +352,28 @@
     
     <!-- 518 - Date/Time and Place of an Event Note -->
     <xsl:template match="marc:datafield[@tag='518'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '518']" 
-        mode="exp" expand-text="yes">
-        <xsl:param name="baseIRI"/>
+        mode="man" expand-text="yes">
         <xsl:call-template name="getmarc"/>
-        <xsl:if test="marc:subfield[@code = 'a']">
-            <rdamd:P20071>
-                <xsl:text>Date/time and place of an event note: {marc:subfield[@code = 'a']}</xsl:text>
-            </rdamd:P20071>
-        </xsl:if>
-        <xsl:for-each select="marc:subfield[@code = 'd']">
-            <rdamd:P20214>
-                <xsl:text>Date of event: {.}</xsl:text>
-            </rdamd:P20214>
-        </xsl:for-each>
-        <xsl:for-each select="marc:subfield[@code = 'o']">
-            <rdamd:P20071>
-                <xsl:text>Other event information: {.}</xsl:text>
-            </rdamd:P20071>
-        </xsl:for-each>
-        <xsl:for-each select="marc:subfield[@code = 'p']">
-            <xsl:choose>
-                <xsl:when test="../marc:subfield[@code = '2']">
-                    <!-- [Expression] → has related place of expression → [Place]  -->
-                    <rdamo:P50411 rdf:resource="{'http://marc2rda.edu/fake/pla/'||generate-id()}"/>
-                </xsl:when>
-                <xsl:otherwise> <!-- if there is no $2 -->
-                    <!-- [Expression] → has related place of expression → "$p value" -->
-                    <rdamo:P50411>
-                        <xsl:value-of select="." />
-                    </rdamo:P50411 >
-                </xsl:otherwise>
-            </xsl:choose>
-        </xsl:for-each>
-        <xsl:if test="marc:subfield[@code = '3']">
-            <rdamd:P20071>
-                <xsl:choose>
-                    <xsl:when test="marc:subfield[@code = 'a'] or marc:subfield[@code = 'o']">
-                        <xsl:text>{marc:subfield[@code = 'a'] | marc:subfield[@code = 'o']} (applies to: {marc:subfield[@code = '3']})</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="marc:subfield[@code = 'd']">
-                        <xsl:text>date of expression {marc:subfield[@code = 'd']} applies to: {marc:subfield[@code = '3']})</xsl:text>
-                    </xsl:when>
-                    <xsl:when test="marc:subfield[@code = 'p']">
-                        <xsl:text>related place of expression {marc:subfield[@code = 'p'] | $baseIRI} applies to: {marc:subfield[@code = '3']}</xsl:text>
-                    </xsl:when>
-                </xsl:choose>
-            </rdamd:P20071>
-        </xsl:if>
-    </xsl:template>
-    <xsl:template
-        match="marc:datafield[@tag = '518'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '518']"
-        mode="pla" expand-text="yes">
-        <xsl:for-each select="marc:subfield[@code = 'p']">
-            <xsl:choose>
-                <xsl:when test="../marc:subfield[@code = '2']">
-                    <rdf:Description rdf:about="{'http://marc2rda.edu/fake/pla/'||generate-id()}">
-                        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-                        <!-- [Place] → has access point → [Nomen] -->
-                        <rdamo:P70018 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
-                    </rdf:Description>
-                </xsl:when>
-            </xsl:choose>
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'o'] | marc:subfield[@code = 'p'] | marc:subfield[@code = '1']">
+            <xsl:variable name="value" select="." />
+            <xsl:for-each select="../marc:subfield[@code = '0']">
+                <rdam:P30137>
+                    <xsl:text>Authority record control number or standard number for controlled place of event term: {$value}</xsl:text>
+                </rdam:P30137>
+            </xsl:for-each>
+            <xsl:for-each select="../marc:subfield[@code = '2']">
+                <rdam:P30137>
+                    <xsl:text>Source of term for controlled place of event term: {$value}</xsl:text>
+                </rdam:P30137>
+            </xsl:for-each>
+            <xsl:for-each select="../marc:subfield[@code = '3']">
+                <rdam:P30137>
+                    <xsl:text>{$value} (Applies to: {.})</xsl:text>
+                </rdam:P30137>
+            </xsl:for-each>
         </xsl:for-each>
     </xsl:template>
-    <xsl:template
-        match="marc:datafield[@tag = '518'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '518']"
-        mode="nom" expand-text="yes">
-        <xsl:for-each select="marc:subfield[@code = 'p']">
-            <xsl:choose>
-                <xsl:when test="../marc:subfield[@code = '2']">
-                    <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
-                        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-                        <!-- [Nomen] → has nomen string → [$p value] -->
-                        <rdan:P80068>
-                            <xsl:value-of select="." />
-                        </rdan:P80068>
-                        <rdan:P80025 rdf:resource="{'http://marc2rda.edu/fake/pla/'||generate-id()}"/>
-                        <!-- [Nomen] → has scheme of nomen → [URI for source of the term in $p] -->
-                        <xsl:copy-of select="uwf:s2Nomen(../marc:subfield[@code = '2'])"/>
-                        <!-- [Nomen] → has related nomen of nomen → "$0 value" -->
-                        <xsl:if test="../marc:subfield[@code = '0']">
-                            <rdan:P80009>
-                                <xsl:value-of select="../marc:subfield[@code = '0']"></xsl:value-of>
-                            </rdan:P80009>
-                        </xsl:if>
-                    </rdf:Description>
-                </xsl:when>
-            </xsl:choose>
-        </xsl:for-each>
-    </xsl:template>
-    
+
     <!-- 521 - Target Audience Note-->
     <xsl:template
         match="marc:datafield[@tag = '521'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '521']"

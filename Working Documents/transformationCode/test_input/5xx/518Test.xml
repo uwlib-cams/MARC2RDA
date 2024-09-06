@@ -5,7 +5,7 @@
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">518-test</marc:controlfield>
-        <marc:datafield tag="518" ind1=" " ind2=" ">
+        <!-- <marc:datafield tag="518" ind1=" " ind2=" ">
             <marc:subfield code="a">Recorded in Vienna in 1961, previously released as WST 17035.</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="518" ind1=" " ind2=" ">
@@ -23,7 +23,7 @@
             <marc:subfield code="o">[Repeat] Filmed on location</marc:subfield>
             <marc:subfield code="p">[Repeat] Rome and Venice</marc:subfield>
             <marc:subfield code="d">[Repeat] 1976 January through June.</marc:subfield>
-        </marc:datafield>
+        </marc:datafield> -->
         <marc:datafield tag="518" ind1=" " ind2=" ">
             <marc:subfield code="d">2002 September 13</marc:subfield>
             <marc:subfield code="p">Coolidge Auditorium, Library of Congress, Washington, D.C.</marc:subfield>
@@ -34,8 +34,14 @@
             <marc:subfield code="a">Cast in 1925.</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="518" ind1=" " ind2=" ">
-            <marc:subfield code="0">test 0</marc:subfield>
             <marc:subfield code="p">Coolidge Auditorium, Library of Congress, Washington, D.C.</marc:subfield>
+            <marc:subfield code="0">http://id.loc.gov/authorities/names/n2008054754</marc:subfield>
+            <marc:subfield code="2">blnpn</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="518" ind1=" " ind2=" ">
+            <marc:subfield code="p">Coolidge Auditorium, Library of Congress, Washington, D.C.</marc:subfield>
+            <marc:subfield code="0">http://id.loc.gov/authorities/subjects/sh2017003695</marc:subfield>
+            <marc:subfield code="2">blnpn</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="880" ind1=" " ind2=" ">
             <marc:subfield code="6">518-00/</marc:subfield>
