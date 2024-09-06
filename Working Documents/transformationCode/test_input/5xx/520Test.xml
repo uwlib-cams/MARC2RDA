@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        
+        <marc:controlfield tag="001">520-test</marc:controlfield>
+        <marc:datafield tag="520" ind1="3" ind2=" ">
+            <marc:subfield code="a">This study assesses the formation process of the International Criminal Court. </marc:subfield>
+            <marc:subfield code="b">lexile.</marc:subfield>
+            <marc:subfield code="u">http://www.loc.gov/hlas</marc:subfield>
+            <marc:subfield code="c">Source other than Library of Congress.</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="520" ind1="4" ind2=" ">
+            <marc:subfield code="a">This study assesses the formation process of the International Criminal Court. </marc:subfield>
+            <marc:subfield code="b">lexile.</marc:subfield>
+            <marc:subfield code="2">pegi</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">520-00</marc:subfield>
+            <marc:subfield code="a">Test 880</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

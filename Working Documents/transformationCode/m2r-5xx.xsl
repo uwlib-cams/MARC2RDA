@@ -373,6 +373,16 @@
             </xsl:for-each>
         </xsl:for-each>
     </xsl:template>
+    
+    <!-- 520 - Summary, Etc.-->
+    <xsl:template
+        match="marc:datafield[@tag = '520'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '520']"
+        mode="exp">
+        <xsl:call-template name="getmarc"/>
+        <rdae:P20069>
+            <xsl:call-template name="F520-xx-abcu23"/>
+        </rdae:P20069>
+    </xsl:template>
 
     <!-- 521 - Target Audience Note-->
     <xsl:template
