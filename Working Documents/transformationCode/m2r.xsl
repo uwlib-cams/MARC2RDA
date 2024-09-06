@@ -38,7 +38,7 @@
     <xsl:mode name="tim" on-no-match="shallow-skip"/>
     
     <!-- base IRI for now - all minted entities begin with this -->
-    <xsl:variable name="base" select="'http://fakeIRI2.edu/'"/>
+    <xsl:param name="BASE" select="'http://marc2rda.edu/fake/'"/>
     
     <!-- include all files containing main field templates
          each main field template will include its own -named file if it exists-->
@@ -114,7 +114,7 @@
     <xsl:template match="marc:record" expand-text="yes">
         
         <!-- currently we are using the 001 control field to generate the baseIRI -->
-        <xsl:variable name="baseIRI" select="concat($base, marc:controlfield[@tag = '001'])"/>
+        <xsl:variable name="baseIRI" select="concat($BASE, marc:controlfield[@tag = '001'])"/>
         
         <!-- *****WORKS***** -->
         <rdf:Description rdf:about="{concat($baseIRI,'wor')}">

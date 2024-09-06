@@ -219,7 +219,7 @@
     </xsl:template>
     <xsl:template name="F526-xx-x" expand-text="yes">
         <xsl:param name="baseIRI"/>
-        <rdf:Description rdf:about="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}">
+        <rdf:Description rdf:about="{uwf:metaWorIRI(.)}">
             <!--Does not meet min description of a work; needs to be linked to a metadata exp/man-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
             <rdawd:P10002>{concat('MetaWor/', generate-id())}</rdawd:P10002>
@@ -454,7 +454,7 @@
     <xsl:template name="F541-0x" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="genID"/>
-        <rdf:Description rdf:about="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}">
+        <rdf:Description rdf:about="{uwf:metaWorIRI(.)}">
             <!--Does not meet min description of a work; needs to be linked to a metadata exp/man-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
             <rdawd:P10002>{concat('MetaWor/', generate-id())}</rdawd:P10002>
@@ -584,7 +584,7 @@
     
     <xsl:template name="F542-0x" expand-text="yes">
         <xsl:param name="baseIRI"/>
-        <rdf:Description rdf:about="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}">
+        <rdf:Description rdf:about="{uwf:metaWorIRI(.)}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
             <rdawd:P10002>{concat('MetaWor/', generate-id())}</rdawd:P10002>
             <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
@@ -700,7 +700,7 @@
     <xsl:template name="F561-0x" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="genID"/>
-        <rdf:Description rdf:about="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}">
+        <rdf:Description rdf:about="{uwf:metaWorIRI(.)}">
             <!--Does not meet min description of a work; needs to be linked to a metadata exp/man-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
             <rdawd:P10002>{concat('MetaWor/', generate-id())}</rdawd:P10002>
@@ -857,7 +857,7 @@
     <xsl:template name="F583-1x-x" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="genID"/>
-        <rdf:Description rdf:about="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}">
+        <rdf:Description rdf:about="{uwf:metaWorIRI(.)}">
             <!--Does not meet min description of a work; needs to be linked to a metadata exp/man-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
             <rdawd:P10002>{concat('MetaWor/', generate-id())}</rdawd:P10002>
@@ -873,7 +873,7 @@
     <xsl:template name="F583-0x" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="genID"/>
-        <rdf:Description rdf:about="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}">
+        <rdf:Description rdf:about="{uwf:metaWorIRI(.)}">
             <!--Does not meet min description of a work; needs to be linked to a metadata exp/man-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
             <rdawd:P10002>{concat('MetaWor/', generate-id())}</rdawd:P10002>

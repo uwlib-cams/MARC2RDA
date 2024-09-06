@@ -178,7 +178,7 @@
         match="marc:datafield[@tag = '502'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '502']"
         mode="man" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'o']">
-            <rdamo:P30004 rdf:resource="{'http://marc2rda.edu/fake/nom/'||generate-id()}"/>
+            <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom/')}"/>
         </xsl:for-each>
     </xsl:template>
     <xsl:template
@@ -186,7 +186,7 @@
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:for-each select="marc:subfield[@code = 'o']">
-            <rdf:Description rdf:about="{'http://marc2rda.edu/fake/nom/'||generate-id()}">
+            <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom/')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>{replace(., '\.\s*$', '')}</rdand:P80068>
                 <rdano:P80048 rdf:resource="{$baseIRI||'man'}"/>
@@ -422,7 +422,7 @@
         <!-- iri is 'http://marc2rda.edu/fake/MetaWor/' + x subfield's id-->
         <xsl:for-each select="marc:subfield[@code = 'x']">
             <rdamo:P30462
-                rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"/>
+                rdf:resource="{uwf:metaWorIRI(.)}"/>
         </xsl:for-each>
     </xsl:template>
     
@@ -587,7 +587,7 @@
             </xsl:if>
             <xsl:if test="@ind1 = '0'">
                 <rdaio:P40164
-                    rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"/>
+                    rdf:resource="{uwf:metaWorIRI(.)}"/>
             </xsl:if>
             <xsl:if test="@tag = '541' and marc:subfield[@code = '6']">
                 <xsl:variable name="occNum"
@@ -601,7 +601,7 @@
                     </xsl:if>
                     <xsl:if test="@ind1 = '0'">
                         <rdaio:P40164
-                            rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"
+                            rdf:resource="{uwf:metaWorIRI(.)}"
                         />
                     </xsl:if>
                 </xsl:for-each>
@@ -640,7 +640,7 @@
         </rdamd:P30137>
         <xsl:choose>
             <xsl:when test="@ind1 = '0'">
-                <rdamo:P30462 rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"/>
+                <rdamo:P30462 rdf:resource="{uwf:metaWorIRI(.)}"/>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:call-template name="F542-1x-e_f_g_i_j_p"/>
@@ -752,7 +752,7 @@
             </xsl:if>
             <xsl:if test="@ind1 = '0'">
                 <rdaio:P40164
-                    rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"/>
+                    rdf:resource="{uwf:metaWorIRI(.)}"/>
             </xsl:if>
             <!-- if 561 field has $6, find associated 880 andd do the same mapping -->
             <xsl:if test="@tag = '561' and marc:subfield[@code = '6']">
@@ -768,7 +768,7 @@
                     </xsl:if>
                     <xsl:if test="@ind1 = '0'">
                         <rdaio:P40164
-                            rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"
+                            rdf:resource="{uwf:metaWorIRI(.)}"
                         />
                     </xsl:if>
                 </xsl:for-each>
@@ -921,7 +921,7 @@
                 <xsl:for-each select="marc:subfield[@code = 'x']">
                     <!-- need to do a for-each to set context for subfield id -->
                     <rdaio:P40164
-                        rdf:resource="{concat('http://marc2rda.edu/fake/MetaWor/', generate-id())}"
+                        rdf:resource="{uwf:metaWorIRI(.)}"
                     />
                 </xsl:for-each>
             </xsl:if>
