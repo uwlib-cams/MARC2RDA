@@ -146,80 +146,83 @@
              considered insignificant to the RDA statements as output below.
          After statements are output, templates are called to process individual fields.
     -->
-    <xsl:template match="marc:datafield[@tag = '264'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '264']" mode="man">
+    <xsl:template match="marc:datafield[@tag = '264'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '264']" mode="man origMan">
+        <xsl:param name="type"/>
         <xsl:call-template name="getmarc"/>
-        <xsl:choose>
-            <!-- check if ISBD punctuation -->
-            <xsl:when
-                test="(substring(preceding-sibling::marc:leader, 19, 1) = 'i' or substring(preceding-sibling::marc:leader, 19, 1) = 'a')">
-                <xsl:choose>
-                    <xsl:when test="@ind2 = '0'">
-                        <rdamd:P30110>
-                            <xsl:call-template name="F264-xx-abc"/>
-                        </rdamd:P30110>
-                        <xsl:call-template name="F264-x0-a_b_c"/>
-                    </xsl:when>
-                    <xsl:when test="@ind2 = '1'">
-                        <rdamd:P30111>
-                            <xsl:call-template name="F264-xx-abc"/>
-                        </rdamd:P30111>
-                        <xsl:call-template name="F264-x1-a_b_c"/>
-                    </xsl:when>
-                    <xsl:when test="@ind2 = '2'">
-                        <rdamd:P30108>
-                            <xsl:call-template name="F264-xx-abc"/>
-                        </rdamd:P30108>
-                        <xsl:call-template name="F264-x2-a_b_c"/>
-                    </xsl:when>
-                    <xsl:when test="@ind2 = '3'">
-                        <rdamd:P30109>
-                            <xsl:call-template name="F264-xx-abc"/>
-                        </rdamd:P30109>
-                        <xsl:call-template name="F264-x3-a_b_c"/>
-                    </xsl:when>
-                    <xsl:when test="@ind2 = '4'">
-                        <xsl:call-template name="F264-x4-c"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <ex:ERROR>F264 IND2 ERROR</ex:ERROR>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:when>
-            <!-- no ISBD punctuation -->
-            <xsl:otherwise>
-                <xsl:choose>
-                    <xsl:when test="@ind2 = '0'">
-                        <rdamd:P30110>
-                            <xsl:call-template name="F264-xx-abc-notISBD"/>
-                        </rdamd:P30110>
-                        <xsl:call-template name="F264-x0-a_b_c"/>
-                    </xsl:when>
-                    <xsl:when test="@ind2 = '1'">
-                        <rdamd:P30111>
-                            <xsl:call-template name="F264-xx-abc-notISBD"/>
-                        </rdamd:P30111>
-                        <xsl:call-template name="F264-x1-a_b_c"/>
-                    </xsl:when>
-                    <xsl:when test="@ind2 = '2'">
-                        <rdamd:P30108>
-                            <xsl:call-template name="F264-xx-abc-notISBD"/>
-                        </rdamd:P30108>
-                        <xsl:call-template name="F264-x2-a_b_c"/>
-                    </xsl:when>
-                    <xsl:when test="@ind2 = '3'">
-                        <rdamd:P30109>
-                            <xsl:call-template name="F264-xx-abc-notISBD"/>
-                        </rdamd:P30109>
-                        <xsl:call-template name="F264-x3-a_b_c"/>
-                    </xsl:when>
-                    <xsl:when test="@ind2 = '4'">
-                        <xsl:call-template name="F264-x4-c"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <ex:ERROR>F264 IND2 ERROR</ex:ERROR>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:otherwise>
-        </xsl:choose>
+        <xsl:if test="not(contains($type, 'reproduction'))">
+            <xsl:choose>
+                <!-- check if ISBD punctuation -->
+                <xsl:when
+                    test="(substring(preceding-sibling::marc:leader, 19, 1) = 'i' or substring(preceding-sibling::marc:leader, 19, 1) = 'a')">
+                    <xsl:choose>
+                        <xsl:when test="@ind2 = '0'">
+                            <rdamd:P30110>
+                                <xsl:call-template name="F264-xx-abc"/>
+                            </rdamd:P30110>
+                            <xsl:call-template name="F264-x0-a_b_c"/>
+                        </xsl:when>
+                        <xsl:when test="@ind2 = '1'">
+                            <rdamd:P30111>
+                                <xsl:call-template name="F264-xx-abc"/>
+                            </rdamd:P30111>
+                            <xsl:call-template name="F264-x1-a_b_c"/>
+                        </xsl:when>
+                        <xsl:when test="@ind2 = '2'">
+                            <rdamd:P30108>
+                                <xsl:call-template name="F264-xx-abc"/>
+                            </rdamd:P30108>
+                            <xsl:call-template name="F264-x2-a_b_c"/>
+                        </xsl:when>
+                        <xsl:when test="@ind2 = '3'">
+                            <rdamd:P30109>
+                                <xsl:call-template name="F264-xx-abc"/>
+                            </rdamd:P30109>
+                            <xsl:call-template name="F264-x3-a_b_c"/>
+                        </xsl:when>
+                        <xsl:when test="@ind2 = '4'">
+                            <xsl:call-template name="F264-x4-c"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <ex:ERROR>F264 IND2 ERROR</ex:ERROR>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:when>
+                <!-- no ISBD punctuation -->
+                <xsl:otherwise>
+                    <xsl:choose>
+                        <xsl:when test="@ind2 = '0'">
+                            <rdamd:P30110>
+                                <xsl:call-template name="F264-xx-abc-notISBD"/>
+                            </rdamd:P30110>
+                            <xsl:call-template name="F264-x0-a_b_c"/>
+                        </xsl:when>
+                        <xsl:when test="@ind2 = '1'">
+                            <rdamd:P30111>
+                                <xsl:call-template name="F264-xx-abc-notISBD"/>
+                            </rdamd:P30111>
+                            <xsl:call-template name="F264-x1-a_b_c"/>
+                        </xsl:when>
+                        <xsl:when test="@ind2 = '2'">
+                            <rdamd:P30108>
+                                <xsl:call-template name="F264-xx-abc-notISBD"/>
+                            </rdamd:P30108>
+                            <xsl:call-template name="F264-x2-a_b_c"/>
+                        </xsl:when>
+                        <xsl:when test="@ind2 = '3'">
+                            <rdamd:P30109>
+                                <xsl:call-template name="F264-xx-abc-notISBD"/>
+                            </rdamd:P30109>
+                            <xsl:call-template name="F264-x3-a_b_c"/>
+                        </xsl:when>
+                        <xsl:when test="@ind2 = '4'">
+                            <xsl:call-template name="F264-x4-c"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <ex:ERROR>F264 IND2 ERROR</ex:ERROR>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:if>
     </xsl:template>
 </xsl:stylesheet>

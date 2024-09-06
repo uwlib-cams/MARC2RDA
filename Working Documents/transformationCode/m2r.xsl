@@ -19,6 +19,7 @@
     xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
     xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
     xmlns:fake="http://fakePropertiesForDemo"
+    xmlns:uwf="http://universityOfWashington/functions"
     exclude-result-prefixes="marc ex" version="3.0">
     <xsl:output encoding="UTF-8" method="xml" indent="yes"/>
     <xsl:strip-space elements="*"/>
@@ -33,9 +34,12 @@
     <xsl:mode name="metaWor" on-no-match="shallow-skip"/>
     <xsl:mode name="age" on-no-match="shallow-skip"/>
     <xsl:mode name="relWor" on-no-match="shallow-skip"/>
+    <xsl:mode name="origMan" on-no-match="shallow-skip"/>
     <xsl:mode name="con" on-no-match="shallow-skip"/>
     <xsl:mode name="pla" on-no-match="shallow-skip"/>
     <xsl:mode name="tim" on-no-match="shallow-skip"/>
+    
+    <xsl:import href="m2r-functions.xsl"/>
     
     <!-- base IRI for now - all minted entities begin with this -->
     <xsl:param name="BASE" select="'http://marc2rda.edu/fake/'"/>
@@ -116,6 +120,8 @@
         <!-- currently we are using the 001 control field to generate the baseIRI -->
         <xsl:variable name="baseIRI" select="concat($BASE, marc:controlfield[@tag = '001'])"/>
         
+        <xsl:variable name="isReproduction" select="uwf:checkReproductions(.)"/>
+        
         <!-- *****WORKS***** -->
         <rdf:Description rdf:about="{concat($baseIRI,'wor')}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -143,13 +149,51 @@
         <rdf:Description rdf:about="{concat($baseIRI,'man')}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
             <rdamo:P30139 rdf:resource="{concat($baseIRI,'exp')}"/>
-            <xsl:apply-templates select="*" mode="man">
-                <xsl:with-param name="baseIRI" select="$baseIRI"/>
-            </xsl:apply-templates>
+            <xsl:choose>
+                <xsl:when test="exists($isReproduction)">
+                    <xsl:variable name="formofitem">
+                        <xsl:choose>
+                            <xsl:when test="matches(substring(marc:leader, 7, 1), '[efgkor]')">
+                                <xsl:value-of select="substring(marc:controlfield[@tag='008'], 30, 1)"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="substring(marc:controlfield[@tag='008'], 24, 1)"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:variable>
+                    <xsl:choose>
+                        <xsl:when test="matches($formofitem, 'o')">
+                            <rdamo:P30136 rdf:resource="{concat($baseIRI,'origMan')}"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <rdamo:P30043 rdf:resource="{concat($baseIRI,'origMan')}"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                    <xsl:apply-templates select="*" mode="man">
+                        <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                        <xsl:with-param name="type" select="'reproduction'"/>
+                    </xsl:apply-templates>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:apply-templates select="*" mode="man">
+                        <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                    </xsl:apply-templates>
+                </xsl:otherwise>
+            </xsl:choose>
             <!-- <xsl:call-template name="append-aggregates">
                 <xsl:with-param name="wemi" select="'man'"/>
             </xsl:call-template> -->
         </rdf:Description>
+        
+        <xsl:if test="exists($isReproduction)">
+            <rdf:Description rdf:about="{concat($baseIRI,'origMan')}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+                <rdamo:P30139 rdf:resource="{concat($baseIRI,'exp')}"/>
+                <xsl:apply-templates select="*" mode="origMan">
+                    <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                </xsl:apply-templates>
+            </rdf:Description>
+        </xsl:if>
         
         <!-- Items, nomens, metadata works, and agents are generated as needed
              so the rdf:Description elements are generated within the field-specific templates.

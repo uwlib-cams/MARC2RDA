@@ -45,6 +45,22 @@
         </xsl:if>
     </xsl:function>
     
+<!-- REPRODUCTIONS -->
+    
+    <xsl:function name="uwf:checkReproductions">
+        <xsl:param name="record"/>
+        <xsl:choose>
+            <xsl:when test="contains($record/marc:datafield[@tag = '588']/marc:subfield[@code = 'a'], 'version record')">
+                <xsl:value-of select="'588'"/>
+            </xsl:when>
+            <xsl:when test="$record/marc:datafield[@tag = '533']">
+                <xsl:value-of select="if (some $a in $record/marc:datafield[@tag = '533']/marc:subfield[@code = 'a']
+                    satisfies not(contains($a, 'also available as'))) then '533' else ''"/>
+            </xsl:when>
+            <xsl:otherwise/>
+        </xsl:choose>
+    </xsl:function>
+    
 <!-- $5 FUNCTIONS -->
     
     <!-- collBase is the base URI we use for the minted collection manifestation for an institution -->
