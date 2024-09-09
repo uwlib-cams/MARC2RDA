@@ -405,14 +405,14 @@
             <xsl:if test="following-sibling::marc:subfield[@code = '2'][1]">
                 <rdf:Description rdf:about="{uwf:placeIRI(., ., following-sibling::marc:subfield[@code = '2'][1])}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-                    <rdapo:P70020 rdf:resource="{uwf:nomenIRI(., 'pla/nom', ., following-sibling::marc:subfield[@code = '2'][1])}"/>
+                    <rdapo:P70020 rdf:resource="{uwf:nomenIRI(., 'pla/nom', '', '')}"/>
                 </rdf:Description>
             </xsl:if>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'c']">
             <rdf:Description rdf:about="{uwf:placeIRI(., ., 'ISO3166')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-                <rdapo:P70020 rdf:resource="{uwf:nomenIRI(., 'pla/nom', ., 'ISO3166')}"/>
+                <rdapo:P70020 rdf:resource="{uwf:nomenIRI(., 'pla/nom', '', '')}"/>
             </rdf:Description>
         </xsl:for-each>
     </xsl:template>
@@ -421,7 +421,7 @@
         mode="nom" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'b']">
             <xsl:if test="following-sibling::marc:subfield[@code = '2'][1]">
-                <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom', ., following-sibling::marc:subfield[@code = '2'][1])}">
+                <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom', '', '')}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                     <rdand:P80068>{.}</rdand:P80068>
                     <rdand:P80069>{following-sibling::marc:subfield[@code = '2'][1]}</rdand:P80069>
@@ -429,7 +429,7 @@
             </xsl:if>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'c']">
-            <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom', ., 'ISO3166')}">
+            <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom', '', '')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>{.}</rdand:P80068>
                 <rdan:P80069 rdf:resource="http://purl.org/dc/terms/ISO3166"/>
