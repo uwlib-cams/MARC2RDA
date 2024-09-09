@@ -125,15 +125,16 @@
     <xsl:function name="uwf:nomenIRI">
         <xsl:param name="field"/>
         <xsl:param name="type"/>
-        <xsl:value-of select="$BASE||$type||'/'||generate-id($field)"/>
-    </xsl:function>
-    
-    <xsl:function name="uwf:subjectNomenIRI">
-        <xsl:param name="field"/>
-        <xsl:param name="type"/>
         <xsl:param name="ap"/>
         <xsl:param name="source"/>
-        <xsl:value-of select="$BASE||$type||'/'||translate(lower-case($source), ' ', '')||'/'||uwf:stripAllPunctuation($ap)"/>
+        <xsl:choose>
+            <xsl:when test="$source != ''">
+                <xsl:value-of select="$BASE||$type||'/'||translate(lower-case($source), ' ', '')||'/'||uwf:stripAllPunctuation($ap)"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$BASE||$type||'/'||generate-id($field)"/>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:function>
     
     <xsl:function name="uwf:timespanIRI">
@@ -187,6 +188,7 @@
     <xsl:function name="uwf:placeIRI">
         <xsl:param name="field"/>
         <xsl:param name="ap"/>
+        <xsl:param name="source"/>
         <xsl:choose>
             <xsl:when test="$field/marc:subfield[@code = '1'] and (starts-with($field/@tag, '6') and 
                 not($field/marc:subfield[@code = 'v' or @code = 'x' or @code = 'y' or @code = 'z']))">
@@ -201,14 +203,11 @@
             </xsl:when>
             <xsl:otherwise>
                 <xsl:choose>
-                    <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4' or $field/@ind2 = ' ' or $field/@ind2 = '7')">
-                        <xsl:value-of select="$BASE||'place/'||translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', '')||'/'||uwf:stripAllPunctuation($ap)"/>
-                    </xsl:when>
-                    <xsl:when test="$field/marc:subfield[@code = '2']">
-                        <xsl:value-of select="$BASE||'place/'||translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', '')||'/'||uwf:stripAllPunctuation($ap)"/>
+                    <xsl:when test="exists($source)">
+                        <xsl:value-of select="$BASE||'place/'||translate(lower-case($source), ' ', '')||'/'||uwf:stripAllPunctuation($ap)"/>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="$BASE||'fake/place/'||generate-id($field)"/>
+                        <xsl:value-of select="$BASE||'place/'||generate-id($field)"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:otherwise>

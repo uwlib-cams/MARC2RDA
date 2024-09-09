@@ -178,7 +178,7 @@
         match="marc:datafield[@tag = '502'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '502']"
         mode="man" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'o']">
-            <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom/')}"/>
+            <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom/', '', '')}"/>
         </xsl:for-each>
     </xsl:template>
     <xsl:template
@@ -186,7 +186,7 @@
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:for-each select="marc:subfield[@code = 'o']">
-            <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom/')}">
+            <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom/', '', '')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>{replace(., '\.\s*$', '')}</rdand:P80068>
                 <rdano:P80048 rdf:resource="{$baseIRI||'man'}"/>

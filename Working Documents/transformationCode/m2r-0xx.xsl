@@ -36,10 +36,10 @@
         mode="man">
         <xsl:call-template name="getmarc"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
+            <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom', '', '')}"/>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'z']">
-            <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
+            <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom', '', '')}"/>
         </xsl:for-each>
         <xsl:if test="marc:subfield[@code = 'c']">
             <xsl:choose>
@@ -55,7 +55,7 @@
         mode="nom">
         <xsl:param name="baseIRI"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom')}">
+            <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom', '', '')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
                     <xsl:value-of select="translate(., ' :', '')"/>
@@ -74,7 +74,7 @@
             </rdf:Description>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'z']">
-            <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom')}">
+            <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom', '', '')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
                     <xsl:value-of select="translate(., ' :', '')"/>
@@ -109,7 +109,7 @@
             </xsl:when>
             <xsl:otherwise>
                 <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
-                    <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
+                    <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom', '', '')}"/>
                 </xsl:for-each>
             </xsl:otherwise>
         </xsl:choose>
@@ -125,7 +125,7 @@
         <xsl:param name="baseIRI"/>
         <xsl:if test="@ind1 != '8'">
             <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
-                <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom')}">
+                <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom', '', '')}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                     <rdand:P80068>
                         <xsl:value-of select="."/>
@@ -169,7 +169,7 @@
     <xsl:template match="marc:datafield[@tag = '026'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '026']"
         mode="man">
         <xsl:param name="baseIRI"/>
-        <rdamo:P30296 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
+        <rdamo:P30296 rdf:resource="{uwf:nomenIRI(., 'nom', '', '')}"/>
         <xsl:if test="marc:subfield[@code = '5']">
             <rdamo:P30103 rdf:resource="{concat($baseIRI,'ite', generate-id())}"/>
         </xsl:if>
@@ -178,7 +178,7 @@
     <xsl:template match="marc:datafield[@tag = '026'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '026']"
         mode="nom">
         <xsl:param name="baseIRI"/>
-        <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom')}">
+        <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom', '', '')}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
             <rdand:P80068>
                 <xsl:call-template name="F026-xx-abcde"/>
@@ -209,7 +209,7 @@
         mode="man">
         <xsl:call-template name="getmarc"/>
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
-            <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
+            <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom', '', '')}"/>
         </xsl:for-each>
     </xsl:template>
     
@@ -217,7 +217,7 @@
         mode="nom">
         <xsl:param name="baseIRI"/>
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
-            <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom')}">
+            <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom', '', '')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068><xsl:value-of select="."/></rdand:P80068>
                 <xsl:choose>
@@ -246,13 +246,13 @@
         <xsl:call-template name="getmarc"/>
         <xsl:choose>
             <xsl:when test="@ind1 = '3'">
-                <rdamo:P30065 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
+                <rdamo:P30065 rdf:resource="{uwf:nomenIRI(., 'nom', '', '')}"/>
             </xsl:when>
             <xsl:when test="@ind1 = '2'">
-                <rdamo:P30066 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
+                <rdamo:P30066 rdf:resource="{uwf:nomenIRI(., 'nom', '', '')}"/>
             </xsl:when>
             <xsl:otherwise>
-                <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
+                <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom', '', '')}"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -260,7 +260,7 @@
     <xsl:template match="marc:datafield[@tag = '028'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '028']" 
         mode="nom">
         <xsl:param name="baseIRI"/>
-        <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom')}">
+        <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom', '', '')}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
             <rdand:P80068><xsl:value-of select="marc:subfield[@code = 'a']"/></rdand:P80068>
             <xsl:if test="marc:subfield[@code = 'b']">
@@ -295,7 +295,7 @@
         <xsl:call-template name="getmarc"/>
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
             <xsl:if test="matches(., '^[A-Z]')">
-                <rdawd:P10002 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
+                <rdawd:P10002 rdf:resource="{uwf:nomenIRI(., 'nom', '', '')}"/>
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
@@ -305,7 +305,7 @@
         <xsl:call-template name="getmarc"/>
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
             <xsl:if test="matches(., '^[0-9]')">
-                <rdamd:P30004 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
+                <rdamd:P30004 rdf:resource="{uwf:nomenIRI(., 'nom', '', '')}"/>
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
@@ -314,7 +314,7 @@
         mode="nom">
         <xsl:param name="baseIRI"/>
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
-            <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom')}">
+            <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom', '', '')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068><xsl:value-of select="."/></rdand:P80068>
                 <rdand:P80069>CODEN</rdand:P80069>
@@ -333,11 +333,11 @@
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'b']">
             <xsl:if test="following-sibling::marc:subfield[@code = '2'][1]">
-                <rdawd:P10321 rdf:resource="{uwf:placeIRI(., .)}"/>
+                <rdawd:P10321 rdf:resource="{uwf:placeIRI(., ., following-sibling::marc:subfield[@code = '2'][1])}"/>
             </xsl:if>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'c']">
-            <rdawd:P10321 rdf:resource="{uwf:placeIRI(., .)}"/>
+            <rdawd:P10321 rdf:resource="{uwf:placeIRI(., ., 'ISO3166')}"/>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = '0']">
             <xsl:choose>
@@ -403,16 +403,16 @@
         mode="pla" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'b']">
             <xsl:if test="following-sibling::marc:subfield[@code = '2'][1]">
-                <rdf:Description rdf:about="{uwf:placeIRI(., .)}">
+                <rdf:Description rdf:about="{uwf:placeIRI(., ., following-sibling::marc:subfield[@code = '2'][1])}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-                    <rdapo:P70020 rdf:resource="{uwf:nomenIRI(., 'pla/nom')}"/>
+                    <rdapo:P70020 rdf:resource="{uwf:nomenIRI(., 'pla/nom', ., following-sibling::marc:subfield[@code = '2'][1])}"/>
                 </rdf:Description>
             </xsl:if>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'c']">
-            <rdf:Description rdf:about="{uwf:placeIRI(., .)}">
+            <rdf:Description rdf:about="{uwf:placeIRI(., ., 'ISO3166')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-                <rdapo:P70020 rdf:resource="{uwf:nomenIRI(., 'pla/nom')}"/>
+                <rdapo:P70020 rdf:resource="{uwf:nomenIRI(., 'pla/nom', ., 'ISO3166')}"/>
             </rdf:Description>
         </xsl:for-each>
     </xsl:template>
@@ -421,7 +421,7 @@
         mode="nom" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'b']">
             <xsl:if test="following-sibling::marc:subfield[@code = '2'][1]">
-                <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom')}">
+                <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom', ., following-sibling::marc:subfield[@code = '2'][1])}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                     <rdand:P80068>{.}</rdand:P80068>
                     <rdand:P80069>{following-sibling::marc:subfield[@code = '2'][1]}</rdand:P80069>
@@ -429,7 +429,7 @@
             </xsl:if>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'c']">
-            <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom')}">
+            <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom', ., 'ISO3166')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>{.}</rdand:P80068>
                 <rdan:P80069 rdf:resource="http://purl.org/dc/terms/ISO3166"/>
@@ -473,6 +473,47 @@
         </xsl:for-each>
     </xsl:template>
     
+    <!-- 052 - Geographic Classification -->
+    <!--<xsl:template match="marc:datafield[@tag = '052']" 
+        mode="wor" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
+        <xsl:choose>
+            <xsl:when test="marc:subfield[@code = 'b']">
+                <xsl:for-each select="marc:subfield[@code = 'b']">
+                    <xsl:variable name="ap">
+                        <xsl:value-of select="concat(../marc:subfield[@code = 'a'], .)"/>
+                    </xsl:variable>
+                    <rdaw:P10321 rdf:resource="{uwf:placeIRI(., $ap)}"/>
+                </xsl:for-each>
+            </xsl:when>
+            <xsl:otherwise>
+                <rdaw:P10321 rdf:resource="{uwf:placeIRI(., marc:subfield[@code = 'a'])}"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '052']" 
+        mode="pla" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
+        <xsl:choose>
+            <xsl:when test="marc:subfield[@code = 'b']">
+                <xsl:for-each select="marc:subfield[@code = 'b']">
+                    <xsl:variable name="ap">
+                        <xsl:value-of select="concat(../marc:subfield[@code = 'a'], .)"/>
+                    </xsl:variable>
+                    <rdf:Description rdf:about="{uwf:placeIRI(., $ap)}">
+                        
+                    </rdf:Description>
+                </xsl:for-each>
+            </xsl:when>
+            <xsl:otherwise>
+                <rdf:Description rdf:about="{uwf:placeIRI(., marc:subfield[@code = 'a'])}">
+                    
+                </rdf:Description>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    -->
     <!-- 055 - Classification Numbers Assigned in Canada -->
     <xsl:template match="marc:datafield[@tag = '055']" 
         mode="wor" expand-text="yes">
@@ -566,7 +607,7 @@
             <rdaid:P40001>{concat($controlNumber, 'ite', $genID)}</rdaid:P40001>
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
             <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
-                <rdaio:P40001 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
+                <rdaio:P40001 rdf:resource="{uwf:nomenIRI(., 'nom', '', '')}"/>
             </xsl:for-each>
         </rdf:Description>
     </xsl:template>
@@ -575,7 +616,7 @@
         <xsl:param name="baseIRI"/>
         <xsl:variable name="genID" select="generate-id()"/>
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
-            <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom')}">
+            <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom', '', '')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
                     <xsl:value-of select="."/>
@@ -594,10 +635,10 @@
         mode="man">
         <xsl:call-template name="getmarc"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
+            <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom', '', '')}"/>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'z']">
-            <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom')}"/>
+            <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom', '', '')}"/>
         </xsl:for-each>
     </xsl:template>
     
@@ -605,7 +646,7 @@
         mode="nom">
         <xsl:param name="baseIRI"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom')}">
+            <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom', '', '')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
                     <xsl:value-of select="."/>
@@ -614,7 +655,7 @@
             </rdf:Description>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'z']">
-            <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom')}">
+            <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom', '', '')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
                     <xsl:value-of select="."/>
