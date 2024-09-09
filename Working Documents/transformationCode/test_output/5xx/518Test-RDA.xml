@@ -12,16 +12,14 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/518-testexp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F518 ## $d 2002 September 13 $p Coolidge Auditorium, Library of Congress, Washington, D.C. $2 rdaill</fake:marcfield>
-      <rdam:P30137>Source of term for controlled place of event term: 2002 September 13</rdam:P30137><!--rdam:P30137 = has note on manifestation-->
-      <rdam:P30137>Source of term for controlled place of event term: Coolidge Auditorium, Library of Congress, Washington, D.C.</rdam:P30137><!--rdam:P30137 = has note on manifestation-->
+      <rdamd:P30137>Date of event: 2002 September 13; Place of event: Coolidge Auditorium, Library of Congress, Washington, D.C.; Source of term for controlled place of event term: rdaill</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <fake:marcfield>F518 ## $3 Horse $a Cast in 1925.</fake:marcfield>
-      <rdam:P30137>Cast in 1925. (Applies to: Horse)</rdam:P30137><!--rdam:P30137 = has note on manifestation-->
+      <rdamd:P30137>Date/time and place of an event note: Cast in 1925. (Applies to: Horse)</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <fake:marcfield>F518 ## $p Coolidge Auditorium, Library of Congress, Washington, D.C. $0 http://id.loc.gov/authorities/names/n2008054754 $2 blnpn</fake:marcfield>
-      <rdam:P30137>Authority record control number or standard number for controlled place of event term: Coolidge Auditorium, Library of Congress, Washington, D.C.</rdam:P30137><!--rdam:P30137 = has note on manifestation-->
-      <rdam:P30137>Source of term for controlled place of event term: Coolidge Auditorium, Library of Congress, Washington, D.C.</rdam:P30137><!--rdam:P30137 = has note on manifestation-->
+      <rdamd:P30137>Place of event: Coolidge Auditorium, Library of Congress, Washington, D.C.; Authority record control number or standard number for controlled place of event term: http://id.loc.gov/authorities/names/n2008054754; Source of term for controlled place of event term: blnpn</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <fake:marcfield>F518 ## $p Coolidge Auditorium, Library of Congress, Washington, D.C. $0 http://id.loc.gov/authorities/subjects/sh2017003695 $2 blnpn</fake:marcfield>
-      <rdam:P30137>Authority record control number or standard number for controlled place of event term: Coolidge Auditorium, Library of Congress, Washington, D.C.</rdam:P30137><!--rdam:P30137 = has note on manifestation-->
-      <rdam:P30137>Source of term for controlled place of event term: Coolidge Auditorium, Library of Congress, Washington, D.C.</rdam:P30137><!--rdam:P30137 = has note on manifestation-->
+      <rdamd:P30137>Place of event: Coolidge Auditorium, Library of Congress, Washington, D.C.; Authority record control number or standard number for controlled place of event term: http://id.loc.gov/authorities/subjects/sh2017003695; Source of term for controlled place of event term: blnpn</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <fake:marcfield>F880 ## $6 518-00/ $a Recorded in Vienna in 1961, previously released as WST 17035.</fake:marcfield>
+      <rdamd:P30137>Date/time and place of an event note: Recorded in Vienna in 1961, previously released as WST 17035.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
 </rdf:RDF>

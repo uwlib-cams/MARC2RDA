@@ -354,24 +354,38 @@
     <xsl:template match="marc:datafield[@tag='518'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '518']" 
         mode="man" expand-text="yes">
         <xsl:call-template name="getmarc"/>
-        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'o'] | marc:subfield[@code = 'p'] | marc:subfield[@code = '1']">
-            <xsl:variable name="value" select="." />
-            <xsl:for-each select="../marc:subfield[@code = '0']">
-                <rdam:P30137>
-                    <xsl:text>Authority record control number or standard number for controlled place of event term: {$value}</xsl:text>
-                </rdam:P30137>
+        <rdamd:P30137>
+            <xsl:if test="marc:subfield[@code = 'a']">
+                <xsl:text>Date/time and place of an event note: {marc:subfield[@code = 'a']}</xsl:text>
+            </xsl:if>
+            <xsl:for-each select="marc:subfield[@code = 'd'] | marc:subfield[@code = 'o'] | marc:subfield[@code = 'p']
+                | marc:subfield[@code = '0'] | marc:subfield[@code = '1'] | marc:subfield[@code = '2']">
+                <xsl:if test="@code = 'd'">
+                    <xsl:text>Date of event: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'o'">
+                    <xsl:text>Other event information: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'p'">
+                    <xsl:text>Place of event: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = '0'">
+                    <xsl:text>Authority record control number or standard number for controlled place of event term: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = '1'">
+                    <xsl:text>Real World Object URI: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = '2'">
+                    <xsl:text>Source of term for controlled place of event term: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="position() != last()">
+                    <xsl:text>; </xsl:text>
+                </xsl:if>
             </xsl:for-each>
-            <xsl:for-each select="../marc:subfield[@code = '2']">
-                <rdam:P30137>
-                    <xsl:text>Source of term for controlled place of event term: {$value}</xsl:text>
-                </rdam:P30137>
-            </xsl:for-each>
-            <xsl:for-each select="../marc:subfield[@code = '3']">
-                <rdam:P30137>
-                    <xsl:text>{$value} (Applies to: {.})</xsl:text>
-                </rdam:P30137>
-            </xsl:for-each>
-        </xsl:for-each>
+            <xsl:if test="marc:subfield[@code = '3']">
+                <xsl:text> (Applies to: {marc:subfield[@code = '3']})</xsl:text>
+            </xsl:if>
+        </rdamd:P30137>
     </xsl:template>
     
     <!-- 520 - Summary, Etc.-->
