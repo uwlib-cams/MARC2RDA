@@ -54,31 +54,31 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/043-test1exp"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/cagraq/sblba">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d20e9">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>s-bl-ba</rdand:P80068>
       <rdand:P80069>cagraq</rdand:P80069>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/marcgac/efr">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d20e13">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>e-fr---</rdand:P80068>
       <rdand:P80069>marcgac</rdand:P80069>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/iso3166/us">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d20e17">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>us</rdand:P80068>
       <rdan:P80069 rdf:resource="http://purl.org/dc/terms/ISO3166"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/cagraq/sblba">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70020 rdf:resource="http://marc2rda.edu/fake/pla/nom/cagraq/sblba"/>
+      <rdapo:P70020 rdf:resource="http://marc2rda.edu/fake/pla/nom/d20e9"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/marcgac/efr">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70020 rdf:resource="http://marc2rda.edu/fake/pla/nom/marcgac/efr"/>
+      <rdapo:P70020 rdf:resource="http://marc2rda.edu/fake/pla/nom/d20e13"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/iso3166/us">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70020 rdf:resource="http://marc2rda.edu/fake/pla/nom/iso3166/us"/>
+      <rdapo:P70020 rdf:resource="http://marc2rda.edu/fake/pla/nom/d20e17"/>
    </rdf:Description>
 </rdf:RDF>
