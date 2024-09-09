@@ -474,20 +474,40 @@
     </xsl:template>
     
     <!-- 052 - Geographic Classification -->
-    <!--<xsl:template match="marc:datafield[@tag = '052']" 
+    <xsl:template match="marc:datafield[@tag = '052']" 
         mode="wor" expand-text="yes">
         <xsl:call-template name="getmarc"/>
+        <xsl:variable name="source">
+            <xsl:choose>
+                <xsl:when test="@ind1 = ' '">
+                    <xsl:value-of select="'lcc'"/>
+                </xsl:when>
+                <xsl:when test="@ind1 = '1'">
+                    <xsl:value-of select="'U.S. Dept. of Defense Classification'"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:choose>
+                        <xsl:when test="marc:subfield[@code = '2']">
+                            <xsl:value-of select="marc:subfield[@code = '2'][1]"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="''"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
         <xsl:choose>
             <xsl:when test="marc:subfield[@code = 'b']">
                 <xsl:for-each select="marc:subfield[@code = 'b']">
                     <xsl:variable name="ap">
                         <xsl:value-of select="concat(../marc:subfield[@code = 'a'], .)"/>
                     </xsl:variable>
-                    <rdaw:P10321 rdf:resource="{uwf:placeIRI(., $ap)}"/>
+                    <rdaw:P10321 rdf:resource="{uwf:placeIRI(., $ap, $source)}"/>
                 </xsl:for-each>
             </xsl:when>
             <xsl:otherwise>
-                <rdaw:P10321 rdf:resource="{uwf:placeIRI(., marc:subfield[@code = 'a'])}"/>
+                <rdaw:P10321 rdf:resource="{uwf:placeIRI(., marc:subfield[@code = 'a'], $source)}"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -495,25 +515,117 @@
     <xsl:template match="marc:datafield[@tag = '052']" 
         mode="pla" expand-text="yes">
         <xsl:call-template name="getmarc"/>
+        <xsl:variable name="source">
+            <xsl:choose>
+                <xsl:when test="@ind1 = ' '">
+                    <xsl:value-of select="'lcc'"/>
+                </xsl:when>
+                <xsl:when test="@ind1 = '1'">
+                    <xsl:value-of select="'U.S. Dept. of Defense Classification'"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:choose>
+                        <xsl:when test="marc:subfield[@code = '2']">
+                            <xsl:value-of select="marc:subfield[@code = '2'][1]"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="''"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
         <xsl:choose>
             <xsl:when test="marc:subfield[@code = 'b']">
                 <xsl:for-each select="marc:subfield[@code = 'b']">
                     <xsl:variable name="ap">
                         <xsl:value-of select="concat(../marc:subfield[@code = 'a'], .)"/>
                     </xsl:variable>
-                    <rdf:Description rdf:about="{uwf:placeIRI(., $ap)}">
-                        
+                    <rdf:Description rdf:about="{uwf:placeIRI(., $ap, $source)}">
+                        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+                        <rdapo:P70020 rdf:resource="{uwf:nomenIRI(., 'pla/nom', $ap, $source)}"/>
+                        <xsl:if test="../marc:subfield[@code = 'd'] and count(../marc:subfield[@code = 'b']) = 1">
+                            <xsl:for-each select="marc:subfield[@code = 'd']">
+                                <rdapo:P70018 rdf:resource="{uwf:nomenIRI(., 'pla/nom', ., $source)}"/>
+                            </xsl:for-each>
+                        </xsl:if>
                     </rdf:Description>
                 </xsl:for-each>
             </xsl:when>
             <xsl:otherwise>
-                <rdf:Description rdf:about="{uwf:placeIRI(., marc:subfield[@code = 'a'])}">
-                    
+                <rdf:Description rdf:about="{uwf:placeIRI(., marc:subfield[@code = 'a'], $source)}">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+                    <rdapo:P70020 rdf:resource="{uwf:nomenIRI(., 'pla/nom', marc:subfield[@code = 'a'], $source)}"/>
+                    <xsl:for-each select="marc:subfield[@code = 'd']">
+                        <rdapo:P70018 rdf:resource="{uwf:nomenIRI(., 'pla/nom', ., $source)}"/>
+                    </xsl:for-each>
                 </rdf:Description>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    -->
+    
+    <xsl:template match="marc:datafield[@tag = '052']" 
+        mode="nom" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
+        <xsl:variable name="source">
+            <xsl:choose>
+                <xsl:when test="@ind1 = ' '">
+                    <xsl:value-of select="'lcc'"/>
+                </xsl:when>
+                <xsl:when test="@ind1 = '1'">
+                    <xsl:value-of select="'U.S. Dept. of Defense Classification'"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:choose>
+                        <xsl:when test="marc:subfield[@code = '2']">
+                            <xsl:value-of select="marc:subfield[@code = '2'][1]"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="''"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:choose>
+            <xsl:when test="marc:subfield[@code = 'b']">
+                <xsl:for-each select="marc:subfield[@code = 'b']">
+                    <xsl:variable name="ap">
+                        <xsl:value-of select="concat(../marc:subfield[@code = 'a'], .)"/>
+                    </xsl:variable>
+                    <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom', $ap, $source)}">
+                        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                        <rdand:P80068>{$ap}</rdand:P80068>
+                        <xsl:copy-of select="uwf:s2NomenClassSchemes($source)"/>
+                    </rdf:Description>
+                    <xsl:if test="../marc:subfield[@code = 'd'] and count(../marc:subfield[@code = 'b']) = 1">
+                        <xsl:for-each select="marc:subfield[@code = 'd']">
+                            <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom', ., $source)}">
+                                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                                <rdand:P80068>{.}</rdand:P80068>
+                                <xsl:copy-of select="uwf:s2NomenClassSchemes($source)"/>
+                            </rdf:Description>
+                        </xsl:for-each>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:when>
+            <xsl:otherwise>
+                <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom', marc:subfield[@code = 'a'], $source)}">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                    <rdand:P80068>{marc:subfield[@code = 'a']}</rdand:P80068>
+                    <xsl:copy-of select="uwf:s2NomenClassSchemes($source)"/>
+                </rdf:Description>
+                <xsl:for-each select="marc:subfield[@code = 'd']">
+                    <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom', ., $source)}">
+                        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                        <rdand:P80068>{.}</rdand:P80068>
+                        <xsl:copy-of select="uwf:s2NomenClassSchemes($source)"/>
+                    </rdf:Description>
+                </xsl:for-each>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
     <!-- 055 - Classification Numbers Assigned in Canada -->
     <xsl:template match="marc:datafield[@tag = '055']" 
         mode="wor" expand-text="yes">
