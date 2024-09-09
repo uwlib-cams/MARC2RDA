@@ -29,8 +29,9 @@
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwf="http://universityOfWashington/functions"
          xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
-   <rdf:Description rdf:about="http://fakeIRI2.edu/050-test1wor">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/050-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>050-test1wor</rdawd:P10002>
       <fake:marcfield>F050 #4 $a PS3626.A6393 $b L67 2020b</fake:marcfield>
@@ -40,31 +41,34 @@
       <fake:marcfield>F050 #4 $a QL567.1.U6 $b E63 2020</fake:marcfield>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcc/ql5671u6"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/050-test1exp">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/050-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/050-test1wor"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/050-test1wor"/>
       <rdaed:P20002>050-test1exp</rdaed:P20002>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/050-test1man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/050-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/050-test1exp"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/050-test1exp"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/ps3626a6393">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <!--rdf:datatype to be added-->
       <skos:notation>PS3626.A6393</skos:notation>
+      <skos:altLabel>PS3626.A6393</skos:altLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/ql737u55">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <!--rdf:datatype to be added-->
       <skos:notation>QL737.U55</skos:notation>
+      <skos:altLabel>QL737.U55</skos:altLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/ql5671u6">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <!--rdf:datatype to be added-->
       <skos:notation>QL567.1.U6</skos:notation>
+      <skos:altLabel>QL567.1.U6</skos:altLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
    </rdf:Description>
 </rdf:RDF>

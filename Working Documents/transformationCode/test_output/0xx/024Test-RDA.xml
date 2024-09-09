@@ -20,71 +20,68 @@
          xmlns:rdap="http://rdaregistry.info/Elements/p/"
          xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
          xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
          xmlns:rdaw="http://rdaregistry.info/Elements/w/"
          xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
          xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwf="http://universityOfWashington/functions"
          xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
-   <rdf:Description rdf:about="http://fakeIRI2.edu/024-test1wor">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/024-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/024-test1exp"/>
       <rdawd:P10002>024-test1wor</rdawd:P10002>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/024-test1exp">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/024-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/024-test1man"/>
-      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/024-test1wor"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/024-test1wor"/>
       <rdaed:P20002>024-test1exp</rdaed:P20002>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/024-test1man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/024-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/024-test1exp"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/024-test1exp"/>
       <fake:marcfield>F024 1# $z 5539143515</fake:marcfield>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d17e7"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d20e7"/>
       <fake:marcfield>F024 2# $a M570406203 $q score $q sewn $c EUR28.50</fake:marcfield>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d17e10"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d20e10"/>
       <rdamd:P30160>EUR28.50</rdamd:P30160>
       <fake:marcfield>F024 3# $a 99780449906200 $d 51000</fake:marcfield>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d17e19"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d20e19"/>
       <fake:marcfield>F024 41 $a 8756-2324(198603/04)65:21.4QTP;1-E</fake:marcfield>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d17e24"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d20e24"/>
       <fake:marcfield>F024 7# $a 0A3200912B4A1057$ $2 istc</fake:marcfield>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d17e27"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d20e27"/>
       <fake:marcfield>F024 8# $a abcdefghi</fake:marcfield>
       <rdamd:P30004>abcdefghi</rdamd:P30004>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d17e7">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d20e7">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdano:P80003 rdf:resource="http://fakeIRI2.edu/024-test1man"/>
       <rdand:P80068>5539143515</rdand:P80068>
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/identifiers/upc"/>
       <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d17e10">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d20e10">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdano:P80003 rdf:resource="http://fakeIRI2.edu/024-test1man"/>
       <rdand:P80068>M570406203</rdand:P80068>
       <rdand:P80071>score</rdand:P80071>
       <rdand:P80071>sewn</rdand:P80071>
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/identifiers/ismm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d17e19">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d20e19">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdano:P80003 rdf:resource="http://fakeIRI2.edu/024-test1man"/>
       <rdand:P80068>99780449906200</rdand:P80068>
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/identifiers/ean"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d17e24">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d20e24">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdano:P80003 rdf:resource="http://fakeIRI2.edu/024-test1man"/>
       <rdand:P80068>8756-2324(198603/04)65:21.4QTP;1-E</rdand:P80068>
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/identifiers/sici"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d17e27">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d20e27">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdano:P80003 rdf:resource="http://fakeIRI2.edu/024-test1man"/>
       <rdand:P80068>0A3200912B4A1057$</rdand:P80068>
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/istc"/>
    </rdf:Description>
