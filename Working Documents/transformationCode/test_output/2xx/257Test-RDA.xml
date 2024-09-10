@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
          xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
          xmlns:rdaa="http://rdaregistry.info/Elements/a/"
          xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
          xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
@@ -19,33 +20,47 @@
          xmlns:rdap="http://rdaregistry.info/Elements/p/"
          xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
          xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
          xmlns:rdaw="http://rdaregistry.info/Elements/w/"
          xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
          xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-   <rdf:Description rdf:about="http://fakeIRI2.edu/257-test1wor">
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwf="http://universityOfWashington/functions"
+         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/257-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/257-test1exp"/>
       <rdawd:P10002>257-test1wor</rdawd:P10002>
+      <fake:marcfield>F257 ## $a Germany $0 http://id.loc.gov/authorities/names/n80125931 $1 http://id.loc.gov/rwo/agents/n80125931 $2 naf</fake:marcfield>
+      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/place/naf/germany"/>
+      <rdawo:P10316 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/e-gx"/>
+      <rdawo:P10316 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/e-gx"/>
+      <fake:marcfield>F257 ## $a Italy ; France.</fake:marcfield>
+      <rdawd:P10316>Italy ; France.</rdawd:P10316>
+      <fake:marcfield>F257 ## $a Wisconsin $0 http://id.loc.gov/authorities/names/n79022855-781 $1 https://www.wikidata.org/wiki/Q1537</fake:marcfield>
+      <rdawd:P10316>Wisconsin</rdawd:P10316>
+      <!--Geographic Area Code could not be retrieved from http://id.loc.gov/authorities/names/n79022855-781-->
+      <rdawo:P10316 rdf:resource="https://www.wikidata.org/wiki/Q1537"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/257-test1exp">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/257-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/257-test1man"/>
-      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/257-test1wor"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/257-test1wor"/>
       <rdaed:P20002>257-test1exp</rdaed:P20002>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/257-test1man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/257-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/257-test1exp"/>
-      <rdamd:P30086 rdf:datatype="http://id.loc.gov/vocabulary/subjectSchemes/naf">Germany</rdamd:P30086>
-      <rdam:P30086>http://id.loc.gov/authorities/names/n80125931</rdam:P30086>
-      <rdamd:P30086>Italy ; France.</rdamd:P30086>
-      <rdamd:P30086>Wisconsin</rdamd:P30086>
-      <rdamo:P30086>
-         <rdf:Description rdf:about="https://www.wikidata.org/wiki/Q1537">
-            <rdap:P70057>http://id.loc.gov/authorities/names/n79022855-781</rdap:P70057>
-         </rdf:Description>
-      </rdamo:P30086>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/257-test1exp"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/naf/germany">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Germany</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/naf/germany">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70019 rdf:resource="http://marc2rda.edu/fake/pla/nom/naf/germany"/>
    </rdf:Description>
 </rdf:RDF>

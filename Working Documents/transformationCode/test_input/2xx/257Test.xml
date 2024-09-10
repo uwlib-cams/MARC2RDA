@@ -8,6 +8,7 @@
         <marc:datafield tag="257" ind1=" " ind2=" ">
             <marc:subfield code="a">Germany</marc:subfield>
             <marc:subfield code="0">http://id.loc.gov/authorities/names/n80125931</marc:subfield>
+            <marc:subfield code="1">http://id.loc.gov/rwo/agents/n80125931</marc:subfield>
             <marc:subfield code="2">naf</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="257" ind1=" " ind2=" ">
