@@ -356,7 +356,7 @@
                     </xsl:choose>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:comment>Unable to parse 040 $0 value of {.}</xsl:comment>
+                    <xsl:comment>Unable to parse 043 $0 value of {.}</xsl:comment>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:for-each>
@@ -368,7 +368,7 @@
                 <xsl:when test="contains(., 'id.loc.gov/authorities/names/')">
                     <xsl:variable name="gac" select="uwf:lcNamesToGeographicAreas(.)"/>
                     <xsl:choose>
-                        <xsl:when test="$gac">
+                        <xsl:when test="$gac != ''">
                             <rdawo:P10321 rdf:resource="{concat('http://id.loc.gov/vocabulary/geographicAreas/', replace($gac,'-+$',''))}"/>
                         </xsl:when>
                         <xsl:otherwise>
@@ -384,7 +384,7 @@
                     <xsl:variable name="authorityFile" select="concat('http://id.loc.gov/authorities/names/', $id)"/>
                     <xsl:variable name="gac" select="uwf:lcNamesToGeographicAreas($authorityFile)"/>
                     <xsl:choose>
-                        <xsl:when test="$gac">
+                        <xsl:when test="$gac != ''">
                             <rdawo:P10321 rdf:resource="{concat('http://id.loc.gov/vocabulary/geographicAreas/', replace($gac,'-+$',''))}"/>
                         </xsl:when>
                         <xsl:otherwise>

@@ -41,7 +41,7 @@
       <rdawd:P10321 rdf:resource="http://marc2rda.edu/fake/place/iso3166/us"/>
       <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-usm"/>
       <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us"/>
-      <!--Unable to parse 040 $0 value of test-->
+      <!--Unable to parse 043 $0 value of test-->
       <rdawo:P10321 rdf:resource="http://www.wikidata.org/wiki/Q30"/>
       <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/e-gx"/>
    </rdf:Description>
