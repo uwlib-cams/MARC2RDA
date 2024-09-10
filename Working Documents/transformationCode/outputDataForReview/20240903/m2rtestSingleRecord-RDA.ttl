@@ -1,4 +1,3 @@
-@prefix ex: <http://fakeIRI2.edu/> .
 @prefix fake: <http://fakePropertiesForDemo> .
 @prefix rdaad: <http://rdaregistry.info/Elements/a/datatype/> .
 @prefix rdaed: <http://rdaregistry.info/Elements/e/datatype/> .
@@ -14,7 +13,7 @@
 @prefix rdawo: <http://rdaregistry.info/Elements/w/object/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-ex:1423078359man a <http://rdaregistry.info/Elements/c/C10007> ;
+<http://marc2rda.edu/fake/1423078359man> a <http://rdaregistry.info/Elements/c/C10007> ;
     fake:marcfield "F024 7# $a 1773/49682 $2 hdl",
         "F245 10 $a Patterns and drivers of conifer regeneration following stand-replacing wildfire across western Cascadia / $c Madison Marie Laughlin.",
         "F264 #1 $a [Seattle] : $b [University of Washington Libraries], $c [2022]",
@@ -52,13 +51,15 @@ ex:1423078359man a <http://rdaregistry.info/Elements/c/C10007> ;
     rdamd:P30456 "black and white",
         "color" ;
     rdamo:P30004 <http://marc2rda.edu/fake/nom/d20e30> ;
-    rdamo:P30139 ex:1423078359exp .
+    rdamo:P30139 <http://marc2rda.edu/fake/1423078359exp> .
 
-ex:1423078359exp a <http://rdaregistry.info/Elements/c/C10006> ;
+<http://marc2rda.edu/fake/1423078359exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    fake:marcfield "F520 3# $a Tree regeneration is a critical mechanism of forest resilience to stand-replacing wildfire. Post-fire tree regeneration dynamics have been relatively well-studied in historically fire-frequent forests across western North America, though are understudied within forests characterized by infrequent and severe fire regimes like those of the western Cascades in Washington and Oregon, USA (western Cascadia). Recent wildfire activity (2015-2020) in western Cascadia has provided a unique opportunity to address this knowledge gap. Here, we asked: how is post-fire conifer regeneration across western Cascadia affected by pre-fire stand age, burn-patch size, and topo-climatic conditions? We established 39 1-hectare long-term monitoring plots across strata of pre-fire stand age and forest zone in four wildfires in western Cascadia. At each plot, we collected data on post-fire conifer species composition and abundance. We used generalized linear models to test how conifer establishment rates (seedlings ha-1yr-1 above 10 cm) and regeneration rates (seedlings ha-1yr-1 of all heights) responded to pre-fire stand age/seral stage, distance to the nearest live seed source, and post-fire topo-climatic conditions. Conifer regeneration rates and tree species richness increased with pre-fire stand age/seral stage, regeneration rates decreased with greater distances to the nearest live seed source but were present out to 450 m, and establishment rates were greater in areas characterized by cooler and wetter macrosite (e.g. greater post-fire precipitation) and microsite (e.g., greater bryophyte ground cover) conditions. In general, initial seedling densities suggest that post-fire regeneration is abundant following stand-replacing fire in most areas across the region. For example, regeneration and establishment rates were above forest practice minimum density thresholds (i.e., 470 seedlings per ha) in 82.1% and 64.1% of plots, respectively. Our study provides critical insight on the drivers of post-fire tree regeneration following stand-replacing wildfires in western Cascadia, and informs what factors are likely to support greater forest resilience to fire. Our findings can help inform land management strategies for post-fire responses which is of critical importance under the uncertainties of climate change and fire in infrequent, stand-replacing fire regimes." ;
     rdaed:P20002 "1423078359exp" ;
-    rdaeo:P20231 ex:1423078359wor .
+    rdaed:P20069 "Abstract: Tree regeneration is a critical mechanism of forest resilience to stand-replacing wildfire. Post-fire tree regeneration dynamics have been relatively well-studied in historically fire-frequent forests across western North America, though are understudied within forests characterized by infrequent and severe fire regimes like those of the western Cascades in Washington and Oregon, USA (western Cascadia). Recent wildfire activity (2015-2020) in western Cascadia has provided a unique opportunity to address this knowledge gap. Here, we asked: how is post-fire conifer regeneration across western Cascadia affected by pre-fire stand age, burn-patch size, and topo-climatic conditions? We established 39 1-hectare long-term monitoring plots across strata of pre-fire stand age and forest zone in four wildfires in western Cascadia. At each plot, we collected data on post-fire conifer species composition and abundance. We used generalized linear models to test how conifer establishment rates (seedlings ha-1yr-1 above 10 cm) and regeneration rates (seedlings ha-1yr-1 of all heights) responded to pre-fire stand age/seral stage, distance to the nearest live seed source, and post-fire topo-climatic conditions. Conifer regeneration rates and tree species richness increased with pre-fire stand age/seral stage, regeneration rates decreased with greater distances to the nearest live seed source but were present out to 450 m, and establishment rates were greater in areas characterized by cooler and wetter macrosite (e.g. greater post-fire precipitation) and microsite (e.g., greater bryophyte ground cover) conditions. In general, initial seedling densities suggest that post-fire regeneration is abundant following stand-replacing fire in most areas across the region. For example, regeneration and establishment rates were above forest practice minimum density thresholds (i.e., 470 seedlings per ha) in 82.1% and 64.1% of plots, respectively. Our study provides critical insight on the drivers of post-fire tree regeneration following stand-replacing wildfires in western Cascadia, and informs what factors are likely to support greater forest resilience to fire. Our findings can help inform land management strategies for post-fire responses which is of critical importance under the uncertainties of climate change and fire in infrequent, stand-replacing fire regimes." ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/1423078359wor> .
 
-ex:1423078359wor a <http://rdaregistry.info/Elements/c/C10001> ;
+<http://marc2rda.edu/fake/1423078359wor> a <http://rdaregistry.info/Elements/c/C10001> ;
     fake:marcfield "F245 10 $a Patterns and drivers of conifer regeneration following stand-replacing wildfire across western Cascadia / $c Madison Marie Laughlin.",
         "F502 ## $b M.S. $c University of Washington $d 2022",
         "F650 #0 $a Conifers $x Effect of fires on $z Cascades (Or. and Wash.)",
