@@ -628,9 +628,9 @@
                 </rdamd:P30280>
             </xsl:if>
             <xsl:if test="@code = 'g'">
-                <rdamd:P30280>
-                    <xsl:text>©{.}</xsl:text>
-                </rdamd:P30280>
+                <rdamd:P30007>
+                    <xsl:value-of select="."/>
+                </rdamd:P30007>
             </xsl:if>
             <xsl:if test="@code = 'i'">
                 <rdamd:P30011>

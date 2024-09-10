@@ -659,14 +659,14 @@
         mode="man">
         <xsl:param name="baseIRI"/>
         <xsl:call-template name="getmarc"/>
-        <rdamd:P30137>
-            <xsl:call-template name="F542-xx-abcdefghijklmnopqrsu3"/>
-        </rdamd:P30137>
         <xsl:choose>
             <xsl:when test="@ind1 = '0'">
                 <rdamo:P30462 rdf:resource="{uwf:metaWorIRI(.)}"/>
             </xsl:when>
             <xsl:otherwise>
+                <rdamd:P30137>
+                    <xsl:call-template name="F542-xx-abcdefghijklmnopqrsu3"/>
+                </rdamd:P30137>
                 <xsl:call-template name="F542-1x-e_f_g_i_j_p"/>
             </xsl:otherwise>
         </xsl:choose>

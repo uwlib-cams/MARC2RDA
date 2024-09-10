@@ -37,10 +37,6 @@
             <marc:subfield code="o">20061213</marc:subfield>
             <marc:subfield code="r">US</marc:subfield>
             <marc:subfield code="3">Performance</marc:subfield>
-        </marc:datafield>
-        <marc:datafield tag="542" ind1=" " ind2=" ">
-            
-        </marc:datafield>
-        
+        </marc:datafield>       
     </marc:record>
 </marc:collection>
