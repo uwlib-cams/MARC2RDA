@@ -40,11 +40,11 @@
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/520-testwor"/>
       <rdaed:P20002>520-testexp</rdaed:P20002>
       <fake:marcfield>F520 3# $a This study assesses the formation process of the International Criminal Court.  $b lexile. $u http://www.loc.gov/hlas $c Source other than Library of Congress.</fake:marcfield>
-      <rdae:P20069>"Abstract: "This study assesses the formation process of the International Criminal Court. ; lexile.;  "URI: " http://www.loc.gov/hlas;  "(Assigned by: " Source other than Library of Congress. " )"</rdae:P20069>
+      <rdaed:P20069>Abstract: This study assesses the formation process of the International Criminal Court. ; lexile.; URI: http://www.loc.gov/hlas; (Assigned by: Source other than Library of Congress.)</rdaed:P20069>
       <fake:marcfield>F520 4# $a This study assesses the formation process of the International Criminal Court.  $b lexile. $2 pegi</fake:marcfield>
-      <rdae:P20069>"Content advice: "This study assesses the formation process of the International Criminal Court. ; lexile. "(Classification source: "Pan-Eurpoean Game Information (PEGI) age rating system ")"</rdae:P20069>
+      <rdaed:P20069>Content advice: This study assesses the formation process of the International Criminal Court. ; lexile.(Classification source: Pan-European Game Information (PEGI) age rating system)</rdaed:P20069>
       <fake:marcfield>F880 ## $6 520-00 $a Test 880</fake:marcfield>
-      <rdae:P20069>Test 880</rdae:P20069>
+      <rdaed:P20069>Test 880</rdaed:P20069>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/520-testman">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>

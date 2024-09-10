@@ -147,28 +147,22 @@
     
     <!--520-->
     <xsl:template name="F520-xx-abcu23" expand-text="yes">
-        <xsl:if test="@ind1 = '#'">
-            <xsl:text> </xsl:text>
-        </xsl:if>
         <xsl:if test="@ind1 = '0'">
-            <xsl:text>"Subject: "</xsl:text>
+            <xsl:text>Subject: </xsl:text>
         </xsl:if>
         <xsl:if test="@ind1 = '1'">
-            <xsl:text>"Review: "</xsl:text>
+            <xsl:text>Review: </xsl:text>
         </xsl:if>
         <xsl:if test="@ind1 = '2'">
-            <xsl:text>"Scope and content: "</xsl:text>
+            <xsl:text>Scope and content: </xsl:text>
         </xsl:if>
         <xsl:if test="@ind1 = '3'">
-            <xsl:text>"Abstract: "</xsl:text>
+            <xsl:text>Abstract: </xsl:text>
         </xsl:if>
         <xsl:if test="@ind1 = '4'">
-            <xsl:text>"Content advice: "</xsl:text>
+            <xsl:text>Content advice: </xsl:text>
         </xsl:if>
-        <xsl:if test="@ind1 = '8'">
-            <xsl:text> </xsl:text>
-        </xsl:if>      
-        <xsl:for-each select= "marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'u'] | marc:subfield[@code = '3']">
+        <xsl:for-each select= "marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'u']">
             <xsl:if test ="@code = 'a'">
                 <xsl:text>{.}</xsl:text>
             </xsl:if>
@@ -176,39 +170,38 @@
                 <xsl:text>{.}</xsl:text>
             </xsl:if>
             <xsl:if test="@code='u'">
-                <xsl:text> "URI: " {.}</xsl:text>
+                <xsl:text>URI: {.}</xsl:text>
             </xsl:if>
             <xsl:if test="@code = 'c'">
-                <xsl:text> "(Assigned by: " {.} " )"</xsl:text>
+                <xsl:text>(Assigned by: {.})</xsl:text>
             </xsl:if>
             <xsl:if test="position() != last()">
                 <xsl:text>; </xsl:text>
             </xsl:if>
         </xsl:for-each>
         <xsl:if test="marc:subfield[@code = '3']">
-            <xsl:text> "(Applies to: "{.} " )"</xsl:text>
+            <xsl:text> (Applies to: {marcsubfield[@code='3']})</xsl:text>
         </xsl:if>
-        <xsl:variable name="casourcecodes">
-            <xsl:choose>
-               <xsl:when test="marc:subfield[@code='2']='ausla'">
-                   <xsl:text>Austalian classification (Department of Infrastructure, Transport, Regional Development, Communications and the Arts)</xsl:text>
-                   </xsl:when>
-               <xsl:when test="marc:subfield[@code='2']='bbfc'">
-                   <xsl:text>Britsh Board of Film classification</xsl:text>
-               </xsl:when>
-               <xsl:when test="marc:subfield[@code='2']='mpaa'">
-                  <xsl:text>Motion Picture Association of America film ratings</xsl:text>
-               </xsl:when>
-               <xsl:when test="marc:subfield[@code='2']='pegi'">
-                  <xsl:text>Pan-Eurpoean Game Information (PEGI) age rating system</xsl:text>
-               </xsl:when>
-            </xsl:choose>
-        </xsl:variable>
         <xsl:for-each select="marc:subfield[@code='2']">
-            <xsl:text> "(Classification source: "</xsl:text>
-            <xsl:value-of select ="$casourcecodes"/>
-            <xsl:text> ")"</xsl:text>
-        </xsl:for-each>
+                <xsl:variable name="casourcecodes">
+                        <xsl:if test="text() = 'ausla'">
+                            <xsl:text>Australian classification (Department of Infrastructure, Transport, Regional Development, Communications and the Arts)</xsl:text>
+                        </xsl:if>
+                        <xsl:if test="text() = 'bbfc'">
+                            <xsl:text>Britsh Board of Film classification</xsl:text>
+                        </xsl:if>
+                        <xsl:if test="text() ='mpaa'">
+                            <xsl:text>Motion Picture Association of America film ratings</xsl:text>
+                        </xsl:if>
+                        <xsl:if test="text() ='pegi'">
+                            <xsl:text>Pan-European Game Information (PEGI) age rating system</xsl:text>
+                        </xsl:if>                   
+                </xsl:variable>
+                <xsl:text>(Classification source: </xsl:text>
+                <xsl:value-of select ="$casourcecodes"/>
+                <xsl:text>)</xsl:text>
+        </xsl:for-each>        
+        
     </xsl:template>
      
     <!-- 521 -->
