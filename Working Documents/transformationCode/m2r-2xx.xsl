@@ -39,18 +39,53 @@
         </xsl:variable>
         <xsl:choose>
             <xsl:when test="marc:subfield[@code = 'a']">
-                <xsl:for-each select="marc:subfield[@code='a']">
-                    <rdawd:P10088>
-                        <xsl:choose>
-                            <xsl:when test="$isISBD = true()">
-                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:value-of select="uwf:removeBrackets(.)"/>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </rdawd:P10088>
-                </xsl:for-each>
+                <xsl:choose>
+                    <xsl:when test="marc:subfield[@code = 'a'][not(following-sibling::*)] or
+                        marc:subfield[@code = 'a']/following-sibling::marc:subfield[1][not(@code = 'n' or @code = 'p' or @code = 's')]">
+                        <xsl:for-each select="marc:subfield[@code='a']">
+                            <rdawd:P10088>
+                                <xsl:choose>
+                                    <xsl:when test="$isISBD = true()">
+                                        <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:value-of select="uwf:removeBrackets(.)"/>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </rdawd:P10088>
+                        </xsl:for-each>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:variable name="title">
+                            <xsl:choose>
+                                <!-- remove ISBD punctuation if ISBD -->
+                                <xsl:when test="$isISBD = true()">
+                                    <xsl:value-of select="normalize-space(marc:subfield[@code = 'a']) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                    <xsl:text> </xsl:text>
+                                    <xsl:for-each select="marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::*[@code = 'b'])]">
+                                        <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                        <xsl:if test="position() != last()">
+                                            <xsl:text> </xsl:text>
+                                        </xsl:if>
+                                    </xsl:for-each>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="uwf:removeBrackets(marc:subfield[@code = 'a'])"/>
+                                    <xsl:text> </xsl:text>
+                                    <xsl:for-each select="marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::*[@code = 'b'])]">
+                                        <xsl:value-of select="uwf:removeBrackets(.)"/>
+                                        <xsl:if test="position() != last()">
+                                            <xsl:text> </xsl:text>
+                                        </xsl:if>
+                                    </xsl:for-each>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:variable>
+                        <rdawd:P10088>
+                            <xsl:value-of select="uwf:removeBrackets($title)"/>
+                        </rdawd:P10088>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:variable name="title">
@@ -67,7 +102,7 @@
                     <xsl:choose>
                         <!-- remove ISBD punctuation if ISBD -->
                         <xsl:when test="$isISBD = true()">
-                            <xsl:value-of select="replace($title, '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                            <xsl:value-of select="normalize-space($title) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:value-of select="uwf:removeBrackets($title)"/>
