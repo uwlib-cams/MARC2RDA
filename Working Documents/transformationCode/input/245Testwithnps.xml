@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+   
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test00</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">Collection series.</marc:subfield>
+            <marc:subfield code="n">50,</marc:subfield>
+            <marc:subfield code="p">Shakespeare music :</marc:subfield>
+            <marc:subfield code="b">love songs on the lute.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test01</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">English historical linguistics :</marc:subfield>
+            <marc:subfield code="b">an international handbook.</marc:subfield>
+            <marc:subfield code="n">Volume 1 /</marc:subfield>
+            <marc:subfield code="c">Alexander Bergs, Laurel J. Brinton.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test02</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="4">
+            <marc:subfield code="a">The Letters of William Cullen Bryant</marc:subfield>
+            <marc:subfield code="b">Volume VI, 1872-1878 /</marc:subfield>
+            <marc:subfield code="n">Volume VI,</marc:subfield>
+            <marc:subfield code="p">1872-1878 /</marc:subfield>
+            <marc:subfield code="h">[electronic resource] :</marc:subfield>
+            <marc:subfield code="c">edited by William Cullen Bryant II and Thomas G. Voss.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test03</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Modern British playwriting.</marc:subfield>
+            <marc:subfield code="p">The 1960s :</marc:subfield>
+            <marc:subfield code="b">voices, documents, new interpretations /</marc:subfield>
+            <marc:subfield code="c">Steve Nicholson.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test00</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="4">
+            <marc:subfield code="a">The Letters of William Cullen Bryant</marc:subfield>
+            <marc:subfield code="b">Volume VI, 1872–1878 /</marc:subfield>
+            <marc:subfield code="n">Volume VI,</marc:subfield>
+            <marc:subfield code="p">1872-1878 /</marc:subfield>
+            <marc:subfield code="c">edited by William Cullen Bryant II and Thomas G. Voss.</marc:subfield>
+            <marc:subfield code="p">1872-1878 /</marc:subfield>
+            <marc:subfield code="n">Volume VI,</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test00</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Advances in visual computing :</marc:subfield>
+            <marc:subfield code="b">7th International Symposium, ISVC 2011, Las Vegas, NV, USA, September 26-28, 2011, proceedings.</marc:subfield>
+            <marc:subfield code="n">Part I /</marc:subfield>
+            <marc:subfield code="c">George Bebis [and others] (eds.).</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test31</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act.</marc:subfield>
+            <marc:subfield code="n">Part II,</marc:subfield>
+            <marc:subfield code="p">Labour unions =</marc:subfield>
+            <marc:subfield code="b">Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers.</marc:subfield>
+            <marc:subfield code="n">Partie II,</marc:subfield>
+            <marc:subfield code="p">Syndicats ouvriers.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

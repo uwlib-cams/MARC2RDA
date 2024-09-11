@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
+         xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwf="http://universityOfWashington/functions"
+         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test00wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test00wor</rdawd:P10002>
+      <fake:marcfield>F245 00 $a Collection series. $n 50, $p Shakespeare music : $b love songs on the lute.</fake:marcfield>
+      <rdawd:P10088>Collection series. 50, Shakespeare music</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test00exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/245-test00wor"/>
+      <rdaed:P20002>245-test00exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test00man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test00exp"/>
+      <fake:marcfield>F245 00 $a Collection series. $n 50, $p Shakespeare music : $b love songs on the lute.</fake:marcfield>
+      <rdamd:P30156>Collection series. 50, Shakespeare music</rdamd:P30156>
+      <rdamd:P30142>love songs on the lute.</rdamd:P30142>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test01wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test01wor</rdawd:P10002>
+      <fake:marcfield>F245 00 $a English historical linguistics : $b an international handbook. $n Volume 1 / $c Alexander Bergs, Laurel J. Brinton.</fake:marcfield>
+      <rdawd:P10088>English historical linguistics</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test01exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/245-test01wor"/>
+      <rdaed:P20002>245-test01exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test01man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test01exp"/>
+      <fake:marcfield>F245 00 $a English historical linguistics : $b an international handbook. $n Volume 1 / $c Alexander Bergs, Laurel J. Brinton.</fake:marcfield>
+      <rdamd:P30156>English historical linguistics</rdamd:P30156>
+      <rdamd:P30142>an international handbook. Volume 1</rdamd:P30142>
+      <rdamd:P30105>Alexander Bergs, Laurel J. Brinton.</rdamd:P30105>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test02wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test02wor</rdawd:P10002>
+      <fake:marcfield>F245 14 $a The Letters of William Cullen Bryant $b Volume VI, 1872-1878 / $n Volume VI, $p 1872-1878 / $h [electronic resource] : $c edited by William Cullen Bryant II and Thomas G. Voss.</fake:marcfield>
+      <rdawd:P10088>The Letters of William Cullen Bryant</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test02exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/245-test02wor"/>
+      <rdaed:P20002>245-test02exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test02man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test02exp"/>
+      <fake:marcfield>F245 14 $a The Letters of William Cullen Bryant $b Volume VI, 1872-1878 / $n Volume VI, $p 1872-1878 / $h [electronic resource] : $c edited by William Cullen Bryant II and Thomas G. Voss.</fake:marcfield>
+      <rdamd:P30156>The Letters of William Cullen Bryant</rdamd:P30156>
+      <rdamd:P30142>Volume VI, 1872-1878</rdamd:P30142>
+      <rdamd:P30105>Volume VI, 1872-1878</rdamd:P30105>
+      <rdamd:P30142>edited by William Cullen Bryant II and Thomas G. Voss.</rdamd:P30142>
+      <rdamd:P30335>electronic resource] :</rdamd:P30335>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test03wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test03wor</rdawd:P10002>
+      <fake:marcfield>F245 10 $a Modern British playwriting. $p The 1960s : $b voices, documents, new interpretations / $c Steve Nicholson.</fake:marcfield>
+      <rdawd:P10088>Modern British playwriting. The 1960s</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test03exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/245-test03wor"/>
+      <rdaed:P20002>245-test03exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test03man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test03exp"/>
+      <fake:marcfield>F245 10 $a Modern British playwriting. $p The 1960s : $b voices, documents, new interpretations / $c Steve Nicholson.</fake:marcfield>
+      <rdamd:P30156>Modern British playwriting. The 1960s</rdamd:P30156>
+      <rdamd:P30142>voices, documents, new interpretations</rdamd:P30142>
+      <rdamd:P30105>Steve Nicholson.</rdamd:P30105>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test00wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test00wor</rdawd:P10002>
+      <fake:marcfield>F245 14 $a The Letters of William Cullen Bryant $b Volume VI, 1872–1878 / $n Volume VI, $p 1872-1878 / $c edited by William Cullen Bryant II and Thomas G. Voss. $p 1872-1878 / $n Volume VI,</fake:marcfield>
+      <rdawd:P10088>The Letters of William Cullen Bryant</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test00exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/245-test00wor"/>
+      <rdaed:P20002>245-test00exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test00man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test00exp"/>
+      <fake:marcfield>F245 14 $a The Letters of William Cullen Bryant $b Volume VI, 1872–1878 / $n Volume VI, $p 1872-1878 / $c edited by William Cullen Bryant II and Thomas G. Voss. $p 1872-1878 / $n Volume VI,</fake:marcfield>
+      <rdamd:P30156>The Letters of William Cullen Bryant</rdamd:P30156>
+      <rdamd:P30142>Volume VI, 1872–1878</rdamd:P30142>
+      <rdamd:P30105>Volume VI, 1872-1878</rdamd:P30105>
+      <rdamd:P30105>1872-1878</rdamd:P30105>
+      <rdamd:P30105>Volume VI,</rdamd:P30105>
+      <rdamd:P30105>edited by William Cullen Bryant II and Thomas G. Voss.</rdamd:P30105>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test00wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test00wor</rdawd:P10002>
+      <fake:marcfield>F245 10 $a Advances in visual computing : $b 7th International Symposium, ISVC 2011, Las Vegas, NV, USA, September 26-28, 2011, proceedings. $n Part I / $c George Bebis [and others] (eds.).</fake:marcfield>
+      <rdawd:P10088>Advances in visual computing</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test00exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/245-test00wor"/>
+      <rdaed:P20002>245-test00exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test00man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test00exp"/>
+      <fake:marcfield>F245 10 $a Advances in visual computing : $b 7th International Symposium, ISVC 2011, Las Vegas, NV, USA, September 26-28, 2011, proceedings. $n Part I / $c George Bebis [and others] (eds.).</fake:marcfield>
+      <rdamd:P30156>Advances in visual computing</rdamd:P30156>
+      <rdamd:P30142>7th International Symposium, ISVC 2011, Las Vegas, NV, USA, September 26-28, 2011, proceedings. Part I</rdamd:P30142>
+      <rdamd:P30105>George Bebis [and others] (eds.).</rdamd:P30105>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test31wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test31wor</rdawd:P10002>
+      <fake:marcfield>F245 00 $a Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. $n Part II, $p Labour unions = $b Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers. $n Partie II, $p Syndicats ouvriers.</fake:marcfield>
+      <rdawd:P10088>Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. Part II, Labour unions</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test31exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/245-test31wor"/>
+      <rdaed:P20002>245-test31exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test31man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test31exp"/>
+      <fake:marcfield>F245 00 $a Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. $n Part II, $p Labour unions = $b Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers. $n Partie II, $p Syndicats ouvriers.</fake:marcfield>
+      <rdamd:P30156>Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. Part II, Labour unions</rdamd:P30156>
+      <rdamd:P30156>Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers. Partie II, Syndicats ouvriers.</rdamd:P30156>
+   </rdf:Description>
+</rdf:RDF>
