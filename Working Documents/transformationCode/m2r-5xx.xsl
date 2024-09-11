@@ -164,21 +164,19 @@
         <xsl:if test="marc:subfield[@code = 'd']">
             <rdawd:P10215>{replace(marc:subfield[@code = 'd'], '\.\s*$', '')}</rdawd:P10215>
         </xsl:if>
-        <rdawd:P10209>
-            <xsl:for-each
-                select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd']">
-                <xsl:value-of select="."/>
-                <xsl:if test="position() != last()">
-                    <xsl:text>; </xsl:text>
-                </xsl:if>
-            </xsl:for-each>
-        </rdawd:P10209>
-    </xsl:template>
-    <xsl:template
-        match="marc:datafield[@tag = '502'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '502']"
-        mode="man" expand-text="yes">
+        <xsl:if test="marc:subfield[@code = 'a'] or marc:subfield[@code = 'g']">
+            <rdawd:P10209>
+                <xsl:for-each
+                    select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'g']">
+                    <xsl:value-of select="."/>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>; </xsl:text>
+                    </xsl:if>
+                </xsl:for-each>
+            </rdawd:P10209>
+        </xsl:if>
         <xsl:for-each select="marc:subfield[@code = 'o']">
-            <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom/', '', '')}"/>
+            <rdawo:P10002 rdf:resource="{uwf:nomenIRI(., 'nom/', '', '')}"/>
         </xsl:for-each>
     </xsl:template>
     <xsl:template
@@ -189,7 +187,6 @@
             <rdf:Description rdf:about="{uwf:nomenIRI(., 'nom/', '', '')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>{replace(., '\.\s*$', '')}</rdand:P80068>
-                <rdano:P80048 rdf:resource="{$baseIRI||'man'}"/>
                 <rdand:P80078>Dissertation identifier</rdand:P80078>
             </rdf:Description>
         </xsl:for-each>
