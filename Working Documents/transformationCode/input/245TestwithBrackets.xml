@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test0</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">[James Anderson [junior] correspondence].</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test0</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="k">Letter,</marc:subfield>
+            <marc:subfield code="f">1901 March 6,</marc:subfield>
+            <marc:subfield code="b">Dublin, to Henrik Ibsen, Kristiana [Oslo].</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test1</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="4">
+            <marc:subfield code="a">The Shakespeare enigma :</marc:subfield>
+            <marc:subfield code="b">[unravelling the story of the two poets] /</marc:subfield>
+            <marc:subfield code="c">Peter Dawkins ; [foreword by Mark Rylance].</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test3</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">Cavendish and Shakespeare :</marc:subfield>
+            <marc:subfield code="b">interconnections /</marc:subfield>
+            <marc:subfield code="c">edited by Katherine Romack [and] James Fitzmaurice.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test4</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="4">
+            <marc:subfield code="a">Der Dey von Elba in Paris :</marc:subfield>
+            <marc:subfield code="b">Sendschreiben des Thürmers in der Hauptstadt an seinen Vetter Andres : Faksmilie [that is Faksimile] des Erstdrucks /</marc:subfield>
+            <marc:subfield code="c">herausgegeben und kommentiert von Wulf Segebrecht.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test5</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Sonnett für Wien :</marc:subfield>
+            <marc:subfield code="b">[songs of Erich Korngold].</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test6</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">Hamlet [2009] /</marc:subfield>
+            <marc:subfield code="c">the Royal Shakespeare Company ; producers, John Wyver, Sebastian Grant ; director, Gregory Doran ; Illuminations, RSC for BBC.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test10</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="4">
+            <marc:subfield code="a">The others raisd [sic] in me :</marc:subfield>
+            <marc:subfield code="b">150 readings of Sonnet 150 : a plunderverse project /</marc:subfield>
+            <marc:subfield code="c">by Gregory Betts.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test11</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Ferdinand's Comfort :</marc:subfield>
+            <marc:subfield code="b">for soprano, baritone and five instruments : [set of parts] /</marc:subfield>
+            <marc:subfield code="c">[music by] Kaijia Saariaho ; [lyrics from The Tempest by William Shakespeare].</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test12</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">'Message in a mobile'</marc:subfield>
+            <marc:subfield code="h">[electronic resource] =</marc:subfield>
+            <marc:subfield code="b">[Risālah fī jawāl] = Risaala fi jawaal : mixed-messages, tales of missing and mobile communities at the University of Khatroum /</marc:subfield>
+            <marc:subfield code="c">Siri Lamoureaux.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test13</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Lambe Latin :</marc:subfield>
+            <marc:subfield code="b">tales of a mantua maker and her brother, from the South Sea Co. to the Merchant of Venice / [by Angela Lorenz].</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test14</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">Shinkansen[star]rs Metal Macbeth /</marc:subfield>
+            <marc:subfield code="c">the original by William Shakespeare ; arrangement by Kankuro Kudo ; directed by Hidenori Inoue.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test15</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Kill Shakespeare.</marc:subfield>
+            <marc:subfield code="n">[Volume 1],</marc:subfield>
+            <marc:subfield code="p">A sea of troubles /</marc:subfield>
+            <marc:subfield code="c">created and written by Conor McCreery and Anthony Del Col ; art by Andy Belanger ; colors by Ian Herring ; lettering by Chris Mowry, Robbie Robbins, and Neil Uyetake.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test16</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Narrenlieder :</marc:subfield>
+            <marc:subfield code="b">nach Shakespeare &quot;Was ihr wollt&quot; : für Violincello [sic] solo, [1996/1997] /</marc:subfield>
+            <marc:subfield code="c">Tilo Medek.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test17</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Stony brook sounding[s].</marc:subfield>
+            <marc:subfield code="n">Vol. 1.</marc:subfield>
+        </marc:datafield>
+    </marc:record>  
+    
+    <marc:record>
+        <marc:leader>01299nam a2200349Ia 4500</marc:leader>
+        <marc:controlfield tag="001">245-test19</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">[Rhan o waith Mr. Rees Prichard ...</marc:subfield>
+            <marc:subfield code="h">[electronic resource]</marc:subfield>
+            <marc:subfield code="b">Some part of the works of Mr. Rees Prichard.]</marc:subfield>
+        </marc:datafield>
+    </marc:record>  
+    
+    <marc:record>
+        <marc:leader>01299nam a2200349Ia 4500</marc:leader>
+        <marc:controlfield tag="001">245-test19</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">[Rhan o waith Mr. Rees Prichard ...] : </marc:subfield>
+            <marc:subfield code="b">[= Some part of the works of Mr. Rees Prichard.]</marc:subfield>
+        </marc:datafield>
+    </marc:record>  
+    
+    <marc:record>
+        <marc:leader>01436cam a2200361 a 4500</marc:leader>
+        <marc:controlfield tag="001">245-test18</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">[New paintings by Franz Kline : </marc:subfield>
+            <marc:subfield code="b">opening ... December 4 to December 30, 1961 : at Sidney Janis 15 East 57 N Y].</marc:subfield>
+        </marc:datafield>
+    </marc:record>  
+    
+    
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test7</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">Shakespeare lecture series. Hamlet : structure, speeches, and staging : [acts III-IV] /</marc:subfield>
+            <marc:subfield code="c">produced by Bill Wisneski ; directed by Bill Wisneski and Chia Longtree.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test8</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">莎士比亚故事集 = Tales from shakespeare/#/莎士比亞故事集 = Tales from shakespeare [[shā shì bǐ yà gù shì jí  = Tales from shakespeare]]</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test9</marc:controlfield>    
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Visionary Shakespeare/#/Visionary Shakespeare [[The Visionary Shakespeare]]</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+</marc:collection>
