@@ -496,7 +496,7 @@
         <xsl:param name="string"/>
         <xsl:choose>
             <xsl:when test="uwf:testBrackets($string) = true()">
-                <xsl:value-of select="translate($string, '[]', '')"/>
+                <xsl:value-of select="replace($string, '(^\[)|(\][\W]*$)', '')"/>
             </xsl:when>
             <xsl:otherwise>
                <xsl:value-of select="$string"/>
