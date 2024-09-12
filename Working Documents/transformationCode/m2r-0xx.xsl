@@ -24,6 +24,7 @@
     xmlns:rdap="http://rdaregistry.info/Elements/p/"
     xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
     xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:fake="http://fakePropertiesForDemo" xmlns:uwf="http://universityOfWashington/functions"
     exclude-result-prefixes="marc ex uwf" version="3.0">
     
@@ -737,6 +738,80 @@
                 </xsl:if>
             </rdf:Description>
         </xsl:for-each>
+    </xsl:template>
+    
+    <!-- 080 - Universal Decimal Classification Number -->
+    <xsl:template match="marc:datafield[@tag = '080']" 
+        mode="wor" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
+        <xsl:variable name="scheme">
+            <xsl:choose>
+                <xsl:when test="@ind1 = '0'">
+                    <xsl:text>udcfull</xsl:text>
+                    <xsl:if test="marc:subfield[@code = '2']">
+                        <xsl:value-of select="marc:subfield[@code = '2'][1]"/>
+                    </xsl:if>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:text>udcabridged</xsl:text>
+                    <xsl:if test="marc:subfield[@code = '2']">
+                        <xsl:value-of select="marc:subfield[@code = '2'][1]"/>
+                    </xsl:if>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:variable name="ap">
+            <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'x']"/>
+        </xsl:variable>
+        <xsl:if test="marc:subfield[@code = 'a']">
+            <rdawo:P10256 rdf:resource="{uwf:conceptIRI($scheme, $ap)}"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '080']" 
+        mode="con" expand-text="yes">
+        <xsl:variable name="scheme">
+            <xsl:choose>
+                <xsl:when test="@ind1 = '0'">
+                    <xsl:text>udcfull</xsl:text>
+                    <xsl:if test="marc:subfield[@code = '2']">
+                        <xsl:value-of select="marc:subfield[@code = '2'][1]"/>
+                    </xsl:if>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:text>udcabridged</xsl:text>
+                    <xsl:if test="marc:subfield[@code = '2']">
+                        <xsl:value-of select="marc:subfield[@code = '2'][1]"/>
+                    </xsl:if>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:variable name="ap">
+            <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'x']"/>
+        </xsl:variable>
+        <xsl:if test="marc:subfield[@code = 'a']">
+            <rdf:Description rdf:about="{uwf:conceptIRI('', $ap)}">
+                <xsl:copy-of select="uwf:fillClassConcept('', $ap, $ap, '080')"/>
+                <skos:inScheme>
+                    <xsl:choose>
+                        <xsl:when test="@ind1 = '0'">
+                            <xsl:text>udc; full</xsl:text>
+                            <xsl:if test="marc:subfield[@code = '2']">
+                                <xsl:text>; </xsl:text>
+                                <xsl:value-of select="marc:subfield[@code = '2'][1]"/>
+                            </xsl:if>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:text>udc; abridged</xsl:text>
+                            <xsl:if test="marc:subfield[@code = '2']">
+                                <xsl:text>; </xsl:text>
+                                <xsl:value-of select="marc:subfield[@code = '2'][1]"/>
+                            </xsl:if>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </skos:inScheme>
+            </rdf:Description>
+        </xsl:if>
     </xsl:template>
     
     

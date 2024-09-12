@@ -244,7 +244,9 @@
                 <skos:inScheme rdf:resource="{concat('http://id.loc.gov/vocabulary/classSchemes/', lower-case($code2))}"/>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:comment>$2 value of {$code2} has been lost</xsl:comment>
+                <skos:inScheme>
+                    <xsl:value-of select="$code2"/>
+                </skos:inScheme>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
