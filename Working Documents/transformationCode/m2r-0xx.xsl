@@ -483,7 +483,7 @@
                     <xsl:value-of select="'lcc'"/>
                 </xsl:when>
                 <xsl:when test="@ind1 = '1'">
-                    <xsl:value-of select="'U.S. Dept. of Defense Classification'"/>
+                    <xsl:value-of select="'sudocs'"/>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:choose>
@@ -514,14 +514,13 @@
     
     <xsl:template match="marc:datafield[@tag = '052']" 
         mode="pla" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
         <xsl:variable name="source">
             <xsl:choose>
                 <xsl:when test="@ind1 = ' '">
                     <xsl:value-of select="'lcc'"/>
                 </xsl:when>
                 <xsl:when test="@ind1 = '1'">
-                    <xsl:value-of select="'U.S. Dept. of Defense Classification'"/>
+                    <xsl:value-of select="'sudocs'"/>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:choose>
@@ -566,14 +565,13 @@
     
     <xsl:template match="marc:datafield[@tag = '052']" 
         mode="nom" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
         <xsl:variable name="source">
             <xsl:choose>
                 <xsl:when test="@ind1 = ' '">
                     <xsl:value-of select="'lcc'"/>
                 </xsl:when>
                 <xsl:when test="@ind1 = '1'">
-                    <xsl:value-of select="'U.S. Dept. of Defense Classification'"/>
+                    <xsl:value-of select="'sudocs'"/>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:choose>

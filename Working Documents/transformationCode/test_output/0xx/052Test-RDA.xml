@@ -40,7 +40,7 @@
       <rdaw:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcc/4034r4"/>
       <rdaw:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcc/4034r8"/>
       <fake:marcfield>F052 1# $a BK $d Mostar</fake:marcfield>
-      <rdaw:P10321 rdf:resource="http://marc2rda.edu/fake/place/u.s.dept.ofdefenseclassification/bk"/>
+      <rdaw:P10321 rdf:resource="http://marc2rda.edu/fake/place/sudocs/bk"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/052-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -51,13 +51,11 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/052-test1exp"/>
    </rdf:Description>
-   <fake:marcfield>F052 ## $a 3810</fake:marcfield>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcc/3810">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>3810</rdand:P80068>
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
    </rdf:Description>
-   <fake:marcfield>F052 ## $a 4034 $b R4 $b R8</fake:marcfield>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcc/4034r4">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>4034R4</rdand:P80068>
@@ -68,23 +66,20 @@
       <rdand:P80068>4034R8</rdand:P80068>
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
    </rdf:Description>
-   <fake:marcfield>F052 1# $a BK $d Mostar</fake:marcfield>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/u.s.dept.ofdefenseclassification/bk">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/sudocs/bk">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>BK</rdand:P80068>
-      <!--$2 value of U.S. Dept. of Defense Classification has been lost-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/classSchemes/sudocs"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/u.s.dept.ofdefenseclassification/mostar">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/sudocs/mostar">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Mostar</rdand:P80068>
-      <!--$2 value of U.S. Dept. of Defense Classification has been lost-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/classSchemes/sudocs"/>
    </rdf:Description>
-   <fake:marcfield>F052 ## $a 3810</fake:marcfield>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcc/3810">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
       <rdapo:P70020 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcc/3810"/>
    </rdf:Description>
-   <fake:marcfield>F052 ## $a 4034 $b R4 $b R8</fake:marcfield>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcc/4034r4">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
       <rdapo:P70020 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcc/4034r4"/>
@@ -93,10 +88,9 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
       <rdapo:P70020 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcc/4034r8"/>
    </rdf:Description>
-   <fake:marcfield>F052 1# $a BK $d Mostar</fake:marcfield>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/u.s.dept.ofdefenseclassification/bk">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/sudocs/bk">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70020 rdf:resource="http://marc2rda.edu/fake/pla/nom/u.s.dept.ofdefenseclassification/bk"/>
-      <rdapo:P70018 rdf:resource="http://marc2rda.edu/fake/pla/nom/u.s.dept.ofdefenseclassification/mostar"/>
+      <rdapo:P70020 rdf:resource="http://marc2rda.edu/fake/pla/nom/sudocs/bk"/>
+      <rdapo:P70018 rdf:resource="http://marc2rda.edu/fake/pla/nom/sudocs/mostar"/>
    </rdf:Description>
 </rdf:RDF>
