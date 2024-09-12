@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test0</marc:controlfield>
+        <marc:datafield tag="100" ind1="0" ind2=" ">
+            <marc:subfield code="a">H. D.</marc:subfield>
+            <marc:subfield code="q">(Hilda Doolittle),</marc:subfield>
+            <marc:subfield code="d">1886-1961</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Gresham, G. A.</marc:subfield>
+            <marc:subfield code="q">(Geoffrey Austin)</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test0</marc:controlfield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Churchill, Winston,</marc:subfield>
+            <marc:subfield code="c">Sir,</marc:subfield>
+            <marc:subfield code="d">1874-1965.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test1</marc:controlfield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Ward, Humphrey,</marc:subfield>
+            <marc:subfield code="c">Mrs.,</marc:subfield>
+            <marc:subfield code="d">1851-1920.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test2</marc:controlfield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Boulanger, John,</marc:subfield>
+            <marc:subfield code="d">1965-</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test1</marc:controlfield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Luckombe, Philip</marc:subfield>
+            <marc:subfield code="d">d. 1803</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test1</marc:controlfield>
+        <marc:datafield tag="100" ind1="0" ind2=" ">
+            <marc:subfield code="a">Piri, Reis</marc:subfield>
+            <marc:subfield code="d">d. 1554?</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test1</marc:controlfield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Smith, John</marc:subfield>
+            <marc:subfield code="d">1882 Aug. 5-</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

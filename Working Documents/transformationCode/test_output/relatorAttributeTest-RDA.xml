@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
+         xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwf="http://universityOfWashington/functions"
+         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test0wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>relator-test0wor</rdawd:P10002>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age/d20e6-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d20e6"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age/d20e13-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d20e13"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test0exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test0wor"/>
+      <rdaed:P20002>relator-test0exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test0man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test0exp"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d20e6">
+      <fake:marcfield>F100 0# $a H. D. $q (Hilda Doolittle), $d 1886-1961</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>H. D. (Hilda Doolittle), 1886-1961</rdaad:P50377>
+      <rdaad:P50347>1886-1961</rdaad:P50347>
+      <rdaad:P50121>1886</rdaad:P50121>
+      <rdaad:P50120>1961</rdaad:P50120>
+      <rdaad:P50115>Hilda Doolittle</rdaad:P50115>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d20e13">
+      <fake:marcfield>F100 1# $a Gresham, G. A. $q (Geoffrey Austin)</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Gresham, G. A. (Geoffrey Austin)</rdaad:P50377>
+      <rdaad:P50115>Geoffrey Austin</rdaad:P50115>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test0wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>relator-test0wor</rdawd:P10002>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age/d20e22-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d20e22"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test0exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test0wor"/>
+      <rdaed:P20002>relator-test0exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test0man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test0exp"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d20e22">
+      <fake:marcfield>F100 1# $a Churchill, Winston, $c Sir, $d 1874-1965.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Churchill, Winston, Sir, 1874-1965.</rdaad:P50377>
+      <rdaad:P50347>1874-1965.</rdaad:P50347>
+      <rdaad:P50121>1874</rdaad:P50121>
+      <rdaad:P50120>1965</rdaad:P50120>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>relator-test1wor</rdawd:P10002>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age/d20e33-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d20e33"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test1wor"/>
+      <rdaed:P20002>relator-test1exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test1exp"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d20e33">
+      <fake:marcfield>F100 1# $a Ward, Humphrey, $c Mrs., $d 1851-1920.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Ward, Humphrey, Mrs., 1851-1920.</rdaad:P50377>
+      <rdaad:P50347>1851-1920.</rdaad:P50347>
+      <rdaad:P50121>1851</rdaad:P50121>
+      <rdaad:P50120>1920</rdaad:P50120>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test2wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>relator-test2wor</rdawd:P10002>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age/d20e44-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d20e44"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test2exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test2wor"/>
+      <rdaed:P20002>relator-test2exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test2man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test2exp"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d20e44">
+      <fake:marcfield>F100 1# $a Boulanger, John, $d 1965-</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Boulanger, John, 1965-</rdaad:P50377>
+      <rdaad:P50347>1965-</rdaad:P50347>
+      <rdaad:P50121>1965</rdaad:P50121>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>relator-test1wor</rdawd:P10002>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age/d20e53-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d20e53"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test1wor"/>
+      <rdaed:P20002>relator-test1exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test1exp"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d20e53">
+      <fake:marcfield>F100 1# $a Luckombe, Philip $d d. 1803</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Luckombe, Philip d. 1803</rdaad:P50377>
+      <rdaad:P50347>d. 1803</rdaad:P50347>
+      <rdaad:P50120>1803</rdaad:P50120>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>relator-test1wor</rdawd:P10002>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age/d20e62-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d20e62"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test1wor"/>
+      <rdaed:P20002>relator-test1exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test1exp"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d20e62">
+      <fake:marcfield>F100 0# $a Piri, Reis $d d. 1554?</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Piri, Reis d. 1554?</rdaad:P50377>
+      <rdaad:P50347>d. 1554?</rdaad:P50347>
+      <rdaad:P50120>1554?</rdaad:P50120>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>relator-test1wor</rdawd:P10002>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age/d20e71-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d20e71"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test1wor"/>
+      <rdaed:P20002>relator-test1exp</rdaed:P20002>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test1exp"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d20e71">
+      <fake:marcfield>F100 1# $a Smith, John $d 1882 Aug. 5-</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Smith, John 1882 Aug. 5-</rdaad:P50377>
+      <rdaad:P50347>1882 Aug. 5-</rdaad:P50347>
+      <rdaad:P50121>1882 Aug. 5</rdaad:P50121>
+   </rdf:Description>
+</rdf:RDF>

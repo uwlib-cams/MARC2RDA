@@ -198,8 +198,7 @@
     <!-- agent template -->
     <xsl:template
         match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] 
-        | marc:datafield[@tag = '700'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '710'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '711'][not(marc:subfield[@code = 't'])] 
-        | marc:datafield[@tag = '720']"
+        | marc:datafield[@tag = '700'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '710'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '711'][not(marc:subfield[@code = 't'])]"
         mode="age">
         <xsl:param name="baseIRI"/>
         <!-- get agentIRI and set up rdf:Description for that agent -->
@@ -224,6 +223,11 @@
                                     </rdaad:P50377>
                                 <!--</xsl:otherwise>
                             </xsl:choose>-->
+                            <!-- If we minted the IRI - add additional details -->
+                            <xsl:if test="starts-with(uwf:agentIRI(.), $BASE)">
+                                <xsl:call-template name="FX00-x1-d"/>
+                                <xsl:call-template name="FX00-x1-q"/>
+                            </xsl:if>
                         </xsl:when>
                         <xsl:when test="@ind1 = '3'">
                             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10008"/>

@@ -938,4 +938,56 @@
         </xsl:choose>
     </xsl:template>
     
+    
+    <!-- Attributes -->
+    <xsl:template name="FX00-x1-d">
+        <xsl:for-each select="marc:subfield[@code = 'd']">
+            <rdaad:P50347>
+                <xsl:value-of select="."/>
+            </rdaad:P50347>
+            <xsl:choose>
+                <xsl:when test="contains(., '-')">
+                    <rdaad:P50121>
+                        <xsl:value-of select="normalize-space(substring-before(., '-'))"/>
+                    </rdaad:P50121>
+                    <xsl:if test="not(ends-with(normalize-space(.), '-'))">
+                        <rdaad:P50120>
+                            <xsl:value-of select="replace(normalize-space(substring-after(., '-')),  '\.$', '')"/>
+                        </rdaad:P50120>
+                    </xsl:if>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:if test="contains(normalize-space(.), 'b.')">
+                        <rdaad:P50121>
+                            <xsl:value-of select="replace(normalize-space(substring-after(., 'b.')),  '\.$', '')"/>
+                        </rdaad:P50121>
+                    </xsl:if>
+                    <xsl:if test="contains(normalize-space(.), 'born')">
+                        <rdaad:P50121>
+                            <xsl:value-of select="replace(normalize-space(substring-after(., 'born')),  '\.$', '')"/>
+                        </rdaad:P50121>
+                    </xsl:if>
+                    <xsl:if test="contains(normalize-space(.), 'd.')">
+                        <rdaad:P50120>
+                            <xsl:value-of select="replace(normalize-space(substring-after(., 'd.')),  '\.$', '')"/>
+                        </rdaad:P50120>
+                    </xsl:if>
+                    <xsl:if test="contains(normalize-space(.), 'died')">
+                        <rdaad:P50120>
+                            <xsl:value-of select="replace(normalize-space(substring-after(., 'died')),  '\.$', '')"/>
+                        </rdaad:P50120>
+                    </xsl:if>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template name="FX00-x1-q">
+        <xsl:for-each select="marc:subfield[@code = 'q']">
+            <rdaad:P50115>
+                <xsl:value-of select="normalize-space(.) => replace('^\(', '') => replace('\)[\.,]*$', '')"/>
+            </rdaad:P50115>
+        </xsl:for-each>
+    </xsl:template>
+    
 </xsl:stylesheet>
