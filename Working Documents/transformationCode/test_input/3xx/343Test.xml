@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">343-test1</marc:controlfield>
+        <marc:datafield tag="343" ind1=" " ind2=" ">
+            <marc:subfield code="a">Coordinate pair;</marc:subfield>
+            <marc:subfield code="e">30.0;</marc:subfield>
+            <marc:subfield code="f">0.0001;</marc:subfield>
+            <marc:subfield code="g">Degrees, minutes and decimal seconds;</marc:subfield>
+            <marc:subfield code="h">North;</marc:subfield>
+            <marc:subfield code="b">U.S. feet.</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="343" ind1=" " ind2=" ">
+            <marc:subfield code="a">Coordinate pair;</marc:subfield>
+            <marc:subfield code="b">meters;</marc:subfield>
+            <marc:subfield code="c">22;</marc:subfield>
+            <marc:subfield code="d">22.</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">343-00/</marc:subfield>
+            <marc:subfield code="i">Magnetic.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

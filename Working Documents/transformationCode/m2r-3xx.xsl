@@ -164,6 +164,48 @@
         <xsl:call-template name="F340-concept"/>
     </xsl:template>
     
+    <!-- 343 - Planar Coordinate Data  -->
+    
+    <xsl:template match="marc:datafield[@tag = '343'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '343']"
+        mode="exp" expand-text="yes">
+        <rdaed:P20071>
+            <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
+                | marc:subfield[@code = 'd'] | marc:subfield[@code = 'e'] | marc:subfield[@code = 'f']
+                | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h'] | marc:subfield[@code = 'i']">
+                <xsl:if test="@code = 'a'">
+                    <xsl:text>Planar coordinate encoding method: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'b'">
+                    <xsl:text>Planar distance units: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'c'">
+                    <xsl:text>Abscissa resolution: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'd'">
+                    <xsl:text>Ordinate resolution: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'e'">
+                    <xsl:text>Distance resolution: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'f'">
+                    <xsl:text>Bearing resolution: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'g'">
+                    <xsl:text>Bearing units: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'h'">
+                    <xsl:text>Bearing reference direction: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'i'">
+                    <xsl:text>Bearing reference meridian: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="position() != last()">
+                    <xsl:text> </xsl:text>
+                </xsl:if>
+            </xsl:for-each>
+        </rdaed:P20071>
+    </xsl:template>
+    
     <!-- 344 - Sound Characteristics -->
     <xsl:template match="marc:datafield[@tag = '344'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '344']" 
         mode="man">
