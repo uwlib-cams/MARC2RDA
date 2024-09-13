@@ -506,5 +506,14 @@
         </xsl:choose>
     </xsl:function>
     
+    <xsl:function name="uwf:getBracketedData">
+        <xsl:param name="string"/>
+        <xsl:analyze-string select="$string" regex="\[.*\]">
+            <xsl:matching-substring>
+                <xsl:value-of select="."/>
+            </xsl:matching-substring>
+        </xsl:analyze-string>
+    </xsl:function>
+    
 </xsl:stylesheet>
 

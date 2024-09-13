@@ -15,7 +15,7 @@
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test0exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a [James Anderson [junior] correspondence].</fake:marcfield>
       <rdamd:P30156>James Anderson [junior] correspondence</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Title proper [James Anderson [junior] correspondence] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test0wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -33,7 +33,7 @@
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test0exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 00 $k Letter, $f 1901 March 6, $b Dublin, to Henrik Ibsen, Kristiana [Oslo].</fake:marcfield>
       <rdamd:P30156>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo].</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Title proper [Oslo] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30278>1901 March 6</rdamd:P30278><!--rdamd:P30278 = has date of manifestation-->
       <rdamd:P30137>Letter.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
@@ -54,10 +54,10 @@
       <fake:marcfield>F245 14 $a The Shakespeare enigma : $b [unravelling the story of the two poets] / $c Peter Dawkins ; [foreword by Mark Rylance].</fake:marcfield>
       <rdamd:P30156>The Shakespeare enigma</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30142>unravelling the story of the two poets</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30137>Other title information is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Other title information [unravelling the story of the two poets] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30105>Peter Dawkins</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
       <rdamd:P30105>foreword by Mark Rylance</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30137>Statement of responsibility is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Statement of responsibility [foreword by Mark Rylance] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test3wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -115,7 +115,7 @@
       <fake:marcfield>F245 10 $a Sonnett für Wien : $b [songs of Erich Korngold].</fake:marcfield>
       <rdamd:P30156>Sonnett für Wien</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30142>songs of Erich Korngold</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30137>Other title information is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Other title information [songs of Erich Korngold] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test6wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -176,10 +176,10 @@
       <rdamd:P30156>Ferdinand's Comfort</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30142>for soprano, baritone and five instruments</rdamd:P30142><!--rdamd:P30142 = has other title information-->
       <rdamd:P30142>set of parts</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30137>Other title information is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Other title information [set of parts] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30105>[music by] Kaijia Saariaho</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
       <rdamd:P30105>lyrics from The Tempest by William Shakespeare</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30137>Statement of responsibility is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Statement of responsibility [lyrics from The Tempest by William Shakespeare] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test12wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -198,7 +198,7 @@
       <fake:marcfield>F245 10 $a 'Message in a mobile' $h [electronic resource] = $b [Risālah fī jawāl] = Risaala fi jawaal : mixed-messages, tales of missing and mobile communities at the University of Khatroum / $c Siri Lamoureaux.</fake:marcfield>
       <rdamd:P30156>'Message in a mobile'</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30156>Risālah fī jawāl</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Title proper [Risālah fī jawāl] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30156>Risaala fi jawaal</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30142>mixed-messages, tales of missing and mobile communities at the University of Khatroum</rdamd:P30142><!--rdamd:P30142 = has other title information-->
       <rdamd:P30105>Siri Lamoureaux.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
@@ -222,7 +222,7 @@
       <rdamd:P30156>Lambe Latin</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30142>tales of a mantua maker and her brother, from the South Sea Co. to the Merchant of Venice</rdamd:P30142><!--rdamd:P30142 = has other title information-->
       <rdamd:P30105>by Angela Lorenz</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30137>Statement of responsibility is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Statement of responsibility [by Angela Lorenz] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test14wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -260,7 +260,7 @@
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test15exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a Kill Shakespeare. $n [Volume 1], $p A sea of troubles / $c created and written by Conor McCreery and Anthony Del Col ; art by Andy Belanger ; colors by Ian Herring ; lettering by Chris Mowry, Robbie Robbins, and Neil Uyetake.</fake:marcfield>
       <rdamd:P30156>Kill Shakespeare. Volume 1 A sea of troubles</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Title proper [Volume 1] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30105>created and written by Conor McCreery and Anthony Del Col</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
       <rdamd:P30105>art by Andy Belanger</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
       <rdamd:P30105>colors by Ian Herring</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
@@ -338,9 +338,9 @@
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test19exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a [Rhan o waith Mr. Rees Prichard ...] :  $b [= Some part of the works of Mr. Rees Prichard.]</fake:marcfield>
       <rdamd:P30156>Rhan o waith Mr. Rees Prichard ...</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Title proper [Rhan o waith Mr. Rees Prichard ...] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30142>= Some part of the works of Mr. Rees Prichard.</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30137>Other title information is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Other title [= Some part of the works of Mr. Rees Prichard.] information is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test18wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
