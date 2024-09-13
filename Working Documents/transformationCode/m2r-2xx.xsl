@@ -150,15 +150,36 @@
     <xsl:template match="marc:datafield[@tag = '257'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '257']" 
         mode="wor" expand-text="yes">
         <xsl:call-template name="getmarc"/>
+        <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
+            <xsl:variable name="suba" select="."/>
             <xsl:choose>
-                <xsl:when test="../marc:subfield[@code = '2']">
-                    <rdawo:P10316 rdf:resource="{uwf:placeIRI(., ., ../marc:subfield[@code = '2'][1])}"/>
+                <xsl:when test="matches(., '\S+.*;.*\S+')">
+                    <xsl:for-each select="tokenize(., ';')">
+                        <xsl:choose>
+                            <xsl:when test="$sub2">
+                                <!-- this is okay because it is only minted when there is a source, else there would be a problem with multiple IRIs coming from the same node -->
+                                <rdawo:P10316 rdf:resource="{uwf:placeIRI($suba, ., $sub2)}"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <rdawd:P10316>
+                                    <xsl:value-of select="replace(., '\.$|;$', '') => normalize-space()"/>
+                                </rdawd:P10316>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:for-each>
                 </xsl:when>
                 <xsl:otherwise>
-                    <rdawd:P10316>
-                        <xsl:value-of select="."/>
-                    </rdawd:P10316>
+                    <xsl:choose>
+                        <xsl:when test="$sub2">
+                            <rdawo:P10316 rdf:resource="{uwf:placeIRI(., ., $sub2)}"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <rdawd:P10316>
+                                <xsl:value-of select="replace(., '\.$|;$', '') => normalize-space()"/>
+                            </rdawd:P10316>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:for-each>
@@ -225,11 +246,25 @@
     <xsl:template match="marc:datafield[@tag = '257'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '257']" 
         mode="pla" expand-text="yes">
         <xsl:if test="marc:subfield[@code = '2']">
+            <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
             <xsl:for-each select="marc:subfield[@code = 'a']">
-                <rdf:Description rdf:about="{uwf:placeIRI(., ., ../marc:subfield[@code = '2'][1])}">
-                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-                    <rdapo:P70019 rdf:resource="{uwf:nomenIRI(., 'pla/nom', ., ../marc:subfield[@code = '2'][1])}"/>
-                </rdf:Description>
+                <xsl:variable name="suba" select="."/>
+                <xsl:choose>
+                    <xsl:when test="matches(., '\S+.*;.*\S+')">
+                        <xsl:for-each select="tokenize(., ';')">
+                            <rdf:Description rdf:about="{uwf:placeIRI($suba, ., $sub2)}">
+                                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+                                <rdapo:P70019 rdf:resource="{uwf:nomenIRI($suba, 'pla/nom', ., $sub2)}"/>
+                            </rdf:Description>
+                        </xsl:for-each>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <rdf:Description rdf:about="{uwf:placeIRI(., ., $sub2)}">
+                            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+                            <rdapo:P70019 rdf:resource="{uwf:nomenIRI(., 'pla/nom', ., $sub2)}"/>
+                        </rdf:Description>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
@@ -237,12 +272,31 @@
     <xsl:template match="marc:datafield[@tag = '257'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '257']" 
         mode="nom" expand-text="yes">
         <xsl:if test="marc:subfield[@code = '2']">
+            <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
             <xsl:for-each select="marc:subfield[@code = 'a']">
-                <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom', ., ../marc:subfield[@code = '2'][1])}">
-                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-                    <rdand:P80068>{.}</rdand:P80068>
-                    <xsl:copy-of select="uwf:s2Nomen(../marc:subfield[@code = '2'][1])"/>
-                </rdf:Description>
+                <xsl:variable name="suba" select="."/>
+                <xsl:choose>
+                    <xsl:when test="matches(., '\S+.*;.*\S+')">
+                        <xsl:for-each select="tokenize(., ';')">
+                            <rdf:Description rdf:about="{uwf:nomenIRI($suba, 'pla/nom', ., $sub2)}">
+                                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                                <rdand:P80068>
+                                    <xsl:value-of select="replace(., '\.$|;$', '') => normalize-space()"/>
+                                </rdand:P80068>
+                                <xsl:copy-of select="uwf:s2Nomen($sub2)"/>
+                            </rdf:Description>
+                        </xsl:for-each>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom', ., $sub2)}">
+                            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                            <rdand:P80068>
+                                <xsl:value-of select="replace(., '\.$|;$', '') => normalize-space()"/>
+                            </rdand:P80068>
+                            <xsl:copy-of select="uwf:s2Nomen($sub2)"/>
+                        </rdf:Description>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
