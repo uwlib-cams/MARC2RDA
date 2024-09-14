@@ -680,6 +680,15 @@
         </xsl:if>
     </xsl:template>
     
+    <!-- 544 - Location of Other Archival Materials Note -->
+    <xsl:template
+        match="marc:datafield[@tag = '544'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '544']"
+        mode="man">
+        <rdamd:P30137>
+            <xsl:call-template name="F544-xx-dabcen"/>
+        </rdamd:P30137>
+    </xsl:template>
+
     <!-- 546 - Language Note -->
     <xsl:template
         match="marc:datafield[@tag = '546'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '546']"

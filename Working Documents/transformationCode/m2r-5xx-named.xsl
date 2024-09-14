@@ -658,6 +658,33 @@
         </rdf:Description>
     </xsl:template>
     
+    <!-- 544 -->
+    <xsl:template name="F544-xx-dabcen" expand-text="yes">
+        <xsl:if test="marc:subfield[@code = '3']">
+            <xsl:choose>
+                <xsl:when test="not(ends-with(marc:subfield[@code = '3'], ':'))">
+                    <xsl:text>{.}: </xsl:text>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:text>{.} </xsl:text>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:if>
+        <xsl:choose>
+            <xsl:when test="@ind1 = '0'">
+                <xsl:text>Associated materials: </xsl:text>
+            </xsl:when>
+            <xsl:when test="@ind1 = '1'">
+                <xsl:text>Related materials: </xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:text>Location of other archival materials note: </xsl:text>
+            </xsl:otherwise>
+        </xsl:choose>
+        <xsl:value-of select="marc:subfield[@code = 'd'] | marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']
+            | marc:subfield[@code = 'c'] | marc:subfield[@code = 'e'] | marc:subfield[@code = 'n']" separator=" "/>
+    </xsl:template>
+    
     <!-- 552 -->
     <xsl:template name="F552-xx-zabcdefghijklmnopu" expand-text="yes">
         <xsl:if test="marc:subfield[@code = 'z']">
