@@ -479,7 +479,7 @@
     
     <xsl:function name="uwf:stripAllPunctuation">
         <xsl:param name="conceptString"/>
-        <xsl:value-of select="lower-case($conceptString) => translate(' ', '') => replace('[\p{P}]', '')"/>
+        <xsl:value-of select="lower-case($conceptString) => translate(' ', '') => replace('[\p{P}]', '') => replace('=', '')"/>
     </xsl:function>
     
     <xsl:function name="uwf:testBrackets">

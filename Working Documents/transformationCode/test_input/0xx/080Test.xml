@@ -20,5 +20,21 @@
             <marc:subfield code="x">"19"</marc:subfield>
             <marc:subfield code="x">(075)</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="080" ind1=" " ind2=" ">
+            <marc:subfield code="a">(663.2)7.079&quot;196&quot; MUR</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="080" ind1="0" ind2=" ">
+            <marc:subfield code="a">837BOL.09</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="080" ind1=" " ind2=" ">
+            <marc:subfield code="a">308-054(=96) BRO</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="080" ind1=" " ind2=" ">
+            <marc:subfield code="a">930.1/.2:930.9</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="080" ind1=" " ind2=" ">
+            <marc:subfield code="a">305.42</marc:subfield>
+            <marc:subfield code="b">AHM</marc:subfield>
+        </marc:datafield>
     </marc:record>
 </marc:collection>

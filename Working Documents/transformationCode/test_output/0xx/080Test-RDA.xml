@@ -35,11 +35,21 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>080-test1wor</rdawd:P10002>
       <fake:marcfield>F080 ## $a 821.113.1 $x (494) $2 1993</fake:marcfield>
-      <rdawo:P10256 rdf:resource="http://marc2rda.edu/fake/concept/udcabridged1993/8211131494"/>
+      <rdawo:P10256 rdf:resource="http://marc2rda.edu/fake/concept/udc/8211131494"/>
       <fake:marcfield>F080 0# $a 821.113.4-14 $2 1998</fake:marcfield>
       <rdawo:P10256 rdf:resource="http://marc2rda.edu/fake/concept/udcfull1998/821113414"/>
       <fake:marcfield>F080 ## $a 94 $x (474) $x "19" $x (075)</fake:marcfield>
-      <rdawo:P10256 rdf:resource="http://marc2rda.edu/fake/concept/udcabridged/9447419075"/>
+      <rdawo:P10256 rdf:resource="http://marc2rda.edu/fake/concept/udc/9447419075"/>
+      <fake:marcfield>F080 ## $a (663.2)7.079"196" MUR</fake:marcfield>
+      <rdawo:P10256 rdf:resource="http://marc2rda.edu/fake/concept/udc/66327079196mur"/>
+      <fake:marcfield>F080 0# $a 837BOL.09</fake:marcfield>
+      <rdawo:P10256 rdf:resource="http://marc2rda.edu/fake/concept/udcfull/837bol09"/>
+      <fake:marcfield>F080 ## $a 308-054(=96) BRO</fake:marcfield>
+      <rdawo:P10256 rdf:resource="http://marc2rda.edu/fake/concept/udc/30805496bro"/>
+      <fake:marcfield>F080 ## $a 930.1/.2:930.9</fake:marcfield>
+      <rdawo:P10256 rdf:resource="http://marc2rda.edu/fake/concept/udc/930129309"/>
+      <fake:marcfield>F080 ## $a 305.42 $b AHM</fake:marcfield>
+      <rdawo:P10256 rdf:resource="http://marc2rda.edu/fake/concept/udc/30542"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/080-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -50,25 +60,60 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/080-test1exp"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept//8211131494">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/udc/8211131494">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <!--rdf:datatype to be added-->
-      <skos:notation>821.113.1 (494)</skos:notation>
-      <skos:altLabel>821.113.1 (494)</skos:altLabel>
-      <skos:inScheme>udc; abridged; 1993</skos:inScheme>
+      <skos:notation>821.113.1(494)</skos:notation>
+      <skos:altLabel>821.113.1(494)</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/udc"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept//821113414">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/udcfull1998/821113414">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <!--rdf:datatype to be added-->
       <skos:notation>821.113.4-14</skos:notation>
       <skos:altLabel>821.113.4-14</skos:altLabel>
-      <skos:inScheme>udc; full; 1998</skos:inScheme>
+      <skos:inScheme>UDC; Full; 1998</skos:inScheme>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept//9447419075">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/udc/9447419075">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <!--rdf:datatype to be added-->
-      <skos:notation>94 (474) "19" (075)</skos:notation>
-      <skos:altLabel>94 (474) "19" (075)</skos:altLabel>
-      <skos:inScheme>udc; abridged</skos:inScheme>
+      <skos:notation>94(474)"19"(075)</skos:notation>
+      <skos:altLabel>94(474)"19"(075)</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/udc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/udc/66327079196mur">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <!--rdf:datatype to be added-->
+      <skos:notation>(663.2)7.079"196" MUR</skos:notation>
+      <skos:altLabel>(663.2)7.079"196" MUR</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/udc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/udcfull/837bol09">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <!--rdf:datatype to be added-->
+      <skos:notation>837BOL.09</skos:notation>
+      <skos:altLabel>837BOL.09</skos:altLabel>
+      <skos:inScheme>UDC; Full</skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/udc/30805496bro">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <!--rdf:datatype to be added-->
+      <skos:notation>308-054(=96) BRO</skos:notation>
+      <skos:altLabel>308-054(=96) BRO</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/udc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/udc/930129309">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <!--rdf:datatype to be added-->
+      <skos:notation>930.1/.2:930.9</skos:notation>
+      <skos:altLabel>930.1/.2:930.9</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/udc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/udc/30542">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <!--rdf:datatype to be added-->
+      <skos:notation>305.42</skos:notation>
+      <skos:altLabel>305.42</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/udc"/>
    </rdf:Description>
 </rdf:RDF>

@@ -747,21 +747,26 @@
         <xsl:variable name="scheme">
             <xsl:choose>
                 <xsl:when test="@ind1 = '0'">
-                    <xsl:text>udcfull</xsl:text>
+                    <xsl:text>UDC; Full</xsl:text>
                     <xsl:if test="marc:subfield[@code = '2']">
+                        <xsl:text>; </xsl:text>
+                        <xsl:value-of select="marc:subfield[@code = '2'][1]"/>
+                    </xsl:if>
+                </xsl:when>
+                <xsl:when test="@ind1 = '1'">
+                    <xsl:text>UDC; Abridged</xsl:text>
+                    <xsl:if test="marc:subfield[@code = '2']">
+                        <xsl:text>; </xsl:text>
                         <xsl:value-of select="marc:subfield[@code = '2'][1]"/>
                     </xsl:if>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:text>udcabridged</xsl:text>
-                    <xsl:if test="marc:subfield[@code = '2']">
-                        <xsl:value-of select="marc:subfield[@code = '2'][1]"/>
-                    </xsl:if>
+                    <xsl:text>udc</xsl:text>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
         <xsl:variable name="ap">
-            <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'x']"/>
+            <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'x']" separator=""/>
         </xsl:variable>
         <xsl:if test="marc:subfield[@code = 'a']">
             <rdawo:P10256 rdf:resource="{uwf:conceptIRI($scheme, $ap)}"/>
@@ -773,43 +778,30 @@
         <xsl:variable name="scheme">
             <xsl:choose>
                 <xsl:when test="@ind1 = '0'">
-                    <xsl:text>udcfull</xsl:text>
+                    <xsl:text>UDC; Full</xsl:text>
                     <xsl:if test="marc:subfield[@code = '2']">
+                        <xsl:text>; </xsl:text>
+                        <xsl:value-of select="marc:subfield[@code = '2'][1]"/>
+                    </xsl:if>
+                </xsl:when>
+                <xsl:when test="@ind1 = '1'">
+                    <xsl:text>UDC; Abridged</xsl:text>
+                    <xsl:if test="marc:subfield[@code = '2']">
+                        <xsl:text>; </xsl:text>
                         <xsl:value-of select="marc:subfield[@code = '2'][1]"/>
                     </xsl:if>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:text>udcabridged</xsl:text>
-                    <xsl:if test="marc:subfield[@code = '2']">
-                        <xsl:value-of select="marc:subfield[@code = '2'][1]"/>
-                    </xsl:if>
+                    <xsl:text>udc</xsl:text>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
         <xsl:variable name="ap">
-            <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'x']"/>
+            <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'x']" separator=""/>
         </xsl:variable>
         <xsl:if test="marc:subfield[@code = 'a']">
-            <rdf:Description rdf:about="{uwf:conceptIRI('', $ap)}">
-                <xsl:copy-of select="uwf:fillClassConcept('', $ap, $ap, '080')"/>
-                <skos:inScheme>
-                    <xsl:choose>
-                        <xsl:when test="@ind1 = '0'">
-                            <xsl:text>udc; full</xsl:text>
-                            <xsl:if test="marc:subfield[@code = '2']">
-                                <xsl:text>; </xsl:text>
-                                <xsl:value-of select="marc:subfield[@code = '2'][1]"/>
-                            </xsl:if>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:text>udc; abridged</xsl:text>
-                            <xsl:if test="marc:subfield[@code = '2']">
-                                <xsl:text>; </xsl:text>
-                                <xsl:value-of select="marc:subfield[@code = '2'][1]"/>
-                            </xsl:if>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </skos:inScheme>
+            <rdf:Description rdf:about="{uwf:conceptIRI($scheme, $ap)}">
+                <xsl:copy-of select="uwf:fillClassConcept($scheme, $ap, $ap, '080')"/>
             </rdf:Description>
         </xsl:if>
     </xsl:template>
