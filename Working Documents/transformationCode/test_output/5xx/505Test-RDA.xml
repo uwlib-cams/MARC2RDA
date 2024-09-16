@@ -31,23 +31,25 @@
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
          xmlns:uwf="http://universityOfWashington/functions"
          xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/520-testwor">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/505-testwor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>520-testwor</rdawd:P10002>
+      <rdawd:P10002>505-testwor</rdawd:P10002>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/520-testexp">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/505-testexp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/520-testwor"/>
-      <rdaed:P20002>520-testexp</rdaed:P20002>
-      <fake:marcfield>F520 3# $a This study assesses the formation process of the International Criminal Court.  $b lexile. $u http://www.loc.gov/hlas</fake:marcfield>
-      <rdae:P20069>"Abstract: "; </rdae:P20069>
-      <fake:marcfield>F520 4# $a This study assesses the formation process of the International Criminal Court.  $b lexile. $2 bbfc</fake:marcfield>
-      <rdae:P20069>"Content advice: "; Britsh Board of Film classification</rdae:P20069>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/505-testwor"/>
+      <rdaed:P20002>505-testexp</rdaed:P20002>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/520-testman">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/505-testman">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/520-testexp"/>
-      <fake:marcfield>F880 ## $6 521-00/ $a 2nd grade.</fake:marcfield>
-      <rdamd:P30137>Audience: 2nd grade.</rdamd:P30137>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/505-testexp"/>
+      <fake:marcfield>F505 0# $r by L. H. Fellows. $u http://www.loc.gov/hlas</fake:marcfield>
+      <rdamd:P30137>Contents: Statement of responsibility: by L. H. Fellows.; Uniform Resource Identifier: http://www.loc.gov/hlas</rdamd:P30137>
+      <fake:marcfield>F505 1# $a Future land use plan -- Recommended capital improvements -- Existing land use -- Existing zoning. $g Ch. 10.</fake:marcfield>
+      <rdamd:P30137>Incomplete contents: Formatted contents note: Future land use plan -- Recommended capital improvements -- Existing land use -- Existing zoning. Miscellaneous information: Ch. 10.</rdamd:P30137>
+      <fake:marcfield>F505 8# $a Future land use plan -- Recommended capital improvements -- Existing land use -- Existing zoning. $t Queen or crone? : gendered archaeology in an LB tomb at Gezer</fake:marcfield>
+      <rdamd:P30137>Contents: Formatted contents note: Future land use plan -- Recommended capital improvements -- Existing land use -- Existing zoning. Title: Queen or crone? : gendered archaeology in an LB tomb at Gezer</rdamd:P30137>
+      <fake:marcfield>F880 0# $6 505-00 $a Test 880</fake:marcfield>
+      <rdamd:P30137>Contents: Formatted contents note: Test 880 </rdamd:P30137>
    </rdf:Description>
 </rdf:RDF>

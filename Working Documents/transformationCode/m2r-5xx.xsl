@@ -206,6 +206,15 @@
         </rdamd:P30455>
     </xsl:template>
     
+    <!-- 505 - Formatted Contents Notes -->
+    <xsl:template match="marc:datafield[@tag= '505'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '505']" 
+        mode="man">
+        <xsl:call-template name="getmarc"/>
+        <rdamd:P30137>
+            <xsl:call-template name="F505-xx-agrtu"/>
+        </rdamd:P30137>
+    </xsl:template>
+    
     <!-- 506 - Restrictions on Access Note -->
     <xsl:template
         match="marc:datafield[@tag = '506'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '506-00']"
