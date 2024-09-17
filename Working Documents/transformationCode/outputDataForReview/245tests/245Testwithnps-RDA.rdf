@@ -36,27 +36,6 @@
       <rdamd:P30142>an international handbook. Volume 1</rdamd:P30142><!--rdamd:P30142 = has other title information-->
       <rdamd:P30105>Alexander Bergs, Laurel J. Brinton.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test02wor">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>245-test02wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <fake:marcfield>F245 14 $a The Letters of William Cullen Bryant $b Volume VI, 1872-1878 / $n Volume VI, $p 1872-1878 / $h [electronic resource] : $c edited by William Cullen Bryant II and Thomas G. Voss.</fake:marcfield>
-      <rdawd:P10088>The Letters of William Cullen Bryant</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test02exp">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/245-test02wor"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20002>245-test02exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test02man">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test02exp"/><!--rdamo:P30139 = has expression manifested-->
-      <fake:marcfield>F245 14 $a The Letters of William Cullen Bryant $b Volume VI, 1872-1878 / $n Volume VI, $p 1872-1878 / $h [electronic resource] : $c edited by William Cullen Bryant II and Thomas G. Voss.</fake:marcfield>
-      <rdamd:P30156>The Letters of William Cullen Bryant</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30142>Volume VI, 1872-1878</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30105>Volume VI, 1872-1878</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30142>edited by William Cullen Bryant II and Thomas G. Voss.</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30335>electronic resource] :</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test03wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>245-test03wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
@@ -79,8 +58,8 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test00wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>245-test00wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <fake:marcfield>F245 14 $a The Letters of William Cullen Bryant $b Volume VI, 1872–1878 / $n Volume VI, $p 1872-1878 / $c edited by William Cullen Bryant II and Thomas G. Voss. $p 1872-1878 / $n Volume VI,</fake:marcfield>
-      <rdawd:P10088>The Letters of William Cullen Bryant</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <fake:marcfield>F245 14 $a The Letters of William Cullen Bryant $n Volume VI,  $p 1872–1878 / $c edited by William Cullen Bryant II and Thomas G. Voss.</fake:marcfield>
+      <rdawd:P10088>The Letters of William Cullen Bryant Volume VI, 1872–1878</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test00exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -90,12 +69,8 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test00man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test00exp"/><!--rdamo:P30139 = has expression manifested-->
-      <fake:marcfield>F245 14 $a The Letters of William Cullen Bryant $b Volume VI, 1872–1878 / $n Volume VI, $p 1872-1878 / $c edited by William Cullen Bryant II and Thomas G. Voss. $p 1872-1878 / $n Volume VI,</fake:marcfield>
-      <rdamd:P30156>The Letters of William Cullen Bryant</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30142>Volume VI, 1872–1878</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30105>Volume VI, 1872-1878</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30105>1872-1878</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30105>Volume VI,</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <fake:marcfield>F245 14 $a The Letters of William Cullen Bryant $n Volume VI,  $p 1872–1878 / $c edited by William Cullen Bryant II and Thomas G. Voss.</fake:marcfield>
+      <rdamd:P30156>The Letters of William Cullen Bryant Volume VI, 1872–1878</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30105>edited by William Cullen Bryant II and Thomas G. Voss.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test00wor">
