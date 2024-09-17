@@ -42,11 +42,11 @@
                         </xsl:when>
                         <!-- remove any square brackets [] if not ISBD -->
                         <xsl:otherwise>
-                            <xsl:value-of select="uwf:removeBrackets(marc:subfield[@code = 'a'])"/>
+                            <xsl:value-of select="normalize-space(marc:subfield[@code = 'a']) => uwf:removeBrackets()"/>
                         </xsl:otherwise>
                     </xsl:choose>
                 </rdamd:P30156>
-                <!-- if square brackets [] were removed, add not on manifestation -->
+                <!-- if square brackets [] were removed, add note on manifestation -->
                 <xsl:if test="uwf:testBrackets(marc:subfield[@code = 'a']) = true()">
                     <rdamd:P30137>Title proper {uwf:getBracketedData(marc:subfield[@code = 'a'])} is assigned by the cataloguing agency.</rdamd:P30137>
                 </xsl:if>
@@ -69,10 +69,10 @@
                             </xsl:for-each>
                         </xsl:when>
                         <xsl:otherwise>
-                            <xsl:value-of select="uwf:removeBrackets(marc:subfield[@code = 'a'])"/>
+                            <xsl:value-of select="normalize-space(marc:subfield[@code = 'a']) => uwf:removeBrackets()"/>
                             <xsl:text> </xsl:text>
                             <xsl:for-each select="marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::*[@code = 'b'])]">
-                                <xsl:value-of select="uwf:removeBrackets(.)"/>
+                                <xsl:value-of select="normalize-space(.) => uwf:removeBrackets()"/>
                                 <xsl:if test="position() != last()">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
@@ -82,20 +82,22 @@
                 </xsl:variable>
                 <!-- remove any square brackets -->
                 <rdamd:P30156>
-                    <xsl:value-of select="uwf:removeBrackets($title)"/>
+                    <xsl:value-of select="normalize-space($title) => uwf:removeBrackets()"/>
                 </rdamd:P30156>
                 <!-- if square brackets [] were removed, add not on manifestation -->
                 <xsl:if test="uwf:testBrackets($title) = true()">
                     <rdamd:P30137>Title proper {uwf:getBracketedData($title)}is assigned by the cataloguing agency.</rdamd:P30137>
                 </xsl:if>
-                <xsl:if test="uwf:testBrackets(marc:subfield[@code = 'a']) = true()">
-                    <rdamd:P30137>Title proper {uwf:getBracketedData(marc:subfield[@code = 'a'])} is assigned by the cataloguing agency.</rdamd:P30137>
-                </xsl:if>
-                <xsl:for-each select="marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::*[@code = 'b'])]">
-                    <xsl:if test="uwf:testBrackets(.) = true()">
-                        <rdamd:P30137>Title proper {uwf:getBracketedData(.)} is assigned by the cataloguing agency.</rdamd:P30137>
+                <xsl:if test="$isISBD = true()">
+                    <xsl:if test="uwf:testBrackets(marc:subfield[@code = 'a']) = true()">
+                        <rdamd:P30137>Title proper {uwf:getBracketedData(marc:subfield[@code = 'a'])} is assigned by the cataloguing agency.</rdamd:P30137>
                     </xsl:if>
-                </xsl:for-each>
+                    <xsl:for-each select="marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::*[@code = 'b'])]">
+                        <xsl:if test="uwf:testBrackets(.) = true()">
+                            <rdamd:P30137>Title proper {uwf:getBracketedData(.)} is assigned by the cataloguing agency.</rdamd:P30137>
+                        </xsl:if>
+                    </xsl:for-each>
+                </xsl:if>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -113,21 +115,45 @@
         </xsl:variable>
         <xsl:variable name="title">
             <xsl:choose>
-                <xsl:when test="marc:subfield[@code = 'c']">
-                    <xsl:for-each select="marc:subfield[@code = 'c']/preceding-sibling::*">
-                        <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
-                        <xsl:if test="position() != last()">
-                            <xsl:text> </xsl:text>
-                        </xsl:if>
-                    </xsl:for-each>
+                <xsl:when test="$isISBD = true()">
+                    <xsl:choose>
+                        <xsl:when test="marc:subfield[@code = 'c']">
+                            <xsl:for-each select="marc:subfield[@code = 'c']/preceding-sibling::*">
+                                <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                <xsl:if test="position() != last()">
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:for-each select="marc:subfield">
+                                <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                <xsl:if test="position() != last()">
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:for-each select="marc:subfield">
-                        <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
-                        <xsl:if test="position() != last()">
-                            <xsl:text> </xsl:text>
-                        </xsl:if>
-                    </xsl:for-each>
+                    <xsl:choose>
+                        <xsl:when test="marc:subfield[@code = 'c']">
+                            <xsl:for-each select="marc:subfield[@code = 'c']/preceding-sibling::*">
+                                <xsl:value-of select="normalize-space(.) => uwf:removeBrackets()"/>
+                                <xsl:if test="position() != last()">
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:for-each select="marc:subfield">
+                                <xsl:value-of select="normalize-space(.) => uwf:removeBrackets()"/>
+                                <xsl:if test="position() != last()">
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
@@ -138,7 +164,7 @@
                     <xsl:value-of select="normalize-space($title) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                 </xsl:when>
                 <xsl:otherwise>
-                   <xsl:value-of select="$title"/>
+                   <xsl:value-of select="normalize-space($title) => uwf:removeBrackets()"/>
                 </xsl:otherwise>
             </xsl:choose>
         </rdamd:P30156>
@@ -573,46 +599,29 @@
         </xsl:for-each>
     </xsl:template>
     
-    <xsl:template name="F245-xx-b">
-        <xsl:for-each select="marc:subfield[@code = 'b']">
-            <xsl:choose>
-                <xsl:when
-                    test="ends-with(preceding-sibling::*[1], '=') and not(following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'])">
-                    <xsl:for-each select="tokenize(., ' = ')">
-                        <rdamd:P30134>
-                            <xsl:choose>
-                                <xsl:when test="ends-with(., '...')">
-                                    <xsl:value-of select="."/>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <xsl:value-of select="replace(., '\s*[/:\.=,]$', '') => uwf:removeBrackets()"/>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                        </rdamd:P30134>
-                    </xsl:for-each>
-                </xsl:when>
-                <xsl:otherwise>
-                    <rdamd:P30142>
-                        <xsl:value-of select="replace(., '\s*[/:=,]$', '') => uwf:removeBrackets()"/>
-                    </rdamd:P30142>
-                </xsl:otherwise>
-            </xsl:choose>
-        </xsl:for-each>
-    </xsl:template>
-    
-    <xsl:template name="F245-xx-b-notISBD">
+    <xsl:template name="F245-xx-b-notISBD" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'b']">
             <rdamd:P30142>
-                <xsl:value-of select="."/>
+                <xsl:value-of select="normalize-space(.) => uwf:removeBrackets()"/>
             </rdamd:P30142>
+            <xsl:if test="uwf:testBrackets(.) = true()">
+                <rdamd:P30137>
+                    <xsl:text>Other title information {uwf:getBracketedData(.)} is assigned by the cataloguing agency.</xsl:text>
+                </rdamd:P30137>
+            </xsl:if>
         </xsl:for-each>
     </xsl:template>
     
-    <xsl:template name="F245-xx-c-notISBD">
+    <xsl:template name="F245-xx-c-notISBD" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'c']">
             <rdamd:P30105>
-                <xsl:value-of select="."/>
+                <xsl:value-of select="normalize-space(.) => uwf:removeBrackets()"/>
             </rdamd:P30105>
+            <xsl:if test="uwf:testBrackets(.) = true()">
+                <rdamd:P30137>
+                    <xsl:text>Statement of responsibility {uwf:getBracketedData(.)} is assigned by the cataloguing agency.</xsl:text>
+                </rdamd:P30137>
+            </xsl:if>
         </xsl:for-each>
     </xsl:template>
     
@@ -637,116 +646,6 @@
             </rdamd:P30137>
         </xsl:for-each>
     </xsl:template>
-    
-    <!--<xsl:template name="F245-xx-anps">
-        <xsl:if test="marc:subfield[@code = 'n'] or marc:subfield[@code = 'p'] or marc:subfield[@code = 's']">
-            <xsl:choose>
-                <xsl:when test="not(ends-with(marc:subfield[@code = 'b']/preceding-sibling::*[1], '='))">
-                    <rdamd:P30156>
-                        <xsl:for-each
-                            select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'n'] | marc:subfield[@code = 'p'] | marc:subfield[@code = 's']">
-                            <xsl:choose>
-                                <xsl:when test="position() != last()">
-                                    <xsl:choose>
-                                        <xsl:when test="ends-with(., '...')">
-                                            <xsl:value-of select="."/>
-                                            <xsl:text>, </xsl:text>
-                                        </xsl:when>
-                                        <xsl:otherwise>
-                                            <xsl:value-of select="replace(., '\s*[:/=\.,]$', '') => translate('[]', '')" separator=", "/>
-                                            <xsl:text>, </xsl:text>
-                                        </xsl:otherwise>
-                                    </xsl:choose>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <xsl:choose>
-                                        <xsl:when test="ends-with(., '...')">
-                                            <xsl:value-of select="."/>
-                                        </xsl:when>
-                                        <xsl:otherwise>
-                                            <xsl:value-of select="replace(., '\s*[:/=\.,]$', '') => translate('[]', '')"/>
-                                        </xsl:otherwise>
-                                    </xsl:choose>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                        </xsl:for-each>
-                    </rdamd:P30156>
-                </xsl:when>
-                <xsl:when test="marc:subfield[@code = 'b']">
-                    <xsl:for-each select="marc:subfield[@code = 'b']">
-                        <xsl:choose>
-                            <xsl:when test="ends-with(preceding-sibling::marc:subfield[1], '=')">
-                                <rdamd:P30134>
-                                    <xsl:for-each
-                                        select="preceding-sibling::*[@code = 'a' or @code = 'n' or @code = 'p' or @code = 's']">
-                                       <xsl:choose>
-                                           <xsl:when test="ends-with(., '...')">
-                                               <xsl:value-of select="."/>
-                                           </xsl:when>
-                                           <xsl:otherwise>
-                                               <xsl:value-of select="replace(., '\s*[/:\.=,]$', '') => translate('[]', '')"/>
-                                           </xsl:otherwise>
-                                       </xsl:choose>
-                                        <xsl:if test="position() != last()">
-                                            <xsl:text>, </xsl:text>
-                                        </xsl:if>
-                                    </xsl:for-each>
-                                </rdamd:P30134>
-                                <rdamd:P30134>
-                                    <xsl:choose>
-                                        <xsl:when test="ends-with(., '...')">
-                                            <xsl:value-of select="."/>
-                                        </xsl:when>
-                                        <xsl:otherwise>
-                                            <xsl:value-of select="replace(., '\s*[/:\.=,]$', '') => translate('[]', '')"/>
-                                        </xsl:otherwise>
-                                    </xsl:choose>
-                                    <xsl:if
-                                        test="following-sibling::*[@code = 'p' or @code = 'n' or @code = 's']">
-                                        <xsl:text>, </xsl:text>
-                                        <xsl:for-each
-                                            select="following-sibling::*[@code = 'n' or @code = 'p' or @code = 's']">
-                                            <xsl:value-of select="replace(., '\s*[/:\.=,]$', '') => translate('[]', '')"/>
-                                            <xsl:if test="position() != last()">
-                                                <xsl:text>, </xsl:text>
-                                            </xsl:if>
-                                        </xsl:for-each>
-                                    </xsl:if>
-                                </rdamd:P30134>
-                            </xsl:when>
-                            <xsl:otherwise/>
-                        </xsl:choose>
-                    </xsl:for-each>
-                </xsl:when>
-                <xsl:otherwise/>
-            </xsl:choose>
-        </xsl:if>
-    </xsl:template>-->
-    <!-- F245-xx-a treats all $a the same -->
-    <!--<xsl:template name="F245-xx-a" expand-text="yes">
-        <xsl:if test="marc:subfield[@code = 'a'] and (not(marc:subfield[@code = 'n']) and not(marc:subfield[@code = 'p']) and not(marc:subfield[@code = 's']))">
-            <rdamd:P30156>
-                <xsl:choose>
-                    <xsl:when test="ends-with(marc:subfield[@code = 'a'], '...')">
-                        <xsl:value-of select="marc:subfield[@code = 'a']"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="replace(marc:subfield[@code = 'a'], '\s*[/:\.=,]$', '') => translate('[]', '')"/>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </rdamd:P30156>
-        </xsl:if>
-    </xsl:template>-->
-    
-    <!--<xsl:template name="F245-xx-c">
-        <xsl:for-each select="marc:subfield[@code = 'c']">
-            <xsl:for-each select="tokenize(., ' = ')">
-                <rdamd:P30105>
-                    <xsl:value-of select="replace(., '\s*[;=/:,]$', '') => translate('[]', '')"/>
-                </rdamd:P30105>
-            </xsl:for-each>
-        </xsl:for-each>
-    </xsl:template>-->
     
     
     <!-- F264-xx-abc processes MARC 264 entered with ISBD punctuation as an RDA "statement."
