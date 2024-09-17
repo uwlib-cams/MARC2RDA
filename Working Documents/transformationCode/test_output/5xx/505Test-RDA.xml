@@ -44,12 +44,12 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/505-testexp"/>
       <fake:marcfield>F505 0# $r by L. H. Fellows. $u http://www.loc.gov/hlas</fake:marcfield>
-      <rdamd:P30137>Contents: Statement of responsibility: by L. H. Fellows.; Uniform Resource Identifier: http://www.loc.gov/hlas</rdamd:P30137>
-      <fake:marcfield>F505 1# $a Future land use plan -- Recommended capital improvements -- Existing land use -- Existing zoning. $g Ch. 10.</fake:marcfield>
-      <rdamd:P30137>Incomplete contents: Formatted contents note: Future land use plan -- Recommended capital improvements -- Existing land use -- Existing zoning. Miscellaneous information: Ch. 10.</rdamd:P30137>
-      <fake:marcfield>F505 8# $a Future land use plan -- Recommended capital improvements -- Existing land use -- Existing zoning. $t Queen or crone? : gendered archaeology in an LB tomb at Gezer</fake:marcfield>
-      <rdamd:P30137>Contents: Formatted contents note: Future land use plan -- Recommended capital improvements -- Existing land use -- Existing zoning. Title: Queen or crone? : gendered archaeology in an LB tomb at Gezer</rdamd:P30137>
+      <rdamd:P30137>Contents: by L. H. Fellows. http://www.loc.gov/hlas</rdamd:P30137>
+      <fake:marcfield>F505 1# $g Nr. 3. $t Region Mettelburgenland -- $g Nr. 4. $t Region südliches Burgenland -- $g Nr. 5. $t Region Südburgland</fake:marcfield>
+      <rdamd:P30137>Incomplete contents: Nr. 3. Region Mettelburgenland -- Nr. 4. Region südliches Burgenland -- Nr. 5. Region Südburgland</rdamd:P30137>
+      <fake:marcfield>F505 8# $a Future land use plan -- Recommended capital improvements -- Existing land use -- Existing zoning.</fake:marcfield>
+      <rdamd:P30137>Contents: Future land use plan -- Recommended capital improvements -- Existing land use -- Existing zoning.</rdamd:P30137>
       <fake:marcfield>F880 0# $6 505-00 $a Test 880</fake:marcfield>
-      <rdamd:P30137>Contents: Formatted contents note: Test 880 </rdamd:P30137>
+      <rdamd:P30137>Contents: Test 880</rdamd:P30137>
    </rdf:Description>
 </rdf:RDF>
