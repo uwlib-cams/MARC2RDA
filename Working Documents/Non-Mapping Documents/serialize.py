@@ -60,7 +60,7 @@ def serialize(file_path):
         file.write(jsonld)
         file.close()
     
-    # format_rdf(g)
+    format_rdf(g)
     format_nt(g)
     format_ttl(g)
     # format_jsonld(g)

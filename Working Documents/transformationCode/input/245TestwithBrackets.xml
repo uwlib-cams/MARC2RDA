@@ -163,8 +163,8 @@
         <marc:leader>01299nam a2200349Ia 4500</marc:leader>
         <marc:controlfield tag="001">245-test19</marc:controlfield>
         <marc:datafield tag="245" ind1="1" ind2="0">
-            <marc:subfield code="a">[Rhan o waith Mr. Rees Prichard ...] : </marc:subfield>
-            <marc:subfield code="b">[= Some part of the works of Mr. Rees Prichard.]</marc:subfield>
+            <marc:subfield code="a">[Rhan o waith Mr. Rees Prichard ...] = </marc:subfield>
+            <marc:subfield code="b">[Some part of the works of Mr. Rees Prichard.]</marc:subfield>
         </marc:datafield>
     </marc:record>  
     
@@ -177,21 +177,14 @@
         </marc:datafield>
     </marc:record>  
     
-    
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">245-test7</marc:controlfield>
         <marc:datafield tag="245" ind1="0" ind2="0">
-            <marc:subfield code="a">Shakespeare lecture series. Hamlet : structure, speeches, and staging : [acts III-IV] /</marc:subfield>
+            <marc:subfield code="a">Shakespeare lecture series.</marc:subfield>
+            <marc:subfield code="p">Hamlet :</marc:subfield>
+            <marc:subfield code="b">structure, speeches, and staging : [acts III-IV] /</marc:subfield>
             <marc:subfield code="c">produced by Bill Wisneski ; directed by Bill Wisneski and Chia Longtree.</marc:subfield>
-        </marc:datafield>
-    </marc:record>
-    
-    <marc:record>
-        <marc:leader>11111nam a2200553ui 4500</marc:leader>
-        <marc:controlfield tag="001">245-test8</marc:controlfield>
-        <marc:datafield tag="245" ind1="1" ind2="0">
-            <marc:subfield code="a">莎士比亚故事集 = Tales from shakespeare/#/莎士比亞故事集 = Tales from shakespeare [[shā shì bǐ yà gù shì jí  = Tales from shakespeare]]</marc:subfield>
         </marc:datafield>
     </marc:record>
     

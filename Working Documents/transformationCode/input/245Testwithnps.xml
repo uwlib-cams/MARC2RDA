@@ -25,18 +25,6 @@
     </marc:record>
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
-        <marc:controlfield tag="001">245-test02</marc:controlfield>
-        <marc:datafield tag="245" ind1="1" ind2="4">
-            <marc:subfield code="a">The Letters of William Cullen Bryant</marc:subfield>
-            <marc:subfield code="b">Volume VI, 1872-1878 /</marc:subfield>
-            <marc:subfield code="n">Volume VI,</marc:subfield>
-            <marc:subfield code="p">1872-1878 /</marc:subfield>
-            <marc:subfield code="h">[electronic resource] :</marc:subfield>
-            <marc:subfield code="c">edited by William Cullen Bryant II and Thomas G. Voss.</marc:subfield>
-        </marc:datafield>
-    </marc:record>
-    <marc:record>
-        <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">245-test03</marc:controlfield>
         <marc:datafield tag="245" ind1="1" ind2="0">
             <marc:subfield code="a">Modern British playwriting.</marc:subfield>
@@ -50,12 +38,9 @@
         <marc:controlfield tag="001">245-test00</marc:controlfield>
         <marc:datafield tag="245" ind1="1" ind2="4">
             <marc:subfield code="a">The Letters of William Cullen Bryant</marc:subfield>
-            <marc:subfield code="b">Volume VI, 1872–1878 /</marc:subfield>
-            <marc:subfield code="n">Volume VI,</marc:subfield>
-            <marc:subfield code="p">1872-1878 /</marc:subfield>
+            <marc:subfield code="n">Volume VI, </marc:subfield>
+            <marc:subfield code="p">1872–1878 /</marc:subfield>
             <marc:subfield code="c">edited by William Cullen Bryant II and Thomas G. Voss.</marc:subfield>
-            <marc:subfield code="p">1872-1878 /</marc:subfield>
-            <marc:subfield code="n">Volume VI,</marc:subfield>
         </marc:datafield>
     </marc:record>
     <marc:record>
