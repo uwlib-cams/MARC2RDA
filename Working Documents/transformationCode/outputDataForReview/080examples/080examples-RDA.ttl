@@ -1,0 +1,915 @@
+@prefix fake: <http://fakePropertiesForDemo> .
+@prefix rdaed: <http://rdaregistry.info/Elements/e/datatype/> .
+@prefix rdaeo: <http://rdaregistry.info/Elements/e/object/> .
+@prefix rdamo: <http://rdaregistry.info/Elements/m/object/> .
+@prefix rdawd: <http://rdaregistry.info/Elements/w/datatype/> .
+@prefix rdawo: <http://rdaregistry.info/Elements/w/object/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://marc2rda.edu/fake/080-test1man> a <http://rdaregistry.info/Elements/c/C10007> ;
+    rdamo:P30139 <http://marc2rda.edu/fake/080-test1exp> .
+
+<http://marc2rda.edu/fake/080-test1exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "080-test1exp" ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/080-test1wor> .
+
+<http://marc2rda.edu/fake/080-test1wor> a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F080 ## $a (082)",
+        "F080 ## $a (41)7.034 \"18\" DIA",
+        "F080 ## $a (41)7.034/.035\"166/181\" SOL",
+        "F080 ## $a (41)7.047 HAR",
+        "F080 ## $a (41)7.071-054(=96) OLU",
+        "F080 ## $a 002",
+        "F080 ## $a 006.3",
+        "F080 ## $a 008(450)\"13/16\"",
+        "F080 ## $a 008(=927)(4-15)",
+        "F080 ## $a 096.1",
+        "F080 ## $a 1 Cavell, Stanley",
+        "F080 ## $a 113.8",
+        "F080 ## $a 144.6 $b ORD",
+        "F080 ## $a 159..964.2:82",
+        "F080 ## $a 164",
+        "F080 ## $a 2:82(410)\"15/16\"",
+        "F080 ## $a 301.043",
+        "F080 ## $a 302.23",
+        "F080 ## $a 306.874",
+        "F080 ## $a 316.62",
+        "F080 ## $a 321.01",
+        "F080 ## $a 32Shakespeare",
+        "F080 ## $a 34(73)(03)",
+        "F080 ## $a 340.114(42)",
+        "F080 ## $a 340.122",
+        "F080 ## $a 342.726-055.2(42)(09)",
+        "F080 ## $a 347.4",
+        "F080 ## $a 347.965(08)",
+        "F080 ## $a 34:8(42)(09)",
+        "F080 ## $a 34:822.33",
+        "F080 ## $a 34:822.33(08)",
+        "F080 ## $a 37.01",
+        "F080 ## $a 392.6",
+        "F080 ## $a 616.24\"18\"(091)",
+        "F080 ## $a 61:82",
+        "F080 ## $a 665.58 KAR",
+        "F080 ## $a 7(410)\"16/18\"",
+        "F080 ## $a 7.025/.026",
+        "F080 ## $a 7.094/7.097:821.111Shakespeare, William",
+        "F080 ## $a 746.7",
+        "F080 ## $a 75(73)-19-RAY",
+        "F080 ## $a 791.41",
+        "F080 ## $a 791.411",
+        "F080 ## $a 791.43.01(081)",
+        "F080 ## $a 791.43:821.111 Shakespeare, William",
+        "F080 ## $a 791.453",
+        "F080 ## $a 791.464",
+        "F080 ## $a 792",
+        "F080 ## $a 792(410)\"18\"",
+        "F080 ## $a 792(439.21)\"18\"",
+        "F080 ## $a 792(460)(091)",
+        "F080 ## $a 792(8=134)(091)",
+        "F080 ## $a 792.01",
+        "F080 ## $a 792.034.5(410.1)",
+        "F080 ## $a 792.09(42)",
+        "F080 ## $a 792.2 KAR",
+        "F080 ## $a 809.2/9375",
+        "F080 ## $a 809.93554",
+        "F080 ## $a 809/.7",
+        "F080 ## $a 81'255.4",
+        "F080 ## $a 811.111.82\"14/17\"",
+        "F080 ## $a 82\"13/15\"",
+        "F080 ## $a 82-2",
+        "F080 ## $a 82-22.09",
+        "F080 ## $a 82.0",
+        "F080 ## $a 82.09",
+        "F080 ## $a 82.091",
+        "F080 ## $a 820(091)",
+        "F080 ## $a 820(091)-2\"15/16\":894.511(439.21).091\"18\"",
+        "F080 ## $a 820Shakespeare, William1.06",
+        "F080 ## $a 821.111",
+        "F080 ## $a 821.111 Shakespeare, William",
+        "F080 ## $a 821.111 Shakespeare, William 1.07",
+        "F080 ## $a 821.111 Shakespeare, William 7 Hamlet",
+        "F080 ## $a 821.111 Shakespeare, William 7 Lovers complaint.06",
+        "F080 ## $a 821.111 Shakespeare, William.09",
+        "F080 ## $a 821.111 Shakespeare, William1.07",
+        "F080 ## $a 821.111 Shakesperare, William 2.03=134.2",
+        "F080 ## $a 821.111 Shakesperare, William 2.03=134.3",
+        "F080 ## $a 821.111\"16/17\".09",
+        "F080 ## $a 821.111\"18\"",
+        "F080 ## $a 821.111(73)",
+        "F080 ## $a 821.111-1\"15/17\"",
+        "F080 ## $a 821.111-2 Shakespeare, William",
+        "F080 ## $a 821.111-2\"../16\".09",
+        "F080 ## $a 821.111-2\"15/16\"",
+        "F080 ## $a 821.111-2\"15/16\".09",
+        "F080 ## $a 821.111-2\"15/17\"",
+        "F080 ## $a 821.111-2\"16\"",
+        "F080 ## $a 821.111-2\"17/18\"",
+        "F080 ## $a 821.111-2.09 \"15/16\"",
+        "F080 ## $a 821.111-2.09\"15\"",
+        "F080 ## $a 821.111-2.09\"15/16\"",
+        "F080 ## $a 821.111-2.09\"17\"",
+        "F080 ## $a 821.111-2Shakespeare, William.09",
+        "F080 ## $a 821.111-3 Joyce, James.09",
+        "F080 ## $a 821.111.0",
+        "F080 ## $a 821.111.09",
+        "F080 ## $a 821.111.09\"15/16\"",
+        "F080 ## $a 821.111.09\"19\"",
+        "F080 ## $a 821.111.09\"19/20\"",
+        "F080 ## $a 821.111Shakespeare, William",
+        "F080 ## $a 821.111Shakespeare, William.07",
+        "F080 ## $a 821.111Shakespeare, William.09",
+        "F080 ## $a 821.111Shakespeare, William1.07",
+        "F080 ## $a 821.111Shakespeare, William1Romeo and Juliet",
+        "F080 ## $a 821.111Shakespeare, William7ham.07",
+        "F080 ## $a 821.112.2.09",
+        "F080 ## $a 821.124'02 Ovidi 1.07",
+        "F080 ## $a 821.134.2",
+        "F080 ## $a 821.134.2.09",
+        "F080 ## $a 821.134.2Cervantes Saavedra, Miguel de1.07",
+        "F080 ## $a 822.3",
+        "F080 ## $a 822.33(08)",
+        "F080 ## $a 83(075)",
+        "F080 ## $a 830(091)\"17/19\"",
+        "F080 ## $a 894.511.081\"19/200\"(081)",
+        "F080 ## $a 910.4",
+        "F080 ## $a 929 Shakespeare, William",
+        "F080 ## $a 94(450)",
+        "F080 ## $a BACON",
+        "F080 ## $a CONS G.12 DOC",
+        "F080 ## $a FUSELI",
+        "F080 ## $a LON-BRI",
+        "F080 ## $a LON-NAT",
+        "F080 ## $a PETTIB",
+        "F080 ## $a PN1650.G56",
+        "F080 ## $a PR2989 .T76 2018 $b AEGMCT",
+        "F080 1# $a 820\"14/16\"(091)",
+        "F080 1# $a 820(091)",
+        "F080 1# $a 840\"18\"-2(091)BER" ;
+    rdawd:P10002 "080-test1wor" ;
+    rdawo:P10256 <http://marc2rda.edu/fake/concept/udc/002>,
+        <http://marc2rda.edu/fake/concept/udc/0063>,
+        <http://marc2rda.edu/fake/concept/udc/0084501316>,
+        <http://marc2rda.edu/fake/concept/udc/008927415>,
+        <http://marc2rda.edu/fake/concept/udc/082>,
+        <http://marc2rda.edu/fake/concept/udc/0961>,
+        <http://marc2rda.edu/fake/concept/udc/1138>,
+        <http://marc2rda.edu/fake/concept/udc/1446>,
+        <http://marc2rda.edu/fake/concept/udc/159964282>,
+        <http://marc2rda.edu/fake/concept/udc/164>,
+        <http://marc2rda.edu/fake/concept/udc/1cavellstanley>,
+        <http://marc2rda.edu/fake/concept/udc/2824101516>,
+        <http://marc2rda.edu/fake/concept/udc/301043>,
+        <http://marc2rda.edu/fake/concept/udc/30223>,
+        <http://marc2rda.edu/fake/concept/udc/306874>,
+        <http://marc2rda.edu/fake/concept/udc/31662>,
+        <http://marc2rda.edu/fake/concept/udc/32101>,
+        <http://marc2rda.edu/fake/concept/udc/32shakespeare>,
+        <http://marc2rda.edu/fake/concept/udc/34011442>,
+        <http://marc2rda.edu/fake/concept/udc/340122>,
+        <http://marc2rda.edu/fake/concept/udc/34272605524209>,
+        <http://marc2rda.edu/fake/concept/udc/347303>,
+        <http://marc2rda.edu/fake/concept/udc/3474>,
+        <http://marc2rda.edu/fake/concept/udc/34796508>,
+        <http://marc2rda.edu/fake/concept/udc/3482233>,
+        <http://marc2rda.edu/fake/concept/udc/348223308>,
+        <http://marc2rda.edu/fake/concept/udc/3484209>,
+        <http://marc2rda.edu/fake/concept/udc/3701>,
+        <http://marc2rda.edu/fake/concept/udc/3926>,
+        <http://marc2rda.edu/fake/concept/udc/417034035166181sol>,
+        <http://marc2rda.edu/fake/concept/udc/41703418dia>,
+        <http://marc2rda.edu/fake/concept/udc/417047har>,
+        <http://marc2rda.edu/fake/concept/udc/41707105496olu>,
+        <http://marc2rda.edu/fake/concept/udc/6162418091>,
+        <http://marc2rda.edu/fake/concept/udc/6182>,
+        <http://marc2rda.edu/fake/concept/udc/66558kar>,
+        <http://marc2rda.edu/fake/concept/udc/7025026>,
+        <http://marc2rda.edu/fake/concept/udc/70947097821111shakespearewilliam>,
+        <http://marc2rda.edu/fake/concept/udc/74101618>,
+        <http://marc2rda.edu/fake/concept/udc/7467>,
+        <http://marc2rda.edu/fake/concept/udc/757319ray>,
+        <http://marc2rda.edu/fake/concept/udc/79141>,
+        <http://marc2rda.edu/fake/concept/udc/791411>,
+        <http://marc2rda.edu/fake/concept/udc/7914301081>,
+        <http://marc2rda.edu/fake/concept/udc/79143821111shakespearewilliam>,
+        <http://marc2rda.edu/fake/concept/udc/791453>,
+        <http://marc2rda.edu/fake/concept/udc/791464>,
+        <http://marc2rda.edu/fake/concept/udc/792>,
+        <http://marc2rda.edu/fake/concept/udc/79201>,
+        <http://marc2rda.edu/fake/concept/udc/79203454101>,
+        <http://marc2rda.edu/fake/concept/udc/7920942>,
+        <http://marc2rda.edu/fake/concept/udc/7922kar>,
+        <http://marc2rda.edu/fake/concept/udc/79241018>,
+        <http://marc2rda.edu/fake/concept/udc/7924392118>,
+        <http://marc2rda.edu/fake/concept/udc/792460091>,
+        <http://marc2rda.edu/fake/concept/udc/7928134091>,
+        <http://marc2rda.edu/fake/concept/udc/80929375>,
+        <http://marc2rda.edu/fake/concept/udc/8097>,
+        <http://marc2rda.edu/fake/concept/udc/80993554>,
+        <http://marc2rda.edu/fake/concept/udc/811111821417>,
+        <http://marc2rda.edu/fake/concept/udc/812554>,
+        <http://marc2rda.edu/fake/concept/udc/820>,
+        <http://marc2rda.edu/fake/concept/udc/820091>,
+        <http://marc2rda.edu/fake/concept/udc/820091215168945114392109118>,
+        <http://marc2rda.edu/fake/concept/udc/8209>,
+        <http://marc2rda.edu/fake/concept/udc/82091>,
+        <http://marc2rda.edu/fake/concept/udc/820shakespearewilliam106>,
+        <http://marc2rda.edu/fake/concept/udc/821111>,
+        <http://marc2rda.edu/fake/concept/udc/8211110>,
+        <http://marc2rda.edu/fake/concept/udc/82111109>,
+        <http://marc2rda.edu/fake/concept/udc/821111091516>,
+        <http://marc2rda.edu/fake/concept/udc/8211110919>,
+        <http://marc2rda.edu/fake/concept/udc/821111091920>,
+        <http://marc2rda.edu/fake/concept/udc/82111111517>,
+        <http://marc2rda.edu/fake/concept/udc/821111161709>,
+        <http://marc2rda.edu/fake/concept/udc/82111118>,
+        <http://marc2rda.edu/fake/concept/udc/82111120915>,
+        <http://marc2rda.edu/fake/concept/udc/8211112091516>,
+        <http://marc2rda.edu/fake/concept/udc/82111120917>,
+        <http://marc2rda.edu/fake/concept/udc/82111121516>,
+        <http://marc2rda.edu/fake/concept/udc/8211112151609>,
+        <http://marc2rda.edu/fake/concept/udc/82111121517>,
+        <http://marc2rda.edu/fake/concept/udc/821111216>,
+        <http://marc2rda.edu/fake/concept/udc/82111121609>,
+        <http://marc2rda.edu/fake/concept/udc/82111121718>,
+        <http://marc2rda.edu/fake/concept/udc/8211112shakespearewilliam>,
+        <http://marc2rda.edu/fake/concept/udc/8211112shakespearewilliam09>,
+        <http://marc2rda.edu/fake/concept/udc/8211113joycejames09>,
+        <http://marc2rda.edu/fake/concept/udc/82111173>,
+        <http://marc2rda.edu/fake/concept/udc/821111shakespearewilliam>,
+        <http://marc2rda.edu/fake/concept/udc/821111shakespearewilliam07>,
+        <http://marc2rda.edu/fake/concept/udc/821111shakespearewilliam09>,
+        <http://marc2rda.edu/fake/concept/udc/821111shakespearewilliam107>,
+        <http://marc2rda.edu/fake/concept/udc/821111shakespearewilliam1romeoandjuliet>,
+        <http://marc2rda.edu/fake/concept/udc/821111shakespearewilliam7ham07>,
+        <http://marc2rda.edu/fake/concept/udc/821111shakespearewilliam7hamlet>,
+        <http://marc2rda.edu/fake/concept/udc/821111shakespearewilliam7loverscomplaint06>,
+        <http://marc2rda.edu/fake/concept/udc/821111shakesperarewilliam2031342>,
+        <http://marc2rda.edu/fake/concept/udc/821111shakesperarewilliam2031343>,
+        <http://marc2rda.edu/fake/concept/udc/821112209>,
+        <http://marc2rda.edu/fake/concept/udc/82112402ovidi107>,
+        <http://marc2rda.edu/fake/concept/udc/8211342>,
+        <http://marc2rda.edu/fake/concept/udc/821134209>,
+        <http://marc2rda.edu/fake/concept/udc/8211342cervantessaavedramiguelde107>,
+        <http://marc2rda.edu/fake/concept/udc/821315>,
+        <http://marc2rda.edu/fake/concept/udc/822>,
+        <http://marc2rda.edu/fake/concept/udc/822209>,
+        <http://marc2rda.edu/fake/concept/udc/8223>,
+        <http://marc2rda.edu/fake/concept/udc/8223308>,
+        <http://marc2rda.edu/fake/concept/udc/8300911719>,
+        <http://marc2rda.edu/fake/concept/udc/83075>,
+        <http://marc2rda.edu/fake/concept/udc/89451108119200081>,
+        <http://marc2rda.edu/fake/concept/udc/9104>,
+        <http://marc2rda.edu/fake/concept/udc/929shakespearewilliam>,
+        <http://marc2rda.edu/fake/concept/udc/94450>,
+        <http://marc2rda.edu/fake/concept/udc/bacon>,
+        <http://marc2rda.edu/fake/concept/udc/consg12doc>,
+        <http://marc2rda.edu/fake/concept/udc/fuseli>,
+        <http://marc2rda.edu/fake/concept/udc/lonbri>,
+        <http://marc2rda.edu/fake/concept/udc/lonnat>,
+        <http://marc2rda.edu/fake/concept/udc/pettib>,
+        <http://marc2rda.edu/fake/concept/udc/pn1650g56>,
+        <http://marc2rda.edu/fake/concept/udc/pr2989t762018>,
+        <http://marc2rda.edu/fake/concept/udcabridged/820091>,
+        <http://marc2rda.edu/fake/concept/udcabridged/8201416091>,
+        <http://marc2rda.edu/fake/concept/udcabridged/840182091ber> .
+
+<http://marc2rda.edu/fake/concept/udc/002> a skos:Concept ;
+    skos:altLabel "002" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "002" .
+
+<http://marc2rda.edu/fake/concept/udc/0063> a skos:Concept ;
+    skos:altLabel "006.3" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "006.3" .
+
+<http://marc2rda.edu/fake/concept/udc/0084501316> a skos:Concept ;
+    skos:altLabel "008(450)\"13/16\"" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "008(450)\"13/16\"" .
+
+<http://marc2rda.edu/fake/concept/udc/008927415> a skos:Concept ;
+    skos:altLabel "008(=927)(4-15)" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "008(=927)(4-15)" .
+
+<http://marc2rda.edu/fake/concept/udc/082> a skos:Concept ;
+    skos:altLabel "(082)" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "(082)" .
+
+<http://marc2rda.edu/fake/concept/udc/0961> a skos:Concept ;
+    skos:altLabel "096.1" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "096.1" .
+
+<http://marc2rda.edu/fake/concept/udc/1138> a skos:Concept ;
+    skos:altLabel "113.8" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "113.8" .
+
+<http://marc2rda.edu/fake/concept/udc/1446> a skos:Concept ;
+    skos:altLabel "144.6" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "144.6" .
+
+<http://marc2rda.edu/fake/concept/udc/159964282> a skos:Concept ;
+    skos:altLabel "159..964.2:82" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "159..964.2:82" .
+
+<http://marc2rda.edu/fake/concept/udc/164> a skos:Concept ;
+    skos:altLabel "164" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "164" .
+
+<http://marc2rda.edu/fake/concept/udc/1cavellstanley> a skos:Concept ;
+    skos:altLabel "1 Cavell, Stanley" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "1 Cavell, Stanley" .
+
+<http://marc2rda.edu/fake/concept/udc/2824101516> a skos:Concept ;
+    skos:altLabel "2:82(410)\"15/16\"" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "2:82(410)\"15/16\"" .
+
+<http://marc2rda.edu/fake/concept/udc/301043> a skos:Concept ;
+    skos:altLabel "301.043" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "301.043" .
+
+<http://marc2rda.edu/fake/concept/udc/30223> a skos:Concept ;
+    skos:altLabel "302.23" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "302.23" .
+
+<http://marc2rda.edu/fake/concept/udc/306874> a skos:Concept ;
+    skos:altLabel "306.874" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "306.874" .
+
+<http://marc2rda.edu/fake/concept/udc/31662> a skos:Concept ;
+    skos:altLabel "316.62" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "316.62" .
+
+<http://marc2rda.edu/fake/concept/udc/32101> a skos:Concept ;
+    skos:altLabel "321.01" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "321.01" .
+
+<http://marc2rda.edu/fake/concept/udc/32shakespeare> a skos:Concept ;
+    skos:altLabel "32Shakespeare" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "32Shakespeare" .
+
+<http://marc2rda.edu/fake/concept/udc/34011442> a skos:Concept ;
+    skos:altLabel "340.114(42)" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "340.114(42)" .
+
+<http://marc2rda.edu/fake/concept/udc/340122> a skos:Concept ;
+    skos:altLabel "340.122" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "340.122" .
+
+<http://marc2rda.edu/fake/concept/udc/34272605524209> a skos:Concept ;
+    skos:altLabel "342.726-055.2(42)(09)" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "342.726-055.2(42)(09)" .
+
+<http://marc2rda.edu/fake/concept/udc/347303> a skos:Concept ;
+    skos:altLabel "34(73)(03)" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "34(73)(03)" .
+
+<http://marc2rda.edu/fake/concept/udc/3474> a skos:Concept ;
+    skos:altLabel "347.4" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "347.4" .
+
+<http://marc2rda.edu/fake/concept/udc/34796508> a skos:Concept ;
+    skos:altLabel "347.965(08)" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "347.965(08)" .
+
+<http://marc2rda.edu/fake/concept/udc/3482233> a skos:Concept ;
+    skos:altLabel "34:822.33" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "34:822.33" .
+
+<http://marc2rda.edu/fake/concept/udc/348223308> a skos:Concept ;
+    skos:altLabel "34:822.33(08)" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "34:822.33(08)" .
+
+<http://marc2rda.edu/fake/concept/udc/3484209> a skos:Concept ;
+    skos:altLabel "34:8(42)(09)" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "34:8(42)(09)" .
+
+<http://marc2rda.edu/fake/concept/udc/3701> a skos:Concept ;
+    skos:altLabel "37.01" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "37.01" .
+
+<http://marc2rda.edu/fake/concept/udc/3926> a skos:Concept ;
+    skos:altLabel "392.6" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "392.6" .
+
+<http://marc2rda.edu/fake/concept/udc/417034035166181sol> a skos:Concept ;
+    skos:altLabel "(41)7.034/.035\"166/181\" SOL" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "(41)7.034/.035\"166/181\" SOL" .
+
+<http://marc2rda.edu/fake/concept/udc/41703418dia> a skos:Concept ;
+    skos:altLabel "(41)7.034 \"18\" DIA" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "(41)7.034 \"18\" DIA" .
+
+<http://marc2rda.edu/fake/concept/udc/417047har> a skos:Concept ;
+    skos:altLabel "(41)7.047 HAR" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "(41)7.047 HAR" .
+
+<http://marc2rda.edu/fake/concept/udc/41707105496olu> a skos:Concept ;
+    skos:altLabel "(41)7.071-054(=96) OLU" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "(41)7.071-054(=96) OLU" .
+
+<http://marc2rda.edu/fake/concept/udc/6162418091> a skos:Concept ;
+    skos:altLabel "616.24\"18\"(091)" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "616.24\"18\"(091)" .
+
+<http://marc2rda.edu/fake/concept/udc/6182> a skos:Concept ;
+    skos:altLabel "61:82" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "61:82" .
+
+<http://marc2rda.edu/fake/concept/udc/66558kar> a skos:Concept ;
+    skos:altLabel "665.58 KAR" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "665.58 KAR" .
+
+<http://marc2rda.edu/fake/concept/udc/7025026> a skos:Concept ;
+    skos:altLabel "7.025/.026" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "7.025/.026" .
+
+<http://marc2rda.edu/fake/concept/udc/70947097821111shakespearewilliam> a skos:Concept ;
+    skos:altLabel "7.094/7.097:821.111Shakespeare, William" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "7.094/7.097:821.111Shakespeare, William" .
+
+<http://marc2rda.edu/fake/concept/udc/74101618> a skos:Concept ;
+    skos:altLabel "7(410)\"16/18\"" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "7(410)\"16/18\"" .
+
+<http://marc2rda.edu/fake/concept/udc/7467> a skos:Concept ;
+    skos:altLabel "746.7" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "746.7" .
+
+<http://marc2rda.edu/fake/concept/udc/757319ray> a skos:Concept ;
+    skos:altLabel "75(73)-19-RAY" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "75(73)-19-RAY" .
+
+<http://marc2rda.edu/fake/concept/udc/79141> a skos:Concept ;
+    skos:altLabel "791.41" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "791.41" .
+
+<http://marc2rda.edu/fake/concept/udc/791411> a skos:Concept ;
+    skos:altLabel "791.411" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "791.411" .
+
+<http://marc2rda.edu/fake/concept/udc/7914301081> a skos:Concept ;
+    skos:altLabel "791.43.01(081)" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "791.43.01(081)" .
+
+<http://marc2rda.edu/fake/concept/udc/79143821111shakespearewilliam> a skos:Concept ;
+    skos:altLabel "791.43:821.111 Shakespeare, William" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "791.43:821.111 Shakespeare, William" .
+
+<http://marc2rda.edu/fake/concept/udc/791453> a skos:Concept ;
+    skos:altLabel "791.453" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "791.453" .
+
+<http://marc2rda.edu/fake/concept/udc/791464> a skos:Concept ;
+    skos:altLabel "791.464" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "791.464" .
+
+<http://marc2rda.edu/fake/concept/udc/792> a skos:Concept ;
+    skos:altLabel "792" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "792" .
+
+<http://marc2rda.edu/fake/concept/udc/79201> a skos:Concept ;
+    skos:altLabel "792.01" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "792.01" .
+
+<http://marc2rda.edu/fake/concept/udc/79203454101> a skos:Concept ;
+    skos:altLabel "792.034.5(410.1)" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "792.034.5(410.1)" .
+
+<http://marc2rda.edu/fake/concept/udc/7920942> a skos:Concept ;
+    skos:altLabel "792.09(42)" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "792.09(42)" .
+
+<http://marc2rda.edu/fake/concept/udc/7922kar> a skos:Concept ;
+    skos:altLabel "792.2 KAR" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "792.2 KAR" .
+
+<http://marc2rda.edu/fake/concept/udc/79241018> a skos:Concept ;
+    skos:altLabel "792(410)\"18\"" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "792(410)\"18\"" .
+
+<http://marc2rda.edu/fake/concept/udc/7924392118> a skos:Concept ;
+    skos:altLabel "792(439.21)\"18\"" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "792(439.21)\"18\"" .
+
+<http://marc2rda.edu/fake/concept/udc/792460091> a skos:Concept ;
+    skos:altLabel "792(460)(091)" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "792(460)(091)" .
+
+<http://marc2rda.edu/fake/concept/udc/7928134091> a skos:Concept ;
+    skos:altLabel "792(8=134)(091)" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "792(8=134)(091)" .
+
+<http://marc2rda.edu/fake/concept/udc/80929375> a skos:Concept ;
+    skos:altLabel "809.2/9375" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "809.2/9375" .
+
+<http://marc2rda.edu/fake/concept/udc/8097> a skos:Concept ;
+    skos:altLabel "809/.7" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "809/.7" .
+
+<http://marc2rda.edu/fake/concept/udc/80993554> a skos:Concept ;
+    skos:altLabel "809.93554" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "809.93554" .
+
+<http://marc2rda.edu/fake/concept/udc/811111821417> a skos:Concept ;
+    skos:altLabel "811.111.82\"14/17\"" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "811.111.82\"14/17\"" .
+
+<http://marc2rda.edu/fake/concept/udc/812554> a skos:Concept ;
+    skos:altLabel "81'255.4" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "81'255.4" .
+
+<http://marc2rda.edu/fake/concept/udc/820> a skos:Concept ;
+    skos:altLabel "82.0" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "82.0" .
+
+<http://marc2rda.edu/fake/concept/udc/820091> a skos:Concept ;
+    skos:altLabel "820(091)" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "820(091)" .
+
+<http://marc2rda.edu/fake/concept/udc/820091215168945114392109118> a skos:Concept ;
+    skos:altLabel "820(091)-2\"15/16\":894.511(439.21).091\"18\"" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "820(091)-2\"15/16\":894.511(439.21).091\"18\"" .
+
+<http://marc2rda.edu/fake/concept/udc/8209> a skos:Concept ;
+    skos:altLabel "82.09" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "82.09" .
+
+<http://marc2rda.edu/fake/concept/udc/82091> a skos:Concept ;
+    skos:altLabel "82.091" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "82.091" .
+
+<http://marc2rda.edu/fake/concept/udc/820shakespearewilliam106> a skos:Concept ;
+    skos:altLabel "820Shakespeare, William1.06" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "820Shakespeare, William1.06" .
+
+<http://marc2rda.edu/fake/concept/udc/821111> a skos:Concept ;
+    skos:altLabel "821.111" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111" .
+
+<http://marc2rda.edu/fake/concept/udc/8211110> a skos:Concept ;
+    skos:altLabel "821.111.0" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111.0" .
+
+<http://marc2rda.edu/fake/concept/udc/82111109> a skos:Concept ;
+    skos:altLabel "821.111.09" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111.09" .
+
+<http://marc2rda.edu/fake/concept/udc/821111091516> a skos:Concept ;
+    skos:altLabel "821.111.09\"15/16\"" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111.09\"15/16\"" .
+
+<http://marc2rda.edu/fake/concept/udc/8211110919> a skos:Concept ;
+    skos:altLabel "821.111.09\"19\"" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111.09\"19\"" .
+
+<http://marc2rda.edu/fake/concept/udc/821111091920> a skos:Concept ;
+    skos:altLabel "821.111.09\"19/20\"" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111.09\"19/20\"" .
+
+<http://marc2rda.edu/fake/concept/udc/82111111517> a skos:Concept ;
+    skos:altLabel "821.111-1\"15/17\"" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111-1\"15/17\"" .
+
+<http://marc2rda.edu/fake/concept/udc/821111161709> a skos:Concept ;
+    skos:altLabel "821.111\"16/17\".09" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111\"16/17\".09" .
+
+<http://marc2rda.edu/fake/concept/udc/82111118> a skos:Concept ;
+    skos:altLabel "821.111\"18\"" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111\"18\"" .
+
+<http://marc2rda.edu/fake/concept/udc/82111120915> a skos:Concept ;
+    skos:altLabel "821.111-2.09\"15\"" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111-2.09\"15\"" .
+
+<http://marc2rda.edu/fake/concept/udc/8211112091516> a skos:Concept ;
+    skos:altLabel "821.111-2.09 \"15/16\"",
+        "821.111-2.09\"15/16\"" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111-2.09 \"15/16\"",
+        "821.111-2.09\"15/16\"" .
+
+<http://marc2rda.edu/fake/concept/udc/82111120917> a skos:Concept ;
+    skos:altLabel "821.111-2.09\"17\"" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111-2.09\"17\"" .
+
+<http://marc2rda.edu/fake/concept/udc/82111121516> a skos:Concept ;
+    skos:altLabel "821.111-2\"15/16\"" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111-2\"15/16\"" .
+
+<http://marc2rda.edu/fake/concept/udc/8211112151609> a skos:Concept ;
+    skos:altLabel "821.111-2\"15/16\".09" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111-2\"15/16\".09" .
+
+<http://marc2rda.edu/fake/concept/udc/82111121517> a skos:Concept ;
+    skos:altLabel "821.111-2\"15/17\"" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111-2\"15/17\"" .
+
+<http://marc2rda.edu/fake/concept/udc/821111216> a skos:Concept ;
+    skos:altLabel "821.111-2\"16\"" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111-2\"16\"" .
+
+<http://marc2rda.edu/fake/concept/udc/82111121609> a skos:Concept ;
+    skos:altLabel "821.111-2\"../16\".09" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111-2\"../16\".09" .
+
+<http://marc2rda.edu/fake/concept/udc/82111121718> a skos:Concept ;
+    skos:altLabel "821.111-2\"17/18\"" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111-2\"17/18\"" .
+
+<http://marc2rda.edu/fake/concept/udc/8211112shakespearewilliam> a skos:Concept ;
+    skos:altLabel "821.111-2 Shakespeare, William" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111-2 Shakespeare, William" .
+
+<http://marc2rda.edu/fake/concept/udc/8211112shakespearewilliam09> a skos:Concept ;
+    skos:altLabel "821.111-2Shakespeare, William.09" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111-2Shakespeare, William.09" .
+
+<http://marc2rda.edu/fake/concept/udc/8211113joycejames09> a skos:Concept ;
+    skos:altLabel "821.111-3 Joyce, James.09" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111-3 Joyce, James.09" .
+
+<http://marc2rda.edu/fake/concept/udc/82111173> a skos:Concept ;
+    skos:altLabel "821.111(73)" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111(73)" .
+
+<http://marc2rda.edu/fake/concept/udc/821111shakespearewilliam> a skos:Concept ;
+    skos:altLabel "821.111 Shakespeare, William",
+        "821.111Shakespeare, William" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111 Shakespeare, William",
+        "821.111Shakespeare, William" .
+
+<http://marc2rda.edu/fake/concept/udc/821111shakespearewilliam07> a skos:Concept ;
+    skos:altLabel "821.111Shakespeare, William.07" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111Shakespeare, William.07" .
+
+<http://marc2rda.edu/fake/concept/udc/821111shakespearewilliam09> a skos:Concept ;
+    skos:altLabel "821.111 Shakespeare, William.09",
+        "821.111Shakespeare, William.09" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111 Shakespeare, William.09",
+        "821.111Shakespeare, William.09" .
+
+<http://marc2rda.edu/fake/concept/udc/821111shakespearewilliam107> a skos:Concept ;
+    skos:altLabel "821.111 Shakespeare, William 1.07",
+        "821.111 Shakespeare, William1.07",
+        "821.111Shakespeare, William1.07" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111 Shakespeare, William 1.07",
+        "821.111 Shakespeare, William1.07",
+        "821.111Shakespeare, William1.07" .
+
+<http://marc2rda.edu/fake/concept/udc/821111shakespearewilliam1romeoandjuliet> a skos:Concept ;
+    skos:altLabel "821.111Shakespeare, William1Romeo and Juliet" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111Shakespeare, William1Romeo and Juliet" .
+
+<http://marc2rda.edu/fake/concept/udc/821111shakespearewilliam7ham07> a skos:Concept ;
+    skos:altLabel "821.111Shakespeare, William7ham.07" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111Shakespeare, William7ham.07" .
+
+<http://marc2rda.edu/fake/concept/udc/821111shakespearewilliam7hamlet> a skos:Concept ;
+    skos:altLabel "821.111 Shakespeare, William 7 Hamlet" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111 Shakespeare, William 7 Hamlet" .
+
+<http://marc2rda.edu/fake/concept/udc/821111shakespearewilliam7loverscomplaint06> a skos:Concept ;
+    skos:altLabel "821.111 Shakespeare, William 7 Lovers complaint.06" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111 Shakespeare, William 7 Lovers complaint.06" .
+
+<http://marc2rda.edu/fake/concept/udc/821111shakesperarewilliam2031342> a skos:Concept ;
+    skos:altLabel "821.111 Shakesperare, William 2.03=134.2" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111 Shakesperare, William 2.03=134.2" .
+
+<http://marc2rda.edu/fake/concept/udc/821111shakesperarewilliam2031343> a skos:Concept ;
+    skos:altLabel "821.111 Shakesperare, William 2.03=134.3" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.111 Shakesperare, William 2.03=134.3" .
+
+<http://marc2rda.edu/fake/concept/udc/821112209> a skos:Concept ;
+    skos:altLabel "821.112.2.09" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.112.2.09" .
+
+<http://marc2rda.edu/fake/concept/udc/82112402ovidi107> a skos:Concept ;
+    skos:altLabel "821.124'02 Ovidi 1.07" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.124'02 Ovidi 1.07" .
+
+<http://marc2rda.edu/fake/concept/udc/8211342> a skos:Concept ;
+    skos:altLabel "821.134.2" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.134.2" .
+
+<http://marc2rda.edu/fake/concept/udc/821134209> a skos:Concept ;
+    skos:altLabel "821.134.2.09" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.134.2.09" .
+
+<http://marc2rda.edu/fake/concept/udc/8211342cervantessaavedramiguelde107> a skos:Concept ;
+    skos:altLabel "821.134.2Cervantes Saavedra, Miguel de1.07" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "821.134.2Cervantes Saavedra, Miguel de1.07" .
+
+<http://marc2rda.edu/fake/concept/udc/821315> a skos:Concept ;
+    skos:altLabel "82\"13/15\"" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "82\"13/15\"" .
+
+<http://marc2rda.edu/fake/concept/udc/822> a skos:Concept ;
+    skos:altLabel "82-2" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "82-2" .
+
+<http://marc2rda.edu/fake/concept/udc/822209> a skos:Concept ;
+    skos:altLabel "82-22.09" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "82-22.09" .
+
+<http://marc2rda.edu/fake/concept/udc/8223> a skos:Concept ;
+    skos:altLabel "822.3" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "822.3" .
+
+<http://marc2rda.edu/fake/concept/udc/8223308> a skos:Concept ;
+    skos:altLabel "822.33(08)" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "822.33(08)" .
+
+<http://marc2rda.edu/fake/concept/udc/8300911719> a skos:Concept ;
+    skos:altLabel "830(091)\"17/19\"" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "830(091)\"17/19\"" .
+
+<http://marc2rda.edu/fake/concept/udc/83075> a skos:Concept ;
+    skos:altLabel "83(075)" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "83(075)" .
+
+<http://marc2rda.edu/fake/concept/udc/89451108119200081> a skos:Concept ;
+    skos:altLabel "894.511.081\"19/200\"(081)" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "894.511.081\"19/200\"(081)" .
+
+<http://marc2rda.edu/fake/concept/udc/9104> a skos:Concept ;
+    skos:altLabel "910.4" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "910.4" .
+
+<http://marc2rda.edu/fake/concept/udc/929shakespearewilliam> a skos:Concept ;
+    skos:altLabel "929 Shakespeare, William" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "929 Shakespeare, William" .
+
+<http://marc2rda.edu/fake/concept/udc/94450> a skos:Concept ;
+    skos:altLabel "94(450)" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "94(450)" .
+
+<http://marc2rda.edu/fake/concept/udc/bacon> a skos:Concept ;
+    skos:altLabel "BACON" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "BACON" .
+
+<http://marc2rda.edu/fake/concept/udc/consg12doc> a skos:Concept ;
+    skos:altLabel "CONS G.12 DOC" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "CONS G.12 DOC" .
+
+<http://marc2rda.edu/fake/concept/udc/fuseli> a skos:Concept ;
+    skos:altLabel "FUSELI" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "FUSELI" .
+
+<http://marc2rda.edu/fake/concept/udc/lonbri> a skos:Concept ;
+    skos:altLabel "LON-BRI" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "LON-BRI" .
+
+<http://marc2rda.edu/fake/concept/udc/lonnat> a skos:Concept ;
+    skos:altLabel "LON-NAT" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "LON-NAT" .
+
+<http://marc2rda.edu/fake/concept/udc/pettib> a skos:Concept ;
+    skos:altLabel "PETTIB" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "PETTIB" .
+
+<http://marc2rda.edu/fake/concept/udc/pn1650g56> a skos:Concept ;
+    skos:altLabel "PN1650.G56" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "PN1650.G56" .
+
+<http://marc2rda.edu/fake/concept/udc/pr2989t762018> a skos:Concept ;
+    skos:altLabel "PR2989 .T76 2018" ;
+    skos:inScheme <http://id.loc.gov/vocabulary/classSchemes/udc> ;
+    skos:notation "PR2989 .T76 2018" .
+
+<http://marc2rda.edu/fake/concept/udcabridged/820091> a skos:Concept ;
+    skos:altLabel "820(091)" ;
+    skos:inScheme "UDC; Abridged" ;
+    skos:notation "820(091)" .
+
+<http://marc2rda.edu/fake/concept/udcabridged/8201416091> a skos:Concept ;
+    skos:altLabel "820\"14/16\"(091)" ;
+    skos:inScheme "UDC; Abridged" ;
+    skos:notation "820\"14/16\"(091)" .
+
+<http://marc2rda.edu/fake/concept/udcabridged/840182091ber> a skos:Concept ;
+    skos:altLabel "840\"18\"-2(091)BER" ;
+    skos:inScheme "UDC; Abridged" ;
+    skos:notation "840\"18\"-2(091)BER" .
+
