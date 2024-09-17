@@ -88,16 +88,14 @@
                 <xsl:if test="uwf:testBrackets($title) = true()">
                     <rdamd:P30137>Title proper {uwf:getBracketedData($title)}is assigned by the cataloguing agency.</rdamd:P30137>
                 </xsl:if>
-                <xsl:if test="$isISBD = true()">
-                    <xsl:if test="uwf:testBrackets(marc:subfield[@code = 'a']) = true()">
-                        <rdamd:P30137>Title proper {uwf:getBracketedData(marc:subfield[@code = 'a'])} is assigned by the cataloguing agency.</rdamd:P30137>
-                    </xsl:if>
-                    <xsl:for-each select="marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::*[@code = 'b'])]">
-                        <xsl:if test="uwf:testBrackets(.) = true()">
-                            <rdamd:P30137>Title proper {uwf:getBracketedData(.)} is assigned by the cataloguing agency.</rdamd:P30137>
-                        </xsl:if>
-                    </xsl:for-each>
+                <xsl:if test="uwf:testBrackets(marc:subfield[@code = 'a']) = true()">
+                    <rdamd:P30137>Title proper {uwf:getBracketedData(marc:subfield[@code = 'a'])} is assigned by the cataloguing agency.</rdamd:P30137>
                 </xsl:if>
+                <xsl:for-each select="marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::*[@code = 'b'])]">
+                    <xsl:if test="uwf:testBrackets(.) = true()">
+                        <rdamd:P30137>Title proper {uwf:getBracketedData(.)} is assigned by the cataloguing agency.</rdamd:P30137>
+                    </xsl:if>
+                </xsl:for-each>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -144,7 +142,7 @@
                 </xsl:otherwise>
             </xsl:choose>
         </rdamd:P30156>
-        <rdamd:P30137>Title proper {uwf:getBracketedData($title)} is assigned by the cataloguing agency.</rdamd:P30137>
+        <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137>
     </xsl:template>
     
     <xsl:template name="F245-xx-b-ISBD">
@@ -204,7 +202,7 @@
                                                         </rdamd:P30142>
                                                         <xsl:if test="uwf:testBrackets(.) = true()">
                                                             <rdamd:P30137>
-                                                                <xsl:text>Other title {uwf:getBracketedData(.)} information is assigned by the cataloguing agency.</xsl:text>
+                                                                <xsl:text>Other title information {uwf:getBracketedData(.)} is assigned by the cataloguing agency.</xsl:text>
                                                             </rdamd:P30137>
                                                         </xsl:if>
                                                     </xsl:when>
@@ -434,7 +432,7 @@
                                                 </rdamd:P30142>
                                                 <xsl:if test="uwf:testBrackets(.) = true()">
                                                     <rdamd:P30137>
-                                                        <xsl:text>Other title {uwf:getBracketedData(.)} information is assigned by the cataloguing agency.</xsl:text>
+                                                        <xsl:text>Other title information {uwf:getBracketedData(.)} is assigned by the cataloguing agency.</xsl:text>
                                                     </rdamd:P30137>
                                                 </xsl:if>
                                             </xsl:when>

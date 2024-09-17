@@ -3,7 +3,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>245-test0wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <fake:marcfield>F245 10 $a [James Anderson [junior] correspondence].</fake:marcfield>
-      <rdawd:P10088>James Anderson [junior] correspondence</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawd:P10088>James Anderson [junior] correspondence.</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test0exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -14,7 +14,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test0exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a [James Anderson [junior] correspondence].</fake:marcfield>
-      <rdamd:P30156>James Anderson [junior] correspondence</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30156>James Anderson [junior] correspondence.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30137>Title proper [James Anderson [junior] correspondence] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test0wor">
@@ -33,7 +33,7 @@
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test0exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 00 $k Letter, $f 1901 March 6, $b Dublin, to Henrik Ibsen, Kristiana [Oslo].</fake:marcfield>
       <rdamd:P30156>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo].</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Title proper [Oslo] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30278>1901 March 6</rdamd:P30278><!--rdamd:P30278 = has date of manifestation-->
       <rdamd:P30137>Letter.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
@@ -56,7 +56,7 @@
       <rdamd:P30142>unravelling the story of the two poets</rdamd:P30142><!--rdamd:P30142 = has other title information-->
       <rdamd:P30137>Other title information [unravelling the story of the two poets] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30105>Peter Dawkins</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30105>foreword by Mark Rylance</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30105>foreword by Mark Rylance.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
       <rdamd:P30137>Statement of responsibility [foreword by Mark Rylance] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test3wor">
@@ -114,7 +114,7 @@
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test5exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a Sonnett für Wien : $b [songs of Erich Korngold].</fake:marcfield>
       <rdamd:P30156>Sonnett für Wien</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30142>songs of Erich Korngold</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30142>songs of Erich Korngold.</rdamd:P30142><!--rdamd:P30142 = has other title information-->
       <rdamd:P30137>Other title information [songs of Erich Korngold] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test6wor">
@@ -178,7 +178,7 @@
       <rdamd:P30142>set of parts</rdamd:P30142><!--rdamd:P30142 = has other title information-->
       <rdamd:P30137>Other title information [set of parts] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30105>[music by] Kaijia Saariaho</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30105>lyrics from The Tempest by William Shakespeare</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30105>lyrics from The Tempest by William Shakespeare.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
       <rdamd:P30137>Statement of responsibility [lyrics from The Tempest by William Shakespeare] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test12wor">
@@ -221,7 +221,7 @@
       <fake:marcfield>F245 10 $a Lambe Latin : $b tales of a mantua maker and her brother, from the South Sea Co. to the Merchant of Venice / [by Angela Lorenz].</fake:marcfield>
       <rdamd:P30156>Lambe Latin</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30142>tales of a mantua maker and her brother, from the South Sea Co. to the Merchant of Venice</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30105>by Angela Lorenz</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30105>by Angela Lorenz.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
       <rdamd:P30137>Statement of responsibility [by Angela Lorenz] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test14wor">
@@ -248,7 +248,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>245-test15wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <fake:marcfield>F245 10 $a Kill Shakespeare. $n [Volume 1], $p A sea of troubles / $c created and written by Conor McCreery and Anthony Del Col ; art by Andy Belanger ; colors by Ian Herring ; lettering by Chris Mowry, Robbie Robbins, and Neil Uyetake.</fake:marcfield>
-      <rdawd:P10088>Kill Shakespeare. Volume 1 A sea of troubles</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawd:P10088>Kill Shakespeare. Volume 1, A sea of troubles</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test15exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -259,7 +259,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test15exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a Kill Shakespeare. $n [Volume 1], $p A sea of troubles / $c created and written by Conor McCreery and Anthony Del Col ; art by Andy Belanger ; colors by Ian Herring ; lettering by Chris Mowry, Robbie Robbins, and Neil Uyetake.</fake:marcfield>
-      <rdamd:P30156>Kill Shakespeare. Volume 1 A sea of troubles</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30156>Kill Shakespeare. Volume 1, A sea of troubles</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30137>Title proper [Volume 1] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30105>created and written by Conor McCreery and Anthony Del Col</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
       <rdamd:P30105>art by Andy Belanger</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
@@ -307,25 +307,6 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>245-test19wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <fake:marcfield>F245 10 $a [Rhan o waith Mr. Rees Prichard ... $h [electronic resource] $b Some part of the works of Mr. Rees Prichard.]</fake:marcfield>
-      <rdawd:P10088>[Rhan o waith Mr. Rees Prichard ...</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test19exp">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/245-test19wor"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20002>245-test19exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test19man">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test19exp"/><!--rdamo:P30139 = has expression manifested-->
-      <fake:marcfield>F245 10 $a [Rhan o waith Mr. Rees Prichard ... $h [electronic resource] $b Some part of the works of Mr. Rees Prichard.]</fake:marcfield>
-      <rdamd:P30156>[Rhan o waith Mr. Rees Prichard ...</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30142>Some part of the works of Mr. Rees Prichard.]</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30335>electronic resource</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test19wor">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>245-test19wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <fake:marcfield>F245 10 $a [Rhan o waith Mr. Rees Prichard ...] :  $b [= Some part of the works of Mr. Rees Prichard.]</fake:marcfield>
       <rdawd:P10088>Rhan o waith Mr. Rees Prichard ...</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test19exp">
@@ -336,17 +317,38 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test19man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test19exp"/><!--rdamo:P30139 = has expression manifested-->
-      <fake:marcfield>F245 10 $a [Rhan o waith Mr. Rees Prichard ...] :  $b [= Some part of the works of Mr. Rees Prichard.]</fake:marcfield>
+      <fake:marcfield>F245 10 $a [Rhan o waith Mr. Rees Prichard ... $h [electronic resource] $b Some part of the works of Mr. Rees Prichard.]</fake:marcfield>
       <rdamd:P30156>Rhan o waith Mr. Rees Prichard ...</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30137>Title proper [Rhan o waith Mr. Rees Prichard ...] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30142>= Some part of the works of Mr. Rees Prichard.</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30137>Other title [= Some part of the works of Mr. Rees Prichard.] information is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30142>Some part of the works of Mr. Rees Prichard.</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30137>Other title information [Some part of the works of Mr. Rees Prichard.] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30335>electronic resource</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test19wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>245-test19wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <fake:marcfield>F245 10 $a [Rhan o waith Mr. Rees Prichard ...] =  $b [Some part of the works of Mr. Rees Prichard.]</fake:marcfield>
+      <rdawd:P10088>Rhan o waith Mr. Rees Prichard ...</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test19exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/245-test19wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>245-test19exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test19man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test19exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F245 10 $a [Rhan o waith Mr. Rees Prichard ...] =  $b [Some part of the works of Mr. Rees Prichard.]</fake:marcfield>
+      <rdamd:P30156>Rhan o waith Mr. Rees Prichard ...</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30137>Title proper [Rhan o waith Mr. Rees Prichard ...] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30142>Some part of the works of Mr. Rees Prichard.</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30137>Other title information [Some part of the works of Mr. Rees Prichard.] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test18wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>245-test18wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <fake:marcfield>F245 10 $a [New paintings by Franz Kline :  $b opening ... December 4 to December 30, 1961 : at Sidney Janis 15 East 57 N Y].</fake:marcfield>
-      <rdawd:P10088>[New paintings by Franz Kline</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawd:P10088>New paintings by Franz Kline</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test18exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -357,15 +359,17 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test18exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a [New paintings by Franz Kline :  $b opening ... December 4 to December 30, 1961 : at Sidney Janis 15 East 57 N Y].</fake:marcfield>
-      <rdamd:P30156>[New paintings by Franz Kline</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30156>New paintings by Franz Kline</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30137>Title proper [New paintings by Franz Kline] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30142>opening ... December 4 to December 30, 1961</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30142>at Sidney Janis 15 East 57 N Y].</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30142>at Sidney Janis 15 East 57 N Y.</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30137>Other title information [at Sidney Janis 15 East 57 N Y] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test7wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>245-test7wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <fake:marcfield>F245 00 $a Shakespeare lecture series. Hamlet : structure, speeches, and staging : [acts III-IV] / $c produced by Bill Wisneski ; directed by Bill Wisneski and Chia Longtree.</fake:marcfield>
-      <rdawd:P10088>Shakespeare lecture series. Hamlet : structure, speeches, and staging : [acts III-IV]</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <fake:marcfield>F245 00 $a Shakespeare lecture series. $p Hamlet : $b structure, speeches, and staging : [acts III-IV] / $c produced by Bill Wisneski ; directed by Bill Wisneski and Chia Longtree.</fake:marcfield>
+      <rdawd:P10088>Shakespeare lecture series. Hamlet</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test7exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -375,27 +379,13 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test7man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test7exp"/><!--rdamo:P30139 = has expression manifested-->
-      <fake:marcfield>F245 00 $a Shakespeare lecture series. Hamlet : structure, speeches, and staging : [acts III-IV] / $c produced by Bill Wisneski ; directed by Bill Wisneski and Chia Longtree.</fake:marcfield>
-      <rdamd:P30156>Shakespeare lecture series. Hamlet : structure, speeches, and staging : [acts III-IV]</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <fake:marcfield>F245 00 $a Shakespeare lecture series. $p Hamlet : $b structure, speeches, and staging : [acts III-IV] / $c produced by Bill Wisneski ; directed by Bill Wisneski and Chia Longtree.</fake:marcfield>
+      <rdamd:P30156>Shakespeare lecture series. Hamlet</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30142>structure, speeches, and staging</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30142>acts III-IV</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30137>Other title information [acts III-IV] is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30105>produced by Bill Wisneski</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
       <rdamd:P30105>directed by Bill Wisneski and Chia Longtree.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test8wor">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>245-test8wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <fake:marcfield>F245 10 $a 莎士比亚故事集 = Tales from shakespeare/#/莎士比亞故事集 = Tales from shakespeare [[shā shì bǐ yà gù shì jí  = Tales from shakespeare]]</fake:marcfield>
-      <rdawd:P10088>莎士比亚故事集 = Tales from shakespeare/#/莎士比亞故事集 = Tales from shakespeare [[shā shì bǐ yà gù shì jí = Tales from shakespeare]]</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test8exp">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/245-test8wor"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20002>245-test8exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test8man">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test8exp"/><!--rdamo:P30139 = has expression manifested-->
-      <fake:marcfield>F245 10 $a 莎士比亚故事集 = Tales from shakespeare/#/莎士比亞故事集 = Tales from shakespeare [[shā shì bǐ yà gù shì jí  = Tales from shakespeare]]</fake:marcfield>
-      <rdamd:P30156>莎士比亚故事集 = Tales from shakespeare/#/莎士比亞故事集 = Tales from shakespeare [[shā shì bǐ yà gù shì jí = Tales from shakespeare]]</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test9wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>

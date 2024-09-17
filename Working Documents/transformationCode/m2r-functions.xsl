@@ -485,7 +485,16 @@
     <xsl:function name="uwf:testBrackets">
         <xsl:param name="string"/>
         <xsl:choose>
-            <xsl:when test="matches($string, '^\[.*\][\W]*$')">
+            <!-- opening and closing bracket -->
+            <xsl:when test="matches($string, '^\[.*\][\W=]*$')">
+                <xsl:value-of select="true()"/>
+            </xsl:when>
+            <!-- opening bracket, no closing bracket -->
+            <xsl:when test="matches($string, '^\[[^\]]*$')">
+                <xsl:value-of select="true()"/>
+            </xsl:when>
+            <!-- closing bracket, no opening bracket -->
+            <xsl:when test="matches($string, '^[^\[]*\][\W=]*$')">
                 <xsl:value-of select="true()"/>
             </xsl:when>
             <xsl:otherwise>
@@ -498,7 +507,17 @@
         <xsl:param name="string"/>
         <xsl:choose>
             <xsl:when test="uwf:testBrackets($string) = true()">
-                <xsl:value-of select="replace($string, '(^\[)|(\][\W]*$)', '')"/>
+                <xsl:choose>
+                    <xsl:when test="matches($string, '^\[.*\][\W=]*$')">
+                        <xsl:value-of select="replace($string, '(^\[)|(\])([\W=]*$)', '$3')"/>
+                    </xsl:when>
+                    <xsl:when test="matches($string, '^\[[^\]]*$')">
+                        <xsl:value-of select="replace($string, '^\[', '')"/>
+                    </xsl:when>
+                    <xsl:when test="matches($string, '^[^\[]*\][\W=]*$')">
+                        <xsl:value-of select="replace($string, '(\])([\W=]*$)', '$2')"/>
+                    </xsl:when>
+                </xsl:choose>
             </xsl:when>
             <xsl:otherwise>
                <xsl:value-of select="$string"/>
@@ -508,11 +527,29 @@
     
     <xsl:function name="uwf:getBracketedData">
         <xsl:param name="string"/>
-        <xsl:analyze-string select="$string" regex="\[.*\]">
-            <xsl:matching-substring>
-                <xsl:value-of select="."/>
-            </xsl:matching-substring>
-        </xsl:analyze-string>
+        <xsl:choose>
+            <xsl:when test="matches($string, '^\[.*\][\W=]*$')">
+                <xsl:analyze-string select="$string" regex="\[.*\]">
+                    <xsl:matching-substring>
+                        <xsl:value-of select="normalize-space(.)"/>
+                    </xsl:matching-substring>
+                </xsl:analyze-string>
+            </xsl:when>
+            <xsl:when test="matches($string, '^\[[^\]]*$')">
+                <xsl:analyze-string select="$string" regex="((^\[)([^\[].*))">
+                    <xsl:matching-substring>
+                        <xsl:value-of select="concat(replace(normalize-space(.), '\s*[=:;/]$', ''), ']')"/>
+                    </xsl:matching-substring>
+                </xsl:analyze-string>
+            </xsl:when>
+            <xsl:when test="matches($string, '^[^\[]*\][\W=]*$')">
+                <xsl:analyze-string select="$string" regex="(([^\[].*)(\][\W]*$))">
+                    <xsl:matching-substring>
+                        <xsl:value-of select="concat('[', replace(normalize-space(.), '(\])([\W=]*$)', '$1'))"/>
+                    </xsl:matching-substring>
+                </xsl:analyze-string>
+            </xsl:when>
+        </xsl:choose>
     </xsl:function>
     
 </xsl:stylesheet>
