@@ -1,0 +1,80 @@
+@prefix fake: <http://fakePropertiesForDemo> .
+@prefix rdaed: <http://rdaregistry.info/Elements/e/datatype/> .
+@prefix rdaeo: <http://rdaregistry.info/Elements/e/object/> .
+@prefix rdamd: <http://rdaregistry.info/Elements/m/datatype/> .
+@prefix rdamo: <http://rdaregistry.info/Elements/m/object/> .
+@prefix rdawd: <http://rdaregistry.info/Elements/w/datatype/> .
+
+<http://marc2rda.edu/fake/245-test00man> a <http://rdaregistry.info/Elements/c/C10007> ;
+    fake:marcfield "F245 00 $a Collection series. $n 50, $p Shakespeare music : $b love songs on the lute.",
+        "F245 10 $a Advances in visual computing : $b 7th International Symposium, ISVC 2011, Las Vegas, NV, USA, September 26-28, 2011, proceedings. $n Part I / $c George Bebis [and others] (eds.).",
+        "F245 14 $a The Letters of William Cullen Bryant $n Volume VI,  $p 1872–1878 / $c edited by William Cullen Bryant II and Thomas G. Voss." ;
+    rdamd:P30105 "George Bebis [and others] (eds.).",
+        "edited by William Cullen Bryant II and Thomas G. Voss." ;
+    rdamd:P30142 "7th International Symposium, ISVC 2011, Las Vegas, NV, USA, September 26-28, 2011, proceedings. Part I",
+        "love songs on the lute." ;
+    rdamd:P30156 "Advances in visual computing",
+        "Collection series. 50, Shakespeare music",
+        "The Letters of William Cullen Bryant Volume VI, 1872–1878" ;
+    rdamo:P30139 <http://marc2rda.edu/fake/245-test00exp> .
+
+<http://marc2rda.edu/fake/245-test01man> a <http://rdaregistry.info/Elements/c/C10007> ;
+    fake:marcfield "F245 00 $a English historical linguistics : $b an international handbook. $n Volume 1 / $c Alexander Bergs, Laurel J. Brinton." ;
+    rdamd:P30105 "Alexander Bergs, Laurel J. Brinton." ;
+    rdamd:P30142 "an international handbook. Volume 1" ;
+    rdamd:P30156 "English historical linguistics" ;
+    rdamo:P30139 <http://marc2rda.edu/fake/245-test01exp> .
+
+<http://marc2rda.edu/fake/245-test03man> a <http://rdaregistry.info/Elements/c/C10007> ;
+    fake:marcfield "F245 10 $a Modern British playwriting. $p The 1960s : $b voices, documents, new interpretations / $c Steve Nicholson." ;
+    rdamd:P30105 "Steve Nicholson." ;
+    rdamd:P30142 "voices, documents, new interpretations" ;
+    rdamd:P30156 "Modern British playwriting. The 1960s" ;
+    rdamo:P30139 <http://marc2rda.edu/fake/245-test03exp> .
+
+<http://marc2rda.edu/fake/245-test31man> a <http://rdaregistry.info/Elements/c/C10007> ;
+    fake:marcfield "F245 00 $a Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. $n Part II, $p Labour unions = $b Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers. $n Partie II, $p Syndicats ouvriers." ;
+    rdamd:P30156 "Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. Part II, Labour unions",
+        "Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers. Partie II, Syndicats ouvriers." ;
+    rdamo:P30139 <http://marc2rda.edu/fake/245-test31exp> .
+
+<http://marc2rda.edu/fake/245-test00exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "245-test00exp" ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/245-test00wor> .
+
+<http://marc2rda.edu/fake/245-test00wor> a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F245 00 $a Collection series. $n 50, $p Shakespeare music : $b love songs on the lute.",
+        "F245 10 $a Advances in visual computing : $b 7th International Symposium, ISVC 2011, Las Vegas, NV, USA, September 26-28, 2011, proceedings. $n Part I / $c George Bebis [and others] (eds.).",
+        "F245 14 $a The Letters of William Cullen Bryant $n Volume VI,  $p 1872–1878 / $c edited by William Cullen Bryant II and Thomas G. Voss." ;
+    rdawd:P10002 "245-test00wor" ;
+    rdawd:P10088 "Advances in visual computing",
+        "Collection series. 50, Shakespeare music",
+        "The Letters of William Cullen Bryant Volume VI, 1872–1878" .
+
+<http://marc2rda.edu/fake/245-test01exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "245-test01exp" ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/245-test01wor> .
+
+<http://marc2rda.edu/fake/245-test01wor> a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F245 00 $a English historical linguistics : $b an international handbook. $n Volume 1 / $c Alexander Bergs, Laurel J. Brinton." ;
+    rdawd:P10002 "245-test01wor" ;
+    rdawd:P10088 "English historical linguistics" .
+
+<http://marc2rda.edu/fake/245-test03exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "245-test03exp" ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/245-test03wor> .
+
+<http://marc2rda.edu/fake/245-test03wor> a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F245 10 $a Modern British playwriting. $p The 1960s : $b voices, documents, new interpretations / $c Steve Nicholson." ;
+    rdawd:P10002 "245-test03wor" ;
+    rdawd:P10088 "Modern British playwriting. The 1960s" .
+
+<http://marc2rda.edu/fake/245-test31exp> a <http://rdaregistry.info/Elements/c/C10006> ;
+    rdaed:P20002 "245-test31exp" ;
+    rdaeo:P20231 <http://marc2rda.edu/fake/245-test31wor> .
+
+<http://marc2rda.edu/fake/245-test31wor> a <http://rdaregistry.info/Elements/c/C10001> ;
+    fake:marcfield "F245 00 $a Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. $n Part II, $p Labour unions = $b Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers. $n Partie II, $p Syndicats ouvriers." ;
+    rdawd:P10002 "245-test31wor" ;
+    rdawd:P10088 "Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. Part II, Labour unions" .
+
