@@ -531,21 +531,21 @@
             <xsl:when test="matches($string, '^\[.*\][\W=]*$')">
                 <xsl:analyze-string select="$string" regex="\[.*\]">
                     <xsl:matching-substring>
-                        <xsl:value-of select="normalize-space(.)"/>
+                        <xsl:value-of select="replace(normalize-space(.), '(^\[)(.*)(\]$)', '&#34;$2&#34;')"/>
                     </xsl:matching-substring>
                 </xsl:analyze-string>
             </xsl:when>
             <xsl:when test="matches($string, '^\[[^\]]*$')">
                 <xsl:analyze-string select="$string" regex="((^\[)([^\[].*))">
                     <xsl:matching-substring>
-                        <xsl:value-of select="concat(replace(normalize-space(.), '\s*[=:;/]$', ''), ']')"/>
+                        <xsl:value-of select="concat(replace(normalize-space(.), '\s*[=:;/]$', ''), '&#34;')"/>
                     </xsl:matching-substring>
                 </xsl:analyze-string>
             </xsl:when>
             <xsl:when test="matches($string, '^[^\[]*\][\W=]*$')">
                 <xsl:analyze-string select="$string" regex="(([^\[].*)(\][\W]*$))">
                     <xsl:matching-substring>
-                        <xsl:value-of select="concat('[', replace(normalize-space(.), '(\])([\W=]*$)', '$1'))"/>
+                        <xsl:value-of select="concat('&#34;', replace(normalize-space(.), '(\])([\W=]*$)', '&#34;'))"/>
                     </xsl:matching-substring>
                 </xsl:analyze-string>
             </xsl:when>

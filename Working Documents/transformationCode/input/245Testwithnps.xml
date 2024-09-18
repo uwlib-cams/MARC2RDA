@@ -5,7 +5,7 @@
    
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
-        <marc:controlfield tag="001">245-test00</marc:controlfield>
+        <marc:controlfield tag="001">245-test001</marc:controlfield>
         <marc:datafield tag="245" ind1="0" ind2="0">
             <marc:subfield code="a">Collection series.</marc:subfield>
             <marc:subfield code="n">50,</marc:subfield>
@@ -15,7 +15,7 @@
     </marc:record>
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
-        <marc:controlfield tag="001">245-test01</marc:controlfield>
+        <marc:controlfield tag="001">245-test002</marc:controlfield>
         <marc:datafield tag="245" ind1="0" ind2="0">
             <marc:subfield code="a">English historical linguistics :</marc:subfield>
             <marc:subfield code="b">an international handbook.</marc:subfield>
@@ -25,7 +25,7 @@
     </marc:record>
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
-        <marc:controlfield tag="001">245-test03</marc:controlfield>
+        <marc:controlfield tag="001">245-test003</marc:controlfield>
         <marc:datafield tag="245" ind1="1" ind2="0">
             <marc:subfield code="a">Modern British playwriting.</marc:subfield>
             <marc:subfield code="p">The 1960s :</marc:subfield>
@@ -35,7 +35,7 @@
     </marc:record>
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
-        <marc:controlfield tag="001">245-test00</marc:controlfield>
+        <marc:controlfield tag="001">245-test004</marc:controlfield>
         <marc:datafield tag="245" ind1="1" ind2="4">
             <marc:subfield code="a">The Letters of William Cullen Bryant</marc:subfield>
             <marc:subfield code="n">Volume VI, </marc:subfield>
@@ -45,7 +45,7 @@
     </marc:record>
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
-        <marc:controlfield tag="001">245-test00</marc:controlfield>
+        <marc:controlfield tag="001">245-test005</marc:controlfield>
         <marc:datafield tag="245" ind1="1" ind2="0">
             <marc:subfield code="a">Advances in visual computing :</marc:subfield>
             <marc:subfield code="b">7th International Symposium, ISVC 2011, Las Vegas, NV, USA, September 26-28, 2011, proceedings.</marc:subfield>
@@ -55,7 +55,7 @@
     </marc:record>
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
-        <marc:controlfield tag="001">245-test31</marc:controlfield>
+        <marc:controlfield tag="001">245-test006</marc:controlfield>
         <marc:datafield tag="245" ind1="0" ind2="0">
             <marc:subfield code="a">Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act.</marc:subfield>
             <marc:subfield code="n">Part II,</marc:subfield>
