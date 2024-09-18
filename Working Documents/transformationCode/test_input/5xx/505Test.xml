@@ -12,13 +12,16 @@
         </marc:datafield>
         
         <marc:datafield tag="505" ind1="1" ind2=" ">
-            <marc:subfield code="a">Future land use plan -- Recommended capital improvements -- Existing land use -- Existing zoning.</marc:subfield>
-            <marc:subfield code="g">Ch. 10.</marc:subfield>
+            <marc:subfield code="g">Nr. 3.</marc:subfield>
+            <marc:subfield code="t">Region Mettelburgenland --</marc:subfield>
+            <marc:subfield code="g">Nr. 4.</marc:subfield>
+            <marc:subfield code="t">Region südliches Burgenland --</marc:subfield>
+            <marc:subfield code="g">Nr. 5.</marc:subfield>
+            <marc:subfield code="t">Region Südburgland</marc:subfield>
         </marc:datafield>       
         
         <marc:datafield tag="505" ind1="8" ind2=" ">
             <marc:subfield code="a">Future land use plan -- Recommended capital improvements -- Existing land use -- Existing zoning.</marc:subfield>
-            <marc:subfield code="t">Queen or crone? : gendered archaeology in an LB tomb at Gezer</marc:subfield>
         </marc:datafield>
         
         <marc:datafield tag="880" ind1="0" ind2=" ">

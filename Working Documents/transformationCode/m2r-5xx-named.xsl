@@ -38,25 +38,25 @@
         <xsl:if test="@ind1 = '8'">
             <xsl:text>Contents: </xsl:text>
         </xsl:if>
-        <xsl:if test="marc:subfield[@code = 'a']">
-            <xsl:text>Formatted contents note: {marc:subfield[@code = 'a']} </xsl:text>
-        </xsl:if>
-        <xsl:for-each select="marc:subfield[@code = 'g'] | marc:subfield[@code = 'r']
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'r']
             | marc:subfield[@code = 't'] | marc:subfield[@code = 'u']">
+            <xsl:if test="@code = 'a'">
+                <xsl:text>{.}</xsl:text>
+            </xsl:if>
             <xsl:if test="@code = 'g'">
-                <xsl:text>Miscellaneous information: {.}</xsl:text>
+                <xsl:text>{.}</xsl:text>
             </xsl:if>
             <xsl:if test="@code = 'r'">
-                <xsl:text>Statement of responsibility: {.}</xsl:text>
+                <xsl:text>{.}</xsl:text>
             </xsl:if>
             <xsl:if test="@code = 't'">
-                <xsl:text>Title: {.}</xsl:text>
+                <xsl:text>{.}</xsl:text>
             </xsl:if>
             <xsl:if test="@code = 'u'">
-                <xsl:text>Uniform Resource Identifier: {.}</xsl:text>
+                <xsl:text>{.}</xsl:text>
             </xsl:if>
             <xsl:if test="position() != last()">
-                <xsl:text>; </xsl:text>
+                <xsl:text> </xsl:text>
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
