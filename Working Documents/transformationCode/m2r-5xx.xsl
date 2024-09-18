@@ -230,18 +230,21 @@
         </xsl:variable>
         <xsl:choose>
             <xsl:when test="$online_resource = 'true'">
-                <rdamd:P30145>
-                    <xsl:call-template name="F506-xx-abcdegqu3"/>
-                    <xsl:if test="marc:subfield[@code = '5']">
-                        <xsl:text> (at institution: {uwf:s5NameLookup(marc:subfield[@code = '5'])})</xsl:text>
-                    </xsl:if>
-                </rdamd:P30145>
+                <xsl:if test="marc:subfield[@code = 'a' or @code = 'b' or @code = 'c' or @code = 'd'
+                    or @code = 'e' or @code = 'g' or @code = 'q' or @code = 'u']">
+                    <rdamd:P30145>
+                        <xsl:call-template name="F506-xx-abcdegqu3"/>
+                        <xsl:if test="marc:subfield[@code = '5']">
+                            <xsl:text> (at institution: {uwf:s5NameLookup(marc:subfield[@code = '5'])})</xsl:text>
+                        </xsl:if>
+                    </rdamd:P30145>
+                </xsl:if>
                 <xsl:if test="marc:subfield[@code = '2']">
                     <xsl:for-each select="marc:subfield[@code = 'f']">
                         <rdam:P30145 rdf:resource="{uwf:conceptIRI(../marc:subfield[@code = '2'], .)}"/>
                         <xsl:if test="../marc:subfield[@code = '3']">
                             <rdamd:P30137>
-                                <xsl:text>Restriction on access {uwf:conceptIRI(../marc:subfield[@code = '2'], .)} applies to {./marc:subfield[@code = '3']}</xsl:text>
+                                <xsl:text>Restriction on access {uwf:conceptIRI(../marc:subfield[@code = '2'], .)} applies to {../marc:subfield[@code = '3']}</xsl:text>
                             </rdamd:P30137>
                         </xsl:if>
                     </xsl:for-each>
@@ -251,9 +254,12 @@
                         select="concat('506-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                     <xsl:for-each
                         select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
-                        <rdamd:P30145>
-                            <xsl:call-template name="F506-xx-abcdegqu3"/>
-                        </rdamd:P30145>
+                        <xsl:if test="marc:subfield[@code = 'a' or @code = 'b' or @code = 'c' or @code = 'd'
+                            or @code = 'e' or @code = 'g' or @code = 'q' or @code = 'u']">
+                             <rdamd:P30145>
+                                 <xsl:call-template name="F506-xx-abcdegqu3"/>
+                             </rdamd:P30145>
+                        </xsl:if>
                     </xsl:for-each>
                 </xsl:if>
             </xsl:when>
@@ -285,9 +291,12 @@
                 <xsl:if test="marc:subfield[@code = '5']">
                     <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>    
                 </xsl:if>
-                <rdaid:P40047>
-                    <xsl:call-template name="F506-xx-abcdegqu3"/>
-                </rdaid:P40047>
+                <xsl:if test="marc:subfield[@code = 'a' or @code = 'b' or @code = 'c' or @code = 'd'
+                    or @code = 'e' or @code = 'g' or @code = 'q' or @code = 'u']">
+                    <rdaid:P40047>
+                        <xsl:call-template name="F506-xx-abcdegqu3"/>
+                    </rdaid:P40047>
+                </xsl:if>
                 <xsl:if test="marc:subfield[@code = '2']">
                     <xsl:for-each select="marc:subfield[@code = 'f']">
                         <rdai:P40047 rdf:resource="{uwf:conceptIRI(../marc:subfield[@code = '2'], .)}"/>
@@ -303,9 +312,12 @@
                         select="concat('506-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                         <xsl:for-each
                             select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
-                            <rdaid:P40047>
-                                <xsl:call-template name="F506-xx-abcdegqu3"/>
-                            </rdaid:P40047>
+                            <xsl:if test="marc:subfield[@code = 'a' or @code = 'b' or @code = 'c' or @code = 'd'
+                                or @code = 'e' or @code = 'g' or @code = 'q' or @code = 'u']">
+                                <rdaid:P40047>
+                                    <xsl:call-template name="F506-xx-abcdegqu3"/>
+                                </rdaid:P40047>
+                            </xsl:if>
                         </xsl:for-each>
                     </xsl:if>
                 </rdf:Description>
