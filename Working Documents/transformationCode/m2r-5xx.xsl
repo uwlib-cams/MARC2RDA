@@ -344,6 +344,22 @@
         </rdamd:P30137>
     </xsl:template>
     
+    <!-- 513 - Type of Report and Period Covered note -->
+    <xsl:template match="marc:datafield[@tag='513'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '513']" 
+        mode="wor" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
+        <xsl:if test="marc:subfield[@code = 'a']">
+            <rdaw:P10330>
+                <xsl:text>Type of report: {marc:subfield[@code = 'a']}</xsl:text>
+            </rdaw:P10330>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'b']">
+            <rdaw:P10216>
+                <xsl:text>Period covered: {marc:subfield[@code='b']}</xsl:text>
+            </rdaw:P10216>       
+        </xsl:if>
+    </xsl:template>
+    
     <!-- 514 - Data Quality Note -->
     <xsl:template match="marc:datafield[@tag='514'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '514']" 
         mode="wor">
