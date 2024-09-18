@@ -652,11 +652,6 @@
     
     <xsl:template match="marc:datafield[@tag = '055']" 
         mode="con" expand-text="yes">
-        <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdf:Description rdf:about="{uwf:conceptIRI('lcc', .)}">
-                <xsl:copy-of select="uwf:fillClassConcept('lcc', ., ., '055')"/>
-            </rdf:Description>
-        </xsl:for-each>
         <xsl:choose>
             <xsl:when test="@ind2 = '6' or @ind2 = '7' or @ind2 = '8' or @ind2 = '9'">
                 <xsl:if test="marc:subfield[@code = '2']">
@@ -669,7 +664,9 @@
             </xsl:when>
             <xsl:otherwise>
                 <xsl:for-each select="marc:subfield[@code = 'a']">
-                    <rdaw:P10256 rdf:resource="{uwf:conceptIRI('lcc', .)}"/>
+                    <rdf:Description rdf:about="{uwf:conceptIRI('lcc', .)}">
+                        <xsl:copy-of select="uwf:fillClassConcept('lcc', ., ., '055')"/>
+                    </rdf:Description>
                 </xsl:for-each>
             </xsl:otherwise>
         </xsl:choose>
