@@ -708,19 +708,10 @@
     </xsl:template>
     
     <!-- 074 - GPO Item Number -->
-    <xsl:template match="marc:datafield[@tag = '074']" mode="ite" expand-text="yes">
-        <xsl:param name="baseIRI"/>
-        <xsl:param name="controlNumber"/>
-        <xsl:variable name="genID" select="generate-id()"/>
-        
-        <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
-            <xsl:call-template name="getmarc"/>
-            <rdaid:P40001>{concat($controlNumber, 'ite', $genID)}</rdaid:P40001>
-            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-            <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
-                <rdaio:P40001 rdf:resource="{uwf:nomenIRI(., 'nom', '', '')}"/>
-            </xsl:for-each>
-        </rdf:Description>
+    <xsl:template match="marc:datafield[@tag = '074']" mode="man" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
+            <rdamo:P30004 rdf:resource="{uwf:nomenIRI(., 'nom', '', '')}"/>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template match="marc:datafield[@tag = '074']" 
         mode="nom" expand-text="yes">

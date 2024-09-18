@@ -43,13 +43,8 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/088-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/088-test1exp"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/088-test1ited20e6">
-      <fake:marcfield>F074 ## $a 1022-A $z 1012-A </fake:marcfield>
-      <rdaid:P40001>ited20e6</rdaid:P40001>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaio:P40001 rdf:resource="http://marc2rda.edu/fake/nom/d20e7"/>
-      <rdaio:P40001 rdf:resource="http://marc2rda.edu/fake/nom/d20e9"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d20e7"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d20e9"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d20e7">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
