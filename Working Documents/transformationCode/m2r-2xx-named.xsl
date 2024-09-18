@@ -635,7 +635,7 @@
     <xsl:template name="F245-xx-h" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'h']">
             <rdamd:P30335>
-                <xsl:value-of select="replace(.,'^\[','') => replace('[ ]?[=/\.;]$','') => replace('[\]]$','')"/>
+                <xsl:value-of select="normalize-space() => replace('^\[','') => replace('[:=/\.;]$','') => replace('[\]]\s*$','')"/>
             </rdamd:P30335>
         </xsl:for-each>
     </xsl:template>
