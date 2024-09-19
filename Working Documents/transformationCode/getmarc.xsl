@@ -38,15 +38,22 @@
                 <xsl:value-of select="'#'"/>
             </xsl:if>
             <xsl:text> </xsl:text>
-            <xsl:for-each select="marc:subfield">
-                <xsl:text>$</xsl:text>
-                <xsl:value-of select="@code"/>
-                <xsl:text> </xsl:text>
-                <xsl:value-of select="."/>
-                <xsl:if test="position() != last()">
-                    <xsl:text> </xsl:text>
-                </xsl:if>
-            </xsl:for-each>
+            <xsl:choose>
+                <xsl:when test="marc:subfield">
+                    <xsl:for-each select="marc:subfield">
+                        <xsl:text>$</xsl:text>
+                        <xsl:value-of select="@code"/>
+                        <xsl:text> </xsl:text>
+                        <xsl:value-of select="."/>
+                        <xsl:if test="position() != last()">
+                            <xsl:text> </xsl:text>
+                        </xsl:if>
+                    </xsl:for-each>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="text()"/>
+                </xsl:otherwise>
+            </xsl:choose>
         </xsl:element>
 <!--        <xsl:comment>RDA data begins</xsl:comment>-->
     </xsl:template>
