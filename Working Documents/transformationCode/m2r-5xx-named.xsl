@@ -810,6 +810,33 @@
         </xsl:for-each>
     </xsl:template>
     
+    <!-- 555 -->
+    <xsl:template name="F555-xx-abcdu3" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'u'] | marc:subfield[@code = '3']">
+            <xsl:if test="@code = 'a'">
+                <xsl:text>Culmulative index/finding aids note: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'b'">
+                <xsl:text>Availability source: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'c'">
+                <xsl:text>Degree of control: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'd'">
+                <xsl:text>Bibliographic reference: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = 'u'">
+                <xsl:text>Uniform Resource Identifier: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="@code = '3'">
+                <xsl:text>Materials specified: {.}</xsl:text>
+            </xsl:if>
+            <xsl:if test="position() != last()">
+                <xsl:text>; </xsl:text>
+            </xsl:if>
+        </xsl:for-each>      
+    </xsl:template>
+    
     <!-- 556 -->
     <xsl:template name="F556-xx-az" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">

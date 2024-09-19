@@ -805,6 +805,18 @@
             <xsl:call-template name="F552-xx-zabcdefghijklmnopu"/>
         </rdawd:P10330>
     </xsl:template>
+      
+    
+    <!-- 555 - Culmulative Index/Finding Aids Note -->
+    <xsl:template
+        match="marc:datafield[@tag = '555'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '555']"
+        mode="man">
+        <xsl:call-template name="getmarc"/>
+        <rdawd:P30137>
+            <xsl:call-template name="F555-xx-abcdu3"/>
+        </rdawd:P30137>
+    </xsl:template>
+    
     
     <!-- 556 - Information About Documentation Note -->
     <xsl:template
