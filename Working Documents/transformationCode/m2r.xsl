@@ -46,6 +46,7 @@
     
     <!-- include all files containing main field templates
          each main field template will include its own -named file if it exists-->
+    <xsl:include href="m2r-00x.xsl"/>
     <xsl:include href="m2r-0xx.xsl"/>
     <xsl:include href="m2r-1xx7xx.xsl"/>
     <xsl:include href="m2r-2xx.xsl"/>
@@ -191,6 +192,7 @@
                 <rdamo:P30139 rdf:resource="{concat($baseIRI,'exp')}"/>
                 <xsl:apply-templates select="*" mode="origMan">
                     <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                    <xsl:with-param name="type" select="'origMan'"/>
                 </xsl:apply-templates>
             </rdf:Description>
         </xsl:if>
