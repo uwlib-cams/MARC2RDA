@@ -19,7 +19,7 @@
     <dependency>
       <groupId>net.sf.saxon</groupId>
       <artifactId>Saxon-HE</artifactId>
-      <version>12.5</version>
+      <version>10.6</version>
     </dependency>
 
     <!-- Apache Jena dependencies -->

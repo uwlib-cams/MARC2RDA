@@ -18,7 +18,7 @@ public class RdfPredicateExtractor implements ExtensionFunction {
 
     @Override
     public QName getName() {
-        return new QName("http://uw.edu/extensions", "getFirstLevelTypes");
+        return new QName("uwlib-cams/MARC2RDA/extensions", "getFirstLevelTypes");
     }
 
     @Override
