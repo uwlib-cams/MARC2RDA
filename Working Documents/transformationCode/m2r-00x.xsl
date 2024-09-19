@@ -36,6 +36,17 @@
     <xsl:template match="marc:controlfield[@tag = '008']" 
         mode="wor" expand-text="yes">
         <xsl:call-template name="getmarc"/>
+        
+        <xsl:variable name="ldr6-7" select="substring(preceding-sibling::marc:leader, 7, 2)"/>
+        <xsl:choose>
+            <!-- books -->
+            <xsl:when test="$ldr6-7 = 'aa' or $ldr6-7 = 'ac' or $ldr6-7 = 'ad' or $ldr6-7 = 'am'
+                or $ldr6-7 = 'ca' or $ldr6-7 = 'cc' or $ldr6-7 = 'cd' or $ldr6-7 = 'cm'">
+                <xsl:call-template name="F008-c24-27-BOOKS">
+                    <xsl:with-param name="char24-27" select="substring(., 25, 4)"/>
+                </xsl:call-template>
+            </xsl:when>
+        </xsl:choose>
     </xsl:template>
     
     <xsl:template match="marc:controlfield[@tag = '008']" 
@@ -88,6 +99,9 @@
                     </xsl:call-template>
                     <xsl:call-template name="F008-c23-BOOKS">
                         <xsl:with-param name="char23" select="substring(., 24, 1)"/>
+                    </xsl:call-template>
+                    <xsl:call-template name="F008-c24-27-2bkq-BOOKS">
+                        <xsl:with-param name="char24-27" select="substring(., 25, 4)"/>
                     </xsl:call-template>
                 </xsl:when>
             </xsl:choose>

@@ -157,4 +157,52 @@
             <rdae:P20061 rdf:resource="{'http://rdaregistry.info/termList/TacNotation/1001'}"/>
         </xsl:if>
     </xsl:template>
+    
+    <xsl:template name="F008-c24-27-BOOKS">
+        <xsl:param name="char24-27"/>
+        <xsl:analyze-string select="$char24-27" regex=".{{1}}">
+            <xsl:matching-substring>
+                <xsl:choose>
+                    <xsl:when test=". = ' ' or . = '|' or . = '2' or . = 'b' or . = 'k' or . = 'q'"/>
+                    <xsl:when test=". = 'h'">
+                        <rdaw:P10004 rdf:resource="{'https://doi.org/10.6069/uwlswd.633m-h220#hx'}"/>
+                    </xsl:when>
+                    <xsl:when test=". = 'x'">
+                        <rdaw:P10004 rdf:resource="{'https://doi.org/10.6069/uwlswd.633m-h220#t'}"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <rdaw:P10004 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.633m-h220#', .)}"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:matching-substring>
+        </xsl:analyze-string>
+    </xsl:template>
+    
+    <xsl:template name="F008-c24-27-2bkq-BOOKS">
+        <xsl:param name="char24-27"/>
+        <xsl:analyze-string select="$char24-27" regex=".{{1}}">
+            <xsl:matching-substring>
+                <xsl:choose>
+                    <xsl:when test=". = '2'">
+                        <rdam:P30335 rdf:resource="{'https://doi.org/10.6069/uwlswd.633m-h220#2'}"/>
+                    </xsl:when>
+                    <xsl:when test=". = 'b'">
+                        <rdamd:P30137>
+                            <xsl:text>Includes bibliographies.</xsl:text>
+                        </rdamd:P30137>
+                    </xsl:when>
+                    <xsl:when test=". = 'k'">
+                        <rdamd:P30137>
+                            <xsl:text>Includes discographies.</xsl:text>
+                        </rdamd:P30137>
+                    </xsl:when>
+                    <xsl:when test=". = 'q'">
+                        <rdamd:P30137>
+                            <xsl:text>Includes filmographies.</xsl:text>
+                        </rdamd:P30137>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:matching-substring>
+        </xsl:analyze-string>
+    </xsl:template>
 </xsl:stylesheet>
