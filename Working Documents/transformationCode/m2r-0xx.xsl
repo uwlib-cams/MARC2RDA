@@ -757,7 +757,7 @@
             <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'x']" separator=""/>
         </xsl:variable>
         <xsl:if test="marc:subfield[@code = 'a']">
-            <rdawo:P10256 rdf:resource="{uwf:conceptIRI($scheme, $ap)}"/>
+            <rdawo:P10256 rdf:resource="{$BASE||'concept/'||translate(lower-case(uwf:stripAllPunctuation($scheme)), ' ', '')||'/'||encode-for-uri(lower-case(translate($ap, ' ', '')))}"/>
         </xsl:if>
     </xsl:template>
     
@@ -785,10 +785,12 @@
             </xsl:choose>
         </xsl:variable>
         <xsl:variable name="ap">
-            <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'x']" separator=""/>
+            <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'x']">
+                <xsl:value-of select="translate(., ' ', '')"/>
+            </xsl:for-each>
         </xsl:variable>
         <xsl:if test="marc:subfield[@code = 'a']">
-            <rdf:Description rdf:about="{uwf:conceptIRI($scheme, $ap)}">
+            <rdf:Description rdf:about="{$BASE||'concept/'||translate(lower-case(uwf:stripAllPunctuation($scheme)), ' ', '')||'/'||encode-for-uri(lower-case(translate($ap, ' ', '')))}">
                 <xsl:copy-of select="uwf:fillClassConcept($scheme, $ap, $ap, '080')"/>
             </rdf:Description>
         </xsl:if>
