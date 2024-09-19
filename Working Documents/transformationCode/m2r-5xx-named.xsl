@@ -365,6 +365,26 @@
         </xsl:choose>
     </xsl:template>
     
+    <!-- 533 -->
+    <xsl:template name="F533-xx-7" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = '7']">
+            <xsl:variable name="char0" select="substring(., 1, 1)"/>
+            <xsl:variable name="char1-4" select="substring(., 2, 4)"/>
+            <xsl:if test="$char0 = 'c'">
+                <rdamd:P30137>
+                    <xsl:text>Continuing resource currently published.</xsl:text>
+                </rdamd:P30137>
+            </xsl:if>
+            <xsl:if test="$char0 = 'd'">
+                <rdamd:P30137>
+                    <xsl:text>Continuing resource ceased publication.</xsl:text>
+                </rdamd:P30137>
+            </xsl:if>
+            
+            
+        </xsl:for-each>
+    </xsl:template>
+    
     <!-- 534 -->
     <xsl:template name="F534-xx-pabcefklmnotxz" expand-text="yes">
         <xsl:choose>

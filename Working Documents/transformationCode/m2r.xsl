@@ -150,7 +150,7 @@
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
             <rdamo:P30139 rdf:resource="{concat($baseIRI,'exp')}"/>
             <xsl:choose>
-                <xsl:when test="exists($isReproduction)">
+                <xsl:when test="$isReproduction != ''">
                     <xsl:variable name="formofitem">
                         <xsl:choose>
                             <xsl:when test="matches(substring(marc:leader, 7, 1), '[efgkor]')">
@@ -185,7 +185,7 @@
             </xsl:call-template> -->
         </rdf:Description>
         
-        <xsl:if test="exists($isReproduction)">
+        <xsl:if test="$isReproduction != ''">
             <rdf:Description rdf:about="{concat($baseIRI,'origMan')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
                 <rdamo:P30139 rdf:resource="{concat($baseIRI,'exp')}"/>

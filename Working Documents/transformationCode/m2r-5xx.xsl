@@ -513,43 +513,52 @@
         <xsl:call-template name="F532-xx-a"/>
     </xsl:template>
     
-    <!-- 534 - Original version note -->
-    <!-- CODE ON HOLD -->
+    <!-- 533 - Reproduction Note -->
     <xsl:template
-        match="marc:datafield[@tag = '534'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '534']"
-        mode="man">
-        <xsl:variable name="leader0607" select="substring(preceding-sibling::marc:leader, 6, 2)"/>
-        <rdamd:P30137>
-            <xsl:call-template name="F534-xx-pabcefklmnotxz"/>
-        </rdamd:P30137>
-        <xsl:if test="$leader0607 != 'ab' and $leader0607 != 'ai' and $leader0607 != 'as'">
-            <xsl:if test="@tag = '534' or (@tag = '880' and substring(marc:subfield[@code = '6'], 1, 6) = '534-00')">
-                <rdamo:P30024 rdf:resource="{concat('http://marc2rda.edu/fake/man/', generate-id())}"/>
-            </xsl:if>
-        </xsl:if>
-    </xsl:template>
-    
-    <xsl:template
-        match="marc:datafield[@tag = '534'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '534-00']"
-        mode="man2">
-        <xsl:param name="baseIRI"/>
-        <xsl:variable name="leader0608" select="concat(substring(preceding-sibling::marc:leader, 6, 1), substring(preceding-sibling::marc:leader, 8, 1))"/>
-        <xsl:if test="$leader0608 != 'ab' and $leader0608 != 'ai' and $leader0608 != 'as'">
-            <rdf:Description rdf:about="{concat('http://marc2rda.edu/fake/man/', generate-id())}">
-                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-                <rdamo:P30139 rdf:resource="{concat($baseIRI,'exp')}"/>
-                <xsl:variable name="field022" select="preceding-sibling::marc:datafield[@tag = '022'][marc:subfield[@code = 'a']]"/>
-                <xsl:if test="$field022/marc:subfield[@code = 'a'] = marc:subfield[@code = 'x']">
-                    <xsl:call-template name="F534-xx-origMan"/>
-                    <xsl:if test="marc:subfield[@code = '6']">
-                        <xsl:variable name="occNum" select="concat('534-', substring(marc:subfield[@code = '6'], 5, 6))"/>
-                        <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
-                            <xsl:call-template name="F534-xx-origMan"/>
-                        </xsl:for-each>
-                    </xsl:if>
-                </xsl:if>
-            </rdf:Description>
-        </xsl:if>
+        match="marc:datafield[@tag = '533'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '533']"
+        mode="man" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <rdamd:P30335>
+                <xsl:value-of select="translate(., '\.$', '') => normalize-space()"/>
+            </rdamd:P30335>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'b']">
+            <rdamd:P30279>
+                <xsl:value-of select="translate(., '[:;]\s*$', '') => normalize-space() => uwf:removeBrackets()"/>
+            </rdamd:P30279>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'c']">
+            <rdamd:P30297>
+                <xsl:value-of select="translate(., ',', '') => normalize-space()"/>
+            </rdamd:P30297>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'd']">
+            <rdamd:P30278>
+                <xsl:value-of select="replace(., '\.\s*$', '') => normalize-space() => uwf:removeBrackets()"/>
+            </rdamd:P30278>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'e']">
+            <rdamd:P30137>
+                <xsl:value-of select="."/>
+            </rdamd:P30137>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'f']">
+            <rdamd:P30106>
+                <xsl:value-of select="translate(., '()', '')"/>
+            </rdamd:P30106>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'm']">
+            <rdamd:P30137>
+                <xsl:text>Dates and/or sequential designation of issues reproduced: {.}</xsl:text>
+            </rdamd:P30137>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'n']">
+            <rdamd:P30137>
+                <xsl:value-of select="."/>
+            </rdamd:P30137>
+        </xsl:for-each>
+<!--        <xsl:call-template name="F533-xx-7"/>-->
     </xsl:template>
     
     <!-- 536 - Funding Information Note -->
