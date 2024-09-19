@@ -21,12 +21,32 @@
     xmlns:rdan="http://rdaregistry.info/Elements/n/"
     xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
     xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
-    xmlns:uwf="http://universityOfWashington/functions" xmlns:fake="http://fakePropertiesForDemo"
-    exclude-result-prefixes="marc ex uwf" version="3.0">
+    xmlns:uwf="http://universityOfWashington/functions"
+    xmlns:fake="http://fakePropertiesForDemo"
+    xmlns:m2rext="uwlib-cams/MARC2RDA/extensions"
+    exclude-result-prefixes="marc ex uwf m2rext" version="3.0">
     <xsl:include href="m2r-5xx-named.xsl"/>
     <xsl:import href="m2r-functions.xsl"/>
     <xsl:import href="getmarc.xsl"/>
-    
+        
+    <!-- for extension demo only -->
+    <!-- <xsl:template match="marc:datafield[@tag='518'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '518']" 
+        mode="wor" expand-text="yes">
+        <xsl:variable name="placeUris" select="document('lookup/placeUris.xml')/root/row"/>
+
+        <xsl:for-each select="marc:subfield[@code = '0']">
+            <xsl:variable name="uri" select="."/>
+            <xsl:variable name="types" select="tokenize(m2rext:getFirstLevelTypes(.))"/>
+
+            <xsl:for-each select="$types">
+                <xsl:variable name="currentUri" select="."/>
+                <xsl:if test="$placeUris[. = $currentUri]">
+                    <xsl:text>=== IRI ({$uri}) is RDA Place ===</xsl:text>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:for-each>
+    </xsl:template> -->
+
     <!-- 500 - General Note -->
     <xsl:template
         match="marc:datafield[@tag = '500'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '500-00']"
