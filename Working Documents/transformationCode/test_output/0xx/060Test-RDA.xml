@@ -52,22 +52,19 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/w1">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <!--rdf:datatype to be added-->
-      <skos:notation>W1</skos:notation>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324966">W1</skos:notation>
       <skos:altLabel>W1</skos:altLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/nlm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/qt343">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <!--rdf:datatype to be added-->
-      <skos:notation>QT34.3</skos:notation>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324966">QT34.3</skos:notation>
       <skos:altLabel>QT34.3</skos:altLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/nlm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/sf994">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <!--rdf:datatype to be added-->
-      <skos:notation>SF 994</skos:notation>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">SF 994</skos:notation>
       <skos:altLabel>SF 994</skos:altLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
    </rdf:Description>

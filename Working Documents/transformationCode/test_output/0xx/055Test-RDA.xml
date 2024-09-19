@@ -52,31 +52,14 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/ht152">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <!--rdf:datatype to be added-->
-      <skos:notation>HT152 </skos:notation>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">HT152 </skos:notation>
       <skos:altLabel>HT152 </skos:altLabel>
-      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
-   </rdf:Description>
-   <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcc/ht152"/>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/kf385za2">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <!--rdf:datatype to be added-->
-      <skos:notation>KF385.ZA2</skos:notation>
-      <skos:altLabel>KF385.ZA2</skos:altLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/kfmod/kf385za2">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <!--rdf:datatype to be added-->
-      <skos:notation>KF385.ZA2</skos:notation>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324998">KF385.ZA2</skos:notation>
       <skos:altLabel>KF385.ZA2</skos:altLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/kfmod"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/kf385">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <!--rdf:datatype to be added-->
-      <skos:notation>KF385</skos:notation>
-      <skos:altLabel>KF385</skos:altLabel>
-      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
    </rdf:Description>
 </rdf:RDF>

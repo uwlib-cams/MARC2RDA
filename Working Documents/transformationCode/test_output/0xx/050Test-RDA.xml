@@ -52,22 +52,19 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/ps3626a6393">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <!--rdf:datatype to be added-->
-      <skos:notation>PS3626.A6393</skos:notation>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">PS3626.A6393</skos:notation>
       <skos:altLabel>PS3626.A6393</skos:altLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/ql737u55">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <!--rdf:datatype to be added-->
-      <skos:notation>QL737.U55</skos:notation>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">QL737.U55</skos:notation>
       <skos:altLabel>QL737.U55</skos:altLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/ql5671u6">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <!--rdf:datatype to be added-->
-      <skos:notation>QL567.1.U6</skos:notation>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">QL567.1.U6</skos:notation>
       <skos:altLabel>QL567.1.U6</skos:altLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
    </rdf:Description>

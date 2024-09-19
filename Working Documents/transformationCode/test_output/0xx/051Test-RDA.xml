@@ -52,22 +52,19 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/qe75">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <!--rdf:datatype to be added-->
-      <skos:notation>QE75</skos:notation>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">QE75</skos:notation>
       <skos:altLabel>QE75</skos:altLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/rc310">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <!--rdf:datatype to be added-->
-      <skos:notation>RC310</skos:notation>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">RC310</skos:notation>
       <skos:altLabel>RC310</skos:altLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/pr6045i5498">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <!--rdf:datatype to be added-->
-      <skos:notation>PR6045.I5498</skos:notation>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">PR6045.I5498</skos:notation>
       <skos:altLabel>PR6045.I5498</skos:altLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
    </rdf:Description>

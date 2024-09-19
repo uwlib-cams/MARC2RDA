@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324885</item>
+        <itemLabel>Chinese library classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/clc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324886</item>
+        <itemLabel>ZDB-Classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/zdbs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324887</item>
+        <itemLabel>Finnish public libraries classification system  [former code: fplcs]</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ykl</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324888</item>
+        <itemLabel>GB/T 13745-2009 Classification and code of disciplines</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ccd</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324889</item>
+        <itemLabel>WyDocs: the Wyoming state documents classification system</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/wydocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324890</item>
+        <itemLabel>WHU Library classification system</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/whulcs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324891</item>
+        <itemLabel>Washington State Library state documents collection: state documents call number</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/wadocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324892</item>
+        <itemLabel>Vlaamse SISO (schema voor de indeling van de systematische catalogus in openbare bibliotheken)</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/vsiso</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324893</item>
+        <itemLabel>VEERA-luokitus</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/veera</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324894</item>
+        <itemLabel>Utah documents classification schedules</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/utdocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324895</item>
+        <itemLabel>UPSYLON: classification systÃ©matique de la BibliothÃ¨que de la FacultÃ© de psychologie et des sciences de l'Ã©ducation de l'UniversitÃ© catholique de Louvain</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/upsylon</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324896</item>
+        <itemLabel>University of Oslo Library classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/utk</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324897</item>
+        <itemLabel>Universal decimal classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/udc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324898</item>
+        <itemLabel>United Nations document series symbols: 1946-77 cumulative</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/undocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324899</item>
+        <itemLabel>U.S. Geological Survey library classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/usgslcs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324900</item>
+        <itemLabel>Turun yliopiston kirjaston vanha luokitus</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/tykoma</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324901</item>
+        <itemLabel>Title index to the catalogue of the Gest Oriental Library compiled by I.V. Gillis and Pai Ping-ch'i</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/gestsk</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324902</item>
+        <itemLabel>Thema</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/thema</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324903</item>
+        <itemLabel>The Alpha-numeric system for classification of recordings</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/anscr</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324904</item>
+        <itemLabel>Texas state documents classification &amp; almost compleat [sic] list of Texas state agencies from statehood to the present</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/txdocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324905</item>
+        <itemLabel>Theatre Academy classification guide</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/teatkl</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324906</item>
+        <itemLabel>Tampereen yliopiston kirjaston luokitus: Systemaattinen osa &amp; Aakkosellinen osa</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/taykl</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324907</item>
+        <itemLabel>University of Arts Helsinki Library SÃ¶rnÃ¤inen Campus Classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/srnlc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324908</item>
+        <itemLabel>University of Art and Design Helsinki Library Classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/taikclas</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324909</item>
+        <itemLabel>Tablitsy bibliotechno-bibliograficheskoi klassifikatsii dlÃ­Ã  detskikh bibliotek v 1 t.</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/rubbkd</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324910</item>
+        <itemLabel>Tablitsy bibliotechno-bibliograficheskoi klassifikatsii dlÃ­Ã  kraevedcheskikh katalogov bibliotek</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/rubbkk</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324911</item>
+        <itemLabel>Tablitsy bibliotechno-bibliograficheskoi klassifikatsii dlÃ­Ã  massovykh bibliotek v 1. t.</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/rubbkm</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324912</item>
+        <itemLabel>Tablitsy bibliotechno-bibliograficheskoi klassifikatsii dlÃ­Ã  massovykh voennykh bibliotek</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/rubbkmv</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324913</item>
+        <itemLabel>Tablitsy bibliotechno-bibliograficheskoi klassifikatsii dlÃ­Ã  nauchnykh bibliotek v 30-ti tomakh</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/rubbk</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324914</item>
+        <itemLabel>Tablitsy bibliotechno-bibliograficheskoi klassifikatsii dlÃ­Ã  nauchnykh bibliotek v 4-kh tomakh</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/rubbkn</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324915</item>
+        <itemLabel>Tablitsy bibliotechno-bibliograficheskoi klassifikatsii dlÃ­Ã  oblastvykh bibliotek v 4-kh tomakh</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/rubbko</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324916</item>
+        <itemLabel>Systematik: StadtbÃ¼cherei Duisburg: Buchaufstellung und Ordnung des systematischen Kataloges</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ssd</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324917</item>
+        <itemLabel>Systematik der Bayerischen Bibliographie</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/sbb</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324918</item>
+        <itemLabel>Systematik der Deutschen Nationalbibliographie</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/sdnb</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324919</item>
+        <itemLabel>Systematik der IfZ-Bibliothek</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ifzs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324920</item>
+        <itemLabel>Systematik der TUB MÃ¼nchen</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/stub</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324921</item>
+        <itemLabel>Systematik des Musikschrifttums u.d. Musikalien fr ffentl. Musikbibliotheken SMM</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/smm</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324922</item>
+        <itemLabel>Swank, Raynard Coe. A classification for state, county, and municipal documents</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/swank</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324923</item>
+        <itemLabel>Superintendent of Documents classification system</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/sudocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324924</item>
+        <itemLabel>Subject Classes of the Schlagwortnormdatei</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/sswd</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324925</item>
+        <itemLabel>State documents of Kansas: list of classes</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ksdocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324926</item>
+        <itemLabel>South Carolina state documents classification system</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/scdocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324927</item>
+        <itemLabel>Sondersammelgebiets-Nummer</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ssgn</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324928</item>
+        <itemLabel>Sibelius-Akatemian kirjaston luokitusjÃ¤rjestelmÃ¤ - kirjojen luokitus; Sibelius-Akatemian nuottien luokitus</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/siblcs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324929</item>
+        <itemLabel>SfB: Systematik fÃ¼r Bibliotheken</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/sfb</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324930</item>
+        <itemLabel>SeinÃ¤joen korkeakoulukirjaston luokitus</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/suaslc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324931</item>
+        <itemLabel>Schema voor de Indeling van de Systematische Catalogus in Openbare Bibliotheken</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/siso</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324932</item>
+        <itemLabel>Schema di classificazione infanzia e adolescenza</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/scia</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324933</item>
+        <itemLabel>Sachbuch-Systematik fÃ¼r Katholische Ã¶ffentliche BÃ¼chereien</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/skb</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324934</item>
+        <itemLabel>Rubrikator Gosudarstvennoi avtomatizirovannoi sistemy nauchno-tekhnicheskoi informatsii</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/rugasnti</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324935</item>
+        <itemLabel>RILM classification system</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/rilm</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324936</item>
+        <itemLabel>Richardson classification system</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/rich</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324937</item>
+        <itemLabel>Rheinland-PfÃ¤lzische Bibliographie</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/rpb</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324938</item>
+        <itemLabel>Regensburger Verbundklassifikation (RVK)</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/rvk</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324939</item>
+        <itemLabel>Regeln fÃ¼r den Schlagwortkatalog</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/rswk</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324940</item>
+        <itemLabel>Referentiel du format INTERMAC Bibliographique: Audiovisuel - MatiÃ¨re generale</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/frtav</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324941</item>
+        <itemLabel>Popis strucnih skupina i svih podskupina s podacima o broju kataloskih jedinica</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/pssppbkj</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324942</item>
+        <itemLabel>Plan de classement des jeux vidÃ©o</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/pcjv</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324943</item>
+        <itemLabel>Plan de classement des enregistrements vidÃ©o musicaux</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/pcev</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324944</item>
+        <itemLabel>Plan de classement des enregistrements sonores musicaux</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/pcesm</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324945</item>
+        <itemLabel>Presentatiesysteem Informatieve Media</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/pim</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324946</item>
+        <itemLabel>PereizdanidiÃ­Ã  tablits bibliotechno-bibliograficheskoi klassifikatsii dlÃ­Ã  nauchnykh bibliotek v 30-ti tomakh</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/rubbknp</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324947</item>
+        <itemLabel>Oversikt over systematisk katalog</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/oosk</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324948</item>
+        <itemLabel>Oversigt over systematisk catalog</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/farma</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324949</item>
+        <itemLabel>Organizing Wisconsin public documents: cataloging and classification of documents at the State Historical Society Library</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/widocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324950</item>
+        <itemLabel>OrDocs: history authority list and classification scheme for Oregon state agencies</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ordocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324951</item>
+        <itemLabel>Oklahoma state documents classification and list of Oklahoma state agencies from statehood to the present</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/okdocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324952</item>
+        <itemLabel>Ohio documents classification scheme</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ohdocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324953</item>
+        <itemLabel>Official publications of the State of Georgia: list of classes with index by name of agency and subject/keyword</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/gadocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324954</item>
+        <itemLabel>North American industry classification system</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/naics</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324955</item>
+        <itemLabel>Norsk inndeling av vitenskapsdisipliner</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/niv</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324956</item>
+        <itemLabel>Nordrhein-WestfÃ¤lische Bibliographie</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/nwbib</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324957</item>
+        <itemLabel>Nippon decimal classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>http://id.loc.gov/vocabulary/classSchemes/njb</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324957</item>
+        <itemLabel>Nippon decimal classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/njb</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324958</item>
+        <itemLabel>NifsP-klassifikasjon</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/no-ujur-cnip</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324959</item>
+        <itemLabel>NICEM subject headings and classification system</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/nicem</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324960</item>
+        <itemLabel>NH classification for photography</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/nhcp</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324961</item>
+        <itemLabel>New York state documents: an introductory manual</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/nydocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324962</item>
+        <itemLabel>New Mexico state documents classification system</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/nmdocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324963</item>
+        <itemLabel>New classification scheme for Chinese libraries</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ncsclt</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324964</item>
+        <itemLabel>Nevada state documents</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/nvdocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324965</item>
+        <itemLabel>Dutch basic classification codes</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/bcl</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324966</item>
+        <itemLabel>National Library of Medicine classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/nlm</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324967</item>
+        <itemLabel>NASA scope and subject category guide</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/nasasscg</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324968</item>
+        <itemLabel>MPI Luxembourg classification system</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/mpilcs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324969</item>
+        <itemLabel>Moys, Elizabeth M. Moys classification and thesaurus for legal materials</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/moys</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324970</item>
+        <itemLabel>Moulds, Michael. Classification scheme for literature on film and television</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/fiaf</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324971</item>
+        <itemLabel>Missouri state documents classification: post-reorganization agency codes and form divisions</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/modocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324972</item>
+        <itemLabel>Mississippi state government publications. Vol. 1, July 1975/June 1980</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/msdocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324973</item>
+        <itemLabel>Michigan documents classification scheme</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/midocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324974</item>
+        <itemLabel>Methode Eppelsheimer</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/methepp</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324975</item>
+        <itemLabel>Menneskerettighets-klassifikasjon</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/no-ujur-cmr</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324976</item>
+        <itemLabel>Mathematical subject classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/msc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324977</item>
+        <itemLabel>Manual of map library classification and cataloguing</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/mmlcc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324978</item>
+        <itemLabel>Maanpuolustuskorkeakoulun kirjaston luokitusjÃ¤rjestelmÃ¤</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/mpkkl</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324980</item>
+        <itemLabel>Louisiana documents classification schedule</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ladocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324981</item>
+        <itemLabel>Los Angeles County Law Library, class K-Law</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/laclaw</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324982</item>
+        <itemLabel>LÃ¸Ã¸vs klassifikationssystem</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/loovs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325087</item>
+        <itemLabel>Australian Governmentsâ€™ interactive functions thesaurus</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/agift</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325088</item>
+        <itemLabel>Astrofysikk</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/no-ureal-ca</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325089</item>
+        <itemLabel>Arkansas state documents classification scheme</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ardocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325090</item>
+        <itemLabel>Arizona documents: KWOC manual</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/azdocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325091</item>
+        <itemLabel>Annehurst curriculum classification system</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/accs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325092</item>
+        <itemLabel>Alphabetical list of state agencies and corresponding Swank classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ridocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325093</item>
+        <itemLabel>Allgemeine Systematik fÃ¼r Ã¶ffentliche Bibliotheken (ASB)</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/asb</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325095</item>
+        <itemLabel>AGRIS: subject categories</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/agrissc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325096</item>
+        <itemLabel>AGRICOLA subject category codes</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/agricola</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325097</item>
+        <itemLabel>ACM computing classification system</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/acmccs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325098</item>
+        <itemLabel>A Keyword-in-context to Florida public documents in the Florida Atlantic University Library</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/fldocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325099</item>
+        <itemLabel>A Classification scheme for Chinese and Japanese books</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/cscjb</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325100</item>
+        <itemLabel>State documents classification schedule</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/sddocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324983</item>
+        <itemLabel>Library of Congress classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/lcc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324984</item>
+        <itemLabel>League of Nations document numbers</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/lndn</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324985</item>
+        <itemLabel>Landesbibliographie Baden-WÃ¼rttemberg</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/bwlb</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324986</item>
+        <itemLabel>L-klassifikasjon with extensions</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/utklklassex</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324987</item>
+        <itemLabel>L-klassifikasjon</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/utklklass</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324988</item>
+        <itemLabel>Finnish Academy of Fine Arts Library Classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/kuvacs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324989</item>
+        <itemLabel>National Diet Library classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/kktb</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324990</item>
+        <itemLabel>Klassifikationssystem for svenska bibliotek</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/kssb</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324991</item>
+        <itemLabel>Klassifikation fÃ¼r Allgemeinbibliotheken</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/kab</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324992</item>
+        <itemLabel>Klassifikasjonssystemet ved Menighetsfakultetes bibliotek</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/mf-klass</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324993</item>
+        <itemLabel>Music classification system (Sheet music and recordings)</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/noterlyd</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324994</item>
+        <itemLabel>Klassifikasjonsskjema (Trondheim: Fellesbiblioteket, Kongelige Norske videnskabers selskab, Museet, Norges lÃ¦rerhÃ¸gskole)</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ubtkl2</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324995</item>
+        <itemLabel>Klassifikasjonsskjema (Stavenger: Misjonshogskolen)</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/misklass</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324996</item>
+        <itemLabel>KlassifikasjonsnÃ¸kkel til norsk topografi</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/knt</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324997</item>
+        <itemLabel>Klassification fÃ¼r die SacherschlieÃŸung (BSB-DDC)</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/bsbddc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324998</item>
+        <itemLabel>KF classification, modified for use in Canadian law libraries</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/kfmod</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130324999</item>
+        <itemLabel>JSTOR multidisciplinary classification scheme</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/jstormcs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325000</item>
+        <itemLabel>Journal of Economic Literature classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/jelc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325001</item>
+        <itemLabel>Collection classification of The University of Eastern Finland</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/uef</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325002</item>
+        <itemLabel>intranda viewer digital collection classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ivdcc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325003</item>
+        <itemLabel>International Standard Classification of Education</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/isced</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325004</item>
+        <itemLabel>International patent classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ipc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325005</item>
+        <itemLabel>International classification for standards</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ics</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325006</item>
+        <itemLabel>INSPEC classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/inspec</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325007</item>
+        <itemLabel>Iconclass</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/iconclass</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325008</item>
+        <itemLabel>Guide to Nebraska state agencies: state publications classification and ordering directory</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/nbdocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325009</item>
+        <itemLabel>Government of Canada catalogue number</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/gccn</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325010</item>
+        <itemLabel>Global forest decimal classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/gfdc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325011</item>
+        <itemLabel>GHB-Aufstellungssystematik: HBZ KÃ¶ln</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ghbs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325012</item>
+        <itemLabel>GEOTHES geographical classification scheme</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/geothes</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325013</item>
+        <itemLabel>Geofysikk oppstillingssystem</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/no-ureal-cg</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325014</item>
+        <itemLabel>Fundstellennachweis FNB</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/fnb</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325015</item>
+        <itemLabel>Fundstellennachweis FNA</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/fna</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325016</item>
+        <itemLabel>Frick Art Reference Library book classification system</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/farl</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325017</item>
+        <itemLabel>Florida State Archives arrangement and description procedures manual</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/flarch</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325018</item>
+        <itemLabel>FIV-Sachklassifikation</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/fivs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325019</item>
+        <itemLabel>FIV-Regionalklassifikation</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/fivr</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325020</item>
+        <itemLabel>Finagri-luokitus</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/finagri</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325021</item>
+        <itemLabel>Fachinformationsdienste fÃ¼r die Wissenschaft (FID)</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/fid</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325022</item>
+        <itemLabel>Elazar, David H. &amp; Elazar, Daniel J. A classification system for libraries of Judaica</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/cslj</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325023</item>
+        <itemLabel>Egede-instituttets klassifikasjonsystem</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/egedeklass</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325024</item>
+        <itemLabel>Library of Parliament Classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ekl</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325025</item>
+        <itemLabel>EdinaÃ­Ã  skhema klassifikatsii literatury dlÃ­Ã  knigoizdaniÃ­Ã  v SSSR</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/rueskl</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325026</item>
+        <itemLabel>DOPAED der UB Erlangen</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/dopaed</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325027</item>
+        <itemLabel>DK5 Systematik</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/dk5s</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325028</item>
+        <itemLabel>DFG-Fachsystematik</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/dfg</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325029</item>
+        <itemLabel>Dewey decimal classification and relative index</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ddc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325030</item>
+        <itemLabel>Dewey decimal classification and relative index Edition 01</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ddc1</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325031</item>
+        <itemLabel>Dewey decimal classification and relative index Edition 010</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ddc10</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325032</item>
+        <itemLabel>Dewey decimal classification and relative index Edition 011</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ddc11</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325033</item>
+        <itemLabel>Dewey decimal classification and relative index Edition 012</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ddc12</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325034</item>
+        <itemLabel>Dewey decimal classification and relative index Edition 013</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ddc13</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325035</item>
+        <itemLabel>Dewey decimal classification and relative index Edition 014</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ddc14</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325036</item>
+        <itemLabel>Dewey decimal classification and relative index Edition 015</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ddc15</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325037</item>
+        <itemLabel>Dewey decimal classification and relative index Edition 016</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ddc16</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325038</item>
+        <itemLabel>Dewey decimal classification and relative index Edition 017</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ddc17</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325039</item>
+        <itemLabel>Dewey decimal classification and relative index Edition 018</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ddc18</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325040</item>
+        <itemLabel>Dewey decimal classification and relative index Edition 019</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ddc19</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325041</item>
+        <itemLabel>Dewey decimal classification and relative index Edition 02</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ddc2</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325042</item>
+        <itemLabel>Dewey decimal classification and relative index Edition 020</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ddc20</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325043</item>
+        <itemLabel>Dewey decimal classification and relative index Edition 021</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ddc21</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325044</item>
+        <itemLabel>Dewey decimal classification and relative index Edition 022</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ddc22</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325045</item>
+        <itemLabel>Dewey decimal classification and relative index Edition 023</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ddc23</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325046</item>
+        <itemLabel>Dewey decimal classification and relative index Edition 03</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ddc3</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325047</item>
+        <itemLabel>Dewey decimal classification and relative index Edition 04</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ddc4</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325049</item>
+        <itemLabel>Dewey decimal classification and relative index Edition 05</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ddc5</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325051</item>
+        <itemLabel>Dewey decimal classification and relative index Edition 06</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ddc6</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325052</item>
+        <itemLabel>Dewey decimal classification and relative index Edition 07</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ddc7</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325053</item>
+        <itemLabel>Dewey decimal classification and relative index Edition 08</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ddc8</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325054</item>
+        <itemLabel>Dewey decimal classification and relative index Edition 09</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ddc9</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325055</item>
+        <itemLabel>Deutsche Historische Bibliografie - Jahresberichte fÃ¼r deutsche Geschichte - Klassifikation (Bibliography of German History - Annual Bibliography on German History - Classification)</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/dhb-jdgklass</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325056</item>
+        <itemLabel>Cutter, Charles Ammi. Expansive classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/cutterec</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325057</item>
+        <itemLabel>Colorado State Publications Depository and Distribution Center. Classification schedule</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/codocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325058</item>
+        <itemLabel>CODOC</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/cacodoc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325059</item>
+        <itemLabel>Coates, E.J. The British catalogue of music classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/bcmc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325060</item>
+        <itemLabel>Classification scheme for Pennsylvania state publications</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/padocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325061</item>
+        <itemLabel>Classification scheme for North Carolina state publications: as applied to the documents collection of the N.C. Dept. of Cultural Resources</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ncdocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325062</item>
+        <itemLabel>Classification Roy</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/roy</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325063</item>
+        <itemLabel>Classification of the library of Union Theological Seminary in the City of New York</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/clutscny</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325064</item>
+        <itemLabel>Classification of Medialab Tabakalera Library</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/mtlc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325065</item>
+        <itemLabel>Classification of Iowa state documents</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/iadocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325066</item>
+        <itemLabel>Classification juridique romande</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/cjurrom</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325067</item>
+        <itemLabel>Classification for medical literature by Eileen R. Cunningham</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/cmedlit</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325068</item>
+        <itemLabel>Classification de l'histoire de France</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/chfbn</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325069</item>
+        <itemLabel>Classificatieschema's Bibliotheek TU Delft</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/cstud</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325070</item>
+        <itemLabel>ClassifiaÃ§Ã£o decimal de direito</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/cddir</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325071</item>
+        <itemLabel>Class FC: a classification for Canadian history, Class PS8000: a classification for Canadian literature</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/fcps</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325072</item>
+        <itemLabel>ClasificaciÃ³n musical de la BibliografÃ­a Nacional de EspaÃ±a</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/mu</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325073</item>
+        <itemLabel>Cidades@</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/cidades</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325074</item>
+        <itemLabel>CELEX document number</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/celex</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325076</item>
+        <itemLabel>California state agency classification scheme</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/cadocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325077</item>
+        <itemLabel>Cadre de classement des publications gouvernementales du QuÃ©bec</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ccpgq</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325078</item>
+        <itemLabel>British Library Inside service subject classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/blissc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325079</item>
+        <itemLabel>British Library - Science reference information service subject classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/blsrissc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325080</item>
+        <itemLabel>BLISS bibliographic classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/bliss</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325081</item>
+        <itemLabel>BISAC subject headings</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/bisacsh</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325082</item>
+        <itemLabel>Biologisk hylleoppstilling</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/no-ureal-cb</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325083</item>
+        <itemLabel>Bibliotechno-bibliograficheskaÃ­Ã  klassifikatsiÃ­Ã e: Srednye tablitsy</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/rubbks</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325084</item>
+        <itemLabel>Bibliographie zur Geschichte der Deutschen Arbeiterbewegung</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/bizga</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325085</item>
+        <itemLabel>Basisklassification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/bkl</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325086</item>
+        <itemLabel>Barnard, Cyril C. A classification for medical and veterinary libraries</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/bar</LoC_and_MARC_vocabularies_ID>
+    </row>
+</root>
