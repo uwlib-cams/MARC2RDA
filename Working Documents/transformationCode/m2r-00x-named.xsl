@@ -97,6 +97,88 @@
         </xsl:analyze-string>
     </xsl:template>
     
+    <xsl:template name="F008-c18-CONT">
+        <xsl:param name="char18"/>
+        <xsl:choose>
+            <xsl:when test="$char18 = 'a'">
+                <rdaw:P10368 rdf:resource="{'http://rdaregistry.info/termList/frequency/1013'}"/>
+            </xsl:when>
+            <xsl:when test="$char18 = 'b'">
+                <rdaw:P10368 rdf:resource="{'http://rdaregistry.info/termList/frequency/1007'}"/>
+            </xsl:when>
+            <xsl:when test="$char18 = 'c'">
+                <rdaw:P10368 rdf:resource="{'http://rdaregistry.info/termList/frequency/1005'}"/>
+            </xsl:when>
+            <xsl:when test="$char18 = 'd'">
+                <rdaw:P10368 rdf:resource="{'http://rdaregistry.info/termList/frequency/1001'}"/>
+            </xsl:when>
+            <xsl:when test="$char18 = 'e'">
+                <rdaw:P10368 rdf:resource="{'http://rdaregistry.info/termList/frequency/1003'}"/>
+            </xsl:when>
+            <xsl:when test="$char18 = 'f'">
+                <rdaw:P10368 rdf:resource="{'http://rdaregistry.info/termList/frequency/1012'}"/>
+            </xsl:when>
+            <xsl:when test="$char18 = 'g'">
+                <rdaw:P10368 rdf:resource="{'http://rdaregistry.info/termList/frequency/1014'}"/>
+            </xsl:when>
+            <xsl:when test="$char18 = 'h'">
+                <rdaw:P10368 rdf:resource="{'http://rdaregistry.info/termList/frequency/1015'}"/>
+            </xsl:when>
+            <xsl:when test="$char18 = 'i'">
+                <rdaw:P10368 rdf:resource="{'http://rdaregistry.info/termList/frequency/1002'}"/>
+            </xsl:when>
+            <xsl:when test="$char18 = 'j'">
+                <rdaw:P10368 rdf:resource="{'http://rdaregistry.info/termList/frequency/1006'}"/>
+            </xsl:when>
+            <xsl:when test="$char18 = 'k'">
+                <rdaw:P10368 rdf:resource="{'https://doi.org/10.6069/uwlswd.ggnh-4s58#k'}"/>
+            </xsl:when>
+            <xsl:when test="$char18 = 'm'">
+                <rdaw:P10368 rdf:resource="{'http://rdaregistry.info/termList/frequency/1008'}"/>
+            </xsl:when>
+            <xsl:when test="$char18 = 'q'">
+                <rdaw:P10368 rdf:resource="{'http://rdaregistry.info/termList/frequency/1010'}"/>
+            </xsl:when>
+            <xsl:when test="$char18 = 's'">
+                <rdaw:P10368 rdf:resource="{'http://rdaregistry.info/termList/frequency/1009'}"/>
+            </xsl:when>
+            <xsl:when test="$char18 = 't'">
+                <rdaw:P10368 rdf:resource="{'http://rdaregistry.info/termList/frequency/1011'}"/>
+            </xsl:when>
+            <xsl:when test="$char18 = 'w'">
+                <rdaw:P10368 rdf:resource="{'http://rdaregistry.info/termList/frequency/1004'}"/>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template name="F008-c19-CONT">
+        <xsl:param name="char19"/>
+        <xsl:choose>
+            <xsl:when test="$char19 = 'n'">
+                <rdamd:P30137>
+                    <xsl:text>Regularity: Normalized irregular.</xsl:text>
+                </rdamd:P30137>
+            </xsl:when>
+            <xsl:when test="$char19 = 'r'">
+                <rdamd:P30137>
+                    <xsl:text>Regularity: Regular.</xsl:text>
+                </rdamd:P30137>
+            </xsl:when>
+            <xsl:when test="$char19 = 'x'">
+                <rdamd:P30137>
+                    <xsl:text>Regularity: Completely irregular.</xsl:text>
+                </rdamd:P30137>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template name="F008-c21-CONT">
+        <xsl:param name="char21"/>
+        <xsl:if test="$char21 != ' ' and $char21 != '|'">
+            <rdaw:P10004 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.62zz-1534#', $char21)}"/>
+        </xsl:if>
+    </xsl:template>
+    
     <xsl:template name="F008-c22-SOME">
         <xsl:param name="char22"/>
         <xsl:choose>
@@ -115,7 +197,56 @@
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template name="F008-c23-BOOKS-origMan">
+    <xsl:template name="F008-c22-CONT">
+        <xsl:param name="char22"/>
+        <xsl:if test="$char22 = 'a'">
+            <rdamd:P30137>
+                <xsl:text>Originally issued as: Microfilm.</xsl:text>
+            </rdamd:P30137>
+        </xsl:if>
+        <xsl:if test="$char22 = 'b'">
+            <rdamd:P30137>
+                <xsl:text>Originally issued as: Microfiche.</xsl:text>
+            </rdamd:P30137>
+        </xsl:if>
+        <xsl:if test="$char22 = 'c'">
+            <rdamd:P30137>
+                <xsl:text>Originally issued as: Microopaque.</xsl:text>
+            </rdamd:P30137>
+        </xsl:if>
+        <xsl:if test="$char22 = 'd'">
+            <rdamd:P30137>
+                <xsl:text>Originally issued as: Large print.</xsl:text>
+            </rdamd:P30137>
+        </xsl:if>
+        <xsl:if test="$char22 = 'e'">
+            <rdamd:P30137>
+                <xsl:text>Originally issued as: Newspaper format.</xsl:text>
+            </rdamd:P30137>
+        </xsl:if>
+        <xsl:if test="$char22 = 'f'">
+            <rdamd:P30137>
+                <xsl:text>Originally issued as: Braille.</xsl:text>
+            </rdamd:P30137>
+        </xsl:if>
+        <xsl:if test="$char22 = 'o'">
+            <rdamd:P30137>
+                <xsl:text>Originally issued as: Online.</xsl:text>
+            </rdamd:P30137>
+        </xsl:if>
+        <xsl:if test="$char22 = 'q'">
+            <rdamd:P30137>
+                <xsl:text>Originally issued as: Direct electronic.</xsl:text>
+            </rdamd:P30137>
+        </xsl:if>
+        <xsl:if test="$char22 = 's'">
+            <rdamd:P30137>
+                <xsl:text>Originally issued as: Electronic.</xsl:text>
+            </rdamd:P30137>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F008-c23-SOME-origMan">
         <xsl:param name="char23"/>
         <xsl:choose>
             <xsl:when test="$char23 = 'd'">
@@ -139,7 +270,7 @@
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template name="F008-c23-BOOKS">
+    <xsl:template name="F008-c23-SOME">
         <xsl:param name="char23"/>
         <xsl:choose>
             <xsl:when test="$char23 = 'a'">
@@ -160,7 +291,7 @@
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template name="F008-c23-f-BOOKS">
+    <xsl:template name="F008-c23-f-SOME">
         <xsl:param name="char23"/>
         <xsl:if test="$char23 = 'f'">
             <rdae:P20061 rdf:resource="{'http://rdaregistry.info/termList/TacNotation/1001'}"/>
@@ -229,6 +360,13 @@
         </xsl:analyze-string>
     </xsl:template>
     
+    <xsl:template name="F008-c24-CONT">
+        <xsl:param name="char24"/>
+        <xsl:if test="$char24 != ' ' and $char24 != '|'">
+            <rdaw:P10004 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.jfr5-z647#', $char24)}"/>
+        </xsl:if>
+    </xsl:template>
+    
     <xsl:template name="F008-c26-COMP">
         <xsl:param name="char26"/>
         <xsl:if test="$char26 != 'u' and $char26 != 'z' and $char26 != ' ' and $char26 != '|'">
@@ -267,9 +405,9 @@
     <xsl:template name="F008-c31-BOOKS">
         <xsl:param name="char31"/>
         <xsl:if test="$char31 = '1'">
-            <rdam:P30137>
+            <rdamd:P30137>
                 <xsl:text>Index present.</xsl:text>
-            </rdam:P30137>
+            </rdamd:P30137>
         </xsl:if>
     </xsl:template>
     
@@ -290,9 +428,9 @@
     <xsl:template name="F008-c34-d-BOOKS">
         <xsl:param name="char34"/>
         <xsl:if test="$char34 = 'd'">
-            <rdam:P30137>
+            <rdamd:P30137>
                 <xsl:text>Contains biographical information.</xsl:text>
-            </rdam:P30137>
+            </rdamd:P30137>
         </xsl:if>
     </xsl:template>
 </xsl:stylesheet>
