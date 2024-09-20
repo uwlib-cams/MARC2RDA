@@ -69,6 +69,12 @@
                 <xsl:call-template name="F008-c24-CONT">
                     <xsl:with-param name="char24" select="substring(., 25, 1)"/>
                 </xsl:call-template>
+                <xsl:call-template name="F008-c25-27-CONT">
+                    <xsl:with-param name="char25-27" select="substring(., 26, 3)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F008-c29-CONT">
+                    <xsl:with-param name="char29" select="substring(., 30, 1)"/>
+                </xsl:call-template>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
@@ -193,6 +199,15 @@
                     </xsl:call-template>
                     <xsl:call-template name="F008-c23-SOME">
                         <xsl:with-param name="char23" select="substring(., 24, 1)"/>
+                    </xsl:call-template>
+                    <xsl:call-template name="F008-c25-27-bkq-CONT">
+                        <xsl:with-param name="char25-27" select="substring(., 26, 3)"/>
+                    </xsl:call-template>
+                    <xsl:call-template name="F008-c28-SOME">
+                        <xsl:with-param name="char28" select="substring(., 29, 1)"/>
+                    </xsl:call-template>
+                    <xsl:call-template name="F008-c33-CONT">
+                        <xsl:with-param name="char33" select="substring(., 34, 1)"/>
                     </xsl:call-template>
                 </xsl:when>
             </xsl:choose>

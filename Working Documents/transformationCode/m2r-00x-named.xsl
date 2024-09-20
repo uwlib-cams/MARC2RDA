@@ -367,6 +367,48 @@
         </xsl:if>
     </xsl:template>
     
+    <xsl:template name="F008-c25-27-CONT">
+        <xsl:param name="char25-27"/>
+        <xsl:analyze-string select="$char25-27" regex=".{{1}}">
+            <xsl:matching-substring>
+                <xsl:choose>
+                    <xsl:when test=". = ' ' or . = '|' or . = 'b' or . = 'k' or . = 'q'"/>
+                    <xsl:when test=". = 'x'">
+                        <rdaw:P10004 rdf:resource="{'https://doi.org/10.6069/uwlswd.cr35-yd51#t'}"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <rdaw:P10004 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.cr35-yd51#', .)}"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:matching-substring>
+        </xsl:analyze-string>
+    </xsl:template>
+    
+    <xsl:template name="F008-c25-27-bkq-CONT">
+        <xsl:param name="char25-27"/>
+        <xsl:analyze-string select="$char25-27" regex=".{{1}}">
+            <xsl:matching-substring>
+                <xsl:choose>
+                    <xsl:when test=". = 'b'">
+                        <rdamd:P30137>
+                            <xsl:text>Includes bibliographies.</xsl:text>
+                        </rdamd:P30137>
+                    </xsl:when>
+                    <xsl:when test=". = 'k'">
+                        <rdamd:P30137>
+                            <xsl:text>Includes discographies.</xsl:text>
+                        </rdamd:P30137>
+                    </xsl:when>
+                    <xsl:when test=". = 'q'">
+                        <rdamd:P30137>
+                            <xsl:text>Includes filmographies.</xsl:text>
+                        </rdamd:P30137>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:matching-substring>
+        </xsl:analyze-string>
+    </xsl:template>
+    
     <xsl:template name="F008-c26-COMP">
         <xsl:param name="char26"/>
         <xsl:if test="$char26 != 'u' and $char26 != 'z' and $char26 != ' ' and $char26 != '|'">
@@ -395,6 +437,13 @@
         </xsl:if>
     </xsl:template>
     
+    <xsl:template name="F008-c29-CONT">
+        <xsl:param name="char29"/>
+        <xsl:if test="$char29 = '1'">
+            <rdaw:P10004 rdf:resource="{'https://doi.org/10.6069/uwlswd.6mz0-ta86#1'}"/>
+        </xsl:if>
+    </xsl:template>
+    
     <xsl:template name="F008-c30-BOOKS">
         <xsl:param name="char30"/>
         <xsl:if test="$char30 = '1'">
@@ -416,6 +465,72 @@
         <xsl:if test="$char33 != 'u' and $char33 != '|' and $char33 != ' '">
             <rdaw:P10004 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.f447-ax91#', $char33)}"/>
         </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F008-c33-CONT">
+        <xsl:param name="char33"/>
+        <xsl:choose>
+            <xsl:when test="$char33 = 'a'">
+                <rdamd:P30137>
+                    <xsl:text>Original alphabet or script of title: Basic Roman.</xsl:text>
+                </rdamd:P30137>
+            </xsl:when>
+            <xsl:when test="$char33 = 'b'">
+                <rdamd:P30137>
+                    <xsl:text>Original alphabet or script of title: Extended Roman.</xsl:text>
+                </rdamd:P30137>
+            </xsl:when>
+            <xsl:when test="$char33 = 'c'">
+                <rdamd:P30137>
+                    <xsl:text>Original alphabet or script of title: Cyrillic.</xsl:text>
+                </rdamd:P30137>
+            </xsl:when>
+            <xsl:when test="$char33 = 'd'">
+                <rdamd:P30137>
+                    <xsl:text>Original alphabet or script of title: Japanese.</xsl:text>
+                </rdamd:P30137>
+            </xsl:when>
+            <xsl:when test="$char33 = 'e'">
+                <rdamd:P30137>
+                    <xsl:text>Original alphabet or script of title: Chinese.</xsl:text>
+                </rdamd:P30137>
+            </xsl:when>
+            <xsl:when test="$char33 = 'f'">
+                <rdamd:P30137>
+                    <xsl:text>Original alphabet or script of title: Arabic.</xsl:text>
+                </rdamd:P30137>
+            </xsl:when>
+            <xsl:when test="$char33 = 'g'">
+                <rdamd:P30137>
+                    <xsl:text>Original alphabet or script of title: Greek.</xsl:text>
+                </rdamd:P30137>
+            </xsl:when>
+            <xsl:when test="$char33 = 'h'">
+                <rdamd:P30137>
+                    <xsl:text>Original alphabet or script of title: Hebrew.</xsl:text>
+                </rdamd:P30137>
+            </xsl:when>
+            <xsl:when test="$char33 = 'i'">
+                <rdamd:P30137>
+                    <xsl:text>Original alphabet or script of title: Thai.</xsl:text>
+                </rdamd:P30137>
+            </xsl:when>
+            <xsl:when test="$char33 = 'j'">
+                <rdamd:P30137>
+                    <xsl:text>Original alphabet or script of title: Devanagari.</xsl:text>
+                </rdamd:P30137>
+            </xsl:when>
+            <xsl:when test="$char33 = 'k'">
+                <rdamd:P30137>
+                    <xsl:text>Original alphabet or script of title: Korean.</xsl:text>
+                </rdamd:P30137>
+            </xsl:when>
+            <xsl:when test="$char33 = 'l'">
+                <rdamd:P30137>
+                    <xsl:text>Original alphabet or script of title: Tamil.</xsl:text>
+                </rdamd:P30137>
+            </xsl:when>
+        </xsl:choose>
     </xsl:template>
     
     <xsl:template name="F008-c34-abc-BOOKS">
