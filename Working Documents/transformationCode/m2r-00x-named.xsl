@@ -97,11 +97,20 @@
         </xsl:analyze-string>
     </xsl:template>
     
-    <xsl:template name="F008-c22-BOOKS">
+    <xsl:template name="F008-c22-SOME">
         <xsl:param name="char22"/>
         <xsl:choose>
             <xsl:when test="$char22 != ' ' and $char22 != '|'">
                 <rdae:P20322 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.aec4-nv40#', $char22)}"/>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template name="F008-c22-COMP">
+        <xsl:param name="char22"/>
+        <xsl:choose>
+            <xsl:when test="$char22 != ' ' and $char22 != '|'">
+                <rdam:P30305 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.aec4-nv40#', $char22)}"/>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
@@ -158,6 +167,20 @@
         </xsl:if>
     </xsl:template>
     
+    <xsl:template name="F008-c23-COMP-origMan">
+        <xsl:param name="char23"/>
+        <xsl:if test="$char23 = 'q'">
+            <rdam:P30001 rdf:resource="{'https://doi.org/10.6069/uwlswd.3d5s-zx23#q'}"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F008-c23-COMP">
+        <xsl:param name="char23"/>
+        <xsl:if test="$char23 = 'o'">
+            <rdam:P30001 rdf:resource="{'https://doi.org/10.6069/uwlswd.3d5s-zx23#o'}"/>
+        </xsl:if>
+    </xsl:template>
+    
     <xsl:template name="F008-c24-27-BOOKS">
         <xsl:param name="char24-27"/>
         <xsl:analyze-string select="$char24-27" regex=".{{1}}">
@@ -204,5 +227,72 @@
                 </xsl:choose>
             </xsl:matching-substring>
         </xsl:analyze-string>
+    </xsl:template>
+    
+    <xsl:template name="F008-c26-COMP">
+        <xsl:param name="char26"/>
+        <xsl:if test="$char26 != 'u' and $char26 != 'z' and $char26 != ' ' and $char26 != '|'">
+            <rdam:P30018 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.mkjn-bp10#', $char26)}"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F008-c28-SOME">
+        <xsl:param name="char28"/>
+        <xsl:if test="$char28 != ' ' and $char28 != '|' and $char28 != 'z' and $char28 != 'u'">
+            <xsl:choose>
+                <xsl:when test="$char28 = 'n'">
+                    <rdam:P30335 rdf:resource="{'https://doi.org/10.6069/uwlswd.2eg3-1x53#nx'}"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <rdam:P30335 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.2eg3-1x53#', $char28)}"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F008-c29-BOOKS">
+        <xsl:param name="char29"/>
+        <xsl:if test="$char29 = '1'">
+            <rdaw:P10004 rdf:resource="{'https://doi.org/10.6069/uwlswd.t1gh-8294#1'}"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F008-c30-BOOKS">
+        <xsl:param name="char30"/>
+        <xsl:if test="$char30 = '1'">
+            <rdaw:P10004 rdf:resource="{'https://doi.org/10.6069/uwlswd.tq9s-1157#1'}"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F008-c31-BOOKS">
+        <xsl:param name="char31"/>
+        <xsl:if test="$char31 = '1'">
+            <rdam:P30137>
+                <xsl:text>Index present.</xsl:text>
+            </rdam:P30137>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F008-c33-BOOKS">
+        <xsl:param name="char33"/>
+        <xsl:if test="$char33 != 'u' and $char33 != '|' and $char33 != ' '">
+            <rdaw:P10004 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.f447-ax91#', $char33)}"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F008-c34-abc-BOOKS">
+        <xsl:param name="char34"/>
+        <xsl:if test="$char34 = 'a' or $char34 = 'b' or $char34 = 'c'">
+            <rdaw:P10004 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.x4ce-sd21#', $char34)}"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F008-c34-d-BOOKS">
+        <xsl:param name="char34"/>
+        <xsl:if test="$char34 = 'd'">
+            <rdam:P30137>
+                <xsl:text>Contains biographical information.</xsl:text>
+            </rdam:P30137>
+        </xsl:if>
     </xsl:template>
 </xsl:stylesheet>
