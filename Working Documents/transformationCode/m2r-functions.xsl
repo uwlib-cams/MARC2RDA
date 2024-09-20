@@ -49,11 +49,13 @@
     
     <xsl:function name="uwf:checkReproductions">
         <xsl:param name="record"/>
+        <xsl:variable name="test588" select="if (some $a in $record/marc:datafield[@tag = '588']/marc:subfield[@code = 'a']
+            satisfies (contains($a, 'version record'))) then true() else false()"/>
         <xsl:choose>
-            <xsl:when test="contains($record/marc:datafield[@tag = '588']/marc:subfield[@code = 'a'], 'version record')">
+            <xsl:when test="$test588 = true()">
                 <xsl:value-of select="'588'"/>
             </xsl:when>
-            <xsl:when test="$record/marc:datafield[@tag = '533']">
+            <xsl:when test="$test588 = false() and $record/marc:datafield[@tag = '533']">
                 <xsl:value-of select="if (some $a in $record/marc:datafield[@tag = '533']/marc:subfield[@code = 'a']
                     satisfies not(contains($a, 'also available as'))) then '533' else ''"/>
             </xsl:when>
