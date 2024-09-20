@@ -110,6 +110,15 @@
                     <xsl:with-param name="char23" select="substring(., 24, 1)"/>
                 </xsl:call-template>
             </xsl:when>
+            <!-- maps -->
+            <xsl:when test="substring($ldr6-7, 1, 1) = 'e' or substring($ldr6-7, 1, 1) = 'f'">
+                <xsl:call-template name="F008-c18-MAPS">
+                    <xsl:with-param name="char18" select="substring(., 19, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F008-c22-23-MAPS">
+                    <xsl:with-param name="char22-23" select="substring(., 23, 2)"/>
+                </xsl:call-template>
+            </xsl:when>
         </xsl:choose>
     </xsl:template>
     
@@ -209,6 +218,10 @@
                     <xsl:call-template name="F008-c33-CONT">
                         <xsl:with-param name="char33" select="substring(., 34, 1)"/>
                     </xsl:call-template>
+                </xsl:when>
+                <!-- maps -->
+                <xsl:when test="substring($ldr6-7, 1, 1) = 'e' or substring($ldr6-7, 1, 1) = 'f'">
+                    
                 </xsl:when>
             </xsl:choose>
         </xsl:if>

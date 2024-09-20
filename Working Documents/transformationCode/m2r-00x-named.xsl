@@ -151,6 +151,20 @@
         </xsl:choose>
     </xsl:template>
     
+    <xsl:template name="F008-c18-MAPS">
+        <xsl:param name="char18"/>
+        <xsl:if test="$char18 != ' ' and $char18 != '|' and $char18 != 'z'">
+            <xsl:choose>
+                <xsl:when test="$char18 = 'h'">
+                    <rdae:P20318 rdf:resource="{'https://doi.org/10.6069/uwlswd.1c2x-cj09#hx'}"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <rdae:P20318 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.1c2x-cj09#', $char18)}"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:if>
+    </xsl:template>
+    
     <xsl:template name="F008-c19-CONT">
         <xsl:param name="char19"/>
         <xsl:choose>
@@ -243,6 +257,13 @@
             <rdamd:P30137>
                 <xsl:text>Originally issued as: Electronic.</xsl:text>
             </rdamd:P30137>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F008-c22-23-MAPS">
+        <xsl:param name="char22-23"/>
+        <xsl:if test="not(contains($char22-23, ' ')) and not(contains($char22-23, '|')) and $char22-23 != 'zz'">
+            <rdae:P20216 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.4jrs-m847#', $char22-23)}"/>
         </xsl:if>
     </xsl:template>
     
