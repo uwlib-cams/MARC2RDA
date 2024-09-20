@@ -46,8 +46,8 @@
       <fake:marcfield>F555 ## $a Vols. 1 (1956)-5 (1960). 1 v. $b Test B. $c Test C. $d Test D. $u url.</fake:marcfield>
       <rdawd:P30137>Culmulative index/finding aids note: Vols. 1 (1956)-5 (1960). 1 v.; Availability source: Test B.; Degree of control: Test C.; Bibliographic reference: Test D.; Uniform Resource Identifier: url.</rdawd:P30137>
       <fake:marcfield>F555 ## $a Vols. 1 (1956)-5 (1960). 1 v. $3 Ms. letters interleaved.</fake:marcfield>
-      <rdawd:P30137>Culmulative index/finding aids note: Vols. 1 (1956)-5 (1960). 1 v.; Materials specified: Ms. letters interleaved.</rdawd:P30137>
+      <rdawd:P30137>Culmulative index/finding aids note: Vols. 1 (1956)-5 (1960). 1 v. (Applies to: Ms. letters interleaved.)</rdawd:P30137>
       <fake:marcfield>F880 ## $6 555-00 $a Vols. 1 (1956)-5 (1960). 1 v. $3 Ms. letters interleaved.</fake:marcfield>
-      <rdawd:P30137>Culmulative index/finding aids note: Vols. 1 (1956)-5 (1960). 1 v.; Materials specified: Ms. letters interleaved.</rdawd:P30137>
+      <rdawd:P30137>Culmulative index/finding aids note: Vols. 1 (1956)-5 (1960). 1 v. (Applies to: Ms. letters interleaved.)</rdawd:P30137>
    </rdf:Description>
 </rdf:RDF>
