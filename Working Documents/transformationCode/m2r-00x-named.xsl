@@ -42,7 +42,7 @@
         <rdamo:P30279 rdf:resource="{concat('http://id.loc.gov/vocabulary/countries/', $char15-17)}"/>
     </xsl:template>
     
-    <xsl:template name="F008-c18-21-BOOKS">
+    <xsl:template name="F008-c18-21-BOOK">
         <xsl:param name="char18-21"/>
         <xsl:analyze-string select="$char18-21" regex=".{{1}}">
             <xsl:matching-substring>
@@ -333,7 +333,7 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="F008-c24-27-BOOKS">
+    <xsl:template name="F008-c24-27-BOOK">
         <xsl:param name="char24-27"/>
         <xsl:analyze-string select="$char24-27" regex=".{{1}}">
             <xsl:matching-substring>
@@ -353,7 +353,7 @@
         </xsl:analyze-string>
     </xsl:template>
     
-    <xsl:template name="F008-c24-27-2bkq-BOOKS">
+    <xsl:template name="F008-c24-27-2bkq-BOOK">
         <xsl:param name="char24-27"/>
         <xsl:analyze-string select="$char24-27" regex=".{{1}}">
             <xsl:matching-substring>
@@ -505,7 +505,7 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="F008-c29-BOOKS">
+    <xsl:template name="F008-c29-BOOK">
         <xsl:param name="char29"/>
         <xsl:if test="$char29 = '1'">
             <rdaw:P10004 rdf:resource="{'https://doi.org/10.6069/uwlswd.t1gh-8294#1'}"/>
@@ -519,14 +519,14 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="F008-c30-BOOKS">
+    <xsl:template name="F008-c30-BOOK">
         <xsl:param name="char30"/>
         <xsl:if test="$char30 = '1'">
             <rdaw:P10004 rdf:resource="{'https://doi.org/10.6069/uwlswd.tq9s-1157#1'}"/>
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="F008-c31-BOOKS">
+    <xsl:template name="F008-c31-BOOK">
         <xsl:param name="char31"/>
         <xsl:if test="$char31 = '1'">
             <rdamd:P30137>
@@ -542,7 +542,7 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="F008-c33-BOOKS">
+    <xsl:template name="F008-c33-BOOK">
         <xsl:param name="char33"/>
         <xsl:if test="$char33 != 'u' and $char33 != '|' and $char33 != ' '">
             <rdaw:P10004 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.f447-ax91#', $char33)}"/>
@@ -695,14 +695,14 @@
         </xsl:analyze-string>
     </xsl:template>
     
-    <xsl:template name="F008-c34-abc-BOOKS">
+    <xsl:template name="F008-c34-abc-BOOK">
         <xsl:param name="char34"/>
         <xsl:if test="$char34 = 'a' or $char34 = 'b' or $char34 = 'c'">
             <rdaw:P10004 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.x4ce-sd21#', $char34)}"/>
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="F008-c34-d-BOOKS">
+    <xsl:template name="F008-c34-d-BOOK">
         <xsl:param name="char34"/>
         <xsl:if test="$char34 = 'd'">
             <rdamd:P30137>

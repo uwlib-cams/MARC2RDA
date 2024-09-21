@@ -42,19 +42,19 @@
             <!-- books -->
             <xsl:when test="$ldr6-7 = 'aa' or $ldr6-7 = 'ac' or $ldr6-7 = 'ad' or $ldr6-7 = 'am'
                 or $ldr6-7 = 'ca' or $ldr6-7 = 'cc' or $ldr6-7 = 'cd' or $ldr6-7 = 'cm'">
-                <xsl:call-template name="F008-c24-27-BOOKS">
+                <xsl:call-template name="F008-c24-27-BOOK">
                     <xsl:with-param name="char24-27" select="substring(., 25, 4)"/>
                 </xsl:call-template>
-                <xsl:call-template name="F008-c29-BOOKS">
+                <xsl:call-template name="F008-c29-BOOK">
                     <xsl:with-param name="char29" select="substring(., 30, 1)"/>
                 </xsl:call-template>
-                <xsl:call-template name="F008-c30-BOOKS">
+                <xsl:call-template name="F008-c30-BOOK">
                     <xsl:with-param name="char30" select="substring(., 31, 1)"/>
                 </xsl:call-template>
-                <xsl:call-template name="F008-c33-BOOKS">
+                <xsl:call-template name="F008-c33-BOOK">
                     <xsl:with-param name="char33" select="substring(., 34, 1)"/>
                 </xsl:call-template>
-                <xsl:call-template name="F008-c34-abc-BOOKS">
+                <xsl:call-template name="F008-c34-abc-BOOK">
                     <xsl:with-param name="char34" select="substring(., 35, 1)"/>
                 </xsl:call-template>
             </xsl:when>
@@ -197,22 +197,22 @@
                 <!-- books -->
                 <xsl:when test="$ldr6-7 = 'aa' or $ldr6-7 = 'ac' or $ldr6-7 = 'ad' or $ldr6-7 = 'am'
                     or $ldr6-7 = 'ca' or $ldr6-7 = 'cc' or $ldr6-7 = 'cd' or $ldr6-7 = 'cm'">
-                    <xsl:call-template name="F008-c18-21-BOOKS">
+                    <xsl:call-template name="F008-c18-21-BOOK">
                         <xsl:with-param name="char18-21" select="substring(., 19, 4)"/>
                     </xsl:call-template>
                     <xsl:call-template name="F008-c23_29-SOME">
                         <xsl:with-param name="char23_29" select="substring(., 24, 1)"/>
                     </xsl:call-template>
-                    <xsl:call-template name="F008-c24-27-2bkq-BOOKS">
+                    <xsl:call-template name="F008-c24-27-2bkq-BOOK">
                         <xsl:with-param name="char24-27" select="substring(., 25, 4)"/>
                     </xsl:call-template>
                     <xsl:call-template name="F008-c28-SOME">
                         <xsl:with-param name="char28" select="substring(., 29, 1)"/>
                     </xsl:call-template>
-                    <xsl:call-template name="F008-c31-BOOKS">
+                    <xsl:call-template name="F008-c31-BOOK">
                         <xsl:with-param name="char31" select="substring(., 32, 1)"/>
                     </xsl:call-template>
-                    <xsl:call-template name="F008-c34-d-BOOKS">
+                    <xsl:call-template name="F008-c34-d-BOOK">
                         <xsl:with-param name="char34" select="substring(., 35, 1)"/>
                     </xsl:call-template>
                 </xsl:when>
