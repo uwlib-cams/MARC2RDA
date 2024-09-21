@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99162443444601452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>99162443444601452wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <fake:marcfield>F008 100812c20199999kn fr p o     0   k0kor c</fake:marcfield>
+      <rdaw:P10368 rdf:resource="http://rdaregistry.info/termList/frequency/1012"/><!--rdaw:P10368 = has frequency-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.62zz-1534#p"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F043 ## $a a-kn---</fake:marcfield>
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/a-kn"/><!--rdawo:P10321 = has subject place-->
+      <fake:marcfield>F050 #4 $a HB9 $b .K52</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcc/hb9"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F245 00 $6 880-01 $a Kim Il-sŏng Chonghap Taehak hakpo. $p Kyŏngjehak.</fake:marcfield>
+      <rdawd:P10088>Kim Il-sŏng Chonghap Taehak hakpo. Kyŏngjehak.</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <fake:marcfield>F650 #0 $a Economics $v Periodicals.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/economicsperiodicals"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/periodicals"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F650 #6 $a Économie politique $v Périodiques.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/économiepolitiquepériodiques"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvm/périodiques"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F650 #7 $a Economic history. $2 fast $0 (OCoLC)fst00901974</fake:marcfield>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00901974"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F650 #7 $a Economics. $2 fast $0 (OCoLC)fst00902116</fake:marcfield>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00902116"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F651 #0 $a Korea (North) $x Economic conditions $v Periodicals.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/koreanortheconomicconditionsperiodicals"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/economicconditions"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/periodicals"/><!--rdaw:P10004 = has category of work-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/koreanorth"/><!--rdawo:P10321 = has subject place-->
+      <fake:marcfield>F651 #7 $a Korea (North) $2 fast $0 (OCoLC)fst01214151</fake:marcfield>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/fast/koreanorth"/><!--rdawo:P10321 = has subject place-->
+      <fake:marcfield>F655 #2 $a Periodical</fake:marcfield>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/mesh/periodical"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F655 #7 $a periodicals. $2 aat</fake:marcfield>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/aat/periodicals"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F655 #7 $a Periodicals. $2 fast $0 (OCoLC)fst01411641</fake:marcfield>
+      <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01411641"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F655 #7 $a Periodicals. $2 lcgft</fake:marcfield>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcgft/periodicals"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F655 #7 $a Périodiques. $2 rvmgf</fake:marcfield>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvmgf/périodiques"/><!--rdaw:P10004 = has category of work-->
+      <rdawo:P10550 rdf:resource="http://marc2rda.edu/fake/age/d22e303"/><!--rdawo:P10550 = has issuing corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99162443444601452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/99162443444601452wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>99162443444601452exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+      <fake:marcfield>F008 100812c20199999kn fr p o     0   k0kor c</fake:marcfield>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/kor"/><!--rdae:P20006 = has language of expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99162443444601452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99162443444601452exp"/><!--rdamo:P30139 = has expression manifested-->
+      <!--533-->
+      <rdamo:P30136 rdf:resource="http://marc2rda.edu/fake/99162443444601452origMan"/><!--rdamo:P30136 = is electronic reproduction of manifestation of-->
+      <fake:marcfield>F008 100812c20199999kn fr p o     0   k0kor c</fake:marcfield>
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdam:P30001 = has carrier type-->
+      <rdamd:P30137>Original alphabet or script of title: Korean.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F245 00 $6 880-01 $a Kim Il-sŏng Chonghap Taehak hakpo. $p Kyŏngjehak.</fake:marcfield>
+      <rdamd:P30156>Kim Il-sŏng Chonghap Taehak hakpo. Kyŏngjehak.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <fake:marcfield>F880 00 $6 245-01/$1 $a 김 일성 종합 대학 학보. $p 경제학.</fake:marcfield>
+      <rdamd:P30156>김 일성 종합 대학 학보. 경제학.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <fake:marcfield>F264 #1 $6 880-03 $a [P'yŏngyang] : $b Kim Il-sŏng Chonghap Taehak Ch'ulp'ansa, $c 2019-</fake:marcfield>
+      <fake:marcfield>F880 #1 $6 264-03/$1 $a [P'yŏngyang] : $b 김 일성 종합 대학 출판사, $c 2019-</fake:marcfield>
+      <fake:marcfield>F337 ## $a computer $b c $2 rdamedia</fake:marcfield>
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/c"/><!--rdam:P30002 = has media type-->
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/c"/><!--rdam:P30002 = has media type-->
+      <fake:marcfield>F338 ## $a online resource $b cr $2 rdacarrier</fake:marcfield>
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/><!--rdam:P30001 = has carrier type-->
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/><!--rdam:P30001 = has carrier type-->
+      <fake:marcfield>F533 ## $a Electronic reproduction. $b [Place of publication not identified] : $c HathiTrust Digital Library, $d 2010. $5 MiAaHDL</fake:marcfield>
+      <rdamd:P30335>Electronic reproduction</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30279>Place of publication not identified</rdamd:P30279><!--rdamd:P30279 = has place of manifestation-->
+      <rdamd:P30297>HathiTrust Digital Library</rdamd:P30297><!--rdamd:P30297 = has name of agent of manifestation-->
+      <rdamd:P30278>2010</rdamd:P30278><!--rdamd:P30278 = has date of manifestation-->
+      <fake:marcfield>F538 ## $a Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002. $u http://purl.oclc.org/DLF/benchrepro0212 $5 MiAaHDL</fake:marcfield>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/99162443444601452ited22e195"/><!--rdamo:P30103 = has exemplar of manifestation-->
+      <fake:marcfield>F583 1# $a digitized $c 2010 $h HathiTrust Digital Library $l committed to preserve $2 pda $5 MiAaHDL</fake:marcfield>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/99162443444601452ited22e197"/><!--rdamo:P30103 = has exemplar of manifestation-->
+      <fake:marcfield>F588 0# $6 880-05 $a Che 65-kwŏn che 1-ho (2019) = Nugye che 545-ho; title from cover (dprkmedia, viewed February 24, 2022).</fake:marcfield>
+      <rdamd:P30137>Source of description: Che 65-kwŏn che 1-ho (2019) = Nugye che 545-ho; title from cover (dprkmedia, viewed February 24, 2022).</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F880 0# $6 588-05/$1 $a 제 65권 제 1호 (2019) = 루계 제 545호; title from cover (dprkmedia, viewed February 24, 2022).</fake:marcfield>
+      <rdamd:P30137>Source of description: 제 65권 제 1호 (2019) = 루계 제 545호; title from cover (dprkmedia, viewed February 24, 2022).</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F588 1# $6 880-06 $a Che 67-kwŏn che 2-ho (2021) = Nugye che 570-ho (viewed February 24, 2022).</fake:marcfield>
+      <rdamd:P30137>Latest issue consulted: Che 67-kwŏn che 2-ho (2021) = Nugye che 570-ho (viewed February 24, 2022).</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F880 1# $6 588-06/$1 $a 제 67권 제 2호 (2021) = 루계 제 570호 (viewed February 24, 2022).</fake:marcfield>
+      <rdamd:P30137>Latest issue consulted: 제 67권 제 2호 (2021) = 루계 제 570호 (viewed February 24, 2022).</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F506 ## $3 Use copy $f Restrictions unspecified $2 star $5 MiAaHDL</fake:marcfield>
+      <rdam:P30145 rdf:resource="http://marc2rda.edu/fake/concept/star/restrictionsunspecified"/><!--rdam:P30145 = has restriction on access to manifestation-->
+      <rdamd:P30137>Restriction on access http://marc2rda.edu/fake/concept/star/restrictionsunspecified applies to Use copy</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99162443444601452origMan">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99162443444601452exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F008 100812c20199999kn fr p o     0   k0kor c</fake:marcfield>
+      <rdamd:P30137>Continuing resource currently published.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/kn "/><!--rdamo:P30279 = has place of manifestation-->
+      <rdamd:P30137>Regularity: Regular.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F264 #1 $6 880-03 $a [P'yŏngyang] : $b Kim Il-sŏng Chonghap Taehak Ch'ulp'ansa, $c 2019-</fake:marcfield>
+      <rdamd:P30111>[P'yŏngyang] : Kim Il-sŏng Chonghap Taehak Ch'ulp'ansa, 2019-</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>P'yŏngyang</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Kim Il-sŏng Chonghap Taehak Ch'ulp'ansa</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>2019</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <fake:marcfield>F880 #1 $6 264-03/$1 $a [P'yŏngyang] : $b 김 일성 종합 대학 출판사, $c 2019-</fake:marcfield>
+      <rdamd:P30111>[P'yŏngyang] : 김 일성 종합 대학 출판사, 2019-</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>P'yŏngyang</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>김 일성 종합 대학 출판사</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>2019</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99162443444601452ited22e195">
+      <rdaid:P40001>ited22e195</rdaid:P40001><!--rdaid:P40001 = has identifier for item-->
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/miaahdl"/><!--rdaio:P40161 = is holding of-->
+      <rdaid:P40028>Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002.; http://purl.oclc.org/DLF/benchrepro0212</rdaid:P40028><!--rdaid:P40028 = has note on item-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99162443444601452ited22e197">
+      <fake:marcfield>F583 1# $a digitized $c 2010 $h HathiTrust Digital Library $l committed to preserve $2 pda $5 MiAaHDL</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdaid:P40001>ited22e197</rdaid:P40001><!--rdaid:P40001 = has identifier for item-->
+      <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/miaahdl"/><!--rdaio:P40161 = is holding of-->
+      <rdaid:P40028>Action: digitized; Time/date of action: 2010; Jurisdiction: HathiTrust Digital Library; Status: committed to preserve; Source of term: pda</rdaid:P40028><!--rdaid:P40028 = has note on item-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/koreanorth">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Korea (North)</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/fast/koreanorth">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Korea (North)</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e303">
+      <fake:marcfield>F710 2# $6 880-07 $a Kim Il-sŏng Chonghap Taehak, $e issuing body.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Kim Il-sŏng Chonghap Taehak</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/hb9">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">HB9</skos:notation>
+      <skos:altLabel>HB9</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/star/restrictionsunspecified">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Restrictions unspecified</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/accessrestrictionterm/star"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/economicsperiodicals">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Economics -- Periodicals.</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/periodicals">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Periodicals.</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/économiepolitiquepériodiques">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Économie politique -- Périodiques.</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/périodiques">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Périodiques.</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/koreanortheconomicconditionsperiodicals">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Korea (North) -- Economic conditions -- Periodicals.</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/economicconditions">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Economic conditions</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/periodicals">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Periodicals.</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/mesh/periodical">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Periodical</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/mesh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/aat/periodicals">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>periodicals.</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcgft/periodicals">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Periodicals.</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvmgf/périodiques">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Périodiques.</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/koreanorth">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/koreanorth"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/fast/koreanorth">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/fast/koreanorth"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+</rdf:RDF>
