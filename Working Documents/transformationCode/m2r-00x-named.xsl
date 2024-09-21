@@ -267,54 +267,54 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="F008-c23-SOME-origMan">
-        <xsl:param name="char23"/>
+    <xsl:template name="F008-c23_29-SOME-origMan">
+        <xsl:param name="char23_29"/>
         <xsl:choose>
-            <xsl:when test="$char23 = 'd'">
+            <xsl:when test="$char23_29 = 'd'">
                 <rdam:P30199 rdf:resource="{'http://rdaregistry.info/termList/fontSize/1002'}"/>
             </xsl:when>
-            <xsl:when test="$char23 = 'g'">
+            <xsl:when test="$char23_29 = 'g'">
                 <rdam:P30001 rdf:resource="{'https://doi.org/10.6069/uwlswd.dh5m-5y16#gx'}"/>
             </xsl:when>
-            <xsl:when test="$char23 = 'h'">
+            <xsl:when test="$char23_29 = 'h'">
                 <rdam:P30001 rdf:resource="{'https://doi.org/10.6069/uwlswd.dh5m-5y16#hx'}"/>
             </xsl:when>
-            <xsl:when test="$char23 = 'i'">
+            <xsl:when test="$char23_29 = 'i'">
                 <rdam:P30001 rdf:resource="{'https://doi.org/10.6069/uwlswd.dh5m-5y16#ix'}"/>
             </xsl:when>
-            <xsl:when test="$char23 = 'q'">
+            <xsl:when test="$char23_29 = 'q'">
                 <rdam:P30001 rdf:resource="{'https://doi.org/10.6069/uwlswd.dh5m-5y16#q'}"/>
             </xsl:when>
-            <xsl:when test="$char23 = 's'">
+            <xsl:when test="$char23_29 = 's'">
                 <rdam:P30002 rdf:resource="{'http://rdaregistry.info/termList/RDAMediaType/1003'}"/>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template name="F008-c23-SOME">
-        <xsl:param name="char23"/>
+    <xsl:template name="F008-c23_29-SOME">
+        <xsl:param name="char23_29"/>
         <xsl:choose>
-            <xsl:when test="$char23 = 'a'">
+            <xsl:when test="$char23_29 = 'a'">
                 <rdam:P30001 rdf:resource="{'https://doi.org/10.6069/uwlswd.dh5m-5y16#a'}"/>
             </xsl:when>
-            <xsl:when test="$char23 = 'b'">
+            <xsl:when test="$char23_29 = 'b'">
                 <rdam:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1022'}"/>
             </xsl:when>
-            <xsl:when test="$char23 = 'c'">
+            <xsl:when test="$char23_29 = 'c'">
                 <rdam:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1028'}"/>
             </xsl:when>
-            <xsl:when test="$char23 = 'o'">
+            <xsl:when test="$char23_29 = 'o'">
                 <rdam:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1018'}"/>
             </xsl:when>
-            <xsl:when test="$char23 = 'r'">
+            <xsl:when test="$char23_29 = 'r'">
                 <rdam:P30335 rdf:resource="{'https://doi.org/10.6069/uwlswd.dh5m-5y16#r'}"/>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template name="F008-c23-f-SOME">
-        <xsl:param name="char23"/>
-        <xsl:if test="$char23 = 'f'">
+    <xsl:template name="F008-c23_29-f-SOME">
+        <xsl:param name="char23_29"/>
+        <xsl:if test="$char23_29 = 'f'">
             <rdae:P20061 rdf:resource="{'http://rdaregistry.info/termList/TacNotation/1001'}"/>
         </xsl:if>
     </xsl:template>
@@ -388,6 +388,37 @@
         </xsl:if>
     </xsl:template>
     
+    <xsl:template name="F008-c24-MAPS">
+        <xsl:param name="char24"/>
+        <xsl:choose>
+            <xsl:when test="$char24 = 'e'">
+                <rdaed:P20317>
+                    <xsl:text>Greenwich</xsl:text>
+                </rdaed:P20317>
+            </xsl:when>
+            <xsl:when test="$char24 = 'f'">
+                <rdaed:P20317>
+                    <xsl:text>Ferro</xsl:text>
+                </rdaed:P20317>
+            </xsl:when>
+            <xsl:when test="$char24 = 'g'">
+                <rdaed:P20317>
+                    <xsl:text>Paris</xsl:text>
+                </rdaed:P20317>
+            </xsl:when>
+            <xsl:when test="$char24 = 'p'">
+                <rdaed:P20317>
+                    <xsl:text>Philadelphia</xsl:text>
+                </rdaed:P20317>
+            </xsl:when>
+            <xsl:when test="$char24 = 'w'">
+                <rdaed:P20317>
+                    <xsl:text>Washington, D.C.</xsl:text>
+                </rdaed:P20317>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
+    
     <xsl:template name="F008-c25-27-CONT">
         <xsl:param name="char25-27"/>
         <xsl:analyze-string select="$char25-27" regex=".{{1}}">
@@ -428,6 +459,29 @@
                 </xsl:choose>
             </xsl:matching-substring>
         </xsl:analyze-string>
+    </xsl:template>
+    
+    <xsl:template name="F008-c25-abdefg-MAPS">
+        <xsl:param name="char25"/>
+        <xsl:if test="$char25 = 'a' or $char25 = 'b' or $char25 = 'd'
+            or $char25 = 'e' or $char25 = 'f' or $char25 = 'g'">
+            <rdaw:P10004 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.vw5v-gh79#', $char25)}"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F008-c25-acd-MAPS-origMan">
+        <xsl:param name="char25"/>
+        <xsl:choose>
+            <xsl:when test="$char25 = 'a'">
+                <rdam:P30003 rdf:resource="{'http://rdaregistry.info/termList/ModeIssue/1001'}"/>
+            </xsl:when>
+            <xsl:when test="$char25 = 'c'">
+                <rdam:P30003 rdf:resource="{'http://rdaregistry.info/termList/ModeIssue/1005'}"/>
+            </xsl:when>
+            <xsl:when test="$char25 = 'd'">
+                <rdam:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1059'}"/>
+            </xsl:when>
+        </xsl:choose>
     </xsl:template>
     
     <xsl:template name="F008-c26-COMP">
@@ -478,6 +532,13 @@
             <rdamd:P30137>
                 <xsl:text>Index present.</xsl:text>
             </rdamd:P30137>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F008-c31-MAPS">
+        <xsl:param name="char31"/>
+        <xsl:if test="$char31 = '1'">
+            <rdam:P30455 rdf:resource="{'https://doi.org/10.6069/uwlswd.2h4d-g549#1'}"/>
         </xsl:if>
     </xsl:template>
     
@@ -552,6 +613,86 @@
                 </rdamd:P30137>
             </xsl:when>
         </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template name="F008-c33-34-gk-MAPS">
+        <xsl:param name="char33-34"/>
+        <xsl:analyze-string select="$char33-34" regex=".{{1}}">
+            <xsl:matching-substring>
+                <xsl:choose>
+                    <xsl:when test=". = 'g'">
+                        <rdaw:P10004 rdf:resource="{'https://doi.org/10.6069/uwlswd.rw25-p125#gx'}"/>
+                    </xsl:when>
+                    <xsl:when test=". = 'k'">
+                        <rdaw:P10004 rdf:resource="{'https://doi.org/10.6069/uwlswd.rw25-p125#k'}"/>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:matching-substring>
+        </xsl:analyze-string>
+    </xsl:template>
+    
+    <xsl:template name="F008-c33-34-m-MAPS">
+        <xsl:param name="char33-34"/>
+        <xsl:analyze-string select="$char33-34" regex=".{{1}}">
+            <xsl:matching-substring>
+                <xsl:if test=". = 'm'">
+                    <rdae:P20061 rdf:resource="{'http://rdaregistry.info/termList/TacNotation/1001'}"/>
+                </xsl:if>
+            </xsl:matching-substring>
+        </xsl:analyze-string>
+    </xsl:template>
+    
+    <xsl:template name="F008-c33-34-MAPS-origMan">
+        <xsl:param name="char33-34"/>
+        <xsl:analyze-string select="$char33-34" regex=".{{1}}">
+            <xsl:matching-substring>
+                <xsl:choose>
+                    <xsl:when test=". = 'a'">
+                        <rdam:P30187 rdf:resource="{'http://rdaregistry.info/termList/RDAproductionMethod/1001'}"/>
+                    </xsl:when>
+                    <xsl:when test=". = 'b'">
+                        <rdam:P30187 rdf:resource="{'http://rdaregistry.info/termList/RDAproductionMethod/1008'}"/>
+                    </xsl:when>
+                    <xsl:when test=". = 'c'">
+                        <rdam:P30187 rdf:resource="{'https://doi.org/10.6069/uwlswd.rw25-p125#cx'}"/>
+                    </xsl:when>
+                    <xsl:when test=". = 'd'">
+                        <rdam:P30335 rdf:resource="{'https://doi.org/10.6069/uwlswd.rw25-p125#dx'}"/>
+                    </xsl:when>
+                    <xsl:when test=". = 'e'">
+                        <rdam:P30187 rdf:resource="{'https://doi.org/10.6069/uwlswd.rw25-p125#e'}"/>
+                    </xsl:when>
+                    <xsl:when test=". = 'f'">
+                        <rdam:P30335 rdf:resource="{'https://doi.org/10.6069/uwlswd.rw25-p125#fx'}"/>
+                    </xsl:when>
+                    <xsl:when test=". = 'g'">
+                        <rdam:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1059'}"/>
+                    </xsl:when>
+                    <xsl:when test=". = 'j'">
+                        <rdam:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1045'}"/>
+                        <rdam:P30335 rdf:resource="{'https://doi.org/10.6069/uwlswd.rw25-p125#j'}"/>
+                    </xsl:when>
+                    <xsl:when test=". = 'l'">
+                        <rdam:P30335 rdf:resource="{'https://doi.org/10.6069/uwlswd.rw25-p125#l'}"/>
+                    </xsl:when>
+                    <xsl:when test=". = 'n'">
+                        <rdam:P30335 rdf:resource="{'https://doi.org/10.6069/uwlswd.rw25-p125#n'}"/>
+                    </xsl:when>
+                    <xsl:when test=". = 'o'">
+                        <rdam:P30335 rdf:resource="{'https://doi.org/10.6069/uwlswd.rw25-p125#o'}"/>
+                    </xsl:when>
+                    <xsl:when test=". = 'p'">
+                        <rdam:P30335 rdf:resource="{'https://doi.org/10.6069/uwlswd.rw25-p125#p'}"/>
+                    </xsl:when>
+                    <xsl:when test=". = 'q'">
+                        <rdam:P30199 rdf:resource="{'http://rdaregistry.info/termList/fontSize/1002'}"/>
+                    </xsl:when>
+                    <xsl:when test=". = 'r'">
+                        <rdam:P30335 rdf:resource="{'https://doi.org/10.6069/uwlswd.rw25-p125#r'}"/>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:matching-substring>
+        </xsl:analyze-string>
     </xsl:template>
     
     <xsl:template name="F008-c34-abc-BOOKS">
