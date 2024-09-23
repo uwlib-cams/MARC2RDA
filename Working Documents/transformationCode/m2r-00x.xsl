@@ -172,6 +172,19 @@
                     <xsl:with-param name="char33" select="substring(., 34, 1)"/>
                 </xsl:call-template>
             </xsl:when>
+            <!-- visual materials -->
+            <xsl:when test="substring($ldr6-7, 1, 1) = 'g' or substring($ldr6-7, 1, 1) = 'k'
+                or substring($ldr6-7, 1, 1) = 'o' or substring($ldr6-7, 1, 1) = 'r'">
+                <xsl:call-template name="F008-c18-20-VM">
+                    <xsl:with-param name="char18-20" select="substring(., 19, 3)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F008-c22-SOME">
+                    <xsl:with-param name="char22" select="substring(., 23, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F008-c23_29-f-SOME">
+                    <xsl:with-param name="char23_29" select="substring(., 30, 1)"/>
+                </xsl:call-template>
+            </xsl:when>
         </xsl:choose>
     </xsl:template>
     
@@ -255,6 +268,13 @@
                         <xsl:with-param name="char24-29" select="substring(., 25, 6)"/>
                     </xsl:call-template>
                 </xsl:when>
+                <!-- visual materials -->
+                <xsl:when test="substring($ldr6-7, 1, 1) = 'g' or substring($ldr6-7, 1, 1) = 'k'
+                    or substring($ldr6-7, 1, 1) = 'o' or substring($ldr6-7, 1, 1) = 'r'">
+                    <xsl:call-template name="F008-c23_29-dqs-SOME-origMan">
+                        <xsl:with-param name="char23_29" select="substring(., 30, 1)"/>
+                    </xsl:call-template>
+                </xsl:when>
             </xsl:choose>
         </xsl:if>
         
@@ -284,7 +304,7 @@
                 </xsl:when>
                 <!-- computer files -->
                 <xsl:when test="substring($ldr6-7, 1, 1) = 'm'">
-                    <xsl:call-template name="F008-c22-CF">
+                    <xsl:call-template name="F008-c22-CF_VM">
                         <xsl:with-param name="char22" select="substring(., 23, 1)"/>
                     </xsl:call-template>
                     <xsl:call-template name="F008-c23-CF">
@@ -338,6 +358,19 @@
                     or substring($ldr6-7, 1, 1) = 'c' or substring($ldr6-7, 1, 1) = 'd'">
                     <xsl:call-template name="F008-c23_29-abcor-SOME">
                         <xsl:with-param name="char23_29" select="substring(., 24, 1)"/>
+                    </xsl:call-template>
+                </xsl:when>
+                <!-- visual materials -->
+                <xsl:when test="substring($ldr6-7, 1, 1) = 'g' or substring($ldr6-7, 1, 1) = 'k'
+                    or substring($ldr6-7, 1, 1) = 'o' or substring($ldr6-7, 1, 1) = 'r'">
+                    <xsl:call-template name="F008-c22-CF_VM">
+                        <xsl:with-param name="char22" select="substring(., 23, 1)"/>
+                    </xsl:call-template>
+                    <xsl:call-template name="F008-c28-SOME">
+                        <xsl:with-param name="char28" select="substring(., 29, 1)"/>
+                    </xsl:call-template>
+                    <xsl:call-template name="F008-c23_29-abcor-SOME">
+                        <xsl:with-param name="char23_29" select="substring(., 30, 1)"/>
                     </xsl:call-template>
                 </xsl:when>
             </xsl:choose>

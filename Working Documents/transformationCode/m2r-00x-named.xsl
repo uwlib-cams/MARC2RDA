@@ -173,6 +173,15 @@
         </xsl:if>
     </xsl:template>
     
+    <xsl:template name="F008-c18-20-VM" expand-text="yes">
+        <xsl:param name="char18-20"/>
+        <xsl:if test="matches($char18-20, '\d\d\d') and $char18-20 != '000'">
+            <rdae:P20219>
+                <xsl:text>Duration: {$char18-20} minutes.</xsl:text>
+            </rdae:P20219>
+        </xsl:if>
+    </xsl:template>
+    
     <xsl:template name="F008-c19-CR">
         <xsl:param name="char19"/>
         <xsl:choose>
@@ -236,7 +245,7 @@
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template name="F008-c22-CF">
+    <xsl:template name="F008-c22-CF_VM">
         <xsl:param name="char22"/>
         <xsl:choose>
             <xsl:when test="$char22 != ' ' and $char22 != '|'">
