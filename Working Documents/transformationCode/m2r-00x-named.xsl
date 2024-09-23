@@ -42,7 +42,7 @@
         <rdamo:P30279 rdf:resource="{concat('http://id.loc.gov/vocabulary/countries/', $char15-17)}"/>
     </xsl:template>
     
-    <xsl:template name="F008-c18-21-BOOK">
+    <xsl:template name="F008-c18-21-BK">
         <xsl:param name="char18-21"/>
         <xsl:analyze-string select="$char18-21" regex=".{{1}}">
             <xsl:matching-substring>
@@ -97,7 +97,7 @@
         </xsl:analyze-string>
     </xsl:template>
     
-    <xsl:template name="F008-c18-CONT">
+    <xsl:template name="F008-c18-CR">
         <xsl:param name="char18"/>
         <xsl:choose>
             <xsl:when test="$char18 = 'a'">
@@ -151,7 +151,7 @@
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template name="F008-c18-MAPS">
+    <xsl:template name="F008-c18-MP">
         <xsl:param name="char18"/>
         <xsl:if test="$char18 != ' ' and $char18 != '|' and $char18 != 'z'">
             <xsl:choose>
@@ -165,7 +165,15 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="F008-c19-CONT">
+    <xsl:template name="F008-c18-19-MU">
+        <xsl:param name="char18-19"/>
+        <xsl:if test="not(contains($char18-19, ' ')) and not(contains($char18-19, '|')) 
+            and $char18-19 != 'nn' and $char18-19 != 'uu' and $char18-19 != 'zz'">
+            <rdaw:P10004 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.8rpj-ek77#', $char18-19)}"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F008-c19-CR">
         <xsl:param name="char19"/>
         <xsl:choose>
             <xsl:when test="$char19 = 'n'">
@@ -186,7 +194,33 @@
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template name="F008-c21-CONT">
+    <xsl:template name="F008-c20-MU">
+        <xsl:param name="char20"/>
+        <xsl:if test="$char20 != ' ' and $char20 != '|' and $char20 != 'u' and $char20 != 'z' and $char20 != 'n'">
+            <xsl:choose>
+                <xsl:when test="$char20 = 'h'">
+                    <rdae:P20209 rdf:resource="{'http://rdaregistry.info/termList/formatNoteMus/1002'}"/>
+                </xsl:when>
+                <xsl:when test="$char20 = 'i'">
+                    <rdae:P20209 rdf:resource="{'http://rdaregistry.info/termList/formatNoteMus/1003'}"/>
+                </xsl:when>
+                <xsl:when test="$char20 = 'k'">
+                    <rdae:P20209 rdf:resource="{'http://rdaregistry.info/termList/formatNoteMus/1011'}"/>
+                </xsl:when>
+                <xsl:when test="$char20 = 'l'">
+                    <rdae:P20209 rdf:resource="{'http://rdaregistry.info/termList/formatNoteMus/1007'}"/>
+                </xsl:when>
+                <xsl:when test="$char20 = 'p'">
+                    <rdae:P20209 rdf:resource="{'http://rdaregistry.info/termList/formatNoteMus/1006'}"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <rdae:P20209 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.06xx-6744#', $char20)}"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F008-c21-CR">
         <xsl:param name="char21"/>
         <xsl:if test="$char21 != ' ' and $char21 != '|'">
             <rdaw:P10004 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.62zz-1534#', $char21)}"/>
@@ -202,7 +236,7 @@
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template name="F008-c22-COMP">
+    <xsl:template name="F008-c22-CF">
         <xsl:param name="char22"/>
         <xsl:choose>
             <xsl:when test="$char22 != ' ' and $char22 != '|'">
@@ -211,7 +245,7 @@
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template name="F008-c22-CONT">
+    <xsl:template name="F008-c22-CR">
         <xsl:param name="char22"/>
         <xsl:if test="$char22 = 'a'">
             <rdamd:P30137>
@@ -260,27 +294,18 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="F008-c22-23-MAPS">
+    <xsl:template name="F008-c22-23-MP">
         <xsl:param name="char22-23"/>
         <xsl:if test="not(contains($char22-23, ' ')) and not(contains($char22-23, '|')) and $char22-23 != 'zz'">
             <rdae:P20216 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.4jrs-m847#', $char22-23)}"/>
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="F008-c23_29-SOME-origMan">
+    <xsl:template name="F008-c23_29-dqs-SOME-origMan">
         <xsl:param name="char23_29"/>
         <xsl:choose>
             <xsl:when test="$char23_29 = 'd'">
                 <rdam:P30199 rdf:resource="{'http://rdaregistry.info/termList/fontSize/1002'}"/>
-            </xsl:when>
-            <xsl:when test="$char23_29 = 'g'">
-                <rdam:P30001 rdf:resource="{'https://doi.org/10.6069/uwlswd.dh5m-5y16#gx'}"/>
-            </xsl:when>
-            <xsl:when test="$char23_29 = 'h'">
-                <rdam:P30001 rdf:resource="{'https://doi.org/10.6069/uwlswd.dh5m-5y16#hx'}"/>
-            </xsl:when>
-            <xsl:when test="$char23_29 = 'i'">
-                <rdam:P30001 rdf:resource="{'https://doi.org/10.6069/uwlswd.dh5m-5y16#ix'}"/>
             </xsl:when>
             <xsl:when test="$char23_29 = 'q'">
                 <rdam:P30001 rdf:resource="{'https://doi.org/10.6069/uwlswd.dh5m-5y16#q'}"/>
@@ -291,7 +316,22 @@
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template name="F008-c23_29-SOME">
+    <xsl:template name="F008-c23_29-ghi-SOME-origMan">
+        <xsl:param name="char23_29"/>
+        <xsl:choose>
+            <xsl:when test="$char23_29 = 'g'">
+                <rdam:P30001 rdf:resource="{'https://doi.org/10.6069/uwlswd.dh5m-5y16#gx'}"/>
+            </xsl:when>
+            <xsl:when test="$char23_29 = 'h'">
+                <rdam:P30001 rdf:resource="{'https://doi.org/10.6069/uwlswd.dh5m-5y16#hx'}"/>
+            </xsl:when>
+            <xsl:when test="$char23_29 = 'i'">
+                <rdam:P30001 rdf:resource="{'https://doi.org/10.6069/uwlswd.dh5m-5y16#ix'}"/>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template name="F008-c23_29-abcor-SOME">
         <xsl:param name="char23_29"/>
         <xsl:choose>
             <xsl:when test="$char23_29 = 'a'">
@@ -319,21 +359,36 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="F008-c23-COMP-origMan">
+    <xsl:template name="F008-c23-CF-origMan">
         <xsl:param name="char23"/>
         <xsl:if test="$char23 = 'q'">
             <rdam:P30001 rdf:resource="{'https://doi.org/10.6069/uwlswd.3d5s-zx23#q'}"/>
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="F008-c23-COMP">
+    <xsl:template name="F008-c23-CF">
         <xsl:param name="char23"/>
         <xsl:if test="$char23 = 'o'">
             <rdam:P30001 rdf:resource="{'https://doi.org/10.6069/uwlswd.3d5s-zx23#o'}"/>
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="F008-c24-27-BOOK">
+    <xsl:template name="F008-c23-MX-origMan">
+        <xsl:param name="char23"/>
+        <xsl:choose>
+            <xsl:when test="$char23 = 'j'">
+                <rdam:P30187 rdf:resource="{'https://doi.org/10.6069/uwlswd.dh5m-5y16#jx'}"/>
+            </xsl:when>
+            <xsl:when test="$char23 = 'p'">
+                <rdam:P30187 rdf:resource="{'https://doi.org/10.6069/uwlswd.dh5m-5y16#px'}"/>
+            </xsl:when>
+            <xsl:when test="$char23 = 't'">
+                <rdam:P30187 rdf:resource="{'https://doi.org/10.6069/uwlswd.dh5m-5y16#tx'}"/>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template name="F008-c24-27-BK">
         <xsl:param name="char24-27"/>
         <xsl:analyze-string select="$char24-27" regex=".{{1}}">
             <xsl:matching-substring>
@@ -353,7 +408,7 @@
         </xsl:analyze-string>
     </xsl:template>
     
-    <xsl:template name="F008-c24-27-2bkq-BOOK">
+    <xsl:template name="F008-c24-27-2bkq-BK">
         <xsl:param name="char24-27"/>
         <xsl:analyze-string select="$char24-27" regex=".{{1}}">
             <xsl:matching-substring>
@@ -381,14 +436,14 @@
         </xsl:analyze-string>
     </xsl:template>
     
-    <xsl:template name="F008-c24-CONT">
+    <xsl:template name="F008-c24-CR">
         <xsl:param name="char24"/>
         <xsl:if test="$char24 != ' ' and $char24 != '|'">
             <rdaw:P10004 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.jfr5-z647#', $char24)}"/>
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="F008-c24-MAPS">
+    <xsl:template name="F008-c24-MP">
         <xsl:param name="char24"/>
         <xsl:choose>
             <xsl:when test="$char24 = 'e'">
@@ -419,7 +474,25 @@
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template name="F008-c25-27-CONT">
+    <xsl:template name="F008-c24-29-MU-origMan">
+        <xsl:param name="char24-29"/>
+        <xsl:analyze-string select="$char24-29" regex=".{{1}}">
+            <xsl:matching-substring>
+                <xsl:if test=". != ' ' and . != '|' and . != 'n' and . != 'z'">
+                    <xsl:choose>
+                        <xsl:when test=". = 'j'">
+                            <rdam:P30455 rdf:resource="{'https://doi.org/10.6069/uwlswd.nt0v-d633#jx'}"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <rdam:P30455 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.nt0v-d633#', .)}"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:if>
+            </xsl:matching-substring>
+        </xsl:analyze-string>
+    </xsl:template>
+    
+    <xsl:template name="F008-c25-27-CR">
         <xsl:param name="char25-27"/>
         <xsl:analyze-string select="$char25-27" regex=".{{1}}">
             <xsl:matching-substring>
@@ -436,7 +509,7 @@
         </xsl:analyze-string>
     </xsl:template>
     
-    <xsl:template name="F008-c25-27-bkq-CONT">
+    <xsl:template name="F008-c25-27-bkq-CR">
         <xsl:param name="char25-27"/>
         <xsl:analyze-string select="$char25-27" regex=".{{1}}">
             <xsl:matching-substring>
@@ -461,7 +534,7 @@
         </xsl:analyze-string>
     </xsl:template>
     
-    <xsl:template name="F008-c25-abdefg-MAPS">
+    <xsl:template name="F008-c25-abdefg-MP">
         <xsl:param name="char25"/>
         <xsl:if test="$char25 = 'a' or $char25 = 'b' or $char25 = 'd'
             or $char25 = 'e' or $char25 = 'f' or $char25 = 'g'">
@@ -469,7 +542,7 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="F008-c25-acd-MAPS-origMan">
+    <xsl:template name="F008-c25-acd-MP-origMan">
         <xsl:param name="char25"/>
         <xsl:choose>
             <xsl:when test="$char25 = 'a'">
@@ -484,7 +557,7 @@
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template name="F008-c26-COMP">
+    <xsl:template name="F008-c26-CF">
         <xsl:param name="char26"/>
         <xsl:if test="$char26 != 'u' and $char26 != 'z' and $char26 != ' ' and $char26 != '|'">
             <rdam:P30018 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.mkjn-bp10#', $char26)}"/>
@@ -505,28 +578,46 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="F008-c29-BOOK">
+    <xsl:template name="F008-c29-BK">
         <xsl:param name="char29"/>
         <xsl:if test="$char29 = '1'">
             <rdaw:P10004 rdf:resource="{'https://doi.org/10.6069/uwlswd.t1gh-8294#1'}"/>
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="F008-c29-CONT">
+    <xsl:template name="F008-c29-CR">
         <xsl:param name="char29"/>
         <xsl:if test="$char29 = '1'">
             <rdaw:P10004 rdf:resource="{'https://doi.org/10.6069/uwlswd.6mz0-ta86#1'}"/>
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="F008-c30-BOOK">
+    <xsl:template name="F008-c30-BK">
         <xsl:param name="char30"/>
         <xsl:if test="$char30 = '1'">
             <rdaw:P10004 rdf:resource="{'https://doi.org/10.6069/uwlswd.tq9s-1157#1'}"/>
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="F008-c31-BOOK">
+    <xsl:template name="F008-c30-31-MU">
+        <xsl:param name="char30-31"></xsl:param>
+        <xsl:analyze-string select="$char30-31" regex=".{{1}}">
+            <xsl:matching-substring>
+                <xsl:if test=". != ' ' and . != '|' and . != 'n' and . != 'z'">
+                    <rdaw:P10004 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.23tq-5e25#', .)}"/>
+                </xsl:if>
+            </xsl:matching-substring>
+        </xsl:analyze-string>
+    </xsl:template>
+    
+    <xsl:template name="F008-c30-31-__-MU">
+        <xsl:param name="char30-31"/>
+        <xsl:if test="$char30-31 = '  '">
+            <rdae:P20331 rdf:resource="{'https://doi.org/10.6069/uwlswd.23tq-5e25#pound'}"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F008-c31-BK">
         <xsl:param name="char31"/>
         <xsl:if test="$char31 = '1'">
             <rdamd:P30137>
@@ -535,21 +626,21 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="F008-c31-MAPS">
+    <xsl:template name="F008-c31-MP">
         <xsl:param name="char31"/>
         <xsl:if test="$char31 = '1'">
             <rdam:P30455 rdf:resource="{'https://doi.org/10.6069/uwlswd.2h4d-g549#1'}"/>
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="F008-c33-BOOK">
+    <xsl:template name="F008-c33-BK">
         <xsl:param name="char33"/>
         <xsl:if test="$char33 != 'u' and $char33 != '|' and $char33 != ' '">
             <rdaw:P10004 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.f447-ax91#', $char33)}"/>
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="F008-c33-CONT">
+    <xsl:template name="F008-c33-CR">
         <xsl:param name="char33"/>
         <xsl:choose>
             <xsl:when test="$char33 = 'a'">
@@ -615,7 +706,7 @@
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template name="F008-c33-34-gk-MAPS">
+    <xsl:template name="F008-c33-34-gk-MP">
         <xsl:param name="char33-34"/>
         <xsl:analyze-string select="$char33-34" regex=".{{1}}">
             <xsl:matching-substring>
@@ -631,7 +722,7 @@
         </xsl:analyze-string>
     </xsl:template>
     
-    <xsl:template name="F008-c33-34-m-MAPS">
+    <xsl:template name="F008-c33-34-m-MP">
         <xsl:param name="char33-34"/>
         <xsl:analyze-string select="$char33-34" regex=".{{1}}">
             <xsl:matching-substring>
@@ -642,7 +733,7 @@
         </xsl:analyze-string>
     </xsl:template>
     
-    <xsl:template name="F008-c33-34-MAPS-origMan">
+    <xsl:template name="F008-c33-34-MP-origMan">
         <xsl:param name="char33-34"/>
         <xsl:analyze-string select="$char33-34" regex=".{{1}}">
             <xsl:matching-substring>
@@ -695,14 +786,21 @@
         </xsl:analyze-string>
     </xsl:template>
     
-    <xsl:template name="F008-c34-abc-BOOK">
+    <xsl:template name="F008-c33-MU">
+        <xsl:param name="char33"/>
+        <xsl:if test="$char33 != ' ' and $char33 != '|' and $char33 != 'n' and $char33 != 'u' and $char33 != 'z'">
+            <rdae:P20331 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.axz0-z371#', $char33)}"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F008-c34-abc-BK">
         <xsl:param name="char34"/>
         <xsl:if test="$char34 = 'a' or $char34 = 'b' or $char34 = 'c'">
             <rdaw:P10004 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.x4ce-sd21#', $char34)}"/>
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="F008-c34-d-BOOK">
+    <xsl:template name="F008-c34-d-BK">
         <xsl:param name="char34"/>
         <xsl:if test="$char34 = 'd'">
             <rdamd:P30137>

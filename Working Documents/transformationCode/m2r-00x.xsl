@@ -42,47 +42,57 @@
             <!-- books -->
             <xsl:when test="$ldr6-7 = 'aa' or $ldr6-7 = 'ac' or $ldr6-7 = 'ad' or $ldr6-7 = 'am'
                 or $ldr6-7 = 'ca' or $ldr6-7 = 'cc' or $ldr6-7 = 'cd' or $ldr6-7 = 'cm'">
-                <xsl:call-template name="F008-c24-27-BOOK">
+                <xsl:call-template name="F008-c24-27-BK">
                     <xsl:with-param name="char24-27" select="substring(., 25, 4)"/>
                 </xsl:call-template>
-                <xsl:call-template name="F008-c29-BOOK">
+                <xsl:call-template name="F008-c29-BK">
                     <xsl:with-param name="char29" select="substring(., 30, 1)"/>
                 </xsl:call-template>
-                <xsl:call-template name="F008-c30-BOOK">
+                <xsl:call-template name="F008-c30-BK">
                     <xsl:with-param name="char30" select="substring(., 31, 1)"/>
                 </xsl:call-template>
-                <xsl:call-template name="F008-c33-BOOK">
+                <xsl:call-template name="F008-c33-BK">
                     <xsl:with-param name="char33" select="substring(., 34, 1)"/>
                 </xsl:call-template>
-                <xsl:call-template name="F008-c34-abc-BOOK">
+                <xsl:call-template name="F008-c34-abc-BK">
                     <xsl:with-param name="char34" select="substring(., 35, 1)"/>
                 </xsl:call-template>
             </xsl:when>
             <!-- continuing resources -->
             <xsl:when test="$ldr6-7 = 'ab' or $ldr6-7 = 'ai' or $ldr6-7 = 'as'">
-                <xsl:call-template name="F008-c18-CONT">
+                <xsl:call-template name="F008-c18-CR">
                     <xsl:with-param name="char18" select="substring(., 19, 1)"/>
                 </xsl:call-template>
-                <xsl:call-template name="F008-c21-CONT">
+                <xsl:call-template name="F008-c21-CR">
                     <xsl:with-param name="char21" select="substring(., 22, 1)"/>
                 </xsl:call-template>
-                <xsl:call-template name="F008-c24-CONT">
+                <xsl:call-template name="F008-c24-CR">
                     <xsl:with-param name="char24" select="substring(., 25, 1)"/>
                 </xsl:call-template>
-                <xsl:call-template name="F008-c25-27-CONT">
+                <xsl:call-template name="F008-c25-27-CR">
                     <xsl:with-param name="char25-27" select="substring(., 26, 3)"/>
                 </xsl:call-template>
-                <xsl:call-template name="F008-c29-CONT">
+                <xsl:call-template name="F008-c29-CR">
                     <xsl:with-param name="char29" select="substring(., 30, 1)"/>
                 </xsl:call-template>
             </xsl:when>
             <!-- maps -->
             <xsl:when test="substring($ldr6-7, 1, 1) = 'e' or substring($ldr6-7, 1, 1) = 'f'">
-                <xsl:call-template name="F008-c25-abdefg-MAPS">
+                <xsl:call-template name="F008-c25-abdefg-MP">
                     <xsl:with-param name="char25" select="substring(., 26, 1)"/>
                 </xsl:call-template>
-                <xsl:call-template name="F008-c33-34-gk-MAPS">
+                <xsl:call-template name="F008-c33-34-gk-MP">
                     <xsl:with-param name="char33-34" select="substring(., 34, 2)"/>
+                </xsl:call-template>
+            </xsl:when>
+            <!-- music  -->
+            <xsl:when test="substring($ldr6-7, 1, 1) = 'i' or substring($ldr6-7, 1, 1) = 'j'
+                or substring($ldr6-7, 1, 1) = 'c' or substring($ldr6-7, 1, 1) = 'd'">
+                <xsl:call-template name="F008-c18-19-MU">
+                    <xsl:with-param name="char18-19" select="substring(., 19, 2)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F008-c30-31-MU">
+                    <xsl:with-param name="char30-31" select="substring(., 31, 2)"/>
                 </xsl:call-template>
             </xsl:when>
         </xsl:choose>
@@ -121,20 +131,45 @@
             </xsl:when>
             <!-- maps -->
             <xsl:when test="substring($ldr6-7, 1, 1) = 'e' or substring($ldr6-7, 1, 1) = 'f'">
-                <xsl:call-template name="F008-c18-MAPS">
+                <xsl:call-template name="F008-c18-MP">
                     <xsl:with-param name="char18" select="substring(., 19, 1)"/>
                 </xsl:call-template>
-                <xsl:call-template name="F008-c22-23-MAPS">
+                <xsl:call-template name="F008-c22-23-MP">
                     <xsl:with-param name="char22-23" select="substring(., 23, 2)"/>
                 </xsl:call-template>
-                <xsl:call-template name="F008-c24-MAPS">
+                <xsl:call-template name="F008-c24-MP">
                     <xsl:with-param name="char24" select="substring(., 25, 1)"/>
                 </xsl:call-template>
                 <xsl:call-template name="F008-c23_29-f-SOME">
                     <xsl:with-param name="char23_29" select="substring(., 30, 1)"/>
                 </xsl:call-template>
-                <xsl:call-template name="F008-c33-34-m-MAPS">
+                <xsl:call-template name="F008-c33-34-m-MP">
                     <xsl:with-param name="char33-34" select="substring(., 34, 2)"/>
+                </xsl:call-template>
+            </xsl:when>
+            <!-- mixed materials -->
+            <xsl:when test="substring($ldr6-7, 1, 1) = 'p'">
+                <xsl:call-template name="F008-c23_29-f-SOME">
+                    <xsl:with-param name="char23_29" select="substring(., 24, 1)"/>
+                </xsl:call-template>
+            </xsl:when>
+            <!-- music -->
+            <xsl:when test="substring($ldr6-7, 1, 1) = 'i' or substring($ldr6-7, 1, 1) = 'j'
+                or substring($ldr6-7, 1, 1) = 'c' or substring($ldr6-7, 1, 1) = 'd'">
+                <xsl:call-template name="F008-c20-MU">
+                    <xsl:with-param name="char20" select="substring(., 21, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F008-c22-SOME">
+                    <xsl:with-param name="char22" select="substring(., 23, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F008-c23_29-f-SOME">
+                    <xsl:with-param name="char23_29" select="substring(., 24, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F008-c30-31-__-MU">
+                    <xsl:with-param name="char30-31" select="substring(., 31, 2)"/> 
+                </xsl:call-template>
+                <xsl:call-template name="F008-c33-MU">
+                    <xsl:with-param name="char33" select="substring(., 34, 1)"/>
                 </xsl:call-template>
             </xsl:when>
         </xsl:choose>
@@ -159,34 +194,65 @@
                 <!-- books -->
                 <xsl:when test="$ldr6-7 = 'aa' or $ldr6-7 = 'ac' or $ldr6-7 = 'ad' or $ldr6-7 = 'am'
                     or $ldr6-7 = 'ca' or $ldr6-7 = 'cc' or $ldr6-7 = 'cd' or $ldr6-7 = 'cm'">
-                    <xsl:call-template name="F008-c23_29-SOME-origMan">
+                    <xsl:call-template name="F008-c23_29-dqs-SOME-origMan">
+                        <xsl:with-param name="char23_29" select="substring(., 24, 1)"/>
+                    </xsl:call-template>
+                    <xsl:call-template name="F008-c23_29-ghi-SOME-origMan">
                         <xsl:with-param name="char23_29" select="substring(., 24, 1)"/>
                     </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="substring($ldr6-7, 1, 1) = 'm'">
-                    <xsl:call-template name="F008-c23-COMP-origMan">
+                    <xsl:call-template name="F008-c23-CF-origMan">
                         <xsl:with-param name="char23" select="substring(., 24, 1)"/>
                     </xsl:call-template>
                 </xsl:when>
                 <!-- continuing resources -->
                 <xsl:when test="$ldr6-7 = 'ab' or $ldr6-7 = 'ai' or $ldr6-7 = 'as'">
-                    <xsl:call-template name="F008-c19-CONT">
+                    <xsl:call-template name="F008-c19-CR">
                         <xsl:with-param name="char19" select="substring(., 20, 1)"/>
                     </xsl:call-template>
-                    <xsl:call-template name="F008-c23_29-SOME-origMan">
+                    <xsl:call-template name="F008-c23_29-dqs-SOME-origMan">
+                        <xsl:with-param name="char23_29" select="substring(., 24, 1)"/>
+                    </xsl:call-template>
+                    <xsl:call-template name="F008-c23_29-ghi-SOME-origMan">
                         <xsl:with-param name="char23_29" select="substring(., 24, 1)"/>
                     </xsl:call-template>
                 </xsl:when>
                 <!-- maps -->
                 <xsl:when test="substring($ldr6-7, 1, 1) = 'e' or substring($ldr6-7, 1, 1) = 'f'">
-                    <xsl:call-template name="F008-c25-acd-MAPS-origMan">
+                    <xsl:call-template name="F008-c25-acd-MP-origMan">
                         <xsl:with-param name="char25" select="substring(., 26, 1)"/>
                     </xsl:call-template>
-                    <xsl:call-template name="F008-c23_29-SOME-origMan">
+                    <xsl:call-template name="F008-c23_29-dqs-SOME-origMan">
                         <xsl:with-param name="char23_29" select="substring(., 30, 1)"/>
                     </xsl:call-template>
-                    <xsl:call-template name="F008-c33-34-MAPS-origMan">
+                    <xsl:call-template name="F008-c33-34-MP-origMan">
                         <xsl:with-param name="char33-34" select="substring(., 34, 2)"/>
+                    </xsl:call-template>
+                </xsl:when>
+                <!-- mixed materials -->
+                <xsl:when test="substring($ldr6-7, 1, 1) = 'p'">
+                    <xsl:call-template name="F008-c23_29-dqs-SOME-origMan">
+                        <xsl:with-param name="char23_29" select="substring(., 24, 1)"/>
+                    </xsl:call-template>
+                    <xsl:call-template name="F008-c23_29-ghi-SOME-origMan">
+                        <xsl:with-param name="char23_29" select="substring(., 24, 1)"/>
+                    </xsl:call-template>
+                    <xsl:call-template name="F008-c23-MX-origMan">
+                        <xsl:with-param name="char23" select="substring(., 24, 1)"/>
+                    </xsl:call-template>
+                </xsl:when>
+                <!-- music -->
+                <xsl:when test="substring($ldr6-7, 1, 1) = 'i' or substring($ldr6-7, 1, 1) = 'j'
+                    or substring($ldr6-7, 1, 1) = 'c' or substring($ldr6-7, 1, 1) = 'd'">
+                    <xsl:call-template name="F008-c23_29-dqs-SOME-origMan">
+                        <xsl:with-param name="char23_29" select="substring(., 24, 1)"/>
+                    </xsl:call-template>
+                    <xsl:call-template name="F008-c23_29-ghi-SOME-origMan">
+                        <xsl:with-param name="char23_29" select="substring(., 24, 1)"/>
+                    </xsl:call-template>
+                    <xsl:call-template name="F008-c24-29-MU-origMan">
+                        <xsl:with-param name="char24-29" select="substring(., 25, 6)"/>
                     </xsl:call-template>
                 </xsl:when>
             </xsl:choose>
@@ -197,34 +263,34 @@
                 <!-- books -->
                 <xsl:when test="$ldr6-7 = 'aa' or $ldr6-7 = 'ac' or $ldr6-7 = 'ad' or $ldr6-7 = 'am'
                     or $ldr6-7 = 'ca' or $ldr6-7 = 'cc' or $ldr6-7 = 'cd' or $ldr6-7 = 'cm'">
-                    <xsl:call-template name="F008-c18-21-BOOK">
+                    <xsl:call-template name="F008-c18-21-BK">
                         <xsl:with-param name="char18-21" select="substring(., 19, 4)"/>
                     </xsl:call-template>
-                    <xsl:call-template name="F008-c23_29-SOME">
+                    <xsl:call-template name="F008-c23_29-abcor-SOME">
                         <xsl:with-param name="char23_29" select="substring(., 24, 1)"/>
                     </xsl:call-template>
-                    <xsl:call-template name="F008-c24-27-2bkq-BOOK">
+                    <xsl:call-template name="F008-c24-27-2bkq-BK">
                         <xsl:with-param name="char24-27" select="substring(., 25, 4)"/>
                     </xsl:call-template>
                     <xsl:call-template name="F008-c28-SOME">
                         <xsl:with-param name="char28" select="substring(., 29, 1)"/>
                     </xsl:call-template>
-                    <xsl:call-template name="F008-c31-BOOK">
+                    <xsl:call-template name="F008-c31-BK">
                         <xsl:with-param name="char31" select="substring(., 32, 1)"/>
                     </xsl:call-template>
-                    <xsl:call-template name="F008-c34-d-BOOK">
+                    <xsl:call-template name="F008-c34-d-BK">
                         <xsl:with-param name="char34" select="substring(., 35, 1)"/>
                     </xsl:call-template>
                 </xsl:when>
                 <!-- computer files -->
                 <xsl:when test="substring($ldr6-7, 1, 1) = 'm'">
-                    <xsl:call-template name="F008-c22-COMP">
+                    <xsl:call-template name="F008-c22-CF">
                         <xsl:with-param name="char22" select="substring(., 23, 1)"/>
                     </xsl:call-template>
-                    <xsl:call-template name="F008-c23-COMP">
+                    <xsl:call-template name="F008-c23-CF">
                         <xsl:with-param name="char23" select="substring(., 24, 1)"/>
                     </xsl:call-template>
-                    <xsl:call-template name="F008-c26-COMP">
+                    <xsl:call-template name="F008-c26-CF">
                         <xsl:with-param name="char26" select="substring(., 27, 1)"/>
                     </xsl:call-template>
                     <xsl:call-template name="F008-c28-SOME">
@@ -233,19 +299,19 @@
                 </xsl:when>
                 <!-- continuing resources -->
                 <xsl:when test="$ldr6-7 = 'ab' or $ldr6-7 = 'ai' or $ldr6-7 = 'as'">
-                    <xsl:call-template name="F008-c22-CONT">
+                    <xsl:call-template name="F008-c22-CR">
                         <xsl:with-param name="char22" select="substring(., 23, 1)"/>
                     </xsl:call-template>
-                    <xsl:call-template name="F008-c23_29-SOME">
+                    <xsl:call-template name="F008-c23_29-abcor-SOME">
                         <xsl:with-param name="char23_29" select="substring(., 24, 1)"/>
                     </xsl:call-template>
-                    <xsl:call-template name="F008-c25-27-bkq-CONT">
+                    <xsl:call-template name="F008-c25-27-bkq-CR">
                         <xsl:with-param name="char25-27" select="substring(., 26, 3)"/>
                     </xsl:call-template>
                     <xsl:call-template name="F008-c28-SOME">
                         <xsl:with-param name="char28" select="substring(., 29, 1)"/>
                     </xsl:call-template>
-                    <xsl:call-template name="F008-c33-CONT">
+                    <xsl:call-template name="F008-c33-CR">
                         <xsl:with-param name="char33" select="substring(., 34, 1)"/>
                     </xsl:call-template>
                 </xsl:when>
@@ -254,11 +320,24 @@
                     <xsl:call-template name="F008-c28-SOME">
                         <xsl:with-param name="char28" select="substring(., 29, 1)"/>
                     </xsl:call-template>
-                    <xsl:call-template name="F008-c23_29-SOME">
+                    <xsl:call-template name="F008-c23_29-abcor-SOME">
                         <xsl:with-param name="char23_29" select="substring(., 30, 1)"/>
                     </xsl:call-template>
-                    <xsl:call-template name="F008-c31-MAPS">
+                    <xsl:call-template name="F008-c31-MP">
                         <xsl:with-param name="char31" select="substring(., 32, 1)"/>
+                    </xsl:call-template>
+                </xsl:when>
+                <!-- mixed materials -->
+                <xsl:when test="substring($ldr6-7, 1, 1) = 'p'">
+                    <xsl:call-template name="F008-c23_29-abcor-SOME">
+                        <xsl:with-param name="char23_29" select="substring(., 24, 1)"/>
+                    </xsl:call-template>
+                </xsl:when>
+                <!-- music -->
+                <xsl:when test="substring($ldr6-7, 1, 1) = 'i' or substring($ldr6-7, 1, 1) = 'j'
+                    or substring($ldr6-7, 1, 1) = 'c' or substring($ldr6-7, 1, 1) = 'd'">
+                    <xsl:call-template name="F008-c23_29-abcor-SOME">
+                        <xsl:with-param name="char23_29" select="substring(., 24, 1)"/>
                     </xsl:call-template>
                 </xsl:when>
             </xsl:choose>
