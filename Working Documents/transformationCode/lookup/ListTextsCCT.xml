@@ -1,67 +1,64 @@
 <items>
-    <item>Works</item>
-    <item>Anecdotes</item>
-    <item>Aphorisms</item>
-    <item>Articles</item>
-    <item>Cartoons</item>
-    <item>Comic books</item>
-    <item>Comic strips</item>
-    <item>Comics</item>
-    <item>Commentaries</item>
-    <item>Correspondence</item>
-    <item>Colloquia</item>
-    <item>Dialogues</item>
-    <item>Diaries</item>
-    <item>Drawings</item>
-    <item>Epigrammata</item>
-    <item>Essais</item>
-    <item>Essays</item>
-    <item>Fables</item>
-    <item>Graphic novels</item>
-    <item>Homilies</item>
-    <item>Illustrations</item>
-    <item>Interviews</item>
-    <item>Journalism</item>
-    <item>Journal</item>
-    <item>Journals</item>
-    <item>Judicial opinions</item>
-    <item>Lectures</item>
-    <item>Librettos</item>
-    <item>Literary works</item>
-    <item>Lyrics</item>
-    <item>Novels</item>
-    <item>Poems</item>
-    <item>Meditations</item>
-    <item>Memoirs</item>
-    <item>Newspaper columns</item>
-    <item>Notebooks</item>
-    <item>Novellas</item>
-    <item>Nursery rhymes</item>
-    <item>Odes</item>
-    <item>Orations</item>
-    <item>Paintings</item>
-    <item>Papers</item>
-    <item>Pastoral letters</item>
-    <item>Photographs</item>
-    <item>Plays</item>
-    <item>Poetry</item>
-    <item>Portraits</item>
-    <item>Postcards</item>
-    <item>Posters</item>
-    <item>Prayers</item>
-    <item>Prints</item>
-    <item>Prose poems</item>
-    <item>Prose works</item>
-    <item>Quotations</item>
-    <item>Screenplays</item>
-    <item>Sculpture</item>
-    <item>Selected stories</item>
-    <item>Sermons</item>
-    <item>Short stories</item>
-    <item>Sonnets</item>
-    <item>Speeches</item>
-    <item>Stories</item>
-    <item>Tales</item>
-    <item>Tragedies</item>
-    <item>Watercolor painting</item>
+  <item>Works</item>
+  <item>Anecdotes</item>
+  <item>Aphorisms</item>
+  <item>Articles</item>
+  <item>Cartoons</item>
+  <item>Colloquia</item>
+  <item>Comic books</item>
+  <item>Comic strips</item>
+  <item>Comics</item>
+  <item>Commentaries</item>
+  <item>Correspondence</item>
+  <item>Dialogues</item>
+  <item>Diaries</item>
+  <item>Drawings</item>
+  <item>Epigrammata</item>
+  <item>Essais</item>
+  <item>Essays</item>
+  <item>Fables</item>
+  <item>Graphic novels</item>
+  <item>Homilies</item>
+  <item>Illustrations</item>
+  <item>Journalism</item>
+  <item>Judicial opinions</item>
+  <item>Lectures</item>
+  <item>Librettos</item>
+  <item>Literary works</item>
+  <item>Lyrics</item>
+  <item>Meditations</item>
+  <item>Newspaper columns</item>
+  <item>Notebooks</item>
+  <item>Novellas</item>
+  <item>Novels</item>
+  <item>Nursery rhymes</item>
+  <item>Odes</item>
+  <item>Orations</item>
+  <item>Paintings</item>
+  <item>Papers</item>
+  <item>Pastoral letters</item>
+  <item>Photographs</item>
+  <item>Plays</item>
+  <item>Poems</item>
+  <item>Poetry</item>
+  <item>Portraits</item>
+  <item>Postcards</item>
+  <item>Posters</item>
+  <item>Prayers</item>
+  <item>Prints</item>
+  <item>Prose poems</item>
+  <item>Prose works</item>
+  <item>Quotations</item>
+  <item>Screenplays</item>
+  <item>Sculptures</item>
+  <item>Selected stories</item>
+  <item>Sermons</item>
+  <item>Short stories</item>
+  <item>Sonnets</item>
+  <item>Songs</item>
+  <item>Speeches</item>
+  <item>Stories</item>
+  <item>Tales</item>
+  <item>Tragedies</item>
+  <item>Watercolor paintings</item>
 </items>
