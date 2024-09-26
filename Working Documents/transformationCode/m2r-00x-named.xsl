@@ -575,7 +575,7 @@
     
     <xsl:template name="F008-c28-SOME">
         <xsl:param name="char28"/>
-        <xsl:if test="$char28 != ' ' and $char28 != '|' and $char28 != 'z' and $char28 != 'u'">
+        <xsl:if test="$char28 != ' ' and $char28 != '|' and $char28 != 'u'">
             <xsl:choose>
                 <xsl:when test="$char28 = 'n'">
                     <rdam:P30335 rdf:resource="{'https://doi.org/10.6069/uwlswd.2eg3-1x53#nx'}"/>
@@ -731,12 +731,15 @@
         </xsl:analyze-string>
     </xsl:template>
     
-    <xsl:template name="F008-c33-34-m-MP">
+    <xsl:template name="F008-c33-34-jm-MP">
         <xsl:param name="char33-34"/>
         <xsl:analyze-string select="$char33-34" regex=".{{1}}">
             <xsl:matching-substring>
                 <xsl:if test=". = 'm'">
                     <rdae:P20061 rdf:resource="{'http://rdaregistry.info/termList/TacNotation/1001'}"/>
+                </xsl:if>
+                <xsl:if test=". = 'j'">
+                    <rdae:P20001 rdf:resource="{'http://rdaregistry.info/termList/RDAContentType/1002'}"/>
                 </xsl:if>
             </xsl:matching-substring>
         </xsl:analyze-string>

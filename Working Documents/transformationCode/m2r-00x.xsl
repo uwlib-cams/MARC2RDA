@@ -143,7 +143,7 @@
                 <xsl:call-template name="F008-c23_29-f-SOME">
                     <xsl:with-param name="char23_29" select="substring(., 30, 1)"/>
                 </xsl:call-template>
-                <xsl:call-template name="F008-c33-34-m-MP">
+                <xsl:call-template name="F008-c33-34-jm-MP">
                     <xsl:with-param name="char33-34" select="substring(., 34, 2)"/>
                 </xsl:call-template>
             </xsl:when>
