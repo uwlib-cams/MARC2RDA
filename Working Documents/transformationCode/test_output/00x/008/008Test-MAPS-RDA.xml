@@ -2,9 +2,8 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99126473510001452wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>99126473510001452wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <fake:marcfield>F008 890504s1925    dcudgj cp a  f  0 jgeng d</fake:marcfield>
+      <fake:marcfield>F008 890504s1925    dcudgj cp a  f  0   eng d</fake:marcfield>
       <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.vw5v-gh79#a"/><!--rdaw:P10004 = has category of work-->
-      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.rw25-p125#gx"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F043 ## $a n-us-wa</fake:marcfield>
       <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us-wa"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F050 #4 $a G4282.W4 1925 $b .U5</fake:marcfield>
@@ -30,7 +29,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/99126473510001452wor"/><!--rdaeo:P20231 = has work expressed-->
       <rdaed:P20002>99126473510001452exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
-      <fake:marcfield>F008 890504s1925    dcudgj cp a  f  0 jgeng d</fake:marcfield>
+      <fake:marcfield>F008 890504s1925    dcudgj cp a  f  0   eng d</fake:marcfield>
       <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
       <rdae:P20318 rdf:resource="https://doi.org/10.6069/uwlswd.1c2x-cj09#d"/><!--rdae:P20318 = has relief representation-->
       <rdae:P20216 rdf:resource="https://doi.org/10.6069/uwlswd.4jrs-m847#cp"/><!--rdae:P20216 = has projection of cartographic content-->
@@ -38,12 +37,9 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99126473510001452man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99126473510001452exp"/><!--rdamo:P30139 = has expression manifested-->
-      <fake:marcfield>F008 890504s1925    dcudgj cp a  f  0 jgeng d</fake:marcfield>
+      <fake:marcfield>F008 890504s1925    dcudgj cp a  f  0   eng d</fake:marcfield>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/dcu"/><!--rdamo:P30279 = has place of manifestation-->
       <rdam:P30003 rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/><!--rdam:P30003 = has mode of issuance-->
-      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1045"/><!--rdam:P30001 = has carrier type-->
-      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.rw25-p125#j"/><!--rdam:P30335 = has category of manifestation-->
-      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1059"/><!--rdam:P30001 = has carrier type-->
       <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.2eg3-1x53#f"/><!--rdam:P30335 = has category of manifestation-->
       <fake:marcfield>F245 10 $a Wenatchee National Forest, Washington / $c compiled at Washington Office, April, 1922 ... by H.S. Meekham ; traced by E.L. Mehurin.</fake:marcfield>
       <rdamd:P30156>Wenatchee National Forest, Washington</rdamd:P30156><!--rdamd:P30156 = has title proper-->
