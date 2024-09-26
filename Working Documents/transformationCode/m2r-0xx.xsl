@@ -33,6 +33,7 @@
     <xsl:import href="m2r-functions.xsl"/>
     <xsl:import href="m2r-iris.xsl"/>
     
+    <!-- 020 - International Standard Book Number -->
     <xsl:template match="marc:datafield[@tag = '020'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '020']" 
         mode="man">
         <xsl:call-template name="getmarc"/>
@@ -242,6 +243,7 @@
             </xsl:for-each>
     </xsl:template>
     
+    <!-- 028 - Publisher or Distributor Number -->
     <xsl:template match="marc:datafield[@tag = '028'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '028']"
         mode="man">
         <xsl:call-template name="getmarc"/>
@@ -326,6 +328,7 @@
         </xsl:for-each>
     </xsl:template>
     
+    <!-- 043 - Geographic Area Code -->
     <xsl:template match="marc:datafield[@tag = '043']"  
         mode="wor" expand-text="yes">
         <xsl:call-template name="getmarc"/>
