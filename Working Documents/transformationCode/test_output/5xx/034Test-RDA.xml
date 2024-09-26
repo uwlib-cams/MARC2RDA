@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
+         xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwf="http://universityOfWashington/functions"
+         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/030-test1wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>030-test1wor</rdawd:P10002>
+      <fake:marcfield>F034 ## $a a $b 18000 $b 100000 $c 96000 $d W1800000 $e E1800000 $f N0840000 $g S0700000 $h 60 mm = 1° $j N0490000 $k N0120000 $m 030000 $n 090000 $p 1950 $r testR $s testS $t testT $x 17210000 $y 19171200 $z Mars</fake:marcfield>
+      <rdaw:P10301>W1800000--E1800000</rdaw:P10301>
+      <rdaw:P10300>N0840000--S0700000</rdaw:P10300>
+      <rdaw:P10303>N0490000--N0120000</rdaw:P10303>
+      <rdaw:P10302>030000--090000</rdaw:P10302>
+      <rdaw:P10214>1950</rdaw:P10214>
+      <rdaw:P10024>G-ring latitude: testS; G-ring longtitude: testT</rdaw:P10024>
+      <rdaw:P10321>Name of extraterrestrial body: Mars</rdaw:P10321>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/030-test1exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/030-test1wor"/>
+      <rdaed:P20002>030-test1exp</rdaed:P20002>
+      <fake:marcfield>F034 ## $a a $b 18000 $b 100000 $c 96000 $d W1800000 $e E1800000 $f N0840000 $g S0700000 $h 60 mm = 1° $j N0490000 $k N0120000 $m 030000 $n 090000 $p 1950 $r testR $s testS $t testT $x 17210000 $y 19171200 $z Mars</fake:marcfield>
+      <rdae:P20213>Category of scale: Linear scale</rdae:P20213>
+      <rdae:P20226>18000; 100000</rdae:P20226>
+      <rdae:P20230>96000</rdae:P20230>
+      <rdae:P20213>Angular scale: 60 mm = 1°</rdae:P20213>
+      <rdae:P20071>Distance from Earth: testR</rdae:P20071>
+      <rdae:P20071>Beginnig date for coordinates: 17210000</rdae:P20071>
+      <rdae:P20071>Ending date for coordinates: 19171200</rdae:P20071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/030-test1man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/030-test1exp"/>
+   </rdf:Description>
+</rdf:RDF>
