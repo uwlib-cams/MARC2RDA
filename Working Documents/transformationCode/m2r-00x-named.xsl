@@ -236,6 +236,13 @@
         </xsl:if>
     </xsl:template>
     
+    <xsl:template name="F008-c21-MU">
+        <xsl:param name="char21"/>
+        <xsl:if test="$char21 = 'd' or $char21 = 'e' or $char21 = 'f'">
+            <rdae:P20209 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.ywjs-vr46#', $char21)}"/>
+        </xsl:if>    
+    </xsl:template>
+    
     <xsl:template name="F008-c22-SOME">
         <xsl:param name="char22"/>
         <xsl:choose>
@@ -629,9 +636,7 @@
     <xsl:template name="F008-c31-BK">
         <xsl:param name="char31"/>
         <xsl:if test="$char31 = '1'">
-            <rdamd:P30137>
-                <xsl:text>Index present.</xsl:text>
-            </rdamd:P30137>
+            <rdam:P30455 rdf:resource="{'https://doi.org/10.6069/uwlswd.m0xp-h565#1'}"/>
         </xsl:if>
     </xsl:template>
     
