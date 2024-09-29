@@ -104,7 +104,7 @@
         <xsl:variable name="ldr6-7" select="substring(preceding-sibling::marc:leader, 7, 2)"/>
         
         <xsl:variable name="char35-37" select="substring(., 36, 3)"/>
-        <rdae:P20006 rdf:resource="{concat('http://id.loc.gov/vocabulary/languages/', $char35-37)}"/>
+        <rdae:P20006 rdf:resource="{normalize-space(concat('http://id.loc.gov/vocabulary/languages/', $char35-37))}"/>
         
         <xsl:choose>
             <!-- books -->
