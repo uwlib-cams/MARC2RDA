@@ -281,7 +281,7 @@
         </xsl:if>
         <xsl:if test="$prefLabel">
             <skos:prefLabel>
-                <xsl:value-of select="$prefLabel"/>
+                <xsl:value-of select="uwf:stripEndPunctuation($prefLabel)"/>
             </skos:prefLabel>
         </xsl:if>
         <xsl:if test="$notation">
@@ -319,7 +319,7 @@
         </xsl:if>
         <xsl:if test="$altLabel">
             <skos:altLabel>
-                <xsl:value-of select="$altLabel"/>
+                <xsl:value-of select="uwf:stripEndPunctuation($altLabel)"/>
             </skos:altLabel>
         </xsl:if>
         <xsl:if test="$scheme">
@@ -487,9 +487,31 @@
 <!-- string functions -->
     <xsl:function name="uwf:stripEndPunctuation">
         <xsl:param name="string"/>
-        <xsl:variable name="normalString" select="normalize-space($string)"/>
-        <xsl:value-of select="substring($normalString, 1, string-length($normalString) - 1)"/>
-        <xsl:value-of select="translate(substring($normalString, string-length($normalString)), ',', '')"/>
+        <xsl:choose>
+            <xsl:when test="ends-with(normalize-space($string), ',')">
+                <xsl:value-of select="substring($string, 1, string-length($string) - 1)"/>
+            </xsl:when>
+            <xsl:when test="ends-with(normalize-space($string), '.')">
+                <xsl:choose>
+                    <xsl:when test="matches($string, ' [\w]\.$')">
+                        <xsl:value-of select="$string"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:choose>
+                            <xsl:when test="uwf:checkAbbreviations($string) = true()">
+                                <xsl:value-of select="$string"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="substring($string, 1, string-length($string) - 1)"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$string"/>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:function>
     
     <xsl:function name="uwf:stripAllPunctuation">
@@ -565,6 +587,13 @@
                 </xsl:analyze-string>
             </xsl:when>
         </xsl:choose>
+    </xsl:function>
+    
+    <xsl:function name="uwf:checkAbbreviations">
+        <xsl:param name="string"/>
+        <xsl:variable name="lookupAbbreviationsDoc" select="document('lookup/abbreviations.xml')"/>
+        <xsl:value-of select="if (some $row in $lookupAbbreviationsDoc/root/row
+            satisfies (ends-with(lower-case($string), $row))) then true() else false()"/>
     </xsl:function>
     
 </xsl:stylesheet>

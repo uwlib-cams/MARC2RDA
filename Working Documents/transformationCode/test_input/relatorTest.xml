@@ -9,6 +9,16 @@
             <marc:subfield code="a">Strautmann, Eva,</marc:subfield>
             <marc:subfield code="d">1963-</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Smith, Stephen W.,</marc:subfield>
+            <marc:subfield code="c">Dr.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Brown, Sarah A.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Henson, David B.</marc:subfield>
+        </marc:datafield>
     </marc:record>
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>

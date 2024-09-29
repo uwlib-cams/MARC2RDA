@@ -34,11 +34,13 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99161827435401452wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>99161827435401452wor</rdawd:P10002>
+      <fake:marcfield>F008 150127s2015    dcuc    o    f000 0 eng  </fake:marcfield>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/>
       <fake:marcfield>F043 ## $a n-us---</fake:marcfield>
       <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us"/>
       <fake:marcfield>F050 #4 $a KF27 $b .A7659 2014a</fake:marcfield>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcc/kf27"/>
-      <rdawo:P10530 rdf:resource="http://marc2rda.edu/fake/age/d20e184"/>
+      <rdawo:P10530 rdf:resource="http://marc2rda.edu/fake/age/d22e184"/>
       <fake:marcfield>F245 14 $a The Department of Defense's readiness posture : $b hearing before the Subcommittee on Readiness of the Committee on Armed Services, House of Representatives, One Hundred Thirteenth Congress, first session, hearing held April 10, 2014.</fake:marcfield>
       <rdawd:P10088>The Department of Defense's readiness posture</rdawd:P10088>
       <fake:marcfield>F650 #0 $a Sequestration (Public finance) $z United States.</fake:marcfield>
@@ -82,7 +84,7 @@
       <fake:marcfield>F610 17 $a United States. $b Department of Defense $2 fast</fake:marcfield>
       <rdawo:P10263 rdf:resource="http://marc2rda.edu/fake/age/fast/unitedstatesdepartmentofdefense"/>
       <fake:marcfield>F655 #4 $a Legislative hearings.</fake:marcfield>
-      <rdawd:P10004>Legislative hearings.</rdawd:P10004>
+      <rdawd:P10004>Legislative hearings</rdawd:P10004>
       <fake:marcfield>F655 #7 $a Legislative hearings $2 fast</fake:marcfield>
       <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/fast/legislativehearings"/>
       <fake:marcfield>F655 #7 $a Legislative hearings. $2 lcgft</fake:marcfield>
@@ -94,14 +96,21 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/99161827435401452wor"/>
       <rdaed:P20002>99161827435401452exp</rdaed:P20002>
+      <fake:marcfield>F008 150127s2015    dcuc    o    f000 0 eng  </fake:marcfield>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99161827435401452man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99161827435401452exp"/>
+      <!--533-->
       <rdamo:P30136 rdf:resource="http://marc2rda.edu/fake/99161827435401452origMan"/>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d20e176"/>
+      <fake:marcfield>F008 150127s2015    dcuc    o    f000 0 eng  </fake:marcfield>
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1012"/>
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.2eg3-1x53#f"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d22e176"/>
       <fake:marcfield>F088 ## $a H.A.S.C. no. 113-110</fake:marcfield>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d20e182"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d22e182"/>
       <fake:marcfield>F245 14 $a The Department of Defense's readiness posture : $b hearing before the Subcommittee on Readiness of the Committee on Armed Services, House of Representatives, One Hundred Thirteenth Congress, first session, hearing held April 10, 2014.</fake:marcfield>
       <rdamd:P30156>The Department of Defense's readiness posture</rdamd:P30156>
       <rdamd:P30142>hearing before the Subcommittee on Readiness of the Committee on Armed Services, House of Representatives, One Hundred Thirteenth Congress, first session, hearing held April 10, 2014.</rdamd:P30142>
@@ -112,10 +121,15 @@
       <fake:marcfield>F338 ## $a online resource $b cr $2 rdacarrier</fake:marcfield>
       <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/>
       <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/>
+      <fake:marcfield>F533 ## $a Electronic reproduction. $b [Place of publication not identified] : $c HathiTrust Digital Library, $d 2011. $5 MiAaHDL</fake:marcfield>
+      <rdamd:P30335>Electronic reproduction</rdamd:P30335>
+      <rdamd:P30279>Place of publication not identified</rdamd:P30279>
+      <rdamd:P30297>HathiTrust Digital Library</rdamd:P30297>
+      <rdamd:P30278>2011</rdamd:P30278>
       <fake:marcfield>F538 ## $a Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002. $u http://purl.oclc.org/DLF/benchrepro0212 $5 MiAaHDL</fake:marcfield>
-      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/99161827435401452ited20e252"/>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/99161827435401452ited22e252"/>
       <fake:marcfield>F583 1# $a digitized $c 2011 $h HathiTrust Digital Library $l committed to preserve $2 pda $5 MiAaHDL</fake:marcfield>
-      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/99161827435401452ited20e254"/>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/99161827435401452ited22e254"/>
       <fake:marcfield>F500 ## $a Title from title screen (viewed on January 27, 2015).</fake:marcfield>
       <rdamd:P30137>Title from title screen (viewed on January 27, 2015).</rdamd:P30137>
       <fake:marcfield>F500 ## $a Paper version available for sale by the Superintendent of Documents, U.S. Government Printing Office.</fake:marcfield>
@@ -129,38 +143,40 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99161827435401452origMan">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99161827435401452exp"/>
+      <fake:marcfield>F008 150127s2015    dcuc    o    f000 0 eng  </fake:marcfield>
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/dcu"/>
       <fake:marcfield>F264 #1 $a Washington : $b U.S. Government Printing Office, $c 2015.</fake:marcfield>
       <rdamd:P30111>Washington : U.S. Government Printing Office, 2015.</rdamd:P30111>
       <rdamd:P30088>Washington</rdamd:P30088>
       <rdamd:P30176>U.S. Government Printing Office</rdamd:P30176>
       <rdamd:P30011>2015</rdamd:P30011>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161827435401452ited20e252">
-      <rdaid:P40001>ited20e252</rdaid:P40001>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161827435401452ited22e252">
+      <rdaid:P40001>ited22e252</rdaid:P40001>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
       <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/miaahdl"/>
       <rdaid:P40028>Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002.; http://purl.oclc.org/DLF/benchrepro0212</rdaid:P40028>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161827435401452ited20e254">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161827435401452ited22e254">
       <fake:marcfield>F583 1# $a digitized $c 2011 $h HathiTrust Digital Library $l committed to preserve $2 pda $5 MiAaHDL</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ited20e254</rdaid:P40001>
+      <rdaid:P40001>ited22e254</rdaid:P40001>
       <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/miaahdl"/>
       <rdaid:P40028>Action: digitized; Time/date of action: 2011; Jurisdiction: HathiTrust Digital Library; Status: committed to preserve; Source of term: pda</rdaid:P40028>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d20e176">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d22e176">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>1012-F (online)</rdand:P80068>
       <rdand:P80078>GPO item number</rdand:P80078>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d20e182">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d22e182">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>H.A.S.C. no. 113-110</rdand:P80068>
       <rdand:P80078>Report number</rdand:P80078>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>United States.</rdand:P80068>
+      <rdand:P80068>United States</rdand:P80068>
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates">
@@ -183,7 +199,7 @@
       <rdand:P80068>États-Unis</rdand:P80068>
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d20e350">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d22e350">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>United States</rdand:P80068>
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
@@ -198,7 +214,7 @@
       <rdand:P80068>United States. Department of Defense</rdand:P80068>
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d20e184">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e184">
       <fake:marcfield>F110 1# $a United States. $b Congress. $b House. $b Committee on Armed Services. $b Subcommittee on Readiness, $e author.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
       <rdaad:P50375>United States. Congress. House. Committee on Armed Services. Subcommittee on Readiness</rdaad:P50375>
@@ -215,8 +231,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/kf27">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <!--rdf:datatype to be added-->
-      <skos:notation>KF27</skos:notation>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">KF27</skos:notation>
       <skos:altLabel>KF27</skos:altLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
    </rdf:Description>
@@ -227,7 +242,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/sequestrationpublicfinanceunitedstates">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Sequestration (Public finance) -- United States.</skos:prefLabel>
+      <skos:prefLabel>Sequestration (Public finance) -- United States</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/armedforcesappropriationsandexpenditures">
@@ -272,52 +287,52 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/unitedstatesarmedforcesappropriationsandexpenditures">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>United States -- Armed Forces -- Appropriations and expenditures.</skos:prefLabel>
+      <skos:prefLabel>United States -- Armed Forces -- Appropriations and expenditures</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/armedforcesappropriationsandexpenditures">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Armed Forces -- Appropriations and expenditures.</skos:prefLabel>
+      <skos:prefLabel>Armed Forces -- Appropriations and expenditures</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/unitedstatesarmedforcesoperationalreadiness">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>United States -- Armed Forces -- Operational readiness.</skos:prefLabel>
+      <skos:prefLabel>United States -- Armed Forces -- Operational readiness</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/armedforcesoperationalreadiness">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Armed Forces -- Operational readiness.</skos:prefLabel>
+      <skos:prefLabel>Armed Forces -- Operational readiness</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/unitedstatesdefensesplanning">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>United States -- Defenses -- Planning.</skos:prefLabel>
+      <skos:prefLabel>United States -- Defenses -- Planning</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/defensesplanning">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Defenses -- Planning.</skos:prefLabel>
+      <skos:prefLabel>Defenses -- Planning</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/étatsunisdéfensenationaleplanification">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>États-Unis -- Défense nationale -- Planification.</skos:prefLabel>
+      <skos:prefLabel>États-Unis -- Défense nationale -- Planification</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/défensenationaleplanification">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Défense nationale -- Planification.</skos:prefLabel>
+      <skos:prefLabel>Défense nationale -- Planification</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/unitedstatesdepartmentofdefenseappropriationsandexpenditures">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>United States. -- Department of Defense -- Appropriations and expenditures.</skos:prefLabel>
+      <skos:prefLabel>United States. -- Department of Defense -- Appropriations and expenditures</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/appropriationsandexpenditures">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Appropriations and expenditures.</skos:prefLabel>
+      <skos:prefLabel>Appropriations and expenditures</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/legislativehearings">
@@ -327,12 +342,12 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcgft/legislativehearings">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Legislative hearings.</skos:prefLabel>
+      <skos:prefLabel>Legislative hearings</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvmgf/audienceslégislatives">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Audiences législatives.</skos:prefLabel>
+      <skos:prefLabel>Audiences législatives</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/unitedstates">

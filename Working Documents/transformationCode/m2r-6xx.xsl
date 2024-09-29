@@ -295,7 +295,7 @@
                     <xsl:choose>
                         <xsl:when test="../@ind2 = '4'">
                             <rdatd:P70015>
-                                <xsl:value-of select="."/>
+                                <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                             </rdatd:P70015>
                         </xsl:when>
                         <xsl:otherwise>
@@ -330,7 +330,7 @@
                     <xsl:choose>
                         <xsl:when test="../@ind2 = '4'">
                             <rdapd:P70018>
-                                <xsl:value-of select="."/>
+                                <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                             </rdapd:P70018>
                         </xsl:when>
                         <xsl:otherwise>
@@ -420,7 +420,7 @@
                     <rdf:Description rdf:about="{uwf:nomenIRI(., 'tim/nom', ., $scheme)}">
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                         <rdand:P80068>
-                            <xsl:value-of select="."/>
+                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                         </rdand:P80068>
                         <xsl:choose>
                             <xsl:when test="../@ind2 = '7'">
@@ -441,7 +441,7 @@
                     <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom', ., $scheme)}">
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                         <rdand:P80068>
-                            <xsl:value-of select="."/>
+                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                         </rdand:P80068>
                         <xsl:choose>
                             <xsl:when test="../@ind2 = '7'">
@@ -569,7 +569,7 @@
                     <xsl:choose>
                         <xsl:when test="../@ind2 = '4'">
                             <rdatd:P70015>
-                                <xsl:value-of select="."/>
+                                <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                             </rdatd:P70015>
                         </xsl:when>
                         <xsl:otherwise>
@@ -594,7 +594,7 @@
                     <xsl:choose>
                         <xsl:when test="../@ind2 = '4'">
                             <rdapd:P70018>
-                                <xsl:value-of select="."/>
+                                <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                             </rdapd:P70018>
                         </xsl:when>
                         <xsl:otherwise>
@@ -645,7 +645,7 @@
                     <rdf:Description rdf:about="{uwf:nomenIRI(., 'tim/nom', ., $scheme)}">
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                         <rdand:P80068>
-                            <xsl:value-of select="."/>
+                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                         </rdand:P80068>
                         <xsl:choose>
                             <xsl:when test="../@ind2 = '7'">
@@ -666,7 +666,7 @@
                     <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom', ., $scheme)}">
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                         <rdand:P80068>
-                            <xsl:value-of select="."/>
+                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                         </rdand:P80068>
                         <xsl:choose>
                             <xsl:when test="../@ind2 = '7'">
@@ -759,7 +759,7 @@
                     <xsl:choose>
                         <xsl:when test="../@ind2 = '4'">
                             <rdatd:P70015>
-                                <xsl:value-of select="."/>
+                                <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                             </rdatd:P70015>
                         </xsl:when>
                         <xsl:otherwise>
@@ -784,7 +784,7 @@
                     <xsl:choose>
                         <xsl:when test="../@ind2 = '4'">
                             <rdapd:P70018>
-                                <xsl:value-of select="."/>
+                                <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                             </rdapd:P70018>
                         </xsl:when>
                         <xsl:otherwise>
@@ -810,7 +810,7 @@
                     <rdf:Description rdf:about="{uwf:nomenIRI(., 'tim/nom', ., $scheme)}">
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                         <rdand:P80068>
-                            <xsl:value-of select="."/>
+                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                         </rdand:P80068>
                         <xsl:choose>
                             <xsl:when test="../@ind2 = '7'">
@@ -831,7 +831,7 @@
                     <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom', ., $scheme)}">
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                         <rdand:P80068>
-                            <xsl:value-of select="."/>
+                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                         </rdand:P80068>
                         <xsl:choose>
                             <xsl:when test="../@ind2 = '7'">
@@ -942,7 +942,7 @@
                     </xsl:when>
                     <xsl:otherwise>
                         <rdatd:P70015>
-                            <xsl:value-of select="."/>
+                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                         </rdatd:P70015>
                     </xsl:otherwise>
                 </xsl:choose>
@@ -980,7 +980,7 @@
                     <xsl:choose>
                         <xsl:when test="../@ind2 = '4'">
                             <rdapd:P70018>
-                                <xsl:value-of select="."/>
+                                <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                             </rdapd:P70018>
                         </xsl:when>
                         <xsl:otherwise>
@@ -1034,7 +1034,7 @@
                     <rdf:Description rdf:about="{uwf:nomenIRI(., 'tim/nom', ., $scheme)}">
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                         <rdand:P80068>
-                            <xsl:value-of select="."/>
+                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                         </rdand:P80068>
                         <xsl:choose>
                             <xsl:when test="../@ind2 = '7'">
@@ -1055,7 +1055,7 @@
                     <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom', ., $scheme)}">
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                         <rdand:P80068>
-                            <xsl:value-of select="."/>
+                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                         </rdand:P80068>
                         <xsl:choose>
                             <xsl:when test="../@ind2 = '7'">
@@ -1150,7 +1150,7 @@
                     <xsl:choose>
                         <xsl:when test="../@ind2 = '4'">
                             <rdatd:P70015>
-                                <xsl:value-of select="."/>
+                                <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                             </rdatd:P70015>
                         </xsl:when>
                         <xsl:otherwise>
@@ -1175,7 +1175,7 @@
                     <xsl:choose>
                         <xsl:when test="../@ind2 = '4'">
                             <rdapd:P70018>
-                                <xsl:value-of select="."/>
+                                <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                             </rdapd:P70018>
                         </xsl:when>
                         <xsl:otherwise>
@@ -1199,7 +1199,7 @@
                     <rdf:Description rdf:about="{uwf:nomenIRI(., 'tim/nom', ., $scheme)}">
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                         <rdand:P80068>
-                            <xsl:value-of select="."/>
+                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                         </rdand:P80068>
                         <xsl:choose>
                             <xsl:when test="@ind2 = '7'">
@@ -1220,7 +1220,7 @@
                     <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom', ., $scheme)}">
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                         <rdand:P80068>
-                            <xsl:value-of select="."/>
+                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                         </rdand:P80068>
                         <xsl:choose>
                             <xsl:when test="@ind2 = '7'">
@@ -1321,7 +1321,7 @@
                     <xsl:choose>
                         <xsl:when test="../@ind2 = '4'">
                             <rdatd:P70015>
-                                <xsl:value-of select="."/>
+                                <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                             </rdatd:P70015>
                         </xsl:when>
                         <xsl:otherwise>
@@ -1352,7 +1352,7 @@
                     <xsl:choose>
                         <xsl:when test="../@ind2 = '4'">
                             <rdapd:P70018>
-                                <xsl:value-of select="."/>
+                                <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                             </rdapd:P70018>
                         </xsl:when>
                         <xsl:otherwise>
@@ -1383,7 +1383,7 @@
         <rdf:Description rdf:about="{$nomIRI}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
             <rdand:P80068>
-                <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                <xsl:value-of select="uwf:stripEndPunctuation(marc:subfield[@code = 'a'])"/>
             </rdand:P80068>
             <xsl:choose>
                 <xsl:when test="@ind2 = '7'">
@@ -1404,7 +1404,7 @@
                 <rdf:Description rdf:about="{uwf:nomenIRI(., 'tim/nom', ., $scheme)}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                     <rdand:P80068>
-                        <xsl:value-of select="."/>
+                        <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                     </rdand:P80068>
                     <xsl:choose>
                         <xsl:when test="../@ind2 = '7'">
@@ -1425,7 +1425,7 @@
                 <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom', ., $scheme)}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                     <rdand:P80068>
-                        <xsl:value-of select="."/>
+                        <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                     </rdand:P80068>
                     <xsl:choose>
                         <xsl:when test="../@ind2 = '7'">
@@ -1564,7 +1564,7 @@
                         </xsl:when>
                         <xsl:otherwise>
                             <rdatd:P70015>
-                                <xsl:value-of select="."/>
+                                <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                             </rdatd:P70015>
                         </xsl:otherwise>
                     </xsl:choose>
@@ -1589,7 +1589,7 @@
                         </xsl:when>
                         <xsl:otherwise>
                             <rdapd:P70018>
-                                <xsl:value-of select="."/>
+                                <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                             </rdapd:P70018>
                         </xsl:otherwise>
                     </xsl:choose>
@@ -1610,7 +1610,7 @@
                     <rdf:Description rdf:about="{uwf:nomenIRI(., 'tim/nom', ., $scheme)}">
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                         <rdand:P80068>
-                            <xsl:value-of select="."/>
+                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                         </rdand:P80068>
                         <xsl:choose>
                             <xsl:when test="../marc:subfield[@code = '2']">
@@ -1624,7 +1624,7 @@
                     <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom', ., $scheme)}">
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                         <rdand:P80068>
-                            <xsl:value-of select="."/>
+                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                         </rdand:P80068>
                         <xsl:choose>
                             <xsl:when test="../marc:subfield[@code = '2']">
@@ -1750,7 +1750,7 @@
                         </xsl:when>
                         <xsl:otherwise>
                             <rdatd:P70015>
-                                <xsl:value-of select="."/>
+                                <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                             </rdatd:P70015>
                         </xsl:otherwise>
                     </xsl:choose>
@@ -1774,7 +1774,7 @@
                         </xsl:when>
                         <xsl:otherwise>
                             <rdapd:P70018>
-                                <xsl:value-of select="."/>
+                                <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                             </rdapd:P70018>
                         </xsl:otherwise>
                     </xsl:choose>
@@ -1795,7 +1795,7 @@
                     <rdf:Description rdf:about="{uwf:nomenIRI(., 'tim/nom', ., $scheme)}">
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                         <rdand:P80068>
-                            <xsl:value-of select="."/>
+                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                         </rdand:P80068>
                         <xsl:choose>
                             <xsl:when test="../marc:subfield[@code = '2']">
@@ -1809,7 +1809,7 @@
                     <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom', ., $scheme)}">
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                         <rdand:P80068>
-                            <xsl:value-of select="."/>
+                            <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                         </rdand:P80068>
                         <xsl:choose>
                             <xsl:when test="../marc:subfield[@code = '2']">

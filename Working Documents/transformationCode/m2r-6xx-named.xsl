@@ -31,90 +31,141 @@
     <!-- Concept labels -->
     <!-- these vary by field. Each field has a label template that outputs the label based on the present subfields -->
     <xsl:template name="F6XX-xyz-label" expand-text="yes">
-        <xsl:value-of select="marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']"
-            separator=" -- "/>
+        <xsl:variable name="label">
+            <xsl:value-of select="marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']"
+                separator=" -- "/>
+        </xsl:variable>
+        <xsl:value-of select="uwf:stripEndPunctuation($label)"/>
     </xsl:template>
     
     <xsl:template name="F600-label" expand-text="yes">
+        <xsl:variable name="label">
         <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
             | marc:subfield[@code = 'd'] | marc:subfield[@code = 'j'] | marc:subfield[@code = 'q'] | marc:subfield[@code = 'u']
             | marc:subfield[@code = 't'] | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h']
             | marc:subfield[@code = 'k'] | marc:subfield[@code = 'l'] | marc:subfield[@code = 'm'] | marc:subfield[@code = 'n']
             | marc:subfield[@code = 'o'] | marc:subfield[@code = 'p'] | marc:subfield[@code = 'r'] | marc:subfield[@code = 's']
             | marc:subfield[@code = 'v'] | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
+        </xsl:variable>
+        <xsl:value-of select="uwf:stripEndPunctuation($label)"/>
     </xsl:template>
     <xsl:template name="F610-label" expand-text="yes">
-        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
-            | marc:subfield[@code = 'd'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'u']
-            | marc:subfield[@code = 't'] | marc:subfield[@code = 'f'] | marc:subfield[@code = 'h'] | marc:subfield[@code = 'k']
-            | marc:subfield[@code = 'l'] | marc:subfield[@code = 'm'] | marc:subfield[@code = 'n'] | marc:subfield[@code = 'o']
-            | marc:subfield[@code = 'p'] | marc:subfield[@code = 'r'] | marc:subfield[@code = 's'] | marc:subfield[@code = 'v']
-            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
+        <xsl:variable name="label">
+            <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
+                | marc:subfield[@code = 'd'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'u']
+                | marc:subfield[@code = 't'] | marc:subfield[@code = 'f'] | marc:subfield[@code = 'h'] | marc:subfield[@code = 'k']
+                | marc:subfield[@code = 'l'] | marc:subfield[@code = 'm'] | marc:subfield[@code = 'n'] | marc:subfield[@code = 'o']
+                | marc:subfield[@code = 'p'] | marc:subfield[@code = 'r'] | marc:subfield[@code = 's'] | marc:subfield[@code = 'v']
+                | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>    
+        </xsl:variable>
+        <xsl:value-of select="uwf:stripEndPunctuation($label)"/>
     </xsl:template>
     <xsl:template name="F611-label" expand-text="yes">
-        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd'] 
+        <xsl:variable name="label">
+           <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd'] 
             | marc:subfield[@code = 'e'] | marc:subfield[@code = 'u'] | marc:subfield[@code = 't'] 
             | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h'] 
             | marc:subfield[@code = 'k'] | marc:subfield[@code = 'l'] | marc:subfield[@code = 'n'] 
             | marc:subfield[@code = 'p'] | marc:subfield[@code = 'q'] | marc:subfield[@code = 's'] | marc:subfield[@code = 'v']
-            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
+            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/> 
+        </xsl:variable>
+        <xsl:value-of select="uwf:stripEndPunctuation($label)"/>
     </xsl:template>
     
     <xsl:template name="F630-label" expand-text="yes">
-        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'f']
+        <xsl:variable name="label">
+            <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'f']
             | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h'] | marc:subfield[@code = 'k'] | marc:subfield[@code = 'l']
             | marc:subfield[@code = 'm'] | marc:subfield[@code = 'n'] | marc:subfield[@code = 'o'] | marc:subfield[@code = 'p']
             | marc:subfield[@code = 'r'] | marc:subfield[@code = 's'] | marc:subfield[@code = 't'] | marc:subfield[@code = 'v']
             | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
+        </xsl:variable>
+        <xsl:value-of select="uwf:stripEndPunctuation($label)"/>
     </xsl:template>
     <xsl:template name="F647-label" expand-text="yes">
-        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'c']
+        <xsl:variable name="label">
+            <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'c']
             | marc:subfield[@code = 'd'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'v']
-            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
+            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/> 
+        </xsl:variable>
+        <xsl:value-of select="uwf:stripEndPunctuation($label)"/>
     </xsl:template>
     <xsl:template name="F648-label" expand-text="yes">
-        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'v']
+        <xsl:variable name="label">
+            <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'v']
             | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
+        </xsl:variable>
+        <xsl:value-of select="uwf:stripEndPunctuation($label)"/>
     </xsl:template>
     <xsl:template name="F650-label" expand-text="yes">
-        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
+        <xsl:variable name="label">
+           <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
             | marc:subfield[@code = 'd'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'v']
-            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
+            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/> 
+        </xsl:variable>
+        <xsl:value-of select="uwf:stripEndPunctuation($label)"/>
     </xsl:template>
     <xsl:template name="F651-label" expand-text="yes">
-        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'v']
+        <xsl:variable name="label">
+            <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'v']
             | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
+        </xsl:variable>
+        <xsl:value-of select="uwf:stripEndPunctuation($label)"/>
     </xsl:template>
     <xsl:template name="F653-label" expand-text="yes">
-        <xsl:value-of select="marc:subfield[@code = 'a']" separator=" -- "/>
+        <xsl:variable name="label">
+            <xsl:value-of select="marc:subfield[@code = 'a']" separator=" -- "/>
+        </xsl:variable>
+        <xsl:value-of select="uwf:stripEndPunctuation($label)"/>
     </xsl:template>
     <xsl:template name="F654-label" expand-text="yes">
-        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
+        <xsl:variable name="label">
+            <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
             | marc:subfield[@code = 'v'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
+        </xsl:variable>
+        <xsl:value-of select="uwf:stripEndPunctuation($label)"/>
     </xsl:template>
     <xsl:template name="F655-label" expand-text="yes">
-        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'v'] 
+        <xsl:variable name="label">
+            <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'v'] 
             | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
+        </xsl:variable>
+        <xsl:value-of select="uwf:stripEndPunctuation($label)"/>
     </xsl:template>
     <xsl:template name="F656-label" expand-text="yes">
-        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'k'] | marc:subfield[@code = 'v'] 
+        <xsl:variable name="label">
+            <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'k'] | marc:subfield[@code = 'v'] 
             | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
+        </xsl:variable>
+        <xsl:value-of select="uwf:stripEndPunctuation($label)"/>
     </xsl:template>
     <xsl:template name="F657-label" expand-text="yes">
-        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'v'] 
+        <xsl:variable name="label">
+            <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'v'] 
             | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator=" -- "/>
+        </xsl:variable>
+        <xsl:value-of select="uwf:stripEndPunctuation($label)"/>
     </xsl:template>
     <xsl:template name="F658-label" expand-text="yes">
-        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] 
+        <xsl:variable name="label">
+            <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] 
             | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd']" separator=" -- "/>
+        </xsl:variable>
+        <xsl:value-of select="uwf:stripEndPunctuation($label)"/>
     </xsl:template>
     <xsl:template name="F662-label" expand-text="yes">
-        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] 
+        <xsl:variable name="label">
+            <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] 
             | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd']
             | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h']" separator=" -- "/>
+        </xsl:variable>
+        <xsl:value-of select="uwf:stripEndPunctuation($label)"/>
     </xsl:template>
     <xsl:template name="F688-label" expand-text="yes">
-        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'g']" separator=" -- "/>
+        <xsl:variable name="label">
+            <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'g']" separator=" -- "/>
+        </xsl:variable>
+        <xsl:value-of select="uwf:stripEndPunctuation($label)"/>
     </xsl:template>
     
     
@@ -170,7 +221,7 @@
         <xsl:choose>
             <xsl:when test="../@ind2 = '4' or ((../@ind2 = '4' or ../@ind2 = '7'  or ../@ind2 = ' ') and not(../marc:subfield[@code = '2']))">
                 <rdawd:P10004>
-                    <xsl:value-of select="."/>
+                    <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                 </rdawd:P10004>
             </xsl:when>
             <xsl:otherwise>
