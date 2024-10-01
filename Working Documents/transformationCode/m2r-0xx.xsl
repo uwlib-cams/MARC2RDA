@@ -376,7 +376,7 @@
             </xsl:for-each>
         </rdae:P20213>
         <rdae:P20071>
-            <xsl:text>Distance from Earth: {marc:subfield[@code = 'r']}</xsl:text>
+            <xsl:text>Distance from earth: {marc:subfield[@code = 'r']}</xsl:text>
         </rdae:P20071>
         <rdae:P20071>
             <xsl:text>Beginnig date for coordinates: {marc:subfield[@code = 'x']}</xsl:text>
