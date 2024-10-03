@@ -7,9 +7,11 @@
         <marc:controlfield tag="001">030-test1</marc:controlfield>
         <marc:datafield tag="034" ind1=" " ind2=" ">
             <marc:subfield code="a">a</marc:subfield>
-            <marc:subfield code="b">18000</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="034" ind1=" " ind2=" ">
+            <marc:subfield code="a">c</marc:subfield>
             <marc:subfield code="b">100000</marc:subfield>
-            <marc:subfield code="c">96000</marc:subfield>
+            <marc:subfield code="b">100000</marc:subfield>
             <marc:subfield code="d">W1800000</marc:subfield>
             <marc:subfield code="e">E1800000</marc:subfield>
             <marc:subfield code="f">N0840000</marc:subfield>
@@ -19,13 +21,10 @@
             <marc:subfield code="k">N0120000</marc:subfield>
             <marc:subfield code="m">030000</marc:subfield>
             <marc:subfield code="n">090000</marc:subfield>
-            <marc:subfield code="p">1950</marc:subfield>
-            <marc:subfield code="r">testR</marc:subfield>
             <marc:subfield code="s">testS</marc:subfield>
             <marc:subfield code="t">testT</marc:subfield>
             <marc:subfield code="x">17210000</marc:subfield>
             <marc:subfield code="y">19171200</marc:subfield>
-            <marc:subfield code="z">Mars</marc:subfield>
         </marc:datafield>
     </marc:record>
 </marc:collection>

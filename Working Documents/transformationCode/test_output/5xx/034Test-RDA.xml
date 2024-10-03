@@ -34,25 +34,24 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/030-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>030-test1wor</rdawd:P10002>
-      <fake:marcfield>F034 ## $a a $b 18000 $b 100000 $c 96000 $d W1800000 $e E1800000 $f N0840000 $g S0700000 $h 60 mm = 1° $j N0490000 $k N0120000 $m 030000 $n 090000 $p 1950 $r testR $s testS $t testT $x 17210000 $y 19171200 $z Mars</fake:marcfield>
+      <fake:marcfield>F034 ## $a a</fake:marcfield>
+      <fake:marcfield>F034 ## $a c $b 100000 $b 100000 $d W1800000 $e E1800000 $f N0840000 $g S0700000 $h 60 mm = 1° $j N0490000 $k N0120000 $m 030000 $n 090000 $s testS $t testT $x 17210000 $y 19171200</fake:marcfield>
       <rdaw:P10301>W1800000--E1800000</rdaw:P10301>
       <rdaw:P10300>N0840000--S0700000</rdaw:P10300>
       <rdaw:P10303>N0490000--N0120000</rdaw:P10303>
       <rdaw:P10302>030000--090000</rdaw:P10302>
-      <rdaw:P10214>1950</rdaw:P10214>
       <rdaw:P10024>G-ring latitude: testS; G-ring longtitude: testT</rdaw:P10024>
-      <rdaw:P10321>Name of extraterrestrial body: Mars</rdaw:P10321>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/030-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/030-test1wor"/>
       <rdaed:P20002>030-test1exp</rdaed:P20002>
-      <fake:marcfield>F034 ## $a a $b 18000 $b 100000 $c 96000 $d W1800000 $e E1800000 $f N0840000 $g S0700000 $h 60 mm = 1° $j N0490000 $k N0120000 $m 030000 $n 090000 $p 1950 $r testR $s testS $t testT $x 17210000 $y 19171200 $z Mars</fake:marcfield>
+      <fake:marcfield>F034 ## $a a</fake:marcfield>
       <rdae:P20213>Category of scale: Linear scale</rdae:P20213>
-      <rdae:P20226>18000; 100000</rdae:P20226>
-      <rdae:P20230>96000</rdae:P20230>
+      <fake:marcfield>F034 ## $a c $b 100000 $b 100000 $d W1800000 $e E1800000 $f N0840000 $g S0700000 $h 60 mm = 1° $j N0490000 $k N0120000 $m 030000 $n 090000 $s testS $t testT $x 17210000 $y 19171200</fake:marcfield>
+      <rdae:P20213>Category of scale: Neither linear nor angular scale</rdae:P20213>
+      <rdae:P20226>100000; 100000</rdae:P20226>
       <rdae:P20213>Angular scale: 60 mm = 1°</rdae:P20213>
-      <rdae:P20071>Distance from Earth: testR</rdae:P20071>
       <rdae:P20071>Beginnig date for coordinates: 17210000</rdae:P20071>
       <rdae:P20071>Ending date for coordinates: 19171200</rdae:P20071>
    </rdf:Description>

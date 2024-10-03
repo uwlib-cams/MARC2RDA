@@ -332,8 +332,8 @@
     <xsl:template match="marc:datafield[@tag = '034'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '034']"
         mode="exp" expand-text="yes">
         <xsl:call-template name="getmarc"/>
-        <rdae:P20213>
             <xsl:for-each select="marc:subfield[@code = 'a']">
+                <rdae:P20213>
                 <xsl:if test=".='a'">
                     <xsl:text>Category of scale: Linear scale</xsl:text>
                 </xsl:if>
@@ -343,91 +343,84 @@
                 <xsl:if test=".='c'">
                     <xsl:text>Category of scale: Neither linear nor angular scale</xsl:text>
                 </xsl:if>
+                </rdae:P20213>
             </xsl:for-each>
-        </rdae:P20213>
-        <rdae:P20226>
-            <xsl:for-each select="marc:subfield[@code = 'b']">
-                <xsl:if test="@code = 'b'">
-                    <xsl:text>{.}</xsl:text>
-                </xsl:if>
-                <xsl:if test="position() != last()">
-                    <xsl:text>; </xsl:text>
-                </xsl:if>
-            </xsl:for-each>
-        </rdae:P20226>
-        <rdae:P20230>
-            <xsl:for-each select="marc:subfield[@code = 'c']">
-                <xsl:if test="@code = 'c'">
-                    <xsl:text>{.}</xsl:text>
-                </xsl:if>
-                <xsl:if test="position() != last()">
-                    <xsl:text>; </xsl:text>
-                </xsl:if>
-            </xsl:for-each>
-        </rdae:P20230>
-        <rdae:P20213>
-            <xsl:for-each select="marc:subfield[@code = 'h']">
-                <xsl:if test="@code = 'h'">
-                    <xsl:text>Angular scale: {.}</xsl:text>
-                </xsl:if>
-                <xsl:if test="position() != last()">
-                    <xsl:text>; </xsl:text>
-                </xsl:if>
-            </xsl:for-each>
-        </rdae:P20213>
-        <rdae:P20071>
-            <xsl:text>Distance from earth: {marc:subfield[@code = 'r']}</xsl:text>
-        </rdae:P20071>
-        <rdae:P20071>
-            <xsl:text>Beginnig date for coordinates: {marc:subfield[@code = 'x']}</xsl:text>
-        </rdae:P20071>
-        <rdae:P20071>
-            <xsl:text>Ending date for coordinates: {marc:subfield[@code = 'y']}</xsl:text>
-        </rdae:P20071>
+            <xsl:if test="marc:subfield[@code = 'b']">
+                <rdae:P20226><xsl:for-each select="marc:subfield[@code = 'b']">
+                    <xsl:value-of select="."/>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>; </xsl:text>
+                    </xsl:if>
+                </xsl:for-each></rdae:P20226>
+            </xsl:if>
+            <xsl:if test="marc:subfield[@code='c']">
+                <rdae:P20230>
+                    <xsl:for-each select="marc:subfield[@code = 'c']">
+                        <xsl:value-of select="."/>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>; </xsl:text>
+                    </xsl:if>         
+                    </xsl:for-each>   
+                </rdae:P20230>
+            </xsl:if>
+            <xsl:if test="marc:subfield[@code = 'h']">
+                <rdae:P20213>
+                    <xsl:for-each select="marc:subfield[@code = 'h']">
+                        <xsl:if test="@code = 'h'">
+                            <xsl:text>Angular scale: {.}</xsl:text>
+                        </xsl:if>
+                        <xsl:if test="position() != last()">
+                            <xsl:text>; </xsl:text>
+                        </xsl:if>
+                    </xsl:for-each>
+                </rdae:P20213>
+            </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'r']">
+            <rdae:P20071><xsl:text>Distance from earth: {marc:subfield[@code = 'r']}</xsl:text></rdae:P20071>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'x']">
+            <rdae:P20071><xsl:text>Beginnig date for coordinates: {marc:subfield[@code = 'x']}</xsl:text></rdae:P20071>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'y']">
+            <rdae:P20071><xsl:text>Ending date for coordinates: {marc:subfield[@code = 'y']}</xsl:text></rdae:P20071>
+        </xsl:if>
     </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '034'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '034']"
         mode="wor" expand-text="yes">
         <xsl:call-template name="getmarc"/>
-        <rdaw:P10301>
             <xsl:if test="marc:subfield[@code = 'd'] or marc:subfield[@code = 'e']">
-                <xsl:text>{marc:subfield[@code = 'd']}--{marc:subfield[@code = 'e']}</xsl:text>
+                <rdaw:P10301><xsl:text>{marc:subfield[@code = 'd']}--{marc:subfield[@code = 'e']}</xsl:text></rdaw:P10301>
             </xsl:if>
-        </rdaw:P10301>
-        <rdaw:P10300>
             <xsl:if test="marc:subfield[@code = 'f'] or marc:subfield[@code = 'g']">
-                <xsl:text>{marc:subfield[@code = 'f']}--{marc:subfield[@code = 'g']}</xsl:text>
+                <rdaw:P10300><xsl:text>{marc:subfield[@code = 'f']}--{marc:subfield[@code = 'g']}</xsl:text></rdaw:P10300>
             </xsl:if>
-        </rdaw:P10300>
-        <rdaw:P10303>
             <xsl:if test="marc:subfield[@code = 'j'] or marc:subfield[@code = 'k']">
-                <xsl:text>{marc:subfield[@code =  'j']}--{marc:subfield[@code = 'k']}</xsl:text>
+                <rdaw:P10303><xsl:text>{marc:subfield[@code =  'j']}--{marc:subfield[@code = 'k']}</xsl:text></rdaw:P10303>
             </xsl:if>
-        </rdaw:P10303>
-        <rdaw:P10302>
             <xsl:if test="marc:subfield[@code = 'm'] or marc:subfield[@code =  'n']">
-                <xsl:text>{marc:subfield[@code = 'm']}--{marc:subfield[@code = 'n']}</xsl:text>
-            </xsl:if>
-        </rdaw:P10302>
-        <rdaw:P10214>
-            <xsl:text>{marc:subfield[@code = 'p']}</xsl:text>
-        </rdaw:P10214>
-        <rdaw:P10024>
-            <xsl:for-each select="marc:subfield[@code = 's'] | marc:subfield[@code = 't']">
-                <xsl:if test="@code = 's'">
-                    <xsl:text>G-ring latitude: {.}</xsl:text>
-                </xsl:if>
-                <xsl:if test="@code = 't'">
-                    <xsl:text>G-ring longtitude: {.}</xsl:text>
-                </xsl:if>
-                <xsl:if test="position() != last()">
-                    <xsl:text>; </xsl:text>
-                </xsl:if>
-            </xsl:for-each>        
-        </rdaw:P10024>
-        <rdaw:P10321>
-            <xsl:text>Name of extraterrestrial body: {marc:subfield[@code = 'z']}</xsl:text>
-        </rdaw:P10321>
+                <rdaw:P10302><xsl:text>{marc:subfield[@code = 'm']}--{marc:subfield[@code = 'n']}</xsl:text></rdaw:P10302>
+            </xsl:if>  
+        <xsl:if test="marc:subfield[@code = 'p']">
+        <rdaw:P10214><xsl:text>{marc:subfield[@code = 'p']}</xsl:text></rdaw:P10214></xsl:if>
+        <xsl:if test="marc:subfield[@code = 's'] or marc:subfield[@code = 't']">
+            <rdaw:P10024>
+                <xsl:for-each select="marc:subfield[@code = 's'] | marc:subfield[@code = 't']">
+                    <xsl:if test="@code = 's'">
+                        <xsl:text>G-ring latitude: {.}</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="@code = 't'">
+                        <xsl:text>G-ring longtitude: {.}</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>; </xsl:text>
+                    </xsl:if>                  
+                </xsl:for-each>        
+            </rdaw:P10024>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'z']">
+            <rdaw:P10321><xsl:text>Name of extraterrestrial body: {marc:subfield[@code = 'z']}</xsl:text></rdaw:P10321>
+        </xsl:if>
     </xsl:template>
 
 
