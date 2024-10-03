@@ -31,14 +31,14 @@
         </xsl:call-template>
     </xsl:template>
     
-    <xsl:template name="F006-c5-BK">
+    <xsl:template name="F006-c5-SOME">
         <xsl:param name="char5"/>
         <xsl:call-template name="F008-c22-SOME">
             <xsl:with-param name="char22" select="$char5"/>
         </xsl:call-template>
     </xsl:template>
     
-    <xsl:template name="F006-c6-f-BK">
+    <xsl:template name="F006-c6-f-SOME">
         <xsl:param name="char6"/>
         <xsl:call-template name="F008-c23_29-f-SOME">
             <xsl:with-param name="char23_29" select="$char6"/>
@@ -58,6 +58,16 @@
         </xsl:call-template>
     </xsl:template>
     
+    <xsl:template name="F006-c6-CF">
+        <xsl:param name="char6"/>
+        <xsl:call-template name="F008-c23-CF">
+            <xsl:with-param name="char23" select="$char6"/>
+        </xsl:call-template>
+        <xsl:call-template name="F008-c23-CF-origMan">
+            <xsl:with-param name="char23" select="$char6"/>
+        </xsl:call-template>
+    </xsl:template>
+    
     <xsl:template name="F006-c7-10-BK">
         <xsl:param name="char7-10"/>
         <xsl:call-template name="F008-c24-27-BK">
@@ -72,12 +82,19 @@
         </xsl:call-template>
     </xsl:template>
     
-    <xsl:template name="F006-c11-BK">
+    <xsl:template name="F006-c9-CF">
+        <xsl:param name="char9"/>
+        <xsl:call-template name="F008-c26-CF">
+            <xsl:with-param name="char26" select="$char9"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <xsl:template name="F006-c11-SOME">
         <xsl:param name="char11"/>
         <xsl:call-template name="F008-c28-SOME">
             <xsl:with-param name="char28" select="$char11"/>
         </xsl:call-template>
-    </xsl:template>    
+    </xsl:template>  
     
     <xsl:template name="F006-c12-BK">
         <xsl:param name="char12"/>
@@ -484,6 +501,13 @@
         <xsl:param name="char23_29"/>
         <xsl:if test="$char23_29 = 'f'">
             <rdae:P20061 rdf:resource="{'http://rdaregistry.info/termList/TacNotation/1001'}"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F008-c23-xz-SOME-origMan">
+        <xsl:param name="char23"/>
+        <xsl:if test="$char23 = 'x' or $char23 = 'z'">
+            <rdam:P30335 rdf:resource="{'https://doi.org/10.6069/uwlswd.dh5m-5y16#zx'}"/>
         </xsl:if>
     </xsl:template>
     
