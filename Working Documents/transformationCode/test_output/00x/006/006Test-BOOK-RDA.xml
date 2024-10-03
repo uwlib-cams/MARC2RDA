@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99162193602101452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>99162193602101452wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <fake:marcfield>F006 aab|| ob    001 0d</fake:marcfield>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F008 191205t20192017xxkab|| ob||| 001 0deng|d</fake:marcfield>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F050 #4 $a PR2909</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcc/pr2909"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age/d22e110"/><!--rdawo:P10436 = has author person-->
+      <fake:marcfield>F245 10 $a Reading Shakespeare's mind / $c Steve Sohmer.</fake:marcfield>
+      <rdawd:P10088>Reading Shakespeare's mind</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <fake:marcfield>F600 11 $a Shakespeare, William, $d 1564-1616. $2 fast $0 (OCoLC)fst00029048</fake:marcfield>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age/cyac/shakespearewilliam15641616"/><!--rdawo:P10261 = has subject person-->
+      <fake:marcfield>F600 11 $a Shakespeare, William, $d 1564-1616 $x Friends and associates.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/cyac/shakespearewilliam15641616friendsandassociates"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/cyac/friendsandassociates"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age/cyac/shakespearewilliam15641616"/><!--rdawo:P10261 = has subject person-->
+      <fake:marcfield>F600 11 $a Shakespeare, William, $d 1564-1616 $x Psychology.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/cyac/shakespearewilliam15641616psychology"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/cyac/psychology"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age/cyac/shakespearewilliam15641616"/><!--rdawo:P10261 = has subject person-->
+      <fake:marcfield>F600 11 $a Shakespeare, William, $d 1564-1616 $x Criticism and interpretation.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/cyac/shakespearewilliam15641616criticismandinterpretation"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/cyac/criticismandinterpretation"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age/cyac/shakespearewilliam15641616"/><!--rdawo:P10261 = has subject person-->
+      <fake:marcfield>F655 #4 $a Criticism, interpretation, etc. $0 (OCoLC)fst01411635</fake:marcfield>
+      <rdawd:P10004>Criticism, interpretation, etc</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <fake:marcfield>F655 #4 $a Electronic books. </fake:marcfield>
+      <rdawd:P10004>Electronic books.</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <fake:marcfield>F650 #7 $a Literature $2 mup</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/mup/literature"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F650 #7 $a Literature &amp; Literary Studies $2 bicssc</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/bicssc/literatureliterarystudies"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F650 #7 $a LITERARY CRITICISM / Shakespeare $2 bisach</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/bisach/literarycriticismshakespeare"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F650 #7 $a English $2 thema</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/thema/english"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F653 ## $a As You Like It.</fake:marcfield>
+      <rdawd:P10256>As You Like It</rdawd:P10256><!--rdawd:P10256 = has subject-->
+      <fake:marcfield>F653 ## $a M.O.A.I.</fake:marcfield>
+      <rdawd:P10256>M.O.A.I</rdawd:P10256><!--rdawd:P10256 = has subject-->
+      <fake:marcfield>F653 ## $a Shakespeare.</fake:marcfield>
+      <rdawd:P10256>Shakespeare</rdawd:P10256><!--rdawd:P10256 = has subject-->
+      <fake:marcfield>F653 ## $a The Merchant of Venice.</fake:marcfield>
+      <rdawd:P10256>The Merchant of Venice</rdawd:P10256><!--rdawd:P10256 = has subject-->
+      <fake:marcfield>F653 ## $a Twelfth Night.</fake:marcfield>
+      <rdawd:P10256>Twelfth Night</rdawd:P10256><!--rdawd:P10256 = has subject-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99162193602101452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/99162193602101452wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>99162193602101452exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+      <fake:marcfield>F006 aab|| ob    001 0d</fake:marcfield>
+      <fake:marcfield>F008 191205t20192017xxkab|| ob||| 001 0deng|d</fake:marcfield>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <fake:marcfield>F520 ## $a This book shows that William Shakespeare was a more personal writer than any of his innumerable commentators have realised. It asserts that numerous characters and events were drawn from the author's life, and puts faces to the names of Jaques, Touchstone, Feste, Jessica, the 'Dark Lady' and others. Steven Sohmer explores aspects of Shakespeare's plays and sonnets that have been hitherto overlooked or misinterpreted in an effort to better understand the man and his work. If you've ever wondered who Pigrogromitus was, or why Jaques spies on Touchstone and Audrey - or what the famous riddle M.O.A.I. stands for - this is the book for you.</fake:marcfield>
+      <rdaed:P20069>This book shows that William Shakespeare was a more personal writer than any of his innumerable commentators have realised. It asserts that numerous characters and events were drawn from the author's life, and puts faces to the names of Jaques, Touchstone, Feste, Jessica, the 'Dark Lady' and others. Steven Sohmer explores aspects of Shakespeare's plays and sonnets that have been hitherto overlooked or misinterpreted in an effort to better understand the man and his work. If you've ever wondered who Pigrogromitus was, or why Jaques spies on Touchstone and Audrey - or what the famous riddle M.O.A.I. stands for - this is the book for you.</rdaed:P20069><!--rdaed:P20069 = has summarization of content-->
+      <fake:marcfield>F520 8# $a An accessible, enojyable, occasionally speculative study based on a vast amount of research into some of Shakespeare's more uninterpretable moments.</fake:marcfield>
+      <rdaed:P20069>An accessible, enojyable, occasionally speculative study based on a vast amount of research into some of Shakespeare's more uninterpretable moments.</rdaed:P20069><!--rdaed:P20069 = has summarization of content-->
+      <fake:marcfield>F546 ## $a In English.</fake:marcfield>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99162193602101452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99162193602101452exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F006 aab|| ob    001 0d</fake:marcfield>
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.25z4-e963#a"/><!--rdam:P30335 = has category of manifestation-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1008"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdam:P30001 = has carrier type-->
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.m0xp-h565#1"/><!--rdam:P30455 = has supplementary content-->
+      <rdamd:P30137>Contains biographical information.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F008 191205t20192017xxkab|| ob||| 001 0deng|d</fake:marcfield>
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/xxk"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1008"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdam:P30001 = has carrier type-->
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.m0xp-h565#1"/><!--rdam:P30455 = has supplementary content-->
+      <rdamd:P30137>Contains biographical information.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F020 ## $a 1-5261-3710-0</fake:marcfield>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d22e18"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <fake:marcfield>F020 ## $a 1-5261-2426-2</fake:marcfield>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d22e21"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <fake:marcfield>F024 7# $a 10.7765/9781526137104 $2 doi</fake:marcfield>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d22e24"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <fake:marcfield>F245 10 $a Reading Shakespeare's mind / $c Steve Sohmer.</fake:marcfield>
+      <rdamd:P30156>Reading Shakespeare's mind</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30105>Steve Sohmer.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <fake:marcfield>F264 #1 $a Manchester, UK : $b Manchester University Press, $c 2019.</fake:marcfield>
+      <rdamd:P30111>Manchester, UK : Manchester University Press, 2019.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Manchester, UK</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Manchester University Press</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>2019</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <fake:marcfield>F264 #4 $c ©2017</fake:marcfield>
+      <rdamd:P30137>Copyright notice date: ©2017.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30007>2017</rdamd:P30007><!--rdamd:P30007 = has copyright date-->
+      <fake:marcfield>F337 ## $a computer $b c $2 rdamedia</fake:marcfield>
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/c"/><!--rdam:P30002 = has media type-->
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/c"/><!--rdam:P30002 = has media type-->
+      <fake:marcfield>F338 ## $a online resource $b cr $2 rdacarrier</fake:marcfield>
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/><!--rdam:P30001 = has carrier type-->
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/><!--rdam:P30001 = has carrier type-->
+      <fake:marcfield>F347 ## $a data file $2 rda</fake:marcfield>
+      <rdam:P30018 rdf:resource="http://marc2rda.edu/fake/concept/rda/datafile"/><!--rdam:P30018 = has file type-->
+      <fake:marcfield>F500 ## $a Previously issued in print: 2017.</fake:marcfield>
+      <rdamd:P30137>Previously issued in print: 2017.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F504 ## $a Includes bibliographical references and index.</fake:marcfield>
+      <rdamd:P30455>Includes bibliographical references and index.</rdamd:P30455><!--rdamd:P30455 = has supplementary content-->
+      <fake:marcfield>F521 ## $a Students and scholars of Shakespeare and early modern literature.</fake:marcfield>
+      <rdamd:P30137>Audience: Students and scholars of Shakespeare and early modern literature.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F588 ## $a Description based on print record.</fake:marcfield>
+      <rdamd:P30137>Description based on print record.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F546 ## $a In English.</fake:marcfield>
+      <rdamd:P30137>In English.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F505 0# $a Preface: Impersonal Shakespeare -- part I: Shakespeare, lovers and friends -- 1. Joining the mice-eyed decipherers -- 2. Marlowe's ghost in  As You Like It  -- 3. The dark lady of  The Merchant of Venice  -- part II: Queen Elizabeth's  Twelfth Night  -- 4.  Twelfth Night  on Twelfth Night -- 5. Shakespeare's  Twelfth Night  wordplay -- 6. Shakespeare and Paul in Illyria -- 7. Nashe and Harvey in Illyria -- 8. M.O.A.I. deciphered at last -- 9. Beginning at the beginning -- 10. Tributes private and public -- Epilogue: Personal Shakespeare -- Index.</fake:marcfield>
+      <rdamd:P30137>Contents: Preface: Impersonal Shakespeare -- part I: Shakespeare, lovers and friends -- 1. Joining the mice-eyed decipherers -- 2. Marlowe's ghost in  As You Like It  -- 3. The dark lady of  The Merchant of Venice  -- part II: Queen Elizabeth's  Twelfth Night  -- 4.  Twelfth Night  on Twelfth Night -- 5. Shakespeare's  Twelfth Night  wordplay -- 6. Shakespeare and Paul in Illyria -- 7. Nashe and Harvey in Illyria -- 8. M.O.A.I. deciphered at last -- 9. Beginning at the beginning -- 10. Tributes private and public -- Epilogue: Personal Shakespeare -- Index.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F506 ## $f Unrestricted online access</fake:marcfield>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d22e18">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>1-5261-3710-0</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d22e21">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>1-5261-2426-2</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d22e24">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>10.7765/9781526137104</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/doi"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/cyac/shakespearewilliam15641616">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Shakespeare, William, 1564-1616</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/cyac"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/cyac/shakespearewilliam15641616">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Shakespeare, William, 1564-1616</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/cyac"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/cyac/shakespearewilliam15641616">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Shakespeare, William, 1564-1616</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/cyac"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/cyac/shakespearewilliam15641616">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Shakespeare, William, 1564-1616</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/cyac"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e110">
+      <fake:marcfield>F100 1# $a Sohmer, Steve $q (Stephen T.), $e author.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Sohmer, Steve (Stephen T.)</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50115>Stephen T.</rdaad:P50115><!--rdaad:P50115 = has fuller form of name-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/cyac/shakespearewilliam15641616">
+      <fake:marcfield>F600 11 $a Shakespeare, William, $d 1564-1616. $2 fast $0 (OCoLC)fst00029048</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/cyac/shakespearewilliam15641616"/><!--rdaao:P50411 = has authorized access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/cyac/shakespearewilliam15641616">
+      <fake:marcfield>F600 11 $a Shakespeare, William, $d 1564-1616 $x Friends and associates.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/cyac/shakespearewilliam15641616"/><!--rdaao:P50411 = has authorized access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/cyac/shakespearewilliam15641616">
+      <fake:marcfield>F600 11 $a Shakespeare, William, $d 1564-1616 $x Psychology.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/cyac/shakespearewilliam15641616"/><!--rdaao:P50411 = has authorized access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/cyac/shakespearewilliam15641616">
+      <fake:marcfield>F600 11 $a Shakespeare, William, $d 1564-1616 $x Criticism and interpretation.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/cyac/shakespearewilliam15641616"/><!--rdaao:P50411 = has authorized access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/pr2909">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">PR2909</skos:notation>
+      <skos:altLabel>PR2909</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rda/datafile">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>data file</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rda"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/cyac/shakespearewilliam15641616friendsandassociates">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Shakespeare, William, -- 1564-1616 -- Friends and associates</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/cyac"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/cyac/friendsandassociates">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Friends and associates</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/cyac"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/cyac/shakespearewilliam15641616psychology">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Shakespeare, William, -- 1564-1616 -- Psychology</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/cyac"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/cyac/psychology">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Psychology</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/cyac"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/cyac/shakespearewilliam15641616criticismandinterpretation">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Shakespeare, William, -- 1564-1616 -- Criticism and interpretation</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/cyac"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/cyac/criticismandinterpretation">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Criticism and interpretation</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/cyac"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/mup/literature">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Literature</skos:prefLabel>
+      <!--IRI could not be found for mup-->
+      <skos:inScheme>mup</skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/bicssc/literatureliterarystudies">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Literature &amp; Literary Studies</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/bicssc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/bisach/literarycriticismshakespeare">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>LITERARY CRITICISM / Shakespeare</skos:prefLabel>
+      <!--IRI could not be found for bisach-->
+      <skos:inScheme>bisach</skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/thema/english">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>English</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/thema"/>
+   </rdf:Description>
+</rdf:RDF>

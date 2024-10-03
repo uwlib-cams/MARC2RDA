@@ -33,6 +33,85 @@
     <xsl:import href="m2r-functions.xsl"/>
     <xsl:import href="m2r-iris.xsl"/>
     
+    <xsl:template match="marc:controlfield[@tag = '006']" 
+        mode="wor" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
+        
+        <xsl:variable name="char0" select="substring(., 1, 1)"/>
+        
+        <xsl:choose>
+            <!-- books -->
+            <xsl:when test="$char0 = 'a' or $char0 = 't'">
+                <xsl:call-template name="F006-c7-10-BK">
+                    <xsl:with-param name="char7-10" select="substring(., 8, 4)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c12-BK">
+                    <xsl:with-param name="char12" select="substring(., 13, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c13-BK">
+                    <xsl:with-param name="char13" select="substring(., 14, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c16-BK">
+                    <xsl:with-param name="char16" select="substring(., 17, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c17-abc-BK">
+                    <xsl:with-param name="char17" select="substring(., 18, 1)"/>
+                </xsl:call-template>
+            </xsl:when>
+        </xsl:choose>
+        
+    </xsl:template>
+    <xsl:template match="marc:controlfield[@tag = '006']" 
+        mode="exp" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
+        <xsl:variable name="char0" select="substring(., 1, 1)"/>
+        
+        <xsl:choose>
+            <!-- books -->
+            <xsl:when test="$char0 = 'a' or $char0 = 't'">
+                <xsl:call-template name="F006-c5-BK">
+                    <xsl:with-param name="char5" select="substring(., 6, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c6-f-BK">
+                    <xsl:with-param name="char6" select="substring(., 7, 1)"/>
+                </xsl:call-template>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="marc:controlfield[@tag = '006']" 
+        mode="man" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
+        <xsl:variable name="char0" select="substring(., 1, 1)"/>
+        <xsl:if test="$char0 != ' '">
+            <rdam:P30335 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.25z4-e963#', $char0)}"/>
+        </xsl:if>
+        
+        <xsl:choose>
+            <!-- books -->
+            <xsl:when test="$char0 = 'a' or $char0 = 't'">
+                <xsl:call-template name="F006-c1-4-BK">
+                    <xsl:with-param name="char1-4" select="substring(., 2, 4)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c6-BK">
+                    <xsl:with-param name="char6" select="substring(., 7, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c7-10-2bkq-BK">
+                    <xsl:with-param name="char7-10" select="substring(., 8, 4)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c11-BK">
+                    <xsl:with-param name="char11" select="substring(., 12, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c14-BK">
+                    <xsl:with-param name="char14" select="substring(., 15, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c17-d-BK">
+                    <xsl:with-param name="char17" select="substring(., 18, 1)"/>
+                </xsl:call-template>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
+    
     <xsl:template match="marc:controlfield[@tag = '008']" 
         mode="wor" expand-text="yes">
         <xsl:call-template name="getmarc"/>

@@ -23,6 +23,105 @@
     xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
     xmlns:fake="http://fakePropertiesForDemo" exclude-result-prefixes="marc ex" version="3.0">
     
+    <!-- 006 -->
+    <xsl:template name="F006-c1-4-BK">
+        <xsl:param name="char1-4"/>
+        <xsl:call-template name="F008-c18-21-BK">
+            <xsl:with-param name="char18-21" select="$char1-4"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <xsl:template name="F006-c5-BK">
+        <xsl:param name="char5"/>
+        <xsl:call-template name="F008-c22-SOME">
+            <xsl:with-param name="char22" select="$char5"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <xsl:template name="F006-c6-f-BK">
+        <xsl:param name="char6"/>
+        <xsl:call-template name="F008-c23_29-f-SOME">
+            <xsl:with-param name="char23_29" select="$char6"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <xsl:template name="F006-c6-BK">
+        <xsl:param name="char6"/>
+        <xsl:call-template name="F008-c23_29-abcor-SOME">
+            <xsl:with-param name="char23_29" select="$char6"/>
+        </xsl:call-template>
+        <xsl:call-template name="F008-c23_29-dqs-SOME-origMan">
+            <xsl:with-param name="char23_29" select="$char6"/>
+        </xsl:call-template>
+        <xsl:call-template name="F008-c23_29-ghi-SOME-origMan">
+            <xsl:with-param name="char23_29" select="$char6"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <xsl:template name="F006-c7-10-BK">
+        <xsl:param name="char7-10"/>
+        <xsl:call-template name="F008-c24-27-BK">
+            <xsl:with-param name="char24-27" select="$char7-10"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <xsl:template name="F006-c7-10-2bkq-BK">
+        <xsl:param name="char7-10"/>
+        <xsl:call-template name="F008-c24-27-2bkq-BK">
+            <xsl:with-param name="char24-27" select="$char7-10"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <xsl:template name="F006-c11-BK">
+        <xsl:param name="char11"/>
+        <xsl:call-template name="F008-c28-SOME">
+            <xsl:with-param name="char28" select="$char11"/>
+        </xsl:call-template>
+    </xsl:template>    
+    
+    <xsl:template name="F006-c12-BK">
+        <xsl:param name="char12"/>
+        <xsl:call-template name="F008-c29-BK">
+            <xsl:with-param name="char29" select="$char12"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <xsl:template name="F006-c13-BK">
+        <xsl:param name="char13"/>
+        <xsl:call-template name="F008-c30-BK">
+            <xsl:with-param name="char30" select="$char13"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <xsl:template name="F006-c14-BK">
+        <xsl:param name="char14"/>
+        <xsl:call-template name="F008-c31-BK">
+            <xsl:with-param name="char31" select="$char14"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <xsl:template name="F006-c16-BK">
+        <xsl:param name="char16"/>
+        <xsl:call-template name="F008-c33-BK">
+            <xsl:with-param name="char33" select="$char16"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <xsl:template name="F006-c17-abc-BK">
+        <xsl:param name="char17"/>
+        <xsl:call-template name="F008-c34-abc-BK">
+            <xsl:with-param name="char34" select="$char17"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <xsl:template name="F006-c17-d-BK">
+        <xsl:param name="char17"/>
+        <xsl:call-template name="F008-c34-d-BK">
+            <xsl:with-param name="char34" select="$char17"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <!-- 008 -->
     <xsl:template name="F008-c6">
         <xsl:param name="char6"/>
         <xsl:if test="$char6 = 'c'">
