@@ -42,7 +42,6 @@
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99151526560001452exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F008 050617s2005    nyu    go  u        eng d</fake:marcfield>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/nyu"/><!--rdamo:P30279 = has place of manifestation-->
-      <rdam:P30305 rdf:resource="https://doi.org/10.6069/uwlswd.aec4-nv40#g"/><!--rdam:P30305 = has intended audience of manifestation-->
       <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.3d5s-zx23#o"/><!--rdam:P30001 = has carrier type-->
       <fake:marcfield>F245 04 $a The Oxford Shakespeare / $c edited by W.J. Craig ; Bartleby.com.</fake:marcfield>
       <rdamd:P30156>The Oxford Shakespeare</rdamd:P30156><!--rdamd:P30156 = has title proper-->
@@ -64,27 +63,27 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/lcsh/earlymodernandelizabethan15001600">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Early modern and Elizabethan, 1500-1600.</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80068>Early modern and Elizabethan, 1500-1600</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/lcsh/earlymodern15001700">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Early modern, 1500-1700.</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80068>Early modern, 1500-1700</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/rvm/16esiècle">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>16e siècle.</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80068>16e siècle</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/lcsh/shakespearewilliam15641616">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Shakespeare, William, 1564-1616.</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80068>Shakespeare, William, 1564-1616</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/d22e139">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Shakespeare, William, 1564-1616.</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80068>Shakespeare, William, 1564-1616</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/fast/15001700">
@@ -105,12 +104,12 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e155">
       <fake:marcfield>F710 2# $a Bartleby.com, Inc.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375>Bartleby.com, Inc.</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50375>Bartleby.com, Inc</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJgCR9jgvjDr9wCdqhxxDq">
       <fake:marcfield>F700 1# $a Craig, W. J. $q (William James), $d 1843-1906. $1 https://id.oclc.org/worldcat/entity/E39PBJgCR9jgvjDr9wCdqhxxDq</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Craig, W. J. (William James), 1843-1906.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50377>Craig, W. J. (William James), 1843-1906</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/pr2755c8">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -120,32 +119,32 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/englishdramaearlymodernandelizabethan15001600">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>English drama -- Early modern and Elizabethan, 1500-1600.</skos:prefLabel>
+      <skos:prefLabel>English drama -- Early modern and Elizabethan, 1500-1600</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/earlymodernandelizabethan15001600">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Early modern and Elizabethan, 1500-1600.</skos:prefLabel>
+      <skos:prefLabel>Early modern and Elizabethan, 1500-1600</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/englishpoetryearlymodern15001700">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>English poetry -- Early modern, 1500-1700.</skos:prefLabel>
+      <skos:prefLabel>English poetry -- Early modern, 1500-1700</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/earlymodern15001700">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Early modern, 1500-1700.</skos:prefLabel>
+      <skos:prefLabel>Early modern, 1500-1700</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/théâtreanglais16esiècle">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Théâtre anglais -- 16e siècle.</skos:prefLabel>
+      <skos:prefLabel>Théâtre anglais -- 16e siècle</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/16esiècle">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>16e siècle.</skos:prefLabel>
+      <skos:prefLabel>16e siècle</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/15001700">
