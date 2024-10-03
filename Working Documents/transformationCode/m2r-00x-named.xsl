@@ -952,7 +952,7 @@
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template name="F008-c33-abcdf-VM">
+    <xsl:template name="F008-c33-VM-origMan">
         <xsl:param name="char33"/>
         <xsl:choose>
             <xsl:when test="$char33 = 'a'">
@@ -971,12 +971,6 @@
                 <rdam:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1036'}"/>
                 <rdam:P30335 rdf:resource="{'https://doi.org/10.6069/uwlswd.qgc0-9r48#f'}"/>
             </xsl:when>
-        </xsl:choose>
-    </xsl:template>
-    
-    <xsl:template name="F008-c33-VM-origMan">
-        <xsl:param name="char33"/>
-        <xsl:choose>
             <xsl:when test="$char33 = 'm'">
                 <rdam:P30002 rdf:resource="{'http://rdaregistry.info/termList/RDAMediaType/1005'}"/>
             </xsl:when>

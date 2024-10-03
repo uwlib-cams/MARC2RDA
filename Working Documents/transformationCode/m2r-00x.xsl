@@ -464,9 +464,6 @@
                     <xsl:call-template name="F008-c23_29-abcor-SOME">
                         <xsl:with-param name="char23_29" select="substring(., 30, 1)"/>
                     </xsl:call-template>
-                    <xsl:call-template name="F008-c33-abcdf-VM">
-                        <xsl:with-param name="char33" select="substring(., 34, 1)"/>
-                    </xsl:call-template>
                 </xsl:when>
             </xsl:choose>
         </xsl:if>

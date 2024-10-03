@@ -1,231 +1,235 @@
 <?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99161881161101452wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>99161881161101452wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work--><!--rdawd:P10002 = has identifier for work--><!--rdawd:P10002 = has identifier for work-->
-      <fake:marcfield>F008 170327t20152014cau083        o   dleng d</fake:marcfield>
-      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#d"/><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work-->
-      <rdaw:P10222 rdf:resource="https://doi.org/10.6069/uwlswd.eje7-jq11#l"/><!--rdaw:P10222 = has nature of content--><!--rdaw:P10222 = has nature of content--><!--rdaw:P10222 = has nature of content-->
+      <rdawd:P10002>99161881161101452wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <fake:marcfield>F006 m     o  c        </fake:marcfield>
+      <fake:marcfield>F008 170327t20152014cau083        o   vleng d</fake:marcfield>
+      <rdaw:P10222 rdf:resource="https://doi.org/10.6069/uwlswd.eje7-jq11#l"/><!--rdaw:P10222 = has nature of content-->
       <fake:marcfield>F043 ## $a n-us-nj $a n-us-ny</fake:marcfield>
-      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us-nj"/><!--rdawo:P10321 = has subject place--><!--rdawo:P10321 = has subject place--><!--rdawo:P10321 = has subject place-->
-      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us-ny"/><!--rdawo:P10321 = has subject place--><!--rdawo:P10321 = has subject place--><!--rdawo:P10321 = has subject place-->
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us-nj"/><!--rdawo:P10321 = has subject place-->
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us-ny"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F050 #4 $a E184.R3 $b A4 2015</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcc/e184r3"/><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcc/e184r3"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F245 00 $a American native / $c Phydo Films ; directed by Steven Oritt ; produced by Corey Bobker, Matt Ogens.</fake:marcfield>
-      <rdawd:P10088>American native</rdawd:P10088><!--rdawd:P10088 = has title of work--><!--rdawd:P10088 = has title of work--><!--rdawd:P10088 = has title of work-->
+      <rdawd:P10088>American native</rdawd:P10088><!--rdawd:P10088 = has title of work-->
       <fake:marcfield>F257 ## $a United States $2 naf</fake:marcfield>
-      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/place/naf/unitedstates"/><!--rdawo:P10316 = has related place of work--><!--rdawo:P10316 = has related place of work--><!--rdawo:P10316 = has related place of work-->
+      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/place/naf/unitedstates"/><!--rdawo:P10316 = has related place of work-->
       <fake:marcfield>F650 #0 $a Ramapo Mountain people.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/ramapomountainpeople"/><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/ramapomountainpeople"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #0 $a Indians of North America $z Ramapo River Valley (N.Y. and N.J.)</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/indiansofnorthamericaramaporivervalleynyandnj"/><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject-->
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/ramaporivervalleynyandnj"/><!--rdawo:P10321 = has subject place--><!--rdawo:P10321 = has subject place--><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/indiansofnorthamericaramaporivervalleynyandnj"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/ramaporivervalleynyandnj"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F650 #0 $a Delaware Indians.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/delawareindians"/><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/delawareindians"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #0 $a Racially mixed people $z New Jersey.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/raciallymixedpeoplenewjersey"/><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject-->
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/newjersey"/><!--rdawo:P10321 = has subject place--><!--rdawo:P10321 = has subject place--><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/raciallymixedpeoplenewjersey"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/newjersey"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F650 #0 $a Racially mixed people $z New York (State)</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/raciallymixedpeoplenewyorkstate"/><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject-->
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/newyorkstate"/><!--rdawo:P10321 = has subject place--><!--rdawo:P10321 = has subject place--><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/raciallymixedpeoplenewyorkstate"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/newyorkstate"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F650 #6 $a Jackson Whites.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/jacksonwhites"/><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/jacksonwhites"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #6 $a Delaware.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/delaware"/><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/delaware"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #7 $a Delaware Indians. $2 fast $0 (OCoLC)fst00889892</fake:marcfield>
-      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00889892"/><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00889892"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #7 $a Indians of North America. $2 fast $0 (OCoLC)fst00969633</fake:marcfield>
-      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00969633"/><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00969633"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #7 $a Racially mixed people. $2 fast $0 (OCoLC)fst01086595</fake:marcfield>
-      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01086595"/><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01086595"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #7 $a Ramapo Mountain people. $2 fast $0 (OCoLC)fst01089680</fake:marcfield>
-      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01089680"/><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01089680"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F651 #7 $a New Jersey. $2 fast $0 (OCoLC)fst01208379 $1 https://id.oclc.org/worldcat/entity/E39PBJx4kQMRb7rwyH74JVdbBP</fake:marcfield>
-      <rdawo:P10321 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJx4kQMRb7rwyH74JVdbBP"/><!--rdawo:P10321 = has subject place--><!--rdawo:P10321 = has subject place--><!--rdawo:P10321 = has subject place-->
+      <rdawo:P10321 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJx4kQMRb7rwyH74JVdbBP"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F651 #7 $a New York (State) $2 fast $0 (OCoLC)fst01210280 $1 https://id.oclc.org/worldcat/entity/E39QbtfRjXPrf4BDHgVmQ8kx9c</fake:marcfield>
-      <rdawo:P10321 rdf:resource="https://id.oclc.org/worldcat/entity/E39QbtfRjXPrf4BDHgVmQ8kx9c"/><!--rdawo:P10321 = has subject place--><!--rdawo:P10321 = has subject place--><!--rdawo:P10321 = has subject place-->
+      <rdawo:P10321 rdf:resource="https://id.oclc.org/worldcat/entity/E39QbtfRjXPrf4BDHgVmQ8kx9c"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F651 #7 $a United States $z Ramapo River Valley. $2 fast $0 (OCoLC)fst01311344</fake:marcfield>
-      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01311344"/><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject--><!--rdaw:P10256 = has subject-->
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/fast/unitedstates"/><!--rdawo:P10321 = has subject place--><!--rdawo:P10321 = has subject place--><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01311344"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/fast/unitedstates"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F655 #7 $a Documentary films. $2 fast $0 (OCoLC)fst01710390</fake:marcfield>
-      <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01710390"/><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01710390"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F655 #7 $a Feature films. $2 fast $0 (OCoLC)fst01710384</fake:marcfield>
-      <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01710384"/><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01710384"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F655 #7 $a Nonfiction films. $2 fast $0 (OCoLC)fst01710269</fake:marcfield>
-      <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01710269"/><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01710269"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F655 #7 $a Video recordings for the hearing impaired. $2 fast $0 (OCoLC)fst01710450</fake:marcfield>
-      <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01710450"/><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01710450"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F655 #7 $a Documentary films. $2 lcgft</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcgft/documentaryfilms"/><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcgft/documentaryfilms"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F655 #7 $a Nonfiction films. $2 lcgft</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcgft/nonfictionfilms"/><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcgft/nonfictionfilms"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F655 #7 $a Feature films. $2 lcgft</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcgft/featurefilms"/><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcgft/featurefilms"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F655 #7 $a Video recordings for the hearing impaired. $2 lcgft</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcgft/videorecordingsforthehearingimpaired"/><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcgft/videorecordingsforthehearingimpaired"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F655 #7 $a Feature films $z United States. $2 local</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/local/featurefilmsunitedstates"/><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/local/featurefilmsunitedstates"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F655 #7 $a Documentaires. $2 rvmgf</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvmgf/documentaires"/><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvmgf/documentaires"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F655 #7 $a Films autres que de fiction. $2 rvmgf</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvmgf/filmsautresquedefiction"/><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvmgf/filmsautresquedefiction"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F655 #7 $a Vidéos pour personnes handicapées auditives. $2 rvmgf</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvmgf/vidéospourpersonneshandicapéesauditives"/><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work--><!--rdaw:P10004 = has category of work-->
-      <rdawo:P10008 rdf:resource="http://marc2rda.edu/fake/age/d22e328"/><!--rdawo:P10008 = has production company--><!--rdawo:P10008 = has production company--><!--rdawo:P10008 = has production company-->
-      <rdawo:P10008 rdf:resource="http://marc2rda.edu/fake/age/d22e328"/><!--rdawo:P10008 = has production company--><!--rdawo:P10008 = has production company--><!--rdawo:P10008 = has production company-->
-      <rdawo:P10008 rdf:resource="http://marc2rda.edu/fake/age/d22e333"/><!--rdawo:P10008 = has production company--><!--rdawo:P10008 = has production company--><!--rdawo:P10008 = has production company-->
-      <rdawo:P10008 rdf:resource="http://marc2rda.edu/fake/age/d22e333"/><!--rdawo:P10008 = has production company--><!--rdawo:P10008 = has production company--><!--rdawo:P10008 = has production company-->
-      <rdawo:P10418 rdf:resource="http://marc2rda.edu/fake/age/d22e362"/><!--rdawo:P10418 = has film director person--><!--rdawo:P10418 = has film director person--><!--rdawo:P10418 = has film director person-->
-      <rdawo:P10422 rdf:resource="http://marc2rda.edu/fake/age/d22e367"/><!--rdawo:P10422 = has film producer person--><!--rdawo:P10422 = has film producer person--><!--rdawo:P10422 = has film producer person-->
-      <rdawo:P10422 rdf:resource="http://marc2rda.edu/fake/age/d22e372"/><!--rdawo:P10422 = has film producer person--><!--rdawo:P10422 = has film producer person--><!--rdawo:P10422 = has film producer person-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvmgf/vidéospourpersonneshandicapéesauditives"/><!--rdaw:P10004 = has category of work-->
+      <rdawo:P10008 rdf:resource="http://marc2rda.edu/fake/age/d22e328"/><!--rdawo:P10008 = has production company-->
+      <rdawo:P10008 rdf:resource="http://marc2rda.edu/fake/age/d22e328"/><!--rdawo:P10008 = has production company-->
+      <rdawo:P10008 rdf:resource="http://marc2rda.edu/fake/age/d22e333"/><!--rdawo:P10008 = has production company-->
+      <rdawo:P10008 rdf:resource="http://marc2rda.edu/fake/age/d22e333"/><!--rdawo:P10008 = has production company-->
+      <rdawo:P10418 rdf:resource="http://marc2rda.edu/fake/age/d22e362"/><!--rdawo:P10418 = has film director person-->
+      <rdawo:P10422 rdf:resource="http://marc2rda.edu/fake/age/d22e367"/><!--rdawo:P10422 = has film producer person-->
+      <rdawo:P10422 rdf:resource="http://marc2rda.edu/fake/age/d22e372"/><!--rdawo:P10422 = has film producer person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99161881161101452exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/99161881161101452wor"/><!--rdaeo:P20231 = has work expressed--><!--rdaeo:P20231 = has work expressed--><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20002>99161881161101452exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression--><!--rdaed:P20002 = has identifier for expression--><!--rdaed:P20002 = has identifier for expression-->
-      <fake:marcfield>F008 170327t20152014cau083        o   dleng d</fake:marcfield>
-      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression--><!--rdae:P20006 = has language of expression--><!--rdae:P20006 = has language of expression-->
-      <rdaed:P20219>Duration: 083 minutes.</rdaed:P20219><!--rdaed:P20219 = has duration--><!--rdaed:P20219 = has duration--><!--rdaed:P20219 = has duration-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/99161881161101452wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>99161881161101452exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+      <fake:marcfield>F006 m     o  c        </fake:marcfield>
+      <fake:marcfield>F008 170327t20152014cau083        o   vleng d</fake:marcfield>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20219>Duration: 083 minutes.</rdaed:P20219><!--rdaed:P20219 = has duration-->
       <fake:marcfield>F306 ## $a 012300</fake:marcfield>
-      <rdaed:P20219 rdf:datatype="xsd:time">01:23:00</rdaed:P20219><!--rdaed:P20219 = has duration--><!--rdaed:P20219 = has duration--><!--rdaed:P20219 = has duration-->
+      <rdaed:P20219 rdf:datatype="xsd:time">01:23:00</rdaed:P20219><!--rdaed:P20219 = has duration-->
       <fake:marcfield>F520 ## $a Thirty miles from New York City, tucked away in the Ramapo Mountains of New Jersey, lives a group of indigenous people shrouded in mystery and discrimination, fighting for acceptance as Native Americans...The Ramapough Lenape Indians. American Native exposes this group's fight for respect as Native Americans, examining their efforts to gain recognition from the Bureau of Indian Affairs and the private interests that may have colluded behind the scenes to prevent them from doing so. Through expert interviews and unbridled access to the community, the film provides an in-depth look at the group's complex past, volatile present and endangered future.</fake:marcfield>
-      <rdaed:P20069>Thirty miles from New York City, tucked away in the Ramapo Mountains of New Jersey, lives a group of indigenous people shrouded in mystery and discrimination, fighting for acceptance as Native Americans...The Ramapough Lenape Indians. American Native exposes this group's fight for respect as Native Americans, examining their efforts to gain recognition from the Bureau of Indian Affairs and the private interests that may have colluded behind the scenes to prevent them from doing so. Through expert interviews and unbridled access to the community, the film provides an in-depth look at the group's complex past, volatile present and endangered future.</rdaed:P20069><!--rdaed:P20069 = has summarization of content--><!--rdaed:P20069 = has summarization of content--><!--rdaed:P20069 = has summarization of content-->
+      <rdaed:P20069>Thirty miles from New York City, tucked away in the Ramapo Mountains of New Jersey, lives a group of indigenous people shrouded in mystery and discrimination, fighting for acceptance as Native Americans...The Ramapough Lenape Indians. American Native exposes this group's fight for respect as Native Americans, examining their efforts to gain recognition from the Bureau of Indian Affairs and the private interests that may have colluded behind the scenes to prevent them from doing so. Through expert interviews and unbridled access to the community, the film provides an in-depth look at the group's complex past, volatile present and endangered future.</rdaed:P20069><!--rdaed:P20069 = has summarization of content-->
       <fake:marcfield>F546 ## $a In English; Closed-captioned.</fake:marcfield>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99161881161101452man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99161881161101452exp"/><!--rdamo:P30139 = has expression manifested--><!--rdamo:P30139 = has expression manifested--><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99161881161101452exp"/><!--rdamo:P30139 = has expression manifested-->
       <!--588-->
-      <rdamo:P30136 rdf:resource="http://marc2rda.edu/fake/99161881161101452origMan"/><!--rdamo:P30136 = is electronic reproduction of manifestation of--><!--rdamo:P30136 = is electronic reproduction of manifestation of--><!--rdamo:P30136 = is electronic reproduction of manifestation of-->
-      <fake:marcfield>F008 170327t20152014cau083        o   dleng d</fake:marcfield>
-      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdam:P30001 = has carrier type--><!--rdam:P30001 = has carrier type--><!--rdam:P30001 = has carrier type-->
-      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1059"/><!--rdam:P30001 = has carrier type--><!--rdam:P30001 = has carrier type--><!--rdam:P30001 = has carrier type-->
+      <rdamo:P30136 rdf:resource="http://marc2rda.edu/fake/99161881161101452origMan"/><!--rdamo:P30136 = is electronic reproduction of manifestation of-->
+      <fake:marcfield>F006 m     o  c        </fake:marcfield>
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.25z4-e963#m"/><!--rdam:P30335 = has category of manifestation-->
+      <fake:marcfield>F008 170327t20152014cau083        o   vleng d</fake:marcfield>
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdam:P30001 = has carrier type-->
       <fake:marcfield>F245 00 $a American native / $c Phydo Films ; directed by Steven Oritt ; produced by Corey Bobker, Matt Ogens.</fake:marcfield>
-      <rdamd:P30156>American native</rdamd:P30156><!--rdamd:P30156 = has title proper--><!--rdamd:P30156 = has title proper--><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30105>Phydo Films</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper--><!--rdamd:P30105 = has statement of responsibility relating to title proper--><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30105>directed by Steven Oritt</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper--><!--rdamd:P30105 = has statement of responsibility relating to title proper--><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30105>produced by Corey Bobker, Matt Ogens.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper--><!--rdamd:P30105 = has statement of responsibility relating to title proper--><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30156>American native</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30105>Phydo Films</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30105>directed by Steven Oritt</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30105>produced by Corey Bobker, Matt Ogens.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
       <fake:marcfield>F264 #1 $a Folsom, CA : $b Dark Hollow Films, $c [2015]</fake:marcfield>
       <fake:marcfield>F264 #4 $c ©2015</fake:marcfield>
       <fake:marcfield>F337 ## $a computer $b c $2 rdamedia</fake:marcfield>
-      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/c"/><!--rdam:P30002 = has media type--><!--rdam:P30002 = has media type--><!--rdam:P30002 = has media type-->
-      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/c"/><!--rdam:P30002 = has media type--><!--rdam:P30002 = has media type--><!--rdam:P30002 = has media type-->
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/c"/><!--rdam:P30002 = has media type-->
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/c"/><!--rdam:P30002 = has media type-->
       <fake:marcfield>F338 ## $a online resource $b cr $2 rdacarrier</fake:marcfield>
-      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/><!--rdam:P30001 = has carrier type--><!--rdam:P30001 = has carrier type--><!--rdam:P30001 = has carrier type-->
-      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/><!--rdam:P30001 = has carrier type--><!--rdam:P30001 = has carrier type--><!--rdam:P30001 = has carrier type-->
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/><!--rdam:P30001 = has carrier type-->
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/><!--rdam:P30001 = has carrier type-->
       <fake:marcfield>F533 ## $a Electronic reproduction. $b [Portland, OR] : $c MediaSpace video portal by Kaltura, $d [2015].</fake:marcfield>
-      <rdamd:P30335>Electronic reproduction</rdamd:P30335><!--rdamd:P30335 = has category of manifestation--><!--rdamd:P30335 = has category of manifestation--><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30279>Portland, OR</rdamd:P30279><!--rdamd:P30279 = has place of manifestation--><!--rdamd:P30279 = has place of manifestation--><!--rdamd:P30279 = has place of manifestation-->
-      <rdamd:P30297>MediaSpace video portal by Kaltura</rdamd:P30297><!--rdamd:P30297 = has name of agent of manifestation--><!--rdamd:P30297 = has name of agent of manifestation--><!--rdamd:P30297 = has name of agent of manifestation-->
-      <rdamd:P30278>2015</rdamd:P30278><!--rdamd:P30278 = has date of manifestation--><!--rdamd:P30278 = has date of manifestation--><!--rdamd:P30278 = has date of manifestation-->
+      <rdamd:P30335>Electronic reproduction</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30279>Portland, OR</rdamd:P30279><!--rdamd:P30279 = has place of manifestation-->
+      <rdamd:P30297>MediaSpace video portal by Kaltura</rdamd:P30297><!--rdamd:P30297 = has name of agent of manifestation-->
+      <rdamd:P30278>2015</rdamd:P30278><!--rdamd:P30278 = has date of manifestation-->
       <fake:marcfield>F538 ## $a System requirements: Firefox 4 and up; Safari 5.0 and up; Chrome version 21 and up; Internet Explorer 8 and up.</fake:marcfield>
-      <rdamd:P30162>System requirements: Firefox 4 and up; Safari 5.0 and up; Chrome version 21 and up; Internet Explorer 8 and up.</rdamd:P30162><!--rdamd:P30162 = has equipment or system requirement--><!--rdamd:P30162 = has equipment or system requirement--><!--rdamd:P30162 = has equipment or system requirement-->
+      <rdamd:P30162>System requirements: Firefox 4 and up; Safari 5.0 and up; Chrome version 21 and up; Internet Explorer 8 and up.</rdamd:P30162><!--rdamd:P30162 = has equipment or system requirement-->
       <fake:marcfield>F518 ## $a Filmed on location in New York, New Jersey and Oklahoma.</fake:marcfield>
-      <rdamd:P30137>Date/time and place of an event note: Filmed on location in New York, New Jersey and Oklahoma.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation--><!--rdamd:P30137 = has note on manifestation--><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Date/time and place of an event note: Filmed on location in New York, New Jersey and Oklahoma.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <fake:marcfield>F500 ## $a Also available in DVD format.</fake:marcfield>
-      <rdamd:P30137>Also available in DVD format.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation--><!--rdamd:P30137 = has note on manifestation--><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Also available in DVD format.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <fake:marcfield>F500 ## $a Originally produced in 2014; copyright held by Keepers of the Pass LLC.</fake:marcfield>
-      <rdamd:P30137>Originally produced in 2014; copyright held by Keepers of the Pass LLC.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation--><!--rdamd:P30137 = has note on manifestation--><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Originally produced in 2014; copyright held by Keepers of the Pass LLC.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <fake:marcfield>F588 ## $a Description based on print version record.</fake:marcfield>
-      <rdamd:P30137>Description based on print version record.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation--><!--rdamd:P30137 = has note on manifestation--><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Description based on print version record.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <fake:marcfield>F546 ## $a In English; Closed-captioned.</fake:marcfield>
-      <rdamd:P30137>In English; Closed-captioned.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation--><!--rdamd:P30137 = has note on manifestation--><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>In English; Closed-captioned.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <fake:marcfield>F506 ## $a Access restricted to subscribing institutions.</fake:marcfield>
-      <rdamd:P30145>Terms governing access: Access restricted to subscribing institutions.</rdamd:P30145><!--rdamd:P30145 = has restriction on access to manifestation--><!--rdamd:P30145 = has restriction on access to manifestation--><!--rdamd:P30145 = has restriction on access to manifestation-->
-      <rdamd:P30137>Credits: Director of photography, Steven Oritt ; editors, Zeke Piestrup, Will Barton ; original music, Pete Yorn &amp; Marc 'Doc' Dauer</rdamd:P30137><!--rdamd:P30137 = has note on manifestation--><!--rdamd:P30137 = has note on manifestation--><!--rdamd:P30137 = has note on manifestation-->
-      <rdamo:P30420 rdf:resource="http://marc2rda.edu/fake/age/d22e339"/><!--rdamo:P30420 = has publisher corporate body--><!--rdamo:P30420 = has publisher corporate body--><!--rdamo:P30420 = has publisher corporate body-->
+      <rdamd:P30145>Terms governing access: Access restricted to subscribing institutions.</rdamd:P30145><!--rdamd:P30145 = has restriction on access to manifestation-->
+      <rdamd:P30137>Credits: Director of photography, Steven Oritt ; editors, Zeke Piestrup, Will Barton ; original music, Pete Yorn &amp; Marc 'Doc' Dauer</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamo:P30420 rdf:resource="http://marc2rda.edu/fake/age/d22e339"/><!--rdamo:P30420 = has publisher corporate body-->
       <!--Default relationship property used for http://marc2rda.edu/fake/age/d22e377-->
-      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age/d22e377"/><!--rdamo:P30268 = has related person of manifestation--><!--rdamo:P30268 = has related person of manifestation--><!--rdamo:P30268 = has related person of manifestation-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age/d22e377"/><!--rdamo:P30268 = has related person of manifestation-->
       <!--Default relationship property used for http://marc2rda.edu/fake/age/d22e382-->
-      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age/d22e382"/><!--rdamo:P30268 = has related person of manifestation--><!--rdamo:P30268 = has related person of manifestation--><!--rdamo:P30268 = has related person of manifestation-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age/d22e382"/><!--rdamo:P30268 = has related person of manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99161881161101452origMan">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99161881161101452exp"/><!--rdamo:P30139 = has expression manifested--><!--rdamo:P30139 = has expression manifested--><!--rdamo:P30139 = has expression manifested-->
-      <fake:marcfield>F008 170327t20152014cau083        o   dleng d</fake:marcfield>
-      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/cau"/><!--rdamo:P30279 = has place of manifestation--><!--rdamo:P30279 = has place of manifestation--><!--rdamo:P30279 = has place of manifestation-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99161881161101452exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F008 170327t20152014cau083        o   vleng d</fake:marcfield>
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/cau"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/><!--rdam:P30001 = has carrier type-->
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/><!--rdam:P30335 = has category of manifestation-->
       <fake:marcfield>F264 #1 $a Folsom, CA : $b Dark Hollow Films, $c [2015]</fake:marcfield>
-      <rdamd:P30111>Folsom, CA : Dark Hollow Films, [2015]</rdamd:P30111><!--rdamd:P30111 = has publication statement--><!--rdamd:P30111 = has publication statement--><!--rdamd:P30111 = has publication statement-->
-      <rdamd:P30088>Folsom, CA</rdamd:P30088><!--rdamd:P30088 = has place of publication--><!--rdamd:P30088 = has place of publication--><!--rdamd:P30088 = has place of publication-->
-      <rdamd:P30176>Dark Hollow Films</rdamd:P30176><!--rdamd:P30176 = has name of publisher--><!--rdamd:P30176 = has name of publisher--><!--rdamd:P30176 = has name of publisher-->
-      <rdamd:P30011>2015</rdamd:P30011><!--rdamd:P30011 = has date of publication--><!--rdamd:P30011 = has date of publication--><!--rdamd:P30011 = has date of publication-->
+      <rdamd:P30111>Folsom, CA : Dark Hollow Films, [2015]</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Folsom, CA</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Dark Hollow Films</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>2015</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
       <fake:marcfield>F264 #4 $c ©2015</fake:marcfield>
-      <rdamd:P30137>Copyright notice date: ©2015.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation--><!--rdamd:P30137 = has note on manifestation--><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30007>2015</rdamd:P30007><!--rdamd:P30007 = has copyright date--><!--rdamd:P30007 = has copyright date--><!--rdamd:P30007 = has copyright date-->
+      <rdamd:P30137>Copyright notice date: ©2015.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30007>2015</rdamd:P30007><!--rdamd:P30007 = has copyright date-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/naf/unitedstates">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>United States</rdand:P80068><!--rdand:P80068 = has nomen string--><!--rdand:P80068 = has nomen string--><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/><!--rdan:P80069 = has scheme of nomen--><!--rdan:P80069 = has scheme of nomen--><!--rdan:P80069 = has scheme of nomen-->
+      <rdand:P80068>United States</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/ramaporivervalleynyandnj">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Ramapo River Valley (N.Y. and N.J.)</rdand:P80068><!--rdand:P80068 = has nomen string--><!--rdand:P80068 = has nomen string--><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen--><!--rdan:P80069 = has scheme of nomen--><!--rdan:P80069 = has scheme of nomen-->
+      <rdand:P80068>Ramapo River Valley (N.Y. and N.J.)</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/newjersey">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>New Jersey</rdand:P80068><!--rdand:P80068 = has nomen string--><!--rdand:P80068 = has nomen string--><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen--><!--rdan:P80069 = has scheme of nomen--><!--rdan:P80069 = has scheme of nomen-->
+      <rdand:P80068>New Jersey</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/newyorkstate">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>New York (State)</rdand:P80068><!--rdand:P80068 = has nomen string--><!--rdand:P80068 = has nomen string--><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen--><!--rdan:P80069 = has scheme of nomen--><!--rdan:P80069 = has scheme of nomen-->
+      <rdand:P80068>New York (State)</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d22e230">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>New Jersey</rdand:P80068><!--rdand:P80068 = has nomen string--><!--rdand:P80068 = has nomen string--><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen--><!--rdan:P80069 = has scheme of nomen--><!--rdan:P80069 = has scheme of nomen-->
+      <rdand:P80068>New Jersey</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d22e239">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>New York (State)</rdand:P80068><!--rdand:P80068 = has nomen string--><!--rdand:P80068 = has nomen string--><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen--><!--rdan:P80069 = has scheme of nomen--><!--rdan:P80069 = has scheme of nomen-->
+      <rdand:P80068>New York (State)</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/fast/unitedstates">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>United States</rdand:P80068><!--rdand:P80068 = has nomen string--><!--rdand:P80068 = has nomen string--><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen--><!--rdan:P80069 = has scheme of nomen--><!--rdan:P80069 = has scheme of nomen-->
+      <rdand:P80068>United States</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e328">
       <fake:marcfield>F710 2# $a Phydo Films, $e production company.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375>Phydo Films</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body--><!--rdaad:P50375 = has access point for corporate body--><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50375>Phydo Films</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e333">
       <fake:marcfield>F710 2# $a Keepers of the Pass (Firm), $e production company.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375>Keepers of the Pass (Firm)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body--><!--rdaad:P50375 = has access point for corporate body--><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50375>Keepers of the Pass (Firm)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e339">
       <fake:marcfield>F710 2# $a Dark Hollow Films, $e publisher.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375>Dark Hollow Films</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body--><!--rdaad:P50375 = has access point for corporate body--><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50375>Dark Hollow Films</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e362">
       <fake:marcfield>F700 1# $a Oritt, Steven, $e film director.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Oritt, Steven</rdaad:P50377><!--rdaad:P50377 = has access point for person--><!--rdaad:P50377 = has access point for person--><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50377>Oritt, Steven</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e367">
       <fake:marcfield>F700 1# $a Bobker, Corey, $e film producer.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Bobker, Corey</rdaad:P50377><!--rdaad:P50377 = has access point for person--><!--rdaad:P50377 = has access point for person--><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50377>Bobker, Corey</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e372">
       <fake:marcfield>F700 1# $a Ogens, Matt, $e film producer.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Ogens, Matt</rdaad:P50377><!--rdaad:P50377 = has access point for person--><!--rdaad:P50377 = has access point for person--><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50377>Ogens, Matt</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e377">
       <fake:marcfield>F700 1# $a Yorn, Pete, $e composer (expression)</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Yorn, Pete</rdaad:P50377><!--rdaad:P50377 = has access point for person--><!--rdaad:P50377 = has access point for person--><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50377>Yorn, Pete</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e382">
       <fake:marcfield>F700 1# $a Dauer, Marc, $e composer (expression)</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Dauer, Marc</rdaad:P50377><!--rdaad:P50377 = has access point for person--><!--rdaad:P50377 = has access point for person--><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50377>Dauer, Marc</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/e184r3">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -310,30 +314,30 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/naf/unitedstates">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70019 rdf:resource="http://marc2rda.edu/fake/pla/nom/naf/unitedstates"/><!--rdapo:P70019 = has appellation of place--><!--rdapo:P70019 = has appellation of place--><!--rdapo:P70019 = has appellation of place-->
+      <rdapo:P70019 rdf:resource="http://marc2rda.edu/fake/pla/nom/naf/unitedstates"/><!--rdapo:P70019 = has appellation of place-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/ramaporivervalleynyandnj">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/ramaporivervalleynyandnj"/><!--rdapo:P70045 = has authorized access point for place--><!--rdapo:P70045 = has authorized access point for place--><!--rdapo:P70045 = has authorized access point for place-->
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/ramaporivervalleynyandnj"/><!--rdapo:P70045 = has authorized access point for place-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/newjersey">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/newjersey"/><!--rdapo:P70045 = has authorized access point for place--><!--rdapo:P70045 = has authorized access point for place--><!--rdapo:P70045 = has authorized access point for place-->
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/newjersey"/><!--rdapo:P70045 = has authorized access point for place-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/newyorkstate">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/newyorkstate"/><!--rdapo:P70045 = has authorized access point for place--><!--rdapo:P70045 = has authorized access point for place--><!--rdapo:P70045 = has authorized access point for place-->
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/newyorkstate"/><!--rdapo:P70045 = has authorized access point for place-->
    </rdf:Description>
    <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJx4kQMRb7rwyH74JVdbBP">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/fast/newjersey"/><!--rdapo:P70045 = has authorized access point for place--><!--rdapo:P70045 = has authorized access point for place--><!--rdapo:P70045 = has authorized access point for place-->
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/fast/newjersey"/><!--rdapo:P70045 = has authorized access point for place-->
    </rdf:Description>
    <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39QbtfRjXPrf4BDHgVmQ8kx9c">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/fast/newyorkstate"/><!--rdapo:P70045 = has authorized access point for place--><!--rdapo:P70045 = has authorized access point for place--><!--rdapo:P70045 = has authorized access point for place-->
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/fast/newyorkstate"/><!--rdapo:P70045 = has authorized access point for place-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/fast/unitedstates">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/fast/unitedstates"/><!--rdapo:P70045 = has authorized access point for place--><!--rdapo:P70045 = has authorized access point for place--><!--rdapo:P70045 = has authorized access point for place-->
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/fast/unitedstates"/><!--rdapo:P70045 = has authorized access point for place-->
    </rdf:Description>
 </rdf:RDF>
