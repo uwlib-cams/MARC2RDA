@@ -45,6 +45,13 @@
         </xsl:call-template>
     </xsl:template>
     
+    <xsl:template name="F006-c1-2-MU">
+        <xsl:param name="char1-2"/>
+        <xsl:call-template name="F008-c18-19-MU">
+            <xsl:with-param name="char18-19" select="$char1-2"/>
+        </xsl:call-template>
+    </xsl:template>
+    
     <xsl:template name="F006-c2-CR">
         <xsl:param name="char2"/>
         <xsl:call-template name="F008-c19-CR">
@@ -52,9 +59,23 @@
         </xsl:call-template>
     </xsl:template>
     
+    <xsl:template name="F006-c3-MU">
+        <xsl:param name="char3"/>
+        <xsl:call-template name="F008-c20-MU">
+            <xsl:with-param name="char20" select="$char3"/>
+        </xsl:call-template>
+    </xsl:template>
+    
     <xsl:template name="F006-c4-CR">
         <xsl:param name="char4"/>
         <xsl:call-template name="F008-c21-CR">
+            <xsl:with-param name="char21" select="$char4"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <xsl:template name="F006-c4-MU">
+        <xsl:param name="char4"/>
+        <xsl:call-template name="F008-c21-MU">
             <xsl:with-param name="char21" select="$char4"/>
         </xsl:call-template>
     </xsl:template>
@@ -123,6 +144,22 @@
         </xsl:call-template>
     </xsl:template>
     
+    <xsl:template name="F006-c6-MU">
+        <xsl:param name="char6"/>
+        <xsl:call-template name="F008-c23_29-abcor-SOME">
+            <xsl:with-param name="char23_29" select="$char6"/>
+        </xsl:call-template>
+        <xsl:call-template name="F008-c23_29-dqs-SOME-origMan">
+            <xsl:with-param name="char23_29" select="$char6"/>
+        </xsl:call-template>
+        <xsl:call-template name="F008-c23_29-ghi-SOME-origMan">
+            <xsl:with-param name="char23_29" select="$char6"/>
+        </xsl:call-template>
+        <xsl:call-template name="F008-c23-xz-SOME-origMan">
+            <xsl:with-param name="char23" select="$char6"/>
+        </xsl:call-template>
+    </xsl:template>
+    
     <xsl:template name="F006-c7-10-BK">
         <xsl:param name="char7-10"/>
         <xsl:call-template name="F008-c24-27-BK">
@@ -148,6 +185,13 @@
         <xsl:param name="char7"/>
         <xsl:call-template name="F008-c24-MP">
             <xsl:with-param name="char24" select="$char7"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <xsl:template name="F006-c7-12-MU">
+        <xsl:param name="char7-12"/>
+        <xsl:call-template name="F008-c24-29-MU-origMan">
+            <xsl:with-param name="char24-29" select="$char7-12"/>
         </xsl:call-template>
     </xsl:template>
     
@@ -224,6 +268,20 @@
         </xsl:call-template>
     </xsl:template>
     
+    <xsl:template name="F006-c13-14-MU">
+        <xsl:param name="char13-14"/>
+        <xsl:call-template name="F008-c30-31-MU">
+            <xsl:with-param name="char30-31" select="$char13-14"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <xsl:template name="F006-c13-14-__-MU">
+        <xsl:param name="char13-14"/>
+        <xsl:call-template name="F008-c30-31-__-MU">
+            <xsl:with-param name="char30-31" select="$char13-14"/>
+        </xsl:call-template>
+    </xsl:template>
+    
     <xsl:template name="F006-c14-BK">
         <xsl:param name="char14"/>
         <xsl:call-template name="F008-c31-BK">
@@ -263,6 +321,13 @@
         <xsl:param name="char16-17"/>
         <xsl:call-template name="F008-c33-34-jm-MP">
             <xsl:with-param name="char33-34" select="$char16-17"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <xsl:template name="F006-c16-MU">
+        <xsl:param name="char16"/>
+        <xsl:call-template name="F008-c33-MU">
+            <xsl:with-param name="char33" select="$char16"/>
         </xsl:call-template>
     </xsl:template>
     

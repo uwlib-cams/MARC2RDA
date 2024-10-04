@@ -85,6 +85,15 @@
                     <xsl:with-param name="char16-17" select="substring(., 17, 2)"/>
                 </xsl:call-template>
             </xsl:when>
+            <!-- music -->
+            <xsl:when test="$char0 = 'c' or $char0 = 'd' or $char0 = 'i' or $char0 = 'j'">
+                <xsl:call-template name="F006-c1-2-MU">
+                    <xsl:with-param name="char1-2" select="substring(., 2, 2)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c13-14-MU">
+                    <xsl:with-param name="char13-14" select="substring(., 14, 2)"/>
+                </xsl:call-template>
+            </xsl:when>
         </xsl:choose>
         
     </xsl:template>
@@ -128,6 +137,27 @@
                 </xsl:call-template>
                 <xsl:call-template name="F006-c16-17-jm-MP">
                     <xsl:with-param name="char16-17" select="substring(., 17, 2)"/>
+                </xsl:call-template>
+            </xsl:when>
+            <!-- music -->
+            <xsl:when test="$char0 = 'c' or $char0 = 'd' or $char0 = 'i' or $char0 = 'j'">
+                <xsl:call-template name="F006-c3-MU">
+                    <xsl:with-param name="char3" select="substring(., 4, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c4-MU">
+                    <xsl:with-param name="char4" select="substring(., 5, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c5-SOME">
+                    <xsl:with-param name="char5" select="substring(., 6, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c6_12-f-SOME">
+                    <xsl:with-param name="char6_12" select="substring(., 7, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c13-14-__-MU">
+                    <xsl:with-param name="char13-14" select="substring(., 14, 2)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c16-MU">
+                    <xsl:with-param name="char16" select="substring(., 17, 1)"/>
                 </xsl:call-template>
             </xsl:when>
         </xsl:choose>
@@ -209,6 +239,15 @@
                 </xsl:call-template>
                 <xsl:call-template name="F006-c16-17-MP">
                     <xsl:with-param name="char16-17" select="substring(., 17, 2)"/>
+                </xsl:call-template>
+            </xsl:when>
+            <!-- music -->
+            <xsl:when test="$char0 = 'c' or $char0 = 'd' or $char0 = 'i' or $char0 = 'j'">
+                <xsl:call-template name="F006-c6-MU">
+                    <xsl:with-param name="char6" select="substring(., 7, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c7-12-MU">
+                    <xsl:with-param name="char7-12" select="substring(., 8, 6)"/>
                 </xsl:call-template>
             </xsl:when>
         </xsl:choose>
