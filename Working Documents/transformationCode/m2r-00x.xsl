@@ -58,6 +58,33 @@
                     <xsl:with-param name="char17" select="substring(., 18, 1)"/>
                 </xsl:call-template>
             </xsl:when>
+            <!-- continuing resources -->
+            <xsl:when test="$char0 = 's'">
+                <xsl:call-template name="F006-c1-CR">
+                    <xsl:with-param name="char1" select="substring(., 2, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c4-CR">
+                    <xsl:with-param name="char4" select="substring(., 5, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c7-CR">
+                    <xsl:with-param name="char7" select="substring(., 8, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c8-10-CR">
+                    <xsl:with-param name="char8-10" select="substring(., 9, 3)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c12-CR">
+                    <xsl:with-param name="char12" select="substring(., 13, 1)"/>
+                </xsl:call-template>
+            </xsl:when>
+            <!-- maps -->
+            <xsl:when test="$char0 = 'e' or $char0 = 'f'">
+                <xsl:call-template name="F006-c8-abdefg-MP">
+                    <xsl:with-param name="char8" select="substring(., 9, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c16-17-gk-MP">
+                    <xsl:with-param name="char16-17" select="substring(., 17, 2)"/>
+                </xsl:call-template>
+            </xsl:when>
         </xsl:choose>
         
     </xsl:template>
@@ -72,14 +99,35 @@
                 <xsl:call-template name="F006-c5-SOME">
                     <xsl:with-param name="char5" select="substring(., 6, 1)"/>
                 </xsl:call-template>
-                <xsl:call-template name="F006-c6-f-SOME">
-                    <xsl:with-param name="char6" select="substring(., 7, 1)"/>
+                <xsl:call-template name="F006-c6_12-f-SOME">
+                    <xsl:with-param name="char6_12" select="substring(., 7, 1)"/>
                 </xsl:call-template>
             </xsl:when>
             <!-- computer files -->
             <xsl:when test="$char0 = 'm'">
                 <xsl:call-template name="F006-c5-SOME">
                     <xsl:with-param name="char5" select="substring(., 6, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c6_12-f-SOME">
+                    <xsl:with-param name="char6_12" select="substring(., 7, 1)"/>
+                </xsl:call-template>
+            </xsl:when>
+            <!-- maps -->
+            <xsl:when test="$char0 = 'e' or $char0 = 'f'">
+                <xsl:call-template name="F006-c1-4-MP">
+                    <xsl:with-param name="char1-4" select="substring(., 2, 4)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c5-6-MP">
+                    <xsl:with-param name="char5-6" select="substring(., 6, 2)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c7-MP">
+                    <xsl:with-param name="char7" select="substring(., 8, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c6_12-f-SOME">
+                    <xsl:with-param name="char6_12" select="substring(., 13, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c16-17-jm-MP">
+                    <xsl:with-param name="char16-17" select="substring(., 17, 2)"/>
                 </xsl:call-template>
             </xsl:when>
         </xsl:choose>
@@ -125,6 +173,42 @@
                 </xsl:call-template>
                 <xsl:call-template name="F006-c11-SOME">
                     <xsl:with-param name="char11" select="substring(., 12, 1)"/>
+                </xsl:call-template>
+            </xsl:when>
+            <!-- continuing resources -->
+            <xsl:when test="$char0 = 's'">
+                <xsl:call-template name="F006-c2-CR">
+                    <xsl:with-param name="char2" select="substring(., 3, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c5-CR">
+                    <xsl:with-param name="char5" select="substring(., 6, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c6-CR">
+                    <xsl:with-param name="char6" select="substring(., 7, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c8-10-bkq-CR">
+                    <xsl:with-param name="char8-10" select="substring(., 9, 3)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c11-SOME">
+                    <xsl:with-param name="char11" select="substring(., 12, 1)"/>
+                </xsl:call-template>
+            </xsl:when>
+            <!-- maps -->
+            <xsl:when test="$char0 = 'e' or $char0 = 'f'">
+                <xsl:call-template name="F006-c8-acd-MP">
+                    <xsl:with-param name="char8" select="substring(., 9, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c11-SOME">
+                    <xsl:with-param name="char11" select="substring(., 12, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c12-MP">
+                    <xsl:with-param name="char12" select="substring(., 13, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c14-MP">
+                    <xsl:with-param name="char14" select="substring(., 15, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c16-17-MP">
+                    <xsl:with-param name="char16-17" select="substring(., 17, 2)"/>
                 </xsl:call-template>
             </xsl:when>
         </xsl:choose>

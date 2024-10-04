@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161955228601452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>99161955228601452wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <fake:marcfield>F006 ea      a  f  0   </fake:marcfield>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.vw5v-gh79#a"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F008 050628m19001901dcuab    b   f001 0 eng d</fake:marcfield>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F043 ## $a n-us--- $a n-us-ak $a n-us-tx $a a-ph---</fake:marcfield>
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us"/><!--rdawo:P10321 = has subject place-->
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us-ak"/><!--rdawo:P10321 = has subject place-->
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us-tx"/><!--rdawo:P10321 = has subject place-->
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/a-ph"/><!--rdawo:P10321 = has subject place-->
+      <fake:marcfield>F050 14 $a QE75 $b .G46 1900</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcc/qe75"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F245 00 $a Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900 / $c by Charles D. Walcott.</fake:marcfield>
+      <rdawd:P10088>Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <fake:marcfield>F650 #0 $a Geology $x Research $z United States.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/geologyresearchunitedstates"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/researchunitedstates"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/unitedstates"/><!--rdawo:P10321 = has subject place-->
+      <fake:marcfield>F650 #0 $a Geology $z Alaska.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/geologyalaska"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/alaska"/><!--rdawo:P10321 = has subject place-->
+      <fake:marcfield>F650 #0 $a Geology $z Philippines.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/geologyphilippines"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/philippines"/><!--rdawo:P10321 = has subject place-->
+      <fake:marcfield>F650 #0 $a Stream measurements $z United States.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/streammeasurementsunitedstates"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/unitedstates"/><!--rdawo:P10321 = has subject place-->
+      <fake:marcfield>F650 #0 $a Forest reserves $z United States.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/forestreservesunitedstates"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/unitedstates"/><!--rdawo:P10321 = has subject place-->
+      <fake:marcfield>F650 #0 $a Mines and mineral resources $z United States.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/minesandmineralresourcesunitedstates"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/unitedstates"/><!--rdawo:P10321 = has subject place-->
+      <fake:marcfield>F650 #0 $a Nonmetallic minerals industry $z United States.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/nonmetallicmineralsindustryunitedstates"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/unitedstates"/><!--rdawo:P10321 = has subject place-->
+      <fake:marcfield>F650 #0 $a Geology $z Texas.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/geologytexas"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/texas"/><!--rdawo:P10321 = has subject place-->
+      <fake:marcfield>F650 #0 $a Artesian wells $z Texas.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/artesianwellstexas"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/texas"/><!--rdawo:P10321 = has subject place-->
+      <fake:marcfield>F650 #6 $a Géologie $x Recherche $z États-Unis.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/géologierechercheétatsunis"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/rechercheétatsunis"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/rvm/étatsunis"/><!--rdawo:P10321 = has subject place-->
+      <fake:marcfield>F650 #6 $a Géologie $z Philippines.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/géologiephilippines"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/rvm/philippines"/><!--rdawo:P10321 = has subject place-->
+      <fake:marcfield>F650 #6 $a Cours d'eau $x Jaugeage $z États-Unis.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/coursdeaujaugeageétatsunis"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/jaugeageétatsunis"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/rvm/étatsunis"/><!--rdawo:P10321 = has subject place-->
+      <fake:marcfield>F650 #6 $a Minéraux non métalliques $x Industrie $z États-Unis.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/minérauxnonmétalliquesindustrieétatsunis"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/industrieétatsunis"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/rvm/étatsunis"/><!--rdawo:P10321 = has subject place-->
+      <fake:marcfield>F650 #6 $a Géologie $z Texas.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/géologietexas"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/rvm/texas"/><!--rdawo:P10321 = has subject place-->
+      <fake:marcfield>F650 #6 $a Puits artésiens $z Texas.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/puitsartésienstexas"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/rvm/texas"/><!--rdawo:P10321 = has subject place-->
+      <fake:marcfield>F650 #7 $a Artesian wells $2 fast</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/artesianwells"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F650 #7 $a Forest reserves $2 fast</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/forestreserves"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F650 #7 $a Geology $2 fast</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/geology"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F650 #7 $a Geology $x Research $2 fast</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/geologyresearch"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/research"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F650 #7 $a Mines and mineral resources $2 fast</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/minesandmineralresources"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F650 #7 $a Nonmetallic minerals industry $2 fast</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/nonmetallicmineralsindustry"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F650 #7 $a Stream measurements $2 fast</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/streammeasurements"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F651 #7 $a Alaska $2 fast $1 https://id.oclc.org/worldcat/entity/E39QbtfRq9rTfb3H89Vvrr9x9c</fake:marcfield>
+      <rdawo:P10321 rdf:resource="https://id.oclc.org/worldcat/entity/E39QbtfRq9rTfb3H89Vvrr9x9c"/><!--rdawo:P10321 = has subject place-->
+      <fake:marcfield>F651 #7 $a Philippines $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJgMFhdtFKxYyQvHvCFkDq</fake:marcfield>
+      <rdawo:P10321 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJgMFhdtFKxYyQvHvCFkDq"/><!--rdawo:P10321 = has subject place-->
+      <fake:marcfield>F651 #7 $a Texas $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJj8XjVR9hP7dPxwVtRqcP</fake:marcfield>
+      <rdawo:P10321 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJj8XjVR9hP7dPxwVtRqcP"/><!--rdawo:P10321 = has subject place-->
+      <fake:marcfield>F651 #7 $a United States $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq</fake:marcfield>
+      <rdawo:P10321 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq"/><!--rdawo:P10321 = has subject place-->
+      <fake:marcfield>F610 20 $a Geological Survey (U.S.)</fake:marcfield>
+      <rdawo:P10263 rdf:resource="http://marc2rda.edu/fake/age/lcsh/geologicalsurveyus"/><!--rdawo:P10263 = has subject corporate body-->
+      <fake:marcfield>F610 27 $a Geological Survey (U.S.) $2 fast</fake:marcfield>
+      <rdawo:P10263 rdf:resource="http://marc2rda.edu/fake/age/fast/geologicalsurveyus"/><!--rdawo:P10263 = has subject corporate body-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJhH6WVrhm78RWh9YjD6rq"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJdRCyKyp9T6KCrBttv4MP"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJkxJYFkhbJmq6km9DKmVC"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJxd3mchWxDBwtHp4D7JXd"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PCjHG6j6ht3KdVtRykwRDjd"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJrrrtPPYPtTCMBPxqkxDq"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJkHmwBqmVGX9JYCP79FKd"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PCjBqbmXjp6QKDKGkDqVWtC"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJpJgR678YrjpBF4RrfTHC"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PCjwDCW9tGftRMGbggC9cHd"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJg8JyBpBtxXj39rRV7yh3"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJB4fXCf89wpFyFxbCmyBP"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJfcT7X4CWfMkQQ7GCfXh3"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJrGwcxYDdkhdfJbgVhJXd"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJd3Mfy7QX447CyctbcwYP"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJhXdC3BFVk346vCBv78md"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJjMyQTKPp3rw3kwQmkFKd"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJy8rG37bBBX6pTJp3frMP"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJjdfHjw3F7BVgq3FMMwYP"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJkCXG9kJPQxpWwx7983cP"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJvt8FmKBYywBHMdP8MdcP"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJtX3GyT9Qfb7gKrPwfH4q"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PCjFYRR7DhmkwDBbMcvVJMq"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PCjtTKTqBGyMGmhtcFXTm3P"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PCjrbqHB8jvHhkd6P97XMHd"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJkMJgtBBTbvcgxR3rgVG3"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="https://id.oclc.org/worldcat/entity/E39PCjJp9GjxkXBHMGTxRB3tPP"/><!--rdawo:P10436 = has author person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161955228601452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/99161955228601452wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>99161955228601452exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+      <fake:marcfield>F006 ea      a  f  0   </fake:marcfield>
+      <rdae:P20318 rdf:resource="https://doi.org/10.6069/uwlswd.1c2x-cj09#a"/><!--rdae:P20318 = has relief representation-->
+      <fake:marcfield>F008 050628m19001901dcuab    b   f001 0 eng d</fake:marcfield>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161955228601452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99161955228601452exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F006 ea      a  f  0   </fake:marcfield>
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.25z4-e963#e"/><!--rdam:P30335 = has category of manifestation-->
+      <rdam:P30003 rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/><!--rdam:P30003 = has mode of issuance-->
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.2eg3-1x53#f"/><!--rdam:P30335 = has category of manifestation-->
+      <fake:marcfield>F008 050628m19001901dcuab    b   f001 0 eng d</fake:marcfield>
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/dcu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1008"/><!--rdam:P30453 = has illustrative content-->
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.2eg3-1x53#f"/><!--rdam:P30335 = has category of manifestation-->
+      <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.m0xp-h565#1"/><!--rdam:P30455 = has supplementary content-->
+      <fake:marcfield>F245 00 $a Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900 / $c by Charles D. Walcott.</fake:marcfield>
+      <rdamd:P30156>Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30105>by Charles D. Walcott.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <fake:marcfield>F264 #1 $a Washington D.C. : $b United States Government Printing Office, $c 1900-1901.</fake:marcfield>
+      <rdamd:P30111>Washington D.C. : United States Government Printing Office, 1900-1901.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Washington D.C.</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>United States Government Printing Office</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>1900</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <fake:marcfield>F337 ## $a unmediated $b n $2 rdamedia</fake:marcfield>
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/><!--rdam:P30002 = has media type-->
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/><!--rdam:P30002 = has media type-->
+      <fake:marcfield>F338 ## $a volume $b nc $2 rdacarrier</fake:marcfield>
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/><!--rdam:P30001 = has carrier type-->
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/><!--rdam:P30001 = has carrier type-->
+      <fake:marcfield>F338 ## $a sheet $b nb $2 rdacarrier</fake:marcfield>
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/nb"/><!--rdam:P30001 = has carrier type-->
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/nb"/><!--rdam:P30001 = has carrier type-->
+      <fake:marcfield>F500 ## $a Added title page: Twenty-first annual report of the director of the United States Geological Survey.</fake:marcfield>
+      <rdamd:P30137>Added title page: Twenty-first annual report of the director of the United States Geological Survey.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F500 ## $a Parts 1 and 2 have 3 maps in back pockets, parts 3 and 4 have 1 map in back pockets. Part 5 (continued) is a slipcase with 39 maps, consisting mostly of quadrangles showing classification of lands, Part 7 has 7 maps.</fake:marcfield>
+      <rdamd:P30137>Parts 1 and 2 have 3 maps in back pockets, parts 3 and 4 have 1 map in back pockets. Part 5 (continued) is a slipcase with 39 maps, consisting mostly of quadrangles showing classification of lands, Part 7 has 7 maps.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F500 ## $a "Washington, Government Printing Office, 1900" -- bottom of title page, Parts I, II,and V ; "Washington, Government Printing Office, 1901" -- bottom of title page, Parts III,IV,VII, VII continued, and VII.</fake:marcfield>
+      <rdamd:P30137>"Washington, Government Printing Office, 1900" -- bottom of title page, Parts I, II,and V ; "Washington, Government Printing Office, 1901" -- bottom of title page, Parts III,IV,VII, VII continued, and VII.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F500 ## $a Title from title page</fake:marcfield>
+      <rdamd:P30137>Title from title page</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F504 ## $a Includes bibliographical references and index.</fake:marcfield>
+      <rdamd:P30455>Includes bibliographical references and index.</rdamd:P30455><!--rdamd:P30455 = has supplementary content-->
+      <fake:marcfield>F505 2# $a Part 1. Director's report, including triangulation, primary traverse, and spirit leveling. -- Part 2. General geology, economic geology, Alaska: Geology of the Rico Mountains, Colorado / W. Cross and A.C. Spencer. Glacial sculpture of the Bighorn Mountains, Wyoming / F.E. Matthes. The Esmeralda formation, a fresh-water lake deposit; accompanied by a report on the fossil plants of the formation and by a report on a fossil fish / H.W. Turner, F.H. Knowlton and F.A. Lucas. Mineral vein formation at Boulder Hot Springs, Montana / W.H. Weed. Geology of the eastern Choctaw coal field, Indian Territory / J.A. Taff and G.I. Adams. Preliminary report on the Camden coal field of southwestern Arkansas / Taff, J. A. A reconnaissance from Pyramid Harbor to Eagle City, Alaska, including a description of the copper deposits of the Upper White and Tanana Rivers / A. H. Brooks.Preliminary report on the Camden River and the Skolai Mountains, Alaska / O. Rohn -- Preliminary report on a reconnaissance along the Chandlar and Koyukuk rivers, Alaska, in 1899 / F.C. Schrader. Alaskan geographic names / M. Baker. -- Part 3. General geology, ore and phosphate deposits, Philippines: The Newark system of the Pomperaug Valley, Connecticut; with a report on fossil wood from the Newark formation of South Britain, Connecticut / W.H. Hobbs and F.H. Knowlton. The laccoliths of the Black Hills, with a chapter on experiments illustrating intrusion and erosion / T.A. Jaggar, Jr. and E. Howe. The Arkansas bauxite deposits / C.W. Hayes. Tennessee white phosphate / C.W. Hayes. Report on the geology of the Philippine Islands; followed by a version of Ueber Tertiäre fossilien von den Philippinen / G.F. Becker and K. Martin. -- Part 4. Hydrography: Report on the progress of stream measurements for the calendar year 1899 / F.H. Newell. Preliminary description of the geology and water resources of the southern half of the Black Hills and adjoining regions in South Dakota and Wyoming / N.H. Darton. The high plains and their utilization / W.D. Johnson. -- Part 5. Forest reserves: Summary of forestry work in 1899-1900 / Henry Gannett. Lewis and Clarke [sic] forest reserve, Montana / H.B. Ayers. Olympic forest reserve, Washington / Arthur Dodwell, from notes by Theodore F. Rixon. Cascade Range forest reserve from township 28 south to township 37 south, inclusive, together with the Ashland forest reserve and forest regions from township 28 south to township 14 south, inclusive, and from range 2 west to range 14 east, Willamette meridian, inclusive / John B. Leiberg. Stanislaus and Lake Tahoe forest reserves and adjacent territory / George B. Sudworth. Classification of lands / Henry Gannett [and others]. Woodland of Indian Territory / C.H. Fitch. Timber conditions of the pine region of Minnesota / H.B. Ayres. -- Part 5 (continued). Forest reserves maps. -- Part 6. Mineral resources of the United States, 1899 metallic products, coal and coke. -- Part 6 (continued). Mineral resources of the United States, 1899 nonmetallic products, except coal and coke. -- Part 7. Texas: Geography and geology of the Black and Grand Prairies, Texas with detailed descriptions of the cretaceous formations and special reference to artesian waters / by Robert T. Hill.</fake:marcfield>
+      <rdamd:P30137>Partial contents: Part 1. Director's report, including triangulation, primary traverse, and spirit leveling. -- Part 2. General geology, economic geology, Alaska: Geology of the Rico Mountains, Colorado / W. Cross and A.C. Spencer. Glacial sculpture of the Bighorn Mountains, Wyoming / F.E. Matthes. The Esmeralda formation, a fresh-water lake deposit; accompanied by a report on the fossil plants of the formation and by a report on a fossil fish / H.W. Turner, F.H. Knowlton and F.A. Lucas. Mineral vein formation at Boulder Hot Springs, Montana / W.H. Weed. Geology of the eastern Choctaw coal field, Indian Territory / J.A. Taff and G.I. Adams. Preliminary report on the Camden coal field of southwestern Arkansas / Taff, J. A. A reconnaissance from Pyramid Harbor to Eagle City, Alaska, including a description of the copper deposits of the Upper White and Tanana Rivers / A. H. Brooks.Preliminary report on the Camden River and the Skolai Mountains, Alaska / O. Rohn -- Preliminary report on a reconnaissance along the Chandlar and Koyukuk rivers, Alaska, in 1899 / F.C. Schrader. Alaskan geographic names / M. Baker. -- Part 3. General geology, ore and phosphate deposits, Philippines: The Newark system of the Pomperaug Valley, Connecticut; with a report on fossil wood from the Newark formation of South Britain, Connecticut / W.H. Hobbs and F.H. Knowlton. The laccoliths of the Black Hills, with a chapter on experiments illustrating intrusion and erosion / T.A. Jaggar, Jr. and E. Howe. The Arkansas bauxite deposits / C.W. Hayes. Tennessee white phosphate / C.W. Hayes. Report on the geology of the Philippine Islands; followed by a version of Ueber Tertiäre fossilien von den Philippinen / G.F. Becker and K. Martin. -- Part 4. Hydrography: Report on the progress of stream measurements for the calendar year 1899 / F.H. Newell. Preliminary description of the geology and water resources of the southern half of the Black Hills and adjoining regions in South Dakota and Wyoming / N.H. Darton. The high plains and their utilization / W.D. Johnson. -- Part 5. Forest reserves: Summary of forestry work in 1899-1900 / Henry Gannett. Lewis and Clarke [sic] forest reserve, Montana / H.B. Ayers. Olympic forest reserve, Washington / Arthur Dodwell, from notes by Theodore F. Rixon. Cascade Range forest reserve from township 28 south to township 37 south, inclusive, together with the Ashland forest reserve and forest regions from township 28 south to township 14 south, inclusive, and from range 2 west to range 14 east, Willamette meridian, inclusive / John B. Leiberg. Stanislaus and Lake Tahoe forest reserves and adjacent territory / George B. Sudworth. Classification of lands / Henry Gannett [and others]. Woodland of Indian Territory / C.H. Fitch. Timber conditions of the pine region of Minnesota / H.B. Ayres. -- Part 5 (continued). Forest reserves maps. -- Part 6. Mineral resources of the United States, 1899 metallic products, coal and coke. -- Part 6 (continued). Mineral resources of the United States, 1899 nonmetallic products, except coal and coke. -- Part 7. Texas: Geography and geology of the Black and Grand Prairies, Texas with detailed descriptions of the cretaceous formations and special reference to artesian waters / by Robert T. Hill.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F505 2# $a Part I, Plate I, "Map showing condition and progress of topographic surveys and location of gaging stations for the fiscal year 1899-1900"; Plate II, "Map showing condition and progress of astronomic location, primary triangulation, primary traverse, and spirit leveling for the fiscal year 1899-1900" ; Plate III, "Progress map of topographic and geologic surveys" -- Part III, Plate XXII, "Geologic map of the Rico Mountains, Colorado" ; Plate XXXVII, "Geological map of part of the eastern Choctaw Coal Field" ; Plate XLIII, "Explorations in Alaska 1899 route from Lynn Canal via headwaters of White and Tanana Rivers to Eagle City" --   Part III, Plate LI, "Geological map of a part of the Mesabi District, Minnesota" Part IV, Plate LXV, "Geologic map of the southern half of the Black Hills region in South Dakota and Wyoming"  -- Part VII, Plate LXV, "Map of the Black and Grand Prairies of Texas including the Eastern and Western Cross Timbers" ; Plate LXVI, "Geology of the Black and Grand Prairies of Texas including the Eastern and Western Cross Timbers" ; Plate LXVII, "Cross sections on the lines A-A. B-B etc. PL. LXVI showing geological structure of the Black and Grand Prairies" ; Plate LXVIII, "Location and depths of the artesian wells of the Black and Grand Prairies of Texas" ; Plate LXIX, "Map of the Trinity Reservoirs of the Black and Grand Prairies of Texas including the Eastern and Western Cross Timbers" ; Plate LXX, "Map of the Paluxy artesian reservoirs of the Black and Grand Prairies of Texas including the Eastern and Western Cross Timbers" ; Plate XI, "Map of the Woodbine artesian reservoirs of the Black and Grand Prairies of Texas including the Eastern and Western Cross Timbers."</fake:marcfield>
+      <rdamd:P30137>Partial contents: Part I, Plate I, "Map showing condition and progress of topographic surveys and location of gaging stations for the fiscal year 1899-1900"; Plate II, "Map showing condition and progress of astronomic location, primary triangulation, primary traverse, and spirit leveling for the fiscal year 1899-1900" ; Plate III, "Progress map of topographic and geologic surveys" -- Part III, Plate XXII, "Geologic map of the Rico Mountains, Colorado" ; Plate XXXVII, "Geological map of part of the eastern Choctaw Coal Field" ; Plate XLIII, "Explorations in Alaska 1899 route from Lynn Canal via headwaters of White and Tanana Rivers to Eagle City" --   Part III, Plate LI, "Geological map of a part of the Mesabi District, Minnesota" Part IV, Plate LXV, "Geologic map of the southern half of the Black Hills region in South Dakota and Wyoming"  -- Part VII, Plate LXV, "Map of the Black and Grand Prairies of Texas including the Eastern and Western Cross Timbers" ; Plate LXVI, "Geology of the Black and Grand Prairies of Texas including the Eastern and Western Cross Timbers" ; Plate LXVII, "Cross sections on the lines A-A. B-B etc. PL. LXVI showing geological structure of the Black and Grand Prairies" ; Plate LXVIII, "Location and depths of the artesian wells of the Black and Grand Prairies of Texas" ; Plate LXIX, "Map of the Trinity Reservoirs of the Black and Grand Prairies of Texas including the Eastern and Western Cross Timbers" ; Plate LXX, "Map of the Paluxy artesian reservoirs of the Black and Grand Prairies of Texas including the Eastern and Western Cross Timbers" ; Plate XI, "Map of the Woodbine artesian reservoirs of the Black and Grand Prairies of Texas including the Eastern and Western Cross Timbers."</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F505 2# $a Part V Maps, Plate I, "Forest reserves and national parks" ; Plate III, "Lewis and Clarke Forest Reserve, showing classification of lands" ; Plate XXXIII, "Mount Rainier Forest Reserve, showing classification of lands" ; Plate LI, "Olympic Forest Reserve, showing classification of lands" ; Plate LII, "Olympic Forest Reserve, showing distribution of red fir" ; Plate LVI, "Olympic Forest Reserve, showing distribution of hemlock" ; Plate LIX, "Olympic Forest Reserve, showing distribution of cedar" ; Plate LXI, "Olympic Forest Reserve, showing distribution of spruce" ; Plate LXIII, "Olympic Forest Reserve, showing distribution of silver fir" ; Plate LXXI, "Ashland quadrangle, Oregon, showing classification of lands" ; Plate LXXII, "Klamath quadrangle, Oregon showing classification of lands" ; Plate LXXXV, "Placerville quadrangle, California, showing classification of lands" ; Plate LXXXVI, "Pyramid Peak quadrangle, California, showing classification of lands" ; Plate LXXXVII, "Jackson quadrangle, California, showing classification of lands" ; Plate LXXXVIII, "Big Trees quadrangle, California, showing classification of lands" ; Plate LXXXIX, Markleeville quadrangle, California-Nevada, showing classification of lands" ; Plate XC, "Dardanelles quadrangle, California, showing classification of lands" ; Plate CXV, "Sonora quadrangle, California, showing classification of lands" ; Plate CXVI, "Yosemite quadrangle, California, showing classification of lands" ; Plate CXVII, "Mount Lyell quadrangle, California, showing classification of lands" ; Plate CXXV, "San Jacinto quadrangle, California, showing classification of lands" ; Plate CXXVI, "Port Orford quadrangle, California, showing classification of lands" ; Plate CXXVII, "Coos Bay quadrangle, Oregon, showing classification of lands" ; Plate CXXVIII, "Roseburg quadrangle, Oregon, showing classification of lands" ; Plate CXXIX, "Tacoma quadrangle, Washington, showing classification of lands" ; Plate CXXX, "Seattle quadrangle, Washington, showing classification of lands" ; Plate CXXXI, "Mount Stuart quadrangle, Washington, showing classification of lands" ; Plate CXXXII, "Ellensburg quadrangle, Washington, showing classification of lands" ; Plate CXXXIII, "Chelan quadrangle, Washington, showing classification of lands" ; Plate CXXXIV, "Spokane quadrangle, Washington, showing classification of lands" ; Plate CXXXV, "Sandpoint quadrangle, Idaho, showing classification of lands" ; Plate CXXXVI, "Hamilton quadrangle, Montana-Idaho, showing classification of lands" ; Plate CXXXVII, "Fortymile quadrangle, Alaska, showing classification of lands" ; Plate CXXXVIII, "Dayton quadrangle, Wyoming, showing classification of lands" ; Plate CXXXIX, "Bald Mountain quadrangle, Wyoming, showing classification of lands" ; Plate CXL, "Cloud Peak quadrangle, Wyoming, showing classification of lands" ; Plate CXLL, "Newcastle quadrangle, Wyoming-South Dakota, showing classification of lands" ; Plate CXLII, "Indian Territory, showing extent and distribution of woodland" ; Plate CXLIII, "Pine region of Minnesota, showing classification of lands."</fake:marcfield>
+      <rdamd:P30137>Partial contents: Part V Maps, Plate I, "Forest reserves and national parks" ; Plate III, "Lewis and Clarke Forest Reserve, showing classification of lands" ; Plate XXXIII, "Mount Rainier Forest Reserve, showing classification of lands" ; Plate LI, "Olympic Forest Reserve, showing classification of lands" ; Plate LII, "Olympic Forest Reserve, showing distribution of red fir" ; Plate LVI, "Olympic Forest Reserve, showing distribution of hemlock" ; Plate LIX, "Olympic Forest Reserve, showing distribution of cedar" ; Plate LXI, "Olympic Forest Reserve, showing distribution of spruce" ; Plate LXIII, "Olympic Forest Reserve, showing distribution of silver fir" ; Plate LXXI, "Ashland quadrangle, Oregon, showing classification of lands" ; Plate LXXII, "Klamath quadrangle, Oregon showing classification of lands" ; Plate LXXXV, "Placerville quadrangle, California, showing classification of lands" ; Plate LXXXVI, "Pyramid Peak quadrangle, California, showing classification of lands" ; Plate LXXXVII, "Jackson quadrangle, California, showing classification of lands" ; Plate LXXXVIII, "Big Trees quadrangle, California, showing classification of lands" ; Plate LXXXIX, Markleeville quadrangle, California-Nevada, showing classification of lands" ; Plate XC, "Dardanelles quadrangle, California, showing classification of lands" ; Plate CXV, "Sonora quadrangle, California, showing classification of lands" ; Plate CXVI, "Yosemite quadrangle, California, showing classification of lands" ; Plate CXVII, "Mount Lyell quadrangle, California, showing classification of lands" ; Plate CXXV, "San Jacinto quadrangle, California, showing classification of lands" ; Plate CXXVI, "Port Orford quadrangle, California, showing classification of lands" ; Plate CXXVII, "Coos Bay quadrangle, Oregon, showing classification of lands" ; Plate CXXVIII, "Roseburg quadrangle, Oregon, showing classification of lands" ; Plate CXXIX, "Tacoma quadrangle, Washington, showing classification of lands" ; Plate CXXX, "Seattle quadrangle, Washington, showing classification of lands" ; Plate CXXXI, "Mount Stuart quadrangle, Washington, showing classification of lands" ; Plate CXXXII, "Ellensburg quadrangle, Washington, showing classification of lands" ; Plate CXXXIII, "Chelan quadrangle, Washington, showing classification of lands" ; Plate CXXXIV, "Spokane quadrangle, Washington, showing classification of lands" ; Plate CXXXV, "Sandpoint quadrangle, Idaho, showing classification of lands" ; Plate CXXXVI, "Hamilton quadrangle, Montana-Idaho, showing classification of lands" ; Plate CXXXVII, "Fortymile quadrangle, Alaska, showing classification of lands" ; Plate CXXXVIII, "Dayton quadrangle, Wyoming, showing classification of lands" ; Plate CXXXIX, "Bald Mountain quadrangle, Wyoming, showing classification of lands" ; Plate CXL, "Cloud Peak quadrangle, Wyoming, showing classification of lands" ; Plate CXLL, "Newcastle quadrangle, Wyoming-South Dakota, showing classification of lands" ; Plate CXLII, "Indian Territory, showing extent and distribution of woodland" ; Plate CXLIII, "Pine region of Minnesota, showing classification of lands."</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor/d22e405"/><!--rdamo:P30265 = has related work of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>United States</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/alaska">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Alaska</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/philippines">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Philippines</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>United States</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>United States</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>United States</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>United States</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/texas">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Texas</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/texas">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Texas</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/étatsunis">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>États-Unis</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/philippines">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Philippines</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/étatsunis">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>États-Unis</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/étatsunis">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>États-Unis</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/texas">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Texas</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/texas">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Texas</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d22e369">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Alaska</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d22e376">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Philippines</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d22e383">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Texas</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d22e390">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>United States</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/lcsh/geologicalsurveyus">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Geological Survey (U.S.)</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/fast/geologicalsurveyus">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Geological Survey (U.S.)</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/lcsh/geologicalsurveyus">
+      <fake:marcfield>F610 20 $a Geological Survey (U.S.)</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/age/nom/lcsh/geologicalsurveyus"/><!--rdaao:P50407 = has authorized access point for corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/fast/geologicalsurveyus">
+      <fake:marcfield>F610 27 $a Geological Survey (U.S.) $2 fast</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/age/nom/fast/geologicalsurveyus"/><!--rdaao:P50407 = has authorized access point for corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e405">
+      <fake:marcfield>F710 2# $a Geological Survey (U.S.), $e issuing body. $t Annual report.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Geological Survey (U.S.)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJhH6WVrhm78RWh9YjD6rq">
+      <fake:marcfield>F700 1# $a Walcott, Charles D. $q (Charles Doolittle), $d 1850-1927, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJhH6WVrhm78RWh9YjD6rq</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Walcott, Charles D. (Charles Doolittle), 1850-1927</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJdRCyKyp9T6KCrBttv4MP">
+      <fake:marcfield>F700 1# $a Cross, Whitman, $d 1854-1949, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJdRCyKyp9T6KCrBttv4MP</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Cross, Whitman, 1854-1949</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJkxJYFkhbJmq6km9DKmVC">
+      <fake:marcfield>F700 1# $a Spencer, Arthur C. $q (Arthur Coe), $d 1871-1964, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJkxJYFkhbJmq6km9DKmVC</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Spencer, Arthur C. (Arthur Coe), 1871-1964</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJxd3mchWxDBwtHp4D7JXd">
+      <fake:marcfield>F700 1# $a Matthes, François, $d 1874-1948, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJxd3mchWxDBwtHp4D7JXd</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Matthes, François, 1874-1948</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PCjHG6j6ht3KdVtRykwRDjd">
+      <fake:marcfield>F700 1# $a Turner, H. W. $q (Henry Ward), $d 1857- $e author. $1 https://id.oclc.org/worldcat/entity/E39PCjHG6j6ht3KdVtRykwRDjd</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Turner, H. W. (Henry Ward), 1857-</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJrrrtPPYPtTCMBPxqkxDq">
+      <fake:marcfield>F700 1# $a Weed, Walter Harvey, $d 1862-1944, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJrrrtPPYPtTCMBPxqkxDq</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Weed, Walter Harvey, 1862-1944</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJkHmwBqmVGX9JYCP79FKd">
+      <fake:marcfield>F700 1# $a Taff, Joseph A. $q (Joseph Alexander), $d 1862-1944, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJkHmwBqmVGX9JYCP79FKd</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Taff, Joseph A. (Joseph Alexander), 1862-1944</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PCjBqbmXjp6QKDKGkDqVWtC">
+      <fake:marcfield>F700 1# $a Adams, George I. $q (George Irving), $d 1870-1932, $e author. $1 https://id.oclc.org/worldcat/entity/E39PCjBqbmXjp6QKDKGkDqVWtC</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Adams, George I. (George Irving), 1870-1932</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJpJgR678YrjpBF4RrfTHC">
+      <fake:marcfield>F700 1# $a Brooks, Alfred H. $q (Alfred Hulse), $d 1871-1924, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJpJgR678YrjpBF4RrfTHC</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Brooks, Alfred H. (Alfred Hulse), 1871-1924</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PCjwDCW9tGftRMGbggC9cHd">
+      <fake:marcfield>F700 1# $a Rohn, Oscar, $e author. $1 https://id.oclc.org/worldcat/entity/E39PCjwDCW9tGftRMGbggC9cHd</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Rohn, Oscar</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJg8JyBpBtxXj39rRV7yh3">
+      <fake:marcfield>F700 1# $a Schrader, Frank C. $q (Frank Charles), $d 1860-1944, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJg8JyBpBtxXj39rRV7yh3</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Schrader, Frank C. (Frank Charles), 1860-1944</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJB4fXCf89wpFyFxbCmyBP">
+      <fake:marcfield>F700 1# $a Baker, Marcus, $d 1849-1903, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJB4fXCf89wpFyFxbCmyBP</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Baker, Marcus, 1849-1903</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJfcT7X4CWfMkQQ7GCfXh3">
+      <fake:marcfield>F700 1# $a Hobbs, William Herbert, $d 1864-1952, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJfcT7X4CWfMkQQ7GCfXh3</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Hobbs, William Herbert, 1864-1952</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJrGwcxYDdkhdfJbgVhJXd">
+      <fake:marcfield>F700 1# $a Jaggar, Thomas Augustus, $d 1871-1953, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJrGwcxYDdkhdfJbgVhJXd</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Jaggar, Thomas Augustus, 1871-1953</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJd3Mfy7QX447CyctbcwYP">
+      <fake:marcfield>F700 1# $a Howe, Ernest, $d 1875-1932, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJd3Mfy7QX447CyctbcwYP</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Howe, Ernest, 1875-1932</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJhXdC3BFVk346vCBv78md">
+      <fake:marcfield>F700 1# $a Hayes, C. W. $q (Charles Willard), $d 1859-1916, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJhXdC3BFVk346vCBv78md</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Hayes, C. W. (Charles Willard), 1859-1916</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJjMyQTKPp3rw3kwQmkFKd">
+      <fake:marcfield>F700 1# $a Becker, George F. $q (George Ferdinand), $d 1847-1919, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJjMyQTKPp3rw3kwQmkFKd</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Becker, George F. (George Ferdinand), 1847-1919</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJy8rG37bBBX6pTJp3frMP">
+      <fake:marcfield>F700 1# $a Martin, Karl, $d 1851-1942, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJy8rG37bBBX6pTJp3frMP</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Martin, Karl, 1851-1942</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJjdfHjw3F7BVgq3FMMwYP">
+      <fake:marcfield>F700 1# $a Newell, Frederick Haynes, $d 1862-1932, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJjdfHjw3F7BVgq3FMMwYP</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Newell, Frederick Haynes, 1862-1932</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJkCXG9kJPQxpWwx7983cP">
+      <fake:marcfield>F700 1# $a Darton, Nelson Horatio, $d 1865-1948, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJkCXG9kJPQxpWwx7983cP</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Darton, Nelson Horatio, 1865-1948</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJvt8FmKBYywBHMdP8MdcP">
+      <fake:marcfield>F700 1# $a Johnson, Willard D., $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJvt8FmKBYywBHMdP8MdcP</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Johnson, Willard D.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJtX3GyT9Qfb7gKrPwfH4q">
+      <fake:marcfield>F700 1# $a Gannett, Henry, $d 1846-1914, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJtX3GyT9Qfb7gKrPwfH4q</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Gannett, Henry, 1846-1914</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PCjFYRR7DhmkwDBbMcvVJMq">
+      <fake:marcfield>F700 1# $a Ayres, H. B. $q (Horace Beemer), $d 1856- $e author. $1 https://id.oclc.org/worldcat/entity/E39PCjFYRR7DhmkwDBbMcvVJMq</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Ayres, H. B. (Horace Beemer), 1856-</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PCjtTKTqBGyMGmhtcFXTm3P">
+      <fake:marcfield>F700 1# $a Rixon, Theodore F., $e author. $1 https://id.oclc.org/worldcat/entity/E39PCjtTKTqBGyMGmhtcFXTm3P</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Rixon, Theodore F.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PCjrbqHB8jvHhkd6P97XMHd">
+      <fake:marcfield>F700 1# $a Leiberg, John B. $q (John Bernhard), $d 1853-1913, $e author. $1 https://id.oclc.org/worldcat/entity/E39PCjrbqHB8jvHhkd6P97XMHd</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Leiberg, John B. (John Bernhard), 1853-1913</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJkMJgtBBTbvcgxR3rgVG3">
+      <fake:marcfield>F700 1# $a Sudworth, George B. $q (George Bishop), $d 1864-1927, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJkMJgtBBTbvcgxR3rgVG3</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Sudworth, George B. (George Bishop), 1864-1927</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PCjJp9GjxkXBHMGTxRB3tPP">
+      <fake:marcfield>F700 1# $a Fitch, C. H. $q (Charles Hall), $d 1854-1930, $e author. $1 https://id.oclc.org/worldcat/entity/E39PCjJp9GjxkXBHMGTxRB3tPP</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Fitch, C. H. (Charles Hall), 1854-1930</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/d22e405">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d22e405wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Geological Survey (U.S.), Annual report</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age/d22e405"/><!--rdawo:P10314 = has related corporate body of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/qe75">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">QE75</skos:notation>
+      <skos:altLabel>QE75</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/geologyresearchunitedstates">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Geology -- Research -- United States</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/researchunitedstates">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Research -- United States</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/geologyalaska">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Geology -- Alaska</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/geologyphilippines">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Geology -- Philippines</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/streammeasurementsunitedstates">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Stream measurements -- United States</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/forestreservesunitedstates">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Forest reserves -- United States</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/minesandmineralresourcesunitedstates">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Mines and mineral resources -- United States</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/nonmetallicmineralsindustryunitedstates">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Nonmetallic minerals industry -- United States</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/geologytexas">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Geology -- Texas</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/artesianwellstexas">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Artesian wells -- Texas</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/géologierechercheétatsunis">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Géologie -- Recherche -- États-Unis</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/rechercheétatsunis">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Recherche -- États-Unis</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/géologiephilippines">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Géologie -- Philippines</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/coursdeaujaugeageétatsunis">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Cours d'eau -- Jaugeage -- États-Unis</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/jaugeageétatsunis">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Jaugeage -- États-Unis</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/minérauxnonmétalliquesindustrieétatsunis">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Minéraux non métalliques -- Industrie -- États-Unis</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/industrieétatsunis">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Industrie -- États-Unis</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/géologietexas">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Géologie -- Texas</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/puitsartésienstexas">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Puits artésiens -- Texas</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/artesianwells">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Artesian wells</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/forestreserves">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Forest reserves</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/geology">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Geology</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/geologyresearch">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Geology -- Research</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/research">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Research</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/minesandmineralresources">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Mines and mineral resources</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/nonmetallicmineralsindustry">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Nonmetallic minerals industry</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/streammeasurements">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Stream measurements</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/unitedstates">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/alaska">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/alaska"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/philippines">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/philippines"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/unitedstates">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/unitedstates">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/unitedstates">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/unitedstates">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/texas">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/texas"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/texas">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/texas"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/rvm/étatsunis">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/étatsunis"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/rvm/philippines">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/philippines"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/rvm/étatsunis">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/étatsunis"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/rvm/étatsunis">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/étatsunis"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/rvm/texas">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/texas"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/rvm/texas">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/texas"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39QbtfRq9rTfb3H89Vvrr9x9c">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/fast/alaska"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJgMFhdtFKxYyQvHvCFkDq">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/fast/philippines"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJj8XjVR9hP7dPxwVtRqcP">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/fast/texas"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/fast/unitedstates"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+</rdf:RDF>
