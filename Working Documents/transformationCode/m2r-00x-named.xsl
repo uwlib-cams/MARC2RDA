@@ -52,6 +52,20 @@
         </xsl:call-template>
     </xsl:template>
     
+    <xsl:template name="F006-c1-3-VM">
+        <xsl:param name="char1-3"/>
+        <xsl:call-template name="F008-c18-20-VM">
+            <xsl:with-param name="char18-20" select="$char1-3"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <xsl:template name="F006-c1-3-VM-man">
+        <xsl:param name="char1-3"/>
+        <xsl:call-template name="F008-c18-20-VM-origMan">
+            <xsl:with-param name="char18-20" select="$char1-3"/>
+        </xsl:call-template>
+    </xsl:template>
+    
     <xsl:template name="F006-c2-CR">
         <xsl:param name="char2"/>
         <xsl:call-template name="F008-c19-CR">
