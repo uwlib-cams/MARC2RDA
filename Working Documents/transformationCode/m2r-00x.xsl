@@ -94,6 +94,16 @@
                     <xsl:with-param name="char13-14" select="substring(., 14, 2)"/>
                 </xsl:call-template>
             </xsl:when>
+            <!-- visual materials -->
+            <xsl:when test="$char0 = 'g' or $char0 = 'k' or $char0 = 'o' or $char0 = 'r'">
+                <xsl:call-template name="F006-c16-dgiklmno-VM">
+                    <xsl:with-param name="char16" select="substring(., 17, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c17-VM">
+                    <xsl:with-param name="char17" select="substring(., 18, 1)"/>
+                </xsl:call-template>
+            </xsl:when>
+            
         </xsl:choose>
         
     </xsl:template>
@@ -164,6 +174,9 @@
             <xsl:when test="$char0 = 'g' or $char0 = 'k' or $char0 = 'o' or $char0 = 'r'">
                 <xsl:call-template name="F006-c1-3-VM">
                     <xsl:with-param name="char1-3" select="substring(., 2, 3)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c6_12-f-SOME">
+                    <xsl:with-param name="char6_12" select="substring(., 13, 1)"/>
                 </xsl:call-template>
             </xsl:when>
         </xsl:choose>
@@ -266,6 +279,12 @@
                 </xsl:call-template>
                 <xsl:call-template name="F006-c11-SOME">
                     <xsl:with-param name="char11" select="substring(., 12, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c12-VM">
+                    <xsl:with-param name="char12" select="substring(., 13, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F006-c16-abcdfmnoprstvw-VM">
+                    <xsl:with-param name="char16" select="substring(., 17, 1)"/>
                 </xsl:call-template>
             </xsl:when>
         </xsl:choose>

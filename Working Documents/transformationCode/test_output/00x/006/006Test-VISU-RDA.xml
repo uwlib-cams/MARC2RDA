@@ -2,7 +2,8 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99152167410001452wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>99152167410001452wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <fake:marcfield>F006 g141       a    vl</fake:marcfield>
+      <fake:marcfield>F006 g141            vl</fake:marcfield>
+      <rdaw:P10222 rdf:resource="https://doi.org/10.6069/uwlswd.eje7-jq11#l"/><!--rdaw:P10222 = has nature of content-->
       <fake:marcfield>F006 innnn        z| | </fake:marcfield>
       <fake:marcfield>F008 040318s2004    nyu    j b    001 0 eng  </fake:marcfield>
       <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
@@ -50,7 +51,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/99152167410001452wor"/><!--rdaeo:P20231 = has work expressed-->
       <rdaed:P20002>99152167410001452exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
-      <fake:marcfield>F006 g141       a    vl</fake:marcfield>
+      <fake:marcfield>F006 g141            vl</fake:marcfield>
       <rdaed:P20219>Duration: 141 minutes.</rdaed:P20219><!--rdaed:P20219 = has duration-->
       <fake:marcfield>F006 innnn        z| | </fake:marcfield>
       <fake:marcfield>F008 040318s2004    nyu    j b    001 0 eng  </fake:marcfield>
@@ -62,9 +63,10 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99152167410001452man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99152167410001452exp"/><!--rdamo:P30139 = has expression manifested-->
-      <fake:marcfield>F006 g141       a    vl</fake:marcfield>
+      <fake:marcfield>F006 g141            vl</fake:marcfield>
       <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.25z4-e963#g"/><!--rdam:P30335 = has category of manifestation-->
-      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.2eg3-1x53#a"/><!--rdam:P30335 = has category of manifestation-->
+      <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/><!--rdam:P30001 = has carrier type-->
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/><!--rdam:P30335 = has category of manifestation-->
       <fake:marcfield>F006 innnn        z| | </fake:marcfield>
       <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.25z4-e963#i"/><!--rdam:P30335 = has category of manifestation-->
       <fake:marcfield>F008 040318s2004    nyu    j b    001 0 eng  </fake:marcfield>
