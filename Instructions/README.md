@@ -34,7 +34,6 @@ _Last updated 27 April 2022_
    - [Problems with Mapping](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#problems-with-mapping)
    - [Notes (Uncategorized)](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#notes-uncategorized)
 
- ## [Video Demonstration](https://vimeo.com/675022150)
  ## Spreadsheet Structure
  ### Example of an incomplete mapping
  These rows only contain the information for a possible MARC 21 field. These rows will require mapping to an RDA property, and possibly the addition of conditions or notes. Additional rows may need to be added to articulate multiple conditions, or multiple possible RDA properties.
