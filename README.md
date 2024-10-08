@@ -12,7 +12,7 @@ _Laura Akerman is a Librarian and Product Manager at Emory University Libraries,
 _Sita Bhagwandin is a bibliographic metadata specialist at the KB, National Library of the Netherlands. She holds a master’s degree in Indology from the University of Utrecht. <br>
 Previously she has worked as a cataloguer at the Utrecht University library for 25 years.<br>
 She represents the KB, National Library of the Netherlands at the EURIG. <br>
-Her interest is RDA implemented as linked data. She participates in different projects in the Netherlands and abroad concerning the mapping and conversion of legacy bibliographic and authority data into RDA-RDF._ <br>
+Her interest is RDA implemented as linked data. She participates in different projects in the Netherlands and abroad concerning the mapping and conversion of legacy bibliographic and authority data into RDA-RDF._
 <br><br>
 **-Tynan Challenor [tynancuw](https://github.com/tynancuw), Mapping Contributor, Transformation Contributor**<br>
 _Tynan Challenor is a second year PhD student in economics. He works as a linked metadata student specialist for UW libraries and as a consultant for the Center for Social Science Computation and Research. He works on applied microeconomics and is interested in computational methods in research and science._ 
