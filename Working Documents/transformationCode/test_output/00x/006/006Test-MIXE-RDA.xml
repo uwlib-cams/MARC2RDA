@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99108496980001452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>99108496980001452wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <fake:marcfield>F006 m        m        </fake:marcfield>
+      <fake:marcfield>F006 p     s           </fake:marcfield>
+      <fake:marcfield>F008 050110s2005    njua     b    001 0 eng  </fake:marcfield>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F050 00 $a HG6046 $b .K34 2005</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcc/hg6046"/><!--rdaw:P10256 = has subject-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age/d22e221-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d22e221"/><!--rdawo:P10312 = has related person of work-->
+      <fake:marcfield>F245 10 $a New trading systems and methods / $c Perry J. Kaufman.</fake:marcfield>
+      <rdawd:P10088>New trading systems and methods</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <fake:marcfield>F650 #0 $a Commodity exchanges $x Statistical methods.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/commodityexchangesstatisticalmethods"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/statisticalmethods"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F650 #6 $a Bourses de marchandises $x Méthodes statistiques.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/boursesdemarchandisesméthodesstatistiques"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/méthodesstatistiques"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F650 #7 $a Commodity exchanges $x Statistical methods. $2 fast $0 (OCoLC)fst00869736</fake:marcfield>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00869736"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F650 #7 $a Wertpapierhandel $2 gnd</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/gnd/wertpapierhandel"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F650 #7 $a Börsenhandel $2 gnd</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/gnd/börsenhandel"/><!--rdaw:P10256 = has subject-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99108496980001452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/99108496980001452wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>99108496980001452exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+      <fake:marcfield>F006 m        m        </fake:marcfield>
+      <fake:marcfield>F006 p     s           </fake:marcfield>
+      <fake:marcfield>F008 050110s2005    njua     b    001 0 eng  </fake:marcfield>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <fake:marcfield>F520 ## $a Accompanying CD-ROM contains ... "TradeStation code and Excel spreadsheets."--Jacket.</fake:marcfield>
+      <rdaed:P20069>Accompanying CD-ROM contains ... "TradeStation code and Excel spreadsheets."--Jacket.</rdaed:P20069><!--rdaed:P20069 = has summarization of content-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99108496980001452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99108496980001452exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F006 m        m        </fake:marcfield>
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.25z4-e963#m"/><!--rdam:P30335 = has category of manifestation-->
+      <rdam:P30018 rdf:resource="https://doi.org/10.6069/uwlswd.mkjn-bp10#m"/><!--rdam:P30018 = has file type-->
+      <fake:marcfield>F006 p     s           </fake:marcfield>
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.25z4-e963#p"/><!--rdam:P30335 = has category of manifestation-->
+      <rdam:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/><!--rdam:P30002 = has media type-->
+      <fake:marcfield>F008 050110s2005    njua     b    001 0 eng  </fake:marcfield>
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/nju"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/><!--rdam:P30453 = has illustrative content-->
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.m0xp-h565#1"/><!--rdam:P30455 = has supplementary content-->
+      <fake:marcfield>F020 ## $a 047126847X $q (CLOTH/CD-ROM)</fake:marcfield>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d22e76"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <fake:marcfield>F020 ## $a 9780471268475 $q (CLOTH/CD-ROM)</fake:marcfield>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d22e81"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <fake:marcfield>F024 3# $a 9780471268475</fake:marcfield>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d22e86"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <fake:marcfield>F245 10 $a New trading systems and methods / $c Perry J. Kaufman.</fake:marcfield>
+      <rdamd:P30156>New trading systems and methods</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30105>Perry J. Kaufman.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <fake:marcfield>F337 ## $a unmediated $b n $2 rdamedia</fake:marcfield>
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/><!--rdam:P30002 = has media type-->
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/><!--rdam:P30002 = has media type-->
+      <fake:marcfield>F338 ## $a volume $b nc $2 rdacarrier</fake:marcfield>
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/><!--rdam:P30001 = has carrier type-->
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/><!--rdam:P30001 = has carrier type-->
+      <fake:marcfield>F490 1# $a The Wiley trading series</fake:marcfield>
+      <rdamd:P30106>The Wiley trading series</rdamd:P30106><!--rdamd:P30106 = has series statement-->
+      <fake:marcfield>F500 ## $a Revised edition of: Trading systems and methods, c1998.</fake:marcfield>
+      <rdamd:P30137>Revised edition of: Trading systems and methods, c1998.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F504 ## $a Includes bibliographical references (pages 1137-1152) and index.</fake:marcfield>
+      <rdamd:P30455>Includes bibliographical references (pages 1137-1152) and index.</rdamd:P30455><!--rdamd:P30455 = has supplementary content-->
+      <fake:marcfield>F505 00 $g Ch. 1. $t Introduction -- $g Ch. 2. $t Basic concepts -- $g Ch. 3. $t Charting -- $g Ch. 4. $t Charting systems and techniques -- $g Ch. 5. $t Event-driven trends -- $g Ch. 6. $t Regression analysis -- $g Ch. 7. $t Time-based trend calculations -- $g Ch. 8. $t Time-based trend systems -- $g Ch. 9. $t Momentum and oscillators -- $g Ch. 10. $t Seasonality -- $g Ch. 11. $t Cycle analysis -- $g Ch. 12. $t Volume, open interest, and breadth -- $g Ch. 13. $t Spreads and arbitrage -- $g Ch. 14. $t Behavioral techniques -- $g Ch. 15. $t Pattern recognition -- $g Ch. 16. $t Day trading -- $g Ch. 17. $t Adaptive techniques -- $g Ch. 18. $t Price distribution systems -- $g Ch. 19. $t Multiple time frames -- $g Ch. 20. $t Advanced techniques -- $g Ch. 21. $t System testing -- $g Ch. 22. $t Practical considerations.</fake:marcfield>
+      <rdamd:P30137>Contents: Ch. 1. Introduction -- Ch. 2. Basic concepts -- Ch. 3. Charting -- Ch. 4. Charting systems and techniques -- Ch. 5. Event-driven trends -- Ch. 6. Regression analysis -- Ch. 7. Time-based trend calculations -- Ch. 8. Time-based trend systems -- Ch. 9. Momentum and oscillators -- Ch. 10. Seasonality -- Ch. 11. Cycle analysis -- Ch. 12. Volume, open interest, and breadth -- Ch. 13. Spreads and arbitrage -- Ch. 14. Behavioral techniques -- Ch. 15. Pattern recognition -- Ch. 16. Day trading -- Ch. 17. Adaptive techniques -- Ch. 18. Price distribution systems -- Ch. 19. Multiple time frames -- Ch. 20. Advanced techniques -- Ch. 21. System testing -- Ch. 22. Practical considerations.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F506 ## $a Accompanying disc is available for use on a standalone workstation within the library for single users. Disc will require installation. $5 StEdNL</fake:marcfield>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/99108496980001452ited22e374"/><!--rdamo:P30103 = has exemplar of manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor/d22e418"/><!--rdamo:P30265 = has related work of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99108496980001452ited22e374">
+      <fake:marcfield>F506 ## $a Accompanying disc is available for use on a standalone workstation within the library for single users. Disc will require installation. $5 StEdNL</fake:marcfield>
+      <rdaid:P40001>ited22e374</rdaid:P40001><!--rdaid:P40001 = has identifier for item-->
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <!--Unable to match StEdNL with Cultural Heritage Organization-->
+      <rdaid:P40047>Terms governing access: Accompanying disc is available for use on a standalone workstation within the library for single users. Disc will require installation.</rdaid:P40047><!--rdaid:P40047 = has restriction on access to item-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d22e76">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>047126847X</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
+      <rdand:P80071>CLOTH/CD-ROM</rdand:P80071><!--rdand:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d22e81">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>9780471268475</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
+      <rdand:P80071>CLOTH/CD-ROM</rdand:P80071><!--rdand:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d22e86">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>9780471268475</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/identifiers/ean"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e221">
+      <fake:marcfield>F100 1# $a Kaufman, Perry J.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Kaufman, Perry J.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e418">
+      <fake:marcfield>F700 1# $a Kaufman, Perry J. $t Trading systems and methods.</fake:marcfield>
+      <rdaad:P50377>Kaufman, Perry J.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/d22e418">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d22e418wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Kaufman, Perry J. Trading systems and methods</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d22e418"/><!--rdawo:P10312 = has related person of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/hg6046">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">HG6046</skos:notation>
+      <skos:altLabel>HG6046</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/commodityexchangesstatisticalmethods">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Commodity exchanges -- Statistical methods</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/statisticalmethods">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Statistical methods</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/boursesdemarchandisesméthodesstatistiques">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Bourses de marchandises -- Méthodes statistiques</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/méthodesstatistiques">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Méthodes statistiques</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/gnd/wertpapierhandel">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Wertpapierhandel</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gnd"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/gnd/börsenhandel">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Börsenhandel</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gnd"/>
+   </rdf:Description>
+</rdf:RDF>

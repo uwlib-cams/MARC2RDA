@@ -158,6 +158,25 @@
         </xsl:call-template>
     </xsl:template>
     
+    <xsl:template name="F006-c6-MX">
+        <xsl:param name="char6"/>
+        <xsl:call-template name="F008-c23_29-abcor-SOME">
+            <xsl:with-param name="char23_29" select="$char6"/>
+        </xsl:call-template>
+        <xsl:call-template name="F008-c23_29-dqs-SOME-origMan">
+            <xsl:with-param name="char23_29" select="$char6"/>
+        </xsl:call-template>
+        <xsl:call-template name="F008-c23_29-ghi-SOME-origMan">
+            <xsl:with-param name="char23_29" select="$char6"/>
+        </xsl:call-template>
+        <xsl:call-template name="F008-c23-MX-origMan">
+            <xsl:with-param name="char23" select="$char6"/>
+        </xsl:call-template>
+        <xsl:call-template name="F008-c23-xz-SOME-origMan">
+            <xsl:with-param name="char23" select="$char6"/>
+        </xsl:call-template>
+    </xsl:template>
+    
     <xsl:template name="F006-c6-MU">
         <xsl:param name="char6"/>
         <xsl:call-template name="F008-c23_29-abcor-SOME">

@@ -260,6 +260,12 @@
                     <xsl:with-param name="char16-17" select="substring(., 17, 2)"/>
                 </xsl:call-template>
             </xsl:when>
+            <!-- mixed materials -->
+            <xsl:when test="$char0 = 'p'">
+                <xsl:call-template name="F006-c6-MX">
+                    <xsl:with-param name="char6" select="substring(., 7, 1)"/>
+                </xsl:call-template>
+            </xsl:when>
             <!-- music -->
             <xsl:when test="$char0 = 'c' or $char0 = 'd' or $char0 = 'i' or $char0 = 'j'">
                 <xsl:call-template name="F006-c6-MU">
@@ -469,10 +475,11 @@
             <xsl:call-template name="F008-c6">
                 <xsl:with-param name="char6" select="$char6"/>
             </xsl:call-template>
-            <xsl:variable name="char15-17" select="substring(., 16, 3)"/>
-            <xsl:call-template name="F008-c15-17">
-                <xsl:with-param name="char15-17" select="$char15-17"/>
-            </xsl:call-template>
+            <xsl:if test="substring(., 16, 3) != '   '">
+                <xsl:call-template name="F008-c15-17">
+                    <xsl:with-param name="char15-17" select="substring(., 16, 3)"/>
+                </xsl:call-template>
+            </xsl:if>
             <xsl:choose>
                 <!-- books -->
                 <xsl:when test="$ldr6-7 = 'aa' or $ldr6-7 = 'ac' or $ldr6-7 = 'ad' or $ldr6-7 = 'am'
