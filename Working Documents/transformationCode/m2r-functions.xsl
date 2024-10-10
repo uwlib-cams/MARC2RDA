@@ -115,26 +115,6 @@
     
     <xsl:key name="schemeKey" match="madsrdf:hasMADSSchemeMember" use="madsrdf:Authority/@rdf:about"/>
     
-    <!-- uwf:s2lookup returns an rdf:datatype, this will be deleted once all templates using it have been updated -->
-    <xsl:function name="uwf:s2lookup" expand-text="true">
-        <xsl:param name="code2"/>
-        <xsl:choose>
-            <xsl:when test="$locSubjectSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/subjectSchemes/', lower-case($code2)))">
-                <xsl:attribute name="rdf:datatype">
-                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/subjectSchemes/', lower-case($code2))"/>
-                </xsl:attribute>
-            </xsl:when>
-            <xsl:when test="$locGenreFormSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/genreFormSchemes/', lower-case($code2)))">
-                <xsl:attribute name="rdf:datatype">
-                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/genreFormSchemes/', lower-case($code2))"/>
-                </xsl:attribute>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:comment>$2 value of {$code2} has been lost</xsl:comment>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:function>
-    
     <!-- uwf:s2Nomen returns the property "has scheme of nomen" with the appropriate IRI if it is found, otherwise it outputs a comment -->
     <xsl:function name="uwf:s2Nomen" expand-text="yes">
         <xsl:param name="code2"/>
