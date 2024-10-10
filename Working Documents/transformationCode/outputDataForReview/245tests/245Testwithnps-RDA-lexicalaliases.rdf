@@ -21,7 +21,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
       <rdawd:identifierForWork.en>245-test002wor</rdawd:identifierForWork.en>
       <fake:marcfield>F245 00 $a English historical linguistics : $b an international handbook. $n Volume 1 / $c Alexander Bergs, Laurel J. Brinton.</fake:marcfield>
-      <rdawd:titleOfWork.en>English historical linguistics</rdawd:titleOfWork.en>
+      <rdawd:titleOfWork.en>English historical linguistics Volume 1</rdawd:titleOfWork.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test002exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Expression.en"/>
@@ -32,8 +32,8 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Manifestation.en"/>
       <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test002exp"/>
       <fake:marcfield>F245 00 $a English historical linguistics : $b an international handbook. $n Volume 1 / $c Alexander Bergs, Laurel J. Brinton.</fake:marcfield>
-      <rdamd:titleProper.en>English historical linguistics</rdamd:titleProper.en>
-      <rdamd:otherTitleInformation.en>an international handbook. Volume 1</rdamd:otherTitleInformation.en>
+      <rdamd:titleProper.en>English historical linguistics Volume 1</rdamd:titleProper.en>
+      <rdamd:otherTitleInformation.en>an international handbook.</rdamd:otherTitleInformation.en>
       <rdamd:statementOfResponsibilityRelatingToTitleProper.en>Alexander Bergs, Laurel J. Brinton.</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test003wor">
@@ -77,7 +77,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
       <rdawd:identifierForWork.en>245-test005wor</rdawd:identifierForWork.en>
       <fake:marcfield>F245 10 $a Advances in visual computing : $b 7th International Symposium, ISVC 2011, Las Vegas, NV, USA, September 26-28, 2011, proceedings. $n Part I / $c George Bebis [and others] (eds.).</fake:marcfield>
-      <rdawd:titleOfWork.en>Advances in visual computing</rdawd:titleOfWork.en>
+      <rdawd:titleOfWork.en>Advances in visual computing Part I</rdawd:titleOfWork.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test005exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Expression.en"/>
@@ -88,8 +88,8 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Manifestation.en"/>
       <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test005exp"/>
       <fake:marcfield>F245 10 $a Advances in visual computing : $b 7th International Symposium, ISVC 2011, Las Vegas, NV, USA, September 26-28, 2011, proceedings. $n Part I / $c George Bebis [and others] (eds.).</fake:marcfield>
-      <rdamd:titleProper.en>Advances in visual computing</rdamd:titleProper.en>
-      <rdamd:otherTitleInformation.en>7th International Symposium, ISVC 2011, Las Vegas, NV, USA, September 26-28, 2011, proceedings. Part I</rdamd:otherTitleInformation.en>
+      <rdamd:titleProper.en>Advances in visual computing Part I</rdamd:titleProper.en>
+      <rdamd:otherTitleInformation.en>7th International Symposium, ISVC 2011, Las Vegas, NV, USA, September 26-28, 2011, proceedings.</rdamd:otherTitleInformation.en>
       <rdamd:statementOfResponsibilityRelatingToTitleProper.en>George Bebis [and others] (eds.).</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test006wor">

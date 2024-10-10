@@ -41,7 +41,9 @@
             <xsl:when test="marc:subfield[@code = 'a']">
                 <xsl:choose>
                     <xsl:when test="marc:subfield[@code = 'a'][not(following-sibling::*)] or
-                        marc:subfield[@code = 'a']/following-sibling::marc:subfield[1][not(@code = 'n' or @code = 'p' or @code = 's')]">
+                        marc:subfield[@code = 'a']/not(following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's']) or 
+                        (marc:subfield[@code = 'a']/following-sibling::marc:subfield[1][not(@code = 'n' or @code = 'p' or @code = 's')]
+                        and marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][preceding-sibling::marc:subfield[@code = 'b'][contains(text(), ' = ')]])">
                         <xsl:for-each select="marc:subfield[@code='a']">
                             <rdawd:P10088>
                                 <xsl:choose>
@@ -62,7 +64,7 @@
                                 <xsl:when test="$isISBD = true()">
                                     <xsl:value-of select="normalize-space(marc:subfield[@code = 'a']) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                                     <xsl:text> </xsl:text>
-                                    <xsl:for-each select="marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::*[@code = 'b'])]">
+                                    <xsl:for-each select="marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::marc:subfield[contains(text(), ' = ') or ends-with(text(), ' =')])]">
                                         <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                                         <xsl:if test="position() != last()">
                                             <xsl:text> </xsl:text>
@@ -72,7 +74,7 @@
                                 <xsl:otherwise>
                                     <xsl:value-of select="uwf:removeBrackets(marc:subfield[@code = 'a'])"/>
                                     <xsl:text> </xsl:text>
-                                    <xsl:for-each select="marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::*[@code = 'b'])]">
+                                    <xsl:for-each select="marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::marc:subfield[contains(text(), ' = ') or ends-with(text(), ' =')])]">
                                         <xsl:value-of select="uwf:removeBrackets(.)"/>
                                         <xsl:if test="position() != last()">
                                             <xsl:text> </xsl:text>

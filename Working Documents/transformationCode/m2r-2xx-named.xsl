@@ -30,9 +30,11 @@
             </xsl:choose>
         </xsl:variable>
         <xsl:choose>
-            <!-- a with no following n, p, or s subfields -->
+            <!-- a with no following n, p, or s subfields either immediately following or following after other title info -->
             <xsl:when test="marc:subfield[@code = 'a'][not(following-sibling::*)] or
-                marc:subfield[@code = 'a']/following-sibling::marc:subfield[1][not(@code = 'n' or @code = 'p' or @code = 's')]">
+                marc:subfield[@code = 'a']/not(following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's']) or 
+                (marc:subfield[@code = 'a']/following-sibling::marc:subfield[1][not(@code = 'n' or @code = 'p' or @code = 's')]
+                and marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][preceding-sibling::marc:subfield[@code = 'b'][contains(text(), ' = ')]])">
                 <rdamd:P30156>
                     <xsl:choose>
                         <!-- remove ending = : ; / if ISBD-->
@@ -51,7 +53,7 @@
                     <rdamd:P30137>Title proper {uwf:getBracketedData(marc:subfield[@code = 'a'])} is assigned by the cataloguing agency.</rdamd:P30137>
                 </xsl:if>
             </xsl:when>
-            <!-- a with following n, p, s -->
+            <!-- a with following n, p, s either before or after a b with other title info -->
             <xsl:otherwise>
                 <!-- put together title from a and any directly following n, p, s fields -->
                 <!-- remove ending = : ; / -->
@@ -61,7 +63,7 @@
                         <xsl:when test="$isISBD = true()">
                             <xsl:value-of select="normalize-space(marc:subfield[@code = 'a']) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                             <xsl:text> </xsl:text>
-                            <xsl:for-each select="marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::*[@code = 'b'])]">
+                            <xsl:for-each select="marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::marc:subfield[contains(text(), ' = ') or ends-with(text(), ' =')])]">
                                 <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                 <xsl:if test="position() != last()">
                                     <xsl:text> </xsl:text>
@@ -71,7 +73,7 @@
                         <xsl:otherwise>
                             <xsl:value-of select="normalize-space(marc:subfield[@code = 'a']) => uwf:removeBrackets()"/>
                             <xsl:text> </xsl:text>
-                            <xsl:for-each select="marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::*[@code = 'b'])]">
+                            <xsl:for-each select="marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::marc:subfield[contains(text(), ' = ') or ends-with(text(), ' =')])]">
                                 <xsl:value-of select="normalize-space(.) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                 <xsl:if test="position() != last()">
                                     <xsl:text> </xsl:text>
@@ -192,7 +194,7 @@
         <xsl:param name="subfield"/>
         <xsl:variable name="ISBDString">
             <xsl:choose>
-                <xsl:when test="@code = 'b' and $subfield/following-sibling::*[@code = 'n' or @code = 'p' or @code = 's']">
+                <xsl:when test="$subfield/@code = 'b' and (contains(., ' = ') or ends-with(., ' =') or ends-with($subfield/preceding-sibling::*[1], '=')) and $subfield/following-sibling::*[@code = 'n' or @code = 'p' or @code = 's']">
                     <xsl:for-each select="$subfield | following-sibling::*[@code = 'n' or @code = 'p' or @code = 's']">
                         <xsl:value-of select="normalize-space(.)"/>
                         <xsl:if test="position() != last()">

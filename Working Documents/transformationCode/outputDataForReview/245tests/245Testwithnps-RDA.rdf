@@ -21,7 +21,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>245-test002wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <fake:marcfield>F245 00 $a English historical linguistics : $b an international handbook. $n Volume 1 / $c Alexander Bergs, Laurel J. Brinton.</fake:marcfield>
-      <rdawd:P10088>English historical linguistics</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawd:P10088>English historical linguistics Volume 1</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test002exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -32,8 +32,8 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test002exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 00 $a English historical linguistics : $b an international handbook. $n Volume 1 / $c Alexander Bergs, Laurel J. Brinton.</fake:marcfield>
-      <rdamd:P30156>English historical linguistics</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30142>an international handbook. Volume 1</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30156>English historical linguistics Volume 1</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30142>an international handbook.</rdamd:P30142><!--rdamd:P30142 = has other title information-->
       <rdamd:P30105>Alexander Bergs, Laurel J. Brinton.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test003wor">
@@ -77,7 +77,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>245-test005wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <fake:marcfield>F245 10 $a Advances in visual computing : $b 7th International Symposium, ISVC 2011, Las Vegas, NV, USA, September 26-28, 2011, proceedings. $n Part I / $c George Bebis [and others] (eds.).</fake:marcfield>
-      <rdawd:P10088>Advances in visual computing</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawd:P10088>Advances in visual computing Part I</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test005exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -88,8 +88,8 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test005exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 10 $a Advances in visual computing : $b 7th International Symposium, ISVC 2011, Las Vegas, NV, USA, September 26-28, 2011, proceedings. $n Part I / $c George Bebis [and others] (eds.).</fake:marcfield>
-      <rdamd:P30156>Advances in visual computing</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30142>7th International Symposium, ISVC 2011, Las Vegas, NV, USA, September 26-28, 2011, proceedings. Part I</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30156>Advances in visual computing Part I</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30142>7th International Symposium, ISVC 2011, Las Vegas, NV, USA, September 26-28, 2011, proceedings.</rdamd:P30142><!--rdamd:P30142 = has other title information-->
       <rdamd:P30105>George Bebis [and others] (eds.).</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test006wor">
