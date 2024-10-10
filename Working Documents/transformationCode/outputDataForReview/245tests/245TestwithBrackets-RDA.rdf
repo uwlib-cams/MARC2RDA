@@ -153,7 +153,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test008exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 14 $a The others raisd [sic] in me : $b 150 readings of Sonnet 150 : a plunderverse project / $c by Gregory Betts.</fake:marcfield>
-      <rdamd:P30156>The others raisd [sic] in me</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30156>The others raisd in me</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30142>150 readings of Sonnet 150</rdamd:P30142><!--rdamd:P30142 = has other title information-->
       <rdamd:P30142>a plunderverse project</rdamd:P30142><!--rdamd:P30142 = has other title information-->
       <rdamd:P30105>by Gregory Betts.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
@@ -283,7 +283,7 @@
       <fake:marcfield>F245 10 $a Narrenlieder : $b nach Shakespeare "Was ihr wollt" : für Violincello [sic] solo, [1996/1997] / $c Tilo Medek.</fake:marcfield>
       <rdamd:P30156>Narrenlieder</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30142>nach Shakespeare "Was ihr wollt"</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30142>für Violincello [sic] solo, [1996/1997]</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30142>für Violincello solo, [1996/1997]</rdamd:P30142><!--rdamd:P30142 = has other title information-->
       <rdamd:P30105>Tilo Medek.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test015wor">

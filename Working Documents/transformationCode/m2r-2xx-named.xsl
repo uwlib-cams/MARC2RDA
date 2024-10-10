@@ -38,11 +38,11 @@
                         <!-- remove ending = : ; / if ISBD-->
                         <!-- remove any square brackets [] -->
                         <xsl:when test="$isISBD = true()">
-                            <xsl:value-of select="normalize-space(marc:subfield[@code = 'a']) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                            <xsl:value-of select="normalize-space(marc:subfield[@code = 'a']) => replace('\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                         </xsl:when>
                         <!-- remove any square brackets [] if not ISBD -->
                         <xsl:otherwise>
-                            <xsl:value-of select="normalize-space(marc:subfield[@code = 'a']) => uwf:removeBrackets()"/>
+                            <xsl:value-of select="normalize-space(marc:subfield[@code = 'a']) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                         </xsl:otherwise>
                     </xsl:choose>
                 </rdamd:P30156>
@@ -62,7 +62,7 @@
                             <xsl:value-of select="normalize-space(marc:subfield[@code = 'a']) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                             <xsl:text> </xsl:text>
                             <xsl:for-each select="marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::*[@code = 'b'])]">
-                                <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                 <xsl:if test="position() != last()">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
@@ -72,7 +72,7 @@
                             <xsl:value-of select="normalize-space(marc:subfield[@code = 'a']) => uwf:removeBrackets()"/>
                             <xsl:text> </xsl:text>
                             <xsl:for-each select="marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::*[@code = 'b'])]">
-                                <xsl:value-of select="normalize-space(.) => uwf:removeBrackets()"/>
+                                <xsl:value-of select="normalize-space(.) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                 <xsl:if test="position() != last()">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
@@ -82,7 +82,7 @@
                 </xsl:variable>
                 <!-- remove any square brackets -->
                 <rdamd:P30156>
-                    <xsl:value-of select="normalize-space($title) => uwf:removeBrackets()"/>
+                    <xsl:value-of select="normalize-space($title) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                 </rdamd:P30156>
                 <!-- if square brackets [] were removed, add not on manifestation -->
                 <xsl:if test="uwf:testBrackets($title) = true()">
@@ -119,7 +119,7 @@
                     <xsl:choose>
                         <xsl:when test="marc:subfield[@code = 'c']">
                             <xsl:for-each select="marc:subfield[@code = 'c']/preceding-sibling::*">
-                                <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                 <xsl:if test="position() != last()">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
@@ -127,7 +127,7 @@
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:for-each select="marc:subfield">
-                                <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                 <xsl:if test="position() != last()">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
@@ -139,7 +139,7 @@
                     <xsl:choose>
                         <xsl:when test="marc:subfield[@code = 'c']">
                             <xsl:for-each select="marc:subfield[@code = 'c']/preceding-sibling::*">
-                                <xsl:value-of select="normalize-space(.) => uwf:removeBrackets()"/>
+                                <xsl:value-of select="normalize-space(.) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                 <xsl:if test="position() != last()">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
@@ -147,7 +147,7 @@
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:for-each select="marc:subfield">
-                                <xsl:value-of select="normalize-space(.) => uwf:removeBrackets()"/>
+                                <xsl:value-of select="normalize-space(.) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                 <xsl:if test="position() != last()">
                                     <xsl:text> </xsl:text>
                                 </xsl:if>
@@ -161,10 +161,10 @@
             <xsl:choose>
                 <!-- remove ISBD punctuation if ISBD -->
                 <xsl:when test="$isISBD = true()">
-                    <xsl:value-of select="normalize-space($title) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                    <xsl:value-of select="normalize-space($title) => replace('\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                 </xsl:when>
                 <xsl:otherwise>
-                   <xsl:value-of select="normalize-space($title) => uwf:removeBrackets()"/>
+                    <xsl:value-of select="normalize-space($title) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                 </xsl:otherwise>
             </xsl:choose>
         </rdamd:P30156>
@@ -224,7 +224,7 @@
                                                     <!-- this means it came before / and is other title info -->
                                                     <xsl:when test="position() = 1">
                                                         <rdamd:P30142>
-                                                            <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                            <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                                         </rdamd:P30142>
                                                         <xsl:if test="uwf:testBrackets(.) = true()">
                                                             <rdamd:P30137>
@@ -236,7 +236,7 @@
                                                     <xsl:otherwise>
                                                         <xsl:for-each select="tokenize(., ' ; ')">
                                                             <rdamd:P30105>
-                                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                                             </rdamd:P30105>
                                                             <xsl:if test="uwf:testBrackets(.) = true()">
                                                                 <rdamd:P30137>
@@ -256,7 +256,7 @@
                                                     <xsl:choose>
                                                         <xsl:when test="ends-with($subfield/preceding-sibling::*[1], '=')">
                                                             <rdamd:P30156>
-                                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                                             </rdamd:P30156>
                                                             <xsl:if test="uwf:testBrackets(.) = true()">
                                                                 <rdamd:P30137>
@@ -266,7 +266,7 @@
                                                         </xsl:when>
                                                         <xsl:when test="ends-with($subfield/preceding-sibling::*[1], ':')">
                                                             <rdamd:P30142>
-                                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                                             </rdamd:P30142>
                                                             <xsl:if test="uwf:testBrackets(.) = true()">
                                                                 <rdamd:P30137>
@@ -277,7 +277,7 @@
                                                         <xsl:when test="ends-with($subfield/preceding-sibling::*[1], '/')">
                                                             <xsl:for-each select="tokenize(., ' ; ')">
                                                                 <rdamd:P30105>
-                                                                    <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                                    <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                                                 </rdamd:P30105>
                                                                 <xsl:if test="uwf:testBrackets(.) = true()">
                                                                     <rdamd:P30137>
@@ -290,7 +290,7 @@
                                                             <xsl:choose>
                                                                 <xsl:when test="$subfield/@code = 'b'">
                                                                     <rdamd:P30142>
-                                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                                                     </rdamd:P30142>
                                                                     <xsl:if test="uwf:testBrackets(.) = true()">
                                                                         <rdamd:P30137>
@@ -301,7 +301,7 @@
                                                                 <xsl:when test="$subfield/@code = 'c'">
                                                                     <xsl:for-each select="tokenize(., ' ; ')">
                                                                         <rdamd:P30105>
-                                                                            <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                                            <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                                                         </rdamd:P30105>
                                                                         <xsl:if test="uwf:testBrackets(.) = true()">
                                                                             <rdamd:P30137>
@@ -318,7 +318,7 @@
                                                 <!-- this is after : and is other title info -->
                                                 <xsl:otherwise>
                                                     <rdamd:P30142>
-                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                                     </rdamd:P30142>
                                                     <xsl:if test="uwf:testBrackets(.) = true()">
                                                         <rdamd:P30137>
@@ -340,7 +340,7 @@
                                             <xsl:choose>
                                                 <xsl:when test="ends-with($subfield/preceding-sibling::*[1], ':')">
                                                     <rdamd:P30142>
-                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                                     </rdamd:P30142>
                                                     <xsl:if test="uwf:testBrackets(.) = true()">
                                                         <rdamd:P30137>
@@ -350,7 +350,7 @@
                                                 </xsl:when>
                                                 <xsl:when test="ends-with($subfield/preceding-sibling::*[1], '=')">
                                                     <rdamd:P30156>
-                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                                     </rdamd:P30156>
                                                     <xsl:if test="uwf:testBrackets(.) = true()">
                                                         <rdamd:P30137>
@@ -361,7 +361,7 @@
                                                 <xsl:when test="ends-with($subfield/preceding-sibling::*[1], '/')">
                                                     <xsl:for-each select="tokenize(., ' ; ')">
                                                         <rdamd:P30105>
-                                                            <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                            <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                                         </rdamd:P30105>
                                                         <xsl:if test="uwf:testBrackets(.) = true()">
                                                             <rdamd:P30137>
@@ -374,7 +374,7 @@
                                                     <xsl:choose>
                                                         <xsl:when test="$subfield/@code = 'b'">
                                                             <rdamd:P30142>
-                                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                                             </rdamd:P30142>
                                                             <xsl:if test="uwf:testBrackets(.) = true()">
                                                                 <rdamd:P30137>
@@ -385,7 +385,7 @@
                                                         <xsl:when test="$subfield/@code = 'c'">
                                                             <xsl:for-each select="tokenize(., ' ; ')">
                                                                 <rdamd:P30105>
-                                                                    <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                                    <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                                                 </rdamd:P30105>
                                                                 <xsl:if test="uwf:testBrackets(.) = true()">
                                                                     <rdamd:P30137>
@@ -403,7 +403,7 @@
                                         <xsl:otherwise>
                                             <xsl:for-each select="tokenize(., ' ; ')">
                                                 <rdamd:P30105>
-                                                    <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                    <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                                 </rdamd:P30105>
                                                 <xsl:if test="uwf:testBrackets(.) = true()">
                                                     <rdamd:P30137>
@@ -420,7 +420,7 @@
                                 <xsl:choose>
                                     <xsl:when test="ends-with($subfield/preceding-sibling::*[1], ':')">
                                         <rdamd:P30142>
-                                            <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                            <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                         </rdamd:P30142>
                                         <xsl:if test="uwf:testBrackets(.) = true()">
                                             <rdamd:P30137>
@@ -430,7 +430,7 @@
                                     </xsl:when>
                                     <xsl:when test="ends-with($subfield/preceding-sibling::*[1], '=')">
                                         <rdamd:P30156>
-                                            <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                            <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                         </rdamd:P30156>
                                         <xsl:if test="uwf:testBrackets(.) = true()">
                                             <rdamd:P30137>
@@ -441,7 +441,7 @@
                                     <xsl:when test="ends-with($subfield/preceding-sibling::*[1], '/')">
                                         <xsl:for-each select="tokenize(., ' ; ')">
                                             <rdamd:P30105>
-                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                             </rdamd:P30105>
                                             <xsl:if test="uwf:testBrackets(.) = true()">
                                                 <rdamd:P30137>
@@ -454,7 +454,7 @@
                                         <xsl:choose>
                                             <xsl:when test="$subfield/@code = 'b'">
                                                 <rdamd:P30142>
-                                                    <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                    <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                                 </rdamd:P30142>
                                                 <xsl:if test="uwf:testBrackets(.) = true()">
                                                     <rdamd:P30137>
@@ -465,7 +465,7 @@
                                             <xsl:when test="$subfield/@code = 'c'">
                                                 <xsl:for-each select="tokenize(., ' ; ')">
                                                     <rdamd:P30105>
-                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                                     </rdamd:P30105>
                                                     <xsl:if test="uwf:testBrackets(.) = true()">
                                                         <rdamd:P30137>
@@ -496,7 +496,7 @@
                                                     <!-- this means it came before / and is other title info -->
                                                     <xsl:when test="position() = 1">
                                                         <rdamd:P30142>
-                                                            <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                            <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                                         </rdamd:P30142>
                                                         <xsl:if test="uwf:testBrackets(.) = true()">
                                                             <rdamd:P30137>
@@ -508,7 +508,7 @@
                                                     <xsl:otherwise>
                                                         <xsl:for-each select="tokenize(., ' ; ')">
                                                             <rdamd:P30105>
-                                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                                             </rdamd:P30105>
                                                             <xsl:if test="uwf:testBrackets(.) = true()">
                                                                 <rdamd:P30137>
@@ -526,7 +526,7 @@
                                                 <!-- this means it came before the : is title proper -->
                                                 <xsl:when test="position() = 1">
                                                     <rdamd:P30156>
-                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                                     </rdamd:P30156>
                                                     <xsl:if test="uwf:testBrackets(.) = true()">
                                                         <rdamd:P30137>
@@ -537,7 +537,7 @@
                                                 <!-- this is after : and is other title info -->
                                                 <xsl:otherwise>
                                                     <rdamd:P30142>
-                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                        <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                                     </rdamd:P30142>
                                                     <xsl:if test="uwf:testBrackets(.) = true()">
                                                         <rdamd:P30137>
@@ -557,7 +557,7 @@
                                         <!-- first is title proper -->
                                         <xsl:when test="position() = 1">
                                             <rdamd:P30156>
-                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                             </rdamd:P30156>
                                             <xsl:if test="uwf:testBrackets(.) = true()">
                                                 <rdamd:P30137>
@@ -569,7 +569,7 @@
                                         <xsl:otherwise>
                                             <xsl:for-each select="tokenize(., ' ; ')">
                                                 <rdamd:P30105>
-                                                    <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                                    <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                                 </rdamd:P30105>
                                                 <xsl:if test="uwf:testBrackets(.) = true()">
                                                     <rdamd:P30137>
@@ -584,7 +584,7 @@
                             <!-- If there is no additional punctuation, it is a parallel title -->
                             <xsl:otherwise>
                                 <rdamd:P30156>
-                                    <xsl:value-of select="replace(., '\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                    <xsl:value-of select="replace(., '\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                 </rdamd:P30156>
                                 <xsl:if test="uwf:testBrackets(.) = true()">
                                     <rdamd:P30137>
@@ -602,7 +602,7 @@
     <xsl:template name="F245-xx-b-notISBD" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'b']">
             <rdamd:P30142>
-                <xsl:value-of select="normalize-space(.) => uwf:removeBrackets()"/>
+                <xsl:value-of select="normalize-space(.) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
             </rdamd:P30142>
             <xsl:if test="uwf:testBrackets(.) = true()">
                 <rdamd:P30137>
@@ -615,7 +615,7 @@
     <xsl:template name="F245-xx-c-notISBD" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'c']">
             <rdamd:P30105>
-                <xsl:value-of select="normalize-space(.) => uwf:removeBrackets()"/>
+                <xsl:value-of select="normalize-space(.) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
             </rdamd:P30105>
             <xsl:if test="uwf:testBrackets(.) = true()">
                 <rdamd:P30137>

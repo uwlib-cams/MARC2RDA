@@ -526,18 +526,18 @@
             <xsl:when test="uwf:testBrackets($string) = true()">
                 <xsl:choose>
                     <xsl:when test="matches($string, '^\[.*\][\W=]*$')">
-                        <xsl:value-of select="replace($string, '(^\[)|(\])([\W=]*$)', '$3')"/>
+                        <xsl:value-of select="replace($string, '(^\[)|(\])([\W=]*$)', '$3') => normalize-space()"/>
                     </xsl:when>
                     <xsl:when test="matches($string, '^\[[^\]]*$')">
-                        <xsl:value-of select="replace($string, '^\[', '')"/>
+                        <xsl:value-of select="replace($string, '^\[', '') => normalize-space()"/>
                     </xsl:when>
                     <xsl:when test="matches($string, '^[^\[]*\][\W=]*$')">
-                        <xsl:value-of select="replace($string, '(\])([\W=]*$)', '$2')"/>
+                        <xsl:value-of select="replace($string, '(\])([\W=]*$)', '$2') => normalize-space()"/>
                     </xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:otherwise>
-               <xsl:value-of select="$string"/>
+               <xsl:value-of select="normalize-space($string)"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>

@@ -153,7 +153,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Manifestation.en"/>
       <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test008exp"/>
       <fake:marcfield>F245 14 $a The others raisd [sic] in me : $b 150 readings of Sonnet 150 : a plunderverse project / $c by Gregory Betts.</fake:marcfield>
-      <rdamd:titleProper.en>The others raisd [sic] in me</rdamd:titleProper.en>
+      <rdamd:titleProper.en>The others raisd in me</rdamd:titleProper.en>
       <rdamd:otherTitleInformation.en>150 readings of Sonnet 150</rdamd:otherTitleInformation.en>
       <rdamd:otherTitleInformation.en>a plunderverse project</rdamd:otherTitleInformation.en>
       <rdamd:statementOfResponsibilityRelatingToTitleProper.en>by Gregory Betts.</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
@@ -283,7 +283,7 @@
       <fake:marcfield>F245 10 $a Narrenlieder : $b nach Shakespeare "Was ihr wollt" : für Violincello [sic] solo, [1996/1997] / $c Tilo Medek.</fake:marcfield>
       <rdamd:titleProper.en>Narrenlieder</rdamd:titleProper.en>
       <rdamd:otherTitleInformation.en>nach Shakespeare "Was ihr wollt"</rdamd:otherTitleInformation.en>
-      <rdamd:otherTitleInformation.en>für Violincello [sic] solo, [1996/1997]</rdamd:otherTitleInformation.en>
+      <rdamd:otherTitleInformation.en>für Violincello solo, [1996/1997]</rdamd:otherTitleInformation.en>
       <rdamd:statementOfResponsibilityRelatingToTitleProper.en>Tilo Medek.</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test015wor">
