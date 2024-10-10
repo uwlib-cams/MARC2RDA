@@ -536,6 +536,79 @@
     <!-- 533 - Reproduction Note -->
     <xsl:template
         match="marc:datafield[@tag = '533'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '533']"
+        mode="wor" expand-text="yes">
+        <xsl:if test="marc:subfield[@code = '7']">
+            <xsl:variable name="ldr6-7" select="substring(preceding-sibling::marc:leader, 7, 2)"/>
+            <xsl:for-each select="marc:subfield[@code = '7']">
+                <!-- continuing resources -->
+                <xsl:if test="$ldr6-7 = 'ab' or $ldr6-7 = 'ai' or $ldr6-7 = 'as'">
+                    <!-- c12 = 008/18 -->
+                    <xsl:call-template name="F008-c18-CR">
+                        <xsl:with-param name="char18" select="substring(., 13, 1)"/>
+                    </xsl:call-template>
+                    <!-- c13 = 008/19 -->
+                    <xsl:call-template name="F008-c19-CR">
+                        <xsl:with-param name="char19" select="substring(., 14, 1)"/>
+                    </xsl:call-template>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template
+        match="marc:datafield[@tag = '533'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '533']"
+        mode="exp" expand-text="yes">
+        <xsl:if test="marc:subfield[@code = '7']">
+            <xsl:variable name="ldr6-7" select="substring(preceding-sibling::marc:leader, 7, 2)"/>
+            <xsl:for-each select="marc:subfield[@code = '7']">
+                <!-- c14 = 008/23 or 008/29 -->
+                <xsl:choose>
+                    <!-- books -->
+                    <xsl:when test="$ldr6-7 = 'aa' or $ldr6-7 = 'ac' or $ldr6-7 = 'ad' or $ldr6-7 = 'am'
+                        or $ldr6-7 = 'ca' or $ldr6-7 = 'cc' or $ldr6-7 = 'cd' or $ldr6-7 = 'cm'">
+                        <xsl:call-template name="F008-c23_29-f-SOME">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                    <!-- continuing resources -->
+                    <xsl:when test="$ldr6-7 = 'ab' or $ldr6-7 = 'ai' or $ldr6-7 = 'as'">
+                        <xsl:call-template name="F008-c23_29-f-SOME">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                    <!-- maps -->
+                    <xsl:when test="substring($ldr6-7, 1, 1) = 'e' or substring($ldr6-7, 1, 1) = 'f'">
+                        <xsl:call-template name="F008-c23_29-f-SOME">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                    <!-- mixed materials -->
+                    <xsl:when test="substring($ldr6-7, 1, 1) = 'p'">
+                        <xsl:call-template name="F008-c23_29-f-SOME">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                    <!-- music -->
+                    <xsl:when test="substring($ldr6-7, 1, 1) = 'i' or substring($ldr6-7, 1, 1) = 'j'
+                        or substring($ldr6-7, 1, 1) = 'c' or substring($ldr6-7, 1, 1) = 'd'">
+                        <xsl:call-template name="F008-c23_29-f-SOME">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                    <!-- visual materials -->
+                    <xsl:when test="substring($ldr6-7, 1, 1) = 'g' or substring($ldr6-7, 1, 1) = 'k'
+                        or substring($ldr6-7, 1, 1) = 'o' or substring($ldr6-7, 1, 1) = 'r'">
+                        <xsl:call-template name="F008-c23_29-f-SOME">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template
+        match="marc:datafield[@tag = '533'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '533']"
         mode="man" expand-text="yes">
         <xsl:call-template name="getmarc"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
@@ -550,7 +623,7 @@
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'c']">
             <rdamd:P30297>
-                <xsl:value-of select="translate(., ',', '') => normalize-space()"/>
+                <xsl:value-of select="translate(., ',', '') => normalize-space() => uwf:removeBrackets()"/>
             </rdamd:P30297>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'd']">
@@ -578,7 +651,118 @@
                 <xsl:value-of select="."/>
             </rdamd:P30137>
         </xsl:for-each>
-<!--        <xsl:call-template name="F533-xx-7"/>-->
+        <xsl:if test="marc:subfield[@code = '7']">
+            <xsl:variable name="ldr6-7" select="substring(preceding-sibling::marc:leader, 7, 2)"/>
+            <xsl:for-each select="marc:subfield[@code = '7']">
+                <xsl:variable name="char0" select="substring(., 1, 1)"/>
+                <!-- c0 = 008/6 -->
+                <xsl:if test="$char0 = 'c'">
+                    <rdamd:P30137>
+                        <xsl:text>Continuing resource currently published.</xsl:text>
+                    </rdamd:P30137>
+                </xsl:if>
+                <xsl:if test="$char0 = 'd'">
+                    <rdamd:P30137>
+                        <xsl:text>Continuing resource ceased publication.</xsl:text>
+                    </rdamd:P30137>
+                </xsl:if>
+                <!-- c9-11 = 008/15-17 -->
+                <xsl:if test="substring(., 10, 3) != '   '">
+                    <xsl:call-template name="F008-c15-17">
+                        <xsl:with-param name="char15-17" select="substring(., 10, 3)"/>
+                    </xsl:call-template>
+                </xsl:if>
+                <xsl:choose>
+                    <!-- books -->
+                    <xsl:when test="$ldr6-7 = 'aa' or $ldr6-7 = 'ac' or $ldr6-7 = 'ad' or $ldr6-7 = 'am'
+                        or $ldr6-7 = 'ca' or $ldr6-7 = 'cc' or $ldr6-7 = 'cd' or $ldr6-7 = 'cm'">
+                        <xsl:call-template name="F008-c23_29-abcor-SOME">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                        <xsl:call-template name="F008-c23_29-dqs-SOME-origMan">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                        <xsl:call-template name="F008-c23_29-ghi-SOME-origMan">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                    <!-- computer files -->
+                    <xsl:when test="substring($ldr6-7, 1, 1) = 'm'">
+                        <xsl:call-template name="F008-c23-CF">
+                            <xsl:with-param name="char23" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                        <xsl:call-template name="F008-c23-CF-origMan">
+                            <xsl:with-param name="char23" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                    <!-- continuing resources -->
+                    <xsl:when test="$ldr6-7 = 'ab' or $ldr6-7 = 'ai' or $ldr6-7 = 'as'">
+                        <xsl:call-template name="F008-c23_29-abcor-SOME">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                        <xsl:call-template name="F008-c23_29-dqs-SOME-origMan">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                        <xsl:call-template name="F008-c23_29-ghi-SOME-origMan">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                    <!-- maps -->
+                    <xsl:when test="substring($ldr6-7, 1, 1) = 'e' or substring($ldr6-7, 1, 1) = 'f'">
+                        <xsl:call-template name="F008-c23_29-abcor-SOME">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                        <xsl:call-template name="F008-c23_29-dqs-SOME-origMan">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                    <!-- mixed materials -->
+                    <xsl:when test="substring($ldr6-7, 1, 1) = 'p'">
+                        <xsl:call-template name="F008-c23_29-abcor-SOME">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                        <xsl:call-template name="F008-c23_29-dqs-SOME-origMan">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                        <xsl:call-template name="F008-c23_29-ghi-SOME-origMan">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                        <xsl:call-template name="F008-c23-MX-origMan">
+                            <xsl:with-param name="char23" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                        <xsl:call-template name="F008-c23-xz-SOME-origMan">
+                            <xsl:with-param name="char23" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                    <!-- music -->
+                    <xsl:when test="substring($ldr6-7, 1, 1) = 'i' or substring($ldr6-7, 1, 1) = 'j'
+                        or substring($ldr6-7, 1, 1) = 'c' or substring($ldr6-7, 1, 1) = 'd'">
+                        <xsl:call-template name="F008-c23_29-abcor-SOME">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                        <xsl:call-template name="F008-c23_29-dqs-SOME-origMan">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                        <xsl:call-template name="F008-c23_29-ghi-SOME-origMan">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                        <xsl:call-template name="F008-c23-xz-SOME-origMan">
+                            <xsl:with-param name="char23" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                    <!-- visual materials -->
+                    <xsl:when test="substring($ldr6-7, 1, 1) = 'g' or substring($ldr6-7, 1, 1) = 'k'
+                        or substring($ldr6-7, 1, 1) = 'o' or substring($ldr6-7, 1, 1) = 'r'">
+                        <xsl:call-template name="F008-c23_29-abcor-SOME">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                        <xsl:call-template name="F008-c23_29-dqs-SOME-origMan">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:if>
     </xsl:template>
     
     <!-- 536 - Funding Information Note -->
