@@ -3,7 +3,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
       <rdawd:identifierForWork.en>245-test001wor</rdawd:identifierForWork.en>
       <fake:marcfield>F245 10 $a [James Anderson [junior] correspondence].</fake:marcfield>
-      <rdawd:titleOfWork.en>James Anderson [junior] correspondence.</rdawd:titleOfWork.en>
+      <rdawd:titleOfWork.en>James Anderson [junior] correspondence</rdawd:titleOfWork.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test001exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Expression.en"/>
@@ -14,14 +14,14 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Manifestation.en"/>
       <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test001exp"/>
       <fake:marcfield>F245 10 $a [James Anderson [junior] correspondence].</fake:marcfield>
-      <rdamd:titleProper.en>James Anderson [junior] correspondence.</rdamd:titleProper.en>
+      <rdamd:titleProper.en>James Anderson [junior] correspondence</rdamd:titleProper.en>
       <rdamd:noteOnManifestation.en>Title proper "James Anderson [junior] correspondence" is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test002wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
       <rdawd:identifierForWork.en>245-test002wor</rdawd:identifierForWork.en>
       <fake:marcfield>F245 00 $k Letter, $f 1901 March 6, $b Dublin, to Henrik Ibsen, Kristiana [Oslo].</fake:marcfield>
-      <rdawd:titleOfWork.en>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo].</rdawd:titleOfWork.en>
+      <rdawd:titleOfWork.en>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo]</rdawd:titleOfWork.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test002exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Expression.en"/>
@@ -32,7 +32,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Manifestation.en"/>
       <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test002exp"/>
       <fake:marcfield>F245 00 $k Letter, $f 1901 March 6, $b Dublin, to Henrik Ibsen, Kristiana [Oslo].</fake:marcfield>
-      <rdamd:titleProper.en>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo].</rdamd:titleProper.en>
+      <rdamd:titleProper.en>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo]</rdamd:titleProper.en>
       <rdamd:noteOnManifestation.en>Title proper is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
       <rdamd:dateOfManifestation.en>1901 March 6</rdamd:dateOfManifestation.en>
       <rdamd:noteOnManifestation.en>Letter.</rdamd:noteOnManifestation.en>
@@ -56,7 +56,7 @@
       <rdamd:otherTitleInformation.en>unravelling the story of the two poets</rdamd:otherTitleInformation.en>
       <rdamd:noteOnManifestation.en>Other title information "unravelling the story of the two poets" is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
       <rdamd:statementOfResponsibilityRelatingToTitleProper.en>Peter Dawkins</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
-      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>foreword by Mark Rylance.</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>foreword by Mark Rylance</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
       <rdamd:noteOnManifestation.en>Statement of responsibility "foreword by Mark Rylance" is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test004wor">
@@ -76,7 +76,7 @@
       <fake:marcfield>F245 00 $a Cavendish and Shakespeare : $b interconnections / $c edited by Katherine Romack [and] James Fitzmaurice.</fake:marcfield>
       <rdamd:titleProper.en>Cavendish and Shakespeare</rdamd:titleProper.en>
       <rdamd:otherTitleInformation.en>interconnections</rdamd:otherTitleInformation.en>
-      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>edited by Katherine Romack [and] James Fitzmaurice.</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>edited by Katherine Romack [and] James Fitzmaurice</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test005wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
@@ -96,7 +96,7 @@
       <rdamd:titleProper.en>Der Dey von Elba in Paris</rdamd:titleProper.en>
       <rdamd:otherTitleInformation.en>Sendschreiben des Thürmers in der Hauptstadt an seinen Vetter Andres</rdamd:otherTitleInformation.en>
       <rdamd:otherTitleInformation.en>Faksmilie [that is Faksimile] des Erstdrucks</rdamd:otherTitleInformation.en>
-      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>herausgegeben und kommentiert von Wulf Segebrecht.</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>herausgegeben und kommentiert von Wulf Segebrecht</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test006wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
@@ -114,7 +114,7 @@
       <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test006exp"/>
       <fake:marcfield>F245 10 $a Sonnett für Wien : $b [songs of Erich Korngold].</fake:marcfield>
       <rdamd:titleProper.en>Sonnett für Wien</rdamd:titleProper.en>
-      <rdamd:otherTitleInformation.en>songs of Erich Korngold.</rdamd:otherTitleInformation.en>
+      <rdamd:otherTitleInformation.en>songs of Erich Korngold</rdamd:otherTitleInformation.en>
       <rdamd:noteOnManifestation.en>Other title information "songs of Erich Korngold" is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test007wor">
@@ -136,7 +136,7 @@
       <rdamd:statementOfResponsibilityRelatingToTitleProper.en>the Royal Shakespeare Company</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
       <rdamd:statementOfResponsibilityRelatingToTitleProper.en>producers, John Wyver, Sebastian Grant</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
       <rdamd:statementOfResponsibilityRelatingToTitleProper.en>director, Gregory Doran</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
-      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>Illuminations, RSC for BBC.</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>Illuminations, RSC for BBC</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test008wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
@@ -156,7 +156,7 @@
       <rdamd:titleProper.en>The others raisd in me</rdamd:titleProper.en>
       <rdamd:otherTitleInformation.en>150 readings of Sonnet 150</rdamd:otherTitleInformation.en>
       <rdamd:otherTitleInformation.en>a plunderverse project</rdamd:otherTitleInformation.en>
-      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>by Gregory Betts.</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>by Gregory Betts</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test009wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
@@ -178,7 +178,7 @@
       <rdamd:otherTitleInformation.en>set of parts</rdamd:otherTitleInformation.en>
       <rdamd:noteOnManifestation.en>Other title information "set of parts" is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
       <rdamd:statementOfResponsibilityRelatingToTitleProper.en>[music by] Kaijia Saariaho</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
-      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>lyrics from The Tempest by William Shakespeare.</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>lyrics from The Tempest by William Shakespeare</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
       <rdamd:noteOnManifestation.en>Statement of responsibility "lyrics from The Tempest by William Shakespeare" is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test010wor">
@@ -201,7 +201,7 @@
       <rdamd:noteOnManifestation.en>Title proper "Risālah fī jawāl" is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
       <rdamd:titleProper.en>Risaala fi jawaal</rdamd:titleProper.en>
       <rdamd:otherTitleInformation.en>mixed-messages, tales of missing and mobile communities at the University of Khatroum</rdamd:otherTitleInformation.en>
-      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>Siri Lamoureaux.</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>Siri Lamoureaux</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
       <rdamd:categoryOfManifestation.en>electronic resource</rdamd:categoryOfManifestation.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test011wor">
@@ -221,7 +221,7 @@
       <fake:marcfield>F245 10 $a Lambe Latin : $b tales of a mantua maker and her brother, from the South Sea Co. to the Merchant of Venice / [by Angela Lorenz].</fake:marcfield>
       <rdamd:titleProper.en>Lambe Latin</rdamd:titleProper.en>
       <rdamd:otherTitleInformation.en>tales of a mantua maker and her brother, from the South Sea Co. to the Merchant of Venice</rdamd:otherTitleInformation.en>
-      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>by Angela Lorenz.</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>by Angela Lorenz</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
       <rdamd:noteOnManifestation.en>Statement of responsibility "by Angela Lorenz" is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test012wor">
@@ -242,7 +242,7 @@
       <rdamd:titleProper.en>Shinkansen[star]rs Metal Macbeth</rdamd:titleProper.en>
       <rdamd:statementOfResponsibilityRelatingToTitleProper.en>the original by William Shakespeare</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
       <rdamd:statementOfResponsibilityRelatingToTitleProper.en>arrangement by Kankuro Kudo</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
-      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>directed by Hidenori Inoue.</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>directed by Hidenori Inoue</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test013wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
@@ -264,7 +264,7 @@
       <rdamd:statementOfResponsibilityRelatingToTitleProper.en>created and written by Conor McCreery and Anthony Del Col</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
       <rdamd:statementOfResponsibilityRelatingToTitleProper.en>art by Andy Belanger</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
       <rdamd:statementOfResponsibilityRelatingToTitleProper.en>colors by Ian Herring</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
-      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>lettering by Chris Mowry, Robbie Robbins, and Neil Uyetake.</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>lettering by Chris Mowry, Robbie Robbins, and Neil Uyetake</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test014wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
@@ -284,7 +284,7 @@
       <rdamd:titleProper.en>Narrenlieder</rdamd:titleProper.en>
       <rdamd:otherTitleInformation.en>nach Shakespeare "Was ihr wollt"</rdamd:otherTitleInformation.en>
       <rdamd:otherTitleInformation.en>für Violincello solo, [1996/1997]</rdamd:otherTitleInformation.en>
-      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>Tilo Medek.</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>Tilo Medek</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test015wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
@@ -362,7 +362,7 @@
       <rdamd:titleProper.en>New paintings by Franz Kline</rdamd:titleProper.en>
       <rdamd:noteOnManifestation.en>Title proper [New paintings by Franz Kline" is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
       <rdamd:otherTitleInformation.en>opening ... December 4 to December 30, 1961</rdamd:otherTitleInformation.en>
-      <rdamd:otherTitleInformation.en>at Sidney Janis 15 East 57 N Y.</rdamd:otherTitleInformation.en>
+      <rdamd:otherTitleInformation.en>at Sidney Janis 15 East 57 N Y</rdamd:otherTitleInformation.en>
       <rdamd:noteOnManifestation.en>Other title information "at Sidney Janis 15 East 57 N Y" is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test019wor">
@@ -385,7 +385,7 @@
       <rdamd:otherTitleInformation.en>acts III-IV</rdamd:otherTitleInformation.en>
       <rdamd:noteOnManifestation.en>Other title information "acts III-IV" is assigned by the cataloguing agency.</rdamd:noteOnManifestation.en>
       <rdamd:statementOfResponsibilityRelatingToTitleProper.en>produced by Bill Wisneski</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
-      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>directed by Bill Wisneski and Chia Longtree.</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>directed by Bill Wisneski and Chia Longtree</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test020wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>

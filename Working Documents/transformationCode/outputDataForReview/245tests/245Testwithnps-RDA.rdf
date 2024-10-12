@@ -15,7 +15,7 @@
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test001exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 00 $a Collection series. $n 50, $p Shakespeare music : $b love songs on the lute.</fake:marcfield>
       <rdamd:P30156>Collection series. 50, Shakespeare music</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30142>love songs on the lute.</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30142>love songs on the lute</rdamd:P30142><!--rdamd:P30142 = has other title information-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test002wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -34,7 +34,7 @@
       <fake:marcfield>F245 00 $a English historical linguistics : $b an international handbook. $n Volume 1 / $c Alexander Bergs, Laurel J. Brinton.</fake:marcfield>
       <rdamd:P30156>English historical linguistics Volume 1</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30142>an international handbook.</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30105>Alexander Bergs, Laurel J. Brinton.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30105>Alexander Bergs, Laurel J. Brinton</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test003wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -53,7 +53,7 @@
       <fake:marcfield>F245 10 $a Modern British playwriting. $p The 1960s : $b voices, documents, new interpretations / $c Steve Nicholson.</fake:marcfield>
       <rdamd:P30156>Modern British playwriting. The 1960s</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30142>voices, documents, new interpretations</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30105>Steve Nicholson.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30105>Steve Nicholson</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test004wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -71,7 +71,7 @@
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test004exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 14 $a The Letters of William Cullen Bryant $n Volume VI,  $p 1872–1878 / $c edited by William Cullen Bryant II and Thomas G. Voss.</fake:marcfield>
       <rdamd:P30156>The Letters of William Cullen Bryant Volume VI, 1872–1878</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30105>edited by William Cullen Bryant II and Thomas G. Voss.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30105>edited by William Cullen Bryant II and Thomas G. Voss</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test005wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -90,7 +90,7 @@
       <fake:marcfield>F245 10 $a Advances in visual computing : $b 7th International Symposium, ISVC 2011, Las Vegas, NV, USA, September 26-28, 2011, proceedings. $n Part I / $c George Bebis [and others] (eds.).</fake:marcfield>
       <rdamd:P30156>Advances in visual computing Part I</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <rdamd:P30142>7th International Symposium, ISVC 2011, Las Vegas, NV, USA, September 26-28, 2011, proceedings.</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30105>George Bebis [and others] (eds.).</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30105>George Bebis [and others] (eds.)</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test006wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -108,6 +108,6 @@
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test006exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F245 00 $a Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. $n Part II, $p Labour unions = $b Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers. $n Partie II, $p Syndicats ouvriers.</fake:marcfield>
       <rdamd:P30156>Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. Part II, Labour unions</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30156>Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers. Partie II, Syndicats ouvriers.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30156>Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers. Partie II, Syndicats ouvriers</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
 </rdf:RDF>

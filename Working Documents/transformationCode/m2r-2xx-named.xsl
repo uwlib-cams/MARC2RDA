@@ -19,16 +19,7 @@
     <xsl:import href="m2r-functions.xsl"/>
     
     <xsl:template name="F245-xx-a" expand-text="yes">
-        <xsl:variable name="isISBD">
-            <xsl:choose>
-                <xsl:when test="(substring(preceding-sibling::marc:leader, 19, 1) = 'i' or substring(preceding-sibling::marc:leader, 19, 1) = 'a')">
-                    <xsl:value-of select="true()"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:value-of select="false()"/>
-                </xsl:otherwise>
-            </xsl:choose>
-        </xsl:variable>
+        <xsl:param name="isISBD"/>
         <xsl:choose>
             <!-- a with no following n, p, or s subfields either immediately following or following after other title info -->
             <xsl:when test="marc:subfield[@code = 'a'][not(following-sibling::*)] or
@@ -105,16 +96,7 @@
     </xsl:template>
     
     <xsl:template name="F245-xx-notA" expand-text="yes">
-        <xsl:variable name="isISBD">
-            <xsl:choose>
-                <xsl:when test="(substring(preceding-sibling::marc:leader, 19, 1) = 'i' or substring(preceding-sibling::marc:leader, 19, 1) = 'a')">
-                    <xsl:value-of select="true()"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:value-of select="false()"/>
-                </xsl:otherwise>
-            </xsl:choose>
-        </xsl:variable>
+        <xsl:param name="isISBD"/>
         <xsl:variable name="title">
             <xsl:choose>
                 <xsl:when test="$isISBD = true()">

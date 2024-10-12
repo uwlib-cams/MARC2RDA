@@ -27,6 +27,25 @@
     
     <xsl:template match="marc:datafield[@tag = '245']" mode="wor" >
         <xsl:call-template name="getmarc"/>
+        <!-- copy of 245 where last subfield's ending punctuation (, or .) is removed -->
+        <xsl:variable name="copy245">
+            <xsl:copy select=".">
+                <xsl:copy select="./@tag"/>
+                <xsl:for-each select="child::*">
+                    <xsl:choose>
+                        <xsl:when test="position() = last()">
+                            <marc:subfield>
+                                <xsl:attribute name="code" select="./@code"/>
+                                <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
+                            </marc:subfield>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:copy-of select="."/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:for-each>
+            </xsl:copy>
+        </xsl:variable>
         <xsl:variable name="isISBD">
             <xsl:choose>
                 <xsl:when test="(substring(preceding-sibling::marc:leader, 19, 1) = 'i' or substring(preceding-sibling::marc:leader, 19, 1) = 'a')">
@@ -37,6 +56,7 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
+        <xsl:for-each select="$copy245/marc:datafield">
         <xsl:choose>
             <xsl:when test="marc:subfield[@code = 'a']">
                 <xsl:choose>
@@ -68,8 +88,7 @@
                                         <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                                         <xsl:if test="position() != last()">
                                             <xsl:text> </xsl:text>
-                                        </xsl:if>
-                                    </xsl:for-each>
+                                        </xsl:if>                                    </xsl:for-each>
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <xsl:value-of select="uwf:removeBrackets(marc:subfield[@code = 'a'])"/>
@@ -113,23 +132,56 @@
                 </rdawd:P10088>
             </xsl:otherwise>
         </xsl:choose>
-        
+        </xsl:for-each>
     </xsl:template>    
     <xsl:template match="marc:datafield[@tag = '245'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '245']" 
         mode="man">
         <xsl:call-template name="getmarc"/>
+        <xsl:variable name="isISBD">
+            <xsl:choose>
+                <xsl:when test="(substring(preceding-sibling::marc:leader, 19, 1) = 'i' or substring(preceding-sibling::marc:leader, 19, 1) = 'a')">
+                    <xsl:value-of select="true()"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="false()"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <!-- copy of 245 where last subfield's ending punctuation (, or .) is removed -->
+        <xsl:variable name="copy245">
+            <xsl:copy select=".">
+                <xsl:copy select="./@tag"/>
+                <xsl:for-each select="child::*">
+                    <xsl:choose>
+                        <xsl:when test="position() = last()">
+                            <marc:subfield>
+                                <xsl:attribute name="code" select="./@code"/>
+                                <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
+                            </marc:subfield>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:copy-of select="."/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:for-each>
+            </xsl:copy>
+        </xsl:variable>
+        <xsl:for-each select="$copy245/marc:datafield">
         <xsl:choose>
             <xsl:when test="marc:subfield[@code = 'a']">
-                <xsl:call-template name="F245-xx-a"/>
+                <xsl:call-template name="F245-xx-a">
+                    <xsl:with-param name="isISBD" select="$isISBD"/>
+                </xsl:call-template>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:call-template name="F245-xx-notA"/>
+                <xsl:call-template name="F245-xx-notA">
+                    <xsl:with-param name="isISBD" select="$isISBD"/>
+                </xsl:call-template>
             </xsl:otherwise>
         </xsl:choose>
         <xsl:choose>
             <xsl:when
-                test="(substring(preceding-sibling::marc:leader, 19, 1) = 'i' or substring(preceding-sibling::marc:leader, 19, 1) = 'a')">
-<!--                <xsl:call-template name="F245-xx-ISBD"/>-->
+                test="$isISBD = true()">
                 <xsl:if test="marc:subfield[@code = 'a']">
                     <xsl:call-template name="F245-xx-b-ISBD"/>
                 </xsl:if>
@@ -145,6 +197,7 @@
         <xsl:call-template name="F245-xx-f-g"/>
         <xsl:call-template name="F245-xx-h"/>
         <xsl:call-template name="F245-xx-k"/>
+        </xsl:for-each>
     </xsl:template>
  
  

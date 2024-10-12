@@ -15,7 +15,7 @@
       <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test001exp"/>
       <fake:marcfield>F245 00 $a Collection series. $n 50, $p Shakespeare music : $b love songs on the lute.</fake:marcfield>
       <rdamd:titleProper.en>Collection series. 50, Shakespeare music</rdamd:titleProper.en>
-      <rdamd:otherTitleInformation.en>love songs on the lute.</rdamd:otherTitleInformation.en>
+      <rdamd:otherTitleInformation.en>love songs on the lute</rdamd:otherTitleInformation.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test002wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
@@ -34,7 +34,7 @@
       <fake:marcfield>F245 00 $a English historical linguistics : $b an international handbook. $n Volume 1 / $c Alexander Bergs, Laurel J. Brinton.</fake:marcfield>
       <rdamd:titleProper.en>English historical linguistics Volume 1</rdamd:titleProper.en>
       <rdamd:otherTitleInformation.en>an international handbook.</rdamd:otherTitleInformation.en>
-      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>Alexander Bergs, Laurel J. Brinton.</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>Alexander Bergs, Laurel J. Brinton</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test003wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
@@ -53,7 +53,7 @@
       <fake:marcfield>F245 10 $a Modern British playwriting. $p The 1960s : $b voices, documents, new interpretations / $c Steve Nicholson.</fake:marcfield>
       <rdamd:titleProper.en>Modern British playwriting. The 1960s</rdamd:titleProper.en>
       <rdamd:otherTitleInformation.en>voices, documents, new interpretations</rdamd:otherTitleInformation.en>
-      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>Steve Nicholson.</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>Steve Nicholson</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test004wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
@@ -71,7 +71,7 @@
       <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test004exp"/>
       <fake:marcfield>F245 14 $a The Letters of William Cullen Bryant $n Volume VI,  $p 1872–1878 / $c edited by William Cullen Bryant II and Thomas G. Voss.</fake:marcfield>
       <rdamd:titleProper.en>The Letters of William Cullen Bryant Volume VI, 1872–1878</rdamd:titleProper.en>
-      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>edited by William Cullen Bryant II and Thomas G. Voss.</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>edited by William Cullen Bryant II and Thomas G. Voss</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test005wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
@@ -90,7 +90,7 @@
       <fake:marcfield>F245 10 $a Advances in visual computing : $b 7th International Symposium, ISVC 2011, Las Vegas, NV, USA, September 26-28, 2011, proceedings. $n Part I / $c George Bebis [and others] (eds.).</fake:marcfield>
       <rdamd:titleProper.en>Advances in visual computing Part I</rdamd:titleProper.en>
       <rdamd:otherTitleInformation.en>7th International Symposium, ISVC 2011, Las Vegas, NV, USA, September 26-28, 2011, proceedings.</rdamd:otherTitleInformation.en>
-      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>George Bebis [and others] (eds.).</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>George Bebis [and others] (eds.)</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test006wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Work.en"/>
@@ -108,6 +108,6 @@
       <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/245-test006exp"/>
       <fake:marcfield>F245 00 $a Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. $n Part II, $p Labour unions = $b Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers. $n Partie II, $p Syndicats ouvriers.</fake:marcfield>
       <rdamd:titleProper.en>Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. Part II, Labour unions</rdamd:titleProper.en>
-      <rdamd:titleProper.en>Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers. Partie II, Syndicats ouvriers.</rdamd:titleProper.en>
+      <rdamd:titleProper.en>Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers. Partie II, Syndicats ouvriers</rdamd:titleProper.en>
    </rdf:Description>
 </rdf:RDF>
