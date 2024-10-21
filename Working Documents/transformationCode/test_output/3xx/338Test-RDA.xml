@@ -20,30 +20,109 @@
          xmlns:rdap="http://rdaregistry.info/Elements/p/"
          xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
          xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
          xmlns:rdaw="http://rdaregistry.info/Elements/w/"
          xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
          xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwf="http://universityOfWashington/functions"
          xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
-   <rdf:Description rdf:about="http://fakeIRI2.edu/338-test1wor">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/338-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/338-test1exp"/>
       <rdawd:P10002>338-test1wor</rdawd:P10002>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/338-test1exp">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/338-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/338-test1man"/>
-      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/338-test1wor"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/338-test1wor"/>
       <rdaed:P20002>338-test1exp</rdaed:P20002>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/338-test1man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/338-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/338-test1exp"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/338-test1exp"/>
+      <fake:marcfield>F338 ## $a audio disc $a videodisc $3 test3</fake:marcfield>
+      <rdamd:P30001>audio disc</rdamd:P30001>
+      <rdamd:P30137>Carrier type audio disc applies to the manifestation's test3</rdamd:P30137>
+      <rdamd:P30001>videodisc</rdamd:P30001>
+      <rdamd:P30137>Carrier type videodisc applies to the manifestation's test3</rdamd:P30137>
+      <fake:marcfield>F338 ## $b sd $3 test3</fake:marcfield>
+      <rdamd:P30001>sd</rdamd:P30001>
+      <rdamd:P30137>Carrier type sd applies to the manifestation's test3</rdamd:P30137>
+      <fake:marcfield>F338 ## $a audio disc $b sd $2 rdacarrier $3 test3</fake:marcfield>
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/sd"/>
+      <rdamd:P30137>Media type http://id.loc.gov/vocabulary/carriers/sd applies to the manifestation's test3</rdamd:P30137>
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/sd"/>
+      <rdamd:P30137>Media type http://id.loc.gov/vocabulary/carriers/sd applies to the manifestation's test3</rdamd:P30137>
+      <fake:marcfield>F338 ## $a audio disc $b 1004 $2 rdact $3 test3</fake:marcfield>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
       <rdamd:P30137>Media type http://rdaregistry.info/termList/RDACarrierType/1004 applies to the manifestation's test3</rdamd:P30137>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
       <rdamd:P30137>Media type http://rdaregistry.info/termList/RDACarrierType/1004 applies to the manifestation's test3</rdamd:P30137>
+      <fake:marcfield>F338 ## $1 http://id.loc.gov/vocabulary/carriers/sd $3 test3</fake:marcfield>
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/sd"/>
+      <rdamd:P30137>Carrier type http://id.loc.gov/vocabulary/carriers/sd applies to the manifestation's test3</rdamd:P30137>
+      <fake:marcfield>F338 ## $a audio disc $0 (uri)http://id.loc.gov/vocabulary/carriers/sd $3 test3</fake:marcfield>
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/carriers/sd"/>
+      <rdamd:P30137>Carrier type http://id.loc.gov/vocabulary/carriers/sd applies to the manifestation's test3</rdamd:P30137>
+      <fake:marcfield>F338 ## $a volume $b made up b $a other $b made up b 2 $2 made up source $3 test3</fake:marcfield>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/concept/madeupsource/volume"/>
+      <rdamd:P30137>Carrier type http://marc2rda.edu/fake/concept/madeupsource/volume applies to the manifestation's test3</rdamd:P30137>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/concept/madeupsource/other"/>
+      <rdamd:P30137>Carrier type http://marc2rda.edu/fake/concept/madeupsource/other applies to the manifestation's test3</rdamd:P30137>
+      <fake:marcfield>F338 ## $a audio disc $b made up b $b made up b 2 $2 source $3 test3</fake:marcfield>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/concept/source/audiodisc"/>
+      <rdamd:P30137>Carrier type http://marc2rda.edu/fake/concept/source/audiodisc applies to the manifestation's test3</rdamd:P30137>
+      <fake:marcfield>F338 ## $b made up b $2 source $3 test3</fake:marcfield>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/concept/source/madeupb"/>
+      <rdamd:P30137>Media type http://marc2rda.edu/fake/concept/source/madeupb applies to the manifestation's test3</rdamd:P30137>
+      <fake:marcfield>F338 ## $6 880-01 $a online resource $b cr $2 source</fake:marcfield>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/concept/source/onlineresource"/>
+      <fake:marcfield>F880 ## $6 338-01 $a test 880 a $b test 880 b $2 source</fake:marcfield>
+      <fake:marcfield>F880 ## $6 338-00 $b sd $2 source</fake:marcfield>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/concept/source/sd"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/madeupsource/volume">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>volume</skos:prefLabel>
+      <skos:notation>made up b</skos:notation>
+      <!--IRI could not be found for made up source-->
+      <skos:inScheme>made up source</skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/madeupsource/other">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>other</skos:prefLabel>
+      <skos:notation>made up b 2</skos:notation>
+      <!--IRI could not be found for made up source-->
+      <skos:inScheme>made up source</skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/source/audiodisc">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>audio disc</skos:prefLabel>
+      <!--IRI could not be found for source-->
+      <skos:inScheme>source</skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/source/madeupb">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>made up b</skos:prefLabel>
+      <!--IRI could not be found for source-->
+      <skos:inScheme>source</skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/source/onlineresource">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>online resource</skos:prefLabel>
+      <skos:notation>cr</skos:notation>
+      <!--IRI could not be found for source-->
+      <skos:inScheme>source</skos:inScheme>
+      <skos:prefLabel>test 880 a</skos:prefLabel>
+      <skos:notation>test 880 b</skos:notation>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/source/sd">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>sd</skos:prefLabel>
+      <!--IRI could not be found for source-->
+      <skos:inScheme>source</skos:inScheme>
    </rdf:Description>
 </rdf:RDF>

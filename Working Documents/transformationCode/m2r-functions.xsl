@@ -384,15 +384,12 @@
             <xsl:when test="$lookupRdaDoc/uwmisc:root/uwmisc:row/key('sourceCode', $rda2)">
                 <xsl:variable name="lookupDoc" select="$lookupRdaDoc/uwmisc:root/uwmisc:row/key('sourceCode', $rda2)/uwmisc:lookupDoc/@iri"/>
                 <xsl:choose>
-                    <xsl:when test="$term = 'lcsh'">
-                        
-                    </xsl:when>
-                    <xsl:when test="contains($lookupDoc, 'id.loc.gov')">
+                    <xsl:when test="contains($lookupDoc, 'lc/')">
                         <xsl:if test="document($lookupDoc)/rdf:RDF/madsrdf:MADSScheme/madsrdf:hasMADSSchemeMember/madsrdf:Authority/key('lcTerm', $term)">
                             <xsl:value-of select="document($lookupDoc)/rdf:RDF/madsrdf:MADSScheme/madsrdf:hasMADSSchemeMember/madsrdf:Authority/key('lcTerm', $term)/@rdf:about"/>
                         </xsl:if>
                     </xsl:when>
-                    <xsl:when test="contains($lookupDoc, 'rdaregistry')">
+                    <xsl:when test="contains($lookupDoc, 'rda/')">
                         <xsl:if test="document($lookupDoc)/rdf:RDF/skos:Concept/key('rdaTerm', $term)">
                             <xsl:value-of select="document($lookupDoc)/rdf:RDF/skos:Concept/key('rdaTerm', $term)/@rdf:about"/>
                         </xsl:if>   
@@ -417,12 +414,12 @@
                 <xsl:variable name="codeIRI"
                     select="$baseLookupIRI||$code"/>
                 <xsl:choose>
-                    <xsl:when test="contains($lookupDoc, 'id.loc.gov')">
+                    <xsl:when test="contains($lookupDoc, 'lc/')">
                         <xsl:if test="document($lookupDoc)/rdf:RDF/madsrdf:MADSScheme/madsrdf:hasMADSSchemeMember/madsrdf:Authority/key('lcCode', $codeIRI)">
                             <xsl:value-of select="$codeIRI"/>
                         </xsl:if>
                     </xsl:when>
-                    <xsl:when test="contains($lookupDoc, 'rdaregistry')">
+                    <xsl:when test="contains($lookupDoc, 'rda/')">
                         <xsl:if test="document($lookupDoc)/rdf:RDF/skos:Concept/key('rdaCode', $codeIRI)">
                             <xsl:value-of select="$codeIRI"/>
                         </xsl:if>   
@@ -441,12 +438,12 @@
             <xsl:when test="$lookupRdaDoc/uwmisc:root/uwmisc:row/key('vocabName', $vocabName)">
                 <xsl:variable name="lookupDoc" select="$lookupRdaDoc/uwmisc:root/uwmisc:row/key('vocabName', $vocabName)/uwmisc:lookupDoc/@iri"/>
                 <xsl:choose>
-                    <xsl:when test="contains($lookupDoc, 'id.loc.gov')">
+                    <xsl:when test="contains($lookupDoc, 'lc/')">
                         <xsl:if test="document($lookupDoc)/rdf:RDF/madsrdf:MADSScheme/madsrdf:hasMADSSchemeMember/madsrdf:Authority/key('lcTerm', $term)">
                             <xsl:value-of select="document($lookupDoc)/rdf:RDF/madsrdf:MADSScheme/madsrdf:hasMADSSchemeMember/madsrdf:Authority/key('lcTerm', $term)/@rdf:about"/>
                         </xsl:if>
                     </xsl:when>
-                    <xsl:when test="contains($lookupDoc, 'rdaregistry')">
+                    <xsl:when test="contains($lookupDoc, 'rda/')">
                         <xsl:if test="document($lookupDoc)/rdf:RDF/skos:Concept/key('rdaTerm', $term)">
                             <xsl:value-of select="document($lookupDoc)/rdf:RDF/skos:Concept/key('rdaTerm', $term)/@rdf:about"/>
                         </xsl:if>   

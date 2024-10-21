@@ -3,232 +3,232 @@
     <row>
         <vocabulary>RDA Aspect Ratio Designation</vocabulary>
         <sourceCode>rdaa</sourceCode>
-        <lookupDoc iri="lookup/rda/AspectRatio.xml"/>
+        <lookupDoc iri="rda/AspectRatio.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/AspectRatio/"/>
     </row>
     <row>
         <vocabulary>RDA Bibliographic Format</vocabulary>
         <sourceCode>rdabf</sourceCode>
-        <lookupDoc iri="lookup/rda/bookFormat.xml"/>
+        <lookupDoc iri="rda/bookFormat.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/bookFormat/"/>
     </row>
     <row>
         <vocabulary>RDA Broadcast Standard</vocabulary>
         <sourceCode>rdabs</sourceCode>
-        <lookupDoc iri="lookup/rda/broadcastStand.xml"/>
+        <lookupDoc iri="rda/broadcastStand.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/broadcastStand/"/>
     </row>
     <row>
         <vocabulary>Term and Code List for RDA Carrier Types</vocabulary>
         <sourceCode>rdacarrier</sourceCode>
-        <lookupDoc iri="lookup/lc/carriers.rdf"/>
+        <lookupDoc iri="lc/carriers.rdf"/>
         <baseIRI iri="http://id.loc.gov/vocabulary/carriers/"/>
     </row>
     <row>
         <vocabulary>RDA Colour Content</vocabulary>
         <sourceCode>rdacc</sourceCode>
-        <lookupDoc iri="lookup/rda/RDAColourContent.xml"/>
+        <lookupDoc iri="rda/RDAColourContent.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/RDAColourContent/"/>
     </row>
     <row>
         <vocabulary>RDA Content Type</vocabulary>
         <sourceCode>rdaco</sourceCode>
-        <lookupDoc iri="lookup/rda/RDAContentType.xml"/>
+        <lookupDoc iri="rda/RDAContentType.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/RDAContentType/"/>
     </row>
     <row>
         <vocabulary>Term and Code List for RDA Content Types</vocabulary>
         <sourceCode>rdacontent</sourceCode>
-        <lookupDoc iri="lookup/lccontentTypes.rdf"/>
+        <lookupDoc iri="lc/contentTypes.rdf"/>
         <baseIRI iri="http://id.loc.gov/vocabulary/contentTypes/"/>
     </row>
     <row>
         <vocabulary>RDA Configuration of Playback Channels</vocabulary>
         <sourceCode>rdacpc</sourceCode>
-        <lookupDoc iri="lookup/rda/configPlayback.xml"/>
+        <lookupDoc iri="rda/configPlayback.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/configPlayback/"/>
     </row>
     <row>
         <vocabulary>RDA Carrier Type</vocabulary>
         <sourceCode>rdact</sourceCode>
-        <lookupDoc iri="lookup/rda/RDACarrierType.xml"/>
+        <lookupDoc iri="rda/RDACarrierType.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/RDACarrierType/"/>
     </row>
     <row>
         <vocabulary>RDA Extension Plan</vocabulary>
         <sourceCode>rdaep</sourceCode>
-        <lookupDoc iri="lookup/rda/RDAExtensionPlan.xml"/>
+        <lookupDoc iri="rda/RDAExtensionPlan.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/RDAExtensionPlan"/>
     </row>
     <row>
         <vocabulary>RDA Form of Musical Notation</vocabulary>
         <sourceCode>rdafmn</sourceCode>
-        <lookupDoc iri="lookup/rda/MusNotation.xml"/>
+        <lookupDoc iri="rda/MusNotation.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/MusNotation/"/>
     </row>
     <row>
         <vocabulary>RDA Format of Notated Music</vocabulary>
         <sourceCode>rdafnm</sourceCode>
-        <lookupDoc iri="lookup/rda/noteMove.xml"/>
+        <lookupDoc iri="rda/noteMove.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/noteMove/"/>
     </row>
     <row>
         <vocabulary>RDA Frequency</vocabulary>
         <sourceCode>rdafr</sourceCode>
-        <lookupDoc iri="lookup/rda/frequency.xml"/>
+        <lookupDoc iri="rda/frequency.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/frequency/"/>
     </row>
     <row>
         <vocabulary>RDA Font Size</vocabulary>
         <sourceCode>rdafs</sourceCode>
-        <lookupDoc iri="lookup/rda/fontSize.xml"/>
+        <lookupDoc iri="rda/fontSize.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/fontSize/"/>
     </row>
     <row>
         <vocabulary>RDA File Type</vocabulary>
         <sourceCode>rdaft</sourceCode>
-        <lookupDoc iri="lookup/rda/fileType.xml"/>
+        <lookupDoc iri="rda/fileType.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/fileType/"/>
     </row>
     <row>
         <vocabulary>RDA Generation</vocabulary>
         <sourceCode>rdagen</sourceCode>
-        <lookupDoc iri="lookup/rda/RDAGeneration.xml"/>
+        <lookupDoc iri="rda/RDAGeneration.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/RDAGeneration/"/>
     </row>
     <row>
         <vocabulary>RDA Groove Pitch of an Analog Cylinder</vocabulary>
         <sourceCode>rdagrp</sourceCode>
-        <lookupDoc iri="lookup/rda/groovePitch.xml"/>
+        <lookupDoc iri="rda/groovePitch.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/groovePitch/"/>
     </row>
     <row>
         <vocabulary>RDA Groove Width of an Analog Disc</vocabulary>
         <sourceCode>rdagw</sourceCode>
-        <lookupDoc iri="lookup/rda/grooveWidth.xml"/>
+        <lookupDoc iri="rda/grooveWidth.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/grooveWidth/"/>
     </row>
     <row>
         <vocabulary>RDA Illustrative Content</vocabulary>
         <sourceCode>rdaill</sourceCode>
-        <lookupDoc iri="lookup/rda/IllusContent.xml"/>
+        <lookupDoc iri="rda/IllusContent.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/IllusContent/"/>
     </row>
     <row>
         <vocabulary>RDA Layout</vocabulary>
         <sourceCode>rdalay</sourceCode>
-        <lookupDoc iri="lookup/rda/layout.xml"/>
+        <lookupDoc iri="rda/layout.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/layout/"/>
     </row>
     <row>
         <vocabulary>RDA Material</vocabulary>
         <sourceCode>rdamat</sourceCode>
-        <lookupDoc iri="lookup/rda/RDAMaterial.xml"/>
+        <lookupDoc iri="rda/RDAMaterial.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/RDAMaterial/"/>
     </row>
     <row>
         <vocabulary>Term and Code List for RDA Media Types</vocabulary>
         <sourceCode>rdamedia</sourceCode>
-        <lookupDoc iri="lookup/lcmediaTypes.rdf"/>
-        <baseIRI iri="http://id.loc.gov/vocabulary/lcmediaTypes/"/>
+        <lookupDoc iri="lc/mediaTypes.rdf"/>
+        <baseIRI iri="http://id.loc.gov/vocabulary/mediaTypes/"/>
     </row>
     <row>
         <vocabulary>RDA Mode of Issuance</vocabulary>
         <sourceCode>rdami</sourceCode>
-        <lookupDoc iri="lookup/rda/ModeIssue.xml"/>
+        <lookupDoc iri="rda/ModeIssue.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/ModeIssue/"/>
     </row>
     <row>
         <vocabulary>RDA Media Type</vocabulary>
         <sourceCode>rdamt</sourceCode>
-        <lookupDoc iri="lookup/rda/RDAMediaType.xml"/>
+        <lookupDoc iri="rda/RDAMediaType.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/RDAMediaType/"/>
     </row>
     <row>
         <vocabulary>RDA Presentation Format</vocabulary>
         <sourceCode>rdapf</sourceCode>
-        <lookupDoc iri="lookup/rda/presFormat.xml"/>
+        <lookupDoc iri="rda/presFormat.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/presFormat"/>
     </row>
     <row>
         <vocabulary>RDA Production Method</vocabulary>
         <sourceCode>rdapm</sourceCode>
-        <lookupDoc iri="lookup/rda/RDAproductionMethod.xml"/>
+        <lookupDoc iri="rda/RDAproductionMethod.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/RDAproductionMethod/"/>
     </row>
     <row>
         <vocabulary>RDA Polarity</vocabulary>
         <sourceCode>rdapo</sourceCode>
-        <lookupDoc iri="lookup/rda/RDAPolarity.xml"/>
+        <lookupDoc iri="rda/RDAPolarity.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/RDAPolarity/"/>
     </row>
     <row>
         <vocabulary>RDA Regional Encoding</vocabulary>
         <sourceCode>rdare</sourceCode>
-        <lookupDoc iri="lookup/rda/RDARegionalEncoding.xml"/>
+        <lookupDoc iri="rda/RDARegionalEncoding.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/RDARegionalEncoding/"/>
     </row>
     <row>
         <vocabulary>RDA Recording Medium</vocabulary>
         <sourceCode>rdarm</sourceCode>
-        <lookupDoc iri="lookup/rda/recMedium.xml"/>
+        <lookupDoc iri="rda/recMedium.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/recMedium/"/>
     </row>
     <row>
         <vocabulary>RDA Reduction Ration Designation</vocabulary>
         <sourceCode>rdarr</sourceCode>
-        <lookupDoc iri="lookup/rda/RDAReductionRatio.xml"/>
+        <lookupDoc iri="rda/RDAReductionRatio.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/RDAReductionRation/"/>
     </row>
     <row>
         <vocabulary>RDA Sound Content</vocabulary>
         <sourceCode>rdasco</sourceCode>
-        <lookupDoc iri="lookup/rda/soundCont.xml"/>
+        <lookupDoc iri="rda/soundCont.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/soundCont/"/>
     </row>
     <row>
         <vocabulary>RDA Special Playback Characteristic</vocabulary>
         <sourceCode>rdaspc</sourceCode>
-        <lookupDoc iri="lookup/rda/specPlayback.xml"/>
+        <lookupDoc iri="rda/specPlayback.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/specPlayback/"/>
     </row>
     <row>
         <vocabulary>RDA Type of Binding</vocabulary>
         <sourceCode>rdatb</sourceCode>
-        <lookupDoc iri="lookup/rda/RDATypeOfBinding.xml"/>
+        <lookupDoc iri="rda/RDATypeOfBinding.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/RDATypeOfBinding/"/>
     </row>
     <row>
         <vocabulary>RDA Track Configuration</vocabulary>
         <sourceCode>rdatc</sourceCode>
-        <lookupDoc iri="lookup/rda/trackConfig.xml"/>
+        <lookupDoc iri="rda/trackConfig.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/trackConfig/"/>
     </row>
     <row>
         <vocabulary>RDA Type of Recording</vocabulary>
         <sourceCode>rdatr</sourceCode>
-        <lookupDoc iri="lookup/rda/typeRec.xml"/>
+        <lookupDoc iri="rda/typeRec.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/typeRec/"/>
     </row>
     <row>
         <vocabulary>RDA Video Format</vocabulary>
         <sourceCode>rdavf</sourceCode>
-        <lookupDoc iri="lookup/rda/videoFormat.xml"/>
+        <lookupDoc iri="rda/videoFormat.xml"/>
         <baseIRI iri="http://rdaregistry.info/termList/videoFormat"/>
     </row>
     <row>
         <vocabulary>Playing Speed</vocabulary>
-        <lookupDoc iri="lookup/lc/mplayspeed.rdf"/>
+        <lookupDoc iri="lc/mplayspeed.rdf"/>
         <baseIRI iri="http://id.loc.gov/vocabulary/mplayspeed/"/>
     </row>
     <row>
         <vocabulary>Tape Configuration</vocabulary>
-        <lookupDoc iri="lookup/lc/mtapeconfig.rdf"/>
+        <lookupDoc iri="lc/mtapeconfig.rdf"/>
         <baseIRI iri="http://id.loc.gov/vocabulary/mtapeconfig/"/>
     </row>
     <row>
         <vocabulary>Encoding Format</vocabulary>
-        <lookupDoc iri="lookup/lc/mencformat.rdf"/>
+        <lookupDoc iri="lc/mencformat.rdf"/>
         <baseIRI iri="http://id.loc.gov/vocabulary/mencformat/"/>
     </row>
 </root>

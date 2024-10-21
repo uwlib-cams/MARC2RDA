@@ -20,28 +20,96 @@
          xmlns:rdap="http://rdaregistry.info/Elements/p/"
          xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
          xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
          xmlns:rdaw="http://rdaregistry.info/Elements/w/"
          xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
          xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwf="http://universityOfWashington/functions"
          xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
-   <rdf:Description rdf:about="http://fakeIRI2.edu/337-test1wor">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/337-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/337-test1exp"/>
       <rdawd:P10002>337-test1wor</rdawd:P10002>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/337-test1exp">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/337-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/337-test1man"/>
-      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/337-test1wor"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/337-test1wor"/>
       <rdaed:P20002>337-test1exp</rdaed:P20002>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/337-test1man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/337-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/337-test1exp"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/337-test1exp"/>
+      <fake:marcfield>F337 ## $a computer $a unmediated $3 test3</fake:marcfield>
+      <rdamd:P30002>computer</rdamd:P30002>
+      <rdamd:P30137>Media type computer applies to the manifestation's test3</rdamd:P30137>
+      <rdamd:P30002>unmediated</rdamd:P30002>
+      <rdamd:P30137>Media type unmediated applies to the manifestation's test3</rdamd:P30137>
+      <fake:marcfield>F337 ## $b c $3 test3</fake:marcfield>
+      <rdamd:P30002>c</rdamd:P30002>
+      <rdamd:P30137>Media type c applies to the manifestation's test3</rdamd:P30137>
+      <fake:marcfield>F337 ## $a computer $b x $2 rdamedia $3 test3</fake:marcfield>
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/c"/>
+      <rdamd:P30137>Media type http://id.loc.gov/vocabulary/mediaTypes/c applies to the manifestation's test3</rdamd:P30137>
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/x"/>
+      <rdamd:P30137>Media type http://id.loc.gov/vocabulary/mediaTypes/x applies to the manifestation's test3</rdamd:P30137>
+      <fake:marcfield>F337 ## $a unmediated $b 1007 $2 rdamt $3 test3</fake:marcfield>
+      <rdam:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+      <rdamd:P30137>Media type http://rdaregistry.info/termList/RDAMediaType/1007 applies to the manifestation's test3</rdamd:P30137>
+      <rdam:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+      <rdamd:P30137>Media type http://rdaregistry.info/termList/RDAMediaType/1007 applies to the manifestation's test3</rdamd:P30137>
+      <fake:marcfield>F337 ## $1 http://www.rdaregistry.info/termList/RDAMediaType/#1001 $3 test3</fake:marcfield>
       <rdam:P30002 rdf:resource="http://www.rdaregistry.info/termList/RDAMediaType/#1001"/>
       <rdamd:P30137>Media type http://www.rdaregistry.info/termList/RDAMediaType/#1001 applies to the manifestation's test3</rdamd:P30137>
+      <fake:marcfield>F337 ## $a audio $2 rdamt $0 http://www.rdaregistry.info/termList/RDAMediaType/#1001 $3 test3</fake:marcfield>
+      <rdam:P30002 rdf:resource="http://www.rdaregistry.info/termList/RDAMediaType/#1001"/>
+      <rdamd:P30137>Carrier type http://www.rdaregistry.info/termList/RDAMediaType/#1001 applies to the manifestation's test3</rdamd:P30137>
+      <fake:marcfield>F337 ## $a audio $b made up b $a video $b made up b 2 $2 isbdmedia $3 test3</fake:marcfield>
+      <rdam:P30002 rdf:resource="http://marc2rda.edu/fake/concept/isbdmedia/audio"/>
+      <rdamd:P30137>Media type http://marc2rda.edu/fake/concept/isbdmedia/audio applies to the manifestation's test3</rdamd:P30137>
+      <rdam:P30002 rdf:resource="http://marc2rda.edu/fake/concept/isbdmedia/video"/>
+      <rdamd:P30137>Media type http://marc2rda.edu/fake/concept/isbdmedia/video applies to the manifestation's test3</rdamd:P30137>
+      <fake:marcfield>F337 ## $a audio $b made up b $b made up b 2 $2 isbdmedia $3 test3</fake:marcfield>
+      <rdam:P30002 rdf:resource="http://marc2rda.edu/fake/concept/isbdmedia/audio"/>
+      <rdamd:P30137>Media type http://marc2rda.edu/fake/concept/isbdmedia/audio applies to the manifestation's test3</rdamd:P30137>
+      <fake:marcfield>F337 ## $b made up b $2 isbdmedia $3 test3</fake:marcfield>
+      <rdam:P30002 rdf:resource="http://marc2rda.edu/fake/concept/isbdmedia/madeupb"/>
+      <rdamd:P30137>Media type http://marc2rda.edu/fake/concept/isbdmedia/madeupb applies to the manifestation's test3</rdamd:P30137>
+      <fake:marcfield>F337 ## $6 880-01 $a audio $b a $2 rdamedia</fake:marcfield>
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/s"/>
+      <fake:marcfield>F880 ## $6 337-01 $a audio $b a $2 rdamedia</fake:marcfield>
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/s"/>
+      <fake:marcfield>F880 ## $6 337-00 $a audio $2 isbdmedia</fake:marcfield>
+      <rdam:P30002 rdf:resource="http://marc2rda.edu/fake/concept/isbdmedia/audio"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/isbdmedia/audio">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>audio</skos:prefLabel>
+      <skos:notation>made up b</skos:notation>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/isbdmedia"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/isbdmedia/video">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>video</skos:prefLabel>
+      <skos:notation>made up b 2</skos:notation>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/isbdmedia"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/isbdmedia/audio">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>audio</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/isbdmedia"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/isbdmedia/madeupb">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>made up b</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/isbdmedia"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/isbdmedia/audio">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>audio</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/isbdmedia"/>
    </rdf:Description>
 </rdf:RDF>
