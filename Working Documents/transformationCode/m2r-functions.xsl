@@ -106,12 +106,12 @@
 <!-- $2 FUNCTIONS -->
     
     <!-- loc docs containing codes used in $2 for different fields -->
-    <xsl:variable name="locSubjectSchemesDoc" select="document('https://id.loc.gov/vocabulary/subjectSchemes.rdf')"/>
-    <xsl:variable name="locGenreFormSchemesDoc" select="document('https://id.loc.gov/vocabulary/genreFormSchemes.rdf')"/>
-    <xsl:variable name="locFingerprintSchemesDoc" select="document('https://id.loc.gov/vocabulary/fingerprintschemes.rdf')"/>
-    <xsl:variable name="locIdentifiersDoc" select="document('https://id.loc.gov/vocabulary/identifiers.rdf')"/>
-    <xsl:variable name="locAccessRestrictionTermDoc" select="document('https://id.loc.gov/vocabulary/accessrestrictionterm.rdf')"/>
-    <xsl:variable name="locClassSchemesDoc" select="document('https://id.loc.gov/vocabulary/classSchemes.rdf')"/>
+    <xsl:variable name="locSubjectSchemesDoc" select="document('lookup/lc/subjectSchemes.rdf')"/>
+    <xsl:variable name="locGenreFormSchemesDoc" select="document('lookup/lc/genreFormSchemes.rdf')"/>
+    <xsl:variable name="locFingerprintSchemesDoc" select="document('lookup/lc/fingerprintschemes.rdf')"/>
+    <xsl:variable name="locIdentifiersDoc" select="document('lookup/lc/identifiers.rdf')"/>
+    <xsl:variable name="locAccessRestrictionTermDoc" select="document('lookup/lc/accessrestrictionterm.rdf')"/>
+    <xsl:variable name="locClassSchemesDoc" select="document('lookup/lc/classSchemes.rdf')"/>
     
     <xsl:key name="schemeKey" match="madsrdf:hasMADSSchemeMember" use="madsrdf:Authority/@rdf:about"/>
     
