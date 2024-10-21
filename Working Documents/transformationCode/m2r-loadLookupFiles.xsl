@@ -4,7 +4,7 @@
     exclude-result-prefixes="xs"
     version="2.0">
     <xsl:output name="xml" method="xml" indent="yes"/>
-    <xsl:param name="lc_files" select="' subjectSchemes;genreFormSchemes;fingerprintschemes;identifiers;accessrestrictionterm;classSchemes;carriers;contentTypes;mediaTypes;mplayspeed;mtapeconfig;mencformat'"/>
+    <xsl:param name="lc_files" select="'subjectSchemes;genreFormSchemes;fingerprintschemes;identifiers;accessrestrictionterm;classSchemes;carriers;contentTypes;mediaTypes;mplayspeed;mtapeconfig;mencformat'"/>
     <xsl:param name="rda_files" select="'AspectRatio;bookFormat;broadcastStand;RDAColourContent;RDAContentType;configPlayback;RDACarrierType;RDAExtensionPlan;MusNotation;noteMove;frequency;fontSize;fileType;RDAGeneration;groovePitch;grooveWidth;IllusContent;layout;RDAMaterial;ModeIssue;RDAMediaType;presFormat;RDAproductionMethod;RDAPolarity;RDARegionalEncoding;recMedium;RDAReductionRatio;soundCont;specPlayback;RDATypeOfBinding;trackConfig;typeRec;videoFormat'"/>
     <xsl:template match="/">
         <xsl:for-each select="tokenize($lc_files, ';')">
