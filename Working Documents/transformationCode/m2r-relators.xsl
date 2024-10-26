@@ -47,7 +47,7 @@
     <xsl:function name="uwf:agentAccessPoint" expand-text="true">
         <xsl:param name="field"/>
         <xsl:choose>
-            <xsl:when test="$field/@tag = '100' or $field/@tag = '600' or $field/@tag = '700'">
+            <xsl:when test="$field/@tag = '100' or $field/@tag = '600' or $field/@tag = '700' or $field/@tag = '800'">
                 <xsl:variable name="ap">
                     <xsl:value-of select="$field/marc:subfield[@code = 'a'] | $field/marc:subfield[@code = 'b'] | $field/marc:subfield[@code = 'c']
                     | $field/marc:subfield[@code = 'd'] | $field/marc:subfield[@code = 'j'] | $field/marc:subfield[@code = 'q']
@@ -85,7 +85,7 @@
     <xsl:function name="uwf:relWorkAccessPoint" expand-text="true">
         <xsl:param name="field"/>
         <xsl:choose>
-            <xsl:when test="$field/@tag = '600' or $field/@tag = '700'">
+            <xsl:when test="$field/@tag = '600' or $field/@tag = '700' or $field/@tag = '800'">
                 <xsl:variable name="ap">
                     <xsl:value-of select="$field/marc:subfield[@code = 'a'] | $field/marc:subfield[@code = 'b'] | $field/marc:subfield[@code = 'c']
                         | $field/marc:subfield[@code = 'd'] | $field/marc:subfield[@code = 'j'] | $field/marc:subfield[@code = 'q']
