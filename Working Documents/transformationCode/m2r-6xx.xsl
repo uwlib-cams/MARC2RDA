@@ -899,35 +899,34 @@
     
     <xsl:template
         match="marc:datafield[@tag = '657']"
-        mode="wor">
+        mode="wor" expand-text="yes">
         <xsl:call-template name="getmarc"/>
         <xsl:variable name="prefLabel">
             <xsl:call-template name="F657-label"/>
         </xsl:variable>
-        <xsl:choose>
-            <xsl:when test="not(marc:subfield[@code = '2'])">
-                <rdawd:P10004>
-                    <xsl:value-of select="$prefLabel"/>
-                </rdawd:P10004>
-            </xsl:when>
-            <xsl:otherwise>
-                <rdaw:P10004 rdf:resource="{uwf:subjectIRI(., uwf:getSubjectSchemeCode(.), $prefLabel)}"/>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '657']"
-        mode="con" expand-text="yes">
-        <xsl:if test="marc:subfield[@code = '2']">
-            <xsl:variable name="prefLabel">
-                <xsl:call-template name="F657-label"/>
-            </xsl:variable>
-            <xsl:variable name="scheme" select="uwf:getSubjectSchemeCode(.)"/>
-            <xsl:if test="starts-with(uwf:subjectIRI(., $scheme, $prefLabel), $BASE)">
-                <rdf:Description rdf:about="{uwf:conceptIRI($scheme, $prefLabel)}">
-                    <xsl:copy-of select="uwf:fillConcept($prefLabel, $scheme, '', @tag)"/>
-                </rdf:Description>
+        <rdawd:P10330>
+            <xsl:text>Function: {$prefLabel}</xsl:text>
+            <xsl:if test="marc:subfield[@code = '0' or @code = '1']">
+                <xsl:text>; </xsl:text>
+                <xsl:for-each select="marc:subfield[@code = '0'] | marc:subfield[@code = '1']">
+                    <xsl:if test="@code = '0'">
+                        <xsl:text>Authority record control number or standard number: {.}</xsl:text>
+                    </xsl:if>   
+                    <xsl:if test="@code = '1'">
+                        <xsl:text>Real World Object URI: {.}</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>; </xsl:text>
+                    </xsl:if>
+                </xsl:for-each>
             </xsl:if>
-        </xsl:if>
+            <xsl:if test="marc:subfield[@code = '2']">
+                <xsl:text> (Source: {marc:subfield[@code = '2']})</xsl:text>
+            </xsl:if>
+            <xsl:if test="marc:subfield[@code = '3']">
+                <xsl:text> (Applies to: {marc:subfield[@code = '3']})</xsl:text>
+            </xsl:if>
+        </rdawd:P10330>
     </xsl:template>
     
     
