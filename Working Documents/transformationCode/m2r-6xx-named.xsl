@@ -173,9 +173,10 @@
         <xsl:param name="prefLabel"/>
         <xsl:variable name="scheme" select="uwf:getSubjectSchemeCode(.)"/>
         <xsl:choose>
-            <xsl:when test="@ind2 = '4' or ((@ind2 = '4' or @ind2 = '7'  or @ind2 = ' ') and not(marc:subfield[@code = '2']))">
+            <!-- no source of term -->
+            <xsl:when test="@ind2 = '4' or (( @ind2 = '7'  or @ind2 = ' ') and not(marc:subfield[@code = '2']))">
                 <xsl:choose>
-                    <!-- no $0 or $1 to use -->
+                    <!-- no $0 or $1 to use, use datatype property and string value -->
                     <xsl:when test="starts-with(uwf:subjectIRI(., $scheme, $prefLabel), 'http://marc2rda.edu')">
                         <rdawd:P10256>
                             <xsl:value-of select="$prefLabel"/>
@@ -187,6 +188,7 @@
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
+            <!-- else we mint an IRI baed on the scheme and label-->
             <xsl:otherwise>
                 <rdaw:P10256 rdf:resource="{uwf:subjectIRI(., $scheme, $prefLabel)}"/>
             </xsl:otherwise>
@@ -197,7 +199,7 @@
         Outputs "has category of work" as datatype or object property -->
     <xsl:template name="F6XX-xx-v">
         <xsl:choose>
-            <xsl:when test="../@ind2 = '4' or ((../@ind2 = '4' or ../@ind2 = '7'  or ../@ind2 = ' ') and not(../marc:subfield[@code = '2']))">
+            <xsl:when test="../@ind2 = '4' or ((../@ind2 = '7'  or ../@ind2 = ' ') and not(../marc:subfield[@code = '2']))">
                 <rdawd:P10004>
                     <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                 </rdawd:P10004>
