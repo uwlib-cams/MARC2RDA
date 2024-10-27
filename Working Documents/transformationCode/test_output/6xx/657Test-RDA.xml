@@ -4,8 +4,8 @@
       <rdawd:P10002>6xx-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <fake:marcfield>F657 #7 $a Personnel benefits management $x Industrial accidents $x Morbidity $x Vital statistics $z Love Canal, New York. $2 New York State Management Functions Index</fake:marcfield>
       <rdawd:P10330>Function: Personnel benefits management--Industrial accidents--Morbidity--Vital statistics--Love Canal, New York (Source: New York State Management Functions Index)</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <fake:marcfield>F657 #7 $a Hymn tunes. $2 lcgft</fake:marcfield>
-      <rdawd:P10330>Function: Hymn tunes (Source: lcgft)</rdawd:P10330><!--rdawd:P10330 = has note on work-->
+      <fake:marcfield>F657 #7 $a Hymn tunes. $0 test 0 $1 test 1 $2 lcgft</fake:marcfield>
+      <rdawd:P10330>Function: Hymn tunes; Authority record control number or standard number: test 0; Real World Object URI: test 1 (Source: lcgft)</rdawd:P10330><!--rdawd:P10330 = has note on work-->
       <fake:marcfield>F657 #7 $a Nutrition.</fake:marcfield>
       <rdawd:P10330>Function: Nutrition</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
