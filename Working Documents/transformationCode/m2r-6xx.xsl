@@ -934,36 +934,39 @@
     
     <xsl:template
         match="marc:datafield[@tag = '658']"
-        mode="wor">
+        mode="wor" expand-text="yes">
         <xsl:call-template name="getmarc"/>
-        <xsl:variable name="prefLabel">
-            <xsl:call-template name="F658-label"/>
-        </xsl:variable>
-        <xsl:choose>
-            <xsl:when test="not(marc:subfield[@code = '2'])">
-                <rdawd:P10004>
-                    <xsl:value-of select="$prefLabel"/>
-                </rdawd:P10004>
-            </xsl:when>
-            <xsl:otherwise>
-                <rdaw:P10004 rdf:resource="{uwf:subjectIRI(., uwf:getSubjectSchemeCode(.), $prefLabel)}"/>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '658']"
-        mode="con" expand-text="yes">
-        <xsl:if test="marc:subfield[@code = '2']">
-            <xsl:variable name="prefLabel">
-                <xsl:call-template name="F658-label"/>
-            </xsl:variable>
-            <xsl:variable name="scheme" select="uwf:getSubjectSchemeCode(.)"/>
-            <xsl:if test="starts-with(uwf:subjectIRI(., $scheme, $prefLabel), $BASE)">
-                <rdf:Description rdf:about="{uwf:conceptIRI($scheme, $prefLabel)}">
-                    <xsl:copy-of select="uwf:fillConcept($prefLabel, $scheme, '', @tag)"/>
-                </rdf:Description>
+        <rdawd:P10330>
+            <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
+                | marc:subfield[@code = 'd'] | marc:subfield[@code = '0'] | marc:subfield[@code = '1']">
+                <xsl:if test="@code = 'a'">
+                    <xsl:text>Main curriculum objective: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'b'">
+                    <xsl:text>Subordinate curriculum objective: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'c'">
+                    <xsl:text>Curriculum code: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'd'">
+                    <xsl:text>Correlation factor: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = '0'">
+                    <xsl:text>Authority record control number or standard number: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = '1'">
+                    <xsl:text>Real World Object URI: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="position() != last()">
+                    <xsl:text>; </xsl:text>
+                </xsl:if>
+            </xsl:for-each>
+            <xsl:if test="marc:subfield[@code = '2']">
+                <xsl:text> (Source: {marc:subfield[@code = '2']})</xsl:text>
             </xsl:if>
-        </xsl:if>
+        </rdawd:P10330>
     </xsl:template>
+    
     
     <!-- 662 - Subject Added Entry - Hierarchical Place Name-->
     
