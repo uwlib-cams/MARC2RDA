@@ -143,13 +143,6 @@
         </xsl:variable>
         <xsl:value-of select="uwf:stripEndPunctuation($label)"/>
     </xsl:template>
-    <xsl:template name="F658-label" expand-text="yes">
-        <xsl:variable name="label">
-            <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] 
-            | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd']" separator="--"/>
-        </xsl:variable>
-        <xsl:value-of select="uwf:stripEndPunctuation($label)"/>
-    </xsl:template>
     <xsl:template name="F662-label" expand-text="yes">
         <xsl:variable name="label">
             <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] 
