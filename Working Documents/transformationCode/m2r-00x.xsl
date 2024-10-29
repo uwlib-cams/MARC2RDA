@@ -475,6 +475,10 @@
             <xsl:call-template name="F008-c6">
                 <xsl:with-param name="char6" select="$char6"/>
             </xsl:call-template>
+            <xsl:call-template name="F008-c7-14">
+                <xsl:with-param name="char6" select="$char6"/>
+                <xsl:with-param name="char7-14" select="substring(., 8, 8)"/>
+            </xsl:call-template>
             <xsl:if test="substring(., 16, 3) != '   '">
                 <xsl:call-template name="F008-c15-17">
                     <xsl:with-param name="char15-17" select="substring(., 16, 3)"/>
@@ -489,6 +493,9 @@
                     </xsl:call-template>
                     <xsl:call-template name="F008-c23_29-ghi-SOME-origMan">
                         <xsl:with-param name="char23_29" select="substring(., 24, 1)"/>
+                    </xsl:call-template>
+                    <xsl:call-template name="F008-c23-z-BK-origMan">
+                        <xsl:with-param name="char23" select="substring(., 24, 1)"/>
                     </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="substring($ldr6-7, 1, 1) = 'm'">

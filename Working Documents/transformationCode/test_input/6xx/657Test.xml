@@ -15,6 +15,8 @@
         </marc:datafield>
         <marc:datafield tag="657" ind1=" " ind2="7">
             <marc:subfield code="a">Hymn tunes.</marc:subfield>
+            <marc:subfield code="0">test 0</marc:subfield>
+            <marc:subfield code="1">test 1</marc:subfield>
             <marc:subfield code="2">lcgft</marc:subfield>
         </marc:datafield>
         <!-- incorrect usage -->
