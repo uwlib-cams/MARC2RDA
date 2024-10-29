@@ -11,7 +11,7 @@
         </marc:datafield>
         <marc:datafield tag="658" ind1=" " ind2=" ">
             <marc:subfield code="a">Reading objective 1 (fictional)</marc:subfield>
-            <marc:subfield code="b">understanding language, elements of plots, themes, motives, characters, setting b responding to the multiple-meaning word</marc:subfield>
+            <marc:subfield code="b">understanding language, elements of plots, themes, motives, characteres, setting b responding to the multiple-meaning word</marc:subfield>
             <marc:subfield code="c">NRPO2-1991</marc:subfield>
             <marc:subfield code="d">highly correlated.</marc:subfield>
             <marc:subfield code="2">ohco</marc:subfield>

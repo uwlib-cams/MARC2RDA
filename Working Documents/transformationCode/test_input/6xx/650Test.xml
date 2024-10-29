@@ -11,7 +11,7 @@
         </marc:datafield>
         <marc:datafield tag="650" ind1=" " ind2="4">
             <marc:subfield code="a">Personals</marc:subfield>
-            <marc:subfield code="v">Poetry</marc:subfield>
+            <marc:subfield code="v">Poetry.</marc:subfield>
             <marc:subfield code="y">2000</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="650" ind1=" " ind2="0">

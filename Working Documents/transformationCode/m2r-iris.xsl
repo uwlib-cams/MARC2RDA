@@ -203,7 +203,7 @@
             </xsl:when>
             <xsl:otherwise>
                 <xsl:choose>
-                    <xsl:when test="exists($source) and $source != ''">
+                    <xsl:when test="exists($source)">
                         <xsl:value-of select="$BASE||'place/'||translate(lower-case($source), ' ', '')||'/'||uwf:stripAllPunctuation($ap)"/>
                     </xsl:when>
                     <xsl:otherwise>

@@ -29,13 +29,12 @@
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:uwf="http://universityOfWashington/functions"
          xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1wor">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>6xx-test1wor</rdawd:P10002>
       <fake:marcfield>F655 #4 $a Poetry.</fake:marcfield>
-      <rdawd:P10004>Poetry</rdawd:P10004>
+      <rdawd:P10004>Poetry.</rdawd:P10004>
       <fake:marcfield>F655 07 $c v $a Guidebooks. $2 aat</fake:marcfield>
       <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/aat/guidebooks"/>
       <fake:marcfield>F655 #7 $a travel guidebooks. $2 aat</fake:marcfield>
@@ -49,38 +48,38 @@
       <fake:marcfield>F655 07 $c k $b Laminated $c m $b marblewood $c v $a bust. $2 aat</fake:marcfield>
       <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/aat/laminatedmarblewoodbust"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1exp">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/6xx-test1wor"/>
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/6xx-test1wor"/>
       <rdaed:P20002>6xx-test1exp</rdaed:P20002>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1man">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/6xx-test1exp"/>
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/6xx-test1exp"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/aat/guidebooks">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Guidebooks</skos:prefLabel>
+      <skos:prefLabel>Guidebooks.</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/aat/travelguidebooks">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>travel guidebooks</skos:prefLabel>
+      <skos:prefLabel>travel guidebooks.</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/aat/ebooks">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>e-books</skos:prefLabel>
+      <skos:prefLabel>e-books.</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcgft/academictheses">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Academic theses</skos:prefLabel>
+      <skos:prefLabel>Academic theses.</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/aat/laminatedmarblewoodbust">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Laminated--marblewood--bust</skos:prefLabel>
+      <skos:prefLabel>Laminated -- marblewood -- bust.</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
    </rdf:Description>
 </rdf:RDF>

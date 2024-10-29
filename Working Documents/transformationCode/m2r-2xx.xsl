@@ -25,7 +25,7 @@
     <xsl:import href="m2r-functions.xsl"/>
     <xsl:import href="m2r-iris.xsl"/>
     
-    <xsl:template match="marc:datafield[@tag = '245'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '245']" mode="wor" >
+    <xsl:template match="marc:datafield[@tag = '245']" mode="wor" >
         <xsl:call-template name="getmarc"/>
         <!-- copy of 245 where last subfield's ending punctuation (, or .) is removed -->
         <xsl:variable name="copy245">
@@ -135,8 +135,7 @@
         </xsl:for-each>
     </xsl:template>    
     <xsl:template match="marc:datafield[@tag = '245'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '245']" 
-        mode="man origMan">
-        <xsl:param name="type"/>
+        mode="man">
         <xsl:call-template name="getmarc"/>
         <xsl:variable name="isISBD">
             <xsl:choose>
@@ -196,9 +195,7 @@
             </xsl:otherwise>
         </xsl:choose>
         <xsl:call-template name="F245-xx-f-g"/>
-        <xsl:if test="$type != 'origMan'">
-            <xsl:call-template name="F245-xx-h"/>
-        </xsl:if>
+        <xsl:call-template name="F245-xx-h"/>
         <xsl:call-template name="F245-xx-k"/>
         </xsl:for-each>
     </xsl:template>
