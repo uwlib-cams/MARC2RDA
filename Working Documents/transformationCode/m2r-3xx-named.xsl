@@ -1042,6 +1042,61 @@
         </rdamd:P30137>
     </xsl:template>
     
+    <!-- 342 DC:In progress
+    <xsl:template name="F342-xx-abcdefghij" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <xsl:choose>
+                <xsl:when test="@ind2 = '0'">
+                    <xsl:text>Geographic coordinate system: {.}.</xsl:text>
+                </xsl:when>
+                <xsl:when test="@ind2 = '3'">
+                    <xsl:text>Local planar coordinate system: {.}.</xsl:text>
+                </xsl:when>
+                <xsl:when test="@ind2 = '4'">
+                    <xsl:text>Local coordinate system: {.}.</xsl:text>
+                </xsl:when>
+                <xsl:when test="@ind2 = '5'">
+                    <xsl:text>Geodetic model name: {.}.</xsl:text>
+                </xsl:when>
+                <xsl:when test="@ind2 = '6'">
+                    <xsl:text>Altitude datum name: {.}.</xsl:text>
+                </xsl:when>
+                <xsl:when test="@ind2 = '7'">
+                    <xsl:text>Name of geospatial reference method: {.}.</xsl:text>
+                </xsl:when>
+                <xsl:when test="@ind2 = '8'">
+                    <xsl:text>Depth datum name: {.}.</xsl:text>
+                </xsl:when>
+            </xsl:choose>    
+        </xsl:for-each>
+        
+        <xsl:if test="@ind2 = '2'">
+            <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'p']">
+                <xsl:text>Grid coordinate system: {@code = 'a'}. Zone identifier: {@code = 'p'}.</xsl:text>
+            </xsl:for-each>         
+        </xsl:if>
+        
+        <xsl:for-each select="marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd']">
+                <xsl:if test="@code = 'b'">
+                    <xsl:text>Coordinate units or distance units: {.}.</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'c'">
+                    <xsl:text>Latitude resolution: {.}.</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'd'">
+                    <xsl:text>Longtitude resolution: {.}.</xsl:text>
+                </xsl:if>
+        </xsl:for-each>
+        <xsl:if test = "@ind1 = '1'">
+            <xsl:if test= "marc:subfield[@code = 'a' and contains(.,'Oblique')]">
+                <xsl:for-each select= "marc:subfield[@code = 'e']">
+                    <xsl:text>Standard parallel(s): {.}</xsl:text>
+                </xsl:for-each>
+            </xsl:if>
+        </xsl:if>
+    </xsl:template> --> 
+    
+    
     <!-- 344 -->
     
     <xsl:template name="F344-concept" expand-text="yes">
