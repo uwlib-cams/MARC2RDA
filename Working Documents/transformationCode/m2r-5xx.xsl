@@ -613,17 +613,17 @@
         <xsl:call-template name="getmarc"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdamd:P30335>
-                <xsl:value-of select="translate(., '\.$', '') => normalize-space()"/>
+                <xsl:value-of select="replace(., '\.$', '') => normalize-space()"/>
             </rdamd:P30335>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'b']">
             <rdamd:P30279>
-                <xsl:value-of select="translate(., '[:;]\s*$', '') => normalize-space() => uwf:removeBrackets()"/>
+                <xsl:value-of select="replace(., '[:;]\s*$', '') => normalize-space() => uwf:removeBrackets()"/>
             </rdamd:P30279>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'c']">
             <rdamd:P30297>
-                <xsl:value-of select="translate(., ',', '') => normalize-space() => uwf:removeBrackets()"/>
+                <xsl:value-of select="replace(., ',', '') => normalize-space() => uwf:removeBrackets()"/>
             </rdamd:P30297>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'd']">

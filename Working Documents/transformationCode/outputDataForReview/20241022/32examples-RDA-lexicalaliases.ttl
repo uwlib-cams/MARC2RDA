@@ -34,7 +34,7 @@
     rdamd:noteOnManifestation.en "11 x 15 cm.",
         "[On planting trees in remembrance of war dead]." ;
     rdamd:otherTitleInformation.en "In commemoration of our soldiers and sailors whose lives have been given for their country and for humanity in the Great War" ;
-    rdamd:placeOfManifestation.en "Betheda, Md." ;
+    rdamd:placeOfManifestation.en "Bethesda, Md." ;
     rdamd:seriesStatement.en "CIS US Executive Branch Documents, 1910-1932 : no. A1.2-83." ;
     rdamd:titleProper.en "Arbor day" ;
     rdam:mediaType.en <http://id.loc.gov/vocabulary/mediaTypes/h> ;
@@ -408,7 +408,7 @@
     rdamd:nameOfAgentOfManifestation.en "Acme Bookbinding" ;
     rdamd:noteOnManifestation.en "20 cm.",
         "Contents: The spelling medal (Mark Twain) -- Ben arrives in Philadelphia (Ben Franklin) -- The young hunter (Davy Crockett) -- A gardener's son (John Paul Jones) -- Bill's first Indian (Bill Cody) -- The teacher (Henry David Thoreau) -- Scalping party (Ethan Allen) -- The buck's horn (Abraham Lincoln) -- The star gazer (Amerigo Vespucci) -- Prisoner of Powhatan (John Smith) -- The snowball fight (Francis Drake) -- The garden trees (George Washington) -- Hard luck Tom (Thomas Edison) -- The judge (Daniel Boone) -- The sewing machine (Orville and Wilbur Wright) -- Christopher's first trip (Christopher Columbus) -- A youth rebels (William Penn) -- The runaway (Robert LaSalle) -- War-painted Indians (James Cooper) -- The wolf cave (Israel Putnam) -- The wreck (Samuel de Champlain)." ;
-    rdamd:placeOfManifestation.en "Charletown, MA" ;
+    rdamd:placeOfManifestation.en "Charlestown, MA" ;
     rdamd:statementOfResponsibilityRelatingToTitleProper.en "by Claribel Spamer" ;
     rdamd:titleProper.en "Easy sketches of famous men" ;
     rdam:illustrativeContent.en <http://rdaregistry.info/termList/IllusContent/1014> ;

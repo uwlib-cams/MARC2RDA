@@ -4980,7 +4980,7 @@
       <rdam:carrierType.en rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
       <fake:marcfield>F533 ## $a Preservation photocopy. $b Charlestown, MA : $c Acme Bookbinding, $d 2008. $e 20 cm.</fake:marcfield>
       <rdamd:categoryOfManifestation.en>Preservation photocopy</rdamd:categoryOfManifestation.en>
-      <rdamd:placeOfManifestation.en>Charletown, MA</rdamd:placeOfManifestation.en>
+      <rdamd:placeOfManifestation.en>Charlestown, MA</rdamd:placeOfManifestation.en>
       <rdamd:nameOfAgentOfManifestation.en>Acme Bookbinding</rdamd:nameOfAgentOfManifestation.en>
       <rdamd:dateOfManifestation.en>2008</rdamd:dateOfManifestation.en>
       <rdamd:noteOnManifestation.en>20 cm.</rdamd:noteOnManifestation.en>
@@ -5080,7 +5080,7 @@
       <rdamd:noteOnManifestation.en>[On planting trees in remembrance of war dead].</rdamd:noteOnManifestation.en>
       <fake:marcfield>F533 ## $a Microfiche. $b [Bethesda, Md.]: $c LexisNexis Academic &amp; Library Solutions, $d 1997. $e 11 x 15 cm. $f (CIS US Executive Branch Documents, 1910-1932 : no. A1.2-83).</fake:marcfield>
       <rdamd:categoryOfManifestation.en>Microfiche</rdamd:categoryOfManifestation.en>
-      <rdamd:placeOfManifestation.en>Betheda, Md.</rdamd:placeOfManifestation.en>
+      <rdamd:placeOfManifestation.en>Bethesda, Md.</rdamd:placeOfManifestation.en>
       <rdamd:nameOfAgentOfManifestation.en>LexisNexis Academic &amp; Library Solutions</rdamd:nameOfAgentOfManifestation.en>
       <rdamd:dateOfManifestation.en>1997</rdamd:dateOfManifestation.en>
       <rdamd:noteOnManifestation.en>11 x 15 cm.</rdamd:noteOnManifestation.en>

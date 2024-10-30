@@ -5012,7 +5012,7 @@
       <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
       <fake:marcfield>F533 ## $a Preservation photocopy. $b Charlestown, MA : $c Acme Bookbinding, $d 2008. $e 20 cm.</fake:marcfield>
       <rdamd:P30335>Preservation photocopy</rdamd:P30335>
-      <rdamd:P30279>Charletown, MA</rdamd:P30279>
+      <rdamd:P30279>Charlestown, MA</rdamd:P30279>
       <rdamd:P30297>Acme Bookbinding</rdamd:P30297>
       <rdamd:P30278>2008</rdamd:P30278>
       <rdamd:P30137>20 cm.</rdamd:P30137>
@@ -5112,7 +5112,7 @@
       <rdamd:P30137>[On planting trees in remembrance of war dead].</rdamd:P30137>
       <fake:marcfield>F533 ## $a Microfiche. $b [Bethesda, Md.]: $c LexisNexis Academic &amp; Library Solutions, $d 1997. $e 11 x 15 cm. $f (CIS US Executive Branch Documents, 1910-1932 : no. A1.2-83).</fake:marcfield>
       <rdamd:P30335>Microfiche</rdamd:P30335>
-      <rdamd:P30279>Betheda, Md.</rdamd:P30279>
+      <rdamd:P30279>Bethesda, Md.</rdamd:P30279>
       <rdamd:P30297>LexisNexis Academic &amp; Library Solutions</rdamd:P30297>
       <rdamd:P30278>1997</rdamd:P30278>
       <rdamd:P30137>11 x 15 cm.</rdamd:P30137>

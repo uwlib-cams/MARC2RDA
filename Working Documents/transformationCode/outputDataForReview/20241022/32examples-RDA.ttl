@@ -35,7 +35,7 @@
     rdamd:P30142 "In commemoration of our soldiers and sailors whose lives have been given for their country and for humanity in the Great War" ;
     rdamd:P30156 "Arbor day" ;
     rdamd:P30278 "1997" ;
-    rdamd:P30279 "Betheda, Md." ;
+    rdamd:P30279 "Bethesda, Md." ;
     rdamd:P30297 "LexisNexis Academic & Library Solutions" ;
     rdamd:P30335 "Microfiche" ;
     rdamo:P30043 <http://marc2rda.edu/fake/99106611740001452origMan> ;
@@ -410,7 +410,7 @@
         "Contents: The spelling medal (Mark Twain) -- Ben arrives in Philadelphia (Ben Franklin) -- The young hunter (Davy Crockett) -- A gardener's son (John Paul Jones) -- Bill's first Indian (Bill Cody) -- The teacher (Henry David Thoreau) -- Scalping party (Ethan Allen) -- The buck's horn (Abraham Lincoln) -- The star gazer (Amerigo Vespucci) -- Prisoner of Powhatan (John Smith) -- The snowball fight (Francis Drake) -- The garden trees (George Washington) -- Hard luck Tom (Thomas Edison) -- The judge (Daniel Boone) -- The sewing machine (Orville and Wilbur Wright) -- Christopher's first trip (Christopher Columbus) -- A youth rebels (William Penn) -- The runaway (Robert LaSalle) -- War-painted Indians (James Cooper) -- The wolf cave (Israel Putnam) -- The wreck (Samuel de Champlain)." ;
     rdamd:P30156 "Easy sketches of famous men" ;
     rdamd:P30278 "2008" ;
-    rdamd:P30279 "Charletown, MA" ;
+    rdamd:P30279 "Charlestown, MA" ;
     rdamd:P30297 "Acme Bookbinding" ;
     rdamd:P30335 "Preservation photocopy" ;
     rdamo:P30043 <http://marc2rda.edu/fake/99123793010001452origMan> ;
