@@ -1076,14 +1076,6 @@
     skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
     skos:prefLabel "Since 1945" .
 
-<http://marc2rda.edu/fake/concept/gnd/tropen> a skos:Concept ;
-    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/gnd> ;
-    skos:prefLabel "Tropen" .
-
-<http://marc2rda.edu/fake/concept/swd/englisch> a skos:Concept ;
-    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/swd> ;
-    skos:prefLabel "Englisch" .
-
 <http://marc2rda.edu/fake/pla/nom/d22e1555> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:nomenString.en "Belgium" ;
     rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
@@ -1100,83 +1092,11 @@
     rdand:nomenString.en "United States" ;
     rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
 
-<http://marc2rda.edu/fake/place/lcsh/belgium> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/lcsh/belgium> .
-
-<http://marc2rda.edu/fake/place/lcsh/france> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/lcsh/france> .
-
-<http://marc2rda.edu/fake/place/lcsh/izieu> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/lcsh/izieu> .
-
-<http://marc2rda.edu/fake/place/lcsh/lanecounty> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/lcsh/lanecounty> .
-
-<http://marc2rda.edu/fake/place/lcsh/linncounty> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/lcsh/linncounty> .
-
-<http://marc2rda.edu/fake/place/lcsh/northamerica> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/lcsh/northamerica> .
-
-<http://marc2rda.edu/fake/place/lcsh/oregon> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/lcsh/oregon> .
-
-<http://marc2rda.edu/fake/place/lcsh/providence> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/lcsh/providence> .
-
-<http://marc2rda.edu/fake/place/lcsh/rhodeisland> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/lcsh/rhodeisland> .
-
-<http://marc2rda.edu/fake/place/lcsh/tropics> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/lcsh/tropics> .
-
-<http://marc2rda.edu/fake/place/lcsh/unitedstates> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates> .
-
-<http://marc2rda.edu/fake/place/rvm/belgique> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/rvm/belgique> .
-
-<http://marc2rda.edu/fake/place/rvm/étatsunis> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/rvm/étatsunis> .
-
-<http://marc2rda.edu/fake/place/rvm/france> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/rvm/france> .
-
-<http://marc2rda.edu/fake/place/rvm/izieu> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/rvm/izieu> .
-
-<http://marc2rda.edu/fake/place/rvm/providence> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/rvm/providence> .
-
-<http://marc2rda.edu/fake/place/rvm/régionstropicales> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/rvm/régionstropicales> .
-
-<http://marc2rda.edu/fake/place/rvm/rhodeisland> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:authorizedAccessPointForPlace.en <http://marc2rda.edu/fake/pla/nom/rvm/rhodeisland> .
-
-<http://marc2rda.edu/fake/timespan/lcsh/1945> a <http://rdaregistry.info/Elements/c/Timespan.en> ;
-    rdato:authorizedAccessPointForTimespan.en <http://marc2rda.edu/fake/tim/nom/lcsh/1945> .
-
-<http://marc2rda.edu/fake/timespan/lcsh/19thcentury> a <http://rdaregistry.info/Elements/c/Timespan.en> ;
-    rdato:authorizedAccessPointForTimespan.en <http://marc2rda.edu/fake/tim/nom/lcsh/19thcentury> .
-
-<http://marc2rda.edu/fake/timespan/lcsh/20thcentury> a <http://rdaregistry.info/Elements/c/Timespan.en> ;
-    rdato:authorizedAccessPointForTimespan.en <http://marc2rda.edu/fake/tim/nom/lcsh/20thcentury> .
-
-<http://marc2rda.edu/fake/timespan/lcsh/kamakuraperiod11851333> a <http://rdaregistry.info/Elements/c/Timespan.en> ;
-    rdato:authorizedAccessPointForTimespan.en <http://marc2rda.edu/fake/tim/nom/lcsh/kamakuraperiod11851333> .
-
-<http://marc2rda.edu/fake/timespan/rvm/1945> a <http://rdaregistry.info/Elements/c/Timespan.en> ;
-    rdato:authorizedAccessPointForTimespan.en <http://marc2rda.edu/fake/tim/nom/rvm/1945> .
-
-<http://marc2rda.edu/fake/timespan/rvm/19esiècle> a <http://rdaregistry.info/Elements/c/Timespan.en> ;
-    rdato:authorizedAccessPointForTimespan.en <http://marc2rda.edu/fake/tim/nom/rvm/19esiècle> .
-
-<http://marc2rda.edu/fake/timespan/rvm/20esiècle> a <http://rdaregistry.info/Elements/c/Timespan.en> ;
-    rdato:authorizedAccessPointForTimespan.en <http://marc2rda.edu/fake/tim/nom/rvm/20esiècle> .
-
 <http://marc2rda.edu/fake/99106611740001452origMan> a <http://rdaregistry.info/Elements/c/Manifestation.en> ;
-    fake:marcfield "F008 040322s1919    dcu     b    f000 0 eng d" ;
+    fake:marcfield "F008 040322s1919    dcu     b    f000 0 eng d",
+        "F245 00 $a Arbor day : $b In commemoration of our soldiers and sailors whose lives have been given for their country and for humanity in the Great War." ;
+    rdamd:otherTitleInformation.en "In commemoration of our soldiers and sailors whose lives have been given for their country and for humanity in the Great War" ;
+    rdamd:titleProper.en "Arbor day" ;
     rdamo:expressionManifested.en <http://marc2rda.edu/fake/99106611740001452exp> ;
     rdamo:placeOfManifestation.en <http://id.loc.gov/vocabulary/countries/dcu> .
 
@@ -1247,7 +1167,12 @@
         <http://marc2rda.edu/fake/concept/lcsh/revengevideogames> .
 
 <http://marc2rda.edu/fake/99114129320001452origMan> a <http://rdaregistry.info/Elements/c/Manifestation.en> ;
-    fake:marcfield "F008 821217s1587    enk     c     001 0 eng d" ;
+    fake:marcfield "F008 821217s1587    enk     c     001 0 eng d",
+        "F245 13 $a An herbal for the Bible : $b containing a plaine and familiar exposition of such similitudes, parables, and metaphors, both in the Olde Testament and the Newe, as are borrowed and taken from herbs, plants, trees, fruits and simples, by observation of their vertues, qualities, natures, properties, operations, and effects : and by the holy prophets, sacred writers, Christ himself, and his blessed apostles, usually alledged, and into their heavenly oracles, for the better beautifieng and plainer opening of the same, profitably inserted / $c drawen into English by Thomas Newton." ;
+    rdamd:otherTitleInformation.en "and by the holy prophets, sacred writers, Christ himself, and his blessed apostles, usually alledged, and into their heavenly oracles, for the better beautifieng and plainer opening of the same, profitably inserted",
+        "containing a plaine and familiar exposition of such similitudes, parables, and metaphors, both in the Olde Testament and the Newe, as are borrowed and taken from herbs, plants, trees, fruits and simples, by observation of their vertues, qualities, natures, properties, operations, and effects" ;
+    rdamd:statementOfResponsibilityRelatingToTitleProper.en "drawen into English by Thomas Newton" ;
+    rdamd:titleProper.en "An herbal for the Bible" ;
     rdamo:expressionManifested.en <http://marc2rda.edu/fake/99114129320001452exp> ;
     rdamo:placeOfManifestation.en <http://id.loc.gov/vocabulary/countries/enk> .
 
@@ -1534,9 +1459,13 @@
         <http://marc2rda.edu/fake/concept/rvm/quintettesguitareviolons2altovioloncelle> .
 
 <http://marc2rda.edu/fake/99115286840001452origMan> a <http://rdaregistry.info/Elements/c/Manifestation.en> ;
-    fake:marcfield "F008 000117p19991997mau060 e      o   vleng d" ;
+    fake:marcfield "F008 000117p19991997mau060 e      o   vleng d",
+        "F245 00 $a Earl's canoe : $b a traditional Ojibwe craft / $c by Tom Vennum with Charles Weber, assisted by Earl Nyholm." ;
     rdam:carrierType.en <https://doi.org/10.6069/uwlswd.qgc0-9r48#v> ;
     rdam:categoryOfManifestation.en <https://doi.org/10.6069/uwlswd.qgc0-9r48#v> ;
+    rdamd:otherTitleInformation.en "a traditional Ojibwe craft" ;
+    rdamd:statementOfResponsibilityRelatingToTitleProper.en "by Tom Vennum with Charles Weber, assisted by Earl Nyholm" ;
+    rdamd:titleProper.en "Earl's canoe" ;
     rdamo:expressionManifested.en <http://marc2rda.edu/fake/99115286840001452exp> ;
     rdamo:placeOfManifestation.en <http://id.loc.gov/vocabulary/countries/mau> .
 
@@ -1637,7 +1566,10 @@
     rdaio:holdingOf.en <http://marc2rda.edu/fake/colMan/miaahdl> .
 
 <http://marc2rda.edu/fake/99115297060001452origMan> a <http://rdaregistry.info/Elements/c/Manifestation.en> ;
-    fake:marcfield "F008 100429s1978    dcuab   ob   f001 0 eng d" ;
+    fake:marcfield "F008 100429s1978    dcuab   ob   f001 0 eng d",
+        "F245 10 $a Important forest trees of the United States / $c by Elbert L. Little, Jr." ;
+    rdamd:statementOfResponsibilityRelatingToTitleProper.en "by Elbert L. Little, Jr." ;
+    rdamd:titleProper.en "Important forest trees of the United States" ;
     rdamo:expressionManifested.en <http://marc2rda.edu/fake/99115297060001452exp> ;
     rdamo:placeOfManifestation.en <http://id.loc.gov/vocabulary/countries/dcu> .
 
@@ -1719,7 +1651,10 @@
         <http://marc2rda.edu/fake/concept/rvm/chœursprofanesvoixdenfantsaccdensembleinstrumentalpartitionsetparties> .
 
 <http://marc2rda.edu/fake/99123793010001452origMan> a <http://rdaregistry.info/Elements/c/Manifestation.en> ;
-    fake:marcfield "F008 081106s1959    maua    r     000 0 eng d" ;
+    fake:marcfield "F008 081106s1959    maua    r     000 0 eng d",
+        "F245 10 $a Easy sketches of famous men / $c by Claribel Spamer." ;
+    rdamd:statementOfResponsibilityRelatingToTitleProper.en "by Claribel Spamer" ;
+    rdamd:titleProper.en "Easy sketches of famous men" ;
     rdamo:expressionManifested.en <http://marc2rda.edu/fake/99123793010001452exp> ;
     rdamo:placeOfManifestation.en <http://id.loc.gov/vocabulary/countries/mau> .
 
@@ -1879,7 +1814,8 @@
         "F655 #7 $a Japanese language films. $2 local",
         "F655 #7 $a Motion pictures $z Japan. $2 local",
         "F655 #7 $a Puppet plays. $2 fast $0 (OCoLC)fst01922513",
-        "F655 #7 $a Théâtre de marionnettes. $2 rvmgf" ;
+        "F655 #7 $a Théâtre de marionnettes. $2 rvmgf",
+        "F880 00 $6 245-01/$1 $a 義経千本桜." ;
     rdaw:categoryOfWork.en <http://marc2rda.edu/fake/concept/lcgft/fictionfilms>,
         <http://marc2rda.edu/fake/concept/lcgft/puppetplays>,
         <http://marc2rda.edu/fake/concept/lcsh/drama>,
@@ -1893,9 +1829,10 @@
         <https://id.worldcat.org/fast/01423879>,
         <https://id.worldcat.org/fast/01710264>,
         <https://id.worldcat.org/fast/01922513> ;
-    rdawd:categoryOfWork.en "Foreign language films -- Japanese" ;
+    rdawd:categoryOfWork.en "Foreign language films--Japanese" ;
     rdawd:identifierForWork.en "99128127150001452wor" ;
-    rdawd:titleOfWork.en "Yoshitsune senbon-zakura" ;
+    rdawd:titleOfWork.en "Yoshitsune senbon-zakura",
+        "義経千本桜" ;
     rdaw:natureOfContent.en <https://doi.org/10.6069/uwlswd.eje7-jq11#l> ;
     rdawo:authorPerson.en <https://id.oclc.org/worldcat/entity/E39PBJdWHVd6qdMvW6frkQX68C>,
         <https://id.oclc.org/worldcat/entity/E39PBJt8hj98xxrkDFXdY897HC>,
@@ -2026,8 +1963,6 @@
     rdaw:longitude.en "W1800000--E1800000" ;
     rdawo:relatedCorporateBodyOfWork.en <http://marc2rda.edu/fake/age/d22e2496> ;
     rdaw:subject.en <http://marc2rda.edu/fake/concept/fast/ecologicalriskassessment>,
-        <http://marc2rda.edu/fake/concept/fast/effectofenvironmenton>,
-        <http://marc2rda.edu/fake/concept/fast/effectofhumanbeingson>,
         <http://marc2rda.edu/fake/concept/fast/environmentalimpactanalysis>,
         <http://marc2rda.edu/fake/concept/fast/humanbeingseffectofenvironmenton>,
         <http://marc2rda.edu/fake/concept/fast/natureeffectofhumanbeingson>,
@@ -2655,8 +2590,6 @@
     rdawo:authorPerson.en <http://marc2rda.edu/fake/age/d22e220>,
         <http://marc2rda.edu/fake/age/d22e74> ;
     rdaw:subject.en <http://marc2rda.edu/fake/concept/fast/careerdevelopment>,
-        <http://marc2rda.edu/fake/concept/fast/employment>,
-        <http://marc2rda.edu/fake/concept/fast/psychologicalaspects>,
         <http://marc2rda.edu/fake/concept/fast/selfactualizationpsychology>,
         <http://marc2rda.edu/fake/concept/fast/successpsychologicalaspects>,
         <http://marc2rda.edu/fake/concept/fast/womenemployment>,
@@ -3211,7 +3144,7 @@
 
 <http://marc2rda.edu/fake/concept/cyac/parentandchilddrama> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/cyac> ;
-    skos:prefLabel "Parent and child -- Drama" .
+    skos:prefLabel "Parent and child--Drama" .
 
 <http://marc2rda.edu/fake/concept/cyac/plantdiseasestropics> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/cyac> ;
@@ -3245,18 +3178,6 @@
     skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
     skos:prefLabel "Ecological risk assessment" .
 
-<http://marc2rda.edu/fake/concept/fast/effectofenvironmenton> a skos:Concept ;
-    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
-    skos:prefLabel "Effect of environment on" .
-
-<http://marc2rda.edu/fake/concept/fast/effectofhumanbeingson> a skos:Concept ;
-    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
-    skos:prefLabel "Effect of human beings on" .
-
-<http://marc2rda.edu/fake/concept/fast/employment> a skos:Concept ;
-    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
-    skos:prefLabel "Employment" .
-
 <http://marc2rda.edu/fake/concept/fast/environmentalimpactanalysis> a skos:Concept ;
     skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
     skos:prefLabel "Environmental impact analysis" .
@@ -3275,7 +3196,7 @@
 
 <http://marc2rda.edu/fake/concept/fast/humanbeingseffectofenvironmenton> a skos:Concept ;
     skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
-    skos:prefLabel "Human beings -- Effect of environment on" .
+    skos:prefLabel "Human beings--Effect of environment on" .
 
 <http://marc2rda.edu/fake/concept/fast/imaginaryplaces> a skos:Concept ;
     skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
@@ -3307,7 +3228,7 @@
 
 <http://marc2rda.edu/fake/concept/fast/natureeffectofhumanbeingson> a skos:Concept ;
     skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
-    skos:prefLabel "Nature -- Effect of human beings on" .
+    skos:prefLabel "Nature--Effect of human beings on" .
 
 <http://marc2rda.edu/fake/concept/fast/natureinthebible> a skos:Concept ;
     skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
@@ -3328,10 +3249,6 @@
 <http://marc2rda.edu/fake/concept/fast/postcolonialismandthearts> a skos:Concept ;
     skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
     skos:prefLabel "Postcolonialism and the arts" .
-
-<http://marc2rda.edu/fake/concept/fast/psychologicalaspects> a skos:Concept ;
-    skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
-    skos:prefLabel "Psychological aspects" .
 
 <http://marc2rda.edu/fake/concept/fast/quintetsguitarviolins2violacello> a skos:Concept ;
     skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
@@ -3371,7 +3288,7 @@
 
 <http://marc2rda.edu/fake/concept/fast/successpsychologicalaspects> a skos:Concept ;
     skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
-    skos:prefLabel "Success -- Psychological aspects" .
+    skos:prefLabel "Success--Psychological aspects" .
 
 <http://marc2rda.edu/fake/concept/fast/waterquality> a skos:Concept ;
     skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
@@ -3391,7 +3308,7 @@
 
 <http://marc2rda.edu/fake/concept/fast/womenemployment> a skos:Concept ;
     skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/fast> ;
-    skos:prefLabel "Women -- Employment" .
+    skos:prefLabel "Women--Employment" .
 
 <http://marc2rda.edu/fake/concept/gnd/essay> a skos:Concept ;
     skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/gnd> ;
@@ -3709,15 +3626,15 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/adopteesdrama> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Adoptees -- Drama" .
+    skos:prefLabel "Adoptees--Drama" .
 
 <http://marc2rda.edu/fake/concept/lcsh/adoptiondrama> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Adoption -- Drama" .
+    skos:prefLabel "Adoption--Drama" .
 
 <http://marc2rda.edu/fake/concept/lcsh/adoptiveparentsdrama> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Adoptive parents -- Drama" .
+    skos:prefLabel "Adoptive parents--Drama" .
 
 <http://marc2rda.edu/fake/concept/lcsh/artmodern> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -3725,15 +3642,15 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/artmodern20thcentury> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Art, Modern -- 20th century" .
+    skos:prefLabel "Art, Modern--20th century" .
 
 <http://marc2rda.edu/fake/concept/lcsh/asiacentralmapsearlyworksto1800> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Asia, Central -- Maps -- Early works to 1800" .
+    skos:prefLabel "Asia, Central--Maps--Early works to 1800" .
 
 <http://marc2rda.edu/fake/concept/lcsh/assassinsvideogames> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Assassins -- Video games" .
+    skos:prefLabel "Assassins--Video games" .
 
 <http://marc2rda.edu/fake/concept/lcsh/biographicaldrama> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -3741,11 +3658,11 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/birthmothersdrama> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Birthmothers -- Drama" .
+    skos:prefLabel "Birthmothers--Drama" .
 
 <http://marc2rda.edu/fake/concept/lcsh/brooklynnewyorknydrama> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Brooklyn (New York, N.Y.) -- Drama" .
+    skos:prefLabel "Brooklyn (New York, N.Y.)--Drama" .
 
 <http://marc2rda.edu/fake/concept/lcsh/bunraku> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -3753,11 +3670,11 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/canoesandcanoeingnorthamerica> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Canoes and canoeing -- North America" .
+    skos:prefLabel "Canoes and canoeing--North America" .
 
 <http://marc2rda.edu/fake/concept/lcsh/cantatasjuvenilescoresandparts> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Cantatas, Juvenile -- Scores and parts" .
+    skos:prefLabel "Cantatas, Juvenile--Scores and parts" .
 
 <http://marc2rda.edu/fake/concept/lcsh/careerdevelopment> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -3765,11 +3682,11 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/caspianseacoastmapsearlyworksto1800> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Caspian Sea Coast -- Maps -- Early works to 1800" .
+    skos:prefLabel "Caspian Sea Coast--Maps--Early works to 1800" .
 
 <http://marc2rda.edu/fake/concept/lcsh/chorusessecularchildrensvoiceswithinstrumentalensemblescoresandparts> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Choruses, Secular (Children's voices) with instrumental ensemble -- Scores and parts" .
+    skos:prefLabel "Choruses, Secular (Children's voices) with instrumental ensemble--Scores and parts" .
 
 <http://marc2rda.edu/fake/concept/lcsh/culturalpluralisminart> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -3777,11 +3694,11 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/deportedchildrenfranceizieuhistory> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Deported children -- France -- Izieu -- History" .
+    skos:prefLabel "Deported children--France--Izieu--History" .
 
 <http://marc2rda.edu/fake/concept/lcsh/dreamsfiction> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Dreams -- Fiction" .
+    skos:prefLabel "Dreams--Fiction" .
 
 <http://marc2rda.edu/fake/concept/lcsh/dvdvideodiscs> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -3793,19 +3710,19 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/ecologicalriskassessmentmaps> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Ecological risk assessment -- Maps" .
+    skos:prefLabel "Ecological risk assessment--Maps" .
 
 <http://marc2rda.edu/fake/concept/lcsh/englishpoetry19thcentury> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "English poetry -- 19th century" .
+    skos:prefLabel "English poetry--19th century" .
 
 <http://marc2rda.edu/fake/concept/lcsh/englishpoetry20thcentury> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "English poetry -- 20th century" .
+    skos:prefLabel "English poetry--20th century" .
 
 <http://marc2rda.edu/fake/concept/lcsh/environmentalimpactanalysismaps> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Environmental impact analysis -- Maps" .
+    skos:prefLabel "Environmental impact analysis--Maps" .
 
 <http://marc2rda.edu/fake/concept/lcsh/fiction> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -3813,7 +3730,7 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/forestecologybelgium> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Forest ecology -- Belgium" .
+    skos:prefLabel "Forest ecology--Belgium" .
 
 <http://marc2rda.edu/fake/concept/lcsh/genocideinart> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -3821,7 +3738,7 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/girlsdrama> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Girls -- Drama" .
+    skos:prefLabel "Girls--Drama" .
 
 <http://marc2rda.edu/fake/concept/lcsh/handbooksmanualsetc> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -3829,7 +3746,7 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/handtohandfightingvideogames> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Hand-to-hand fighting -- Video games" .
+    skos:prefLabel "Hand-to-hand fighting--Video games" .
 
 <http://marc2rda.edu/fake/concept/lcsh/herbs> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -3837,7 +3754,7 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/holocaustjewish19391945childrenfranceizieu> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Holocaust, Jewish (1939-1945) -- Children -- France -- Izieu" .
+    skos:prefLabel "Holocaust, Jewish (1939-1945)--Children--France--Izieu" .
 
 <http://marc2rda.edu/fake/concept/lcsh/holocaustjewish19391945inart> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -3845,23 +3762,23 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/holocaustjewish19391945poetry> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Holocaust, Jewish (1939-1945) -- Poetry" .
+    skos:prefLabel "Holocaust, Jewish (1939-1945)--Poetry" .
 
 <http://marc2rda.edu/fake/concept/lcsh/holocaustvictimsfranceizieuhistory> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Holocaust victims -- France -- Izieu -- History" .
+    skos:prefLabel "Holocaust victims--France--Izieu--History" .
 
 <http://marc2rda.edu/fake/concept/lcsh/humanbeingseffectofenvironmentonmaps> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Human beings -- Effect of environment on -- Maps" .
+    skos:prefLabel "Human beings--Effect of environment on--Maps" .
 
 <http://marc2rda.edu/fake/concept/lcsh/huntingoregonlanecountymaps> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Hunting -- Oregon -- Lane County -- Maps" .
+    skos:prefLabel "Hunting--Oregon--Lane County--Maps" .
 
 <http://marc2rda.edu/fake/concept/lcsh/huntingoregonlinncountymaps> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Hunting -- Oregon -- Linn County -- Maps" .
+    skos:prefLabel "Hunting--Oregon--Linn County--Maps" .
 
 <http://marc2rda.edu/fake/concept/lcsh/identification> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -3869,19 +3786,19 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/imaginaryplacesvideogames> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Imaginary places -- Video games" .
+    skos:prefLabel "Imaginary places--Video games" .
 
 <http://marc2rda.edu/fake/concept/lcsh/japanhistorykamakuraperiod11851333drama> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Japan -- History -- Kamakura period, 1185-1333 -- Drama" .
+    skos:prefLabel "Japan--History--Kamakura period, 1185-1333--Drama" .
 
 <http://marc2rda.edu/fake/concept/lcsh/jerusalempoetry> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Jerusalem -- Poetry" .
+    skos:prefLabel "Jerusalem--Poetry" .
 
 <http://marc2rda.edu/fake/concept/lcsh/jewspoetry> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Jews -- Poetry" .
+    skos:prefLabel "Jews--Poetry" .
 
 <http://marc2rda.edu/fake/concept/lcsh/jōruri> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -3889,19 +3806,19 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/koreasocialconditions1945> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Korea -- Social conditions -- 1945-" .
+    skos:prefLabel "Korea--Social conditions--1945-" .
 
 <http://marc2rda.edu/fake/concept/lcsh/landscapearchitecturehandbooksmanualsetc> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Landscape architecture -- Handbooks, manuals, etc" .
+    skos:prefLabel "Landscape architecture--Handbooks, manuals, etc" .
 
 <http://marc2rda.edu/fake/concept/lcsh/landscapegardeninghandbooksmanualsetc> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Landscape gardening -- Handbooks, manuals, etc" .
+    skos:prefLabel "Landscape gardening--Handbooks, manuals, etc" .
 
 <http://marc2rda.edu/fake/concept/lcsh/lanecountyormaps> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Lane County (Or.) -- Maps" .
+    skos:prefLabel "Lane County (Or.)--Maps" .
 
 <http://marc2rda.edu/fake/concept/lcsh/legendofzeldagame> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -3909,11 +3826,11 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/linncountyormaps> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Linn County (Or.) -- Maps" .
+    skos:prefLabel "Linn County (Or.)--Maps" .
 
 <http://marc2rda.edu/fake/concept/lcsh/magicvideogames> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Magic -- Video games" .
+    skos:prefLabel "Magic--Video games" .
 
 <http://marc2rda.edu/fake/concept/lcsh/memorialsinart> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -3921,7 +3838,7 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/minamotoyoshitsune11591189drama> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Minamoto, Yoshitsune, -- 1159-1189 -- Drama" .
+    skos:prefLabel "Minamoto, Yoshitsune, 1159-1189--Drama" .
 
 <http://marc2rda.edu/fake/concept/lcsh/monetarypolicy> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -3933,7 +3850,7 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/mothersanddaughtersdrama> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Mothers and daughters -- Drama" .
+    skos:prefLabel "Mothers and daughters--Drama" .
 
 <http://marc2rda.edu/fake/concept/lcsh/musicals> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -3941,7 +3858,7 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/natureeffectofhumanbeingsonmaps> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Nature -- Effect of human beings on -- Maps" .
+    skos:prefLabel "Nature--Effect of human beings on--Maps" .
 
 <http://marc2rda.edu/fake/concept/lcsh/natureinart> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -3957,23 +3874,23 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/ojibwaindiansboats> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Ojibwa Indians -- Boats" .
+    skos:prefLabel "Ojibwa Indians--Boats" .
 
 <http://marc2rda.edu/fake/concept/lcsh/operasvocalscoreswithpiano> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Operas -- Vocal scores with piano" .
+    skos:prefLabel "Operas--Vocal scores with piano" .
 
 <http://marc2rda.edu/fake/concept/lcsh/palestinepoetry> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Palestine -- Poetry" .
+    skos:prefLabel "Palestine--Poetry" .
 
 <http://marc2rda.edu/fake/concept/lcsh/photographyartisticspecimens> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Photography, Artistic -- Specimens" .
+    skos:prefLabel "Photography, Artistic--Specimens" .
 
 <http://marc2rda.edu/fake/concept/lcsh/plantdiseasestropics> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Plant diseases -- Tropics" .
+    skos:prefLabel "Plant diseases--Tropics" .
 
 <http://marc2rda.edu/fake/concept/lcsh/plantsinthebible> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -3985,7 +3902,7 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/poorfamiliesdrama> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Poor families -- Drama" .
+    skos:prefLabel "Poor families--Drama" .
 
 <http://marc2rda.edu/fake/concept/lcsh/postcolonialismandthearts> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -4005,7 +3922,7 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/revengevideogames> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Revenge -- Video games" .
+    skos:prefLabel "Revenge--Video games" .
 
 <http://marc2rda.edu/fake/concept/lcsh/scoresandparts> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -4025,7 +3942,7 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/shrubsrhodeislandprovidence> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Shrubs -- Rhode Island -- Providence" .
+    skos:prefLabel "Shrubs--Rhode Island--Providence" .
 
 <http://marc2rda.edu/fake/concept/lcsh/stringquintetsviolins2violacellos2> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -4033,7 +3950,7 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/successpsychologicalaspects> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Success -- Psychological aspects" .
+    skos:prefLabel "Success--Psychological aspects" .
 
 <http://marc2rda.edu/fake/concept/lcsh/trees> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -4041,19 +3958,19 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/treesgrowth> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Trees -- Growth" .
+    skos:prefLabel "Trees--Growth" .
 
 <http://marc2rda.edu/fake/concept/lcsh/treesrhodeislandprovidence> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Trees -- Rhode Island -- Providence" .
+    skos:prefLabel "Trees--Rhode Island--Providence" .
 
 <http://marc2rda.edu/fake/concept/lcsh/treesunitedstatesidentification> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Trees -- United States -- Identification" .
+    skos:prefLabel "Trees--United States--Identification" .
 
 <http://marc2rda.edu/fake/concept/lcsh/tropicalcropsdiseasesandpests> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Tropical crops -- Diseases and pests" .
+    skos:prefLabel "Tropical crops--Diseases and pests" .
 
 <http://marc2rda.edu/fake/concept/lcsh/vacations> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -4069,15 +3986,15 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/waterqualitymaps> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Water quality -- Maps" .
+    skos:prefLabel "Water quality--Maps" .
 
 <http://marc2rda.edu/fake/concept/lcsh/watershedsmaps> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Watersheds -- Maps" .
+    skos:prefLabel "Watersheds--Maps" .
 
 <http://marc2rda.edu/fake/concept/lcsh/watersupplymaps> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Water-supply -- Maps" .
+    skos:prefLabel "Water-supply--Maps" .
 
 <http://marc2rda.edu/fake/concept/lcsh/wealth> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -4085,7 +4002,7 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/womenemployment> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Women -- Employment" .
+    skos:prefLabel "Women--Employment" .
 
 <http://marc2rda.edu/fake/concept/lcsh/worldmaps> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -4097,7 +4014,7 @@
 
 <http://marc2rda.edu/fake/concept/local/filmedpuppetplaysjapan> a skos:Concept ;
     skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/local> ;
-    skos:prefLabel "Filmed puppet plays -- Japan" .
+    skos:prefLabel "Filmed puppet plays--Japan" .
 
 <http://marc2rda.edu/fake/concept/local/foreignfilms> a skos:Concept ;
     skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/local> ;
@@ -4109,7 +4026,7 @@
 
 <http://marc2rda.edu/fake/concept/local/motionpicturesjapan> a skos:Concept ;
     skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/local> ;
-    skos:prefLabel "Motion pictures -- Japan" .
+    skos:prefLabel "Motion pictures--Japan" .
 
 <http://marc2rda.edu/fake/concept/mesh/documentariesandfactualfilms> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/mesh> ;
@@ -4129,7 +4046,7 @@
 
 <http://marc2rda.edu/fake/concept/nli/holocaustjewish19391945poetry> a skos:Concept ;
     skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/nli> ;
-    skos:prefLabel "Holocaust, Jewish (1939-1945) -- Poetry" .
+    skos:prefLabel "Holocaust, Jewish (1939-1945)--Poetry" .
 
 <http://marc2rda.edu/fake/concept/nli/japanesefiction> a skos:Concept ;
     skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/nli> ;
@@ -4149,15 +4066,15 @@
 
 <http://marc2rda.edu/fake/concept/rbbin/pictorialclothbindingsunitedstates1902> a skos:Concept ;
     skos:inScheme <http://id.loc.gov/vocabulary/genreFormSchemes/rbbin> ;
-    skos:prefLabel "Pictorial cloth bindings -- United States -- 1902" .
+    skos:prefLabel "Pictorial cloth bindings--United States--1902" .
 
 <http://marc2rda.edu/fake/concept/rbbin/publishersclothbindingsbindingnewyorkstatenewyork1902> a skos:Concept ;
     skos:inScheme <http://id.loc.gov/vocabulary/genreFormSchemes/rbbin> ;
-    skos:prefLabel "Publishers' cloth bindings (Binding) -- New York (State) -- New York -- 1902" .
+    skos:prefLabel "Publishers' cloth bindings (Binding)--New York (State)--New York--1902" .
 
 <http://marc2rda.edu/fake/concept/rbgenr/artistsbooksquébecprovincemontréal1999> a skos:Concept ;
     skos:inScheme <http://id.loc.gov/vocabulary/genreFormSchemes/rbgenr> ;
-    skos:prefLabel "Artists' books -- Québec (Province) -- Montréal -- 1999" .
+    skos:prefLabel "Artists' books--Québec (Province)--Montréal--1999" .
 
 <http://marc2rda.edu/fake/concept/rbgenr/embossedclothbindings> a skos:Concept ;
     skos:inScheme <http://id.loc.gov/vocabulary/genreFormSchemes/rbgenr> ;
@@ -4189,23 +4106,23 @@
 
 <http://marc2rda.edu/fake/concept/rvm/arbresétatsunisidentification> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
-    skos:prefLabel "Arbres -- États-Unis -- Identification" .
+    skos:prefLabel "Arbres--États-Unis--Identification" .
 
 <http://marc2rda.edu/fake/concept/rvm/arbresrhodeislandprovidence> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
-    skos:prefLabel "Arbres -- Rhode Island -- Providence" .
+    skos:prefLabel "Arbres--Rhode Island--Providence" .
 
 <http://marc2rda.edu/fake/concept/rvm/arbustesrhodeislandprovidence> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
-    skos:prefLabel "Arbustes -- Rhode Island -- Providence" .
+    skos:prefLabel "Arbustes--Rhode Island--Providence" .
 
 <http://marc2rda.edu/fake/concept/rvm/architecturedupaysageguidesmanuelsetc> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
-    skos:prefLabel "Architecture du paysage -- Guides, manuels, etc" .
+    skos:prefLabel "Architecture du paysage--Guides, manuels, etc" .
 
 <http://marc2rda.edu/fake/concept/rvm/art20esiècle> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
-    skos:prefLabel "Art -- 20e siècle" .
+    skos:prefLabel "Art--20e siècle" .
 
 <http://marc2rda.edu/fake/concept/rvm/bunraku> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
@@ -4217,15 +4134,15 @@
 
 <http://marc2rda.edu/fake/concept/rvm/chœursprofanesvoixdenfantsaccdensembleinstrumentalpartitionsetparties> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
-    skos:prefLabel "Chœurs profanes (Voix d'enfants) acc. d'ensemble instrumental -- Partitions et parties" .
+    skos:prefLabel "Chœurs profanes (Voix d'enfants) acc. d'ensemble instrumental--Partitions et parties" .
 
 <http://marc2rda.edu/fake/concept/rvm/coréeconditionssociales1945> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
-    skos:prefLabel "Corée -- Conditions sociales -- 1945-" .
+    skos:prefLabel "Corée--Conditions sociales--1945-" .
 
 <http://marc2rda.edu/fake/concept/rvm/culturestropicalesmaladiesetfléaux> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
-    skos:prefLabel "Cultures tropicales -- Maladies et fléaux" .
+    skos:prefLabel "Cultures tropicales--Maladies et fléaux" .
 
 <http://marc2rda.edu/fake/concept/rvm/diversitéculturelledanslart> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
@@ -4233,7 +4150,7 @@
 
 <http://marc2rda.edu/fake/concept/rvm/écologieforestièrebelgique> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
-    skos:prefLabel "Écologie forestière -- Belgique" .
+    skos:prefLabel "Écologie forestière--Belgique" .
 
 <http://marc2rda.edu/fake/concept/rvm/guerredanslart> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
@@ -4253,15 +4170,15 @@
 
 <http://marc2rda.edu/fake/concept/rvm/holocauste19391945enfantsfranceizieu> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
-    skos:prefLabel "Holocauste, 1939-1945 -- Enfants -- France -- Izieu" .
+    skos:prefLabel "Holocauste, 1939-1945--Enfants--France--Izieu" .
 
 <http://marc2rda.edu/fake/concept/rvm/holocauste19391945poésie> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
-    skos:prefLabel "Holocauste, 1939-1945 -- Poésie" .
+    skos:prefLabel "Holocauste, 1939-1945--Poésie" .
 
 <http://marc2rda.edu/fake/concept/rvm/jardinsarchitectureguidesmanuelsetc> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
-    skos:prefLabel "Jardins -- Architecture -- Guides, manuels, etc" .
+    skos:prefLabel "Jardins--Architecture--Guides, manuels, etc" .
 
 <http://marc2rda.edu/fake/concept/rvm/jeuxvidéonintendo> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
@@ -4273,7 +4190,7 @@
 
 <http://marc2rda.edu/fake/concept/rvm/juifspoésie> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
-    skos:prefLabel "Juifs -- Poésie" .
+    skos:prefLabel "Juifs--Poésie" .
 
 <http://marc2rda.edu/fake/concept/rvm/légendedezeldajeu> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
@@ -4281,7 +4198,7 @@
 
 <http://marc2rda.edu/fake/concept/rvm/livresdartistesspécimens> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
-    skos:prefLabel "Livres d'artistes -- Spécimens" .
+    skos:prefLabel "Livres d'artistes--Spécimens" .
 
 <http://marc2rda.edu/fake/concept/rvm/naturedanslabible> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
@@ -4297,11 +4214,11 @@
 
 <http://marc2rda.edu/fake/concept/rvm/ojibwabateaux> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
-    skos:prefLabel "Ojibwa -- Bateaux" .
+    skos:prefLabel "Ojibwa--Bateaux" .
 
 <http://marc2rda.edu/fake/concept/rvm/opéraspartitionschantetpiano> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
-    skos:prefLabel "Opéras -- Partitions chant et piano" .
+    skos:prefLabel "Opéras--Partitions chant et piano" .
 
 <http://marc2rda.edu/fake/concept/rvm/partitionschantetpiano> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
@@ -4313,7 +4230,7 @@
 
 <http://marc2rda.edu/fake/concept/rvm/photographieartistiquespécimens> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
-    skos:prefLabel "Photographie artistique -- Spécimens" .
+    skos:prefLabel "Photographie artistique--Spécimens" .
 
 <http://marc2rda.edu/fake/concept/rvm/plandecarrière> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
@@ -4325,7 +4242,7 @@
 
 <http://marc2rda.edu/fake/concept/rvm/plantesmaladiesetfléauxrégionstropicales> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
-    skos:prefLabel "Plantes -- Maladies et fléaux -- Régions tropicales" .
+    skos:prefLabel "Plantes--Maladies et fléaux--Régions tropicales" .
 
 <http://marc2rda.edu/fake/concept/rvm/poésie> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
@@ -4333,11 +4250,11 @@
 
 <http://marc2rda.edu/fake/concept/rvm/poésieanglaise19esiècle> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
-    skos:prefLabel "Poésie anglaise -- 19e siècle" .
+    skos:prefLabel "Poésie anglaise--19e siècle" .
 
 <http://marc2rda.edu/fake/concept/rvm/poésieanglaise20esiècle> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
-    skos:prefLabel "Poésie anglaise -- 20e siècle" .
+    skos:prefLabel "Poésie anglaise--20e siècle" .
 
 <http://marc2rda.edu/fake/concept/rvm/politiquemonétaire> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
@@ -4357,7 +4274,7 @@
 
 <http://marc2rda.edu/fake/concept/rvm/rêvesromansnouvellesetc> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
-    skos:prefLabel "Rêves -- Romans, nouvelles, etc" .
+    skos:prefLabel "Rêves--Romans, nouvelles, etc" .
 
 <http://marc2rda.edu/fake/concept/rvm/richesse> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
@@ -4377,7 +4294,7 @@
 
 <http://marc2rda.edu/fake/concept/rvm/succèsaspectpsychologique> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
-    skos:prefLabel "Succès -- Aspect psychologique" .
+    skos:prefLabel "Succès--Aspect psychologique" .
 
 <http://marc2rda.edu/fake/concept/rvm/théâtrebiographique> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
@@ -4389,7 +4306,7 @@
 
 <http://marc2rda.edu/fake/concept/rvm/victimesdelholocaustefranceizieuhistoire> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/rvm> ;
-    skos:prefLabel "Victimes de l'Holocauste -- France -- Izieu -- Histoire" .
+    skos:prefLabel "Victimes de l'Holocauste--France--Izieu--Histoire" .
 
 <http://marc2rda.edu/fake/concept/rvmgf/cantates> a skos:Concept ;
     skos:inScheme <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> ;
@@ -4481,7 +4398,7 @@
 
 <http://marc2rda.edu/fake/concept/sears/motherdaughterrelationshipdrama> a skos:Concept ;
     skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/sears> ;
-    skos:prefLabel "Mother-daughter relationship -- Drama" .
+    skos:prefLabel "Mother-daughter relationship--Drama" .
 
 <http://marc2rda.edu/fake/concept/star/restrictionsunspecified> a skos:Concept ;
     skos:inScheme <http://id.loc.gov/vocabulary/accessrestrictionterm/star> ;
@@ -4809,24 +4726,12 @@
     rdand:nomenString.en "Asia, Central" ;
     rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
 
-<http://marc2rda.edu/fake/pla/nom/lcsh/belgium> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "Belgium" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
-
 <http://marc2rda.edu/fake/pla/nom/lcsh/brooklynnewyorkny> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:nomenString.en "Brooklyn (New York, N.Y.)" ;
     rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
 
 <http://marc2rda.edu/fake/pla/nom/lcsh/caspianseacoast> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:nomenString.en "Caspian Sea Coast" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
-
-<http://marc2rda.edu/fake/pla/nom/lcsh/france> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "France" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
-
-<http://marc2rda.edu/fake/pla/nom/lcsh/izieu> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "Izieu" ;
     rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
 
 <http://marc2rda.edu/fake/pla/nom/lcsh/japan> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
@@ -4841,84 +4746,24 @@
     rdand:nomenString.en "Korea" ;
     rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
 
-<http://marc2rda.edu/fake/pla/nom/lcsh/lanecounty> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "Lane County" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
-
 <http://marc2rda.edu/fake/pla/nom/lcsh/lanecountyor> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:nomenString.en "Lane County (Or.)" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
-
-<http://marc2rda.edu/fake/pla/nom/lcsh/linncounty> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "Linn County" ;
     rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
 
 <http://marc2rda.edu/fake/pla/nom/lcsh/linncountyor> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:nomenString.en "Linn County (Or.)" ;
     rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
 
-<http://marc2rda.edu/fake/pla/nom/lcsh/northamerica> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "North America" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
-
-<http://marc2rda.edu/fake/pla/nom/lcsh/oregon> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "Oregon" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
-
 <http://marc2rda.edu/fake/pla/nom/lcsh/palestine> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:nomenString.en "Palestine" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
-
-<http://marc2rda.edu/fake/pla/nom/lcsh/providence> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "Providence" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
-
-<http://marc2rda.edu/fake/pla/nom/lcsh/rhodeisland> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "Rhode Island" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
-
-<http://marc2rda.edu/fake/pla/nom/lcsh/tropics> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "Tropics" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
-
-<http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "United States" ;
     rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
 
 <http://marc2rda.edu/fake/pla/nom/naf/japan> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:nomenString.en "Japan" ;
     rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/subjectSchemes/naf> .
 
-<http://marc2rda.edu/fake/pla/nom/rvm/belgique> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "Belgique" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/rvm> .
-
 <http://marc2rda.edu/fake/pla/nom/rvm/corée> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:nomenString.en "Corée" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/rvm> .
-
-<http://marc2rda.edu/fake/pla/nom/rvm/étatsunis> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "États-Unis" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/rvm> .
-
-<http://marc2rda.edu/fake/pla/nom/rvm/france> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "France" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/rvm> .
-
-<http://marc2rda.edu/fake/pla/nom/rvm/izieu> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "Izieu" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/rvm> .
-
-<http://marc2rda.edu/fake/pla/nom/rvm/providence> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "Providence" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/rvm> .
-
-<http://marc2rda.edu/fake/pla/nom/rvm/régionstropicales> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "Régions tropicales" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/rvm> .
-
-<http://marc2rda.edu/fake/pla/nom/rvm/rhodeisland> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "Rhode Island" ;
     rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/rvm> .
 
 <http://marc2rda.edu/fake/pla/nom/swd/englisch> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
@@ -5022,34 +4867,6 @@
 <http://marc2rda.edu/fake/tim/nom/fast/since1945> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:nomenString.en "Since 1945" ;
     rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
-
-<http://marc2rda.edu/fake/tim/nom/lcsh/1945> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "1945-" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
-
-<http://marc2rda.edu/fake/tim/nom/lcsh/19thcentury> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "19th century" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
-
-<http://marc2rda.edu/fake/tim/nom/lcsh/20thcentury> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "20th century" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
-
-<http://marc2rda.edu/fake/tim/nom/lcsh/kamakuraperiod11851333> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "Kamakura period, 1185-1333" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
-
-<http://marc2rda.edu/fake/tim/nom/rvm/1945> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "1945-" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/rvm> .
-
-<http://marc2rda.edu/fake/tim/nom/rvm/19esiècle> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "19e siècle" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/rvm> .
-
-<http://marc2rda.edu/fake/tim/nom/rvm/20esiècle> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "20e siècle" ;
-    rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/rvm> .
 
 <http://marc2rda.edu/fake/timespan/fast/11851333> a <http://rdaregistry.info/Elements/c/Timespan.en> ;
     rdato:authorizedAccessPointForTimespan.en <http://marc2rda.edu/fake/tim/nom/fast/11851333> .
@@ -5327,7 +5144,7 @@
 
 <http://marc2rda.edu/fake/concept/lcsh/artistsbooksspecimens> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
-    skos:prefLabel "Artists' books -- Specimens" .
+    skos:prefLabel "Artists' books--Specimens" .
 
 <http://marc2rda.edu/fake/concept/lcsh/specimens> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;

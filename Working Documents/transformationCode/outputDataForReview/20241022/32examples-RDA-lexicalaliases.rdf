@@ -27,10 +27,8 @@
       <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/fast/selfactualizationpsychology"/>
       <fake:marcfield>F650 #7 $a Success $x Psychological aspects $2 fast</fake:marcfield>
       <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/fast/successpsychologicalaspects"/>
-      <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/fast/psychologicalaspects"/>
       <fake:marcfield>F650 #7 $a Women $x Employment $2 fast</fake:marcfield>
       <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/fast/womenemployment"/>
-      <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/fast/employment"/>
       <fake:marcfield>F655 #4 $a Downloadable audio books.</fake:marcfield>
       <rdawd:categoryOfWork.en>Downloadable audio books</rdawd:categoryOfWork.en>
       <fake:marcfield>F655 #7 $a Audiobooks $2 fast</fake:marcfield>
@@ -126,7 +124,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/womenemployment">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Women -- Employment</skos:prefLabel>
+      <skos:prefLabel>Women--Employment</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/careerdevelopment">
@@ -141,7 +139,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/successpsychologicalaspects">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Success -- Psychological aspects</skos:prefLabel>
+      <skos:prefLabel>Success--Psychological aspects</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/plandecarrière">
@@ -151,7 +149,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/succèsaspectpsychologique">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Succès -- Aspect psychologique</skos:prefLabel>
+      <skos:prefLabel>Succès--Aspect psychologique</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/careerdevelopment">
@@ -166,22 +164,12 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/successpsychologicalaspects">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Success -- Psychological aspects</skos:prefLabel>
-      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/psychologicalaspects">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Psychological aspects</skos:prefLabel>
+      <skos:prefLabel>Success--Psychological aspects</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/womenemployment">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Women -- Employment</skos:prefLabel>
-      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/employment">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Employment</skos:prefLabel>
+      <skos:prefLabel>Women--Employment</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/audiobooks">
@@ -296,26 +284,6 @@
       <rdand:assignedByAgent.en>Caedmon</rdand:assignedByAgent.en>
       <rdand:categoryOfNomen.en>Issue number</rdand:categoryOfNomen.en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/lcsh/20thcentury">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>20th century</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/lcsh/19thcentury">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>19th century</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/rvm/20esiècle">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>20e siècle</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/rvm/19esiècle">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>19e siècle</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
-   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/fast/18001999">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
       <rdand:nomenString.en>1800-1999</rdand:nomenString.en>
@@ -339,22 +307,22 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/englishpoetry20thcentury">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>English poetry -- 20th century</skos:prefLabel>
+      <skos:prefLabel>English poetry--20th century</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/englishpoetry19thcentury">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>English poetry -- 19th century</skos:prefLabel>
+      <skos:prefLabel>English poetry--19th century</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/poésieanglaise20esiècle">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Poésie anglaise -- 20e siècle</skos:prefLabel>
+      <skos:prefLabel>Poésie anglaise--20e siècle</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/poésieanglaise19esiècle">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Poésie anglaise -- 19e siècle</skos:prefLabel>
+      <skos:prefLabel>Poésie anglaise--19e siècle</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/aat/poetry">
@@ -396,22 +364,6 @@
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>1800-1999</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/lcsh/20thcentury">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Timespan.en"/>
-      <rdato:authorizedAccessPointForTimespan.en rdf:resource="http://marc2rda.edu/fake/tim/nom/lcsh/20thcentury"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/lcsh/19thcentury">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Timespan.en"/>
-      <rdato:authorizedAccessPointForTimespan.en rdf:resource="http://marc2rda.edu/fake/tim/nom/lcsh/19thcentury"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/rvm/20esiècle">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Timespan.en"/>
-      <rdato:authorizedAccessPointForTimespan.en rdf:resource="http://marc2rda.edu/fake/tim/nom/rvm/20esiècle"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/rvm/19esiècle">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Timespan.en"/>
-      <rdato:authorizedAccessPointForTimespan.en rdf:resource="http://marc2rda.edu/fake/tim/nom/rvm/19esiècle"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/fast/18001999">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Timespan.en"/>
@@ -691,7 +643,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/landscapegardeninghandbooksmanualsetc">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Landscape gardening -- Handbooks, manuals, etc</skos:prefLabel>
+      <skos:prefLabel>Landscape gardening--Handbooks, manuals, etc</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/handbooksmanualsetc">
@@ -701,7 +653,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/landscapearchitecturehandbooksmanualsetc">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Landscape architecture -- Handbooks, manuals, etc</skos:prefLabel>
+      <skos:prefLabel>Landscape architecture--Handbooks, manuals, etc</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/handbooksmanualsetc">
@@ -711,7 +663,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/jardinsarchitectureguidesmanuelsetc">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Jardins -- Architecture -- Guides, manuels, etc</skos:prefLabel>
+      <skos:prefLabel>Jardins--Architecture--Guides, manuels, etc</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/guidesmanuelsetc">
@@ -721,7 +673,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/architecturedupaysageguidesmanuelsetc">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Architecture du paysage -- Guides, manuels, etc</skos:prefLabel>
+      <skos:prefLabel>Architecture du paysage--Guides, manuels, etc</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/guidesmanuelsetc">
@@ -775,8 +727,8 @@
       <fake:marcfield>F650 #7 $a Trees. $2 fast $0 (OCoLC)fst01155984</fake:marcfield>
       <rdaw:subject.en rdf:resource="https://id.worldcat.org/fast/01155984"/>
       <fake:marcfield>F651 #7 $a Rhode Island $z Providence. $2 fast $0 (OCoLC)fst01204977 $1 https://id.oclc.org/worldcat/entity/E39PBJwdfgFyrX9jyFpM86B9Dq</fake:marcfield>
-      <rdaw:subject.en rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJwdfgFyrX9jyFpM86B9Dq"/>
       <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/fast/rhodeisland"/>
+      <rdaw:subject.en rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJwdfgFyrX9jyFpM86B9Dq"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99115288070001452exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Expression.en"/>
@@ -806,46 +758,6 @@
       <!--Default relationship property used for https://id.oclc.org/worldcat/entity/E39PBJptTBvddyxqGWgHgdDQbd-->
       <rdamo:relatedPersonOfManifestation.en rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJptTBvddyxqGWgHgdDQbd"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/rhodeisland">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>Rhode Island</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/providence">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>Providence</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/rhodeisland">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>Rhode Island</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/providence">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>Providence</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/rhodeisland">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>Rhode Island</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/providence">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>Providence</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/rhodeisland">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>Rhode Island</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/providence">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>Providence</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
-   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/fast/rhodeisland">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
       <rdand:nomenString.en>Rhode Island</rdand:nomenString.en>
@@ -869,55 +781,23 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/treesrhodeislandprovidence">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Trees -- Rhode Island -- Providence</skos:prefLabel>
+      <skos:prefLabel>Trees--Rhode Island--Providence</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/shrubsrhodeislandprovidence">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Shrubs -- Rhode Island -- Providence</skos:prefLabel>
+      <skos:prefLabel>Shrubs--Rhode Island--Providence</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/arbresrhodeislandprovidence">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Arbres -- Rhode Island -- Providence</skos:prefLabel>
+      <skos:prefLabel>Arbres--Rhode Island--Providence</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/arbustesrhodeislandprovidence">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Arbustes -- Rhode Island -- Providence</skos:prefLabel>
+      <skos:prefLabel>Arbustes--Rhode Island--Providence</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/rhodeisland">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/rhodeisland"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/providence">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/providence"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/rhodeisland">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/rhodeisland"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/providence">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/providence"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/rvm/rhodeisland">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/rhodeisland"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/rvm/providence">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/providence"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/rvm/rhodeisland">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/rhodeisland"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/rvm/providence">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/providence"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/fast/rhodeisland">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
@@ -981,16 +861,6 @@
       <fake:marcfield>F505 0# $a 1. Acquisition de la position dominante dans les jeunes plantations équiennes d'épicéa.--2-4. A propos de distribution de fréquence de diamètres et de hauteurs. Essails préliminaires à l'étude du facteur compétition. La compétition au niveau des classes sociales. 1 v. --5-8. Compétition inter-clones chez le peuplier. Action d'écrans multilatéraux translucides et opaques sur le peuplier. Compétition inter-individuelle chez le peuplier. Effets de lisière dans les plantations de peuplier. 1 v. --9. Conditionnement social de la croissance individuelle de jeunes épicéas.--10. Compétition inter-individuelle chez le douglas.--12. Mélèze d'Éurope (Larix decidua Mill.). Effets du repiquage différé.--13. Tables pour les éclaircies numériques.</fake:marcfield>
       <rdamd:noteOnManifestation.en>Contents: 1. Acquisition de la position dominante dans les jeunes plantations équiennes d'épicéa.--2-4. A propos de distribution de fréquence de diamètres et de hauteurs. Essails préliminaires à l'étude du facteur compétition. La compétition au niveau des classes sociales. 1 v. --5-8. Compétition inter-clones chez le peuplier. Action d'écrans multilatéraux translucides et opaques sur le peuplier. Compétition inter-individuelle chez le peuplier. Effets de lisière dans les plantations de peuplier. 1 v. --9. Conditionnement social de la croissance individuelle de jeunes épicéas.--10. Compétition inter-individuelle chez le douglas.--12. Mélèze d'Éurope (Larix decidua Mill.). Effets du repiquage différé.--13. Tables pour les éclaircies numériques.</rdamd:noteOnManifestation.en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/belgium">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>Belgium</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/belgique">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>Belgique</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
-   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d22e1555">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
       <rdand:nomenString.en>Belgium</rdand:nomenString.en>
@@ -1009,26 +879,18 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/forestecologybelgium">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Forest ecology -- Belgium</skos:prefLabel>
+      <skos:prefLabel>Forest ecology--Belgium</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/treesgrowth">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Trees -- Growth</skos:prefLabel>
+      <skos:prefLabel>Trees--Growth</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/écologieforestièrebelgique">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Écologie forestière -- Belgique</skos:prefLabel>
+      <skos:prefLabel>Écologie forestière--Belgique</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/belgium">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/belgium"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/rvm/belgique">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/belgique"/>
    </rdf:Description>
    <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39QbtfRBTwKRX6RVxHCgVWBGB">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
@@ -1221,16 +1083,6 @@
       <rdan:schemeOfNomen.en rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
       <rdan:statusOfIdentification.en rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/lcsh/20thcentury">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>20th century</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/rvm/20esiècle">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>20e siècle</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
-   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/fast/19001999">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
       <rdand:nomenString.en>1900-1999</rdand:nomenString.en>
@@ -1264,7 +1116,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/artmodern20thcentury">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Art, Modern -- 20th century</skos:prefLabel>
+      <skos:prefLabel>Art, Modern--20th century</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/postcolonialismeetarts">
@@ -1279,7 +1131,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/art20esiècle">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Art -- 20e siècle</skos:prefLabel>
+      <skos:prefLabel>Art--20e siècle</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/artmodern">
@@ -1301,14 +1153,6 @@
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>1900-1999</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/lcsh/20thcentury">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Timespan.en"/>
-      <rdato:authorizedAccessPointForTimespan.en rdf:resource="http://marc2rda.edu/fake/tim/nom/lcsh/20thcentury"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/rvm/20esiècle">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Timespan.en"/>
-      <rdato:authorizedAccessPointForTimespan.en rdf:resource="http://marc2rda.edu/fake/tim/nom/rvm/20esiècle"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/fast/19001999">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Timespan.en"/>
@@ -1345,19 +1189,19 @@
       <fake:marcfield>F650 #7 $a Hunting. $2 fast $0 (OCoLC)fst00964162</fake:marcfield>
       <rdaw:subject.en rdf:resource="https://id.worldcat.org/fast/00964162"/>
       <fake:marcfield>F651 #0 $a Linn County (Or.) $v Maps.</fake:marcfield>
+      <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/lcsh/linncountyor"/>
       <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/lcsh/linncountyormaps"/>
       <rdaw:categoryOfWork.en rdf:resource="http://marc2rda.edu/fake/concept/lcsh/maps"/>
-      <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/lcsh/linncountyor"/>
       <fake:marcfield>F651 #0 $a Lane County (Or.) $v Maps.</fake:marcfield>
+      <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/lcsh/lanecountyor"/>
       <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/lcsh/lanecountyormaps"/>
       <rdaw:categoryOfWork.en rdf:resource="http://marc2rda.edu/fake/concept/lcsh/maps"/>
-      <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/lcsh/lanecountyor"/>
       <fake:marcfield>F651 #7 $a Oregon $z Lane County. $2 fast $0 (OCoLC)fst01208163 $1 https://id.oclc.org/worldcat/entity/E39QbtfRFCjmrdDjtdHQrrkHPp</fake:marcfield>
+      <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/fast/oregon"/>
       <rdaw:subject.en rdf:resource="https://id.oclc.org/worldcat/entity/E39QbtfRFCjmrdDjtdHQrrkHPp"/>
-      <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/fast/oregon"/>
       <fake:marcfield>F651 #7 $a Oregon $z Linn County. $2 fast $0 (OCoLC)fst01230371 $1 https://id.oclc.org/worldcat/entity/E39QbtfRDpjcbHjWPGybXbGdXM</fake:marcfield>
-      <rdaw:subject.en rdf:resource="https://id.oclc.org/worldcat/entity/E39QbtfRDpjcbHjWPGybXbGdXM"/>
       <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/fast/oregon"/>
+      <rdaw:subject.en rdf:resource="https://id.oclc.org/worldcat/entity/E39QbtfRDpjcbHjWPGybXbGdXM"/>
       <fake:marcfield>F655 #7 $a tourist maps. $2 aat</fake:marcfield>
       <rdaw:categoryOfWork.en rdf:resource="http://marc2rda.edu/fake/concept/aat/touristmaps"/>
       <fake:marcfield>F655 #7 $a Tourist maps. $2 fast $0 (OCoLC)fst01423809</fake:marcfield>
@@ -1417,26 +1261,6 @@
       <rdand:nomenString.en>4293L4</rdand:nomenString.en>
       <rdan:schemeOfNomen.en rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/oregon">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>Oregon</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/linncounty">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>Linn County</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/oregon">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>Oregon</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/lanecounty">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>Lane County</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/linncountyor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
       <rdand:nomenString.en>Linn County (Or.)</rdand:nomenString.en>
@@ -1470,7 +1294,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/huntingoregonlinncountymaps">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Hunting -- Oregon -- Linn County -- Maps</skos:prefLabel>
+      <skos:prefLabel>Hunting--Oregon--Linn County--Maps</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/maps">
@@ -1480,7 +1304,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/huntingoregonlanecountymaps">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Hunting -- Oregon -- Lane County -- Maps</skos:prefLabel>
+      <skos:prefLabel>Hunting--Oregon--Lane County--Maps</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/maps">
@@ -1490,7 +1314,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/linncountyormaps">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Linn County (Or.) -- Maps</skos:prefLabel>
+      <skos:prefLabel>Linn County (Or.)--Maps</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/maps">
@@ -1500,7 +1324,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/lanecountyormaps">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Lane County (Or.) -- Maps</skos:prefLabel>
+      <skos:prefLabel>Lane County (Or.)--Maps</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/maps">
@@ -1530,22 +1354,6 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcc/4293l4">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
       <rdapo:identifierForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/lcc/4293l4"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/oregon">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/oregon"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/linncounty">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/linncounty"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/oregon">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/oregon"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/lanecounty">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/lanecounty"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/linncountyor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
@@ -1615,10 +1423,8 @@
       <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/fast/environmentalimpactanalysis"/>
       <fake:marcfield>F650 #7 $a Human beings $x Effect of environment on $2 fast</fake:marcfield>
       <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/fast/humanbeingseffectofenvironmenton"/>
-      <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/fast/effectofenvironmenton"/>
       <fake:marcfield>F650 #7 $a Nature $x Effect of human beings on $2 fast</fake:marcfield>
       <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/fast/natureeffectofhumanbeingson"/>
-      <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/fast/effectofhumanbeingson"/>
       <fake:marcfield>F650 #7 $a Water quality $2 fast</fake:marcfield>
       <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/fast/waterquality"/>
       <fake:marcfield>F650 #7 $a Water-supply $2 fast</fake:marcfield>
@@ -1724,7 +1530,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/natureeffectofhumanbeingsonmaps">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Nature -- Effect of human beings on -- Maps</skos:prefLabel>
+      <skos:prefLabel>Nature--Effect of human beings on--Maps</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/maps">
@@ -1734,7 +1540,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/humanbeingseffectofenvironmentonmaps">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Human beings -- Effect of environment on -- Maps</skos:prefLabel>
+      <skos:prefLabel>Human beings--Effect of environment on--Maps</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/maps">
@@ -1744,7 +1550,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/ecologicalriskassessmentmaps">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Ecological risk assessment -- Maps</skos:prefLabel>
+      <skos:prefLabel>Ecological risk assessment--Maps</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/maps">
@@ -1754,7 +1560,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/environmentalimpactanalysismaps">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Environmental impact analysis -- Maps</skos:prefLabel>
+      <skos:prefLabel>Environmental impact analysis--Maps</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/maps">
@@ -1764,7 +1570,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/watersupplymaps">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Water-supply -- Maps</skos:prefLabel>
+      <skos:prefLabel>Water-supply--Maps</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/maps">
@@ -1774,7 +1580,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/waterqualitymaps">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Water quality -- Maps</skos:prefLabel>
+      <skos:prefLabel>Water quality--Maps</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/maps">
@@ -1784,7 +1590,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/watershedsmaps">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Watersheds -- Maps</skos:prefLabel>
+      <skos:prefLabel>Watersheds--Maps</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/maps">
@@ -1814,22 +1620,12 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/humanbeingseffectofenvironmenton">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Human beings -- Effect of environment on</skos:prefLabel>
-      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/effectofenvironmenton">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Effect of environment on</skos:prefLabel>
+      <skos:prefLabel>Human beings--Effect of environment on</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/natureeffectofhumanbeingson">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Nature -- Effect of human beings on</skos:prefLabel>
-      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/effectofhumanbeingson">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Effect of human beings on</skos:prefLabel>
+      <skos:prefLabel>Nature--Effect of human beings on</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/waterquality">
@@ -1965,7 +1761,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/operasvocalscoreswithpiano">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Operas -- Vocal scores with piano</skos:prefLabel>
+      <skos:prefLabel>Operas--Vocal scores with piano</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/vocalscoreswithpiano">
@@ -1975,7 +1771,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/opéraspartitionschantetpiano">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Opéras -- Partitions chant et piano</skos:prefLabel>
+      <skos:prefLabel>Opéras--Partitions chant et piano</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/partitionschantetpiano">
@@ -2094,7 +1890,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/chorusessecularchildrensvoiceswithinstrumentalensemblescoresandparts">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Choruses, Secular (Children's voices) with instrumental ensemble -- Scores and parts</skos:prefLabel>
+      <skos:prefLabel>Choruses, Secular (Children's voices) with instrumental ensemble--Scores and parts</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/scoresandparts">
@@ -2104,7 +1900,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/cantatasjuvenilescoresandparts">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Cantatas, Juvenile -- Scores and parts</skos:prefLabel>
+      <skos:prefLabel>Cantatas, Juvenile--Scores and parts</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/scoresandparts">
@@ -2114,7 +1910,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/chœursprofanesvoixdenfantsaccdensembleinstrumentalpartitionsetparties">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Chœurs profanes (Voix d'enfants) acc. d'ensemble instrumental -- Partitions et parties</skos:prefLabel>
+      <skos:prefLabel>Chœurs profanes (Voix d'enfants) acc. d'ensemble instrumental--Partitions et parties</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/partitionsetparties">
@@ -2178,6 +1974,8 @@
       <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/lcc/pn29245k3"/>
       <fake:marcfield>F245 00 $6 880-01 $a Yoshitsune senbon-zakura.</fake:marcfield>
       <rdawd:titleOfWork.en>Yoshitsune senbon-zakura</rdawd:titleOfWork.en>
+      <fake:marcfield>F880 00 $6 245-01/$1 $a 義経千本桜.</fake:marcfield>
+      <rdawd:titleOfWork.en>義経千本桜</rdawd:titleOfWork.en>
       <fake:marcfield>F257 ## $a Japan $2 naf</fake:marcfield>
       <rdawo:relatedPlaceOfWork.en rdf:resource="http://marc2rda.edu/fake/place/naf/japan"/>
       <fake:marcfield>F650 #0 $6 880-08 $a Bunraku.</fake:marcfield>
@@ -2199,13 +1997,13 @@
       <fake:marcfield>F650 #7 $a Puppet plays, Japanese. $2 fast $0 (OCoLC)fst01084205</fake:marcfield>
       <rdaw:subject.en rdf:resource="https://id.worldcat.org/fast/01084205"/>
       <fake:marcfield>F651 #0 $6 880-07 $a Japan $x History $y Kamakura period, 1185-1333 $v Drama.</fake:marcfield>
+      <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/lcsh/japan"/>
       <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/lcsh/japanhistorykamakuraperiod11851333drama"/>
       <rdaw:categoryOfWork.en rdf:resource="http://marc2rda.edu/fake/concept/lcsh/drama"/>
-      <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/lcsh/japan"/>
       <fake:marcfield>F651 #7 $a Japan. $2 fast $0 (OCoLC)fst01204082 $1 https://id.oclc.org/worldcat/entity/E39PBJkT7GyCmyjxytDfqk6Yfq</fake:marcfield>
       <rdawo:subjectPlace.en rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJkT7GyCmyjxytDfqk6Yfq"/>
       <fake:marcfield>F655 #4 $a Foreign language films $x Japanese.</fake:marcfield>
-      <rdawd:categoryOfWork.en>Foreign language films -- Japanese</rdawd:categoryOfWork.en>
+      <rdawd:categoryOfWork.en>Foreign language films--Japanese</rdawd:categoryOfWork.en>
       <fake:marcfield>F655 #7 $a Puppet plays. $2 fast $0 (OCoLC)fst01922513</fake:marcfield>
       <rdaw:categoryOfWork.en rdf:resource="https://id.worldcat.org/fast/01922513"/>
       <fake:marcfield>F655 #7 $a Drama. $2 fast $0 (OCoLC)fst01423879</fake:marcfield>
@@ -2411,11 +2209,6 @@
       <rdand:nomenString.en>Japan</rdand:nomenString.en>
       <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/lcsh/kamakuraperiod11851333">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>Kamakura period, 1185-1333</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d22e3590">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
       <rdand:nomenString.en>Japan</rdand:nomenString.en>
@@ -2529,7 +2322,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/japanhistorykamakuraperiod11851333drama">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Japan -- History -- Kamakura period, 1185-1333 -- Drama</skos:prefLabel>
+      <skos:prefLabel>Japan--History--Kamakura period, 1185-1333--Drama</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/drama">
@@ -2549,7 +2342,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/local/filmedpuppetplaysjapan">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Filmed puppet plays -- Japan</skos:prefLabel>
+      <skos:prefLabel>Filmed puppet plays--Japan</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/local"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/local/foreignfilms">
@@ -2559,7 +2352,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/local/motionpicturesjapan">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Motion pictures -- Japan</skos:prefLabel>
+      <skos:prefLabel>Motion pictures--Japan</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/local"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/local/japaneselanguagefilms">
@@ -2579,7 +2372,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/minamotoyoshitsune11591189drama">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Minamoto, Yoshitsune, -- 1159-1189 -- Drama</skos:prefLabel>
+      <skos:prefLabel>Minamoto, Yoshitsune, 1159-1189--Drama</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/drama">
@@ -2603,10 +2396,6 @@
    <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJkT7GyCmyjxytDfqk6Yfq">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
       <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/fast/japan"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/lcsh/kamakuraperiod11851333">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Timespan.en"/>
-      <rdato:authorizedAccessPointForTimespan.en rdf:resource="http://marc2rda.edu/fake/tim/nom/lcsh/kamakuraperiod11851333"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/fast/11851333">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Timespan.en"/>
@@ -3048,7 +2837,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/adoptiondrama">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Adoption -- Drama</skos:prefLabel>
+      <skos:prefLabel>Adoption--Drama</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/drama">
@@ -3058,7 +2847,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/adopteesdrama">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Adoptees -- Drama</skos:prefLabel>
+      <skos:prefLabel>Adoptees--Drama</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/drama">
@@ -3068,7 +2857,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/adoptiveparentsdrama">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Adoptive parents -- Drama</skos:prefLabel>
+      <skos:prefLabel>Adoptive parents--Drama</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/drama">
@@ -3078,7 +2867,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/birthmothersdrama">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Birthmothers -- Drama</skos:prefLabel>
+      <skos:prefLabel>Birthmothers--Drama</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/drama">
@@ -3088,7 +2877,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/mothersanddaughtersdrama">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Mothers and daughters -- Drama</skos:prefLabel>
+      <skos:prefLabel>Mothers and daughters--Drama</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/drama">
@@ -3098,7 +2887,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/cyac/parentandchilddrama">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Parent and child -- Drama</skos:prefLabel>
+      <skos:prefLabel>Parent and child--Drama</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/cyac"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/cyac/drama">
@@ -3108,7 +2897,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/sears/motherdaughterrelationshipdrama">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Mother-daughter relationship -- Drama</skos:prefLabel>
+      <skos:prefLabel>Mother-daughter relationship--Drama</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/sears"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/sears/drama">
@@ -3390,12 +3179,12 @@
       <fake:marcfield>F650 #7 $a Poor families. $2 fast $0 (OCoLC)fst01071206</fake:marcfield>
       <rdaw:subject.en rdf:resource="https://id.worldcat.org/fast/01071206"/>
       <fake:marcfield>F651 #0 $a Brooklyn (New York, N.Y.) $v Drama.</fake:marcfield>
+      <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/lcsh/brooklynnewyorkny"/>
       <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/lcsh/brooklynnewyorknydrama"/>
       <rdaw:categoryOfWork.en rdf:resource="http://marc2rda.edu/fake/concept/lcsh/drama"/>
-      <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/lcsh/brooklynnewyorkny"/>
       <fake:marcfield>F651 #7 $a New York (State) $z New York $z Brooklyn. $2 fast $0 (OCoLC)fst01312516 $1 https://id.oclc.org/worldcat/entity/E39PBJpYy9jfQfrX8yKcDx83cP</fake:marcfield>
-      <rdaw:subject.en rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJpYy9jfQfrX8yKcDx83cP"/>
       <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/fast/newyorkstate"/>
+      <rdaw:subject.en rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJpYy9jfQfrX8yKcDx83cP"/>
       <fake:marcfield>F655 #7 $a Musicals $2 fast $0 (OCoLC)fst01726680</fake:marcfield>
       <rdaw:categoryOfWork.en rdf:resource="https://id.worldcat.org/fast/01726680"/>
       <fake:marcfield>F655 #7 $a Original cast recordings. $2 fast $0 (OCoLC)fst01919889</fake:marcfield>
@@ -3564,7 +3353,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/poorfamiliesdrama">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Poor families -- Drama</skos:prefLabel>
+      <skos:prefLabel>Poor families--Drama</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/drama">
@@ -3574,7 +3363,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/girlsdrama">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Girls -- Drama</skos:prefLabel>
+      <skos:prefLabel>Girls--Drama</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/drama">
@@ -3584,7 +3373,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/brooklynnewyorknydrama">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Brooklyn (New York, N.Y.) -- Drama</skos:prefLabel>
+      <skos:prefLabel>Brooklyn (New York, N.Y.)--Drama</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/drama">
@@ -3694,7 +3483,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/artistsbooksspecimens">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Artists' books -- Specimens</skos:prefLabel>
+      <skos:prefLabel>Artists' books--Specimens</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/specimens">
@@ -3796,8 +3585,8 @@
       <fake:marcfield>F650 #7 $a War in art. $2 fast $0 (OCoLC)fst01170504</fake:marcfield>
       <rdaw:subject.en rdf:resource="https://id.worldcat.org/fast/01170504"/>
       <fake:marcfield>F651 #7 $a France $z Izieu. $2 fast $0 (OCoLC)fst01231047 $1 https://id.oclc.org/worldcat/entity/E39QbtfRtXVmHwdVPG74KfkHPp</fake:marcfield>
-      <rdaw:subject.en rdf:resource="https://id.oclc.org/worldcat/entity/E39QbtfRtXVmHwdVPG74KfkHPp"/>
       <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/fast/france"/>
+      <rdaw:subject.en rdf:resource="https://id.oclc.org/worldcat/entity/E39QbtfRtXVmHwdVPG74KfkHPp"/>
       <fake:marcfield>F655 #7 $a Letterpress printing. $2 aat</fake:marcfield>
       <rdaw:categoryOfWork.en rdf:resource="http://marc2rda.edu/fake/concept/aat/letterpressprinting"/>
       <fake:marcfield>F655 #7 $a History. $2 fast $0 (OCoLC)fst01411628</fake:marcfield>
@@ -3865,56 +3654,6 @@
       <rdand:nomenString.en>9782921751179</rdand:nomenString.en>
       <rdan:schemeOfNomen.en rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/france">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>France</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/izieu">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>Izieu</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/france">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>France</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/izieu">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>Izieu</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/france">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>France</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/izieu">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>Izieu</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/france">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>France</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/izieu">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>Izieu</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/france">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>France</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/izieu">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>Izieu</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
-   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/fast/france">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
       <rdand:nomenString.en>France</rdand:nomenString.en>
@@ -3965,17 +3704,17 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/holocaustjewish19391945childrenfranceizieu">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Holocaust, Jewish (1939-1945) -- Children -- France -- Izieu</skos:prefLabel>
+      <skos:prefLabel>Holocaust, Jewish (1939-1945)--Children--France--Izieu</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/holocaustvictimsfranceizieuhistory">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Holocaust victims -- France -- Izieu -- History</skos:prefLabel>
+      <skos:prefLabel>Holocaust victims--France--Izieu--History</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/deportedchildrenfranceizieuhistory">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Deported children -- France -- Izieu -- History</skos:prefLabel>
+      <skos:prefLabel>Deported children--France--Izieu--History</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/warinart">
@@ -3995,7 +3734,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/photographyartisticspecimens">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Photography, Artistic -- Specimens</skos:prefLabel>
+      <skos:prefLabel>Photography, Artistic--Specimens</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/specimens">
@@ -4005,7 +3744,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/artistsbooksspecimens">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Artists' books -- Specimens</skos:prefLabel>
+      <skos:prefLabel>Artists' books--Specimens</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/specimens">
@@ -4020,12 +3759,12 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/holocauste19391945enfantsfranceizieu">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Holocauste, 1939-1945 -- Enfants -- France -- Izieu</skos:prefLabel>
+      <skos:prefLabel>Holocauste, 1939-1945--Enfants--France--Izieu</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/victimesdelholocaustefranceizieuhistoire">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Victimes de l'Holocauste -- France -- Izieu -- Histoire</skos:prefLabel>
+      <skos:prefLabel>Victimes de l'Holocauste--France--Izieu--Histoire</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/guerredanslart">
@@ -4035,7 +3774,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/photographieartistiquespécimens">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Photographie artistique -- Spécimens</skos:prefLabel>
+      <skos:prefLabel>Photographie artistique--Spécimens</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/spécimens">
@@ -4045,7 +3784,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/livresdartistesspécimens">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Livres d'artistes -- Spécimens</skos:prefLabel>
+      <skos:prefLabel>Livres d'artistes--Spécimens</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/spécimens">
@@ -4060,53 +3799,13 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rbgenr/artistsbooksquébecprovincemontréal1999">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Artists' books -- Québec (Province) -- Montréal -- 1999</skos:prefLabel>
+      <skos:prefLabel>Artists' books--Québec (Province)--Montréal--1999</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rbgenr"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/19391945">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>1939-1945</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/france">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/france"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/izieu">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/izieu"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/france">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/france"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/izieu">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/izieu"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/france">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/france"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/izieu">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/izieu"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/rvm/france">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/france"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/rvm/izieu">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/izieu"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/rvm/france">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/france"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/rvm/izieu">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/izieu"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/fast/france">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
@@ -4368,11 +4067,10 @@
       <rdamo:placeOfManifestation.en rdf:resource="http://id.loc.gov/vocabulary/countries/mau"/>
       <rdam:carrierType.en rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/>
       <rdam:categoryOfManifestation.en rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/northamerica">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>North America</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+      <fake:marcfield>F245 00 $a Earl's canoe : $b a traditional Ojibwe craft / $c by Tom Vennum with Charles Weber, assisted by Earl Nyholm.</fake:marcfield>
+      <rdamd:titleProper.en>Earl's canoe</rdamd:titleProper.en>
+      <rdamd:otherTitleInformation.en>a traditional Ojibwe craft</rdamd:otherTitleInformation.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>by Tom Vennum with Charles Weber, assisted by Earl Nyholm</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d22e6751">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
@@ -4427,17 +4125,17 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/ojibwaindiansboats">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Ojibwa Indians -- Boats</skos:prefLabel>
+      <skos:prefLabel>Ojibwa Indians--Boats</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/canoesandcanoeingnorthamerica">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Canoes and canoeing -- North America</skos:prefLabel>
+      <skos:prefLabel>Canoes and canoeing--North America</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/ojibwabateaux">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Ojibwa -- Bateaux</skos:prefLabel>
+      <skos:prefLabel>Ojibwa--Bateaux</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/aat/documentaryfilm">
@@ -4474,10 +4172,6 @@
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Films autres que de fiction</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/northamerica">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/northamerica"/>
    </rdf:Description>
    <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJxRHKPqWyj6g89H9PwHmd">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
@@ -4626,7 +4320,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/assassinsvideogames">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Assassins -- Video games</skos:prefLabel>
+      <skos:prefLabel>Assassins--Video games</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/videogames">
@@ -4636,7 +4330,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/revengevideogames">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Revenge -- Video games</skos:prefLabel>
+      <skos:prefLabel>Revenge--Video games</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/videogames">
@@ -4646,7 +4340,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/handtohandfightingvideogames">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Hand-to-hand fighting -- Video games</skos:prefLabel>
+      <skos:prefLabel>Hand-to-hand fighting--Video games</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/videogames">
@@ -4810,7 +4504,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/imaginaryplacesvideogames">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Imaginary places -- Video games</skos:prefLabel>
+      <skos:prefLabel>Imaginary places--Video games</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/videogames">
@@ -4820,7 +4514,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/magicvideogames">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Magic -- Video games</skos:prefLabel>
+      <skos:prefLabel>Magic--Video games</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/videogames">
@@ -4982,6 +4676,11 @@
       <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/99114129320001452exp"/>
       <fake:marcfield>F008 821217s1587    enk     c     001 0 eng d</fake:marcfield>
       <rdamo:placeOfManifestation.en rdf:resource="http://id.loc.gov/vocabulary/countries/enk"/>
+      <fake:marcfield>F245 13 $a An herbal for the Bible : $b containing a plaine and familiar exposition of such similitudes, parables, and metaphors, both in the Olde Testament and the Newe, as are borrowed and taken from herbs, plants, trees, fruits and simples, by observation of their vertues, qualities, natures, properties, operations, and effects : and by the holy prophets, sacred writers, Christ himself, and his blessed apostles, usually alledged, and into their heavenly oracles, for the better beautifieng and plainer opening of the same, profitably inserted / $c drawen into English by Thomas Newton.</fake:marcfield>
+      <rdamd:titleProper.en>An herbal for the Bible</rdamd:titleProper.en>
+      <rdamd:otherTitleInformation.en>containing a plaine and familiar exposition of such similitudes, parables, and metaphors, both in the Olde Testament and the Newe, as are borrowed and taken from herbs, plants, trees, fruits and simples, by observation of their vertues, qualities, natures, properties, operations, and effects</rdamd:otherTitleInformation.en>
+      <rdamd:otherTitleInformation.en>and by the holy prophets, sacred writers, Christ himself, and his blessed apostles, usually alledged, and into their heavenly oracles, for the better beautifieng and plainer opening of the same, profitably inserted</rdamd:otherTitleInformation.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>drawen into English by Thomas Newton</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
    </rdf:Description>
    <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJkT66dhk4XMqWVYWKYgKd">
       <fake:marcfield>F100 1# $a Lemnius, Levinus, $d 1505-1568. $1 https://id.oclc.org/worldcat/entity/E39PBJkT66dhk4XMqWVYWKYgKd</fake:marcfield>
@@ -5152,6 +4851,9 @@
       <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/99115297060001452exp"/>
       <fake:marcfield>F008 100429s1978    dcuab   ob   f001 0 eng d</fake:marcfield>
       <rdamo:placeOfManifestation.en rdf:resource="http://id.loc.gov/vocabulary/countries/dcu"/>
+      <fake:marcfield>F245 10 $a Important forest trees of the United States / $c by Elbert L. Little, Jr.</fake:marcfield>
+      <rdamd:titleProper.en>Important forest trees of the United States</rdamd:titleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>by Elbert L. Little, Jr.</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99115297060001452ited22e8053">
       <rdaid:identifierForItem.en>ited22e8053</rdaid:identifierForItem.en>
@@ -5177,16 +4879,6 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
       <rdand:nomenString.en>0003 (online)</rdand:nomenString.en>
       <rdand:categoryOfNomen.en>GPO item number</rdand:categoryOfNomen.en>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>United States</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/étatsunis">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>États-Unis</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d22e8126">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
@@ -5222,7 +4914,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/treesunitedstatesidentification">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Trees -- United States -- Identification</skos:prefLabel>
+      <skos:prefLabel>Trees--United States--Identification</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/identification">
@@ -5232,16 +4924,8 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/arbresétatsunisidentification">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Arbres -- États-Unis -- Identification</skos:prefLabel>
+      <skos:prefLabel>Arbres--États-Unis--Identification</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/unitedstates">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/unitedstates"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/rvm/étatsunis">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/étatsunis"/>
    </rdf:Description>
    <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
@@ -5308,6 +4992,9 @@
       <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/99123793010001452exp"/>
       <fake:marcfield>F008 081106s1959    maua    r     000 0 eng d</fake:marcfield>
       <rdamo:placeOfManifestation.en rdf:resource="http://id.loc.gov/vocabulary/countries/mau"/>
+      <fake:marcfield>F245 10 $a Easy sketches of famous men / $c by Claribel Spamer.</fake:marcfield>
+      <rdamd:titleProper.en>Easy sketches of famous men</rdamd:titleProper.en>
+      <rdamd:statementOfResponsibilityRelatingToTitleProper.en>by Claribel Spamer</rdamd:statementOfResponsibilityRelatingToTitleProper.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e8232">
       <fake:marcfield>F100 1# $a Spamer, Claribel.</fake:marcfield>
@@ -5406,6 +5093,9 @@
       <rdamo:expressionManifested.en rdf:resource="http://marc2rda.edu/fake/99106611740001452exp"/>
       <fake:marcfield>F008 040322s1919    dcu     b    f000 0 eng d</fake:marcfield>
       <rdamo:placeOfManifestation.en rdf:resource="http://id.loc.gov/vocabulary/countries/dcu"/>
+      <fake:marcfield>F245 00 $a Arbor day : $b In commemoration of our soldiers and sailors whose lives have been given for their country and for humanity in the Great War.</fake:marcfield>
+      <rdamd:titleProper.en>Arbor day</rdamd:titleProper.en>
+      <rdamd:otherTitleInformation.en>In commemoration of our soldiers and sailors whose lives have been given for their country and for humanity in the Great War</rdamd:otherTitleInformation.en>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/lcsh/unitedstatesdepartmentofagricultureofficeofthesecretary">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
@@ -5645,12 +5335,12 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rbbin/pictorialclothbindingsunitedstates1902">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Pictorial cloth bindings -- United States -- 1902</skos:prefLabel>
+      <skos:prefLabel>Pictorial cloth bindings--United States--1902</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rbbin"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rbbin/publishersclothbindingsbindingnewyorkstatenewyork1902">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Publishers' cloth bindings (Binding) -- New York (State) -- New York -- 1902</skos:prefLabel>
+      <skos:prefLabel>Publishers' cloth bindings (Binding)--New York (State)--New York--1902</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rbbin"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rbgenr/embossedclothbindings">
@@ -5684,18 +5374,18 @@
       <fake:marcfield>F522 ## $a Depicts the modern-day Caspian Sea as "Mare Hircanu" as well as modern-day Uzbekistan, Turkmenistan, Kazakhstan as "Scithia Intra Imaum" Kyrgyzstan, Tajikstan, northern Iran as "Media" and Afghanistan as "Bactriana." Of note, two unlabeled islands are shown in the Caspian Sea.</fake:marcfield>
       <rdawd:coverageOfContent.en>Geographic coverage: Depicts the modern-day Caspian Sea as "Mare Hircanu" as well as modern-day Uzbekistan, Turkmenistan, Kazakhstan as "Scithia Intra Imaum" Kyrgyzstan, Tajikstan, northern Iran as "Media" and Afghanistan as "Bactriana." Of note, two unlabeled islands are shown in the Caspian Sea.</rdawd:coverageOfContent.en>
       <fake:marcfield>F651 #0 $a Asia, Central $v Maps $v Early works to 1800.</fake:marcfield>
+      <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/lcsh/asiacentral"/>
       <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/lcsh/asiacentralmapsearlyworksto1800"/>
       <rdaw:categoryOfWork.en rdf:resource="http://marc2rda.edu/fake/concept/lcsh/maps"/>
       <rdaw:categoryOfWork.en rdf:resource="http://marc2rda.edu/fake/concept/lcsh/earlyworksto1800"/>
-      <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/lcsh/asiacentral"/>
       <fake:marcfield>F651 #0 $a Caspian Sea Coast $v Maps $v Early works to 1800.</fake:marcfield>
+      <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/lcsh/caspianseacoast"/>
       <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/lcsh/caspianseacoastmapsearlyworksto1800"/>
       <rdaw:categoryOfWork.en rdf:resource="http://marc2rda.edu/fake/concept/lcsh/maps"/>
       <rdaw:categoryOfWork.en rdf:resource="http://marc2rda.edu/fake/concept/lcsh/earlyworksto1800"/>
-      <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/lcsh/caspianseacoast"/>
       <fake:marcfield>F651 #7 $a Asia $z Caspian Sea Coast. $2 fast $0 (OCoLC)fst01260169</fake:marcfield>
-      <rdaw:subject.en rdf:resource="https://id.worldcat.org/fast/01260169"/>
       <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/fast/asia"/>
+      <rdaw:subject.en rdf:resource="https://id.worldcat.org/fast/01260169"/>
       <fake:marcfield>F651 #7 $a Central Asia. $2 fast $0 (OCoLC)fst01240497</fake:marcfield>
       <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/fast/centralasia"/>
       <fake:marcfield>F655 #7 $a Early maps. $2 fast $0 (OCoLC)fst01752681</fake:marcfield>
@@ -5807,7 +5497,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/asiacentralmapsearlyworksto1800">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Asia, Central -- Maps -- Early works to 1800</skos:prefLabel>
+      <skos:prefLabel>Asia, Central--Maps--Early works to 1800</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/maps">
@@ -5822,7 +5512,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/caspianseacoastmapsearlyworksto1800">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Caspian Sea Coast -- Maps -- Early works to 1800</skos:prefLabel>
+      <skos:prefLabel>Caspian Sea Coast--Maps--Early works to 1800</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/maps">
@@ -5902,11 +5592,11 @@
       <fake:marcfield>F650 #7 $a Übersetzung $2 gnd</fake:marcfield>
       <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/gnd/übersetzung"/>
       <fake:marcfield>F651 #0 $a Korea $x Social conditions $y 1945-</fake:marcfield>
-      <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/lcsh/koreasocialconditions1945"/>
       <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/lcsh/korea"/>
+      <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/lcsh/koreasocialconditions1945"/>
       <fake:marcfield>F651 #6 $a Corée $x Conditions sociales $y 1945-</fake:marcfield>
-      <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/rvm/coréeconditionssociales1945"/>
       <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/rvm/corée"/>
+      <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/rvm/coréeconditionssociales1945"/>
       <fake:marcfield>F651 #7 $a Korea. $2 fast $0 (OCoLC)fst01206434</fake:marcfield>
       <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/fast/korea"/>
       <fake:marcfield>F651 #7 $a Englisch. $2 swd</fake:marcfield>
@@ -5994,19 +5684,9 @@
       <rdand:nomenString.en>Korea</rdand:nomenString.en>
       <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/lcsh/1945">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>1945-</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/corée">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
       <rdand:nomenString.en>Corée</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/rvm/1945">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>1945-</rdand:nomenString.en>
       <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/fast/korea">
@@ -6068,18 +5748,13 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/koreasocialconditions1945">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Korea -- Social conditions -- 1945-</skos:prefLabel>
+      <skos:prefLabel>Korea--Social conditions--1945-</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/coréeconditionssociales1945">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Corée -- Conditions sociales -- 1945-</skos:prefLabel>
+      <skos:prefLabel>Corée--Conditions sociales--1945-</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/swd/englisch">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Englisch</skos:prefLabel>
-      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/swd"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/since1945">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -6101,14 +5776,6 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/swd/englisch">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
       <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/swd/englisch"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/lcsh/1945">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Timespan.en"/>
-      <rdato:authorizedAccessPointForTimespan.en rdf:resource="http://marc2rda.edu/fake/tim/nom/lcsh/1945"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/rvm/1945">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Timespan.en"/>
-      <rdato:authorizedAccessPointForTimespan.en rdf:resource="http://marc2rda.edu/fake/tim/nom/rvm/1945"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/fast/since1945">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Timespan.en"/>
@@ -6146,19 +5813,19 @@
       <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/nli/holocaustjewish19391945poetry"/>
       <rdaw:categoryOfWork.en rdf:resource="http://marc2rda.edu/fake/concept/nli/poetry"/>
       <fake:marcfield>F651 #0 $a Jerusalem $v Poetry.</fake:marcfield>
+      <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/lcsh/jerusalem"/>
       <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/lcsh/jerusalempoetry"/>
       <rdaw:categoryOfWork.en rdf:resource="http://marc2rda.edu/fake/concept/lcsh/poetry"/>
-      <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/lcsh/jerusalem"/>
       <fake:marcfield>F651 #0 $a Palestine $v Poetry.</fake:marcfield>
+      <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/lcsh/palestine"/>
       <rdaw:subject.en rdf:resource="http://marc2rda.edu/fake/concept/lcsh/palestinepoetry"/>
       <rdaw:categoryOfWork.en rdf:resource="http://marc2rda.edu/fake/concept/lcsh/poetry"/>
-      <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/lcsh/palestine"/>
       <fake:marcfield>F651 #7 $a Middle East $z Jerusalem $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJkp9jBRd8fKjb3BBXQDv3</fake:marcfield>
+      <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/fast/middleeast"/>
       <rdaw:subject.en rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJkp9jBRd8fKjb3BBXQDv3"/>
-      <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/fast/middleeast"/>
       <fake:marcfield>F651 #7 $a Middle East $z Palestine $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJbGRpdjCJGRyrXqt8rTHC</fake:marcfield>
-      <rdaw:subject.en rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJbGRpdjCJGRyrXqt8rTHC"/>
       <rdawo:subjectPlace.en rdf:resource="http://marc2rda.edu/fake/place/fast/middleeast"/>
+      <rdaw:subject.en rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJbGRpdjCJGRyrXqt8rTHC"/>
       <fake:marcfield>F655 #4 $a American poetry</fake:marcfield>
       <rdawd:categoryOfWork.en>American poetry</rdawd:categoryOfWork.en>
       <fake:marcfield>F655 #7 $a Poetry $2 fast</fake:marcfield>
@@ -6234,7 +5901,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/jewspoetry">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Jews -- Poetry</skos:prefLabel>
+      <skos:prefLabel>Jews--Poetry</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/poetry">
@@ -6244,7 +5911,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/holocaustjewish19391945poetry">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Holocaust, Jewish (1939-1945) -- Poetry</skos:prefLabel>
+      <skos:prefLabel>Holocaust, Jewish (1939-1945)--Poetry</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/poetry">
@@ -6254,7 +5921,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/juifspoésie">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Juifs -- Poésie</skos:prefLabel>
+      <skos:prefLabel>Juifs--Poésie</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/poésie">
@@ -6264,7 +5931,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/holocauste19391945poésie">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Holocauste, 1939-1945 -- Poésie</skos:prefLabel>
+      <skos:prefLabel>Holocauste, 1939-1945--Poésie</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/poésie">
@@ -6279,7 +5946,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/nli/holocaustjewish19391945poetry">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Holocaust, Jewish (1939-1945) -- Poetry</skos:prefLabel>
+      <skos:prefLabel>Holocaust, Jewish (1939-1945)--Poetry</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/nli"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/nli/poetry">
@@ -6289,7 +5956,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/jerusalempoetry">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Jerusalem -- Poetry</skos:prefLabel>
+      <skos:prefLabel>Jerusalem--Poetry</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/poetry">
@@ -6299,7 +5966,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/palestinepoetry">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Palestine -- Poetry</skos:prefLabel>
+      <skos:prefLabel>Palestine--Poetry</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/poetry">
@@ -6455,16 +6122,6 @@
       <rdan:schemeOfNomen.en rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
       <rdand:noteOnNomen.en>U.S.; v. 3</rdand:noteOnNomen.en>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/tropics">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>Tropics</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/régionstropicales">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
-      <rdand:nomenString.en>Régions tropicales</rdand:nomenString.en>
-      <rdan:schemeOfNomen.en rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
-   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/fast/tropics">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Nomen.en"/>
       <rdand:nomenString.en>Tropics</rdand:nomenString.en>
@@ -6493,12 +6150,12 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/plantdiseasestropics">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Plant diseases -- Tropics</skos:prefLabel>
+      <skos:prefLabel>Plant diseases--Tropics</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/tropicalcropsdiseasesandpests">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Tropical crops -- Diseases and pests</skos:prefLabel>
+      <skos:prefLabel>Tropical crops--Diseases and pests</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/cyac/plantdiseasestropics">
@@ -6508,31 +6165,18 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/plantesmaladiesetfléauxrégionstropicales">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Plantes -- Maladies et fléaux -- Régions tropicales</skos:prefLabel>
+      <skos:prefLabel>Plantes--Maladies et fléaux--Régions tropicales</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/culturestropicalesmaladiesetfléaux">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Cultures tropicales -- Maladies et fléaux</skos:prefLabel>
+      <skos:prefLabel>Cultures tropicales--Maladies et fléaux</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/gnd/phytopathologie">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Phytopathologie</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gnd"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/gnd/tropen">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Tropen</skos:prefLabel>
-      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gnd"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/tropics">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/tropics"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/rvm/régionstropicales">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
-      <rdapo:authorizedAccessPointForPlace.en rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/régionstropicales"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/fast/tropics">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/Place.en"/>
@@ -6664,7 +6308,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/dreamsfiction">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Dreams -- Fiction</skos:prefLabel>
+      <skos:prefLabel>Dreams--Fiction</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/fiction">
@@ -6674,7 +6318,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/rêvesromansnouvellesetc">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Rêves -- Romans, nouvelles, etc</skos:prefLabel>
+      <skos:prefLabel>Rêves--Romans, nouvelles, etc</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/romansnouvellesetc">
