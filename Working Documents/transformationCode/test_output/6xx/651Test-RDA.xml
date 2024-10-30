@@ -1,88 +1,157 @@
-<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1wor">
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
+         xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>6xx-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10002>6xx-test1wor</rdawd:P10002>
       <fake:marcfield>F651 #4 $a Iran.</fake:marcfield>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/d22e6"/><!--rdawo:P10321 = has subject place-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/d20e6"/>
       <fake:marcfield>F651 #7 $a Turkey. $2 fast $0 (OCoLC)fst01208963</fake:marcfield>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/fast/turkey"/><!--rdawo:P10321 = has subject place-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/fast/turkey"/>
       <fake:marcfield>F651 #0 $a Turkey $x Foreign relations $z Russia.</fake:marcfield>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/turkey"/><!--rdawo:P10321 = has subject place-->
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/turkeyforeignrelationsrussia"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/turkeyforeignrelationsrussia"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/foreignrelationsrussia"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/russia"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/turkey"/>
       <fake:marcfield>F651 #0 $a Xinjiang Uygur Zizhiqu (China) $x Ethnic relations.</fake:marcfield>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/xinjianguygurzizhiquchina"/><!--rdawo:P10321 = has subject place-->
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/xinjianguygurzizhiquchinaethnicrelations"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/xinjianguygurzizhiquchinaethnicrelations"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/ethnicrelations"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/xinjianguygurzizhiquchina"/>
       <fake:marcfield>F651 #0 $a Tabrīz (Iran) $x Press coverage $x History $y 20th century.</fake:marcfield>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/tabrīziran"/><!--rdawo:P10321 = has subject place-->
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/tabrīziranpresscoveragehistory20thcentury"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/tabrīziranpresscoveragehistory20thcentury"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/presscoveragehistory20thcentury"/>
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/lcsh/20thcentury"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/tabrīziran"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1exp">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/6xx-test1wor"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20002>6xx-test1exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/6xx-test1wor"/>
+      <rdaed:P20002>6xx-test1exp</rdaed:P20002>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1man">
+   <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/6xx-test1exp"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/6xx-test1exp"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d22e6">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom//iran">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Iran</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource=""/><!--rdan:P80069 = has scheme of nomen-->
+      <rdand:P80068>Iran.</rdand:P80068>
+      <rdan:P80069 rdf:resource=""/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/fast/turkey">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Turkey</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
+      <rdand:P80068>Turkey.</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/turkey">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Turkey</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+      <rdand:P80068>Turkey</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/russia">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Russia.</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/xinjianguygurzizhiquchina">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Xinjiang Uygur Zizhiqu (China)</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+      <rdand:P80068>Xinjiang Uygur Zizhiqu (China)</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/tabrīziran">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Tabrīz (Iran)</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+      <rdand:P80068>Tabrīz (Iran)</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/lcsh/20thcentury">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>20th century.</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/turkeyforeignrelationsrussia">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Turkey--Foreign relations--Russia</skos:prefLabel>
+      <skos:prefLabel>Turkey -- Foreign relations -- Russia.</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/foreignrelationsrussia">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Foreign relations -- Russia.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/xinjianguygurzizhiquchinaethnicrelations">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Xinjiang Uygur Zizhiqu (China)--Ethnic relations</skos:prefLabel>
+      <skos:prefLabel>Xinjiang Uygur Zizhiqu (China) -- Ethnic relations.</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/ethnicrelations">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Ethnic relations.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/tabrīziranpresscoveragehistory20thcentury">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Tabrīz (Iran)--Press coverage--History--20th century</skos:prefLabel>
+      <skos:prefLabel>Tabrīz (Iran) -- Press coverage -- History -- 20th century.</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/d22e6">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/presscoveragehistory20thcentury">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Press coverage -- History -- 20th century.</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/d20e6">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapd:P70018>Iran</rdapd:P70018><!--rdapd:P70018 = has access point for place-->
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom//iran"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/fast/turkey">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/fast/turkey"/><!--rdapo:P70045 = has authorized access point for place-->
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/fast/turkey"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/turkey">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/turkey"/><!--rdapo:P70045 = has authorized access point for place-->
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/turkey"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/russia">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/russia"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/xinjianguygurzizhiquchina">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/xinjianguygurzizhiquchina"/><!--rdapo:P70045 = has authorized access point for place-->
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/xinjianguygurzizhiquchina"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/tabrīziran">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/tabrīziran"/><!--rdapo:P70045 = has authorized access point for place-->
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/tabrīziran"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/lcsh/20thcentury">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+      <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/tim/nom/lcsh/20thcentury"/>
    </rdf:Description>
 </rdf:RDF>

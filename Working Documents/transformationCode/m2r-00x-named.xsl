@@ -133,9 +133,6 @@
         <xsl:call-template name="F008-c23_29-ghi-SOME-origMan">
             <xsl:with-param name="char23_29" select="$char6"/>
         </xsl:call-template>
-        <xsl:call-template name="F008-c23-z-BK-origMan">
-            <xsl:with-param name="char23" select="$char6"/>
-        </xsl:call-template>
     </xsl:template>
     
     <xsl:template name="F006-c6-CF">
@@ -425,26 +422,6 @@
                 <xsl:text>Continuing resource ceased publication.</xsl:text>
             </rdamd:P30137>
         </xsl:if>
-    </xsl:template>
-    
-    <xsl:template name="F008-c7-14" expand-text="yes">
-        <xsl:param name="char6"/>
-        <xsl:param name="char7-14"/>
-        <xsl:choose>
-            <xsl:when test="$char6 = 'e'">
-                <xsl:if test="not(matches(substring($char7-14, 1, 4), '[ |u]'))">
-                    <rdamd:P30278>
-                        <xsl:text>{substring($char7-14, 1, 4)}</xsl:text>
-                        <xsl:if test="not(matches(substring($char7-14, 5, 2), '[ |u]'))">
-                            <xsl:text>-{substring($char7-14, 5, 2)}</xsl:text>
-                        </xsl:if>
-                        <xsl:if test="not(matches(substring($char7-14, 7, 2), '[ |u]'))">
-                            <xsl:text>-{substring($char7-14, 7, 2)}</xsl:text>
-                        </xsl:if>
-                    </rdamd:P30278>
-                </xsl:if>
-            </xsl:when>
-        </xsl:choose>
     </xsl:template>
     
     <xsl:template name="F008-c15-17">
@@ -805,13 +782,6 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="F008-c23-z-BK-origMan">
-        <xsl:param name="char23"/>
-        <xsl:if test="$char23 = 'z'">
-            <rdam:P30001 rdf:resource="{'https://doi.org/10.6069/uwlswd.dh5m-5y16#zx'}"/>
-        </xsl:if>
-    </xsl:template>
-    
     <xsl:template name="F008-c23-CF-origMan">
         <xsl:param name="char23"/>
         <xsl:if test="$char23 = 'q'">
@@ -951,6 +921,9 @@
             <xsl:matching-substring>
                 <xsl:choose>
                     <xsl:when test=". = ' ' or . = '|' or . = 'b' or . = 'k' or . = 'q'"/>
+                    <xsl:when test=". = 'x'">
+                        <rdaw:P10004 rdf:resource="{'https://doi.org/10.6069/uwlswd.cr35-yd51#t'}"/>
+                    </xsl:when>
                     <xsl:otherwise>
                         <rdaw:P10004 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.cr35-yd51#', .)}"/>
                     </xsl:otherwise>

@@ -164,6 +164,15 @@
         <xsl:call-template name="F340-concept"/>
     </xsl:template>
     
+    <!-- 342 - Geospatial Reference Data DC: In progress
+    <xsl:template match="marc:datafield[@tag = '342'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '342']"
+        mode="exp" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
+        <rdae:P20071>
+
+        </rdae:P20071>
+    </xsl:template> --> 
+    
     <!-- 343 - Planar Coordinate Data  -->
     
     <xsl:template match="marc:datafield[@tag = '343'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '343']"

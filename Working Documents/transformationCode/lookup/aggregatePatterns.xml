@@ -224,12 +224,4 @@
         <type>collection</type>
         <xpath>exists(marc:datafield[starts-with(@tag, '7') and @ind2='2']/marc:subfield[@code='t' and not(@code='5') and not(@code='l')])</xpath>
     </pattern>
-    <pattern>
-        <id>33</id>
-        <name>505 sor NOW 7XX Analytical</name>
-        <type>collection</type>
-        <xpath>exists(marc:datafield[@tag='505']/marc:subfield[@code='r']) or exists(marc:datafield[@tag='505']/marc:subfield[@code='a'][contains(., ' / ')])
-            and not(marc:datafield[starts-with(@tag, '7') and @ind2='2']/marc:subfield[@code='t'])
-        </xpath>
-    </pattern>
 </patterns>
