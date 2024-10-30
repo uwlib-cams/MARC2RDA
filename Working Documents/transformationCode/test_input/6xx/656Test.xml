@@ -16,8 +16,8 @@
         </marc:datafield>
         <!-- missing $2 -->        
         <marc:datafield tag="656" ind1=" " ind2="7">
-            <marc:subfield code="a">Migrant laborers.</marc:subfield>
-            <marc:subfield code="k">School district case files.</marc:subfield>
+            <marc:subfield code="a">Migrant laborers</marc:subfield>
+            <marc:subfield code="k">School district case files</marc:subfield>
             <marc:subfield code="v">v</marc:subfield>
             <marc:subfield code="x">x</marc:subfield>
             <marc:subfield code="y">y</marc:subfield>
