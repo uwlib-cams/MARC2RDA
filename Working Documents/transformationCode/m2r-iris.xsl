@@ -51,7 +51,7 @@
                 </xsl:choose>
             </xsl:when>
             <!-- not handling $0s yet -->
-            <!-- otherwise it's an minted IRI -->
+            <!-- otherwise it's a minted IRI -->
             <xsl:otherwise>
                 <xsl:choose>
                     <!-- If it's a 6XX field and not ind2 = 4, we use the source and aap -->
