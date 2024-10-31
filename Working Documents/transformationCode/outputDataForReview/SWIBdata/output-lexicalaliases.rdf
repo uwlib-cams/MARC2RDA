@@ -107,6 +107,7 @@
       <rdamd:noteOnManifestation.en>Available via World Wide Web.</rdamd:noteOnManifestation.en>
       <fake:marcfield>F500 ## $a Originally produced as a motion picture in 2017.</fake:marcfield>
       <rdamd:noteOnManifestation.en>Originally produced as a motion picture in 2017.</rdamd:noteOnManifestation.en>
+      <fake:marcfield>F508 ## $a Editors, Sean Tambour Marshall, Peter Shwartz ; director of photography, Rick Butler ; music, Amikaeyla.</fake:marcfield>
       <rdamd:noteOnManifestation.en>Credits: Editors, Sean Tambour Marshall, Peter Shwartz ; director of photography, Rick Butler ; music, Amikaeyla.</rdamd:noteOnManifestation.en>
       <rdamo:publisherCorporateBody.en rdf:resource="http://marc2rda.edu/fake/age/d22e262"/>
    </rdf:Description>

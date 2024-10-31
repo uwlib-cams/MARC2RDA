@@ -352,6 +352,7 @@
     <!-- 508 - Creation/Production Credits Note -->
     <xsl:template match="marc:datafield[@tag='508'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '508']" 
         mode="man">
+        <xsl:call-template name="getmarc"/>
         <rdamd:P30137><xsl:value-of select="concat('Credits: ', marc:subfield[@code = 'a'])"/></rdamd:P30137>
     </xsl:template>
     

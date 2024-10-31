@@ -25,6 +25,7 @@
         "F340 ## $g color",
         "F340 ## $g polychrome $2 rdacc",
         "F500 ## $a Originally produced as a motion picture in 2017.",
+        "F508 ## $a Editors, Sean Tambour Marshall, Peter Shwartz ; director of photography, Rick Butler ; music, Amikaeyla.",
         "F533 ## $a Electronic reproduction. $b New Brunswick, N.J. : $c Rutgers University Libraries Media Center, $d 2018. $n Reproduced from 4 3/4 in. videodisc (1092). $n Available via World Wide Web." ;
     rdam:carrierType.en <http://id.loc.gov/vocabulary/carriers/cr>,
         <http://rdaregistry.info/termList/RDACarrierType/1018>,
