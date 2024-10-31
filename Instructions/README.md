@@ -111,7 +111,7 @@ _Last updated 27 April 2022_
 | reviewed | Once a first pass has been reviewed, record "reviewed". |
 | done | When a row has been accounted for in the transformation code and it's ready to be published, record "done". |
 * If a not-mapped row also contains an incorrect mapping, record "not mapped" rather than "delete". 
-
+| phase II | If the MARC field is out of scope for phase I but will be addressed in phase II, record "phase II". | 
 _[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
  ## MARCField
