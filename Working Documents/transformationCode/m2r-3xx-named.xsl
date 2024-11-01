@@ -1042,59 +1042,281 @@
         </rdamd:P30137>
     </xsl:template>
     
-    <!-- 342 DC:In progress
-    <xsl:template name="F342-xx-abcdefghij" expand-text="yes">
+    <!-- 342 DC:In progress --> 
+    <xsl:template name="F342-xx-a" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <xsl:choose>
-                <xsl:when test="@ind2 = '0'">
-                    <xsl:text>Geographic coordinate system: {.}.</xsl:text>
+                <xsl:when test="../@ind2 = '0'"><rdae:P20071>
+                        <xsl:text>Geographic coordinate system: </xsl:text>
+                        <xsl:value-of select="." />
+                        <xsl:text>.</xsl:text></rdae:P20071>
+                    </xsl:when>
+                <xsl:when test="../@ind2 = '1'"><rdae:P20216>
+                    <xsl:value-of select="." />
+                    </rdae:P20216>
                 </xsl:when>
-                <xsl:when test="@ind2 = '3'">
-                    <xsl:text>Local planar coordinate system: {.}.</xsl:text>
-                </xsl:when>
-                <xsl:when test="@ind2 = '4'">
-                    <xsl:text>Local coordinate system: {.}.</xsl:text>
-                </xsl:when>
-                <xsl:when test="@ind2 = '5'">
-                    <xsl:text>Geodetic model name: {.}.</xsl:text>
-                </xsl:when>
-                <xsl:when test="@ind2 = '6'">
-                    <xsl:text>Altitude datum name: {.}.</xsl:text>
-                </xsl:when>
-                <xsl:when test="@ind2 = '7'">
-                    <xsl:text>Name of geospatial reference method: {.}.</xsl:text>
-                </xsl:when>
-                <xsl:when test="@ind2 = '8'">
-                    <xsl:text>Depth datum name: {.}.</xsl:text>
-                </xsl:when>
-            </xsl:choose>    
+                <xsl:when test="../@ind2 = '3'"><rdae:P20071>
+                        <xsl:text>Local planar coordinate system: </xsl:text>
+                        <xsl:value-of select="." />
+                        <xsl:text>.</xsl:text></rdae:P20071>
+                    </xsl:when>
+                <xsl:when test="../@ind2 = '4'"><rdae:P20071>
+                        <xsl:text>Local coordinate system: </xsl:text>
+                        <xsl:value-of select="." />
+                        <xsl:text>.</xsl:text></rdae:P20071>
+                    </xsl:when>
+                <xsl:when test="../@ind2 = '5'"><rdae:P20071>
+                        <xsl:text>Geodetic model name: </xsl:text>
+                        <xsl:value-of select="." />
+                        <xsl:text>.</xsl:text></rdae:P20071>
+                    </xsl:when>
+                <xsl:when test="../@ind2 = '6'"><rdae:P20071>
+                        <xsl:text>Altitude datum name: </xsl:text>
+                        <xsl:value-of select="." />
+                        <xsl:text>.</xsl:text></rdae:P20071>
+                    </xsl:when>
+                <xsl:when test="../@ind2 = '7'"><rdae:P20071>
+                        <xsl:text>Name of geospatial reference method: </xsl:text>
+                        <xsl:value-of select="." />
+                        <xsl:text>.</xsl:text></rdae:P20071>
+                    </xsl:when>
+                <xsl:when test="../@ind2 = '8'"><rdae:P20071>
+                        <xsl:text>Depth datum name: </xsl:text>
+                        <xsl:value-of select="." />
+                        <xsl:text>.</xsl:text></rdae:P20071>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template name="F342-xx-bcdlmnosvpfijtuw2" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'l'] | marc:subfield[@code = 'm']| marc:subfield[@code = 'o']| marc:subfield[@code = 's']| marc:subfield[@code = 'v']">
+                <xsl:if test="@code = 'b'"><rdae:P20071>
+                <xsl:text>Coordinate units or distance units: {.}.</xsl:text></rdae:P20071>
+            </xsl:if>
+            <xsl:if test="@code = 'c'"><rdae:P20071>
+                <xsl:text>Latitude resolution: {.}</xsl:text></rdae:P20071>
+            </xsl:if>
+            <xsl:if test="@code = 'd'"><rdae:P20071>
+                <xsl:text>Longitude resolution: {.}</xsl:text></rdae:P20071>
+            </xsl:if>
+            <xsl:if test="@code = 'l'"><rdae:P20071>
+                <xsl:text>Height of perspective point above surface: {.} meters</xsl:text></rdae:P20071>
+            </xsl:if>
+            <xsl:if test="@code = 'm'"><rdae:P20071>
+                <xsl:text>Azimuthal angle: {.} degrees</xsl:text></rdae:P20071>
+            </xsl:if>
+            <xsl:if test="@code = 'o'"><rdae:P20071>
+                <xsl:text>Landsat number and path number: {.}</xsl:text></rdae:P20071>
+            </xsl:if>
+            <xsl:if test="@code = 's'"><rdae:P20071>
+                <xsl:text>Denominator of flattening ratio: {.}</xsl:text></rdae:P20071>
+            </xsl:if>
+            <xsl:if test="@code = 'v'"><rdae:P20071>
+                <xsl:text>Local planar, local, or other projection or grid description: {.}</xsl:text></rdae:P20071>
+            </xsl:if>
         </xsl:for-each>
         
-        <xsl:if test="@ind2 = '2'">
-            <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'p']">
-                <xsl:text>Grid coordinate system: {@code = 'a'}. Zone identifier: {@code = 'p'}.</xsl:text>
-            </xsl:for-each>         
+        <xsl:if test = "marc:subfield[@code = 'n'] and marc:subfield[@code = 'a' and not( contains(., 'Polar stereographic') or contains(., 'Oblique Mercator'))]">
+            <xsl:for-each select="marc:subfield[@code = 'n']"><rdae:P20071>
+                <xsl:text>Azimuth measure point longitude or straight vertical longitude from pole: </xsl:text>
+                <xsl:value-of select="." /></rdae:P20071>
+            </xsl:for-each>
         </xsl:if>
         
-        <xsl:for-each select="marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd']">
-                <xsl:if test="@code = 'b'">
-                    <xsl:text>Coordinate units or distance units: {.}.</xsl:text>
-                </xsl:if>
-                <xsl:if test="@code = 'c'">
-                    <xsl:text>Latitude resolution: {.}.</xsl:text>
-                </xsl:if>
-                <xsl:if test="@code = 'd'">
-                    <xsl:text>Longtitude resolution: {.}.</xsl:text>
-                </xsl:if>
-        </xsl:for-each>
-        <xsl:if test = "@ind1 = '1'">
-            <xsl:if test= "marc:subfield[@code = 'a' and contains(.,'Oblique')]">
-                <xsl:for-each select= "marc:subfield[@code = 'e']">
-                    <xsl:text>Standard parallel(s): {.}</xsl:text>
+        <xsl:if test = "marc:subfield[@code = 'n'] and marc:subfield[@code = 'a' and contains(., 'Oblique Mercator')]">
+            <xsl:for-each select="marc:subfield[@code = 'n']"><rdae:P20071>
+                <xsl:text>Azimuth measure point longitude: </xsl:text>
+                <xsl:value-of select="." /></rdae:P20071>
+            </xsl:for-each>
+        </xsl:if>
+        
+        <xsl:if test = "marc:subfield[@code = 'n'] and marc:subfield[@code = 'a' and contains(., 'Polar stereographic')]">
+            <xsl:for-each select="marc:subfield[@code = 'n']"><rdae:P20071>
+                <xsl:text>Straight vertical longitude from pole: </xsl:text>
+                <xsl:value-of select="." /></rdae:P20071>
+            </xsl:for-each>
+        </xsl:if>
+        
+        <xsl:if test="@ind2 = '2'"><rdae:P20071>
+            <xsl:for-each select="marc:subfield[@code = 'a']">
+                    <xsl:text>Grid coordinate system: </xsl:text>
+                    <xsl:value-of select="."/>
+                    <xsl:text>. </xsl:text>
+                </xsl:for-each>   
+            <xsl:for-each select="marc:subfield[@code = 'p']">
+                    <xsl:text>Zone identifier: </xsl:text>
+                    <xsl:value-of select="."/>
+                    <xsl:text>.</xsl:text>
+                </xsl:for-each></rdae:P20071>
+        </xsl:if>
+       
+       <xsl:for-each select="marc:subfield[@code = 'f']"><rdae:P20071>
+           <xsl:text>Oblique line longtitude: </xsl:text>
+           <xsl:value-of select="."/>
+           <xsl:if test="position() != last()">
+               <xsl:text>;</xsl:text>
+           </xsl:if></rdae:P20071>
+       </xsl:for-each>
+       
+       <xsl:for-each select="marc:subfield[@code = 'i' or @code = 'j']">
+           <rdae:P20071>
+               <xsl:choose>
+                   <xsl:when test="@code = 'i'">
+                       <xsl:text>False easting: </xsl:text>
+                   </xsl:when>
+                   <xsl:when test="@code = 'j'">
+                       <xsl:text>False northing: </xsl:text>
+                   </xsl:when>
+               </xsl:choose>
+               <xsl:value-of select="."/>
+           </rdae:P20071>
+       </xsl:for-each>
+       
+       <xsl:for-each select="marc:subfield[@code = 't']">
+           <xsl:choose>
+               <xsl:when test="../@ind2 = '6'"><rdae:P20071>
+                   <xsl:text>Altitude resolution: {.}</xsl:text></rdae:P20071>
+               </xsl:when>
+               <xsl:when test="../@ind2 = '8'"><rdae:P20071>
+                   <xsl:text>Depth resolution: {.}</xsl:text></rdae:P20071>
+               </xsl:when>
+               <xsl:when test="../@ind2 != '6' and ../@ind2 !='8'"><rdae:P20071>
+                   <xsl:text>Vertical resolution: {.}</xsl:text></rdae:P20071>
+               </xsl:when>
+           </xsl:choose>
+       </xsl:for-each>
+       
+       <xsl:for-each select="marc:subfield[@code = 'u']">
+           <xsl:choose>
+               <xsl:when test="../@ind2 = '6'"><rdae:P20071>
+                   <xsl:text>Altitude encoding method: {.}</xsl:text></rdae:P20071>
+               </xsl:when>
+               <xsl:when test="../@ind2 = '8'"><rdae:P20071>
+                   <xsl:text>Depth encoding method: {.}</xsl:text></rdae:P20071>
+               </xsl:when>
+               <xsl:when test="../@ind2 != '6' and ../@ind2 !='8'"><rdae:P20071>
+                   <xsl:text>Vertical encoding method: {.}</xsl:text></rdae:P20071>
+               </xsl:when>
+           </xsl:choose>
+       </xsl:for-each>
+       
+       <xsl:for-each select="marc:subfield[@code = 'w']">
+           <xsl:choose>
+               <xsl:when test="../@ind2 = '3'"><rdae:P20071>
+                   <xsl:text>Local planar georeference information: {.}</xsl:text></rdae:P20071>
+               </xsl:when>
+               <xsl:when test="../@ind2 = '4'"><rdae:P20071>
+                   <xsl:text>Local georeference information: {.}</xsl:text></rdae:P20071>
+               </xsl:when>
+               <xsl:when test="../@ind2 != '3' and ../@ind2 !='4'"><rdae:P20071>
+                   <xsl:text>Local planar or local georeference information: {.}</xsl:text></rdae:P20071>
+               </xsl:when>
+           </xsl:choose>
+       </xsl:for-each>
+       
+       <xsl:if test="@ind2 = '7'">
+           <xsl:if test="marc:subfield[@code = '2']"><rdae:P20071>
+               <xsl:text>Geospatial reference method used: {.}</xsl:text></rdae:P20071>
+           </xsl:if>
+       </xsl:if>
+   </xsl:template>
+        
+    <xsl:template name="F342-x1-egh" expand-text="yes">
+        <xsl:if test = "@ind2 = '1'">        
+            <xsl:if test= "marc:subfield[@code = 'a' and contains(.,'Albers conical equal area') or contains(., 'Equidistant conic') or contains(., 'Equirectangular') or contains(., 'Lambert conformal conic') or contains(.,'Mercator') or contains(.,'Polar stereographic')]">
+                <xsl:for-each select= "marc:subfield[@code = 'e']"><rdae:P20071>
+                    <xsl:text>Standard parallel(s): {.}</xsl:text></rdae:P20071>
+                </xsl:for-each>              
+            </xsl:if>
+            <xsl:if test= "marc:subfield[@code = 'a' and contains(.,'Oblique Mercator')]">
+                <xsl:for-each select = "marc:subfield[@code = 'e']"><rdae:P20071>
+                    <xsl:text>Oblique line latitude(s): {.}</xsl:text></rdae:P20071>
                 </xsl:for-each>
             </xsl:if>
+            
+            <xsl:if test= "marc:subfield[@code = 'a' and contains(.,'Albers conical equal area') or contains(., 'Azimuthal equidistant') or contains(., 'Equidistant conic') or contains(., 'Equirectangular') or contains(., 'Lambert conformal conic') or contains(.,'Mercator') or contains(.,'Miller cylindrical') or contains(.,'Polyconic')or contains(.,'Sinusoidal')or contains(.,'Transverse Mercator') or contains(.,'Van der Grinten')]">
+                <xsl:for-each select= "marc:subfield[@code = 'g']"><rdae:P20071>
+                    <xsl:text>Longtitude of the central meridian: {.}</xsl:text></rdae:P20071>
+                </xsl:for-each>
+            </xsl:if>
+
+            <xsl:if test= "marc:subfield[@code = 'a' and contains(.,'General vertical near-sided projection') or contains(., 'Gnomomic') or contains(., 'Orthographic') or contains(., 'Lambert azimuthal equal area') or contains(., 'Robinson') or contains(.,'Stereographic')]">
+                <xsl:for-each select= "marc:subfield[@code = 'g']"><rdae:P20071>
+                    <xsl:text>Longtitude of projection center: {.}</xsl:text></rdae:P20071>
+                </xsl:for-each>
+            </xsl:if>
+            
+            <xsl:if test= "marc:subfield[@code = 'a' and contains(.,'General vertical near-sided projection') or contains(., 'Gnomomic') or contains(., 'Orthographic') or contains(.,'Stereographic')]">
+                <xsl:for-each select= "marc:subfield[@code = 'h']"><rdae:P20071>
+                    <xsl:text>Latitude of projection center: {.}</xsl:text></rdae:P20071>
+                </xsl:for-each>
+            </xsl:if>
+            
+            <xsl:if test= "marc:subfield[@code = 'a' and contains(.,'Albers conical equal area') or contains(., 'Equidistant conic') or contains(., 'Lambert conformal conic') or contains(.,'Oblique Mercator') or contains(.,'Polyconic') or contains(.,'Transverse Mercator') or contains(.,'Azimuthal equidistant')]">
+                <xsl:for-each select= "marc:subfield[@code = 'h']"><rdae:P20071>
+                    <xsl:text>Latitude of projection origin: {.}</xsl:text></rdae:P20071>
+                </xsl:for-each>
+            </xsl:if>           
         </xsl:if>
-    </xsl:template> --> 
+        
+        <xsl:if test = "not(@ind2 = '1')">
+            <xsl:if test = "marc:subfield[@code = 'e'] or marc:subfield[@code = 'a' and not(contains(., 'Albers conical equal area') or contains(., 'Equidistant') or contains(., 'Equirectangular') or contains(., 'Lambert conformal conic') or contains(., 'Mercator') or contains(., 'Polar stereographic') or contains(., 'Oblique Mercator'))]">
+                <xsl:for-each select="marc:subfield[@code = 'e']"><rdae:P20071>
+                    <xsl:text>Standard parallel(s) or oblique line latitude(s): </xsl:text>
+                    <xsl:value-of select="." /></rdae:P20071>
+                </xsl:for-each>
+            </xsl:if>
+            
+            <xsl:if test = "marc:subfield[@code = 'g'] or marc:subfield[@code = 'a' and not(contains(.,'Albers conical equal area') or contains(., 'Azimuthal equidistant') or contains(., 'Equidistant conic') or contains(., 'Equirectangular') or contains(., 'Lambert conformal conic') or contains(.,'Mercator') or contains(.,'Miller cylindrical') or contains(.,'Polyconic')or contains(.,'Sinusoidal')or contains(.,'Transverse Mercator') or contains(.,'Van der Grinten') or contains(.,'General vertical near-sided projection') or contains(., 'Gnomomic') or contains(., 'Orthographic') or contains(., 'Lambert azimuthal equal area') or contains(., 'Robinson') or contains(.,'Stereographic'))]">
+                <xsl:for-each select="marc:subfield[@code = 'g']"><rdae:P20071>
+                    <xsl:text>Longtitude of the central meridian or projection center: </xsl:text>
+                    <xsl:value-of select="." /></rdae:P20071>
+                </xsl:for-each>
+            </xsl:if>
+            
+            <xsl:if test = "marc:subfield[@code = 'h'] or marc:subfield[@code = 'a' and not(contains(.,'General vertical near-sided projection') or contains(., 'Gnomomic') or contains(., 'Orthographic') or contains(.,'Stereographic') or contains(.,'Albers conical equal area') or contains(.,'Azimuthal equidistant') or contains(., 'Equidistant conic') or contains(., 'Lambert conformal conic') or contains(.,'Oblique Mercator') or contains(.,'Polyconic') or contains(.,'Transverse Mercator'))]">
+                <xsl:for-each select="marc:subfield[@code = 'h']"><rdae:P20071>
+                    <xsl:text>Latitude of projection center or projection origin: </xsl:text>
+                    <xsl:value-of select="." /></rdae:P20071>
+                </xsl:for-each>
+            </xsl:if>          
+        </xsl:if>
+    </xsl:template>
+   
+    <xsl:template name="F342-xx-k" expand-text="yes">
+        <xsl:if test="@ind1 = '1'">
+            <xsl:if test= "marc:subfield[@code = 'a' and contains(.,'Mercator')]">
+                <xsl:for-each select= "marc:subfield[@code = 'k']"><rdae:P20213>
+                    <xsl:text>Scale factor at equator: {.}</xsl:text></rdae:P20213>
+                </xsl:for-each>
+            </xsl:if>
+            <xsl:if test= "marc:subfield[@code = 'a' and contains(.,'Oblique Mercator')]">
+                <xsl:for-each select= "marc:subfield[@code = 'k']"><rdae:P20213>
+                    <xsl:text>Scale factor at center line: {.}</xsl:text></rdae:P20213>
+                </xsl:for-each>
+            </xsl:if>
+            <xsl:if test= "marc:subfield[@code = 'a' and contains(.,'Transverse Mercator')]">
+                <xsl:for-each select= "marc:subfield[@code = 'k']"><rdae:P20213>
+                    <xsl:text>Scale factor at central meridian: {.}</xsl:text></rdae:P20213>
+                </xsl:for-each>
+            </xsl:if>
+            <xsl:if test= "marc:subfield[@code = 'a' and contains(.,'Polar stereographic')]">
+                <xsl:for-each select= "marc:subfield[@code = 'k']"><rdae:P20213>
+                    <xsl:text>Scale factor at projection origin: {.}</xsl:text></rdae:P20213>
+                </xsl:for-each>
+            </xsl:if>
+            
+        </xsl:if>
+        <xsl:if test="not(@ind1 = '1')">
+            <xsl:if test="marc:subfield[@code= 'k'] or marc:subfield[@code = 'a' and not(contains(.,'Mercator') or contains(.,'Transverse Mercator') or contains(.,'Polar stereographic') or contains(.,'Oblique Mercator'))]">
+                <xsl:for-each select="marc:subfield[@code = 'k']"><rdae:P20213>
+                    <xsl:text>Scale factor: </xsl:text>
+                    <xsl:value-of select="." /></rdae:P20213>
+                </xsl:for-each>
+            </xsl:if>
+        </xsl:if>    
+    </xsl:template>
     
     
     <!-- 344 -->
