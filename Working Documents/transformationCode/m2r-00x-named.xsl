@@ -430,19 +430,73 @@
     <xsl:template name="F008-c7-14" expand-text="yes">
         <xsl:param name="char6"/>
         <xsl:param name="char7-14"/>
+        <xsl:param name="date1" select="translate(substring($char7-14, 1, 4), 'u', 'X')"/>
+        <xsl:param name="date2" select="translate(substring($char7-14, 5, 4), 'u', 'X')"/>
         <xsl:choose>
             <xsl:when test="$char6 = 'e'">
-                <xsl:if test="not(matches(substring($char7-14, 1, 4), '[ |u]'))">
+                <xsl:if test="matches($date1, '[\d]+[X]*')">
                     <rdamd:P30278>
-                        <xsl:text>{substring($char7-14, 1, 4)}</xsl:text>
-                        <xsl:if test="not(matches(substring($char7-14, 5, 2), '[ |u]'))">
-                            <xsl:text>-{substring($char7-14, 5, 2)}</xsl:text>
+                        <xsl:text>{$date1}</xsl:text>
+                        <xsl:if test="matches(substring($date2, 1, 2), '[\d]+[X]*')">
+                            <xsl:text>-{substring($date2, 1, 2)}</xsl:text>
                         </xsl:if>
-                        <xsl:if test="not(matches(substring($char7-14, 7, 2), '[ |u]'))">
-                            <xsl:text>-{substring($char7-14, 7, 2)}</xsl:text>
+                        <xsl:if test="matches(substring($date2, 1, 2), '[\d]+[X]*') and matches(substring($date2, 3, 2), '[\d]+[X]*')">
+                            <xsl:text>-{substring($date2, 3, 2)}</xsl:text>
                         </xsl:if>
                     </rdamd:P30278>
                 </xsl:if>
+            </xsl:when>
+            <xsl:when test="$char6 = 'm'">
+                <xsl:if test="not(matches($date1, '[\d]+[X]*')) and matches($date2, '[\d]+[X]*')">
+                    <rdamd:P30278>
+                        <xsl:text>/{$date2}</xsl:text>
+                    </rdamd:P30278>
+                </xsl:if>
+                <xsl:if test="matches($date1, '[\d]+[X]*') and not(matches($date2, '[\d]+[X]*'))">
+                    <rdamd:P30278>
+                        <xsl:text>{$date1}/</xsl:text>
+                    </rdamd:P30278>
+                </xsl:if>
+                <xsl:if test="not(matches($date1, '[\d]+[X]*')) and not(matches($date2, '[\d]+[X]*'))">
+                    <rdamd:P30137>
+                        <xsl:text>Dates of publication unknown.</xsl:text>
+                    </rdamd:P30137>
+                </xsl:if>
+            </xsl:when>
+            <xsl:when test="$char6 = 'p'">
+                <xsl:choose>
+                    <xsl:when test="matches($date1, '[\d]+[X]*')">
+                        <rdamd:P30278>
+                            <xsl:text>{$date1}/..</xsl:text>
+                        </rdamd:P30278>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <rdamd:P30137>
+                            <xsl:text>Date of manifestation unknown.</xsl:text>
+                        </rdamd:P30137>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$char6 = 'q'">
+                <xsl:if test="matches($date1, '[\d]+[X]*') and matches($date2, '[\d]+[X]*')">
+                    <rdamd:P30278>
+                        <xsl:text>[{$date1}..{$date2}]</xsl:text>
+                    </rdamd:P30278>
+                </xsl:if>
+            </xsl:when>
+            <xsl:when test="$char6 = 'r' or $char6 = 's' or $char6 = 't'">
+                <xsl:choose>
+                    <xsl:when test="matches($date1, '[\d]+[X]*')">
+                        <rdamd:P30011>
+                            <xsl:text>{$date1}</xsl:text>
+                        </rdamd:P30011>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <rdamd:P30137>
+                            <xsl:text>Date of publication unknown.</xsl:text>
+                        </rdamd:P30137>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:when>
         </xsl:choose>
     </xsl:template>

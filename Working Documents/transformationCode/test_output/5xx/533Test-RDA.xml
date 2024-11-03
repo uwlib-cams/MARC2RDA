@@ -46,10 +46,8 @@
       <rdawd:P10088>Agri-food and rural development</rdawd:P10088>
       <fake:marcfield>F650 #0 $a Rural development $z Great Britain.</fake:marcfield>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/ruraldevelopmentgreatbritain"/>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/greatbritain"/>
       <fake:marcfield>F650 #0 $a Sustainable agriculture $z Great Britain.</fake:marcfield>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/sustainableagriculturegreatbritain"/>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/greatbritain"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99162163075701452exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -62,7 +60,6 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99162163075701452man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99162163075701452exp"/>
-      <!--588-->
       <rdamo:P30136 rdf:resource="http://marc2rda.edu/fake/99162163075701452origMan"/>
       <fake:marcfield>F006 m        d        </fake:marcfield>
       <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.25z4-e963#m"/>
@@ -78,7 +75,7 @@
       <fake:marcfield>F245 10 $a Agri-food and rural development $h [electronic resource] : $b sustainable place-making / $c Terry Marsden.</fake:marcfield>
       <rdamd:P30156>Agri-food and rural development</rdamd:P30156>
       <rdamd:P30142>sustainable place-making</rdamd:P30142>
-      <rdamd:P30105>Terry Marsden.</rdamd:P30105>
+      <rdamd:P30105>Terry Marsden</rdamd:P30105>
       <rdamd:P30335>electronic resource</rdamd:P30335>
       <fake:marcfield>F490 0# $a Contemporary food studies: economy, culture and politics, $x 2058-1807</fake:marcfield>
       <rdamd:P30106>Contemporary food studies: economy, culture and politics, 2058-1807</rdamd:P30106>
@@ -102,7 +99,12 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99162163075701452exp"/>
       <fake:marcfield>F008 180828s2017    enk     ob    001 0 eng d</fake:marcfield>
+      <rdamd:P30011>2017</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/enk"/>
+      <fake:marcfield>F245 10 $a Agri-food and rural development $h [electronic resource] : $b sustainable place-making / $c Terry Marsden.</fake:marcfield>
+      <rdamd:P30156>Agri-food and rural development</rdamd:P30156>
+      <rdamd:P30142>sustainable place-making</rdamd:P30142>
+      <rdamd:P30105>Terry Marsden</rdamd:P30105>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d22e15">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
@@ -114,16 +116,6 @@
       <rdand:P80068>9780857857408(paperback)</rdand:P80068>
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
       <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/greatbritain">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Great Britain</rdand:P80068>
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/greatbritain">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Great Britain</rdand:P80068>
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e48">
       <fake:marcfield>F100 1# $a Marsden, Terry, $e author.</fake:marcfield>
@@ -138,20 +130,12 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/ruraldevelopmentgreatbritain">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Rural development -- Great Britain</skos:prefLabel>
+      <skos:prefLabel>Rural development--Great Britain</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/sustainableagriculturegreatbritain">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Sustainable agriculture -- Great Britain</skos:prefLabel>
+      <skos:prefLabel>Sustainable agriculture--Great Britain</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/greatbritain">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/greatbritain"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/greatbritain">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/greatbritain"/>
    </rdf:Description>
 </rdf:RDF>

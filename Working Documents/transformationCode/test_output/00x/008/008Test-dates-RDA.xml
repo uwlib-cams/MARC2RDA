@@ -9,6 +9,28 @@
       <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F008 160114e201507  sp       b    000 0 spa d</fake:marcfield>
       <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F008 120427muuuuuuuuenkopnn o         n ita d</fake:marcfield>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#n"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F008 120524m20129999enka     b    000 0 eng d</fake:marcfield>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F008 041112m2004uuuugw            000 0 ger  </fake:marcfield>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F008 141024p20112010gw opnn o         n ger d</fake:marcfield>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#n"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F008 141024p||||||||gw opnn o         n ger d</fake:marcfield>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#n"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F008 141111p20uu1990enkopnn o         n eng d</fake:marcfield>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#n"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F008 151013q20052013dk sga  o      n    eng d</fake:marcfield>
+      <fake:marcfield>F008 151013q19uu20uudk sga  o      n    eng d</fake:marcfield>
+      <fake:marcfield>F008 140804r20081895nz      s     000|d eng d</fake:marcfield>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#d"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F008 140804r||||||||nz      s     000|d eng d</fake:marcfield>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#d"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F008 100311s2009    enk     ob    001 0 eng d</fake:marcfield>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F008 140207t20142014nyua     b    001 0 eng d</fake:marcfield>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99161983917001452exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -21,6 +43,30 @@
       <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/ita"/><!--rdae:P20006 = has language of expression-->
       <fake:marcfield>F008 160114e201507  sp       b    000 0 spa d</fake:marcfield>
       <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/spa"/><!--rdae:P20006 = has language of expression-->
+      <fake:marcfield>F008 120427muuuuuuuuenkopnn o         n ita d</fake:marcfield>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/ita"/><!--rdae:P20006 = has language of expression-->
+      <fake:marcfield>F008 120524m20129999enka     b    000 0 eng d</fake:marcfield>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <fake:marcfield>F008 041112m2004uuuugw            000 0 ger  </fake:marcfield>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/ger"/><!--rdae:P20006 = has language of expression-->
+      <fake:marcfield>F008 141024p20112010gw opnn o         n ger d</fake:marcfield>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/ger"/><!--rdae:P20006 = has language of expression-->
+      <fake:marcfield>F008 141024p||||||||gw opnn o         n ger d</fake:marcfield>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/ger"/><!--rdae:P20006 = has language of expression-->
+      <fake:marcfield>F008 141111p20uu1990enkopnn o         n eng d</fake:marcfield>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <fake:marcfield>F008 151013q20052013dk sga  o      n    eng d</fake:marcfield>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <fake:marcfield>F008 151013q19uu20uudk sga  o      n    eng d</fake:marcfield>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <fake:marcfield>F008 140804r20081895nz      s     000|d eng d</fake:marcfield>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <fake:marcfield>F008 140804r||||||||nz      s     000|d eng d</fake:marcfield>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <fake:marcfield>F008 100311s2009    enk     ob    001 0 eng d</fake:marcfield>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <fake:marcfield>F008 140207t20142014nyua     b    001 0 eng d</fake:marcfield>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99161983917001452man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
@@ -40,5 +86,68 @@
       <rdamd:P30278>2015-07</rdamd:P30278><!--rdamd:P30278 = has date of manifestation-->
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/sp"/><!--rdamo:P30279 = has place of manifestation-->
       <rdamd:P30137>Includes bibliographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F008 120427muuuuuuuuenkopnn o         n ita d</fake:marcfield>
+      <rdamd:P30137>Dates of publication unknown.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/enk"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1010"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1006"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdam:P30001 = has carrier type-->
+      <fake:marcfield>F008 120524m20129999enka     b    000 0 eng d</fake:marcfield>
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/enk"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/><!--rdam:P30453 = has illustrative content-->
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F008 041112m2004uuuugw            000 0 ger  </fake:marcfield>
+      <rdamd:P30278>2004/</rdamd:P30278><!--rdamd:P30278 = has date of manifestation-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/gw"/><!--rdamo:P30279 = has place of manifestation-->
+      <fake:marcfield>F008 141024p20112010gw opnn o         n ger d</fake:marcfield>
+      <rdamd:P30278>2011/..</rdamd:P30278><!--rdamd:P30278 = has date of manifestation-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/gw"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1010"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1006"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdam:P30001 = has carrier type-->
+      <fake:marcfield>F008 141024p||||||||gw opnn o         n ger d</fake:marcfield>
+      <rdamd:P30137>Date of manifestation unknown.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/gw"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1010"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1006"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdam:P30001 = has carrier type-->
+      <fake:marcfield>F008 141111p20uu1990enkopnn o         n eng d</fake:marcfield>
+      <rdamd:P30278>20XX/..</rdamd:P30278><!--rdamd:P30278 = has date of manifestation-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/enk"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1010"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1006"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdam:P30001 = has carrier type-->
+      <fake:marcfield>F008 151013q20052013dk sga  o      n    eng d</fake:marcfield>
+      <rdamd:P30278>[2005..2013]</rdamd:P30278><!--rdamd:P30278 = has date of manifestation-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/dk"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30453 rdf:resource="https://doi.org/10.6069/uwlswd.gq3z-mv97#g"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdam:P30001 = has carrier type-->
+      <fake:marcfield>F008 151013q19uu20uudk sga  o      n    eng d</fake:marcfield>
+      <rdamd:P30278>[19XX..20XX]</rdamd:P30278><!--rdamd:P30278 = has date of manifestation-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/dk"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30453 rdf:resource="https://doi.org/10.6069/uwlswd.gq3z-mv97#g"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdam:P30001 = has carrier type-->
+      <fake:marcfield>F008 140804r20081895nz      s     000|d eng d</fake:marcfield>
+      <rdamd:P30011>2008</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/nz"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/><!--rdam:P30002 = has media type-->
+      <fake:marcfield>F008 140804r||||||||nz      s     000|d eng d</fake:marcfield>
+      <rdamd:P30137>Date of publication unknown.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/nz"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/><!--rdam:P30002 = has media type-->
+      <fake:marcfield>F008 100311s2009    enk     ob    001 0 eng d</fake:marcfield>
+      <rdamd:P30011>2009</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/enk"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdam:P30001 = has carrier type-->
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.m0xp-h565#1"/><!--rdam:P30455 = has supplementary content-->
+      <fake:marcfield>F008 140207t20142014nyua     b    001 0 eng d</fake:marcfield>
+      <rdamd:P30011>2014</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/nyu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/><!--rdam:P30453 = has illustrative content-->
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.m0xp-h565#1"/><!--rdam:P30455 = has supplementary content-->
    </rdf:Description>
 </rdf:RDF>
