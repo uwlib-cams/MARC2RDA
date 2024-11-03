@@ -31,32 +31,38 @@
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
          xmlns:uwf="http://universityOfWashington/functions"
          xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/030-test1wor">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/342-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>030-test1wor</rdawd:P10002>
-      <fake:marcfield>F034 ## $a a</fake:marcfield>
-      <fake:marcfield>F034 ## $a c $b 100000 $b 100000 $d W1800000 $e E1800000 $f N0840000 $g S0700000 $h 60 mm = 1° $j N0490000 $k N0120000 $m 030000 $n 090000 $s testS $t testT $x 17210000 $y 19171200</fake:marcfield>
-      <rdaw:P10301>W1800000--E1800000</rdaw:P10301>
-      <rdaw:P10300>N0840000--S0700000</rdaw:P10300>
-      <rdaw:P10303>N0490000--N0120000</rdaw:P10303>
-      <rdaw:P10302>030000--090000</rdaw:P10302>
-      <rdaw:P10024>G-ring latitude: testS; G-ring longtitude: testT</rdaw:P10024>
+      <rdawd:P10002>342-test1wor</rdawd:P10002>
+      <rdaw:P10330>Ellipsoid name: Clarke 1866. Semi-major axis: 6378206.4 M</rdaw:P10330>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/030-test1exp">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/342-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/030-test1wor"/>
-      <rdaed:P20002>030-test1exp</rdaed:P20002>
-      <fake:marcfield>F034 ## $a a</fake:marcfield>
-      <rdae:P20213>Category of scale: Linear scale</rdae:P20213>
-      <fake:marcfield>F034 ## $a c $b 100000 $b 100000 $d W1800000 $e E1800000 $f N0840000 $g S0700000 $h 60 mm = 1° $j N0490000 $k N0120000 $m 030000 $n 090000 $s testS $t testT $x 17210000 $y 19171200</fake:marcfield>
-      <rdae:P20213>Category of scale: Neither linear nor angular scale</rdae:P20213>
-      <rdae:P20226>100000; 100000</rdae:P20226>
-      <rdae:P20213>Angular scale: 60 mm = 1°</rdae:P20213>
-      <rdae:P20071>Beginnig date for coordinates: 17210000</rdae:P20071>
-      <rdae:P20071>Ending date for coordinates: 19171200</rdae:P20071>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/342-test1wor"/>
+      <rdaed:P20002>342-test1exp</rdaed:P20002>
+      <fake:marcfield>F342 #1 $a World Geodetic System 1984 (WGS-84) $v Missouri East State Plane NAD27 $q Clarke 1866 $r 6378206.4 M $s 294.97869821</fake:marcfield>
+      <rdae:P20216>World Geodetic System 1984 (WGS-84)</rdae:P20216>
+      <rdae:P20071>Local planar, local, or other projection or grid description: Missouri East State Plane NAD27</rdae:P20071>
+      <rdae:P20071>Denominator of flattening ratio: 294.97869821</rdae:P20071>
+      <fake:marcfield>F342 #2 $a State Plane Coordinate System 27, Lambert Conformal</fake:marcfield>
+      <rdae:P20071>Grid coordinate system: State Plane Coordinate System 27, Lambert Conformal. </rdae:P20071>
+      <fake:marcfield>F342 #3 $a NGVD 1929 $f value f $k value k</fake:marcfield>
+      <rdae:P20071>Local planar coordinate system: NGVD 1929.</rdae:P20071>
+      <rdae:P20071>Oblique line longtitude: value f</rdae:P20071>
+      <rdae:P20213>Scale factor: value k</rdae:P20213>
+      <fake:marcfield>F342 #1 $a Sinusoidal $e 38.3 $e 39.45 $g -77 $h 37.8333 $i 800,000 $j 0</fake:marcfield>
+      <rdae:P20216>Sinusoidal</rdae:P20216>
+      <rdae:P20071>False easting: 800,000</rdae:P20071>
+      <rdae:P20071>False northing: 0</rdae:P20071>
+      <rdae:P20071>Longtitude of the central meridian: -77</rdae:P20071>
+      <fake:marcfield>F342 18 $a Lowest astronomical tide $b Degrees, Minutes, and Decimal seconds $c 0.0000001 $d 0.0000001</fake:marcfield>
+      <rdae:P20071>Depth datum name: Lowest astronomical tide.</rdae:P20071>
+      <rdae:P20071>Coordinate units or distance units: Degrees, Minutes, and Decimal seconds.</rdae:P20071>
+      <rdae:P20071>Latitude resolution: 0.0000001</rdae:P20071>
+      <rdae:P20071>Longitude resolution: 0.0000001</rdae:P20071>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/030-test1man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/342-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/030-test1exp"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/342-test1exp"/>
    </rdf:Description>
 </rdf:RDF>

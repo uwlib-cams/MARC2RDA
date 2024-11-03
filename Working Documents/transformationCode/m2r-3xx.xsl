@@ -164,14 +164,25 @@
         <xsl:call-template name="F340-concept"/>
     </xsl:template>
     
-    <!-- 342 - Geospatial Reference Data DC: In progress
+    <!-- 342 - Geospatial Reference Data DC: In progress -->
     <xsl:template match="marc:datafield[@tag = '342'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '342']"
         mode="exp" expand-text="yes">
         <xsl:call-template name="getmarc"/>
-        <rdae:P20071>
-
-        </rdae:P20071>
-    </xsl:template> --> 
+        <xsl:call-template name="F342-xx-a"/>
+        <xsl:call-template name="F342-xx-bcdlmnosvpfijtuw2"/>
+        <xsl:call-template name="F342-x1-egh"/>
+        <xsl:call-template name="F342-xx-k"/>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '342'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '342']"
+        mode="wor" expand-text="yes">
+        <xsl:if test="marc:subfield[@code = 'q'] and marc:subfield[@code = 'r']">        <rdaw:P10330>
+                <xsl:text>Ellipsoid name: </xsl:text>
+                <xsl:value-of select="marc:subfield[@code = 'q']" />
+                <xsl:text>. Semi-major axis: </xsl:text>
+                <xsl:value-of select="marc:subfield[@code = 'r']" />
+       </rdaw:P10330></xsl:if> 
+    </xsl:template>
     
     <!-- 343 - Planar Coordinate Data  -->
     

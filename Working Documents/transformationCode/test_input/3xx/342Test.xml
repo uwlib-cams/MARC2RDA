@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">342-test1</marc:controlfield>
+        
+        <marc:datafield tag="342" ind1=" " ind2="1">
+            <marc:subfield code="a">World Geodetic System 1984 (WGS-84)</marc:subfield>
+            <marc:subfield code="v">Missouri East State Plane NAD27</marc:subfield>
+            <marc:subfield code="q">Clarke 1866</marc:subfield>
+            <marc:subfield code="r">6378206.4 M</marc:subfield>
+            <marc:subfield code="s">294.97869821</marc:subfield>
+        </marc:datafield>
+
+        <marc:datafield tag="342" ind1=" " ind2="2">
+            <marc:subfield code="a">State Plane Coordinate System 27, Lambert Conformal</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="342" ind1=" " ind2="3">
+            <marc:subfield code="a">NGVD 1929</marc:subfield>
+            <marc:subfield code="f">value f</marc:subfield>
+            <marc:subfield code="k">value k</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="342" ind1=" " ind2="1">
+            <marc:subfield code="a">Sinusoidal</marc:subfield>
+            <marc:subfield code="e">38.3</marc:subfield>
+            <marc:subfield code="e">39.45</marc:subfield>
+            <marc:subfield code="g">-77</marc:subfield>
+            <marc:subfield code="h">37.8333</marc:subfield>
+            <marc:subfield code="i">800,000</marc:subfield>
+            <marc:subfield code="j">0</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="342" ind1="1" ind2="8">
+            <marc:subfield code="a">Lowest astronomical tide</marc:subfield>
+            <marc:subfield code="b">Degrees, Minutes, and Decimal seconds</marc:subfield>
+            <marc:subfield code="c">0.0000001</marc:subfield>
+            <marc:subfield code="d">0.0000001</marc:subfield>
+        </marc:datafield>
+        
+    </marc:record>
+</marc:collection>
