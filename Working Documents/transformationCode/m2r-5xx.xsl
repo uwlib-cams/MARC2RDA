@@ -667,6 +667,11 @@
                         <xsl:text>Continuing resource ceased publication.</xsl:text>
                     </rdamd:P30137>
                 </xsl:if>
+               <!-- c1-8 = 008/7-14 -->
+                <xsl:call-template name="F008-c7-14">
+                    <xsl:with-param name="char6" select="substring(., 1, 1)"/>
+                    <xsl:with-param name="char7-14" select="substring(., 2, 8)"/>
+                </xsl:call-template>
                 <!-- c9-11 = 008/15-17 -->
                 <xsl:if test="substring(., 10, 3) != '   '">
                     <xsl:call-template name="F008-c15-17">

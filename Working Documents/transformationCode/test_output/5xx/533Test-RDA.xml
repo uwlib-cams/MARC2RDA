@@ -92,6 +92,7 @@
       <rdamd:P30278>2014</rdamd:P30278>
       <rdamd:P30137>Available via World Wide Web.</rdamd:P30137>
       <rdamd:P30137>Access limited by licensing agreement.</rdamd:P30137>
+      <rdamd:P30011>2014</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/dcu"/>
       <rdam:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/>
    </rdf:Description>
