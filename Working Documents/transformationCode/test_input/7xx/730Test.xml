@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test1</marc:controlfield>
+        <marc:datafield tag="730" ind1="0" ind2=" ">
+            <marc:subfield code="i">Motion picture adaptation of (work):</marc:subfield>
+            <marc:subfield code="4">http://rdaregistry.info/Elements/w/P10129</marc:subfield>
+            <marc:subfield code="a">Beowulf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="730" ind1="0" ind2=" ">
+            <marc:subfield code="a">60 minutes (Television program)</marc:subfield>
+            <marc:subfield code="1">http://fakeiri.edu/12345</marc:subfield>
+            <marc:subfield code="2">naf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="730" ind1="0" ind2=" ">
+            <marc:subfield code="6">880-01</marc:subfield>
+            <marc:subfield code="a">God save the king;</marc:subfield>
+            <marc:subfield code="o">arr.</marc:subfield>
+            <marc:subfield code="f">1982.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1="0" ind2=" ">
+            <marc:subfield code="6">730-01</marc:subfield>
+            <marc:subfield code="a">God save the king 880;</marc:subfield>
+            <marc:subfield code="o">arr.</marc:subfield>
+            <marc:subfield code="f">1982.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

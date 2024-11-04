@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test1</marc:controlfield>
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="a">International Perimetric Society.</marc:subfield>
+            <marc:subfield code="b">Meeting</marc:subfield>
+            <marc:subfield code="n">(15th :</marc:subfield>
+            <marc:subfield code="d">2002 :</marc:subfield>
+            <marc:subfield code="c">Stratford-upon-Avon, England)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="a">Royal Shakespeare Company.</marc:subfield>
+            <marc:subfield code="1">http://testiri.edu/1234</marc:subfield>
+            <marc:subfield code="2">naf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="6">880-13</marc:subfield>
+            <marc:subfield code="a">Lenfilʹm,</marc:subfield>
+            <marc:subfield code="e">production company.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1="2" ind2=" ">
+            <marc:subfield code="6">710-13/(N</marc:subfield>
+            <marc:subfield code="a">Ленфильм,</marc:subfield>
+            <marc:subfield code="e">production company.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="6">880-17</marc:subfield>
+            <marc:subfield code="a">Prodi︠u︡serskai︠a︡ firma Igori︠a︡ Tolstunova.</marc:subfield>
+            <marc:subfield code="2">naf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1="2" ind2=" ">
+            <marc:subfield code="6">710-17/(N</marc:subfield>
+            <marc:subfield code="a">Продюсерская фирма Игоря Толстунова.</marc:subfield>
+            <marc:subfield code="2">naf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="710" ind1="2" ind2=" "> 
+            <marc:subfield code="i">Container of (work)</marc:subfield>
+            <marc:subfield code="a">Belarus Free Theatre (Theater group).</marc:subfield>
+            <marc:subfield code="t">Minsk, 2011.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

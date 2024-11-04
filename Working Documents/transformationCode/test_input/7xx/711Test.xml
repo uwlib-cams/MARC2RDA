@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test1</marc:controlfield>
+        <marc:datafield tag="711" ind1="2" ind2=" ">
+            <marc:subfield code="a">Stratford Festival (Ont.),</marc:subfield>
+            <marc:subfield code="j">production company.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="711" ind1="2" ind2=" ">
+            <marc:subfield code="a">Texas Music Festival.</marc:subfield>
+            <marc:subfield code="e">Orchestra.</marc:subfield>
+            <marc:subfield code="4">prf</marc:subfield>
+            <marc:subfield code="2">naf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="711" ind1="2" ind2=" ">
+            <marc:subfield code="i">Preceded by (work):</marc:subfield>
+            <marc:subfield code="a">Consultative Meeting on Elimination of Kala-Azar from South Asia</marc:subfield>
+            <marc:subfield code="d">(2009 :</marc:subfield>
+            <marc:subfield code="c">New Delhi, India).</marc:subfield>
+            <marc:subfield code="t">Kala azar in South Asia.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="711" ind1="2" ind2=" ">
+            <marc:subfield code="6">880-01</marc:subfield>
+            <marc:subfield code="a">Oregon Shakespeare Festival.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1="2" ind2=" ">
+            <marc:subfield code="6">711-01</marc:subfield>
+            <marc:subfield code="a">Oregon Shakespeare Festival 880</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

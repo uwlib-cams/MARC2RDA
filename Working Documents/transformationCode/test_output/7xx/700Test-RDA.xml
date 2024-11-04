@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>relator-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10422 rdf:resource="http://marc2rda.edu/fake/age/naf/kozint︠s︡evgrigoriĭmikhaĭlovich"/><!--rdawo:P10422 = has film producer person-->
+      <rdawo:P10429 rdf:resource="http://marc2rda.edu/fake/age/naf/kozint︠s︡evgrigoriĭmikhaĭlovich"/><!--rdawo:P10429 = has screenwriter person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test1wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>relator-test1exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+      <rdaeo:P20382 rdf:resource="http://marc2rda.edu/fake/age/d22e13"/><!--rdaeo:P20382 = has singer person-->
+      <rdaeo:P20382 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJfx8GdTxyK7wYHmytjV4q"/><!--rdaeo:P20382 = has singer person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test1exp"/><!--rdamo:P30139 = has expression manifested-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age/naf/worthamchristopher1940-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age/naf/worthamchristopher1940"/><!--rdamo:P30268 = has related person of manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor/d22e27"/><!--rdamo:P30265 = has related work of manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor/d22e56"/><!--rdamo:P30265 = has related work of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/d22e6">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Wortham, Christopher, 1940-</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/d22e34">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Kozint︠s︡ev, Grigoriĭ Mikhaĭlovich</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/><!--rdan:P80069 = has scheme of nomen-->
+      <rdand:P80113>Козинцев, Григорий Михайлович</rdand:P80113><!--rdand:P80113 = is equivalent to-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/naf/worthamchristopher1940">
+      <fake:marcfield>F700 1# $a Wortham, Christopher, $d 1940- $2 naf</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/d22e6"/><!--rdaao:P50411 = has authorized access point for person-->
+      <rdaad:P50347>1940-</rdaad:P50347><!--rdaad:P50347 = has related timespan of person-->
+      <rdaad:P50121>1940</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e13">
+      <fake:marcfield>F700 1# $a Harmsen, Sophie, $e singer.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Harmsen, Sophie</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJfx8GdTxyK7wYHmytjV4q">
+      <fake:marcfield>F700 1# $a Hönisch, Falko, $d 1977- $e singer. $1 https://id.oclc.org/worldcat/entity/E39PBJfx8GdTxyK7wYHmytjV4q</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Hönisch, Falko, 1977-</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e27">
+      <fake:marcfield>F700 1# $a Shakespeare, William, $d 1564-1616. $t Cymbeline.</fake:marcfield>
+      <rdaad:P50377>Shakespeare, William, 1564-1616</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/naf/kozint︠s︡evgrigoriĭmikhaĭlovich">
+      <fake:marcfield>F700 1# $6 880-05 $a Kozint︠s︡ev, Grigoriĭ Mikhaĭlovich, $e film producer, $e screenwriter. $2 naf</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/d22e34"/><!--rdaao:P50411 = has authorized access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e56">
+      <fake:marcfield>F700 1# $6 880-12 $a Shostakovich, Dmitriĭ Dmitrievich, $d 1906-1975. $t Korolʹ Lir (Motion picture music)</fake:marcfield>
+      <rdaad:P50377>Shostakovich, Dmitriĭ Dmitrievich, 1906-1975</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50377>Шостакович, Дмитрий Дмитриевич, 1906-1975</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/d22e27">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d22e27wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Shakespeare, William, 1564-1616. Cymbeline</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d22e27"/><!--rdawo:P10312 = has related person of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/d22e56">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d22e56wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Shostakovich, Dmitriĭ Dmitrievich, 1906-1975. Korolʹ Lir (Motion picture music)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10328>Шостакович, Дмитрий Дмитриевич, 1906-1975. Korolʹ Lir (Motion picture music)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d22e56"/><!--rdawo:P10312 = has related person of work-->
+   </rdf:Description>
+</rdf:RDF>

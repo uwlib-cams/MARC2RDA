@@ -217,16 +217,18 @@
                                     <rdaao:P50411 rdf:resource="{uwf:nomenIRI(., 'age/nom', '', '')}"/>
                                 </xsl:when>
                                 <!-- else a nomen string is used directly -->
-                                <!-- if there's a 1 or 0, we use aap, otherwise ap -->
-                                <xsl:when test="marc:subfield[@code = '1'] or marc:subfield[@code = '0']">
-                                    <rdaad:P50411>
-                                        <xsl:value-of select="uwf:agentAccessPoint(.)"/>
-                                    </rdaad:P50411>
-                                </xsl:when>
                                 <xsl:otherwise>
                                     <rdaad:P50377>
                                         <xsl:value-of select="uwf:agentAccessPoint(.)"/>
                                     </rdaad:P50377>
+                                    <xsl:if test="marc:subfield[@code = '6']">
+                                        <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                                        <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                                            <rdaad:P50377>
+                                                <xsl:value-of select="uwf:agentAccessPoint(.)"/>
+                                            </rdaad:P50377>
+                                        </xsl:for-each>
+                                    </xsl:if>
                                 </xsl:otherwise>
                             </xsl:choose>
                             <!-- If we minted the IRI - add additional details -->
@@ -243,16 +245,18 @@
                                     <rdaao:P50409 rdf:resource="{uwf:nomenIRI(., 'age/nom', '', '')}"/>
                                 </xsl:when>
                                 <!-- else a nomen string is used directly -->
-                                <!-- if there's a 1, we use aap, otherwise ap -->
-                                <xsl:when test="marc:subfield[@code = '1']">
-                                    <rdaad:P50409>
-                                        <xsl:value-of select="uwf:agentAccessPoint(.)"/>
-                                    </rdaad:P50409>
-                                </xsl:when>
                                 <xsl:otherwise>
                                     <rdaad:P50376>
                                         <xsl:value-of select="uwf:agentAccessPoint(.)"/>
                                     </rdaad:P50376>
+                                    <xsl:if test="marc:subfield[@code = '6']">
+                                        <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                                        <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                                            <rdaad:P50376>
+                                                <xsl:value-of select="uwf:agentAccessPoint(.)"/>
+                                            </rdaad:P50376>
+                                        </xsl:for-each>
+                                    </xsl:if>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:when>
@@ -267,16 +271,18 @@
                             <rdaao:P50407 rdf:resource="{uwf:nomenIRI(., 'age/nom', '', '')}"/>
                         </xsl:when>
                         <!-- else a nomen string is used directly -->
-                        <!-- if there's a 1, we use aap, otherwise ap -->
-                        <xsl:when test="marc:subfield[@code = '1']">
-                            <rdaad:P50407>
-                                <xsl:value-of select="uwf:agentAccessPoint(.)"/>
-                            </rdaad:P50407>
-                        </xsl:when>
                         <xsl:otherwise>
                             <rdaad:P50375>
                                 <xsl:value-of select="uwf:agentAccessPoint(.)"/>
                             </rdaad:P50375>
+                            <xsl:if test="marc:subfield[@code = '6']">
+                                <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                                <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                                    <rdaad:P50375>
+                                        <xsl:value-of select="uwf:agentAccessPoint(.)"/>
+                                    </rdaad:P50375>
+                                </xsl:for-each>
+                            </xsl:if>
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:when>
@@ -307,8 +313,7 @@
     
     <xsl:template
         match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111']
-        | marc:datafield[@tag = '700'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '710'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '711'][not(marc:subfield[@code = 't'])] 
-        | marc:datafield[@tag = '720']"
+        | marc:datafield[@tag = '700'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '710'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '711'][not(marc:subfield[@code = 't'])] "
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:if test="marc:subfield[@code = '2']">
@@ -318,6 +323,14 @@
                     <xsl:value-of select="uwf:agentAccessPoint(.)"/>
                 </rdand:P80068>
                 <xsl:copy-of select="uwf:s2Nomen(marc:subfield[@code = '2'])"/>
+                <xsl:if test="marc:subfield[@code = '6']">
+                    <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                    <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                        <rdand:P80113>
+                            <xsl:value-of select="uwf:agentAccessPoint(.)"/>
+                        </rdand:P80113>
+                    </xsl:for-each>
+                </xsl:if>
             </rdf:Description>
         </xsl:if>
     </xsl:template>
@@ -331,6 +344,7 @@
             <rdamo:P30265 rdf:resource="{uwf:relWorkIRI(.)}"/>
         </xsl:if>
     </xsl:template>
+    
     <xsl:template
         match="marc:datafield[@tag = '700'][marc:subfield[@code = 't']] | marc:datafield[@tag = '710'][marc:subfield[@code = 't']] | marc:datafield[@tag = '711'][marc:subfield[@code = 't']]"
         mode="relWor" expand-text="yes">
@@ -338,9 +352,24 @@
             <rdf:Description rdf:about="{uwf:relWorkIRI(.)}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
                 <rdawd:P10002>{concat(generate-id(), 'wor')}</rdawd:P10002>
-                <rdawd:P10328>
-                    <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
-                </rdawd:P10328>
+                <xsl:choose>
+                    <xsl:when test="marc:subfield[@code = '2']">
+                        <rdawo:P10331 rdf:resource="{uwf:nomenIRI(., 'wor/nom', '', '')}"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <rdawd:P10328>
+                            <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
+                        </rdawd:P10328>
+                        <xsl:if test="marc:subfield[@code = '6']">
+                            <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                            <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                                <rdawd:P10328>
+                                    <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
+                                </rdawd:P10328>
+                            </xsl:for-each>
+                        </xsl:if>
+                    </xsl:otherwise>
+                </xsl:choose>
                 <xsl:choose>
                     <xsl:when test="@tag = '700' and @ind1 != '3'">
                         <rdawo:P10312 rdf:resource="{uwf:agentIRI(.)}"/>
@@ -370,16 +399,18 @@
                                 <rdaao:P50411 rdf:resource="{uwf:nomenIRI(., 'age/nom', '', '')}"/>
                             </xsl:when>
                             <!-- else a nomen string is used directly -->
-                            <!-- if there's a 1, we use aap, otherwise ap -->
-                            <!--<xsl:when test="marc:subfield[@code = '1'] and not(marc:subfield[@code = '2'])">
-                                <rdaad:P50411>
-                                    <xsl:value-of select="uwf:agentAccessPoint(.)"/>
-                                </rdaad:P50411>
-                            </xsl:when>-->
                             <xsl:otherwise>
                                 <rdaad:P50377>
                                     <xsl:value-of select="uwf:agentAccessPoint(.)"/>
                                 </rdaad:P50377>
+                                <xsl:if test="marc:subfield[@code = '6']">
+                                    <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                                    <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                                        <rdaad:P50377>
+                                            <xsl:value-of select="uwf:agentAccessPoint(.)"/>
+                                        </rdaad:P50377>
+                                    </xsl:for-each>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:when>
@@ -390,16 +421,18 @@
                                 <rdaao:P50409 rdf:resource="{uwf:nomenIRI(., 'age/nom', '', '')}"/>
                             </xsl:when>
                             <!-- else a nomen string is used directly -->
-                            <!-- if there's a 1 or 0, we use aap, otherwise ap -->
-                            <!--<xsl:when test="marc:subfield[@code = '1']">
-                                <rdaad:P50409>
-                                    <xsl:value-of select="uwf:agentAccessPoint(.)"/>
-                                </rdaad:P50409>
-                            </xsl:when>-->
                             <xsl:otherwise>
                                 <rdaad:P50376>
                                     <xsl:value-of select="uwf:agentAccessPoint(.)"/>
                                 </rdaad:P50376>
+                                <xsl:if test="marc:subfield[@code = '6']">
+                                    <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                                    <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                                        <rdaad:P50376>
+                                            <xsl:value-of select="uwf:agentAccessPoint(.)"/>
+                                        </rdaad:P50376>
+                                    </xsl:for-each>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:when>
@@ -410,16 +443,18 @@
                                 <rdaao:P50407 rdf:resource="{uwf:nomenIRI(., 'age/nom', '', '')}"/>
                             </xsl:when>
                             <!-- else a nomen string is used directly -->
-                            <!-- if there's a 1 or 0, we use aap, otherwise ap -->
-                            <!--<xsl:when test="marc:subfield[@code = '1']">
-                                <rdaad:P50407>
-                                    <xsl:value-of select="uwf:agentAccessPoint(.)"/>
-                                </rdaad:P50407>
-                            </xsl:when>-->
                             <xsl:otherwise>
                                 <rdaad:P50375>
                                     <xsl:value-of select="uwf:agentAccessPoint(.)"/>
                                 </rdaad:P50375>
+                                <xsl:if test="marc:subfield[@code = '6']">
+                                    <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                                    <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                                        <rdaad:P50375>
+                                            <xsl:value-of select="uwf:agentAccessPoint(.)"/>
+                                        </rdaad:P50375>
+                                    </xsl:for-each>
+                                </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:when>
@@ -429,25 +464,106 @@
         </xsl:if>
     </xsl:template>
     
-    <!-- 730, 740 -->
     <xsl:template
-        match="marc:datafield[@tag = '730'] | marc:datafield[@tag = '740']"
+        match="marc:datafield[@tag = '700'][marc:subfield[@code = 't']] | marc:datafield[@tag = '710'][marc:subfield[@code = 't']] | marc:datafield[@tag = '711'][marc:subfield[@code = 't']]"
+        mode="nom" expand-text="yes">
+        <xsl:param name="baseIRI"/>
+        <xsl:if test="@ind2 != '2'">
+            <xsl:if test="marc:subfield[@code = '2']">
+                <rdf:Description rdf:about="{uwf:nomenIRI(., 'wor/nom', '', '')}">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                    <rdand:P80068>
+                        <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
+                    </rdand:P80068>
+                    <xsl:copy-of select="uwf:s2Nomen(marc:subfield[@code = '2'])"/>
+                    <xsl:if test="marc:subfield[@code = '6']">
+                        <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                        <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                            <rdand:P80113>
+                                <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
+                            </rdand:P80113>
+                        </xsl:for-each>
+                    </xsl:if>
+                </rdf:Description>
+                <rdf:Description rdf:about="{uwf:nomenIRI(., 'age/nom', '', '')}">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                    <rdand:P80068>
+                        <xsl:value-of select="uwf:agentAccessPoint(.)"/>
+                    </rdand:P80068>
+                    <xsl:copy-of select="uwf:s2Nomen(marc:subfield[@code = '2'])"/>
+                    <xsl:if test="marc:subfield[@code = '6']">
+                        <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                        <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                            <rdand:P80113>
+                                <xsl:value-of select="uwf:agentAccessPoint(.)"/>
+                            </rdand:P80113>
+                        </xsl:for-each>
+                    </xsl:if>
+                </rdf:Description>
+            </xsl:if>
+        </xsl:if>
+    </xsl:template>
+    
+    <!-- 730 -->
+    <xsl:template
+        match="marc:datafield[@tag = '730']"
         mode="man">
         <xsl:if test="@ind2 != '2'">
             <rdamo:P30265 rdf:resource="{uwf:relWorkIRI(.)}"/>
         </xsl:if>
     </xsl:template>
+    
     <xsl:template
-        match="marc:datafield[@tag = '730'] | marc:datafield[@tag = '740']"
+        match="marc:datafield[@tag = '730']"
         mode="relWor" expand-text="yes">
         <xsl:if test="@ind2 != '2'">
             <rdf:Description rdf:about="{uwf:relWorkIRI(.)}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
                 <rdawd:P10002>{concat(generate-id(), 'wor')}</rdawd:P10002>
-                <rdawd:P10328>
-                    <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
-                </rdawd:P10328>
+                <xsl:choose>
+                    <xsl:when test="marc:subfield[@code = '2']">
+                        <rdawo:P10331 rdf:resource="{uwf:nomenIRI(., 'wor/nom', '', '')}"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <rdawd:P10328>
+                            <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
+                        </rdawd:P10328>
+                        <xsl:if test="marc:subfield[@code = '6']">
+                            <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                            <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                                <rdawd:P10328>
+                                    <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
+                                </rdawd:P10328>
+                            </xsl:for-each>
+                        </xsl:if>
+                    </xsl:otherwise>
+                </xsl:choose>
             </rdf:Description>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template
+        match="marc:datafield[@tag = '730']"
+        mode="nom" expand-text="yes">
+        <xsl:param name="baseIRI"/>
+        <xsl:if test="@ind2 != '2'">
+            <xsl:if test="marc:subfield[@code = '2']">
+                <rdf:Description rdf:about="{uwf:nomenIRI(., 'wor/nom', '', '')}">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                    <rdand:P80068>
+                        <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
+                    </rdand:P80068>
+                    <xsl:copy-of select="uwf:s2Nomen(marc:subfield[@code = '2'])"/>
+                    <xsl:if test="marc:subfield[@code = '6']">
+                        <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                        <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                            <rdand:P80113>
+                                <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
+                            </rdand:P80113>
+                        </xsl:for-each>
+                    </xsl:if>
+                </rdf:Description>
+            </xsl:if>
         </xsl:if>
     </xsl:template>
     

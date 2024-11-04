@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test1</marc:controlfield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Wortham, Christopher,</marc:subfield>
+            <marc:subfield code="d">1940-</marc:subfield>
+            <marc:subfield code="2">naf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Harmsen, Sophie,</marc:subfield>
+            <marc:subfield code="e">singer.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Hönisch, Falko,</marc:subfield>
+            <marc:subfield code="d">1977-</marc:subfield>
+            <marc:subfield code="e">singer.</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PBJfx8GdTxyK7wYHmytjV4q</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Shakespeare, William,</marc:subfield>
+            <marc:subfield code="d">1564-1616.</marc:subfield>
+            <marc:subfield code="t">Cymbeline.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="6">880-05</marc:subfield>
+            <marc:subfield code="a">Kozint︠s︡ev, Grigoriĭ Mikhaĭlovich,</marc:subfield>
+            <marc:subfield code="e">film producer,</marc:subfield>
+            <marc:subfield code="e">screenwriter.</marc:subfield>
+            <marc:subfield code="2">naf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1="1" ind2=" ">
+            <marc:subfield code="6">700-05/(N</marc:subfield>
+            <marc:subfield code="a">Козинцев, Григорий Михайлович,</marc:subfield>
+            <marc:subfield code="e">film producer,</marc:subfield>
+            <marc:subfield code="e">screenwriter.</marc:subfield>
+            <marc:subfield code="2">naf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="6">880-12</marc:subfield>
+            <marc:subfield code="a">Shostakovich, Dmitriĭ Dmitrievich,</marc:subfield>
+            <marc:subfield code="d">1906-1975.</marc:subfield>
+            <marc:subfield code="t">Korolʹ Lir (Motion picture music)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1="1" ind2=" ">
+            <marc:subfield code="6">700-12/(N</marc:subfield>
+            <marc:subfield code="a">Шостакович, Дмитрий Дмитриевич,</marc:subfield>
+            <marc:subfield code="d">1906-1975.</marc:subfield>
+            <marc:subfield code="t">Korolʹ Lir (Motion picture music)</marc:subfield>
+        </marc:datafield>
+        
+    </marc:record>
+</marc:collection>
