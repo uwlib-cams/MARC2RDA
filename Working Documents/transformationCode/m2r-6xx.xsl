@@ -629,9 +629,11 @@
             <xsl:call-template name="F651-label"/>
         </xsl:variable>
         <!-- subject place -->
-        <xsl:if test="marc:subfield[@code = 'a'] or marc:subfield[@code = 'g']">
+        <xsl:if test="marc:subfield[@code = 'a']">
             <xsl:variable name="ap">
-                <xsl:variable name="placename" select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'g']"/>
+                <xsl:variable name="placename">
+                    <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'g']"/>
+                </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($placename)"/>
             </xsl:variable>
             <rdawo:P10321 rdf:resource="{uwf:placeIRI(., $ap, uwf:getSubjectSchemeCode(.))}"/>   
@@ -678,9 +680,11 @@
         <xsl:variable name="prefLabel">
             <xsl:call-template name="F651-label"/>
         </xsl:variable>
-        <xsl:if test="marc:subfield[@code = 'a'] or marc:subfield[@code = 'g']">
+        <xsl:if test="marc:subfield[@code = 'a']">
             <xsl:variable name="ap">
-                <xsl:variable name="placename" select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'g']"/>
+                <xsl:variable name="placename">
+                    <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'g']"/>
+                </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($placename)"/>
             </xsl:variable>
             <xsl:variable name="scheme" select="uwf:getSubjectSchemeCode(.)"/>
@@ -703,10 +707,12 @@
     <xsl:template
         match="marc:datafield[@tag = '651']"
         mode="nom" expand-text="yes">
-        <xsl:if test="marc:subfield[@code = 'a'] or marc:subfield[@code = 'g']">
+        <xsl:if test="marc:subfield[@code = 'a']">
             <xsl:variable name="scheme" select="uwf:getSubjectSchemeCode(.)"/>
             <xsl:variable name="ap">
-                <xsl:variable name="placename" select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'g']"/>
+                <xsl:variable name="placename">
+                    <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'g']"/>
+                </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($placename)"/>
             </xsl:variable>
             <xsl:variable name="nomIRI">

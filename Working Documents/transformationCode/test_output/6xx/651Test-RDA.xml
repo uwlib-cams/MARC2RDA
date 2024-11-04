@@ -15,6 +15,8 @@
       <fake:marcfield>F651 #0 $a Tabrīz (Iran) $x Press coverage $x History $y 20th century.</fake:marcfield>
       <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/tabrīziran"/><!--rdawo:P10321 = has subject place-->
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/tabrīziranpresscoveragehistory20thcentury"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F651 #7 $a Mexiko $g Stadt $2 gnd</fake:marcfield>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/gnd/mexikostadt"/><!--rdawo:P10321 = has subject place-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -50,6 +52,11 @@
       <rdand:P80068>Tabrīz (Iran)</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/gnd/mexikostadt">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Mexiko Stadt</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gnd"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/turkeyforeignrelationsrussia">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Turkey--Foreign relations--Russia</skos:prefLabel>
@@ -84,5 +91,9 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/tabrīziran">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
       <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/tabrīziran"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/gnd/mexikostadt">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/gnd/mexikostadt"/><!--rdapo:P70045 = has authorized access point for place-->
    </rdf:Description>
 </rdf:RDF>
