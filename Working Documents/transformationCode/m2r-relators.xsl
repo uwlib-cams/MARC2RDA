@@ -396,14 +396,14 @@
                             <xsl:when test="$fieldType = 'X00' and $field/@ind1 = '3'">
                                 <!-- family -->
                                 <xsl:comment>Default relationship property used for <xsl:value-of select="$objIRI"/></xsl:comment>
-                                <xsl:element name="{'rdamo:P40074'}">
+                                <xsl:element name="{'rdaio:P40074'}">
                                     <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
                                 </xsl:element>
                             </xsl:when>
                             <xsl:when test="$fieldType = 'X10' or $fieldType = 'X11'">
                                 <!-- corporate body -->
                                 <xsl:comment>Default relationship property used for <xsl:value-of select="$objIRI"/></xsl:comment>
-                                <xsl:element name="{'rdamo:P40075'}">
+                                <xsl:element name="{'rdaio:P40075'}">
                                     <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
                                 </xsl:element>
                             </xsl:when>
@@ -412,7 +412,7 @@
                                     <xsl:when test="$field/@ind = '1'">
                                         <!-- person -->
                                         <xsl:comment>Default relationship property used for <xsl:value-of select="$objString"/></xsl:comment>
-                                        <xsl:element name="{'rdamd:P40073'}">
+                                        <xsl:element name="{'rdaid:P40073'}">
                                             <xsl:copy-of select="$objString"/>
                                         </xsl:element>
                                     </xsl:when>
