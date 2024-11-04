@@ -1,14 +1,12 @@
 # Function for serializing dataset/vocabulary
 # set up to accept input as rdf/xml, nt, ttl, or json-ld and
 # produces rdf/xml, nt, ttl, and json-ld formats
-# however, currently only run for rdf from main.py 
 
 import rdflib
 from textwrap import dedent
 import os
 
-# this function processes data as rdflib graph and parses to all formats, adding dct:hasFormat and dct:format
-# serializations are saved in the same location as the input file
+
 def serialize(file_path):
 
     # file path w no extension
@@ -60,14 +58,15 @@ def serialize(file_path):
         file.write(jsonld)
         file.close()
     
-    format_rdf(g)
-    format_nt(g)
+    # uncomment the formats you would like to produce
+    # format_rdf(g)
+    # format_nt(g)
     format_ttl(g)
     # format_jsonld(g)
 
 
 # only_serialize can be run from this script to produce all serializations
-# except an html-rdfa serialization
+
 def only_serialize():
     file_prompt = dedent("""Enter the path of the file relative to the working directory. 
     The file must have the extenstion ".rdf", ".ttl", ".jsonld", or ".nt"
