@@ -479,11 +479,9 @@
                 <xsl:with-param name="char6" select="$char6"/>
                 <xsl:with-param name="char7-14" select="substring(., 8, 8)"/>
             </xsl:call-template>
-            <xsl:if test="substring(., 16, 3) != '   '">
-                <xsl:call-template name="F008-c15-17">
-                    <xsl:with-param name="char15-17" select="substring(., 16, 3)"/>
-                </xsl:call-template>
-            </xsl:if>
+            <xsl:call-template name="F008-c15-17">
+                <xsl:with-param name="char15-17" select="substring(., 16, 3)"/>
+            </xsl:call-template>
             <xsl:choose>
                 <!-- books -->
                 <xsl:when test="$ldr6-7 = 'aa' or $ldr6-7 = 'ac' or $ldr6-7 = 'ad' or $ldr6-7 = 'am'
