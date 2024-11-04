@@ -194,6 +194,7 @@
     rdam:P30453 <http://rdaregistry.info/termList/IllusContent/1006>,
         <http://rdaregistry.info/termList/IllusContent/1010>,
         <http://rdaregistry.info/termList/IllusContent/1012> ;
+    rdamd:P30011 "1818" ;
     rdamd:P30105 "The poetry by T. Dibdin, Esqr, the music composed & arranged for the voice & piano forte by Henry R. Bishop" ;
     rdamd:P30137 "Book 1." ;
     rdamd:P30142 "as performed at the Theatre Royal Covent Garden." ;
@@ -214,6 +215,7 @@
     rdam:P30001 <http://id.loc.gov/vocabulary/carriers/nb> ;
     rdam:P30002 <http://id.loc.gov/vocabulary/mediaTypes/n> ;
     rdam:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    rdamd:P30011 "1981" ;
     rdamd:P30105 "Weyerhaeuser" ;
     rdamd:P30106 "Recreation map, 1981-1982 ; 7" ;
     rdamd:P30137 "\"Areas of heavy seedling damage from browsing, indicating large game populations with good hunting prospects.\"",
@@ -309,6 +311,7 @@
     rdam:P30002 <http://id.loc.gov/vocabulary/mediaTypes/n> ;
     rdam:P30453 <http://rdaregistry.info/termList/IllusContent/1008>,
         <http://rdaregistry.info/termList/IllusContent/1014> ;
+    rdamd:P30011 "1928" ;
     rdamd:P30105 "by Maribelle Cormack" ;
     rdamd:P30137 "At head of title: Park Museum." ;
     rdamd:P30156 "Trees and shrubs of Roger Williams Park," ;
@@ -380,6 +383,7 @@
     rdam:P30002 <http://id.loc.gov/vocabulary/mediaTypes/n> ;
     rdam:P30453 <http://rdaregistry.info/termList/IllusContent/1011>,
         <http://rdaregistry.info/termList/IllusContent/1012> ;
+    rdamd:P30011 "1979" ;
     rdamd:P30105 "Peter Maxwell Davies",
         "words by the composer" ;
     rdamd:P30137 "Conductor's score consists of combined chorus and recorder score; includes 2 percussion parts.",
@@ -537,6 +541,7 @@
     rdam:P30001 <http://id.loc.gov/vocabulary/carriers/nc> ;
     rdam:P30002 <http://id.loc.gov/vocabulary/mediaTypes/n> ;
     rdamd:P30004 "99935256748" ;
+    rdamd:P30011 "2009" ;
     rdamd:P30105 "Yi Tʻaejun",
         "translated and with an introduction by Janet Poole" ;
     rdamd:P30106 "Weatherhead books on Asia" ;
@@ -571,6 +576,7 @@
     rdam:P30001 <http://id.loc.gov/vocabulary/carriers/nb> ;
     rdam:P30002 <http://id.loc.gov/vocabulary/mediaTypes/n> ;
     rdam:P30003 <http://rdaregistry.info/termList/ModeIssue/1001> ;
+    rdamd:P30011 "2002" ;
     rdamd:P30105 "Allen Carroll, Chief Cartographer",
         "produced by National Geographic Maps for National Geographic Magazine" ;
     rdamd:P30137 "\"Supplement to the National Geographic, September 2002.\"",
@@ -595,6 +601,7 @@
         "F500 ## $a A selection of poems originally published in various literary collections between 1965 and 2000." ;
     rdam:P30001 <http://id.loc.gov/vocabulary/carriers/nc> ;
     rdam:P30002 <http://id.loc.gov/vocabulary/mediaTypes/n> ;
+    rdamd:P30011 "2004" ;
     rdamd:P30105 "by Edmund Pennant" ;
     rdamd:P30137 "A selection of poems originally published in various literary collections between 1965 and 2000.",
         "Contains biographical information." ;
@@ -619,6 +626,7 @@
         "F347 ## $a video file $b DVD video $e region 1 $2 rda",
         "F500 ## $a DVD release of the 2009 motion picture.",
         "F500 ## $a Special features: deleted scenes; Creating the family tree; Universally connected, cast and crew discuss the universal themes in the film.",
+        "F508 ## $a Music by Edward Shearmur ; editor, Steven Weisberg ; director of photography, Xavier Pérez Grobet ; production designer, Christopher Tandon ; costume designer, Susie De Santo.",
         "F521 8# $a Board of Film Censors, Singapore: M18.",
         "F521 8# $a MPAA rating: R; for sexuality, brief nudity, and language.",
         "F538 ## $a DVD ; NTSC, anamorphic widescreen (2.35:1) ; Dolby Digital 5.1.",
@@ -653,6 +661,7 @@
     rdamd:P30156 "Mother and child" ;
     rdamd:P30162 "DVD ; NTSC, anamorphic widescreen (2.35:1) ; Dolby Digital 5.1." ;
     rdamd:P30173 "Sony Pictures Home Entertainment" ;
+    rdamd:P30278 "2010/.." ;
     rdamo:P30004 <http://marc2rda.edu/fake/nom/d22e4074>,
         <http://marc2rda.edu/fake/nom/d22e4077>,
         <http://marc2rda.edu/fake/nom/d22e4080>,
@@ -673,6 +682,7 @@
         "F505 0# $a v. 1. The lady of the boat. -- v. 2. The bridge of dreams." ;
     rdam:P30001 <http://id.loc.gov/vocabulary/carriers/nc> ;
     rdam:P30002 <http://id.loc.gov/vocabulary/mediaTypes/n> ;
+    rdamd:P30011 "1932" ;
     rdamd:P30105 "by Lady Murasaki",
         "translated from the Japanese by Arthur Waley" ;
     rdamd:P30137 "\"In two volumes.\" Vol. 2 was published as The bridge of dreams.",
@@ -697,13 +707,15 @@
         "F344 ## $g mono $2 rdacpc",
         "F500 ## $a Descriptive notes by Vernon Watkins on slipcase.",
         "F505 00 $t 1877 -- $t Loveliest of trees, the cherry now -- $t The recruit -- $t Oh see how thick the goldcup flowers -- $t When smoke stood up from Ludlow -- $t Farewell to barn and stack and tree -- $t On moonlit heath and lonesome bank -- $t When I watch the living meet -- $t When I was one-and-twenty -- $t Twice a week the winter through -- $t Oh, when I was in love with you -- $t To an athlete dying young -- $t Bredon Hill -- $t The lads in their hundreds to Ludlow come in for the fair -- $t This time of year a twelvemonth past -- $t Along the field as we came by -- $t Is my team ploughing? -- $t On Wenlock Edge the wood's in trouble -- $t The new mistress -- $t As through the wild green hills of Wyre -- $t The winds out of the west land blow.",
-        "F505 00 $t In my shire, if I was sad -- $t Shot? so quick, so clean an ending? -- $t If it chance your eye offend you -- $t Clunton and Clunbury -- $t Loitering with a vacant eye -- $t The Carpenter's son -- $t With rue my heart is laden -- $t Terence, this is stupid stuff -- $t I hoed and trenched and weeded -- $t Last poems: Introduction -- $t The laws of God, the laws of man -- $t The Culprit -- $t Eight o'clock -- $t The first of May -- $t When first my May to fair I took -- $t Tell me not here, it needs not saying -- $t Fancy's knell -- $t Stone, steel, dominions pass -- $t Good creatures, do you love your lives? --On forelands high in heaven -- $t Here dead lie we because we did not choose -- $t I did not lose my heart in summer's even -- $t Parta quies." ;
+        "F505 00 $t In my shire, if I was sad -- $t Shot? so quick, so clean an ending? -- $t If it chance your eye offend you -- $t Clunton and Clunbury -- $t Loitering with a vacant eye -- $t The Carpenter's son -- $t With rue my heart is laden -- $t Terence, this is stupid stuff -- $t I hoed and trenched and weeded -- $t Last poems: Introduction -- $t The laws of God, the laws of man -- $t The Culprit -- $t Eight o'clock -- $t The first of May -- $t When first my May to fair I took -- $t Tell me not here, it needs not saying -- $t Fancy's knell -- $t Stone, steel, dominions pass -- $t Good creatures, do you love your lives? --On forelands high in heaven -- $t Here dead lie we because we did not choose -- $t I did not lose my heart in summer's even -- $t Parta quies.",
+        "F508 ## $a Read by James Mason." ;
     rdam:P30001 <http://id.loc.gov/vocabulary/carriers/sd> ;
     rdam:P30002 <http://id.loc.gov/vocabulary/mediaTypes/s> ;
     rdam:P30172 <http://rdaregistry.info/termList/typeRec/1001> ;
     rdam:P30184 <http://rdaregistry.info/termList/configPlayback/1001> ;
     rdam:P30201 <http://id.loc.gov/vocabulary/mplayspeed/b> ;
     rdam:P30308 <http://rdaregistry.info/termList/grooveWidth/1002> ;
+    rdamd:P30011 "1965" ;
     rdamd:P30137 "Contents: 1877 -- Loveliest of trees, the cherry now -- The recruit -- Oh see how thick the goldcup flowers -- When smoke stood up from Ludlow -- Farewell to barn and stack and tree -- On moonlit heath and lonesome bank -- When I watch the living meet -- When I was one-and-twenty -- Twice a week the winter through -- Oh, when I was in love with you -- To an athlete dying young -- Bredon Hill -- The lads in their hundreds to Ludlow come in for the fair -- This time of year a twelvemonth past -- Along the field as we came by -- Is my team ploughing? -- On Wenlock Edge the wood's in trouble -- The new mistress -- As through the wild green hills of Wyre -- The winds out of the west land blow.",
         "Contents: In my shire, if I was sad -- Shot? so quick, so clean an ending? -- If it chance your eye offend you -- Clunton and Clunbury -- Loitering with a vacant eye -- The Carpenter's son -- With rue my heart is laden -- Terence, this is stupid stuff -- I hoed and trenched and weeded -- Last poems: Introduction -- The laws of God, the laws of man -- The Culprit -- Eight o'clock -- The first of May -- When first my May to fair I took -- Tell me not here, it needs not saying -- Fancy's knell -- Stone, steel, dominions pass -- Good creatures, do you love your lives? --On forelands high in heaven -- Here dead lie we because we did not choose -- I did not lose my heart in summer's even -- Parta quies.",
         "Credits: Read by James Mason.",
@@ -751,10 +763,12 @@
         "F500 ## $a Originally released as Columbia OL 4405.",
         "F500 ## $a Program notes and synopsis by Ken Mandelbaum, in English with German, French, and Italian translations (48 p. : ill.) inserted in container.",
         "F505 00 $t Overture $g (5:02) -- $t Payday $g (3:27) ; $t Mine 'til Monday -- $t Make the man love me $g (3:25) -- $t I'm like a new broom $g (2:52) -- $t Look who's dancing $g (3:35) -- $t Love is the reason $g (2:57) -- $t If you haven't got a sweetheart $g (2:43) -- $t I'll buy you a star $g (3:25) -- $t That's how it goes $g (2:25) -- $t He had refinement $g (3:55) -- $t Growing pains $g (3:40) -- $t Is that my prince? $g (1:43) -- $t Dance, Halloween interlude $g (6:02) -- $t Don't be afraid $g (1:46) -- $g Finale $g (3:25).",
+        "F508 ## $a Producer: Goddard Lieberson.",
         "F518 ## $a Recorded Apr. 22-23, 1951, at CBS 30th Street Studio, New York City." ;
     rdam:P30001 <http://id.loc.gov/vocabulary/carriers/sd> ;
     rdam:P30002 <http://id.loc.gov/vocabulary/mediaTypes/s> ;
     rdam:P30455 <https://doi.org/10.6069/uwlswd.nt0v-d633#i> ;
+    rdamd:P30011 "1991" ;
     rdamd:P30105 "book by Betty Smith and George Abbott",
         "lyrics by Dorothy Fields",
         "music by Arthur Schwartz" ;
@@ -861,6 +875,7 @@
         <https://doi.org/10.6069/uwlswd.mkjn-bp10#c> ;
     rdam:P30335 <https://doi.org/10.6069/uwlswd.25z4-e963#m>,
         <https://doi.org/10.6069/uwlswd.qgc0-9r48#v> ;
+    rdamd:P30011 "1991" ;
     rdamd:P30105 "by Lana Jokel, and Nicholas Doob" ;
     rdamd:P30106 "Filmakers library online, volume 3" ;
     rdamd:P30137 "In English.",
@@ -918,6 +933,7 @@
     rdam:P30002 <http://id.loc.gov/vocabulary/mediaTypes/n> ;
     rdam:P30453 <http://rdaregistry.info/termList/IllusContent/1014> ;
     rdam:P30455 <https://doi.org/10.6069/uwlswd.m0xp-h565#1> ;
+    rdamd:P30011 "1991" ;
     rdamd:P30105 "Cass Turnbull" ;
     rdamd:P30137 "Contents: Part One: Pruning -- Gardening is a virus -- The science of pruning -- Tools of the trade -- Looking for dead wood -- Timing -- Pruning cane-growers -- Pruning mounds -- Pruning tree-likes -- Pruning hedges -- Shear madness -- Fruit trees -- How to prune a tree limb -- Part Two: Renovating The Overgrown Yard -- Begin to bring order out of chaos -- Sorting out -- Adding the lower story -- Speaking and understanding gardenese -- Getting rid of unwanted plants -- Radical renovation -- My tree's too big -- Part Three: Designing and Installing a New Landscape -- What makes a yard look good or bad -- Map and hardscape -- How to choose and arrange your plants -- More unheeded advice -- Installation How-tos and tricks -- Part Four: Maintaining.",
         "Contents: Your Yard -- Taking care of your yard -- Weeds: hand-to-hand combat -- Herbicides -- Fertilizers and organics -- Watering -- Pests and diseases -- A woman: a plan: an organization: plant amnesty!",
@@ -985,6 +1001,7 @@
     rdam:P30002 <http://id.loc.gov/vocabulary/mediaTypes/c> ;
     rdam:P30018 <https://doi.org/10.6069/uwlswd.mkjn-bp10#d> ;
     rdam:P30335 <https://doi.org/10.6069/uwlswd.25z4-e963#m> ;
+    rdamd:P30011 "2022" ;
     rdamd:P30106 "$a Rethinking Art's Histories Ser." ;
     rdamd:P30137 "Contents: Front Matter -- Dedication -- Contents -- List of figures -- Acknowledgements -- Introduction -- Towards a postcolonial art history of contact -- In the shade of tall mango trees: art education and transcultural modernism in the context of the Indian independence movement -- Transcultural beginnings: decolonisation, transculturalism,and the overcoming of race -- Trees of knowledge: anthropology, art, and politics. Melville J. Herskovits and Zora Neale Hurston -- The migrant as catalyst: Winold Reiss and the Harlem Renaissance -- Encounters with masks: counter-primitivisms in Black modernism",
         "Contents: Purity of art in a transcultural age: modernist art theory and the culture of decolonisation -- Painting the global history of art: Hale Woodruff's The Art of the Negro -- Bibliography -- Index",
@@ -1048,6 +1065,7 @@
     rdam:P30001 <http://id.loc.gov/vocabulary/carriers/nr> ;
     rdam:P30002 <http://id.loc.gov/vocabulary/mediaTypes/n> ;
     rdam:P30335 <https://doi.org/10.6069/uwlswd.qgc0-9r48#a> ;
+    rdamd:P30011 "199X" ;
     rdamd:P30110 "[199-?]" ;
     rdamd:P30137 "Consists of a green-grey, cloth-covered, artist-made tray (19 x 19 x 5 cm) with a clear Plexiglas cover. The tray is sectioned into 28 small compartments that hold various natural objects, including dried leaves, flowers, petals, pods, ferns, tree bark, a feather and a penny coin. The tray is housed in a purple cloth-covered, artist-made box with magnetic, wrap-over lid.",
         "One-of-a-kind art object created by Sandra Landers Lopez.",
@@ -1095,6 +1113,7 @@
 <http://marc2rda.edu/fake/99106611740001452origMan> a <http://rdaregistry.info/Elements/c/C10007> ;
     fake:marcfield "F008 040322s1919    dcu     b    f000 0 eng d",
         "F245 00 $a Arbor day : $b In commemoration of our soldiers and sailors whose lives have been given for their country and for humanity in the Great War." ;
+    rdamd:P30011 "1919" ;
     rdamd:P30142 "In commemoration of our soldiers and sailors whose lives have been given for their country and for humanity in the Great War" ;
     rdamd:P30156 "Arbor day" ;
     rdamo:P30139 <http://marc2rda.edu/fake/99106611740001452exp> ;
@@ -1169,6 +1188,7 @@
 <http://marc2rda.edu/fake/99114129320001452origMan> a <http://rdaregistry.info/Elements/c/C10007> ;
     fake:marcfield "F008 821217s1587    enk     c     001 0 eng d",
         "F245 13 $a An herbal for the Bible : $b containing a plaine and familiar exposition of such similitudes, parables, and metaphors, both in the Olde Testament and the Newe, as are borrowed and taken from herbs, plants, trees, fruits and simples, by observation of their vertues, qualities, natures, properties, operations, and effects : and by the holy prophets, sacred writers, Christ himself, and his blessed apostles, usually alledged, and into their heavenly oracles, for the better beautifieng and plainer opening of the same, profitably inserted / $c drawen into English by Thomas Newton." ;
+    rdamd:P30011 "1587" ;
     rdamd:P30105 "drawen into English by Thomas Newton" ;
     rdamd:P30142 "and by the holy prophets, sacred writers, Christ himself, and his blessed apostles, usually alledged, and into their heavenly oracles, for the better beautifieng and plainer opening of the same, profitably inserted",
         "containing a plaine and familiar exposition of such similitudes, parables, and metaphors, both in the Olde Testament and the Newe, as are borrowed and taken from herbs, plants, trees, fruits and simples, by observation of their vertues, qualities, natures, properties, operations, and effects" ;
@@ -1466,6 +1486,7 @@
     rdamd:P30105 "by Tom Vennum with Charles Weber, assisted by Earl Nyholm" ;
     rdamd:P30142 "a traditional Ojibwe craft" ;
     rdamd:P30156 "Earl's canoe" ;
+    rdamd:P30278 "1999/.." ;
     rdamo:P30139 <http://marc2rda.edu/fake/99115286840001452exp> ;
     rdamo:P30279 <http://id.loc.gov/vocabulary/countries/mau> .
 
@@ -1568,6 +1589,7 @@
 <http://marc2rda.edu/fake/99115297060001452origMan> a <http://rdaregistry.info/Elements/c/C10007> ;
     fake:marcfield "F008 100429s1978    dcuab   ob   f001 0 eng d",
         "F245 10 $a Important forest trees of the United States / $c by Elbert L. Little, Jr." ;
+    rdamd:P30011 "1978" ;
     rdamd:P30105 "by Elbert L. Little, Jr." ;
     rdamd:P30156 "Important forest trees of the United States" ;
     rdamo:P30139 <http://marc2rda.edu/fake/99115297060001452exp> ;
@@ -1653,6 +1675,7 @@
 <http://marc2rda.edu/fake/99123793010001452origMan> a <http://rdaregistry.info/Elements/c/C10007> ;
     fake:marcfield "F008 081106s1959    maua    r     000 0 eng d",
         "F245 10 $a Easy sketches of famous men / $c by Claribel Spamer." ;
+    rdamd:P30011 "1959" ;
     rdamd:P30105 "by Claribel Spamer" ;
     rdamd:P30156 "Easy sketches of famous men" ;
     rdamo:P30139 <http://marc2rda.edu/fake/99123793010001452exp> ;
@@ -2797,15 +2820,18 @@
 
 <http://marc2rda.edu/fake/age/d22e3766> a <http://rdaregistry.info/Elements/c/C10005> ;
     fake:marcfield "F710 2# $6 880-16 $a Kokuritsu Gekijō." ;
-    rdaad:P50375 "Kokuritsu Gekijō" .
+    rdaad:P50375 "Kokuritsu Gekijō",
+        "囯立劇場" .
 
 <http://marc2rda.edu/fake/age/d22e3776> a <http://rdaregistry.info/Elements/c/C10005> ;
     fake:marcfield "F710 2# $6 880-17 $a Kokuritsu Bunraku Gekijō (Japan)" ;
-    rdaad:P50375 "Kokuritsu Bunraku Gekijō (Japan)" .
+    rdaad:P50375 "Kokuritsu Bunraku Gekijō (Japan)",
+        "国立文楽劇場 (Japan)" .
 
 <http://marc2rda.edu/fake/age/d22e3786> a <http://rdaregistry.info/Elements/c/C10005> ;
     fake:marcfield "F710 2# $6 880-18 $a NHK Entāpuraizu, $e issuing body." ;
-    rdaad:P50375 "NHK Entāpuraizu" .
+    rdaad:P50375 "NHK Entāpuraizu",
+        "NHK エンタープライズ" .
 
 <http://marc2rda.edu/fake/age/d22e4616> a <http://rdaregistry.info/Elements/c/C10005> ;
     fake:marcfield "F710 2# $a Sony Pictures Classics (Firm), $e presenter." ;
@@ -4911,7 +4937,8 @@
 
 <https://id.oclc.org/worldcat/entity/E39PBJdWHVd6qdMvW6frkQX68C> a <http://rdaregistry.info/Elements/c/C10004> ;
     fake:marcfield "F700 1# $6 880-13 $a Takeda, Izumo, $d 1691-1756, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJdWHVd6qdMvW6frkQX68C" ;
-    rdaad:P50377 "Takeda, Izumo, 1691-1756" .
+    rdaad:P50377 "Takeda, Izumo, 1691-1756",
+        "竹田出雲, 1691-1756" .
 
 <https://id.oclc.org/worldcat/entity/E39PBJdgXTt9QbdgqfKcbGrrMP> a <http://rdaregistry.info/Elements/c/C10004> ;
     fake:marcfield "F600 17 $a Minamoto, Yoshitsune, $d 1159-1189. $2 fast $0 (OCoLC)fst00072269 $1 https://id.oclc.org/worldcat/entity/E39PBJdgXTt9QbdgqfKcbGrrMP" ;
@@ -4986,7 +5013,8 @@
 
 <https://id.oclc.org/worldcat/entity/E39PBJt8hj98xxrkDFXdY897HC> a <http://rdaregistry.info/Elements/c/C10004> ;
     fake:marcfield "F700 1# $6 880-15 $a Namiki, Senryū, $d 1695-1751, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJt8hj98xxrkDFXdY897HC" ;
-    rdaad:P50377 "Namiki, Senryū, 1695-1751" .
+    rdaad:P50377 "Namiki, Senryū, 1695-1751",
+        "並木千柳, 1695-1751" .
 
 <https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq> a <http://rdaregistry.info/Elements/c/C10009> ;
     rdapo:P70045 <http://marc2rda.edu/fake/pla/nom/fast/unitedstates> .
@@ -5048,7 +5076,8 @@
 
 <https://id.oclc.org/worldcat/entity/E39PCjqW4mktfGJ3f7ftgB8xcK> a <http://rdaregistry.info/Elements/c/C10004> ;
     fake:marcfield "F700 1# $6 880-14 $a Miyoshi, Shōraku, $d 1696?-1772?, $e author. $1 https://id.oclc.org/worldcat/entity/E39PCjqW4mktfGJ3f7ftgB8xcK" ;
-    rdaad:P50377 "Miyoshi, Shōraku, 1696?-1772?" .
+    rdaad:P50377 "Miyoshi, Shōraku, 1696?-1772?",
+        "三好松洛, 1696?-1772?" .
 
 <https://id.oclc.org/worldcat/entity/E39PCjtQ9VMJbKx4JhrVvx7QWP> a <http://rdaregistry.info/Elements/c/C10004> ;
     fake:marcfield "F700 1# $a Van Dyke, Marcia, $d 1924- $4 prf $1 https://id.oclc.org/worldcat/entity/E39PCjtQ9VMJbKx4JhrVvx7QWP" ;

@@ -92,6 +92,7 @@
       <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.3d5s-zx23#o"/>
       <rdam:P30018 rdf:resource="https://doi.org/10.6069/uwlswd.mkjn-bp10#h"/>
       <fake:marcfield>F008 220927s2018    xx nnnn o      z  n eng d</fake:marcfield>
+      <rdamd:P30011>2018</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/xx"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
       <fake:marcfield>F020 ## $a 9781639293223 $q (electronic audio bk.)</fake:marcfield>
@@ -279,6 +280,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99149114550001452exp"/>
       <fake:marcfield>F008 771102s1965    nyunnnn        p  n eng  </fake:marcfield>
+      <rdamd:P30011>1965</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/nyu"/>
       <fake:marcfield>F028 00 $a TC 1203 $b Caedmon</fake:marcfield>
       <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d22e265"/>
@@ -308,6 +310,7 @@
       <rdamd:P30137>Contents: 1877 -- Loveliest of trees, the cherry now -- The recruit -- Oh see how thick the goldcup flowers -- When smoke stood up from Ludlow -- Farewell to barn and stack and tree -- On moonlit heath and lonesome bank -- When I watch the living meet -- When I was one-and-twenty -- Twice a week the winter through -- Oh, when I was in love with you -- To an athlete dying young -- Bredon Hill -- The lads in their hundreds to Ludlow come in for the fair -- This time of year a twelvemonth past -- Along the field as we came by -- Is my team ploughing? -- On Wenlock Edge the wood's in trouble -- The new mistress -- As through the wild green hills of Wyre -- The winds out of the west land blow.</rdamd:P30137>
       <fake:marcfield>F505 00 $t In my shire, if I was sad -- $t Shot? so quick, so clean an ending? -- $t If it chance your eye offend you -- $t Clunton and Clunbury -- $t Loitering with a vacant eye -- $t The Carpenter's son -- $t With rue my heart is laden -- $t Terence, this is stupid stuff -- $t I hoed and trenched and weeded -- $t Last poems: Introduction -- $t The laws of God, the laws of man -- $t The Culprit -- $t Eight o'clock -- $t The first of May -- $t When first my May to fair I took -- $t Tell me not here, it needs not saying -- $t Fancy's knell -- $t Stone, steel, dominions pass -- $t Good creatures, do you love your lives? --On forelands high in heaven -- $t Here dead lie we because we did not choose -- $t I did not lose my heart in summer's even -- $t Parta quies.</fake:marcfield>
       <rdamd:P30137>Contents: In my shire, if I was sad -- Shot? so quick, so clean an ending? -- If it chance your eye offend you -- Clunton and Clunbury -- Loitering with a vacant eye -- The Carpenter's son -- With rue my heart is laden -- Terence, this is stupid stuff -- I hoed and trenched and weeded -- Last poems: Introduction -- The laws of God, the laws of man -- The Culprit -- Eight o'clock -- The first of May -- When first my May to fair I took -- Tell me not here, it needs not saying -- Fancy's knell -- Stone, steel, dominions pass -- Good creatures, do you love your lives? --On forelands high in heaven -- Here dead lie we because we did not choose -- I did not lose my heart in summer's even -- Parta quies.</rdamd:P30137>
+      <fake:marcfield>F508 ## $a Read by James Mason.</fake:marcfield>
       <rdamd:P30137>Credits: Read by James Mason.</rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d22e265">
@@ -457,6 +460,7 @@
       <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.3d5s-zx23#o"/>
       <rdam:P30018 rdf:resource="https://doi.org/10.6069/uwlswd.mkjn-bp10#h"/>
       <fake:marcfield>F008 230620s2023    xx nnnn o      z  n eng d</fake:marcfield>
+      <rdamd:P30011>2023</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/xx"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
       <fake:marcfield>F020 ## $a 9781663729095 $q (electronic audio bk.)</fake:marcfield>
@@ -626,6 +630,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99162258060701452exp"/>
       <fake:marcfield>F008 910429s1991    vaua     f    001 0 eng  </fake:marcfield>
+      <rdamd:P30011>1991</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/vau"/>
       <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/>
       <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.m0xp-h565#1"/>
@@ -773,6 +778,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99115288070001452exp"/>
       <fake:marcfield>F008 790816s1928    riuab         000 0 eng d</fake:marcfield>
+      <rdamd:P30011>1928</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/riu"/>
       <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/>
       <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1008"/>
@@ -953,6 +959,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99143288160001452exp"/>
       <fake:marcfield>F008 780131s1932    enk           000 0 eng d</fake:marcfield>
+      <rdamd:P30011>1932</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/enk"/>
       <fake:marcfield>F245 14 $a The lady of the boat : $b being the fifth part of the "Tale of Genji" / $c by Lady Murasaki ; translated from the Japanese by Arthur Waley.</fake:marcfield>
       <rdamd:P30156>The lady of the boat</rdamd:P30156>
@@ -1046,6 +1053,7 @@
       <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.3d5s-zx23#o"/>
       <rdam:P30018 rdf:resource="https://doi.org/10.6069/uwlswd.mkjn-bp10#d"/>
       <fake:marcfield>F008 221203s2022    xx      o     ||| 0 eng d</fake:marcfield>
+      <rdamd:P30011>2022</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/xx"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
       <fake:marcfield>F020 ## $a 9781526160379 $q (electronic bk.)</fake:marcfield>
@@ -1263,6 +1271,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99115209990001452exp"/>
       <fake:marcfield>F008 890217t19811979waud      a     0   eng d</fake:marcfield>
+      <rdamd:P30011>1981</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/wau"/>
       <rdam:P30003 rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
       <fake:marcfield>F245 10 $a Calapooya Tree Farm (Springfield) / $c Weyerhaeuser.</fake:marcfield>
@@ -1500,6 +1509,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99131459790001452exp"/>
       <fake:marcfield>F008 020830s2002    dcu    dd a     0   eng d</fake:marcfield>
+      <rdamd:P30011>2002</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/dcu"/>
       <rdam:P30003 rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
       <fake:marcfield>F245 10 $a State of the planet, a world transformed ; Challenges for humanity, a thirsty planet / $c produced by National Geographic Maps for National Geographic Magazine ; Allen Carroll, Chief Cartographer.</fake:marcfield>
@@ -1749,6 +1759,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99115200970001452exp"/>
       <fake:marcfield>F008 930303s1818    enkopc         n    eng d</fake:marcfield>
+      <rdamd:P30011>1818</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/enk"/>
       <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1010"/>
       <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1006"/>
@@ -1871,6 +1882,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99120385090001452exp"/>
       <fake:marcfield>F008 810924s1979    enkcte   d     n    eng d</fake:marcfield>
+      <rdamd:P30011>1979</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/enk"/>
       <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1012"/>
       <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1011"/>
@@ -2092,6 +2104,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99128127150001452exp"/>
       <fake:marcfield>F008 100422s2010    ja 534            vljpn d</fake:marcfield>
+      <rdamd:P30011>2010</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/ja"/>
       <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/>
       <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/>
@@ -2290,31 +2303,37 @@
       <fake:marcfield>F710 2# $6 880-16 $a Kokuritsu Gekijō.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
       <rdaad:P50375>Kokuritsu Gekijō</rdaad:P50375>
+      <rdaad:P50375>囯立劇場</rdaad:P50375>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e3776">
       <fake:marcfield>F710 2# $6 880-17 $a Kokuritsu Bunraku Gekijō (Japan)</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
       <rdaad:P50375>Kokuritsu Bunraku Gekijō (Japan)</rdaad:P50375>
+      <rdaad:P50375>国立文楽劇場 (Japan)</rdaad:P50375>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e3786">
       <fake:marcfield>F710 2# $6 880-18 $a NHK Entāpuraizu, $e issuing body.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
       <rdaad:P50375>NHK Entāpuraizu</rdaad:P50375>
+      <rdaad:P50375>NHK エンタープライズ</rdaad:P50375>
    </rdf:Description>
    <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJdWHVd6qdMvW6frkQX68C">
       <fake:marcfield>F700 1# $6 880-13 $a Takeda, Izumo, $d 1691-1756, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJdWHVd6qdMvW6frkQX68C</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Takeda, Izumo, 1691-1756</rdaad:P50377>
+      <rdaad:P50377>竹田出雲, 1691-1756</rdaad:P50377>
    </rdf:Description>
    <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PCjqW4mktfGJ3f7ftgB8xcK">
       <fake:marcfield>F700 1# $6 880-14 $a Miyoshi, Shōraku, $d 1696?-1772?, $e author. $1 https://id.oclc.org/worldcat/entity/E39PCjqW4mktfGJ3f7ftgB8xcK</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Miyoshi, Shōraku, 1696?-1772?</rdaad:P50377>
+      <rdaad:P50377>三好松洛, 1696?-1772?</rdaad:P50377>
    </rdf:Description>
    <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJt8hj98xxrkDFXdY897HC">
       <fake:marcfield>F700 1# $6 880-15 $a Namiki, Senryū, $d 1695-1751, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJt8hj98xxrkDFXdY897HC</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Namiki, Senryū, 1695-1751</rdaad:P50377>
+      <rdaad:P50377>並木千柳, 1695-1751</rdaad:P50377>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/pn29245k3">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2558,6 +2577,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99143225830001452exp"/>
       <fake:marcfield>F008 100923p20102009cau127            vleng d</fake:marcfield>
+      <rdamd:P30278>2010/..</rdamd:P30278>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/cau"/>
       <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/>
       <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/>
@@ -2613,6 +2633,7 @@
       <rdamd:P30137>Special features: deleted scenes; Creating the family tree; Universally connected, cast and crew discuss the universal themes in the film.</rdamd:P30137>
       <fake:marcfield>F546 ## $a In English, with optional English subtitles for the deaf and hard of hearing.</fake:marcfield>
       <rdamd:P30137>In English, with optional English subtitles for the deaf and hard of hearing.</rdamd:P30137>
+      <fake:marcfield>F508 ## $a Music by Edward Shearmur ; editor, Steven Weisberg ; director of photography, Xavier Pérez Grobet ; production designer, Christopher Tandon ; costume designer, Susie De Santo.</fake:marcfield>
       <rdamd:P30137>Credits: Music by Edward Shearmur ; editor, Steven Weisberg ; director of photography, Xavier Pérez Grobet ; production designer, Christopher Tandon ; costume designer, Susie De Santo.</rdamd:P30137>
       <rdamo:P30406 rdf:resource="http://marc2rda.edu/fake/age/d22e4631"/>
       <!--Default relationship property used for https://id.oclc.org/worldcat/entity/E39PBJqW43XKQkY3kYyTfPmyBP-->
@@ -3022,6 +3043,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99115258090001452exp"/>
       <fake:marcfield>F008 780623s1968    nyuzznn  i        n zxx  </fake:marcfield>
+      <rdamd:P30011>1968</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/nyu"/>
       <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.nt0v-d633#i"/>
       <fake:marcfield>F028 01 $a SRV-291SD $b Vanguard</fake:marcfield>
@@ -3254,6 +3276,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99155918630001452exp"/>
       <fake:marcfield>F008 120619r19911951nyumcnn  iz       n eng d</fake:marcfield>
+      <rdamd:P30011>1991</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/nyu"/>
       <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.nt0v-d633#i"/>
       <fake:marcfield>F024 1# $a 074644801422</fake:marcfield>
@@ -3287,6 +3310,7 @@
       <rdamd:P30137>Program notes and synopsis by Ken Mandelbaum, in English with German, French, and Italian translations (48 p. : ill.) inserted in container.</rdamd:P30137>
       <fake:marcfield>F505 00 $t Overture $g (5:02) -- $t Payday $g (3:27) ; $t Mine 'til Monday -- $t Make the man love me $g (3:25) -- $t I'm like a new broom $g (2:52) -- $t Look who's dancing $g (3:35) -- $t Love is the reason $g (2:57) -- $t If you haven't got a sweetheart $g (2:43) -- $t I'll buy you a star $g (3:25) -- $t That's how it goes $g (2:25) -- $t He had refinement $g (3:55) -- $t Growing pains $g (3:40) -- $t Is that my prince? $g (1:43) -- $t Dance, Halloween interlude $g (6:02) -- $t Don't be afraid $g (1:46) -- $g Finale $g (3:25).</fake:marcfield>
       <rdamd:P30137>Contents: Overture (5:02) -- Payday (3:27) ; Mine 'til Monday -- Make the man love me (3:25) -- I'm like a new broom (2:52) -- Look who's dancing (3:35) -- Love is the reason (2:57) -- If you haven't got a sweetheart (2:43) -- I'll buy you a star (3:25) -- That's how it goes (2:25) -- He had refinement (3:55) -- Growing pains (3:40) -- Is that my prince? (1:43) -- Dance, Halloween interlude (6:02) -- Don't be afraid (1:46) -- Finale (3:25).</rdamd:P30137>
+      <fake:marcfield>F508 ## $a Producer: Goddard Lieberson.</fake:marcfield>
       <rdamd:P30137>Credits: Producer: Goddard Lieberson.</rdamd:P30137>
       <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor/d22e5689"/>
    </rdf:Description>
@@ -3478,6 +3502,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99162853270901452exp"/>
       <fake:marcfield>F008 240820s199u    orunnn            anzxx c</fake:marcfield>
+      <rdamd:P30011>199X</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/oru"/>
       <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#a"/>
       <fake:marcfield>F245 10 $a February.</fake:marcfield>
@@ -3647,6 +3672,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99128012660001452exp"/>
       <fake:marcfield>F008 991005s1999    qucnnn            aneng  </fake:marcfield>
+      <rdamd:P30011>1999</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/quc"/>
       <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#a"/>
       <fake:marcfield>F020 ## $a 2921751178</fake:marcfield>
@@ -3905,6 +3931,7 @@
       <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.3d5s-zx23#o"/>
       <rdam:P30018 rdf:resource="https://doi.org/10.6069/uwlswd.mkjn-bp10#c"/>
       <fake:marcfield>F008 140410s1991    vau059 e      o   vueng d</fake:marcfield>
+      <rdamd:P30011>1991</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/vau"/>
       <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/>
       <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/>
@@ -4096,6 +4123,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99115286840001452exp"/>
       <fake:marcfield>F008 000117p19991997mau060 e      o   vleng d</fake:marcfield>
+      <rdamd:P30278>1999/..</rdamd:P30278>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/mau"/>
       <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/>
       <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/>
@@ -4259,6 +4287,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99109536080001452exp"/>
       <fake:marcfield>F008 071126t20072007cau    eq  g        eng d</fake:marcfield>
+      <rdamd:P30011>2007</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/cau"/>
       <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.3d5s-zx23#q"/>
       <rdam:P30018 rdf:resource="https://doi.org/10.6069/uwlswd.mkjn-bp10#g"/>
@@ -4483,6 +4512,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99161916260401452exp"/>
       <fake:marcfield>F008 990413t19981998wau     q  g        eng d</fake:marcfield>
+      <rdamd:P30011>1998</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/wau"/>
       <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.3d5s-zx23#q"/>
       <rdam:P30018 rdf:resource="https://doi.org/10.6069/uwlswd.mkjn-bp10#g"/>
@@ -4707,6 +4737,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99114129320001452exp"/>
       <fake:marcfield>F008 821217s1587    enk     c     001 0 eng d</fake:marcfield>
+      <rdamd:P30011>1587</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/enk"/>
       <fake:marcfield>F245 13 $a An herbal for the Bible : $b containing a plaine and familiar exposition of such similitudes, parables, and metaphors, both in the Olde Testament and the Newe, as are borrowed and taken from herbs, plants, trees, fruits and simples, by observation of their vertues, qualities, natures, properties, operations, and effects : and by the holy prophets, sacred writers, Christ himself, and his blessed apostles, usually alledged, and into their heavenly oracles, for the better beautifieng and plainer opening of the same, profitably inserted / $c drawen into English by Thomas Newton.</fake:marcfield>
       <rdamd:P30156>An herbal for the Bible</rdamd:P30156>
@@ -4882,6 +4913,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99115297060001452exp"/>
       <fake:marcfield>F008 100429s1978    dcuab   ob   f001 0 eng d</fake:marcfield>
+      <rdamd:P30011>1978</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/dcu"/>
       <fake:marcfield>F245 10 $a Important forest trees of the United States / $c by Elbert L. Little, Jr.</fake:marcfield>
       <rdamd:P30156>Important forest trees of the United States</rdamd:P30156>
@@ -5023,6 +5055,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99123793010001452exp"/>
       <fake:marcfield>F008 081106s1959    maua    r     000 0 eng d</fake:marcfield>
+      <rdamd:P30011>1959</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/mau"/>
       <fake:marcfield>F245 10 $a Easy sketches of famous men / $c by Claribel Spamer.</fake:marcfield>
       <rdamd:P30156>Easy sketches of famous men</rdamd:P30156>
@@ -5124,6 +5157,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99106611740001452exp"/>
       <fake:marcfield>F008 040322s1919    dcu     b    f000 0 eng d</fake:marcfield>
+      <rdamd:P30011>1919</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/dcu"/>
       <fake:marcfield>F245 00 $a Arbor day : $b In commemoration of our soldiers and sailors whose lives have been given for their country and for humanity in the Great War.</fake:marcfield>
       <rdamd:P30156>Arbor day</rdamd:P30156>
@@ -5234,6 +5268,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99115198970001452exp"/>
       <fake:marcfield>F008 711230t19081902nyuaf         000 j eng  </fake:marcfield>
+      <rdamd:P30011>1908</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/nyu"/>
       <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/>
       <rdam:P30453 rdf:resource="https://doi.org/10.6069/uwlswd.gq3z-mv97#f"/>
@@ -5455,6 +5490,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99161877055601452exp"/>
       <fake:marcfield>F008 150924s1541    fr i      b     0   lat d</fake:marcfield>
+      <rdamd:P30011>1541</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/fr"/>
       <fake:marcfield>F245 10 $a Scithia intra imavm.</fake:marcfield>
       <rdamd:P30156>Scithia intra imavm</rdamd:P30156>
@@ -5652,6 +5688,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99128261590001452exp"/>
       <fake:marcfield>F008 090121s2009    nyu      b    000 0 eng  </fake:marcfield>
+      <rdamd:P30011>2009</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/nyu"/>
       <rdamd:P30137>Includes bibliographies.</rdamd:P30137>
       <fake:marcfield>F020 ## $a 9780231149440 $q (cloth ; $q alk. paper)</fake:marcfield>
@@ -5880,6 +5917,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99143191490001452exp"/>
       <fake:marcfield>F008 040513s2004    nyu           000 pdeng  </fake:marcfield>
+      <rdamd:P30011>2004</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/nyu"/>
       <rdamd:P30137>Contains biographical information.</rdamd:P30137>
       <fake:marcfield>F245 10 $a Bringing in the sheaves : $b poems / $c by Edmund Pennant.</fake:marcfield>
@@ -6257,6 +6295,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99161967924401452exp"/>
       <fake:marcfield>F008 160205t20162016txua          000 1 eng  </fake:marcfield>
+      <rdamd:P30011>2016</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/txu"/>
       <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/>
       <fake:marcfield>F020 ## $a 9781628971590 $q hardcover ; $q alkaline paper</fake:marcfield>
