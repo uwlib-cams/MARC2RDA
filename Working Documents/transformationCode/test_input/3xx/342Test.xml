@@ -18,14 +18,28 @@
             <marc:subfield code="a">State Plane Coordinate System 27, Lambert Conformal</marc:subfield>
         </marc:datafield>
         
+        <marc:datafield tag="342" ind1="1" ind2="2">
+            <marc:subfield code="a">Universal Transverse Mercator</marc:subfield>
+            <marc:subfield code="p">13</marc:subfield>
+            <marc:subfield code="k">0.9996</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="342" ind1="1" ind2="6">
+            <marc:subfield code="a">National geodetic vertical datum of 1929</marc:subfield>
+            <marc:subfield code="v">1</marc:subfield>
+            <marc:subfield code="b">meters</marc:subfield>
+            <marc:subfield code="w">Implicit coordinates.</marc:subfield>
+        </marc:datafield>
+        
         <marc:datafield tag="342" ind1=" " ind2="3">
             <marc:subfield code="a">NGVD 1929</marc:subfield>
             <marc:subfield code="f">value f</marc:subfield>
+            <marc:subfield code="f">value f2</marc:subfield>
             <marc:subfield code="k">value k</marc:subfield>
         </marc:datafield>
         
-        <marc:datafield tag="342" ind1=" " ind2="1">
-            <marc:subfield code="a">Sinusoidal</marc:subfield>
+        <marc:datafield tag="342" ind1="0" ind2="1">
+            <marc:subfield code="a">Lambert conformal conic</marc:subfield>
             <marc:subfield code="e">38.3</marc:subfield>
             <marc:subfield code="e">39.45</marc:subfield>
             <marc:subfield code="g">-77</marc:subfield>
@@ -39,6 +53,12 @@
             <marc:subfield code="b">Degrees, Minutes, and Decimal seconds</marc:subfield>
             <marc:subfield code="c">0.0000001</marc:subfield>
             <marc:subfield code="d">0.0000001</marc:subfield>
+            <marc:subfield code ="u">Explicit depth coordinate included with horizontal coordinates</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">342-00</marc:subfield>
+            <marc:subfield code="c">value</marc:subfield>
         </marc:datafield>
         
     </marc:record>

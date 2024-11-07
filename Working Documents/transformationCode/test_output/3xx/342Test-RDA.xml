@@ -46,20 +46,33 @@
       <rdae:P20071>Denominator of flattening ratio: 294.97869821</rdae:P20071>
       <fake:marcfield>F342 #2 $a State Plane Coordinate System 27, Lambert Conformal</fake:marcfield>
       <rdae:P20071>Grid coordinate system: State Plane Coordinate System 27, Lambert Conformal. </rdae:P20071>
-      <fake:marcfield>F342 #3 $a NGVD 1929 $f value f $k value k</fake:marcfield>
+      <fake:marcfield>F342 12 $a Universal Transverse Mercator $p 13 $k 0.9996</fake:marcfield>
+      <rdae:P20071>Grid coordinate system: Universal Transverse Mercator. Zone identifier: 13.</rdae:P20071>
+      <rdae:P20213>Scale factor at central meridian: 0.9996</rdae:P20213>
+      <fake:marcfield>F342 16 $a National geodetic vertical datum of 1929 $v 1 $b meters $w Implicit coordinates.</fake:marcfield>
+      <rdae:P20071>Altitude datum name: National geodetic vertical datum of 1929.</rdae:P20071>
+      <rdae:P20071>Local planar, local, or other projection or grid description: 1</rdae:P20071>
+      <rdae:P20071>Coordinate units or distance units: meters.</rdae:P20071>
+      <rdae:P20071>Local planar or local georeference information: Implicit coordinates.</rdae:P20071>
+      <fake:marcfield>F342 #3 $a NGVD 1929 $f value f $f value f2 $k value k</fake:marcfield>
       <rdae:P20071>Local planar coordinate system: NGVD 1929.</rdae:P20071>
-      <rdae:P20071>Oblique line longtitude: value f</rdae:P20071>
+      <rdae:P20071>Oblique line longitude: value f; Oblique line longitude: value f2</rdae:P20071>
       <rdae:P20213>Scale factor: value k</rdae:P20213>
-      <fake:marcfield>F342 #1 $a Sinusoidal $e 38.3 $e 39.45 $g -77 $h 37.8333 $i 800,000 $j 0</fake:marcfield>
-      <rdae:P20216>Sinusoidal</rdae:P20216>
+      <fake:marcfield>F342 01 $a Lambert conformal conic $e 38.3 $e 39.45 $g -77 $h 37.8333 $i 800,000 $j 0</fake:marcfield>
+      <rdae:P20216>Lambert conformal conic</rdae:P20216>
       <rdae:P20071>False easting: 800,000</rdae:P20071>
       <rdae:P20071>False northing: 0</rdae:P20071>
-      <rdae:P20071>Longtitude of the central meridian: -77</rdae:P20071>
-      <fake:marcfield>F342 18 $a Lowest astronomical tide $b Degrees, Minutes, and Decimal seconds $c 0.0000001 $d 0.0000001</fake:marcfield>
+      <rdae:P20071>Standard parallel(s): 38.3; Standard parallel(s): 39.45</rdae:P20071>
+      <rdae:P20071>Longitude of the central meridian: -77</rdae:P20071>
+      <rdae:P20071>Latitude of projection origin: 37.8333</rdae:P20071>
+      <fake:marcfield>F342 18 $a Lowest astronomical tide $b Degrees, Minutes, and Decimal seconds $c 0.0000001 $d 0.0000001 $u Explicit depth coordinate included with horizontal coordinates</fake:marcfield>
       <rdae:P20071>Depth datum name: Lowest astronomical tide.</rdae:P20071>
       <rdae:P20071>Coordinate units or distance units: Degrees, Minutes, and Decimal seconds.</rdae:P20071>
       <rdae:P20071>Latitude resolution: 0.0000001</rdae:P20071>
       <rdae:P20071>Longitude resolution: 0.0000001</rdae:P20071>
+      <rdae:P20071>Depth encoding method: Explicit depth coordinate included with horizontal coordinates</rdae:P20071>
+      <fake:marcfield>F880 ## $6 342-00 $c value</fake:marcfield>
+      <rdae:P20071>Latitude resolution: value</rdae:P20071>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/342-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>

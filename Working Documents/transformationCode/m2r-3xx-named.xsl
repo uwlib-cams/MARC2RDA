@@ -1151,14 +1151,15 @@
                 </xsl:for-each></rdae:P20071>
         </xsl:if>
        
-       <xsl:for-each select="marc:subfield[@code = 'f']"><rdae:P20071>
-           <xsl:text>Oblique line longtitude: </xsl:text>
-           <xsl:value-of select="."/>
-           <xsl:if test="position() != last()">
-               <xsl:text>;</xsl:text>
-           </xsl:if></rdae:P20071>
-       </xsl:for-each>
-       
+     <xsl:if test="marc:subfield[@code = 'f']">
+        <rdae:P20071><xsl:for-each select="marc:subfield[@code = 'f']">
+           <xsl:text>Oblique line longitude: {.}</xsl:text>
+            <xsl:if test="position() != last()">
+                <xsl:text>; </xsl:text>
+            </xsl:if>
+        </xsl:for-each></rdae:P20071>
+     </xsl:if>
+        
        <xsl:for-each select="marc:subfield[@code = 'i' or @code = 'j']">
            <rdae:P20071>
                <xsl:choose>
@@ -1225,25 +1226,33 @@
     <xsl:template name="F342-x1-egh" expand-text="yes">
         <xsl:if test = "@ind2 = '1'">        
             <xsl:if test= "marc:subfield[@code = 'a' and contains(.,'Albers conical equal area') or contains(., 'Equidistant conic') or contains(., 'Equirectangular') or contains(., 'Lambert conformal conic') or contains(.,'Mercator') or contains(.,'Polar stereographic')]">
-                <xsl:for-each select= "marc:subfield[@code = 'e']"><rdae:P20071>
-                    <xsl:text>Standard parallel(s): {.}</xsl:text></rdae:P20071>
-                </xsl:for-each>              
+                <rdae:P20071>
+                    <xsl:for-each select="marc:subfield[@code = 'e']">
+                        <xsl:text>Standard parallel(s): {.}</xsl:text>
+                        <xsl:if test="position() != last()">
+                            <xsl:text>; </xsl:text>
+                        </xsl:if>
+                    </xsl:for-each>
+                </rdae:P20071>
             </xsl:if>
             <xsl:if test= "marc:subfield[@code = 'a' and contains(.,'Oblique Mercator')]">
                 <xsl:for-each select = "marc:subfield[@code = 'e']"><rdae:P20071>
-                    <xsl:text>Oblique line latitude(s): {.}</xsl:text></rdae:P20071>
+                    <xsl:text>Oblique line latitude(s): {.}</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>; </xsl:text>
+                    </xsl:if></rdae:P20071>
                 </xsl:for-each>
             </xsl:if>
             
             <xsl:if test= "marc:subfield[@code = 'a' and contains(.,'Albers conical equal area') or contains(., 'Azimuthal equidistant') or contains(., 'Equidistant conic') or contains(., 'Equirectangular') or contains(., 'Lambert conformal conic') or contains(.,'Mercator') or contains(.,'Miller cylindrical') or contains(.,'Polyconic')or contains(.,'Sinusoidal')or contains(.,'Transverse Mercator') or contains(.,'Van der Grinten')]">
                 <xsl:for-each select= "marc:subfield[@code = 'g']"><rdae:P20071>
-                    <xsl:text>Longtitude of the central meridian: {.}</xsl:text></rdae:P20071>
+                    <xsl:text>Longitude of the central meridian: {.}</xsl:text></rdae:P20071>
                 </xsl:for-each>
             </xsl:if>
 
             <xsl:if test= "marc:subfield[@code = 'a' and contains(.,'General vertical near-sided projection') or contains(., 'Gnomomic') or contains(., 'Orthographic') or contains(., 'Lambert azimuthal equal area') or contains(., 'Robinson') or contains(.,'Stereographic')]">
                 <xsl:for-each select= "marc:subfield[@code = 'g']"><rdae:P20071>
-                    <xsl:text>Longtitude of projection center: {.}</xsl:text></rdae:P20071>
+                    <xsl:text>Longitude of projection center: {.}</xsl:text></rdae:P20071>
                 </xsl:for-each>
             </xsl:if>
             
@@ -1263,14 +1272,16 @@
         <xsl:if test = "not(@ind2 = '1')">
             <xsl:if test = "marc:subfield[@code = 'e'] or marc:subfield[@code = 'a' and not(contains(., 'Albers conical equal area') or contains(., 'Equidistant') or contains(., 'Equirectangular') or contains(., 'Lambert conformal conic') or contains(., 'Mercator') or contains(., 'Polar stereographic') or contains(., 'Oblique Mercator'))]">
                 <xsl:for-each select="marc:subfield[@code = 'e']"><rdae:P20071>
-                    <xsl:text>Standard parallel(s) or oblique line latitude(s): </xsl:text>
-                    <xsl:value-of select="." /></rdae:P20071>
+                    <xsl:text>Standard parallel(s) or oblique line latitude(s): {.}</xsl:text>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>;</xsl:text>
+                    </xsl:if></rdae:P20071>
                 </xsl:for-each>
             </xsl:if>
             
             <xsl:if test = "marc:subfield[@code = 'g'] or marc:subfield[@code = 'a' and not(contains(.,'Albers conical equal area') or contains(., 'Azimuthal equidistant') or contains(., 'Equidistant conic') or contains(., 'Equirectangular') or contains(., 'Lambert conformal conic') or contains(.,'Mercator') or contains(.,'Miller cylindrical') or contains(.,'Polyconic')or contains(.,'Sinusoidal')or contains(.,'Transverse Mercator') or contains(.,'Van der Grinten') or contains(.,'General vertical near-sided projection') or contains(., 'Gnomomic') or contains(., 'Orthographic') or contains(., 'Lambert azimuthal equal area') or contains(., 'Robinson') or contains(.,'Stereographic'))]">
                 <xsl:for-each select="marc:subfield[@code = 'g']"><rdae:P20071>
-                    <xsl:text>Longtitude of the central meridian or projection center: </xsl:text>
+                    <xsl:text>Longitude of the central meridian or projection center: </xsl:text>
                     <xsl:value-of select="." /></rdae:P20071>
                 </xsl:for-each>
             </xsl:if>
@@ -1286,7 +1297,7 @@
    
     <xsl:template name="F342-xx-k" expand-text="yes">
         <xsl:if test="@ind1 = '1'">
-            <xsl:if test= "marc:subfield[@code = 'a' and contains(.,'Mercator')]">
+            <xsl:if test= "marc:subfield[@code = 'a' and contains(.,'Mercator') and not(contains(., 'Transverse') or contains(., 'Oblique)'))]">
                 <xsl:for-each select= "marc:subfield[@code = 'k']"><rdae:P20213>
                     <xsl:text>Scale factor at equator: {.}</xsl:text></rdae:P20213>
                 </xsl:for-each>
