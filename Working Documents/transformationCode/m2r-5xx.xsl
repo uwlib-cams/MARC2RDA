@@ -986,6 +986,24 @@
         </rdamd:P30137>
     </xsl:template>
     
+    <!-- 550 - Issuing Body Note -->
+    <xsl:template
+        match="marc:datafield[@tag = '550'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '550']"
+        mode="man" expand-text="true">
+        <xsl:call-template name="getmarc"/>
+        <rdamd:P30055>
+            <xsl:for-each select="marc:subfield[@code = 'a']">
+                <xsl:if test="@code = 'a'">
+                    <xsl:text>Issuing body note: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="position() != last()">
+                    <xsl:text>; </xsl:text>
+                </xsl:if>
+            </xsl:for-each>
+        </rdamd:P30055>
+    </xsl:template>
+    
+    
     <!-- 552 - Entity and Attribute Information Note -->
     <xsl:template
         match="marc:datafield[@tag = '552'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '552']"
