@@ -29,42 +29,48 @@
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwf="http://universityOfWashington/functions"
          xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
-   <rdf:Description rdf:about="http://fakeIRI2.edu/536-testwor">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/536-testwor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/536-testexp"/>
       <rdawd:P10002>536-testwor</rdawd:P10002>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/536-testexp">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/536-testexp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/536-testwor"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/536-testman"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/536-testwor"/>
       <rdaed:P20002>536-testexp</rdaed:P20002>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/536-testman">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/536-testman">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/536-testexp"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/536-testexp"/>
       <fake:marcfield>F538 ## $3 v.1-49(1927-1975) $a Mode of access: World Wide Web. System requirements: DJVU Plugin or Adobe Acrobat Reader $5 WRJ</fake:marcfield>
-      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/536-testited19e14"/>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/536-testited22e14"/>
       <fake:marcfield>F538 ## $6 880-02 $a Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002.             $u http://purl.oclc.org/DLF/benchrepro0212 $5 MiAaHDL $5 WaU</fake:marcfield>
-      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/536-testited19e23"/>
-      <rdamo:P30103 rdf:resource="http://fakeIRI2.edu/536-testited19e25"/>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/536-testited22e23"/>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/536-testited22e25"/>
       <fake:marcfield>F538 ## $6 880-01 $a Project methodology for digital version $i Technical details: $u http://www.columbia.edu/dlc/linglung/methodology.html </fake:marcfield>
       <rdamd:P30162>Project methodology for digital version; Technical details: http://www.columbia.edu/dlc/linglung/methodology.html </rdamd:P30162>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/536-testited19e14">
-      <rdaid:P40001>ited19e14</rdaid:P40001>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/536-testited22e14">
+      <rdaid:P40001>ited22e14</rdaid:P40001>
+      <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/536-testman"/>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
       <!--Unable to match WRJ with Cultural Heritage Organization-->
       <rdaid:P40028>Mode of access: World Wide Web. System requirements: DJVU Plugin or Adobe Acrobat Reader(Applies to: v.1-49(1927-1975))</rdaid:P40028>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/536-testited19e23">
-      <rdaid:P40001>ited19e23</rdaid:P40001>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/536-testited22e23">
+      <rdaid:P40001>ited22e23</rdaid:P40001>
+      <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/536-testman"/>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
       <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/miaahdl"/>
       <rdaid:P40028>Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002.            ; http://purl.oclc.org/DLF/benchrepro0212</rdaid:P40028>
       <rdaid:P40028>non-roman a with 5</rdaid:P40028>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/536-testited19e25">
-      <rdaid:P40001>ited19e25</rdaid:P40001>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/536-testited22e25">
+      <rdaid:P40001>ited22e25</rdaid:P40001>
+      <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/536-testman"/>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
       <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/wau"/>
       <rdaid:P40028>Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002.            ; http://purl.oclc.org/DLF/benchrepro0212</rdaid:P40028>

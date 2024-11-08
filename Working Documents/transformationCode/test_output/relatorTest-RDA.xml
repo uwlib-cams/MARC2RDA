@@ -33,12 +33,14 @@
          xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test1exp"/>
       <rdawd:P10002>relator-test1wor</rdawd:P10002>
       <!--Default relationship property used for http://marc2rda.edu/fake/age/d22e6-->
       <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d22e6"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test1man"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test1wor"/>
       <rdaed:P20002>relator-test1exp</rdaed:P20002>
    </rdf:Description>
@@ -76,6 +78,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test2wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test2exp"/>
       <rdawd:P10002>relator-test2wor</rdawd:P10002>
       <!--Default relationship property used for http://marc2rda.edu/fake/age/d22e26-->
       <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d22e26"/>
@@ -83,6 +86,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test2exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test2man"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test2wor"/>
       <rdaed:P20002>relator-test2exp</rdaed:P20002>
    </rdf:Description>
@@ -104,12 +108,14 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test3wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test3exp"/>
       <rdawd:P10002>relator-test3wor</rdawd:P10002>
       <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age/d22e42"/>
       <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age/d22e47"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test3exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test3man"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test3wor"/>
       <rdaed:P20002>relator-test3exp</rdaed:P20002>
    </rdf:Description>
@@ -131,6 +137,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test4wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test4exp"/>
       <rdawd:P10002>relator-test4wor</rdawd:P10002>
       <rdawo:P10530 rdf:resource="http://marc2rda.edu/fake/age/d22e58"/>
       <rdawo:P10550 rdf:resource="http://marc2rda.edu/fake/age/d22e58"/>
@@ -139,6 +146,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test4exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test4man"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test4wor"/>
       <rdaed:P20002>relator-test4exp</rdaed:P20002>
    </rdf:Description>
@@ -164,10 +172,12 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test5wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test5exp"/>
       <rdawd:P10002>relator-test5wor</rdawd:P10002>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test5exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test5man"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test5wor"/>
       <rdaed:P20002>relator-test5exp</rdaed:P20002>
    </rdf:Description>
@@ -184,12 +194,14 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test6wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test6exp"/>
       <rdawd:P10002>relator-test6wor</rdawd:P10002>
       <!--Default relationship property used for http://marc2rda.edu/fake/age/d22e86-->
       <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d22e86"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test6exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test6man"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test6wor"/>
       <rdaed:P20002>relator-test6exp</rdaed:P20002>
    </rdf:Description>
@@ -204,10 +216,12 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test7wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test7exp"/>
       <rdawd:P10002>relator-test7wor</rdawd:P10002>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test7exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test7man"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test7wor"/>
       <rdaed:P20002>relator-test7exp</rdaed:P20002>
    </rdf:Description>
@@ -224,11 +238,13 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test8wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test8exp"/>
       <rdawd:P10002>relator-test8wor</rdawd:P10002>
       <rdawo:P10550 rdf:resource="http://marc2rda.edu/fake/age/d22e106"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test8exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test8man"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test8wor"/>
       <rdaed:P20002>relator-test8exp</rdaed:P20002>
    </rdf:Description>
@@ -244,11 +260,13 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test9exp"/>
       <rdawd:P10002>relator-test9wor</rdawd:P10002>
       <rdawo:P10530 rdf:resource="http://marc2rda.edu/fake/age/d22e119"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test9man"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test9wor"/>
       <rdaed:P20002>relator-test9exp</rdaed:P20002>
       <rdaeo:P20469 rdf:resource="http://marc2rda.edu/fake/age/d22e124"/>
@@ -269,10 +287,12 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test9exp"/>
       <rdawd:P10002>relator-test9wor</rdawd:P10002>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test9man"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test9wor"/>
       <rdaed:P20002>relator-test9exp</rdaed:P20002>
       <rdaeo:P20469 rdf:resource="http://marc2rda.edu/fake/age/d22e133"/>
@@ -288,10 +308,12 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test10wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test10exp"/>
       <rdawd:P10002>relator-test10wor</rdawd:P10002>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test10exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test10man"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test10wor"/>
       <rdaed:P20002>relator-test10exp</rdaed:P20002>
       <rdaeo:P20469 rdf:resource="http://marc2rda.edu/fake/age/d22e142"/>
@@ -307,10 +329,12 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-testItemwor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-testItemexp"/>
       <rdawd:P10002>relator-testItemwor</rdawd:P10002>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-testItemexp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-testItemman"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-testItemwor"/>
       <rdaed:P20002>relator-testItemexp</rdaed:P20002>
    </rdf:Description>
@@ -322,6 +346,7 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-testItemited22e152">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
       <rdaid:P40001>ited22e152</rdaid:P40001>
+      <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/relator-testItemman"/>
       <rdaio:P40014 rdf:resource="http://marc2rda.edu/fake/age/d22e152"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e152">
@@ -331,10 +356,12 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-testItemwor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-testItemexp"/>
       <rdawd:P10002>relator-testItemwor</rdawd:P10002>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-testItemexp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-testItemman"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-testItemwor"/>
       <rdaed:P20002>relator-testItemexp</rdaed:P20002>
    </rdf:Description>
@@ -345,6 +372,7 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-testItemited22e161">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
       <rdaid:P40001>ited22e161</rdaid:P40001>
+      <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/relator-testItemman"/>
       <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/dlc"/>
       <!--Default relationship property used for http://marc2rda.edu/fake/age/d22e161-->
       <rdaio:P40073 rdf:resource="http://marc2rda.edu/fake/age/d22e161"/>

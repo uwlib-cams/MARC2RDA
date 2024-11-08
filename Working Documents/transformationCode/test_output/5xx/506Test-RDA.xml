@@ -33,10 +33,12 @@
          xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
    <rdf:Description rdf:about="http://marc2rda.edu/fake/506-testwor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/506-testexp"/>
       <rdawd:P10002>506-testwor</rdawd:P10002>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/506-testexp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/506-testman"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/506-testwor"/>
       <rdaed:P20002>506-testexp</rdaed:P20002>
    </rdf:Description>
@@ -65,10 +67,12 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/506-test2wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/506-test2exp"/>
       <rdawd:P10002>506-test2wor</rdawd:P10002>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/506-test2exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/506-test2man"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/506-test2wor"/>
       <rdaed:P20002>506-test2exp</rdaed:P20002>
    </rdf:Description>
@@ -76,20 +80,22 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/506-test2exp"/>
       <fake:marcfield>F506 1# $3 Office files of Under Secretary $a No one may examine these records or obtain information from them or copies of them except by written permission; $b Secretary of the Treasury or his duly authorized representative;$cKept in remote storage; access requires 24 hours advance notice.</fake:marcfield>
-      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/506-test2ited20e50"/>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/506-test2ited22e50"/>
       <fake:marcfield>F506 0# $6 880-01 $a Access copy available to the general public. $f Unrestricted $2 star $5 MH</fake:marcfield>
-      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/506-test2ited20e57"/>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/506-test2ited22e57"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/506-test2ited20e50">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/506-test2ited22e50">
       <fake:marcfield>F506 1# $3 Office files of Under Secretary $a No one may examine these records or obtain information from them or copies of them except by written permission; $b Secretary of the Treasury or his duly authorized representative;$cKept in remote storage; access requires 24 hours advance notice.</fake:marcfield>
-      <rdaid:P40001>ited20e50</rdaid:P40001>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdaid:P40001>ited22e50</rdaid:P40001>
+      <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/506-test2man"/>
       <rdaid:P40047>Restrictions apply: Terms governing access: No one may examine these records or obtain information from them or copies of them except by written permission;; Jurisdiction: Secretary of the Treasury or his duly authorized representative;$cKept in remote storage; access requires 24 hours advance notice. (Applies to: Office files of Under Secretary)</rdaid:P40047>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/506-test2ited20e57">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/506-test2ited22e57">
       <fake:marcfield>F506 0# $6 880-01 $a Access copy available to the general public. $f Unrestricted $2 star $5 MH</fake:marcfield>
-      <rdaid:P40001>ited20e57</rdaid:P40001>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdaid:P40001>ited22e57</rdaid:P40001>
+      <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/506-test2man"/>
       <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/mh"/>
       <rdaid:P40047>Terms governing access: Access copy available to the general public.</rdaid:P40047>
       <rdai:P40047 rdf:resource="http://marc2rda.edu/fake/concept/star/unrestricted"/>

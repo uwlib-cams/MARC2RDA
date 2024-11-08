@@ -33,6 +33,7 @@
          xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99162163075701452wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/99162163075701452exp"/>
       <rdawd:P10002>99162163075701452wor</rdawd:P10002>
       <fake:marcfield>F006 m        d        </fake:marcfield>
       <fake:marcfield>F008 180828s2017    enk     ob    001 0 eng d</fake:marcfield>
@@ -51,6 +52,8 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99162163075701452exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/99162163075701452man"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/99162163075701452origMan"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/99162163075701452wor"/>
       <rdaed:P20002>99162163075701452exp</rdaed:P20002>
       <fake:marcfield>F006 m        d        </fake:marcfield>
