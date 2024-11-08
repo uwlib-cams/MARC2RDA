@@ -202,7 +202,60 @@
         <xsl:call-template name="F245-xx-k"/>
         </xsl:for-each>
     </xsl:template>
- 
+    
+    <!-- 255 - Cartographic Mathematical Data -->
+    <!-- Expression -->
+    <xsl:template match="marc:datafield[@tag = '255'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '255']"
+        mode="exp" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
+        <xsl:if test="marc:subfield[@code = 'a'][contains(., '[0-9]')]">
+            <rdaed:P20228>
+                <xsl:value-of select="marc:subfield[@code = 'a']"/>
+            </rdaed:P20228>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'a'][not(contains(., '[0-9]'))]">
+            <rdaed:P20291>
+                <xsl:value-of select="marc:subfield[@code = 'a']"/>
+            </rdaed:P20291>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'b']">
+            <rdaed:P20216>
+                <xsl:value-of select="marc:subfield[@code = 'b']"/>
+            </rdaed:P20216>
+        </xsl:if>
+    </xsl:template>
+    <!-- Work -->
+    <xsl:template match="marc:datafield[@tag = '255'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '255']"
+        mode="wor" expand-text="yes">
+        <xsl:call-template name="getmarc"/>
+        <xsl:if test="marc:subfield[@code = 'c']">
+            <rdawd:P10081>
+                <xsl:value-of 
+                    select="replace(marc:subfield[@code = 'c'], '^\(|\)$|\).$|\.$', '') => normalize-space()"
+                />
+            </rdawd:P10081>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'd']">
+            <rdaw:P10082>
+                <xsl:value-of select="marc:subfield[@code = 'd']"/>
+            </rdaw:P10082>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'e']">
+            <rdaw:P10214>
+                <xsl:value-of select="marc:subfield[@code = 'e']"/>
+            </rdaw:P10214>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'f']">
+            <rdawd:P10024>
+                <xsl:value-of select="concat('Outer G-ring coordinate pairs: ', marc:subfield[@code = 'f'])"/>
+            </rdawd:P10024>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'g']">
+            <rdawd:P10024>
+                <xsl:value-of select="concat('Exclusion G-ring coordinate pairs: ', marc:subfield[@code = 'g'])"/>
+            </rdawd:P10024>
+        </xsl:if>   
+    </xsl:template>
  
     <!-- 257 - Country of Producing Entity -->
     <xsl:template match="marc:datafield[@tag = '257'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '257']" 

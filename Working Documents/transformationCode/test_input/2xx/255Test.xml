@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+   
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">255-test00</marc:controlfield>
+        <marc:datafield tag="255" ind1=" " ind2=" ">
+            <marc:subfield code="a">Scale [ca. 1:500,000] ;</marc:subfield>
+            <marc:subfield code="b">Base fitted to Lambert conformal conic proj. based on standard parallels of 33° and 45°.</marc:subfield>
+        </marc:datafield>
+    </marc:record><marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">255-test00</marc:controlfield>
+        <marc:datafield tag="255" ind1="1" ind2="0">
+            <marc:subfield code="a">Scale [ca. 1:13,835,000]. 1 cm. = 138 km. 1 in. = 218 miles ;</marc:subfield>
+            <marc:subfield code="b">Chamberlin trimetric proj.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">255-test1</marc:controlfield>
+        <marc:datafield tag="255" ind1=" " ind2=" ">
+            <marc:subfield code="a">Scale [ca. 1:10,000] ;</marc:subfield>
+            <marc:subfield code="b">Gauss proj.</marc:subfield>
+            <marc:subfield code="c">(W 9°13'52"--W 9°04'47"/N 38°48'35"--N 38°41'29").</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">255-test1</marc:controlfield>
+        <marc:datafield tag="255" ind1=" " ind2=" ">
+            <marc:subfield code="a">Scale 88 mm per 1°</marc:subfield>
+            <marc:subfield code="d">(RA 16 hr./Decl. +30° ;</marc:subfield>
+            <marc:subfield code="e">eeq. 1973.50).</marc:subfield>
+            <marc:subfield code="f">test_f</marc:subfield>
+            <marc:subfield code="g">test_g</marc:subfield>
+            <marc:subfield code="6">test_6</marc:subfield>
+            <marc:subfield code="7">test_7</marc:subfield>
+            <marc:subfield code="8">test_8</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>
+
