@@ -236,14 +236,14 @@
             </rdawd:P10081>
         </xsl:if>
         <xsl:if test="marc:subfield[@code = 'd']">
-            <rdaw:P10082>
+            <rdawd:P10082>
                 <xsl:value-of select="marc:subfield[@code = 'd']"/>
-            </rdaw:P10082>
+            </rdawd:P10082>
         </xsl:if>
         <xsl:if test="marc:subfield[@code = 'e']">
-            <rdaw:P10214>
+            <rdawd:P10214>
                 <xsl:value-of select="marc:subfield[@code = 'e']"/>
-            </rdaw:P10214>
+            </rdawd:P10214>
         </xsl:if>
         <xsl:if test="marc:subfield[@code = 'f']">
             <rdawd:P10024>
