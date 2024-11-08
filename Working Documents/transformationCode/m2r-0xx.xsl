@@ -199,8 +199,9 @@
         <xsl:if test="marc:subfield[@code = '5']">
             <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
                 <xsl:call-template name="getmarc"/>
-                <rdaid:P40001>{concat($controlNumber, 'ite', $genID)}</rdaid:P40001>
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+                <rdaid:P40001>{concat($controlNumber, 'ite', $genID)}</rdaid:P40001>
+                <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
                 <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>
             </rdf:Description>
         </xsl:if>

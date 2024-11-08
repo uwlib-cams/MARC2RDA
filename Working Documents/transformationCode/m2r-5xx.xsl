@@ -95,6 +95,7 @@
             <xsl:call-template name="getmarc"/>
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
             <rdaid:P40001>{concat($controlNumber,'ite',$genID)}</rdaid:P40001>
+            <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
             <rdaid:P40028>
                 <xsl:value-of select="marc:subfield[@code = 'a']"/>
                 <xsl:if test="marc:subfield[@code = '3']">
@@ -151,8 +152,9 @@
         <xsl:if test="marc:subfield[@code = '5']">
             <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
                 <xsl:call-template name="getmarc"/>
-                <rdaid:P40001>{concat($controlNumber, 'ite', $genID)}</rdaid:P40001>
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+                <rdaid:P40001>{concat($controlNumber, 'ite', $genID)}</rdaid:P40001>
+                <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
                 <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>
                 <rdaid:P40028>
                     <xsl:value-of select="marc:subfield[@code = 'a']"/>
@@ -306,8 +308,9 @@
         <xsl:if test="$online_resource = 'false'">
             <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
                 <xsl:call-template name="getmarc"/>
-                <rdaid:P40001>{concat($controlNumber, 'ite', $genID)}</rdaid:P40001>
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+                <rdaid:P40001>{concat($controlNumber, 'ite', $genID)}</rdaid:P40001>
+                <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
                 <xsl:if test="marc:subfield[@code = '5']">
                     <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>    
                 </xsl:if>
@@ -814,6 +817,7 @@
             <xsl:variable name="genID" select="generate-id()"/>
             <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
                 <rdaid:P40001>{concat($controlNumber, 'ite', $genID)}</rdaid:P40001>
+                <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                 <xsl:copy-of select="uwf:S5lookup(.)"/>
                 <rdaid:P40028>
@@ -852,8 +856,9 @@
         <!-- create the item IRI and rdf:description for this item -->
         <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
             <xsl:call-template name="getmarc"/>
-            <rdaid:P40001>{concat($controlNumber, 'ite', $genID)}</rdaid:P40001>
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+            <rdaid:P40001>{concat($controlNumber, 'ite', $genID)}</rdaid:P40001>
+            <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
             <xsl:if test="marc:subfield[@code = '5']">
                 <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>
             </xsl:if>
@@ -1056,8 +1061,9 @@
         <!-- create the item IRI and rdf:description for this item -->
         <rdf:Description rdf:about="{concat($baseIRI,'ite',$genID)}">
             <xsl:call-template name="getmarc"/>
-            <rdaid:P40001>{concat($controlNumber, 'ite', $genID)}</rdaid:P40001>
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+            <rdaid:P40001>{concat($controlNumber, 'ite', $genID)}</rdaid:P40001>
+            <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
             <xsl:if test="marc:subfield[@code = '5']">
                 <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>
             </xsl:if>
@@ -1147,6 +1153,7 @@
                 <xsl:call-template name="getmarc"/>
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                 <rdaid:P40001>{concat($controlNumber,'ite',$genID)}</rdaid:P40001>
+                <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
                 <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>
                 <rdaid:P40028>
                     <xsl:call-template name="F563-xx-au3"/>
@@ -1224,6 +1231,7 @@
             <xsl:call-template name="getmarc"/>
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
             <rdaid:P40001>{concat($controlNumber,'ite',$genID)}</rdaid:P40001>
+            <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
             <xsl:if test="marc:subfield[@code = '5']">
                 <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>
             </xsl:if>
@@ -1361,6 +1369,7 @@
                 <xsl:call-template name="getmarc"/>
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                 <rdaid:P40001>{concat($controlNumber,'ite',$genID)}</rdaid:P40001>
+                <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
                 <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>
                 <rdaid:P40028>
                     <xsl:text>Exhibition note: {marc:subfield[@code = 'a']}</xsl:text>
