@@ -1,4 +1,4 @@
-## Example Input and Output data for SWIB Presentatino 2024
+## Example Input and Output data for SWIB Presentation 2024
 
 * input.xml - Input as MARC/XML
 * output.rdf - direct output from the transform, including fake:marcfield properties which will be removed from the transform before release
