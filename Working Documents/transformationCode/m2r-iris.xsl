@@ -207,7 +207,7 @@
     <xsl:function name="uwf:conceptIRI">
         <xsl:param name="scheme"/>
         <xsl:param name="value"/>
-        <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:stripAllPunctuation($scheme)), ' ', ''))||'/'||'concept#'||encode-for-uri(uwf:stripAllPunctuation($value))"/>
+        <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:stripAllPunctuation($scheme)), ' ', ''))||'/'||'con#'||encode-for-uri(uwf:stripAllPunctuation($value))"/>
     </xsl:function>
 
     <xsl:function name="uwf:subjectIRI">
