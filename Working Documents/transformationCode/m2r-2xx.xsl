@@ -260,6 +260,7 @@
     <!-- 257 - Country of Producing Entity -->
     <xsl:template match="marc:datafield[@tag = '257'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '257']" 
         mode="wor" expand-text="yes">
+        <xsl:param name="baseIRI"/>
         <xsl:call-template name="getmarc"/>
         <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
@@ -270,7 +271,7 @@
                         <xsl:choose>
                             <xsl:when test="$sub2">
                                 <!-- this is okay because it is only minted when there is a source, else there would be a problem with multiple IRIs coming from the same node -->
-                                <rdawo:P10316 rdf:resource="{uwf:placeIRI($suba, ., $sub2)}"/>
+                                <rdawo:P10316 rdf:resource="{uwf:placeIRI($baseIRI, $suba, ., $sub2)}"/>
                             </xsl:when>
                             <xsl:otherwise>
                                 <rdawd:P10316>
@@ -283,7 +284,7 @@
                 <xsl:otherwise>
                     <xsl:choose>
                         <xsl:when test="$sub2">
-                            <rdawo:P10316 rdf:resource="{uwf:placeIRI(., ., $sub2)}"/>
+                            <rdawo:P10316 rdf:resource="{uwf:placeIRI($baseIRI, ., ., $sub2)}"/>
                         </xsl:when>
                         <xsl:otherwise>
                             <rdawd:P10316>
@@ -356,6 +357,7 @@
     
     <xsl:template match="marc:datafield[@tag = '257'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '257']" 
         mode="pla" expand-text="yes">
+        <xsl:param name="baseIRI"/>
         <xsl:if test="marc:subfield[@code = '2']">
             <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
             <xsl:for-each select="marc:subfield[@code = 'a']">
@@ -363,16 +365,16 @@
                 <xsl:choose>
                     <xsl:when test="matches(., '\S+.*;.*\S+')">
                         <xsl:for-each select="tokenize(., ';')">
-                            <rdf:Description rdf:about="{uwf:placeIRI($suba, ., $sub2)}">
+                            <rdf:Description rdf:about="{uwf:placeIRI($baseIRI, $suba, ., $sub2)}">
                                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-                                <rdapo:P70019 rdf:resource="{uwf:nomenIRI($suba, 'pla/nom', ., $sub2)}"/>
+                                <rdapo:P70019 rdf:resource="{uwf:nomenIRI($baseIRI, $suba, 'plaNom', ., $sub2)}"/>
                             </rdf:Description>
                         </xsl:for-each>
                     </xsl:when>
                     <xsl:otherwise>
-                        <rdf:Description rdf:about="{uwf:placeIRI(., ., $sub2)}">
+                        <rdf:Description rdf:about="{uwf:placeIRI($baseIRI, ., ., $sub2)}">
                             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-                            <rdapo:P70019 rdf:resource="{uwf:nomenIRI(., 'pla/nom', ., $sub2)}"/>
+                            <rdapo:P70019 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'plaNom', ., $sub2)}"/>
                         </rdf:Description>
                     </xsl:otherwise>
                 </xsl:choose>
@@ -382,6 +384,7 @@
     
     <xsl:template match="marc:datafield[@tag = '257'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '257']" 
         mode="nom" expand-text="yes">
+        <xsl:param name="baseIRI"/>
         <xsl:if test="marc:subfield[@code = '2']">
             <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
             <xsl:for-each select="marc:subfield[@code = 'a']">
@@ -389,7 +392,7 @@
                 <xsl:choose>
                     <xsl:when test="matches(., '\S+.*;.*\S+')">
                         <xsl:for-each select="tokenize(., ';')">
-                            <rdf:Description rdf:about="{uwf:nomenIRI($suba, 'pla/nom', ., $sub2)}">
+                            <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, $suba, 'plaNom', ., $sub2)}">
                                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                                 <rdand:P80068>
                                     <xsl:value-of select="replace(., '\.$|;$', '') => normalize-space()"/>
@@ -399,7 +402,7 @@
                         </xsl:for-each>
                     </xsl:when>
                     <xsl:otherwise>
-                        <rdf:Description rdf:about="{uwf:nomenIRI(., 'pla/nom', ., $sub2)}">
+                        <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'plaNom', ., $sub2)}">
                             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                             <rdand:P80068>
                                 <xsl:value-of select="replace(., '\.$|;$', '') => normalize-space()"/>

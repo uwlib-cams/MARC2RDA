@@ -318,10 +318,10 @@
     </xsl:template>
     <xsl:template name="F526-xx-x" expand-text="yes">
         <xsl:param name="baseIRI"/>
-        <rdf:Description rdf:about="{uwf:metaWorIRI(.)}">
+        <rdf:Description rdf:about="{uwf:metaWorIRI($baseIRI, .)}">
             <!--Does not meet min description of a work; needs to be linked to a metadata exp/man-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-            <rdawd:P10002>{concat('MetaWor/', generate-id())}</rdawd:P10002>
+            <rdawd:P10002>{concat('metaWor#', generate-id())}</rdawd:P10002>
             <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
             <rdf:subject rdf:resource="{concat($baseIRI,'man')}"/>
             <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/m/datatype/P30137"/>
@@ -553,12 +553,12 @@
     <xsl:template name="F541-0x" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="genID"/>
-        <rdf:Description rdf:about="{uwf:metaWorIRI(.)}">
+        <rdf:Description rdf:about="{uwf:metaWorIRI($baseIRI, .)}">
             <!--Does not meet min description of a work; needs to be linked to a metadata exp/man-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-            <rdawd:P10002>{concat('MetaWor/', generate-id())}</rdawd:P10002>
+            <rdawd:P10002>{concat('metaWor#', generate-id())}</rdawd:P10002>
             <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-            <rdf:subject rdf:resource="{concat($baseIRI,'ite',$genID)}"/>
+            <rdf:subject rdf:resource="{concat($baseIRI,'ite#',$genID)}"/>
             <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40050"/>
             <rdf:object>
                 <xsl:call-template name="F541-xx-abcdefhno"/>
@@ -683,9 +683,9 @@
     
     <xsl:template name="F542-0x" expand-text="yes">
         <xsl:param name="baseIRI"/>
-        <rdf:Description rdf:about="{uwf:metaWorIRI(.)}">
+        <rdf:Description rdf:about="{uwf:metaWorIRI($baseIRI, .)}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-            <rdawd:P10002>{concat('MetaWor/', generate-id())}</rdawd:P10002>
+            <rdawd:P10002>{concat('metaWor#', generate-id())}</rdawd:P10002>
             <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
             <rdf:subject rdf:resource="{concat($baseIRI,'man')}"/>
             <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/m/datatype/p30137"/>
@@ -853,12 +853,12 @@
     <xsl:template name="F561-0x" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="genID"/>
-        <rdf:Description rdf:about="{uwf:metaWorIRI(.)}">
+        <rdf:Description rdf:about="{uwf:metaWorIRI($baseIRI, .)}">
             <!--Does not meet min description of a work; needs to be linked to a metadata exp/man-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-            <rdawd:P10002>{concat('MetaWor/', generate-id())}</rdawd:P10002>
+            <rdawd:P10002>{concat('metaWor#', generate-id())}</rdawd:P10002>
             <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-            <rdf:subject rdf:resource="{concat($baseIRI,'ite',$genID)}"/>
+            <rdf:subject rdf:resource="{concat($baseIRI,'ite#',$genID)}"/>
             <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40026"/>
             <rdf:object>
                 <xsl:call-template name="F561-xx-au"/>
@@ -1010,12 +1010,12 @@
     <xsl:template name="F583-1x-x" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="genID"/>
-        <rdf:Description rdf:about="{uwf:metaWorIRI(.)}">
+        <rdf:Description rdf:about="{uwf:metaWorIRI($baseIRI, .)}">
             <!--Does not meet min description of a work; needs to be linked to a metadata exp/man-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-            <rdawd:P10002>{concat('MetaWor/', generate-id())}</rdawd:P10002>
+            <rdawd:P10002>{concat('metaWor#', generate-id())}</rdawd:P10002>
             <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-            <rdf:subject rdf:resource="{concat($baseIRI,'ite',$genID)}"/>
+            <rdf:subject rdf:resource="{concat($baseIRI,'ite#',$genID)}"/>
             <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40028"/>
             <rdf:object>
                 <xsl:value-of select="."/>
@@ -1026,12 +1026,12 @@
     <xsl:template name="F583-0x" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:param name="genID"/>
-        <rdf:Description rdf:about="{uwf:metaWorIRI(.)}">
+        <rdf:Description rdf:about="{uwf:metaWorIRI($baseIRI, .)}">
             <!--Does not meet min description of a work; needs to be linked to a metadata exp/man-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-            <rdawd:P10002>{concat('MetaWor/', generate-id())}</rdawd:P10002>
+            <rdawd:P10002>{concat('metaWor#', generate-id())}</rdawd:P10002>
             <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-            <rdf:subject rdf:resource="{concat($baseIRI,'ite',$genID)}"/>
+            <rdf:subject rdf:resource="{concat($baseIRI,'ite#',$genID)}"/>
             <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40028"/>
             <rdf:object>
                 <xsl:call-template name="F583-xx-abcdefhijklnouxz23"/>

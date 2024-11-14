@@ -128,7 +128,9 @@
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
             <rdawo:P10078 rdf:resource="{concat($baseIRI,'exp')}"/>
             <rdawd:P10002>{concat(marc:controlfield[@tag='001'],'wor')}</rdawd:P10002>
-            <xsl:apply-templates select="*" mode="wor"/>
+            <xsl:apply-templates select="*" mode="wor">
+                <xsl:with-param name="baseIRI" select="$baseIRI"/>
+            </xsl:apply-templates>
             <!-- <xsl:call-template name="append-aggregates">
                 <xsl:with-param name="wemi" select="'wor'"/>
             </xsl:call-template> -->
@@ -143,7 +145,9 @@
             </xsl:if>
             <rdaeo:P20231 rdf:resource="{concat($baseIRI,'wor')}"/>
             <rdaed:P20002>{concat(marc:controlfield[@tag='001'],'exp')}</rdaed:P20002>
-            <xsl:apply-templates select="*" mode="exp"/>
+            <xsl:apply-templates select="*" mode="exp">
+                <xsl:with-param name="baseIRI" select="$baseIRI"/>
+            </xsl:apply-templates>
             <!-- <xsl:call-template name="append-aggregates">
                 <xsl:with-param name="wemi" select="'exp'"/>
             </xsl:call-template> -->
@@ -207,7 +211,7 @@
         <!-- *****ITEMS***** -->
         <xsl:apply-templates select="*" mode="ite">
             <xsl:with-param name="baseIRI" select="$baseIRI"/>
-            <xsl:with-param name="controlNumber" select="../marc:controlfield[@tag='001']"/>
+            <xsl:with-param name="controlNumber" select="marc:controlfield[@tag='001']"/>
         </xsl:apply-templates>
         
         <!-- *****NOMENS***** -->
@@ -226,10 +230,14 @@
         </xsl:apply-templates>
         
         <!-- *****RELATED WORKS***** -->
-        <xsl:apply-templates select="*" mode="relWor"/>
+        <xsl:apply-templates select="*" mode="relWor">
+            <xsl:with-param name="baseIRI" select="$baseIRI"/>
+        </xsl:apply-templates>
         
         <!-- *****CONCEPTS***** -->
-        <xsl:apply-templates select="*" mode="con"/>
+        <xsl:apply-templates select="*" mode="con">
+            <xsl:with-param name="baseIRI" select="$baseIRI"/>
+        </xsl:apply-templates>
 
         <!-- *****PLACES***** -->
         <xsl:apply-templates select="*" mode="pla">
@@ -237,7 +245,9 @@
         </xsl:apply-templates>
         
         <!-- *****TIMESPANS***** -->
-        <xsl:apply-templates select="*" mode="tim"/>
+        <xsl:apply-templates select="*" mode="tim">
+            <xsl:with-param name="baseIRI" select="$baseIRI"/>
+        </xsl:apply-templates>
         
     </xsl:template>
 </xsl:stylesheet>
