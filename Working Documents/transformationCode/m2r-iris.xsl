@@ -133,7 +133,7 @@
         <xsl:param name="source"/>
         <xsl:choose>
             <xsl:when test="$source != ''">
-                <xsl:value-of select="$BASE||'/'||encode-for-uri(translate(lower-case($source), ' ', ''))||$type||'#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($source), ' ', ''))||'/'||$type||'#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="$baseIRI||$type||'#'||generate-id($field)"/>
