@@ -380,6 +380,27 @@
         <xsl:call-template name="F347-concept"/>
     </xsl:template>
     
+<!-- 351 Organization and Arrangement of Materials--> 
+    <xsl:template match="marc:datafield[@tag = '351'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'],1,6) = '351']" mode="wor" expand-text="yes">
+        <rdaw:P10084><xsl:for-each select="marc:subfield[@code = 'c'] | marc:subfield[@code = 'a']| marc:subfield[@code = 'b']|marc:subfield[@code = '3']">       
+        <xsl:if test="@code = 'c'">
+            <xsl:text>Hierarchical level: {.}.</xsl:text>
+        </xsl:if>
+        <xsl:if test="@code = 'a'">
+            <xsl:text>Organization: {.}.</xsl:text>
+        </xsl:if>
+        <xsl:if test="@code = 'b'">
+            <xsl:text>Arrangement: {.}.</xsl:text>
+        </xsl:if>
+        <xsl:if test="@code = '3'">
+            <xsl:text>(Applies to: {.})</xsl:text>
+        </xsl:if>             
+        <xsl:if test="position() != last()">
+            <xsl:text>; </xsl:text>
+        </xsl:if>     
+        </xsl:for-each> </rdaw:P10084>
+    </xsl:template>
+    
 <!--    <xsl:template
         match="marc:datafield[@tag = '380'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '380']"
         mode="wor" expand-text="yes">

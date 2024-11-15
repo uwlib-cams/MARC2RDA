@@ -1042,7 +1042,7 @@
         </rdamd:P30137>
     </xsl:template>
     
-    <!-- 342 DC:In progress --> 
+    <!-- 342 --> 
     <xsl:template name="F342-xx-a" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <xsl:choose>
