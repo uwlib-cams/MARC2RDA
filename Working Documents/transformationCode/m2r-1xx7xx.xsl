@@ -215,11 +215,11 @@
                         <xsl:when test="@ind1 = '0' or @ind1 = '1' or @ind1 = '2'">
                             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
                             <xsl:choose>
-                                <!-- if there's a $2, a nomen is minted -->
-                                <xsl:when test="marc:subfield[@code = '2']">
+                                <!-- if there's a $2, a nomen is minted and it's an authorized access point-->
+                                <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Person') = 'True'">
                                     <rdaao:P50411 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', '', '')}"/>
                                 </xsl:when>
-                                <!-- else a nomen string is used directly -->
+                                <!-- else a nomen string is used directly as an access point -->
                                 <xsl:otherwise>
                                     <rdaad:P50377>
                                         <xsl:value-of select="uwf:agentAccessPoint(.)"/>
@@ -244,7 +244,7 @@
                             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10008"/>
                             <xsl:choose>
                                 <!-- if there's a $2, a nomen is minted -->
-                                <xsl:when test="marc:subfield[@code = '2']">
+                                <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Family') = 'True'">
                                     <rdaao:P50409 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', '', '')}"/>
                                 </xsl:when>
                                 <!-- else a nomen string is used directly -->
@@ -270,7 +270,7 @@
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
                     <xsl:choose>
                         <!-- if there's a $2, a nomen is minted -->
-                        <xsl:when test="marc:subfield[@code = '2']">
+                        <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Corporate Body') = 'True'">
                             <rdaao:P50407 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', '', '')}"/>
                         </xsl:when>
                         <!-- else a nomen string is used directly -->
@@ -291,6 +291,7 @@
                 </xsl:when>
                 <xsl:otherwise/>
             </xsl:choose>
+            <xsl:copy-of select="uwf:agentIdentifiers(.)"/>
             <!-- create inverse property from agent to WEMI entity -->
             <!--<xsl:choose>
                 <xsl:when
@@ -319,7 +320,22 @@
         | marc:datafield[@tag = '700'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '710'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '711'][not(marc:subfield[@code = 't'])] "
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
-        <xsl:if test="marc:subfield[@code = '2']">
+        <xsl:variable name="type">
+            <xsl:choose>
+                <xsl:when test="(@tag = '100' or @tag = '700')
+                    and @ind1 != '3'">
+                    <xsl:value-of select="'Person'"/>
+                </xsl:when>
+                <xsl:when test="(@tag = '100' or @tag = '700')
+                    and @ind1 = '3'">
+                    <xsl:value-of select="'Family'"/>
+                </xsl:when>
+                <xsl:when test="@tag = '110'or @tag = '710' or @tag = '111' or @tag = '711'">
+                    <xsl:value-of select="'Corporate Body'"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:if test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], $type) = 'True'">
             <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'ageNom', '', '')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
@@ -358,7 +374,7 @@
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
                 <rdawd:P10002>{concat(generate-id(), 'wor')}</rdawd:P10002>
                 <xsl:choose>
-                    <xsl:when test="marc:subfield[@code = '2']">
+                    <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Work') = 'True'">
                         <rdawo:P10331 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'worNom', '', '')}"/>
                     </xsl:when>
                     <xsl:otherwise>
@@ -397,55 +413,69 @@
         <xsl:if test="@ind2 != '2'">
             <rdf:Description rdf:about="{uwf:agentIRI($baseIRI, .)}">
                 <xsl:call-template name="getmarc"/>
+                <!-- create rdf:type and relationship to nomen or nomen string triples -->
                 <xsl:choose>
-                    <xsl:when test="@tag = '700' and @ind1 != '3'">
+                    <xsl:when test="@tag = '700'">
                         <xsl:choose>
-                            <!-- if there's a $2 a nomen is minted -->
-                            <xsl:when test="marc:subfield[@code = '2']">
-                                <rdaao:P50411 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', '', '')}"/>
-                            </xsl:when>
-                            <!-- else a nomen string is used directly -->
-                            <xsl:otherwise>
-                                <rdaad:P50377>
-                                    <xsl:value-of select="uwf:agentAccessPoint(.)"/>
-                                </rdaad:P50377>
-                                <xsl:if test="marc:subfield[@code = '6']">
-                                    <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
-                                    <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                            <xsl:when test="@ind1 = '0' or @ind1 = '1' or @ind1 = '2'">
+                                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+                                <xsl:choose>
+                                    <!-- if there's a $2, a nomen is minted and it's an authorized access point-->
+                                    <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Person') = 'True'">
+                                        <rdaao:P50411 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', '', '')}"/>
+                                    </xsl:when>
+                                    <!-- else a nomen string is used directly as an access point -->
+                                    <xsl:otherwise>
                                         <rdaad:P50377>
                                             <xsl:value-of select="uwf:agentAccessPoint(.)"/>
                                         </rdaad:P50377>
-                                    </xsl:for-each>
+                                        <xsl:if test="marc:subfield[@code = '6']">
+                                            <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                                            <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                                                <rdaad:P50377>
+                                                    <xsl:value-of select="uwf:agentAccessPoint(.)"/>
+                                                </rdaad:P50377>
+                                            </xsl:for-each>
+                                        </xsl:if>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                                <!-- If we minted the IRI - add additional details -->
+                                <xsl:if test="starts-with(uwf:agentIRI($baseIRI, .), $BASE)">
+                                    <xsl:call-template name="FX00-x1-d"/>
+                                    <xsl:call-template name="FX00-x1-q"/>
                                 </xsl:if>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:when>
-                    <xsl:when test="@tag = '700' and @ind1 = '3'">
-                        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10008"/>
-                        <xsl:choose>
-                            <xsl:when test="marc:subfield[@code = '2']">
-                                <rdaao:P50409 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', '', '')}"/>
                             </xsl:when>
-                            <!-- else a nomen string is used directly -->
-                            <xsl:otherwise>
-                                <rdaad:P50376>
-                                    <xsl:value-of select="uwf:agentAccessPoint(.)"/>
-                                </rdaad:P50376>
-                                <xsl:if test="marc:subfield[@code = '6']">
-                                    <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
-                                    <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                            <xsl:when test="@ind1 = '3'">
+                                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10008"/>
+                                <xsl:choose>
+                                    <!-- if there's a $2, a nomen is minted -->
+                                    <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Family') = 'True'">
+                                        <rdaao:P50409 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', '', '')}"/>
+                                    </xsl:when>
+                                    <!-- else a nomen string is used directly -->
+                                    <xsl:otherwise>
                                         <rdaad:P50376>
                                             <xsl:value-of select="uwf:agentAccessPoint(.)"/>
                                         </rdaad:P50376>
-                                    </xsl:for-each>
-                                </xsl:if>
-                            </xsl:otherwise>
+                                        <xsl:if test="marc:subfield[@code = '6']">
+                                            <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                                            <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                                                <rdaad:P50376>
+                                                    <xsl:value-of select="uwf:agentAccessPoint(.)"/>
+                                                </rdaad:P50376>
+                                            </xsl:for-each>
+                                        </xsl:if>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:when>
+                            <xsl:otherwise/>
                         </xsl:choose>
                     </xsl:when>
                     <xsl:when test="@tag = '710' or @tag = '711'">
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
                         <xsl:choose>
-                            <xsl:when test="marc:subfield[@code = '0'] or marc:subfield[@code = '1'] or marc:subfield[@code = '2']">
+                            <!-- if there's a $2, a nomen is minted -->
+                            <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Corporate Body') = 'True'">
                                 <rdaao:P50407 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', '', '')}"/>
                             </xsl:when>
                             <!-- else a nomen string is used directly -->
@@ -475,7 +505,7 @@
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:if test="@ind2 != '2'">
-            <xsl:if test="marc:subfield[@code = '2']">
+            <xsl:if test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Work') = 'True'">
                 <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'worNom', '', '')}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                     <rdand:P80068>
@@ -529,7 +559,7 @@
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
                 <rdawd:P10002>{concat(generate-id(), 'wor')}</rdawd:P10002>
                 <xsl:choose>
-                    <xsl:when test="marc:subfield[@code = '2']">
+                    <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Work') = 'True'">
                         <rdawo:P10331 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'worNom', '', '')}"/>
                     </xsl:when>
                     <xsl:otherwise>
@@ -555,7 +585,7 @@
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:if test="@ind2 != '2'">
-            <xsl:if test="marc:subfield[@code = '2']">
+            <xsl:if test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Work') = 'True'">
                 <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'worNom', '', '')}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                     <rdand:P80068>

@@ -35,6 +35,22 @@
         <xsl:variable name="ap">
             <xsl:value-of select="uwf:agentAccessPoint($field)"/>
         </xsl:variable>
+        <xsl:variable name="type">
+            <xsl:choose>
+                <xsl:when test="($field/@tag = '100' or $field/@tag = '600' or $field/@tag = '700' or $field = '800')
+                    and $field/@ind1 != '3'">
+                    <xsl:value-of select="'Person'"/>
+                </xsl:when>
+                <xsl:when test="($field/@tag = '100' or $field/@tag = '600' or $field/@tag = '700' or $field = '800')
+                    and $field/@ind1 = '3'">
+                    <xsl:value-of select="'Family'"/>
+                </xsl:when>
+                <xsl:when test="$field/@tag = '110' or $field/@tag = '610' or $field/@tag = '710' or $field = '810' or
+                    $field/@tag = '111' or $field/@tag = '611' or $field/@tag = '711' or $field = '811'">
+                    <xsl:value-of select="'Corporate Body'"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:variable>
         <xsl:choose>
             <!-- For a 1XX or 7XX, or 6XX with only name part subfields (and no $t) - 
                 If $1, return value of $1, otherwise construct an IRI based on the access point -->
@@ -42,12 +58,35 @@
                 or (starts-with($field/@tag, '6') and 
                 not($field/marc:subfield[@code = 'v' or @code = 'x' or @code = 'y' or @code = 'z'])))
                 and not($field/marc:subfield[@code = 't'])">
+                <xsl:variable name="sub1">
+                    <xsl:choose>
+                        <xsl:when test="count($field/marc:subfield[@code = '1']) gt 1">
+                            <xsl:value-of select="uwf:multiple1s($field, $type)[1]"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="$field/marc:subfield[@code = '1']"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:variable>
                 <xsl:choose>
-                    <xsl:when test="count($field/marc:subfield[@code = '1']) > 1">
-                        <xsl:value-of select="uwf:multiple1s($field)"/>
+                    <xsl:when test="uwf:IRILookup($sub1, $type) = 'True'">
+                        <xsl:value-of select="$sub1"/>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="$field/marc:subfield[@code = '1']"/>
+                        <xsl:choose>
+                            <!-- If it's a 6XX field and not ind2 = 4, we use the source and aap -->
+                            <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4')">
+                                <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||'age#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                            </xsl:when>
+                            <!-- same if it's not a 6XX field but there's a 2 -->
+                            <xsl:when test="not(starts-with($field/@tag, '6')) and $field/marc:subfield[@code = '2']">
+                                <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'age#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                            </xsl:when>
+                            <!-- otherwise it's an opaque IRI -->
+                            <xsl:otherwise>
+                                <xsl:value-of select="$baseIRI||'age#'||generate-id($field)"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
@@ -86,7 +125,7 @@
                 not($field/marc:subfield[@code = 'v' or @code = 'x' or @code = 'y' or @code = 'z'])))">
                 <xsl:choose>
                     <xsl:when test="count($field/marc:subfield[@code = '1']) > 1">
-                        <xsl:value-of select="uwf:multiple1s($field)"/>
+                        <xsl:value-of select="uwf:multiple1s($field, 'Work')[1]"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:value-of select="$field/marc:subfield[@code = '1']"/>
@@ -121,7 +160,12 @@
          In the future it will return the preferred $1 value -->
     <xsl:function name="uwf:multiple1s">
         <xsl:param name="field"/>
-        <xsl:value-of select="$field/marc:subfield[@code = '1'][1]"/>
+        <xsl:param name="type"/>
+        <xsl:for-each select="$field/marc:subfield[@code='1']">
+            <xsl:if test="uwf:IRILookup(., $type) = 'True'">
+                <xsl:copy-of select="."/>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:function>
     
     <!-- not done -->
@@ -150,7 +194,7 @@
                 not($field/marc:subfield[@code = 'v' or @code = 'x' or @code = 'y' or @code = 'z']))">
                 <xsl:choose>
                     <xsl:when test="count($field/marc:subfield[@code = '1']) > 1">
-                        <xsl:value-of select="uwf:multiple1s($field)"/>
+                        <xsl:value-of select="uwf:multiple1s($field, 'Timespan')[1]"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:value-of select="$field/marc:subfield[@code = '1']"/>
@@ -183,7 +227,7 @@
                 not($field/marc:subfield[@code = 'v' or @code = 'x' or @code = 'y' or @code = 'z']))">
                 <xsl:choose>
                     <xsl:when test="count($field/marc:subfield[@code = '1']) > 1">
-                        <xsl:value-of select="uwf:multiple1s($field)"/>
+                        <xsl:value-of select="uwf:multiple1s($field, 'Place')[1]"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:value-of select="$field/marc:subfield[@code = '1']"/>
@@ -219,7 +263,7 @@
             <xsl:when test="$field/marc:subfield[@code = '1']">
                 <xsl:choose>
                     <xsl:when test="count($field/marc:subfield[@code = '1']) > 1">
-                        <xsl:value-of select="uwf:multiple1s($field)"/>
+                        <xsl:value-of select="$field/marc:subfield[@code = '1'][1]"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:value-of select="$field/marc:subfield[@code = '1']"/>
@@ -255,6 +299,67 @@
             <xsl:otherwise>
                 <xsl:value-of select="uwf:conceptIRI($scheme, replace($value, '--', ''))"/>
             </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
+    <xsl:variable name="approvedSourcesDoc" select="document('lookup/approvedSources.xml')"/>
+    <xsl:key name="approvedKey" match="uwmisc:row" use="uwmisc:approved"/>
+    
+    <xsl:function name="uwf:IRILookup" expand-text="yes">
+        <xsl:param name="iri"/>
+        <xsl:param name="type"/>
+        <xsl:value-of select="if (some $value in $approvedSourcesDoc/uwmisc:root/uwmisc:row/key('approvedKey', $type)/uwmisc:baseIRI/@iri
+            satisfies (contains($iri, $value))) then 'True' else 'False'"/>
+    </xsl:function>
+    
+    <xsl:function name="uwf:agentIdentifiers">
+        <xsl:param name="field"/>
+        <xsl:choose>
+            <xsl:when test="($field/@tag = '100' or $field/@tag = '600' or $field/@tag = '700' or $field/@tag = '800')
+                and $field/@ind1 != '3'">
+                <xsl:for-each select="$field/marc:subfield[@code = '0']">
+                    <rdaad:P50094>
+                        <xsl:value-of select="."/>
+                    </rdaad:P50094>
+                </xsl:for-each>
+                <xsl:for-each select="$field/marc:subfield[@code = '1']">
+                    <xsl:if test="uwf:IRILookup(., 'Person') = 'False'">
+                        <rdaad:P50094>
+                            <xsl:value-of select="."/>
+                        </rdaad:P50094>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:when>
+            <xsl:when test="($field/@tag = '100' or $field/@tag = '600' or $field/@tag = '700' or $field/@tag = '800')
+                and $field/@ind1 = '3'">
+                <xsl:for-each select="$field/marc:subfield[@code = '0']">
+                    <rdaad:P50052>
+                        <xsl:value-of select="."/>
+                    </rdaad:P50052>
+                </xsl:for-each>
+                <xsl:for-each select="$field/marc:subfield[@code = '1']">
+                    <xsl:if test="uwf:IRILookup(., 'Family') = 'False'">
+                        <rdaad:P50052>
+                            <xsl:value-of select="."/>
+                        </rdaad:P50052>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:when>
+            <xsl:when test="$field/@tag = '110' or $field/@tag = '610' or $field/@tag = '710' or $field/@tag = '810'
+                or $field/@tag = '111' or $field/@tag = '611' or $field/@tag = '711' or $field/@tag = '811'">
+                <xsl:for-each select="$field/marc:subfield[@code = '0']">
+                    <rdaad:P50006>
+                        <xsl:value-of select="."/>
+                    </rdaad:P50006>
+                </xsl:for-each>
+                <xsl:for-each select="$field/marc:subfield[@code = '1']">
+                    <xsl:if test="uwf:IRILookup(., 'Corporate Body') = 'False'">
+                        <rdaad:P50006>
+                            <xsl:value-of select="."/>
+                        </rdaad:P50006>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:when>
         </xsl:choose>
     </xsl:function>
     

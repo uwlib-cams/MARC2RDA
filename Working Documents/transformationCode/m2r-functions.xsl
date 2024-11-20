@@ -113,8 +113,18 @@
     <xsl:variable name="locAccessRestrictionTermDoc" select="document('lookup/lc/accessrestrictionterm.rdf')"/>
     <xsl:variable name="locClassSchemesDoc" select="document('lookup/lc/classSchemes.rdf')"/>
     <xsl:variable name="locNameTitleSchemesDoc" select="document('lookup/lc/nameTitleSchemes.rdf')"/>
+    <xsl:variable name="approvedSourcesDoc" select="document('lookup/approvedSources.xml')"/>
     
     <xsl:key name="schemeKey" match="madsrdf:hasMADSSchemeMember" use="madsrdf:Authority/@rdf:about"/>
+    <xsl:key name="codeKey" match="uwmisc:row" use="uwmisc:marc024Code | uwmisc:marc3XXCode"/>
+    <xsl:key name="approvedKey" match="uwmisc:row" use="uwmisc:approved"/>
+    
+    <xsl:function name="uwf:s2EntityTest" expand-text="yes">
+        <xsl:param name="code2"/>
+        <xsl:param name="type"/>
+        <xsl:value-of select="if (some $approvedType in $approvedSourcesDoc/uwmisc:root/uwmisc:row/key('codeKey', $code2)/uwmisc:approved
+            satisfies ($type = $approvedType)) then 'True' else 'False'"/>
+    </xsl:function>
     
     <!-- uwf:s2Nomen returns the property "has scheme of nomen" with the appropriate IRI if it is found, otherwise it outputs a comment -->
     <xsl:function name="uwf:s2Nomen" expand-text="yes">

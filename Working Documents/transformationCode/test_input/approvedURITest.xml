@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">approvedURI-test1</marc:controlfield>
+        <!-- approved -->
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Deka, Bhabesh.</marc:subfield>
+            <marc:subfield code="e">editor</marc:subfield>
+            <marc:subfield code="0">(orcid)0000-0002-9679-6159</marc:subfield>
+            <marc:subfield code="1">https://orcid.org/0000-0002-9679-6159</marc:subfield>
+            <marc:subfield code="1">https://unapprovedIRI.com/1234</marc:subfield>
+            <marc:subfield code="4">edt</marc:subfield>
+            <marc:subfield code="4">http://id.loc.gov/vocabulary/relators/edt</marc:subfield>
+        </marc:datafield>
+        <!-- unapproved -->
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Nussbaum, Martha C.</marc:subfield>
+            <marc:subfield code="q">(Martha Craven),</marc:subfield>
+            <marc:subfield code="d">1947-</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PBJvxvGDXgCBVM3wfQ6mrv3</marc:subfield>
+        </marc:datafield>
+        <!-- approved -->
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="a">Universitas Sebelas Maret,</marc:subfield>
+            <marc:subfield code="e">issuing body</marc:subfield>
+            <marc:subfield code="1">http://isni.org/isni/0000000417635731</marc:subfield>
+        </marc:datafield>
+        <!-- unapproved -->
+        <marc:datafield tag="710" ind1="2" ind2=" "> 
+            <marc:subfield code="a">Derz͡havne upravlinni͡a spravamy (Kyïv, Ukraine).</marc:subfield>
+            <marc:subfield code="b">Naukovo-praktychnyĭ t͡sentr profilaktychnoï ta klinichnoï medyt͡syny,</marc:subfield>
+            <marc:subfield code="e">issuing body</marc:subfield>
+            <marc:subfield code="1">http://www.wikidata.org/entity/Q16708730</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>
