@@ -110,144 +110,154 @@
             <xsl:apply-templates select="marc:record"/>
         </rdf:RDF>
     </xsl:template>
-    
-    <!-- Set up the WEMI stack for the marc:record -->
-    <!-- an rdf:Description is created for the Work, Expression, and Manifestation 
-        and apply-templates is called with the correct mode 
-        to create the appropriate relationships within each rdf:Description element -->
  
     <xsl:template match="marc:record" expand-text="yes">
+        <!--<xsl:message>
+            <xsl:text>Processing record {marc:controlfield[@tag = '001']} ({position()}/{last()}).</xsl:text>
+        </xsl:message>-->
         
-        <!-- currently we are using the 001 control field to generate the baseIRI -->
-        <xsl:variable name="baseIRI" select="concat($BASE, marc:controlfield[@tag = '001'])"/>
-        
-        <xsl:variable name="isReproduction" select="uwf:checkReproductions(.)"/>
-        
-        <!-- *****WORKS***** -->
-        <rdf:Description rdf:about="{concat($baseIRI,'wor')}">
-            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-            <rdawo:P10078 rdf:resource="{concat($baseIRI,'exp')}"/>
-            <rdawd:P10002>{concat(marc:controlfield[@tag='001'],'wor')}</rdawd:P10002>
-            <xsl:apply-templates select="*" mode="wor">
-                <xsl:with-param name="baseIRI" select="$baseIRI"/>
-            </xsl:apply-templates>
-            <!-- <xsl:call-template name="append-aggregates">
-                <xsl:with-param name="wemi" select="'wor'"/>
-            </xsl:call-template> -->
-        </rdf:Description>
-        
-        <!-- *****EXPRESSIONS***** -->
-        <rdf:Description rdf:about="{concat($baseIRI,'exp')}">
-            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-            <rdaeo:P20059 rdf:resource="{concat($baseIRI,'man')}"/>
-            <xsl:if test="$isReproduction != ''">
-                <rdaeo:P20059 rdf:resource="{concat($baseIRI,'origMan')}"/>
-            </xsl:if>
-            <rdaeo:P20231 rdf:resource="{concat($baseIRI,'wor')}"/>
-            <rdaed:P20002>{concat(marc:controlfield[@tag='001'],'exp')}</rdaed:P20002>
-            <xsl:apply-templates select="*" mode="exp">
-                <xsl:with-param name="baseIRI" select="$baseIRI"/>
-            </xsl:apply-templates>
-            <!-- <xsl:call-template name="append-aggregates">
-                <xsl:with-param name="wemi" select="'exp'"/>
-            </xsl:call-template> -->
-        </rdf:Description>
-        
-        <!-- *****MANIFESTATIONS***** -->
-        <rdf:Description rdf:about="{concat($baseIRI,'man')}">
-            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-            <rdamo:P30139 rdf:resource="{concat($baseIRI,'exp')}"/>
-            <xsl:choose>
-                <xsl:when test="$isReproduction != ''">
-                    <xsl:variable name="formofitem">
-                        <xsl:choose>
-                            <xsl:when test="matches(substring(marc:leader, 7, 1), '[efgkor]')">
-                                <xsl:value-of select="substring(marc:controlfield[@tag='008'], 30, 1)"/>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:value-of select="substring(marc:controlfield[@tag='008'], 24, 1)"/>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:variable>
+        <!-- check whether record being processed is an aggregate-->
+        <xsl:variable name="isAggregate">
+             <xsl:value-of select="uwf:checkAggregates(.)"/>
+        </xsl:variable>
+        <xsl:choose>
+            <!-- if not an aggregate, proceed with transform -->
+            <xsl:when test="$isAggregate = false()">
+                <!-- currently we are using the 001 control field to generate the baseIRI -->
+                <xsl:variable name="baseIRI" select="concat($BASE, marc:controlfield[@tag = '001'])"/>
+                
+                <xsl:variable name="isReproduction" select="uwf:checkReproductions(.)"/>
+                
+                <!-- Set up the WEMI stack for the marc:record -->
+                <!-- an rdf:Description is created for the Work, Expression, and Manifestation 
+                and apply-templates is called with the correct mode 
+                to create the appropriate relationships within each rdf:Description element -->
+                
+                <!-- *****WORKS***** -->
+                <rdf:Description rdf:about="{concat($baseIRI,'wor')}">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+                    <rdawo:P10078 rdf:resource="{concat($baseIRI,'exp')}"/>
+                    <rdawd:P10002>{concat(marc:controlfield[@tag='001'],'wor')}</rdawd:P10002>
+                    <xsl:apply-templates select="*" mode="wor">
+                        <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                    </xsl:apply-templates>
+                </rdf:Description>
+                
+                <!-- *****EXPRESSIONS***** -->
+                <rdf:Description rdf:about="{concat($baseIRI,'exp')}">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+                    <rdaeo:P20059 rdf:resource="{concat($baseIRI,'man')}"/>
+                    <xsl:if test="$isReproduction != ''">
+                        <rdaeo:P20059 rdf:resource="{concat($baseIRI,'origMan')}"/>
+                    </xsl:if>
+                    <rdaeo:P20231 rdf:resource="{concat($baseIRI,'wor')}"/>
+                    <rdaed:P20002>{concat(marc:controlfield[@tag='001'],'exp')}</rdaed:P20002>
+                    <xsl:apply-templates select="*" mode="exp">
+                        <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                    </xsl:apply-templates>
+                </rdf:Description>
+                
+                <!-- *****MANIFESTATIONS***** -->
+                <rdf:Description rdf:about="{concat($baseIRI,'man')}">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+                    <rdamo:P30139 rdf:resource="{concat($baseIRI,'exp')}"/>
                     <xsl:choose>
-                        <xsl:when test="matches($formofitem, 'o')">
-                            <rdamo:P30136 rdf:resource="{concat($baseIRI,'origMan')}"/>
+                        <xsl:when test="$isReproduction != ''">
+                            <xsl:variable name="formofitem">
+                                <xsl:choose>
+                                    <xsl:when test="matches(substring(marc:leader, 7, 1), '[efgkor]')">
+                                        <xsl:value-of select="substring(marc:controlfield[@tag='008'], 30, 1)"/>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:value-of select="substring(marc:controlfield[@tag='008'], 24, 1)"/>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:variable>
+                            <xsl:choose>
+                                <xsl:when test="matches($formofitem, 'o')">
+                                    <rdamo:P30136 rdf:resource="{concat($baseIRI,'origMan')}"/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <rdamo:P30043 rdf:resource="{concat($baseIRI,'origMan')}"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                            <xsl:apply-templates select="*" mode="man">
+                                <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                                <xsl:with-param name="type" select="'reproduction'"/>
+                            </xsl:apply-templates>
                         </xsl:when>
                         <xsl:otherwise>
-                            <rdamo:P30043 rdf:resource="{concat($baseIRI,'origMan')}"/>
+                            <xsl:apply-templates select="*" mode="man">
+                                <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                            </xsl:apply-templates>
                         </xsl:otherwise>
                     </xsl:choose>
-                    <xsl:apply-templates select="*" mode="man">
-                        <xsl:with-param name="baseIRI" select="$baseIRI"/>
-                        <xsl:with-param name="type" select="'reproduction'"/>
-                    </xsl:apply-templates>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:apply-templates select="*" mode="man">
-                        <xsl:with-param name="baseIRI" select="$baseIRI"/>
-                    </xsl:apply-templates>
-                </xsl:otherwise>
-            </xsl:choose>
-            <!-- <xsl:call-template name="append-aggregates">
-                <xsl:with-param name="wemi" select="'man'"/>
-            </xsl:call-template> -->
-        </rdf:Description>
-        
-        <xsl:if test="$isReproduction != ''">
-            <rdf:Description rdf:about="{concat($baseIRI,'origMan')}">
-                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-                <rdamo:P30139 rdf:resource="{concat($baseIRI,'exp')}"/>
-                <xsl:apply-templates select="*" mode="origMan">
-                    <xsl:with-param name="baseIRI" select="$baseIRI"/>
-                    <xsl:with-param name="type" select="'origMan'"/>
-                </xsl:apply-templates>
-            </rdf:Description>
-        </xsl:if>
-        
-        <!-- Items, nomens, metadata works, and agents are generated as needed
+                </rdf:Description>
+                
+                <!-- mint an original maninfestation if reproduction conditions are met -->
+                <xsl:if test="$isReproduction != ''">
+                    <rdf:Description rdf:about="{concat($baseIRI,'origMan')}">
+                        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+                        <rdamo:P30139 rdf:resource="{concat($baseIRI,'exp')}"/>
+                        <xsl:apply-templates select="*" mode="origMan">
+                            <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                            <xsl:with-param name="type" select="'origMan'"/>
+                        </xsl:apply-templates>
+                    </rdf:Description>
+                </xsl:if>
+                
+                <!-- Items, nomens, metadata works, and agents are generated as needed
              so the rdf:Description elements are generated within the field-specific templates.
              How IRIs are minted vary, see documentation -->
-        
-        <!-- *****ITEMS***** -->
-        <xsl:apply-templates select="*" mode="ite">
-            <xsl:with-param name="baseIRI" select="$baseIRI"/>
-            <xsl:with-param name="controlNumber" select="marc:controlfield[@tag='001']"/>
-        </xsl:apply-templates>
-        
-        <!-- *****NOMENS***** -->
-        <xsl:apply-templates select="*" mode="nom">
-            <xsl:with-param name="baseIRI" select="$baseIRI"/>
-        </xsl:apply-templates>
-        
-        <!-- *****METADATA WORKS***** -->
-        <xsl:apply-templates select="*" mode="metaWor">
-            <xsl:with-param name="baseIRI" select="$baseIRI"/>
-        </xsl:apply-templates>
-        
-        <!-- *****RELATED AGENTS***** -->
-        <xsl:apply-templates select="*" mode="age">
-            <xsl:with-param name="baseIRI" select="$baseIRI"/>
-        </xsl:apply-templates>
-        
-        <!-- *****RELATED WORKS***** -->
-        <xsl:apply-templates select="*" mode="relWor">
-            <xsl:with-param name="baseIRI" select="$baseIRI"/>
-        </xsl:apply-templates>
-        
-        <!-- *****CONCEPTS***** -->
-        <xsl:apply-templates select="*" mode="con">
-            <xsl:with-param name="baseIRI" select="$baseIRI"/>
-        </xsl:apply-templates>
-
-        <!-- *****PLACES***** -->
-        <xsl:apply-templates select="*" mode="pla">
-            <xsl:with-param name="baseIRI" select="$baseIRI"/>
-        </xsl:apply-templates>
-        
-        <!-- *****TIMESPANS***** -->
-        <xsl:apply-templates select="*" mode="tim">
-            <xsl:with-param name="baseIRI" select="$baseIRI"/>
-        </xsl:apply-templates>
-        
+                
+                <!-- *****ITEMS***** -->
+                <xsl:apply-templates select="*" mode="ite">
+                    <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                    <xsl:with-param name="controlNumber" select="marc:controlfield[@tag='001']"/>
+                </xsl:apply-templates>
+                
+                <!-- *****NOMENS***** -->
+                <xsl:apply-templates select="*" mode="nom">
+                    <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                </xsl:apply-templates>
+                
+                <!-- *****METADATA WORKS***** -->
+                <xsl:apply-templates select="*" mode="metaWor">
+                    <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                </xsl:apply-templates>
+                
+                <!-- *****RELATED AGENTS***** -->
+                <xsl:apply-templates select="*" mode="age">
+                    <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                </xsl:apply-templates>
+                
+                <!-- *****RELATED WORKS***** -->
+                <xsl:apply-templates select="*" mode="relWor">
+                    <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                </xsl:apply-templates>
+                
+                <!-- *****CONCEPTS***** -->
+                <xsl:apply-templates select="*" mode="con">
+                    <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                </xsl:apply-templates>
+                
+                <!-- *****PLACES***** -->
+                <xsl:apply-templates select="*" mode="pla">
+                    <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                </xsl:apply-templates>
+                
+                <!-- *****TIMESPANS***** -->
+                <xsl:apply-templates select="*" mode="tim">
+                    <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                </xsl:apply-templates>
+            </xsl:when>
+            
+            <!-- output records that were identified as aggregates in message -->
+            <xsl:otherwise>
+                <xsl:message>
+                    <xsl:text>Record {marc:controlfield[@tag = '001']} ({position()}/{last()}) identified as aggregate and was not processed.</xsl:text>
+                </xsl:message>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 </xsl:stylesheet>
