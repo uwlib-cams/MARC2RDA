@@ -447,6 +447,11 @@
                 </xsl:if>
             </xsl:when>
             <xsl:when test="$char6 = 'm'">
+                <xsl:if test="matches($date1, '[\d]+[X]*') and matches($date2, '[\d]+[X]*')">
+                    <rdamd:P30278>
+                        <xsl:text>{$date1}/{$date2}</xsl:text>
+                    </rdamd:P30278>
+                </xsl:if>
                 <xsl:if test="not(matches($date1, '[\d]+[X]*')) and matches($date2, '[\d]+[X]*')">
                     <rdamd:P30278>
                         <xsl:text>/{$date2}</xsl:text>
