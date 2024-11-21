@@ -1,88 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99121217610001452wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/99121217610001452exp"/><!--rdawo:P10078 = has expression of work-->
       <rdawd:P10002>99121217610001452wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <fake:marcfield>F008 040428s2004    enk     c           eng  </fake:marcfield>
       <fake:marcfield>F043 ## $a e-uk-st</fake:marcfield>
       <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/e-uk-st"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F050 #4 $a PR2823 .A2 $b C6 2004</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcc/pr2823a2"/><!--rdaw:P10256 = has subject-->
-      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age/d22e95"/><!--rdawo:P10436 = has author person-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#pr2823a2"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/99121217610001452age#d22e95"/><!--rdawo:P10436 = has author person-->
       <fake:marcfield>F245 10 $a Macbeth / $c by William Shakespeare, retold by Anne Collins.</fake:marcfield>
       <rdawd:P10088>Macbeth</rdawd:P10088><!--rdawd:P10088 = has title of work-->
       <fake:marcfield>F650 #0 $a Readers.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/readers"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#readers"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #0 $a Historical drama.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/historicaldrama"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#historicaldrama"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #0 $a Regicides $z Scotland $v Drama.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/regicidesscotlanddrama"/><!--rdaw:P10256 = has subject-->
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/scotland"/><!--rdawo:P10321 = has subject place-->
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/drama"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#regicidesscotlanddrama"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#drama"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F650 #0 $a English language $v Textbooks for foreign speakers.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/englishlanguagetextbooksforforeignspeakers"/><!--rdaw:P10256 = has subject-->
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/textbooksforforeignspeakers"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#englishlanguagetextbooksforforeignspeakers"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#textbooksforforeignspeakers"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F650 #0 $a Readers for new literates.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/readersfornewliterates"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#readersfornewliterates"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #6 $a Anglais (Langue) $v Lectures et morceaux choisis.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/anglaislanguelecturesetmorceauxchoisis"/><!--rdaw:P10256 = has subject-->
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvm/lecturesetmorceauxchoisis"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#anglaislanguelecturesetmorceauxchoisis"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvm/con#lecturesetmorceauxchoisis"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F650 #6 $a Anglais (Langue) $v Manuels pour allophones.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/anglaislanguemanuelspourallophones"/><!--rdaw:P10256 = has subject-->
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvm/manuelspourallophones"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#anglaislanguemanuelspourallophones"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvm/con#manuelspourallophones"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F650 #6 $a Anglais (Langue) $v Lectures et morceaux choisis pour nouveaux alphabétisés.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/anglaislanguelecturesetmorceauxchoisispournouveauxalphabétisés"/><!--rdaw:P10256 = has subject-->
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvm/lecturesetmorceauxchoisispournouveauxalphabétisés"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#anglaislanguelecturesetmorceauxchoisispournouveauxalphabe%CC%81tise%CC%81s"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvm/con#lecturesetmorceauxchoisispournouveauxalphabe%CC%81tise%CC%81s"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F650 #7 $a Readers for new literates $2 fast</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/readersfornewliterates"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/fast/con#readersfornewliterates"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #7 $a English language $2 fast</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/englishlanguage"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/fast/con#englishlanguage"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #7 $a Historical drama $2 fast</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/historicaldrama"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/fast/con#historicaldrama"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #7 $a Readers $2 fast</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/readers"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/fast/con#readers"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #7 $a Regicides $2 fast</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/regicides"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/fast/con#regicides"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F651 #0 $a Scotland $x History $y To 1057 $v Drama.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/scotlandhistoryto1057drama"/><!--rdaw:P10256 = has subject-->
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/historyto1057"/><!--rdaw:P10256 = has subject-->
-      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/lcsh/to1057"/><!--rdawo:P10322 = has subject timespan-->
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/drama"/><!--rdaw:P10004 = has category of work-->
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/scotland"/><!--rdawo:P10321 = has subject place-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/lcsh/place#scotland"/><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#scotlandhistoryto1057drama"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#drama"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F651 #7 $a Scotland $2 fast $1 https://id.oclc.org/worldcat/entity/E39QbtfRx4M4xHbtFTRj7p6BmM</fake:marcfield>
       <rdawo:P10321 rdf:resource="https://id.oclc.org/worldcat/entity/E39QbtfRx4M4xHbtFTRj7p6BmM"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F655 #7 $a readers. $2 aat</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/aat/readers"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/aat/con#readers"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F655 #7 $a Textbooks $v for foreign speakers $2 fast</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/fast/textbooksforforeignspeakers"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/fast/con#textbooksforforeignspeakers"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F655 #7 $a Readers (Publications) $2 fast</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/fast/readerspublications"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/fast/con#readerspublications"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F655 #7 $a High interest-low vocabulary books $2 fast</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/fast/highinterestlowvocabularybooks"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/fast/con#highinterest-lowvocabularybooks"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F655 #7 $a Adaptations $2 fast</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/fast/adaptations"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/fast/con#adaptations"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F655 #7 $a Drama $2 fast</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/fast/drama"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/fast/con#drama"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F655 #7 $a History $2 fast</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/fast/history"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/fast/con#history"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F655 #7 $a Readers (Publications) $2 lcgft</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcgft/readerspublications"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#readerspublications"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F655 #7 $a High interest-low vocabulary books. $2 lcgft</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcgft/highinterestlowvocabularybooks"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#highinterest-lowvocabularybooks"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F655 #7 $a Adaptations. $2 lcgft</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcgft/adaptations"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#adaptations"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F655 #7 $a Lectures et morceaux choisis. $2 rvmgf</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvmgf/lecturesetmorceauxchoisis"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvmgf/con#lecturesetmorceauxchoisis"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F600 00 $a Macbeth, $c King of Scotland, $d active 11th century $v Drama.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/macbethkingofscotlandactive11thcenturydrama"/><!--rdaw:P10256 = has subject-->
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/drama"/><!--rdaw:P10004 = has category of work-->
-      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age/lcsh/macbethkingofscotlandactive11thcentury"/><!--rdawo:P10261 = has subject person-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#macbethkingofscotlandactive11thcenturydrama"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#drama"/><!--rdaw:P10004 = has category of work-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/99121217610001452age#d22e298"/><!--rdawo:P10261 = has subject person-->
       <fake:marcfield>F600 07 $a Macbeth, $c King of Scotland, $d active 11th century $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJjt66thpfCVgVbjFfgqcP</fake:marcfield>
-      <rdawo:P10261 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJjt66thpfCVgVbjFfgqcP"/><!--rdawo:P10261 = has subject person-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/99121217610001452age#d22e307"/><!--rdawo:P10261 = has subject person-->
       <fake:marcfield>F648 #7 $a To 1057 $2 fast</fake:marcfield>
-      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/fast/to1057"/><!--rdawo:P10322 = has subject timespan-->
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/fast/timespan#to1057"/><!--rdawo:P10322 = has subject timespan-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99121217610001452exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/99121217610001452man"/><!--rdaeo:P20059 = has manifestation of expression-->
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/99121217610001452wor"/><!--rdaeo:P20231 = has work expressed-->
       <rdaed:P20002>99121217610001452exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
       <fake:marcfield>F008 040428s2004    enk     c           eng  </fake:marcfield>
@@ -92,15 +91,16 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99121217610001452exp"/><!--rdamo:P30139 = has expression manifested-->
       <fake:marcfield>F008 040428s2004    enk     c           eng  </fake:marcfield>
+      <rdamd:P30011>2004</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/enk"/><!--rdamo:P30279 = has place of manifestation-->
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1028"/><!--rdam:P30001 = has carrier type-->
       <fake:marcfield>F020 ## $a 0582829992 $q (paperback)</fake:marcfield>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d22e11"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/99121217610001452nom#d22e11"/><!--rdamo:P30004 = has identifier for manifestation-->
       <fake:marcfield>F020 ## $a 9780582829992 $q (paperback)</fake:marcfield>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d22e16"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/99121217610001452nom#d22e16"/><!--rdamo:P30004 = has identifier for manifestation-->
       <fake:marcfield>F245 10 $a Macbeth / $c by William Shakespeare, retold by Anne Collins.</fake:marcfield>
       <rdamd:P30156>Macbeth</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30105>by William Shakespeare, retold by Anne Collins.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30105>by William Shakespeare, retold by Anne Collins</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
       <fake:marcfield>F264 #1 $a Essex : $b Pearson Education Ltd., $c [2004]</fake:marcfield>
       <rdamd:P30111>Essex : Pearson Education Ltd., [2004]</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
       <rdamd:P30088>Essex</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
@@ -119,279 +119,260 @@
       <rdamd:P30106>Penguin readers audio pack. Level 4</rdamd:P30106><!--rdamd:P30106 = has series statement-->
       <fake:marcfield>F500 ## $a "The text is read with a British English accent"--Container</fake:marcfield>
       <rdamd:P30137>"The text is read with a British English accent"--Container</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor/d22e324"/><!--rdamo:P30265 = has related work of manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/99121217610001452wor#d22e324"/><!--rdamo:P30265 = has related work of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d22e11">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99121217610001452nom#d22e11">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>0582829992</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
       <rdand:P80071>paperback</rdand:P80071><!--rdand:P80071 = has note on nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d22e16">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99121217610001452nom#d22e16">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>9780582829992</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
       <rdand:P80071>paperback</rdand:P80071><!--rdand:P80071 = has note on nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/scotland">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/plaNom#scotland">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Scotland</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/scotland">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Scotland</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/lcsh/to1057">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>To 1057</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d22e233">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/plaNom#scotland">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Scotland</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/lcsh/macbethkingofscotlandactive11thcentury">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/ageNom#macbethkingofscotlandactive11thcentury">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Macbeth, King of Scotland, active 11th century</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/nom/d22e307">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/ageNom#macbethkingofscotlandactive11thcentury">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Macbeth, King of Scotland, active 11th century</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/fast/to1057">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/timNom#to1057">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>To 1057</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e95">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99121217610001452age#d22e95">
       <fake:marcfield>F100 1# $a Collins, Anne, $e author</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Collins, Anne</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/lcsh/macbethkingofscotlandactive11thcentury">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99121217610001452age#d22e298">
       <fake:marcfield>F600 00 $a Macbeth, $c King of Scotland, $d active 11th century $v Drama.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/lcsh/macbethkingofscotlandactive11thcentury"/><!--rdaao:P50411 = has authorized access point for person-->
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/lcsh/ageNom#macbethkingofscotlandactive11thcentury"/><!--rdaao:P50411 = has authorized access point for person-->
    </rdf:Description>
-   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJjt66thpfCVgVbjFfgqcP">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99121217610001452age#d22e307">
       <fake:marcfield>F600 07 $a Macbeth, $c King of Scotland, $d active 11th century $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJjt66thpfCVgVbjFfgqcP</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/age/nom/d22e307"/><!--rdaao:P50411 = has authorized access point for person-->
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/fast/ageNom#macbethkingofscotlandactive11thcentury"/><!--rdaao:P50411 = has authorized access point for person-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e324">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99121217610001452age#d22e324">
       <fake:marcfield>F700 1# $i Adaptation of (work): $a Shakespeare, William, $d 1564-1616. $t Macbeth.</fake:marcfield>
-      <rdaad:P50377>Shakespeare, William, 1564-1616.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Shakespeare, William, 1564-1616</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50347>1564-1616.</rdaad:P50347><!--rdaad:P50347 = has related timespan of person-->
+      <rdaad:P50121>1564</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1616</rdaad:P50120><!--rdaad:P50120 = has date of death-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/d22e324">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99121217610001452wor#d22e324">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>d22e324wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawd:P10328>Shakespeare, William, 1564-1616. Macbeth.</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d22e324"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10328>Shakespeare, William, 1564-1616. Macbeth</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/99121217610001452age#d22e324"/><!--rdawo:P10312 = has related person of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/pr2823a2">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#pr2823a2">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">PR2823 .A2</skos:notation>
       <skos:altLabel>PR2823 .A2</skos:altLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/readers">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#readers">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Readers.</skos:prefLabel>
+      <skos:prefLabel>Readers</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/historicaldrama">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#historicaldrama">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Historical drama.</skos:prefLabel>
+      <skos:prefLabel>Historical drama</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/regicidesscotlanddrama">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#regicidesscotlanddrama">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Regicides -- Scotland -- Drama.</skos:prefLabel>
+      <skos:prefLabel>Regicides--Scotland--Drama</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/drama">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#drama">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Drama.</skos:prefLabel>
+      <skos:prefLabel>Drama</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/englishlanguagetextbooksforforeignspeakers">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#englishlanguagetextbooksforforeignspeakers">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>English language -- Textbooks for foreign speakers.</skos:prefLabel>
+      <skos:prefLabel>English language--Textbooks for foreign speakers</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/textbooksforforeignspeakers">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#textbooksforforeignspeakers">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Textbooks for foreign speakers.</skos:prefLabel>
+      <skos:prefLabel>Textbooks for foreign speakers</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/readersfornewliterates">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#readersfornewliterates">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Readers for new literates.</skos:prefLabel>
+      <skos:prefLabel>Readers for new literates</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/anglaislanguelecturesetmorceauxchoisis">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#anglaislanguelecturesetmorceauxchoisis">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Anglais (Langue) -- Lectures et morceaux choisis.</skos:prefLabel>
+      <skos:prefLabel>Anglais (Langue)--Lectures et morceaux choisis</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/lecturesetmorceauxchoisis">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#lecturesetmorceauxchoisis">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Lectures et morceaux choisis.</skos:prefLabel>
+      <skos:prefLabel>Lectures et morceaux choisis</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/anglaislanguemanuelspourallophones">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#anglaislanguemanuelspourallophones">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Anglais (Langue) -- Manuels pour allophones.</skos:prefLabel>
+      <skos:prefLabel>Anglais (Langue)--Manuels pour allophones</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/manuelspourallophones">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#manuelspourallophones">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Manuels pour allophones.</skos:prefLabel>
+      <skos:prefLabel>Manuels pour allophones</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/anglaislanguelecturesetmorceauxchoisispournouveauxalphabétisés">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#anglaislanguelecturesetmorceauxchoisispournouveauxalphabe%CC%81tise%CC%81s">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Anglais (Langue) -- Lectures et morceaux choisis pour nouveaux alphabétisés.</skos:prefLabel>
+      <skos:prefLabel>Anglais (Langue)--Lectures et morceaux choisis pour nouveaux alphabétisés</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/lecturesetmorceauxchoisispournouveauxalphabétisés">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#lecturesetmorceauxchoisispournouveauxalphabe%CC%81tise%CC%81s">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Lectures et morceaux choisis pour nouveaux alphabétisés.</skos:prefLabel>
+      <skos:prefLabel>Lectures et morceaux choisis pour nouveaux alphabétisés</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/readersfornewliterates">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#readersfornewliterates">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Readers for new literates</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/englishlanguage">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#englishlanguage">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>English language</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/historicaldrama">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#historicaldrama">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Historical drama</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/readers">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#readers">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Readers</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/regicides">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#regicides">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Regicides</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/scotlandhistoryto1057drama">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#scotlandhistoryto1057drama">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Scotland -- History -- To 1057 -- Drama.</skos:prefLabel>
+      <skos:prefLabel>Scotland--History--To 1057--Drama</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/historyto1057">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#drama">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>History -- To 1057</skos:prefLabel>
+      <skos:prefLabel>Drama</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/drama">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/aat/con#readers">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Drama.</skos:prefLabel>
-      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/aat/readers">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>readers.</skos:prefLabel>
+      <skos:prefLabel>readers</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/textbooksforforeignspeakers">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#textbooksforforeignspeakers">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Textbooks -- for foreign speakers</skos:prefLabel>
+      <skos:prefLabel>Textbooks--for foreign speakers</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/readerspublications">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#readerspublications">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Readers (Publications)</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/highinterestlowvocabularybooks">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#highinterest-lowvocabularybooks">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>High interest-low vocabulary books</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/adaptations">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#adaptations">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Adaptations</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/drama">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#drama">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Drama</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/history">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#history">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>History</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcgft/readerspublications">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#readerspublications">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Readers (Publications)</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcgft/highinterestlowvocabularybooks">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#highinterest-lowvocabularybooks">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>High interest-low vocabulary books.</skos:prefLabel>
+      <skos:prefLabel>High interest-low vocabulary books</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcgft/adaptations">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#adaptations">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Adaptations.</skos:prefLabel>
+      <skos:prefLabel>Adaptations</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvmgf/lecturesetmorceauxchoisis">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvmgf/con#lecturesetmorceauxchoisis">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Lectures et morceaux choisis.</skos:prefLabel>
+      <skos:prefLabel>Lectures et morceaux choisis</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/macbethkingofscotlandactive11thcenturydrama">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#macbethkingofscotlandactive11thcenturydrama">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Macbeth, -- King of Scotland, -- active 11th century -- Drama.</skos:prefLabel>
+      <skos:prefLabel>Macbeth, King of Scotland, active 11th century--Drama</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/drama">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#drama">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Drama.</skos:prefLabel>
+      <skos:prefLabel>Drama</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/to1057">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#to1057">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>To 1057</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/scotland">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/place#scotland">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/scotland"/><!--rdapo:P70045 = has authorized access point for place-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/scotland">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/scotland"/><!--rdapo:P70045 = has authorized access point for place-->
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/lcsh/plaNom#scotland"/><!--rdapo:P70045 = has authorized access point for place-->
    </rdf:Description>
    <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39QbtfRx4M4xHbtFTRj7p6BmM">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/fast/scotland"/><!--rdapo:P70045 = has authorized access point for place-->
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/fast/plaNom#scotland"/><!--rdapo:P70045 = has authorized access point for place-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/lcsh/to1057">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/timespan#to1057">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
-      <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/tim/nom/lcsh/to1057"/><!--rdato:P70047 = has authorized access point for timespan-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/fast/to1057">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
-      <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/tim/nom/fast/to1057"/><!--rdato:P70047 = has authorized access point for timespan-->
+      <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/fast/timNom#to1057"/><!--rdato:P70047 = has authorized access point for timespan-->
    </rdf:Description>
 </rdf:RDF>

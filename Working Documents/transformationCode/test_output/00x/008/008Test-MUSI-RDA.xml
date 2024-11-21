@@ -1,39 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99127343280001452wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/99127343280001452exp"/><!--rdawo:P10078 = has expression of work-->
       <rdawd:P10002>99127343280001452wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <fake:marcfield>F006 m        d        </fake:marcfield>
       <fake:marcfield>F008 060526s2006    enkppnn  fik      a und d</fake:marcfield>
       <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.8rpj-ek77#pp"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F043 ## $a e-uk---</fake:marcfield>
       <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/e-uk"/><!--rdawo:P10321 = has subject place-->
       <fake:marcfield>F050 00 $a SDB 40794</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcc/sdb40794"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#sdb40794"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F245 04 $a The Rough guide to Bhangra dance.</fake:marcfield>
-      <rdawd:P10088>The Rough guide to Bhangra dance.</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawd:P10088>The Rough guide to Bhangra dance</rdawd:P10088><!--rdawd:P10088 = has title of work-->
       <fake:marcfield>F650 #0 $a Bhangra (Music)</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/bhangramusic"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#bhangramusic"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #0 $a East Indians $z Great Britain $v Music.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/eastindiansgreatbritainmusic"/><!--rdaw:P10256 = has subject-->
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/greatbritain"/><!--rdawo:P10321 = has subject place-->
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/music"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#eastindiansgreatbritainmusic"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#music"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F650 #0 $a Popular music $z Great Britain $y 2001-2010.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/popularmusicgreatbritain20012010"/><!--rdaw:P10256 = has subject-->
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/greatbritain20012010"/><!--rdaw:P10256 = has subject-->
-      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/lcsh/20012010"/><!--rdawo:P10322 = has subject timespan-->
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/lcsh/greatbritain"/><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#popularmusicgreatbritain2001-2010"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #0 $a World music.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/worldmusic"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#worldmusic"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #6 $a Indiens (Habitants de l'Inde) $z Grande-Bretagne $v Musique.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/indienshabitantsdelindegrandebretagnemusique"/><!--rdaw:P10256 = has subject-->
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/rvm/grandebretagne"/><!--rdawo:P10321 = has subject place-->
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvm/musique"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#indienshabitantsdel%27indegrande-bretagnemusique"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvm/con#musique"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F650 #6 $a Musique populaire $z Grande-Bretagne $y 2001-2010.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/musiquepopulairegrandebretagne20012010"/><!--rdaw:P10256 = has subject-->
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/grandebretagne20012010"/><!--rdaw:P10256 = has subject-->
-      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/rvm/20012010"/><!--rdawo:P10322 = has subject timespan-->
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/rvm/grandebretagne"/><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#musiquepopulairegrande-bretagne2001-2010"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #6 $a Musiques du monde.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/musiquesdumonde"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#musiquesdumonde"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #7 $a Bhangra (Music) $2 fast $0 (OCoLC)fst00831115</fake:marcfield>
       <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00831115"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #7 $a East Indians. $2 fast $0 (OCoLC)fst00901060</fake:marcfield>
@@ -49,16 +43,18 @@
       <fake:marcfield>F655 #7 $a Music. $2 fast $0 (OCoLC)fst01423855</fake:marcfield>
       <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01423855"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F655 #7 $a Bhangra (Music) $2 lcgft</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcgft/bhangramusic"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#bhangramusic"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F655 #7 $a Bhangra. $2 rvmgf</fake:marcfield>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvmgf/bhangra"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvmgf/con#bhangra"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F648 #7 $a 2001 - 2010 $2 fast</fake:marcfield>
-      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/fast/20012010"/><!--rdawo:P10322 = has subject timespan-->
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/fast/timespan#2001-2010"/><!--rdawo:P10322 = has subject timespan-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99127343280001452exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/99127343280001452man"/><!--rdaeo:P20059 = has manifestation of expression-->
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/99127343280001452wor"/><!--rdaeo:P20231 = has work expressed-->
       <rdaed:P20002>99127343280001452exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+      <fake:marcfield>F006 m        d        </fake:marcfield>
       <fake:marcfield>F008 060526s2006    enkppnn  fik      a und d</fake:marcfield>
       <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/und"/><!--rdae:P20006 = has language of expression-->
       <rdae:P20331 rdf:resource="https://doi.org/10.6069/uwlswd.23tq-5e25#pound"/><!--rdae:P20331 = has category of expression-->
@@ -70,23 +66,27 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/99127343280001452man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99127343280001452exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F006 m        d        </fake:marcfield>
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.25z4-e963#m"/><!--rdam:P30335 = has category of manifestation-->
+      <rdam:P30018 rdf:resource="https://doi.org/10.6069/uwlswd.mkjn-bp10#d"/><!--rdam:P30018 = has file type-->
       <fake:marcfield>F008 060526s2006    enkppnn  fik      a und d</fake:marcfield>
+      <rdamd:P30011>2006</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/enk"/><!--rdamo:P30279 = has place of manifestation-->
       <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.nt0v-d633#f"/><!--rdam:P30455 = has supplementary content-->
       <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.nt0v-d633#i"/><!--rdam:P30455 = has supplementary content-->
       <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.nt0v-d633#k"/><!--rdam:P30455 = has supplementary content-->
       <fake:marcfield>F020 ## $a 1843537311</fake:marcfield>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d22e48"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/99127343280001452nom#d22e48"/><!--rdamo:P30004 = has identifier for manifestation-->
       <fake:marcfield>F020 ## $a 9781843537311</fake:marcfield>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d22e51"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/99127343280001452nom#d22e51"/><!--rdamo:P30004 = has identifier for manifestation-->
       <fake:marcfield>F024 1# $a 605633115420</fake:marcfield>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d22e54"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/99127343280001452nom#d22e54"/><!--rdamo:P30004 = has identifier for manifestation-->
       <fake:marcfield>F024 3# $a 9781843537311</fake:marcfield>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d22e58"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/99127343280001452nom#d22e58"/><!--rdamo:P30004 = has identifier for manifestation-->
       <fake:marcfield>F028 02 $a RGNET1154CD $b World Music Network</fake:marcfield>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d22e60"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/99127343280001452nom#d22e60"/><!--rdamo:P30004 = has identifier for manifestation-->
       <fake:marcfield>F245 04 $a The Rough guide to Bhangra dance.</fake:marcfield>
-      <rdamd:P30156>The Rough guide to Bhangra dance.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30156>The Rough guide to Bhangra dance</rdamd:P30156><!--rdamd:P30156 = has title proper-->
       <fake:marcfield>F337 ## $a audio $b s $2 rdamedia</fake:marcfield>
       <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/s"/><!--rdam:P30002 = has media type-->
       <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/s"/><!--rdam:P30002 = has media type-->
@@ -104,286 +104,226 @@
       <rdamd:P30137>In Panjabi.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <fake:marcfield>F505 00 $t Rail gaddi $r (Four of a Kind) -- $t Dil tera $r (Soni Pabla) -- $t Captain bhangre da $r (Daljit Mattu &amp; Ravi Bal) -- $t Dil nai lagda $r (Aman Hayer) -- $t Gal sun $r (Partners in Rhyme) -- $t Sajna $r (Veronica) -- $t Chal hun (Get up fix) $r (Malkit Singh) -- $t Billo raneeay $r (Binder) -- $t Akheer $r (Juggy D) -- $t Paisa $r (Manak-e) -- $t Mehndi/ $t Madhorama pencha $r (Madan Bata Sindhu) -- $t Lakh hilda $r (Indy Sagu with Manak-e) -- $t Taweet $r (Daljit Mattu) -- $t Apna sangeet $r (Taz) -- $t Nain preeto de $r (Panjabi by Nature).</fake:marcfield>
       <rdamd:P30137>Contents: Rail gaddi (Four of a Kind) -- Dil tera (Soni Pabla) -- Captain bhangre da (Daljit Mattu &amp; Ravi Bal) -- Dil nai lagda (Aman Hayer) -- Gal sun (Partners in Rhyme) -- Sajna (Veronica) -- Chal hun (Get up fix) (Malkit Singh) -- Billo raneeay (Binder) -- Akheer (Juggy D) -- Paisa (Manak-e) -- Mehndi/ Madhorama pencha (Madan Bata Sindhu) -- Lakh hilda (Indy Sagu with Manak-e) -- Taweet (Daljit Mattu) -- Apna sangeet (Taz) -- Nain preeto de (Panjabi by Nature).</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <fake:marcfield>F508 ## $a Compiled by D.J. Ritu.</fake:marcfield>
       <rdamd:P30137>Credits: Compiled by D.J. Ritu.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <!--Default relationship property used for http://marc2rda.edu/fake/age/d22e417-->
-      <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/age/d22e417"/><!--rdamo:P30270 = has related corporate body of manifestation-->
-      <!--Default relationship property used for http://marc2rda.edu/fake/age/d22e420-->
-      <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/age/d22e420"/><!--rdamo:P30270 = has related corporate body of manifestation-->
-      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor/d22e428"/><!--rdamo:P30265 = has related work of manifestation-->
-      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor/d22e433"/><!--rdamo:P30265 = has related work of manifestation-->
-      <!--Default relationship property used for http://marc2rda.edu/fake/age/d22e447-->
-      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age/d22e447"/><!--rdamo:P30268 = has related person of manifestation-->
-      <!--Default relationship property used for http://marc2rda.edu/fake/age/d22e450-->
-      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age/d22e450"/><!--rdamo:P30268 = has related person of manifestation-->
-      <!--Default relationship property used for http://marc2rda.edu/fake/age/d22e454-->
-      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age/d22e454"/><!--rdamo:P30268 = has related person of manifestation-->
-      <!--Default relationship property used for http://marc2rda.edu/fake/age/d22e457-->
-      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age/d22e457"/><!--rdamo:P30268 = has related person of manifestation-->
-      <!--Default relationship property used for http://marc2rda.edu/fake/age/d22e460-->
-      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age/d22e460"/><!--rdamo:P30268 = has related person of manifestation-->
-      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor/d22e468"/><!--rdamo:P30265 = has related work of manifestation-->
-      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor/d22e485"/><!--rdamo:P30265 = has related work of manifestation-->
-      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor/d22e500"/><!--rdamo:P30265 = has related work of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/99127343280001452age#d22e417-->
+      <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/99127343280001452age#d22e417"/><!--rdamo:P30270 = has related corporate body of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/99127343280001452age#d22e420-->
+      <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/99127343280001452age#d22e420"/><!--rdamo:P30270 = has related corporate body of manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/99127343280001452wor#d22e428"/><!--rdamo:P30265 = has related work of manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/99127343280001452wor#d22e433"/><!--rdamo:P30265 = has related work of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/99127343280001452age#d22e447-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/99127343280001452age#d22e447"/><!--rdamo:P30268 = has related person of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/99127343280001452age#d22e450-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/99127343280001452age#d22e450"/><!--rdamo:P30268 = has related person of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/99127343280001452age#d22e454-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/99127343280001452age#d22e454"/><!--rdamo:P30268 = has related person of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/99127343280001452age#d22e457-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/99127343280001452age#d22e457"/><!--rdamo:P30268 = has related person of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/99127343280001452age#d22e460-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/99127343280001452age#d22e460"/><!--rdamo:P30268 = has related person of manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/99127343280001452wor#d22e468"/><!--rdamo:P30265 = has related work of manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/99127343280001452wor#d22e485"/><!--rdamo:P30265 = has related work of manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/99127343280001452wor#d22e500"/><!--rdamo:P30265 = has related work of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d22e48">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99127343280001452nom#d22e48">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>1843537311</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d22e51">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99127343280001452nom#d22e51">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>9781843537311</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d22e54">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99127343280001452nom#d22e54">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>605633115420</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/identifiers/upc"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d22e58">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99127343280001452nom#d22e58">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>9781843537311</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/identifiers/ean"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d22e60">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99127343280001452nom#d22e60">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>RGNET1154CD</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdand:P80073>World Music Network</rdand:P80073><!--rdand:P80073 = is assigned by agent-->
       <rdand:P80078>Issue number</rdand:P80078><!--rdand:P80078 = has category of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/greatbritain">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/plaNom#greatbritain">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Great Britain</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/lcsh/20012010">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>2001-2010.</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/lcsh/greatbritain">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Great Britain</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/grandebretagne">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Grande-Bretagne</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/rvm/20012010">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>2001-2010.</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/grandebretagne">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Grande-Bretagne</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/d22e378">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Great Britain.</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/fast/20012010">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/timNom#2001-2010">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>2001 - 2010</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e417">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99127343280001452age#d22e417">
       <fake:marcfield>F710 2# $a Binder (Musical group)</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
       <rdaad:P50375>Binder (Musical group)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e420">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99127343280001452age#d22e420">
       <fake:marcfield>F710 2# $a Madan Bata Sindhu (Musical group)</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
       <rdaad:P50375>Madan Bata Sindhu (Musical group)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e428">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99127343280001452age#d22e428">
       <fake:marcfield>F710 2# $a Partners in Rhyme (Musical group). $t Gal sun.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375>Partners in Rhyme (Musical group).</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50375>Partners in Rhyme (Musical group)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e433">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99127343280001452age#d22e433">
       <fake:marcfield>F710 2# $a Panjabi By Nature (Musical group). $t Nain preeto de.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375>Panjabi By Nature (Musical group).</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50375>Panjabi By Nature (Musical group)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e447">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99127343280001452age#d22e447">
       <fake:marcfield>F700 1# $a Pabla, Soni.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Pabla, Soni.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50377>Pabla, Soni</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e450">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99127343280001452age#d22e450">
       <fake:marcfield>F700 1# $a Mattu, Daljit.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Mattu, Daljit.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50377>Mattu, Daljit</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e454">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99127343280001452age#d22e454">
       <fake:marcfield>F700 1# $a Rich, Rishi.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Rich, Rishi.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50377>Rich, Rishi</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e457">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99127343280001452age#d22e457">
       <fake:marcfield>F700 0# $a Manak-e.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Manak-e.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50377>Manak-e</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e460">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99127343280001452age#d22e460">
       <fake:marcfield>F700 1# $a Taz.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Taz.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50377>Taz</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e468">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99127343280001452age#d22e468">
       <fake:marcfield>F700 1# $a Bal, Ravi. $t Captain bhangre da.</fake:marcfield>
-      <rdaad:P50377>Bal, Ravi.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Bal, Ravi</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e485">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99127343280001452age#d22e485">
       <fake:marcfield>F700 1# $a Singh, Malkit. $t Chal hun.</fake:marcfield>
-      <rdaad:P50377>Singh, Malkit.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Singh, Malkit</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d22e500">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99127343280001452age#d22e500">
       <fake:marcfield>F700 1# $a Sagu, Indy. $t Lakh hilda.</fake:marcfield>
-      <rdaad:P50377>Sagu, Indy.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Sagu, Indy</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/d22e428">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99127343280001452wor#d22e428">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>d22e428wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawd:P10328>Partners in Rhyme (Musical group). Gal sun.</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age/d22e428"/><!--rdawo:P10314 = has related corporate body of work-->
+      <rdawd:P10328>Partners in Rhyme (Musical group). Gal sun</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/99127343280001452age#d22e428"/><!--rdawo:P10314 = has related corporate body of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/d22e433">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99127343280001452wor#d22e433">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>d22e433wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawd:P10328>Panjabi By Nature (Musical group). Nain preeto de.</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age/d22e433"/><!--rdawo:P10314 = has related corporate body of work-->
+      <rdawd:P10328>Panjabi By Nature (Musical group). Nain preeto de</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/99127343280001452age#d22e433"/><!--rdawo:P10314 = has related corporate body of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/d22e468">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99127343280001452wor#d22e468">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>d22e468wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawd:P10328>Bal, Ravi. Captain bhangre da.</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d22e468"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10328>Bal, Ravi. Captain bhangre da</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/99127343280001452age#d22e468"/><!--rdawo:P10312 = has related person of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/d22e485">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99127343280001452wor#d22e485">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>d22e485wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawd:P10328>Singh, Malkit. Chal hun.</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d22e485"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10328>Singh, Malkit. Chal hun</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/99127343280001452age#d22e485"/><!--rdawo:P10312 = has related person of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/d22e500">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99127343280001452wor#d22e500">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>d22e500wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawd:P10328>Sagu, Indy. Lakh hilda.</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d22e500"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10328>Sagu, Indy. Lakh hilda</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/99127343280001452age#d22e500"/><!--rdawo:P10312 = has related person of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcc/sdb40794">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#sdb40794">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">SDB 40794</skos:notation>
       <skos:altLabel>SDB 40794</skos:altLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/bhangramusic">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#bhangramusic">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Bhangra (Music)</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/eastindiansgreatbritainmusic">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#eastindiansgreatbritainmusic">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>East Indians -- Great Britain -- Music.</skos:prefLabel>
+      <skos:prefLabel>East Indians--Great Britain--Music</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/music">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#music">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Music.</skos:prefLabel>
+      <skos:prefLabel>Music</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/popularmusicgreatbritain20012010">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#popularmusicgreatbritain2001-2010">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Popular music -- Great Britain -- 2001-2010.</skos:prefLabel>
+      <skos:prefLabel>Popular music--Great Britain--2001-2010</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/greatbritain20012010">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#worldmusic">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Great Britain -- 2001-2010.</skos:prefLabel>
+      <skos:prefLabel>World music</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/worldmusic">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#indienshabitantsdel%27indegrande-bretagnemusique">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>World music.</skos:prefLabel>
-      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/indienshabitantsdelindegrandebretagnemusique">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Indiens (Habitants de l'Inde) -- Grande-Bretagne -- Musique.</skos:prefLabel>
+      <skos:prefLabel>Indiens (Habitants de l'Inde)--Grande-Bretagne--Musique</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/musique">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#musique">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Musique.</skos:prefLabel>
+      <skos:prefLabel>Musique</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/musiquepopulairegrandebretagne20012010">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#musiquepopulairegrande-bretagne2001-2010">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Musique populaire -- Grande-Bretagne -- 2001-2010.</skos:prefLabel>
+      <skos:prefLabel>Musique populaire--Grande-Bretagne--2001-2010</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/grandebretagne20012010">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#musiquesdumonde">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Grande-Bretagne -- 2001-2010.</skos:prefLabel>
+      <skos:prefLabel>Musiques du monde</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/musiquesdumonde">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Musiques du monde.</skos:prefLabel>
-      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcgft/bhangramusic">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#bhangramusic">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Bhangra (Music)</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvmgf/bhangra">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvmgf/con#bhangra">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Bhangra.</skos:prefLabel>
+      <skos:prefLabel>Bhangra</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/20012010">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#2001-2010">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>2001 - 2010</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/greatbritain">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/greatbritain"/><!--rdapo:P70045 = has authorized access point for place-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/lcsh/greatbritain">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/lcsh/greatbritain"/><!--rdapo:P70045 = has authorized access point for place-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/rvm/grandebretagne">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/grandebretagne"/><!--rdapo:P70045 = has authorized access point for place-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/rvm/grandebretagne">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/grandebretagne"/><!--rdapo:P70045 = has authorized access point for place-->
-   </rdf:Description>
    <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJdmp7p3cx8hpmJ8HvmTpP">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/fast/greatbritain"/><!--rdapo:P70045 = has authorized access point for place-->
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/fast/plaNom#greatbritain"/><!--rdapo:P70045 = has authorized access point for place-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/lcsh/20012010">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/timespan#2001-2010">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
-      <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/tim/nom/lcsh/20012010"/><!--rdato:P70047 = has authorized access point for timespan-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/rvm/20012010">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
-      <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/tim/nom/rvm/20012010"/><!--rdato:P70047 = has authorized access point for timespan-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/fast/20012010">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
-      <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/tim/nom/fast/20012010"/><!--rdato:P70047 = has authorized access point for timespan-->
+      <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/fast/timNom#2001-2010"/><!--rdato:P70047 = has authorized access point for timespan-->
    </rdf:Description>
 </rdf:RDF>
