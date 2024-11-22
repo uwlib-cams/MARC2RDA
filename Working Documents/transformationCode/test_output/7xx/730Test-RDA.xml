@@ -37,6 +37,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>d22e13wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <rdawo:P10328 rdf:resource="http://marc2rda.edu/fake/relator-test1worNom#d22e13"/><!--rdawo:P10328 = has access point for work-->
+      <rdawd:P10002>http://fakeiri.edu/12345</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1wor#d22e20">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
