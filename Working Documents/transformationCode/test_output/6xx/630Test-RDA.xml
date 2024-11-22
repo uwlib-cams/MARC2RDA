@@ -29,52 +29,93 @@
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwf="http://universityOfWashington/functions"
          xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
-   <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1wor">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/6xx-test1exp"/>
       <rdawd:P10002>6xx-test1wor</rdawd:P10002>
+      <fake:marcfield>F630 00 $a Bible. $p Old Testament. $l Greek $x Versions $x Septuagint.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#bibleoldtestamentgreekversionsseptuagint"/>
+      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/6xx-test1wor#d22e6"/>
+      <fake:marcfield>F630 07 $a Bible $p Philemonbrief $2 gnd $1 http://fakeiri.com/1234</fake:marcfield>
+      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/6xx-test1wor#d22e17"/>
+      <fake:marcfield>F630 00 $a Old town road (Song)</fake:marcfield>
+      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/6xx-test1wor#d22e26"/>
+      <fake:marcfield>F630 07 $a Health Information Technology for Economic and Clinical Health Act (United States) $2 fast $0 (OCoLC)fst01937910</fake:marcfield>
+      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/6xx-test1wor#d22e29"/>
+      <fake:marcfield>F630 07 $a Bible $x Criticism, interpretation, etc. $x History $y 20th century $2 nli</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/nli/con#biblecriticisminterpretationetchistory20thcentury"/>
+      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/6xx-test1wor#d22e36"/>
       <fake:marcfield>F630 06 $a Bible $x Lecture $z Angleterre $x Histoire.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/biblelectureangleterrehistoire"/>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/lectureangleterrehistoire"/>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/rvm/angleterre"/>
-      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/wor/rvm/bible"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#biblelectureangleterrehistoire"/>
+      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/6xx-test1wor#d22e48"/>
+      <fake:marcfield>F630 07 $a All in love is fair. $1 https://musicbrainz.org/work/3f9ae128-bbec-3804-a477-83348f91dbc8 $2 musicb</fake:marcfield>
+      <rdawo:P10257 rdf:resource="https://musicbrainz.org/work/3f9ae128-bbec-3804-a477-83348f91dbc8"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1exp">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/6xx-test1wor"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/6xx-test1man"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/6xx-test1wor"/>
       <rdaed:P20002>6xx-test1exp</rdaed:P20002>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/6xx-test1exp"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/6xx-test1exp"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/nom/rvm/bible">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/musicb/worNom#allinloveisfair">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Bible</rdand:P80068>
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+      <rdand:P80068>All in love is fair</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/musicb"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/rvm/angleterre">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Angleterre</rdand:P80068>
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1wor#d22e6">
+      <fake:marcfield>F630 00 $a Bible. $p Old Testament. $l Greek $x Versions $x Septuagint.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10328>Bible. Old Testament</rdawd:P10328>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/rvm/bible">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1wor#d22e17">
+      <fake:marcfield>F630 07 $a Bible $p Philemonbrief $2 gnd $1 http://fakeiri.com/1234</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10328>Bible Philemonbrief</rdawd:P10328>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1wor#d22e26">
+      <fake:marcfield>F630 00 $a Old town road (Song)</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10328>Old town road (Song)</rdawd:P10328>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1wor#d22e29">
+      <fake:marcfield>F630 07 $a Health Information Technology for Economic and Clinical Health Act (United States) $2 fast $0 (OCoLC)fst01937910</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10328>Health Information Technology for Economic and Clinical Health Act (United States)</rdawd:P10328>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1wor#d22e36">
+      <fake:marcfield>F630 07 $a Bible $x Criticism, interpretation, etc. $x History $y 20th century $2 nli</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10328>Bible</rdawd:P10328>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1wor#d22e48">
       <fake:marcfield>F630 06 $a Bible $x Lecture $z Angleterre $x Histoire.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10331 rdf:resource="http://marc2rda.edu/fake/wor/nom/rvm/bible"/>
+      <rdawd:P10328>Bible</rdawd:P10328>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/biblelectureangleterrehistoire">
+   <rdf:Description rdf:about="https://musicbrainz.org/work/3f9ae128-bbec-3804-a477-83348f91dbc8">
+      <fake:marcfield>F630 07 $a All in love is fair. $1 https://musicbrainz.org/work/3f9ae128-bbec-3804-a477-83348f91dbc8 $2 musicb</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10331 rdf:resource="http://marc2rda.edu/fake/musicb/worNom#allinloveisfair"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#bibleoldtestamentgreekversionsseptuagint">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Bible -- Lecture -- Angleterre -- Histoire.</skos:prefLabel>
-      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+      <skos:prefLabel>Bible. Old Testament. Greek--Versions--Septuagint</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/lectureangleterrehistoire">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nli/con#biblecriticisminterpretationetchistory20thcentury">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Lecture -- Angleterre -- Histoire.</skos:prefLabel>
-      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+      <skos:prefLabel>Bible--Criticism, interpretation, etc.--History--20th century</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/nli"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/rvm/angleterre">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/rvm/angleterre"/>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#biblelectureangleterrehistoire">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Bible--Lecture--Angleterre--Histoire</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
 </rdf:RDF>

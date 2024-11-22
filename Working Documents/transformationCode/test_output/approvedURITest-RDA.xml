@@ -1,54 +1,101 @@
-<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
+         xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwf="http://universityOfWashington/functions"
+         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
    <rdf:Description rdf:about="http://marc2rda.edu/fake/approvedURI-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/approvedURI-test1exp"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10002>approvedURI-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10550 rdf:resource="http://isni.org/isni/0000000417635731"/><!--rdawo:P10550 = has issuing corporate body-->
-      <rdawo:P10550 rdf:resource="http://marc2rda.edu/fake/approvedURI-test1age#d22e41"/><!--rdawo:P10550 = has issuing corporate body-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/approvedURI-test1exp"/>
+      <rdawd:P10002>approvedURI-test1wor</rdawd:P10002>
+      <rdawo:P10550 rdf:resource="http://isni.org/isni/0000000417635731"/>
+      <rdawo:P10550 rdf:resource="http://marc2rda.edu/fake/approvedURI-test1age#d22e37"/>
+      <fake:marcfield>F600 07 $a Stevie Wonder. $t All in love is fair. $1 https://musicbrainz.org/work/3f9ae128-bbec-3804-a477-83348f91dbc8 $2 musicb</fake:marcfield>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/approvedURI-test1age#d22e48"/>
+      <rdawo:P10257 rdf:resource="https://musicbrainz.org/work/3f9ae128-bbec-3804-a477-83348f91dbc8"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/approvedURI-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/approvedURI-test1man"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/approvedURI-test1wor"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20002>approvedURI-test1exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/approvedURI-test1man"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/approvedURI-test1wor"/>
+      <rdaed:P20002>approvedURI-test1exp</rdaed:P20002>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/approvedURI-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/approvedURI-test1exp"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/approvedURI-test1exp"/>
       <!--Default relationship property used for https://orcid.org/0000-0002-9679-6159-->
-      <rdamo:P30268 rdf:resource="https://orcid.org/0000-0002-9679-6159"/><!--rdamo:P30268 = has related person of manifestation-->
-      <!--Default relationship property used for https://orcid.org/0000-0002-9679-6159-->
-      <rdamo:P30268 rdf:resource="https://orcid.org/0000-0002-9679-6159"/><!--rdamo:P30268 = has related person of manifestation-->
-      <!--Default relationship property used for https://orcid.org/0000-0002-9679-6159-->
-      <rdamo:P30268 rdf:resource="https://orcid.org/0000-0002-9679-6159"/><!--rdamo:P30268 = has related person of manifestation-->
-      <!--Default relationship property used for http://marc2rda.edu/fake/approvedURI-test1age#d22e23-->
-      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/approvedURI-test1age#d22e23"/><!--rdamo:P30268 = has related person of manifestation-->
+      <rdamo:P30268 rdf:resource="https://orcid.org/0000-0002-9679-6159"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/approvedURI-test1age#d22e17-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/approvedURI-test1age#d22e17"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/musicb/worNom#steviewonderallinloveisfair">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Stevie Wonder. All in love is fair</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/musicb"/>
    </rdf:Description>
    <rdf:Description rdf:about="https://orcid.org/0000-0002-9679-6159">
-      <fake:marcfield>F700 1# $a Deka, Bhabesh. $e editor $0 (orcid)0000-0002-9679-6159 $1 https://orcid.org/0000-0002-9679-6159 $1 https://unapprovedIRI.com/1234 $4 edt $4 http://id.loc.gov/vocabulary/relators/edt</fake:marcfield>
+      <fake:marcfield>F700 1# $a Deka, Bhabesh. $e editor $0 (orcid)0000-0002-9679-6159 $1 https://orcid.org/0000-0002-9679-6159</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Deka, Bhabesh</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
-      <rdaad:P50094>(orcid)0000-0002-9679-6159</rdaad:P50094><!--rdaad:P50094 = has identifier for person-->
-      <rdaad:P50094>https://unapprovedIRI.com/1234</rdaad:P50094><!--rdaad:P50094 = has identifier for person-->
+      <rdaad:P50377>Deka, Bhabesh</rdaad:P50377>
+      <rdaad:P50094>(orcid)0000-0002-9679-6159</rdaad:P50094>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/approvedURI-test1age#d22e23">
-      <fake:marcfield>F700 1# $a Nussbaum, Martha C. $q (Martha Craven), $d 1947- $1 https://id.oclc.org/worldcat/entity/E39PBJvxvGDXgCBVM3wfQ6mrv3</fake:marcfield>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/approvedURI-test1age#d22e17">
+      <fake:marcfield>F700 1# $a Nussbaum, Martha C. $q (Martha Craven), $d 1947- $1 https://id.oclc.org/worldcat/entity/E39PBJvxvGDXgCBVM3wfQ6mrv3 $1 https://test.unapproved.org/1234</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Nussbaum, Martha C. (Martha Craven), 1947-</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
-      <rdaad:P50347>1947-</rdaad:P50347><!--rdaad:P50347 = has related timespan of person-->
-      <rdaad:P50121>1947</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
-      <rdaad:P50115>Martha Craven</rdaad:P50115><!--rdaad:P50115 = has fuller form of name-->
-      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJvxvGDXgCBVM3wfQ6mrv3</rdaad:P50094><!--rdaad:P50094 = has identifier for person-->
+      <rdaad:P50377>Nussbaum, Martha C. (Martha Craven), 1947-</rdaad:P50377>
+      <rdaad:P50347>1947-</rdaad:P50347>
+      <rdaad:P50121>1947</rdaad:P50121>
+      <rdaad:P50115>Martha Craven</rdaad:P50115>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJvxvGDXgCBVM3wfQ6mrv3</rdaad:P50094>
+      <rdaad:P50094>https://test.unapproved.org/1234</rdaad:P50094>
    </rdf:Description>
    <rdf:Description rdf:about="http://isni.org/isni/0000000417635731">
       <fake:marcfield>F710 2# $a Universitas Sebelas Maret, $e issuing body $1 http://isni.org/isni/0000000417635731</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375>Universitas Sebelas Maret</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50375>Universitas Sebelas Maret</rdaad:P50375>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/approvedURI-test1age#d22e41">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/approvedURI-test1age#d22e37">
       <fake:marcfield>F710 2# $a Derz͡havne upravlinni͡a spravamy (Kyïv, Ukraine). $b Naukovo-praktychnyĭ t͡sentr profilaktychnoï ta klinichnoï medyt͡syny, $e issuing body $1 http://www.wikidata.org/entity/Q16708730</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375>Derz͡havne upravlinni͡a spravamy (Kyïv, Ukraine). Naukovo-praktychnyĭ t͡sentr profilaktychnoï ta klinichnoï medyt͡syny</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
-      <rdaad:P50006>http://www.wikidata.org/entity/Q16708730</rdaad:P50006><!--rdaad:P50006 = has identifier for corporate body-->
+      <rdaad:P50375>Derz͡havne upravlinni͡a spravamy (Kyïv, Ukraine). Naukovo-praktychnyĭ t͡sentr profilaktychnoï ta klinichnoï medyt͡syny</rdaad:P50375>
+      <rdaad:P50006>http://www.wikidata.org/entity/Q16708730</rdaad:P50006>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/approvedURI-test1age#d22e48">
+      <fake:marcfield>F600 07 $a Stevie Wonder. $t All in love is fair. $1 https://musicbrainz.org/work/3f9ae128-bbec-3804-a477-83348f91dbc8 $2 musicb</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Stevie Wonder</rdaad:P50377>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://musicbrainz.org/work/3f9ae128-bbec-3804-a477-83348f91dbc8">
+      <fake:marcfield>F600 07 $a Stevie Wonder. $t All in love is fair. $1 https://musicbrainz.org/work/3f9ae128-bbec-3804-a477-83348f91dbc8 $2 musicb</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10331 rdf:resource="http://marc2rda.edu/fake/musicb/worNom#steviewonderallinloveisfair"/>
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/approvedURI-test1age#d22e48"/>
    </rdf:Description>
 </rdf:RDF>

@@ -11,9 +11,6 @@
             <marc:subfield code="e">editor</marc:subfield>
             <marc:subfield code="0">(orcid)0000-0002-9679-6159</marc:subfield>
             <marc:subfield code="1">https://orcid.org/0000-0002-9679-6159</marc:subfield>
-            <marc:subfield code="1">https://unapprovedIRI.com/1234</marc:subfield>
-            <marc:subfield code="4">edt</marc:subfield>
-            <marc:subfield code="4">http://id.loc.gov/vocabulary/relators/edt</marc:subfield>
         </marc:datafield>
         <!-- unapproved -->
         <marc:datafield tag="700" ind1="1" ind2=" ">
@@ -21,6 +18,7 @@
             <marc:subfield code="q">(Martha Craven),</marc:subfield>
             <marc:subfield code="d">1947-</marc:subfield>
             <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PBJvxvGDXgCBVM3wfQ6mrv3</marc:subfield>
+            <marc:subfield code="1">https://test.unapproved.org/1234</marc:subfield>
         </marc:datafield>
         <!-- approved -->
         <marc:datafield tag="710" ind1="2" ind2=" ">
@@ -34,6 +32,14 @@
             <marc:subfield code="b">Naukovo-praktychnyĭ t͡sentr profilaktychnoï ta klinichnoï medyt͡syny,</marc:subfield>
             <marc:subfield code="e">issuing body</marc:subfield>
             <marc:subfield code="1">http://www.wikidata.org/entity/Q16708730</marc:subfield>
+        </marc:datafield>
+        
+        <!-- approved work -->
+        <marc:datafield tag="600" ind1="0" ind2="7">
+            <marc:subfield code="a">Stevie Wonder.</marc:subfield>
+            <marc:subfield code="t">All in love is fair.</marc:subfield>
+            <marc:subfield code="1">https://musicbrainz.org/work/3f9ae128-bbec-3804-a477-83348f91dbc8</marc:subfield>
+            <marc:subfield code="2">musicb</marc:subfield>
         </marc:datafield>
     </marc:record>
 </marc:collection>

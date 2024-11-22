@@ -27,6 +27,17 @@
     <xsl:import href="m2r-functions.xsl"/>
     <xsl:import href="m2r-relators.xsl"/>
     
+    <!-- This returns a list of preferred $1 values based on the approved URIs-->
+    <xsl:function name="uwf:multiple1s">
+        <xsl:param name="field"/>
+        <xsl:param name="type"/>
+        <xsl:for-each select="$field/marc:subfield[@code='1']">
+            <xsl:if test="uwf:IRILookup(., $type) = 'True'">
+                <xsl:copy-of select="."/>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:function>
+    
     <!-- returns an IRI for an entity -->
     
     <xsl:function name="uwf:agentIRI">
@@ -132,23 +143,48 @@
             <xsl:when test="$field/marc:subfield[@code = '1'] and (not(starts-with($field/@tag, '6'))
                 or (starts-with($field/@tag, '6') and 
                 not($field/marc:subfield[@code = 'v' or @code = 'x' or @code = 'y' or @code = 'z'])))">
-                <xsl:choose>
-                    <xsl:when test="count($field/marc:subfield[@code = '1']) > 1">
-                        <xsl:value-of select="uwf:multiple1s($field, 'Work')[1]"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="$field/marc:subfield[@code = '1']"/>
-                    </xsl:otherwise>
-                </xsl:choose>
+                    <xsl:variable name="sub1">
+                        <xsl:choose>
+                            <!-- when there are more than 1, call uwf:multiple1s to see if any are approved,
+                        then select the first-->
+                            <xsl:when test="count($field/marc:subfield[@code = '1']) gt 1">
+                                <xsl:value-of select="uwf:multiple1s($field, 'Work')[1]"/>
+                            </xsl:when>
+                            <!-- if only 1 subfield 1, select that value -->
+                            <xsl:otherwise>
+                                <xsl:value-of select="$field/marc:subfield[@code = '1']"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:variable>
+                    <xsl:choose>
+                        <!-- if that 1 value is approved, use it -->
+                        <xsl:when test="uwf:IRILookup($sub1, 'Work') = 'True'">
+                            <xsl:value-of select="$sub1"/>
+                        </xsl:when>
+                        <!-- otherwise mint an IRI -->
+                        <xsl:otherwise>
+                            <xsl:choose>
+                                <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), 'Work') = 'True'">
+                                    <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||'wor#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                                </xsl:when>
+                                <xsl:when test="not(starts-with($field/@tag, '6')) and $field/marc:subfield[@code = '2'] and uwf:s2EntityTest($field/marc:subfield[@code = '2'][1], 'Work') = 'True'">
+                                    <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'wor#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="$baseIRI||'wor#'||generate-id($field)"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:otherwise>
+                    </xsl:choose>
             </xsl:when>
             <!-- not handling $0s yet -->
             <!-- otherwise it's an opaque IRI to avoid conflating different works under one IRI -->
             <xsl:otherwise>
                 <xsl:choose>
-                    <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4')">
+                    <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), 'Work') = 'True'">
                         <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||'wor#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                     </xsl:when>
-                    <xsl:when test="not(starts-with($field/@tag, '6')) and $field/marc:subfield[@code = '2']">
+                    <xsl:when test="not(starts-with($field/@tag, '6')) and $field/marc:subfield[@code = '2'] and uwf:s2EntityTest($field/marc:subfield[@code = '2'][1], 'Work') = 'True'">
                         <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'wor#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                     </xsl:when>
                     <xsl:otherwise>
@@ -163,18 +199,6 @@
         <xsl:param name="baseIRI"/>
         <xsl:param name="node"/>
         <xsl:value-of select="$baseIRI||'metaWor#'||generate-id($node)"/>
-    </xsl:function>
-    
-    <!-- This is a placeholder for handling multiple $1 values, it currently returns the first $1 value.
-         In the future it will return the preferred $1 value -->
-    <xsl:function name="uwf:multiple1s">
-        <xsl:param name="field"/>
-        <xsl:param name="type"/>
-        <xsl:for-each select="$field/marc:subfield[@code='1']">
-            <xsl:if test="uwf:IRILookup(., $type) = 'True'">
-                <xsl:copy-of select="."/>
-            </xsl:if>
-        </xsl:for-each>
     </xsl:function>
     
     <!-- not done -->
