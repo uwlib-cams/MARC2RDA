@@ -417,6 +417,7 @@
                     </xsl:when>
                     <xsl:otherwise/>
                 </xsl:choose>
+                <xsl:copy-of select="uwf:workIdentifiers(.)"/>
             </rdf:Description>
         </xsl:if>
     </xsl:template>
@@ -602,6 +603,7 @@
                         </xsl:if>
                     </xsl:otherwise>
                 </xsl:choose>
+                <xsl:copy-of select="uwf:workIdentifiers(.)"/>
             </rdf:Description>
         </xsl:if>
     </xsl:template>
