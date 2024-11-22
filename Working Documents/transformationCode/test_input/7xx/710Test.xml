@@ -5,6 +5,23 @@
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">relator-test1</marc:controlfield>
+        
+        <!-- approved 1 -->
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="a">Universitas Sebelas Maret,</marc:subfield>
+            <marc:subfield code="e">issuing body</marc:subfield>
+            <marc:subfield code="1">http://isni.org/isni/0000000417635731</marc:subfield>
+        </marc:datafield>
+        
+        <!-- unapproved 1 -->
+        <marc:datafield tag="710" ind1="2" ind2=" "> 
+            <marc:subfield code="a">Derz͡havne upravlinni͡a spravamy (Kyïv, Ukraine).</marc:subfield>
+            <marc:subfield code="b">Naukovo-praktychnyĭ t͡sentr profilaktychnoï ta klinichnoï medyt͡syny,</marc:subfield>
+            <marc:subfield code="e">issuing body</marc:subfield>
+            <marc:subfield code="1">http://www.wikidata.org/entity/Q16708730</marc:subfield>
+        </marc:datafield>
+        
+        <!-- no 1, no 2 -->
         <marc:datafield tag="710" ind1="2" ind2=" ">
             <marc:subfield code="a">International Perimetric Society.</marc:subfield>
             <marc:subfield code="b">Meeting</marc:subfield>
@@ -12,11 +29,15 @@
             <marc:subfield code="d">2002 :</marc:subfield>
             <marc:subfield code="c">Stratford-upon-Avon, England)</marc:subfield>
         </marc:datafield>
+        
+        <!-- unapproved 1, approved 2 -->
         <marc:datafield tag="710" ind1="2" ind2=" ">
             <marc:subfield code="a">Royal Shakespeare Company.</marc:subfield>
             <marc:subfield code="1">http://testiri.edu/1234</marc:subfield>
             <marc:subfield code="2">naf</marc:subfield>
         </marc:datafield>
+        
+        <!-- 880 -->
         <marc:datafield tag="710" ind1="2" ind2=" ">
             <marc:subfield code="6">880-13</marc:subfield>
             <marc:subfield code="a">Lenfilʹm,</marc:subfield>
@@ -37,6 +58,8 @@
             <marc:subfield code="a">Продюсерская фирма Игоря Толстунова.</marc:subfield>
             <marc:subfield code="2">naf</marc:subfield>
         </marc:datafield>
+        
+        <!-- work -->
         <marc:datafield tag="710" ind1="2" ind2=" "> 
             <marc:subfield code="i">Container of (work)</marc:subfield>
             <marc:subfield code="a">Belarus Free Theatre (Theater group).</marc:subfield>
