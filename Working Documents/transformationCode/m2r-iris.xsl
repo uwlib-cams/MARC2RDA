@@ -208,14 +208,14 @@
         <xsl:param name="type"/>
         <xsl:param name="ap"/>
         <xsl:param name="source"/>
-        <xsl:choose>
-            <xsl:when test="$source != ''">
+<!--        <xsl:choose>-->
+           <!-- <xsl:when test="$source != ''">
                 <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($source), ' ', ''))||'/'||$type||'#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
-            </xsl:when>
-            <xsl:otherwise>
+            </xsl:when>-->
+<!--            <xsl:otherwise>-->
                 <xsl:value-of select="$baseIRI||$type||'#'||generate-id($field)"/>
-            </xsl:otherwise>
-        </xsl:choose>
+            <!--</xsl:otherwise>-->
+        <!--</xsl:choose>-->
     </xsl:function>
     
     <xsl:function name="uwf:timespanIRI">
@@ -307,7 +307,7 @@
             <xsl:when test="not($field/marc:subfield[@code = '1']) and count($field/marc:subfield[@code = '0']) = 1">
                 <xsl:choose>
                     <!-- and IRI, use -->
-                    <xsl:when test="contains($field/marc:subfield[@code = '0'], 'http')">
+                    <xsl:when test="contains($field/marc:subfield[@code = '0'][1], 'http')">
                         <xsl:variable name="processed0" select="uwf:process0($field/marc:subfield[@code = '0'])"/>
                         <xsl:choose>
                             <xsl:when test="$processed0">
@@ -320,7 +320,7 @@
                         </xsl:choose>
                     </xsl:when>
                     <!-- and FAST, translate to IRI and use -->
-                    <xsl:when test="starts-with($field/marc:subfield[@code = '0'], '(OCoLC)')">
+                    <xsl:when test="starts-with($field/marc:subfield[@code = '0'][1], '(OCoLC)')">
                         <xsl:value-of select="concat('https://id.worldcat.org/fast/', substring-after($field/marc:subfield[@code = '0'], 'fst'))"/>
                     </xsl:when>
                     <xsl:otherwise>
