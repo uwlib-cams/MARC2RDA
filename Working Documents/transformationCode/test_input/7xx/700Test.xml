@@ -100,6 +100,7 @@
             <marc:subfield code="a">Valdez, Luis.</marc:subfield>
             <marc:subfield code="t">Zoot suit.</marc:subfield>
             <marc:subfield code="1">haf.vhmml.org/organization/madeuporg</marc:subfield>
+            <marc:subfield code="1">fakeiri.edu/1234</marc:subfield>
         </marc:datafield>
         
     </marc:record>

@@ -125,7 +125,7 @@
       <rdaad:P50120>1975</rdaad:P50120><!--rdaad:P50120 = has date of death-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d22e121">
-      <fake:marcfield>F700 1# $i Motion picture adaptation of (work): $a Valdez, Luis. $t Zoot suit. $1 haf.vhmml.org/organization/madeuporg</fake:marcfield>
+      <fake:marcfield>F700 1# $i Motion picture adaptation of (work): $a Valdez, Luis. $t Zoot suit. $1 haf.vhmml.org/organization/madeuporg $1 fakeiri.edu/1234</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Valdez, Luis</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
    </rdf:Description>
@@ -147,5 +147,6 @@
       <rdawd:P10002>d22e121wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <rdawd:P10328>Valdez, Luis. Zoot suit</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d22e121"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10002>fakeiri.edu/1234</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
    </rdf:Description>
 </rdf:RDF>
