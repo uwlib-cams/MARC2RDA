@@ -1,39 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test1exp"/><!--rdawo:P10078 = has expression of work-->
       <rdawd:P10002>relator-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test1man"/><!--rdaeo:P20059 = has manifestation of expression-->
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test1wor"/><!--rdaeo:P20231 = has work expressed-->
       <rdaed:P20002>relator-test1exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test1exp"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor/d22e6"/><!--rdamo:P30265 = has related work of manifestation-->
-      <rdamo:P30265 rdf:resource="http://fakeiri.edu/12345"/><!--rdamo:P30265 = has related work of manifestation-->
-      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor/d22e20"/><!--rdamo:P30265 = has related work of manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/relator-test1wor#d22e6"/><!--rdamo:P30265 = has related work of manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/relator-test1wor#d22e13"/><!--rdamo:P30265 = has related work of manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/relator-test1wor#d22e20"/><!--rdamo:P30265 = has related work of manifestation-->
+      <rdamo:P30265 rdf:resource="https://musicbrainz.org/work/3f9ae128-bbec-3804-a477-83348f91dbc8"/><!--rdamo:P30265 = has related work of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/nom/d22e13">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1worNom#d22e13">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>60 minutes (Television program)</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/d22e6">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1worNom#d22e38">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>All in love is fair</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/musicb"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1wor#d22e6">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>d22e6wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <rdawd:P10328>Beowulf</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeiri.edu/12345">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1wor#d22e13">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>d22e13wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10331 rdf:resource="http://marc2rda.edu/fake/wor/nom/d22e13"/><!--rdawo:P10331 = has authorized access point for work-->
+      <rdawo:P10328 rdf:resource="http://marc2rda.edu/fake/relator-test1worNom#d22e13"/><!--rdawo:P10328 = has access point for work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor/d22e20">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1wor#d22e20">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>d22e20wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <rdawd:P10328>God save the king;</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawd:P10328>God save the king 880;</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="https://musicbrainz.org/work/3f9ae128-bbec-3804-a477-83348f91dbc8">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d22e38wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10331 rdf:resource="http://marc2rda.edu/fake/relator-test1worNom#d22e38"/><!--rdawo:P10331 = has authorized access point for work-->
    </rdf:Description>
 </rdf:RDF>
