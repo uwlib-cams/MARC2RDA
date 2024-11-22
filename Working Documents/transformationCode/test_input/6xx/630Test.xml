@@ -40,7 +40,7 @@
             <marc:subfield code="x">Lecture</marc:subfield>
             <marc:subfield code="z">Angleterre</marc:subfield>
             <marc:subfield code="x">Histoire.</marc:subfield>
-<!--            <marc:subfield code="1">https://fakeiri.com/1234</marc:subfield>-->
+            <marc:subfield code="1">https://fakeiri.com/5678</marc:subfield>
         </marc:datafield>
         
         <marc:datafield tag="630" ind1="0" ind2="7">
