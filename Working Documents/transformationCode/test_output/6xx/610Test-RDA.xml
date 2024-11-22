@@ -6,7 +6,7 @@
       <fake:marcfield>F610 27 $a New York Shakespeare Festival Productions $2 fast</fake:marcfield>
       <rdawo:P10263 rdf:resource="http://marc2rda.edu/fake/fast/age#newyorkshakespearefestivalproductions"/><!--rdawo:P10263 = has subject corporate body-->
       <fake:marcfield>F610 27 $a Library of Congress. $2 fast $0 (OCoLC)fst00528532</fake:marcfield>
-      <rdawo:P10263 rdf:resource="http://marc2rda.edu/fake/fast/age#libraryofcongress"/><!--rdawo:P10263 = has subject corporate body-->
+      <rdawo:P10263 rdf:resource="https://id.worldcat.org/fast/00528532"/><!--rdawo:P10263 = has subject corporate body-->
       <fake:marcfield>F610 27 $a Catholic Church $x In literature. $2 nli</fake:marcfield>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/nli/con#catholicchurchinliterature"/><!--rdaw:P10256 = has subject-->
       <rdawo:P10263 rdf:resource="http://marc2rda.edu/fake/6xx-test1age#d22e18"/><!--rdawo:P10263 = has subject corporate body-->
@@ -23,35 +23,46 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/6xx-test1exp"/><!--rdamo:P30139 = has expression manifested-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/ageNom#newyorkshakespearefestivalproductions">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1ageNom#d22e6">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>New York Shakespeare Festival Productions</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/ageNom#libraryofcongress">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1ageNom#d22e11">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Library of Congress</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1ageNom#d22e18">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Catholic Church</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/nli"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1ageNom#d22e25">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Weisse Rose (Resistance group)</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/age#newyorkshakespearefestivalproductions">
       <fake:marcfield>F610 27 $a New York Shakespeare Festival Productions $2 fast</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/fast/ageNom#newyorkshakespearefestivalproductions"/><!--rdaao:P50407 = has authorized access point for corporate body-->
+      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/6xx-test1ageNom#d22e6"/><!--rdaao:P50407 = has authorized access point for corporate body-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/age#libraryofcongress">
+   <rdf:Description rdf:about="https://id.worldcat.org/fast/00528532">
       <fake:marcfield>F610 27 $a Library of Congress. $2 fast $0 (OCoLC)fst00528532</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/fast/ageNom#libraryofcongress"/><!--rdaao:P50407 = has authorized access point for corporate body-->
+      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/6xx-test1ageNom#d22e11"/><!--rdaao:P50407 = has authorized access point for corporate body-->
+      <rdaad:P50006>(OCoLC)fst00528532</rdaad:P50006><!--rdaad:P50006 = has identifier for corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1age#d22e18">
       <fake:marcfield>F610 27 $a Catholic Church $x In literature. $2 nli</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375>Catholic Church</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaao:P50375 rdf:resource="http://marc2rda.edu/fake/6xx-test1ageNom#d22e18"/><!--rdaao:P50375 = has access point for corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="https://isni.org/isni/0000000122597088">
       <fake:marcfield>F610 20 $a Weisse Rose (Resistance group) $1 https://isni.org/isni/0000000122597088</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375>Weisse Rose (Resistance group)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaao:P50375 rdf:resource="http://marc2rda.edu/fake/6xx-test1ageNom#d22e25"/><!--rdaao:P50375 = has access point for corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/nli/con#catholicchurchinliterature">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
