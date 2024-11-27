@@ -58,7 +58,7 @@ _Last updated 27 November 2024_
  
 ## General Rules
  - Always check against:
-   - [MARC21 Format for Bibliographic Data](https://www-loc-gov.offcampus.lib.washington.edu/marc/bibliographic/) (what mapping from)
+   - [MARC21 Format for Bibliographic Data](https://www.loc.gov/marc/bibliographic/) (what mapping from)
    - [RDA Registry](https://www.rdaregistry.info/) (what mapping to)
    - [Official RDA Toolkit](https://access.rdatoolkit.org/) (explains how to use RDA)
    - [Decision Index](https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index): this provides guidance on a variety of considerations from the [Spreadsheet](https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#ia-spreadsheet) to [MARC21 Fields & Subfields Not Mapped](https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#ia-spreadsheet) to the [GitHub](https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iiia-github) workflow while mapping and more
@@ -66,7 +66,7 @@ _Last updated 27 November 2024_
  - Notes should be initialed and dated, with separate notes in the same column/row separated by ;
  - In order to achieve an accurate mapping, you may need to delete rows that don't properly translate from MARC to RDA, duplicate rows, write in conditions, include more than one RDA property, and/or combine subfields into one row if they map to a single RDA element.  
  - If many subfields need to be combined to produce a value for a single RDA element, list those separate subfields in the order they should appear using "MARCSubfield" using ", " and make a transformation note to indicate exactly what the resulting value should look like.
- - If there are new additions to [MARC21 Format for Bibliographic Data](https://www-loc-gov.offcampus.lib.washington.edu/marc/bibliographic/), which are indicated in red font, add them to the spreadsheet.
+ - If there are new additions to [MARC21 Format for Bibliographic Data](https://www.loc.gov/marc/bibliographic/), which are indicated in red font, add them to the spreadsheet.
  - Consistently use operators:
 ### Operators
 | Operator | Example | Details |
