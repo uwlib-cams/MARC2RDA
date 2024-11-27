@@ -266,6 +266,7 @@ _[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#
 |---|---|
 | One of the following: unstructured description, structured description, identifier, IRI | RDA Recording Method used in the MARC data, if known and if consistent. |
 * Refer to [Official RDA Toolkit](https://access.rdatoolkit.org/) > Guidance > [Recording methods](https://access-rdatoolkit-org.offcampus.lib.washington.edu/en-US_ala-a06b3aa1-d994-31b1-b961-e4ce37c1a4d3)
+
 _[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 
  ## Justification for Mapping
