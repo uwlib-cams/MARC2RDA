@@ -218,11 +218,11 @@
                                 <!-- if there's a $2, a nomen is minted-->
                                 <!-- if the $2 is approved it's an authorized access point -->
                                 <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Person') = 'True'">
-                                    <rdaao:P50411 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', '', '')}"/>
+                                    <rdaao:P50411 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
                                 </xsl:when>
                                 <!-- if not it's just an access point -->
                                 <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Person') = 'False'">
-                                    <rdaao:P50377 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', '', '')}"/>
+                                    <rdaao:P50377 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
                                 </xsl:when>
                                 <!-- else a nomen string is used directly as an access point -->
                                 <xsl:otherwise>
@@ -250,10 +250,10 @@
                             <xsl:choose>
                                 <!-- if there's a $2, a nomen is minted -->
                                 <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Family') = 'True'">
-                                    <rdaao:P50409 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', '', '')}"/>
+                                    <rdaao:P50409 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
                                 </xsl:when>
                                 <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Family') = 'False'">
-                                    <rdaao:P50376 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', '', '')}"/>
+                                    <rdaao:P50376 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
                                 </xsl:when>
                                 <!-- else a nomen string is used directly -->
                                 <xsl:otherwise>
@@ -279,10 +279,10 @@
                     <xsl:choose>
                         <!-- if there's a $2, a nomen is minted -->
                         <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Corporate Body') = 'True'">
-                            <rdaao:P50407 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', '', '')}"/>
+                            <rdaao:P50407 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
                         </xsl:when>
                         <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Corporate Body') = 'False'">
-                            <rdaao:P50375 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', '', '')}"/>
+                            <rdaao:P50375 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
                         </xsl:when>
                         <!-- else a nomen string is used directly -->
                         <xsl:otherwise>
@@ -347,7 +347,7 @@
             </xsl:choose>
         </xsl:variable>
         <xsl:if test="marc:subfield[@code = '2']">
-            <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'ageNom', '', '')}">
+            <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'ageNom')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
                     <xsl:value-of select="uwf:agentAccessPoint(.)"/>
@@ -386,10 +386,10 @@
                 <rdawd:P10002>{concat(generate-id(), 'wor')}</rdawd:P10002>
                 <xsl:choose>
                     <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Work') = 'True'">
-                        <rdawo:P10331 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'worNom', '', '')}"/>
+                        <rdawo:P10331 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'worNom')}"/>
                     </xsl:when>
                     <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Work') = 'False'">
-                        <rdaao:P10328 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', '', '')}"/>
+                        <rdaao:P10328 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <rdawd:P10328>
@@ -437,10 +437,10 @@
                                 <xsl:choose>
                                     <!-- if there's a $2, a nomen is minted and it's an authorized access point-->
                                     <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Person') = 'True'">
-                                        <rdaao:P50411 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', '', '')}"/>
+                                        <rdaao:P50411 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
                                     </xsl:when>
                                     <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Person') = 'False'">
-                                        <rdaao:P50377 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', '', '')}"/>
+                                        <rdaao:P50377 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
                                     </xsl:when>
                                     <!-- else a nomen string is used directly as an access point -->
                                     <xsl:otherwise>
@@ -468,10 +468,10 @@
                                 <xsl:choose>
                                     <!-- if there's a $2, a nomen is minted -->
                                     <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Family') = 'True'">
-                                        <rdaao:P50409 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', '', '')}"/>
+                                        <rdaao:P50409 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
                                     </xsl:when>
                                     <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Family') = 'False'">
-                                        <rdaao:P50376 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', '', '')}"/>
+                                        <rdaao:P50376 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
                                     </xsl:when>
                                     <!-- else a nomen string is used directly -->
                                     <xsl:otherwise>
@@ -497,10 +497,10 @@
                         <xsl:choose>
                             <!-- if there's a $2, a nomen is minted -->
                             <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Corporate Body') = 'True'">
-                                <rdaao:P50407 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', '', '')}"/>
+                                <rdaao:P50407 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
                             </xsl:when>
                             <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Corporate Body') = 'False'">
-                                <rdaao:P50375 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', '', '')}"/>
+                                <rdaao:P50375 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
                             </xsl:when>
                             <!-- else a nomen string is used directly -->
                             <xsl:otherwise>
@@ -530,7 +530,7 @@
         <xsl:param name="baseIRI"/>
         <xsl:if test="@ind2 != '2'">
             <xsl:if test="marc:subfield[@code = '2']">
-                <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'worNom', '', '')}">
+                <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'worNom')}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                     <rdand:P80068>
                         <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
@@ -545,7 +545,7 @@
                         </xsl:for-each>
                     </xsl:if>
                 </rdf:Description>
-                <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'ageNom', '', '')}">
+                <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'ageNom')}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                     <rdand:P80068>
                         <xsl:value-of select="uwf:agentAccessPoint(.)"/>
@@ -584,10 +584,10 @@
                 <rdawd:P10002>{concat(generate-id(), 'wor')}</rdawd:P10002>
                 <xsl:choose>
                     <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Work') = 'True'">
-                        <rdawo:P10331 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'worNom', '', '')}"/>
+                        <rdawo:P10331 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'worNom')}"/>
                     </xsl:when>
                     <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Work') = 'False'">
-                        <rdawo:P10328 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'worNom', '', '')}"/>
+                        <rdawo:P10328 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'worNom')}"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <rdawd:P10328>
@@ -614,7 +614,7 @@
         <xsl:param name="baseIRI"/>
         <xsl:if test="@ind2 != '2'">
             <xsl:if test="marc:subfield[@code = '2']">
-                <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'worNom', '', '')}">
+                <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'worNom')}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                     <rdand:P80068>
                         <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>

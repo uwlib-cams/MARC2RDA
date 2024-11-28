@@ -130,7 +130,7 @@
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
-            <!-- If $0 -->
+            <!-- If $0 and not $1 -->
             <xsl:when test="not($field/marc:subfield[@code = '1']) and $field/marc:subfield[@code = '0']">
                 <xsl:variable name="sub0">
                     <xsl:choose>
@@ -173,8 +173,7 @@
             <!-- otherwise it's a minted IRI -->
             <xsl:otherwise>
                 <xsl:choose>
-                    <!-- If it's a 6XX field and not ind2 = 4, and the source is approved,
-                                we use the source and aap -->
+                    <!-- If it's a 6XX field and not ind2 = 4, and the source is approved, we use the source and aap -->
                     <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), $type) = 'True'">
                         <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||'age#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                     </xsl:when>
@@ -237,7 +236,6 @@
                         </xsl:otherwise>
                     </xsl:choose>
             </xsl:when>
-            <!-- not handling $0s yet -->
             <!-- otherwise it's an opaque IRI to avoid conflating different works under one IRI -->
             <xsl:otherwise>
                 <xsl:choose>
@@ -261,21 +259,11 @@
         <xsl:value-of select="$baseIRI||'metaWor#'||generate-id($node)"/>
     </xsl:function>
     
-    <!-- not done -->
     <xsl:function name="uwf:nomenIRI">
         <xsl:param name="baseIRI"/>
         <xsl:param name="field"/>
         <xsl:param name="type"/>
-        <xsl:param name="ap"/>
-        <xsl:param name="source"/>
-<!--        <xsl:choose>-->
-           <!-- <xsl:when test="$source != ''">
-                <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($source), ' ', ''))||'/'||$type||'#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
-            </xsl:when>-->
-<!--            <xsl:otherwise>-->
-                <xsl:value-of select="$baseIRI||$type||'#'||generate-id($field)"/>
-            <!--</xsl:otherwise>-->
-        <!--</xsl:choose>-->
+        <xsl:value-of select="$baseIRI||$type||'#'||generate-id($field)"/>
     </xsl:function>
     
     <xsl:function name="uwf:timespanIRI">
