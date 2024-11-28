@@ -437,7 +437,7 @@
     
     <!-- 647 - Subject Added Entry-Named Event -->
     <xsl:template
-        match="marc:datafield[@tag = '647']"
+        match="marc:datafield[@tag = '647'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '647-00']"
         mode="wor">
         <xsl:call-template name="getmarc"/>
         <xsl:variable name="prefLabel">
@@ -451,7 +451,7 @@
         </xsl:for-each>
     </xsl:template>
     
-    <xsl:template match="marc:datafield[@tag = '647']"
+    <xsl:template match="marc:datafield[@tag = '647'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '647-00']"
         mode="con" expand-text="yes">
         <xsl:if test="@ind2 != '4'">
             <xsl:variable name="prefLabel">
@@ -461,6 +461,17 @@
             <xsl:if test="starts-with(uwf:subjectIRI(., $scheme, $prefLabel), $BASE)">
                 <rdf:Description rdf:about="{uwf:subjectIRI(., $scheme, $prefLabel)}">
                     <xsl:copy-of select="uwf:fillConcept($prefLabel, $scheme, '', @tag)"/>
+                    <xsl:if test="@tag = '647' and marc:subfield[@code = '6']">
+                        <xsl:variable name="occNum"
+                            select="concat('647-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                        <xsl:for-each
+                            select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                            <xsl:variable name="prefLabel880">
+                                <xsl:call-template name="F647-label"/>
+                            </xsl:variable>
+                            <xsl:copy-of select="uwf:fillConcept($prefLabel880, '', '', @tag)"/>
+                        </xsl:for-each>
+                    </xsl:if>
                 </rdf:Description>
                 <xsl:for-each select="marc:subfield[@code = 'v']">
                     <rdf:Description rdf:about="{uwf:conceptIRI($scheme, .)}">

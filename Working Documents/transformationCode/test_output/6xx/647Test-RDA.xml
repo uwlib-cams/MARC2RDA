@@ -1,96 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
-         xmlns:fake="http://fakePropertiesForDemo"
-         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
-         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
-         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
-         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
-         xmlns:rdae="http://rdaregistry.info/Elements/e/"
-         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
-         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
-         xmlns:rdai="http://rdaregistry.info/Elements/i/"
-         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
-         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
-         xmlns:rdam="http://rdaregistry.info/Elements/m/"
-         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
-         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
-         xmlns:rdan="http://rdaregistry.info/Elements/n/"
-         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
-         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
-         xmlns:rdap="http://rdaregistry.info/Elements/p/"
-         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
-         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
-         xmlns:rdat="http://rdaregistry.info/Elements/t/"
-         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
-         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
-         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
-         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
-         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
-         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
-   <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1wor">
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>6xx-test1wor</rdawd:P10002>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/6xx-test1exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>6xx-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <fake:marcfield>F647 #7 $a American Revolution $c (United States : $d 1775-1783) $2 fast $0 (OCoLC)fst01351668 $1 https://id.oclc.org/worldcat/entity/E39Qhp4vB989PWKg6VGKmH6MwK</fake:marcfield>
-      <rdaw:P10256 rdf:resource="https://id.oclc.org/worldcat/entity/E39Qhp4vB989PWKg6VGKmH6MwK"/>
-      <fake:marcfield>F647 #7 $a Christchurch Mosque Shootings $c (Christchurch, New Zealand : $d 2019) $2 fast $0 (OCoLC)fst02007190</fake:marcfield>
-      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/02007190"/>
+      <rdaw:P10256 rdf:resource="https://id.oclc.org/worldcat/entity/E39Qhp4vB989PWKg6VGKmH6MwK"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F647 #7 $a Cold War $d (1945-1989) $2 fast</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/coldwar19451989"/>
-      <fake:marcfield>F647 #7 $a Text vxyz $v v $x x $y y $z z $2 fast</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/textvxyzvxyz"/>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/fast/xyz"/>
-      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/timespan/fast/y"/>
-      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/place/fast/z"/>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/fast/v"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/fast/con#coldwar1945-1989"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F647 #7 $a Test vxyz $v v $x x $y y $z z $2 fast</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/fast/con#testvxyzvxyz"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/fast/con#v"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F647 #7 $6 880-01 $a test linked 880 - 1 $2 jlabsh</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/jlabsh/con#testlinked880-1"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F880 #7 $6 647-00 $a test unlinked 880 $2 jlabsh</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/jlabsh/con#testunlinked880"/><!--rdaw:P10256 = has subject-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1exp">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/6xx-test1wor"/>
-      <rdaed:P20002>6xx-test1exp</rdaed:P20002>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/6xx-test1man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/6xx-test1wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>6xx-test1exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/6xx-test1exp"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/6xx-test1exp"/><!--rdamo:P30139 = has expression manifested-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim/nom/fast/y">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>y</rdand:P80068>
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla/nom/fast/z">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>z</rdand:P80068>
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/coldwar19451989">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#coldwar1945-1989">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Cold War -- (1945-1989)</skos:prefLabel>
+      <skos:prefLabel>Cold War (1945-1989)</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/textvxyzvxyz">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#testvxyzvxyz">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Text vxyz -- v -- x -- y -- z</skos:prefLabel>
+      <skos:prefLabel>Test vxyz--v--x--y--z</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/xyz">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>x -- y -- z</skos:prefLabel>
-      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/fast/v">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#v">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>v</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/place/fast/z">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/pla/nom/fast/z"/>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/jlabsh/con#testlinked880-1">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>test linked 880 - 1</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/jlabsh"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>test linked 880 - 2</skos:prefLabel>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/timespan/fast/y">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
-      <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/tim/nom/fast/y"/>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/jlabsh/con#testunlinked880">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>test unlinked 880</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/jlabsh"/>
    </rdf:Description>
 </rdf:RDF>
