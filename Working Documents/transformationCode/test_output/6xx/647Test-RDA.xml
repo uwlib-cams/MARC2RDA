@@ -3,6 +3,8 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/6xx-test1exp"/><!--rdawo:P10078 = has expression of work-->
       <rdawd:P10002>6xx-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <fake:marcfield>F647 #4 $a Test no source</fake:marcfield>
+      <rdawd:P10256>Test no source</rdawd:P10256><!--rdawd:P10256 = has subject-->
       <fake:marcfield>F647 #7 $a American Revolution $c (United States : $d 1775-1783) $2 fast $0 (OCoLC)fst01351668 $1 https://id.oclc.org/worldcat/entity/E39Qhp4vB989PWKg6VGKmH6MwK</fake:marcfield>
       <rdaw:P10256 rdf:resource="https://id.oclc.org/worldcat/entity/E39Qhp4vB989PWKg6VGKmH6MwK"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F647 #7 $a Cold War $d (1945-1989) $2 fast</fake:marcfield>
