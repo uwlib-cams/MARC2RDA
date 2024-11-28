@@ -192,11 +192,13 @@
         Outputs "has category of work" as datatype or object property -->
     <xsl:template name="F6XX-xx-v">
         <xsl:choose>
+            <!-- if no source, use datatype and string value -->
             <xsl:when test="../@ind2 = '4' or ((../@ind2 = '7'  or ../@ind2 = ' ') and not(../marc:subfield[@code = '2']))">
                 <rdawd:P10004>
                     <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                 </rdawd:P10004>
             </xsl:when>
+            <!-- otherwise, mint a concept for the category of work in $v -->
             <xsl:otherwise>
                 <rdaw:P10004 rdf:resource="{uwf:conceptIRI(uwf:getSubjectSchemeCode(..), .)}"/>
             </xsl:otherwise>

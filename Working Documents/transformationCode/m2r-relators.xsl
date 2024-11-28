@@ -124,8 +124,11 @@
             <xsl:when test="$field/@tag = '630' or $field/@tag = '730'
                 or ($field/@tag = '880' and matches($field/marc:subfield[@code = '6'], '[678]30'))">
                 <xsl:variable name="ap">
-                    <xsl:value-of select="$field/marc:subfield[@code = 'a'] | $field/marc:subfield[@code = 'd'] | $field/marc:subfield[@code = 'k']
-                        | $field/marc:subfield[@code = 'n'] | $field/marc:subfield[@code = 'p']"
+                    <xsl:value-of select="$field/marc:subfield[@code = 'a'] | $field/marc:subfield[@code = 'd'] | $field/marc:subfield[@code = 'f'] 
+                        | $field/marc:subfield[@code = 'g'] | $field/marc:subfield[@code = 'k'] | $field/marc:subfield[@code = 'l'] 
+                        | $field/marc:subfield[@code = 'm'] | $field/marc:subfield[@code = 'n'] | $field/marc:subfield[@code = 'o']
+                        | $field/marc:subfield[@code = 'p'] | $field/marc:subfield[@code = 'r'] | $field/marc:subfield[@code = 's']
+                        | $field/marc:subfield[@code = 't']"
                         separator=" "/>
                 </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>

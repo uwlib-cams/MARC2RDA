@@ -61,11 +61,10 @@
             <xsl:call-template name="F6XX-subject">
                 <xsl:with-param name="prefLabel" select="$prefLabel"/>
             </xsl:call-template>
-<!--            <xsl:if test="starts-with(uwf:subjectIRI(., uwf:getSubjectSchemeCode(.), $prefLabel), $BASE)">-->
-                <xsl:for-each select="marc:subfield[@code = 'v']">
-                    <xsl:call-template name="F6XX-xx-v"/>
-                </xsl:for-each>
-            <!--</xsl:if>-->
+            <!-- $v is mapped separately as well -->
+            <xsl:for-each select="marc:subfield[@code = 'v']">
+                <xsl:call-template name="F6XX-xx-v"/>
+            </xsl:for-each>
         </xsl:if>
         
         <!-- choose appropriate "has subject [agent]" property based on field/subfields
@@ -144,10 +143,10 @@
                                 <xsl:when test="@ind2 != '4'">
                                     <xsl:choose>
                                         <xsl:when test="uwf:s2EntityTest($source, 'Person') = 'True'">
-                                            <rdaao:P50411 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', $ap, $source)}"/>
+                                            <rdaao:P50411 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
                                         </xsl:when>
                                         <xsl:otherwise>
-                                            <rdaao:P50377 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', $ap, $source)}"/>
+                                            <rdaao:P50377 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
                                         </xsl:otherwise>
                                     </xsl:choose>
                                 </xsl:when>
@@ -164,10 +163,10 @@
                                 <xsl:when test="@ind2 != '4'">
                                     <xsl:choose>
                                         <xsl:when test="uwf:s2EntityTest($source, 'Family') = 'True'">
-                                            <rdaao:P50409 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', $ap, $source)}"/>
+                                            <rdaao:P50409 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
                                         </xsl:when>
                                         <xsl:otherwise>
-                                            <rdaao:P50376 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', $ap, $source)}"/>
+                                            <rdaao:P50376 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
                                         </xsl:otherwise>
                                     </xsl:choose>
                                 </xsl:when>
@@ -187,10 +186,10 @@
                         <xsl:when test="@ind2 != '4'">
                             <xsl:choose>
                                 <xsl:when test="uwf:s2EntityTest($source, 'Corporate Body') = 'True'">
-                                    <rdaao:P50407 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', $ap, $source)}"/>
+                                    <rdaao:P50407 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
                                 </xsl:when>
                                 <xsl:otherwise>
-                                    <rdaao:P50375 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom', $ap, $source)}"/>
+                                    <rdaao:P50375 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:when>
@@ -221,10 +220,10 @@
                 <xsl:when test="@ind2 != '4'">
                     <xsl:choose>
                         <xsl:when test="uwf:s2EntityTest($source, 'Work') = 'True'">
-                            <rdawo:P10331 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'worNom', uwf:relWorkAccessPoint(.), $source)}"/>
+                            <rdawo:P10331 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'worNom')}"/>
                         </xsl:when>
                         <xsl:otherwise>
-                            <rdawo:P10328 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'worNom', uwf:relWorkAccessPoint(.), $source)}"/>
+                            <rdawo:P10328 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'worNom')}"/>
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:when>
@@ -288,7 +287,7 @@
             </xsl:choose>
         </xsl:variable>
         <xsl:if test="@ind2 != '4'">
-            <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'ageNom', '', '')}">
+            <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'ageNom')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
                     <xsl:value-of select="$ap"/>
@@ -305,7 +304,7 @@
             
             <xsl:if test="marc:subfield[@code = 't']">
                 <xsl:variable name="apWor" select="uwf:relWorkAccessPoint(.)"/>
-                <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'worNom', '', '')}">
+                <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'worNom')}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                     <rdand:P80068>
                         <xsl:value-of select="$apWor"/>
@@ -332,20 +331,24 @@
         <xsl:variable name="prefLabel">
             <xsl:call-template name="F630-label"/>
         </xsl:variable>
+        <!-- has subject work -->
+        <rdawo:P10257 rdf:resource="{uwf:relWorkIRI($baseIRI, .)}"/>
+        <!-- if v, x, y, or z, also use has subject -->
         <xsl:if test="marc:subfield[@code = 'v'] or marc:subfield[@code = 'x'] 
             or marc:subfield[@code = 'y'] or marc:subfield[@code = 'z']">
             <xsl:call-template name="F6XX-subject">
                 <xsl:with-param name="prefLabel" select="$prefLabel"/>
             </xsl:call-template>
+            <!-- category of work for v -->
             <xsl:for-each select="marc:subfield[@code = 'v']">
                 <xsl:call-template name="F6XX-xx-v"/>
             </xsl:for-each>
         </xsl:if>
-        <rdawo:P10257 rdf:resource="{uwf:relWorkIRI($baseIRI, .)}"/>
     </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '630']"
         mode="con" expand-text="yes">
+        <!-- if v, x, y, z and source is provided, mint a concept -->
         <xsl:if test="marc:subfield[@code = 'v'] or marc:subfield[@code = 'x'] or marc:subfield[@code = 'y'] or marc:subfield[@code = 'z']">
             <xsl:if test="@ind2 != '4'">
                 <xsl:variable name="prefLabel">
@@ -356,6 +359,7 @@
                     <rdf:Description rdf:about="{uwf:subjectIRI(., $scheme, $prefLabel)}">
                         <xsl:copy-of select="uwf:fillConcept($prefLabel, $scheme, '', @tag)"/>
                     </rdf:Description>
+                    <!-- also mint a concept for each $v -->
                     <xsl:for-each select="marc:subfield[@code = 'v']">
                         <rdf:Description rdf:about="{uwf:conceptIRI($scheme, .)}">
                             <xsl:copy-of select="uwf:fillConcept(., $scheme, '', @tag)"/>
@@ -370,26 +374,32 @@
         match="marc:datafield[@tag = '630']"
         mode="relWor" expand-text="yes">
         <xsl:param name="baseIRI"/>
+        <!-- mint the work -->
         <rdf:Description rdf:about="{uwf:relWorkIRI($baseIRI, .)}">
             <xsl:call-template name="getmarc"/>
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
             <xsl:choose>
+                <!-- if there is a source, mint a nomen -->
                 <xsl:when test="@ind2 != '4'">
                     <xsl:choose>
+                        <!-- if an approved source, it is an authorized access point -->
                         <xsl:when test="uwf:s2EntityTest(uwf:getSubjectSchemeCode(.), 'Work') = 'True'">
-                            <rdawo:P10331 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'worNom', uwf:relWorkAccessPoint(.), uwf:getSubjectSchemeCode(.))}"/>
+                            <rdawo:P10331 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'worNom')}"/>
                         </xsl:when>
+                        <!-- otherwise just an access point -->
                         <xsl:otherwise>
-                            <rdawo:P10328 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'worNom', uwf:relWorkAccessPoint(.), uwf:getSubjectSchemeCode(.))}"/>
+                            <rdawo:P10328 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'worNom')}"/>
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:when>
+                <!-- if no source, just a string value as an access point -->
                 <xsl:otherwise>
                     <rdawd:P10328>
                         <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
                     </rdawd:P10328>
                 </xsl:otherwise>
             </xsl:choose>
+            <!-- if $0s and $1s are for the work (no v, x, y, z) - add the unapproved $0 and $1 values as identifiers -->
             <xsl:if test="not(marc:subfield[@code = 'v']) and not(marc:subfield[@code = 'x'])
                 and not(marc:subfield[@code = 'y']) and not(marc:subfield[@code = 'z'])">
                 <xsl:copy-of select="uwf:workIdentifiers(.)"/>
@@ -401,13 +411,14 @@
         match="marc:datafield[@tag = '630']"
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
+        <!-- if there is a source, mint a nomen -->
         <xsl:if test="@ind2 != '4'">
             <xsl:variable name="apWor" select="uwf:relWorkAccessPoint(.)"/>
             <xsl:variable name="scheme" select="uwf:getSubjectSchemeCode(.)"/>
             <xsl:variable name="prefLabel">
                 <xsl:call-template name="F630-label"/>
             </xsl:variable>
-            <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'worNom', '', '')}">
+            <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'worNom')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
                     <xsl:value-of select="$apWor"/>
@@ -519,10 +530,10 @@
                     <xsl:when test="@ind2 != '4'">
                         <xsl:choose>
                             <xsl:when test="starts-with(uwf:relWorkIRI($baseIRI, .), $BASE)">
-                                <rdato:P70047 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'timNom', marc:subfield[@code = 'a'], $scheme)}"/>
+                                <rdato:P70047 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'timNom')}"/>
                             </xsl:when>
                             <xsl:otherwise>
-                                <rdato:P70047 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'timNom', '', '')}"/>
+                                <rdato:P70047 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'timNom')}"/>
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:when>
@@ -548,10 +559,10 @@
             <xsl:variable name="nomIRI">
                 <xsl:choose>
                     <xsl:when test="starts-with(uwf:timespanIRI($baseIRI, ., marc:subfield[@code = 'a']), $BASE)">
-                        <xsl:value-of select="uwf:nomenIRI($baseIRI, ., 'timNom', marc:subfield[@code = 'a'], $scheme)"/>
+                        <xsl:value-of select="uwf:nomenIRI($baseIRI, ., 'timNom')"/>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="uwf:nomenIRI($baseIRI, ., 'timNom', '', '')"/>
+                        <xsl:value-of select="uwf:nomenIRI($baseIRI, ., 'timNom')"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:variable>
@@ -694,7 +705,7 @@
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
                 <xsl:choose>
                     <xsl:when test="@ind2 != '4'">
-                        <rdapo:P70045 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'plaNom', $ap, $scheme)}"/>
+                        <rdapo:P70045 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'plaNom')}"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <rdapd:P70018>
@@ -718,7 +729,7 @@
                 </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($placename)"/>
             </xsl:variable>
-            <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'plaNom', $ap, $scheme)}">
+            <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'plaNom')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
                     <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
@@ -989,7 +1000,7 @@
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
             <xsl:choose>
                 <xsl:when test="marc:subfield[@code = '2']">
-                    <rdapo:P70045 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'plaNom', $prefLabel, marc:subfield[@code = '2'])}"/>
+                    <rdapo:P70045 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'plaNom')}"/>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:choose>
@@ -1018,10 +1029,10 @@
             <xsl:variable name="nomIRI">
                 <xsl:choose>
                     <xsl:when test="starts-with(uwf:subjectIRI(., marc:subfield[@code = '2'], $prefLabel), $BASE)">
-                        <xsl:value-of select="uwf:nomenIRI($baseIRI, ., 'plaNom', $prefLabel, marc:subfield[@code = '2'])"/>
+                        <xsl:value-of select="uwf:nomenIRI($baseIRI, ., 'plaNom')"/>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="uwf:nomenIRI($baseIRI, ., 'plaNom', '', '')"/>
+                        <xsl:value-of select="uwf:nomenIRI($baseIRI, ., 'plaNom')"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:variable>
