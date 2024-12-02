@@ -44,5 +44,13 @@
             <marc:subfield code="a">test unlinked 880</marc:subfield>
             <marc:subfield code="2">jlabsh</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="647" ind1=" " ind2="4">
+            <marc:subfield code="6">880-02</marc:subfield>
+            <marc:subfield code="a">test linked 880 4 1</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1=" " ind2="4">
+            <marc:subfield code="6">647-02</marc:subfield>
+            <marc:subfield code="a">test linked 880 4 2</marc:subfield>
+        </marc:datafield>
     </marc:record>
 </marc:collection>

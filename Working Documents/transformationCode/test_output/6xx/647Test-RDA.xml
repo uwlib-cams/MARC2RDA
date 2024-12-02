@@ -16,6 +16,9 @@
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/jlabsh/con#testlinked880-1"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F880 #7 $6 647-00 $a test unlinked 880 $2 jlabsh</fake:marcfield>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/jlabsh/con#testunlinked880"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F647 #4 $6 880-02 $a test linked 880 4 1</fake:marcfield>
+      <rdawd:P10256>test linked 880 4 1</rdawd:P10256><!--rdawd:P10256 = has subject-->
+      <rdawd:P10256>test linked 880 4 2</rdawd:P10256><!--rdawd:P10256 = has subject-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
