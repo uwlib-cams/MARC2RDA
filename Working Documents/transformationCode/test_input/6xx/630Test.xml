@@ -59,5 +59,40 @@
             <marc:subfield code="1">https://musicbrainz.org/work/3f9ae128-bbec-3804-a477-83348f91dbc8</marc:subfield>
             <marc:subfield code="2">musicb</marc:subfield>
         </marc:datafield>
+        
+        <!-- test 880 -->
+        <marc:datafield tag="880" ind1="0" ind2="7">
+            <marc:subfield code="6">630-00</marc:subfield>
+            <marc:subfield code="a">test 880 1</marc:subfield>
+            <marc:subfield code="x">x value</marc:subfield>
+            <marc:subfield code="2">source</marc:subfield>
+        </marc:datafield>
+        
+        <!-- test 880 with 630-->
+        <marc:datafield tag="630" ind1="0" ind2="1">
+            <marc:subfield code="6">880-01</marc:subfield>
+            <marc:subfield code="a">test 880 1</marc:subfield>
+            <marc:subfield code="x">x value</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="880" ind1="0" ind2="1">
+            <marc:subfield code="6">630-01</marc:subfield>
+            <marc:subfield code="a">test 880 2</marc:subfield>
+            <marc:subfield code="x">x value</marc:subfield>
+        </marc:datafield>
+        
+        <!-- test 880 with 630-->
+        <marc:datafield tag="630" ind1="0" ind2="4">
+            <marc:subfield code="6">880-02</marc:subfield>
+            <marc:subfield code="a">test 880 ind2 is 4 1</marc:subfield>
+            <marc:subfield code="v">v value 1</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="880" ind1="0" ind2="4">
+            <marc:subfield code="6">630-02</marc:subfield>
+            <marc:subfield code="a">test 880 ind2 is 4 2</marc:subfield>
+            <marc:subfield code="v">v value 2</marc:subfield>
+        </marc:datafield>
+        
     </marc:record>
 </marc:collection>

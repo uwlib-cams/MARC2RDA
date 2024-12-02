@@ -324,7 +324,7 @@
     
     <!-- 630 - Subject Added Entry - Uniform Title -->
     <xsl:template
-        match="marc:datafield[@tag = '630']"
+        match="marc:datafield[@tag = '630'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '630-00']"
         mode="wor">
         <xsl:param name="baseIRI"/>
         <xsl:call-template name="getmarc"/>
@@ -339,6 +339,18 @@
             <xsl:call-template name="F6XX-subject">
                 <xsl:with-param name="prefLabel" select="$prefLabel"/>
             </xsl:call-template>
+            <xsl:if test="@tag = '630' and @ind2 = '4' and marc:subfield[@code = '6']">
+                <xsl:variable name="occNum" select="concat('630-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                <xsl:for-each
+                    select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                    <xsl:variable name="prefLabel880">
+                        <xsl:call-template name="F630-label"/>
+                    </xsl:variable>
+                    <xsl:call-template name="F6XX-subject">
+                        <xsl:with-param name="prefLabel" select="$prefLabel880"/>
+                    </xsl:call-template>
+                </xsl:for-each>
+            </xsl:if>
             <!-- category of work for v -->
             <xsl:for-each select="marc:subfield[@code = 'v']">
                 <xsl:call-template name="F6XX-xx-v"/>
@@ -346,7 +358,7 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template match="marc:datafield[@tag = '630']"
+    <xsl:template match="marc:datafield[@tag = '630'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '630-00']"
         mode="con" expand-text="yes">
         <!-- if v, x, y, z and source is provided, mint a concept -->
         <xsl:if test="marc:subfield[@code = 'v'] or marc:subfield[@code = 'x'] or marc:subfield[@code = 'y'] or marc:subfield[@code = 'z']">
@@ -358,6 +370,17 @@
                 <xsl:if test="starts-with(uwf:subjectIRI(., $scheme, $prefLabel), $BASE)"> 
                     <rdf:Description rdf:about="{uwf:subjectIRI(., $scheme, $prefLabel)}">
                         <xsl:copy-of select="uwf:fillConcept($prefLabel, $scheme, '', @tag)"/>
+                        <xsl:if test="@tag = '630' and marc:subfield[@code = '6']">
+                            <xsl:variable name="occNum"
+                                select="concat('630-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                            <xsl:for-each
+                                select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                                <xsl:variable name="prefLabel880">
+                                    <xsl:call-template name="F647-label"/>
+                                </xsl:variable>
+                                <xsl:copy-of select="uwf:fillConcept($prefLabel880, '', '', @tag)"/>
+                            </xsl:for-each>
+                        </xsl:if>
                     </rdf:Description>
                     <!-- also mint a concept for each $v -->
                     <xsl:for-each select="marc:subfield[@code = 'v']">
@@ -371,7 +394,7 @@
     </xsl:template>
     
     <xsl:template
-        match="marc:datafield[@tag = '630']"
+        match="marc:datafield[@tag = '630'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '630-00']"
         mode="relWor" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <!-- mint the work -->
@@ -397,6 +420,15 @@
                     <rdawd:P10328>
                         <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
                     </rdawd:P10328>
+                    <xsl:if test="@tag = '630' and @ind2 = '4' and marc:subfield[@code = '6']">
+                        <xsl:variable name="occNum" select="concat('630-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                        <xsl:for-each
+                            select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                            <rdawd:P10328>
+                                <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
+                            </rdawd:P10328>
+                        </xsl:for-each>
+                    </xsl:if>
                 </xsl:otherwise>
             </xsl:choose>
             <!-- if $0s and $1s are for the work (no v, x, y, z) - add the unapproved $0 and $1 values as identifiers -->
@@ -408,7 +440,7 @@
     </xsl:template>
     
     <xsl:template
-        match="marc:datafield[@tag = '630']"
+        match="marc:datafield[@tag = '630'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '630-00']"
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <!-- if there is a source, mint a nomen -->
@@ -423,6 +455,14 @@
                 <rdand:P80068>
                     <xsl:value-of select="$apWor"/>
                 </rdand:P80068>
+                <xsl:if test="@tag = '630' and marc:subfield[@code = '6']">
+                    <xsl:variable name="occNum" select="concat('630-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                    <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                        <rdand:P80113>
+                            <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
+                        </rdand:P80113>
+                    </xsl:for-each>
+                </xsl:if>
                 <xsl:choose>
                     <xsl:when test="@ind2 = '7'">
                         <xsl:copy-of select="uwf:s2Nomen(marc:subfield[@code = '2'][1])"/>
