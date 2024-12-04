@@ -799,7 +799,7 @@
     <!-- 650 - Subject Added Entry - Topical Term -->
     
     <xsl:template
-        match="marc:datafield[@tag = '650']"
+        match="marc:datafield[@tag = '650'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '650-00']"
         mode="wor">
         <xsl:call-template name="getmarc"/>
         <!-- 650 label combines subfields separated by dashes -->
@@ -810,6 +810,19 @@
         <xsl:call-template name="F6XX-subject">
             <xsl:with-param name="prefLabel" select="$prefLabel"/>
         </xsl:call-template>
+        <!-- for linked 880s, when ind2 is 4 (no source), it also outputs a subject triple for that -->
+        <xsl:if test="@tag = '650' and @ind2 = '4' and marc:subfield[@code = '6']">
+            <xsl:variable name="occNum" select="concat('650-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+            <xsl:for-each
+                select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                <xsl:variable name="prefLabel880">
+                    <xsl:call-template name="F650-label"/>
+                </xsl:variable>
+                <xsl:call-template name="F6XX-subject">
+                    <xsl:with-param name="prefLabel" select="$prefLabel880"/>
+                </xsl:call-template>
+            </xsl:for-each>
+        </xsl:if>
         <!-- uwf:subjectIRI returns an IRI if $1 or $0 is valid, otherwise mints one starting with the provided BASE iri -->
         <!-- this if test checks whether the IRI used is one we minted or not -->
         <xsl:if test="starts-with(uwf:subjectIRI(., uwf:getSubjectSchemeCode(.), $prefLabel), $BASE)">   
@@ -818,7 +831,7 @@
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '650']"
+    <xsl:template match="marc:datafield[@tag = '650'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '650-00']"
         mode="con" expand-text="yes">
         <xsl:if test="@ind2 != '4'">
             <xsl:variable name="prefLabel">
@@ -828,6 +841,17 @@
             <xsl:if test="starts-with(uwf:subjectIRI(., $scheme, $prefLabel), $BASE)">
                  <rdf:Description rdf:about="{uwf:subjectIRI(., $scheme, $prefLabel)}">
                      <xsl:copy-of select="uwf:fillConcept($prefLabel, $scheme, '', @tag)"/>
+                     <xsl:if test="@tag = '650' and marc:subfield[@code = '6']">
+                         <xsl:variable name="occNum"
+                             select="concat('650-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                         <xsl:for-each
+                             select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                             <xsl:variable name="prefLabel880">
+                                 <xsl:call-template name="F650-label"/>
+                             </xsl:variable>
+                             <xsl:copy-of select="uwf:fillConcept($prefLabel880, '', '', @tag)"/>
+                         </xsl:for-each>
+                     </xsl:if>
                  </rdf:Description>
                  <xsl:for-each select="marc:subfield[@code = 'v']">
                      <rdf:Description rdf:about="{uwf:conceptIRI($scheme, .)}">
