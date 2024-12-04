@@ -8,11 +8,11 @@
       <fake:marcfield>F648 #7 $a Early Cretaceous $1 http://n2t.net/ark:/99152/p09qtgwjphz $2 periodo</fake:marcfield>
       <rdawo:P10322 rdf:resource="http://n2t.net/ark:/99152/p09qtgwjphz"/><!--rdawo:P10322 = has subject timespan-->
       <fake:marcfield>F648 #7 $a 2014 $2 fast $1 http://fakeiri.edu/5678</fake:marcfield>
-      <rdawo:P10322 rdf:resource="http://fakeiri.edu/5678"/><!--rdawo:P10322 = has subject timespan-->
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/fast/timespan#2014"/><!--rdawo:P10322 = has subject timespan-->
       <fake:marcfield>F648 #7 $a 1861-1865 $2 fast</fake:marcfield>
       <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/fast/timespan#1861-1865"/><!--rdawo:P10322 = has subject timespan-->
       <fake:marcfield>F648 #7 $a Since 1875 $2 fast $1 http://fakeiri.edu/1234</fake:marcfield>
-      <rdawo:P10322 rdf:resource="http://fakeiri.edu/1234"/><!--rdawo:P10322 = has subject timespan-->
+      <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/fast/timespan#since1875"/><!--rdawo:P10322 = has subject timespan-->
       <fake:marcfield>F648 #7 $a Geschichte. $2 gnd</fake:marcfield>
       <rdawo:P10322 rdf:resource="http://marc2rda.edu/fake/gnd/timespan#geschichte"/><!--rdawo:P10322 = has subject timespan-->
       <fake:marcfield>F648 #7 $a 1500-1600. $0 (NL-LeOCL)241923875 $2 gtt</fake:marcfield>
@@ -133,17 +133,19 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
       <rdato:P70047 rdf:resource="http://marc2rda.edu/fake/6xx-test1timNom#d22e9"/><!--rdato:P70047 = has authorized access point for timespan-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeiri.edu/5678">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/timespan#2014">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
       <rdato:P70015 rdf:resource="http://marc2rda.edu/fake/6xx-test1timNom#d22e16"/><!--rdato:P70015 = has access point for timespan-->
+      <rdatd:P70018>http://fakeiri.edu/5678</rdatd:P70018><!--rdatd:P70018 = has identifier for timespan-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/timespan#1861-1865">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
       <rdato:P70015 rdf:resource="http://marc2rda.edu/fake/6xx-test1timNom#d22e23"/><!--rdato:P70015 = has access point for timespan-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeiri.edu/1234">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/timespan#since1875">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
       <rdato:P70015 rdf:resource="http://marc2rda.edu/fake/6xx-test1timNom#d22e28"/><!--rdato:P70015 = has access point for timespan-->
+      <rdatd:P70018>http://fakeiri.edu/1234</rdatd:P70018><!--rdatd:P70018 = has identifier for timespan-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/gnd/timespan#geschichte">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
@@ -152,6 +154,7 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/gtt/timespan#1500-1600">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
       <rdato:P70015 rdf:resource="http://marc2rda.edu/fake/6xx-test1timNom#d22e40"/><!--rdato:P70015 = has access point for timespan-->
+      <rdatd:P70018>(NL-LeOCL)241923875</rdatd:P70018><!--rdatd:P70018 = has identifier for timespan-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/timespan#1997">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>

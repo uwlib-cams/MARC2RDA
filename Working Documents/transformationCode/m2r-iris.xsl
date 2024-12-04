@@ -21,6 +21,9 @@
     xmlns:rdan="http://rdaregistry.info/Elements/n/"
     xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
     xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+    xmlns:rdat="http://rdaregistry.info/Elements/t/"
+    xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+    xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
     xmlns:uwf="http://universityOfWashington/functions" xmlns:fake="http://fakePropertiesForDemo"
     xmlns:uwmisc="http://uw.edu/all-purpose-namespace/" exclude-result-prefixes="marc ex uwf"
     version="3.0">
@@ -270,17 +273,38 @@
         <xsl:param name="baseIRI"/>
         <xsl:param name="field"/>
         <xsl:param name="ap"/>
+        
         <xsl:choose>
             <xsl:when test="$field/marc:subfield[@code = '1'] and (starts-with($field/@tag, '6') and 
                 not($field/marc:subfield[@code = 'v' or @code = 'x' or @code = 'y' or @code = 'z']))">
+                <xsl:variable name="sub1">
+                    <xsl:choose>
+                        <xsl:when test="count($field/marc:subfield[@code = '1']) > 1">
+                            <xsl:value-of select="uwf:multiple1s($field, 'Timespan')[1]"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="$field/marc:subfield[@code = '1']"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:variable>
                 <xsl:choose>
-                    <xsl:when test="count($field/marc:subfield[@code = '1']) > 1">
-                        <xsl:value-of select="uwf:multiple1s($field, 'Timespan')[1]"/>
-                    </xsl:when>
+                    <xsl:when test="uwf:IRILookup($sub1, 'Timespan') = 'True'">
+                        <xsl:value-of select="$sub1"/>
+                    </xsl:when>  
                     <xsl:otherwise>
-                        <xsl:value-of select="$field/marc:subfield[@code = '1']"/>
+                        <xsl:choose>
+                            <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4' or $field/@ind2 = ' ' or $field/@ind2 = '7')">
+                                <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||'timespan#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                            </xsl:when>
+                            <xsl:when test="$field/marc:subfield[@code = '2']">
+                                <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'timespan#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="$baseIRI||'timespan#'||generate-id($field)"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
                     </xsl:otherwise>
-                </xsl:choose>
+                </xsl:choose>                
             </xsl:when>
             <xsl:otherwise>
                 <xsl:choose>
@@ -351,20 +375,23 @@
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
-            <!-- If $0 -->
+            <!-- If $0 and not $1 -->
             <xsl:when test="not($field/marc:subfield[@code = '1']) and $field/marc:subfield[@code = '0']">
                 <xsl:variable name="sub0">
                     <xsl:choose>
                         <xsl:when test="count($field/marc:subfield[@code='0']) gt 1">
                             <xsl:choose>
+                                <!-- if there are multipel 0s, see if any are FAST ids -->
                                 <xsl:when test="uwf:multiple0s($field)">
                                     <xsl:value-of select="uwf:multiple0s($field)[1]"/>
                                 </xsl:when>
+                                <!-- then check if there are any IRIs (contain http) -->
                                 <xsl:otherwise>
                                     <xsl:value-of select="uwf:multiple0IRIs($field)[1]"/>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:when>
+                        <!-- else just grab the 0 -->
                         <xsl:otherwise>
                             <xsl:value-of select="$field/marc:subfield[@code='0']"/>
                         </xsl:otherwise>
@@ -388,6 +415,7 @@
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:when>
+                    <!-- otherwise use concept IRI based on scheme and prefLabel -->
                     <xsl:otherwise>
                         <xsl:value-of select="uwf:conceptIRI($scheme, replace($value, '--', ''))"/>
                     </xsl:otherwise>
@@ -474,6 +502,22 @@
                 <rdawd:P10002>
                     <xsl:value-of select="."/>
                 </rdawd:P10002>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:function>
+    
+    <xsl:function name="uwf:timespanIdentifiers">
+        <xsl:param name="field"/>
+        <xsl:for-each select="$field/marc:subfield[@code = '0']">
+            <rdatd:P70018>
+                <xsl:value-of select="."/>
+            </rdatd:P70018>
+        </xsl:for-each>
+        <xsl:for-each select="$field/marc:subfield[@code = '1']">
+            <xsl:if test="uwf:IRILookup(., 'Timespan') = 'False'">
+                <rdatd:P70018>
+                    <xsl:value-of select="."/>
+                </rdatd:P70018>
             </xsl:if>
         </xsl:for-each>
     </xsl:function>

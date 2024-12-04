@@ -748,6 +748,11 @@
                         </xsl:if>
                     </xsl:otherwise>
                 </xsl:choose>
+                <!-- if $0s and $1s are for the timespan (no v, x, y, z) - add the unapproved $0 and $1 values as identifiers -->
+                <xsl:if test="not(marc:subfield[@code = 'v']) and not(marc:subfield[@code = 'x'])
+                    and not(marc:subfield[@code = 'y']) and not(marc:subfield[@code = 'z'])">
+                    <xsl:copy-of select="uwf:timespanIdentifiers(.)"/>
+                </xsl:if>
             </rdf:Description>
         </xsl:if>
     </xsl:template>
