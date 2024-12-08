@@ -87,6 +87,7 @@
                     <rdawo:P10262 rdf:resource="{uwf:agentIRI($baseIRI, .)}"/>
                 </xsl:when>
             </xsl:choose>
+            <xsl:copy-of select="uwf:workIdentifiers(.)"/>
         </rdf:Description>
     </xsl:template>
     
