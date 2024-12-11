@@ -389,7 +389,7 @@
                         <rdawo:P10331 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'worNom')}"/>
                     </xsl:when>
                     <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Work') = 'False'">
-                        <rdaao:P10328 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
+                        <rdaao:P10328 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'worNom')}"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <rdawd:P10328>
