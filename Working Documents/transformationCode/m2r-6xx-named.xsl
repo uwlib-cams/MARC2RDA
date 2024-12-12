@@ -122,7 +122,7 @@
     </xsl:template>
     <xsl:template name="F653-label" expand-text="yes">
         <xsl:variable name="label">
-            <xsl:value-of select="marc:subfield[@code = 'a']" separator="--"/>
+            <xsl:value-of select="marc:subfield[@code = 'a']" separator=" "/>
         </xsl:variable>
         <xsl:value-of select="uwf:stripEndPunctuation($label)"/>
     </xsl:template>

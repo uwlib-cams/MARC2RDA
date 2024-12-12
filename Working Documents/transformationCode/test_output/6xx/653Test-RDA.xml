@@ -29,9 +29,11 @@
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwf="http://universityOfWashington/functions"
          xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
-   <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1wor">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/6xx-test1exp"/>
       <rdawd:P10002>6xx-test1wor</rdawd:P10002>
       <fake:marcfield>F653 #0 $a Mann</fake:marcfield>
       <rdawd:P10256>Mann</rdawd:P10256>
@@ -45,16 +47,17 @@
       <rdawd:P10322>Chronological term</rdawd:P10322>
       <fake:marcfield>F653 #5 $a Dublin</fake:marcfield>
       <rdawd:P10321>Dublin</rdawd:P10321>
-      <fake:marcfield>F653 #6 $a Genre/Form term</fake:marcfield>
+      <fake:marcfield>F880 #6 $6 653-00 $a Genre/Form term</fake:marcfield>
       <rdawd:P10004>Genre/Form term</rdawd:P10004>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1exp">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/6xx-test1wor"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/6xx-test1man"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/6xx-test1wor"/>
       <rdaed:P20002>6xx-test1exp</rdaed:P20002>
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/6xx-test1man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/6xx-test1exp"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/6xx-test1exp"/>
    </rdf:Description>
 </rdf:RDF>

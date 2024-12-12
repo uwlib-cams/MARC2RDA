@@ -839,19 +839,19 @@
             </xsl:variable>
             <xsl:variable name="scheme" select="uwf:getSubjectSchemeCode(.)"/>
             <xsl:if test="starts-with(uwf:subjectIRI(., $scheme, $prefLabel), $BASE)">
-                 <rdf:Description rdf:about="{uwf:subjectIRI(., $scheme, $prefLabel)}">
-                     <xsl:copy-of select="uwf:fillConcept($prefLabel, $scheme, '', @tag)"/>
-                     <xsl:if test="@tag = '650' and marc:subfield[@code = '6']">
-                         <xsl:variable name="occNum"
-                             select="concat('650-', substring(marc:subfield[@code = '6'], 5, 6))"/>
-                         <xsl:for-each
-                             select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
-                             <xsl:variable name="prefLabel880">
-                                 <xsl:call-template name="F650-label"/>
-                             </xsl:variable>
-                             <xsl:copy-of select="uwf:fillConcept($prefLabel880, '', '', @tag)"/>
-                         </xsl:for-each>
-                     </xsl:if>
+                <rdf:Description rdf:about="{uwf:subjectIRI(., $scheme, $prefLabel)}">
+                    <xsl:copy-of select="uwf:fillConcept($prefLabel, $scheme, '', @tag)"/>
+                    <xsl:if test="@tag = '650' and marc:subfield[@code = '6']">
+                        <xsl:variable name="occNum"
+                            select="concat('650-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                        <xsl:for-each
+                            select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                            <xsl:variable name="prefLabel880">
+                                <xsl:call-template name="F650-label"/>
+                            </xsl:variable>
+                            <xsl:copy-of select="uwf:fillConcept($prefLabel880, '', '', @tag)"/>
+                        </xsl:for-each>
+                    </xsl:if>
                  </rdf:Description>
                  <xsl:for-each select="marc:subfield[@code = 'v']">
                      <rdf:Description rdf:about="{uwf:conceptIRI($scheme, .)}">
@@ -865,29 +865,46 @@
     <!-- 651 - Subject Added Entry - Geographic Name -->
     
     <xsl:template
-        match="marc:datafield[@tag = '651']"
-        mode="wor">
+        match="marc:datafield[@tag = '651'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '651-00']"
+        mode="wor" expand-text='yes'>
         <xsl:param name="baseIRI"/>
         <xsl:call-template name="getmarc"/>
         <xsl:variable name="prefLabel">
             <xsl:call-template name="F651-label"/>
         </xsl:variable>
         <!-- subject place -->
-        <xsl:if test="marc:subfield[@code = 'a']">
-            <xsl:variable name="ap">
-                <xsl:variable name="placename">
-                    <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'g']"/>
-                </xsl:variable>
-                <xsl:value-of select="uwf:stripEndPunctuation($placename)"/>
+        <xsl:variable name="ap">
+            <xsl:variable name="placename">
+                <xsl:choose>
+                    <xsl:when test="marc:subfield[@code = 'g']">
+                        <xsl:text>{marc:subfield[@code = 'a']} ({marc:subfield[@code = 'g']})</xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:variable>
-            <rdawo:P10321 rdf:resource="{uwf:placeIRI($baseIRI, ., $ap, uwf:getSubjectSchemeCode(.))}"/>   
-        </xsl:if>
+            <xsl:value-of select="uwf:stripEndPunctuation($placename)"/>
+        </xsl:variable>
+        <rdawo:P10321 rdf:resource="{uwf:placeIRI($baseIRI, ., $ap, uwf:getSubjectSchemeCode(.))}"/>   
         <!-- subject if v, x, y, z -->
         <xsl:if test="marc:subfield[@code = 'v'] or marc:subfield[@code = 'x'] 
             or marc:subfield[@code = 'y'] or marc:subfield[@code = 'z']">
             <xsl:call-template name="F6XX-subject">
                 <xsl:with-param name="prefLabel" select="$prefLabel"/>
             </xsl:call-template>
+            <xsl:if test="@tag = '651' and @ind2 = '4' and marc:subfield[@code = '6']">
+                <xsl:variable name="occNum" select="concat('651-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                <xsl:for-each
+                    select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                    <xsl:variable name="prefLabel880">
+                        <xsl:call-template name="F651-label"/>
+                    </xsl:variable>
+                    <xsl:call-template name="F6XX-subject">
+                        <xsl:with-param name="prefLabel" select="$prefLabel880"/>
+                    </xsl:call-template>
+                </xsl:for-each>
+            </xsl:if>
             <xsl:if test="starts-with(uwf:subjectIRI(., uwf:getSubjectSchemeCode(.), $prefLabel), $BASE)">   
                 <xsl:for-each select="marc:subfield[@code = 'v']">
                     <xsl:call-template name="F6XX-xx-v"/>
@@ -896,7 +913,7 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template match="marc:datafield[@tag = '651']"
+    <xsl:template match="marc:datafield[@tag = '651'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '651-00']"
         mode="con" expand-text="yes">
         <xsl:if test="@ind2 != '4'">
             <xsl:if test="marc:subfield[@code = 'v'] or marc:subfield[@code = 'x'] 
@@ -908,6 +925,17 @@
                 <xsl:if test="starts-with(uwf:subjectIRI(., $scheme, $prefLabel), $BASE)">
                     <rdf:Description rdf:about="{uwf:subjectIRI(., $scheme, $prefLabel)}">
                         <xsl:copy-of select="uwf:fillConcept($prefLabel, $scheme, '', @tag)"/>
+                        <xsl:if test="@tag = '651' and marc:subfield[@code = '6']">
+                            <xsl:variable name="occNum"
+                                select="concat('651-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                            <xsl:for-each
+                                select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                                <xsl:variable name="prefLabel880">
+                                    <xsl:call-template name="F651-label"/>
+                                </xsl:variable>
+                                <xsl:copy-of select="uwf:fillConcept($prefLabel880, '', '', @tag)"/>
+                            </xsl:for-each>
+                        </xsl:if>
                     </rdf:Description>
                     <xsl:for-each select="marc:subfield[@code = 'v']">
                         <rdf:Description rdf:about="{uwf:conceptIRI($scheme, .)}">
@@ -919,73 +947,133 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template match="marc:datafield[@tag = '651']"
-        mode="pla">
+    <xsl:template match="marc:datafield[@tag = '651'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '651-00']"
+        mode="pla" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:variable name="prefLabel">
             <xsl:call-template name="F651-label"/>
         </xsl:variable>
-        <xsl:if test="marc:subfield[@code = 'a']">
-            <xsl:variable name="ap">
-                <xsl:variable name="placename">
-                    <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'g']"/>
-                </xsl:variable>
-                <xsl:value-of select="uwf:stripEndPunctuation($placename)"/>
-            </xsl:variable>
-            <xsl:variable name="scheme" select="uwf:getSubjectSchemeCode(.)"/>
-            <rdf:Description rdf:about="{uwf:placeIRI($baseIRI, .,  $ap, $scheme)}">
-                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+        <xsl:variable name="ap">
+            <xsl:variable name="placename">
                 <xsl:choose>
-                    <xsl:when test="@ind2 != '4'">
-                        <rdapo:P70045 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'plaNom')}"/>
+                    <xsl:when test="marc:subfield[@code = 'g']">
+                        <xsl:text>{marc:subfield[@code = 'a']} ({marc:subfield[@code = 'g']})</xsl:text>
                     </xsl:when>
                     <xsl:otherwise>
-                        <rdapd:P70018>
-                            <xsl:value-of select="$ap"/>
-                        </rdapd:P70018>
+                        <xsl:value-of select="marc:subfield[@code = 'a']"/>
                     </xsl:otherwise>
                 </xsl:choose>
-            </rdf:Description>
-        </xsl:if>
+            </xsl:variable>
+            <xsl:value-of select="uwf:stripEndPunctuation($placename)"/>
+        </xsl:variable>
+        <xsl:variable name="scheme" select="uwf:getSubjectSchemeCode(.)"/>
+        <rdf:Description rdf:about="{uwf:placeIRI($baseIRI, .,  $ap, $scheme)}">
+            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+            <xsl:choose>
+                <xsl:when test="@ind2 != '4'">
+                    <xsl:choose>
+                        <xsl:when test="uwf:s2EntityTest($scheme, 'Place') = 'True'">
+                            <rdapo:P70045 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'plaNom')}"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <rdapo:P70018 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'plaNom')}"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:when>
+                <xsl:otherwise>
+                    <rdapd:P70018>
+                        <xsl:value-of select="$ap"/>
+                    </rdapd:P70018>
+                    <xsl:if test="@tag = '651' and @ind2 = '4' and marc:subfield[@code = '6']">
+                        <xsl:variable name="occNum" select="concat('651-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                        <xsl:for-each
+                            select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                            <xsl:variable name="ap880">
+                                <xsl:variable name="placename880">
+                                    <xsl:choose>
+                                        <xsl:when test="marc:subfield[@code = 'g']">
+                                            <xsl:text>{marc:subfield[@code = 'a']} ({marc:subfield[@code = 'g']})</xsl:text>
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                            <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                                        </xsl:otherwise>
+                                    </xsl:choose>
+                                </xsl:variable>
+                                <xsl:value-of select="uwf:stripEndPunctuation($placename880)"/>
+                            </xsl:variable>
+                            <rdapd:P70018>
+                                <xsl:value-of select="$ap880"/>
+                            </rdapd:P70018>
+                        </xsl:for-each>
+                    </xsl:if>
+                </xsl:otherwise>
+            </xsl:choose>
+        </rdf:Description>
     </xsl:template>
     
     <xsl:template
-        match="marc:datafield[@tag = '651']"
+        match="marc:datafield[@tag = '651'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '651-00']"
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
-        <xsl:if test="marc:subfield[@code = 'a']">
-            <xsl:variable name="scheme" select="uwf:getSubjectSchemeCode(.)"/>
-            <xsl:variable name="ap">
-                <xsl:variable name="placename">
-                    <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'g']"/>
-                </xsl:variable>
-                <xsl:value-of select="uwf:stripEndPunctuation($placename)"/>
-            </xsl:variable>
-            <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'plaNom')}">
-                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-                <rdand:P80068>
-                    <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
-                </rdand:P80068>
+        <xsl:variable name="scheme" select="uwf:getSubjectSchemeCode(.)"/>
+        <xsl:variable name="ap">
+            <xsl:variable name="placename">
                 <xsl:choose>
-                    <xsl:when test="@ind2 = '7'">
-                        <xsl:choose>
-                            <xsl:when test="marc:subfield[@code = '2']">
-                                <xsl:copy-of select="uwf:s2Nomen(marc:subfield[@code = '2'][1])"/>
-                            </xsl:when>
-                            <xsl:otherwise/>
-                        </xsl:choose>
+                    <xsl:when test="marc:subfield[@code = 'g']">
+                        <xsl:text>{marc:subfield[@code = 'a']} ({marc:subfield[@code = 'g']})</xsl:text>
                     </xsl:when>
                     <xsl:otherwise>
-                        <rdan:P80069 rdf:resource="{uwf:ind2Thesaurus(@ind2)}"/>
+                        <xsl:value-of select="marc:subfield[@code = 'a']"/>
                     </xsl:otherwise>
                 </xsl:choose>
-            </rdf:Description>
-        </xsl:if>
+            </xsl:variable>
+            <xsl:value-of select="uwf:stripEndPunctuation($placename)"/>
+        </xsl:variable>
+        <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'plaNom')}">
+            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+            <rdand:P80068>
+                <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
+            </rdand:P80068>
+            <xsl:if test="@tag = '651' and marc:subfield[@code = '6']">
+                <xsl:variable name="occNum" select="concat('651-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                    <rdand:P80113>
+                        <xsl:variable name="ap880">
+                            <xsl:variable name="placename880">
+                                <xsl:choose>
+                                    <xsl:when test="marc:subfield[@code = 'g']">
+                                        <xsl:text>{marc:subfield[@code = 'a']} ({marc:subfield[@code = 'g']})</xsl:text>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:variable>
+                            <xsl:value-of select="uwf:stripEndPunctuation($placename880)"/>
+                        </xsl:variable>
+                        <xsl:value-of select="$ap880"/>
+                    </rdand:P80113>
+                </xsl:for-each>
+            </xsl:if>
+            <xsl:choose>
+                <xsl:when test="@ind2 = '7'">
+                    <xsl:choose>
+                        <xsl:when test="marc:subfield[@code = '2']">
+                            <xsl:copy-of select="uwf:s2Nomen(marc:subfield[@code = '2'][1])"/>
+                        </xsl:when>
+                        <xsl:otherwise/>
+                    </xsl:choose>
+                </xsl:when>
+                <xsl:otherwise>
+                    <rdan:P80069 rdf:resource="{uwf:ind2Thesaurus(@ind2)}"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </rdf:Description>
     </xsl:template>
 
     <!-- 653 - Index Term - Uncontrolled -->
     <xsl:template
-        match="marc:datafield[@tag = '653']"
+        match="marc:datafield[@tag = '653'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '653']"
         mode="wor">
         <xsl:call-template name="getmarc"/>
         <xsl:variable name="prefLabel">
