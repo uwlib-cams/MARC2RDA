@@ -107,8 +107,16 @@
     </xsl:template>
     <xsl:template name="F651-label" expand-text="yes">
         <xsl:variable name="label">
-            <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'v']
-            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator="--"/>
+            <xsl:choose>
+                <xsl:when test="marc:subfield[@code = 'g']">
+                    <xsl:text>{marc:subfield[@code = 'a']} ({marc:subfield[@code = 'g']})</xsl:text>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                </xsl:otherwise>
+            </xsl:choose>
+            <xsl:text>--</xsl:text>
+            <xsl:value-of select="marc:subfield[@code = 'v'] | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator="--"/>
         </xsl:variable>
         <xsl:value-of select="uwf:stripEndPunctuation($label)"/>
     </xsl:template>
