@@ -135,9 +135,12 @@
     </xsl:template>
     <xsl:template name="F655-label" expand-text="yes">
         <xsl:variable name="label">
-            <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'v'] 
-            | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator="--"/>
-        </xsl:variable>
+            <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']"/>
+            <xsl:if test="marc:subfield[@code = 'v'] or marc:subfield[@code = 'x'] or marc:subfield[@code = 'y'] or marc:subfield[@code = 'z']">
+                <xsl:text>--</xsl:text>
+                <xsl:value-of select="marc:subfield[@code = 'v'] | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator="--"/>
+            </xsl:if>
+           </xsl:variable>
         <xsl:value-of select="uwf:stripEndPunctuation($label)"/>
     </xsl:template>
     <xsl:template name="F656-label" expand-text="yes">

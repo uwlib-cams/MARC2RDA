@@ -4,7 +4,7 @@
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/6xx-test1exp"/><!--rdawo:P10078 = has expression of work-->
       <rdawd:P10002>6xx-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <fake:marcfield>F654 ## $a MUSIC / Genres &amp; Styles / Jazz.</fake:marcfield>
-      <rdawd:P10256>MUSIC / Genres &amp; Styles / Jazz</rdawd:P10256><!--rdawd:P10256 = has subject-->
+      <rdawd:P10256>MUSIC / Genres &amp; Styles / Jazz.--</rdawd:P10256><!--rdawd:P10256 = has subject-->
       <fake:marcfield>F654 ## $a SOCIAL SCIENCE / General. $2 bisacsh</fake:marcfield>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/bisacsh/con#socialsciencegeneral"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F654 2# $c k $a Urban planning $c z $b United States $c y $b 1800-1940. $2 aat</fake:marcfield>
@@ -30,12 +30,12 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/bisacsh/con#socialsciencegeneral">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>SOCIAL SCIENCE / General</skos:prefLabel>
+      <skos:prefLabel>SOCIAL SCIENCE / General.--</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/bisacsh"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/aat/con#urbanplanningunitedstates1800-1940">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Urban planning--United States--1800-1940</skos:prefLabel>
+      <skos:prefLabel>Urban planning United States 1800-1940.--</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/aat/con#landscape18thcenturyenglandtestv">
@@ -50,7 +50,7 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/source/con#test880">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>test 880</skos:prefLabel>
+      <skos:prefLabel>test 880--</skos:prefLabel>
       <!--IRI could not be found for source-->
       <skos:inScheme>source</skos:inScheme>
    </rdf:Description>
