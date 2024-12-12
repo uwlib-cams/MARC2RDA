@@ -104,7 +104,7 @@
                     <xsl:choose>
                         <xsl:when test="@ind1 = '0' or @ind1 = '1' or @ind1 = '2'">
                             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-                            <xsl:choose> <!-- DC: New edits, approved list lookup? -->
+                            <xsl:choose>
                                 <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Person') = 'True'">">
                                     <rdaao:P50411 rdf:resource="{uwf:nomenIRI($baseIRI, .,'ageNom')}"/>
                                 </xsl:when>
@@ -125,13 +125,11 @@
                                     </xsl:if>
                                 </xsl:otherwise>
                             </xsl:choose>
-                            <!-- DC: New edits: copied from 1xx7xx. If we minted the IRI - add additional details -->
                             <xsl:if test="starts-with(uwf:agentIRI($baseIRI, .), $BASE)">
                                 <xsl:call-template name="FX00-x1-d"/>
                                 <xsl:call-template name="FX00-x1-q"/>
                             </xsl:if>
                         </xsl:when>
-                        <!-- DC: New edits: copied from 1xx7xx. Deal with FamilyIRI transform? checks if it is in the approved list -->
                         <xsl:when test="@ind1 = '3'">
                             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10008"/>
                             <xsl:choose>
@@ -147,7 +145,6 @@
                                     <rdaad:P50376>
                                         <xsl:value-of select="uwf:agentAccessPoint(.)"/>
                                     </rdaad:P50376>
-                                    <!-- DC: Still not sure what occNum does -->
                                     <xsl:if test="@tag != '880' and marc:subfield[@code = '6']">
                                         <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                                         <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
