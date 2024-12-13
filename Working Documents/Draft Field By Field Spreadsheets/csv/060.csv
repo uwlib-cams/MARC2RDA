@@ -2,12 +2,12 @@
 0,first pass,60,NATIONAL LIBRARY OF MEDICINE CALL NUMBER (R),Existence in NLM collection,*, ,Source of call number,*, ,,,a,Classification number (R),,,$a, in “QS-QZ and W”,,,http://rdaregistry.info/Elements/w/P10256,has subject,structured description,,"<work> rdawo:P10256 <ConceptNLM(value of $a)> .
 <ConceptNLM(value of $a)> skos:notation ""value of $a""^^<SchemeNotationNLM> .
 <ConceptNLM(value of $a)> skos:altLabel ""value of $a"" .
-<ConceptNLM(value of $a)> skos:inScheme http://id.loc.gov/vocabulary/classSchemes/nlm . // tScheme(schemeCode) for 060 = http://id.loc.gov/vocabulary/classSchemes/ + “nlm”",,
+<ConceptNLM(value of $a)> skos:inScheme http://id.loc.gov/vocabulary/classSchemes/nlm . // tScheme(schemeCode) for 060 = http://id.loc.gov/vocabulary/classSchemes/ + “nlm”",,coded - CP 2024-08-30
 1,first pass,60,NATIONAL LIBRARY OF MEDICINE CALL NUMBER (R),Existence in NLM collection,*, ,Source of call number,*, ,,,a,Classification number (R),,,$a ,not in “QS-QZ and W”,,,http://rdaregistry.info/Elements/w/P10256,has subject,structured description,,"""<work> rdawo:P10256 <ConceptLCC(value of $a)> .
 <ConceptLCC(value of $a)> skos:notation ""value of $a""^^<SchemeNotationLCC> .
 <ConceptLCC(value of $a)> skos:altLabel ""value of $a"" .
 <ConceptLCC(value of $a)> skos:inScheme http://id.loc.gov/vocabulary/classSchemes/lcc . // tScheme(schemeCode) for 060 = http://id.loc.gov/vocabulary/classSchemes/ + “lcc”
-",,
+",,coded - CP 2024-08-30
 2,delete,60,NATIONAL LIBRARY OF MEDICINE CALL NUMBER (R),Existence in NLM collection,#,No information provided,Source of call number,#,No information provided [OBSOLETE],,,a,Classification number (R),,,,,,,,,,,,,
 3,delete,60,NATIONAL LIBRARY OF MEDICINE CALL NUMBER (R),Existence in NLM collection,#,No information provided,Source of call number,0,Assigned by NLM,,,a,Classification number (R),,,,,,,,,,,,,
 4,delete,60,NATIONAL LIBRARY OF MEDICINE CALL NUMBER (R),Existence in NLM collection,#,No information provided,Series call number (SE) [OBSOLETE],0,No series involved,,,a,Classification number (R),,,,,,,,,,,,,

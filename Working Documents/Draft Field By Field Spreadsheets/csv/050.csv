@@ -23,7 +23,9 @@ Example 1: 050 00 $a Z699.35.M28 $b W55 2013
 <ConceptLCC(“Z699.35.M28”)> skos:notation “Z699.35.M28”^^<SchemeNotationLCC> .
 <ConceptLCC(“Z699.35.M28”)> skos:altLabel “Z699.35.M28” .
 <ConceptLCC(“Z699.35.M28”)> skos:inScheme https://id.loc.gov/vocabulary/classSchemes/lcc.
---Gordon 03/01/2024","The instance of skos:Concept is an opaque URI, and tConcept() is the transform for the skos sub-graph. The concept transform invokes a label transform (tLabel()), a notation transform (tNotation()), and notation datatype transform (tSchemeNotation()), and a scheme transform (tScheme()). For field 050:
+--Gordon 03/01/2024","coded - CP 2024-09-19
+
+The instance of skos:Concept is an opaque URI, and tConcept() is the transform for the skos sub-graph. The concept transform invokes a label transform (tLabel()), a notation transform (tNotation()), and notation datatype transform (tSchemeNotation()), and a scheme transform (tScheme()). For field 050:
 
 tLabel(050) = ""value of $a""
 tNotation(050) = ""value of $a""

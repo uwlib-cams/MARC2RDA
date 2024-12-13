@@ -1,19 +1,19 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,done,30,CODEN DESIGNATION (R),Undefined,*,,Undefined,*,,,,a,CODEN (NR),,,$a,[A-Z]*,,,http://rdaregistry.info/Elements/w/datatype/P10002,has identifier for work,identifier,"When a CODEN starts with a capital letter, it identifies a serial and thus a work identifier -- ZP 6/11/2022","[Work]-->rdawd:P10002--> [Nomen]
+0,done,30,CODEN DESIGNATION (R),Undefined,*,,Undefined,*,,,,a,CODEN (NR),,,$a,[A-Z]*,,,http://rdaregistry.info/Elements/w/datatype/P10002,has identifier for work,IRI,"When a CODEN starts with a capital letter, it identifies a serial and thus a work identifier -- ZP 6/11/2022","[Work]-->rdawd:P10002--> [Nomen]
 [Nomen]-->rdand:p80068-->""($a)""
 [Nomen]-->rdand:p80069-->""CODEN""
 - CP 2024-06-21",,issue #64
-1,done,30,CODEN DESIGNATION (R),Undefined,*,,Undefined,*,,,,z,Canceled/invalid CODEN (R),,,$z,[A-Z]*,,,http://rdaregistry.info/Elements/w/datatype/P10002,has identifier for work,identifier,"When a CODEN starts with a capital letter, it identifies a serial and thus a work identifier -- ZP 6/11/2022","[Work]-->rdawd:P10002--> [Nomen]
+1,done,30,CODEN DESIGNATION (R),Undefined,*,,Undefined,*,,,,z,Canceled/invalid CODEN (R),,,$z,[A-Z]*,,,http://rdaregistry.info/Elements/w/datatype/P10002,has identifier for work,IRI,"When a CODEN starts with a capital letter, it identifies a serial and thus a work identifier -- ZP 6/11/2022","[Work]-->rdawd:P10002--> [Nomen]
 [Nomen]-->rdand:p80068-->""($z)""
 [Nomen]-->rdand:p80069-->""CODEN""
 [Nomen]-->rdan:P80168-->http://id.loc.gov/vocabulary/mstatus/cancinv
 - CP 2024-06-21",,"CODEN does not have an id.loc.gov IRI
 - CP 2024-06-21"
-2,done,30,CODEN DESIGNATION (R),Undefined,*,,Undefined,*,,,,a,CODEN (NR),,,$a,[0-9]*,,,http://rdaregistry.info/Elements/m/datatype/P30004,has identifier for manifestation,identifier,"When a CODEN starts with a digit, it identifies a non-serial and thus a manifestation identifier -- ZP 6/11/2022","[Manifestation]-->rdamd:P30004-->[Nomen]
+2,done,30,CODEN DESIGNATION (R),Undefined,*,,Undefined,*,,,,a,CODEN (NR),,,$a,[0-9]*,,,http://rdaregistry.info/Elements/m/datatype/P30004,has identifier for manifestation,IRI,"When a CODEN starts with a digit, it identifies a non-serial and thus a manifestation identifier -- ZP 6/11/2022","[Manifestation]-->rdamd:P30004-->[Nomen]
 [Nomen]-->rdand:p80068-->""($z)""
 [Nomen]-->rdand:p80069-->""CODEN""
 - CP 2024-06-21",,
-3,done,30,CODEN DESIGNATION (R),Undefined,*,,Undefined,*,,,,z,Canceled/invalid CODEN (R),,,$z,[0-9]*,,,http://rdaregistry.info/Elements/m/datatype/P30004,has identifier for manifestation,identifier,"When a CODEN starts with a digit, it identifies a non-serial and thus a manifestation identifier -- ZP 6/11/2022","[Manifestation]-->rdamd:P30004-->[Nomen]
+3,done,30,CODEN DESIGNATION (R),Undefined,*,,Undefined,*,,,,z,Canceled/invalid CODEN (R),,,$z,[0-9]*,,,http://rdaregistry.info/Elements/m/datatype/P30004,has identifier for manifestation,IRI,"When a CODEN starts with a digit, it identifies a non-serial and thus a manifestation identifier -- ZP 6/11/2022","[Manifestation]-->rdamd:P30004-->[Nomen]
 [Nomen]-->rdand:p80068-->""($z)""
 [Nomen]-->rdand:p80069-->""CODEN""
 [Nomen]-->rdan:P80168-->http://id.loc.gov/vocabulary/mstatus/cancinv

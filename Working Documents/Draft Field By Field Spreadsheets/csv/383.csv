@@ -1,41 +1,39 @@
 ,Unnamed: 0,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,first pass,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,#,No information provided,Undefined,#,Undefined,,,a,Serial number (R),,,,,,,http://rdaregistry.info/Elements/w/P10334,has serial number of musical work,Identifier,"Prior to 2024, Indicator 1 was undefined. Serial number is at work level.",,,
-1,first pass,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,0,Work,Undefined,#,Undefined,,,a,Serial number (R),,,,,,,http://rdaregistry.info/Elements/w/P10334,has serial number of musical work,Identifier,,,,
-2,first pass,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,1,Expression,Undefined,#,Undefined,,,a,Serial number (R),,,,,,,http://rdaregistry.info/Elements/e/P20002,has identifier for expression,Identifier,no more specific element,,,"Newly added expression in first indicatior in 2024, for arranger. No specific expression element for this now."
-3,first pass,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,#,No information provided,Undefined,#,Undefined,,,b,Opus number (R),,,,,,,http://rdaregistry.info/Elements/w/P10333,has opus number,Identifier,"Prior to 2024, Indicator 1 was undefined. Serial number is at work level.",,,
-4,first pass,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,0,Work,Undefined,#,Undefined,,,b,Opus number (R),,,,,,,http://rdaregistry.info/Elements/w/P10333,has opus number,Identifier,,,,
-5,first pass,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,1,Expression,Undefined,#,Undefined,,,b,Opus number (R),,,,,,,http://rdaregistry.info/Elements/e/P20002,has identifier for expression,Identifier,no more specific element,,,
-6,first pass,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,#,No information provided,Undefined,#,Undefined,,,c,Thematic index number (R),,,,,,,http://rdaregistry.info/Elements/w/P10335,has thematic index number,Identifier,,,,
-7,first pass,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,0,Work,Undefined,#,Undefined,,,c,Thematic index number (R),,,,,,,http://rdaregistry.info/Elements/w/P10335,has thematic index number,Identifier,,,,
-8,first pass,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,1,Expression,Undefined,#,Undefined,,,c,Thematic index number (R),,,,,,,http://rdaregistry.info/Elements/e/P20002,has identifier for expression,Identifier,no more specific element,,,
-9,first pass,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,#,No information provided,Undefined,#,Undefined,,,"d, 2","Thematic index code (NR), Source (NR)",,,,,,,http://rdaregistry.info/Elements/w/P10335,has thematic index number,URI,mint nomen with nomen properties,"[Work] → has thematic index number → [Nomen] 
-[Nomen] → has nomen string → [""value of $c] + [""value of $d""]
-[Nomen] → has scheme of nomen → [https://www.loc.gov/standards/sourcelist/thematic-index.html]",,
-10,first pass,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,0,Work,Undefined,#,Undefined,,,"d, 2","Thematic index code (NR), Source (NR)",,,,,,,http://rdaregistry.info/Elements/w/P10335,has thematic index number,URI,mint nomen with nomen properties,"[Work] → has thematic index number → [Nomen] 
-[Nomen] → has nomen string → [""value of $c] + [""value of $d""]
-[Nomen] → has scheme of nomen → [https://www.loc.gov/standards/sourcelist/thematic-index.html]",,
-11,first pass,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,1,Expression,Undefined,#,Undefined,,,"d, 2","Thematic index code (NR), Source (NR)",,,,,,,http://rdaregistry.info/Elements/e/P20002,has identifier for expression,URI,mint nomen with nomen properties,"[Express] → has identifier for expression → [Nomen] 
-[Nomen] → has nomen string → [""value of $c] + [""value of $d""]
-[Nomen] → has scheme of nomen → [https://www.loc.gov/standards/sourcelist/thematic-index.html]",,
-12,delete,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,#,No information provided,Undefined,#,Undefined,,,d,Thematic index code (NR),,,,,,,http://rdaregistry.info/Elements/w/P10335,has thematic index number,Identifier,, ,,
-13,delete,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,0,Work,Undefined,#,Undefined,,,d,Thematic index code (NR),,,,,,,http://rdaregistry.info/Elements/w/P10335,has thematic index number,Identifier,, ,,
-14,delete,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,1,Expression,Undefined,#,Undefined,,,d,Thematic index code (NR),,,,,,,http://rdaregistry.info/Elements/w/P10335,has thematic index number,Identifier,, ,,
-15,first pass,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,#,No information provided,Undefined,#,Undefined,,,e,Publisher associated with opus number (NR),,,only(b),,,,"
+0,reviewed,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,"#,0","No information provided, Work",Undefined,#,Undefined,,,a,Serial number (R),,,,,,,http://rdaregistry.info/Elements/w/P10334,has serial number of musical work,Identifier,"Prior to 2024, Indicator 1 was undefined. Serial number is at work level.",,,
+1,delete,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,0,Work,Undefined,#,Undefined,,,a,Serial number (R),,,,,,,http://rdaregistry.info/Elements/w/P10334,has serial number of musical work,Identifier,,,,
+2,reviewed,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,1,Expression,Undefined,#,Undefined,,,a,Serial number (R),,,,,,,http://rdaregistry.info/Elements/e/P20002,has identifier for expression,Identifier,no more specific element,,,"Newly added expression in first indicatior in 2024, for arranger. No specific expression element for this now."
+3,reviewed,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,"#,0","No information provided, Work",Undefined,#,Undefined,,,b,Opus number (R),,,,,,,http://rdaregistry.info/Elements/w/P10333,has opus number,Identifier,"Prior to 2024, Indicator 1 was undefined. opus number is at work level.",,,
+4,delete,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,0,Work,Undefined,#,Undefined,,,b,Opus number (R),,,,,,,http://rdaregistry.info/Elements/w/P10333,has opus number,Identifier,,,,
+5,reviewed,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,1,Expression,Undefined,#,Undefined,,,b,Opus number (R),,,,,,,http://rdaregistry.info/Elements/e/P20002,has identifier for expression,Identifier,no more specific element,,,
+6,reviewed,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,"#,0","No information provided, Work",Undefined,#,Undefined,,,c,Thematic index number (R),,,,,,,http://rdaregistry.info/Elements/w/P10335,has thematic index number,Identifier,,,,
+7,delete,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,0,Work,Undefined,#,Undefined,,,c,Thematic index number (R),,,,,,,http://rdaregistry.info/Elements/w/P10335,has thematic index number,Identifier,,,,
+8,reviewed,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,1,Expression,Undefined,#,Undefined,,,c,Thematic index number (R),,,,,,,http://rdaregistry.info/Elements/e/P20002,has identifier for expression,Identifier,no more specific element,,,
+9,reviewed,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,"#,0","No information provided, Work",Undefined,#,Undefined,,,"d, 2","Thematic index code (NR), Source (NR)",,,,,,,http://rdaregistry.info/Elements/w/P10335,has thematic index number,URI,mint nomen with nomen properties,"[Work] → rdaw:P10335 → [Nomen] 
+[Nomen] → rdan:P80068 → [""value of $c] + [""value of $d""]
+[Nomen] → rdan:P80069 → [https://www.loc.gov/standards/sourcelist/thematic-index.html]",,
+10,delete,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,0,Work,Undefined,#,Undefined,,,"d, 2","Thematic index code (NR), Source (NR)",,,,,,,http://rdaregistry.info/Elements/w/P10335,has thematic index number,URI,mint nomen with nomen properties,"[Work] → rdaw:P10335 → [Nomen] [Nomen] → rdan:P80068 → [""value of $c] + [""value of $d""] [Nomen] → rdan:P80069 → [https://www.loc.gov/standards/sourcelist/thematic-index.html]",,
+11,reviewed,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,1,Expression,Undefined,#,Undefined,,,"d, 2","Thematic index code (NR), Source (NR)",,,,,,,http://rdaregistry.info/Elements/e/P20002,has identifier for expression,URI,mint nomen with nomen properties,"[Express] → rdae:P20002 → [Nomen] 
+[Nomen] → rdan:P80068 → [""value of $c] + [""value of $d""]
+[Nomen] → rdan:P80069 → [https://www.loc.gov/standards/sourcelist/thematic-index.html]",,
+12,reviewed,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,#,No information provided,Undefined,#,Undefined,,,d,Thematic index code (NR),,,,,,,http://rdaregistry.info/Elements/w/P10335,has thematic index number,Identifier,, ,,
+13,reviewed,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,0,Work,Undefined,#,Undefined,,,d,Thematic index code (NR),,,,,,,http://rdaregistry.info/Elements/w/P10335,has thematic index number,Identifier,, ,,
+14,reviewed,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,1,Expression,Undefined,#,Undefined,,,d,Thematic index code (NR),,,,,,,http://rdaregistry.info/Elements/w/P10335,has thematic index number,Identifier,, ,,
+15,reviewed,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,"#,0","No information provided, Work",Undefined,#,Undefined,,,e,Publisher associated with opus number (NR),,,only(b),,,,"
 http://rdaregistry.info/Elements/w/P10330
 ",has note on work,unstructured description,,"""Publisher associated with opus number: "" + [value of $e]",,
-16,first pass,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,0,Work,Undefined,#,Undefined,,,e,Publisher associated with opus number (NR),,,only(b),,,,"
+16,reviewed,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,0,Work,Undefined,#,Undefined,,,e,Publisher associated with opus number (NR),,,only(b),,,,"
 http://rdaregistry.info/Elements/w/P10330
 ",has note on work,unstructured description,,"""Publisher associated with opus number: "" + [value of $e]",,
-17,first pass,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,1,Expression,Undefined,#,Undefined,,,e,Publisher associated with opus number (NR),,,only(b),,,,"http://rdaregistry.info/Elements/e/P20071
+17,reviewed,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,1,Expression,Undefined,#,Undefined,,,e,Publisher associated with opus number (NR),,,only(b),,,,"http://rdaregistry.info/Elements/e/P20071
 ",has note on expression,unstructured description,,"""Publisher associated with opus number: "" + [value of $e]",,
-18,delete,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,*,,Undefined,#,Undefined,,,2,Source (NR),,,,,,,,,,, ,,
-19,first pass,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,#,No information provided,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,"
+18,reviewed,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,*,,Undefined,#,Undefined,,,2,Source (NR),,,,,,,,,,, ,,
+19,reviewed,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,"#,0","No information provided, Work",Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,"
 http://rdaregistry.info/Elements/w/P10330
 ",has note on work,unstructured description,,"""applies to: "" + [value of $3]",,
-20,first pass,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,0,Work,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,"
+20,reviewed,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,0,Work,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,"
 http://rdaregistry.info/Elements/w/P10330
 ",has note on work,unstructured description,,"""applies to: "" + [value of $3]",,
-21,first pass,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,1,Expression,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,"http://rdaregistry.info/Elements/e/P20071
+21,reviewed,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,1,Expression,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,"http://rdaregistry.info/Elements/e/P20071
 ",has note on expression,unstructured description,,"""applies to: "" + [value of $3]",,
 22,not mapped,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,*,,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
 23,not mapped,383,NUMERIC DESIGNATION OF MUSICAL WORK (R),Type of entity,*,,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,

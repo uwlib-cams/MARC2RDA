@@ -1,15 +1,27 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
 0,delete,352,DIGITAL GRAPHIC REPRESENTATION (R),Undefined,*,,Undefined,*,,,,a,Direct reference method (NR),,,,,,,http://rdaregistry.info/Elements/m/P30102,has digital representation of cartographic content,,,,,
-1,first pass,352,DIGITAL GRAPHIC REPRESENTATION (R),Undefined,*,,Undefined,*,,,,"a, b, c","Direct reference method (NR), Object type (R), Object count (R)",,,,,,,http://rdaregistry.info/Elements/m/P30261,has cartographic data type,unstructured description,,"""Direct reference method (NR): "" + [value of $a]. ""Object type (R): "" + [value of $b]. ""Object count (R): [value of $c].",,
+1,reviewed,352,DIGITAL GRAPHIC REPRESENTATION (R),Undefined,*,,Undefined,*,,,,"a, b, c","Direct reference method (NR), Object type (R), Object count (R)",,,,,,,http://rdaregistry.info/Elements/m/P30261,has cartographic data type,unstructured description,,"""Direct reference method: "" + [value of $a]. ""Object type: "" + [value of $b]. ""Object count: [value of $c]. 
+
+Remove punctuation in subfield value -- DC 2024/09/20",,
 2,delete,352,DIGITAL GRAPHIC REPRESENTATION (R),Undefined,*,,Undefined,*,,,,b,Object type (R),,,,,,,,,,,,,
 3,delete,352,DIGITAL GRAPHIC REPRESENTATION (R),Undefined,*,,Undefined,*,,,,b,Object type (R),,,,,,,,,,,,,
 4,delete,352,DIGITAL GRAPHIC REPRESENTATION (R),Undefined,*,,Undefined,*,,,,c,Object count (R),,,,,,,,,,,,,
-5,first pass,352,DIGITAL GRAPHIC REPRESENTATION (R),Undefined,*,,Undefined,*,,,,"d, e, f","Row count (NR), Column count (NR), Vertical count (NR)",,,,,,,http://rdaregistry.info/Elements/m/P30102,has digital representation of cartographic content,unstructured description,no more specific element,"""Row count: "" + [value of $d]. ""Column count: "" + [value of $e]. ""Vertical count: "" + [value of $e]",,
+5,reviewed,352,DIGITAL GRAPHIC REPRESENTATION (R),Undefined,*,,Undefined,*,,,,"d, e, f","Row count (NR), Column count (NR), Vertical count (NR)",,,,,,,http://rdaregistry.info/Elements/m/P30102,has digital representation of cartographic content,unstructured description,no more specific element,"""Row count: "" + [value of $d]. ""Column count: "" + [value of $e]. ""Vertical count: "" + [value of $e]
+
+Remove punctuation in subfield value - DC 2024/09/20",,
 6,delete,352,DIGITAL GRAPHIC REPRESENTATION (R),Undefined,*,,Undefined,*,,,,e,Column count (NR),,,,,,,http://rdaregistry.info/Elements/m/P30102,has digital representation of cartographic content,,,,,
 7,delete,352,DIGITAL GRAPHIC REPRESENTATION (R),Undefined,*,,Undefined,*,,,,f,Vertical count (NR),,,,,,,http://rdaregistry.info/Elements/m/P30102,has digital representation of cartographic content,,,,,
-8,first pass,352,DIGITAL GRAPHIC REPRESENTATION (R),Undefined,*, ,Undefined,*, ,,,g,VPF topology level (NR),,,,,,,http://rdaregistry.info/Elements/m/P30102,has digital representation of cartographic content,unstructured description,no more specific element,"""VPF topology level: "" + [value of $g]",,
-9,first pass,352,DIGITAL GRAPHIC REPRESENTATION (R),Undefined,*, ,Undefined,*, ,,,i,Indirect reference description (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on  manifestation,unstructured description,,"""Indirect reference description: "" + [value of $i]",,
+8,reviewed,352,DIGITAL GRAPHIC REPRESENTATION (R),Undefined,*, ,Undefined,*, ,,,g,VPF topology level (NR),,,,,,,http://rdaregistry.info/Elements/m/P30102,has digital representation of cartographic content,unstructured description,no more specific element,"""VPF topology level: "" + [value of $g]
+
+
+Remove punctuation in subfield value - DC 2024/09/20",,
+9,reviewed,352,DIGITAL GRAPHIC REPRESENTATION (R),Undefined,*, ,Undefined,*, ,,,i,Indirect reference description (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on  manifestation,unstructured description,,"""Indirect reference description: "" + [value of $i]
+
+
+Remove punctuation in subfield value - DC 2024/09/20",,
 10,delete,352,DIGITAL GRAPHIC REPRESENTATION (R),Undefined,*,,Undefined,*,,,,q,Format of the digital image (R),,,,,,,http://rdaregistry.info/Elements/m/P30096,has encoding format,,,,,
-11,first pass,352,DIGITAL GRAPHIC REPRESENTATION (R),Undefined,*,,Undefined,*,,,,q,Format of the digital image (R),,,,,,,http://rdaregistry.info/Elements/m/P30102,has digital representation of cartographic content,unstructured description,no more specific element,"""Format of the digital image: "" + [value of $q]",,
+11,reviewed,352,DIGITAL GRAPHIC REPRESENTATION (R),Undefined,*,,Undefined,*,,,,q,Format of the digital image (R),,,,,,,http://rdaregistry.info/Elements/m/P30102,has digital representation of cartographic content,unstructured description,no more specific element,"""Format of the digital image: "" + [value of $q]
+
+Remove punctuation in subfield value - DC 2024/09/20",,
 12,not mapped,352,DIGITAL GRAPHIC REPRESENTATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
 13,not mapped,352,DIGITAL GRAPHIC REPRESENTATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,

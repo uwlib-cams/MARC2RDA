@@ -1092,364 +1092,364 @@
 1090,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30133,has designation of edition,,,,,too specific - delete
 1091,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30134,has title of manifestation,,,,,too specific - delete
 1092,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30136,is electronic reproduction of manifestation of,,,,,too specific - delete
-1093,first pass,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,not($5),,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,"The note could be about the work, expression, manifestation or item, or a combination of them.  But since the MARC record represents a manifestation more than any other entity, map to this. ; lna 2022-05-17",,The only superclass for these entities is RDA Entity.   It's unclear whether an entity for a Description Set could be used to apply properties whose Entity relation is unclear.  Mapping to Has note about the Manifestation is temporary pending RSC review. ; lna 2022-05-17,"Discussion at https://github.com/uwlib-cams/MARC2RDA/discussions/330 .  See alternrative mapping  when $5 is present at the line for $5.
+1093,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,not($5),,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,"The note could be about the work, expression, manifestation or item, or a combination of them.  But since the MARC record represents a manifestation more than any other entity, map to this. ; lna 2022-05-17",,The only superclass for these entities is RDA Entity.   It's unclear whether an entity for a Description Set could be used to apply properties whose Entity relation is unclear.  Mapping to Has note about the Manifestation is temporary pending RSC review. ; lna 2022-05-17,"Discussion at https://github.com/uwlib-cams/MARC2RDA/discussions/330 .  See alternrative mapping  when $5 is present at the line for $5.
 "
-1094,first pass,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,$5,,,,http://rdaregistry.info/Elements/i/P40028,has note on item,unstructured description,"If $5 is present, generate item IRI and treat note as note on item (see $5 mapping)","Generate IRI for an item, then apply property","Association of the note string with its ""authoring institution"" is indirect (the institution is associated with the same minted item IRI).  ","Discussion at https://github.com/uwlib-cams/MARC2RDA/discussions/361 
+1094,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,$5,,,,http://rdaregistry.info/Elements/i/P40028,has note on item,unstructured description,"If $5 is present, generate item IRI and treat note as note on item (see $5 mapping)","Generate IRI for an item, then apply property","Association of the note string with its ""authoring institution"" is indirect (the institution is associated with the same minted item IRI).  ","Discussion at https://github.com/uwlib-cams/MARC2RDA/discussions/361 
 "
-1095,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30138,has special playback characteristic,,,,,too specific - delete
-1096,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30141,has contact information,,,,,too specific - delete
-1097,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,,,,,too specific - delete
-1098,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30146,has restriction on use of manifestation,,,,,too specific - delete
-1099,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30147,has first alphanumeric designation of sequence,,,,,too specific - delete
-1100,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30148,has last alphanumeric designation of sequence,,,,,too specific - delete
-1101,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30149,has first chronological designation of sequence,,,,,too specific - delete
-1102,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30150,has last chronological designation of sequence,,,,,too specific - delete
-1103,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30154,has uniform resource locator,,,,,too specific - delete
-1104,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30155,has layout,,,,,too specific - delete
-1105,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30157,has title of series,,,,,too specific - delete
-1106,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30159,has resolution,,,,,too specific - delete
-1107,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30160,has term of availability,,,,,too specific - delete
-1108,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30161,has track configuration,,,,,too specific - delete
-1109,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30162,has equipment or system requirement,,,,,too specific - delete
-1110,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30163,has presentation format,,,,,too specific - delete
-1111,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30164,has groove characteristic,,,,,too specific - delete
-1112,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30165,has numbering of sequence,,,,,too specific - delete
-1113,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30169,has dimensions,,,,,too specific - delete
-1114,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30170,has dimensions of cartographic image,,,,,too specific - delete
-1115,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30171,has dimensions of still image,,,,,too specific - delete
-1116,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30172,has type of recording,,,,,too specific - delete
-1117,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30182,has extent of manifestation,,,,,too specific - delete
-1118,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30183,has file size,,,,,too specific - delete
-1119,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30184,has configuration of playback channels,,,,,too specific - delete
-1120,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30185,has tape configuration,,,,,too specific - delete
-1121,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30186,has mount,,,,,too specific - delete
-1122,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30187,has production method,,,,,too specific - delete
-1123,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30191,has generation,,,,,too specific - delete
-1124,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30196,has polarity,,,,,too specific - delete
-1125,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30197,has bibliographic format,,,,,too specific - delete
-1126,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30198,has reduction ratio,,,,,too specific - delete
-1127,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30199,has font size,,,,,too specific - delete
-1128,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30200,has projection speed,,,,,too specific - delete
-1129,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30201,has playing speed,,,,,too specific - delete
-1130,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30202,has encoded bitrate,,,,,too specific - delete
-1131,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30206,has recording medium,,,,,too specific - delete
-1132,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30208,has base material,,,,,too specific - delete
-1133,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30214,has note on carrier,,,,,too specific - delete
-1134,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30215,has papermaker agent,,,,,too specific - delete
-1135,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30216,has details of applied material,,,,,too specific - delete
-1136,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30217,has details of base material,,,,,too specific - delete
-1137,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30218,has details of bibliographic format,,,,,too specific - delete
-1138,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30219,has details of broadcast standard,,,,,too specific - delete
-1139,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30220,has details of configuration of playback channels,,,,,too specific - delete
-1140,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30221,has details of digital file characteristic,,,,,too specific - delete
-1141,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30222,has details of digital representation of cartographic content,,,,,too specific - delete
-1142,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30223,has details of emulsion on microfilm and microfiche,,,,,too specific - delete
-1143,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30224,has details of encoding format,,,,,too specific - delete
-1144,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30225,has details of file type,,,,,too specific - delete
-1145,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30226,has details of font size,,,,,too specific - delete
-1146,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30232,has details of groove characteristic,,,,,too specific - delete
-1147,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30233,has details of layout,,,,,too specific - delete
-1148,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30234,has details of mount,,,,,too specific - delete
-1149,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30235,has details of playing speed,,,,,too specific - delete
-1150,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30236,has details of polarity,,,,,too specific - delete
-1151,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30237,has details of presentation format,,,,,too specific - delete
-1152,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30238,has details of production method,,,,,too specific - delete
-1153,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30241,has details of projection characteristic of motion picture film,,,,,too specific - delete
-1154,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30242,has details of projection speed,,,,,too specific - delete
-1155,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30243,has details of recording medium,,,,,too specific - delete
-1156,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30244,has details of reduction ratio designation,,,,,too specific - delete
-1157,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30245,has details of sound characteristic,,,,,too specific - delete
-1158,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30246,has details of special playback characteristic,,,,,too specific - delete
-1159,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30247,has details of tape configuration,,,,,too specific - delete
-1160,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30248,has details of track configuration,,,,,too specific - delete
-1161,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30249,has details of type of recording,,,,,too specific - delete
-1162,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30250,has details of video characteristic,,,,,too specific - delete
-1163,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30251,has details of video format,,,,,too specific - delete
-1164,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30252,has details of generation,,,,,too specific - delete
-1165,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30253,is subject manifestation of,,,,,too specific - delete
-1166,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30254,is manifestation described in,,,,,too specific - delete
-1167,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30255,is manifestation analysed in,,,,,too specific - delete
-1168,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30256,is manifestation commentary in,,,,,too specific - delete
-1169,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30257,is manifestation critiqued in,,,,,too specific - delete
-1170,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30258,is manifestation evaluated in,,,,,too specific - delete
-1171,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30259,is manifestation reviewed in,,,,,too specific - delete
-1172,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30260,has note on identifier for manifestation,,,,,too specific - delete
-1173,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30261,has cartographic data type,,,,,too specific - delete
-1174,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30262,has details of cartographic data type,,,,,too specific - delete
-1175,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30263,has reduction ratio designation,,,,,too specific - delete
-1176,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30267,has related agent of manifestation,,,,,too specific - delete
-1177,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30268,has related person of manifestation,,,,,too specific - delete
-1178,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30269,has related family of manifestation,,,,,too specific - delete
-1179,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30270,has related corporate body of manifestation,,,,,too specific - delete
-1180,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30271,has related collective agent of manifestation,,,,,too specific - delete
-1181,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,too specific - delete
-1182,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30273,has related timespan of manifestation,,,,,too specific - delete
-1183,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30275,has details of regional encoding,,,,,too specific - delete
-1184,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30279,has place of manifestation,,,,,too specific - delete
-1185,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30298,is digital transfer of item of,,,,,too specific - delete
-1186,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30299,is electronic reproduction of item of,,,,,too specific - delete
-1187,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30300,is facsimile of item of,,,,,too specific - delete
-1188,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30301,is preservation facsimile of item of,,,,,too specific - delete
-1189,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30303,is reproduction of item of,,,,,too specific - delete
-1190,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30304,has material,,,,,too specific - delete
-1191,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30305,has intended audience of manifestation,,,,,too specific - delete
-1192,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30306,has font point size,,,,,too specific - delete
-1193,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30307,has groove pitch,,,,,too specific - delete
-1194,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30308,has groove width,,,,,too specific - delete
-1195,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30309,has type of binding,,,,,too specific - delete
-1196,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30310,has binding of manifestation,,,,,too specific - delete
-1197,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30311,has contributor agent of music,,,,,too specific - delete
-1198,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30312,has surveyor agent,,,,,too specific - delete
-1199,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30315,has contributor agent of cartography,,,,,too specific - delete
-1200,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30316,has contributor agent of choreography,,,,,too specific - delete
-1201,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30321,has contributor agent of still image,,,,,too specific - delete
-1202,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30326,has contributor agent of moving image,,,,,too specific - delete
-1203,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30327,has contributor agent to aggregate,,,,,too specific - delete
-1204,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30328,has contributor agent of text,,,,,too specific - delete
-1205,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30329,has creator agent of manifestation,,,,,too specific - delete
-1206,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30331,has contributor agent of speech,,,,,too specific - delete
-1207,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30332,has contributor agent of object,,,,,too specific - delete
-1208,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30333,has contributor agent of computer content,,,,,too specific - delete
-1209,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30336,has contributor person to aggregate,,,,,too specific - delete
-1210,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30337,has surveyor person,,,,,too specific - delete
-1211,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30338,has contributor person of cartography,,,,,too specific - delete
-1212,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30339,has contributor person of choreography,,,,,too specific - delete
-1213,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30340,has contributor person of moving image,,,,,too specific - delete
-1214,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30341,has contributor person of music,,,,,too specific - delete
-1215,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30342,has contributor person of speech,,,,,too specific - delete
-1216,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30343,has contributor person of still image,,,,,too specific - delete
-1217,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30344,has contributor person of text,,,,,too specific - delete
-1218,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30345,has contributor person of object,,,,,too specific - delete
-1219,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30346,has contributor person of computer content,,,,,too specific - delete
-1220,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30347,has broadcaster person,,,,,too specific - delete
-1221,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30348,has film distributor person,,,,,too specific - delete
-1222,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30349,has book designer person,,,,,too specific - delete
-1223,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30350,has engraver person,,,,,too specific - delete
-1224,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30351,has braille embosser person,,,,,too specific - delete
-1225,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30352,has printmaker person,,,,,too specific - delete
-1226,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30353,has caster person,,,,,too specific - delete
-1227,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30354,has lithographer person,,,,,too specific - delete
-1228,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30355,has platemaker person,,,,,too specific - delete
-1229,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30356,has etcher person,,,,,too specific - delete
-1230,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30357,has collotyper person,,,,,too specific - delete
-1231,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30358,has printer person,,,,,too specific - delete
-1232,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30359,has distributor person,,,,,too specific - delete
-1233,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30360,has producer person of unpublished manifestation,,,,,too specific - delete
-1234,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30361,has manufacturer person,,,,,too specific - delete
-1235,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30362,has publisher person,,,,,too specific - delete
-1236,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30363,has creator person of manifestation,,,,,too specific - delete
-1237,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30364,has papermaker person,,,,,too specific - delete
-1238,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30365,has contributor collective agent to aggregate,,,,,too specific - delete
-1239,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30366,has surveyor collective agent,,,,,too specific - delete
-1240,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30367,has contributor collective agent of cartography,,,,,too specific - delete
-1241,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30368,has contributor collective agent of choreography,,,,,too specific - delete
-1242,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30369,has contributor collective agent of moving image,,,,,too specific - delete
-1243,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30370,has contributor collective agent of music,,,,,too specific - delete
-1244,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30371,has contributor collective agent of speech,,,,,too specific - delete
-1245,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30372,has contributor collective agent of still image,,,,,too specific - delete
-1246,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30373,has contributor collective agent of text,,,,,too specific - delete
-1247,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30374,has contributor collective agent of object,,,,,too specific - delete
-1248,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30375,has contributor collective agent of computer content,,,,,too specific - delete
-1249,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30376,has broadcaster collective agent,,,,,too specific - delete
-1250,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30377,has film distributor collective agent,,,,,too specific - delete
-1251,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30378,has book designer collective agent,,,,,too specific - delete
-1252,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30379,has engraver collective agent,,,,,too specific - delete
-1253,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30380,has braille embosser collective agent,,,,,too specific - delete
-1254,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30381,has printmaker collective agent,,,,,too specific - delete
-1255,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30382,has caster collective agent,,,,,too specific - delete
-1256,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30383,has lithographer collective agent,,,,,too specific - delete
-1257,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30384,has platemaker collective agent,,,,,too specific - delete
-1258,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30385,has etcher collective agent,,,,,too specific - delete
-1259,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30386,has collotyper collective agent,,,,,too specific - delete
-1260,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30387,has printer collective agent,,,,,too specific - delete
-1261,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30388,has distributor collective agent,,,,,too specific - delete
-1262,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30389,has producer collective agent of unpublished manifestation,,,,,too specific - delete
-1263,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30390,has manufacturer collective agent,,,,,too specific - delete
-1264,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30391,has publisher collective agent,,,,,too specific - delete
-1265,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30392,has creator collective agent of manifestation,,,,,too specific - delete
-1266,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30393,has papermaker collective agent,,,,,too specific - delete
-1267,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30394,has contributor corporate body to aggregate,,,,,too specific - delete
-1268,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30395,has surveyor corporate body,,,,,too specific - delete
-1269,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30396,has contributor corporate body of cartography,,,,,too specific - delete
-1270,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30397,has contributor corporate body of choreography,,,,,too specific - delete
-1271,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30398,has contributor corporate body of moving image,,,,,too specific - delete
-1272,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30399,has contributor corporate body of music,,,,,too specific - delete
-1273,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30400,has contributor corporate body of speech,,,,,too specific - delete
-1274,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30401,has contributor corporate body of still image,,,,,too specific - delete
-1275,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30402,has contributor corporate body of text,,,,,too specific - delete
-1276,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30403,has contributor corporate body of object,,,,,too specific - delete
-1277,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30404,has contributor corporate body of computer content,,,,,too specific - delete
-1278,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30405,has broadcaster corporate body,,,,,too specific - delete
-1279,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30406,has film distributor corporate body,,,,,too specific - delete
-1280,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30407,has book designer corporate body,,,,,too specific - delete
-1281,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30408,has engraver corporate body,,,,,too specific - delete
-1282,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30409,has braille embosser corporate body,,,,,too specific - delete
-1283,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30410,has printmaker corporate body,,,,,too specific - delete
-1284,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30411,has caster corporate body,,,,,too specific - delete
-1285,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30412,has lithographer corporate body,,,,,too specific - delete
-1286,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30413,has platemaker corporate body,,,,,too specific - delete
-1287,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30414,has etcher corporate body,,,,,too specific - delete
-1288,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30415,has collotyper corporate body,,,,,too specific - delete
-1289,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30416,has printer corporate body,,,,,too specific - delete
-1290,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30417,has distributor corporate body,,,,,too specific - delete
-1291,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30418,has producer corporate body of unpublished manifestation,,,,,too specific - delete
-1292,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30419,has manufacturer corporate body,,,,,too specific - delete
-1293,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30420,has publisher corporate body,,,,,too specific - delete
-1294,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30421,has creator corporate body of manifestation,,,,,too specific - delete
-1295,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30422,has papermaker corporate body,,,,,too specific - delete
-1296,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30423,has contributor family to aggregate,,,,,too specific - delete
-1297,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30424,has surveyor family,,,,,too specific - delete
-1298,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30425,has contributor family of cartography,,,,,too specific - delete
-1299,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30426,has contributor family of choreography,,,,,too specific - delete
-1300,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30427,has contributor family of moving image,,,,,too specific - delete
-1301,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30428,has contributor family of music,,,,,too specific - delete
-1302,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30429,has contributor family of speech,,,,,too specific - delete
-1303,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30430,has contributor family of still image,,,,,too specific - delete
-1304,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30431,has contributor family of text,,,,,too specific - delete
-1305,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30432,has contributor family of object,,,,,too specific - delete
-1306,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30433,has contributor family of computer content,,,,,too specific - delete
-1307,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30434,has broadcaster family,,,,,too specific - delete
-1308,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30435,has film distributor family,,,,,too specific - delete
-1309,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30436,has book designer family,,,,,too specific - delete
-1310,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30437,has engraver family,,,,,too specific - delete
-1311,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30438,has braille embosser family,,,,,too specific - delete
-1312,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30439,has printmaker family,,,,,too specific - delete
-1313,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30440,has caster family,,,,,too specific - delete
-1314,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30441,has lithographer family,,,,,too specific - delete
-1315,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30442,has platemaker family,,,,,too specific - delete
-1316,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30443,has etcher family,,,,,too specific - delete
-1317,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30444,has collotyper family,,,,,too specific - delete
-1318,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30445,has printer family,,,,,too specific - delete
-1319,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30446,has distributor family,,,,,too specific - delete
-1320,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30447,has producer family of unpublished manifestatio,,,,,too specific - delete
-1321,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30448,has manufacturer family,,,,,too specific - delete
-1322,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30449,has publisher family,,,,,too specific - delete
-1323,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30450,has creator family of manifestation,,,,,too specific - delete
-1324,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30451,has papermaker family,,,,,too specific - delete
-1325,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30452,has accessibility content,,,,,too specific - delete
-1326,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30453,has illustrative content,,,,,too specific - delete
-1327,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30454,has sound content,,,,,too specific - delete
-1328,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,,,,,too specific - delete
-1329,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40003,has modification of item,,,,,too specific - delete
-1330,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40004,has collector agent,,,,,too specific - delete
-1331,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40005,has collection registrar agent,,,,,too specific - delete
-1332,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40006,has depositor agent,,,,,too specific - delete
-1333,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40007,has donor agent,,,,,too specific - delete
-1334,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40008,has seller agent,,,,,too specific - delete
-1335,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40009,is contained in item,,,,,too specific - delete
-1336,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40010,has note on dimensions of item,,,,,too specific - delete
-1337,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40011,has note on extent of item,,,,,too specific - delete
-1338,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40012,has illuminator agent,,,,,too specific - delete
-1339,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40013,has binder agent,,,,,too specific - delete
-1340,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40014,has inscriber,,,,,too specific - delete
-1341,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40015,has annotator,,,,,too specific - delete
-1342,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40016,has autographer,,,,,too specific - delete
-1343,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40017,has curator agent,,,,,too specific - delete
-1344,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40018,has current owner agent,,,,,too specific - delete
-1345,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40019,has former owner agent,,,,,too specific - delete
-1346,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40020,has custodian agent,,,,,too specific - delete
-1347,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40021,has owner agent,,,,,too specific - delete
-1348,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40022,has honouree agent of item,,,,,too specific - delete
-1349,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40024,has restorationist agent of item,,,,,too specific - delete
-1350,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40025,has dedicatee agent of item,,,,,too specific - delete
-1351,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40028,has note on item,,,,,"Could be a note about an item, but since MARC is primarily manifestation description, go with note about a manifestation, delete this."
-1352,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40029,is accompanied by item,,,,,too specific - delete
-1353,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40031,has equivalent item,,,,,too specific - delete
-1354,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40032,is bound with,,,,,too specific - delete
-1355,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40034,is container of item,,,,,too specific - delete
-1356,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40035,is on disc with item,,,,,too specific - delete
-1357,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40036,is filmed with item,,,,,too specific - delete
-1358,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40046,has related item of item,,,,,too specific - delete
-1359,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40047,has restriction on access to item,,,,,too specific - delete
-1360,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40048,has restriction on use of item,,,,,too specific - delete
-1361,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40050,has immediate source of acquisition of item,,,,,too specific - delete
-1362,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40062,is item described in,,,,,too specific - delete
-1363,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40063,is item analysed in,,,,,too specific - delete
-1364,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40064,is item commentary in,,,,,too specific - delete
-1365,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40065,is item critiqued in,,,,,too specific - delete
-1366,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40066,is item evaluated in,,,,,too specific - delete
-1367,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40067,is item reviewed in,,,,,too specific - delete
-1368,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40072,has related agent of item,,,,,too specific - delete
-1369,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40073,has related person of item,,,,,too specific - delete
-1370,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40074,has related family of item,,,,,too specific - delete
-1371,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40075,has related corporate body of item,,,,,too specific - delete
-1372,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40076,has related collective agent of item,,,,,too specific - delete
-1373,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40082,has title of item,,,,,too specific - delete
-1374,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40087,has digital transfer of item,,,,,too specific - delete
-1375,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40088,has electronic reproduction of item,,,,,too specific - delete
-1376,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40089,has facsimile of item,,,,,too specific - delete
-1377,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40090,has preservation facsimile of item,,,,,too specific - delete
-1378,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40091,is reprinted as item,,,,,too specific - delete
-1379,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40092,is reproduced as item,,,,,too specific - delete
-1380,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40093,has modifier agent,,,,,too specific - delete
-1381,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40094,has binding of item,,,,,too specific - delete
-1382,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40097,has dedicatee person of item,,,,,too specific - delete
-1383,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40098,has binder person,,,,,too specific - delete
-1384,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40099,has curator person,,,,,too specific - delete
-1385,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40100,has illuminator person,,,,,too specific - delete
-1386,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40101,has current owner person,,,,,too specific - delete
-1387,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40102,has former owner person,,,,,too specific - delete
-1388,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40103,has custodian person,,,,,too specific - delete
-1389,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40104,has owner person,,,,,too specific - delete
-1390,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40105,has collector person,,,,,too specific - delete
-1391,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40106,has collection registrar person,,,,,too specific - delete
-1392,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40107,has depositor person,,,,,too specific - delete
-1393,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40108,has donor person,,,,,too specific - delete
-1394,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40109,has seller person,,,,,too specific - delete
-1395,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40110,has honouree person of item,,,,,too specific - delete
-1396,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40111,has restorationist person of item,,,,,too specific - delete
-1397,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40112,has modifier person,,,,,too specific - delete
-1398,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40113,has dedicatee collective agent of item,,,,,too specific - delete
-1399,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40114,has binder collective agent,,,,,too specific - delete
-1400,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40115,has curator collective agent,,,,,too specific - delete
-1401,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40116,has illuminator collective agent,,,,,too specific - delete
-1402,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40117,has current owner collective agent,,,,,too specific - delete
-1403,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40118,has former owner collective agent,,,,,too specific - delete
-1404,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40119,has custodian collective agent,,,,,too specific - delete
-1405,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40120,has owner collective agent,,,,,too specific - delete
-1406,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40121,has collector collective agent,,,,,too specific - delete
-1407,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40122,has collection registrar collective agent,,,,,too specific - delete
-1408,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40123,has depositor collective agent,,,,,too specific - delete
-1409,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40124,has donor collective agent,,,,,too specific - delete
-1410,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40125,has seller collective agent,,,,,too specific - delete
-1411,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40126,has honouree collective agent of item,,,,,too specific - delete
-1412,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40127,has restorationist collective agent of item,,,,,too specific - delete
-1413,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40128,has modifier collective agent,,,,,too specific - delete
-1414,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40129,has dedicatee corporate body of item,,,,,too specific - delete
-1415,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40130,has binder corporate body,,,,,too specific - delete
-1416,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40131,has curator corporate body,,,,,too specific - delete
-1417,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40132,has illuminator corporate body,,,,,too specific - delete
-1418,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40133,has current owner corporate body,,,,,too specific - delete
-1419,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40134,has former owner corporate body,,,,,too specific - delete
-1420,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40135,has custodian corporate body,,,,,too specific - delete
-1421,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40136,has owner corporate body,,,,,too specific - delete
-1422,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40137,has collector corporate body,,,,,too specific - delete
-1423,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40138,has collection registrar corporate body,,,,,too specific - delete
-1424,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40139,has depositor corporate body,,,,,too specific - delete
-1425,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40140,has donor corporate body,,,,,too specific - delete
-1426,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40141,has seller corporate body,,,,,too specific - delete
-1427,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40142,has honouree corporate body of item,,,,,too specific - delete
-1428,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40143,has restorationist corporate body of item,,,,,too specific - delete
-1429,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40144,has modifier corporate body,,,,,too specific - delete
-1430,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40145,has dedicatee family of item,,,,,too specific - delete
-1431,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40146,has binder family,,,,,too specific - delete
-1432,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40147,has curator family,,,,,too specific - delete
-1433,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40148,has illuminator family,,,,,too specific - delete
-1434,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40149,has current owner family,,,,,too specific - delete
-1435,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40150,has former owner family,,,,,too specific - delete
-1436,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40151,has custodian family,,,,,too specific - delete
-1437,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40152,has owner family,,,,,too specific - delete
-1438,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40153,has collector family,,,,,too specific - delete
-1439,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40154,has collection registrar family,,,,,too specific - delete
-1440,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40155,has depositor family,,,,,too specific - delete
-1441,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40156,has donor family,,,,,too specific - delete
-1442,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40157,has seller family,,,,,too specific - delete
-1443,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40158,has honouree family of item,,,,,too specific - delete
-1444,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40159,has restorationist family of item,,,,,too specific - delete
-1445,Delete,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40160,has modifier family,,,,,too specific - delete
-1446,first pass,500,GENERAL NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,,,Unstructured,"Needed to retain to provide context for the content of $a; not possible to link or apply to the  portion of the manifestation or item referenced from data in the MARC, so add as a parentetical phrase at end of note text ($a),   ; lna 2022-10-28","The $a mapping could vary (either note on manifestation or note on item, depending on presence of $5).  
+1095,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30138,has special playback characteristic,,,,,too specific - delete
+1096,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30141,has contact information,,,,,too specific - delete
+1097,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,,,,,too specific - delete
+1098,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30146,has restriction on use of manifestation,,,,,too specific - delete
+1099,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30147,has first alphanumeric designation of sequence,,,,,too specific - delete
+1100,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30148,has last alphanumeric designation of sequence,,,,,too specific - delete
+1101,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30149,has first chronological designation of sequence,,,,,too specific - delete
+1102,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30150,has last chronological designation of sequence,,,,,too specific - delete
+1103,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30154,has uniform resource locator,,,,,too specific - delete
+1104,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30155,has layout,,,,,too specific - delete
+1105,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30157,has title of series,,,,,too specific - delete
+1106,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30159,has resolution,,,,,too specific - delete
+1107,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30160,has term of availability,,,,,too specific - delete
+1108,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30161,has track configuration,,,,,too specific - delete
+1109,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30162,has equipment or system requirement,,,,,too specific - delete
+1110,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30163,has presentation format,,,,,too specific - delete
+1111,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30164,has groove characteristic,,,,,too specific - delete
+1112,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30165,has numbering of sequence,,,,,too specific - delete
+1113,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30169,has dimensions,,,,,too specific - delete
+1114,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30170,has dimensions of cartographic image,,,,,too specific - delete
+1115,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30171,has dimensions of still image,,,,,too specific - delete
+1116,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30172,has type of recording,,,,,too specific - delete
+1117,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30182,has extent of manifestation,,,,,too specific - delete
+1118,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30183,has file size,,,,,too specific - delete
+1119,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30184,has configuration of playback channels,,,,,too specific - delete
+1120,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30185,has tape configuration,,,,,too specific - delete
+1121,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30186,has mount,,,,,too specific - delete
+1122,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30187,has production method,,,,,too specific - delete
+1123,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30191,has generation,,,,,too specific - delete
+1124,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30196,has polarity,,,,,too specific - delete
+1125,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30197,has bibliographic format,,,,,too specific - delete
+1126,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30198,has reduction ratio,,,,,too specific - delete
+1127,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30199,has font size,,,,,too specific - delete
+1128,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30200,has projection speed,,,,,too specific - delete
+1129,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30201,has playing speed,,,,,too specific - delete
+1130,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30202,has encoded bitrate,,,,,too specific - delete
+1131,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30206,has recording medium,,,,,too specific - delete
+1132,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30208,has base material,,,,,too specific - delete
+1133,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30214,has note on carrier,,,,,too specific - delete
+1134,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30215,has papermaker agent,,,,,too specific - delete
+1135,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30216,has details of applied material,,,,,too specific - delete
+1136,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30217,has details of base material,,,,,too specific - delete
+1137,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30218,has details of bibliographic format,,,,,too specific - delete
+1138,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30219,has details of broadcast standard,,,,,too specific - delete
+1139,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30220,has details of configuration of playback channels,,,,,too specific - delete
+1140,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30221,has details of digital file characteristic,,,,,too specific - delete
+1141,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30222,has details of digital representation of cartographic content,,,,,too specific - delete
+1142,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30223,has details of emulsion on microfilm and microfiche,,,,,too specific - delete
+1143,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30224,has details of encoding format,,,,,too specific - delete
+1144,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30225,has details of file type,,,,,too specific - delete
+1145,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30226,has details of font size,,,,,too specific - delete
+1146,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30232,has details of groove characteristic,,,,,too specific - delete
+1147,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30233,has details of layout,,,,,too specific - delete
+1148,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30234,has details of mount,,,,,too specific - delete
+1149,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30235,has details of playing speed,,,,,too specific - delete
+1150,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30236,has details of polarity,,,,,too specific - delete
+1151,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30237,has details of presentation format,,,,,too specific - delete
+1152,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30238,has details of production method,,,,,too specific - delete
+1153,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30241,has details of projection characteristic of motion picture film,,,,,too specific - delete
+1154,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30242,has details of projection speed,,,,,too specific - delete
+1155,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30243,has details of recording medium,,,,,too specific - delete
+1156,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30244,has details of reduction ratio designation,,,,,too specific - delete
+1157,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30245,has details of sound characteristic,,,,,too specific - delete
+1158,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30246,has details of special playback characteristic,,,,,too specific - delete
+1159,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30247,has details of tape configuration,,,,,too specific - delete
+1160,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30248,has details of track configuration,,,,,too specific - delete
+1161,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30249,has details of type of recording,,,,,too specific - delete
+1162,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30250,has details of video characteristic,,,,,too specific - delete
+1163,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30251,has details of video format,,,,,too specific - delete
+1164,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30252,has details of generation,,,,,too specific - delete
+1165,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30253,is subject manifestation of,,,,,too specific - delete
+1166,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30254,is manifestation described in,,,,,too specific - delete
+1167,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30255,is manifestation analysed in,,,,,too specific - delete
+1168,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30256,is manifestation commentary in,,,,,too specific - delete
+1169,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30257,is manifestation critiqued in,,,,,too specific - delete
+1170,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30258,is manifestation evaluated in,,,,,too specific - delete
+1171,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30259,is manifestation reviewed in,,,,,too specific - delete
+1172,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30260,has note on identifier for manifestation,,,,,too specific - delete
+1173,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30261,has cartographic data type,,,,,too specific - delete
+1174,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30262,has details of cartographic data type,,,,,too specific - delete
+1175,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30263,has reduction ratio designation,,,,,too specific - delete
+1176,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30267,has related agent of manifestation,,,,,too specific - delete
+1177,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30268,has related person of manifestation,,,,,too specific - delete
+1178,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30269,has related family of manifestation,,,,,too specific - delete
+1179,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30270,has related corporate body of manifestation,,,,,too specific - delete
+1180,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30271,has related collective agent of manifestation,,,,,too specific - delete
+1181,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,too specific - delete
+1182,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30273,has related timespan of manifestation,,,,,too specific - delete
+1183,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30275,has details of regional encoding,,,,,too specific - delete
+1184,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30279,has place of manifestation,,,,,too specific - delete
+1185,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30298,is digital transfer of item of,,,,,too specific - delete
+1186,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30299,is electronic reproduction of item of,,,,,too specific - delete
+1187,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30300,is facsimile of item of,,,,,too specific - delete
+1188,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30301,is preservation facsimile of item of,,,,,too specific - delete
+1189,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30303,is reproduction of item of,,,,,too specific - delete
+1190,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30304,has material,,,,,too specific - delete
+1191,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30305,has intended audience of manifestation,,,,,too specific - delete
+1192,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30306,has font point size,,,,,too specific - delete
+1193,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30307,has groove pitch,,,,,too specific - delete
+1194,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30308,has groove width,,,,,too specific - delete
+1195,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30309,has type of binding,,,,,too specific - delete
+1196,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30310,has binding of manifestation,,,,,too specific - delete
+1197,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30311,has contributor agent of music,,,,,too specific - delete
+1198,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30312,has surveyor agent,,,,,too specific - delete
+1199,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30315,has contributor agent of cartography,,,,,too specific - delete
+1200,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30316,has contributor agent of choreography,,,,,too specific - delete
+1201,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30321,has contributor agent of still image,,,,,too specific - delete
+1202,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30326,has contributor agent of moving image,,,,,too specific - delete
+1203,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30327,has contributor agent to aggregate,,,,,too specific - delete
+1204,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30328,has contributor agent of text,,,,,too specific - delete
+1205,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30329,has creator agent of manifestation,,,,,too specific - delete
+1206,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30331,has contributor agent of speech,,,,,too specific - delete
+1207,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30332,has contributor agent of object,,,,,too specific - delete
+1208,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30333,has contributor agent of computer content,,,,,too specific - delete
+1209,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30336,has contributor person to aggregate,,,,,too specific - delete
+1210,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30337,has surveyor person,,,,,too specific - delete
+1211,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30338,has contributor person of cartography,,,,,too specific - delete
+1212,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30339,has contributor person of choreography,,,,,too specific - delete
+1213,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30340,has contributor person of moving image,,,,,too specific - delete
+1214,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30341,has contributor person of music,,,,,too specific - delete
+1215,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30342,has contributor person of speech,,,,,too specific - delete
+1216,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30343,has contributor person of still image,,,,,too specific - delete
+1217,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30344,has contributor person of text,,,,,too specific - delete
+1218,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30345,has contributor person of object,,,,,too specific - delete
+1219,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30346,has contributor person of computer content,,,,,too specific - delete
+1220,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30347,has broadcaster person,,,,,too specific - delete
+1221,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30348,has film distributor person,,,,,too specific - delete
+1222,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30349,has book designer person,,,,,too specific - delete
+1223,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30350,has engraver person,,,,,too specific - delete
+1224,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30351,has braille embosser person,,,,,too specific - delete
+1225,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30352,has printmaker person,,,,,too specific - delete
+1226,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30353,has caster person,,,,,too specific - delete
+1227,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30354,has lithographer person,,,,,too specific - delete
+1228,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30355,has platemaker person,,,,,too specific - delete
+1229,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30356,has etcher person,,,,,too specific - delete
+1230,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30357,has collotyper person,,,,,too specific - delete
+1231,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30358,has printer person,,,,,too specific - delete
+1232,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30359,has distributor person,,,,,too specific - delete
+1233,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30360,has producer person of unpublished manifestation,,,,,too specific - delete
+1234,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30361,has manufacturer person,,,,,too specific - delete
+1235,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30362,has publisher person,,,,,too specific - delete
+1236,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30363,has creator person of manifestation,,,,,too specific - delete
+1237,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30364,has papermaker person,,,,,too specific - delete
+1238,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30365,has contributor collective agent to aggregate,,,,,too specific - delete
+1239,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30366,has surveyor collective agent,,,,,too specific - delete
+1240,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30367,has contributor collective agent of cartography,,,,,too specific - delete
+1241,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30368,has contributor collective agent of choreography,,,,,too specific - delete
+1242,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30369,has contributor collective agent of moving image,,,,,too specific - delete
+1243,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30370,has contributor collective agent of music,,,,,too specific - delete
+1244,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30371,has contributor collective agent of speech,,,,,too specific - delete
+1245,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30372,has contributor collective agent of still image,,,,,too specific - delete
+1246,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30373,has contributor collective agent of text,,,,,too specific - delete
+1247,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30374,has contributor collective agent of object,,,,,too specific - delete
+1248,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30375,has contributor collective agent of computer content,,,,,too specific - delete
+1249,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30376,has broadcaster collective agent,,,,,too specific - delete
+1250,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30377,has film distributor collective agent,,,,,too specific - delete
+1251,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30378,has book designer collective agent,,,,,too specific - delete
+1252,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30379,has engraver collective agent,,,,,too specific - delete
+1253,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30380,has braille embosser collective agent,,,,,too specific - delete
+1254,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30381,has printmaker collective agent,,,,,too specific - delete
+1255,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30382,has caster collective agent,,,,,too specific - delete
+1256,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30383,has lithographer collective agent,,,,,too specific - delete
+1257,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30384,has platemaker collective agent,,,,,too specific - delete
+1258,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30385,has etcher collective agent,,,,,too specific - delete
+1259,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30386,has collotyper collective agent,,,,,too specific - delete
+1260,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30387,has printer collective agent,,,,,too specific - delete
+1261,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30388,has distributor collective agent,,,,,too specific - delete
+1262,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30389,has producer collective agent of unpublished manifestation,,,,,too specific - delete
+1263,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30390,has manufacturer collective agent,,,,,too specific - delete
+1264,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30391,has publisher collective agent,,,,,too specific - delete
+1265,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30392,has creator collective agent of manifestation,,,,,too specific - delete
+1266,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30393,has papermaker collective agent,,,,,too specific - delete
+1267,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30394,has contributor corporate body to aggregate,,,,,too specific - delete
+1268,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30395,has surveyor corporate body,,,,,too specific - delete
+1269,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30396,has contributor corporate body of cartography,,,,,too specific - delete
+1270,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30397,has contributor corporate body of choreography,,,,,too specific - delete
+1271,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30398,has contributor corporate body of moving image,,,,,too specific - delete
+1272,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30399,has contributor corporate body of music,,,,,too specific - delete
+1273,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30400,has contributor corporate body of speech,,,,,too specific - delete
+1274,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30401,has contributor corporate body of still image,,,,,too specific - delete
+1275,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30402,has contributor corporate body of text,,,,,too specific - delete
+1276,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30403,has contributor corporate body of object,,,,,too specific - delete
+1277,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30404,has contributor corporate body of computer content,,,,,too specific - delete
+1278,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30405,has broadcaster corporate body,,,,,too specific - delete
+1279,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30406,has film distributor corporate body,,,,,too specific - delete
+1280,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30407,has book designer corporate body,,,,,too specific - delete
+1281,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30408,has engraver corporate body,,,,,too specific - delete
+1282,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30409,has braille embosser corporate body,,,,,too specific - delete
+1283,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30410,has printmaker corporate body,,,,,too specific - delete
+1284,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30411,has caster corporate body,,,,,too specific - delete
+1285,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30412,has lithographer corporate body,,,,,too specific - delete
+1286,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30413,has platemaker corporate body,,,,,too specific - delete
+1287,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30414,has etcher corporate body,,,,,too specific - delete
+1288,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30415,has collotyper corporate body,,,,,too specific - delete
+1289,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30416,has printer corporate body,,,,,too specific - delete
+1290,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30417,has distributor corporate body,,,,,too specific - delete
+1291,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30418,has producer corporate body of unpublished manifestation,,,,,too specific - delete
+1292,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30419,has manufacturer corporate body,,,,,too specific - delete
+1293,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30420,has publisher corporate body,,,,,too specific - delete
+1294,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30421,has creator corporate body of manifestation,,,,,too specific - delete
+1295,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30422,has papermaker corporate body,,,,,too specific - delete
+1296,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30423,has contributor family to aggregate,,,,,too specific - delete
+1297,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30424,has surveyor family,,,,,too specific - delete
+1298,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30425,has contributor family of cartography,,,,,too specific - delete
+1299,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30426,has contributor family of choreography,,,,,too specific - delete
+1300,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30427,has contributor family of moving image,,,,,too specific - delete
+1301,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30428,has contributor family of music,,,,,too specific - delete
+1302,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30429,has contributor family of speech,,,,,too specific - delete
+1303,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30430,has contributor family of still image,,,,,too specific - delete
+1304,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30431,has contributor family of text,,,,,too specific - delete
+1305,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30432,has contributor family of object,,,,,too specific - delete
+1306,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30433,has contributor family of computer content,,,,,too specific - delete
+1307,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30434,has broadcaster family,,,,,too specific - delete
+1308,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30435,has film distributor family,,,,,too specific - delete
+1309,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30436,has book designer family,,,,,too specific - delete
+1310,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30437,has engraver family,,,,,too specific - delete
+1311,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30438,has braille embosser family,,,,,too specific - delete
+1312,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30439,has printmaker family,,,,,too specific - delete
+1313,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30440,has caster family,,,,,too specific - delete
+1314,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30441,has lithographer family,,,,,too specific - delete
+1315,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30442,has platemaker family,,,,,too specific - delete
+1316,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30443,has etcher family,,,,,too specific - delete
+1317,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30444,has collotyper family,,,,,too specific - delete
+1318,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30445,has printer family,,,,,too specific - delete
+1319,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30446,has distributor family,,,,,too specific - delete
+1320,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30447,has producer family of unpublished manifestatio,,,,,too specific - delete
+1321,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30448,has manufacturer family,,,,,too specific - delete
+1322,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30449,has publisher family,,,,,too specific - delete
+1323,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30450,has creator family of manifestation,,,,,too specific - delete
+1324,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30451,has papermaker family,,,,,too specific - delete
+1325,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30452,has accessibility content,,,,,too specific - delete
+1326,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30453,has illustrative content,,,,,too specific - delete
+1327,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30454,has sound content,,,,,too specific - delete
+1328,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,,,,,too specific - delete
+1329,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40003,has modification of item,,,,,too specific - delete
+1330,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40004,has collector agent,,,,,too specific - delete
+1331,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40005,has collection registrar agent,,,,,too specific - delete
+1332,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40006,has depositor agent,,,,,too specific - delete
+1333,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40007,has donor agent,,,,,too specific - delete
+1334,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40008,has seller agent,,,,,too specific - delete
+1335,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40009,is contained in item,,,,,too specific - delete
+1336,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40010,has note on dimensions of item,,,,,too specific - delete
+1337,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40011,has note on extent of item,,,,,too specific - delete
+1338,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40012,has illuminator agent,,,,,too specific - delete
+1339,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40013,has binder agent,,,,,too specific - delete
+1340,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40014,has inscriber,,,,,too specific - delete
+1341,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40015,has annotator,,,,,too specific - delete
+1342,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40016,has autographer,,,,,too specific - delete
+1343,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40017,has curator agent,,,,,too specific - delete
+1344,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40018,has current owner agent,,,,,too specific - delete
+1345,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40019,has former owner agent,,,,,too specific - delete
+1346,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40020,has custodian agent,,,,,too specific - delete
+1347,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40021,has owner agent,,,,,too specific - delete
+1348,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40022,has honouree agent of item,,,,,too specific - delete
+1349,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40024,has restorationist agent of item,,,,,too specific - delete
+1350,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40025,has dedicatee agent of item,,,,,too specific - delete
+1351,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40028,has note on item,,,,,"Could be a note about an item, but since MARC is primarily manifestation description, go with note about a manifestation, delete this."
+1352,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40029,is accompanied by item,,,,,too specific - delete
+1353,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40031,has equivalent item,,,,,too specific - delete
+1354,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40032,is bound with,,,,,too specific - delete
+1355,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40034,is container of item,,,,,too specific - delete
+1356,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40035,is on disc with item,,,,,too specific - delete
+1357,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40036,is filmed with item,,,,,too specific - delete
+1358,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40046,has related item of item,,,,,too specific - delete
+1359,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40047,has restriction on access to item,,,,,too specific - delete
+1360,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40048,has restriction on use of item,,,,,too specific - delete
+1361,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40050,has immediate source of acquisition of item,,,,,too specific - delete
+1362,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40062,is item described in,,,,,too specific - delete
+1363,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40063,is item analysed in,,,,,too specific - delete
+1364,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40064,is item commentary in,,,,,too specific - delete
+1365,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40065,is item critiqued in,,,,,too specific - delete
+1366,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40066,is item evaluated in,,,,,too specific - delete
+1367,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40067,is item reviewed in,,,,,too specific - delete
+1368,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40072,has related agent of item,,,,,too specific - delete
+1369,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40073,has related person of item,,,,,too specific - delete
+1370,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40074,has related family of item,,,,,too specific - delete
+1371,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40075,has related corporate body of item,,,,,too specific - delete
+1372,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40076,has related collective agent of item,,,,,too specific - delete
+1373,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40082,has title of item,,,,,too specific - delete
+1374,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40087,has digital transfer of item,,,,,too specific - delete
+1375,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40088,has electronic reproduction of item,,,,,too specific - delete
+1376,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40089,has facsimile of item,,,,,too specific - delete
+1377,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40090,has preservation facsimile of item,,,,,too specific - delete
+1378,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40091,is reprinted as item,,,,,too specific - delete
+1379,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40092,is reproduced as item,,,,,too specific - delete
+1380,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40093,has modifier agent,,,,,too specific - delete
+1381,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40094,has binding of item,,,,,too specific - delete
+1382,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40097,has dedicatee person of item,,,,,too specific - delete
+1383,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40098,has binder person,,,,,too specific - delete
+1384,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40099,has curator person,,,,,too specific - delete
+1385,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40100,has illuminator person,,,,,too specific - delete
+1386,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40101,has current owner person,,,,,too specific - delete
+1387,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40102,has former owner person,,,,,too specific - delete
+1388,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40103,has custodian person,,,,,too specific - delete
+1389,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40104,has owner person,,,,,too specific - delete
+1390,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40105,has collector person,,,,,too specific - delete
+1391,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40106,has collection registrar person,,,,,too specific - delete
+1392,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40107,has depositor person,,,,,too specific - delete
+1393,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40108,has donor person,,,,,too specific - delete
+1394,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40109,has seller person,,,,,too specific - delete
+1395,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40110,has honouree person of item,,,,,too specific - delete
+1396,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40111,has restorationist person of item,,,,,too specific - delete
+1397,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40112,has modifier person,,,,,too specific - delete
+1398,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40113,has dedicatee collective agent of item,,,,,too specific - delete
+1399,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40114,has binder collective agent,,,,,too specific - delete
+1400,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40115,has curator collective agent,,,,,too specific - delete
+1401,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40116,has illuminator collective agent,,,,,too specific - delete
+1402,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40117,has current owner collective agent,,,,,too specific - delete
+1403,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40118,has former owner collective agent,,,,,too specific - delete
+1404,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40119,has custodian collective agent,,,,,too specific - delete
+1405,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40120,has owner collective agent,,,,,too specific - delete
+1406,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40121,has collector collective agent,,,,,too specific - delete
+1407,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40122,has collection registrar collective agent,,,,,too specific - delete
+1408,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40123,has depositor collective agent,,,,,too specific - delete
+1409,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40124,has donor collective agent,,,,,too specific - delete
+1410,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40125,has seller collective agent,,,,,too specific - delete
+1411,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40126,has honouree collective agent of item,,,,,too specific - delete
+1412,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40127,has restorationist collective agent of item,,,,,too specific - delete
+1413,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40128,has modifier collective agent,,,,,too specific - delete
+1414,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40129,has dedicatee corporate body of item,,,,,too specific - delete
+1415,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40130,has binder corporate body,,,,,too specific - delete
+1416,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40131,has curator corporate body,,,,,too specific - delete
+1417,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40132,has illuminator corporate body,,,,,too specific - delete
+1418,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40133,has current owner corporate body,,,,,too specific - delete
+1419,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40134,has former owner corporate body,,,,,too specific - delete
+1420,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40135,has custodian corporate body,,,,,too specific - delete
+1421,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40136,has owner corporate body,,,,,too specific - delete
+1422,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40137,has collector corporate body,,,,,too specific - delete
+1423,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40138,has collection registrar corporate body,,,,,too specific - delete
+1424,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40139,has depositor corporate body,,,,,too specific - delete
+1425,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40140,has donor corporate body,,,,,too specific - delete
+1426,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40141,has seller corporate body,,,,,too specific - delete
+1427,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40142,has honouree corporate body of item,,,,,too specific - delete
+1428,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40143,has restorationist corporate body of item,,,,,too specific - delete
+1429,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40144,has modifier corporate body,,,,,too specific - delete
+1430,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40145,has dedicatee family of item,,,,,too specific - delete
+1431,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40146,has binder family,,,,,too specific - delete
+1432,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40147,has curator family,,,,,too specific - delete
+1433,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40148,has illuminator family,,,,,too specific - delete
+1434,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40149,has current owner family,,,,,too specific - delete
+1435,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40150,has former owner family,,,,,too specific - delete
+1436,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40151,has custodian family,,,,,too specific - delete
+1437,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40152,has owner family,,,,,too specific - delete
+1438,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40153,has collector family,,,,,too specific - delete
+1439,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40154,has collection registrar family,,,,,too specific - delete
+1440,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40155,has depositor family,,,,,too specific - delete
+1441,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40156,has donor family,,,,,too specific - delete
+1442,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40157,has seller family,,,,,too specific - delete
+1443,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40158,has honouree family of item,,,,,too specific - delete
+1444,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40159,has restorationist family of item,,,,,too specific - delete
+1445,Reviewed,500,GENERAL NOTE (R),Undefined,*,,Undefined,*,,,,a,General note (NR),,,,,,,http://rdaregistry.info/Elements/i/P40160,has modifier family,,,,,too specific - delete
+1446,Reviewed,500,GENERAL NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,,,Unstructured,"Needed to retain to provide context for the content of $a; not possible to link or apply to the  portion of the manifestation or item referenced from data in the MARC, so add as a parentetical phrase at end of note text ($a),   ; lna 2022-10-28","The $a mapping could vary (either note on manifestation or note on item, depending on presence of $5).  
 As with other unstructured text string notes, the materials specified could be appended to the end of the note text (subfield a mapping) in parentheses with the prefix Applies to, e.g. (Applies to: booklet) ; lna 2022-05-17","Because $3 is unstructured, we don't have enough data to relate this note to a specific part of a manifestation or item. ",loss of separation of the part specification (not a big impact?)
-1447,first pass,500,GENERAL NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,5,Institution to which field applies (NR),,,,,,,see transformation notes,see transformation notes,IRI  ,"$5 provides the local, copy-specific context for the note.","See example $5 mapping at decision :  https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iij-5 .  The minted item URI relates as a holding to a manifestation  (minted IRI)of a collection, with appellation ""Collection of [named organization assigned the code in MARC Code List for Organizations]"".  This manifestation ""manifests"" (shortcut) a work (minted IRI, collection, WEMI lock) which has a  collector corporate body (minted IRI),  This corporate body has an identifier for agent that is a Nomen, (minted IRI) with an identifier for agent that is a text string, content of $5, and scheme of nomen provided as a string of  the URL for the MARC Code List for Organizations.","This mapping generates a different item URI for each field containing a $5 in order to  establish a relationship with manifestation and apply notes or other relations according to the field content. The result may easily have redundant item IRIs when only a single item exists, since practice at many institutions results in $5 in multiple fields in description of rare materials or archives.  Data in MARC is not sufficient to identify specific items or relate item data from different parts of the reccord with specific generated IRI identifiers. Item data may thus require manual reconciliation after conversion, depending on the institution's needs.","See Subfield 5 discussion https://github.com/uwlib-cams/MARC2RDA/discussions/361 No characteristics can be supplied for the item or association with specifric identifiers based on this subfield. General description from MARC21 Appendix A, MARC Format Bibliographic:  MARC code of the institution or organization that holds the copy to which the data in the field applies.  ; lna 10-28-2022"
+1447,Reviewed,500,GENERAL NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,5,Institution to which field applies (NR),,,,,,,see transformation notes,see transformation notes,IRI  ,"$5 provides the local, copy-specific context for the note.","See example $5 mapping at decision :  https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iij-5 .  The minted item URI relates as a holding to a manifestation  (minted IRI)of a collection, with appellation ""Collection of [named organization assigned the code in MARC Code List for Organizations]"".  This manifestation ""manifests"" (shortcut) a work (minted IRI, collection, WEMI lock) which has a  collector corporate body (minted IRI),  This corporate body has an identifier for agent that is a Nomen, (minted IRI) with an identifier for agent that is a text string, content of $5, and scheme of nomen provided as a string of  the URL for the MARC Code List for Organizations.","This mapping generates a different item URI for each field containing a $5 in order to  establish a relationship with manifestation and apply notes or other relations according to the field content. The result may easily have redundant item IRIs when only a single item exists, since practice at many institutions results in $5 in multiple fields in description of rare materials or archives.  Data in MARC is not sufficient to identify specific items or relate item data from different parts of the reccord with specific generated IRI identifiers. Item data may thus require manual reconciliation after conversion, depending on the institution's needs.","See Subfield 5 discussion https://github.com/uwlib-cams/MARC2RDA/discussions/361 No characteristics can be supplied for the item or association with specifric identifiers based on this subfield. General description from MARC21 Appendix A, MARC Format Bibliographic:  MARC code of the institution or organization that holds the copy to which the data in the field applies.  ; lna 10-28-2022"
 1448,not mapped,500,GENERAL NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,See Decision on $6 and mapping for paired 880 fields.  $6 itself is not mapped but indicates relationship to 880 fields.  -la 2022-10-28,,,See Decision on $6  https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iih-6 
 1449,not mapped,500,GENERAL NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,See Decision on $8  ,,,See Decision on $8 https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iig-8  la-2022_10_18
 1450,not mapped,500,GENERAL NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,l,Library of Congress call number (SE) [OBSOLETE],,,,,,,,,,,,,"See Decision on Obsolete fields

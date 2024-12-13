@@ -4,7 +4,7 @@
 2,delete,550,ISSUING BODY NOTE (R),Undefined,*,,Undefined,*,,,,a,Issuing body note (NR),,,,,,,http://rdaregistry.info/Elements/w/P10503,has issuing collective agent,,,,,
 3,delete,550,ISSUING BODY NOTE (R),Undefined,*,,Undefined,*,,,,a,Issuing body note (NR),,,,,,,http://rdaregistry.info/Elements/w/P10550,has issuing corporate body,,,,,
 4,delete,550,ISSUING BODY NOTE (R),Undefined,*,,Undefined,*,,,,a,Issuing body note (NR),,,,,,,http://rdaregistry.info/Elements/w/P10597,has issuing family,,,,,
-5,first pass,550,ISSUING BODY NOTE (R),Undefined,*,,Undefined,*,,,,a,Issuing body note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30055,has note on publication statement,,,"""Issuing body note: "" + [$a value]",,
+5,done,550,ISSUING BODY NOTE (R),Undefined,*,,Undefined,*,,,,a,Issuing body note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30055,has note on publication statement,,,"""Issuing body note: "" + [$a value]",,
 6,delete,550,ISSUING BODY NOTE (R),Undefined,*,,Undefined,*,,,,a,Issuing body note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30111,has publication statement,,,,,
 7,not mapped,550,ISSUING BODY NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
 8,not mapped,550,ISSUING BODY NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,7,Data provenance (R),,,,,,,,,,,,,

@@ -17,9 +17,8 @@ http://rdaregistry.info/Elements/w/P10004
 (work) has type rdf statement, su (item) predicate (has custocial history of item) object ""contents of subfield a""
 (work) category of work ""private""",unstructured,subfield a is a text string; no more specific property is defined,"(item - minted) has manifestation exemplified (manifestation the MARC is describing)
 (item) is item described with metadata by (work)
-(work) has type rdf statement, su (item) predicate (has note on item) object ""contents of subfield a""
-(work) category of work ""private""
-",,"Example output for ind1=0 in issue discussion:
+(work) has type rdf statement, su (item) predicate (has custodial history of item) object ""contents of subfield a""
+(work) category of work ""private""",,"Example output for ind1=0 in issue discussion:
 
 https://github.com/uwlib-cams/MARC2RDA/issues/225#issuecomment-1284306425 ;
 

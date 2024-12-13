@@ -1,42 +1,70 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,h,Extraterrestrial area (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
-1,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,h,Extraterrestrial area (R),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-2,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,h,Extraterrestrial area (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,,,,,
-3,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,h,Extraterrestrial area (R),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,
-4,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,g,Other nonjurisdictional geographic region and feature (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
-5,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,g,Other nonjurisdictional geographic region and feature (R),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-6,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,g,Other nonjurisdictional geographic region and feature (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,,,,,
-7,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,g,Other nonjurisdictional geographic region and feature (R),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,
-8,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,f,City subsection (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
-9,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,f,City subsection (R),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-10,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,f,City subsection (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,,,,,
-11,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,f,City subsection (R),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,
-12,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,#,Undefined,Undefined,#,Undefined,,,e,Relator term (R),,,,,,,,,,,,,
-13,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,d,City (NR),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
-14,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,d,City (NR),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-15,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,d,City (NR),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,,,,,
-16,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,d,City (NR),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,
-17,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,c,Intermediate political jurisdiction (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
-18,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,c,Intermediate political jurisdiction (R),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-19,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,c,Intermediate political jurisdiction (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,,,,,
-20,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,c,Intermediate political jurisdiction (R),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,
-21,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,b,First-order political jurisdiction (NR),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
-22,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,b,First-order political jurisdiction (NR),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-23,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,b,First-order political jurisdiction (NR),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,,,,,
-24,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,b,First-order political jurisdiction (NR),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,
-25,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,a,Country or larger entity (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
-26,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,a,Country or larger entity (R),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-27,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,a,Country or larger entity (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,,,,,
-28,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,a,Country or larger entity (R),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,
-29,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,#,Undefined,Undefined,#,Undefined,,,4,Relationship (R),,,,,,,,,,,,,
-30,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,#,Undefined,Undefined,#,Undefined,,,2,Source of heading or term (NR),,,,,,,,,,,,,
-31,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-32,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-33,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
-34,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-35,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,,,,,
-36,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,
-37,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
-38,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-39,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,,,,,
-40,,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,
+0,reviewed,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,$1,,,,$1 is approved,,$2,,https://www.rdaregistry.info/Elements/w/object/#P10321,has subject place,IRI,,"<work> rdawo:P10322 <$1> . // has subject place
+<$1> nomen property <nomenIRI>
+<nomenIRI> has nomen string ""stripEndStop(concatenateOA($a, $b, $c, $d, $f, $g,) or ($h))”
+<nomenIRI> rdano:P80069 <tScheme(2nd indicator or $2)> . // has scheme of nomen
+
+If $2 is approved source, use rdapo:P70045 .// has authorized access point for place. If unapproved use rdapo:P70018 .// has access point for place
+- CP 2024-12-12",,
+1,reviewed,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,$1,,,,$1 is approved,,no $2,,https://www.rdaregistry.info/Elements/w/object/#P10321,has subject place,IRI,,"<work> rdawo:P10322 <$1> . // has subject place
+<$1> rdapd:P70018 ""stripEndStop(concatenateOA($a, $b, $c, $d, $f, $g,) or ($h))” . // has access point for place",,
+2,reviewed,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,$0,,,,$0 type is right and no $1,,$2,,https://www.rdaregistry.info/Elements/w/object/#P10321,has subject place,IRI,,"<work> rdawo:P10322 <$0> . // has subject place
+<$0> nomen property <nomenIRI>
+<nomenIRI> has nomen string ""stripEndStop(concatenateOA($a, $b, $c, $d, $f, $g,) or ($h))”
+<nomenIRI> rdano:P80069 <tScheme(2nd indicator or $2)> . // has scheme of nomen
+
+If $2 is approved source, use rdapo:P70045 .// has authorized access point for place. If unapproved use rdapo:P70018 .// has access point for place
+- CP 2024-12-12",,
+3,reviewed,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,$0,,,,$0 type is right and no $1,,no $2,,https://www.rdaregistry.info/Elements/w/object/#P10321,has subject place,IRI,,"<work> rdawo:P10322 <$0> . // has subject place
+<$0> rdapd:P70018 ""stripEndStop(concatenateOA($a, $b, $c, $d, $f, $g,) or ($h))” . // has access point for place",,
+4,reviewed,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),,,,,,,,,$0 | $1,,,,$0 or $1 is unapproved,,,,http://rdaregistry.info/Elements/p/P70020,has identifier for place,structured description,,<placeIRI> rdapd:P70020 <$0 or $1 value>,,
+5,reviewed,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,"$a, $b, $c, $d, $f, $g, $h",,,,$2,,no $1|$0,,https://www.rdaregistry.info/Elements/w/object/#P10321,has subject place,structured description,,"<work> rdawo:P10321 <placeS> . // has subject place
+<placeS> property <nomenP> . // has authorized access point for place; 
+<nomenP>  rdand:P80068 “stripEndStop(concatenateOA($a, $b, $c, $d, $f, $g,) or ($h))”. // has nomen string; OA = in order of appearance
+<nomenP>> rdano:P80069 <tScheme($2)> . // has scheme of nomen
+
+If $2 is approved source, use rdapo:P70045 .// has authorized access point for place. If unapproved use rdapo:P70018 .// has access point for place
+- CP 2024-12-12",,
+6,reviewed,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,"$a, $b, $c, $d, $f, $g, $h",,,,no $2,,no $1|$0,,https://www.rdaregistry.info/Elements/w/object/#P10321,has subject place,unstructured description,,"<work> rdawo:P10321 <placeS> . // has subject place
+<placeS> rdapd:P70018 “stripEndStop(concatenateOA($a, $b, $c, $d, $f, $g,) or ($h))”  . // has access point for place",,
+7,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,h,Extraterrestrial area (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
+8,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,h,Extraterrestrial area (R),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
+9,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,h,Extraterrestrial area (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,,,,,
+10,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,h,Extraterrestrial area (R),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,
+11,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,g,Other nonjurisdictional geographic region and feature (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
+12,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,g,Other nonjurisdictional geographic region and feature (R),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
+13,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,g,Other nonjurisdictional geographic region and feature (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,,,,,
+14,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,g,Other nonjurisdictional geographic region and feature (R),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,
+15,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,f,City subsection (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
+16,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,f,City subsection (R),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
+17,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,f,City subsection (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,,,,,
+18,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,f,City subsection (R),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,
+19,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,#,Undefined,Undefined,#,Undefined,,,e,Relator term (R),,,,,,,,,,,,,
+20,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,d,City (NR),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
+21,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,d,City (NR),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
+22,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,d,City (NR),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,,,,,
+23,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,d,City (NR),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,
+24,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,c,Intermediate political jurisdiction (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
+25,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,c,Intermediate political jurisdiction (R),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
+26,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,c,Intermediate political jurisdiction (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,,,,,
+27,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,c,Intermediate political jurisdiction (R),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,
+28,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,b,First-order political jurisdiction (NR),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
+29,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,b,First-order political jurisdiction (NR),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
+30,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,b,First-order political jurisdiction (NR),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,,,,,
+31,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,b,First-order political jurisdiction (NR),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,
+32,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,a,Country or larger entity (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
+33,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,a,Country or larger entity (R),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
+34,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,a,Country or larger entity (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,,,,,
+35,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,a,Country or larger entity (R),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,
+36,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,#,Undefined,Undefined,#,Undefined,,,4,Relationship (R),,,,,,,,,,,,,
+37,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,#,Undefined,Undefined,#,Undefined,,,2,Source of heading or term (NR),,,,,,,,,,,,,
+38,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+39,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+40,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
+41,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
+42,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,,,,,
+43,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,
+44,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
+45,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
+46,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,,,,,
+47,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10601,is description of place,,,,,

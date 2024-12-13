@@ -1,48 +1,138 @@
-,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,done,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,"a, n, p, s",Title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30134,has title of manifestation,unstructured,,"when LDR 18 = a or i, remove marc subfields and rely on ISBD punctuation. When LDR 18=c, retain marc subfield codes to separate pieces of information
+,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,MARCTagCondition3,Condition3Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
+0,first pass,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,a,Title (NR),,,"not(n, p, s)",,,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,unstructured,,"retain existing internal punctuation. Remove ending punctuation if = : ; / and LDR 18 = a or i. 
+If subfield is last subfield, remove ending , or . unless in abbreviations list.
 
-coded. TG 2022-10-14.",,
-1,done,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,a,Title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30156,has title proper,unstructured,,coded. Stripped terminal punctuation. TG 2022-10-14.,,retain existing punctuation
-2,done,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30142,has other title information,unstructured,,coded. Stripped terminal punctuation. TG 2022-10-14.,,retain existing punctuation
-3,done,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,c,"Statement of responsibility, etc. (NR)",,,,,,,http://rdaregistry.info/Elements/m/P30105,has statement of responsibility relating to title proper,unstructured,,coded. Stripped terminal punctuation. TG 2022-10-14.,,retain existing punctuation
-4,done,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,f,Inclusive dates (NR),,,,,,,http://rdaregistry.info/Elements/m/P30278,has date of manifestation,unstructured,,coded. Stripped terminal punctuation. TG 2022-10-14.,,
-5,done,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,g,Bulk dates (NR),,,,,,,http://rdaregistry.info/Elements/m/P30278,has date of manifestation,unstructured,,coded. Stripped terminal punctuation. TG 2022-10-14.,,
-6,done,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,0-9,Number of nonfiling characters,,,h,Medium (NR),,,,,,,http://rdaregistry.info/Elements/m/P30002,has media type,structured,,"possible to look up URI's for most GMD's? SMD also exist...more specific ones.
+If square brackets surrounding whole subfield (aside from ending punctation) or multiple subfields, remove brackets - CP 2024-10-11",,
+1,first pass,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,"a, n, p, s",Title (NR),,,"n, p, s","preceding subfields are only a, n, p, s or b that does not contain ' = ' or end with ' =', which indicates a parallel title that the n, p, s are part of",,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,unstructured,,"retain existing internal punctuation. Remove ending punctuation if = : ; / and LDR 18 = a or i. 
+If subfield is last subfield, remove ending , or . unless in abbreviations list
 
-coded. No lookup provided in phase 1. TG 2022-10-14.",,"See also TAG 007 , 336, 337 and 338
+If square brackets surrounding whole subfield (aside from ending punctation) or multiple subfields, remove brackets and add note on manifestation rdamd:P30137 """"Title proper is assigned by the cataloguing agency. - CP 2024-10-11",,
+2,first pass,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,*,Title (NR),,,NOT(a), ,,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,unstructured,,"retain existing internal punctuation. Remove ending punctuation if = : ; / and LDR 18 = a or i
+If subfield is last subfield, remove ending , or . unless in abbreviations list
+Concat all subfields preceding $c if present, or all subfields if no $c is present.
 
-See what? --TG 2022-10-14"
-7,done,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,k,Form (R),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,,coded. Stripped terminal punctuation. TG 2022-10-14.,,
-8,not mapped,245,TITLE STATEMENT (NR),Title added entry,0,No added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,d,Designation of section (SE) [OBSOLETE],,,,,,,,,,,,,
-9,not mapped,245,TITLE STATEMENT (NR),Title added entry,1,Added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,d,Designation of section (SE) [OBSOLETE],,,,,,,,,,,,,
-10,not mapped,245,TITLE STATEMENT (NR),Title added entry,0,No added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,e,Name of part/section (SE) [OBSOLETE],,,,,,,,,,,,,
-11,not mapped,245,TITLE STATEMENT (NR),Title added entry,1,Added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,e,Name of part/section (SE) [OBSOLETE],,,,,,,,,,,,,
-12,not mapped,245,TITLE STATEMENT (NR),Title added entry,0,No added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,6,Linkage (NR),,,,,,,,,,,,,refers to a TAG 880 with title in different script
-13,not mapped,245,TITLE STATEMENT (NR),Title added entry,0,No added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,8,Field link and sequence number (R),,,,,,,,,,,,,refers to a TAG 880 with title in different script
-14,not mapped,245,TITLE STATEMENT (NR),Title added entry,1,Added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,6,Linkage (NR),,,,,,,,,,,,,refers to a TAG 880 with title in different script
-15,not mapped,245,TITLE STATEMENT (NR),Title added entry,1,Added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,8,Field link and sequence number (R),,,,,,,,,,,,,refers to a TAG 880 with title in different script
-16,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,a,Title (NR),,,,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,unstructured,,,,
-17,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,a,Title (NR),,,,,,,http://rdaregistry.info/Elements/e/P20312,has title of expression,unstructured,,,,
-18,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,a,Title (NR),,,,,,,http://rdaregistry.info/Elements/i/P40082,has title of item,unstructured,,,,
-19,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30151,has parallel other title information,unstructured,,,,
-20,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,b,Remainder of title (NR),,,,,,,http://rdaregistry.info/Elements/m/P30203,has parallel title proper,unstructured,,,,
-21,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,c,"Statement of responsibility, etc. (NR)",,,,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,unstructured,,,,
-22,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,c,"Statement of responsibility, etc. (NR)",,,,,,,http://rdaregistry.info/Elements/m/P30116,has parallel statement of responsibility relating to title proper,unstructured,,,,
-23,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,c,"Statement of responsibility, etc. (NR)",,,,,,,http://rdaregistry.info/Elements/m/P30117,has statement of responsibility,unstructured,,,,
-24,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,f,Inclusive dates (NR),,,,,,,http://rdaregistry.info/Elements/w/P10219,has date of work,structured,,,,
-25,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,f,Inclusive dates (NR),,,,,,,http://rdaregistry.info/Elements/w/P10317,has related timespan of work,structured,,,,"use for archival material, collection material"
-26,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,f,Inclusive dates (NR),,,,,,,http://rdaregistry.info/Elements/e/P20214,has date of expression,structured,,,,"use for archival material, collection material"
-27,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,f,Inclusive dates (NR),,,,,,,http://rdaregistry.info/Elements/e/P20307,has related timespan of expression,structured,,,,"use for archival material, collection material"
-28,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,g,Bulk dates (NR),,,,,,,http://rdaregistry.info/Elements/w/P10219,has date of work,structured,,,,"use for archival material, collection material"
-29,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,g,Bulk dates (NR),,,,,,,http://rdaregistry.info/Elements/w/P10317,has related timespan of work,structured,,,,
-30,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,g,Bulk dates (NR),,,,,,,http://rdaregistry.info/Elements/e/P20214,has date of expression,structured,,,,
-31,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,g,Bulk dates (NR),,,,,,,http://rdaregistry.info/Elements/e/P20307,has related timespan of expression,structured,,,,
-32,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,k,Form (R),,,,,,,http://rdaregistry.info/Elements/w/P10222,has nature of content,structured,,,,
-33,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,n,Number of part/section of a work (R),,,,,,,http://rdaregistry.info/Elements/w/P10012,has numbering of part,unstructured,,,,Whole part relationships
-34,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,n,Number of part/section of a work (R),,,,,,,http://rdaregistry.info/Elements/m/P30165,has numbering of sequence,unstructured,,,,
-35,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,p,Name of part/section of a work (R),,,,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,unstructured,,,,Whole part relationships
-36,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,p,Name of part/section of a work (R),,,,,,,http://rdaregistry.info/Elements/m/P30156,has title proper,unstructured,,,,Whole part relationships
-37,delete,245,TITLE STATEMENT (NR),Title added entry,0,No added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,s,Version (NR),,,,,,,http://rdaregistry.info/Elements/m/P30142,has other title information,unstructured,,,,use for archival material?
-38,delete,245,TITLE STATEMENT (NR),Title added entry,0,No added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,s,Version (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,,,,use for archival material?
-39,delete,245,TITLE STATEMENT (NR),Title added entry,1,Added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,s,Version (NR),,,,,,,http://rdaregistry.info/Elements/m/P30142,has other title information,unstructured,,,,use for archival material?
-40,delete,245,TITLE STATEMENT (NR),Title added entry,1,Added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,s,Version (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,,,,use for archival material?
+If square brackets surrounding whole subfield (aside from ending punctation) or multiple subfields, remove brackets - CP 2024-10-11",,
+3,first pass,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,a,Title (NR),,,"not(n, p, s)",,Check for Reproduction Conditions 1 and 2,,,,http://rdaregistry.info/Elements/m/P30156,has title proper,unstructured,,"retain existing internal punctuation. 
+
+If LDR 18 = a or i, remove ending punctuation of = : ; /
+
+If subfield is last subfield, remove ending , or . unless in abbreviations list
+
+If square brackets surrounding whole subfield (aside from ending punctation) or multiple subfields, remove brackets and add note on manifestation rdamd:P30137 ""Title proper is assigned by the cataloguing agency."" - CP 2024-10-11
+
+If reproduction condition is present, apply mapping and transformation to both OriginalM and ReproM. -- 2024/10/03 LA, DC",,
+4,first pass,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,"a, n, p, s",Title (NR),,,"n, p, s","preceding subfields are only a, n, p, s or b that does not contain ' = ' or end with ' =', which indicates a parallel title that the n, p, s are part of",Check for Reproduction Conditions 1 and 2,,,,http://rdaregistry.info/Elements/m/P30156,has title proper,unstructured,,"retain existing internal punctuation. 
+Remove ending punctuation if = : ; / and LDR 18 = a or i
+
+If square brackets surrounding whole subfield (aside from ending punctation) or multiple subfields, remove brackets and add note on manifestation rdamd:P30137 ""Title proper is assigned by the cataloguing agency.""
+
+If reproduction condition is present, apply mapping and transformation to both OriginalM and ReproM. -- 2024/10/03 LA, DC",,CP unsure why this was title of manifestation and not title proper. Discuss? 
+5,first pass,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,*,,,,NOT(a),,Check for Reproduction Conditions 1 and 2,,,,http://rdaregistry.info/Elements/m/P30156,has title proper,unstructured,,"retain existing internal punctuation. Remove ending punctuation if = : ; / and LDR 18 = a or i. 
+If subfield is last subfield, remove ending , or . unless in abbreviations list
+Concat all subfields preceding $c if present, or all subfields if no $c is present.
+Add note on manifestation rdamd:P30137 ""Title proper is assigned by the cataloguing agency.""
+
+If square brackets surrounding whole subfield (aside from ending punctation) or multiple subfields, remove brackets
+
+Do not map $b separately as ""has other title information"" when no a is present - CP 2024-10-11
+
+If reproduction condition is present, apply mapping and transformation to both OriginalM and ReproM. -- 2024/10/03 LA, DC",,
+6,first pass,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,b,Title (NR),,,LDR 18,a or i (isbd punctuation),a,,Check for Reproduction Conditions 1 and 2,,"http://rdaregistry.info/Elements/m/P30156
+http://rdaregistry.info/Elements/m/P30142
+http://rdaregistry.info/Elements/m/P30105","has title proper
+has other title information
+has statement of responsibility relating to title proper",unstructured,,"Separate ISBD statements based on punctuation (= :) 
+
+1. any statements following ' = ' map to ""has title proper""
+2. any statements following : map to ""has other title information""
+3. The first statement is mapped based on the preceding subfield's ending punctuation
+4. If preceding field does not have ending punctuation or the punctuation is not = :, map as ""has other title information""
+
+If square brackets surrounding statement or subfield or multiple statements or subfields, remove brackets and add note on manifestation rdamd:P30137 ""[Property] is assigned by the cataloguing agency.""
+
+If reproduction condition is present, apply mapping and transformation to both OriginalM and ReproM. -- 2024/10/03 LA, DC","Mapping does not process multiple titles that are not parallel titles. These are indicated with ending punctuation of ; or . and indicate an aggregate work, which should be filtered out in phase 1.
+- CP 2024-09-05",
+7,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,b,Remainder of title (NR),,,LDR 18,a or i (isbd punctuation),,"preceding field ends in ""=""",,,http://rdaregistry.info/Elements/m/P30156,has title proper,unstructured,,"if $b contains = or :, tokenize by = and : and treat each statement as a separate $b. Base mapping on punctuation present in preceding subfield (: or =) - CP 2024-08-28
+
+Remove ending punctuation if = : ; /
+
+If square brackets present, remove brackets and add note on manifestation rdamd:P30137 ""title proper is assigned by the cataloguing agency.""",,
+8,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,b,Remainder of title (NR),,,LDR 18,a or i (isbd punctuation),,"preceding field ends in "":""",,,http://rdaregistry.info/Elements/m/P30142,has other title information,unstructured,,"if $b contains = or :, tokenize by = and : and treat each statement as a separate $b. Base mapping on punctuation present in preceding subfield/segment (: or =) - CP 2024-08-28
+
+If square brackets present, remove brackets and add note on manifestation rdamd:P30137 ""Other title information is assigned by the cataloguing agency.""",,
+9,first pass,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,b,Remainder of title (NR),,,LDR 18,NOT(a or i),a,,Check for Reproduction Conditions 1 and 2,,http://rdaregistry.info/Elements/m/P30142,has other title information,unstructured,,"Not ISBD punctuation, retain all punctuation. If square brackets surrounding whole subfield (aside from ending punctuation) or multiple subfields, remove brackets. 
+If subfield is last subfield, remove ending , or . unless in abbreviations list - CP 2024-10-11
+
+If reproduction condition is present, apply mapping and transformation to both OriginalM and ReproM. -- 2024/10/03 LA, DC",,
+10,first pass,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,"b, n, p, s",,,,,,a,,,,,,unstructured,,"map same as above based on ISBD or not ISBD, but append n, p, s to $b before processing if $b contains ' = ' or ends with ' ='. 
+If subfield is last subfield, remove ending , or . unless in abbreviations list. - CP 2024-10-11",,"if mapped to manifestation, add reproduction condition and transform note same as other rows.- 2024-10-03 DC"
+11,first pass,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,c,"Statement of responsibility, etc. (NR)",,,LDR 18,a or i (isbd punctuation),,,Check for Reproduction Conditions 1 and 2,,"http://rdaregistry.info/Elements/m/P30156
+http://rdaregistry.info/Elements/m/P30142
+http://rdaregistry.info/Elements/m/P30105","has title proper
+has other title information
+has statement of responsibility relating to title proper",unstructured,,"Separate ISBD statements based on punctuation (= : /). 
+First statement maps to ""has statement of responsibility relating to title proper"" If following punctuation is "";"", dividde into separate statements and map both as ""has statement of responsibility relating to title proper"" 
+
+1. any additional statements following ' = ' map to ""has title proper""
+2. any additional statements following : map to ""has other title information""
+3. any additional statements following / map to ""has statement of responsibility relating to title proper. If statement includes "" ; "", divide into two separate statements and map both as ""has statement of responsibility relating to title proper""
+
+If square brackets surrounding statement or subfield or multiple statements or subfields, remove brackets and add note on manifestation rdamd:P30137 ""[Property] is assigned by the cataloguing agency.""
+If subfield is last subfield, remove ending , or . unless in abbreviations list. - CP 2024-10-11
+
+If reproduction condition is present, apply mapping and transformation to both OriginalM and ReproM. -- 2024/10/03 LA, DC","Mapping does not process multiple titles that are not parallel titles. These are indicated with ending punctuation of ; or . and indicate an aggregate work, which should be filtered out in phase 1.
+- CP 2024-09-05",
+12,first pass,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,c,"Statement of responsibility, etc. (NR)",,,LDR 18,NOT(a or i),,,Check for Reproduction Conditions 1 and 2,,http://rdaregistry.info/Elements/m/P30105,has statement of responsibility relating to title proper,unstructured,,"Not ISBD punctuation, retain all punctuation. If square brackets surrounding whole subfield (aside from ending punctuation) or multiple subfields, remove brackets
+
+If reproduction condition is present, apply mapping and transformation to both OriginalM and ReproM. -- 2024/10/03 LA, DC",,retain square brackets as well? - CP
+13,done,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,f,Inclusive dates (NR),,,Check for Reproduction Conditions 1 and 2,,,,,,http://rdaregistry.info/Elements/m/P30278,has date of manifestation,unstructured,,"strip terminal punctuation.
+
+If reproduction condition is present, apply mapping and transformation to both OriginalM and ReproM. -- 2024/10/03 LA, DC",,
+14,done,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,g,Bulk dates (NR),,,Check for Reproduction Conditions 1 and 2,,,,,,http://rdaregistry.info/Elements/m/P30278,has date of manifestation,unstructured,,"coded. Stripped terminal punctuation. TG 2022-10-14.
+
+If reproduction condition is present, apply mapping and transformation to both OriginalM and ReproM. -- 2024/10/03 LA, DC",,
+15,first pass,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,0-9,Number of nonfiling characters,,,h,Medium (NR),,,,,,,,,http://www.rdaregistry.info/Elements/m/P30335,has category of manifestation,structured,,"If square brackets surrounding whole field (aside from ending punctation), remove. 
+If subfield is last subfield, remove ending , or . unless in abbreviations list - CP 2024-10-11
+
+",,"See also TAG 007 , 336, 337 and 338
+
+See what? --TG 2022-10-14
+
+possible to look up URI's for most GMD's? SMD also exist...more specific ones.
+
+coded. No lookup provided in phase 1. TG 2022-10-14."
+16,done,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,k,Form (R),,,Check for Reproduction Conditions 1 and 2,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,,"Capitalize first letter. If no ending punctuation, end in period. - CP 2024-10-11
+
+If reproduction condition is present, apply mapping and transformation to both OriginalM and ReproM. -- 2024/10/03 LA, DC",,
+17,not mapped,245,TITLE STATEMENT (NR),Title added entry,0,No added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,d,Designation of section (SE) [OBSOLETE],,,,,,,,,,,,,,,
+18,not mapped,245,TITLE STATEMENT (NR),Title added entry,1,Added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,d,Designation of section (SE) [OBSOLETE],,,,,,,,,,,,,,,
+19,not mapped,245,TITLE STATEMENT (NR),Title added entry,0,No added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,e,Name of part/section (SE) [OBSOLETE],,,,,,,,,,,,,,,
+20,not mapped,245,TITLE STATEMENT (NR),Title added entry,1,Added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,e,Name of part/section (SE) [OBSOLETE],,,,,,,,,,,,,,,
+21,not mapped,245,TITLE STATEMENT (NR),Title added entry,0,No added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,6,Linkage (NR),,,,,,,,,,,,,,,refers to a TAG 880 with title in different script
+22,not mapped,245,TITLE STATEMENT (NR),Title added entry,0,No added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,8,Field link and sequence number (R),,,,,,,,,,,,,,,refers to a TAG 880 with title in different script
+23,not mapped,245,TITLE STATEMENT (NR),Title added entry,1,Added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,6,Linkage (NR),,,,,,,,,,,,,,,refers to a TAG 880 with title in different script
+24,not mapped,245,TITLE STATEMENT (NR),Title added entry,1,Added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,8,Field link and sequence number (R),,,,,,,,,,,,,,,refers to a TAG 880 with title in different script
+25,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,a,Title (NR),,,,,,,,,http://rdaregistry.info/Elements/e/P20312,has title of expression,unstructured,,,,
+26,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,a,Title (NR),,,,,,,,,http://rdaregistry.info/Elements/i/P40082,has title of item,unstructured,,,,
+27,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,b,Remainder of title (NR),,,,,,,,,http://rdaregistry.info/Elements/m/P30151,has parallel other title information,unstructured,,,,
+28,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,b,Remainder of title (NR),,,,,,,,,http://rdaregistry.info/Elements/m/P30203,has parallel title proper,unstructured,,,,
+29,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,c,"Statement of responsibility, etc. (NR)",,,,,,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,unstructured,,,,
+30,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,c,"Statement of responsibility, etc. (NR)",,,,,,,,,http://rdaregistry.info/Elements/m/P30116,has parallel statement of responsibility relating to title proper,unstructured,,,,
+31,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,c,"Statement of responsibility, etc. (NR)",,,,,,,,,http://rdaregistry.info/Elements/m/P30117,has statement of responsibility,unstructured,,,,
+32,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,f,Inclusive dates (NR),,,,,,,,,http://rdaregistry.info/Elements/w/P10219,has date of work,structured,,,,
+33,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,f,Inclusive dates (NR),,,,,,,,,http://rdaregistry.info/Elements/w/P10317,has related timespan of work,structured,,,,"use for archival material, collection material"
+34,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,f,Inclusive dates (NR),,,,,,,,,http://rdaregistry.info/Elements/e/P20214,has date of expression,structured,,,,"use for archival material, collection material"
+35,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,f,Inclusive dates (NR),,,,,,,,,http://rdaregistry.info/Elements/e/P20307,has related timespan of expression,structured,,,,"use for archival material, collection material"
+36,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,g,Bulk dates (NR),,,,,,,,,http://rdaregistry.info/Elements/w/P10219,has date of work,structured,,,,"use for archival material, collection material"
+37,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,g,Bulk dates (NR),,,,,,,,,http://rdaregistry.info/Elements/w/P10317,has related timespan of work,structured,,,,
+38,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,g,Bulk dates (NR),,,,,,,,,http://rdaregistry.info/Elements/e/P20214,has date of expression,structured,,,,
+39,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,g,Bulk dates (NR),,,,,,,,,http://rdaregistry.info/Elements/e/P20307,has related timespan of expression,structured,,,,
+40,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,k,Form (R),,,,,,,,,http://rdaregistry.info/Elements/w/P10222,has nature of content,structured,,,,
+41,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,n,Number of part/section of a work (R),,,,,,,,,http://rdaregistry.info/Elements/w/P10012,has numbering of part,unstructured,,,,Whole part relationships
+42,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,n,Number of part/section of a work (R),,,,,,,,,http://rdaregistry.info/Elements/m/P30165,has numbering of sequence,unstructured,,,,
+43,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,p,Name of part/section of a work (R),,,,,,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,unstructured,,,,Whole part relationships
+44,delete,245,TITLE STATEMENT (NR),Title added entry,*,,Nonfiling characters,*,,,,p,Name of part/section of a work (R),,,,,,,,,http://rdaregistry.info/Elements/m/P30156,has title proper,unstructured,,,,Whole part relationships
+45,delete,245,TITLE STATEMENT (NR),Title added entry,0,No added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,s,Version (NR),,,,,,,,,http://rdaregistry.info/Elements/m/P30142,has other title information,unstructured,,,,use for archival material?
+46,delete,245,TITLE STATEMENT (NR),Title added entry,0,No added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,s,Version (NR),,,,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,,,,use for archival material?
+47,delete,245,TITLE STATEMENT (NR),Title added entry,1,Added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,s,Version (NR),,,,,,,,,http://rdaregistry.info/Elements/m/P30142,has other title information,unstructured,,,,use for archival material?
+48,delete,245,TITLE STATEMENT (NR),Title added entry,1,Added entry,Nonfiling characters,0-9,Number of nonfiling characters,,,s,Version (NR),,,,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,,,,use for archival material?

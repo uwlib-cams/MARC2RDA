@@ -5,14 +5,14 @@
 
 <ConceptLCC(value of $a)> skos:altLabel “value of $a” .
 
-<ConceptLCC(value of $a)> skos:inScheme https://id.loc.gov/vocabulary/classSchemes/lcc .",,
+<ConceptLCC(value of $a)> skos:inScheme https://id.loc.gov/vocabulary/classSchemes/lcc .",,coded - CP 2024-08-30
 1,p,55,CLASSIFICATION NUMBERS ASSIGNED IN CANADA (R),Existence in LAC collection,*, ,"Type, completeness, source of class/call number",Ind2 >= “6”, ,,,a,Classification number (NR),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,structured description,,"<work> rdawo:P10256 <Concept""value of $2""(value of $a)>
 
 <Concept""value of $2""(value of $a)> skos:notation “value of $a”^^<SchemeNotation""value of $2""> .
 
 <Concept""value of $2""(value of $a)> skos:altLabel “value of $a” .
 
-<Concept""value of $2""(value of $a)> skos:inScheme https://id.loc.gov/vocabulary/classSchemes/""value of $2"" .",,
+<Concept""value of $2""(value of $a)> skos:inScheme https://id.loc.gov/vocabulary/classSchemes/""value of $2"" .",,coded - CP 2024-08-30
 2, ,55,CLASSIFICATION NUMBERS ASSIGNED IN CANADA (R),Existence in LAC collection,#,Information not provided,"Type, completeness, source of class/call number",0,LC-based call number assigned by LAC,,,a,Classification number (NR),,,,,,,,,,,,,
 3,,55,CLASSIFICATION NUMBERS ASSIGNED IN CANADA (R),Existence in LAC collection,#,Information not provided,"Type, completeness, source of class/call number",1,Complete LC class number assigned by LAC,,,a,Classification number (NR),,,,,,,,,,,,,
 4,,55,CLASSIFICATION NUMBERS ASSIGNED IN CANADA (R),Existence in LAC collection,#,Information not provided,"Type, completeness, source of class/call number",2,Incomplete LC class number assigned by LAC,,,a,Classification number (NR),,,,,,,,,,,,,

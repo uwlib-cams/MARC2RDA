@@ -2,7 +2,7 @@
 0,first pass,82,DEWEY DECIMAL CLASSIFICATION NUMBER (R),Type of edition,0,Full edition,Source of classification number,*, ,,,a,Classification number (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,structured description,,"<work> rdawo:P10256 <ConceptDDC""value of $2""(value of $a)> . // Concept for full edition and normalized $a
 <ConceptDDC""value of $2""(value of $a)> skos:notation “value of $a”^^<SchemeNotationDDC> . // normalized $a
 <ConceptDDC""value of $2""(value of $a)> skos:altLabel “value of $a” . // normalized $a
-<ConceptDDC""value of $2""(value of $a)> skos:inScheme http://id.loc.gov/vocabulary/classSchemes/“ddc” + $2 . // tScheme(schemeCode) for 082 ind1=0 = http://id.loc.gov/vocabulary/classSchemes/ + “ddc” + “Full” + $2","A slash is inserted in $a to indicate a truncation point (for shelfmarking); this should be removed to restore the full classification number:
+<ConceptDDC""value of $2""(value of $a)> skos:inScheme http://id.loc.gov/vocabulary/classSchemes/“ddc” + $2 . // tScheme(schemeCode) for 082 ind1=0 = http://id.loc.gov/vocabulary/classSchemes/ + “ddc” + $2","A slash is inserted in $a to indicate a truncation point (for shelfmarking); this should be removed to restore the full classification number:
 normalize($a) = replace($a, “/”, “”) // replace all slashes with nothing
 Distinct IRIs are used for each full edition of DDC.
 If ind1 = 0
@@ -13,14 +13,23 @@ Note: MARC 21 manual says to qualify $2 with language (???) and timestamp.","The
 It was developed with best practices for Semantic Web data. There is likely to be an IRI minting template that uses classification number and edition number.
 See: Cool URIs for the DDC: Towards Web-scale Accessibility of a Large Classification System. Available at: https://dcpapers.dublincore.org/files/articles/952109316/dcmi-952109316.pdf
 Note that the IRI template was changed later to focus on the classification number, qualified by edition or timestamp"
-1,first pass,82,DEWEY DECIMAL CLASSIFICATION NUMBER (R),Type of edition,1,Abridged edition,Source of classification number,*, ,,,a,Classification number (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,structured description,,"<work> rdawo:P10256 <ConceptDDC""value of $2""(value of $a)> . // Concept for full edition and normalized $a
+1,first pass,82,DEWEY DECIMAL CLASSIFICATION NUMBER (R),Type of edition,1,Abridged edition,Source of classification number,*, ,,,a,Classification number (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,structured description,,"<work> rdawo:P10256 <ConceptDDC""value of $2""(value of $a)> . // Concept for abridged edition and normalized $a
 <ConceptDDC""value of $2""(value of $a)> skos:notation “value of $a”^^<SchemeNotationDDC> . // normalized $a
 <ConceptDDC""value of $2""(value of $a)> skos:altLabel “value of $a” . // normalized $a
-<ConceptDDC""value of $2""(value of $a)> skos:inScheme http://id.loc.gov/vocabulary/classSchemes/“ddc” + $2 . // tScheme(schemeCode) for 082 ind1=1 = http://id.loc.gov/vocabulary/classSchemes/ + “ddc” + “Abridged” + $2",,
-2,first pass,82,DEWEY DECIMAL CLASSIFICATION NUMBER (R),Type of edition,7,Other edition specified in subfield $2,Source of classification number,*, ,,,a,Classification number (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,structured description,,"<work> rdawo:P10256 <ConceptDDC""value of $2""(value of $a)> . // Concept for full edition and normalized $a
+<ConceptDDC""value of $2""(value of $a)> skos:inScheme http://id.loc.gov/vocabulary/classSchemes/“ddc” // tScheme(schemeCode) for 082 ind1=1 = http://id.loc.gov/vocabulary/classSchemes/ddc",,"The full and abridged editions of DDC have different numbering sequences; see the Wikipedia article for further information.
+
+The MARC 21 manual gives these examples for ind1=0 (full) and ind1=1 (abridged):
+
+082 04 $a388/.0919$222
+082 14 $a914.3$213
+
+For the full edition, the scheme IRI is http://id.loc.gov/vocabulary/classSchemes/ddc22, with the local part from 'ddc' + subfield $2.
+
+The scheme IRI http://id.loc.gov/vocabulary/classSchemes/ddc13 is also for a full edition, so it is incorrect to use the same mapping for an abridged edition. The best we can do is to use the 'general' DDC scheme IRI http://id.loc.gov/vocabulary/classSchemes/ddc, with the local part from 'ddc' but no edition number."
+2,first pass,82,DEWEY DECIMAL CLASSIFICATION NUMBER (R),Type of edition,7,Other edition specified in subfield $2,Source of classification number,*, ,,,a,Classification number (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,structured description,,"<work> rdawo:P10256 <ConceptDDC""value of $2""(value of $a)> . // Concept for other edition and normalized $a
 <ConceptDDC""value of $2""(value of $a)> skos:notation “value of $a”^^<SchemeNotationDDC> . // normalized $a
 <ConceptDDC""value of $2""(value of $a)> skos:altLabel “value of $a” . // normalized $a
-<ConceptDDC""value of $2""(value of $a)> skos:inScheme http://id.loc.gov/vocabulary/classSchemes/“ddc” + $2 . // tScheme(schemeCode) for 082 ind1=7 = http://id.loc.gov/vocabulary/classSchemes/ + “ddc” + $2",,
+<ConceptDDC""value of $2""(value of $a)> skos:inScheme http://id.loc.gov/vocabulary/classSchemes/“ddc” .// tScheme(schemeCode) for 082 ind1=7 = http://id.loc.gov/vocabulary/classSchemes/ddc",,
 3,delete,82,DEWEY DECIMAL CLASSIFICATION NUMBER (R),Type of edition,#,No edition information recorded (BK CF MU VM SE) [OBSOLETE],Source of classification number,#,No information provided,,,a,Classification number (R),,,,,,,,,,,,,
 4,delete,82,DEWEY DECIMAL CLASSIFICATION NUMBER (R),Type of edition,#,No edition information recorded (BK CF MU VM SE) [OBSOLETE],Source of classification number,0,Assigned by LC,,,a,Classification number (R),,,,,,,,,,,,,
 5,delete,82,DEWEY DECIMAL CLASSIFICATION NUMBER (R),Type of edition,#,No edition information recorded (BK CF MU VM SE) [OBSOLETE],Source of classification number,4,Assigned by agency other than LC,,,a,Classification number (R),,,,,,,,,,,,,

@@ -1,5 +1,5 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,first pass,754,ADDED ENTRY--TAXONOMIC IDENTIFICATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,a,"Taxonomic name (R), Taxonomic category",,,c,,2.0,,http://rdaregistry.info/Elements/i/P40079,"has related nomen of item
+0,reviewed,754,ADDED ENTRY--TAXONOMIC IDENTIFICATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,a,"Taxonomic name (R), Taxonomic category",,,c,,2.0,,http://rdaregistry.info/Elements/i/P40079,"has related nomen of item
 has nomen string
 has category of nomen
 has scheme of nomen
@@ -10,20 +10,20 @@ has context of use",,"$a must be preceded by $c and these $c $a pairs are repeat
 [nomenIRI] rdan:P80078 has category of nomen [value of $c]
 [nomenIRI] rdan:P80069 has scheme of nomen [value of $2]
 [nomenIRI] rdan:P80067 has context of use 'Taxonomic Identification'",,
-1,first pass,754,ADDED ENTRY--TAXONOMIC IDENTIFICATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,d,Common or alternative name (R),,,,,,,http://rdaregistry.info/Elements/i/P40079,"has related nomen of item
+1,reviewed,754,ADDED ENTRY--TAXONOMIC IDENTIFICATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,d,Common or alternative name (R),,,,,,,http://rdaregistry.info/Elements/i/P40079,"has related nomen of item
 has nomen string
 has category of nomen",,,"Mint a new nomen for each $d
 
 [item] has related nomen of item [nomenIRI]
 [nomenIRI] rdan:P80068 has nomen string [value of $d]
 [nomenIRI] rdan:P80078 has category of nomen 'Common or alternative name'",,
-2,first pass,754,ADDED ENTRY--TAXONOMIC IDENTIFICATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,x,Non-public note (R),,,,,,,http://rdaregistry.info/Elements/i/P40164,is item described with metadata by,,,"[itemIRI] is item described with metadata by [newly minted metadataIRI]
+2,reviewed,754,ADDED ENTRY--TAXONOMIC IDENTIFICATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,x,Non-public note (R),,,,,,,http://rdaregistry.info/Elements/i/P40164,is item described with metadata by,,,"[itemIRI] is item described with metadata by [newly minted metadataIRI]
 [metadataIRI] rdf:type rdf:statement
 [metadataIRI] rdf:subject [itemIRI]
 [metadataIRI] rdf:predicate [rdai:p40028 has note on item]
 [metadataIRI] rdf:object ['Taxonomic identification note: ' + value of $x]
 [metadataIRI] has category of work 'private'",,
-3,first pass,754,ADDED ENTRY--TAXONOMIC IDENTIFICATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,z,Public note (R),,,,,,,http://rdaregistry.info/Elements/i/P40028,has note on item,unstructured description,, 'Taxonomic identification note: ' + [value of $z],,
+3,reviewed,754,ADDED ENTRY--TAXONOMIC IDENTIFICATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,z,Public note (R),,,,,,,http://rdaregistry.info/Elements/i/P40028,has note on item,unstructured description,, 'Taxonomic identification note: ' + [value of $z],,
 4,not mapped,754,ADDED ENTRY--TAXONOMIC IDENTIFICATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,c,Taxonomic category (R),,,,,,,,,,,,,
 5,not mapped,754,ADDED ENTRY--TAXONOMIC IDENTIFICATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,0,Authority record control number or standard number (R),,,,,,,,,,,,,
 6,not mapped,754,ADDED ENTRY--TAXONOMIC IDENTIFICATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,1,Real World Object URI (R),,,,,,,,,,,,,

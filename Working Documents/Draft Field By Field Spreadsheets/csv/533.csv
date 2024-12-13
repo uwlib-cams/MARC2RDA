@@ -105,18 +105,18 @@
 103,delete,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,a,Type of reproduction (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,,"Append before contents of this subfield  the following:  ""Reproduction note.  Type: ""(space)  ",,"This is mapped as a note in lieu of of fully mapping multiple manifestation description fields for original and reproduction which may appear in the MARC record based on presence of 533.  For explanation, see discussion  on Reproductions and Decision on 533  https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iij-5 
 
 Delete.  This decision was revisited 11/8/2023 in context of 535 mapping and an approach separating elements describing an original and its reproduction manifestation represented by the MARC record was indicated --lna 12/7/2023"
-104,Reviewed,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,a,Type of reproduction (NR),,,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,unstructured,533 describes the manifestation being cataloged (except for $5).  Values of $a are not predictably structured.,,,
-105,Reviewed,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,b,Place of reproduction (R),,,,,,,http://rdaregistry.info/Elements/m/P30279,has place of manifestation,unstructured,,,,
-106,Reviewed,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,c,Agency responsible for reproduction (R),,, , ,,,http://rdaregistry.info/Elements/m/P30297,has name of agent of manifestation,unstructured,,,,
-107,Reviewed,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,d,Date of reproduction (NR),,,,,,,http://rdaregistry.info/Elements/m/P30278,has date of manifestation,unstructured,,,,
-108,Reviewed,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,e,Physical description of reproduction (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,"$e may contain physical description data spanning multiple RDA manifestation elements; there is no unspecific ""statement"" element I could find. --lna 11/20/2023", ,,
-109,Reviewed,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,f,Series statement of reproduction (R),,,,,,,http://rdaregistry.info/Elements/m/P30106,has series statement,unstructured,,"strip enclosing parentheses, leave remaining punctuation alone",,
-110,Reviewed,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,m,Dates and/or sequential designation of issues reproduced (R),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,,Add prefix to contents of field-> Dates and/or sequential designation of issues reproduced,,
-111,Reviewed,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,n,Note about reproduction (R),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,, ,,
+104,done,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,a,Type of reproduction (NR),,,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,unstructured,533 describes the manifestation being cataloged (except for $5).  Values of $a are not predictably structured.,,,coded with ending periods removed - CP 2024-10-08
+105,done,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,b,Place of reproduction (R),,,,,,,http://rdaregistry.info/Elements/m/P30279,has place of manifestation,unstructured,,,,coded with surround brackets and ending colon or semicolon removed - CP 2024-10-08
+106,done,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,c,Agency responsible for reproduction (R),,, , ,,,http://rdaregistry.info/Elements/m/P30297,has name of agent of manifestation,unstructured,,,,coded with surround brackets and ending comma removed - CP 2024-10-08
+107,done,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,d,Date of reproduction (NR),,,,,,,http://rdaregistry.info/Elements/m/P30278,has date of manifestation,unstructured,,,,coded with surround brackets and ending period removed - CP 2024-10-08
+108,done,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,e,Physical description of reproduction (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,"$e may contain physical description data spanning multiple RDA manifestation elements; there is no unspecific ""statement"" element I could find. --lna 11/20/2023", ,,coded - CP 2024-10-23
+109,done,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,f,Series statement of reproduction (R),,,,,,,http://rdaregistry.info/Elements/m/P30106,has series statement,unstructured,,"strip enclosing parentheses, leave remaining punctuation alone",,coded - CP 2024-10-23
+110,done,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,m,Dates and/or sequential designation of issues reproduced (R),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,,Add prefix to contents of field-> Dates and/or sequential designation of issues reproduced,,coded - CP 2024-10-23
+111,done,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,n,Note about reproduction (R),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,, ,,
 112,not mapped,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,y,Data provenance (R),,,,,,,,,,,,,"Provisionally, not mapped - this is a new subfield, and it is not clear from the documentation how the ""data provenance"" might translate to RDA.  We don't have a model for using Metadata Work to express provenance for RDA statements at a granular level and haven't seen this in the wild (yet)  --lna 12/7/2023"
 113,not mapped,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,5,Institution to which field applies (NR),,,,,,,,,,,,,"Not mapped - the interpretation of  $5""Institution to which the field applies"" is not clear for 533.  The examples show the institution whose symbol appears in $5 also appearing as the publisher/creator of the reproduction.  --la 12/7/2023"
 114,not mapped,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,value not mapped; used to link field to corresponding 880 Alternate Graphic Representation
-115,First pass,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,7,"Fixed-length data elements of reproduction (NR)/
+115,Reviewed,533.0,REPRODUCTION NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,7,"Fixed-length data elements of reproduction (NR)/
 Type of date/Publication status",*,,,,,,,,various,This is data about the reproduction (this manifestation) that parallels values in 008 field.  We should use the 008 mappings for each data element: -- la 2024-6-13,"/0 - Type of date/Publication status
   Use 008 06 mappings
   Note:  code r (original and reproduction dates) should not be used here! 
@@ -143,7 +143,9 @@ If Format is BOOKS, COMPUTER FILES, MUSIC, CONTINUING RESOURCES, or MIXED MATERI
   Use 008 23 mapping for the respective format
 
 If Format is MAPS or VISUAL MATERIALS
-  Use 008 29 mapping",,
+  Use 008 29 mapping",,"https://www.oclc.org/bibformats/en/fixedfield/type.html
+
+coded aside from dates - CP 2024-10-10"
 116,,,,,,,,,,,,,,,,,,,,,,,,,,
 117,,,,,,,,,,,,,,,,,,,,,,,,,,
 118,,,,,,,,,,,,,,,,,,,,,,,,,,

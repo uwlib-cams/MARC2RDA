@@ -5,7 +5,7 @@
 
 <ConceptLCC(“value of $a”)> skos:altLabel “value of $a” .
 
-<ConceptLCC(“value of $a”)> skos:inScheme https://id.loc.gov/vocabulary/classSchemes/lcc .",,
+<ConceptLCC(“value of $a”)> skos:inScheme https://id.loc.gov/vocabulary/classSchemes/lcc .",,coded - CP 2024-09-19
 1,,51,"LIBRARY OF CONGRESS COPY, ISSUE, OFFPRINT STATEMENT (R)",Undefined,#,Undefined,Series call number (SE) [OBSOLETE],0,No series involved,,,a,Classification number (NR),,,,,,,,,,,,,
 2,,51,"LIBRARY OF CONGRESS COPY, ISSUE, OFFPRINT STATEMENT (R)",Undefined,#,Undefined,Series call number (SE) [OBSOLETE],1,Main series,,,a,Classification number (NR),,,,,,,,,,,,,
 3,,51,"LIBRARY OF CONGRESS COPY, ISSUE, OFFPRINT STATEMENT (R)",Undefined,#,Undefined,Series call number (SE) [OBSOLETE],2,Subseries,,,a,Classification number (NR),,,,,,,,,,,,,

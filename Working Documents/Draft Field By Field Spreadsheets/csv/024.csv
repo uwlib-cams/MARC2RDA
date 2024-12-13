@@ -2,22 +2,22 @@
 0,done,24,OTHER STANDARD IDENTIFIER (R),Type of standard number or code,0,International Standard Recording Code (ISRC),Difference indicator,*,,,,a,Standard number or code (NR),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,IRI,,"[Manifestation]-->rdam:P30004-->[Nomen]
 [Nomen]-->rdand:p80068-->""($a)""  
 [Nomen]-->rdan:p80069-->https://id.loc.gov/vocabulary/identifiers/isrc",,Follow decision on identifiers - CP 2024-06-21
-1,done,25,OTHER STANDARD IDENTIFIER (R),Type of standard number or code,1,Universal Product Code (UPC),Difference indicator,*,,,,a,Standard number or code (NR),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,IRI,,"[Manifestation]-->rdam:P30004-->[Nomen]
+1,done,24,OTHER STANDARD IDENTIFIER (R),Type of standard number or code,1,Universal Product Code (UPC),Difference indicator,*,,,,a,Standard number or code (NR),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,IRI,,"[Manifestation]-->rdam:P30004-->[Nomen]
 [Nomen]-->rdand:p80068-->""($a)""  
 [Nomen]-->rdan:p80069-->https://id.loc.gov/vocabulary/identifiers/upc",,
-2,done,26,OTHER STANDARD IDENTIFIER (R),Type of standard number or code,2,International Standard Music Number (ISMN),Difference indicator,*,,,,a,Standard number or code (NR),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,IRI,,"[Manifestation]-->rdam:P30004-->[Nomen]
+2,done,24,OTHER STANDARD IDENTIFIER (R),Type of standard number or code,2,International Standard Music Number (ISMN),Difference indicator,*,,,,a,Standard number or code (NR),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,IRI,,"[Manifestation]-->rdam:P30004-->[Nomen]
 [Nomen]-->rdand:p80068-->""($a)""  
 [Nomen]-->rdan:p80069-->https://id.loc.gov/vocabulary/identifiers/ismm",,
-3,done,27,OTHER STANDARD IDENTIFIER (R),Type of standard number or code,3,International Article Number (EAN),Difference indicator,*,,,,a,Standard number or code (NR),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,IRI,,"[Manifestation]-->rdam:P30004-->[Nomen]
+3,done,24,OTHER STANDARD IDENTIFIER (R),Type of standard number or code,3,International Article Number (EAN),Difference indicator,*,,,,a,Standard number or code (NR),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,IRI,,"[Manifestation]-->rdam:P30004-->[Nomen]
 [Nomen]-->rdand:p80068-->""($a)""  
 [Nomen]-->rdan:p80069-->https://id.loc.gov/vocabulary/identifiers/ean",,
-4,done,28,OTHER STANDARD IDENTIFIER (R),Type of standard number or code,4,Serial Item and Contribution Identifier (SICI),Difference indicator,*,,,,a,Standard number or code (NR),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,IRI,,"[Manifestation]-->rdam:P30004-->[Nomen]
+4,done,24,OTHER STANDARD IDENTIFIER (R),Type of standard number or code,4,Serial Item and Contribution Identifier (SICI),Difference indicator,*,,,,a,Standard number or code (NR),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,IRI,,"[Manifestation]-->rdam:P30004-->[Nomen]
 [Nomen]-->rdand:p80068-->""($a)""  
 [Nomen]-->rdan:p80069-->https://id.loc.gov/vocabulary/identifiers/sici",,
-5,done,29,OTHER STANDARD IDENTIFIER (R),Type of standard number or code,7,Source specified in subfield $2,Difference indicator,*,,,,a,Standard number or code (NR),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,IRI,,"[Manifestation]-->rdam:P30004-->[Nomen]
+5,done,24,OTHER STANDARD IDENTIFIER (R),Type of standard number or code,7,Source specified in subfield $2,Difference indicator,*,,,,a,Standard number or code (NR),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,IRI,,"[Manifestation]-->rdam:P30004-->[Nomen]
 [Nomen]-->rdand:p80068-->""($a)""  
 [Nomen]-->rdan:p80069-->[Lookup based on $2]",,
-6,done,29,OTHER STANDARD IDENTIFIER (R),Type of standard number or code,8,Unspecified type of standard number or code,Difference indicator,*,,,,a,Standard number or code (NR),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,Identifier,,[Manifestation]-->rdam:P30004-->$a,,No scheme of nomen because ind1 = 8 indicates unspecified source - CP 2024-06-27
+6,done,24,OTHER STANDARD IDENTIFIER (R),Type of standard number or code,8,Unspecified type of standard number or code,Difference indicator,*,,,,a,Standard number or code (NR),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,Identifier,,[Manifestation]-->rdam:P30004-->$a,,No scheme of nomen because ind1 = 8 indicates unspecified source - CP 2024-06-27
 7,done,24,OTHER STANDARD IDENTIFIER (R),Type of standard number or code,*,,Difference indicator,*,,,,c,Terms of availability (NR),,,,,,,http://rdaregistry.info/Elements/m/datatype/P30160,has term of availability,unstructured description,,"[Manifestation]--rdand:P30160 --> ""{$c}""",,
 8,done,24,OTHER STANDARD IDENTIFIER (R),Type of standard number or code,not(8),,Difference indicator,*,,,,q,Qualifying information (R),,,,,,,http://rdaregistry.info/Elements/n/P80071,has note on nomen,unstructured description|structured description,,[nomen]-->rdand:P80071-->{$q},,"Don't map $q when ind1 = 8
 - CP 2024-06-25"

@@ -1,94 +1,131 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,first pass,41,LANGUAGE CODE (R),Translation indication,#|0,No information provided|Item not a translation/does not include a translation,Source of code,*, ,,,a,Language code of text/sound track or separate title (R),,,,indicator 2 = # or indicator 2 = 7 and subfield $2 is an ISO source,,,"http://rdaregistry.info/Elements/e/P20006
-http://rdaregistry.info/Elements/e/P20071","has language of expression
-has note on expression",IRI, ,"[Expression] rdaeo:P20006 [""http://id.loc.gov/vocabulary/languages/ "" + ""code in $a""]
-If indicator 2 = 7 and subfield $2 is an ISO source, we can similarly mint the LoC IRI. 
-[Expression] rdaed:P20071 ""Language code of text/sound track or separate title""
-
-Repeat if $a repeats and add note on expression with the value ""The codes for the languages of the text are recorded in the order of their predominance in the text, if not in English alphabetical order."" PS 7/9/2024","We can (currently) only process this field for a manifestation that is not an aggregate; that is, where there is only one embodied expression. We have not identified a safe means of mapping a language to the correct aggregated expression aggregate, and an aggregating expression has no language. If the manifestation being described in the record embodies only one expression, I think many of the subfields do not apply. I think it is better to use the value of 008/35-37 as the language of expression, so we should only process 041 if there is no 008 value.--Gordon 7/3/2024
-
-How to deal with obsolete data where $a contains both the language being translated into and the language being translated from? -- ZP 3/8/2022; Order of subfields may be lost -- ZP 3/16/2022",issue #74
-1,first pass,41,LANGUAGE CODE (R),Translation indication,#|0,No information provided|Item not a translation/does not include a translation,Source of code,*, ,,,a,Language code of text/sound track or separate title (R),,,,for other sources in subfield $2,,,"http://rdaregistry.info/Elements/e/P20006
-http://rdaregistry.info/Elements/e/P20071",has language of expression,IRI,,"[Expression] rdaeo:P20006 <skos:Concept>
+0,reviewed,41,LANGUAGE CODE (R),Translation indication,#|0,No information provided|Item not a translation/does not include a translation,Source of code,#|7,MARC language code or indicator 2 = 7 and subfield $2 is an ISO source,,,a,Language code of text/sound track or separate title (R),,, , ,,,http://rdaregistry.info/Elements/e/P20006,"has language of expression
+has note on expression","IRI
+unstructured description",,"[Expression] rdae:P20006 [http://id.loc.gov/vocabulary/languages/[code in $a]]
+If indicator 2 = 7 and subfield $2 is an ISO source, we can mint the LoC IRI. 
+[Expression] rdaed:P20071 ""Language code of text/sound track or separate title: {$a}, source of code: (if indicator 2 = #) https://www.loc.gov/marc/languages/ or (if indicator 2 = 7) the source code in $2""
+PS 7/9/2024", ,
+1,reviewed,41,LANGUAGE CODE (R),Translation indication,#|0,No information provided|Item not a translation/does not include a translation,Source of code,7,Subfield $2 is not an ISO source,,,a,Language code of text/sound track or separate title (R),,, ,,,,http://rdaregistry.info/Elements/e/P20006,"has language of expression
+has note on expression","IRI
+unstructured description",,"[Expression] rdae:P20006 <skos:Concept>
 <skos:Concept> skos:prefLabel <$a>
 <skos:Concept> skos:notation <$a>^^datatypeIRI
 <skos:Concept> skos:inScheme <$2>
-[Expression] rdaed:P20071 ""Language code of text/sound track or separate title""
+[Expression] rdaed:P20071 ""Language code of text/sound track or separate title: {$a}, source of code: (if indicator 2 = #) https://www.loc.gov/marc/languages/ or (if indicator 2 = 7) the source code in $2""
 
-Repeat if $a repeats and add note on expression ""The codes for the languages of the text are recorded in the order of their predominance in the text, if not in English alphabetical order. "" PS 7/9/2024", ,
-2,first pass,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,*,,,,a,Language code of text/sound track or separate title (R),,,,indicator 2 = # or indicator 2 = 7 and subfield $2 is an ISO source,,,"http://rdaregistry.info/Elements/e/P20006
-http://rdaregistry.info/Elements/e/P20071",has language of expression,IRI,,"[Expression] rdaeo:P20006 [""http://id.loc.gov/vocabulary/languages/ "" + ""code in $a""]
+Repeat if $a repeats and append to note on expression with the value ""The codes for the languages of the text are recorded in the order of their predominance in the text, if not in English alphabetical order. "" PS 7/9/2024",,
+2,reviewed,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,#|7,MARC language code or indicator 2 = 7 and subfield $2 is an ISO source,,,a,Language code of text/sound track or separate title (R),,, ,,,,http://rdaregistry.info/Elements/e/P20006,"has language of expression
+has note on expression","IRI
+unstructured descriptions",,"[Expression] rdae:P20006 [http://id.loc.gov/vocabulary/languages/[code in $a]]
 If indicator 2 = 7 and subfield $2 is an ISO source, we can similarly mint the LoC IRI. 
-[Expression] rdaed:P20331 has category of expression [""translation or includes a translation""]
-[Expression]rdaed:P20071 [""the language of the original work: ""  [""http://id.loc.gov/vocabulary/languages/ "" + ""code in $h""] PS 7/9/2024", ,
-3,first pass,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,*,,,,a,Language code of text/sound track or separate title (R),,,,for other sources in subfield $2,,,"http://rdaregistry.info/Elements/e/P20006
-http://rdaregistry.info/Elements/e/P20071",has language of expression,IRI,,"[Expression] rdaeo:P20006 <skos:Concept>
+
+[Expression] rdaed:P20331 has category of expression [translation or includes a translation]
+[Expression] rdaed:P20071 ""Language code of text/sound track or separate title: {$a}, source of code: (if indicator 2 = #) https://www.loc.gov/marc/languages/ or (if indicator 2 = 7) the source code in $2""
+
+[Expression] rdaed:P20071 ""Language of the original work: http://id.loc.gov/vocabulary/languages/[code in $h]""
+PS 7/9/2024", ,
+3,reviewed,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,7,Subfield $2 is not an ISO source,,,a,Language code of text/sound track or separate title (R),,, ,,,,http://rdaregistry.info/Elements/e/P20006,"has language of expression
+has note on expression","IRI
+unstructured descriptions",,"[Expression] rdae:P20006 <skos:Concept>
 <skos:Concept> skos:prefLabel <$a>
 <skos:Concept> skos:notation <$a>^^datatypeIRI
 <skos:Concept> skos:inScheme <$2>
-[Expression] rdaed:P20331 has category of expression [""translation or includes a translation""]
-[Expression] rdaed:P20071  [""the language of the original work: "" [http://id.loc.gov/vocabulary/languages/ "" + ""code in $h""] PS 7/9/2024
+[Expression] rdaed:P20071 ""Language code of text/sound track or separate title: {$a}""
+[Expression] rdaed:P20331 has category of expression ""translation or includes a translation""
+[Expression] rdaed:P20071 ""language of the original work: http://id.loc.gov/vocabulary/languages/[code in $h]""
+PS 7/9/2024
 
-Repeat if $a repeats and add note on expression ""The codes for the languages of the text are recorded in the order of their predominance in the text, if not in English alphabetical order. "" PS 7/9/2024
-", ,
-4,loss,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*,,,,b,Language code of summary or abstract (R),,,,,,,http://rdaregistry.info/Elements/e/P20006,has language of expression,unstructured descriptions,,"""Language code of summary or abstract: "" + [value of $b]""",,
-5,?,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*,,,,c,Languages of separate titles (VM) [OBSOLETE],,,,,,,http://rdaregistry.info/Elements/e/P20006,has language of expression,identifier,,,How to deal with obsolete data -- ZP 3/16/2022,
-6,loss,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*,,,,d,Language code of sung or spoken text (R),,,,,,,http://rdaregistry.info/Elements/e/P20006,has language of expression,identifier,,,,
-7,loss,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*,,,,e,Language code of librettos (R),,,,,,,http://rdaregistry.info/Elements/e/P20006,has language of expression,identifier,,,,
-8,loss,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*,,,,f,Language code of table of contents (R),,,,,,,http://rdaregistry.info/Elements/e/P20006,has language of expression,unstructured descriptions,,,,
-9,loss,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*,,,,g,Language code of accompanying material other than librettos and transcripts (R),,,,,,,http://rdaregistry.info/Elements/e/P20006,has language of expression,identifier,,,,
-10,not mapped,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,#,MARC language code,,,h,Language code of original and/or intermediate translations of text (R) [REDEFINED],,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
-11,not mapped,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,#,MARC language code,,,h,Language code of original (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
-12,not mapped,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,7,Source specified in subfield $2,,,h,Language code of original and/or intermediate translations of text (R) [REDEFINED],,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
-13,not mapped,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,7,Source specified in subfield $2,,,h,Language code of original (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
-14,delete,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,#,MARC language code,,,h,Language code of original and/or intermediate translations of text (R) [REDEFINED],,,,,,,,,,,,,
-15,delete,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,#,MARC language code,,,h,Language code of original (R),,,,,,,,,,,,,
-16,delete,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,7,Source specified in subfield $2,,,h,Language code of original and/or intermediate translations of text (R) [REDEFINED],,,,,,,,,,,,,
-17,delete,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,7,Source specified in subfield $2,,,h,Language code of original (R),,,,,,,,,,,,,
-18,not mapped,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,#,MARC language code,,,h,Language code of original and/or intermediate translations of text (R) [REDEFINED],,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
-19,not mapped,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,#,MARC language code,,,h,Language code of original (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
-20,not mapped,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,7,Source specified in subfield $2,,,h,Language code of original and/or intermediate translations of text (R) [REDEFINED],,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
-21,not mapped,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,7,Source specified in subfield $2,,,h,Language code of original (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
-22,loss,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*,,,,i,Language code of intertitles (R),,,,,,,http://rdaregistry.info/Elements/e/P20006,has language of expression,identifier,,,,
-23,loss,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*,,,,j,Language code of subtitles (R),,,,,,,http://rdaregistry.info/Elements/e/P20006,has language of expression,identifier,,,,
-24,not mapped,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,#,MARC language code,,,k,Language code of intermediate translations (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
-25,not mapped,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,7,Source specified in subfield $2,,,k,Language code of intermediate translations (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
-26,delete,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,#,MARC language code,,,k,Language code of intermediate translations (R),,,,,,,,,,,,,
-27,delete,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,7,Source specified in subfield $2,,,k,Language code of intermediate translations (R),,,,,,,,,,,,,
-28,not mapped,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,#,MARC language code,,,k,Language code of intermediate translations (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
-29,not mapped,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,7,Source specified in subfield $2,,,k,Language code of intermediate translations (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
-30,not mapped,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,#,MARC language code,,,m,Language code of original accompanying materials other than librettos (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
-31,not mapped,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,7,Source specified in subfield $2,,,m,Language code of original accompanying materials other than librettos (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
-32,delete,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,#,MARC language code,,,m,Language code of original accompanying materials other than librettos (R),,,,,,,,,,,,,
-33,delete,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,7,Source specified in subfield $2,,,m,Language code of original accompanying materials other than librettos (R),,,,,,,,,,,,,
-34,not mapped,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,#,MARC language code,,,m,Language code of original accompanying materials other than librettos (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
-35,not mapped,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,7,Source specified in subfield $2,,,m,Language code of original accompanying materials other than librettos (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
-36,not mapped,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,#,MARC language code,,,n,Language code of original libretto (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
-37,not mapped,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,7,Source specified in subfield $2,,,n,Language code of original libretto (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
-38,delete,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,#,MARC language code,,,n,Language code of original libretto (R),,,,,,,,,,,,,
-39,delete,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,7,Source specified in subfield $2,,,n,Language code of original libretto (R),,,,,,,,,,,,,
-40,not mapped,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,#,MARC language code,,,n,Language code of original libretto (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
-41,not mapped,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,7,Source specified in subfield $2,,,n,Language code of original libretto (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
-42,loss,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*,,,,p,Language code of captions (R),,,,,,,http://rdaregistry.info/Elements/e/P20006,has language of expression,identifier,,,,
-43,loss,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*,,,,q,Language code of accessible audio (R),,,,,,,http://rdaregistry.info/Elements/e/P20006,has language of expression,identifier,,,,
-44,loss,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*,,,,r,Language code of accessible visual language (non-textual) (R),,,,,,,http://rdaregistry.info/Elements/e/P20006,has language of expression,identifier,,,,
-45,loss,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*,,,,t,Language code of accompanying transcripts for audiovisual materials (R),,,,,,,http://rdaregistry.info/Elements/e/P20006,has language of expression,identifier,,,,
-46,delete,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*,,,,z,,,,,,,,http://rdaregistry.info/Elements/e/P20006,has language of expression,,,,Attention: MARCField/MARCSubfield combination does not exist,
-47,?,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,7,Source specified in subfield $2,,,2,Source of code (NR),,,,,,,,,,,,,
-48,?,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,7,Source specified in subfield $2,,,6,Linkage (NR),,,,,,,,,,,,,
-49,not mapped,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,7,Source specified in subfield $2,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-50,delete,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,#,MARC language code,,,2,Source of code (NR),,,,,,,,,,,,,$2 is not used when MARCInd2 is # -- ZP 3/5/2022
-51,?,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,#,MARC language code,,,6,Linkage (NR),,,,,,,,,,,,,
-52,not mapped,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,#,MARC language code,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-53,?,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,7,Source specified in subfield $2,,,2,Source of code (NR),,,,,,,,,,,,,
-54,?,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,7,Source specified in subfield $2,,,6,Linkage (NR),,,,,,,,,,,,,
-55,not mapped,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,7,Source specified in subfield $2,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-56,delete,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,#,MARC language code,,,2,Source of code (NR),,,,,,,,,,,,,$2 is not used when MARCInd2 is # -- ZP 3/5/2022
-57,?,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,#,MARC language code,,,6,Linkage (NR),,,,,,,,,,,,,
-58,not mapped,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,#,MARC language code,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-59,?,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,7,Source specified in subfield $2,,,2,Source of code (NR),,,,,,,,,,,,,
-60,?,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,7,Source specified in subfield $2,,,6,Linkage (NR),,,,,,,,,,,,,
-61,not mapped,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,7,Source specified in subfield $2,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-62,delete,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,#,MARC language code,,,2,Source of code (NR),,,,,,,,,,,,,$2 is not used when MARCInd2 is # -- ZP 3/5/2022
-63,?,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,#,MARC language code,,,6,Linkage (NR),,,,,,,,,,,,,
-64,not mapped,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,#,MARC language code,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+Repeat if $a repeats and append to note on expression ""The codes for the languages of the text are recorded in the order of their predominance in the text, if not in English alphabetical order. "" PS 7/9/2024", ,
+4,reviewed,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*,,,,b,Language code of summary or abstract (R),,,, ,,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured descriptions,,"[Manifestation] rdamd:P30137 ""Language code of summary or abstract: {$b}. source of code: (if indicator 2 = #) https://www.loc.gov/marc/languages/ or (if indicator 2 = 7) the source code in $2""
+PS 7/9/2024",It is part of the expression which cannot be mapped directly to the expression being described.,I don't think it is possible to determine which expression this data is associated with. In most cases the subfield definition indicates separate expressions embodied in an aggregate but in some cases the language is associated with a component of the expression (for example the words to a song printed above the notated music - RDA has not yet fully modelled this). I think the safest approach is transform the data as note on manifestation. The note would have to mention 'language encodings' unless we want to look-up the full form on the fly (not recommended).--Gordon 7/15/2024
+5,reviewed,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*, ,,,c,Languages of separate titles (VM) [OBSOLETE],,,,,,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured descriptions,,"[Manifestation] rdamd:P30137 ""Languages of separate titles or languages of available translation:  + [value of $c] source of code: (if indicator 2 = #) https://www.loc.gov/marc/languages/ or (if indicator 2 = 7) the source code in $2""
+PS 7/9/2024",How to deal with obsolete data -- ZP 3/16/2022,$c changed twice.
+6,reviewed,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,#|7,MARC language code or indicator 2 = 7 and subfield $2 is an ISO source,,,d,Language code of sung or spoken text (R),,,Leader 06=j,j - Musical sound recording,,,http://rdaregistry.info/Elements/e/P20006,"has language of expression
+has note on expression","IRI
+unstructured descriptions",,"[Expression] rdae:P20006 [http://id.loc.gov/vocabulary/languages/[code in $d]]
+If indicator 2 = 7 and subfield $2 is an ISO source, we can similarly mint the LoC IRI.
+[Expression] rdaed:P20071  ""Language code of sung or spoken text: {$d}""
+PS 7/9/2024", ,
+7,reviewed,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,7,Subfield $2 is not an ISO source,,,d,Language code of sung or spoken text (R),,,Leader 06=j,j - Musical sound recording,,,http://rdaregistry.info/Elements/e/P20006,"has language of expression
+has note on expression","IRI
+unstructured descriptions",,"[Expression] rdae:P20006 <skos:Concept>
+<skos:Concept> skos:prefLabel <$d>
+<skos:Concept> skos:notation <$d>^^datatypeIRI
+<skos:Concept> skos:inScheme <$2>
+[Expression] rdaed:P20071 ""Language code of sung or spoken text: {$d}""
+PS 7/9/2024", ,
+8,reviewed,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*, ,,,d,Language code of sung or spoken text (R),,,,,,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured descriptions,,"[Manifestation] rdamd:P30137 ""Language code of sung or spoken text: {$d}, source of code: (if indicator 2 = #) https://www.loc.gov/marc/languages/ or (if indicator 2 = 7) the source code in $2""""
+PS 7/9/2024",The audible portion of an item does not represent the primary content,
+9,reviewed,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*, ,,,e,Language code of librettos (R),,,, ,,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured descriptions,,"[Manifestation] rdamd:P30137 ""Language code of librettos: {$e}, source of code: (if indicator 2 = #) https://www.loc.gov/marc/languages/ or (if indicator 2 = 7) the source code in $2""
+PS 7/9/2024v",It may be or may not be accompanying material.,
+10,reviewed,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*, ,,,f,Language code of table of contents (R),,,,,,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured descriptions,,"[Manifestation] rdamd:P30137 ""Language code of table of contents: {$f}, source of code: (if indicator 2 = #) https://www.loc.gov/marc/languages/ or (if indicator 2 = 7) the source code in $2""
+PS 7/9/2024",Related expression,Language code(s) of the table of contents when it differs from the language of the text.
+11,reviewed,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*,,,,g,Language code of accompanying material other than librettos and transcripts (R),,,,,,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured descriptions,,"[Manifestation] rdamd:P30137 ""Language code of accompanying material other than librettos and transcripts: {$g}, source of code: (if indicator 2 = #) https://www.loc.gov/marc/languages/ or (if indicator 2 = 7) the source code in $2""
+PS 7/9/2024",,
+12,reviewed,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*,,,,h,Language code of original (R),,,,,,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured descriptions,,"[Manifestation] rdamd:P30137 ""Language code of original: {$h}, source of code: (if indicator 2 = #) https://www.loc.gov/marc/languages/ or (if indicator 2 = 7) the source code in $2""
+PS 7/9/2024",,
+13,not mapped,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,#,MARC language code,,,h,Language code of original and/or intermediate translations of text (R) [REDEFINED],,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
+14,not mapped,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,#,MARC language code,,,h,Language code of original (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
+15,not mapped,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,7,Source specified in subfield $2,,,h,Language code of original and/or intermediate translations of text (R) [REDEFINED],,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
+16,not mapped,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,7,Source specified in subfield $2,,,h,Language code of original (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
+17,delete,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,#,MARC language code,,,h,Language code of original and/or intermediate translations of text (R) [REDEFINED],,,,,,,,,,,,,
+18,delete,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,#,MARC language code,,,h,Language code of original (R),,,,,,,,,,,,,
+19,delete,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,7,Source specified in subfield $2,,,h,Language code of original and/or intermediate translations of text (R) [REDEFINED],,,,,,,,,,,,,
+20,delete,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,7,Source specified in subfield $2,,,h,Language code of original (R),,,,,,,,,,,,,
+21,delete,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,#,MARC language code,,,h,Language code of original and/or intermediate translations of text (R) [REDEFINED],,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
+22,delete,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,#,MARC language code,,,h,Language code of original (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
+23,delete,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,7,Source specified in subfield $2,,,h,Language code of original and/or intermediate translations of text (R) [REDEFINED],,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
+24,delete,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,7,Source specified in subfield $2,,,h,Language code of original (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
+25,reviewed,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*,,,,i,Language code of intertitles (R),,,,,,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured descriptions,,"[Manifestation] rdamd:P30137 ""Language code of intertitles: {$i}, source of code: (if indicator 2 = #) https://www.loc.gov/marc/languages/ or (if indicator 2 = 7) the source code in $2""
+PS 7/9/2024",,
+26,reviewed,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*,,,,j,Language code of subtitles (R),,,,,,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured descriptions,,"[Manifestation] rdamd:P30137 ""Language code of subtitles: {$j}, source of code: (if indicator 2 = #) https://www.loc.gov/marc/languages/ or (if indicator 2 = 7) the source code in $2""
+PS 7/9/2024",,
+27,reviewed,41,LANGUAGE CODE (R),Translation indication,*, ,Source of code,*, ,,,k,Language code of intermediate translations (R),,,,,,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured descriptions,Describes a related expression -- ZP 3/8/2022,"[Manifestation] rdamd:P30137 ""Language code of intermediate translations: {$k}, source of code: (if indicator 2 = #) https://www.loc.gov/marc/languages/ or (if indicator 2 = 7) the source code in $2""
+PS 7/9/2024",,
+28,delete,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,7,Source specified in subfield $2,,,k,Language code of intermediate translations (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
+29,delete,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,#,MARC language code,,,k,Language code of intermediate translations (R),,,,,,,,,,,,,
+30,delete,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,7,Source specified in subfield $2,,,k,Language code of intermediate translations (R),,,,,,,,,,,,,
+31,not mapped,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,#,MARC language code,,,k,Language code of intermediate translations (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
+32,not mapped,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,7,Source specified in subfield $2,,,k,Language code of intermediate translations (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
+33,reviewed,41,LANGUAGE CODE (R),Translation indication,*,No information provided,Source of code,*,MARC language code,,,m,Language code of original accompanying materials other than librettos (R),,,,,,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured descriptions,Describes a related expression -- ZP 3/8/2022,"[Manifestation] rdamd:P30137 ""Language code of original accompanying materials other than librettos: {$m}, source of code: (if indicator 2 = #) https://www.loc.gov/marc/languages/ or (if indicator 2 = 7) the source code in $2""
+PS 7/9/2024",,
+34,not mapped,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,#,MARC language code,,,m,Language code of original accompanying materials other than librettos (R),,,,,,, , , ,Describes a related expression -- ZP 3/8/2022, ,,
+35,not mapped,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,7,Source specified in subfield $2,,,m,Language code of original accompanying materials other than librettos (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
+36,delete,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,#,MARC language code,,,m,Language code of original accompanying materials other than librettos (R),,,,,,,,,,,,,
+37,delete,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,7,Source specified in subfield $2,,,m,Language code of original accompanying materials other than librettos (R),,,,,,,,,,,,,
+38,not mapped,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,#,MARC language code,,,m,Language code of original accompanying materials other than librettos (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
+39,not mapped,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,7,Source specified in subfield $2,,,m,Language code of original accompanying materials other than librettos (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
+40,reviewed,41,LANGUAGE CODE (R),Translation indication,*, ,Source of code,*, ,,,n,Language code of original libretto (R),,,,,,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured descriptions,Describes a related expression -- ZP 3/8/2022,"[Manifestation] rdamd:P30137 ""Language code of original libretto: {$n}, source of code: (if indicator 2 = #) https://www.loc.gov/marc/languages/ or (if indicator 2 = 7) the source code in $2""
+PS 7/9/2024",,
+41,not mapped,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,7,Source specified in subfield $2,,,n,Language code of original libretto (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
+42,delete,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,#,MARC language code,,,n,Language code of original libretto (R),,,,,,,,,,,,,
+43,delete,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,7,Source specified in subfield $2,,,n,Language code of original libretto (R),,,,,,,,,,,,,
+44,not mapped,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,#,MARC language code,,,n,Language code of original libretto (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
+45,not mapped,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,7,Source specified in subfield $2,,,n,Language code of original libretto (R),,,,,,,,,,Describes a related expression -- ZP 3/8/2022,,,
+46,reviewed,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*,,,,p,Language code of captions (R),,,,,,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured descriptions, ,"[Manifestation] rdamd:P30137 ""Language code of captions: {$p}, source of code: (if indicator 2 = #) https://www.loc.gov/marc/languages/ or (if indicator 2 = 7) the source code in $2""
+PS 7/9/2024",,
+47,reviewed,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*,,,,q,Language code of accessible audio (R),,,,,,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured descriptions,,"[Manifestation] rdamd:P30137 ""Language code of accessible audio: {$q}, source of code: (if indicator 2 = #) https://www.loc.gov/marc/languages/ or (if indicator 2 = 7) the source code in $2""
+PS 7/9/2024",,
+48,reviewed,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*,,,,r,Language code of accessible visual language (non-textual) (R),,,,,,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured descriptions,,"[Manifestation] rdamd:P30137 ""Language code of accessible visual language (non-textual): {$r}, source of code: (if indicator 2 = #) https://www.loc.gov/marc/languages/ or (if indicator 2 = 7) the source code in $2""
+PS 7/9/2024",,
+49,reviewed,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*,,,,t,Language code of accompanying transcripts for audiovisual materials (R),,,,,,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured descriptions,,"[Manifestation] rdamd:P30137 ""Language code of accompanying transcripts for audiovisual materials: {$t}, source of code: (if indicator 2 = #) https://www.loc.gov/marc/languages/ or (if indicator 2 = 7) the source code in $2""
+PS 7/9/2024",,
+50,delete,41,LANGUAGE CODE (R),Translation indication,*,,Source of code,*,,,,z,,,,,,,,http://rdaregistry.info/Elements/e/P20006,has language of expression,,,,Attention: MARCField/MARCSubfield combination does not exist,
+51,delete,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,7,Source specified in subfield $2,,,2,Source of code (NR),,,,,,,,,,,,,
+52,not mapped,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,7,Source specified in subfield $2,,,6,Linkage (NR),,,,,,,,,,,,,
+53,not mapped,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,7,Source specified in subfield $2,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+54,delete,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,#,MARC language code,,,2,Source of code (NR),,,,,,,,,,,,,$2 is not used when MARCInd2 is # -- ZP 3/5/2022
+55,not mapped,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,#,MARC language code,,,6,Linkage (NR),,,,,,,,,,,,,
+56,not mapped,41,LANGUAGE CODE (R),Translation indication,0,Item not a translation/does not include a translation,Source of code,#,MARC language code,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+57,delete,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,7,Source specified in subfield $2,,,2,Source of code (NR),,,,,,,,,,,,,
+58,not mapped,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,7,Source specified in subfield $2,,,6,Linkage (NR),,,,,,,,,,,,,
+59,not mapped,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,7,Source specified in subfield $2,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+60,delete,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,#,MARC language code,,,2,Source of code (NR),,,,,,,,,,,,,$2 is not used when MARCInd2 is # -- ZP 3/5/2022
+61,not mapped,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,#,MARC language code,,,6,Linkage (NR),,,,,,,,,,,,,
+62,not mapped,41,LANGUAGE CODE (R),Translation indication,1,Item is or includes a translation,Source of code,#,MARC language code,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+63,not mapped,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,7,Source specified in subfield $2,,,2,Source of code (NR),,,,,,,,,,,,,
+64,not mapped,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,7,Source specified in subfield $2,,,6,Linkage (NR),,,,,,,,,,,,,
+65,not mapped,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,7,Source specified in subfield $2,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+66,delete,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,#,MARC language code,,,2,Source of code (NR),,,,,,,,,,,,,$2 is not used when MARCInd2 is # -- ZP 3/5/2022
+67,not mapped,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,#,MARC language code,,,6,Linkage (NR),,,,,,,,,,,,,
+68,not mapped,41,LANGUAGE CODE (R),Translation indication,#,No information provided,Source of code,#,MARC language code,,,8,Field link and sequence number (R),,,,,,,,,,,,,

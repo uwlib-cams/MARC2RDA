@@ -14,14 +14,18 @@
 PS 6/25/2024",,
 5,delete,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
 6,delete,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-7,reviewed,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,0.0,starts with 'http://id.loc.gov/authorities/names/',,,,http://rdaregistry.info/Elements/w/P10316,related place of work,IRI,,"Use the LC Geographic Areas IRI: the geographic area code can be retrieved from this name authority file, tidied up (removing trailing spaces and hyphens), and combined with 'http://id.loc.gov/vocabulary/geographicAreas/' to get the geographic area code IRI
+7,done,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,0.0,starts with 'id.loc.gov/vocabulary/geographicAreas',,,,http://rdaregistry.info/Elements/w/P10316,related place of work,IRI,,,,
+8,done,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,0.0,starts with 'http://id.loc.gov/authorities/names/',,,,http://rdaregistry.info/Elements/w/P10316,related place of work,IRI,,"Use the LC Geographic Areas IRI: the geographic area code can be retrieved from this name authority file, tidied up (removing trailing spaces and hyphens), and combined with 'http://id.loc.gov/vocabulary/geographicAreas/' to get the geographic area code IRI
 - CP 2024-07-12",,
-8,not mapped (reviewed),257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,0.0,does not start with  'http://id.loc.gov/authorities/names/',,,,,,,,,,
-9,reviewed,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,1.0,starts with ''http://id.loc.gov/rwo/',,,,http://rdaregistry.info/Elements/w/P10316,related place of work,IRI,,"Use the LC Geographic Areas IRI: the geographic area code can be retrieved from this name authority file, which can be found using the Agent IRI, tidied up (removing trailing spaces and hyphens), and combined with 'http://id.loc.gov/vocabulary/geographicAreas/' to get the geographic area code IRI
+9,not mapped,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,0.0,does not start with  'http://id.loc.gov/authorities/names/',,,,,,,,,,
+10,done,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,1.0,starts with ''http://id.loc.gov/rwo/',,,,http://rdaregistry.info/Elements/w/P10316,related place of work,IRI,,"Use the LC Geographic Areas IRI: the geographic area code can be retrieved from this name authority file, which can be found using the Agent IRI, tidied up (removing trailing spaces and hyphens), and combined with 'http://id.loc.gov/vocabulary/geographicAreas/' to get the geographic area code IRI
 - CP 2024-07-12",,
-10,reviewed,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,1.0,does not start with 'http://id.loc.gov/rwo/',,,,http://rdaregistry.info/Elements/w/P10316,related place of work,IRI,,[Manifestation] rdawo:P10316 [value of $1],,
-11,reviewed,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,,,,a,Country of producing entity (R),,,not($2),,,,http://rdaregistry.info/Elements/w/P10316,related place of work,unstructured description,,[Manifestation]-->rdawd:P10316-->[value of $a] ,,
-12,reviewed,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,Undefined,,,"a, 2",Source (NR),,, ,,,,http://rdaregistry.info/Elements/w/P10316,related place of work,IRI,,"[Manifestation]-->rdam:P10316-->[PlaceIRI]
+11,done,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,1.0,does not start with 'http://id.loc.gov/rwo/',,,,http://rdaregistry.info/Elements/w/P10316,related place of work,IRI,,[Manifestation] rdawo:P10316 [value of $1],,
+12,done,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,,,,a,Country of producing entity (R),,,not($2),,,,http://rdaregistry.info/Elements/w/P10316,related place of work,unstructured description,,"[Manifestation]-->rdawd:P10316-->[value of $a]
+
+If $a contains a semicolon between two values, separate and treat each as an individual $a. Remove ending punctuation (semicolons and periods)
+- CP 2024-09-13",,
+13,done,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,*,,Undefined,*,Undefined,,,"a, 2",Source (NR),,, ,,,,http://rdaregistry.info/Elements/w/P10316,related place of work,IRI,,"[Manifestation]-->rdam:P10316-->[PlaceIRI]
 
 [placeIRI] rdap:P70019 has appellation of place [placeNomen]
 
@@ -29,6 +33,9 @@ PS 6/25/2024",,
 
 [placeNomen] rdan:P80069 has scheme of nomen [lookup $2]
 
-PS 6/25/2024",,
-13,not mapped,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-14,not mapped,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+PS 6/25/2024
+
+If $a contains a semicolon between two values, separate and treat each as an individual $a. Remove ending punctuation (semicolons and periods)
+- CP 2024-09-13",,
+14,not mapped,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+15,not mapped,257,COUNTRY OF PRODUCING ENTITY (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,

@@ -1,6 +1,6 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
 0,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,a,Type of recording (R),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Not specific enough -- ZP 3/26/2022
-1,reviewed,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,a,Type of recording (R),,,,,,,http://rdaregistry.info/Elements/m/P30172,has type of recording,unstructured description; structured description; iri,,"[Manifestation] rdam:P30172 [value of $1 or $0 containing ""http""]
+1,done,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,a,Type of recording (R),,,,,,,http://rdaregistry.info/Elements/m/P30172,has type of recording,unstructured description; structured description; iri,,"[Manifestation] rdam:P30172 [value of $1 or $0 containing ""http""]
 If there is both $1 and $0, select the $1 value.
 
 If no $1, and $2 does not contain ""rdatr""
@@ -16,12 +16,9 @@ If no $2
 
 If $3
 [Manifestation] rdamd:P30137 [""Type of recording ("" + {value of $a} + "") applies to "" + {value of $3} + "".""]
-PS 7/8/2024
-
-[Manifestation]-->rdam:P30172-->[value of $a] -- ZP 3/26/2022",,"
-Structured only when 344$2 is present; doesn't affect the mapping result -- ZP 3/26/2022"
+PS 7/8/2024",,
 2,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,b,Recording medium (R),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Not specific enough -- ZP 3/26/2022
-3,reviewed,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,b,Recording medium (R),,,,,,,http://rdaregistry.info/Elements/m/P30206,has recording medium,unstructured description; structured description; iri,,"[Manifestation] rdam:P30206 [value of $1 or $0 containing ""http""]
+3,done,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,b,Recording medium (R),,,,,,,http://rdaregistry.info/Elements/m/P30206,has recording medium,unstructured description; structured description; iri,,"[Manifestation] rdam:P30206 [value of $1 or $0 containing ""http""]
 If there is both $1 and $0, select the $1 value.
 
 If no $1, and $2 does not contain ""rdarm""
@@ -38,12 +35,9 @@ If no $2
 If $3
 [Manifestation] rdamd:P30137 [""Recording medium ("" + {value of $b} + "") applies to "" + {value of $3} + "".""]
 PS 7/8/2024
-
-[Manifestation]-->rdam:P30206-->[value of $b] -- ZP 3/26/2022
-",,"
-Structured only when 344$2 is present; doesn't affect the mapping result -- ZP 3/26/2022"
+",,
 4,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,c,Playing speed (R),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Not specific enough -- ZP 3/26/2022
-5,reviewed,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,c,Playing speed (R),,,,,,,http://rdaregistry.info/Elements/m/P30201,has playing speed,unstructured description; structured description; iri,,"[Manifestation] rdam:P30201 [value of $1 or $0 containing ""http""]
+5,done,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,c,Playing speed (R),,,,,,,http://rdaregistry.info/Elements/m/P30201,has playing speed,unstructured description; structured description; iri,,"[Manifestation] rdam:P30201 [value of $1 or $0 containing ""http""]
 If there is both $1 and $0, select the $1 value.
 
 If no $1, and $2 in all 344 fields do not contain ""rda""
@@ -61,10 +55,10 @@ If $3
 [Manifestation] rdamd:P30137 [""Playing speed ("" + {value of $c} + "") applies to "" + {value of $3} + ""."" ]
 PS 7/8/2024
 
-[Manifestation]-->rdam:P30201-->[value of $c] -- ZP 3/26/2022
-","$c - Playing speed is often recorded alone with no $2, but may be a term from https://id.loc.gov/vocabulary/mplayspeed and can be looked up to retrieve an IRI PS, CP 7/8/2024",Structured only when 344$2 is present; doesn't affect the mapping result -- ZP 3/26/2022
+
+$c - Playing speed is often recorded alone with no $2, but may be a term from https://id.loc.gov/vocabulary/mplayspeed and can be looked up to retrieve an IRI PS, CP 7/8/2024",,
 6,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,d,Groove characteristic (R),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Not specific enough -- ZP 3/26/2022
-7,reviewed,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,d,Groove characteristic (R),,,$d,not(fine|standard|coarse groove|microgroove),,,http://rdaregistry.info/Elements/m/P30164,has groove characteristic,unstructured description; structured description; iri,"When $d is not is taken from the RDA VES for groove pitch or the one for groove width, can only map to a more general element -- ZP 3/27/2022","If $d is not(fine|standard|coarse groove|microgroove)
+7,done,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,d,Groove characteristic (R),,,$d,not(fine|standard|coarse groove|microgroove),,,http://rdaregistry.info/Elements/m/P30164,has groove characteristic,unstructured description; structured description; iri,"When $d is not is taken from the RDA VES for groove pitch or the one for groove width, can only map to a more general element -- ZP 3/27/2022","If $d is not(fine|standard|coarse groove|microgroove)
 
 [Manifestation] rdam:P30164 [value of $1 or $0 containing ""http""]
 If there is both $1 and $0, select the $1 value.
@@ -80,10 +74,8 @@ If no $2
 If $3
 [Manifestation] rdamd:P30137 [""Groove characteristic ("" + {value of $d} + "") applies to "" + {value of $3} + "".""]
 PS 7/8/2024
-
-[Manifestation]-->rdam:P30164-->[value of $d] -- ZP 3/27/2022
 ",,
-8,reviewed,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,d,Groove characteristic (R),,,$d,fine|standard,,,http://rdaregistry.info/Elements/m/P30307,has groove pitch,unstructured description; structured description; iri,"When $d = fine|standard, the value is taken from the RDA VES for groove pitch -- ZP 3/27/2022","If $d is fine|standard
+8,done,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,d,Groove characteristic (R),,,$d,fine|standard,,,http://rdaregistry.info/Elements/m/P30307,has groove pitch,unstructured description; structured description; iri,"When $d = fine|standard, the value is taken from the RDA VES for groove pitch -- ZP 3/27/2022","If $d is fine|standard
 [Manifestation] rdam:P30307 [value of $1 or $0 containing ""http""]
 If there is both $1 and $0, select the $1 value.
 
@@ -95,10 +87,8 @@ If no $2
 
 If $3
 [Manifestation] rdamd:P30137 [""Groove pitch ("" + {value of $d} + "") applies to "" + {value of $3} + "".""]
-PS 7/8/2024
-
-[Manifestation]-->rdam:P30307-->[value of $d] -- ZP 3/27/2022",,
-9,reviewed,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,d,Groove characteristic (R),,,$d,coarse groove|microgroove,,,http://rdaregistry.info/Elements/m/P30308,has groove width,unstructured description; structured description; iri,"When $d = coarse groove|microgroove, the value is taken from the RDA VES for groove width -- ZP 3/27/2022","If $d is coarse groove|microgroove
+PS 7/8/2024",,
+9,done,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,d,Groove characteristic (R),,,$d,coarse groove|microgroove,,,http://rdaregistry.info/Elements/m/P30308,has groove width,unstructured description; structured description; iri,"When $d = coarse groove|microgroove, the value is taken from the RDA VES for groove width -- ZP 3/27/2022","If $d is coarse groove|microgroove
 [Manifestation] rdam:P30308 [value of $1 or $0 containing ""http""]
 If there is both $1 and $0, select the $1 value.
 
@@ -110,12 +100,9 @@ If no $2
 
 If $3
 [Manifestation] rdamd:P30137 [""Groove width ("" + {value of $d} + "") applies to "" + {value of $3} + "".""]
-PS 7/8/2024
-
-[Manifestation]-->rdam:P30308-->[value of $d] -- ZP 3/27/2022
-",,
+PS 7/8/2024",,
 10,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,e,Track configuration (R),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Not specific enough -- ZP 3/26/2022
-11,reviewed,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,e,Track configuration (R),,,,,,,http://rdaregistry.info/Elements/m/P30161,has track configuration,unstructured description; structured description; iri,,"[Manifestation] rdam:P30161 [value of $1 or $0 containing ""http""]
+11,done,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,e,Track configuration (R),,,,,,,http://rdaregistry.info/Elements/m/P30161,has track configuration,unstructured description; structured description; iri,,"[Manifestation] rdam:P30161 [value of $1 or $0 containing ""http""]
 If there is both $1 and $0, select the $1 value.
 
 If no $1, and $2 does not contain ""rdatc""
@@ -131,12 +118,9 @@ If no $2
 
 If $3
 [Manifestation] rdamd:P30137 [""Track configuration ("" + {value of $e} + "") applies to "" + {value of $3} + "".""]
-PS 7/8/2024
-
-[Manifestation]-->rdam:P30161-->[value of $e] -- ZP 3/27/2022
-",,Structured only when 344$2 is present; doesn't affect the mapping result -- ZP 3/27/2022
+PS 7/8/2024",,
 12,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,f,Tape configuration (R),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Not specific enough -- ZP 3/26/2022
-13,reviewed,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,f,Tape configuration (R),,,,,,,http://rdaregistry.info/Elements/m/P30185,has  tape configuration,unstructured description; structured description; iri,,"[Manifestation] rdam:P30185 [value of $1 or $0 containing ""http""]
+13,done,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,f,Tape configuration (R),,,,,,,http://rdaregistry.info/Elements/m/P30185,has  tape configuration,unstructured description; structured description; iri,,"[Manifestation] rdam:P30185 [value of $1 or $0 containing ""http""]
 If there is both $1 and $0, select the $1 value.
 
 If no $1, and $2 in all 344 fields does not contain ""rda""
@@ -154,9 +138,9 @@ If $3
 [Manifestation] rdamd:P30137 [""Tape configuration ("" + {value of $f} + "") applies to "" + {value of $3} + "".""]
 PS 7/8/2024
 
-[Manifestation]-->rdam:P30185-->[value of $f] -- ZP 3/27/2022","Like $c - Playing speed, $f - Tape configuration is recorded alone with no $2. $2 maybe recorded in other 344 fields. The uri may be looked up at https://id.loc.gov/vocabulary/mtapeconfig.html ",Structured only when 344$2 is present; doesn't affect the mapping result -- ZP 3/27/2022
+Like $c - Playing speed, $f - Tape configuration is recorded alone with no $2. $2 maybe recorded in other 344 fields. The uri may be looked up at https://id.loc.gov/vocabulary/mtapeconfig.html ",,
 14,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,g,Configuration of playback channels (R),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Not specific enough -- ZP 3/26/2022
-15,reviewed,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,g,Configuration of playback channels (R),,,,,,,http://rdaregistry.info/Elements/m/P30184,has configuration of playback channels,unstructured description; structured description; iri,,"[Manifestation] rdam:P30184 [value of $1 or $0 containing ""http""]
+15,done,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,g,Configuration of playback channels (R),,,,,,,http://rdaregistry.info/Elements/m/P30184,has configuration of playback channels,unstructured description; structured description; iri,,"[Manifestation] rdam:P30184 [value of $1 or $0 containing ""http""]
 If there is both $1 and $0, select the $1 value.
 
 If no $1, and $2 does not contain ""rdapc""
@@ -172,11 +156,9 @@ If no $2
 
 If $3
 [Manifestation] rdamd:P30137 [""Configuration of playback channels ("" + {value of $g} + "") applies to "" + {value of $3} + "".""]
-PS 7/8/2024
-
-[Manifestation]-->rdam:P30184-->[value of $g] -- ZP 3/27/2022",,Structured only when 344$2 is present; doesn't affect the mapping result -- ZP 3/27/2022
+PS 7/8/2024",,
 16,delete,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,h,Special playback characteristics (R),,,,,,,http://rdaregistry.info/Elements/m/P30125,has sound characteristic,,,,,Not specific enough -- ZP 3/26/2022
-17,reviewed,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,h,Special playback characteristics (R),,,,,,,http://rdaregistry.info/Elements/m/P30138,has special playback characteristic,unstructured description; structured description; iri,,"[Manifestation] rdam:P30138 [value of $1 or $0 containing ""http""]
+17,done,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,h,Special playback characteristics (R),,,,,,,http://rdaregistry.info/Elements/m/P30138,has special playback characteristic,unstructured description; structured description; iri,,"[Manifestation] rdam:P30138 [value of $1 or $0 containing ""http""]
 If there is both $1 and $0, select the $1 value.
 
 If no $1, and $2 does not contain ""rdaspc""
@@ -192,10 +174,8 @@ If no $2
 
 If $3
 [Manifestation] rdamd:P30137 [""Special playback characteristic ("" + {value of $h} + "") applies to "" + {value of $3} + ""."" ]
-PS 7/8/2024
-
-[Manifestation]-->rdam:P30138-->[value of $h] -- ZP 3/27/2022",,Structured only when 344$2 is present; doesn't affect the mapping result -- ZP 3/27/2022
-18,reviewed,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,i,Sound content (R),,,,,,,http://rdaregistry.info/Elements/m/P30454,has sound content,unstructured description; structured description; iri,,"[Manifestation] rdam:P30454 [value of $1 or $0 containing ""http""]
+PS 7/8/2024",,
+18,done,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,i,Sound content (R),,,,,,,http://rdaregistry.info/Elements/m/P30454,has sound content,unstructured description; structured description; iri,,"[Manifestation] rdam:P30454 [value of $1 or $0 containing ""http""]
 If there is both $1 and $0, select the $1 value.
 
 If no $1, and $2 does not contain ""rdasco""
@@ -211,9 +191,7 @@ If no $2
 
 If $3
 [Manifestation] rdamd:P30137 [""Sound content ("" + {value of $i} + "") applies to "" + {value of $3} + "".""]
-PS 7/8/2024
-
-[Manifestation]-->rdam:P30454-->[value of $i] -- ZP 3/27/2022",,Structured only when 344$2 is present; doesn't affect the mapping result -- ZP 3/27/2022
+PS 7/8/2024",,
 19,not mapped,344,SOUND CHARACTERISTICS (R),Undefined,*,,Undefined,*,,,,j,Original capture and storage technique (R),,,,,,,http://rdaregistry.info/Elements/m/P30125, , ,,"[Manifestation]-->rdam:P30125-->[value of $j] -- ZP 3/27/2022
 
 ","I assume we are not mapping subfield $j because it is not associated with the manifestation in focus. --Gordon 7/7/2024

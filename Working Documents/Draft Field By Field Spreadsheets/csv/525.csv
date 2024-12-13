@@ -1,5 +1,6 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,first pass,525,SUPPLEMENT NOTE (R),Undefined,*,,Undefined,*,,,,a,Supplement note (NR),,,,,,,http://rdaregistry.info/Elements/w/P10330,has note on work,unstructured,,"""Supplement note: "" + [$a value] + "".""",,
+0,first pass,525,SUPPLEMENT NOTE (R),Undefined,*,,Undefined,*,,,,a,Supplement note (NR),,,,,,,http://rdaregistry.info/Elements/w/P10330,has note on work,structured,,"""Supplement note: "" + [$a value]
+- CP 2024-11-14",,
 1,delete,525,SUPPLEMENT NOTE (R),Undefined,*,,Undefined,*,,,,a,Supplement note (NR),,,,,,,http://rdaregistry.info/Elements/w/P10112,has addenda work,,,,,
 2,delete,525,SUPPLEMENT NOTE (R),Undefined,*,,Undefined,*,,,,a,Supplement note (NR),,,,,,,http://rdaregistry.info/Elements/w/P10123,has appendix work,,,,,
 3,delete,525,SUPPLEMENT NOTE (R),Undefined,*,,Undefined,*,,,,a,Supplement note (NR),,,,,,,http://rdaregistry.info/Elements/w/P10141,has issue,,,,,

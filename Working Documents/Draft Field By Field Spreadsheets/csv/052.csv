@@ -7,21 +7,23 @@
 5,not mapped,52,GEOGRAPHIC CLASSIFICATION (R),Code source,#,Library of Congress Classification,Undefined,#,Undefined,,,6, Linkage (NR),,,,,,,,,,,,,
 6,not mapped,52,GEOGRAPHIC CLASSIFICATION (R),Code source,#,Library of Congress Classification,Undefined,#,Undefined,,,8, Field link and sequence number (R),,,,,,,,,,,,,
 7,first pass,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,"a,b","Geographic classification area code (NR),Geographic classification subarea code (R)",,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,IRI,mint a nomen with nomen properity,"[work] rdam:P10321 has subject place [place]
-[place] rdap:P70019 has appellation of place [placeNomen]
+[place] rdap:P70020 has identifier of place [placeNomen]
 [placeNomen] rdan:P80068 has nomen string [""$a value"", ""$b value""]
-[placeNomen] rdan:P80069 has scheme of nomen [URI for code source specified in 1st indicator or $2 if 1st indicator is 7]
-PS, 2024-06-14", ,
+[placeNomen] rdan:P80069 has scheme of nomen [URI for code source specified in 1st indicator or $2 if 1st indicator is 7], when ind1 = 1 use ' http://id.loc.gov/vocabulary/classSchemes/sudocs'
+PS, 2024-06-14, CP 2024-09-09
+
+Mint a new place for each $b - CP 2024-09-09", ,coded - CP 2024-09-09
 8,first pass,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,d,Populated place name (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,IRI,mint a nomen with nomen properity,"[work] rdam:P10321 has subject place [place]
-[place] rdap:P70019 has appellation of place [placeNomen]
+[place] rdap:P70018 has access point of place [placeNomen]
 [placeNomen] rdan:P80068 has nomen string [""$d value""]
-[placeNomen] rdan:P80069 has scheme of nomen [URI for code source specified in 1st indicator or $2 if 1st indicator is 7]
-PS, 2024-06-14", ,
-9,first pass,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,identifier or IRI,,"[work] rdam:P10321 has subject place [place]
-[place] rdap:P70019 has appellation of place [placeNomen]
+[placeNomen] rdan:P80069 has scheme of nomen [URI for code source specified in 1st indicator or $2 if 1st indicator is 7], when ind1 = 1 use ' http://id.loc.gov/vocabulary/classSchemes/sudocs'
+PS, 2024-06-14, CP 2024-09-12", ,"coded, nomen minted only when one place is described in the field (one $a and 0 or 1 $b) - CP 2024-09-09"
+9,not mapped,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,identifier or IRI,,"[work] rdam:P10321 has subject place [place]
+[place] rdap:P70020 has identifier of place [placeNomen]
 [placeNomen] rdan:P80068 has nomen string [""$0 value""]
 [placeNomen] rdan:P80069 has scheme of nomen [URI for code source specified in 1st indicator or $2 if 1st indicator is 7]
 PS, 2024-06-14",,
-10,first pass,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,1,"Real World Object URI (R)
+10,not mapped,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,1,"Real World Object URI (R)
 ",,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,IRI,,,,
 11,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,a,Geographic classification area code (NR),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,too broad,,,
 12,delete,52,GEOGRAPHIC CLASSIFICATION (R),Code source,*,,Undefined,*,,,,a,Geographic classification area code (NR),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,too broad,,,

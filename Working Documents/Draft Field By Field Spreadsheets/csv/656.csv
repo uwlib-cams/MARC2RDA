@@ -1,13 +1,37 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,z,Geographic subdivision (R),,,,,,,,,,,,,
-1,,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,y,Chronological subdivision (R),,,,,,,,,,,,,
-2,,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,x,General subdivision (R),,,,,,,,,,,,,
-3,,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,v,Form subdivision (R),,,,,,,,,,,,,
-4,,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,k,Form (NR),,,,,,,,,,,,,
-5,,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,a,Occupation (NR),,,,,,,,,,,,,
-6,,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,0,Authority record control number or standard number (R),,,,,,,,,,,,,
-7,,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,1,Real World Object URI (R),,,,,,,,,,,,,
-8,,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,2,Source of term (NR),,,,,,,,,,,,,
-9,,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,3,Materials specified (NR),,,,,,,,,,,,,
-10,,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,6,Linkage (NR),,,,,,,,,,,,,
-11,,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+0,done,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,$0,,,,is a uri and no $1,,,,http://rdaregistry.info/Elements/w/P10256,has subject,IRI,,"<work> rdaw:P10256 <$0>
+",,coded - CP 2024-08-13
+1,done,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,$0,,,,is a identifier and no $1,,,,http://rdaregistry.info/Elements/w/P10256,has subject,IRI,,"<work> rdaw:P10256 <convert $0 into an IRI >
+",,coded for FAST - CP 2024-08-13
+2,done,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,$1,,,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,IRI,,<work> rdaw:P10256 <$1>,,coded - CP 2024-08-13
+3,done,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,"$a, $k, $v, $x, $y, $z", , , ,no $1|$0, ,,,http://rdaregistry.info/Elements/w/P10256,has subject,IRI,,"<work> rdawo:P10256 <tConcept(field)> . // has subject; complete heading
+<tConcept(field)> skos:prefLabel “stripEndStop(concatenateOA($a, $k, $v, $x, $y, $z))” .
+<tConcept(field)> skos:inScheme <tScheme($2)> .",,coded - CP 2024-08-13
+4,done,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,$v,,,,,, ,,https://www.rdaregistry.info/Elements/w/#P10004,has category of work,IRI,,"<work> rdaw:P10004 <tConcept(field)> . // has category of work
+<tConcept(field)> skos:prefLabel “$v” .
+<tConcept(field)> skos:inScheme <tScheme($2)>
+",,coded - CP 2024-08-29
+5,delete,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,"$x, $y, $z",,,, ,, ,,http://rdaregistry.info/Elements/w/P10256,"has subject
+",IRI,,"<work> rdaw:P10256 <tConcept(field)> . // has subject
+<tConcept(field)> skos:prefLabel “stripEndStop($x, $y, $z)” . 
+<tConcept(field)> skos:inScheme <tScheme(2nd indicator or $2)> ",,
+6,delete,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,$y,,,,,,,,https://www.rdaregistry.info/Elements/w/object/#P10322,has subject timespan,IRI,,"<work> rdawo:P10322 <timespanS> . // has subject timespan
+<timespanS> rdato:P70047 <nomenT> . // has authorized access point for timespan;
+<nomenT>  rdand:P80068 “$y” . // has nomen string
+<nomenT> rdano:P80069 <tScheme($2)> . // has scheme of nomen",,
+7,delete,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,$z,,,,,,,,https://www.rdaregistry.info/Elements/w/object/#P10321,has subject place,IRI,,"<work> rdawo:P10321 <placeS> . // has subject place
+<placeS> rdapo:P70045 <nomenP> . // has authorized access point for place ; 
+<nomenP>  rdand:P80068 ""$z"" . // has nomen string
+<nomenP> rdano:P80069 <tScheme($2)> . // has scheme of nomen",,
+8,delete,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,z,Geographic subdivision (R),,,,,,,,,,,,,
+9,delete,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,y,Chronological subdivision (R),,,,,,,,,,,,,
+10,delete,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,x,General subdivision (R),,,,,,,,,,,,,
+11,delete,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,v,Form subdivision (R),,,,,,,,,,,,,
+12,delete,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,k,Form (NR),,,,,,,,,,,,,
+13,delete,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,a,Occupation (NR),,,,,,,,,,,,,
+14,delete,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,0,Authority record control number or standard number (R),,,,,,,,,,,,,
+15,delete,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,1,Real World Object URI (R),,,,,,,,,,,,,
+16,delete,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,2,Source of term (NR),,,,,,,,,,,,,
+17,delete,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,3,Materials specified (NR),,,,,,,,,,,,,
+18,delete,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,6,Linkage (NR),,,,,,,,,,,,,
+19,delete,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,8,Field link and sequence number (R),,,,,,,,,,,,,
