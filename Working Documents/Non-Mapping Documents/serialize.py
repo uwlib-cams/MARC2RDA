@@ -45,7 +45,8 @@ def serialize(file_path):
         turtle = g.serialize(format='turtle')
 
         path = file_path_noext + "." + "ttl"
-        file = open(path, 'w')
+        # Check which encoding we want to use (TC 12.13.24)
+        file = open(path, 'w', encoding="utf-8")
         file.write(turtle)
         file.close()
 
