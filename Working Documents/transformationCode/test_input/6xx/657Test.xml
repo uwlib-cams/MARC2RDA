@@ -19,6 +19,11 @@
             <marc:subfield code="1">test 1</marc:subfield>
             <marc:subfield code="2">lcgft</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="880" ind1=" " ind2="7">
+            <marc:subfield code="6">657-00</marc:subfield>
+            <marc:subfield code="a">test 880</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
         <!-- incorrect usage -->
         <marc:datafield tag="657" ind1=" " ind2="7">
             <marc:subfield code="a">Nutrition.</marc:subfield>

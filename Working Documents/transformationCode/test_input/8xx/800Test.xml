@@ -4,36 +4,42 @@
     xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
-        <marc:controlfield tag="001">6xx-test1</marc:controlfield> 
+        <marc:controlfield tag="001">8xx-test1</marc:controlfield> 
         
-        <marc:datafield tag="610" ind1="2" ind2="7">
-            <marc:subfield code="a">New York Shakespeare Festival Productions</marc:subfield>
-            <marc:subfield code="2">fast</marc:subfield>
+        <!-- 800 with $t person and work--> 
+        <marc:datafield tag="800" ind1="1" ind2="">
+            <marc:subfield code="a">Poe, Edgar Allan,</marc:subfield>
+            <marc:subfield code="d">1809-1849.</marc:subfield>
+            <marc:subfield code="t">Works.</marc:subfield>
+            <marc:subfield code="l">German.</marc:subfield>
+            <marc:subfield code="f">1922.</marc:subfield>
+            <marc:subfield code="s">Rosl;</marc:subfield>
+            <marc:subfield code="v">1. Bd.</marc:subfield>
         </marc:datafield>
-        <marc:datafield tag="610" ind1="2" ind2="7">
-            <marc:subfield code="a">Library of Congress.</marc:subfield>
-            <marc:subfield code="2">fast</marc:subfield>
-            <marc:subfield code="0">(OCoLC)fst00528532</marc:subfield>
+        
+        
+        <!-- 800 with $1 for person, unapproved -->
+        <marc:datafield tag="800" ind1="1" ind2="">
+            <marc:subfield code="a">Romero, George A.</marc:subfield>
+            <marc:subfield code="1">https://isni.org/isni/0000000121363861</marc:subfield>
         </marc:datafield>
-        <marc:datafield tag="610" ind1="2" ind2="7">
-            <marc:subfield code="a">Catholic Church</marc:subfield>
-            <marc:subfield code="x">In literature.</marc:subfield>
-            <marc:subfield code="2">nli</marc:subfield>
-        </marc:datafield>
-        <marc:datafield tag="610" ind1="2" ind2="0">
-            <marc:subfield code="a">Weisse Rose (Resistance group)</marc:subfield>
-            <marc:subfield code="1">https://isni.org/isni/0000000122597088</marc:subfield>
+        
+        <!-- 800 with $1 for work -->
+        <marc:datafield tag="800" ind1="1" ind2="">
+            <marc:subfield code="a">Romero, George A.</marc:subfield>
+            <marc:subfield code="t">Made up work</marc:subfield>
+            <marc:subfield code="1">https://iriforthiswork.com/12345</marc:subfield>
         </marc:datafield>
         
         <!-- 880s -->
         <marc:datafield tag="880" ind1="1" ind2="4">
-            <marc:subfield code="6">610-00</marc:subfield>
+            <marc:subfield code="6">800-00</marc:subfield>
             <marc:subfield code="a">Test unlinked 880 person</marc:subfield>
             <marc:subfield code="t">Test unlinked 880 work</marc:subfield>
             <marc:subfield code="1">https://iriforthiswork.com/6789</marc:subfield>
         </marc:datafield>
         
-        <marc:datafield tag="610" ind1="1" ind2="0">
+        <marc:datafield tag="800" ind1="1" ind2="0">
             <marc:subfield code="6">880-01</marc:subfield>
             <marc:subfield code="a">Test linked 880 person 1</marc:subfield>
             <marc:subfield code="t">Test linked 880 work 1</marc:subfield>
@@ -41,10 +47,11 @@
         </marc:datafield>
         
         <marc:datafield tag="880" ind1="1" ind2="0">
-            <marc:subfield code="6">610-01</marc:subfield>
+            <marc:subfield code="6">800-01</marc:subfield>
             <marc:subfield code="a">Test linked 880 person 2</marc:subfield>
             <marc:subfield code="t">Test linked 880 work 2</marc:subfield>
             <marc:subfield code="x">test x</marc:subfield>
         </marc:datafield>
+        
     </marc:record>
 </marc:collection>

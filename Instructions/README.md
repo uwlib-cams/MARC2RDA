@@ -1,5 +1,5 @@
 # Spreadsheet Instructions
-_Last updated 27 April 2022_
+_Last updated 27 November 2024_
 
 ## Table of Contents
  - [Spreadsheet Structure](https://github.com/uwlib-cams/MARC2RDA/tree/master/Instructions#spreadsheet-structure)
@@ -57,9 +57,16 @@ _Last updated 27 April 2022_
  | | 490 | SERIES STATEMENT (R) | Series tracing policy | * | | Undefined | * | | | | a, x, v | | | | | | | | http://rdaregistry.info/Elements/m/P30106 | has series statement | structured description | Chose not to use sub-properties because number of conditions is not sustainable for transformation. MARC does not have separate subfields for each element. Chose to retain MARC subfields when ISBD punctuation is absent in order to maintain structure of description. | when LDR 18 = a or i, remove marc subfields and rely on ISBD punctuation. When LDR 18=c, retain marc subfield codes to separate pieces of information | | | |
  
 ## General Rules
- - If not applicable, leave blank.
+ - Always check against:
+   - [MARC21 Format for Bibliographic Data](https://www.loc.gov/marc/bibliographic/) (what mapping from)
+   - [RDA Registry](https://www.rdaregistry.info/) (what mapping to)
+   - [Official RDA Toolkit](https://access.rdatoolkit.org/) (explains how to use RDA)
+   - [Decision Index](https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index): this provides guidance on a variety of considerations from the [Spreadsheet](https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#ia-spreadsheet) to [MARC21 Fields & Subfields Not Mapped](https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#ia-spreadsheet) to the [GitHub](https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iiia-github) workflow while mapping and more
+ - If not applicable, leave blank. If columns are not applicable/blank, they may be hidden while working on the spreadsheet.
  - Notes should be initialed and dated, with separate notes in the same column/row separated by ;
+ - In order to achieve an accurate mapping, you may need to delete rows that don't properly translate from MARC to RDA, duplicate rows, write in conditions, include more than one RDA property, and/or combine subfields into one row if they map to a single RDA element.  
  - If many subfields need to be combined to produce a value for a single RDA element, list those separate subfields in the order they should appear using "MARCSubfield" using ", " and make a transformation note to indicate exactly what the resulting value should look like.
+ - If there are new additions to [MARC21 Format for Bibliographic Data](https://www.loc.gov/marc/bibliographic/), which are indicated in red font, add them to the spreadsheet.
  - Consistently use operators:
 ### Operators
 | Operator | Example | Details |
@@ -258,6 +265,7 @@ _[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#
 | Example | Details |
 |---|---|
 | One of the following: unstructured description, structured description, identifier, IRI | RDA Recording Method used in the MARC data, if known and if consistent. |
+* Refer to [Official RDA Toolkit](https://access.rdatoolkit.org/) > Guidance > [Recording methods](https://access-rdatoolkit-org.offcampus.lib.washington.edu/en-US_ala-a06b3aa1-d994-31b1-b961-e4ce37c1a4d3)
 
 _[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_
 

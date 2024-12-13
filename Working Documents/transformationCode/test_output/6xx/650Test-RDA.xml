@@ -1,168 +1,157 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
-         xmlns:fake="http://fakePropertiesForDemo"
-         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
-         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
-         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
-         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
-         xmlns:rdae="http://rdaregistry.info/Elements/e/"
-         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
-         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
-         xmlns:rdai="http://rdaregistry.info/Elements/i/"
-         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
-         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
-         xmlns:rdam="http://rdaregistry.info/Elements/m/"
-         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
-         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
-         xmlns:rdan="http://rdaregistry.info/Elements/n/"
-         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
-         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
-         xmlns:rdap="http://rdaregistry.info/Elements/p/"
-         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
-         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
-         xmlns:rdat="http://rdaregistry.info/Elements/t/"
-         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
-         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
-         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
-         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
-         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
-         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:uwf="http://universityOfWashington/functions"
-         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
    <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>6xx-test1wor</rdawd:P10002>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/6xx-test1exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>6xx-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <fake:marcfield>F650 #0 $a Personals $x Computer simulation.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/personalscomputersimulation"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#personalscomputersimulation"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #4 $a Personals $v Poetry $y 2000</fake:marcfield>
-      <rdawd:P10256>Personals--Poetry--2000</rdawd:P10256>
-      <rdawd:P10004>Poetry</rdawd:P10004>
+      <rdawd:P10256>Personals--Poetry--2000</rdawd:P10256><!--rdawd:P10256 = has subject-->
+      <rdawd:P10004>Poetry</rdawd:P10004><!--rdawd:P10004 = has category of work-->
       <fake:marcfield>F650 #0 $a Online dating $v Poetry.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/onlinedatingpoetry"/>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/poetry"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#onlinedatingpoetry"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#poetry"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F650 #0 $a Body image in art.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/bodyimageinart"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#bodyimageinart"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #0 $a On-demand printing.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/ondemandprinting"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#on-demandprinting"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #6 $a Petites annonces personnelles $0 (CaQQLa)201-0120220 $x Simulation par ordinateur. $0 (CaQQLa)201-0379159</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/petitesannoncespersonnellessimulationparordinateur"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#petitesannoncespersonnellessimulationparordinateur"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #6 $a Petites annonces personnelles $0 (CaQQLa)201-0120220 $v Poésie. $0 (CaQQLa)201-0378101</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/petitesannoncespersonnellespoésie"/>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvm/poésie"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#petitesannoncespersonnellespoe%CC%81sie"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvm/con#poe%CC%81sie"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F650 #6 $a Rencontres amoureuses sur Internet $0 (CaQQLa)201-0396908 $v Poésie. $0 (CaQQLa)201-0378101</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/rencontresamoureusessurinternetpoésie"/>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/rvm/poésie"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#rencontresamoureusessurinternetpoe%CC%81sie"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvm/con#poe%CC%81sie"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F650 #6 $a Image du corps dans l'art. $0 (CaQQLa)000275394</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/imageducorpsdanslart"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#imageducorpsdansl%27art"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #6 $a Impression à la demande. $0 (CaQQLa)000299998</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/rvm/impressionàlademande"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#impressiona%CC%80lademande"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #7 $a Body image in art. $2 fast $0 (OCoLC)fst00835355</fake:marcfield>
-      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00835355"/>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00835355"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #7 $a On-demand printing. $2 fast $0 (OCoLC)fst01045708</fake:marcfield>
-      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01045708"/>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01045708"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #7 $a Online dating. $2 fast $0 (OCoLC)fst01045952</fake:marcfield>
-      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01045952"/>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01045952"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #7 $a Personals. $2 fast $0 (OCoLC)fst01058777</fake:marcfield>
-      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01058777"/>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01058777"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #7 $a Percussion ensembles $x Scores and parts. $2 fast $0 (OCoLC)fst01906126</fake:marcfield>
-      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01906126"/>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01906126"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #0 $a Barren ground caribou populations $x Estimates $z Nunavut $z Bathurst Inlet Region.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/barrengroundcariboupopulationsestimatesnunavutbathurstinletregion"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#barrengroundcariboupopulationsestimatesnunavutbathurstinletregion"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #0 $a Caribou calving grounds $z Nunavut $z Bathurst Inlet Region.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/cariboucalvinggroundsnunavutbathurstinletregion"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#cariboucalvinggroundsnunavutbathurstinletregion"/><!--rdaw:P10256 = has subject-->
       <fake:marcfield>F650 #0 $a Democracy $z Turkey $x History $y 20th century $v Chronology.</fake:marcfield>
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/democracyturkeyhistory20thcenturychronology"/>
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/concept/lcsh/chronology"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#democracyturkeyhistory20thcenturychronology"/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#chronology"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F650 #4 $6 880-01 $a test 880 no source 1</fake:marcfield>
+      <rdawd:P10256>test 880 no source 1</rdawd:P10256><!--rdawd:P10256 = has subject-->
+      <rdawd:P10256>test 880 no source 2</rdawd:P10256><!--rdawd:P10256 = has subject-->
+      <fake:marcfield>F650 #0 $6 880-02 $a test 880 1</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#test8801"/><!--rdaw:P10256 = has subject-->
+      <fake:marcfield>F880 #0 $6 650-00 $a test unlinked 880</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#testunlinked880"/><!--rdaw:P10256 = has subject-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/6xx-test1wor"/>
-      <rdaed:P20002>6xx-test1exp</rdaed:P20002>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/6xx-test1man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/6xx-test1wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>6xx-test1exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/6xx-test1exp"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/6xx-test1exp"/><!--rdamo:P30139 = has expression manifested-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/personalscomputersimulation">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#personalscomputersimulation">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Personals--Computer simulation</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/onlinedatingpoetry">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#onlinedatingpoetry">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Online dating--Poetry</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/poetry">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#poetry">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Poetry</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/bodyimageinart">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#bodyimageinart">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Body image in art</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/ondemandprinting">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#on-demandprinting">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>On-demand printing</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/petitesannoncespersonnellessimulationparordinateur">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#petitesannoncespersonnellessimulationparordinateur">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Petites annonces personnelles--Simulation par ordinateur</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/petitesannoncespersonnellespoésie">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#petitesannoncespersonnellespoe%CC%81sie">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Petites annonces personnelles--Poésie</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/poésie">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#poe%CC%81sie">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Poésie</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/rencontresamoureusessurinternetpoésie">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#rencontresamoureusessurinternetpoe%CC%81sie">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Rencontres amoureuses sur Internet--Poésie</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/poésie">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#poe%CC%81sie">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Poésie</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/imageducorpsdanslart">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#imageducorpsdansl%27art">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Image du corps dans l'art</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/rvm/impressionàlademande">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#impressiona%CC%80lademande">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Impression à la demande</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/barrengroundcariboupopulationsestimatesnunavutbathurstinletregion">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#barrengroundcariboupopulationsestimatesnunavutbathurstinletregion">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Barren ground caribou populations--Estimates--Nunavut--Bathurst Inlet Region</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/cariboucalvinggroundsnunavutbathurstinletregion">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#cariboucalvinggroundsnunavutbathurstinletregion">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Caribou calving grounds--Nunavut--Bathurst Inlet Region</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/democracyturkeyhistory20thcenturychronology">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#democracyturkeyhistory20thcenturychronology">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Democracy--Turkey--History--20th century--Chronology</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/lcsh/chronology">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#chronology">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Chronology</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#test8801">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>test 880 1</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>test 880 2</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#testunlinked880">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>test unlinked 880</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
 </rdf:RDF>

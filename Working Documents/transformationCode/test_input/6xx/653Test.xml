@@ -23,7 +23,8 @@
         <marc:datafield tag="653" ind1=" " ind2="5">
             <marc:subfield code="a">Dublin</marc:subfield>
         </marc:datafield>
-        <marc:datafield tag="653" ind1=" " ind2="6">
+        <marc:datafield tag="880" ind1=" " ind2="6">
+            <marc:subfield code="6">653-00</marc:subfield>
             <marc:subfield code="a">Genre/Form term</marc:subfield>
         </marc:datafield>
     </marc:record>

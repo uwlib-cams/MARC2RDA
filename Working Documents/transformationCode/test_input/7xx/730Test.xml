@@ -27,5 +27,10 @@
             <marc:subfield code="o">arr.</marc:subfield>
             <marc:subfield code="f">1982.</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="730" ind1="0" ind2="7">
+            <marc:subfield code="a">All in love is fair.</marc:subfield>
+            <marc:subfield code="1">https://musicbrainz.org/work/3f9ae128-bbec-3804-a477-83348f91dbc8</marc:subfield>
+            <marc:subfield code="2">musicb</marc:subfield>
+        </marc:datafield>
     </marc:record>
 </marc:collection>

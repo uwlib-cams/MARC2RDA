@@ -8,6 +8,7 @@
         <marc:datafield tag="711" ind1="2" ind2=" ">
             <marc:subfield code="a">Stratford Festival (Ont.),</marc:subfield>
             <marc:subfield code="j">production company.</marc:subfield>
+            <marc:subfield code="1">https://fakeiri.edu/1234</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="711" ind1="2" ind2=" ">
             <marc:subfield code="a">Texas Music Festival.</marc:subfield>
