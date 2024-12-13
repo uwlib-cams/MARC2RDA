@@ -1296,7 +1296,7 @@
     <!-- 657 -  Index Term - Function -->
     
     <xsl:template
-        match="marc:datafield[@tag = '657']"
+        match="marc:datafield[@tag = '657'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '657']"
         mode="wor" expand-text="yes">
         <xsl:call-template name="getmarc"/>
         <xsl:variable name="prefLabel">
