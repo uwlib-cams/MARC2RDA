@@ -22,5 +22,9 @@
             <marc:subfield code="2">udir</marc:subfield>
             <marc:subfield code="1">http://psi.udir.no/kl06/MAT1111</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">658-00</marc:subfield>
+            <marc:subfield code="a">880 test</marc:subfield>
+        </marc:datafield>
     </marc:record>
 </marc:collection>

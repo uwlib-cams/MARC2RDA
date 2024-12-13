@@ -1331,7 +1331,7 @@
     <!-- 658 -  Index Term - Curriculum Objective -->
     
     <xsl:template
-        match="marc:datafield[@tag = '658']"
+        match="marc:datafield[@tag = '658'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '658']"
         mode="wor" expand-text="yes">
         <xsl:call-template name="getmarc"/>
         <rdawd:P10330>
