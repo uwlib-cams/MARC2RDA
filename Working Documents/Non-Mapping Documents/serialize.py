@@ -59,7 +59,7 @@ def serialize(file_path):
         file.write(jsonld)
         file.close()
     
-    # uncomment the formats you would like to produce
+# UNCOMMENT THE FORMATS YOU WOULD LIKE TO PRODUCE
     # format_rdf(g)
     # format_nt(g)
     format_ttl(g)
@@ -69,9 +69,9 @@ def serialize(file_path):
 # only_serialize can be run from this script to produce all serializations
 
 def only_serialize():
-    file_prompt = dedent("""Enter the path of the file relative to the working directory. 
+    file_prompt = dedent("""Enter the full path to the file.  
     The file must have the extenstion ".rdf", ".ttl", ".jsonld", or ".nt"
-    For example: '../uwlswd_vocabs/newspaper_genre_list.ttl'
+    For example: C:/Move/linked_data/MARC2RDA/Working%20Documents/transformationCode/outputDataForReview/singlerecordRDA.rdf
     > """)
     file_path = input(file_prompt)
 

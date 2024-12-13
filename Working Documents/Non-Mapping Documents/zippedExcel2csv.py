@@ -8,17 +8,18 @@ import pandas as pd
 #2. Select ALL (all folders that is, but not "Non-Mapping Materials" -- only folders named after MARC fields)
 #3. Download
 #4. Run Python script which will prompt you to enter values for:
-#   downloadPath - path to .zip folder containing downloaded Google Sheets
-#   gitRepo - path to local copy of MARC2RDA git repo
-#5. Manually delete:
-#    downloadFile
+#   downloadPath - full path to .zip folder containing downloaded Google Sheets (no quotations)
+#   gitRepo - full path to local copy of MARC2RDA git repo (no quotations)
+#5. Manually delete the downloaded .zip folder containing all of the Google Sheets
 #6. Go to git repo and manually add, commit, push
 
 # downloadPath e.g. /mnt/c/Users/cpayn/Downloads/drive-download-20240522T012037Z-001.zip or c:\Users\cpayn\Downloads\drive-download-20240522T012037Z-001.zip
-downloadPath = input('''Enter path to downloaded .xslx folder (this should end in .zip):
+downloadPath = input('''Enter full path to downloaded .xslx folder (this should end in .zip) 
+                     e.g. c:\Users\cpayn\Downloads\drive-download-20240522T012037Z-001.zip :
                      ''')
 # gitRepo e.g. /mnt/c/move/linked_data/MARC2RDA or c:\Move\linked_data\MARC2RDA
-gitRepoInput = input('''Enter path to your local copy of the MARC2RDA GitHub Repo (this should end in /MARC2RDA):
+gitRepoInput = input('''Enter full path to your local copy of the MARC2RDA GitHub Repo (this should end in /MARC2RDA)
+                     e.g. c:\Move\linked_data\MARC2RDA :
                ''')
 
 #set temporary extractPath for unzipping and editing files
