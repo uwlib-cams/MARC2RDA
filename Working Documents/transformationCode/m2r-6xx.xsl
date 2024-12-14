@@ -1448,7 +1448,7 @@
     
     <!-- 688 - Subject Added Entry - Type of Entity Unspecified -->
     <xsl:template
-        match="marc:datafield[@tag = '688']"
+        match="marc:datafield[@tag = '688'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '688-00']"
         mode="wor">
         <xsl:call-template name="getmarc"/>
         <xsl:variable name="prefLabel">
@@ -1457,8 +1457,20 @@
         <xsl:call-template name="F6XX-subject">
             <xsl:with-param name="prefLabel" select="$prefLabel"/>
         </xsl:call-template>
+        <xsl:if test="@tag = '688' and not(marc:subfield[@code = '2']) and marc:subfield[@code = '6']">
+            <xsl:variable name="occNum" select="concat('688-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+            <xsl:for-each
+                select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                <xsl:variable name="prefLabel880">
+                    <xsl:call-template name="F688-label"/>
+                </xsl:variable>
+                <xsl:call-template name="F6XX-subject">
+                    <xsl:with-param name="prefLabel" select="$prefLabel880"/>
+                </xsl:call-template>
+            </xsl:for-each>
+        </xsl:if>
     </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '688']"
+    <xsl:template match="marc:datafield[@tag = '688'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '688-00']"
         mode="con" expand-text="yes">
         <xsl:if test="marc:subfield[@code = '2']">
             <xsl:variable name="prefLabel">
@@ -1468,6 +1480,17 @@
             <xsl:if test="starts-with(uwf:subjectIRI(., $scheme, $prefLabel), $BASE)">
                 <rdf:Description rdf:about="{uwf:subjectIRI(., $scheme, $prefLabel)}">
                     <xsl:copy-of select="uwf:fillConcept($prefLabel, $scheme, '', @tag)"/>
+                    <xsl:if test="@tag = '688' and marc:subfield[@code = '6']">
+                        <xsl:variable name="occNum"
+                            select="concat('688-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                        <xsl:for-each
+                            select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                            <xsl:variable name="prefLabel880">
+                                <xsl:call-template name="F688-label"/>
+                            </xsl:variable>
+                            <xsl:copy-of select="uwf:fillConcept($prefLabel880, '', '', @tag)"/>
+                        </xsl:for-each>
+                    </xsl:if>
                 </rdf:Description>
             </xsl:if>
         </xsl:if>
