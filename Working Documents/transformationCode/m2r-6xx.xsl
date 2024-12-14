@@ -1016,59 +1016,61 @@
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:variable name="scheme" select="uwf:getSubjectSchemeCode(.)"/>
-        <xsl:variable name="ap">
-            <xsl:variable name="placename">
+        <xsl:if test="@ind2 != '4'">
+            <xsl:variable name="ap">
+                <xsl:variable name="placename">
+                    <xsl:choose>
+                        <xsl:when test="marc:subfield[@code = 'g']">
+                            <xsl:text>{marc:subfield[@code = 'a']} ({marc:subfield[@code = 'g']})</xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:variable>
+                <xsl:value-of select="uwf:stripEndPunctuation($placename)"/>
+            </xsl:variable>
+            <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'plaNom')}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                <rdand:P80068>
+                    <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
+                </rdand:P80068>
+                <xsl:if test="@tag = '651' and marc:subfield[@code = '6']">
+                    <xsl:variable name="occNum" select="concat('651-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                    <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                        <rdand:P80113>
+                            <xsl:variable name="ap880">
+                                <xsl:variable name="placename880">
+                                    <xsl:choose>
+                                        <xsl:when test="marc:subfield[@code = 'g']">
+                                            <xsl:text>{marc:subfield[@code = 'a']} ({marc:subfield[@code = 'g']})</xsl:text>
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                            <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                                        </xsl:otherwise>
+                                    </xsl:choose>
+                                </xsl:variable>
+                                <xsl:value-of select="uwf:stripEndPunctuation($placename880)"/>
+                            </xsl:variable>
+                            <xsl:value-of select="$ap880"/>
+                        </rdand:P80113>
+                    </xsl:for-each>
+                </xsl:if>
                 <xsl:choose>
-                    <xsl:when test="marc:subfield[@code = 'g']">
-                        <xsl:text>{marc:subfield[@code = 'a']} ({marc:subfield[@code = 'g']})</xsl:text>
+                    <xsl:when test="@ind2 = '7'">
+                        <xsl:choose>
+                            <xsl:when test="marc:subfield[@code = '2']">
+                                <xsl:copy-of select="uwf:s2Nomen(marc:subfield[@code = '2'][1])"/>
+                            </xsl:when>
+                            <xsl:otherwise/>
+                        </xsl:choose>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                        <rdan:P80069 rdf:resource="{uwf:ind2Thesaurus(@ind2)}"/>
                     </xsl:otherwise>
                 </xsl:choose>
-            </xsl:variable>
-            <xsl:value-of select="uwf:stripEndPunctuation($placename)"/>
-        </xsl:variable>
-        <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'plaNom')}">
-            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-            <rdand:P80068>
-                <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
-            </rdand:P80068>
-            <xsl:if test="@tag = '651' and marc:subfield[@code = '6']">
-                <xsl:variable name="occNum" select="concat('651-', substring(marc:subfield[@code = '6'], 5, 6))"/>
-                <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
-                    <rdand:P80113>
-                        <xsl:variable name="ap880">
-                            <xsl:variable name="placename880">
-                                <xsl:choose>
-                                    <xsl:when test="marc:subfield[@code = 'g']">
-                                        <xsl:text>{marc:subfield[@code = 'a']} ({marc:subfield[@code = 'g']})</xsl:text>
-                                    </xsl:when>
-                                    <xsl:otherwise>
-                                        <xsl:value-of select="marc:subfield[@code = 'a']"/>
-                                    </xsl:otherwise>
-                                </xsl:choose>
-                            </xsl:variable>
-                            <xsl:value-of select="uwf:stripEndPunctuation($placename880)"/>
-                        </xsl:variable>
-                        <xsl:value-of select="$ap880"/>
-                    </rdand:P80113>
-                </xsl:for-each>
-            </xsl:if>
-            <xsl:choose>
-                <xsl:when test="@ind2 = '7'">
-                    <xsl:choose>
-                        <xsl:when test="marc:subfield[@code = '2']">
-                            <xsl:copy-of select="uwf:s2Nomen(marc:subfield[@code = '2'][1])"/>
-                        </xsl:when>
-                        <xsl:otherwise/>
-                    </xsl:choose>
-                </xsl:when>
-                <xsl:otherwise>
-                    <rdan:P80069 rdf:resource="{uwf:ind2Thesaurus(@ind2)}"/>
-                </xsl:otherwise>
-            </xsl:choose>
-        </rdf:Description>
+            </rdf:Description>
+        </xsl:if>
     </xsl:template>
 
     <!-- 653 - Index Term - Uncontrolled -->
