@@ -1369,7 +1369,7 @@
     <!-- 662 - Subject Added Entry - Hierarchical Place Name-->
     
     <xsl:template
-        match="marc:datafield[@tag = '662']"
+        match="marc:datafield[@tag = '662'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '662-00']"
         mode="wor">
         <xsl:param name="baseIRI"/>
         <xsl:call-template name="getmarc"/>
@@ -1378,7 +1378,7 @@
         </xsl:variable>
         <rdawo:P10321 rdf:resource="{uwf:placeIRI($baseIRI, ., $prefLabel, marc:subfield[@code = '2'])}"/>
     </xsl:template>
-    <xsl:template match="marc:datafield[@tag = '662']"
+    <xsl:template match="marc:datafield[@tag = '662'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '662-00']"
         mode="pla">
         <xsl:param name="baseIRI"/>
         <xsl:variable name="prefLabel">
@@ -1388,47 +1388,59 @@
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
             <xsl:choose>
                 <xsl:when test="marc:subfield[@code = '2']">
-                    <rdapo:P70045 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'plaNom')}"/>
-                </xsl:when>
-                <xsl:otherwise>
                     <xsl:choose>
-                        <xsl:when test="not(starts-with(uwf:placeIRI($baseIRI, ., $prefLabel, ''), $BASE))">
-                            <rdapd:P70045>
-                                <xsl:value-of select="$prefLabel"/>
-                            </rdapd:P70045>
+                        <xsl:when test="uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Place') = 'True'">
+                            <rdapo:P70045 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'plaNom')}"/>
                         </xsl:when>
                         <xsl:otherwise>
-                            <rdapd:P70018>
-                            </rdapd:P70018>
+                            <rdapo:P70018 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'plaNom')}"/>
                         </xsl:otherwise>
                     </xsl:choose>
+                </xsl:when>
+                <xsl:otherwise>
+                    <rdapd:P70018>
+                        <xsl:value-of select="$prefLabel"/>
+                    </rdapd:P70018>
+                    <xsl:if test="@tag = '662' and marc:subfield[@code = '6']">
+                        <xsl:variable name="occNum" select="concat('662-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                        <xsl:for-each
+                            select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                            <xsl:variable name="prefLabel880">
+                                <xsl:call-template name="F662-label"/>
+                            </xsl:variable>
+                            <rdapd:P70018>
+                                <xsl:value-of select="$prefLabel880"/>
+                            </rdapd:P70018>
+                        </xsl:for-each>
+                    </xsl:if>
                 </xsl:otherwise>
             </xsl:choose>
         </rdf:Description>
     </xsl:template>
     <xsl:template
-        match="marc:datafield[@tag = '662']"
+        match="marc:datafield[@tag = '662'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '662-00']"
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:if test="marc:subfield[@code = '2']">
             <xsl:variable name="prefLabel">
                 <xsl:call-template name="F662-label"/>
             </xsl:variable>
-            <xsl:variable name="nomIRI">
-                <xsl:choose>
-                    <xsl:when test="starts-with(uwf:subjectIRI(., marc:subfield[@code = '2'], $prefLabel), $BASE)">
-                        <xsl:value-of select="uwf:nomenIRI($baseIRI, ., 'plaNom')"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="uwf:nomenIRI($baseIRI, ., 'plaNom')"/>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:variable>
-            <rdf:Description rdf:about="{$nomIRI}">
+            <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'plaNom')}">
                 <rdf:type rdf:resource="httsp://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
                     <xsl:value-of select="$prefLabel"/>
                 </rdand:P80068>
+                <xsl:if test="@tag = '662' and marc:subfield[@code = '6']">
+                    <xsl:variable name="occNum" select="concat('662-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                    <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                        <xsl:variable name="prefLabel880">
+                            <xsl:call-template name="F662-label"/>
+                        </xsl:variable>
+                        <rdand:P80113>
+                            <xsl:value-of select="$prefLabel880"/>
+                        </rdand:P80113>
+                    </xsl:for-each>
+                </xsl:if>
                 <xsl:copy-of select="uwf:s2Nomen(marc:subfield[@code = '2'])"/>
             </rdf:Description>
         </xsl:if>

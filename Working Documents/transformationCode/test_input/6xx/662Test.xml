@@ -19,7 +19,18 @@
             <marc:subfield code="a">World</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="662" ind1=" " ind2=" ">
+            <marc:subfield code="6">880-01</marc:subfield>
             <marc:subfield code="a">place</marc:subfield>
+            <marc:subfield code="2">lcsh</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">662-01</marc:subfield>
+            <marc:subfield code="a">place 880</marc:subfield>
+            <marc:subfield code="2">lcsh</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">662-00</marc:subfield>
+            <marc:subfield code="a">unlinked 880</marc:subfield>
             <marc:subfield code="1">http://realworldiri.edu/12345</marc:subfield>
         </marc:datafield>
     </marc:record>
