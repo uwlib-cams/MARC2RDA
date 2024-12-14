@@ -30,21 +30,6 @@
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     version="3.0">
     
-    <xsl:function name="uwf:process0">
-        <xsl:param name="code0"/>
-        <xsl:if test="contains($code0, 'http')">
-            <xsl:choose>
-                <xsl:when test="starts-with($code0, 'http')">
-                    <xsl:value-of select="$code0"/>
-                </xsl:when>
-                <xsl:when test="starts-with($code0, '(')">
-                    <xsl:value-of select="substring-after($code0, ')')"/>
-                </xsl:when>
-                <xsl:otherwise/>
-            </xsl:choose>
-        </xsl:if>
-    </xsl:function>
-    
 <!-- REPRODUCTIONS -->
     
     <xsl:function name="uwf:checkReproductions">

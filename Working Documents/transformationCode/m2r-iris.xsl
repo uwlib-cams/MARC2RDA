@@ -30,6 +30,21 @@
     <xsl:import href="m2r-functions.xsl"/>
     <xsl:import href="m2r-relators.xsl"/>
     
+    <xsl:variable name="approvedSourcesDoc" select="document('lookup/approvedSources.xml')"/>
+    <xsl:key name="approvedKey" match="uwmisc:row" use="uwmisc:approved"/>
+    
+    <!-- IRILookup takes an input IRI and type (see approvedSources.xml for valid types)
+        and checks if it has the same baseIRI as an IRI of the correct type in approvedSources.xml
+        if it does, it returns True.
+        This is used in the IRI functions to determine whether a $1 value can be used as the 
+        Entity IRI or not. -->
+    <xsl:function name="uwf:IRILookup" expand-text="yes">
+        <xsl:param name="iri"/>
+        <xsl:param name="type"/>
+        <xsl:value-of select="if (some $value in $approvedSourcesDoc/uwmisc:root/uwmisc:row/key('approvedKey', $type)/uwmisc:baseIRI/@iri
+            satisfies (contains($iri, $value))) then 'True' else 'False'"/>
+    </xsl:function>
+    
     <!-- This returns a list of preferred $1 values based on the approved URIs-->
     <xsl:function name="uwf:multiple1s">
         <xsl:param name="field"/>
@@ -60,6 +75,23 @@
                 <xsl:copy-of select="."/>
             </xsl:if>
         </xsl:for-each>
+    </xsl:function>
+    
+    <!-- This function removes content in parentheses at the beginning of $0
+        from $0 values that contain http (are IRIs) -->
+    <xsl:function name="uwf:process0">
+        <xsl:param name="code0"/>
+        <xsl:if test="contains($code0, 'http')">
+            <xsl:choose>
+                <xsl:when test="starts-with($code0, 'http')">
+                    <xsl:value-of select="$code0"/>
+                </xsl:when>
+                <xsl:when test="starts-with($code0, '(')">
+                    <xsl:value-of select="substring-after($code0, ')')"/>
+                </xsl:when>
+                <xsl:otherwise/>
+            </xsl:choose>
+        </xsl:if>
     </xsl:function>
     
     <!-- returns an IRI for an entity -->
@@ -200,7 +232,7 @@
             <xsl:value-of select="uwf:relWorkAccessPoint($field)"/>
         </xsl:variable>
         <xsl:choose>
-            <!-- For a 1XX or 7XX or 6XX and only name/title subfields - 
+            <!-- For a 1XX or 7XX or 8XX or 6XX and only name/title subfields - 
                 If $1, return value of $1, otherwise construct an IRI based on the access point -->
             <xsl:when test="$field/marc:subfield[@code = '1'] and (not(starts-with($field/@tag, '6'))
                 or (starts-with($field/@tag, '6') and 
@@ -330,12 +362,29 @@
         <xsl:choose>
             <xsl:when test="$field/marc:subfield[@code = '1'] and (starts-with($field/@tag, '6') and 
                 not($field/marc:subfield[@code = 'v' or @code = 'x' or @code = 'y' or @code = 'z']))">
-                <xsl:choose>
+                <xsl:variable name="sub1">
+                     <xsl:choose>
                     <xsl:when test="count($field/marc:subfield[@code = '1']) > 1">
                         <xsl:value-of select="uwf:multiple1s($field, 'Place')[1]"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:value-of select="$field/marc:subfield[@code = '1']"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+                </xsl:variable>
+                <xsl:choose>
+                    <xsl:when test="uwf:IRILookup($sub1, 'Place') = 'True'">
+                        <xsl:value-of select="$sub1"/>
+                    </xsl:when>  
+                    <xsl:otherwise>
+                        <xsl:choose>
+                            <xsl:when test="exists($source) and $source != ''">
+                                <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($source), ' ', ''))||'/'||'place#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="$baseIRI||'place#'||generate-id($field)"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
@@ -428,15 +477,8 @@
         </xsl:choose>
     </xsl:function>
     
-    <xsl:variable name="approvedSourcesDoc" select="document('lookup/approvedSources.xml')"/>
-    <xsl:key name="approvedKey" match="uwmisc:row" use="uwmisc:approved"/>
     
-    <xsl:function name="uwf:IRILookup" expand-text="yes">
-        <xsl:param name="iri"/>
-        <xsl:param name="type"/>
-        <xsl:value-of select="if (some $value in $approvedSourcesDoc/uwmisc:root/uwmisc:row/key('approvedKey', $type)/uwmisc:baseIRI/@iri
-            satisfies (contains($iri, $value))) then 'True' else 'False'"/>
-    </xsl:function>
+    <!-- IDENTIFIERS -->
     
     <xsl:function name="uwf:agentIdentifiers">
         <xsl:param name="field"/>
