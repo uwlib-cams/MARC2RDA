@@ -6,17 +6,75 @@
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">8xx-test1</marc:controlfield> 
         
-        <!-- 800 with $t person and work--> 
+        <!-- 800 -->
         <marc:datafield tag="800" ind1="1" ind2="">
-            <marc:subfield code="a">Poe, Edgar Allan,</marc:subfield>
-            <marc:subfield code="d">1809-1849.</marc:subfield>
-            <marc:subfield code="t">Works.</marc:subfield>
-            <marc:subfield code="l">German.</marc:subfield>
-            <marc:subfield code="f">1922.</marc:subfield>
-            <marc:subfield code="s">Rosl;</marc:subfield>
-            <marc:subfield code="v">1. Bd.</marc:subfield>
+            <marc:subfield code="a">Pushkin, Aleksandr Sergeevich,</marc:subfield>
+            <marc:subfield code="d">1799-1837</marc:subfield>
         </marc:datafield>
         
+        <!-- 800 with $0 IRI for person, unapproved -->
+        <marc:datafield tag="800" ind1="1" ind2="">
+            <marc:subfield code="a">Harnoncourt, Nikolaus.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">https://id.worldcat.org/fast/00076606</marc:subfield>
+            <marc:subfield code="t">subfield t</marc:subfield>
+        </marc:datafield>
+        
+        <!-- 800 with $t person and work -->
+        <marc:datafield tag="800" ind1="1" ind2="">
+            <marc:subfield code="a">Haydn, Joseph,</marc:subfield>
+            <marc:subfield code="d">1732-1809.</marc:subfield>
+            <marc:subfield code="t">Symphonies.</marc:subfield>
+        </marc:datafield>
+        
+        <!-- 800 with $t person and work, additional subfields -->
+        <marc:datafield tag="800" ind1="1" ind2="">
+            <marc:subfield code="a">Arne, Thomas Augustine,</marc:subfield>
+            <marc:subfield code="d">1710-1778.</marc:subfield>
+            <marc:subfield code="t">Concertos,</marc:subfield>
+            <marc:subfield code="m">keyboard instrument, orchestra.</marc:subfield>
+            <marc:subfield code="n">No. 3.</marc:subfield>
+            <marc:subfield code="p">Con Spirito,</marc:subfield>
+            <marc:subfield code="m">keyboard instrument.</marc:subfield>
+        </marc:datafield>
+        
+        <!-- 800 ind3 family with $v -->
+        <marc:datafield tag="800" ind1="3" ind2="">
+            <marc:subfield code="a">Clark family</marc:subfield>
+            <marc:subfield code="v">Fiction</marc:subfield>
+        </marc:datafield>
+        
+        <!-- 800 with source $2 FAST -->
+        <marc:datafield tag="800" ind1="0" ind2="">
+            <marc:subfield code="a">Dante Alighieri,</marc:subfield>
+            <marc:subfield code="d">1265-1321</marc:subfield>
+            <marc:subfield code="2">orcid</marc:subfield>       
+            <marc:subfield code="t">subfield t</marc:subfield>
+        </marc:datafield>
+        
+        <!-- 800 with source $2 GND -->
+        <marc:datafield tag="800" ind1="0" ind2="">
+            <marc:subfield code="a">Dante Alighieri,</marc:subfield>
+            <marc:subfield code="d">1265-1321</marc:subfield>
+            <marc:subfield code="2">gnd</marc:subfield>        
+            <marc:subfield code="t">subfield t</marc:subfield>
+        </marc:datafield>
+ 
+        <!-- 800 with $0 FAST id for person -->
+        <marc:datafield tag="800" ind1="1" ind2="">
+            <marc:subfield code="a">Bickford, Sarah Gammon,</marc:subfield>
+            <marc:subfield code="d">1855-1931</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01583751</marc:subfield>
+            <marc:subfield code="t">subfield t</marc:subfield>
+        </marc:datafield>
+        
+        <!-- 800 wih $0 IRI for subject as a whole  -->
+        <marc:datafield tag="800" ind1="1" ind2="">
+            <marc:subfield code="a">O'Neill, Eugene,</marc:subfield>
+            <marc:subfield code="d">1888-1953</marc:subfield>
+            <marc:subfield code="0">https://id.loc.gov/authorities/subjects/sh85094784</marc:subfield>
+        </marc:datafield>
         
         <!-- 800 with $1 for person, unapproved -->
         <marc:datafield tag="800" ind1="1" ind2="">
@@ -32,7 +90,7 @@
         </marc:datafield>
         
         <!-- 880s -->
-        <marc:datafield tag="880" ind1="1" ind2="4">
+        <marc:datafield tag="880" ind1="1" ind2="">
             <marc:subfield code="6">800-00</marc:subfield>
             <marc:subfield code="a">Test unlinked 880 person</marc:subfield>
             <marc:subfield code="t">Test unlinked 880 work</marc:subfield>

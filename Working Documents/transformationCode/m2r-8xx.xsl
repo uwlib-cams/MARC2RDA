@@ -30,14 +30,13 @@
     xmlns:uwf="http://universityOfWashington/functions" xmlns:fake="http://fakePropertiesForDemo"
     xmlns:uwmisc="http://uw.edu/all-purpose-namespace/" exclude-result-prefixes="marc ex uwf uwmisc"
     version="3.0">
-    <!-- CP: commented out while it doesn't exist -->
-    <!-- CP: also, need to add this file to m2r.xsl -->
-<!--    <xsl:include href="m2r-8xx-named.xsl"/>-->
     <xsl:import href="m2r-relators.xsl"/>
     <xsl:import href="m2r-iris.xsl"/>
     <xsl:import href="getmarc.xsl"/>
+    <!-- CP: commented out while it doesn't exist -->
+    <!-- CP: also, need to add this file to m2r.xsl -->
+<!--    <xsl:include href="m2r-8xx-named.xsl"/>-->
     <!-- field level templates - wor, exp, man, ite -->
-    
     <!-- Template: Main work to related work relationship -->
     <!-- CP: add 880s -->
     <xsl:template match="marc:datafield[@tag = '800'][marc:subfield[@code = 't']]
@@ -92,8 +91,10 @@
     </xsl:template>
     
     <!-- Template Here is Agent IRI -->
-    <xsl:template match="marc:datafield[@tag = '800'][marc:subfield[@code = 't']]
-        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '800-00'][marc:subfield[@code = 't']]"
+    <xsl:template match="marc:datafield[@tag = '800'][marc:subfield[@code = 't']] | marc:datafield[@tag = '810'] | marc:datafield[@tag = '811']
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '800-00']
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '810-00']
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '811-00']"
         mode="age" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:variable name="ap" select="uwf:agentAccessPoint(.)"/>
@@ -156,6 +157,34 @@
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:when>
+                    </xsl:choose>
+                </xsl:when>
+                <xsl:when test="@tag = '810' or @tag = '811' 
+                    or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '810'))
+                    or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '811'))">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+                    <xsl:choose>     
+                        <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Corporate Body') = 'True'">
+                            <rdaao:P50409 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
+                        </xsl:when>
+                        <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Corporate Body') = 'False'">
+                            <rdaao:P50375 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
+                        </xsl:when>
+                        <!-- else a nomen string is used directly -->
+                        <xsl:otherwise>
+                            <rdaad:P50375>
+                                <xsl:value-of select="$ap"/>
+                            </rdaad:P50375>
+                            <xsl:if test="starts-with(@tag, '6') and marc:subfield[@code = '6']">
+                                <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                                <xsl:for-each
+                                    select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                                    <rdaad:P50375>
+                                        <xsl:value-of select="uwf:agentAccessPoint(.)"/>
+                                    </rdaad:P50375>
+                                </xsl:for-each>
+                            </xsl:if>
+                        </xsl:otherwise>
                     </xsl:choose>
                 </xsl:when>
             </xsl:choose>
