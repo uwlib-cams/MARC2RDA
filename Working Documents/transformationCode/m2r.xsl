@@ -124,7 +124,7 @@
             <!-- if not an aggregate, proceed with transform -->
             <xsl:when test="$isAggregate = false()">
                 <!-- currently we are using the 001 control field to generate the baseIRI -->
-                <xsl:variable name="baseIRI" select="concat($BASE, marc:controlfield[@tag = '001'])"/>
+                <xsl:variable name="baseIRI" select="concat($BASE, translate(marc:controlfield[@tag='001'], ' ', ''))"/>
                 
                 <xsl:variable name="isReproduction" select="uwf:checkReproductions(.)"/>
                 
@@ -137,7 +137,7 @@
                 <rdf:Description rdf:about="{concat($baseIRI,'wor')}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
                     <rdawo:P10078 rdf:resource="{concat($baseIRI,'exp')}"/>
-                    <rdawd:P10002>{concat(marc:controlfield[@tag='001'],'wor')}</rdawd:P10002>
+                    <rdawd:P10002>{concat(translate(marc:controlfield[@tag='001'], ' ', ''),'wor')}</rdawd:P10002>
                     <xsl:apply-templates select="*" mode="wor">
                         <xsl:with-param name="baseIRI" select="$baseIRI"/>
                     </xsl:apply-templates>
@@ -151,7 +151,7 @@
                         <rdaeo:P20059 rdf:resource="{concat($baseIRI,'origMan')}"/>
                     </xsl:if>
                     <rdaeo:P20231 rdf:resource="{concat($baseIRI,'wor')}"/>
-                    <rdaed:P20002>{concat(marc:controlfield[@tag='001'],'exp')}</rdaed:P20002>
+                    <rdaed:P20002>{concat(translate(marc:controlfield[@tag='001'], ' ', ''),'exp')}</rdaed:P20002>
                     <xsl:apply-templates select="*" mode="exp">
                         <xsl:with-param name="baseIRI" select="$baseIRI"/>
                     </xsl:apply-templates>
@@ -213,7 +213,7 @@
                 <!-- *****ITEMS***** -->
                 <xsl:apply-templates select="*" mode="ite">
                     <xsl:with-param name="baseIRI" select="$baseIRI"/>
-                    <xsl:with-param name="controlNumber" select="marc:controlfield[@tag='001']"/>
+                    <xsl:with-param name="controlNumber" select="translate(marc:controlfield[@tag='001'], ' ', '')"/>
                 </xsl:apply-templates>
                 
                 <!-- *****NOMENS***** -->
@@ -255,7 +255,7 @@
             <!-- output records that were identified as aggregates in message -->
             <xsl:otherwise>
                 <xsl:message>
-                    <xsl:text>Record {marc:controlfield[@tag = '001']} ({position()}/{last()}) identified as aggregate and was not processed.</xsl:text>
+                    <xsl:text>Record {translate(marc:controlfield[@tag='001'], ' ', '')} ({position()}/{last()}) identified as aggregate and was not processed.</xsl:text>
                 </xsl:message>
             </xsl:otherwise>
         </xsl:choose>
