@@ -105,7 +105,7 @@
                 </xsl:if>
             </rdaid:P40028>
             <!-- only uses $5 from 500 fields not linked 880s -->
-            <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>
+            <xsl:copy-of select="uwf:s5Lookup(marc:subfield[@code = '5'])"/>
             <xsl:if test="(@tag = '500') and (marc:subfield[@code = '6'])">
                 <xsl:variable name="occNum" select="concat('500-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                 <xsl:for-each
@@ -155,7 +155,7 @@
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                 <rdaid:P40001>{concat($controlNumber, 'ite#', $genID)}</rdaid:P40001>
                 <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
-                <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>
+                <xsl:copy-of select="uwf:s5Lookup(marc:subfield[@code = '5'])"/>
                 <rdaid:P40028>
                     <xsl:value-of select="marc:subfield[@code = 'a']"/>
                 </rdaid:P40028>
@@ -313,7 +313,7 @@
                 <rdaid:P40001>{concat($controlNumber, 'ite#', $genID)}</rdaid:P40001>
                 <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
                 <xsl:if test="marc:subfield[@code = '5']">
-                    <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>    
+                    <xsl:copy-of select="uwf:s5Lookup(marc:subfield[@code = '5'])"/>    
                 </xsl:if>
                 <xsl:if test="marc:subfield[@code = 'a' or @code = 'b' or @code = 'c' or @code = 'd'
                     or @code = 'e' or @code = 'g' or @code = 'q' or @code = 'u']">
@@ -821,7 +821,7 @@
                 <rdaid:P40001>{concat($controlNumber, 'ite#', $genID)}</rdaid:P40001>
                 <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-                <xsl:copy-of select="uwf:S5lookup(.)"/>
+                <xsl:copy-of select="uwf:s5Lookup(.)"/>
                 <rdaid:P40028>
                    <xsl:value-of select="$aiu"/>
                 </rdaid:P40028>
@@ -862,7 +862,7 @@
             <rdaid:P40001>{concat($controlNumber, 'ite#', $genID)}</rdaid:P40001>
             <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
             <xsl:if test="marc:subfield[@code = '5']">
-                <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>
+                <xsl:copy-of select="uwf:s5Lookup(marc:subfield[@code = '5'])"/>
             </xsl:if>
             <xsl:if test="@ind1 != '0'">
                 <rdaid:P40050>
@@ -1067,7 +1067,7 @@
             <rdaid:P40001>{concat($controlNumber, 'ite#', $genID)}</rdaid:P40001>
             <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
             <xsl:if test="marc:subfield[@code = '5']">
-                <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>
+                <xsl:copy-of select="uwf:s5Lookup(marc:subfield[@code = '5'])"/>
             </xsl:if>
             <xsl:if test="@ind1 != '0'">
                 <rdaid:P40026>
@@ -1156,7 +1156,7 @@
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                 <rdaid:P40001>{concat($controlNumber,'ite#',$genID)}</rdaid:P40001>
                 <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
-                <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>
+                <xsl:copy-of select="uwf:s5Lookup(marc:subfield[@code = '5'])"/>
                 <rdaid:P40028>
                     <xsl:call-template name="F563-xx-au3"/>
                 </rdaid:P40028>
@@ -1235,7 +1235,7 @@
             <rdaid:P40001>{concat($controlNumber,'ite#',$genID)}</rdaid:P40001>
             <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
             <xsl:if test="marc:subfield[@code = '5']">
-                <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>
+                <xsl:copy-of select="uwf:s5Lookup(marc:subfield[@code = '5'])"/>
             </xsl:if>
             <xsl:if test="@ind1 != '0'">
                 <rdaid:P40028>
@@ -1372,7 +1372,7 @@
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                 <rdaid:P40001>{concat($controlNumber,'ite#',$genID)}</rdaid:P40001>
                 <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
-                <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>
+                <xsl:copy-of select="uwf:s5Lookup(marc:subfield[@code = '5'])"/>
                 <rdaid:P40028>
                     <xsl:text>Exhibition note: {marc:subfield[@code = 'a']}</xsl:text>
                     <xsl:if test="marc:subfield[@code = '3']">

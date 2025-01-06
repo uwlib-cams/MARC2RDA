@@ -59,7 +59,7 @@
     <xsl:key name="normCode" match="rdf:Description[rdaad:P50006]" use="rdaad:P50006"/>
     
     <!-- returns "is holding of" the minted IRI for the organization's collection if found, otherwise outputs comment -->
-    <xsl:function name="uwf:S5lookup" expand-text="yes">
+    <xsl:function name="uwf:s5Lookup" expand-text="yes">
         <xsl:param name="code5"/>
         <xsl:variable name="lowerCode5" select="lower-case($code5)"/>
         <xsl:variable name="lookup5" select="$lookup5Doc/key('normCode',$lowerCode5)/rdaad:P50006[@rdf:datatype='http://id.loc.gov/datatypes/orgs/normalized']"/>

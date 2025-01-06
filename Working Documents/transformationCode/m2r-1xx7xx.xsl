@@ -191,7 +191,7 @@
                 <rdaid:P40001>{concat($controlNumber,'ite#',$genID)}</rdaid:P40001>
                 <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
                 <xsl:if test="marc:subfield[@code = '5']">
-                    <xsl:copy-of select="uwf:S5lookup(marc:subfield[@code = '5'])"/>
+                    <xsl:copy-of select="uwf:s5Lookup(marc:subfield[@code = '5'])"/>
                 </xsl:if>
                 <xsl:copy-of select="$testItem"/>
             </rdf:Description>
