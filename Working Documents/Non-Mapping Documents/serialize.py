@@ -33,10 +33,10 @@ def serialize(file_path):
 
 
     def format_nt(g):
-        nt = g.serialize(format='nt')
+        nt = g.serialize(format='ntriples')
 
         path = file_path_noext + "." + "nt"
-        file = open(path, 'w')
+        file = open(path, 'w', encoding="utf-8")
         file.write(nt)
         file.close()
 
@@ -55,13 +55,13 @@ def serialize(file_path):
         
         jsonld = g.serialize(format='json-ld')
         path = file_path_noext + "." + "jsonld"
-        file = open(path, 'w')
+        file = open(path, 'w', encoding="utf-8")
         file.write(jsonld)
         file.close()
     
 # UNCOMMENT THE FORMATS YOU WOULD LIKE TO PRODUCE
     # format_rdf(g)
-    # format_nt(g)
+    format_nt(g)
     format_ttl(g)
     # format_jsonld(g)
 
