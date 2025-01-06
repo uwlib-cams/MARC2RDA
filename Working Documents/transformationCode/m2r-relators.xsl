@@ -448,6 +448,7 @@
                     </xsl:when>
                 </xsl:choose>
             </xsl:when>
+            <!-- inverse property -->
 <!--            <xsl:when test="$domain = 'agent'">
                 <xsl:choose>
                     <xsl:when test="starts-with($field/@tag, '1') or starts-with($field/@tag, '7')">
@@ -503,7 +504,6 @@
         <xsl:variable name="agentAP" select="uwf:agentAccessPoint(.)"/>
         
         <!-- namespace generated based on domain - this gives us the object namespace -->
-        <!-- are there cases where we will use a datatype instead of IRI? -->
         <xsl:variable name="ns-wemi">
             <xsl:choose>
                 <xsl:when test="starts-with($domain, 'work')">rdaw</xsl:when>
@@ -677,6 +677,7 @@
         </xsl:choose>
     </xsl:template>
 
+    <!-- NOT IN USE - used for inverse relationship from agent to WEMI -->
     <xsl:template name="handleInvRelator" expand-text="true">
         <xsl:param name="baseIRI"/>
         <xsl:param name="agentIRI"/>
