@@ -181,7 +181,7 @@
         <xsl:variable name="scheme" select="uwf:getSubjectSchemeCode(.)"/>
         <xsl:choose>
             <!-- no source of term -->
-            <xsl:when test="@ind2 = '4' or (( @ind2 = '7'  or @ind2 = ' ') and not(marc:subfield[@code = '2']))">
+            <xsl:when test="not(matches(@ind2, '[012356]')) and not(marc:subfield[@code = '2'])">
                 <xsl:choose>
                     <!-- no $0 or $1 to use, use datatype property and string value -->
                     <xsl:when test="starts-with(uwf:subjectIRI(., $scheme, $prefLabel), 'http://marc2rda.edu')">
