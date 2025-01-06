@@ -30,6 +30,7 @@
     
     <!-- Concept labels -->
     <!-- these vary by field. Each field has a label template that outputs the label based on the present subfields -->
+    <!-- most subfields are concatenated and then combined with $x, $y, and $z values separated by two dashes -->
     
     <xsl:template name="F600-label" expand-text="yes">
         <xsl:variable name="label">
@@ -195,7 +196,7 @@
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
-            <!-- else we mint an IRI baed on the scheme and label-->
+            <!-- else there is a source - we mint an IRI baed on the source (scheme) and label-->
             <xsl:otherwise>
                 <rdaw:P10256 rdf:resource="{uwf:subjectIRI(., $scheme, $prefLabel)}"/>
             </xsl:otherwise>
@@ -207,7 +208,7 @@
     <xsl:template name="F6XX-xx-v">
         <xsl:choose>
             <!-- if no source, use datatype and string value -->
-            <xsl:when test="../@ind2 = '4' or ((../@ind2 = '7'  or ../@ind2 = ' ') and not(../marc:subfield[@code = '2']))">
+            <xsl:when test="not(matches(@ind2, '[012356]')) and not(marc:subfield[@code = '2'])">
                 <rdawd:P10004>
                     <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                 </rdawd:P10004>

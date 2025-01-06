@@ -44,6 +44,7 @@
         <xsl:param name="baseIRI"/>
         <xsl:call-template name="getmarc"/>
         <!-- store subject heading label in variable -->
+        <!-- label templates are located in m2r-6xx-named.xsl and concat subfields present in the field -->
         <xsl:variable name="prefLabel">
             <xsl:choose>
                 <xsl:when test="@tag = '600' or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '600'))">
@@ -88,6 +89,7 @@
                 </xsl:for-each>
             </xsl:if>
             <!-- $v is mapped separately as well -->
+            <!-- $v is not linked to 880s - at this point -->
             <xsl:for-each select="marc:subfield[@code = 'v']">
                 <xsl:call-template name="F6XX-xx-v"/>
             </xsl:for-each>
@@ -98,14 +100,17 @@
         <xsl:choose>
             <xsl:when test="@tag = '600' or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '600'))">
                 <xsl:choose>
+                    <!-- has subject person -->
                     <xsl:when test="@ind1 = '0' or @ind1 = '1' or @ind1 = '2'">
                         <rdawo:P10261 rdf:resource="{uwf:agentIRI($baseIRI, .)}"/>
                     </xsl:when>
+                    <!-- has subject family -->
                     <xsl:when test="@ind1 = '3'">
                         <rdawo:P10262 rdf:resource="{uwf:agentIRI($baseIRI, .)}"/>
                     </xsl:when>
                 </xsl:choose>
             </xsl:when>
+            <!-- has subject corporate body -->
             <xsl:otherwise>
                 <rdawo:P10263 rdf:resource="{uwf:agentIRI($baseIRI, .)}"/>
             </xsl:otherwise>
@@ -122,7 +127,7 @@
         | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '610-00']
         | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '611-00']"
         mode="con" expand-text="yes">
-        <!-- we only mint a concept if there are qualifier subfields, a source provided, and a minted IRI -->
+        <!-- we only mint a concept if there are qualifier subfields (v, x, y, z), a source provided (ind2 or $2), and a minted IRI (no $0 or $1) -->
         <xsl:if test="marc:subfield[@code = 'v'] or marc:subfield[@code = 'x'] 
             or marc:subfield[@code = 'y'] or marc:subfield[@code = 'z']">
             <xsl:if test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
@@ -185,14 +190,19 @@
         <xsl:param name="baseIRI"/>
         <xsl:variable name="ap" select="uwf:agentAccessPoint(.)"/>
         <xsl:variable name="source" select="uwf:getSubjectSchemeCode(.)"/>
+        <!-- rdf:Description for agent -->
         <rdf:Description rdf:about="{uwf:agentIRI($baseIRI, .)}">
             <xsl:call-template name="getmarc"/>
             <xsl:choose>
                 <xsl:when test="@tag = '600' or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '600'))">
                     <xsl:choose>
+                        <!-- person -->
                         <xsl:when test="@ind1 = '0' or @ind1 = '1' or @ind1 = '2'">
                             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
                             <xsl:choose>
+                                <!-- if there's a source, mint a nomen -->
+                                <!-- (if there are linked 880s, these appear as 'equivalent' nomen text
+                                    they are not handled here in the agent template) -->
                                 <xsl:when test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
                                     <xsl:choose>
                                         <xsl:when test="uwf:s2EntityTest($source, 'Person') = 'True'">
@@ -203,10 +213,12 @@
                                         </xsl:otherwise>
                                     </xsl:choose>
                                 </xsl:when>
+                                <!-- else use string value -->
                                 <xsl:otherwise>
                                     <rdaad:P50377>
                                         <xsl:value-of select="$ap"/>
                                     </rdaad:P50377>
+                                    <!-- if string value, then also include any linked 880 string values -->
                                     <xsl:if test="starts-with(@tag, '6') and marc:subfield[@code = '6']">
                                         <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                                         <xsl:for-each
@@ -219,6 +231,7 @@
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:when>
+                        <!-- family -->
                         <xsl:when test="@ind1 = '3'">
                             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10008"/>
                             <xsl:choose>
@@ -251,6 +264,7 @@
                         <xsl:otherwise/>
                     </xsl:choose>
                 </xsl:when>
+                <!-- corporate body -->
                 <xsl:when test="@tag = '610' or @tag = '611' 
                     or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '610'))
                     or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '611'))">
@@ -281,6 +295,7 @@
                             </xsl:if>
                         </xsl:otherwise>
                     </xsl:choose>
+                    <!-- if it's a meeting at type of corporate body -->
                     <xsl:if test="@tag = '611'">
                         <rdaad:P50237>
                             <xsl:text>Meeting</xsl:text>
@@ -288,6 +303,8 @@
                     </xsl:if>
                 </xsl:when>
             </xsl:choose>
+            <!-- if there are no qualifiers (v,x,y,z) then any $0s or $1s that were not approved can be retained as identifiers
+                 uwf:agentIdentifiers is located in m2r-iris.xsl -->
             <xsl:if test="not(marc:subfield[@code = 'v']) and not(marc:subfield[@code = 'x'])
                 and not(marc:subfield[@code = 'y']) and not(marc:subfield[@code = 'z'])">
                 <xsl:copy-of select="uwf:agentIdentifiers(.)"/>
@@ -303,6 +320,7 @@
         mode="relWor" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:variable name="source" select="uwf:getSubjectSchemeCode(.)"/>
+        <!-- rdf:Description for related work when $t is present in 600, 610, 611 + 880s -->
         <rdf:Description rdf:about="{uwf:relWorkIRI($baseIRI, .)}">
             <xsl:call-template name="getmarc"/>
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -332,6 +350,7 @@
                     </xsl:if>
                 </xsl:otherwise>
             </xsl:choose>
+            <!-- agent from the field also gets related to the work -->
             <xsl:choose>
                 <xsl:when test="(@tag = '600' or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '600'))) and @ind1 != '3'">
                     <rdawo:P10312 rdf:resource="{uwf:agentIRI($baseIRI, .)}"/>
@@ -346,6 +365,7 @@
                 </xsl:when>
                 <xsl:otherwise/>
             </xsl:choose>
+            <!-- retain unapproved $0s and $1s as identifiers -->
             <xsl:if test="not(marc:subfield[@code = 'v']) and not(marc:subfield[@code = 'x'])
                 and not(marc:subfield[@code = 'y']) and not(marc:subfield[@code = 'z'])">
                 <xsl:copy-of select="uwf:workIdentifiers(.)"/>
