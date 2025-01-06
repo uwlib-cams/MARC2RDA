@@ -508,7 +508,7 @@
     
     <xsl:template name="F008-c15-17">
         <xsl:param name="char15-17"/>
-        <xsl:if test="$char15-17 != '   ' and $char15-17 != '|||'">
+        <xsl:if test="$char15-17 != '   ' and $char15-17 != '|||' and not(starts-with($char15-17, ' '))">
             <rdamo:P30279 rdf:resource="{normalize-space(concat('http://id.loc.gov/vocabulary/countries/', $char15-17))}"/>
         </xsl:if>
     </xsl:template>
