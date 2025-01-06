@@ -125,7 +125,7 @@
         <!-- we only mint a concept if there are qualifier subfields, a source provided, and a minted IRI -->
         <xsl:if test="marc:subfield[@code = 'v'] or marc:subfield[@code = 'x'] 
             or marc:subfield[@code = 'y'] or marc:subfield[@code = 'z']">
-            <xsl:if test="@ind2 != '4'">
+            <xsl:if test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
                 <xsl:variable name="prefLabel">
                     <xsl:choose>
                         <xsl:when test="@tag = '600'">
@@ -193,7 +193,7 @@
                         <xsl:when test="@ind1 = '0' or @ind1 = '1' or @ind1 = '2'">
                             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
                             <xsl:choose>
-                                <xsl:when test="@ind2 != '4'">
+                                <xsl:when test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
                                     <xsl:choose>
                                         <xsl:when test="uwf:s2EntityTest($source, 'Person') = 'True'">
                                             <rdaao:P50411 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
@@ -222,7 +222,7 @@
                         <xsl:when test="@ind1 = '3'">
                             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10008"/>
                             <xsl:choose>
-                                <xsl:when test="@ind2 != '4'">
+                                <xsl:when test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
                                     <xsl:choose>
                                         <xsl:when test="uwf:s2EntityTest($source, 'Family') = 'True'">
                                             <rdaao:P50409 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
@@ -256,7 +256,7 @@
                     or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '611'))">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
                     <xsl:choose>
-                        <xsl:when test="@ind2 != '4'">
+                        <xsl:when test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
                             <xsl:choose>
                                 <xsl:when test="uwf:s2EntityTest($source, 'Corporate Body') = 'True'">
                                     <rdaao:P50407 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
@@ -302,7 +302,7 @@
             <xsl:call-template name="getmarc"/>
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
             <xsl:choose>
-                <xsl:when test="@ind2 != '4'">
+                <xsl:when test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
                     <xsl:choose>
                         <xsl:when test="uwf:s2EntityTest($source, 'Work') = 'True'">
                             <rdawo:P10331 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'worNom')}"/>
@@ -385,7 +385,7 @@
                 </xsl:when>
             </xsl:choose>
         </xsl:variable>
-        <xsl:if test="@ind2 != '4'">
+        <xsl:if test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
             <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'ageNom')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
@@ -477,7 +477,7 @@
         mode="con" expand-text="yes">
         <!-- if v, x, y, z and source is provided, mint a concept -->
         <xsl:if test="marc:subfield[@code = 'v'] or marc:subfield[@code = 'x'] or marc:subfield[@code = 'y'] or marc:subfield[@code = 'z']">
-            <xsl:if test="@ind2 != '4'">
+            <xsl:if test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
                 <xsl:variable name="prefLabel">
                     <xsl:call-template name="F630-label"/>
                 </xsl:variable>
@@ -518,7 +518,7 @@
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
             <xsl:choose>
                 <!-- if there is a source, mint a nomen -->
-                <xsl:when test="@ind2 != '4'">
+                <xsl:when test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
                     <xsl:choose>
                         <!-- if an approved source, it is an authorized access point -->
                         <xsl:when test="uwf:s2EntityTest(uwf:getSubjectSchemeCode(.), 'Work') = 'True'">
@@ -559,7 +559,7 @@
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <!-- if there is a source, mint a nomen -->
-        <xsl:if test="@ind2 != '4'">
+        <xsl:if test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
             <xsl:variable name="apWor" select="uwf:relWorkAccessPoint(.)"/>
             <xsl:variable name="scheme" select="uwf:getSubjectSchemeCode(.)"/>
             <xsl:variable name="prefLabel">
@@ -620,7 +620,7 @@
     
     <xsl:template match="marc:datafield[@tag = '647'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '647-00']"
         mode="con" expand-text="yes">
-        <xsl:if test="@ind2 != '4'">
+        <xsl:if test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
             <xsl:variable name="prefLabel">
                 <xsl:call-template name="F647-label"/>
             </xsl:variable>
@@ -686,7 +686,7 @@
     
     <xsl:template match="marc:datafield[@tag = '648'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '648-00']"
         mode="con" expand-text="yes">
-        <xsl:if test="@ind2 != '4'">
+        <xsl:if test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
             <xsl:variable name="prefLabel">
                 <xsl:call-template name="F648-label"/>
             </xsl:variable>
@@ -723,7 +723,7 @@
             <rdf:Description rdf:about="{uwf:timespanIRI($baseIRI, ., marc:subfield[@code = 'a'])}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
                 <xsl:choose>
-                    <xsl:when test="@ind2 != '4'">
+                    <xsl:when test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
                         <xsl:choose>
                             <xsl:when test="uwf:s2EntityTest(uwf:getSubjectSchemeCode(.), 'Timespan') = 'True'">
                                 <rdato:P70047 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'timNom')}"/>
@@ -761,7 +761,7 @@
         match="marc:datafield[@tag = '648'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '648-00']"
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
-        <xsl:if test="@ind2 != '4'">
+        <xsl:if test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
             <xsl:variable name="prefLabel">
                 <xsl:call-template name="F648-label"/>
             </xsl:variable> 
@@ -833,7 +833,7 @@
     </xsl:template>
     <xsl:template match="marc:datafield[@tag = '650'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '650-00']"
         mode="con" expand-text="yes">
-        <xsl:if test="@ind2 != '4'">
+        <xsl:if test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
             <xsl:variable name="prefLabel">
                 <xsl:call-template name="F650-label"/>
             </xsl:variable>
@@ -915,7 +915,7 @@
     
     <xsl:template match="marc:datafield[@tag = '651'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '651-00']"
         mode="con" expand-text="yes">
-        <xsl:if test="@ind2 != '4'">
+        <xsl:if test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
             <xsl:if test="marc:subfield[@code = 'v'] or marc:subfield[@code = 'x'] 
                 or marc:subfield[@code = 'y'] or marc:subfield[@code = 'z']">
                 <xsl:variable name="prefLabel">
@@ -970,7 +970,7 @@
         <rdf:Description rdf:about="{uwf:placeIRI($baseIRI, .,  $ap, $scheme)}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
             <xsl:choose>
-                <xsl:when test="@ind2 != '4'">
+                <xsl:when test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
                     <xsl:choose>
                         <xsl:when test="uwf:s2EntityTest($scheme, 'Place') = 'True'">
                             <rdapo:P70045 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'plaNom')}"/>
@@ -1016,7 +1016,7 @@
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:variable name="scheme" select="uwf:getSubjectSchemeCode(.)"/>
-        <xsl:if test="@ind2 != '4'">
+        <xsl:if test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
             <xsl:variable name="ap">
                 <xsl:variable name="placename">
                     <xsl:choose>
@@ -1186,7 +1186,7 @@
             <xsl:call-template name="F655-label"/>
         </xsl:variable>
         <xsl:choose>
-            <xsl:when test="@ind2 = '4'">
+            <xsl:when test="not(matches(@ind2, '[012356]')) and not(marc:subfield[@code = '2'])">
                 <rdawd:P10004>
                     <xsl:value-of select="$prefLabel"/>
                 </rdawd:P10004>
@@ -1213,7 +1213,7 @@
         <xsl:variable name="prefLabel">
             <xsl:call-template name="F655-label"/>
         </xsl:variable>
-        <xsl:if test="@ind2 != '4'">
+        <xsl:if test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
             <xsl:variable name="scheme" select="uwf:getSubjectSchemeCode(.)"/>
             <xsl:if test="starts-with(uwf:subjectIRI(., $scheme, $prefLabel), $BASE)">
                 <rdf:Description rdf:about="{uwf:subjectIRI(., $scheme, $prefLabel)}">

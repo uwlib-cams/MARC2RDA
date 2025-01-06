@@ -460,7 +460,7 @@
                             </xsl:when>
                             <!-- if IRI can't be retrieved use concept IRI -->
                             <xsl:otherwise>
-                                <xsl:value-of select="uwf:conceptIRI($scheme, $value)"/>
+                                <xsl:value-of select="uwf:conceptIRI($scheme, replace($value, '--', ''))"/>
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:when>
