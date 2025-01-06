@@ -299,6 +299,11 @@
                             </xsl:if>
                         </xsl:otherwise>
                     </xsl:choose>
+                    <xsl:if test="@tag = '111' or @tag = '711'">
+                        <rdaad:P50237>
+                            <xsl:text>Meeting</xsl:text>
+                        </rdaad:P50237>
+                    </xsl:if>
                 </xsl:when>
                 <xsl:otherwise/>
             </xsl:choose>
@@ -517,6 +522,11 @@
                                 </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
+                        <xsl:if test="@tag = '711'">
+                            <rdaad:P50237>
+                                <xsl:text>Meeting</xsl:text>
+                            </rdaad:P50237>
+                        </xsl:if>
                     </xsl:when>
                     <xsl:otherwise/>
                 </xsl:choose>

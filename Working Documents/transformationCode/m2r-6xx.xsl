@@ -128,13 +128,13 @@
             <xsl:if test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
                 <xsl:variable name="prefLabel">
                     <xsl:choose>
-                        <xsl:when test="@tag = '600'">
+                        <xsl:when test="@tag = '600' or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '600'))">
                             <xsl:call-template name="F600-label"/>
                         </xsl:when>
-                        <xsl:when test="@tag = '610'">
+                        <xsl:when test="@tag = '610' or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '610'))">
                             <xsl:call-template name="F610-label"/>
                         </xsl:when>
-                        <xsl:when test="@tag = '611'">
+                        <xsl:when test="@tag = '611' or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '611'))">
                             <xsl:call-template name="F611-label"/>
                         </xsl:when>
                     </xsl:choose>
@@ -143,7 +143,7 @@
                 <xsl:if test="starts-with(uwf:subjectIRI(., $scheme, $prefLabel), $BASE)">
                     <rdf:Description rdf:about="{uwf:subjectIRI(., $scheme, $prefLabel)}">
                         <xsl:copy-of select="uwf:fillConcept($prefLabel, $scheme, '', @tag)"/>
-                        <!-- if there are linked 880s, these are inclued -->
+                        <!-- if there are linked 880s, these are included -->
                         <xsl:if test="starts-with(@tag, '6') and marc:subfield[@code = '6']">
                             <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                             <xsl:for-each
@@ -281,6 +281,11 @@
                             </xsl:if>
                         </xsl:otherwise>
                     </xsl:choose>
+                    <xsl:if test="@tag = '611'">
+                        <rdaad:P50237>
+                            <xsl:text>Meeting</xsl:text>
+                        </rdaad:P50237>
+                    </xsl:if>
                 </xsl:when>
             </xsl:choose>
             <xsl:if test="not(marc:subfield[@code = 'v']) and not(marc:subfield[@code = 'x'])
