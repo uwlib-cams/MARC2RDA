@@ -19,6 +19,16 @@
     <xsl:import href="m2r-functions.xsl"/>
     <xsl:import href="m2r-iris.xsl"/>
     
+    <xsl:template match="marc:datafield[@tag = '300'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '300']"
+        mode="man" expand-text="yes">
+        <xsl:param name="type"/>
+        <rdamd:P30182>
+            <xsl:value-of select="marc:subfield[@code = '3'] | marc:subfield[@code = 'a'] 
+                | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'e']
+                | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g']" separator=" "/>
+        </rdamd:P30182>
+    </xsl:template>
+    
     <xsl:template match="marc:datafield[@tag = '306'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '306']"
         mode="exp" expand-text="yes">
         <xsl:call-template name="getmarc"/>

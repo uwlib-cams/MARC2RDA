@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">300-test1</marc:controlfield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">vii, 216 pages ;</marc:subfield>
+            <marc:subfield code="c">23 cm.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">171 pages :</marc:subfield>
+            <marc:subfield code="b">illustrations ;</marc:subfield>
+            <marc:subfield code="c">24 cm.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 online resource :</marc:subfield>
+            <marc:subfield code="b">text file, PDF</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 score (96 pages) + 1 part (35 pages) :</marc:subfield>
+            <marc:subfield code="b">facsimiles, portrait ;</marc:subfield>
+            <marc:subfield code="c">31 cm +</marc:subfield>
+            <marc:subfield code="e">2 CD-ROMs (4 3/4 in.)</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>
