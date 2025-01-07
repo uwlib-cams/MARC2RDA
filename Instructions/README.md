@@ -67,6 +67,7 @@ _Last updated 27 November 2024_
  - In order to achieve an accurate mapping, you may need to delete rows that don't properly translate from MARC to RDA, duplicate rows, write in conditions, include more than one RDA property, and/or combine subfields into one row if they map to a single RDA element.  
  - If many subfields need to be combined to produce a value for a single RDA element, list those separate subfields in the order they should appear using "MARCSubfield" using ", " and make a transformation note to indicate exactly what the resulting value should look like.
  - If there are new additions to [MARC21 Format for Bibliographic Data](https://www.loc.gov/marc/bibliographic/), which are indicated in red font, add them to the spreadsheet.
+ - Mapping Spreadsheets that are finished should move rows with [final statuses](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#status) other than "done" to new sheets in the workbook to reduce redundancy and improve readability. E.g., move deleted rows to a new “Deleted” sheet within the workbook
  - Consistently use operators:
 ### Operators
 | Operator | Example | Details |
