@@ -1005,6 +1005,32 @@
     
     
     <!-- Attributes -->
+    
+    <xsl:template name="FX00-x0-ab">
+        <xsl:if test="marc:subfield[@code = 'a'] or marc:subfield[@code = 'b']">
+            <rdaad:P50111>
+                <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']"/>
+            </rdaad:P50111>
+        </xsl:if>
+    </xsl:template>
+
+    <xsl:template name="FX00-x3-c">
+        <xsl:for-each select="marc:subfield[@code = 'c']">
+            <rdaad:P50059>
+                <xsl:value-of select="marc:subfield[@code = 'c']"/>
+            </rdaad:P50059>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template name="FX1X-xx-c">
+        <xsl:for-each select="marc:subfield[@code = 'c']">
+            <rdaad:P50024>
+                <xsl:value-of select="normalize-space(translate(., '():', ''))"/>
+            </rdaad:P50024>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <!-- x0 or x1 -->
     <xsl:template name="FX00-x1-d">
         <xsl:for-each select="marc:subfield[@code = 'd']">
             <rdaad:P50347>
@@ -1042,8 +1068,39 @@
                             <xsl:value-of select="replace(normalize-space(substring-after(., 'died')),  '\.$', '')"/>
                         </rdaad:P50120>
                     </xsl:if>
+                    <xsl:if test="contains(normalize-space(.), 'active')">
+                        <rdaad:P50098>
+                            <xsl:value-of select="replace(normalize-space(substring-after(., 'active')), '\.$', '')"/>
+                        </rdaad:P50098>
+                    </xsl:if>
+                    <xsl:if test="contains(normalize-space(.), 'fl.')">
+                        <rdaad:P50098>
+                            <xsl:value-of select="replace(normalize-space(substring-after(., 'fl.')), '\.$', '')"/>
+                        </rdaad:P50098>
+                    </xsl:if>
+                    <xsl:if test="contains(normalize-space(.), 'cent.') or contains(normalize-space(.), 'century')">
+                        <rdaad:P50098>
+                            <xsl:value-of select="."/>
+                        </rdaad:P50098>
+                    </xsl:if>
                 </xsl:otherwise>
             </xsl:choose>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template name="FX00-x3-d">
+        <xsl:for-each select="marc:subfield[@code = 'd']">
+            <rdaad:P50355>
+                <xsl:value-of select="."/>
+            </rdaad:P50355>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template name="FX1X-xx-d">
+        <xsl:for-each select="marc:subfield[@code = 'd']">
+            <rdaad:P50039>
+                <xsl:value-of select="normalize-space(translate(., '():', ''))"/>
+            </rdaad:P50039>
         </xsl:for-each>
     </xsl:template>
     

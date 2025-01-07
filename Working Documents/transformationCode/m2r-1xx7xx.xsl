@@ -271,6 +271,9 @@
                             </xsl:choose>
                             <!-- If we minted the IRI - add additional details -->
                             <xsl:if test="starts-with(uwf:agentIRI($baseIRI, .), $BASE)">
+                                <xsl:if test="@ind1 = '0'">
+                                    <xsl:call-template name="FX00-x0-ab"/>
+                                </xsl:if>
                                 <xsl:call-template name="FX00-x1-d"/>
                                 <xsl:call-template name="FX00-x1-q"/>
                             </xsl:if>
@@ -300,6 +303,11 @@
                                     </xsl:if>
                                 </xsl:otherwise>
                             </xsl:choose>
+                            <!-- If we minted the IRI - add additional details -->
+                            <xsl:if test="starts-with(uwf:agentIRI($baseIRI, .), $BASE)">
+                                <xsl:call-template name="FX00-x3-c"/>
+                                <xsl:call-template name="FX00-x3-d"/>
+                            </xsl:if>
                         </xsl:when>
                         <xsl:otherwise/>
                     </xsl:choose>
@@ -333,6 +341,11 @@
                         <rdaad:P50237>
                             <xsl:text>Meeting</xsl:text>
                         </rdaad:P50237>
+                    </xsl:if>
+                    <!-- If we minted the IRI - add additional details -->
+                    <xsl:if test="starts-with(uwf:agentIRI($baseIRI, .), $BASE)">
+                        <xsl:call-template name="FX1X-xx-c"/>
+                        <xsl:call-template name="FX1X-xx-d"/>
                     </xsl:if>
                 </xsl:when>
                 <xsl:otherwise/>

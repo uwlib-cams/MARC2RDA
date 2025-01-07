@@ -10,6 +10,10 @@
             <marc:subfield code="q">(Hilda Doolittle),</marc:subfield>
             <marc:subfield code="d">1886-1961</marc:subfield>
         </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test1</marc:controlfield>
         <marc:datafield tag="100" ind1="1" ind2=" ">
             <marc:subfield code="a">Gresham, G. A.</marc:subfield>
             <marc:subfield code="q">(Geoffrey Austin)</marc:subfield>
@@ -17,7 +21,7 @@
     </marc:record>
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
-        <marc:controlfield tag="001">relator-test0</marc:controlfield>
+        <marc:controlfield tag="001">relator-test2</marc:controlfield>
         <marc:datafield tag="100" ind1="1" ind2=" ">
             <marc:subfield code="a">Churchill, Winston,</marc:subfield>
             <marc:subfield code="c">Sir,</marc:subfield>
@@ -26,7 +30,7 @@
     </marc:record>
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
-        <marc:controlfield tag="001">relator-test1</marc:controlfield>
+        <marc:controlfield tag="001">relator-test3</marc:controlfield>
         <marc:datafield tag="100" ind1="1" ind2=" ">
             <marc:subfield code="a">Ward, Humphrey,</marc:subfield>
             <marc:subfield code="c">Mrs.,</marc:subfield>
@@ -35,7 +39,7 @@
     </marc:record>
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
-        <marc:controlfield tag="001">relator-test2</marc:controlfield>
+        <marc:controlfield tag="001">relator-test4</marc:controlfield>
         <marc:datafield tag="100" ind1="1" ind2=" ">
             <marc:subfield code="a">Boulanger, John,</marc:subfield>
             <marc:subfield code="d">1965-</marc:subfield>
@@ -43,7 +47,7 @@
     </marc:record>
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
-        <marc:controlfield tag="001">relator-test1</marc:controlfield>
+        <marc:controlfield tag="001">relator-test5</marc:controlfield>
         <marc:datafield tag="100" ind1="1" ind2=" ">
             <marc:subfield code="a">Luckombe, Philip</marc:subfield>
             <marc:subfield code="d">d. 1803</marc:subfield>
@@ -51,7 +55,7 @@
     </marc:record>
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
-        <marc:controlfield tag="001">relator-test1</marc:controlfield>
+        <marc:controlfield tag="001">relator-test6</marc:controlfield>
         <marc:datafield tag="100" ind1="0" ind2=" ">
             <marc:subfield code="a">Piri, Reis</marc:subfield>
             <marc:subfield code="d">d. 1554?</marc:subfield>
@@ -59,10 +63,33 @@
     </marc:record>
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
-        <marc:controlfield tag="001">relator-test1</marc:controlfield>
+        <marc:controlfield tag="001">relator-test7</marc:controlfield>
         <marc:datafield tag="100" ind1="1" ind2=" ">
             <marc:subfield code="a">Smith, John</marc:subfield>
             <marc:subfield code="d">1882 Aug. 5-</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test8</marc:controlfield>
+        <marc:datafield tag="111" ind1="2" ind2=" ">
+            <marc:subfield code="a">International Conference on Pipelines and Trenchless Technology</marc:subfield>
+            <marc:subfield code="d">(2014 :</marc:subfield>
+            <marc:subfield code="c">Xiamen, Xiamen Shi, China)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="711" ind1="2" ind2=" ">
+            <marc:subfield code="a">Israel Seminar on Geometrical Aspects of Functional Analysis</marc:subfield>
+            <marc:subfield code="d">(2011-2013)</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test9</marc:controlfield>
+        <marc:datafield tag="111" ind1="2" ind2=" ">
+            <marc:subfield code="a">International Conference on Rewriting Techniques and Applications</marc:subfield>
+            <marc:subfield code="n">(17th :</marc:subfield>
+            <marc:subfield code="d">2006 :</marc:subfield>
+            <marc:subfield code="c">Seattle, Wash.)</marc:subfield>
         </marc:datafield>
     </marc:record>
 </marc:collection>
