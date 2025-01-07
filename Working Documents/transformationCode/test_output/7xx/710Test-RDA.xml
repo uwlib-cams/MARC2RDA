@@ -4,9 +4,9 @@
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test1exp"/><!--rdawo:P10078 = has expression of work-->
       <rdawd:P10002>relator-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <rdawo:P10550 rdf:resource="http://isni.org/isni/0000000417635731"/><!--rdawo:P10550 = has issuing corporate body-->
-      <rdawo:P10550 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d22e15"/><!--rdawo:P10550 = has issuing corporate body-->
-      <rdawo:P10008 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d22e46"/><!--rdawo:P10008 = has production company-->
-      <rdawo:P10008 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d22e46"/><!--rdawo:P10008 = has production company-->
+      <rdawo:P10550 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d21e15"/><!--rdawo:P10550 = has issuing corporate body-->
+      <rdawo:P10008 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d21e46"/><!--rdawo:P10008 = has production company-->
+      <rdawo:P10008 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d21e46"/><!--rdawo:P10008 = has production company-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -17,37 +17,44 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test1exp"/><!--rdamo:P30139 = has expression manifested-->
-      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test1age#d22e25-->
-      <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d22e25"/><!--rdamo:P30270 = has related corporate body of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test1age#d21e25-->
+      <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d21e25"/><!--rdamo:P30270 = has related corporate body of manifestation-->
       <!--Default relationship property used for http://marc2rda.edu/fake/naf/age#royalshakespearecompany-->
       <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/naf/age#royalshakespearecompany"/><!--rdamo:P30270 = has related corporate body of manifestation-->
       <!--Default relationship property used for http://marc2rda.edu/fake/naf/age#prodi%EF%B8%A0u%EF%B8%A1serskai%EF%B8%A0a%EF%B8%A1firmaigori%EF%B8%A0a%EF%B8%A1tolstunova-->
       <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/naf/age#prodi%EF%B8%A0u%EF%B8%A1serskai%EF%B8%A0a%EF%B8%A1firmaigori%EF%B8%A0a%EF%B8%A1tolstunova"/><!--rdamo:P30270 = has related corporate body of manifestation-->
-      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/relator-test1wor#d22e75"/><!--rdamo:P30265 = has related work of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/naf/age#test880-->
+      <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/naf/age#test880"/><!--rdamo:P30270 = has related corporate body of manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/relator-test1wor#d21e82"/><!--rdamo:P30265 = has related work of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1ageNom#d22e37">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1ageNom#d21e37">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Royal Shakespeare Company</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1ageNom#d22e60">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1ageNom#d21e60">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Prodi︠u︡serskai︠a︡ firma Igori︠a︡ Tolstunova</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/><!--rdan:P80069 = has scheme of nomen-->
       <rdand:P80113>Продюсерская фирма Игоря Толстунова</rdand:P80113><!--rdand:P80113 = is equivalent to-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1ageNom#d21e74">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Test, 880</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://isni.org/isni/0000000417635731">
       <fake:marcfield>F710 2# $a Universitas Sebelas Maret, $e issuing body $1 http://isni.org/isni/0000000417635731</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
       <rdaad:P50375>Universitas Sebelas Maret</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d22e15">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d21e15">
       <fake:marcfield>F710 2# $a Derz͡havne upravlinni͡a spravamy (Kyïv, Ukraine). $b Naukovo-praktychnyĭ t͡sentr profilaktychnoï ta klinichnoï medyt͡syny, $e issuing body $1 http://www.wikidata.org/entity/Q16708730</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
       <rdaad:P50375>Derz͡havne upravlinni͡a spravamy (Kyïv, Ukraine). Naukovo-praktychnyĭ t͡sentr profilaktychnoï ta klinichnoï medyt͡syny</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
       <rdaad:P50006>http://www.wikidata.org/entity/Q16708730</rdaad:P50006><!--rdaad:P50006 = has identifier for corporate body-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d22e25">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d21e25">
       <fake:marcfield>F710 2# $a International Perimetric Society. $b Meeting $n (15th : $d 2002 : $c Stratford-upon-Avon, England)</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
       <rdaad:P50375>International Perimetric Society. Meeting (15th : 2002 : Stratford-upon-Avon, England)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
@@ -55,10 +62,10 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/age#royalshakespearecompany">
       <fake:marcfield>F710 2# $a Royal Shakespeare Company. $1 http://testiri.edu/1234 $2 naf</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/relator-test1ageNom#d22e37"/><!--rdaao:P50407 = has authorized access point for corporate body-->
+      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/relator-test1ageNom#d21e37"/><!--rdaao:P50407 = has authorized access point for corporate body-->
       <rdaad:P50006>http://testiri.edu/1234</rdaad:P50006><!--rdaad:P50006 = has identifier for corporate body-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d22e46">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d21e46">
       <fake:marcfield>F710 2# $6 880-13 $a Lenfilʹm, $e production company.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
       <rdaad:P50375>Lenfilʹm</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
@@ -67,17 +74,22 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/age#prodi%EF%B8%A0u%EF%B8%A1serskai%EF%B8%A0a%EF%B8%A1firmaigori%EF%B8%A0a%EF%B8%A1tolstunova">
       <fake:marcfield>F710 2# $6 880-17 $a Prodi︠u︡serskai︠a︡ firma Igori︠a︡ Tolstunova. $2 naf</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/relator-test1ageNom#d22e60"/><!--rdaao:P50407 = has authorized access point for corporate body-->
+      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/relator-test1ageNom#d21e60"/><!--rdaao:P50407 = has authorized access point for corporate body-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d22e75">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/age#test880">
+      <fake:marcfield>F880 2# $6 710-00 $a Test, 880 $2 naf</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/relator-test1ageNom#d21e74"/><!--rdaao:P50407 = has authorized access point for corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d21e82">
       <fake:marcfield>F710 2# $i Container of (work) $a Belarus Free Theatre (Theater group). $t Minsk, 2011.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
       <rdaad:P50375>Belarus Free Theatre (Theater group)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1wor#d22e75">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1wor#d21e82">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>d22e75wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10002>d21e82wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <rdawd:P10328>Belarus Free Theatre (Theater group). Minsk, 2011</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d22e75"/><!--rdawo:P10314 = has related corporate body of work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d21e82"/><!--rdawo:P10314 = has related corporate body of work-->
    </rdf:Description>
 </rdf:RDF>

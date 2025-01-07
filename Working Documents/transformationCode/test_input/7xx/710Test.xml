@@ -59,6 +59,12 @@
             <marc:subfield code="2">naf</marc:subfield>
         </marc:datafield>
         
+        <marc:datafield tag="880" ind1="2" ind2=" ">
+            <marc:subfield code="6">710-00</marc:subfield>
+            <marc:subfield code="a">Test, 880</marc:subfield>
+            <marc:subfield code="2">naf</marc:subfield>
+        </marc:datafield>
+        
         <!-- work -->
         <marc:datafield tag="710" ind1="2" ind2=" "> 
             <marc:subfield code="i">Container of (work)</marc:subfield>

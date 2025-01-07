@@ -178,21 +178,66 @@
     <!-- takes in the field number and returns the field type for lookup in relator table -->
     <!-- either 'X00', 'X10', or 'X11' -->
     <xsl:function name="uwf:fieldType">
-        <xsl:param name="fieldNum"/>
+        <xsl:param name="field"/>
         <xsl:choose>
-            <xsl:when test="($fieldNum = '100') or ($fieldNum = '600') or ($fieldNum = '700')" >
+            <xsl:when test="($field/@tag = '100') or ($field/@tag = '600') or ($field/@tag = '700')
+                or ($field/@tag = '880' and matches(substring($field/marc:subfield[@code = '6'], 1, 3), '[167]00'))">
                 <xsl:value-of select="'X00'"/>
             </xsl:when>
-            <xsl:when test="($fieldNum = '110') or ($fieldNum = '610') or ($fieldNum = '710')" >
+            <xsl:when test="($field/@tag = '110') or ($field/@tag = '610') or ($field/@tag = '710')
+                or ($field/@tag = '880' and matches(substring($field/marc:subfield[@code = '6'], 1, 3), '[167]10'))" >
                 <xsl:value-of select="'X10'"/>
             </xsl:when>
-            <xsl:when test="($fieldNum = '111') or ($fieldNum = '611') or ($fieldNum = '711')" >
+            <xsl:when test="($field/@tag = '111') or ($field/@tag = '611') or ($field/@tag = '711')
+                or ($field/@tag = '880' and matches(substring($field/marc:subfield[@code = '6'], 1, 3), '[167]11'))" >
                 <xsl:value-of select="'X11'"/>
             </xsl:when>
             <xsl:otherwise>
                 <!-- otherwise it's 720 -->
-                <xsl:value-of select="$fieldNum"/>
+                <xsl:value-of select="$field/@tag"/>
             </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
+    <xsl:function name="uwf:tagType">
+        <xsl:param name="field"/>
+        <xsl:choose>
+            <xsl:when test="$field/@tag = '100' or ($field/@tag = '880' and starts-with($field/marc:subfield[@code = '6'], '100'))">
+                <xsl:value-of select="'100'"/>
+            </xsl:when>
+            <xsl:when test="$field/@tag = '110' or ($field/@tag = '880' and starts-with($field/marc:subfield[@code = '6'], '110'))">
+                <xsl:value-of select="'110'"/>
+            </xsl:when>
+            <xsl:when test="$field/@tag = '111' or ($field/@tag = '880' and starts-with($field/marc:subfield[@code = '6'], '111'))">
+                <xsl:value-of select="'111'"/>
+            </xsl:when>
+            <xsl:when test="$field/@tag = '600' or ($field/@tag = '880' and starts-with($field/marc:subfield[@code = '6'], '600'))">
+                <xsl:value-of select="'600'"/>
+            </xsl:when>
+            <xsl:when test="$field/@tag = '610' or ($field/@tag = '880' and starts-with($field/marc:subfield[@code = '6'], '610'))">
+                <xsl:value-of select="'610'"/>
+            </xsl:when>
+            <xsl:when test="$field/@tag = '611' or ($field/@tag = '880' and starts-with($field/marc:subfield[@code = '6'], '611'))">
+                <xsl:value-of select="'611'"/>
+            </xsl:when>
+            <xsl:when test="$field/@tag = '700' or ($field/@tag = '880' and starts-with($field/marc:subfield[@code = '6'], '700'))">
+                <xsl:value-of select="'700'"/>
+            </xsl:when>
+            <xsl:when test="$field/@tag = '710' or ($field/@tag = '880' and starts-with($field/marc:subfield[@code = '6'], '710'))">
+                <xsl:value-of select="'710'"/>
+            </xsl:when>  
+            <xsl:when test="$field/@tag = '711' or ($field/@tag = '880' and starts-with($field/marc:subfield[@code = '6'], '711'))">
+                <xsl:value-of select="'711'"/>
+            </xsl:when>
+            <xsl:when test="$field/@tag = '800' or ($field/@tag = '880' and starts-with($field/marc:subfield[@code = '6'], '800'))">
+                <xsl:value-of select="'800'"/>
+            </xsl:when>
+            <xsl:when test="$field/@tag = '810' or ($field/@tag = '880' and starts-with($field/marc:subfield[@code = '6'], '810'))">
+                <xsl:value-of select="'810'"/>
+            </xsl:when>  
+            <xsl:when test="$field/@tag = '811' or ($field/@tag = '880' and starts-with($field/marc:subfield[@code = '6'], '811'))">
+                <xsl:value-of select="'811'"/>
+            </xsl:when>
         </xsl:choose>
     </xsl:function>
     
@@ -318,10 +363,11 @@
         <xsl:param name="domain"/>
         <xsl:param name="objIRI"/>
         <xsl:param name="objString"/>
+        <xsl:variable name="tag" select="uwf:tagType($field)"/>
         <xsl:choose>
             <xsl:when test="$domain = 'work'">
                 <xsl:choose>
-                    <xsl:when test="starts-with($field/@tag, '1')">
+                    <xsl:when test="starts-with($tag, '1')">
                         <!-- 1XX -->
                         <xsl:choose>
                             <xsl:when test="($fieldType = 'X00' and  ($field/@ind1 = '0' or $field/@ind1 = '1' or $field/@ind1 = '2'))">
@@ -352,7 +398,7 @@
             </xsl:when>
             <xsl:when test="$domain = 'manifestation'">
                 <xsl:choose>
-                    <xsl:when test="starts-with($field/@tag, '7') and not($field/marc:subfield[@code = '5'])">
+                    <xsl:when test="starts-with($tag, '7') and not($field/marc:subfield[@code = '5'])">
                         <!-- 7XX -->
                         <xsl:choose>
                             <xsl:when test="($fieldType = 'X00' and  ($field/@ind1 = '0' or $field/@ind1 = '1' or $field/@ind1 = '2'))">
@@ -401,7 +447,7 @@
             </xsl:when>
             <xsl:when test="$domain = 'item'">
                 <xsl:choose>
-                    <xsl:when test="starts-with($field/@tag, '7') and $field/marc:subfield[@code = '5']">
+                    <xsl:when test="starts-with($tag, '7') and $field/marc:subfield[@code = '5']">
                         <!-- 7XX -->
                         <xsl:choose>
                             <xsl:when test="($fieldType = 'X00' and  ($field/@ind1 = '0' or $field/@ind1 = '1' or $field/@ind1 = '2'))">
@@ -515,7 +561,7 @@
         </xsl:variable>
         
         <!-- fieldType is for lookup - see function uwf:fieldType() -->
-        <xsl:variable name="fieldType" select="uwf:fieldType(@tag)"/>
+        <xsl:variable name="fieldType" select="uwf:fieldType(.)"/>
         
         <!-- the indValue is based off field's ind1 to match lookup table - see function uwf:ind1Type()-->
         <xsl:variable name="indValue" select="uwf:ind1Type($fieldType, @ind1)"/>
@@ -692,7 +738,7 @@
         <xsl:variable name="ns-wemi" select="'rdaa'"/>
         
         <!-- fieldType is for lookup - see function uwf:fieldType() -->
-        <xsl:variable name="fieldType" select="uwf:fieldType(@tag)"/>
+        <xsl:variable name="fieldType" select="uwf:fieldType(.)"/>
         
         <!-- the indValue is based off field's ind1 to match lookup table - see function uwf:ind1Type()-->
         <xsl:variable name="indValue" select="uwf:ind1Type($fieldType, @ind1)"/>
@@ -946,13 +992,13 @@
                     </xsl:when>
                     <xsl:otherwise>
                         <!-- 7XXs had no 'joint' or 'jt' subfields -->
-                       <xsl:copy-of select="uwf:defaultAgentProp(., uwf:fieldType(@tag), $domain, $agentIRI, uwf:agentAccessPoint(.))"/>
+                       <xsl:copy-of select="uwf:defaultAgentProp(., uwf:fieldType(.), $domain, $agentIRI, uwf:agentAccessPoint(.))"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
             <xsl:otherwise>
                 <!-- no 7XX fields -->
-                <xsl:copy-of select="uwf:defaultAgentProp(., uwf:fieldType(@tag), $domain, $agentIRI, uwf:agentAccessPoint(.))"/>
+                <xsl:copy-of select="uwf:defaultAgentProp(., uwf:fieldType(.), $domain, $agentIRI, uwf:agentAccessPoint(.))"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>

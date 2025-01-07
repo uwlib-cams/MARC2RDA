@@ -33,14 +33,16 @@
          xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test0wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test0exp"/>
       <rdawd:P10002>relator-test0wor</rdawd:P10002>
-      <!--Default relationship property used for http://marc2rda.edu/fake/age/d20e6-->
-      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d20e6"/>
-      <!--Default relationship property used for http://marc2rda.edu/fake/age/d20e13-->
-      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d20e13"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test0age#d21e6-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/relator-test0age#d21e6"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test0age#d21e13-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/relator-test0age#d21e13"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test0exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test0man"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test0wor"/>
       <rdaed:P20002>relator-test0exp</rdaed:P20002>
    </rdf:Description>
@@ -48,7 +50,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test0exp"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d20e6">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test0age#d21e6">
       <fake:marcfield>F100 0# $a H. D. $q (Hilda Doolittle), $d 1886-1961</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>H. D. (Hilda Doolittle), 1886-1961</rdaad:P50377>
@@ -57,7 +59,7 @@
       <rdaad:P50120>1961</rdaad:P50120>
       <rdaad:P50115>Hilda Doolittle</rdaad:P50115>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d20e13">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test0age#d21e13">
       <fake:marcfield>F100 1# $a Gresham, G. A. $q (Geoffrey Austin)</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Gresham, G. A. (Geoffrey Austin)</rdaad:P50377>
@@ -65,12 +67,14 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test0wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test0exp"/>
       <rdawd:P10002>relator-test0wor</rdawd:P10002>
-      <!--Default relationship property used for http://marc2rda.edu/fake/age/d20e22-->
-      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d20e22"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test0age#d21e22-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/relator-test0age#d21e22"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test0exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test0man"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test0wor"/>
       <rdaed:P20002>relator-test0exp</rdaed:P20002>
    </rdf:Description>
@@ -78,22 +82,24 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test0exp"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d20e22">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test0age#d21e22">
       <fake:marcfield>F100 1# $a Churchill, Winston, $c Sir, $d 1874-1965.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Churchill, Winston, Sir, 1874-1965.</rdaad:P50377>
+      <rdaad:P50377>Churchill, Winston, Sir, 1874-1965</rdaad:P50377>
       <rdaad:P50347>1874-1965.</rdaad:P50347>
       <rdaad:P50121>1874</rdaad:P50121>
       <rdaad:P50120>1965</rdaad:P50120>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test1exp"/>
       <rdawd:P10002>relator-test1wor</rdawd:P10002>
-      <!--Default relationship property used for http://marc2rda.edu/fake/age/d20e33-->
-      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d20e33"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test1age#d21e33-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d21e33"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test1man"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test1wor"/>
       <rdaed:P20002>relator-test1exp</rdaed:P20002>
    </rdf:Description>
@@ -101,22 +107,24 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test1exp"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d20e33">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d21e33">
       <fake:marcfield>F100 1# $a Ward, Humphrey, $c Mrs., $d 1851-1920.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Ward, Humphrey, Mrs., 1851-1920.</rdaad:P50377>
+      <rdaad:P50377>Ward, Humphrey, Mrs., 1851-1920</rdaad:P50377>
       <rdaad:P50347>1851-1920.</rdaad:P50347>
       <rdaad:P50121>1851</rdaad:P50121>
       <rdaad:P50120>1920</rdaad:P50120>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test2wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test2exp"/>
       <rdawd:P10002>relator-test2wor</rdawd:P10002>
-      <!--Default relationship property used for http://marc2rda.edu/fake/age/d20e44-->
-      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d20e44"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test2age#d21e44-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/relator-test2age#d21e44"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test2exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test2man"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test2wor"/>
       <rdaed:P20002>relator-test2exp</rdaed:P20002>
    </rdf:Description>
@@ -124,7 +132,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test2exp"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d20e44">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test2age#d21e44">
       <fake:marcfield>F100 1# $a Boulanger, John, $d 1965-</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Boulanger, John, 1965-</rdaad:P50377>
@@ -133,12 +141,14 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test1exp"/>
       <rdawd:P10002>relator-test1wor</rdawd:P10002>
-      <!--Default relationship property used for http://marc2rda.edu/fake/age/d20e53-->
-      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d20e53"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test1age#d21e53-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d21e53"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test1man"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test1wor"/>
       <rdaed:P20002>relator-test1exp</rdaed:P20002>
    </rdf:Description>
@@ -146,7 +156,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test1exp"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d20e53">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d21e53">
       <fake:marcfield>F100 1# $a Luckombe, Philip $d d. 1803</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Luckombe, Philip d. 1803</rdaad:P50377>
@@ -155,12 +165,14 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test1exp"/>
       <rdawd:P10002>relator-test1wor</rdawd:P10002>
-      <!--Default relationship property used for http://marc2rda.edu/fake/age/d20e62-->
-      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d20e62"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test1age#d21e62-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d21e62"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test1man"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test1wor"/>
       <rdaed:P20002>relator-test1exp</rdaed:P20002>
    </rdf:Description>
@@ -168,7 +180,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test1exp"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d20e62">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d21e62">
       <fake:marcfield>F100 0# $a Piri, Reis $d d. 1554?</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Piri, Reis d. 1554?</rdaad:P50377>
@@ -177,12 +189,14 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test1exp"/>
       <rdawd:P10002>relator-test1wor</rdawd:P10002>
-      <!--Default relationship property used for http://marc2rda.edu/fake/age/d20e71-->
-      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age/d20e71"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test1age#d21e71-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d21e71"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test1man"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test1wor"/>
       <rdaed:P20002>relator-test1exp</rdaed:P20002>
    </rdf:Description>
@@ -190,7 +204,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test1exp"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age/d20e71">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d21e71">
       <fake:marcfield>F100 1# $a Smith, John $d 1882 Aug. 5-</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Smith, John 1882 Aug. 5-</rdaad:P50377>

@@ -31,7 +31,12 @@
     <xsl:template
         match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] 
         | marc:datafield[@tag = '700'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '710'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '711'][not(marc:subfield[@code = 't'])] 
-        | marc:datafield[@tag = '720']"
+        | marc:datafield[@tag = '720'] 
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '100-00'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '110-00'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '111-00']
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '700-00'][not(marc:subfield[@code = 't'])] 
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '710-00'][not(marc:subfield[@code = 't'])]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '711-00'][not(marc:subfield[@code = 't'])]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '720-00']"
         mode="wor">
         <xsl:param name="baseIRI"/>
         <xsl:choose>
@@ -40,7 +45,8 @@
                 test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
                 <xsl:choose>
                     <!-- if it's a 1XX field, call handle1XXNoRelator with the appropriate domain -->
-                    <xsl:when test="@tag = '100' or @tag = '110' or @tag = '111'">
+                    <xsl:when test="@tag = '100' or @tag = '110' or @tag = '111'
+                        or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '1'))">
                         <xsl:call-template name="handle1XXNoRelator">
                             <xsl:with-param name="domain" select="'work'"/>
                             <xsl:with-param name="agentIRI" select="uwf:agentIRI($baseIRI, .)"/>
@@ -49,7 +55,7 @@
                     <xsl:otherwise>
                         <!-- default -->
                         <xsl:copy-of
-                            select="uwf:defaultAgentProp(., uwf:fieldType(@tag), 'work', uwf:agentIRI($baseIRI, .), uwf:agentAccessPoint(.))"
+                            select="uwf:defaultAgentProp(., uwf:fieldType(.), 'work', uwf:agentIRI($baseIRI, .), uwf:agentAccessPoint(.))"
                         />
                     </xsl:otherwise>
                 </xsl:choose>
@@ -67,14 +73,20 @@
     <xsl:template
         match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] 
         | marc:datafield[@tag = '700'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '710'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '711'][not(marc:subfield[@code = 't'])] 
-        | marc:datafield[@tag = '720']"
+        | marc:datafield[@tag = '720']
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '100-00'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '110-00'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '111-00']
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '700-00'][not(marc:subfield[@code = 't'])] 
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '710-00'][not(marc:subfield[@code = 't'])]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '711-00'][not(marc:subfield[@code = 't'])]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '720-00']"
         mode="exp">
         <xsl:param name="baseIRI"/>
         <xsl:choose>
             <xsl:when
                 test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
                 <xsl:choose>
-                    <xsl:when test="@tag = '100' or @tag = '110' or @tag = '111'">
+                    <xsl:when test="@tag = '100' or @tag = '110' or @tag = '111'
+                        or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '1'))">
                         <xsl:call-template name="handle1XXNoRelator">
                             <xsl:with-param name="domain" select="'expression'"/>
                         </xsl:call-template>
@@ -95,14 +107,20 @@
     <xsl:template
         match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] 
         | marc:datafield[@tag = '700'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '710'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '711'][not(marc:subfield[@code = 't'])] 
-        | marc:datafield[@tag = '720']"
+        | marc:datafield[@tag = '720']
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '100-00'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '110-00'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '111-00']
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '700-00'][not(marc:subfield[@code = 't'])] 
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '710-00'][not(marc:subfield[@code = 't'])]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '711-00'][not(marc:subfield[@code = 't'])]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '720-00']"
         mode="man">
         <xsl:param name="baseIRI"/>
         <xsl:choose>
             <xsl:when
                 test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
                 <xsl:choose>
-                    <xsl:when test="@tag = '100' or @tag = '110' or @tag = '111'">
+                    <xsl:when test="@tag = '100' or @tag = '110' or @tag = '111'
+                        or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '1'))">
                         <xsl:call-template name="handle1XXNoRelator">
                             <xsl:with-param name="domain" select="'manifestation'"/>
                         </xsl:call-template>
@@ -110,7 +128,7 @@
                     <xsl:otherwise>
                         <!-- default -->
                         <xsl:copy-of
-                            select="uwf:defaultAgentProp(., uwf:fieldType(@tag), 'manifestation', uwf:agentIRI($baseIRI, .), uwf:agentAccessPoint(.))"
+                            select="uwf:defaultAgentProp(., uwf:fieldType(.), 'manifestation', uwf:agentIRI($baseIRI, .), uwf:agentAccessPoint(.))"
                         />
                     </xsl:otherwise>
                 </xsl:choose>
@@ -128,7 +146,8 @@
                 <xsl:when
                     test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
                     <xsl:choose>
-                        <xsl:when test="@tag = '100' or @tag = '110' or @tag = '111'">
+                        <xsl:when test="@tag = '100' or @tag = '110' or @tag = '111'
+                            or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '1'))">
                             <xsl:call-template name="handle1XXNoRelator">
                                 <xsl:with-param name="domain" select="'item'"/>
                             </xsl:call-template>
@@ -153,7 +172,12 @@
     <xsl:template
         match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] 
         | marc:datafield[@tag = '700'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '710'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '711'][not(marc:subfield[@code = 't'])] 
-        | marc:datafield[@tag = '720']"
+        | marc:datafield[@tag = '720']
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '100-00'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '110-00'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '111-00']
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '700-00'][not(marc:subfield[@code = 't'])] 
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '710-00'][not(marc:subfield[@code = 't'])]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '711-00'][not(marc:subfield[@code = 't'])]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '720-00']"
         mode="ite" expand-text="true">
         <xsl:param name="baseIRI"/>
         <xsl:param name="controlNumber"/>
@@ -162,7 +186,8 @@
                 <xsl:when
                     test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
                     <xsl:choose>
-                        <xsl:when test="@tag = '100' or @tag = '110' or @tag = '111'">
+                        <xsl:when test="@tag = '100' or @tag = '110' or @tag = '111'
+                            or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '1'))">
                             <xsl:call-template name="handle1XXNoRelator">
                                 <xsl:with-param name="domain" select="'item'"/>
                             </xsl:call-template>
@@ -170,7 +195,7 @@
                         <xsl:otherwise>
                             <!-- default -->
                             <xsl:copy-of
-                                select="uwf:defaultAgentProp(., uwf:fieldType(@tag), 'item', uwf:agentIRI($baseIRI, .), uwf:agentAccessPoint(.))"
+                                select="uwf:defaultAgentProp(., uwf:fieldType(.), 'item', uwf:agentIRI($baseIRI, .), uwf:agentAccessPoint(.))"
                             />
                         </xsl:otherwise>
                     </xsl:choose>
@@ -201,16 +226,21 @@
     <!-- agent template -->
     <xsl:template
         match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] 
-        | marc:datafield[@tag = '700'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '710'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '711'][not(marc:subfield[@code = 't'])]"
+        | marc:datafield[@tag = '700'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '710'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '711'][not(marc:subfield[@code = 't'])]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '100-00'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '110-00'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '111-00']
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '700-00'][not(marc:subfield[@code = 't'])] 
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '710-00'][not(marc:subfield[@code = 't'])]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '711-00'][not(marc:subfield[@code = 't'])]"
         mode="age">
         <xsl:param name="baseIRI"/>
+        <xsl:variable name="tag" select="uwf:tagType(.)"/>
         <!-- get agentIRI and set up rdf:Description for that agent -->
         <!-- note: this isn't done for 720, where an agent is not minted -->
         <rdf:Description rdf:about="{uwf:agentIRI($baseIRI, .)}">
             <xsl:call-template name="getmarc"/>
             <!-- create rdf:type and relationship to nomen or nomen string triples -->
             <xsl:choose>
-                <xsl:when test="@tag = '100' or @tag = '700'">
+                <xsl:when test="$tag = '100' or $tag = '700'">
                     <xsl:choose>
                         <xsl:when test="@ind1 = '0' or @ind1 = '1' or @ind1 = '2'">
                             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
@@ -229,7 +259,7 @@
                                     <rdaad:P50377>
                                         <xsl:value-of select="uwf:agentAccessPoint(.)"/>
                                     </rdaad:P50377>
-                                    <xsl:if test="marc:subfield[@code = '6']">
+                                    <xsl:if test="@tag != '880' and marc:subfield[@code = '6']">
                                         <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                                         <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
                                             <rdaad:P50377>
@@ -260,7 +290,7 @@
                                     <rdaad:P50376>
                                         <xsl:value-of select="uwf:agentAccessPoint(.)"/>
                                     </rdaad:P50376>
-                                    <xsl:if test="marc:subfield[@code = '6']">
+                                    <xsl:if test="@tag != '880' and marc:subfield[@code = '6']">
                                         <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                                         <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
                                             <rdaad:P50376>
@@ -274,7 +304,7 @@
                         <xsl:otherwise/>
                     </xsl:choose>
                 </xsl:when>
-                <xsl:when test="@tag = '110' or @tag = '111' or @tag = '710' or @tag = '711'">
+                <xsl:when test="$tag = '110' or $tag = '111' or $tag = '710' or $tag = '711'">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
                     <xsl:choose>
                         <!-- if there's a $2, a nomen is minted -->
@@ -289,7 +319,7 @@
                             <rdaad:P50375>
                                 <xsl:value-of select="uwf:agentAccessPoint(.)"/>
                             </rdaad:P50375>
-                            <xsl:if test="marc:subfield[@code = '6']">
+                            <xsl:if test="@tag != '880' and marc:subfield[@code = '6']">
                                 <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                                 <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
                                     <rdaad:P50375>
@@ -333,20 +363,25 @@
     
     <xsl:template
         match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111']
-        | marc:datafield[@tag = '700'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '710'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '711'][not(marc:subfield[@code = 't'])] "
+        | marc:datafield[@tag = '700'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '710'][not(marc:subfield[@code = 't'])] | marc:datafield[@tag = '711'][not(marc:subfield[@code = 't'])] 
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '100-00'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '110-00'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '111-00']
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '700-00'][not(marc:subfield[@code = 't'])] 
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '710-00'][not(marc:subfield[@code = 't'])]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '711-00'][not(marc:subfield[@code = 't'])]"
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
+        <xsl:variable name="tag" select="uwf:tagType(.)"/>
         <xsl:variable name="type">
             <xsl:choose>
-                <xsl:when test="(@tag = '100' or @tag = '700')
+                <xsl:when test="($tag = '100' or $tag = '700')
                     and @ind1 != '3'">
                     <xsl:value-of select="'Person'"/>
                 </xsl:when>
-                <xsl:when test="(@tag = '100' or @tag = '700')
+                <xsl:when test="($tag = '100' or $tag = '700')
                     and @ind1 = '3'">
                     <xsl:value-of select="'Family'"/>
                 </xsl:when>
-                <xsl:when test="@tag = '110'or @tag = '710' or @tag = '111' or @tag = '711'">
+                <xsl:when test="$tag = '110'or $tag = '710' or $tag = '111' or $tag = '711'">
                     <xsl:value-of select="'Corporate Body'"/>
                 </xsl:when>
             </xsl:choose>
@@ -358,7 +393,7 @@
                     <xsl:value-of select="uwf:agentAccessPoint(.)"/>
                 </rdand:P80068>
                 <xsl:copy-of select="uwf:s2Nomen(marc:subfield[@code = '2'])"/>
-                <xsl:if test="marc:subfield[@code = '6']">
+                <xsl:if test="@tag != '880' and marc:subfield[@code = '6']">
                     <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                     <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
                         <rdand:P80113>
@@ -373,7 +408,10 @@
     
     <!-- 700, 710, 711 $t -->
     <xsl:template
-        match="marc:datafield[@tag = '700'][marc:subfield[@code = 't']] | marc:datafield[@tag = '710'][marc:subfield[@code = 't']] | marc:datafield[@tag = '711'][marc:subfield[@code = 't']]"
+        match="marc:datafield[@tag = '700'][marc:subfield[@code = 't']] | marc:datafield[@tag = '710'][marc:subfield[@code = 't']] | marc:datafield[@tag = '711'][marc:subfield[@code = 't']]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '700-00'][marc:subfield[@code = 't']]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '710-00'][marc:subfield[@code = 't']]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '711-00'][marc:subfield[@code = 't']]"
         mode="man">
         <xsl:param name="baseIRI"/>
         <xsl:if test="@ind2 != '2'">
@@ -382,9 +420,13 @@
     </xsl:template>
     
     <xsl:template
-        match="marc:datafield[@tag = '700'][marc:subfield[@code = 't']] | marc:datafield[@tag = '710'][marc:subfield[@code = 't']] | marc:datafield[@tag = '711'][marc:subfield[@code = 't']]"
+        match="marc:datafield[@tag = '700'][marc:subfield[@code = 't']] | marc:datafield[@tag = '710'][marc:subfield[@code = 't']] | marc:datafield[@tag = '711'][marc:subfield[@code = 't']]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '700-00'][marc:subfield[@code = 't']]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '710-00'][marc:subfield[@code = 't']]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '711-00'][marc:subfield[@code = 't']]"
         mode="relWor" expand-text="yes">
         <xsl:param name="baseIRI"/>
+        <xsl:variable name="tagType" select="uwf:tagType(.)"/>
         <xsl:if test="@ind2 != '2'">
             <rdf:Description rdf:about="{uwf:relWorkIRI($baseIRI, .)}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -400,7 +442,7 @@
                         <rdawd:P10328>
                             <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
                         </rdawd:P10328>
-                        <xsl:if test="marc:subfield[@code = '6']">
+                        <xsl:if test="@tag != '880' and marc:subfield[@code = '6']">
                             <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                             <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
                                 <rdawd:P10328>
@@ -411,13 +453,13 @@
                     </xsl:otherwise>
                 </xsl:choose>
                 <xsl:choose>
-                    <xsl:when test="@tag = '700' and @ind1 != '3'">
+                    <xsl:when test="$tagType = '700' and @ind1 != '3'">
                         <rdawo:P10312 rdf:resource="{uwf:agentIRI($baseIRI, .)}"/>
                     </xsl:when>
-                    <xsl:when test="@tag = '700' and @ind1 = '3'">
+                    <xsl:when test="$tagType = '700' and @ind1 = '3'">
                         <rdawo:P10313 rdf:resource="{uwf:agentIRI($baseIRI, .)}"/>
                     </xsl:when>
-                    <xsl:when test="@tag = '710' or @tag = '711'">
+                    <xsl:when test="$tagType = '710' or @tag = '711'">
                         <rdawo:P10314 rdf:resource="{uwf:agentIRI($baseIRI, .)}"/>
                     </xsl:when>
                     <xsl:otherwise/>
@@ -427,15 +469,19 @@
         </xsl:if>
     </xsl:template>
     <xsl:template
-        match="marc:datafield[@tag = '700'][marc:subfield[@code = 't']] | marc:datafield[@tag = '710'][marc:subfield[@code = 't']] | marc:datafield[@tag = '711'][marc:subfield[@code = 't']]"
+        match="marc:datafield[@tag = '700'][marc:subfield[@code = 't']] | marc:datafield[@tag = '710'][marc:subfield[@code = 't']] | marc:datafield[@tag = '711'][marc:subfield[@code = 't']]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '700-00'][marc:subfield[@code = 't']]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '710-00'][marc:subfield[@code = 't']]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '711-00'][marc:subfield[@code = 't']]"
         mode="age" expand-text="yes">
         <xsl:param name="baseIRI"/>
+        <xsl:variable name="tagType" select="uwf:tagType(.)"/>
         <xsl:if test="@ind2 != '2'">
             <rdf:Description rdf:about="{uwf:agentIRI($baseIRI, .)}">
                 <xsl:call-template name="getmarc"/>
                 <!-- create rdf:type and relationship to nomen or nomen string triples -->
                 <xsl:choose>
-                    <xsl:when test="@tag = '700'">
+                    <xsl:when test="$tagType = '700'">
                         <xsl:choose>
                             <xsl:when test="@ind1 = '0' or @ind1 = '1' or @ind1 = '2'">
                                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
@@ -452,7 +498,7 @@
                                         <rdaad:P50377>
                                             <xsl:value-of select="uwf:agentAccessPoint(.)"/>
                                         </rdaad:P50377>
-                                        <xsl:if test="marc:subfield[@code = '6']">
+                                        <xsl:if test="@tag != '880' and marc:subfield[@code = '6']">
                                             <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                                             <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
                                                 <rdaad:P50377>
@@ -483,7 +529,7 @@
                                         <rdaad:P50376>
                                             <xsl:value-of select="uwf:agentAccessPoint(.)"/>
                                         </rdaad:P50376>
-                                        <xsl:if test="marc:subfield[@code = '6']">
+                                        <xsl:if test="@tag != '880' and marc:subfield[@code = '6']">
                                             <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                                             <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
                                                 <rdaad:P50376>
@@ -497,7 +543,7 @@
                             <xsl:otherwise/>
                         </xsl:choose>
                     </xsl:when>
-                    <xsl:when test="@tag = '710' or @tag = '711'">
+                    <xsl:when test="$tagType = '710' or $tagType = '711'">
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
                         <xsl:choose>
                             <!-- if there's a $2, a nomen is minted -->
@@ -522,7 +568,7 @@
                                 </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
-                        <xsl:if test="@tag = '711'">
+                        <xsl:if test="$tagType = '711'">
                             <rdaad:P50237>
                                 <xsl:text>Meeting</xsl:text>
                             </rdaad:P50237>
@@ -535,7 +581,10 @@
     </xsl:template>
     
     <xsl:template
-        match="marc:datafield[@tag = '700'][marc:subfield[@code = 't']] | marc:datafield[@tag = '710'][marc:subfield[@code = 't']] | marc:datafield[@tag = '711'][marc:subfield[@code = 't']]"
+        match="marc:datafield[@tag = '700'][marc:subfield[@code = 't']] | marc:datafield[@tag = '710'][marc:subfield[@code = 't']] | marc:datafield[@tag = '711'][marc:subfield[@code = 't']]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '700-00'][marc:subfield[@code = 't']]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '710-00'][marc:subfield[@code = 't']]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '711-00'][marc:subfield[@code = 't']]"
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:if test="@ind2 != '2'">
@@ -546,7 +595,7 @@
                         <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
                     </rdand:P80068>
                     <xsl:copy-of select="uwf:s2Nomen(marc:subfield[@code = '2'])"/>
-                    <xsl:if test="marc:subfield[@code = '6']">
+                    <xsl:if test="@tag != '880' and marc:subfield[@code = '6']">
                         <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                         <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
                             <rdand:P80113>
@@ -561,7 +610,7 @@
                         <xsl:value-of select="uwf:agentAccessPoint(.)"/>
                     </rdand:P80068>
                     <xsl:copy-of select="uwf:s2Nomen(marc:subfield[@code = '2'])"/>
-                    <xsl:if test="marc:subfield[@code = '6']">
+                    <xsl:if test="@tag != '880' and marc:subfield[@code = '6']">
                         <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                         <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
                             <rdand:P80113>
@@ -576,7 +625,7 @@
     
     <!-- 730 -->
     <xsl:template
-        match="marc:datafield[@tag = '730']"
+        match="marc:datafield[@tag = '730'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '730-00']"
         mode="man">
         <xsl:param name="baseIRI"/>
         <xsl:if test="@ind2 != '2'">
@@ -585,7 +634,7 @@
     </xsl:template>
     
     <xsl:template
-        match="marc:datafield[@tag = '730']"
+        match="marc:datafield[@tag = '730'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '730-00']"
         mode="relWor" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:if test="@ind2 != '2'">
@@ -603,7 +652,7 @@
                         <rdawd:P10328>
                             <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
                         </rdawd:P10328>
-                        <xsl:if test="marc:subfield[@code = '6']">
+                        <xsl:if test="@tag != '880' and marc:subfield[@code = '6']">
                             <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                             <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
                                 <rdawd:P10328>
@@ -619,7 +668,7 @@
     </xsl:template>
     
     <xsl:template
-        match="marc:datafield[@tag = '730']"
+        match="marc:datafield[@tag = '730'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '730-00']"
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:if test="@ind2 != '2'">
@@ -630,7 +679,7 @@
                         <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
                     </rdand:P80068>
                     <xsl:copy-of select="uwf:s2Nomen(marc:subfield[@code = '2'])"/>
-                    <xsl:if test="marc:subfield[@code = '6']">
+                    <xsl:if test="@tag != '880' and marc:subfield[@code = '6']">
                         <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                         <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
                             <rdand:P80113>

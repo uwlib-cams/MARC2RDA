@@ -103,5 +103,12 @@
             <marc:subfield code="1">fakeiri.edu/1234</marc:subfield>
         </marc:datafield>
         
+        <!-- (made up) 880 with approved $1 and $2 -->
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Test, 880.</marc:subfield>
+            <marc:subfield code="e">author</marc:subfield>
+            <marc:subfield code="2">naf</marc:subfield>
+        </marc:datafield>
+        
     </marc:record>
 </marc:collection>

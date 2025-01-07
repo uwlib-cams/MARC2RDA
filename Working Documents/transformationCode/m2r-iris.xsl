@@ -102,18 +102,19 @@
         <xsl:variable name="ap">
             <xsl:value-of select="uwf:agentAccessPoint($field)"/>
         </xsl:variable>
+        <xsl:variable name="tag" select="uwf:tagType($field)"/>
         <xsl:variable name="type">
             <xsl:choose>
-                <xsl:when test="($field/@tag = '100' or $field/@tag = '600' or $field/@tag = '700' or $field = '800')
+                <xsl:when test="($tag = '100' or $tag = '600' or $tag = '700' or $tag = '800')
                     and $field/@ind1 != '3'">
                     <xsl:value-of select="'Person'"/>
                 </xsl:when>
-                <xsl:when test="($field/@tag = '100' or $field/@tag = '600' or $field/@tag = '700' or $field = '800')
+                <xsl:when test="($tag= '100' or $tag = '600' or $tag = '700' or $tag = '800')
                     and $field/@ind1 = '3'">
                     <xsl:value-of select="'Family'"/>
                 </xsl:when>
-                <xsl:when test="$field/@tag = '110' or $field/@tag = '610' or $field/@tag = '710' or $field = '810' or
-                    $field/@tag = '111' or $field/@tag = '611' or $field/@tag = '711' or $field = '811'">
+                <xsl:when test="$tag = '110' or $tag = '610' or $tag = '710' or $tag = '810' or
+                    $tag = '111' or $tag = '611' or $tag = '711' or $tag = '811'">
                     <xsl:value-of select="'Corporate Body'"/>
                 </xsl:when>
             </xsl:choose>
@@ -122,9 +123,9 @@
             <!-- For a 1XX or 7XX, or 6XX with only name part subfields (and no $t) - 
                 If $1 -->
             <!-- do not use $1 if it is a 6XX field that has additional subfields -->
-            <xsl:when test="$field/marc:subfield[@code = '1'] and (not(starts-with($field/@tag, '6'))
-                or (starts-with($field/@tag, '6') and 
-                not($field/marc:subfield[@code = 'v' or @code = 'x' or @code = 'y' or @code = 'z'])))
+            <xsl:when test="$field/marc:subfield[@code = '1'] and (matches($tag, '[17]\d\d')
+                or (starts-with($tag, '6')
+                and not($field/marc:subfield[@code = 'v' or @code = 'x' or @code = 'y' or @code = 'z'])))
                 and not($field/marc:subfield[@code = 't'])">
                 <!-- select 1 value to use -->
                 <xsl:variable name="sub1">
@@ -150,11 +151,11 @@
                         <xsl:choose>
                             <!-- If it's a 6XX field and not ind2 = 4, and the source is approved,
                                 we use the source and aap -->
-                            <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), $type) = 'True'">
+                            <xsl:when test="starts-with($tag, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), $type) = 'True'">
                                 <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||'age#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                             </xsl:when>
                             <!-- same if it's not a 6XX field but there's a 2 -->
-                            <xsl:when test="not(starts-with($field/@tag, '6')) and $field/marc:subfield[@code = '2'] and uwf:s2EntityTest($field/marc:subfield[@code = '2'][1], $type) = 'True'">
+                            <xsl:when test="not(starts-with($tag, '6')) and $field/marc:subfield[@code = '2'] and uwf:s2EntityTest($field/marc:subfield[@code = '2'][1], $type) = 'True'">
                                 <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'age#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                             </xsl:when>
                             <!-- otherwise it's an opaque IRI -->
@@ -190,11 +191,11 @@
                         <xsl:choose>
                             <!-- If it's a 6XX field and not ind2 = 4, and the source is approved,
                                 we use the source and aap -->
-                            <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), $type) = 'True'">
+                            <xsl:when test="starts-with($tag, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), $type) = 'True'">
                                 <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||'age#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                             </xsl:when>
                             <!-- same if it's not a 6XX field but there's a 2 -->
-                            <xsl:when test="not(starts-with($field/@tag, '6')) and $field/marc:subfield[@code = '2'] and uwf:s2EntityTest($field/marc:subfield[@code = '2'][1], $type) = 'True'">
+                            <xsl:when test="not(starts-with($tag, '6')) and $field/marc:subfield[@code = '2'] and uwf:s2EntityTest($field/marc:subfield[@code = '2'][1], $type) = 'True'">
                                 <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'age#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                             </xsl:when>
                             <!-- otherwise it's an opaque IRI -->
@@ -209,11 +210,11 @@
             <xsl:otherwise>
                 <xsl:choose>
                     <!-- If it's a 6XX field and not ind2 = 4, and the source is approved, we use the source and aap -->
-                    <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), $type) = 'True'">
+                    <xsl:when test="starts-with($tag, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), $type) = 'True'">
                         <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||'age#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                     </xsl:when>
                     <!-- same if it's not a 6XX field but there's a 2 -->
-                    <xsl:when test="not(starts-with($field/@tag, '6')) and $field/marc:subfield[@code = '2'] and uwf:s2EntityTest($field/marc:subfield[@code = '2'][1], $type) = 'True'">
+                    <xsl:when test="not(starts-with($tag, '6')) and $field/marc:subfield[@code = '2'] and uwf:s2EntityTest($field/marc:subfield[@code = '2'][1], $type) = 'True'">
                         <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'age#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                     </xsl:when>
                     <!-- otherwise it's an opaque IRI -->
@@ -228,14 +229,15 @@
     <xsl:function name="uwf:relWorkIRI">
         <xsl:param name="baseIRI"/>
         <xsl:param name="field"/>
+        <xsl:variable name="tag" select="uwf:tagType($field)"/>
         <xsl:variable name="ap">
             <xsl:value-of select="uwf:relWorkAccessPoint($field)"/>
         </xsl:variable>
         <xsl:choose>
             <!-- For a 1XX or 7XX or 8XX or 6XX and only name/title subfields - 
                 If $1, return value of $1, otherwise construct an IRI based on the access point -->
-            <xsl:when test="$field/marc:subfield[@code = '1'] and (not(starts-with($field/@tag, '6'))
-                or (starts-with($field/@tag, '6') and 
+            <xsl:when test="$field/marc:subfield[@code = '1'] and (not(starts-with($tag, '6'))
+                or (starts-with($tag, '6') and 
                 not($field/marc:subfield[@code = 'v' or @code = 'x' or @code = 'y' or @code = 'z'])))">
                     <xsl:variable name="sub1">
                         <xsl:choose>
@@ -258,10 +260,10 @@
                         <!-- otherwise mint an IRI -->
                         <xsl:otherwise>
                             <xsl:choose>
-                                <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), 'Work') = 'True'">
+                                <xsl:when test="starts-with($tag, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), 'Work') = 'True'">
                                     <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||'wor#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                                 </xsl:when>
-                                <xsl:when test="not(starts-with($field/@tag, '6')) and $field/marc:subfield[@code = '2'] and uwf:s2EntityTest($field/marc:subfield[@code = '2'][1], 'Work') = 'True'">
+                                <xsl:when test="not(starts-with($tag, '6')) and $field/marc:subfield[@code = '2'] and uwf:s2EntityTest($field/marc:subfield[@code = '2'][1], 'Work') = 'True'">
                                     <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'wor#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                                 </xsl:when>
                                 <xsl:otherwise>
@@ -274,10 +276,10 @@
             <!-- otherwise it's an opaque IRI to avoid conflating different works under one IRI -->
             <xsl:otherwise>
                 <xsl:choose>
-                    <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), 'Work') = 'True'">
+                    <xsl:when test="starts-with($tag, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), 'Work') = 'True'">
                         <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||'wor#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                     </xsl:when>
-                    <xsl:when test="not(starts-with($field/@tag, '6')) and $field/marc:subfield[@code = '2'] and uwf:s2EntityTest($field/marc:subfield[@code = '2'][1], 'Work') = 'True'">
+                    <xsl:when test="not(starts-with($tag, '6')) and $field/marc:subfield[@code = '2'] and uwf:s2EntityTest($field/marc:subfield[@code = '2'][1], 'Work') = 'True'">
                         <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'wor#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                     </xsl:when>
                     <xsl:otherwise>
@@ -307,8 +309,9 @@
         <xsl:param name="ap"/>
         
         <xsl:choose>
-            <xsl:when test="$field/marc:subfield[@code = '1'] and (starts-with($field/@tag, '6') and 
-                not($field/marc:subfield[@code = 'v' or @code = 'x' or @code = 'y' or @code = 'z']))">
+            <xsl:when test="$field/marc:subfield[@code = '1'] and ((starts-with($field/@tag, '6')
+                or ($field/@tag = '880' and starts-with($field/marc:subfield[@code = '6'], '6')))
+                and not($field/marc:subfield[@code = 'v' or @code = 'x' or @code = 'y' or @code = 'z']))">
                 <xsl:variable name="sub1">
                     <xsl:choose>
                         <xsl:when test="count($field/marc:subfield[@code = '1']) > 1">
@@ -325,7 +328,8 @@
                     </xsl:when>  
                     <xsl:otherwise>
                         <xsl:choose>
-                            <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4' or $field/@ind2 = ' ' or $field/@ind2 = '7')">
+                            <xsl:when test="(starts-with($field/@tag, '6') or ($field/@tag = '880' and starts-with($field/marc:subfield[@code = '6'], '6')))
+                                and not($field/@ind2 = '4' or $field/@ind2 = ' ' or $field/@ind2 = '7')">
                                 <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||'timespan#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                             </xsl:when>
                             <xsl:when test="$field/marc:subfield[@code = '2']">
@@ -340,7 +344,8 @@
             </xsl:when>
             <xsl:otherwise>
                 <xsl:choose>
-                    <xsl:when test="starts-with($field/@tag, '6') and not($field/@ind2 = '4' or $field/@ind2 = ' ' or $field/@ind2 = '7')">
+                    <xsl:when test="(starts-with($field/@tag, '6') or ($field/@tag = '880' and starts-with($field/marc:subfield[@code = '6'], '6')))
+                        and not($field/@ind2 = '4' or $field/@ind2 = ' ' or $field/@ind2 = '7')">
                         <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||'timespan#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                     </xsl:when>
                     <xsl:when test="$field/marc:subfield[@code = '2']">
@@ -360,8 +365,9 @@
         <xsl:param name="ap"/>
         <xsl:param name="source"/>
         <xsl:choose>
-            <xsl:when test="$field/marc:subfield[@code = '1'] and (starts-with($field/@tag, '6') and 
-                not($field/marc:subfield[@code = 'v' or @code = 'x' or @code = 'y' or @code = 'z']))">
+            <xsl:when test="$field/marc:subfield[@code = '1'] and ((starts-with($field/@tag, '6') 
+                or ($field/@tag = '880' and starts-with($field/marc:subfield[@code = '6'], '6')))
+                and not($field/marc:subfield[@code = 'v' or @code = 'x' or @code = 'y' or @code = 'z']))">
                 <xsl:variable name="sub1">
                      <xsl:choose>
                     <xsl:when test="count($field/marc:subfield[@code = '1']) > 1">
@@ -482,8 +488,9 @@
     
     <xsl:function name="uwf:agentIdentifiers">
         <xsl:param name="field"/>
+        <xsl:variable name="tag" select="uwf:tagType($field)"/>
         <xsl:choose>
-            <xsl:when test="($field/@tag = '100' or $field/@tag = '600' or $field/@tag = '700' or $field/@tag = '800')
+            <xsl:when test="($tag = '100' or $tag = '600' or $tag = '700' or $tag = '800')
                 and $field/@ind1 != '3' and not($field/marc:subfield[@code = 't'])">
                 <xsl:for-each select="$field/marc:subfield[@code = '0']">
                     <rdaad:P50094>
@@ -498,7 +505,7 @@
                     </xsl:if>
                 </xsl:for-each>
             </xsl:when>
-            <xsl:when test="($field/@tag = '100' or $field/@tag = '600' or $field/@tag = '700' or $field/@tag = '800')
+            <xsl:when test="($tag = '100' or $tag = '600' or $tag = '700' or $tag = '800')
                 and $field/@ind1 = '3' and not($field/marc:subfield[@code = 't'])">
                 <xsl:for-each select="$field/marc:subfield[@code = '0']">
                     <rdaad:P50052>
@@ -513,8 +520,8 @@
                     </xsl:if>
                 </xsl:for-each>
             </xsl:when>
-            <xsl:when test="$field/@tag = '110' or $field/@tag = '610' or $field/@tag = '710' or $field/@tag = '810'
-                or $field/@tag = '111' or $field/@tag = '611' or $field/@tag = '711' or $field/@tag = '811'
+            <xsl:when test="$tag = '110' or $tag = '610' or $tag = '710' or $tag = '810'
+                or $tag = '111' or $tag = '611' or $tag = '711' or $tag = '811'
                 and not($field/marc:subfield[@code = 't'])">
                 <xsl:for-each select="$field/marc:subfield[@code = '0']">
                     <rdaad:P50006>
