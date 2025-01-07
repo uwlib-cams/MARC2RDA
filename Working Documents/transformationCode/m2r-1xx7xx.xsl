@@ -274,8 +274,8 @@
                                 <xsl:if test="@ind1 = '0'">
                                     <xsl:call-template name="FX00-x0-ab"/>
                                 </xsl:if>
-                                <xsl:call-template name="FX00-x1-d"/>
-                                <xsl:call-template name="FX00-x1-q"/>
+                                <xsl:call-template name="FX00-xx-d"/>
+                                <xsl:call-template name="FX00-xx-q"/>
                             </xsl:if>
                         </xsl:when>
                         <xsl:when test="@ind1 = '3'">
@@ -478,6 +478,10 @@
                     <xsl:otherwise/>
                 </xsl:choose>
                 <xsl:copy-of select="uwf:workIdentifiers(.)"/>
+                <xsl:call-template name="FXXX-xx-f"/>
+                <xsl:call-template name="FXXX-xx-tknp"/>
+                <xsl:call-template name="FXXX-xx-n"/>
+                <xsl:call-template name="FXXX-xx-x"/>
             </rdf:Description>
         </xsl:if>
     </xsl:template>
@@ -523,8 +527,8 @@
                                 </xsl:choose>
                                 <!-- If we minted the IRI - add additional details -->
                                 <xsl:if test="starts-with(uwf:agentIRI($baseIRI, .), $BASE)">
-                                    <xsl:call-template name="FX00-x1-d"/>
-                                    <xsl:call-template name="FX00-x1-q"/>
+                                    <xsl:call-template name="FX00-xx-d"/>
+                                    <xsl:call-template name="FX00-xx-q"/>
                                 </xsl:if>
                             </xsl:when>
                             <xsl:when test="@ind1 = '3'">
@@ -676,6 +680,10 @@
                     </xsl:otherwise>
                 </xsl:choose>
                 <xsl:copy-of select="uwf:workIdentifiers(.)"/>
+                <xsl:call-template name="FXXX-xx-f"/>
+                <xsl:call-template name="FXXX-xx-tknp"/>
+                <xsl:call-template name="FXXX-xx-n"/>
+                <xsl:call-template name="FXXX-xx-x"/>
             </rdf:Description>
         </xsl:if>
     </xsl:template>

@@ -255,4 +255,83 @@
       <rdaad:P50024>Seattle, Wash.</rdaad:P50024><!--rdaad:P50024 = has place of conference-->
       <rdaad:P50039>2006</rdaad:P50039><!--rdaad:P50039 = has date of conference-->
    </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test9exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>relator-test9wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <fake:marcfield>F610 1# $a United States $t Food and Drugs Act</fake:marcfield>
+      <rdawo:P10263 rdf:resource="http://marc2rda.edu/fake/relator-test9age#d21e113"/><!--rdawo:P10263 = has subject corporate body-->
+      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/relator-test9wor#d21e113"/><!--rdawo:P10257 = has subject work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test9man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test9wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>relator-test9exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test9exp"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/relator-test9wor#d21e118"/><!--rdamo:P30265 = has related work of manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/relator-test9wor#d21e131"/><!--rdamo:P30265 = has related work of manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/relator-test9wor#d21e144"/><!--rdamo:P30265 = has related work of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9age#d21e113">
+      <fake:marcfield>F610 1# $a United States $t Food and Drugs Act</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>United States</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9age#d21e118">
+      <fake:marcfield>F700 1# $a Barber, Samuel, $d 1910-1981. $t Sonatas, $m violin, piano. $p Allegro agitato $n (No. 3)</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Barber, Samuel, 1910-1981</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50347>1910-1981.</rdaad:P50347><!--rdaad:P50347 = has related timespan of person-->
+      <rdaad:P50121>1910</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1981</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9age#d21e131">
+      <fake:marcfield>F700 1# $a Barber, Samuel, $d 1910-1981. $t Canzonetta, $m oboe, string orchestra, $n op. 48; $o arranged.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Barber, Samuel, 1910-1981</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50347>1910-1981.</rdaad:P50347><!--rdaad:P50347 = has related timespan of person-->
+      <rdaad:P50121>1910</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1981</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9age#d21e144">
+      <fake:marcfield>F700 1# $a Schulz, Bruno, $d 1892-1942. $t Sklepy cynamonowe. $l English.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Schulz, Bruno, 1892-1942</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50347>1892-1942.</rdaad:P50347><!--rdaad:P50347 = has related timespan of person-->
+      <rdaad:P50121>1892</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1942</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9wor#d21e113">
+      <fake:marcfield>F610 1# $a United States $t Food and Drugs Act</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10328>United States Food and Drugs Act</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/relator-test9age#d21e113"/><!--rdawo:P10314 = has related corporate body of work-->
+      <rdawd:P10088>Food and Drugs Act</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9wor#d21e118">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d21e118wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Barber, Samuel, 1910-1981. Sonatas, violin, piano. Allegro agitato (No. 3)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/relator-test9age#d21e118"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>Sonatas, Allegro agitato (No. 3)</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9wor#d21e131">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d21e131wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Barber, Samuel, 1910-1981. Canzonetta, oboe, string orchestra, op. 48; arranged</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/relator-test9age#d21e131"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>Canzonetta, op. 48;</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawd:P10333>op. 48;</rdawd:P10333><!--rdawd:P10333 = has opus number-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9wor#d21e144">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d21e144wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Schulz, Bruno, 1892-1942. Sklepy cynamonowe. English</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/relator-test9age#d21e144"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>Sklepy cynamonowe.</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
 </rdf:RDF>

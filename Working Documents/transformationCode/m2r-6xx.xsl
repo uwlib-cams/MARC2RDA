@@ -235,8 +235,8 @@
                                 <xsl:if test="@ind1 = '0'">
                                     <xsl:call-template name="FX00-x0-ab"/>
                                 </xsl:if>
-                                <xsl:call-template name="FX00-x1-d"/>
-                                <xsl:call-template name="FX00-x1-q"/>
+                                <xsl:call-template name="FX00-xx-d"/>
+                                <xsl:call-template name="FX00-xx-q"/>
                             </xsl:if>
                         </xsl:when>
                         <!-- family -->
@@ -388,6 +388,10 @@
                 and not(marc:subfield[@code = 'y']) and not(marc:subfield[@code = 'z'])">
                 <xsl:copy-of select="uwf:workIdentifiers(.)"/>
             </xsl:if>
+            <xsl:call-template name="FXXX-xx-f"/>
+            <xsl:call-template name="FXXX-xx-tknp"/>
+            <xsl:call-template name="FXXX-xx-n"/>
+            <xsl:call-template name="FXXX-xx-x"/>
         </rdf:Description>
     </xsl:template>
     
@@ -594,6 +598,10 @@
                 and not(marc:subfield[@code = 'y']) and not(marc:subfield[@code = 'z'])">
                 <xsl:copy-of select="uwf:workIdentifiers(.)"/>
             </xsl:if>
+            <xsl:call-template name="FXXX-xx-f"/>
+            <xsl:call-template name="FXXX-xx-tknp"/>
+            <xsl:call-template name="FXXX-xx-n"/>
+            <xsl:call-template name="FXXX-xx-x"/>
         </rdf:Description>
     </xsl:template>
     

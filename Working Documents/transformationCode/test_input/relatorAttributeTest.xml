@@ -92,4 +92,34 @@
             <marc:subfield code="c">Seattle, Wash.)</marc:subfield>
         </marc:datafield>
     </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test9</marc:controlfield>
+        <marc:datafield tag="610" ind1="1" ind2=" ">
+            <marc:subfield code="a">United States</marc:subfield>
+            <marc:subfield code="t">Food and Drugs Act</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Barber, Samuel,</marc:subfield>
+            <marc:subfield code="d">1910-1981.</marc:subfield>
+            <marc:subfield code="t">Sonatas,</marc:subfield>
+            <marc:subfield code="m">violin, piano.</marc:subfield>
+            <marc:subfield code="p">Allegro agitato</marc:subfield>
+            <marc:subfield code="n">(No. 3)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Barber, Samuel,</marc:subfield>
+            <marc:subfield code="d">1910-1981.</marc:subfield>
+            <marc:subfield code="t">Canzonetta,</marc:subfield>
+            <marc:subfield code="m">oboe, string orchestra,</marc:subfield>
+            <marc:subfield code="n">op. 48;</marc:subfield>
+            <marc:subfield code="o">arranged.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Schulz, Bruno,</marc:subfield>
+            <marc:subfield code="d">1892-1942.</marc:subfield>
+            <marc:subfield code="t">Sklepy cynamonowe.</marc:subfield>
+            <marc:subfield code="l">English.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
 </marc:collection>
