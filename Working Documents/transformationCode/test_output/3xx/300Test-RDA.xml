@@ -13,9 +13,13 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/300-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/300-test1exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F300 ## $a vii, 216 pages ; $c 23 cm.</fake:marcfield>
       <rdamd:P30182>vii, 216 pages ; 23 cm.</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
+      <fake:marcfield>F300 ## $a 171 pages : $b illustrations ; $c 24 cm.</fake:marcfield>
       <rdamd:P30182>171 pages : illustrations ; 24 cm.</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
+      <fake:marcfield>F300 ## $a 1 online resource : $b text file, PDF</fake:marcfield>
       <rdamd:P30182>1 online resource : text file, PDF</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
+      <fake:marcfield>F300 ## $a 1 score (96 pages) + 1 part (35 pages) : $b facsimiles, portrait ; $c 31 cm + $e 2 CD-ROMs (4 3/4 in.)</fake:marcfield>
       <rdamd:P30182>1 score (96 pages) + 1 part (35 pages) : facsimiles, portrait ; 31 cm + 2 CD-ROMs (4 3/4 in.)</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
    </rdf:Description>
 </rdf:RDF>

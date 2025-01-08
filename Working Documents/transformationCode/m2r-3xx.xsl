@@ -20,13 +20,41 @@
     <xsl:import href="m2r-iris.xsl"/>
     
     <xsl:template match="marc:datafield[@tag = '300'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '300']"
-        mode="man" expand-text="yes">
+        mode="man origMan" expand-text="yes">
         <xsl:param name="type"/>
-        <rdamd:P30182>
-            <xsl:value-of select="marc:subfield[@code = '3'] | marc:subfield[@code = 'a'] 
-                | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'e']
-                | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g']" separator=" "/>
-        </rdamd:P30182>
+        <xsl:call-template name="getmarc"/>
+        <xsl:choose>
+            <xsl:when test="$type = 'reproduction' or $type = 'origMan'">
+                <xsl:variable name="conditionMet" select="uwf:checkReproductions(..)"/>
+                <xsl:choose>
+                    <xsl:when test="$conditionMet = '588'">
+                        <xsl:if test="$type = 'reproduction'">
+                            <rdamd:P30182>
+                                <xsl:value-of select="marc:subfield[@code = '3'] | marc:subfield[@code = 'a'] 
+                                    | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'e']
+                                    | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g']" separator=" "/>
+                            </rdamd:P30182>
+                        </xsl:if>
+                    </xsl:when>
+                    <xsl:when test="$conditionMet = '533'">
+                        <xsl:if test="$type = 'origMan'">
+                            <rdamd:P30182>
+                                <xsl:value-of select="marc:subfield[@code = '3'] | marc:subfield[@code = 'a'] 
+                                    | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'e']
+                                    | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g']" separator=" "/>
+                            </rdamd:P30182>
+                        </xsl:if>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise>
+                <rdamd:P30182>
+                    <xsl:value-of select="marc:subfield[@code = '3'] | marc:subfield[@code = 'a'] 
+                        | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'e']
+                        | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g']" separator=" "/>
+                </rdamd:P30182>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '306'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '306']"
