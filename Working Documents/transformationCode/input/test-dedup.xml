@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>08016cam a2200757 i 4500</marc:leader>
+        <marc:controlfield tag="001">99161805901301452</marc:controlfield>
+        <marc:controlfield tag="005">20240221213018.0</marc:controlfield>
+        <marc:controlfield tag="006">m     o  d        </marc:controlfield>
+        <marc:controlfield tag="007">cr cnu|||unuuu</marc:controlfield>
+        <marc:controlfield tag="008">141024s2014    sz a    o     100 0 eng d</marc:controlfield>
+        <marc:datafield tag="019" ind1=" " ind2=" ">
+            <marc:subfield code="a">964856079</marc:subfield>
+            <marc:subfield code="a">1005808013</marc:subfield>
+            <marc:subfield code="a">1011844471</marc:subfield>
+            <marc:subfield code="a">1022038532</marc:subfield>
+            <marc:subfield code="a">1026429470</marc:subfield>
+            <marc:subfield code="a">1048156744</marc:subfield>
+            <marc:subfield code="a">1050971199</marc:subfield>
+            <marc:subfield code="a">1055410014</marc:subfield>
+            <marc:subfield code="a">1066469860</marc:subfield>
+            <marc:subfield code="a">1076415710</marc:subfield>
+            <marc:subfield code="a">1086557653</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9783319094779</marc:subfield>
+            <marc:subfield code="q">(electronic bk.)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">3319094777</marc:subfield>
+            <marc:subfield code="q">(electronic bk.)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">3319094769</marc:subfield>
+            <marc:subfield code="q">(print)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9783319094762</marc:subfield>
+            <marc:subfield code="q">(print)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="z">9783319094762</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="024" ind1="7" ind2=" ">
+            <marc:subfield code="a">10.1007/978-3-319-09477-9</marc:subfield>
+            <marc:subfield code="2">doi</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(OCoLC)893668940</marc:subfield>
+            <marc:subfield code="z">(OCoLC)964856079</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1005808013</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1011844471</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1022038532</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1026429470</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1048156744</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1050971199</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1055410014</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1066469860</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1076415710</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1086557653</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(OCoLC)ocn893668940</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(EXLNZ-01ALLIANCE_NETWORK)99319566078101451</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(01ALLIANCE_UW)99161805901301452</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">GW5XE</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="e">rda</marc:subfield>
+            <marc:subfield code="e">pn</marc:subfield>
+            <marc:subfield code="c">GW5XE</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">YDXCP</marc:subfield>
+            <marc:subfield code="d">UPM</marc:subfield>
+            <marc:subfield code="d">COO</marc:subfield>
+            <marc:subfield code="d">OCLCF</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OHI</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCL</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">VT2</marc:subfield>
+            <marc:subfield code="d">ESU</marc:subfield>
+            <marc:subfield code="d">IOG</marc:subfield>
+            <marc:subfield code="d">NJR</marc:subfield>
+            <marc:subfield code="d">OKS</marc:subfield>
+            <marc:subfield code="d">REB</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">CEF</marc:subfield>
+            <marc:subfield code="d">UX0</marc:subfield>
+            <marc:subfield code="d">U3W</marc:subfield>
+            <marc:subfield code="d">AU@</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">EBLCP</marc:subfield>
+            <marc:subfield code="d">WYU</marc:subfield>
+            <marc:subfield code="d">YOU</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">AJS</marc:subfield>
+            <marc:subfield code="d">UKAHL</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">COM</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCL</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="049" ind1=" " ind2=" ">
+            <marc:subfield code="a">MAIN</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="050" ind1=" " ind2="4">
+            <marc:subfield code="a">QA319</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="072" ind1=" " ind2="7">
+            <marc:subfield code="a">PBKF</marc:subfield>
+            <marc:subfield code="2">bicssc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="072" ind1=" " ind2="7">
+            <marc:subfield code="a">MAT037000</marc:subfield>
+            <marc:subfield code="2">bisacsh</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="082" ind1="0" ind2="4">
+            <marc:subfield code="a">515/.7</marc:subfield>
+            <marc:subfield code="2">23</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">Geometric aspects of functional analysis :</marc:subfield>
+            <marc:subfield code="b">Israel Seminar (GAFA) 2011-2013 /</marc:subfield>
+            <marc:subfield code="c">Bo'az Klartag, Emanuel Milman, editors.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">Cham :</marc:subfield>
+            <marc:subfield code="b">Springer,</marc:subfield>
+            <marc:subfield code="c">2014.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 online resource (ix, 463 pages) :</marc:subfield>
+            <marc:subfield code="b">illustrations</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer</marc:subfield>
+            <marc:subfield code="b">c</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">online resource</marc:subfield>
+            <marc:subfield code="b">cr</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="347" ind1=" " ind2=" ">
+            <marc:subfield code="a">text file</marc:subfield>
+            <marc:subfield code="b">PDF</marc:subfield>
+            <marc:subfield code="2">rda</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="490" ind1="1" ind2=" ">
+            <marc:subfield code="a">Lecture Notes in Mathematics,</marc:subfield>
+            <marc:subfield code="x">0075-8434 ;</marc:subfield>
+            <marc:subfield code="v">2116</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="520" ind1=" " ind2=" ">
+            <marc:subfield code="a">As in the previous Seminar Notes, the current volume reflects general trends in the study of Geometric Aspects of Functional Analysis. Most of the papers deal with different aspects of Asymptotic Geometric Analysis, understood in a broad sense; many continue the study of geometric and volumetric properties of convex bodies and log-concave measures in high-dimensions and in particular the mean-norm, mean-width, metric entropy, spectral-gap, thin-shell and slicing parameters, with applications to Dvoretzky and Central-Limit-type results. The study of spectral properties of various systems, matrices, operators and potentials is another central theme in this volume. As expected, probabilistic tools play a significant role and probabilistic questions regarding Gaussian noise stability, the Gaussian Free Field and First Passage Percolation are also addressed. The historical connection to the field of Classical Convexity is also well represented with new properties and applications of mixed-volumes. The interplay between the real convex and complex pluri-subharmonic settings continues to manifest itself in several additional articles. All contributions are original research papers and were subject to the usual refereeing standards.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="588" ind1="0" ind2=" ">
+            <marc:subfield code="a">Online resource; title from PDF title page (SpringerLink, viewed October 24, 2014).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="546" ind1=" " ind2=" ">
+            <marc:subfield code="a">English.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="505" ind1="0" ind2=" ">
+            <marc:subfield code="a">Dominique Bakry and Marguerite Zani: Random symmetric matrices on Clifford algebras -- Itai Benjamini: Gaussian free field on hyperbolic lattices -- Itai Benjamini and Pascal Maillard: Point-to-point distance in first passage percolation on (tree)Z -- Zbigniew Blocki: A lower bound for the Bergman kernel and the Bourgain-Milman inequality -- Jean Bourgain: An improved estimate in the restricted isometry problem -- Jean Bourgain: On eigenvalue spacings for the 1-D Anderson model with singular site distribution -- Jean Bourgain: On the local eigenvalue spacings for certain Anderson-Bernoulli Hamiltonians -- Jean Bourgain: On the control problem for Schr~%#~127;odinger operators on tori -- Ronen Eldan and Joseph Lehec: Bounding the norm of a log-concave vector via thin-shell estimates -- Dima Faifman, Bo'az Klartag and Vitali Milman: On the oscillation rigidity of a Lipschitz function on a high-dimensional flat torus -- Dan Florentin, Vitali Milman and Alexander Segal: Identifying set inclusion by projective positions and mixed volumes.- Omer Friedland and Yosef Yomdin: Vitushkin-type theorems.- Apostolos Giannopoulos and Emanuel Milman: M-estimates for isotropic convex bodies and their Lq-centroid bodies -- Uri Grupel: Remarks on the Central Limit Theorem for non-convex bodies -- Benjamin Jaye and Fedor Nazarov: Reflectionless measures and the Mattila-Melnikov-Verdera uniform rectifiability theorem -- Bo'az Klartag: Logarithmically-concave Moment Measures I -- Alexander Koldobsky: Estimates for measures of sections of convex bodies -- Alexander V. Kolesnikov and Emanuel Milman: Remarks on the KLS conjecture and Hardy-type inequalities -- Rafal Latala: Modified Paouris inequality -- Michel Ledoux: Remarks on noise sensitivity, Brascamp-Lieb and Slepian inequalities -- Alexander E. Litvak and Susanna Spektor: Quantitative version of a Silverstein's result -- Amir Livne Bar-On: The (B) conjecture for uniform measures in the plane -- Galyna Livshytz: Maximal surface area of a convex set in Rn with respect to log-concave rotation invariant measures -- Elisabeth Meckes and Mark Meckes: On the equivalence of modes of convergence for log-concave measures -- Shahar Mendelson: A remark on the diameter of random sections of convex bodies -- Piotr Nayar and Tomasz Tkocz: A note on certain convolution operators -- Liran Rotem: On isotropicity with respect to a measure -- Rolf Schneider: A formula for mixed volumes -- Alexander Segal: On convergence of Blaschke and Minkowski symmetrization through stability results -- Sasha Sodin: Positive temperature versions of two theorems on first-passage percolation -- Konstantin E. Tikhomirov: The randomized Dvoretzky's theorem in `n1 and the-distribution.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Functional analysis</marc:subfield>
+            <marc:subfield code="v">Congresses.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Functional differential equations</marc:subfield>
+            <marc:subfield code="x">Asymptotic theory</marc:subfield>
+            <marc:subfield code="v">Congresses.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Analyse fonctionnelle</marc:subfield>
+            <marc:subfield code="v">Congrès.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Équations différentielles fonctionnelles</marc:subfield>
+            <marc:subfield code="x">Théorie asymptotique</marc:subfield>
+            <marc:subfield code="v">Congrès.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Functional analysis</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Functional differential equations</marc:subfield>
+            <marc:subfield code="x">Asymptotic theory</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="2">
+            <marc:subfield code="a">Congress</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">proceedings (reports)</marc:subfield>
+            <marc:subfield code="2">aat</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Conference papers and proceedings</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Conference papers and proceedings.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Actes de congrès.</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="776" ind1="0" ind2="8">
+            <marc:subfield code="i">Printed edition:</marc:subfield>
+            <marc:subfield code="z">9783319094762</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="711" ind1="2" ind2=" ">
+            <marc:subfield code="a">Israel Seminar on Geometrical Aspects of Functional Analysis</marc:subfield>
+            <marc:subfield code="d">(2011-2013)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="758" ind1=" " ind2=" ">
+            <marc:subfield code="i">has work:</marc:subfield>
+            <marc:subfield code="a">Geometric aspects of functional analysis (Text)</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PCGvMXjhHqTmvtQwJ3fQxym</marc:subfield>
+            <marc:subfield code="4">https://id.oclc.org/worldcat/ontology/hasWork</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Klartag, Bo'az,</marc:subfield>
+            <marc:subfield code="e">editor.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Milman, Emanuel,</marc:subfield>
+            <marc:subfield code="d">1977-</marc:subfield>
+            <marc:subfield code="e">editor.</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PCjtJwDccJJxtf9XVBJFbtX</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="830" ind1=" " ind2="0">
+            <marc:subfield code="a">Lecture notes in mathematics (Springer-Verlag) ;</marc:subfield>
+            <marc:subfield code="v">2116.</marc:subfield>
+            <marc:subfield code="x">0075-8434</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">ProQuest Ebook Central</marc:subfield>
+            <marc:subfield code="u">https://public.ebookcentral.proquest.com/choice/publicfullrecord.aspx?p=5586838</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">Scholars Portal</marc:subfield>
+            <marc:subfield code="u">http://books.scholarsportal.info/viewdoc.html?id=/ebooks/ebooks3/springer/2014-12-11/1/9783319094779</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">Scholars Portal Books</marc:subfield>
+            <marc:subfield code="u">http://www.library.yorku.ca/e/resolver/id/2595121</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">SpringerLink</marc:subfield>
+            <marc:subfield code="u">https://doi.org/10.1007/978-3-319-09477-9</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">SpringerLink</marc:subfield>
+            <marc:subfield code="u">https://link.springer.com/book/10.1007/978-3-319-09476-2</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">SpringerLink</marc:subfield>
+            <marc:subfield code="u">https://link.springer.com/book/10.1007/978-3-319-09477-9</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">SpringerLink</marc:subfield>
+            <marc:subfield code="u">http://www.library.yorku.ca/e/resolver/id/2595122</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="u">http://rd.springer.com/openurl?genre=book&amp;isbn=978-3-319-09476-2</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="u">https://www.vlebooks.com/vleweb/product/openreader?id=none&amp;isbn=9783319094779</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="994" ind1=" " ind2=" ">
+            <marc:subfield code="a">92</marc:subfield>
+            <marc:subfield code="b">OCACL</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

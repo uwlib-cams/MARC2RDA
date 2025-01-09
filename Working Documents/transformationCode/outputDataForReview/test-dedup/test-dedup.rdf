@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
+         xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwf="http://universityOfWashington/functions"
+         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161805901301452wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/99161805901301452exp"/>
+      <rdawd:P10002>99161805901301452wor</rdawd:P10002>
+      <fake:marcfield>F006 m     o  d        </fake:marcfield>
+      <fake:marcfield>F008 141024s2014    sz a    o     100 0 eng d</fake:marcfield>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.t1gh-8294#1"/>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/>
+      <fake:marcfield>F050 #4 $a QA319</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#qa319"/>
+      <fake:marcfield>F245 00 $a Geometric aspects of functional analysis : $b Israel Seminar (GAFA) 2011-2013 / $c Bo'az Klartag, Emanuel Milman, editors.</fake:marcfield>
+      <rdawd:P10088>Geometric aspects of functional analysis</rdawd:P10088>
+      <fake:marcfield>F650 #0 $a Functional analysis $v Congresses.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#functionalanalysiscongresses"/>
+      <rdawd:P10004>Congresses</rdawd:P10004>
+      <fake:marcfield>F650 #0 $a Functional differential equations $x Asymptotic theory $v Congresses.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#functionaldifferentialequationsasymptotictheorycongresses"/>
+      <rdawd:P10004>Congresses</rdawd:P10004>
+      <fake:marcfield>F650 #6 $a Analyse fonctionnelle $v Congrès.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#analysefonctionnellecongre%CC%80s"/>
+      <rdawd:P10004>Congrès</rdawd:P10004>
+      <fake:marcfield>F650 #6 $a Équations différentielles fonctionnelles $x Théorie asymptotique $v Congrès.</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#e%CC%81quationsdiffe%CC%81rentiellesfonctionnellesthe%CC%81orieasymptotiquecongre%CC%80s"/>
+      <rdawd:P10004>Congrès</rdawd:P10004>
+      <fake:marcfield>F650 #7 $a Functional analysis $2 fast</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/fast/con#functionalanalysis"/>
+      <fake:marcfield>F650 #7 $a Functional differential equations $x Asymptotic theory $2 fast</fake:marcfield>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/fast/con#functionaldifferentialequationsasymptotictheory"/>
+      <fake:marcfield>F655 #2 $a Congress</fake:marcfield>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/mesh/con#congress"/>
+      <fake:marcfield>F655 #7 $a proceedings (reports) $2 aat</fake:marcfield>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/aat/con#proceedingsreports"/>
+      <fake:marcfield>F655 #7 $a Conference papers and proceedings $2 fast</fake:marcfield>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/fast/con#conferencepapersandproceedings"/>
+      <fake:marcfield>F655 #7 $a Conference papers and proceedings. $2 lcgft</fake:marcfield>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#conferencepapersandproceedings"/>
+      <fake:marcfield>F655 #7 $a Actes de congrès. $2 rvmgf</fake:marcfield>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvmgf/con#actesdecongre%CC%80s"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161805901301452exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/99161805901301452man"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/99161805901301452wor"/>
+      <rdaed:P20002>99161805901301452exp</rdaed:P20002>
+      <fake:marcfield>F006 m     o  d        </fake:marcfield>
+      <fake:marcfield>F008 141024s2014    sz a    o     100 0 eng d</fake:marcfield>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+      <fake:marcfield>F520 ## $a As in the previous Seminar Notes, the current volume reflects general trends in the study of Geometric Aspects of Functional Analysis. Most of the papers deal with different aspects of Asymptotic Geometric Analysis, understood in a broad sense; many continue the study of geometric and volumetric properties of convex bodies and log-concave measures in high-dimensions and in particular the mean-norm, mean-width, metric entropy, spectral-gap, thin-shell and slicing parameters, with applications to Dvoretzky and Central-Limit-type results. The study of spectral properties of various systems, matrices, operators and potentials is another central theme in this volume. As expected, probabilistic tools play a significant role and probabilistic questions regarding Gaussian noise stability, the Gaussian Free Field and First Passage Percolation are also addressed. The historical connection to the field of Classical Convexity is also well represented with new properties and applications of mixed-volumes. The interplay between the real convex and complex pluri-subharmonic settings continues to manifest itself in several additional articles. All contributions are original research papers and were subject to the usual refereeing standards.</fake:marcfield>
+      <rdaed:P20069>As in the previous Seminar Notes, the current volume reflects general trends in the study of Geometric Aspects of Functional Analysis. Most of the papers deal with different aspects of Asymptotic Geometric Analysis, understood in a broad sense; many continue the study of geometric and volumetric properties of convex bodies and log-concave measures in high-dimensions and in particular the mean-norm, mean-width, metric entropy, spectral-gap, thin-shell and slicing parameters, with applications to Dvoretzky and Central-Limit-type results. The study of spectral properties of various systems, matrices, operators and potentials is another central theme in this volume. As expected, probabilistic tools play a significant role and probabilistic questions regarding Gaussian noise stability, the Gaussian Free Field and First Passage Percolation are also addressed. The historical connection to the field of Classical Convexity is also well represented with new properties and applications of mixed-volumes. The interplay between the real convex and complex pluri-subharmonic settings continues to manifest itself in several additional articles. All contributions are original research papers and were subject to the usual refereeing standards.</rdaed:P20069>
+      <fake:marcfield>F546 ## $a English.</fake:marcfield>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161805901301452man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/99161805901301452exp"/>
+      <fake:marcfield>F006 m     o  d        </fake:marcfield>
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.25z4-e963#m"/>
+      <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.3d5s-zx23#o"/>
+      <rdam:P30018 rdf:resource="https://doi.org/10.6069/uwlswd.mkjn-bp10#d"/>
+      <fake:marcfield>F008 141024s2014    sz a    o     100 0 eng d</fake:marcfield>
+      <rdamd:P30011>2014</rdamd:P30011>
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/sz"/>
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/>
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <fake:marcfield>F020 ## $a 9783319094779 $q (electronic bk.)</fake:marcfield>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/99161805901301452nom#d21e38"/>
+      <fake:marcfield>F020 ## $a 3319094777 $q (electronic bk.)</fake:marcfield>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/99161805901301452nom#d21e43"/>
+      <fake:marcfield>F020 ## $a 3319094769 $q (print)</fake:marcfield>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/99161805901301452nom#d21e48"/>
+      <fake:marcfield>F020 ## $a 9783319094762 $q (print)</fake:marcfield>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/99161805901301452nom#d21e53"/>
+      <fake:marcfield>F020 ## $z 9783319094762</fake:marcfield>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/99161805901301452nom#d21e59"/>
+      <fake:marcfield>F024 7# $a 10.1007/978-3-319-09477-9 $2 doi</fake:marcfield>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/99161805901301452nom#d21e62"/>
+      <fake:marcfield>F245 00 $a Geometric aspects of functional analysis : $b Israel Seminar (GAFA) 2011-2013 / $c Bo'az Klartag, Emanuel Milman, editors.</fake:marcfield>
+      <rdamd:P30156>Geometric aspects of functional analysis</rdamd:P30156>
+      <rdamd:P30142>Israel Seminar (GAFA) 2011-2013</rdamd:P30142>
+      <rdamd:P30105>Bo'az Klartag, Emanuel Milman, editors</rdamd:P30105>
+      <fake:marcfield>F264 #1 $a Cham : $b Springer, $c 2014.</fake:marcfield>
+      <rdamd:P30111>Cham : Springer, 2014.</rdamd:P30111>
+      <rdamd:P30088>Cham</rdamd:P30088>
+      <rdamd:P30176>Springer</rdamd:P30176>
+      <rdamd:P30011>2014</rdamd:P30011>
+      <fake:marcfield>F300 ## $a 1 online resource (ix, 463 pages) : $b illustrations</fake:marcfield>
+      <rdamd:P30182>1 online resource (ix, 463 pages) : illustrations</rdamd:P30182>
+      <fake:marcfield>F337 ## $a computer $b c $2 rdamedia</fake:marcfield>
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/c"/>
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/c"/>
+      <fake:marcfield>F338 ## $a online resource $b cr $2 rdacarrier</fake:marcfield>
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/>
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/>
+      <fake:marcfield>F347 ## $a text file $b PDF $2 rda</fake:marcfield>
+      <rdam:P30018 rdf:resource="http://marc2rda.edu/fake/rda/con#textfile"/>
+      <rdam:P30096 rdf:resource="http://marc2rda.edu/fake/rda/con#pdf"/>
+      <fake:marcfield>F490 1# $a Lecture Notes in Mathematics, $x 0075-8434 ; $v 2116</fake:marcfield>
+      <rdamd:P30106>Lecture Notes in Mathematics, 0075-8434 ; 2116</rdamd:P30106>
+      <fake:marcfield>F588 0# $a Online resource; title from PDF title page (SpringerLink, viewed October 24, 2014).</fake:marcfield>
+      <rdamd:P30137>Source of description: Online resource; title from PDF title page (SpringerLink, viewed October 24, 2014).</rdamd:P30137>
+      <fake:marcfield>F546 ## $a English.</fake:marcfield>
+      <rdamd:P30137>English.</rdamd:P30137>
+      <fake:marcfield>F505 0# $a Dominique Bakry and Marguerite Zani: Random symmetric matrices on Clifford algebras -- Itai Benjamini: Gaussian free field on hyperbolic lattices -- Itai Benjamini and Pascal Maillard: Point-to-point distance in first passage percolation on (tree)Z -- Zbigniew Blocki: A lower bound for the Bergman kernel and the Bourgain-Milman inequality -- Jean Bourgain: An improved estimate in the restricted isometry problem -- Jean Bourgain: On eigenvalue spacings for the 1-D Anderson model with singular site distribution -- Jean Bourgain: On the local eigenvalue spacings for certain Anderson-Bernoulli Hamiltonians -- Jean Bourgain: On the control problem for Schr~%#~127;odinger operators on tori -- Ronen Eldan and Joseph Lehec: Bounding the norm of a log-concave vector via thin-shell estimates -- Dima Faifman, Bo'az Klartag and Vitali Milman: On the oscillation rigidity of a Lipschitz function on a high-dimensional flat torus -- Dan Florentin, Vitali Milman and Alexander Segal: Identifying set inclusion by projective positions and mixed volumes.- Omer Friedland and Yosef Yomdin: Vitushkin-type theorems.- Apostolos Giannopoulos and Emanuel Milman: M-estimates for isotropic convex bodies and their Lq-centroid bodies -- Uri Grupel: Remarks on the Central Limit Theorem for non-convex bodies -- Benjamin Jaye and Fedor Nazarov: Reflectionless measures and the Mattila-Melnikov-Verdera uniform rectifiability theorem -- Bo'az Klartag: Logarithmically-concave Moment Measures I -- Alexander Koldobsky: Estimates for measures of sections of convex bodies -- Alexander V. Kolesnikov and Emanuel Milman: Remarks on the KLS conjecture and Hardy-type inequalities -- Rafal Latala: Modified Paouris inequality -- Michel Ledoux: Remarks on noise sensitivity, Brascamp-Lieb and Slepian inequalities -- Alexander E. Litvak and Susanna Spektor: Quantitative version of a Silverstein's result -- Amir Livne Bar-On: The (B) conjecture for uniform measures in the plane -- Galyna Livshytz: Maximal surface area of a convex set in Rn with respect to log-concave rotation invariant measures -- Elisabeth Meckes and Mark Meckes: On the equivalence of modes of convergence for log-concave measures -- Shahar Mendelson: A remark on the diameter of random sections of convex bodies -- Piotr Nayar and Tomasz Tkocz: A note on certain convolution operators -- Liran Rotem: On isotropicity with respect to a measure -- Rolf Schneider: A formula for mixed volumes -- Alexander Segal: On convergence of Blaschke and Minkowski symmetrization through stability results -- Sasha Sodin: Positive temperature versions of two theorems on first-passage percolation -- Konstantin E. Tikhomirov: The randomized Dvoretzky's theorem in `n1 and the-distribution.</fake:marcfield>
+      <rdamd:P30137>Contents: Dominique Bakry and Marguerite Zani: Random symmetric matrices on Clifford algebras -- Itai Benjamini: Gaussian free field on hyperbolic lattices -- Itai Benjamini and Pascal Maillard: Point-to-point distance in first passage percolation on (tree)Z -- Zbigniew Blocki: A lower bound for the Bergman kernel and the Bourgain-Milman inequality -- Jean Bourgain: An improved estimate in the restricted isometry problem -- Jean Bourgain: On eigenvalue spacings for the 1-D Anderson model with singular site distribution -- Jean Bourgain: On the local eigenvalue spacings for certain Anderson-Bernoulli Hamiltonians -- Jean Bourgain: On the control problem for Schr~%#~127;odinger operators on tori -- Ronen Eldan and Joseph Lehec: Bounding the norm of a log-concave vector via thin-shell estimates -- Dima Faifman, Bo'az Klartag and Vitali Milman: On the oscillation rigidity of a Lipschitz function on a high-dimensional flat torus -- Dan Florentin, Vitali Milman and Alexander Segal: Identifying set inclusion by projective positions and mixed volumes.- Omer Friedland and Yosef Yomdin: Vitushkin-type theorems.- Apostolos Giannopoulos and Emanuel Milman: M-estimates for isotropic convex bodies and their Lq-centroid bodies -- Uri Grupel: Remarks on the Central Limit Theorem for non-convex bodies -- Benjamin Jaye and Fedor Nazarov: Reflectionless measures and the Mattila-Melnikov-Verdera uniform rectifiability theorem -- Bo'az Klartag: Logarithmically-concave Moment Measures I -- Alexander Koldobsky: Estimates for measures of sections of convex bodies -- Alexander V. Kolesnikov and Emanuel Milman: Remarks on the KLS conjecture and Hardy-type inequalities -- Rafal Latala: Modified Paouris inequality -- Michel Ledoux: Remarks on noise sensitivity, Brascamp-Lieb and Slepian inequalities -- Alexander E. Litvak and Susanna Spektor: Quantitative version of a Silverstein's result -- Amir Livne Bar-On: The (B) conjecture for uniform measures in the plane -- Galyna Livshytz: Maximal surface area of a convex set in Rn with respect to log-concave rotation invariant measures -- Elisabeth Meckes and Mark Meckes: On the equivalence of modes of convergence for log-concave measures -- Shahar Mendelson: A remark on the diameter of random sections of convex bodies -- Piotr Nayar and Tomasz Tkocz: A note on certain convolution operators -- Liran Rotem: On isotropicity with respect to a measure -- Rolf Schneider: A formula for mixed volumes -- Alexander Segal: On convergence of Blaschke and Minkowski symmetrization through stability results -- Sasha Sodin: Positive temperature versions of two theorems on first-passage percolation -- Konstantin E. Tikhomirov: The randomized Dvoretzky's theorem in `n1 and the-distribution.</rdamd:P30137>
+      <!--Default relationship property used for http://marc2rda.edu/fake/99161805901301452age#d21e341-->
+      <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/99161805901301452age#d21e341"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/99161805901301452age#d21e355-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/99161805901301452age#d21e355"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/99161805901301452age#d21e360-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/99161805901301452age#d21e360"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161805901301452nom#d21e38">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>9783319094779</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+      <rdand:P80071>electronic bk.</rdand:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161805901301452nom#d21e43">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>3319094777</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+      <rdand:P80071>electronic bk.</rdand:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161805901301452nom#d21e48">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>3319094769</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+      <rdand:P80071>print</rdand:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161805901301452nom#d21e53">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>9783319094762</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+      <rdand:P80071>print</rdand:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161805901301452nom#d21e59">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>9783319094762</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+      <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161805901301452nom#d21e62">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>10.1007/978-3-319-09477-9</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/doi"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161805901301452age#d21e341">
+      <fake:marcfield>F711 2# $a Israel Seminar on Geometrical Aspects of Functional Analysis $d (2011-2013)</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Israel Seminar on Geometrical Aspects of Functional Analysis (2011-2013)</rdaad:P50375>
+      <rdaad:P50237>Meeting</rdaad:P50237>
+      <rdaad:P50039>2011-2013</rdaad:P50039>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161805901301452age#d21e355">
+      <fake:marcfield>F700 1# $a Klartag, Bo'az, $e editor.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Klartag, Bo'az</rdaad:P50377>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/99161805901301452age#d21e360">
+      <fake:marcfield>F700 1# $a Milman, Emanuel, $d 1977- $e editor. $1 https://id.oclc.org/worldcat/entity/E39PCjtJwDccJJxtf9XVBJFbtX</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Milman, Emanuel, 1977-</rdaad:P50377>
+      <rdaad:P50347>1977-</rdaad:P50347>
+      <rdaad:P50121>1977</rdaad:P50121>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PCjtJwDccJJxtf9XVBJFbtX</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#qa319">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">QA319</skos:notation>
+      <skos:altLabel>QA319</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rda/con#textfile">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>text file</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rda"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rda/con#pdf">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>PDF</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rda"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#functionalanalysiscongresses">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Functional analysis--Congresses</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#congresses">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Congresses</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#functionaldifferentialequationsasymptotictheorycongresses">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Functional differential equations--Asymptotic theory--Congresses</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#congresses">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Congresses</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#analysefonctionnellecongre%CC%80s">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Analyse fonctionnelle--Congrès</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#congre%CC%80s">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Congrès</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#e%CC%81quationsdiffe%CC%81rentiellesfonctionnellesthe%CC%81orieasymptotiquecongre%CC%80s">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Équations différentielles fonctionnelles--Théorie asymptotique--Congrès</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#congre%CC%80s">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Congrès</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#functionalanalysis">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Functional analysis</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#functionaldifferentialequationsasymptotictheory">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Functional differential equations--Asymptotic theory</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/mesh/con#congress">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Congress</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/mesh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/aat/con#proceedingsreports">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>proceedings (reports)</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#conferencepapersandproceedings">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Conference papers and proceedings</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#conferencepapersandproceedings">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Conference papers and proceedings</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvmgf/con#actesdecongre%CC%80s">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Actes de congrès</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf"/>
+   </rdf:Description>
+</rdf:RDF>

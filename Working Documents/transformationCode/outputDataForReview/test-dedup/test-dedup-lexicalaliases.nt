@@ -1,0 +1,182 @@
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/datatype/statementOfResponsibilityRelatingToTitleProper.en> "Bo'az Klartag, Emanuel Milman, editors" .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/object/identifierForManifestation.en> <http://marc2rda.edu/fake/99161805901301452nom#d21e48> .
+<http://marc2rda.edu/fake/99161805901301452age#d21e341> <http://rdaregistry.info/Elements/a/datatype/accessPointForCorporateBody.en> "Israel Seminar on Geometrical Aspects of Functional Analysis (2011-2013)" .
+<http://marc2rda.edu/fake/99161805901301452nom#d21e43> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdaregistry.info/Elements/c/Nomen.en> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://fakePropertiesForDemomarcfield> "F008 141024s2014    sz a    o     100 0 eng d" .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://rdaregistry.info/Elements/w/categoryOfWork.en> <https://doi.org/10.6069/uwlswd.t1gh-8294#1> .
+<http://marc2rda.edu/fake/99161805901301452age#d21e360> <http://rdaregistry.info/Elements/a/datatype/relatedTimespanOfPerson.en> "1977-" .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://rdaregistry.info/Elements/w/subject.en> <http://marc2rda.edu/fake/rvm/con#analysefonctionnellecongre%CC%80s> .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://fakePropertiesForDemomarcfield> "F650 #0 $a Functional differential equations $x Asymptotic theory $v Congresses." .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://fakePropertiesForDemomarcfield> "F655 #2 $a Congress" .
+<http://marc2rda.edu/fake/lcsh/con#congresses> <http://www.w3.org/2004/02/skos/core#prefLabel> "Congresses" .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/object/placeOfManifestation.en> <http://id.loc.gov/vocabulary/countries/sz> .
+<http://marc2rda.edu/fake/fast/con#conferencepapersandproceedings> <http://www.w3.org/2004/02/skos/core#inScheme> <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://fakePropertiesForDemomarcfield> "F300 ## $a 1 online resource (ix, 463 pages) : $b illustrations" .
+<http://marc2rda.edu/fake/99161805901301452nom#d21e38> <http://rdaregistry.info/Elements/n/datatype/noteOnNomen.en> "electronic bk." .
+<http://marc2rda.edu/fake/lcc/con#qa319> <http://www.w3.org/2004/02/skos/core#altLabel> "QA319" .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://rdaregistry.info/Elements/w/datatype/identifierForWork.en> "99161805901301452wor" .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/object/relatedCorporateBodyOfManifestation.en> <http://marc2rda.edu/fake/99161805901301452age#d21e341> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/object/identifierForManifestation.en> <http://marc2rda.edu/fake/99161805901301452nom#d21e62> .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://fakePropertiesForDemomarcfield> "F050 #4 $a QA319" .
+<http://marc2rda.edu/fake/99161805901301452man> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdaregistry.info/Elements/c/Manifestation.en> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/object/identifierForManifestation.en> <http://marc2rda.edu/fake/99161805901301452nom#d21e43> .
+<http://marc2rda.edu/fake/99161805901301452nom#d21e62> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdaregistry.info/Elements/c/Nomen.en> .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://rdaregistry.info/Elements/w/subject.en> <http://marc2rda.edu/fake/fast/con#functionaldifferentialequationsasymptotictheory> .
+<http://marc2rda.edu/fake/99161805901301452exp> <http://rdaregistry.info/Elements/e/datatype/summarizationOfContent.en> "As in the previous Seminar Notes, the current volume reflects general trends in the study of Geometric Aspects of Functional Analysis. Most of the papers deal with different aspects of Asymptotic Geometric Analysis, understood in a broad sense; many continue the study of geometric and volumetric properties of convex bodies and log-concave measures in high-dimensions and in particular the mean-norm, mean-width, metric entropy, spectral-gap, thin-shell and slicing parameters, with applications to Dvoretzky and Central-Limit-type results. The study of spectral properties of various systems, matrices, operators and potentials is another central theme in this volume. As expected, probabilistic tools play a significant role and probabilistic questions regarding Gaussian noise stability, the Gaussian Free Field and First Passage Percolation are also addressed. The historical connection to the field of Classical Convexity is also well represented with new properties and applications of mixed-volumes. The interplay between the real convex and complex pluri-subharmonic settings continues to manifest itself in several additional articles. All contributions are original research papers and were subject to the usual refereeing standards." .
+<http://marc2rda.edu/fake/rvm/con#e%CC%81quationsdiffe%CC%81rentiellesfonctionnellesthe%CC%81orieasymptotiquecongre%CC%80s> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.loc.gov/vocabulary/subjectSchemes/rvm> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://fakePropertiesForDemomarcfield> "F006 m     o  d        " .
+<http://marc2rda.edu/fake/fast/con#functionalanalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://marc2rda.edu/fake/99161805901301452exp> <http://rdaregistry.info/Elements/e/datatype/identifierForExpression.en> "99161805901301452exp" .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://rdaregistry.info/Elements/w/categoryOfWork.en> <https://doi.org/10.6069/uwlswd.f447-ax91#0> .
+<http://marc2rda.edu/fake/rvm/con#analysefonctionnellecongre%CC%80s> <http://www.w3.org/2004/02/skos/core#prefLabel> "Analyse fonctionnelle--Congrès" .
+<http://marc2rda.edu/fake/99161805901301452nom#d21e59> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdaregistry.info/Elements/c/Nomen.en> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/datatype/noteOnManifestation.en> "Contents: Dominique Bakry and Marguerite Zani: Random symmetric matrices on Clifford algebras -- Itai Benjamini: Gaussian free field on hyperbolic lattices -- Itai Benjamini and Pascal Maillard: Point-to-point distance in first passage percolation on (tree)Z -- Zbigniew Blocki: A lower bound for the Bergman kernel and the Bourgain-Milman inequality -- Jean Bourgain: An improved estimate in the restricted isometry problem -- Jean Bourgain: On eigenvalue spacings for the 1-D Anderson model with singular site distribution -- Jean Bourgain: On the local eigenvalue spacings for certain Anderson-Bernoulli Hamiltonians -- Jean Bourgain: On the control problem for Schr~%#~127;odinger operators on tori -- Ronen Eldan and Joseph Lehec: Bounding the norm of a log-concave vector via thin-shell estimates -- Dima Faifman, Bo'az Klartag and Vitali Milman: On the oscillation rigidity of a Lipschitz function on a high-dimensional flat torus -- Dan Florentin, Vitali Milman and Alexander Segal: Identifying set inclusion by projective positions and mixed volumes.- Omer Friedland and Yosef Yomdin: Vitushkin-type theorems.- Apostolos Giannopoulos and Emanuel Milman: M-estimates for isotropic convex bodies and their Lq-centroid bodies -- Uri Grupel: Remarks on the Central Limit Theorem for non-convex bodies -- Benjamin Jaye and Fedor Nazarov: Reflectionless measures and the Mattila-Melnikov-Verdera uniform rectifiability theorem -- Bo'az Klartag: Logarithmically-concave Moment Measures I -- Alexander Koldobsky: Estimates for measures of sections of convex bodies -- Alexander V. Kolesnikov and Emanuel Milman: Remarks on the KLS conjecture and Hardy-type inequalities -- Rafal Latala: Modified Paouris inequality -- Michel Ledoux: Remarks on noise sensitivity, Brascamp-Lieb and Slepian inequalities -- Alexander E. Litvak and Susanna Spektor: Quantitative version of a Silverstein's result -- Amir Livne Bar-On: The (B) conjecture for uniform measures in the plane -- Galyna Livshytz: Maximal surface area of a convex set in Rn with respect to log-concave rotation invariant measures -- Elisabeth Meckes and Mark Meckes: On the equivalence of modes of convergence for log-concave measures -- Shahar Mendelson: A remark on the diameter of random sections of convex bodies -- Piotr Nayar and Tomasz Tkocz: A note on certain convolution operators -- Liran Rotem: On isotropicity with respect to a measure -- Rolf Schneider: A formula for mixed volumes -- Alexander Segal: On convergence of Blaschke and Minkowski symmetrization through stability results -- Sasha Sodin: Positive temperature versions of two theorems on first-passage percolation -- Konstantin E. Tikhomirov: The randomized Dvoretzky's theorem in `n1 and the-distribution." .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://rdaregistry.info/Elements/w/datatype/titleOfWork.en> "Geometric aspects of functional analysis" .
+<http://marc2rda.edu/fake/fast/con#functionalanalysis> <http://www.w3.org/2004/02/skos/core#prefLabel> "Functional analysis" .
+<http://marc2rda.edu/fake/fast/con#functionalanalysis> <http://www.w3.org/2004/02/skos/core#inScheme> <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+<http://marc2rda.edu/fake/99161805901301452nom#d21e48> <http://rdaregistry.info/Elements/n/datatype/nomenString.en> "3319094769" .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://fakePropertiesForDemomarcfield> "F655 #7 $a Actes de congrès. $2 rvmgf" .
+<http://marc2rda.edu/fake/99161805901301452man> <http://fakePropertiesForDemomarcfield> "F505 0# $a Dominique Bakry and Marguerite Zani: Random symmetric matrices on Clifford algebras -- Itai Benjamini: Gaussian free field on hyperbolic lattices -- Itai Benjamini and Pascal Maillard: Point-to-point distance in first passage percolation on (tree)Z -- Zbigniew Blocki: A lower bound for the Bergman kernel and the Bourgain-Milman inequality -- Jean Bourgain: An improved estimate in the restricted isometry problem -- Jean Bourgain: On eigenvalue spacings for the 1-D Anderson model with singular site distribution -- Jean Bourgain: On the local eigenvalue spacings for certain Anderson-Bernoulli Hamiltonians -- Jean Bourgain: On the control problem for Schr~%#~127;odinger operators on tori -- Ronen Eldan and Joseph Lehec: Bounding the norm of a log-concave vector via thin-shell estimates -- Dima Faifman, Bo'az Klartag and Vitali Milman: On the oscillation rigidity of a Lipschitz function on a high-dimensional flat torus -- Dan Florentin, Vitali Milman and Alexander Segal: Identifying set inclusion by projective positions and mixed volumes.- Omer Friedland and Yosef Yomdin: Vitushkin-type theorems.- Apostolos Giannopoulos and Emanuel Milman: M-estimates for isotropic convex bodies and their Lq-centroid bodies -- Uri Grupel: Remarks on the Central Limit Theorem for non-convex bodies -- Benjamin Jaye and Fedor Nazarov: Reflectionless measures and the Mattila-Melnikov-Verdera uniform rectifiability theorem -- Bo'az Klartag: Logarithmically-concave Moment Measures I -- Alexander Koldobsky: Estimates for measures of sections of convex bodies -- Alexander V. Kolesnikov and Emanuel Milman: Remarks on the KLS conjecture and Hardy-type inequalities -- Rafal Latala: Modified Paouris inequality -- Michel Ledoux: Remarks on noise sensitivity, Brascamp-Lieb and Slepian inequalities -- Alexander E. Litvak and Susanna Spektor: Quantitative version of a Silverstein's result -- Amir Livne Bar-On: The (B) conjecture for uniform measures in the plane -- Galyna Livshytz: Maximal surface area of a convex set in Rn with respect to log-concave rotation invariant measures -- Elisabeth Meckes and Mark Meckes: On the equivalence of modes of convergence for log-concave measures -- Shahar Mendelson: A remark on the diameter of random sections of convex bodies -- Piotr Nayar and Tomasz Tkocz: A note on certain convolution operators -- Liran Rotem: On isotropicity with respect to a measure -- Rolf Schneider: A formula for mixed volumes -- Alexander Segal: On convergence of Blaschke and Minkowski symmetrization through stability results -- Sasha Sodin: Positive temperature versions of two theorems on first-passage percolation -- Konstantin E. Tikhomirov: The randomized Dvoretzky's theorem in `n1 and the-distribution." .
+<http://marc2rda.edu/fake/99161805901301452age#d21e355> <http://fakePropertiesForDemomarcfield> "F700 1# $a Klartag, Bo'az, $e editor." .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/object/relatedPersonOfManifestation.en> <http://marc2rda.edu/fake/99161805901301452age#d21e360> .
+<http://marc2rda.edu/fake/lcgft/con#conferencepapersandproceedings> <http://www.w3.org/2004/02/skos/core#prefLabel> "Conference papers and proceedings" .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://rdaregistry.info/Elements/w/subject.en> <http://marc2rda.edu/fake/fast/con#functionalanalysis> .
+<http://marc2rda.edu/fake/99161805901301452nom#d21e38> <http://rdaregistry.info/Elements/n/datatype/nomenString.en> "9783319094779" .
+<http://marc2rda.edu/fake/99161805901301452nom#d21e48> <http://rdaregistry.info/Elements/n/schemeOfNomen.en> <http://id.loc.gov/vocabulary/identifiers/isbn> .
+<http://marc2rda.edu/fake/fast/con#functionaldifferentialequationsasymptotictheory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://fakePropertiesForDemomarcfield> "F650 #7 $a Functional differential equations $x Asymptotic theory $2 fast" .
+<http://marc2rda.edu/fake/99161805901301452man> <http://fakePropertiesForDemomarcfield> "F347 ## $a text file $b PDF $2 rda" .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/carrierType.en> <http://id.loc.gov/vocabulary/carriers/cr> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://fakePropertiesForDemomarcfield> "F546 ## $a English." .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/datatype/placeOfPublication.en> "Cham" .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://rdaregistry.info/Elements/w/datatype/categoryOfWork.en> "Congresses" .
+<http://marc2rda.edu/fake/99161805901301452age#d21e360> <http://rdaregistry.info/Elements/a/datatype/dateOfBirth.en> "1977" .
+<http://marc2rda.edu/fake/99161805901301452man> <http://fakePropertiesForDemomarcfield> "F588 0# $a Online resource; title from PDF title page (SpringerLink, viewed October 24, 2014)." .
+<http://marc2rda.edu/fake/99161805901301452nom#d21e53> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdaregistry.info/Elements/c/Nomen.en> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/datatype/seriesStatement.en> "Lecture Notes in Mathematics, 0075-8434 ; 2116" .
+<http://marc2rda.edu/fake/99161805901301452exp> <http://rdaregistry.info/Elements/e/object/manifestationOfExpression.en> <http://marc2rda.edu/fake/99161805901301452man> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/object/identifierForManifestation.en> <http://marc2rda.edu/fake/99161805901301452nom#d21e53> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/datatype/nameOfPublisher.en> "Springer" .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/datatype/publicationStatement.en> "Cham : Springer, 2014." .
+<http://marc2rda.edu/fake/99161805901301452nom#d21e53> <http://rdaregistry.info/Elements/n/datatype/noteOnNomen.en> "print" .
+<http://marc2rda.edu/fake/lcsh/con#functionalanalysiscongresses> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
+<http://marc2rda.edu/fake/99161805901301452age#d21e360> <http://rdaregistry.info/Elements/a/datatype/accessPointForPerson.en> "Milman, Emanuel, 1977-" .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdaregistry.info/Elements/c/Work.en> .
+<http://marc2rda.edu/fake/rda/con#textfile> <http://www.w3.org/2004/02/skos/core#inScheme> <http://id.loc.gov/vocabulary/genreFormSchemes/rda> .
+<http://marc2rda.edu/fake/rda/con#pdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://marc2rda.edu/fake/99161805901301452age#d21e341> <http://fakePropertiesForDemomarcfield> "F711 2# $a Israel Seminar on Geometrical Aspects of Functional Analysis $d (2011-2013)" .
+<http://marc2rda.edu/fake/rvm/con#analysefonctionnellecongre%CC%80s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://marc2rda.edu/fake/mesh/con#congress> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.loc.gov/vocabulary/subjectSchemes/mesh> .
+<http://marc2rda.edu/fake/99161805901301452exp> <http://rdaregistry.info/Elements/e/object/workExpressed.en> <http://marc2rda.edu/fake/99161805901301452wor> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/datatype/titleProper.en> "Geometric aspects of functional analysis" .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/object/expressionManifested.en> <http://marc2rda.edu/fake/99161805901301452exp> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://fakePropertiesForDemomarcfield> "F338 ## $a online resource $b cr $2 rdacarrier" .
+<http://marc2rda.edu/fake/99161805901301452man> <http://fakePropertiesForDemomarcfield> "F337 ## $a computer $b c $2 rdamedia" .
+<http://marc2rda.edu/fake/rvmgf/con#actesdecongre%CC%80s> <http://www.w3.org/2004/02/skos/core#prefLabel> "Actes de congrès" .
+<http://marc2rda.edu/fake/99161805901301452nom#d21e38> <http://rdaregistry.info/Elements/n/schemeOfNomen.en> <http://id.loc.gov/vocabulary/identifiers/isbn> .
+<http://marc2rda.edu/fake/rvmgf/con#actesdecongre%CC%80s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://marc2rda.edu/fake/fast/con#functionaldifferentialequationsasymptotictheory> <http://www.w3.org/2004/02/skos/core#prefLabel> "Functional differential equations--Asymptotic theory" .
+<http://marc2rda.edu/fake/99161805901301452nom#d21e43> <http://rdaregistry.info/Elements/n/schemeOfNomen.en> <http://id.loc.gov/vocabulary/identifiers/isbn> .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://rdaregistry.info/Elements/w/subject.en> <http://marc2rda.edu/fake/lcsh/con#functionalanalysiscongresses> .
+<http://marc2rda.edu/fake/99161805901301452exp> <http://fakePropertiesForDemomarcfield> "F008 141024s2014    sz a    o     100 0 eng d" .
+<http://marc2rda.edu/fake/fast/con#conferencepapersandproceedings> <http://www.w3.org/2004/02/skos/core#prefLabel> "Conference papers and proceedings" .
+<http://marc2rda.edu/fake/rda/con#textfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/object/identifierForManifestation.en> <http://marc2rda.edu/fake/99161805901301452nom#d21e38> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/datatype/extentOfManifestation.en> "1 online resource (ix, 463 pages) : illustrations" .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://fakePropertiesForDemomarcfield> "F006 m     o  d        " .
+<http://marc2rda.edu/fake/lcgft/con#conferencepapersandproceedings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://fakePropertiesForDemomarcfield> "F024 7# $a 10.1007/978-3-319-09477-9 $2 doi" .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/illustrativeContent.en> <http://rdaregistry.info/termList/IllusContent/1014> .
+<http://marc2rda.edu/fake/99161805901301452exp> <http://rdaregistry.info/Elements/e/languageOfExpression.en> <http://id.loc.gov/vocabulary/languages/eng> .
+<http://marc2rda.edu/fake/lcc/con#qa319> <http://www.w3.org/2004/02/skos/core#inScheme> <http://id.loc.gov/vocabulary/classSchemes/lcc> .
+<http://marc2rda.edu/fake/lcc/con#qa319> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://marc2rda.edu/fake/rda/con#pdf> <http://www.w3.org/2004/02/skos/core#inScheme> <http://id.loc.gov/vocabulary/genreFormSchemes/rda> .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://rdaregistry.info/Elements/w/categoryOfWork.en> <http://marc2rda.edu/fake/rvmgf/con#actesdecongre%CC%80s> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://fakePropertiesForDemomarcfield> "F020 ## $a 3319094769 $q (print)" .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://rdaregistry.info/Elements/w/subject.en> <http://marc2rda.edu/fake/lcc/con#qa319> .
+<http://marc2rda.edu/fake/rvm/con#congre%CC%80s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://marc2rda.edu/fake/lcsh/con#congresses> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://fakePropertiesForDemomarcfield> "F245 00 $a Geometric aspects of functional analysis : $b Israel Seminar (GAFA) 2011-2013 / $c Bo'az Klartag, Emanuel Milman, editors." .
+<http://marc2rda.edu/fake/99161805901301452man> <http://fakePropertiesForDemomarcfield> "F020 ## $a 9783319094779 $q (electronic bk.)" .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/object/identifierForManifestation.en> <http://marc2rda.edu/fake/99161805901301452nom#d21e59> .
+<http://marc2rda.edu/fake/aat/con#proceedingsreports> <http://www.w3.org/2004/02/skos/core#prefLabel> "proceedings (reports)" .
+<http://marc2rda.edu/fake/rvm/con#congre%CC%80s> <http://www.w3.org/2004/02/skos/core#prefLabel> "Congrès" .
+<http://marc2rda.edu/fake/lcsh/con#functionaldifferentialequationsasymptotictheorycongresses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://rdaregistry.info/Elements/w/categoryOfWork.en> <http://marc2rda.edu/fake/fast/con#conferencepapersandproceedings> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/datatype/noteOnManifestation.en> "Source of description: Online resource; title from PDF title page (SpringerLink, viewed October 24, 2014)." .
+<http://marc2rda.edu/fake/99161805901301452exp> <http://fakePropertiesForDemomarcfield> "F006 m     o  d        " .
+<http://marc2rda.edu/fake/99161805901301452nom#d21e43> <http://rdaregistry.info/Elements/n/datatype/noteOnNomen.en> "electronic bk." .
+<http://marc2rda.edu/fake/lcc/con#qa319> <http://www.w3.org/2004/02/skos/core#notation> "QA319"^^<http://www.wikidata.org/entity/Q130324983> .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://fakePropertiesForDemomarcfield> "F655 #7 $a proceedings (reports) $2 aat" .
+<http://marc2rda.edu/fake/99161805901301452nom#d21e59> <http://rdaregistry.info/Elements/n/schemeOfNomen.en> <http://id.loc.gov/vocabulary/identifiers/isbn> .
+<http://marc2rda.edu/fake/fast/con#functionaldifferentialequationsasymptotictheory> <http://www.w3.org/2004/02/skos/core#inScheme> <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://fakePropertiesForDemomarcfield> "F020 ## $z 9783319094762" .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/encodingFormat.en> <http://marc2rda.edu/fake/rda/con#pdf> .
+<http://marc2rda.edu/fake/99161805901301452exp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdaregistry.info/Elements/c/Expression.en> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://fakePropertiesForDemomarcfield> "F020 ## $a 3319094777 $q (electronic bk.)" .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://fakePropertiesForDemomarcfield> "F008 141024s2014    sz a    o     100 0 eng d" .
+<http://marc2rda.edu/fake/lcsh/con#functionaldifferentialequationsasymptotictheorycongresses> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
+<http://marc2rda.edu/fake/lcgft/con#conferencepapersandproceedings> <http://www.w3.org/2004/02/skos/core#inScheme> <http://id.loc.gov/vocabulary/genreFormSchemes/lcgft> .
+<http://marc2rda.edu/fake/99161805901301452age#d21e360> <http://rdaregistry.info/Elements/a/datatype/identifierForPerson.en> "https://id.oclc.org/worldcat/entity/E39PCjtJwDccJJxtf9XVBJFbtX" .
+<http://marc2rda.edu/fake/aat/con#proceedingsreports> <http://www.w3.org/2004/02/skos/core#inScheme> <http://id.loc.gov/vocabulary/subjectSchemes/aat> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/categoryOfManifestation.en> <https://doi.org/10.6069/uwlswd.25z4-e963#m> .
+<http://marc2rda.edu/fake/99161805901301452age#d21e360> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdaregistry.info/Elements/c/Person.en> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/datatype/dateOfPublication.en> "2014" .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://rdaregistry.info/Elements/w/categoryOfWork.en> <http://marc2rda.edu/fake/aat/con#proceedingsreports> .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://rdaregistry.info/Elements/w/categoryOfWork.en> <http://marc2rda.edu/fake/lcgft/con#conferencepapersandproceedings> .
+<http://marc2rda.edu/fake/99161805901301452age#d21e341> <http://rdaregistry.info/Elements/a/datatype/categoryOfCorporateBody.en> "Meeting" .
+<http://marc2rda.edu/fake/rvm/con#e%CC%81quationsdiffe%CC%81rentiellesfonctionnellesthe%CC%81orieasymptotiquecongre%CC%80s> <http://www.w3.org/2004/02/skos/core#prefLabel> "Équations différentielles fonctionnelles--Théorie asymptotique--Congrès" .
+<http://marc2rda.edu/fake/lcsh/con#congresses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://fakePropertiesForDemomarcfield> "F650 #6 $a Analyse fonctionnelle $v Congrès." .
+<http://marc2rda.edu/fake/aat/con#proceedingsreports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://marc2rda.edu/fake/fast/con#conferencepapersandproceedings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://rdaregistry.info/Elements/w/datatype/categoryOfWork.en> "Congrès" .
+<http://marc2rda.edu/fake/99161805901301452exp> <http://fakePropertiesForDemomarcfield> "F546 ## $a English." .
+<http://marc2rda.edu/fake/99161805901301452nom#d21e53> <http://rdaregistry.info/Elements/n/schemeOfNomen.en> <http://id.loc.gov/vocabulary/identifiers/isbn> .
+<http://marc2rda.edu/fake/99161805901301452age#d21e355> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdaregistry.info/Elements/c/Person.en> .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://fakePropertiesForDemomarcfield> "F655 #7 $a Conference papers and proceedings $2 fast" .
+<http://marc2rda.edu/fake/99161805901301452nom#d21e62> <http://rdaregistry.info/Elements/n/datatype/nomenString.en> "10.1007/978-3-319-09477-9" .
+<http://marc2rda.edu/fake/rda/con#textfile> <http://www.w3.org/2004/02/skos/core#prefLabel> "text file" .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/carrierType.en> <http://rdaregistry.info/termList/RDACarrierType/1018> .
+<http://marc2rda.edu/fake/99161805901301452nom#d21e62> <http://rdaregistry.info/Elements/n/schemeOfNomen.en> <http://id.loc.gov/vocabulary/identifiers/doi> .
+<http://marc2rda.edu/fake/99161805901301452age#d21e341> <http://rdaregistry.info/Elements/a/datatype/dateOfConference.en> "2011-2013" .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://rdaregistry.info/Elements/w/subject.en> <http://marc2rda.edu/fake/rvm/con#e%CC%81quationsdiffe%CC%81rentiellesfonctionnellesthe%CC%81orieasymptotiquecongre%CC%80s> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://fakePropertiesForDemomarcfield> "F490 1# $a Lecture Notes in Mathematics, $x 0075-8434 ; $v 2116" .
+<http://marc2rda.edu/fake/99161805901301452exp> <http://fakePropertiesForDemomarcfield> "F520 ## $a As in the previous Seminar Notes, the current volume reflects general trends in the study of Geometric Aspects of Functional Analysis. Most of the papers deal with different aspects of Asymptotic Geometric Analysis, understood in a broad sense; many continue the study of geometric and volumetric properties of convex bodies and log-concave measures in high-dimensions and in particular the mean-norm, mean-width, metric entropy, spectral-gap, thin-shell and slicing parameters, with applications to Dvoretzky and Central-Limit-type results. The study of spectral properties of various systems, matrices, operators and potentials is another central theme in this volume. As expected, probabilistic tools play a significant role and probabilistic questions regarding Gaussian noise stability, the Gaussian Free Field and First Passage Percolation are also addressed. The historical connection to the field of Classical Convexity is also well represented with new properties and applications of mixed-volumes. The interplay between the real convex and complex pluri-subharmonic settings continues to manifest itself in several additional articles. All contributions are original research papers and were subject to the usual refereeing standards." .
+<http://marc2rda.edu/fake/lcsh/con#functionaldifferentialequationsasymptotictheorycongresses> <http://www.w3.org/2004/02/skos/core#prefLabel> "Functional differential equations--Asymptotic theory--Congresses" .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://fakePropertiesForDemomarcfield> "F650 #0 $a Functional analysis $v Congresses." .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/datatype/noteOnManifestation.en> "English." .
+<http://marc2rda.edu/fake/99161805901301452nom#d21e48> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdaregistry.info/Elements/c/Nomen.en> .
+<http://marc2rda.edu/fake/rvm/con#congre%CC%80s> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.loc.gov/vocabulary/subjectSchemes/rvm> .
+<http://marc2rda.edu/fake/lcsh/con#functionalanalysiscongresses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://fakePropertiesForDemomarcfield> "F655 #7 $a Conference papers and proceedings. $2 lcgft" .
+<http://marc2rda.edu/fake/rvmgf/con#actesdecongre%CC%80s> <http://www.w3.org/2004/02/skos/core#inScheme> <http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/mediaType.en> <http://id.loc.gov/vocabulary/mediaTypes/c> .
+<http://marc2rda.edu/fake/rvm/con#e%CC%81quationsdiffe%CC%81rentiellesfonctionnellesthe%CC%81orieasymptotiquecongre%CC%80s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://fakePropertiesForDemomarcfield> "F264 #1 $a Cham : $b Springer, $c 2014." .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://rdaregistry.info/Elements/w/subject.en> <http://marc2rda.edu/fake/lcsh/con#functionaldifferentialequationsasymptotictheorycongresses> .
+<http://marc2rda.edu/fake/rda/con#pdf> <http://www.w3.org/2004/02/skos/core#prefLabel> "PDF" .
+<http://marc2rda.edu/fake/99161805901301452nom#d21e59> <http://rdaregistry.info/Elements/n/datatype/nomenString.en> "9783319094762" .
+<http://marc2rda.edu/fake/99161805901301452nom#d21e59> <http://rdaregistry.info/Elements/n/statusOfIdentification.en> <http://id.loc.gov/vocabulary/mstatus/cancinv> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://fakePropertiesForDemomarcfield> "F020 ## $a 9783319094762 $q (print)" .
+<http://marc2rda.edu/fake/99161805901301452nom#d21e48> <http://rdaregistry.info/Elements/n/datatype/noteOnNomen.en> "print" .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/datatype/otherTitleInformation.en> "Israel Seminar (GAFA) 2011-2013" .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/carrierType.en> <https://doi.org/10.6069/uwlswd.3d5s-zx23#o> .
+<http://marc2rda.edu/fake/mesh/con#congress> <http://www.w3.org/2004/02/skos/core#prefLabel> "Congress" .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://rdaregistry.info/Elements/w/categoryOfWork.en> <http://marc2rda.edu/fake/mesh/con#congress> .
+<http://marc2rda.edu/fake/99161805901301452nom#d21e43> <http://rdaregistry.info/Elements/n/datatype/nomenString.en> "3319094777" .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/object/relatedPersonOfManifestation.en> <http://marc2rda.edu/fake/99161805901301452age#d21e355> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/fileType.en> <http://marc2rda.edu/fake/rda/con#textfile> .
+<http://marc2rda.edu/fake/lcsh/con#functionalanalysiscongresses> <http://www.w3.org/2004/02/skos/core#prefLabel> "Functional analysis--Congresses" .
+<http://marc2rda.edu/fake/mesh/con#congress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://marc2rda.edu/fake/rvm/con#analysefonctionnellecongre%CC%80s> <http://www.w3.org/2004/02/skos/core#inScheme> <https://id.loc.gov/vocabulary/subjectSchemes/rvm> .
+<http://marc2rda.edu/fake/99161805901301452man> <http://rdaregistry.info/Elements/m/fileType.en> <https://doi.org/10.6069/uwlswd.mkjn-bp10#d> .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://fakePropertiesForDemomarcfield> "F650 #6 $a Équations différentielles fonctionnelles $x Théorie asymptotique $v Congrès." .
+<http://marc2rda.edu/fake/99161805901301452man> <http://fakePropertiesForDemomarcfield> "F245 00 $a Geometric aspects of functional analysis : $b Israel Seminar (GAFA) 2011-2013 / $c Bo'az Klartag, Emanuel Milman, editors." .
+<http://marc2rda.edu/fake/99161805901301452age#d21e360> <http://fakePropertiesForDemomarcfield> "F700 1# $a Milman, Emanuel, $d 1977- $e editor. $1 https://id.oclc.org/worldcat/entity/E39PCjtJwDccJJxtf9XVBJFbtX" .
+<http://marc2rda.edu/fake/99161805901301452age#d21e341> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdaregistry.info/Elements/c/CorporateBody.en> .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://rdaregistry.info/Elements/w/object/expressionOfWork.en> <http://marc2rda.edu/fake/99161805901301452exp> .
+<http://marc2rda.edu/fake/99161805901301452nom#d21e53> <http://rdaregistry.info/Elements/n/datatype/nomenString.en> "9783319094762" .
+<http://marc2rda.edu/fake/99161805901301452wor> <http://fakePropertiesForDemomarcfield> "F650 #7 $a Functional analysis $2 fast" .
+<http://marc2rda.edu/fake/99161805901301452age#d21e355> <http://rdaregistry.info/Elements/a/datatype/accessPointForPerson.en> "Klartag, Bo'az" .
+<http://marc2rda.edu/fake/99161805901301452nom#d21e38> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdaregistry.info/Elements/c/Nomen.en> .
