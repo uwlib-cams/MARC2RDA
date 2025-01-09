@@ -220,6 +220,240 @@
         </xsl:if>
     </xsl:template>
 
+    <!-- 335 -->
+    <xsl:template name="F335-string" expand-text="yes">
+        <!-- if there are no IRIs to use, continue to $a's and $b's -->
+        <xsl:if test="not(marc:subfield[@code = '1']) and not(contains(marc:subfield[@code = '0'], 'http'))">
+            
+            <!-- pattern testing variables -->
+            <!-- aTest determines whether all $a's are followed by $b's -->
+            <xsl:variable name="aTest" select="if (every $a in ./marc:subfield[@code = 'a'] satisfies 
+                ($a[following-sibling::marc:subfield[1][@code = 'b']])) then 'Yes' else 'No'"/>
+            <!-- bTest determines whether all $b's are preceded by $a's -->
+            <!-- if both aTest and bTest are true, then the field is patterned ababab... -->
+            <xsl:variable name="bTest" select="if (every $b in ./marc:subfield[@code = 'b'] satisfies
+                ($b[preceding-sibling::marc:subfield[1][@code = 'a']])) then 'Yes' else 'No'"/>
+            
+            <xsl:choose>
+                <!-- if there's a $2 -->
+                <xsl:when test="marc:subfield[@code = '2']">
+                    <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
+                    <xsl:choose>
+                        <!-- when $2 starts with rda, we lookup the $2 code and then the $a/$b terms from there-->
+                        <xsl:when test="matches($sub2, '^rda.+')">
+                            <!-- for $a's, rdaTermLookup is called -->
+                            <xsl:for-each select="marc:subfield[@code = 'a']">
+                                <xsl:variable name="rdaIRI" select="uwf:rdaTermLookup($sub2, .)"/>
+                                <!-- only output the property if the function returns a value -->
+                                <!-- we don't want a triple with no object -->
+                                <xsl:if test="$rdaIRI">
+                                    <rdaw:P10365 rdf:resource="{$rdaIRI}"/>
+                                    <xsl:if test="../marc:subfield[@code = '3']">
+                                        <rdawd:P10330>Extension plan {$rdaIRI} applies to the work's {../marc:subfield[@code = '3']}</rdawd:P10330>
+                                    </xsl:if>
+                                </xsl:if>
+                            </xsl:for-each>
+                            <!-- for $b's it's rdaCodeLookup (both in m2r-functions) -->
+                            <xsl:for-each select="marc:subfield[@code = 'b']">
+                                <xsl:variable name="rdaIRI" select="uwf:rdaCodeLookup($sub2, .)"/>
+                                <xsl:if test="$rdaIRI">
+                                    <rdaw:P10365 rdf:resource="{$rdaIRI}"/>
+                                    <xsl:if test="../marc:subfield[@code = '3']">
+                                        <rdawd:P10330>Extension plan {$rdaIRI} applies to the work's {../marc:subfield[@code = '3']}</rdawd:P10330>
+                                    </xsl:if>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:when>
+                        
+                        <!-- other $2s, we mint concepts -->
+                        <xsl:otherwise>
+                            <xsl:choose>
+                                <!-- no b's -->
+                                <xsl:when test="not(marc:subfield[@code = 'b'])">
+                                    <!-- we only mint concepts for 335s or unpaired 880s, paired 880s are combined with their match into one concept -->
+                                    <xsl:if test="@tag = '335' or substring(marc:subfield[@code = '6'], 1, 6) = '335-00'">
+                                        <xsl:for-each select="marc:subfield[@code = 'a']">
+                                            <rdaw:P10365 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
+                                            <xsl:if test="../marc:subfield[@code = '3']">
+                                                <rdawd:P10330>Extension plan {uwf:conceptIRI($sub2, .)} applies to the work's {../marc:subfield[@code = '3']}</rdawd:P10330>
+                                            </xsl:if>
+                                        </xsl:for-each>
+                                    </xsl:if>
+                                </xsl:when>
+                                <!-- no a's - use b's -->
+                                <xsl:when test="not(marc:subfield[@code = 'a'])">
+                                    <xsl:if test="@tag = '335' or substring(marc:subfield[@code = '6'], 1, 6) = '335-00'">
+                                        <xsl:for-each select="marc:subfield[@code = 'b']">
+                                            <rdaw:P10365 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
+                                            <xsl:if test="../marc:subfield[@code = '3']">
+                                                <rdawd:P10330>Extension plan {uwf:conceptIRI($sub2, .)} applies to the work's {../marc:subfield[@code = '3']}</rdawd:P10330>
+                                            </xsl:if>
+                                        </xsl:for-each>
+                                    </xsl:if>
+                                </xsl:when>
+                                <!-- a's and b's in abab pattern -->
+                                <xsl:when test="$aTest = 'Yes' and $bTest = 'Yes'">
+                                    <xsl:if test="@tag = '335' or substring(marc:subfield[@code = '6'], 1, 6) = '335-00'">
+                                        <xsl:for-each select="marc:subfield[@code = 'a']">
+                                            <rdaw:P10365 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
+                                            <xsl:if test="../marc:subfield[@code = '3']">
+                                                <rdawd:P10330>Extension plan {uwf:conceptIRI($sub2, .)} applies to the work's {../marc:subfield[@code = '3']}</rdawd:P10330>
+                                            </xsl:if>
+                                        </xsl:for-each>
+                                    </xsl:if>
+                                </xsl:when>
+                                <!-- a's and b's in any other pattern - ignore b's -->
+                                <xsl:otherwise>
+                                    <xsl:if test="@tag = '335' or substring(marc:subfield[@code = '6'], 1, 6) = '335-00'">
+                                        <xsl:for-each select="marc:subfield[@code = 'a']">
+                                            <rdaw:P10365 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
+                                            <xsl:if test="../marc:subfield[@code = '3']">
+                                                <rdawd:P10330>Extension plan {uwf:conceptIRI($sub2, .)} applies to the work's {../marc:subfield[@code = '3']}</rdawd:P10330>
+                                            </xsl:if>
+                                        </xsl:for-each>
+                                    </xsl:if>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:when>
+                
+                <!-- no $2 -->
+                <xsl:otherwise>
+                    <xsl:for-each select="marc:subfield[@code = 'a']">
+                        <rdawd:P10365>
+                            <xsl:value-of select="."/>
+                        </rdawd:P10365>
+                        <xsl:if test="../marc:subfield[@code = '3']">
+                            <rdawd:P10330>Extension plan {.} applies to the work's {../marc:subfield[@code = '3']}</rdawd:P10330>
+                        </xsl:if>
+                    </xsl:for-each>
+                    <xsl:for-each select="marc:subfield[@code = 'b']">
+                        <rdawd:P10365>
+                            <xsl:value-of select="."/>
+                        </rdawd:P10365>
+                        <xsl:if test="../marc:subfield[@code = '3']">
+                            <rdawd:P10330>Extension plan {.} applies to the work's {../marc:subfield[@code = '3']}</rdawd:P10330>
+                        </xsl:if>
+                    </xsl:for-each>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F335-concept">
+        <!-- mint concepts when $2 is not rdaep -->
+        <xsl:if test="not(marc:subfield[@code = '1']) and not(contains(marc:subfield[@code = '0'], 'http'))">
+            <xsl:if test="marc:subfield[@code = '2']">
+                <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
+                <xsl:variable name="linked880">
+                    <xsl:if test="@tag = '335' and marc:subfield[@code = '6']">
+                        <xsl:variable name="occNum" select="concat('335-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                        <xsl:copy-of select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]"/>
+                    </xsl:if>
+                </xsl:variable>
+                <xsl:if test="not(matches($sub2, '^rda.+'))">
+                    <!-- same test variables as in F335-string -->
+                    <xsl:variable name="aTest" select="if (every $a in ./marc:subfield[@code = 'a'] satisfies 
+                        ($a[following-sibling::marc:subfield[1][@code = 'b']])) then 'Yes' else 'No'"/>
+                    <xsl:variable name="bTest" select="if (every $b in ./marc:subfield[@code = 'b'] satisfies
+                        ($b[preceding-sibling::marc:subfield[1][@code = 'a']])) then 'Yes' else 'No'"/>
+                    
+                    <xsl:choose>
+                        <!-- no b's -->
+                        <xsl:when test="not(marc:subfield[@code = 'b'])">
+                            <xsl:for-each select="marc:subfield[@code = 'a']">
+                                <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
+                                    <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '334')"/>
+                                    <xsl:if test="$linked880">
+                                        <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'a']">
+                                            <xsl:copy-of select="uwf:fillConcept(., '', '', '880')"/>
+                                        </xsl:for-each>
+                                    </xsl:if>
+                                </rdf:Description>
+                            </xsl:for-each>
+                        </xsl:when>
+                        <!-- no a's - use b's -->
+                        <xsl:when test="not(marc:subfield[@code = 'a'])">
+                            <xsl:for-each select="marc:subfield[@code = 'b']">
+                                <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
+                                    <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '334')"/>
+                                    <xsl:if test="$linked880">
+                                        <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'b']">
+                                            <xsl:copy-of select="uwf:fillConcept(., '', '', '880')"/>
+                                        </xsl:for-each>
+                                    </xsl:if>
+                                </rdf:Description>
+                            </xsl:for-each>
+                        </xsl:when>
+                        <!-- a's and b's in abab pattern, we include $b as the skos:notation -->
+                        <xsl:when test="$aTest = 'Yes' and $bTest = 'Yes'">
+                            <xsl:for-each select="marc:subfield[@code = 'a']">
+                                <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
+                                    <xsl:copy-of select="uwf:fillConcept( ., $sub2, ./following-sibling::marc:subfield[@code = 'b'][1], '334')"/>
+                                    <xsl:if test="$linked880">
+                                        <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'a']">
+                                            <xsl:copy-of select="uwf:fillConcept( ., '', ./following-sibling::marc:subfield[@code = 'b'][1], '880')"/>
+                                        </xsl:for-each>
+                                    </xsl:if>
+                                </rdf:Description>
+                            </xsl:for-each>
+                        </xsl:when>
+                        <!-- a's and b's in any other pattern - ignore b's -->
+                        <xsl:otherwise>
+                            <xsl:for-each select="marc:subfield[@code = 'a']">
+                                <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
+                                    <xsl:copy-of select="uwf:fillConcept( ., $sub2, '', '334')"/>
+                                    <xsl:if test="$linked880">
+                                        <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'a']">
+                                            <xsl:copy-of select="uwf:fillConcept( ., '', '', '880')"/>
+                                        </xsl:for-each>
+                                    </xsl:if>
+                                </rdf:Description>
+                            </xsl:for-each>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:if>
+            </xsl:if>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F335-iri" expand-text="yes">
+        <!-- If $1 value (or multiple), use those -->
+        <xsl:for-each select="marc:subfield[@code = '1']">
+            <rdaw:P10365 rdf:resource="{.}"/>
+            <xsl:if test="../marc:subfield[@code = '3']">
+                <rdawd:P10330>Extension plan {.} applies to the work's {../marc:subfield[@code = '3']}</rdawd:P10330>
+            </xsl:if>
+        </xsl:for-each>
+        <!-- If there's no $1 but there are $0s that begin with http(s), use these -->
+        <xsl:if test="not(marc:subfield[@code = '1'])">
+            <xsl:for-each select="marc:subfield[@code = '0']">
+                <!-- $0's contianing a uri may start with (uri) -->
+                <xsl:if test="contains(., 'http')">
+                    <xsl:variable name="iri0">
+                        <xsl:choose>
+                            <xsl:when test="starts-with(., 'http')">
+                                <xsl:value-of select="."/>
+                            </xsl:when>
+                            <xsl:when test="starts-with(., '(')">
+                                <xsl:value-of select="substring-after(., ')')"/>
+                            </xsl:when>
+                        </xsl:choose>
+                    </xsl:variable>
+                    <xsl:if test="$iri0">
+                        <rdaw:P10365 rdf:resource="{$iri0}"/>
+                        <xsl:if test="../marc:subfield[@code = '3']">
+                            <rdawd:P10330>Extension plan {$iri0} applies to the work's {../marc:subfield[@code = '3']}</rdawd:P10330>
+                        </xsl:if>
+                    </xsl:if>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    
+
+    <!-- 336 -->
     <xsl:template name="F336-xx-ab0-string">
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdaed:P20001>

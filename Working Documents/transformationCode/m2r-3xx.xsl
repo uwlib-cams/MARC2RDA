@@ -90,6 +90,19 @@
         <xsl:call-template name="F334-concept"/>
     </xsl:template>
     
+    <!-- 335 - Extension Plan -->
+    <xsl:template match="marc:datafield[@tag = '335'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '335']" 
+        mode="wor">
+        <xsl:call-template name="getmarc"/>
+        <xsl:call-template name="F335-string"/>
+        <xsl:call-template name="F335-iri"/>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '335'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '335-00']" 
+        mode="con">
+        <xsl:call-template name="F335-concept"/>
+    </xsl:template>
+    
 <!--    <xsl:template match="marc:datafield[@tag = '336']" mode="exp">
         <xsl:call-template name="getmarc"/>
          Accounted for: $a, $b, $2-temporary, $3-partial, $0, $1 
