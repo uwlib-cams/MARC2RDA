@@ -6,13 +6,7 @@
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">8xx-test1</marc:controlfield> 
         
-        <!-- 810 -->
-        <marc:datafield tag="810" ind1="2" ind2=" ">
-            <marc:subfield code="a">Central Institute of Indian Languages.</marc:subfield>
-            <marc:subfield code="t">CIIL linguistic atlas series ;</marc:subfield>
-            <marc:subfield code="v">1.</marc:subfield>
-        </marc:datafield>
-        
+
         <!-- 810 with $0 IRI for corporate body, approved -->
         <marc:datafield tag="810" ind1="1" ind2=" ">
             <marc:subfield code="a">United States.</marc:subfield>
@@ -33,10 +27,8 @@
             <marc:subfield code="a">European Court of Human Rights.</marc:subfield>
             <marc:subfield code="d">subfield d</marc:subfield>
             <marc:subfield code="t">Publications de la Cour européenne des droits de l'homme.</marc:subfield>
-            <marc:subfield code="m">subfield m</marc:subfield>
             <marc:subfield code="n">Série A,</marc:subfield>
             <marc:subfield code="p">Arrêts et décisions ;</marc:subfield>
-            <marc:subfield code="v">vol. 48.</marc:subfield>
         </marc:datafield>
               
         <!-- 810 with source $1 viaf, approved -->
@@ -66,14 +58,12 @@
             <marc:subfield code="6">880-01</marc:subfield>
             <marc:subfield code="a">Test linked 880 person 1</marc:subfield>
             <marc:subfield code="t">Test linked 880 work 1</marc:subfield>
-            <marc:subfield code="x">test x</marc:subfield>
         </marc:datafield>
         
         <marc:datafield tag="880" ind1="1" ind2="0">
             <marc:subfield code="6">810-01</marc:subfield>
             <marc:subfield code="a">Test linked 880 person 2</marc:subfield>
             <marc:subfield code="t">Test linked 880 work 2</marc:subfield>
-            <marc:subfield code="x">test x</marc:subfield>
         </marc:datafield>
     </marc:record>
 </marc:collection>
