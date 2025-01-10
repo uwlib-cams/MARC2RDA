@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/811-test1exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>811-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <fake:marcfield>F811 2# $a International Congress of Romance Linguistics and Philology $n (17th :$d1983 :$cAix-en-Provence, France). $d subfield d $t Actes du XVIIème Congrès international de linguistique et philologie romanes ; $v vol. no. 5.</fake:marcfield>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/811-test1wor#d22e7"/><!--rdawo:P10102 = is issue of-->
+      <fake:marcfield>F811 2# $a International Congress of Nutrition $n (11th :$d1978 :$cRio de Janeiro, Brazil). $t Nutrition and food science ; $2 fast $0 http://id.worldcat.org/fast/1405608</fake:marcfield>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/811-test1wor#d22e19"/><!--rdawo:P10102 = is issue of-->
+      <fake:marcfield>F811 1# $a Catholic Church $2 nli $t subfield t</fake:marcfield>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/811-test1wor#d22e31"/><!--rdawo:P10102 = is issue of-->
+      <fake:marcfield>F880 14 $6 811-00 $a Test unlinked 880 person $t Test unlinked 880 work $1 https://iriforthiswork.com/6789</fake:marcfield>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/811-test1wor#d22e39"/><!--rdawo:P10102 = is issue of-->
+      <fake:marcfield>F811 10 $6 880-01 $a Test linked 880 person 1 $t Test linked 880 work 1 $x test x</fake:marcfield>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/811-test1wor#d22e48"/><!--rdawo:P10102 = is issue of-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/811-test1man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/811-test1wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>811-test1exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/811-test1exp"/><!--rdamo:P30139 = has expression manifested-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1worNom#d22e19">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>International Congress of Nutrition (11th :$d1978 :$cRio de Janeiro, Brazil). Nutrition and food science ;</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1ageNom#d22e19">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068/><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1worNom#d22e31">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Catholic Church subfield t</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/nli"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1ageNom#d22e31">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068/><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/nli"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1age#d22e7">
+      <fake:marcfield>F811 2# $a International Congress of Romance Linguistics and Philology $n (17th :$d1983 :$cAix-en-Provence, France). $d subfield d $t Actes du XVIIème Congrès international de linguistique et philologie romanes ; $v vol. no. 5.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375/><!--rdaad:P50375 = has access point for corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/age#">
+      <fake:marcfield>F811 2# $a International Congress of Nutrition $n (11th :$d1978 :$cRio de Janeiro, Brazil). $t Nutrition and food science ; $2 fast $0 http://id.worldcat.org/fast/1405608</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/811-test1ageNom#d22e19"/><!--rdaao:P50407 = has authorized access point for corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1age#d22e31">
+      <fake:marcfield>F811 1# $a Catholic Church $2 nli $t subfield t</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaao:P50375 rdf:resource="http://marc2rda.edu/fake/811-test1ageNom#d22e31"/><!--rdaao:P50375 = has access point for corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1age#d22e39">
+      <fake:marcfield>F880 14 $6 811-00 $a Test unlinked 880 person $t Test unlinked 880 work $1 https://iriforthiswork.com/6789</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Test unlinked 880 person</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1age#d22e48">
+      <fake:marcfield>F811 10 $6 880-01 $a Test linked 880 person 1 $t Test linked 880 work 1 $x test x</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375/><!--rdaad:P50375 = has access point for corporate body-->
+   </rdf:Description>
+</rdf:RDF>

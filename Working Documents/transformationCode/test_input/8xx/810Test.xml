@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">8xx-test1</marc:controlfield> 
+        
+        <!-- 810 -->
+        <marc:datafield tag="810" ind1="2" ind2=" ">
+            <marc:subfield code="a">Central Institute of Indian Languages.</marc:subfield>
+            <marc:subfield code="t">CIIL linguistic atlas series ;</marc:subfield>
+            <marc:subfield code="v">1.</marc:subfield>
+        </marc:datafield>
+        
+        <!-- 810 with $0 IRI for corporate body, approved -->
+        <marc:datafield tag="810" ind1="1" ind2=" ">
+            <marc:subfield code="a">United States.</marc:subfield>
+            <marc:subfield code="b">Army Map Service.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">http://id.worldcat.org/fast/1204155</marc:subfield>
+            <marc:subfield code="t">A.M.S.,</marc:subfield>
+        </marc:datafield>
+        
+        <!-- 810 with $t corporate body and work -->
+        <marc:datafield tag="810" ind1="2" ind2=" ">
+            <marc:subfield code="a">John Bartholomew and Son.</marc:subfield>
+            <marc:subfield code="t">Bartholomew world travel series ;</marc:subfield>
+        </marc:datafield>
+        
+        <!-- 810 with $t corporate body and work, additional subfields -->
+        <marc:datafield tag="810" ind1="1" ind2=" ">
+            <marc:subfield code="a">European Court of Human Rights.</marc:subfield>
+            <marc:subfield code="d">subfield d</marc:subfield>
+            <marc:subfield code="t">Publications de la Cour européenne des droits de l'homme.</marc:subfield>
+            <marc:subfield code="m">subfield m</marc:subfield>
+            <marc:subfield code="n">Série A,</marc:subfield>
+            <marc:subfield code="p">Arrêts et décisions ;</marc:subfield>
+            <marc:subfield code="v">vol. 48.</marc:subfield>
+        </marc:datafield>
+              
+        <!-- 810 with source $1 viaf, approved -->
+        <marc:datafield tag="810" ind1="0" ind2=" ">
+            <marc:subfield code="a">United Kingdom.</marc:subfield>
+            <marc:subfield code="d">subfield d</marc:subfield>
+            <marc:subfield code="2">viaf</marc:subfield>       
+            <marc:subfield code="t">subfield t</marc:subfield>
+        </marc:datafield>
+        
+        <!-- 810 with $1 for corporate body, unapproved -->
+        <marc:datafield tag="810" ind1="1" ind2=" ">
+            <marc:subfield code="a">Catholic Church</marc:subfield>
+            <marc:subfield code="2">nli</marc:subfield>
+            <marc:subfield code="t">subfield t</marc:subfield>
+        </marc:datafield>
+        
+        <!-- 880s -->
+        <marc:datafield tag="880" ind1="1" ind2="4">
+            <marc:subfield code="6">810-00</marc:subfield>
+            <marc:subfield code="a">Test unlinked 880 person</marc:subfield>
+            <marc:subfield code="t">Test unlinked 880 work</marc:subfield>
+            <marc:subfield code="1">https://iriforthiswork.com/6789</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="810" ind1="1" ind2="0">
+            <marc:subfield code="6">880-01</marc:subfield>
+            <marc:subfield code="a">Test linked 880 person 1</marc:subfield>
+            <marc:subfield code="t">Test linked 880 work 1</marc:subfield>
+            <marc:subfield code="x">test x</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="880" ind1="1" ind2="0">
+            <marc:subfield code="6">810-01</marc:subfield>
+            <marc:subfield code="a">Test linked 880 person 2</marc:subfield>
+            <marc:subfield code="t">Test linked 880 work 2</marc:subfield>
+            <marc:subfield code="x">test x</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

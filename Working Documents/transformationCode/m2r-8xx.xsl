@@ -39,15 +39,18 @@
     <!-- field level templates - wor, exp, man, ite -->
     <!-- Template: Main work to related work relationship -->
     <!-- CP: add 880s -->
-    <xsl:template match="marc:datafield[@tag = '800'][marc:subfield[@code = 't']]
-        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '800-00'][marc:subfield[@code = 't']]" 
+    <!-- 800, 810, 811 -->
+    <xsl:template match="marc:datafield[@tag = '800'][marc:subfield[@code = 't']] | marc:datafield[@tag = '810'][marc:subfield[@code = 't']]  | marc:datafield[@tag = '811'][marc:subfield[@code = 't']] 
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '800-00']
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '810-00']
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '811-00']" 
         mode="wor">
         <xsl:param name="baseIRI"/>
         <xsl:call-template name="getmarc"/>
         <rdawo:P10102 rdf:resource="{uwf:relWorkIRI($baseIRI, .)}"/>
     </xsl:template>    
     
-    <!--         Template: Here is the related work -->
+    <!-- Template: Here is the related work -->
     <xsl:template
         match="marc:datafield[@tag = '800'][marc:subfield[@code = 't']]
         | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '800-00'][marc:subfield[@code = 't']]" 
@@ -91,7 +94,7 @@
     </xsl:template>
     
     <!-- Template Here is Agent IRI -->
-    <xsl:template match="marc:datafield[@tag = '800'][marc:subfield[@code = 't']] | marc:datafield[@tag = '810'] | marc:datafield[@tag = '811']
+    <xsl:template match="marc:datafield[@tag = '800'][marc:subfield[@code = 't']] | marc:datafield[@tag = '810'][marc:subfield[@code = 't']]  | marc:datafield[@tag = '811'][marc:subfield[@code = 't']] 
         | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '800-00']
         | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '810-00']
         | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '811-00']"
@@ -127,8 +130,8 @@
                                 </xsl:otherwise>
                             </xsl:choose>
                             <xsl:if test="starts-with(uwf:agentIRI($baseIRI, .), $BASE)">
-                                <xsl:call-template name="FX00-x1-d"/>
-                                <xsl:call-template name="FX00-x1-q"/>
+                                <!--<xsl:call-template name="FX00-x1-d"/>
+                                <xsl:call-template name="FX00-x1-q"/>-->
                             </xsl:if>
                         </xsl:when>
                         <xsl:when test="@ind1 = '3'">
@@ -159,13 +162,13 @@
                         </xsl:when>
                     </xsl:choose>
                 </xsl:when>
-                <xsl:when test="@tag = '810' or @tag = '811' 
+                <xsl:when test="@tag = '810' or @tag = '811'
                     or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '810'))
                     or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '811'))">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
                     <xsl:choose>     
                         <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Corporate Body') = 'True'">
-                            <rdaao:P50409 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
+                            <rdaao:P50407 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
                         </xsl:when>
                         <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Corporate Body') = 'False'">
                             <rdaao:P50375 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'ageNom')}"/>
@@ -193,8 +196,10 @@
     
     <!-- Template: Here is Nomen -->
     <xsl:template
-        match="marc:datafield[@tag = '800'][marc:subfield[@code = 't']]
-        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '800-00'][marc:subfield[@code = 't']]" 
+        match="marc:datafield[@tag = '800'][marc:subfield[@code = 't']] | marc:datafield[@tag = '810'][marc:subfield[@code = 't']]  | marc:datafield[@tag = '811'][marc:subfield[@code = 't']] 
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '800-00']
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '810-00']
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '811-00']" 
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:variable name="apWor" select="uwf:relWorkAccessPoint(.)"/>
