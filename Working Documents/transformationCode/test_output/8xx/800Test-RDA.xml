@@ -3,28 +3,32 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/8xx-test1exp"/><!--rdawo:P10078 = has expression of work-->
       <rdawd:P10002>8xx-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <fake:marcfield>F810 2 $a Central Institute of Indian Languages. $t CIIL linguistic atlas series ; $v 1.</fake:marcfield>
+      <fake:marcfield>F800 1# $a Pushkin, Aleksandr Sergeevich, $d 1799-1837 $t subfield t</fake:marcfield>
       <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e7"/><!--rdawo:P10102 = is issue of-->
-      <fake:marcfield>F810 1 $a United States. $b Army Map Service. $2 fast $0 https://id.worldcat.org/fast/00076606 $t A.M.S.,</fake:marcfield>
+      <fake:marcfield>F800 1# $a Harnoncourt, Nikolaus. $2 fast $0 https://id.worldcat.org/fast/00076606 $t subfield t</fake:marcfield>
       <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e15"/><!--rdawo:P10102 = is issue of-->
-      <fake:marcfield>F810 2 $a John Bartholomew and Son. $t Bartholomew world travel series ;</fake:marcfield>
-      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e27"/><!--rdawo:P10102 = is issue of-->
-      <fake:marcfield>F810 1 $a European Court of Human Rights. $d subfield d $t Publications de la Cour européenne des droits de l'homme. $m subfield m $n Série A, $p Arrêts et décisions ; $v vol. 48.</fake:marcfield>
+      <fake:marcfield>F800 1# $a Haydn, Joseph, $d 1732-1809. $t Symphonies.</fake:marcfield>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e25"/><!--rdawo:P10102 = is issue of-->
+      <fake:marcfield>F800 1# $a Arne, Thomas Augustine, $d 1710-1778. $t Concertos, $m keyboard instrument, orchestra. $n No. 3. $p Con Spirito,</fake:marcfield>
       <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e33"/><!--rdawo:P10102 = is issue of-->
-      <fake:marcfield>F810 0 $a United Kingdom. $d subfield d $2 viaf $t subfield t</fake:marcfield>
-      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e50"/><!--rdawo:P10102 = is issue of-->
-      <fake:marcfield>F810 1 $a Bickford, Sarah Gammon, $d 1855-1931 $2 fast $0 (OCoLC)fst01583751 $t subfield t</fake:marcfield>
-      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e60"/><!--rdawo:P10102 = is issue of-->
-      <fake:marcfield>F810 1 $a O'Neill, Eugene, $d 1888-1953 $0 https://id.loc.gov/authorities/subjects/sh85094784</fake:marcfield>
-      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e72"/><!--rdawo:P10102 = is issue of-->
-      <fake:marcfield>F810 1 $a Romero, George A. $1 https://isni.org/isni/0000000121363861</fake:marcfield>
-      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e80"/><!--rdawo:P10102 = is issue of-->
-      <fake:marcfield>F810 1 $a Romero, George A. $t Made up work $1 https://iriforthiswork.com/12345</fake:marcfield>
-      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e86"/><!--rdawo:P10102 = is issue of-->
-      <fake:marcfield>F880 1 $6 810-00 $a Test unlinked 880 person $t Test unlinked 880 work $1 https://iriforthiswork.com/6789</fake:marcfield>
-      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e94"/><!--rdawo:P10102 = is issue of-->
-      <fake:marcfield>F810 10 $6 880-01 $a Test linked 880 person 1 $t Test linked 880 work 1 $x test x</fake:marcfield>
-      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e104"/><!--rdawo:P10102 = is issue of-->
+      <fake:marcfield>F800 3# $a Clark family $v 6. $t Clark family made up work</fake:marcfield>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e48"/><!--rdawo:P10102 = is issue of-->
+      <fake:marcfield>F800 0# $a Dante Alighieri, $d 1265-1321 $2 orcid $t subfield t</fake:marcfield>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e56"/><!--rdawo:P10102 = is issue of-->
+      <fake:marcfield>F800 0# $a Dante Alighieri, $d 1265-1321 $2 gnd $t subfield t</fake:marcfield>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e66"/><!--rdawo:P10102 = is issue of-->
+      <fake:marcfield>F800 1# $a Bickford, Sarah Gammon, $d 1855-1931 $2 fast $0 (OCoLC)fst01583751 $t subfield t</fake:marcfield>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e76"/><!--rdawo:P10102 = is issue of-->
+      <fake:marcfield>F800 1# $a O'Neill, Eugene, $d 1888-1953 $t Eugene Work Made Up $1 https://id.loc.gov/authorities/subjects/sh85094784</fake:marcfield>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e88"/><!--rdawo:P10102 = is issue of-->
+      <fake:marcfield>F800 1# $a Armstrong, Louis, $t Louie Armstrong (Universal City Studios) ; $1 https://isni.org/isni/0000000121363861</fake:marcfield>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e98"/><!--rdawo:P10102 = is issue of-->
+      <fake:marcfield>F800 1# $a Romero, George A. $t Made up work $1 https://iriforthiswork.com/12345</fake:marcfield>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e107"/><!--rdawo:P10102 = is issue of-->
+      <fake:marcfield>F880 1# $6 800-00 $a Test unlinked 880 person $t Test unlinked 880 work $1 https://iriforthiswork.com/6789</fake:marcfield>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e115"/><!--rdawo:P10102 = is issue of-->
+      <fake:marcfield>F800 1# $6 880-01 $a Test linked 880 person 1 $t Test linked 880 work 1</fake:marcfield>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e124"/><!--rdawo:P10102 = is issue of-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -38,87 +42,178 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1worNom#d22e15">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>United States. Army Map Service. A.M.S.</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80068>Harnoncourt, Nikolaus. subfield t</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1ageNom#d22e15">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068/><!--rdand:P80068 = has nomen string-->
+      <rdand:P80068>Harnoncourt, Nikolaus</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1worNom#d22e50">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1worNom#d22e56">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>United Kingdom. subfield d subfield t</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/viaf"/><!--rdan:P80069 = has scheme of nomen-->
+      <rdand:P80068>Dante Alighieri, 1265-1321 subfield t</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/orcid"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1ageNom#d22e50">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1ageNom#d22e56">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068/><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/viaf"/><!--rdan:P80069 = has scheme of nomen-->
+      <rdand:P80068>Dante Alighieri, 1265-1321</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/orcid"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1worNom#d22e60">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1worNom#d22e66">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Dante Alighieri, 1265-1321 subfield t</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gnd"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1ageNom#d22e66">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Dante Alighieri, 1265-1321</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gnd"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1worNom#d22e76">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Bickford, Sarah Gammon, 1855-1931 subfield t</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1ageNom#d22e60">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1ageNom#d22e76">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068/><!--rdand:P80068 = has nomen string-->
+      <rdand:P80068>Bickford, Sarah Gammon, 1855-1931</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e7">
-      <fake:marcfield>F810 2 $a Central Institute of Indian Languages. $t CIIL linguistic atlas series ; $v 1.</fake:marcfield>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375/><!--rdaad:P50375 = has access point for corporate body-->
+      <fake:marcfield>F800 1# $a Pushkin, Aleksandr Sergeevich, $d 1799-1837 $t subfield t</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Pushkin, Aleksandr Sergeevich, 1799-1837</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/age#">
-      <fake:marcfield>F810 1 $a United States. $b Army Map Service. $2 fast $0 https://id.worldcat.org/fast/00076606 $t A.M.S.,</fake:marcfield>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaao:P50409 rdf:resource="http://marc2rda.edu/fake/8xx-test1ageNom#d22e15"/><!--rdaao:P50409 = has authorized access point for family-->
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e15">
+      <fake:marcfield>F800 1# $a Harnoncourt, Nikolaus. $2 fast $0 https://id.worldcat.org/fast/00076606 $t subfield t</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/8xx-test1ageNom#d22e15"/><!--rdaao:P50377 = has access point for person-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e27">
-      <fake:marcfield>F810 2 $a John Bartholomew and Son. $t Bartholomew world travel series ;</fake:marcfield>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375/><!--rdaad:P50375 = has access point for corporate body-->
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e25">
+      <fake:marcfield>F800 1# $a Haydn, Joseph, $d 1732-1809. $t Symphonies.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Haydn, Joseph, 1732-1809</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e33">
-      <fake:marcfield>F810 1 $a European Court of Human Rights. $d subfield d $t Publications de la Cour européenne des droits de l'homme. $m subfield m $n Série A, $p Arrêts et décisions ; $v vol. 48.</fake:marcfield>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375/><!--rdaad:P50375 = has access point for corporate body-->
+      <fake:marcfield>F800 1# $a Arne, Thomas Augustine, $d 1710-1778. $t Concertos, $m keyboard instrument, orchestra. $n No. 3. $p Con Spirito,</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Arne, Thomas Augustine, 1710-1778</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/viaf/age#">
-      <fake:marcfield>F810 0 $a United Kingdom. $d subfield d $2 viaf $t subfield t</fake:marcfield>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaao:P50409 rdf:resource="http://marc2rda.edu/fake/8xx-test1ageNom#d22e50"/><!--rdaao:P50409 = has authorized access point for family-->
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e48">
+      <fake:marcfield>F800 3# $a Clark family $v 6. $t Clark family made up work</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10008"/>
+      <rdaad:P50376>Clark family</rdaad:P50376><!--rdaad:P50376 = has access point for family-->
    </rdf:Description>
-   <rdf:Description rdf:about="https://id.worldcat.org/fast/01583751">
-      <fake:marcfield>F810 1 $a Bickford, Sarah Gammon, $d 1855-1931 $2 fast $0 (OCoLC)fst01583751 $t subfield t</fake:marcfield>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaao:P50409 rdf:resource="http://marc2rda.edu/fake/8xx-test1ageNom#d22e60"/><!--rdaao:P50409 = has authorized access point for family-->
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/orcid/age#dantealighieri1265-1321">
+      <fake:marcfield>F800 0# $a Dante Alighieri, $d 1265-1321 $2 orcid $t subfield t</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>"&gt;
+                                    <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/8xx-test1ageNom#d22e56"/><!--rdaao:P50411 = has authorized access point for person-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e72">
-      <fake:marcfield>F810 1 $a O'Neill, Eugene, $d 1888-1953 $0 https://id.loc.gov/authorities/subjects/sh85094784</fake:marcfield>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375/><!--rdaad:P50375 = has access point for corporate body-->
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e66">
+      <fake:marcfield>F800 0# $a Dante Alighieri, $d 1265-1321 $2 gnd $t subfield t</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/8xx-test1ageNom#d22e66"/><!--rdaao:P50377 = has access point for person-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e80">
-      <fake:marcfield>F810 1 $a Romero, George A. $1 https://isni.org/isni/0000000121363861</fake:marcfield>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375/><!--rdaad:P50375 = has access point for corporate body-->
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e76">
+      <fake:marcfield>F800 1# $a Bickford, Sarah Gammon, $d 1855-1931 $2 fast $0 (OCoLC)fst01583751 $t subfield t</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/8xx-test1ageNom#d22e76"/><!--rdaao:P50377 = has access point for person-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e86">
-      <fake:marcfield>F810 1 $a Romero, George A. $t Made up work $1 https://iriforthiswork.com/12345</fake:marcfield>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375/><!--rdaad:P50375 = has access point for corporate body-->
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e88">
+      <fake:marcfield>F800 1# $a O'Neill, Eugene, $d 1888-1953 $t Eugene Work Made Up $1 https://id.loc.gov/authorities/subjects/sh85094784</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>O'Neill, Eugene, 1888-1953</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e94">
-      <fake:marcfield>F880 1 $6 810-00 $a Test unlinked 880 person $t Test unlinked 880 work $1 https://iriforthiswork.com/6789</fake:marcfield>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375>Test unlinked 880 person</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e98">
+      <fake:marcfield>F800 1# $a Armstrong, Louis, $t Louie Armstrong (Universal City Studios) ; $1 https://isni.org/isni/0000000121363861</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Armstrong, Louis</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e104">
-      <fake:marcfield>F810 10 $6 880-01 $a Test linked 880 person 1 $t Test linked 880 work 1 $x test x</fake:marcfield>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375/><!--rdaad:P50375 = has access point for corporate body-->
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e107">
+      <fake:marcfield>F800 1# $a Romero, George A. $t Made up work $1 https://iriforthiswork.com/12345</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Romero, George A.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e115">
+      <fake:marcfield>F880 1# $6 800-00 $a Test unlinked 880 person $t Test unlinked 880 work $1 https://iriforthiswork.com/6789</fake:marcfield>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e124">
+      <fake:marcfield>F800 1# $6 880-01 $a Test linked 880 person 1 $t Test linked 880 work 1</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Test linked 880 person 1</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50377>Test linked 880 person 2</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1wor#d22e7">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Pushkin, Aleksandr Sergeevich, 1799-1837 subfield t</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/8xx-test1age#d22e7"/><!--rdawo:P10261 = has subject person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1wor#d22e15">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdaao:P10328 rdf:resource="http://marc2rda.edu/fake/8xx-test1worNom#d22e15"/><!--rdaao:P10328 = -->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/8xx-test1age#d22e15"/><!--rdawo:P10261 = has subject person-->
+      <rdawd:P10002>https://id.worldcat.org/fast/00076606</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1wor#d22e25">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Haydn, Joseph, 1732-1809. Symphonies</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/8xx-test1age#d22e25"/><!--rdawo:P10261 = has subject person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1wor#d22e33">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Arne, Thomas Augustine, 1710-1778. Concertos, keyboard instrument, orchestra. No. 3. Con Spirito</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/8xx-test1age#d22e33"/><!--rdawo:P10261 = has subject person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1wor#d22e48">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Clark family Clark family made up work</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10262 rdf:resource="http://marc2rda.edu/fake/8xx-test1age#d22e48"/><!--rdawo:P10262 = has subject family-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1wor#d22e56">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdaao:P10328 rdf:resource="http://marc2rda.edu/fake/8xx-test1worNom#d22e56"/><!--rdaao:P10328 = -->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/orcid/age#dantealighieri1265-1321"/><!--rdawo:P10261 = has subject person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1wor#d22e66">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdaao:P10328 rdf:resource="http://marc2rda.edu/fake/8xx-test1worNom#d22e66"/><!--rdaao:P10328 = -->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/8xx-test1age#d22e66"/><!--rdawo:P10261 = has subject person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1wor#d22e76">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdaao:P10328 rdf:resource="http://marc2rda.edu/fake/8xx-test1worNom#d22e76"/><!--rdaao:P10328 = -->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/8xx-test1age#d22e76"/><!--rdawo:P10261 = has subject person-->
+      <rdawd:P10002>(OCoLC)fst01583751</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1wor#d22e88">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>O'Neill, Eugene, 1888-1953 Eugene Work Made Up</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/8xx-test1age#d22e88"/><!--rdawo:P10261 = has subject person-->
+      <rdawd:P10002>https://id.loc.gov/authorities/subjects/sh85094784</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1wor#d22e98">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Armstrong, Louis, Louie Armstrong (Universal City Studios) ;</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/8xx-test1age#d22e98"/><!--rdawo:P10261 = has subject person-->
+      <rdawd:P10002>https://isni.org/isni/0000000121363861</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1wor#d22e107">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Romero, George A. Made up work</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/8xx-test1age#d22e107"/><!--rdawo:P10261 = has subject person-->
+      <rdawd:P10002>https://iriforthiswork.com/12345</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1wor#d22e115">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Test unlinked 880 person Test unlinked 880 work</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/8xx-test1age#d22e115"/><!--rdawo:P10261 = has subject person-->
+      <rdawd:P10002>https://iriforthiswork.com/6789</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1wor#d22e124">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Test linked 880 person 1 Test linked 880 work 1</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10328>Test linked 880 person 2 Test linked 880 work 2</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/8xx-test1age#d22e124"/><!--rdawo:P10261 = has subject person-->
    </rdf:Description>
 </rdf:RDF>
