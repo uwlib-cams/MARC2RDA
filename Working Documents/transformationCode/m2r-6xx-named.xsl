@@ -208,7 +208,7 @@
     <xsl:template name="F6XX-xx-v">
         <xsl:choose>
             <!-- if no source, use datatype and string value -->
-            <xsl:when test="not(matches(@ind2, '[012356]')) and not(marc:subfield[@code = '2'])">
+            <xsl:when test="not(matches(../@ind2, '[012356]')) and not(../marc:subfield[@code = '2'])">
                 <rdawd:P10004>
                     <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                 </rdawd:P10004>
