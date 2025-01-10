@@ -105,15 +105,17 @@
     <xsl:key name="approvedKey" match="uwmisc:row" use="uwmisc:approved"/>
     
     <xsl:function name="uwf:s2EntityTest" expand-text="yes">
-        <xsl:param name="code2"/>
+        <xsl:param name="sub2"/>
         <xsl:param name="type"/>
+        <xsl:variable name="code2" select="replace($sub2, '\.$', '')"/>
         <xsl:value-of select="if (some $approvedType in $approvedSourcesDoc/uwmisc:root/uwmisc:row/key('codeKey', $code2)/uwmisc:approved
             satisfies ($type = $approvedType)) then 'True' else 'False'"/>
     </xsl:function>
     
     <!-- uwf:s2Nomen returns the property "has scheme of nomen" with the appropriate IRI if it is found, otherwise it outputs a comment -->
     <xsl:function name="uwf:s2Nomen" expand-text="yes">
-        <xsl:param name="code2"/>
+        <xsl:param name="sub2"/>
+        <xsl:variable name="code2" select="replace($sub2, '\.$', '')"/>
         <xsl:choose>
             <xsl:when test="$locFingerprintSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/fingerprintschemes/', lower-case($code2)))">
                 <rdan:P80069>
@@ -143,7 +145,8 @@
     </xsl:function>
     
     <xsl:function name="uwf:s2NomenClassSchemes" expand-text="true">
-        <xsl:param name="code2"/>
+        <xsl:param name="sub2"/>
+        <xsl:variable name="code2" select="replace($sub2, '\.$', '')"/>
         <xsl:choose>
             <xsl:when test="$locClassSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/classSchemes/', lower-case($code2)))">
                 <rdan:P80069 rdf:resource="{concat('http://id.loc.gov/vocabulary/classSchemes/', lower-case($code2))}"/>
@@ -155,7 +158,8 @@
     </xsl:function>
     
     <xsl:function name="uwf:s2NomenNameTitleSchemes" expand-text="true">
-        <xsl:param name="code2"/>
+        <xsl:param name="sub2"/>
+        <xsl:variable name="code2" select="replace($sub2, '\.$', '')"/>
         <xsl:choose>
             <xsl:when test="$locNameTitleSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/classSchemes/', lower-case($code2)))">
                 <rdan:P80069 rdf:resource="{concat('http://id.loc.gov/vocabulary/nameTitleSchemes/', lower-case($code2))}"/>
@@ -170,7 +174,8 @@
     <!-- docs can be added as needed based on the sources of $2 from different fields -->
     <!-- if a field has a very small VES or only one, a separate function can be made to handle that field (see uwf:s2Concept506) -->
     <xsl:function name="uwf:s2Concept" expand-text="true">
-        <xsl:param name="code2"/>
+        <xsl:param name="sub2"/>
+        <xsl:variable name="code2" select="replace($sub2, '\.$', '')"/>
         <xsl:choose>
             <!-- ind2 values from subject schemes -->
             <!-- hardcoding prevents speeds up lookup -->
@@ -215,7 +220,8 @@
     <!-- lookup for field 506 concepts -->
     <!-- there's a very small vocabulary for this, so it's worth a separate quicker function -->
     <xsl:function name="uwf:s2Concept506" expand-text="true">
-        <xsl:param name="code2"/>
+        <xsl:param name="sub2"/>
+        <xsl:variable name="code2" select="replace($sub2, '\.$', '')"/>
         <xsl:choose>
             <xsl:when test="$locAccessRestrictionTermDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/accessrestrictionterm/', lower-case($code2)))">
                 <skos:inScheme rdf:resource="{concat('http://id.loc.gov/vocabulary/accessrestrictionterm/', lower-case($code2))}"/>
@@ -228,7 +234,8 @@
     
     <!-- lookup for classification schemes -->
     <xsl:function name="uwf:s2ConceptClassSchemes" expand-text="true">
-        <xsl:param name="code2"/>
+        <xsl:param name="sub2"/>
+        <xsl:variable name="code2" select="replace($sub2, '\.$', '')"/>
         <xsl:choose>
             <xsl:when test="$locClassSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/classSchemes/', lower-case($code2)))">
                 <skos:inScheme rdf:resource="{concat('http://id.loc.gov/vocabulary/classSchemes/', lower-case($code2))}"/>
@@ -247,7 +254,7 @@
     
     <xsl:function name="uwf:classSchemeDatatype" expand-text="true">
         <xsl:param name="code"/>
-        <xsl:if test="$lookupDatatypesDoc/root/row/key('normCode', concat('classSchemes/', lower-case($code)))">
+        <xsl:if test="$lookupDatatypesDoc/root/row/key('normCode', concat('classSchemes/', lower-case(replace($code, '\.$', ''))))">
             <xsl:attribute name="rdf:datatype">
                 <xsl:value-of select="$lookupDatatypesDoc/root/row/key('normCode', concat('classSchemes/', lower-case($code)))/item"/>  
             </xsl:attribute>
