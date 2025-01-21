@@ -60,7 +60,7 @@
             <xsl:when test="$field/@tag = '720' or ($field/@tag = '880' and contains($field/marc:subfield[@code = '6'], '720'))">
                 <xsl:value-of select="uwf:stripEndPunctuation($field/marc:subfield[@code = 'a'])"/>
             </xsl:when>
-            <xsl:when test="$field/@tag = '110' or $field/@tag = '610' or $field/@tag = '710'
+            <xsl:when test="$field/@tag = '110' or $field/@tag = '610' or $field/@tag = '710' or $field/@tag = '810'
                 or ($field/@tag = '880' and matches($field/marc:subfield[@code = '6'], '[1678]10'))">
                 <xsl:variable name="ap">
                     <xsl:value-of select="$field/marc:subfield[@code = 'a'] | $field/marc:subfield[@code = 'b'] | $field/marc:subfield[@code = 'c']
@@ -70,7 +70,7 @@
                 </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
             </xsl:when>
-            <xsl:when test="$field/@tag = '111' or $field/@tag = '611' or $field/@tag = '711'
+            <xsl:when test="$field/@tag = '111' or $field/@tag = '611' or $field/@tag = '711' or $field/@tag = '811'
                 or ($field/@tag = '880' and matches($field/marc:subfield[@code = '6'], '[1678]11'))">
                 <xsl:variable name="ap">
                     <xsl:value-of select="$field/marc:subfield[@code = 'a']  | $field/marc:subfield[@code = 'c'] | $field/marc:subfield[@code = 'e'] | $field/marc:subfield[@code = 'q']
@@ -1121,8 +1121,11 @@
     
     <xsl:template name="FXXX-xx-tknp">
         <xsl:if test="marc:subfield[@code = 't'] or marc:subfield[@code = 'k'] or marc:subfield[@code = 'n'] or marc:subfield[@code = 'p']">
-            <rdawd:P10088>
+            <xsl:variable name="title">
                 <xsl:value-of select="marc:subfield[@code = 't'] | marc:subfield[@code = 'k'] | marc:subfield[@code = 'n'] | marc:subfield[@code = 'p']"/>
+            </xsl:variable>
+            <rdawd:P10088>
+                <xsl:value-of select="uwf:stripEndPunctuation($title)"/>
             </rdawd:P10088>
         </xsl:if>
     </xsl:template>
@@ -1131,7 +1134,7 @@
         <xsl:for-each select="marc:subfield[@code = 'n']">
             <xsl:if test="contains(., 'op.') or contains(., 'opp.')">
                 <rdawd:P10333>
-                    <xsl:value-of select="."/>
+                    <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                 </rdawd:P10333>
             </xsl:if>
             <xsl:if test="matches(., '\([12]\d\d\d\)')">

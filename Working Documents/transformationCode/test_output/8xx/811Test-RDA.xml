@@ -3,15 +3,15 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/811-test1exp"/><!--rdawo:P10078 = has expression of work-->
       <rdawd:P10002>811-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <fake:marcfield>F811 2# $a International Congress of Romance Linguistics and Philology $n (17th :$d1983 :$cAix-en-Provence, France). $d subfield d $t Actes du XVIIème Congrès international de linguistique et philologie romanes ; $v vol. no. 5.</fake:marcfield>
-      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/811-test1wor#d22e7"/><!--rdawo:P10102 = is issue of-->
-      <fake:marcfield>F811 2# $a International Congress of Nutrition $n (11th :$d1978 :$cRio de Janeiro, Brazil). $t Nutrition and food science ; $2 fast $0 http://id.worldcat.org/fast/1405608</fake:marcfield>
-      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/811-test1wor#d22e19"/><!--rdawo:P10102 = is issue of-->
-      <fake:marcfield>F811 1# $a Catholic Church $2 nli $t subfield t</fake:marcfield>
-      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/811-test1wor#d22e31"/><!--rdawo:P10102 = is issue of-->
-      <fake:marcfield>F880 14 $6 811-00 $a Test unlinked 880 person $t Test unlinked 880 work $1 https://iriforthiswork.com/6789</fake:marcfield>
+      <fake:marcfield>F811 2# $a Comparative Drama Conference. $t Comparative Drama Conference series ; $v 5.</fake:marcfield>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/811-test1wor#d22e6"/><!--rdawo:P10102 = is issue of-->
+      <fake:marcfield>F811 2# $a International Congress of Romance Linguistics and Philology $n (17th : $d 1983 : $c Aix-en-Provence, France). $t Actes du XVIIème Congrès international de linguistique et philologie romanes ; $v vol. no. 5.</fake:marcfield>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/811-test1wor#d22e14"/><!--rdawo:P10102 = is issue of-->
+      <fake:marcfield>F811 2# $a International Congress of Nutrition $n (11th : $c 1978 : $c Rio de Janeiro, Brazil). $t Nutrition and food science ;</fake:marcfield>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/811-test1wor#d22e27"/><!--rdawo:P10102 = is issue of-->
+      <fake:marcfield>F880 14 $6 811-00 $a Test unlinked 880 meeting $t Test unlinked 880 work $1 https://iriforthiswork.com/6789</fake:marcfield>
       <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/811-test1wor#d22e39"/><!--rdawo:P10102 = is issue of-->
-      <fake:marcfield>F811 10 $6 880-01 $a Test linked 880 person 1 $t Test linked 880 work 1 $x test x</fake:marcfield>
+      <fake:marcfield>F811 10 $6 880-01 $a Test linked 880 meeting 1 $t Test linked 880 work 1 $x test x</fake:marcfield>
       <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/811-test1wor#d22e48"/><!--rdawo:P10102 = is issue of-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1exp">
@@ -24,49 +24,62 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/811-test1exp"/><!--rdamo:P30139 = has expression manifested-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1worNom#d22e19">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>International Congress of Nutrition (11th :$d1978 :$cRio de Janeiro, Brazil). Nutrition and food science ;</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1ageNom#d22e19">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068/><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1worNom#d22e31">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Catholic Church subfield t</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/nli"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1ageNom#d22e31">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068/><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/nli"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1age#d22e7">
-      <fake:marcfield>F811 2# $a International Congress of Romance Linguistics and Philology $n (17th :$d1983 :$cAix-en-Provence, France). $d subfield d $t Actes du XVIIème Congrès international de linguistique et philologie romanes ; $v vol. no. 5.</fake:marcfield>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1age#d22e6">
+      <fake:marcfield>F811 2# $a Comparative Drama Conference. $t Comparative Drama Conference series ; $v 5.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375/><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50375>Comparative Drama Conference</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/age#">
-      <fake:marcfield>F811 2# $a International Congress of Nutrition $n (11th :$d1978 :$cRio de Janeiro, Brazil). $t Nutrition and food science ; $2 fast $0 http://id.worldcat.org/fast/1405608</fake:marcfield>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1age#d22e14">
+      <fake:marcfield>F811 2# $a International Congress of Romance Linguistics and Philology $n (17th : $d 1983 : $c Aix-en-Provence, France). $t Actes du XVIIème Congrès international de linguistique et philologie romanes ; $v vol. no. 5.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/811-test1ageNom#d22e19"/><!--rdaao:P50407 = has authorized access point for corporate body-->
+      <rdaad:P50375>International Congress of Romance Linguistics and Philology (17th : 1983 : Aix-en-Provence, France)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1age#d22e31">
-      <fake:marcfield>F811 1# $a Catholic Church $2 nli $t subfield t</fake:marcfield>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1age#d22e27">
+      <fake:marcfield>F811 2# $a International Congress of Nutrition $n (11th : $c 1978 : $c Rio de Janeiro, Brazil). $t Nutrition and food science ;</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaao:P50375 rdf:resource="http://marc2rda.edu/fake/811-test1ageNom#d22e31"/><!--rdaao:P50375 = has access point for corporate body-->
+      <rdaad:P50375>International Congress of Nutrition (11th : 1978 : Rio de Janeiro, Brazil)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1age#d22e39">
-      <fake:marcfield>F880 14 $6 811-00 $a Test unlinked 880 person $t Test unlinked 880 work $1 https://iriforthiswork.com/6789</fake:marcfield>
+      <fake:marcfield>F880 14 $6 811-00 $a Test unlinked 880 meeting $t Test unlinked 880 work $1 https://iriforthiswork.com/6789</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375>Test unlinked 880 person</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50375>Test unlinked 880 meeting</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1age#d22e48">
-      <fake:marcfield>F811 10 $6 880-01 $a Test linked 880 person 1 $t Test linked 880 work 1 $x test x</fake:marcfield>
+      <fake:marcfield>F811 10 $6 880-01 $a Test linked 880 meeting 1 $t Test linked 880 work 1 $x test x</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375/><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50375>Test linked 880 meeting 1</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50375>Test linked 880 meeting 2</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1wor#d22e6">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Comparative Drama Conference. Comparative Drama Conference series ;</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/811-test1age#d22e6"/><!--rdawo:P10314 = has related corporate body of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1wor#d22e14">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>International Congress of Romance Linguistics and Philology (17th : 1983 : Aix-en-Provence, France). Actes du XVIIème Congrès international de linguistique et philologie romanes ;</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/811-test1age#d22e14"/><!--rdawo:P10314 = has related corporate body of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1wor#d22e27">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>International Congress of Nutrition (11th : 1978 : Rio de Janeiro, Brazil). Nutrition and food science ;</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/811-test1age#d22e27"/><!--rdawo:P10314 = has related corporate body of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1wor#d22e39">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Test unlinked 880 meeting Test unlinked 880 work</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/811-test1age#d22e39"/><!--rdawo:P10314 = has related corporate body of work-->
+      <rdawd:P10002>https://iriforthiswork.com/6789</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/811-test1wor#d22e48">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Test linked 880 meeting 1 Test linked 880 work 1</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10328>Test linked 880 meeting 2 Test linked 880 work 2</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/811-test1age#d22e48"/><!--rdawo:P10314 = has related corporate body of work-->
    </rdf:Description>
 </rdf:RDF>

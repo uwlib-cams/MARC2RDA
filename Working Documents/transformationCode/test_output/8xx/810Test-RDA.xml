@@ -3,20 +3,22 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/8xx-test1exp"/><!--rdawo:P10078 = has expression of work-->
       <rdawd:P10002>8xx-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <fake:marcfield>F810 1# $a United States. $b Army Map Service. $2 fast $0 http://id.worldcat.org/fast/1204155 $t A.M.S.,</fake:marcfield>
-      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e7"/><!--rdawo:P10102 = is issue of-->
+      <fake:marcfield>F810 2# $a Open University. $t Nineteenth-century novel and its legacy ; $v Unit 2.</fake:marcfield>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e6"/><!--rdawo:P10102 = is issue of-->
+      <fake:marcfield>F810 2# $a Open University. $t A302 ; $v Unit 2.</fake:marcfield>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e13"/><!--rdawo:P10102 = is issue of-->
+      <fake:marcfield>F810 1# $a Stockholm. $b Skogshögskolan. $b Institutionen för skogsproduktion. $t Rapporter och uppsatser ; $v nr. 30.</fake:marcfield>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e20"/><!--rdawo:P10102 = is issue of-->
+      <fake:marcfield>F810 1# $a United States. $b Army Map Service. $t A.M.S.,</fake:marcfield>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e31"/><!--rdawo:P10102 = is issue of-->
       <fake:marcfield>F810 2# $a John Bartholomew and Son. $t Bartholomew world travel series ;</fake:marcfield>
-      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e19"/><!--rdawo:P10102 = is issue of-->
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e39"/><!--rdawo:P10102 = is issue of-->
       <fake:marcfield>F810 1# $a European Court of Human Rights. $d subfield d $t Publications de la Cour européenne des droits de l'homme. $n Série A, $p Arrêts et décisions ;</fake:marcfield>
-      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e25"/><!--rdawo:P10102 = is issue of-->
-      <fake:marcfield>F810 0# $a United Kingdom. $d subfield d $2 viaf $t subfield t</fake:marcfield>
-      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e37"/><!--rdawo:P10102 = is issue of-->
-      <fake:marcfield>F810 1# $a Catholic Church $2 nli $t subfield t</fake:marcfield>
-      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e48"/><!--rdawo:P10102 = is issue of-->
-      <fake:marcfield>F880 14 $6 810-00 $a Test unlinked 880 person $t Test unlinked 880 work $1 https://iriforthiswork.com/6789</fake:marcfield>
-      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e56"/><!--rdawo:P10102 = is issue of-->
-      <fake:marcfield>F810 10 $6 880-01 $a Test linked 880 person 1 $t Test linked 880 work 1</fake:marcfield>
-      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e65"/><!--rdawo:P10102 = is issue of-->
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e45"/><!--rdawo:P10102 = is issue of-->
+      <fake:marcfield>F880 14 $6 810-00 $a Test unlinked 880 corporate body $t Test unlinked 880 work $1 https://iriforthiswork.com/6789</fake:marcfield>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e58"/><!--rdawo:P10102 = is issue of-->
+      <fake:marcfield>F810 10 $6 880-01 $a Test linked 880 corporate body 1 $t Test linked 880 work 1</fake:marcfield>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/8xx-test1wor#d22e67"/><!--rdawo:P10102 = is issue of-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -28,69 +30,86 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/8xx-test1exp"/><!--rdamo:P30139 = has expression manifested-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1worNom#d22e7">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>United States. Army Map Service. A.M.S.</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1ageNom#d22e7">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068/><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1worNom#d22e37">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>United Kingdom. subfield d subfield t</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/viaf"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1ageNom#d22e37">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068/><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/viaf"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1worNom#d22e48">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Catholic Church subfield t</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/nli"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1ageNom#d22e48">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068/><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/nli"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/age#">
-      <fake:marcfield>F810 1# $a United States. $b Army Map Service. $2 fast $0 http://id.worldcat.org/fast/1204155 $t A.M.S.,</fake:marcfield>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e6">
+      <fake:marcfield>F810 2# $a Open University. $t Nineteenth-century novel and its legacy ; $v Unit 2.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/8xx-test1ageNom#d22e7"/><!--rdaao:P50407 = has authorized access point for corporate body-->
+      <rdaad:P50375>Open University</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e19">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e13">
+      <fake:marcfield>F810 2# $a Open University. $t A302 ; $v Unit 2.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Open University</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e20">
+      <fake:marcfield>F810 1# $a Stockholm. $b Skogshögskolan. $b Institutionen för skogsproduktion. $t Rapporter och uppsatser ; $v nr. 30.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Stockholm. Skogshögskolan. Institutionen för skogsproduktion</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e31">
+      <fake:marcfield>F810 1# $a United States. $b Army Map Service. $t A.M.S.,</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>United States. Army Map Service</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e39">
       <fake:marcfield>F810 2# $a John Bartholomew and Son. $t Bartholomew world travel series ;</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375/><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50375>John Bartholomew and Son</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e25">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e45">
       <fake:marcfield>F810 1# $a European Court of Human Rights. $d subfield d $t Publications de la Cour européenne des droits de l'homme. $n Série A, $p Arrêts et décisions ;</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375/><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50375>European Court of Human Rights. subfield d</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/viaf/age#">
-      <fake:marcfield>F810 0# $a United Kingdom. $d subfield d $2 viaf $t subfield t</fake:marcfield>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e58">
+      <fake:marcfield>F880 14 $6 810-00 $a Test unlinked 880 corporate body $t Test unlinked 880 work $1 https://iriforthiswork.com/6789</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/8xx-test1ageNom#d22e37"/><!--rdaao:P50407 = has authorized access point for corporate body-->
+      <rdaad:P50375>Test unlinked 880 corporate body</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e48">
-      <fake:marcfield>F810 1# $a Catholic Church $2 nli $t subfield t</fake:marcfield>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e67">
+      <fake:marcfield>F810 10 $6 880-01 $a Test linked 880 corporate body 1 $t Test linked 880 work 1</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaao:P50375 rdf:resource="http://marc2rda.edu/fake/8xx-test1ageNom#d22e48"/><!--rdaao:P50375 = has access point for corporate body-->
+      <rdaad:P50375>Test linked 880 corporate body 1</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e56">
-      <fake:marcfield>F880 14 $6 810-00 $a Test unlinked 880 person $t Test unlinked 880 work $1 https://iriforthiswork.com/6789</fake:marcfield>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375>Test unlinked 880 person</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1wor#d22e6">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Open University. Nineteenth-century novel and its legacy ;</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/8xx-test1age#d22e6"/><!--rdawo:P10314 = has related corporate body of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1age#d22e65">
-      <fake:marcfield>F810 10 $6 880-01 $a Test linked 880 person 1 $t Test linked 880 work 1</fake:marcfield>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375/><!--rdaad:P50375 = has access point for corporate body-->
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1wor#d22e13">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Open University. A302 ;</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/8xx-test1age#d22e13"/><!--rdawo:P10314 = has related corporate body of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1wor#d22e20">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Stockholm. Skogshögskolan. Institutionen för skogsproduktion. Rapporter och uppsatser ;</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/8xx-test1age#d22e20"/><!--rdawo:P10314 = has related corporate body of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1wor#d22e31">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>United States. Army Map Service. A.M.S.</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/8xx-test1age#d22e31"/><!--rdawo:P10314 = has related corporate body of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1wor#d22e39">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>John Bartholomew and Son. Bartholomew world travel series ;</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/8xx-test1age#d22e39"/><!--rdawo:P10314 = has related corporate body of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1wor#d22e45">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>European Court of Human Rights. subfield d Publications de la Cour européenne des droits de l'homme. Série A, Arrêts et décisions ;</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/8xx-test1age#d22e45"/><!--rdawo:P10314 = has related corporate body of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1wor#d22e58">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Test unlinked 880 corporate body Test unlinked 880 work</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/8xx-test1age#d22e58"/><!--rdawo:P10314 = has related corporate body of work-->
+      <rdawd:P10002>https://iriforthiswork.com/6789</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/8xx-test1wor#d22e67">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Test linked 880 corporate body 1 Test linked 880 work 1</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10328>Test linked 880 corporate body 2 Test linked 880 work 2</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/8xx-test1age#d22e67"/><!--rdawo:P10314 = has related corporate body of work-->
    </rdf:Description>
 </rdf:RDF>
