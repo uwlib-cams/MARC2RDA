@@ -43,17 +43,18 @@
         mode="wor">
         <xsl:param name="baseIRI"/>
         <xsl:call-template name="getmarc"/>
+        <xsl:variable name="tagType" select="uwf:tagType(.)"/>
         <!-- store subject heading label in variable -->
         <!-- label templates are located in m2r-6xx-named.xsl and concat subfields present in the field -->
         <xsl:variable name="prefLabel">
             <xsl:choose>
-                <xsl:when test="@tag = '600' or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '600'))">
+                <xsl:when test="$tagType = '600'">
                     <xsl:call-template name="F600-label"/>
                 </xsl:when>
-                <xsl:when test="@tag = '610' or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '610'))">
+                <xsl:when test="$tagType = '610'">
                     <xsl:call-template name="F610-label"/>
                 </xsl:when>
-                <xsl:when test="@tag = '611' or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '611'))">
+                <xsl:when test="$tagType = '611'">
                     <xsl:call-template name="F611-label"/>
                 </xsl:when>
             </xsl:choose>
@@ -98,7 +99,7 @@
         <!-- choose appropriate "has subject [agent]" property based on field/subfields
             and call agentIRI for the object-->
         <xsl:choose>
-            <xsl:when test="@tag = '600' or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '600'))">
+            <xsl:when test="$tagType = '600'">
                 <xsl:choose>
                     <!-- has subject person -->
                     <xsl:when test="@ind1 = '0' or @ind1 = '1' or @ind1 = '2'">
@@ -127,19 +128,20 @@
         | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '610-00']
         | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '611-00']"
         mode="con" expand-text="yes">
+        <xsl:variable name="tagType" select="uwf:tagType(.)"/>
         <!-- we only mint a concept if there are qualifier subfields (v, x, y, z), a source provided (ind2 or $2), and a minted IRI (no $0 or $1) -->
         <xsl:if test="marc:subfield[@code = 'v'] or marc:subfield[@code = 'x'] 
             or marc:subfield[@code = 'y'] or marc:subfield[@code = 'z']">
             <xsl:if test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
                 <xsl:variable name="prefLabel">
                     <xsl:choose>
-                        <xsl:when test="@tag = '600' or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '600'))">
+                        <xsl:when test="$tagType = '600'">
                             <xsl:call-template name="F600-label"/>
                         </xsl:when>
-                        <xsl:when test="@tag = '610' or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '610'))">
+                        <xsl:when test="$tagType = '610'">
                             <xsl:call-template name="F610-label"/>
                         </xsl:when>
-                        <xsl:when test="@tag = '611' or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '611'))">
+                        <xsl:when test="$tagType = '611'">
                             <xsl:call-template name="F611-label"/>
                         </xsl:when>
                     </xsl:choose>
@@ -190,11 +192,12 @@
         <xsl:param name="baseIRI"/>
         <xsl:variable name="ap" select="uwf:agentAccessPoint(.)"/>
         <xsl:variable name="source" select="uwf:getSubjectSchemeCode(.)"/>
+        <xsl:variable name="tagType" select="uwf:tagType(.)"/>
         <!-- rdf:Description for agent -->
         <rdf:Description rdf:about="{uwf:agentIRI($baseIRI, .)}">
             <xsl:call-template name="getmarc"/>
             <xsl:choose>
-                <xsl:when test="@tag = '600' or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '600'))">
+                <xsl:when test="$tagType = '600'">
                     <xsl:choose>
                         <!-- person -->
                         <xsl:when test="@ind1 = '0' or @ind1 = '1' or @ind1 = '2'">
@@ -278,7 +281,7 @@
                     </xsl:choose>
                 </xsl:when>
                 <!-- corporate body -->
-                <xsl:when test="@tag = '610' or @tag = '611' 
+                <xsl:when test="$tagType = '610' or $tagType = '611' 
                     or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '610'))
                     or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '611'))">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
@@ -309,7 +312,7 @@
                         </xsl:otherwise>
                     </xsl:choose>
                     <!-- if it's a meeting at type of corporate body -->
-                    <xsl:if test="@tag = '611'">
+                    <xsl:if test="$tagType = '611'">
                         <rdaad:P50237>
                             <xsl:text>Meeting</xsl:text>
                         </rdaad:P50237>
@@ -337,6 +340,7 @@
         | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '611-00'][marc:subfield[@code = 't']]"
         mode="relWor" expand-text="yes">
         <xsl:param name="baseIRI"/>
+        <xsl:variable name="tagType" select="uwf:tagType(.)"/>
         <xsl:variable name="source" select="uwf:getSubjectSchemeCode(.)"/>
         <!-- rdf:Description for related work when $t is present in 600, 610, 611 + 880s -->
         <rdf:Description rdf:about="{uwf:relWorkIRI($baseIRI, .)}">
@@ -370,15 +374,13 @@
             </xsl:choose>
             <!-- agent from the field also gets related to the work -->
             <xsl:choose>
-                <xsl:when test="(@tag = '600' or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '600'))) and @ind1 != '3'">
+                <xsl:when test="$tagType = '600' and @ind1 != '3'">
                     <rdawo:P10312 rdf:resource="{uwf:agentIRI($baseIRI, .)}"/>
                 </xsl:when>
-                <xsl:when test="(@tag = '600' or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '600'))) and @ind1 = '3'">
+                <xsl:when test="$tagType = '600' and @ind1 = '3'">
                     <rdawo:P10313 rdf:resource="{uwf:agentIRI($baseIRI, .)}"/>
                 </xsl:when>
-                <xsl:when test="@tag = '610' or @tag = '611'
-                    or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '610'))
-                    or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '610'))">
+                <xsl:when test="$tagType = '610' or $tagType = '611'">
                     <rdawo:P10314 rdf:resource="{uwf:agentIRI($baseIRI, .)}"/>
                 </xsl:when>
                 <xsl:otherwise/>
@@ -402,32 +404,18 @@
         | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '611-00']"
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
+        <xsl:variable name="tagType" select="uwf:tagType(.)"/>
         <xsl:variable name="ap" select="uwf:agentAccessPoint(.)"/>
         <xsl:variable name="scheme" select="uwf:getSubjectSchemeCode(.)"/>
-        <xsl:variable name="type">
-            <xsl:choose>
-                <xsl:when test="(@tag = '600')
-                    and @ind1 != '3'">
-                    <xsl:value-of select="'Person'"/>
-                </xsl:when>
-                <xsl:when test="(@tag = '600')
-                    and @ind1 = '3'">
-                    <xsl:value-of select="'Family'"/>
-                </xsl:when>
-                <xsl:when test="@tag = '610'or @tag = '611'">
-                    <xsl:value-of select="'Corporate Body'"/>
-                </xsl:when>
-            </xsl:choose>
-        </xsl:variable>
         <xsl:variable name="prefLabel">
             <xsl:choose>
-                <xsl:when test="@tag = '600' or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '600'))">
+                <xsl:when test="$tagType = '600'">
                     <xsl:call-template name="F600-label"/>
                 </xsl:when>
-                <xsl:when test="@tag = '610' or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '610'))">
+                <xsl:when test="$tagType = '610'">
                     <xsl:call-template name="F610-label"/>
                 </xsl:when>
-                <xsl:when test="@tag = '611' or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '611'))">
+                <xsl:when test="$tagType= '611'">
                     <xsl:call-template name="F611-label"/>
                 </xsl:when>
             </xsl:choose>
