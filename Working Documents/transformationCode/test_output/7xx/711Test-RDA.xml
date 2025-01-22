@@ -3,7 +3,7 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test1exp"/><!--rdawo:P10078 = has expression of work-->
       <rdawd:P10002>relator-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10008 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d21e6"/><!--rdawo:P10008 = has production company-->
+      <rdawo:P10008 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d22e6"/><!--rdawo:P10008 = has production company-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -15,16 +15,16 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test1exp"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/relator-test1wor#d21e22"/><!--rdamo:P30265 = has related work of manifestation-->
-      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test1age#d21e33-->
-      <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d21e33"/><!--rdamo:P30270 = has related corporate body of manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/relator-test1wor#d22e22"/><!--rdamo:P30265 = has related work of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test1age#d22e33-->
+      <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d22e33"/><!--rdamo:P30270 = has related corporate body of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1ageNom#d21e13">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1ageNom#d22e13">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Texas Music Festival. Orchestra</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d21e6">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d22e6">
       <fake:marcfield>F711 2# $a Stratford Festival (Ont.), $j production company. $1 https://fakeiri.edu/1234</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
       <rdaad:P50375>Stratford Festival (Ont.)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
@@ -34,26 +34,29 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/age#texasmusicfestivalorchestra">
       <fake:marcfield>F711 2# $a Texas Music Festival. $e Orchestra. $4 prf $2 naf</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/relator-test1ageNom#d21e13"/><!--rdaao:P50407 = has authorized access point for corporate body-->
+      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/relator-test1ageNom#d22e13"/><!--rdaao:P50407 = has authorized access point for corporate body-->
       <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d21e22">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d22e22">
       <fake:marcfield>F711 2# $i Preceded by (work): $a Consultative Meeting on Elimination of Kala-Azar from South Asia $d (2009 : $c New Delhi, India). $t Kala azar in South Asia.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
       <rdaad:P50375>Consultative Meeting on Elimination of Kala-Azar from South Asia (2009 : New Delhi, India)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
       <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
+      <rdaad:P50024>New Delhi, India.</rdaad:P50024><!--rdaad:P50024 = has place of conference-->
+      <rdaad:P50039>2009</rdaad:P50039><!--rdaad:P50039 = has date of conference-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d21e33">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d22e33">
       <fake:marcfield>F711 2# $6 880-01 $a Oregon Shakespeare Festival.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
       <rdaad:P50375>Oregon Shakespeare Festival</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
       <rdaad:P50375>Oregon Shakespeare Festival 880</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
       <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1wor#d21e22">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1wor#d22e22">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>d21e22wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10002>d22e22wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <rdawd:P10328>Consultative Meeting on Elimination of Kala-Azar from South Asia (2009 : New Delhi, India). Kala azar in South Asia</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d21e22"/><!--rdawo:P10314 = has related corporate body of work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d22e22"/><!--rdawo:P10314 = has related corporate body of work-->
+      <rdawd:P10088>Kala azar in South Asia</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
 </rdf:RDF>

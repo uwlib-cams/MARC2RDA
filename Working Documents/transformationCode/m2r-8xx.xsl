@@ -105,6 +105,13 @@
                 </xsl:otherwise>
             </xsl:choose>
             <xsl:copy-of select="uwf:workIdentifiers(.)"/>
+            <!-- If we minted the IRI - add additional details -->
+            <xsl:if test="starts-with(uwf:agentIRI($baseIRI, .), $BASE)">
+                <xsl:call-template name="FXXX-xx-f"/>
+                <xsl:call-template name="FXXX-xx-tknp"/>
+                <xsl:call-template name="FXXX-xx-n"/>
+                <xsl:call-template name="FXXX-xx-x"/>
+            </xsl:if>
         </rdf:Description>
     </xsl:template>
     
@@ -147,6 +154,7 @@
                                 </xsl:otherwise>
                             </xsl:choose>
                             <xsl:if test="starts-with(uwf:agentIRI($baseIRI, .), $BASE)">
+                                <xsl:call-template name="FX00-xx-ab"/>
                                 <xsl:call-template name="FX00-xx-d"/>
                                 <xsl:call-template name="FX00-xx-q"/>
                             </xsl:if>
@@ -176,6 +184,11 @@
                                     </xsl:if>
                                 </xsl:otherwise>
                             </xsl:choose>
+                            <!-- If we minted the IRI - add additional details -->
+                            <xsl:if test="starts-with(uwf:agentIRI($baseIRI, .), $BASE)">
+                                <xsl:call-template name="FX00-x3-c"/>
+                                <xsl:call-template name="FX00-x3-d"/>
+                            </xsl:if>
                         </xsl:when>
                     </xsl:choose>
                 </xsl:when>
@@ -208,6 +221,11 @@
                         <rdaad:P50237>
                             <xsl:text>Meeting</xsl:text>
                         </rdaad:P50237>
+                    </xsl:if>
+                    <!-- If we minted the IRI - add additional details -->
+                    <xsl:if test="starts-with(uwf:agentIRI($baseIRI, .), $BASE)">
+                        <xsl:call-template name="FX1X-xx-c"/>
+                        <xsl:call-template name="FX1X-xx-d"/>
                     </xsl:if>
                 </xsl:when>
             </xsl:choose>

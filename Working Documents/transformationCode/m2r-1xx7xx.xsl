@@ -271,9 +271,7 @@
                             </xsl:choose>
                             <!-- If we minted the IRI - add additional details -->
                             <xsl:if test="starts-with(uwf:agentIRI($baseIRI, .), $BASE)">
-                                <xsl:if test="@ind1 = '0'">
-                                    <xsl:call-template name="FX00-x0-ab"/>
-                                </xsl:if>
+                                <xsl:call-template name="FX00-xx-ab"/>
                                 <xsl:call-template name="FX00-xx-d"/>
                                 <xsl:call-template name="FX00-xx-q"/>
                             </xsl:if>
@@ -478,10 +476,13 @@
                     <xsl:otherwise/>
                 </xsl:choose>
                 <xsl:copy-of select="uwf:workIdentifiers(.)"/>
-                <xsl:call-template name="FXXX-xx-f"/>
-                <xsl:call-template name="FXXX-xx-tknp"/>
-                <xsl:call-template name="FXXX-xx-n"/>
-                <xsl:call-template name="FXXX-xx-x"/>
+                <!-- If we minted the IRI - add additional details -->
+                <xsl:if test="starts-with(uwf:agentIRI($baseIRI, .), $BASE)">
+                    <xsl:call-template name="FXXX-xx-f"/>
+                    <xsl:call-template name="FXXX-xx-tknp"/>
+                    <xsl:call-template name="FXXX-xx-n"/>
+                    <xsl:call-template name="FXXX-xx-x"/>
+                </xsl:if>
             </rdf:Description>
         </xsl:if>
     </xsl:template>
@@ -527,6 +528,7 @@
                                 </xsl:choose>
                                 <!-- If we minted the IRI - add additional details -->
                                 <xsl:if test="starts-with(uwf:agentIRI($baseIRI, .), $BASE)">
+                                    <xsl:call-template name="FX00-xx-ab"/>
                                     <xsl:call-template name="FX00-xx-d"/>
                                     <xsl:call-template name="FX00-xx-q"/>
                                 </xsl:if>
@@ -556,6 +558,11 @@
                                         </xsl:if>
                                     </xsl:otherwise>
                                 </xsl:choose>
+                                <!-- If we minted the IRI - add additional details -->
+                                <xsl:if test="starts-with(uwf:agentIRI($baseIRI, .), $BASE)">
+                                    <xsl:call-template name="FX00-x3-c"/>
+                                    <xsl:call-template name="FX00-x3-d"/>
+                                </xsl:if>
                             </xsl:when>
                             <xsl:otherwise/>
                         </xsl:choose>
@@ -589,6 +596,11 @@
                             <rdaad:P50237>
                                 <xsl:text>Meeting</xsl:text>
                             </rdaad:P50237>
+                        </xsl:if>
+                        <!-- If we minted the IRI - add additional details -->
+                        <xsl:if test="starts-with(uwf:agentIRI($baseIRI, .), $BASE)">
+                            <xsl:call-template name="FX1X-xx-c"/>
+                            <xsl:call-template name="FX1X-xx-d"/>
                         </xsl:if>
                     </xsl:when>
                     <xsl:otherwise/>
@@ -680,10 +692,13 @@
                     </xsl:otherwise>
                 </xsl:choose>
                 <xsl:copy-of select="uwf:workIdentifiers(.)"/>
-                <xsl:call-template name="FXXX-xx-f"/>
-                <xsl:call-template name="FXXX-xx-tknp"/>
-                <xsl:call-template name="FXXX-xx-n"/>
-                <xsl:call-template name="FXXX-xx-x"/>
+                <!-- If we minted the IRI - add additional details -->
+                <xsl:if test="starts-with(uwf:agentIRI($baseIRI, .), $BASE)">
+                    <xsl:call-template name="FXXX-xx-f"/>
+                    <xsl:call-template name="FXXX-xx-tknp"/>
+                    <xsl:call-template name="FXXX-xx-n"/>
+                    <xsl:call-template name="FXXX-xx-x"/>
+                </xsl:if>
             </rdf:Description>
         </xsl:if>
     </xsl:template>

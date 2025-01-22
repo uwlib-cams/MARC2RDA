@@ -1006,7 +1006,7 @@
     
     <!-- Attributes -->
     
-    <xsl:template name="FX00-x0-ab">
+    <xsl:template name="FX00-xx-ab">
         <xsl:if test="marc:subfield[@code = 'a'] or marc:subfield[@code = 'b']">
             <rdaad:P50111>
                 <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']"/>

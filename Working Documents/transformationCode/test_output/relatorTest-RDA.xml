@@ -1,360 +1,337 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
-         xmlns:fake="http://fakePropertiesForDemo"
-         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
-         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
-         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
-         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
-         xmlns:rdae="http://rdaregistry.info/Elements/e/"
-         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
-         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
-         xmlns:rdai="http://rdaregistry.info/Elements/i/"
-         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
-         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
-         xmlns:rdam="http://rdaregistry.info/Elements/m/"
-         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
-         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
-         xmlns:rdan="http://rdaregistry.info/Elements/n/"
-         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
-         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
-         xmlns:rdap="http://rdaregistry.info/Elements/p/"
-         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
-         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
-         xmlns:rdat="http://rdaregistry.info/Elements/t/"
-         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
-         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
-         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
-         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
-         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
-         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:uwf="http://universityOfWashington/functions"
-         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test1exp"/>
-      <rdawd:P10002>relator-test1wor</rdawd:P10002>
-      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test1age#d21e6-->
-      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d21e6"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test1exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>relator-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test1age#d22e6-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d22e6"/><!--rdawo:P10312 = has related person of work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test1man"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test1wor"/>
-      <rdaed:P20002>relator-test1exp</rdaed:P20002>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test1man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test1wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>relator-test1exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test1exp"/>
-      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test1age#d21e11-->
-      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d21e11"/>
-      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test1age#d21e16-->
-      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d21e16"/>
-      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test1age#d21e19-->
-      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d21e19"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test1exp"/><!--rdamo:P30139 = has expression manifested-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test1age#d22e11-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d22e11"/><!--rdamo:P30268 = has related person of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test1age#d22e16-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d22e16"/><!--rdamo:P30268 = has related person of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test1age#d22e19-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d22e19"/><!--rdamo:P30268 = has related person of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d21e6">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d22e6">
       <fake:marcfield>F100 1# $a Strautmann, Eva, $d 1963-</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Strautmann, Eva, 1963-</rdaad:P50377>
-      <rdaad:P50347>1963-</rdaad:P50347>
-      <rdaad:P50121>1963</rdaad:P50121>
+      <rdaad:P50377>Strautmann, Eva, 1963-</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Strautmann, Eva,</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1963</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d21e11">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d22e11">
       <fake:marcfield>F700 1# $a Smith, Stephen W., $c Dr.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Smith, Stephen W., Dr.</rdaad:P50377>
+      <rdaad:P50377>Smith, Stephen W., Dr.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Smith, Stephen W.,</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d21e16">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d22e16">
       <fake:marcfield>F700 1# $a Brown, Sarah A.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Brown, Sarah A.</rdaad:P50377>
+      <rdaad:P50377>Brown, Sarah A.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Brown, Sarah A.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d21e19">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d22e19">
       <fake:marcfield>F700 1# $a Henson, David B.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Henson, David B.</rdaad:P50377>
+      <rdaad:P50377>Henson, David B.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Henson, David B.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test2wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test2exp"/>
-      <rdawd:P10002>relator-test2wor</rdawd:P10002>
-      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test2age#d21e26-->
-      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/relator-test2age#d21e26"/>
-      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/relator-test2age#d21e31"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test2exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>relator-test2wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test2age#d22e26-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/relator-test2age#d22e26"/><!--rdawo:P10312 = has related person of work-->
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/relator-test2age#d22e31"/><!--rdawo:P10436 = has author person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test2exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test2man"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test2wor"/>
-      <rdaed:P20002>relator-test2exp</rdaed:P20002>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test2man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test2wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>relator-test2exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test2man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test2exp"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test2exp"/><!--rdamo:P30139 = has expression manifested-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test2age#d21e26">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test2age#d22e26">
       <fake:marcfield>F100 1# $a Boulanger, John, $d 1965-</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Boulanger, John, 1965-</rdaad:P50377>
-      <rdaad:P50347>1965-</rdaad:P50347>
-      <rdaad:P50121>1965</rdaad:P50121>
+      <rdaad:P50377>Boulanger, John, 1965-</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Boulanger, John,</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1965</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test2age#d21e31">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test2age#d22e31">
       <fake:marcfield>F700 1# $a Williams, Judy $c (Wildlife manager), $e author.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Williams, Judy (Wildlife manager)</rdaad:P50377>
+      <rdaad:P50377>Williams, Judy (Wildlife manager)</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Williams, Judy</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test3wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test3exp"/>
-      <rdawd:P10002>relator-test3wor</rdawd:P10002>
-      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/relator-test3age#d21e42"/>
-      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/relator-test3age#d21e47"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test3exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>relator-test3wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/relator-test3age#d22e42"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/relator-test3age#d22e47"/><!--rdawo:P10436 = has author person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test3exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test3man"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test3wor"/>
-      <rdaed:P20002>relator-test3exp</rdaed:P20002>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test3man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test3wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>relator-test3exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test3man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test3exp"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test3exp"/><!--rdamo:P30139 = has expression manifested-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test3age#d21e42">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test3age#d22e42">
       <fake:marcfield>F100 1# $a Boulanger, John, $d 1965-</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Boulanger, John, 1965-</rdaad:P50377>
-      <rdaad:P50347>1965-</rdaad:P50347>
-      <rdaad:P50121>1965</rdaad:P50121>
+      <rdaad:P50377>Boulanger, John, 1965-</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Boulanger, John,</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1965</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test3age#d21e47">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test3age#d22e47">
       <fake:marcfield>F700 1# $a Williams, Judy $c (Wildlife manager), $e joint author.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Williams, Judy (Wildlife manager)</rdaad:P50377>
+      <rdaad:P50377>Williams, Judy (Wildlife manager)</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Williams, Judy</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test4wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test4exp"/>
-      <rdawd:P10002>relator-test4wor</rdawd:P10002>
-      <rdawo:P10530 rdf:resource="http://marc2rda.edu/fake/relator-test4age#d21e58"/>
-      <rdawo:P10550 rdf:resource="http://marc2rda.edu/fake/relator-test4age#d21e58"/>
-      <rdawo:P10530 rdf:resource="http://marc2rda.edu/fake/relator-test4age#d21e66"/>
-      <rdawo:P10550 rdf:resource="http://marc2rda.edu/fake/relator-test4age#d21e66"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test4exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>relator-test4wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10530 rdf:resource="http://marc2rda.edu/fake/relator-test4age#d22e58"/><!--rdawo:P10530 = has author corporate body-->
+      <rdawo:P10550 rdf:resource="http://marc2rda.edu/fake/relator-test4age#d22e58"/><!--rdawo:P10550 = has issuing corporate body-->
+      <rdawo:P10530 rdf:resource="http://marc2rda.edu/fake/relator-test4age#d22e66"/><!--rdawo:P10530 = has author corporate body-->
+      <rdawo:P10550 rdf:resource="http://marc2rda.edu/fake/relator-test4age#d22e66"/><!--rdawo:P10550 = has issuing corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test4exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test4man"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test4wor"/>
-      <rdaed:P20002>relator-test4exp</rdaed:P20002>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test4man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test4wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>relator-test4exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test4man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test4exp"/>
-      <rdamo:P30420 rdf:resource="http://marc2rda.edu/fake/relator-test4age#d21e61"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test4exp"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30420 rdf:resource="http://marc2rda.edu/fake/relator-test4age#d22e61"/><!--rdamo:P30420 = has publisher corporate body-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test4age#d21e58">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test4age#d22e58">
       <fake:marcfield>F110 2# $a University of Washington.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375>University of Washington</rdaad:P50375>
+      <rdaad:P50375>University of Washington</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test4age#d21e61">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test4age#d22e61">
       <fake:marcfield>F710 2# $a Gay, Lesbian, and Straight Education Network, $e publisher.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375>Gay, Lesbian, and Straight Education Network</rdaad:P50375>
+      <rdaad:P50375>Gay, Lesbian, and Straight Education Network</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test4age#d21e66">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test4age#d22e66">
       <fake:marcfield>F710 2# $a National Queer Asian Pacific Islander Alliance, $e joint author, $e joint issuing body.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375>National Queer Asian Pacific Islander Alliance</rdaad:P50375>
+      <rdaad:P50375>National Queer Asian Pacific Islander Alliance</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test5wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test5exp"/>
-      <rdawd:P10002>relator-test5wor</rdawd:P10002>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test5exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>relator-test5wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test5exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test5man"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test5wor"/>
-      <rdaed:P20002>relator-test5exp</rdaed:P20002>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test5man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test5wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>relator-test5exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test5man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test5exp"/>
-      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test5age#d21e77-->
-      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/relator-test5age#d21e77"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test5exp"/><!--rdamo:P30139 = has expression manifested-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test5age#d22e77-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/relator-test5age#d22e77"/><!--rdamo:P30268 = has related person of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test5age#d21e77">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test5age#d22e77">
       <fake:marcfield>F700 1# $a Williams, Judy $c (Wildlife manager),</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Williams, Judy (Wildlife manager)</rdaad:P50377>
+      <rdaad:P50377>Williams, Judy (Wildlife manager)</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Williams, Judy</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test6wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test6exp"/>
-      <rdawd:P10002>relator-test6wor</rdawd:P10002>
-      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test6age#d21e86-->
-      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/relator-test6age#d21e86"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test6exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>relator-test6wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test6age#d22e86-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/relator-test6age#d22e86"/><!--rdawo:P10312 = has related person of work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test6exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test6man"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test6wor"/>
-      <rdaed:P20002>relator-test6exp</rdaed:P20002>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test6man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test6wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>relator-test6exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test6man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test6exp"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test6exp"/><!--rdamo:P30139 = has expression manifested-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test6age#d21e86">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test6age#d22e86">
       <fake:marcfield>F100 1# $a Oskolkoff, Ruth Ann, $4 no match</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Oskolkoff, Ruth Ann</rdaad:P50377>
+      <rdaad:P50377>Oskolkoff, Ruth Ann</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Oskolkoff, Ruth Ann,</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test7wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test7exp"/>
-      <rdawd:P10002>relator-test7wor</rdawd:P10002>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test7exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>relator-test7wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test7exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test7man"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test7wor"/>
-      <rdaed:P20002>relator-test7exp</rdaed:P20002>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test7man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test7wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>relator-test7exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test7man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test7exp"/>
-      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test7age#d21e95-->
-      <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/relator-test7age#d21e95"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test7exp"/><!--rdamo:P30139 = has expression manifested-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/relator-test7age#d22e95-->
+      <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/relator-test7age#d22e95"/><!--rdamo:P30270 = has related corporate body of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test7age#d21e95">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test7age#d22e95">
       <fake:marcfield>F710 2# $a Emporia State University. $b Department of Biological Sciences, $4 http://fakeiri.org/fake</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375>Emporia State University. Department of Biological Sciences</rdaad:P50375>
+      <rdaad:P50375>Emporia State University. Department of Biological Sciences</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test8wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test8exp"/>
-      <rdawd:P10002>relator-test8wor</rdawd:P10002>
-      <rdawo:P10550 rdf:resource="http://marc2rda.edu/fake/relator-test8age#d21e106"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test8exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>relator-test8wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10550 rdf:resource="http://marc2rda.edu/fake/relator-test8age#d22e106"/><!--rdawo:P10550 = has issuing corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test8exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test8man"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test8wor"/>
-      <rdaed:P20002>relator-test8exp</rdaed:P20002>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test8man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test8wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>relator-test8exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test8man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test8exp"/>
-      <rdamo:P30420 rdf:resource="http://marc2rda.edu/fake/relator-test8age#d21e106"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test8exp"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30420 rdf:resource="http://marc2rda.edu/fake/relator-test8age#d22e106"/><!--rdamo:P30420 = has publisher corporate body-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test8age#d21e106">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test8age#d22e106">
       <fake:marcfield>F710 1# $a Northwest Territories. $b Department of Environment and Natural Resources, $e issuing corporate body. $4 http://rdaregistry.info/Elements/m/P30420</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375>Northwest Territories. Department of Environment and Natural Resources</rdaad:P50375>
+      <rdaad:P50375>Northwest Territories. Department of Environment and Natural Resources</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test9exp"/>
-      <rdawd:P10002>relator-test9wor</rdawd:P10002>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test9exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>relator-test9wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test9man"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test9wor"/>
-      <rdaed:P20002>relator-test9exp</rdaed:P20002>
-      <rdaeo:P20469 rdf:resource="http://marc2rda.edu/fake/relator-test9age#d21e133"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test9man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test9wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>relator-test9exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+      <rdaeo:P20469 rdf:resource="http://marc2rda.edu/fake/relator-test9age#d22e133"/><!--rdaeo:P20469 = has performer corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test9exp"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test9exp"/><!--rdamo:P30139 = has expression manifested-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9age#d21e133">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9age#d22e133">
       <fake:marcfield>F711 2# $a Elora Festival. $4 http://id.loc.gov/vocabulary/relators/prf</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375>Elora Festival</rdaad:P50375>
-      <rdaad:P50237>Meeting</rdaad:P50237>
+      <rdaad:P50375>Elora Festival</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test10wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test10exp"/>
-      <rdawd:P10002>relator-test10wor</rdawd:P10002>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test10exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>relator-test10wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test10exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test10man"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test10wor"/>
-      <rdaed:P20002>relator-test10exp</rdaed:P20002>
-      <rdaeo:P20469 rdf:resource="http://marc2rda.edu/fake/relator-test10age#d21e142"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test10man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test10wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>relator-test10exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+      <rdaeo:P20469 rdf:resource="http://marc2rda.edu/fake/relator-test10age#d22e142"/><!--rdaeo:P20469 = has performer corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test10man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test10exp"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test10exp"/><!--rdamo:P30139 = has expression manifested-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test10age#d21e142">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test10age#d22e142">
       <fake:marcfield>F711 2# $a Elora Festival. $4 http://rdaregistry.info/Elements/u/P60387</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375>Elora Festival</rdaad:P50375>
-      <rdaad:P50237>Meeting</rdaad:P50237>
+      <rdaad:P50375>Elora Festival</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-testItemwor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-testItemexp"/>
-      <rdawd:P10002>relator-testItemwor</rdawd:P10002>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-testItemexp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>relator-testItemwor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-testItemexp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-testItemman"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-testItemwor"/>
-      <rdaed:P20002>relator-testItemexp</rdaed:P20002>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-testItemman"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-testItemwor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>relator-testItemexp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-testItemman">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-testItemexp"/>
-      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/relator-testItemite#d21e152"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-testItemexp"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/relator-testItemite#d22e152"/><!--rdamo:P30103 = has exemplar of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-testItemite#d21e152">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-testItemite#d22e152">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>relator-testItemite#d21e152</rdaid:P40001>
-      <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/relator-testItemman"/>
-      <rdaio:P40014 rdf:resource="http://marc2rda.edu/fake/relator-testItemage#d21e152"/>
+      <rdaid:P40001>relator-testItemite#d22e152</rdaid:P40001><!--rdaid:P40001 = has identifier for item-->
+      <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/relator-testItemman"/><!--rdaio:P40049 = has manifestation exemplified-->
+      <rdaio:P40014 rdf:resource="http://marc2rda.edu/fake/relator-testItemage#d22e152"/><!--rdaio:P40014 = has inscriber-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-testItemage#d21e152">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-testItemage#d22e152">
       <fake:marcfield>F700 1# $a Item, Test $4 sgn</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Item, Test</rdaad:P50377>
+      <rdaad:P50377>Item, Test</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Item, Test</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-testItemwor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-testItemexp"/>
-      <rdawd:P10002>relator-testItemwor</rdawd:P10002>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-testItemexp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>relator-testItemwor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-testItemexp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-testItemman"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-testItemwor"/>
-      <rdaed:P20002>relator-testItemexp</rdaed:P20002>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-testItemman"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-testItemwor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>relator-testItemexp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-testItemman">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-testItemexp"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-testItemexp"/><!--rdamo:P30139 = has expression manifested-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-testItemite#d21e161">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-testItemite#d22e161">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>relator-testItemite#d21e161</rdaid:P40001>
-      <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/relator-testItemman"/>
-      <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/dlc"/>
-      <!--Default relationship property used for http://marc2rda.edu/fake/relator-testItemage#d21e161-->
-      <rdaio:P40073 rdf:resource="http://marc2rda.edu/fake/relator-testItemage#d21e161"/>
+      <rdaid:P40001>relator-testItemite#d22e161</rdaid:P40001><!--rdaid:P40001 = has identifier for item-->
+      <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/relator-testItemman"/><!--rdaio:P40049 = has manifestation exemplified-->
+      <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/dlc"/><!--rdaio:P40161 = is holding of-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/relator-testItemage#d22e161-->
+      <rdaio:P40073 rdf:resource="http://marc2rda.edu/fake/relator-testItemage#d22e161"/><!--rdaio:P40073 = has related person of item-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-testItemage#d21e161">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-testItemage#d22e161">
       <fake:marcfield>F700 1# $a Item 5 Test $5 DLC</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Item 5 Test</rdaad:P50377>
+      <rdaad:P50377>Item 5 Test</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Item 5 Test</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
 </rdf:RDF>
