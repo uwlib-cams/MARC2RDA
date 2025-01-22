@@ -1032,14 +1032,13 @@
     
     <xsl:template name="FX00-xx-d">
         <xsl:for-each select="marc:subfield[@code = 'd']">
-            <rdaad:P50347>
-                <xsl:value-of select="."/>
-            </rdaad:P50347>
             <xsl:choose>
                 <xsl:when test="contains(., '-')">
-                    <rdaad:P50121>
-                        <xsl:value-of select="normalize-space(substring-before(., '-'))"/>
-                    </rdaad:P50121>
+                    <xsl:if test="matches(normalize-space(.), '^.+-')">
+                        <rdaad:P50121>
+                            <xsl:value-of select="normalize-space(substring-before(., '-'))"/>
+                        </rdaad:P50121>
+                    </xsl:if>
                     <xsl:if test="not(ends-with(normalize-space(.), '-'))">
                         <rdaad:P50120>
                             <xsl:value-of select="replace(normalize-space(substring-after(., '-')),  '\.$', '')"/>
@@ -1047,41 +1046,58 @@
                     </xsl:if>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:if test="contains(normalize-space(.), 'b.')">
-                        <rdaad:P50121>
-                            <xsl:value-of select="replace(normalize-space(substring-after(., 'b.')),  '\.$', '')"/>
-                        </rdaad:P50121>
-                    </xsl:if>
-                    <xsl:if test="contains(normalize-space(.), 'born')">
-                        <rdaad:P50121>
-                            <xsl:value-of select="replace(normalize-space(substring-after(., 'born')),  '\.$', '')"/>
-                        </rdaad:P50121>
-                    </xsl:if>
-                    <xsl:if test="contains(normalize-space(.), 'd.')">
-                        <rdaad:P50120>
-                            <xsl:value-of select="replace(normalize-space(substring-after(., 'd.')),  '\.$', '')"/>
-                        </rdaad:P50120>
-                    </xsl:if>
-                    <xsl:if test="contains(normalize-space(.), 'died')">
-                        <rdaad:P50120>
-                            <xsl:value-of select="replace(normalize-space(substring-after(., 'died')),  '\.$', '')"/>
-                        </rdaad:P50120>
-                    </xsl:if>
-                    <xsl:if test="contains(normalize-space(.), 'active')">
-                        <rdaad:P50098>
-                            <xsl:value-of select="replace(normalize-space(substring-after(., 'active')), '\.$', '')"/>
-                        </rdaad:P50098>
-                    </xsl:if>
-                    <xsl:if test="contains(normalize-space(.), 'fl.')">
-                        <rdaad:P50098>
-                            <xsl:value-of select="replace(normalize-space(substring-after(., 'fl.')), '\.$', '')"/>
-                        </rdaad:P50098>
-                    </xsl:if>
-                    <xsl:if test="contains(normalize-space(.), 'cent.') or contains(normalize-space(.), 'century')">
-                        <rdaad:P50098>
-                            <xsl:value-of select="."/>
-                        </rdaad:P50098>
-                    </xsl:if>
+                    <xsl:choose>
+                        <xsl:when test="contains(normalize-space(.), 'b.')">
+                            <rdaad:P50121>
+                                <xsl:value-of select="replace(normalize-space(substring-after(., 'b.')),  '\.$', '')"/>
+                            </rdaad:P50121>
+                        </xsl:when>
+                        <xsl:when test="contains(normalize-space(.), 'born')">
+                            <rdaad:P50121>
+                                <xsl:value-of select="replace(normalize-space(substring-after(., 'born')),  '\.$', '')"/>
+                            </rdaad:P50121>
+                        </xsl:when>
+                        <xsl:when test="contains(normalize-space(.), 'd.')">
+                            <rdaad:P50120>
+                                <xsl:value-of select="replace(normalize-space(substring-after(., 'd.')),  '\.$', '')"/>
+                            </rdaad:P50120>
+                        </xsl:when>
+                        <xsl:when test="contains(normalize-space(.), 'died')">
+                            <rdaad:P50120>
+                                <xsl:value-of select="replace(normalize-space(substring-after(., 'died')),  '\.$', '')"/>
+                            </rdaad:P50120>
+                        </xsl:when>
+                        <xsl:when test="contains(normalize-space(.), 'active')">
+                            <rdaad:P50098>
+                                <xsl:value-of select="replace(normalize-space(substring-after(., 'active')), '\.$', '')"/>
+                            </rdaad:P50098>
+                        </xsl:when>
+                        <xsl:when test="contains(normalize-space(.), 'jin shi')">
+                            <rdaad:P50098>
+                                <xsl:value-of select="replace(normalize-space(substring-after(., 'jin shi')), '\.$', '')"/>
+                            </rdaad:P50098>
+                        </xsl:when>
+                        <xsl:when test="contains(normalize-space(.), 'ju ren')">
+                            <rdaad:P50098>
+                                <xsl:value-of select="replace(normalize-space(substring-after(., 'ju ren')), '\.$', '')"/>
+                            </rdaad:P50098>
+                        </xsl:when>
+                        <xsl:when test="contains(normalize-space(.), 'fl.')">
+                            <rdaad:P50098>
+                                <xsl:value-of select="replace(normalize-space(substring-after(., 'fl.')), '\.$', '')"/>
+                            </rdaad:P50098>
+                        </xsl:when>
+                        <xsl:when test="contains(normalize-space(.), 'cent.') or contains(normalize-space(.), 'century')">
+                            <rdaad:P50098>
+                                <xsl:value-of select="."/>
+                            </rdaad:P50098>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <rdaad:P50347>
+                                <xsl:value-of select="."/>
+                            </rdaad:P50347>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:for-each>
