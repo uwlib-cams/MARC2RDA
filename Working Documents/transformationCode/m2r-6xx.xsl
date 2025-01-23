@@ -778,14 +778,14 @@
                     </xsl:when>
                     <xsl:otherwise>
                         <rdatd:P70015>
-                            <xsl:value-of select="uwf:stripEndPunctuation(marc:subfield[@code = 'a'])"/>
+                            <xsl:value-of select="uwf:stripEndPunctuation(marc:subfield[@code = 'a']) => replace(' -', '-') => replace('- ', '-')"/>
                         </rdatd:P70015>
                         <xsl:if test="@tag = '648' and @ind2 = '4' and marc:subfield[@code = '6']">
                             <xsl:variable name="occNum" select="concat('648-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                             <xsl:for-each
                                 select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
                                 <rdatd:P70015>
-                                    <xsl:value-of select="uwf:stripEndPunctuation(marc:subfield[@code = 'a'])"/>
+                                    <xsl:value-of select="uwf:stripEndPunctuation(marc:subfield[@code = 'a']) => replace(' -', '-') => replace('- ', '-')"/>
                                 </rdatd:P70015>
                             </xsl:for-each>
                         </xsl:if>
@@ -812,13 +812,13 @@
             <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'timNom')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
-                    <xsl:value-of select="uwf:stripEndPunctuation(marc:subfield[@code = 'a'])"/>
+                    <xsl:value-of select="uwf:stripEndPunctuation(marc:subfield[@code = 'a']) => replace(' -', '-') => replace('- ', '-')"/>
                 </rdand:P80068>
                 <xsl:if test="@tag = '648' and marc:subfield[@code = '6']">
                     <xsl:variable name="occNum" select="concat('648-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                     <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
                         <rdand:P80113>
-                            <xsl:value-of select="uwf:stripEndPunctuation(marc:subfield[@code = 'a'])"/>
+                            <xsl:value-of select="uwf:stripEndPunctuation(marc:subfield[@code = 'a']) => replace(' -', '-') => replace('- ', '-')"/>
                         </rdand:P80113>
                     </xsl:for-each>
                 </xsl:if>
