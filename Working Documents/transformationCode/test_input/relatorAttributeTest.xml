@@ -133,7 +133,7 @@
             <marc:subfield code="a">Chen, Denlong,</marc:subfield>
             <marc:subfield code="d">ju ren 1774</marc:subfield>
         </marc:datafield>
-        <marc:datafield tag="700" ind1="1" ind2=" ">
+        <marc:datafield tag="700" ind1="0" ind2=" ">
             <marc:subfield code="a">Aaron,</marc:subfield>
             <marc:subfield code="c">of zhitomir,</marc:subfield>
             <marc:subfield code="d">-approximately 1817</marc:subfield>
@@ -146,13 +146,22 @@
             <marc:subfield code="a">Abate, Nicolò dell',</marc:subfield>
             <marc:subfield code="d">approximately 1509-1571</marc:subfield>
         </marc:datafield>
-        <marc:datafield tag="700" ind1="1" ind2=" ">
+        <marc:datafield tag="700" ind1="0" ind2=" ">
             <marc:subfield code="a">ʻAbbās ibn ʻAbd al-Muṭṭalib,</marc:subfield>
             <marc:subfield code="d">approximately 566-approximately 653</marc:subfield>
         </marc:datafield>
-        <marc:datafield tag="700" ind1="1" ind2=" ">
+        <marc:datafield tag="700" ind1="0" ind2=" ">
             <marc:subfield code="a">ʻAbd al-ʻAzīz Muḥammad,</marc:subfield>
             <marc:subfield code="d">1866 or 1867-approximately 1948</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="700" ind1="0" ind2=" ">
+            <marc:subfield code="a">Achilles Painter,</marc:subfield>
+            <marc:subfield code="d">active approximately 450 B.C.-425 B.C.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="0" ind2=" ">
+            <marc:subfield code="a">Dmitriev, Nikolaĭ Ivanovich,</marc:subfield>
+            <marc:subfield code="d">1880-not before 1946</marc:subfield>
         </marc:datafield>
     </marc:record>
 </marc:collection>
