@@ -161,7 +161,7 @@
         <xsl:param name="sub2"/>
         <xsl:variable name="code2" select="replace($sub2, '\.$', '')"/>
         <xsl:choose>
-            <xsl:when test="$locNameTitleSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/classSchemes/', lower-case($code2)))">
+            <xsl:when test="$locNameTitleSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/nameTitleSchemes/', lower-case($code2)))">
                 <rdan:P80069 rdf:resource="{concat('http://id.loc.gov/vocabulary/nameTitleSchemes/', lower-case($code2))}"/>
             </xsl:when>
             <xsl:otherwise>
