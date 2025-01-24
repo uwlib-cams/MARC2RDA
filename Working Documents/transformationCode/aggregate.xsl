@@ -9,6 +9,21 @@
     <xsl:variable name="listMusicCCT_MLA_Type_Plural" select="document('lookup/ListMusicCCT-MLA_Type_Plural.xml')/items/item"/>
     <xsl:variable name="listMusicCCT_MLA_Medium" select="document('lookup/ListMusicCCT-MLA_Medium.xml')/items/item"/>
     <xsl:variable name="patterns" select="document('lookup/aggregatePatterns.xml')/patterns/pattern" />
+    <xsl:variable name="List245aCollectionTerms" select="document('lookup/List245aCollectionTerms.xml')/items/item"/>
+    <xsl:variable name="List245bCollectionTerms" select="document('lookup/List245bCollectionTerms.xml')/items/item"/>
+    <xsl:variable name="List245cCollectionTerms" select="document('lookup/List245cCollectionTerms.xml')/items/item"/>
+    <xsl:variable name="List520aCollectionTerms" select="document('lookup/List520aCollectionTerms.xml')/items/item"/>
+    <xsl:variable name="ListVAgentEAggregators" select="document('lookup/ListVAgentEAggregators.xml')/items/item"/>
+    <xsl:variable name="ListVAgent4Aggregators" select="document('lookup/ListVAgent4Aggregators.xml')/items/item"/>
+    <xsl:variable name="ListVTextsCCT" select="document('lookup/ListVTextsCCT.xml')/items/item"/>
+    <xsl:variable name="List245cAggregators" select="document('lookup/List245cAggregators.xml')/items/item"/>
+    <xsl:variable name="ListV650a_655aCollectionTerms" select="document('lookup/ListV650a_655aCollectionTerms.xml')/items/item"/>
+    <xsl:variable name="ListV650a_655aCollectionTermsUsually" select="document('lookup/ListV650a_655aCollectionTermsUsually.xml')/items/item"/>
+    <xsl:variable name="ListV650v655vCollectionTermsUsually" select="document('lookup/ListV650v655vCollectionTermsUsually.xml')/items/item"/>
+    <xsl:variable name="ListV650v655vCollectionTerms" select="document('lookup/ListV650v655vCollectionTerms.xml')/items/item"/>
+    <xsl:variable name="List245cIntroductionTerms" select="document('lookup/List245cIntroductionTerms.xml')/items/item"/>
+    <xsl:variable name="List300aSuppCont" select="document('lookup/List300aSuppCont.xml')/items/item"/>
+    <xsl:variable name="List300bSuppCont" select="document('lookup/List300bSuppCont.xml')/items/item"/>
 
     <xsl:template name="append-aggregates" expand-text="yes">
         <xsl:param name="wemi"/>
@@ -27,6 +42,21 @@
                     <xsl:with-param name="listAgent4" select="$listAgent4"/>
                     <xsl:with-param name="listMusicCCT_MLA_Type_Plural" select="$listMusicCCT_MLA_Type_Plural"/>
                     <xsl:with-param name="listMusicCCT_MLA_Medium" select="$listMusicCCT_MLA_Medium"/>
+                    <xsl:with-param name="List245aCollectionTerms" select="$List245aCollectionTerms"/>
+                    <xsl:with-param name="List245bCollectionTerms" select="$List245bCollectionTerms"/>
+                    <xsl:with-param name="List245cCollectionTerms" select="$List245cCollectionTerms"/>
+                    <xsl:with-param name="List520aCollectionTerms" select="$List520aCollectionTerms"/>
+                    <xsl:with-param name="ListVAgentEAggregators" select="$ListVAgentEAggregators"/>
+                    <xsl:with-param name="ListVAgent4Aggregators" select="$ListVAgent4Aggregators"/>
+                    <xsl:with-param name="ListVTextsCCT" select="$ListVTextsCCT"/>
+                    <xsl:with-param name="List245cAggregators" select="$List245cAggregators"/>
+                    <xsl:with-param name="ListV650a_655aCollectionTerms" select="$ListV650a_655aCollectionTerms"/>
+                    <xsl:with-param name="ListV650a_655aCollectionTermsUsually" select="$ListV650a_655aCollectionTermsUsually"/>
+                    <xsl:with-param name="ListV650v655vCollectionTermsUsually" select="$ListV650v655vCollectionTermsUsually"/>
+                    <xsl:with-param name="ListV650v655vCollectionTerms" select="$ListV650v655vCollectionTerms"/>
+                    <xsl:with-param name="List245cIntroductionTerms" select="$List245cIntroductionTerms"/>
+                    <xsl:with-param name="List300aSuppCont" select="$List300aSuppCont"/>
+                    <xsl:with-param name="List300bSuppCont" select="$List300bSuppCont"/>
                 </xsl:evaluate>
             </xsl:variable>
             <xsl:if test="$isMatched">
@@ -51,6 +81,21 @@
                         <xsl:with-param name="listAgent4" select="$listAgent4"/>
                         <xsl:with-param name="listMusicCCT_MLA_Type_Plural" select="$listMusicCCT_MLA_Type_Plural"/>
                         <xsl:with-param name="listMusicCCT_MLA_Medium" select="$listMusicCCT_MLA_Medium"/>
+                        <xsl:with-param name="List245aCollectionTerms" select="$List245aCollectionTerms"/>
+                        <xsl:with-param name="List245bCollectionTerms" select="$List245bCollectionTerms"/>
+                        <xsl:with-param name="List245cCollectionTerms" select="$List245cCollectionTerms"/>
+                        <xsl:with-param name="List520aCollectionTerms" select="$List520aCollectionTerms"/>
+                        <xsl:with-param name="ListVAgentEAggregators" select="$ListVAgentEAggregators"/>
+                        <xsl:with-param name="ListVAgent4Aggregators" select="$ListVAgent4Aggregators"/>
+                        <xsl:with-param name="ListVTextsCCT" select="$ListVTextsCCT"/>
+                        <xsl:with-param name="List245cAggregators" select="$List245cAggregators"/>
+                        <xsl:with-param name="ListV650a_655aCollectionTerms" select="$ListV650a_655aCollectionTerms"/>
+                        <xsl:with-param name="ListV650a_655aCollectionTermsUsually" select="$ListV650a_655aCollectionTermsUsually"/>
+                        <xsl:with-param name="ListV650v655vCollectionTermsUsually" select="$ListV650v655vCollectionTermsUsually"/>
+                        <xsl:with-param name="ListV650v655vCollectionTerms" select="$ListV650v655vCollectionTerms"/>
+                        <xsl:with-param name="List245cIntroductionTerms" select="$List245cIntroductionTerms"/>
+                        <xsl:with-param name="List300aSuppCont" select="$List300aSuppCont"/>
+                        <xsl:with-param name="List300bSuppCont" select="$List300bSuppCont"/>
                     </xsl:evaluate>
                 </xsl:variable>
                 <xsl:if test="$isMatched">
@@ -89,6 +134,21 @@
                     <xsl:with-param name="listAgent4" select="$listAgent4"/>
                     <xsl:with-param name="listMusicCCT_MLA_Type_Plural" select="$listMusicCCT_MLA_Type_Plural"/>
                     <xsl:with-param name="listMusicCCT_MLA_Medium" select="$listMusicCCT_MLA_Medium"/>
+                    <xsl:with-param name="List245aCollectionTerms" select="$List245aCollectionTerms"/>
+                    <xsl:with-param name="List245bCollectionTerms" select="$List245bCollectionTerms"/>
+                    <xsl:with-param name="List245cCollectionTerms" select="$List245cCollectionTerms"/>
+                    <xsl:with-param name="List520aCollectionTerms" select="$List520aCollectionTerms"/>
+                    <xsl:with-param name="ListVAgentEAggregators" select="$ListVAgentEAggregators"/>
+                    <xsl:with-param name="ListVAgent4Aggregators" select="$ListVAgent4Aggregators"/>
+                    <xsl:with-param name="ListVTextsCCT" select="$ListVTextsCCT"/>
+                    <xsl:with-param name="List245cAggregators" select="$List245cAggregators"/>
+                    <xsl:with-param name="ListV650a_655aCollectionTerms" select="$ListV650a_655aCollectionTerms"/>
+                    <xsl:with-param name="ListV650a_655aCollectionTermsUsually" select="$ListV650a_655aCollectionTermsUsually"/>
+                    <xsl:with-param name="ListV650v655vCollectionTermsUsually" select="$ListV650v655vCollectionTermsUsually"/>
+                    <xsl:with-param name="ListV650v655vCollectionTerms" select="$ListV650v655vCollectionTerms"/>
+                    <xsl:with-param name="List245cIntroductionTerms" select="$List245cIntroductionTerms"/>
+                    <xsl:with-param name="List300aSuppCont" select="$List300aSuppCont"/>
+                    <xsl:with-param name="List300bSuppCont" select="$List300bSuppCont"/>
                 </xsl:evaluate>
             </xsl:variable>
             <xsl:if test="$isMatched">
