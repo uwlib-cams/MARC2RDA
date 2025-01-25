@@ -6,49 +6,49 @@
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">811-test1</marc:controlfield> 
         
+        <marc:datafield tag="811" ind1="2" ind2=" ">
+            <marc:subfield code="a">Comparative Drama Conference.</marc:subfield>
+            <marc:subfield code="t">Comparative Drama Conference series ;</marc:subfield>
+            <marc:subfield code="v">5.</marc:subfield>
+        </marc:datafield>
+        
         <!-- 811 -->
         <marc:datafield tag="811" ind1="2" ind2=" ">
             <marc:subfield code="a">International Congress of Romance Linguistics and Philology</marc:subfield>
-            <marc:subfield code="n">(17th :$d1983 :$cAix-en-Provence, France).</marc:subfield>
-            <marc:subfield code="d">subfield d</marc:subfield>
+            <marc:subfield code="n">(17th :</marc:subfield>
+            <marc:subfield code="d">1983 :</marc:subfield>
+            <marc:subfield code="c">Aix-en-Provence, France).</marc:subfield>
             <marc:subfield code="t">Actes du XVIIème Congrès international de linguistique et philologie romanes ;</marc:subfield>
             <marc:subfield code="v">vol. no. 5.</marc:subfield>
         </marc:datafield>
         
-        <!-- 811 with $2 for corporate body, approved with link -->
         <marc:datafield tag="811" ind1="2" ind2=" ">
             <marc:subfield code="a">International Congress of Nutrition</marc:subfield>
-            <marc:subfield code="n">(11th :$d1978 :$cRio de Janeiro, Brazil).</marc:subfield>
+            <marc:subfield code="n">(11th :</marc:subfield>
+            <marc:subfield code="c">1978 :</marc:subfield>
+            <marc:subfield code="c">Rio de Janeiro, Brazil).</marc:subfield>
             <marc:subfield code="t">Nutrition and food science ;</marc:subfield>
-            <marc:subfield code="2">fast</marc:subfield>
-            <marc:subfield code="0">http://id.worldcat.org/fast/1405608</marc:subfield>
         </marc:datafield>
         
-        <!-- 811 with $1 for corporate body, unapproved -->
-        <marc:datafield tag="811" ind1="1" ind2=" ">
-            <marc:subfield code="a">Catholic Church</marc:subfield>
-            <marc:subfield code="2">nli</marc:subfield>
-            <marc:subfield code="t">subfield t</marc:subfield>
-        </marc:datafield>
         
         <!-- 880s -->
         <marc:datafield tag="880" ind1="1" ind2="4">
             <marc:subfield code="6">811-00</marc:subfield>
-            <marc:subfield code="a">Test unlinked 880 person</marc:subfield>
+            <marc:subfield code="a">Test unlinked 880 meeting</marc:subfield>
             <marc:subfield code="t">Test unlinked 880 work</marc:subfield>
             <marc:subfield code="1">https://iriforthiswork.com/6789</marc:subfield>
         </marc:datafield>
         
         <marc:datafield tag="811" ind1="1" ind2="0">
             <marc:subfield code="6">880-01</marc:subfield>
-            <marc:subfield code="a">Test linked 880 person 1</marc:subfield>
+            <marc:subfield code="a">Test linked 880 meeting 1</marc:subfield>
             <marc:subfield code="t">Test linked 880 work 1</marc:subfield>
             <marc:subfield code="x">test x</marc:subfield>
         </marc:datafield>
         
         <marc:datafield tag="880" ind1="1" ind2="0">
             <marc:subfield code="6">811-01</marc:subfield>
-            <marc:subfield code="a">Test linked 880 person 2</marc:subfield>
+            <marc:subfield code="a">Test linked 880 meeting 2</marc:subfield>
             <marc:subfield code="t">Test linked 880 work 2</marc:subfield>
             <marc:subfield code="x">test x</marc:subfield>
         </marc:datafield>

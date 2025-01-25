@@ -60,7 +60,7 @@
             <xsl:when test="$field/@tag = '720' or ($field/@tag = '880' and contains($field/marc:subfield[@code = '6'], '720'))">
                 <xsl:value-of select="uwf:stripEndPunctuation($field/marc:subfield[@code = 'a'])"/>
             </xsl:when>
-            <xsl:when test="$field/@tag = '110' or $field/@tag = '610' or $field/@tag = '710'
+            <xsl:when test="$field/@tag = '110' or $field/@tag = '610' or $field/@tag = '710' or $field/@tag = '810'
                 or ($field/@tag = '880' and matches($field/marc:subfield[@code = '6'], '[1678]10'))">
                 <xsl:variable name="ap">
                     <xsl:value-of select="$field/marc:subfield[@code = 'a'] | $field/marc:subfield[@code = 'b'] | $field/marc:subfield[@code = 'c']
@@ -70,7 +70,7 @@
                 </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
             </xsl:when>
-            <xsl:when test="$field/@tag = '111' or $field/@tag = '611' or $field/@tag = '711'
+            <xsl:when test="$field/@tag = '111' or $field/@tag = '611' or $field/@tag = '711' or $field/@tag = '811'
                 or ($field/@tag = '880' and matches($field/marc:subfield[@code = '6'], '[1678]11'))">
                 <xsl:variable name="ap">
                     <xsl:value-of select="$field/marc:subfield[@code = 'a']  | $field/marc:subfield[@code = 'c'] | $field/marc:subfield[@code = 'e'] | $field/marc:subfield[@code = 'q']
@@ -1006,10 +1006,11 @@
     
     <!-- Attributes -->
     
-    <xsl:template name="FX00-x0-ab">
+    <xsl:template name="FX00-xx-ab">
         <xsl:if test="marc:subfield[@code = 'a'] or marc:subfield[@code = 'b']">
+            <xsl:variable name="nameOfPerson" select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']"/>
             <rdaad:P50111>
-                <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']"/>
+                <xsl:value-of select="uwf:stripEndPunctuation($nameOfPerson)"/>
             </rdaad:P50111>
         </xsl:if>
     </xsl:template>
@@ -1032,56 +1033,72 @@
     
     <xsl:template name="FX00-xx-d">
         <xsl:for-each select="marc:subfield[@code = 'd']">
-            <rdaad:P50347>
-                <xsl:value-of select="."/>
-            </rdaad:P50347>
             <xsl:choose>
-                <xsl:when test="contains(., '-')">
-                    <rdaad:P50121>
-                        <xsl:value-of select="normalize-space(substring-before(., '-'))"/>
-                    </rdaad:P50121>
+                <xsl:when test="contains(., '-') and not(contains(., 'active') or contains(., 'fl.') or contains(., 'jin shi') or contains(., 'ju ren'))">
+                    <xsl:if test="matches(normalize-space(.), '^.+-')">
+                        <rdaad:P50121>
+                            <xsl:value-of select="normalize-space(substring-before(., '-'))"/>
+                        </rdaad:P50121>
+                    </xsl:if>
                     <xsl:if test="not(ends-with(normalize-space(.), '-'))">
                         <rdaad:P50120>
-                            <xsl:value-of select="replace(normalize-space(substring-after(., '-')),  '\.$', '')"/>
+                            <xsl:value-of select="replace(normalize-space(substring-after(., '-')),  '\.$', '') => uwf:stripEndPunctuation()"/>
                         </rdaad:P50120>
                     </xsl:if>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:if test="contains(normalize-space(.), 'b.')">
-                        <rdaad:P50121>
-                            <xsl:value-of select="replace(normalize-space(substring-after(., 'b.')),  '\.$', '')"/>
-                        </rdaad:P50121>
-                    </xsl:if>
-                    <xsl:if test="contains(normalize-space(.), 'born')">
-                        <rdaad:P50121>
-                            <xsl:value-of select="replace(normalize-space(substring-after(., 'born')),  '\.$', '')"/>
-                        </rdaad:P50121>
-                    </xsl:if>
-                    <xsl:if test="contains(normalize-space(.), 'd.')">
-                        <rdaad:P50120>
-                            <xsl:value-of select="replace(normalize-space(substring-after(., 'd.')),  '\.$', '')"/>
-                        </rdaad:P50120>
-                    </xsl:if>
-                    <xsl:if test="contains(normalize-space(.), 'died')">
-                        <rdaad:P50120>
-                            <xsl:value-of select="replace(normalize-space(substring-after(., 'died')),  '\.$', '')"/>
-                        </rdaad:P50120>
-                    </xsl:if>
-                    <xsl:if test="contains(normalize-space(.), 'active')">
-                        <rdaad:P50098>
-                            <xsl:value-of select="replace(normalize-space(substring-after(., 'active')), '\.$', '')"/>
-                        </rdaad:P50098>
-                    </xsl:if>
-                    <xsl:if test="contains(normalize-space(.), 'fl.')">
-                        <rdaad:P50098>
-                            <xsl:value-of select="replace(normalize-space(substring-after(., 'fl.')), '\.$', '')"/>
-                        </rdaad:P50098>
-                    </xsl:if>
-                    <xsl:if test="contains(normalize-space(.), 'cent.') or contains(normalize-space(.), 'century')">
-                        <rdaad:P50098>
-                            <xsl:value-of select="."/>
-                        </rdaad:P50098>
-                    </xsl:if>
+                    <xsl:choose>
+                        <xsl:when test="contains(normalize-space(.), 'b.')">
+                            <rdaad:P50121>
+                                <xsl:value-of select="replace(normalize-space(substring-after(., 'b.')),  '\.$', '') => uwf:stripEndPunctuation()"/>
+                            </rdaad:P50121>
+                        </xsl:when>
+                        <xsl:when test="contains(normalize-space(.), 'born')">
+                            <rdaad:P50121>
+                                <xsl:value-of select="replace(normalize-space(substring-after(., 'born')),  '\.$', '') => uwf:stripEndPunctuation()"/>
+                            </rdaad:P50121>
+                        </xsl:when>
+                        <xsl:when test="contains(normalize-space(.), 'd.')">
+                            <rdaad:P50120>
+                                <xsl:value-of select="replace(normalize-space(substring-after(., 'd.')),  '\.$', '') => uwf:stripEndPunctuation()"/>
+                            </rdaad:P50120>
+                        </xsl:when>
+                        <xsl:when test="contains(normalize-space(.), 'died')">
+                            <rdaad:P50120>
+                                <xsl:value-of select="replace(normalize-space(substring-after(., 'died')),  '\.$', '') => uwf:stripEndPunctuation()"/>
+                            </rdaad:P50120>
+                        </xsl:when>
+                        <xsl:when test="contains(normalize-space(.), 'active')">
+                            <rdaad:P50098>
+                                <xsl:value-of select="replace(normalize-space(substring-after(., 'active')), '\.$', '') => uwf:stripEndPunctuation()"/>
+                            </rdaad:P50098>
+                        </xsl:when>
+                        <xsl:when test="contains(normalize-space(.), 'jin shi')">
+                            <rdaad:P50098>
+                                <xsl:value-of select="replace(normalize-space(substring-after(., 'jin shi')), '\.$', '') => uwf:stripEndPunctuation()"/>
+                            </rdaad:P50098>
+                        </xsl:when>
+                        <xsl:when test="contains(normalize-space(.), 'ju ren')">
+                            <rdaad:P50098>
+                                <xsl:value-of select="replace(normalize-space(substring-after(., 'ju ren')), '\.$', '') => uwf:stripEndPunctuation()"/>
+                            </rdaad:P50098>
+                        </xsl:when>
+                        <xsl:when test="contains(normalize-space(.), 'fl.')">
+                            <rdaad:P50098>
+                                <xsl:value-of select="replace(normalize-space(substring-after(., 'fl.')), '\.$', '') => uwf:stripEndPunctuation()"/>
+                            </rdaad:P50098>
+                        </xsl:when>
+                        <xsl:when test="contains(normalize-space(.), 'cent.') or contains(normalize-space(.), 'century') => uwf:stripEndPunctuation()">
+                            <rdaad:P50098>
+                                <xsl:value-of select="."/>
+                            </rdaad:P50098>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <rdaad:P50347>
+                                <xsl:value-of select="."/>
+                            </rdaad:P50347>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:for-each>
@@ -1121,8 +1138,11 @@
     
     <xsl:template name="FXXX-xx-tknp">
         <xsl:if test="marc:subfield[@code = 't'] or marc:subfield[@code = 'k'] or marc:subfield[@code = 'n'] or marc:subfield[@code = 'p']">
-            <rdawd:P10088>
+            <xsl:variable name="title">
                 <xsl:value-of select="marc:subfield[@code = 't'] | marc:subfield[@code = 'k'] | marc:subfield[@code = 'n'] | marc:subfield[@code = 'p']"/>
+            </xsl:variable>
+            <rdawd:P10088>
+                <xsl:value-of select="uwf:stripEndPunctuation($title)"/>
             </rdawd:P10088>
         </xsl:if>
     </xsl:template>
@@ -1131,7 +1151,7 @@
         <xsl:for-each select="marc:subfield[@code = 'n']">
             <xsl:if test="contains(., 'op.') or contains(., 'opp.')">
                 <rdawd:P10333>
-                    <xsl:value-of select="."/>
+                    <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                 </rdawd:P10333>
             </xsl:if>
             <xsl:if test="matches(., '\([12]\d\d\d\)')">

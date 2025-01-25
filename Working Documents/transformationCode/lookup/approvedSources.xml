@@ -44,7 +44,8 @@
     </row>
     <row>
         <source>HMML Authority File</source>
-        <baseIRI iri="haf.vhmml.org/organization"/>
+        <baseIRI iri="haf.vhmml.org"/>
+        <baseIRI iri="w3id.org/haf"/>
         <approved>Work</approved>
         <approved>Corporate Body</approved>
         <approved>Family</approved>

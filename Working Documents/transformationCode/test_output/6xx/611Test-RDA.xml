@@ -6,13 +6,13 @@
       <fake:marcfield>F611 20 $a Olympic Games $n (23rd : $d 1984 : $c Los Angeles, Calif.) $v Periodicals.</fake:marcfield>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#olympicgames23rd1984losangelescalifperiodicals"/><!--rdaw:P10256 = has subject-->
       <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#periodicals"/><!--rdaw:P10004 = has category of work-->
-      <rdawo:P10263 rdf:resource="http://marc2rda.edu/fake/611-test1age#d21e6"/><!--rdawo:P10263 = has subject corporate body-->
+      <rdawo:P10263 rdf:resource="http://marc2rda.edu/fake/611-test1age#d22e6"/><!--rdawo:P10263 = has subject corporate body-->
       <fake:marcfield>F611 20 $a Vatican Council $n (2nd : $d 1962-1965). $t Decretum de presbyterorum ministerio et vita.</fake:marcfield>
-      <rdawo:P10263 rdf:resource="http://marc2rda.edu/fake/611-test1age#d21e17"/><!--rdawo:P10263 = has subject corporate body-->
-      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/611-test1wor#d21e17"/><!--rdawo:P10257 = has subject work-->
+      <rdawo:P10263 rdf:resource="http://marc2rda.edu/fake/611-test1age#d22e17"/><!--rdawo:P10263 = has subject corporate body-->
+      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/611-test1wor#d22e17"/><!--rdawo:P10257 = has subject work-->
       <fake:marcfield>F880 20 $6 611-00 $a Tour de France (Bicycle race) $x History</fake:marcfield>
       <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#tourdefrancebicycleracehistory"/><!--rdaw:P10256 = has subject-->
-      <rdawo:P10263 rdf:resource="http://marc2rda.edu/fake/611-test1age#d21e27"/><!--rdawo:P10263 = has subject corporate body-->
+      <rdawo:P10263 rdf:resource="http://marc2rda.edu/fake/611-test1age#d22e27"/><!--rdawo:P10263 = has subject corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/611-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -24,48 +24,53 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/611-test1exp"/><!--rdamo:P30139 = has expression manifested-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/611-test1ageNom#d21e6">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/611-test1ageNom#d22e6">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Olympic Games (23rd : 1984 : Los Angeles, Calif.)</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/611-test1ageNom#d21e17">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/611-test1ageNom#d22e17">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Vatican Council (2nd : 1962-1965)</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/611-test1worNom#d21e17">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/611-test1worNom#d22e17">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Vatican Council (2nd : 1962-1965). Decretum de presbyterorum ministerio et vita</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/611-test1ageNom#d21e27">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/611-test1ageNom#d22e27">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Tour de France (Bicycle race)</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/611-test1age#d21e6">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/611-test1age#d22e6">
       <fake:marcfield>F611 20 $a Olympic Games $n (23rd : $d 1984 : $c Los Angeles, Calif.) $v Periodicals.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaao:P50375 rdf:resource="http://marc2rda.edu/fake/611-test1ageNom#d21e6"/><!--rdaao:P50375 = has access point for corporate body-->
+      <rdaao:P50375 rdf:resource="http://marc2rda.edu/fake/611-test1ageNom#d22e6"/><!--rdaao:P50375 = has access point for corporate body-->
       <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
+      <rdaad:P50024>Los Angeles, Calif.</rdaad:P50024><!--rdaad:P50024 = has place of conference-->
+      <rdaad:P50039>1984</rdaad:P50039><!--rdaad:P50039 = has date of conference-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/611-test1age#d21e17">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/611-test1age#d22e17">
       <fake:marcfield>F611 20 $a Vatican Council $n (2nd : $d 1962-1965). $t Decretum de presbyterorum ministerio et vita.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaao:P50375 rdf:resource="http://marc2rda.edu/fake/611-test1ageNom#d21e17"/><!--rdaao:P50375 = has access point for corporate body-->
+      <rdaao:P50375 rdf:resource="http://marc2rda.edu/fake/611-test1ageNom#d22e17"/><!--rdaao:P50375 = has access point for corporate body-->
       <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
+      <rdaad:P50039>1962-1965.</rdaad:P50039><!--rdaad:P50039 = has date of conference-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/611-test1age#d21e27">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/611-test1age#d22e27">
       <fake:marcfield>F880 20 $6 611-00 $a Tour de France (Bicycle race) $x History</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaao:P50375 rdf:resource="http://marc2rda.edu/fake/611-test1ageNom#d21e27"/><!--rdaao:P50375 = has access point for corporate body-->
+      <rdaao:P50375 rdf:resource="http://marc2rda.edu/fake/611-test1ageNom#d22e27"/><!--rdaao:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/611-test1wor#d21e17">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/611-test1wor#d22e17">
       <fake:marcfield>F611 20 $a Vatican Council $n (2nd : $d 1962-1965). $t Decretum de presbyterorum ministerio et vita.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10328 rdf:resource="http://marc2rda.edu/fake/611-test1worNom#d21e17"/><!--rdawo:P10328 = has access point for work-->
-      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/611-test1age#d21e17"/><!--rdawo:P10314 = has related corporate body of work-->
+      <rdawo:P10328 rdf:resource="http://marc2rda.edu/fake/611-test1worNom#d22e17"/><!--rdawo:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/611-test1age#d22e17"/><!--rdawo:P10314 = has related corporate body of work-->
+      <rdawd:P10088>(2nd : Decretum de presbyterorum ministerio et vita</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#olympicgames23rd1984losangelescalifperiodicals">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>

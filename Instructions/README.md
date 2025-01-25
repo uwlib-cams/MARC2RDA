@@ -294,6 +294,6 @@ _[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#
  ## Notes (Uncategorized)
 | Example | Details |
 |---|---|
-| This field is obsolete, but exists in legacy data so we should map it. -CEC 2021-09-29; Here's another note about another thing. - CEC 2021-10-01 | All notes that do not fall under another notes category. |
+| This field is obsolete, but exists in legacy data so we should map it. -CEC 2021-09-29; Here's another note about another thing. - CEC 2021-10-01 | All notes that do not fall under another notes category. Reasons for not mapping a row/justifications for recording "Delete" or "Not Mapped go here. |
 
 _[Return to top.](https://github.com/uwlib-cams/MARC2RDA/tree/main/Instructions#spreadsheet-instructions)_

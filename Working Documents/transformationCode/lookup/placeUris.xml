@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<root>
-    <row>http://www.loc.gov/mads/rdf/v1#Geographic</row>
-    <row>http://rdvocab.info/uri/schema/FRBRentitiesRDA/Place</row>
-    <row>http://vocab.getty.edu/ontology#AdminPlaceConcept</row>
-    <row>https://schema.org/Place</row>
-</root>

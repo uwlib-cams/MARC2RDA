@@ -96,7 +96,7 @@
             <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'v']
             | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator="--"/>
         </xsl:variable>
-        <xsl:value-of select="uwf:stripEndPunctuation($label)"/>
+        <xsl:value-of select="uwf:stripEndPunctuation($label) => replace(' -', '-') => replace('- ', '-')"/>
     </xsl:template>
     <xsl:template name="F650-label" expand-text="yes">
         <xsl:variable name="label">

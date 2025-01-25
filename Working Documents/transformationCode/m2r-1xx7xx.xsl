@@ -233,14 +233,14 @@
         | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '711-00'][not(marc:subfield[@code = 't'])]"
         mode="age">
         <xsl:param name="baseIRI"/>
-        <xsl:variable name="tag" select="uwf:tagType(.)"/>
+        <xsl:variable name="tagType" select="uwf:tagType(.)"/>
         <!-- get agentIRI and set up rdf:Description for that agent -->
         <!-- note: this isn't done for 720, where an agent is not minted -->
         <rdf:Description rdf:about="{uwf:agentIRI($baseIRI, .)}">
             <xsl:call-template name="getmarc"/>
             <!-- create rdf:type and relationship to nomen or nomen string triples -->
             <xsl:choose>
-                <xsl:when test="$tag = '100' or $tag = '700'">
+                <xsl:when test="$tagType = '100' or $tagType = '700'">
                     <xsl:choose>
                         <xsl:when test="@ind1 = '0' or @ind1 = '1' or @ind1 = '2'">
                             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
@@ -271,9 +271,7 @@
                             </xsl:choose>
                             <!-- If we minted the IRI - add additional details -->
                             <xsl:if test="starts-with(uwf:agentIRI($baseIRI, .), $BASE)">
-                                <xsl:if test="@ind1 = '0'">
-                                    <xsl:call-template name="FX00-x0-ab"/>
-                                </xsl:if>
+                                <xsl:call-template name="FX00-xx-ab"/>
                                 <xsl:call-template name="FX00-xx-d"/>
                                 <xsl:call-template name="FX00-xx-q"/>
                             </xsl:if>
@@ -312,7 +310,7 @@
                         <xsl:otherwise/>
                     </xsl:choose>
                 </xsl:when>
-                <xsl:when test="$tag = '110' or $tag = '111' or $tag = '710' or $tag = '711'">
+                <xsl:when test="$tagType = '110' or $tagType = '111' or $tagType = '710' or $tagType = '711'">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
                     <xsl:choose>
                         <!-- if there's a $2, a nomen is minted -->
@@ -337,7 +335,7 @@
                             </xsl:if>
                         </xsl:otherwise>
                     </xsl:choose>
-                    <xsl:if test="@tag = '111' or @tag = '711'">
+                    <xsl:if test="$tagType = '111' or $tagType = '711'">
                         <rdaad:P50237>
                             <xsl:text>Meeting</xsl:text>
                         </rdaad:P50237>
@@ -383,18 +381,18 @@
         | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '711-00'][not(marc:subfield[@code = 't'])]"
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
-        <xsl:variable name="tag" select="uwf:tagType(.)"/>
+        <xsl:variable name="tagType" select="uwf:tagType(.)"/>
         <xsl:variable name="type">
             <xsl:choose>
-                <xsl:when test="($tag = '100' or $tag = '700')
+                <xsl:when test="($tagType = '100' or $tagType = '700')
                     and @ind1 != '3'">
                     <xsl:value-of select="'Person'"/>
                 </xsl:when>
-                <xsl:when test="($tag = '100' or $tag = '700')
+                <xsl:when test="($tagType = '100' or $tagType = '700')
                     and @ind1 = '3'">
                     <xsl:value-of select="'Family'"/>
                 </xsl:when>
-                <xsl:when test="$tag = '110'or $tag = '710' or $tag = '111' or $tag = '711'">
+                <xsl:when test="$tagType = '110'or $tagType = '710' or $tagType = '111' or $tagType = '711'">
                     <xsl:value-of select="'Corporate Body'"/>
                 </xsl:when>
             </xsl:choose>
@@ -478,10 +476,13 @@
                     <xsl:otherwise/>
                 </xsl:choose>
                 <xsl:copy-of select="uwf:workIdentifiers(.)"/>
-                <xsl:call-template name="FXXX-xx-f"/>
-                <xsl:call-template name="FXXX-xx-tknp"/>
-                <xsl:call-template name="FXXX-xx-n"/>
-                <xsl:call-template name="FXXX-xx-x"/>
+                <!-- If we minted the IRI - add additional details -->
+                <xsl:if test="starts-with(uwf:agentIRI($baseIRI, .), $BASE)">
+                    <xsl:call-template name="FXXX-xx-f"/>
+                    <xsl:call-template name="FXXX-xx-tknp"/>
+                    <xsl:call-template name="FXXX-xx-n"/>
+                    <xsl:call-template name="FXXX-xx-x"/>
+                </xsl:if>
             </rdf:Description>
         </xsl:if>
     </xsl:template>
@@ -527,6 +528,7 @@
                                 </xsl:choose>
                                 <!-- If we minted the IRI - add additional details -->
                                 <xsl:if test="starts-with(uwf:agentIRI($baseIRI, .), $BASE)">
+                                    <xsl:call-template name="FX00-xx-ab"/>
                                     <xsl:call-template name="FX00-xx-d"/>
                                     <xsl:call-template name="FX00-xx-q"/>
                                 </xsl:if>
@@ -556,6 +558,11 @@
                                         </xsl:if>
                                     </xsl:otherwise>
                                 </xsl:choose>
+                                <!-- If we minted the IRI - add additional details -->
+                                <xsl:if test="starts-with(uwf:agentIRI($baseIRI, .), $BASE)">
+                                    <xsl:call-template name="FX00-x3-c"/>
+                                    <xsl:call-template name="FX00-x3-d"/>
+                                </xsl:if>
                             </xsl:when>
                             <xsl:otherwise/>
                         </xsl:choose>
@@ -589,6 +596,11 @@
                             <rdaad:P50237>
                                 <xsl:text>Meeting</xsl:text>
                             </rdaad:P50237>
+                        </xsl:if>
+                        <!-- If we minted the IRI - add additional details -->
+                        <xsl:if test="starts-with(uwf:agentIRI($baseIRI, .), $BASE)">
+                            <xsl:call-template name="FX1X-xx-c"/>
+                            <xsl:call-template name="FX1X-xx-d"/>
                         </xsl:if>
                     </xsl:when>
                     <xsl:otherwise/>
@@ -680,10 +692,13 @@
                     </xsl:otherwise>
                 </xsl:choose>
                 <xsl:copy-of select="uwf:workIdentifiers(.)"/>
-                <xsl:call-template name="FXXX-xx-f"/>
-                <xsl:call-template name="FXXX-xx-tknp"/>
-                <xsl:call-template name="FXXX-xx-n"/>
-                <xsl:call-template name="FXXX-xx-x"/>
+                <!-- If we minted the IRI - add additional details -->
+                <xsl:if test="starts-with(uwf:agentIRI($baseIRI, .), $BASE)">
+                    <xsl:call-template name="FXXX-xx-f"/>
+                    <xsl:call-template name="FXXX-xx-tknp"/>
+                    <xsl:call-template name="FXXX-xx-n"/>
+                    <xsl:call-template name="FXXX-xx-x"/>
+                </xsl:if>
             </rdf:Description>
         </xsl:if>
     </xsl:template>

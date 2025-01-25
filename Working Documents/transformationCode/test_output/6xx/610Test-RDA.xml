@@ -87,6 +87,7 @@
       <fake:marcfield>F880 14 $6 610-00 $a Test unlinked 880 person $t Test unlinked 880 work $1 https://iriforthiswork.com/6789</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
       <rdaad:P50375>Test unlinked 880 person</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50006>https://iriforthiswork.com/6789</rdaad:P50006><!--rdaad:P50006 = has identifier for corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1age#d22e40">
       <fake:marcfield>F610 10 $6 880-01 $a Test linked 880 person 1 $t Test linked 880 work 1 $x test x</fake:marcfield>
@@ -99,12 +100,15 @@
       <rdawd:P10328>Test unlinked 880 person Test unlinked 880 work</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/6xx-test1age#d22e31"/><!--rdawo:P10314 = has related corporate body of work-->
       <rdawd:P10002>https://iriforthiswork.com/6789</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10088>Test unlinked 880 work</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1wor#d22e40">
       <fake:marcfield>F610 10 $6 880-01 $a Test linked 880 person 1 $t Test linked 880 work 1 $x test x</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10328 rdf:resource="http://marc2rda.edu/fake/6xx-test1worNom#d22e40"/><!--rdawo:P10328 = has access point for work-->
       <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/6xx-test1age#d22e40"/><!--rdawo:P10314 = has related corporate body of work-->
+      <rdawd:P10088>Test linked 880 work 1</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawd:P10366>test x</rdawd:P10366><!--rdawd:P10366 = has ISSN-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/nli/con#catholicchurchinliterature">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
