@@ -7,7 +7,7 @@ from textwrap import dedent
 import os
 
 
-def serialize(file_path):
+def serialize(file_path, format_list):
 
     # file path w no extension
     file_path_noext = file_path.rsplit('.', 1)[0]
@@ -60,10 +60,15 @@ def serialize(file_path):
         file.close()
     
 # UNCOMMENT THE FORMATS YOU WOULD LIKE TO PRODUCE
-    # format_rdf(g)
-    format_nt(g)
-    format_ttl(g)
-    # format_jsonld(g)
+    for format in format_list:
+        if format == "rdf":
+            format_rdf(g)
+        if format == "ttl":
+            format_ttl(g)
+        if format == "nt":
+            format_nt(g)
+        if format == "jsonld":
+            format_jsonld(g)
 
 
 # only_serialize can be run from this script to produce all serializations
@@ -84,11 +89,16 @@ def only_serialize():
         print("Error: file is not one of the accepted formats")
         exit(0)
     
+    format_prompt = dedent("""Enter the formats you wish to serialize to, separating format types by a space character.
+        Accepted format options are: ttl nt rdf jsonld
+        >""")
+    formats = input(format_prompt)
+    format_list = formats.split(' ')
 
     print(dedent(f"""{'=' * 20}
 SERIALIZING DATA
 {'=' * 20}"""))
-
-    serialize(file_path)
+    
+    serialize(file_path, format_list)
 
 only_serialize()
