@@ -26,9 +26,12 @@ Instructions are included for running the code using Oxygen or using Saxon HE (o
     b. If transforming a folder of files, enter the location of a folder for the output, and end the folder name in `/${cfn}.rdf` This saves each file within the folder with the same name as the input file but as an rdf file. Press okay.
     
 11. Transform the file(s)
+    
     a. *If transforming 1 file*: Ensuring that the file you want to transform is open in the window, press "Apply associated".
-    b. *If transforming a folder of files*: Close the transformation scenario pop-up box. In the navigation pane on the left, right click on the folder containing the files you want to transform. Select "Transform" and then "Transform with...". Select the transformation scenario you just set up and press "Apply selected scenarios". 
-12. The transformation scenario should run and output RDF/XML from the MARC/XML
+    
+    b. *If transforming a folder of files*: Close the transformation scenario pop-up box. In the navigation pane on the left, right click on the folder containing the files you want to transform. Select "Transform" and then "Transform with...". Select the transformation scenario you just set up and press "Apply selected scenarios".
+    
+13. The transformation scenario should run and output RDF/XML from the MARC/XML
 
 
 ## Option 2: Saxon
