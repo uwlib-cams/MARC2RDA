@@ -43,7 +43,7 @@ Instructions are included for running the code using Oxygen or using Saxon HE (o
 - Saxon processor from [Saxonica](https://www.saxonica.com/welcome/welcome.xml)
   - For further documentation: [Getting started with SaxonJ](https://www.saxonica.com/html/documentation11/about/gettingstarted/gettingstartedjava.html)
   - The free Saxon-HE (Home Edition) is available for download from GitHub - see Saxonica/[Saxon-HE](https://github.com/Saxonica/Saxon-HE/) > [releases](https://github.com/Saxonica/Saxon-HE/releases)
-  - The Saxon-HE repository README file provides information about current Saxon releases; we run sinopia_maps and map_storage stylesheets using version 11.5 or higher.
+  - The Saxon-HE repository README file provides information about current Saxon releases; We recommend using version 11.5 or higher.
 - Create `saxon11` folder in Windows or WSL and extract `SaxonHE11.5J.zip` to folder
   - Take note of the full directory path to this `saxon11` folder
 - Test: `$ java -cp {path_to_directory}/saxon-he-{saxon_version}.jar net.sf.saxon.Query -t -qs:"current-date()"` and confirm output appears similar to the following:
