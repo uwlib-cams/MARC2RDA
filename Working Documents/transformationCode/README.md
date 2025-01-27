@@ -93,3 +93,19 @@ java -cp ~/saxon11/saxon-he-11.4.jar net.sf.saxon.Transform -s:"Working Document
 ```
 
 # Serializing the Output
+
+#### Python dependencies
+
+- [Python](https://www.python.org/downloads/) for Windows or WSL (recommend v3.8 or above)
+- [RDFLib](https://rdflib.readthedocs.io/en/stable/gettingstarted.html)
+  - `$ pip install rdflib` [Installing Python packages](https://packaging.python.org/en/latest/tutorials/installing-packages/) may require* `pip3` *in place of* `pip` *for some systems*  
+
+### Running serialize.py
+
+Once the transformation has been run and RDF/XML data has been produced, the output file can be serialized into additional formats. 
+
+To run serialize.py, be prepared with:
+- The full path to the file you wish to serialize (must have the extension .rdf, .ttl, .jsonld, or .nt)
+- The formats you wish to serialize to. The options are Turtle (ttl), N-triples (nt), JSON-LD (jsonld), and RDF (rdf). You will be prompted to enter the serializations you want as space separated values i.e. `ttl nt` to output both Turtle and N-triple versions of the file
+
+The script will produce the various serializations in the same folder that the original file is located in. 
