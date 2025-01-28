@@ -1,72 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
-         xmlns:fake="http://fakePropertiesForDemo"
-         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
-         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
-         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
-         xmlns:rdae="http://rdaregistry.info/Elements/e/"
-         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
-         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
-         xmlns:rdai="http://rdaregistry.info/Elements/i/"
-         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
-         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
-         xmlns:rdam="http://rdaregistry.info/Elements/m/"
-         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
-         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
-         xmlns:rdan="http://rdaregistry.info/Elements/n/"
-         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
-         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
-         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
-         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
-         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
-         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-   <rdf:Description rdf:about="http://fakeIRI2.edu/380-test1wor">
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/380-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/380-test1exp"/>
-      <rdawd:P10002>380-test1wor</rdawd:P10002>
-      <!--MARC data begins-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/380-test1exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>380-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <fake:marcfield>F380 ## $a Television programs $0 http://id.loc.gov/authorities/genreForms/gf2011026673 $1 http://www.wikidata.org/entity/Q15416</fake:marcfield>
-      <!--RDA data begins-->
-      <rdawd:P10004>Television programs</rdawd:P10004>
-      <rdaw:P10004 rdf:resource="http://www.wikidata.org/entity/Q15416"/>
-      <rdaw:P10004 rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026673"/>
-      <!--MARC data begins-->
-      <fake:marcfield>F380 ## $a Television programs $2 lcgft</fake:marcfield>
-      <!--RDA data begins-->
-      <rdawd:P10004 rdf:datatype="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft">Television programs</rdawd:P10004>
-      <!--MARC data begins-->
+      <rdaw:P10004 rdf:resource="http://www.wikidata.org/entity/Q15416"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F380 ## $6 880-01 $a Television programs $2 lcgft</fake:marcfield>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#televisionprograms"/><!--rdaw:P10004 = has category of work-->
+      <fake:marcfield>F880 ## $6 380-01 $a Television programs 880 $2 lcgft</fake:marcfield>
       <fake:marcfield>F380 ## $a Television programs $0 (DLC)gf2011026673 $1 http://www.wikidata.org/entity/Q15416 $2 lcgft</fake:marcfield>
-      <!--RDA data begins-->
-      <rdawd:P10004 rdf:datatype="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft">Television programs</rdawd:P10004>
-      <rdaw:P10004 rdf:resource="http://www.wikidata.org/entity/Q15416"/>
-      <rdaw:P10004>(DLC)gf2011026673</rdaw:P10004>
-      <!--MARC data begins-->
+      <rdaw:P10004 rdf:resource="http://www.wikidata.org/entity/Q15416"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F380 ## $a Open educational resources $2 lcsh $3 Introduction</fake:marcfield>
-      <!--RDA data begins-->
-      <rdawd:P10004 rdf:datatype="http://id.loc.gov/vocabulary/subjectSchemes/lcsh">Open educational resources</rdawd:P10004>
-      <rdawd:P10330>Category of work Open educational resources applies only to Introduction.</rdawd:P10330>
-      <!--MARC data begins-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#openeducationalresources"/><!--rdaw:P10004 = has category of work-->
+      <rdamd:P30137>Category of work Open educational resources applies to the work's Introduction</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <fake:marcfield>F380 ## $a Fiction $2 marcgt</fake:marcfield>
-      <!--RDA data begins-->
-      <rdawd:P10004 rdf:datatype="http://id.loc.gov/vocabulary/genreFormSchemes/marcgt">Fiction</rdawd:P10004>
-      <!--MARC data begins-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/marcgt/con#fiction"/><!--rdaw:P10004 = has category of work-->
       <fake:marcfield>F380 ## $a Fiction</fake:marcfield>
-      <!--RDA data begins-->
-      <rdawd:P10004>Fiction</rdawd:P10004>
-      <!--MARC data begins-->
+      <rdawd:P10004>Fiction</rdawd:P10004><!--rdawd:P10004 = has category of work-->
       <fake:marcfield>F380 ## $a Some form of work $2 abcde</fake:marcfield>
-      <!--RDA data begins-->
-      <rdawd:P10004><!--EXCEPTION: $2 value of abcde has been lost-->Some form of work</rdawd:P10004>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/abcde/con#someformofwork"/><!--rdaw:P10004 = has category of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/380-test1exp">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/380-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/380-test1man"/>
-      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/380-test1wor"/>
-      <rdaed:P20002>380-test1exp</rdaed:P20002>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/380-test1man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/380-test1wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>380-test1exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/380-test1man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/380-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/380-test1exp"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/380-test1exp"/><!--rdamo:P30139 = has expression manifested-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#televisionprograms">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Television programs</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Television programs 880</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#openeducationalresources">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Open educational resources</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/marcgt/con#fiction">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Fiction</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/marcgt"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/abcde/con#someformofwork">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Some form of work</skos:prefLabel>
+      <!--IRI could not be found for abcde-->
+      <skos:inScheme>abcde</skos:inScheme>
    </rdf:Description>
 </rdf:RDF>

@@ -2165,7 +2165,97 @@
         </rdamd:P30137>
     </xsl:template>
     
+    <!-- 380 -->
+    <xsl:template name="F380-iri" expand-text="yes">
+        <!-- If $1 value (or multiple), use those -->
+        <xsl:for-each select="marc:subfield[@code = '1']">
+            <rdaw:P10004 rdf:resource="{.}"/>
+            <xsl:if test="../marc:subfield[@code = '3']">
+                <rdawd:P10330>Category of work {.} applies to the work's {../marc:subfield[@code = '3']}</rdawd:P10330>
+            </xsl:if>
+        </xsl:for-each>
+        <!-- If there's no $1 but there are $0s that begin with http(s), use these -->
+        <xsl:if test="not(marc:subfield[@code = '1'])">
+            <xsl:for-each select="marc:subfield[@code = '0']">
+                <!-- $0's contianing a uri may start with (uri) -->
+                <xsl:if test="contains(., 'http')">
+                    <xsl:variable name="iri0">
+                        <xsl:choose>
+                            <xsl:when test="starts-with(., 'http')">
+                                <xsl:value-of select="."/>
+                            </xsl:when>
+                            <xsl:when test="starts-with(., '(')">
+                                <xsl:value-of select="substring-after(., ')')"/>
+                            </xsl:when>
+                        </xsl:choose>
+                    </xsl:variable>
+                    <xsl:if test="$iri0">
+                        <rdaw:P10004 rdf:resource="{$iri0}"/>
+                    </xsl:if>
+                    <xsl:if test="../marc:subfield[@code = '3']">
+                        <rdawd:P10330>Category of work {$iri0} applies to the work's {../marc:subfield[@code = '3']}</rdawd:P10330>
+                    </xsl:if>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
     
+    <xsl:template name="F380-string" expand-text="yes">
+        <xsl:if test="not(marc:subfield[@code = '1']) and not(contains(marc:subfield[@code = '0'], 'http'))">
+            <xsl:choose>
+                <!-- if there's a $2 -->
+                <xsl:when test="marc:subfield[@code = '2']">
+                    <xsl:if test="@tag = '380' or substring(marc:subfield[@code = '6'], 1, 6) = '380-00'">
+                        <xsl:for-each select="marc:subfield[@code = 'a']">
+                            <rdaw:P10004 rdf:resource="{uwf:conceptIRI(../marc:subfield[@code = '2'][1], .)}"/>
+                            <xsl:if test="../marc:subfield[@code = '3']">
+                                <rdamd:P30137>Category of work {.} applies to the work's {../marc:subfield[@code = '3']}</rdamd:P30137>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:if>
+                </xsl:when>
+                <!-- no $2 -->
+                <xsl:otherwise>
+                    <xsl:for-each select="marc:subfield[@code = 'a']">
+                        <rdawd:P10004>
+                            <xsl:value-of select="."/>
+                        </rdawd:P10004>
+                        <xsl:if test="../marc:subfield[@code = '3']">
+                            <rdamd:P30137>Category of work {.} applies to the work's {../marc:subfield[@code = '3']}</rdamd:P30137>
+                        </xsl:if>
+                    </xsl:for-each>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F380-concept" expand-text="yes">
+        <xsl:if test="not(marc:subfield[@code = '1']) and not(contains(marc:subfield[@code = '0'], 'http'))">
+            <xsl:if test="marc:subfield[@code = '2']">
+                <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
+                <xsl:variable name="linked880">
+                    <xsl:if test="@tag = '380' and marc:subfield[@code = '6']">
+                        <xsl:variable name="occNum"
+                            select="concat('380-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                        <xsl:copy-of
+                            select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]"/>
+                    </xsl:if>
+                </xsl:variable>
+                <xsl:for-each select="marc:subfield[@code = 'a']">
+                    <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
+                        <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '380')"/>
+                        <xsl:if test="$linked880">
+                            <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'a']">
+                                <xsl:copy-of select="uwf:fillConcept(., '', '', '880')"/>
+                            </xsl:for-each>
+                        </xsl:if>
+                    </rdf:Description>
+                </xsl:for-each>
+            </xsl:if>
+        </xsl:if>
+    </xsl:template>
+    
+    <!-- 382 -->
     <xsl:template name="F382-xx-a_b_d_p_2-exp" expand-text="yes">
         <xsl:variable name="s2code" select="marc:subfield[@code = '2'][1]"/>
         <xsl:variable name="musiccodeschemes"
