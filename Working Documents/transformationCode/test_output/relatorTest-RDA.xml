@@ -26,14 +26,14 @@
       <fake:marcfield>F100 1# $a Strautmann, Eva, $d 1963-</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Strautmann, Eva, 1963-</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
-      <rdaad:P50111>Strautmann, Eva,</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50111>Strautmann, Eva</rdaad:P50111><!--rdaad:P50111 = has name of person-->
       <rdaad:P50121>1963</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d22e11">
       <fake:marcfield>F700 1# $a Smith, Stephen W., $c Dr.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Smith, Stephen W., Dr.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
-      <rdaad:P50111>Smith, Stephen W.,</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50111>Smith, Stephen W.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d22e16">
       <fake:marcfield>F700 1# $a Brown, Sarah A.</fake:marcfield>
@@ -69,7 +69,7 @@
       <fake:marcfield>F100 1# $a Boulanger, John, $d 1965-</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Boulanger, John, 1965-</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
-      <rdaad:P50111>Boulanger, John,</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50111>Boulanger, John</rdaad:P50111><!--rdaad:P50111 = has name of person-->
       <rdaad:P50121>1965</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test2age#d22e31">
@@ -99,7 +99,7 @@
       <fake:marcfield>F100 1# $a Boulanger, John, $d 1965-</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Boulanger, John, 1965-</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
-      <rdaad:P50111>Boulanger, John,</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50111>Boulanger, John</rdaad:P50111><!--rdaad:P50111 = has name of person-->
       <rdaad:P50121>1965</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test3age#d22e47">
@@ -187,7 +187,7 @@
       <fake:marcfield>F100 1# $a Oskolkoff, Ruth Ann, $4 no match</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Oskolkoff, Ruth Ann</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
-      <rdaad:P50111>Oskolkoff, Ruth Ann,</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50111>Oskolkoff, Ruth Ann</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test7wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -232,6 +232,35 @@
       <fake:marcfield>F710 1# $a Northwest Territories. $b Department of Environment and Natural Resources, $e issuing corporate body. $4 http://rdaregistry.info/Elements/m/P30420</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
       <rdaad:P50375>Northwest Territories. Department of Environment and Natural Resources</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/relator-test9exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>relator-test9wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10530 rdf:resource="http://marc2rda.edu/fake/relator-test9age#d22e119"/><!--rdawo:P10530 = has author corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/relator-test9man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/relator-test9wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>relator-test9exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+      <rdaeo:P20469 rdf:resource="http://marc2rda.edu/fake/relator-test9age#d22e124"/><!--rdaeo:P20469 = has performer corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-test9exp"/><!--rdamo:P30139 = has expression manifested-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9age#d22e119">
+      <fake:marcfield>F111 2# $a ACM-SIAM Symposium on Discrete Algorithms, $j author.</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>ACM-SIAM Symposium on Discrete Algorithms</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9age#d22e124">
+      <fake:marcfield>F711 2# $a Elora Festival. $4 prf</fake:marcfield>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Elora Festival</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test9wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -319,6 +348,7 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-testItemman">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/relator-testItemexp"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/relator-testItemite#d22e161"/><!--rdamo:P30103 = has exemplar of manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-testItemite#d22e161">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>

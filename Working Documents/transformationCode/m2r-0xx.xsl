@@ -175,7 +175,7 @@
         <xsl:param name="baseIRI"/>
         <rdamo:P30296 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'nom')}"/>
         <xsl:if test="marc:subfield[@code = '5']">
-            <rdamo:P30103 rdf:resource="{concat($baseIRI,'ite#', generate-id())}"/>
+            <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseIRI, .)}"/>
         </xsl:if>
     </xsl:template>
     
@@ -199,7 +199,7 @@
         <xsl:param name="controlNumber"/>
         <xsl:variable name="genID" select="generate-id()"/>
         <xsl:if test="marc:subfield[@code = '5']">
-            <rdf:Description rdf:about="{concat($baseIRI,'ite#',$genID)}">
+            <rdf:Description rdf:about="{uwf:itemIRI($baseIRI, .)}">
                 <xsl:call-template name="getmarc"/>
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                 <rdaid:P40001>{concat($controlNumber, 'ite#', $genID)}</rdaid:P40001>

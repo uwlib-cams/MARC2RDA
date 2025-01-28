@@ -152,7 +152,12 @@
                                 <xsl:with-param name="domain" select="'item'"/>
                             </xsl:call-template>
                         </xsl:when>
-                        <xsl:otherwise/>
+                        <xsl:otherwise>
+                            <!-- default -->
+                            <xsl:copy-of
+                                select="uwf:defaultAgentProp(., uwf:fieldType(.), 'item', uwf:agentIRI($baseIRI, .), uwf:agentAccessPoint(.))"
+                            />
+                        </xsl:otherwise>
                     </xsl:choose>
                 </xsl:when>
                 <xsl:otherwise>
@@ -165,7 +170,7 @@
         </xsl:variable>
         <!-- if there is an item relator term, create the manifestation to item relationship triple -->
         <xsl:if test="$testItem/node() or $testItem/@*">
-            <rdamo:P30103 rdf:resource="{concat($baseIRI,'ite#', generate-id())}"/>
+            <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseIRI, .)}"/>
         </xsl:if>
     </xsl:template>
     
@@ -211,7 +216,7 @@
         <!-- if handleRelator returns a property, then generate an item and apply property -->
         <xsl:if test="$testItem/node() or $testItem/@*">
             <xsl:variable name="genID" select="generate-id()"/>
-            <rdf:Description rdf:about="{concat($baseIRI,'ite#',$genID)}">
+            <rdf:Description rdf:about="{uwf:itemIRI($baseIRI, .)}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                 <rdaid:P40001>{concat($controlNumber,'ite#',$genID)}</rdaid:P40001>
                 <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
