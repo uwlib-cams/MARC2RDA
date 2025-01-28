@@ -98,6 +98,7 @@
     <xsl:variable name="locAccessRestrictionTermDoc" select="document('lookup/lc/accessrestrictionterm.rdf')"/>
     <xsl:variable name="locClassSchemesDoc" select="document('lookup/lc/classSchemes.rdf')"/>
     <xsl:variable name="locNameTitleSchemesDoc" select="document('lookup/lc/nameTitleSchemes.rdf')"/>
+    <xsl:variable name="locMusicCodeSchemesDoc" select="document('lookup/lc/musiccodeschemes.rdf')"/>
     <xsl:variable name="approvedSourcesDoc" select="document('lookup/approvedSources.xml')"/>
     
     <xsl:key name="schemeKey" match="madsrdf:hasMADSSchemeMember" use="madsrdf:Authority/@rdf:about"/>
@@ -227,7 +228,28 @@
                 <skos:inScheme rdf:resource="{concat('http://id.loc.gov/vocabulary/accessrestrictionterm/', lower-case($code2))}"/>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:comment>$2 value of {$code2} has been lost</xsl:comment>
+                <xsl:comment>IRI could not be found for {$code2}</xsl:comment>
+                <skos:inScheme>
+                    <xsl:value-of select="$code2"/>
+                </skos:inScheme>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
+    <!-- lookup for field 506 concepts -->
+    <!-- there's a very small vocabulary for this, so it's worth a separate quicker function -->
+    <xsl:function name="uwf:s2Concept382" expand-text="true">
+        <xsl:param name="sub2"/>
+        <xsl:variable name="code2" select="replace($sub2, '\.$', '')"/>
+        <xsl:choose>
+            <xsl:when test="$locMusicCodeSchemesDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/musiccodeschemes/', lower-case($code2)))">
+                <skos:inScheme rdf:resource="{concat('http://id.loc.gov/vocabulary/musiccodeschemes/', lower-case($code2))}"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:comment>IRI could not be found for {$code2}</xsl:comment>
+                <skos:inScheme>
+                    <xsl:value-of select="$code2"/>
+                </skos:inScheme>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
@@ -241,6 +263,7 @@
                 <skos:inScheme rdf:resource="{concat('http://id.loc.gov/vocabulary/classSchemes/', lower-case($code2))}"/>
             </xsl:when>
             <xsl:otherwise>
+                <xsl:comment>IRI could not be found for {$code2}</xsl:comment>
                 <skos:inScheme>
                     <xsl:value-of select="$code2"/>
                 </skos:inScheme>
@@ -289,6 +312,9 @@
                 </xsl:when> 
                 <xsl:when test="$fieldNum = '050'">
                     <xsl:copy-of select="uwf:s2ConceptClassSchemes($scheme)"/>
+                </xsl:when>
+                <xsl:when test="$fieldNum = '382'">
+                    <xsl:copy-of select="uwf:s2Concept382($scheme)"/>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:copy-of select="uwf:s2Concept($scheme)"/>

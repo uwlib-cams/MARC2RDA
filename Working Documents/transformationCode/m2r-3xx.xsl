@@ -465,45 +465,8 @@
         <xsl:call-template name="F380-concept"/>
     </xsl:template>
     
-<!--    <xsl:template
-        match="marc:datafield[@tag = '380'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '380']"
-        mode="wor" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
-        <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdawd:P10004>
-                <xsl:if test="../marc:subfield[@code = '2']">
-                    <xsl:copy-of select="uwf:s2lookup(../marc:subfield[@code = '2'][1])"/>
-                </xsl:if>{.}</rdawd:P10004>
-            <xsl:if test="../marc:subfield[@code = '3']">
-                <rdawd:P10330>
-                    <xsl:text>Category of work {.} applies only to {../marc:subfield[@code = '3']}.</xsl:text>
-                </rdawd:P10330>
-            </xsl:if>
-        </xsl:for-each>
-        <!-\- 0s, 1s, and 2s will need updating once decision is made -\->
-        <!-\-<xsl:copy-of
-            select="uwf:conceptTest(marc:subfield[@code = '0'] | marc:subfield[@code = '1'], 'P10004')"
-        />-\->
-        <xsl:for-each select="marc:subfield[@code = '1']">
-            <rdaw:P10004>
-                <xsl:attribute name="rdf:resource">{.}</xsl:attribute> 
-            </rdaw:P10004>
-        </xsl:for-each>
-        <xsl:for-each select="marc:subfield[@code = '0']">
-            <xsl:choose>
-                <xsl:when test="starts-with(., 'http')">
-                    <rdaw:P10004>
-                        <xsl:attribute name="rdf:resource">{.}</xsl:attribute> 
-                    </rdaw:P10004>
-                </xsl:when>
-                <xsl:otherwise>
-                    <rdaw:P10004>{.}</rdaw:P10004>
-                </xsl:otherwise>
-            </xsl:choose>
-        </xsl:for-each>
-    </xsl:template>-->
     
-    <!--<xsl:template
+    <xsl:template
         match="marc:datafield[@tag = '382'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '382']"
         mode="exp">
         <xsl:if test="@ind1 = ' ' or @ind1 = '0' or @ind1 = '1'">
@@ -512,9 +475,6 @@
             <rdaed:P20215>
                 <xsl:call-template name="F382-xx-abdenprstv3"/>
             </rdaed:P20215>
-            <xsl:copy-of
-                select="uwf:conceptTest(marc:subfield[@code = '0'] | marc:subfield[@code = '1'], 'P20215')"
-            />
         </xsl:if>
     </xsl:template>
     <xsl:template
@@ -526,9 +486,34 @@
             <rdawd:P10220>
                 <xsl:call-template name="F382-xx-abdenprstv3"/>
             </rdawd:P10220>
-            <xsl:copy-of
-                select="uwf:conceptTest(marc:subfield[@code = '0'] | marc:subfield[@code = '1'], 'P10220')"
-            />
         </xsl:if>
-    </xsl:template>-->
+    </xsl:template>
+    <xsl:template
+        match="marc:datafield[@tag = '382'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '382-00']"
+        mode="con">
+        <xsl:if test="marc:subfield[@code = '2']">
+            <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
+            
+            <xsl:variable name="linked880">
+                <xsl:if test="@tag = '382' and marc:subfield[@code = '6']">
+                    <xsl:variable name="occNum"
+                        select="concat('382-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                    <xsl:copy-of
+                        select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]"/>
+                </xsl:if>
+            </xsl:variable>
+            
+            <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'p']">
+                <xsl:variable name="code" select="@code"/>
+                <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
+                    <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '382')"/>
+                    <xsl:if test="$linked880">
+                        <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = $code]">
+                            <xsl:copy-of select="uwf:fillConcept(., '', '', '880')"/>
+                        </xsl:for-each>
+                    </xsl:if>
+                </rdf:Description>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
 </xsl:stylesheet>

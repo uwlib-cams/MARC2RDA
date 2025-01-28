@@ -2258,38 +2258,23 @@
     <!-- 382 -->
     <xsl:template name="F382-xx-a_b_d_p_2-exp" expand-text="yes">
         <xsl:variable name="s2code" select="marc:subfield[@code = '2'][1]"/>
-        <xsl:variable name="musiccodeschemes"
-            select="document('http://id.loc.gov/vocabulary/musiccodeschemes.madsrdf.rdf')"/>
-        <xsl:variable name="sourceiri">
-            <xsl:for-each
-                select="$musiccodeschemes/rdf:RDF/madsrdf:MADSScheme/madsrdf:hasMADSSchemeMember/@rdf:resource">
-                <xsl:if
-                    test="substring-after(., 'http://id.loc.gov/vocabulary/musiccodeschemes/') = $s2code">
-                    <xsl:text>http://id.loc.gov/vocabulary/musiccodeschemes/</xsl:text>
-                    <xsl:value-of select="$s2code"/>
+        <xsl:choose>
+            <xsl:when test="marc:subfield[@code = '2']">
+                <xsl:if test="@tag = '382' or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '382-00'))">
+                    <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'p']">
+                        <rdae:P20215 rdf:resource="{uwf:conceptIRI(../marc:subfield[@code = '2'], .)}"/>
+                    </xsl:for-each>
                 </xsl:if>
-            </xsl:for-each>
-        </xsl:variable>
-        <xsl:if test="contains($sourceiri, 'lcmpt')">
-            <xsl:for-each
-                select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'p']">
-                <rdaed:P20215 rdf:datatype="http://id.loc.gov/authorities/performanceMediums"
-                    >{.}</rdaed:P20215>
-            </xsl:for-each>
-        </xsl:if>
-        <xsl:if test="$sourceiri != '' and not(contains($sourceiri, 'lcmpt'))">
-            <xsl:for-each
-                select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'p']">
-                <rdaed:P20215 rdf:datatype="{$sourceiri}">{.}</rdaed:P20215>
-            </xsl:for-each>
-        </xsl:if>
-        <xsl:if test="$sourceiri = ''">
-            <xsl:for-each
-                select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'p']">
-                <rdaed:P20215>{.}</rdaed:P20215>
-            </xsl:for-each>
-        </xsl:if>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:for-each
+                    select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'p']">
+                    <rdaed:P20215>{.}</rdaed:P20215>
+                </xsl:for-each>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
+    
     <xsl:template name="F382-xx-abdenprstv3" expand-text="yes">
         <xsl:if test="marc:subfield[@code = '3']">{marc:subfield[@code = '3']||': '}</xsl:if>
         <xsl:text>For </xsl:text>
@@ -2312,37 +2297,20 @@
         />
     </xsl:template>
     <xsl:template name="F382-xx-a_b_d_p_2-wor" expand-text="yes">
-        <xsl:variable name="s2code" select="marc:subfield[@code = '2'][1]"/>
-        <xsl:variable name="musiccodeschemes"
-            select="document('http://id.loc.gov/vocabulary/musiccodeschemes.madsrdf.rdf')"/>
-        <xsl:variable name="sourceiri">
-            <xsl:for-each
-                select="$musiccodeschemes/rdf:RDF/madsrdf:MADSScheme/madsrdf:hasMADSSchemeMember/@rdf:resource">
-                <xsl:if
-                    test="substring-after(., 'http://id.loc.gov/vocabulary/musiccodeschemes/') = $s2code">
-                    <xsl:text>http://id.loc.gov/vocabulary/musiccodeschemes/</xsl:text>
-                    <xsl:value-of select="$s2code"/>
+        <xsl:choose>
+            <xsl:when test="marc:subfield[@code = '2']">
+                <xsl:if test="@tag = '382' or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '382-00'))">
+                    <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'p']">
+                        <rdaw:P10220 rdf:resource="{uwf:conceptIRI(../marc:subfield[@code = '2'], .)}"/>
+                    </xsl:for-each>
                 </xsl:if>
-            </xsl:for-each>
-        </xsl:variable>
-        <xsl:if test="contains($sourceiri, 'lcmpt')">
-            <xsl:for-each
-                select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'p']">
-                <rdawd:P10220 rdf:datatype="http://id.loc.gov/authorities/performanceMediums"
-                    >{.}</rdawd:P10220>
-            </xsl:for-each>
-        </xsl:if>
-        <xsl:if test="$sourceiri != '' and not(contains($sourceiri, 'lcmpt'))">
-            <xsl:for-each
-                select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'p']">
-                <rdawd:P10220 rdf:datatype="{$sourceiri}">{.}</rdawd:P10220>
-            </xsl:for-each>
-        </xsl:if>
-        <xsl:if test="$sourceiri = ''">
-            <xsl:for-each
-                select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'p']">
-                <rdawd:P10220>{.}</rdawd:P10220>
-            </xsl:for-each>
-        </xsl:if>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:for-each
+                    select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'p']">
+                    <rdawd:P10220>{.}</rdawd:P10220>
+                </xsl:for-each>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 </xsl:stylesheet>
