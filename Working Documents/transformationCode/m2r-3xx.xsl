@@ -452,6 +452,19 @@
         </xsl:for-each> </rdaw:P10084>
     </xsl:template>
     
+    <!-- 380 - Form of Work -->
+    <xsl:template match="marc:datafield[@tag = '380'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '380']" 
+        mode="wor">
+        <xsl:call-template name="getmarc"/>
+        <xsl:call-template name="F380-string"/>
+        <xsl:call-template name="F380-iri"/>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '380'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '380-00']" 
+        mode="con">
+        <xsl:call-template name="F380-concept"/>
+    </xsl:template>
+    
 <!--    <xsl:template
         match="marc:datafield[@tag = '380'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '380']"
         mode="wor" expand-text="yes">
