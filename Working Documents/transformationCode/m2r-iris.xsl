@@ -338,13 +338,13 @@
                         <xsl:choose>
                             <xsl:when test="(starts-with($field/@tag, '6') or ($field/@tag = '880' and starts-with($field/marc:subfield[@code = '6'], '6')))
                                 and not($field/@ind2 = '4' or $field/@ind2 = ' ' or $field/@ind2 = '7')">
-                                <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||'timespan#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                                <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||'tim#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                             </xsl:when>
                             <xsl:when test="$field/marc:subfield[@code = '2']">
-                                <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'timespan#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                                <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'tim#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                             </xsl:when>
                             <xsl:otherwise>
-                                <xsl:value-of select="$baseIRI||'timespan#'||generate-id($field)"/>
+                                <xsl:value-of select="$baseIRI||'tim#'||generate-id($field)"/>
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:otherwise>
@@ -354,13 +354,13 @@
                 <xsl:choose>
                     <xsl:when test="(starts-with($field/@tag, '6') or ($field/@tag = '880' and starts-with($field/marc:subfield[@code = '6'], '6')))
                         and not($field/@ind2 = '4' or $field/@ind2 = ' ' or $field/@ind2 = '7')">
-                        <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||'timespan#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                        <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||'tim#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                     </xsl:when>
                     <xsl:when test="$field/marc:subfield[@code = '2']">
-                        <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'timespan#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                        <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'tim#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="$baseIRI||'timespan#'||generate-id($field)"/>
+                        <xsl:value-of select="$baseIRI||'tim#'||generate-id($field)"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:otherwise>
@@ -393,10 +393,10 @@
                     <xsl:otherwise>
                         <xsl:choose>
                             <xsl:when test="exists($source) and $source != ''">
-                                <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($source), ' ', ''))||'/'||'place#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                                <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($source), ' ', ''))||'/'||'pla#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                             </xsl:when>
                             <xsl:otherwise>
-                                <xsl:value-of select="$baseIRI||'place#'||generate-id($field)"/>
+                                <xsl:value-of select="$baseIRI||'pla#'||generate-id($field)"/>
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:otherwise>
@@ -405,10 +405,10 @@
             <xsl:otherwise>
                 <xsl:choose>
                     <xsl:when test="exists($source) and $source != ''">
-                        <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($source), ' ', ''))||'/'||'place#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+                        <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($source), ' ', ''))||'/'||'pla#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="$baseIRI||'place#'||generate-id($field)"/>
+                        <xsl:value-of select="$baseIRI||'pla#'||generate-id($field)"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:otherwise>
