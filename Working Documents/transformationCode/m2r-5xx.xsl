@@ -55,7 +55,7 @@
         <xsl:call-template name="getmarc"/>
         <xsl:choose>
             <xsl:when test="marc:subfield[@code = '5']">
-                <rdamo:P30103 rdf:resource="{concat($baseIRI,'ite#', generate-id())}"/>
+                <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseIRI, .)}"/>
             </xsl:when>
             <xsl:otherwise>
                 <rdamd:P30137>
@@ -91,7 +91,7 @@
         <xsl:param name="baseIRI"/>
         <xsl:param name="controlNumber"/>
         <xsl:variable name="genID" select="generate-id()"/>
-        <rdf:Description rdf:about="{concat($baseIRI,'ite#',$genID)}">
+        <rdf:Description rdf:about="{uwf:itemIRI($baseIRI, .)}">
             <xsl:call-template name="getmarc"/>
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
             <rdaid:P40001>{concat($controlNumber,'ite#',$genID)}</rdaid:P40001>
@@ -132,7 +132,7 @@
         <xsl:choose>
             <xsl:when test="marc:subfield[@code = '5']">
                 <xsl:if test="@tag = '501' or (@tag = '880' and substring(marc:subfield[@code = '6'], 1, 6) = '501-00')">
-                    <rdamo:P30103 rdf:resource="{concat($baseIRI,'ite#', generate-id())}"/>
+                    <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseIRI, .)}"/>
                 </xsl:if>
             </xsl:when>
             <xsl:otherwise>
@@ -150,7 +150,7 @@
         <xsl:param name="controlNumber"/>
         <xsl:variable name="genID" select="generate-id()"/>
         <xsl:if test="marc:subfield[@code = '5']">
-            <rdf:Description rdf:about="{concat($baseIRI,'ite#',$genID)}">
+            <rdf:Description rdf:about="{uwf:itemIRI($baseIRI, .)}">
                 <xsl:call-template name="getmarc"/>
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                 <rdaid:P40001>{concat($controlNumber, 'ite#', $genID)}</rdaid:P40001>
@@ -287,7 +287,7 @@
                 </xsl:if>
             </xsl:when>
             <xsl:otherwise>
-                <rdamo:P30103 rdf:resource="{concat($baseIRI,'ite#', generate-id())}"/>
+                <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseIRI, .)}"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template> 
@@ -307,7 +307,7 @@
         </xsl:variable>
         <!-- create the item IRI and rdf:description for this item -->
         <xsl:if test="$online_resource = 'false'">
-            <rdf:Description rdf:about="{concat($baseIRI,'ite#',$genID)}">
+            <rdf:Description rdf:about="{uwf:itemIRI($baseIRI, .)}">
                 <xsl:call-template name="getmarc"/>
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                 <rdaid:P40001>{concat($controlNumber, 'ite#', $genID)}</rdaid:P40001>
@@ -795,7 +795,7 @@
         <xsl:choose>
             <xsl:when test="marc:subfield[@code = '5']">
                 <xsl:for-each select="marc:subfield[@code = '5']">
-                    <rdamo:P30103 rdf:resource="{concat($baseIRI,'ite#', generate-id())}"/>
+                    <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseIRI, .)}"/>
                 </xsl:for-each>
             </xsl:when>
             <xsl:otherwise>
@@ -817,7 +817,7 @@
         <!-- create the item IRI and rdf:description for this item -->
         <xsl:for-each select="marc:subfield[@code = '5']">
             <xsl:variable name="genID" select="generate-id()"/>
-            <rdf:Description rdf:about="{concat($baseIRI,'ite#',$genID)}">
+            <rdf:Description rdf:about="{uwf:itemIRI($baseIRI, .)}">
                 <rdaid:P40001>{concat($controlNumber, 'ite#', $genID)}</rdaid:P40001>
                 <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
@@ -846,7 +846,7 @@
         mode="man">
         <xsl:param name="baseIRI"/>
         <xsl:call-template name="getmarc"/>
-        <rdamo:P30103 rdf:resource="{concat($baseIRI,'ite#', generate-id())}"/>
+        <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseIRI, .)}"/>
     </xsl:template> 
     
     <xsl:template
@@ -856,7 +856,7 @@
         <xsl:param name="controlNumber"/>
         <xsl:variable name="genID" select="generate-id()"/>
         <!-- create the item IRI and rdf:description for this item -->
-        <rdf:Description rdf:about="{concat($baseIRI,'ite#',$genID)}">
+        <rdf:Description rdf:about="{uwf:itemIRI($baseIRI, .)}">
             <xsl:call-template name="getmarc"/>
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
             <rdaid:P40001>{concat($controlNumber, 'ite#', $genID)}</rdaid:P40001>
@@ -1051,7 +1051,7 @@
         mode="man">
         <xsl:param name="baseIRI"/>
         <xsl:call-template name="getmarc"/>
-        <rdamo:P30103 rdf:resource="{concat($baseIRI,'ite#', generate-id())}"/>
+        <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseIRI, .)}"/>
     </xsl:template> 
     
     <xsl:template
@@ -1061,7 +1061,7 @@
         <xsl:param name="controlNumber"/>
         <xsl:variable name="genID" select="generate-id()"/>
         <!-- create the item IRI and rdf:description for this item -->
-        <rdf:Description rdf:about="{concat($baseIRI,'ite#',$genID)}">
+        <rdf:Description rdf:about="{uwf:itemIRI($baseIRI, .)}">
             <xsl:call-template name="getmarc"/>
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
             <rdaid:P40001>{concat($controlNumber, 'ite#', $genID)}</rdaid:P40001>
@@ -1103,11 +1103,11 @@
     <xsl:template match="marc:datafield[@tag = '561'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '561-00']"
         mode="metaWor" expand-text="yes">
         <xsl:param name="baseIRI"/>
-        <xsl:variable name="genID" select="generate-id()"/>
+        <xsl:variable name="itemIRI" select="uwf:itemIRI($baseIRI, .)"/>
         <xsl:if test="@ind1 = '0'">
             <xsl:call-template name="F561-0x">
                 <xsl:with-param name="baseIRI" select="$baseIRI"/>
-                <xsl:with-param name="genID" select="$genID"/>
+                <xsl:with-param name="itemIRI" select="$itemIRI"/>
             </xsl:call-template>
         </xsl:if>
         <!-- again, match with the associated 880 field and do the same mapping -->
@@ -1119,7 +1119,7 @@
                 <xsl:if test="@ind1 = '0'">
                     <xsl:call-template name="F561-0x">
                         <xsl:with-param name="baseIRI" select="$baseIRI"/>
-                        <xsl:with-param name="genID" select="$genID"/>
+                        <xsl:with-param name="itemIRI" select="$itemIRI"/>
                     </xsl:call-template>
                 </xsl:if>
             </xsl:for-each>
@@ -1134,7 +1134,7 @@
         <xsl:choose>
             <xsl:when test="marc:subfield[@code = '5']">
                 <xsl:if test=".[@tag = '563'] or .[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '563-00']">
-                    <rdamo:P30103 rdf:resource="{concat($baseIRI,'ite#', generate-id())}"/>
+                    <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseIRI, .)}"/>
                 </xsl:if>
             </xsl:when>
             <xsl:otherwise>
@@ -1151,7 +1151,7 @@
         <xsl:param name="controlNumber"/>
         <xsl:variable name="genID" select="generate-id()"/>
         <xsl:if test="marc:subfield[@code = '5']">
-            <rdf:Description rdf:about="{concat($baseIRI,'ite#',$genID)}">
+            <rdf:Description rdf:about="{uwf:itemIRI($baseIRI, .)}">
                 <xsl:call-template name="getmarc"/>
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                 <rdaid:P40001>{concat($controlNumber,'ite#',$genID)}</rdaid:P40001>
@@ -1221,7 +1221,7 @@
         mode="man">
         <xsl:param name="baseIRI"/>
         <xsl:call-template name="getmarc"/>
-        <rdamo:P30103 rdf:resource="{concat($baseIRI,'ite#', generate-id())}"/>
+        <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseIRI, .)}"/>
     </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '583'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '583-00']" 
@@ -1229,7 +1229,7 @@
         <xsl:param name="baseIRI"/>
         <xsl:param name="controlNumber"/>
         <xsl:variable name="genID" select="generate-id()"/>
-        <rdf:Description rdf:about="{concat($baseIRI,'ite#',$genID)}">
+        <rdf:Description rdf:about="{uwf:itemIRI($baseIRI, .)}">
             <xsl:call-template name="getmarc"/>
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
             <rdaid:P40001>{concat($controlNumber,'ite#',$genID)}</rdaid:P40001>
@@ -1286,20 +1286,20 @@
     <xsl:template match="marc:datafield[@tag = '583'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '583-00']" 
         mode="metaWor" expand-text="yes">
         <xsl:param name="baseIRI"/>
-        <xsl:variable name="genID" select="generate-id()"/>
+        <xsl:variable name="itemIRI" select="uwf:itemIRI($baseIRI, .)"/>
         <xsl:if test="@ind1 != '0'">
             <!-- for each sets same context as above, ensures id value is the same -->
             <xsl:for-each select="marc:subfield[@code = 'x']">
                 <xsl:call-template name="F583-1x-x">
                     <xsl:with-param name="baseIRI" select="$baseIRI"/>
-                    <xsl:with-param name="genID" select="$genID"/>
+                    <xsl:with-param name="itemIRI" select="$itemIRI"/>
                 </xsl:call-template>
             </xsl:for-each>
         </xsl:if>
         <xsl:if test="@ind1 = '0'">
             <xsl:call-template name="F583-0x">
                 <xsl:with-param name="baseIRI" select="$baseIRI"/>
-                <xsl:with-param name="genID" select="$genID"/>
+                <xsl:with-param name="itemIRI" select="$itemIRI"/>
             </xsl:call-template>
         </xsl:if>
         
@@ -1314,14 +1314,14 @@
                     <xsl:for-each select="marc:subfield[@code = 'x']">
                         <xsl:call-template name="F583-1x-x">
                             <xsl:with-param name="baseIRI" select="$baseIRI"/>
-                            <xsl:with-param name="genID" select="$genID"/>
+                            <xsl:with-param name="itemIRI" select="$itemIRI"/>
                         </xsl:call-template>
                     </xsl:for-each>
                 </xsl:if>
                 <xsl:if test="@ind1 = '0'">
                     <xsl:call-template name="F583-0x">
                         <xsl:with-param name="baseIRI" select="$baseIRI"/>
-                        <xsl:with-param name="genID" select="$genID"/>
+                        <xsl:with-param name="itemIRI" select="$itemIRI"/>
                     </xsl:call-template>
                 </xsl:if>
             </xsl:for-each>
@@ -1347,7 +1347,7 @@
         <xsl:choose>
             <xsl:when test="marc:subfield[@code = '5']">
                 <xsl:if test=".[@tag = '585'] or .[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '585-00']">
-                    <rdamo:P30103 rdf:resource="{concat($baseIRI,'ite#', generate-id())}"/>
+                    <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseIRI, .)}"/>
                 </xsl:if>
             </xsl:when>
             <xsl:otherwise>
@@ -1367,7 +1367,7 @@
         <xsl:param name="controlNumber"/>
         <xsl:if test="marc:subfield[@code = '5']">
             <xsl:variable name="genID" select="generate-id()"/>
-            <rdf:Description rdf:about="{concat($baseIRI,'ite#',$genID)}">
+            <rdf:Description rdf:about="{uwf:itemIRI($baseIRI, .)}">
                 <xsl:call-template name="getmarc"/>
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                 <rdaid:P40001>{concat($controlNumber,'ite#',$genID)}</rdaid:P40001>

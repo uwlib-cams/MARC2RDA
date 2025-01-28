@@ -55,10 +55,10 @@
       <rdamd:P30145>Restrictions apply: Terms governing access: 880 text (at institution: University of Washington)</rdamd:P30145>
       <fake:marcfield>F506 1# $6 880-01 $a linked 506 $f License $2 star</fake:marcfield>
       <rdamd:P30145>Restrictions apply: Terms governing access: linked 506</rdamd:P30145>
-      <rdam:P30145 rdf:resource="http://marc2rda.edu/fake/concept/star/license"/>
+      <rdam:P30145 rdf:resource="http://marc2rda.edu/fake/star/con#license"/>
       <rdamd:P30145>Restrictions apply: Terms governing access: linked 880</rdamd:P30145>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/star/license">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/star/con#license">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>License</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/accessrestrictionterm/star"/>
@@ -80,28 +80,28 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/506-test2exp"/>
       <fake:marcfield>F506 1# $3 Office files of Under Secretary $a No one may examine these records or obtain information from them or copies of them except by written permission; $b Secretary of the Treasury or his duly authorized representative;$cKept in remote storage; access requires 24 hours advance notice.</fake:marcfield>
-      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/506-test2ited22e50"/>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/506-test2ite#d22e50"/>
       <fake:marcfield>F506 0# $6 880-01 $a Access copy available to the general public. $f Unrestricted $2 star $5 MH</fake:marcfield>
-      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/506-test2ited22e57"/>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/506-test2ite#d22e57"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/506-test2ited22e50">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/506-test2ite#d22e50">
       <fake:marcfield>F506 1# $3 Office files of Under Secretary $a No one may examine these records or obtain information from them or copies of them except by written permission; $b Secretary of the Treasury or his duly authorized representative;$cKept in remote storage; access requires 24 hours advance notice.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ited22e50</rdaid:P40001>
+      <rdaid:P40001>506-test2ite#d22e50</rdaid:P40001>
       <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/506-test2man"/>
       <rdaid:P40047>Restrictions apply: Terms governing access: No one may examine these records or obtain information from them or copies of them except by written permission;; Jurisdiction: Secretary of the Treasury or his duly authorized representative;$cKept in remote storage; access requires 24 hours advance notice. (Applies to: Office files of Under Secretary)</rdaid:P40047>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/506-test2ited22e57">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/506-test2ite#d22e57">
       <fake:marcfield>F506 0# $6 880-01 $a Access copy available to the general public. $f Unrestricted $2 star $5 MH</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ited22e57</rdaid:P40001>
+      <rdaid:P40001>506-test2ite#d22e57</rdaid:P40001>
       <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/506-test2man"/>
       <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/mh"/>
       <rdaid:P40047>Terms governing access: Access copy available to the general public.</rdaid:P40047>
-      <rdai:P40047 rdf:resource="http://marc2rda.edu/fake/concept/star/unrestricted"/>
+      <rdai:P40047 rdf:resource="http://marc2rda.edu/fake/star/con#unrestricted"/>
       <rdaid:P40047>Terms governing access: Other thing</rdaid:P40047>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/star/unrestricted">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/star/con#unrestricted">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>Unrestricted</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/accessrestrictionterm/star"/>

@@ -48,34 +48,34 @@
       <fake:marcfield>F563 ## $a Original color printed paper wrappers.</fake:marcfield>
       <rdamd:P30137>Original color printed paper wrappers.</rdamd:P30137>
       <fake:marcfield>F563 ## $a Binding: Includes original dust-jacket. $u http://uri $3 Dust-jacket $5 ICU</fake:marcfield>
-      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/563-testited22e9"/>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/563-testite#d22e9"/>
       <fake:marcfield>F563 ## $6 880-01 $a 18th-century light calf, red and black spine labels gold-tooled. $5 IE-DuUC</fake:marcfield>
-      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/563-testited22e18"/>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/563-testite#d22e18"/>
       <fake:marcfield>F880 ## $6 563-01 $a linked 880 $5 IE-DuUC</fake:marcfield>
       <fake:marcfield>F880 ## $6 563-00 $a Publisher's illustrated red cloth binding. $5 ICN</fake:marcfield>
-      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/563-testited22e32"/>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/563-testite#d22e32"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/563-testited22e9">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/563-testite#d22e9">
       <fake:marcfield>F563 ## $a Binding: Includes original dust-jacket. $u http://uri $3 Dust-jacket $5 ICU</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ited22e9</rdaid:P40001>
+      <rdaid:P40001>563-testite#d22e9</rdaid:P40001>
       <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/563-testman"/>
       <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/icu"/>
       <rdaid:P40028>Binding: Includes original dust-jacket.; Uniform Resource Identifier: http://uri (Applies to: Dust-jacket)</rdaid:P40028>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/563-testited22e18">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/563-testite#d22e18">
       <fake:marcfield>F563 ## $6 880-01 $a 18th-century light calf, red and black spine labels gold-tooled. $5 IE-DuUC</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ited22e18</rdaid:P40001>
+      <rdaid:P40001>563-testite#d22e18</rdaid:P40001>
       <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/563-testman"/>
       <!--Unable to match IE-DuUC with Cultural Heritage Organization-->
       <rdaid:P40028>18th-century light calf, red and black spine labels gold-tooled.</rdaid:P40028>
       <rdaid:P40028>linked 880</rdaid:P40028>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/563-testited22e32">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/563-testite#d22e32">
       <fake:marcfield>F880 ## $6 563-00 $a Publisher's illustrated red cloth binding. $5 ICN</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ited22e32</rdaid:P40001>
+      <rdaid:P40001>563-testite#d22e32</rdaid:P40001>
       <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/563-testman"/>
       <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/icn"/>
       <rdaid:P40028>Publisher's illustrated red cloth binding.</rdaid:P40028>

@@ -48,37 +48,37 @@
       <fake:marcfield>F501 ## $a With: The reformed school / John Dury. London : Printed for R. Wasnothe, [1850] </fake:marcfield>
       <rdamd:P30137>With: The reformed school / John Dury. London : Printed for R. Wasnothe, [1850] </rdamd:P30137>
       <fake:marcfield>F501 ## $a E51 .F45 vol. 13, no. 2 With : Notes on turquois in the East / Berthold Laufer. Chicago, 1913. Bound together subsequent to publication. $5 DLC</fake:marcfield>
-      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/501-testited22e9"/>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/501-testite#d22e9"/>
       <fake:marcfield>F501 ## $6 880-01 $a With: Melville, James. The memoires of Sir James Melvil ... London : Robert Boulter. 1683. $5 CSmH</fake:marcfield>
-      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/501-testited22e14"/>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/501-testite#d22e14"/>
       <fake:marcfield>F880 ## $6 501-01 $a linked 880 with note</fake:marcfield>
       <rdamd:P30137>linked 880 with note</rdamd:P30137>
       <fake:marcfield>F880 ## $6 501-00 $a unlinked 880 with note $5 wau</fake:marcfield>
-      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/501-testited22e26"/>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/501-testite#d22e26"/>
       <fake:marcfield>F880 ## $6 501-00 $a unlinked 880 no $5</fake:marcfield>
       <rdamd:P30137>unlinked 880 no $5</rdamd:P30137>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/501-testited22e9">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/501-testite#d22e9">
       <fake:marcfield>F501 ## $a E51 .F45 vol. 13, no. 2 With : Notes on turquois in the East / Berthold Laufer. Chicago, 1913. Bound together subsequent to publication. $5 DLC</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ited22e9</rdaid:P40001>
+      <rdaid:P40001>501-testite#d22e9</rdaid:P40001>
       <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/501-testman"/>
       <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/dlc"/>
       <rdaid:P40028>E51 .F45 vol. 13, no. 2 With : Notes on turquois in the East / Berthold Laufer. Chicago, 1913. Bound together subsequent to publication.</rdaid:P40028>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/501-testited22e14">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/501-testite#d22e14">
       <fake:marcfield>F501 ## $6 880-01 $a With: Melville, James. The memoires of Sir James Melvil ... London : Robert Boulter. 1683. $5 CSmH</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ited22e14</rdaid:P40001>
+      <rdaid:P40001>501-testite#d22e14</rdaid:P40001>
       <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/501-testman"/>
       <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/csmh"/>
       <rdaid:P40028>With: Melville, James. The memoires of Sir James Melvil ... London : Robert Boulter. 1683.</rdaid:P40028>
       <rdaid:P40028>linked 880 with note</rdaid:P40028>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/501-testited22e26">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/501-testite#d22e26">
       <fake:marcfield>F880 ## $6 501-00 $a unlinked 880 with note $5 wau</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ited22e26</rdaid:P40001>
+      <rdaid:P40001>501-testite#d22e26</rdaid:P40001>
       <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/501-testman"/>
       <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/wau"/>
       <rdaid:P40028>unlinked 880 with note</rdaid:P40028>
