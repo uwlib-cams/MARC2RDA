@@ -94,6 +94,14 @@
         </xsl:if>
     </xsl:function>
     
+    <!-- returns an IRI for an item -->
+    
+    <xsl:function name="uwf:itemIRI">
+        <xsl:param name="baseIRI"/>
+        <xsl:param name="node"/>
+        <xsl:value-of select="$baseIRI||'ite#'||generate-id($node)"/>
+    </xsl:function>
+    
     <!-- returns an IRI for an entity -->
     
     <xsl:function name="uwf:agentIRI">
