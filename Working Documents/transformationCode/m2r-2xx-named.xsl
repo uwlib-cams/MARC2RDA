@@ -711,10 +711,10 @@
             </xsl:when>
             <xsl:otherwise>
                 <xsl:analyze-string select="."
-                    regex="c?\d\d\d\d">
+                    regex="[c©]?\d\d\d\d">
                     <xsl:matching-substring>
                         <xsl:choose>
-                            <xsl:when test="starts-with(., 'c')">
+                            <xsl:when test="starts-with(., 'c') or starts-with(., '©')">
                                 <rdamd:P30280>
                                     <xsl:value-of select="."/>
                                 </rdamd:P30280>
@@ -745,10 +745,10 @@
     
     <xsl:template name="F260-xx-g" expand-text="yes">
         <xsl:analyze-string select="."
-            regex="c?\d\d\d\d">
+            regex="[c©]?\d\d\d\d">
             <xsl:matching-substring>
                 <xsl:choose>
-                    <xsl:when test="starts-with(., 'c')">
+                    <xsl:when test="starts-with(., 'c') or starts-with(., '©')">
                         <rdamd:P30280>
                             <xsl:value-of select="."/>
                         </rdamd:P30280>
