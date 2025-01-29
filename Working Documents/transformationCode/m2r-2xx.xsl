@@ -220,11 +220,15 @@
                 </xsl:choose>
             </xsl:variable>
             <rdamd:P30107>
-                <xsl:if test="marc:subfield[@code = '3']">
-                    <xsl:text>Applies to: {marc:subfield[@code = '3']}. </xsl:text>
-                </xsl:if>
                 <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']"/>
             </rdamd:P30107>
+            <xsl:if test="marc:subfield[@code = '3']">
+                <rdamd:P30137>
+                    <xsl:text>Has edition statement </xsl:text>
+                    <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']"/>
+                    <xsl:text> applies to: {marc:subfield[@code = '3']}</xsl:text>
+                </rdamd:P30137>
+            </xsl:if>
             <xsl:if test="$isISBD = true()">
                 <xsl:variable name="isbdString">
                     <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']" separator=" "/>

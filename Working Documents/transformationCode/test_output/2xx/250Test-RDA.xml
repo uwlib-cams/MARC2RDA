@@ -34,7 +34,8 @@
       <rdamd:P30133>Extended and revised edition</rdamd:P30133><!--rdamd:P30133 = has designation of edition-->
       <rdamd:P30133>Erweiterte und revidierte Ausgabe.</rdamd:P30133><!--rdamd:P30133 = has designation of edition-->
       <fake:marcfield>F250 ## $3 Main content $a New ed. / $b edited by John Jowett.</fake:marcfield>
-      <rdamd:P30107>Applies to: Main content. New ed. / edited by John Jowett.</rdamd:P30107><!--rdamd:P30107 = has edition statement-->
+      <rdamd:P30107>New ed. / edited by John Jowett.</rdamd:P30107><!--rdamd:P30107 = has edition statement-->
+      <rdamd:P30137>Has edition statement New ed. / edited by John Jowett. applies to: Main content</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30133>New ed.</rdamd:P30133><!--rdamd:P30133 = has designation of edition-->
       <rdamd:P30121>edited by John Jowett.</rdamd:P30121><!--rdamd:P30121 = has statement of responsibility relating to edition-->
    </rdf:Description>
