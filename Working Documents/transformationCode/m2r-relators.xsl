@@ -1008,7 +1008,9 @@
     
     <xsl:template name="FX00-xx-ab">
         <xsl:if test="marc:subfield[@code = 'a'] or marc:subfield[@code = 'b']">
-            <xsl:variable name="nameOfPerson" select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']"/>
+            <xsl:variable name="nameOfPerson">
+                <xsl:value-of  select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']"/>
+            </xsl:variable>
             <rdaad:P50111>
                 <xsl:value-of select="uwf:stripEndPunctuation($nameOfPerson)"/>
             </rdaad:P50111>
@@ -1088,15 +1090,15 @@
                                 <xsl:value-of select="replace(normalize-space(substring-after(., 'fl.')), '\.$', '') => uwf:stripEndPunctuation()"/>
                             </rdaad:P50098>
                         </xsl:when>
-                        <xsl:when test="contains(normalize-space(.), 'cent.') or contains(normalize-space(.), 'century') => uwf:stripEndPunctuation()">
+                        <xsl:when test="contains(normalize-space(.), 'cent.') or contains(normalize-space(.), 'century')">
                             <rdaad:P50098>
-                                <xsl:value-of select="."/>
+                                <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
                             </rdaad:P50098>
                         </xsl:when>
                         <xsl:otherwise>
-                            <rdaad:P50347>
+                            <rdaad:P50098>
                                 <xsl:value-of select="."/>
-                            </rdaad:P50347>
+                            </rdaad:P50098>
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:otherwise>
