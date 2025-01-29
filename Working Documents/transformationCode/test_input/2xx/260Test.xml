@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">260-test1</marc:controlfield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">New York :</marc:subfield>
+            <marc:subfield code="b">Bantam Books,</marc:subfield>
+            <marc:subfield code="c">2000.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">260-test2</marc:controlfield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">[Solon, Ohio] :</marc:subfield>
+            <marc:subfield code="b">Playaway Digital Audio :</marc:subfield>
+            <marc:subfield code="b">[Manufactured and distributed by] Findaway World, LLC,</marc:subfield>
+            <marc:subfield code="c">[2010], c2008.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">260-test3</marc:controlfield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">[New York :</marc:subfield>
+            <marc:subfield code="b">New York Post,</marc:subfield>
+            <marc:subfield code="c">2004?]</marc:subfield>
+            <marc:subfield code="e">([Brussels, Belgium] :</marc:subfield>
+            <marc:subfield code="f">Paperview)</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>02145cam a2200481 c 4500</marc:leader>
+        <marc:controlfield tag="001">260-test4</marc:controlfield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">New York :</marc:subfield>
+            <marc:subfield code="b">Simon &amp; Schuster,</marc:subfield>
+            <marc:subfield code="c">c2001.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>01419cam a2200385 i 4500</marc:leader>
+        <marc:controlfield tag="001">260-test5</marc:controlfield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">London :</marc:subfield>
+            <marc:subfield code="b">Dent ;</marc:subfield>
+            <marc:subfield code="a">New York :</marc:subfield>
+            <marc:subfield code="b">Dutton,</marc:subfield>
+            <marc:subfield code="c">1963.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>01419cam a2200385 i 4500</marc:leader>
+        <marc:controlfield tag="001">260-test5</marc:controlfield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">Paris :</marc:subfield>
+            <marc:subfield code="b">Impr. Vincent,</marc:subfield>
+            <marc:subfield code="c">1798</marc:subfield>
+            <marc:subfield code="a">[i.e. Bruxelles :</marc:subfield>
+            <marc:subfield code="b">Moens,</marc:subfield>
+            <marc:subfield code="c">1883]</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">260-test6</marc:controlfield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">[Waterloo, Ont.] :</marc:subfield>
+            <marc:subfield code="b">Wilfrid Laurier University Press,</marc:subfield>
+            <marc:subfield code="c">©2010</marc:subfield>
+            <marc:subfield code="e">(Saint-Lazare, Quebec :</marc:subfield>
+            <marc:subfield code="f">Canadian Electronic Library,</marc:subfield>
+            <marc:subfield code="g">2010)</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">260-test7</marc:controlfield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">Toronto [Ont.] :</marc:subfield>
+            <marc:subfield code="b">University of Toronto Press,</marc:subfield>
+            <marc:subfield code="c">©2012</marc:subfield>
+            <marc:subfield code="e">(Ottawa, Ontario :</marc:subfield>
+            <marc:subfield code="f">Canadian Electronic Library,</marc:subfield>
+            <marc:subfield code="g">2012)</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">260-test8</marc:controlfield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="6">880-03</marc:subfield>
+            <marc:subfield code="a">Sŏul-si :</marc:subfield>
+            <marc:subfield code="b">Minŭmsa,</marc:subfield>
+            <marc:subfield code="c">2004</marc:subfield>
+            <marc:subfield code="g">(2005 printing)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">260-03/$1</marc:subfield>
+            <marc:subfield code="a">서울시 :</marc:subfield>
+            <marc:subfield code="b">민음사,</marc:subfield>
+            <marc:subfield code="c">2004</marc:subfield>
+            <marc:subfield code="g">(2005 printing)</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">260-test9</marc:controlfield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">Stockholm :</marc:subfield>
+            <marc:subfield code="b">Stockholm University :</marc:subfield>
+            <marc:subfield code="b">Almqvist &amp; Wiksell International [distributor],</marc:subfield>
+            <marc:subfield code="c">©2007.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">260-test10</marc:controlfield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">Bloomington, Ind. :</marc:subfield>
+            <marc:subfield code="b">Indiana University Press ;</marc:subfield>
+            <marc:subfield code="a">Chesham :</marc:subfield>
+            <marc:subfield code="b">Combined Academic [distributor],</marc:subfield>
+            <marc:subfield code="c">2005.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

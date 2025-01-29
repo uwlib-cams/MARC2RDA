@@ -631,6 +631,137 @@
         </xsl:for-each>
     </xsl:template>
     
+    <!-- F260 -->
+    <xsl:template name="F260-xx-abc">
+        <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']"/>
+    </xsl:template>
+    
+    <xsl:template name="F260-xx-efg">
+        <xsl:value-of select="marc:subfield[@code = 'e'] | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g']"/>
+    </xsl:template>
+    
+    <xsl:template name="F260-xx-abc-notISBD" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']">
+            <xsl:text>$</xsl:text>
+            <xsl:value-of select="@code"/>
+            <xsl:text> </xsl:text>
+            <xsl:value-of select="."/>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template name="F260-xx-efg-notISBD" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'e'] | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g']">
+            <xsl:text>$</xsl:text>
+            <xsl:value-of select="@code"/>
+            <xsl:text> </xsl:text>
+            <xsl:value-of select="."/>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template name="F260-xx-a" expand-text="yes">
+        <xsl:choose>
+            <xsl:when test="following-sibling::*[1]/@code = 'b' and matches(following-sibling::*[1]/text(), '(dist)|(sold)|(marketed)|(sale by)|(exported)|(imported)|(offered)|(supplied)|(obtained)|(circulated)|(available)|(leased)|(offered)')">
+                <rdamd:P30085>
+                    <xsl:value-of select="replace(., '( [:;,]$)|(,$)', '') => translate('[]', '')"/>
+                </rdamd:P30085>
+            </xsl:when>
+            <xsl:otherwise>
+                <rdamd:P30088>
+                    <xsl:value-of select="replace(., '( [:;,]$)|(,$)', '') => translate('[]', '')"/>
+                </rdamd:P30088>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template name="F260-xx-b" expand-text="yes">
+        <xsl:choose>
+            <xsl:when test=" matches(., '(dist)|(sold)|(marketed)|(sale by)|(exported)|(imported)|(offered)|(supplied)|(obtained)|(circulated)|(available)|(leased)|(offered)')">
+                <rdamd:P30173>
+                    <xsl:value-of select="replace(., '( [:;,]$)|(,$)', '') => translate('[]', '')"/>
+                </rdamd:P30173>
+            </xsl:when>
+            <xsl:otherwise>
+                <rdamd:P30176>
+                    <xsl:value-of select="replace(., '( [:;,]$)|(,$)', '') => translate('[]', '')"/>
+                </rdamd:P30176>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template name="F260-xx-c" expand-text="yes">
+        <xsl:choose>
+            <xsl:when test="preceding-sibling::*[1]/@code = 'b' and matches(preceding-sibling::*[1]/text(), '(dist)|(sold)|(marketed)|(sale by)|(exported)|(imported)|(offered)|(supplied)|(obtained)|(circulated)|(available)|(leased)|(offered)')">
+                <xsl:analyze-string select="."
+                    regex="c?\d\d\d\d">
+                    <xsl:matching-substring>
+                        <xsl:choose>
+                            <xsl:when test="starts-with(., 'c')">
+                                <rdamd:P30280>
+                                    <xsl:value-of select="."/>
+                                </rdamd:P30280>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <rdamd:P30008>
+                                    <xsl:value-of select="."/>
+                                </rdamd:P30008>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:matching-substring>
+                </xsl:analyze-string>        
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:analyze-string select="."
+                    regex="c?\d\d\d\d">
+                    <xsl:matching-substring>
+                        <xsl:choose>
+                            <xsl:when test="starts-with(., 'c')">
+                                <rdamd:P30280>
+                                    <xsl:value-of select="."/>
+                                </rdamd:P30280>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <rdamd:P30011>
+                                    <xsl:value-of select="."/>
+                                </rdamd:P30011>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:matching-substring>
+                </xsl:analyze-string> 
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template name="F260-xx-e" expand-text="yes">
+        <rdamd:P30087>
+            <xsl:value-of select="replace(., '( [:;,]$)|(,$)', '') => translate('[]()', '')"/>
+        </rdamd:P30087>
+    </xsl:template>
+    
+    <xsl:template name="F260-xx-f" expand-text="yes">
+        <rdamd:P30175>
+            <xsl:value-of select="replace(., '( [:;,]$)|(,$)', '') => translate('[]()', '')"/>
+        </rdamd:P30175>
+    </xsl:template>
+    
+    <xsl:template name="F260-xx-g" expand-text="yes">
+        <xsl:analyze-string select="."
+            regex="c?\d\d\d\d">
+            <xsl:matching-substring>
+                <xsl:choose>
+                    <xsl:when test="starts-with(., 'c')">
+                        <rdamd:P30280>
+                            <xsl:value-of select="."/>
+                        </rdamd:P30280>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <rdamd:P30010>
+                            <xsl:value-of select="."/>
+                        </rdamd:P30010>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:matching-substring>
+        </xsl:analyze-string> 
+    </xsl:template>
     
     <!-- F264-xx-abc processes MARC 264 entered with ISBD punctuation as an RDA "statement."
          All subfield values are concatenated with a space added between

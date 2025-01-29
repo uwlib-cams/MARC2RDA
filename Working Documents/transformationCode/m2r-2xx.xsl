@@ -496,6 +496,129 @@
         </xsl:if>
     </xsl:template>
     
+    <xsl:template match="marc:datafield[@tag = '260'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '260']"
+        mode="man" expand-text="yes">
+        <xsl:param name="type"/>
+        <xsl:call-template name="getmarc"/>
+        <xsl:variable name="isISBD">
+            <xsl:choose>
+                <xsl:when test="(substring(preceding-sibling::marc:leader, 19, 1) = 'i' or substring(preceding-sibling::marc:leader, 19, 1) = 'a')">
+                    <xsl:value-of select="true()"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="false()"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:choose>
+            <xsl:when test="$isISBD = true()">
+                <xsl:choose>
+                    <xsl:when test="not(matches(marc:subfield[@code = 'b'][1], '(dist)|(sold)|(marketed)|(sale by)|(exported)|(imported)|(offered)|(supplied)|(obtained)|(circulated)|(available)|(leased)|(offered)'))">
+                        <rdamd:P30111>
+                            <xsl:call-template name="F260-xx-abc"/>
+                        </rdamd:P30111>
+                        <xsl:if test="marc:subfield[@code = '3']">
+                            <rdamd:P30137>
+                                <xsl:text>Publication statement </xsl:text>
+                                <xsl:call-template name="F260-xx-abc"/>
+                                <xsl:text> applies to {marc:subfield[@code = '3']}</xsl:text>
+                            </rdamd:P30137>
+                        </xsl:if>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <rdamd:P30108>
+                            <xsl:call-template name="F260-xx-abc"/>
+                        </rdamd:P30108>
+                        <xsl:if test="marc:subfield[@code = '3']">
+                            <rdamd:P30137>
+                                <xsl:text>Distribution statement </xsl:text>
+                                <xsl:call-template name="F260-xx-abc"/>
+                                <xsl:text> applies to {marc:subfield[@code = '3']}</xsl:text>
+                            </rdamd:P30137>
+                        </xsl:if>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <xsl:if test="marc:subfield[@code = 'e'] | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g']">
+                    <rdamd:P30109>
+                        <xsl:call-template name="F260-xx-efg"/>
+                    </rdamd:P30109>
+                    <xsl:if test="marc:subfield[@code = '3']">
+                        <rdamd:P30137>
+                            <xsl:text>Manufacture statement </xsl:text>
+                            <xsl:call-template name="F260-xx-abc"/>
+                            <xsl:text> applies to {marc:subfield[@code = '3']}</xsl:text>
+                        </rdamd:P30137>
+                    </xsl:if>
+                </xsl:if>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:choose>
+                    <xsl:when test="not(matches(marc:subfield[@code = 'b'][1], '(dist)|(sold)|(marketed)|(sale by)|(exported)|(imported)|(offered)|(supplied)|(obtained)|(circulated)|(available)|(leased)|(offered)'))">
+                        <rdamd:P30111>
+                            <xsl:call-template name="F260-xx-abc-notISBD"/>
+                        </rdamd:P30111>
+                        <xsl:if test="marc:subfield[@code = '3']">
+                            <rdamd:P30137>
+                                <xsl:text>Publication statement </xsl:text>
+                                <xsl:call-template name="F260-xx-abc"/>
+                                <xsl:text> applies to {marc:subfield[@code = '3']}</xsl:text>
+                            </rdamd:P30137>
+                        </xsl:if>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <rdamd:P30108>
+                            <xsl:call-template name="F260-xx-abc-notISBD"/>
+                        </rdamd:P30108>
+                        <xsl:if test="marc:subfield[@code = '3']">
+                            <rdamd:P30137>
+                                <xsl:text>Distribution statement </xsl:text>
+                                <xsl:call-template name="F260-xx-abc"/>
+                                <xsl:text> applies to {marc:subfield[@code = '3']}</xsl:text>
+                            </rdamd:P30137>
+                        </xsl:if>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <xsl:if test="marc:subfield[@code = 'e'] | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g']">
+                    <rdamd:P30109>
+                        <xsl:call-template name="F260-xx-efg-notISBD"/>
+                    </rdamd:P30109>
+                    <xsl:if test="marc:subfield[@code = '3']">
+                        <rdamd:P30137>
+                            <xsl:text>Manufacture statement </xsl:text>
+                            <xsl:call-template name="F260-xx-abc"/>
+                            <xsl:text> applies to {marc:subfield[@code = '3']}</xsl:text>
+                        </rdamd:P30137>
+                    </xsl:if>
+                </xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
+        
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <xsl:call-template name="F260-xx-a"/>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'b']">
+            <xsl:call-template name="F260-xx-b"/>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'c']">
+            <xsl:call-template name="F260-xx-c"/>
+        </xsl:for-each>
+        
+        <xsl:for-each select="marc:subfield[@code = 'd']">
+            <rdamd:P30066>
+                <xsl:value-of select="."/>
+            </rdamd:P30066>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'e']">
+            <xsl:call-template name="F260-xx-e"/>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'f']">
+            <xsl:call-template name="F260-xx-f"/>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'g']">
+            <xsl:call-template name="F260-xx-g"/>
+        </xsl:for-each>
+    </xsl:template>
+    
     <!-- template immediately below, MARC 264:
          all values cocatenated go into RDA "statements";
          if there's isbd punctuation, subfield are not output;

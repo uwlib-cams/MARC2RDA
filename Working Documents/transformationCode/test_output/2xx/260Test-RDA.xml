@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test1wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/260-test1exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>260-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test1exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/260-test1man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/260-test1wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>260-test1exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test1man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/260-test1exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F260 ## $a New York : $b Bantam Books, $c 2000.</fake:marcfield>
+      <rdamd:P30111>New York : Bantam Books, 2000.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>New York</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Bantam Books</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>2000</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test2wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/260-test2exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>260-test2wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test2exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/260-test2man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/260-test2wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>260-test2exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test2man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/260-test2exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F260 ## $a [Solon, Ohio] : $b Playaway Digital Audio : $b [Manufactured and distributed by] Findaway World, LLC, $c [2010], c2008.</fake:marcfield>
+      <rdamd:P30111>[Solon, Ohio] : Playaway Digital Audio : [Manufactured and distributed by] Findaway World, LLC, [2010], c2008.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Solon, Ohio</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Playaway Digital Audio</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30173>Manufactured and distributed by Findaway World, LLC</rdamd:P30173><!--rdamd:P30173 = has name of distributor-->
+      <rdamd:P30008>2010</rdamd:P30008><!--rdamd:P30008 = has date of distribution-->
+      <rdamd:P30280>c2008</rdamd:P30280><!--rdamd:P30280 = has manifestation copyright statement-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test3wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/260-test3exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>260-test3wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test3exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/260-test3man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/260-test3wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>260-test3exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test3man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/260-test3exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F260 ## $a [New York : $b New York Post, $c 2004?] $e ([Brussels, Belgium] : $f Paperview)</fake:marcfield>
+      <rdamd:P30111>[New York : New York Post, 2004?]</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30109>([Brussels, Belgium] : Paperview)</rdamd:P30109><!--rdamd:P30109 = has manufacture statement-->
+      <rdamd:P30088>New York</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>New York Post</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>2004</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamd:P30087>Brussels, Belgium</rdamd:P30087><!--rdamd:P30087 = has place of manufacture-->
+      <rdamd:P30175>Paperview</rdamd:P30175><!--rdamd:P30175 = has name of manufacturer-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test4wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/260-test4exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>260-test4wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test4exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/260-test4man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/260-test4wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>260-test4exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test4man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/260-test4exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F260 ## $a New York : $b Simon &amp; Schuster, $c c2001.</fake:marcfield>
+      <rdamd:P30111>$a New York :$b Simon &amp; Schuster,$c c2001.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>New York</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Simon &amp; Schuster</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30280>c2001</rdamd:P30280><!--rdamd:P30280 = has manifestation copyright statement-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test5wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/260-test5exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>260-test5wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test5exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/260-test5man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/260-test5wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>260-test5exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test5man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/260-test5exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F260 ## $a London : $b Dent ; $a New York : $b Dutton, $c 1963.</fake:marcfield>
+      <rdamd:P30111>London : Dent ; New York : Dutton, 1963.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>London</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30088>New York</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Dent</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30176>Dutton</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>1963</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test5wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/260-test5exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>260-test5wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test5exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/260-test5man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/260-test5wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>260-test5exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test5man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/260-test5exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F260 ## $a Paris : $b Impr. Vincent, $c 1798 $a [i.e. Bruxelles : $b Moens, $c 1883]</fake:marcfield>
+      <rdamd:P30111>Paris : Impr. Vincent, 1798 [i.e. Bruxelles : Moens, 1883]</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Paris</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30088>i.e. Bruxelles</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Impr. Vincent</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30176>Moens</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>1798</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamd:P30011>1883</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test6wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/260-test6exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>260-test6wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test6exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/260-test6man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/260-test6wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>260-test6exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test6man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/260-test6exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F260 ## $a [Waterloo, Ont.] : $b Wilfrid Laurier University Press, $c ©2010 $e (Saint-Lazare, Quebec : $f Canadian Electronic Library, $g 2010)</fake:marcfield>
+      <rdamd:P30111>[Waterloo, Ont.] : Wilfrid Laurier University Press, ©2010</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30109>(Saint-Lazare, Quebec : Canadian Electronic Library, 2010)</rdamd:P30109><!--rdamd:P30109 = has manufacture statement-->
+      <rdamd:P30088>Waterloo, Ont.</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Wilfrid Laurier University Press</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30280>©2010</rdamd:P30280><!--rdamd:P30280 = has manifestation copyright statement-->
+      <rdamd:P30087>Saint-Lazare, Quebec</rdamd:P30087><!--rdamd:P30087 = has place of manufacture-->
+      <rdamd:P30175>Canadian Electronic Library</rdamd:P30175><!--rdamd:P30175 = has name of manufacturer-->
+      <rdamd:P30010>2010</rdamd:P30010><!--rdamd:P30010 = has date of manufacture-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test7wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/260-test7exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>260-test7wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test7exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/260-test7man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/260-test7wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>260-test7exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test7man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/260-test7exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F260 ## $a Toronto [Ont.] : $b University of Toronto Press, $c ©2012 $e (Ottawa, Ontario : $f Canadian Electronic Library, $g 2012)</fake:marcfield>
+      <rdamd:P30111>Toronto [Ont.] : University of Toronto Press, ©2012</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30109>(Ottawa, Ontario : Canadian Electronic Library, 2012)</rdamd:P30109><!--rdamd:P30109 = has manufacture statement-->
+      <rdamd:P30088>Toronto Ont.</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>University of Toronto Press</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30280>©2012</rdamd:P30280><!--rdamd:P30280 = has manifestation copyright statement-->
+      <rdamd:P30087>Ottawa, Ontario</rdamd:P30087><!--rdamd:P30087 = has place of manufacture-->
+      <rdamd:P30175>Canadian Electronic Library</rdamd:P30175><!--rdamd:P30175 = has name of manufacturer-->
+      <rdamd:P30010>2012</rdamd:P30010><!--rdamd:P30010 = has date of manufacture-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test8wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/260-test8exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>260-test8wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test8exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/260-test8man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/260-test8wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>260-test8exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test8man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/260-test8exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F260 ## $6 880-03 $a Sŏul-si : $b Minŭmsa, $c 2004 $g (2005 printing)</fake:marcfield>
+      <rdamd:P30111>Sŏul-si : Minŭmsa, 2004</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30109>(2005 printing)</rdamd:P30109><!--rdamd:P30109 = has manufacture statement-->
+      <rdamd:P30088>Sŏul-si</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Minŭmsa</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>2004</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamd:P30010>2005</rdamd:P30010><!--rdamd:P30010 = has date of manufacture-->
+      <fake:marcfield>F880 ## $6 260-03/$1 $a 서울시 : $b 민음사, $c 2004 $g (2005 printing)</fake:marcfield>
+      <rdamd:P30111>서울시 : 민음사, 2004</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30109>(2005 printing)</rdamd:P30109><!--rdamd:P30109 = has manufacture statement-->
+      <rdamd:P30088>서울시</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>민음사</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>2004</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamd:P30010>2005</rdamd:P30010><!--rdamd:P30010 = has date of manufacture-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test9wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/260-test9exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>260-test9wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test9exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/260-test9man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/260-test9wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>260-test9exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test9man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/260-test9exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F260 ## $a Stockholm : $b Stockholm University : $b Almqvist &amp; Wiksell International [distributor], $c ©2007.</fake:marcfield>
+      <rdamd:P30111>Stockholm : Stockholm University : Almqvist &amp; Wiksell International [distributor], ©2007.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Stockholm</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Stockholm University</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30173>Almqvist &amp; Wiksell International distributor</rdamd:P30173><!--rdamd:P30173 = has name of distributor-->
+      <rdamd:P30008>2007</rdamd:P30008><!--rdamd:P30008 = has date of distribution-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test10wor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/260-test10exp"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10002>260-test10wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test10exp">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/260-test10man"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/260-test10wor"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20002>260-test10exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test10man">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/260-test10exp"/><!--rdamo:P30139 = has expression manifested-->
+      <fake:marcfield>F260 ## $a Bloomington, Ind. : $b Indiana University Press ; $a Chesham : $b Combined Academic [distributor], $c 2005.</fake:marcfield>
+      <rdamd:P30111>Bloomington, Ind. : Indiana University Press ; Chesham : Combined Academic [distributor], 2005.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Bloomington, Ind.</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30085>Chesham</rdamd:P30085><!--rdamd:P30085 = has place of distribution-->
+      <rdamd:P30176>Indiana University Press</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30173>Combined Academic distributor</rdamd:P30173><!--rdamd:P30173 = has name of distributor-->
+      <rdamd:P30008>2005</rdamd:P30008><!--rdamd:P30008 = has date of distribution-->
+   </rdf:Description>
+</rdf:RDF>
