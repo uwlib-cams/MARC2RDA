@@ -120,11 +120,13 @@
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">260-test10</marc:controlfield>
         <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="3">test 3</marc:subfield>
             <marc:subfield code="a">Bloomington, Ind. :</marc:subfield>
             <marc:subfield code="b">Indiana University Press ;</marc:subfield>
             <marc:subfield code="a">Chesham :</marc:subfield>
             <marc:subfield code="b">Combined Academic [distributor],</marc:subfield>
             <marc:subfield code="c">2005.</marc:subfield>
+            <marc:subfield code="d">test d</marc:subfield>
         </marc:datafield>
     </marc:record>
 </marc:collection>

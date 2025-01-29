@@ -241,12 +241,14 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/260-test10man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/260-test10exp"/><!--rdamo:P30139 = has expression manifested-->
-      <fake:marcfield>F260 ## $a Bloomington, Ind. : $b Indiana University Press ; $a Chesham : $b Combined Academic [distributor], $c 2005.</fake:marcfield>
+      <fake:marcfield>F260 ## $3 test 3 $a Bloomington, Ind. : $b Indiana University Press ; $a Chesham : $b Combined Academic [distributor], $c 2005. $d test d</fake:marcfield>
       <rdamd:P30111>Bloomington, Ind. : Indiana University Press ; Chesham : Combined Academic [distributor], 2005.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30137>Publication statement Bloomington, Ind. : Indiana University Press ; Chesham : Combined Academic [distributor], 2005. applies to test 3</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30088>Bloomington, Ind.</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
       <rdamd:P30085>Chesham</rdamd:P30085><!--rdamd:P30085 = has place of distribution-->
       <rdamd:P30176>Indiana University Press</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
       <rdamd:P30173>Combined Academic distributor</rdamd:P30173><!--rdamd:P30173 = has name of distributor-->
       <rdamd:P30008>2005</rdamd:P30008><!--rdamd:P30008 = has date of distribution-->
+      <rdamd:P30066>test d</rdamd:P30066><!--rdamd:P30066 = has plate number for notated music-->
    </rdf:Description>
 </rdf:RDF>
