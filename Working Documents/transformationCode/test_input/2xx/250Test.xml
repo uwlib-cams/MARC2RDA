@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+   
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">250-test00</marc:controlfield>
+        <marc:datafield tag="250" ind1=" " ind2=" ">
+            <marc:subfield code="a">1st Harper Perennial ed.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="250" ind1=" " ind2=" ">
+            <marc:subfield code="a">New ed. /</marc:subfield>
+            <marc:subfield code="b">with a new foreword by Stephen Greenblatt.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="250" ind1=" " ind2=" ">
+            <marc:subfield code="6">880-02</marc:subfield>
+            <marc:subfield code="a">Partitura =</marc:subfield>
+            <marc:subfield code="b">Score.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">250-02/(N</marc:subfield>
+            <marc:subfield code="a">Партитура =</marc:subfield>
+            <marc:subfield code="b">Score.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="250" ind1=" " ind2=" ">
+            <marc:subfield code="a">Bővített és átdolgozott kiadás =</marc:subfield>
+            <marc:subfield code="b">Extended and revised edition = Erweiterte und revidierte Ausgabe.</marc:subfield>
+        </marc:datafield>
+        <!-- test 3, made up example -->
+        <marc:datafield tag="250" ind1=" " ind2=" ">
+            <marc:subfield code="3">Main content</marc:subfield>
+            <marc:subfield code="a">New ed. /</marc:subfield>
+            <marc:subfield code="b">edited by John Jowett.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>
+

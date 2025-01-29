@@ -203,6 +203,69 @@
         </xsl:for-each>
     </xsl:template>
     
+    <!-- 250 - Edition statement -->
+    <xsl:template match="marc:datafield[@tag = '250'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '250']" 
+        mode="man origMan" expand-text="yes">
+        <xsl:param name="type"/>
+        <xsl:call-template name="getmarc"/>
+        <xsl:if test="$type != 'reproduction'">
+            <xsl:variable name="isISBD">
+                <xsl:choose>
+                    <xsl:when test="(substring(preceding-sibling::marc:leader, 19, 1) = 'i' or substring(preceding-sibling::marc:leader, 19, 1) = 'a')">
+                        <xsl:value-of select="true()"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="false()"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:variable>
+            <rdamd:P30107>
+                <xsl:if test="marc:subfield[@code = '3']">
+                    <xsl:text>Applies to: {marc:subfield[@code = '3']}. </xsl:text>
+                </xsl:if>
+                <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']"/>
+            </rdamd:P30107>
+            <xsl:if test="$isISBD = true()">
+                <xsl:variable name="isbdString">
+                    <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']" separator=" "/>
+                </xsl:variable>
+                <!-- separate out parallel statements -->
+                <xsl:for-each select="tokenize($isbdString, ' = ')">
+                    <!-- only process nonempty strings -->
+                    <xsl:if test="exists(.)">
+                        <xsl:choose>
+                            <!-- separate out statement of responsibility -->
+                            <xsl:when test="contains(., ' / ')">
+                                <xsl:for-each select="tokenize(., ' / ')">
+                                    <xsl:choose>
+                                        <!-- first string is always designation of edition -->
+                                        <xsl:when test="position() = 1">
+                                            <rdamd:P30133>
+                                                <xsl:value-of select="."/>
+                                            </rdamd:P30133>
+                                        </xsl:when>
+                                        <!-- following strings are statements of responsibility -->
+                                        <xsl:otherwise>
+                                            <rdamd:P30121>
+                                                <xsl:value-of select="."/>
+                                            </rdamd:P30121>
+                                        </xsl:otherwise>
+                                    </xsl:choose>
+                                </xsl:for-each>
+                            </xsl:when>
+                            <!-- no statement of responsibility -->
+                            <xsl:otherwise>
+                                <rdamd:P30133>
+                                    <xsl:value-of select="."/>
+                                </rdamd:P30133>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:if>
+        </xsl:if>
+    </xsl:template>
+    
     <!-- 255 - Cartographic Mathematical Data -->
     <!-- Work -->
     <xsl:template match="marc:datafield[@tag = '255'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '255']"
