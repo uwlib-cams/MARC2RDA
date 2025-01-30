@@ -272,10 +272,10 @@
     </xsl:function>
     
     <!-- lookup for classification scheme datatypes -->
-    <xsl:variable name="lookupDatatypesDoc" select="document('lookup/classSchemeDatatypes.xml')"/>
+    <xsl:variable name="lookupDatatypesDoc" select="document('lookup/lcSchemeDatatypes.xml')"/>
     <xsl:key name="normCode" match="row" use="LoC_and_MARC_vocabularies_ID"/>
     
-    <xsl:function name="uwf:classSchemeDatatype" expand-text="true">
+    <xsl:function name="uwf:lcSchemeDatatype" expand-text="true">
         <xsl:param name="code"/>
         <xsl:if test="$lookupDatatypesDoc/root/row/key('normCode', concat('classSchemes/', lower-case(replace($code, '\.$', ''))))">
             <xsl:attribute name="rdf:datatype">
@@ -301,7 +301,7 @@
         </xsl:if>
         <xsl:if test="$notation">
             <skos:notation>
-                <xsl:copy-of select="uwf:classSchemeDatatype($scheme)"/>
+                <xsl:copy-of select="uwf:lcSchemeDatatype($scheme)"/>
                 <xsl:value-of select="$notation"/>
             </skos:notation>
         </xsl:if>
@@ -331,7 +331,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <xsl:if test="$notation">
             <skos:notation>
-                <xsl:copy-of select="uwf:classSchemeDatatype($scheme)"/>
+                <xsl:copy-of select="uwf:lcSchemeDatatype($scheme)"/>
                 <xsl:value-of select="$notation"/>
             </skos:notation>
         </xsl:if>
