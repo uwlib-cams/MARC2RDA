@@ -732,16 +732,20 @@
     <xsl:function name="uwf:mainWorkAccessPoint">
         <xsl:param name="record"/>
         <xsl:choose>
+            <!-- 130 -->
             <xsl:when test="$record/marc:datafield[@tag = '130']">
                 <xsl:variable name="ap">
                     <xsl:value-of select="$record/marc:datafield[@tag = '130']/marc:subfield[@code = 'a']
                         | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'd']
                         | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'k'] 
                         | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'n'] 
-                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'p']"/>
+                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'p']
+                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 't']
+                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'g']"/>
                 </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
             </xsl:when>
+            <!-- 100 + 240 -->
             <xsl:when test="$record/marc:datafield[@tag = '100'] and $record/marc:datafield[@tag = '240']">
                 <xsl:variable name="ap">
                     <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '100'])"/>
@@ -750,10 +754,13 @@
                         | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'd']
                         | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'k'] 
                         | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'n'] 
-                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'p']"/>
+                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'p']
+                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 't']
+                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'g']"/>
                 </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
             </xsl:when>
+            <!-- 110 + 240 -->
             <xsl:when test="$record/marc:datafield[@tag = '110'] and $record/marc:datafield[@tag = '240']">
                 <xsl:variable name="ap">
                     <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '110'])"/>
@@ -762,10 +769,13 @@
                         | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'd']
                         | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'k'] 
                         | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'n'] 
-                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'p']"/>
+                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'p']
+                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 't']
+                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'g']"/>
                 </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
             </xsl:when>
+            <!-- 111 + 240 -->
             <xsl:when test="$record/marc:datafield[@tag = '111'] and $record/marc:datafield[@tag = '240']">
                 <xsl:variable name="ap">
                     <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '111'])"/>
@@ -774,10 +784,13 @@
                         | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'd']
                         | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'k'] 
                         | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'n'] 
-                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'p']"/>
+                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'p']
+                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 't']
+                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'g']"/>
                 </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
             </xsl:when>
+            <!-- 100 + 245 -->
             <xsl:when test="$record/marc:datafield[@tag = '100'] and $record/marc:datafield[@tag = '245']">
                 <xsl:variable name="ap">
                     <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '100'])"/>
@@ -785,10 +798,13 @@
                     <xsl:value-of select="$record/marc:datafield[@tag = '245']/marc:subfield[@code = 'a'] 
                         | $record/marc:datafield[@tag = '245']/marc:subfield[@code = 'n'] 
                         | $record/marc:datafield[@tag = '245']/marc:subfield[@code = 'p']
-                        | $record/marc:datafield[@tag = '245']/marc:subfield[@code = 's']"/>
+                        | $record/marc:datafield[@tag = '245']/marc:subfield[@code = 's']
+                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 't']
+                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'g']"/>
                 </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
             </xsl:when>
+            <!-- 110 + 245 -->
             <xsl:when test="$record/marc:datafield[@tag = '110'] and $record/marc:datafield[@tag = '245']">
                 <xsl:variable name="ap">
                     <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '110'])"/>
@@ -800,6 +816,7 @@
                 </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
             </xsl:when>
+            <!-- 111 + 245 -->
             <xsl:when test="$record/marc:datafield[@tag = '111'] and$record/marc:datafield[@tag = '245']">
                 <xsl:variable name="ap">
                     <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '111'])"/>
@@ -811,6 +828,7 @@
                 </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
             </xsl:when>
+            <!-- just 245 -->
             <xsl:when test="$record/marc:datafield[@tag = '245'] 
                 and not($record/marc:datafield[@tag = '100'] or $record/marc:datafield[@tag = '110'] or $record/marc:datafield[@tag = '111'])">
                 <xsl:variable name="ap">
@@ -830,13 +848,16 @@
         <xsl:variable name="langCode" select="$record/marc:controlfield[@tag = '008'][1]/substring(text(), 36, 3)"/>
         <xsl:variable name="lang" select="uwf:lcLangCodeToLabel($langCode)"/>
         <xsl:choose>
+            <!-- 130 -->
             <xsl:when test="$record/marc:datafield[@tag = '130']">
                 <xsl:variable name="workSubfields">
                     <xsl:value-of select="$record/marc:datafield[@tag = '130']/marc:subfield[@code = 'a']
                         | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'd']
                         | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'k'] 
                         | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'n'] 
-                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'p']"/>
+                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'p']
+                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 't']
+                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'g']"/>
                 </xsl:variable>
                 <xsl:variable name="expSubfields">
                     <xsl:choose>
@@ -846,16 +867,14 @@
                             or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'm']
                             or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'o']
                             or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'r']
-                            or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 's']
-                            or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 't']">
+                            or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 's']">
                             <xsl:value-of select="$record/marc:datafield[@tag = '130']/marc:subfield[@code = 'f']
                                 | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'g']
                                 | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'l']
                                 | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'm']
                                 | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'o']
                                 | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'r']
-                                | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 's']
-                                | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 't']"/>
+                                | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 's']"/>
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:text>. {$lang}</xsl:text>
@@ -864,16 +883,118 @@
                 </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($workSubfields)||uwf:stripEndPunctuation($expSubfields)"/>
             </xsl:when>
-            <xsl:when test="$record/marc:datafield[@tag = '245'] 
-                and not($record/marc:datafield[@tag = '100'] or $record/marc:datafield[@tag = '110'] or $record/marc:datafield[@tag = '111'])">
+            <!-- 100 + 240 -->
+            <xsl:when test="$record/marc:datafield[@tag = '100'] and $record/marc:datafield[@tag = '240']">
                 <xsl:variable name="workSubfields">
-                    <xsl:value-of select="$record/marc:datafield[@tag = '245']/marc:subfield[@code = 'a']
-                        | $record/marc:datafield[@tag = '245']/marc:subfield[@code = 'n'] 
-                        | $record/marc:datafield[@tag = '245']/marc:subfield[@code = 'p']
-                        | $record/marc:datafield[@tag = '245']/marc:subfield[@code = 's']"/>
+                    <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '100'])"/>
+                    <xsl:text>. </xsl:text>
+                    <xsl:value-of select="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'a']
+                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'd']
+                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'k'] 
+                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'n'] 
+                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'p']
+                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 't']
+                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'g']"/>
                 </xsl:variable>
-                <xsl:value-of select="uwf:stripEndPunctuation($workSubfields)||'. '||$lang"/>
+                <xsl:variable name="expSubfields">
+                    <xsl:choose>
+                        <xsl:when test="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
+                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'g']
+                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']
+                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'm']
+                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'o']
+                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'r']
+                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 's']">
+                            <xsl:value-of select="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
+                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'g']
+                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']
+                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'm']
+                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'o']
+                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'r']
+                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 's']"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:text>. {$lang}</xsl:text>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:variable>
+                <xsl:value-of select="uwf:stripEndPunctuation($workSubfields)||uwf:stripEndPunctuation($expSubfields)"/>
             </xsl:when>
+            <!-- 110 + 240 -->
+            <xsl:when test="$record/marc:datafield[@tag = '110'] and $record/marc:datafield[@tag = '240']">
+                <xsl:variable name="workSubfields">
+                    <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '110'])"/>
+                    <xsl:text>. </xsl:text>
+                    <xsl:value-of select="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'a']
+                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'd']
+                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'k'] 
+                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'n'] 
+                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'p']
+                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 't']
+                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'g']"/>
+                </xsl:variable>
+                <xsl:variable name="expSubfields">
+                    <xsl:choose>
+                        <xsl:when test="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
+                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'g']
+                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']
+                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'm']
+                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'o']
+                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'r']
+                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 's']">
+                            <xsl:value-of select="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
+                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'g']
+                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']
+                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'm']
+                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'o']
+                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'r']
+                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 's']"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:text>. {$lang}</xsl:text>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:variable>
+                <xsl:value-of select="uwf:stripEndPunctuation($workSubfields)||uwf:stripEndPunctuation($expSubfields)"/>
+            </xsl:when>
+            <!-- 111 + 240 -->
+            <xsl:when test="$record/marc:datafield[@tag = '111'] and $record/marc:datafield[@tag = '240']">
+                <xsl:variable name="workSubfields">
+                    <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '111'])"/>
+                    <xsl:text>. </xsl:text>
+                    <xsl:value-of select="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'a']
+                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'd']
+                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'k'] 
+                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'n'] 
+                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'p']
+                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 't']
+                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'g']"/>
+                </xsl:variable>
+                <xsl:variable name="expSubfields">
+                    <xsl:choose>
+                        <xsl:when test="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
+                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'g']
+                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']
+                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'm']
+                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'o']
+                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'r']
+                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 's']">
+                            <xsl:value-of select="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
+                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'g']
+                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']
+                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'm']
+                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'o']
+                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'r']
+                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 's']"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:text>. {$lang}</xsl:text>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:variable>
+                <xsl:value-of select="uwf:stripEndPunctuation($workSubfields)||uwf:stripEndPunctuation($expSubfields)"/>
+            </xsl:when>
+            <!-- 100 + 245 -->
             <xsl:when test="$record/marc:datafield[@tag = '100'] and $record/marc:datafield[@tag = '245']">
                 <xsl:variable name="workSubfields">
                     <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '100'])"/>
@@ -885,6 +1006,7 @@
                 </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($workSubfields)||'. '||$lang"/>
             </xsl:when>
+            <!-- 110 + 245 -->
             <xsl:when test="$record/marc:datafield[@tag = '110'] and $record/marc:datafield[@tag = '245']">
                 <xsl:variable name="workSubfields">
                     <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '110'])"/>
@@ -896,6 +1018,7 @@
                 </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($workSubfields)||'. '||$lang"/>
             </xsl:when>
+            <!-- 111 + 245 -->
             <xsl:when test="$record/marc:datafield[@tag = '111'] and$record/marc:datafield[@tag = '245']">
                 <xsl:variable name="workSubfields">
                     <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '111'])"/>
@@ -907,107 +1030,16 @@
                 </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($workSubfields)||'. '||$lang"/>
             </xsl:when>
-            <xsl:when test="$record/marc:datafield[@tag = '100'] and $record/marc:datafield[@tag = '240']">
+            <!-- only 245 -->
+            <xsl:when test="$record/marc:datafield[@tag = '245'] 
+                and not($record/marc:datafield[@tag = '100'] or $record/marc:datafield[@tag = '110'] or $record/marc:datafield[@tag = '111'])">
                 <xsl:variable name="workSubfields">
-                    <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '100'])"/>
-                    <xsl:text>. </xsl:text>
-                    <xsl:value-of select="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'a']
-                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'd']
-                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'k'] 
-                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'n'] 
-                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'p']"/>
+                    <xsl:value-of select="$record/marc:datafield[@tag = '245']/marc:subfield[@code = 'a']
+                        | $record/marc:datafield[@tag = '245']/marc:subfield[@code = 'n'] 
+                        | $record/marc:datafield[@tag = '245']/marc:subfield[@code = 'p']
+                        | $record/marc:datafield[@tag = '245']/marc:subfield[@code = 's']"/>
                 </xsl:variable>
-                <xsl:variable name="expSubfields">
-                    <xsl:choose>
-                        <xsl:when test="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
-                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'g']
-                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']
-                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'm']
-                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'o']
-                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'r']
-                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 's']">
-                            <xsl:value-of select="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
-                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'g']
-                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']
-                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'm']
-                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'o']
-                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'r']
-                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 's']"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:text>. {$lang}</xsl:text>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:variable>
-                <xsl:value-of select="uwf:stripEndPunctuation($workSubfields)||uwf:stripEndPunctuation($expSubfields)"/>
-            </xsl:when>
-            <xsl:when test="$record/marc:datafield[@tag = '110'] and $record/marc:datafield[@tag = '240']">
-                <xsl:variable name="workSubfields">
-                    <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '110'])"/>
-                    <xsl:text>. </xsl:text>
-                    <xsl:value-of select="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'a']
-                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'd']
-                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'k'] 
-                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'n'] 
-                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'p']"/>
-                </xsl:variable>
-                <xsl:variable name="expSubfields">
-                    <xsl:choose>
-                        <xsl:when test="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
-                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'g']
-                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']
-                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'm']
-                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'o']
-                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'r']
-                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 's']">
-                            <xsl:value-of select="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
-                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'g']
-                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']
-                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'm']
-                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'o']
-                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'r']
-                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 's']"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:text>. {$lang}</xsl:text>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:variable>
-                <xsl:value-of select="uwf:stripEndPunctuation($workSubfields)||uwf:stripEndPunctuation($expSubfields)"/>
-            </xsl:when>
-            <xsl:when test="$record/marc:datafield[@tag = '111'] and $record/marc:datafield[@tag = '240']">
-                <xsl:variable name="workSubfields">
-                    <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '111'])"/>
-                    <xsl:text>. </xsl:text>
-                    <xsl:value-of select="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'a']
-                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'd']
-                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'k'] 
-                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'n'] 
-                        | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'p']"/>
-                </xsl:variable>
-                <xsl:variable name="expSubfields">
-                    <xsl:choose>
-                        <xsl:when test="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
-                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'g']
-                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']
-                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'm']
-                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'o']
-                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'r']
-                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 's']">
-                            <xsl:value-of select="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
-                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'g']
-                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']
-                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'm']
-                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'o']
-                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'r']
-                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 's']"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:text>. {$lang}</xsl:text>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:variable>
-                <xsl:value-of select="uwf:stripEndPunctuation($workSubfields)||uwf:stripEndPunctuation($expSubfields)"/>
+                <xsl:value-of select="uwf:stripEndPunctuation($workSubfields)||'. '||$lang"/>
             </xsl:when>
         </xsl:choose>
     </xsl:function>
