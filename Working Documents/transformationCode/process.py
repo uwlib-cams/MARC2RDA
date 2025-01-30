@@ -14,6 +14,17 @@ def format_rdflib(abs_path):
 
     g.serialize(destination=abs_path, format="xml", encoding="utf8")
 
+def load_lookup_files():
+
+    os_command = f"""java -cp {saxon_dir}/saxon-he-{saxon_version}.jar 
+    net.sf.saxon.Transform 
+    -s:"m2r-loadLookupFiles.xsl"
+    -xsl:"m2r-loadLookupFiles.xsl"
+    """
+
+    os_command = os_command.replace('\n', '')
+    os.system(os_command)
+
 # calls format_rdflib and then runs rdf2datacite.xsl on formatted file
 def process_file(file_path, base_IRI):
     # file path parsing assumes main.py is being run in top-level uwlswd 
@@ -34,7 +45,7 @@ Transforming MARC from {file_path} to RDA/RDF/XML
     os_command = f"""java -cp {saxon_dir}/saxon-he-{saxon_version}.jar 
     net.sf.saxon.Transform 
     -s:"{abspath}"
-    -xsl:"Working Documents/transformationCode/m2r.xsl"
+    -xsl:"m2r.xsl"
     -o:"{output_path}"
     BASE="{base_IRI}"
     """
@@ -68,6 +79,13 @@ For example: 11.1, 11.4, etc.
 > """)
 saxon_version = input(saxon_version_prompt)
 
+def prompt_user_loadLookupFiles():
+    lookup_prompt = dedent("""Would you like to load lookup files prior to running the MARC2RDA Transform?
+    If you have not run the transform before, you must enter y.  
+    y or n?
+    > """)
+    return(input(lookup_prompt))
+
 def prompt_user_base_IRI():
     IRI_prompt = dedent("""Enter the base IRI you would like to use for IRIs minted by the transform. 
     The IRI must end in / or IRIs will be malformed. 
@@ -91,9 +109,18 @@ def prompt_user_input():
         print(dedent("\nError: file or folder could not be found. Please re-enter file or folder name or press CTRL+C to cancel.\n"))
         return prompt_user_input()
     
+loadlookup_yn = prompt_user_loadLookupFiles()
+
+if loadlookup_yn == 'y':
+    print("Loading lookup files. Please wait.")
+    load_lookup_files()
+    print("Lookup files retrieved.") 
+
 # process file path for separate variables 
 file_path = prompt_user_input()
+
 if os.path.isfile(file_path):
+
     base_IRI = prompt_user_base_IRI()
     if file_path.endswith('.xml'):
         process_file(file_path, base_IRI)
