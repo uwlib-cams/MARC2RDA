@@ -277,9 +277,10 @@
     
     <xsl:function name="uwf:lcSchemeDatatype" expand-text="true">
         <xsl:param name="code"/>
-        <xsl:if test="$lookupDatatypesDoc/root/row/key('normCode', concat('classSchemes/', lower-case(replace($code, '\.$', ''))))">
+        <xsl:variable name="datatype" select="$lookupDatatypesDoc/root/row[LoC_and_MARC_vocabularies_ID[ends-with(text(), '/'||$code)]]/item"/>
+        <xsl:if test="$datatype">
             <xsl:attribute name="rdf:datatype">
-                <xsl:value-of select="$lookupDatatypesDoc/root/row/key('normCode', concat('classSchemes/', lower-case($code)))/item"/>  
+                <xsl:value-of select="$datatype"/>  
             </xsl:attribute>
         </xsl:if>
     </xsl:function>
