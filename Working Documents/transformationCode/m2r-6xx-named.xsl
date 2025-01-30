@@ -220,24 +220,4 @@
         </xsl:choose>
     </xsl:template>
     
-    <!--<!-\- This template handles subfield x outputting "has subject"
-    and is called when the source is "fast"-\->
-    <xsl:template name="F6XX-xx-x">
-        <xsl:param name="prefLabel"/>
-        <rdaw:P10256 rdf:resource="{uwf:subjectIRI(., 'fast', $prefLabel)}"/>
-    </xsl:template>
-    
-    <!-\- handles subfield $y as timespan
-        Outputs "has subject timespan" as datatype or object property -\->
-    <xsl:template name="F6XX-xx-y">
-        <xsl:param name="prefLabel"/>
-        <rdaw:P10322 rdf:resource="{uwf:yTimespanIRI(.., ., $prefLabel)}"/>
-    </xsl:template>
-    
-    <!-\- handles subfield $z as place
-        Outputs "has subject place" as datatype or object property -\->
-    <xsl:template name="F6XX-xx-z">
-        <xsl:param name="prefLabel"/>
-        <rdaw:P10321 rdf:resource="{uwf:zPlaceIRI(.., ., $prefLabel)}"/>
-    </xsl:template>-->
 </xsl:stylesheet>
