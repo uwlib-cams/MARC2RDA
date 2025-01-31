@@ -36,7 +36,7 @@
         <xsl:variable name="label">
             <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
                 | marc:subfield[@code = 'd'] | marc:subfield[@code = 'j'] | marc:subfield[@code = 'q'] | marc:subfield[@code = 'u']
-                | marc:subfield[@code = 't'] | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h']
+                | marc:subfield[@code = 't'] | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g']
                 | marc:subfield[@code = 'k'] | marc:subfield[@code = 'l'] | marc:subfield[@code = 'm'] | marc:subfield[@code = 'n']
                 | marc:subfield[@code = 'o'] | marc:subfield[@code = 'p'] | marc:subfield[@code = 'r'] | marc:subfield[@code = 's']"/>
             <xsl:text>--</xsl:text>
@@ -48,9 +48,9 @@
         <xsl:variable name="label">
             <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
                 | marc:subfield[@code = 'd'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'u']
-                | marc:subfield[@code = 't'] | marc:subfield[@code = 'f'] | marc:subfield[@code = 'h'] | marc:subfield[@code = 'k']
+                | marc:subfield[@code = 't'] | marc:subfield[@code = 'f'] | marc:subfield[@code = 'k']
                 | marc:subfield[@code = 'l'] | marc:subfield[@code = 'm'] | marc:subfield[@code = 'n'] | marc:subfield[@code = 'o']
-                | marc:subfield[@code = 'p'] | marc:subfield[@code = 'r'] | marc:subfield[@code = 's'] | marc:subfield[@code = 'v']"/>   
+                | marc:subfield[@code = 'p'] | marc:subfield[@code = 'r'] | marc:subfield[@code = 's']"/>   
             <xsl:text>--</xsl:text>
             <xsl:value-of select="marc:subfield[@code = 'v'] | marc:subfield[@code = 'x'] | marc:subfield[@code = 'y'] | marc:subfield[@code = 'z']" separator="--"/>
         </xsl:variable>
@@ -60,7 +60,7 @@
         <xsl:variable name="label">
            <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd'] 
             | marc:subfield[@code = 'e'] | marc:subfield[@code = 'u'] | marc:subfield[@code = 't'] 
-            | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h'] 
+            | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g'] 
             | marc:subfield[@code = 'k'] | marc:subfield[@code = 'l'] | marc:subfield[@code = 'n'] 
             | marc:subfield[@code = 'p'] | marc:subfield[@code = 'q'] | marc:subfield[@code = 's']"/> 
             <xsl:text>--</xsl:text>
@@ -72,7 +72,7 @@
     <xsl:template name="F630-label" expand-text="yes">
         <xsl:variable name="label">
             <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'f']
-            | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h'] | marc:subfield[@code = 'k'] | marc:subfield[@code = 'l']
+            | marc:subfield[@code = 'g'] | marc:subfield[@code = 'k'] | marc:subfield[@code = 'l']
             | marc:subfield[@code = 'm'] | marc:subfield[@code = 'n'] | marc:subfield[@code = 'o'] | marc:subfield[@code = 'p']
             | marc:subfield[@code = 'r'] | marc:subfield[@code = 's'] | marc:subfield[@code = 't']"/>
             <xsl:text>--</xsl:text>
