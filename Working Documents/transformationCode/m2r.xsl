@@ -164,12 +164,12 @@
                     
                     <!-- This code can be uncommented to add an expression access point to the expression description.
                     uwf:mainExpressionAccessPoint() is located in m2r-functions.xsl -->
-                    <!--<xsl:variable name="expressionAP" select="uwf:mainExpressionAccessPoint(.)"/>
+                    <xsl:variable name="expressionAP" select="uwf:mainExpressionAccessPoint(.)"/>
                     <xsl:if test="$expressionAP">
                         <rdaed:P20310>
                             <xsl:value-of select="$expressionAP"/>
                         </rdaed:P20310>
-                    </xsl:if>-->
+                    </xsl:if>
                     <rdaed:P20002>{concat(translate(marc:controlfield[@tag='001'], ' ', ''),'exp')}</rdaed:P20002>
                     <xsl:apply-templates select="*" mode="exp">
                         <xsl:with-param name="baseIRI" select="$baseIRI"/>
@@ -180,6 +180,16 @@
                 <rdf:Description rdf:about="{concat($baseIRI,'man')}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
                     <rdamo:P30139 rdf:resource="{concat($baseIRI,'exp')}"/>
+                    
+                    <!-- This code can be uncommented to add a manifestation access point to the manifestation description.
+                    uwf:mainManifestationAccessPoint() is located in m2r-functions.xsl -->
+                    <xsl:variable name="manifestationAP" select="uwf:mainManifestationAccessPoint(.)"/>
+                    <xsl:if test="$manifestationAP">
+                        <rdamd:P30276>
+                            <xsl:value-of select="$manifestationAP"/>
+                        </rdamd:P30276>
+                    </xsl:if>
+                    
                     <xsl:choose>
                         <xsl:when test="$isReproduction != ''">
                             <xsl:variable name="formofitem">
