@@ -33,15 +33,8 @@
     <xsl:import href="m2r-relators.xsl"/>
     <xsl:import href="m2r-iris.xsl"/>
     <xsl:import href="getmarc.xsl"/>
-    <!-- CP: commented out while it doesn't exist -->
-    <!-- CP: also, need to add this file to m2r.xsl -->
-<!--    <xsl:include href="m2r-8xx-named.xsl"/>-->
-    <!-- field level templates - wor, exp, man, ite -->
     <!-- Template: Main work to related work relationship -->
-    <!-- CP: add 880s -->
     <!-- 800, 810, 811 -->
-    
-    <!-- CP: added [marc:subfield[@code = 't']] to 880s -->
     <xsl:template match="marc:datafield[@tag = '800'][marc:subfield[@code = 't']] | marc:datafield[@tag = '810'][marc:subfield[@code = 't']]  | marc:datafield[@tag = '811'][marc:subfield[@code = 't']] 
         | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '800-00'][marc:subfield[@code = 't']]
         | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '810-00'][marc:subfield[@code = 't']]
@@ -53,7 +46,6 @@
     </xsl:template>    
     
     <!-- Template: Here is the related work -->
-    <!-- CP: was missing 810 and 811! No work description was being produced -->
     <xsl:template
         match="marc:datafield[@tag = '800'][marc:subfield[@code = 't']] | marc:datafield[@tag = '810'][marc:subfield[@code = 't']]  | marc:datafield[@tag = '811'][marc:subfield[@code = 't']] 
         | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '800-00'][marc:subfield[@code = 't']]
@@ -63,10 +55,8 @@
         mode="relWor" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:variable name="tagType" select="uwf:tagType(.)"/>
-        <!-- CP: add 800 to relWorkIRI function in m2r-iris -->
         <rdf:Description rdf:about="{uwf:relWorkIRI($baseIRI, .)}">    
             <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
-            <!-- CP: add check to determine whether we mint a nomen or not -->
             <xsl:choose>
                 <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'Work') = 'True'">
                     <rdawo:P10331 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'worNom')}"/>
@@ -88,7 +78,6 @@
                     </xsl:if>
                 </xsl:otherwise>
             </xsl:choose>
-            <!-- CP: was missing option for 810 and 811 - related corporate body of work -->
             <xsl:choose>
                 <xsl:when test="$tagType = '800'">
                     <xsl:choose>
@@ -127,7 +116,6 @@
             <xsl:call-template name="getmarc"/>
             <xsl:variable name="tagType" select="uwf:tagType(.)"/>
             <xsl:choose>
-                <!-- CP: tagType takes care of 880s -->
                 <xsl:when test="$tagType = '800'">
                     <xsl:choose>
                         <xsl:when test="@ind1 = '0' or @ind1 = '1' or @ind1 = '2'">
