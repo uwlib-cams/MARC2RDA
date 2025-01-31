@@ -30,7 +30,7 @@
     
     <!-- Concept labels -->
     <!-- these vary by field. Each field has a label template that outputs the label based on the present subfields -->
-    <!-- most subfields are concatenated and then combined with $x, $y, and $z values separated by two dashes -->
+    <!-- most subfields are concatenated and then combined with $v, $x, $y, and $z values separated by two dashes -->
     
     <xsl:template name="F600-label" expand-text="yes">
         <xsl:variable name="label">
