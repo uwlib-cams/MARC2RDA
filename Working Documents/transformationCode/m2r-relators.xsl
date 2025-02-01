@@ -128,6 +128,9 @@
             <xsl:when test="$field/@tag = '811' or ($field/@tag = '880' and starts-with($field/marc:subfield[@code = '6'], '811'))">
                 <xsl:value-of select="'811'"/>
             </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$field/@tag"/>
+            </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
     

@@ -237,15 +237,15 @@
     <xsl:function name="uwf:relWorkIRI">
         <xsl:param name="baseIRI"/>
         <xsl:param name="field"/>
-        <xsl:variable name="tag" select="uwf:tagType($field)"/>
+        <xsl:variable name="tagType" select="uwf:tagType($field)"/>
         <xsl:variable name="ap">
             <xsl:value-of select="uwf:relWorkAccessPoint($field)"/>
         </xsl:variable>
         <xsl:choose>
             <!-- For a 1XX or 7XX or 8XX or 6XX and only name/title subfields - 
                 If $1, return value of $1, otherwise construct an IRI based on the access point -->
-            <xsl:when test="$field/marc:subfield[@code = '1'] and (not(starts-with($tag, '6'))
-                or (starts-with($tag, '6') and 
+            <xsl:when test="$field/marc:subfield[@code = '1'] and (not(starts-with($tagType, '6'))
+                or (starts-with($tagType, '6') and 
                 not($field/marc:subfield[@code = 'v' or @code = 'x' or @code = 'y' or @code = 'z'])))">
                     <xsl:variable name="sub1">
                         <xsl:choose>
@@ -268,10 +268,10 @@
                         <!-- otherwise mint an IRI -->
                         <xsl:otherwise>
                             <xsl:choose>
-                                <xsl:when test="starts-with($tag, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), 'Work') = 'True'">
+                                <xsl:when test="starts-with($tagType, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), 'Work') = 'True'">
                                     <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||'wor#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                                 </xsl:when>
-                                <xsl:when test="not(starts-with($tag, '6')) and $field/marc:subfield[@code = '2'] and uwf:s2EntityTest($field/marc:subfield[@code = '2'][1], 'Work') = 'True'">
+                                <xsl:when test="not(starts-with($tagType, '6')) and $field/marc:subfield[@code = '2'] and uwf:s2EntityTest($field/marc:subfield[@code = '2'][1], 'Work') = 'True'">
                                     <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'wor#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                                 </xsl:when>
                                 <xsl:otherwise>
@@ -284,10 +284,10 @@
             <!-- otherwise it's an opaque IRI to avoid conflating different works under one IRI -->
             <xsl:otherwise>
                 <xsl:choose>
-                    <xsl:when test="starts-with($tag, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), 'Work') = 'True'">
+                    <xsl:when test="starts-with($tagType, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), 'Work') = 'True'">
                         <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||'wor#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                     </xsl:when>
-                    <xsl:when test="not(starts-with($tag, '6')) and $field/marc:subfield[@code = '2'] and uwf:s2EntityTest($field/marc:subfield[@code = '2'][1], 'Work') = 'True'">
+                    <xsl:when test="not(starts-with($tagType, '6')) and $field/marc:subfield[@code = '2'] and uwf:s2EntityTest($field/marc:subfield[@code = '2'][1], 'Work') = 'True'">
                         <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'wor#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                     </xsl:when>
                     <xsl:otherwise>

@@ -533,7 +533,7 @@
                 </xsl:choose>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:value-of select="normalize-space($string)"/>
+                <xsl:value-of select="normalize-space($string) => replace('\s*[=:;/]$', '')"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
@@ -722,6 +722,16 @@
                         | $field/marc:subfield[@code = 'm'] | $field/marc:subfield[@code = 'n'] | $field/marc:subfield[@code = 'o']
                         | $field/marc:subfield[@code = 'p'] | $field/marc:subfield[@code = 'r'] | $field/marc:subfield[@code = 's']
                         | $field/marc:subfield[@code = 't']"
+                        separator=" "/>
+                </xsl:variable>
+                <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
+            </xsl:when>
+            <xsl:when test="$field/@tag = '440'
+                or ($field/@tag = '880' and starts-with($field/marc:subfield[@code = '6'], '440'))">
+                <xsl:variable name="ap">
+                    <xsl:value-of select="$field/marc:subfield[@code = 'a']
+                        | $field/marc:subfield[@code = 'n']
+                        | $field/marc:subfield[@code = 'p']"
                         separator=" "/>
                 </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
