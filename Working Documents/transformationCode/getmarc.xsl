@@ -57,4 +57,45 @@
         </xsl:element>
 <!--        <xsl:comment>RDA data begins</xsl:comment>-->
     </xsl:template>
+    
+    <xsl:template name="getmarcRecord">
+        <xsl:element name="{'fake:marcrecord'}">
+            <xsl:for-each select="child::*">
+                <xsl:element name="{'fake:marcfield'}">
+                    <xsl:value-of select="'F'||@tag"/>
+                    <xsl:text> </xsl:text>
+                    <xsl:if test="@ind1 != ' '">
+                        <xsl:value-of select="@ind1"/>
+                    </xsl:if>
+                    <xsl:if test="@ind1 = ' '">
+                        <xsl:value-of select="'#'"/>
+                    </xsl:if>
+                    <xsl:if test="@ind2 != ' '">
+                        <xsl:value-of select="@ind2"/>
+                    </xsl:if>
+                    <xsl:if test="@ind2 = ' '">
+                        <xsl:value-of select="'#'"/>
+                    </xsl:if>
+                    <xsl:text> </xsl:text>
+                    <xsl:choose>
+                        <xsl:when test="marc:subfield">
+                            <xsl:for-each select="marc:subfield">
+                                <xsl:text>$</xsl:text>
+                                <xsl:value-of select="@code"/>
+                                <xsl:text> </xsl:text>
+                                <xsl:value-of select="."/>
+                                <xsl:if test="position() != last()">
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="text()"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:element>
+            </xsl:for-each>
+        </xsl:element>
+    </xsl:template>
+    
 </xsl:stylesheet>
