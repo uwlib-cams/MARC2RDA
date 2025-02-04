@@ -4,22 +4,22 @@
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/257-test1exp"/><!--rdawo:P10078 = has expression of work-->
       <rdawd:P10002>257-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <fake:marcfield>F257 ## $a Germany $0 http://id.loc.gov/authorities/names/n80125931 $1 http://id.loc.gov/rwo/agents/n80125931 $2 naf</fake:marcfield>
-      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/place#germany"/><!--rdawo:P10316 = has related place of work-->
+      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/pla#germany"/><!--rdawo:P10316 = has related place of work-->
       <rdawo:P10316 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/e-gx"/><!--rdawo:P10316 = has related place of work-->
       <rdawo:P10316 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/e-gx"/><!--rdawo:P10316 = has related place of work-->
       <fake:marcfield>F257 ## $a Italy ; France.</fake:marcfield>
       <rdawd:P10316>Italy</rdawd:P10316><!--rdawd:P10316 = has related place of work-->
       <rdawd:P10316>France</rdawd:P10316><!--rdawd:P10316 = has related place of work-->
       <fake:marcfield>F257 ## $a France; Lebanon $2 naf</fake:marcfield>
-      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/place#france"/><!--rdawo:P10316 = has related place of work-->
-      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/place#lebanon"/><!--rdawo:P10316 = has related place of work-->
+      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/pla#france"/><!--rdawo:P10316 = has related place of work-->
+      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/pla#lebanon"/><!--rdawo:P10316 = has related place of work-->
       <fake:marcfield>F257 ## $a Great Britain $a Japan $a United States $2 naf</fake:marcfield>
-      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/place#greatbritain"/><!--rdawo:P10316 = has related place of work-->
-      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/place#japan"/><!--rdawo:P10316 = has related place of work-->
-      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/place#unitedstates"/><!--rdawo:P10316 = has related place of work-->
+      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/pla#greatbritain"/><!--rdawo:P10316 = has related place of work-->
+      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/pla#japan"/><!--rdawo:P10316 = has related place of work-->
+      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/pla#unitedstates"/><!--rdawo:P10316 = has related place of work-->
       <fake:marcfield>F257 ## $a England ; $a India $2 naf</fake:marcfield>
-      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/place#england"/><!--rdawo:P10316 = has related place of work-->
-      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/place#india"/><!--rdawo:P10316 = has related place of work-->
+      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/pla#england"/><!--rdawo:P10316 = has related place of work-->
+      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/pla#india"/><!--rdawo:P10316 = has related place of work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/257-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -71,35 +71,35 @@
       <rdand:P80068>India</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/place#germany">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/pla#germany">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
       <rdapo:P70019 rdf:resource="http://marc2rda.edu/fake/naf/plaNom#germany"/><!--rdapo:P70019 = has appellation of place-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/place#france">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/pla#france">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
       <rdapo:P70019 rdf:resource="http://marc2rda.edu/fake/naf/plaNom#france"/><!--rdapo:P70019 = has appellation of place-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/place#lebanon">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/pla#lebanon">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
       <rdapo:P70019 rdf:resource="http://marc2rda.edu/fake/naf/plaNom#lebanon"/><!--rdapo:P70019 = has appellation of place-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/place#greatbritain">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/pla#greatbritain">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
       <rdapo:P70019 rdf:resource="http://marc2rda.edu/fake/naf/plaNom#greatbritain"/><!--rdapo:P70019 = has appellation of place-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/place#japan">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/pla#japan">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
       <rdapo:P70019 rdf:resource="http://marc2rda.edu/fake/naf/plaNom#japan"/><!--rdapo:P70019 = has appellation of place-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/place#unitedstates">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/pla#unitedstates">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
       <rdapo:P70019 rdf:resource="http://marc2rda.edu/fake/naf/plaNom#unitedstates"/><!--rdapo:P70019 = has appellation of place-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/place#england">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/pla#england">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
       <rdapo:P70019 rdf:resource="http://marc2rda.edu/fake/naf/plaNom#england"/><!--rdapo:P70019 = has appellation of place-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/place#india">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/pla#india">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
       <rdapo:P70019 rdf:resource="http://marc2rda.edu/fake/naf/plaNom#india"/><!--rdapo:P70019 = has appellation of place-->
    </rdf:Description>

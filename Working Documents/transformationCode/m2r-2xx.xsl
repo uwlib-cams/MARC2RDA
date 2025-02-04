@@ -557,14 +557,14 @@
                         <xsl:for-each select="tokenize(., ';')">
                             <rdf:Description rdf:about="{uwf:placeIRI($baseIRI, $suba, ., $sub2)}">
                                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-                                <rdapo:P70019 rdf:resource="{uwf:nomenIRI($baseIRI, $suba, 'plaNom')}"/>
+                                <rdapo:P70019 rdf:resource="{uwf:nomenIRI($baseIRI, $suba, ., $sub2, 'place')}"/>
                             </rdf:Description>
                         </xsl:for-each>
                     </xsl:when>
                     <xsl:otherwise>
                         <rdf:Description rdf:about="{uwf:placeIRI($baseIRI, ., ., $sub2)}">
                             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-                            <rdapo:P70019 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'plaNom')}"/>
+                            <rdapo:P70019 rdf:resource="{uwf:nomenIRI($baseIRI, ., ., $sub2, 'place')}"/>
                         </rdf:Description>
                     </xsl:otherwise>
                 </xsl:choose>
@@ -582,7 +582,7 @@
                 <xsl:choose>
                     <xsl:when test="matches(., '\S+.*;.*\S+')">
                         <xsl:for-each select="tokenize(., ';')">
-                            <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, $suba, 'plaNom')}">
+                            <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, $suba, ., $sub2, 'place')}">
                                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                                 <rdand:P80068>
                                     <xsl:value-of select="replace(., '\.$|;$', '') => normalize-space()"/>
@@ -592,7 +592,7 @@
                         </xsl:for-each>
                     </xsl:when>
                     <xsl:otherwise>
-                        <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'plaNom')}">
+                        <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., ., $sub2, 'place')}">
                             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                             <rdand:P80068>
                                 <xsl:value-of select="replace(., '\.$|;$', '') => normalize-space()"/>
