@@ -31,17 +31,17 @@
       <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/relator-test1wor#d22e102"/><!--rdamo:P30265 = has related work of manifestation-->
       <rdamo:P30265 rdf:resource="haf.vhmml.org/organization/madeuporg"/><!--rdamo:P30265 = has related work of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1ageNom#d22e25">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/orcid/ageNom#bhabeshdeka">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Bhabesh Deka</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/orcid"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1ageNom#d22e35">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/cerl/ageNom#hajnalzoltan1968-">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Hajnal, Zoltan, 1968-</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/cerl"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1ageNom#d22e48">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/cerl/ageNom#englerpaul">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Engler, Paul</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/cerl"/><!--rdan:P80069 = has scheme of nomen-->
@@ -66,7 +66,7 @@
       <fake:marcfield>F700 1# $a Rector, Liam, $d 1949-2007. $1 https://id.oclc.org/worldcat/entity/E39PBJbMckG8Ct8pYrmgPw9CcP</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Rector, Liam, 1949-2007</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
-      <rdaad:P50111>Rector, Liam,</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50111>Rector, Liam</rdaad:P50111><!--rdaad:P50111 = has name of person-->
       <rdaad:P50121>1949</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
       <rdaad:P50120>2007</rdaad:P50120><!--rdaad:P50120 = has date of death-->
       <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJbMckG8Ct8pYrmgPw9CcP</rdaad:P50094><!--rdaad:P50094 = has identifier for person-->
@@ -80,41 +80,41 @@
    <rdf:Description rdf:about="https://orcid.org/0000-0002-9679-6159">
       <fake:marcfield>F700 0# $a Bhabesh Deka $0 (orcid)0000-0002-9679-6159 $1 https://orcid.org/0000-0002-9679-6159 $2 orcid</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/relator-test1ageNom#d22e25"/><!--rdaao:P50411 = has authorized access point for person-->
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/orcid/ageNom#bhabeshdeka"/><!--rdaao:P50411 = has authorized access point for person-->
       <rdaad:P50094>(orcid)0000-0002-9679-6159</rdaad:P50094><!--rdaad:P50094 = has identifier for person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/cerl/age#hajnalzoltan1968-">
       <fake:marcfield>F700 1# $a Hajnal, Zoltan, $d 1968- $e author. $1 https://id.oclc.org/worldcat/entity/E39PCjB44Tx3Q7JWXMr9v484hd $2 cerl</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/relator-test1ageNom#d22e35"/><!--rdaao:P50411 = has authorized access point for person-->
-      <rdaad:P50111>Hajnal, Zoltan,</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/cerl/ageNom#hajnalzoltan1968-"/><!--rdaao:P50411 = has authorized access point for person-->
+      <rdaad:P50111>Hajnal, Zoltan</rdaad:P50111><!--rdaad:P50111 = has name of person-->
       <rdaad:P50121>1968</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
       <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PCjB44Tx3Q7JWXMr9v484hd</rdaad:P50094><!--rdaad:P50094 = has identifier for person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/cerl/age#englerpaul">
       <fake:marcfield>F700 1# $a Engler, Paul, $e author. $2 cerl</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/relator-test1ageNom#d22e48"/><!--rdaao:P50411 = has authorized access point for person-->
-      <rdaad:P50111>Engler, Paul,</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/cerl/ageNom#englerpaul"/><!--rdaao:P50411 = has authorized access point for person-->
+      <rdaad:P50111>Engler, Paul</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d22e56">
       <fake:marcfield>F700 1# $a Wortham, Christopher, $d 1940- $2 naf</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/relator-test1ageNom#d22e56"/><!--rdaao:P50377 = has access point for person-->
-      <rdaad:P50111>Wortham, Christopher,</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50111>Wortham, Christopher</rdaad:P50111><!--rdaad:P50111 = has name of person-->
       <rdaad:P50121>1940</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d22e64">
       <fake:marcfield>F700 1# $a Harmsen, Sophie, $e singer.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Harmsen, Sophie</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
-      <rdaad:P50111>Harmsen, Sophie,</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50111>Harmsen, Sophie</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d22e70">
       <fake:marcfield>F700 1# $a Shakespeare, William, $d 1564-1616. $t Cymbeline.</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Shakespeare, William, 1564-1616</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
-      <rdaad:P50111>Shakespeare, William,</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50111>Shakespeare, William</rdaad:P50111><!--rdaad:P50111 = has name of person-->
       <rdaad:P50121>1564</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
       <rdaad:P50120>1616</rdaad:P50120><!--rdaad:P50120 = has date of death-->
    </rdf:Description>
@@ -122,14 +122,14 @@
       <fake:marcfield>F700 1# $6 880-05 $a Kozint︠s︡ev, Grigoriĭ Mikhaĭlovich, $e film producer, $e screenwriter. $2 naf</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/relator-test1ageNom#d22e78"/><!--rdaao:P50377 = has access point for person-->
-      <rdaad:P50111>Kozint︠s︡ev, Grigoriĭ Mikhaĭlovich,</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50111>Kozint︠s︡ev, Grigoriĭ Mikhaĭlovich</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d22e102">
       <fake:marcfield>F700 1# $6 880-12 $a Shostakovich, Dmitriĭ Dmitrievich, $d 1906-1975. $t Korolʹ Lir (Motion picture music)</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Shostakovich, Dmitriĭ Dmitrievich, 1906-1975</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
       <rdaad:P50377>Шостакович, Дмитрий Дмитриевич, 1906-1975</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
-      <rdaad:P50111>Shostakovich, Dmitriĭ Dmitrievich,</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50111>Shostakovich, Dmitriĭ Dmitrievich</rdaad:P50111><!--rdaad:P50111 = has name of person-->
       <rdaad:P50121>1906</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
       <rdaad:P50120>1975</rdaad:P50120><!--rdaad:P50120 = has date of death-->
    </rdf:Description>
@@ -137,13 +137,13 @@
       <fake:marcfield>F700 1# $i Motion picture adaptation of (work): $a Valdez, Luis. $t Zoot suit. $1 haf.vhmml.org/organization/madeuporg $1 fakeiri.edu/1234</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Valdez, Luis</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
-      <rdaad:P50111>Valdez, Luis.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50111>Valdez, Luis</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d22e133">
       <fake:marcfield>F700 1# $a Test, 880. $e author $2 naf</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/relator-test1ageNom#d22e133"/><!--rdaao:P50377 = has access point for person-->
-      <rdaad:P50111>Test, 880.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50111>Test, 880</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1wor#d22e70">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>

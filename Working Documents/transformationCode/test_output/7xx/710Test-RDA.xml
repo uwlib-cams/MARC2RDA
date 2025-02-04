@@ -27,18 +27,18 @@
       <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/naf/age#test880"/><!--rdamo:P30270 = has related corporate body of manifestation-->
       <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/relator-test1wor#d22e82"/><!--rdamo:P30265 = has related work of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1ageNom#d22e37">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/ageNom#royalshakespearecompany">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Royal Shakespeare Company</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1ageNom#d22e60">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/ageNom#prodi%EF%B8%A0u%EF%B8%A1serskai%EF%B8%A0a%EF%B8%A1firmaigori%EF%B8%A0a%EF%B8%A1tolstunova">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Prodi︠u︡serskai︠a︡ firma Igori︠a︡ Tolstunova</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/><!--rdan:P80069 = has scheme of nomen-->
       <rdand:P80113>Продюсерская фирма Игоря Толстунова</rdand:P80113><!--rdand:P80113 = is equivalent to-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1ageNom#d22e74">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/ageNom#test880">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Test, 880</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/><!--rdan:P80069 = has scheme of nomen-->
@@ -64,7 +64,7 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/age#royalshakespearecompany">
       <fake:marcfield>F710 2# $a Royal Shakespeare Company. $1 http://testiri.edu/1234 $2 naf</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/relator-test1ageNom#d22e37"/><!--rdaao:P50407 = has authorized access point for corporate body-->
+      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/naf/ageNom#royalshakespearecompany"/><!--rdaao:P50407 = has authorized access point for corporate body-->
       <rdaad:P50006>http://testiri.edu/1234</rdaad:P50006><!--rdaad:P50006 = has identifier for corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d22e46">
@@ -76,12 +76,12 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/age#prodi%EF%B8%A0u%EF%B8%A1serskai%EF%B8%A0a%EF%B8%A1firmaigori%EF%B8%A0a%EF%B8%A1tolstunova">
       <fake:marcfield>F710 2# $6 880-17 $a Prodi︠u︡serskai︠a︡ firma Igori︠a︡ Tolstunova. $2 naf</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/relator-test1ageNom#d22e60"/><!--rdaao:P50407 = has authorized access point for corporate body-->
+      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/naf/ageNom#prodi%EF%B8%A0u%EF%B8%A1serskai%EF%B8%A0a%EF%B8%A1firmaigori%EF%B8%A0a%EF%B8%A1tolstunova"/><!--rdaao:P50407 = has authorized access point for corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/age#test880">
       <fake:marcfield>F880 2# $6 710-00 $a Test, 880 $2 naf</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/relator-test1ageNom#d22e74"/><!--rdaao:P50407 = has authorized access point for corporate body-->
+      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/naf/ageNom#test880"/><!--rdaao:P50407 = has authorized access point for corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d22e82">
       <fake:marcfield>F710 2# $i Container of (work) $a Belarus Free Theatre (Theater group). $t Minsk, 2011.</fake:marcfield>

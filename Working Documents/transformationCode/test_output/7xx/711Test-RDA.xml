@@ -19,7 +19,7 @@
       <!--Default relationship property used for http://marc2rda.edu/fake/relator-test1age#d22e33-->
       <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/relator-test1age#d22e33"/><!--rdamo:P30270 = has related corporate body of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1ageNom#d22e13">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/ageNom#texasmusicfestivalorchestra">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Texas Music Festival. Orchestra</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/><!--rdan:P80069 = has scheme of nomen-->
@@ -34,7 +34,7 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/age#texasmusicfestivalorchestra">
       <fake:marcfield>F711 2# $a Texas Music Festival. $e Orchestra. $4 prf $2 naf</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/relator-test1ageNom#d22e13"/><!--rdaao:P50407 = has authorized access point for corporate body-->
+      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/naf/ageNom#texasmusicfestivalorchestra"/><!--rdaao:P50407 = has authorized access point for corporate body-->
       <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/relator-test1age#d22e22">
