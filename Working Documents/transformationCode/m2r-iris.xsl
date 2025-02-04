@@ -41,7 +41,7 @@
     <xsl:function name="uwf:IRILookup" expand-text="yes">
         <xsl:param name="iri"/>
         <xsl:param name="type"/>
-        <xsl:value-of select="if (some $value in $approvedSourcesDoc/uwmisc:root/uwmisc:row/key('approvedKey', $type)/uwmisc:baseIRI/@iri
+        <xsl:value-of select="if (some $value in $approvedSourcesDoc/uwmisc:root/uwmisc:row/key('approvedKey', lower-case($type))/uwmisc:baseIRI/@iri
             satisfies (contains($iri, $value))) then 'True' else 'False'"/>
     </xsl:function>
     
@@ -123,7 +123,7 @@
                 </xsl:when>
                 <xsl:when test="$tag = '110' or $tag = '610' or $tag = '710' or $tag = '810' or
                     $tag = '111' or $tag = '611' or $tag = '711' or $tag = '811'">
-                    <xsl:value-of select="'Corporate Body'"/>
+                    <xsl:value-of select="'corporatebody'"/>
                 </xsl:when>
             </xsl:choose>
         </xsl:variable>
@@ -262,16 +262,16 @@
                     </xsl:variable>
                     <xsl:choose>
                         <!-- if that 1 value is approved, use it -->
-                        <xsl:when test="uwf:IRILookup($sub1, 'Work') = 'True'">
+                        <xsl:when test="uwf:IRILookup($sub1, 'work') = 'True'">
                             <xsl:value-of select="$sub1"/>
                         </xsl:when>
                         <!-- otherwise mint an IRI -->
                         <xsl:otherwise>
                             <xsl:choose>
-                                <xsl:when test="starts-with($tagType, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), 'Work') = 'True'">
+                                <xsl:when test="starts-with($tagType, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), 'work') = 'True'">
                                     <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||'wor#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                                 </xsl:when>
-                                <xsl:when test="not(starts-with($tagType, '6')) and $field/marc:subfield[@code = '2'] and uwf:s2EntityTest($field/marc:subfield[@code = '2'][1], 'Work') = 'True'">
+                                <xsl:when test="not(starts-with($tagType, '6')) and $field/marc:subfield[@code = '2'] and uwf:s2EntityTest($field/marc:subfield[@code = '2'][1], 'work') = 'True'">
                                     <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'wor#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                                 </xsl:when>
                                 <xsl:otherwise>
@@ -284,10 +284,10 @@
             <!-- otherwise it's an opaque IRI to avoid conflating different works under one IRI -->
             <xsl:otherwise>
                 <xsl:choose>
-                    <xsl:when test="starts-with($tagType, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), 'Work') = 'True'">
+                    <xsl:when test="starts-with($tagType, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), 'work') = 'True'">
                         <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||'wor#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                     </xsl:when>
-                    <xsl:when test="not(starts-with($tagType, '6')) and $field/marc:subfield[@code = '2'] and uwf:s2EntityTest($field/marc:subfield[@code = '2'][1], 'Work') = 'True'">
+                    <xsl:when test="not(starts-with($tagType, '6')) and $field/marc:subfield[@code = '2'] and uwf:s2EntityTest($field/marc:subfield[@code = '2'][1], 'work') = 'True'">
                         <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'wor#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                     </xsl:when>
                     <xsl:otherwise>
@@ -306,9 +306,40 @@
     
     <xsl:function name="uwf:nomenIRI">
         <xsl:param name="baseIRI"/>
-        <xsl:param name="field"/>
+        <xsl:param name="node"/>
+        <xsl:param name="ap"/>
+        <xsl:param name="source"/>
         <xsl:param name="type"/>
-        <xsl:value-of select="$baseIRI||$type||'#'||generate-id($field)"/>
+        <xsl:variable name="nomType">
+            <xsl:choose>
+                <xsl:when test="$type = 'person' or $type = 'family' or $type = 'corporatebody'">
+                    <xsl:value-of select="'ageNom'"/>
+                </xsl:when>
+                <xsl:when test="$type = 'work'">
+                    <xsl:value-of select="'worNom'"/>
+                </xsl:when>
+                <xsl:when test="$type = 'place'">
+                    <xsl:value-of select="'plaNom'"/>
+                </xsl:when>
+                <xsl:when test="$type = 'timespan'">
+                    <xsl:value-of select="'timNom'"/>
+                </xsl:when>
+                <xsl:when test="$type = 'nomen'">
+                    <xsl:value-of select="'nom'"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:choose>
+            <xsl:when test="$type = 'nomen' and $source != ''">
+                <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($source), ' ', ''))||'/'||$nomType||'#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+            </xsl:when>
+            <xsl:when test="uwf:s2EntityTest($source, $type) = 'True'">
+                <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($source), ' ', ''))||'/'||$nomType||'#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$baseIRI||$nomType||'#'||generate-id($node)"/>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:function>
     
     <xsl:function name="uwf:timespanIRI">
@@ -331,7 +362,7 @@
                     </xsl:choose>
                 </xsl:variable>
                 <xsl:choose>
-                    <xsl:when test="uwf:IRILookup($sub1, 'Timespan') = 'True'">
+                    <xsl:when test="uwf:IRILookup($sub1, 'timespan') = 'True'">
                         <xsl:value-of select="$sub1"/>
                     </xsl:when>  
                     <xsl:otherwise>
@@ -379,7 +410,7 @@
                 <xsl:variable name="sub1">
                      <xsl:choose>
                     <xsl:when test="count($field/marc:subfield[@code = '1']) > 1">
-                        <xsl:value-of select="uwf:multiple1s($field, 'Place')[1]"/>
+                        <xsl:value-of select="uwf:multiple1s($field, 'place')[1]"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:value-of select="$field/marc:subfield[@code = '1']"/>
@@ -387,7 +418,7 @@
                 </xsl:choose>
                 </xsl:variable>
                 <xsl:choose>
-                    <xsl:when test="uwf:IRILookup($sub1, 'Place') = 'True'">
+                    <xsl:when test="uwf:IRILookup($sub1, 'place') = 'True'">
                         <xsl:value-of select="$sub1"/>
                     </xsl:when>  
                     <xsl:otherwise>
@@ -506,7 +537,7 @@
                     </rdaad:P50094>
                 </xsl:for-each>
                 <xsl:for-each select="$field/marc:subfield[@code = '1']">
-                    <xsl:if test="uwf:IRILookup(., 'Person') = 'False'">
+                    <xsl:if test="uwf:IRILookup(., 'person') = 'False'">
                         <rdaad:P50094>
                             <xsl:value-of select="."/>
                         </rdaad:P50094>
@@ -521,7 +552,7 @@
                     </rdaad:P50052>
                 </xsl:for-each>
                 <xsl:for-each select="$field/marc:subfield[@code = '1']">
-                    <xsl:if test="uwf:IRILookup(., 'Family') = 'False'">
+                    <xsl:if test="uwf:IRILookup(., 'family') = 'False'">
                         <rdaad:P50052>
                             <xsl:value-of select="."/>
                         </rdaad:P50052>
@@ -537,7 +568,7 @@
                     </rdaad:P50006>
                 </xsl:for-each>
                 <xsl:for-each select="$field/marc:subfield[@code = '1']">
-                    <xsl:if test="uwf:IRILookup(., 'Corporate Body') = 'False'">
+                    <xsl:if test="uwf:IRILookup(., 'corporatebody') = 'False'">
                         <rdaad:P50006>
                             <xsl:value-of select="."/>
                         </rdaad:P50006>
@@ -555,7 +586,7 @@
             </rdawd:P10002>
         </xsl:for-each>
         <xsl:for-each select="$field/marc:subfield[@code = '1']">
-            <xsl:if test="uwf:IRILookup(., 'Work') = 'False'">
+            <xsl:if test="uwf:IRILookup(., 'work') = 'False'">
                 <rdawd:P10002>
                     <xsl:value-of select="."/>
                 </rdawd:P10002>
@@ -571,7 +602,7 @@
             </rdatd:P70018>
         </xsl:for-each>
         <xsl:for-each select="$field/marc:subfield[@code = '1']">
-            <xsl:if test="uwf:IRILookup(., 'Timespan') = 'False'">
+            <xsl:if test="uwf:IRILookup(., 'timespan') = 'False'">
                 <rdatd:P70018>
                     <xsl:value-of select="."/>
                 </rdatd:P70018>

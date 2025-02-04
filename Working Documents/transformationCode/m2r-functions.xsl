@@ -110,7 +110,7 @@
         <xsl:param name="type"/>
         <xsl:variable name="code2" select="replace($sub2, '\.$', '')"/>
         <xsl:value-of select="if (some $approvedType in $approvedSourcesDoc/uwmisc:root/uwmisc:row/key('codeKey', $code2)/uwmisc:approved
-            satisfies ($type = $approvedType)) then 'True' else 'False'"/>
+            satisfies (lower-case($type) = lower-case($approvedType))) then 'True' else 'False'"/>
     </xsl:function>
     
     <!-- uwf:s2Nomen returns the property "has scheme of nomen" with the appropriate IRI if it is found, otherwise it outputs a comment -->
@@ -1075,6 +1075,15 @@
         </xsl:variable>
         <xsl:variable name="manifDate">
             <xsl:choose>
+                <xsl:when test="$record/marc:datafield[@tag = '016'][marc:subfield[@code = 'a']]">
+                    <xsl:value-of select="$record/marc:datafield[@tag = '016'][marc:subfield[@code = 'a']][1]"/>
+                </xsl:when>
+                <xsl:when test="$record/marc:datafield[@tag = '035'][marc:subfield[@code = 'a']]">
+                    <xsl:value-of select="$record/marc:datafield[@tag = '035'][marc:subfield[@code = 'a']][1]"/>
+                </xsl:when>
+                <xsl:when test="$record/marc:datafield[@tag = '010'][marc:subfield[@code = 'a']]">
+                    <xsl:value-of select="$record/marc:datafield[@tag = '010'][marc:subfield[@code = 'a']][1]"/>
+                </xsl:when>
                 <xsl:when test="$record/marc:datafield[@tag = '264'][@ind2 = '1'][marc:subfield[@code = 'c']]">
                     <xsl:choose>
                         <xsl:when test="$record/marc:datafield[@tag = '260'][marc:subfield[@code = 'c']]">

@@ -4,133 +4,133 @@
         <source>BBC Things</source>
         <marc024Code>bbcth</marc024Code>
         <baseIRI iri="bbc.co.uk"/>
-        <approved>Corporate Body</approved>
+        <approved>corporatebody</approved>
     </row>
     <row>
         <source>CERL Thesaurus</source>
         <marc024Code>cerl</marc024Code>
         <marc3XXCode>cerlt</marc3XXCode>
         <baseIRI iri="thesaurus.cerl.org"/>
-        <approved>Person</approved>
-        <approved>Corporate Body</approved>
-        <approved>Place</approved>
+        <approved>person</approved>
+        <approved>corporatebody</approved>
+        <approved>place</approved>
     </row>
     <row>
         <source>DBpedia</source>
         <baseIRI iri="dbpedia.org"/>
-        <approved>Corporate Body</approved>
-        <approved>Family</approved>
-        <approved>Place</approved>
+        <approved>corporatebody</approved>
+        <approved>family</approved>
+        <approved>place</approved>
     </row>
     <row>
         <source>FAST</source>
         <marc024Code>fast</marc024Code>
         <marc3XXCode>fast</marc3XXCode>
         <baseIRI iri="id.worldcat.org/fast/"/>
-        <approved>Corporate Body</approved>
+        <approved>corporatebody</approved>
     </row>
     <row>
         <source>GeoNames</source>
         <marc024Code>geonames</marc024Code>
         <baseIRI iri="sws.geonames.org/"/>
-        <approved>Place</approved>
+        <approved>place</approved>
     </row>
     <row>
         <source>GND</source>
         <marc024Code>gnd</marc024Code>
         <marc3XXCode>gnd</marc3XXCode>
         <baseIRI iri="d-nb.info/gnd/"/>
-        <approved>Family</approved>
+        <approved>family</approved>
     </row>
     <row>
         <source>HMML Authority File</source>
         <baseIRI iri="haf.vhmml.org"/>
         <baseIRI iri="w3id.org/haf"/>
-        <approved>Work</approved>
-        <approved>Corporate Body</approved>
-        <approved>Family</approved>
-        <approved>Expression</approved>
+        <approved>work</approved>
+        <approved>corporatebody</approved>
+        <approved>family</approved>
+        <approved>expression</approved>
     </row>
     <row>
         <source>ISNI</source>
         <marc024Code>isni</marc024Code>
         <baseIRI iri="isni.org/isni/"/>
-        <approved>Corporate Body</approved>
+        <approved>corporatebody</approved>
     </row>
     <row>
         <source>LC Children's Subject Headings</source>
         <marc024Code>lccn</marc024Code>
         <marc3XXCode>lcshac</marc3XXCode>
         <baseIRI iri="id.loc.gov/authorities/childrensSubjects/"/>
-        <approved>Place</approved>
+        <approved>place</approved>
     </row>
     <row>
         <source>LC/NACO Authority File</source>
         <marc024Code>lccn</marc024Code>
         <marc3XXCode>naf</marc3XXCode>
         <baseIRI iri="id.loc.gov/rwo/agents/"/>
-        <approved>Corporate Body</approved>
-        <approved>Family</approved>
-        <approved>Place</approved>
+        <approved>corporatebody</approved>
+        <approved>family</approved>
+        <approved>place</approved>
     </row>
     <row>
         <source>LCSH</source>
         <marc024Code>lccn</marc024Code>
         <marc3XXCode>lcsh</marc3XXCode>
         <baseIRI iri="id.loc.gov/authorities/subjects/"/>
-        <approved>Place</approved>
+        <approved>place</approved>
     </row>
     <row>
         <source>MusicBrainz</source>
         <marc024Code>musicb</marc024Code>
         <baseIRI iri="musicbrainz.org/"/>
-        <approved>Work</approved>
-        <approved>Place</approved>
+        <approved>work</approved>
+        <approved>place</approved>
     </row>
     <row>
         <source>ORCID</source>
         <marc024Code>orcid</marc024Code>
         <baseIRI iri="orcid.org/"/>
-        <approved>Person</approved>
+        <approved>person</approved>
     </row>
     <row>
         <source>PeriodO</source>
         <marc3XXCode>periodo</marc3XXCode>
         <baseIRI iri="n2t.net/ark:/99152/"/>
-        <approved>Timespan</approved>
+        <approved>timespan</approved>
     </row>
     <row>
         <source>RISM</source>
         <baseIRI iri="rism.online"/>
-        <approved>Corporate Body</approved>
+        <approved>corporatebody</approved>
     </row>
     <row>
         <source>SNAC</source>
         <marc024Code>snac</marc024Code>
         <baseIRI iri="n2t.net/ark:/99166/"/>
-        <approved>Corporate Body</approved>
-        <approved>Family</approved>
+        <approved>corporatebody</approved>
+        <approved>family</approved>
     </row>
     <row>
         <source>VIAF</source>
         <marc024Code>viaf</marc024Code>
         <baseIRI iri="viaf.org/viaf/"/>
-        <approved>Corporate Body</approved>
+        <approved>corporatebody</approved>
     </row>
     <row>
         <source>Web NDL</source>
         <marc024Code>wndla</marc024Code>
         <baseIRI iri="id.ndl.go.jp/auth/entity/"/>
-        <approved>Work</approved>
-        <approved>Corporate Body</approved>
-        <approved>Family</approved>
+        <approved>work</approved>
+        <approved>corporatebody</approved>
+        <approved>family</approved>
     </row>
     <row>
         <source>Worldcat Entities</source>
         <marc024Code>worldcat</marc024Code>
         <baseIRI iri="id.oclc.org/worldcat/entity/"/>
-        <approved>Corporate Body</approved>
-        <approved>Family</approved>
-        <approved>Place</approved>
+        <approved>corporatebody</approved>
+        <approved>family</approved>
+        <approved>place</approved>
     </row>
 </root>
