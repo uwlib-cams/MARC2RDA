@@ -33,10 +33,12 @@
          xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
    <rdf:Description rdf:about="http://marc2rda.edu/fake/020-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/020-test1exp"/>
       <rdawd:P10002>020-test1wor</rdawd:P10002>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/020-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/020-test1man"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/020-test1wor"/>
       <rdaed:P20002>020-test1exp</rdaed:P20002>
    </rdf:Description>
@@ -44,30 +46,30 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/020-test1exp"/>
       <fake:marcfield>F027 ## $a FWS/OBS-84/15 $q qualifying info.</fake:marcfield>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d20e7"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/020-test1nom#d22e7"/>
       <fake:marcfield>F027 ## $a FOA--89-40265/C--SE</fake:marcfield>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d20e12"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/020-test1nom#d22e12"/>
       <fake:marcfield>F027 ## $a METPRO/CB/TR--74/216+PR.ENVR.WI $q (qualifying info 1 ;  $q qualifying info 2)</fake:marcfield>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d20e15"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/020-test1nom#d22e15"/>
       <fake:marcfield>F027 ## $z 1234567 $q qualifying info for z</fake:marcfield>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d20e22"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/020-test1nom#d22e22"/>
       <fake:marcfield>F880 ## $z 0716305119 (pbk.)  $6 027-00</fake:marcfield>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d20e27"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/020-test1nom#d22e27"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d20e7">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/020-test1nom#d22e7">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>FWS/OBS-84/15</rdand:P80068>
       <rdand:P80069>STRN</rdand:P80069>
       <rdand:P80078>Standard Technical Report Number</rdand:P80078>
       <rdand:P80071>qualifying info.</rdand:P80071>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d20e12">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/020-test1nom#d22e12">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>FOA--89-40265/C--SE</rdand:P80068>
       <rdand:P80069>ISRN</rdand:P80069>
       <rdand:P80078>Standard Technical Report Number</rdand:P80078>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d20e15">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/020-test1nom#d22e15">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>METPRO/CB/TR--74/216+PR.ENVR.WI</rdand:P80068>
       <rdand:P80069>ISRN</rdand:P80069>
@@ -75,7 +77,7 @@
       <rdand:P80071>qualifying info 1</rdand:P80071>
       <rdand:P80071>qualifying info 2</rdand:P80071>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d20e22">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/020-test1nom#d22e22">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>1234567</rdand:P80068>
       <rdand:P80069>STRN</rdand:P80069>
@@ -83,7 +85,7 @@
       <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
       <rdand:P80071>qualifying info for z</rdand:P80071>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d20e27">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/020-test1nom#d22e27">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>0716305119 (pbk.) </rdand:P80068>
       <rdand:P80069>STRN</rdand:P80069>

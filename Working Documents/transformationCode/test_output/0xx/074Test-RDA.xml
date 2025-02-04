@@ -33,25 +33,27 @@
          xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
    <rdf:Description rdf:about="http://marc2rda.edu/fake/088-test1wor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/088-test1exp"/>
       <rdawd:P10002>088-test1wor</rdawd:P10002>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/088-test1exp">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/088-test1man"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/088-test1wor"/>
       <rdaed:P20002>088-test1exp</rdaed:P20002>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/088-test1man">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/088-test1exp"/>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d20e7"/>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom/d20e9"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/088-test1nom#d22e7"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/088-test1nom#d22e9"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d20e7">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/088-test1nom#d22e7">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>1022-A</rdand:P80068>
       <rdand:P80078>GPO item number</rdand:P80078>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom/d20e9">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/088-test1nom#d22e9">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>1012-A </rdand:P80068>
       <rdand:P80078>GPO item number</rdand:P80078>
