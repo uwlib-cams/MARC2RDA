@@ -30,12 +30,12 @@
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/6xx-test1exp"/><!--rdamo:P30139 = has expression manifested-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1ageNom#d22e6">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/ageNom#newyorkshakespearefestivalproductions">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>New York Shakespeare Festival Productions</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1ageNom#d22e11">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/ageNom#libraryofcongress">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Library of Congress</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
@@ -65,12 +65,12 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/age#newyorkshakespearefestivalproductions">
       <fake:marcfield>F610 27 $a New York Shakespeare Festival Productions $2 fast</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/6xx-test1ageNom#d22e6"/><!--rdaao:P50407 = has authorized access point for corporate body-->
+      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/fast/ageNom#newyorkshakespearefestivalproductions"/><!--rdaao:P50407 = has authorized access point for corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="https://id.worldcat.org/fast/00528532">
       <fake:marcfield>F610 27 $a Library of Congress. $2 fast $0 (OCoLC)fst00528532</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/6xx-test1ageNom#d22e11"/><!--rdaao:P50407 = has authorized access point for corporate body-->
+      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/fast/ageNom#libraryofcongress"/><!--rdaao:P50407 = has authorized access point for corporate body-->
       <rdaad:P50006>(OCoLC)fst00528532</rdaad:P50006><!--rdaad:P50006 = has identifier for corporate body-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/6xx-test1age#d22e18">
