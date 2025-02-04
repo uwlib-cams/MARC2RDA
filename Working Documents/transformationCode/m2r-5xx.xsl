@@ -199,7 +199,7 @@
             </rdawd:P10209>
         </xsl:if>
         <xsl:for-each select="marc:subfield[@code = 'o']">
-            <rdawo:P10002 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'nom')}"/>
+            <rdawo:P10002 rdf:resource="{uwf:nomenIRI($baseIRI, ., '', '', 'nomen')}"/>
         </xsl:for-each>
     </xsl:template>
     <xsl:template
@@ -207,7 +207,7 @@
         mode="nom" expand-text="yes">
         <xsl:param name="baseIRI"/>
         <xsl:for-each select="marc:subfield[@code = 'o']">
-            <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'nom')}">
+            <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., '', '', 'nomen')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>{replace(., '\.\s*$', '')}</rdand:P80068>
                 <rdand:P80078>Dissertation identifier</rdand:P80078>
