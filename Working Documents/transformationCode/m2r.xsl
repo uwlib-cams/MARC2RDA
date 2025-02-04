@@ -125,7 +125,10 @@
             <!-- if not an aggregate, proceed with transform -->
             <xsl:when test="$isAggregate = false()">
                 <!-- currently we are using the 001 control field to generate the baseIRI -->
-                <xsl:variable name="baseIRI" select="concat($BASE, translate(marc:controlfield[@tag='001'], ' ', ''))"/>
+                <xsl:variable name="baseID" select="encode-for-uri(uwf:stripAllPunctuation(uwf:mainManifestationAccessPoint(.)))"/>
+                <xsl:variable name="mainWorkIRI" select="uwf:mainWorkIRI(.)"/>
+                <xsl:variable name="mainExpressionIRI" select="uwf:mainExpressionIRI(.)"/>
+                <xsl:variable name="mainManifestationIRI" select="uwf:mainManifestationIRI(.)"/>
                 
                 <xsl:variable name="isReproduction" select="uwf:checkReproductions(.)"/>
                 
@@ -135,60 +138,32 @@
                 to create the appropriate relationships within each rdf:Description element -->
                 
                 <!-- *****WORKS***** -->
-                <rdf:Description rdf:about="{concat($baseIRI,'wor')}">
+                <rdf:Description rdf:about="{$mainWorkIRI}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-                    <rdawo:P10078 rdf:resource="{concat($baseIRI,'exp')}"/>
-                    <rdawd:P10002>{concat(translate(marc:controlfield[@tag='001'], ' ', ''),'wor')}</rdawd:P10002>
-                    
-                    <!-- This code can be uncommented to add a work access point to the work description.
-                    uwf:mainWorkAccessPoint() is located in m2r-functions.xsl -->
-                    <!--<xsl:variable name="workAP" select="uwf:mainWorkAccessPoint(.)"/>
-                    <xsl:if test="$workAP">
-                        <rdawd:P10328>
-                            <xsl:value-of select="$workAP"/>
-                        </rdawd:P10328>
-                    </xsl:if>-->
+                    <rdawo:P10078 rdf:resource="{$mainExpressionIRI}"/>
                     <xsl:apply-templates select="*" mode="wor">
-                        <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                        <xsl:with-param name="baseID" select="$baseID"/>
                     </xsl:apply-templates>
                 </rdf:Description>
                 
                 <!-- *****EXPRESSIONS***** -->
-                <rdf:Description rdf:about="{concat($baseIRI,'exp')}">
+                <rdf:Description rdf:about="{$mainExpressionIRI}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-                    <rdaeo:P20059 rdf:resource="{concat($baseIRI,'man')}"/>
+                    <rdaeo:P20059 rdf:resource="{$mainManifestationIRI}"/>
                     <xsl:if test="$isReproduction != ''">
-                        <rdaeo:P20059 rdf:resource="{concat($baseIRI,'origMan')}"/>
+                        <rdaeo:P20059 rdf:resource="{uwf:origManifestationIRI(.)}"/>
                     </xsl:if>
-                    <rdaeo:P20231 rdf:resource="{concat($baseIRI,'wor')}"/>
-                    
-                    <!-- This code can be uncommented to add an expression access point to the expression description.
-                    uwf:mainExpressionAccessPoint() is located in m2r-functions.xsl -->
-                    <!--<xsl:variable name="expressionAP" select="uwf:mainExpressionAccessPoint(.)"/>
-                    <xsl:if test="$expressionAP">
-                        <rdaed:P20310>
-                            <xsl:value-of select="$expressionAP"/>
-                        </rdaed:P20310>
-                    </xsl:if>-->
-                    <rdaed:P20002>{concat(translate(marc:controlfield[@tag='001'], ' ', ''),'exp')}</rdaed:P20002>
+                    <rdaeo:P20231 rdf:resource="{$mainWorkIRI}"/>
                     <xsl:apply-templates select="*" mode="exp">
-                        <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                        <xsl:with-param name="baseID" select="$baseID"/>
                     </xsl:apply-templates>
+                    
                 </rdf:Description>
                 
                 <!-- *****MANIFESTATIONS***** -->
-                <rdf:Description rdf:about="{concat($baseIRI,'man')}">
+                <rdf:Description rdf:about="{$mainManifestationIRI}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-                    <rdamo:P30139 rdf:resource="{concat($baseIRI,'exp')}"/>
-                    
-                    <!-- This code can be uncommented to add a manifestation access point to the manifestation description.
-                    uwf:mainManifestationAccessPoint() is located in m2r-functions.xsl -->
-                    <!--<xsl:variable name="manifestationAP" select="uwf:mainManifestationAccessPoint(.)"/>
-                    <xsl:if test="$manifestationAP">
-                        <rdamd:P30276>
-                            <xsl:value-of select="$manifestationAP"/>
-                        </rdamd:P30276>
-                    </xsl:if>-->
+                    <rdamo:P30139 rdf:resource="{$mainExpressionIRI}"/>      
                     
                     <xsl:choose>
                         <xsl:when test="$isReproduction != ''">
@@ -204,20 +179,19 @@
                             </xsl:variable>
                             <xsl:choose>
                                 <xsl:when test="matches($formofitem, 'o')">
-                                    <rdamo:P30136 rdf:resource="{concat($baseIRI,'origMan')}"/>
+                                    <rdamo:P30136 rdf:resource="{uwf:origManifestationIRI(.)}"/>
                                 </xsl:when>
                                 <xsl:otherwise>
-                                    <rdamo:P30043 rdf:resource="{concat($baseIRI,'origMan')}"/>
+                                    <rdamo:P30043 rdf:resource="{uwf:origManifestationIRI(.)}"/>
                                 </xsl:otherwise>
                             </xsl:choose>
                             <xsl:apply-templates select="*" mode="man">
-                                <xsl:with-param name="baseIRI" select="$baseIRI"/>
                                 <xsl:with-param name="type" select="'reproduction'"/>
                             </xsl:apply-templates>
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:apply-templates select="*" mode="man">
-                                <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                                <xsl:with-param name="baseID" select="$baseID"/>
                             </xsl:apply-templates>
                         </xsl:otherwise>
                     </xsl:choose>
@@ -225,11 +199,11 @@
                 
                 <!-- mint an original maninfestation if reproduction conditions are met -->
                 <xsl:if test="$isReproduction != ''">
-                    <rdf:Description rdf:about="{concat($baseIRI,'origMan')}">
+                    <rdf:Description rdf:about="{uwf:origManifestationIRI(.)}">
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-                        <rdamo:P30139 rdf:resource="{concat($baseIRI,'exp')}"/>
+                        <rdamo:P30139 rdf:resource="{uwf:mainExpressionIRI(.)}"/>
                         <xsl:apply-templates select="*" mode="origMan">
-                            <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                            <xsl:with-param name="baseID" select="$baseID"/>
                             <xsl:with-param name="type" select="'origMan'"/>
                         </xsl:apply-templates>
                     </rdf:Description>
@@ -241,44 +215,46 @@
                 
                 <!-- *****ITEMS***** -->
                 <xsl:apply-templates select="*" mode="ite">
-                    <xsl:with-param name="baseIRI" select="$baseIRI"/>
-                    <xsl:with-param name="controlNumber" select="translate(marc:controlfield[@tag='001'], ' ', '')"/>
+                    <xsl:with-param name="baseID" select="$baseID"/>
+                    <xsl:with-param name="manIRI" select="$mainManifestationIRI"/>
                 </xsl:apply-templates>
                 
                 <!-- *****NOMENS***** -->
                 <xsl:apply-templates select="*" mode="nom">
-                    <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                    <xsl:with-param name="baseID" select="$baseID"/>
                 </xsl:apply-templates>
                 
                 <!-- *****METADATA WORKS***** -->
                 <xsl:apply-templates select="*" mode="metaWor">
-                    <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                    <xsl:with-param name="baseID" select="$baseID"/>
+                    <xsl:with-param name="manIRI" select="$mainManifestationIRI"/>
                 </xsl:apply-templates>
                 
                 <!-- *****RELATED AGENTS***** -->
                 <xsl:apply-templates select="*" mode="age">
-                    <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                    <xsl:with-param name="baseID" select="$baseID"/>
                 </xsl:apply-templates>
-                
+                   
                 <!-- *****RELATED WORKS***** -->
                 <xsl:apply-templates select="*" mode="relWor">
-                    <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                    <xsl:with-param name="baseID" select="$baseID"/>
                 </xsl:apply-templates>
-                
+                   
                 <!-- *****CONCEPTS***** -->
                 <xsl:apply-templates select="*" mode="con">
-                    <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                    <xsl:with-param name="baseID" select="$baseID"/>
                 </xsl:apply-templates>
                 
                 <!-- *****PLACES***** -->
                 <xsl:apply-templates select="*" mode="pla">
-                    <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                    <xsl:with-param name="baseID" select="$baseID"/>
                 </xsl:apply-templates>
                 
                 <!-- *****TIMESPANS***** -->
                 <xsl:apply-templates select="*" mode="tim">
-                    <xsl:with-param name="baseIRI" select="$baseIRI"/>
+                    <xsl:with-param name="baseID" select="$baseID"/>
                 </xsl:apply-templates>
+                    
             </xsl:when>
             
             <!-- output records that were identified as aggregates in message -->

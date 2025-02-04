@@ -34,7 +34,7 @@
     <xsl:key name="approvedKey" match="uwmisc:row" use="uwmisc:approved"/>
     
     <!-- IRILookup takes an input IRI and type (see approvedSources.xml for valid types)
-        and checks if it has the same baseIRI as an IRI of the correct type in approvedSources.xml
+        and checks if it has the same base as an IRI of the correct type in approvedSources.xml
         if it does, it returns True.
         This is used in the IRI functions to determine whether a $1 value can be used as the 
         Entity IRI or not. -->
@@ -94,18 +94,38 @@
         </xsl:if>
     </xsl:function>
     
+    <xsl:function name="uwf:mainWorkIRI">
+        <xsl:param name="record"/>
+        <xsl:value-of select="$BASE||'transform/wor#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainWorkAccessPoint($record)))"/>
+    </xsl:function>
+    
+    <xsl:function name="uwf:mainExpressionIRI">
+        <xsl:param name="record"/>
+        <xsl:value-of select="$BASE||'transform/exp#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainExpressionAccessPoint($record)))"/>
+    </xsl:function>
+    
+    <xsl:function name="uwf:mainManifestationIRI">
+        <xsl:param name="record"/>
+        <xsl:value-of select="$BASE||'transform/man#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainManifestationAccessPoint($record)))"/>
+    </xsl:function>
+    
+    <xsl:function name="uwf:origManifestationIRI">
+        <xsl:param name="record"/>
+        <xsl:value-of select="$BASE||'transform/origMan#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainManifestationAccessPoint($record)))"/>
+    </xsl:function>
+    
     <!-- returns an IRI for an item -->
     
     <xsl:function name="uwf:itemIRI">
-        <xsl:param name="baseIRI"/>
+        <xsl:param name="baseID"/>
         <xsl:param name="node"/>
-        <xsl:value-of select="$baseIRI||'ite#'||generate-id($node)"/>
+        <xsl:value-of select="$BASE||'transform/ite#'||$baseID||generate-id($node)"/>
     </xsl:function>
     
-    <!-- returns an IRI for an entity -->
+    <!-- returns an IRI for agent -->
     
     <xsl:function name="uwf:agentIRI">
-        <xsl:param name="baseIRI"/>
+        <xsl:param name="baseID"/>
         <xsl:param name="field"/>
         <xsl:variable name="ap">
             <xsl:value-of select="uwf:agentAccessPoint($field)"/>
@@ -168,7 +188,7 @@
                             </xsl:when>
                             <!-- otherwise it's an opaque IRI -->
                             <xsl:otherwise>
-                                <xsl:value-of select="$baseIRI||'age#'||generate-id($field)"/>
+                                <xsl:value-of select="$BASE||'age#'||$baseID||generate-id($field)"/>
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:otherwise>
@@ -208,7 +228,7 @@
                             </xsl:when>
                             <!-- otherwise it's an opaque IRI -->
                             <xsl:otherwise>
-                                <xsl:value-of select="$baseIRI||'age#'||generate-id($field)"/>
+                                <xsl:value-of select="$BASE||'age#'||$baseID||generate-id($field)"/>
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:otherwise>
@@ -227,7 +247,7 @@
                     </xsl:when>
                     <!-- otherwise it's an opaque IRI -->
                     <xsl:otherwise>
-                        <xsl:value-of select="$baseIRI||'age#'||generate-id($field)"/>
+                        <xsl:value-of select="$BASE||'age#'||$baseID||generate-id($field)"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:otherwise>
@@ -235,7 +255,7 @@
     </xsl:function>
     
     <xsl:function name="uwf:relWorkIRI">
-        <xsl:param name="baseIRI"/>
+        <xsl:param name="baseID"/>
         <xsl:param name="field"/>
         <xsl:variable name="tagType" select="uwf:tagType($field)"/>
         <xsl:variable name="ap">
@@ -275,7 +295,7 @@
                                     <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'wor#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                                 </xsl:when>
                                 <xsl:otherwise>
-                                    <xsl:value-of select="$baseIRI||'wor#'||generate-id($field)"/>
+                                    <xsl:value-of select="$BASE||'wor#'||$baseID||generate-id($field)"/>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:otherwise>
@@ -291,7 +311,7 @@
                         <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'wor#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="$baseIRI||'wor#'||generate-id($field)"/>
+                        <xsl:value-of select="$BASE||'wor#'||$baseID||generate-id($field)"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:otherwise>
@@ -299,13 +319,13 @@
     </xsl:function>
     
     <xsl:function name="uwf:metaWorIRI">
-        <xsl:param name="baseIRI"/>
+        <xsl:param name="baseID"/>
         <xsl:param name="node"/>
-        <xsl:value-of select="$baseIRI||'metaWor#'||generate-id($node)"/>
+        <xsl:value-of select="$BASE||'metaWor#'||$baseID||generate-id($node)"/>
     </xsl:function>
     
     <xsl:function name="uwf:nomenIRI">
-        <xsl:param name="baseIRI"/>
+        <xsl:param name="baseID"/>
         <xsl:param name="node"/>
         <xsl:param name="ap"/>
         <xsl:param name="source"/>
@@ -337,13 +357,13 @@
                 <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($source), ' ', ''))||'/'||$nomType||'#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:value-of select="$baseIRI||$nomType||'#'||generate-id($node)"/>
+                <xsl:value-of select="$BASE||$nomType||'#'||$baseID||generate-id($node)"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
     
     <xsl:function name="uwf:timespanIRI">
-        <xsl:param name="baseIRI"/>
+        <xsl:param name="baseID"/>
         <xsl:param name="field"/>
         <xsl:param name="ap"/>
         
@@ -375,7 +395,7 @@
                                 <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'tim#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                             </xsl:when>
                             <xsl:otherwise>
-                                <xsl:value-of select="$baseIRI||'tim#'||generate-id($field)"/>
+                                <xsl:value-of select="$BASE||'tim#'||$baseID||generate-id($field)"/>
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:otherwise>
@@ -391,7 +411,7 @@
                         <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'tim#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="$baseIRI||'tim#'||generate-id($field)"/>
+                        <xsl:value-of select="$BASE||'tim#'||$baseID||generate-id($field)"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:otherwise>
@@ -399,7 +419,7 @@
     </xsl:function>
     
     <xsl:function name="uwf:placeIRI">
-        <xsl:param name="baseIRI"/>
+        <xsl:param name="baseID"/>
         <xsl:param name="field"/>
         <xsl:param name="ap"/>
         <xsl:param name="source"/>
@@ -427,7 +447,7 @@
                                 <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($source), ' ', ''))||'/'||'pla#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                             </xsl:when>
                             <xsl:otherwise>
-                                <xsl:value-of select="$baseIRI||'pla#'||generate-id($field)"/>
+                                <xsl:value-of select="$BASE||'pla#'||$baseID||generate-id($field)"/>
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:otherwise>
@@ -439,7 +459,7 @@
                         <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($source), ' ', ''))||'/'||'pla#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="$baseIRI||'pla#'||generate-id($field)"/>
+                        <xsl:value-of select="$BASE||'pla#'||$baseID||generate-id($field)"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:otherwise>
