@@ -98,7 +98,6 @@
     <xsl:variable name="locAccessRestrictionTermDoc" select="document('lookup/lc/accessrestrictionterm.rdf')"/>
     <xsl:variable name="locClassSchemesDoc" select="document('lookup/lc/classSchemes.rdf')"/>
     <xsl:variable name="locNameTitleSchemesDoc" select="document('lookup/lc/nameTitleSchemes.rdf')"/>
-    <xsl:variable name="locMusicCodeSchemesDoc" select="document('lookup/lc/musiccodeschemes.rdf')"/>
     <xsl:variable name="approvedSourcesDoc" select="document('lookup/approvedSources.xml')"/>
     
     <xsl:key name="schemeKey" match="madsrdf:hasMADSSchemeMember" use="madsrdf:Authority/@rdf:about"/>
@@ -247,7 +246,7 @@
     
     <!-- lookup for field 506 concepts -->
     <!-- there's a very small vocabulary for this, so it's worth a separate quicker function -->
-    <xsl:function name="uwf:s2Concept382" expand-text="true">
+    <!--<xsl:function name="uwf:s2Concept382" expand-text="true">
         <xsl:param name="sub2"/>
         <xsl:variable name="code2" select="replace($sub2, '\.$', '')"/>
         <xsl:choose>
@@ -261,7 +260,7 @@
                 </skos:inScheme>
             </xsl:otherwise>
         </xsl:choose>
-    </xsl:function>
+    </xsl:function>-->
     
     <!-- lookup for classification schemes -->
     <xsl:function name="uwf:s2ConceptClassSchemes" expand-text="true">
@@ -323,9 +322,9 @@
                 <xsl:when test="$fieldNum = '050'">
                     <xsl:copy-of select="uwf:s2ConceptClassSchemes($scheme)"/>
                 </xsl:when>
-                <xsl:when test="$fieldNum = '382'">
+                <!--<xsl:when test="$fieldNum = '382'">
                     <xsl:copy-of select="uwf:s2Concept382($scheme)"/>
-                </xsl:when>
+                </xsl:when>-->
                 <xsl:otherwise>
                     <xsl:copy-of select="uwf:s2Concept($scheme)"/>
                 </xsl:otherwise>
@@ -479,6 +478,30 @@
         </xsl:choose>
     </xsl:function>
     
+    <xsl:function name="uwf:rdaGetTerm338">
+        <xsl:param name="rda2"/>
+        <xsl:param name="value"/>
+        <xsl:variable name="lookupDoc">
+            <xsl:choose>
+                <xsl:when test="$rda2 = 'rdacarrier'">
+                    <xsl:value-of select="'lookup/lc/carriers.rdf'"/>
+                </xsl:when>
+                <xsl:when test="$rda2 = 'rdact'">
+                    <xsl:value-of select="'lookup/rda/RDACarrierType.xml'"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:choose>
+            <xsl:when test="contains($lookupDoc, 'lc/')">
+                <xsl:value-of select="document($lookupDoc)/rdf:RDF/madsrdf:MADSScheme/madsrdf:hasMADSSchemeMember/madsrdf:Authority[ends-with(@rdf:about, $value)]/madsrdf:authoritativeLabel"/>
+            </xsl:when>
+            <xsl:when test="contains($lookupDoc, 'rda/')">
+                <xsl:value-of select="document($lookupDoc)/rdf:RDF/skos:Concept[ends-with(@rdf:about, $value)]/skos:prefLabel[@xml:lang='en']"/> 
+            </xsl:when>
+            <xsl:otherwise/>
+        </xsl:choose>
+    </xsl:function>
+    
     <xsl:function name="uwf:lcTermLookup" expand-text="yes">
         <xsl:param name="vocabName"/>
         <xsl:param name="term"/>
@@ -550,7 +573,7 @@
     
     <xsl:function name="uwf:stripAllPunctuation">
         <xsl:param name="conceptString"/>
-        <xsl:value-of select="lower-case($conceptString) => translate(' ', '') => translate('.;,:/()[]{}', '')"/>
+        <xsl:value-of select="lower-case($conceptString) => translate(' ', '') => translate('.;,:/()[]{}+', '')"/>
     </xsl:function>
     
     <xsl:function name="uwf:testBrackets">
@@ -1067,113 +1090,252 @@
     
     <xsl:function name="uwf:mainManifestationAccessPoint"  expand-text="yes">
         <xsl:param name="record"/>
-        <xsl:choose>
-            <xsl:when test="$record/marc:datafield[@tag = '016'][marc:subfield[@code = 'a']]">
-                <xsl:value-of select="normalize-space($record/marc:datafield[@tag = '016'][marc:subfield[@code = 'a']][1]/marc:subfield[@code = 'a'][1])"/>
-            </xsl:when>
-            <xsl:when test="$record/marc:datafield[@tag = '035'][marc:subfield[@code = 'a']]">
-                <xsl:value-of select="normalize-space($record/marc:datafield[@tag = '035'][marc:subfield[@code = 'a']][1]/marc:subfield[@code = 'a'][1])"/>
-            </xsl:when>
-            <xsl:when test="$record/marc:datafield[@tag = '010'][marc:subfield[@code = 'a']]">
-                <xsl:value-of select="normalize-space($record/marc:datafield[@tag = '010'][marc:subfield[@code = 'a']][1]/marc:subfield[@code = 'a'][1])"/>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:variable name="F245-anps">
-                    <xsl:value-of select="$record/marc:datafield[@tag = '245']/marc:subfield[@code = 'a']
-                        | $record/marc:datafield[@tag = '245']/marc:subfield[@code = 'n'] 
-                        | $record/marc:datafield[@tag = '245']/marc:subfield[@code = 'p']
-                        | $record/marc:datafield[@tag = '245']/marc:subfield[@code = 's']"/>
-                </xsl:variable>
-                <xsl:variable name="manifDate">
-                    <xsl:choose>
-                        <xsl:when test="$record/marc:datafield[@tag = '264'][@ind2 = '1'][marc:subfield[@code = 'c']]">
-                            <xsl:choose>
-                                <xsl:when test="$record/marc:datafield[@tag = '260'][marc:subfield[@code = 'c']]">
-                                    <xsl:choose>
-                                        <xsl:when test="$record/marc:datafield[@tag = '264'][@ind2 = '1'][marc:subfield[@code = 'c']][1]/position() lt $record/marc:datafield[@tag = '260'][marc:subfield[@code = 'c']][1]/position()">
-                                            <xsl:value-of select="$record/marc:datafield[@tag = '264'][@ind2 = '1'][marc:subfield[@code = 'c']][1]/marc:subfield[@code = 'c']"/>
-                                        </xsl:when>
-                                        <xsl:otherwise>
-                                            <xsl:value-of select="$record/marc:datafield[@tag = '260'][marc:subfield[@code = 'c']][1]/marc:subfield[@code = 'c']"/>
-                                        </xsl:otherwise>
-                                    </xsl:choose>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <xsl:value-of select="$record/marc:datafield[@tag = '264'][@ind2 = '1'][marc:subfield[@code = 'c']][1]/marc:subfield[@code = 'c']"/>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                        </xsl:when>
-                        <xsl:when test="$record/marc:datafield[@tag = '260'][marc:subfield[@code = 'c']]">
-                            <xsl:value-of select="$record/marc:datafield[@tag = '260'][marc:subfield[@code = 'c']]/marc:subfield[@code = 'c']"/>
-                        </xsl:when>
-                        <xsl:when test="$record/marc:datafield[@tag = '264'][@ind2 = '0'][marc:subfield[@code = 'c']]">
-                            <xsl:value-of select="$record/marc:datafield[@tag = '264'][@ind2 = '0'][marc:subfield[@code = 'c']][1]/marc:subfield[@code = 'c']"/>
-                        </xsl:when>
-                        <xsl:when test="$record/marc:datafield[@tag = '264'][@ind2 = '4'][marc:subfield[@code = 'c']]">
-                            <xsl:value-of select="$record/marc:datafield[@tag = '264'][@ind2 = '4'][marc:subfield[@code = 'c']][1]/marc:subfield[@code = 'c']"/>
-                        </xsl:when>
-                        <xsl:when test="$record/marc:datafield[@tag = '264'][@ind2 = '2'][marc:subfield[@code = 'c']]">
-                            <xsl:value-of select="$record/marc:datafield[@tag = '264'][@ind2 = '2'][marc:subfield[@code = 'c']][1]/marc:subfield[@code = 'c']"/>
-                        </xsl:when>
-                        <xsl:when test="$record/marc:datafield[@tag = '264'][@ind2 = '3'][marc:subfield[@code = 'c']]">
-                            <xsl:value-of select="$record/marc:datafield[@tag = '264'][@ind2 = '3'][marc:subfield[@code = 'c']][1]/marc:subfield[@code = 'c']"/>
-                        </xsl:when>
-                    </xsl:choose>
-                </xsl:variable>
-                <xsl:variable name="manifName">
-                    <xsl:choose>
-                        <xsl:when test="$record/marc:datafield[@tag = '264'][@ind2 = '1'][marc:subfield[@code = 'b']]">
-                            <xsl:choose>
-                                <xsl:when test="$record/marc:datafield[@tag = '260'][marc:subfield[@code = 'b']]">
-                                    <xsl:choose>
-                                        <xsl:when test="$record/marc:datafield[@tag = '264'][@ind2 = '1'][marc:subfield[@code = 'b']][1]/position() lt $record/marc:datafield[@tag = '260'][marc:subfield[@code = 'b']][1]/position()">
-                                            <xsl:value-of select="$record/marc:datafield[@tag = '264'][@ind2 = '1'][marc:subfield[@code = 'b']][1]/marc:subfield[@code = 'b']"/>
-                                        </xsl:when>
-                                        <xsl:otherwise>
-                                            <xsl:value-of select="$record/marc:datafield[@tag = '260'][marc:subfield[@code = 'b']][1]/marc:subfield[@code = 'b']"/>
-                                        </xsl:otherwise>
-                                    </xsl:choose>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <xsl:value-of select="$record/marc:datafield[@tag = '264'][@ind2 = '1'][marc:subfield[@code = 'b']][1]/marc:subfield[@code = 'b']"/>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                        </xsl:when>
-                        <xsl:when test="$record/marc:datafield[@tag = '260'][marc:subfield[@code = 'b']]">
-                            <xsl:value-of select="$record/marc:datafield[@tag = '260'][marc:subfield[@code = 'b']]/marc:subfield[@code = 'b']"/>
-                        </xsl:when>
-                        <xsl:when test="$record/marc:datafield[@tag = '264'][@ind2 = '0'][marc:subfield[@code = 'b']]">
-                            <xsl:value-of select="$record/marc:datafield[@tag = '264'][@ind2 = '0'][marc:subfield[@code = 'b']][1]/marc:subfield[@code = 'b']"/>
-                        </xsl:when>
-                        <xsl:when test="$record/marc:datafield[@tag = '264'][@ind2 = '3'][marc:subfield[@code = 'b']]">
-                            <xsl:value-of select="$record/marc:datafield[@tag = '264'][@ind2 = '3'][marc:subfield[@code = 'b']][1]/marc:subfield[@code = 'b']"/>
-                        </xsl:when>
-                        <xsl:when test="$record/marc:datafield[@tag = '264'][@ind2 = '2'][marc:subfield[@code = 'b']]">
-                            <xsl:value-of select="$record/marc:datafield[@tag = '264'][@ind2 = '2'][marc:subfield[@code = 'b']][1]/marc:subfield[@code = 'b']"/>
-                        </xsl:when>
-                    </xsl:choose>
-                </xsl:variable>
-                <xsl:variable name="carrierType">
-                    <xsl:choose>
-                        <xsl:when test="$record/marc:datafield[@tag = '338']">
-                            <xsl:choose>
-                                <xsl:when test="$record/marc:datafield[@tag = '338']/marc:subfield[@code = 'a']">
-                                    <xsl:value-of select="$record/marc:datafield[@tag = '338']/marc:subfield[@code = 'a']"/>
-                                </xsl:when>
-                            </xsl:choose>
-                        </xsl:when>
-                    </xsl:choose>
-                </xsl:variable>
-                <xsl:variable name="fullAP">
-                    <xsl:value-of select="uwf:stripEndPunctuation($F245-anps)||' '||normalize-space($manifDate)||' '||normalize-space($manifName)"/>
-                    <xsl:if test="$carrierType != ''">
-                        <xsl:value-of select="'+'||$carrierType"/>
-                    </xsl:if>
-                </xsl:variable>
-                <xsl:value-of select="$fullAP"/>
-            </xsl:otherwise>
-        </xsl:choose>
         
+        <!-- identifier from 016, 035 OCoLC, or 010 -->
+        <xsl:variable name="identifier">
+            <xsl:choose>
+                <xsl:when test="$record/marc:datafield[@tag = '016'][marc:subfield[@code = 'a']]">
+                    <xsl:choose>
+                        <xsl:when test="$record/marc:datafield[@tag = '016'][marc:subfield[@code = 'a']][1]/marc:subfield[@code = '2']">
+                            <xsl:value-of select="normalize-space($record/marc:datafield[@tag = '016'][marc:subfield[@code = 'a']][1]/marc:subfield[@code = '2'])
+                                ||normalize-space($record/marc:datafield[@tag = '016'][marc:subfield[@code = 'a']][1]/marc:subfield[@code = 'a'][1])"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="'lac'
+                                ||normalize-space($record/marc:datafield[@tag = '016'][marc:subfield[@code = 'a']][1]/marc:subfield[@code = 'a'][1])"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:when>
+                <xsl:when test="$record/marc:datafield[@tag = '035'][marc:subfield[@code = 'a'][starts-with(., '(OCoLC)')]]">
+                    <xsl:value-of select="normalize-space($record/marc:datafield[@tag = '035'][marc:subfield[@code = 'a'][starts-with(., '(OCoLC)')]][1]/marc:subfield[@code = 'a'][starts-with(., '(OCoLC)')][1])"/>
+                </xsl:when>
+                <xsl:when test="$record/marc:datafield[@tag = '010'][marc:subfield[@code = 'a']]">
+                    <xsl:value-of select="'lccn'||normalize-space($record/marc:datafield[@tag = '010'][marc:subfield[@code = 'a']][1]/marc:subfield[@code = 'a'][1])"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:variable>
+        
+        <!-- same logic as F245 mapping to title proper -->
+        <xsl:variable name="titleProper">
+            <xsl:variable name="isISBD">
+                <xsl:choose>
+                    <xsl:when test="(substring($record/marc:leader, 19, 1) = 'i' or substring($record/marc:leader, 19, 1) = 'a')">
+                        <xsl:value-of select="true()"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="false()"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:variable>
+            <xsl:choose>
+                <xsl:when test="$record/marc:datafield[@tag = '245']/marc:subfield[@code = 'a']">
+                    <xsl:choose>
+                        <xsl:when test="$record/marc:datafield[@tag = '245']/marc:subfield[@code = 'a'][not(following-sibling::*)] or
+                            $record/marc:datafield[@tag = '245']/marc:subfield[@code = 'a']/not(following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's']) or 
+                            ($record/marc:datafield[@tag = '245']/marc:subfield[@code = 'a']/following-sibling::marc:subfield[1][not(@code = 'n' or @code = 'p' or @code = 's')]
+                            and $record/marc:datafield[@tag = '245']/marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][preceding-sibling::marc:subfield[@code = 'b'][contains(text(), ' = ')]])">
+                            <xsl:choose>
+                                <!-- remove ending = : ; / if ISBD-->
+                                <!-- remove any square brackets [] -->
+                                <xsl:when test="$isISBD = true()">
+                                    <xsl:value-of select="normalize-space($record/marc:datafield[@tag = '245']/marc:subfield[@code = 'a']) => replace('\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
+                                </xsl:when>
+                                <!-- remove any square brackets [] if not ISBD -->
+                                <xsl:otherwise>
+                                    <xsl:value-of select="normalize-space($record/marc:datafield[@tag = '245']/marc:subfield[@code = 'a']) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:when>
+                        <!-- a with following n, p, s either before or after a b with other title info -->
+                        <xsl:otherwise>
+                            <!-- put together title from a and any directly following n, p, s fields -->
+                            <!-- remove ending = : ; / -->
+                            <xsl:variable name="title">
+                                <xsl:choose>
+                                    <!-- remove ISBD punctuation if ISBD -->
+                                    <xsl:when test="$isISBD = true()">
+                                        <xsl:value-of select="normalize-space($record/marc:datafield[@tag = '245']/marc:subfield[@code = 'a']) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                        <xsl:text> </xsl:text>
+                                        <xsl:for-each select="$record/marc:datafield[@tag = '245']/marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::marc:subfield[contains(text(), ' = ') or ends-with(text(), ' =')])]">
+                                            <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
+                                            <xsl:if test="position() != last()">
+                                                <xsl:text> </xsl:text>
+                                            </xsl:if>
+                                        </xsl:for-each>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:value-of select="normalize-space($record/marc:datafield[@tag = '245']/marc:subfield[@code = 'a']) => uwf:removeBrackets()"/>
+                                        <xsl:text> </xsl:text>
+                                        <xsl:for-each select="$record/marc:datafield[@tag = '245']/marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::marc:subfield[contains(text(), ' = ') or ends-with(text(), ' =')])]">
+                                            <xsl:value-of select="normalize-space(.) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
+                                            <xsl:if test="position() != last()">
+                                                <xsl:text> </xsl:text>
+                                            </xsl:if>
+                                        </xsl:for-each>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:variable>
+                            <!-- remove any square brackets -->
+                            <xsl:value-of select="normalize-space($title) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
+                            <!-- if square brackets [] were removed, add not on manifestation -->
+                        </xsl:otherwise>
+                    </xsl:choose>    
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:variable name="title">
+                        <xsl:choose>
+                            <xsl:when test="$isISBD = true()">
+                                <xsl:choose>
+                                    <xsl:when test="$record/marc:datafield[@tag = '245']/marc:subfield[@code = 'c']">
+                                        <xsl:for-each select="$record/marc:datafield[@tag = '245']/marc:subfield[@code = 'c']/preceding-sibling::*">
+                                            <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
+                                            <xsl:if test="position() != last()">
+                                                <xsl:text> </xsl:text>
+                                            </xsl:if>
+                                        </xsl:for-each>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:for-each select="$record/marc:datafield[@tag = '245']/marc:subfield">
+                                            <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
+                                            <xsl:if test="position() != last()">
+                                                <xsl:text> </xsl:text>
+                                            </xsl:if>
+                                        </xsl:for-each>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:choose>
+                                    <xsl:when test="$record/marc:datafield[@tag = '245']/marc:subfield[@code = 'c']">
+                                        <xsl:for-each select="$record/marc:datafield[@tag = '245']/marc:subfield[@code = 'c']/preceding-sibling::*">
+                                            <xsl:value-of select="normalize-space(.) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
+                                            <xsl:if test="position() != last()">
+                                                <xsl:text> </xsl:text>
+                                            </xsl:if>
+                                        </xsl:for-each>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:for-each select="$record/marc:datafield[@tag = '245']/marc:subfield">
+                                            <xsl:value-of select="normalize-space(.) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
+                                            <xsl:if test="position() != last()">
+                                                <xsl:text> </xsl:text>
+                                            </xsl:if>
+                                        </xsl:for-each>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:variable>
+                    <xsl:choose>
+                        <!-- remove ISBD punctuation if ISBD -->
+                        <xsl:when test="$isISBD = true()">
+                            <xsl:value-of select="normalize-space($title) => replace('\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="normalize-space($title) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        
+        <xsl:variable name="manifDate">
+            <xsl:choose>
+                <xsl:when test="$record/marc:datafield[@tag = '264'][@ind2 = '1'][marc:subfield[@code = 'c']]">
+                    <xsl:choose>
+                        <xsl:when test="$record/marc:datafield[@tag = '260'][marc:subfield[@code = 'c']]">
+                            <xsl:choose>
+                                <xsl:when test="$record/marc:datafield[@tag = '264'][@ind2 = '1'][marc:subfield[@code = 'c']][1]/position() lt $record/marc:datafield[@tag = '260'][marc:subfield[@code = 'c']][1]/position()">
+                                    <xsl:value-of select="$record/marc:datafield[@tag = '264'][@ind2 = '1'][marc:subfield[@code = 'c']][1]/marc:subfield[@code = 'c']"/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="$record/marc:datafield[@tag = '260'][marc:subfield[@code = 'c']][1]/marc:subfield[@code = 'c']"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="$record/marc:datafield[@tag = '264'][@ind2 = '1'][marc:subfield[@code = 'c']][1]/marc:subfield[@code = 'c']"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:when>
+                <xsl:when test="$record/marc:datafield[@tag = '260'][marc:subfield[@code = 'c']]">
+                    <xsl:value-of select="$record/marc:datafield[@tag = '260'][marc:subfield[@code = 'c']]/marc:subfield[@code = 'c']"/>
+                </xsl:when>
+                <xsl:when test="$record/marc:datafield[@tag = '264'][@ind2 = '0'][marc:subfield[@code = 'c']]">
+                    <xsl:value-of select="$record/marc:datafield[@tag = '264'][@ind2 = '0'][marc:subfield[@code = 'c']][1]/marc:subfield[@code = 'c']"/>
+                </xsl:when>
+                <xsl:when test="$record/marc:datafield[@tag = '264'][@ind2 = '4'][marc:subfield[@code = 'c']]">
+                    <xsl:value-of select="$record/marc:datafield[@tag = '264'][@ind2 = '4'][marc:subfield[@code = 'c']][1]/marc:subfield[@code = 'c']"/>
+                </xsl:when>
+                <xsl:when test="$record/marc:datafield[@tag = '264'][@ind2 = '2'][marc:subfield[@code = 'c']]">
+                    <xsl:value-of select="$record/marc:datafield[@tag = '264'][@ind2 = '2'][marc:subfield[@code = 'c']][1]/marc:subfield[@code = 'c']"/>
+                </xsl:when>
+                <xsl:when test="$record/marc:datafield[@tag = '264'][@ind2 = '3'][marc:subfield[@code = 'c']]">
+                    <xsl:value-of select="$record/marc:datafield[@tag = '264'][@ind2 = '3'][marc:subfield[@code = 'c']][1]/marc:subfield[@code = 'c']"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:variable>
+        
+        <xsl:variable name="manifName">
+            <xsl:choose>
+                <xsl:when test="$record/marc:datafield[@tag = '264'][@ind2 = '1'][marc:subfield[@code = 'b']]">
+                    <xsl:choose>
+                        <xsl:when test="$record/marc:datafield[@tag = '260'][marc:subfield[@code = 'b']]">
+                            <xsl:choose>
+                                <xsl:when test="$record/marc:datafield[@tag = '264'][@ind2 = '1'][marc:subfield[@code = 'b']][1]/position() lt $record/marc:datafield[@tag = '260'][marc:subfield[@code = 'b']][1]/position()">
+                                    <xsl:value-of select="$record/marc:datafield[@tag = '264'][@ind2 = '1'][marc:subfield[@code = 'b']][1]/marc:subfield[@code = 'b']"/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="$record/marc:datafield[@tag = '260'][marc:subfield[@code = 'b']][1]/marc:subfield[@code = 'b']"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="$record/marc:datafield[@tag = '264'][@ind2 = '1'][marc:subfield[@code = 'b']][1]/marc:subfield[@code = 'b']"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:when>
+                <xsl:when test="$record/marc:datafield[@tag = '260'][marc:subfield[@code = 'b']]">
+                    <xsl:value-of select="$record/marc:datafield[@tag = '260'][marc:subfield[@code = 'b']]/marc:subfield[@code = 'b']"/>
+                </xsl:when>
+                <xsl:when test="$record/marc:datafield[@tag = '264'][@ind2 = '0'][marc:subfield[@code = 'b']]">
+                    <xsl:value-of select="$record/marc:datafield[@tag = '264'][@ind2 = '0'][marc:subfield[@code = 'b']][1]/marc:subfield[@code = 'b']"/>
+                </xsl:when>
+                <xsl:when test="$record/marc:datafield[@tag = '264'][@ind2 = '3'][marc:subfield[@code = 'b']]">
+                    <xsl:value-of select="$record/marc:datafield[@tag = '264'][@ind2 = '3'][marc:subfield[@code = 'b']][1]/marc:subfield[@code = 'b']"/>
+                </xsl:when>
+                <xsl:when test="$record/marc:datafield[@tag = '264'][@ind2 = '2'][marc:subfield[@code = 'b']]">
+                    <xsl:value-of select="$record/marc:datafield[@tag = '264'][@ind2 = '2'][marc:subfield[@code = 'b']][1]/marc:subfield[@code = 'b']"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:variable>
+        
+        <xsl:variable name="carrierType">
+            <xsl:choose>
+                <xsl:when test="$record/marc:datafield[@tag = '338']">
+                    <xsl:for-each select="$record/marc:datafield[@tag = '338']">
+                        <xsl:choose>
+                            <xsl:when test="marc:subfield[@code = 'a']">
+                                <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                            </xsl:when>
+                            <xsl:when test="marc:subfield[@code = 'b'] and (marc:subfield[@code = '2'] = 'rdact' or marc:subfield[@code = '2'] = 'rdacarrier')">
+                                <xsl:for-each select="marc:subfield[@code = 'b']">
+                                    <xsl:value-of select="uwf:rdaGetTerm338(../marc:subfield[@code = '2'], .)"/>
+                                </xsl:for-each>
+                            </xsl:when>
+                        </xsl:choose>
+                    </xsl:for-each>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:variable>
+        
+        <xsl:variable name="fullAP">
+            <xsl:value-of select="$identifier||$titleProper||' '||normalize-space($manifDate)||' '||normalize-space($manifName)"/>
+            <xsl:if test="$carrierType != ''">
+                <xsl:value-of select="'+'||$carrierType"/>
+            </xsl:if>
+        </xsl:variable>
+        <xsl:value-of select="$fullAP"/>
     </xsl:function>
     
 </xsl:stylesheet>
