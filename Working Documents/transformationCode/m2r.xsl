@@ -125,7 +125,8 @@
             <!-- if not an aggregate, proceed with transform -->
             <xsl:when test="$isAggregate = false()">
                 <!-- currently we are using the 001 control field to generate the baseIRI -->
-                <xsl:variable name="baseID" select="encode-for-uri(uwf:stripAllPunctuation(uwf:mainManifestationAccessPoint(.)))"/>
+                <xsl:variable name="baseID" select="current-date() => string() => uwf:stripAllPunctuation() => encode-for-uri()"/>
+                
                 <xsl:variable name="mainWorkIRI" select="uwf:mainWorkIRI(.)"/>
                 <xsl:variable name="mainExpressionIRI" select="uwf:mainExpressionIRI(.)"/>
                 <xsl:variable name="mainManifestationIRI" select="uwf:mainManifestationIRI(.)"/>
