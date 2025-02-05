@@ -24,6 +24,12 @@
     <xsl:variable name="List245cIntroductionTerms" select="document('lookup/List245cIntroductionTerms.xml')/items/item"/>
     <xsl:variable name="List300aSuppCont" select="document('lookup/List300aSuppCont.xml')/items/item"/>
     <xsl:variable name="List300bSuppCont" select="document('lookup/List300bSuppCont.xml')/items/item"/>
+    <xsl:variable name="ListInvertedEtcTerms" select="document('lookup/ListInvertedEtcTerms.xml')/items/item"/>
+    <xsl:variable name="List546aNotParallelTerms" select="document('lookup/List546aNotParallelTerms.xml')/items/item"/>
+    <xsl:variable name="List500_520ParallelOnlyTerms_CaseNo" select="document('lookup/List500_520ParallelOnlyTerms_CaseNo.xml')/items/item"/>
+    <xsl:variable name="List500_520_546aParallelPlusTerms_CaseNo" select="document('lookup/List500_520_546aParallelPlusTerms_CaseNo.xml')/items/item"/>
+    <xsl:variable name="List110b245aConferenceTerms" select="document('lookup/List110b245aConferenceTerms.xml')/items/item"/>
+    <xsl:variable name="ListVMusicCCT_MLA_Type_Plural" select="document('lookup/ListVMusicCCT_MLA_Type_Plural.xml')/items/item"/>
 
     <xsl:template name="append-aggregates" expand-text="yes">
         <xsl:param name="wemi"/>
@@ -57,6 +63,12 @@
                     <xsl:with-param name="List245cIntroductionTerms" select="$List245cIntroductionTerms"/>
                     <xsl:with-param name="List300aSuppCont" select="$List300aSuppCont"/>
                     <xsl:with-param name="List300bSuppCont" select="$List300bSuppCont"/>
+                    <xsl:with-param name="ListInvertedEtcTerms" select="$ListInvertedEtcTerms"/>
+                    <xsl:with-param name="List546aNotParallelTerms" select="$List546aNotParallelTerms"/>
+                    <xsl:with-param name="List500_520ParallelOnlyTerms_CaseNo" select="$List500_520ParallelOnlyTerms_CaseNo"/>
+                    <xsl:with-param name="List500_520_546aParallelPlusTerms_CaseNo" select="$List500_520_546aParallelPlusTerms_CaseNo"/>
+                    <xsl:with-param name="List110b245aConferenceTerms" select="$List110b245aConferenceTerms"/>
+                    <xsl:with-param name="ListVMusicCCT_MLA_Type_Plural" select="$ListVMusicCCT_MLA_Type_Plural"/>
                 </xsl:evaluate>
             </xsl:variable>
             <xsl:if test="$isMatched">
@@ -96,6 +108,12 @@
                         <xsl:with-param name="List245cIntroductionTerms" select="$List245cIntroductionTerms"/>
                         <xsl:with-param name="List300aSuppCont" select="$List300aSuppCont"/>
                         <xsl:with-param name="List300bSuppCont" select="$List300bSuppCont"/>
+                        <xsl:with-param name="ListInvertedEtcTerms" select="$ListInvertedEtcTerms"/>
+                        <xsl:with-param name="List546aNotParallelTerms" select="$List546aNotParallelTerms"/>
+                        <xsl:with-param name="List500_520ParallelOnlyTerms_CaseNo" select="$List500_520ParallelOnlyTerms_CaseNo"/>
+                        <xsl:with-param name="List500_520_546aParallelPlusTerms_CaseNo" select="$List500_520_546aParallelPlusTerms_CaseNo"/>
+                        <xsl:with-param name="List110b245aConferenceTerms" select="$List110b245aConferenceTerms"/>
+                        <xsl:with-param name="ListVMusicCCT_MLA_Type_Plural" select="$ListVMusicCCT_MLA_Type_Plural"/>
                     </xsl:evaluate>
                 </xsl:variable>
                 <xsl:if test="$isMatched">
@@ -149,6 +167,12 @@
                     <xsl:with-param name="List245cIntroductionTerms" select="$List245cIntroductionTerms"/>
                     <xsl:with-param name="List300aSuppCont" select="$List300aSuppCont"/>
                     <xsl:with-param name="List300bSuppCont" select="$List300bSuppCont"/>
+                    <xsl:with-param name="ListInvertedEtcTerms" select="$ListInvertedEtcTerms"/>
+                    <xsl:with-param name="List546aNotParallelTerms" select="$List546aNotParallelTerms"/>
+                    <xsl:with-param name="List500_520ParallelOnlyTerms_CaseNo" select="$List500_520ParallelOnlyTerms_CaseNo"/>
+                    <xsl:with-param name="List500_520_546aParallelPlusTerms_CaseNo" select="$List500_520_546aParallelPlusTerms_CaseNo"/>
+                    <xsl:with-param name="List110b245aConferenceTerms" select="$List110b245aConferenceTerms"/>
+                    <xsl:with-param name="ListVMusicCCT_MLA_Type_Plural" select="$ListVMusicCCT_MLA_Type_Plural"/>
                 </xsl:evaluate>
             </xsl:variable>
             <xsl:if test="$isMatched">
