@@ -96,12 +96,128 @@
     
     <xsl:function name="uwf:mainWorkIRI">
         <xsl:param name="record"/>
-        <xsl:value-of select="$BASE||'transform/wor#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainWorkAccessPoint($record)))"/>
+        <xsl:choose>
+            <xsl:when test="$record/marc:datafield[@tag = '240']">
+                <xsl:choose>
+                    <xsl:when test="$record/marc:datafield[@tag = '240'][marc:subfield[@code = '1']] and 
+                        not($record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
+                        or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']
+                        or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'm']
+                        or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'o']
+                        or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'r']
+                        or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 's'])
+                        and uwf:IRILookup($record/marc:datafield[@tag = '240']/marc:subfield[@code = '1'], 'work') = 'True'">
+                        <xsl:value-of select="$record/marc:datafield[@tag = '240']/marc:subfield[@code = '1']"/>
+                    </xsl:when>
+                    <xsl:when test="$record/marc:datafield[@tag = '240'][marc:subfield[@code = '2']] and 
+                        not($record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
+                        or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']
+                        or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'm']
+                        or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'o']
+                        or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'r']
+                        or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 's'])
+                        and uwf:s2EntityTest($record/marc:datafield[@tag = '240']/marc:subfield[@code = '2'][1], 'work') = 'True'">
+                        <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($record/marc:datafield[@tag = '240']/marc:subfield[@code = '2']), ' ', ''))||'/'||'wor#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainWorkAccessPoint($record)))"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="$BASE||'transform/wor#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainWorkAccessPoint($record)))"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$record/marc:datafield[@tag = '130']">
+                <xsl:choose>
+                    <xsl:when test="$record/marc:datafield[@tag = '130'][marc:subfield[@code = '1']] and 
+                        not($record/marc:datafield[@tag = '130']/marc:subfield[@code = 'f']
+                        or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'l'])
+                        or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'm']
+                        or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'o']
+                        or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'r']
+                        or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 's']
+                        and uwf:IRILookup($record/marc:datafield[@tag = '130']/marc:subfield[@code = '1'], 'work') = 'True'">
+                        <xsl:value-of select="$record/marc:datafield[@tag = '130']/marc:subfield[@code = '1']"/>
+                    </xsl:when>
+                    <xsl:when test="$record/marc:datafield[@tag = '130'][marc:subfield[@code = '2']] and 
+                        not($record/marc:datafield[@tag = '130']/marc:subfield[@code = 'f']
+                        or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'l']
+                        or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'm']
+                        or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'o']
+                        or $record/marc:datafield[@tag = '13']/marc:subfield[@code = 'r']
+                        or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 's'])
+                        and uwf:s2EntityTest($record/marc:datafield[@tag = '130']/marc:subfield[@code = '2'][1], 'work') = 'True'">
+                        <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($record/marc:datafield[@tag = '130']/marc:subfield[@code = '2']), ' ', ''))||'/'||'wor#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainWorkAccessPoint($record)))"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="$BASE||'transform/wor#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainWorkAccessPoint($record)))"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$BASE||'transform/wor#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainWorkAccessPoint($record)))"/>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:function>
     
     <xsl:function name="uwf:mainExpressionIRI">
         <xsl:param name="record"/>
-        <xsl:value-of select="$BASE||'transform/exp#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainExpressionAccessPoint($record)))"/>
+        <xsl:choose>
+            <xsl:when test="$record/marc:datafield[@tag = '240']">
+                <xsl:choose>
+                    <xsl:when test="$record/marc:datafield[@tag = '240'][marc:subfield[@code = '1']] and 
+                        ($record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
+                        or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']
+                        or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'm']
+                        or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'o']
+                        or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'r']
+                        or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 's'])
+                        and uwf:IRILookup($record/marc:datafield[@tag = '240']/marc:subfield[@code = '1'], 'expression') = 'True'">
+                        <xsl:value-of select="$record/marc:datafield[@tag = '240']/marc:subfield[@code = '1']"/>
+                    </xsl:when>
+                    <xsl:when test="$record/marc:datafield[@tag = '240'][marc:subfield[@code = '2']] and 
+                        not($record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
+                        or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']
+                        or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'm']
+                        or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'o']
+                        or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'r']
+                        or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 's'])
+                        and uwf:s2EntityTest($record/marc:datafield[@tag = '240']/marc:subfield[@code = '2'][1], 'expression') = 'True'">
+                        <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($record/marc:datafield[@tag = '240']/marc:subfield[@code = '2']), ' ', ''))||'/'||'exp#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainWorkAccessPoint($record)))"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="$BASE||'transform/exp#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainExpressionAccessPoint($record)))"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$record/marc:datafield[@tag = '130']">
+                <xsl:choose>
+                    <xsl:when test="$record/marc:datafield[@tag = '130'][marc:subfield[@code = '1']] and 
+                        ($record/marc:datafield[@tag = '130']/marc:subfield[@code = 'f']
+                        or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'l'])
+                        or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'm']
+                        or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'o']
+                        or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'r']
+                        or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 's']
+                        and uwf:IRILookup($record/marc:datafield[@tag = '130']/marc:subfield[@code = '1'], 'expression') = 'True'">
+                        <xsl:value-of select="$record/marc:datafield[@tag = '130']/marc:subfield[@code = '1']"/>
+                    </xsl:when>
+                    <xsl:when test="$record/marc:datafield[@tag = '130'][marc:subfield[@code = '2']] and 
+                        ($record/marc:datafield[@tag = '130']/marc:subfield[@code = 'f']
+                        or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'l']
+                        or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'm']
+                        or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'o']
+                        or $record/marc:datafield[@tag = '13']/marc:subfield[@code = 'r']
+                        or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 's'])
+                        and uwf:s2EntityTest($record/marc:datafield[@tag = '130']/marc:subfield[@code = '2'][1], 'expression') = 'True'">
+                        <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($record/marc:datafield[@tag = '130']/marc:subfield[@code = '2']), ' ', ''))||'/'||'exp#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainWorkAccessPoint($record)))"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="$BASE||'transform/exp#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainExpressionAccessPoint($record)))"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$BASE||'transform/exp#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainExpressionAccessPoint($record)))"/>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:function>
     
     <xsl:function name="uwf:mainManifestationIRI">

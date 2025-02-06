@@ -906,14 +906,12 @@
                 <xsl:variable name="expSubfields">
                     <xsl:choose>
                         <xsl:when test="$record/marc:datafield[@tag = '130']/marc:subfield[@code = 'f']
-                            or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'g']
                             or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'l']
                             or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'm']
                             or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'o']
                             or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'r']
                             or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 's']">
                             <xsl:value-of select="$record/marc:datafield[@tag = '130']/marc:subfield[@code = 'f']
-                                | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'g']
                                 | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'l']
                                 | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'm']
                                 | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'o']
@@ -943,14 +941,12 @@
                 <xsl:variable name="expSubfields">
                     <xsl:choose>
                         <xsl:when test="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
-                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'g']
                             or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']
                             or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'm']
                             or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'o']
                             or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'r']
                             or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 's']">
                             <xsl:value-of select="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
-                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'g']
                                 | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']
                                 | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'm']
                                 | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'o']
@@ -980,14 +976,12 @@
                 <xsl:variable name="expSubfields">
                     <xsl:choose>
                         <xsl:when test="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
-                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'g']
                             or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']
                             or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'm']
                             or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'o']
                             or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'r']
                             or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 's']">
                             <xsl:value-of select="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
-                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'g']
                                 | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']
                                 | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'm']
                                 | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'o']
@@ -1017,14 +1011,12 @@
                 <xsl:variable name="expSubfields">
                     <xsl:choose>
                         <xsl:when test="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
-                            or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'g']
                             or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']
                             or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'm']
                             or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'o']
                             or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'r']
                             or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 's']">
                             <xsl:value-of select="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
-                                | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'g']
                                 | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']
                                 | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'm']
                                 | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'o']
