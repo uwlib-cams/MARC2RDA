@@ -1383,10 +1383,6 @@
                 <rdam:P30001 rdf:resource="{'https://doi.org/10.6069/uwlswd.qgc0-9r48#t'}"/>
                 <rdam:P30335 rdf:resource="{'https://doi.org/10.6069/uwlswd.qgc0-9r48#t'}"/>
             </xsl:when>
-            <xsl:when test="$char33 = 't'">
-                <rdam:P30001 rdf:resource="{'https://doi.org/10.6069/uwlswd.qgc0-9r48#t'}"/>
-                <rdam:P30335 rdf:resource="{'https://doi.org/10.6069/uwlswd.qgc0-9r48#t'}"/>
-            </xsl:when>
             <xsl:when test="$char33 = 'v'">
                 <rdam:P30001 rdf:resource="{'https://doi.org/10.6069/uwlswd.qgc0-9r48#v'}"/>
                 <rdam:P30335 rdf:resource="{'https://doi.org/10.6069/uwlswd.qgc0-9r48#v'}"/>
