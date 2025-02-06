@@ -52,7 +52,7 @@
         match="marc:datafield[@tag = '500'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '500-00']"
         mode="man">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:choose>
             <xsl:when test="marc:subfield[@code = '5']">
                 <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseID, .)}"/>
@@ -92,7 +92,7 @@
         <xsl:param name="manIRI"/>
         <xsl:variable name="genID" select="generate-id()"/>
         <rdf:Description rdf:about="{uwf:itemIRI($baseID, .)}">
-            <xsl:call-template name="getmarc"/>
+            <!--<xsl:call-template name="getmarc"/>-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
             <rdaid:P40001>{concat('ite#',$baseID, $genID)}</rdaid:P40001>
             <rdaio:P40049 rdf:resource="{$manIRI}"/>
@@ -128,7 +128,7 @@
         match="marc:datafield[@tag = '501'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '501']"
         mode="man">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:choose>
             <xsl:when test="marc:subfield[@code = '5']">
                 <xsl:if test="@tag = '501' or (@tag = '880' and substring(marc:subfield[@code = '6'], 1, 6) = '501-00')">
@@ -151,7 +151,7 @@
         <xsl:variable name="genID" select="generate-id()"/>
         <xsl:if test="marc:subfield[@code = '5']">
             <rdf:Description rdf:about="{uwf:itemIRI($baseID, .)}">
-                <xsl:call-template name="getmarc"/>
+                <!--<xsl:call-template name="getmarc"/>-->
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                 <rdaid:P40001>{concat('ite#',$baseID, $genID)}</rdaid:P40001>
                 <rdaio:P40049 rdf:resource="{$manIRI}"/>
@@ -177,7 +177,7 @@
         match="marc:datafield[@tag = '502'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '502']"
         mode="wor" expand-text="yes">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:if test="marc:subfield[@code = 'b']">
             <rdawd:P10077>{marc:subfield[@code = 'b']}</rdawd:P10077>
         </xsl:if>
@@ -219,7 +219,7 @@
     <xsl:template
         match="marc:datafield[@tag = '504'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '504']"
         mode="man">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <rdamd:P30455>
             <xsl:value-of select="marc:subfield[@code = 'a']"/>
             <xsl:if test="marc:subfield[@code = 'b']">
@@ -232,7 +232,7 @@
     <!-- 505 - Formatted Contents Notes -->
     <xsl:template match="marc:datafield[@tag= '505'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '505']" 
         mode="man">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <rdamd:P30137>
             <xsl:call-template name="F505-xx-agrtu"/>
         </rdamd:P30137>
@@ -243,7 +243,7 @@
         match="marc:datafield[@tag = '506'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '506-00']"
         mode="man" expand-text="yes">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:variable name="online_resource">
             <xsl:value-of select="if (some $F338 in ../marc:datafield[@tag = '338']
                 satisfies ((starts-with($F338/marc:subfield[@code = '2'][1], 'rda')
@@ -308,7 +308,7 @@
         <!-- create the item IRI and rdf:description for this item -->
         <xsl:if test="$online_resource = 'false'">
             <rdf:Description rdf:about="{uwf:itemIRI($baseID, .)}">
-                <xsl:call-template name="getmarc"/>
+                <!--<xsl:call-template name="getmarc"/>-->
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                 <rdaid:P40001>{concat('ite#',$baseID, $genID)}</rdaid:P40001>
                 <rdaio:P40049 rdf:resource="{$manIRI}"/>
@@ -356,7 +356,7 @@
     <!-- 508 - Creation/Production Credits Note -->
     <xsl:template match="marc:datafield[@tag='508'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '508']" 
         mode="man">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <rdamd:P30137><xsl:value-of select="concat('Credits: ', marc:subfield[@code = 'a'])"/></rdamd:P30137>
     </xsl:template>
     
@@ -372,7 +372,7 @@
     <!-- 513 - Type of Report and Period Covered note -->
     <xsl:template match="marc:datafield[@tag='513'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '513']" 
         mode="wor" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:if test="marc:subfield[@code = 'a']">
             <rdaw:P10330>
                 <xsl:text>Type of report: {marc:subfield[@code = 'a']}</xsl:text>
@@ -412,7 +412,7 @@
     <!-- 518 - Date/Time and Place of an Event Note -->
     <xsl:template match="marc:datafield[@tag='518'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '518']" 
         mode="man" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <rdamd:P30137>
             <xsl:if test="marc:subfield[@code = 'a']">
                 <xsl:text>Date/time and place of an event note: {marc:subfield[@code = 'a']}</xsl:text>
@@ -451,7 +451,7 @@
     <xsl:template
         match="marc:datafield[@tag = '520'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '520']"
         mode="exp">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <rdaed:P20069>
             <xsl:call-template name="F520-xx-abcu23"/>
         </rdaed:P20069>
@@ -461,7 +461,7 @@
     <xsl:template
         match="marc:datafield[@tag = '521'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '521']"
         mode="man">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <rdamd:P30137>
             <xsl:call-template name="F521-xx-ab3"/>
         </rdamd:P30137>
@@ -471,7 +471,7 @@
     <xsl:template
         match="marc:datafield[@tag = '522'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '522']"
         mode="wor">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <rdawd:P10216>
             <xsl:value-of select="concat('Geographic coverage: ', marc:subfield[@code = 'a'])"/>
         </rdawd:P10216>
@@ -480,7 +480,7 @@
     <!-- 524 - Preferred Citation of Described Materials Note -->
     <xsl:template match="marc:datafield[@tag = '524'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '524']" 
         mode="man" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <rdamd:P30005>
             <xsl:value-of select="marc:subfield[@code = 'a']"/>
         </rdamd:P30005>
@@ -500,7 +500,7 @@
     <xsl:template match="marc:datafield[@tag = '526'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '526']" 
         mode="man">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:call-template name="F526-xx-iabcdz5"/>
         <!-- iterate through each x (nonpublic note) subfield -->
         <xsl:for-each select="marc:subfield[@code = 'x']">
@@ -526,7 +526,7 @@
     <xsl:template
         match="marc:datafield[@tag = '527'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '527']"
         mode="exp">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <rdaed:P20071>
             <xsl:value-of select="marc:subfield[@code = 'a']"/>
         </rdaed:P20071>
@@ -536,7 +536,7 @@
     <xsl:template
         match="marc:datafield[@tag = '532'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '532']"
         mode="man">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:call-template name="F532-xx-a"/>
     </xsl:template>
     
@@ -617,7 +617,7 @@
     <xsl:template
         match="marc:datafield[@tag = '533'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '533']"
         mode="man" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdamd:P30335>
                 <xsl:value-of select="replace(., '\.$', '') => normalize-space()"/>
@@ -781,7 +781,7 @@
     <xsl:template
         match="marc:datafield[@tag = '536'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '536']"
         mode="wor">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <rdawd:P10330>
             <xsl:call-template name="F536-xx-abcdefgh"/>
         </rdawd:P10330>
@@ -792,7 +792,7 @@
         match="marc:datafield[@tag = '538'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '538-00']"
         mode="man">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:choose>
             <xsl:when test="marc:subfield[@code = '5']">
                 <xsl:for-each select="marc:subfield[@code = '5']">
@@ -846,7 +846,7 @@
         match="marc:datafield[@tag = '541'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '541-00']"
         mode="man">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseID, .)}"/>
     </xsl:template> 
     
@@ -858,7 +858,7 @@
         <xsl:variable name="genID" select="generate-id()"/>
         <!-- create the item IRI and rdf:description for this item -->
         <rdf:Description rdf:about="{uwf:itemIRI($baseID, .)}">
-            <xsl:call-template name="getmarc"/>
+            <!--<xsl:call-template name="getmarc"/>-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
             <rdaid:P40001>{concat('ite#',$baseID, $genID)}</rdaid:P40001>
             <rdaio:P40049 rdf:resource="{$manIRI}"/>
@@ -919,7 +919,7 @@
         match="marc:datafield[@tag = '542'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '542']"
         mode="man">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:choose>
             <xsl:when test="@ind1 = '0'">
                 <rdamo:P30462 rdf:resource="{uwf:metaWorIRI($baseID, .)}"/>
@@ -959,7 +959,7 @@
     <xsl:template
         match="marc:datafield[@tag = '546'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '546']"
         mode="exp" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:for-each select="marc:subfield[@code = 'b']">
             <rdaed:P20062>
                 <xsl:value-of select="."/>
@@ -975,7 +975,7 @@
     <xsl:template
         match="marc:datafield[@tag = '546'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '546']"
         mode="man" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdamd:P30137>
                 <xsl:value-of select="."/>
@@ -990,7 +990,7 @@
     <xsl:template
         match="marc:datafield[@tag = '547'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '547']"
         mode="man" expand-text="true">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <rdamd:P30137>
             <xsl:text>Former title complexity note: {marc:subfield[@code = 'a']}</xsl:text>
         </rdamd:P30137>
@@ -1000,7 +1000,7 @@
     <xsl:template
         match="marc:datafield[@tag = '550'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '550']"
         mode="man" expand-text="true">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <rdamd:P30055>
             <xsl:for-each select="marc:subfield[@code = 'a']">
                 <xsl:if test="@code = 'a'">
@@ -1018,7 +1018,7 @@
     <xsl:template
         match="marc:datafield[@tag = '552'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '552']"
         mode="wor">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <rdawd:P10330>
             <xsl:call-template name="F552-xx-zabcdefghijklmnopu"/>
         </rdawd:P10330>
@@ -1029,7 +1029,7 @@
     <xsl:template
         match="marc:datafield[@tag = '555'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '555']"
         mode="man">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <rdawd:P30137>
             <xsl:call-template name="F555-xx-abcdu3"/>
         </rdawd:P30137>
@@ -1040,7 +1040,7 @@
     <xsl:template
         match="marc:datafield[@tag = '556'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '556']"
         mode="wor" expand-text="true">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <rdawd:P10330>
             <xsl:call-template name="F556-xx-az"/>
         </rdawd:P10330>
@@ -1053,7 +1053,7 @@
         match="marc:datafield[@tag = '561'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '561-00']"
         mode="man">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseID, .)}"/>
     </xsl:template> 
     
@@ -1065,7 +1065,7 @@
         <xsl:variable name="genID" select="generate-id()"/>
         <!-- create the item IRI and rdf:description for this item -->
         <rdf:Description rdf:about="{uwf:itemIRI($baseID, .)}">
-            <xsl:call-template name="getmarc"/>
+            <!--<xsl:call-template name="getmarc"/>-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
             <rdaid:P40001>{concat('ite#',$baseID, $genID)}</rdaid:P40001>
             <rdaio:P40049 rdf:resource="{$manIRI}"/>
@@ -1133,7 +1133,7 @@
     <xsl:template match="marc:datafield[@tag = '563'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '563']"
         mode="man">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:choose>
             <xsl:when test="marc:subfield[@code = '5']">
                 <xsl:if test=".[@tag = '563'] or .[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '563-00']">
@@ -1155,7 +1155,7 @@
         <xsl:variable name="genID" select="generate-id()"/>
         <xsl:if test="marc:subfield[@code = '5']">
             <rdf:Description rdf:about="{uwf:itemIRI($baseID, .)}">
-                <xsl:call-template name="getmarc"/>
+                <!--<xsl:call-template name="getmarc"/>-->
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                 <rdaid:P40001>{concat('ite#',$baseID, $genID)}</rdaid:P40001>
                 <rdaio:P40049 rdf:resource="{$manIRI}"/>
@@ -1180,7 +1180,7 @@
     <xsl:template
         match="marc:datafield[@tag = '565'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '565']"
         mode="man" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <rdamd:P30137>
             <xsl:if test="marc:subfield[@code = '3']">
                 <xsl:text>{marc:subfield[@code = '3']}: </xsl:text>
@@ -1202,7 +1202,7 @@
     <xsl:template
         match="marc:datafield[@tag = '567'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '567']"
         mode="wor">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <rdawd:P10330>
             <xsl:call-template name="F567-xx-ab2"/>
         </rdawd:P10330>
@@ -1213,7 +1213,7 @@
     <xsl:template
         match="marc:datafield[@tag = '581'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '581']"
         mode="man">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <rdamd:P30137>
             <xsl:call-template name="F581-xx-az3"/>
         </rdamd:P30137>
@@ -1223,7 +1223,7 @@
     <xsl:template match="marc:datafield[@tag = '583'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '583-00']"
         mode="man">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseID, .)}"/>
     </xsl:template>
     
@@ -1233,7 +1233,7 @@
         <xsl:param name="manIRI"/>
         <xsl:variable name="genID" select="generate-id()"/>
         <rdf:Description rdf:about="{uwf:itemIRI($baseID, .)}">
-            <xsl:call-template name="getmarc"/>
+            <!--<xsl:call-template name="getmarc"/>-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
             <rdaid:P40001>{concat('ite#',$baseID, $genID)}</rdaid:P40001>
             <rdaio:P40049 rdf:resource="{$manIRI}"/>
@@ -1335,7 +1335,7 @@
     <xsl:template
         match="marc:datafield[@tag = '584'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '584']"
         mode="wor">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <rdawd:P10330>
             <xsl:call-template name="F584-xx-ab35"/>
         </rdawd:P10330>
@@ -1346,7 +1346,7 @@
         match="marc:datafield[@tag = '585'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '585']"
         mode="man" expand-text="yes">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:choose>
             <xsl:when test="marc:subfield[@code = '5']">
                 <xsl:if test=".[@tag = '585'] or .[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '585-00']">
@@ -1371,7 +1371,7 @@
         <xsl:if test="marc:subfield[@code = '5']">
             <xsl:variable name="genID" select="generate-id()"/>
             <rdf:Description rdf:about="{uwf:itemIRI($baseID, .)}">
-                <xsl:call-template name="getmarc"/>
+                <!--<xsl:call-template name="getmarc"/>-->
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                 <rdaid:P40001>{concat('ite#',$baseID, $genID)}</rdaid:P40001>
                 <rdaio:P40049 rdf:resource="{$manIRI}"/>
@@ -1402,7 +1402,7 @@
     <xsl:template
         match="marc:datafield[@tag = '586'] |  marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '586']"
         mode="exp" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:if test="marc:subfield[@code = 'a']">
             <rdaed:P20005>
                 <xsl:value-of select="marc:subfield[@code = 'a']"/>
@@ -1419,7 +1419,7 @@
     <xsl:template
         match="marc:datafield[@tag = '588'] |  marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '588']"
         mode="man" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:if test="marc:subfield[@code = 'a']">
             <rdamd:P30137>
                 <xsl:if test="@ind1 = '0'">

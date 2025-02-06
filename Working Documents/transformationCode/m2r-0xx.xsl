@@ -37,7 +37,7 @@
     <xsl:template match="marc:datafield[@tag = '020'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '020']" 
         mode="man">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdamo:P30004 rdf:resource="{uwf:nomenIRI($baseID, ., ., 'isbn', 'nomen')}"/>
         </xsl:for-each>
@@ -102,7 +102,7 @@
     <xsl:template match="marc:datafield[@tag = '024'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '024']"
         mode="man">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:choose>
             <xsl:when test="@ind1 = '8'">
                 <xsl:if test="marc:subfield[@code = 'a']">
@@ -264,7 +264,7 @@
     <xsl:template match="marc:datafield[@tag = '027'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '027']" 
         mode="man">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
             <rdamo:P30004 rdf:resource="{uwf:nomenIRI($baseID, ., ., '', 'nomen')}"/>
         </xsl:for-each>
@@ -302,7 +302,7 @@
     <xsl:template match="marc:datafield[@tag = '028'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '028']"
         mode="man">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:choose>
             <xsl:when test="@ind1 = '3'">
                 <rdamo:P30065 rdf:resource="{uwf:nomenIRI($baseID, ., ., '', 'nomen')}"/>
@@ -352,7 +352,7 @@
     <xsl:template match="marc:datafield[@tag = '030'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '030']" 
         mode="wor" expand-text="yes">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
             <xsl:if test="matches(., '^[A-Z]')">
                 <rdawd:P10002 rdf:resource="{uwf:nomenIRI($baseID, ., ., '', 'nomen')}"/>
@@ -363,7 +363,7 @@
     <xsl:template match="marc:datafield[@tag = '030'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '030']" 
         mode="man">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
             <xsl:if test="matches(., '^[0-9]')">
                 <rdamd:P30004 rdf:resource="{uwf:nomenIRI($baseID, ., ., '', 'nomen')}"/>
@@ -389,7 +389,7 @@
     <!-- 034 - Coded Cartographic Mathematical Data -->
     <xsl:template match="marc:datafield[@tag = '034'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '034']"
         mode="exp" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
             <xsl:for-each select="marc:subfield[@code = 'a']">
                 <rdae:P20213>
                 <xsl:if test=".='a'">
@@ -446,7 +446,7 @@
     
     <xsl:template match="marc:datafield[@tag = '034'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '034']"
         mode="wor" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
             <xsl:if test="marc:subfield[@code = 'd'] or marc:subfield[@code = 'e']">
                 <rdaw:P10301><xsl:text>{marc:subfield[@code = 'd']}--{marc:subfield[@code = 'e']}</xsl:text></rdaw:P10301>
             </xsl:if>
@@ -486,7 +486,7 @@
     <xsl:template match="marc:datafield[@tag = '043']"  
         mode="wor" expand-text="yes">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdawo:P10321 rdf:resource="{concat('http://id.loc.gov/vocabulary/geographicAreas/', replace(.,'-+$',''))}"/>
         </xsl:for-each>
@@ -601,7 +601,7 @@
     <!-- 050 - Library of Congress Call Number -->
     <xsl:template match="marc:datafield[@tag = '050']" 
         mode="wor" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdaw:P10256 rdf:resource="{uwf:conceptIRI('lcc', .)}"/>
         </xsl:for-each>
@@ -619,7 +619,7 @@
     <!-- 051 - Library of Congress Copy, Issue, Offprint Statement -->
     <xsl:template match="marc:datafield[@tag = '051']" 
         mode="wor" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdaw:P10256 rdf:resource="{uwf:conceptIRI('lcc', .)}"/>
         </xsl:for-each>
@@ -638,7 +638,7 @@
     <xsl:template match="marc:datafield[@tag = '052']" 
         mode="wor" expand-text="yes">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:variable name="source">
             <xsl:choose>
                 <xsl:when test="@ind1 = ' '">
@@ -791,7 +791,7 @@
     <!-- 055 - Classification Numbers Assigned in Canada -->
     <xsl:template match="marc:datafield[@tag = '055']" 
         mode="wor" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:choose>
             <xsl:when test="@ind2 = '6' or @ind2 = '7' or @ind2 = '8' or @ind2 = '9'">
                 <xsl:choose>
@@ -838,7 +838,7 @@
     <!-- 060 - National Library of Medicine Call Number -->
     <xsl:template match="marc:datafield[@tag = '060']" 
         mode="wor" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <xsl:choose>
                 <xsl:when test="matches(., '(^Q[S-Z])|(^W)')">
@@ -895,7 +895,7 @@
     <!-- 080 - Universal Decimal Classification Number -->
     <xsl:template match="marc:datafield[@tag = '080']" 
         mode="wor" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:variable name="scheme">
             <xsl:choose>
                 <xsl:when test="@ind1 = '0'">
@@ -965,7 +965,7 @@
     <xsl:template match="marc:datafield[@tag = '088'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '088']" 
         mode="man">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdamo:P30004 rdf:resource="{uwf:nomenIRI($baseID, ., ., '', 'nomen')}"/>
         </xsl:for-each>

@@ -35,7 +35,7 @@
     
     <xsl:template match="marc:controlfield[@tag = '006']" 
         mode="wor" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         
         <xsl:variable name="char0" select="substring(., 1, 1)"/>
         
@@ -109,7 +109,7 @@
     </xsl:template>
     <xsl:template match="marc:controlfield[@tag = '006']" 
         mode="exp" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:variable name="char0" select="substring(., 1, 1)"/>
         
         <xsl:choose>
@@ -184,7 +184,7 @@
     
     <xsl:template match="marc:controlfield[@tag = '006']" 
         mode="man" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:variable name="char0" select="substring(., 1, 1)"/>
         <xsl:if test="$char0 != ' '">
             <rdam:P30335 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.25z4-e963#', $char0)}"/>
@@ -298,7 +298,7 @@
     
     <xsl:template match="marc:controlfield[@tag = '008']" 
         mode="wor" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         
         <xsl:variable name="ldr6-7" select="substring(preceding-sibling::marc:leader, 7, 2)"/>
         <xsl:choose>
@@ -373,7 +373,7 @@
     
     <xsl:template match="marc:controlfield[@tag = '008']" 
         mode="exp" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:variable name="ldr6-7" select="substring(preceding-sibling::marc:leader, 7, 2)"/>
         
         <xsl:variable name="char35-37" select="substring(., 36, 3)"/>
@@ -469,7 +469,7 @@
     <xsl:template match="marc:controlfield[@tag = '008']" 
         mode="man origMan" expand-text="yes">
         <xsl:param name="type"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:variable name="ldr6-7" select="substring(preceding-sibling::marc:leader, 7, 2)"/>
         <xsl:variable name="char6" select="substring(., 7, 1)"/>
         

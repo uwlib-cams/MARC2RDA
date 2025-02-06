@@ -22,7 +22,7 @@
     <xsl:template match="marc:datafield[@tag = '300'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '300']"
         mode="man origMan" expand-text="yes">
         <xsl:param name="type"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:choose>
             <xsl:when test="$type = 'reproduction' or $type = 'origMan'">
                 <xsl:variable name="conditionMet" select="uwf:checkReproductions(..)"/>
@@ -59,7 +59,7 @@
     
     <xsl:template match="marc:datafield[@tag = '306'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '306']"
         mode="exp" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdaed:P20219 rdf:datatype="xsd:time"
                 >{replace(.,'([0-9][0-9])([0-9][0-9])([0-9][0-9])','$1:$2:$3')}</rdaed:P20219>
@@ -68,7 +68,7 @@
     <xsl:template
         match="marc:datafield[@tag = '307'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '307']"
         mode="man" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <rdamd:P30137>
             <xsl:text>{marc:subfield[@code = 'a']}</xsl:text>
             <xsl:if test="marc:subfield[@code = 'b']">
@@ -80,7 +80,7 @@
     <!-- 334 - Mode of Issuance -->
     <xsl:template match="marc:datafield[@tag = '334'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '334']" 
             mode="man">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:call-template name="F334-string"/>
         <xsl:call-template name="F334-iri"/>
     </xsl:template>
@@ -93,7 +93,7 @@
     <!-- 335 - Extension Plan -->
     <xsl:template match="marc:datafield[@tag = '335'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '335']" 
         mode="wor">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:call-template name="F335-string"/>
         <xsl:call-template name="F335-iri"/>
     </xsl:template>
@@ -114,7 +114,7 @@
     <!-- 337 - Media Type -->
     <xsl:template match="marc:datafield[@tag = '337'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '337']" 
         mode="man">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:call-template name="F337-string"/>
         <xsl:call-template name="F337-iri"/>
     </xsl:template>
@@ -127,7 +127,7 @@
     <!-- 338 - Carrier Type -->
     <xsl:template match="marc:datafield[@tag = '338'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '338']" 
         mode="man">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:call-template name="F338-string"/>
         <xsl:call-template name="F338-iri"/>
     </xsl:template>
@@ -140,7 +140,7 @@
     <!-- 340 - Physical Medium -->
     <xsl:template match="marc:datafield[@tag = '340'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '340']" 
         mode="man">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:call-template name="F340-b_f_h_i"/>
         <!-- these fields require lookups or minted concepts -->
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd']
@@ -218,7 +218,7 @@
     <!-- 342 - Geospatial Reference Data DC: In progress -->
     <xsl:template match="marc:datafield[@tag = '342'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '342']"
         mode="exp" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:call-template name="F342-xx-a"/>
         <xsl:call-template name="F342-xx-bcdlmnosvpfijtuw2"/>
         <xsl:call-template name="F342-x1-egh"/>
@@ -280,7 +280,7 @@
     <!-- 344 - Sound Characteristics -->
     <xsl:template match="marc:datafield[@tag = '344'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '344']" 
         mode="man">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
             | marc:subfield[@code = 'd']| marc:subfield[@code = 'e'] | marc:subfield[@code = 'f'] 
             | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h'] | marc:subfield[@code = 'i']">
@@ -377,7 +377,7 @@
     <!-- 346 - Video Characteristics -->
     <xsl:template match="marc:datafield[@tag = '346'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '346']" 
         mode="man">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:call-template name="F346-string"/>
         <xsl:call-template name="F346-iri"/>
     </xsl:template>
@@ -391,7 +391,7 @@
     
     <xsl:template match="marc:datafield[@tag = '347'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '347']" 
         mode="man">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:call-template name="F347-c"/>
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']
             | marc:subfield[@code = 'd'] | marc:subfield[@code = 'e'] | marc:subfield[@code = 'f']">
@@ -455,7 +455,7 @@
     <!-- 380 - Form of Work -->
     <xsl:template match="marc:datafield[@tag = '380'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '380']" 
         mode="wor">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:call-template name="F380-string"/>
         <xsl:call-template name="F380-iri"/>
     </xsl:template>

@@ -26,7 +26,7 @@
     <xsl:import href="m2r-iris.xsl"/>
     
     <xsl:template match="marc:datafield[@tag = '245'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '245']" mode="wor" >
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <!-- copy of 245 where last subfield's ending punctuation (, or .) is removed -->
         <xsl:variable name="copy245">
             <xsl:copy select=".">
@@ -135,7 +135,7 @@
         </xsl:for-each>
     </xsl:template>    
     <xsl:template match="marc:datafield[@tag = '245'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '245']" mode="exp" >
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <!-- copy of 245 where last subfield's ending punctuation (, or .) is removed -->
         <xsl:variable name="copy245">
             <xsl:copy select=".">
@@ -246,7 +246,7 @@
     <xsl:template match="marc:datafield[@tag = '245'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '245']" 
         mode="man origMan">
         <xsl:param name="type"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:variable name="isISBD">
             <xsl:choose>
                 <xsl:when test="(substring(preceding-sibling::marc:leader, 19, 1) = 'i' or substring(preceding-sibling::marc:leader, 19, 1) = 'a')">
@@ -316,7 +316,7 @@
     <xsl:template match="marc:datafield[@tag = '250'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '250']" 
         mode="man origMan" expand-text="yes">
         <xsl:param name="type"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:if test="$type != 'reproduction'">
             <xsl:variable name="isISBD">
                 <xsl:choose>
@@ -383,7 +383,7 @@
     <!-- Work -->
     <xsl:template match="marc:datafield[@tag = '255'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '255']"
         mode="wor" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:if test="marc:subfield[@code = 'c']">
             <rdawd:P10081>
                 <xsl:value-of 
@@ -429,7 +429,7 @@
     <!-- Expression -->
     <xsl:template match="marc:datafield[@tag = '255'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '255']"
         mode="exp" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:if test="marc:subfield[@code = 'a'][matches(., '[0-9]')]">
             <rdaed:P20228>
                 <xsl:value-of select="marc:subfield[@code = 'a']"/>
@@ -451,7 +451,7 @@
     <xsl:template match="marc:datafield[@tag = '257'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '257']" 
         mode="wor" expand-text="yes">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <xsl:variable name="suba" select="."/>
@@ -608,7 +608,7 @@
     <xsl:template match="marc:datafield[@tag = '260'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '260']"
         mode="man" expand-text="yes">
         <xsl:param name="type"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:variable name="isISBD">
             <xsl:choose>
                 <xsl:when test="(substring(preceding-sibling::marc:leader, 19, 1) = 'i' or substring(preceding-sibling::marc:leader, 19, 1) = 'a')">
@@ -739,7 +739,7 @@
     -->
     <xsl:template match="marc:datafield[@tag = '264'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '264']" mode="man origMan">
         <xsl:param name="type"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:if test="not(contains($type, 'reproduction'))">
             <xsl:choose>
                 <!-- check if ISBD punctuation -->

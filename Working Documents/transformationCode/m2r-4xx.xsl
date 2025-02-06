@@ -35,7 +35,7 @@
     <xsl:template match="marc:datafield[@tag = '440'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '440-00']"
         mode="relWor">
        <rdf:Description rdf:about="{uwf:relWorkIRI($BASE, .)}">
-           <xsl:call-template name="getmarc"/>
+           <!--<xsl:call-template name="getmarc"/>-->
            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
            <rdawd:P10328>
                <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
@@ -53,7 +53,7 @@
     </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '490']" mode="man">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <!-- Accounted-for: $a + $x + $v when LDR/18 is a valid value -->
         <!-- Not accounted for: $6, $7, $8, $l, $y, $z-->
         <!-- 880s not accounted for -->

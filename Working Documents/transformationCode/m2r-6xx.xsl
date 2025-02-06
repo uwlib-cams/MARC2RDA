@@ -42,7 +42,7 @@
         | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '611-00']"
         mode="wor">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:variable name="tagType" select="uwf:tagType(.)"/>
         <!-- store subject heading label in variable -->
         <!-- label templates are located in m2r-6xx-named.xsl and concat subfields present in the field -->
@@ -195,7 +195,7 @@
         <xsl:variable name="tagType" select="uwf:tagType(.)"/>
         <!-- rdf:Description for agent -->
         <rdf:Description rdf:about="{uwf:agentIRI($baseID, .)}">
-            <xsl:call-template name="getmarc"/>
+            <!--<xsl:call-template name="getmarc"/>-->
             <xsl:choose>
                 <xsl:when test="$tagType = '600'">
                     <xsl:choose>
@@ -342,7 +342,7 @@
         <xsl:variable name="source" select="uwf:getSubjectSchemeCode(.)"/>
         <!-- rdf:Description for related work when $t is present in 600, 610, 611 + 880s -->
         <rdf:Description rdf:about="{uwf:relWorkIRI($baseID, .)}">
-            <xsl:call-template name="getmarc"/>
+            <!--<xsl:call-template name="getmarc"/>-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
             <xsl:choose>
                 <xsl:when test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
@@ -513,7 +513,7 @@
         match="marc:datafield[@tag = '630'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '630-00']"
         mode="wor">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:variable name="prefLabel">
             <xsl:call-template name="F630-label"/>
         </xsl:variable>
@@ -585,7 +585,7 @@
         <xsl:param name="baseID"/>
         <!-- mint the work -->
         <rdf:Description rdf:about="{uwf:relWorkIRI($baseID, .)}">
-            <xsl:call-template name="getmarc"/>
+            <!--<xsl:call-template name="getmarc"/>-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
             <xsl:choose>
                 <!-- if there is a source, mint a nomen -->
@@ -682,7 +682,7 @@
     <xsl:template
         match="marc:datafield[@tag = '647'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '647-00']"
         mode="wor">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:variable name="prefLabel">
             <xsl:call-template name="F647-label"/>
         </xsl:variable>
@@ -742,7 +742,7 @@
         match="marc:datafield[@tag = '648'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '648-00']"
         mode="wor">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:variable name="prefLabel">
             <xsl:call-template name="F648-label"/>
         </xsl:variable>
@@ -899,7 +899,7 @@
     <xsl:template
         match="marc:datafield[@tag = '650'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '650-00']"
         mode="wor">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <!-- 650 label combines subfields separated by dashes -->
         <xsl:variable name="prefLabel">
             <xsl:call-template name="F650-label"/>
@@ -966,7 +966,7 @@
         match="marc:datafield[@tag = '651'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '651-00']"
         mode="wor" expand-text='yes'>
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:variable name="prefLabel">
             <xsl:call-template name="F651-label"/>
         </xsl:variable>
@@ -1185,7 +1185,7 @@
     <xsl:template
         match="marc:datafield[@tag = '653'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '653']"
         mode="wor">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:variable name="prefLabel">
             <xsl:call-template name="F653-label"/>
         </xsl:variable>
@@ -1228,7 +1228,7 @@
     <xsl:template
         match="marc:datafield[@tag = '654'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '654-00']"
         mode="wor">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:variable name="prefLabel">
             <xsl:call-template name="F654-label"/>
         </xsl:variable>
@@ -1289,7 +1289,7 @@
     
     <xsl:template match="marc:datafield[@tag = '655'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '655-00']"
         mode="wor">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:variable name="prefLabel">
             <xsl:call-template name="F655-label"/>
         </xsl:variable>
@@ -1347,7 +1347,7 @@
     <xsl:template
         match="marc:datafield[@tag = '656'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '656-00']"
         mode="wor">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:variable name="prefLabel">
             <xsl:call-template name="F656-label"/>
         </xsl:variable>
@@ -1408,7 +1408,7 @@
     <xsl:template
         match="marc:datafield[@tag = '657'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '657']"
         mode="wor" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:variable name="prefLabel">
             <xsl:call-template name="F657-label"/>
         </xsl:variable>
@@ -1443,7 +1443,7 @@
     <xsl:template
         match="marc:datafield[@tag = '658'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '658']"
         mode="wor" expand-text="yes">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <rdawd:P10330>
             <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
                 | marc:subfield[@code = 'd'] | marc:subfield[@code = '0'] | marc:subfield[@code = '1']">
@@ -1482,7 +1482,7 @@
         match="marc:datafield[@tag = '662'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '662-00']"
         mode="wor">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:variable name="prefLabel">
             <xsl:call-template name="F662-label"/>
         </xsl:variable>
@@ -1570,7 +1570,7 @@
     <xsl:template
         match="marc:datafield[@tag = '688'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '688-00']"
         mode="wor">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:variable name="prefLabel">
             <xsl:call-template name="F688-label"/>
         </xsl:variable>

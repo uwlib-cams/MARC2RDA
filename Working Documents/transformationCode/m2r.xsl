@@ -18,6 +18,9 @@
     xmlns:rdaa="http://rdaregistry.info/Elements/a/"
     xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
     xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+    xmlns:rdan="http://rdaregistry.info/Elements/n/"
+    xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+    xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
     xmlns:fake="http://fakePropertiesForDemo"
     xmlns:uwf="http://universityOfWashington/functions"
     exclude-result-prefixes="marc ex" version="3.0">
@@ -124,7 +127,8 @@
         <xsl:choose>
             <!-- if not an aggregate, proceed with transform -->
             <xsl:when test="$isAggregate = false()">
-                <!-- currently we are using the 001 control field to generate the baseIRI -->
+                
+ 
                 <xsl:variable name="baseID" select="current-date() => string() => uwf:stripAllPunctuation() => encode-for-uri()"/>
                 
                 <xsl:variable name="mainWorkIRI" select="uwf:mainWorkIRI(.)"/>
@@ -132,6 +136,20 @@
                 <xsl:variable name="mainManifestationIRI" select="uwf:mainManifestationIRI(.)"/>
                 
                 <xsl:variable name="isReproduction" select="uwf:checkReproductions(.)"/>
+                <xsl:variable name="origManifestationIRI">
+                    <xsl:if test="$isReproduction">
+                        <xsl:value-of select="uwf:origManifestationIRI(.)"/>
+                    </xsl:if>
+                </xsl:variable>
+                
+                <xsl:variable name="marcMetadataWorkIRI" select="$BASE||'transform/wor#marc'||encode-for-uri(lower-case(translate(marc:controlfield[@tag = '003'], ' ', '')))||encode-for-uri(translate(marc:controlfield[@tag = '001'], ' ', '_'))"/>
+                <xsl:call-template name="marcMetadataWork">
+                    <xsl:with-param name="marcWorkIRI" select="$marcMetadataWorkIRI"/>
+                    <xsl:with-param name="mainWorkIRI" select="$mainWorkIRI"/>
+                    <xsl:with-param name="mainExpressionIRI" select="$mainExpressionIRI"/>
+                    <xsl:with-param name="mainManifestationIRI" select="$mainManifestationIRI"/>
+                    <xsl:with-param name="origManifestationIRI" select="$origManifestationIRI"/>
+                </xsl:call-template>
                 
                 <!-- Set up the WEMI stack for the marc:record -->
                 <!-- an rdf:Description is created for the Work, Expression, and Manifestation 
@@ -141,7 +159,18 @@
                 <!-- *****WORKS***** -->
                 <rdf:Description rdf:about="{$mainWorkIRI}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+                    <rdawo:P10623 rdf:resource="{$marcMetadataWorkIRI}"/>
                     <rdawo:P10078 rdf:resource="{$mainExpressionIRI}"/>
+                    
+                    <!-- This code can be uncommented to add a work access point to the work description.
+                    uwf:mainWorkAccessPoint() is located in m2r-functions.xsl -->
+                    <xsl:variable name="workAP" select="uwf:mainWorkAccessPoint(.)"/>
+                    <xsl:if test="$workAP">
+                        <rdawd:P10328>
+                            <xsl:value-of select="$workAP"/>
+                        </rdawd:P10328>
+                    </xsl:if>
+                    
                     <xsl:apply-templates select="*" mode="wor">
                         <xsl:with-param name="baseID" select="$baseID"/>
                     </xsl:apply-templates>
@@ -150,11 +179,22 @@
                 <!-- *****EXPRESSIONS***** -->
                 <rdf:Description rdf:about="{$mainExpressionIRI}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+                    <rdaeo:P20576 rdf:resource="{$marcMetadataWorkIRI}"/>
                     <rdaeo:P20059 rdf:resource="{$mainManifestationIRI}"/>
                     <xsl:if test="$isReproduction != ''">
                         <rdaeo:P20059 rdf:resource="{uwf:origManifestationIRI(.)}"/>
                     </xsl:if>
                     <rdaeo:P20231 rdf:resource="{$mainWorkIRI}"/>
+                    
+                    <!-- This code can be uncommented to add an expression access point to the expression description.
+                    uwf:mainExpressionAccessPoint() is located in m2r-functions.xsl -->
+                    <xsl:variable name="expressionAP" select="uwf:mainExpressionAccessPoint(.)"/>
+                    <xsl:if test="$expressionAP">
+                        <rdaed:P20310>
+                            <xsl:value-of select="$expressionAP"/>
+                        </rdaed:P20310>
+                    </xsl:if>
+                    
                     <xsl:apply-templates select="*" mode="exp">
                         <xsl:with-param name="baseID" select="$baseID"/>
                     </xsl:apply-templates>
@@ -164,7 +204,17 @@
                 <!-- *****MANIFESTATIONS***** -->
                 <rdf:Description rdf:about="{$mainManifestationIRI}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+                    <rdamo:P30462 rdf:resource="{$marcMetadataWorkIRI}"/>
                     <rdamo:P30139 rdf:resource="{$mainExpressionIRI}"/>      
+                    
+                    <!-- This code can be uncommented to add a manifestation access point to the manifestation description.
+                    uwf:mainManifestationAccessPoint() is located in m2r-functions.xsl -->
+                    <xsl:variable name="manifestationAP" select="uwf:mainManifestationAccessPoint(.)"/>
+                    <xsl:if test="$manifestationAP">
+                        <rdamd:P30276>
+                            <xsl:value-of select="$manifestationAP"/>
+                        </rdamd:P30276>
+                    </xsl:if>
                     
                     <xsl:choose>
                         <xsl:when test="$isReproduction != ''">
@@ -180,10 +230,10 @@
                             </xsl:variable>
                             <xsl:choose>
                                 <xsl:when test="matches($formofitem, 'o')">
-                                    <rdamo:P30136 rdf:resource="{uwf:origManifestationIRI(.)}"/>
+                                    <rdamo:P30136 rdf:resource="{$origManifestationIRI}"/>
                                 </xsl:when>
                                 <xsl:otherwise>
-                                    <rdamo:P30043 rdf:resource="{uwf:origManifestationIRI(.)}"/>
+                                    <rdamo:P30043 rdf:resource="{$origManifestationIRI}"/>
                                 </xsl:otherwise>
                             </xsl:choose>
                             <xsl:apply-templates select="*" mode="man">
@@ -200,9 +250,20 @@
                 
                 <!-- mint an original maninfestation if reproduction conditions are met -->
                 <xsl:if test="$isReproduction != ''">
-                    <rdf:Description rdf:about="{uwf:origManifestationIRI(.)}">
+                    <rdf:Description rdf:about="{$origManifestationIRI}">
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-                        <rdamo:P30139 rdf:resource="{uwf:mainExpressionIRI(.)}"/>
+                        <rdamo:P30462 rdf:resource="{$marcMetadataWorkIRI}"/>
+                        <rdamo:P30139 rdf:resource="{$mainExpressionIRI}"/>
+                        
+                        <!-- This code can be uncommented to add a manifestation access point to the manifestation description.
+                    uwf:mainManifestationAccessPoint() is located in m2r-functions.xsl -->
+                        <xsl:variable name="manifestationAP" select="uwf:mainManifestationAccessPoint(.)"/>
+                    <xsl:if test="$manifestationAP">
+                        <rdamd:P30276>
+                            <xsl:value-of select="$manifestationAP"/>
+                        </rdamd:P30276>
+                    </xsl:if>
+                        
                         <xsl:apply-templates select="*" mode="origMan">
                             <xsl:with-param name="baseID" select="$baseID"/>
                             <xsl:with-param name="type" select="'origMan'"/>
@@ -265,5 +326,67 @@
                 </xsl:message>
             </xsl:otherwise>
         </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template name="marcMetadataWork" expand-text="yes">
+        <xsl:param name="marcWorkIRI"/>
+        <xsl:param name="mainWorkIRI"/>
+        <xsl:param name="mainExpressionIRI"/>
+        <xsl:param name="mainManifestationIRI"/>
+        <xsl:param name="origManifestationIRI"/>
+        
+        <xsl:variable name="marcManIRI" select="$BASE||'transform/man#marc'||encode-for-uri(lower-case(translate(marc:controlfield[@tag = '003'], ' ', '')))||encode-for-uri(translate(marc:controlfield[@tag = '001'], ' ', '_'))"/>
+        <xsl:variable name="source003">
+            <xsl:choose>
+                <xsl:when test="marc:controlfield[@tag = '003']">
+                    <xsl:value-of select="marc:controlfield[@tag = '003']"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="'transform'"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:variable name="marcWorGrpNomIRI" select="$BASE||encode-for-uri(lower-case(translate($source003, ' ', '')))||'/nom#'||encode-for-uri(translate(marc:controlfield[@tag = '001'], ' ', '_'))"/>
+        
+        <rdf:Description rdf:about="{$marcWorkIRI}">
+            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+            <rdawo:P10400 rdf:resource="{$marcWorGrpNomIRI}"/>
+            <rdawd:P10002>
+                <xsl:value-of select="'transform/wor#marc'||encode-for-uri(lower-case(translate(marc:controlfield[@tag = '003'], ' ', '')))||encode-for-uri(translate(marc:controlfield[@tag = '001'], ' ', '_'))"/>
+            </rdawd:P10002>
+            <rdawo:P10072 rdf:resource="{$marcManIRI}"/>
+            <rdawo:P10621 rdf:resource="{$mainWorkIRI}"/>
+            <rdawo:P10615 rdf:resource="{$mainExpressionIRI}"/>
+            <rdawo:P10617 rdf:resource="{$mainManifestationIRI}"/>
+            <xsl:if test="$origManifestationIRI != ''">
+                <rdawo:P10617 rdf:resource="{$origManifestationIRI}"/>
+            </xsl:if>
+        </rdf:Description>
+        
+        <rdf:Description rdf:about="{$marcManIRI}">
+            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+            <rdamo:P30135 rdf:resource="{$marcWorkIRI}"/>
+            <rdamd:P30004>
+                <xsl:value-of select="'transform/man#marc'||encode-for-uri(lower-case(translate(marc:controlfield[@tag = '003'], ' ', '')))||encode-for-uri(translate(marc:controlfield[@tag = '001'], ' ', '_'))"/>
+            </rdamd:P30004>
+            <rdamo:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1018'}"/>
+            <rdamd:P30137>
+                <xsl:call-template name="getmarcRecord"/>
+            </rdamd:P30137>
+        </rdf:Description>
+        
+        <rdf:Description rdf:about="{$marcWorGrpNomIRI}">
+            <rdf:type rdf:resource="{'http://rdaregistry.info/Elements/c/C10012'}"/>
+            <rdano:P80172 rdf:resource="{$marcWorkIRI}"/>
+            <rdand:P80068>
+                <xsl:value-of select="marc:controlfield[@tag = '001']"/>
+            </rdand:P80068>
+            <xsl:if test="marc:controlfield[@tag = '003']">
+                <rdand:P80069>
+                    <xsl:value-of select="marc:controlfield[@tag = '003']"/>
+                </rdand:P80069>
+            </xsl:if>
+        </rdf:Description>
+        
     </xsl:template>
 </xsl:stylesheet>

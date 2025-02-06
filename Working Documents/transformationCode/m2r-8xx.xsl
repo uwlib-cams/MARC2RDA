@@ -41,7 +41,7 @@
         | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '811-00'][marc:subfield[@code = 't']]" 
         mode="wor">
         <xsl:param name="baseID"/>
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         <rdawo:P10102 rdf:resource="{uwf:relWorkIRI($baseID, .)}"/>
     </xsl:template>    
     
@@ -113,7 +113,7 @@
         <xsl:param name="baseID"/>
         <xsl:variable name="ap" select="uwf:agentAccessPoint(.)"/>
         <rdf:Description rdf:about="{uwf:agentIRI($baseID, .)}">
-            <xsl:call-template name="getmarc"/>
+            <!--<xsl:call-template name="getmarc"/>-->
             <xsl:variable name="tagType" select="uwf:tagType(.)"/>
             <xsl:choose>
                 <xsl:when test="$tagType = '800'">

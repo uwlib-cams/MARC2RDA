@@ -242,7 +242,7 @@
         <!-- get agentIRI and set up rdf:Description for that agent -->
         <!-- note: this isn't done for 720, where an agent is not minted -->
         <rdf:Description rdf:about="{uwf:agentIRI($baseID, .)}">
-            <xsl:call-template name="getmarc"/>
+            <!--<xsl:call-template name="getmarc"/>-->
             <!-- create rdf:type and relationship to nomen or nomen string triples -->
             <xsl:choose>
                 <xsl:when test="$tagType = '100' or $tagType = '700'">
@@ -511,7 +511,7 @@
         <xsl:variable name="tagType" select="uwf:tagType(.)"/>
         <xsl:if test="@ind2 != '2'">
             <rdf:Description rdf:about="{uwf:agentIRI($baseID, .)}">
-                <xsl:call-template name="getmarc"/>
+                <!--<xsl:call-template name="getmarc"/>-->
                 <!-- create rdf:type and relationship to nomen or nomen string triples -->
                 <xsl:choose>
                     <xsl:when test="$tagType = '700'">
