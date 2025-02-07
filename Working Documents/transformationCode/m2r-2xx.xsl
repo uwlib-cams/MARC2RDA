@@ -88,7 +88,8 @@
                                         <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                                         <xsl:if test="position() != last()">
                                             <xsl:text> </xsl:text>
-                                        </xsl:if>                                    </xsl:for-each>
+                                        </xsl:if>                                    
+                                    </xsl:for-each>
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <xsl:value-of select="uwf:removeBrackets(marc:subfield[@code = 'a'])"/>
