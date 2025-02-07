@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-test1">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10400 rdf:resource="http://marc2rda.edu/fake/transform/nom#relator-test1"/><!--rdawo:P10400 = has identifier for work group-->
+      <rdawd:P10002>transform/wor#marcrelator-test1</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-test1"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-test1">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test1"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30004>transform/man#marcrelator-test1</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-test1
+F830 #0 $a Biography (Lerner Publications Company)
+F830 #0 $a Oxford world's classics (Oxford University Press) ; $v 5.
+F830 #0 $a Salzburg studies in English literature. $p Romantic reassessment ; $v 95.
+F830 #0 $a Barron, Stephanie. $t Jane Austen mystery.
+F830 #0 $a Fasteners $v 5 $w (DE-101)550955267 $7 am
+F830 #0 $a Europäische Hochschulschriften. $n Reihe XIV, $p Angelsächsische Sprache und Literatur ; $v Bd. 397.
+F830 0# $a Salzburg studies in English literature. $1 http://fakeiri.edu/12345 $2 naf
+F830 0# $6 880-01 $a Europäische Hochschulschriften. $n Reihe XIV, $p Angelsächsische Sprache und Literatur ; $v Bd. 397.
+F880 0# $6 830-01 $a Europäische Hochschulschriften. $n Reihe XIV, $p Angelsächsische Sprache und Literatur ; $v Bd. 397.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/nom#relator-test1">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdano:P80172 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test1"/><!--rdano:P80172 = is identifier for work group of-->
+      <rdand:P80068>relator-test1</rdand:P80068><!--rdand:P80068 = has nomen string-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test1"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/wor#2025-02-07-0800d22e21"/><!--rdawo:P10102 = is issue of-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test1"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test1"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/worNom#2025-02-07-0800d22e44">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Salzburg studies in English literature</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#2025-02-07-0800d22e6">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d22e6wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Biography (Lerner Publications Company)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#2025-02-07-0800d22e9">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d22e9wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Oxford world's classics (Oxford University Press) ;</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#2025-02-07-0800d22e14">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d22e14wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Salzburg studies in English literature. Romantic reassessment ;</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10088>Romantic reassessment ;</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#2025-02-07-0800d22e21">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d22e21wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Barron, Stephanie. Jane Austen mystery</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10088>Jane Austen mystery</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#2025-02-07-0800d22e26">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d22e26wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Fasteners</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#2025-02-07-0800d22e35">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d22e35wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Europäische Hochschulschriften. Reihe XIV, Angelsächsische Sprache und Literatur ;</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10088>Reihe XIV, Angelsächsische Sprache und Literatur ;</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#2025-02-07-0800d22e44">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d22e44wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10328 rdf:resource="http://marc2rda.edu/fake/worNom#2025-02-07-0800d22e44"/><!--rdawo:P10328 = has access point for work-->
+      <rdawd:P10002>http://fakeiri.edu/12345</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#2025-02-07-0800d22e51">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d22e51wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Europäische Hochschulschriften. Reihe XIV, Angelsächsische Sprache und Literatur ;</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10328>Europäische Hochschulschriften. Reihe XIV, Angelsächsische Sprache und Literatur ;</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10088>Reihe XIV, Angelsächsische Sprache und Literatur ;</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+</rdf:RDF>

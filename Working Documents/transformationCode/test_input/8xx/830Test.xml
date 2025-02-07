@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-test1</marc:controlfield>
+        
+        <marc:datafield tag="830" ind1=" " ind2="0">
+            <marc:subfield code="a">Biography (Lerner Publications Company)</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="830" ind1=" " ind2="0">
+            <marc:subfield code="a">Oxford world's classics (Oxford University Press) ;</marc:subfield>
+            <marc:subfield code="v">5.</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="830" ind1=" " ind2="0">
+            <marc:subfield code="a">Salzburg studies in English literature.</marc:subfield>
+            <marc:subfield code="p">Romantic reassessment ;</marc:subfield>
+            <marc:subfield code="v">95.</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="830" ind1=" " ind2="0">
+            <marc:subfield code="a">Barron, Stephanie.</marc:subfield>
+            <marc:subfield code="t">Jane Austen mystery.</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="830" ind1=" " ind2="0">
+            <marc:subfield code="a">Fasteners</marc:subfield>
+            <marc:subfield code="v">5</marc:subfield>
+            <marc:subfield code="w">(DE-101)550955267</marc:subfield>
+            <marc:subfield code="7">am</marc:subfield>
+        </marc:datafield>
+            
+            <marc:datafield tag="830" ind1=" " ind2="0">
+                <marc:subfield code="a">Europäische Hochschulschriften.</marc:subfield>
+                <marc:subfield code="n">Reihe XIV,</marc:subfield>
+                <marc:subfield code="p">Angelsächsische Sprache und Literatur ;</marc:subfield>
+                <marc:subfield code="v">Bd. 397.</marc:subfield>
+            </marc:datafield>
+            
+            
+            <marc:datafield tag="830" ind1="0" ind2=" ">
+                <marc:subfield code="a">Salzburg studies in English literature.</marc:subfield>
+                <marc:subfield code="1">http://fakeiri.edu/12345</marc:subfield>
+                <marc:subfield code="2">naf</marc:subfield>
+            </marc:datafield>
+            
+            <marc:datafield tag="830" ind1="0" ind2=" ">
+                <marc:subfield code="6">880-01</marc:subfield>
+                <marc:subfield code="a">Europäische Hochschulschriften.</marc:subfield>
+                <marc:subfield code="n">Reihe XIV,</marc:subfield>
+                <marc:subfield code="p">Angelsächsische Sprache und Literatur ;</marc:subfield>
+                <marc:subfield code="v">Bd. 397.</marc:subfield>
+            </marc:datafield>
+            <marc:datafield tag="880" ind1="0" ind2=" ">
+                <marc:subfield code="6">830-01</marc:subfield>
+                <marc:subfield code="a">Europäische Hochschulschriften.</marc:subfield>
+                <marc:subfield code="n">Reihe XIV,</marc:subfield>
+                <marc:subfield code="p">Angelsächsische Sprache und Literatur ;</marc:subfield>
+                <marc:subfield code="v">Bd. 397.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>
