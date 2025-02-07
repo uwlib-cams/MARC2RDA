@@ -363,11 +363,6 @@
     <row>
         <item>http://www.wikidata.org/entity/Q130324957</item>
         <itemLabel>Nippon decimal classification</itemLabel>
-        <LoC_and_MARC_vocabularies_ID>http://id.loc.gov/vocabulary/classSchemes/njb</LoC_and_MARC_vocabularies_ID>
-    </row>
-    <row>
-        <item>http://www.wikidata.org/entity/Q130324957</item>
-        <itemLabel>Nippon decimal classification</itemLabel>
         <LoC_and_MARC_vocabularies_ID>classSchemes/njb</LoC_and_MARC_vocabularies_ID>
     </row>
     <row>
@@ -489,71 +484,6 @@
         <item>http://www.wikidata.org/entity/Q130324982</item>
         <itemLabel>LÃ¸Ã¸vs klassifikationssystem</itemLabel>
         <LoC_and_MARC_vocabularies_ID>classSchemes/loovs</LoC_and_MARC_vocabularies_ID>
-    </row>
-    <row>
-        <item>http://www.wikidata.org/entity/Q130325087</item>
-        <itemLabel>Australian Governmentsâ€™ interactive functions thesaurus</itemLabel>
-        <LoC_and_MARC_vocabularies_ID>classSchemes/agift</LoC_and_MARC_vocabularies_ID>
-    </row>
-    <row>
-        <item>http://www.wikidata.org/entity/Q130325088</item>
-        <itemLabel>Astrofysikk</itemLabel>
-        <LoC_and_MARC_vocabularies_ID>classSchemes/no-ureal-ca</LoC_and_MARC_vocabularies_ID>
-    </row>
-    <row>
-        <item>http://www.wikidata.org/entity/Q130325089</item>
-        <itemLabel>Arkansas state documents classification scheme</itemLabel>
-        <LoC_and_MARC_vocabularies_ID>classSchemes/ardocs</LoC_and_MARC_vocabularies_ID>
-    </row>
-    <row>
-        <item>http://www.wikidata.org/entity/Q130325090</item>
-        <itemLabel>Arizona documents: KWOC manual</itemLabel>
-        <LoC_and_MARC_vocabularies_ID>classSchemes/azdocs</LoC_and_MARC_vocabularies_ID>
-    </row>
-    <row>
-        <item>http://www.wikidata.org/entity/Q130325091</item>
-        <itemLabel>Annehurst curriculum classification system</itemLabel>
-        <LoC_and_MARC_vocabularies_ID>classSchemes/accs</LoC_and_MARC_vocabularies_ID>
-    </row>
-    <row>
-        <item>http://www.wikidata.org/entity/Q130325092</item>
-        <itemLabel>Alphabetical list of state agencies and corresponding Swank classification</itemLabel>
-        <LoC_and_MARC_vocabularies_ID>classSchemes/ridocs</LoC_and_MARC_vocabularies_ID>
-    </row>
-    <row>
-        <item>http://www.wikidata.org/entity/Q130325093</item>
-        <itemLabel>Allgemeine Systematik fÃ¼r Ã¶ffentliche Bibliotheken (ASB)</itemLabel>
-        <LoC_and_MARC_vocabularies_ID>classSchemes/asb</LoC_and_MARC_vocabularies_ID>
-    </row>
-    <row>
-        <item>http://www.wikidata.org/entity/Q130325095</item>
-        <itemLabel>AGRIS: subject categories</itemLabel>
-        <LoC_and_MARC_vocabularies_ID>classSchemes/agrissc</LoC_and_MARC_vocabularies_ID>
-    </row>
-    <row>
-        <item>http://www.wikidata.org/entity/Q130325096</item>
-        <itemLabel>AGRICOLA subject category codes</itemLabel>
-        <LoC_and_MARC_vocabularies_ID>classSchemes/agricola</LoC_and_MARC_vocabularies_ID>
-    </row>
-    <row>
-        <item>http://www.wikidata.org/entity/Q130325097</item>
-        <itemLabel>ACM computing classification system</itemLabel>
-        <LoC_and_MARC_vocabularies_ID>classSchemes/acmccs</LoC_and_MARC_vocabularies_ID>
-    </row>
-    <row>
-        <item>http://www.wikidata.org/entity/Q130325098</item>
-        <itemLabel>A Keyword-in-context to Florida public documents in the Florida Atlantic University Library</itemLabel>
-        <LoC_and_MARC_vocabularies_ID>classSchemes/fldocs</LoC_and_MARC_vocabularies_ID>
-    </row>
-    <row>
-        <item>http://www.wikidata.org/entity/Q130325099</item>
-        <itemLabel>A Classification scheme for Chinese and Japanese books</itemLabel>
-        <LoC_and_MARC_vocabularies_ID>classSchemes/cscjb</LoC_and_MARC_vocabularies_ID>
-    </row>
-    <row>
-        <item>http://www.wikidata.org/entity/Q130325100</item>
-        <itemLabel>State documents classification schedule</itemLabel>
-        <LoC_and_MARC_vocabularies_ID>classSchemes/sddocs</LoC_and_MARC_vocabularies_ID>
     </row>
     <row>
         <item>http://www.wikidata.org/entity/Q130324983</item>
@@ -1059,5 +989,680 @@
         <item>http://www.wikidata.org/entity/Q130325086</item>
         <itemLabel>Barnard, Cyril C. A classification for medical and veterinary libraries</itemLabel>
         <LoC_and_MARC_vocabularies_ID>classSchemes/bar</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159358</item>
+        <itemLabel>RDA mode of issuance</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdami</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159359</item>
+        <itemLabel>RDA polarity</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdapo</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159360</item>
+        <itemLabel>RDA presentation format</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdapf</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159361</item>
+        <itemLabel>RDA production method</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdapm</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159362</item>
+        <itemLabel>RDA recording medium</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdarm</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159363</item>
+        <itemLabel>RDA reduction ratio designation</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdarr</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159364</item>
+        <itemLabel>RDA regional encoding</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdare</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159365</item>
+        <itemLabel>RDA sound content</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdasco</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159366</item>
+        <itemLabel>RDA special playback characteristic</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdaspc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159367</item>
+        <itemLabel>RDA track configuration</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdatc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159368</item>
+        <itemLabel>RDA type of binding</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdatb</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159369</item>
+        <itemLabel>RDA type of recording</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdatr</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159370</item>
+        <itemLabel>RDA video format</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdavf</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159371</item>
+        <itemLabel>Resource description and access; Published by Association of College and Research Libraries ALA in Chicago</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rda</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159372</item>
+        <itemLabel>REVEAL: fiction indexing and genre headings</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/reveal</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159373</item>
+        <itemLabel>Revised nomenclature for museum cataloging: a revised and expanded version of Robert C. Chenhall's system for classifying man-made objects</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/nmc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159374</item>
+        <itemLabel>Suomalainen lajityyppi-ja muotosanasto</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/slm</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159375</item>
+        <itemLabel>Supplementary content</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/msupplcont</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159377</item>
+        <itemLabel>Svenska Ã¤mnesord - Genre/Form</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/saogf</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159378</item>
+        <itemLabel>Svenska Ã¤mnesord fÃ¶r barn - Genre</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/barngf</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159379</item>
+        <itemLabel>Svenska genrebeteckningar fÃ¶r periodika</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/sgp</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159380</item>
+        <itemLabel>Term and code list for RDA carrier types</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdacarrier</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159381</item>
+        <itemLabel>Term and code list for RDA content types</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdacontent</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159382</item>
+        <itemLabel>Term and code list for RDA media types</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdamedia</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159383</item>
+        <itemLabel>Termes de gÃ¨nere i forma en catalÃ </itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/tgfc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159384</item>
+        <itemLabel>TÃ©rminos de gÃ©nero/forma de la Biblioteca Nacional de EspaÃ±a</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/tgfbne</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159385</item>
+        <itemLabel>Termos de xÃ©nero e forma en galego</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/buscxf</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159386</item>
+        <itemLabel>Tezaurus za Å¾anr ili oblik (Zagreb: Nacionalna i sveuÄiliÅ¡na knjiÅ¾nica u Zagrebu)</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/nskzs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159387</item>
+        <itemLabel>Thema</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/thema</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159388</item>
+        <itemLabel>ThÃ©saurus des descripteurs de genre/forme de l'UniversitÃ© Laval</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rvmgf</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159389</item>
+        <itemLabel>Thesaurus for graphic materials: TGM II, Genre and physical characteristic terms</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/gmgpc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159390</item>
+        <itemLabel>Thesaurus of ephemera terms</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/tept</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159391</item>
+        <itemLabel>Type evidence: a thesaurus for use in rare book and special collections cataloging</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rbtyp</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159392</item>
+        <itemLabel>Video game metadata schema: controlled vocabulary for gameplay genre</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/vgmsgg</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159393</item>
+        <itemLabel>Video game metadata schema: controlled vocabulary for narrative genre</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/vgmsng</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325087</item>
+        <itemLabel>Australian Governmentsâ€™ interactive functions thesaurus</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/agift</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325088</item>
+        <itemLabel>Astrofysikk</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/no-ureal-ca</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325089</item>
+        <itemLabel>Arkansas state documents classification scheme</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ardocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325090</item>
+        <itemLabel>Arizona documents: KWOC manual</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/azdocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325091</item>
+        <itemLabel>Annehurst curriculum classification system</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/accs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325092</item>
+        <itemLabel>Alphabetical list of state agencies and corresponding Swank classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/ridocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325093</item>
+        <itemLabel>Allgemeine Systematik fÃ¼r Ã¶ffentliche Bibliotheken (ASB)</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/asb</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325095</item>
+        <itemLabel>AGRIS: subject categories</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/agrissc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325096</item>
+        <itemLabel>AGRICOLA subject category codes</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/agricola</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325097</item>
+        <itemLabel>ACM computing classification system</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/acmccs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325098</item>
+        <itemLabel>A Keyword-in-context to Florida public documents in the Florida Atlantic University Library</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/fldocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325099</item>
+        <itemLabel>A Classification scheme for Chinese and Japanese books</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/cscjb</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q130325100</item>
+        <itemLabel>State documents classification schedule</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>classSchemes/sddocs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159267</item>
+        <itemLabel>an alphabetical list of English text types</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/alett</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159268</item>
+        <itemLabel>Anglo-American Cataloguing Rules general material designation</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/gmd</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159269</item>
+        <itemLabel>Audiovisual material glossary</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/amg</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159270</item>
+        <itemLabel>Basic genre terms for cultural heritage materials</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/bgtchm</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159271</item>
+        <itemLabel>Binding terms: a thesaurus for use in rare book and special collections cataloguing</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rbbin</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159272</item>
+        <itemLabel>Buddhist Digital Resource Center</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/bdrc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159273</item>
+        <itemLabel>Center for Jewish History thesaurus</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/cjh</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159274</item>
+        <itemLabel>Centraal Bestand Kinderboeken</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/cbk</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159275</item>
+        <itemLabel>COAR vocabulary for resource types</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/coarrt</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159276</item>
+        <itemLabel>Dublin Core list of resource types</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/dct</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159277</item>
+        <itemLabel>English short title catalogue</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/estc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159278</item>
+        <itemLabel>Films by genre</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/fbg</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159279</item>
+        <itemLabel>Form terms for archival and manuscripts control</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/ftamc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159280</item>
+        <itemLabel>Form/genre terms for printed cartoon material</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/fgtpcm</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159281</item>
+        <itemLabel>Gattungsbegriffe</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/gatbeg</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159282</item>
+        <itemLabel>Gemeinsame Normdatei</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/gnd</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159283</item>
+        <itemLabel>Gemeinsame Normdatei: Beschreibung des Inhalts</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/gnd-content</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159284</item>
+        <itemLabel>Gemeinsame Normdatei: DatentrÃ¤gertyp</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/gnd-carrier</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159285</item>
+        <itemLabel>Gemeinsame Normdatei: Musikalische Ausgabeform</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/gnd-music</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159286</item>
+        <itemLabel>Gender, sex, and sexal orientation ontology</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/gsso</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159287</item>
+        <itemLabel>Genre terms for law materials: a thesaurus</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/gtlm</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159288</item>
+        <itemLabel>Genre terms for makerspace materials</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/gtmm</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159289</item>
+        <itemLabel>Genre terms for tabletop games</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/gttg</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159290</item>
+        <itemLabel>Genre terms: a thesaurus for use in rare book and special collections cataloguing</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rbgenr</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159291</item>
+        <itemLabel>Glossary of Early Modern Popular Print Genres</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/gemppg</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159292</item>
+        <itemLabel>Guidelines on subject access to individual works of fiction, drama, etc</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/gsafd</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159293</item>
+        <itemLabel>IdRef: identifiants et rÃ©fÃ©rentiels</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/idref</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159294</item>
+        <itemLabel>ISBD Area 0 [content]</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/isbdcontent</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159295</item>
+        <itemLabel>ISBD Area 0 [media]</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/isbdmedia</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159296</item>
+        <itemLabel>Language of Bindings Thesaurus</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/lobt</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159297</item>
+        <itemLabel>Library of Congress genre/form terms for library and archival materials</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/lcgft</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159298</item>
+        <itemLabel>MARC form category term list</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/marccategory</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159299</item>
+        <itemLabel>MARC form of item term list</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/marcform</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159301</item>
+        <itemLabel>MARC genre terms</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/marcgt</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159302</item>
+        <itemLabel>MARC specific material form term list</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/marcsmd</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159303</item>
+        <itemLabel>Metatietosanasto</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/mts</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159304</item>
+        <itemLabel>Moving image genre-form guide</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/migfg</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159305</item>
+        <itemLabel>Moving image materials: genre terms</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/mim</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159306</item>
+        <itemLabel>MuzeVideo UK DVD and UMD film genre classification</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/muzeukv</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159307</item>
+        <itemLabel>National Diet Library in Japan genre/form terms for library materials</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/ndlgft</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159308</item>
+        <itemLabel>National Library of Greece genre/form for library materials</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/nlggf</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159309</item>
+        <itemLabel>NBD Biblion Genres Fictie</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/nbdbgf</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159310</item>
+        <itemLabel>New Zealand Choral and Orchestral hire form and genre terms</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/nzcoh</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159311</item>
+        <itemLabel>Newspaper genre list</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/ngl</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159312</item>
+        <itemLabel>NIMA form codes</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/nimafc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159313</item>
+        <itemLabel>Nippon Cataloging Rules (2018 ed.) broadcast standard</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/ncrbs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159314</item>
+        <itemLabel>Nippon Cataloging Rules (2018 ed.) carrier types</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/ncrcarrier</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159315</item>
+        <itemLabel>Nippon Cataloging Rules (2018 ed.) configuration of playback channels</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/ncrcpc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159316</item>
+        <itemLabel>Nippon Cataloging Rules (2018 ed.) content types</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/ncrcontent</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159317</item>
+        <itemLabel>Nippon Cataloging Rules (2018 ed.) file type</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/ncrft</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159318</item>
+        <itemLabel>Nippon Cataloging Rules (2018 ed.) font size</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/ncrfs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159319</item>
+        <itemLabel>Nippon Cataloging Rules (2018 ed.) material</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/ncrmat</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159320</item>
+        <itemLabel>Nippon Cataloging Rules (2018 ed.) media types</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/ncrmedia</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159321</item>
+        <itemLabel>Nippon Cataloging Rules (2018 ed.) polarity</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/ncrpo</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159322</item>
+        <itemLabel>Nippon Cataloging Rules (2018 ed.) production method</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/ncrpm</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159323</item>
+        <itemLabel>Nippon Cataloging Rules (2018 ed.) recording medium</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/ncrrm</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159324</item>
+        <itemLabel>Nippon Cataloging Rules (2018 ed.) type of recording</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/ncrtr</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159325</item>
+        <itemLabel>Nippon Cataloging Rules (2018 ed.) video format</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/ncrvf</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159326</item>
+        <itemLabel>Nomenclature for Museum Cataloging</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/nom</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159327</item>
+        <itemLabel>Norsk tesaurus for sjanger og form</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/ntsf</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159328</item>
+        <itemLabel>OLAC Video Game Genre Terms</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/olacvggt</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159329</item>
+        <itemLabel>Paper terms: a thesaurus for use in rare book and special collections cataloging</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rbpap</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159330</item>
+        <itemLabel>Printing &amp; publishing evidence: a thesaurus for use in rare book and special collections cataloging</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rbpri</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159331</item>
+        <itemLabel>Provenance evidence: a thesaurus for use in rare book and special collections cataloging</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rbprov</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159332</item>
+        <itemLabel>PrÃ¸ysen: emneord for PrÃ¸ysen-bibliografien</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/proysen</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159333</item>
+        <itemLabel>Radio form / genre terms guide</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/radfg</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159334</item>
+        <itemLabel>RBMS Controlled Vocabularies</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rbmscv</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159336</item>
+        <itemLabel>RDA aspect ratio designation</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdaar</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159337</item>
+        <itemLabel>RDA bibliographic format</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdaabf</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159338</item>
+        <itemLabel>RDA broadcast standard</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdabs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159339</item>
+        <itemLabel>RDA carrier type</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdact</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159340</item>
+        <itemLabel>RDA colour content</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdacc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159341</item>
+        <itemLabel>RDA configuration of playback channels</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdacpc</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159342</item>
+        <itemLabel>RDA content type</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdaco</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159343</item>
+        <itemLabel>RDA extention plan</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdaep</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159344</item>
+        <itemLabel>RDA file type</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdaft</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159345</item>
+        <itemLabel>RDA font size</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdafs</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159346</item>
+        <itemLabel>RDA form of musical notation</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdafmn</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159347</item>
+        <itemLabel>RDA form of notated music</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdafnm</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159348</item>
+        <itemLabel>RDA frequency</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdafr</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159350</item>
+        <itemLabel>RDA generation</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdagen</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159351</item>
+        <itemLabel>RDA groove pitch of an analog cylinder</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdagrp</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159352</item>
+        <itemLabel>RDA groove width of an analog disc</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdagw</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159353</item>
+        <itemLabel>RDA illustrative content</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdaill</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159355</item>
+        <itemLabel>RDA layout</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdalay</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159356</item>
+        <itemLabel>RDA material</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdamat</LoC_and_MARC_vocabularies_ID>
+    </row>
+    <row>
+        <item>http://www.wikidata.org/entity/Q132159357</item>
+        <itemLabel>RDA media type</itemLabel>
+        <LoC_and_MARC_vocabularies_ID>genreFormSchemes/rdamt</LoC_and_MARC_vocabularies_ID>
     </row>
 </root>
