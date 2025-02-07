@@ -45,6 +45,7 @@
     <xsl:mode name="tim" on-no-match="shallow-skip"/>
     
     <xsl:import href="m2r-functions.xsl"/>
+    <xsl:import href="m2r-aps.xsl"/>
     
     <!-- base IRI for now - all minted entities begin with this -->
     <xsl:param name="BASE" select="'http://marc2rda.edu/fake/'"/>
