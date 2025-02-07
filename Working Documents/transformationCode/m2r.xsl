@@ -237,12 +237,12 @@
                             
                             <!-- This code can be uncommented to add a work access point to the work description.
                     uwf:mainWorkAccessPoint() is located in m2r-functions.xsl -->
-                           <!-- <xsl:variable name="aggWorkAP" select="uwf:mainWorkAccessPoint(.)"/>
-                            <xsl:if test="$workAP">
+                            <xsl:variable name="aggWorkAP" select="uwf:aggWorkAccessPoint(.)"/>
+                            <xsl:if test="$aggWorkAP">
                                 <rdawd:P10328>
-                                    <xsl:value-of select="$workAP"/>
+                                    <xsl:value-of select="$aggWorkAP"/>
                                 </rdawd:P10328>
-                            </xsl:if>-->
+                            </xsl:if>
                             
                             <xsl:apply-templates select="*" mode="wor">
                                 <xsl:with-param name="baseID" select="$baseID"/>

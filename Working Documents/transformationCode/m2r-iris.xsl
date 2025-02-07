@@ -159,7 +159,7 @@
     
     <xsl:function name="uwf:aggWorkIRI">
         <xsl:param name="record"/>
-        <xsl:value-of select="$BASE||'transform/aggWor#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainWorkAccessPoint($record)))"/>
+        <xsl:value-of select="$BASE||'transform/aggWor#'||encode-for-uri(uwf:stripAllPunctuation(uwf:aggWorkAccessPoint($record)))"/>
     </xsl:function>
     
     <xsl:function name="uwf:mainExpressionIRI">
@@ -227,12 +227,12 @@
     
     <xsl:function name="uwf:mainManifestationIRI">
         <xsl:param name="record"/>
-        <xsl:value-of select="$BASE||'transform/man#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainManifestationAccessPoint($record)))"/>
+        <xsl:value-of select="$BASE||'transform/man#'||encode-for-uri(uwf:stripAllPunctuation(uwf:recordIdentifier($record)))||encode-for-uri(uwf:stripAllPunctuation(uwf:mainManifestationAccessPoint($record)))"/>
     </xsl:function>
     
     <xsl:function name="uwf:origManifestationIRI">
         <xsl:param name="record"/>
-        <xsl:value-of select="$BASE||'transform/origMan#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainManifestationAccessPoint($record)))"/>
+        <xsl:value-of select="$BASE||'transform/origMan#'||encode-for-uri(uwf:stripAllPunctuation(uwf:recordIdentifier($record)))||encode-for-uri(uwf:stripAllPunctuation(uwf:mainManifestationAccessPoint($record)))"/>
     </xsl:function>
     
     <!-- returns an IRI for an item -->
