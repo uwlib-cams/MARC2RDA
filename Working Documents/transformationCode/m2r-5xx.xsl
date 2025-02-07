@@ -448,6 +448,7 @@
     </xsl:template>
     
     <!-- 520 - Summary, Etc.-->
+    
     <xsl:template
         match="marc:datafield[@tag = '520'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '520']"
         mode="exp">
@@ -525,6 +526,15 @@
     <!-- 527 - Censorship Note -->
     <xsl:template
         match="marc:datafield[@tag = '527'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '527']"
+        mode="aggWor">
+        <!--<xsl:call-template name="getmarc"/>-->
+        <rdawd:P10330>
+            <xsl:value-of select="marc:subfield[@code = 'a']"/>
+        </rdawd:P10330>
+    </xsl:template>
+    
+    <xsl:template
+        match="marc:datafield[@tag = '527'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '527']"
         mode="exp">
         <!--<xsl:call-template name="getmarc"/>-->
         <rdaed:P20071>
@@ -558,6 +568,58 @@
                         <xsl:with-param name="char19" select="substring(., 14, 1)"/>
                     </xsl:call-template>
                 </xsl:if>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template
+        match="marc:datafield[@tag = '533'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '533']"
+        mode="aggWor" expand-text="yes">
+        <xsl:if test="marc:subfield[@code = '7']">
+            <xsl:variable name="ldr6-7" select="substring(preceding-sibling::marc:leader, 7, 2)"/>
+            <xsl:for-each select="marc:subfield[@code = '7']">
+                <!-- c14 = 008/23 or 008/29 -->
+                <xsl:choose>
+                    <!-- books -->
+                    <xsl:when test="$ldr6-7 = 'aa' or $ldr6-7 = 'ac' or $ldr6-7 = 'ad' or $ldr6-7 = 'am'
+                        or $ldr6-7 = 'ca' or $ldr6-7 = 'cc' or $ldr6-7 = 'cd' or $ldr6-7 = 'cm'">
+                        <xsl:call-template name="F008-c23_29-f-SOME-aggWor">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                    <!-- continuing resources -->
+                    <xsl:when test="$ldr6-7 = 'ab' or $ldr6-7 = 'ai' or $ldr6-7 = 'as'">
+                        <xsl:call-template name="F008-c23_29-f-SOME-aggWor">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                    <!-- maps -->
+                    <xsl:when test="substring($ldr6-7, 1, 1) = 'e' or substring($ldr6-7, 1, 1) = 'f'">
+                        <xsl:call-template name="F008-c23_29-f-SOME-aggWor">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                    <!-- mixed materials -->
+                    <xsl:when test="substring($ldr6-7, 1, 1) = 'p'">
+                        <xsl:call-template name="F008-c23_29-f-SOME-aggWor">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                    <!-- music -->
+                    <xsl:when test="substring($ldr6-7, 1, 1) = 'i' or substring($ldr6-7, 1, 1) = 'j'
+                        or substring($ldr6-7, 1, 1) = 'c' or substring($ldr6-7, 1, 1) = 'd'">
+                        <xsl:call-template name="F008-c23_29-f-SOME-aggWor">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                    <!-- visual materials -->
+                    <xsl:when test="substring($ldr6-7, 1, 1) = 'g' or substring($ldr6-7, 1, 1) = 'k'
+                        or substring($ldr6-7, 1, 1) = 'o' or substring($ldr6-7, 1, 1) = 'r'">
+                        <xsl:call-template name="F008-c23_29-f-SOME-aggWor">
+                            <xsl:with-param name="char23_29" select="substring(., 15, 1)"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                </xsl:choose>
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
@@ -956,6 +1018,21 @@
     </xsl:template>
 
     <!-- 546 - Language Note -->
+    <xsl:template
+        match="marc:datafield[@tag = '546'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '546']"
+        mode="aggWor" expand-text="yes">
+        <!--<xsl:call-template name="getmarc"/>-->
+        <xsl:for-each select="marc:subfield[@code = 'b']">
+            <rdawd:P10330>
+                <xsl:text>Form of notation: </xsl:text>
+                <xsl:value-of select="."/>
+                <xsl:if test="../marc:subfield[@code = '3']">
+                    <xsl:text> (Applies to a manifestation's {../marc:subfield[@code = '3']})</xsl:text>
+                </xsl:if>
+            </rdawd:P10330>
+        </xsl:for-each>
+    </xsl:template>
+    
     <xsl:template
         match="marc:datafield[@tag = '546'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '546']"
         mode="exp" expand-text="yes">
@@ -1399,6 +1476,21 @@
     </xsl:template>
     
     <!-- 586 - Awards Note -->
+    <xsl:template
+        match="marc:datafield[@tag = '586'] |  marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '586']"
+        mode="aggWor" expand-text="yes">
+        <!--<xsl:call-template name="getmarc"/>-->
+        <xsl:if test="marc:subfield[@code = 'a']">
+            <rdawd:P10330>
+                <xsl:text>Award: </xsl:text>
+                <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                <xsl:if test="marc:subfield[@code = '3']">
+                    <xsl:text> (Applies to: {marc:subfield[@code = '3']})</xsl:text>
+                </xsl:if>
+            </rdawd:P10330>
+        </xsl:if>
+    </xsl:template>
+    
     <xsl:template
         match="marc:datafield[@tag = '586'] |  marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '586']"
         mode="exp" expand-text="yes">

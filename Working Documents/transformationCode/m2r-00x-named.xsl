@@ -649,6 +649,37 @@
         </xsl:choose>
     </xsl:template>
     
+    <xsl:template name="F008-c18-21-MP-aggWor" expand-text="yes">
+        <xsl:param name="char18-21"/>
+        <xsl:choose>
+            <xsl:when test="$char18-21 = '    '">
+                <rdawd:P10330>
+                    <xsl:text>No relief shown.</xsl:text>
+                </rdawd:P10330>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:analyze-string select="$char18-21" regex=".{{1}}">
+                    <xsl:matching-substring>
+                        <xsl:if test=". != ' ' and . != '|' and . != 'z'">
+                            <xsl:choose>
+                                <xsl:when test=". = 'h'">
+                                    <rdawd:P10330>
+                                        <xsl:text>Relief representation: https://doi.org/10.6069/uwlswd.1c2x-cj09#hx</xsl:text>
+                                    </rdawd:P10330>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <rdawd:P10330>
+                                        <xsl:text>Relief representation: {concat('https://doi.org/10.6069/uwlswd.1c2x-cj09#', .)}</xsl:text>
+                                    </rdawd:P10330>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:if>
+                    </xsl:matching-substring>
+                </xsl:analyze-string>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
     <xsl:template name="F008-c18-19-MU">
         <xsl:param name="char18-19"/>
         <xsl:if test="not(contains($char18-19, ' ')) and not(contains($char18-19, '|')) 
@@ -666,12 +697,21 @@
         </xsl:if>
     </xsl:template>
     
+    <xsl:template name="F008-c18-20-VM-aggWor" expand-text="yes">
+        <xsl:param name="char18-20"/>
+        <xsl:if test="matches($char18-20, '\d\d\d') and $char18-20 != '000'">
+            <rdawd:P10351>
+                <xsl:text>Duration: {$char18-20} minutes.</xsl:text>
+            </rdawd:P10351>
+        </xsl:if>
+    </xsl:template>
+    
     <xsl:template name="F008-c18-20-VM-origMan" expand-text="yes">
         <xsl:param name="char18-20"/>
         <xsl:if test="$char18-20 = '000'">
-            <rdamd:P20219>
+            <rdamd:P30137>
                 <xsl:text>Duration: exceeds 16 hours, 39 minutes.</xsl:text>
-            </rdamd:P20219>
+            </rdamd:P30137>
         </xsl:if>
     </xsl:template>
     
@@ -722,6 +762,44 @@
         </xsl:if>
     </xsl:template>
     
+    <xsl:template name="F008-c20-MU-aggWor" expand-text="yes">
+        <xsl:param name="char20"/>
+        <xsl:if test="$char20 != ' ' and $char20 != '|' and $char20 != 'u' and $char20 != 'z' and $char20 != 'n'">
+            <xsl:choose>
+                <xsl:when test="$char20 = 'h'">
+                    <rdawd:P10330>
+                        <xsl:text>Format of notated music: http://rdaregistry.info/termList/formatNoteMus/1002</xsl:text>
+                    </rdawd:P10330>
+                </xsl:when>
+                <xsl:when test="$char20 = 'i'">
+                    <rdawd:P10330>
+                        <xsl:text>Format of notated music: http://rdaregistry.info/termList/formatNoteMus/1003</xsl:text>
+                    </rdawd:P10330>
+                </xsl:when>
+                <xsl:when test="$char20 = 'k'">
+                    <rdawd:P10330>
+                        <xsl:text>Format of notated music: http://rdaregistry.info/termList/formatNoteMus/1011</xsl:text>
+                    </rdawd:P10330>
+                </xsl:when>
+                <xsl:when test="$char20 = 'l'">
+                    <rdawd:P10330>
+                        <xsl:text>Format of notated music: http://rdaregistry.info/termList/formatNoteMus/1007</xsl:text>
+                    </rdawd:P10330>
+                </xsl:when>
+                <xsl:when test="$char20 = 'p'">
+                    <rdawd:P10330>
+                        <xsl:text>Format of notated music: http://rdaregistry.info/termList/formatNoteMus/1006</xsl:text>
+                    </rdawd:P10330>
+                </xsl:when>
+                <xsl:otherwise>
+                    <rdawd:P10330>
+                        <xsl:text>Format of notated music: {concat('https://doi.org/10.6069/uwlswd.06xx-6744#', $char20)}</xsl:text>
+                    </rdawd:P10330>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:if>
+    </xsl:template>
+    
     <xsl:template name="F008-c21-CR">
         <xsl:param name="char21"/>
         <xsl:if test="$char21 != ' ' and $char21 != '|'">
@@ -736,11 +814,29 @@
         </xsl:if>    
     </xsl:template>
     
+    <xsl:template name="F008-c21-MU-aggWor" expand-text="yes">
+        <xsl:param name="char21"/>
+        <xsl:if test="$char21 = 'd' or $char21 = 'e' or $char21 = 'f'">
+            <rdawd:P10330>
+                <xsl:text>Format of notated music: {concat('https://doi.org/10.6069/uwlswd.ywjs-vr46#', $char21)}</xsl:text>
+            </rdawd:P10330>
+        </xsl:if>    
+    </xsl:template>
+    
     <xsl:template name="F008-c22-SOME">
         <xsl:param name="char22"/>
         <xsl:choose>
             <xsl:when test="$char22 != ' ' and $char22 != '|'">
                 <rdae:P20322 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.aec4-nv40#', $char22)}"/>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template name="F008-c22-SOME-aggWor">
+        <xsl:param name="char22"/>
+        <xsl:choose>
+            <xsl:when test="$char22 != ' ' and $char22 != '|'">
+                <rdawo:P10217 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.aec4-nv40#', $char22)}"/>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
@@ -801,6 +897,13 @@
         </xsl:if>
     </xsl:template>
     
+    <xsl:template name="F008-c22-23-MP-aggWor">
+        <xsl:param name="char22-23"/>
+        <xsl:if test="not(contains($char22-23, ' ')) and not(contains($char22-23, '|')) and $char22-23 != 'zz'">
+            <rdawo:P10355 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.4jrs-m847#', $char22-23)}"/>
+        </xsl:if>
+    </xsl:template>
+    
     <xsl:template name="F008-c23_29-dqs-SOME-origMan">
         <xsl:param name="char23_29"/>
         <xsl:choose>
@@ -856,6 +959,15 @@
         <xsl:param name="char23_29"/>
         <xsl:if test="$char23_29 = 'f'">
             <rdae:P20061 rdf:resource="{'http://rdaregistry.info/termList/TacNotation/1001'}"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F008-c23_29-f-SOME-aggWor" expand-text="yes">
+        <xsl:param name="char23_29"/>
+        <xsl:if test="$char23_29 = 'f'">
+            <rdawd:P10330>
+                <xsl:text>Form of tactile notation: http://rdaregistry.info/termList/TacNotation/1001</xsl:text>
+            </rdawd:P10330>
         </xsl:if>
     </xsl:template>
     
@@ -984,6 +1096,37 @@
                 <rdaed:P20317>
                     <xsl:text>Washington, D.C.</xsl:text>
                 </rdaed:P20317>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template name="F008-c24-MP-aggWor">
+        <xsl:param name="char24"/>
+        <xsl:choose>
+            <xsl:when test="$char24 = 'e'">
+                <rdawd:P10330>
+                    <xsl:text>Prime meridian: Greenwich</xsl:text>
+                </rdawd:P10330>
+            </xsl:when>
+            <xsl:when test="$char24 = 'f'">
+                <rdawd:P10330>
+                    <xsl:text>Prime meridian: Ferro</xsl:text>
+                </rdawd:P10330>
+            </xsl:when>
+            <xsl:when test="$char24 = 'g'">
+                <rdawd:P10330>
+                    <xsl:text>Prime meridian: Paris</xsl:text>
+                </rdawd:P10330>
+            </xsl:when>
+            <xsl:when test="$char24 = 'p'">
+                <rdawd:P10330>
+                    <xsl:text>Prime meridian: Philadelphia</xsl:text>
+                </rdawd:P10330>
+            </xsl:when>
+            <xsl:when test="$char24 = 'w'">
+                <rdawd:P10330>
+                    <xsl:text>Prime meridian: Washington, D.C.</xsl:text>
+                </rdawd:P10330>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
@@ -1128,6 +1271,15 @@
         </xsl:if>
     </xsl:template>
     
+    <xsl:template name="F008-c30-31-__-MU-aggWor" expand-text="yes">
+        <xsl:param name="char30-31"/>
+        <xsl:if test="$char30-31 = '  '">
+            <rdawd:P10330>
+                <xsl:text>Category of expression: https://doi.org/10.6069/uwlswd.23tq-5e25#pound</xsl:text>
+            </rdawd:P10330>
+        </xsl:if>
+    </xsl:template>
+    
     <xsl:template name="F008-c31-BK">
         <xsl:param name="char31"/>
         <xsl:if test="$char31 = '1'">
@@ -1245,6 +1397,22 @@
         </xsl:analyze-string>
     </xsl:template>
     
+    <xsl:template name="F008-c33-34-jm-MP-aggWor" expand-text="yes">
+        <xsl:param name="char33-34"/>
+        <xsl:analyze-string select="$char33-34" regex=".{{1}}">
+            <xsl:matching-substring>
+                <xsl:if test=". = 'm'">
+                    <rdawd:P10330>
+                        <xsl:text>Form of tactile notation: http://rdaregistry.info/termList/TacNotation/1001</xsl:text>
+                    </rdawd:P10330>
+                </xsl:if>
+                <xsl:if test=". = 'j'">
+                    <rdawo:P10349 rdf:resource="{'http://rdaregistry.info/termList/RDAContentType/1002'}"/>
+                </xsl:if>
+            </xsl:matching-substring>
+        </xsl:analyze-string>
+    </xsl:template>
+    
     <xsl:template name="F008-c33-34-MP-origMan">
         <xsl:param name="char33-34"/>
         <xsl:analyze-string select="$char33-34" regex=".{{1}}">
@@ -1302,6 +1470,15 @@
         <xsl:param name="char33"/>
         <xsl:if test="$char33 != ' ' and $char33 != '|' and $char33 != 'n' and $char33 != 'u' and $char33 != 'z'">
             <rdae:P20331 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.axz0-z371#', $char33)}"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F008-c33-MU-aggWor" expand-text="yes">
+        <xsl:param name="char33"/>
+        <xsl:if test="$char33 != ' ' and $char33 != '|' and $char33 != 'n' and $char33 != 'u' and $char33 != 'z'">
+            <rdawd:P10330>
+                <xsl:text>Category of expression: {concat('https://doi.org/10.6069/uwlswd.axz0-z371#', $char33)}</xsl:text>
+            </rdawd:P10330>
         </xsl:if>
     </xsl:template>
     

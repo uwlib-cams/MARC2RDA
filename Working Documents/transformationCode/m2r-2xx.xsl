@@ -25,7 +25,7 @@
     <xsl:import href="m2r-functions.xsl"/>
     <xsl:import href="m2r-iris.xsl"/>
     
-    <xsl:template match="marc:datafield[@tag = '245'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '245']" mode="wor" >
+    <xsl:template match="marc:datafield[@tag = '245'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '245']" mode="wor augWor" >
         <!--<xsl:call-template name="getmarc"/>-->
         <!-- copy of 245 where last subfield's ending punctuation (, or .) is removed -->
         <xsl:variable name="copy245">
@@ -425,6 +425,27 @@
                 <xsl:value-of select="concat('Exclusion G-ring coordinate pairs: ', marc:subfield[@code = 'g'])"/>
             </rdawd:P10024>
         </xsl:if>   
+    </xsl:template>
+    <!-- Aggregating work -->
+    <xsl:template match="marc:datafield[@tag = '255'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '255']"
+        mode="aggWor" expand-text="yes">
+        <!--<xsl:call-template name="getmarc"/>-->
+        <xsl:if test="marc:subfield[@code = 'a'][matches(., '[0-9]')]">
+            <rdawd:P10356>
+                <xsl:value-of select="marc:subfield[@code = 'a']"/>
+            </rdawd:P10356>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'a'][not(matches(., '[0-9]'))]">
+            <rdawd:P10330>
+                <xsl:text>Scale designation: </xsl:text>
+                <xsl:value-of select="marc:subfield[@code = 'a']"/>
+            </rdawd:P10330>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'b']">
+            <rdawd:P10355>
+                <xsl:value-of select="marc:subfield[@code = 'b']"/>
+            </rdawd:P10355>
+        </xsl:if>
     </xsl:template>
     <!-- Expression -->
     <xsl:template match="marc:datafield[@tag = '255'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '255']"

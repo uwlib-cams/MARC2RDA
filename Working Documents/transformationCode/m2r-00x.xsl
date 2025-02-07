@@ -372,6 +372,101 @@
     </xsl:template>
     
     <xsl:template match="marc:controlfield[@tag = '008']" 
+        mode="aggWor" expand-text="yes">
+        <!--<xsl:call-template name="getmarc"/>-->
+        <xsl:variable name="ldr6-7" select="substring(preceding-sibling::marc:leader, 7, 2)"/>
+        
+        <xsl:variable name="char35-37" select="substring(., 36, 3)"/>
+        <xsl:if test="not(contains($char35-37, ' '))">
+            <rdawo:P10353 rdf:resource="{normalize-space(concat('http://id.loc.gov/vocabulary/languages/', $char35-37))}"/>
+        </xsl:if>
+        
+        <xsl:choose>
+            <!-- books -->
+            <xsl:when test="$ldr6-7 = 'aa' or $ldr6-7 = 'ac' or $ldr6-7 = 'ad' or $ldr6-7 = 'am'
+                or $ldr6-7 = 'ca' or $ldr6-7 = 'cc' or $ldr6-7 = 'cd' or $ldr6-7 = 'cm'">
+                <xsl:call-template name="F008-c22-SOME-aggWor">
+                    <xsl:with-param name="char22" select="substring(., 23, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F008-c23_29-f-SOME-aggWor">
+                    <xsl:with-param name="char23_29" select="substring(., 24, 1)"/>
+                </xsl:call-template>
+            </xsl:when>
+            <!-- computer files -->
+            <xsl:when test="substring($ldr6-7, 1, 1) = 'm'">
+                <xsl:call-template name="F008-c22-SOME-aggWor">
+                    <xsl:with-param name="char22" select="substring(., 23, 1)"/>
+                </xsl:call-template>
+            </xsl:when>
+            <!-- continuing resources -->
+            <xsl:when test="$ldr6-7 = 'ab' or $ldr6-7 = 'ai' or $ldr6-7 = 'as'">
+                <xsl:call-template name="F008-c23_29-f-SOME-aggWor">
+                    <xsl:with-param name="char23_29" select="substring(., 24, 1)"/>
+                </xsl:call-template>
+            </xsl:when>
+            <!-- maps -->
+            <xsl:when test="substring($ldr6-7, 1, 1) = 'e' or substring($ldr6-7, 1, 1) = 'f'">
+                <xsl:call-template name="F008-c18-21-MP-aggWor">
+                    <xsl:with-param name="char18-21" select="substring(., 19, 4)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F008-c22-23-MP-aggWor">
+                    <xsl:with-param name="char22-23" select="substring(., 23, 2)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F008-c24-MP-aggWor">
+                    <xsl:with-param name="char24" select="substring(., 25, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F008-c23_29-f-SOME-aggWor">
+                    <xsl:with-param name="char23_29" select="substring(., 30, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F008-c33-34-jm-MP-aggWor">
+                    <xsl:with-param name="char33-34" select="substring(., 34, 2)"/>
+                </xsl:call-template>
+            </xsl:when>
+            <!-- mixed materials -->
+            <xsl:when test="substring($ldr6-7, 1, 1) = 'p'">
+                <xsl:call-template name="F008-c23_29-f-SOME-aggWor">
+                    <xsl:with-param name="char23_29" select="substring(., 24, 1)"/>
+                </xsl:call-template>
+            </xsl:when>
+            <!-- music -->
+            <xsl:when test="substring($ldr6-7, 1, 1) = 'i' or substring($ldr6-7, 1, 1) = 'j'
+                or substring($ldr6-7, 1, 1) = 'c' or substring($ldr6-7, 1, 1) = 'd'">
+                <xsl:call-template name="F008-c20-MU-aggWor">
+                    <xsl:with-param name="char20" select="substring(., 21, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F008-c21-MU-aggWor">
+                    <xsl:with-param name="char21" select="substring(., 22, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F008-c22-SOME-aggWor">
+                    <xsl:with-param name="char22" select="substring(., 23, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F008-c23_29-f-SOME-aggWor">
+                    <xsl:with-param name="char23_29" select="substring(., 24, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F008-c30-31-__-MU-aggWor">
+                    <xsl:with-param name="char30-31" select="substring(., 31, 2)"/> 
+                </xsl:call-template>
+                <xsl:call-template name="F008-c33-MU-aggWor">
+                    <xsl:with-param name="char33" select="substring(., 34, 1)"/>
+                </xsl:call-template>
+            </xsl:when>
+            <!-- visual materials -->
+            <xsl:when test="substring($ldr6-7, 1, 1) = 'g' or substring($ldr6-7, 1, 1) = 'k'
+                or substring($ldr6-7, 1, 1) = 'o' or substring($ldr6-7, 1, 1) = 'r'">
+                <xsl:call-template name="F008-c18-20-VM-aggWor">
+                    <xsl:with-param name="char18-20" select="substring(., 19, 3)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F008-c22-SOME-aggWor">
+                    <xsl:with-param name="char22" select="substring(., 23, 1)"/>
+                </xsl:call-template>
+                <xsl:call-template name="F008-c23_29-f-SOME-aggWor">
+                    <xsl:with-param name="char23_29" select="substring(., 30, 1)"/>
+                </xsl:call-template>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="marc:controlfield[@tag = '008']" 
         mode="exp" expand-text="yes">
         <!--<xsl:call-template name="getmarc"/>-->
         <xsl:variable name="ldr6-7" select="substring(preceding-sibling::marc:leader, 7, 2)"/>

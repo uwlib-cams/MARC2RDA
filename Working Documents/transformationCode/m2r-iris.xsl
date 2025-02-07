@@ -157,6 +157,11 @@
         </xsl:choose>
     </xsl:function>
     
+    <xsl:function name="uwf:aggWorkIRI">
+        <xsl:param name="record"/>
+        <xsl:value-of select="$BASE||'transform/aggWor#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainWorkAccessPoint($record)))"/>
+    </xsl:function>
+    
     <xsl:function name="uwf:mainExpressionIRI">
         <xsl:param name="record"/>
         <xsl:choose>

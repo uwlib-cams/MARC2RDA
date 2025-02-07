@@ -57,6 +57,16 @@
         </xsl:choose>
     </xsl:template>
     
+    <!-- 306 -->
+    <xsl:template match="marc:datafield[@tag = '306'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '306']"
+        mode="aggWor" expand-text="yes">
+        <!--<xsl:call-template name="getmarc"/>-->
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <rdawd:P10351 rdf:datatype="xsd:time"
+                >{replace(.,'([0-9][0-9])([0-9][0-9])([0-9][0-9])','$1:$2:$3')}</rdawd:P10351>
+        </xsl:for-each>
+    </xsl:template>
+    
     <xsl:template match="marc:datafield[@tag = '306'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '306']"
         mode="exp" expand-text="yes">
         <!--<xsl:call-template name="getmarc"/>-->
@@ -65,6 +75,8 @@
                 >{replace(.,'([0-9][0-9])([0-9][0-9])([0-9][0-9])','$1:$2:$3')}</rdaed:P20219>
         </xsl:for-each>
     </xsl:template>
+    
+    
     <xsl:template
         match="marc:datafield[@tag = '307'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '307']"
         mode="man" expand-text="yes">
@@ -215,7 +227,16 @@
         <xsl:call-template name="F340-concept"/>
     </xsl:template>
     
-    <!-- 342 - Geospatial Reference Data DC: In progress -->
+    <!-- 342 - Geospatial Reference Data -->
+    <xsl:template match="marc:datafield[@tag = '342'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '342']"
+        mode="aggWor" expand-text="yes">
+        <!--<xsl:call-template name="getmarc"/>-->
+        <xsl:call-template name="F342-xx-a-aggWor"/>
+        <xsl:call-template name="F342-xx-bcdlmnosvpfijtuw2-aggWor"/>
+        <xsl:call-template name="F342-x1-egh-aggWor"/>
+        <xsl:call-template name="F342-xx-k-aggWor"/>
+    </xsl:template>
+    
     <xsl:template match="marc:datafield[@tag = '342'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '342']"
         mode="exp" expand-text="yes">
         <!--<xsl:call-template name="getmarc"/>-->
@@ -236,6 +257,45 @@
     </xsl:template>
     
     <!-- 343 - Planar Coordinate Data  -->
+    <xsl:template match="marc:datafield[@tag = '343'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '343']"
+        mode="aggWor" expand-text="yes">
+        <rdawd:P10330>
+            <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
+                | marc:subfield[@code = 'd'] | marc:subfield[@code = 'e'] | marc:subfield[@code = 'f']
+                | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h'] | marc:subfield[@code = 'i']">
+                <xsl:if test="@code = 'a'">
+                    <xsl:text>Planar coordinate encoding method: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'b'">
+                    <xsl:text>Planar distance units: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'c'">
+                    <xsl:text>Abscissa resolution: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'd'">
+                    <xsl:text>Ordinate resolution: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'e'">
+                    <xsl:text>Distance resolution: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'f'">
+                    <xsl:text>Bearing resolution: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'g'">
+                    <xsl:text>Bearing units: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'h'">
+                    <xsl:text>Bearing reference direction: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'i'">
+                    <xsl:text>Bearing reference meridian: {.}</xsl:text>
+                </xsl:if>
+                <xsl:if test="position() != last()">
+                    <xsl:text> </xsl:text>
+                </xsl:if>
+            </xsl:for-each>
+        </rdawd:P10330>
+    </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '343'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '343']"
         mode="exp" expand-text="yes">
