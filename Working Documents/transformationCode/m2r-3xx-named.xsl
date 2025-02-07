@@ -218,8 +218,7 @@
                                     <xsl:if test="$linked880">
                                         <xsl:for-each
                                             select="$linked880/marc:datafield/marc:subfield[position()][@code = 'a']">
-                                            <xsl:copy-of select="uwf:fillConcept(., '', '', '880')"
-                                            />
+                                            <xsl:copy-of select="uwf:fillConcept(., '', '', '880')"/>
                                         </xsl:for-each>
                                     </xsl:if>
                                 </rdf:Description>
@@ -299,8 +298,9 @@
                                 <xsl:if test="$rdaIRI">
                                     <rdaw:P10365 rdf:resource="{$rdaIRI}"/>
                                     <xsl:if test="../marc:subfield[@code = '3']">
-                                        <rdawd:P10330>Extension plan {$rdaIRI} applies to the work's
-                                            {../marc:subfield[@code = '3']}</rdawd:P10330>
+                                        <rdawd:P10330>
+                                            <xsl:text>Extension plan {$rdaIRI} applies to the work's {../marc:subfield[@code = '3']}</xsl:text>
+                                        </rdawd:P10330>
                                     </xsl:if>
                                 </xsl:if>
                             </xsl:for-each>
@@ -310,8 +310,9 @@
                                 <xsl:if test="$rdaIRI">
                                     <rdaw:P10365 rdf:resource="{$rdaIRI}"/>
                                     <xsl:if test="../marc:subfield[@code = '3']">
-                                        <rdawd:P10330>Extension plan {$rdaIRI} applies to the work's
-                                            {../marc:subfield[@code = '3']}</rdawd:P10330>
+                                        <rdawd:P10330>
+                                            <xsl:text>Extension plan {$rdaIRI} applies to the work's {../marc:subfield[@code = '3']}</xsl:text>
+                                        </rdawd:P10330>
                                     </xsl:if>
                                 </xsl:if>
                             </xsl:for-each>
@@ -328,9 +329,9 @@
                                         <xsl:for-each select="marc:subfield[@code = 'a']">
                                             <rdaw:P10365 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
-                                                <rdawd:P10330>Extension plan {uwf:conceptIRI($sub2,
-                                                  .)} applies to the work's {../marc:subfield[@code
-                                                  = '3']}</rdawd:P10330>
+                                                <rdawd:P10330>
+                                                    <xsl:text>Extension plan {uwf:conceptIRI($sub2, .)} applies to the work's {../marc:subfield[@code = '3']}</xsl:text>
+                                                </rdawd:P10330>
                                             </xsl:if>
                                         </xsl:for-each>
                                     </xsl:if>
@@ -342,9 +343,9 @@
                                         <xsl:for-each select="marc:subfield[@code = 'b']">
                                             <rdaw:P10365 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
-                                                <rdawd:P10330>Extension plan {uwf:conceptIRI($sub2,
-                                                  .)} applies to the work's {../marc:subfield[@code
-                                                  = '3']}</rdawd:P10330>
+                                                <rdawd:P10330>
+                                                    <xsl:text>Extension plan {uwf:conceptIRI($sub2, .)} applies to the work's {../marc:subfield[@code = '3']}</xsl:text>
+                                                </rdawd:P10330>
                                             </xsl:if>
                                         </xsl:for-each>
                                     </xsl:if>
@@ -356,9 +357,9 @@
                                         <xsl:for-each select="marc:subfield[@code = 'a']">
                                             <rdaw:P10365 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
-                                                <rdawd:P10330>Extension plan {uwf:conceptIRI($sub2,
-                                                  .)} applies to the work's {../marc:subfield[@code
-                                                  = '3']}</rdawd:P10330>
+                                                <rdawd:P10330>
+                                                    <xsl:text>Extension plan {uwf:conceptIRI($sub2, .)} applies to the work's {../marc:subfield[@code = '3']}</xsl:text>
+                                                </rdawd:P10330>
                                             </xsl:if>
                                         </xsl:for-each>
                                     </xsl:if>
@@ -370,9 +371,11 @@
                                         <xsl:for-each select="marc:subfield[@code = 'a']">
                                             <rdaw:P10365 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
-                                                <rdawd:P10330>Extension plan {uwf:conceptIRI($sub2,
-                                                  .)} applies to the work's {../marc:subfield[@code
-                                                  = '3']}</rdawd:P10330>
+                                                <rdawd:P10330>
+                                                    <xsl:text>
+                                                        Extension plan {uwf:conceptIRI($sub2, .)} applies to the work's {../marc:subfield[@code = '3']}
+                                                    </xsl:text>
+                                                </rdawd:P10330>
                                             </xsl:if>
                                         </xsl:for-each>
                                     </xsl:if>
@@ -389,8 +392,9 @@
                             <xsl:value-of select="."/>
                         </rdawd:P10365>
                         <xsl:if test="../marc:subfield[@code = '3']">
-                            <rdawd:P10330>Extension plan {.} applies to the work's
-                                {../marc:subfield[@code = '3']}</rdawd:P10330>
+                            <rdawd:P10330>
+                                <xsl:text>Extension plan {.} applies to the work's {../marc:subfield[@code = '3']}</xsl:text>
+                            </rdawd:P10330>
                         </xsl:if>
                     </xsl:for-each>
                     <xsl:for-each select="marc:subfield[@code = 'b']">
@@ -398,8 +402,9 @@
                             <xsl:value-of select="."/>
                         </rdawd:P10365>
                         <xsl:if test="../marc:subfield[@code = '3']">
-                            <rdawd:P10330>Extension plan {.} applies to the work's
-                                {../marc:subfield[@code = '3']}</rdawd:P10330>
+                            <rdawd:P10330>
+                                <xsl:text>Extension plan {.} applies to the work's {../marc:subfield[@code = '3']}</xsl:text>
+                            </rdawd:P10330>
                         </xsl:if>
                     </xsl:for-each>
                 </xsl:otherwise>
@@ -513,8 +518,9 @@
         <xsl:for-each select="marc:subfield[@code = '1']">
             <rdaw:P10365 rdf:resource="{.}"/>
             <xsl:if test="../marc:subfield[@code = '3']">
-                <rdawd:P10330>Extension plan {.} applies to the work's {../marc:subfield[@code =
-                    '3']}</rdawd:P10330>
+                <rdawd:P10330>
+                    <xsl:text>Extension plan {.} applies to the work's {../marc:subfield[@code ='3']}</xsl:text>
+                </rdawd:P10330>
             </xsl:if>
         </xsl:for-each>
         <!-- If there's no $1 but there are $0s that begin with http(s), use these -->
@@ -535,8 +541,9 @@
                     <xsl:if test="$iri0">
                         <rdaw:P10365 rdf:resource="{$iri0}"/>
                         <xsl:if test="../marc:subfield[@code = '3']">
-                            <rdawd:P10330>Extension plan {$iri0} applies to the work's
-                                {../marc:subfield[@code = '3']}</rdawd:P10330>
+                            <rdawd:P10330>
+                                <xsl:text>Extension plan {$iri0} applies to the work's {../marc:subfield[@code = '3']}</xsl:text>
+                            </rdawd:P10330>
                         </xsl:if>
                     </xsl:if>
                 </xsl:if>
@@ -546,7 +553,7 @@
 
 
     <!-- 336 -->
-    <xsl:template name="F336-xx-ab0-string">
+    <!--<xsl:template name="F336-xx-ab0-string">
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdaed:P20001>
                 <xsl:value-of select="."/>
@@ -600,7 +607,7 @@
                 </xsl:when>
                 <xsl:when
                     test="not(matches(marc:subfield[@code = '2'][1], '^rda.+')) and contains(marc:subfield[@code = '0'], 'http:') and not(marc:subfield[@code = '1'])"
-                    ><!-- do nothing --></xsl:when>
+                    ><!-\- do nothing -\-></xsl:when>
                 <xsl:otherwise>
                     <xsl:comment>$2 source not needed as $2 is rda and the $0 or $1 should be the direct value of P20001</xsl:comment>
                 </xsl:otherwise>
@@ -626,7 +633,7 @@
         <xsl:for-each select="marc:subfield[@code = '1']">
             <rdaeo:P20001 rdf:resource="{.}"/>
         </xsl:for-each>
-    </xsl:template>
+    </xsl:template>-->
 
     <!-- 337 -->
     <xsl:template name="F337-string" expand-text="yes">
@@ -668,9 +675,9 @@
                                 <xsl:if test="$rdaIRI">
                                     <rdam:P30002 rdf:resource="{$rdaIRI}"/>
                                     <xsl:if test="../marc:subfield[@code = '3']">
-                                        <rdamd:P30137>Media type {$rdaIRI} applies to the
-                                            manifestation's {../marc:subfield[@code =
-                                            '3']}</rdamd:P30137>
+                                        <rdamd:P30137>
+                                            <xsl:text> Media type {$rdaIRI} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                                        </rdamd:P30137>
                                     </xsl:if>
                                 </xsl:if>
                             </xsl:for-each>
@@ -680,9 +687,9 @@
                                 <xsl:if test="$rdaIRI">
                                     <rdam:P30002 rdf:resource="{$rdaIRI}"/>
                                     <xsl:if test="../marc:subfield[@code = '3']">
-                                        <rdamd:P30137>Media type {$rdaIRI} applies to the
-                                            manifestation's {../marc:subfield[@code =
-                                            '3']}</rdamd:P30137>
+                                        <rdamd:P30137>
+                                            <xsl:text>Media type {$rdaIRI} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                                        </rdamd:P30137>
                                     </xsl:if>
                                 </xsl:if>
                             </xsl:for-each>
@@ -699,9 +706,9 @@
                                         <xsl:for-each select="marc:subfield[@code = 'a']">
                                             <rdam:P30002 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
-                                                <rdamd:P30137>Media type {uwf:conceptIRI($sub2, .)}
-                                                  applies to the manifestation's
-                                                  {../marc:subfield[@code = '3']}</rdamd:P30137>
+                                                <rdamd:P30137>
+                                                    <xsl:text>Media type {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                                                </rdamd:P30137>
                                             </xsl:if>
                                         </xsl:for-each>
                                     </xsl:if>
@@ -713,9 +720,9 @@
                                         <xsl:for-each select="marc:subfield[@code = 'b']">
                                             <rdam:P30002 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
-                                                <rdamd:P30137>Media type {uwf:conceptIRI($sub2, .)}
-                                                  applies to the manifestation's
-                                                  {../marc:subfield[@code = '3']}</rdamd:P30137>
+                                                <rdamd:P30137>
+                                                    <xsl:text>Media type {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                                                </rdamd:P30137>
                                             </xsl:if>
                                         </xsl:for-each>
                                     </xsl:if>
@@ -727,9 +734,9 @@
                                         <xsl:for-each select="marc:subfield[@code = 'a']">
                                             <rdam:P30002 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
-                                                <rdamd:P30137>Media type {uwf:conceptIRI($sub2, .)}
-                                                  applies to the manifestation's
-                                                  {../marc:subfield[@code = '3']}</rdamd:P30137>
+                                                <rdamd:P30137>
+                                                    <xsl:text> Media type {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                                                </rdamd:P30137>
                                             </xsl:if>
                                         </xsl:for-each>
                                     </xsl:if>
@@ -741,9 +748,9 @@
                                         <xsl:for-each select="marc:subfield[@code = 'a']">
                                             <rdam:P30002 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
-                                                <rdamd:P30137>Media type {uwf:conceptIRI($sub2, .)}
-                                                  applies to the manifestation's
-                                                  {../marc:subfield[@code = '3']}</rdamd:P30137>
+                                                <rdamd:P30137>
+                                                    <xsl:text>Media type {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                                                </rdamd:P30137>
                                             </xsl:if>
                                         </xsl:for-each>
                                     </xsl:if>
@@ -760,8 +767,9 @@
                             <xsl:value-of select="."/>
                         </rdamd:P30002>
                         <xsl:if test="../marc:subfield[@code = '3']">
-                            <rdamd:P30137>Media type {.} applies to the manifestation's
-                                {../marc:subfield[@code = '3']}</rdamd:P30137>
+                            <rdamd:P30137>
+                                <xsl:text>Media type {.} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                            </rdamd:P30137>
                         </xsl:if>
                     </xsl:for-each>
                     <xsl:for-each select="marc:subfield[@code = 'b']">
@@ -769,8 +777,9 @@
                             <xsl:value-of select="."/>
                         </rdamd:P30002>
                         <xsl:if test="../marc:subfield[@code = '3']">
-                            <rdamd:P30137>Media type {.} applies to the manifestation's
-                                {../marc:subfield[@code = '3']}</rdamd:P30137>
+                            <rdamd:P30137>
+                                <xsl:text>Media type {.} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                            </rdamd:P30137>
                         </xsl:if>
                     </xsl:for-each>
                 </xsl:otherwise>
@@ -885,8 +894,9 @@
         <xsl:for-each select="marc:subfield[@code = '1']">
             <rdam:P30002 rdf:resource="{.}"/>
             <xsl:if test="../marc:subfield[@code = '3']">
-                <rdamd:P30137>Media type {.} applies to the manifestation's {../marc:subfield[@code
-                    = '3']}</rdamd:P30137>
+                <rdamd:P30137>
+                    <xsl:text>Media type {.} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                </rdamd:P30137>
             </xsl:if>
         </xsl:for-each>
         <!-- If there's no $1 but there are $0s that begin with http(s), use these -->
@@ -908,8 +918,9 @@
                         <rdam:P30002 rdf:resource="{$iri0}"/>
                     </xsl:if>
                     <xsl:if test="../marc:subfield[@code = '3']">
-                        <rdamd:P30137>Carrier type {$iri0} applies to the manifestation's
-                            {../marc:subfield[@code = '3']}</rdamd:P30137>
+                        <rdamd:P30137>
+                            <xsl:text>Media type {$iri0} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                        </rdamd:P30137>
                     </xsl:if>
                 </xsl:if>
             </xsl:for-each>
@@ -956,9 +967,9 @@
                                 <xsl:if test="$rdaIRI">
                                     <rdam:P30001 rdf:resource="{$rdaIRI}"/>
                                     <xsl:if test="../marc:subfield[@code = '3']">
-                                        <rdamd:P30137>Media type {$rdaIRI} applies to the
-                                            manifestation's {../marc:subfield[@code =
-                                            '3']}</rdamd:P30137>
+                                        <rdamd:P30137>
+                                            <xsl:text>Carrier type {$rdaIRI} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                                        </rdamd:P30137>
                                     </xsl:if>
                                 </xsl:if>
                             </xsl:for-each>
@@ -968,9 +979,9 @@
                                 <xsl:if test="$rdaIRI">
                                     <rdam:P30001 rdf:resource="{$rdaIRI}"/>
                                     <xsl:if test="../marc:subfield[@code = '3']">
-                                        <rdamd:P30137>Media type {$rdaIRI} applies to the
-                                            manifestation's {../marc:subfield[@code =
-                                            '3']}</rdamd:P30137>
+                                        <rdamd:P30137>
+                                            <xsl:text>Carrier type {$rdaIRI} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                                        </rdamd:P30137>
                                     </xsl:if>
                                 </xsl:if>
                             </xsl:for-each>
@@ -987,9 +998,9 @@
                                         <xsl:for-each select="marc:subfield[@code = 'a']">
                                             <rdam:P30001 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
-                                                <rdamd:P30137>Carrier type {uwf:conceptIRI($sub2,
-                                                  .)} applies to the manifestation's
-                                                  {../marc:subfield[@code = '3']}</rdamd:P30137>
+                                                <rdamd:P30137>
+                                                    <xsl:text>Carrier type {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                                                </rdamd:P30137>
                                             </xsl:if>
                                         </xsl:for-each>
                                     </xsl:if>
@@ -1001,9 +1012,9 @@
                                         <xsl:for-each select="marc:subfield[@code = 'b']">
                                             <rdam:P30001 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
-                                                <rdamd:P30137>Media type {uwf:conceptIRI($sub2, .)}
-                                                  applies to the manifestation's
-                                                  {../marc:subfield[@code = '3']}</rdamd:P30137>
+                                                <rdamd:P30137>
+                                                    <xsl:text>Carrier type {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                                                </rdamd:P30137>
                                             </xsl:if>
                                         </xsl:for-each>
                                     </xsl:if>
@@ -1015,9 +1026,9 @@
                                         <xsl:for-each select="marc:subfield[@code = 'a']">
                                             <rdam:P30001 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
-                                                <rdamd:P30137>Carrier type {uwf:conceptIRI($sub2,
-                                                  .)} applies to the manifestation's
-                                                  {../marc:subfield[@code = '3']}</rdamd:P30137>
+                                                <rdamd:P30137>
+                                                    <xsl:text>Carrier type {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                                                </rdamd:P30137>
                                             </xsl:if>
                                         </xsl:for-each>
                                     </xsl:if>
@@ -1029,9 +1040,9 @@
                                         <xsl:for-each select="marc:subfield[@code = 'a']">
                                             <rdam:P30001 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
-                                                <rdamd:P30137>Carrier type {uwf:conceptIRI($sub2,
-                                                  .)} applies to the manifestation's
-                                                  {../marc:subfield[@code = '3']}</rdamd:P30137>
+                                                <rdamd:P30137>
+                                                    <xsl:text>Carrier type {uwf:conceptIRI($sub2,.)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                                                </rdamd:P30137>
                                             </xsl:if>
                                         </xsl:for-each>
                                     </xsl:if>
@@ -1048,8 +1059,9 @@
                             <xsl:value-of select="."/>
                         </rdamd:P30001>
                         <xsl:if test="../marc:subfield[@code = '3']">
-                            <rdamd:P30137>Carrier type {.} applies to the manifestation's
-                                {../marc:subfield[@code = '3']}</rdamd:P30137>
+                            <rdamd:P30137>
+                                <xsl:text>Carrier type {.} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                            </rdamd:P30137>
                         </xsl:if>
                     </xsl:for-each>
                     <xsl:for-each select="marc:subfield[@code = 'b']">
@@ -1057,8 +1069,9 @@
                             <xsl:value-of select="."/>
                         </rdamd:P30001>
                         <xsl:if test="../marc:subfield[@code = '3']">
-                            <rdamd:P30137>Carrier type {.} applies to the manifestation's
-                                {../marc:subfield[@code = '3']}</rdamd:P30137>
+                            <rdamd:P30137>
+                                <xsl:text>Carrier type {.} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                            </rdamd:P30137>
                         </xsl:if>
                     </xsl:for-each>
                 </xsl:otherwise>
@@ -1171,8 +1184,9 @@
         <xsl:for-each select="marc:subfield[@code = '1']">
             <rdam:P30001 rdf:resource="{.}"/>
             <xsl:if test="../marc:subfield[@code = '3']">
-                <rdamd:P30137>Carrier type {.} applies to the manifestation's
-                    {../marc:subfield[@code = '3']}</rdamd:P30137>
+                <rdamd:P30137>
+                    <xsl:text>Carrier type {.} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                </rdamd:P30137>
             </xsl:if>
         </xsl:for-each>
         <!-- If there's no $1 but there are $0s that begin with http(s), use these -->
@@ -1193,8 +1207,9 @@
                         <rdam:P30002 rdf:resource="{$iri0}"/>
                     </xsl:if>
                     <xsl:if test="../marc:subfield[@code = '3']">
-                        <rdamd:P30137>Carrier type {$iri0} applies to the manifestation's
-                            {../marc:subfield[@code = '3']}</rdamd:P30137>
+                        <rdamd:P30137>
+                            <xsl:text>Carrier type {$iri0} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                        </rdamd:P30137>
                     </xsl:if>
                 </xsl:if>
             </xsl:for-each>
@@ -2075,7 +2090,7 @@
             </xsl:if>
         </xsl:if>
     </xsl:template>
-    
+
     <xsl:template name="F342-x1-egh-aggWor" expand-text="yes">
         <xsl:if test="@ind2 = '1'">
             <xsl:if
@@ -2099,7 +2114,7 @@
                     </rdawd:P10330>
                 </xsl:for-each>
             </xsl:if>
-            
+
             <xsl:if
                 test="marc:subfield[@code = 'a' and contains(., 'Albers conical equal area') or contains(., 'Azimuthal equidistant') or contains(., 'Equidistant conic') or contains(., 'Equirectangular') or contains(., 'Lambert conformal conic') or contains(., 'Mercator') or contains(., 'Miller cylindrical') or contains(., 'Polyconic') or contains(., 'Sinusoidal') or contains(., 'Transverse Mercator') or contains(., 'Van der Grinten')]">
                 <xsl:for-each select="marc:subfield[@code = 'g']">
@@ -2108,7 +2123,7 @@
                     </rdawd:P10330>
                 </xsl:for-each>
             </xsl:if>
-            
+
             <xsl:if
                 test="marc:subfield[@code = 'a' and contains(., 'General vertical near-sided projection') or contains(., 'Gnomomic') or contains(., 'Orthographic') or contains(., 'Lambert azimuthal equal area') or contains(., 'Robinson') or contains(., 'Stereographic')]">
                 <xsl:for-each select="marc:subfield[@code = 'g']">
@@ -2117,7 +2132,7 @@
                     </rdawd:P10330>
                 </xsl:for-each>
             </xsl:if>
-            
+
             <xsl:if
                 test="marc:subfield[@code = 'a' and contains(., 'General vertical near-sided projection') or contains(., 'Gnomomic') or contains(., 'Orthographic') or contains(., 'Stereographic')]">
                 <xsl:for-each select="marc:subfield[@code = 'h']">
@@ -2126,7 +2141,7 @@
                     </rdawd:P10330>
                 </xsl:for-each>
             </xsl:if>
-            
+
             <xsl:if
                 test="marc:subfield[@code = 'a' and contains(., 'Albers conical equal area') or contains(., 'Equidistant conic') or contains(., 'Lambert conformal conic') or contains(., 'Oblique Mercator') or contains(., 'Polyconic') or contains(., 'Transverse Mercator') or contains(., 'Azimuthal equidistant')]">
                 <xsl:for-each select="marc:subfield[@code = 'h']">
@@ -2136,7 +2151,7 @@
                 </xsl:for-each>
             </xsl:if>
         </xsl:if>
-        
+
         <xsl:if test="not(@ind2 = '1')">
             <xsl:if
                 test="marc:subfield[@code = 'e'] or marc:subfield[@code = 'a' and not(contains(., 'Albers conical equal area') or contains(., 'Equidistant') or contains(., 'Equirectangular') or contains(., 'Lambert conformal conic') or contains(., 'Mercator') or contains(., 'Polar stereographic') or contains(., 'Oblique Mercator'))]">
@@ -2149,7 +2164,7 @@
                     </rdawd:P10330>
                 </xsl:for-each>
             </xsl:if>
-            
+
             <xsl:if
                 test="marc:subfield[@code = 'g'] or marc:subfield[@code = 'a' and not(contains(., 'Albers conical equal area') or contains(., 'Azimuthal equidistant') or contains(., 'Equidistant conic') or contains(., 'Equirectangular') or contains(., 'Lambert conformal conic') or contains(., 'Mercator') or contains(., 'Miller cylindrical') or contains(., 'Polyconic') or contains(., 'Sinusoidal') or contains(., 'Transverse Mercator') or contains(., 'Van der Grinten') or contains(., 'General vertical near-sided projection') or contains(., 'Gnomomic') or contains(., 'Orthographic') or contains(., 'Lambert azimuthal equal area') or contains(., 'Robinson') or contains(., 'Stereographic'))]">
                 <xsl:for-each select="marc:subfield[@code = 'g']">
@@ -2159,7 +2174,7 @@
                     </rdawd:P10330>
                 </xsl:for-each>
             </xsl:if>
-            
+
             <xsl:if
                 test="marc:subfield[@code = 'h'] or marc:subfield[@code = 'a' and not(contains(., 'General vertical near-sided projection') or contains(., 'Gnomomic') or contains(., 'Orthographic') or contains(., 'Stereographic') or contains(., 'Albers conical equal area') or contains(., 'Azimuthal equidistant') or contains(., 'Equidistant conic') or contains(., 'Lambert conformal conic') or contains(., 'Oblique Mercator') or contains(., 'Polyconic') or contains(., 'Transverse Mercator'))]">
                 <xsl:for-each select="marc:subfield[@code = 'h']">
@@ -2217,7 +2232,7 @@
             </xsl:if>
         </xsl:if>
     </xsl:template>
-    
+
     <xsl:template name="F342-xx-k-aggWor" expand-text="yes">
         <xsl:if test="@ind1 = '1'">
             <xsl:if
@@ -2249,7 +2264,7 @@
                     </rdawd:P10330>
                 </xsl:for-each>
             </xsl:if>
-            
+
         </xsl:if>
         <xsl:if test="not(@ind1 = '1')">
             <xsl:if
@@ -2552,9 +2567,9 @@
                                 <xsl:if test="$rdaIRI">
                                     <rdam:P30104 rdf:resource="{$rdaIRI}"/>
                                     <xsl:if test="../marc:subfield[@code = '3']">
-                                        <rdamd:P30137>Video format {$rdaIRI} applies to the
-                                            manifestation's {../marc:subfield[@code =
-                                            '3']}</rdamd:P30137>
+                                        <rdamd:P30137>
+                                            <xsl:text>Video format {$rdaIRI} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                                        </rdamd:P30137>
                                     </xsl:if>
                                 </xsl:if>
                             </xsl:for-each>
@@ -2565,9 +2580,9 @@
                                 <xsl:if test="$rdaIRI">
                                     <rdam:P30123 rdf:resource="{$rdaIRI}"/>
                                     <xsl:if test="../marc:subfield[@code = '3']">
-                                        <rdamd:P30137>Broadcast standard {$rdaIRI} applies to the
-                                            manifestation's {../marc:subfield[@code =
-                                            '3']}</rdamd:P30137>
+                                        <rdamd:P30137>
+                                            <xsl:text>Broadcast standard {$rdaIRI} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                                        </rdamd:P30137>
                                     </xsl:if>
                                 </xsl:if>
                             </xsl:for-each>
@@ -2579,17 +2594,17 @@
                                 <xsl:for-each select="marc:subfield[@code = 'a']">
                                     <rdam:P30104 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                     <xsl:if test="../marc:subfield[@code = '3']">
-                                        <rdamd:P30137>Video format {uwf:conceptIRI($sub2, .)}
-                                            applies to the manifestation's {../marc:subfield[@code =
-                                            '3']}</rdamd:P30137>
+                                        <rdamd:P30137>
+                                            <xsl:text>Video format {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                                        </rdamd:P30137>
                                     </xsl:if>
                                 </xsl:for-each>
                                 <xsl:for-each select="marc:subfield[@code = 'b']">
                                     <rdam:P30123 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                     <xsl:if test="../marc:subfield[@code = '3']">
-                                        <rdamd:P30137>Broadcast standard {uwf:conceptIRI($sub2, .)}
-                                            applies to the manifestation's {../marc:subfield[@code =
-                                            '3']}</rdamd:P30137>
+                                        <rdamd:P30137>
+                                            <xsl:text>Broadcast standard {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                                        </rdamd:P30137>
                                     </xsl:if>
                                 </xsl:for-each>
                             </xsl:if>
@@ -2601,15 +2616,17 @@
                     <xsl:for-each select="marc:subfield[@code = 'a']">
                         <rdamd:P30104>{.}</rdamd:P30104>
                         <xsl:if test="../marc:subfield[@code = '3']">
-                            <rdamd:P30137>Video format {.} applies to the manifestation's
-                                {../marc:subfield[@code = '3']}</rdamd:P30137>
+                            <rdamd:P30137>
+                                <xsl:text>Video format {.} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                            </rdamd:P30137>
                         </xsl:if>
                     </xsl:for-each>
                     <xsl:for-each select="marc:subfield[@code = 'b']">
                         <rdamd:P30123>{.}</rdamd:P30123>
                         <xsl:if test="../marc:subfield[@code = '3']">
-                            <rdamd:P30137>Broadcast standard {.} applies to the manifestation's
-                                {../marc:subfield[@code = '3']}</rdamd:P30137>
+                            <rdamd:P30137>
+                                <xsl:text>Broadcast standard {.} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                            </rdamd:P30137>
                         </xsl:if>
                     </xsl:for-each>
                 </xsl:otherwise>
@@ -2668,8 +2685,9 @@
                     <!-- if getting iri was successful (started with 'http' or '('), use 0s-->
                     <xsl:if test="$iri0">
                         <rdam:P30104 rdf:resource="{$iri0}"/>
-                        <rdamd:P30137>Video format {$iri0} applies to the manifestation's
-                            {../marc:subfield[@code = '3']}</rdamd:P30137>
+                        <rdamd:P30137>
+                            <xsl:text>Video format {$iri0} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                        </rdamd:P30137>
                     </xsl:if>
                 </xsl:for-each>
             </xsl:if>
@@ -2689,8 +2707,9 @@
                                  use 0s-->
                     <xsl:if test="$iri0">
                         <rdam:P30123 rdf:resource="{$iri0}"/>
-                        <rdamd:P30137>Broadcast standard {$iri0} applies to the manifestation's
-                            {../marc:subfield[@code = '3']}</rdamd:P30137>
+                        <rdamd:P30137>
+                            <xsl:text>Broadcast standard {$iri0} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                        </rdamd:P30137>
                     </xsl:if>
                 </xsl:for-each>
             </xsl:if>
@@ -2931,8 +2950,9 @@
         <xsl:for-each select="marc:subfield[@code = '1']">
             <rdaw:P10004 rdf:resource="{.}"/>
             <xsl:if test="../marc:subfield[@code = '3']">
-                <rdawd:P10330>Category of work {.} applies to the work's {../marc:subfield[@code =
-                    '3']}</rdawd:P10330>
+                <rdawd:P10330>
+                    <xsl:text>Category of work {.} applies to the work's {../marc:subfield[@code = '3']}</xsl:text>
+                </rdawd:P10330>
             </xsl:if>
         </xsl:for-each>
         <!-- If there's no $1 but there are $0s that begin with http(s), use these -->
@@ -2954,8 +2974,9 @@
                         <rdaw:P10004 rdf:resource="{$iri0}"/>
                     </xsl:if>
                     <xsl:if test="../marc:subfield[@code = '3']">
-                        <rdawd:P10330>Category of work {$iri0} applies to the work's
-                            {../marc:subfield[@code = '3']}</rdawd:P10330>
+                        <rdawd:P10330>
+                            <xsl:text>Category of work {$iri0} applies to the work's {../marc:subfield[@code = '3']}</xsl:text>
+                        </rdawd:P10330>
                     </xsl:if>
                 </xsl:if>
             </xsl:for-each>
@@ -2974,8 +2995,9 @@
                             <rdaw:P10004
                                 rdf:resource="{uwf:conceptIRI(../marc:subfield[@code = '2'][1], .)}"/>
                             <xsl:if test="../marc:subfield[@code = '3']">
-                                <rdamd:P30137>Category of work {.} applies to the work's
-                                    {../marc:subfield[@code = '3']}</rdamd:P30137>
+                                <rdamd:P30137>
+                                    <xsl:text>Category of work {.} applies to the work's {../marc:subfield[@code = '3']}</xsl:text>
+                                </rdamd:P30137>
                             </xsl:if>
                         </xsl:for-each>
                     </xsl:if>
@@ -2987,8 +3009,9 @@
                             <xsl:value-of select="."/>
                         </rdawd:P10004>
                         <xsl:if test="../marc:subfield[@code = '3']">
-                            <rdamd:P30137>Category of work {.} applies to the work's
-                                {../marc:subfield[@code = '3']}</rdamd:P30137>
+                            <rdamd:P30137>
+                                <xsl:text>Category of work {.} applies to the work's {../marc:subfield[@code = '3']}</xsl:text>
+                            </rdamd:P30137>
                         </xsl:if>
                     </xsl:for-each>
                 </xsl:otherwise>
