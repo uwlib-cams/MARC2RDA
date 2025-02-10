@@ -97,6 +97,7 @@
     <xsl:variable name="locIdentifiersDoc" select="document('lookup/lc/identifiers.rdf')"/>
     <xsl:variable name="locAccessRestrictionTermDoc" select="document('lookup/lc/accessrestrictionterm.rdf')"/>
     <xsl:variable name="locClassSchemesDoc" select="document('lookup/lc/classSchemes.rdf')"/>
+    <xsl:variable name="locMusicCodeSchemesDoc" select="document('lookup/lc/musiccodeschemes.rdf')"/>
     <xsl:variable name="locNameTitleSchemesDoc" select="document('lookup/lc/nameTitleSchemes.rdf')"/>
     <xsl:variable name="approvedSourcesDoc" select="document('lookup/approvedSources.xml')"/>
     
@@ -246,7 +247,7 @@
     
     <!-- lookup for field 506 concepts -->
     <!-- there's a very small vocabulary for this, so it's worth a separate quicker function -->
-    <!--<xsl:function name="uwf:s2Concept382" expand-text="true">
+    <xsl:function name="uwf:s2Concept382" expand-text="true">
         <xsl:param name="sub2"/>
         <xsl:variable name="code2" select="replace($sub2, '\.$', '')"/>
         <xsl:choose>
@@ -260,7 +261,7 @@
                 </skos:inScheme>
             </xsl:otherwise>
         </xsl:choose>
-    </xsl:function>-->
+    </xsl:function>
     
     <!-- lookup for classification schemes -->
     <xsl:function name="uwf:s2ConceptClassSchemes" expand-text="true">
@@ -322,9 +323,9 @@
                 <xsl:when test="$fieldNum = '050'">
                     <xsl:copy-of select="uwf:s2ConceptClassSchemes($scheme)"/>
                 </xsl:when>
-                <!--<xsl:when test="$fieldNum = '382'">
+                <xsl:when test="$fieldNum = '382'">
                     <xsl:copy-of select="uwf:s2Concept382($scheme)"/>
-                </xsl:when>-->
+                </xsl:when>
                 <xsl:otherwise>
                     <xsl:copy-of select="uwf:s2Concept($scheme)"/>
                 </xsl:otherwise>
