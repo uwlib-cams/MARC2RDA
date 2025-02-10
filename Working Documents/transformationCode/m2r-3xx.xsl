@@ -549,6 +549,20 @@
         </xsl:if>
     </xsl:template>
     <xsl:template
+        match="marc:datafield[@tag = '382'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '382']"
+        mode="aggWor">
+        <xsl:if test="@ind1 = ' ' or @ind1 = '0' or @ind1 = '1'">
+            <!--<xsl:call-template name="getmarc"/>-->
+            <xsl:call-template name="F382-xx-a_b_d_p_0_1_2-wor"/>
+            <rdawd:P10220>
+                <xsl:call-template name="F382-xx-abdenprstv3"/>
+            </rdawd:P10220>
+            <rdawd:P10220>
+                <xsl:call-template name="F382-xx-abdenprstv3"/>
+            </rdawd:P10220>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template
         match="marc:datafield[@tag = '382'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '382-00']"
         mode="con">
         <xsl:if test="marc:subfield[@code = '2']">

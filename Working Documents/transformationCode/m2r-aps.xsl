@@ -406,11 +406,12 @@
                 </xsl:variable>
                 <!-- + content type (if found) and aggregating work -->
                 <xsl:variable name="fullAP">
-                    <xsl:value-of select="$workSubfields||' '||$name7XX||$language"/>
+                    <xsl:value-of select="$workSubfields||' '||$name7XX"/>
                     <xsl:if test="$contentType != ''">
                         <xsl:text> </xsl:text>
                         <xsl:value-of select="$contentType"/>
                     </xsl:if>
+                    <xsl:value-of select="' '||$language"/>
                     <xsl:text> Aggregating work</xsl:text>
                 </xsl:variable>
                 <xsl:value-of select="$fullAP"/>
