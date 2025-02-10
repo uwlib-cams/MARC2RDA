@@ -526,12 +526,12 @@
     </xsl:template>
     
     
-    <!--<xsl:template
+    <xsl:template
         match="marc:datafield[@tag = '382'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '382']"
         mode="exp">
         <xsl:if test="@ind1 = ' ' or @ind1 = '0' or @ind1 = '1'">
-            <xsl:call-template name="getmarc"/>
-            <xsl:call-template name="F382-xx-a_b_d_p_2-exp"/>
+<!--            <xsl:call-template name="getmarc"/>-->
+            <xsl:call-template name="F382-xx-a_b_d_p_0_1_2-exp"/>
             <rdaed:P20215>
                 <xsl:call-template name="F382-xx-abdenprstv3"/>
             </rdaed:P20215>
@@ -541,8 +541,8 @@
         match="marc:datafield[@tag = '382'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '382']"
         mode="wor">
         <xsl:if test="@ind1 = '2' or @ind1 = '3'">
-            <xsl:call-template name="getmarc"/>
-            <xsl:call-template name="F382-xx-a_b_d_p_2-wor"/>
+<!--            <xsl:call-template name="getmarc"/>-->
+            <xsl:call-template name="F382-xx-a_b_d_p_0_1_2-wor"/>
             <rdawd:P10220>
                 <xsl:call-template name="F382-xx-abdenprstv3"/>
             </rdawd:P10220>
@@ -575,5 +575,5 @@
                 </rdf:Description>
             </xsl:for-each>
         </xsl:if>
-    </xsl:template>-->
+    </xsl:template>
 </xsl:stylesheet>

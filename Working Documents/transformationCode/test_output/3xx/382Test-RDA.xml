@@ -1,29 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/382-test1wor">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc382-test1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/382-test1exp"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10002>382-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <fake:marcfield>F382 21 $0 (uri)http://id.loc.gov/authorities/performanceMediums/mp2013015550 $0 (DLC)mp2013015550 $1 http://www.wikidata.org/wiki/Q5994 $a piano $n 1 $s 2 $2 lcmpt</fake:marcfield>
+      <rdawo:P10400 rdf:resource="http://marc2rda.edu/fake/transform/nom#382-test1"/><!--rdawo:P10400 = has identifier for work group-->
+      <rdawd:P10002>transform/wor#marc382-test1</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc382-test1"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc382-test1">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc382-test1"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30004>transform/man#marc382-test1</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 382-test1
+F382 21 $0 (uri)http://id.loc.gov/authorities/performanceMediums/mp2013015550 $0 (DLC)mp2013015550 $1 http://www.wikidata.org/wiki/Q5994 $a piano $n 1 $s 2 $2 lcmpt
+F382 01 $a child's voice $n 01 $a piano $n 1 $s 2 $2 lcmpt
+F382 01 $b soprano voice $n 1 $b alto voice $n 1 $b tenor voice $n 1 $a mixed chorus $v SATB $e 1 $a string orchestra $e 1 $r 3 $t 2 $2 lcmpt
+F382 01 $b bass trombone $a flute $n 2 $a flute $n 1 $d piccolo $n 1 $a clarinet $n 1 $a bass clarinet $n 1 $a horn $n 2 $a tuba $n 1 $a piano $n 1 $s 10 $2 lcmpt
+F382 01 $a speaker $n 1 $a trombone $n 1 $p bassoon $n 1 $a violin $n 1 $s 3 $2 lcmpt
+F382 01 $a piano $n 3 $v 2 pianos, 6 hands $s 3 $2 lcmpt
+F382 01 $3 String quartet $a violin $n 2 $a viola $n 1 $a cello $n 1 $s 4 $2 lcmpt
+F382 01 $a percussion instrument $n 1 $v high hat $d bongos $n 1 $d snare drum $n 1 $d guiro $n 1 $d cymbal $n 1 $d gong $n 1 $d timpani $n 1 $d cowbell $n 1 $d marimba $n 1 $a triangle $n 1 $d percussion idiophone $n 1 $v car coil $d maraca $n 1 $d snare dum $n 1 $d percussion idiophone $n 1 $v brake drums $d bongos $n 1 $d tom-tom $n 1 $d chimes $n 1 $a piano $n 1 $d celesta $n 1 $d radio receiver $n 1 $d percussion idiophone $n 1 $v anvil $d bass drum $n 1 $d chimes $n 1 $d toy instrument $n 1 $v small metal cricket $a triangle $n 1 $d percussion idiophone $n 1 $v carl coil $d bongos $n 1 $d tabla $n 1 $d timpani $n 1 $d chimes $n 1 $d percussion idiophone $n 1 $v brake drums $d xylophone $n 1 $a finger cymbals $n 1 $d claves $n 1 $d drum $n 1 $d cymbal $n 1 $d gong $n 1 $d bongos $n 1 $d tom-tom $n 1 $d percussion idiophone $n 1 $v temple blocks $d vibraphone $n 1 $s 5 $2 lcmpt
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/nom#382-test1">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdano:P80172 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc382-test1"/><!--rdano:P80172 = is identifier for work group of-->
+      <rdand:P80068>382-test1</rdand:P80068><!--rdand:P80068 = has nomen string-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc382-test1"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
       <rdaw:P10220 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#piano"/><!--rdaw:P10220 = has medium of performance of musical content of representative expression-->
+      <rdawo:P10220 rdf:resource="http://www.wikidata.org/wiki/Q5994"/><!--rdawo:P10220 = has medium of performance of musical content of representative expression-->
+      <rdawo:P10220 rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015550"/><!--rdawo:P10220 = has medium of performance of musical content of representative expression-->
       <rdawd:P10220>For piano. Total performers: 2.</rdawd:P10220><!--rdawd:P10220 = has medium of performance of musical content of representative expression-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/382-test1exp">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/382-test1man"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/382-test1wor"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20002>382-test1exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
-      <fake:marcfield>F382 01 $a child's voice $n 01 $a piano $n 1 $s 2 $2 lcmpt</fake:marcfield>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc382-test1"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#child%27svoice"/><!--rdae:P20215 = has medium of performance of musical content-->
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#piano"/><!--rdae:P20215 = has medium of performance of musical content-->
       <rdaed:P20215>For child's voice; piano. Total performers: 2.</rdaed:P20215><!--rdaed:P20215 = has medium of performance of musical content-->
-      <fake:marcfield>F382 01 $b soprano voice $n 1 $b alto voice $n 1 $b tenor voice $n 1 $a mixed chorus $v SATB $e 1 $a string orchestra $e 1 $r 3 $t 2 $2 lcmpt</fake:marcfield>
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#sopranovoice"/><!--rdae:P20215 = has medium of performance of musical content-->
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#altovoice"/><!--rdae:P20215 = has medium of performance of musical content-->
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#tenorvoice"/><!--rdae:P20215 = has medium of performance of musical content-->
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#mixedchorus"/><!--rdae:P20215 = has medium of performance of musical content-->
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#stringorchestra"/><!--rdae:P20215 = has medium of performance of musical content-->
       <rdaed:P20215>For solo soprano voice; solo alto voice; solo tenor voice; mixed chorus (SATB); string orchestra. Total soloists: 3. Total ensembles: 2.</rdaed:P20215><!--rdaed:P20215 = has medium of performance of musical content-->
-      <fake:marcfield>F382 01 $b bass trombone $a flute $n 2 $a flute $n 1 $d piccolo $n 1 $a clarinet $n 1 $a bass clarinet $n 1 $a horn $n 2 $a tuba $n 1 $a piano $n 1 $s 10 $2 lcmpt</fake:marcfield>
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#basstrombone"/><!--rdae:P20215 = has medium of performance of musical content-->
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#flute"/><!--rdae:P20215 = has medium of performance of musical content-->
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#flute"/><!--rdae:P20215 = has medium of performance of musical content-->
@@ -34,21 +63,17 @@
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#tuba"/><!--rdae:P20215 = has medium of performance of musical content-->
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#piano"/><!--rdae:P20215 = has medium of performance of musical content-->
       <rdaed:P20215>For solo bass trombone; flute (2); flute/piccolo; clarinet; bass clarinet; horn (2); tuba; piano. Total performers: 10.</rdaed:P20215><!--rdaed:P20215 = has medium of performance of musical content-->
-      <fake:marcfield>F382 01 $a speaker $n 1 $a trombone $n 1 $p bassoon $n 1 $a violin $n 1 $s 3 $2 lcmpt</fake:marcfield>
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#speaker"/><!--rdae:P20215 = has medium of performance of musical content-->
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#trombone"/><!--rdae:P20215 = has medium of performance of musical content-->
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#bassoon"/><!--rdae:P20215 = has medium of performance of musical content-->
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#violin"/><!--rdae:P20215 = has medium of performance of musical content-->
       <rdaed:P20215>For speaker; trombone or bassoon; violin. Total performers: 3.</rdaed:P20215><!--rdaed:P20215 = has medium of performance of musical content-->
-      <fake:marcfield>F382 01 $a piano $n 3 $v 2 pianos, 6 hands $s 3 $2 lcmpt</fake:marcfield>
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#piano"/><!--rdae:P20215 = has medium of performance of musical content-->
       <rdaed:P20215>For piano (3) (2 pianos, 6 hands) Total performers: 3.</rdaed:P20215><!--rdaed:P20215 = has medium of performance of musical content-->
-      <fake:marcfield>F382 01 $3 String quartet $a violin $n 2 $a viola $n 1 $a cello $n 1 $s 4 $2 lcmpt</fake:marcfield>
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#violin"/><!--rdae:P20215 = has medium of performance of musical content-->
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#viola"/><!--rdae:P20215 = has medium of performance of musical content-->
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#cello"/><!--rdae:P20215 = has medium of performance of musical content-->
       <rdaed:P20215>String quartet: For violin (2); viola; cello. Total performers: 4.</rdaed:P20215><!--rdaed:P20215 = has medium of performance of musical content-->
-      <fake:marcfield>F382 01 $a percussion instrument $n 1 $v high hat $d bongos $n 1 $d snare drum $n 1 $d guiro $n 1 $d cymbal $n 1 $d gong $n 1 $d timpani $n 1 $d cowbell $n 1 $d marimba $n 1 $a triangle $n 1 $d percussion idiophone $n 1 $v car coil $d maraca $n 1 $d snare dum $n 1 $d percussion idiophone $n 1 $v brake drums $d bongos $n 1 $d tom-tom $n 1 $d chimes $n 1 $a piano $n 1 $d celesta $n 1 $d radio receiver $n 1 $d percussion idiophone $n 1 $v anvil $d bass drum $n 1 $d chimes $n 1 $d toy instrument $n 1 $v small metal cricket $a triangle $n 1 $d percussion idiophone $n 1 $v carl coil $d bongos $n 1 $d tabla $n 1 $d timpani $n 1 $d chimes $n 1 $d percussion idiophone $n 1 $v brake drums $d xylophone $n 1 $a finger cymbals $n 1 $d claves $n 1 $d drum $n 1 $d cymbal $n 1 $d gong $n 1 $d bongos $n 1 $d tom-tom $n 1 $d percussion idiophone $n 1 $v temple blocks $d vibraphone $n 1 $s 5 $2 lcmpt</fake:marcfield>
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#percussioninstrument"/><!--rdae:P20215 = has medium of performance of musical content-->
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#bongos"/><!--rdae:P20215 = has medium of performance of musical content-->
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#snaredrum"/><!--rdae:P20215 = has medium of performance of musical content-->
@@ -92,9 +117,11 @@
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#vibraphone"/><!--rdae:P20215 = has medium of performance of musical content-->
       <rdaed:P20215>For percussion instrument (high hat) /bongos/snare drum/guiro/cymbal/gong/timpani/cowbell/marimba; triangle/percussion idiophone (car coil) /maraca/snare dum/percussion idiophone (brake drums) /bongos/tom-tom/chimes; piano/celesta/radio receiver/percussion idiophone (anvil) /bass drum/chimes/toy instrument (small metal cricket) triangle/percussion idiophone (carl coil) /bongos/tabla/timpani/chimes/percussion idiophone (brake drums) /xylophone; finger cymbals/claves/drum/cymbal/gong/bongos/tom-tom/percussion idiophone (temple blocks) /vibraphone. Total performers: 5.</rdaed:P20215><!--rdaed:P20215 = has medium of performance of musical content-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/382-test1man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/382-test1exp"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc382-test1"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/lcmpt/con#piano">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>

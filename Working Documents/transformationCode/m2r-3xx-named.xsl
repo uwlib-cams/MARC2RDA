@@ -3049,7 +3049,7 @@
     </xsl:template>
 
     <!-- 382 -->
-    <!--<xsl:template name="F382-xx-a_b_d_p_2-exp" expand-text="yes">
+    <xsl:template name="F382-xx-a_b_d_p_0_1_2-exp" expand-text="yes">
         <xsl:variable name="s2code" select="marc:subfield[@code = '2'][1]"/>
         <xsl:choose>
             <xsl:when test="marc:subfield[@code = '2']">
@@ -3069,6 +3069,27 @@
                 </xsl:for-each>
             </xsl:otherwise>
         </xsl:choose>
+        <xsl:for-each select="marc:subfield[@code = '1']">
+            <rdaeo:P20215 rdf:resource="{.}"/>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = '0']">
+            <!-- $0's contianing a uri may start with (uri) -->
+            <xsl:if test="contains(., 'http')">
+                <xsl:variable name="iri0">
+                    <xsl:choose>
+                        <xsl:when test="starts-with(., 'http')">
+                            <xsl:value-of select="."/>
+                        </xsl:when>
+                        <xsl:when test="starts-with(., '(')">
+                            <xsl:value-of select="substring-after(., ')')"/>
+                        </xsl:when>
+                    </xsl:choose>
+                </xsl:variable>
+                <xsl:if test="$iri0">
+                    <rdaeo:P20215 rdf:resource="{$iri0}"/>
+                </xsl:if>
+            </xsl:if>
+        </xsl:for-each>
     </xsl:template>
 
     <xsl:template name="F382-xx-abdenprstv3" expand-text="yes">
@@ -3092,7 +3113,7 @@
             select="$delimited => replace(' \([0-9]+\); /', '/') => replace(' \([0-9]+\); or ', ' or ') => replace('Total soloists: 1\.', '') => replace('Total performers: 1\.', '') => replace('Total ensembles: 1\.', '') => replace(' \(0', ' (') => replace(' \(1\);', ';') => replace(';+ \[', ' [') => replace('\] /', ']/') => replace('\] ([a-z])', ']; $1') => replace('; Total ', '. Total ') => replace(' +$', '') => replace('\] Total', ']. Total') => replace(';;', ';') => replace(';\.', '.') => replace('; \(', ' (') => replace(';/', '/') => replace('; or ', ' or ') => replace(';$', '') => replace('AFTERB;', ';') => replace('AFTERB/', '/') => replace('AFTERB or ', ' or ') => replace('AFTERB \[', ' [') => replace('AFTERB', ';') => replace('::', ':')"
         />
     </xsl:template>
-    <xsl:template name="F382-xx-a_b_d_p_2-wor" expand-text="yes">
+    <xsl:template name="F382-xx-a_b_d_p_0_1_2-wor" expand-text="yes">
         <xsl:choose>
             <xsl:when test="marc:subfield[@code = '2']">
                 <xsl:if
@@ -3111,5 +3132,26 @@
                 </xsl:for-each>
             </xsl:otherwise>
         </xsl:choose>
-    </xsl:template>-->
+        <xsl:for-each select="marc:subfield[@code = '1']">
+            <rdawo:P10220 rdf:resource="{.}"/>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = '0']">
+            <!-- $0's contianing a uri may start with (uri) -->
+            <xsl:if test="contains(., 'http')">
+                <xsl:variable name="iri0">
+                    <xsl:choose>
+                        <xsl:when test="starts-with(., 'http')">
+                            <xsl:value-of select="."/>
+                        </xsl:when>
+                        <xsl:when test="starts-with(., '(')">
+                            <xsl:value-of select="substring-after(., ')')"/>
+                        </xsl:when>
+                    </xsl:choose>
+                </xsl:variable>
+                <xsl:if test="$iri0">
+                    <rdawo:P10220 rdf:resource="{$iri0}"/>
+                </xsl:if>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
 </xsl:stylesheet>
