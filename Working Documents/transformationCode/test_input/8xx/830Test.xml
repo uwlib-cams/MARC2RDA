@@ -7,6 +7,12 @@
         <marc:controlfield tag="001">relator-test1</marc:controlfield>
         
         <marc:datafield tag="830" ind1=" " ind2="0">
+            <marc:subfield code="a">All in love is fair.</marc:subfield>
+            <marc:subfield code="1">https://musicbrainz.org/work/3f9ae128-bbec-3804-a477-83348f91dbc8</marc:subfield>
+            <marc:subfield code="2">musicb</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="830" ind1=" " ind2="0">
             <marc:subfield code="a">Biography (Lerner Publications Company)</marc:subfield>
         </marc:datafield>
         
