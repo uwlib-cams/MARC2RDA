@@ -143,7 +143,7 @@
         <xsl:param name="record"/>
         <xsl:iterate select="$patterns">
             <xsl:on-completion>
-                <xsl:value-of select="false()"/>
+                <xsl:value-of select="'SWE'"/>
             </xsl:on-completion>
             <xsl:variable name="isMatched" as="xs:boolean">
                 <xsl:evaluate xpath="./xpath" context-item="$record">
@@ -176,7 +176,7 @@
                 </xsl:evaluate>
             </xsl:variable>
             <xsl:if test="$isMatched">
-                <xsl:value-of select="true()"/>
+                <xsl:value-of select="./type"/>
                 <xsl:break/>
             </xsl:if>
         </xsl:iterate>

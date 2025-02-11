@@ -109,15 +109,15 @@
  
     <xsl:template match="marc:record" expand-text="yes">
         <!-- message can be output to show processing -->
-        <!--<xsl:message>
+      <!--  <xsl:message>
             <xsl:text>Processing record {marc:controlfield[@tag = '001']} ({position()}/{last()}).</xsl:text>
         </xsl:message>-->
         
 <!-- VARIABLES -->
         <!-- check whether record being processed is an aggregate-->
         <xsl:variable name="isAggregate">
-            <!-- when implementing aggregate.xsl, uncomment next line and comment the xsl:choose below -->
-<!--             <xsl:value-of select="uwf:checkAggregates(.)"/>-->
+<!-- WHEN READY TO IMPLEMENT AGGREGATE MARKERS, uncomment next line and comment the xsl:choose below -->
+<!--            <xsl:value-of select="lower-case(uwf:checkAggregates(.))"/>-->
             <xsl:choose>
                 <xsl:when test="marc:datafield[@tag = '979']/marc:subfield[@code = 'a']">
                     <xsl:value-of select="lower-case(marc:datafield[@tag = '979']/marc:subfield[@code = 'a'])"/>
@@ -127,6 +127,12 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
+        
+        <!-- message can be output to show aggregate type -->
+        <!--<xsl:message>
+            <xsl:text>record {marc:controlfield[@tag = '001']} is {$isAggregate}</xsl:text>
+        </xsl:message>-->
+        
         <xsl:choose>
             <!-- if single work expression or augmentation aggregate, proceed with transform -->
             <xsl:when test="$isAggregate = 'swe' or 'aam'">
