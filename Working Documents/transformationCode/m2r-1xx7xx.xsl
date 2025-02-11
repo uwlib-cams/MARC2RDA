@@ -39,6 +39,7 @@
         | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '720-00']"
         mode="wor">
         <xsl:param name="baseID"/>
+        <xsl:param name="type"/>
         <xsl:choose>
             <!-- when there's no relator subfield -->
             <xsl:when
@@ -50,12 +51,13 @@
                         <xsl:call-template name="handle1XXNoRelator">
                             <xsl:with-param name="domain" select="'work'"/>
                             <xsl:with-param name="agentIRI" select="uwf:agentIRI($baseID, .)"/>
+                            <xsl:with-param name="type" select="$type"/>
                         </xsl:call-template>
                     </xsl:when>
                     <xsl:otherwise>
                         <!-- default -->
                         <xsl:copy-of
-                            select="uwf:defaultAgentProp(., uwf:fieldType(.), 'work', uwf:agentIRI($baseID, .), uwf:agentAccessPoint(.))"
+                            select="uwf:defaultAgentProp($type, ., uwf:fieldType(.), 'work', uwf:agentIRI($baseID, .), uwf:agentAccessPoint(.))"
                         />
                     </xsl:otherwise>
                 </xsl:choose>
@@ -65,6 +67,47 @@
                 <xsl:call-template name="handleRelator">
                     <xsl:with-param name="domain" select="'work'"/>
                     <xsl:with-param name="agentIRI" select="uwf:agentIRI($baseID, .)"/>
+                    <xsl:with-param name="type" select="$type"/>
+                </xsl:call-template>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <!-- only 1xx mapped to augmented work -->
+    <xsl:template
+        match="marc:datafield[@tag = '100'] | marc:datafield[@tag = '110'] | marc:datafield[@tag = '111'] 
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '100-00'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '110-00'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '111-00']"
+        mode="augWor">
+        <xsl:param name="baseID"/>
+        <xsl:param name="type"/>
+        <xsl:choose>
+            <!-- when there's no relator subfield -->
+            <xsl:when
+                test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
+                <xsl:choose>
+                    <!-- if it's a 1XX field, call handle1XXNoRelator with the appropriate domain -->
+                    <xsl:when test="@tag = '100' or @tag = '110' or @tag = '111'
+                        or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '1'))">
+                        <xsl:call-template name="handle1XXNoRelator">
+                            <xsl:with-param name="domain" select="'work'"/>
+                            <xsl:with-param name="agentIRI" select="uwf:agentIRI($baseID, .)"/>
+                            <xsl:with-param name="type" select="$type"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <!-- default -->
+                        <xsl:copy-of
+                            select="uwf:defaultAgentProp($type, ., uwf:fieldType(.), 'work', uwf:agentIRI($baseID, .), uwf:agentAccessPoint(.))"
+                        />
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+            <!-- if there is a relator subfield, call handleRelator with the appropriate domain -->
+            <xsl:otherwise>
+                <xsl:call-template name="handleRelator">
+                    <xsl:with-param name="domain" select="'work'"/>
+                    <xsl:with-param name="agentIRI" select="uwf:agentIRI($baseID, .)"/>
+                    <xsl:with-param name="type" select="$type"/>
                 </xsl:call-template>
             </xsl:otherwise>
         </xsl:choose>
@@ -89,6 +132,7 @@
                         or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '1'))">
                         <xsl:call-template name="handle1XXNoRelator">
                             <xsl:with-param name="domain" select="'expression'"/>
+                            <xsl:with-param name="agentIRI" select="uwf:agentIRI($baseID, .)"/>
                         </xsl:call-template>
                     </xsl:when>
                     <!-- only work and manifestation domains have default values -->
@@ -115,6 +159,7 @@
         | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '720-00']"
         mode="man">
         <xsl:param name="baseID"/>
+        <xsl:param name="agg"/>
         <xsl:choose>
             <xsl:when
                 test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
@@ -123,12 +168,14 @@
                         or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '1'))">
                         <xsl:call-template name="handle1XXNoRelator">
                             <xsl:with-param name="domain" select="'manifestation'"/>
+                            <xsl:with-param name="agentIRI" select="uwf:agentIRI($baseID, .)"/>
+                            <xsl:with-param name="type" select="$agg"/>
                         </xsl:call-template>
                     </xsl:when>
                     <xsl:otherwise>
                         <!-- default -->
                         <xsl:copy-of
-                            select="uwf:defaultAgentProp(., uwf:fieldType(.), 'manifestation', uwf:agentIRI($baseID, .), uwf:agentAccessPoint(.))"
+                            select="uwf:defaultAgentProp($agg, ., uwf:fieldType(.), 'manifestation', uwf:agentIRI($baseID, .), uwf:agentAccessPoint(.))"
                         />
                     </xsl:otherwise>
                 </xsl:choose>
@@ -137,6 +184,7 @@
                 <xsl:call-template name="handleRelator">
                     <xsl:with-param name="domain" select="'manifestation'"/>
                     <xsl:with-param name="agentIRI" select="uwf:agentIRI($baseID, .)"/>
+                    <xsl:with-param name="type" select="$agg"/>
                 </xsl:call-template>
             </xsl:otherwise>
         </xsl:choose>
@@ -150,12 +198,13 @@
                             or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '1'))">
                             <xsl:call-template name="handle1XXNoRelator">
                                 <xsl:with-param name="domain" select="'item'"/>
+                                <xsl:with-param name="agentIRI" select="uwf:agentIRI($baseID, .)"/>
                             </xsl:call-template>
                         </xsl:when>
                         <xsl:otherwise>
                             <!-- default -->
                             <xsl:copy-of
-                                select="uwf:defaultAgentProp(., uwf:fieldType(.), 'item', uwf:agentIRI($baseID, .), uwf:agentAccessPoint(.))"
+                                select="uwf:defaultAgentProp('', ., uwf:fieldType(.), 'item', uwf:agentIRI($baseID, .), uwf:agentAccessPoint(.))"
                             />
                         </xsl:otherwise>
                     </xsl:choose>
@@ -171,6 +220,82 @@
         <!-- if there is an item relator term, create the manifestation to item relationship triple -->
         <xsl:if test="$testItem/node() or $testItem/@*">
             <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseID, .)}"/>
+        </xsl:if>
+        
+        <xsl:if test="$agg = 'agg'">
+            <!-- check if work property used -->
+            <xsl:variable name="testWork">
+                <xsl:choose>
+                    <xsl:when
+                        test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
+                        <xsl:choose>
+                            <xsl:when test="@tag = '100' or @tag = '110' or @tag = '111'
+                                or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '1'))">
+                                <xsl:call-template name="handle1XXNoRelator">
+                                    <xsl:with-param name="domain" select="'work'"/>
+                                    <xsl:with-param name="agentIRI" select="uwf:agentIRI($baseID, .)"/>
+                                </xsl:call-template>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <!-- default -->
+                                <xsl:copy-of
+                                    select="uwf:defaultAgentProp('', ., uwf:fieldType(.), 'work', uwf:agentIRI($baseID, .), uwf:agentAccessPoint(.))"
+                                />
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:call-template name="handleRelator">
+                            <xsl:with-param name="domain" select="'work'"/>
+                            <xsl:with-param name="agentIRI" select="uwf:agentIRI($baseID, .)"/>
+                        </xsl:call-template>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:variable>
+            <!-- if there is a work relator term (not aggregate), create the manifestation to item relationship triple -->
+            <xsl:if test="$testWork/node() or $testWork/@*">
+                <xsl:if test="not($testWork/node()/rdawo:P10448 | $testWork/node()/rdawo:P10589 | $testWork/node()/rdawo:P10542 | $testWork/node()/rdawo:P10393)">
+                    <xsl:copy-of
+                        select="uwf:defaultAgentProp($agg, ., uwf:fieldType(.), 'manifestation', uwf:agentIRI($baseID, .), uwf:agentAccessPoint(.))"
+                    />
+                </xsl:if>
+            </xsl:if>
+            
+            <!-- check if expression property used -->
+            <xsl:variable name="testExpression">
+                <xsl:choose>
+                    <xsl:when
+                        test="not(marc:subfield[@code = 'e']) and not(marc:subfield[@code = '4']) and not(marc:subfield[@code = 'j'])">
+                        <xsl:choose>
+                            <xsl:when test="@tag = '100' or @tag = '110' or @tag = '111'
+                                or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '1'))">
+                                <xsl:call-template name="handle1XXNoRelator">
+                                    <xsl:with-param name="domain" select="'expression'"/>
+                                    <xsl:with-param name="agentIRI" select="uwf:agentIRI($baseID, .)"/>
+                                </xsl:call-template>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <!-- default -->
+                                <xsl:copy-of
+                                    select="uwf:defaultAgentProp('', ., uwf:fieldType(.), 'expression', uwf:agentIRI($baseID, .), uwf:agentAccessPoint(.))"
+                                />
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:call-template name="handleRelator">
+                            <xsl:with-param name="domain" select="'expression'"/>
+                            <xsl:with-param name="agentIRI" select="uwf:agentIRI($baseID, .)"/>
+                        </xsl:call-template>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:variable>
+            <!-- if there is a work relator term (not aggregate), create the manifestation to item relationship triple -->
+            <xsl:if test="$testWork/node() or $testWork/@*">
+                <xsl:copy-of
+                    select="uwf:defaultAgentProp($agg, ., uwf:fieldType(.), 'manifestation', uwf:agentIRI($baseID, .), uwf:agentAccessPoint(.))"
+                />
+            </xsl:if>
         </xsl:if>
     </xsl:template>
     
@@ -200,7 +325,7 @@
                         <xsl:otherwise>
                             <!-- default -->
                             <xsl:copy-of
-                                select="uwf:defaultAgentProp(., uwf:fieldType(.), 'item', uwf:agentIRI($baseID, .), uwf:agentAccessPoint(.))"
+                                select="uwf:defaultAgentProp('', ., uwf:fieldType(.), 'item', uwf:agentIRI($baseID, .), uwf:agentAccessPoint(.))"
                             />
                         </xsl:otherwise>
                     </xsl:choose>

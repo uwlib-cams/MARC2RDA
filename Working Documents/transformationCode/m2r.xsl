@@ -247,8 +247,9 @@
                             
                             <xsl:apply-templates select="*" mode="wor">
                                 <xsl:with-param name="baseID" select="$baseID"/>
+                                <xsl:with-param name="type" select="'agg'"/>
                             </xsl:apply-templates>
-                            <xsl:apply-templates select="*" mode="augWor">
+                            <xsl:apply-templates select="*" mode="aggWor">
                                 <xsl:with-param name="baseID" select="$baseID"/>
                             </xsl:apply-templates>
                         </rdf:Description>
@@ -267,9 +268,9 @@
                                     <xsl:value-of select="$workAP"/>
                                 </rdawd:P10328>
                             </xsl:if>
-                            
                             <xsl:apply-templates select="*" mode="augWor">
                                 <xsl:with-param name="baseID" select="$baseID"/>
+                                <xsl:with-param name="type" select="'aug'"/>
                             </xsl:apply-templates>
                         </rdf:Description>
                         
@@ -335,14 +336,36 @@
                                     <rdamo:P30043 rdf:resource="{$origManifestationIRI}"/>
                                 </xsl:otherwise>
                             </xsl:choose>
-                            <xsl:apply-templates select="*" mode="man">
-                                <xsl:with-param name="type" select="'reproduction'"/>
-                            </xsl:apply-templates>
+                            <xsl:choose>
+                                <xsl:when test="$isAggregate = 'aam'">
+                                    <xsl:apply-templates select="*" mode="man">
+                                        <xsl:with-param name="baseID" select="$baseID"/>
+                                        <xsl:with-param name="type" select="'reproduction'"/>
+                                        <xsl:with-param name="agg" select="'agg'"/>
+                                    </xsl:apply-templates>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:apply-templates select="*" mode="man">
+                                        <xsl:with-param name="baseID" select="$baseID"/>
+                                        <xsl:with-param name="type" select="'reproduction'"/>
+                                    </xsl:apply-templates>
+                                </xsl:otherwise>
+                            </xsl:choose>
                         </xsl:when>
                         <xsl:otherwise>
-                            <xsl:apply-templates select="*" mode="man">
-                                <xsl:with-param name="baseID" select="$baseID"/>
-                            </xsl:apply-templates>
+                            <xsl:choose>
+                                <xsl:when test="$isAggregate = 'aam'">
+                                    <xsl:apply-templates select="*" mode="man">
+                                        <xsl:with-param name="baseID" select="$baseID"/>
+                                        <xsl:with-param name="agg" select="'agg'"/>
+                                    </xsl:apply-templates>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:apply-templates select="*" mode="man">
+                                        <xsl:with-param name="baseID" select="$baseID"/>
+                                    </xsl:apply-templates>
+                                </xsl:otherwise>
+                            </xsl:choose>
                         </xsl:otherwise>
                     </xsl:choose>
                 </rdf:Description>

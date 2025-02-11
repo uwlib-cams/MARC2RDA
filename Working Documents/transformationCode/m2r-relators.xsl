@@ -59,7 +59,7 @@
                 </xsl:choose>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:value-of select="normalize-space($subfield)"/>
+                <xsl:value-of select="translate($subfield, ',.', '') => normalize-space()"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
@@ -251,6 +251,7 @@
     
     
     <xsl:function name="uwf:defaultAgentProp">
+        <xsl:param name="recordType"/>
         <xsl:param name="field"/>
         <xsl:param name="fieldType"/>
         <xsl:param name="domain"/>
@@ -291,49 +292,106 @@
             </xsl:when>
             <xsl:when test="$domain = 'manifestation'">
                 <xsl:choose>
+                    <!-- 1XX for aggregating work -->
+                    <xsl:when test="starts-with($tag, '1')">
+                        <xsl:if test="$recordType = 'agg'">
+                            <xsl:choose>
+                                <xsl:when test="($fieldType = 'X00' and  ($field/@ind1 = '0' or $field/@ind1 = '1' or $field/@ind1 = '2'))">
+                                    <!-- person -->
+                                    <xsl:comment>Default relationship property used for <xsl:value-of select="$objIRI"/></xsl:comment>
+                                    <xsl:element name="{'rdamo:P30336'}">
+                                        <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
+                                    </xsl:element>
+                                </xsl:when>
+                                <xsl:when test="$fieldType = 'X00' and $field/@ind1 = '3'">
+                                    <!-- family -->
+                                    <xsl:comment>Default relationship property used for <xsl:value-of select="$objIRI"/></xsl:comment>
+                                    <xsl:element name="{'rdamo:P30423'}">
+                                        <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
+                                    </xsl:element>
+                                </xsl:when>
+                                <xsl:when test="$fieldType = 'X10' or $fieldType = 'X11'">
+                                    <!-- corporate body -->
+                                    <xsl:comment>Default relationship property used for <xsl:value-of select="$objIRI"/></xsl:comment>
+                                    <xsl:element name="{'rdamo:P30394'}">
+                                        <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
+                                    </xsl:element>
+                                </xsl:when>
+                            </xsl:choose>
+                        </xsl:if>
+                    </xsl:when>
                     <xsl:when test="starts-with($tag, '7') and not($field/marc:subfield[@code = '5'])">
-                        <!-- 7XX -->
                         <xsl:choose>
-                            <xsl:when test="($fieldType = 'X00' and  ($field/@ind1 = '0' or $field/@ind1 = '1' or $field/@ind1 = '2'))">
-                                <!-- person -->
-                                <xsl:comment>Default relationship property used for <xsl:value-of select="$objIRI"/></xsl:comment>
-                                <xsl:element name="{'rdamo:P30268'}">
-                                    <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
-                                </xsl:element>
-                            </xsl:when>
-                            <xsl:when test="$fieldType = 'X00' and $field/@ind1 = '3'">
-                                <!-- family -->
-                                <xsl:comment>Default relationship property used for <xsl:value-of select="$objIRI"/></xsl:comment>
-                                <xsl:element name="{'rdamo:P30269'}">
-                                    <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
-                                </xsl:element>
-                            </xsl:when>
-                            <xsl:when test="$fieldType = 'X10' or $fieldType = 'X11'">
-                                <!-- corporate body -->
-                                <xsl:comment>Default relationship property used for <xsl:value-of select="$objIRI"/></xsl:comment>
-                                <xsl:element name="{'rdamo:P30270'}">
-                                    <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
-                                </xsl:element>
-                            </xsl:when>
-                            <xsl:when test="$fieldType = '720'">
+                            <xsl:when test="$recordType = 'agg'">
                                 <xsl:choose>
-                                    <xsl:when test="$field/@ind = '1'">
+                                    <xsl:when test="($fieldType = 'X00' and  ($field/@ind1 = '0' or $field/@ind1 = '1' or $field/@ind1 = '2'))">
                                         <!-- person -->
-                                        <xsl:comment>Default relationship property used for <xsl:value-of select="$objString"/></xsl:comment>
-                                        <xsl:element name="{'rdamd:P30268'}">
-                                            <xsl:copy-of select="$objString"/>
+                                        <xsl:comment>Default relationship property used for <xsl:value-of select="$objIRI"/></xsl:comment>
+                                        <xsl:element name="{'rdamo:P30336'}">
+                                            <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
                                         </xsl:element>
                                     </xsl:when>
-                                    <xsl:otherwise>
-                                        <!-- agent -->
-                                        <xsl:comment>Default relationship property used for <xsl:value-of select="$objString"/></xsl:comment>
-                                        <xsl:element name="{'rdamd:P30267'}">
-                                            <xsl:copy-of select="$objString"/>
+                                    <xsl:when test="$fieldType = 'X00' and $field/@ind1 = '3'">
+                                        <!-- family -->
+                                        <xsl:comment>Default relationship property used for <xsl:value-of select="$objIRI"/></xsl:comment>
+                                        <xsl:element name="{'rdamo:P30423'}">
+                                            <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
                                         </xsl:element>
-                                    </xsl:otherwise>
+                                    </xsl:when>
+                                    <xsl:when test="$fieldType = 'X10' or $fieldType = 'X11'">
+                                        <!-- corporate body -->
+                                        <xsl:comment>Default relationship property used for <xsl:value-of select="$objIRI"/></xsl:comment>
+                                        <xsl:element name="{'rdamo:P30394'}">
+                                            <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
+                                        </xsl:element>
+                                    </xsl:when>
                                 </xsl:choose>
                             </xsl:when>
-                            <xsl:otherwise/>
+                            <!-- 7XX single work expression -->
+                            <xsl:otherwise>
+                                <xsl:choose>
+                                    <xsl:when test="($fieldType = 'X00' and  ($field/@ind1 = '0' or $field/@ind1 = '1' or $field/@ind1 = '2'))">
+                                        <!-- person -->
+                                        <xsl:comment>Default relationship property used for <xsl:value-of select="$objIRI"/></xsl:comment>
+                                        <xsl:element name="{'rdamo:P30268'}">
+                                            <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
+                                        </xsl:element>
+                                    </xsl:when>
+                                    <xsl:when test="$fieldType = 'X00' and $field/@ind1 = '3'">
+                                        <!-- family -->
+                                        <xsl:comment>Default relationship property used for <xsl:value-of select="$objIRI"/></xsl:comment>
+                                        <xsl:element name="{'rdamo:P30269'}">
+                                            <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
+                                        </xsl:element>
+                                    </xsl:when>
+                                    <xsl:when test="$fieldType = 'X10' or $fieldType = 'X11'">
+                                        <!-- corporate body -->
+                                        <xsl:comment>Default relationship property used for <xsl:value-of select="$objIRI"/></xsl:comment>
+                                        <xsl:element name="{'rdamo:P30270'}">
+                                            <xsl:attribute name="rdf:resource"><xsl:value-of select="$objIRI"/></xsl:attribute>
+                                        </xsl:element>
+                                    </xsl:when>
+                                    <xsl:when test="$fieldType = '720'">
+                                        <xsl:choose>
+                                            <xsl:when test="$field/@ind = '1'">
+                                                <!-- person -->
+                                                <xsl:comment>Default relationship property used for <xsl:value-of select="$objString"/></xsl:comment>
+                                                <xsl:element name="{'rdamd:P30268'}">
+                                                    <xsl:copy-of select="$objString"/>
+                                                </xsl:element>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <!-- agent -->
+                                                <xsl:comment>Default relationship property used for <xsl:value-of select="$objString"/></xsl:comment>
+                                                <xsl:element name="{'rdamd:P30267'}">
+                                                    <xsl:copy-of select="$objString"/>
+                                                </xsl:element>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                    </xsl:when>
+                                    <xsl:otherwise/>
+                                </xsl:choose>
+                            </xsl:otherwise>
                         </xsl:choose>
                     </xsl:when>
                 </xsl:choose>
@@ -388,7 +446,7 @@
                 </xsl:choose>
             </xsl:when>
             <!-- inverse property -->
-<!--            <xsl:when test="$domain = 'agent'">
+            <!--            <xsl:when test="$domain = 'agent'">
                 <xsl:choose>
                     <xsl:when test="starts-with($field/@tag, '1') or starts-with($field/@tag, '7')">
                         <!-\- 1XX and 7XX -\->
@@ -436,6 +494,8 @@
         <xsl:param name="domain"/>
         <!-- IRI generated from field, this is a temporary value for now -->
         <xsl:param name="agentIRI"/>
+        <!-- type is agg when aggregating work is being processed, aug for augmented work, blank for single work -->
+        <xsl:param name="type"/>
         
         <!-- ***** VARIABLES ****** -->
         
@@ -468,7 +528,7 @@
             <!-- no subfields have a match -->
             <!-- if no $4$e$j match, this needs to be a default value, there's no point doing any further lookup -->
             <xsl:when test="$anyMatch = 'DEFAULT'">
-                <xsl:copy-of select="uwf:defaultAgentProp(., $fieldType, $domain, $agentIRI, $agentAP)"/>
+                <xsl:copy-of select="uwf:defaultAgentProp($type, ., $fieldType, $domain, $agentIRI, $agentAP)"/>
             </xsl:when>
             
             <!-- otherwise at least one does -->
@@ -484,9 +544,34 @@
                                 </xsl:element>
                             </xsl:when>
                             <xsl:otherwise>
-                                <xsl:element name="{$ns-wemi || 'o:' || substring($sub4Rda/uwmisc:rdaPropIri, string-length($sub4Rda/uwmisc:rdaPropIri) - 5)}">
-                                    <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
-                                </xsl:element>
+                                <xsl:choose>
+                                    <xsl:when test="$type = 'agg' and $domain = 'work'">
+                                        <xsl:variable name="prop" select="substring($sub4Rda/uwmisc:rdaPropIri, string-length($sub4Rda/uwmisc:rdaPropIri) - 5)"/>
+                                        <xsl:choose>
+                                            <xsl:when test="matches($prop, 'P10448|P10589|P10542|P10393')">
+                                                <xsl:element name="{$ns-wemi || 'o:' || substring($sub4Rda/uwmisc:rdaPropIri, string-length($sub4Rda/uwmisc:rdaPropIri) - 5)}">
+                                                    <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                                </xsl:element>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <xsl:copy-of select="uwf:defaultAgentProp($type, .., $fieldType, $domain, $agentIRI, $agentAP)"/>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                    </xsl:when>
+                                    <xsl:when test="$type = 'aug' and $domain = 'work'">
+                                        <xsl:variable name="prop" select="substring($sub4Rda/uwmisc:rdaPropIri, string-length($sub4Rda/uwmisc:rdaPropIri) - 5)"/>
+                                        <xsl:if test="not(matches($prop, 'P10448|P10589|P10542|P10393'))">
+                                            <xsl:element name="{$ns-wemi || 'o:' || substring($sub4Rda/uwmisc:rdaPropIri, string-length($sub4Rda/uwmisc:rdaPropIri) - 5)}">
+                                                <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                            </xsl:element>
+                                        </xsl:if>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:element name="{$ns-wemi || 'o:' || substring($sub4Rda/uwmisc:rdaPropIri, string-length($sub4Rda/uwmisc:rdaPropIri) - 5)}">
+                                            <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                        </xsl:element>
+                                    </xsl:otherwise>
+                                </xsl:choose>
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:if>
@@ -504,9 +589,34 @@
                                     </xsl:element>
                                 </xsl:when>
                                 <xsl:otherwise>
-                                    <xsl:element name="{$ns-wemi || 'o:' || substring($subERda/uwmisc:rdaPropIri, string-length($subERda/uwmisc:rdaPropIri) - 5)}">
-                                        <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
-                                    </xsl:element>
+                                    <xsl:choose>
+                                        <xsl:when test="$type = 'agg' and $domain = 'work'">
+                                            <xsl:variable name="prop" select="substring($subERda/uwmisc:rdaPropIri, string-length($subERda/uwmisc:rdaPropIri) - 5)"/>
+                                            <xsl:choose>
+                                                <xsl:when test="matches($prop, 'P10448|P10589|P10542|P10393')">
+                                                    <xsl:element name="{$ns-wemi || 'o:' || substring($subERda/uwmisc:rdaPropIri, string-length($subERda/uwmisc:rdaPropIri) - 5)}">
+                                                        <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                                    </xsl:element>
+                                                </xsl:when>
+                                                <xsl:otherwise>
+                                                    <xsl:copy-of select="uwf:defaultAgentProp($type, .., $fieldType, $domain, $agentIRI, $agentAP)"/>
+                                                </xsl:otherwise>
+                                            </xsl:choose>
+                                        </xsl:when>
+                                        <xsl:when test="$type = 'aug' and $domain = 'work'">
+                                            <xsl:variable name="prop" select="substring($subERda/uwmisc:rdaPropIri, string-length($subERda/uwmisc:rdaPropIri) - 5)"/>
+                                            <xsl:if test="not(matches($prop, 'P10448|P10589|P10542|P10393'))">
+                                                <xsl:element name="{$ns-wemi || 'o:' || substring($subERda/uwmisc:rdaPropIri, string-length($subERda/uwmisc:rdaPropIri) - 5)}">
+                                                    <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                                </xsl:element>
+                                            </xsl:if>
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                            <xsl:element name="{$ns-wemi || 'o:' || substring($subERda/uwmisc:rdaPropIri, string-length($subERda/uwmisc:rdaPropIri) - 5)}">
+                                                <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                            </xsl:element>
+                                        </xsl:otherwise>
+                                    </xsl:choose>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:if>
@@ -518,9 +628,34 @@
                     <xsl:for-each select="marc:subfield[@code = 'j']">
                         <xsl:variable name="subJRda" select="uwf:relatorLookupRDA('subJKeyRda', uwf:normalizeRelatorTerm(.), 'X00', $indValue)"/>
                         <xsl:if test="not(contains($subJRda, 'NO MATCH')) and $subJRda/uwmisc:domain = $domain">
-                            <xsl:element name="{$ns-wemi || 'o:' || substring($subJRda/uwmisc:rdaPropIri, string-length($subJRda/uwmisc:rdaPropIri) - 5)}">
-                                <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
-                            </xsl:element>
+                            <xsl:choose>
+                                <xsl:when test="$type = 'agg' and $domain = 'work'">
+                                    <xsl:variable name="prop" select="substring($subJRda/uwmisc:rdaPropIri, string-length($subJRda/uwmisc:rdaPropIri) - 5)"/>
+                                    <xsl:choose>
+                                        <xsl:when test="matches($prop, 'P10448|P10589|P10542|P10393')">
+                                            <xsl:element name="{$ns-wemi || 'o:' || substring($subJRda/uwmisc:rdaPropIri, string-length($subJRda/uwmisc:rdaPropIri) - 5)}">
+                                                <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                            </xsl:element>
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                            <xsl:copy-of select="uwf:defaultAgentProp($type, .., $fieldType, $domain, $agentIRI, $agentAP)"/>
+                                        </xsl:otherwise>
+                                    </xsl:choose>
+                                </xsl:when>
+                                <xsl:when test="$type = 'aug' and $domain = 'work'">
+                                    <xsl:variable name="prop" select="substring($subJRda/uwmisc:rdaPropIri, string-length($subJRda/uwmisc:rdaPropIri) - 5)"/>
+                                    <xsl:if test="not(matches($prop, 'P10448|P10589|P10542|P10393'))">
+                                        <xsl:element name="{$ns-wemi || 'o:' || substring($subJRda/uwmisc:rdaPropIri, string-length($subJRda/uwmisc:rdaPropIri) - 5)}">
+                                            <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                        </xsl:element>
+                                    </xsl:if>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:element name="{$ns-wemi || 'o:' || substring($subJRda/uwmisc:rdaPropIri, string-length($subJRda/uwmisc:rdaPropIri) - 5)}">
+                                        <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                    </xsl:element>
+                                </xsl:otherwise>
+                            </xsl:choose>
                         </xsl:if>
                     </xsl:for-each>
                 </xsl:if>
@@ -536,7 +671,7 @@
                         </xsl:when>
                         <xsl:when test="contains($sub4Marc, 'DEFAULT')">
                             <!-- this means there's a match but multiple domains - we default-->
-                            <xsl:copy-of select="uwf:defaultAgentProp(.., $fieldType, $domain, $agentIRI, $agentAP)"/>
+                            <xsl:copy-of select="uwf:defaultAgentProp($type, .., $fieldType, $domain, $agentIRI, $agentAP)"/>
                         </xsl:when>
                         <xsl:otherwise>
                             <!-- there was a match and not multiple domains, use given RDA prop IRI from table -->
@@ -548,9 +683,34 @@
                                         </xsl:element>
                                     </xsl:when>
                                     <xsl:otherwise>
-                                        <xsl:element name="{$ns-wemi || 'o:' || substring($sub4Marc/uwmisc:rdaPropIri, string-length($sub4Marc/uwmisc:rdaPropIri) - 5)}">
-                                            <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
-                                        </xsl:element>
+                                        <xsl:choose>
+                                            <xsl:when test="$type = 'agg' and $domain = 'work'">
+                                                <xsl:variable name="prop" select="substring($sub4Marc/uwmisc:rdaPropIri, string-length($sub4Marc/uwmisc:rdaPropIri) - 5)"/>
+                                                <xsl:choose>
+                                                    <xsl:when test="matches($prop, 'P10448|P10589|P10542|P10393')">
+                                                        <xsl:element name="{$ns-wemi || 'o:' || substring($sub4Marc/uwmisc:rdaPropIri, string-length($sub4Marc/uwmisc:rdaPropIri) - 5)}">
+                                                            <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                                        </xsl:element>
+                                                    </xsl:when>
+                                                    <xsl:otherwise>
+                                                        <xsl:copy-of select="uwf:defaultAgentProp($type, .., $fieldType, $domain, $agentIRI, $agentAP)"/>
+                                                    </xsl:otherwise>
+                                                </xsl:choose>
+                                            </xsl:when>
+                                            <xsl:when test="$type = 'aug' and $domain = 'work'">
+                                                <xsl:variable name="prop" select="substring($sub4Marc/uwmisc:rdaPropIri, string-length($sub4Marc/uwmisc:rdaPropIri) - 5)"/>
+                                                <xsl:if test="not(matches($prop, 'P10448|P10589|P10542|P10393'))">
+                                                    <xsl:element name="{$ns-wemi || 'o:' || substring($sub4Marc/uwmisc:rdaPropIri, string-length($sub4Marc/uwmisc:rdaPropIri) - 5)}">
+                                                        <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                                    </xsl:element>
+                                                </xsl:if>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <xsl:element name="{$ns-wemi || 'o:' || substring($sub4Marc/uwmisc:rdaPropIri, string-length($sub4Marc/uwmisc:rdaPropIri) - 5)}">
+                                                    <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                                </xsl:element>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
                                     </xsl:otherwise>
                                 </xsl:choose>
                             </xsl:if>
@@ -567,7 +727,7 @@
                         </xsl:when>
                         <xsl:when test="contains($subEMarc, 'DEFAULT')">
                             <!-- this means there's a match but multiple domains - we default-->
-                            <xsl:copy-of select="uwf:defaultAgentProp(.., $fieldType, $domain, $agentIRI, $agentAP)"/>
+                            <xsl:copy-of select="uwf:defaultAgentProp($type, .., $fieldType, $domain, $agentIRI, $agentAP)"/>
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:if test="$subEMarc/uwmisc:domain = $domain">
@@ -579,9 +739,34 @@
                                         </xsl:element>
                                     </xsl:when>
                                     <xsl:otherwise>
-                                        <xsl:element name="{$ns-wemi || 'o:' || substring($subEMarc/uwmisc:rdaPropIri, string-length($subEMarc/uwmisc:rdaPropIri) - 5)}">
-                                            <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
-                                        </xsl:element>
+                                        <xsl:choose>
+                                            <xsl:when test="$type = 'agg' and $domain = 'work'">
+                                                <xsl:variable name="prop" select="substring($subEMarc/uwmisc:rdaPropIri, string-length($subEMarc/uwmisc:rdaPropIri) - 5)"/>
+                                                <xsl:choose>
+                                                    <xsl:when test="matches($prop, 'P10448|P10589|P10542|P10393')">
+                                                        <xsl:element name="{$ns-wemi || 'o:' || substring($subEMarc/uwmisc:rdaPropIri, string-length($subEMarc/uwmisc:rdaPropIri) - 5)}">
+                                                            <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                                        </xsl:element>
+                                                    </xsl:when>
+                                                    <xsl:otherwise>
+                                                        <xsl:copy-of select="uwf:defaultAgentProp($type, ., $fieldType, $domain, $agentIRI, $agentAP)"/>
+                                                    </xsl:otherwise>
+                                                </xsl:choose>
+                                            </xsl:when>
+                                            <xsl:when test="$type = 'aug' and $domain = 'work'">
+                                                <xsl:variable name="prop" select="substring($subEMarc/uwmisc:rdaPropIri, string-length($subEMarc/uwmisc:rdaPropIri) - 5)"/>
+                                                <xsl:if test="not(matches($prop, 'P10448|P10589|P10542|P10393'))">
+                                                    <xsl:element name="{$ns-wemi || 'o:' || substring($subEMarc/uwmisc:rdaPropIri, string-length($subEMarc/uwmisc:rdaPropIri) - 5)}">
+                                                        <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                                    </xsl:element>
+                                                </xsl:if>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <xsl:element name="{$ns-wemi || 'o:' || substring($subEMarc/uwmisc:rdaPropIri, string-length($subEMarc/uwmisc:rdaPropIri) - 5)}">
+                                                    <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                                </xsl:element>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
                                     </xsl:otherwise>
                                 </xsl:choose>
                             </xsl:if>
@@ -599,14 +784,39 @@
                             </xsl:when>
                             <xsl:when test="contains($subJMarc, 'DEFAULT')">
                                 <!-- this means there's a match but multiple domains - we default-->
-                                <xsl:copy-of select="uwf:defaultAgentProp(.., $fieldType, $domain, $agentIRI, $agentAP)"/>
+                                <xsl:copy-of select="uwf:defaultAgentProp($type, .., $fieldType, $domain, $agentIRI, $agentAP)"/>
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:if test="$subJMarc/uwmisc:domain = $domain">
                                     <!-- there was a match and not multiple domains, use given RDA prop IRI from table -->
-                                    <xsl:element name="{$ns-wemi || 'o:' || substring($subJMarc/uwmisc:rdaPropIri, string-length($subJMarc/uwmisc:rdaPropIri) - 5)}">
-                                        <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
-                                    </xsl:element>
+                                    <xsl:choose>
+                                        <xsl:when test="$type = 'agg' and $domain = 'work'">
+                                            <xsl:variable name="prop" select="substring($subJMarc/uwmisc:rdaPropIri, string-length($subJMarc/uwmisc:rdaPropIri) - 5)"/>
+                                            <xsl:choose>
+                                                <xsl:when test="matches($prop, 'P10448|P10589|P10542|P10393')">
+                                                    <xsl:element name="{$ns-wemi || 'o:' || substring($subJMarc/uwmisc:rdaPropIri, string-length($subJMarc/uwmisc:rdaPropIri) - 5)}">
+                                                        <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                                    </xsl:element>
+                                                </xsl:when>
+                                                <xsl:otherwise>
+                                                    <xsl:copy-of select="uwf:defaultAgentProp($type, ., $fieldType, $domain, $agentIRI, $agentAP)"/>
+                                                </xsl:otherwise>
+                                            </xsl:choose>
+                                        </xsl:when>
+                                        <xsl:when test="$type = 'aug' and $domain = 'work'">
+                                            <xsl:variable name="prop" select="substring($subJMarc/uwmisc:rdaPropIri, string-length($subJMarc/uwmisc:rdaPropIri) - 5)"/>
+                                            <xsl:if test="not(matches($prop, 'P10448|P10589|P10542|P10393'))">
+                                                <xsl:element name="{$ns-wemi || 'o:' || substring($subJMarc/uwmisc:rdaPropIri, string-length($subJMarc/uwmisc:rdaPropIri) - 5)}">
+                                                    <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                                </xsl:element>
+                                            </xsl:if>
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                            <xsl:element name="{$ns-wemi || 'o:' || substring($subJMarc/uwmisc:rdaPropIri, string-length($subJMarc/uwmisc:rdaPropIri) - 5)}">
+                                                <xsl:attribute name="rdf:resource"><xsl:value-of select="$agentIRI"/></xsl:attribute>
+                                            </xsl:element>
+                                        </xsl:otherwise>
+                                    </xsl:choose>
                                 </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
@@ -844,6 +1054,7 @@
     <xsl:template name="handle1XXNoRelator" expand-text="true">
         <xsl:param name="domain"/>
         <xsl:param name="agentIRI"/>
+        <xsl:param name="type"/>
         <xsl:choose>
             <!-- if 1XX has no relator and there is a 7XX field -->
             <xsl:when test="../marc:datafield[@tag = '700'] or ../marc:datafield[@tag = '710'] or ../marc:datafield[@tag = '711'] or ../marc:datafield[@tag = '720']">
@@ -870,18 +1081,19 @@
                             <xsl:call-template name="handleRelator">
                                 <xsl:with-param name="domain" select="$domain"/>
                                 <xsl:with-param name="agentIRI" select="$agentIRI"/>
+                                <xsl:with-param name="type" select="$type"/>
                             </xsl:call-template>
                         </xsl:for-each>
                     </xsl:when>
                     <xsl:otherwise>
                         <!-- 7XXs had no 'joint' or 'jt' subfields -->
-                       <xsl:copy-of select="uwf:defaultAgentProp(., uwf:fieldType(.), $domain, $agentIRI, uwf:agentAccessPoint(.))"/>
+                       <xsl:copy-of select="uwf:defaultAgentProp($type, ., uwf:fieldType(.), $domain, $agentIRI, uwf:agentAccessPoint(.))"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
             <xsl:otherwise>
                 <!-- no 7XX fields -->
-                <xsl:copy-of select="uwf:defaultAgentProp(., uwf:fieldType(.), $domain, $agentIRI, uwf:agentAccessPoint(.))"/>
+                <xsl:copy-of select="uwf:defaultAgentProp($type, ., uwf:fieldType(.), $domain, $agentIRI, uwf:agentAccessPoint(.))"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
