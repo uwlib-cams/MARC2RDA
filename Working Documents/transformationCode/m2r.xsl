@@ -68,17 +68,7 @@
     <!-- This template matches at the root
         It's only purpose is to apply-templates to the marc:collection -->
     <xsl:template match="/">
-        <!--        <test>
-            <introduction>
-                <p>Processing a single MARC XML "collection"</p>
-                <p>Number of records: <xsl:value-of select="count(marc:collection/marc:record)"
-                    /></p>
-                <p>Number of records with 264 fields: <xsl:value-of
-                        select="count(marc:collection/marc:record[marc:datafield[@tag = '264']])"
-                    /></p>
-            </introduction> -->
         <xsl:apply-templates select="marc:collection"/>
-        <!--     </test>  -->
     </xsl:template>
     
     <!-- This template matches the marc:collection 
@@ -112,19 +102,21 @@
             xmlns:skos="http://www.w3.org/2004/02/skos/core#"
             xmlns:uwmisc="http://uw.edu/all-purpose-namespace/"
             xmlns:ex="http://fakeIRI2.edu/">
-            <!-- at some point, filtering for aggregates will need to happen before apply-templates is called here -->
-            <!--<xsl:apply-templates select="marc:record[not(marc:datafield[@tag='533'])]"/>-->
+            <!-- apply templates to marc:record -->
             <xsl:apply-templates select="marc:record"/>
         </rdf:RDF>
     </xsl:template>
  
     <xsl:template match="marc:record" expand-text="yes">
+        <!-- message can be output to show processing -->
         <!--<xsl:message>
             <xsl:text>Processing record {marc:controlfield[@tag = '001']} ({position()}/{last()}).</xsl:text>
         </xsl:message>-->
         
+<!-- VARIABLES -->
         <!-- check whether record being processed is an aggregate-->
         <xsl:variable name="isAggregate">
+            <!-- when implementing aggregate.xsl, uncomment next line and comment the xsl:choose below -->
 <!--             <xsl:value-of select="uwf:checkAggregates(.)"/>-->
             <xsl:choose>
                 <xsl:when test="marc:datafield[@tag = '979']/marc:subfield[@code = 'a']">
@@ -136,30 +128,38 @@
             </xsl:choose>
         </xsl:variable>
         <xsl:choose>
-            <!-- if not an aggregate, proceed with transform -->
+            <!-- if single work expression or augmentation aggregate, proceed with transform -->
             <xsl:when test="$isAggregate = 'swe' or 'aam'">
-                
- 
+                            
+                <!-- variable for generating unique IRIs - currently date  -->
                 <xsl:variable name="baseID" select="current-date() => string() => uwf:stripAllPunctuation() => encode-for-uri()"/>
                 
+                <!-- main WEM IRIs stored in variables -->
                 <xsl:variable name="mainWorkIRI" select="uwf:mainWorkIRI(.)"/>
                 <xsl:variable name="mainExpressionIRI" select="uwf:mainExpressionIRI(.)"/>
                 <xsl:variable name="mainManifestationIRI" select="uwf:mainManifestationIRI(.)"/>
                 
+                <!-- if reproduction -->
                 <xsl:variable name="isReproduction" select="uwf:checkReproductions(.)"/>
+                
+                <!-- orig manifestation IRI - blank if not reproduction -->
                 <xsl:variable name="origManifestationIRI">
                     <xsl:if test="$isReproduction">
                         <xsl:value-of select="uwf:origManifestationIRI(.)"/>
                     </xsl:if>
                 </xsl:variable>
                 
+                <!-- aggregating work IRI - blank if not augmentation aggregate -->
                 <xsl:variable name="aggWorkIRI">
                     <xsl:if test="$isAggregate = 'aam'">
                         <xsl:value-of select="uwf:aggWorkIRI(.)"/>
                     </xsl:if>
                 </xsl:variable>
                 
+                <!-- metadata work IRI for connection to MARC record -->
                 <xsl:variable name="marcMetadataWorkIRI" select="$BASE||'transform/wor#marc'||encode-for-uri(lower-case(translate(marc:controlfield[@tag = '003'], ' ', '')))||encode-for-uri(translate(marc:controlfield[@tag = '001'], ' ', '_'))"/>
+                
+                <!-- call metadata work template (template at bottom of this file) -->
                 <xsl:call-template name="marcMetadataWork">
                     <xsl:with-param name="marcWorkIRI" select="$marcMetadataWorkIRI"/>
                     <xsl:with-param name="mainWorkIRI" select="$mainWorkIRI"/>
@@ -169,13 +169,14 @@
                     <xsl:with-param name="origManifestationIRI" select="$origManifestationIRI"/>
                 </xsl:call-template>
                 
+<!-- WEM STACK -->
                 <!-- Set up the WEMI stack for the marc:record -->
                 <!-- an rdf:Description is created for the Work, Expression, and Manifestation 
                 and apply-templates is called with the correct mode 
                 to create the appropriate relationships within each rdf:Description element -->
-                
                 <xsl:choose>
-                    <!-- Single WE -->
+                    
+                    <!-- SINGLE WE -->
                     <xsl:when test="$isAggregate = 'swe'">
                         <!-- *****WORKS***** -->
                         <rdf:Description rdf:about="{$mainWorkIRI}">
@@ -184,7 +185,7 @@
                             <rdawo:P10078 rdf:resource="{$mainExpressionIRI}"/>
                             
                             <!-- This code can be uncommented to add a work access point to the work description.
-                    uwf:mainWorkAccessPoint() is located in m2r-functions.xsl -->
+                    uwf:mainWorkAccessPoint() is located in m2r-aps.xsl -->
                             <xsl:variable name="workAP" select="uwf:mainWorkAccessPoint(.)"/>
                             <xsl:if test="$workAP">
                                 <rdawd:P10328>
@@ -208,7 +209,7 @@
                             <rdaeo:P20231 rdf:resource="{$mainWorkIRI}"/>
                             
                             <!-- This code can be uncommented to add an expression access point to the expression description.
-                    uwf:mainExpressionAccessPoint() is located in m2r-functions.xsl -->
+                    uwf:mainExpressionAccessPoint() is located in m2r-aps.xsl -->
                             <xsl:variable name="expressionAP" select="uwf:mainExpressionAccessPoint(.)"/>
                             <xsl:if test="$expressionAP">
                                 <rdaed:P20310>
@@ -223,8 +224,11 @@
                         </rdf:Description>
                     </xsl:when>
                     
-                    <!-- augmentation -->
+                    <!-- AAM -->
                     <xsl:when test="$isAggregate = 'aam'">
+                        
+                        <!-- *****WORKS***** -->
+                        <!-- aggregating work and main augmented work -->
                         <rdf:Description rdf:about="{$aggWorkIRI}">
                             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
                             <rdawo:P10623 rdf:resource="{$marcMetadataWorkIRI}"/>
@@ -237,7 +241,7 @@
                             </xsl:if>
                             
                             <!-- This code can be uncommented to add a work access point to the work description.
-                    uwf:mainWorkAccessPoint() is located in m2r-functions.xsl -->
+                    uwf:mainWorkAccessPoint() is located in m2r-aps.xsl -->
                             <xsl:variable name="aggWorkAP" select="uwf:aggWorkAccessPoint(.)"/>
                             <xsl:if test="$aggWorkAP">
                                 <rdawd:P10328>
@@ -254,14 +258,13 @@
                             </xsl:apply-templates>
                         </rdf:Description>
                         
-                        <!-- *****WORKS***** -->
                         <rdf:Description rdf:about="{$mainWorkIRI}">
                             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
                             <rdawo:P10623 rdf:resource="{$marcMetadataWorkIRI}"/>
                             <rdawo:P10078 rdf:resource="{$mainExpressionIRI}"/>
                             
                             <!-- This code can be uncommented to add a work access point to the work description.
-                    uwf:mainWorkAccessPoint() is located in m2r-functions.xsl -->
+                    uwf:mainWorkAccessPoint() is located in m2r-aps.xsl -->
                             <xsl:variable name="workAP" select="uwf:mainWorkAccessPoint(.)"/>
                             <xsl:if test="$workAP">
                                 <rdawd:P10328>
@@ -285,7 +288,7 @@
                             <rdaeo:P20231 rdf:resource="{$mainWorkIRI}"/>
                             
                             <!-- This code can be uncommented to add an expression access point to the expression description.
-                    uwf:mainExpressionAccessPoint() is located in m2r-functions.xsl -->
+                    uwf:mainExpressionAccessPoint() is located in m2r-aps.xsl -->
                             <xsl:variable name="expressionAP" select="uwf:mainExpressionAccessPoint(.)"/>
                             <xsl:if test="$expressionAP">
                                 <rdaed:P20310>
@@ -308,7 +311,7 @@
                     </xsl:if>
                     
                     <!-- This code can be uncommented to add a manifestation access point to the manifestation description.
-                    uwf:mainManifestationAccessPoint() is located in m2r-functions.xsl -->
+                    uwf:mainManifestationAccessPoint() is located in m2r-aps.xsl -->
                     <xsl:variable name="manifestationAP" select="uwf:mainManifestationAccessPoint(.)"/>
                     <xsl:if test="$manifestationAP">
                         <rdamd:P30276>
@@ -383,7 +386,7 @@
                         </xsl:if>
                         
                         <!-- This code can be uncommented to add a manifestation access point to the manifestation description.
-                    uwf:mainManifestationAccessPoint() is located in m2r-functions.xsl -->
+                    uwf:mainManifestationAccessPoint() is located in m2r-aps.xsl -->
                         <xsl:variable name="manifestationAP" select="uwf:mainManifestationAccessPoint(.)"/>
                     <xsl:if test="$manifestationAP">
                         <rdamd:P30276>
@@ -398,6 +401,8 @@
                     </rdf:Description>
                 </xsl:if>
                 
+                
+<!-- ADDITIONAL ENTITIES -->
                 <!-- Items, nomens, metadata works, and agents are generated as needed
              so the rdf:Description elements are generated within the field-specific templates.
              How IRIs are minted vary, see documentation -->
@@ -455,6 +460,7 @@
         </xsl:choose>
     </xsl:template>
     
+<!-- METADATA WORK TEMPLATE -->
     <xsl:template name="marcMetadataWork" expand-text="yes">
         <xsl:param name="marcWorkIRI"/>
         <xsl:param name="mainWorkIRI"/>
@@ -478,7 +484,9 @@
         
         <rdf:Description rdf:about="{$marcWorkIRI}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-            <rdawo:P10400 rdf:resource="{$marcWorGrpNomIRI}"/>
+            <rdawd:P10400>
+                <xsl:value-of select="marc:controlfield[@tag = '003']||marc:controlfield[@tag = '001']"/>
+            </rdawd:P10400>
             <rdawd:P10002>
                 <xsl:value-of select="'transform/wor#marc'||encode-for-uri(lower-case(translate(marc:controlfield[@tag = '003'], ' ', '')))||encode-for-uri(translate(marc:controlfield[@tag = '001'], ' ', '_'))"/>
             </rdawd:P10002>
@@ -490,7 +498,7 @@
                 <rdawo:P10617 rdf:resource="{$origManifestationIRI}"/>
             </xsl:if>
             <xsl:if test="$aggWorkIRI != ''">
-                <rdawo:P10617 rdf:resource="{$aggWorkIRI}"/>
+                <rdawo:P10621 rdf:resource="{$aggWorkIRI}"/>
             </xsl:if>
         </rdf:Description>
         
@@ -504,19 +512,6 @@
             <rdamd:P30137>
                 <xsl:call-template name="getmarcRecord"/>
             </rdamd:P30137>
-        </rdf:Description>
-        
-        <rdf:Description rdf:about="{$marcWorGrpNomIRI}">
-            <rdf:type rdf:resource="{'http://rdaregistry.info/Elements/c/C10012'}"/>
-            <rdano:P80172 rdf:resource="{$marcWorkIRI}"/>
-            <rdand:P80068>
-                <xsl:value-of select="marc:controlfield[@tag = '001']"/>
-            </rdand:P80068>
-            <xsl:if test="marc:controlfield[@tag = '003']">
-                <rdand:P80069>
-                    <xsl:value-of select="marc:controlfield[@tag = '003']"/>
-                </rdand:P80069>
-            </xsl:if>
         </rdf:Description>
         
     </xsl:template>
