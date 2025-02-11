@@ -1328,6 +1328,7 @@
         <!-- propertyNum is the appropriate rda property passed from the 340 match template
              these are all manifestation properties, so only the P##### number is needed-->
         <xsl:param name="propertyNum"/>
+        <xsl:param name="entity"/>
         <!-- the subfield is stored in a variable so that 
             context can be moved to perform checks without losing it -->
         <xsl:variable name="subfield" select="."/>
@@ -1338,7 +1339,7 @@
                     ../marc:subfield[@code = '1'] and count(../*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3'
                     or @code = '6' or @code = '8' or @code = 'b' or @code = 'f' or @code = 'h' or @code = 'i')]) = 1">
                 <xsl:for-each select="../marc:subfield[@code = '1']">
-                    <xsl:element name="rdam:{$propertyNum}">
+                    <xsl:element name="rda{$entity}o:{$propertyNum}">
                         <xsl:attribute name="rdf:resource" select="."/>
                     </xsl:element>
                     <!-- if there's a $3, call the F340-xx-3 template to output a note -->
@@ -1365,7 +1366,7 @@
                             <xsl:variable name="iri0" select="uwf:process0(.)"/>
                             <!-- if getting iri was successful (started with 'http' or '('), then we can use the $0-->
                             <xsl:if test="$iri0">
-                                <xsl:element name="rdam:{$propertyNum}">
+                                <xsl:element name="rda{$entity}o:{$propertyNum}">
                                     <xsl:attribute name="rdf:resource" select="$iri0"/>
                                 </xsl:element>
                                 <!-- if there's a 3, output a note -->
@@ -1397,7 +1398,7 @@
                                         <!-- only output the property if the function returns a value -->
                                         <!-- we don't want a triple with no object -->
                                         <xsl:if test="$rdaIRI">
-                                            <xsl:element name="rdam:{$propertyNum}">
+                                            <xsl:element name="rda{$entity}o:{$propertyNum}">
                                                 <xsl:attribute name="rdf:resource" select="$rdaIRI"
                                                 />
                                             </xsl:element>
@@ -1416,7 +1417,7 @@
                                     <xsl:otherwise>
                                         <xsl:if
                                             test="../@tag = '340' or substring(../marc:subfield[@code = '6'], 1, 6) = '340-00'">
-                                            <xsl:element name="rdam:{$propertyNum}">
+                                            <xsl:element name="rda{$entity}o:{$propertyNum}">
                                                 <xsl:attribute name="rdf:resource"
                                                   select="uwf:conceptIRI($sub2, $subfield)"/>
                                             </xsl:element>
@@ -1435,7 +1436,7 @@
                             </xsl:when>
                             <!-- If there were not $0s, $1s, or $2s that fit the above checks, a string value is used -->
                             <xsl:otherwise>
-                                <xsl:element name="rdamd:{$propertyNum}">
+                                <xsl:element name="rda{$entity}d:{$propertyNum}">
                                     <xsl:value-of select="$subfield"/>
                                 </xsl:element>
                                 <xsl:if test="../marc:subfield[@code = '3']">
@@ -2322,6 +2323,7 @@
 
     <xsl:template name="F344-xx-a_b_c_d_e_f_g_h_i_0_1" expand-text="yes">
         <xsl:param name="propertyNum"/>
+        <xsl:param name="entity"/>
         <xsl:variable name="subfield" select="."/>
         <xsl:choose>
             <!-- $1 -->
@@ -2329,7 +2331,7 @@
                     ../marc:subfield[@code = '1'] and count(../*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3'
                     or @code = '6' or @code = '8')]) = 1">
                 <xsl:for-each select="../marc:subfield[@code = '1']">
-                    <xsl:element name="rdam:{$propertyNum}">
+                    <xsl:element name="rda{$entity}o:{$propertyNum}">
                         <xsl:attribute name="rdf:resource" select="."/>
                     </xsl:element>
                     <xsl:if test="../marc:subfield[@code = '3']">
@@ -2350,7 +2352,7 @@
                         <xsl:for-each select="../marc:subfield[@code = '0']">
                             <xsl:variable name="iri0" select="uwf:process0(.)"/>
                             <xsl:if test="$iri0">
-                                <xsl:element name="rdam:{$propertyNum}">
+                                <xsl:element name="rda{$entity}o:{$propertyNum}">
                                     <xsl:attribute name="rdf:resource" select="$iri0"/>
                                 </xsl:element>
                                 <xsl:if test="../marc:subfield[@code = '3']">
@@ -2374,7 +2376,7 @@
                                         <xsl:variable name="rdaIRI"
                                             select="uwf:rdaTermLookup($sub2, $subfield)"/>
                                         <xsl:if test="$rdaIRI">
-                                            <xsl:element name="rdam:{$propertyNum}">
+                                            <xsl:element name="rda{$entity}o:{$propertyNum}">
                                                 <xsl:attribute name="rdf:resource" select="$rdaIRI"
                                                 />
                                             </xsl:element>
@@ -2391,7 +2393,7 @@
                                     <xsl:otherwise>
                                         <xsl:if
                                             test="../@tag = '344' or substring(../marc:subfield[@code = '6'], 1, 6) = '344-00'">
-                                            <xsl:element name="rdam:{$propertyNum}">
+                                            <xsl:element name="rda{$entity}o:{$propertyNum}">
                                                 <xsl:attribute name="rdf:resource"
                                                   select="uwf:conceptIRI($sub2, $subfield)"/>
                                             </xsl:element>
@@ -2417,7 +2419,7 @@
                                             select="uwf:lcTermLookup('Playing Speed', $subfield)"/>
                                         <xsl:choose>
                                             <xsl:when test="$lcIRI">
-                                                <xsl:element name="rdam:{$propertyNum}">
+                                                <xsl:element name="rdamo:{$propertyNum}">
                                                   <xsl:attribute name="rdf:resource" select="$lcIRI"
                                                   />
                                                 </xsl:element>
@@ -2451,7 +2453,7 @@
                                             select="uwf:lcTermLookup('Tape Configuration', $subfield)"/>
                                         <xsl:choose>
                                             <xsl:when test="$lcIRI">
-                                                <xsl:element name="rdam:{$propertyNum}">
+                                                <xsl:element name="rdamo:{$propertyNum}">
                                                   <xsl:attribute name="rdf:resource" select="$lcIRI"
                                                   />
                                                 </xsl:element>
@@ -2480,7 +2482,7 @@
                                         </xsl:choose>
                                     </xsl:when>
                                     <xsl:otherwise>
-                                        <xsl:element name="rdamd:{$propertyNum}">
+                                        <xsl:element name="rda{$entity}d:{$propertyNum}">
                                             <xsl:value-of select="$subfield"/>
                                         </xsl:element>
                                         <xsl:if test="../marc:subfield[@code = '3']">

@@ -166,56 +166,67 @@
                 <xsl:when test="@code = 'd'">
                     <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1">
                         <xsl:with-param name="propertyNum">P30187</xsl:with-param>
+                        <xsl:with-param name="entity">m</xsl:with-param>
                     </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="@code = 'g'">
                     <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1">
                         <xsl:with-param name="propertyNum">P30456</xsl:with-param>
+                        <xsl:with-param name="entity">m</xsl:with-param>
                     </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="@code = 'j'">
                     <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1">
                         <xsl:with-param name="propertyNum">P30191</xsl:with-param>
+                        <xsl:with-param name="entity">m</xsl:with-param>
                     </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="@code = 'k'">
                     <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1">
                         <xsl:with-param name="propertyNum">P30155</xsl:with-param>
+                        <xsl:with-param name="entity">m</xsl:with-param>
                     </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="@code = 'l'">
                     <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1">
                         <xsl:with-param name="propertyNum">P30309</xsl:with-param>
+                        <xsl:with-param name="entity">m</xsl:with-param>
                     </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="@code = 'm'">
                     <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1">
                         <xsl:with-param name="propertyNum">P30197</xsl:with-param>
+                        <xsl:with-param name="entity">m</xsl:with-param>
                     </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="@code = 'n'">
                     <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1">
                         <xsl:with-param name="propertyNum">P30199</xsl:with-param>
+                        <xsl:with-param name="entity">m</xsl:with-param>
                     </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="@code = 'o'">
                     <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1">
                         <xsl:with-param name="propertyNum">P30196</xsl:with-param>
+                        <xsl:with-param name="entity">m</xsl:with-param>
                     </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="@code = 'p'">
                     <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1">
                         <xsl:with-param name="propertyNum">P30453</xsl:with-param>
+                        <xsl:with-param name="entity">m</xsl:with-param>
                     </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="@code = 'q'">
                     <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1">
                         <xsl:with-param name="propertyNum">P30263</xsl:with-param>
+                        <xsl:with-param name="entity">m</xsl:with-param>
                     </xsl:call-template>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1">
                         <xsl:with-param name="propertyNum">P30304</xsl:with-param>
+                        <xsl:with-param name="entity">m</xsl:with-param>
                     </xsl:call-template>
                 </xsl:otherwise>
             </xsl:choose>
@@ -225,6 +236,16 @@
     <xsl:template match="marc:datafield[@tag = '340'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '340-00']"
         mode="con">
         <xsl:call-template name="F340-concept"/>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '340'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '340']" 
+        mode="aggWor">
+        <xsl:for-each select="marc:subfield[@code = 'g']">
+            <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1">
+                <xsl:with-param name="propertyNum">P10348</xsl:with-param>
+                <xsl:with-param name="entity">w</xsl:with-param>
+            </xsl:call-template>
+        </xsl:for-each>
     </xsl:template>
     
     <!-- 342 - Geospatial Reference Data -->
@@ -348,16 +369,19 @@
                 <xsl:when test="@code = 'a'">
                     <xsl:call-template name="F344-xx-a_b_c_d_e_f_g_h_i_0_1">
                         <xsl:with-param name="propertyNum">P30172</xsl:with-param>
+                        <xsl:with-param name="entity">m</xsl:with-param>
                     </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="@code = 'b'">
                     <xsl:call-template name="F344-xx-a_b_c_d_e_f_g_h_i_0_1">
                         <xsl:with-param name="propertyNum">P30206</xsl:with-param>
+                        <xsl:with-param name="entity">m</xsl:with-param>
                     </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="@code = 'c'">
                     <xsl:call-template name="F344-xx-a_b_c_d_e_f_g_h_i_0_1">
                         <xsl:with-param name="propertyNum">P30201</xsl:with-param>
+                        <xsl:with-param name="entity">m</xsl:with-param>
                     </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="@code = 'd'">
@@ -365,9 +389,9 @@
                         <xsl:when test="(text() = 'fine') or (text() = 'standard')">
                             <xsl:variable name="rdaIRI" select="uwf:rdaTermLookup('rdagrp', .)"/>                                        
                             <xsl:if test="$rdaIRI">
-                                <rdam:P30307>
+                                <rdamo:P30307>
                                     <xsl:attribute name="rdf:resource" select="$rdaIRI"/>
-                                </rdam:P30307>
+                                </rdamo:P30307>
                                 <xsl:if test="../marc:subfield[@code = '3']">
                                     <xsl:call-template name="F344-xx-3">
                                         <xsl:with-param name="sub3" select="../marc:subfield[@code = '3']"/>
@@ -380,9 +404,9 @@
                         <xsl:when test="(text() = 'coarse groove') or (text() = 'microgroove')">
                             <xsl:variable name="rdaIRI" select="uwf:rdaTermLookup('rdagw', .)"/>                                        
                             <xsl:if test="$rdaIRI">
-                                <rdam:P30308>
+                                <rdamo:P30308>
                                     <xsl:attribute name="rdf:resource" select="$rdaIRI"/>
-                                </rdam:P30308>
+                                </rdamo:P30308>
                                 <xsl:if test="../marc:subfield[@code = '3']">
                                     <xsl:call-template name="F344-xx-3">
                                         <xsl:with-param name="sub3" select="../marc:subfield[@code = '3']"/>
@@ -395,6 +419,7 @@
                         <xsl:otherwise>
                             <xsl:call-template name="F344-xx-a_b_c_d_e_f_g_h_i_0_1">
                                 <xsl:with-param name="propertyNum">P30164</xsl:with-param>
+                                <xsl:with-param name="entity">m</xsl:with-param>
                             </xsl:call-template>
                         </xsl:otherwise>
                     </xsl:choose>
@@ -402,26 +427,31 @@
                 <xsl:when test="@code = 'e'">
                     <xsl:call-template name="F344-xx-a_b_c_d_e_f_g_h_i_0_1">
                         <xsl:with-param name="propertyNum">P30161</xsl:with-param>
+                        <xsl:with-param name="entity">m</xsl:with-param>
                     </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="@code = 'f'">
                     <xsl:call-template name="F344-xx-a_b_c_d_e_f_g_h_i_0_1">
                         <xsl:with-param name="propertyNum">P30185</xsl:with-param>
+                        <xsl:with-param name="entity">m</xsl:with-param>
                     </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="@code = 'g'">
                     <xsl:call-template name="F344-xx-a_b_c_d_e_f_g_h_i_0_1">
                         <xsl:with-param name="propertyNum">P30184</xsl:with-param>
+                        <xsl:with-param name="entity">m</xsl:with-param>
                     </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="@code = 'h'">
                     <xsl:call-template name="F344-xx-a_b_c_d_e_f_g_h_i_0_1">
                         <xsl:with-param name="propertyNum">P30138</xsl:with-param>
+                        <xsl:with-param name="entity">m</xsl:with-param>
                     </xsl:call-template>
                 </xsl:when>
                 <xsl:when test="@code = 'i'">
                     <xsl:call-template name="F344-xx-a_b_c_d_e_f_g_h_i_0_1">
                         <xsl:with-param name="propertyNum">P30454</xsl:with-param>
+                        <xsl:with-param name="entity">m</xsl:with-param>
                     </xsl:call-template>
                 </xsl:when>
                 <xsl:otherwise/>
@@ -432,6 +462,16 @@
     <xsl:template match="marc:datafield[@tag = '344'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '344-00']"
         mode="con">
         <xsl:call-template name="F344-concept"/>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '344'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '344']" 
+        mode="aggWor">
+        <xsl:for-each select="marc:subfield[@code = 'i']">
+            <xsl:call-template name="F344-xx-a_b_c_d_e_f_g_h_i_0_1">
+                <xsl:with-param name="propertyNum">P10358</xsl:with-param>
+                <xsl:with-param name="entity">w</xsl:with-param>
+            </xsl:call-template>
+        </xsl:for-each>
     </xsl:template>
     
     <!-- 346 - Video Characteristics -->
