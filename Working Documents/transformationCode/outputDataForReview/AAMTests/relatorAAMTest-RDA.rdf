@@ -1,0 +1,2023 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
+         xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwf="http://universityOfWashington/functions"
+         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcdlc___57023989_">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10400 rdf:resource="http://marc2rda.edu/fake/dlc/nom#___57023989_"/>
+      <rdawd:P10002>transform/wor#marcdlc___57023989_</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcdlc___57023989_"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#austenjane1775-1817senseandsensibility"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#austenjane1775-1817senseandsensibilityenglish"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolc01689189senseandsensibility1957printedatthespiralpressforthemembersofthelimitededitionsclub"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#senseandsensibilityaustenjane1775-1817gibbonsstella1902-1989englishaggregatingwork"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcdlc___57023989_">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___57023989_"/>
+      <rdamd:P30004>transform/man#marcdlc___57023989_</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamd:P30137>F 01326cam a22003731  4500
+F001    57023989 
+F003 DLC
+F005 20080327080234.0
+F008 751009s1957    nyu           000 0 eng  
+F010 ## $a    57023989 
+F035 ## $a (OCoLC)01689189
+F040 ## $a DLC $c MdBJ $d CU-S $d DLC
+F050 00 $a PZ3.A93 $b Se48 $a PR4034.S4
+F100 1# $a Austen, Jane, $d 1775-1817.
+F245 10 $a Sense and sensibility. $c With a new introd. by Stella Gibbons and illus. by Helen Sewell.
+F260 ## $a New York, $b Printed at the Spiral Press for the members of the Limited Editions Club, $c 1957.
+F300 ## $a xv, 333 p. $b illus. $c 26 cm.
+F500 ## $a Limited ed. of 1500 copies, signed by the illustrator.
+F500 ## $a Printed by Joseph Blumenthal.
+F500 ## $a Issued in a slipcase.
+F650 #0 $a Inheritance and succession $v Fiction.
+F650 #0 $a Social classes $v Fiction.
+F650 #0 $a Young women $x Fiction.
+F650 #0 $a Sisters $x Fiction.
+F651 #0 $a England $x Fiction.
+F655 #7 $a Domestic fiction. $2 lcsh
+F655 #7 $a Love stories. $2 gsafd
+F700 1# $a Gibbons, Stella, $d 1902-1989.
+F700 1# $a Sewell, Helen, $d 1896- $e ill.
+F700 1# $a Blumenthal, Joseph, $d 1897-1990, $e printer.
+F710 2# $a Limited Editions Club, $e publisher.
+F710 2# $a Spiral Press, $e printer.
+F951 ## $a DLC
+F979 ## $a AAM $b 245c Introduction, etc. $c 112
+</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/dlc/nom#___57023989_">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdano:P80172 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___57023989_"/>
+      <rdand:P80068>   57023989 </rdand:P80068>
+      <rdand:P80069>DLC</rdand:P80069>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#senseandsensibilityaustenjane1775-1817gibbonsstella1902-1989englishaggregatingwork">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___57023989_"/>
+      <rdawd:P10004>Aggregating work</rdawd:P10004>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolc01689189senseandsensibility1957printedatthespiralpressforthemembersofthelimitededitionsclub"/>
+      <rdawd:P10328>Sense and sensibility. Austen, Jane, 1775-1817. Gibbons, Stella, 1902-1989. English Aggregating work</rdawd:P10328>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#pz3a93"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#pr4034s4"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e34-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e34"/>
+      <rdawd:P10088>Sense and sensibility.</rdawd:P10088>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#inheritanceandsuccessionfiction"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#fiction"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#socialclassesfiction"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#fiction"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#youngwomenfiction"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#sistersfiction"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/lcsh/pla#england"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#englandfiction"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#domesticfiction"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/gsafd/con#lovestories"/>
+      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#austenjane1775-1817senseandsensibility">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___57023989_"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#austenjane1775-1817senseandsensibilityenglish"/>
+      <rdawd:P10328>Austen, Jane, 1775-1817. Sense and sensibility</rdawd:P10328>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e34-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e34"/>
+      <rdawd:P10088>Sense and sensibility.</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#austenjane1775-1817senseandsensibilityenglish">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___57023989_"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolc01689189senseandsensibility1957printedatthespiralpressforthemembersofthelimitededitionsclub"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#austenjane1775-1817senseandsensibility"/>
+      <rdaed:P20310>Austen, Jane, 1775-1817. Sense and sensibility.. English</rdaed:P20310>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#ocolc01689189senseandsensibility1957printedatthespiralpressforthemembersofthelimitededitionsclub">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcdlc___57023989_"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#austenjane1775-1817senseandsensibilityenglish"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#senseandsensibilityaustenjane1775-1817gibbonsstella1902-1989englishaggregatingwork"/>
+      <rdamd:P30276>Sense and sensibility. 1957. Printed at the Spiral Press for the members of the Limited Editions Club</rdamd:P30276>
+      <rdamd:P30011>1957</rdamd:P30011>
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/nyu"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e34-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e34"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e34-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e34"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e34-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e34"/>
+      <rdamd:P30156>Sense and sensibility.</rdamd:P30156>
+      <rdamd:P30105>With a new introd. by Stella Gibbons and illus. by Helen Sewell</rdamd:P30105>
+      <rdamd:P30111>$a New York,$b Printed at the Spiral Press for the members of the Limited Editions Club,$c 1957.</rdamd:P30111>
+      <rdamd:P30088>New York</rdamd:P30088>
+      <rdamd:P30176>Printed at the Spiral Press for the members of the Limited Editions Club</rdamd:P30176>
+      <rdamd:P30011>1957</rdamd:P30011>
+      <rdamd:P30182>xv, 333 p. illus. 26 cm.</rdamd:P30182>
+      <rdamd:P30137>Limited ed. of 1500 copies, signed by the illustrator.</rdamd:P30137>
+      <rdamd:P30137>Printed by Joseph Blumenthal.</rdamd:P30137>
+      <rdamd:P30137>Issued in a slipcase.</rdamd:P30137>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e104-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e104"/>
+      <rdamo:P30358 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e116"/>
+      <rdamo:P30420 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e123"/>
+      <rdamo:P30416 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e128"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/plaNom#england">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>England</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e34">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Austen, Jane, 1775-1817</rdaad:P50377>
+      <rdaad:P50111>Austen, Jane</rdaad:P50111>
+      <rdaad:P50121>1775</rdaad:P50121>
+      <rdaad:P50120>1817</rdaad:P50120>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e104">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Gibbons, Stella, 1902-1989</rdaad:P50377>
+      <rdaad:P50111>Gibbons, Stella</rdaad:P50111>
+      <rdaad:P50121>1902</rdaad:P50121>
+      <rdaad:P50120>1989</rdaad:P50120>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e109">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Sewell, Helen, 1896-</rdaad:P50377>
+      <rdaad:P50111>Sewell, Helen</rdaad:P50111>
+      <rdaad:P50121>1896</rdaad:P50121>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e116">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Blumenthal, Joseph, 1897-1990</rdaad:P50377>
+      <rdaad:P50111>Blumenthal, Joseph</rdaad:P50111>
+      <rdaad:P50121>1897</rdaad:P50121>
+      <rdaad:P50120>1990</rdaad:P50120>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e123">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Limited Editions Club</rdaad:P50375>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e128">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Spiral Press</rdaad:P50375>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#pz3a93">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">PZ3.A93</skos:notation>
+      <skos:altLabel>PZ3.A93</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#pr4034s4">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">PR4034.S4</skos:notation>
+      <skos:altLabel>PR4034.S4</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#inheritanceandsuccessionfiction">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Inheritance and succession--Fiction</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#fiction">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Fiction</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#socialclassesfiction">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Social classes--Fiction</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#fiction">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Fiction</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#youngwomenfiction">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Young women--Fiction</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#sistersfiction">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Sisters--Fiction</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#englandfiction">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>England--Fiction</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#domesticfiction">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Domestic fiction</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/gsafd/con#lovestories">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Love stories</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/gsafd"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/pla#england">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/lcsh/plaNom#england"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc442939">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10400 rdf:resource="http://marc2rda.edu/fake/transform/nom#442939"/>
+      <rdawd:P10002>transform/wor#marc442939</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc442939"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#prideandprejudice"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#prideandprejudiceenglishvideorecording"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolcocm56360840prideandprejudice2004bbcvideowarnerhomevideo"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#prideandprejudicepowelljonathanenglishvideorecordingaggregatingwork"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc442939">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc442939"/>
+      <rdamd:P30004>transform/man#marc442939</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamd:P30137>F 04351cgm a2200865Ia 4500
+F001 442939
+F005 20180323082757.0
+F007 vd cvaizq 
+F008 040826s2004    xxu265            vleng d
+F020 ## $a 079077027X
+F024 1# $a 794051168726
+F028 41 $a E1687 $b Warner Home Video
+F035 ## $a (OCoLC)ocm56360840
+F035 ## $a (OCoLC)56360840
+F040 ## $a CO2 $c CO2
+F049 ## $a IP6A
+F049 ## $a MR0A
+F099 ## $a DVD $a PRI
+F245 00 $a Pride and prejudice $h [videorecording] : $b or, First impressions / $c a BBC TV production in association with Australian Broadcasting Commission ; BBC Worldwide Americas, Inc. ; produced by Jonathan Powell ; dramatized by Fay Weldon ; directed by Cyril Coke.
+F246 30 $a First impressions
+F246 1# $i Title appears on contianer as: $a Jane Austen's Pride and Prejudice
+F260 ## $a [United States] : $b BBC Video ; $a Burbank, CA : $b Warner Home Video, $c [2004]
+F300 ## $a 1 videodisc (265 min.) : $b sd., col. ; $c 4 3/4 in.
+F490 1# $a BBC video classics
+F500 ## $a Originally broadcast on television in 1985.
+F500 ## $a Side A contains episodes 1-3 -- Side B contains episodes 4-5.
+F500 ## $a Based on the novel Pride and Prejudice by Jane Austen.
+F508 ## $a Film editor, Chris Wimble ; music composed by Wilfred Josephs ; conducted by Marcus Dods ; film cameraman, Paul Wheeler ; film sound recorder, Malcolm Webberley.
+F511 1# $a Elizabeth Garvie, David Rintoul, Moray Watson, Priscilla Morgan, Sabina Franklyn, Natalie Ogle, Tessa Peake-Jones, Clare Higgins, Osmond Bulock, Marsha Fitzalan.
+F520 ## $a The story of the lively, precocious and very eligible Bennet girls captures all the nuances of 19th century life among the English gentry, a society obsessed with profitable marriage contracts.
+F538 ## $a DVD; NTSC; region 1; Dolby Digital; full screen (4:3) presentation.
+F546 ## $a Closed-captioned.
+F600 10 $a Bennet, Elizabeth $c (Fictitious character) $v Drama.
+F600 10 $a Darcy, Fitzwilliam $c (Fictitious character) $v Drama.
+F650 #0 $a Young women $z England $v Drama.
+F650 #0 $a Sisters $z England $v Drama.
+F650 #0 $a Dependents $z England $v Drama.
+F650 #0 $a Social classes $z England $v Drama.
+F650 #0 $a Man-woman relationships $z England $v Drama.
+F650 #0 $a Courtship $z England $v Drama.
+F650 #0 $a Marriage customs and rites $z England $v Drama.
+F651 #0 $a England $x Social life and customs $y 19th century $v Drama.
+F655 #7 $a Melodramas (Motion pictures) $2 lcgft
+F655 #7 $a Romance television programs. $2 lcgft
+F655 #7 $a Television adaptations. $2 lcgft
+F655 #7 $a Television mini-series. $2 lcgft
+F655 #7 $a Feature films. $2 lcgft
+F655 #7 $a Fiction films. $2 lcgft
+F655 #7 $a Film adaptations. $2 lcgft
+F655 #7 $a Video recordings for the hearing impaired. $2 lcgft
+F655 #0 $a DVDs.
+F700 1# $a Powell, Jonathan. $4 pro.
+F700 1# $a Weldon, Fay. $4 aus.
+F700 1# $a Coke, Cyril. $4 drt.
+F700 1# $a Garvie, Elizabeth. $4 act.
+F700 1# $a Rintoul, David. $4 act.
+F700 1# $a Watson, Moray, $d 1928- $4 act.
+F700 1# $a Morgan, Priscilla. $c act.
+F700 1# $a Peake-Jones, Tessa. $4 act.
+F700 1# $a Higgins, Clare. $4 act.
+F700 12 $a Austen, Jane, $d 1775-1817. $t Pride and prejudice.
+F710 2# $a BBC Video (Firm)
+F710 2# $a Australian Broadcasting Commission.
+F710 2# $a Warner Home Video (Firm)
+F830 #0 $a BBC classics.
+F852 ## $a 99 $b 245 $c 250 $d 342 $e 1 $i Pri $m "G" $o 99 $p 30183047965676 $r 23 $u 23 $w 23 $x B372 $y 2 $0 24.95 $j 3 $4 1 $5 1 $7 1
+F852 ## $a 21 $b 239 $d 342 $e 1 $i PRI $o 21 $p 30183048984593 $r 23 $u 23 $w 23 $y 2 $1 DONATION $j 3 $4 1 $5 1 $7 0
+F852 ## $a 105 $b 693 $e 1 $i PRI $k DVD [PG13] $o 105 $p 30183033246347 $r 23 $u 23 $w 23 $y 3 $0 20.00 $j 3 $4 1 $5 1 $7 0
+F852 ## $a 687 $b 239 $d 342 $e 1 $i PRI $k DVD $o 687 $p 33038000726118 $r 23 $u 23 $w 23 $y 1 $0 20.00 $j 3 $4 1 $5 1 $7 1
+F852 ## $a 659 $b 41 $d 342 $e 1 $h DVD $i FIC $k A $m JAN $o 659 $p 31787000088034 $r 23 $u 23 $w 23 $y 3 $0 14.98 $1 AMAZON $j 3 $4 1 $5 1 $7 1
+F852 ## $a 274 $b 41 $e 1 $i PRI $k DVD $o 274 $p 0004400280782 $r 23 $u 23 $w 23 $y 2 $j 3 $4 1 $5 1 $7 0
+F852 ## $a 236 $b 245 $e 1 $i (AUSTEN) $k DVD $m PRIDE $o 236 $p 0004200629212 $r 23 $u 23 $w 23 $y 2 $0 15.99 $j 3 $4 1 $5 1 $7 0
+F852 ## $a 228 $b 245 $c 28 $e 1 $i PRIDE $k DVD $m 211444 $o 228 $p 0000802621813 $r 23 $u 23 $w 23 $y 2 $0 14.98 $j 3 $4 1 $5 1 $7 0
+F852 ## $a 220 $b 41 $e 1 $i PRI $k DVD $o 220 $p 0002601225317 $r 23 $u 23 $w 23 $y 2 $0 20.00 $j 3 $4 1 $5 1 $7 0
+F979 ## $a AAM $b 65Xa Monologues with music, etc. $c 115
+</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/nom#442939">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdano:P80172 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc442939"/>
+      <rdand:P80068>442939</rdand:P80068>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#prideandprejudicepowelljonathanenglishvideorecordingaggregatingwork">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc442939"/>
+      <rdawd:P10004>Aggregating work</rdawd:P10004>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolcocm56360840prideandprejudice2004bbcvideowarnerhomevideo"/>
+      <rdawd:P10328>Pride and prejudice  Powell, Jonathan. English videorecording Aggregating work</rdawd:P10328>
+      <rdaw:P10222 rdf:resource="https://doi.org/10.6069/uwlswd.eje7-jq11#l"/>
+      <rdawd:P10088>Pride and prejudice</rdawd:P10088>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#bennetelizabethfictitiouscharacterdrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#drama"/>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e250"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#darcyfitzwilliamfictitiouscharacterdrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#drama"/>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e257"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#youngwomenenglanddrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#drama"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#sistersenglanddrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#drama"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#dependentsenglanddrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#drama"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#socialclassesenglanddrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#drama"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#man-womanrelationshipsenglanddrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#drama"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#courtshipenglanddrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#drama"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#marriagecustomsandritesenglanddrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#drama"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/lcsh/pla#england"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#englandsociallifeandcustoms19thcenturydrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#drama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#melodramasmotionpictures"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#romancetelevisionprograms"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#televisionadaptations"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#televisionmini-series"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#featurefilms"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#fictionfilms"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#filmadaptations"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#videorecordingsforthehearingimpaired"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#dvds"/>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/wor#2025-02-10-0800d23e431"/>
+      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+      <rdawd:P10351>Duration: 265 minutes.</rdawd:P10351>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#prideandprejudice">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc442939"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#prideandprejudiceenglishvideorecording"/>
+      <rdawd:P10328>Pride and prejudice</rdawd:P10328>
+      <rdawd:P10088>Pride and prejudice</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#prideandprejudiceenglishvideorecording">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc442939"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolcocm56360840prideandprejudice2004bbcvideowarnerhomevideo"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#prideandprejudice"/>
+      <rdaed:P20310>Pride and prejudice. English videorecording</rdaed:P20310>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#ocolcocm56360840prideandprejudice2004bbcvideowarnerhomevideo">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc442939"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#prideandprejudiceenglishvideorecording"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#prideandprejudicepowelljonathanenglishvideorecordingaggregatingwork"/>
+      <rdamd:P30276>Pride and prejudice [2004] BBC Video ; Warner Home Video</rdamd:P30276>
+      <rdamd:P30011>2004</rdamd:P30011>
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/xxu"/>
+      <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/>
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#079077027x"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-02-10-0800d23e157"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-02-10-0800d23e159"/>
+      <rdamd:P30156>Pride and prejudice</rdamd:P30156>
+      <rdamd:P30142>or, First impressions</rdamd:P30142>
+      <rdamd:P30105>a BBC TV production in association with Australian Broadcasting Commission</rdamd:P30105>
+      <rdamd:P30105>BBC Worldwide Americas, Inc.</rdamd:P30105>
+      <rdamd:P30105>produced by Jonathan Powell</rdamd:P30105>
+      <rdamd:P30105>dramatized by Fay Weldon</rdamd:P30105>
+      <rdamd:P30105>directed by Cyril Coke</rdamd:P30105>
+      <rdamd:P30335>videorecording</rdamd:P30335>
+      <rdamd:P30111>[United States] : BBC Video ; Burbank, CA : Warner Home Video, [2004]</rdamd:P30111>
+      <rdamd:P30088>United States</rdamd:P30088>
+      <rdamd:P30088>Burbank, CA</rdamd:P30088>
+      <rdamd:P30176>BBC Video</rdamd:P30176>
+      <rdamd:P30176>Warner Home Video</rdamd:P30176>
+      <rdamd:P30011>2004</rdamd:P30011>
+      <rdamd:P30182>1 videodisc (265 min.) : sd., col. ; 4 3/4 in.</rdamd:P30182>
+      <rdamd:P30106>BBC video classics</rdamd:P30106>
+      <rdamd:P30137>Originally broadcast on television in 1985.</rdamd:P30137>
+      <rdamd:P30137>Side A contains episodes 1-3 -- Side B contains episodes 4-5.</rdamd:P30137>
+      <rdamd:P30137>Based on the novel Pride and Prejudice by Jane Austen.</rdamd:P30137>
+      <rdamd:P30137>Credits: Film editor, Chris Wimble ; music composed by Wilfred Josephs ; conducted by Marcus Dods ; film cameraman, Paul Wheeler ; film sound recorder, Malcolm Webberley.</rdamd:P30137>
+      <rdamd:P30137>Cast: Elizabeth Garvie, David Rintoul, Moray Watson, Priscilla Morgan, Sabina Franklyn, Natalie Ogle, Tessa Peake-Jones, Clare Higgins, Osmond Bulock, Marsha Fitzalan.</rdamd:P30137>
+      <rdamd:P30162>DVD; NTSC; region 1; Dolby Digital; full screen (4:3) presentation.</rdamd:P30162>
+      <rdamd:P30137>Closed-captioned.</rdamd:P30137>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e367-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e367"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e367-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e367"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e372-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e372"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e372-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e372"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e377-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e377"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e377-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e377"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e399-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e399"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e422-->
+      <rdamo:P30394 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e422"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e425-->
+      <rdamo:P30394 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e425"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e428-->
+      <rdamo:P30394 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e428"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#079077027x">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>079077027X</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-02-10-0800d23e157">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>794051168726</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/identifiers/upc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-02-10-0800d23e159">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>E1687</rdand:P80068>
+      <rdand:P80073>Warner Home Video</rdand:P80073>
+      <rdand:P80078>Video recording publisher number</rdand:P80078>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e250">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Bennet, Elizabeth (Fictitious character)</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e257">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Darcy, Fitzwilliam (Fictitious character)</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/plaNom#england">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>England</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e250">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e250"/>
+      <rdaad:P50111>Bennet, Elizabeth</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e257">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e257"/>
+      <rdaad:P50111>Darcy, Fitzwilliam</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e367">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Powell, Jonathan</rdaad:P50377>
+      <rdaad:P50111>Powell, Jonathan</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e372">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Weldon, Fay</rdaad:P50377>
+      <rdaad:P50111>Weldon, Fay</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e377">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Coke, Cyril</rdaad:P50377>
+      <rdaad:P50111>Coke, Cyril</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e382">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Garvie, Elizabeth</rdaad:P50377>
+      <rdaad:P50111>Garvie, Elizabeth</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e387">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Rintoul, David</rdaad:P50377>
+      <rdaad:P50111>Rintoul, David</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e392">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Watson, Moray, 1928-</rdaad:P50377>
+      <rdaad:P50111>Watson, Moray</rdaad:P50111>
+      <rdaad:P50121>1928</rdaad:P50121>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e399">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Morgan, Priscilla. act</rdaad:P50377>
+      <rdaad:P50111>Morgan, Priscilla</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e404">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Peake-Jones, Tessa</rdaad:P50377>
+      <rdaad:P50111>Peake-Jones, Tessa</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e410">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Higgins, Clare</rdaad:P50377>
+      <rdaad:P50111>Higgins, Clare</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e422">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>BBC Video (Firm)</rdaad:P50375>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e425">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Australian Broadcasting Commission</rdaad:P50375>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e428">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Warner Home Video (Firm)</rdaad:P50375>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#2025-02-10-0800d23e431">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10328>BBC classics</rdawd:P10328>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#bennetelizabethfictitiouscharacterdrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Bennet, Elizabeth (Fictitious character)--Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#drama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#darcyfitzwilliamfictitiouscharacterdrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Darcy, Fitzwilliam (Fictitious character)--Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#drama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#youngwomenenglanddrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Young women--England--Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#drama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#sistersenglanddrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Sisters--England--Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#drama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#dependentsenglanddrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Dependents--England--Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#drama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#socialclassesenglanddrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Social classes--England--Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#drama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#man-womanrelationshipsenglanddrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Man-woman relationships--England--Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#drama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#courtshipenglanddrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Courtship--England--Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#drama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#marriagecustomsandritesenglanddrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Marriage customs and rites--England--Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#drama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#englandsociallifeandcustoms19thcenturydrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>England--Social life and customs--19th century--Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#drama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#melodramasmotionpictures">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Melodramas (Motion pictures)</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#romancetelevisionprograms">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Romance television programs</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#televisionadaptations">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Television adaptations</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#televisionmini-series">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Television mini-series</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#featurefilms">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Feature films</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#fictionfilms">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Fiction films</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#filmadaptations">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Film adaptations</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#videorecordingsforthehearingimpaired">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Video recordings for the hearing impaired</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#dvds">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>DVDs</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/pla#england">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/lcsh/plaNom#england"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc13319519">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10400 rdf:resource="http://marc2rda.edu/fake/transform/nom#13319519"/>
+      <rdawd:P10002>transform/wor#marc13319519</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc13319519"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#lostinausten"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#lostinaustenenglishvideorecording"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#lostinaustenc2008mammothscreenproductiongranadaventureslimiteditvdistributor"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#lostinaustenmckerrellkateenglishvideorecordingaggregatingwork"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc13319519">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc13319519"/>
+      <rdamd:P30004>transform/man#marc13319519</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamd:P30137>F 02871ngm a22005177a 4500
+F001 13319519
+F005 20100621105819.0
+F008 100531s2008    xx 179            vleng d
+F040 ## $a ITJCU $c ITJCU
+F245 00 $a Lost in Austen $h [videorecording] / $c a Mammoth Screen production for ITV1 supported by the Screen Yorkshire Production Fund ; produced by, Kate McKerrell ; written by Guy Andrews ; directed by Dan Zeff.
+F260 ## $a [S.l.] : $b Mammoth Screen production ; $b Granada Ventures Limited (ITV) [distributor], $c c2008.
+F300 ## $a 2 videodiscs (ca. 179 min.) : $b sd., col. ; $c 4 3/4 in.
+F500 ## $a Based on the novel "Pride and prejudice" by Jane Austen.
+F500 ## $a Title from container.
+F500 ## $a Special features: "Lost in Austen: behind the scenes:" featurette documenting the reinvention of Jane Austen's 'Pride and prejudice' and the making of the popular TV series (43 min.); cast &amp; crew interviews; behind-the-scenes footage; trailer.
+F508 ## $a Composer, Christian Henson ; additional music, Simon Whiteside ;
+F511 1# $a Jemima Rooper, Alex Kingston, Elliot Cowan, Hugh Bonneville, Gemma Arterton, Lindsay Duncan.
+F520 ## $a Amanda Price gets propelled into the scheming 19th century world of Pride and Prejudice while the book's Elizabeth Bennet is hurled into hers. As the plot unfolds, Amanda triggers new romantic twists and turns as she tries to help the Bennet sisters nab husbands and even manages to captivate the tantalizing Mr. Darcy. But what about Elizabeth, and what will become of one of the world's greatest love stories?
+F521 ## $a Not rated.
+F534 ## $p Originally released as a television mini-series in: $c 2008.
+F538 ## $a DVD, region 2, aspect ratio: 16:9, Dolby Digital stereo., NTSC.
+F600 10 $a Austen, Jane, $d 1775-1817. $t Pride and prejudice $v Drama.
+F650 #0 $a Women heroes $z England $v Drama.
+F650 #0 $a Man-woman relationships $z England $v Drama.
+F650 #0 $a Bennet, Elizabeth (Fictitious character) $v Drama.
+F655 #0 $a Fantasy television programs.
+F655 #0 $a Action and adventure television programs.
+F655 #0 $a Romantic comedy television programs.
+F655 #0 $a Television mini-series.
+F655 #0 $a Fiction television programs.
+F655 #0 $a Video recordings for the hearing impaired.
+F700 1# $a McKerrell, Kate. $4 pro
+F700 1# $a Andrews, Guy. $4 aus
+F700 1# $a Zeff, Dan. $4 drt
+F700 1# $a Rooper, Jemima. $4 act
+F700 1# $a Kingston, Alex. $4 act
+F700 1# $a Cowan, Elliot, $d 1976- $4 act
+F700 1# $a Bonneville, Hugh. $4 act
+F700 1# $a Arterton, Gemma. $4 act
+F700 1# $a Duncan, Lindsay. $4 act
+F700 1# $a Austen, Jane, $d 1775-1817. $t Pride and prejudice.
+F700 1# $a Henson, Christian, $d 1971- $4 cmp
+F700 1# $a Whiteside, Simon.
+F710 2# $a Mammoth Screen (Firm)
+F710 2# $a ITV (Firm)
+F979 ## $a AAM $b 65Xa Monologues with music, etc. $c 115
+</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/nom#13319519">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdano:P80172 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc13319519"/>
+      <rdand:P80068>13319519</rdand:P80068>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#lostinaustenmckerrellkateenglishvideorecordingaggregatingwork">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc13319519"/>
+      <rdawd:P10004>Aggregating work</rdawd:P10004>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#lostinaustenc2008mammothscreenproductiongranadaventureslimiteditvdistributor"/>
+      <rdawd:P10328>Lost in Austen  McKerrell, Kate. English videorecording Aggregating work</rdawd:P10328>
+      <rdaw:P10222 rdf:resource="https://doi.org/10.6069/uwlswd.eje7-jq11#l"/>
+      <rdawd:P10088>Lost in Austen</rdawd:P10088>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#austenjane1775-1817prideandprejudicedrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#drama"/>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e834"/>
+      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/wor#2025-02-10-0800d23e834"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#womenheroesenglanddrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#drama"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#man-womanrelationshipsenglanddrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#drama"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#bennetelizabethfictitiouscharacterdrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#drama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#fantasytelevisionprograms"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#actionandadventuretelevisionprograms"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#romanticcomedytelevisionprograms"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#televisionmini-series"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#fictiontelevisionprograms"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#videorecordingsforthehearingimpaired"/>
+      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+      <rdawd:P10351>Duration: 179 minutes.</rdawd:P10351>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#lostinausten">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc13319519"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#lostinaustenenglishvideorecording"/>
+      <rdawd:P10328>Lost in Austen</rdawd:P10328>
+      <rdawd:P10088>Lost in Austen</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#lostinaustenenglishvideorecording">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc13319519"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#lostinaustenc2008mammothscreenproductiongranadaventureslimiteditvdistributor"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#lostinausten"/>
+      <rdaed:P20310>Lost in Austen. English videorecording</rdaed:P20310>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#lostinaustenc2008mammothscreenproductiongranadaventureslimiteditvdistributor">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc13319519"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#lostinaustenenglishvideorecording"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#lostinaustenmckerrellkateenglishvideorecordingaggregatingwork"/>
+      <rdamd:P30276>Lost in Austen c2008. Mammoth Screen production ; Granada Ventures Limited (ITV) [distributor]</rdamd:P30276>
+      <rdamd:P30011>2008</rdamd:P30011>
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/xx"/>
+      <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/>
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/>
+      <rdamd:P30156>Lost in Austen</rdamd:P30156>
+      <rdamd:P30105>a Mammoth Screen production for ITV1 supported by the Screen Yorkshire Production Fund</rdamd:P30105>
+      <rdamd:P30105>produced by, Kate McKerrell</rdamd:P30105>
+      <rdamd:P30105>written by Guy Andrews</rdamd:P30105>
+      <rdamd:P30105>directed by Dan Zeff</rdamd:P30105>
+      <rdamd:P30335>videorecording</rdamd:P30335>
+      <rdamd:P30111>[S.l.] : Mammoth Screen production ; Granada Ventures Limited (ITV) [distributor], c2008.</rdamd:P30111>
+      <rdamd:P30088>S.l.</rdamd:P30088>
+      <rdamd:P30176>Mammoth Screen production</rdamd:P30176>
+      <rdamd:P30173>Granada Ventures Limited (ITV) distributor</rdamd:P30173>
+      <rdamd:P30280>c2008</rdamd:P30280>
+      <rdamd:P30182>2 videodiscs (ca. 179 min.) : sd., col. ; 4 3/4 in.</rdamd:P30182>
+      <rdamd:P30137>Based on the novel "Pride and prejudice" by Jane Austen.</rdamd:P30137>
+      <rdamd:P30137>Title from container.</rdamd:P30137>
+      <rdamd:P30137>Special features: "Lost in Austen: behind the scenes:" featurette documenting the reinvention of Jane Austen's 'Pride and prejudice' and the making of the popular TV series (43 min.); cast &amp; crew interviews; behind-the-scenes footage; trailer.</rdamd:P30137>
+      <rdamd:P30137>Credits: Composer, Christian Henson ; additional music, Simon Whiteside ;</rdamd:P30137>
+      <rdamd:P30137>Cast: Jemima Rooper, Alex Kingston, Elliot Cowan, Hugh Bonneville, Gemma Arterton, Lindsay Duncan.</rdamd:P30137>
+      <rdamd:P30137>Audience: Not rated.</rdamd:P30137>
+      <rdamd:P30162>DVD, region 2, aspect ratio: 16:9, Dolby Digital stereo., NTSC.</rdamd:P30162>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e881-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e881"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e881-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e881"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e886-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e886"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e886-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e886"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e891-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e891"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e891-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e891"/>
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor#2025-02-10-0800d23e929"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e936-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e936"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e936-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e936"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e943-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e943"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e946-->
+      <rdamo:P30394 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e946"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e949-->
+      <rdamo:P30394 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e949"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e834">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Austen, Jane, 1775-1817</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/worNom#2025-02-10-0800d23e834">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Austen, Jane, 1775-1817. Pride and prejudice</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e834">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e834"/>
+      <rdaad:P50111>Austen, Jane</rdaad:P50111>
+      <rdaad:P50121>1775</rdaad:P50121>
+      <rdaad:P50120>1817</rdaad:P50120>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e881">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>McKerrell, Kate</rdaad:P50377>
+      <rdaad:P50111>McKerrell, Kate</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e886">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Andrews, Guy</rdaad:P50377>
+      <rdaad:P50111>Andrews, Guy</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e891">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Zeff, Dan</rdaad:P50377>
+      <rdaad:P50111>Zeff, Dan</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e896">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Rooper, Jemima</rdaad:P50377>
+      <rdaad:P50111>Rooper, Jemima</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e901">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Kingston, Alex</rdaad:P50377>
+      <rdaad:P50111>Kingston, Alex</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e906">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Cowan, Elliot, 1976-</rdaad:P50377>
+      <rdaad:P50111>Cowan, Elliot</rdaad:P50111>
+      <rdaad:P50121>1976</rdaad:P50121>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e914">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Bonneville, Hugh</rdaad:P50377>
+      <rdaad:P50111>Bonneville, Hugh</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e919">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Arterton, Gemma</rdaad:P50377>
+      <rdaad:P50111>Arterton, Gemma</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e924">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Duncan, Lindsay</rdaad:P50377>
+      <rdaad:P50111>Duncan, Lindsay</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e929">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Austen, Jane, 1775-1817</rdaad:P50377>
+      <rdaad:P50111>Austen, Jane</rdaad:P50111>
+      <rdaad:P50121>1775</rdaad:P50121>
+      <rdaad:P50120>1817</rdaad:P50120>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e936">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Henson, Christian, 1971-</rdaad:P50377>
+      <rdaad:P50111>Henson, Christian</rdaad:P50111>
+      <rdaad:P50121>1971</rdaad:P50121>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e943">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Whiteside, Simon</rdaad:P50377>
+      <rdaad:P50111>Whiteside, Simon</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e946">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Mammoth Screen (Firm)</rdaad:P50375>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e949">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>ITV (Firm)</rdaad:P50375>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#2025-02-10-0800d23e834">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10328 rdf:resource="http://marc2rda.edu/fake/worNom#2025-02-10-0800d23e834"/>
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e834"/>
+      <rdawd:P10088>Pride and prejudice</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#2025-02-10-0800d23e929">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d23e929wor</rdawd:P10002>
+      <rdawd:P10328>Austen, Jane, 1775-1817. Pride and prejudice</rdawd:P10328>
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e929"/>
+      <rdawd:P10088>Pride and prejudice</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#austenjane1775-1817prideandprejudicedrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Austen, Jane, 1775-1817. Pride and prejudice--Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#drama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#womenheroesenglanddrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Women heroes--England--Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#drama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#man-womanrelationshipsenglanddrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Man-woman relationships--England--Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#drama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#bennetelizabethfictitiouscharacterdrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Bennet, Elizabeth (Fictitious character)--Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#drama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#fantasytelevisionprograms">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Fantasy television programs</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#actionandadventuretelevisionprograms">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Action and adventure television programs</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#romanticcomedytelevisionprograms">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Romantic comedy television programs</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#televisionmini-series">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Television mini-series</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#fictiontelevisionprograms">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Fiction television programs</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#videorecordingsforthehearingimpaired">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Video recordings for the hearing impaired</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc99161969555001452">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10400 rdf:resource="http://marc2rda.edu/fake/transform/nom#99161969555001452"/>
+      <rdawd:P10002>transform/wor#marc99161969555001452</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc99161969555001452"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#steinbergneiloutofthewreckirise"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#steinbergneiloutofthewreckiriseenglishtext"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolc927619699outofthewreckirise2016theuniversityofchicagopressvolume"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#steinbergneiloutofthewreckirisebadersaraenglishtextaggregatingwork"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc99161969555001452">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99161969555001452"/>
+      <rdamd:P30004>transform/man#marc99161969555001452</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamd:P30137>F 04211cam a2200793 i 4500
+F001 99161969555001452
+F005 20231005004200.0
+F008 151030s2016    ilu      b    001 0 eng c
+F010 ## $a   2015042766
+F019 ## $a 957649731 $a 1102151164
+F020 ## $a 9780226140131 $q (cloth ; $q alk. paper)
+F020 ## $a 022614013X $q (cloth ; $q alk. paper)
+F020 ## $z 9780226140278 $q (e-book)
+F020 ## $a 022614027X
+F020 ## $a 9780226140278
+F020 ## $a 9780226528748
+F020 ## $a 022652874X
+F035 ## $a 12823560
+F035 ## $a (OCoLC)927619699 $z (OCoLC)957649731 $z (OCoLC)1102151164
+F035 ## $a (OCoLC)ocn927619699
+F035 ## $a (EXLNZ-01ALLIANCE_NETWORK)99322671198601451
+F035 ## $a (01ALLIANCE_UW)99161969555001452
+F037 ## $b Univ of Chicago Pr, Attn: John Kessler 11030 S Langley Ave, Chicago, IL, USA, 60628, (773)5681550 $n SAN 202-5280
+F040 ## $a ICU/DLC $b eng $e rda $c CGU $d DLC $d OCLCF $d BDX $d BTCTA $d YDXCP $d GK8 $d FM0 $d ON8 $d IGA $d ILC $d BKL $d VTS $d RB0 $d OCLCO $d XFG $d SFR $d BYV $d OCLCQ $d QS5 $d OCLCQ $d GO4 $d OCL $d UTP $d OCLCO $d NZAUC $d OCLCO $d JZ6 $d ZQP $d OCL $d OCLCQ $d OCLCO $d CFU $d OCLCO $d EUW
+F042 ## $a pcc
+F049 ## $a MAIN
+F050 00 $a HV5072 $b .S9145 2016
+F082 00 $a 362.292 $2 23
+F084 ## $a SEL006000 $a SEL029000 $a LCO000000 $2 bisacsh
+F100 1# $a Steinberg, Neil, $e compiler.
+F245 10 $a Out of the wreck I rise : $b a literary companion to recovery / $c Neil Steinberg and Sara Bader.
+F246 3# $a Literary companion to recovery
+F264 #1 $a Chicago ; $a London : $b The University of Chicago Press, $c 2016.
+F300 ## $a xiv, 281 pages ; $c 22 cm
+F336 ## $a text $b txt $2 rdacontent
+F337 ## $a unmediated $b n $2 rdamedia
+F338 ## $a volume $b nc $2 rdacarrier
+F520 ## $a Addiction is easy to fall into and hard to escape. It destroys the lives of individuals, and has a devastating cost to society. Steinberg and Bader harness the power of literature, poetry, and creativity to illuminate what alcoholism and addiction are all about. Each chapter begins with advice and commentary followed by a wealth of quotes to inspire and heal. The result is a mosaic of observations and encouragement that draws on writers and artists spanning thousands of years.
+F504 ## $a Includes bibliographical references and index.
+F505 00 $t Introduction: Why put it off? -- $t The best of life: the good times sour -- $t I don't want to do that: the end of the party -- $t The direction you least trust: making the leap -- $t Nothing to lose: early recovery -- $t Wait, for now: the importance of time -- $t Somewhere to go: Alcoholics Anonymous -- $t Shakespeare's child: family and friends -- $t Upon breach of my late vows: relapse -- $t Gravy: on life anew.
+F650 #0 $a Alcoholism $v Quotations, maxims, etc.
+F650 #0 $a Alcoholism $x Psychological aspects $v Quotations, maxims, etc.
+F650 #0 $a Alcoholism $x Treatment $v Quotations, maxims, etc.
+F650 #0 $a Alcoholism $v Miscellanea.
+F650 12 $a Mental Health Recovery.
+F650 22 $a Alcoholism $x rehabilitation.
+F650 22 $a Psychiatry in Literature.
+F650 #6 $a Alcoolisme $v Citations, maximes, etc.
+F650 #6 $a Alcoolisme $x Aspect psychologique $v Citations, maximes, etc.
+F650 #6 $a Alcoolisme $x Traitement $v Citations, maximes, etc.
+F650 #6 $a Alcoolisme $v Miscellanées.
+F650 #7 $a LITERARY COLLECTIONS. $2 bisacsh
+F650 #7 $a SELF-HELP $x Substance Abuse &amp; Addictions $x Alcohol. $2 bisacsh
+F650 #7 $a SELF-HELP $x Twelve-Step Programs. $2 bisacsh
+F650 #7 $a Alcoholism. $2 fast $0 (OCoLC)fst00804461
+F650 #7 $a Alcoholism $x Psychological aspects. $2 fast $0 (OCoLC)fst00804524
+F650 #7 $a Alcoholism $x Treatment. $2 fast $0 (OCoLC)fst00804565
+F654 ## $a SELF-HELP / Substance Abuse &amp; Addictions / Alcohol^SELF-HELP / Substance Abuse &amp; Addictions / General^SELF-HELP / Twelve-Step Programs. $2 BISAC
+F655 #7 $a miscellanies. $2 aat
+F655 #7 $a quotations (texts) $2 aat
+F655 #7 $a Trivia and miscellanea. $2 fast $0 (OCoLC)fst01921748
+F655 #7 $a Quotations. $2 fast $0 (OCoLC)fst01423792
+F655 #7 $a Trivia and miscellanea. $2 lcgft
+F655 #7 $a Quotations. $2 lcgft
+F655 #7 $a Miscellanées. $2 rvmgf
+F655 #7 $a Citations. $2 rvmgf
+F700 1# $a Bader, Sara, $e compiler.
+F973 ## $a pbooks
+F994 ## $a 92 $b OCACL
+F979 ## $a AAM
+</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/nom#99161969555001452">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdano:P80172 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99161969555001452"/>
+      <rdand:P80068>99161969555001452</rdand:P80068>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#steinbergneiloutofthewreckirisebadersaraenglishtextaggregatingwork">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99161969555001452"/>
+      <rdawd:P10004>Aggregating work</rdawd:P10004>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolc927619699outofthewreckirise2016theuniversityofchicagopressvolume"/>
+      <rdawd:P10328>Steinberg, Neil, Out of the wreck I rise Bader, Sara, English text Aggregating work</rdawd:P10328>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#hv5072"/>
+      <rdawo:P10444 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1137"/>
+      <rdawd:P10088>Out of the wreck I rise</rdawd:P10088>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#alcoholismquotationsmaximsetc"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#quotationsmaximsetc"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#alcoholismpsychologicalaspectsquotationsmaximsetc"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#quotationsmaximsetc"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#alcoholismtreatmentquotationsmaximsetc"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#quotationsmaximsetc"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#alcoholismmiscellanea"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#miscellanea"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/mesh/con#mentalhealthrecovery"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/mesh/con#alcoholismrehabilitation"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/mesh/con#psychiatryinliterature"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#alcoolismecitationsmaximesetc"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvm/con#citationsmaximesetc"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#alcoolismeaspectpsychologiquecitationsmaximesetc"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvm/con#citationsmaximesetc"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#alcoolismetraitementcitationsmaximesetc"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvm/con#citationsmaximesetc"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#alcoolismemiscellane%CC%81es"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvm/con#miscellane%CC%81es"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/bisacsh/con#literarycollections"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/bisacsh/con#self-helpsubstanceabuse%26addictionsalcohol"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/bisacsh/con#self-helptwelve-stepprograms"/>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00804461"/>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00804524"/>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00804565"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/bisac/con#self-helpsubstanceabuse%26addictionsalcohol%5Eself-helpsubstanceabuse%26addictionsgeneral%5Eself-helptwelve-stepprograms"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/aat/con#miscellanies"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/aat/con#quotationstexts"/>
+      <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01921748"/>
+      <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01423792"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#triviaandmiscellanea"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#quotations"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvmgf/con#miscellane%CC%81es"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvmgf/con#citations"/>
+      <rdawo:P10444 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1371"/>
+      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#steinbergneiloutofthewreckirise">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99161969555001452"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#steinbergneiloutofthewreckiriseenglishtext"/>
+      <rdawd:P10328>Steinberg, Neil, Out of the wreck I rise</rdawd:P10328>
+      <rdawd:P10088>Out of the wreck I rise</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#steinbergneiloutofthewreckiriseenglishtext">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99161969555001452"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolc927619699outofthewreckirise2016theuniversityofchicagopressvolume"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#steinbergneiloutofthewreckirise"/>
+      <rdaed:P20310>Steinberg, Neil, Out of the wreck I rise. English text</rdaed:P20310>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#ocolc927619699outofthewreckirise2016theuniversityofchicagopressvolume">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99161969555001452"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#steinbergneiloutofthewreckiriseenglishtext"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#steinbergneiloutofthewreckirisebadersaraenglishtextaggregatingwork"/>
+      <rdamd:P30276>Out of the wreck I rise 2016. The University of Chicago Press,volume</rdamd:P30276>
+      <rdamd:P30011>2016</rdamd:P30011>
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/ilu"/>
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137>
+      <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.m0xp-h565#1"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#9780226140131"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#022614013x"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#9780226140278"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#022614027x"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#9780226140278"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#9780226528748"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#022652874x"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e1137-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1137"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e1137-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1137"/>
+      <rdamd:P30156>Out of the wreck I rise</rdamd:P30156>
+      <rdamd:P30142>a literary companion to recovery</rdamd:P30142>
+      <rdamd:P30105>Neil Steinberg and Sara Bader</rdamd:P30105>
+      <rdamd:P30111>Chicago ; London : The University of Chicago Press, 2016.</rdamd:P30111>
+      <rdamd:P30088>Chicago</rdamd:P30088>
+      <rdamd:P30088>London</rdamd:P30088>
+      <rdamd:P30176>The University of Chicago Press</rdamd:P30176>
+      <rdamd:P30011>2016</rdamd:P30011>
+      <rdamd:P30182>xiv, 281 pages ; 22 cm</rdamd:P30182>
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+      <rdamd:P30455>Includes bibliographical references and index.</rdamd:P30455>
+      <rdamd:P30137>Contents: Introduction: Why put it off? -- The best of life: the good times sour -- I don't want to do that: the end of the party -- The direction you least trust: making the leap -- Nothing to lose: early recovery -- Wait, for now: the importance of time -- Somewhere to go: Alcoholics Anonymous -- Shakespeare's child: family and friends -- Upon breach of my late vows: relapse -- Gravy: on life anew.</rdamd:P30137>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e1371-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1371"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e1371-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1371"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#9780226140131">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>9780226140131</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+      <rdand:P80071>cloth; alk. paper</rdand:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#022614013x">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>022614013X</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+      <rdand:P80071>cloth; alk. paper</rdand:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#9780226140278">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>9780226140278</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+      <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdand:P80071>e-book</rdand:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#022614027x">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>022614027X</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#9780226140278">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>9780226140278</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#9780226528748">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>9780226528748</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#022652874x">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>022652874X</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1137">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Steinberg, Neil</rdaad:P50377>
+      <rdaad:P50111>Steinberg, Neil</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1371">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Bader, Sara</rdaad:P50377>
+      <rdaad:P50111>Bader, Sara</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#hv5072">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">HV5072</skos:notation>
+      <skos:altLabel>HV5072</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#alcoholismquotationsmaximsetc">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Alcoholism--Quotations, maxims, etc</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#quotationsmaximsetc">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Quotations, maxims, etc</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#alcoholismpsychologicalaspectsquotationsmaximsetc">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Alcoholism--Psychological aspects--Quotations, maxims, etc</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#quotationsmaximsetc">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Quotations, maxims, etc</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#alcoholismtreatmentquotationsmaximsetc">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Alcoholism--Treatment--Quotations, maxims, etc</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#quotationsmaximsetc">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Quotations, maxims, etc</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#alcoholismmiscellanea">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Alcoholism--Miscellanea</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#miscellanea">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Miscellanea</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/mesh/con#mentalhealthrecovery">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Mental Health Recovery</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/mesh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/mesh/con#alcoholismrehabilitation">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Alcoholism--rehabilitation</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/mesh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/mesh/con#psychiatryinliterature">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Psychiatry in Literature</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/mesh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#alcoolismecitationsmaximesetc">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Alcoolisme--Citations, maximes, etc</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#citationsmaximesetc">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Citations, maximes, etc</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#alcoolismeaspectpsychologiquecitationsmaximesetc">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Alcoolisme--Aspect psychologique--Citations, maximes, etc</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#citationsmaximesetc">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Citations, maximes, etc</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#alcoolismetraitementcitationsmaximesetc">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Alcoolisme--Traitement--Citations, maximes, etc</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#citationsmaximesetc">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Citations, maximes, etc</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#alcoolismemiscellane%CC%81es">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Alcoolisme--Miscellanées</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#miscellane%CC%81es">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Miscellanées</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/bisacsh/con#literarycollections">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>LITERARY COLLECTIONS</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/bisacsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/bisacsh/con#self-helpsubstanceabuse%26addictionsalcohol">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>SELF-HELP--Substance Abuse &amp; Addictions--Alcohol</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/bisacsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/bisacsh/con#self-helptwelve-stepprograms">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>SELF-HELP--Twelve-Step Programs</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/bisacsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/bisac/con#self-helpsubstanceabuse%26addictionsalcohol%5Eself-helpsubstanceabuse%26addictionsgeneral%5Eself-helptwelve-stepprograms">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>SELF-HELP / Substance Abuse &amp; Addictions / Alcohol^SELF-HELP / Substance Abuse &amp; Addictions / General^SELF-HELP / Twelve-Step Programs</skos:prefLabel>
+      <!--IRI could not be found for BISAC-->
+      <skos:inScheme>BISAC</skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/aat/con#miscellanies">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>miscellanies</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/aat/con#quotationstexts">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>quotations (texts)</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#triviaandmiscellanea">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Trivia and miscellanea</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#quotations">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Quotations</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvmgf/con#miscellane%CC%81es">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Miscellanées</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvmgf/con#citations">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Citations</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc99149469340001452">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10400 rdf:resource="http://marc2rda.edu/fake/transform/nom#99149469340001452"/>
+      <rdawd:P10002>transform/wor#marc99149469340001452</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc99149469340001452"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#shakespearewilliam1564-1616romeoandjuliet"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#shakespearewilliam1564-1616romeoandjulietkoreantext"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolc957733211romiowachulliet2007taegyoch%27ulp%27anvolume"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#romeoandjulietshakespearewilliam1564-1616yichae-myo%CC%86ngkoreantextaggregatingwork"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc99149469340001452">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99149469340001452"/>
+      <rdamd:P30004>transform/man#marc99149469340001452</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamd:P30137>F 05025cam a2201033 i 4500
+F001 99149469340001452
+F005 20240205213016.0
+F008 160905s2007    ko a   j      000 0 kor d
+F020 ## $a 9788939520509
+F020 ## $a 8939520505
+F035 ## $a (OCoLC)957733211
+F035 ## $a (OCoLC)ocn957733211
+F035 ## $a (EXLNZ-01ALLIANCE_NETWORK)99322543864301451
+F035 ## $a (01ALLIANCE_UW)99149469340001452
+F040 ## $a WAU $b eng $e rda $c WAU $d OCLCO $d WAU $d OCLCO $d OCLCF $d OCLCA $d OCL $d OCLCO $d OCLCA $d OCLCO $d OCLCL $d OCLCQ
+F041 1# $a kor $h eng
+F043 ## $a e-it--- $a e-gr---
+F049 ## $a MAIN
+F050 #4 $a PR2796.K62 $b Y48 2007
+F066 ## $c $1
+F100 1# $a Shakespeare, William, $d 1564-1616, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJxx96qPfyhwWrJChP9kXd
+F240 10 $a Romeo and Juliet. $l Korean
+F245 10 $6 880-01 $a Romio wa Chulliet : $b saero ssŭn Syeiksŭp'iŏ myŏngjaksŏn = Romeo and Juliet / $c kŭl Williŏm Syeiksŭp'iŏ ; yŏkkŏ omgim Yi Chae-myŏng ; kŭrim Andŭrea P'ise.
+F880 10 $6 245-01/$1 $a 로미오 와 줄리엣 : $b 새로 쓴 셰익스피어 명작선 = Romeo and Juliet / $c 글 윌리엄 셰익스피어 ; 엮어 옮김 이 재명 ; 그림 안드레아 피세.
+F246 31 $a Romeo and Juliet
+F250 ## $6 880-02 $a Ch'op'an.
+F880 ## $6 250-02/$1 $a 초판.
+F264 #1 $6 880-03 $a Sŏul-si : $b Taegyo Ch'ulp'an, $c 2007.
+F880 #1 $6 264-03/$1 $a 서울시 : $b 대교 출판, $c 2007.
+F300 ## $a 314 pages : $b color illustrations ; $c 23 cm.
+F336 ## $a text $b txt $2 rdacontent
+F337 ## $a unmediated $b n $2 rdamedia
+F338 ## $a volume $b nc $2 rdacarrier
+F490 1# $6 880-04 $a Nun nop'i classic ; $v 25
+F880 1# $6 490-04/$1 $a 눈 높이 classic ; $v 25
+F546 ## $a In Korean.
+F505 0# $6 880-05 $a Romio wa Chulliet = Romeo and Juliet -- Haemlit = Hamlet -- Han yŏrŭm pam ŭi kkum = The midsummer night's dream -- T'aep'ung = The tempest.
+F880 0# $6 505-05/$1 $a 로미오 와 줄리엣 = Romeo and Juliet -- 햄릿 = Hamlet -- 한 여름 밤 의 꿈 = The midsummer night's dream -- 태풍 = The tempest.
+F650 #0 $a Man-woman relationships $v Juvenile drama.
+F650 #0 $a Courtship $v Juvenile drama.
+F650 #0 $a Fathers and daughters $v Juvenile drama.
+F650 #0 $a Political refugees $v Juvenile drama.
+F650 #0 $a Shipwreck victims $v Juvenile drama.
+F650 #0 $a Magicians $v Juvenile drama.
+F650 #0 $a Islands $v Juvenile drama.
+F650 #0 $a Spirits $v Juvenile drama.
+F650 #7 $a Courtship. $2 fast $0 (OCoLC)fst00881873
+F650 #7 $a Fathers and daughters. $2 fast $0 (OCoLC)fst00921890
+F650 #7 $a Islands. $2 fast $0 (OCoLC)fst00980104
+F650 #7 $a Magicians. $2 fast $0 (OCoLC)fst01005551
+F650 #7 $a Man-woman relationships. $2 fast $0 (OCoLC)fst01007080
+F650 #7 $a Political refugees. $2 fast $0 (OCoLC)fst01069678
+F650 #7 $a Shipwreck victims. $2 fast $0 (OCoLC)fst01116637
+F650 #7 $a Spirits. $2 fast $0 (OCoLC)fst01130061
+F651 #0 $a Verona (Italy) $v Juvenile drama.
+F651 #0 $a Athens (Greece) $v Juvenile drama.
+F651 #7 $a Greece $z Athens. $2 fast $0 (OCoLC)fst01204474 $1 https://id.oclc.org/worldcat/entity/E39PBJyCyjWmm7b6fkX6kQQXh3
+F651 #7 $a Italy $z Verona. $2 fast $0 (OCoLC)fst01204568 $1 https://id.oclc.org/worldcat/entity/E39QbtfRxD7gHXKHQPcbR9hW9c
+F655 #7 $a Drama. $2 fast $0 (OCoLC)fst01423879
+F655 #7 $a Juvenile works. $2 fast $0 (OCoLC)fst01411637
+F655 #7 $a Translations. $2 fast $0 (OCoLC)fst01423791
+F655 #7 $a Drama. $2 lcgft
+F655 #7 $a Théâtre. $2 rvmgf
+F600 10 $a Shakespeare, William, $d 1564-1616 $x Translations into Korean.
+F600 10 $a Shakespeare, William, $d 1564-1616 $v Juvenile drama.
+F600 00 $a Romeo $c (Fictitious character) $v Juvenile drama.
+F600 00 $a Juliet $c (Fictitious character) $v Juvenile drama.
+F600 00 $a Hamlet $c (Legendary character) $v Juvenile drama.
+F600 07 $a Hamlet $c (Legendary character) $2 fast $0 (OCoLC)fst00950776
+F600 07 $a Juliet $c (Fictitious character) $2 fast $0 (OCoLC)fst00984804
+F600 07 $a Romeo $c (Fictitious character) $2 fast $0 (OCoLC)fst01100152
+F600 17 $a Shakespeare, William, $d 1564-1616 $2 fast $0 (OCoLC)fst00029048 $1 https://id.oclc.org/worldcat/entity/E39PBJxx96qPfyhwWrJChP9kXd
+F740 02 $6 880-07 $a Haemlit.
+F880 02 $6 740-07/$1 $a 햄릿.
+F740 02 $6 880-08 $a Han yŏrŭm pam ŭi kkum.
+F880 02 $6 740-08/$1 $a 한 여름 밤 의 꿈.
+F740 02 $6 880-09 $a T'aep'ung.
+F880 02 $6 740-09/$1 $a 태풍.
+F700 1# $6 880-06 $a Yi, Chae-myŏng, $e compiler, $e translator.
+F880 1# $6 700-06/$1 $a 이 재명, $e compiler, $e translator.
+F700 1# $a Piše, Andrea, $e illustrator.
+F700 12 $a Shakespeare, William, $d 1564-1616. $t Romeo and Juliet. $l Korean.
+F700 12 $a Shakespeare, William, $d 1564-1616. $t Hamlet. $l Korean.
+F700 12 $a Shakespeare, William, $d 1564-1616. $t Mdsummer night's dream. $l Korean.
+F700 12 $a Shakespeare, William, $d 1564-1616. $t Tempest. $l Korean.
+F830 #0 $6 880-10 $a Nun nop'i classic ; $v 25.
+F880 #0 $6 830-10/$1 $a 눈 높이 classic ; $v 25.
+F973 ## $a pbooks
+F994 ## $a 92 $b OCACL
+F979 ## $a AAM
+</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/nom#99149469340001452">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdano:P80172 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99149469340001452"/>
+      <rdand:P80068>99149469340001452</rdand:P80068>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#romeoandjulietshakespearewilliam1564-1616yichae-myo%CC%86ngkoreantextaggregatingwork">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99149469340001452"/>
+      <rdawd:P10004>Aggregating work</rdawd:P10004>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolc957733211romiowachulliet2007taegyoch%27ulp%27anvolume"/>
+      <rdawd:P10328>Romeo and Juliet. Shakespeare, William, 1564-1616, Yi, Chae-myŏng, Korean text Aggregating work</rdawd:P10328>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/>
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/e-it"/>
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/e-gr"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#pr2796k62"/>
+      <rdawd:P10088>Romio wa Chulliet</rdawd:P10088>
+      <rdawd:P10088>로미오 와 줄리엣</rdawd:P10088>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#man-womanrelationshipsjuveniledrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#juveniledrama"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#courtshipjuveniledrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#juveniledrama"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#fathersanddaughtersjuveniledrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#juveniledrama"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#politicalrefugeesjuveniledrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#juveniledrama"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#shipwreckvictimsjuveniledrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#juveniledrama"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#magiciansjuveniledrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#juveniledrama"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#islandsjuveniledrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#juveniledrama"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#spiritsjuveniledrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#juveniledrama"/>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00881873"/>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00921890"/>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00980104"/>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01005551"/>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01007080"/>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01069678"/>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01116637"/>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01130061"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/lcsh/pla#veronaitaly"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#veronaitalyjuveniledrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#juveniledrama"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/lcsh/pla#athensgreece"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#athensgreecejuveniledrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#juveniledrama"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/fast/pla#greece"/>
+      <rdaw:P10256 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJyCyjWmm7b6fkX6kQQXh3"/>
+      <rdawo:P10321 rdf:resource="http://marc2rda.edu/fake/fast/pla#italy"/>
+      <rdaw:P10256 rdf:resource="https://id.oclc.org/worldcat/entity/E39QbtfRxD7gHXKHQPcbR9hW9c"/>
+      <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01423879"/>
+      <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01411637"/>
+      <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01423791"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#drama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvmgf/con#the%CC%81a%CC%82tre"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#shakespearewilliam1564-1616translationsintokorean"/>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1748"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#shakespearewilliam1564-1616juveniledrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#juveniledrama"/>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1755"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#romeofictitiouscharacterjuveniledrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#juveniledrama"/>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1762"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#julietfictitiouscharacterjuveniledrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#juveniledrama"/>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1769"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#hamletlegendarycharacterjuveniledrama"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#juveniledrama"/>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1776"/>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1783"/>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1792"/>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1802"/>
+      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1811"/>
+      <rdawo:P10444 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1852"/>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/wor#2025-02-10-0800d23e1912"/>
+      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/kor"/>
+      <rdawo:P10217 rdf:resource="https://doi.org/10.6069/uwlswd.aec4-nv40#j"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#shakespearewilliam1564-1616romeoandjuliet">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99149469340001452"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#shakespearewilliam1564-1616romeoandjulietkoreantext"/>
+      <rdawd:P10328>Shakespeare, William, 1564-1616, Romeo and Juliet</rdawd:P10328>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1467"/>
+      <rdawd:P10088>Romio wa Chulliet</rdawd:P10088>
+      <rdawd:P10088>로미오 와 줄리엣</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#shakespearewilliam1564-1616romeoandjulietkoreantext">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99149469340001452"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolc957733211romiowachulliet2007taegyoch%27ulp%27anvolume"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#shakespearewilliam1564-1616romeoandjuliet"/>
+      <rdaed:P20310>Shakespeare, William, 1564-1616, Romeo and Juliet.Korean text</rdaed:P20310>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#ocolc957733211romiowachulliet2007taegyoch%27ulp%27anvolume">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99149469340001452"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#shakespearewilliam1564-1616romeoandjulietkoreantext"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#romeoandjulietshakespearewilliam1564-1616yichae-myo%CC%86ngkoreantextaggregatingwork"/>
+      <rdamd:P30276>Romio wa Chulliet 2007. Taegyo Ch'ulp'an,volume</rdamd:P30276>
+      <rdamd:P30011>2007</rdamd:P30011>
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/ko"/>
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#9788939520509"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#8939520505"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e1467-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1467"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e1467-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1467"/>
+      <rdamd:P30156>Romio wa Chulliet</rdamd:P30156>
+      <rdamd:P30142>saero ssŭn Syeiksŭp'iŏ myŏngjaksŏn</rdamd:P30142>
+      <rdamd:P30156>Romeo and Juliet</rdamd:P30156>
+      <rdamd:P30105>kŭl Williŏm Syeiksŭp'iŏ</rdamd:P30105>
+      <rdamd:P30105>yŏkkŏ omgim Yi Chae-myŏng</rdamd:P30105>
+      <rdamd:P30105>kŭrim Andŭrea P'ise</rdamd:P30105>
+      <rdamd:P30156>로미오 와 줄리엣</rdamd:P30156>
+      <rdamd:P30142>새로 쓴 셰익스피어 명작선</rdamd:P30142>
+      <rdamd:P30156>Romeo and Juliet</rdamd:P30156>
+      <rdamd:P30105>글 윌리엄 셰익스피어</rdamd:P30105>
+      <rdamd:P30105>엮어 옮김 이 재명</rdamd:P30105>
+      <rdamd:P30105>그림 안드레아 피세</rdamd:P30105>
+      <rdamd:P30107>Ch'op'an.</rdamd:P30107>
+      <rdamd:P30133>Ch'op'an.</rdamd:P30133>
+      <rdamd:P30107>초판.</rdamd:P30107>
+      <rdamd:P30133>초판.</rdamd:P30133>
+      <rdamd:P30111>Sŏul-si : Taegyo Ch'ulp'an, 2007.</rdamd:P30111>
+      <rdamd:P30088>Sŏul-si</rdamd:P30088>
+      <rdamd:P30176>Taegyo Ch'ulp'an</rdamd:P30176>
+      <rdamd:P30011>2007</rdamd:P30011>
+      <rdamd:P30111>서울시 : 대교 출판, 2007.</rdamd:P30111>
+      <rdamd:P30088>서울시</rdamd:P30088>
+      <rdamd:P30176>대교 출판</rdamd:P30176>
+      <rdamd:P30011>2007</rdamd:P30011>
+      <rdamd:P30182>314 pages : color illustrations ; 23 cm.</rdamd:P30182>
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+      <rdam:P30002 rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+      <rdamd:P30106>Nun nop'i classic ; 25</rdamd:P30106>
+      <rdamd:P30137>In Korean.</rdamd:P30137>
+      <rdamd:P30137>Contents: Romio wa Chulliet = Romeo and Juliet -- Haemlit = Hamlet -- Han yŏrŭm pam ŭi kkum = The midsummer night's dream -- T'aep'ung = The tempest.</rdamd:P30137>
+      <rdamd:P30137>Contents: 로미오 와 줄리엣 = Romeo and Juliet -- 햄릿 = Hamlet -- 한 여름 밤 의 꿈 = The midsummer night's dream -- 태풍 = The tempest.</rdamd:P30137>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e1852-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1852"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#2025-02-10-0800d23e1852-->
+      <rdamo:P30336 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1852"/>
+      <rdamo:P30343 rdf:resource="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1870"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#9788939520509">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>9788939520509</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#8939520505">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>8939520505</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/plaNom#veronaitaly">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Verona (Italy)</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/plaNom#athensgreece">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Athens (Greece)</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/plaNom#2025-02-10-0800d23e1694">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Greece</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/plaNom#2025-02-10-0800d23e1705">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Italy</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1748">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Shakespeare, William, 1564-1616</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1755">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Shakespeare, William, 1564-1616</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1762">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Romeo (Fictitious character)</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1769">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Juliet (Fictitious character)</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1776">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Hamlet (Legendary character)</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1783">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Hamlet (Legendary character)</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1792">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Juliet (Fictitious character)</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1802">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Romeo (Fictitious character)</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1811">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Shakespeare, William, 1564-1616</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1467">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Shakespeare, William, 1564-1616</rdaad:P50377>
+      <rdaad:P50111>Shakespeare, William</rdaad:P50111>
+      <rdaad:P50121>1564</rdaad:P50121>
+      <rdaad:P50120>1616</rdaad:P50120>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJxx96qPfyhwWrJChP9kXd</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1748">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1748"/>
+      <rdaad:P50111>Shakespeare, William</rdaad:P50111>
+      <rdaad:P50121>1564</rdaad:P50121>
+      <rdaad:P50120>1616</rdaad:P50120>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1755">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1755"/>
+      <rdaad:P50111>Shakespeare, William</rdaad:P50111>
+      <rdaad:P50121>1564</rdaad:P50121>
+      <rdaad:P50120>1616</rdaad:P50120>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1762">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1762"/>
+      <rdaad:P50111>Romeo</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1769">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1769"/>
+      <rdaad:P50111>Juliet</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1776">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1776"/>
+      <rdaad:P50111>Hamlet</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1783">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1783"/>
+      <rdaad:P50111>Hamlet</rdaad:P50111>
+      <rdaad:P50094>(OCoLC)fst00950776</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1792">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1792"/>
+      <rdaad:P50111>Juliet</rdaad:P50111>
+      <rdaad:P50094>(OCoLC)fst00984804</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1802">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1802"/>
+      <rdaad:P50111>Romeo</rdaad:P50111>
+      <rdaad:P50094>(OCoLC)fst01100152</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1811">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1811"/>
+      <rdaad:P50111>Shakespeare, William</rdaad:P50111>
+      <rdaad:P50121>1564</rdaad:P50121>
+      <rdaad:P50120>1616</rdaad:P50120>
+      <rdaad:P50094>(OCoLC)fst00029048</rdaad:P50094>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJxx96qPfyhwWrJChP9kXd</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1852">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Yi, Chae-myŏng</rdaad:P50377>
+      <rdaad:P50377>이 재명</rdaad:P50377>
+      <rdaad:P50111>Yi, Chae-myŏng</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#2025-02-10-0800d23e1870">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Piše, Andrea</rdaad:P50377>
+      <rdaad:P50111>Piše, Andrea</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#2025-02-10-0800d23e1912">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10328>Nun nop'i classic ;</rdawd:P10328>
+      <rdawd:P10328>눈 높이 classic ;</rdawd:P10328>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#pr2796k62">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">PR2796.K62</skos:notation>
+      <skos:altLabel>PR2796.K62</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#man-womanrelationshipsjuveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Man-woman relationships--Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#juveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#courtshipjuveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Courtship--Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#juveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#fathersanddaughtersjuveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Fathers and daughters--Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#juveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#politicalrefugeesjuveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Political refugees--Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#juveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#shipwreckvictimsjuveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Shipwreck victims--Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#juveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#magiciansjuveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Magicians--Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#juveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#islandsjuveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Islands--Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#juveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#spiritsjuveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Spirits--Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#juveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#veronaitalyjuveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Verona (Italy)--Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#juveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#athensgreecejuveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Athens (Greece)--Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#juveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#drama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvmgf/con#the%CC%81a%CC%82tre">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Théâtre</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#shakespearewilliam1564-1616translationsintokorean">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Shakespeare, William, 1564-1616--Translations into Korean</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#shakespearewilliam1564-1616juveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Shakespeare, William, 1564-1616--Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#juveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#romeofictitiouscharacterjuveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Romeo (Fictitious character)--Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#juveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#julietfictitiouscharacterjuveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Juliet (Fictitious character)--Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#juveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#hamletlegendarycharacterjuveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Hamlet (Legendary character)--Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#juveniledrama">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Juvenile drama</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/pla#veronaitaly">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/lcsh/plaNom#veronaitaly"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/pla#athensgreece">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.edu/fake/lcsh/plaNom#athensgreece"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/pla#greece">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70018 rdf:resource="http://marc2rda.edu/fake/plaNom#2025-02-10-0800d23e1694"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/pla#italy">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70018 rdf:resource="http://marc2rda.edu/fake/plaNom#2025-02-10-0800d23e1705"/>
+   </rdf:Description>
+</rdf:RDF>
