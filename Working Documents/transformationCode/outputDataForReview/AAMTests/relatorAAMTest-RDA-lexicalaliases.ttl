@@ -7,61 +7,60 @@
 @prefix rdamo: <http://rdaregistry.info/Elements/m/object/> .
 @prefix rdan: <http://rdaregistry.info/Elements/n/> .
 @prefix rdand: <http://rdaregistry.info/Elements/n/datatype/> .
-@prefix rdano: <http://rdaregistry.info/Elements/n/object/> .
 @prefix rdapo: <http://rdaregistry.info/Elements/p/object/> .
 @prefix rdaw: <http://rdaregistry.info/Elements/w/> .
 @prefix rdawd: <http://rdaregistry.info/Elements/w/datatype/> .
 @prefix rdawo: <http://rdaregistry.info/Elements/w/object/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e109> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e109> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Sewell, Helen, 1896-" ;
     rdaad:dateOfBirth.en "1896" ;
     rdaad:nameOfPerson.en "Sewell, Helen" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e382> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e382> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Garvie, Elizabeth" ;
     rdaad:nameOfPerson.en "Garvie, Elizabeth" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e387> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e387> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Rintoul, David" ;
     rdaad:nameOfPerson.en "Rintoul, David" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e392> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e392> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Watson, Moray, 1928-" ;
     rdaad:dateOfBirth.en "1928" ;
     rdaad:nameOfPerson.en "Watson, Moray" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e404> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e404> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Peake-Jones, Tessa" ;
     rdaad:nameOfPerson.en "Peake-Jones, Tessa" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e410> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e410> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Higgins, Clare" ;
     rdaad:nameOfPerson.en "Higgins, Clare" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e896> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e896> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Rooper, Jemima" ;
     rdaad:nameOfPerson.en "Rooper, Jemima" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e901> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e901> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Kingston, Alex" ;
     rdaad:nameOfPerson.en "Kingston, Alex" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e906> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e906> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Cowan, Elliot, 1976-" ;
     rdaad:dateOfBirth.en "1976" ;
     rdaad:nameOfPerson.en "Cowan, Elliot" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e914> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e914> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Bonneville, Hugh" ;
     rdaad:nameOfPerson.en "Bonneville, Hugh" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e919> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e919> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Arterton, Gemma" ;
     rdaad:nameOfPerson.en "Arterton, Gemma" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e924> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e924> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Duncan, Lindsay" ;
     rdaad:nameOfPerson.en "Duncan, Lindsay" .
 
@@ -73,186 +72,186 @@
     skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/aat> ;
     skos:prefLabel "quotations (texts)" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e104> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e104> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Gibbons, Stella, 1902-1989" ;
     rdaad:dateOfBirth.en "1902" ;
     rdaad:dateOfDeath.en "1989" ;
     rdaad:nameOfPerson.en "Gibbons, Stella" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e116> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e116> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Blumenthal, Joseph, 1897-1990" ;
     rdaad:dateOfBirth.en "1897" ;
     rdaad:dateOfDeath.en "1990" ;
     rdaad:nameOfPerson.en "Blumenthal, Joseph" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e123> a <http://rdaregistry.info/Elements/c/CorporateBody.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e123> a <http://rdaregistry.info/Elements/c/CorporateBody.en> ;
     rdaad:accessPointForCorporateBody.en "Limited Editions Club" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e128> a <http://rdaregistry.info/Elements/c/CorporateBody.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e128> a <http://rdaregistry.info/Elements/c/CorporateBody.en> ;
     rdaad:accessPointForCorporateBody.en "Spiral Press" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e1748> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e1748> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:dateOfBirth.en "1564" ;
     rdaad:dateOfDeath.en "1616" ;
     rdaad:nameOfPerson.en "Shakespeare, William" ;
-    rdaao:accessPointForPerson.en <http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1748> .
+    rdaao:accessPointForPerson.en <http://marc2rda.edu/fake/ageNom#2025-02-11-0800d23e1748> .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e1755> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e1755> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:dateOfBirth.en "1564" ;
     rdaad:dateOfDeath.en "1616" ;
     rdaad:nameOfPerson.en "Shakespeare, William" ;
-    rdaao:accessPointForPerson.en <http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1755> .
+    rdaao:accessPointForPerson.en <http://marc2rda.edu/fake/ageNom#2025-02-11-0800d23e1755> .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e1762> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e1762> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:nameOfPerson.en "Romeo" ;
-    rdaao:accessPointForPerson.en <http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1762> .
+    rdaao:accessPointForPerson.en <http://marc2rda.edu/fake/ageNom#2025-02-11-0800d23e1762> .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e1769> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e1769> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:nameOfPerson.en "Juliet" ;
-    rdaao:accessPointForPerson.en <http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1769> .
+    rdaao:accessPointForPerson.en <http://marc2rda.edu/fake/ageNom#2025-02-11-0800d23e1769> .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e1776> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e1776> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:nameOfPerson.en "Hamlet" ;
-    rdaao:accessPointForPerson.en <http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1776> .
+    rdaao:accessPointForPerson.en <http://marc2rda.edu/fake/ageNom#2025-02-11-0800d23e1776> .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e1783> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e1783> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:identifierForPerson.en "(OCoLC)fst00950776" ;
     rdaad:nameOfPerson.en "Hamlet" ;
-    rdaao:accessPointForPerson.en <http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1783> .
+    rdaao:accessPointForPerson.en <http://marc2rda.edu/fake/ageNom#2025-02-11-0800d23e1783> .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e1792> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e1792> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:identifierForPerson.en "(OCoLC)fst00984804" ;
     rdaad:nameOfPerson.en "Juliet" ;
-    rdaao:accessPointForPerson.en <http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1792> .
+    rdaao:accessPointForPerson.en <http://marc2rda.edu/fake/ageNom#2025-02-11-0800d23e1792> .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e1802> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e1802> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:identifierForPerson.en "(OCoLC)fst01100152" ;
     rdaad:nameOfPerson.en "Romeo" ;
-    rdaao:accessPointForPerson.en <http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1802> .
+    rdaao:accessPointForPerson.en <http://marc2rda.edu/fake/ageNom#2025-02-11-0800d23e1802> .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e1811> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e1811> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:dateOfBirth.en "1564" ;
     rdaad:dateOfDeath.en "1616" ;
     rdaad:identifierForPerson.en "(OCoLC)fst00029048",
         "https://id.oclc.org/worldcat/entity/E39PBJxx96qPfyhwWrJChP9kXd" ;
     rdaad:nameOfPerson.en "Shakespeare, William" ;
-    rdaao:accessPointForPerson.en <http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1811> .
+    rdaao:accessPointForPerson.en <http://marc2rda.edu/fake/ageNom#2025-02-11-0800d23e1811> .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e1870> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e1870> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Piše, Andrea" ;
     rdaad:nameOfPerson.en "Piše, Andrea" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e250> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e250> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:nameOfPerson.en "Bennet, Elizabeth" ;
-    rdaao:accessPointForPerson.en <http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e250> .
+    rdaao:accessPointForPerson.en <http://marc2rda.edu/fake/ageNom#2025-02-11-0800d23e250> .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e257> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e257> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:nameOfPerson.en "Darcy, Fitzwilliam" ;
-    rdaao:accessPointForPerson.en <http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e257> .
+    rdaao:accessPointForPerson.en <http://marc2rda.edu/fake/ageNom#2025-02-11-0800d23e257> .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e367> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e367> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Powell, Jonathan" ;
     rdaad:nameOfPerson.en "Powell, Jonathan" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e372> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e372> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Weldon, Fay" ;
     rdaad:nameOfPerson.en "Weldon, Fay" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e377> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e377> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Coke, Cyril" ;
     rdaad:nameOfPerson.en "Coke, Cyril" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e399> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e399> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Morgan, Priscilla. act" ;
     rdaad:nameOfPerson.en "Morgan, Priscilla" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e422> a <http://rdaregistry.info/Elements/c/CorporateBody.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e422> a <http://rdaregistry.info/Elements/c/CorporateBody.en> ;
     rdaad:accessPointForCorporateBody.en "BBC Video (Firm)" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e425> a <http://rdaregistry.info/Elements/c/CorporateBody.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e425> a <http://rdaregistry.info/Elements/c/CorporateBody.en> ;
     rdaad:accessPointForCorporateBody.en "Australian Broadcasting Commission" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e428> a <http://rdaregistry.info/Elements/c/CorporateBody.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e428> a <http://rdaregistry.info/Elements/c/CorporateBody.en> ;
     rdaad:accessPointForCorporateBody.en "Warner Home Video (Firm)" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e881> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e881> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "McKerrell, Kate" ;
     rdaad:nameOfPerson.en "McKerrell, Kate" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e886> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e886> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Andrews, Guy" ;
     rdaad:nameOfPerson.en "Andrews, Guy" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e891> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e891> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Zeff, Dan" ;
     rdaad:nameOfPerson.en "Zeff, Dan" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e929> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e929> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Austen, Jane, 1775-1817" ;
     rdaad:dateOfBirth.en "1775" ;
     rdaad:dateOfDeath.en "1817" ;
     rdaad:nameOfPerson.en "Austen, Jane" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e936> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e936> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Henson, Christian, 1971-" ;
     rdaad:dateOfBirth.en "1971" ;
     rdaad:nameOfPerson.en "Henson, Christian" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e943> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e943> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Whiteside, Simon" ;
     rdaad:nameOfPerson.en "Whiteside, Simon" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e946> a <http://rdaregistry.info/Elements/c/CorporateBody.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e946> a <http://rdaregistry.info/Elements/c/CorporateBody.en> ;
     rdaad:accessPointForCorporateBody.en "Mammoth Screen (Firm)" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e949> a <http://rdaregistry.info/Elements/c/CorporateBody.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e949> a <http://rdaregistry.info/Elements/c/CorporateBody.en> ;
     rdaad:accessPointForCorporateBody.en "ITV (Firm)" .
 
-<http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1748> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+<http://marc2rda.edu/fake/ageNom#2025-02-11-0800d23e1748> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:nomenString.en "Shakespeare, William, 1564-1616" ;
     rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
 
-<http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1755> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+<http://marc2rda.edu/fake/ageNom#2025-02-11-0800d23e1755> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:nomenString.en "Shakespeare, William, 1564-1616" ;
     rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
 
-<http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1762> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+<http://marc2rda.edu/fake/ageNom#2025-02-11-0800d23e1762> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:nomenString.en "Romeo (Fictitious character)" ;
     rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
 
-<http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1769> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+<http://marc2rda.edu/fake/ageNom#2025-02-11-0800d23e1769> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:nomenString.en "Juliet (Fictitious character)" ;
     rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
 
-<http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1776> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+<http://marc2rda.edu/fake/ageNom#2025-02-11-0800d23e1776> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:nomenString.en "Hamlet (Legendary character)" ;
     rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
 
-<http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1783> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+<http://marc2rda.edu/fake/ageNom#2025-02-11-0800d23e1783> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:nomenString.en "Hamlet (Legendary character)" ;
     rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
 
-<http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1792> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+<http://marc2rda.edu/fake/ageNom#2025-02-11-0800d23e1792> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:nomenString.en "Juliet (Fictitious character)" ;
     rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
 
-<http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1802> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+<http://marc2rda.edu/fake/ageNom#2025-02-11-0800d23e1802> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:nomenString.en "Romeo (Fictitious character)" ;
     rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
 
-<http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e1811> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+<http://marc2rda.edu/fake/ageNom#2025-02-11-0800d23e1811> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:nomenString.en "Shakespeare, William, 1564-1616" ;
     rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
 
-<http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e250> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+<http://marc2rda.edu/fake/ageNom#2025-02-11-0800d23e250> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:nomenString.en "Bennet, Elizabeth (Fictitious character)" ;
     rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
 
-<http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e257> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+<http://marc2rda.edu/fake/ageNom#2025-02-11-0800d23e257> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:nomenString.en "Darcy, Fitzwilliam (Fictitious character)" ;
     rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
 
-<http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e834> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+<http://marc2rda.edu/fake/ageNom#2025-02-11-0800d23e834> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:nomenString.en "Austen, Jane, 1775-1817" ;
     rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
 
@@ -272,16 +271,11 @@
     skos:inScheme <http://id.loc.gov/vocabulary/subjectSchemes/bisacsh> ;
     skos:prefLabel "SELF-HELP--Twelve-Step Programs" .
 
-<http://marc2rda.edu/fake/dlc/nom#___57023989_> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "   57023989 " ;
-    rdand:schemeOfNomen.en "DLC" ;
-    rdano:identifierForWorkGroupOf.en <http://marc2rda.edu/fake/transform/wor#marcdlc___57023989_> .
-
 <http://marc2rda.edu/fake/fast/pla#greece> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:accessPointForPlace.en <http://marc2rda.edu/fake/plaNom#2025-02-10-0800d23e1694> .
+    rdapo:accessPointForPlace.en <http://marc2rda.edu/fake/plaNom#2025-02-11-0800d23e1694> .
 
 <http://marc2rda.edu/fake/fast/pla#italy> a <http://rdaregistry.info/Elements/c/Place.en> ;
-    rdapo:accessPointForPlace.en <http://marc2rda.edu/fake/plaNom#2025-02-10-0800d23e1705> .
+    rdapo:accessPointForPlace.en <http://marc2rda.edu/fake/plaNom#2025-02-11-0800d23e1705> .
 
 <http://marc2rda.edu/fake/gsafd/con#lovestories> a skos:Concept ;
     skos:inScheme <http://id.loc.gov/vocabulary/genreFormSchemes/gsafd> ;
@@ -605,20 +599,20 @@
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/mesh> ;
     skos:prefLabel "Psychiatry in Literature" .
 
-<http://marc2rda.edu/fake/nom#2025-02-10-0800d23e157> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+<http://marc2rda.edu/fake/nom#2025-02-11-0800d23e157> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:nomenString.en "794051168726" ;
     rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/identifiers/upc> .
 
-<http://marc2rda.edu/fake/nom#2025-02-10-0800d23e159> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+<http://marc2rda.edu/fake/nom#2025-02-11-0800d23e159> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:assignedByAgent.en "Warner Home Video" ;
     rdand:categoryOfNomen.en "Video recording publisher number" ;
     rdand:nomenString.en "E1687" .
 
-<http://marc2rda.edu/fake/plaNom#2025-02-10-0800d23e1694> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+<http://marc2rda.edu/fake/plaNom#2025-02-11-0800d23e1694> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:nomenString.en "Greece" ;
     rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
 
-<http://marc2rda.edu/fake/plaNom#2025-02-10-0800d23e1705> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+<http://marc2rda.edu/fake/plaNom#2025-02-11-0800d23e1705> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:nomenString.en "Italy" ;
     rdan:schemeOfNomen.en <http://id.loc.gov/vocabulary/subjectSchemes/fast> .
 
@@ -983,69 +977,46 @@ F979 ## $a AAM $b 245c Introduction, etc. $c 112
     rdamo:carrierType.en <http://rdaregistry.info/termList/RDACarrierType/1018> ;
     rdamo:workManifested.en <http://marc2rda.edu/fake/transform/wor#marcdlc___57023989_> .
 
-<http://marc2rda.edu/fake/transform/nom#13319519> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "13319519" ;
-    rdano:identifierForWorkGroupOf.en <http://marc2rda.edu/fake/transform/wor#marc13319519> .
-
-<http://marc2rda.edu/fake/transform/nom#442939> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "442939" ;
-    rdano:identifierForWorkGroupOf.en <http://marc2rda.edu/fake/transform/wor#marc442939> .
-
-<http://marc2rda.edu/fake/transform/nom#99149469340001452> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "99149469340001452" ;
-    rdano:identifierForWorkGroupOf.en <http://marc2rda.edu/fake/transform/wor#marc99149469340001452> .
-
-<http://marc2rda.edu/fake/transform/nom#99161969555001452> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
-    rdand:nomenString.en "99161969555001452" ;
-    rdano:identifierForWorkGroupOf.en <http://marc2rda.edu/fake/transform/wor#marc99161969555001452> .
-
-<http://marc2rda.edu/fake/wor#2025-02-10-0800d23e1912> a <http://rdaregistry.info/Elements/c/Work.en> ;
+<http://marc2rda.edu/fake/wor#2025-02-11-0800d23e1912> a <http://rdaregistry.info/Elements/c/Work.en> ;
     rdawd:accessPointForWork.en "Nun nop'i classic ;",
         "눈 높이 classic ;" .
 
-<http://marc2rda.edu/fake/wor#2025-02-10-0800d23e431> a <http://rdaregistry.info/Elements/c/Work.en> ;
+<http://marc2rda.edu/fake/wor#2025-02-11-0800d23e431> a <http://rdaregistry.info/Elements/c/Work.en> ;
     rdawd:accessPointForWork.en "BBC classics" .
 
-<http://marc2rda.edu/fake/wor#2025-02-10-0800d23e834> a <http://rdaregistry.info/Elements/c/Work.en> ;
+<http://marc2rda.edu/fake/wor#2025-02-11-0800d23e834> a <http://rdaregistry.info/Elements/c/Work.en> ;
     rdawd:titleOfWork.en "Pride and prejudice" ;
-    rdawo:accessPointForWork.en <http://marc2rda.edu/fake/worNom#2025-02-10-0800d23e834> ;
-    rdawo:relatedPersonOfWork.en <http://marc2rda.edu/fake/age#2025-02-10-0800d23e834> .
+    rdawo:accessPointForWork.en <http://marc2rda.edu/fake/worNom#2025-02-11-0800d23e834> ;
+    rdawo:relatedPersonOfWork.en <http://marc2rda.edu/fake/age#2025-02-11-0800d23e834> .
 
-<http://marc2rda.edu/fake/wor#2025-02-10-0800d23e929> a <http://rdaregistry.info/Elements/c/Work.en> ;
+<http://marc2rda.edu/fake/wor#2025-02-11-0800d23e929> a <http://rdaregistry.info/Elements/c/Work.en> ;
     rdawd:accessPointForWork.en "Austen, Jane, 1775-1817. Pride and prejudice" ;
     rdawd:identifierForWork.en "d23e929wor" ;
     rdawd:titleOfWork.en "Pride and prejudice" ;
-    rdawo:relatedPersonOfWork.en <http://marc2rda.edu/fake/age#2025-02-10-0800d23e929> .
+    rdawo:relatedPersonOfWork.en <http://marc2rda.edu/fake/age#2025-02-11-0800d23e929> .
 
-<http://marc2rda.edu/fake/worNom#2025-02-10-0800d23e834> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
+<http://marc2rda.edu/fake/worNom#2025-02-11-0800d23e834> a <http://rdaregistry.info/Elements/c/Nomen.en> ;
     rdand:nomenString.en "Austen, Jane, 1775-1817. Pride and prejudice" ;
     rdan:schemeOfNomen.en <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e1137> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e1137> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Steinberg, Neil" ;
     rdaad:nameOfPerson.en "Steinberg, Neil" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e1371> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e1371> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Bader, Sara" ;
     rdaad:nameOfPerson.en "Bader, Sara" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e1467> a <http://rdaregistry.info/Elements/c/Person.en> ;
-    rdaad:accessPointForPerson.en "Shakespeare, William, 1564-1616" ;
-    rdaad:dateOfBirth.en "1564" ;
-    rdaad:dateOfDeath.en "1616" ;
-    rdaad:identifierForPerson.en "https://id.oclc.org/worldcat/entity/E39PBJxx96qPfyhwWrJChP9kXd" ;
-    rdaad:nameOfPerson.en "Shakespeare, William" .
-
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e1852> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e1852> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Yi, Chae-myŏng",
         "이 재명" ;
     rdaad:nameOfPerson.en "Yi, Chae-myŏng" .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e834> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e834> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:dateOfBirth.en "1775" ;
     rdaad:dateOfDeath.en "1817" ;
     rdaad:nameOfPerson.en "Austen, Jane" ;
-    rdaao:accessPointForPerson.en <http://marc2rda.edu/fake/ageNom#2025-02-10-0800d23e834> .
+    rdaao:accessPointForPerson.en <http://marc2rda.edu/fake/ageNom#2025-02-11-0800d23e834> .
 
 <http://marc2rda.edu/fake/lcsh/con#bennetelizabethfictitiouscharacterdrama> a skos:Concept ;
     skos:inScheme <https://id.loc.gov/vocabulary/subjectSchemes/lcsh> ;
@@ -1077,8 +1048,8 @@ F979 ## $a AAM $b 245c Introduction, etc. $c 112
     rdaw:natureOfContent.en <https://doi.org/10.6069/uwlswd.eje7-jq11#l> ;
     rdawo:languageOfRepresentativeExpression.en <http://id.loc.gov/vocabulary/languages/eng> ;
     rdawo:manifestationOfWork.en <http://marc2rda.edu/fake/transform/man#lostinaustenc2008mammothscreenproductiongranadaventureslimiteditvdistributor> ;
-    rdawo:subjectPerson.en <http://marc2rda.edu/fake/age#2025-02-10-0800d23e834> ;
-    rdawo:subjectWork.en <http://marc2rda.edu/fake/wor#2025-02-10-0800d23e834> ;
+    rdawo:subjectPerson.en <http://marc2rda.edu/fake/age#2025-02-11-0800d23e834> ;
+    rdawo:subjectWork.en <http://marc2rda.edu/fake/wor#2025-02-11-0800d23e834> ;
     rdawo:workDescribedWithMetadataBy.en <http://marc2rda.edu/fake/transform/wor#marc13319519> ;
     rdaw:subject.en <http://marc2rda.edu/fake/lcsh/con#austenjane1775-1817prideandprejudicedrama>,
         <http://marc2rda.edu/fake/lcsh/con#bennetelizabethfictitiouscharacterdrama>,
@@ -1101,11 +1072,11 @@ F979 ## $a AAM $b 245c Introduction, etc. $c 112
     rdawd:durationOfRepresentativeExpression.en "Duration: 265 minutes." ;
     rdawd:titleOfWork.en "Pride and prejudice" ;
     rdaw:natureOfContent.en <https://doi.org/10.6069/uwlswd.eje7-jq11#l> ;
-    rdawo:issueOf.en <http://marc2rda.edu/fake/wor#2025-02-10-0800d23e431> ;
+    rdawo:issueOf.en <http://marc2rda.edu/fake/wor#2025-02-11-0800d23e431> ;
     rdawo:languageOfRepresentativeExpression.en <http://id.loc.gov/vocabulary/languages/eng> ;
     rdawo:manifestationOfWork.en <http://marc2rda.edu/fake/transform/man#ocolcocm56360840prideandprejudice2004bbcvideowarnerhomevideo> ;
-    rdawo:subjectPerson.en <http://marc2rda.edu/fake/age#2025-02-10-0800d23e250>,
-        <http://marc2rda.edu/fake/age#2025-02-10-0800d23e257> ;
+    rdawo:subjectPerson.en <http://marc2rda.edu/fake/age#2025-02-11-0800d23e250>,
+        <http://marc2rda.edu/fake/age#2025-02-11-0800d23e257> ;
     rdawo:subjectPlace.en <http://marc2rda.edu/fake/lcsh/pla#england> ;
     rdawo:workDescribedWithMetadataBy.en <http://marc2rda.edu/fake/transform/wor#marc442939> ;
     rdaw:subject.en <http://marc2rda.edu/fake/lcsh/con#bennetelizabethfictitiouscharacterdrama>,
@@ -1119,7 +1090,7 @@ F979 ## $a AAM $b 245c Introduction, etc. $c 112
         <http://marc2rda.edu/fake/lcsh/con#socialclassesenglanddrama>,
         <http://marc2rda.edu/fake/lcsh/con#youngwomenenglanddrama> .
 
-<http://marc2rda.edu/fake/transform/aggWor#romeoandjulietshakespearewilliam1564-1616yichae-myo%CC%86ngkoreantextaggregatingwork> a <http://rdaregistry.info/Elements/c/Work.en> ;
+<http://marc2rda.edu/fake/transform/aggWor#romiowachullietshakespearewilliam1564-1616yichae-myo%CC%86ngkoreantextaggregatingwork> a <http://rdaregistry.info/Elements/c/Work.en> ;
     rdaw:categoryOfWork.en <http://marc2rda.edu/fake/lcgft/con#drama>,
         <http://marc2rda.edu/fake/lcsh/con#juveniledrama>,
         <http://marc2rda.edu/fake/rvmgf/con#the%CC%81a%CC%82tre>,
@@ -1127,24 +1098,25 @@ F979 ## $a AAM $b 245c Introduction, etc. $c 112
         <https://id.worldcat.org/fast/01411637>,
         <https://id.worldcat.org/fast/01423791>,
         <https://id.worldcat.org/fast/01423879> ;
-    rdawd:accessPointForWork.en "Romeo and Juliet. Shakespeare, William, 1564-1616, Yi, Chae-myŏng, Korean text Aggregating work" ;
+    rdawd:accessPointForWork.en "Romio wa Chulliet Shakespeare, William, 1564-1616, Yi, Chae-myŏng, Korean text Aggregating work" ;
     rdawd:categoryOfWork.en "Aggregating work" ;
     rdawd:titleOfWork.en "Romio wa Chulliet",
         "로미오 와 줄리엣" ;
-    rdawo:compilerPerson.en <http://marc2rda.edu/fake/age#2025-02-10-0800d23e1852> ;
+    rdawo:compilerPerson.en <http://marc2rda.edu/fake/age#2025-02-11-0800d23e1852> ;
     rdawo:intendedAudienceOfRepresentativeExpression.en <https://doi.org/10.6069/uwlswd.aec4-nv40#j> ;
-    rdawo:issueOf.en <http://marc2rda.edu/fake/wor#2025-02-10-0800d23e1912> ;
+    rdawo:issueOf.en <http://marc2rda.edu/fake/wor#2025-02-11-0800d23e1912> ;
     rdawo:languageOfRepresentativeExpression.en <http://id.loc.gov/vocabulary/languages/kor> ;
     rdawo:manifestationOfWork.en <http://marc2rda.edu/fake/transform/man#ocolc957733211romiowachulliet2007taegyoch%27ulp%27anvolume> ;
-    rdawo:subjectPerson.en <http://marc2rda.edu/fake/age#2025-02-10-0800d23e1748>,
-        <http://marc2rda.edu/fake/age#2025-02-10-0800d23e1755>,
-        <http://marc2rda.edu/fake/age#2025-02-10-0800d23e1762>,
-        <http://marc2rda.edu/fake/age#2025-02-10-0800d23e1769>,
-        <http://marc2rda.edu/fake/age#2025-02-10-0800d23e1776>,
-        <http://marc2rda.edu/fake/age#2025-02-10-0800d23e1783>,
-        <http://marc2rda.edu/fake/age#2025-02-10-0800d23e1792>,
-        <http://marc2rda.edu/fake/age#2025-02-10-0800d23e1802>,
-        <http://marc2rda.edu/fake/age#2025-02-10-0800d23e1811> ;
+    rdawo:relatedPersonOfWork.en <http://marc2rda.edu/fake/age#2025-02-11-0800d23e1467> ;
+    rdawo:subjectPerson.en <http://marc2rda.edu/fake/age#2025-02-11-0800d23e1748>,
+        <http://marc2rda.edu/fake/age#2025-02-11-0800d23e1755>,
+        <http://marc2rda.edu/fake/age#2025-02-11-0800d23e1762>,
+        <http://marc2rda.edu/fake/age#2025-02-11-0800d23e1769>,
+        <http://marc2rda.edu/fake/age#2025-02-11-0800d23e1776>,
+        <http://marc2rda.edu/fake/age#2025-02-11-0800d23e1783>,
+        <http://marc2rda.edu/fake/age#2025-02-11-0800d23e1792>,
+        <http://marc2rda.edu/fake/age#2025-02-11-0800d23e1802>,
+        <http://marc2rda.edu/fake/age#2025-02-11-0800d23e1811> ;
     rdawo:subjectPlace.en <http://id.loc.gov/vocabulary/geographicAreas/e-gr>,
         <http://id.loc.gov/vocabulary/geographicAreas/e-it>,
         <http://marc2rda.edu/fake/fast/pla#greece>,
@@ -1189,7 +1161,7 @@ F979 ## $a AAM $b 245c Introduction, etc. $c 112
     rdawd:titleOfWork.en "Sense and sensibility." ;
     rdawo:languageOfRepresentativeExpression.en <http://id.loc.gov/vocabulary/languages/eng> ;
     rdawo:manifestationOfWork.en <http://marc2rda.edu/fake/transform/man#ocolc01689189senseandsensibility1957printedatthespiralpressforthemembersofthelimitededitionsclub> ;
-    rdawo:relatedPersonOfWork.en <http://marc2rda.edu/fake/age#2025-02-10-0800d23e34> ;
+    rdawo:relatedPersonOfWork.en <http://marc2rda.edu/fake/age#2025-02-11-0800d23e34> ;
     rdawo:subjectPlace.en <http://marc2rda.edu/fake/lcsh/pla#england> ;
     rdawo:workDescribedWithMetadataBy.en <http://marc2rda.edu/fake/transform/wor#marcdlc___57023989_> ;
     rdaw:subject.en <http://marc2rda.edu/fake/lcc/con#pr4034s4>,
@@ -1217,8 +1189,8 @@ F979 ## $a AAM $b 245c Introduction, etc. $c 112
     rdawd:accessPointForWork.en "Steinberg, Neil, Out of the wreck I rise Bader, Sara, English text Aggregating work" ;
     rdawd:categoryOfWork.en "Aggregating work" ;
     rdawd:titleOfWork.en "Out of the wreck I rise" ;
-    rdawo:compilerPerson.en <http://marc2rda.edu/fake/age#2025-02-10-0800d23e1137>,
-        <http://marc2rda.edu/fake/age#2025-02-10-0800d23e1371> ;
+    rdawo:compilerPerson.en <http://marc2rda.edu/fake/age#2025-02-11-0800d23e1137>,
+        <http://marc2rda.edu/fake/age#2025-02-11-0800d23e1371> ;
     rdawo:languageOfRepresentativeExpression.en <http://id.loc.gov/vocabulary/languages/eng> ;
     rdawo:manifestationOfWork.en <http://marc2rda.edu/fake/transform/man#ocolc927619699outofthewreckirise2016theuniversityofchicagopressvolume> ;
     rdawo:workDescribedWithMetadataBy.en <http://marc2rda.edu/fake/transform/wor#marc99161969555001452> ;
@@ -1246,26 +1218,26 @@ F979 ## $a AAM $b 245c Introduction, etc. $c 112
     rdawd:accessPointForWork.en "Austen, Jane, 1775-1817. Sense and sensibility" ;
     rdawd:titleOfWork.en "Sense and sensibility." ;
     rdawo:expressionOfWork.en <http://marc2rda.edu/fake/transform/exp#austenjane1775-1817senseandsensibilityenglish> ;
-    rdawo:relatedPersonOfWork.en <http://marc2rda.edu/fake/age#2025-02-10-0800d23e34> ;
+    rdawo:relatedPersonOfWork.en <http://marc2rda.edu/fake/age#2025-02-11-0800d23e34> ;
     rdawo:workDescribedWithMetadataBy.en <http://marc2rda.edu/fake/transform/wor#marcdlc___57023989_> .
 
-<http://marc2rda.edu/fake/transform/wor#lostinausten> a <http://rdaregistry.info/Elements/c/Work.en> ;
-    rdawd:accessPointForWork.en "Lost in Austen" ;
+<http://marc2rda.edu/fake/transform/wor#lostinaustenmckerrellkate> a <http://rdaregistry.info/Elements/c/Work.en> ;
+    rdawd:accessPointForWork.en "Lost in AustenMcKerrell, Kate" ;
     rdawd:titleOfWork.en "Lost in Austen" ;
-    rdawo:expressionOfWork.en <http://marc2rda.edu/fake/transform/exp#lostinaustenenglishvideorecording> ;
+    rdawo:expressionOfWork.en <http://marc2rda.edu/fake/transform/exp#lostinaustenmckerrellkateenglishvideorecording> ;
     rdawo:workDescribedWithMetadataBy.en <http://marc2rda.edu/fake/transform/wor#marc13319519> .
 
-<http://marc2rda.edu/fake/transform/wor#prideandprejudice> a <http://rdaregistry.info/Elements/c/Work.en> ;
-    rdawd:accessPointForWork.en "Pride and prejudice" ;
+<http://marc2rda.edu/fake/transform/wor#prideandprejudicepowelljonathan> a <http://rdaregistry.info/Elements/c/Work.en> ;
+    rdawd:accessPointForWork.en "Pride and prejudicePowell, Jonathan" ;
     rdawd:titleOfWork.en "Pride and prejudice" ;
-    rdawo:expressionOfWork.en <http://marc2rda.edu/fake/transform/exp#prideandprejudiceenglishvideorecording> ;
+    rdawo:expressionOfWork.en <http://marc2rda.edu/fake/transform/exp#prideandprejudicepowelljonathanenglishvideorecording> ;
     rdawo:workDescribedWithMetadataBy.en <http://marc2rda.edu/fake/transform/wor#marc442939> .
 
 <http://marc2rda.edu/fake/transform/wor#shakespearewilliam1564-1616romeoandjuliet> a <http://rdaregistry.info/Elements/c/Work.en> ;
     rdawd:accessPointForWork.en "Shakespeare, William, 1564-1616, Romeo and Juliet" ;
     rdawd:titleOfWork.en "Romio wa Chulliet",
         "로미오 와 줄리엣" ;
-    rdawo:authorPerson.en <http://marc2rda.edu/fake/age#2025-02-10-0800d23e1467> ;
+    rdawo:authorPerson.en <http://marc2rda.edu/fake/age#2025-02-11-0800d23e1467> ;
     rdawo:expressionOfWork.en <http://marc2rda.edu/fake/transform/exp#shakespearewilliam1564-1616romeoandjulietkoreantext> ;
     rdawo:workDescribedWithMetadataBy.en <http://marc2rda.edu/fake/transform/wor#marc99149469340001452> .
 
@@ -1275,29 +1247,36 @@ F979 ## $a AAM $b 245c Introduction, etc. $c 112
     rdawo:expressionOfWork.en <http://marc2rda.edu/fake/transform/exp#steinbergneiloutofthewreckiriseenglishtext> ;
     rdawo:workDescribedWithMetadataBy.en <http://marc2rda.edu/fake/transform/wor#marc99161969555001452> .
 
-<http://marc2rda.edu/fake/age#2025-02-10-0800d23e34> a <http://rdaregistry.info/Elements/c/Person.en> ;
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e1467> a <http://rdaregistry.info/Elements/c/Person.en> ;
+    rdaad:accessPointForPerson.en "Shakespeare, William, 1564-1616" ;
+    rdaad:dateOfBirth.en "1564" ;
+    rdaad:dateOfDeath.en "1616" ;
+    rdaad:identifierForPerson.en "https://id.oclc.org/worldcat/entity/E39PBJxx96qPfyhwWrJChP9kXd" ;
+    rdaad:nameOfPerson.en "Shakespeare, William" .
+
+<http://marc2rda.edu/fake/age#2025-02-11-0800d23e34> a <http://rdaregistry.info/Elements/c/Person.en> ;
     rdaad:accessPointForPerson.en "Austen, Jane, 1775-1817" ;
     rdaad:dateOfBirth.en "1775" ;
     rdaad:dateOfDeath.en "1817" ;
     rdaad:nameOfPerson.en "Austen, Jane" .
 
 <http://marc2rda.edu/fake/transform/exp#austenjane1775-1817senseandsensibilityenglish> a <http://rdaregistry.info/Elements/c/Expression.en> ;
-    rdaed:accessPointForExpression.en "Austen, Jane, 1775-1817. Sense and sensibility.. English" ;
+    rdaed:accessPointForExpression.en "Austen, Jane, 1775-1817. Sense and sensibility. English" ;
     rdaeo:expressionDescribedWithMetadataBy.en <http://marc2rda.edu/fake/transform/wor#marcdlc___57023989_> ;
     rdaeo:manifestationOfExpression.en <http://marc2rda.edu/fake/transform/man#ocolc01689189senseandsensibility1957printedatthespiralpressforthemembersofthelimitededitionsclub> ;
     rdaeo:workExpressed.en <http://marc2rda.edu/fake/transform/wor#austenjane1775-1817senseandsensibility> .
 
-<http://marc2rda.edu/fake/transform/exp#lostinaustenenglishvideorecording> a <http://rdaregistry.info/Elements/c/Expression.en> ;
-    rdaed:accessPointForExpression.en "Lost in Austen. English videorecording" ;
+<http://marc2rda.edu/fake/transform/exp#lostinaustenmckerrellkateenglishvideorecording> a <http://rdaregistry.info/Elements/c/Expression.en> ;
+    rdaed:accessPointForExpression.en "Lost in AustenMcKerrell, Kate. English videorecording" ;
     rdaeo:expressionDescribedWithMetadataBy.en <http://marc2rda.edu/fake/transform/wor#marc13319519> ;
     rdaeo:manifestationOfExpression.en <http://marc2rda.edu/fake/transform/man#lostinaustenc2008mammothscreenproductiongranadaventureslimiteditvdistributor> ;
-    rdaeo:workExpressed.en <http://marc2rda.edu/fake/transform/wor#lostinausten> .
+    rdaeo:workExpressed.en <http://marc2rda.edu/fake/transform/wor#lostinaustenmckerrellkate> .
 
-<http://marc2rda.edu/fake/transform/exp#prideandprejudiceenglishvideorecording> a <http://rdaregistry.info/Elements/c/Expression.en> ;
-    rdaed:accessPointForExpression.en "Pride and prejudice. English videorecording" ;
+<http://marc2rda.edu/fake/transform/exp#prideandprejudicepowelljonathanenglishvideorecording> a <http://rdaregistry.info/Elements/c/Expression.en> ;
+    rdaed:accessPointForExpression.en "Pride and prejudicePowell, Jonathan. English videorecording" ;
     rdaeo:expressionDescribedWithMetadataBy.en <http://marc2rda.edu/fake/transform/wor#marc442939> ;
     rdaeo:manifestationOfExpression.en <http://marc2rda.edu/fake/transform/man#ocolcocm56360840prideandprejudice2004bbcvideowarnerhomevideo> ;
-    rdaeo:workExpressed.en <http://marc2rda.edu/fake/transform/wor#prideandprejudice> .
+    rdaeo:workExpressed.en <http://marc2rda.edu/fake/transform/wor#prideandprejudicepowelljonathan> .
 
 <http://marc2rda.edu/fake/transform/exp#shakespearewilliam1564-1616romeoandjulietkoreantext> a <http://rdaregistry.info/Elements/c/Expression.en> ;
     rdaed:accessPointForExpression.en "Shakespeare, William, 1564-1616, Romeo and Juliet.Korean text" ;
@@ -1306,7 +1285,7 @@ F979 ## $a AAM $b 245c Introduction, etc. $c 112
     rdaeo:workExpressed.en <http://marc2rda.edu/fake/transform/wor#shakespearewilliam1564-1616romeoandjuliet> .
 
 <http://marc2rda.edu/fake/transform/exp#steinbergneiloutofthewreckiriseenglishtext> a <http://rdaregistry.info/Elements/c/Expression.en> ;
-    rdaed:accessPointForExpression.en "Steinberg, Neil, Out of the wreck I rise. English text" ;
+    rdaed:accessPointForExpression.en "Steinberg, Neil, Out of the wreck I rise English text" ;
     rdaeo:expressionDescribedWithMetadataBy.en <http://marc2rda.edu/fake/transform/wor#marc99161969555001452> ;
     rdaeo:manifestationOfExpression.en <http://marc2rda.edu/fake/transform/man#ocolc927619699outofthewreckirise2016theuniversityofchicagopressvolume> ;
     rdaeo:workExpressed.en <http://marc2rda.edu/fake/transform/wor#steinbergneiloutofthewreckirise> .
@@ -1335,17 +1314,17 @@ F979 ## $a AAM $b 245c Introduction, etc. $c 112
         "produced by, Kate McKerrell",
         "written by Guy Andrews" ;
     rdamd:titleProper.en "Lost in Austen" ;
-    rdamo:contributorCorporateBodyToAggregate.en <http://marc2rda.edu/fake/age#2025-02-10-0800d23e946>,
-        <http://marc2rda.edu/fake/age#2025-02-10-0800d23e949> ;
-    rdamo:contributorPersonToAggregate.en <http://marc2rda.edu/fake/age#2025-02-10-0800d23e881>,
-        <http://marc2rda.edu/fake/age#2025-02-10-0800d23e886>,
-        <http://marc2rda.edu/fake/age#2025-02-10-0800d23e891>,
-        <http://marc2rda.edu/fake/age#2025-02-10-0800d23e936>,
-        <http://marc2rda.edu/fake/age#2025-02-10-0800d23e943> ;
-    rdamo:expressionManifested.en <http://marc2rda.edu/fake/transform/exp#lostinaustenenglishvideorecording> ;
+    rdamo:contributorCorporateBodyToAggregate.en <http://marc2rda.edu/fake/age#2025-02-11-0800d23e946>,
+        <http://marc2rda.edu/fake/age#2025-02-11-0800d23e949> ;
+    rdamo:contributorPersonToAggregate.en <http://marc2rda.edu/fake/age#2025-02-11-0800d23e881>,
+        <http://marc2rda.edu/fake/age#2025-02-11-0800d23e886>,
+        <http://marc2rda.edu/fake/age#2025-02-11-0800d23e891>,
+        <http://marc2rda.edu/fake/age#2025-02-11-0800d23e936>,
+        <http://marc2rda.edu/fake/age#2025-02-11-0800d23e943> ;
+    rdamo:expressionManifested.en <http://marc2rda.edu/fake/transform/exp#lostinaustenmckerrellkateenglishvideorecording> ;
     rdamo:manifestationDescribedWithMetadataBy.en <http://marc2rda.edu/fake/transform/wor#marc13319519> ;
     rdamo:placeOfManifestation.en <http://id.loc.gov/vocabulary/countries/xx> ;
-    rdamo:relatedWorkOfManifestation.en <http://marc2rda.edu/fake/wor#2025-02-10-0800d23e929> ;
+    rdamo:relatedWorkOfManifestation.en <http://marc2rda.edu/fake/wor#2025-02-11-0800d23e929> ;
     rdamo:workManifested.en <http://marc2rda.edu/fake/transform/aggWor#lostinaustenmckerrellkateenglishvideorecordingaggregatingwork> .
 
 <http://marc2rda.edu/fake/transform/man#ocolc01689189senseandsensibility1957printedatthespiralpressforthemembersofthelimitededitionsclub> a <http://rdaregistry.info/Elements/c/Manifestation.en> ;
@@ -1360,14 +1339,14 @@ F979 ## $a AAM $b 245c Introduction, etc. $c 112
     rdamd:publicationStatement.en "$a New York,$b Printed at the Spiral Press for the members of the Limited Editions Club,$c 1957." ;
     rdamd:statementOfResponsibilityRelatingToTitleProper.en "With a new introd. by Stella Gibbons and illus. by Helen Sewell" ;
     rdamd:titleProper.en "Sense and sensibility." ;
-    rdamo:contributorPersonToAggregate.en <http://marc2rda.edu/fake/age#2025-02-10-0800d23e104>,
-        <http://marc2rda.edu/fake/age#2025-02-10-0800d23e34> ;
+    rdamo:contributorPersonToAggregate.en <http://marc2rda.edu/fake/age#2025-02-11-0800d23e104>,
+        <http://marc2rda.edu/fake/age#2025-02-11-0800d23e34> ;
     rdamo:expressionManifested.en <http://marc2rda.edu/fake/transform/exp#austenjane1775-1817senseandsensibilityenglish> ;
     rdamo:manifestationDescribedWithMetadataBy.en <http://marc2rda.edu/fake/transform/wor#marcdlc___57023989_> ;
     rdamo:placeOfManifestation.en <http://id.loc.gov/vocabulary/countries/nyu> ;
-    rdamo:printerCorporateBody.en <http://marc2rda.edu/fake/age#2025-02-10-0800d23e128> ;
-    rdamo:printerPerson.en <http://marc2rda.edu/fake/age#2025-02-10-0800d23e116> ;
-    rdamo:publisherCorporateBody.en <http://marc2rda.edu/fake/age#2025-02-10-0800d23e123> ;
+    rdamo:printerCorporateBody.en <http://marc2rda.edu/fake/age#2025-02-11-0800d23e128> ;
+    rdamo:printerPerson.en <http://marc2rda.edu/fake/age#2025-02-11-0800d23e116> ;
+    rdamo:publisherCorporateBody.en <http://marc2rda.edu/fake/age#2025-02-11-0800d23e123> ;
     rdamo:workManifested.en <http://marc2rda.edu/fake/transform/aggWor#senseandsensibilityaustenjane1775-1817gibbonsstella1902-1989englishaggregatingwork> .
 
 <http://marc2rda.edu/fake/transform/man#ocolc927619699outofthewreckirise2016theuniversityofchicagopressvolume> a <http://rdaregistry.info/Elements/c/Manifestation.en> ;
@@ -1386,8 +1365,8 @@ F979 ## $a AAM $b 245c Introduction, etc. $c 112
     rdamd:supplementaryContent.en "Includes bibliographical references and index." ;
     rdamd:titleProper.en "Out of the wreck I rise" ;
     rdam:mediaType.en <http://id.loc.gov/vocabulary/mediaTypes/n> ;
-    rdamo:contributorPersonToAggregate.en <http://marc2rda.edu/fake/age#2025-02-10-0800d23e1137>,
-        <http://marc2rda.edu/fake/age#2025-02-10-0800d23e1371> ;
+    rdamo:contributorPersonToAggregate.en <http://marc2rda.edu/fake/age#2025-02-11-0800d23e1137>,
+        <http://marc2rda.edu/fake/age#2025-02-11-0800d23e1371> ;
     rdamo:expressionManifested.en <http://marc2rda.edu/fake/transform/exp#steinbergneiloutofthewreckiriseenglishtext> ;
     rdamo:identifierForManifestation.en <http://marc2rda.edu/fake/isbn/nom#022614013x>,
         <http://marc2rda.edu/fake/isbn/nom#022614027x>,
@@ -1432,15 +1411,15 @@ F979 ## $a AAM $b 245c Introduction, etc. $c 112
         "로미오 와 줄리엣" ;
     rdam:illustrativeContent.en <http://rdaregistry.info/termList/IllusContent/1014> ;
     rdam:mediaType.en <http://id.loc.gov/vocabulary/mediaTypes/n> ;
-    rdamo:contributorPersonOfStillImage.en <http://marc2rda.edu/fake/age#2025-02-10-0800d23e1870> ;
-    rdamo:contributorPersonToAggregate.en <http://marc2rda.edu/fake/age#2025-02-10-0800d23e1467>,
-        <http://marc2rda.edu/fake/age#2025-02-10-0800d23e1852> ;
+    rdamo:contributorPersonOfStillImage.en <http://marc2rda.edu/fake/age#2025-02-11-0800d23e1870> ;
+    rdamo:contributorPersonToAggregate.en <http://marc2rda.edu/fake/age#2025-02-11-0800d23e1467>,
+        <http://marc2rda.edu/fake/age#2025-02-11-0800d23e1852> ;
     rdamo:expressionManifested.en <http://marc2rda.edu/fake/transform/exp#shakespearewilliam1564-1616romeoandjulietkoreantext> ;
     rdamo:identifierForManifestation.en <http://marc2rda.edu/fake/isbn/nom#8939520505>,
         <http://marc2rda.edu/fake/isbn/nom#9788939520509> ;
     rdamo:manifestationDescribedWithMetadataBy.en <http://marc2rda.edu/fake/transform/wor#marc99149469340001452> ;
     rdamo:placeOfManifestation.en <http://id.loc.gov/vocabulary/countries/ko> ;
-    rdamo:workManifested.en <http://marc2rda.edu/fake/transform/aggWor#romeoandjulietshakespearewilliam1564-1616yichae-myo%CC%86ngkoreantextaggregatingwork> .
+    rdamo:workManifested.en <http://marc2rda.edu/fake/transform/aggWor#romiowachullietshakespearewilliam1564-1616yichae-myo%CC%86ngkoreantextaggregatingwork> .
 
 <http://marc2rda.edu/fake/transform/man#ocolcocm56360840prideandprejudice2004bbcvideowarnerhomevideo> a <http://rdaregistry.info/Elements/c/Manifestation.en> ;
     rdam:carrierType.en <https://doi.org/10.6069/uwlswd.qgc0-9r48#v> ;
@@ -1469,63 +1448,63 @@ F979 ## $a AAM $b 245c Introduction, etc. $c 112
         "dramatized by Fay Weldon",
         "produced by Jonathan Powell" ;
     rdamd:titleProper.en "Pride and prejudice" ;
-    rdamo:contributorCorporateBodyToAggregate.en <http://marc2rda.edu/fake/age#2025-02-10-0800d23e422>,
-        <http://marc2rda.edu/fake/age#2025-02-10-0800d23e425>,
-        <http://marc2rda.edu/fake/age#2025-02-10-0800d23e428> ;
-    rdamo:contributorPersonToAggregate.en <http://marc2rda.edu/fake/age#2025-02-10-0800d23e367>,
-        <http://marc2rda.edu/fake/age#2025-02-10-0800d23e372>,
-        <http://marc2rda.edu/fake/age#2025-02-10-0800d23e377>,
-        <http://marc2rda.edu/fake/age#2025-02-10-0800d23e399> ;
-    rdamo:expressionManifested.en <http://marc2rda.edu/fake/transform/exp#prideandprejudiceenglishvideorecording> ;
+    rdamo:contributorCorporateBodyToAggregate.en <http://marc2rda.edu/fake/age#2025-02-11-0800d23e422>,
+        <http://marc2rda.edu/fake/age#2025-02-11-0800d23e425>,
+        <http://marc2rda.edu/fake/age#2025-02-11-0800d23e428> ;
+    rdamo:contributorPersonToAggregate.en <http://marc2rda.edu/fake/age#2025-02-11-0800d23e367>,
+        <http://marc2rda.edu/fake/age#2025-02-11-0800d23e372>,
+        <http://marc2rda.edu/fake/age#2025-02-11-0800d23e377>,
+        <http://marc2rda.edu/fake/age#2025-02-11-0800d23e399> ;
+    rdamo:expressionManifested.en <http://marc2rda.edu/fake/transform/exp#prideandprejudicepowelljonathanenglishvideorecording> ;
     rdamo:identifierForManifestation.en <http://marc2rda.edu/fake/isbn/nom#079077027x>,
-        <http://marc2rda.edu/fake/nom#2025-02-10-0800d23e157>,
-        <http://marc2rda.edu/fake/nom#2025-02-10-0800d23e159> ;
+        <http://marc2rda.edu/fake/nom#2025-02-11-0800d23e157>,
+        <http://marc2rda.edu/fake/nom#2025-02-11-0800d23e159> ;
     rdamo:manifestationDescribedWithMetadataBy.en <http://marc2rda.edu/fake/transform/wor#marc442939> ;
     rdamo:placeOfManifestation.en <http://id.loc.gov/vocabulary/countries/xxu> ;
     rdamo:workManifested.en <http://marc2rda.edu/fake/transform/aggWor#prideandprejudicepowelljonathanenglishvideorecordingaggregatingwork> .
 
 <http://marc2rda.edu/fake/transform/wor#marc13319519> a <http://rdaregistry.info/Elements/c/Work.en> ;
     rdawd:identifierForWork.en "transform/wor#marc13319519" ;
-    rdawo:identifierForWorkGroup.en <http://marc2rda.edu/fake/transform/nom#13319519> ;
+    rdawd:identifierForWorkGroup.en "13319519" ;
     rdawo:manifestationOfWork.en <http://marc2rda.edu/fake/transform/man#marc13319519> ;
-    rdawo:metadataDescriptionOfExpression.en <http://marc2rda.edu/fake/transform/exp#lostinaustenenglishvideorecording> ;
-    rdawo:metadataDescriptionOfManifestation.en <http://marc2rda.edu/fake/transform/aggWor#lostinaustenmckerrellkateenglishvideorecordingaggregatingwork>,
-        <http://marc2rda.edu/fake/transform/man#lostinaustenc2008mammothscreenproductiongranadaventureslimiteditvdistributor> ;
-    rdawo:metadataDescriptionOfWork.en <http://marc2rda.edu/fake/transform/wor#lostinausten> .
+    rdawo:metadataDescriptionOfExpression.en <http://marc2rda.edu/fake/transform/exp#lostinaustenmckerrellkateenglishvideorecording> ;
+    rdawo:metadataDescriptionOfManifestation.en <http://marc2rda.edu/fake/transform/man#lostinaustenc2008mammothscreenproductiongranadaventureslimiteditvdistributor> ;
+    rdawo:metadataDescriptionOfWork.en <http://marc2rda.edu/fake/transform/aggWor#lostinaustenmckerrellkateenglishvideorecordingaggregatingwork>,
+        <http://marc2rda.edu/fake/transform/wor#lostinaustenmckerrellkate> .
 
 <http://marc2rda.edu/fake/transform/wor#marc442939> a <http://rdaregistry.info/Elements/c/Work.en> ;
     rdawd:identifierForWork.en "transform/wor#marc442939" ;
-    rdawo:identifierForWorkGroup.en <http://marc2rda.edu/fake/transform/nom#442939> ;
+    rdawd:identifierForWorkGroup.en "442939" ;
     rdawo:manifestationOfWork.en <http://marc2rda.edu/fake/transform/man#marc442939> ;
-    rdawo:metadataDescriptionOfExpression.en <http://marc2rda.edu/fake/transform/exp#prideandprejudiceenglishvideorecording> ;
-    rdawo:metadataDescriptionOfManifestation.en <http://marc2rda.edu/fake/transform/aggWor#prideandprejudicepowelljonathanenglishvideorecordingaggregatingwork>,
-        <http://marc2rda.edu/fake/transform/man#ocolcocm56360840prideandprejudice2004bbcvideowarnerhomevideo> ;
-    rdawo:metadataDescriptionOfWork.en <http://marc2rda.edu/fake/transform/wor#prideandprejudice> .
+    rdawo:metadataDescriptionOfExpression.en <http://marc2rda.edu/fake/transform/exp#prideandprejudicepowelljonathanenglishvideorecording> ;
+    rdawo:metadataDescriptionOfManifestation.en <http://marc2rda.edu/fake/transform/man#ocolcocm56360840prideandprejudice2004bbcvideowarnerhomevideo> ;
+    rdawo:metadataDescriptionOfWork.en <http://marc2rda.edu/fake/transform/aggWor#prideandprejudicepowelljonathanenglishvideorecordingaggregatingwork>,
+        <http://marc2rda.edu/fake/transform/wor#prideandprejudicepowelljonathan> .
 
 <http://marc2rda.edu/fake/transform/wor#marc99149469340001452> a <http://rdaregistry.info/Elements/c/Work.en> ;
     rdawd:identifierForWork.en "transform/wor#marc99149469340001452" ;
-    rdawo:identifierForWorkGroup.en <http://marc2rda.edu/fake/transform/nom#99149469340001452> ;
+    rdawd:identifierForWorkGroup.en "99149469340001452" ;
     rdawo:manifestationOfWork.en <http://marc2rda.edu/fake/transform/man#marc99149469340001452> ;
     rdawo:metadataDescriptionOfExpression.en <http://marc2rda.edu/fake/transform/exp#shakespearewilliam1564-1616romeoandjulietkoreantext> ;
-    rdawo:metadataDescriptionOfManifestation.en <http://marc2rda.edu/fake/transform/aggWor#romeoandjulietshakespearewilliam1564-1616yichae-myo%CC%86ngkoreantextaggregatingwork>,
-        <http://marc2rda.edu/fake/transform/man#ocolc957733211romiowachulliet2007taegyoch%27ulp%27anvolume> ;
-    rdawo:metadataDescriptionOfWork.en <http://marc2rda.edu/fake/transform/wor#shakespearewilliam1564-1616romeoandjuliet> .
+    rdawo:metadataDescriptionOfManifestation.en <http://marc2rda.edu/fake/transform/man#ocolc957733211romiowachulliet2007taegyoch%27ulp%27anvolume> ;
+    rdawo:metadataDescriptionOfWork.en <http://marc2rda.edu/fake/transform/aggWor#romiowachullietshakespearewilliam1564-1616yichae-myo%CC%86ngkoreantextaggregatingwork>,
+        <http://marc2rda.edu/fake/transform/wor#shakespearewilliam1564-1616romeoandjuliet> .
 
 <http://marc2rda.edu/fake/transform/wor#marc99161969555001452> a <http://rdaregistry.info/Elements/c/Work.en> ;
     rdawd:identifierForWork.en "transform/wor#marc99161969555001452" ;
-    rdawo:identifierForWorkGroup.en <http://marc2rda.edu/fake/transform/nom#99161969555001452> ;
+    rdawd:identifierForWorkGroup.en "99161969555001452" ;
     rdawo:manifestationOfWork.en <http://marc2rda.edu/fake/transform/man#marc99161969555001452> ;
     rdawo:metadataDescriptionOfExpression.en <http://marc2rda.edu/fake/transform/exp#steinbergneiloutofthewreckiriseenglishtext> ;
-    rdawo:metadataDescriptionOfManifestation.en <http://marc2rda.edu/fake/transform/aggWor#steinbergneiloutofthewreckirisebadersaraenglishtextaggregatingwork>,
-        <http://marc2rda.edu/fake/transform/man#ocolc927619699outofthewreckirise2016theuniversityofchicagopressvolume> ;
-    rdawo:metadataDescriptionOfWork.en <http://marc2rda.edu/fake/transform/wor#steinbergneiloutofthewreckirise> .
+    rdawo:metadataDescriptionOfManifestation.en <http://marc2rda.edu/fake/transform/man#ocolc927619699outofthewreckirise2016theuniversityofchicagopressvolume> ;
+    rdawo:metadataDescriptionOfWork.en <http://marc2rda.edu/fake/transform/aggWor#steinbergneiloutofthewreckirisebadersaraenglishtextaggregatingwork>,
+        <http://marc2rda.edu/fake/transform/wor#steinbergneiloutofthewreckirise> .
 
 <http://marc2rda.edu/fake/transform/wor#marcdlc___57023989_> a <http://rdaregistry.info/Elements/c/Work.en> ;
     rdawd:identifierForWork.en "transform/wor#marcdlc___57023989_" ;
-    rdawo:identifierForWorkGroup.en <http://marc2rda.edu/fake/dlc/nom#___57023989_> ;
+    rdawd:identifierForWorkGroup.en "DLC   57023989 " ;
     rdawo:manifestationOfWork.en <http://marc2rda.edu/fake/transform/man#marcdlc___57023989_> ;
     rdawo:metadataDescriptionOfExpression.en <http://marc2rda.edu/fake/transform/exp#austenjane1775-1817senseandsensibilityenglish> ;
-    rdawo:metadataDescriptionOfManifestation.en <http://marc2rda.edu/fake/transform/aggWor#senseandsensibilityaustenjane1775-1817gibbonsstella1902-1989englishaggregatingwork>,
-        <http://marc2rda.edu/fake/transform/man#ocolc01689189senseandsensibility1957printedatthespiralpressforthemembersofthelimitededitionsclub> ;
-    rdawo:metadataDescriptionOfWork.en <http://marc2rda.edu/fake/transform/wor#austenjane1775-1817senseandsensibility> .
+    rdawo:metadataDescriptionOfManifestation.en <http://marc2rda.edu/fake/transform/man#ocolc01689189senseandsensibility1957printedatthespiralpressforthemembersofthelimitededitionsclub> ;
+    rdawo:metadataDescriptionOfWork.en <http://marc2rda.edu/fake/transform/aggWor#senseandsensibilityaustenjane1775-1817gibbonsstella1902-1989englishaggregatingwork>,
+        <http://marc2rda.edu/fake/transform/wor#austenjane1775-1817senseandsensibility> .
 

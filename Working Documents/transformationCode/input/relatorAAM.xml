@@ -1,0 +1,1376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.loc.gov/MARC21/slim
+    http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+
+  <marc:record xmlns:marc="http://www.loc.gov/MARC21/slim">
+    <marc:leader>01326cam a22003731  4500</marc:leader>
+    <marc:controlfield tag="001">   57023989 </marc:controlfield>
+    <marc:controlfield tag="003">DLC</marc:controlfield>
+    <marc:controlfield tag="005">20080327080234.0</marc:controlfield>
+    <marc:controlfield tag="008">751009s1957    nyu           000 0 eng  </marc:controlfield>
+    <marc:datafield tag="010" ind1=" " ind2=" ">
+      <marc:subfield code="a">   57023989 </marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="035" ind1=" " ind2=" ">
+      <marc:subfield code="a">(OCoLC)01689189</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="040" ind1=" " ind2=" ">
+      <marc:subfield code="a">DLC</marc:subfield>
+      <marc:subfield code="c">MdBJ</marc:subfield>
+      <marc:subfield code="d">CU-S</marc:subfield>
+      <marc:subfield code="d">DLC</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="050" ind1="0" ind2="0">
+      <marc:subfield code="a">PZ3.A93</marc:subfield>
+      <marc:subfield code="b">Se48</marc:subfield>
+      <marc:subfield code="a">PR4034.S4</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="100" ind1="1" ind2=" ">
+      <marc:subfield code="a">Austen, Jane,</marc:subfield>
+      <marc:subfield code="d">1775-1817.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="245" ind1="1" ind2="0">
+      <marc:subfield code="a">Sense and sensibility.</marc:subfield>
+      <marc:subfield code="c">With a new introd. by Stella Gibbons and illus. by Helen Sewell.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="a">New York,</marc:subfield>
+      <marc:subfield code="b">Printed at the Spiral Press for the members of the Limited Editions Club,</marc:subfield>
+      <marc:subfield code="c">1957.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">xv, 333 p.</marc:subfield>
+      <marc:subfield code="b">illus.</marc:subfield>
+      <marc:subfield code="c">26 cm.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a">Limited ed. of 1500 copies, signed by the illustrator.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a">Printed by Joseph Blumenthal.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a">Issued in a slipcase.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Inheritance and succession</marc:subfield>
+      <marc:subfield code="v">Fiction.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Social classes</marc:subfield>
+      <marc:subfield code="v">Fiction.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Young women</marc:subfield>
+      <marc:subfield code="x">Fiction.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Sisters</marc:subfield>
+      <marc:subfield code="x">Fiction.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="651" ind1=" " ind2="0">
+      <marc:subfield code="a">England</marc:subfield>
+      <marc:subfield code="x">Fiction.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="7">
+      <marc:subfield code="a">Domestic fiction.</marc:subfield>
+      <marc:subfield code="2">lcsh</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="7">
+      <marc:subfield code="a">Love stories.</marc:subfield>
+      <marc:subfield code="2">gsafd</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Gibbons, Stella,</marc:subfield>
+      <marc:subfield code="d">1902-1989.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Sewell, Helen,</marc:subfield>
+      <marc:subfield code="d">1896-</marc:subfield>
+      <marc:subfield code="e">ill.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Blumenthal, Joseph,</marc:subfield>
+      <marc:subfield code="d">1897-1990,</marc:subfield>
+      <marc:subfield code="e">printer.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="710" ind1="2" ind2=" ">
+      <marc:subfield code="a">Limited Editions Club,</marc:subfield>
+      <marc:subfield code="e">publisher.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="710" ind1="2" ind2=" ">
+      <marc:subfield code="a">Spiral Press,</marc:subfield>
+      <marc:subfield code="e">printer.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="951" ind1=" " ind2=" ">
+      <marc:subfield code="a">DLC</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="979" ind1=" " ind2=" ">
+      <marc:subfield code="a">AAM</marc:subfield>
+      <marc:subfield code="b">245c Introduction, etc.</marc:subfield>
+      <marc:subfield code="c">112</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record xmlns:marc="http://www.loc.gov/MARC21/slim">
+    <marc:leader>04351cgm a2200865Ia 4500</marc:leader>
+    <marc:controlfield tag="001">442939</marc:controlfield>
+    <marc:controlfield tag="005">20180323082757.0</marc:controlfield>
+    <marc:controlfield tag="007">vd cvaizq </marc:controlfield>
+    <marc:controlfield tag="008">040826s2004    xxu265            vleng d</marc:controlfield>
+    <marc:datafield tag="020" ind1=" " ind2=" ">
+      <marc:subfield code="a">079077027X</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="024" ind1="1" ind2=" ">
+      <marc:subfield code="a">794051168726</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="028" ind1="4" ind2="1">
+      <marc:subfield code="a">E1687</marc:subfield>
+      <marc:subfield code="b">Warner Home Video</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="035" ind1=" " ind2=" ">
+      <marc:subfield code="a">(OCoLC)ocm56360840</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="035" ind1=" " ind2=" ">
+      <marc:subfield code="a">(OCoLC)56360840</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="040" ind1=" " ind2=" ">
+      <marc:subfield code="a">CO2</marc:subfield>
+      <marc:subfield code="c">CO2</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="049" ind1=" " ind2=" ">
+      <marc:subfield code="a">IP6A</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="049" ind1=" " ind2=" ">
+      <marc:subfield code="a">MR0A</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="099" ind1=" " ind2=" ">
+      <marc:subfield code="a">DVD</marc:subfield>
+      <marc:subfield code="a">PRI</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="245" ind1="0" ind2="0">
+      <marc:subfield code="a">Pride and prejudice</marc:subfield>
+      <marc:subfield code="h">[videorecording] :</marc:subfield>
+      <marc:subfield code="b">or, First impressions /</marc:subfield>
+      <marc:subfield code="c">a BBC TV production in association with Australian Broadcasting Commission ; BBC Worldwide Americas, Inc. ; produced by Jonathan Powell ; dramatized by Fay Weldon ; directed by Cyril Coke.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="246" ind1="3" ind2="0">
+      <marc:subfield code="a">First impressions</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="246" ind1="1" ind2=" ">
+      <marc:subfield code="i">Title appears on contianer as:</marc:subfield>
+      <marc:subfield code="a">Jane Austen's Pride and Prejudice</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="a">[United States] :</marc:subfield>
+      <marc:subfield code="b">BBC Video ;</marc:subfield>
+      <marc:subfield code="a">Burbank, CA :</marc:subfield>
+      <marc:subfield code="b">Warner Home Video,</marc:subfield>
+      <marc:subfield code="c">[2004]</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">1 videodisc (265 min.) :</marc:subfield>
+      <marc:subfield code="b">sd., col. ;</marc:subfield>
+      <marc:subfield code="c">4 3/4 in.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="490" ind1="1" ind2=" ">
+      <marc:subfield code="a">BBC video classics</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a">Originally broadcast on television in 1985.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a">Side A contains episodes 1-3 -- Side B contains episodes 4-5.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a">Based on the novel Pride and Prejudice by Jane Austen.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="508" ind1=" " ind2=" ">
+      <marc:subfield code="a">Film editor, Chris Wimble ; music composed by Wilfred Josephs ; conducted by Marcus Dods ; film cameraman, Paul Wheeler ; film sound recorder, Malcolm Webberley.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="511" ind1="1" ind2=" ">
+      <marc:subfield code="a">Elizabeth Garvie, David Rintoul, Moray Watson, Priscilla Morgan, Sabina Franklyn, Natalie Ogle, Tessa Peake-Jones, Clare Higgins, Osmond Bulock, Marsha Fitzalan.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="520" ind1=" " ind2=" ">
+      <marc:subfield code="a">The story of the lively, precocious and very eligible Bennet girls captures all the nuances of 19th century life among the English gentry, a society obsessed with profitable marriage contracts.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="538" ind1=" " ind2=" ">
+      <marc:subfield code="a">DVD; NTSC; region 1; Dolby Digital; full screen (4:3) presentation.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="546" ind1=" " ind2=" ">
+      <marc:subfield code="a">Closed-captioned.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="600" ind1="1" ind2="0">
+      <marc:subfield code="a">Bennet, Elizabeth</marc:subfield>
+      <marc:subfield code="c">(Fictitious character)</marc:subfield>
+      <marc:subfield code="v">Drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="600" ind1="1" ind2="0">
+      <marc:subfield code="a">Darcy, Fitzwilliam</marc:subfield>
+      <marc:subfield code="c">(Fictitious character)</marc:subfield>
+      <marc:subfield code="v">Drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Young women</marc:subfield>
+      <marc:subfield code="z">England</marc:subfield>
+      <marc:subfield code="v">Drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Sisters</marc:subfield>
+      <marc:subfield code="z">England</marc:subfield>
+      <marc:subfield code="v">Drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Dependents</marc:subfield>
+      <marc:subfield code="z">England</marc:subfield>
+      <marc:subfield code="v">Drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Social classes</marc:subfield>
+      <marc:subfield code="z">England</marc:subfield>
+      <marc:subfield code="v">Drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Man-woman relationships</marc:subfield>
+      <marc:subfield code="z">England</marc:subfield>
+      <marc:subfield code="v">Drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Courtship</marc:subfield>
+      <marc:subfield code="z">England</marc:subfield>
+      <marc:subfield code="v">Drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Marriage customs and rites</marc:subfield>
+      <marc:subfield code="z">England</marc:subfield>
+      <marc:subfield code="v">Drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="651" ind1=" " ind2="0">
+      <marc:subfield code="a">England</marc:subfield>
+      <marc:subfield code="x">Social life and customs</marc:subfield>
+      <marc:subfield code="y">19th century</marc:subfield>
+      <marc:subfield code="v">Drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="7">
+      <marc:subfield code="a">Melodramas (Motion pictures)</marc:subfield>
+      <marc:subfield code="2">lcgft</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="7">
+      <marc:subfield code="a">Romance television programs.</marc:subfield>
+      <marc:subfield code="2">lcgft</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="7">
+      <marc:subfield code="a">Television adaptations.</marc:subfield>
+      <marc:subfield code="2">lcgft</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="7">
+      <marc:subfield code="a">Television mini-series.</marc:subfield>
+      <marc:subfield code="2">lcgft</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="7">
+      <marc:subfield code="a">Feature films.</marc:subfield>
+      <marc:subfield code="2">lcgft</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="7">
+      <marc:subfield code="a">Fiction films.</marc:subfield>
+      <marc:subfield code="2">lcgft</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="7">
+      <marc:subfield code="a">Film adaptations.</marc:subfield>
+      <marc:subfield code="2">lcgft</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="7">
+      <marc:subfield code="a">Video recordings for the hearing impaired.</marc:subfield>
+      <marc:subfield code="2">lcgft</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="0">
+      <marc:subfield code="a">DVDs.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Powell, Jonathan.</marc:subfield>
+      <marc:subfield code="4">pro.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Weldon, Fay.</marc:subfield>
+      <marc:subfield code="4">aus.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Coke, Cyril.</marc:subfield>
+      <marc:subfield code="4">drt.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Garvie, Elizabeth.</marc:subfield>
+      <marc:subfield code="4">act.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Rintoul, David.</marc:subfield>
+      <marc:subfield code="4">act.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Watson, Moray,</marc:subfield>
+      <marc:subfield code="d">1928-</marc:subfield>
+      <marc:subfield code="4">act.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Morgan, Priscilla.</marc:subfield>
+      <marc:subfield code="c">act.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Peake-Jones, Tessa.</marc:subfield>
+      <marc:subfield code="4">act.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Higgins, Clare.</marc:subfield>
+      <marc:subfield code="4">act.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2="2">
+      <marc:subfield code="a">Austen, Jane,</marc:subfield>
+      <marc:subfield code="d">1775-1817.</marc:subfield>
+      <marc:subfield code="t">Pride and prejudice.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="710" ind1="2" ind2=" ">
+      <marc:subfield code="a">BBC Video (Firm)</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="710" ind1="2" ind2=" ">
+      <marc:subfield code="a">Australian Broadcasting Commission.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="710" ind1="2" ind2=" ">
+      <marc:subfield code="a">Warner Home Video (Firm)</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="830" ind1=" " ind2="0">
+      <marc:subfield code="a">BBC classics.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="852" ind1=" " ind2=" ">
+      <marc:subfield code="a">99</marc:subfield>
+      <marc:subfield code="b">245</marc:subfield>
+      <marc:subfield code="c">250</marc:subfield>
+      <marc:subfield code="d">342</marc:subfield>
+      <marc:subfield code="e">1</marc:subfield>
+      <marc:subfield code="i">Pri</marc:subfield>
+      <marc:subfield code="m">"G"</marc:subfield>
+      <marc:subfield code="o">99</marc:subfield>
+      <marc:subfield code="p">30183047965676</marc:subfield>
+      <marc:subfield code="r">23</marc:subfield>
+      <marc:subfield code="u">23</marc:subfield>
+      <marc:subfield code="w">23</marc:subfield>
+      <marc:subfield code="x">B372</marc:subfield>
+      <marc:subfield code="y">2</marc:subfield>
+      <marc:subfield code="0">24.95</marc:subfield>
+      <marc:subfield code="j">3</marc:subfield>
+      <marc:subfield code="4">1</marc:subfield>
+      <marc:subfield code="5">1</marc:subfield>
+      <marc:subfield code="7">1</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="852" ind1=" " ind2=" ">
+      <marc:subfield code="a">21</marc:subfield>
+      <marc:subfield code="b">239</marc:subfield>
+      <marc:subfield code="d">342</marc:subfield>
+      <marc:subfield code="e">1</marc:subfield>
+      <marc:subfield code="i">PRI</marc:subfield>
+      <marc:subfield code="o">21</marc:subfield>
+      <marc:subfield code="p">30183048984593</marc:subfield>
+      <marc:subfield code="r">23</marc:subfield>
+      <marc:subfield code="u">23</marc:subfield>
+      <marc:subfield code="w">23</marc:subfield>
+      <marc:subfield code="y">2</marc:subfield>
+      <marc:subfield code="1">DONATION</marc:subfield>
+      <marc:subfield code="j">3</marc:subfield>
+      <marc:subfield code="4">1</marc:subfield>
+      <marc:subfield code="5">1</marc:subfield>
+      <marc:subfield code="7">0</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="852" ind1=" " ind2=" ">
+      <marc:subfield code="a">105</marc:subfield>
+      <marc:subfield code="b">693</marc:subfield>
+      <marc:subfield code="e">1</marc:subfield>
+      <marc:subfield code="i">PRI</marc:subfield>
+      <marc:subfield code="k">DVD [PG13]</marc:subfield>
+      <marc:subfield code="o">105</marc:subfield>
+      <marc:subfield code="p">30183033246347</marc:subfield>
+      <marc:subfield code="r">23</marc:subfield>
+      <marc:subfield code="u">23</marc:subfield>
+      <marc:subfield code="w">23</marc:subfield>
+      <marc:subfield code="y">3</marc:subfield>
+      <marc:subfield code="0">20.00</marc:subfield>
+      <marc:subfield code="j">3</marc:subfield>
+      <marc:subfield code="4">1</marc:subfield>
+      <marc:subfield code="5">1</marc:subfield>
+      <marc:subfield code="7">0</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="852" ind1=" " ind2=" ">
+      <marc:subfield code="a">687</marc:subfield>
+      <marc:subfield code="b">239</marc:subfield>
+      <marc:subfield code="d">342</marc:subfield>
+      <marc:subfield code="e">1</marc:subfield>
+      <marc:subfield code="i">PRI</marc:subfield>
+      <marc:subfield code="k">DVD</marc:subfield>
+      <marc:subfield code="o">687</marc:subfield>
+      <marc:subfield code="p">33038000726118</marc:subfield>
+      <marc:subfield code="r">23</marc:subfield>
+      <marc:subfield code="u">23</marc:subfield>
+      <marc:subfield code="w">23</marc:subfield>
+      <marc:subfield code="y">1</marc:subfield>
+      <marc:subfield code="0">20.00</marc:subfield>
+      <marc:subfield code="j">3</marc:subfield>
+      <marc:subfield code="4">1</marc:subfield>
+      <marc:subfield code="5">1</marc:subfield>
+      <marc:subfield code="7">1</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="852" ind1=" " ind2=" ">
+      <marc:subfield code="a">659</marc:subfield>
+      <marc:subfield code="b">41</marc:subfield>
+      <marc:subfield code="d">342</marc:subfield>
+      <marc:subfield code="e">1</marc:subfield>
+      <marc:subfield code="h">DVD</marc:subfield>
+      <marc:subfield code="i">FIC</marc:subfield>
+      <marc:subfield code="k">A</marc:subfield>
+      <marc:subfield code="m">JAN</marc:subfield>
+      <marc:subfield code="o">659</marc:subfield>
+      <marc:subfield code="p">31787000088034</marc:subfield>
+      <marc:subfield code="r">23</marc:subfield>
+      <marc:subfield code="u">23</marc:subfield>
+      <marc:subfield code="w">23</marc:subfield>
+      <marc:subfield code="y">3</marc:subfield>
+      <marc:subfield code="0">14.98</marc:subfield>
+      <marc:subfield code="1">AMAZON</marc:subfield>
+      <marc:subfield code="j">3</marc:subfield>
+      <marc:subfield code="4">1</marc:subfield>
+      <marc:subfield code="5">1</marc:subfield>
+      <marc:subfield code="7">1</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="852" ind1=" " ind2=" ">
+      <marc:subfield code="a">274</marc:subfield>
+      <marc:subfield code="b">41</marc:subfield>
+      <marc:subfield code="e">1</marc:subfield>
+      <marc:subfield code="i">PRI</marc:subfield>
+      <marc:subfield code="k">DVD</marc:subfield>
+      <marc:subfield code="o">274</marc:subfield>
+      <marc:subfield code="p">0004400280782</marc:subfield>
+      <marc:subfield code="r">23</marc:subfield>
+      <marc:subfield code="u">23</marc:subfield>
+      <marc:subfield code="w">23</marc:subfield>
+      <marc:subfield code="y">2</marc:subfield>
+      <marc:subfield code="j">3</marc:subfield>
+      <marc:subfield code="4">1</marc:subfield>
+      <marc:subfield code="5">1</marc:subfield>
+      <marc:subfield code="7">0</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="852" ind1=" " ind2=" ">
+      <marc:subfield code="a">236</marc:subfield>
+      <marc:subfield code="b">245</marc:subfield>
+      <marc:subfield code="e">1</marc:subfield>
+      <marc:subfield code="i">(AUSTEN)</marc:subfield>
+      <marc:subfield code="k">DVD</marc:subfield>
+      <marc:subfield code="m">PRIDE</marc:subfield>
+      <marc:subfield code="o">236</marc:subfield>
+      <marc:subfield code="p">0004200629212</marc:subfield>
+      <marc:subfield code="r">23</marc:subfield>
+      <marc:subfield code="u">23</marc:subfield>
+      <marc:subfield code="w">23</marc:subfield>
+      <marc:subfield code="y">2</marc:subfield>
+      <marc:subfield code="0">15.99</marc:subfield>
+      <marc:subfield code="j">3</marc:subfield>
+      <marc:subfield code="4">1</marc:subfield>
+      <marc:subfield code="5">1</marc:subfield>
+      <marc:subfield code="7">0</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="852" ind1=" " ind2=" ">
+      <marc:subfield code="a">228</marc:subfield>
+      <marc:subfield code="b">245</marc:subfield>
+      <marc:subfield code="c">28</marc:subfield>
+      <marc:subfield code="e">1</marc:subfield>
+      <marc:subfield code="i">PRIDE</marc:subfield>
+      <marc:subfield code="k">DVD</marc:subfield>
+      <marc:subfield code="m">211444</marc:subfield>
+      <marc:subfield code="o">228</marc:subfield>
+      <marc:subfield code="p">0000802621813</marc:subfield>
+      <marc:subfield code="r">23</marc:subfield>
+      <marc:subfield code="u">23</marc:subfield>
+      <marc:subfield code="w">23</marc:subfield>
+      <marc:subfield code="y">2</marc:subfield>
+      <marc:subfield code="0">14.98</marc:subfield>
+      <marc:subfield code="j">3</marc:subfield>
+      <marc:subfield code="4">1</marc:subfield>
+      <marc:subfield code="5">1</marc:subfield>
+      <marc:subfield code="7">0</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="852" ind1=" " ind2=" ">
+      <marc:subfield code="a">220</marc:subfield>
+      <marc:subfield code="b">41</marc:subfield>
+      <marc:subfield code="e">1</marc:subfield>
+      <marc:subfield code="i">PRI</marc:subfield>
+      <marc:subfield code="k">DVD</marc:subfield>
+      <marc:subfield code="o">220</marc:subfield>
+      <marc:subfield code="p">0002601225317</marc:subfield>
+      <marc:subfield code="r">23</marc:subfield>
+      <marc:subfield code="u">23</marc:subfield>
+      <marc:subfield code="w">23</marc:subfield>
+      <marc:subfield code="y">2</marc:subfield>
+      <marc:subfield code="0">20.00</marc:subfield>
+      <marc:subfield code="j">3</marc:subfield>
+      <marc:subfield code="4">1</marc:subfield>
+      <marc:subfield code="5">1</marc:subfield>
+      <marc:subfield code="7">0</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="979" ind1=" " ind2=" ">
+      <marc:subfield code="a">AAM</marc:subfield>
+      <marc:subfield code="b">65Xa Monologues with music, etc.</marc:subfield>
+      <marc:subfield code="c">115</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record xmlns:marc="http://www.loc.gov/MARC21/slim">
+    <marc:leader>02871ngm a22005177a 4500</marc:leader>
+    <marc:controlfield tag="001">13319519</marc:controlfield>
+    <marc:controlfield tag="005">20100621105819.0</marc:controlfield>
+    <marc:controlfield tag="008">100531s2008    xx 179            vleng d</marc:controlfield>
+    <marc:datafield tag="040" ind1=" " ind2=" ">
+      <marc:subfield code="a">ITJCU</marc:subfield>
+      <marc:subfield code="c">ITJCU</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="245" ind1="0" ind2="0">
+      <marc:subfield code="a">Lost in Austen</marc:subfield>
+      <marc:subfield code="h">[videorecording] /</marc:subfield>
+      <marc:subfield code="c">a Mammoth Screen production for ITV1 supported by the Screen Yorkshire Production Fund ; produced by, Kate McKerrell ; written by Guy Andrews ; directed by Dan Zeff.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="a">[S.l.] :</marc:subfield>
+      <marc:subfield code="b">Mammoth Screen production ;</marc:subfield>
+      <marc:subfield code="b">Granada Ventures Limited (ITV) [distributor],</marc:subfield>
+      <marc:subfield code="c">c2008.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">2 videodiscs (ca. 179 min.) :</marc:subfield>
+      <marc:subfield code="b">sd., col. ;</marc:subfield>
+      <marc:subfield code="c">4 3/4 in.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a">Based on the novel "Pride and prejudice" by Jane Austen.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a">Title from container.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a">Special features: "Lost in Austen: behind the scenes:" featurette documenting the reinvention of Jane Austen's 'Pride and prejudice' and the making of the popular TV series (43 min.); cast &amp; crew interviews; behind-the-scenes footage; trailer.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="508" ind1=" " ind2=" ">
+      <marc:subfield code="a">Composer, Christian Henson ; additional music, Simon Whiteside ;</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="511" ind1="1" ind2=" ">
+      <marc:subfield code="a">Jemima Rooper, Alex Kingston, Elliot Cowan, Hugh Bonneville, Gemma Arterton, Lindsay Duncan.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="520" ind1=" " ind2=" ">
+      <marc:subfield code="a">Amanda Price gets propelled into the scheming 19th century world of Pride and Prejudice while the book's Elizabeth Bennet is hurled into hers. As the plot unfolds, Amanda triggers new romantic twists and turns as she tries to help the Bennet sisters nab husbands and even manages to captivate the tantalizing Mr. Darcy. But what about Elizabeth, and what will become of one of the world's greatest love stories?</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="521" ind1=" " ind2=" ">
+      <marc:subfield code="a">Not rated.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="534" ind1=" " ind2=" ">
+      <marc:subfield code="p">Originally released as a television mini-series in:</marc:subfield>
+      <marc:subfield code="c">2008.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="538" ind1=" " ind2=" ">
+      <marc:subfield code="a">DVD, region 2, aspect ratio: 16:9, Dolby Digital stereo., NTSC.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="600" ind1="1" ind2="0">
+      <marc:subfield code="a">Austen, Jane,</marc:subfield>
+      <marc:subfield code="d">1775-1817.</marc:subfield>
+      <marc:subfield code="t">Pride and prejudice</marc:subfield>
+      <marc:subfield code="v">Drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Women heroes</marc:subfield>
+      <marc:subfield code="z">England</marc:subfield>
+      <marc:subfield code="v">Drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Man-woman relationships</marc:subfield>
+      <marc:subfield code="z">England</marc:subfield>
+      <marc:subfield code="v">Drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Bennet, Elizabeth (Fictitious character)</marc:subfield>
+      <marc:subfield code="v">Drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="0">
+      <marc:subfield code="a">Fantasy television programs.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="0">
+      <marc:subfield code="a">Action and adventure television programs.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="0">
+      <marc:subfield code="a">Romantic comedy television programs.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="0">
+      <marc:subfield code="a">Television mini-series.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="0">
+      <marc:subfield code="a">Fiction television programs.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="0">
+      <marc:subfield code="a">Video recordings for the hearing impaired.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">McKerrell, Kate.</marc:subfield>
+      <marc:subfield code="4">pro</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Andrews, Guy.</marc:subfield>
+      <marc:subfield code="4">aus</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Zeff, Dan.</marc:subfield>
+      <marc:subfield code="4">drt</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Rooper, Jemima.</marc:subfield>
+      <marc:subfield code="4">act</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Kingston, Alex.</marc:subfield>
+      <marc:subfield code="4">act</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Cowan, Elliot,</marc:subfield>
+      <marc:subfield code="d">1976-</marc:subfield>
+      <marc:subfield code="4">act</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Bonneville, Hugh.</marc:subfield>
+      <marc:subfield code="4">act</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Arterton, Gemma.</marc:subfield>
+      <marc:subfield code="4">act</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Duncan, Lindsay.</marc:subfield>
+      <marc:subfield code="4">act</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Austen, Jane,</marc:subfield>
+      <marc:subfield code="d">1775-1817.</marc:subfield>
+      <marc:subfield code="t">Pride and prejudice.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Henson, Christian,</marc:subfield>
+      <marc:subfield code="d">1971-</marc:subfield>
+      <marc:subfield code="4">cmp</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Whiteside, Simon.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="710" ind1="2" ind2=" ">
+      <marc:subfield code="a">Mammoth Screen (Firm)</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="710" ind1="2" ind2=" ">
+      <marc:subfield code="a">ITV (Firm)</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="979" ind1=" " ind2=" ">
+      <marc:subfield code="a">AAM</marc:subfield>
+      <marc:subfield code="b">65Xa Monologues with music, etc.</marc:subfield>
+      <marc:subfield code="c">115</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>04211cam a2200793 i 4500</marc:leader>
+    <marc:controlfield tag="001">99161969555001452</marc:controlfield>
+    <marc:controlfield tag="005">20231005004200.0</marc:controlfield>
+    <marc:controlfield tag="008">151030s2016    ilu      b    001 0 eng c</marc:controlfield>
+    <marc:datafield tag="010" ind1=" " ind2=" ">
+      <marc:subfield code="a">  2015042766</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="019" ind1=" " ind2=" ">
+      <marc:subfield code="a">957649731</marc:subfield>
+      <marc:subfield code="a">1102151164</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="020" ind1=" " ind2=" ">
+      <marc:subfield code="a">9780226140131</marc:subfield>
+      <marc:subfield code="q">(cloth ;</marc:subfield>
+      <marc:subfield code="q">alk. paper)</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="020" ind1=" " ind2=" ">
+      <marc:subfield code="a">022614013X</marc:subfield>
+      <marc:subfield code="q">(cloth ;</marc:subfield>
+      <marc:subfield code="q">alk. paper)</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="020" ind1=" " ind2=" ">
+      <marc:subfield code="z">9780226140278</marc:subfield>
+      <marc:subfield code="q">(e-book)</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="020" ind1=" " ind2=" ">
+      <marc:subfield code="a">022614027X</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="020" ind1=" " ind2=" ">
+      <marc:subfield code="a">9780226140278</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="020" ind1=" " ind2=" ">
+      <marc:subfield code="a">9780226528748</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="020" ind1=" " ind2=" ">
+      <marc:subfield code="a">022652874X</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="035" ind1=" " ind2=" ">
+      <marc:subfield code="a">12823560</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="035" ind1=" " ind2=" ">
+      <marc:subfield code="a">(OCoLC)927619699</marc:subfield>
+      <marc:subfield code="z">(OCoLC)957649731</marc:subfield>
+      <marc:subfield code="z">(OCoLC)1102151164</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="035" ind1=" " ind2=" ">
+      <marc:subfield code="a">(OCoLC)ocn927619699</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="035" ind1=" " ind2=" ">
+      <marc:subfield code="a">(EXLNZ-01ALLIANCE_NETWORK)99322671198601451</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="035" ind1=" " ind2=" ">
+      <marc:subfield code="a">(01ALLIANCE_UW)99161969555001452</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="037" ind1=" " ind2=" ">
+      <marc:subfield code="b">Univ of Chicago Pr, Attn: John Kessler 11030 S Langley Ave, Chicago, IL, USA, 60628, (773)5681550</marc:subfield>
+      <marc:subfield code="n">SAN 202-5280</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="040" ind1=" " ind2=" ">
+      <marc:subfield code="a">ICU/DLC</marc:subfield>
+      <marc:subfield code="b">eng</marc:subfield>
+      <marc:subfield code="e">rda</marc:subfield>
+      <marc:subfield code="c">CGU</marc:subfield>
+      <marc:subfield code="d">DLC</marc:subfield>
+      <marc:subfield code="d">OCLCF</marc:subfield>
+      <marc:subfield code="d">BDX</marc:subfield>
+      <marc:subfield code="d">BTCTA</marc:subfield>
+      <marc:subfield code="d">YDXCP</marc:subfield>
+      <marc:subfield code="d">GK8</marc:subfield>
+      <marc:subfield code="d">FM0</marc:subfield>
+      <marc:subfield code="d">ON8</marc:subfield>
+      <marc:subfield code="d">IGA</marc:subfield>
+      <marc:subfield code="d">ILC</marc:subfield>
+      <marc:subfield code="d">BKL</marc:subfield>
+      <marc:subfield code="d">VTS</marc:subfield>
+      <marc:subfield code="d">RB0</marc:subfield>
+      <marc:subfield code="d">OCLCO</marc:subfield>
+      <marc:subfield code="d">XFG</marc:subfield>
+      <marc:subfield code="d">SFR</marc:subfield>
+      <marc:subfield code="d">BYV</marc:subfield>
+      <marc:subfield code="d">OCLCQ</marc:subfield>
+      <marc:subfield code="d">QS5</marc:subfield>
+      <marc:subfield code="d">OCLCQ</marc:subfield>
+      <marc:subfield code="d">GO4</marc:subfield>
+      <marc:subfield code="d">OCL</marc:subfield>
+      <marc:subfield code="d">UTP</marc:subfield>
+      <marc:subfield code="d">OCLCO</marc:subfield>
+      <marc:subfield code="d">NZAUC</marc:subfield>
+      <marc:subfield code="d">OCLCO</marc:subfield>
+      <marc:subfield code="d">JZ6</marc:subfield>
+      <marc:subfield code="d">ZQP</marc:subfield>
+      <marc:subfield code="d">OCL</marc:subfield>
+      <marc:subfield code="d">OCLCQ</marc:subfield>
+      <marc:subfield code="d">OCLCO</marc:subfield>
+      <marc:subfield code="d">CFU</marc:subfield>
+      <marc:subfield code="d">OCLCO</marc:subfield>
+      <marc:subfield code="d">EUW</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="042" ind1=" " ind2=" ">
+      <marc:subfield code="a">pcc</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="049" ind1=" " ind2=" ">
+      <marc:subfield code="a">MAIN</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="050" ind1="0" ind2="0">
+      <marc:subfield code="a">HV5072</marc:subfield>
+      <marc:subfield code="b">.S9145 2016</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="082" ind1="0" ind2="0">
+      <marc:subfield code="a">362.292</marc:subfield>
+      <marc:subfield code="2">23</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="084" ind1=" " ind2=" ">
+      <marc:subfield code="a">SEL006000</marc:subfield>
+      <marc:subfield code="a">SEL029000</marc:subfield>
+      <marc:subfield code="a">LCO000000</marc:subfield>
+      <marc:subfield code="2">bisacsh</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="100" ind1="1" ind2=" ">
+      <marc:subfield code="a">Steinberg, Neil,</marc:subfield>
+      <marc:subfield code="e">compiler.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="245" ind1="1" ind2="0">
+      <marc:subfield code="a">Out of the wreck I rise :</marc:subfield>
+      <marc:subfield code="b">a literary companion to recovery /</marc:subfield>
+      <marc:subfield code="c">Neil Steinberg and Sara Bader.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="246" ind1="3" ind2=" ">
+      <marc:subfield code="a">Literary companion to recovery</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="264" ind1=" " ind2="1">
+      <marc:subfield code="a">Chicago ;</marc:subfield>
+      <marc:subfield code="a">London :</marc:subfield>
+      <marc:subfield code="b">The University of Chicago Press,</marc:subfield>
+      <marc:subfield code="c">2016.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">xiv, 281 pages ;</marc:subfield>
+      <marc:subfield code="c">22 cm</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336" ind1=" " ind2=" ">
+      <marc:subfield code="a">text</marc:subfield>
+      <marc:subfield code="b">txt</marc:subfield>
+      <marc:subfield code="2">rdacontent</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="337" ind1=" " ind2=" ">
+      <marc:subfield code="a">unmediated</marc:subfield>
+      <marc:subfield code="b">n</marc:subfield>
+      <marc:subfield code="2">rdamedia</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="338" ind1=" " ind2=" ">
+      <marc:subfield code="a">volume</marc:subfield>
+      <marc:subfield code="b">nc</marc:subfield>
+      <marc:subfield code="2">rdacarrier</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="520" ind1=" " ind2=" ">
+      <marc:subfield code="a">Addiction is easy to fall into and hard to escape. It destroys the lives of individuals, and has a devastating cost to society. Steinberg and Bader harness the power of literature, poetry, and creativity to illuminate what alcoholism and addiction are all about. Each chapter begins with advice and commentary followed by a wealth of quotes to inspire and heal. The result is a mosaic of observations and encouragement that draws on writers and artists spanning thousands of years.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="504" ind1=" " ind2=" ">
+      <marc:subfield code="a">Includes bibliographical references and index.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="505" ind1="0" ind2="0">
+      <marc:subfield code="t">Introduction: Why put it off? --</marc:subfield>
+      <marc:subfield code="t">The best of life: the good times sour --</marc:subfield>
+      <marc:subfield code="t">I don't want to do that: the end of the party --</marc:subfield>
+      <marc:subfield code="t">The direction you least trust: making the leap --</marc:subfield>
+      <marc:subfield code="t">Nothing to lose: early recovery --</marc:subfield>
+      <marc:subfield code="t">Wait, for now: the importance of time --</marc:subfield>
+      <marc:subfield code="t">Somewhere to go: Alcoholics Anonymous --</marc:subfield>
+      <marc:subfield code="t">Shakespeare's child: family and friends --</marc:subfield>
+      <marc:subfield code="t">Upon breach of my late vows: relapse --</marc:subfield>
+      <marc:subfield code="t">Gravy: on life anew.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Alcoholism</marc:subfield>
+      <marc:subfield code="v">Quotations, maxims, etc.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Alcoholism</marc:subfield>
+      <marc:subfield code="x">Psychological aspects</marc:subfield>
+      <marc:subfield code="v">Quotations, maxims, etc.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Alcoholism</marc:subfield>
+      <marc:subfield code="x">Treatment</marc:subfield>
+      <marc:subfield code="v">Quotations, maxims, etc.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Alcoholism</marc:subfield>
+      <marc:subfield code="v">Miscellanea.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1="1" ind2="2">
+      <marc:subfield code="a">Mental Health Recovery.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1="2" ind2="2">
+      <marc:subfield code="a">Alcoholism</marc:subfield>
+      <marc:subfield code="x">rehabilitation.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1="2" ind2="2">
+      <marc:subfield code="a">Psychiatry in Literature.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="6">
+      <marc:subfield code="a">Alcoolisme</marc:subfield>
+      <marc:subfield code="v">Citations, maximes, etc.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="6">
+      <marc:subfield code="a">Alcoolisme</marc:subfield>
+      <marc:subfield code="x">Aspect psychologique</marc:subfield>
+      <marc:subfield code="v">Citations, maximes, etc.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="6">
+      <marc:subfield code="a">Alcoolisme</marc:subfield>
+      <marc:subfield code="x">Traitement</marc:subfield>
+      <marc:subfield code="v">Citations, maximes, etc.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="6">
+      <marc:subfield code="a">Alcoolisme</marc:subfield>
+      <marc:subfield code="v">Miscellanées.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="7">
+      <marc:subfield code="a">LITERARY COLLECTIONS.</marc:subfield>
+      <marc:subfield code="2">bisacsh</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="7">
+      <marc:subfield code="a">SELF-HELP</marc:subfield>
+      <marc:subfield code="x">Substance Abuse &amp; Addictions</marc:subfield>
+      <marc:subfield code="x">Alcohol.</marc:subfield>
+      <marc:subfield code="2">bisacsh</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="7">
+      <marc:subfield code="a">SELF-HELP</marc:subfield>
+      <marc:subfield code="x">Twelve-Step Programs.</marc:subfield>
+      <marc:subfield code="2">bisacsh</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="7">
+      <marc:subfield code="a">Alcoholism.</marc:subfield>
+      <marc:subfield code="2">fast</marc:subfield>
+      <marc:subfield code="0">(OCoLC)fst00804461</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="7">
+      <marc:subfield code="a">Alcoholism</marc:subfield>
+      <marc:subfield code="x">Psychological aspects.</marc:subfield>
+      <marc:subfield code="2">fast</marc:subfield>
+      <marc:subfield code="0">(OCoLC)fst00804524</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="7">
+      <marc:subfield code="a">Alcoholism</marc:subfield>
+      <marc:subfield code="x">Treatment.</marc:subfield>
+      <marc:subfield code="2">fast</marc:subfield>
+      <marc:subfield code="0">(OCoLC)fst00804565</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="654" ind1=" " ind2=" ">
+      <marc:subfield code="a">SELF-HELP / Substance Abuse &amp; Addictions / Alcohol^SELF-HELP / Substance Abuse &amp; Addictions / General^SELF-HELP / Twelve-Step Programs.</marc:subfield>
+      <marc:subfield code="2">BISAC</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="7">
+      <marc:subfield code="a">miscellanies.</marc:subfield>
+      <marc:subfield code="2">aat</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="7">
+      <marc:subfield code="a">quotations (texts)</marc:subfield>
+      <marc:subfield code="2">aat</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="7">
+      <marc:subfield code="a">Trivia and miscellanea.</marc:subfield>
+      <marc:subfield code="2">fast</marc:subfield>
+      <marc:subfield code="0">(OCoLC)fst01921748</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="7">
+      <marc:subfield code="a">Quotations.</marc:subfield>
+      <marc:subfield code="2">fast</marc:subfield>
+      <marc:subfield code="0">(OCoLC)fst01423792</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="7">
+      <marc:subfield code="a">Trivia and miscellanea.</marc:subfield>
+      <marc:subfield code="2">lcgft</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="7">
+      <marc:subfield code="a">Quotations.</marc:subfield>
+      <marc:subfield code="2">lcgft</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="7">
+      <marc:subfield code="a">Miscellanées.</marc:subfield>
+      <marc:subfield code="2">rvmgf</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="7">
+      <marc:subfield code="a">Citations.</marc:subfield>
+      <marc:subfield code="2">rvmgf</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Bader, Sara,</marc:subfield>
+      <marc:subfield code="e">compiler.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="973" ind1=" " ind2=" ">
+      <marc:subfield code="a">pbooks</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="994" ind1=" " ind2=" ">
+      <marc:subfield code="a">92</marc:subfield>
+      <marc:subfield code="b">OCACL</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="979" ind1=" " ind2=" ">
+      <marc:subfield code="a">AAM</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>05025cam a2201033 i 4500</marc:leader>
+    <marc:controlfield tag="001">99149469340001452</marc:controlfield>
+    <marc:controlfield tag="005">20240205213016.0</marc:controlfield>
+    <marc:controlfield tag="008">160905s2007    ko a   j      000 0 kor d</marc:controlfield>
+    <marc:datafield tag="020" ind1=" " ind2=" ">
+      <marc:subfield code="a">9788939520509</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="020" ind1=" " ind2=" ">
+      <marc:subfield code="a">8939520505</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="035" ind1=" " ind2=" ">
+      <marc:subfield code="a">(OCoLC)957733211</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="035" ind1=" " ind2=" ">
+      <marc:subfield code="a">(OCoLC)ocn957733211</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="035" ind1=" " ind2=" ">
+      <marc:subfield code="a">(EXLNZ-01ALLIANCE_NETWORK)99322543864301451</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="035" ind1=" " ind2=" ">
+      <marc:subfield code="a">(01ALLIANCE_UW)99149469340001452</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="040" ind1=" " ind2=" ">
+      <marc:subfield code="a">WAU</marc:subfield>
+      <marc:subfield code="b">eng</marc:subfield>
+      <marc:subfield code="e">rda</marc:subfield>
+      <marc:subfield code="c">WAU</marc:subfield>
+      <marc:subfield code="d">OCLCO</marc:subfield>
+      <marc:subfield code="d">WAU</marc:subfield>
+      <marc:subfield code="d">OCLCO</marc:subfield>
+      <marc:subfield code="d">OCLCF</marc:subfield>
+      <marc:subfield code="d">OCLCA</marc:subfield>
+      <marc:subfield code="d">OCL</marc:subfield>
+      <marc:subfield code="d">OCLCO</marc:subfield>
+      <marc:subfield code="d">OCLCA</marc:subfield>
+      <marc:subfield code="d">OCLCO</marc:subfield>
+      <marc:subfield code="d">OCLCL</marc:subfield>
+      <marc:subfield code="d">OCLCQ</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="041" ind1="1" ind2=" ">
+      <marc:subfield code="a">kor</marc:subfield>
+      <marc:subfield code="h">eng</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="043" ind1=" " ind2=" ">
+      <marc:subfield code="a">e-it---</marc:subfield>
+      <marc:subfield code="a">e-gr---</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="049" ind1=" " ind2=" ">
+      <marc:subfield code="a">MAIN</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="050" ind1=" " ind2="4">
+      <marc:subfield code="a">PR2796.K62</marc:subfield>
+      <marc:subfield code="b">Y48 2007</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="066" ind1=" " ind2=" ">
+      <marc:subfield code="c">$1</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="100" ind1="1" ind2=" ">
+      <marc:subfield code="a">Shakespeare, William,</marc:subfield>
+      <marc:subfield code="d">1564-1616,</marc:subfield>
+      <marc:subfield code="e">author.</marc:subfield>
+      <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PBJxx96qPfyhwWrJChP9kXd</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="240" ind1="1" ind2="0">
+      <marc:subfield code="a">Romeo and Juliet.</marc:subfield>
+      <marc:subfield code="l">Korean</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="245" ind1="1" ind2="0">
+      <marc:subfield code="6">880-01</marc:subfield>
+      <marc:subfield code="a">Romio wa Chulliet :</marc:subfield>
+      <marc:subfield code="b">saero ssŭn Syeiksŭp'iŏ myŏngjaksŏn = Romeo and Juliet /</marc:subfield>
+      <marc:subfield code="c">kŭl Williŏm Syeiksŭp'iŏ ; yŏkkŏ omgim Yi Chae-myŏng ; kŭrim Andŭrea P'ise.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="880" ind1="1" ind2="0">
+      <marc:subfield code="6">245-01/$1</marc:subfield>
+      <marc:subfield code="a">로미오 와 줄리엣 :</marc:subfield>
+      <marc:subfield code="b">새로 쓴 셰익스피어 명작선 = Romeo and Juliet /</marc:subfield>
+      <marc:subfield code="c">글 윌리엄 셰익스피어 ; 엮어 옮김 이 재명 ; 그림 안드레아 피세.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="246" ind1="3" ind2="1">
+      <marc:subfield code="a">Romeo and Juliet</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="250" ind1=" " ind2=" ">
+      <marc:subfield code="6">880-02</marc:subfield>
+      <marc:subfield code="a">Ch'op'an.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="880" ind1=" " ind2=" ">
+      <marc:subfield code="6">250-02/$1</marc:subfield>
+      <marc:subfield code="a">초판.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="264" ind1=" " ind2="1">
+      <marc:subfield code="6">880-03</marc:subfield>
+      <marc:subfield code="a">Sŏul-si :</marc:subfield>
+      <marc:subfield code="b">Taegyo Ch'ulp'an,</marc:subfield>
+      <marc:subfield code="c">2007.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="880" ind1=" " ind2="1">
+      <marc:subfield code="6">264-03/$1</marc:subfield>
+      <marc:subfield code="a">서울시 :</marc:subfield>
+      <marc:subfield code="b">대교 출판,</marc:subfield>
+      <marc:subfield code="c">2007.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">314 pages :</marc:subfield>
+      <marc:subfield code="b">color illustrations ;</marc:subfield>
+      <marc:subfield code="c">23 cm.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336" ind1=" " ind2=" ">
+      <marc:subfield code="a">text</marc:subfield>
+      <marc:subfield code="b">txt</marc:subfield>
+      <marc:subfield code="2">rdacontent</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="337" ind1=" " ind2=" ">
+      <marc:subfield code="a">unmediated</marc:subfield>
+      <marc:subfield code="b">n</marc:subfield>
+      <marc:subfield code="2">rdamedia</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="338" ind1=" " ind2=" ">
+      <marc:subfield code="a">volume</marc:subfield>
+      <marc:subfield code="b">nc</marc:subfield>
+      <marc:subfield code="2">rdacarrier</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="490" ind1="1" ind2=" ">
+      <marc:subfield code="6">880-04</marc:subfield>
+      <marc:subfield code="a">Nun nop'i classic ;</marc:subfield>
+      <marc:subfield code="v">25</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="880" ind1="1" ind2=" ">
+      <marc:subfield code="6">490-04/$1</marc:subfield>
+      <marc:subfield code="a">눈 높이 classic ;</marc:subfield>
+      <marc:subfield code="v">25</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="546" ind1=" " ind2=" ">
+      <marc:subfield code="a">In Korean.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="505" ind1="0" ind2=" ">
+      <marc:subfield code="6">880-05</marc:subfield>
+      <marc:subfield code="a">Romio wa Chulliet = Romeo and Juliet -- Haemlit = Hamlet -- Han yŏrŭm pam ŭi kkum = The midsummer night's dream -- T'aep'ung = The tempest.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="880" ind1="0" ind2=" ">
+      <marc:subfield code="6">505-05/$1</marc:subfield>
+      <marc:subfield code="a">로미오 와 줄리엣 = Romeo and Juliet -- 햄릿 = Hamlet -- 한 여름 밤 의 꿈 = The midsummer night's dream -- 태풍 = The tempest.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Man-woman relationships</marc:subfield>
+      <marc:subfield code="v">Juvenile drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Courtship</marc:subfield>
+      <marc:subfield code="v">Juvenile drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Fathers and daughters</marc:subfield>
+      <marc:subfield code="v">Juvenile drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Political refugees</marc:subfield>
+      <marc:subfield code="v">Juvenile drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Shipwreck victims</marc:subfield>
+      <marc:subfield code="v">Juvenile drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Magicians</marc:subfield>
+      <marc:subfield code="v">Juvenile drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Islands</marc:subfield>
+      <marc:subfield code="v">Juvenile drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Spirits</marc:subfield>
+      <marc:subfield code="v">Juvenile drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="7">
+      <marc:subfield code="a">Courtship.</marc:subfield>
+      <marc:subfield code="2">fast</marc:subfield>
+      <marc:subfield code="0">(OCoLC)fst00881873</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="7">
+      <marc:subfield code="a">Fathers and daughters.</marc:subfield>
+      <marc:subfield code="2">fast</marc:subfield>
+      <marc:subfield code="0">(OCoLC)fst00921890</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="7">
+      <marc:subfield code="a">Islands.</marc:subfield>
+      <marc:subfield code="2">fast</marc:subfield>
+      <marc:subfield code="0">(OCoLC)fst00980104</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="7">
+      <marc:subfield code="a">Magicians.</marc:subfield>
+      <marc:subfield code="2">fast</marc:subfield>
+      <marc:subfield code="0">(OCoLC)fst01005551</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="7">
+      <marc:subfield code="a">Man-woman relationships.</marc:subfield>
+      <marc:subfield code="2">fast</marc:subfield>
+      <marc:subfield code="0">(OCoLC)fst01007080</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="7">
+      <marc:subfield code="a">Political refugees.</marc:subfield>
+      <marc:subfield code="2">fast</marc:subfield>
+      <marc:subfield code="0">(OCoLC)fst01069678</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="7">
+      <marc:subfield code="a">Shipwreck victims.</marc:subfield>
+      <marc:subfield code="2">fast</marc:subfield>
+      <marc:subfield code="0">(OCoLC)fst01116637</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="7">
+      <marc:subfield code="a">Spirits.</marc:subfield>
+      <marc:subfield code="2">fast</marc:subfield>
+      <marc:subfield code="0">(OCoLC)fst01130061</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="651" ind1=" " ind2="0">
+      <marc:subfield code="a">Verona (Italy)</marc:subfield>
+      <marc:subfield code="v">Juvenile drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="651" ind1=" " ind2="0">
+      <marc:subfield code="a">Athens (Greece)</marc:subfield>
+      <marc:subfield code="v">Juvenile drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="651" ind1=" " ind2="7">
+      <marc:subfield code="a">Greece</marc:subfield>
+      <marc:subfield code="z">Athens.</marc:subfield>
+      <marc:subfield code="2">fast</marc:subfield>
+      <marc:subfield code="0">(OCoLC)fst01204474</marc:subfield>
+      <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PBJyCyjWmm7b6fkX6kQQXh3</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="651" ind1=" " ind2="7">
+      <marc:subfield code="a">Italy</marc:subfield>
+      <marc:subfield code="z">Verona.</marc:subfield>
+      <marc:subfield code="2">fast</marc:subfield>
+      <marc:subfield code="0">(OCoLC)fst01204568</marc:subfield>
+      <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39QbtfRxD7gHXKHQPcbR9hW9c</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="7">
+      <marc:subfield code="a">Drama.</marc:subfield>
+      <marc:subfield code="2">fast</marc:subfield>
+      <marc:subfield code="0">(OCoLC)fst01423879</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="7">
+      <marc:subfield code="a">Juvenile works.</marc:subfield>
+      <marc:subfield code="2">fast</marc:subfield>
+      <marc:subfield code="0">(OCoLC)fst01411637</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="7">
+      <marc:subfield code="a">Translations.</marc:subfield>
+      <marc:subfield code="2">fast</marc:subfield>
+      <marc:subfield code="0">(OCoLC)fst01423791</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="7">
+      <marc:subfield code="a">Drama.</marc:subfield>
+      <marc:subfield code="2">lcgft</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="7">
+      <marc:subfield code="a">Théâtre.</marc:subfield>
+      <marc:subfield code="2">rvmgf</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="600" ind1="1" ind2="0">
+      <marc:subfield code="a">Shakespeare, William,</marc:subfield>
+      <marc:subfield code="d">1564-1616</marc:subfield>
+      <marc:subfield code="x">Translations into Korean.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="600" ind1="1" ind2="0">
+      <marc:subfield code="a">Shakespeare, William,</marc:subfield>
+      <marc:subfield code="d">1564-1616</marc:subfield>
+      <marc:subfield code="v">Juvenile drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="600" ind1="0" ind2="0">
+      <marc:subfield code="a">Romeo</marc:subfield>
+      <marc:subfield code="c">(Fictitious character)</marc:subfield>
+      <marc:subfield code="v">Juvenile drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="600" ind1="0" ind2="0">
+      <marc:subfield code="a">Juliet</marc:subfield>
+      <marc:subfield code="c">(Fictitious character)</marc:subfield>
+      <marc:subfield code="v">Juvenile drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="600" ind1="0" ind2="0">
+      <marc:subfield code="a">Hamlet</marc:subfield>
+      <marc:subfield code="c">(Legendary character)</marc:subfield>
+      <marc:subfield code="v">Juvenile drama.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="600" ind1="0" ind2="7">
+      <marc:subfield code="a">Hamlet</marc:subfield>
+      <marc:subfield code="c">(Legendary character)</marc:subfield>
+      <marc:subfield code="2">fast</marc:subfield>
+      <marc:subfield code="0">(OCoLC)fst00950776</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="600" ind1="0" ind2="7">
+      <marc:subfield code="a">Juliet</marc:subfield>
+      <marc:subfield code="c">(Fictitious character)</marc:subfield>
+      <marc:subfield code="2">fast</marc:subfield>
+      <marc:subfield code="0">(OCoLC)fst00984804</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="600" ind1="0" ind2="7">
+      <marc:subfield code="a">Romeo</marc:subfield>
+      <marc:subfield code="c">(Fictitious character)</marc:subfield>
+      <marc:subfield code="2">fast</marc:subfield>
+      <marc:subfield code="0">(OCoLC)fst01100152</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="600" ind1="1" ind2="7">
+      <marc:subfield code="a">Shakespeare, William,</marc:subfield>
+      <marc:subfield code="d">1564-1616</marc:subfield>
+      <marc:subfield code="2">fast</marc:subfield>
+      <marc:subfield code="0">(OCoLC)fst00029048</marc:subfield>
+      <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PBJxx96qPfyhwWrJChP9kXd</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="740" ind1="0" ind2="2">
+      <marc:subfield code="6">880-07</marc:subfield>
+      <marc:subfield code="a">Haemlit.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="880" ind1="0" ind2="2">
+      <marc:subfield code="6">740-07/$1</marc:subfield>
+      <marc:subfield code="a">햄릿.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="740" ind1="0" ind2="2">
+      <marc:subfield code="6">880-08</marc:subfield>
+      <marc:subfield code="a">Han yŏrŭm pam ŭi kkum.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="880" ind1="0" ind2="2">
+      <marc:subfield code="6">740-08/$1</marc:subfield>
+      <marc:subfield code="a">한 여름 밤 의 꿈.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="740" ind1="0" ind2="2">
+      <marc:subfield code="6">880-09</marc:subfield>
+      <marc:subfield code="a">T'aep'ung.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="880" ind1="0" ind2="2">
+      <marc:subfield code="6">740-09/$1</marc:subfield>
+      <marc:subfield code="a">태풍.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="6">880-06</marc:subfield>
+      <marc:subfield code="a">Yi, Chae-myŏng,</marc:subfield>
+      <marc:subfield code="e">compiler,</marc:subfield>
+      <marc:subfield code="e">translator.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="880" ind1="1" ind2=" ">
+      <marc:subfield code="6">700-06/$1</marc:subfield>
+      <marc:subfield code="a">이 재명,</marc:subfield>
+      <marc:subfield code="e">compiler,</marc:subfield>
+      <marc:subfield code="e">translator.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Piše, Andrea,</marc:subfield>
+      <marc:subfield code="e">illustrator.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2="2">
+      <marc:subfield code="a">Shakespeare, William,</marc:subfield>
+      <marc:subfield code="d">1564-1616.</marc:subfield>
+      <marc:subfield code="t">Romeo and Juliet.</marc:subfield>
+      <marc:subfield code="l">Korean.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2="2">
+      <marc:subfield code="a">Shakespeare, William,</marc:subfield>
+      <marc:subfield code="d">1564-1616.</marc:subfield>
+      <marc:subfield code="t">Hamlet.</marc:subfield>
+      <marc:subfield code="l">Korean.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2="2">
+      <marc:subfield code="a">Shakespeare, William,</marc:subfield>
+      <marc:subfield code="d">1564-1616.</marc:subfield>
+      <marc:subfield code="t">Mdsummer night's dream.</marc:subfield>
+      <marc:subfield code="l">Korean.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2="2">
+      <marc:subfield code="a">Shakespeare, William,</marc:subfield>
+      <marc:subfield code="d">1564-1616.</marc:subfield>
+      <marc:subfield code="t">Tempest.</marc:subfield>
+      <marc:subfield code="l">Korean.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="830" ind1=" " ind2="0">
+      <marc:subfield code="6">880-10</marc:subfield>
+      <marc:subfield code="a">Nun nop'i classic ;</marc:subfield>
+      <marc:subfield code="v">25.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="880" ind1=" " ind2="0">
+      <marc:subfield code="6">830-10/$1</marc:subfield>
+      <marc:subfield code="a">눈 높이 classic ;</marc:subfield>
+      <marc:subfield code="v">25.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="973" ind1=" " ind2=" ">
+      <marc:subfield code="a">pbooks</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="994" ind1=" " ind2=" ">
+      <marc:subfield code="a">92</marc:subfield>
+      <marc:subfield code="b">OCACL</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="979" ind1=" " ind2=" ">
+      <marc:subfield code="a">AAM</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+</marc:collection>
