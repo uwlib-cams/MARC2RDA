@@ -97,6 +97,7 @@
     <xsl:function name="uwf:mainWorkIRI">
         <xsl:param name="record"/>
         <xsl:choose>
+            <!-- 240 and no expression subfields, we can check if $1 is approved and possibly use it -->
             <xsl:when test="$record/marc:datafield[@tag = '240']">
                 <xsl:choose>
                     <xsl:when test="$record/marc:datafield[@tag = '240'][marc:subfield[@code = '1']] and 
@@ -129,6 +130,7 @@
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:when>
+                    <!-- 240 and no expression subfields we can check if $2 is approved and use it as part of IRI -->
                     <xsl:when test="$record/marc:datafield[@tag = '240'][marc:subfield[@code = '2']] and 
                         not($record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
                         or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']
@@ -144,6 +146,7 @@
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
+            <!-- same with 130 - no expression subfields -->
             <xsl:when test="$record/marc:datafield[@tag = '130']">
                 <xsl:choose>
                     <xsl:when test="$record/marc:datafield[@tag = '130'][marc:subfield[@code = '1']] and 
@@ -191,6 +194,7 @@
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
+            <!-- otherwise put IRI together -->
             <xsl:otherwise>
                 <xsl:value-of select="$BASE||'transform/wor#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainWorkAccessPoint($record)))"/>
             </xsl:otherwise>
@@ -202,6 +206,7 @@
         <xsl:value-of select="$BASE||'transform/aggWor#'||encode-for-uri(uwf:stripAllPunctuation(uwf:aggWorkAccessPoint($record)))"/>
     </xsl:function>
     
+    <!-- same idea as work IRI -->
     <xsl:function name="uwf:mainExpressionIRI">
         <xsl:param name="record"/>
         <xsl:choose>
@@ -530,6 +535,7 @@
         <xsl:param name="ap"/>
         <xsl:param name="source"/>
         <xsl:param name="type"/>
+        <!-- type of entity the nomen is for -->
         <xsl:variable name="nomType">
             <xsl:choose>
                 <xsl:when test="$type = 'person' or $type = 'family' or $type = 'corporatebody'">
@@ -550,12 +556,16 @@
             </xsl:choose>
         </xsl:variable>
         <xsl:choose>
+            <!-- if it's a nomen related to the main WEM, if there's a source, mint with a source -->
             <xsl:when test="$type = 'nomen' and $source != ''">
                 <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($source), ' ', ''))||'/'||$nomType||'#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
             </xsl:when>
+            <!-- if it's a different entity type, check if the source is approved
+                if it is, then use it-->
             <xsl:when test="uwf:s2EntityTest($source, $type) = 'True'">
                 <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($source), ' ', ''))||'/'||$nomType||'#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
             </xsl:when>
+            <!-- otherwise, opaque IRI -->
             <xsl:otherwise>
                 <xsl:value-of select="$BASE||$nomType||'#'||$baseID||generate-id($node)"/>
             </xsl:otherwise>
