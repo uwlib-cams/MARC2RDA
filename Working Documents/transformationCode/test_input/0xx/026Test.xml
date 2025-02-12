@@ -13,5 +13,10 @@
             <marc:subfield code="2">fei</marc:subfield>
             <marc:subfield code="5">wau</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="026" ind1=" " ind2=" ">
+            <marc:subfield code="e">edete nkck vess lodo 3 Anno Domini MDCXXXVI 3</marc:subfield>
+            <marc:subfield code="2">fei</marc:subfield>
+            <marc:subfield code="5">UkCU</marc:subfield>
+        </marc:datafield>
     </marc:record>
 </marc:collection>

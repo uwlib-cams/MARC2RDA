@@ -218,30 +218,57 @@
     </xsl:template>
     
     <!-- 026 - Fingerprint Identifier -->
-    <!--<xsl:template match="marc:datafield[@tag = '026'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '026']"
+    <xsl:template match="marc:datafield[@tag = '026'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '026']"
         mode="man">
-        <xsl:param name="baseIRI"/>
-        <rdamo:P30296 rdf:resource="{uwf:nomenIRI($baseIRI, ., 'nomen')}"/>
+        <xsl:param name="baseID"/>
+        <xsl:for-each select="marc:subfield[@code = 'e']">
+            <rdamo:P30296 rdf:resource="{uwf:nomenIRI($baseID, ., ., ../marc:subfield[@code = '2'][1], 'nomen')}"/>
+        </xsl:for-each>
+        <xsl:if test="marc:subfield[@code = 'a'] or marc:subfield[@code = 'b'] or marc:subfield[@code = 'c'] or marc:subfield[@code = 'd']">
+            <xsl:variable name="fingerprintid">
+                <xsl:value-of select="marc:subfield[@code = 'a']|marc:subfield[@code = 'b']|marc:subfield[@code = 'c']|marc:subfield[@code = 'd']"/>
+            </xsl:variable>
+            <rdamo:P30296 rdf:resource="{uwf:nomenIRI($baseID, ., $fingerprintid, marc:subfield[@code = '2'][1], 'nomen')}"/>
+        </xsl:if>
         <xsl:if test="marc:subfield[@code = '5']">
-            <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseIRI, .)}"/>
+            <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseID, .)}"/>
         </xsl:if>
     </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '026'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '026']"
         mode="nom">
-        <xsl:param name="baseIRI"/>
+        <xsl:param name="baseID"/>
         <xsl:variable name="fingerprintid">
             <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd']"/>
         </xsl:variable>
-        <rdf:Description rdf:about="{uwf:nomenIRI($baseIRI, ., 'nomen')}">
-            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-            <rdand:P80068>
-                <xsl:call-template name="F026-xx-abcde"/>
-            </rdand:P80068>
-            <xsl:if test="marc:subfield[@code = '2']">
-                <xsl:copy-of select="uwf:s2Nomen(marc:subfield[@code = '2'])"/>
-            </xsl:if>
-        </rdf:Description>
+        <xsl:for-each select="marc:subfield[@code = 'e']">
+            <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., ., ../marc:subfield[@code = '2'][1], 'nomen')}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                <rdand:P80068>
+                    <xsl:value-of select="."/>
+                </rdand:P80068>
+                <xsl:if test="../marc:subfield[@code = '2']">
+                    <xsl:copy-of select="uwf:s2Nomen(../marc:subfield[@code = '2'][1])"/>
+                </xsl:if>
+            </rdf:Description>
+        </xsl:for-each>
+        <xsl:if test="marc:subfield[@code = 'a'] or marc:subfield[@code = 'b'] or marc:subfield[@code = 'c'] or marc:subfield[@code = 'd']">
+            <xsl:variable name="fingerprintid">
+                <xsl:value-of select="marc:subfield[@code = 'a']|marc:subfield[@code = 'b']|marc:subfield[@code = 'c']|marc:subfield[@code = 'd']"/>
+            </xsl:variable>
+            <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., $fingerprintid, marc:subfield[@code = '2'][1], 'nomen')}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                <rdand:P80068>
+                    <xsl:value-of select="$fingerprintid"/>
+                </rdand:P80068>
+                <xsl:if test="marc:subfield[@code = '2']">
+                    <xsl:copy-of select="uwf:s2Nomen(marc:subfield[@code = '2'][1])"/>
+                </xsl:if>
+                <rdand:P80071>
+                    <xsl:call-template name="F026-xx-abcd"/>
+                </rdand:P80071>
+            </rdf:Description>
+        </xsl:if>
     </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '026'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '026']"
@@ -258,7 +285,7 @@
                 <xsl:copy-of select="uwf:s5Lookup(marc:subfield[@code = '5'])"/>
             </rdf:Description>
         </xsl:if>
-    </xsl:template>-->
+    </xsl:template>
     
     <!-- 027 - Standard technical report number -->
     <xsl:template match="marc:datafield[@tag = '027'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '027']" 

@@ -24,7 +24,7 @@
     xmlns:fake="http://fakePropertiesForDemo" exclude-result-prefixes="marc ex" version="3.0">
     
     <!-- 026 -->
-    <xsl:template name="F026-xx-abcde" expand-text="yes">
+    <xsl:template name="F026-xx-abcd" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
             | marc:subfield[@code = 'd'] | marc:subfield[@code = 'e']">
             <xsl:if test="@code = 'a'">
@@ -38,9 +38,6 @@
             </xsl:if>
             <xsl:if test="@code = 'd'">
                 <xsl:text>Number of volume or part: {.}</xsl:text>
-            </xsl:if>
-            <xsl:if test="@code = 'e'">
-                <xsl:text>Unparsed fingerprint: {.}</xsl:text>
             </xsl:if>
             <xsl:if test="position() != last()">
                 <xsl:text>; </xsl:text>
