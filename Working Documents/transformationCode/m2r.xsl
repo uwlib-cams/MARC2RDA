@@ -109,7 +109,7 @@
  
     <xsl:template match="marc:record" expand-text="yes">
         <!-- message can be output to show processing -->
-      <!--  <xsl:message>
+        <!--<xsl:message>
             <xsl:text>Processing record {marc:controlfield[@tag = '001']} ({position()}/{last()}).</xsl:text>
         </xsl:message>-->
         
@@ -135,7 +135,7 @@
         
         <xsl:choose>
             <!-- if single work expression or augmentation aggregate, proceed with transform -->
-            <xsl:when test="$isAggregate = 'swe' or 'aam'">
+            <xsl:when test="$isAggregate = 'swe' or $isAggregate = 'aam'">
                             
                 <!-- variable for generating unique IRIs - currently date  -->
                 <xsl:variable name="baseID" select="current-date() => string() => uwf:stripAllPunctuation() => encode-for-uri()"/>
@@ -460,7 +460,7 @@
             <!-- output records that were identified as aggregates in message -->
             <xsl:otherwise>
                 <xsl:message>
-                    <xsl:text>Record {translate(marc:controlfield[@tag='001'], ' ', '')} ({position()}/{last()}) identified as aggregate and was not processed.</xsl:text>
+                    <xsl:text>Record {translate(marc:controlfield[@tag='001'], ' ', '')} ({position()}/{last()}) identified as {$isAggregate} aggregate and was not processed.</xsl:text>
                 </xsl:message>
             </xsl:otherwise>
         </xsl:choose>
@@ -493,6 +493,7 @@
             <rdawd:P10400>
                 <xsl:value-of select="marc:controlfield[@tag = '003']||marc:controlfield[@tag = '001']"/>
             </rdawd:P10400>
+            <rdawd:P10004>Metadata work</rdawd:P10004>
             <rdawd:P10002>
                 <xsl:value-of select="'transform/wor#marc'||encode-for-uri(lower-case(translate(marc:controlfield[@tag = '003'], ' ', '')))||encode-for-uri(translate(marc:controlfield[@tag = '001'], ' ', '_'))"/>
             </rdawd:P10002>
@@ -511,6 +512,7 @@
         <rdf:Description rdf:about="{$marcManIRI}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
             <rdamo:P30135 rdf:resource="{$marcWorkIRI}"/>
+            <rdamd:P30335>Metadata manifestation</rdamd:P30335>
             <rdamd:P30004>
                 <xsl:value-of select="'transform/man#marc'||encode-for-uri(lower-case(translate(marc:controlfield[@tag = '003'], ' ', '')))||encode-for-uri(translate(marc:controlfield[@tag = '001'], ' ', '_'))"/>
             </rdamd:P30004>
