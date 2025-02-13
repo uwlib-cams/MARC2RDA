@@ -580,7 +580,7 @@
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <xsl:variable name="gac" select="translate(., '.;,:', '') => normalize-space()"/>
             <xsl:if test="matches($gac, '^[a-z-]*$')">
-                <rdawo:P10321 rdf:resource="{concat('http://id.loc.gov/vocabulary/geographicAreas/', replace(.,'-+$',''))}"/>
+                <rdawo:P10321 rdf:resource="{concat('http://id.loc.gov/vocabulary/geographicAreas/', replace($gac,'-+$',''))}"/>
             </xsl:if>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'b']">

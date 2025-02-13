@@ -18,5 +18,9 @@
             <marc:subfield code="1">http://www.wikidata.org/wiki/Q30</marc:subfield>
             <marc:subfield code="1">http://id.loc.gov/rwo/agents/n80125931</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="043" ind1=" " ind2=" ">
+            <marc:subfield code="a">e-uk--- ;</marc:subfield>
+            <marc:subfield code="a">u-at---</marc:subfield>
+        </marc:datafield>
     </marc:record>
 </marc:collection>
