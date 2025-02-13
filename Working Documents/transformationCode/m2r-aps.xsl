@@ -81,7 +81,7 @@
                 </xsl:for-each>
             </xsl:when>
             <xsl:when test="$record/marc:datafield[@tag = '245']/marc:subfield[@code = 'h']">
-                <xsl:value-of select="normalize-space(uwf:stripAllPunctuation($record/marc:datafield[@tag = '245'][1]/marc:subfield[@code = 'h'][1]))"/>
+                <xsl:value-of select="normalize-space($record/marc:datafield[@tag = '245'][1]/marc:subfield[@code = 'h'][1]) => translate('[]();,.=', '')"/>
             </xsl:when>
         </xsl:choose>
     </xsl:function>
