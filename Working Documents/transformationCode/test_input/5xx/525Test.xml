@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">525-test</marc:controlfield>
+        <marc:datafield tag="525" ind1=" " ind2=" ">
+            <marc:subfield code ="a">Vols. for 1961- kept up to date by midyear supplements. Cf. New serial titles.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="525" ind1=" " ind2=" ">
+            <marc:subfield code ="a">Some issues accompanied by separately paged supplements and sections consisting principally of convention proceedings and lists of members and branch societies.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">525-00</marc:subfield>
+            <marc:subfield code="a">Test 880</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

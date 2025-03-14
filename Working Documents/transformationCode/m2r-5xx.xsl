@@ -553,6 +553,19 @@
         </xsl:if>
     </xsl:template>
     
+    <!-- 525 - Supplement Note -->
+    <xsl:template match="marc:datafield[@tag = '525'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '525']"
+        mode="wor" expand-text="yes">
+        <xsl:if test="marc:subfield[@code = 'a']">
+            <rdaw:P10330>
+                <xsl:text>Supplement note: </xsl:text>
+                <xsl:for-each select="marc:subfield[@code = 'a']">
+                    <xsl:value-of select="."/>
+                </xsl:for-each>
+            </rdaw:P10330>
+        </xsl:if>
+    </xsl:template>
+    
     <!-- 526 - Study Program Information Note -->
     <xsl:template match="marc:datafield[@tag = '526'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '526']" 
         mode="man">
