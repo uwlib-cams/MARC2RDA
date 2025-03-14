@@ -44,4 +44,94 @@
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
+    <!-- 034 -->
+    <xsl:template name="F034-xx-abchrxy" expand-text="yes">
+            <!--<xsl:call-template name="getmarc"/>-->
+            <xsl:for-each select="marc:subfield[@code = 'a']">
+                <rdaed:P20213>
+                    <xsl:text>Category of scale: </xsl:text>
+                    <xsl:choose>
+                        <xsl:when test=". = 'a'">Linear scale</xsl:when>
+                        <xsl:when test=". = 'b'">Angular scale</xsl:when>
+                        <xsl:when test=". = 'c'">Neither linear nor angular scale</xsl:when>
+                    </xsl:choose>
+                    <xsl:if test="../marc:subfield[@code = '3']">
+                        <xsl:text> applies to: </xsl:text>
+                        <xsl:value-of select="../marc:subfield[@code = '3']"/>
+                    </xsl:if>
+                </rdaed:P20213>
+            </xsl:for-each>
+            
+            <xsl:for-each select="marc:subfield[@code = 'b']">
+                <rdaed:P20226>
+                    <xsl:value-of select="."/>
+                    <xsl:if test="../marc:subfield[@code = '3']">
+                        <xsl:text> applies to: </xsl:text>
+                        <xsl:value-of select="../marc:subfield[@code = '3']"/>
+                    </xsl:if>
+                </rdaed:P20226>
+            </xsl:for-each>
+            
+            <xsl:if test="marc:subfield[@code='c']">
+                <rdaed:P20230>
+                    <xsl:for-each select="marc:subfield[@code = 'c']">
+                        <xsl:value-of select="."/>
+                        <xsl:if test="../marc:subfield[@code = '3']">
+                            <xsl:text> applies to: </xsl:text>
+                            <xsl:value-of select="../marc:subfield[@code = '3']"/>
+                        </xsl:if>
+                    </xsl:for-each>   
+                </rdaed:P20230>
+            </xsl:if>
+            
+            <xsl:if test="marc:subfield[@code = 'h']">
+                <rdaed:P20213>
+                    <xsl:for-each select="marc:subfield[@code = 'h']">
+                        <xsl:if test="@code = 'h'">
+                            <xsl:text>Angular scale: {.}</xsl:text>
+                        </xsl:if>
+                        <xsl:if test="../marc:subfield[@code = '3']">
+                            <xsl:text> applies to: </xsl:text>
+                            <xsl:value-of select="../marc:subfield[@code = '3']"/>
+                        </xsl:if>
+                    </xsl:for-each>
+                </rdaed:P20213>
+            </xsl:if>
+            
+            <xsl:if test="marc:subfield[@code = 'r']">
+                <rdaed:P20071>
+                    <xsl:text>Distance from earth: </xsl:text>
+                    <xsl:value-of select="marc:subfield[@code = 'r']"/>
+                    <xsl:if test="marc:subfield[@code = '3']">
+                        <xsl:text> applies to: </xsl:text>
+                        <xsl:value-of select="marc:subfield[@code = '3']"/>
+                    </xsl:if>
+                </rdaed:P20071>
+            </xsl:if>
+            
+            <xsl:if test="marc:subfield[@code = 'x']">
+                <rdaed:P20071>
+                    <xsl:text>Beginning date for coordinates: </xsl:text>
+                    <xsl:value-of select="marc:subfield[@code = 'x']"/>
+                    <xsl:if test="marc:subfield[@code = '3']">
+                        <xsl:text> applies to: </xsl:text>
+                        <xsl:value-of select="marc:subfield[@code = '3']"/>
+                    </xsl:if>
+                </rdaed:P20071>
+            </xsl:if>
+            
+            <xsl:if test="marc:subfield[@code = 'y']">
+                <rdaed:P20071>
+                    <xsl:text>Ending date for coordinates: </xsl:text>
+                    <xsl:value-of select="marc:subfield[@code = 'y']"/>
+                    <xsl:if test="marc:subfield[@code = '3']">
+                        <xsl:text> applies to: </xsl:text>
+                        <xsl:value-of select="marc:subfield[@code = '3']"/>
+                    </xsl:if>
+                </rdaed:P20071>
+            </xsl:if>
+ 
+    </xsl:template>
+
 </xsl:stylesheet>
+
