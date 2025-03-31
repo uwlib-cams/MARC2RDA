@@ -419,47 +419,73 @@
         mode="wor" expand-text="yes">
         <!--<xsl:call-template name="getmarc"/>-->       
             <xsl:if test="marc:subfield[@code = 'd'] or marc:subfield[@code = 'e']">
-                <rdawd:P10301>
-                    <xsl:text>{marc:subfield[@code = 'd']}--{marc:subfield[@code = 'e']}</xsl:text>
-                    <xsl:if test="marc:subfield[@code = '3']">
-                        <xsl:text> applies to: </xsl:text>
-                        <xsl:value-of select="marc:subfield[@code = '3']"/>
-                    </xsl:if>
-                </rdawd:P10301>
-            </xsl:if>            
+                            <rdawd:P10301>
+                                <xsl:value-of select="marc:subfield[@code = 'd']"/>
+                                
+                                <xsl:if test="marc:subfield[@code = 'd'] and marc:subfield[@code = 'e']">
+                                    <xsl:text>--</xsl:text>
+                                </xsl:if>                               
+                                <xsl:value-of select="marc:subfield[@code = 'e']"/>
+                                <xsl:if test="marc:subfield[@code = '3']">
+                                    <xsl:text> (applies to: </xsl:text>
+                                    <xsl:value-of select="marc:subfield[@code = '3']"/>
+                                    <xsl:text>)</xsl:text>
+                                </xsl:if>
+                            </rdawd:P10301>
+                 </xsl:if>                         
+        
             <xsl:if test="marc:subfield[@code = 'f'] or marc:subfield[@code = 'g']">
                 <rdawd:P10300>
-                    <xsl:text>{marc:subfield[@code = 'f']}--{marc:subfield[@code = 'g']}</xsl:text>
+                    <xsl:value-of select="marc:subfield[@code = 'f']"/>                
+                    <xsl:if test="marc:subfield[@code = 'f'] and marc:subfield[@code = 'g']">
+                        <xsl:text>--</xsl:text>
+                    </xsl:if>                               
+                    <xsl:value-of select="marc:subfield[@code = 'g']"/>
                     <xsl:if test="marc:subfield[@code = '3']">
-                        <xsl:text> applies to: </xsl:text>
+                        <xsl:text> (applies to: </xsl:text>
                         <xsl:value-of select="marc:subfield[@code = '3']"/>
+                        <xsl:text>)</xsl:text>
                     </xsl:if>
                 </rdawd:P10300>
             </xsl:if>
+        
             <xsl:if test="marc:subfield[@code = 'j'] or marc:subfield[@code = 'k']">
                 <rdawd:P10303>
-                    <xsl:text>{marc:subfield[@code =  'j']}--{marc:subfield[@code = 'k']}</xsl:text>
+                    <xsl:value-of select="marc:subfield[@code = 'j']"/>
+                    <xsl:if test="marc:subfield[@code = 'j'] and marc:subfield[@code = 'k']">
+                        <xsl:text>--</xsl:text>
+                    </xsl:if>                               
+                    <xsl:value-of select="marc:subfield[@code = 'k']"/>
                     <xsl:if test="marc:subfield[@code = '3']">
-                        <xsl:text> applies to: </xsl:text>
+                        <xsl:text> (applies to: </xsl:text>
                         <xsl:value-of select="marc:subfield[@code = '3']"/>
+                        <xsl:text>)</xsl:text>
                     </xsl:if>
                 </rdawd:P10303>
-            </xsl:if>           
+            </xsl:if>         
+        
             <xsl:if test="marc:subfield[@code = 'm'] or marc:subfield[@code = 'n']">
                 <rdawd:P10302>
-                    <xsl:text>{marc:subfield[@code = 'm']}--{marc:subfield[@code = 'n']}</xsl:text>
+                    <xsl:value-of select="marc:subfield[@code = 'm']"/>
+                    <xsl:if test="marc:subfield[@code = 'm'] and marc:subfield[@code = 'n']">
+                        <xsl:text>--</xsl:text>
+                    </xsl:if>                               
+                    <xsl:value-of select="marc:subfield[@code = 'n']"/>
                     <xsl:if test="marc:subfield[@code = '3']">
-                        <xsl:text> applies to: </xsl:text>
+                        <xsl:text> (applies to: </xsl:text>
                         <xsl:value-of select="marc:subfield[@code = '3']"/>
+                        <xsl:text>)</xsl:text>
                     </xsl:if>
                 </rdawd:P10302>
-            </xsl:if>             
+            </xsl:if>           
+        
             <xsl:if test="marc:subfield[@code = 'p']">
                 <rdawd:P10214>
                     <xsl:text>{marc:subfield[@code = 'p']}</xsl:text>
-                    <xsl:if test="marc:subfield[@code = '3']">
-                        <xsl:text> applies to: </xsl:text>
-                        <xsl:value-of select="marc:subfield[@code = '3']"/>
+                    <xsl:if test="../marc:subfield[@code = '3']">
+                        <xsl:text> (applies to: </xsl:text>
+                        <xsl:value-of select="../marc:subfield[@code = '3']"/>
+                        <xsl:text>)</xsl:text>
                     </xsl:if>
                 </rdawd:P10214>
             </xsl:if>          
@@ -476,8 +502,9 @@
                     </xsl:choose>
                     <xsl:value-of select="."/>
                     <xsl:if test="../marc:subfield[@code = '3']">
-                        <xsl:text> applies to: </xsl:text>
+                        <xsl:text> (applies to: </xsl:text>
                         <xsl:value-of select="../marc:subfield[@code = '3']"/>
+                        <xsl:text>)</xsl:text>
                     </xsl:if>
                     <xsl:if test="position() != last()">
                         <xsl:text>; </xsl:text>
@@ -488,9 +515,10 @@
             <xsl:if test="marc:subfield[@code = 'z']">
                 <rdawd:P10321>
                     <xsl:text>Name of extraterrestrial body: {marc:subfield[@code = 'z']}</xsl:text>
-                    <xsl:if test="marc:subfield[@code = '3']">
-                        <xsl:text> applies to: </xsl:text>
-                        <xsl:value-of select="marc:subfield[@code = '3']"/>
+                    <xsl:if test="../marc:subfield[@code = '3']">
+                        <xsl:text> (applies to: </xsl:text>
+                        <xsl:value-of select="../marc:subfield[@code = '3']"/>
+                        <xsl:text>)</xsl:text>
                     </xsl:if>
                 </rdawd:P10321>
             </xsl:if>
