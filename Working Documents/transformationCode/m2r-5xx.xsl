@@ -1354,6 +1354,57 @@
         </rdawd:P10330>
     </xsl:template>
     
+    <!-- 580 - Linking Entry Complexity Note -->
+    <xsl:template
+        match="marc:datafield[@tag = '580']| marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '580']"
+        mode="man">
+        <!--<xsl:call-template name="getmarc"/>-->
+    <xsl:param name="baseID"/>   
+    <xsl:choose>
+        <xsl:when test="marc:subfield[@code = '5']">
+            <xsl:if test="@tag = '580' or (@tag = '880' and substring(marc:subfield[@code = '6'], 1, 6) = '580-00')">
+                <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseID, .)}"/>
+            </xsl:if>
+        </xsl:when>
+        <xsl:otherwise>
+            <rdamd:P30137>
+                <xsl:if test="marc:subfield[@code = 'a']">
+                    <xsl:text>Linking entry complexity note: </xsl:text>
+                    <xsl:value-of select="marc:subfield[@code = 'a']" />
+                </xsl:if>
+            </rdamd:P30137>
+        </xsl:otherwise>
+    </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '580'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '580-00']" 
+        mode="ite" expand-text="yes">
+        <xsl:param name="baseID"/>
+        <xsl:param name="manIRI"/>
+        <xsl:if test="marc:subfield[@code = '5']">
+            <xsl:variable name="genID" select="generate-id()"/>
+            <rdf:Description rdf:about="{uwf:itemIRI($baseID, .)}">
+                <!--<xsl:call-template name="getmarc"/>-->
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+                <rdaid:P40001>{concat('ite#',$baseID, $genID)}</rdaid:P40001>
+                <rdaio:P40049 rdf:resource="{$manIRI}"/>
+                <xsl:copy-of select="uwf:s5Lookup(marc:subfield[@code = '5'])"/>
+                <rdaid:P40028>
+                    <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                </rdaid:P40028>
+                
+                <xsl:if test="marc:subfield[@code = '6'] and @tag = '580'">
+                    <xsl:variable name="occNum" select="substring(marc:subfield[@code = '6'], 5, 6)"/>
+                    <xsl:for-each
+                        select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 5, 6) = $occNum]">
+                        <rdaid:P40028>
+                            <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                        </rdaid:P40028>
+                    </xsl:for-each>
+                </xsl:if>
+            </rdf:Description>
+        </xsl:if>
+    </xsl:template>
     
     <!-- 581 - Publications about Described Materials Note -->
     <xsl:template

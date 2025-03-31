@@ -1044,6 +1044,7 @@
         </rdf:Description>
     </xsl:template>
     
+    <!-- 584 --> 
     <xsl:template name="F584-xx-ab35" expand-text="true">
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']">
             <xsl:if test="@code = 'a'">
