@@ -751,6 +751,15 @@
         </xsl:for-each>
     </xsl:template>
     
+    <!-- 263 - Projected Publication Date -->
+    <xsl:template match="marc:datafield[@tag = '263'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '263']"
+        mode="man" expand-text="yes">
+        <!--<xsl:call-template name="getmarc"/>-->
+        <rdamd:P30137>
+            <xsl:value-of select="concat('Projected date of publication: ', marc:subfield[@code = 'a'])"/>
+        </rdamd:P30137>
+    </xsl:template>
+    
     <!-- template immediately below, MARC 264:
          all values cocatenated go into RDA "statements";
          if there's isbd punctuation, subfield are not output;
