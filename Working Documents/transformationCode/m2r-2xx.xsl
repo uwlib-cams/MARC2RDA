@@ -626,7 +626,8 @@
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
-    
+
+    <!-- 260 - Publication, Distribution, etc. (Imprint) -->
     <xsl:template match="marc:datafield[@tag = '260'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '260']"
         mode="man" expand-text="yes">
         <xsl:param name="type"/>
