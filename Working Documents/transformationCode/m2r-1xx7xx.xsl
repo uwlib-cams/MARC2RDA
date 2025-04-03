@@ -24,6 +24,7 @@
     xmlns:uwf="http://universityOfWashington/functions" xmlns:fake="http://fakePropertiesForDemo"
     xmlns:uwmisc="http://uw.edu/all-purpose-namespace/" exclude-result-prefixes="marc ex uwf uwmisc"
     version="3.0">
+    <xsl:include href="m2r-1xx7xx-named.xsl"/>
     <xsl:import href="m2r-relators.xsl"/>
     <xsl:import href="m2r-iris.xsl"/>
     <xsl:import href="getmarc.xsl"/>
@@ -913,5 +914,17 @@
             </xsl:if>
         </xsl:if>
     </xsl:template>
+    
+    
+ <!-- 777 Issued with Entry -->
+ <!-- DC: This is currently coded based on Phase I mapping. Feel free to delete this comment if this no longer applies -->
+    <xsl:template
+        match="marc:datafield[@tag = '777'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '777-00']"
+        mode="man">
+        <rdam:P30137>
+            <xsl:call-template name="F777-xx-abcdefghjklmnopqrstuvwxyz"/>
+        </rdam:P30137>
+    </xsl:template>
+    
     
 </xsl:stylesheet>
