@@ -351,6 +351,30 @@
     <xsl:template match="marc:datafield[@tag = '506'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '506-00']" 
         mode="con">
         <xsl:call-template name="F506-xx-f2"/>
+    </xsl:template>    
+ 
+    <!-- 507 - Scale Note for Visual Materials -->
+   
+    <xsl:template
+        match="marc:datafield[@tag = '507'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '507']"
+        mode="exp"
+        expand-text="yes">
+        
+        <xsl:param name="baseID"/>
+        
+        <!-- Subfield 'a' → Scale Note -->          
+        <xsl:if test="marc:subfield[@code = 'a']">
+            <rdaed:P20228>
+                <xsl:value-of select="marc:subfield[@code = 'a']"/>
+            </rdaed:P20228>
+        </xsl:if>
+     
+        <!-- Subfield 'b' → Constant Horizontal Scale -->
+        <xsl:if test="marc:subfield[@code = 'b']">
+            <rdaed:P20213>
+                <xsl:value-of select="marc:subfield[@code = 'b']"/>
+            </rdaed:P20213>
+        </xsl:if>
     </xsl:template>
     
     <!-- 508 - Creation/Production Credits Note -->
