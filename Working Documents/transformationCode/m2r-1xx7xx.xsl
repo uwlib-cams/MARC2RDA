@@ -926,5 +926,15 @@
         </rdam:P30137>
     </xsl:template>
     
+ <!-- 785 Succeeding Entry -->
+ <!-- DC: This is currently coded based on Phase I mapping. Feel free to delete this comment if this no longer applies -->
+    <xsl:template
+        match="marc:datafield[@tag = '785'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '785-00']"
+        mode="man">
+        <rdam:P30137>
+            <xsl:call-template name="F785-xx-abcdefghjklmnopqrstuvwxyz"/>
+        </rdam:P30137>
+    </xsl:template>
+    
     
 </xsl:stylesheet>
