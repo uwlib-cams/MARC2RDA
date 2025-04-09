@@ -552,6 +552,96 @@
         </xsl:for-each> </rdaw:P10084>
     </xsl:template>
     
+    <!-- 352 Digital Graphic Representation--> 
+    
+      <xsl:template match="marc:datafield[@tag = '352'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'],1,6) = '352']" 
+        mode="man" 
+        expand-text="yes">
+          
+          <rdamd:P30261>
+              <xsl:for-each select="marc:subfield[@code = 'a' or @code = 'b' or @code = 'c']">
+                  <!-- Add a space before the second/third item -->
+                  <xsl:if test="position() > 1">
+                      <xsl:text> </xsl:text>
+                  </xsl:if>
+                  
+                  <!-- Process based on subfield code -->
+                  <xsl:choose>
+                      <xsl:when test="@code = 'a'">
+                          <xsl:text>Direct reference method: </xsl:text>
+                          <xsl:value-of select="uwf:stripAllPunctuation(string(.))"/>
+                          <xsl:text>.</xsl:text>
+                      </xsl:when>
+                      <xsl:when test="@code = 'b'">
+                          <xsl:text>Object type: </xsl:text>
+                          <xsl:value-of select="uwf:stripEndPunctuation(string(.))"/>
+                          <xsl:text>.</xsl:text>
+                      </xsl:when>
+                      <xsl:when test="@code = 'c'">
+                          <xsl:text>Object count: </xsl:text>
+                          <xsl:value-of select="uwf:stripAllPunctuation(string(.))"/>
+                          <xsl:text>.</xsl:text>
+                      </xsl:when>
+                  </xsl:choose>
+              </xsl:for-each>
+          </rdamd:P30261>
+          
+          <!-- Check if any d, e, or f subfields exist before creating the P30102 element -->
+          <xsl:if test="marc:subfield[@code = 'd' or @code = 'e' or @code = 'f']">
+              <rdamd:P30102>
+                  <xsl:for-each select="marc:subfield[@code = 'd' or @code = 'e' or @code = 'f']">
+                      <!-- Add a space before the second/third item within this group -->
+                      <xsl:if test="position() > 1">
+                          <xsl:text> </xsl:text>
+                      </xsl:if>
+                      
+                      <!-- Process based on subfield code -->
+                      <xsl:choose>
+                          <xsl:when test="@code = 'd'">
+                              <xsl:text>Row count: </xsl:text>
+                              <!-- Apply stripAllPunctuation first, then remove 'x' and 'X' -->
+                              <xsl:variable name="d_stripped" select="uwf:stripAllPunctuation(string(.))"/>
+                              <xsl:value-of select="translate($d_stripped, 'xX', '')"/>
+                              <xsl:text>.</xsl:text>
+                          </xsl:when>
+                          <xsl:when test="@code = 'e'">
+                              <xsl:text>Column count: </xsl:text>
+                              <xsl:value-of select="uwf:stripAllPunctuation(string(.))"/>
+                              <xsl:text>.</xsl:text>
+                          </xsl:when>
+                          <xsl:when test="@code = 'f'">
+                              <xsl:text>Vertical count: </xsl:text>
+                              <xsl:value-of select="uwf:stripAllPunctuation(string(.))"/>
+                              <xsl:text>.</xsl:text>
+                          </xsl:when>
+                      </xsl:choose>
+                  </xsl:for-each>
+              </rdamd:P30102>
+          </xsl:if>
+
+          <!-- Check if g subfields exist before creating the P30102 element -->
+          <xsl:if test="marc:subfield[@code = 'g']">
+              <rdamd:P30102>
+                  <xsl:text>VPF topology level: {marc:subfield[@code = 'g']}</xsl:text>
+              </rdamd:P30102>
+          </xsl:if>
+          
+          <!-- Check if q subfields exist before creating the P30102 element -->
+          <xsl:if test="marc:subfield[@code = 'q']">
+              <rdamd:P30102>
+                  <xsl:text>Format of the digital image: {marc:subfield[@code = 'q']}</xsl:text>
+              </rdamd:P30102>
+          </xsl:if>
+        
+          <!-- Check if i subfields exist before creating the P30102 element -->
+            <xsl:if test="marc:subfield[@code = 'i']">
+                <rdamd:P30137>    
+                    <xsl:text>Indirect reference description: {marc:subfield[@code = 'i']}</xsl:text>
+                </rdamd:P30137>
+            </xsl:if>
+    </xsl:template>
+            
+        
     <!-- 380 - Form of Work -->
     <xsl:template match="marc:datafield[@tag = '380'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '380']" 
         mode="wor">
