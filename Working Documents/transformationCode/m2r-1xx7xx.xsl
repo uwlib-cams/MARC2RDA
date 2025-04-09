@@ -947,6 +947,17 @@
         </rdam:P30137>
     </xsl:template>
     
+<!-- 786 Data Source Entry -->
+<!-- DC: This is currently coded based on Phase I mapping. Feel free to delete this comment if this no longer applies -->
+    <xsl:template
+        match="marc:datafield[@tag = '786'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '786-00']"
+        mode="man">
+        <rdam:P30137>
+            <xsl:call-template name="F786-xx-abcdefghjklmnopqrstuvwxyz"/>
+        </rdam:P30137>
+    </xsl:template>
+    
+    
     
 <!-- 787 Other Relationship Entry -->
 <!-- DC: This is currently coded based on Phase I mapping. Feel free to delete this comment if this no longer applies -->
