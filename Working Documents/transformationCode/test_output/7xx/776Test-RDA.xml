@@ -31,45 +31,45 @@
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
          xmlns:uwf="http://universityOfWashington/functions"
          xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc777-test">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc776-test">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>777-test</rdawd:P10400>
+      <rdawd:P10400>776-test</rdawd:P10400>
       <rdawd:P10004>Metadata work</rdawd:P10004>
-      <rdawd:P10002>transform/wor#marc777-test</rdawd:P10002>
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc777-test"/>
+      <rdawd:P10002>transform/wor#marc776-test</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc776-test"/>
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
       <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
       <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc777-test">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc776-test">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc777-test"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc776-test"/>
       <rdamd:P30335>Metadata manifestation</rdamd:P30335>
-      <rdamd:P30004>transform/man#marc777-test</rdamd:P30004>
+      <rdamd:P30004>transform/man#marc776-test</rdamd:P30004>
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
       <rdamd:P30137>F 11111nam a2200553ui 4500
-F001 777-test
-F777 ## $t Current drug handbook $g 1962- $x 0070-1939 $w (DLC)###58006390#
-F880 ## $6 777-00 $a Test 880
+F001 776-test
+F776 1# $t College English $x 0010-0994 $w (DLC)sc#84007753# $w (OCoLC)3546316
+F880 ## $6 776-00 $a Test 880
 </rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc777-test"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc776-test"/>
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc777-test"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc776-test"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc777-test"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc776-test"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
       <rdamd:P30276/>
-      <rdam:P30137>On carrier unit with: Current drug handbook; 1962-; 0070-1939; (DLC)###58006390#: </rdam:P30137>
-      <rdam:P30137>On carrier unit with: Test 880: </rdam:P30137>
+      <rdam:P30137>[Has equivalent]: College English; 0010-0994; (DLC)sc#84007753#; (OCoLC)3546316: </rdam:P30137>
+      <rdam:P30137>[Has equivalent]: Test 880: </rdam:P30137>
    </rdf:Description>
 </rdf:RDF>
