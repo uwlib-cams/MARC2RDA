@@ -935,6 +935,17 @@
             <xsl:call-template name="F765-xx-abcdefghjklmnopqrstuvwxyz"/>
         </rdam:P30137>
     </xsl:template>
+    
+    
+<!-- 767 Translation Entry -->
+<!-- DC: This is currently coded based on Phase I mapping. Feel free to delete this comment if this no longer applies -->
+    <xsl:template
+        match="marc:datafield[@tag = '767'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '767-00']"
+        mode="man">
+        <rdam:P30137>
+            <xsl:call-template name="F767-xx-abcdefghjklmnopqrstuvwxyz"/>
+        </rdam:P30137>
+    </xsl:template>
 
 
 <!-- 776 Additional Physical Form Entry -->
