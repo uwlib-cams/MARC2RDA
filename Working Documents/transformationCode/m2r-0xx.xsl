@@ -33,6 +33,18 @@
     <xsl:import href="m2r-functions.xsl"/>
     <xsl:import href="m2r-iris.xsl"/>
     
+<!-- 013 Patent Control Information -->
+    
+    <xsl:template match="marc:datafield[@tag = '013'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '013']" 
+        mode="wor">
+        <rdaw:P10330>
+            <xsl:call-template name="F013-xx-abcdef"/>
+        </rdaw:P10330>
+    </xsl:template>
+
+    
+    
+    
     <!-- 018 Copyright Article-Fee Code -->
     <xsl:template match="marc:datafield[@tag = '018'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '018']" 
         mode="man">
