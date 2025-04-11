@@ -1,82 +1,178 @@
 <?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/255-test00wor">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc255-test00">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/255-test00exp"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10002>255-test00wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <fake:marcfield>F255 ## $a Scale [ca. 1:500,000] ; $b Base fitted to Lambert conformal conic proj. based on standard parallels of 33° and 45°.</fake:marcfield>
+      <rdawo:P10400 rdf:resource="http://marc2rda.edu/fake/transform/nom#255-test00"/><!--rdawo:P10400 = has identifier for work group-->
+      <rdawd:P10002>transform/wor#marc255-test00</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc255-test00"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/255-test00exp">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc255-test00">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc255-test00"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30004>transform/man#marc255-test00</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 255-test00
+F255 ## $a Scale [ca. 1:500,000] ; $b Base fitted to Lambert conformal conic proj. based on standard parallels of 33° and 45°.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/nom#255-test00">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdano:P80172 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc255-test00"/><!--rdano:P80172 = is identifier for work group of-->
+      <rdand:P80068>255-test00</rdand:P80068><!--rdand:P80068 = has nomen string-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc255-test00"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/255-test00man"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/255-test00wor"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20002>255-test00exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
-      <fake:marcfield>F255 ## $a Scale [ca. 1:500,000] ; $b Base fitted to Lambert conformal conic proj. based on standard parallels of 33° and 45°.</fake:marcfield>
-      <rdaed:P20228>Scale [ca. 1:500,000] ;</rdaed:P20228><!--rdaed:P20228 = has scale-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc255-test00"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20228>Scale [ca. 1:500,000]</rdaed:P20228><!--rdaed:P20228 = has scale-->
       <rdaed:P20216>Base fitted to Lambert conformal conic proj. based on standard parallels of 33° and 45°.</rdaed:P20216><!--rdaed:P20216 = has projection of cartographic content-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/255-test00man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/255-test00exp"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc255-test00"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/255-test00wor">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc255-test01">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/255-test00exp"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10002>255-test00wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <fake:marcfield>F255 10 $a Scale [ca. 1:13,835,000]. 1 cm. = 138 km. 1 in. = 218 miles ; $b Chamberlin trimetric proj.</fake:marcfield>
+      <rdawo:P10400 rdf:resource="http://marc2rda.edu/fake/transform/nom#255-test01"/><!--rdawo:P10400 = has identifier for work group-->
+      <rdawd:P10002>transform/wor#marc255-test01</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc255-test01"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/255-test00exp">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc255-test01">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc255-test01"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30004>transform/man#marc255-test01</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 255-test01
+F255 10 $a Scale [ca. 1:13,835,000]. 1 cm. = 138 km. 1 in. = 218 miles ; $b Chamberlin trimetric proj.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/nom#255-test01">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdano:P80172 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc255-test01"/><!--rdano:P80172 = is identifier for work group of-->
+      <rdand:P80068>255-test01</rdand:P80068><!--rdand:P80068 = has nomen string-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc255-test01"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/255-test00man"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/255-test00wor"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20002>255-test00exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
-      <fake:marcfield>F255 10 $a Scale [ca. 1:13,835,000]. 1 cm. = 138 km. 1 in. = 218 miles ; $b Chamberlin trimetric proj.</fake:marcfield>
-      <rdaed:P20228>Scale [ca. 1:13,835,000]. 1 cm. = 138 km. 1 in. = 218 miles ;</rdaed:P20228><!--rdaed:P20228 = has scale-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc255-test01"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20228>Scale [ca. 1:13,835,000]. 1 cm. = 138 km. 1 in. = 218 miles</rdaed:P20228><!--rdaed:P20228 = has scale-->
       <rdaed:P20216>Chamberlin trimetric proj.</rdaed:P20216><!--rdaed:P20216 = has projection of cartographic content-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/255-test00man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/255-test00exp"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc255-test01"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/255-test1wor">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc255-test02">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/255-test1exp"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10002>255-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <fake:marcfield>F255 ## $a Scale [ca. 1:10,000] ; $b Gauss proj. $c (W 9°13'52"--W 9°04'47"/N 38°48'35"--N 38°41'29").</fake:marcfield>
+      <rdawo:P10400 rdf:resource="http://marc2rda.edu/fake/transform/nom#255-test02"/><!--rdawo:P10400 = has identifier for work group-->
+      <rdawd:P10002>transform/wor#marc255-test02</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc255-test02"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc255-test02">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc255-test02"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30004>transform/man#marc255-test02</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 255-test02
+F255 ## $a Scale [ca. 1:10,000] ; $b Gauss proj. $c (W 9°13'52"--W 9°04'47"/N 38°48'35"--N 38°41'29").
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/nom#255-test02">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdano:P80172 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc255-test02"/><!--rdano:P80172 = is identifier for work group of-->
+      <rdand:P80068>255-test02</rdand:P80068><!--rdand:P80068 = has nomen string-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc255-test02"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
       <rdawd:P10081>W 9°13'52"--W 9°04'47"/N 38°48'35"--N 38°41'29"</rdawd:P10081><!--rdawd:P10081 = has longitude and latitude-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/255-test1exp">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/255-test1man"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/255-test1wor"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20002>255-test1exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
-      <fake:marcfield>F255 ## $a Scale [ca. 1:10,000] ; $b Gauss proj. $c (W 9°13'52"--W 9°04'47"/N 38°48'35"--N 38°41'29").</fake:marcfield>
-      <rdaed:P20228>Scale [ca. 1:10,000] ;</rdaed:P20228><!--rdaed:P20228 = has scale-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc255-test02"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20228>Scale [ca. 1:10,000]</rdaed:P20228><!--rdaed:P20228 = has scale-->
       <rdaed:P20216>Gauss proj.</rdaed:P20216><!--rdaed:P20216 = has projection of cartographic content-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/255-test1man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/255-test1exp"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc255-test02"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/255-test1wor">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc255-test03">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/255-test1exp"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10002>255-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <fake:marcfield>F255 ## $a Scale 88 mm per 1° $d (RA 16 hr./Decl. +30° ; $e eeq. 1973.50). $f test_f $g test_g $6 test_6 $7 test_7 $8 test_8</fake:marcfield>
+      <rdawo:P10400 rdf:resource="http://marc2rda.edu/fake/transform/nom#255-test03"/><!--rdawo:P10400 = has identifier for work group-->
+      <rdawd:P10002>transform/wor#marc255-test03</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc255-test03"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc255-test03">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc255-test03"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30004>transform/man#marc255-test03</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 255-test03
+F255 ## $a Test no number $d (RA 16 hr./Decl. +30° ; $e eeq. 1973.50). $f test_f $g test_g $6 test_6 $7 test_7 $8 test_8
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/nom#255-test03">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdano:P80172 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc255-test03"/><!--rdano:P80172 = is identifier for work group of-->
+      <rdand:P80068>255-test03</rdand:P80068><!--rdand:P80068 = has nomen string-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc255-test03"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
       <rdawd:P10082>RA 16 hr./Decl. +30°</rdawd:P10082><!--rdawd:P10082 = has right ascension and declination-->
       <rdawd:P10214>eeq. 1973.50</rdawd:P10214><!--rdawd:P10214 = has equinox-->
       <rdawd:P10024>Outer G-ring coordinate pairs: test_f</rdawd:P10024><!--rdawd:P10024 = has coordinates of cartographic content-->
       <rdawd:P10024>Exclusion G-ring coordinate pairs: test_g</rdawd:P10024><!--rdawd:P10024 = has coordinates of cartographic content-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/255-test1exp">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/255-test1man"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/255-test1wor"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20002>255-test1exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
-      <fake:marcfield>F255 ## $a Scale 88 mm per 1° $d (RA 16 hr./Decl. +30° ; $e eeq. 1973.50). $f test_f $g test_g $6 test_6 $7 test_7 $8 test_8</fake:marcfield>
-      <rdaed:P20228>Scale 88 mm per 1°</rdaed:P20228><!--rdaed:P20228 = has scale-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc255-test03"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20291>Test no number</rdaed:P20291><!--rdaed:P20291 = has scale designation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/255-test1man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/255-test1exp"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc255-test03"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
    </rdf:Description>
 </rdf:RDF>

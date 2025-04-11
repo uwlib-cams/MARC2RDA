@@ -431,15 +431,21 @@
     <xsl:template match="marc:datafield[@tag = '255'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '255']"
         mode="aggWor" expand-text="yes">
         <!--<xsl:call-template name="getmarc"/>-->
+        <!-- Remove trailing punctuation from subfield a -->
+        <xsl:variable name="cleanA" select="
+            normalize-space(
+                replace(marc:subfield[@code = 'a'], '(\p{P})+$', '')
+            )
+        "/>
         <xsl:if test="marc:subfield[@code = 'a'][matches(., '[0-9]')]">
             <rdawd:P10356>
-                <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                <xsl:value-of select="$cleanA"/>
             </rdawd:P10356>
         </xsl:if>
         <xsl:if test="marc:subfield[@code = 'a'][not(matches(., '[0-9]'))]">
             <rdawd:P10330>
                 <xsl:text>Scale designation: </xsl:text>
-                <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                <xsl:value-of select="$cleanA"/>
             </rdawd:P10330>
         </xsl:if>
         <xsl:if test="marc:subfield[@code = 'b']">
@@ -452,14 +458,20 @@
     <xsl:template match="marc:datafield[@tag = '255'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '255']"
         mode="exp" expand-text="yes">
         <!--<xsl:call-template name="getmarc"/>-->
+        <!-- Remove trailing punctuation from subfield a -->
+        <xsl:variable name="cleanA" select="
+            normalize-space(
+                replace(marc:subfield[@code = 'a'], '(\p{P})+$', '')
+            )
+        "/>
         <xsl:if test="marc:subfield[@code = 'a'][matches(., '[0-9]')]">
             <rdaed:P20228>
-                <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                <xsl:value-of select="$cleanA"/>
             </rdaed:P20228>
         </xsl:if>
         <xsl:if test="marc:subfield[@code = 'a'][not(matches(., '[0-9]'))]">
             <rdaed:P20291>
-                <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                <xsl:value-of select="$cleanA"/>
             </rdaed:P20291>
         </xsl:if>
         <xsl:if test="marc:subfield[@code = 'b']">
