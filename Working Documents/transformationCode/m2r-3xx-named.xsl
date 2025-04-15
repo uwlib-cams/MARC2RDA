@@ -218,7 +218,8 @@
                                     <xsl:if test="$linked880">
                                         <xsl:for-each
                                             select="$linked880/marc:datafield/marc:subfield[position()][@code = 'a']">
-                                            <xsl:copy-of select="uwf:fillConcept(., '', '', '880')"/>
+                                            <xsl:copy-of select="uwf:fillConcept(., '', '', '880')"
+                                            />
                                         </xsl:for-each>
                                     </xsl:if>
                                 </rdf:Description>
@@ -330,7 +331,7 @@
                                             <rdaw:P10365 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
                                                 <rdawd:P10330>
-                                                    <xsl:text>Extension plan {uwf:conceptIRI($sub2, .)} applies to the work's {../marc:subfield[@code = '3']}</xsl:text>
+                                                  <xsl:text>Extension plan {uwf:conceptIRI($sub2, .)} applies to the work's {../marc:subfield[@code = '3']}</xsl:text>
                                                 </rdawd:P10330>
                                             </xsl:if>
                                         </xsl:for-each>
@@ -344,7 +345,7 @@
                                             <rdaw:P10365 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
                                                 <rdawd:P10330>
-                                                    <xsl:text>Extension plan {uwf:conceptIRI($sub2, .)} applies to the work's {../marc:subfield[@code = '3']}</xsl:text>
+                                                  <xsl:text>Extension plan {uwf:conceptIRI($sub2, .)} applies to the work's {../marc:subfield[@code = '3']}</xsl:text>
                                                 </rdawd:P10330>
                                             </xsl:if>
                                         </xsl:for-each>
@@ -358,7 +359,7 @@
                                             <rdaw:P10365 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
                                                 <rdawd:P10330>
-                                                    <xsl:text>Extension plan {uwf:conceptIRI($sub2, .)} applies to the work's {../marc:subfield[@code = '3']}</xsl:text>
+                                                  <xsl:text>Extension plan {uwf:conceptIRI($sub2, .)} applies to the work's {../marc:subfield[@code = '3']}</xsl:text>
                                                 </rdawd:P10330>
                                             </xsl:if>
                                         </xsl:for-each>
@@ -372,7 +373,7 @@
                                             <rdaw:P10365 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
                                                 <rdawd:P10330>
-                                                    <xsl:text>
+                                                  <xsl:text>
                                                         Extension plan {uwf:conceptIRI($sub2, .)} applies to the work's {../marc:subfield[@code = '3']}
                                                     </xsl:text>
                                                 </rdawd:P10330>
@@ -707,7 +708,7 @@
                                             <rdam:P30002 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
                                                 <rdamd:P30137>
-                                                    <xsl:text>Media type {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                                                  <xsl:text>Media type {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
                                                 </rdamd:P30137>
                                             </xsl:if>
                                         </xsl:for-each>
@@ -721,7 +722,7 @@
                                             <rdam:P30002 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
                                                 <rdamd:P30137>
-                                                    <xsl:text>Media type {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                                                  <xsl:text>Media type {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
                                                 </rdamd:P30137>
                                             </xsl:if>
                                         </xsl:for-each>
@@ -735,7 +736,7 @@
                                             <rdam:P30002 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
                                                 <rdamd:P30137>
-                                                    <xsl:text> Media type {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                                                  <xsl:text> Media type {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
                                                 </rdamd:P30137>
                                             </xsl:if>
                                         </xsl:for-each>
@@ -749,7 +750,7 @@
                                             <rdam:P30002 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
                                                 <rdamd:P30137>
-                                                    <xsl:text>Media type {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                                                  <xsl:text>Media type {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
                                                 </rdamd:P30137>
                                             </xsl:if>
                                         </xsl:for-each>
@@ -999,7 +1000,7 @@
                                             <rdam:P30001 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
                                                 <rdamd:P30137>
-                                                    <xsl:text>Carrier type {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                                                  <xsl:text>Carrier type {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
                                                 </rdamd:P30137>
                                             </xsl:if>
                                         </xsl:for-each>
@@ -1013,7 +1014,7 @@
                                             <rdam:P30001 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
                                                 <rdamd:P30137>
-                                                    <xsl:text>Carrier type {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                                                  <xsl:text>Carrier type {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
                                                 </rdamd:P30137>
                                             </xsl:if>
                                         </xsl:for-each>
@@ -1027,7 +1028,7 @@
                                             <rdam:P30001 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
                                                 <rdamd:P30137>
-                                                    <xsl:text>Carrier type {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                                                  <xsl:text>Carrier type {uwf:conceptIRI($sub2, .)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
                                                 </rdamd:P30137>
                                             </xsl:if>
                                         </xsl:for-each>
@@ -1041,7 +1042,7 @@
                                             <rdam:P30001 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
                                                 <rdamd:P30137>
-                                                    <xsl:text>Carrier type {uwf:conceptIRI($sub2,.)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
+                                                  <xsl:text>Carrier type {uwf:conceptIRI($sub2,.)} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
                                                 </rdamd:P30137>
                                             </xsl:if>
                                         </xsl:for-each>
@@ -2943,6 +2944,132 @@
                 <xsl:text>Encoded bitrate {$value}</xsl:text>
             </xsl:if>
             <xsl:text> applies to {$sub3}</xsl:text>
+        </rdamd:P30137>
+    </xsl:template>
+
+    <!-- 357 -->
+    <xsl:template name="F357-xx-abcg" expand-text="yes">
+        <!-- Pull all subfields -->
+        <xsl:variable name="a" select="string(marc:subfield[@code = 'a'][1])"/>
+        <xsl:variable name="b-list" select="string(marc:subfield[@code = 'b'][1])"/>
+        <xsl:variable name="c-list" select="string(marc:subfield[@code = 'c'][1])"/>
+        <xsl:variable name="g-list" select="string(marc:subfield[@code = 'g'][1])"/>
+
+        <!-- Join with commas -->
+        <xsl:variable name="b" select="
+                string-join(for $bval in $b-list
+                return
+                    normalize-space(string($bval)), ', ')"/>
+        <xsl:variable name="c" select="
+                string-join(for $cval in $c-list
+                return
+                    normalize-space(string($cval)), ', ')"/>
+        <xsl:variable name="g" select="
+                string-join(for $gval in $g-list
+                return
+                    normalize-space(string($gval)), ', ')"/>
+
+        <!-- Needs updating for repeatable values and clarification on how to handle when repeated -->
+        <rdamd:P30137>
+            <!-- a, a&c, a&g, a&c&g -->
+            <xsl:if test="$a != '' and $b = ''">
+                <xsl:text>The disseminating agency denotes their control of dissemination using the term </xsl:text>
+                <xsl:value-of select="$a"/>
+
+                <xsl:if test="$c != '' and $g = ''">
+                    <xsl:text> to the authorized recipients, </xsl:text>
+                    <xsl:value-of select="$c"/>
+                </xsl:if>
+
+                <xsl:if test="$g != '' and $c = ''">
+                    <xsl:text> with the following restrictions: </xsl:text>
+                    <xsl:value-of select="$g"/>
+                </xsl:if>
+
+                <xsl:if test="$c != '' and $g != ''">
+                    <xsl:text> to the authorized recipients, </xsl:text>
+                    <xsl:value-of select="$c"/>
+                    <xsl:text>, with the following restrictions: </xsl:text>
+                    <xsl:value-of select="$g"/>
+                </xsl:if>
+            </xsl:if>
+
+            <!-- b -->
+            <xsl:if test="$b != '' and $a = '' and $c = '' and $g = ''">
+                <xsl:text>The originating agency is </xsl:text>
+                <xsl:value-of select="$b"/>
+            </xsl:if>
+
+            <!-- a&b, a&b&c, a&b&g, a&b&c&g, b&c, b&g, b&c&g -->
+            <xsl:if test="$b != '' and not($a = '' and $c = '' and $g = '')">
+                <xsl:text>The originating agency, </xsl:text>
+                <xsl:value-of select="$b"/>
+
+                <!-- cases with a -->
+                <xsl:if test="$a != '' and $c = '' and $g = ''">
+                    <xsl:text>, denotes their control of dissemination using the term </xsl:text>
+                    <xsl:value-of select="$a"/>
+                </xsl:if>
+
+                <xsl:if test="$a != '' and $c != '' and $g = ''">
+                    <xsl:text>, denotes their control of dissemination using the term </xsl:text>
+                    <xsl:value-of select="$a"/>
+                    <xsl:text> to the authorized recipients, </xsl:text>
+                    <xsl:value-of select="$c"/>
+                </xsl:if>
+
+                <xsl:if test="$a != '' and $c = '' and $g != ''">
+                    <xsl:text>, denotes their control of dissemination using the term </xsl:text>
+                    <xsl:value-of select="$a"/>
+                    <xsl:text> with the following restrictions: </xsl:text>
+                    <xsl:value-of select="$g"/>
+                </xsl:if>
+
+                <xsl:if test="$a != '' and $c != '' and $g != ''">
+                    <xsl:text>, denotes their control of dissemination using the term </xsl:text>
+                    <xsl:value-of select="$a"/>
+                    <xsl:text> to the authorized recipients, </xsl:text>
+                    <xsl:value-of select="$c"/>
+                    <xsl:text>, with the following restrictions: </xsl:text>
+                    <xsl:value-of select="$g"/>
+                </xsl:if>
+
+                <!-- cases without a -->
+                <xsl:if test="$a = '' and $c != '' and $g = ''">
+                    <xsl:text> controls dissemination to the authorized recipients, </xsl:text>
+                    <xsl:value-of select="$c"/>
+                </xsl:if>
+
+                <xsl:if test="$a = '' and $c = '' and $g != ''">
+                    <xsl:text>, denotes their control of dissemination with the following restrictions: </xsl:text>
+                    <xsl:value-of select="$g"/>
+                </xsl:if>
+
+                <xsl:if test="$a = '' and $c != '' and $g != ''">
+                    <xsl:text> controls dissemination to the authorized recipients, </xsl:text>
+                    <xsl:value-of select="$c"/>
+                    <xsl:text>, with the following restrictions: </xsl:text>
+                    <xsl:value-of select="$g"/>
+                </xsl:if>
+            </xsl:if>
+
+            <!-- c, g, c&g -->
+            <xsl:if test="$a = '' and $b = ''">
+                <xsl:if test="$c != '' and $g = ''">
+                    <xsl:text>Disseminated by the originating agency to the following authorized recipient: </xsl:text>
+                    <xsl:value-of select="$c"/>
+                </xsl:if>
+                <xsl:if test="$c = '' and $g != ''">
+                    <xsl:text>Desseminated with the following restrictions: </xsl:text>
+                    <xsl:value-of select="$g"/>
+                </xsl:if>
+                <xsl:if test="$c != '' and $g != ''">
+                    <xsl:text>Disseminated by the originating agency to the following authorized recipient: </xsl:text>
+                    <xsl:value-of select="$c"/>
+                    <xsl:text>, with the following restrictions: </xsl:text>
+                    <xsl:value-of select="$g"/>
+                </xsl:if>
+            </xsl:if>
         </rdamd:P30137>
     </xsl:template>
 

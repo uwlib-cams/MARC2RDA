@@ -18,8 +18,9 @@
     <xsl:import href="getmarc.xsl"/>
     <xsl:import href="m2r-functions.xsl"/>
     <xsl:import href="m2r-iris.xsl"/>
-    
-    <xsl:template match="marc:datafield[@tag = '300'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '300']"
+
+    <xsl:template
+        match="marc:datafield[@tag = '300'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '300']"
         mode="man origMan" expand-text="yes">
         <xsl:param name="type"/>
         <!--<xsl:call-template name="getmarc"/>-->
@@ -30,18 +31,22 @@
                     <xsl:when test="$conditionMet = '588'">
                         <xsl:if test="$type = 'reproduction'">
                             <rdamd:P30182>
-                                <xsl:value-of select="marc:subfield[@code = '3'] | marc:subfield[@code = 'a'] 
-                                    | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'e']
-                                    | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g']" separator=" "/>
+                                <xsl:value-of select="
+                                        marc:subfield[@code = '3'] | marc:subfield[@code = 'a']
+                                        | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'e']
+                                        | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g']"
+                                    separator=" "/>
                             </rdamd:P30182>
                         </xsl:if>
                     </xsl:when>
                     <xsl:when test="$conditionMet = '533'">
                         <xsl:if test="$type = 'origMan'">
                             <rdamd:P30182>
-                                <xsl:value-of select="marc:subfield[@code = '3'] | marc:subfield[@code = 'a'] 
-                                    | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'e']
-                                    | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g']" separator=" "/>
+                                <xsl:value-of select="
+                                        marc:subfield[@code = '3'] | marc:subfield[@code = 'a']
+                                        | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'e']
+                                        | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g']"
+                                    separator=" "/>
                             </rdamd:P30182>
                         </xsl:if>
                     </xsl:when>
@@ -49,16 +54,19 @@
             </xsl:when>
             <xsl:otherwise>
                 <rdamd:P30182>
-                    <xsl:value-of select="marc:subfield[@code = '3'] | marc:subfield[@code = 'a'] 
-                        | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'e']
-                        | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g']" separator=" "/>
+                    <xsl:value-of select="
+                            marc:subfield[@code = '3'] | marc:subfield[@code = 'a']
+                            | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'e']
+                            | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g']"
+                        separator=" "/>
                 </rdamd:P30182>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    
+
     <!-- 306 -->
-    <xsl:template match="marc:datafield[@tag = '306'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '306']"
+    <xsl:template
+        match="marc:datafield[@tag = '306'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '306']"
         mode="aggWor" expand-text="yes">
         <!--<xsl:call-template name="getmarc"/>-->
         <xsl:for-each select="marc:subfield[@code = 'a']">
@@ -66,8 +74,9 @@
                 >{replace(.,'([0-9][0-9])([0-9][0-9])([0-9][0-9])','$1:$2:$3')}</rdawd:P10351>
         </xsl:for-each>
     </xsl:template>
-    
-    <xsl:template match="marc:datafield[@tag = '306'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '306']"
+
+    <xsl:template
+        match="marc:datafield[@tag = '306'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '306']"
         mode="exp" expand-text="yes">
         <!--<xsl:call-template name="getmarc"/>-->
         <xsl:for-each select="marc:subfield[@code = 'a']">
@@ -75,8 +84,8 @@
                 >{replace(.,'([0-9][0-9])([0-9][0-9])([0-9][0-9])','$1:$2:$3')}</rdaed:P20219>
         </xsl:for-each>
     </xsl:template>
-    
-    
+
+
     <xsl:template
         match="marc:datafield[@tag = '307'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '307']"
         mode="man" expand-text="yes">
@@ -88,78 +97,88 @@
             </xsl:if>
         </rdamd:P30137>
     </xsl:template>
-    
+
     <!-- 334 - Mode of Issuance -->
-    <xsl:template match="marc:datafield[@tag = '334'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '334']" 
-            mode="man">
+    <xsl:template
+        match="marc:datafield[@tag = '334'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '334']"
+        mode="man">
         <!--<xsl:call-template name="getmarc"/>-->
         <xsl:call-template name="F334-string"/>
         <xsl:call-template name="F334-iri"/>
     </xsl:template>
 
-    <xsl:template match="marc:datafield[@tag = '334'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '334-00']" 
+    <xsl:template
+        match="marc:datafield[@tag = '334'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '334-00']"
         mode="con">
         <xsl:call-template name="F334-concept"/>
     </xsl:template>
-    
+
     <!-- 335 - Extension Plan -->
-    <xsl:template match="marc:datafield[@tag = '335'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '335']" 
+    <xsl:template
+        match="marc:datafield[@tag = '335'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '335']"
         mode="wor">
         <!--<xsl:call-template name="getmarc"/>-->
         <xsl:call-template name="F335-string"/>
         <xsl:call-template name="F335-iri"/>
     </xsl:template>
-    
-    <xsl:template match="marc:datafield[@tag = '335'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '335-00']" 
+
+    <xsl:template
+        match="marc:datafield[@tag = '335'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '335-00']"
         mode="con">
         <xsl:call-template name="F335-concept"/>
     </xsl:template>
-    
-<!--    <xsl:template match="marc:datafield[@tag = '336']" mode="exp">
+
+    <!--    <xsl:template match="marc:datafield[@tag = '336']" mode="exp">
         <xsl:call-template name="getmarc"/>
          Accounted for: $a, $b, $2-temporary, $3-partial, $0, $1 
         <!-\-Not accounted for: $2 needs permanent solution, $3 with $0 and $1, $6, $7, $8 -\->
         <xsl:call-template name="F336-xx-ab0-string"/>
         <xsl:call-template name="F336-xx-01-iri"/>
     </xsl:template>-->
-    
+
     <!-- 337 - Media Type -->
-    <xsl:template match="marc:datafield[@tag = '337'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '337']" 
+    <xsl:template
+        match="marc:datafield[@tag = '337'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '337']"
         mode="man">
         <!--<xsl:call-template name="getmarc"/>-->
         <xsl:call-template name="F337-string"/>
         <xsl:call-template name="F337-iri"/>
     </xsl:template>
-    
-    <xsl:template match="marc:datafield[@tag = '337'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '337-00']" 
+
+    <xsl:template
+        match="marc:datafield[@tag = '337'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '337-00']"
         mode="con">
         <xsl:call-template name="F337-concept"/>
     </xsl:template>
-    
+
     <!-- 338 - Carrier Type -->
-    <xsl:template match="marc:datafield[@tag = '338'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '338']" 
+    <xsl:template
+        match="marc:datafield[@tag = '338'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '338']"
         mode="man">
         <!--<xsl:call-template name="getmarc"/>-->
         <xsl:call-template name="F338-string"/>
         <xsl:call-template name="F338-iri"/>
     </xsl:template>
-    
-    <xsl:template match="marc:datafield[@tag = '338'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '338-00']" 
+
+    <xsl:template
+        match="marc:datafield[@tag = '338'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '338-00']"
         mode="con">
         <xsl:call-template name="F338-concept"/>
     </xsl:template>
-    
+
     <!-- 340 - Physical Medium -->
-    <xsl:template match="marc:datafield[@tag = '340'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '340']" 
+    <xsl:template
+        match="marc:datafield[@tag = '340'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '340']"
         mode="man">
         <!--<xsl:call-template name="getmarc"/>-->
         <xsl:call-template name="F340-b_f_h_i"/>
         <!-- these fields require lookups or minted concepts -->
-        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd']
-            | marc:subfield[@code = 'e'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'j']
-            | marc:subfield[@code = 'k'] | marc:subfield[@code = 'l'] | marc:subfield[@code = 'm']
-            | marc:subfield[@code = 'n'] | marc:subfield[@code = 'o'] | marc:subfield[@code = 'p']
-            | marc:subfield[@code = 'q']">
+        <xsl:for-each select="
+                marc:subfield[@code = 'a'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd']
+                | marc:subfield[@code = 'e'] | marc:subfield[@code = 'g'] | marc:subfield[@code = 'j']
+                | marc:subfield[@code = 'k'] | marc:subfield[@code = 'l'] | marc:subfield[@code = 'm']
+                | marc:subfield[@code = 'n'] | marc:subfield[@code = 'o'] | marc:subfield[@code = 'p']
+                | marc:subfield[@code = 'q']">
             <xsl:choose>
                 <!-- different subfields require different properties, 
                     the templates are set up to accommodate this with the param $propertyNum-->
@@ -232,13 +251,15 @@
             </xsl:choose>
         </xsl:for-each>
     </xsl:template>
-    
-    <xsl:template match="marc:datafield[@tag = '340'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '340-00']"
+
+    <xsl:template
+        match="marc:datafield[@tag = '340'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '340-00']"
         mode="con">
         <xsl:call-template name="F340-concept"/>
     </xsl:template>
-    
-    <xsl:template match="marc:datafield[@tag = '340'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '340']" 
+
+    <xsl:template
+        match="marc:datafield[@tag = '340'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '340']"
         mode="aggWor">
         <xsl:for-each select="marc:subfield[@code = 'g']">
             <xsl:call-template name="F340-xx-a_c_d_e_g_j_k_l_m_n_o_p_q_0_1">
@@ -247,9 +268,10 @@
             </xsl:call-template>
         </xsl:for-each>
     </xsl:template>
-    
+
     <!-- 342 - Geospatial Reference Data -->
-    <xsl:template match="marc:datafield[@tag = '342'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '342']"
+    <xsl:template
+        match="marc:datafield[@tag = '342'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '342']"
         mode="aggWor" expand-text="yes">
         <!--<xsl:call-template name="getmarc"/>-->
         <xsl:call-template name="F342-xx-a-aggWor"/>
@@ -257,8 +279,9 @@
         <xsl:call-template name="F342-x1-egh-aggWor"/>
         <xsl:call-template name="F342-xx-k-aggWor"/>
     </xsl:template>
-    
-    <xsl:template match="marc:datafield[@tag = '342'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '342']"
+
+    <xsl:template
+        match="marc:datafield[@tag = '342'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '342']"
         mode="exp" expand-text="yes">
         <!--<xsl:call-template name="getmarc"/>-->
         <xsl:call-template name="F342-xx-a"/>
@@ -266,24 +289,29 @@
         <xsl:call-template name="F342-x1-egh"/>
         <xsl:call-template name="F342-xx-k"/>
     </xsl:template>
-    
-    <xsl:template match="marc:datafield[@tag = '342'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '342']"
+
+    <xsl:template
+        match="marc:datafield[@tag = '342'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '342']"
         mode="wor" expand-text="yes">
-        <xsl:if test="marc:subfield[@code = 'q'] and marc:subfield[@code = 'r']">        <rdaw:P10330>
+        <xsl:if test="marc:subfield[@code = 'q'] and marc:subfield[@code = 'r']">
+            <rdaw:P10330>
                 <xsl:text>Ellipsoid name: </xsl:text>
-                <xsl:value-of select="marc:subfield[@code = 'q']" />
+                <xsl:value-of select="marc:subfield[@code = 'q']"/>
                 <xsl:text>. Semi-major axis: </xsl:text>
-                <xsl:value-of select="marc:subfield[@code = 'r']" />
-       </rdaw:P10330></xsl:if> 
+                <xsl:value-of select="marc:subfield[@code = 'r']"/>
+            </rdaw:P10330>
+        </xsl:if>
     </xsl:template>
-    
+
     <!-- 343 - Planar Coordinate Data  -->
-    <xsl:template match="marc:datafield[@tag = '343'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '343']"
+    <xsl:template
+        match="marc:datafield[@tag = '343'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '343']"
         mode="aggWor" expand-text="yes">
         <rdawd:P10330>
-            <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
-                | marc:subfield[@code = 'd'] | marc:subfield[@code = 'e'] | marc:subfield[@code = 'f']
-                | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h'] | marc:subfield[@code = 'i']">
+            <xsl:for-each select="
+                    marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
+                    | marc:subfield[@code = 'd'] | marc:subfield[@code = 'e'] | marc:subfield[@code = 'f']
+                    | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h'] | marc:subfield[@code = 'i']">
                 <xsl:if test="@code = 'a'">
                     <xsl:text>Planar coordinate encoding method: {.}</xsl:text>
                 </xsl:if>
@@ -317,13 +345,15 @@
             </xsl:for-each>
         </rdawd:P10330>
     </xsl:template>
-    
-    <xsl:template match="marc:datafield[@tag = '343'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '343']"
+
+    <xsl:template
+        match="marc:datafield[@tag = '343'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '343']"
         mode="exp" expand-text="yes">
         <rdaed:P20071>
-            <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
-                | marc:subfield[@code = 'd'] | marc:subfield[@code = 'e'] | marc:subfield[@code = 'f']
-                | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h'] | marc:subfield[@code = 'i']">
+            <xsl:for-each select="
+                    marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
+                    | marc:subfield[@code = 'd'] | marc:subfield[@code = 'e'] | marc:subfield[@code = 'f']
+                    | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h'] | marc:subfield[@code = 'i']">
                 <xsl:if test="@code = 'a'">
                     <xsl:text>Planar coordinate encoding method: {.}</xsl:text>
                 </xsl:if>
@@ -357,14 +387,16 @@
             </xsl:for-each>
         </rdaed:P20071>
     </xsl:template>
-    
+
     <!-- 344 - Sound Characteristics -->
-    <xsl:template match="marc:datafield[@tag = '344'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '344']" 
+    <xsl:template
+        match="marc:datafield[@tag = '344'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '344']"
         mode="man">
         <!--<xsl:call-template name="getmarc"/>-->
-        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
-            | marc:subfield[@code = 'd']| marc:subfield[@code = 'e'] | marc:subfield[@code = 'f'] 
-            | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h'] | marc:subfield[@code = 'i']">
+        <xsl:for-each select="
+                marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
+                | marc:subfield[@code = 'd'] | marc:subfield[@code = 'e'] | marc:subfield[@code = 'f']
+                | marc:subfield[@code = 'g'] | marc:subfield[@code = 'h'] | marc:subfield[@code = 'i']">
             <xsl:choose>
                 <xsl:when test="@code = 'a'">
                     <xsl:call-template name="F344-xx-a_b_c_d_e_f_g_h_i_0_1">
@@ -387,14 +419,15 @@
                 <xsl:when test="@code = 'd'">
                     <xsl:choose>
                         <xsl:when test="(text() = 'fine') or (text() = 'standard')">
-                            <xsl:variable name="rdaIRI" select="uwf:rdaTermLookup('rdagrp', .)"/>                                        
+                            <xsl:variable name="rdaIRI" select="uwf:rdaTermLookup('rdagrp', .)"/>
                             <xsl:if test="$rdaIRI">
                                 <rdamo:P30307>
                                     <xsl:attribute name="rdf:resource" select="$rdaIRI"/>
                                 </rdamo:P30307>
                                 <xsl:if test="../marc:subfield[@code = '3']">
                                     <xsl:call-template name="F344-xx-3">
-                                        <xsl:with-param name="sub3" select="../marc:subfield[@code = '3']"/>
+                                        <xsl:with-param name="sub3"
+                                            select="../marc:subfield[@code = '3']"/>
                                         <xsl:with-param name="subfield" select="."/>
                                         <xsl:with-param name="value" select="$rdaIRI"/>
                                     </xsl:call-template>
@@ -402,14 +435,15 @@
                             </xsl:if>
                         </xsl:when>
                         <xsl:when test="(text() = 'coarse groove') or (text() = 'microgroove')">
-                            <xsl:variable name="rdaIRI" select="uwf:rdaTermLookup('rdagw', .)"/>                                        
+                            <xsl:variable name="rdaIRI" select="uwf:rdaTermLookup('rdagw', .)"/>
                             <xsl:if test="$rdaIRI">
                                 <rdamo:P30308>
                                     <xsl:attribute name="rdf:resource" select="$rdaIRI"/>
                                 </rdamo:P30308>
                                 <xsl:if test="../marc:subfield[@code = '3']">
                                     <xsl:call-template name="F344-xx-3">
-                                        <xsl:with-param name="sub3" select="../marc:subfield[@code = '3']"/>
+                                        <xsl:with-param name="sub3"
+                                            select="../marc:subfield[@code = '3']"/>
                                         <xsl:with-param name="subfield" select="."/>
                                         <xsl:with-param name="value" select="$rdaIRI"/>
                                     </xsl:call-template>
@@ -458,13 +492,15 @@
             </xsl:choose>
         </xsl:for-each>
     </xsl:template>
-    
-    <xsl:template match="marc:datafield[@tag = '344'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '344-00']"
+
+    <xsl:template
+        match="marc:datafield[@tag = '344'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '344-00']"
         mode="con">
         <xsl:call-template name="F344-concept"/>
     </xsl:template>
-    
-    <xsl:template match="marc:datafield[@tag = '344'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '344']" 
+
+    <xsl:template
+        match="marc:datafield[@tag = '344'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '344']"
         mode="aggWor">
         <xsl:for-each select="marc:subfield[@code = 'i']">
             <xsl:call-template name="F344-xx-a_b_c_d_e_f_g_h_i_0_1">
@@ -473,28 +509,32 @@
             </xsl:call-template>
         </xsl:for-each>
     </xsl:template>
-    
+
     <!-- 346 - Video Characteristics -->
-    <xsl:template match="marc:datafield[@tag = '346'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '346']" 
+    <xsl:template
+        match="marc:datafield[@tag = '346'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '346']"
         mode="man">
         <!--<xsl:call-template name="getmarc"/>-->
         <xsl:call-template name="F346-string"/>
         <xsl:call-template name="F346-iri"/>
     </xsl:template>
-    
-    <xsl:template match="marc:datafield[@tag = '346'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '346-00']" 
+
+    <xsl:template
+        match="marc:datafield[@tag = '346'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '346-00']"
         mode="con">
         <xsl:call-template name="F346-concept"/>
     </xsl:template>
-    
+
     <!-- 347 - Digital File Characteristics -->
-    
-    <xsl:template match="marc:datafield[@tag = '347'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '347']" 
+
+    <xsl:template
+        match="marc:datafield[@tag = '347'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '347']"
         mode="man">
         <!--<xsl:call-template name="getmarc"/>-->
         <xsl:call-template name="F347-c"/>
-        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']
-            | marc:subfield[@code = 'd'] | marc:subfield[@code = 'e'] | marc:subfield[@code = 'f']">
+        <xsl:for-each select="
+                marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']
+                | marc:subfield[@code = 'd'] | marc:subfield[@code = 'e'] | marc:subfield[@code = 'f']">
             <xsl:choose>
                 <xsl:when test="@code = 'a'">
                     <xsl:call-template name="F347-xx-a_b_d_e_f_0_1">
@@ -525,142 +565,156 @@
             </xsl:choose>
         </xsl:for-each>
     </xsl:template>
-    
-    <xsl:template match="marc:datafield[@tag = '347'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '347-00']"
+
+    <xsl:template
+        match="marc:datafield[@tag = '347'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '347-00']"
         mode="con">
         <xsl:call-template name="F347-concept"/>
     </xsl:template>
-    
-<!-- 351 Organization and Arrangement of Materials--> 
-    <xsl:template match="marc:datafield[@tag = '351'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'],1,6) = '351']" mode="wor" expand-text="yes">
-        <rdaw:P10084><xsl:for-each select="marc:subfield[@code = 'c'] | marc:subfield[@code = 'a']| marc:subfield[@code = 'b']|marc:subfield[@code = '3']">       
-        <xsl:if test="@code = 'c'">
-            <xsl:text>Hierarchical level: {.}.</xsl:text>
-        </xsl:if>
-        <xsl:if test="@code = 'a'">
-            <xsl:text>Organization: {.}.</xsl:text>
-        </xsl:if>
-        <xsl:if test="@code = 'b'">
-            <xsl:text>Arrangement: {.}.</xsl:text>
-        </xsl:if>
-        <xsl:if test="@code = '3'">
-            <xsl:text>(Applies to: {.})</xsl:text>
-        </xsl:if>             
-        <xsl:if test="position() != last()">
-            <xsl:text>; </xsl:text>
-        </xsl:if>     
-        </xsl:for-each> </rdaw:P10084>
-    </xsl:template>
-    
-    <!-- 352 Digital Graphic Representation--> 
-    
-      <xsl:template match="marc:datafield[@tag = '352'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'],1,6) = '352']" 
-        mode="man" 
-        expand-text="yes">
-          
-          <rdamd:P30261>
-              <xsl:for-each select="marc:subfield[@code = 'a' or @code = 'b' or @code = 'c']">
-                  <!-- Add a space before the second/third item -->
-                  <xsl:if test="position() > 1">
-                      <xsl:text> </xsl:text>
-                  </xsl:if>
-                  
-                  <!-- Process based on subfield code -->
-                  <xsl:choose>
-                      <xsl:when test="@code = 'a'">
-                          <xsl:text>Direct reference method: </xsl:text>
-                          <xsl:value-of select="uwf:stripAllPunctuation(string(.))"/>
-                          <xsl:text>.</xsl:text>
-                      </xsl:when>
-                      <xsl:when test="@code = 'b'">
-                          <xsl:text>Object type: </xsl:text>
-                          <xsl:value-of select="uwf:stripEndPunctuation(string(.))"/>
-                          <xsl:text>.</xsl:text>
-                      </xsl:when>
-                      <xsl:when test="@code = 'c'">
-                          <xsl:text>Object count: </xsl:text>
-                          <xsl:value-of select="uwf:stripAllPunctuation(string(.))"/>
-                          <xsl:text>.</xsl:text>
-                      </xsl:when>
-                  </xsl:choose>
-              </xsl:for-each>
-          </rdamd:P30261>
-          
-          <!-- Check if any d, e, or f subfields exist before creating the P30102 element -->
-          <xsl:if test="marc:subfield[@code = 'd' or @code = 'e' or @code = 'f']">
-              <rdamd:P30102>
-                  <xsl:for-each select="marc:subfield[@code = 'd' or @code = 'e' or @code = 'f']">
-                      <!-- Add a space before the second/third item within this group -->
-                      <xsl:if test="position() > 1">
-                          <xsl:text> </xsl:text>
-                      </xsl:if>
-                      
-                      <!-- Process based on subfield code -->
-                      <xsl:choose>
-                          <xsl:when test="@code = 'd'">
-                              <xsl:text>Row count: </xsl:text>
-                              <!-- Apply stripAllPunctuation first, then remove 'x' and 'X' -->
-                              <xsl:variable name="d_stripped" select="uwf:stripAllPunctuation(string(.))"/>
-                              <xsl:value-of select="translate($d_stripped, 'xX', '')"/>
-                              <xsl:text>.</xsl:text>
-                          </xsl:when>
-                          <xsl:when test="@code = 'e'">
-                              <xsl:text>Column count: </xsl:text>
-                              <xsl:value-of select="uwf:stripAllPunctuation(string(.))"/>
-                              <xsl:text>.</xsl:text>
-                          </xsl:when>
-                          <xsl:when test="@code = 'f'">
-                              <xsl:text>Vertical count: </xsl:text>
-                              <xsl:value-of select="uwf:stripAllPunctuation(string(.))"/>
-                              <xsl:text>.</xsl:text>
-                          </xsl:when>
-                      </xsl:choose>
-                  </xsl:for-each>
-              </rdamd:P30102>
-          </xsl:if>
 
-          <!-- Check if g subfields exist before creating the P30102 element -->
-          <xsl:if test="marc:subfield[@code = 'g']">
-              <rdamd:P30102>
-                  <xsl:text>VPF topology level: {marc:subfield[@code = 'g']}</xsl:text>
-              </rdamd:P30102>
-          </xsl:if>
-          
-          <!-- Check if q subfields exist before creating the P30102 element -->
-          <xsl:if test="marc:subfield[@code = 'q']">
-              <rdamd:P30102>
-                  <xsl:text>Format of the digital image: {marc:subfield[@code = 'q']}</xsl:text>
-              </rdamd:P30102>
-          </xsl:if>
-        
-          <!-- Check if i subfields exist before creating the P30102 element -->
-            <xsl:if test="marc:subfield[@code = 'i']">
-                <rdamd:P30137>    
-                    <xsl:text>Indirect reference description: {marc:subfield[@code = 'i']}</xsl:text>
-                </rdamd:P30137>
-            </xsl:if>
+    <!-- 351 Organization and Arrangement of Materials-->
+    <xsl:template
+        match="marc:datafield[@tag = '351'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '351']"
+        mode="wor" expand-text="yes">
+        <rdaw:P10084>
+            <xsl:for-each
+                select="marc:subfield[@code = 'c'] | marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = '3']">
+                <xsl:if test="@code = 'c'">
+                    <xsl:text>Hierarchical level: {.}.</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'a'">
+                    <xsl:text>Organization: {.}.</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = 'b'">
+                    <xsl:text>Arrangement: {.}.</xsl:text>
+                </xsl:if>
+                <xsl:if test="@code = '3'">
+                    <xsl:text>(Applies to: {.})</xsl:text>
+                </xsl:if>
+                <xsl:if test="position() != last()">
+                    <xsl:text>; </xsl:text>
+                </xsl:if>
+            </xsl:for-each>
+        </rdaw:P10084>
     </xsl:template>
-            
-        
+
+    <!-- 352 Digital Graphic Representation-->
+    <xsl:template
+        match="marc:datafield[@tag = '352'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '352']"
+        mode="man" expand-text="yes">
+
+        <rdamd:P30261>
+            <xsl:for-each select="marc:subfield[@code = 'a' or @code = 'b' or @code = 'c']">
+                <!-- Add a space before the second/third item -->
+                <xsl:if test="position() > 1">
+                    <xsl:text> </xsl:text>
+                </xsl:if>
+
+                <!-- Process based on subfield code -->
+                <xsl:choose>
+                    <xsl:when test="@code = 'a'">
+                        <xsl:text>Direct reference method: </xsl:text>
+                        <xsl:value-of select="uwf:stripAllPunctuation(string(.))"/>
+                        <xsl:text>.</xsl:text>
+                    </xsl:when>
+                    <xsl:when test="@code = 'b'">
+                        <xsl:text>Object type: </xsl:text>
+                        <xsl:value-of select="uwf:stripEndPunctuation(string(.))"/>
+                        <xsl:text>.</xsl:text>
+                    </xsl:when>
+                    <xsl:when test="@code = 'c'">
+                        <xsl:text>Object count: </xsl:text>
+                        <xsl:value-of select="uwf:stripAllPunctuation(string(.))"/>
+                        <xsl:text>.</xsl:text>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
+        </rdamd:P30261>
+
+        <!-- Check if any d, e, or f subfields exist before creating the P30102 element -->
+        <xsl:if test="marc:subfield[@code = 'd' or @code = 'e' or @code = 'f']">
+            <rdamd:P30102>
+                <xsl:for-each select="marc:subfield[@code = 'd' or @code = 'e' or @code = 'f']">
+                    <!-- Add a space before the second/third item within this group -->
+                    <xsl:if test="position() > 1">
+                        <xsl:text> </xsl:text>
+                    </xsl:if>
+
+                    <!-- Process based on subfield code -->
+                    <xsl:choose>
+                        <xsl:when test="@code = 'd'">
+                            <xsl:text>Row count: </xsl:text>
+                            <!-- Apply stripAllPunctuation first, then remove 'x' and 'X' -->
+                            <xsl:variable name="d_stripped"
+                                select="uwf:stripAllPunctuation(string(.))"/>
+                            <xsl:value-of select="translate($d_stripped, 'xX', '')"/>
+                            <xsl:text>.</xsl:text>
+                        </xsl:when>
+                        <xsl:when test="@code = 'e'">
+                            <xsl:text>Column count: </xsl:text>
+                            <xsl:value-of select="uwf:stripAllPunctuation(string(.))"/>
+                            <xsl:text>.</xsl:text>
+                        </xsl:when>
+                        <xsl:when test="@code = 'f'">
+                            <xsl:text>Vertical count: </xsl:text>
+                            <xsl:value-of select="uwf:stripAllPunctuation(string(.))"/>
+                            <xsl:text>.</xsl:text>
+                        </xsl:when>
+                    </xsl:choose>
+                </xsl:for-each>
+            </rdamd:P30102>
+        </xsl:if>
+
+        <!-- Check if g subfields exist before creating the P30102 element -->
+        <xsl:if test="marc:subfield[@code = 'g']">
+            <rdamd:P30102>
+                <xsl:text>VPF topology level: {marc:subfield[@code = 'g']}</xsl:text>
+            </rdamd:P30102>
+        </xsl:if>
+
+        <!-- Check if q subfields exist before creating the P30102 element -->
+        <xsl:if test="marc:subfield[@code = 'q']">
+            <rdamd:P30102>
+                <xsl:text>Format of the digital image: {marc:subfield[@code = 'q']}</xsl:text>
+            </rdamd:P30102>
+        </xsl:if>
+
+        <!-- Check if i subfields exist before creating the P30102 element -->
+        <xsl:if test="marc:subfield[@code = 'i']">
+            <rdamd:P30137>
+                <xsl:text>Indirect reference description: {marc:subfield[@code = 'i']}</xsl:text>
+            </rdamd:P30137>
+        </xsl:if>
+    </xsl:template>
+
+    <!-- 357 Originator Dissemination Control-->
+    <xsl:template
+        match="marc:datafield[@tag = '357'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '357']"
+        mode="man" expand-text="yes">
+        <xsl:call-template name="F357-xx-abcg"/>
+    </xsl:template>
+
     <!-- 380 - Form of Work -->
-    <xsl:template match="marc:datafield[@tag = '380'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '380']" 
+    <xsl:template
+        match="marc:datafield[@tag = '380'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '380']"
         mode="wor">
         <!--<xsl:call-template name="getmarc"/>-->
         <xsl:call-template name="F380-string"/>
         <xsl:call-template name="F380-iri"/>
     </xsl:template>
-    
-    <xsl:template match="marc:datafield[@tag = '380'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '380-00']" 
+
+    <xsl:template
+        match="marc:datafield[@tag = '380'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '380-00']"
         mode="con">
         <xsl:call-template name="F380-concept"/>
     </xsl:template>
-    
-    
+
+    <!-- 382 Medium of Performance-->
     <xsl:template
         match="marc:datafield[@tag = '382'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '382']"
         mode="exp">
         <xsl:if test="@ind1 = ' ' or @ind1 = '0' or @ind1 = '1'">
-<!--            <xsl:call-template name="getmarc"/>-->
+            <!--            <xsl:call-template name="getmarc"/>-->
             <xsl:call-template name="F382-xx-a_b_d_p_0_1_2-exp"/>
             <rdaed:P20215>
                 <xsl:call-template name="F382-xx-abdenprstv3"/>
@@ -671,7 +725,7 @@
         match="marc:datafield[@tag = '382'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '382']"
         mode="wor">
         <xsl:if test="@ind1 = '2' or @ind1 = '3'">
-<!--            <xsl:call-template name="getmarc"/>-->
+            <!--            <xsl:call-template name="getmarc"/>-->
             <xsl:call-template name="F382-xx-a_b_d_p_0_1_2-wor"/>
             <rdawd:P10220>
                 <xsl:call-template name="F382-xx-abdenprstv3"/>
@@ -697,22 +751,25 @@
         mode="con">
         <xsl:if test="marc:subfield[@code = '2']">
             <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
-            
+
             <xsl:variable name="linked880">
                 <xsl:if test="@tag = '382' and marc:subfield[@code = '6']">
                     <xsl:variable name="occNum"
                         select="concat('382-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                     <xsl:copy-of
-                        select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]"/>
+                        select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]"
+                    />
                 </xsl:if>
             </xsl:variable>
-            
-            <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'p']">
+
+            <xsl:for-each
+                select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'p']">
                 <xsl:variable name="code" select="@code"/>
                 <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
                     <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '382')"/>
                     <xsl:if test="$linked880">
-                        <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = $code]">
+                        <xsl:for-each
+                            select="$linked880/marc:datafield/marc:subfield[position()][@code = $code]">
                             <xsl:copy-of select="uwf:fillConcept(., '', '', '880')"/>
                         </xsl:for-each>
                     </xsl:if>
