@@ -42,8 +42,45 @@
         </rdaw:P10330>
     </xsl:template>
 
-    
-    
+    <!-- 016 National Bibliographic Agency Control Number -->
+    <xsl:template match="marc:datafield[@tag = '016'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '016']" 
+        mode="man">
+        <xsl:param name="baseID"/>
+        <!--<xsl:call-template name="getmarc"/>-->
+
+         <xsl:choose>
+         <xsl:when test="@ind1 = ''">
+            <xsl:value-of select="'Library and Archives Canada'"/>
+        </xsl:when>
+             <xsl:otherwise>
+                               
+             </xsl:otherwise>
+        </xsl:choose>
+ 
+        
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
+            <rdamo:P30004 rdf:resource="{uwf:nomenIRI($baseID, ., ., '', 'nomen')}"/>
+        </xsl:for-each>
+    </xsl:template>
+
+    <xsl:template match="marc:datafield[@tag = '016'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '016']" 
+        mode="nom">
+        <xsl:param name="baseID"/>
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
+            <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., ., '', 'nomen')}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                <rdand:P80068>
+                    <xsl:value-of select="translate(., ' :', '')"/>
+                </rdand:P80068>
+                <xsl:if test="@code = 'z'">
+                    <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+                </xsl:if>
+                <rdan:P80071>
+                    <xsl:text>Identifier derived from a National Bibliographic agency control number for a description of this manifestation</xsl:text>
+                </rdan:P80071>
+            </rdf:Description>
+        </xsl:for-each>
+    </xsl:template>
     
     <!-- 018 Copyright Article-Fee Code -->
     <xsl:template match="marc:datafield[@tag = '018'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '018']" 
