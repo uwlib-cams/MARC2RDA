@@ -107,7 +107,7 @@ F357 ## $a PROPIN $b Lockport Aviation $c Northfield Avionics Project 11234 $c A
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc357-test2"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
       <rdamd:P30276/>
-      <rdamd:P30137>The originating agency, Lockport Aviation, denotes their control of dissemination using the term PROPIN to the authorized recipients, Northfield Avionics Project 11234</rdamd:P30137>
+      <rdamd:P30137>The originating agency, Lockport Aviation, denotes their control of dissemination using the term PROPIN to the authorized recipients, Northfield Avionics Project 11234; Air Frames Inc., Project 11234 Support Team</rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc357-test3">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -146,7 +146,7 @@ F357 ## $a ORCON $b CIA $b ITAC $c CIA $c DIA $c UKIA
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc357-test3"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
       <rdamd:P30276/>
-      <rdamd:P30137>The originating agency, CIA, denotes their control of dissemination using the term ORCON to the authorized recipients, CIA</rdamd:P30137>
+      <rdamd:P30137>The originating agency, CIA; ITAC, denotes their control of dissemination using the term ORCON to the authorized recipients, CIA; DIA; UKIA</rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc357-test4">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -166,7 +166,7 @@ F357 ## $a ORCON $b CIA $b ITAC $c CIA $c DIA $c UKIA
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
       <rdamd:P30137>F 11111nam a2200553ui 4500
 F001 357-test4
-F357 ## $a ORCON $b ITAC $c 313 th MIB$cDistribution List B-32-91 $g Must be returned to originator after 30 days
+F357 ## $a ORCON $b ITAC $c 313 th MIB $c Distribution List B-32-91 $g Must be returned to originator after 30 days
 </rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
@@ -185,6 +185,7 @@ F357 ## $a ORCON $b ITAC $c 313 th MIB$cDistribution List B-32-91 $g Must be ret
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc357-test4"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
       <rdamd:P30276/>
-      <rdamd:P30137>The originating agency, ITAC, denotes their control of dissemination using the term ORCON to the authorized recipients, 313 th MIB$cDistribution List B-32-91, with the following restrictions: Must be returned to originator after 30 days</rdamd:P30137>
+      <rdamd:P30146>The originating agency, ITAC, denotes their control of dissemination using the term ORCON to the authorized recipients, 313 th MIB; Distribution List B-32-91, with the following restrictions: Must be returned to originator after 30 days</rdamd:P30146>
+      <rdamd:P30137>The originating agency, ITAC, denotes their control of dissemination using the term ORCON to the authorized recipients, 313 th MIB; Distribution List B-32-91, with the following restrictions: Must be returned to originator after 30 days</rdamd:P30137>
    </rdf:Description>
 </rdf:RDF>

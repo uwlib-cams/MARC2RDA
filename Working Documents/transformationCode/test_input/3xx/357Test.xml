@@ -39,7 +39,8 @@
         <marc:datafield tag="357" ind1=" " ind2=" ">
             <marc:subfield code="a">ORCON</marc:subfield>
             <marc:subfield code="b">ITAC</marc:subfield>
-            <marc:subfield code="c">313 th MIB$cDistribution List B-32-91</marc:subfield>
+            <marc:subfield code="c">313 th MIB</marc:subfield>
+            <marc:subfield code="c">Distribution List B-32-91</marc:subfield>
             <marc:subfield code="g">Must be returned to originator after 30 days</marc:subfield>
         </marc:datafield>
     </marc:record>

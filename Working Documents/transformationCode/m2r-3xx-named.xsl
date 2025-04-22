@@ -2950,127 +2950,123 @@
     <!-- 357 -->
     <xsl:template name="F357-xx-abcg" expand-text="yes">
         <!-- Pull all subfields -->
-        <xsl:variable name="a" select="string(marc:subfield[@code = 'a'][1])"/>
-        <xsl:variable name="b-list" select="string(marc:subfield[@code = 'b'][1])"/>
-        <xsl:variable name="c-list" select="string(marc:subfield[@code = 'c'][1])"/>
-        <xsl:variable name="g-list" select="string(marc:subfield[@code = 'g'][1])"/>
+        <xsl:variable name="a" select="normalize-space(string(marc:subfield[@code = 'a'][1]))"/>
+        <xsl:variable name="b-list" select="marc:subfield[@code = 'b']"/>
+        <xsl:variable name="c-list" select="marc:subfield[@code = 'c']"/>
+        <xsl:variable name="g-list" select="marc:subfield[@code = 'g']"/>
 
-        <!-- Join with commas -->
-        <xsl:variable name="b" select="
-                string-join(for $bval in $b-list
-                return
-                    normalize-space(string($bval)), ', ')"/>
-        <xsl:variable name="c" select="
-                string-join(for $cval in $c-list
-                return
-                    normalize-space(string($cval)), ', ')"/>
-        <xsl:variable name="g" select="
-                string-join(for $gval in $g-list
-                return
-                    normalize-space(string($gval)), ', ')"/>
-
-        <!-- Needs updating for repeatable values and clarification on how to handle when repeated -->
+              <xsl:if test="$a and $b-list and $c-list and $g-list">
+                 <rdamd:P30146>
+                     <xsl:text>The originating agency, </xsl:text>
+                     <xsl:value-of select="string-join($b-list, '; ')"/>
+                     <xsl:text>, denotes their control of dissemination using the term </xsl:text>
+                     <xsl:value-of select="$a"/>
+                     <xsl:text> to the authorized recipients, </xsl:text>
+                     <xsl:value-of select="string-join($c-list, '; ')"/>
+                     <xsl:text>, with the following restrictions: </xsl:text>
+                     <xsl:value-of select="string-join($g-list, '; ')"/>
+                 </rdamd:P30146>
+             </xsl:if>
+   
         <rdamd:P30137>
+            <xsl:choose>
+                
             <!-- a, a&c, a&g, a&c&g -->
-            <xsl:if test="$a != '' and $b = ''">
-                <xsl:text>The disseminating agency denotes their control of dissemination using the term </xsl:text>
-                <xsl:value-of select="$a"/>
-
-                <xsl:if test="$c != '' and $g = ''">
-                    <xsl:text> to the authorized recipients, </xsl:text>
-                    <xsl:value-of select="$c"/>
-                </xsl:if>
-
-                <xsl:if test="$g != '' and $c = ''">
-                    <xsl:text> with the following restrictions: </xsl:text>
-                    <xsl:value-of select="$g"/>
-                </xsl:if>
-
-                <xsl:if test="$c != '' and $g != ''">
-                    <xsl:text> to the authorized recipients, </xsl:text>
-                    <xsl:value-of select="$c"/>
-                    <xsl:text>, with the following restrictions: </xsl:text>
-                    <xsl:value-of select="$g"/>
-                </xsl:if>
-            </xsl:if>
+                <xsl:when test="$a and empty($b-list)">
+                    <xsl:text>The disseminating agency denotes their control of dissemination using the term </xsl:text>
+                    <xsl:value-of select="$a"/>
+                    
+                    <xsl:if test="$c-list">
+                        <xsl:text> to the authorized recipients, </xsl:text>
+                        <xsl:value-of select="string-join($c-list, '; ')"/>
+                    </xsl:if>
+                    
+                    <xsl:if test="$g-list">
+                        <xsl:choose>
+                            <xsl:when test="$c-list">
+                                <xsl:text>, with the following restrictions: </xsl:text>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:text> with the following restrictions: </xsl:text>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                        <xsl:value-of select="string-join($g-list, '; ')"/>
+                    </xsl:if>
+                </xsl:when>
 
             <!-- b -->
-            <xsl:if test="$b != '' and $a = '' and $c = '' and $g = ''">
-                <xsl:text>The originating agency is </xsl:text>
-                <xsl:value-of select="$b"/>
-            </xsl:if>
+                <xsl:when test="not($a) and $b-list and not($c-list) and not($g-list)">
+                    <xsl:text>The originating agency is </xsl:text>
+                    <xsl:value-of select="string-join($b-list, '; ')"/>
+                </xsl:when>
 
             <!-- a&b, a&b&c, a&b&g, a&b&c&g, b&c, b&g, b&c&g -->
-            <xsl:if test="$b != '' and not($a = '' and $c = '' and $g = '')">
-                <xsl:text>The originating agency, </xsl:text>
-                <xsl:value-of select="$b"/>
-
                 <!-- cases with a -->
-                <xsl:if test="$a != '' and $c = '' and $g = ''">
+                <xsl:when test="$b-list != '' and not($a = '' and $c-list = '' and $g-list = '')">
+                    <xsl:text>The originating agency, </xsl:text>
+                    <xsl:value-of select="string-join($b-list, '; ')"/>
                     <xsl:text>, denotes their control of dissemination using the term </xsl:text>
-                    <xsl:value-of select="$a"/>
-                </xsl:if>
-
-                <xsl:if test="$a != '' and $c != '' and $g = ''">
-                    <xsl:text>, denotes their control of dissemination using the term </xsl:text>
-                    <xsl:value-of select="$a"/>
+                <xsl:value-of select="$a"/>
+                
+                <xsl:if test="$c-list">
                     <xsl:text> to the authorized recipients, </xsl:text>
-                    <xsl:value-of select="$c"/>
+                    <xsl:value-of select="string-join($c-list, '; ')"/>
                 </xsl:if>
-
-                <xsl:if test="$a != '' and $c = '' and $g != ''">
-                    <xsl:text>, denotes their control of dissemination using the term </xsl:text>
-                    <xsl:value-of select="$a"/>
-                    <xsl:text> with the following restrictions: </xsl:text>
-                    <xsl:value-of select="$g"/>
+                
+                <xsl:if test="$g-list">
+                    <xsl:choose>
+                        <xsl:when test="$c-list">
+                            <xsl:text>, with the following restrictions: </xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:text> with the following restrictions: </xsl:text>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                    <xsl:value-of select="string-join($g-list, '; ')"/>
                 </xsl:if>
-
-                <xsl:if test="$a != '' and $c != '' and $g != ''">
-                    <xsl:text>, denotes their control of dissemination using the term </xsl:text>
-                    <xsl:value-of select="$a"/>
-                    <xsl:text> to the authorized recipients, </xsl:text>
-                    <xsl:value-of select="$c"/>
-                    <xsl:text>, with the following restrictions: </xsl:text>
-                    <xsl:value-of select="$g"/>
-                </xsl:if>
+                </xsl:when>
 
                 <!-- cases without a -->
-                <xsl:if test="$a = '' and $c != '' and $g = ''">
-                    <xsl:text> controls dissemination to the authorized recipients, </xsl:text>
-                    <xsl:value-of select="$c"/>
-                </xsl:if>
-
-                <xsl:if test="$a = '' and $c = '' and $g != ''">
-                    <xsl:text>, denotes their control of dissemination with the following restrictions: </xsl:text>
-                    <xsl:value-of select="$g"/>
-                </xsl:if>
-
-                <xsl:if test="$a = '' and $c != '' and $g != ''">
-                    <xsl:text> controls dissemination to the authorized recipients, </xsl:text>
-                    <xsl:value-of select="$c"/>
-                    <xsl:text>, with the following restrictions: </xsl:text>
-                    <xsl:value-of select="$g"/>
-                </xsl:if>
-            </xsl:if>
+                <xsl:when test="$b-list != '' and not($a = '' and $c-list = '' and $g-list = '')">
+                    <xsl:text>The originating agency, </xsl:text>
+                    <xsl:value-of select="string-join($b-list, '; ')"/>
+                    
+                    <xsl:if test="$c-list">
+                        <xsl:text> controls dissemination to the authorized recipients, </xsl:text>
+                        <xsl:value-of select="string-join($c-list, '; ')"/>
+                    </xsl:if>
+                    
+                    <xsl:if test="$g-list">
+                        <xsl:choose>
+                            <xsl:when test="$c-list">
+                                <xsl:text>, with the following restrictions: </xsl:text>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:text> denotes their control of dissemination with the following restrictions: </xsl:text>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                        <xsl:value-of select="string-join($g-list, '; ')"/>
+                    </xsl:if>
+                </xsl:when>
 
             <!-- c, g, c&g -->
-            <xsl:if test="$a = '' and $b = ''">
-                <xsl:if test="$c != '' and $g = ''">
+                <xsl:when test="$c-list and not($a) and not($b-list)">
                     <xsl:text>Disseminated by the originating agency to the following authorized recipient: </xsl:text>
-                    <xsl:value-of select="$c"/>
-                </xsl:if>
-                <xsl:if test="$c = '' and $g != ''">
+                    <xsl:value-of select="string-join($c-list, '; ')"/>
+                    
+                    <xsl:if test="$g-list">
+                        <xsl:text>, with the following restrictions: </xsl:text>
+                        <xsl:value-of select="string-join($g-list, '; ')"/>
+                    </xsl:if>
+                </xsl:when>
+                
+                <xsl:when test="$g-list and not($a) and not($b-list) and not($c-list)">
                     <xsl:text>Desseminated with the following restrictions: </xsl:text>
-                    <xsl:value-of select="$g"/>
-                </xsl:if>
-                <xsl:if test="$c != '' and $g != ''">
-                    <xsl:text>Disseminated by the originating agency to the following authorized recipient: </xsl:text>
-                    <xsl:value-of select="$c"/>
-                    <xsl:text>, with the following restrictions: </xsl:text>
-                    <xsl:value-of select="$g"/>
-                </xsl:if>
-            </xsl:if>
+                    <xsl:value-of select="string-join($g-list, '; ')"/>
+                </xsl:when>
+            </xsl:choose>
         </rdamd:P30137>
+
     </xsl:template>
 
     <!-- 380 -->
