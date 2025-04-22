@@ -12,27 +12,41 @@ Instructions are included for running the code using Oxygen or using Saxon HE (o
 1. Clone the MARC2RDA GitHub repository
 2. In Oxygen, create a project and select the entire MARC2RDA repository to be included, along with the folder containing the MARC/XML file(s) to be transformed.
 3. If this is the first time running the transform, see [setting up lookup files](#setting_up_lookup_files) and follow instructions before proceeding. This step may also need to be repeated if LC or RDA have updated their vocabularies since the last transformation was run. 
-5. Once you have confirmed that the 'lookup' folder in the repository contain 'lc' and 'rda' subfolders, open a MARC/XML file to be transformed. 
-6. In the toolbar at the top of Oxygen, select the Configure Transformation Scenario(s) button, which looks like a wrench. 
-7. Select “New” at the bottom of the pop-up menu and select "XML transformation with XSLT".
-8. Name the transformation scenario.
-9. In the XML URL box, ensure the value is ${currentFileURL}
-10. In the XSL URL box, select m2r.xsl from files.
-11. Select the "Parameters" and edit the BASE value to the base IRI you would like to be used when the transform mints IRIs. Ensure the IRI ends in / to avoid malformed IRIs. 
-12. Navigate to the Output tab
-13. In the Output tab, find the Save as option.
+4. Once you have confirmed that the 'lookup' folder in the repository contain 'lc' and 'rda' subfolders, open a MARC/XML file to be transformed. 
+5. In the toolbar at the top of Oxygen, select the Configure Transformation Scenario(s) button, which looks like a wrench. 
+6. Select “New” at the bottom of the pop-up menu and select "XML transformation with XSLT".
+7. Name the transformation scenario.
+8. In the XML URL box, ensure the value is ${currentFileURL}
+9. In the XSL URL box, select m2r.xsl from files.
+10. Select the "Parameters" and edit the BASE value to the base IRI you would like to be used when the transform mints IRIs. Ensure the IRI ends in / to avoid malformed IRIs. 
+11. Navigate to the Output tab
+12. In the Output tab, find the Save as option.
     
     a. If transforming one file, enter the location and name for the output file. The file name should end in `.rdf` Press okay.
     
     b. If transforming a folder of files, enter the location of a folder for the output, and end the folder name in `/${cfn}.rdf` This saves each file within the folder with the same name as the input file but as an rdf file. Press okay.
     
-11. Transform the file(s)
+13. Transform the file(s)
     
     a. *If transforming 1 file*: Ensuring that the file you want to transform is open in the window, press "Apply associated".
     
     b. *If transforming a folder of files*: Close the transformation scenario pop-up box. In the navigation pane on the left, right click on the folder containing the files you want to transform. Select "Transform" and then "Transform with...". Select the transformation scenario you just set up and press "Apply selected scenarios".
     
-13. The transformation scenario should run and output RDF/XML from the MARC/XML
+14. The transformation scenario should run and output RDF/XML from the MARC/XML
+
+15. (Optional) Add human-readable labels to output files for review
+    
+    a. Open the RDF/XML output file just created.
+    
+    b. Follow the steps above to Configure Transformation Scenario(s) using "XML transformation with XSLT" for a new scenario.
+    
+    c. In the XML URL box, ensure the value is ${currentFileURL}.
+    
+    d. In the XSL URL box, select appendLabels.xsl from files.
+    
+    e. Follow the steps above to set “Parameters” and Output.
+    
+    f. Transform the file by applying the newly created scenario.
 
 
 ## Option 2: Saxon
@@ -40,7 +54,14 @@ Instructions are included for running the code using Oxygen or using Saxon HE (o
 ### Dependencies
 - Java
   - Windows: [download Java](https://www.java.com/en/download/) and ensure PATH is set up correctly
+    - To check if PATH is set up correctly:
+    - Open the command prompt
+    - Type: java -version
+    - If the system responds with the Java version, then PATH is set up correctly
   - WSL: `$ sudo apt install openjdk-11-jre-headless`
+  - Note: if you are using a command prompt window through Anaconda, you may need to temporarily add Java to your PATH with the following code:
+    - set `PATH=<Path to java that ends in \bin>;%PATH%`
+    - Example: set PATH=C:\Program Files\Java\jre1.8.0_441\bin;%PATH
 - Saxon processor from [Saxonica](https://www.saxonica.com/welcome/welcome.xml)
   - For further documentation: [Getting started with SaxonJ](https://www.saxonica.com/html/documentation11/about/gettingstarted/gettingstartedjava.html)
   - The free Saxon-HE (Home Edition) is available for download from GitHub - see Saxonica/[Saxon-HE](https://github.com/Saxonica/Saxon-HE/) > [releases](https://github.com/Saxonica/Saxon-HE/releases)
@@ -73,6 +94,11 @@ from the transformationCode folder within the MARC2RDA repository, run the pytho
 - the absolute path to the file(s) or folder(s) containing the MARC data in MARC/XML format. These files must end in .xml
 - the base IRI you would like IRIs minted by the transform to use. This IRI must end in /
 - If running the transform for the first time, enter y when prompted to load lookup files. (see [setting up lookup files](#setting_up_lookup_files) for more details). This step may also need to be repeated if LC or RDA have updated their vocabularies since the last transformation was run.
+
+When you are ready with the above information then you can run
+- From the command line: python process.py
+- Or use an IDE, such as Spyder to run the process
+- Note: as of now, the output is saved in the same folder as the input; I will try to change this to allow the user to specify an output folder (TC 04.02.25)
 
 
 ### Option 2b: command line
@@ -147,5 +173,6 @@ Once the transformation has been run and RDF/XML data has been produced, the out
 To run serialize.py, be prepared with:
 - The full path to the file you wish to serialize (must have the extension .rdf, .ttl, .jsonld, or .nt)
 - The formats you wish to serialize to. The options are Turtle (ttl), N-triples (nt), JSON-LD (jsonld), and RDF (rdf). You will be prompted to enter the serializations you want as space separated values i.e. `ttl nt` to output both Turtle and N-triple versions of the file
+- Here is the GitHub directory path to serialize.py: Working Documents/Non-Mapping Documents/serialize.py
 
 The script will produce the various serializations in the same folder that the original file is located in. 
