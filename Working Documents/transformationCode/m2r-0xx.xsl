@@ -148,11 +148,11 @@
         <xsl:param name="baseID"/>
         
         <xsl:choose>
-            <xsl:when test="@ind1 = ''">
+            <xsl:when test="@ind1 != '7'">
                 <xsl:value-of select="'Library and Archives Canada'"/>
             </xsl:when>
             <xsl:otherwise>
-                
+                <xsl:value-of select="marc:subfield[@code = '2']"/>
             </xsl:otherwise>
         </xsl:choose>
         
