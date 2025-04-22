@@ -2955,6 +2955,7 @@
         <xsl:variable name="c-list" select="marc:subfield[@code = 'c']"/>
         <xsl:variable name="g-list" select="marc:subfield[@code = 'g']"/>
 
+        <!-- a&b&c&g -->
               <xsl:if test="$a and $b-list and $c-list and $g-list">
                  <rdamd:P30146>
                      <xsl:text>The originating agency, </xsl:text>
