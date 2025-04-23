@@ -142,21 +142,11 @@
         </xsl:for-each>
     </xsl:template> -->
     
-    <!-- 016 National Bibliographic Agency Control Number WIP
+    <!-- 016 National Bibliographic Agency Control Number -->
     <xsl:template match="marc:datafield[@tag = '016'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '016']" 
         mode="man">
         <xsl:param name="baseID"/>
-        
-        <xsl:choose>
-            <xsl:when test="@ind1 != '7'">
-                <xsl:value-of select="'Library and Archives Canada'"/>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:value-of select="marc:subfield[@code = '2']"/>
-            </xsl:otherwise>
-        </xsl:choose>
-        
-        
+ 
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
             <rdamo:P30004 rdf:resource="{uwf:nomenIRI($baseID, ., ., '', 'nomen')}"/>
         </xsl:for-each>
@@ -165,22 +155,38 @@
     <xsl:template match="marc:datafield[@tag = '016'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '016']" 
         mode="nom">
         <xsl:param name="baseID"/>
+        <xsl:variable name="ind1" select="@ind1"/>
+        <xsl:variable name="source" select="marc:subfield[@code = '2']"/>
+        
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
             <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., ., '', 'nomen')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
-                    <xsl:value-of select="translate(., ' :', '')"/>
+                    <xsl:value-of select="."/>
                 </rdand:P80068>
-                <xsl:if test="@code = 'z'">
-                    <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
-                </xsl:if>
                 <rdan:P80071>
                     <xsl:text>Identifier derived from a National Bibliographic agency control number for a description of this manifestation</xsl:text>
                 </rdan:P80071>
+                
+                <xsl:if test="@code = 'z'">
+                    <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+                </xsl:if>
+                
+                <!-- this would eventually need to be updated for LC Cultural Heritage Organizations lookup -->
+                <rdano:P80075>
+                    <xsl:choose>
+                        <xsl:when test="$ind1 = '7' and string($source)">
+                            <xsl:value-of select="$source"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="'http://id.loc.gov/rwo/agents/no2004037399'"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </rdano:P80075>
+
             </rdf:Description>
         </xsl:for-each>
     </xsl:template>
-    -->
 
     <!-- 018 Copyright Article-Fee Code -->
     <xsl:template match="marc:datafield[@tag = '018'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '018']" 
