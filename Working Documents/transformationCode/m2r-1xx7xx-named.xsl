@@ -113,7 +113,65 @@
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
-      
+    
+    <!-- 774 -->
+    
+    <xsl:template name="F774-xx-abcdefghjklmnopqrstuvwxyz" expand-text="yes">
+        <xsl:variable name="subfields" select="marc:subfield[@code = 'a' or @code = 'b' or @code = 'c' or
+            @code = 'd' or @code = 'e' or @code = 'f' or
+            @code = 'g' or @code = 'h' or @code = 'i' or
+            @code = 'j' or @code = 'k' or @code = 'l' or
+            @code = 'm' or @code = 'n' or @code = 'o' or
+            @code = 'p' or @code = 'q' or @code = 'r' or
+            @code = 's' or @code = 't' or @code = 'u' or
+            @code = 'v' or @code = 'w' or @code = 'x' or
+            @code = 'y' or @code = 'z']" />
+        
+        <xsl:if test="$subfields">
+            <xsl:text>[Has part]: </xsl:text>
+            <xsl:for-each select="$subfields">
+                <xsl:value-of select="."/>
+                <xsl:choose>
+                    <xsl:when test="position() != last()">
+                        <xsl:text>; </xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:text>: </xsl:text>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    
+    
+    <!-- 775 -->
+
+    <xsl:template name="F775-xx-abcdefghjklmnopqrstuvwxyz" expand-text="yes">
+        <xsl:variable name="subfields" select="marc:subfield[@code = 'a' or @code = 'b' or @code = 'c' or
+            @code = 'd' or @code = 'e' or @code = 'f' or
+            @code = 'g' or @code = 'h' or @code = 'i' or
+            @code = 'j' or @code = 'k' or @code = 'l' or
+            @code = 'm' or @code = 'n' or @code = 'o' or
+            @code = 'p' or @code = 'q' or @code = 'r' or
+            @code = 's' or @code = 't' or @code = 'u' or
+            @code = 'v' or @code = 'w' or @code = 'x' or
+            @code = 'y' or @code = 'z']" />
+        
+        <xsl:if test="$subfields">
+            <xsl:text>[Other edition available]: </xsl:text>
+            <xsl:for-each select="$subfields">
+                <xsl:value-of select="."/>
+                <xsl:choose>
+                    <xsl:when test="position() != last()">
+                        <xsl:text>; </xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:text>: </xsl:text>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
     
     <!-- 776 --> 
     <xsl:template name="F776-xx-abcdefghjklmnopqrstuvwxyz" expand-text="yes">
