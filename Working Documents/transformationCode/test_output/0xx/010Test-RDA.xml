@@ -70,43 +70,43 @@ F880 ## $6 010-00 $a ###85153773#
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc010-test1"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
       <rdamd:P30276/>
-      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-04-17-0700d24e7"/>
-      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-04-17-0700d24e9"/>
-      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-04-17-0700d24e11"/>
-      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-04-17-0700d24e15"/>
-      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-04-17-0700d24e17"/>
-      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-04-17-0700d24e22"/>
+      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-04-24-0700d24e7"/>
+      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-04-24-0700d24e9"/>
+      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-04-24-0700d24e11"/>
+      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-04-24-0700d24e15"/>
+      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-04-24-0700d24e17"/>
+      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-04-24-0700d24e22"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-04-17-0700d24e7">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-04-24-0700d24e7">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>###85153773#</rdand:P80068>
-      <rdand:P80071>Library of Congress control number: ###85153773#</rdand:P80071>
+      <rdand:P80068>   85153773 </rdand:P80068>
+      <rdand:P80071>Library of Congress control number:   85153773 </rdand:P80071>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-04-17-0700d24e9">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-04-24-0700d24e9">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>ms#89001579#</rdand:P80068>
-      <rdand:P80071>National Union Catalog of Manuscript Collections control number: ms#89001579#</rdand:P80071>
+      <rdand:P80068>ms 89001579 </rdand:P80068>
+      <rdand:P80071>National Union Catalog of Manuscript Collections control number:ms 89001579 </rdand:P80071>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-04-17-0700d24e11">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-04-24-0700d24e11">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>sc#76000587#</rdand:P80068>
-      <rdand:P80071>sc#76000587#</rdand:P80071>
+      <rdand:P80068>sc 76000587 </rdand:P80068>
+      <rdand:P80071>sc 76000587 </rdand:P80071>
       <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-04-17-0700d24e15">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-04-24-0700d24e15">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>###81691938#</rdand:P80068>
-      <rdand:P80071>Library of Congress control number: ###81691938#</rdand:P80071>
+      <rdand:P80068>   81691938 </rdand:P80068>
+      <rdand:P80071>Library of Congress control number:   81691938 </rdand:P80071>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-04-17-0700d24e17">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-04-24-0700d24e17">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>###82692384#</rdand:P80068>
-      <rdand:P80071>###82692384#</rdand:P80071>
+      <rdand:P80068>   82692384 </rdand:P80068>
+      <rdand:P80071>   82692384 </rdand:P80071>
       <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-04-17-0700d24e22">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-04-24-0700d24e22">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>###85153773#</rdand:P80068>
-      <rdand:P80071>Library of Congress control number: ###85153773#</rdand:P80071>
+      <rdand:P80068>   85153773 </rdand:P80068>
+      <rdand:P80071>Library of Congress control number:   85153773 </rdand:P80071>
    </rdf:Description>
 </rdf:RDF>

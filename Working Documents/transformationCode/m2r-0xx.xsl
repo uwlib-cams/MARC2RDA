@@ -44,37 +44,37 @@
             </xsl:for-each>
         </xsl:template>
     
-        <xsl:template
-            match="marc:datafield[@tag = '010'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '010']"
-            mode="nom" expand-text="yes">
-            <xsl:param name="baseID"/>
-            <xsl:for-each select="marc:subfield[@code = 'a']">
-                <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., '', '', 'nomen')}">
-                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-                    <rdand:P80068>{replace(., '\.\s*$', '')}</rdand:P80068>
-                    <rdand:P80071>Library of Congress control number: <xsl:value-of select="."/></rdand:P80071>                   
-                </rdf:Description>
-            </xsl:for-each>
-            
-            <xsl:for-each select="marc:subfield[@code = 'b']">
-                <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., '', '', 'nomen')}">
-                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-                    <rdand:P80068>{replace(., '\.\s*$', '')}</rdand:P80068>
-                    <rdand:P80071>National Union Catalog of Manuscript Collections control number: <xsl:value-of select="."/></rdand:P80071>                               
-                </rdf:Description>
-            </xsl:for-each>            
-
-            <xsl:for-each select="marc:subfield[@code = 'z']">
-                <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., ., '', 'nomen')}">
-                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-                    <rdand:P80068><xsl:value-of select="."/></rdand:P80068>
-                    <rdand:P80071><xsl:value-of select="."/></rdand:P80071>
-                    <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
-                </rdf:Description>
-            </xsl:for-each>
-                               
-        </xsl:template>
-
+    <xsl:template
+        match="marc:datafield[@tag = '010'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '010']"
+        mode="nom" expand-text="yes">
+        <xsl:param name="baseID"/>
+        
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., '', '', 'nomen')}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                <rdand:P80068>{replace(replace(., '#', ' '), '\.\s*$', '')}</rdand:P80068>
+                <rdand:P80071>Library of Congress control number:<xsl:value-of select="replace(., '#', ' ')"/></rdand:P80071>                   
+            </rdf:Description>
+        </xsl:for-each>
+        
+        <xsl:for-each select="marc:subfield[@code = 'b']">
+            <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., '', '', 'nomen')}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                <rdand:P80068>{replace(replace(., '#', ' '), '\.\s*$', '')}</rdand:P80068>
+                <rdand:P80071>National Union Catalog of Manuscript Collections control number:<xsl:value-of select="replace(., '#', ' ')"/>
+                </rdand:P80071>                               
+            </rdf:Description>
+        </xsl:for-each>            
+ 
+        <xsl:for-each select="marc:subfield[@code = 'z']">
+            <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., ., '', 'nomen')}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                <rdand:P80068><xsl:value-of select="replace(., '#', ' ')"/></rdand:P80068>
+                <rdand:P80071><xsl:value-of select="replace(., '#', ' ')"/></rdand:P80071>
+                <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+            </rdf:Description>
+        </xsl:for-each>
+    </xsl:template>
 
 <!-- 013 Patent Control Information -->
     
