@@ -142,7 +142,10 @@
                                 </xsl:otherwise>
                             </xsl:choose>
                             <xsl:if test="starts-with(uwf:agentIRI($baseID, .), $BASE)">
-                                <xsl:call-template name="FX00-xx-ab"/>
+                                <xsl:call-template name="FX00-x1-a"/>
+                                <xsl:call-template name="FX00-x2-a"/>
+                                <xsl:call-template name="FX00-x0-ab"/>
+                                <xsl:call-template name="FX00-x0-a"/>
                                 <xsl:call-template name="FX00-xx-d"/>
                                 <xsl:call-template name="FX00-xx-q"/>
                             </xsl:if>
@@ -176,6 +179,7 @@
                             <xsl:if test="starts-with(uwf:agentIRI($baseID, .), $BASE)">
                                 <xsl:call-template name="FX00-x3-c"/>
                                 <xsl:call-template name="FX00-x3-d"/>
+                                <xsl:call-template name="FX00-x3-a"/>
                             </xsl:if>
                         </xsl:when>
                     </xsl:choose>
