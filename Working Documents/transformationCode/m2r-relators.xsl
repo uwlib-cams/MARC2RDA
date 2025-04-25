@@ -1122,6 +1122,28 @@
     
     <!-- Attributes -->
     
+    <xsl:template name="FX00-x0-a">
+        <xsl:if test="@ind1 = '0' and (marc:subfield[@code = 'a'] and not(marc:subfield[@code = 'b']))">
+            <xsl:variable name="nameOfPerson">
+                <xsl:value-of select="marc:subfield[@code = 'a']"/>
+            </xsl:variable>
+            <rdaad:P50111>
+                <xsl:value-of select="uwf:stripEndPunctuation($nameOfPerson)"/>
+            </rdaad:P50111>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="FX00-x0-ab">
+        <xsl:if test="@ind1 = '0' and (marc:subfield[@code = 'a'] and marc:subfield[@code = 'b'])">
+            <xsl:variable name="nameOfPerson">
+                <xsl:value-of select="concat(marc:subfield[@code = 'a'], ' ', marc:subfield[@code = 'b'])"/>
+            </xsl:variable>
+            <rdaad:P50111>
+                <xsl:value-of select="uwf:stripEndPunctuation($nameOfPerson)"/>
+            </rdaad:P50111>
+        </xsl:if>
+    </xsl:template>
+
     <xsl:template name="FX00-x1-a">
         <xsl:if test="@ind1 = '1' and (marc:subfield[@code = 'a'] or marc:subfield[@code = 'b'])">
                 <xsl:variable name="nameOfPerson">
@@ -1144,18 +1166,7 @@
         </xsl:if>
     </xsl:template>
 
-    <xsl:template name="FX00-x0-a">
-        <xsl:if test="@ind1 = '0' and (marc:subfield[@code = 'a'] and not(marc:subfield[@code = 'b']))">
-            <xsl:variable name="nameOfPerson">
-                <xsl:value-of select="marc:subfield[@code = 'a']"/>
-            </xsl:variable>
-            <rdaad:P50111>
-                <xsl:value-of select="uwf:stripEndPunctuation($nameOfPerson)"/>
-            </rdaad:P50111>
-        </xsl:if>
-    </xsl:template>
-    
-    
+      
     <xsl:template name="FX00-x3-a">
         <xsl:if test="@ind1 = '3' and (marc:subfield[@code = 'a'])">
             <xsl:variable name="nameOfFamily">
@@ -1167,17 +1178,7 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="FX00-x0-ab">
-        <xsl:if test="@ind1 = '0' and (marc:subfield[@code = 'a'] and marc:subfield[@code = 'b'])">
-            <xsl:variable name="nameOfPerson">
-                <xsl:value-of select="concat(marc:subfield[@code = 'a'], ' ', marc:subfield[@code = 'b'])"/>
-            </xsl:variable>
-            <rdaad:P50111>
-                <xsl:value-of select="uwf:stripEndPunctuation($nameOfPerson)"/>
-            </rdaad:P50111>
-        </xsl:if>
-    </xsl:template>
-    
+  
    
     <xsl:template name="FX00-x3-c">
         <xsl:for-each select="marc:subfield[@code = 'c']">
