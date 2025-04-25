@@ -635,6 +635,61 @@
         </rdaed:P20071>
     </xsl:template>
     
+    <!-- 530 - Additional Physical Form Available Note WIP
+    
+    <xsl:template
+        match="marc:datafield[@tag = '530'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '530']"
+        mode="origMan" expand-text="yes">
+        <xsl:param name="record"/>
+        <rdf:Description rdf:about="{uwf:origManifestationIRI($record)}">
+            <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'u']">
+                <rdam:P30276 rdf:resource="{uwf:nomenIRI(generate-id(), ., ., '', 'nomen')}"/>
+            </xsl:for-each>
+        </rdf:Description>
+    </xsl:template>
+    
+    <xsl:template
+        match="marc:datafield[@tag = '530'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '530']"
+        mode="man" expand-text="yes">
+        <xsl:param name="baseID"/>
+        <xsl:param name="record"/>
+        
+        <rdam:P30026>
+            <xsl:choose>
+                <xsl:when test="marc:subfield[@code = '3']">
+                    <xsl:value-of select="marc:subfield[@code = '3']"/>
+                    <xsl:text> additional physical form available note: </xsl:text>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:text>Additional physical form available note: </xsl:text>
+                </xsl:otherwise>
+            </xsl:choose>
+            <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'u']">
+                <xsl:value-of select="."/>
+                <xsl:if test="position() != last()">
+                    <xsl:text> </xsl:text>
+                </xsl:if>
+            </xsl:for-each>
+        </rdam:P30026>
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'u']">
+            <rdam:P30276 rdf:resource="{uwf:nomenIRI($baseID, ., ., '', 'nomen')}"/>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template
+        match="marc:datafield[@tag = '530'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '530']"
+        mode="nom" expand-text="yes">
+        <xsl:param name="baseID"/>
+            <xsl:for-each select="marc:subfield[@code = 'u']">
+                <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., ., '', 'nomen')}">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                    <rdand:P80068><xsl:value-of select="."/></rdand:P80068>
+                    <rdand:P80168 rdf:resource="http://id.loc.gov/vocabulary/identifier-schemes/uri"/>
+                </rdf:Description>
+            </xsl:for-each>
+        </xsl:template> -->
+ 
+    
     <!-- 532 - Accessibility Note -->
     <xsl:template
         match="marc:datafield[@tag = '532'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '532']"
