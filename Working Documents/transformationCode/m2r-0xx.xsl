@@ -188,6 +188,57 @@
         </xsl:for-each>
     </xsl:template>
 
+    <!-- 017 Copyright or Legal Deposit Number -->
+    <xsl:template match="marc:datafield[@tag = '017'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '017']" 
+        mode="man">
+        <xsl:param name="baseID"/>
+        
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
+            <rdamo:P30004 rdf:resource="{uwf:nomenIRI($baseID, ., ., '', 'nomen')}"/>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '017'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '017']" 
+        mode="nom">
+        <xsl:param name="baseID"/>
+        <xsl:variable name="source" select="marc:subfield[@code = '2']"/>
+        
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
+            <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., ., '', 'nomen')}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                <rdand:P80068>
+                    <xsl:value-of select="."/>
+                </rdand:P80068>
+                <xsl:if test="../marc:subfield[@code = 'b'] or $source">
+                    <rdan:P80073>
+                        <xsl:value-of select="../marc:subfield[@code = 'b']"/>
+                        <xsl:if test="string($source) = 'rocgpt'">
+                            <xsl:text>R.O.C. Government Publications Catalogue (Taipei: Research, Development and Evaluation Commission, Executive Yuan)</xsl:text>
+                        </xsl:if>
+                    </rdan:P80073>
+                </xsl:if>
+                <xsl:if test="../marc:subfield[@code = 'd']"><!-- Date formatted as yyyymmdd -->
+                    <rdan:P80066>
+                        <xsl:variable name="rawDate" select="string(../marc:subfield[@code = 'd'])"/>
+                        <xsl:value-of select="concat(substring($rawDate, 1, 4), '-', substring($rawDate, 5, 2), '-', substring($rawDate, 7, 2))"/>
+                    </rdan:P80066>
+                </xsl:if>
+                <xsl:if test="../marc:subfield[@code = 'i']">
+                    <rdan:P80071>
+                        <xsl:value-of select="../marc:subfield[@code = 'i']"/>
+                    </rdan:P80071>
+                </xsl:if>
+                <xsl:if test="@code = 'z'">
+                    <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+                </xsl:if>
+                <rdand:P80067>
+                    <xsl:text>Copyright or legal deposit</xsl:text>
+                </rdand:P80067>
+                
+            </rdf:Description>
+        </xsl:for-each>
+    </xsl:template>
+
     <!-- 018 Copyright Article-Fee Code -->
     <xsl:template match="marc:datafield[@tag = '018'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '018']" 
         mode="man">
