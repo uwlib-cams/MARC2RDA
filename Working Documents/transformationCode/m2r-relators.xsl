@@ -1187,6 +1187,39 @@
             </rdaad:P50059>
         </xsl:for-each>
     </xsl:template>
+     
+    <xsl:template name="FX1X-xx-a">
+        <xsl:if test="marc:subfield[@code = 'a'] and not(marc:subfield[@code = 'b'] or marc:subfield[@code = 'e'])">
+            <xsl:variable name="nameOfCorporateBody">
+                <xsl:value-of select="marc:subfield[@code = 'a']"/>
+            </xsl:variable>
+            <rdaad:P50032>
+                <xsl:value-of select="uwf:stripEndPunctuation($nameOfCorporateBody)"/>
+            </rdaad:P50032>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="FX1X-xx-ab">
+        <xsl:if test="(marc:subfield[@code = 'a'] and marc:subfield[@code = 'b'])">
+            <xsl:variable name="nameOfCorporateBody">
+                <xsl:value-of select="concat(marc:subfield[@code = 'a'], ' ', marc:subfield[@code = 'b'])"/>
+            </xsl:variable>
+            <rdaad:P50032>
+                <xsl:value-of select="uwf:stripEndPunctuation($nameOfCorporateBody)"/>
+            </rdaad:P50032>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="FX1X-xx-ae">
+        <xsl:if test="(marc:subfield[@code = 'a'] and marc:subfield[@code = 'e'])">
+            <xsl:variable name="nameOfCorporateBody">
+                <xsl:value-of select="concat(marc:subfield[@code = 'a'], ' ', marc:subfield[@code = 'e'])"/>
+            </xsl:variable>
+            <rdaad:P50032>
+                <xsl:value-of select="uwf:stripEndPunctuation($nameOfCorporateBody)"/>
+            </rdaad:P50032>
+        </xsl:if>
+    </xsl:template>
     
     <xsl:template name="FX1X-xx-c">
         <xsl:for-each select="marc:subfield[@code = 'c']">
