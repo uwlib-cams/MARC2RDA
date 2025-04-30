@@ -767,6 +767,39 @@
         <xsl:call-template name="F034-xx-abchrxy"/>
     </xsl:template>
 
+    <!-- 035 - System Control Number  -->
+    <xsl:template match="marc:datafield[@tag = '035'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '035']" 
+        mode="man">
+        <xsl:param name="baseID"/>
+        
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
+            <rdamo:P30004 rdf:resource="{uwf:nomenIRI($baseID, ., ., '', 'nomen')}"/>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '035'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '035']" 
+        mode="nom">
+        <xsl:param name="baseID"/>
+        
+        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
+            <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., ., '', 'nomen')}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                <rdand:P80068>
+                    <xsl:value-of select="."/>
+                </rdand:P80068>
+                
+                <xsl:if test="@code = 'z'">
+                    <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+                </xsl:if>
+                
+                <rdan:P80071>
+                    <xsl:text>System control number</xsl:text>
+                </rdan:P80071>
+ 
+            </rdf:Description>
+        </xsl:for-each>
+    </xsl:template>
+    
     <!-- 043 - Geographic Area Code -->
     <xsl:template match="marc:datafield[@tag = '043']"  
         mode="wor" expand-text="yes">
