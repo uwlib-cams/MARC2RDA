@@ -1281,6 +1281,28 @@
         </xsl:if>
     </xsl:template>
     
+    <!-- 084 - Other Classification Number -->
+    <xsl:template match="marc:datafield[@tag = '084'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '084']" 
+        mode="wor" expand-text="yes">
+        <xsl:if test="marc:subfield[@code = '2']">
+            <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
+            <xsl:for-each select="marc:subfield[@code = 'a']">
+                <rdawo:P10256 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '084'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '084']" 
+        mode="con" expand-text="yes">
+        <xsl:if test="marc:subfield[@code = '2']">
+            <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
+            <xsl:for-each select="marc:subfield[@code = 'a']">
+                <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
+                    <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '084')"/>
+                </rdf:Description>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
     
     <!-- 088 - Report number -->
     <xsl:template match="marc:datafield[@tag = '088'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '088']" 

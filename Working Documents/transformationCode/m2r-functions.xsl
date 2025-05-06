@@ -245,7 +245,7 @@
         </xsl:choose>
     </xsl:function>
     
-    <!-- lookup for field 506 concepts -->
+    <!-- lookup for field 382 concepts -->
     <!-- there's a very small vocabulary for this, so it's worth a separate quicker function -->
     <xsl:function name="uwf:s2Concept382" expand-text="true">
         <xsl:param name="sub2"/>
@@ -320,7 +320,7 @@
                 <xsl:when test="$fieldNum = '506'">
                     <xsl:copy-of select="uwf:s2Concept506($scheme)"/>
                 </xsl:when> 
-                <xsl:when test="$fieldNum = '050'">
+                <xsl:when test="$fieldNum = ('050', '084')">
                     <xsl:copy-of select="uwf:s2ConceptClassSchemes($scheme)"/>
                 </xsl:when>
                 <xsl:when test="$fieldNum = '382'">
