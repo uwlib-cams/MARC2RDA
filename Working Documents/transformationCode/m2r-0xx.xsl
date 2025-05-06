@@ -799,6 +799,17 @@
             </rdf:Description>
         </xsl:for-each>
     </xsl:template>
+   
+    <!-- 040 - Cataloging Source WIP
+    <xsl:template match="marc:datafield[@tag = '040'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '040']" 
+        mode="wor" expand-text="yes">
+        
+        <xsl:template match="marc:datafield[@tag = '040'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '040']" 
+            mode="exp" expand-text="yes">
+            <xsl:if test="@code = 'b'">
+            <rdae:P20006 rdf:resource="{normalize-space(concat('http://id.loc.gov/vocabulary/languages/', .))}"/>
+            </xsl:if>
+    -->
     
     <!-- 043 - Geographic Area Code -->
     <xsl:template match="marc:datafield[@tag = '043']"  
