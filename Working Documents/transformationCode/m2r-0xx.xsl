@@ -953,6 +953,19 @@
         </xsl:for-each>
     </xsl:template>
     
+    <!-- 047 - Form of Muscial Composition -->
+    <xsl:template match="marc:datafield[@tag = '047'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '047']" 
+        mode="wor" expand-text="yes">
+
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <rdaw:P10004><xsl:value-of select="."/></rdaw:P10004>            
+        </xsl:for-each>
+
+        <xsl:if test="@ind2 = '7' and marc:subfield[@code = '2']">
+            <rdaw:P10406><xsl:value-of select="marc:subfield[@code = '2']"/></rdaw:P10406>
+        </xsl:if>
+    </xsl:template>
+ 
     <!-- 050 - Library of Congress Call Number -->
     <xsl:template match="marc:datafield[@tag = '050']" 
         mode="wor" expand-text="yes">
