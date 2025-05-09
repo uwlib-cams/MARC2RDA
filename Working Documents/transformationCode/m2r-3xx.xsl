@@ -687,7 +687,7 @@
         </xsl:if>
     </xsl:template>
     
-    <!-- 353 Supplementary Content Characteristics --> 
+    <!-- 353 Supplementary Content Characteristics WIP --> 
     <xsl:template
         match="marc:datafield[@tag = '353'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '353']"
         mode="wor" expand-text="yes">
@@ -697,7 +697,7 @@
         </xsl:for-each>
 
         <xsl:for-each select="marc:subfield[@code = 'b'] | marc:subfield[@code = '2'] | marc:subfield[@code = '0']">
-            <rdam:P30455 rdf:resource="{.}"/>
+            <rdam:P30455><xsl:value-of select="."/></rdam:P30455>
         </xsl:for-each>
 
         <xsl:for-each select="marc:subfield[@code = '3']">
