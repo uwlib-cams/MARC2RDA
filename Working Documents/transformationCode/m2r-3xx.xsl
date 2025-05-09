@@ -686,6 +686,25 @@
             </rdamd:P30137>
         </xsl:if>
     </xsl:template>
+    
+    <!-- 353 Supplementary Content Characteristics --> 
+    <xsl:template
+        match="marc:datafield[@tag = '353'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '353']"
+        mode="wor" expand-text="yes">
+
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <rdam:P30455><xsl:value-of select="."/></rdam:P30455>
+        </xsl:for-each>
+
+        <xsl:for-each select="marc:subfield[@code = 'b'] | marc:subfield[@code = '2'] | marc:subfield[@code = '0']">
+            <rdam:P30455 rdf:resource="{.}"/>
+        </xsl:for-each>
+
+        <xsl:for-each select="marc:subfield[@code = '3']">
+            <rdam:P30137>applies to: <xsl:value-of select="."/></rdam:P30137>
+        </xsl:for-each>
+        
+    </xsl:template>
 
     <!-- 357 Originator Dissemination Control-->
     <xsl:template
