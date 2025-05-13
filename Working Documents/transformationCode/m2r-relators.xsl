@@ -1334,10 +1334,10 @@
         </xsl:for-each>
     </xsl:template>
     
-    <xsl:template name="FXXX-xx-tknp">
-        <xsl:if test="marc:subfield[@code = 't'] or marc:subfield[@code = 'k'] or marc:subfield[@code = 'n'] or marc:subfield[@code = 'p']">
+    <xsl:template name="FXXX-xx-tnp">
+        <xsl:if test="marc:subfield[@code = 't'] or marc:subfield[@code = 'n'] or marc:subfield[@code = 'p']">
             <xsl:variable name="title">
-                <xsl:value-of select="marc:subfield[@code = 't'] | marc:subfield[@code = 'k'] | marc:subfield[@code = 'n'] | marc:subfield[@code = 'p']"/>
+                <xsl:value-of select="marc:subfield[@code = 't'] | marc:subfield[@code = 'n'] | marc:subfield[@code = 'p']"/>
             </xsl:variable>
             <rdawd:P10088>
                 <xsl:value-of select="uwf:stripEndPunctuation($title)"/>

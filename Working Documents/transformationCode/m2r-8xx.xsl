@@ -97,7 +97,7 @@
             <!-- If we minted the IRI - add additional details -->
             <xsl:if test="starts-with(uwf:agentIRI($baseID, .), $BASE)">
                 <xsl:call-template name="FXXX-xx-f"/>
-                <xsl:call-template name="FXXX-xx-tknp"/>
+                <xsl:call-template name="FXXX-xx-tnp"/>
                 <xsl:call-template name="FXXX-xx-n"/>
                 <xsl:call-template name="FXXX-xx-x"/>
             </xsl:if>
