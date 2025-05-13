@@ -1375,4 +1375,22 @@
             </rdawd:P10366>
         </xsl:for-each>
     </xsl:template>
+    
+    <xsl:template name="FX30-anp">
+        <xsl:variable name="title">
+            <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'n'] | marc:subfield[@code = 'p']"/>
+        </xsl:variable>
+        <rdawd:P10088>
+            <xsl:value-of select="uwf:stripEndPunctuation($title)"/>
+        </rdawd:P10088>
+    </xsl:template>
+    
+    <xsl:template name="FX30-d">
+        <xsl:for-each select="marc:subfield[@code = 'd']">
+            <rdawd:P10219>
+                <xsl:value-of select="."/>
+            </rdawd:P10219>
+        </xsl:for-each>
+    </xsl:template>
+    
 </xsl:stylesheet>

@@ -324,7 +324,8 @@
         mode="relWor" expand-text="yes">
         <xsl:param name="baseID"/>
         <xsl:if test="@ind2 != '2'">
-            <rdf:Description rdf:about="{uwf:relWorkIRI($baseID, .)}">
+            <xsl:variable name="relWorkIRI" select="uwf:relWorkIRI($baseID, .)"/>
+            <rdf:Description rdf:about="{$relWorkIRI}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
                 <xsl:choose>
                     <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'work') = 'True'">
@@ -343,15 +344,21 @@
                                 <rdawd:P10328>
                                     <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
                                 </rdawd:P10328>
+                                <xsl:if test="starts-with($relWorkIRI, $BASE)">
+                                    <xsl:call-template name="FX30-anp"/>
+                                    <xsl:call-template name="FXXX-xx-f"/>
+                                    <xsl:call-template name="FXXX-xx-n"/>
+                                    <xsl:call-template name="FXXX-xx-x"/>
+                                </xsl:if>
                             </xsl:for-each>
                         </xsl:if>
                     </xsl:otherwise>
                 </xsl:choose>
                 <xsl:copy-of select="uwf:workIdentifiers(.)"/>
                 <!-- If we minted the IRI - add additional details -->
-                <xsl:if test="starts-with(uwf:relWorkIRI($baseID, .), $BASE)">
+                <xsl:if test="starts-with($relWorkIRI, $BASE)">
+                    <xsl:call-template name="FX30-anp"/>
                     <xsl:call-template name="FXXX-xx-f"/>
-                    <xsl:call-template name="FXXX-xx-tknp"/>
                     <xsl:call-template name="FXXX-xx-n"/>
                     <xsl:call-template name="FXXX-xx-x"/>
                 </xsl:if>

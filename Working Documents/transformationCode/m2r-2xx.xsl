@@ -25,6 +25,21 @@
     <xsl:import href="m2r-functions.xsl"/>
     <xsl:import href="m2r-iris.xsl"/>
     
+    <xsl:template match="marc:datafield[@tag = '240'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '240']"
+        mode="aggWor">
+        <!-- title -->
+        <xsl:call-template name="FX30-anp"/>
+    </xsl:template> 
+    
+    <xsl:template match="marc:datafield[@tag = '240'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '240']"
+        mode="seWor augWor">
+        <!-- title -->
+        <xsl:call-template name="FX30-anp"/>
+        <!-- attribute subfields -->
+        <xsl:call-template name="FX30-d"/>
+        <xsl:call-template name="FXXX-xx-n"/>
+    </xsl:template> 
+    
     <xsl:template match="marc:datafield[@tag = '245'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '245']" mode="wor augWor" >
         <!--<xsl:call-template name="getmarc"/>-->
         <!-- copy of 245 where last subfield's ending punctuation (, or .) is removed -->

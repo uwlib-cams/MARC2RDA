@@ -29,6 +29,7 @@
     
     <!-- skips fields not yet handled -->
     <xsl:mode name="wor" on-no-match="shallow-skip"/>
+    <xsl:mode name="seWor" on-no-match="shallow-skip"/>
     <xsl:mode name="aggWor" on-no-match="shallow-skip"/>
     <xsl:mode name="augWor" on-no-match="shallow-skip"/>
     <xsl:mode name="exp" on-no-match="shallow-skip"/>
@@ -200,6 +201,9 @@
                             </xsl:if>
                             
                             <xsl:apply-templates select="*" mode="wor">
+                                <xsl:with-param name="baseID" select="$baseID"/>
+                            </xsl:apply-templates>
+                            <xsl:apply-templates select="*" mode="seWor">
                                 <xsl:with-param name="baseID" select="$baseID"/>
                             </xsl:apply-templates>
                         </rdf:Description>

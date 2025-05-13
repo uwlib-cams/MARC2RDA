@@ -18,6 +18,7 @@
     <xsl:include href="m2r-4xx-named.xsl"/>
     <xsl:import href="getmarc.xsl"/>
     <xsl:import href="m2r-iris.xsl"/>
+    <xsl:import href="m2r-aps.xsl"/>
     
     <xsl:template match="marc:datafield[@tag = '440'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '440-00']"
         mode="wor">
@@ -40,6 +41,8 @@
            <rdawd:P10328>
                <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
            </rdawd:P10328>
+           <!-- title -->
+           <xsl:call-template name="FX30-anp"/>
            <xsl:if test="@tag = '440' and marc:subfield[@code = '6']">
                <xsl:variable name="occNum" select="concat('440-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                <xsl:for-each
@@ -47,6 +50,8 @@
                    <rdawd:P10328>
                        <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
                    </rdawd:P10328>
+                   <!-- title -->
+                   <xsl:call-template name="FX30-anp"/>
                </xsl:for-each>
            </xsl:if>
        </rdf:Description>
