@@ -646,6 +646,137 @@
         </xsl:for-each>
     </xsl:template>
     
+    <!-- 033 - Date/Time and Place of an Event WIP  -->
+    <xsl:template match="marc:datafield[@tag='033'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '033']" 
+        mode="wor" expand-text="yes">
+        <xsl:param name="baseID"/>
+        
+        <xsl:for-each select="marc:subfield[@code = 'b']">
+            <rdawo:P10316 rdf:resource="{uwf:placeIRI($baseID, ., ., 'lcco_g')}"/>
+            <xsl:if test="following-sibling::marc:subfield[@code = 'c'][1]">
+                <rdawo:P10316 rdf:resource="{uwf:placeIRI($baseID, ., ., 'lcco_gcutter')}"/>
+            </xsl:if>
+        </xsl:for-each>
+        
+        <xsl:if test="@ind2 = '2' and not(marc:subfield[@code = '2'] or marc:subfield[@code = '0'])">
+            <xsl:for-each select="marc:subfield[@code = 'p']">
+                <rdawo:P10316>
+                    <xsl:value-of select="."/>
+                </rdawo:P10316>
+             </xsl:for-each>
+        </xsl:if>
+        
+        <xsl:if test="@ind2 = '2' and marc:subfield[@code = '2'])">
+            <xsl:for-each select="marc:subfield[@code = 'p']">
+                <xsl:if test="following-sibling::marc:subfield[@code = '2'][1]">
+                    <rdawo:P10316 rdf:resource="{uwf:placeIRI($baseID, ., ., following-sibling::marc:subfield[@code = '2'][1])}"/>
+                </xsl:if>
+                
+            </xsl:for-each>
+        </xsl:if>
+        
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag='033'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '033']" 
+        mode="exp" expand-text="yes">
+        
+        <xsl:param name="baseID"/>
+        
+        <!-- check whether there's $a -->
+        <xsl:if test="@ind1 = '0|1|2'">
+                   
+            <!-- output each $a -->
+            <!-- date of Capture -->
+            <xsl:if test="@ind2 = '0'">
+                <xsl:for-each select="marc:subfield[@code = 'a']"><!-- recorded in the pattern yyyymmddhhmm+-hmm -->
+                <rdae:P20004>
+                    <xsl:value-of select="marc:subfield[@code = 'a']"/><!-- add date handling -->
+                </rdae:P20004>
+                </xsl:for-each>
+            </xsl:if>
+                
+            <!-- date of Broadcast -->
+            <xsl:if test="@ind2 = '1'">
+                <xsl:for-each select="marc:subfield[@code = 'a']"><!-- recorded in the pattern yyyymmddhhmm+-hmm -->
+                    <rdae:P20214>
+                        <xsl:value-of select="marc:subfield[@code = 'a']"/><!-- add date handling -->
+                    </rdae:P20214>
+                </xsl:for-each>
+            </xsl:if>
+         </xsl:if>
+        
+        <!-- place of Capture nomen -->
+        <xsl:if test="@ind2 = '0'">
+            <xsl:for-each select="marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']">
+                <rdae:P20218 rdf:resource="{uwf:nomenIRI($baseID, ., ., '', 'nomen')}"/>
+            </xsl:for-each>
+        </xsl:if>
+        
+        <!-- place of Capture -->
+        <xsl:if test="@ind2 = '0' and not(marc:subfield[@code = '2'] or marc:subfield[@code = '0'])">
+            <xsl:for-each select="marc:subfield[@code = 'p']">
+                <rdaeo:P20218>
+                    <xsl:value-of select="."/>
+                </rdaeo:P20218>
+            </xsl:for-each>
+        </xsl:if>
+        
+        <!-- related place of Broadcast/expression -->
+        <xsl:if test="@ind2 = '1' and not(marc:subfield[@code = '2'] or marc:subfield[@code = '0'])">
+            <xsl:for-each select="marc:subfield[@code = 'p']">
+                <rdaeo:P20306>
+                    <xsl:value-of select="."/>
+                </rdaeo:P20306>
+            </xsl:for-each>
+        </xsl:if>
+       
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag='033'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '033']" 
+        mode="pla" expand-text="yes">
+        
+        <xsl:param name="baseID"/>
+        
+        <xsl:for-each select="marc:subfield[@code = 'b']">
+            <xsl:if test="following-sibling::marc:subfield[@code = 'c'][1]">
+                <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., .,  concat(., ' ', following-sibling::marc:subfield[@code = 'c'][1]), 'place')}">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+                    <rdapo:P70020>
+                        <xsl:value-of select="concat(., ' ', following-sibling::marc:subfield[@code = 'c'][1])"/>
+                    </rdapo:P70020>
+                </rdf:Description>
+            </xsl:if>
+        </xsl:for-each>
+        
+        <xsl:for-each select="marc:subfield[@code = 'p']">
+            <xsl:if test="following-sibling::marc:subfield[@code = '2'][1]">
+                <rdf:Description rdf:about="{uwf:placeIRI($baseID, ., ., following-sibling::marc:subfield[@code = '2'][1])}">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+                    <rdapo:P70020 rdf:resource="{uwf:nomenIRI($baseID, ., ., following-sibling::marc:subfield[@code = '2'][1], 'place')}"/>
+                </rdf:Description>
+            </xsl:if>
+        </xsl:for-each>                
+    
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag='033'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '033']" 
+        mode="nom" expand-text="yes">
+        <xsl:param name="baseID"/>
+        
+                 <xsl:for-each select="marc:subfield[@code = 'b']">
+                    <xsl:if test="following-sibling::marc:subfield[@code = 'c'][1]">
+                        <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., .,  concat(., ' ', following-sibling::marc:subfield[@code = 'c'][1]), 'nomen')}">
+                            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                            <rdand:P80068>
+                                <xsl:value-of select="concat(., ' ', following-sibling::marc:subfield[@code = 'c'][1])"/>
+                            </rdand:P80068>
+                            <rdand:P80069><xsl:text>Library of Congress Classification--Class G</xsl:text></rdand:P80069>
+                        </rdf:Description>
+                    </xsl:if>
+                </xsl:for-each>
+
+    </xsl:template>
+
     <!-- 034 - Coded Cartographic Mathematical Data -->
     
     <xsl:template match="marc:datafield[@tag = '034'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '034']"
