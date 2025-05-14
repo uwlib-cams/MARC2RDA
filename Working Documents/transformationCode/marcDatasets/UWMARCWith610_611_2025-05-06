@@ -1,0 +1,1474 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+     <marc:record>
+        <marc:leader>03744cam a2200589 i 4500</marc:leader>
+        <marc:controlfield tag="001">1196834877</marc:controlfield>
+        <marc:controlfield tag="008">200922t20202020waua    obm  s000 0 eng  </marc:controlfield>
+        <marc:controlfield tag="006">m     o  d s      </marc:controlfield>
+        <marc:controlfield tag="005">20220526143434.2</marc:controlfield>
+        <marc:controlfield tag="007">cr ||||||||||</marc:controlfield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAU</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="e">rda</marc:subfield>
+            <marc:subfield code="e">pn</marc:subfield>
+            <marc:subfield code="c">WAU</marc:subfield>
+            <marc:subfield code="d">OCLCF</marc:subfield>
+            <marc:subfield code="d">OCLCA</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCL</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="042" ind1=" " ind2=" ">
+            <marc:subfield code="a">pcc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Cai, Yuansi,</marc:subfield>
+            <marc:subfield code="e">author.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Exploring the potentials of interdisciplinary studios in the University of Washington College of Built Environments /</marc:subfield>
+            <marc:subfield code="c">Yuansi Cai.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">[Seattle] :</marc:subfield>
+            <marc:subfield code="b">[University of Washington Libraries],</marc:subfield>
+            <marc:subfield code="c">[2020]</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="4">
+            <marc:subfield code="c">©2020</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 online resource (67 pages) :</marc:subfield>
+            <marc:subfield code="b">illustrations (some color)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer</marc:subfield>
+            <marc:subfield code="b">c</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">online resource</marc:subfield>
+            <marc:subfield code="b">cr</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="347" ind1=" " ind2=" ">
+            <marc:subfield code="a">text file</marc:subfield>
+            <marc:subfield code="2">rdaft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="347" ind1=" " ind2=" ">
+            <marc:subfield code="b">PDF</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="502" ind1=" " ind2=" ">
+            <marc:subfield code="b">M. Landsc. Arch.</marc:subfield>
+            <marc:subfield code="c">University of Washington</marc:subfield>
+            <marc:subfield code="d">2020.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="502" ind1=" " ind2=" ">
+            <marc:subfield code="b">M. Urban Plan.</marc:subfield>
+            <marc:subfield code="c">University of Washington</marc:subfield>
+            <marc:subfield code="d">2020</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="504" ind1=" " ind2=" ">
+            <marc:subfield code="a">Includes bibliographical references (pages 62-66).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="520" ind1="3" ind2=" ">
+            <marc:subfield code="a">Interdisciplinary collaboration has become a key strategy in the fields of the built environment to understand and address complex environmental and societal issues. The College of Built Environments at the University of Washington has applied the idea of interdisciplinarity to education, offering a series of college-wide interdisciplinary studios since 2009. This study conducts a qualitative review of the interdisciplinary studios at the College of Built Environments from 2009-2019. Through fifteen in-depth interviews with previous studio instructors, this study explores how studio instructors understand the idea of interdisciplinarity, how their understandings are reflected in the studio pedagogy, and what are the future potentials for the interdisciplinary studio in the University of Washington College of Built Environments.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="588" ind1="0" ind2=" ">
+            <marc:subfield code="a">Online resource; title from PDF title page (ResearchWorks Archive, viewed [date]).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Interdisciplinary approach in education</marc:subfield>
+            <marc:subfield code="z">Washington (State)</marc:subfield>
+            <marc:subfield code="z">Seattle.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="610" ind1="2" ind2="0">
+            <marc:subfield code="a">University of Washington.</marc:subfield>
+            <marc:subfield code="b">College of Built Environments.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">City planning</marc:subfield>
+            <marc:subfield code="x">Study and teaching (Graduate)</marc:subfield>
+            <marc:subfield code="z">Washington (State)</marc:subfield>
+            <marc:subfield code="z">Seattle.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Landscape architecture</marc:subfield>
+            <marc:subfield code="x">Study and teaching (Graduate)</marc:subfield>
+            <marc:subfield code="z">Washington (State)</marc:subfield>
+            <marc:subfield code="z">Seattle.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Interdisciplinarité en éducation</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0066542</marc:subfield>
+            <marc:subfield code="z">Washington (État)</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0394837</marc:subfield>
+            <marc:subfield code="z">Seattle.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0394837</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Architecture du paysage</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0002163</marc:subfield>
+            <marc:subfield code="x">Étude et enseignement (2e et 3e cycles)</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0374476</marc:subfield>
+            <marc:subfield code="z">Washington (État)</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0394837</marc:subfield>
+            <marc:subfield code="z">Seattle.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0394837</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Landscape architecture</marc:subfield>
+            <marc:subfield code="x">Study and teaching (Graduate)</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00991849</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Interdisciplinary approach in education.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00976122</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">City planning</marc:subfield>
+            <marc:subfield code="x">Study and teaching (Graduate)</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00862267</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="7">
+            <marc:subfield code="a">Washington (State)</marc:subfield>
+            <marc:subfield code="z">Seattle.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01204940</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Built Environment</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Interdisciplinary</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Pedagogy</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Studio</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Landscape architecture</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Urban planning</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="4">
+            <marc:subfield code="a">Theses</marc:subfield>
+            <marc:subfield code="x">Landscape architecture.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="4">
+            <marc:subfield code="a">Theses</marc:subfield>
+            <marc:subfield code="x">Urban planning</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Academic theses.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01726453</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Academic theses.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Thèses et écrits académiques.</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)RVMGF-000001173</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Born, Branden M.,</marc:subfield>
+            <marc:subfield code="e">degree supervisor.</marc:subfield>
+            <marc:subfield code="1">http://www.wikidata.org/entity/Q101539490</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Johnson, Julie,</marc:subfield>
+            <marc:subfield code="d">1962-</marc:subfield>
+            <marc:subfield code="e">degree supervisor.</marc:subfield>
+            <marc:subfield code="1">http://www.wikidata.org/entity/Q103813521</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="7">0</marc:subfield>
+            <marc:subfield code="u">http://hdl.handle.net/1773/46063</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="049" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAUW</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>02520cam a2200457 i 4500</marc:leader>
+        <marc:controlfield tag="001">1343101912</marc:controlfield>
+        <marc:controlfield tag="008">220831s2020    ir ah    b    001 0 per c</marc:controlfield>
+        <marc:controlfield tag="005">20221027104749.9</marc:controlfield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAU</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="e">rda</marc:subfield>
+            <marc:subfield code="c">WAU</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+            <marc:subfield code="d">OCLCF</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="066" ind1=" " ind2=" ">
+            <marc:subfield code="c">(3</marc:subfield>
+            <marc:subfield code="c">(4</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9786004862400</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">6004862401</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="042" ind1=" " ind2=" ">
+            <marc:subfield code="a">pcc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="050" ind1=" " ind2="4">
+            <marc:subfield code="a">DS325.T14</marc:subfield>
+            <marc:subfield code="b">C49 2020</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="6">880-01</marc:subfield>
+            <marc:subfield code="a">Chihrahʹgushā, Amīr,</marc:subfield>
+            <marc:subfield code="d">1979 or 1980-</marc:subfield>
+            <marc:subfield code="e">author.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="6">880-02</marc:subfield>
+            <marc:subfield code="a">Tabrīz dar girdāb-i sāyahʹhā :</marc:subfield>
+            <marc:subfield code="b">taḥavvulāt-i Tabrīz dar khilāl-i sālʹhā-yi 1326-1345 H. Sh. bā taʼkīd bar maṭbūʻāt va asnād-i nawyāft /</marc:subfield>
+            <marc:subfield code="c">Amīr Chihrahʹgushā = Tabriz in the vortex of shadows : (developments in Tabriz over the years 1947 and 1966 with emphasis on news and documents) / Amir Chehregosha.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="246" ind1="3" ind2="1">
+            <marc:subfield code="a">Tabriz in the vortex of shadows</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="250" ind1=" " ind2=" ">
+            <marc:subfield code="6">880-03</marc:subfield>
+            <marc:subfield code="a">Chāp-i avval.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="6">880-04</marc:subfield>
+            <marc:subfield code="a">Tabrīz :</marc:subfield>
+            <marc:subfield code="b">Nashr-i Akhtar,</marc:subfield>
+            <marc:subfield code="c">2020.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">381 pages :</marc:subfield>
+            <marc:subfield code="b">illustrations, facsimiles</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">unmediated</marc:subfield>
+            <marc:subfield code="b">n</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">volume</marc:subfield>
+            <marc:subfield code="b">nc</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="504" ind1=" " ind2=" ">
+            <marc:subfield code="a">Includes bibliographical references (pages 353-368) and indexes.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="0">
+            <marc:subfield code="a">Tabrīz (Iran)</marc:subfield>
+            <marc:subfield code="x">History</marc:subfield>
+            <marc:subfield code="y">20th century.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="0">
+            <marc:subfield code="a">Iran</marc:subfield>
+            <marc:subfield code="x">History</marc:subfield>
+            <marc:subfield code="y">Mohammad Reza Pahlavi, 1941-1979.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="0">
+            <marc:subfield code="a">Tabrīz (Iran)</marc:subfield>
+            <marc:subfield code="x">Press coverage</marc:subfield>
+            <marc:subfield code="x">History</marc:subfield>
+            <marc:subfield code="y">20th century.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="0">
+            <marc:subfield code="a">Iran</marc:subfield>
+            <marc:subfield code="x">Press coverage</marc:subfield>
+            <marc:subfield code="x">History</marc:subfield>
+            <marc:subfield code="y">20th century.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="610" ind1="2" ind2="0">
+            <marc:subfield code="6">880-05</marc:subfield>
+            <marc:subfield code="a">Ḥizb-i Dīmūkrātī-i Āz̲arbāyjan (Iran)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="610" ind1="2" ind2="7">
+            <marc:subfield code="a">Ḥizb-i Dīmūkrātī-i Āz̲arbāyjan (Iran)</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00656437</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="648" ind1=" " ind2="7">
+            <marc:subfield code="a">1900-1999</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Press coverage.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01198921</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="7">
+            <marc:subfield code="a">Iran.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01204889</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="7">
+            <marc:subfield code="a">Iran</marc:subfield>
+            <marc:subfield code="z">Tabrīz.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01206575</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">History.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01411628</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1="1" ind2=" ">
+            <marc:subfield code="6">100-01/(4/r</marc:subfield>
+            <marc:subfield code="a">چهره‌گشا، امير،</marc:subfield>
+            <marc:subfield code="d">1979 or 1980-</marc:subfield>
+            <marc:subfield code="e">author.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1="1" ind2="0">
+            <marc:subfield code="6">245-02/(3/r</marc:subfield>
+            <marc:subfield code="a">تبريز در گرداب سايه‌ها :</marc:subfield>
+            <marc:subfield code="b">((تحولات تبريز در خلال سال‌هاى 1326-1345 ه. ش. با تأكيد بر مطبوعات و اسناد نويافت /</marc:subfield>
+            <marc:subfield code="c">امير چهره‌گشا = Tabriz in the vortex of shadows : (developments in Tabriz over the years 1947 and 1966 with emphasis on news and documents) / Amir Chehregosha.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">250-03/(4/r</marc:subfield>
+            <marc:subfield code="a">چاپ اول.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1=" " ind2="1">
+            <marc:subfield code="6">264-04/(3/r</marc:subfield>
+            <marc:subfield code="a">تبريز :</marc:subfield>
+            <marc:subfield code="b">نشر اختر،</marc:subfield>
+            <marc:subfield code="c">2020.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1="2" ind2="4">
+            <marc:subfield code="6">610-05/(3/r</marc:subfield>
+            <marc:subfield code="a">حزب ديموکراتى آذرباىجن (ايران)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="049" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAUW</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+     <marc:record>
+        <marc:leader>03770cam a2200505 i 4500</marc:leader>
+        <marc:controlfield tag="001">1261648319</marc:controlfield>
+        <marc:controlfield tag="006">m     o  d s      </marc:controlfield>
+        <marc:controlfield tag="008">210726t20202020wauab   obm  s000 0 eng c</marc:controlfield>
+        <marc:controlfield tag="005">20220831165938.4</marc:controlfield>
+        <marc:controlfield tag="007">cr ||||||||||</marc:controlfield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAU</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="e">rda</marc:subfield>
+            <marc:subfield code="e">pn</marc:subfield>
+            <marc:subfield code="c">WAU</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCF</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="042" ind1=" " ind2=" ">
+            <marc:subfield code="a">pcc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Marcus, Dylan,</marc:subfield>
+            <marc:subfield code="e">author.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Spanning the gaps :</marc:subfield>
+            <marc:subfield code="b">integrating site, stakeholders, and context to enhance vegetation management at Seattle City Light /</marc:subfield>
+            <marc:subfield code="c">Dylan Marcus.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">[Seattle] :</marc:subfield>
+            <marc:subfield code="b">[University of Washington Libraries],</marc:subfield>
+            <marc:subfield code="c">[2020]</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="4">
+            <marc:subfield code="c">©2020</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 online resource (124 pages):</marc:subfield>
+            <marc:subfield code="b">illustrations (chiefly color), color maps</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer</marc:subfield>
+            <marc:subfield code="b">c</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">online resource</marc:subfield>
+            <marc:subfield code="b">cr</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="347" ind1=" " ind2=" ">
+            <marc:subfield code="a">text file</marc:subfield>
+            <marc:subfield code="2">rdaft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="347" ind1=" " ind2=" ">
+            <marc:subfield code="b">PDF</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="502" ind1=" " ind2=" ">
+            <marc:subfield code="b">M. Landsc. Arch.</marc:subfield>
+            <marc:subfield code="c">University of Washington</marc:subfield>
+            <marc:subfield code="d">2020.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="504" ind1=" " ind2=" ">
+            <marc:subfield code="a">Includes bibliographical references (pages 97-103).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="520" ind1="3" ind2=" ">
+            <marc:subfield code="a">Management of vegetation on transmission line right of ways depends on a multitude of factors. Vegetation managers must respond not only to the physical parameters of a site - such as topography and line height - but also they must maintain good relationships with easement property owners and other stakeholders throughout the length of a transmission corridor. Socio-ecological context surrounding a transmission right of way further complicates the situation, as a range of habitats and human uses may occur beneath a utility's transmission lines. Seattle City Light owns and manages many miles of transmission right of ways within Seattle and leading up to the Skagit Hydroelectric Project in the North Cascades. Vegetation managers at the large public utility implement management strategies that respond to the many stakeholders along City Light's transmission corridors. This thesis explores the latest efforts of Seattle City Light to maximize multi-functionality on the transmission right of way while minimizing long term monetary and non-monetary costs. A series of case studies - viewed from the perspective of a Seattle City Light intern - spanning the urban-to-rural gradient illustrate the array of stakeholders City Light hopes to engage to initiate collaborative vegetation management strategies. Conclusions are drawn by way of reflection on the case studies investigated, and recommendations are made for future efforts in vegetation management at Seattle City Light.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="588" ind1="0" ind2=" ">
+            <marc:subfield code="a">Online resource; title from PDF title page (ResearchWorks Archive, viewed July 26, 2021).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Vegetation management</marc:subfield>
+            <marc:subfield code="z">Washington (State), Western.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="610" ind1="2" ind2="0">
+            <marc:subfield code="a">Seattle City Light</marc:subfield>
+            <marc:subfield code="x">Landscape architecture.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Landscape architecture</marc:subfield>
+            <marc:subfield code="z">Washington (State), Western.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Végétation</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0259390</marc:subfield>
+            <marc:subfield code="x">Gestion</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0259390</marc:subfield>
+            <marc:subfield code="z">Washington (Ouest)</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0399435</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Architecture du paysage</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0002163</marc:subfield>
+            <marc:subfield code="z">Washington (Ouest)</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0399435</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Integrated Vegetation Management</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Multi-functionality</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Transmission lines</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Environmental management</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Natural resource management</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="653" ind1="0" ind2=" ">
+            <marc:subfield code="a">Landscape architecture</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="4">
+            <marc:subfield code="a">Theses</marc:subfield>
+            <marc:subfield code="x">Landscape architecture.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Academic theses.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01726453</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Academic theses.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Thèses et écrits académiques.</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)RVMGF-000001173</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Yocom, Kenneth</marc:subfield>
+            <marc:subfield code="q">(Kenneth Peter),</marc:subfield>
+            <marc:subfield code="d">1973-</marc:subfield>
+            <marc:subfield code="e">degree supervisor.</marc:subfield>
+            <marc:subfield code="1">http://www.wikidata.org/entity/Q104093612</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Freitag, Robert,</marc:subfield>
+            <marc:subfield code="d">1943-</marc:subfield>
+            <marc:subfield code="e">degree supervisor.</marc:subfield>
+            <marc:subfield code="1">http://www.wikidata.org/entity/Q110718692</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="u">http://hdl.handle.net/1773/46822</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="049" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAUW</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+     <marc:record>
+        <marc:leader>02205cam a2200445 i 4500</marc:leader>
+        <marc:controlfield tag="001">1175597850</marc:controlfield>
+        <marc:controlfield tag="008">200717s2020    dcu     of    000 0 eng c</marc:controlfield>
+        <marc:controlfield tag="006">m     o  d        </marc:controlfield>
+        <marc:controlfield tag="005">20220629173938.7</marc:controlfield>
+        <marc:controlfield tag="007">cr mn|||||||||</marc:controlfield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAU</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="e">rda</marc:subfield>
+            <marc:subfield code="e">pn</marc:subfield>
+            <marc:subfield code="c">WAU</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+            <marc:subfield code="d">NBO</marc:subfield>
+            <marc:subfield code="d">CLU</marc:subfield>
+            <marc:subfield code="d">OCLCF</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">CLU</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="042" ind1=" " ind2=" ">
+            <marc:subfield code="a">pcc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="050" ind1=" " ind2="4">
+            <marc:subfield code="a">Z693.3.A88</marc:subfield>
+            <marc:subfield code="b">N33 2020</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="082" ind1="0" ind2="4">
+            <marc:subfield code="a">025.35</marc:subfield>
+            <marc:subfield code="2">23</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="110" ind1="2" ind2=" ">
+            <marc:subfield code="a">NACO (Program),</marc:subfield>
+            <marc:subfield code="e">author.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">NACO participants' manual.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="250" ind1=" " ind2=" ">
+            <marc:subfield code="a">4th edition.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">[Washington, D.C.] :</marc:subfield>
+            <marc:subfield code="b">Program for Cooperative Cataloging, Standing Committee on Training,</marc:subfield>
+            <marc:subfield code="c">2020.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 online resource (107 pages)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer</marc:subfield>
+            <marc:subfield code="b">c</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">online resource</marc:subfield>
+            <marc:subfield code="b">cr</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="347" ind1=" " ind2=" ">
+            <marc:subfield code="a">text file</marc:subfield>
+            <marc:subfield code="2">rdaft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="347" ind1=" " ind2=" ">
+            <marc:subfield code="b">PDF</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">At head of title: PCC, Program for Cooperative Cataloging, NACO: Name Authority Cooperative Program.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">&quot;Prepared by a task group of the PCC Standing Committee on Training consisting of John Hostage (Harvard University), Chair, Everett Allgood (New York University), Paul Frank (Library of Congress), and David Van Kleeck (University of Florida)&quot;--Page 4.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="506" ind1="0" ind2=" ">
+            <marc:subfield code="a">Open access</marc:subfield>
+            <marc:subfield code="f">Unrestricted online access</marc:subfield>
+            <marc:subfield code="2">star</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="588" ind1="0" ind2=" ">
+            <marc:subfield code="a">Online resource; title from PDF title page (PCC, viewed July 17, 2020).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="610" ind1="2" ind2="0">
+            <marc:subfield code="a">NACO (Program)</marc:subfield>
+            <marc:subfield code="v">Handbooks, manuals, etc.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Name authority records (Information retrieval)</marc:subfield>
+            <marc:subfield code="v">Handbooks, manuals, etc.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Vedettes-auteurs</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0273074</marc:subfield>
+            <marc:subfield code="v">Guides, manuels, etc.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0377046</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="610" ind1="2" ind2="7">
+            <marc:subfield code="a">NACO (Program)</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00697555</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Name authority records (Information retrieval)</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01032339</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="2">
+            <marc:subfield code="a">Handbook</marc:subfield>
+            <marc:subfield code="0">(DNLM)D020479</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Handbooks and manuals</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01423877</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Handbooks and manuals.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Guides et manuels.</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)RVMGF-000001065</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="a">Program for Cooperative Cataloging.</marc:subfield>
+            <marc:subfield code="b">Standing Committee on Training,</marc:subfield>
+            <marc:subfield code="e">author,</marc:subfield>
+            <marc:subfield code="e">publisher.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="u">http://bibpurl.oclc.org/web/95162</marc:subfield>
+            <marc:subfield code="u">https://www.loc.gov/aba/pcc/naco/documents/NACOParticipants'Manual-20200708.pdf</marc:subfield>
+            <marc:subfield code="7">0</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="049" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAUW</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+     <marc:record>
+        <marc:leader>02589cam a2200481 i 4500</marc:leader>
+        <marc:controlfield tag="001">1280150230</marc:controlfield>
+        <marc:controlfield tag="006">m     o  d s      </marc:controlfield>
+        <marc:controlfield tag="008">211022e20210913waua    o    s000 0 eng c</marc:controlfield>
+        <marc:controlfield tag="005">20220609223533.2</marc:controlfield>
+        <marc:controlfield tag="007">cr mn|||||||||</marc:controlfield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAU</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="e">rda</marc:subfield>
+            <marc:subfield code="e">pn</marc:subfield>
+            <marc:subfield code="c">WAU</marc:subfield>
+            <marc:subfield code="d">OCLCF</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="042" ind1=" " ind2=" ">
+            <marc:subfield code="a">pcc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="043" ind1=" " ind2=" ">
+            <marc:subfield code="a">n-us-wa</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="050" ind1=" " ind2="4">
+            <marc:subfield code="a">Z733.U87</marc:subfield>
+            <marc:subfield code="b">U63 2021</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="110" ind1="2" ind2=" ">
+            <marc:subfield code="a">University of Washington.</marc:subfield>
+            <marc:subfield code="b">Libraries,</marc:subfield>
+            <marc:subfield code="e">author.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Journey through the UW Libraries :</marc:subfield>
+            <marc:subfield code="b">a self-guided tour /</marc:subfield>
+            <marc:subfield code="c">University of Washington Libraries.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="246" ind1="3" ind2=" ">
+            <marc:subfield code="a">Journey through the University of Washington Libraries</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">[Seattle] :</marc:subfield>
+            <marc:subfield code="b">University of Washington,</marc:subfield>
+            <marc:subfield code="c">September 13, 2021.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 online resource :</marc:subfield>
+            <marc:subfield code="b">color illustrations</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer</marc:subfield>
+            <marc:subfield code="b">c</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">online resource</marc:subfield>
+            <marc:subfield code="b">cr</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="347" ind1=" " ind2=" ">
+            <marc:subfield code="a">text file</marc:subfield>
+            <marc:subfield code="2">rdaft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="380" ind1=" " ind2=" ">
+            <marc:subfield code="a">Open educational resources</marc:subfield>
+            <marc:subfield code="2">lcsh</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="505" ind1="0" ind2=" ">
+            <marc:subfield code="a">Odegaard Library -- Suzzallo and Allen Libraries -- Health Sciences Library -- Foster Business Library -- Engineering Library -- Tateuhi East Asia Library -- More UW libraries -- Conclusion.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="540" ind1=" " ind2=" ">
+            <marc:subfield code="a">Licensed under a Creative Commons Attribution-NonCommercial 4.0 International License, except where otherwise noted.</marc:subfield>
+            <marc:subfield code="u">https://creativecommons.org/licenses/by-nc-sa/4.0</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="588" ind1="0" ind2=" ">
+            <marc:subfield code="a">Online resource; title from home page (University of Washington, viewed on October 22, 2021).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="610" ind1="2" ind2="0">
+            <marc:subfield code="a">University of Washington.</marc:subfield>
+            <marc:subfield code="b">Libraries</marc:subfield>
+            <marc:subfield code="v">Guidebooks.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Academic libraries</marc:subfield>
+            <marc:subfield code="z">Washington (State)</marc:subfield>
+            <marc:subfield code="z">Seattle</marc:subfield>
+            <marc:subfield code="v">Guidebooks.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Research libraries</marc:subfield>
+            <marc:subfield code="z">Washington (State)</marc:subfield>
+            <marc:subfield code="z">Seattle</marc:subfield>
+            <marc:subfield code="v">Guidebooks.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Bibliothèques universitaires</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0003680</marc:subfield>
+            <marc:subfield code="z">Washington (État)</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0394837</marc:subfield>
+            <marc:subfield code="z">Seattle</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0394837</marc:subfield>
+            <marc:subfield code="v">Guides.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0377044</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Bibliothèques de recherche</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0003717</marc:subfield>
+            <marc:subfield code="z">Washington (État)</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0394837</marc:subfield>
+            <marc:subfield code="z">Seattle</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0394837</marc:subfield>
+            <marc:subfield code="v">Guides.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0377044</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="610" ind1="2" ind2="7">
+            <marc:subfield code="a">University of Washington.</marc:subfield>
+            <marc:subfield code="b">Libraries.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00532944</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Academic libraries.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00794997</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Research libraries.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01095327</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="7">
+            <marc:subfield code="a">Washington (State)</marc:subfield>
+            <marc:subfield code="z">Seattle.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01204940</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="0">
+            <marc:subfield code="a">Open educational resources.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">travel guidebooks.</marc:subfield>
+            <marc:subfield code="2">aat</marc:subfield>
+            <marc:subfield code="0">(CStmoGRI)aatgf300026311</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Guidebooks.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01423871</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Guidebooks.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Guides touristiques.</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)RVMGF-000001066</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="u">https://uw.pressbooks.pub/uwlibrariestour/</marc:subfield>
+            <marc:subfield code="7">0</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="049" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAUW</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+      <marc:record>
+        <marc:leader>03472ccm a2200805Ii 4500</marc:leader>
+        <marc:controlfield tag="001">980908778</marc:controlfield>
+        <marc:controlfield tag="005">20220530141255.8</marc:controlfield>
+        <marc:controlfield tag="008">170331t20172017gw coie        n  b zxx d</marc:controlfield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">OHX</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="e">rda</marc:subfield>
+            <marc:subfield code="c">OHX</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">LTSCA</marc:subfield>
+            <marc:subfield code="d">INU</marc:subfield>
+            <marc:subfield code="d">IUL</marc:subfield>
+            <marc:subfield code="d">IAC</marc:subfield>
+            <marc:subfield code="d">OCLCA</marc:subfield>
+            <marc:subfield code="d">BOS</marc:subfield>
+            <marc:subfield code="d">RES</marc:subfield>
+            <marc:subfield code="d">OCL</marc:subfield>
+            <marc:subfield code="d">ISM</marc:subfield>
+            <marc:subfield code="d">NUI</marc:subfield>
+            <marc:subfield code="d">GUA</marc:subfield>
+            <marc:subfield code="d">TFW</marc:subfield>
+            <marc:subfield code="d">EMU</marc:subfield>
+            <marc:subfield code="d">CHVBK</marc:subfield>
+            <marc:subfield code="d">OCLCA</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+            <marc:subfield code="d">INT</marc:subfield>
+            <marc:subfield code="d">NYP</marc:subfield>
+            <marc:subfield code="d">UKMGB</marc:subfield>
+            <marc:subfield code="d">PUL</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">MNU</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCA</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="016" ind1="7" ind2=" ">
+            <marc:subfield code="a">018874334</marc:subfield>
+            <marc:subfield code="2">Uk</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="024" ind1="1" ind2="0">
+            <marc:subfield code="a">888680876951</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="024" ind1="2" ind2="0">
+            <marc:subfield code="a">9790001162845</marc:subfield>
+            <marc:subfield code="q">(sewn) :</marc:subfield>
+            <marc:subfield code="c">EUR27.00</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="024" ind1="2" ind2=" ">
+            <marc:subfield code="a">M001162845</marc:subfield>
+            <marc:subfield code="q">(sewn)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="028" ind1="3" ind2="0">
+            <marc:subfield code="a">TR 30</marc:subfield>
+            <marc:subfield code="b">Schott</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="028" ind1="6" ind2="2">
+            <marc:subfield code="a">49045552</marc:subfield>
+            <marc:subfield code="b">Hal Leonard</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="046" ind1=" " ind2=" ">
+            <marc:subfield code="k">2015</marc:subfield>
+            <marc:subfield code="2">edtf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="050" ind1=" " ind2="4">
+            <marc:subfield code="a">M1031.P397</marc:subfield>
+            <marc:subfield code="b">C65 2017</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="072" ind1=" " ind2="7">
+            <marc:subfield code="a">M</marc:subfield>
+            <marc:subfield code="2">lcco</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="082" ind1="1" ind2="4">
+            <marc:subfield code="a">788.92186</marc:subfield>
+            <marc:subfield code="b">P3979c, 2017</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Penderecki, Krzysztof,</marc:subfield>
+            <marc:subfield code="d">1933-2020,</marc:subfield>
+            <marc:subfield code="e">composer.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="240" ind1="1" ind2="0">
+            <marc:subfield code="a">Concertino,</marc:subfield>
+            <marc:subfield code="m">trumpet, orchestra;</marc:subfield>
+            <marc:subfield code="o">arranged</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Concertino per tromba e orchestra (2015) =</marc:subfield>
+            <marc:subfield code="b">für Trompete und Orchester = for trumpet and orchestra /</marc:subfield>
+            <marc:subfield code="c">Krzysztof Penderecki.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="250" ind1=" " ind2=" ">
+            <marc:subfield code="a">Klavierauszug /</marc:subfield>
+            <marc:subfield code="b">von Claus-Dieter Ludwig = Piano reduction / by Claus-Dieter Ludwig.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">Mainz :</marc:subfield>
+            <marc:subfield code="b">Schott,</marc:subfield>
+            <marc:subfield code="c">[2017]</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="2">
+            <marc:subfield code="a">[Milwaukee, Wisconsin] :</marc:subfield>
+            <marc:subfield code="b">distributed in North and South America exclusively by Hal Leonard.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="4">
+            <marc:subfield code="c">©2017</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 condensed score (23 pages) + 1 part (7 pages) ;</marc:subfield>
+            <marc:subfield code="c">31 cm.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="306" ind1=" " ind2=" ">
+            <marc:subfield code="a">001200</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">notated music</marc:subfield>
+            <marc:subfield code="b">ntm</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">unmediated</marc:subfield>
+            <marc:subfield code="b">n</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">volume</marc:subfield>
+            <marc:subfield code="b">nc</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="348" ind1=" " ind2=" ">
+            <marc:subfield code="a">condensed score</marc:subfield>
+            <marc:subfield code="a">part</marc:subfield>
+            <marc:subfield code="2">rdafnm</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="382" ind1="0" ind2="1">
+            <marc:subfield code="a">trumpet</marc:subfield>
+            <marc:subfield code="n">1</marc:subfield>
+            <marc:subfield code="a">piano</marc:subfield>
+            <marc:subfield code="v">includes percussion staff</marc:subfield>
+            <marc:subfield code="n">1</marc:subfield>
+            <marc:subfield code="s">2</marc:subfield>
+            <marc:subfield code="2">lcmpt</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="386" ind1=" " ind2=" ">
+            <marc:subfield code="a">Poles</marc:subfield>
+            <marc:subfield code="2">lcdgt</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="386" ind1=" " ind2=" ">
+            <marc:subfield code="a">Men</marc:subfield>
+            <marc:subfield code="2">lcdgt</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="490" ind1="1" ind2=" ">
+            <marc:subfield code="a">Trumpet library =</marc:subfield>
+            <marc:subfield code="a">Trompeten-Bibliothek ;</marc:subfield>
+            <marc:subfield code="v">TR 30</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">Originally for trumpet and orchestra; accompaniment arranged for piano.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">Composed 2015.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="546" ind1=" " ind2=" ">
+            <marc:subfield code="b">Staff notation.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">Score includes staff for percussion; piano staves include instrumental cues.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">Duration: 12 minutes.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">Distributor information from label on back cover.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">This library lacks distributor information.</marc:subfield>
+            <marc:subfield code="5">WaU</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="505" ind1="0" ind2=" ">
+            <marc:subfield code="a">Andante -- Larghetto -- Intermezzo -- Vivo ma non troppo.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Concertos (Trumpet)</marc:subfield>
+            <marc:subfield code="v">Solo with piano.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Concertos (Trumpet)</marc:subfield>
+            <marc:subfield code="x">Solo with piano.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00873864</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="611" ind1="2" ind2="7">
+            <marc:subfield code="a">Pariser Friedenskonferenz</marc:subfield>
+            <marc:subfield code="d">1919-1920</marc:subfield>
+            <marc:subfield code="c">Paris</marc:subfield>
+            <marc:subfield code="e">Polish Delegation</marc:subfield>
+            <marc:subfield code="2">gnd</marc:subfield>
+            <marc:subfield code="0">(DE-588)1165906457</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Arrangements (Music)</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01920435</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Concertos.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01726450</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Parts (Music)</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01692889</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Scores.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01692898</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Concertos.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Arrangements (Music)</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Scores.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Parts (Music)</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Concertos.</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)RVMGF-000000723</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Arrangements (Musique)</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)RVMGF-000000691</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Partitions (Musique)</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)RVMGF-000000816</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Parties (Musique)</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)RVMGF-000000815</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Ludwig, Claus-Dieter,</marc:subfield>
+            <marc:subfield code="e">arranger of music.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="830" ind1=" " ind2="0">
+            <marc:subfield code="a">Trumpet library ;</marc:subfield>
+            <marc:subfield code="v">TR 30.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">Otto Harrassowitz</marc:subfield>
+            <marc:subfield code="b">HARR</marc:subfield>
+            <marc:subfield code="n">har175006322</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">Theodore Front Musical Literature</marc:subfield>
+            <marc:subfield code="b">TFRT</marc:subfield>
+            <marc:subfield code="n">TF428837</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="029" ind1="1" ind2=" ">
+            <marc:subfield code="a">CHVBK</marc:subfield>
+            <marc:subfield code="b">495013668</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="029" ind1="1" ind2=" ">
+            <marc:subfield code="a">CHBIS</marc:subfield>
+            <marc:subfield code="b">011040829</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="029" ind1="1" ind2=" ">
+            <marc:subfield code="a">CHVBK</marc:subfield>
+            <marc:subfield code="b">498802582</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="029" ind1="1" ind2=" ">
+            <marc:subfield code="a">CHDSB</marc:subfield>
+            <marc:subfield code="b">006743608</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="029" ind1="1" ind2=" ">
+            <marc:subfield code="a">CHVBK</marc:subfield>
+            <marc:subfield code="b">503127817</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="029" ind1="1" ind2=" ">
+            <marc:subfield code="a">CHSLU</marc:subfield>
+            <marc:subfield code="b">001299655</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="029" ind1="1" ind2=" ">
+            <marc:subfield code="a">UKMGB</marc:subfield>
+            <marc:subfield code="b">018874334</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>05950cam a22009134a 4500</marc:leader>
+        <marc:controlfield tag="001">99125340860001452</marc:controlfield>
+        <marc:controlfield tag="005">20240916213021.0</marc:controlfield>
+        <marc:controlfield tag="008">990204s1999    nyua     b    001 0aeng  </marc:controlfield>
+        <marc:datafield tag="010" ind1=" " ind2=" ">
+            <marc:subfield code="a">   99019715 </marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="019" ind1=" " ind2=" ">
+            <marc:subfield code="a">1022681942</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">0312199570</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9780312199579</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(OCoLC)40762853</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1022681942</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(OCoLC)ocm40762853 </marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(EXLNZ-01ALLIANCE_NETWORK)99176097470001451</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(01ALLIANCE_UW)99125340860001452</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">DLC</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="c">DLC</marc:subfield>
+            <marc:subfield code="d">BAKER</marc:subfield>
+            <marc:subfield code="d">NLGGC</marc:subfield>
+            <marc:subfield code="d">BTCTA</marc:subfield>
+            <marc:subfield code="d">YDXCP</marc:subfield>
+            <marc:subfield code="d">OCLCG</marc:subfield>
+            <marc:subfield code="d">IFA</marc:subfield>
+            <marc:subfield code="d">ILU</marc:subfield>
+            <marc:subfield code="d">ICW</marc:subfield>
+            <marc:subfield code="d">IG#</marc:subfield>
+            <marc:subfield code="d">J9U</marc:subfield>
+            <marc:subfield code="d">OCLCF</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">UKOBU</marc:subfield>
+            <marc:subfield code="d">UKUOY</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCL</marc:subfield>
+            <marc:subfield code="d">VYM</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCL</marc:subfield>
+            <marc:subfield code="d">OCLCA</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCL</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="041" ind1="1" ind2=" ">
+            <marc:subfield code="a">eng</marc:subfield>
+            <marc:subfield code="h">ger</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="042" ind1=" " ind2=" ">
+            <marc:subfield code="a">pcc</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="043" ind1=" " ind2=" ">
+            <marc:subfield code="a">e-gx---</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="049" ind1=" " ind2=" ">
+            <marc:subfield code="a">MAIN</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="050" ind1="0" ind2="0">
+            <marc:subfield code="a">ML429.W134</marc:subfield>
+            <marc:subfield code="b">A3 1999</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="066" ind1=" " ind2=" ">
+            <marc:subfield code="c">(2</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="082" ind1="0" ind2="0">
+            <marc:subfield code="a">782.1/092</marc:subfield>
+            <marc:subfield code="2">21</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="082" ind1="0" ind2="4">
+            <marc:subfield code="a">B</marc:subfield>
+            <marc:subfield code="2">21</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="084" ind1=" " ind2=" ">
+            <marc:subfield code="a">24.50</marc:subfield>
+            <marc:subfield code="2">bcl</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Wagner, Gottfried,</marc:subfield>
+            <marc:subfield code="d">1947-</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PBJxCC993X6qmxD33qP3JDq</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="240" ind1="1" ind2="0">
+            <marc:subfield code="a">Wer nicht mit dem Wolf heult.</marc:subfield>
+            <marc:subfield code="l">English</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Twilight of the Wagners :</marc:subfield>
+            <marc:subfield code="b">the unveiling of a family's legacy /</marc:subfield>
+            <marc:subfield code="c">Gottfried Wagner ; English translation by Della Couling.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="250" ind1=" " ind2=" ">
+            <marc:subfield code="a">1st Picador USA ed.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">New York :</marc:subfield>
+            <marc:subfield code="b">Picador USA,</marc:subfield>
+            <marc:subfield code="c">1999.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">viii, 310 pages :</marc:subfield>
+            <marc:subfield code="b">illustrations ;</marc:subfield>
+            <marc:subfield code="c">25 cm</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">unmediated</marc:subfield>
+            <marc:subfield code="b">n</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">volume</marc:subfield>
+            <marc:subfield code="b">nc</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="520" ind1="1" ind2=" ">
+            <marc:subfield code="a">&quot;Richard Wagner's great-grandson Gottfried Wagner, born after the end of World War II, was taught to worship his great-grandfather as a cultural ancestor of all of Germany. Perhaps no one took Richard Wagner's polemics more to heart than Adolf Hitler, for whom the musician was a foundational influence.&quot;--Jacket.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="520" ind1="8" ind2=" ">
+            <marc:subfield code="a">&quot;In Gottfried Wagner's memoir, Twilight of the Wagners: The Unveiling of a Family's Legacy, Hitler is an inescapable presence, as he was in Gottfried's family - one of the many specters haunting the Wagner estate, though young Gottfried wondered if he was the only one who could see them. One afternoon he discovered old photographs and oil paintings of Hitler among the family memorabilia. Warned never to mention the pictures to anyone, he became an unwilling coconspirator in his family's secret.&quot;--Jacket.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="520" ind1="8" ind2=" ">
+            <marc:subfield code="a">&quot;Gottfried Wagner reclaimed his voice during adolescence and began an impassioned crusade in adulthood to examine the hatred and racism he knew growing up in Bayreuth. Although disinherited and ostracized by his father, Gottfried has become an outspoken critic of Richard Wagner's legacy and a champion of greater understanding between Germans and Holocaust survivors worldwide. With a judicious eye for detail, a sweeping sense of conscience, and the determination to redeem himself and his past, Gottfried Wagner lays bare the sins of this powerful family.&quot;--Jacket.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="504" ind1=" " ind2=" ">
+            <marc:subfield code="a">Includes bibliographical references (pages 301-303) and index.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="505" ind1="0" ind2=" ">
+            <marc:subfield code="a">Wagner family tree -- Villa Wahnfried -- New directions -- The will to power I -- The anti-semitism of the Wagner family, 1850-1945 -- The will to power II -- The Richard Wagner Foundation -- The will to power III -- Winifred's film -- The festival centenary -- In search of myself -- On the trail of Kurt Weill -- The long arm of Bayreuth -- Return to Germany -- Teresina -- The monastery and the bank -- My Italian wedding -- Back to the culture jungle -- Bonn and Orange -- On the road with Nietzsche, Wagner, and Liszt -- Hitler and Wagner? -- Israel -- Father's last letter -- The ban from Bayreuth -- Anti-semitism and opera business -- Eugenio, my son -- On tour with Richard Wagner's anti-semitism -- The post-holocaust dialogue group : and in the beginning was Auschwitz.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Opera producers and directors</marc:subfield>
+            <marc:subfield code="v">Biography.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Antisemitism</marc:subfield>
+            <marc:subfield code="z">Germany.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Producteurs et metteurs en scène d'opéra</marc:subfield>
+            <marc:subfield code="v">Biographies.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Antisémitisme</marc:subfield>
+            <marc:subfield code="z">Allemagne.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Antisemitism.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00810769</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Families.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01728849</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Opera producers and directors.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01046182</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1="1" ind2="7">
+            <marc:subfield code="a">Receptie.</marc:subfield>
+            <marc:subfield code="2">gtt</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1="1" ind2="7">
+            <marc:subfield code="a">Bayreuther Festspiele.</marc:subfield>
+            <marc:subfield code="2">gtt</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Antisemitism</marc:subfield>
+            <marc:subfield code="z">Germany</marc:subfield>
+            <marc:subfield code="2">nli</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Opera producers and directors</marc:subfield>
+            <marc:subfield code="v">Biography</marc:subfield>
+            <marc:subfield code="2">nli</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="7">
+            <marc:subfield code="a">Germany.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01210272</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PBJtCD3rcKcPDx6FHmjvrbd</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="610" ind1="2" ind2="4">
+            <marc:subfield code="a">Bayreuther Festspiele.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="611" ind1="2" ind2="0">
+            <marc:subfield code="a">Bayreuther Festspiele.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="611" ind1="2" ind2="7">
+            <marc:subfield code="a">Bayreuther Festspiele.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01405158</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="611" ind1="2" ind2="7">
+            <marc:subfield code="a">Bayreuther Festspiele</marc:subfield>
+            <marc:subfield code="2">nli</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Autobiographies.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01919894</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Biographies.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01919896</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Autobiographies.</marc:subfield>
+            <marc:subfield code="2">lcgft</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="7">
+            <marc:subfield code="a">Autobiographies.</marc:subfield>
+            <marc:subfield code="2">rvmgf</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="600" ind1="1" ind2="0">
+            <marc:subfield code="a">Wagner, Gottfried,</marc:subfield>
+            <marc:subfield code="d">1947-</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="600" ind1="3" ind2="0">
+            <marc:subfield code="a">Wagner family.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="600" ind1="1" ind2="0">
+            <marc:subfield code="a">Wagner, Richard,</marc:subfield>
+            <marc:subfield code="d">1813-1883</marc:subfield>
+            <marc:subfield code="x">Family.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="600" ind1="1" ind2="4">
+            <marc:subfield code="a">Wagner, Gottfried.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="600" ind1="3" ind2="4">
+            <marc:subfield code="a">Wagner family.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="600" ind1="1" ind2="4">
+            <marc:subfield code="a">Wagner, Richard,</marc:subfield>
+            <marc:subfield code="d">1813-1883</marc:subfield>
+            <marc:subfield code="x">Family.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="600" ind1="3" ind2="6">
+            <marc:subfield code="a">Wagner (Famille)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="600" ind1="3" ind2="7">
+            <marc:subfield code="a">Wagner family.</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00216565</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="600" ind1="1" ind2="7">
+            <marc:subfield code="a">Wagner, Gottfried,</marc:subfield>
+            <marc:subfield code="d">1947-</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00023385</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PBJxCC993X6qmxD33qP3JDq</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="600" ind1="1" ind2="7">
+            <marc:subfield code="a">Wagner, Richard,</marc:subfield>
+            <marc:subfield code="d">1813-1883</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00040723</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PBJvMCYbW9m9kmHKrwph4MP</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="600" ind1="1" ind2="7">
+            <marc:subfield code="a">Wagner, Gottfried,</marc:subfield>
+            <marc:subfield code="d">1947-</marc:subfield>
+            <marc:subfield code="2">nli</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="600" ind1="1" ind2="7">
+            <marc:subfield code="a">Wagner, Richard,</marc:subfield>
+            <marc:subfield code="d">1813-1883</marc:subfield>
+            <marc:subfield code="2">nli</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="600" ind1="3" ind2="7">
+            <marc:subfield code="a">Wagner family</marc:subfield>
+            <marc:subfield code="2">nli</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="758" ind1=" " ind2=" ">
+            <marc:subfield code="i">has work:</marc:subfield>
+            <marc:subfield code="a">Twilight of the Wagners (Text)</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PCGpKMG4KCyth9w7JYJjvd3</marc:subfield>
+            <marc:subfield code="4">https://id.oclc.org/worldcat/ontology/hasWork</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">500-00/(2/r</marc:subfield>
+            <marc:subfield code="a">נושא ישן: Antisemitism - Germany.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">500-00/(2/r</marc:subfield>
+            <marc:subfield code="a">נושא ישן: Opera producers and directors - biography.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="973" ind1=" " ind2=" ">
+            <marc:subfield code="a">pbooks</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="978" ind1=" " ind2=" ">
+            <marc:subfield code="a">.b42723334</marc:subfield>
+            <marc:subfield code="9">LOCAL</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="994" ind1=" " ind2=" ">
+            <marc:subfield code="a">92</marc:subfield>
+            <marc:subfield code="b">OCACL</marc:subfield>
+        </marc:datafield>
+    </marc:record>
