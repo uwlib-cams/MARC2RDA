@@ -20,6 +20,9 @@ _Tynan Challenor is a second year PhD student in economics. He works as a linked
 **-Doreen Chen [dchen077](https://github.com/dchen077), Mapping Contributor, Transformation Contributor**<br>
 _Doreen Chen (she/her/hers) is a second-year residential student currently pursuing her Master of Library and Information Science degree at the University of Washington. She works as a Linked Data Metadata Student Specialist at the University of Washington Libraries and contributes to MARC2RDA among other projects. Her academic interests include open data, data curation, and metadata management._
 <br><br>
+**-Sarah Collins [Sarahanc](https://github.com/Sarahanc), Transformation Contributor**<br>
+_Sarah Collins (she/her/hers) is a graduate student pursuing a Master of Library and Information Science at the University of Washington where she works as a Linked Data Metadata Student Specialist. She has academic and professional interests in cataloging, metadata, taxonomy, and open linked data._
+<br><br>
 **-Gordon Dunsire [GordonDunsire](https://github.com/GordonDunsire), Metadata Consultant, LRM/RDA/RDF**<br>
 _Gordon Dunsire is an independent consultant who lives in Edinburgh, Scotland. He was formerly Head of the Centre for Digital Library Research at the University of Strathclyde. He has been a member of various IFLA review groups and sections concerned with cataloguing and metadata standards, and is a recipient of an IFLA Medal for his work with linked open data. He is a former Chair of the RDA Steering Committee and the RSC Technical Working Group. He is co-author of "Bibliographic information organization in the semantic web"._ 
 <br><br>
