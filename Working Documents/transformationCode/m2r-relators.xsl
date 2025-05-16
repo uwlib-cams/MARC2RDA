@@ -1337,10 +1337,10 @@
                 </rdaad:P50394>
             </xsl:when>
             <xsl:otherwise>
-                <rdaad:P50393>
+                <rdaad:P50395>
                     <xsl:text>Affiliation or address: </xsl:text>
                     <xsl:value-of select="uwf:stripEndPunctuation($name)"/>
-                </rdaad:P50393>
+                </rdaad:P50395>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
