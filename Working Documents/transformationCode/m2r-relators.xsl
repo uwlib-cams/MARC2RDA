@@ -1325,7 +1325,35 @@
             </rdaad:P50115>
         </xsl:for-each>
     </xsl:template>
+
+
+    <xsl:template name="FX00-xx-u"><!-- X00 person and family $u affiliation -->
+        <xsl:variable name="name" select="marc:subfield[@code = 'u']"/>
+        <xsl:choose>
+            <xsl:when test="@ind2 = '3' and marc:subfield[@code = 'u']">
+                <rdaad:P50395>
+                    <xsl:text>Affiliation or address: </xsl:text>
+                    <xsl:value-of select="uwf:stripEndPunctuation($name)"/>
+                </rdaad:P50395>
+            </xsl:when>
+            <xsl:otherwise>
+                <rdaad:P50393>
+                    <xsl:text>Affiliation or address: </xsl:text>
+                    <xsl:value-of select="uwf:stripEndPunctuation($name)"/>
+                </rdaad:P50393>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
     
+    <xsl:template name="FX1X-xx-u"><!-- corporate body $u affiliation for X11 and X10 -->
+        <xsl:variable name="nameOfCorporateBody" select="marc:subfield[@code = 'u']"/>
+                <rdaad:P50393>
+                    <xsl:text>Affiliation or address: </xsl:text>
+                    <xsl:value-of select="uwf:stripEndPunctuation($nameOfCorporateBody)"/>
+                </rdaad:P50393>
+    </xsl:template>
+    
+     
     <xsl:template name="FXXX-xx-f">
         <xsl:for-each select="marc:subfield[@code = 'f']">
             <rdawd:P10219>

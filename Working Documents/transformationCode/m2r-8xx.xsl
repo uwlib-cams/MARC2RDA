@@ -148,6 +148,7 @@
                                 <xsl:call-template name="FX00-x0-a"/>
                                 <xsl:call-template name="FX00-xx-d"/>
                                 <xsl:call-template name="FX00-xx-q"/>
+                                <xsl:call-template name="FX00-xx-u"/>
                             </xsl:if>
                         </xsl:when>
                         <xsl:when test="@ind1 = '3'">
@@ -180,6 +181,7 @@
                                 <xsl:call-template name="FX00-x3-c"/>
                                 <xsl:call-template name="FX00-x3-d"/>
                                 <xsl:call-template name="FX00-x3-a"/>
+                                    <xsl:call-template name="FX00-xx-u"/>
                             </xsl:if>
                         </xsl:when>
                     </xsl:choose>
@@ -221,6 +223,7 @@
                         <xsl:call-template name="FX1X-xx-ae"/>
                         <xsl:call-template name="FX1X-xx-c"/>
                         <xsl:call-template name="FX1X-xx-d"/>
+                        <xsl:call-template name="FX1X-xx-u"/>
                     </xsl:if>
                 </xsl:when>
             </xsl:choose>
