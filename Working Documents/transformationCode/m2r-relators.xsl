@@ -1145,10 +1145,8 @@
     </xsl:template>
 
     <xsl:template name="FX00-x1-a">
-        <xsl:if test="@ind1 = '1' and (marc:subfield[@code = 'a'] or marc:subfield[@code = 'b'])">
-                <xsl:variable name="nameOfPerson">
-                    <xsl:value-of select="marc:subfield[@code = 'a']"/>
-                </xsl:variable>
+            <xsl:if test="@ind1 = '1' and marc:subfield[@code = 'a'] and not(marc:subfield[@code = 'b'])">
+                <xsl:variable name="nameOfPerson" select="marc:subfield[@code = 'a']"/>
                 <rdaad:P50111>
                     <xsl:value-of select="uwf:stripEndPunctuation($nameOfPerson)"/>
                 </rdaad:P50111>
@@ -1156,7 +1154,7 @@
         </xsl:template>
     
     <xsl:template name="FX00-x2-a">
-        <xsl:if test="@ind1 = '2' and (marc:subfield[@code = 'a'] or marc:subfield[@code = 'b'])">
+        <xsl:if test="@ind1 = '2' and marc:subfield[@code = 'a'] and not(marc:subfield[@code = 'b'])">
             <xsl:variable name="nameOfPerson">
                 <xsl:value-of select="marc:subfield[@code = 'a']"/>
             </xsl:variable>
@@ -1325,7 +1323,35 @@
             </rdaad:P50115>
         </xsl:for-each>
     </xsl:template>
+
+
+    <xsl:template name="FX00-xx-u"><!-- X00 person and family $u affiliation -->
+        <xsl:variable name="name" select="marc:subfield[@code = 'u']"/>
+        <xsl:choose>
+            <xsl:when test="@ind2 = '3' and marc:subfield[@code = 'u']">
+                <rdaad:P50394>
+                    <xsl:text>Affiliation or address: </xsl:text>
+                    <xsl:value-of select="uwf:stripEndPunctuation($name)"/>
+                </rdaad:P50394>
+            </xsl:when>
+            <xsl:otherwise>
+                <rdaad:P50395>
+                    <xsl:text>Affiliation or address: </xsl:text>
+                    <xsl:value-of select="uwf:stripEndPunctuation($name)"/>
+                </rdaad:P50395>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
     
+    <xsl:template name="FX1X-xx-u"><!-- corporate body $u affiliation for X11 and X10 -->
+        <xsl:variable name="nameOfCorporateBody" select="marc:subfield[@code = 'u']"/>
+                <rdaad:P50393>
+                    <xsl:text>Affiliation or address: </xsl:text>
+                    <xsl:value-of select="uwf:stripEndPunctuation($nameOfCorporateBody)"/>
+                </rdaad:P50393>
+    </xsl:template>
+    
+     
     <xsl:template name="FXXX-xx-f">
         <xsl:for-each select="marc:subfield[@code = 'f']">
             <rdawd:P10219>
