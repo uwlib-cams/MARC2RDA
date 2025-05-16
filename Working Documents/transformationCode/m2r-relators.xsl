@@ -1331,10 +1331,10 @@
         <xsl:variable name="name" select="marc:subfield[@code = 'u']"/>
         <xsl:choose>
             <xsl:when test="@ind2 = '3' and marc:subfield[@code = 'u']">
-                <rdaad:P50395>
+                <rdaad:P50394>
                     <xsl:text>Affiliation or address: </xsl:text>
                     <xsl:value-of select="uwf:stripEndPunctuation($name)"/>
-                </rdaad:P50395>
+                </rdaad:P50394>
             </xsl:when>
             <xsl:otherwise>
                 <rdaad:P50393>
