@@ -1145,10 +1145,8 @@
     </xsl:template>
 
     <xsl:template name="FX00-x1-a">
-        <xsl:if test="@ind1 = '1' and (marc:subfield[@code = 'a'] or marc:subfield[@code = 'b'])">
-                <xsl:variable name="nameOfPerson">
-                    <xsl:value-of select="marc:subfield[@code = 'a']"/>
-                </xsl:variable>
+            <xsl:if test="@ind1 = '1' and marc:subfield[@code = 'a'] and not(marc:subfield[@code = 'b'])">
+                <xsl:variable name="nameOfPerson" select="marc:subfield[@code = 'a']"/>
                 <rdaad:P50111>
                     <xsl:value-of select="uwf:stripEndPunctuation($nameOfPerson)"/>
                 </rdaad:P50111>
@@ -1156,7 +1154,7 @@
         </xsl:template>
     
     <xsl:template name="FX00-x2-a">
-        <xsl:if test="@ind1 = '2' and (marc:subfield[@code = 'a'] or marc:subfield[@code = 'b'])">
+        <xsl:if test="@ind1 = '2' and marc:subfield[@code = 'a'] and not(marc:subfield[@code = 'b'])">
             <xsl:variable name="nameOfPerson">
                 <xsl:value-of select="marc:subfield[@code = 'a']"/>
             </xsl:variable>
