@@ -1,0 +1,29 @@
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+  <marc:record>
+    <marc:leader>11111nam a2200553ui 4500</marc:leader>
+    <marc:controlfield tag="001">773-test</marc:controlfield>
+
+    <!-- 773 without $5: should produce rdam:P30137 -->
+    <marc:datafield tag="773" ind1="0" ind2="8">
+      <marc:subfield code="6">880-00</marc:subfield>
+      <marc:subfield code="t">Journal of Testing</marc:subfield>
+      <marc:subfield code="x">1234-5678</marc:subfield>
+      <marc:subfield code="g">Vol. 5, no. 2 (2020)</marc:subfield>
+      <marc:subfield code="3">Print version</marc:subfield>
+      <marc:subfield code="4">http://example.org/</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="880" ind1="0" ind2="8">
+      <marc:subfield code="6">773-00</marc:subfield>
+      <marc:subfield code="a">Test 880</marc:subfield>
+    </marc:datafield>
+    <!-- 773 with $5: should produce rdaid:P40028 and rdamo:P30103 -->
+    <marc:datafield tag="773" ind1=" " ind2=" ">
+      <marc:subfield code="t">Journal of Local Testing</marc:subfield>
+      <marc:subfield code="x">8765-4321</marc:subfield>
+      <marc:subfield code="g">Issue 1 (2021)</marc:subfield>
+      <marc:subfield code="3">Digital copy</marc:subfield>
+      <marc:subfield code="4">http://example.org/</marc:subfield>
+      <marc:subfield code="5">DLC</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+</marc:collection>

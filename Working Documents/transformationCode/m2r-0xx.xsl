@@ -666,7 +666,7 @@
              </xsl:for-each>
         </xsl:if>
         
-        <xsl:if test="@ind2 = '2' and marc:subfield[@code = '2'])">
+        <xsl:if test="@ind2 = '2' and marc:subfield[@code = '2']">
             <xsl:for-each select="marc:subfield[@code = 'p']">
                 <xsl:if test="following-sibling::marc:subfield[@code = '2'][1]">
                     <rdawo:P10316 rdf:resource="{uwf:placeIRI($baseID, ., ., following-sibling::marc:subfield[@code = '2'][1])}"/>

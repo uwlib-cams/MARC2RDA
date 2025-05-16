@@ -173,6 +173,47 @@
         </xsl:if>
     </xsl:template>
     
+    <!-- 773 --> 
+    <xsl:template name="F773-xx-abcdefghijklmnpqrstuvwxyz34" expand-text="yes">
+        <xsl:variable name="subfields" select="marc:subfield[@code = 'a' or @code = 'b' or @code = 'd' or
+            @code = 'g' or @code = 'h' or @code = 'i' or
+            @code = 'k' or @code = 'l' or @code = 'm' or
+            @code = 'n' or @code = 'o' or @code = 'p' or
+            @code = 'q' or @code = 'r' or @code = 's' or
+            @code = 't' or @code = 'u' or @code = 'w' or
+            @code = 'x' or @code = 'y' or @code = 'z']" />
+        
+        <xsl:if test="$subfields">
+            <xsl:text>Is part of: </xsl:text>
+            <xsl:for-each select="$subfields">
+                <xsl:value-of select="normalize-space(.)"/>
+                <xsl:if test="position() != last()">
+                    <xsl:text>; </xsl:text>
+                </xsl:if>
+            </xsl:for-each>
+            <xsl:text>: </xsl:text>
+    
+            <xsl:if test="marc:subfield[@code = '3']">
+                <xsl:text>Applies to: </xsl:text>
+                <xsl:value-of select="normalize-space(marc:subfield[@code = '3'])"/>
+                <xsl:text>. </xsl:text>
+            </xsl:if>
+            
+            <xsl:if test="marc:subfield[@code = '4']">
+                <xsl:text>Relationship code or URI: </xsl:text>
+                <xsl:value-of select="normalize-space(marc:subfield[@code = '4'])"/>
+                <xsl:text> . </xsl:text>
+            </xsl:if>
+        </xsl:if>
+        
+        <xsl:if test="marc:subfield[@code = '5']">
+            <xsl:text>Applies to: </xsl:text>
+            <xsl:value-of select="uwf:s5NameLookup(marc:subfield[@code = '5'])"/>
+            <xsl:text>. </xsl:text>
+        </xsl:if>
+    </xsl:template>
+
+        
     <!-- 774 -->
     
     <xsl:template name="F774-xx-abcdefghjklmnopqrstuvwxyz" expand-text="yes">

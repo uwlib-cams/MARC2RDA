@@ -998,7 +998,32 @@
             <xsl:call-template name="F767-xx-abcdefghjklmnopqrstuvwxyz"/>
         </rdam:P30137>
     </xsl:template>
-
+    
+<!-- 773 Host Item Entry: manifestation-level -->
+    <xsl:template 
+        match="marc:datafield[@tag = '773'][not(marc:subfield[@code = '5'])] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '773-00' and not(marc:subfield[@code = '5'])]"
+        mode="man">
+        <rdam:P30137>
+            <xsl:call-template name="F773-xx-abcdefghijklmnpqrstuvwxyz34"/>
+        </rdam:P30137>
+    </xsl:template>
+    
+<!-- 773 Host Item Entry: item-level -->
+    <xsl:template 
+        match="marc:datafield[@tag = '773'][marc:subfield[@code = '5']] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '773-00' and marc:subfield[@code = '5']]"
+        mode="ite">
+        <xsl:param name="baseID"/>
+        <xsl:variable name="itemIRI" select="uwf:itemIRI($baseID, .)"/>
+        
+        <!-- Link the item to the manifestation -->
+        <rdamo:P30103 resource="{$itemIRI}"/>
+        
+        <!-- Note on the item itself -->
+        <rdaid:P40028 about="{$itemIRI}">
+            <xsl:call-template name="F773-xx-abcdefghijklmnpqrstuvwxyz34"/>
+        </rdaid:P40028>
+    </xsl:template>
+    
 <!-- 774 Constituent Unit Entry -->
     <xsl:template
         match="marc:datafield[@tag = '774'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '774-00']"
