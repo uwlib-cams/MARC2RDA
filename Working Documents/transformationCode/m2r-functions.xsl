@@ -566,7 +566,7 @@
     </xsl:function>
     
 <!-- string functions -->
-    <!-- strips ending commas and ending ISBD punctuation. If a period is present, it determines whether that should be stripped. -->
+    <!-- strips ending commas. If a period is present, it determines whether that should be stripped. -->
     <xsl:function name="uwf:stripEndPunctuation">
         <xsl:param name="string"/>
         <xsl:choose>
