@@ -382,18 +382,18 @@
                     <!-- otherwise we mint an IRI -->
                     <xsl:otherwise>
                         <xsl:choose>
-                            <!-- If it's a 6XX field and not ind2 = 4, and the source is approved,
-                                we use the source and aap -->
-                            <xsl:when test="starts-with($tag, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), $type) = 'True'">
+                            <!-- If it's a 6XX field and not ind2 = 4 or 0, we use the source and ap -->
+                            <xsl:when test="starts-with($tag, '6') and not($field/@ind2 = '4') and not($field/@ind2 = '0')">
                                 <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||'age#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                             </xsl:when>
                             <!-- same if it's not a 6XX field but there's a 2 -->
-                            <xsl:when test="not(starts-with($tag, '6')) and $field/marc:subfield[@code = '2'] and uwf:s2EntityTest($field/marc:subfield[@code = '2'][1], $type) = 'True'">
+                            <xsl:when test="not(starts-with($tag, '6')) and $field/marc:subfield[@code = '2']">
                                 <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'age#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                             </xsl:when>
-                            <!-- otherwise it's an opaque IRI -->
+                            <!-- otherwise we mint without a source -->
+                            <!-- this includes when the source provided in ind2 is 0 (lcsh) -->
                             <xsl:otherwise>
-                                <xsl:value-of select="$BASE||'age#'||$baseID||generate-id($field)"/>
+                                <xsl:value-of select="$BASE||'age#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:otherwise>
@@ -422,18 +422,18 @@
                     <!-- otherwise we mint an IRI -->
                     <xsl:otherwise>
                         <xsl:choose>
-                            <!-- If it's a 6XX field and not ind2 = 4, and the source is approved,
-                                we use the source and aap -->
-                            <xsl:when test="starts-with($tag, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), $type) = 'True'">
+                            <!-- If it's a 6XX field and not ind2 = 4 or 0, we use the source and ap -->
+                            <xsl:when test="starts-with($tag, '6') and not($field/@ind2 = '4') and not($field/@ind2 = '0')">
                                 <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||'age#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                             </xsl:when>
                             <!-- same if it's not a 6XX field but there's a 2 -->
-                            <xsl:when test="not(starts-with($tag, '6')) and $field/marc:subfield[@code = '2'] and uwf:s2EntityTest($field/marc:subfield[@code = '2'][1], $type) = 'True'">
+                            <xsl:when test="not(starts-with($tag, '6')) and $field/marc:subfield[@code = '2']">
                                 <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'age#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                             </xsl:when>
-                            <!-- otherwise it's an opaque IRI -->
+                            <!-- otherwise we mint without a source -->
+                            <!-- this includes when the source provided in ind2 is 0 (lcsh) -->
                             <xsl:otherwise>
-                                <xsl:value-of select="$BASE||'age#'||$baseID||generate-id($field)"/>
+                                <xsl:value-of select="$BASE||'age#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:otherwise>
@@ -442,17 +442,18 @@
             <!-- otherwise it's a minted IRI -->
             <xsl:otherwise>
                 <xsl:choose>
-                    <!-- If it's a 6XX field and not ind2 = 4, and the source is approved, we use the source and aap -->
-                    <xsl:when test="starts-with($tag, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), $type) = 'True'">
+                    <!-- If it's a 6XX field and not ind2 = 4 or 0, we use the source and ap -->
+                    <xsl:when test="starts-with($tag, '6') and not($field/@ind2 = '4') and not($field/@ind2 = '0')">
                         <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||'age#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                     </xsl:when>
                     <!-- same if it's not a 6XX field but there's a 2 -->
-                    <xsl:when test="not(starts-with($tag, '6')) and $field/marc:subfield[@code = '2'] and uwf:s2EntityTest($field/marc:subfield[@code = '2'][1], $type) = 'True'">
+                    <xsl:when test="not(starts-with($tag, '6')) and $field/marc:subfield[@code = '2']">
                         <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'age#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                     </xsl:when>
-                    <!-- otherwise it's an opaque IRI -->
+                    <!-- otherwise we mint without a source -->
+                    <!-- this includes when the source provided in ind2 is 0 (lcsh) -->
                     <xsl:otherwise>
-                        <xsl:value-of select="$BASE||'age#'||$baseID||generate-id($field)"/>
+                        <xsl:value-of select="$BASE||'age#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:otherwise>
@@ -493,14 +494,14 @@
                         <!-- otherwise mint an IRI -->
                         <xsl:otherwise>
                             <xsl:choose>
-                                <xsl:when test="starts-with($tagType, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), 'work') = 'True'">
+                                <xsl:when test="starts-with($tagType, '6') and not($field/@ind2 = '4') and not($field/@ind2 = '0')">
                                     <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||'wor#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                                 </xsl:when>
-                                <xsl:when test="not(starts-with($tagType, '6')) and $field/marc:subfield[@code = '2'] and uwf:s2EntityTest($field/marc:subfield[@code = '2'][1], 'work') = 'True'">
+                                <xsl:when test="not(starts-with($tagType, '6')) and $field/marc:subfield[@code = '2']">
                                     <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'wor#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                                 </xsl:when>
                                 <xsl:otherwise>
-                                    <xsl:value-of select="$BASE||'wor#'||$baseID||generate-id($field)"/>
+                                    <xsl:value-of select="$BASE||'wor#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:otherwise>
@@ -509,14 +510,14 @@
             <!-- otherwise it's an opaque IRI to avoid conflating different works under one IRI -->
             <xsl:otherwise>
                 <xsl:choose>
-                    <xsl:when test="starts-with($tagType, '6') and not($field/@ind2 = '4') and uwf:s2EntityTest(uwf:getSubjectSchemeCode($field), 'work') = 'True'">
+                    <xsl:when test="starts-with($tagType, '6') and not($field/@ind2 = '4') and not($field/@ind2 = '0')">
                         <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case(uwf:getSubjectSchemeCode($field)), ' ', ''))||'/'||'wor#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                     </xsl:when>
-                    <xsl:when test="not(starts-with($tagType, '6')) and $field/marc:subfield[@code = '2'] and uwf:s2EntityTest($field/marc:subfield[@code = '2'][1], 'work') = 'True'">
+                    <xsl:when test="not(starts-with($tagType, '6')) and $field/marc:subfield[@code = '2']">
                         <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($field/marc:subfield[@code = '2'][1]), ' ', ''))||'/'||'wor#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="$BASE||'wor#'||$baseID||generate-id($field)"/>
+                        <xsl:value-of select="$BASE||'wor#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:otherwise>
