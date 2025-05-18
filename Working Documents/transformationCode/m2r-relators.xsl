@@ -1200,7 +1200,7 @@
     <xsl:template name="FX1X-xx-ab">
         <xsl:if test="(marc:subfield[@code = 'a'] and marc:subfield[@code = 'b'])">
             <xsl:variable name="nameOfCorporateBody">
-                <xsl:value-of select="concat(marc:subfield[@code = 'a'], ' ', marc:subfield[@code = 'b'])"/>
+                <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']"/>
             </xsl:variable>
             <rdaad:P50032>
                 <xsl:value-of select="uwf:stripEndPunctuation($nameOfCorporateBody)"/>
@@ -1211,7 +1211,7 @@
     <xsl:template name="FX1X-xx-ae">
         <xsl:if test="(marc:subfield[@code = 'a'] and marc:subfield[@code = 'e'])">
             <xsl:variable name="nameOfCorporateBody">
-                <xsl:value-of select="concat(marc:subfield[@code = 'a'], ' ', marc:subfield[@code = 'e'])"/>
+                <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'e']"/>
             </xsl:variable>
             <rdaad:P50032>
                 <xsl:value-of select="uwf:stripEndPunctuation($nameOfCorporateBody)"/>
@@ -1326,29 +1326,33 @@
 
 
     <xsl:template name="FX00-xx-u"><!-- X00 person and family $u affiliation -->
-        <xsl:variable name="name" select="marc:subfield[@code = 'u']"/>
-        <xsl:choose>
-            <xsl:when test="@ind2 = '3' and marc:subfield[@code = 'u']">
-                <rdaad:P50394>
-                    <xsl:text>Affiliation or address: </xsl:text>
-                    <xsl:value-of select="uwf:stripEndPunctuation($name)"/>
-                </rdaad:P50394>
-            </xsl:when>
-            <xsl:otherwise>
-                <rdaad:P50395>
-                    <xsl:text>Affiliation or address: </xsl:text>
-                    <xsl:value-of select="uwf:stripEndPunctuation($name)"/>
-                </rdaad:P50395>
-            </xsl:otherwise>
-        </xsl:choose>
+        <xsl:if test="marc:subfield[@code = 'u']">
+            <xsl:variable name="name" select="marc:subfield[@code = 'u']"/>
+            <xsl:choose>
+                <xsl:when test="@ind2 = '3'">
+                    <rdaad:P50394>
+                        <xsl:text>Affiliation or address: </xsl:text>
+                        <xsl:value-of select="uwf:stripEndPunctuation($name)"/>
+                    </rdaad:P50394>
+                </xsl:when>
+                <xsl:otherwise>
+                    <rdaad:P50395>
+                        <xsl:text>Affiliation or address: </xsl:text>
+                        <xsl:value-of select="uwf:stripEndPunctuation($name)"/>
+                    </rdaad:P50395>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:if>
     </xsl:template>
     
     <xsl:template name="FX1X-xx-u"><!-- corporate body $u affiliation for X11 and X10 -->
-        <xsl:variable name="nameOfCorporateBody" select="marc:subfield[@code = 'u']"/>
-                <rdaad:P50393>
-                    <xsl:text>Affiliation or address: </xsl:text>
-                    <xsl:value-of select="uwf:stripEndPunctuation($nameOfCorporateBody)"/>
-                </rdaad:P50393>
+        <xsl:if test="marc:subfield[@code = 'u']">
+            <xsl:variable name="nameOfCorporateBody" select="marc:subfield[@code = 'u']"/>
+            <rdaad:P50393>
+                <xsl:text>Affiliation or address: </xsl:text>
+                <xsl:value-of select="uwf:stripEndPunctuation($nameOfCorporateBody)"/>
+            </rdaad:P50393>
+        </xsl:if>
     </xsl:template>
     
      
