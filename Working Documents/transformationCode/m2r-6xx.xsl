@@ -34,12 +34,14 @@
     <xsl:import href="m2r-relators.xsl"/>
     <xsl:import href="m2r-iris.xsl"/>
     <xsl:import href="getmarc.xsl"/>
-    <!-- 600, 610, 611-->
+    <!-- 600, 610, 611 no $t-->
     <xsl:template
-        match="marc:datafield[@tag = '600'] | marc:datafield[@tag = '610'] | marc:datafield[@tag = '611']
-        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '600-00']
-        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '610-00']
-        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '611-00']"
+        match="marc:datafield[@tag = '600'][not(marc:subfield[@code = 't'])]
+        | marc:datafield[@tag = '610'][not(marc:subfield[@code = 't'])]
+        | marc:datafield[@tag = '611'][not(marc:subfield[@code = 't'])]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '600-00'][not(marc:subfield[@code = 't'])]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '610-00'][not(marc:subfield[@code = 't'])]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '611-00'][not(marc:subfield[@code = 't'])]"
         mode="wor">
         <xsl:param name="baseID"/>
         <!--<xsl:call-template name="getmarc"/>-->
@@ -59,68 +61,162 @@
                 </xsl:when>
             </xsl:choose>
         </xsl:variable>
-        <!-- If there are more than just name part subfields (v, x, y, z) 
-            then "has subject" is used alongside "has subject [agent]" -->
-        <xsl:if test="marc:subfield[@code = 'v'] or marc:subfield[@code = 'x'] 
-            or marc:subfield[@code = 'y'] or marc:subfield[@code = 'z']">
-            <xsl:call-template name="F6XX-subject">
-                <xsl:with-param name="prefLabel" select="$prefLabel"/>
-            </xsl:call-template>
-            <!-- if there is a linked 880 and no source, these are also output as string values -->
-            <xsl:if test="starts-with(@tag, '6') and @ind2 = '4' and marc:subfield[@code = '6']">
-                <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
-                <xsl:for-each
-                    select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
-                    <xsl:variable name="prefLabel880">
+        <xsl:choose>
+            <!-- If there are more than just name part subfields (v, x, y, z) 
+            then "has subject" is used alongside "has related [agent]" -->
+            <xsl:when test="marc:subfield[@code = 'v'] or marc:subfield[@code = 'x'] 
+                or marc:subfield[@code = 'y'] or marc:subfield[@code = 'z']">
+                <xsl:call-template name="F6XX-subject">
+                    <xsl:with-param name="prefLabel" select="$prefLabel"/>
+                </xsl:call-template>
+                <!-- if there is a linked 880 and no source, these are also output as string values -->
+                <xsl:if test="starts-with(@tag, '6') and @ind2 = '4' and marc:subfield[@code = '6']">
+                    <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                    <xsl:for-each
+                        select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                        <xsl:variable name="prefLabel880">
+                            <xsl:choose>
+                                <xsl:when test="starts-with(marc:subfield[@code = '6'], '600')">
+                                    <xsl:call-template name="F600-label"/>
+                                </xsl:when>
+                                <xsl:when test="starts-with(marc:subfield[@code = '6'], '610')">
+                                    <xsl:call-template name="F610-label"/>
+                                </xsl:when>
+                                <xsl:when test="starts-with(marc:subfield[@code = '6'], '611')">
+                                    <xsl:call-template name="F611-label"/>
+                                </xsl:when>
+                            </xsl:choose>
+                        </xsl:variable>
+                        <xsl:call-template name="F6XX-subject">
+                            <xsl:with-param name="prefLabel" select="$prefLabel880"/>
+                        </xsl:call-template>
+                    </xsl:for-each>
+                </xsl:if>
+                <!-- $v is mapped separately as well -->
+                <!-- $v is not linked to 880s - at this point -->
+                <xsl:for-each select="marc:subfield[@code = 'v']">
+                    <xsl:call-template name="F6XX-xx-v"/>
+                </xsl:for-each>
+                <!-- choose appropriate "has subject [agent]" property based on field/subfields
+            and call agentIRI for the object-->
+                <xsl:choose>
+                    <xsl:when test="$tagType = '600'">
                         <xsl:choose>
-                            <xsl:when test="starts-with(marc:subfield[@code = '6'], '600')">
-                                <xsl:call-template name="F600-label"/>
+                            <!-- has related person -->
+                            <xsl:when test="@ind1 = '0' or @ind1 = '1' or @ind1 = '2'">
+                                <rdawo:P10312 rdf:resource="{uwf:agentIRI($baseID, .)}"/>
                             </xsl:when>
-                            <xsl:when test="starts-with(marc:subfield[@code = '6'], '610')">
-                                <xsl:call-template name="F610-label"/>
-                            </xsl:when>
-                            <xsl:when test="starts-with(marc:subfield[@code = '6'], '611')">
-                                <xsl:call-template name="F611-label"/>
+                            <!-- has related family -->
+                            <xsl:when test="@ind1 = '3'">
+                                <rdawo:P10313 rdf:resource="{uwf:agentIRI($baseID, .)}"/>
                             </xsl:when>
                         </xsl:choose>
-                    </xsl:variable>
-                    <xsl:call-template name="F6XX-subject">
-                        <xsl:with-param name="prefLabel" select="$prefLabel880"/>
-                    </xsl:call-template>
-                </xsl:for-each>
-            </xsl:if>
-            <!-- $v is mapped separately as well -->
-            <!-- $v is not linked to 880s - at this point -->
-            <xsl:for-each select="marc:subfield[@code = 'v']">
-                <xsl:call-template name="F6XX-xx-v"/>
-            </xsl:for-each>
-        </xsl:if>
-        
-        <!-- choose appropriate "has subject [agent]" property based on field/subfields
-            and call agentIRI for the object-->
-        <xsl:choose>
-            <xsl:when test="$tagType = '600'">
-                <xsl:choose>
-                    <!-- has subject person -->
-                    <xsl:when test="@ind1 = '0' or @ind1 = '1' or @ind1 = '2'">
-                        <rdawo:P10261 rdf:resource="{uwf:agentIRI($baseID, .)}"/>
                     </xsl:when>
-                    <!-- has subject family -->
-                    <xsl:when test="@ind1 = '3'">
-                        <rdawo:P10262 rdf:resource="{uwf:agentIRI($baseID, .)}"/>
-                    </xsl:when>
+                    <!-- has related corporate body -->
+                    <xsl:otherwise>
+                        <rdawo:P10314 rdf:resource="{uwf:agentIRI($baseID, .)}"/>
+                    </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
-            <!-- has subject corporate body -->
+            <!-- no v, x, y, z -->
             <xsl:otherwise>
-                <rdawo:P10263 rdf:resource="{uwf:agentIRI($baseID, .)}"/>
+                <!-- choose appropriate "has subject [agent]" property based on field/subfields
+            and call agentIRI for the object-->
+                <xsl:choose>
+                    <xsl:when test="$tagType = '600'">
+                        <xsl:choose>
+                            <!-- has subject person -->
+                            <xsl:when test="@ind1 = '0' or @ind1 = '1' or @ind1 = '2'">
+                                <rdawo:P10261 rdf:resource="{uwf:agentIRI($baseID, .)}"/>
+                            </xsl:when>
+                            <!-- has subject family -->
+                            <xsl:when test="@ind1 = '3'">
+                                <rdawo:P10262 rdf:resource="{uwf:agentIRI($baseID, .)}"/>
+                            </xsl:when>
+                        </xsl:choose>
+                    </xsl:when>
+                    <!-- has subject corporate body -->
+                    <xsl:otherwise>
+                        <rdawo:P10263 rdf:resource="{uwf:agentIRI($baseID, .)}"/>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:otherwise>
         </xsl:choose>
-        
-        <!-- if $t then there is also a subject work -->
-        <xsl:if test="marc:subfield[@code = 't']">
-            <rdawo:P10257 rdf:resource="{uwf:relWorkIRI($baseID, .)}"/>
-        </xsl:if>
+    </xsl:template>
+    
+    <!-- 600, 610, 611 with $t-->
+    <xsl:template
+        match="marc:datafield[@tag = '600'][marc:subfield[@code = 't']] 
+        | marc:datafield[@tag = '610'][marc:subfield[@code = 't']] 
+        | marc:datafield[@tag = '611'][marc:subfield[@code = 't']]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '600-00'][marc:subfield[@code = 't']]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '610-00'][marc:subfield[@code = 't']]
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '611-00'][marc:subfield[@code = 't']]"
+        mode="wor">
+        <xsl:param name="baseID"/>
+        <!--<xsl:call-template name="getmarc"/>-->
+        <xsl:variable name="tagType" select="uwf:tagType(.)"/>
+        <!-- store subject heading label in variable -->
+        <!-- label templates are located in m2r-6xx-named.xsl and concat subfields present in the field -->
+        <xsl:variable name="prefLabel">
+            <xsl:choose>
+                <xsl:when test="$tagType = '600'">
+                    <xsl:call-template name="F600-label"/>
+                </xsl:when>
+                <xsl:when test="$tagType = '610'">
+                    <xsl:call-template name="F610-label"/>
+                </xsl:when>
+                <xsl:when test="$tagType = '611'">
+                    <xsl:call-template name="F611-label"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:choose>
+            <!-- If there are more than just name part subfields (v, x, y, z) 
+            then "has subject" is used alongside "has related [agent]" -->
+            <xsl:when test="marc:subfield[@code = 'v'] or marc:subfield[@code = 'x'] 
+                or marc:subfield[@code = 'y'] or marc:subfield[@code = 'z']">
+                <xsl:call-template name="F6XX-subject">
+                    <xsl:with-param name="prefLabel" select="$prefLabel"/>
+                </xsl:call-template>
+                <!-- if there is a linked 880 and no source, these are also output as string values -->
+                <xsl:if test="starts-with(@tag, '6') and @ind2 = '4' and marc:subfield[@code = '6']">
+                    <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                    <xsl:for-each
+                        select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                        <xsl:variable name="prefLabel880">
+                            <xsl:choose>
+                                <xsl:when test="starts-with(marc:subfield[@code = '6'], '600')">
+                                    <xsl:call-template name="F600-label"/>
+                                </xsl:when>
+                                <xsl:when test="starts-with(marc:subfield[@code = '6'], '610')">
+                                    <xsl:call-template name="F610-label"/>
+                                </xsl:when>
+                                <xsl:when test="starts-with(marc:subfield[@code = '6'], '611')">
+                                    <xsl:call-template name="F611-label"/>
+                                </xsl:when>
+                            </xsl:choose>
+                        </xsl:variable>
+                        <xsl:call-template name="F6XX-subject">
+                            <xsl:with-param name="prefLabel" select="$prefLabel880"/>
+                        </xsl:call-template>
+                    </xsl:for-each>
+                </xsl:if>
+                <!-- $v is mapped separately as well -->
+                <!-- $v is not linked to 880s - at this point -->
+                <xsl:for-each select="marc:subfield[@code = 'v']">
+                    <xsl:call-template name="F6XX-xx-v"/>
+                </xsl:for-each>
+                
+                <!-- has related work -->
+                <rdawo:P10198 rdf:resource="{uwf:relWorkIRI($baseID, .)}"/>
+            </xsl:when>
+            <!-- no v, x, y, z -->
+            <xsl:otherwise>
+                <!-- has subject work -->
+                <rdawo:P10257 rdf:resource="{uwf:relWorkIRI($baseID, .)}"/>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <xsl:template match="marc:datafield[@tag = '600'] | marc:datafield[@tag = '610'] | marc:datafield[@tag = '611']
