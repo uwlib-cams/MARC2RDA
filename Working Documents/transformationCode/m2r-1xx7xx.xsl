@@ -483,7 +483,7 @@
                         <xsl:call-template name="FX1X-xx-ab"/>
                         <xsl:call-template name="FX1X-xx-ae"/>
                         <xsl:call-template name="FX1X-xx-c"/>
-                        <xsl:call-template name="F111-xx-d"/>
+                        <xsl:call-template name="FX1X-xx-d"/>
                         <xsl:call-template name="FX1X-xx-u"/>
                     </xsl:if>
                 </xsl:when>
@@ -760,7 +760,7 @@
                             <xsl:call-template name="FX1X-xx-ab"/>
                             <xsl:call-template name="FX1X-xx-ae"/>
                             <xsl:call-template name="FX1X-xx-c"/>
-                            <xsl:call-template name="F111-xx-d"/>
+                            <xsl:call-template name="FX1X-xx-d"/>
                             <xsl:call-template name="FX1X-xx-u"/>
                         </xsl:if>
                     </xsl:when>

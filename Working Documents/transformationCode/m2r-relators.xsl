@@ -1308,7 +1308,7 @@
         </xsl:for-each>
     </xsl:template>
     
-    <xsl:template name="F111-xx-d">
+    <xsl:template name="FX1X-xx-d">
         <xsl:if test="
             marc:subfield[@code = 'd'] and 
             (not(marc:subfield[@code = 't']) or 
