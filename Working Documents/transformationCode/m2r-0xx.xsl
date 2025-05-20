@@ -931,49 +931,6 @@
         </xsl:for-each>
     </xsl:template>
    
-    <!-- 040 - Cataloging Source WIP -->
-    <xsl:template match="marc:datafield[@tag = '040'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '040']" 
-        mode="wor" expand-text="yes">
-        
-        <xsl:variable name="a" select="marc:subfield[@code='a']"/>
-        <xsl:variable name="c" select="marc:subfield[@code='c']"/>
-        <xsl:variable name="d" select="marc:subfield[@code='d']"/>
-        
-        <!-- always output $a -->        
-        <rdawo:P10483>
-            <xsl:copy-of select="uwf:agentIdentifiers($a)"/>
-        </rdawo:P10483>
-        
-        <!-- output $c if different than $a -->
-        <xsl:if test="$c and $c != $a">
-            <rdawo:P10483>
-                <xsl:copy-of select="uwf:agentIdentifiers($c)"/>
-            </rdawo:P10483>
-        </xsl:if>
-
-        <!-- output repeated $d -->
-        <xsl:for-each select="uwf:agentIdentifiers($d)">
-            <rdawo:P10483>
-                <xsl:value-of select="."/>
-            </rdawo:P10483>
-        </xsl:for-each>
-        
-        <!-- output repeated $e -->
-        <xsl:for-each select="marc:subfield[@code='e']">
-            <rdawo:P10483>
-                <xsl:value-of select="."/>
-            </rdawo:P10483>
-        </xsl:for-each>
-        
-    </xsl:template>
-            
-    <xsl:template match="marc:datafield[@tag = '040'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '040']" 
-        mode="exp" expand-text="yes">
-        <xsl:if test="@code = 'b'">
-            <rdae:P20006 rdf:resource="{normalize-space(concat('http://id.loc.gov/vocabulary/languages/', .))}"/>
-        </xsl:if>
-    </xsl:template>
-        
     <!-- 043 - Geographic Area Code -->
     <xsl:template match="marc:datafield[@tag = '043']"  
         mode="wor" expand-text="yes">
