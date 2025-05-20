@@ -302,7 +302,7 @@
                                 <!-- if there's a source, mint a nomen -->
                                 <!-- (if there are linked 880s, these appear as 'equivalent' nomen text
                                     they are not handled here in the agent template) -->
-                                <xsl:when test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
+                                <xsl:when test="matches(@ind2, '[12356]') or marc:subfield[@code = '2']">
                                     <xsl:choose>
                                         <xsl:when test="uwf:s2EntityTest($source, 'person') = 'True'">
                                             <rdaao:P50411 rdf:resource="{uwf:nomenIRI($baseID, ., uwf:agentAccessPoint(.), $source, 'person')}"/>
@@ -345,7 +345,7 @@
                         <xsl:when test="@ind1 = '3'">
                             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10008"/>
                             <xsl:choose>
-                                <xsl:when test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
+                                <xsl:when test="matches(@ind2, '[12356]') or marc:subfield[@code = '2']">
                                     <xsl:choose>
                                         <xsl:when test="uwf:s2EntityTest($source, 'family') = 'True'">
                                             <rdaao:P50409 rdf:resource="{uwf:nomenIRI($baseID, ., uwf:agentAccessPoint(.), $source, 'family')}"/>
@@ -388,7 +388,7 @@
                     or (@tag = '880' and starts-with(marc:subfield[@code = '6'], '611'))">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
                     <xsl:choose>
-                        <xsl:when test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
+                        <xsl:when test="matches(@ind2, '[12356]') or marc:subfield[@code = '2']">
                             <xsl:choose>
                                 <xsl:when test="uwf:s2EntityTest($source, 'corporatebody') = 'True'">
                                     <rdaao:P50407 rdf:resource="{uwf:nomenIRI($baseID, ., uwf:agentAccessPoint(.), $source, 'corporatebody')}"/>
@@ -455,7 +455,7 @@
             <!--<xsl:call-template name="getmarc"/>-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
             <xsl:choose>
-                <xsl:when test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
+                <xsl:when test="matches(@ind2, '[12356]') or marc:subfield[@code = '2']">
                     <xsl:choose>
                         <xsl:when test="uwf:s2EntityTest($source, 'work') = 'True'">
                             <rdawo:P10331 rdf:resource="{uwf:nomenIRI($baseID, ., uwf:relWorkAccessPoint(.), $source, 'work')}"/>
@@ -546,7 +546,7 @@
                 </xsl:when>
             </xsl:choose>
         </xsl:variable>
-        <xsl:if test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
+        <xsl:if test="matches(@ind2, '[12356]') or marc:subfield[@code = '2']">
             <xsl:variable name="ageNomenIRI">
                 <xsl:choose>
                     <xsl:when test="uwf:s2EntityTest($source, $type) = 'True'">
@@ -699,7 +699,7 @@
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
             <xsl:choose>
                 <!-- if there is a source, mint a nomen -->
-                <xsl:when test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
+                <xsl:when test="matches(@ind2, '[12356]') or marc:subfield[@code = '2']">
                     <xsl:choose>
                         <!-- if an approved source, it is an authorized access point -->
                         <xsl:when test="uwf:s2EntityTest(uwf:getSubjectSchemeCode(.), 'work') = 'True'">
@@ -747,7 +747,7 @@
         mode="nom" expand-text="yes">
         <xsl:param name="baseID"/>
         <!-- if there is a source, mint a nomen -->
-        <xsl:if test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
+        <xsl:if test="matches(@ind2, '[12356]') or marc:subfield[@code = '2']">
             <xsl:variable name="apWor" select="uwf:relWorkAccessPoint(.)"/>
             <xsl:variable name="source" select="uwf:getSubjectSchemeCode(.)"/>
             <xsl:variable name="prefLabel">

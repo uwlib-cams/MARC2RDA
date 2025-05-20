@@ -72,149 +72,82 @@ F880 10 $6 600-01 $a Test linked 880 person 2 $t Test linked 880 work 2 $x test 
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e7">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Pushkin, Aleksandr Sergeevich, 1799-1837</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e21">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-05-20-0400d25e21">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Harnoncourt, Nikolaus</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e29">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Haydn, Joseph, 1732-1809</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/worNom#2025-05-18-0400d25e29">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Haydn, Joseph, 1732-1809. Symphonies</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e37">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Arne, Thomas Augustine, 1710-1778</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/worNom#2025-05-18-0400d25e37">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Arne, Thomas Augustine, 1710-1778. Concertos, keyboard instrument, orchestra. No. 3. Con Spirito, keyboard instrument</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e54">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Clark family</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e60">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Dante Alighieri, 1265-1321</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e68">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-05-20-0400d25e68">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Dante Alighieri, 1265-1321</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e76">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-05-20-0400d25e76">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Dante Alighieri, 1265-1321</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gnd"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e84">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-05-20-0400d25e84">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Bickford, Sarah Gammon, 1855-1931</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e94">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>O'Neill, Eugene, 1888-1953</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e107">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Romero, George A.</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e113">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Romero, George A.</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/worNom#2025-05-18-0400d25e113">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Romero, George A. Made up work</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e130">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Test linked 880 person 1</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
-      <rdand:P80113>Test linked 880 person 2</rdand:P80113><!--rdand:P80113 = is equivalent to-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/worNom#2025-05-18-0400d25e130">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Test linked 880 person 1 Test linked 880 work 1</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
-      <rdand:P80113>Test linked 880 person 2 Test linked 880 work 2</rdand:P80113><!--rdand:P80113 = is equivalent to-->
-   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age#pushkinaleksandrsergeevich1799-1837">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e7"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50377>Pushkin, Aleksandr Sergeevich, 1799-1837</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
       <rdaad:P50111>Pushkin, Aleksandr Sergeevich</rdaad:P50111><!--rdaad:P50111 = has name of person-->
       <rdaad:P50121>1799</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
       <rdaad:P50120>1837</rdaad:P50120><!--rdaad:P50120 = has date of death-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/age#harnoncourtnikolaus">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e21"/><!--rdaao:P50377 = has access point for person-->
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-05-20-0400d25e21"/><!--rdaao:P50377 = has access point for person-->
       <rdaad:P50111>Harnoncourt, Nikolaus</rdaad:P50111><!--rdaad:P50111 = has name of person-->
       <rdaad:P50094>https://id.worldcat.org/fast/00076606</rdaad:P50094><!--rdaad:P50094 = has identifier for person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age#haydnjoseph1732-1809">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e29"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50377>Haydn, Joseph, 1732-1809</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
       <rdaad:P50111>Haydn, Joseph</rdaad:P50111><!--rdaad:P50111 = has name of person-->
       <rdaad:P50121>1732</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
       <rdaad:P50120>1809</rdaad:P50120><!--rdaad:P50120 = has date of death-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age#arnethomasaugustine1710-1778">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e37"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50377>Arne, Thomas Augustine, 1710-1778</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
       <rdaad:P50111>Arne, Thomas Augustine</rdaad:P50111><!--rdaad:P50111 = has name of person-->
       <rdaad:P50121>1710</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
       <rdaad:P50120>1778</rdaad:P50120><!--rdaad:P50120 = has date of death-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age#clarkfamily">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10008"/>
-      <rdaao:P50376 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e54"/><!--rdaao:P50376 = has access point for family-->
+      <rdaad:P50376>Clark family</rdaad:P50376><!--rdaad:P50376 = has access point for family-->
       <rdaad:P50061>Clark family</rdaad:P50061><!--rdaad:P50061 = has name of family-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age#dantealighieri1265-1321">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e60"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50377>Dante Alighieri, 1265-1321</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
       <rdaad:P50111>Dante Alighieri</rdaad:P50111><!--rdaad:P50111 = has name of person-->
       <rdaad:P50121>1265</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
       <rdaad:P50120>1321</rdaad:P50120><!--rdaad:P50120 = has date of death-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/age#dantealighieri1265-1321">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e68"/><!--rdaao:P50377 = has access point for person-->
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-05-20-0400d25e68"/><!--rdaao:P50377 = has access point for person-->
       <rdaad:P50111>Dante Alighieri</rdaad:P50111><!--rdaad:P50111 = has name of person-->
       <rdaad:P50121>1265</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
       <rdaad:P50120>1321</rdaad:P50120><!--rdaad:P50120 = has date of death-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/gnd/age#dantealighieri1265-1321">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e76"/><!--rdaao:P50377 = has access point for person-->
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-05-20-0400d25e76"/><!--rdaao:P50377 = has access point for person-->
       <rdaad:P50111>Dante Alighieri</rdaad:P50111><!--rdaad:P50111 = has name of person-->
       <rdaad:P50121>1265</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
       <rdaad:P50120>1321</rdaad:P50120><!--rdaad:P50120 = has date of death-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/age#bickfordsarahgammon1855-1931">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e84"/><!--rdaao:P50377 = has access point for person-->
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-05-20-0400d25e84"/><!--rdaao:P50377 = has access point for person-->
       <rdaad:P50111>Bickford, Sarah Gammon</rdaad:P50111><!--rdaad:P50111 = has name of person-->
       <rdaad:P50121>1855</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
       <rdaad:P50120>1931</rdaad:P50120><!--rdaad:P50120 = has date of death-->
@@ -222,20 +155,20 @@ F880 10 $6 600-01 $a Test linked 880 person 2 $t Test linked 880 work 2 $x test 
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age#o%27neilleugene1888-1953">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e94"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50377>O'Neill, Eugene, 1888-1953</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
       <rdaad:P50111>O'Neill, Eugene</rdaad:P50111><!--rdaad:P50111 = has name of person-->
       <rdaad:P50121>1888</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
       <rdaad:P50120>1953</rdaad:P50120><!--rdaad:P50120 = has date of death-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age#romerogeorgea">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e107"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50377>Romero, George A.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
       <rdaad:P50111>Romero, George A.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
       <rdaad:P50094>https://isni.org/isni/0000000121363861</rdaad:P50094><!--rdaad:P50094 = has identifier for person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age#romerogeorgea">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e113"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50377>Romero, George A.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
       <rdaad:P50111>Romero, George A.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age#testunlinked880person">
@@ -245,24 +178,25 @@ F880 10 $6 600-01 $a Test linked 880 person 2 $t Test linked 880 work 2 $x test 
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age#testlinked880person1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-05-18-0400d25e130"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50377>Test linked 880 person 1</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50377>Test linked 880 person 2</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
       <rdaad:P50111>Test linked 880 person 1</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#haydnjoseph1732-1809symphonies">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10328 rdf:resource="http://marc2rda.edu/fake/worNom#2025-05-18-0400d25e29"/><!--rdawo:P10328 = has access point for work-->
+      <rdawd:P10328>Haydn, Joseph, 1732-1809. Symphonies</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#haydnjoseph1732-1809"/><!--rdawo:P10312 = has related person of work-->
       <rdawd:P10088>Symphonies</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#arnethomasaugustine1710-1778concertoskeyboardinstrumentorchestrano3conspiritokeyboardinstrument">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10328 rdf:resource="http://marc2rda.edu/fake/worNom#2025-05-18-0400d25e37"/><!--rdawo:P10328 = has access point for work-->
+      <rdawd:P10328>Arne, Thomas Augustine, 1710-1778. Concertos, keyboard instrument, orchestra. No. 3. Con Spirito, keyboard instrument</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#arnethomasaugustine1710-1778"/><!--rdawo:P10312 = has related person of work-->
       <rdawd:P10088>Concertos, No. 3. Con Spirito</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#romerogeorgeamadeupwork">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10328 rdf:resource="http://marc2rda.edu/fake/worNom#2025-05-18-0400d25e113"/><!--rdawo:P10328 = has access point for work-->
+      <rdawd:P10328>Romero, George A. Made up work</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#romerogeorgea"/><!--rdawo:P10312 = has related person of work-->
       <rdawd:P10002>https://iriforthiswork.com/12345</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <rdawd:P10088>Made up work</rdawd:P10088><!--rdawd:P10088 = has title of work-->
@@ -276,7 +210,8 @@ F880 10 $6 600-01 $a Test linked 880 person 2 $t Test linked 880 work 2 $x test 
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#testlinked880person1testlinked880work1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10328 rdf:resource="http://marc2rda.edu/fake/worNom#2025-05-18-0400d25e130"/><!--rdawo:P10328 = has access point for work-->
+      <rdawd:P10328>Test linked 880 person 1 Test linked 880 work 1</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10328>Test linked 880 person 2 Test linked 880 work 2</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#testlinked880person1"/><!--rdawo:P10312 = has related person of work-->
       <rdawd:P10088>Test linked 880 work 1</rdawd:P10088><!--rdawd:P10088 = has title of work-->
       <rdawd:P10366>test x</rdawd:P10366><!--rdawd:P10366 = has ISSN-->
