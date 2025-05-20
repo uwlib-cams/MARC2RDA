@@ -19,6 +19,7 @@
         <marc:datafield tag="711" ind1="2" ind2=" ">
             <marc:subfield code="i">Preceded by (work):</marc:subfield>
             <marc:subfield code="a">Consultative Meeting on Elimination of Kala-Azar from South Asia</marc:subfield>
+            <marc:subfield code="n">3rd</marc:subfield>
             <marc:subfield code="d">(2009 :</marc:subfield>
             <marc:subfield code="c">New Delhi, India).</marc:subfield>
             <marc:subfield code="t">Kala azar in South Asia.</marc:subfield>
@@ -26,6 +27,7 @@
         <marc:datafield tag="711" ind1="2" ind2=" ">
             <marc:subfield code="a">Meeting on Skipping Date</marc:subfield>
             <marc:subfield code="t">Skip proceedings</marc:subfield>
+            <marc:subfield code="n">Part 5</marc:subfield>
             <marc:subfield code="d">2025</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="711" ind1="2" ind2=" ">

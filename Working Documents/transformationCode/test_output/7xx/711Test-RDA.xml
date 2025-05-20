@@ -51,8 +51,8 @@
 F001 relator-test1
 F711 2# $a Stratford Festival (Ont.), $j production company. $1 https://fakeiri.edu/1234
 F711 2# $a Texas Music Festival. $e Orchestra. $4 prf $2 naf
-F711 2# $i Preceded by (work): $a Consultative Meeting on Elimination of Kala-Azar from South Asia $d (2009 : $c New Delhi, India). $t Kala azar in South Asia.
-F711 2# $a Meeting on Skipping Date $t Skip proceedings $d 2025
+F711 2# $i Preceded by (work): $a Consultative Meeting on Elimination of Kala-Azar from South Asia $n 3rd $d (2009 : $c New Delhi, India). $t Kala azar in South Asia.
+F711 2# $a Meeting on Skipping Date $t Skip proceedings $n Part 5 $d 2025
 F711 2# $6 880-01 $a Oregon Shakespeare Festival.
 F880 2# $6 711-01 $a Oregon Shakespeare Festival 880
 </rdamd:P30137>
@@ -75,8 +75,8 @@ F880 2# $6 711-01 $a Oregon Shakespeare Festival 880
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test1"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
       <rdamd:P30276/>
-      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor#consultativemeetingoneliminationofkala-azarfromsouthasia2009newdelhiindiakalaazarinsouthasia"/>
-      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor#meetingonskippingdateskipproceedings2025"/>
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor#consultativemeetingoneliminationofkala-azarfromsouthasia3rd2009newdelhiindiakalaazarinsouthasia"/>
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor#meetingonskippingdateskipproceedingspart52025"/>
       <!--Default relationship property used for http://marc2rda.edu/fake/age#oregonshakespearefestival-->
       <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/age#oregonshakespearefestival"/>
    </rdf:Description>
@@ -98,12 +98,13 @@ F880 2# $6 711-01 $a Oregon Shakespeare Festival 880
       <rdaad:P50237>Meeting</rdaad:P50237>
       <rdaad:P50032>Texas Music Festival. Orchestra</rdaad:P50032>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#consultativemeetingoneliminationofkala-azarfromsouthasia2009newdelhiindia">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#consultativemeetingoneliminationofkala-azarfromsouthasia3rd2009newdelhiindia">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
-      <rdaad:P50375>Consultative Meeting on Elimination of Kala-Azar from South Asia (2009 : New Delhi, India)</rdaad:P50375>
+      <rdaad:P50375>Consultative Meeting on Elimination of Kala-Azar from South Asia 3rd (2009 : New Delhi, India)</rdaad:P50375>
       <rdaad:P50237>Meeting</rdaad:P50237>
       <rdaad:P50032>Consultative Meeting on Elimination of Kala-Azar from South Asia</rdaad:P50032>
       <rdaad:P50024>New Delhi, India.</rdaad:P50024>
+      <rdaad:P50019>3rd</rdaad:P50019>
       <rdaad:P50039>2009</rdaad:P50039>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age#meetingonskippingdate">
@@ -119,18 +120,18 @@ F880 2# $6 711-01 $a Oregon Shakespeare Festival 880
       <rdaad:P50237>Meeting</rdaad:P50237>
       <rdaad:P50032>Oregon Shakespeare Festival</rdaad:P50032>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#consultativemeetingoneliminationofkala-azarfromsouthasia2009newdelhiindiakalaazarinsouthasia">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#consultativemeetingoneliminationofkala-azarfromsouthasia3rd2009newdelhiindiakalaazarinsouthasia">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>d25e22wor</rdawd:P10002>
-      <rdawd:P10328>Consultative Meeting on Elimination of Kala-Azar from South Asia (2009 : New Delhi, India). Kala azar in South Asia</rdawd:P10328>
-      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#consultativemeetingoneliminationofkala-azarfromsouthasia2009newdelhiindia"/>
-      <rdawd:P10088>Kala azar in South Asia</rdawd:P10088>
+      <rdawd:P10328>Consultative Meeting on Elimination of Kala-Azar from South Asia 3rd (2009 : New Delhi, India). Kala azar in South Asia</rdawd:P10328>
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#consultativemeetingoneliminationofkala-azarfromsouthasia3rd2009newdelhiindia"/>
+      <rdawd:P10088>3rd Kala azar in South Asia</rdawd:P10088>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#meetingonskippingdateskipproceedings2025">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#meetingonskippingdateskipproceedingspart52025">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>d25e33wor</rdawd:P10002>
-      <rdawd:P10328>Meeting on Skipping Date Skip proceedings 2025</rdawd:P10328>
+      <rdawd:P10002>d25e35wor</rdawd:P10002>
+      <rdawd:P10328>Meeting on Skipping Date Skip proceedings Part 5 2025</rdawd:P10328>
       <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#meetingonskippingdate"/>
-      <rdawd:P10088>Skip proceedings</rdawd:P10088>
+      <rdawd:P10088>Skip proceedings Part 5</rdawd:P10088>
    </rdf:Description>
 </rdf:RDF>

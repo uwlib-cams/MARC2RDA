@@ -1395,13 +1395,19 @@
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
-    
+   
     <xsl:template name="FX1X-xx-n">
-        <xsl:for-each select="marc:subfield[@code = 'n']">
-            <rdaad:P50019>
-                <xsl:value-of select="."/>
-            </rdaad:P50019>
-        </xsl:for-each>
+        <xsl:if test="
+            marc:subfield[@code = 'n'] and 
+            (not(marc:subfield[@code = 't']) or 
+            (marc:subfield[@code = 'n'][1] | marc:subfield[@code = 't'][1])[1][@code = 'n'])
+            ">
+            <xsl:for-each select="marc:subfield[@code = 'n']">
+                <rdaad:P50019>
+                    <xsl:value-of select="."/>
+                </rdaad:P50019>
+            </xsl:for-each>
+        </xsl:if>
     </xsl:template>
     
     <xsl:template name="FXXX-xx-x">
