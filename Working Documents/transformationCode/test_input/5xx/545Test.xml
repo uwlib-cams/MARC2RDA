@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+  
+  <!-- Agent (Person) Test -->
+  <marc:record>
+    <marc:controlfield tag="001">545-agent</marc:controlfield>
+    <marc:datafield tag="100" ind1="1" ind2=" ">
+      <marc:subfield code="a">Hill, Jane</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="545" ind1=" " ind2=" ">
+      <marc:subfield code="a">Jane Hill was a pioneering linguist.</marc:subfield>
+      <marc:subfield code="u">http://example.org/hill</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="880" ind1=" " ind2=" ">
+      <marc:subfield code="6">545-00</marc:subfield>
+      <marc:subfield code="a">ジェーン・ヒルは先駆的な言語学者でした。</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  
+  <!-- Collective Agent Test -->
+  <marc:record>
+    <marc:controlfield tag="001">545-collective</marc:controlfield>
+    <marc:datafield tag="110" ind1="2" ind2=" ">
+      <marc:subfield code="a">Historical Society of South Milford</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="545" ind1="0" ind2=" ">
+      <marc:subfield code="a">Founded in 1890 to preserve the town's heritage.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="880" ind1=" " ind2=" ">
+      <marc:subfield code="6">545-00</marc:subfield>
+      <marc:subfield code="a">1890年に設立され、町の遺産を保存しています。</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  
+  <!-- Work/Expression (130) Test -->
+  <marc:record>
+    <marc:controlfield tag="001">545-expression</marc:controlfield>
+    <marc:datafield tag="130" ind1="0" ind2=" ">
+      <marc:subfield code="a">Collected letters of Jane Hill</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="545" ind1="1" ind2=" ">
+      <marc:subfield code="a">Compiled from personal correspondence spanning 1940–1980.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="880" ind1=" " ind2=" ">
+      <marc:subfield code="6">545-00</marc:subfield>
+      <marc:subfield code="a">1940年から1980年にかけての個人的な書簡から編纂されました。</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  
+  <!-- Manifestation fallback (no 1XX field) -->
+  <marc:record>
+    <marc:controlfield tag="001">545-manifestation</marc:controlfield>
+    <marc:datafield tag="245" ind1="1" ind2="0">
+      <marc:subfield code="a">Jane Hill Archive</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="545" ind1=" " ind2=" ">
+      <marc:subfield code="a">Archived materials received in 1999.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="880" ind1=" " ind2=" ">
+      <marc:subfield code="6">545-00</marc:subfield>
+      <marc:subfield code="a">1999年に受領されたアーカイブ資料。</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  
+</marc:collection>

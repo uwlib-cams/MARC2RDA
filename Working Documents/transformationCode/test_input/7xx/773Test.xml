@@ -16,6 +16,7 @@
       <marc:subfield code="6">773-00</marc:subfield>
       <marc:subfield code="a">Test 880</marc:subfield>
     </marc:datafield>
+    
     <!-- 773 with $5: should produce rdaid:P40028 and rdamo:P30103 -->
     <marc:datafield tag="773" ind1=" " ind2=" ">
       <marc:subfield code="t">Journal of Local Testing</marc:subfield>

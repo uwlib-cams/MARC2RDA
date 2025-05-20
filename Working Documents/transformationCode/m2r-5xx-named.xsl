@@ -698,7 +698,7 @@
             <rdawd:P10004>Private</rdawd:P10004>
         </rdf:Description>
     </xsl:template>
-    
+  
     <!-- 544 -->
     <xsl:template name="F544-xx-dabcen" expand-text="yes">
         <xsl:if test="marc:subfield[@code = '3']">
@@ -726,6 +726,33 @@
             | marc:subfield[@code = 'c'] | marc:subfield[@code = 'e'] | marc:subfield[@code = 'n']" separator=" "/>
     </xsl:template>
     
+    <!-- 545 -->
+    <xsl:template name="F545-xx-abu6">
+        <xsl:if test="marc:subfield[@code = 'a']">     
+            <xsl:variable name="prefixnote">
+                <xsl:choose>
+                    <xsl:when test="@ind1 = '0'">Biographical sketch: </xsl:when>
+                    <xsl:when test="@ind1 = '1'">Administrative history: </xsl:when>
+                    <xsl:otherwise>Biographical or historical note: </xsl:otherwise>
+                </xsl:choose>
+            </xsl:variable>
+            
+            <rdamd:P30002>
+                <xsl:value-of select="$prefixnote"/>
+                <xsl:if test="marc:subfield[@code = 'a']">
+                    <xsl:value-of select="normalize-space(marc:subfield[@code = 'a'])"/>
+                </xsl:if>
+                <xsl:if test="marc:subfield[@code = 'b']">
+                    <xsl:text> </xsl:text>
+                    <xsl:value-of select="normalize-space(marc:subfield[@code = 'b'])"/>
+                </xsl:if>
+            </rdamd:P30002>
+            <xsl:if test="marc:subfield[@code = 'u']">
+                <rdamo:P30154 rdf:resource="{normalize-space(marc:subfield[@code = 'u'])}"/>
+            </xsl:if>
+        </xsl:if>
+    </xsl:template>
+     
     <!-- 552 -->
     <xsl:template name="F552-xx-zabcdefghijklmnopu" expand-text="yes">
         <xsl:if test="marc:subfield[@code = 'z']">
