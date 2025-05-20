@@ -1308,12 +1308,18 @@
         </xsl:for-each>
     </xsl:template>
     
-    <xsl:template name="FX1X-xx-d">
-        <xsl:for-each select="marc:subfield[@code = 'd']">
-            <rdaad:P50039>
-                <xsl:value-of select="normalize-space(translate(., '():', ''))"/>
-            </rdaad:P50039>
-        </xsl:for-each>
+    <xsl:template name="F111-xx-d">
+        <xsl:if test="
+            marc:subfield[@code = 'd'] and 
+            (not(marc:subfield[@code = 't']) or 
+            (marc:subfield[@code = 'd'][1] | marc:subfield[@code = 't'][1])[1][@code = 'd'])
+            ">
+            <xsl:for-each select="marc:subfield[@code = 'd']">
+                <rdaad:P50039>
+                    <xsl:value-of select="normalize-space(translate(., '():', ''))"/>
+                </rdaad:P50039>
+            </xsl:for-each>
+        </xsl:if>
     </xsl:template>
     
     <xsl:template name="FX00-xx-q">
