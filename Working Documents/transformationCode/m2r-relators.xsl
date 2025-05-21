@@ -1320,11 +1320,7 @@
     </xsl:template>
     
     <xsl:template name="FX1X-xx-d">
-        <xsl:if test="
-            marc:subfield[@code = 'd'] and 
-            (not(marc:subfield[@code = 't']) or 
-            (marc:subfield[@code = 'd'][1] | marc:subfield[@code = 't'][1])[1][@code = 'd'])
-            ">
+        <xsl:if test="not(marc:subfield[@code = 'd']) or not(marc:subfield[@code = 'd']/preceding-sibling::marc:subfield[@code = 't'])">
             <xsl:for-each select="marc:subfield[@code = 'd']">
                 <rdaad:P50039>
                     <xsl:value-of select="normalize-space(translate(., '():', ''))"/>
@@ -1408,11 +1404,7 @@
     </xsl:template>
    
     <xsl:template name="FX1X-xx-n">
-        <xsl:if test="
-            marc:subfield[@code = 'n'] and 
-            (not(marc:subfield[@code = 't']) or 
-            (marc:subfield[@code = 'n'][1] | marc:subfield[@code = 't'][1])[1][@code = 'n'])
-            ">
+        <xsl:if test="not(marc:subfield[@code = 't']) or not(marc:subfield[@code = 'n']/preceding-sibling::marc:subfield[@code = 't'])">
             <xsl:for-each select="marc:subfield[@code = 'n']">
                 <rdaad:P50019>
                     <xsl:value-of select="."/>

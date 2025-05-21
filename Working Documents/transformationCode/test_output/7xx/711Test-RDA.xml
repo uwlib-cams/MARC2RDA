@@ -90,27 +90,31 @@ F880 2# $6 711-01 $a Oregon Shakespeare Festival 880
       <rdaad:P50375>Stratford Festival (Ont.)</rdaad:P50375>
       <rdaad:P50237>Meeting</rdaad:P50237>
       <rdaad:P50032>Stratford Festival (Ont.)</rdaad:P50032>
+      <rdaad:P50032>Stratford Festival (Ont.)</rdaad:P50032>
       <rdaad:P50006>https://fakeiri.edu/1234</rdaad:P50006>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/age#texasmusicfestivalorchestra">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
       <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/naf/ageNom#texasmusicfestivalorchestra"/>
       <rdaad:P50237>Meeting</rdaad:P50237>
+      <rdaad:P50032>Texas Music Festival</rdaad:P50032>
       <rdaad:P50032>Texas Music Festival. Orchestra</rdaad:P50032>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age#consultativemeetingoneliminationofkala-azarfromsouthasia3rd2009newdelhiindia">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
       <rdaad:P50375>Consultative Meeting on Elimination of Kala-Azar from South Asia 3rd (2009 : New Delhi, India)</rdaad:P50375>
       <rdaad:P50237>Meeting</rdaad:P50237>
-      <rdaad:P50032>Consultative Meeting on Elimination of Kala-Azar from South Asia</rdaad:P50032>
       <rdaad:P50024>New Delhi, India.</rdaad:P50024>
       <rdaad:P50019>3rd</rdaad:P50019>
       <rdaad:P50039>2009</rdaad:P50039>
+      <rdaad:P50032>Consultative Meeting on Elimination of Kala-Azar from South Asia</rdaad:P50032>
+      <rdaad:P50032>Consultative Meeting on Elimination of Kala-Azar from South Asia</rdaad:P50032>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age#meetingonskippingdate">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
       <rdaad:P50375>Meeting on Skipping Date</rdaad:P50375>
       <rdaad:P50237>Meeting</rdaad:P50237>
+      <rdaad:P50032>Meeting on Skipping Date</rdaad:P50032>
       <rdaad:P50032>Meeting on Skipping Date</rdaad:P50032>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age#oregonshakespearefestival">
@@ -118,6 +122,7 @@ F880 2# $6 711-01 $a Oregon Shakespeare Festival 880
       <rdaad:P50375>Oregon Shakespeare Festival</rdaad:P50375>
       <rdaad:P50375>Oregon Shakespeare Festival 880</rdaad:P50375>
       <rdaad:P50237>Meeting</rdaad:P50237>
+      <rdaad:P50032>Oregon Shakespeare Festival</rdaad:P50032>
       <rdaad:P50032>Oregon Shakespeare Festival</rdaad:P50032>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#consultativemeetingoneliminationofkala-azarfromsouthasia3rd2009newdelhiindiakalaazarinsouthasia">
