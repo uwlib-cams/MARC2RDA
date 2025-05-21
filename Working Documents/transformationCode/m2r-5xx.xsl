@@ -1168,35 +1168,10 @@
     <!-- 545 - Biographical or Historical Data -->
     <xsl:template
         match="marc:datafield[@tag = '545'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '545']"
-        mode="age">
-        <xsl:choose>
-            <xsl:when test="../marc:datafield[@tag = '110'] or ../marc:datafield[@tag = '111']">
-                <rdaa:P50392>
-                    <xsl:call-template name="F545-xx-abu6"/>
-                </rdaa:P50392>
-            </xsl:when>
-            <xsl:otherwise>
-                <rdaa:P50391>
-                    <xsl:call-template name="F545-xx-abu6"/>
-                </rdaa:P50391>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    
-    <xsl:template
-        match="marc:datafield[@tag = '545'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '545']"
         mode="man">
         <rdam:P30137>
             <xsl:call-template name="F545-xx-abu6"/>
         </rdam:P30137>    
-    </xsl:template>
-    
-    <xsl:template
-        match="marc:datafield[@tag = '545'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '545']"
-        mode="exp"> 
-        <rdaa:P20071>
-            <xsl:call-template name="F545-xx-abu6"/>
-        </rdaa:P20071>
     </xsl:template>
     
     <!-- 546 - Language Note -->

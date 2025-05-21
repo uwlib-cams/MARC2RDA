@@ -65,13 +65,6 @@ F880 ## $6 545-00 $a ジェーン・ヒルは先駆的な言語学者でした�
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc545-agent"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
-      <rdaa:P20071>
-         <rdamd:P30002>Biographical or historical note: Jane Hill was a pioneering linguist.</rdamd:P30002>
-         <rdamo:P30154 rdf:resource="http://example.org/hill"/>
-      </rdaa:P20071>
-      <rdaa:P20071>
-         <rdamd:P30002>Biographical or historical note: ジェーン・ヒルは先駆的な言語学者でした。</rdamd:P30002>
-      </rdaa:P20071>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
@@ -91,13 +84,6 @@ F880 ## $6 545-00 $a ジェーン・ヒルは先駆的な言語学者でした�
       <rdaad:P50377>Hill, Jane</rdaad:P50377>
       <rdaad:P50111>Hill, Jane</rdaad:P50111>
    </rdf:Description>
-   <rdaa:P50391>
-      <rdamd:P30002>Biographical or historical note: Jane Hill was a pioneering linguist.</rdamd:P30002>
-      <rdamo:P30154 rdf:resource="http://example.org/hill"/>
-   </rdaa:P50391>
-   <rdaa:P50391>
-      <rdamd:P30002>Biographical or historical note: ジェーン・ヒルは先駆的な言語学者でした。</rdamd:P30002>
-   </rdaa:P50391>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc545-collective">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10400>545-collective</rdawd:P10400>
@@ -132,12 +118,6 @@ F880 ## $6 545-00 $a 1890年に設立され、町の遺産を保存していま�
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc545-collective"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
-      <rdaa:P20071>
-         <rdamd:P30002>Biographical sketch: Founded in 1890 to preserve the town's heritage.</rdamd:P30002>
-      </rdaa:P20071>
-      <rdaa:P20071>
-         <rdamd:P30002>Biographical or historical note: 1890年に設立され、町の遺産を保存しています。</rdamd:P30002>
-      </rdaa:P20071>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
@@ -155,13 +135,8 @@ F880 ## $6 545-00 $a 1890年に設立され、町の遺産を保存していま�
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
       <rdaad:P50375>Historical Society of South Milford</rdaad:P50375>
       <rdaad:P50032>Historical Society of South Milford</rdaad:P50032>
+      <rdaad:P50032>Historical Society of South Milford</rdaad:P50032>
    </rdf:Description>
-   <rdaa:P50392>
-      <rdamd:P30002>Biographical sketch: Founded in 1890 to preserve the town's heritage.</rdamd:P30002>
-   </rdaa:P50392>
-   <rdaa:P50392>
-      <rdamd:P30002>Biographical or historical note: 1890年に設立され、町の遺産を保存しています。</rdamd:P30002>
-   </rdaa:P50392>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc545-expression">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10400>545-expression</rdawd:P10400>
@@ -197,12 +172,6 @@ F880 ## $6 545-00 $a 1940年から1980年にかけての個人的な書簡から
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#collectedlettersofjanehill"/>
       <rdaed:P20310>Collected letters of Jane Hill </rdaed:P20310>
-      <rdaa:P20071>
-         <rdamd:P30002>Administrative history: Compiled from personal correspondence spanning 1940–1980.</rdamd:P30002>
-      </rdaa:P20071>
-      <rdaa:P20071>
-         <rdamd:P30002>Biographical or historical note: 1940年から1980年にかけての個人的な書簡から編纂されました。</rdamd:P30002>
-      </rdaa:P20071>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
@@ -216,12 +185,6 @@ F880 ## $6 545-00 $a 1940年から1980年にかけての個人的な書簡から
          <rdamd:P30002>Biographical or historical note: 1940年から1980年にかけての個人的な書簡から編纂されました。</rdamd:P30002>
       </rdam:P30137>
    </rdf:Description>
-   <rdaa:P50391>
-      <rdamd:P30002>Administrative history: Compiled from personal correspondence spanning 1940–1980.</rdamd:P30002>
-   </rdaa:P50391>
-   <rdaa:P50391>
-      <rdamd:P30002>Biographical or historical note: 1940年から1980年にかけての個人的な書簡から編纂されました。</rdamd:P30002>
-   </rdaa:P50391>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc545-manifestation">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10400>545-manifestation</rdawd:P10400>
@@ -258,12 +221,6 @@ F880 ## $6 545-00 $a 1999年に受領されたアーカイブ資料。
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#janehillarchive"/>
       <rdaed:P20310>Jane Hill Archive </rdaed:P20310>
       <rdaed:P20312>Jane Hill Archive</rdaed:P20312>
-      <rdaa:P20071>
-         <rdamd:P30002>Biographical or historical note: Archived materials received in 1999.</rdamd:P30002>
-      </rdaa:P20071>
-      <rdaa:P20071>
-         <rdamd:P30002>Biographical or historical note: 1999年に受領されたアーカイブ資料。</rdamd:P30002>
-      </rdaa:P20071>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#janehillarchive">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
@@ -278,10 +235,4 @@ F880 ## $6 545-00 $a 1999年に受領されたアーカイブ資料。
          <rdamd:P30002>Biographical or historical note: 1999年に受領されたアーカイブ資料。</rdamd:P30002>
       </rdam:P30137>
    </rdf:Description>
-   <rdaa:P50391>
-      <rdamd:P30002>Biographical or historical note: Archived materials received in 1999.</rdamd:P30002>
-   </rdaa:P50391>
-   <rdaa:P50391>
-      <rdamd:P30002>Biographical or historical note: 1999年に受領されたアーカイブ資料。</rdamd:P30002>
-   </rdaa:P50391>
 </rdf:RDF>
