@@ -1169,9 +1169,9 @@
     <xsl:template
         match="marc:datafield[@tag = '545'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '545']"
         mode="man">
-        <rdam:P30137>
+        <rdamd:P30137>
             <xsl:call-template name="F545-xx-abu6"/>
-        </rdam:P30137>    
+        </rdamd:P30137>    
     </xsl:template>
     
     <!-- 546 - Language Note -->
