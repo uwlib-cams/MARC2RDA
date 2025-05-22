@@ -1186,7 +1186,7 @@
         </xsl:for-each>
     </xsl:template>
      
-    <xsl:template name="FX10-xx-a">
+    <xsl:template name="FX1X-xx-a">
         <xsl:if test="marc:subfield[@code = 'a'] and not(marc:subfield[@code = 'b'])">
             <xsl:variable name="nameOfCorporateBody">
                 <xsl:value-of select="marc:subfield[@code = 'a']"/>
@@ -1201,17 +1201,6 @@
         <xsl:if test="(marc:subfield[@code = 'a'] and marc:subfield[@code = 'b'])">
             <xsl:variable name="nameOfCorporateBody">
                 <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']"/>
-            </xsl:variable>
-            <rdaad:P50032>
-                <xsl:value-of select="uwf:stripEndPunctuation($nameOfCorporateBody)"/>
-            </rdaad:P50032>
-        </xsl:if>
-    </xsl:template>
-    
-    <xsl:template name="FX11-xx-a">
-        <xsl:if test="(marc:subfield[@code = 'a'] and not(marc:subfield[@code = 'e']))">
-            <xsl:variable name="nameOfCorporateBody">
-                <xsl:value-of select="marc:subfield[@code = 'a']"/>
             </xsl:variable>
             <rdaad:P50032>
                 <xsl:value-of select="uwf:stripEndPunctuation($nameOfCorporateBody)"/>
