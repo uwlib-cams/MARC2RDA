@@ -1228,7 +1228,7 @@
     </xsl:template>
     
     <xsl:template name="FX00-xx-d">
-        <xsl:for-each select="marc:subfield[@code = 'd']">
+        <xsl:for-each select="marc:subfield[@code = 'd'][following-sibling::marc:subfield[@code = 't']]">
             <xsl:choose>
                 <xsl:when test="contains(., '-') and not(contains(., 'active') or contains(., 'fl.') or contains(., 'jin shi') or contains(., 'ju ren'))">
                     <xsl:if test="matches(normalize-space(.), '^.+-')">

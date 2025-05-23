@@ -71,6 +71,13 @@
             <marc:subfield code="e">screenwriter.</marc:subfield>
             <marc:subfield code="2">naf</marc:subfield>
         </marc:datafield>
+        
+        <!-- Test case: $d follows $t -->
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Sample, Author,</marc:subfield>
+            <marc:subfield code="t">Wrong Order Title</marc:subfield>
+            <marc:subfield code="d">1980-</marc:subfield>
+        </marc:datafield>
        
         <marc:datafield tag="880" ind1="1" ind2=" ">
             <marc:subfield code="6">700-05/(N</marc:subfield>

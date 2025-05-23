@@ -30,6 +30,13 @@
             <marc:subfield code="c">Stratford-upon-Avon, England)</marc:subfield>
         </marc:datafield>
         
+        <!-- Test case: $d follows $t -->
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="a">Organization Name</marc:subfield>
+            <marc:subfield code="t">Official reports</marc:subfield>
+            <marc:subfield code="d">1999-</marc:subfield>
+        </marc:datafield>
+        
         <!-- unapproved 1, approved 2 -->
         <marc:datafield tag="710" ind1="2" ind2=" ">
             <marc:subfield code="a">Royal Shakespeare Company.</marc:subfield>

@@ -55,6 +55,7 @@ F711 2# $i Preceded by (work): $a Consultative Meeting on Elimination of Kala-Az
 F711 2# $a Meeting on Skipping Date $t Skip proceedings $n Part 5 $d 2025
 F711 2# $6 880-01 $a Oregon Shakespeare Festival.
 F880 2# $6 711-01 $a Oregon Shakespeare Festival 880
+F711 2# $a Conference Name $t Conference proceedings $d (2020 : South Milford, United Kingdom)
 </rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
@@ -79,6 +80,7 @@ F880 2# $6 711-01 $a Oregon Shakespeare Festival 880
       <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor#meetingonskippingdateskipproceedingspart52025"/>
       <!--Default relationship property used for http://marc2rda.edu/fake/age#oregonshakespearefestival-->
       <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/age#oregonshakespearefestival"/>
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor#conferencenameconferenceproceedings2020southmilfordunitedkingdom"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/ageNom#texasmusicfestivalorchestra">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
@@ -89,7 +91,6 @@ F880 2# $6 711-01 $a Oregon Shakespeare Festival 880
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
       <rdaad:P50375>Stratford Festival (Ont.)</rdaad:P50375>
       <rdaad:P50237>Meeting</rdaad:P50237>
-      <rdaad:P50032>Stratford Festival (Ont.)</rdaad:P50032>
       <rdaad:P50032>Stratford Festival (Ont.)</rdaad:P50032>
       <rdaad:P50006>https://fakeiri.edu/1234</rdaad:P50006>
    </rdf:Description>
@@ -108,13 +109,11 @@ F880 2# $6 711-01 $a Oregon Shakespeare Festival 880
       <rdaad:P50019>3rd</rdaad:P50019>
       <rdaad:P50039>2009</rdaad:P50039>
       <rdaad:P50032>Consultative Meeting on Elimination of Kala-Azar from South Asia</rdaad:P50032>
-      <rdaad:P50032>Consultative Meeting on Elimination of Kala-Azar from South Asia</rdaad:P50032>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age#meetingonskippingdate">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
       <rdaad:P50375>Meeting on Skipping Date</rdaad:P50375>
       <rdaad:P50237>Meeting</rdaad:P50237>
-      <rdaad:P50032>Meeting on Skipping Date</rdaad:P50032>
       <rdaad:P50032>Meeting on Skipping Date</rdaad:P50032>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age#oregonshakespearefestival">
@@ -123,7 +122,12 @@ F880 2# $6 711-01 $a Oregon Shakespeare Festival 880
       <rdaad:P50375>Oregon Shakespeare Festival 880</rdaad:P50375>
       <rdaad:P50237>Meeting</rdaad:P50237>
       <rdaad:P50032>Oregon Shakespeare Festival</rdaad:P50032>
-      <rdaad:P50032>Oregon Shakespeare Festival</rdaad:P50032>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#conferencename">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Conference Name</rdaad:P50375>
+      <rdaad:P50237>Meeting</rdaad:P50237>
+      <rdaad:P50032>Conference Name</rdaad:P50032>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#consultativemeetingoneliminationofkala-azarfromsouthasia3rd2009newdelhiindiakalaazarinsouthasia">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -138,5 +142,12 @@ F880 2# $6 711-01 $a Oregon Shakespeare Festival 880
       <rdawd:P10328>Meeting on Skipping Date Skip proceedings Part 5 2025</rdawd:P10328>
       <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#meetingonskippingdate"/>
       <rdawd:P10088>Skip proceedings Part 5</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#conferencenameconferenceproceedings2020southmilfordunitedkingdom">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d25e54wor</rdawd:P10002>
+      <rdawd:P10328>Conference Name Conference proceedings (2020 : South Milford, United Kingdom)</rdawd:P10328>
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#conferencename"/>
+      <rdawd:P10088>Conference proceedings</rdawd:P10088>
    </rdf:Description>
 </rdf:RDF>

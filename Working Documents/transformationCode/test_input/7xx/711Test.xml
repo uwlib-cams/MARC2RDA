@@ -38,5 +38,10 @@
             <marc:subfield code="6">711-01</marc:subfield>
             <marc:subfield code="a">Oregon Shakespeare Festival 880</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="711" ind1="2" ind2=" ">
+            <marc:subfield code="a">Conference Name</marc:subfield>
+            <marc:subfield code="t">Conference proceedings</marc:subfield>
+            <marc:subfield code="d">(2020 : South Milford, United Kingdom)</marc:subfield>
+        </marc:datafield>
     </marc:record>
 </marc:collection>

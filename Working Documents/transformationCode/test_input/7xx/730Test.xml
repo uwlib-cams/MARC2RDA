@@ -32,5 +32,11 @@
             <marc:subfield code="1">https://musicbrainz.org/work/3f9ae128-bbec-3804-a477-83348f91dbc8</marc:subfield>
             <marc:subfield code="2">musicb</marc:subfield>
         </marc:datafield>
+        <!-- Test case: $d follows $t -->
+        <marc:datafield tag="730" ind1="3" ind2=" ">
+            <marc:subfield code="a">Work Title</marc:subfield>
+            <marc:subfield code="d">1975</marc:subfield>
+            <marc:subfield code="t">Film adaptation</marc:subfield>
+        </marc:datafield>
     </marc:record>
 </marc:collection>
