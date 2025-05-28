@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">530-test</marc:controlfield>
+        <marc:datafield tag="530" ind1=" " ind2=" ">
+            <marc:subfield code="a">Photoreproduced facsimile version;</marc:subfield>
+            <marc:subfield code="b">Published as Dudley, Cuthbert, ed., The Novel of Lord Ethelbert of Waxlot (Oxford University Press, 1973).</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="530" ind1=" " ind2=" ">
+            <marc:subfield code="3">Dispatches from U.S. consuls in Batavia, Java, Netherlands East Indies, 1818-1906</marc:subfield>
+            <marc:subfield code="a">Available in microfilm;</marc:subfield>
+            <marc:subfield code="b">National Archives;</marc:subfield>
+            <marc:subfield code="d">M449;</marc:subfield>
+            <marc:subfield code="c">Standing order account required.</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="530" ind1=" " ind2=" ">
+            <marc:subfield code="a">Online version available via The New Bartleby Library</marc:subfield>
+            <marc:subfield code="u">http://www.bartleby.com/99/index.html</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="880" ind1=" " ind2=" ">
+            <marc:subfield code="6">530-00</marc:subfield>
+            <marc:subfield code="a">Test 880</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>
