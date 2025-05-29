@@ -192,7 +192,9 @@
                 <rdan:P80069 rdf:resource="{concat('http://id.loc.gov/vocabulary/nationalbibschemes/', lower-case($code2))}"/>
                 <!-- Property with the textual citation from authoritative label -->
                 <rdan:P80069>
+                    <xsl:text>"</xsl:text>
                     <xsl:value-of select="$matchedcitation/madsrdf:authoritativeLabel"/>
+                    <xsl:text>"</xsl:text>
                 </rdan:P80069>
             </xsl:when>
             <xsl:otherwise>

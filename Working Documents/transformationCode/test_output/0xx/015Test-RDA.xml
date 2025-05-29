@@ -74,7 +74,7 @@ F015 ## $a 2024123456 $q Vol. 1 only $2 bnf
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>2024123456</rdand:P80068>
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/nationalbibschemes/bnf"/>
-      <rdan:P80069>Bibliographie nationale française</rdan:P80069>
+      <rdan:P80069>"Bibliographie nationale française"</rdan:P80069>
       <rdand:P80071>Vol. 1 only</rdand:P80071>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc015-test2">
@@ -167,7 +167,7 @@ F015 ## $a 9988776655 $2 dnb
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>9988776655</rdand:P80068>
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/nationalbibschemes/dnb"/>
-      <rdan:P80069>Deutsche Nationalbibliografie</rdan:P80069>
+      <rdan:P80069>"Deutsche Nationalbibliografie"</rdan:P80069>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc015-test4">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -213,13 +213,13 @@ F015 ## $a 84-3117 $z 04,N48,0463 $2 bv
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>84-3117</rdand:P80068>
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/nationalbibschemes/bv"/>
-      <rdan:P80069>Bibliografía venezolana</rdan:P80069>
+      <rdan:P80069>"Bibliografía venezolana"</rdan:P80069>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/bv/nom#04n480463">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>04,N48,0463</rdand:P80068>
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/nationalbibschemes/bv"/>
-      <rdan:P80069>Bibliografía venezolana</rdan:P80069>
+      <rdan:P80069>"Bibliografía venezolana"</rdan:P80069>
       <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
    </rdf:Description>
 </rdf:RDF>
