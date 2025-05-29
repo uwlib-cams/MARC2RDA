@@ -402,10 +402,10 @@
                             </xsl:choose>
                             <!-- If we minted the IRI - add additional details -->
                             <xsl:if test="starts-with(uwf:agentIRI($baseID, .), $BASE)">
-                                <xsl:call-template name="FX00-x1-a"/>
-                                <xsl:call-template name="FX00-x2-a"/>
-                                <xsl:call-template name="FX00-x0-ab"/>
-                                <xsl:call-template name="FX00-x0-a"/>
+                                <xsl:call-template name="FX00-1x-a"/>
+                                <xsl:call-template name="FX00-2x-a"/>
+                                <xsl:call-template name="FX00-0x-ab"/>
+                                <xsl:call-template name="FX00-0x-a"/>
                                 <xsl:call-template name="FX00-xx-d"/>
                                 <xsl:call-template name="FX00-xx-q"/>
                                 <xsl:call-template name="FX00-xx-u"/>
@@ -438,9 +438,9 @@
                             </xsl:choose>
                             <!-- If we minted the IRI - add additional details -->
                             <xsl:if test="starts-with(uwf:agentIRI($baseID, .), $BASE)">
-                                <xsl:call-template name="FX00-x3-c"/>
-                                <xsl:call-template name="FX00-x3-d"/>
-                                <xsl:call-template name="FX00-x3-a"/>
+                                <xsl:call-template name="FX00-3x-c"/>
+                                <xsl:call-template name="FX00-3x-d"/>
+                                <xsl:call-template name="FX00-3x-a"/>
                                 <xsl:call-template name="FX00-xx-u"/>
                             </xsl:if>
                         </xsl:when>
@@ -680,10 +680,10 @@
                                 </xsl:choose>
                                 <!-- If we minted the IRI - add additional details -->
                                 <xsl:if test="starts-with(uwf:agentIRI($baseID, .), $BASE)">
-                                    <xsl:call-template name="FX00-x1-a"/>
-                                    <xsl:call-template name="FX00-x2-a"/>
-                                    <xsl:call-template name="FX00-x0-ab"/>
-                                    <xsl:call-template name="FX00-x0-a"/>
+                                    <xsl:call-template name="FX00-1x-a"/>
+                                    <xsl:call-template name="FX00-2x-a"/>
+                                    <xsl:call-template name="FX00-0x-ab"/>
+                                    <xsl:call-template name="FX00-0x-a"/>
                                     <xsl:call-template name="FX00-xx-d"/>
                                     <xsl:call-template name="FX00-xx-q"/>
                                     <xsl:call-template name="FX00-xx-u"/>
@@ -716,9 +716,9 @@
                                 </xsl:choose>
                                 <!-- If we minted the IRI - add additional details -->
                                 <xsl:if test="starts-with(uwf:agentIRI($baseID, .), $BASE)">
-                                    <xsl:call-template name="FX00-x3-c"/>
-                                    <xsl:call-template name="FX00-x3-d"/>
-                                    <xsl:call-template name="FX00-x3-a"/>
+                                    <xsl:call-template name="FX00-3x-c"/>
+                                    <xsl:call-template name="FX00-3x-d"/>
+                                    <xsl:call-template name="FX00-3x-a"/>
                                     <xsl:call-template name="FX00-xx-u"/>
                                 </xsl:if>
                             </xsl:when>
