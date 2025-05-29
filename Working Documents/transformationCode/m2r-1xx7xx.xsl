@@ -988,15 +988,6 @@
             <xsl:call-template name="F765-xx-abcdefghjklmnopqrstuvwxyz"/>
         </rdam:P30137>
     </xsl:template>
-
- <!-- 770 Supplement/Special Issue Entry -->
-    <xsl:template
-        match="marc:datafield[@tag = '770'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '770-00']"
-        mode="man">
-        <rdam:P30137>
-            <xsl:call-template name="F770-xx-abcdefghjklmnopqrstuvwxyz"/>
-        </rdam:P30137>
-    </xsl:template>
     
 <!-- 767 Translation Entry -->
     <xsl:template
@@ -1007,12 +998,21 @@
         </rdam:P30137>
     </xsl:template>
     
-<!-- 773 Host Item Entry: manifestation-level -->
-    <xsl:template 
-        match="marc:datafield[@tag = '773'][not(marc:subfield[@code = '5'])] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '773-00' and not(marc:subfield[@code = '5'])]"
+    <!-- 770 Supplement/Special Issue Entry -->
+    <xsl:template
+        match="marc:datafield[@tag = '770'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '770-00']"
         mode="man">
         <rdam:P30137>
-            <xsl:call-template name="F773-xx-abcdefghijklmnpqrstuvwxyz34"/>
+            <xsl:call-template name="F770-xx-abcdefghjklmnopqrstuvwxyz"/>
+        </rdam:P30137>
+    </xsl:template>
+    
+    <!-- 772 Supplement Parent Entry: manifestation-level -->
+    <xsl:template 
+        match="marc:datafield[@tag = '772'][not(marc:subfield[@code = '5'])] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '772-00' and not(marc:subfield[@code = '5'])]"
+        mode="man">
+        <rdam:P30137>
+            <xsl:call-template name="F772-xx-abcdefghijklmnpqrstuvwxyz"/>
         </rdam:P30137>
     </xsl:template>
     
