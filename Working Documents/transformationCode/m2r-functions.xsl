@@ -100,6 +100,7 @@
     <xsl:variable name="locMusicCodeSchemesDoc" select="document('lookup/lc/musiccodeschemes.rdf')"/>
     <xsl:variable name="locNameTitleSchemesDoc" select="document('lookup/lc/nameTitleSchemes.rdf')"/>
     <xsl:variable name="approvedSourcesDoc" select="document('lookup/approvedSources.xml')"/>
+    <xsl:variable name="locNationalBibSchemesDoc" select="document('lookup/lc/nationalbibschemes.rdf')"/>
     
     <xsl:key name="schemeKey" match="madsrdf:hasMADSSchemeMember" use="madsrdf:Authority/@rdf:about"/>
     <xsl:key name="codeKey" match="uwmisc:row" use="uwmisc:marc024Code | uwmisc:marc3XXCode"/>
@@ -179,6 +180,30 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
+    
+    <!-- lookup for field 015 -->   
+    <xsl:function name="uwf:s2NationalBibSchemes" expand-text="true">
+        <xsl:param name="sub2"/>
+        <xsl:variable name="code2" select="replace($sub2, '\.$', '')"/>
+        <xsl:variable name="matchedcitation" select="key('schemeKey', concat('http://id.loc.gov/vocabulary/nationalbibschemes/', lower-case($code2)), $locNationalBibSchemesDoc)/madsrdf:Authority"/>
+        <xsl:choose>
+            <xsl:when test="$matchedcitation">
+                <!-- Property with IRI -->
+                <rdan:P80069 rdf:resource="{concat('http://id.loc.gov/vocabulary/nationalbibschemes/', lower-case($code2))}"/>
+                <!-- Property with the textual citation from authoritative label -->
+                <rdan:P80069>
+                    <xsl:value-of select="$matchedcitation/madsrdf:authoritativeLabel"/>
+                </rdan:P80069>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:comment>IRI could not be found for {$code2}</xsl:comment>
+                <rdand:P80069>
+                    <xsl:value-of select="$code2"/>
+                </rdand:P80069>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
     
     <!-- uwf:s2Concept looks up a scheme code and return the skos:inScheme with the associated IRI from id.loc.gov -->
     <!-- docs can be added as needed based on the sources of $2 from different fields -->

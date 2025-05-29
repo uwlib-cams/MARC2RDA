@@ -85,15 +85,17 @@
         </rdaw:P10330>
     </xsl:template>
     
-    <!-- 015 National Bibliography Number WIP
+    <!-- 015 National Bibliography Number -->
     <xsl:template match="marc:datafield[@tag = '015'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '015']" 
         mode="man">
         <xsl:param name="baseID"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdamo:P30004 rdf:resource="{uwf:nomenIRI($baseID, ., ., 'isbn', 'nomen')}"/>
+            <xsl:variable name="source" select="following-sibling::marc:subfield[@code = '2']"/>
+            <rdamo:P30004 rdf:resource="{uwf:nomenIRI($baseID, ., ., $source, 'nomen')}"/>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'z']">
-            <rdamo:P30004 rdf:resource="{uwf:nomenIRI($baseID, ., ., 'isbn', 'nomen')}"/>
+            <xsl:variable name="source" select="following-sibling::marc:subfield[@code = '2']"/>
+            <rdamo:P30004 rdf:resource="{uwf:nomenIRI($baseID, ., ., $source, 'nomen')}"/>
         </xsl:for-each>
     </xsl:template>
     
@@ -101,13 +103,17 @@
     <xsl:template match="marc:datafield[@tag = '015'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '015']" 
         mode="nom">
         <xsl:param name="baseID"/>
+        
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., ., 'isbn', 'nomen')}">
+            <xsl:variable name="source" select="following-sibling::marc:subfield[@code = '2']"/>
+            <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., ., $source, 'nomen')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
-                    <xsl:value-of select="translate(., ' :', '')"/>
+                    <xsl:value-of select="."/>
                 </rdand:P80068>
-                <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+                <xsl:if test="$source">
+                    <xsl:sequence select="uwf:s2NationalBibSchemes($source)"/>
+                </xsl:if>
                 <xsl:if test="following-sibling::marc:subfield[@code = 'q']">
                     <rdand:P80071>
                         <xsl:for-each select="following-sibling::marc:subfield[@code = 'q']">
@@ -120,13 +126,17 @@
                 </xsl:if>
             </rdf:Description>
         </xsl:for-each>
+        
         <xsl:for-each select="marc:subfield[@code = 'z']">
-            <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., ., 'isbn', 'nomen')}">
+            <xsl:variable name="source" select="following-sibling::marc:subfield[@code = '2']"/>
+            <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., ., $source, 'nomen')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
-                    <xsl:value-of select="translate(., ' :', '')"/>
+                    <xsl:value-of select="."/>
                 </rdand:P80068>
-                <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+                <xsl:if test="$source">
+                    <xsl:sequence select="uwf:s2NationalBibSchemes($source)"/>
+                </xsl:if>
                 <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
                 <xsl:if test="following-sibling::marc:subfield[@code = 'q']">
                     <rdand:P80071>
@@ -140,7 +150,7 @@
                 </xsl:if>
             </rdf:Description>
         </xsl:for-each>
-    </xsl:template> -->
+    </xsl:template>
     
     <!-- 016 National Bibliographic Agency Control Number -->
     <xsl:template match="marc:datafield[@tag = '016'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '016']" 

@@ -641,7 +641,6 @@
         match="marc:datafield[@tag = '530'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '530']"
         mode="man" expand-text="yes">
         <xsl:param name="baseID"/>
-        <xsl:param name="record"/>
         
         <rdam:P30026>
             <xsl:choose>
