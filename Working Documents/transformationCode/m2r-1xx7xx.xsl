@@ -630,7 +630,7 @@
                 <xsl:copy-of select="uwf:workIdentifiers(.)"/>
                 <!-- If we minted the IRI - add additional details -->
                 <xsl:if test="starts-with(uwf:agentIRI($baseID, .), $BASE)">
-                    <xsl:call-template name="FXXX-xx-f"/>
+                    <xsl:call-template name="FXXX-xx-d"/>
                     <xsl:call-template name="FXXX-xx-tnp"/>
                     <xsl:call-template name="FXXX-xx-n"/>
                     <xsl:call-template name="FXXX-xx-x"/>
@@ -855,15 +855,15 @@
     <xsl:template match="marc:datafield[@tag = '130'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '130']"
         mode="aggWor">
         <!-- title -->
-        <xsl:call-template name="FX30-anp"/>
+        <xsl:call-template name="FX30-xx-anp"/>
     </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '130'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '130']"
         mode="seWor augWor">
         <!-- title -->
-        <xsl:call-template name="FX30-anp"/>
+        <xsl:call-template name="FX30-xx-anp"/>
         <!-- attributes -->
-        <xsl:call-template name="FX30-d"/>
+        <xsl:call-template name="FX30-xx-d"/>
         <xsl:call-template name="FXXX-xx-n"/>
     </xsl:template>
     
@@ -905,8 +905,8 @@
                                 </rdawd:P10328>
                                 <!-- If we minted the IRI - add additional details -->
                                 <xsl:if test="starts-with($relWorkIRI, $BASE)">
-                                    <xsl:call-template name="FX30-anp"/>
-                                    <xsl:call-template name="FXXX-xx-f"/>
+                                    <xsl:call-template name="FX30-xx-anp"/>
+                                    <xsl:call-template name="FX30-xx-d"/>
                                     <xsl:call-template name="FXXX-xx-n"/>
                                     <xsl:call-template name="FXXX-xx-x"/>
                                 </xsl:if>
@@ -917,8 +917,8 @@
                 <xsl:copy-of select="uwf:workIdentifiers(.)"/>
                 <!-- If we minted the IRI - add additional details -->
                 <xsl:if test="starts-with($relWorkIRI, $BASE)">
-                    <xsl:call-template name="FX30-anp"/>
-                    <xsl:call-template name="FXXX-xx-f"/>
+                    <xsl:call-template name="FX30-xx-anp"/>
+                    <xsl:call-template name="FX30-xx-d"/>
                     <xsl:call-template name="FXXX-xx-n"/>
                     <xsl:call-template name="FXXX-xx-x"/>
                 </xsl:if>

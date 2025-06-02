@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record xmlns:marc="http://www.loc.gov/MARC21/slim">
+        <marc:leader>00748cam a2200205 a 4500</marc:leader>
+        <marc:controlfield tag="001">4529595</marc:controlfield>
+        
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Austen, Jane,</marc:subfield>
+            <marc:subfield code="d">1775-1817.</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="130" ind1="0" ind2=" ">
+            <marc:subfield code="a">Bride &amp; prejudice (Motion picture)</marc:subfield>
+            <marc:subfield code="d">added d</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="240" ind1="1" ind2="0">
+            <marc:subfield code="a">Correspondence.</marc:subfield>
+            <marc:subfield code="k">Selections.</marc:subfield>
+            <marc:subfield code="f">1955</marc:subfield>
+            <marc:subfield code="d">test d</marc:subfield>
+            <marc:subfield code="n">opp. test n</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="600" ind1="1" ind2="0">
+            <marc:subfield code="a">Haydn, Joseph,</marc:subfield>
+            <marc:subfield code="d">1732-1809.</marc:subfield>
+            <marc:subfield code="t">Symphonies.</marc:subfield>
+            <marc:subfield code="d">d after t</marc:subfield>
+        </marc:datafield>
+         
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Shostakovich, Dmitriĭ Dmitrievich,</marc:subfield>
+            <marc:subfield code="d">1906-1975.</marc:subfield>
+            <marc:subfield code="t">Korolʹ Lir (Motion picture music)</marc:subfield>
+            <marc:subfield code="d">d after t</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="810" ind1="1" ind2=" ">
+            <marc:subfield code="a">United States.</marc:subfield>
+            <marc:subfield code="b">Army Map Service.</marc:subfield>
+            <marc:subfield code="d">d before t</marc:subfield>
+            <marc:subfield code="t">A.M.S.,</marc:subfield>
+            <marc:subfield code="d">d after t</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+</marc:collection>

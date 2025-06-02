@@ -1357,15 +1357,6 @@
         </xsl:if>
     </xsl:template>
     
-     
-    <xsl:template name="FXXX-xx-f">
-        <xsl:for-each select="marc:subfield[@code = 'f']">
-            <rdawd:P10219>
-                <xsl:value-of select="replace(., '\.$', '')"/>
-            </rdawd:P10219>
-        </xsl:for-each>
-    </xsl:template>
-    
     <xsl:template name="FXXX-xx-tnp">
         <xsl:if test="marc:subfield[@code = 't'] or marc:subfield[@code = 'n'] or marc:subfield[@code = 'p']">
             <xsl:variable name="title">
@@ -1410,7 +1401,7 @@
         </xsl:for-each>
     </xsl:template>
     
-    <xsl:template name="FX30-anp">
+    <xsl:template name="FX30-xx-anp">
         <xsl:variable name="title">
             <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'n'] | marc:subfield[@code = 'p']"/>
         </xsl:variable>
@@ -1419,11 +1410,21 @@
         </rdawd:P10088>
     </xsl:template>
     
-    <xsl:template name="FX30-d">
+    <xsl:template name="FX30-xx-d">
         <xsl:for-each select="marc:subfield[@code = 'd']">
             <rdawd:P10219>
                 <xsl:value-of select="."/>
             </rdawd:P10219>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template name="FXXX-xx-d">
+        <xsl:for-each select="marc:subfield[@code = 'd']">
+            <xsl:if test="preceding-sibling::marc:subfield[@code = 't']">
+                <rdawd:P10219>
+                    <xsl:value-of select="."/>
+                </rdawd:P10219>
+            </xsl:if>
         </xsl:for-each>
     </xsl:template>
     

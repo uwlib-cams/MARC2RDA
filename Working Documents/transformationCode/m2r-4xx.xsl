@@ -42,7 +42,7 @@
                <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
            </rdawd:P10328>
            <!-- title -->
-           <xsl:call-template name="FX30-anp"/>
+           <xsl:call-template name="FX30-xx-anp"/>
            <xsl:if test="@tag = '440' and marc:subfield[@code = '6']">
                <xsl:variable name="occNum" select="concat('440-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                <xsl:for-each
@@ -51,7 +51,7 @@
                        <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
                    </rdawd:P10328>
                    <!-- title -->
-                   <xsl:call-template name="FX30-anp"/>
+                   <xsl:call-template name="FX30-xx-anp"/>
                </xsl:for-each>
            </xsl:if>
        </rdf:Description>

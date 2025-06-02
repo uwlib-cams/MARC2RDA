@@ -96,7 +96,7 @@
             <xsl:copy-of select="uwf:workIdentifiers(.)"/>
             <!-- If we minted the IRI - add additional details -->
             <xsl:if test="starts-with(uwf:agentIRI($baseID, .), $BASE)">
-                <xsl:call-template name="FXXX-xx-f"/>
+                <xsl:call-template name="FXXX-xx-d"/>
                 <xsl:call-template name="FXXX-xx-tnp"/>
                 <xsl:call-template name="FXXX-xx-n"/>
                 <xsl:call-template name="FXXX-xx-x"/>
@@ -349,8 +349,8 @@
                                     <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
                                 </rdawd:P10328>
                                 <xsl:if test="starts-with($relWorkIRI, $BASE)">
-                                    <xsl:call-template name="FX30-anp"/>
-                                    <xsl:call-template name="FXXX-xx-f"/>
+                                    <xsl:call-template name="FX30-xx-anp"/>
+                                    <xsl:call-template name="FX30-xx-d"/>
                                     <xsl:call-template name="FXXX-xx-n"/>
                                     <xsl:call-template name="FXXX-xx-x"/>
                                 </xsl:if>
@@ -361,8 +361,8 @@
                 <xsl:copy-of select="uwf:workIdentifiers(.)"/>
                 <!-- If we minted the IRI - add additional details -->
                 <xsl:if test="starts-with($relWorkIRI, $BASE)">
-                    <xsl:call-template name="FX30-anp"/>
-                    <xsl:call-template name="FXXX-xx-f"/>
+                    <xsl:call-template name="FX30-xx-anp"/>
+                    <xsl:call-template name="FX30-xx-d"/>
                     <xsl:call-template name="FXXX-xx-n"/>
                     <xsl:call-template name="FXXX-xx-x"/>
                 </xsl:if>

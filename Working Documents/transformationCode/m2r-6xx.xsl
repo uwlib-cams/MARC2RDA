@@ -499,10 +499,7 @@
             </xsl:if>
             <!-- If we minted the IRI - add additional details -->
             <xsl:if test="starts-with(uwf:agentIRI($baseID, .), $BASE)">
-                <xsl:call-template name="FXXX-xx-f"/>
                 <xsl:call-template name="FXXX-xx-tnp"/>
-                <xsl:call-template name="FXXX-xx-n"/>
-                <xsl:call-template name="FXXX-xx-x"/>
             </xsl:if>
         </rdf:Description>
     </xsl:template>
@@ -733,10 +730,7 @@
             </xsl:if>
             <!-- If we minted the IRI - add additional details -->
             <xsl:if test="starts-with(uwf:relWorkIRI($baseID, .), $BASE)">
-                <xsl:call-template name="FXXX-xx-f"/>
-                <xsl:call-template name="FX30-anp"/>
-                <xsl:call-template name="FXXX-xx-n"/>
-                <xsl:call-template name="FXXX-xx-x"/>
+                <xsl:call-template name="FX30-xx-anp"/>
             </xsl:if>
         </rdf:Description>
     </xsl:template>

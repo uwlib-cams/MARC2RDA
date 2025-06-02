@@ -28,15 +28,15 @@
     <xsl:template match="marc:datafield[@tag = '240'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '240']"
         mode="aggWor">
         <!-- title -->
-        <xsl:call-template name="FX30-anp"/>
+        <xsl:call-template name="FX30-xx-anp"/>
     </xsl:template> 
     
     <xsl:template match="marc:datafield[@tag = '240'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '240']"
         mode="seWor augWor">
         <!-- title -->
-        <xsl:call-template name="FX30-anp"/>
+        <xsl:call-template name="FX30-xx-anp"/>
         <!-- attribute subfields -->
-        <xsl:call-template name="FX30-d"/>
+        <xsl:call-template name="FX30-xx-d"/>
         <xsl:call-template name="FXXX-xx-n"/>
     </xsl:template> 
     
