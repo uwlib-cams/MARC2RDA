@@ -185,7 +185,7 @@
             <rdawd:P10006>{marc:subfield[@code = 'c']}</rdawd:P10006>
         </xsl:if>
         <xsl:if test="marc:subfield[@code = 'd']">
-            <rdawd:P10215>{replace(marc:subfield[@code = 'd'], '\.\s*$', '')}</rdawd:P10215>
+            <rdawd:P10215>{replace(marc:subfield[@code = 'd'][1], '\.\s*$', '')}</rdawd:P10215>
         </xsl:if>
         <xsl:if test="marc:subfield[@code = 'a'] or marc:subfield[@code = 'g']">
             <rdawd:P10209>
@@ -554,7 +554,7 @@
         mode="wor">
         <!--<xsl:call-template name="getmarc"/>-->
         <rdawd:P10216>
-            <xsl:value-of select="concat('Geographic coverage: ', marc:subfield[@code = 'a'])"/>
+            <xsl:value-of select="concat('Geographic coverage: ', marc:subfield[@code = 'a'][1])"/>
         </rdawd:P10216>
     </xsl:template>
     

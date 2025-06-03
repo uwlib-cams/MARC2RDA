@@ -90,11 +90,11 @@
         mode="man">
         <xsl:param name="baseID"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <xsl:variable name="source" select="following-sibling::marc:subfield[@code = '2']"/>
+            <xsl:variable name="source" select="following-sibling::marc:subfield[@code = '2'][1]"/>
             <rdamo:P30004 rdf:resource="{uwf:nomenIRI($baseID, ., ., $source, 'nomen')}"/>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'z']">
-            <xsl:variable name="source" select="following-sibling::marc:subfield[@code = '2']"/>
+            <xsl:variable name="source" select="following-sibling::marc:subfield[@code = '2'][1]"/>
             <rdamo:P30004 rdf:resource="{uwf:nomenIRI($baseID, ., ., $source, 'nomen')}"/>
         </xsl:for-each>
     </xsl:template>
@@ -105,7 +105,7 @@
         <xsl:param name="baseID"/>
         
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <xsl:variable name="source" select="following-sibling::marc:subfield[@code = '2']"/>
+            <xsl:variable name="source" select="following-sibling::marc:subfield[@code = '2'][1]"/>
             <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., ., $source, 'nomen')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
@@ -128,7 +128,7 @@
         </xsl:for-each>
         
         <xsl:for-each select="marc:subfield[@code = 'z']">
-            <xsl:variable name="source" select="following-sibling::marc:subfield[@code = '2']"/>
+            <xsl:variable name="source" select="following-sibling::marc:subfield[@code = '2'][1]"/>
             <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., ., $source, 'nomen')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
@@ -1138,7 +1138,7 @@
             <xsl:when test="marc:subfield[@code = 'b']">
                 <xsl:for-each select="marc:subfield[@code = 'b']">
                     <xsl:variable name="ap">
-                        <xsl:value-of select="concat(../marc:subfield[@code = 'a'], .)"/>
+                        <xsl:value-of select="concat(../marc:subfield[@code = 'a'][1], .)"/>
                     </xsl:variable>
                     <rdaw:P10321 rdf:resource="{uwf:placeIRI($baseID, ., $ap, $source)}"/>
                 </xsl:for-each>
