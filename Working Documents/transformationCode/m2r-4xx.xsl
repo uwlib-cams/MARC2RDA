@@ -53,9 +53,11 @@
                    <!-- title -->
                    <xsl:call-template name="FX30-xx-anp"/>
                    <xsl:call-template name="FX30-xx-d"/>
+                   <xsl:call-template name="FXXX-xx-l-wor"/>
                </xsl:for-each>
            </xsl:if>
            <xsl:call-template name="FX30-xx-d"/>
+           <xsl:call-template name="FXXX-xx-l-wor"/>
        </rdf:Description>
     </xsl:template>
     

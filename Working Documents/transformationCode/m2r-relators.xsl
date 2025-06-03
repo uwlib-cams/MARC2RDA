@@ -1436,4 +1436,20 @@
         </xsl:for-each>
     </xsl:template>
     
+    <xsl:template name="FXXX-xx-l-wor">
+        <xsl:for-each select="marc:subfield[@code = 'l']">
+            <rdawd:P10353>
+                <xsl:value-of select="."/>
+            </rdawd:P10353>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template name="FXXX-xx-l-exp">
+        <xsl:for-each select="marc:subfield[@code = 'l']">
+            <rdaed:P20006>
+                <xsl:value-of select="."/>
+            </rdaed:P20006>
+        </xsl:for-each>
+    </xsl:template>
+    
 </xsl:stylesheet>

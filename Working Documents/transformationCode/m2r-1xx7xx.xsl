@@ -920,6 +920,8 @@
         mode="aggWor">
         <!-- title -->
         <xsl:call-template name="FX30-xx-anp"/>
+        <!-- attributes -->
+        <xsl:call-template name="FXXX-xx-l-wor"/>
     </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '130'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '130']"
@@ -930,6 +932,11 @@
         <xsl:call-template name="FX30-xx-d"/>
         <xsl:call-template name="FXXX-xx-n"/>
         <xsl:call-template name="FXXX-xx-r"/>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '130'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '130']"
+        mode="exp">
+        <xsl:call-template name="FXXX-xx-l-exp"/>
     </xsl:template>
     
     <!-- 730 -->

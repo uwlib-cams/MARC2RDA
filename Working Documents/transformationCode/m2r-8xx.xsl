@@ -78,6 +78,7 @@
                             <xsl:if test="starts-with($workIRI, $BASE)">
                                 <xsl:call-template name="FXXX-xx-d"/>
                                 <xsl:call-template name="FXXX-xx-tnp"/>
+                                <xsl:call-template name="FXXX-xx-l-wor"/>
                                 <xsl:call-template name="FXXX-xx-n"/>
                                 <xsl:call-template name="FXXX-xx-r"/>
                                 <xsl:call-template name="FXXX-xx-x"/>
@@ -106,6 +107,7 @@
             <xsl:if test="starts-with($workIRI, $BASE)">
                 <xsl:call-template name="FXXX-xx-d"/>
                 <xsl:call-template name="FXXX-xx-tnp"/>
+                <xsl:call-template name="FXXX-xx-l-wor"/>
                 <xsl:call-template name="FXXX-xx-n"/>
                 <xsl:call-template name="FXXX-xx-r"/>
                 <xsl:call-template name="FXXX-xx-x"/>
@@ -387,6 +389,7 @@
                                 <xsl:if test="starts-with($relWorkIRI, $BASE)">
                                     <xsl:call-template name="FX30-xx-anp"/>
                                     <xsl:call-template name="FX30-xx-d"/>
+                                    <xsl:call-template name="FXXX-xx-l-wor"/>
                                     <xsl:call-template name="FXXX-xx-n"/>
                                     <xsl:call-template name="FXXX-xx-r"/>
                                     <xsl:call-template name="FXXX-xx-x"/>
@@ -400,6 +403,7 @@
                 <xsl:if test="starts-with($relWorkIRI, $BASE)">
                     <xsl:call-template name="FX30-xx-anp"/>
                     <xsl:call-template name="FX30-xx-d"/>
+                    <xsl:call-template name="FXXX-xx-l-wor"/>
                     <xsl:call-template name="FXXX-xx-n"/>
                     <xsl:call-template name="FXXX-xx-r"/>
                     <xsl:call-template name="FXXX-xx-x"/>
