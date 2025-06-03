@@ -13,15 +13,34 @@
         
         <marc:datafield tag="130" ind1="0" ind2=" ">
             <marc:subfield code="a">Bride &amp; prejudice (Motion picture)</marc:subfield>
-            <marc:subfield code="d">added d</marc:subfield>
+            <marc:subfield code="d">130 $d</marc:subfield>
+            <marc:subfield code="f">(2015)</marc:subfield>
+            <marc:subfield code="l">English</marc:subfield>
+            <marc:subfield code="m">130 test $m</marc:subfield>
+            <marc:subfield code="n">op. test n</marc:subfield>
+            <marc:subfield code="o">test $o</marc:subfield>
+            <marc:subfield code="r">130 test $r</marc:subfield>
+            <marc:subfield code="s">130 test $s</marc:subfield>
         </marc:datafield>
         
         <marc:datafield tag="240" ind1="1" ind2="0">
             <marc:subfield code="a">Correspondence.</marc:subfield>
             <marc:subfield code="k">Selections.</marc:subfield>
             <marc:subfield code="f">1955</marc:subfield>
-            <marc:subfield code="d">test d</marc:subfield>
+            <marc:subfield code="d">240 $d</marc:subfield>
+            <marc:subfield code="l">English</marc:subfield>
+            <marc:subfield code="m">240 test $m</marc:subfield>
             <marc:subfield code="n">opp. test n</marc:subfield>
+            <marc:subfield code="o">arranged</marc:subfield>
+            <marc:subfield code="r">240 test $r</marc:subfield>
+            <marc:subfield code="s">240 test $s</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="440" ind1=" " ind2="0">
+            <marc:subfield code="a">Jane Austen mystery ;</marc:subfield>
+            <marc:subfield code="d">440 $d</marc:subfield>
+            <marc:subfield code="n">op. test n</marc:subfield>
+            <marc:subfield code="v">6th</marc:subfield>
         </marc:datafield>
         
         <marc:datafield tag="600" ind1="1" ind2="0">
@@ -33,17 +52,62 @@
          
         <marc:datafield tag="700" ind1="1" ind2=" ">
             <marc:subfield code="a">Shostakovich, Dmitriĭ Dmitrievich,</marc:subfield>
-            <marc:subfield code="d">1906-1975.</marc:subfield>
+            <marc:subfield code="d">700 $d before $t</marc:subfield>
             <marc:subfield code="t">Korolʹ Lir (Motion picture music)</marc:subfield>
-            <marc:subfield code="d">d after t</marc:subfield>
+            <marc:subfield code="d">700 $d after $t</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="710" ind1="2" ind2=" "> 
+            <marc:subfield code="i">Container of (work)</marc:subfield>
+            <marc:subfield code="a">Belarus Free Theatre (Theater group).</marc:subfield>
+            <marc:subfield code="d">710 $d before $t</marc:subfield>
+            <marc:subfield code="t">Minsk, 2011.</marc:subfield>
+            <marc:subfield code="d">710 $d after $t</marc:subfield>
+        </marc:datafield>
+      
+        <marc:datafield tag="711" ind1="2" ind2=" ">
+            <marc:subfield code="a">Conference Name</marc:subfield>
+            <marc:subfield code="d">711 $d before $t</marc:subfield>
+            <marc:subfield code="t">Conference proceedings</marc:subfield>
+            <marc:subfield code="d">711 $d after $t</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="730" ind1="3" ind2=" ">
+            <marc:subfield code="a">Work Title</marc:subfield>
+            <marc:subfield code="d">730 $d</marc:subfield>
+            <marc:subfield code="t">Film adaptation</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="800" ind1="1" ind2=" ">
+            <marc:subfield code="a">Mansfield, Katherine,</marc:subfield>
+            <marc:subfield code="d">800 $d before $t</marc:subfield>
+            <marc:subfield code="t">Works.</marc:subfield>
+            <marc:subfield code="d">800 $d after $t</marc:subfield>
+            <marc:subfield code="v">v. 3.</marc:subfield>
         </marc:datafield>
         
         <marc:datafield tag="810" ind1="1" ind2=" ">
             <marc:subfield code="a">United States.</marc:subfield>
             <marc:subfield code="b">Army Map Service.</marc:subfield>
-            <marc:subfield code="d">d before t</marc:subfield>
+            <marc:subfield code="d">810 $d before $t</marc:subfield>
             <marc:subfield code="t">A.M.S.,</marc:subfield>
-            <marc:subfield code="d">d after t</marc:subfield>
+            <marc:subfield code="d">810 $d after $t</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="811" ind1="2" ind2=" ">
+            <marc:subfield code="a">Comparative Drama Conference.</marc:subfield>
+            <marc:subfield code="d">811 $d before $t</marc:subfield>
+            <marc:subfield code="t">Comparative Drama Conference series</marc:subfield>
+            <marc:subfield code="d">811 $d after $t</marc:subfield>
+            <marc:subfield code="v">5.</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="830" ind1="0" ind2=" ">
+            <marc:subfield code="a">Europäische Hochschulschriften.</marc:subfield>
+            <marc:subfield code="d">830 $d</marc:subfield>
+            <marc:subfield code="n">Reihe XIV,</marc:subfield>
+            <marc:subfield code="p">Angelsächsische Sprache und Literatur ;</marc:subfield>
+            <marc:subfield code="v">Bd. 397.</marc:subfield>
         </marc:datafield>
     </marc:record>
     

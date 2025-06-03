@@ -31,6 +31,7 @@
         <xsl:call-template name="FX30-xx-anp"/>
         <!-- attributes -->
         <xsl:call-template name="FXXX-xx-l-wor"/>
+        <xsl:call-template name="FXXX-xx-m-wor"/>
     </xsl:template> 
     
     <xsl:template match="marc:datafield[@tag = '240'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '240']"
@@ -45,7 +46,12 @@
     
     <xsl:template match="marc:datafield[@tag = '240'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '240']"
         mode="exp">
-        <xsl:call-template name="FXXX-xx-l-exp"/>
+        <xsl:call-template name="F130F240-xx-f-exp"/>
+        <xsl:call-template name="F130F240-xx-l-exp"/>
+        <xsl:call-template name="F130F240-xx-m-exp"/>
+        <xsl:call-template name="F130F240-xx-o-exp"/>
+        <xsl:call-template name="F130F240-xx-r-exp"/>
+        <xsl:call-template name="F130F240-xx-s-exp"/>
     </xsl:template> 
     
     <xsl:template match="marc:datafield[@tag = '245'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '245']" mode="wor augWor" >

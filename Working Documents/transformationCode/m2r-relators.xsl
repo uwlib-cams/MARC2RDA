@@ -1357,32 +1357,6 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="FXXX-xx-tnp">
-        <xsl:if test="marc:subfield[@code = 't'] or marc:subfield[@code = 'n'] or marc:subfield[@code = 'p']">
-            <xsl:variable name="title">
-                <xsl:value-of select="marc:subfield[@code = 't'] | marc:subfield[@code = 'n'] | marc:subfield[@code = 'p']"/>
-            </xsl:variable>
-            <rdawd:P10088>
-                <xsl:value-of select="uwf:stripEndPunctuation($title)"/>
-            </rdawd:P10088>
-        </xsl:if>
-    </xsl:template>
-    
-    <xsl:template name="FXXX-xx-n">
-        <xsl:for-each select="marc:subfield[@code = 'n']">
-            <xsl:if test="contains(., 'op.') or contains(., 'opp.')">
-                <rdawd:P10333>
-                    <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
-                </rdawd:P10333>
-            </xsl:if>
-            <xsl:if test="matches(., '\([12]\d\d\d\)')">
-                <rdawd:P10219>
-                    <xsl:value-of select="translate(., '()', '')"/>
-                </rdawd:P10219>
-            </xsl:if>
-        </xsl:for-each>
-    </xsl:template>
-   
     <xsl:template name="FX1X-xx-n">
         <xsl:if test="not(marc:subfield[@code = 't']) or not(marc:subfield[@code = 'n']/preceding-sibling::marc:subfield[@code = 't'])">
             <xsl:for-each select="marc:subfield[@code = 'n']">
@@ -1393,13 +1367,7 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template name="FXXX-xx-x">
-        <xsl:for-each select="marc:subfield[@code = 'x']">
-            <rdawd:P10366>
-                <xsl:value-of select="."/>
-            </rdawd:P10366>
-        </xsl:for-each>
-    </xsl:template>
+    <!-- Work attributes -->
     
     <xsl:template name="FX30-xx-anp">
         <xsl:variable name="title">
@@ -1408,6 +1376,17 @@
         <rdawd:P10088>
             <xsl:value-of select="uwf:stripEndPunctuation($title)"/>
         </rdawd:P10088>
+    </xsl:template>
+    
+    <xsl:template name="FXXX-xx-tnp">
+        <xsl:if test="marc:subfield[@code = 't'] or marc:subfield[@code = 'n'] or marc:subfield[@code = 'p']">
+            <xsl:variable name="title">
+                <xsl:value-of select="marc:subfield[@code = 't'] | marc:subfield[@code = 'n'] | marc:subfield[@code = 'p']"/>
+            </xsl:variable>
+            <rdawd:P10088>
+                <xsl:value-of select="uwf:stripEndPunctuation($title)"/>
+            </rdawd:P10088>
+        </xsl:if>
     </xsl:template>
     
     <xsl:template name="FX30-xx-d">
@@ -1428,14 +1407,6 @@
         </xsl:for-each>
     </xsl:template>
     
-    <xsl:template name="FXXX-xx-r">
-        <xsl:for-each select="marc:subfield[@code = 'r']">
-            <rdawd:P10221>
-                <xsl:value-of select="."/>
-            </rdawd:P10221>
-        </xsl:for-each>
-    </xsl:template>
-    
     <xsl:template name="FXXX-xx-l-wor">
         <xsl:for-each select="marc:subfield[@code = 'l']">
             <rdawd:P10353>
@@ -1444,11 +1415,97 @@
         </xsl:for-each>
     </xsl:template>
     
-    <xsl:template name="FXXX-xx-l-exp">
+    <xsl:template name="FXXX-xx-m-wor">
+        <xsl:for-each select="marc:subfield[@code = 'm']">
+            <rdawd:P10220>
+                <xsl:value-of select="."/>
+            </rdawd:P10220>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template name="FXXX-xx-n">
+        <xsl:for-each select="marc:subfield[@code = 'n']">
+            <xsl:if test="contains(., 'op.') or contains(., 'opp.')">
+                <rdawd:P10333>
+                    <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
+                </rdawd:P10333>
+            </xsl:if>
+            <xsl:if test="matches(., '\([12]\d\d\d\)')">
+                <rdawd:P10219>
+                    <xsl:value-of select="translate(., '()', '')"/>
+                </rdawd:P10219>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template name="FXXX-xx-x">
+        <xsl:for-each select="marc:subfield[@code = 'x']">
+            <rdawd:P10366>
+                <xsl:value-of select="."/>
+            </rdawd:P10366>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template name="FXXX-xx-r">
+        <xsl:for-each select="marc:subfield[@code = 'r']">
+            <rdawd:P10221>
+                <xsl:value-of select="."/>
+            </rdawd:P10221>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <!-- 130/240 expression attribute templates -->
+    
+    <xsl:template name="F130F240-xx-f-exp">
+        <xsl:for-each select="marc:subfield[@code = 'f']">
+            <xsl:if test="not(matches(., '\([1-2][0-9][0-9][0-9]\)'))">
+                <rdaed:P20214>
+                    <xsl:value-of select="."/>
+                </rdaed:P20214>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template name="F130F240-xx-l-exp">
         <xsl:for-each select="marc:subfield[@code = 'l']">
             <rdaed:P20006>
                 <xsl:value-of select="."/>
             </rdaed:P20006>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template name="F130F240-xx-m-exp">
+        <xsl:for-each select="marc:subfield[@code = 'm']">
+            <rdaed:P20215>
+                <xsl:value-of select="."/>
+            </rdaed:P20215>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template name="F130F240-xx-o-exp">
+        <xsl:for-each select="marc:subfield[@code = 'o']">
+            <xsl:if test="matches(lower-case(normalize-space(.)), 'arr.') or matches(lower-case(normalize-space(.)), 'arranged')">
+                <rdaed:P20331>
+                    <xsl:text>Arrangement</xsl:text>
+                </rdaed:P20331>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
+    
+    
+    <xsl:template name="F130F240-xx-r-exp">
+        <xsl:for-each select="marc:subfield[@code = 'r']">
+            <rdaed:P20326>
+                <xsl:value-of select="."/>
+            </rdaed:P20326>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template name="F130F240-xx-s-exp">
+        <xsl:for-each select="marc:subfield[@code = 's']">
+            <rdaed:P20572>
+                <xsl:value-of select="."/>
+            </rdaed:P20572>
         </xsl:for-each>
     </xsl:template>
     
