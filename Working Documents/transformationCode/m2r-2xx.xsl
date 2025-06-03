@@ -38,6 +38,7 @@
         <!-- attribute subfields -->
         <xsl:call-template name="FX30-xx-d"/>
         <xsl:call-template name="FXXX-xx-n"/>
+        <xsl:call-template name="FXXX-xx-r"/>
     </xsl:template> 
     
     <xsl:template match="marc:datafield[@tag = '245'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '245']" mode="wor augWor" >
