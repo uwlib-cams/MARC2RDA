@@ -476,8 +476,9 @@
         <xsl:param name="baseID"/>
         <xsl:variable name="tagType" select="uwf:tagType(.)"/>
         <xsl:variable name="source" select="uwf:getSubjectSchemeCode(.)"/>
+        <xsl:variable name="relWorkIRI" select="uwf:relWorkIRI($BASE, .)"/>
         <!-- rdf:Description for related work when $t is present in 600, 610, 611 + 880s -->
-        <rdf:Description rdf:about="{uwf:relWorkIRI($baseID, .)}">
+        <rdf:Description rdf:about="{$relWorkIRI}">
             <!--<xsl:call-template name="getmarc"/>-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
             <xsl:choose>
@@ -502,6 +503,13 @@
                             <rdawd:P10328>
                                 <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
                             </rdawd:P10328>
+                            <!-- If we minted the IRI - add additional details -->
+                            <xsl:if test="starts-with($relWorkIRI, $BASE)">
+                                <xsl:call-template name="FXXX-xx-tnp"/>
+                                <xsl:call-template name="FXXX-xx-d"/>
+                                <xsl:call-template name="FXXX-xx-n"/>
+                                <xsl:call-template name="FXXX-xx-r"/>
+                            </xsl:if>
                         </xsl:for-each>
                     </xsl:if>
                 </xsl:otherwise>
@@ -525,8 +533,11 @@
                 <xsl:copy-of select="uwf:workIdentifiers(.)"/>
             </xsl:if>
             <!-- If we minted the IRI - add additional details -->
-            <xsl:if test="starts-with(uwf:agentIRI($baseID, .), $BASE)">
+            <xsl:if test="starts-with($relWorkIRI, $BASE)">
                 <xsl:call-template name="FXXX-xx-tnp"/>
+                <xsl:call-template name="FXXX-xx-d"/>
+                <xsl:call-template name="FXXX-xx-n"/>
+                <xsl:call-template name="FXXX-xx-r"/>
             </xsl:if>
         </rdf:Description>
     </xsl:template>
@@ -750,6 +761,9 @@
                             <!-- If we minted the IRI - add additional details from 880 as well -->
                             <xsl:if test="starts-with($relWorkIRI, $BASE)">
                                 <xsl:call-template name="FX30-xx-anp"/>
+                                <xsl:call-template name="FX30-xx-d"/>
+                                <xsl:call-template name="FXXX-xx-n"/>
+                                <xsl:call-template name="FXXX-xx-r"/>
                             </xsl:if>
                         </xsl:for-each>
                     </xsl:if>
@@ -763,6 +777,9 @@
             <!-- If we minted the IRI - add additional details -->
             <xsl:if test="starts-with($relWorkIRI, $BASE)">
                 <xsl:call-template name="FX30-xx-anp"/>
+                <xsl:call-template name="FX30-xx-d"/>
+                <xsl:call-template name="FXXX-xx-n"/>
+                <xsl:call-template name="FXXX-xx-r"/>
             </xsl:if>
         </rdf:Description>
     </xsl:template>
