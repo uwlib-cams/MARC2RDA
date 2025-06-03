@@ -331,7 +331,6 @@
                                                 <xsl:call-template name="FX00-2x-a"/>
                                                 <xsl:call-template name="FX00-0x-ab"/>
                                                 <xsl:call-template name="FX00-3x-a"/>
-                                                <xsl:call-template name="FX00-0x-a"/>
                                                 <xsl:call-template name="FX00-xx-d"/>
                                                 <xsl:call-template name="FX00-xx-q"/>
                                                 <xsl:call-template name="FX00-xx-u"/>
@@ -346,7 +345,6 @@
                                 <xsl:call-template name="FX00-2x-a"/>
                                 <xsl:call-template name="FX00-0x-ab"/>
                                 <xsl:call-template name="FX00-3x-a"/>
-                                <xsl:call-template name="FX00-0x-a"/>
                                 <xsl:call-template name="FX00-xx-d"/>
                                 <xsl:call-template name="FX00-xx-q"/>
                                 <xsl:call-template name="FX00-xx-u"/>
