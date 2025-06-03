@@ -184,6 +184,17 @@
         </marc:datafield>
     </marc:record>
     
+    <!-- Use Case: 110 $a and repeated $b -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-uc2a</marc:controlfield>
+        <marc:datafield tag="110" ind1="2" ind2=" ">
+            <marc:subfield code="a">United Nations.</marc:subfield>
+            <marc:subfield code="b">Department of Economic and Social Affairs.</marc:subfield>
+            <marc:subfield code="b">Division Alpha.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
     <!-- Use Case: 111 $a (no $e) -->
     <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
@@ -200,6 +211,17 @@
         <marc:datafield tag="111" ind1="2" ind2=" ">
             <marc:subfield code="a">IEEE Symposium on Security and Privacy.</marc:subfield>
             <marc:subfield code="e">Technical Committee on Security and Privacy.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- Use Case: 111 $a and repeated $e -->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">relator-uc4</marc:controlfield>
+        <marc:datafield tag="111" ind1="2" ind2=" ">
+            <marc:subfield code="a">IEEE Symposium on Security and Privacy.</marc:subfield>
+            <marc:subfield code="e">Technical Committee on Security and Privacy.</marc:subfield>
+            <marc:subfield code="e">Sub-Committee A.</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -285,6 +307,11 @@
         <marc:controlfield tag="001">relator-uc13</marc:controlfield>
         <marc:datafield tag="810" ind1="2" ind2=" ">
             <marc:subfield code="a">Canadian Broadcasting Corporation.</marc:subfield>
+            <marc:subfield code="n">(11th :</marc:subfield>
+            <marc:subfield code="d">1978 :</marc:subfield>
+            <marc:subfield code="c">Rio de Janeiro, Brazil).</marc:subfield>
+            <marc:subfield code="t">Nutrition and food science ;</marc:subfield>
+            <marc:subfield code="v">v. 1.</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -295,6 +322,11 @@
         <marc:datafield tag="810" ind1="2" ind2=" ">
             <marc:subfield code="a">U.S. Department of Agriculture.</marc:subfield>
             <marc:subfield code="b">Forest Service.</marc:subfield>
+            <marc:subfield code="n">(11th :</marc:subfield>
+            <marc:subfield code="d">1978 :</marc:subfield>
+            <marc:subfield code="c">Rio de Janeiro, Brazil).</marc:subfield>
+            <marc:subfield code="t">Nutrition and food science ;</marc:subfield>
+            <marc:subfield code="v">v. 1.</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -304,6 +336,11 @@
         <marc:controlfield tag="001">relator-uc15</marc:controlfield>
         <marc:datafield tag="811" ind1="2" ind2=" ">
             <marc:subfield code="a">Symposium on Artificial Intelligence in Education.</marc:subfield>
+            <marc:subfield code="n">(11th :</marc:subfield>
+            <marc:subfield code="d">1978 :</marc:subfield>
+            <marc:subfield code="c">Rio de Janeiro, Brazil).</marc:subfield>
+            <marc:subfield code="t">Nutrition and food science ;</marc:subfield>
+            <marc:subfield code="v">v. 1.</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -314,6 +351,11 @@
         <marc:datafield tag="811" ind1="2" ind2=" ">
             <marc:subfield code="a">UNESCO International Literacy Meeting.</marc:subfield>
             <marc:subfield code="e">Education Sector.</marc:subfield>
+            <marc:subfield code="n">(11th :</marc:subfield>
+            <marc:subfield code="d">1978 :</marc:subfield>
+            <marc:subfield code="c">Rio de Janeiro, Brazil).</marc:subfield>
+            <marc:subfield code="t">Nutrition and food science ;</marc:subfield>
+            <marc:subfield code="v">v. 1.</marc:subfield>
         </marc:datafield>
     </marc:record>
     

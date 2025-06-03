@@ -1,0 +1,1549 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-test0">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-test0</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-test0</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-test0"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-test0">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test0"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-test0</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-test0
+F100 0# $a H. D. $q (Hilda Doolittle), $d 1886-1961
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test0"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#hdhildadoolittle1886-1961-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#hdhildadoolittle1886-1961"/><!--rdawo:P10312 = has related person of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test0"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test0"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#hdhildadoolittle1886-1961">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>H. D. (Hilda Doolittle), 1886-1961</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>H. D.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1886</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1961</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+      <rdaad:P50115>Hilda Doolittle</rdaad:P50115><!--rdaad:P50115 = has fuller form of name-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-test1">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-test1</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-test1</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-test1"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-test1">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test1"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-test1</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-test1
+F100 1# $a Gresham, G. A. $q (Geoffrey Austin)
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test1"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#greshamgageoffreyaustin-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#greshamgageoffreyaustin"/><!--rdawo:P10312 = has related person of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test1"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test1"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#greshamgageoffreyaustin">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Gresham, G. A. (Geoffrey Austin)</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Gresham, G. A.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50115>Geoffrey Austin</rdaad:P50115><!--rdaad:P50115 = has fuller form of name-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-test2">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-test2</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-test2</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-test2"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-test2">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test2"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-test2</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-test2
+F100 1# $a Churchill, Winston, $c Sir, $d 1874-1965.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test2"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#churchillwinstonsir1874-1965-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#churchillwinstonsir1874-1965"/><!--rdawo:P10312 = has related person of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test2"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test2"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#churchillwinstonsir1874-1965">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Churchill, Winston, Sir, 1874-1965</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Churchill, Winston</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1874</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1965</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-test3">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-test3</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-test3</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-test3"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-test3">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test3"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-test3</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-test3
+F100 1# $a Ward, Humphrey, $c Mrs., $d 1851-1920.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test3"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#wardhumphreymrs1851-1920-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#wardhumphreymrs1851-1920"/><!--rdawo:P10312 = has related person of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test3"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test3"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#wardhumphreymrs1851-1920">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Ward, Humphrey, Mrs., 1851-1920</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Ward, Humphrey</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1851</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1920</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-test4">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-test4</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-test4</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-test4"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-test4">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test4"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-test4</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-test4
+F100 1# $a Boulanger, John, $d 1965-
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test4"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#boulangerjohn1965- -->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#boulangerjohn1965-"/><!--rdawo:P10312 = has related person of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test4"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test4"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#boulangerjohn1965-">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Boulanger, John, 1965-</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Boulanger, John</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1965</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-test5">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-test5</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-test5</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-test5"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-test5">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test5"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-test5</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-test5
+F100 1# $a Luckombe, Philip $d d. 1803
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test5"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#luckombephilipd1803-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#luckombephilipd1803"/><!--rdawo:P10312 = has related person of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test5"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test5"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#luckombephilipd1803">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Luckombe, Philip d. 1803</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Luckombe, Philip</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50120>1803</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-test6">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-test6</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-test6</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-test6"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-test6">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test6"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-test6</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-test6
+F100 0# $a Piri, Reis $d d. 1554?
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test6"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#pirireisd1554%3F-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#pirireisd1554%3F"/><!--rdawo:P10312 = has related person of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test6"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test6"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#pirireisd1554%3F">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Piri, Reis d. 1554?</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Piri, Reis</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50120>1554?</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-test7">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-test7</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-test7</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-test7"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-test7">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test7"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-test7</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-test7
+F100 1# $a Smith, John $d 1882 Aug. 5-
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test7"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#smithjohn1882aug5- -->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#smithjohn1882aug5-"/><!--rdawo:P10312 = has related person of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test7"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test7"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#smithjohn1882aug5-">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Smith, John 1882 Aug. 5-</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Smith, John</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1882 Aug. 5</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-test8">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-test8</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-test8</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-test8"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-test8">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test8"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-test8</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-test8
+F111 2# $a International Conference on Pipelines and Trenchless Technology $d (2014 : $c Xiamen, Xiamen Shi, China)
+F711 2# $a Israel Seminar on Geometrical Aspects of Functional Analysis $d (2011-2013)
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test8"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#internationalconferenceonpipelinesandtrenchlesstechnology2014xiamenxiamenshichina-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#internationalconferenceonpipelinesandtrenchlesstechnology2014xiamenxiamenshichina"/><!--rdawo:P10314 = has related corporate body of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test8"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test8"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#israelseminarongeometricalaspectsoffunctionalanalysis2011-2013-->
+      <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/age#israelseminarongeometricalaspectsoffunctionalanalysis2011-2013"/><!--rdamo:P30270 = has related corporate body of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#internationalconferenceonpipelinesandtrenchlesstechnology2014xiamenxiamenshichina">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>International Conference on Pipelines and Trenchless Technology (2014 : Xiamen, Xiamen Shi, China)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
+      <rdaad:P50024>Xiamen, Xiamen Shi, China</rdaad:P50024><!--rdaad:P50024 = has place of conference-->
+      <rdaad:P50039>2014</rdaad:P50039><!--rdaad:P50039 = has date of conference-->
+      <rdaad:P50032>International Conference on Pipelines and Trenchless Technology</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#israelseminarongeometricalaspectsoffunctionalanalysis2011-2013">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Israel Seminar on Geometrical Aspects of Functional Analysis (2011-2013)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
+      <rdaad:P50039>2011-2013</rdaad:P50039><!--rdaad:P50039 = has date of conference-->
+      <rdaad:P50032>Israel Seminar on Geometrical Aspects of Functional Analysis</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-test9">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-test9</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-test9</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-test9"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-test9">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test9"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-test9</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-test9
+F111 2# $a International Conference on Rewriting Techniques and Applications $n (17th : $d 2006 : $c Seattle, Wash.)
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test9"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#internationalconferenceonrewritingtechniquesandapplications17th2006seattlewash-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#internationalconferenceonrewritingtechniquesandapplications17th2006seattlewash"/><!--rdawo:P10314 = has related corporate body of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test9"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test9"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#internationalconferenceonrewritingtechniquesandapplications17th2006seattlewash">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>International Conference on Rewriting Techniques and Applications (17th : 2006 : Seattle, Wash.)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
+      <rdaad:P50024>Seattle, Wash.</rdaad:P50024><!--rdaad:P50024 = has place of conference-->
+      <rdaad:P50019>(17th :</rdaad:P50019><!--rdaad:P50019 = has number of conference-->
+      <rdaad:P50039>2006</rdaad:P50039><!--rdaad:P50039 = has date of conference-->
+      <rdaad:P50032>International Conference on Rewriting Techniques and Applications</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-test9">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-test9</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-test9</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-test9"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-test9">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test9"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-test9</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-test9
+F610 1# $a United States $t Food and Drugs Act
+F700 1# $a Barber, Samuel, $d 1910-1981. $t Sonatas, $m violin, piano. $p Allegro agitato $n (No. 3)
+F700 1# $a Barber, Samuel, $d 1910-1981. $t Canzonetta, $m oboe, string orchestra, $n op. 48; $o arranged.
+F700 1# $a Schulz, Bruno, $d 1892-1942. $t Sklepy cynamonowe. $l English.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test9"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake//wor#unitedstatesfoodanddrugsact"/><!--rdawo:P10257 = has subject work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test9"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test9"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor#barbersamuel1910-1981sonatasviolinpianoallegroagitatono3"/><!--rdamo:P30265 = has related work of manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor#barbersamuel1910-1981canzonettaoboestringorchestraop48arranged"/><!--rdamo:P30265 = has related work of manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor#schulzbruno1892-1942sklepycynamonoweenglish"/><!--rdamo:P30265 = has related work of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake//age#unitedstates">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>United States</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50032>United States</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#barbersamuel1910-1981">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Barber, Samuel, 1910-1981</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Barber, Samuel</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1910</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1981</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#barbersamuel1910-1981">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Barber, Samuel, 1910-1981</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Barber, Samuel</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1910</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1981</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#schulzbruno1892-1942">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Schulz, Bruno, 1892-1942</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Schulz, Bruno</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1892</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1942</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake//wor#unitedstatesfoodanddrugsact">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10328>United States Food and Drugs Act</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake//age#unitedstates"/><!--rdawo:P10314 = has related corporate body of work-->
+      <rdawd:P10088>Food and Drugs Act</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#barbersamuel1910-1981sonatasviolinpianoallegroagitatono3">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d25e118wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Barber, Samuel, 1910-1981. Sonatas, violin, piano. Allegro agitato (No. 3)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#barbersamuel1910-1981"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>Sonatas, Allegro agitato (No. 3)</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#barbersamuel1910-1981canzonettaoboestringorchestraop48arranged">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d25e131wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Barber, Samuel, 1910-1981. Canzonetta, oboe, string orchestra, op. 48; arranged</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#barbersamuel1910-1981"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>Canzonetta, op. 48;</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawd:P10333>op. 48;</rdawd:P10333><!--rdawd:P10333 = has opus number-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#schulzbruno1892-1942sklepycynamonoweenglish">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d25e144wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Schulz, Bruno, 1892-1942. Sklepy cynamonowe. English</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#schulzbruno1892-1942"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>Sklepy cynamonowe</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-test9">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-test9</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-test9</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-test9"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-test9">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test9"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-test9</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-test9
+F100 1# $a Bao, Rong, $d jin shi 809
+F700 1# $a Chen, Denlong, $d ju ren 1774
+F700 0# $a Aaron, $c of zhitomir, $d -approximately 1817
+F700 1# $a Aaron, W.F., $d active approximately 1860
+F700 1# $a Abate, Nicolò dell', $d approximately 1509-1571
+F700 0# $a ʻAbbās ibn ʻAbd al-Muṭṭalib, $d approximately 566-approximately 653
+F700 0# $a ʻAbd al-ʻAzīz Muḥammad, $d 1866 or 1867-approximately 1948
+F700 0# $a Achilles Painter, $d active approximately 450 B.C.-425 B.C.
+F700 0# $a Dmitriev, Nikolaĭ Ivanovich, $d 1880-not before 1946
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test9"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#baorongjinshi809-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#baorongjinshi809"/><!--rdawo:P10312 = has related person of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test9"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test9"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#chendenlongjuren1774-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age#chendenlongjuren1774"/><!--rdamo:P30268 = has related person of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#aaronofzhitomir-approximately1817-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age#aaronofzhitomir-approximately1817"/><!--rdamo:P30268 = has related person of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#aaronwfactiveapproximately1860-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age#aaronwfactiveapproximately1860"/><!--rdamo:P30268 = has related person of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#abatenicolo%CC%80dell%27approximately1509-1571-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age#abatenicolo%CC%80dell%27approximately1509-1571"/><!--rdamo:P30268 = has related person of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#%CA%BBabba%CC%84sibn%CA%BBabdal-mut%CC%A3t%CC%A3alibapproximately566-approximately653-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age#%CA%BBabba%CC%84sibn%CA%BBabdal-mut%CC%A3t%CC%A3alibapproximately566-approximately653"/><!--rdamo:P30268 = has related person of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#%CA%BBabdal-%CA%BBazi%CC%84zmuh%CC%A3ammad1866or1867-approximately1948-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age#%CA%BBabdal-%CA%BBazi%CC%84zmuh%CC%A3ammad1866or1867-approximately1948"/><!--rdamo:P30268 = has related person of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#achillespainteractiveapproximately450bc-425bc-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age#achillespainteractiveapproximately450bc-425bc"/><!--rdamo:P30268 = has related person of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#dmitrievnikolai%CC%86ivanovich1880-notbefore1946-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age#dmitrievnikolai%CC%86ivanovich1880-notbefore1946"/><!--rdamo:P30268 = has related person of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#baorongjinshi809">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Bao, Rong, jin shi 809</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Bao, Rong</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50098>809</rdaad:P50098><!--rdaad:P50098 = has period of activity of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#chendenlongjuren1774">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Chen, Denlong, ju ren 1774</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Chen, Denlong</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50098>1774</rdaad:P50098><!--rdaad:P50098 = has period of activity of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#aaronofzhitomir-approximately1817">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Aaron, of zhitomir, -approximately 1817</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Aaron</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50120>approximately 1817</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#aaronwfactiveapproximately1860">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Aaron, W.F., active approximately 1860</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Aaron, W.F.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50098>approximately 1860</rdaad:P50098><!--rdaad:P50098 = has period of activity of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#abatenicolo%CC%80dell%27approximately1509-1571">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Abate, Nicolò dell', approximately 1509-1571</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Abate, Nicolò dell'</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>approximately 1509</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1571</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#%CA%BBabba%CC%84sibn%CA%BBabdal-mut%CC%A3t%CC%A3alibapproximately566-approximately653">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>ʻAbbās ibn ʻAbd al-Muṭṭalib, approximately 566-approximately 653</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>ʻAbbās ibn ʻAbd al-Muṭṭalib</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>approximately 566</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>approximately 653</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#%CA%BBabdal-%CA%BBazi%CC%84zmuh%CC%A3ammad1866or1867-approximately1948">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>ʻAbd al-ʻAzīz Muḥammad, 1866 or 1867-approximately 1948</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>ʻAbd al-ʻAzīz Muḥammad</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1866 or 1867</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>approximately 1948</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#achillespainteractiveapproximately450bc-425bc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Achilles Painter, active approximately 450 B.C.-425 B.C</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Achilles Painter</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50098>approximately 450 B.C.-425 B.C</rdaad:P50098><!--rdaad:P50098 = has period of activity of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#dmitrievnikolai%CC%86ivanovich1880-notbefore1946">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Dmitriev, Nikolaĭ Ivanovich, 1880-not before 1946</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Dmitriev, Nikolaĭ Ivanovich</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1880</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>not before 1946</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-uc1">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-uc1</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-uc1</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-uc1"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-uc1">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc1"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-uc1</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-uc1
+F110 2# $a Open Knowledge Foundation.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc1"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#openknowledgefoundation-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#openknowledgefoundation"/><!--rdawo:P10314 = has related corporate body of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc1"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc1"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#openknowledgefoundation">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Open Knowledge Foundation</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50032>Open Knowledge Foundation</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-uc2">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-uc2</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-uc2</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-uc2"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-uc2">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc2"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-uc2</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-uc2
+F110 2# $a United Nations. $b Department of Economic and Social Affairs.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc2"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#unitednationsdepartmentofeconomicandsocialaffairs-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#unitednationsdepartmentofeconomicandsocialaffairs"/><!--rdawo:P10314 = has related corporate body of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc2"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc2"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#unitednationsdepartmentofeconomicandsocialaffairs">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>United Nations. Department of Economic and Social Affairs</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50032>United Nations. Department of Economic and Social Affairs</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-uc2a">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-uc2a</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-uc2a</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-uc2a"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-uc2a">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc2a"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-uc2a</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-uc2a
+F110 2# $a United Nations. $b Department of Economic and Social Affairs. $b Division Alpha.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc2a"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#unitednationsdepartmentofeconomicandsocialaffairsdivisionalpha-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#unitednationsdepartmentofeconomicandsocialaffairsdivisionalpha"/><!--rdawo:P10314 = has related corporate body of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc2a"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc2a"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#unitednationsdepartmentofeconomicandsocialaffairsdivisionalpha">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>United Nations. Department of Economic and Social Affairs. Division Alpha</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50032>United Nations. Department of Economic and Social Affairs. Division Alpha</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-uc3">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-uc3</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-uc3</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-uc3"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-uc3">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc3"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-uc3</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-uc3
+F111 2# $a International Congress on Medieval Studies.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc3"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#internationalcongressonmedievalstudies-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#internationalcongressonmedievalstudies"/><!--rdawo:P10314 = has related corporate body of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc3"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc3"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#internationalcongressonmedievalstudies">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>International Congress on Medieval Studies</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
+      <rdaad:P50032>International Congress on Medieval Studies</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-uc4">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-uc4</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-uc4</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-uc4"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-uc4">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc4"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-uc4</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-uc4
+F111 2# $a IEEE Symposium on Security and Privacy. $e Technical Committee on Security and Privacy.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc4"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#ieeesymposiumonsecurityandprivacytechnicalcommitteeonsecurityandprivacy-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#ieeesymposiumonsecurityandprivacytechnicalcommitteeonsecurityandprivacy"/><!--rdawo:P10314 = has related corporate body of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc4"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc4"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#ieeesymposiumonsecurityandprivacytechnicalcommitteeonsecurityandprivacy">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>IEEE Symposium on Security and Privacy. Technical Committee on Security and Privacy</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
+      <rdaad:P50032>IEEE Symposium on Security and Privacy. Technical Committee on Security and Privacy</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-uc4">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-uc4</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-uc4</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-uc4"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-uc4">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc4"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-uc4</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-uc4
+F111 2# $a IEEE Symposium on Security and Privacy. $e Technical Committee on Security and Privacy. $e Sub-Committee A.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc4"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#ieeesymposiumonsecurityandprivacytechnicalcommitteeonsecurityandprivacysub-committeea-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#ieeesymposiumonsecurityandprivacytechnicalcommitteeonsecurityandprivacysub-committeea"/><!--rdawo:P10314 = has related corporate body of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc4"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc4"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#ieeesymposiumonsecurityandprivacytechnicalcommitteeonsecurityandprivacysub-committeea">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>IEEE Symposium on Security and Privacy. Technical Committee on Security and Privacy. Sub-Committee A.</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
+      <rdaad:P50032>IEEE Symposium on Security and Privacy. Technical Committee on Security and Privacy. Sub-Committee A.</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-uc5">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-uc5</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-uc5</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-uc5"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-uc5">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc5"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-uc5</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-uc5
+F610 2# $a American Psychological Association.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc5"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10263 rdf:resource="http://marc2rda.edu/fake//age#americanpsychologicalassociation"/><!--rdawo:P10263 = has subject corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc5"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc5"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake//age#americanpsychologicalassociation">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>American Psychological Association</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50032>American Psychological Association</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-uc6">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-uc6</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-uc6</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-uc6"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-uc6">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc6"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-uc6</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-uc6
+F610 2# $a Smithsonian Institution. $b National Museum of Natural History.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc6"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10263 rdf:resource="http://marc2rda.edu/fake//age#smithsonianinstitutionnationalmuseumofnaturalhistory"/><!--rdawo:P10263 = has subject corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc6"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc6"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake//age#smithsonianinstitutionnationalmuseumofnaturalhistory">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Smithsonian Institution. National Museum of Natural History</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50032>Smithsonian Institution. National Museum of Natural History</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-uc7">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-uc7</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-uc7</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-uc7"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-uc7">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc7"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-uc7</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-uc7
+F611 2# $a International Conference on Climate Change.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc7"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10263 rdf:resource="http://marc2rda.edu/fake//age#internationalconferenceonclimatechange"/><!--rdawo:P10263 = has subject corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc7"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc7"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake//age#internationalconferenceonclimatechange">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>International Conference on Climate Change</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
+      <rdaad:P50032>International Conference on Climate Change</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-uc8">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-uc8</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-uc8</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-uc8"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-uc8">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc8"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-uc8</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-uc8
+F611 2# $a United Nations Conference on Trade and Development. $e Secretariat.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc8"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10263 rdf:resource="http://marc2rda.edu/fake//age#unitednationsconferenceontradeanddevelopmentsecretariat"/><!--rdawo:P10263 = has subject corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc8"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc8"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake//age#unitednationsconferenceontradeanddevelopmentsecretariat">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>United Nations Conference on Trade and Development. Secretariat</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
+      <rdaad:P50032>United Nations Conference on Trade and Development. Secretariat</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-uc9">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-uc9</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-uc9</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-uc9"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-uc9">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc9"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-uc9</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-uc9
+F710 2# $a Library of Congress.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc9"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc9"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc9"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#libraryofcongress-->
+      <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/age#libraryofcongress"/><!--rdamo:P30270 = has related corporate body of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#libraryofcongress">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Library of Congress</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50032>Library of Congress</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-uc10">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-uc10</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-uc10</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-uc10"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-uc10">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc10"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-uc10</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-uc10
+F710 2# $a Harvard University. $b School of Engineering and Applied Sciences.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc10"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc10"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc10"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#harvarduniversityschoolofengineeringandappliedsciences-->
+      <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/age#harvarduniversityschoolofengineeringandappliedsciences"/><!--rdamo:P30270 = has related corporate body of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#harvarduniversityschoolofengineeringandappliedsciences">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Harvard University. School of Engineering and Applied Sciences</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50032>Harvard University. School of Engineering and Applied Sciences</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-uc11">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-uc11</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-uc11</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-uc11"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-uc11">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc11"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-uc11</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-uc11
+F711 2# $a Annual Meeting of the Ecological Society of America.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc11"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc11"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc11"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#annualmeetingoftheecologicalsocietyofamerica-->
+      <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/age#annualmeetingoftheecologicalsocietyofamerica"/><!--rdamo:P30270 = has related corporate body of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#annualmeetingoftheecologicalsocietyofamerica">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Annual Meeting of the Ecological Society of America</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
+      <rdaad:P50032>Annual Meeting of the Ecological Society of America</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-uc12">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-uc12</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-uc12</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-uc12"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-uc12">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc12"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-uc12</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-uc12
+F711 2# $a World Urban Forum. $e United Nations Human Settlements Programme.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc12"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc12"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc12"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#worldurbanforumunitednationshumansettlementsprogramme-->
+      <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/age#worldurbanforumunitednationshumansettlementsprogramme"/><!--rdamo:P30270 = has related corporate body of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#worldurbanforumunitednationshumansettlementsprogramme">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>World Urban Forum. United Nations Human Settlements Programme</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
+      <rdaad:P50032>World Urban Forum. United Nations Human Settlements Programme</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-uc13">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-uc13</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-uc13</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-uc13"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-uc13">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc13"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-uc13</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-uc13
+F810 2# $a Canadian Broadcasting Corporation. $n (11th : $d 1978 : $c Rio de Janeiro, Brazil). $t Nutrition and food science ; $v v. 1.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc13"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/wor#canadianbroadcastingcorporation11th1978riodejaneirobrazilnutritionandfoodscience"/><!--rdawo:P10102 = is issue of-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc13"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc13"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#canadianbroadcastingcorporation11th1978riodejaneirobrazil">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Canadian Broadcasting Corporation. (11th : 1978 : Rio de Janeiro, Brazil)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50024>Rio de Janeiro, Brazil.</rdaad:P50024><!--rdaad:P50024 = has place of conference-->
+      <rdaad:P50019>(11th :</rdaad:P50019><!--rdaad:P50019 = has number of conference-->
+      <rdaad:P50039>1978</rdaad:P50039><!--rdaad:P50039 = has date of conference-->
+      <rdaad:P50032>Canadian Broadcasting Corporation</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#canadianbroadcastingcorporation11th1978riodejaneirobrazilnutritionandfoodscience">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Canadian Broadcasting Corporation. (11th : 1978 : Rio de Janeiro, Brazil). Nutrition and food science ;</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#canadianbroadcastingcorporation11th1978riodejaneirobrazil"/><!--rdawo:P10314 = has related corporate body of work-->
+      <rdawd:P10088>(11th : Nutrition and food science ;</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-uc14">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-uc14</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-uc14</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-uc14"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-uc14">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc14"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-uc14</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-uc14
+F810 2# $a U.S. Department of Agriculture. $b Forest Service. $n (11th : $d 1978 : $c Rio de Janeiro, Brazil). $t Nutrition and food science ; $v v. 1.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc14"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/wor#usdepartmentofagricultureforestservice11th1978riodejaneirobrazilnutritionandfoodscience"/><!--rdawo:P10102 = is issue of-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc14"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc14"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#usdepartmentofagricultureforestservice11th1978riodejaneirobrazil">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>U.S. Department of Agriculture. Forest Service. (11th : 1978 : Rio de Janeiro, Brazil)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50024>Rio de Janeiro, Brazil.</rdaad:P50024><!--rdaad:P50024 = has place of conference-->
+      <rdaad:P50019>(11th :</rdaad:P50019><!--rdaad:P50019 = has number of conference-->
+      <rdaad:P50039>1978</rdaad:P50039><!--rdaad:P50039 = has date of conference-->
+      <rdaad:P50032>U.S. Department of Agriculture. Forest Service</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#usdepartmentofagricultureforestservice11th1978riodejaneirobrazilnutritionandfoodscience">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>U.S. Department of Agriculture. Forest Service. (11th : 1978 : Rio de Janeiro, Brazil). Nutrition and food science ;</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#usdepartmentofagricultureforestservice11th1978riodejaneirobrazil"/><!--rdawo:P10314 = has related corporate body of work-->
+      <rdawd:P10088>(11th : Nutrition and food science ;</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-uc15">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-uc15</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-uc15</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-uc15"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-uc15">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc15"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-uc15</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-uc15
+F811 2# $a Symposium on Artificial Intelligence in Education. $n (11th : $d 1978 : $c Rio de Janeiro, Brazil). $t Nutrition and food science ; $v v. 1.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc15"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/wor#symposiumonartificialintelligenceineducation11th1978riodejaneirobrazilnutritionandfoodscience"/><!--rdawo:P10102 = is issue of-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc15"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc15"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#symposiumonartificialintelligenceineducation11th1978riodejaneirobrazil">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Symposium on Artificial Intelligence in Education. (11th : 1978 : Rio de Janeiro, Brazil)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
+      <rdaad:P50024>Rio de Janeiro, Brazil.</rdaad:P50024><!--rdaad:P50024 = has place of conference-->
+      <rdaad:P50019>(11th :</rdaad:P50019><!--rdaad:P50019 = has number of conference-->
+      <rdaad:P50039>1978</rdaad:P50039><!--rdaad:P50039 = has date of conference-->
+      <rdaad:P50032>Symposium on Artificial Intelligence in Education</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#symposiumonartificialintelligenceineducation11th1978riodejaneirobrazilnutritionandfoodscience">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>Symposium on Artificial Intelligence in Education. (11th : 1978 : Rio de Janeiro, Brazil). Nutrition and food science ;</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#symposiumonartificialintelligenceineducation11th1978riodejaneirobrazil"/><!--rdawo:P10314 = has related corporate body of work-->
+      <rdawd:P10088>(11th : Nutrition and food science ;</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-uc16">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>relator-uc16</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-uc16</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-uc16"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-uc16">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc16"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-uc16</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 relator-uc16
+F811 2# $a UNESCO International Literacy Meeting. $e Education Sector. $n (11th : $d 1978 : $c Rio de Janeiro, Brazil). $t Nutrition and food science ; $v v. 1.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc16"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/wor#unescointernationalliteracymeeting11th1978riodejaneirobrazilnutritionandfoodscience"/><!--rdawo:P10102 = is issue of-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc16"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-uc16"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#unescointernationalliteracymeetingeducationsector11th1978riodejaneirobrazil">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>UNESCO International Literacy Meeting. Education Sector. (11th : 1978 : Rio de Janeiro, Brazil)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
+      <rdaad:P50024>Rio de Janeiro, Brazil.</rdaad:P50024><!--rdaad:P50024 = has place of conference-->
+      <rdaad:P50019>(11th :</rdaad:P50019><!--rdaad:P50019 = has number of conference-->
+      <rdaad:P50039>1978</rdaad:P50039><!--rdaad:P50039 = has date of conference-->
+      <rdaad:P50032>UNESCO International Literacy Meeting. Education Sector</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#unescointernationalliteracymeeting11th1978riodejaneirobrazilnutritionandfoodscience">
+      <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+      <rdawd:P10328>UNESCO International Literacy Meeting. (11th : 1978 : Rio de Janeiro, Brazil). Nutrition and food science ;</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#unescointernationalliteracymeetingeducationsector11th1978riodejaneirobrazil"/><!--rdawo:P10314 = has related corporate body of work-->
+      <rdawd:P10088>(11th : Nutrition and food science ;</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+</rdf:RDF>

@@ -432,9 +432,8 @@
                                         <xsl:call-template name="FX1X-xx-n"/>
                                         <xsl:call-template name="FX1X-xx-d"/>
                                         <xsl:call-template name="FX1X-xx-u"/>
-                                        <xsl:call-template name="FX1X-xx-a"/>
-                                        <xsl:call-template name="FX10-xx-ab"/>
-                                        <xsl:call-template name="FX11-xx-ae"/>
+                                        <xsl:if test="@tag = '610'"><xsl:call-template name="FX10-xx-ab"/></xsl:if>
+                                        <xsl:if test="@tag = '611'"><xsl:call-template name="FX11-xx-ae"/></xsl:if>
                                     </xsl:if>
                                 </xsl:for-each>
                             </xsl:if>
@@ -452,9 +451,8 @@
                         <xsl:call-template name="FX1X-xx-n"/>
                         <xsl:call-template name="FX1X-xx-d"/>
                         <xsl:call-template name="FX1X-xx-u"/>
-                        <xsl:call-template name="FX1X-xx-a"/>
-                        <xsl:call-template name="FX10-xx-ab"/>
-                        <xsl:call-template name="FX11-xx-ae"/>
+                        <xsl:if test="@tag = '610'"><xsl:call-template name="FX10-xx-ab"/></xsl:if>
+                        <xsl:if test="@tag = '611'"><xsl:call-template name="FX11-xx-ae"/></xsl:if>
                     </xsl:if>
                 </xsl:when>
             </xsl:choose>
@@ -928,7 +926,7 @@
             </xsl:for-each>
         </xsl:if>
         <xsl:if test="marc:subfield[@code = 'a']">
-            <rdawo:P10322 rdf:resource="{uwf:timespanIRI($baseID, ., marc:subfield[@code = 'a'])}"/>
+            <rdawo:P10322 rdf:resource="{uwf:timespanIRI($baseID, ., marc:subfield[@code = 'a'][1])}"/>
         </xsl:if>
     </xsl:template>
     
@@ -968,13 +966,13 @@
         <xsl:param name="baseID"/>
         <xsl:variable name="scheme" select="uwf:getSubjectSchemeCode(.)"/>
         <xsl:if test="marc:subfield[@code = 'a']">
-            <rdf:Description rdf:about="{uwf:timespanIRI($baseID, ., marc:subfield[@code = 'a'])}">
+            <rdf:Description rdf:about="{uwf:timespanIRI($baseID, ., marc:subfield[@code = 'a'][1])}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
                 <xsl:choose>
                     <xsl:when test="matches(@ind2, '[012356]') or marc:subfield[@code = '2']">
                         <xsl:choose>
                             <xsl:when test="uwf:s2EntityTest(uwf:getSubjectSchemeCode(.), 'timespan') = 'True'">
-                                <rdato:P70047 rdf:resource="{uwf:nomenIRI($baseID, ., marc:subfield[@code = 'a'], uwf:getSubjectSchemeCode(.), 'timespan')}"/>
+                                <rdato:P70047 rdf:resource="{uwf:nomenIRI($baseID, ., marc:subfield[@code = 'a'][1], uwf:getSubjectSchemeCode(.), 'timespan')}"/>
                             </xsl:when>
                             <xsl:otherwise>
                                 <rdato:P70015 rdf:resource="{uwf:nomenIRI($baseID, ., '', '', 'timespan')}"/>
@@ -983,14 +981,14 @@
                     </xsl:when>
                     <xsl:otherwise>
                         <rdatd:P70015>
-                            <xsl:value-of select="uwf:stripEndPunctuation(marc:subfield[@code = 'a']) => replace(' -', '-') => replace('- ', '-')"/>
+                            <xsl:value-of select="uwf:stripEndPunctuation(marc:subfield[@code = 'a'][1]) => replace(' -', '-') => replace('- ', '-')"/>
                         </rdatd:P70015>
                         <xsl:if test="@tag = '648' and @ind2 = '4' and marc:subfield[@code = '6']">
                             <xsl:variable name="occNum" select="concat('648-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                             <xsl:for-each
                                 select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
                                 <rdatd:P70015>
-                                    <xsl:value-of select="uwf:stripEndPunctuation(marc:subfield[@code = 'a']) => replace(' -', '-') => replace('- ', '-')"/>
+                                    <xsl:value-of select="uwf:stripEndPunctuation(marc:subfield[@code = 'a'][1]) => replace(' -', '-') => replace('- ', '-')"/>
                                 </rdatd:P70015>
                             </xsl:for-each>
                         </xsl:if>
@@ -1017,7 +1015,7 @@
             <xsl:variable name="nomenIRI">
                 <xsl:choose>
                     <xsl:when test="uwf:s2EntityTest($source, 'timespan') = 'True'">
-                        <xsl:value-of select="uwf:nomenIRI($baseID, ., marc:subfield[@code = 'a'], $source, 'timespan')"/>
+                        <xsl:value-of select="uwf:nomenIRI($baseID, ., marc:subfield[@code = 'a'][1], $source, 'timespan')"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:value-of select="uwf:nomenIRI($baseID, ., '', '', 'timespan')"/>
@@ -1027,13 +1025,13 @@
             <rdf:Description rdf:about="{$nomenIRI}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
-                    <xsl:value-of select="uwf:stripEndPunctuation(marc:subfield[@code = 'a']) => replace(' -', '-') => replace('- ', '-')"/>
+                    <xsl:value-of select="uwf:stripEndPunctuation(marc:subfield[@code = 'a'][1]) => replace(' -', '-') => replace('- ', '-')"/>
                 </rdand:P80068>
                 <xsl:if test="@tag = '648' and marc:subfield[@code = '6']">
                     <xsl:variable name="occNum" select="concat('648-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                     <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
                         <rdand:P80113>
-                            <xsl:value-of select="uwf:stripEndPunctuation(marc:subfield[@code = 'a']) => replace(' -', '-') => replace('- ', '-')"/>
+                            <xsl:value-of select="uwf:stripEndPunctuation(marc:subfield[@code = 'a'][1]) => replace(' -', '-') => replace('- ', '-')"/>
                         </rdand:P80113>
                     </xsl:for-each>
                 </xsl:if>
@@ -1589,7 +1587,7 @@
                 </xsl:for-each>
             </xsl:if>
             <xsl:if test="marc:subfield[@code = '2']">
-                <xsl:text> (Source: {marc:subfield[@code = '2']})</xsl:text>
+                <xsl:text> (Source: {marc:subfield[@code = '2'][1]})</xsl:text>
             </xsl:if>
             <xsl:if test="marc:subfield[@code = '3']">
                 <xsl:text> (Applies to: {marc:subfield[@code = '3']})</xsl:text>
@@ -1646,7 +1644,7 @@
         <xsl:variable name="prefLabel">
             <xsl:call-template name="F662-label"/>
         </xsl:variable>
-        <rdawo:P10321 rdf:resource="{uwf:placeIRI($baseID, ., $prefLabel, marc:subfield[@code = '2'])}"/>
+        <rdawo:P10321 rdf:resource="{uwf:placeIRI($baseID, ., $prefLabel, marc:subfield[@code = '2'][1])}"/>
     </xsl:template>
     <xsl:template match="marc:datafield[@tag = '662'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '662-00']"
         mode="pla">
@@ -1721,7 +1719,7 @@
                         </rdand:P80113>
                     </xsl:for-each>
                 </xsl:if>
-                <xsl:copy-of select="uwf:s2Nomen(marc:subfield[@code = '2'])"/>
+                <xsl:copy-of select="uwf:s2Nomen(marc:subfield[@code = '2'][1])"/>
             </rdf:Description>
         </xsl:if>
     </xsl:template>

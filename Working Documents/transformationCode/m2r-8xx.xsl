@@ -243,9 +243,8 @@
                                         <xsl:call-template name="FX1X-xx-n"/>
                                         <xsl:call-template name="FX1X-xx-d"/>
                                         <xsl:call-template name="FX1X-xx-u"/>
-                                        <xsl:call-template name="FX1X-xx-a"/>
-                                        <xsl:call-template name="FX10-xx-ab"/>
-                                        <xsl:call-template name="FX11-xx-ae"/>
+                                        <xsl:if test="@tag = '810'"><xsl:call-template name="FX10-xx-ab"/></xsl:if>
+                                        <xsl:if test="@tag = '811'"><xsl:call-template name="FX11-xx-ae"/></xsl:if>
                                     </xsl:if>
                                 </xsl:for-each>
                             </xsl:if>
@@ -262,9 +261,8 @@
                         <xsl:call-template name="FX1X-xx-n"/>
                         <xsl:call-template name="FX1X-xx-d"/>
                         <xsl:call-template name="FX1X-xx-u"/>
-                        <xsl:call-template name="FX1X-xx-a"/>
-                        <xsl:call-template name="FX10-xx-ab"/>
-                        <xsl:call-template name="FX11-xx-ae"/>
+                        <xsl:if test="@tag = '810'"><xsl:call-template name="FX10-xx-ab"/></xsl:if>
+                        <xsl:if test="@tag = '811'"><xsl:call-template name="FX11-xx-ae"/></xsl:if>
                     </xsl:if>
                 </xsl:when>
             </xsl:choose>
