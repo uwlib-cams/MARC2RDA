@@ -56,6 +56,7 @@ F711 2# $a Meeting on Skipping Date $t Skip proceedings $n Part 5 $d 2025
 F711 2# $6 880-01 $a Oregon Shakespeare Festival.
 F880 2# $6 711-01 $a Oregon Shakespeare Festival 880
 F711 2# $a Conference Name $t Conference proceedings $d (2020 : South Milford, United Kingdom)
+F711 2# $a Conference on subfield d without subfield t $d (2025 : Leeds, United Kingdom)
 </rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
@@ -81,6 +82,8 @@ F711 2# $a Conference Name $t Conference proceedings $d (2020 : South Milford, U
       <!--Default relationship property used for http://marc2rda.edu/fake/age#oregonshakespearefestival-->
       <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/age#oregonshakespearefestival"/>
       <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor#conferencenameconferenceproceedings2020southmilfordunitedkingdom"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#conferenceonsubfielddwithoutsubfieldt2025leedsunitedkingdom-->
+      <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/age#conferenceonsubfielddwithoutsubfieldt2025leedsunitedkingdom"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/ageNom#texasmusicfestivalorchestra">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
@@ -129,6 +132,13 @@ F711 2# $a Conference Name $t Conference proceedings $d (2020 : South Milford, U
       <rdaad:P50237>Meeting</rdaad:P50237>
       <rdaad:P50032>Conference Name</rdaad:P50032>
    </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#conferenceonsubfielddwithoutsubfieldt2025leedsunitedkingdom">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Conference on subfield d without subfield t (2025 : Leeds, United Kingdom)</rdaad:P50375>
+      <rdaad:P50237>Meeting</rdaad:P50237>
+      <rdaad:P50039>2025 Leeds, United Kingdom</rdaad:P50039>
+      <rdaad:P50032>Conference on subfield d without subfield t</rdaad:P50032>
+   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#consultativemeetingoneliminationofkala-azarfromsouthasia3rd2009newdelhiindiakalaazarinsouthasia">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10002>d25e22wor</rdawd:P10002>
@@ -141,6 +151,7 @@ F711 2# $a Conference Name $t Conference proceedings $d (2020 : South Milford, U
       <rdawd:P10002>d25e35wor</rdawd:P10002>
       <rdawd:P10328>Meeting on Skipping Date Skip proceedings Part 5 2025</rdawd:P10328>
       <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#meetingonskippingdate"/>
+      <rdawd:P10219>2025</rdawd:P10219>
       <rdawd:P10088>Skip proceedings Part 5</rdawd:P10088>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#conferencenameconferenceproceedings2020southmilfordunitedkingdom">
@@ -148,6 +159,7 @@ F711 2# $a Conference Name $t Conference proceedings $d (2020 : South Milford, U
       <rdawd:P10002>d25e54wor</rdawd:P10002>
       <rdawd:P10328>Conference Name Conference proceedings (2020 : South Milford, United Kingdom)</rdawd:P10328>
       <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#conferencename"/>
+      <rdawd:P10219>(2020 : South Milford, United Kingdom)</rdawd:P10219>
       <rdawd:P10088>Conference proceedings</rdawd:P10088>
    </rdf:Description>
 </rdf:RDF>

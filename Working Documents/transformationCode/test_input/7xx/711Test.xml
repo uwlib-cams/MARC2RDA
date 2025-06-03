@@ -43,5 +43,9 @@
             <marc:subfield code="t">Conference proceedings</marc:subfield>
             <marc:subfield code="d">(2020 : South Milford, United Kingdom)</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="711" ind1="2" ind2=" ">
+            <marc:subfield code="a">Conference on subfield d without subfield t</marc:subfield>
+            <marc:subfield code="d">(2025 : Leeds, United Kingdom)</marc:subfield>
+        </marc:datafield>
     </marc:record>
 </marc:collection>
