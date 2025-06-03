@@ -3184,7 +3184,7 @@
                     <xsl:for-each
                         select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'p']">
                         <rdae:P20215
-                            rdf:resource="{uwf:conceptIRI(../marc:subfield[@code = '2'], .)}"/>
+                            rdf:resource="{uwf:conceptIRI(../marc:subfield[@code = '2'][1], .)}"/>
                     </xsl:for-each>
                 </xsl:if>
             </xsl:when>

@@ -76,7 +76,7 @@
     <!-- returns the name of institution if found, otherwise returns the input institution code -->
     <xsl:function name="uwf:s5NameLookup" expand-text="yes">
         <xsl:param name="code5"/>
-        <xsl:variable name="lowerCode5" select="lower-case($code5)"/>
+        <xsl:variable name="lowerCode5" select="lower-case($code5[1])"/>
         <xsl:variable name="lookup5Name" select="$lookup5Doc/key('normCode',$lowerCode5)/rdaad:P50375"/>
         <xsl:choose>
             <xsl:when test="$lookup5Name">
