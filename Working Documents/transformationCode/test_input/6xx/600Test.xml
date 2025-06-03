@@ -109,6 +109,7 @@
         <marc:datafield tag="600" ind1="1" ind2="0">
             <marc:subfield code="6">880-01</marc:subfield>
             <marc:subfield code="a">Test linked 880 person 1</marc:subfield>
+            <marc:subfield code="d">test d with 880 1</marc:subfield>
             <marc:subfield code="t">Test linked 880 work 1</marc:subfield>
             <marc:subfield code="x">test x</marc:subfield>
         </marc:datafield>
@@ -116,6 +117,7 @@
         <marc:datafield tag="880" ind1="1" ind2="0">
             <marc:subfield code="6">600-01</marc:subfield>
             <marc:subfield code="a">Test linked 880 person 2</marc:subfield>
+            <marc:subfield code="d">test d with 880 2</marc:subfield>
             <marc:subfield code="t">Test linked 880 work 2</marc:subfield>
             <marc:subfield code="x">test x</marc:subfield>
         </marc:datafield>

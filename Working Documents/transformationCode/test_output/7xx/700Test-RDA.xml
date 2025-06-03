@@ -1,52 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
-         xmlns:fake="http://fakePropertiesForDemo"
-         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
-         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
-         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
-         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
-         xmlns:rdae="http://rdaregistry.info/Elements/e/"
-         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
-         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
-         xmlns:rdai="http://rdaregistry.info/Elements/i/"
-         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
-         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
-         xmlns:rdam="http://rdaregistry.info/Elements/m/"
-         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
-         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
-         xmlns:rdan="http://rdaregistry.info/Elements/n/"
-         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
-         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
-         xmlns:rdap="http://rdaregistry.info/Elements/p/"
-         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
-         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
-         xmlns:rdat="http://rdaregistry.info/Elements/t/"
-         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
-         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
-         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
-         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
-         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
-         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:uwf="http://universityOfWashington/functions"
-         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcrelator-test1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>relator-test1</rdawd:P10400>
-      <rdawd:P10004>Metadata work</rdawd:P10004>
-      <rdawd:P10002>transform/wor#marcrelator-test1</rdawd:P10002>
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-test1"/>
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
+      <rdawd:P10400>relator-test1</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marcrelator-test1</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcrelator-test1"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcrelator-test1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test1"/>
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
-      <rdamd:P30004>transform/man#marcrelator-test1</rdamd:P30004>
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test1"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marcrelator-test1</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
 F001 relator-test1
 F700 1# $a Rector, Liam, $d 1949-2007. $1 https://id.oclc.org/worldcat/entity/E39PBJbMckG8Ct8pYrmgPw9CcP
@@ -64,174 +32,178 @@ F700 1# $6 880-12 $a Shostakovich, Dmitriĭ Dmitrievich, $d 1906-1975. $t Korol
 F880 1# $6 700-12/(N $a Шостакович, Дмитрий Дмитриевич, $d 1906-1975. $t Korolʹ Lir (Motion picture music)
 F700 1# $i Motion picture adaptation of (work): $a Valdez, Luis. $t Zoot suit. $1 haf.vhmml.org/organization/madeuporg $1 fakeiri.edu/1234
 F700 1# $a Test, 880. $e author $2 naf
-</rdamd:P30137>
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test1"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
-      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/cerl/age#hajnalzoltan1968-"/>
-      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/cerl/age#englerpaul"/>
-      <rdawo:P10422 rdf:resource="http://marc2rda.edu/fake/naf/age#kozint%EF%B8%A0s%EF%B8%A1evgrigorii%CC%86mikhai%CC%86lovich"/>
-      <rdawo:P10429 rdf:resource="http://marc2rda.edu/fake/naf/age#kozint%EF%B8%A0s%EF%B8%A1evgrigorii%CC%86mikhai%CC%86lovich"/>
-      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/naf/age#test880"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test1"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/cerl/age#hajnalzoltan1968-"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/cerl/age#englerpaul"/><!--rdawo:P10436 = has author person-->
+      <rdawo:P10422 rdf:resource="http://marc2rda.edu/fake/naf/age#kozint%EF%B8%A0s%EF%B8%A1evgrigorii%CC%86mikhai%CC%86lovich"/><!--rdawo:P10422 = has film producer person-->
+      <rdawo:P10429 rdf:resource="http://marc2rda.edu/fake/naf/age#kozint%EF%B8%A0s%EF%B8%A1evgrigorii%CC%86mikhai%CC%86lovich"/><!--rdawo:P10429 = has screenwriter person-->
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/naf/age#test880"/><!--rdawo:P10436 = has author person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test1"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
-      <rdaeo:P20382 rdf:resource="http://marc2rda.edu/fake/age#harmsensophie"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test1"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaeo:P20382 rdf:resource="http://marc2rda.edu/fake/age#harmsensophie"/><!--rdaeo:P20382 = has singer person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test1"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
-      <rdamd:P30276/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcrelator-test1"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
       <!--Default relationship property used for http://marc2rda.edu/fake/age#rectorliam1949-2007-->
-      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age#rectorliam1949-2007"/>
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age#rectorliam1949-2007"/><!--rdamo:P30268 = has related person of manifestation-->
       <!--Default relationship property used for https://orcid.org/0000-0002-9679-6159-->
-      <rdamo:P30268 rdf:resource="https://orcid.org/0000-0002-9679-6159"/>
+      <rdamo:P30268 rdf:resource="https://orcid.org/0000-0002-9679-6159"/><!--rdamo:P30268 = has related person of manifestation-->
       <!--Default relationship property used for https://orcid.org/0000-0002-9679-6159-->
-      <rdamo:P30268 rdf:resource="https://orcid.org/0000-0002-9679-6159"/>
+      <rdamo:P30268 rdf:resource="https://orcid.org/0000-0002-9679-6159"/><!--rdamo:P30268 = has related person of manifestation-->
       <!--Default relationship property used for http://marc2rda.edu/fake/naf/age#worthamchristopher1940- -->
-      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/naf/age#worthamchristopher1940-"/>
-      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor#shakespearewilliam1564-1616cymbeline"/>
-      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor#sampleauthorwrongordertitle1980-"/>
-      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor#shostakovichdmitrii%CC%86dmitrievich1906-1975korol%CA%B9lirmotionpicturemusic"/>
-      <rdamo:P30265 rdf:resource="haf.vhmml.org/organization/madeuporg"/>
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/naf/age#worthamchristopher1940-"/><!--rdamo:P30268 = has related person of manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor#shakespearewilliam1564-1616cymbeline"/><!--rdamo:P30265 = has related work of manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor#sampleauthorwrongordertitle1980-"/><!--rdamo:P30265 = has related work of manifestation-->
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor#shostakovichdmitrii%CC%86dmitrievich1906-1975korol%CA%B9lirmotionpicturemusic"/><!--rdamo:P30265 = has related work of manifestation-->
+      <rdamo:P30265 rdf:resource="haf.vhmml.org/organization/madeuporg"/><!--rdamo:P30265 = has related work of manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/orcid/ageNom#bhabeshdeka">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Bhabesh Deka</rdand:P80068>
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/orcid"/>
+      <rdand:P80068>Bhabesh Deka</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/orcid"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/cerl/ageNom#hajnalzoltan1968-">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Hajnal, Zoltan, 1968-</rdand:P80068>
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/cerl"/>
+      <rdand:P80068>Hajnal, Zoltan, 1968-</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/cerl"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/cerl/ageNom#englerpaul">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Engler, Paul</rdand:P80068>
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/cerl"/>
+      <rdand:P80068>Engler, Paul</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/cerl"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-05-290100d25e56">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-06-03-0400d25e56">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Wortham, Christopher, 1940-</rdand:P80068>
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/>
+      <rdand:P80068>Wortham, Christopher, 1940-</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-05-290100d25e78">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-06-03-0400d25e78">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Kozint︠s︡ev, Grigoriĭ Mikhaĭlovich</rdand:P80068>
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/>
-      <rdand:P80113>Козинцев, Григорий Михайлович</rdand:P80113>
+      <rdand:P80068>Kozint︠s︡ev, Grigoriĭ Mikhaĭlovich</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/><!--rdan:P80069 = has scheme of nomen-->
+      <rdand:P80113>Козинцев, Григорий Михайлович</rdand:P80113><!--rdand:P80113 = is equivalent to-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-05-290100d25e141">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-06-03-0400d25e141">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Test, 880</rdand:P80068>
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/>
+      <rdand:P80068>Test, 880</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age#rectorliam1949-2007">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Rector, Liam, 1949-2007</rdaad:P50377>
-      <rdaad:P50111>Rector, Liam</rdaad:P50111>
-      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJbMckG8Ct8pYrmgPw9CcP</rdaad:P50094>
+      <rdaad:P50377>Rector, Liam, 1949-2007</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Rector, Liam</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJbMckG8Ct8pYrmgPw9CcP</rdaad:P50094><!--rdaad:P50094 = has identifier for person-->
    </rdf:Description>
    <rdf:Description rdf:about="https://orcid.org/0000-0002-9679-6159">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Deka, Bhabesh</rdaad:P50377>
-      <rdaad:P50094>(orcid)0000-0002-9679-6159</rdaad:P50094>
+      <rdaad:P50377>Deka, Bhabesh</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50094>(orcid)0000-0002-9679-6159</rdaad:P50094><!--rdaad:P50094 = has identifier for person-->
    </rdf:Description>
    <rdf:Description rdf:about="https://orcid.org/0000-0002-9679-6159">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/orcid/ageNom#bhabeshdeka"/>
-      <rdaad:P50094>(orcid)0000-0002-9679-6159</rdaad:P50094>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/orcid/ageNom#bhabeshdeka"/><!--rdaao:P50411 = has authorized access point for person-->
+      <rdaad:P50094>(orcid)0000-0002-9679-6159</rdaad:P50094><!--rdaad:P50094 = has identifier for person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/cerl/age#hajnalzoltan1968-">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/cerl/ageNom#hajnalzoltan1968-"/>
-      <rdaad:P50111>Hajnal, Zoltan</rdaad:P50111>
-      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PCjB44Tx3Q7JWXMr9v484hd</rdaad:P50094>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/cerl/ageNom#hajnalzoltan1968-"/><!--rdaao:P50411 = has authorized access point for person-->
+      <rdaad:P50111>Hajnal, Zoltan</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PCjB44Tx3Q7JWXMr9v484hd</rdaad:P50094><!--rdaad:P50094 = has identifier for person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/cerl/age#englerpaul">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/cerl/ageNom#englerpaul"/>
-      <rdaad:P50111>Engler, Paul</rdaad:P50111>
+      <rdaao:P50411 rdf:resource="http://marc2rda.edu/fake/cerl/ageNom#englerpaul"/><!--rdaao:P50411 = has authorized access point for person-->
+      <rdaad:P50111>Engler, Paul</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/age#worthamchristopher1940-">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-05-290100d25e56"/>
-      <rdaad:P50111>Wortham, Christopher</rdaad:P50111>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-06-03-0400d25e56"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50111>Wortham, Christopher</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age#harmsensophie">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Harmsen, Sophie</rdaad:P50377>
-      <rdaad:P50111>Harmsen, Sophie</rdaad:P50111>
+      <rdaad:P50377>Harmsen, Sophie</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Harmsen, Sophie</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age#shakespearewilliam1564-1616">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Shakespeare, William, 1564-1616</rdaad:P50377>
-      <rdaad:P50111>Shakespeare, William</rdaad:P50111>
-      <rdaad:P50121>1564</rdaad:P50121>
-      <rdaad:P50120>1616</rdaad:P50120>
+      <rdaad:P50377>Shakespeare, William, 1564-1616</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Shakespeare, William</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1564</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1616</rdaad:P50120><!--rdaad:P50120 = has date of death-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/age#kozint%EF%B8%A0s%EF%B8%A1evgrigorii%CC%86mikhai%CC%86lovich">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-05-290100d25e78"/>
-      <rdaad:P50111>Kozint︠s︡ev, Grigoriĭ Mikhaĭlovich</rdaad:P50111>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-06-03-0400d25e78"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50111>Kozint︠s︡ev, Grigoriĭ Mikhaĭlovich</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age#sampleauthor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Sample, Author</rdaad:P50377>
-      <rdaad:P50111>Sample, Author</rdaad:P50111>
+      <rdaad:P50377>Sample, Author</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Sample, Author</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age#shostakovichdmitrii%CC%86dmitrievich1906-1975">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Shostakovich, Dmitriĭ Dmitrievich, 1906-1975</rdaad:P50377>
-      <rdaad:P50377>Шостакович, Дмитрий Дмитриевич, 1906-1975</rdaad:P50377>
-      <rdaad:P50111>Shostakovich, Dmitriĭ Dmitrievich</rdaad:P50111>
-      <rdaad:P50121>1906</rdaad:P50121>
-      <rdaad:P50120>1975</rdaad:P50120>
+      <rdaad:P50377>Shostakovich, Dmitriĭ Dmitrievich, 1906-1975</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50377>Шостакович, Дмитрий Дмитриевич, 1906-1975</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Шостакович, Дмитрий Дмитриевич</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1906</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1975</rdaad:P50120><!--rdaad:P50120 = has date of death-->
+      <rdaad:P50111>Shostakovich, Dmitriĭ Dmitrievich</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1906</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50120>1975</rdaad:P50120><!--rdaad:P50120 = has date of death-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age#valdezluis">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Valdez, Luis</rdaad:P50377>
-      <rdaad:P50111>Valdez, Luis</rdaad:P50111>
+      <rdaad:P50377>Valdez, Luis</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Valdez, Luis</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/age#test880">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-05-290100d25e141"/>
-      <rdaad:P50111>Test, 880</rdaad:P50111>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-06-03-0400d25e141"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50111>Test, 880</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#shakespearewilliam1564-1616cymbeline">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>d25e70wor</rdawd:P10002>
-      <rdawd:P10328>Shakespeare, William, 1564-1616. Cymbeline</rdawd:P10328>
-      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#shakespearewilliam1564-1616"/>
-      <rdawd:P10088>Cymbeline</rdawd:P10088>
+      <rdawd:P10002>d25e70wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Shakespeare, William, 1564-1616. Cymbeline</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#shakespearewilliam1564-1616"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>Cymbeline</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#sampleauthorwrongordertitle1980-">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>d25e90wor</rdawd:P10002>
-      <rdawd:P10328>Sample, Author, Wrong Order Title 1980-</rdawd:P10328>
-      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#sampleauthor"/>
-      <rdawd:P10088>Wrong Order Title</rdawd:P10088>
+      <rdawd:P10002>d25e90wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Sample, Author, Wrong Order Title 1980-</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#sampleauthor"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10219>1980-</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+      <rdawd:P10088>Wrong Order Title</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#shostakovichdmitrii%CC%86dmitrievich1906-1975korol%CA%B9lirmotionpicturemusic">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>d25e110wor</rdawd:P10002>
-      <rdawd:P10328>Shostakovich, Dmitriĭ Dmitrievich, 1906-1975. Korolʹ Lir (Motion picture music)</rdawd:P10328>
-      <rdawd:P10328>Шостакович, Дмитрий Дмитриевич, 1906-1975. Korolʹ Lir (Motion picture music)</rdawd:P10328>
-      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#shostakovichdmitrii%CC%86dmitrievich1906-1975"/>
-      <rdawd:P10088>Korolʹ Lir (Motion picture music)</rdawd:P10088>
+      <rdawd:P10002>d25e110wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Shostakovich, Dmitriĭ Dmitrievich, 1906-1975. Korolʹ Lir (Motion picture music)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10328>Шостакович, Дмитрий Дмитриевич, 1906-1975. Korolʹ Lir (Motion picture music)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10088>Korolʹ Lir (Motion picture music)</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#shostakovichdmitrii%CC%86dmitrievich1906-1975"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>Korolʹ Lir (Motion picture music)</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
    <rdf:Description rdf:about="haf.vhmml.org/organization/madeuporg">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>d25e129wor</rdawd:P10002>
-      <rdawd:P10328>Valdez, Luis. Zoot suit</rdawd:P10328>
-      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#valdezluis"/>
-      <rdawd:P10002>fakeiri.edu/1234</rdawd:P10002>
-      <rdawd:P10088>Zoot suit</rdawd:P10088>
+      <rdawd:P10002>d25e129wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawd:P10328>Valdez, Luis. Zoot suit</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#valdezluis"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10002>fakeiri.edu/1234</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
    </rdf:Description>
 </rdf:RDF>

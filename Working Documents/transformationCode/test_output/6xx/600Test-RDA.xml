@@ -30,8 +30,8 @@ F600 10 $a O'Neill, Eugene, $d 1888-1953 $x Homes and haunts $z California. $0 h
 F600 10 $a Romero, George A. $1 https://isni.org/isni/0000000121363861
 F600 10 $a Romero, George A. $t Made up work $1 https://iriforthiswork.com/12345
 F880 14 $6 600-00 $a Test unlinked 880 person $t Test unlinked 880 work $1 https://iriforthiswork.com/6789
-F600 10 $6 880-01 $a Test linked 880 person 1 $t Test linked 880 work 1 $x test x
-F880 10 $6 600-01 $a Test linked 880 person 2 $t Test linked 880 work 2 $x test x
+F600 10 $6 880-01 $a Test linked 880 person 1 $d test d with 880 1 $t Test linked 880 work 1 $x test x
+F880 10 $6 600-01 $a Test linked 880 person 2 $d test d with 880 2 $t Test linked 880 work 2 $x test x
 </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
@@ -57,8 +57,8 @@ F880 10 $6 600-01 $a Test linked 880 person 2 $t Test linked 880 work 2 $x test 
       <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/age#romerogeorgea"/><!--rdawo:P10261 = has subject person-->
       <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/wor#romerogeorgeamadeupwork"/><!--rdawo:P10257 = has subject work-->
       <rdawo:P10257 rdf:resource="http://marc2rda.edu/fake/wor#testunlinked880persontestunlinked880work"/><!--rdawo:P10257 = has subject work-->
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#testlinked880person1testlinked880work1testx"/><!--rdaw:P10256 = has subject-->
-      <rdawo:P10198 rdf:resource="http://marc2rda.edu/fake/wor#testlinked880person1testlinked880work1"/><!--rdawo:P10198 = has related work of work-->
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#testlinked880person1testdwith8801testlinked880work1testx"/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10198 rdf:resource="http://marc2rda.edu/fake/wor#testlinked880person1testdwith8801testlinked880work1"/><!--rdawo:P10198 = has related work of work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -72,22 +72,22 @@ F880 10 $6 600-01 $a Test linked 880 person 2 $t Test linked 880 work 2 $x test 
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-05-20-0400d25e21">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-06-03-0400d25e21">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Harnoncourt, Nikolaus</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-05-20-0400d25e68">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-06-03-0400d25e68">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Dante Alighieri, 1265-1321</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-05-20-0400d25e76">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-06-03-0400d25e76">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Dante Alighieri, 1265-1321</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gnd"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-05-20-0400d25e84">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-06-03-0400d25e84">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Bickford, Sarah Gammon, 1855-1931</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/><!--rdan:P80069 = has scheme of nomen-->
@@ -96,12 +96,10 @@ F880 10 $6 600-01 $a Test linked 880 person 2 $t Test linked 880 work 2 $x test 
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Pushkin, Aleksandr Sergeevich, 1799-1837</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
       <rdaad:P50111>Pushkin, Aleksandr Sergeevich</rdaad:P50111><!--rdaad:P50111 = has name of person-->
-      <rdaad:P50121>1799</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
-      <rdaad:P50120>1837</rdaad:P50120><!--rdaad:P50120 = has date of death-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/age#harnoncourtnikolaus">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-05-20-0400d25e21"/><!--rdaao:P50377 = has access point for person-->
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-06-03-0400d25e21"/><!--rdaao:P50377 = has access point for person-->
       <rdaad:P50111>Harnoncourt, Nikolaus</rdaad:P50111><!--rdaad:P50111 = has name of person-->
       <rdaad:P50094>https://id.worldcat.org/fast/00076606</rdaad:P50094><!--rdaad:P50094 = has identifier for person-->
    </rdf:Description>
@@ -128,37 +126,27 @@ F880 10 $6 600-01 $a Test linked 880 person 2 $t Test linked 880 work 2 $x test 
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Dante Alighieri, 1265-1321</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
       <rdaad:P50111>Dante Alighieri</rdaad:P50111><!--rdaad:P50111 = has name of person-->
-      <rdaad:P50121>1265</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
-      <rdaad:P50120>1321</rdaad:P50120><!--rdaad:P50120 = has date of death-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/age#dantealighieri1265-1321">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-05-20-0400d25e68"/><!--rdaao:P50377 = has access point for person-->
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-06-03-0400d25e68"/><!--rdaao:P50377 = has access point for person-->
       <rdaad:P50111>Dante Alighieri</rdaad:P50111><!--rdaad:P50111 = has name of person-->
-      <rdaad:P50121>1265</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
-      <rdaad:P50120>1321</rdaad:P50120><!--rdaad:P50120 = has date of death-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/gnd/age#dantealighieri1265-1321">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-05-20-0400d25e76"/><!--rdaao:P50377 = has access point for person-->
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-06-03-0400d25e76"/><!--rdaao:P50377 = has access point for person-->
       <rdaad:P50111>Dante Alighieri</rdaad:P50111><!--rdaad:P50111 = has name of person-->
-      <rdaad:P50121>1265</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
-      <rdaad:P50120>1321</rdaad:P50120><!--rdaad:P50120 = has date of death-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/age#bickfordsarahgammon1855-1931">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-05-20-0400d25e84"/><!--rdaao:P50377 = has access point for person-->
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-06-03-0400d25e84"/><!--rdaao:P50377 = has access point for person-->
       <rdaad:P50111>Bickford, Sarah Gammon</rdaad:P50111><!--rdaad:P50111 = has name of person-->
-      <rdaad:P50121>1855</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
-      <rdaad:P50120>1931</rdaad:P50120><!--rdaad:P50120 = has date of death-->
       <rdaad:P50094>(OCoLC)fst01583751</rdaad:P50094><!--rdaad:P50094 = has identifier for person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age#o%27neilleugene1888-1953">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>O'Neill, Eugene, 1888-1953</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
       <rdaad:P50111>O'Neill, Eugene</rdaad:P50111><!--rdaad:P50111 = has name of person-->
-      <rdaad:P50121>1888</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
-      <rdaad:P50120>1953</rdaad:P50120><!--rdaad:P50120 = has date of death-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/age#romerogeorgea">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
@@ -176,11 +164,14 @@ F880 10 $6 600-01 $a Test linked 880 person 2 $t Test linked 880 work 2 $x test 
       <rdaad:P50377>Test unlinked 880 person</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
       <rdaad:P50111>Test unlinked 880 person</rdaad:P50111><!--rdaad:P50111 = has name of person-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#testlinked880person1">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#testlinked880person1testdwith8801">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Test linked 880 person 1</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
-      <rdaad:P50377>Test linked 880 person 2</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50377>Test linked 880 person 1 test d with 880 1</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50377>Test linked 880 person 2 test d with 880 2</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Test linked 880 person 2</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50347>test d with 880 2</rdaad:P50347><!--rdaad:P50347 = has related timespan of person-->
       <rdaad:P50111>Test linked 880 person 1</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50347>test d with 880 1</rdaad:P50347><!--rdaad:P50347 = has related timespan of person-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#haydnjoseph1732-1809symphonies">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -208,13 +199,12 @@ F880 10 $6 600-01 $a Test linked 880 person 2 $t Test linked 880 work 2 $x test 
       <rdawd:P10002>https://iriforthiswork.com/6789</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <rdawd:P10088>Test unlinked 880 work</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#testlinked880person1testlinked880work1">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#testlinked880person1testdwith8801testlinked880work1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10328>Test linked 880 person 1 Test linked 880 work 1</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10328>Test linked 880 person 2 Test linked 880 work 2</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#testlinked880person1"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10328>Test linked 880 person 1 test d with 880 1 Test linked 880 work 1</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10328>Test linked 880 person 2 test d with 880 2 Test linked 880 work 2</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#testlinked880person1testdwith8801"/><!--rdawo:P10312 = has related person of work-->
       <rdawd:P10088>Test linked 880 work 1</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-      <rdawd:P10366>test x</rdawd:P10366><!--rdawd:P10366 = has ISSN-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#pushkinaleksandrsergeevich1799-1837museumsrussiafederationmoscowmaps">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -241,11 +231,11 @@ F880 10 $6 600-01 $a Test linked 880 person 2 $t Test linked 880 work 2 $x test 
       <skos:prefLabel>Dante Alighieri, 1265-1321--Criticism and interpretation</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#testlinked880person1testlinked880work1testx">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#testlinked880person1testdwith8801testlinked880work1testx">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Test linked 880 person 1 Test linked 880 work 1--test x</skos:prefLabel>
+      <skos:prefLabel>Test linked 880 person 1 test d with 880 1 Test linked 880 work 1--test x</skos:prefLabel>
       <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Test linked 880 person 2 Test linked 880 work 2--test x</skos:prefLabel>
+      <skos:prefLabel>Test linked 880 person 2 test d with 880 2 Test linked 880 work 2--test x</skos:prefLabel>
    </rdf:Description>
 </rdf:RDF>
