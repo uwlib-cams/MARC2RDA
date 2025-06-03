@@ -55,7 +55,8 @@
         mode="relWor" expand-text="yes">
         <xsl:param name="baseID"/>
         <xsl:variable name="tagType" select="uwf:tagType(.)"/>
-        <rdf:Description rdf:about="{uwf:relWorkIRI($baseID, .)}">    
+        <xsl:variable name="workIRI" select="uwf:relWorkIRI($baseID, .)"/>
+        <rdf:Description rdf:about="{$workIRI}">    
             <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
             <xsl:choose>
                 <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'work') = 'True'">
@@ -74,6 +75,13 @@
                             <rdawd:P10328>
                                 <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
                             </rdawd:P10328>
+                            <xsl:if test="starts-with($workIRI, $BASE)">
+                                <xsl:call-template name="FXXX-xx-d"/>
+                                <xsl:call-template name="FXXX-xx-tnp"/>
+                                <xsl:call-template name="FXXX-xx-n"/>
+                                <xsl:call-template name="FXXX-xx-r"/>
+                                <xsl:call-template name="FXXX-xx-x"/>
+                            </xsl:if>
                         </xsl:for-each>
                     </xsl:if>
                 </xsl:otherwise>
@@ -95,10 +103,11 @@
             </xsl:choose>
             <xsl:copy-of select="uwf:workIdentifiers(.)"/>
             <!-- If we minted the IRI - add additional details -->
-            <xsl:if test="starts-with(uwf:agentIRI($baseID, .), $BASE)">
+            <xsl:if test="starts-with($workIRI, $BASE)">
                 <xsl:call-template name="FXXX-xx-d"/>
                 <xsl:call-template name="FXXX-xx-tnp"/>
                 <xsl:call-template name="FXXX-xx-n"/>
+                <xsl:call-template name="FXXX-xx-r"/>
                 <xsl:call-template name="FXXX-xx-x"/>
             </xsl:if>
         </rdf:Description>
@@ -112,7 +121,8 @@
         mode="age" expand-text="yes">
         <xsl:param name="baseID"/>
         <xsl:variable name="ap" select="uwf:agentAccessPoint(.)"/>
-        <rdf:Description rdf:about="{uwf:agentIRI($baseID, .)}">
+        <xsl:variable name="agentIRI" select="uwf:agentIRI($baseID, .)"/>
+        <rdf:Description rdf:about="{$agentIRI}">
             <!--<xsl:call-template name="getmarc"/>-->
             <xsl:variable name="tagType" select="uwf:tagType(.)"/>
             <xsl:choose>
@@ -137,11 +147,21 @@
                                             <rdaad:P50377>
                                                 <xsl:value-of select="uwf:agentAccessPoint(.)"/>
                                             </rdaad:P50377>
+                                            <!-- do the same for 880s -->
+                                            <xsl:if test="starts-with($agentIRI, $BASE)">
+                                                <xsl:call-template name="FX00-1x-a"/>
+                                                <xsl:call-template name="FX00-2x-a"/>
+                                                <xsl:call-template name="FX00-0x-ab"/>
+                                                <xsl:call-template name="FX00-0x-a"/>
+                                                <xsl:call-template name="FX00-xx-d"/>
+                                                <xsl:call-template name="FX00-xx-q"/>
+                                                <xsl:call-template name="FX00-xx-u"/>
+                                            </xsl:if>
                                         </xsl:for-each>
                                     </xsl:if>
                                 </xsl:otherwise>
                             </xsl:choose>
-                            <xsl:if test="starts-with(uwf:agentIRI($baseID, .), $BASE)">
+                            <xsl:if test="starts-with($agentIRI, $BASE)">
                                 <xsl:call-template name="FX00-1x-a"/>
                                 <xsl:call-template name="FX00-2x-a"/>
                                 <xsl:call-template name="FX00-0x-ab"/>
@@ -172,12 +192,18 @@
                                             <rdaad:P50376>
                                                 <xsl:value-of select="uwf:agentAccessPoint(.)"/>
                                             </rdaad:P50376>
+                                            <xsl:if test="starts-with($agentIRI, $BASE)">
+                                                <xsl:call-template name="FX00-3x-c"/>
+                                                <xsl:call-template name="FX00-3x-d"/>
+                                                <xsl:call-template name="FX00-3x-a"/>
+                                                <xsl:call-template name="FX00-xx-u"/>
+                                            </xsl:if>
                                         </xsl:for-each>
                                     </xsl:if>
                                 </xsl:otherwise>
                             </xsl:choose>
                             <!-- If we minted the IRI - add additional details -->
-                            <xsl:if test="starts-with(uwf:agentIRI($baseID, .), $BASE)">
+                            <xsl:if test="starts-with($agentIRI, $BASE)">
                                 <xsl:call-template name="FX00-3x-c"/>
                                 <xsl:call-template name="FX00-3x-d"/>
                                 <xsl:call-template name="FX00-3x-a"/>
@@ -207,6 +233,16 @@
                                     <rdaad:P50375>
                                         <xsl:value-of select="uwf:agentAccessPoint(.)"/>
                                     </rdaad:P50375>
+                                    <!-- If we minted the IRI - add additional details -->
+                                    <xsl:if test="starts-with($agentIRI, $BASE)">
+                                        <xsl:call-template name="FX1X-xx-c"/>
+                                        <xsl:call-template name="FX1X-xx-n"/>
+                                        <xsl:call-template name="FX1X-xx-d"/>
+                                        <xsl:call-template name="FX1X-xx-u"/>
+                                        <xsl:call-template name="FX1X-xx-a"/>
+                                        <xsl:call-template name="FX10-xx-ab"/>
+                                        <xsl:call-template name="FX11-xx-ae"/>
+                                    </xsl:if>
                                 </xsl:for-each>
                             </xsl:if>
                         </xsl:otherwise>
@@ -217,7 +253,7 @@
                         </rdaad:P50237>
                     </xsl:if>
                     <!-- If we minted the IRI - add additional details -->
-                    <xsl:if test="starts-with(uwf:agentIRI($baseID, .), $BASE)">
+                    <xsl:if test="starts-with($agentIRI, $BASE)">
                         <xsl:call-template name="FX1X-xx-c"/>
                         <xsl:call-template name="FX1X-xx-n"/>
                         <xsl:call-template name="FX1X-xx-d"/>
@@ -352,6 +388,7 @@
                                     <xsl:call-template name="FX30-xx-anp"/>
                                     <xsl:call-template name="FX30-xx-d"/>
                                     <xsl:call-template name="FXXX-xx-n"/>
+                                    <xsl:call-template name="FXXX-xx-r"/>
                                     <xsl:call-template name="FXXX-xx-x"/>
                                 </xsl:if>
                             </xsl:for-each>
@@ -364,6 +401,7 @@
                     <xsl:call-template name="FX30-xx-anp"/>
                     <xsl:call-template name="FX30-xx-d"/>
                     <xsl:call-template name="FXXX-xx-n"/>
+                    <xsl:call-template name="FXXX-xx-r"/>
                     <xsl:call-template name="FXXX-xx-x"/>
                 </xsl:if>
             </rdf:Description>
