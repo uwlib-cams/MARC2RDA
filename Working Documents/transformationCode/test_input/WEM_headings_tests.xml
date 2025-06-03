@@ -61,8 +61,10 @@
             <marc:subfield code="i">Container of (work)</marc:subfield>
             <marc:subfield code="a">Belarus Free Theatre (Theater group).</marc:subfield>
             <marc:subfield code="d">710 $d before $t</marc:subfield>
+            <marc:subfield code="n">710 $n before $t</marc:subfield>
             <marc:subfield code="t">Minsk, 2011.</marc:subfield>
             <marc:subfield code="d">710 $d after $t</marc:subfield>
+            <marc:subfield code="n">710 $n after $t</marc:subfield>
         </marc:datafield>
       
         <marc:datafield tag="711" ind1="2" ind2=" ">

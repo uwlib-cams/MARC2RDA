@@ -1228,7 +1228,7 @@
     </xsl:template>
     
     <xsl:template name="FX00-xx-d">
-        <xsl:for-each select="marc:subfield[@code = 'd'][following-sibling::marc:subfield[@code = 't']]">
+        <xsl:for-each select="marc:subfield[@code = 'd'][not(preceding-sibling::marc:subfield[@code = 't'])]">
             <xsl:choose>
                 <xsl:when test="contains(., '-') and not(contains(., 'active') or contains(., 'fl.') or contains(., 'jin shi') or contains(., 'ju ren'))">
                     <xsl:if test="matches(normalize-space(.), '^.+-')">
@@ -1301,7 +1301,7 @@
     </xsl:template>
     
     <xsl:template name="FX00-3x-d">
-        <xsl:for-each select="marc:subfield[@code = 'd']">
+        <xsl:for-each select="marc:subfield[@code = 'd'][not(preceding-sibling::marc:subfield[@code = 't'])]">
             <rdaad:P50355>
                 <xsl:value-of select="."/>
             </rdaad:P50355>
@@ -1309,13 +1309,11 @@
     </xsl:template>
     
     <xsl:template name="FX1X-xx-d">
-        <xsl:if test="not(marc:subfield[@code = 'd']) or not(marc:subfield[@code = 'd']/preceding-sibling::marc:subfield[@code = 't'])">
-            <xsl:for-each select="marc:subfield[@code = 'd']">
-                <rdaad:P50039>
-                    <xsl:value-of select="normalize-space(translate(., '():', ''))"/>
-                </rdaad:P50039>
-            </xsl:for-each>
-        </xsl:if>
+        <xsl:for-each select="marc:subfield[@code = 'd'][not(preceding-sibling::marc:subfield[@code = 't'])]">
+            <rdaad:P50039>
+                <xsl:value-of select="normalize-space(translate(., '():', ''))"/>
+            </rdaad:P50039>
+        </xsl:for-each>
     </xsl:template>
     
     <xsl:template name="FX00-xx-q">
@@ -1358,13 +1356,11 @@
     </xsl:template>
     
     <xsl:template name="FX1X-xx-n">
-        <xsl:if test="not(marc:subfield[@code = 't']) or not(marc:subfield[@code = 'n']/preceding-sibling::marc:subfield[@code = 't'])">
-            <xsl:for-each select="marc:subfield[@code = 'n']">
-                <rdaad:P50019>
-                    <xsl:value-of select="."/>
-                </rdaad:P50019>
-            </xsl:for-each>
-        </xsl:if>
+        <xsl:for-each select="marc:subfield[@code = 'n'][not(preceding-sibling::marc:subfield[@code = 't'])]">
+            <rdaad:P50019>
+                <xsl:value-of select="."/>
+            </rdaad:P50019>
+        </xsl:for-each>
     </xsl:template>
     
     <!-- Work attributes -->
