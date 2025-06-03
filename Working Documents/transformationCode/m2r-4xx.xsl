@@ -52,8 +52,10 @@
                    </rdawd:P10328>
                    <!-- title -->
                    <xsl:call-template name="FX30-xx-anp"/>
+                   <xsl:call-template name="FX30-xx-d"/>
                </xsl:for-each>
            </xsl:if>
+           <xsl:call-template name="FX30-xx-d"/>
        </rdf:Description>
     </xsl:template>
     
