@@ -745,6 +745,10 @@
                 <xsl:text> </xsl:text>
                 <xsl:value-of select="normalize-space(marc:subfield[@code = 'b'])"/>
             </xsl:if>
+            <xsl:if test="marc:subfield[@code = 'u']">
+                <xsl:text>Uniform Resource Identifier: </xsl:text>
+                <xsl:value-of select="normalize-space(marc:subfield[@code = 'u'])"/>
+            </xsl:if>
         </xsl:if>
     </xsl:template>
      
