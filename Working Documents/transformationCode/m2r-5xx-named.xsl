@@ -737,18 +737,13 @@
                 </xsl:choose>
             </xsl:variable>
             
-            <rdamd:P30002>
-                <xsl:value-of select="$prefixnote"/>
-                <xsl:if test="marc:subfield[@code = 'a']">
-                    <xsl:value-of select="normalize-space(marc:subfield[@code = 'a'])"/>
-                </xsl:if>
-                <xsl:if test="marc:subfield[@code = 'b']">
-                    <xsl:text> </xsl:text>
-                    <xsl:value-of select="normalize-space(marc:subfield[@code = 'b'])"/>
-                </xsl:if>
-            </rdamd:P30002>
-            <xsl:if test="marc:subfield[@code = 'u']">
-                <rdamo:P30154 rdf:resource="{normalize-space(marc:subfield[@code = 'u'])}"/>
+            <xsl:value-of select="$prefixnote"/>
+            <xsl:if test="marc:subfield[@code = 'a']">
+                <xsl:value-of select="normalize-space(marc:subfield[@code = 'a'])"/>
+            </xsl:if>
+            <xsl:if test="marc:subfield[@code = 'b']">
+                <xsl:text> </xsl:text>
+                <xsl:value-of select="normalize-space(marc:subfield[@code = 'b'])"/>
             </xsl:if>
         </xsl:if>
     </xsl:template>
