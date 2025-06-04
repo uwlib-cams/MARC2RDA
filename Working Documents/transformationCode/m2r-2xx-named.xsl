@@ -631,6 +631,57 @@
         </xsl:for-each>
     </xsl:template>
     
+   <!-- F246 -->
+    <xsl:template name="F246-xx-ind" expand-text="yes">
+        <xsl:text>Note on variant title: </xsl:text>
+        <xsl:choose>
+            <xsl:when
+                test="marc:subfield[@code = 'i' or @code = 'a' or @code = 'b' or @code = 'f' or @code = 'n' or @code = 'p' or @code = 'g' or @code = 'h']">
+                <xsl:for-each select="marc:subfield[@code = 'i']">
+                    <xsl:value-of select="."/>
+                    <xsl:if test="position() != last()">
+                    <xsl:text>: </xsl:text>
+                    </xsl:if>
+                </xsl:for-each>
+                <xsl:for-each select="marc:subfield[@code = 'a' or @code = 'b' or @code = 'f' or @code = 'n' or @code = 'p']">
+                    <xsl:value-of select="."/>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>: </xsl:text>
+                    </xsl:if>
+                </xsl:for-each>
+                <xsl:for-each select="marc:subfield[@code = 'g' or @code = 'h']">
+                    <xsl:if test="position() = 1">
+                        <xsl:text>;</xsl:text>
+                    </xsl:if>
+                    <xsl:value-of select="."/>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>: </xsl:text>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:text>[</xsl:text>
+                <xsl:value-of select="@ind2"/>
+                <xsl:text>]</xsl:text>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template name="F246-xx-noind" expand-text="yes">
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <xsl:value-of select="."/>
+            <xsl:if test="position() != last()">
+                <xsl:text>: </xsl:text>
+            </xsl:if>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'b' or @code = 'f' or @code = 'n' or @code = 'p']">
+            <xsl:if test="position() != last()">
+                <xsl:text>, </xsl:text>
+            </xsl:if>
+            <xsl:value-of select="."/>
+        </xsl:for-each>
+    </xsl:template>
+    
     <!-- F260 -->
     <xsl:template name="F260-xx-abc">
         <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']"/>
