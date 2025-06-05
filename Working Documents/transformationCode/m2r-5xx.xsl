@@ -1022,7 +1022,69 @@
         </xsl:for-each>
     </xsl:template>
     
-    
+    <!-- 540 - Terms Governing use and Reproduction Note  WIP
+    <xsl:template
+        match="marc:datafield[@tag = '541'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '541-00']"
+        mode="man">
+            <xsl:if test="not(marc:subfield[@code = '5'])">
+                <xsl:variable name="var1">
+                    <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'd']
+                        | marc:subfield[@code = 'g'] | marc:subfield[@code = 'q'] | marc:subfield[@code = 'u'] | marc:subfield[@code = '1']">
+                            <xsl:if test="@code = 'a'">
+                                <xsl:text>Terms governing use and reproduction: </xsl:text>
+                                <xsl:value-of select="."/>
+                            </xsl:if>
+                            <xsl:if test="@code = 'b'">
+                                <xsl:text>Jurisdiction: </xsl:text>
+                                <xsl:value-of select="."/>
+                            </xsl:if>
+                            <xsl:if test="@code = 'c'">
+                                <xsl:text>Authorization: </xsl:text>
+                                <xsl:value-of select="."/>
+                            </xsl:if>
+                            <xsl:if test="@code = 'd'">
+                                <xsl:text>Authorized users: </xsl:text>
+                                <xsl:value-of select="."/>
+                            </xsl:if>
+                            <xsl:if test="@code = 'g'">
+                                <xsl:text>Availability date: </xsl:text>
+                                <xsl:value-of select="."/>
+                            </xsl:if>
+                            <xsl:if test="@code = 'q'">
+                                <xsl:text>Supplying agency: </xsl:text>
+                                <xsl:value-of select="."/>
+                            </xsl:if>
+                            <xsl:if test="@code = 'u'">
+                                <xsl:text>Additional information at: </xsl:text>
+                                <xsl:value-of select="."/>
+                            </xsl:if>
+                            <xsl:if test="@code = '1'">
+                                <xsl:text>Real World Object URI: </xsl:text>
+                                <xsl:value-of select="."/>
+                            </xsl:if>
+                        <xsl:if test="position() != last()">
+                            <xsl:text>; </xsl:text>
+                        </xsl:if>
+                    </xsl:for-each>
+                </xsl:variable>              
+                    <xsl:copy-of select="$var1"/>
+                    <xsl:if test="marc:subfield[@code = '3']">
+                        <xsl:text> (applies to: </xsl:text>
+                        <xsl:for-each select="marc:subfield[@code = '3']">
+                            <xsl:value-of select="."/>
+                            <xsl:text>)</xsl:text>
+                            <xsl:if test="position() != last()">
+                                <xsl:text>; </xsl:text>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:if>
+                </rdamd:P30146>
+            </xsl:if>
+        <xsl:if test="not(marc:subfield[@code = '5']) and not(marc:subfield[@code = '3'])">
+        <xsl:for-each select="marc:subfield[@code = 'f'] | marc:subfield[@code = '2'] | marc:subfield[@code = '0']">
+        </xsl:for-each>
+        </xsl:if>
+    </xsl:template>-->
     <!-- 541 - Immediate Source of Acquisition Note -->
     <xsl:template
         match="marc:datafield[@tag = '541'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '541-00']"
