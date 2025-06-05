@@ -796,4 +796,48 @@
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
+
+<!-- 384 Key Type -->
+<xsl:template
+    match="marc:datafield[@tag = '384'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '384']"
+    mode="exp">
+    <xsl:if test="@ind1 = ' ' or @ind1 = '0' or @ind1 = '1'">
+        <xsl:for-each
+            select="marc:subfield[@code = 'a']">
+            <rdaed:P20326><xsl:value-of select="."/></rdaed:P20326>
+        </xsl:for-each>      
+        <xsl:for-each select=" marc:subfield[@code = '0']">
+            <rdaed:P20326><xsl:value-of select="."/></rdaed:P20326>
+        </xsl:for-each>
+        <xsl:for-each
+            select="marc:subfield[@code = '1']">
+                <rdaeo:P20215 rdf:resource="{.}"/>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = '3']">
+            <rdaeo:P20071>applies to: <xsl:value-of select="."/></rdaeo:P20071>
+        </xsl:for-each>
+    </xsl:if>
+</xsl:template>
+
+<xsl:template
+    match="marc:datafield[@tag = '384'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '384']"
+    mode="wor">
+    <xsl:if test="@ind1 = '2'">
+        <xsl:for-each
+            select="marc:subfield[@code = 'a']">
+            <rdawd:P10221><xsl:value-of select="."/></rdawd:P10221>
+        </xsl:for-each>
+        <xsl:for-each select=" marc:subfield[@code = '0']">
+            <rdawd:P10221><xsl:value-of select="."/></rdawd:P10221>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = '3']">
+            <rdawd:P10030>applies to: <xsl:value-of select="."/></rdawd:P10030>
+        </xsl:for-each>
+        <xsl:for-each
+            select="marc:subfield[@code = '1']">
+                <rdawo:P10221 rdf:resource="{.}"/>
+        </xsl:for-each>
+    </xsl:if>
+</xsl:template>
+    
 </xsl:stylesheet>
