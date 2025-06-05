@@ -235,12 +235,6 @@
                 <xsl:text> . </xsl:text>
             </xsl:if>
         </xsl:if>
-        
-        <xsl:if test="marc:subfield[@code = '5']">
-            <xsl:text>Applies to: </xsl:text>
-            <xsl:value-of select="normalize-space(uwf:s5NameLookup(marc:subfield[@code='5']))"/>
-            <xsl:text>. </xsl:text>
-        </xsl:if>
     </xsl:template>
 
         

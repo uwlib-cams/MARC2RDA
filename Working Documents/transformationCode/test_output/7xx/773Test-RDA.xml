@@ -49,9 +49,10 @@
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
       <rdamd:P30137>F 11111nam a2200553ui 4500
 F001 773-test
-F773 08 $6 880-00 $t Journal of Testing $x 1234-5678 $g Vol. 5, no. 2 (2020) $3 Print version $4 http://example.org/
-F880 08 $6 773-00 $a Test 880
-F773 ## $t Journal of Local Testing $x 8765-4321 $g Issue 1 (2021) $3 Digital copy $4 http://example.org/ $5 DLC
+F773 08 $6 880-01 $t Journal of Testing $x 1234-5678 $g Vol. 5, no. 2 (2020) $3 Print version $4 http://example.org/
+F880 08 $6 773-01 $a Test 880
+F773 ## $6 880-02 $t Journal of Local Testing $x 8765-4321 $g Issue 1 (2021) $3 Digital copy $4 http://example.org/ $5 DLC
+F880 ## $6 773-02 $t Test 880 for item $5 DLC
 </rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
@@ -70,9 +71,16 @@ F773 ## $t Journal of Local Testing $x 8765-4321 $g Issue 1 (2021) $3 Digital co
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc773-test"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
       <rdamd:P30276/>
+      <rdamd:P30137>Is part of: Journal of Testing; 1234-5678; Vol. 5, no. 2 (2020): Applies to: Print version. Relationship code or URI: http://example.org/ . </rdamd:P30137>
+      <rdamd:P30137>Is part of: Test 880: </rdamd:P30137>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/transform/ite#2025-06-05-0400d25e26"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-06-050100d25e26">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-06-05-0400d25e26">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40028>Is part of: Journal of Local Testing; 8765-4321; Issue 1 (2021): Applies to: Digital copy. Relationship code or URI: http://example.org/ . Applies to: United States, Library of Congress. </rdaid:P40028>
+      <rdaid:P40001>ite#2025-06-05-0400d25e26</rdaid:P40001>
+      <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
+      <rdaid:P40028>Is part of: Journal of Local Testing; 8765-4321; Issue 1 (2021): Applies to: Digital copy. Relationship code or URI: http://example.org/ . </rdaid:P40028>
+      <rdaid:P40028>Is part of: Test 880 for item: </rdaid:P40028>
+      <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/dlc"/>
    </rdf:Description>
 </rdf:RDF>

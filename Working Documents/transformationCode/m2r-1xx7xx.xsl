@@ -1089,17 +1089,74 @@
     </xsl:template>
     
 <!-- 773 Host Item Entry: item-level -->
+    
+    <!-- manifestation template -->
+    <!-- matches 773 field and an 880 code where $6 is 773-00 (unlinked 880) -->
+    <xsl:template 
+        match="marc:datafield[@tag = '773'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '773-00']"
+        mode="man" expand-text="yes">
+        <xsl:param name="baseID"/>
+        
+        <!-- if subfield $5 is present, create relationship to item -->
+        <xsl:choose>
+            <xsl:when test="marc:subfield[@code = '5']">
+                <!-- relationship from manifestation to item -->
+                <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseID, .)}"/>
+            </xsl:when>
+            
+            <!-- otherwise it's a note on manifestation -->
+            <xsl:otherwise>
+                <rdamd:P30137>
+                    <xsl:call-template name="F773-xx-abcdefghijklmnpqrstuvwxyz34"/>
+                </rdamd:P30137>
+                
+                <!-- also output note on manifestation for linked 880 (880s where code matches the $6 in the 773)-->
+                <xsl:if test="(@tag = '773') and (marc:subfield[@code = '6'])">
+                    <xsl:variable name="occNum" select="concat('773-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                    <xsl:for-each
+                        select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                        <rdamd:P30137>
+                            <xsl:call-template name="F773-xx-abcdefghijklmnpqrstuvwxyz34"/>
+                        </rdamd:P30137>
+                    </xsl:for-each>
+                </xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <!-- item template -->
     <xsl:template 
         match="marc:datafield[@tag = '773'][marc:subfield[@code = '5']] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '773-00' and marc:subfield[@code = '5']]"
-        mode="ite">
+        mode="ite" expand-text="yes">
         <xsl:param name="baseID"/>
+        <!-- manifestation IRI for the inverse relationship with the manifestation -->
+        <xsl:param name="manIRI"/>
+        <!-- id for the item identifier -->
+        <xsl:variable name="genID" select="generate-id()"/>
         <xsl:variable name="itemIRI" select="uwf:itemIRI($baseID, .)"/>
         
         <rdf:Description rdf:about="{$itemIRI}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+            <!-- item identifier -->
+            <rdaid:P40001>{concat('ite#',$baseID, $genID)}</rdaid:P40001>
+            <!-- inverse relationship with manifestation -->
+            <rdaio:P40049 rdf:resource="{$manIRI}"/>
             <rdaid:P40028>
                 <xsl:call-template name="F773-xx-abcdefghijklmnpqrstuvwxyz34"/>
             </rdaid:P40028>
+            <!-- also output note on item for linked 880 -->
+            <!-- we do it this way so that the 880 note and the 773 note that are linked will both connect to the same item  -->
+            <xsl:if test="(@tag = '773') and (marc:subfield[@code = '6'])">
+                <xsl:variable name="occNum" select="concat('773-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                <xsl:for-each
+                    select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                    <rdaid:P40028>
+                        <xsl:call-template name="F773-xx-abcdefghijklmnpqrstuvwxyz34"/>
+                    </rdaid:P40028>
+                </xsl:for-each>
+            </xsl:if>
+            <!-- relationship to $5 institution collection manifestation -->
+            <xsl:copy-of select="uwf:s5Lookup(marc:subfield[@code = '5'])"/>
         </rdf:Description>
     </xsl:template>
     
