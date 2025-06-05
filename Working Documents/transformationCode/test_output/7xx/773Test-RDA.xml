@@ -70,10 +70,9 @@ F773 ## $t Journal of Local Testing $x 8765-4321 $g Issue 1 (2021) $3 Digital co
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc773-test"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
       <rdamd:P30276/>
-      <rdam:P30137>Is part of: Journal of Testing; 1234-5678; Vol. 5, no. 2 (2020): Applies to: Print version. Relationship code or URI: http://example.org/ . </rdam:P30137>
-      <rdam:P30137>Is part of: Test 880: </rdam:P30137>
    </rdf:Description>
-   <rdamo:P30103 resource="http://marc2rda.edu/fake/transform/ite#2025-05-160100d25e26"/>
-   <rdaid:P40028 about="http://marc2rda.edu/fake/transform/ite#2025-05-160100d25e26">Is part of: Journal of Local Testing; 8765-4321; Issue 1 (2021): Applies to: Digital copy. Relationship code or URI: http://example.org/ . Applies to: United States, Library of
-                Congress. </rdaid:P40028>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-06-050100d25e26">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdaid:P40028>Is part of: Journal of Local Testing; 8765-4321; Issue 1 (2021): Applies to: Digital copy. Relationship code or URI: http://example.org/ . Applies to: United States, Library of Congress. </rdaid:P40028>
+   </rdf:Description>
 </rdf:RDF>

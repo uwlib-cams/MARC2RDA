@@ -1095,13 +1095,12 @@
         <xsl:param name="baseID"/>
         <xsl:variable name="itemIRI" select="uwf:itemIRI($baseID, .)"/>
         
-        <!-- Link the item to the manifestation -->
-        <rdamo:P30103 resource="{$itemIRI}"/>
-        
-        <!-- Note on the item itself -->
-        <rdaid:P40028 about="{$itemIRI}">
-            <xsl:call-template name="F773-xx-abcdefghijklmnpqrstuvwxyz34"/>
-        </rdaid:P40028>
+        <rdf:Description rdf:about="{$itemIRI}">
+            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+            <rdaid:P40028>
+                <xsl:call-template name="F773-xx-abcdefghijklmnpqrstuvwxyz34"/>
+            </rdaid:P40028>
+        </rdf:Description>
     </xsl:template>
     
 <!-- 774 Constituent Unit Entry -->
