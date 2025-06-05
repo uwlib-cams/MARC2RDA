@@ -811,7 +811,7 @@
         </xsl:for-each>
         <xsl:for-each
             select="marc:subfield[@code = '1']">
-                <rdaeo:P20215 rdf:resource="{.}"/>
+                <rdaeo:P20326 rdf:resource="{.}"/>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = '3']">
             <rdaeo:P20071>applies to: <xsl:value-of select="."/></rdaeo:P20071>
@@ -831,7 +831,7 @@
             <rdawd:P10221><xsl:value-of select="."/></rdawd:P10221>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = '3']">
-            <rdawd:P10030>applies to: <xsl:value-of select="."/></rdawd:P10030>
+            <rdawd:P10330>applies to: <xsl:value-of select="."/></rdawd:P10330>
         </xsl:for-each>
         <xsl:for-each
             select="marc:subfield[@code = '1']">

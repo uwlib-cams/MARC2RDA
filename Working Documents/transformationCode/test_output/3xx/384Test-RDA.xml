@@ -60,7 +60,7 @@ F384 0# $a C major $a D major $0 http://example.org/key/multiple
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc384-test1"/>
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
       <rdawd:P10221>2 representative</rdawd:P10221>
-      <rdawd:P10030>applies to: Prokofiev sonata no. 8</rdawd:P10030>
+      <rdawd:P10330>applies to: Prokofiev sonata no. 8</rdawd:P10330>
       <rdawo:P10221 rdf:resource="http://vocab.example.org/key/G-major"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
@@ -70,9 +70,9 @@ F384 0# $a C major $a D major $0 http://example.org/key/multiple
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
       <rdaed:P20326>1 key</rdaed:P20326>
       <rdaed:P20326>(DLC)example001</rdaed:P20326>
-      <rdaeo:P20215 rdf:resource="http://www.wikidata.org/wiki/Q12345"/>
+      <rdaeo:P20326 rdf:resource="http://www.wikidata.org/wiki/Q12345"/>
       <rdaed:P20326>Original key</rdaed:P20326>
-      <rdaeo:P20215 rdf:resource="http://vocab.example.org/key/C-major"/>
+      <rdaeo:P20326 rdf:resource="http://vocab.example.org/key/C-major"/>
       <rdaed:P20326>C major</rdaed:P20326>
       <rdaed:P20326>D major</rdaed:P20326>
       <rdaed:P20326>http://example.org/key/multiple</rdaed:P20326>
