@@ -257,6 +257,7 @@
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdamo:P30004 rdf:resource="{uwf:nomenIRI($baseID, ., ., 'isbn', 'nomen')}"/>
         </xsl:for-each>
+        
     </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '018'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '018']" 
@@ -1457,6 +1458,83 @@
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
+    
+    <!-- 086 - Government Document Classification Number -->
+    
+    <xsl:template match="marc:datafield[@tag = '086'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '086']" 
+        mode="man" expand-text="yes">
+        <xsl:param name="baseID"/>
+        <!-- Subfield a -->
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <rdamo:P30004 rdf:resource="{uwf:nomenIRI($baseID, ., ., '', 'nomen')}"/>
+        </xsl:for-each>
+        
+        <!-- Subfield z -->
+        <xsl:for-each select="marc:subfield[@code = 'z']">
+            <rdamo:P30004 rdf:resource="{uwf:nomenIRI($baseID, ., ., '', 'nomen')}"/>
+        </xsl:for-each>
+        
+        <!-- Subfield 0 -->
+        <xsl:for-each select="marc:subfield[@code = '0']">
+            <rdamd:P30004>
+                <xsl:value-of select="."/>
+            </rdamd:P30004>
+        </xsl:for-each>
+        
+        <!-- Subfield 1 (IRI) -->
+        <xsl:for-each select="marc:subfield[@code = '1']">
+            <rdamo:P30004 rdf:resource="{.}"/>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '086'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '086']" 
+        mode="nom">
+        <xsl:param name="baseID"/>
+        
+        <xsl:variable name="schemeCode">
+            <xsl:choose>
+                <xsl:when test="@ind1 = '0'">sudocs</xsl:when>
+                <xsl:when test="@ind1 = '1'">cacodoc</xsl:when>
+                <xsl:when test="marc:subfield[@code = '2']">
+                    <xsl:value-of select="marc:subfield[@code = '2'][1]"/>
+                </xsl:when>
+                <xsl:otherwise/>
+            </xsl:choose>
+        </xsl:variable>
+        
+        <!-- Process both subfield a and z together -->
+        <xsl:for-each select="marc:subfield[@code = 'a' or @code = 'z']">
+            <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., ., '', 'nomen')}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                <rdand:P80068>
+                    <xsl:value-of select="."/>
+                </rdand:P80068>
+                
+                <xsl:choose>
+                    <xsl:when test="$schemeCode = 'sudocs'">
+                        <rdand:P80069 rdf:resource="http://id.loc.gov/vocabulary/classSchemes/sudocs"/>
+                    </xsl:when>
+                    <xsl:when test="$schemeCode = 'cacodoc'">
+                        <rdand:P80069 rdf:resource="http://id.loc.gov/vocabulary/classSchemes/cacodoc"/>
+                    </xsl:when>
+                    <xsl:when test="../marc:subfield[@code = '2']">
+                        <xsl:sequence select="uwf:s2NomenClassSchemes($schemeCode)"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <rdand:P80069>
+                            <xsl:value-of select="$schemeCode"/>
+                        </rdand:P80069>
+                    </xsl:otherwise>
+                </xsl:choose>
+                
+                <!-- cancelled/invalid status only for subfield z -->
+                <xsl:if test="@code = 'z'">
+                    <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+                </xsl:if>
+            </rdf:Description>
+        </xsl:for-each>
+    </xsl:template>
+                       
     
     <!-- 088 - Report number -->
     <xsl:template match="marc:datafield[@tag = '088'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '088']" 
