@@ -378,14 +378,14 @@
             <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 5, 6) = $occNum]">
                 <xsl:choose>                       
                     <xsl:when test="@ind2 = ' '">
-                        <rdai:P40086>
+                        <rdaid:P40086>
                             <xsl:call-template name="F246-xx-noind"/>
-                        </rdai:P40086>
+                        </rdaid:P40086>
                     </xsl:when>
                     <xsl:otherwise>
-                        <rdai:P40028>
+                        <rdaid:P40028>
                             <xsl:call-template name="F246-xx-ind"/>
-                        </rdai:P40028>
+                        </rdaid:P40028>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:for-each>

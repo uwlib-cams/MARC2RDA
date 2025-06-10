@@ -3068,9 +3068,9 @@
                             <rdaw:P10004
                                 rdf:resource="{uwf:conceptIRI(../marc:subfield[@code = '2'][1], .)}"/>
                             <xsl:if test="../marc:subfield[@code = '3']">
-                                <rdamd:P30137>
+                                <rdawd:P10330>
                                     <xsl:text>Category of work {.} applies to the work's {../marc:subfield[@code = '3']}</xsl:text>
-                                </rdamd:P30137>
+                                </rdawd:P10330>
                             </xsl:if>
                         </xsl:for-each>
                     </xsl:if>
@@ -3082,9 +3082,9 @@
                             <xsl:value-of select="."/>
                         </rdawd:P10004>
                         <xsl:if test="../marc:subfield[@code = '3']">
-                            <rdamd:P30137>
+                            <rdawd:P10330>
                                 <xsl:text>Category of work {.} applies to the work's {../marc:subfield[@code = '3']}</xsl:text>
-                            </rdamd:P30137>
+                            </rdawd:P10330>
                         </xsl:if>
                     </xsl:for-each>
                 </xsl:otherwise>
