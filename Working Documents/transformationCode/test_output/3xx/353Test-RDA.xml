@@ -49,8 +49,9 @@
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
       <rdamd:P30137>F 11111nam a2200553ui 4500
 F001 353-test
-F353 ## $a index $b index $0 http://id.loc.gov/vocabulary/msupplcont/index $2 subfield2test
-F353 ## $a index $b index $3 subfield3test
+F353 ## $a bibliography $a index $a biography of creator $2 subfield2test
+F353 ## $a music $b music $1 http://www.wikidata.org/subfield1test $3 subfield3test
+F353 ## $a index $b index $0 http://id.loc.gov/vocabulary/msupplcont/index
 F880 ## $a 353-01 $b test 880
 </rdamd:P30137>
    </rdf:Description>
@@ -58,13 +59,6 @@ F880 ## $a 353-01 $b test 880
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc353-test"/>
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
-      <rdam:P30455>index</rdam:P30455>
-      <rdam:P30455 rdf:resource="index"/>
-      <rdam:P30455 rdf:resource="http://id.loc.gov/vocabulary/msupplcont/index"/>
-      <rdam:P30455 rdf:resource="subfield2test"/>
-      <rdam:P30455>index</rdam:P30455>
-      <rdam:P30455 rdf:resource="index"/>
-      <rdam:P30137>applies to: subfield3test</rdam:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -77,5 +71,16 @@ F880 ## $a 353-01 $b test 880
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc353-test"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
       <rdamd:P30276/>
+      <rdam:P30455>bibliography</rdam:P30455>
+      <rdam:P30455>index</rdam:P30455>
+      <rdam:P30455>biography of creator</rdam:P30455>
+      <rdam:P30455>subfield2test</rdam:P30455>
+      <rdam:P30455>music</rdam:P30455>
+      <rdam:P30455>music</rdam:P30455>
+      <rdam:P30137>applies to: subfield3test</rdam:P30137>
+      <rdam:P30455 rdf:resource="http://www.wikidata.org/subfield1test"/>
+      <rdam:P30455>index</rdam:P30455>
+      <rdam:P30455>index</rdam:P30455>
+      <rdam:P30455>http://id.loc.gov/vocabulary/msupplcont/index</rdam:P30455>
    </rdf:Description>
 </rdf:RDF>

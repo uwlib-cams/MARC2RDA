@@ -7,17 +7,25 @@
         <marc:controlfield tag="001">353-test</marc:controlfield>
         
         <marc:datafield tag="353" ind1=" " ind2=" ">
+            <marc:subfield code="a">bibliography</marc:subfield>
             <marc:subfield code="a">index</marc:subfield>
-            <marc:subfield code="b">index</marc:subfield>
-            <marc:subfield code="0">http://id.loc.gov/vocabulary/msupplcont/index</marc:subfield>
+            <marc:subfield code="a">biography of creator</marc:subfield>
             <marc:subfield code="2">subfield2test</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="353" ind1=" " ind2=" ">
+            <marc:subfield code="a">music</marc:subfield>
+            <marc:subfield code="b">music</marc:subfield>
+            <marc:subfield code="1">http://www.wikidata.org/subfield1test</marc:subfield>
+            <marc:subfield code="3">subfield3test</marc:subfield>
         </marc:datafield>
         
         <marc:datafield tag="353" ind1=" " ind2=" ">
             <marc:subfield code="a">index</marc:subfield>
             <marc:subfield code="b">index</marc:subfield>
-            <marc:subfield code="3">subfield3test</marc:subfield>
+            <marc:subfield code="0">http://id.loc.gov/vocabulary/msupplcont/index</marc:subfield>
         </marc:datafield>
+        
         
         <marc:datafield tag="880" ind1=" " ind2=" ">
             <marc:subfield code="a">353-01</marc:subfield>
