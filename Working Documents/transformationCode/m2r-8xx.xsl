@@ -57,7 +57,7 @@
         <xsl:variable name="tagType" select="uwf:tagType(.)"/>
         <xsl:variable name="workIRI" select="uwf:relWorkIRI($baseID, .)"/>
         <rdf:Description rdf:about="{$workIRI}">    
-            <rdf:type rdf:resource="https://www.rdaregistry.info/Elements/c/#C10001"/>
+            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
             <xsl:choose>
                 <xsl:when test="marc:subfield[@code = '2'] and uwf:s2EntityTest(marc:subfield[@code = '2'][1], 'work') = 'True'">
                     <rdawo:P10331 rdf:resource="{uwf:nomenIRI($baseID, ., uwf:relWorkAccessPoint(.), marc:subfield[@code = '2'][1], 'work')}"/>

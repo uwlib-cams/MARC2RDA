@@ -1,0 +1,387 @@
+<?xml version="1.0" ?>
+<lookupTable>
+  <entry>
+    <locCode>ha</locCode>
+    <locTerm>aperture card</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/ha</locURI>
+    <rdaTerm>aperture card</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1021</rdaIRI>
+    <rdaCurie>rdact:1021</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>sb</locCode>
+    <locTerm>audio belt</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/sb</locURI>
+    <rdaTerm>audio belt</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1070</rdaIRI>
+    <rdaCurie>rdact:1070</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>sg</locCode>
+    <locTerm>audio cartridge</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/sg</locURI>
+    <rdaTerm>audio cartridge</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1002</rdaIRI>
+    <rdaCurie>rdact:1002</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>se</locCode>
+    <locTerm>audio cylinder</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/se</locURI>
+    <rdaTerm>audio cylinder</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1003</rdaIRI>
+    <rdaCurie>rdact:1003</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>sd</locCode>
+    <locTerm>audio disc</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/sd</locURI>
+    <rdaTerm>audio disc</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1004</rdaIRI>
+    <rdaCurie>rdact:1004</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>sq</locCode>
+    <locTerm>audio roll</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/sq</locURI>
+    <rdaTerm>audio roll</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1006</rdaIRI>
+    <rdaCurie>rdact:1006</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>sw</locCode>
+    <locTerm>audio wire reel</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/sw</locURI>
+    <rdaTerm>audio wire reel</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1071</rdaIRI>
+    <rdaCurie>rdact:1071</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>ss</locCode>
+    <locTerm>audiocassette</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/ss</locURI>
+    <rdaTerm>audiocassette</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1007</rdaIRI>
+    <rdaCurie>rdact:1007</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>st</locCode>
+    <locTerm>audiotape reel</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/st</locURI>
+    <rdaTerm>audiotape reel</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1008</rdaIRI>
+    <rdaCurie>rdact:1008</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>no</locCode>
+    <locTerm>card</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/no</locURI>
+    <rdaTerm>card</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1045</rdaIRI>
+    <rdaCurie>rdact:1045</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>ck</locCode>
+    <locTerm>computer card</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/ck</locURI>
+    <rdaTerm>computer card</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1011</rdaIRI>
+    <rdaCurie>rdact:1011</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>cb</locCode>
+    <locTerm>computer chip cartridge</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/cb</locURI>
+    <rdaTerm>computer chip cartridge</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1012</rdaIRI>
+    <rdaCurie>rdact:1012</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>cd</locCode>
+    <locTerm>computer disc</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/cd</locURI>
+    <rdaTerm>computer disc</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1013</rdaIRI>
+    <rdaCurie>rdact:1013</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>ce</locCode>
+    <locTerm>computer disc cartridge</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/ce</locURI>
+    <rdaTerm>computer disc cartridge</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1014</rdaIRI>
+    <rdaCurie>rdact:1014</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>ca</locCode>
+    <locTerm>computer tape cartridge</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/ca</locURI>
+    <rdaTerm>computer tape cartridge</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1015</rdaIRI>
+    <rdaCurie>rdact:1015</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>cf</locCode>
+    <locTerm>computer tape cassette</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/cf</locURI>
+    <rdaTerm>computer tape cassette</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1016</rdaIRI>
+    <rdaCurie>rdact:1016</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>ch</locCode>
+    <locTerm>computer tape reel</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/ch</locURI>
+    <rdaTerm>computer tape reel</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1017</rdaIRI>
+    <rdaCurie>rdact:1017</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>mc</locCode>
+    <locTerm>film cartridge</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/mc</locURI>
+    <rdaTerm>film cartridge</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1032</rdaIRI>
+    <rdaCurie>rdact:1032</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>mf</locCode>
+    <locTerm>film cassette</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/mf</locURI>
+    <rdaTerm>film cassette</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1033</rdaIRI>
+    <rdaCurie>rdact:1033</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>mr</locCode>
+    <locTerm>film reel</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/mr</locURI>
+    <rdaTerm>film reel</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1034</rdaIRI>
+    <rdaCurie>rdact:1034</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>mo</locCode>
+    <locTerm>film roll</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/mo</locURI>
+    <rdaTerm>film roll</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1069</rdaIRI>
+    <rdaCurie>rdact:1069</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>gd</locCode>
+    <locTerm>filmslip</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/gd</locURI>
+    <rdaTerm>filmslip</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1035</rdaIRI>
+    <rdaCurie>rdact:1035</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>gf</locCode>
+    <locTerm>filmstrip</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/gf</locURI>
+    <rdaTerm>filmstrip</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1036</rdaIRI>
+    <rdaCurie>rdact:1036</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>gc</locCode>
+    <locTerm>filmstrip cartridge</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/gc</locURI>
+    <rdaTerm>filmstrip cartridge</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1037</rdaIRI>
+    <rdaCurie>rdact:1037</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>nn</locCode>
+    <locTerm>flipchart</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/nn</locURI>
+    <rdaTerm>flipchart</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1046</rdaIRI>
+    <rdaCurie>rdact:1046</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>he</locCode>
+    <locTerm>microfiche</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/he</locURI>
+    <rdaTerm>microfiche</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1022</rdaIRI>
+    <rdaCurie>rdact:1022</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>hf</locCode>
+    <locTerm>microfiche cassette</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/hf</locURI>
+    <rdaTerm>microfiche cassette</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1023</rdaIRI>
+    <rdaCurie>rdact:1023</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>hb</locCode>
+    <locTerm>microfilm cartridge</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/hb</locURI>
+    <rdaTerm>microfilm cartridge</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1024</rdaIRI>
+    <rdaCurie>rdact:1024</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>hc</locCode>
+    <locTerm>microfilm cassette</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/hc</locURI>
+    <rdaTerm>microfilm cassette</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1025</rdaIRI>
+    <rdaCurie>rdact:1025</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>hd</locCode>
+    <locTerm>microfilm reel</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/hd</locURI>
+    <rdaTerm>microfilm reel</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1026</rdaIRI>
+    <rdaCurie>rdact:1026</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>hj</locCode>
+    <locTerm>microfilm roll</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/hj</locURI>
+    <rdaTerm>microfilm roll</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1056</rdaIRI>
+    <rdaCurie>rdact:1056</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>hh</locCode>
+    <locTerm>microfilm slip</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/hh</locURI>
+    <rdaTerm>microfilm slip</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1027</rdaIRI>
+    <rdaCurie>rdact:1027</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>hg</locCode>
+    <locTerm>microopaque</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/hg</locURI>
+    <rdaTerm>microopaque</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1028</rdaIRI>
+    <rdaCurie>rdact:1028</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>pp</locCode>
+    <locTerm>microscope slide</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/pp</locURI>
+    <rdaTerm>microscope slide</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1030</rdaIRI>
+    <rdaCurie>rdact:1030</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>nr</locCode>
+    <locTerm>object</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/nr</locURI>
+    <rdaTerm>object</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1059</rdaIRI>
+    <rdaCurie>rdact:1059</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>cr</locCode>
+    <locTerm>online resource</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/cr</locURI>
+    <rdaTerm>online resource</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1018</rdaIRI>
+    <rdaCurie>rdact:1018</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>gt</locCode>
+    <locTerm>overhead transparency</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/gt</locURI>
+    <rdaTerm>overhead transparency</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1039</rdaIRI>
+    <rdaCurie>rdact:1039</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>na</locCode>
+    <locTerm>roll</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/na</locURI>
+    <rdaTerm>roll</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1047</rdaIRI>
+    <rdaCurie>rdact:1047</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>nb</locCode>
+    <locTerm>sheet</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/nb</locURI>
+    <rdaTerm>sheet</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1048</rdaIRI>
+    <rdaCurie>rdact:1048</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>gs</locCode>
+    <locTerm>slide</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/gs</locURI>
+    <rdaTerm>slide</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1040</rdaIRI>
+    <rdaCurie>rdact:1040</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>si</locCode>
+    <locTerm>sound track reel</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/si</locURI>
+    <rdaTerm>sound-track reel</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1005</rdaIRI>
+    <rdaCurie>rdact:1005</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>eh</locCode>
+    <locTerm>stereograph card</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/eh</locURI>
+    <rdaTerm>stereograph card</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1042</rdaIRI>
+    <rdaCurie>rdact:1042</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>es</locCode>
+    <locTerm>stereograph disc</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/es</locURI>
+    <rdaTerm>stereograph disc</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1043</rdaIRI>
+    <rdaCurie>rdact:1043</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>vc</locCode>
+    <locTerm>video cartridge</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/vc</locURI>
+    <rdaTerm>video cartridge</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1051</rdaIRI>
+    <rdaCurie>rdact:1051</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>vf</locCode>
+    <locTerm>videocassette</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/vf</locURI>
+    <rdaTerm>videocassette</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1052</rdaIRI>
+    <rdaCurie>rdact:1052</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>vd</locCode>
+    <locTerm>videodisc</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/vd</locURI>
+    <rdaTerm>videodisc</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1060</rdaIRI>
+    <rdaCurie>rdact:1060</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>vr</locCode>
+    <locTerm>videotape reel</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/vr</locURI>
+    <rdaTerm>videotape reel</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1053</rdaIRI>
+    <rdaCurie>rdact:1053</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>nc</locCode>
+    <locTerm>volume</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/carriers/nc</locURI>
+    <rdaTerm>volume</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDACarrierType/1049</rdaIRI>
+    <rdaCurie>rdact:1049</rdaCurie>
+  </entry>
+</lookupTable>
