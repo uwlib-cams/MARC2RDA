@@ -440,16 +440,7 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template match="marc:datafield[@tag = '246'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '246-00']"
-        mode="ite" expand-text="yes">
-        <xsl:param name="baseID"/>
-        <xsl:param name="manIRI"/>
-        <xsl:variable name="genID" select="generate-id()"/>
-        <xsl:if test="marc:subfield[@code = '5']">
-            <rdf:Description rdf:about="{uwf:itemIRI($baseID, .)}">
-                <!--<xsl:call-template name="getmarc"/>-->
-                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-                    <!--246 - Varying Form of Title -->
+    <!-- 246 -->
     <xsl:template match="marc:datafield[@tag = '246'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '246']"
         mode="man" expand-text="yes">
         <xsl:param name="baseID"/>
@@ -509,43 +500,6 @@
                 <rdaid:P40001>
                       <xsl:value-of select="concat('ite#', $baseID, $genID)"/>
                 </rdaid:P40001>
-                <rdaio:P40049 rdf:resource="{$manIRI}"/>
-                <xsl:copy-of select="uwf:s5Lookup(marc:subfield[@code = '5'])"/>
-                <xsl:choose>
-                    <!--has variant title of item-->
-                    <xsl:when test="@ind2 = '0' or @ind2 = '1' or @ind2 = '2' or @ind2 = '4' or @ind2 = '5' or @ind2 = '6' or @ind2 = '7' or @ind2 = '8' or marc:subfield[@code = 'i'] or marc:subfield[@code = 'g'] or marc:subfield[@code = 'h']">
-                        <rdaid:P40028>
-                            <xsl:call-template name="F246-xx-ind"/>
-                        </rdaid:P40028>
-                    </xsl:when>
-                    <!--has note on item-->
-                    <xsl:otherwise>
-                        <rdaid:P40086>
-                            <xsl:call-template name="F246-xx-noind"/>
-                        </rdaid:P40086>
-                    </xsl:otherwise>
-                </xsl:choose>
-                <!--test 880-->
-                <xsl:if test="marc:subfield[@code = '6'] and @tag = '246'">
-                    <xsl:variable name="occNum" select="substring(marc:subfield[@code = '6'], 5, 6)"/>
-                    <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 6, 2) = $occNum]">
-                        <xsl:choose>                       
-                            <xsl:when test="@ind2 = ' '">
-                                <rdaid:P40086>
-                                    <xsl:call-template name="F246-xx-noind"/>
-                                </rdaid:P40086>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <rdaid:P40028>
-                                    <xsl:call-template name="F246-xx-ind"/>
-                                </rdaid:P40028>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:for-each>
-                </xsl:if>
-            </rdf:Description>
-        </xsl:if>
-    </xsl:template>
                 <rdaio:P40049 rdf:resource="{$manIRI}"/>
                 <xsl:copy-of select="uwf:s5Lookup(marc:subfield[@code = '5'])"/>
                 <xsl:choose>
