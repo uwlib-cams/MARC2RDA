@@ -420,6 +420,7 @@
                     </xsl:when>
                 </xsl:choose>
             </xsl:variable>
+            
             <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
                 <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., ., $source, 'nomen')}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
@@ -1073,7 +1074,66 @@
             <rdaw:P10406><xsl:value-of select="marc:subfield[@code = '2']"/></rdaw:P10406>
         </xsl:if>
     </xsl:template>
- 
+    
+
+    <!-- 048 - Number of Musical Instruments or Voices Code -->
+    <xsl:template match="marc:datafield[@tag = '048'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '048']" 
+        mode="exp" expand-text="yes">
+        <xsl:param name="baseID"/>
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <xsl:variable name="source" select="following-sibling::marc:subfield[@code = 'a'][1]"/>
+            <rdaeo:P20215 rdf:resource="{uwf:nomenIRI($baseID, ., ., $source, 'nomen')}"/>
+        </xsl:for-each>
+        <xsl:for-each select=" marc:subfield[@code = 'b']">
+            <xsl:variable name="source" select="following-sibling::marc:subfield[@code = 'b'][1]"/>
+            <rdaeo:P20215 rdf:resource="{uwf:nomenIRI($baseID, ., ., $source, 'nomen')}"/>
+        </xsl:for-each>
+    </xsl:template> 
+
+    <xsl:template match="marc:datafield[@tag = '048'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '048']" 
+        mode="nom" expand-text="yes">
+        <xsl:param name="baseID"/>
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <xsl:variable name="source">
+                <xsl:choose>
+                    <xsl:when test="../@ind2 = '7'">
+                        <xsl:value-of select="following-sibling::marc:subfield[@code = '2'][1]"/>
+                    </xsl:when>
+                    <xsl:otherwise>marcmusperf</xsl:otherwise>
+                </xsl:choose>
+            </xsl:variable>
+            <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., ., $source, 'nomen')}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                <rdand:P80068>
+                    <xsl:text>Performer or ensemble: </xsl:text><xsl:value-of select="."/>
+                </rdand:P80068>
+                <xsl:if test="$source != ''">
+                    <xsl:sequence select="uwf:s2MusicCodeSchemes($source)"/>
+                </xsl:if>
+            </rdf:Description>
+        </xsl:for-each>
+        
+        <xsl:for-each select="marc:subfield[@code = 'b']">
+            <xsl:variable name="source">
+                <xsl:choose>
+                    <xsl:when test="../@ind2 = '7'">
+                        <xsl:value-of select="following-sibling::marc:subfield[@code = '2'][1]"/>
+                    </xsl:when>
+                    <xsl:otherwise>marcmusperf</xsl:otherwise>
+                </xsl:choose>
+            </xsl:variable>
+            <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., ., $source, 'nomen')}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                <rdand:P80068>
+                    <xsl:text>Soloist: </xsl:text><xsl:value-of select="."/>
+                </rdand:P80068>
+                <xsl:if test="$source != ''">
+                    <xsl:sequence select="uwf:s2MusicCodeSchemes($source)"/>
+                </xsl:if>
+            </rdf:Description>
+        </xsl:for-each>
+    </xsl:template>
+    
     <!-- 050 - Library of Congress Call Number -->
     <xsl:template match="marc:datafield[@tag = '050']" 
         mode="wor" expand-text="yes">

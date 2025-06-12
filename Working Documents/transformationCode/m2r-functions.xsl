@@ -272,6 +272,27 @@
         </xsl:choose>
     </xsl:function>
     
+    
+    <!-- lookup for field 048 -->   
+    <xsl:function name="uwf:s2MusicCodeSchemes" expand-text="true">
+        <xsl:param name="sub2"/>
+        <xsl:variable name="code2" select="replace($sub2, '\.$', '')"/>
+        <xsl:variable name="matchedcitation" select="key('schemeKey', concat('http://id.loc.gov/vocabulary/musiccodeschemes/', lower-case($code2)), $locMusicCodeSchemesDoc)/madsrdf:Authority"/>
+        <xsl:choose>
+            <xsl:when test="$matchedcitation">
+                <!-- Property with IRI -->
+                <rdan:P80069 rdf:resource="{concat('http://id.loc.gov/vocabulary/musiccodeschemes/', lower-case($code2))}"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:comment>IRI could not be found for {$code2}</xsl:comment>
+                <rdand:P80069>
+                    <xsl:value-of select="$code2"/>
+                </rdand:P80069>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
+    
     <!-- lookup for field 382 concepts -->
     <!-- there's a very small vocabulary for this, so it's worth a separate quicker function -->
     <xsl:function name="uwf:s2Concept382" expand-text="true">
