@@ -139,7 +139,7 @@
             <xsl:when test="$isAggregate = 'swe' or $isAggregate = 'aam'">
                             
                 <!-- variable for generating unique IRIs - currently date  -->
-                <xsl:variable name="baseID" select="current-date() => string() => uwf:stripAllPunctuation() => encode-for-uri()"/>
+                <xsl:variable name="baseID" select="current-dateTime() => string() => uwf:stripAllPunctuation() => encode-for-uri()"/>
                 
                 <!-- main WEM IRIs stored in variables -->
                 <xsl:variable name="mainWorkIRI" select="uwf:mainWorkIRI(.)"/>
