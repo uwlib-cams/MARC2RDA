@@ -932,14 +932,10 @@
     <xsl:template name="F338-string" expand-text="yes">
         <!-- if there are no usable IRIs, use literals -->
         <xsl:variable name="sub0Test">
-            <xsl:value-of select="if (some $sub0 in marc:subfield[@code='0'] 
-                satisfies contains($sub0, 'http'))then 'Yes' else 'No'"/>
+            <xsl:value-of select="if (some $sub0 in marc:subfield[@code = '0'] satisfies 
+                contains($sub0, 'http')) then 'Yes' else 'No'"/>
         </xsl:variable>
-        <xsl:variable name="sub1Test">
-            <xsl:value-of select="if (some $sub1 in marc:subfield[@code = '1']
-                satisfies contains($sub1, 'http'))then 'Yes'else 'No'"/>
-        </xsl:variable>
-        <xsl:if test="$sub0Test = 'No' and $sub1Test = 'No'">
+        <xsl:if test="not(marc:subfield[@code = '1']) and $sub0Test = 'No'">
             
             <!-- Pattern checks for abab matching -->
             <xsl:variable name="aTest" select="
@@ -1053,14 +1049,10 @@
 
     <xsl:template name="F338-concept">
         <xsl:variable name="sub0Test">
-            <xsl:value-of select="if (some $sub0 in marc:subfield[@code='0'] 
-                satisfies contains($sub0, 'http'))then 'Yes' else 'No'"/>
+            <xsl:value-of select="if (some $sub0 in marc:subfield[@code = '0'] satisfies 
+                contains($sub0, 'http')) then 'Yes' else 'No'"/>
         </xsl:variable>
-        <xsl:variable name="sub1Test">
-            <xsl:value-of select="if (some $sub1 in marc:subfield[@code = '1']
-                satisfies contains($sub1, 'http'))then 'Yes'else 'No'"/>
-        </xsl:variable>
-        <xsl:if test="$sub0Test = 'No' and $sub1Test = 'No'">
+        <xsl:if test="not(marc:subfield[@code = '1']) and $sub0Test = 'No'">
             <xsl:if test="marc:subfield[@code = '2']">
                 <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
                 <xsl:if test="not(matches($sub2, '^rdact|^rdacarrier'))">
