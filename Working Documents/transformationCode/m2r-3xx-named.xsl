@@ -932,7 +932,15 @@
     <xsl:template name="F338-string" expand-text="yes">
         <!-- if there are no usable IRIs, use literals -->
         <xsl:if
-            test="not(marc:subfield[@code = '1']) and (not(marc:subfield[@code = '0']) or not(starts-with(marc:subfield[@code = '0'], 'http')))">
+        <xsl:variable name="sub0Test">
+            <xsl:value-of select="if (some $sub0 in marc:subfield[@code='0'] 
+                satisfies contains($sub0, 'http'))then 'Yes' else 'No'"/>
+        </xsl:variable>
+        <xsl:variable name="sub1Test">
+            <xsl:value-of select="if (some $sub1 in marc:subfield[@code = '1']
+                satisfies contains($sub1, 'http'))then 'Yes'else 'No'"/>
+        </xsl:variable>
+        <xsl:if test="$sub0Test = 'No' and $sub1Test = 'No'">
             
             <!-- Pattern checks for abab matching -->
             <xsl:variable name="aTest" select="
@@ -947,12 +955,12 @@
                 <xsl:when test="marc:subfield[@code = '2']">
                     <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
                     <xsl:choose>
-                        <!-- when $2 starts with rda (but isn't 'rda'), we look up the $2 code and then the $a/$b terms from there-->
-                        <xsl:when test="matches($sub2, '^rda.+')">
+                        <!-- when $2 is specifically rdacarrier or rdact -->
+                        <xsl:when test="$sub2 = 'rdacarrier' or $sub2 = 'rdact'">
                             <!-- $a via Lookup338 -->
                             <xsl:for-each select="marc:subfield[@code = 'a']">
                                 <xsl:if test="not(matches(lower-case(.), 'other|unspecified'))">
-                                    <xsl:variable name="rdaIRI" select="document('lookup/Lookup338.xml')/lookupTable/entry[rdaTerm = normalize-space(.)]/rdaIRI"/>
+                                    <xsl:variable name="rdaIRI" select="document('lookup/Lookup338.xml')/lookupTable/entry[rdaTerm = normalize-space(.) or locTerm = normalize-space(.) or locCode = normalize-space(.)]/rdaIRI"/>
                                     <xsl:if test="$rdaIRI">
                                         <rdam:P30001 rdf:resource="{$rdaIRI}"/>
                                         <xsl:if test="../marc:subfield[@code = '3']">
@@ -967,7 +975,7 @@
                             <!-- $b via Lookup338 -->
                             <xsl:for-each select="marc:subfield[@code = 'b']">
                                 <xsl:if test="not(matches(lower-case(.), 'other|unspecified'))">
-                                    <xsl:variable name="rdaIRI" select="document('lookup/Lookup338.xml')/lookupTable/entry[locCode = normalize-space(.)]/rdaIRI"/>
+                                    <xsl:variable name="rdaIRI" select="document('lookup/Lookup338.xml')/lookupTable/entry[locCode = normalize-space(.) or locTerm = normalize-space(.) or rdaTerm = normalize-space(.)]/rdaIRI"/>
                                     <xsl:if test="$rdaIRI">
                                         <rdam:P30001 rdf:resource="{$rdaIRI}"/>
                                         <xsl:if test="../marc:subfield[@code = '3']">
@@ -980,10 +988,33 @@
                             </xsl:for-each>
                         </xsl:when>
 
-                        <!-- other $2s, we mint concepts -->
+                        <!-- if $2 is NOT rdacarrier or rdact, mint concepts -->
                         <xsl:otherwise>
-                            <xsl:call-template name="F338-concept"/>
+                            <xsl:for-each select="marc:subfield[@code = 'a']">
+                                <xsl:variable name="rdaIRI" select="
+                                    if ($sub2 = 'rdacontent' or $sub2 = 'rdaco') then
+                                    document('lookup/Lookup338.xml')/lookupTable/entry[
+                                    locCode = normalize-space(.) or locTerm = normalize-space(.) or rdaTerm = normalize-space(.)
+                                    ]/rdaIRI
+                                    else ''"/>
+                                <xsl:choose>
+                                    <xsl:when test="$rdaIRI">
+                                        <rdam:P30001 rdf:resource="{$rdaIRI}"/>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <rdam:P30001 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:for-each>
+                            
+                            <!-- If no $a but $b is present -->
+                            <xsl:if test="not(marc:subfield[@code = 'a']) and marc:subfield[@code = 'b']">
+                                <xsl:for-each select="marc:subfield[@code = 'b']">
+                                    <rdam:P30001 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
+                                </xsl:for-each>
+                            </xsl:if>
                         </xsl:otherwise>
+                        
                     </xsl:choose>
                 </xsl:when>
 
@@ -1004,11 +1035,13 @@
                     <xsl:for-each select="marc:subfield[@code = '0' or @code = '1']">
                         <xsl:variable name="uri" select="normalize-space(.)"/>
                         <xsl:choose>
-                            <xsl:when test="not(starts-with($uri, 'http'))"/>
-                            <xsl:when test="matches($uri, '/cz|/zu')">
+                            <xsl:when test="not(matches($uri, '^https?://'))"/>
+                            <xsl:when test="contains($uri, '/contentTypes/')"/>
+                            <xsl:when test="matches(lower-case($uri), 'other|unspecified')"/>
+                            <xsl:when test="matches($uri, '/(cz|zu)($|/)')">
                                 <rdamd:P30001>Unspecified</rdamd:P30001>
                             </xsl:when>
-                            <xsl:when test="document('lookup/Lookup338.xml')/lookupTable/entry[locURI = $uri or rdaIRI = $uri]"/>
+                            <xsl:when test="document('lookup/Lookup338.xml')/lookupTable/entry[rdaIRI = $uri or locURI = $uri]"/>
                             <xsl:otherwise>
                                 <rdamd:P30001><xsl:value-of select="$uri"/></rdamd:P30001>
                             </xsl:otherwise>
@@ -1020,8 +1053,15 @@
     </xsl:template>
 
     <xsl:template name="F338-concept">
-        <xsl:if
-            test="not(marc:subfield[@code = '1']) and not(contains(marc:subfield[@code = '0'], 'http'))">
+        <xsl:variable name="sub0Test">
+            <xsl:value-of select="if (some $sub0 in marc:subfield[@code='0'] 
+                satisfies contains($sub0, 'http'))then 'Yes' else 'No'"/>
+        </xsl:variable>
+        <xsl:variable name="sub1Test">
+            <xsl:value-of select="if (some $sub1 in marc:subfield[@code = '1']
+                satisfies contains($sub1, 'http'))then 'Yes'else 'No'"/>
+        </xsl:variable>
+        <xsl:if test="$sub0Test = 'No' and $sub1Test = 'No'">
             <xsl:if test="marc:subfield[@code = '2']">
                 <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
                 <xsl:if test="not(matches($sub2, '^rdact|^rdacarrier'))">
@@ -1125,7 +1165,9 @@
         <xsl:for-each select="marc:subfield[@code = '1']">
             <xsl:variable name="uri" select="normalize-space(.)"/>
             <xsl:choose>
-                <xsl:when test="matches($uri, '/cz|/zu')">
+                <xsl:when test="not(matches($uri, '^https?://'))"/>
+                <xsl:when test="contains($uri, '/contentTypes/')"/>
+                <xsl:when test="matches($uri, '/(cz|zu)($|/)')">
                     <rdam:P30001>Unspecified</rdam:P30001>
                 </xsl:when>
                 <xsl:otherwise>
@@ -1143,17 +1185,16 @@
             <xsl:for-each select="marc:subfield[@code = '0']">
                 <xsl:variable name="uri" select="normalize-space(.)"/>
                 <xsl:choose>
-                    <xsl:when test="not(starts-with($uri, 'http'))"/>
-                    <xsl:when test="matches($uri, '/cz|/zu')">
+                    <xsl:when test="not(matches($uri, '^https?://'))"/>
+                    <xsl:when test="contains($uri, '/contentTypes/')"/>
+                    <xsl:when test="matches($uri, '/(cz|zu)($|/)')">
                         <rdam:P30001>Unspecified</rdam:P30001>
                     </xsl:when>
                     <xsl:when test="document('lookup/Lookup338.xml')/lookupTable/entry[rdaIRI = $uri or locURI = $uri]">
                         <xsl:variable name="iri" select="document('lookup/Lookup338.xml')/lookupTable/entry[rdaIRI = $uri or locURI = $uri]/rdaIRI"/>
                         <rdam:P30001 rdf:resource="{$iri}"/>
                         <xsl:if test="../marc:subfield[@code = '3']">
-                            <rdamd:P30137>
-                                <xsl:text>Carrier type {$iri} applies to the manifestation's {../marc:subfield[@code = '3']}</xsl:text>
-                            </rdamd:P30137>
+                            <rdamd:P30137>Carrier type {$iri} applies to the manifestation's {../marc:subfield[@code = '3']}</rdamd:P30137>
                         </xsl:if>
                     </xsl:when>
                     <xsl:otherwise>
@@ -2320,7 +2361,7 @@
                             <xsl:when test="../marc:subfield[@code = '2']">
                                 <xsl:variable name="sub2" select="../marc:subfield[@code = '2'][1]"/>
                                 <xsl:choose>
-                                    <xsl:when test="matches($sub2, '^rda.+')">
+                                    <xsl:when test="starts-with($sub2, 'rda') and $sub2 != 'rda'">
                                         <xsl:variable name="rdaIRI"
                                             select="uwf:rdaTermLookup($sub2, $subfield)"/>
                                         <xsl:if test="$rdaIRI">
