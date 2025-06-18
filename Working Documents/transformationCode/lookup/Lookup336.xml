@@ -1,2 +1,187 @@
-<?xml version='1.0' encoding='utf-8'?>
-<lookupTable><entry><locCode>crd</locCode><locTerm>cartographic dataset</locTerm><locURI>http://id.loc.gov/vocabulary/contentTypes/crd</locURI><rdaTerm>cartographic dataset</rdaTerm><rdaIRI>http://rdaregistry.info/termList/RDAContentType/1001</rdaIRI><rdaCurie>rdaco:1001</rdaCurie></entry><entry><locCode>cri</locCode><locTerm>cartographic image</locTerm><locURI>http://id.loc.gov/vocabulary/contentTypes/cri</locURI><rdaTerm>cartographic image</rdaTerm><rdaIRI>http://rdaregistry.info/termList/RDAContentType/1002</rdaIRI><rdaCurie>rdaco:1002</rdaCurie></entry><entry><locCode>crm</locCode><locTerm>cartographic moving image</locTerm><locURI>http://id.loc.gov/vocabulary/contentTypes/crm</locURI><rdaTerm>cartographic moving image</rdaTerm><rdaIRI>http://rdaregistry.info/termList/RDAContentType/1003</rdaIRI><rdaCurie>rdaco:1003</rdaCurie></entry><entry><locCode>crt</locCode><locTerm>cartographic tactile image</locTerm><locURI>http://id.loc.gov/vocabulary/contentTypes/crt</locURI><rdaTerm>cartographic tactile image</rdaTerm><rdaIRI>http://rdaregistry.info/termList/RDAContentType/1004</rdaIRI><rdaCurie>rdaco:1004</rdaCurie></entry><entry><locCode>crn</locCode><locTerm>cartographic tactile three-dimensional form</locTerm><locURI>http://id.loc.gov/vocabulary/contentTypes/crn</locURI><rdaTerm>cartographic tactile three-dimensional form</rdaTerm><rdaIRI>http://rdaregistry.info/termList/RDAContentType/1005</rdaIRI><rdaCurie>rdaco:1005</rdaCurie></entry><entry><locCode>crf</locCode><locTerm>cartographic three-dimensional form</locTerm><locURI>http://id.loc.gov/vocabulary/contentTypes/crf</locURI><rdaTerm>cartographic three-dimensional form</rdaTerm><rdaIRI>http://rdaregistry.info/termList/RDAContentType/1006</rdaIRI><rdaCurie>rdaco:1006</rdaCurie></entry><entry><locCode>cod</locCode><locTerm>computer dataset</locTerm><locURI>http://id.loc.gov/vocabulary/contentTypes/cod</locURI><rdaTerm>computer dataset</rdaTerm><rdaIRI>http://rdaregistry.info/termList/RDAContentType/1007</rdaIRI><rdaCurie>rdaco:1007</rdaCurie></entry><entry><locCode>cop</locCode><locTerm>computer program</locTerm><locURI>http://id.loc.gov/vocabulary/contentTypes/cop</locURI><rdaTerm>computer program</rdaTerm><rdaIRI>http://rdaregistry.info/termList/RDAContentType/1008</rdaIRI><rdaCurie>rdaco:1008</rdaCurie></entry><entry><locCode>ntv</locCode><locTerm>notated movement</locTerm><locURI>http://id.loc.gov/vocabulary/contentTypes/ntv</locURI><rdaTerm>notated movement</rdaTerm><rdaIRI>http://rdaregistry.info/termList/RDAContentType/1009</rdaIRI><rdaCurie>rdaco:1009</rdaCurie></entry><entry><locCode>ntm</locCode><locTerm>notated music</locTerm><locURI>http://id.loc.gov/vocabulary/contentTypes/ntm</locURI><rdaTerm>notated music</rdaTerm><rdaIRI>http://rdaregistry.info/termList/RDAContentType/1010</rdaIRI><rdaCurie>rdaco:1010</rdaCurie></entry><entry><locCode>prm</locCode><locTerm>performed music</locTerm><locURI>http://id.loc.gov/vocabulary/contentTypes/prm</locURI><rdaTerm>performed music</rdaTerm><rdaIRI>http://rdaregistry.info/termList/RDAContentType/1011</rdaIRI><rdaCurie>rdaco:1011</rdaCurie></entry><entry><locCode>snd</locCode><locTerm>sounds</locTerm><locURI>http://id.loc.gov/vocabulary/contentTypes/snd</locURI><rdaTerm>sounds</rdaTerm><rdaIRI>http://rdaregistry.info/termList/RDAContentType/1012</rdaIRI><rdaCurie>rdaco:1012</rdaCurie></entry><entry><locCode>spw</locCode><locTerm>spoken word</locTerm><locURI>http://id.loc.gov/vocabulary/contentTypes/spw</locURI><rdaTerm>spoken word</rdaTerm><rdaIRI>http://rdaregistry.info/termList/RDAContentType/1013</rdaIRI><rdaCurie>rdaco:1013</rdaCurie></entry><entry><locCode>sti</locCode><locTerm>still image</locTerm><locURI>http://id.loc.gov/vocabulary/contentTypes/sti</locURI><rdaTerm>still image</rdaTerm><rdaIRI>http://rdaregistry.info/termList/RDAContentType/1014</rdaIRI><rdaCurie>rdaco:1014</rdaCurie></entry><entry><locCode>tci</locCode><locTerm>tactile image</locTerm><locURI>http://id.loc.gov/vocabulary/contentTypes/tci</locURI><rdaTerm>tactile image</rdaTerm><rdaIRI>http://rdaregistry.info/termList/RDAContentType/1015</rdaIRI><rdaCurie>rdaco:1015</rdaCurie></entry><entry><locCode>tcn</locCode><locTerm>tactile notated movement</locTerm><locURI>http://id.loc.gov/vocabulary/contentTypes/tcn</locURI><rdaTerm>tactile notated movement</rdaTerm><rdaIRI>http://rdaregistry.info/termList/RDAContentType/1017</rdaIRI><rdaCurie>rdaco:1017</rdaCurie></entry><entry><locCode>tcm</locCode><locTerm>tactile notated music</locTerm><locURI>http://id.loc.gov/vocabulary/contentTypes/tcm</locURI><rdaTerm>tactile notated music</rdaTerm><rdaIRI>http://rdaregistry.info/termList/RDAContentType/1016</rdaIRI><rdaCurie>rdaco:1016</rdaCurie></entry><entry><locCode>tct</locCode><locTerm>tactile text</locTerm><locURI>http://id.loc.gov/vocabulary/contentTypes/tct</locURI><rdaTerm>tactile text</rdaTerm><rdaIRI>http://rdaregistry.info/termList/RDAContentType/1018</rdaIRI><rdaCurie>rdaco:1018</rdaCurie></entry><entry><locCode>tcf</locCode><locTerm>tactile three-dimensional form</locTerm><locURI>http://id.loc.gov/vocabulary/contentTypes/tcf</locURI><rdaTerm>tactile three-dimensional form</rdaTerm><rdaIRI>http://rdaregistry.info/termList/RDAContentType/1019</rdaIRI><rdaCurie>rdaco:1019</rdaCurie></entry><entry><locCode>txt</locCode><locTerm>text</locTerm><locURI>http://id.loc.gov/vocabulary/contentTypes/txt</locURI><rdaTerm>text</rdaTerm><rdaIRI>http://rdaregistry.info/termList/RDAContentType/1020</rdaIRI><rdaCurie>rdaco:1020</rdaCurie></entry><entry><locCode>tdf</locCode><locTerm>three-dimensional form</locTerm><locURI>http://id.loc.gov/vocabulary/contentTypes/tdf</locURI><rdaTerm>three-dimensional form</rdaTerm><rdaIRI>http://rdaregistry.info/termList/RDAContentType/1021</rdaIRI><rdaCurie>rdaco:1021</rdaCurie></entry><entry><locCode>tdm</locCode><locTerm>three-dimensional moving image</locTerm><locURI>http://id.loc.gov/vocabulary/contentTypes/tdm</locURI><rdaTerm>three-dimensional moving image</rdaTerm><rdaIRI>http://rdaregistry.info/termList/RDAContentType/1022</rdaIRI><rdaCurie>rdaco:1022</rdaCurie></entry><entry><locCode>tdi</locCode><locTerm>two-dimensional moving image</locTerm><locURI>http://id.loc.gov/vocabulary/contentTypes/tdi</locURI><rdaTerm>two-dimensional moving image</rdaTerm><rdaIRI>http://rdaregistry.info/termList/RDAContentType/1023</rdaIRI><rdaCurie>rdaco:1023</rdaCurie></entry></lookupTable>
+<?xml version="1.0" ?>
+<lookupTable>
+  <entry>
+    <locCode>crd</locCode>
+    <locTerm>cartographic dataset</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/contentTypes/crd</locURI>
+    <rdaTerm>cartographic dataset</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDAContentType/1001</rdaIRI>
+    <rdaCurie>rdaco:1001</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>cri</locCode>
+    <locTerm>cartographic image</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/contentTypes/cri</locURI>
+    <rdaTerm>cartographic image</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDAContentType/1002</rdaIRI>
+    <rdaCurie>rdaco:1002</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>crm</locCode>
+    <locTerm>cartographic moving image</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/contentTypes/crm</locURI>
+    <rdaTerm>cartographic moving image</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDAContentType/1003</rdaIRI>
+    <rdaCurie>rdaco:1003</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>crt</locCode>
+    <locTerm>cartographic tactile image</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/contentTypes/crt</locURI>
+    <rdaTerm>cartographic tactile image</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDAContentType/1004</rdaIRI>
+    <rdaCurie>rdaco:1004</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>crn</locCode>
+    <locTerm>cartographic tactile three-dimensional form</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/contentTypes/crn</locURI>
+    <rdaTerm>cartographic tactile three-dimensional form</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDAContentType/1005</rdaIRI>
+    <rdaCurie>rdaco:1005</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>crf</locCode>
+    <locTerm>cartographic three-dimensional form</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/contentTypes/crf</locURI>
+    <rdaTerm>cartographic three-dimensional form</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDAContentType/1006</rdaIRI>
+    <rdaCurie>rdaco:1006</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>cod</locCode>
+    <locTerm>computer dataset</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/contentTypes/cod</locURI>
+    <rdaTerm>computer dataset</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDAContentType/1007</rdaIRI>
+    <rdaCurie>rdaco:1007</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>cop</locCode>
+    <locTerm>computer program</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/contentTypes/cop</locURI>
+    <rdaTerm>computer program</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDAContentType/1008</rdaIRI>
+    <rdaCurie>rdaco:1008</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>ntv</locCode>
+    <locTerm>notated movement</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/contentTypes/ntv</locURI>
+    <rdaTerm>notated movement</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDAContentType/1009</rdaIRI>
+    <rdaCurie>rdaco:1009</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>ntm</locCode>
+    <locTerm>notated music</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/contentTypes/ntm</locURI>
+    <rdaTerm>notated music</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDAContentType/1010</rdaIRI>
+    <rdaCurie>rdaco:1010</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>prm</locCode>
+    <locTerm>performed music</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/contentTypes/prm</locURI>
+    <rdaTerm>performed music</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDAContentType/1011</rdaIRI>
+    <rdaCurie>rdaco:1011</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>snd</locCode>
+    <locTerm>sounds</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/contentTypes/snd</locURI>
+    <rdaTerm>sounds</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDAContentType/1012</rdaIRI>
+    <rdaCurie>rdaco:1012</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>spw</locCode>
+    <locTerm>spoken word</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/contentTypes/spw</locURI>
+    <rdaTerm>spoken word</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDAContentType/1013</rdaIRI>
+    <rdaCurie>rdaco:1013</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>sti</locCode>
+    <locTerm>still image</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/contentTypes/sti</locURI>
+    <rdaTerm>still image</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDAContentType/1014</rdaIRI>
+    <rdaCurie>rdaco:1014</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>tci</locCode>
+    <locTerm>tactile image</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/contentTypes/tci</locURI>
+    <rdaTerm>tactile image</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDAContentType/1015</rdaIRI>
+    <rdaCurie>rdaco:1015</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>tcn</locCode>
+    <locTerm>tactile notated movement</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/contentTypes/tcn</locURI>
+    <rdaTerm>tactile notated movement</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDAContentType/1017</rdaIRI>
+    <rdaCurie>rdaco:1017</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>tcm</locCode>
+    <locTerm>tactile notated music</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/contentTypes/tcm</locURI>
+    <rdaTerm>tactile notated music</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDAContentType/1016</rdaIRI>
+    <rdaCurie>rdaco:1016</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>tct</locCode>
+    <locTerm>tactile text</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/contentTypes/tct</locURI>
+    <rdaTerm>tactile text</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDAContentType/1018</rdaIRI>
+    <rdaCurie>rdaco:1018</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>tcf</locCode>
+    <locTerm>tactile three-dimensional form</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/contentTypes/tcf</locURI>
+    <rdaTerm>tactile three-dimensional form</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDAContentType/1019</rdaIRI>
+    <rdaCurie>rdaco:1019</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>txt</locCode>
+    <locTerm>text</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/contentTypes/txt</locURI>
+    <rdaTerm>text</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDAContentType/1020</rdaIRI>
+    <rdaCurie>rdaco:1020</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>tdf</locCode>
+    <locTerm>three-dimensional form</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/contentTypes/tdf</locURI>
+    <rdaTerm>three-dimensional form</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDAContentType/1021</rdaIRI>
+    <rdaCurie>rdaco:1021</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>tdm</locCode>
+    <locTerm>three-dimensional moving image</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/contentTypes/tdm</locURI>
+    <rdaTerm>three-dimensional moving image</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDAContentType/1022</rdaIRI>
+    <rdaCurie>rdaco:1022</rdaCurie>
+  </entry>
+  <entry>
+    <locCode>tdi</locCode>
+    <locTerm>two-dimensional moving image</locTerm>
+    <locURI>http://id.loc.gov/vocabulary/contentTypes/tdi</locURI>
+    <rdaTerm>two-dimensional moving image</rdaTerm>
+    <rdaIRI>http://rdaregistry.info/termList/RDAContentType/1023</rdaIRI>
+    <rdaCurie>rdaco:1023</rdaCurie>
+  </entry>
+</lookupTable>
