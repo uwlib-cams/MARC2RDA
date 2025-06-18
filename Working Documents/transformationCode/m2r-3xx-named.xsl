@@ -931,7 +931,6 @@
     <!-- 338 -->
     <xsl:template name="F338-string" expand-text="yes">
         <!-- if there are no usable IRIs, use literals -->
-        <xsl:if
         <xsl:variable name="sub0Test">
             <xsl:value-of select="if (some $sub0 in marc:subfield[@code='0'] 
                 satisfies contains($sub0, 'http'))then 'Yes' else 'No'"/>
