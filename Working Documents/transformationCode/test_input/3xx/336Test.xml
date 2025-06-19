@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+  <marc:record>
+    <marc:leader>11111nam a2200553ui 4500</marc:leader>
+    <marc:controlfield tag="001">336-test</marc:controlfield>
+    <!--  If $0|$1 is NOT 'http' => do not map -->
+    <marc:datafield tag="336">
+      <marc:subfield code="1">htp</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336">
+      <marc:subfield code="0">hptt</marc:subfield>
+    </marc:datafield>
+    <!-- If $0|$1 matches 'xxx' OR 'zzz' => do not map -->
+    <marc:datafield tag="336">
+      <marc:subfield code="0">http://id.loc.gov/vocabulary/contentTypes/xxx</marc:subfield>
+    </marc:datafield>
+    <!-- If $0|$1 matches RDA IRI -->
+    <marc:datafield tag="336">
+      <marc:subfield code="1">http://rdaregistry.info/termList/RDAContentType/1001</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336">
+      <marc:subfield code="1">http://rdaregistry.info/termList/RDAContentType/1002</marc:subfield>
+      <marc:subfield code="1">http://rdaregistry.info/termList/RDAContentType/1003</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336">
+      <marc:subfield code="0">http://rdaregistry.info/termList/RDAContentType/1020</marc:subfield>
+    </marc:datafield>
+    <!-- If $0|$1 matches LOC URI -->
+    <marc:datafield tag="336">
+      <marc:subfield code="0">http://id.loc.gov/vocabulary/contentTypes/txt</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336">
+      <marc:subfield code="0">http://id.loc.gov/vocabulary/contentTypes/txt</marc:subfield>
+      <marc:subfield code="0">http://id.loc.gov/vocabulary/contentTypes/sti</marc:subfield>
+    </marc:datafield>
+    <!-- If $0|$1 not in RDA or LOC => map as given -->
+    <marc:datafield tag="336">
+      <marc:subfield code="0">http://id.loc.gov/vocabulary/contentTypes/tic</marc:subfield>
+    </marc:datafield>
+    <!-- If no $2 and $a -->
+    <marc:datafield tag="336">
+      <marc:subfield code="a">spoken word</marc:subfield>
+    </marc:datafield>
+    <!-- If $2 = rdacontent/rdaco and $a = other/unspecified => do not map -->
+    <marc:datafield tag="336">
+      <marc:subfield code="a">other</marc:subfield>
+      <marc:subfield code="2">rdacontent</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336">
+      <marc:subfield code="a">unspecified</marc:subfield>
+      <marc:subfield code="2">rdacontent</marc:subfield>
+    </marc:datafield>
+    <!-- If $2 = rdaco/rdacontent and $a = RDA TERM + $0 valid -->
+    <marc:datafield tag="336">
+      <marc:subfield code="a">notated music</marc:subfield>
+      <marc:subfield code="2">rdacontent</marc:subfield>
+      <marc:subfield code="0">http://id.loc.gov/vocabulary/contentTypes/snd</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336">
+      <marc:subfield code="a">computer program</marc:subfield>
+      <marc:subfield code="a">text</marc:subfield>
+      <marc:subfield code="2">rdaco</marc:subfield>
+    </marc:datafield>
+    <!-- $a wrong: $a = code -->
+    <marc:datafield tag="336">
+      <marc:subfield code="a">ntv</marc:subfield>
+      <marc:subfield code="2">rdacontent</marc:subfield>
+    </marc:datafield>
+    <!-- $2 not RDA source: mint $a as concept -->
+    <marc:datafield tag="336">
+      <marc:subfield code="a">map</marc:subfield>
+      <marc:subfield code="2">rdact</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336">
+      <marc:subfield code="a">cartographic image</marc:subfield>
+      <marc:subfield code="2">rdacon</marc:subfield>
+    </marc:datafield>
+    <!-- If no $2, $b -->
+    <marc:datafield tag="336">
+      <marc:subfield code="b">cri</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336">
+      <marc:subfield code="a">notated music</marc:subfield>
+      <marc:subfield code="b">ntm</marc:subfield>
+    </marc:datafield>
+    <!-- $b is 'xxx' or 'zzz' -->
+    <marc:datafield tag="336">
+      <marc:subfield code="b">zzz</marc:subfield>
+      <marc:subfield code="2">rdacontent</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336">
+      <marc:subfield code="b">xxx</marc:subfield>
+      <marc:subfield code="2">rdacontent</marc:subfield>
+    </marc:datafield>
+    <!-- Valid $b with rdaco/rdacontent -->
+    <marc:datafield tag="336">
+      <marc:subfield code="b">ntv</marc:subfield>
+      <marc:subfield code="2">rdaco</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336">
+      <marc:subfield code="b">sti</marc:subfield>
+      <marc:subfield code="b">spw</marc:subfield>
+      <marc:subfield code="2">rdacontent</marc:subfield>
+    </marc:datafield>
+    <!-- Valid $b wrongly holds term -->
+    <marc:datafield tag="336">
+      <marc:subfield code="b">three-dimensional form</marc:subfield>
+      <marc:subfield code="2">rdaco</marc:subfield>
+    </marc:datafield>
+    <!-- Mint $b as concept if $2 not RDA source -->
+    <marc:datafield tag="336">
+      <marc:subfield code="a">sounds</marc:subfield>
+      <marc:subfield code="b">snd</marc:subfield>
+      <marc:subfield code="2">rdact</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336">
+      <marc:subfield code="b">spw</marc:subfield>
+      <marc:subfield code="2">rdact</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336">
+      <marc:subfield code="b">swp</marc:subfield>
+      <marc:subfield code="2">rdact</marc:subfield>
+    </marc:datafield>
+    <!-- $3 note -->
+    <marc:datafield tag="336">
+      <marc:subfield code="a">two-dimensional moving image</marc:subfield>
+      <marc:subfield code="b">tdi</marc:subfield>
+      <marc:subfield code="2">rdacontent</marc:subfield>
+      <marc:subfield code="3">guide</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336">
+      <marc:subfield code="3">CD-ROM</marc:subfield>
+      <marc:subfield code="a">text</marc:subfield>
+      <marc:subfield code="b">txt</marc:subfield>
+      <marc:subfield code="2">rdacontent</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336">
+      <marc:subfield code="3">braille pages:</marc:subfield>
+      <marc:subfield code="a">tactile text</marc:subfield>
+      <marc:subfield code="b">tct</marc:subfield>
+      <marc:subfield code="2">rdacontent</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+</marc:collection>
