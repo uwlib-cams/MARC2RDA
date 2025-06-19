@@ -17,9 +17,6 @@ Her interest is RDA implemented as linked data. She participates in different pr
 **-Tynan Challenor [tynancuw](https://github.com/tynancuw), Mapping Contributor, Transformation Contributor**<br>
 _Tynan Challenor is a second year PhD student in economics. He works as a linked metadata student specialist for UW libraries and as a consultant for the Center for Social Science Computation and Research. He works on applied microeconomics and is interested in computational methods in research and science._ 
 <br><br>
-**-Doreen Chen [dchen077](https://github.com/dchen077), Mapping Contributor, Transformation Contributor**<br>
-_Doreen Chen (she/her/hers) is a second-year residential student currently pursuing her Master of Library and Information Science degree at the University of Washington. She works as a Linked Data Metadata Student Specialist at the University of Washington Libraries and contributes to MARC2RDA among other projects. Her academic interests include open data, data curation, and metadata management._
-<br><br>
 **-Sarah Collins [Sarahanc](https://github.com/Sarahanc), Transformation Contributor**<br>
 _Sarah Collins (she/her/hers) is a graduate student pursuing a Master of Library and Information Science at the University of Washington where she works as a Linked Data Metadata Student Specialist. She has academic and professional interests in cataloging, metadata, taxonomy, and open linked data._
 <br><br>
@@ -35,9 +32,6 @@ _Cate Gerhart is the Head of the Monographic Service Unit in the University of W
 **-Matthew Hill, [MHill-BL](https://github.com/MHill-BL), Transformation Contributor**<br>
 _Matthew Hill is a Collection Metadata Analyst at the British Library, where he specialises in data transformation, metadata standardisation, and collection analysis. He has developed workflows using Python and XSLT, including a transformation system for converting XML to MARC21. Knowledge of library encoding such as MARC21 and standards including  RDA and MODS. As a Wikimedia Champion, he contributes to Linked Data initiatives._
 <br><br>
-**-Sara Hruska [sarahruska](https://github.com/sarahruska), Mapping Contributor, Student Consultant**<br>
-_Sara Hruska (she/her/hers) is a third-year online student pursuing her Master of Library and Information Science degree at the University of Washington. She works as a Linked Data Metadata Student Specialist at the University of Washington Libraries, contributing to mapping MARC21 to RDA. Her academic focus includes knowledge organization, metadata management, and information architecture. She's interested in the relationships between people, information, and technology and designing their interactions._
-<br><br>
 **-Ebe Kartus [corialanus](https://github.com/corialanus), Mapping Contributor**<br>
 _Ebe Kartus is currently the Team Leader, Serials Cataloguing Team at the National Library of New Zealand which she joined at the beginning of 2023. Previously she has worked in a number of different Library environments in Australia. She is a past Chair of ACOC and current member of ORDAC. She is a past member of the RSC as the ORDAC representative and the Wider Community Engagement Officer._
 <br><br>
@@ -49,6 +43,8 @@ _Junghae Lee is an Electronic Resources Metadata Librarian and Co-Interim Head o
 <br><br>
 **-Cypress Payne [cspayne](https://github.com/cspayne), Conversion Contributor**<br>
 _Cypress Payne (she/her/hers) is the Metadata and Cataloging Librarian at West Virginia University. She earned her Master of Library and Information Science at the University of Washington-Seattle and holds a bachelor's degree in Computer Science. She contributes to the transformation in the MARC21 to RDA project, and led the transformation work as an employee at the University of Washington Libraries from 2022 to 2025._
+<br><br>
+**-Abhignya Rajapu [arajapu](https://github.com/arajapu), Transformation Contributor**<br>
 <br><br>
 **-Adam Schiff [AdamSchiff](https://github.com/AdamSchiff), Mapping Contributor**<br>
 _Adam L. Schiff is Principal Cataloger at the University of Washington Libraries (UWL), in Seattle, USA. He served as a lead advisor for the UWL’s participation in the Program for Cooperative Cataloging’s (PCC) Wikidata Pilot Project. Adam has been a member of the PCC Standing Committee on Standards, and served on a number of PCC task groups, including the Task Group on Linked Data Best Practices, the Task Group on URIs in MARC, the Linked Data Advisory Committee/Identity Management Advisory Committee URIs Guidance Subgroup, and coordinator of the UW Libraries’ participation in the PCC URIs in MARC Pilot Project. He is currently a consultant on Wikidata for the Task Group on Linked Data Training. He is one of two American Library Association representatives on the North American RDA Committee, and a former member of the Core Subject Analysis Committee, and the MARC Advisory Committee. Adam has an A.B. in biology from Cornell University, and an M.L.I.S. from the University of California, Berkeley._
@@ -68,6 +64,12 @@ _Zhuo Pan is currently a Resource Description Resident Librarian at Duke Univers
 _Pengyan Sun (she/her/hers) earned her MLIS at University of Washington-Seattle. She worked as a Library Linked Data Metadata Student Specialist and Metadata Project Specialist at the University of Washington Libraries, contributing to mapping MARC21 to RDA. Pengyan is also interested in Chinese Cataloging and Metadata, and now works at UC Davis Libraries as a Cataloger._ <br><br>
 **-Benjamin Riesenberg [briesenberg07](https://github.com/briesenberg07), Metadata Consultant, General**<br>
 _Benjamin Riesenberg (they/them) was  formerly a Metadata Librarian at the University of Washington Libraries and former co-chair of the ALA Core Linked Data Interest Group (2020-2022). They contributed to linked data and other metadata initiatives including authoring and testing RDA/RDF metadata application profiles, conversion of MARC data for use in the GeoBlacklight discovery environment, and metadata creation and remediation in multiple digital collections and digital scholarship platforms at the University of Washington._
+<br><br>
+**-Doreen Chen [dchen077](https://github.com/dchen077), Mapping Contributor, Transformation Contributor**<br>
+_Doreen Chen (she/her/hers) is a second-year residential student currently pursuing her Master of Library and Information Science degree at the University of Washington. She works as a Linked Data Metadata Student Specialist at the University of Washington Libraries and contributes to MARC2RDA among other projects. Her academic interests include open data, data curation, and metadata management._
+<br><br>
+**-Sara Hruska [sarahruska](https://github.com/sarahruska), Mapping Contributor, Student Consultant**<br>
+_Sara Hruska (she/her/hers) is a third-year online student pursuing her Master of Library and Information Science degree at the University of Washington. She works as a Linked Data Metadata Student Specialist at the University of Washington Libraries, contributing to mapping MARC21 to RDA. Her academic focus includes knowledge organization, metadata management, and information architecture. She's interested in the relationships between people, information, and technology and designing their interactions._
 <br><br>
 **-Ying-Hsiang Huang [hinxcode](https://github.com/hinxcode), Mapping Contributor, Transformation Contributor**<br>
 _Ying-Hsiang Huang (he/him) is currently a second-year residential Master of Library and Information Science student at the University of Washington-Seattle. He was formerly a Library Linked Data Metadata Student Specialist at the University of Washington Libraries from 2024 to 2025, where he contributed to mapping MARC21 to RDA among other linked data projects. With a robust background in software engineering, he is committed to enhancing library services through digital transformation initiatives._
