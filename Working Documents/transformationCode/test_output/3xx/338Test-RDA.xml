@@ -39,7 +39,7 @@
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc338-test1"/>
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
       <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#otherunspecifiedvideocassettefilmstriprollcardmicrofichetextcrotherothervideocarriervolumevideotapereelaudiodiscvolumeslideflipchartssvolumeaudiodiscvolumecomputerdiscaudiodiscvolume"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#otherunspecifiedvideocassettefilmstriprollcardmicrofichetextcrotherothervideocarriervolumevideotapereelaudiodiscvolumeslideflipchartssvolumeaudiodiscvolumecomputerdiscaudiodiscvolumechengce"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc338-test1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
@@ -85,6 +85,8 @@ F338 ## $3 Book $a volume $b tnc $2 rdacarrier
 F338 ## $3 CDROM $a computer disc $b cd $2 rdacarrier
 F338 ## $a audio disc $2 rdacarrier $3 audio disc
 F338 ## $a volume $2 rdacarrier $3 program notes
+F338 ## $6 880-09 $a cheng ce $b nc $2 rdacarrier/chi
+F880 ## $6 338-09 $a 成冊 $b nc $2 rdacarrier/chi
 </rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
@@ -95,14 +97,14 @@ F338 ## $a volume $2 rdacarrier $3 program notes
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc338-test1"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#otherunspecifiedvideocassettefilmstriprollcardmicrofichetextcrotherothervideocarriervolumevideotapereelaudiodiscvolumeslideflipchartssvolumeaudiodiscvolumecomputerdiscaudiodiscvolume"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#otherunspecifiedvideocassettefilmstriprollcardmicrofichetextcrotherothervideocarriervolumevideotapereelaudiodiscvolumeslideflipchartssvolumeaudiodiscvolumecomputerdiscaudiodiscvolumechengce"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#otherunspecifiedvideocassettefilmstriprollcardmicrofichetextcrotherothervideocarriervolumevideotapereelaudiodiscvolumeslideflipchartssvolumeaudiodiscvolumecomputerdiscaudiodiscvolume">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#otherunspecifiedvideocassettefilmstriprollcardmicrofichetextcrotherothervideocarriervolumevideotapereelaudiodiscvolumeslideflipchartssvolumeaudiodiscvolumecomputerdiscaudiodiscvolumechengce">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc338-test1"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
-      <rdamd:P30276>otherunspecifiedvideocassettefilmstriprollcardmicrofichetextcrotherother video carriervolumevideotape reelaudio discvolumeslide flipchartssvolumeaudio discvolumecomputer discaudio discvolume</rdamd:P30276>
+      <rdamd:P30276>otherunspecifiedvideocassettefilmstriprollcardmicrofichetextcrotherother video carriervolumevideotape reelaudio discvolumeslide flipchartssvolumeaudio discvolumecomputer discaudio discvolumecheng ce</rdamd:P30276>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType1004"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1013"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
@@ -144,5 +146,9 @@ F338 ## $a volume $2 rdacarrier $3 program notes
       <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#cd"/>
       <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#audiodisc"/>
       <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#volume"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrierchi/con#chengce"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrierchi/con#nc"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrierchi/con#%E6%88%90%E5%86%8A"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrierchi/con#nc"/>
    </rdf:Description>
 </rdf:RDF>

@@ -155,5 +155,17 @@
       <marc:subfield code="2">rdacarrier</marc:subfield>
       <marc:subfield code="3">program notes</marc:subfield>
     </marc:datafield>
+    <marc:datafield tag="338" ind1=" " ind2=" " >
+      <marc:subfield code="6">880-09</marc:subfield>
+      <marc:subfield code="a">cheng ce</marc:subfield>
+      <marc:subfield code="b">nc</marc:subfield>
+      <marc:subfield code="2">rdacarrier/chi</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="880" ind1=" " ind2=" " >
+      <marc:subfield code="6">338-09</marc:subfield>
+      <marc:subfield code="a">成冊</marc:subfield>
+      <marc:subfield code="b">nc</marc:subfield>
+      <marc:subfield code="2">rdacarrier/chi</marc:subfield>
+    </marc:datafield>
   </marc:record>
 </marc:collection>
