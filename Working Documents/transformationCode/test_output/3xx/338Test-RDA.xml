@@ -39,7 +39,7 @@
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc338-test1"/>
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
       <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#audiodiscvideodiscaudiodiscaudiodiscaudiodiscvolumeotheraudiodisconlineresourceaudiodiscunspecifiedcarrierimaginarycarriervolumevolumevideocassettefilmstriprollotherunspecifiedcardmicrofichehetextcrothervolumevideotapereelothervideocarrieraudiodiscvolumeslideflipchartssvolumeaudiodisccomputerdisctexttactiletext"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#otherunspecifiedvideocassettefilmstriprollcardmicrofichetextcrotherothervideocarriervolumevideotapereelaudiodiscvolumeslideflipchartssvolumeaudiodiscvolumecomputerdiscaudiodiscvolume"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc338-test1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
@@ -49,58 +49,42 @@
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
       <rdamd:P30137>F 11111nam a2200553ui 4500
 F001 338-test1
-F338 ## $a audio disc $a videodisc $3 test3
-F338 ## $b sd $3 test3
-F338 ## $a audio disc $b sd $2 rdacarrier $3 test3
-F338 ## $a audio disc $b 1004 $2 rdact $3 test3
-F338 ## $1 http://id.loc.gov/vocabulary/carriers/sd $3 test3
-F338 ## $a audio disc $0 (uri)http://id.loc.gov/vocabulary/carriers/sd $3 test3
-F338 ## $a volume $b made up b $a other $b made up b 2 $2 made up source $3 test3
-F338 ## $a audio disc $b made up b $b made up b 2 $2 source $3 test3
-F338 ## $b made up b $2 source $3 test3
-F338 ## $6 880-01 $a online resource $b cr $2 source
-F880 ## $6 338-01 $a test 880 a $b test 880 b $2 source
-F880 ## $6 338-00 $b sd $2 source
-F338 ## $0 notalink $a audio disc
-F338 ## $0 http://id.loc.gov/vocabulary/carriers/cz $a unspecified carrier
-F338 ## $0 http://example.org/fake $a imaginary carrier
-F338 ## $2 rdacarrir $a volume $b nc
-F338 ## $1 http://id.loc.gov/vocabulary/carriers/nc $1 http://id.loc.gov/vocabulary/carriers/sd $a volume
 F338 ## $1 htp
 F338 ## $0 hptt
-F338 ## $1 http://rdaregistry.info/termListRDACarrierType1004
+F338 ## $0 http://id.loc.gov/vocabulary/carriers/zu
+F338 ## $1 http://rdaregistry.info/termList/RDACarrierType1004
 F338 ## $1 http://rdaregistry.info/termList/RDACarrierType/1013 $1 http://rdaregistry.info/termList/RDACarrierType/1049
 F338 ## $0 http://rdaregistry.info/termList/RDACarrierType/1060
 F338 ## $0 http://id.loc.gov/vocabulary/carriers/mr
 F338 ## $0 http://id.loc.gov/vocabulary/carriers/nc $0 http://id.loc.gov/vocabulary/carriers/gs
-F338 ## $0 http://id.loc.gov/vocabulary/contentTypes/xxx
 F338 ## $0 http://id.loc.gov/vocabulary/carriers/fg
+F338 ## $a other $2 rdacarrier
+F338 ## $a unspecified $2 rdacarrier
 F338 ## $a videocassette
 F338 ## $a filmstrip $2 rdaco
 F338 ## $a roll $2 rdacrrier
-F338 ## $a other $2 rdacarrier
-F338 ## $a unspecified $2 rdacarrier
-F338 ## $a card $2 rdacarrier $0 http://id.loc.gov/vocabulary/carriers/no
-F338 ## $a microfiche $a he $2 rdacarrie
-F338 ## $a text $2 rdact $0 http://rdaregistry.info/termList/RDACarrierType/1049
+F338 ## $a card $2 rdacarrier $0 http://rdaregistry.info/termList/RDACarrierType/1045
+F338 ## $a microfiche $2 rdact
+F338 ## $a text $2 rdact
 F338 ## $a cr $2 rdacarrier
 F338 ## $a other $2 rdacarrier
+F338 ## $b vz $2 rdacarrier
+F338 ## $b zu $2 rdacarrier
 F338 ## $b nb
 F338 ## $a volume $b nc
 F338 ## $a videotape reel $b vr $2 rdacontent
 F338 ## $b spw $2 rdaco
-F338 ## $b vz $2 rdacarrier
-F338 ## $b zu $2 rdacarrier
 F338 ## $b nr $2 rdact
 F338 ## $b sd $b nc $2 rdacarrier
 F338 ## $a slide $b gst $a flipchart $b nn $2 rdacarrier
 F338 ## $a ss $b ss $2 rdacarrier $0 http://rdaregistry.info/termList/RDACarrierType/1007
 F338 ## $b audio cartridge $2 rdact
-F338 ## $3 Book $a volume $b nc $2 rdacarrier
+F338 ## $a volume $b nc $2 rdacarrier
 F338 ## $a audio disc $b sd $2 rdacarrier $3 booklet
-F338 ## $3 CD-ROM $a computer disc $b cd $2 rdacarrier
-F338 ## $a text $b txt $2 rdacarrier
-F338 ## $3 braille pages: $a tactile text $b tct $2 rdacarrier
+F338 ## $3 Book $a volume $b tnc $2 rdacarrier
+F338 ## $3 CDROM $a computer disc $b cd $2 rdacarrier
+F338 ## $a audio disc $2 rdacarrier $3 audio disc
+F338 ## $a volume $2 rdacarrier $3 program notes
 </rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
@@ -111,97 +95,54 @@ F338 ## $3 braille pages: $a tactile text $b tct $2 rdacarrier
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc338-test1"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#audiodiscvideodiscaudiodiscaudiodiscaudiodiscvolumeotheraudiodisconlineresourceaudiodiscunspecifiedcarrierimaginarycarriervolumevolumevideocassettefilmstriprollotherunspecifiedcardmicrofichehetextcrothervolumevideotapereelothervideocarrieraudiodiscvolumeslideflipchartssvolumeaudiodisccomputerdisctexttactiletext"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#otherunspecifiedvideocassettefilmstriprollcardmicrofichetextcrotherothervideocarriervolumevideotapereelaudiodiscvolumeslideflipchartssvolumeaudiodiscvolumecomputerdiscaudiodiscvolume"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#audiodiscvideodiscaudiodiscaudiodiscaudiodiscvolumeotheraudiodisconlineresourceaudiodiscunspecifiedcarrierimaginarycarriervolumevolumevideocassettefilmstriprollotherunspecifiedcardmicrofichehetextcrothervolumevideotapereelothervideocarrieraudiodiscvolumeslideflipchartssvolumeaudiodisccomputerdisctexttactiletext">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#otherunspecifiedvideocassettefilmstriprollcardmicrofichetextcrotherothervideocarriervolumevideotapereelaudiodiscvolumeslideflipchartssvolumeaudiodiscvolumecomputerdiscaudiodiscvolume">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc338-test1"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
-      <rdamd:P30276>audio disc videodiscaudio discaudio discaudio discvolume otheraudio disconline resourceaudio discunspecified carrierimaginary carriervolumevolumevideocassettefilmstriprollotherunspecifiedcardmicrofiche hetextcrothervolumevideotape reelother video carrieraudio discvolumeslide flipchartssvolumeaudio disccomputer disctexttactile text</rdamd:P30276>
-      <rdamd:P30001>audio disc</rdamd:P30001>
-      <rdamd:P30137>Carrier type audio disc applies to the manifestation's test3</rdamd:P30137>
-      <rdamd:P30001>videodisc</rdamd:P30001>
-      <rdamd:P30137>Carrier type videodisc applies to the manifestation's test3</rdamd:P30137>
-      <rdamd:P30001>sd</rdamd:P30001>
-      <rdamd:P30137>Carrier type sd applies to the manifestation's test3</rdamd:P30137>
-      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/sd"/>
-      <rdamd:P30137>Carrier type http://id.loc.gov/vocabulary/carriers/sd applies to the manifestation's test3</rdamd:P30137>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/madeupsource/con#volume"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/madeupsource/con#other"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/source/con#audiodisc"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/source/con#madeupb"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/source/con#onlineresource"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/source/con#test880a"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/source/con#sd"/>
-      <rdamd:P30001>audio disc</rdamd:P30001>
-      <rdam:P30001>Unspecified</rdam:P30001>
-      <rdam:P30001>http://example.org/fake</rdam:P30001>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrir/con#volume"/>
-      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
-      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/sd"/>
-      <rdam:P30001 rdf:resource="http://rdaregistry.info/termListRDACarrierType1004"/>
+      <rdamd:P30276>otherunspecifiedvideocassettefilmstriprollcardmicrofichetextcrotherother video carriervolumevideotape reelaudio discvolumeslide flipchartssvolumeaudio discvolumecomputer discaudio discvolume</rdamd:P30276>
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType1004"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1013"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1060"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1034"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1040"/>
-      <rdam:P30001>http://id.loc.gov/vocabulary/carriers/fg</rdam:P30001>
+      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/fg"/>
       <rdamd:P30001>videocassette</rdamd:P30001>
       <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdaco/con#filmstrip"/>
       <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacrrier/con#roll"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1045"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrie/con#microfiche"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrie/con#he"/>
-      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdact/con#microfiche"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdact/con#text"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#cr"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#vz"/>
       <rdamd:P30001>nb</rdamd:P30001>
       <rdamd:P30001>volume</rdamd:P30001>
       <rdamd:P30001>nc</rdamd:P30001>
       <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacontent/con#videotapereel"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacontent/con#vr"/>
       <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdaco/con#spw"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdact/con#nr"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#sd"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#nc"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#slide"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#gst"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#flipchart"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#nn"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1007"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/madeupsource/con#volume">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>volume</skos:prefLabel>
-      <skos:notation>made up b</skos:notation>
-      <!--IRI could not be found for made up source-->
-      <skos:inScheme>made up source</skos:inScheme>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/madeupsource/con#other">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>other</skos:prefLabel>
-      <skos:notation>made up b 2</skos:notation>
-      <!--IRI could not be found for made up source-->
-      <skos:inScheme>made up source</skos:inScheme>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/source/con#audiodisc">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>audio disc</skos:prefLabel>
-      <!--IRI could not be found for source-->
-      <skos:inScheme>source</skos:inScheme>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/source/con#madeupb">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>made up b</skos:prefLabel>
-      <!--IRI could not be found for source-->
-      <skos:inScheme>source</skos:inScheme>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/source/con#onlineresource">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>online resource</skos:prefLabel>
-      <skos:notation>cr</skos:notation>
-      <!--IRI could not be found for source-->
-      <skos:inScheme>source</skos:inScheme>
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>test 880 a</skos:prefLabel>
-      <skos:notation>test 880 b</skos:notation>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/source/con#sd">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>sd</skos:prefLabel>
-      <!--IRI could not be found for source-->
-      <skos:inScheme>source</skos:inScheme>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdact/con#audiocartridge"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#volume"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#nc"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#audiodisc"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#sd"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#volume"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#tnc"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#computerdisc"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#cd"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#audiodisc"/>
+      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#volume"/>
    </rdf:Description>
 </rdf:RDF>
