@@ -1011,7 +1011,6 @@
                         </xsl:otherwise>
                         
                     </xsl:choose>
-                                </xsl:otherwise>
                 </xsl:when>
 
                 <!-- no $2 -->
