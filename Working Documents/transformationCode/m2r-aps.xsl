@@ -221,7 +221,7 @@
     <xsl:function name="uwf:mainWorkAccessPoint">
         <xsl:param name="record"/>
         <xsl:choose>
-            <!-- 130 -->
+            <!-- 130 titleWAP -->
             <xsl:when test="$record/marc:datafield[@tag = '130']">
                 <xsl:variable name="ap">
                     <xsl:value-of select="$record/marc:datafield[@tag = '130']/marc:subfield[@code = 'a']
@@ -230,11 +230,11 @@
                         | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'n'] 
                         | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'p']
                         | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 't']
-                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'g']"/>
+                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'g'][not(preceding-sibling::marc:subfield[@code = 'f' or @code = 'l' or @code = 'm' or @code = 'o' or @code = 's'])]"/>
                 </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
             </xsl:when>
-            <!-- 100 + 240 -->
+            <!-- 100 + 240 NameX00 +TitleWAP -->
             <xsl:when test="$record/marc:datafield[@tag = '100'] and $record/marc:datafield[@tag = '240']">
                 <xsl:variable name="ap">
                     <!-- 100 name subfields -->
@@ -250,11 +250,11 @@
                         | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'n'] 
                         | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'p']
                         | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 't']
-                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'g']"/>
+                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'g'][not(preceding-sibling::marc:subfield[@code = 'f' or @code = 'l' or @code = 'm' or @code = 'o' or @code = 's'])]"/>
                 </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
             </xsl:when>
-            <!-- 110 + 240 -->
+            <!-- 110 + 240 NameX10 +TitleWAP-->
             <xsl:when test="$record/marc:datafield[@tag = '110'] and $record/marc:datafield[@tag = '240']">
                 <xsl:variable name="ap">
                     <!-- 110 name subfields -->
@@ -270,11 +270,11 @@
                         | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'n'] 
                         | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'p']
                         | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 't']
-                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'g']"/>
+                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'g'][not(preceding-sibling::marc:subfield[@code = 'f' or @code = 'l' or @code = 'm' or @code = 'o' or @code = 's'])]"/>
                 </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
             </xsl:when>
-            <!-- 111 + 240 -->
+            <!-- 111 + 240 NameX11 +TitleWAP-->
             <xsl:when test="$record/marc:datafield[@tag = '111'] and $record/marc:datafield[@tag = '240']">
                 <xsl:variable name="ap">
                     <!-- 111 name subfields -->
@@ -290,11 +290,11 @@
                         | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'n'] 
                         | $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'p']
                         | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 't']
-                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'g']"/>
+                        | $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'g'][not(preceding-sibling::marc:subfield[@code = 'f' or @code = 'l' or @code = 'm' or @code = 'o' or @code = 's'])]"/>
                 </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
             </xsl:when>
-            <!-- 100 + 245 -->
+            <!-- 100 + 245 NameX00 +Title245-->
             <xsl:when test="$record/marc:datafield[@tag = '100'] and $record/marc:datafield[@tag = '245']">
                 <xsl:variable name="ap">
                     <!-- 100 name subfields -->
@@ -308,7 +308,7 @@
                 </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
             </xsl:when>
-            <!-- 110 + 245 -->
+            <!-- 110 + 245 NameX10 +Title245-->
             <xsl:when test="$record/marc:datafield[@tag = '110'] and $record/marc:datafield[@tag = '245']">
                 <xsl:variable name="ap">
                     <!-- 110 name subfields -->
@@ -322,7 +322,7 @@
                 </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
             </xsl:when>
-            <!-- 111 + 245 -->
+            <!-- 111 + 245 NameX11 +Title245-->
             <xsl:when test="$record/marc:datafield[@tag = '111'] and$record/marc:datafield[@tag = '245']">
                 <xsl:variable name="ap">
                     <!-- 111 name subfields -->
@@ -336,7 +336,7 @@
                 </xsl:variable>
                 <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
             </xsl:when>
-            <!-- just 245 -->
+            <!-- just 245 Title245-->
             <xsl:when test="$record/marc:datafield[@tag = '245'] 
                 and not($record/marc:datafield[@tag = '100'] or $record/marc:datafield[@tag = '110'] or $record/marc:datafield[@tag = '111'])">
                 <!-- name subfields of the first 7XX ind2 != 2 in the field  -->
