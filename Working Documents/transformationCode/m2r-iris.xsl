@@ -240,7 +240,6 @@
                                 <xsl:value-of select="$BASE||'transform/exp#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainExpressionAccessPoint($record)))"/>
                             </xsl:otherwise>
                         </xsl:choose>
-                        <xsl:value-of select="$record/marc:datafield[@tag = '240']/marc:subfield[@code = '1']"/>
                     </xsl:when>
                     <xsl:when test="$record/marc:datafield[@tag = '240'][marc:subfield[@code = '2']] and 
                         not($record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
