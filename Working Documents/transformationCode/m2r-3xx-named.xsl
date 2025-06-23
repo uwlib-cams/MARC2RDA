@@ -997,7 +997,11 @@
                                         <rdam:P30001 rdf:resource="{$rdaIRI}"/>
                                     </xsl:when>
                                     <xsl:otherwise>
+                                        <!-- don't mint a concept URI for an 880 that's already linked to another concept -->
+                                        <xsl:if
+                                            test="../@tag = '338' or substring(../marc:subfield[@code = '6'], 1, 6) = '338-00'">
                                         <rdam:P30001 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
+                                        </xsl:if>
                                     </xsl:otherwise>
                                 </xsl:choose>
                             </xsl:for-each>
@@ -1055,7 +1059,7 @@
         <xsl:if test="not(marc:subfield[@code = '1']) and $sub0Test = 'No'">
             <xsl:if test="marc:subfield[@code = '2']">
                 <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
-                <xsl:if test="not(matches($sub2, '^rdact|^rdacarrier'))">
+                <xsl:if test="not($sub2 = 'rdacarrier' or $sub2 = 'rdact')">
                     <xsl:variable name="linked880">
                          <xsl:if test="@tag = '338' and marc:subfield[@code = '6']">
                              <xsl:variable name="occNum"
@@ -1065,7 +1069,7 @@
                              />
                          </xsl:if>
                      </xsl:variable>
-                     <xsl:if test="not(matches($sub2, '^rda.+'))">
+                    <xsl:if test="not($sub2 = 'rdacarrier' or $sub2 = 'rdact')">
      
                          <xsl:variable name="aTest" select="
                                  if (every $a in ./marc:subfield[@code = 'a']
@@ -3046,7 +3050,6 @@
                 </xsl:when>
             </xsl:choose>
         </rdamd:P30137>
-
     </xsl:template>
 
     <!-- 380 -->
