@@ -36,7 +36,20 @@ F534 ## $p Reproduction of: $a Frederick, John. $t Femme nue en plein air, $b 1s
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc534-test01"/><!--rdamo:P30462 = is manifestation described with metadata by-->
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30137>Reproduction of</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Reproduction of:</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Frederick, John</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Femme nue en plein air</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>1st ed</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>1876</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>1 art original : oil, col. ; 79 x 64 cm</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>In Louvre Museum, Paris</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>(International series of monographs on electromagnetic waves ; v. 4)</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>American journal of theology and philosophy</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>at scale 1:50,000</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>F. Lamb Sculp</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Finlandia Records FACD357</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>0228-913X</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>0385061781 (v. 1)</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc534-test01">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -75,6 +88,7 @@ F534 ## $a Frederick, John. $t Femme nue en plein air, $b 1st ed. $c 1876. $e 1 
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc534-test01"/><!--rdamo:P30462 = is manifestation described with metadata by-->
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30137>Original Version Note:</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30137>Frederick, John</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30137>Femme nue en plein air</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30137>1st ed</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
