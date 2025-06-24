@@ -858,5 +858,79 @@
         </xsl:for-each>
     </xsl:if>
 </xsl:template>
+
+<!-- 388 Time Period of Creation -->
+    <xsl:template match="marc:datafield[@tag = '388'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '388']" mode="wor">
+        <xsl:param name="baseID"/>
+        <!--<xsl:call-template name="getmarc"/>-->  
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <rdawo:P10317 rdf:resource="{uwf:timespanIRI($baseID, .., .)}"/>         
+        </xsl:for-each> 
+        <xsl:for-each select="marc:subfield[@code = '0']">
+            <xsl:if test="starts-with(., 'http://')">
+                <rdawo:P10317 rdf:resource="{.}"/>
+            </xsl:if>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = '1']">
+            <rdawo:P10317 rdf:resource="{.}"/>
+        </xsl:for-each> 
+        <xsl:if test="marc:subfield[@code = '3']">
+            <rdawd:P10330>
+                <xsl:text>Timespan related to work </xsl:text>
+                <xsl:value-of select="marc:subfield[@code = 'a'] [1]"/>
+                <xsl:text> applies to </xsl:text>
+                <xsl:value-of select="marc:subfield[@code = '3']"/>
+            </rdawd:P10330>
+        </xsl:if>
+    </xsl:template>    
+    
+    <xsl:template match="marc:datafield[@tag = '388'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '388']" mode="tim">
+        <xsl:param name="baseID"/>
+        <!--create variables to test whether s2Nomen output includes IRI and has scheme-->
+        <xsl:variable name="testScheme" select="uwf:s2Nomen(marc:subfield[@code = '2'])"/>
+        <xsl:variable name="schemeElement" select="$testScheme[self::rdan:P80069 or self::rdand:P80069]"/>
+        <!--<xsl:call-template name="getmarc"/>--> 
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <xsl:choose>            
+                <!--only mint nomenIRI when $2 has a scheme-->
+                <xsl:when test="$schemeElement/@rdf:resource">
+                    <rdf:Description rdf:about="{uwf:timespanIRI($baseID, .., .)}">
+                        <rdato:P70009 rdf:resource="{uwf:nomenIRI($baseID, .., ., marc:subfield[@code = '2'], 'timespan')}"/>
+                        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+                    </rdf:Description>
+                </xsl:when>
+                <!--otherwise use string value of $a-->
+                <xsl:otherwise>
+                    <rdatd:P70015>
+                        <xsl:value-of select="."/>
+                    </rdatd:P70015>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = '0']">
+            <xsl:if test="not(starts-with(., 'http://'))">
+                <rdatd:P70018>
+                    <xsl:value-of select="."/>
+                </rdatd:P70018>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template> 
+    
+    <xsl:template match="marc:datafield[@tag = '388'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '388']" mode="nom">
+        <xsl:param name="baseID"/>
+        <xsl:variable name="testScheme" select="uwf:s2Nomen(marc:subfield[@code = '2'])"/>
+        <xsl:variable name="schemeElement" select="$testScheme[self::rdan:P80069 or self::rdand:P80069]"/>
+        <!--<xsl:call-template name="getmarc"/>-->   
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <rdf:Description rdf:about="{uwf:nomenIRI($baseID, .., ., marc:subfield[@code = '2'], 'timespan')}">       
+                <rdano:P80068>
+                    <xsl:value-of select="."/>
+                </rdano:P80068>
+            </rdf:Description>
+        </xsl:for-each>
+        <xsl:if test="marc:subfield[@code = '2']">
+            <xsl:copy-of select="$schemeElement"/>
+        </xsl:if>
+    </xsl:template>
     
 </xsl:stylesheet>
