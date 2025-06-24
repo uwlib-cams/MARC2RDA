@@ -87,7 +87,7 @@
                     <xsl:value-of select="$code0"/>
                 </xsl:when>
                 <xsl:when test="starts-with($code0, '(')">
-                    <xsl:value-of select="substring-after($code0, ')')"/>
+                    <xsl:value-of select="normalize-space(substring-after($code0, ')'))"/>
                 </xsl:when>
                 <xsl:otherwise/>
             </xsl:choose>
