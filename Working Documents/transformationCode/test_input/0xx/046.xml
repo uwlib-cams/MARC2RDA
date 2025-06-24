@@ -96,7 +96,7 @@
 
         <!-- $m -->
         <marc:datafield tag="046" ind1="1" ind2=" ">
-            <marc:subfield code="l">Test m</marc:subfield>
+            <marc:subfield code="m">Test m</marc:subfield>
         </marc:datafield>
 
         <!-- $n -->
