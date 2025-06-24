@@ -105,6 +105,7 @@ F880 ## $6 338-09 $a 成冊 $b nc $2 rdacarrier/chi
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc338-test1"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
       <rdamd:P30276>otherunspecifiedvideocassettefilmstriprollcardmicrofichetextcrotherother video carriervolumevideotape reelaudio discvolumeslide flipchartssvolumeaudio discvolumecomputer discaudio discvolumecheng ce</rdamd:P30276>
+      <rdam:P30001>Unspecified</rdam:P30001>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType1004"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1013"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
@@ -112,43 +113,49 @@ F880 ## $6 338-09 $a 成冊 $b nc $2 rdacarrier/chi
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1034"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1040"/>
-      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/fg"/>
+      <rdam:P30001>http://id.loc.gov/vocabulary/carriers/fg</rdam:P30001>
       <rdamd:P30001>videocassette</rdamd:P30001>
       <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdaco/con#filmstrip"/>
       <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacrrier/con#roll"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1045"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdact/con#microfiche"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdact/con#text"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#cr"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#vz"/>
       <rdamd:P30001>nb</rdamd:P30001>
       <rdamd:P30001>volume</rdamd:P30001>
       <rdamd:P30001>nc</rdamd:P30001>
       <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacontent/con#videotapereel"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacontent/con#vr"/>
       <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdaco/con#spw"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdact/con#nr"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#sd"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#nc"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#slide"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#gst"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#flipchart"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#nn"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1007"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdact/con#audiocartridge"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#volume"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#nc"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#audiodisc"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#sd"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#volume"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#tnc"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#computerdisc"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#cd"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#audiodisc"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrier/con#volume"/>
       <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrierchi/con#chengce"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrierchi/con#nc"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrierchi/con#%E6%88%90%E5%86%8A"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrierchi/con#nc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rdaco/con#filmstrip">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>filmstrip</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rdaco"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rdacrrier/con#roll">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>roll</skos:prefLabel>
+      <!--IRI could not be found for rdacrrier-->
+      <skos:inScheme>rdacrrier</skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rdacontent/con#videotapereel">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>videotape reel</skos:prefLabel>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q132159381">vr</skos:notation>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rdaco/con#spw">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>spw</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rdaco"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rdacarrierchi/con#chengce">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>cheng ce</skos:prefLabel>
+      <skos:notation>nc</skos:notation>
+      <!--IRI could not be found for rdacarrier/chi-->
+      <skos:inScheme>rdacarrier/chi</skos:inScheme>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>成冊</skos:prefLabel>
+      <skos:notation>nc</skos:notation>
    </rdf:Description>
 </rdf:RDF>
