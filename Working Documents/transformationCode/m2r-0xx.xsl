@@ -1495,6 +1495,66 @@
             </rdf:Description>
         </xsl:if>
     </xsl:template>
+
+        
+    <!-- 083 - Additional Dewey Decimal Classification Number -->
+    <xsl:template match="marc:datafield[@tag = '083'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '083']" mode="wor" expand-text="yes">
+        <!--<xsl:call-template name="getmarc"/>-->
+        <xsl:variable name="scheme">
+            <xsl:choose>
+                <xsl:when test="@ind1 = '0'">
+                    <xsl:text>ddcFull</xsl:text>
+                    <xsl:if test="marc:subfield[@code = '2']">
+                        <xsl:value-of select="marc:subfield[@code = '2']"/>
+                    </xsl:if>
+                </xsl:when>
+                <xsl:when test="@ind1 = '1'">
+                    <xsl:text>ddcAbridged</xsl:text>
+                    <xsl:if test="marc:subfield[@code = '2']">
+                        <xsl:value-of select="marc:subfield[@code = '2']"/>
+                    </xsl:if>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:text>ddc</xsl:text>
+                    <xsl:if test="marc:subfield[@code = '2']">
+                        <xsl:value-of select="marc:subfield[@code = '2']"/>
+                    </xsl:if>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:variable name="ap">
+            <xsl:value-of select="marc:subfield[@code = 'a']"/>
+        </xsl:variable>
+        <xsl:if test="marc:subfield[@code = 'a']">
+            <rdawo:P10256 rdf:resource="{uwf:conceptIRI($scheme, $ap)}"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '083'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '083']" mode="con" expand-text="yes">
+        <xsl:variable name="scheme">
+            <xsl:choose>                
+                <xsl:when test="@ind1 = '0'">    
+                    <xsl:text>ddc</xsl:text>
+                    <xsl:if test="marc:subfield[@code = '2']">
+                        <xsl:value-of select="substring(marc:subfield[@code = '2'], 1, 2)"/>
+                    </xsl:if>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:text>ddc</xsl:text>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:variable name="ap">
+            <xsl:for-each select="marc:subfield[@code = 'a']">
+                <xsl:value-of select="translate(., ' ', '')"/>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:if test="marc:subfield[@code = 'a']">
+            <rdf:Description rdf:about="{uwf:conceptIRI($scheme, $ap)}">
+                <xsl:copy-of select="uwf:fillClassConcept($scheme, $ap, $ap, '083')"/>
+            </rdf:Description>
+        </xsl:if>
+    </xsl:template>
     
     <!-- 084 - Other Classification Number -->
     <xsl:template match="marc:datafield[@tag = '084'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '084']" 
