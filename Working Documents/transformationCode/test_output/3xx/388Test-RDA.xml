@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
+         xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwf="http://universityOfWashington/functions"
+         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="'http://marc2rda.edu/fake/'transform/wor#marc388-test1">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>388-test1</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc388-test1</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="'http://marc2rda.edu/fake/'transform/man#marc388-test1"/>
+      <rdawo:P10621 rdf:resource="'http://marc2rda.edu/fake/'transform/wor#"/>
+      <rdawo:P10615 rdf:resource="'http://marc2rda.edu/fake/'transform/exp#"/>
+      <rdawo:P10617 rdf:resource="'http://marc2rda.edu/fake/'transform/man#"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="'http://marc2rda.edu/fake/'transform/man#marc388-test1">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="'http://marc2rda.edu/fake/'transform/wor#marc388-test1"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc388-test1</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 388-test1
+F388 ## $a Twentieth century $2 lcsh
+F388 ## $a Twenty-first century $2 lcsh
+F388 ## $a Fourteenth century $2 lcsh
+F388 ## $a Fifteenth century $2 lcsh
+F388 ## $a Sixteenth century $2 lcsh
+F388 ## $a Seventeenth century $2 lcsh
+F388 ## $a Eighteenth century $2 rand
+F388 ## $a Nineteenth century $2 lcsh
+F388 ## $a Twentieth century $2 rand
+</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="'http://marc2rda.edu/fake/'transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="'http://marc2rda.edu/fake/'transform/wor#marc388-test1"/>
+      <rdawo:P10078 rdf:resource="'http://marc2rda.edu/fake/'transform/exp#"/>
+      <rdawo:P10317 rdf:resource="'http://marc2rda.edu/fake/'lcsh/tim#twentiethcentury"/>
+      <rdawo:P10317 rdf:resource="'http://marc2rda.edu/fake/'lcsh/tim#twenty-firstcentury"/>
+      <rdawo:P10317 rdf:resource="'http://marc2rda.edu/fake/'lcsh/tim#fourteenthcentury"/>
+      <rdawo:P10317 rdf:resource="'http://marc2rda.edu/fake/'lcsh/tim#fifteenthcentury"/>
+      <rdawo:P10317 rdf:resource="'http://marc2rda.edu/fake/'lcsh/tim#sixteenthcentury"/>
+      <rdawo:P10317 rdf:resource="'http://marc2rda.edu/fake/'lcsh/tim#seventeenthcentury"/>
+      <rdawo:P10317 rdf:resource="'http://marc2rda.edu/fake/'rand/tim#eighteenthcentury"/>
+      <rdawo:P10317 rdf:resource="'http://marc2rda.edu/fake/'lcsh/tim#nineteenthcentury"/>
+      <rdawo:P10317 rdf:resource="'http://marc2rda.edu/fake/'rand/tim#twentiethcentury"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="'http://marc2rda.edu/fake/'transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="'http://marc2rda.edu/fake/'transform/wor#marc388-test1"/>
+      <rdaeo:P20059 rdf:resource="'http://marc2rda.edu/fake/'transform/man#"/>
+      <rdaeo:P20231 rdf:resource="'http://marc2rda.edu/fake/'transform/wor#"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="'http://marc2rda.edu/fake/'transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="'http://marc2rda.edu/fake/'transform/wor#marc388-test1"/>
+      <rdamo:P30139 rdf:resource="'http://marc2rda.edu/fake/'transform/exp#"/>
+      <rdamd:P30276/>
+   </rdf:Description>
+   <rdf:Description rdf:about="'http://marc2rda.edu/fake/'timNom#2025-06-24-0700d25e7">
+      <rdano:P80068>Twentieth century</rdano:P80068>
+   </rdf:Description>
+   <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   <rdf:Description rdf:about="'http://marc2rda.edu/fake/'timNom#2025-06-24-0700d25e12">
+      <rdano:P80068>Twenty-first century</rdano:P80068>
+   </rdf:Description>
+   <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   <rdf:Description rdf:about="'http://marc2rda.edu/fake/'timNom#2025-06-24-0700d25e17">
+      <rdano:P80068>Fourteenth century</rdano:P80068>
+   </rdf:Description>
+   <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   <rdf:Description rdf:about="'http://marc2rda.edu/fake/'timNom#2025-06-24-0700d25e22">
+      <rdano:P80068>Fifteenth century</rdano:P80068>
+   </rdf:Description>
+   <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   <rdf:Description rdf:about="'http://marc2rda.edu/fake/'timNom#2025-06-24-0700d25e27">
+      <rdano:P80068>Sixteenth century</rdano:P80068>
+   </rdf:Description>
+   <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   <rdf:Description rdf:about="'http://marc2rda.edu/fake/'timNom#2025-06-24-0700d25e32">
+      <rdano:P80068>Seventeenth century</rdano:P80068>
+   </rdf:Description>
+   <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   <rdf:Description rdf:about="'http://marc2rda.edu/fake/'timNom#2025-06-24-0700d25e37">
+      <rdano:P80068>Eighteenth century</rdano:P80068>
+   </rdf:Description>
+   <rdand:P80069>rand</rdand:P80069>
+   <rdf:Description rdf:about="'http://marc2rda.edu/fake/'timNom#2025-06-24-0700d25e42">
+      <rdano:P80068>Nineteenth century</rdano:P80068>
+   </rdf:Description>
+   <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   <rdf:Description rdf:about="'http://marc2rda.edu/fake/'timNom#2025-06-24-0700d25e47">
+      <rdano:P80068>Twentieth century</rdano:P80068>
+   </rdf:Description>
+   <rdand:P80069>rand</rdand:P80069>
+   <rdf:Description rdf:about="'http://marc2rda.edu/fake/'lcsh/tim#twentiethcentury">
+      <rdato:P70009 rdf:resource="'http://marc2rda.edu/fake/'timNom#2025-06-24-0700d25e7"/>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="'http://marc2rda.edu/fake/'lcsh/tim#twenty-firstcentury">
+      <rdato:P70009 rdf:resource="'http://marc2rda.edu/fake/'timNom#2025-06-24-0700d25e12"/>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="'http://marc2rda.edu/fake/'lcsh/tim#fourteenthcentury">
+      <rdato:P70009 rdf:resource="'http://marc2rda.edu/fake/'timNom#2025-06-24-0700d25e17"/>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="'http://marc2rda.edu/fake/'lcsh/tim#fifteenthcentury">
+      <rdato:P70009 rdf:resource="'http://marc2rda.edu/fake/'timNom#2025-06-24-0700d25e22"/>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="'http://marc2rda.edu/fake/'lcsh/tim#sixteenthcentury">
+      <rdato:P70009 rdf:resource="'http://marc2rda.edu/fake/'timNom#2025-06-24-0700d25e27"/>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="'http://marc2rda.edu/fake/'lcsh/tim#seventeenthcentury">
+      <rdato:P70009 rdf:resource="'http://marc2rda.edu/fake/'timNom#2025-06-24-0700d25e32"/>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+   </rdf:Description>
+   <rdatd:P70015>Eighteenth century</rdatd:P70015>
+   <rdf:Description rdf:about="'http://marc2rda.edu/fake/'lcsh/tim#nineteenthcentury">
+      <rdato:P70009 rdf:resource="'http://marc2rda.edu/fake/'timNom#2025-06-24-0700d25e42"/>
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+   </rdf:Description>
+   <rdatd:P70015>Twentieth century</rdatd:P70015>
+</rdf:RDF>

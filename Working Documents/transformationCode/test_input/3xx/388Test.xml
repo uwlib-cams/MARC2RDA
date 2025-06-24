@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    
+<!--FAKE RECORD-->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">388-test1</marc:controlfield>
+<marc:datafield tag="388" ind1=" " ind2=" ">
+<marc:subfield code="a">Twentieth century</marc:subfield>
+<marc:subfield code="2">lcsh</marc:subfield>
+</marc:datafield>
+
+<marc:datafield tag="388" ind1=" " ind2=" ">
+<marc:subfield code="a">Twenty-first century</marc:subfield>
+<marc:subfield code="2">lcsh</marc:subfield>
+</marc:datafield>
+
+<marc:datafield tag="388" ind1=" " ind2=" ">
+<marc:subfield code="a">Fourteenth century</marc:subfield>
+<marc:subfield code="2">lcsh</marc:subfield></marc:datafield>
+
+<marc:datafield tag="388" ind1=" " ind2=" ">
+<marc:subfield code="a">Fifteenth century</marc:subfield>
+<marc:subfield code="2">lcsh</marc:subfield>
+</marc:datafield>
+
+<marc:datafield tag="388" ind1=" " ind2=" ">
+<marc:subfield code="a">Sixteenth century</marc:subfield>
+<marc:subfield code="2">lcsh</marc:subfield>
+</marc:datafield><marc:datafield tag="388" ind1=" " ind2=" ">
+    
+<marc:subfield code="a">Seventeenth century</marc:subfield>
+<marc:subfield code="2">lcsh</marc:subfield>
+</marc:datafield>
+
+<marc:datafield tag="388" ind1=" " ind2=" ">
+<marc:subfield code="a">Eighteenth century</marc:subfield>
+<marc:subfield code="2">rand</marc:subfield>
+</marc:datafield>
+
+<marc:datafield tag="388" ind1=" " ind2=" ">
+<marc:subfield code="a">Nineteenth century</marc:subfield>
+<marc:subfield code="2">lcsh</marc:subfield>
+</marc:datafield>
+
+<marc:datafield tag="388" ind1=" " ind2=" ">
+<marc:subfield code="a">Twentieth century</marc:subfield>
+<marc:subfield code="2">rand</marc:subfield>
+</marc:datafield>
+</marc:record>
+</marc:collection>
