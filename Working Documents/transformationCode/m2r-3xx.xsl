@@ -128,13 +128,17 @@
         <xsl:call-template name="F335-concept"/>
     </xsl:template>
 
-    <!--    <xsl:template match="marc:datafield[@tag = '336']" mode="exp">
-        <xsl:call-template name="getmarc"/>
-         Accounted for: $a, $b, $2-temporary, $3-partial, $0, $1 
-        <!-\-Not accounted for: $2 needs permanent solution, $3 with $0 and $1, $6, $7, $8 -\->
-        <xsl:call-template name="F336-xx-ab0-string"/>
-        <xsl:call-template name="F336-xx-01-iri"/>
-    </xsl:template>-->
+    <!-- 336 Content Type -->
+    <xsl:template match="marc:datafield[@tag = '336'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '336']" 
+        mode="man">
+        <xsl:call-template name="F336-string"/>
+        <xsl:call-template name="F336-iri"/>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '336'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '336-00']" 
+        mode="con">
+        <xsl:call-template name="F336-concept"/>
+    </xsl:template>
 
     <!-- 337 - Media Type -->
     <xsl:template
