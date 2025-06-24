@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc046-test00">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>046-test00</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc046-test00</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc046-test00"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc046-test00">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc046-test00"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc046-test00</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 046-test00
+F046 1# $k 1874 $2 edtf
+F046 2# $o 1995 $p 2006 $2 edtf
+F046 3# $o 2014 $2 edtf
+F046 1# $a k $b 1000 $d 500
+F046 1# $a q $b 250 $e 100
+F046 1# $a x $c 1693 $e 1639
+F046 1# $a s $b 245
+F046 1# $a r $c 1936 $d 210
+F046 1# $a x $c 1703
+F046 1# $a a $b 299 $d 200
+F046 1# $a i $b 99 $e 99
+F046 1# $a x $b 1939
+F046 1# $j 20010712
+F046 1# $k 19981022
+F046 1# $l Test l
+F046 1# $l Test m
+F046 1# $m 20011008 $n 20011027
+F046 1# $o 1800 $p 1899
+F046 1# $o 1932 $p 1940
+F046 1# $x Test x
+F046 1# $k 1951 $2 edtf $z Translation date
+F046 1# $j 2001-07-12 $2 [Code for W3CDTF]
+F046 1# $3 Fear in the night $o 1947 $2 edtf
+F046 1# $6 Test 6
+F046 1# $8 Test 8
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc046-test00"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10219>Beginning or single date created: 1874</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+      <rdaw:P10317 rdf:resource="http://marc2rda.edu/fake/edtf/tim#release"/><!--rdaw:P10317 = has related timespan of work-->
+      <rdawd:P10219>Single or starting date for aggregated content: 1995</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+      <rdawd:P10219>Ending date for aggregated content: 2006</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+      <rdawd:P10219>Single or starting date for aggregated content: 2014</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+      <rdaw:P10317 rdf:resource="http://marc2rda.edu/fake/tim#2025-06-24t1518487739118-0700d25e26"/><!--rdaw:P10317 = has related timespan of work-->
+      <rdaw:P10317 rdf:resource="http://marc2rda.edu/fake/tim#2025-06-24t1518487739118-0700d25e33"/><!--rdaw:P10317 = has related timespan of work-->
+      <rdawd:P10219>Beginning or single date created: 19981022</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+      <rdawd:P10219>Ending date created: Test l</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+      <rdawd:P10219>Ending date created: Test m</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+      <rdaw:P10317 rdf:resource="http://marc2rda.edu/fake/tim#2025-06-24t1518487739118-0700d25e106"/><!--rdaw:P10317 = has related timespan of work-->
+      <rdaw:P10317 rdf:resource="http://marc2rda.edu/fake/tim#2025-06-24t1518487739118-0700d25e112"/><!--rdaw:P10317 = has related timespan of work-->
+      <rdawd:P10219>Single or starting date for aggregated content: 1800</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+      <rdawd:P10219>Ending date for aggregated content: 1899</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+      <rdaw:P10317 rdf:resource="http://marc2rda.edu/fake/tim#2025-06-24t1518487739118-0700d25e118"/><!--rdaw:P10317 = has related timespan of work-->
+      <rdawd:P10219>Single or starting date for aggregated content: 1932</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+      <rdawd:P10219>Ending date for aggregated content: 1940</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+      <rdawd:P10330>Test x</rdawd:P10330><!--rdawd:P10330 = has note on work-->
+      <rdawd:P10219>Beginning or single date created: 1951</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+      <rdawd:P10330>Translation date</rdawd:P10330><!--rdawd:P10330 = has note on work-->
+      <rdawd:P10219>Single or starting date for aggregated content: 1947</rdawd:P10219><!--rdawd:P10219 = has date of work-->
+      <rdawd:P10403>applies to: Fear in the night</rdawd:P10403><!--rdawd:P10403 = has scope of validity-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc046-test00"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaeo:P20307 rdf:resource="http://marc2rda.edu/fake/tim#2025-06-24t1518487739118-0700d25e106"/><!--rdaeo:P20307 = has related timespan of expression-->
+      <rdaeo:P20071>Beginning of date valid: 20011008</rdaeo:P20071><!--rdaeo:P20071 = has note on expression-->
+      <rdaeo:P20071>End of date valid: 20011027</rdaeo:P20071><!--rdaeo:P20071 = has note on expression-->
+      <rdaeo:P20071>Test x</rdaeo:P20071><!--rdaeo:P20071 = has note on expression-->
+      <rdaeo:P20071>Translation date</rdaeo:P20071><!--rdaeo:P20071 = has note on expression-->
+      <rdaeo:P20071>applies to: Fear in the night</rdaeo:P20071><!--rdaeo:P20071 = has note on expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc046-test00"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamo:P30273 rdf:resource="http://marc2rda.edu/fake/tim#2025-06-24t1518487739118-0700d25e26"/><!--rdamo:P30273 = has related timespan of manifestation-->
+      <rdamo:P30273 rdf:resource="http://marc2rda.edu/fake/tim#2025-06-24t1518487739118-0700d25e33"/><!--rdamo:P30273 = has related timespan of manifestation-->
+      <rdamo:P30273 rdf:resource="http://marc2rda.edu/fake/tim#2025-06-24t1518487739118-0700d25e76"/><!--rdamo:P30273 = has related timespan of manifestation-->
+      <rdamo:P30273 rdf:resource="http://marc2rda.edu/fake/tim#2025-06-24t1518487739118-0700d25e106"/><!--rdamo:P30273 = has related timespan of manifestation-->
+      <rdamd:P30137>Beginning of date valid: 20011008</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>End of date valid: 20011027</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Test x</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Translation date</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>applies to: Fear in the night</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/edtf/tim#release">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
+      <rdatd:P70016>1995 - 2006</rdatd:P70016><!--rdatd:P70016 = has appellation of timespan-->
+      <rdatd:P70045>Date span of original release of the contents of a collection/aggregation</rdatd:P70045><!--rdatd:P70045 = has note on timespan-->
+      <rdatd:P70039>1995</rdatd:P70039><!--rdatd:P70039 = has beginning-->
+      <rdatd:P70040>2006</rdatd:P70040><!--rdatd:P70040 = has ending-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim#2025-06-24t1518487739118-0700d25e26">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
+      <rdatd:P70016>1000 - 500 B.C.E. B.C.E.</rdatd:P70016><!--rdatd:P70016 = has appellation of timespan-->
+      <rdatd:P70045>Range of years of bulk of collection</rdatd:P70045><!--rdatd:P70045 = has note on timespan-->
+      <rdatd:P70039>1000 B.C.E.</rdatd:P70039><!--rdatd:P70039 = has beginning-->
+      <rdatd:P70040>500 B.C.E.</rdatd:P70040><!--rdatd:P70040 = has ending-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim#2025-06-24t1518487739118-0700d25e33">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
+      <rdatd:P70016>250 - 100 B.C.E.</rdatd:P70016><!--rdatd:P70016 = has appellation of timespan-->
+      <rdatd:P70045>Questionable date</rdatd:P70045><!--rdatd:P70045 = has note on timespan-->
+      <rdatd:P70039>250 B.C.E.</rdatd:P70039><!--rdatd:P70039 = has beginning-->
+      <rdatd:P70040>100</rdatd:P70040><!--rdatd:P70040 = has ending-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim#2025-06-24t1518487739118-0700d25e76">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
+      <rdatd:P70016>99 - 99 B.C.E.</rdatd:P70016><!--rdatd:P70016 = has appellation of timespan-->
+      <rdatd:P70045>Collection inclusive dates</rdatd:P70045><!--rdatd:P70045 = has note on timespan-->
+      <rdatd:P70039>99 B.C.E.</rdatd:P70039><!--rdatd:P70039 = has beginning-->
+      <rdatd:P70040>99</rdatd:P70040><!--rdatd:P70040 = has ending-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim#2025-06-24t1518487739118-0700d25e106">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
+      <rdatd:P70016>20011008 - 20011027</rdatd:P70016><!--rdatd:P70016 = has appellation of timespan-->
+      <rdatd:P70045>Date span for the validity of a resource</rdatd:P70045><!--rdatd:P70045 = has note on timespan-->
+      <rdatd:P70039>20011008</rdatd:P70039><!--rdatd:P70039 = has beginning-->
+      <rdatd:P70040>20011027</rdatd:P70040><!--rdatd:P70040 = has ending-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim#2025-06-24t1518487739118-0700d25e112">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
+      <rdatd:P70016>1800 - 1899</rdatd:P70016><!--rdatd:P70016 = has appellation of timespan-->
+      <rdatd:P70045>Date span of original release of the contents of a collection/aggregation</rdatd:P70045><!--rdatd:P70045 = has note on timespan-->
+      <rdatd:P70039>1800</rdatd:P70039><!--rdatd:P70039 = has beginning-->
+      <rdatd:P70040>1899</rdatd:P70040><!--rdatd:P70040 = has ending-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim#2025-06-24t1518487739118-0700d25e118">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
+      <rdatd:P70016>1932 - 1940</rdatd:P70016><!--rdatd:P70016 = has appellation of timespan-->
+      <rdatd:P70045>Date span of original release of the contents of a collection/aggregation</rdatd:P70045><!--rdatd:P70045 = has note on timespan-->
+      <rdatd:P70039>1932</rdatd:P70039><!--rdatd:P70039 = has beginning-->
+      <rdatd:P70040>1940</rdatd:P70040><!--rdatd:P70040 = has ending-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim#2025-06-24t1518487739118-0700d25e125">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
+      <rdatd:P70045>Test x</rdatd:P70045><!--rdatd:P70045 = has note on timespan-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/edtf/tim#note">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
+      <rdatd:P70045>Translation date</rdatd:P70045><!--rdatd:P70045 = has note on timespan-->
+   </rdf:Description>
+</rdf:RDF>
