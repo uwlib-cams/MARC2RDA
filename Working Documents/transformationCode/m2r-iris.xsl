@@ -96,9 +96,9 @@
     
     <xsl:function name="uwf:mainWorkIRI">
         <xsl:param name="record"/>
-        <xsl:choose>
+<!--        <xsl:choose>-->
             <!-- 240 and no expression subfields, we can check if $1 is approved and possibly use it -->
-            <xsl:when test="$record/marc:datafield[@tag = '240']">
+<!--            <xsl:when test="$record/marc:datafield[@tag = '240']">
                 <xsl:choose>
                     <xsl:when test="$record/marc:datafield[@tag = '240'][marc:subfield[@code = '1']] and 
                         not($record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
@@ -107,15 +107,15 @@
                         or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'o']
                         or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'r']
                         or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 's'])">
-                        <!-- select 1 value to use -->
+                        <!-\- select 1 value to use -\->
                         <xsl:variable name="sub1">
                             <xsl:choose>
-                                <!-- when there are more than 1, call uwf:multiple1s to see if any are approved,
-                        then select the first-->
+                                <!-\- when there are more than 1, call uwf:multiple1s to see if any are approved,
+                        then select the first-\->
                                 <xsl:when test="count($record/marc:datafield[@tag = '240']/marc:subfield[@code = '1']) gt 1">
                                     <xsl:value-of select="uwf:multiple1s($record/marc:datafield[@tag = '240'], 'work')[1]"/>
                                 </xsl:when>
-                                <!-- if only 1 subfield 1, select that value -->
+                                <!-\- if only 1 subfield 1, select that value -\->
                                 <xsl:otherwise>
                                     <xsl:value-of select="$record/marc:datafield[@tag = '240']/marc:subfield[@code = '1']"/>
                                 </xsl:otherwise>
@@ -130,7 +130,7 @@
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:when>
-                    <!-- 240 and no expression subfields we can check if $2 is approved and use it as part of IRI -->
+                    <!-\- 240 and no expression subfields we can check if $2 is approved and use it as part of IRI -\->
                     <xsl:when test="$record/marc:datafield[@tag = '240'][marc:subfield[@code = '2']] and 
                         not($record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
                         or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']
@@ -146,7 +146,7 @@
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
-            <!-- same with 130 - no expression subfields -->
+            <!-\- same with 130 - no expression subfields -\->
             <xsl:when test="$record/marc:datafield[@tag = '130']">
                 <xsl:choose>
                     <xsl:when test="$record/marc:datafield[@tag = '130'][marc:subfield[@code = '1']] and 
@@ -156,15 +156,15 @@
                         or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'o']
                         or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 'r']
                         or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 's']">
-                        <!-- select 1 value to use -->
+                        <!-\- select 1 value to use -\->
                         <xsl:variable name="sub1">
                             <xsl:choose>
-                                <!-- when there are more than 1, call uwf:multiple1s to see if any are approved,
-                        then select the first-->
+                                <!-\- when there are more than 1, call uwf:multiple1s to see if any are approved,
+                        then select the first-\->
                                 <xsl:when test="count($record/marc:datafield[@tag = '130']/marc:subfield[@code = '1']) gt 1">
                                     <xsl:value-of select="uwf:multiple1s($record/marc:datafield[@tag = '240'], 'work')[1]"/>
                                 </xsl:when>
-                                <!-- if only 1 subfield 1, select that value -->
+                                <!-\- if only 1 subfield 1, select that value -\->
                                 <xsl:otherwise>
                                     <xsl:value-of select="$record/marc:datafield[@tag = '130']/marc:subfield[@code = '1']"/>
                                 </xsl:otherwise>
@@ -193,12 +193,12 @@
                         <xsl:value-of select="$BASE||'transform/wor#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainWorkAccessPoint($record)))"/>
                     </xsl:otherwise>
                 </xsl:choose>
-            </xsl:when>
+            </xsl:when>-->
             <!-- otherwise put IRI together -->
-            <xsl:otherwise>
+<!--            <xsl:otherwise>-->
                 <xsl:value-of select="$BASE||'transform/wor#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainWorkAccessPoint($record)))"/>
-            </xsl:otherwise>
-        </xsl:choose>
+            <!--</xsl:otherwise>-->
+<!--        </xsl:choose>-->
     </xsl:function>
     
     <xsl:function name="uwf:aggWorkIRI">
@@ -209,8 +209,8 @@
     <!-- same idea as work IRI -->
     <xsl:function name="uwf:mainExpressionIRI">
         <xsl:param name="record"/>
-        <xsl:choose>
-            <xsl:when test="$record/marc:datafield[@tag = '240']">
+<!--        <xsl:choose>-->
+            <!--<xsl:when test="$record/marc:datafield[@tag = '240']">
                 <xsl:choose>
                     <xsl:when test="$record/marc:datafield[@tag = '240'][marc:subfield[@code = '1']] and 
                         ($record/marc:datafield[@tag = '240']/marc:subfield[@code = 'f']
@@ -221,12 +221,12 @@
                         or $record/marc:datafield[@tag = '240']/marc:subfield[@code = 's'])">
                         <xsl:variable name="sub1">
                             <xsl:choose>
-                                <!-- when there are more than 1, call uwf:multiple1s to see if any are approved,
-                        then select the first-->
+                                <!-\- when there are more than 1, call uwf:multiple1s to see if any are approved,
+                        then select the first-\->
                                 <xsl:when test="count($record/marc:datafield[@tag = '240']/marc:subfield[@code = '1']) gt 1">
                                     <xsl:value-of select="uwf:multiple1s($record/marc:datafield[@tag = '240'], 'expression')[1]"/>
                                 </xsl:when>
-                                <!-- if only 1 subfield 1, select that value -->
+                                <!-\- if only 1 subfield 1, select that value -\->
                                 <xsl:otherwise>
                                     <xsl:value-of select="$record/marc:datafield[@tag = '240']/marc:subfield[@code = '1']"/>
                                 </xsl:otherwise>
@@ -267,12 +267,12 @@
                         or $record/marc:datafield[@tag = '130']/marc:subfield[@code = 's']">
                         <xsl:variable name="sub1">
                             <xsl:choose>
-                                <!-- when there are more than 1, call uwf:multiple1s to see if any are approved,
-                        then select the first-->
+                                <!-\- when there are more than 1, call uwf:multiple1s to see if any are approved,
+                        then select the first-\->
                                 <xsl:when test="count($record/marc:datafield[@tag = '130']/marc:subfield[@code = '1']) gt 1">
                                     <xsl:value-of select="uwf:multiple1s($record/marc:datafield[@tag = '130'], 'expression')[1]"/>
                                 </xsl:when>
-                                <!-- if only 1 subfield 1, select that value -->
+                                <!-\- if only 1 subfield 1, select that value -\->
                                 <xsl:otherwise>
                                     <xsl:value-of select="$record/marc:datafield[@tag = '130']/marc:subfield[@code = '1']"/>
                                 </xsl:otherwise>
@@ -301,11 +301,11 @@
                         <xsl:value-of select="$BASE||'transform/exp#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainExpressionAccessPoint($record)))"/>
                     </xsl:otherwise>
                 </xsl:choose>
-            </xsl:when>
-            <xsl:otherwise>
+            </xsl:when>-->
+<!--            <xsl:otherwise>-->
                 <xsl:value-of select="$BASE||'transform/exp#'||encode-for-uri(uwf:stripAllPunctuation(uwf:mainExpressionAccessPoint($record)))"/>
-            </xsl:otherwise>
-        </xsl:choose>
+            <!--</xsl:otherwise>-->
+        <!--</xsl:choose>-->
     </xsl:function>
     
     <xsl:function name="uwf:mainManifestationIRI">
