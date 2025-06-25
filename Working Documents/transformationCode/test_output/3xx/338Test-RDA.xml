@@ -105,26 +105,56 @@ F880 ## $6 338-09 $a 成冊 $b nc $2 rdacarrier/chi
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc338-test1"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
       <rdamd:P30276>otherunspecifiedvideocassettefilmstriprollcardmicrofichetextcrotherother video carriervolumevideotape reelaudio discvolumeslide flipchartssvolumeaudio discvolumecomputer discaudio discvolumecheng ce</rdamd:P30276>
-      <rdam:P30001>Unspecified</rdam:P30001>
-      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType1004"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1013"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1060"/>
-      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1034"/>
-      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
-      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1040"/>
-      <rdam:P30001>http://id.loc.gov/vocabulary/carriers/fg</rdam:P30001>
       <rdamd:P30001>videocassette</rdamd:P30001>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdaco/con#filmstrip"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacrrier/con#roll"/>
+      <rdamd:P30001>filmstrip</rdamd:P30001>
+      <rdamd:P30001>roll</rdamd:P30001>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1045"/>
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1022"/>
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
       <rdamd:P30001>nb</rdamd:P30001>
       <rdamd:P30001>volume</rdamd:P30001>
       <rdamd:P30001>nc</rdamd:P30001>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacontent/con#videotapereel"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdaco/con#spw"/>
+      <rdamd:P30001>videotape reel</rdamd:P30001>
+      <rdamd:P30001>vr</rdamd:P30001>
+      <rdamd:P30001>spw</rdamd:P30001>
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1059"/>
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1040"/>
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1046"/>
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1046"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1007"/>
-      <rdam:P30001 rdf:resource="http://marc2rda.edu/fake/rdacarrierchi/con#chengce"/>
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1002"/>
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
+      <rdamd:P30137>Carrier type: audio disc applies to Booklet</rdamd:P30137>
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
+      <rdamd:P30137>Carrier type: audio disc applies to Booklet</rdamd:P30137>
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
+      <rdamd:P30137>Carrier type: volume applies to Book</rdamd:P30137>
+      <rdamd:P30137>Carrier type: tnc applies to Book</rdamd:P30137>
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1013"/>
+      <rdamd:P30137>Carrier type: computer disc applies to CDROM</rdamd:P30137>
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1013"/>
+      <rdamd:P30137>Carrier type: computer disc applies to CDROM</rdamd:P30137>
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
+      <rdamd:P30137>Carrier type: audio disc applies to Audio disc</rdamd:P30137>
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
+      <rdamd:P30137>Carrier type: volume applies to Program notes</rdamd:P30137>
+      <rdamd:P30001>cheng ce</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30001>成冊</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <rdamd:P30001>成冊</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake//con#videocassette">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>videocassette</skos:prefLabel>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/rdaco/con#filmstrip">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -137,6 +167,15 @@ F880 ## $6 338-09 $a 成冊 $b nc $2 rdacarrier/chi
       <!--IRI could not be found for rdacrrier-->
       <skos:inScheme>rdacrrier</skos:inScheme>
    </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake//con#nb">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>nb</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake//con#volume">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>volume</skos:prefLabel>
+      <skos:notation>nc</skos:notation>
+   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/rdacontent/con#videotapereel">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>videotape reel</skos:prefLabel>
@@ -147,15 +186,5 @@ F880 ## $6 338-09 $a 成冊 $b nc $2 rdacarrier/chi
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>spw</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rdaco"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/rdacarrierchi/con#chengce">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>cheng ce</skos:prefLabel>
-      <skos:notation>nc</skos:notation>
-      <!--IRI could not be found for rdacarrier/chi-->
-      <skos:inScheme>rdacarrier/chi</skos:inScheme>
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>成冊</skos:prefLabel>
-      <skos:notation>nc</skos:notation>
    </rdf:Description>
 </rdf:RDF>
