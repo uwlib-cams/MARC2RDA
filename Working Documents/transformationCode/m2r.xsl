@@ -164,7 +164,7 @@
                 </xsl:variable>
                 
                 <!-- metadata work IRI for connection to MARC record -->
-                <xsl:variable name="marcMetadataWorkIRI" select="$BASE||'transform/wor#marc'||encode-for-uri(lower-case(translate(marc:controlfield[@tag = '003'], ' ', '')))||encode-for-uri(translate(marc:controlfield[@tag = '001'], ' ', '_'))"/>
+                <xsl:variable name="marcMetadataWorkIRI" select="$BASE||'transform/wor#marc'||encode-for-uri(lower-case(translate(marc:controlfield[@tag = '003'][1], ' ', '')))||encode-for-uri(translate(marc:controlfield[@tag = '001'][1], ' ', '_'))"/>
                 
                 <!-- call metadata work template (template at bottom of this file) -->
                 <xsl:call-template name="marcMetadataWork">
@@ -479,27 +479,27 @@
         <xsl:param name="mainManifestationIRI"/>
         <xsl:param name="origManifestationIRI"/>
         
-        <xsl:variable name="marcManIRI" select="$BASE||'transform/man#marc'||encode-for-uri(lower-case(translate(marc:controlfield[@tag = '003'], ' ', '')))||encode-for-uri(translate(marc:controlfield[@tag = '001'], ' ', '_'))"/>
+        <xsl:variable name="marcManIRI" select="$BASE||'transform/man#marc'||encode-for-uri(lower-case(translate(marc:controlfield[@tag = '003'][1], ' ', '')))||encode-for-uri(translate(marc:controlfield[@tag = '001'][1], ' ', '_'))"/>
         <xsl:variable name="source003">
             <xsl:choose>
                 <xsl:when test="marc:controlfield[@tag = '003']">
-                    <xsl:value-of select="marc:controlfield[@tag = '003']"/>
+                    <xsl:value-of select="marc:controlfield[@tag = '003'][1]"/>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:value-of select="'transform'"/>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
-        <xsl:variable name="marcWorGrpNomIRI" select="$BASE||encode-for-uri(lower-case(translate($source003, ' ', '')))||'/nom#'||encode-for-uri(translate(marc:controlfield[@tag = '001'], ' ', '_'))"/>
+        <xsl:variable name="marcWorGrpNomIRI" select="$BASE||encode-for-uri(lower-case(translate($source003, ' ', '')))||'/nom#'||encode-for-uri(translate(marc:controlfield[@tag = '001'][1], ' ', '_'))"/>
         
         <rdf:Description rdf:about="{$marcWorkIRI}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
             <rdawd:P10400>
-                <xsl:value-of select="marc:controlfield[@tag = '003']||marc:controlfield[@tag = '001']"/>
+                <xsl:value-of select="marc:controlfield[@tag = '003'][1]||marc:controlfield[@tag = '001'][1]"/>
             </rdawd:P10400>
             <rdawd:P10004>Metadata work</rdawd:P10004>
             <rdawd:P10002>
-                <xsl:value-of select="'transform/wor#marc'||encode-for-uri(lower-case(translate(marc:controlfield[@tag = '003'], ' ', '')))||encode-for-uri(translate(marc:controlfield[@tag = '001'], ' ', '_'))"/>
+                <xsl:value-of select="'transform/wor#marc'||encode-for-uri(lower-case(translate(marc:controlfield[@tag = '003'][1], ' ', '')))||encode-for-uri(translate(marc:controlfield[@tag = '001'][1], ' ', '_'))"/>
             </rdawd:P10002>
             <rdawo:P10072 rdf:resource="{$marcManIRI}"/>
             <rdawo:P10621 rdf:resource="{$mainWorkIRI}"/>
@@ -518,7 +518,7 @@
             <rdamo:P30135 rdf:resource="{$marcWorkIRI}"/>
             <rdamd:P30335>Metadata manifestation</rdamd:P30335>
             <rdamd:P30004>
-                <xsl:value-of select="'transform/man#marc'||encode-for-uri(lower-case(translate(marc:controlfield[@tag = '003'], ' ', '')))||encode-for-uri(translate(marc:controlfield[@tag = '001'], ' ', '_'))"/>
+                <xsl:value-of select="'transform/man#marc'||encode-for-uri(lower-case(translate(marc:controlfield[@tag = '003'][1], ' ', '')))||encode-for-uri(translate(marc:controlfield[@tag = '001'][1], ' ', '_'))"/>
             </rdamd:P30004>
             <rdamo:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1018'}"/>
             <rdamd:P30137>
