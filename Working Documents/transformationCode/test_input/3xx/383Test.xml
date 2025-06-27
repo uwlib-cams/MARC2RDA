@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <!--FAKE RECORD-->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">383-test1</marc:controlfield>
+        <marc:datafield tag="383" ind1="0" ind2=" ">
+            <marc:subfield code="a">no. 17</marc:subfield>
+            <marc:subfield code="b">op. 31, no. 2</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="383" ind1="1" ind2=" ">
+            <marc:subfield code="c">S. 375</marc:subfield>
+            <marc:subfield code="d">Searle</marc:subfield>
+            <marc:subfield code="2">mlati</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="383" ind1="0" ind2=" ">
+            <marc:subfield code="b">op. 244</marc:subfield>
+            <marc:subfield code="3">liner notes</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="383" ind1=" " ind2=" ">
+            <marc:subfield code="b">op. 8, no. 1-4</marc:subfield>
+            <marc:subfield code="c">RV 269 315</marc:subfield>
+            <marc:subfield code="c">RV 315</marc:subfield>
+            <marc:subfield code="c">RV 293</marc:subfield>
+            <marc:subfield code="c">RV 297</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="383" ind1="1" ind2=" ">
+            <marc:subfield code="b">op. 2</marc:subfield>
+            <marc:subfield code="e">ePleyel</marc:subfield>
+            <marc:subfield code="c">G. 154</marc:subfield>
+            <marc:subfield code="d">Gerard</marc:subfield>
+            <marc:subfield code="2">mlati</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="383" ind1="0" ind2=" ">
+            <marc:subfield code="c">RV 269</marc:subfield>
+            <marc:subfield code="c">RV 315</marc:subfield>
+            <marc:subfield code="c">RV 293</marc:subfield>
+            <marc:subfield code="c">RV 297</marc:subfield>
+            <marc:subfield code="d">Ryom</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>
