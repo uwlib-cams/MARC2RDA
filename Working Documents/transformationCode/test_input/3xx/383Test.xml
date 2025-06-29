@@ -39,6 +39,16 @@
         </marc:datafield>
         
         <marc:datafield tag="383" ind1="0" ind2=" ">
+            <marc:subfield code="6">880-01</marc:subfield>
+            <marc:subfield code="c">RV 269 - 880</marc:subfield>
+            <marc:subfield code="c">RV 315 - 880</marc:subfield>
+            <marc:subfield code="c">RV 293 - 880</marc:subfield>
+            <marc:subfield code="c">RV 297 - 880</marc:subfield>
+            <marc:subfield code="d">Ryom - 880</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="880" ind1="0" ind2=" ">
+            <marc:subfield code="6">383-01</marc:subfield>
             <marc:subfield code="c">RV 269</marc:subfield>
             <marc:subfield code="c">RV 315</marc:subfield>
             <marc:subfield code="c">RV 293</marc:subfield>
