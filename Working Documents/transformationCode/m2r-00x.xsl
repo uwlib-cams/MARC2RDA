@@ -24,7 +24,9 @@
     xmlns:rdap="http://rdaregistry.info/Elements/p/"
     xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
     xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
-    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:rdat="http://rdaregistry.info/Elements/t/"
+    xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+    xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
     xmlns:fake="http://fakePropertiesForDemo" xmlns:uwf="http://universityOfWashington/functions"
     exclude-result-prefixes="marc ex uwf" version="3.0">
     

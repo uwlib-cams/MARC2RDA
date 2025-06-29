@@ -21,10 +21,14 @@
     xmlns:rdan="http://rdaregistry.info/Elements/n/"
     xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
     xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
-    xmlns:uwf="http://universityOfWashington/functions"
-    xmlns:fake="http://fakePropertiesForDemo"
-    xmlns:m2rext="uwlib-cams/MARC2RDA/extensions"
-    exclude-result-prefixes="marc ex uwf m2rext" version="3.0">
+    xmlns:rdap="http://rdaregistry.info/Elements/p/"
+    xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+    xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+    xmlns:rdat="http://rdaregistry.info/Elements/t/"
+    xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+    xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+    xmlns:fake="http://fakePropertiesForDemo" xmlns:uwf="http://universityOfWashington/functions"
+    exclude-result-prefixes="marc ex uwf" version="3.0">
     <xsl:include href="m2r-5xx-named.xsl"/>
     <xsl:import href="m2r-functions.xsl"/>
     <xsl:import href="getmarc.xsl"/>

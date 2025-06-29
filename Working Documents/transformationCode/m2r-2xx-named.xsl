@@ -12,9 +12,23 @@
     xmlns:rdam="http://rdaregistry.info/Elements/m/"
     xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
     xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
-    xmlns:fake="http://fakePropertiesForDemo" 
-    xmlns:uwf="http://universityOfWashington/functions"
-    xmlns:uwmisc="http://uw.edu/all-purpose-namespace/" exclude-result-prefixes="marc uwf ex" version="3.0">
+    xmlns:rdai="http://rdaregistry.info/Elements/i/"
+    xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+    xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+    xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+    xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+    xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+    xmlns:rdan="http://rdaregistry.info/Elements/n/"
+    xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+    xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+    xmlns:rdap="http://rdaregistry.info/Elements/p/"
+    xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+    xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+    xmlns:rdat="http://rdaregistry.info/Elements/t/"
+    xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+    xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+    xmlns:fake="http://fakePropertiesForDemo" xmlns:uwf="http://universityOfWashington/functions"
+    exclude-result-prefixes="marc ex uwf" version="3.0">
     
     <xsl:import href="m2r-functions.xsl"/>
     
