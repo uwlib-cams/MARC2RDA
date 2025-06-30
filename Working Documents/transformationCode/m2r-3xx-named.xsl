@@ -568,113 +568,112 @@
 
     <!-- 336 -->
     <xsl:template name="F336-string" expand-text="yes">
-        <!-- if there are no usable IRIs, use literals -->
-        <xsl:variable name="sub0Test">
-            <xsl:value-of select="if (some $sub0 in marc:subfield[@code = '0'] satisfies 
-                contains($sub0, 'http')) then 'Yes' else 'No'"/>
-        </xsl:variable>
+        <!-- Check for usable IRIs in $0 -->
+        <xsl:variable name="sub0Test" select="if (some $sub0 in marc:subfield[@code = '0'] satisfies contains($sub0, 'http')) then 'Yes' else 'No'"/>
         <xsl:if test="not(marc:subfield[@code = '1']) and $sub0Test = 'No'">
-            <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
-            <xsl:choose>
-                <!-- If $2 is rdaco or rdacontent -->
-                <xsl:when test="$sub2 = 'rdaco' or $sub2 = 'rdacontent'">
-                    <!-- $a terms -->
-                    <xsl:for-each select="marc:subfield[@code = 'a']">
-                        <xsl:if test="not(matches(lower-case(.), 'other|unspecified'))">
-                            <xsl:variable name="iri"
-                                select="document('lookup/Lookup336.xml')/lookupTable/entry[
-                                rdaTerm = normalize-space(.) 
-                                or locTerm = normalize-space(.) 
-                                or locCode = normalize-space(.)
-                                ]/rdaIRI"/>
-                            <xsl:if test="$iri">
-                                <rdae:P20001 rdf:resource="{$iri}"/>
-                                <xsl:if test="../marc:subfield[@code = '3']">
-                                    <rdaed:P30137>
-                                        <xsl:text>Content type </xsl:text>
-                                        <xsl:value-of select="$iri"/>
-                                        <xsl:text> applies to </xsl:text>
-                                        <xsl:value-of select="concat(
-                                            upper-case(substring(../marc:subfield[@code='3'],1,1)),
-                                            substring(../marc:subfield[@code='3'],2)
-                                            )"/>
-                                    </rdaed:P30137>
-                                </xsl:if>
-                            </xsl:if>
+            <xsl:variable name="sub2raw" select="marc:subfield[@code = '2'][1]"/>
+            <xsl:variable name="sub2" select="tokenize($sub2raw, '/')[1]"/>
+            <xsl:variable name="langCode" select="tokenize($sub2raw, '/')[2]"/>
+            
+            <!-- $a terms -->
+            <xsl:for-each select="marc:subfield[@code = 'a']">
+                <xsl:variable name="term" select="normalize-space(.)"/>
+                <xsl:variable name="lcTerm" select="lower-case($term)"/>
+                <xsl:variable name="iri" select="
+                    document('lookup/Lookup336.xml')/lookupTable/entry[
+                    rdaTerm = $term or locTerm = $term or locCode = $term
+                    ]/rdaIRI"/>
+                <xsl:choose>
+                    <!-- Skip if 'other' or 'unspecified' and $2 = rdaco or rdacontent -->
+                    <xsl:when test="($sub2 = 'rdaco' or $sub2 = 'rdacontent') and ($lcTerm = 'other' or $lcTerm = 'unspecified')"/>
+                    <!-- Map to RDAContentType IRI -->
+                    <xsl:when test="$iri">
+                        <rdae:P20001 rdf:resource="{$iri}"/>
+                        <xsl:if test="../marc:subfield[@code = '3'] and string-length(normalize-space($term)) &gt; 0">
+                            <rdaed:P30137>
+                                <xsl:text>Content type </xsl:text>
+                                <xsl:value-of select="$term"/>
+                                <xsl:text> applies to </xsl:text>
+                                <xsl:value-of select="concat(upper-case(substring(normalize-space(../marc:subfield[@code='3']),1,1)), substring(normalize-space(../marc:subfield[@code='3']),2))"/>
+                            </rdaed:P30137>
                         </xsl:if>
-                    </xsl:for-each>
-                    <!-- $b codes -->
-                    <xsl:for-each select="marc:subfield[@code = 'b']">
-                        <xsl:if test="not(matches(lower-case(.), 'xxx|zzz'))">
-                            <xsl:variable name="iri"
-                                select="document('lookup/Lookup336.xml')/lookupTable/entry[
-                                locCode = normalize-space(.) 
-                                or rdaTerm = normalize-space(.)
-                                ]/rdaIRI"/>
-                            <xsl:if test="$iri">
-                                <rdae:P20001 rdf:resource="{$iri}"/>
-                                <xsl:if test="../marc:subfield[@code = '3']">
-                                    <rdaed:P30137>
-                                        <xsl:text>Content type </xsl:text>
-                                        <xsl:value-of select="$iri"/>
-                                        <xsl:text> applies to </xsl:text>
-                                        <xsl:value-of select="concat(
-                                            upper-case(substring(../marc:subfield[@code='3'],1,1)),
-                                            substring(../marc:subfield[@code='3'],2)
-                                            )"/>
-                                    </rdaed:P30137>
-                                </xsl:if>
+                    </xsl:when>
+                    <!-- If $2 present but not rdaco/rdacontent, mint as literal with lang if available -->
+                    <xsl:when test="$sub2 != '' and not($sub2 = 'rdaco' or $sub2 = 'rdacontent')">
+                        <rdaed:P20001>
+                            <xsl:if test="$langCode != ''">
+                                <xsl:attribute name="xml:lang"><xsl:value-of select="$langCode"/></xsl:attribute>
                             </xsl:if>
+                            <xsl:value-of select="$term"/>
+                        </rdaed:P20001>
+                    </xsl:when>
+                    <!-- Else fallback: literal without lang -->
+                    <xsl:otherwise>
+                        <rdaed:P20001><xsl:value-of select="$term"/></rdaed:P20001>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:for-each>
+            
+            <!-- $b codes -->
+            <xsl:for-each select="marc:subfield[@code = 'b']">
+                <xsl:variable name="code" select="normalize-space(.)"/>
+                <xsl:variable name="lcCode" select="lower-case($code)"/>
+                <xsl:variable name="iri" select="
+                    document('lookup/Lookup336.xml')/lookupTable/entry[
+                    rdaTerm = $code or locTerm = $code or locCode = $code
+                    ]/rdaIRI"/>
+                <xsl:choose>
+                    <!-- Skip if 'xxx' or 'zzz' and $2 = rdaco or rdacontent -->
+                    <xsl:when test="($sub2 = 'rdaco' or $sub2 = 'rdacontent') and ($lcCode = 'xxx' or $lcCode = 'zzz')"/>
+                    <!-- Map to RDAContentType IRI -->
+                    <xsl:when test="$iri">
+                        <rdae:P20001 rdf:resource="{$iri}"/>
+                        <xsl:if test="../marc:subfield[@code = '3'] and string-length(normalize-space($code)) &gt; 0">
+                            <rdaed:P30137>
+                                <xsl:text>Content type </xsl:text>
+                                <xsl:value-of select="$code"/>
+                                <xsl:text> applies to </xsl:text>
+                                <xsl:value-of select="concat(upper-case(substring(normalize-space(../marc:subfield[@code='3']),1,1)), substring(normalize-space(../marc:subfield[@code='3']),2))"/>
+                            </rdaed:P30137>
                         </xsl:if>
-                    </xsl:for-each>
-                </xsl:when>
-                
-                <!-- else fallback: literal -->
-                <xsl:otherwise>
-                    <!-- $a literal -->
-                    <xsl:for-each select="marc:subfield[@code = 'a']">
-                        <rdaed:P20001><xsl:value-of select="."/></rdaed:P20001>
-                    </xsl:for-each>
-                    <!-- $b literal only if no $a -->
-                    <xsl:if test="not(marc:subfield[@code = 'a'])">
-                        <xsl:for-each select="marc:subfield[@code = 'b']">
-                            <rdaed:P20001><xsl:value-of select="."/></rdaed:P20001>
-                        </xsl:for-each>
-                    </xsl:if>
-                </xsl:otherwise>
-            </xsl:choose>
+                    </xsl:when>
+                    <!-- If $2 present but not rdaco/rdacontent and no $a, mint as literal with lang -->
+                    <xsl:when test="$sub2 != '' and not($sub2 = 'rdaco' or $sub2 = 'rdacontent') and not(marc:subfield[@code = 'a'])">
+                        <rdaed:P20001>
+                            <xsl:if test="$langCode != ''">
+                                <xsl:attribute name="xml:lang"><xsl:value-of select="$langCode"/></xsl:attribute>
+                            </xsl:if>
+                            <xsl:value-of select="$code"/>
+                        </rdaed:P20001>
+                    </xsl:when>
+                    <!-- Else fallback: literal without lang -->
+                    <xsl:otherwise>
+                        <rdaed:P20001><xsl:value-of select="$code"/></rdaed:P20001>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:for-each>
         </xsl:if>
     </xsl:template>
     
+    
     <xsl:template name="F336-concept">
-        <!-- Check for valid $0 with http -->
-        <xsl:variable name="sub0Test">
-            <xsl:value-of select="if (some $sub0 in marc:subfield[@code = '0'] satisfies 
-                contains($sub0, 'http')) then 'Yes' else 'No'"/>
-        </xsl:variable>
-        
-        <!-- Only mint if no valid $1 or $0 -->
+        <xsl:variable name="sub0Test" select="if (some $sub0 in marc:subfield[@code = '0'] satisfies contains($sub0, 'http')) then 'Yes' else 'No'"/>
         <xsl:if test="not(marc:subfield[@code = '1']) and $sub0Test = 'No'">
             <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
             <xsl:if test="not($sub2 = 'rdaco' or $sub2 = 'rdacontent')">
-                <!-- Only mint if real 336 or valid linked 880 -->
                 <xsl:choose>
                     <xsl:when test="marc:subfield[@code = 'a']">
                         <xsl:for-each select="marc:subfield[@code = 'a']">
-                            <xsl:if test="../@tag = '336' or substring(../marc:subfield[@code = '6'], 1, 6) = '336-00'">
-                                <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
-                                    <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '336')"/>
-                                </rdf:Description>
-                            </xsl:if>
+                            <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
+                                <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '336')"/>
+                            </rdf:Description>
                         </xsl:for-each>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:for-each select="marc:subfield[@code = 'b']">
-                            <xsl:if test="../@tag = '336' or substring(../marc:subfield[@code = '6'], 1, 6) = '336-00'">
-                                <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
-                                    <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '336')"/>
-                                </rdf:Description>
-                            </xsl:if>
+                            <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
+                                <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '336')"/>
+                            </rdf:Description>
                         </xsl:for-each>
                     </xsl:otherwise>
                 </xsl:choose>
@@ -683,79 +682,63 @@
     </xsl:template>
     
     <xsl:template name="F336-iri" expand-text="yes">
-        <!-- Prefer $1 if present -->
+        <!-- Prefer subfield $1 -->
         <xsl:for-each select="marc:subfield[@code = '1']">
             <xsl:variable name="uri" select="normalize-space(.)"/>
             <xsl:choose>
                 <xsl:when test="not(matches($uri, '^https?://'))"/>
                 <xsl:when test="matches(lower-case($uri), 'xxx|zzz')"/>
-                <xsl:when test="document('lookup/Lookup336.xml')/lookupTable/entry[
-                    rdaIRI = $uri or locURI = $uri
-                    ]">
-                    <xsl:variable name="iri" select="document('lookup/Lookup336.xml')/lookupTable/entry[
-                        rdaIRI = $uri or locURI = $uri
-                        ]/rdaIRI"/>
-                    <rdae:P20001 rdf:resource="{$iri}"/>
-                    <xsl:if test="../marc:subfield[@code = '3']">
+                <xsl:when test="document('lookup/Lookup336.xml')/lookupTable/entry[rdaIRI = $uri or locURI = $uri]">
+                    <xsl:variable name="label" select="document('lookup/Lookup336.xml')/lookupTable/entry[rdaIRI = $uri or locURI = $uri]/rdaTerm"/>
+                    <rdae:P20001 rdf:resource="{$uri}"/>
+                    <xsl:if test="../marc:subfield[@code = '3']
+                        and string-length(normalize-space($label)) &gt; 0
+                        and not(starts-with(normalize-space($label), 'http'))
+                        and normalize-space($label) != normalize-space($uri)">
                         <rdaed:P30137>
-                            <xsl:text>Content type {$iri} applies to </xsl:text>
+                            <xsl:text>Content type </xsl:text>
+                            <xsl:value-of select="$label"/>
+                            <xsl:text> applies to </xsl:text>
                             <xsl:value-of select="concat(
-                                upper-case(substring(../marc:subfield[@code='3'],1,1)),
-                                substring(../marc:subfield[@code='3'],2)
+                                upper-case(substring(normalize-space(../marc:subfield[@code='3']), 1, 1)),
+                                substring(normalize-space(../marc:subfield[@code='3']), 2)
                                 )"/>
                         </rdaed:P30137>
                     </xsl:if>
                 </xsl:when>
                 <xsl:otherwise>
                     <rdae:P20001 rdf:resource="{$uri}"/>
-                    <xsl:if test="../marc:subfield[@code = '3']">
-                        <rdaed:P30137>
-                            <xsl:text>Content type {$uri} applies to </xsl:text>
-                            <xsl:value-of select="concat(
-                                upper-case(substring(../marc:subfield[@code='3'],1,1)),
-                                substring(../marc:subfield[@code='3'],2)
-                                )"/>
-                        </rdaed:P30137>
-                    </xsl:if>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:for-each>
         
-        <!-- Fallback to $0 if no $1 -->
+        <!-- fallback to subfield $0 if no $1 -->
         <xsl:if test="not(marc:subfield[@code = '1'])">
             <xsl:for-each select="marc:subfield[@code = '0']">
                 <xsl:variable name="uri" select="normalize-space(.)"/>
                 <xsl:choose>
                     <xsl:when test="not(matches($uri, '^https?://'))"/>
                     <xsl:when test="matches(lower-case($uri), 'xxx|zzz')"/>
-                    <xsl:when test="document('lookup/Lookup336.xml')/lookupTable/entry[
-                        rdaIRI = $uri or locURI = $uri
-                        ]">
-                        <xsl:variable name="iri" select="document('lookup/Lookup336.xml')/lookupTable/entry[
-                            rdaIRI = $uri or locURI = $uri
-                            ]/rdaIRI"/>
-                        <rdae:P20001 rdf:resource="{$iri}"/>
-                        <xsl:if test="../marc:subfield[@code = '3']">
+                    <xsl:when test="document('lookup/Lookup336.xml')/lookupTable/entry[rdaIRI = $uri or locURI = $uri]">
+                        <xsl:variable name="label" select="document('lookup/Lookup336.xml')/lookupTable/entry[rdaIRI = $uri or locURI = $uri]/rdaTerm"/>
+                        <rdae:P20001 rdf:resource="{$uri}"/>
+                        <xsl:if test="../marc:subfield[@code = '3']
+                            and string-length(normalize-space($label)) &gt; 0
+                            and not(starts-with(normalize-space($label), 'http'))
+                            and normalize-space($label) != normalize-space($uri)">
                             <rdaed:P30137>
-                                <xsl:text>Content type {$iri} applies to </xsl:text>
+                                <xsl:text>Content type </xsl:text>
+                                <xsl:value-of select="$label"/>
+                                <xsl:text> applies to </xsl:text>
                                 <xsl:value-of select="concat(
-                                    upper-case(substring(../marc:subfield[@code='3'],1,1)),
-                                    substring(../marc:subfield[@code='3'],2)
+                                    upper-case(substring(normalize-space(../marc:subfield[@code='3']), 1, 1)),
+                                    substring(normalize-space(../marc:subfield[@code='3']), 2)
                                     )"/>
                             </rdaed:P30137>
                         </xsl:if>
                     </xsl:when>
                     <xsl:otherwise>
                         <rdae:P20001 rdf:resource="{$uri}"/>
-                        <xsl:if test="../marc:subfield[@code = '3']">
-                            <rdaed:P30137>
-                                <xsl:text>Content type {$uri} applies to </xsl:text>
-                                <xsl:value-of select="concat(
-                                    upper-case(substring(../marc:subfield[@code='3'],1,1)),
-                                    substring(../marc:subfield[@code='3'],2)
-                                    )"/>
-                            </rdaed:P30137>
-                        </xsl:if>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:for-each>

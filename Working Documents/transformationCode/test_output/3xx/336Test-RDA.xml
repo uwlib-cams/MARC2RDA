@@ -101,19 +101,40 @@ F336 $3 braille pages: $a tactile text $b tct $2 rdacontent
       <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1002"/>
       <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1003"/>
       <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
-      <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
-      <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
-      <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1014"/>
+      <rdae:P20001 rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+      <rdae:P20001 rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+      <rdae:P20001 rdf:resource="http://id.loc.gov/vocabulary/contentTypes/sti"/>
       <rdae:P20001 rdf:resource="http://id.loc.gov/vocabulary/contentTypes/tic"/>
-      <rdaed:P20001>spoken word</rdaed:P20001>
-      <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1012"/>
+      <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1013"/>
+      <rdae:P20001 rdf:resource="http://id.loc.gov/vocabulary/contentTypes/snd"/>
+      <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1008"/>
+      <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+      <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1009"/>
       <rdaed:P20001>map</rdaed:P20001>
-      <rdaed:P20001>cartographic image</rdaed:P20001>
-      <rdaed:P20001>cri</rdaed:P20001>
-      <rdaed:P20001>notated music</rdaed:P20001>
-      <rdaed:P20001>sounds</rdaed:P20001>
-      <rdaed:P20001>spw</rdaed:P20001>
+      <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1002"/>
+      <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1002"/>
+      <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1010"/>
+      <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1010"/>
+      <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1009"/>
+      <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1014"/>
+      <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1013"/>
+      <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1021"/>
+      <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1012"/>
+      <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1012"/>
+      <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1013"/>
       <rdaed:P20001>swp</rdaed:P20001>
+      <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1023"/>
+      <rdaed:P30137>Content type two-dimensional moving image applies to Guide</rdaed:P30137>
+      <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1023"/>
+      <rdaed:P30137>Content type tdi applies to Guide</rdaed:P30137>
+      <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+      <rdaed:P30137>Content type text applies to CD-ROM</rdaed:P30137>
+      <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+      <rdaed:P30137>Content type txt applies to CD-ROM</rdaed:P30137>
+      <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1018"/>
+      <rdaed:P30137>Content type tactile text applies to Braille pages:</rdaed:P30137>
+      <rdae:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1018"/>
+      <rdaed:P30137>Content type tct applies to Braille pages:</rdaed:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake//con#spokenword">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
