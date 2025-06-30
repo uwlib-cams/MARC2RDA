@@ -1073,6 +1073,7 @@
                             <!-- $a mapping -->
                             <xsl:for-each select="marc:subfield[@code = 'a']">
                                 <xsl:variable name="term" select="normalize-space(.)"/>
+                                <xsl:variable name="lc" select="lower-case($term)"/>
                                 <xsl:variable name="rdaIRI" select="document('lookup/Lookup338.xml')/lookupTable/entry[rdaTerm = $term or locTerm = $term or locCode = $term]/rdaIRI"/>
                                 <xsl:choose>
                                     <xsl:when test="$rdaIRI">
@@ -1081,6 +1082,7 @@
                                             <rdamd:P30137>Carrier type: {$term} applies to {concat(upper-case(substring(../marc:subfield[@code = '3'], 1, 1)), substring(../marc:subfield[@code = '3'], 2))}</rdamd:P30137>
                                         </xsl:if>
                                     </xsl:when>
+                                    <xsl:when test="$lc = ('other', 'unspecified', 'zu', 'cz', 'vz', 'nb', 'xz', 'hz', 'pz', 'mz', 'ez', 'nz')"/>
                                     <xsl:otherwise>
                                         <rdamd:P30001><xsl:value-of select="$term"/></rdamd:P30001>
                                     </xsl:otherwise>
@@ -1089,6 +1091,7 @@
                             <!-- $b mapping -->
                             <xsl:for-each select="marc:subfield[@code = 'b']">
                                 <xsl:variable name="code" select="normalize-space(.)"/>
+                                <xsl:variable name="lc" select="lower-case($code)"/>
                                 <xsl:variable name="rdaIRI" select="document('lookup/Lookup338.xml')/lookupTable/entry[rdaTerm = $code or locTerm = $code or locCode = $code]/rdaIRI"/>
                                 <xsl:choose>
                                     <xsl:when test="$rdaIRI">
@@ -1097,6 +1100,7 @@
                                             <rdamd:P30137>Carrier type: {$code} applies to {concat(upper-case(substring(../marc:subfield[@code = '3'], 1, 1)), substring(../marc:subfield[@code = '3'], 2))}</rdamd:P30137>
                                         </xsl:if>
                                     </xsl:when>
+                                    <xsl:when test="$lc = ('zu', 'cz', 'vz', 'nb', 'xz', 'hz', 'pz', 'mz', 'ez', 'nz', 'other', 'unspecified')"/>
                                     <xsl:otherwise>
                                         <rdamd:P30001><xsl:value-of select="$code"/></rdamd:P30001>
                                     </xsl:otherwise>
@@ -1248,7 +1252,7 @@
                     <rdamd:P30001><xsl:value-of select="$uri"/></rdamd:P30001>
                 </xsl:when>
                 <xsl:when test="contains($uri, '/contentTypes/')"/>
-                <xsl:when test="matches(lower-case($uri), '/(cz|zu)($|/)')">
+                <xsl:when test="matches(lower-case($uri), '/(zu|cz|vz|nb|xz|hz|pz|mz|ez|nz)($|/)')">
                     <rdamd:P30001>Unspecified</rdamd:P30001>
                 </xsl:when>
                 <xsl:otherwise>
@@ -1273,7 +1277,7 @@
                         <rdamd:P30001><xsl:value-of select="$uri"/></rdamd:P30001>
                     </xsl:when>
                     <xsl:when test="contains($uri, '/contentTypes/')"/>
-                    <xsl:when test="matches(lower-case($uri), '/(cz|zu)($|/)')">
+                    <xsl:when test="matches(lower-case($uri), '/(zu|cz|vz|nb|xz|hz|pz|mz|ez|nz)($|/)')">
                         <rdamd:P30001>Unspecified</rdamd:P30001>
                     </xsl:when>
                     <xsl:when test="document('lookup/Lookup338.xml')/lookupTable/entry[rdaIRI = $uri or locURI = $uri]">
