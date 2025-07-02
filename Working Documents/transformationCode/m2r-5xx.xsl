@@ -962,6 +962,128 @@
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
+
+    <!-- 534 – Original version note (manifestation) -->
+    <xsl:template match="marc:datafield[@tag='534'] | marc:datafield[@tag='880'][substring(marc:subfield[@code='6'],1,3)='534']"
+        mode="man"
+        expand-text="yes">
+        <xsl:if test="marc:subfield[@code=('p','a','b','c','e','f','k','l','m','n','o','t','x','z')]">
+            <xsl:variable name="noteContent">
+                <xsl:choose>
+                    <!-- 1) if subfield $p is present, use its contents directly AND process other subfields -->
+                    <xsl:when test="marc:subfield[@code='p']">
+                        <xsl:value-of select="normalize-space(replace(marc:subfield[@code='p'], '[.;,]\s*$', ''))"/>
+                        <xsl:for-each select="marc:subfield[@code=('a','b','c','e','f','k','l','m','n','o','t','x','z')]">
+                            <xsl:text> </xsl:text>
+                            <xsl:value-of select="normalize-space(replace(., '[.;:,]\s*$', ''))"/>
+                        </xsl:for-each>
+                    </xsl:when>
+                    <!-- 2) otherwise add 'Original Version Note:' as first property, then individual subfields -->
+                    <xsl:otherwise>
+                        <xsl:text>Original Version Note: </xsl:text>
+                        <xsl:for-each select="marc:subfield[@code=('a','b','c','e','f','k','l','m','n','o','t','x','z')]">
+                            <xsl:value-of select="normalize-space(replace(., '[.;:,]\s*$', ''))"/>
+                            <xsl:if test="position() != last()">
+                                <xsl:text> </xsl:text>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:variable>
+            <rdamd:P30137>
+                <xsl:value-of select="normalize-space(replace($noteContent, ';\s*$', ''))"/>
+            </rdamd:P30137>
+        </xsl:if>
+    </xsl:template>
+
+    <!-- 535 - Location of Originals/Duplicates Note -->
+    <xsl:template match="marc:datafield[@tag='535'] | marc:datafield[@tag='880'][substring(marc:subfield[@code='6'],1,3)='535']"
+        mode="man"
+        expand-text="yes">
+        <xsl:choose>
+            <!-- ind1 = 1: Holder of originals -->
+            <xsl:when test="@ind1 = '1'">
+                <rdamd:P30137>
+                    <xsl:text>Location/Holder of Originals. </xsl:text>
+                    <xsl:if test="marc:subfield[@code='3']">
+                        <xsl:text>Applies to: </xsl:text>
+                        <xsl:value-of select="normalize-space(replace(marc:subfield[@code='3'], '[.;:,]\s*$', ''))"/>
+                        <xsl:text>; </xsl:text>
+                    </xsl:if>
+                    <xsl:if test="marc:subfield[@code='a']">
+                        <xsl:text>Custodian: </xsl:text>
+                        <xsl:value-of select="normalize-space(replace(marc:subfield[@code='a'], '[.;:,]\s*$', ''))"/>
+                        <xsl:text>; </xsl:text>
+                    </xsl:if>
+                    <xsl:if test="marc:subfield[@code='b']">
+                        <xsl:text>Postal address: </xsl:text>
+                        <xsl:value-of select="normalize-space(replace(marc:subfield[@code='b'], '[.;:,]\s*$', ''))"/>
+                        <xsl:text>; </xsl:text>
+                    </xsl:if>
+                    <xsl:if test="marc:subfield[@code='c']">
+                        <xsl:text>Country: </xsl:text>
+                        <xsl:value-of select="normalize-space(replace(marc:subfield[@code='c'], '[.;:,]\s*$', ''))"/>
+                        <xsl:text>; </xsl:text>
+                    </xsl:if>
+                    <xsl:if test="marc:subfield[@code='d']">
+                        <xsl:text>Telecommunications: </xsl:text>
+                        <xsl:value-of select="normalize-space(replace(marc:subfield[@code='d'], '[.;:,]\s*$', ''))"/>
+                        <xsl:text>; </xsl:text>
+                    </xsl:if>
+                    <xsl:if test="marc:subfield[@code='g']">
+                        <xsl:text>Repository code: </xsl:text>
+                        <xsl:value-of select="normalize-space(replace(marc:subfield[@code='g'], '[.;:,]\s*$', ''))"/>
+                        <xsl:text>.</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="not(marc:subfield[@code='g'])">
+                        <xsl:text>.</xsl:text>
+                    </xsl:if>
+                </rdamd:P30137>
+            </xsl:when>
+            <!-- ind1 = 2: Holder of duplicates -->
+            <xsl:when test="@ind1 = '2'">
+                <rdamd:P30137>
+                    <xsl:text>Location/Holder of Duplicates. </xsl:text>
+                    <xsl:if test="marc:subfield[@code='3']">
+                        <xsl:text>Materials specified: </xsl:text>
+                        <xsl:value-of select="normalize-space(replace(marc:subfield[@code='3'], '[.;:,]\s*$', ''))"/>
+                        <xsl:text>; </xsl:text>
+                    </xsl:if>
+                    <xsl:if test="marc:subfield[@code='a']">
+                        <xsl:text>Custodian: </xsl:text>
+                        <xsl:value-of select="normalize-space(replace(marc:subfield[@code='a'], '[.;:,]\s*$', ''))"/>
+                        <xsl:text>; </xsl:text>
+                    </xsl:if>
+                    <xsl:if test="marc:subfield[@code='b']">
+                        <xsl:text>Postal address: </xsl:text>
+                        <xsl:value-of select="normalize-space(replace(marc:subfield[@code='b'], '[.;:,]\s*$', ''))"/>
+                        <xsl:text>; </xsl:text>
+                    </xsl:if>
+                    <xsl:if test="marc:subfield[@code='c']">
+                        <xsl:text>Country: </xsl:text>
+                        <xsl:value-of select="normalize-space(replace(marc:subfield[@code='c'], '[.;:,]\s*$', ''))"/>
+                        <xsl:text>; </xsl:text>
+                    </xsl:if>
+                    <xsl:if test="marc:subfield[@code='d']">
+                        <xsl:text>Telecommunications: </xsl:text>
+                        <xsl:value-of select="normalize-space(replace(marc:subfield[@code='d'], '[.;:,]\s*$', ''))"/>
+                        <xsl:text>; </xsl:text>
+                    </xsl:if>
+                    <xsl:if test="marc:subfield[@code='g']">
+                        <xsl:text>Repository code: </xsl:text>
+                        <xsl:value-of select="normalize-space(replace(marc:subfield[@code='g'], '[.;:,]\s*$', ''))"/>
+                        <xsl:text>.</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="not(marc:subfield[@code='g'])">
+                        <xsl:text>.</xsl:text>
+                    </xsl:if>
+                </rdamd:P30137>
+            </xsl:when>
+            <!-- ind1 = 0, 3, or other values: ignore (marked as delete/obsolete) -->
+            <xsl:otherwise/>
+        </xsl:choose>
+    </xsl:template>
+
     
     <!-- 536 - Funding Information Note -->
     <xsl:template

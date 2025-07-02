@@ -17,7 +17,8 @@
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
 F001 535-test01
-F535 1# $a American Mining Congress; $b 335 East 45th Street, New York, NY 10017 $c USA; $d 717-245-3601, 3434 $g nyu $3 Duplicate transcripts $6 test subfield 6 $8 test subfield 8
+F535 1# $6 880-01 $a American Mining Congress; $b 335 East 45th Street, New York, NY 10017 $c USA; $d 717-245-3601, 3434 $g nyu $3 Duplicate transcripts
+F535 1# $6 535-01 $a 880 $a; $b 880 $b $c 880 $c; $d 880 $d $g 880 $g $3 880 $3
 </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
@@ -36,45 +37,7 @@ F535 1# $a American Mining Congress; $b 335 East 45th Street, New York, NY 10017
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc535-test01"/><!--rdamo:P30462 = is manifestation described with metadata by-->
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30137>Location/Holder of Originals. Applies to: Duplicate transcripts; Custodian: American Mining Congress; Postal address: 335 East 45th Street, New York, NY 10017; Country: USA; Telecommunications: 717-245-3601, 3434; Repository code: nyu. </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc535-test02">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>535-test02</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc535-test02</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc535-test02"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc535-test02">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc535-test02"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc535-test02</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30137>F 11111nam a2200553ui 4500
-F001 535-test02
-F535 2# $a American Mining Congress; $b 335 East 45th Street, New York, NY 10017 $c USA; $d 717-245-3601, 3434 $g nyu $3 Duplicate transcripts $6 test subfield 6 $8 test subfield 8
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc535-test02"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc535-test02"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc535-test02"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30137>Location/Holder of Duplicates. Materials specified: Duplicate transcripts; Custodian: American Mining Congress; Postal address: 335 East 45th Street, New York, NY 10017; Country: USA; Telecommunications: 717-245-3601, 3434; Repository code: nyu. </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Location/Holder of Originals. Applies to: Duplicate transcripts; Custodian: American Mining Congress; Postal address: 335 East 45th Street, New York, NY 10017; Country: USA; Telecommunications: 717-245-3601, 3434; Repository code: nyu.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Location/Holder of Originals. Applies to: 880 $3; Custodian: 880 $a; Postal address: 880 $b; Country: 880 $c; Telecommunications: 880 $d; Repository code: 880 $g.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
 </rdf:RDF>
