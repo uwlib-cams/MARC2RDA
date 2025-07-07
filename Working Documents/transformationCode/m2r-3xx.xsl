@@ -831,11 +831,11 @@
         </xsl:if>
     </xsl:template>
 
-<!--383 Numeric Designation of Musical Work-->
+    <!--383 Numeric Designation of Musical Work-->
     <xsl:template match="marc:datafield[@tag = '383'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '383']" mode="wor">
         <xsl:param name="baseID"/>
         <!--<xsl:call-template name="getmarc"/>-->
-       <xsl:if test="@ind1 = '0' or @ind1 = ' '">
+        <xsl:if test="@ind1 = '0' or @ind1 = ' '">
             <xsl:for-each select="marc:subfield[@code = 'a']">
                 <rdawd:P10334>
                     <xsl:value-of select="."/>
@@ -864,23 +864,20 @@
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:for-each>
-          <xsl:if test="marc:subfield[@code = 'b']">  
-              <xsl:for-each select="marc:subfield[@code = 'e']"> 
-                <rdawd:P10330>
-                    <xsl:text>Publisher associated with opus number: </xsl:text>
-                    <xsl:value-of select="marc:subfield[@code = 'e']"/>
-                </rdawd:P10330>
-            </xsl:for-each>
-          </xsl:if>
+            <xsl:if test="marc:subfield[@code = 'b']">  
+                <xsl:for-each select="marc:subfield[@code = 'e']"> 
+                    <rdawd:P10330>
+                        <xsl:text>Publisher associated with opus number: </xsl:text>
+                        <xsl:value-of select="marc:subfield[@code = 'e']"/>
+                    </rdawd:P10330>
+                </xsl:for-each>
+            </xsl:if>
             <xsl:for-each select="marc:subfield[@code = '3']">
-                <rdawd:P10330>
-                    <xsl:text>applies to: </xsl:text>
-                    <xsl:value-of select="."/>
-                </rdawd:P10330>
+                <xsl:call-template name="F383-3"/>
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
-        
+    
     <xsl:template match="marc:datafield[@tag = '383'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '383']" mode="exp">
         <xsl:param name="baseID"/>
         <!--<xsl:call-template name="getmarc"/>-->
@@ -904,7 +901,7 @@
                 <xsl:choose>
                     <xsl:when test="following-sibling::marc:subfield[@code = '2']">
                         <xsl:variable name="source" select="following-sibling::marc:subfield[@code = '2'][1]"/>
-                        <rdaeo:P20002 rdf:resource="{uwf:nomenIRI($baseID, ., ., $source, 'work')}"/>
+                        <rdaeo:P20002 rdf:resource="{uwf:nomenIRI($baseID, ., ., $source, 'expression')}"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <rdaed:P10335>
@@ -914,41 +911,40 @@
                 </xsl:choose>
             </xsl:for-each>
             <xsl:if test="marc:subfield[@code = 'b']">
-            <xsl:for-each select="marc:subfield[@code = 'e']">
-                <rdaed:P20071>
-                    <xsl:text>Publisher associated with opus number: </xsl:text>
-                    <xsl:value-of select="."/>
-                </rdaed:P20071>
-            </xsl:for-each>
+                <xsl:for-each select="marc:subfield[@code = 'e']">
+                    <rdaed:P20071>
+                        <xsl:text>Publisher associated with opus number: </xsl:text>
+                        <xsl:value-of select="."/>
+                    </rdaed:P20071>
+                </xsl:for-each>
             </xsl:if>
             <xsl:for-each select="marc:subfield[@code = '3']">
-                <xsl:text>applies to: </xsl:text>
-                <rdaed:P20071>
-                    <xsl:value-of select="."/>
-                </rdaed:P20071>
+                <xsl:call-template name="F383-3"/>
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
-   
-        
+    
+    
     <xsl:template match="marc:datafield[@tag = '383'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '383']" mode="nom">
         <xsl:param name="baseID"/>
         <!--<xsl:call-template name="getmarc"/>-->
-        <xsl:if test="@ind1 = '#' or @ind1 = '0' or @ind1 = '1'"> 
+        <xsl:if test="@ind1 = '#' or @ind1 = '0'"> 
             <xsl:for-each select="marc:subfield[@code = 'd']">
                 <xsl:if test="following-sibling::marc:subfield[@code = '2']">
                     <xsl:variable name="source" select="following-sibling::marc:subfield[@code = '2'][1]"/>
                     <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., ., $source, 'work')}">
-                    <rdand:P80068>
-                        <xsl:if test="preceding-sibling::marc:subfield[@code = 'c']">
-                            <xsl:value-of select="preceding-sibling::marc:subfield[@code = 'c']"/>
-                            <xsl:text> </xsl:text>
-                        </xsl:if>
-                        <xsl:value-of select="."/> 
-                    </rdand:P80068>    
-                    <rdano:P80069 rdf:resource="https://www.loc.gov/standards/sourcelist/thematic-index.html"/>
-                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
-                </rdf:Description>
+                        <xsl:call-template name="F383-nom"/>
+                    </rdf:Description>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:if>
+        <xsl:if test="@ind1 = '1'"> 
+            <xsl:for-each select="marc:subfield[@code = 'd']">
+                <xsl:if test="following-sibling::marc:subfield[@code = '2']">
+                    <xsl:variable name="source" select="following-sibling::marc:subfield[@code = '2'][1]"/>
+                    <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., ., $source, 'expression')}">
+                        <xsl:call-template name="F383-nom"/>
+                    </rdf:Description>
                 </xsl:if>
             </xsl:for-each>
         </xsl:if>
