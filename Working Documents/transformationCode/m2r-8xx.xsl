@@ -444,4 +444,129 @@
             </rdf:Description>
         </xsl:if>
     </xsl:template>
+
+    <!--881 Manifestation Statements-->
+    <xsl:template match="marc:datafield[@tag = '881'] | marc:datafield[@tag = '881'][substring(marc:subfield[@code = '6'], 1, 6) = '881']" mode="man" expand-text="yes">
+        <xsl:if test="marc:subfield[@code = 'a']">
+            <xsl:for-each select="marc:subfield[@code = 'a']">
+                <rdamd:P30292>
+                    <xsl:value-of select="."/>
+                </rdamd:P30292>
+            </xsl:for-each>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'b' or @code = 'c' or @code = 'd' or @code = 'e' or @code = 'f' or @code = 'g' or @code = 'h' or @code = 'i' or @code = 'j' or @code = 'k' or @code = 'l' or @code = 'm' or @code = 'n']">
+            <rdamd:P30292>
+                <xsl:for-each select="marc:subfield[@code = 'b' or @code = 'c' or @code = 'd' or @code = 'e' or @code = 'f' or @code = 'g' or @code = 'h' or @code = 'i' or @code = 'j' or @code = 'k' or @code = 'l' or @code = 'm' or @code = 'n']">
+                    <xsl:value-of select="."/>
+                    <xsl:if test="position() != last()">
+                        <xsl:text> </xsl:text>
+                    </xsl:if>
+                </xsl:for-each>
+            </rdamd:P30292>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'b']">
+            <xsl:for-each select="marc:subfield[@code = 'b']">
+                <rdamd:P30286>
+                    <xsl:value-of select="."/>
+                </rdamd:P30286>
+            </xsl:for-each>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'c']">
+            <xsl:for-each select="marc:subfield[@code = 'c']">
+                <rdamd:P30293>
+                    <xsl:value-of select="."/>
+                </rdamd:P30293>
+            </xsl:for-each>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'd']">
+            <xsl:for-each select="marc:subfield[@code = 'd']">
+                <rdamd:P30284>
+                    <xsl:value-of select="."/>
+                </rdamd:P30284>
+            </xsl:for-each>
+        </xsl:if>        
+        <xsl:if test="marc:subfield[@code = 'e']">
+            <xsl:for-each select="marc:subfield[@code = 'e']">
+                <rdamd:P30288>
+                    <xsl:value-of select="."/>
+                </rdamd:P30288>
+            </xsl:for-each>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'f']">
+            <xsl:for-each select="marc:subfield[@code = 'f']">
+                <rdamd:P30289>
+                    <xsl:value-of select="."/>
+                </rdamd:P30289>
+            </xsl:for-each>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'g']">
+            <xsl:for-each select="marc:subfield[@code = 'g']">
+                <rdamd:P30283>
+                    <xsl:value-of select="."/>
+                </rdamd:P30283>
+            </xsl:for-each>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'h']">
+            <xsl:for-each select="marc:subfield[@code = 'h']">
+                <rdamd:P30287>
+                    <xsl:value-of select="."/>
+                </rdamd:P30287>
+            </xsl:for-each>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'i']">
+            <xsl:for-each select="marc:subfield[@code = 'i']">
+                <rdamd:P30280>
+                    <xsl:value-of select="."/>
+                </rdamd:P30280>
+            </xsl:for-each>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'j']">
+            <xsl:for-each select="marc:subfield[@code = 'j']">
+                <rdamd:P30285>
+                    <xsl:value-of select="."/>
+                </rdamd:P30285>
+            </xsl:for-each>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'k']">
+            <xsl:for-each select="marc:subfield[@code = 'k']">
+                <rdamd:P30281>
+                    <xsl:value-of select="."/>
+                </rdamd:P30281>
+            </xsl:for-each>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'l']">
+            <xsl:for-each select="marc:subfield[@code = 'l']">
+                <rdamd:P30291>
+                    <xsl:value-of select="."/>
+                </rdamd:P30291>
+            </xsl:for-each>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'm']">
+            <xsl:for-each select="marc:subfield[@code = 'm']">
+                <rdamd:P30282>
+                    <xsl:value-of select="."/>
+                </rdamd:P30282>
+            </xsl:for-each>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = 'n']">
+            <xsl:for-each select="marc:subfield[@code = 'n']">
+                <rdamd:P30290>
+                    <xsl:value-of select="."/>
+                </rdamd:P30290>
+            </xsl:for-each>
+        </xsl:if>
+        <xsl:if test="marc:subfield[@code = '3']">
+<rdamd:P30137>
+    <xsl:text>Manifestation statement "</xsl:text>
+    <xsl:for-each select="marc:subfield[@code = 'b' or @code = 'c' or @code = 'd' or @code = 'e' or @code = 'f' or @code = 'g' or @code = 'h' or @code = 'i' or @code = 'j' or @code = 'k' or @code = 'l' or @code = 'm' or @code = 'n']">
+                <xsl:value-of select="."/>
+        <xsl:if test="position() != last()">
+            <xsl:text> </xsl:text>
+        </xsl:if>
+            </xsl:for-each>
+            <xsl:text>" applies to </xsl:text>
+            <xsl:value-of select="marc:subfield[@code = '3']"/>
+</rdamd:P30137>
+        </xsl:if>
+    </xsl:template>
 </xsl:stylesheet>
