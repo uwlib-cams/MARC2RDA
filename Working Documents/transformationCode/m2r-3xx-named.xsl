@@ -3350,4 +3350,54 @@
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
+
+        <!--383 templates-->
+    <xsl:template name="F383-3">
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <xsl:text>Serial number </xsl:text>
+            <xsl:value-of select="."/>
+            <xsl:text> applies to: </xsl:text>
+            <xsl:value-of select="marc:subfield[@code = '3']"/>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'b']">
+            <xsl:text>Opus number </xsl:text>
+            <xsl:value-of select="."/>
+            <xsl:text> applies to: </xsl:text>
+            <xsl:value-of select="marc:subfield[@code = '3']"/>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'c']">
+            <xsl:text>Thematic index number </xsl:text>
+            <xsl:value-of select="."/>
+            <xsl:text> applies to: </xsl:text>
+            <xsl:value-of select="marc:subfield[@code = '3']"/>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'd']">
+            <xsl:text>Thematic index code </xsl:text>
+            <xsl:value-of select="."/>
+            <xsl:text> applies to: </xsl:text>
+            <xsl:value-of select="marc:subfield[@code = '3']"/>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template name="F383-nom">
+        <xsl:variable name="source" select="following-sibling::marc:subfield[@code = '2'][1]"/>
+        <rdand:P80068>
+            <xsl:if test="preceding-sibling::marc:subfield[@code = 'c']">
+                <xsl:value-of select="preceding-sibling::marc:subfield[@code = 'c']"/>
+                <xsl:text> </xsl:text>
+            </xsl:if>
+            <xsl:value-of select="."/> 
+        </rdand:P80068>    
+        <xsl:choose>
+            <xsl:when test="$source = 'mlati'">    
+                <rdano:P80069 rdf:resource="cmc.wp.musiclibraryassoc.org/thematic-index/l"/>
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <rdand:P80069>
+                    <xsl:value-of select="$source"/>
+                </rdand:P80069>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
 </xsl:stylesheet>
