@@ -216,7 +216,7 @@
             @code = 'n' or @code = 'o' or @code = 'p' or
             @code = 'q' or @code = 'r' or @code = 's' or
             @code = 't' or @code = 'u' or @code = 'w' or
-            @code = 'x' or @code = 'y' or @code = 'z']" />
+            @code = 'x' or @code = 'y' or @code = 'z']"/>
         
         <xsl:if test="$subfields">
             <xsl:text>Is part of: </xsl:text>
@@ -226,18 +226,25 @@
                     <xsl:text>; </xsl:text>
                 </xsl:if>
             </xsl:for-each>
-            <xsl:text>: </xsl:text>
     
+            <!-- Append period if last subfield doesn't end in one -->
+            <xsl:variable name="lastSubfieldText" select="normalize-space($subfields[last()])"/>
+            <xsl:choose>
+                <xsl:when test="not(ends-with($lastSubfieldText, '.'))">
+                    <xsl:text>.</xsl:text>
+                </xsl:when>
+            </xsl:choose>
             <xsl:if test="marc:subfield[@code = '3']">
-                <xsl:text>Applies to: </xsl:text>
+                <xsl:text> Applies to: </xsl:text>
                 <xsl:value-of select="normalize-space(marc:subfield[@code = '3'])"/>
-                <xsl:text>. </xsl:text>
+                <xsl:text>.</xsl:text>
             </xsl:if>
             
+            <!-- Add $4 sentence if present -->
             <xsl:if test="marc:subfield[@code = '4']">
-                <xsl:text>Relationship code or URI: </xsl:text>
+                <xsl:text> Relationship code or URI: </xsl:text>
                 <xsl:value-of select="normalize-space(marc:subfield[@code = '4'])"/>
-                <xsl:text> . </xsl:text>
+                <xsl:text>.</xsl:text>
             </xsl:if>
         </xsl:if>
     </xsl:template>
