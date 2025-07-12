@@ -1,20 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
+         xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwf="http://universityOfWashington/functions"
+         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc338-test1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>338-test1</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc338-test1</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc338-test1"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#otherunspecifiedvideocassettefilmstriprollcardmicrofichetextcrotherothervideocarriervolumevideotapereelaudiodiscvolumeslideflipchartssvolumeaudiodiscvolumecomputerdiscaudiodisctextchengceaudiocylinder"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawd:P10400>338-test1</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc338-test1</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc338-test1"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#otherunspecifiedvideocassettefilmstriprollcardmicrofichetextcrotherothervideocarriervolumevideotapereelaudiodiscvolumeslideflipchartssvolumeaudiodiscvolumecomputerdiscaudiodisctextchengceaudiocylinder"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc338-test1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc338-test1"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc338-test1</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc338-test1"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc338-test1</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
       <rdamd:P30137>F 11111nam a2200553ui 4500
 F001 338-test1
 F338 ## $1 htp
@@ -57,72 +89,121 @@ F338 ## $6 880-09 $a cheng ce $b nc $2 rdacarrier/chi
 F880 ## $6 338-09 $a 成冊 $b nc $2 rdacarrier/chi
 F338 ## $6 880-89 $a audio cylinder $b se $2 rdacarrier
 F880 ## $6 338-89 $a audiocilinder $b se $2 rdacarrier
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+</rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc338-test1"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc338-test1"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc338-test1"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#otherunspecifiedvideocassettefilmstriprollcardmicrofichetextcrotherothervideocarriervolumevideotapereelaudiodiscvolumeslideflipchartssvolumeaudiodiscvolumecomputerdiscaudiodisctextchengceaudiocylinder"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
-      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1013"/><!--rdaeo:P20001 = has content type-->
-      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc338-test1"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#otherunspecifiedvideocassettefilmstriprollcardmicrofichetextcrotherothervideocarriervolumevideotapereelaudiodiscvolumeslideflipchartssvolumeaudiodiscvolumecomputerdiscaudiodisctextchengceaudiocylinder"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1013"/>
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#otherunspecifiedvideocassettefilmstriprollcardmicrofichetextcrotherothervideocarriervolumevideotapereelaudiodiscvolumeslideflipchartssvolumeaudiodiscvolumecomputerdiscaudiodisctextchengceaudiocylinder">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc338-test1"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamd:P30276>otherunspecifiedvideocassettefilmstriprollcardmicrofichetextcrotherother video carriervolumevideotape reelaudio discvolumeslide flipchartssvolumeaudio discvolumecomputer discaudio disctextcheng ceaudio cylinder</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1013"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1060"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1034"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1040"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30001>videocassette</rdamd:P30001><!--rdamd:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1036"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1047"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1045"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1045"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1022"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30001>nb</rdamd:P30001><!--rdamd:P30001 = has carrier type-->
-      <rdamd:P30001>volume</rdamd:P30001><!--rdamd:P30001 = has carrier type-->
-      <rdamd:P30001>nc</rdamd:P30001><!--rdamd:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1053"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1053"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1059"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1040"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30001>gst</rdamd:P30001><!--rdamd:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1046"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1046"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1007"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1007"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1007"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1002"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/><!--rdamo:P30002 = has media type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30001>tnc</rdamd:P30001><!--rdamd:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1013"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1013"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30001>cheng ce</rdamd:P30001><!--rdamd:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30001>成冊</rdamd:P30001><!--rdamd:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1003"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1003"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1003"/><!--rdamo:P30001 = has carrier type-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1003"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc338-test1"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdamd:P30276>otherunspecifiedvideocassettefilmstriprollcardmicrofichetextcrotherother video carriervolumevideotape reelaudio discvolumeslide flipchartssvolumeaudio discvolumecomputer discaudio disctextcheng ceaudio cylinder</rdamd:P30276>
+      <fake:marcfield>F338 ## $1 htp</fake:marcfield>
+      <fake:marcfield>F338 ## $0 hptt</fake:marcfield>
+      <fake:marcfield>F338 ## $0 http://id.loc.gov/vocabulary/carriers/zu</fake:marcfield>
+      <fake:marcfield>F338 ## $1 http://rdaregistry.info/termList/RDACarrierType1004</fake:marcfield>
+      <fake:marcfield>F338 ## $1 http://rdaregistry.info/termList/RDACarrierType/1013 $1 http://rdaregistry.info/termList/RDACarrierType/1049</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1013"/>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
+      <fake:marcfield>F338 ## $0 http://rdaregistry.info/termList/RDACarrierType/1060</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1060"/>
+      <fake:marcfield>F338 ## $0 http://id.loc.gov/vocabulary/carriers/mr</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1034"/>
+      <fake:marcfield>F338 ## $0 http://id.loc.gov/vocabulary/carriers/nc $0 http://id.loc.gov/vocabulary/carriers/gs</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1040"/>
+      <fake:marcfield>F338 ## $0 http://id.loc.gov/vocabulary/carriers/fg</fake:marcfield>
+      <fake:marcfield>F338 ## $a other $2 rdacarrier</fake:marcfield>
+      <fake:marcfield>F338 ## $a unspecified $2 rdacarrier</fake:marcfield>
+      <fake:marcfield>F338 ## $a videocassette</fake:marcfield>
+      <rdamd:P30001>videocassette</rdamd:P30001>
+      <fake:marcfield>F338 ## $a filmstrip $2 rdaco</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1036"/>
+      <fake:marcfield>F338 ## $a roll $2 rdacrrier</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1047"/>
+      <fake:marcfield>F338 ## $a card $2 rdacarrier $0 http://rdaregistry.info/termList/RDACarrierType/1045</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1045"/>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1045"/>
+      <fake:marcfield>F338 ## $a microfiche $2 rdact</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1022"/>
+      <fake:marcfield>F338 ## $a text $2 rdact</fake:marcfield>
+      <fake:marcfield>F338 ## $a cr $2 rdacarrier</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <fake:marcfield>F338 ## $a other $2 rdacarrier</fake:marcfield>
+      <fake:marcfield>F338 ## $b vz $2 rdacarrier</fake:marcfield>
+      <fake:marcfield>F338 ## $b zu $2 rdacarrier</fake:marcfield>
+      <fake:marcfield>F338 ## $b nb</fake:marcfield>
+      <rdamd:P30001>nb</rdamd:P30001>
+      <fake:marcfield>F338 ## $a volume $b nc</fake:marcfield>
+      <rdamd:P30001>volume</rdamd:P30001>
+      <rdamd:P30001>nc</rdamd:P30001>
+      <fake:marcfield>F338 ## $a videotape reel $b vr $2 rdacontent</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1053"/>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1053"/>
+      <fake:marcfield>F338 ## $b spw $2 rdaco</fake:marcfield>
+      <fake:marcfield>F338 ## $b nr $2 rdact</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1059"/>
+      <fake:marcfield>F338 ## $b sd $b nc $2 rdacarrier</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
+      <fake:marcfield>F338 ## $a slide $b gst $a flipchart $b nn $2 rdacarrier</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1040"/>
+      <rdamd:P30001>gst</rdamd:P30001>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1046"/>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1046"/>
+      <fake:marcfield>F338 ## $a ss $b ss $2 rdacarrier $0 http://rdaregistry.info/termList/RDACarrierType/1007</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1007"/>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1007"/>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1007"/>
+      <fake:marcfield>F338 ## $b audio cartridge $2 rdact</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1002"/>
+      <fake:marcfield>F338 ## $a volume $b n $2 rdacarrier</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+      <fake:marcfield>F338 ## $a audio disc $b sd $2 rdacarrier $3 booklet</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
+      <rdawd:P10330>Booklet has Carrier type: http://rdaregistry.info/termList/RDACarrierType/1004</rdawd:P10330>
+      <rdawd:P10330>Booklet has Carrier type: http://rdaregistry.info/termList/RDACarrierType/1004</rdawd:P10330>
+      <fake:marcfield>F338 ## $3 Book $a volume $b tnc $2 rdacarrier</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
+      <rdamd:P30001>tnc</rdamd:P30001>
+      <rdawd:P10330>Book has Carrier type: http://rdaregistry.info/termList/RDACarrierType/1049</rdawd:P10330>
+      <rdawd:P10330>Book has Carrier type: tnc</rdawd:P10330>
+      <fake:marcfield>F338 ## $3 CDROM $a computer disc $b cd $2 rdacarrier</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1013"/>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1013"/>
+      <rdawd:P10330>CDROM has Carrier type: http://rdaregistry.info/termList/RDACarrierType/1013</rdawd:P10330>
+      <rdawd:P10330>CDROM has Carrier type: http://rdaregistry.info/termList/RDACarrierType/1013</rdawd:P10330>
+      <fake:marcfield>F338 ## $a audio disc $2 rdacarrier $3 audio disc</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
+      <rdawd:P10330>Audio disc has Carrier type: http://rdaregistry.info/termList/RDACarrierType/1004</rdawd:P10330>
+      <fake:marcfield>F338 ## $a text $2 rdacarrier $3 program notes</fake:marcfield>
+      <rdawd:P10330>Program notes has Content type: http://rdaregistry.info/termList/RDAContentType/1020</rdawd:P10330>
+      <rdawd:P10330>Program notes has Content type: http://rdaregistry.info/termList/RDAContentType/1020</rdawd:P10330>
+      <fake:marcfield>F338 ## $6 880-09 $a cheng ce $b nc $2 rdacarrier/chi</fake:marcfield>
+      <rdamd:P30001>cheng ce</rdamd:P30001>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
+      <fake:marcfield>F880 ## $6 338-09 $a 成冊 $b nc $2 rdacarrier/chi</fake:marcfield>
+      <rdamd:P30001>成冊</rdamd:P30001>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
+      <fake:marcfield>F338 ## $6 880-89 $a audio cylinder $b se $2 rdacarrier</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1003"/>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1003"/>
+      <fake:marcfield>F880 ## $6 338-89 $a audiocilinder $b se $2 rdacarrier</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1003"/>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1003"/>
    </rdf:Description>
 </rdf:RDF>

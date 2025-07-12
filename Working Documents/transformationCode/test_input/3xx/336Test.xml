@@ -194,6 +194,10 @@
       <marc:subfield code="a">projected</marc:subfield>
       <marc:subfield code="2">rdacontent</marc:subfield>
     </marc:datafield>
+    
+    <marc:datafield tag="979" ind1=" " ind2=" ">
+      <marc:subfield code="a">aam</marc:subfield>
+    </marc:datafield>
   </marc:record>
   
   
