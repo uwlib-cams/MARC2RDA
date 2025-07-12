@@ -471,6 +471,9 @@
     <xsl:key name="lcTerm" match="madsrdf:Authority" use="madsrdf:authoritativeLabel"/>
     <xsl:key name="rdaCode" match="skos:Concept" use="@rdf:about"/>
     <xsl:key name="lcCode" match="madsrdf:Authority" use="@rdf:about"/>
+    <xsl:key name="rdaIRI" match="skos:Concept" use="@rdf:about"/>
+    <xsl:key name="lcIRI" match="uwmisc:entry" use="uwmisc:locURI"/>
+    <xsl:key name="lcTermOrCode" match="uwmisc:entry" use="uwmisc:locCode|uwmisc:locTerm"/>
     
     <!-- If it's a term, a lookup needs to be done to find the IRI -->
     <xsl:function name="uwf:rdaTermLookup" expand-text="yes">
@@ -524,6 +527,86 @@
                 </xsl:choose>
             </xsl:when>
             <xsl:otherwise/>
+        </xsl:choose>
+    </xsl:function>
+    
+    <xsl:function name="uwf:rdaIRILookup-33X" expand-text="yes">
+        <xsl:param name="givenIRI"/>
+        <xsl:choose>
+            <xsl:when test="document('lookup/rda/RDAContentType.xml')/rdf:RDF/skos:Concept/key('rdaIRI', $givenIRI)">
+                <rdaeo:P20001 rdf:resource="{$givenIRI}"/>
+            </xsl:when>
+            <xsl:when test="document('lookup/rda/RDAMediaType.xml')/rdf:RDF/skos:Concept/key('rdaIRI', $givenIRI)">
+                <rdamo:P30002 rdf:resource="{$givenIRI}"/>
+            </xsl:when>
+            <xsl:when test="document('lookup/rda/RDACarrierType.xml')/rdf:RDF/skos:Concept/key('rdaIRI', $givenIRI)">
+                <rdamo:P30001 rdf:resource="{$givenIRI}"/>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:function>
+    
+    <xsl:function name="uwf:lcIRILookup-33X" expand-text="yes">
+        <xsl:param name="givenIRI"/>
+        <xsl:choose>
+            <xsl:when test="document('lookup/Lookup336.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcIRI', $givenIRI)">
+                <rdaeo:P20001 rdf:resource="{document('lookup/Lookup336.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcIRI', $givenIRI)/uwmisc:rdaIRI}"/>
+            </xsl:when>
+            <xsl:when test="document('lookup/Lookup337.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcIRI', $givenIRI)">
+                <rdamo:P30002 rdf:resource="{document('lookup/Lookup337.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcIRI', $givenIRI)/uwmisc:rdaIRI}"/>
+            </xsl:when>
+            <xsl:when test="document('lookup/Lookup338.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcIRI', $givenIRI)">
+                <rdamo:P30001 rdf:resource="{document('lookup/Lookup338.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcIRI', $givenIRI)/uwmisc:rdaIRI}"/>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:function>
+    
+    <xsl:function name="uwf:rdalcTermCodeLookup-33X" expand-text="yes">
+        <xsl:param name="givenTermOrCode"/>
+        <xsl:param name="tag33X"/>
+        <xsl:choose>
+            <!-- four numerical characters means in an RDA code -->
+            <xsl:when test="matches($givenTermOrCode, '^\d\d\d\d$')">
+                <xsl:choose>
+                    <xsl:when test="$tag33X = '336' and document('lookup/rda/RDAContentType.xml')/rdf:RDF/skos:Concept/key('rdaCode', concat('http://rdaregistry.info/termList/RDAContentType/', $givenTermOrCode))">
+                        <rdaeo:P20001 rdf:resource="{concat('http://rdaregistry.info/termList/RDAContentType/', $givenTermOrCode)}"/>
+                    </xsl:when>
+                    <xsl:when test="$tag33X = '337' and document('lookup/rda/RDACMediaType.xml')/rdf:RDF/skos:Concept/key('rdaCode', concat('http://rdaregistry.info/termList/RDAMediaType/', $givenTermOrCode))">
+                        <rdamo:P30002 rdf:resource="{concat('http://rdaregistry.info/termList/RDAMediaType/', $givenTermOrCode)}"/>
+                    </xsl:when>
+                    <xsl:when test="$tag33X = '338' and document('lookup/rda/RDACarrierType.xml')/rdf:RDF/skos:Concept/key('rdaCode', concat('http://rdaregistry.info/termList/RDACarrierType/', $givenTermOrCode))">
+                        <rdamo:P30001 rdf:resource="{concat('http://rdaregistry.info/termList/RDACarrierType/', $givenTermOrCode)}"/>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <!-- otherwise check for rdaTerm, then lcTerm or lcCode -->
+            <xsl:otherwise>
+                <xsl:choose>
+                    <!-- RDA Content Type Term -->
+                    <xsl:when test="document('lookup/rda/RDAContentType.xml')/rdf:RDF/skos:Concept/key('rdaTerm', $givenTermOrCode)">
+                        <rdaeo:P20001 rdf:resource="{document('lookup/rda/RDAContentType.xml')/rdf:RDF/skos:Concept/key('rdaTerm', $givenTermOrCode)/@rdf:about}"/>
+                    </xsl:when>
+                    <!-- RDA Media Type Term -->
+                    <xsl:when test="document('lookup/rda/RDAMediaType.xml')/rdf:RDF/skos:Concept/key('rdaTerm', $givenTermOrCode)">
+                        <rdamo:P30002 rdf:resource="{document('lookup/rda/RDAMediaType.xml')/rdf:RDF/skos:Concept/key('rdaTerm', $givenTermOrCode)/@rdf:about}"/>
+                    </xsl:when>
+                    <!-- RDA Carrier Type Term -->
+                    <xsl:when test="document('lookup/rda/RDACarrierType.xml')/rdf:RDF/skos:Concept/key('rdaTerm', $givenTermOrCode)">
+                        <rdamo:P30001 rdf:resource="{document('lookup/rda/RDACarrierType.xml')/rdf:RDF/skos:Concept/key('rdaTerm', $givenTermOrCode)/@rdf:about}"/>
+                    </xsl:when>
+                    <!-- LC Content Type Term or Code -->
+                    <xsl:when test="document('lookup/Lookup336.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcTermOrCode', $givenTermOrCode)">
+                        <rdaeo:P20001 rdf:resource="{document('lookup/Lookup336.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcTermOrCode', $givenTermOrCode)/uwmisc:rdaIRI}"/>
+                    </xsl:when>
+                    <!-- LC Media Type Term or Code -->
+                    <xsl:when test="document('lookup/Lookup337.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcTermOrCode', $givenTermOrCode)">
+                        <rdamo:P30002 rdf:resource="{document('lookup/Lookup337.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcTermOrCode', $givenTermOrCode)/uwmisc:rdaIRI}"/>
+                    </xsl:when>
+                    <!-- LC Carrier Type Term or Code -->
+                    <xsl:when test="document('lookup/Lookup338.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcTermOrCode', $givenTermOrCode)">
+                        <rdamo:P30001 rdf:resource="{document('lookup/Lookup338.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcTermOrCode', $givenTermOrCode)/uwmisc:rdaIRI}"/>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
     

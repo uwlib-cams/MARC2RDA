@@ -143,23 +143,70 @@
         <xsl:call-template name="F335-concept"/>
     </xsl:template>
 
-    <!-- 336 Content Type -->
-    <xsl:template match="marc:datafield[@tag = '336'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '336']" 
-        mode="man">
-        <xsl:call-template name="F336-string"/>
-        <xsl:call-template name="F336-iri"/>
+    <!-- 336-337-338 -->
+    
+    <xsl:template match="marc:datafield[@tag = '336'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '336']
+        | marc:datafield[@tag = '337'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '337']
+        | marc:datafield[@tag = '338'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '338']" 
+        mode="exp">
+        <!--<xsl:call-template name="getmarc"/>-->
+        <xsl:variable name="mappedTriple">
+            <xsl:call-template name="F336-337-338">
+                <xsl:with-param name="tag33X">
+                    <xsl:choose>
+                        <xsl:when test="starts-with(@tag, '33')">
+                            <xsl:value-of select="@tag"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="substring(marc:subfield[@code = '6'], 1, 3)"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:with-param>
+            </xsl:call-template>
+        </xsl:variable>
+        
+        <xsl:for-each select="$mappedTriple/child::*[starts-with(name(), 'rdae')]">
+            <xsl:copy-of select="."/>
+        </xsl:for-each>
     </xsl:template>
     
-    <xsl:template match="marc:datafield[@tag = '336'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '336-00']" 
+    <xsl:template match="marc:datafield[@tag = '336'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '336']
+        | marc:datafield[@tag = '337'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '337']
+        | marc:datafield[@tag = '338'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '338']" 
+        mode="man">
+        <!--<xsl:call-template name="getmarc"/>-->
+        <xsl:variable name="mappedTriple">
+            <xsl:call-template name="F336-337-338">
+                <xsl:with-param name="tag33X">
+                    <xsl:choose>
+                        <xsl:when test="starts-with(@tag, '33')">
+                            <xsl:value-of select="@tag"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="substring(marc:subfield[@code = '6'], 1, 3)"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:with-param>
+            </xsl:call-template>
+        </xsl:variable>
+        
+        <xsl:for-each select="$mappedTriple/child::*[starts-with(name(), 'rdam')]">
+            <xsl:copy-of select="."/>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '336'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '336-00']
+        | marc:datafield[@tag = '337'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '337-00']
+        | marc:datafield[@tag = '338'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '338-00']"
         mode="con">
-        <xsl:call-template name="F336-concept"/>
+        <xsl:call-template name="F336-337-338-concept"/>
     </xsl:template>
 
-    <!-- 337 - Media Type -->
+    <!--<!-\- 337 - Media Type -\->
     <xsl:template
         match="marc:datafield[@tag = '337'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '337']"
         mode="man">
-        <!--<xsl:call-template name="getmarc"/>-->
+        <!-\-<xsl:call-template name="getmarc"/>-\->
         <xsl:call-template name="F337-string"/>
         <xsl:call-template name="F337-iri"/>
     </xsl:template>
@@ -170,11 +217,11 @@
         <xsl:call-template name="F337-concept"/>
     </xsl:template>
 
-    <!-- 338 - Carrier Type -->
+    <!-\- 338 - Carrier Type -\->
     <xsl:template
         match="marc:datafield[@tag = '338'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '338']"
         mode="man">
-        <!--<xsl:call-template name="getmarc"/>-->
+        <!-\-<xsl:call-template name="getmarc"/>-\->
         <xsl:call-template name="F338-string"/>
         <xsl:call-template name="F338-iri"/>
     </xsl:template>
@@ -183,7 +230,7 @@
         match="marc:datafield[@tag = '338'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '338-00']"
         mode="con">
         <xsl:call-template name="F338-concept"/>
-    </xsl:template>
+    </xsl:template>-->
 
     <!-- 340 - Physical Medium -->
     <xsl:template
