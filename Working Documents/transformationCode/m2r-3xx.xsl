@@ -150,6 +150,7 @@
         | marc:datafield[@tag = '338'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '338']" 
         mode="aggWor">
         <!--<xsl:call-template name="getmarc"/>-->
+        
         <xsl:variable name="mappedTriple">
             <xsl:call-template name="F336-337-338">
                 <xsl:with-param name="tag33X">
@@ -199,7 +200,10 @@
         | marc:datafield[@tag = '337'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '337']
         | marc:datafield[@tag = '338'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '338']" 
         mode="man">
-        <!--<xsl:call-template name="getmarc"/>-->
+        <xsl:call-template name="getmarc"/>
+        
+        <xsl:variable name="sub3" select="marc:subfield[@code = '3']"/>
+        
         <xsl:variable name="mappedTriple">
             <xsl:call-template name="F336-337-338">
                 <xsl:with-param name="tag33X">
@@ -217,6 +221,36 @@
         
         <xsl:for-each select="$mappedTriple/child::*[starts-with(name(), 'rdam')]">
             <xsl:copy-of select="."/>
+        </xsl:for-each>
+        
+        <xsl:for-each select="$mappedTriple/child::*">
+            <xsl:if test="$sub3 != ''">
+                <rdawd:P10330>
+                    <xsl:value-of select="concat(
+                        upper-case(substring(normalize-space($sub3), 1, 1)),
+                        substring(normalize-space($sub3), 2)
+                        )"/>
+                    <xsl:choose>
+                        <xsl:when test="contains(name(), '10349') or contains(name(), '20001')">
+                            <xsl:text> has Content type: </xsl:text>
+                        </xsl:when>
+                        <xsl:when test="contains(name(), '30002')">
+                            <xsl:text> has Media type: </xsl:text>
+                        </xsl:when>
+                        <xsl:when test="contains(name(), '30001')">
+                            <xsl:text> has Carrier type: </xsl:text>
+                        </xsl:when>
+                    </xsl:choose>
+                    <xsl:choose>
+                        <xsl:when test="./@rdf:resource">
+                            <xsl:value-of select="@rdf:resource"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="text()"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </rdawd:P10330>
+            </xsl:if>
         </xsl:for-each>
     </xsl:template>
     
