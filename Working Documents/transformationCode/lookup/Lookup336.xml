@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<lookupTable>
+<lookupTable xmlns="http://uw.edu/all-purpose-namespace/">
   <entry>
     <locCode>crd</locCode>
     <locTerm>cartographic dataset</locTerm>
