@@ -582,6 +582,7 @@
                     <xsl:choose>
                         <xsl:when test="$tag33X = '336'">
                             <rdaeo:P20001 rdf:resource="{.}"/>
+                            <rdawo:P10349 rdf:resource="{.}"/>
                         </xsl:when>
                         <xsl:when test="$tag33X = '337'">
                             <rdamo:P30002 rdf:resource="{.}"/>
@@ -604,6 +605,9 @@
                             <rdaed:P20001>
                                 <xsl:value-of select="."/>
                             </rdaed:P20001>
+                            <rdawd:P10349>
+                                <xsl:value-of select="."/>
+                            </rdawd:P10349>
                         </xsl:when>
                         <xsl:when test="$tag33X = '337'">
                             <rdamd:P30002>
@@ -640,6 +644,9 @@
                                                 <rdaed:P20001>
                                                     <xsl:value-of select="."/>
                                                 </rdaed:P20001>
+                                                <rdawd:P10349>
+                                                    <xsl:value-of select="."/>
+                                                </rdawd:P10349>
                                             </xsl:if>
                                         </xsl:when>
                                         <xsl:when test="$tag33X = '337'">
@@ -673,6 +680,7 @@
                                         <xsl:choose>
                                             <xsl:when test="$tag33X = '336'">
                                                 <rdaeo:P20001 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
+                                                <rdawo:P10349 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             </xsl:when>
                                             <xsl:when test="$tag33X = '337'">
                                                 <rdamo:P30002 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
@@ -692,6 +700,7 @@
                                         <xsl:choose>
                                             <xsl:when test="$tag33X = '336'">
                                                 <rdaeo:P20001 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
+                                                <rdawd:P10349 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                                             </xsl:when>
                                             <xsl:when test="$tag33X = '337'">
                                                 <rdamo:P30002 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>

@@ -535,6 +535,7 @@
         <xsl:choose>
             <xsl:when test="document('lookup/rda/RDAContentType.xml')/rdf:RDF/skos:Concept/key('rdaIRI', $givenIRI)">
                 <rdaeo:P20001 rdf:resource="{$givenIRI}"/>
+                <rdaeo:P10349 rdf:resource="{$givenIRI}"/>
             </xsl:when>
             <xsl:when test="document('lookup/rda/RDAMediaType.xml')/rdf:RDF/skos:Concept/key('rdaIRI', $givenIRI)">
                 <rdamo:P30002 rdf:resource="{$givenIRI}"/>
@@ -550,6 +551,7 @@
         <xsl:choose>
             <xsl:when test="document('lookup/Lookup336.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcIRI', $givenIRI)">
                 <rdaeo:P20001 rdf:resource="{document('lookup/Lookup336.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcIRI', $givenIRI)/uwmisc:rdaIRI}"/>
+                <rdaeo:P10349 rdf:resource="{document('lookup/Lookup336.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcIRI', $givenIRI)/uwmisc:rdaIRI}"/>
             </xsl:when>
             <xsl:when test="document('lookup/Lookup337.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcIRI', $givenIRI)">
                 <rdamo:P30002 rdf:resource="{document('lookup/Lookup337.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcIRI', $givenIRI)/uwmisc:rdaIRI}"/>
@@ -569,6 +571,7 @@
                 <xsl:choose>
                     <xsl:when test="$tag33X = '336' and document('lookup/rda/RDAContentType.xml')/rdf:RDF/skos:Concept/key('rdaCode', concat('http://rdaregistry.info/termList/RDAContentType/', $givenTermOrCode))">
                         <rdaeo:P20001 rdf:resource="{concat('http://rdaregistry.info/termList/RDAContentType/', $givenTermOrCode)}"/>
+                        <rdawo:P10349 rdf:resource="{concat('http://rdaregistry.info/termList/RDAContentType/', $givenTermOrCode)}"/>
                     </xsl:when>
                     <xsl:when test="$tag33X = '337' and document('lookup/rda/RDACMediaType.xml')/rdf:RDF/skos:Concept/key('rdaCode', concat('http://rdaregistry.info/termList/RDAMediaType/', $givenTermOrCode))">
                         <rdamo:P30002 rdf:resource="{concat('http://rdaregistry.info/termList/RDAMediaType/', $givenTermOrCode)}"/>
@@ -584,6 +587,7 @@
                     <!-- RDA Content Type Term -->
                     <xsl:when test="document('lookup/rda/RDAContentType.xml')/rdf:RDF/skos:Concept/key('rdaTerm', $givenTermOrCode)">
                         <rdaeo:P20001 rdf:resource="{document('lookup/rda/RDAContentType.xml')/rdf:RDF/skos:Concept/key('rdaTerm', $givenTermOrCode)/@rdf:about}"/>
+                        <rdawo:P10349 rdf:resource="{document('lookup/rda/RDAContentType.xml')/rdf:RDF/skos:Concept/key('rdaTerm', $givenTermOrCode)/@rdf:about}"/>
                     </xsl:when>
                     <!-- RDA Media Type Term -->
                     <xsl:when test="document('lookup/rda/RDAMediaType.xml')/rdf:RDF/skos:Concept/key('rdaTerm', $givenTermOrCode)">
@@ -596,6 +600,7 @@
                     <!-- LC Content Type Term or Code -->
                     <xsl:when test="document('lookup/Lookup336.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcTermOrCode', $givenTermOrCode)">
                         <rdaeo:P20001 rdf:resource="{document('lookup/Lookup336.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcTermOrCode', $givenTermOrCode)/uwmisc:rdaIRI}"/>
+                        <rdawo:P10349 rdf:resource="{document('lookup/Lookup336.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcTermOrCode', $givenTermOrCode)/uwmisc:rdaIRI}"/>
                     </xsl:when>
                     <!-- LC Media Type Term or Code -->
                     <xsl:when test="document('lookup/Lookup337.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcTermOrCode', $givenTermOrCode)">

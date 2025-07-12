@@ -148,6 +148,31 @@
     <xsl:template match="marc:datafield[@tag = '336'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '336']
         | marc:datafield[@tag = '337'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '337']
         | marc:datafield[@tag = '338'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '338']" 
+        mode="aggWor">
+        <!--<xsl:call-template name="getmarc"/>-->
+        <xsl:variable name="mappedTriple">
+            <xsl:call-template name="F336-337-338">
+                <xsl:with-param name="tag33X">
+                    <xsl:choose>
+                        <xsl:when test="starts-with(@tag, '33')">
+                            <xsl:value-of select="@tag"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="substring(marc:subfield[@code = '6'], 1, 3)"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:with-param>
+            </xsl:call-template>
+        </xsl:variable>
+            
+        <xsl:for-each select="$mappedTriple/child::*[starts-with(name(), 'rdaw')]">
+            <xsl:copy-of select="."/>
+        </xsl:for-each>
+    </xsl:template>
+        
+    <xsl:template match="marc:datafield[@tag = '336'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '336']
+        | marc:datafield[@tag = '337'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '337']
+        | marc:datafield[@tag = '338'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '338']" 
         mode="exp">
         <!--<xsl:call-template name="getmarc"/>-->
         <xsl:variable name="mappedTriple">
