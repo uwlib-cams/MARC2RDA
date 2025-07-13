@@ -1498,7 +1498,6 @@
         </xsl:if>
     </xsl:template>
 
-        
     <!-- 083 - Additional Dewey Decimal Classification Number -->
     <xsl:template match="marc:datafield[@tag = '083'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '083']" mode="wor" expand-text="yes">
         <!--<xsl:call-template name="getmarc"/>-->
@@ -1534,17 +1533,10 @@
     
     <xsl:template match="marc:datafield[@tag = '083'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '083']" mode="con" expand-text="yes">
         <xsl:variable name="scheme">
-            <xsl:choose>                
-                <xsl:when test="@ind1 = '0'">    
                     <xsl:text>ddc</xsl:text>
                     <xsl:if test="marc:subfield[@code = '2']">
                         <xsl:value-of select="substring(marc:subfield[@code = '2'], 1, 2)"/>
                     </xsl:if>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:text>ddc</xsl:text>
-                </xsl:otherwise>
-            </xsl:choose>
         </xsl:variable>
         <xsl:variable name="ap">
             <xsl:for-each select="marc:subfield[@code = 'a']">

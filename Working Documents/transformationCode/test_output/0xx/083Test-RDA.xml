@@ -86,11 +86,11 @@ F083 1# $a 893.09
       <skos:altLabel>598.0994</skos:altLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/ddc22"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/ddc/con#197082">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ddc14/con#197082">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130325029">197.082</skos:notation>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130325035">197.082</skos:notation>
       <skos:altLabel>197.082</skos:altLabel>
-      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/ddc"/>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/ddc14"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/ddc/con#345072">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -98,11 +98,11 @@ F083 1# $a 893.09
       <skos:altLabel>345.072</skos:altLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/ddc"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/ddc/con#1122">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ddc10/con#1122">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130325029">112.2</skos:notation>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130325031">112.2</skos:notation>
       <skos:altLabel>112.2</skos:altLabel>
-      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/ddc"/>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/ddc10"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/ddc18/con#8457">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
