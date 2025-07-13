@@ -627,7 +627,7 @@
                     <xsl:variable name="sub2" select="../marc:subfield[@code='2'][1]"/>
                     <xsl:choose>
                         <!-- term or code starts with rda -->
-                        <xsl:when test="starts-with($sub2, 'rda')">
+                        <xsl:when test="starts-with(normalize-space(lower-case($sub2)), 'rda')">
                             <xsl:variable name="rdaIRI">
                                 <xsl:copy-of select="uwf:rdalcTermCodeLookup-33X(., $tag33X)"/>
                             </xsl:variable>

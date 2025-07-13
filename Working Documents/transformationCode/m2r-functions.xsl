@@ -615,6 +615,99 @@
         </xsl:choose>
     </xsl:function>
     
+    <xsl:function name="uwf:rdaIRILookupForAP" expand-text="yes">
+        <xsl:param name="givenIRI"/>
+        <xsl:param name="entityType"/>
+        <xsl:choose>
+            <xsl:when test="$entityType = 'expression' and document('lookup/rda/RDAContentType.xml')/rdf:RDF/skos:Concept/key('rdaIRI', $givenIRI)">
+                <term>
+                    <xsl:value-of select="document('lookup/rda/RDAContentType.xml')/rdf:RDF/skos:Concept/key('rdaIRI', $givenIRI)/skos:prefLabel[@xml:lang = 'en']"/>
+                </term>
+            </xsl:when>
+            <xsl:when test="$entityType = 'manifestation' and document('lookup/rda/RDACarrierType.xml')/rdf:RDF/skos:Concept/key('rdaIRI', $givenIRI)">
+                <term>
+                    <xsl:value-of select="document('lookup/rda/RDACarrierType.xml')/rdf:RDF/skos:Concept/key('rdaIRI', $givenIRI)/skos:prefLabel[@xml:lang = 'en']"/>
+                </term>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:function>
+    
+    <xsl:function name="uwf:lcIRILookupForAP">
+        <xsl:param name="givenIRI"/>
+        <xsl:param name="entityType"/>
+        <xsl:choose>
+            <xsl:when test="$entityType = 'expression'and document('lookup/Lookup336.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcIRI', $givenIRI)">
+                <term>
+                    <xsl:value-of select="document('lookup/Lookup336.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcIRI', $givenIRI)/uwmisc:rdaTerm"/>
+                </term>
+            </xsl:when>
+            <xsl:when test="$entityType = 'manifestation' and document('lookup/Lookup338.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcIRI', $givenIRI)">
+                <term>
+                    <xsl:value-of select="document('lookup/Lookup338.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcIRI', $givenIRI)/uwmisc:rdaTerm"/>
+                </term>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:function>
+    
+    <xsl:function name="uwf:rdalcTermCodeLookupForAP" expand-text="yes">
+        <xsl:param name="givenTermOrCode"/>
+        <xsl:param name="entityType"/>
+        <xsl:choose>
+            <!-- four numerical characters means in an RDA code -->
+            <xsl:when test="matches($givenTermOrCode, '^\d\d\d\d$')">
+                <xsl:choose>
+                    <xsl:when test="$entityType = 'expression' and document('lookup/rda/RDAContentType.xml')/rdf:RDF/skos:Concept/key('rdaCode', concat('http://rdaregistry.info/termList/RDAContentType/', $givenTermOrCode))">
+                        <term>
+                            <xsl:value-of select="document('lookup/rda/RDAContentType.xml')/rdf:RDF/skos:Concept/key('rdaCode', concat('http://rdaregistry.info/termList/RDAContentType/', $givenTermOrCode))/skos:prefLabel[@xml:lang = 'en']"/>
+                        </term>
+                    </xsl:when>
+                    <xsl:when test="$entityType = 'manifestation' and document('lookup/rda/RDACarrierType.xml')/rdf:RDF/skos:Concept/key('rdaCode', concat('http://rdaregistry.info/termList/RDACarrierType/', $givenTermOrCode))">
+                        <term>
+                            <xsl:value-of select="document('lookup/rda/RDACarrierType.xml')/rdf:RDF/skos:Concept/key('rdaCode', concat('http://rdaregistry.info/termList/RDACarrierType/', $givenTermOrCode))/skos:prefLabel[@xml:lang = 'en']"/>
+                        </term>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <!-- otherwise check for rdaTerm, then lcTerm or lcCode -->
+            <xsl:otherwise>
+                <xsl:choose>
+                    <xsl:when test="$entityType = 'expression'">
+                        <xsl:choose>
+                            <!-- RDA Content Type Term -->
+                            <xsl:when test="document('lookup/rda/RDAContentType.xml')/rdf:RDF/skos:Concept/key('rdaTerm', $givenTermOrCode)">
+                                <term>
+                                    <xsl:value-of select="document('lookup/rda/RDAContentType.xml')/rdf:RDF/skos:Concept/key('rdaTerm', $givenTermOrCode)/skos:prefLabel[@xml:lang = 'en']"/>
+                                </term>
+                            </xsl:when>
+                            <!-- LC Content Type Term or Code -->
+                            <xsl:when test="document('lookup/Lookup336.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcTermOrCode', $givenTermOrCode)">
+                                <term>
+                                    <xsl:value-of select="document('lookup/Lookup336.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcTermOrCode', $givenTermOrCode)/uwmisc:rdaTerm"/>
+                                </term>
+                            </xsl:when>
+                        </xsl:choose>
+                    </xsl:when>
+                    <xsl:when test="$entityType = 'manifestation'">
+                        <xsl:choose>
+                            <!-- RDA Carrier Type Term -->
+                            <xsl:when test="document('lookup/rda/RDACarrierType.xml')/rdf:RDF/skos:Concept/key('rdaTerm', $givenTermOrCode)">
+                                <term>
+                                    <xsl:value-of select="document('lookup/rda/RDACarrierType.xml')/rdf:RDF/skos:Concept/key('rdaTerm', $givenTermOrCode)/skos:prefLabel[@xml:lang = 'en']"/>/>
+                                </term>
+                            </xsl:when>
+                            <!-- LC Carrier Type Term or Code -->
+                            <xsl:when test="document('lookup/Lookup338.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcTermOrCode', $givenTermOrCode)">
+                                <term>
+                                    <xsl:value-of select="document('lookup/Lookup338.xml')/uwmisc:lookupTable/uwmisc:entry/key('lcTermOrCode', $givenTermOrCode)/uwmisc:rdaTerm"/>
+                                </term>
+                            </xsl:when>
+                        </xsl:choose>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
     <xsl:function name="uwf:rdaGetTerm336">
         <xsl:param name="rda2"/>
         <xsl:param name="value"/>
