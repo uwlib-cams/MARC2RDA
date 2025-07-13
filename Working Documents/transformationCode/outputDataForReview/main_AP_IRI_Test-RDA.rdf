@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc99162645165001452">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>99162645165001452</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc99162645165001452</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc99162645165001452"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#bride%26prejudicemotionpicture"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#bride%26prejudicemotionpicturetwo-dimensionalmovingimage"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolc887286899bride%26prejudice2011miramaxonlineresource"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc99162645165001452">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99162645165001452"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc99162645165001452</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 05799cgm a2201129 i 4500
+F001 99162645165001452
+F008 140815p20112004xxu111 g      o   vleng d
+F035 ## $a (OCoLC)887286899
+F035 ## $a (OCoLC)ocn887286899
+F035 ## $a (EXLNZ-01ALLIANCE_NETWORK)99335403054801451
+F035 ## $a (01ALLIANCE_UW)99162645165001452
+F130 0# $a Bride &amp; prejudice (Motion picture)
+F245 10 $a Bride &amp; prejudice / $c Miramax Home Entertainment ; Pathé Pictures in association with UK Film Council, Miramax Films, Kintop Pictures &amp; Bend It Films, a Nayar Chadha production in association with Inside Track ; directed by Gurinder Chadha ; produced by Deepak Nayar, Gurinder Chadha.
+F264 #1 $a [United States] : $b Miramax, $c [2011]
+F336 ## $a two-dimensional moving image $b tdi $2 rdacontent
+F337 ## $a computer $b c $2 rdamedia
+F338 ## $a online resource $b cr $2 rdacarrier
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#bride%26prejudicemotionpicture">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99162645165001452"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#bride%26prejudicemotionpicturetwo-dimensionalmovingimage"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>Bride &amp; prejudice (Motion picture)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10222 rdf:resource="https://doi.org/10.6069/uwlswd.eje7-jq11#l"/><!--rdaw:P10222 = has nature of content-->
+      <rdawd:P10088>Bride &amp; prejudice</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawd:P10088>Bride &amp; prejudice (Motion picture)</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#bride%26prejudicemotionpicturetwo-dimensionalmovingimage">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99162645165001452"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolc887286899bride%26prejudice2011miramaxonlineresource"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#bride%26prejudicemotionpicture"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Bride &amp; prejudice (Motion picture)  two-dimensional moving image</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20219>Duration: 111 minutes.</rdaed:P20219><!--rdaed:P20219 = has duration-->
+      <rdae:P20322 rdf:resource="https://doi.org/10.6069/uwlswd.aec4-nv40#g"/><!--rdae:P20322 = has intended audience of expression-->
+      <rdaed:P20312>Bride &amp; prejudice</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1023"/><!--rdaeo:P20001 = has content type-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1023"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#ocolc887286899bride%26prejudice2011miramaxonlineresource">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99162645165001452"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#bride%26prejudicemotionpicturetwo-dimensionalmovingimage"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>Bride &amp; prejudice [2011] Miramax,online resource</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30278>2011/..</rdamd:P30278><!--rdamd:P30278 = has date of manifestation-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/xxu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/><!--rdam:P30001 = has carrier type-->
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/><!--rdam:P30335 = has category of manifestation-->
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdam:P30001 = has carrier type-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e10"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e13"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e16"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e19"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamd:P30156>Bride &amp; prejudice</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30105>Miramax Home Entertainment</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30105>Pathé Pictures in association with UK Film Council, Miramax Films, Kintop Pictures &amp; Bend It Films, a Nayar Chadha production in association with Inside Track</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30105>directed by Gurinder Chadha</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30105>produced by Deepak Nayar, Gurinder Chadha</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30111>[United States] : Miramax, [2011]</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>United States</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Miramax</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>2011</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <fake:marcfield>F336 ## $a two-dimensional moving image $b tdi $2 rdacontent</fake:marcfield>
+      <fake:marcfield>F337 ## $a computer $b c $2 rdamedia</fake:marcfield>
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/><!--rdamo:P30002 = has media type-->
+      <fake:marcfield>F338 ## $a online resource $b cr $2 rdacarrier</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e10">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)887286899</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80071>System control number</rdan:P80071><!--rdan:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e13">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)ocn887286899</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80071>System control number</rdan:P80071><!--rdan:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e16">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(EXLNZ-01ALLIANCE_NETWORK)99335403054801451</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80071>System control number</rdan:P80071><!--rdan:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e19">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(01ALLIANCE_UW)99162645165001452</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80071>System control number</rdan:P80071><!--rdan:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc13304007">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>13304007</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc13304007</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc13304007"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#theleopard"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#theleopardspokenword"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#theleopardp2009naxosaudiobooksoakhillpubdistributoraudiodisc"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#theleopardspokenwordaggregatingwork"/><!--rdawo:P10621 = is metadata description of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc13304007">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc13304007"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc13304007</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 01875cim a2200409 a 4500
+F001 13304007
+F008 090504s2009    tnunnnng efz   f  n eng d
+F240 10 $a Gattopardo. $l English
+F245 14 $a The leopard $h [sound recording] / $c Giuseppe Tomasi di Lampedusa.
+F260 ## $a [Franklin, Tenn.] : $b Naxos AudioBooks ; $a Bath [England] : $b Oakhill Pub. [distributor], $c p2009.
+F336 ## $a spoken word $b 1013 $1 http://rdaregistry.info/termList/RDAContentType/1013
+F337 ## $a audio $b 1001 $1 http://rdaregistry.info/termList/RDAMediaType/1001
+F338 ## $a audio disc $b 1004 $1 http://rdaregistry.info/termList/RDACarrierType/1004
+F979 ## $a aam
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/aggWor#theleopardspokenwordaggregatingwork">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc13304007"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawd:P10004>Aggregating work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#theleopardp2009naxosaudiobooksoakhillpubdistributoraudiodisc"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawd:P10328>The leopard    spoken word Aggregating work</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.23tq-5e25#f"/><!--rdaw:P10004 = has category of work-->
+      <rdawd:P10088>The leopard</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
+      <rdawo:P10217 rdf:resource="https://doi.org/10.6069/uwlswd.aec4-nv40#g"/><!--rdawo:P10217 = has intended audience of representative expression-->
+      <rdawd:P10088>Gattopardo</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawd:P10353>English</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
+      <rdawd:P10349>spoken word</rdawd:P10349><!--rdawd:P10349 = has content type of representative expression-->
+      <rdawd:P10349>1013</rdawd:P10349><!--rdawd:P10349 = has content type of representative expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#theleopard">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc13304007"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#theleopardspokenword"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>The leopard</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10088>Gattopardo</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawd:P10088>The leopard</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#theleopardspokenword">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc13304007"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#theleopardp2009naxosaudiobooksoakhillpubdistributoraudiodisc"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#theleopard"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>The leopard  spoken word</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#theleopardp2009naxosaudiobooksoakhillpubdistributoraudiodisc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc13304007"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#theleopardspokenword"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#theleopardspokenwordaggregatingwork"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30276>The leopard p2009. Naxos AudioBooks ; Oakhill Pub. [distributor],audio disc</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>2009</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/tnu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.nt0v-d633#e"/><!--rdam:P30455 = has supplementary content-->
+      <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.nt0v-d633#f"/><!--rdam:P30455 = has supplementary content-->
+      <rdamd:P30156>The leopard</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30105>Giuseppe Tomasi di Lampedusa</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30335>sound recording</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30111>[Franklin, Tenn.] : Naxos AudioBooks ; Bath [England] : Oakhill Pub. [distributor], p2009.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Franklin, Tenn.</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30085>Bath England</rdamd:P30085><!--rdamd:P30085 = has place of distribution-->
+      <rdamd:P30176>Naxos AudioBooks</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30173>Oakhill Pub. distributor</rdamd:P30173><!--rdamd:P30173 = has name of distributor-->
+      <rdamd:P30008>2009</rdamd:P30008><!--rdamd:P30008 = has date of distribution-->
+      <fake:marcfield>F336 ## $a spoken word $b 1013 $1 http://rdaregistry.info/termList/RDAContentType/1013</fake:marcfield>
+      <fake:marcfield>F337 ## $a audio $b 1001 $1 http://rdaregistry.info/termList/RDAMediaType/1001</fake:marcfield>
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1001"/><!--rdamo:P30002 = has media type-->
+      <rdamd:P30002>audio</rdamd:P30002><!--rdamd:P30002 = has media type-->
+      <rdamd:P30002>1001</rdamd:P30002><!--rdamd:P30002 = has media type-->
+      <fake:marcfield>F338 ## $a audio disc $b 1004 $1 http://rdaregistry.info/termList/RDACarrierType/1004</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30001>audio disc</rdamd:P30001><!--rdamd:P30001 = has carrier type-->
+      <rdamd:P30001>1004</rdamd:P30001><!--rdamd:P30001 = has carrier type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc99161908325401452">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>99161908325401452</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc99161908325401452</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc99161908325401452"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#unitedstatescongresshousecommitteeonfinancialservicessubcommitteeonhousingandinsuranceimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015april29"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#unitedstatescongresshousecommitteeonfinancialservicessubcommitteeonhousingandinsuranceimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015april29text"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolc927413075theimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015-usgovernmentpublishingofficeonlineresource"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/origMan#ocolc927413075theimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015-usgovernmentpublishingofficeonlineresource"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc99161908325401452">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99161908325401452"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc99161908325401452</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 04616cam a2200709 i 4500
+F001 99161908325401452
+F008 151103m20159999dcua    ob   f000 0 eng c
+F019 ## $a 1414460465 $a 1417078639
+F035 ## $a (OCoLC)927413075 $z (OCoLC)1414460465 $z (OCoLC)1417078639
+F035 ## $a (OCoLC)ocn927413075
+F035 ## $a (EXLNZ-01ALLIANCE_NETWORK)99321327107301451
+F035 ## $a (01ALLIANCE_UW)99161908325401452
+F110 1# $a United States. $b Congress. $b House. $b Committee on Financial Services. $b Subcommittee on Housing and Insurance, $e author.
+F240 10 $a Impact of international regulatory standards on the competitiveness of U.S. insurers (2015 April 29)
+F245 14 $a The impact of international regulatory standards on the competitiveness of U.S. insurers : $b hearing before the Subcommittee on Housing and Insurance of the Committee on Financial Services, U.S. House of Representatives, One Hundred Fourteenth Congress.
+F264 #1 $a Washington : $b U.S. Government Publishing Office, $c 2015-
+F336 ## $a text $b txt $2 rdacontent
+F337 ## $a computer $b c $2 rdamedia
+F338 ## $a online resource $b cr $2 rdacarrier
+F533 ## $a Electronic reproduction. $b [Place of publication not identified]: $c HathiTrust Digital Library. $d 2023. $5 MiAaHDL
+F538 ## $a Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002. $u http://purl.oclc.org/DLF/benchrepro0212 $5 MiAaHDL
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#unitedstatescongresshousecommitteeonfinancialservicessubcommitteeonhousingandinsuranceimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015april29">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99161908325401452"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#unitedstatescongresshousecommitteeonfinancialservicessubcommitteeonhousingandinsuranceimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015april29text"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>United States. Congress. House. Committee on Financial Services. Subcommittee on Housing and Insurance, Impact of international regulatory standards on the competitiveness of U.S. insurers (2015 April 29)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <rdawo:P10530 rdf:resource="http://marc2rda.edu/fake/age#unitedstatescongresshousecommitteeonfinancialservicessubcommitteeonhousingandinsurance"/><!--rdawo:P10530 = has author corporate body-->
+      <rdawd:P10088>The impact of international regulatory standards on the competitiveness of U.S. insurers</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawd:P10088>Impact of international regulatory standards on the competitiveness of U.S. insurers (2015 April 29)</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#unitedstatescongresshousecommitteeonfinancialservicessubcommitteeonhousingandinsuranceimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015april29text">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99161908325401452"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolc927413075theimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015-usgovernmentpublishingofficeonlineresource"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/origMan#ocolc927413075theimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015-usgovernmentpublishingofficeonlineresource"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#unitedstatescongresshousecommitteeonfinancialservicessubcommitteeonhousingandinsuranceimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015april29"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>United States. Congress. House. Committee on Financial Services. Subcommittee on Housing and Insurance. Impact of international regulatory standards on the competitiveness of U.S. insurers (2015 April 29)  text</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20312>The impact of international regulatory standards on the competitiveness of U.S. insurers</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#ocolc927413075theimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015-usgovernmentpublishingofficeonlineresource">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99161908325401452"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#unitedstatescongresshousecommitteeonfinancialservicessubcommitteeonhousingandinsuranceimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015april29text"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>The impact of international regulatory standards on the competitiveness of U.S. insurers 2015- U.S. Government Publishing Office,online resource</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamo:P30136 rdf:resource="http://marc2rda.edu/fake/transform/origMan#ocolc927413075theimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015-usgovernmentpublishingofficeonlineresource"/><!--rdamo:P30136 = is electronic reproduction of manifestation of-->
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/><!--rdam:P30453 = has illustrative content-->
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdam:P30001 = has carrier type-->
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.2eg3-1x53#f"/><!--rdam:P30335 = has category of manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e128"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e130"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e132"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e135"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e138"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e141"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamd:P30156>The impact of international regulatory standards on the competitiveness of U.S. insurers</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30142>hearing before the Subcommittee on Housing and Insurance of the Committee on Financial Services, U.S. House of Representatives, One Hundred Fourteenth Congress</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <fake:marcfield>F336 ## $a text $b txt $2 rdacontent</fake:marcfield>
+      <fake:marcfield>F337 ## $a computer $b c $2 rdamedia</fake:marcfield>
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/><!--rdamo:P30002 = has media type-->
+      <fake:marcfield>F338 ## $a online resource $b cr $2 rdacarrier</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30335>Electronic reproduction</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30279>Place of publication not identified</rdamd:P30279><!--rdamd:P30279 = has place of manifestation-->
+      <rdamd:P30297>HathiTrust Digital Library.</rdamd:P30297><!--rdamd:P30297 = has name of agent of manifestation-->
+      <rdamd:P30278>2023</rdamd:P30278><!--rdamd:P30278 = has date of manifestation-->
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/transform/ite#2025-07-13t1927321884125-0400d25e209"/><!--rdamo:P30103 = has exemplar of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/origMan#ocolc927413075theimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015-usgovernmentpublishingofficeonlineresource">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99161908325401452"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#unitedstatescongresshousecommitteeonfinancialservicessubcommitteeonhousingandinsuranceimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015april29text"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>The impact of international regulatory standards on the competitiveness of U.S. insurers 2015- U.S. Government Publishing Office,online resource</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30278>2015/9999</rdamd:P30278><!--rdamd:P30278 = has date of manifestation-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/dcu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdamd:P30156>The impact of international regulatory standards on the competitiveness of U.S. insurers</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30142>hearing before the Subcommittee on Housing and Insurance of the Committee on Financial Services, U.S. House of Representatives, One Hundred Fourteenth Congress</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30111>Washington : U.S. Government Publishing Office, 2015-</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Washington</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>U.S. Government Publishing Office</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>2015</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-07-13t1927321884125-0400d25e209">
+      <rdaid:P40001>ite#2025-07-13t1927321884125-0400d25e209</rdaid:P40001><!--rdaid:P40001 = has identifier for item-->
+      <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolc927413075theimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015-usgovernmentpublishingofficeonlineresource"/><!--rdaio:P40049 = has manifestation exemplified-->
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/miaahdl"/><!--rdaio:P40161 = is holding of-->
+      <rdaid:P40028>Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002.; http://purl.oclc.org/DLF/benchrepro0212</rdaid:P40028><!--rdaid:P40028 = has note on item-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e128">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)927413075</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80071>System control number</rdan:P80071><!--rdan:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e130">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1414460465</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/><!--rdano:P80168 = has status of identification-->
+      <rdan:P80071>System control number</rdan:P80071><!--rdan:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e132">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1417078639</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/><!--rdano:P80168 = has status of identification-->
+      <rdan:P80071>System control number</rdan:P80071><!--rdan:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e135">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)ocn927413075</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80071>System control number</rdan:P80071><!--rdan:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e138">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(EXLNZ-01ALLIANCE_NETWORK)99321327107301451</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80071>System control number</rdan:P80071><!--rdan:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e141">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(01ALLIANCE_UW)99161908325401452</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80071>System control number</rdan:P80071><!--rdan:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#unitedstatescongresshousecommitteeonfinancialservicessubcommitteeonhousingandinsurance">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>United States. Congress. House. Committee on Financial Services. Subcommittee on Housing and Insurance</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50032>United States. Congress. House. Committee on Financial Services. Subcommittee on Housing and Insurance</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc3292686">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>3292686</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc3292686</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc3292686"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#gludejohnbnoaaaquacultureplan"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#gludejohnbnoaaaquacultureplantext"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn77602748noaaaquacultureplan1977unitedstatesgovernmentprintingofficevolume"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc3292686">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc3292686"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc3292686</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 02733cam a2200505 i 4500
+F001 3292686
+F008 770908s1977    dcu      b   f000 0 eng  
+F010 ## $a    77602748 
+F100 1# $a Glude, John B., $e editor.
+F245 10 $a NOAA aquaculture plan / $c prepared by John B. Glude, editor.
+F264 #1 $a Washington, DC : $b United States Government Printing Office, $c 1977.
+F336 ## $a text $b txt $2 rdacontent
+F337 ## $a unmediated $b n $2 rdamedia
+F338 ## $a volume $b nc $2 rdacarrier
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#gludejohnbnoaaaquacultureplan">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc3292686"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#gludejohnbnoaaaquacultureplantext"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>Glude, John B., NOAA aquaculture plan</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#gludejohnb-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#gludejohnb"/><!--rdawo:P10312 = has related person of work-->
+      <rdawd:P10088>NOAA aquaculture plan</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#gludejohnbnoaaaquacultureplantext">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc3292686"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn77602748noaaaquacultureplan1977unitedstatesgovernmentprintingofficevolume"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#gludejohnbnoaaaquacultureplan"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Glude, John B.. NOAA aquaculture plan  text</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20312>NOAA aquaculture plan</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#lccn77602748noaaaquacultureplan1977unitedstatesgovernmentprintingofficevolume">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc3292686"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#gludejohnbnoaaaquacultureplantext"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>NOAA aquaculture plan 1977. United States Government Printing Office,volume</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>1977</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/dcu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.2eg3-1x53#f"/><!--rdam:P30335 = has category of manifestation-->
+      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e222"/><!--rdam:P30004 = has identifier for manifestation-->
+      <rdamd:P30156>NOAA aquaculture plan</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30105>prepared by John B. Glude, editor</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30111>Washington, DC : United States Government Printing Office, 1977.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Washington, DC</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>United States Government Printing Office</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>1977</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <fake:marcfield>F336 ## $a text $b txt $2 rdacontent</fake:marcfield>
+      <fake:marcfield>F337 ## $a unmediated $b n $2 rdamedia</fake:marcfield>
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/><!--rdamo:P30002 = has media type-->
+      <fake:marcfield>F338 ## $a volume $b nc $2 rdacarrier</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/><!--rdamo:P30001 = has carrier type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e222">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>   77602748 </rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80071>Library of Congress control number:   77602748 </rdand:P80071><!--rdand:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#gludejohnb">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Glude, John B.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Glude, John B.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc6101111">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>6101111</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc6101111</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc6101111"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#nationalresearchcounciluspanelonaquaculturetheroleoftheusdepartmentofagricultureinaquaculture"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#nationalresearchcounciluspanelonaquaculturetheroleoftheusdepartmentofagricultureinaquaculturetext"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#theroleoftheusdepartmentofagricultureinaquaculture1979nationalacademyofsciencesvolume"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc6101111">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc6101111"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc6101111</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 02327cam a2200505 i 4500
+F001 6101111
+F005 20241212023333.7
+F008 800318s1979    dcud     b    000 0 eng  
+F019 ## $a 8835119
+F110 2# $a National Research Council (U.S.). $b Panel on Aquaculture.
+F245 14 $a The role of the U.S. Department of Agriculture in aquaculture : $b a report / $c prepared by the Panel on Aquaculture, Board on Agriculture and Renewable Resources, National Research Council.
+F260 ## $a Washington, D. C. : $b National Academy of Sciences, $c 1979.
+F336 ## $a text $b txt $2 rdacontent
+F337 ## $a unmediated $b n $2 rdamedia
+F338 ## $a volume $b nc $2 rdacarrier
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#nationalresearchcounciluspanelonaquaculturetheroleoftheusdepartmentofagricultureinaquaculture">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc6101111"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#nationalresearchcounciluspanelonaquaculturetheroleoftheusdepartmentofagricultureinaquaculturetext"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>National Research Council (U.S.). Panel on Aquaculture. The role of the U.S. Department of Agriculture in aquaculture</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#nationalresearchcounciluspanelonaquaculture-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#nationalresearchcounciluspanelonaquaculture"/><!--rdawo:P10314 = has related corporate body of work-->
+      <rdawd:P10088>The role of the U.S. Department of Agriculture in aquaculture</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#nationalresearchcounciluspanelonaquaculturetheroleoftheusdepartmentofagricultureinaquaculturetext">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc6101111"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#theroleoftheusdepartmentofagricultureinaquaculture1979nationalacademyofsciencesvolume"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#nationalresearchcounciluspanelonaquaculturetheroleoftheusdepartmentofagricultureinaquaculture"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>National Research Council (U.S.). Panel on Aquaculture. The role of the U.S. Department of Agriculture in aquaculture  text</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20312>The role of the U.S. Department of Agriculture in aquaculture</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#theroleoftheusdepartmentofagricultureinaquaculture1979nationalacademyofsciencesvolume">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc6101111"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#nationalresearchcounciluspanelonaquaculturetheroleoftheusdepartmentofagricultureinaquaculturetext"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>The role of the U.S. Department of Agriculture in aquaculture 1979. National Academy of Sciences,volume</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>1979</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/dcu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30453 rdf:resource="https://doi.org/10.6069/uwlswd.gq3z-mv97#d"/><!--rdam:P30453 = has illustrative content-->
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30156>The role of the U.S. Department of Agriculture in aquaculture</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30142>a report</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30105>prepared by the Panel on Aquaculture, Board on Agriculture and Renewable Resources, National Research Council</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamd:P30111>Washington, D. C. : National Academy of Sciences, 1979.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Washington, D. C.</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>National Academy of Sciences</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>1979</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <fake:marcfield>F336 ## $a text $b txt $2 rdacontent</fake:marcfield>
+      <fake:marcfield>F337 ## $a unmediated $b n $2 rdamedia</fake:marcfield>
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/><!--rdamo:P30002 = has media type-->
+      <fake:marcfield>F338 ## $a volume $b nc $2 rdacarrier</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/><!--rdamo:P30001 = has carrier type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#nationalresearchcounciluspanelonaquaculture">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>National Research Council (U.S.). Panel on Aquaculture</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50032>National Research Council (U.S.). Panel on Aquaculture</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc3315027">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>3315027</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc3315027</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc3315027"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#alaskaaquacultureconference2nd1977wrangellalaskaproceedingsofthesecondalaskaaguacultureconferencejanuary78and91977wrangellalaska"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#alaskaaquacultureconference2nd1977wrangellalaskaproceedingsofthesecondalaskaaguacultureconferencejanuary78and91977wrangellalaskatext"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn78620504proceedingsofthesecondalaskaaguacultureconferencejanuary78and91977wrangellalaska1977alaskaseagrantprogramvolume"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc3315027">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc3315027"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc3315027</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 02042cam a2200421 i 4500
+F001 3315027
+F008 780802s1977    aku      b   s100 0 eng  
+F010 ## $a    78620504 
+F111 2# $a Alaska Aquaculture Conference $n (2nd : $d 1977 : $c Wrangell, Alaska)
+F245 10 $a Proceedings of the second Alaska Aguaculture Conference, January 7, 8, and 9, 1977, Wrangell, Alaska.
+F260 ## $a [Fairbanks] : $b Alaska Sea Grant Program, $c 1977.
+F336 ## $a text $b txt $2 rdacontent
+F337 ## $a unmediated $b n $2 rdamedia
+F338 ## $a volume $b nc $2 rdacarrier
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#alaskaaquacultureconference2nd1977wrangellalaskaproceedingsofthesecondalaskaaguacultureconferencejanuary78and91977wrangellalaska">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc3315027"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#alaskaaquacultureconference2nd1977wrangellalaskaproceedingsofthesecondalaskaaguacultureconferencejanuary78and91977wrangellalaskatext"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>Alaska Aquaculture Conference (2nd : 1977 : Wrangell, Alaska) Proceedings of the second Alaska Aguaculture Conference, January 7, 8, and 9, 1977, Wrangell, Alaska</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.t1gh-8294#1"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#alaskaaquacultureconference2nd1977wrangellalaska-->
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#alaskaaquacultureconference2nd1977wrangellalaska"/><!--rdawo:P10314 = has related corporate body of work-->
+      <rdawd:P10088>Proceedings of the second Alaska Aguaculture Conference, January 7, 8, and 9, 1977, Wrangell, Alaska</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#alaskaaquacultureconference2nd1977wrangellalaskaproceedingsofthesecondalaskaaguacultureconferencejanuary78and91977wrangellalaskatext">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc3315027"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn78620504proceedingsofthesecondalaskaaguacultureconferencejanuary78and91977wrangellalaska1977alaskaseagrantprogramvolume"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#alaskaaquacultureconference2nd1977wrangellalaskaproceedingsofthesecondalaskaaguacultureconferencejanuary78and91977wrangellalaska"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Alaska Aquaculture Conference (2nd : 1977 : Wrangell, Alaska). Proceedings of the second Alaska Aguaculture Conference, January 7, 8, and 9, 1977, Wrangell, Alaska  text</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20312>Proceedings of the second Alaska Aguaculture Conference, January 7, 8, and 9, 1977, Wrangell, Alaska</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#lccn78620504proceedingsofthesecondalaskaaguacultureconferencejanuary78and91977wrangellalaska1977alaskaseagrantprogramvolume">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc3315027"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#alaskaaquacultureconference2nd1977wrangellalaskaproceedingsofthesecondalaskaaguacultureconferencejanuary78and91977wrangellalaskatext"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>Proceedings of the second Alaska Aguaculture Conference, January 7, 8, and 9, 1977, Wrangell, Alaska. 1977. Alaska Sea Grant Program,volume</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>1977</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/aku"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.2eg3-1x53#s"/><!--rdam:P30335 = has category of manifestation-->
+      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e322"/><!--rdam:P30004 = has identifier for manifestation-->
+      <rdamd:P30156>Proceedings of the second Alaska Aguaculture Conference, January 7, 8, and 9, 1977, Wrangell, Alaska</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30111>[Fairbanks] : Alaska Sea Grant Program, 1977.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Fairbanks</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Alaska Sea Grant Program</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>1977</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <fake:marcfield>F336 ## $a text $b txt $2 rdacontent</fake:marcfield>
+      <fake:marcfield>F337 ## $a unmediated $b n $2 rdamedia</fake:marcfield>
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/><!--rdamo:P30002 = has media type-->
+      <fake:marcfield>F338 ## $a volume $b nc $2 rdacarrier</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/><!--rdamo:P30001 = has carrier type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e322">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>   78620504 </rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80071>Library of Congress control number:   78620504 </rdand:P80071><!--rdand:P80071 = has note on nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#alaskaaquacultureconference2nd1977wrangellalaska">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Alaska Aquaculture Conference (2nd : 1977 : Wrangell, Alaska)</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
+      <rdaad:P50024>Wrangell, Alaska</rdaad:P50024><!--rdaad:P50024 = has place of conference-->
+      <rdaad:P50019>(2nd :</rdaad:P50019><!--rdaad:P50019 = has number of conference-->
+      <rdaad:P50039>1977</rdaad:P50039><!--rdaad:P50039 = has date of conference-->
+      <rdaad:P50032>Alaska Aquaculture Conference</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc39720541">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>39720541</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc39720541</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc39720541"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#universityofwashingtonseagrantcooksusangordondavidgdavidgeorge1950-washingtonseagrantprogramofficeofmarineenvironmentandresourcesprograms"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#universityofwashingtonseagrantcooksusantext"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#universityofwashingtonseagrant1997-officeofmarineenvironmentalandresourceprogramswashingtonseagrantprogramonlineresource"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc39720541">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc39720541"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc39720541</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 03260cai a2200565 a 4500
+F001 39720541
+F008 980819c19979999wauuu w o    s0    2eng d
+F245 00 $a University of Washington Sea Grant.
+F260 ## $a Seattle, Wash. : $b Office of Marine Environmental and Resource Programs, Washington Sea Grant Program, $c 1997-
+F336 ## $a text $b txt $2 rdacontent
+F337 ## $a computer $b c $2 rdamedia
+F338 ## $a online resource $b cr $2 rdacarrier
+F700 1# $a Cook, Susan.
+F700 1# $a Gordon, David G. $q (David George), $d 1950- $1 https://id.oclc.org/worldcat/entity/E39PCjymVbjHvFGg38TyFYH7gX
+F710 2# $a Washington Sea Grant Program. $b Office of Marine Environment and Resources Programs.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#universityofwashingtonseagrantcooksusangordondavidgdavidgeorge1950-washingtonseagrantprogramofficeofmarineenvironmentandresourcesprograms">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc39720541"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#universityofwashingtonseagrantcooksusantext"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>University of Washington Sea GrantCook, Susan. Gordon, David G. (David George), 1950- Washington Sea Grant Program. Office of Marine Environment and Resources Programs</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.62zz-1534#w"/><!--rdaw:P10004 = has category of work-->
+      <rdawd:P10088>University of Washington Sea Grant</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#universityofwashingtonseagrantcooksusantext">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc39720541"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#universityofwashingtonseagrant1997-officeofmarineenvironmentalandresourceprogramswashingtonseagrantprogramonlineresource"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#universityofwashingtonseagrantcooksusangordondavidgdavidgeorge1950-washingtonseagrantprogramofficeofmarineenvironmentandresourcesprograms"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>University of Washington Sea Grant Cook, Susan  text</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20312>University of Washington Sea Grant</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#universityofwashingtonseagrant1997-officeofmarineenvironmentalandresourceprogramswashingtonseagrantprogramonlineresource">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc39720541"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#universityofwashingtonseagrantcooksusantext"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>University of Washington Sea Grant. 1997- Office of Marine Environmental and Resource Programs, Washington Sea Grant Program,online resource</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30137>Continuing resource currently published.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/wau"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdam:P30001 = has carrier type-->
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.2eg3-1x53#s"/><!--rdam:P30335 = has category of manifestation-->
+      <rdamd:P30156>University of Washington Sea Grant</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30111>Seattle, Wash. : Office of Marine Environmental and Resource Programs, Washington Sea Grant Program, 1997-</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>Seattle, Wash.</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>Office of Marine Environmental and Resource Programs, Washington Sea Grant Program</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>1997</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <fake:marcfield>F336 ## $a text $b txt $2 rdacontent</fake:marcfield>
+      <fake:marcfield>F337 ## $a computer $b c $2 rdamedia</fake:marcfield>
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/><!--rdamo:P30002 = has media type-->
+      <fake:marcfield>F338 ## $a online resource $b cr $2 rdacarrier</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#cooksusan-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age#cooksusan"/><!--rdamo:P30268 = has related person of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#gordondavidgdavidgeorge1950- -->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age#gordondavidgdavidgeorge1950-"/><!--rdamo:P30268 = has related person of manifestation-->
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#washingtonseagrantprogramofficeofmarineenvironmentandresourcesprograms-->
+      <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/age#washingtonseagrantprogramofficeofmarineenvironmentandresourcesprograms"/><!--rdamo:P30270 = has related corporate body of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#cooksusan">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Cook, Susan</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Cook, Susan</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#gordondavidgdavidgeorge1950-">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Gordon, David G. (David George), 1950-</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
+      <rdaad:P50111>Gordon, David G.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+      <rdaad:P50121>1950</rdaad:P50121><!--rdaad:P50121 = has date of birth-->
+      <rdaad:P50115>David George</rdaad:P50115><!--rdaad:P50115 = has fuller form of name-->
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PCjymVbjHvFGg38TyFYH7gX</rdaad:P50094><!--rdaad:P50094 = has identifier for person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#washingtonseagrantprogramofficeofmarineenvironmentandresourcesprograms">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Washington Sea Grant Program. Office of Marine Environment and Resources Programs</rdaad:P50375><!--rdaad:P50375 = has access point for corporate body-->
+      <rdaad:P50032>Washington Sea Grant Program. Office of Marine Environment and Resources Programs</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc1334720167">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>1334720167</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc1334720167</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc1334720167"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#outlookofclimatechangeandfishnutrition"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#outlookofclimatechangeandfishnutritionstillimagetext"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#uk020759515outlookofclimatechangeandfishnutrition2022springerverlagsingaporvolume"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc1334720167">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc1334720167"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc1334720167</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 01284cam a2200349   4500
+F001 1334720167
+F008 220709s2022    xx            0∎∎ 0 eng d
+F016 7# $a 020759515 $2 Uk
+F245 00 $a OUTLOOK OF CLIMATE CHANGE AND FISH NUTRITION.
+F260 ## $a [S.l.] : $b SPRINGER VERLAG, SINGAPOR, $c 2022.
+F336 ## $a text $2 rdacontent
+F336 ## $a still image $2 rdacontent
+F337 ## $a unmediated $2 rdamedia
+F338 ## $a volume $2 rdacarrier
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#outlookofclimatechangeandfishnutrition">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc1334720167"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#outlookofclimatechangeandfishnutritionstillimagetext"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>OUTLOOK OF CLIMATE CHANGE AND FISH NUTRITION</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+      <rdawd:P10088>OUTLOOK OF CLIMATE CHANGE AND FISH NUTRITION</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#outlookofclimatechangeandfishnutritionstillimagetext">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc1334720167"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#uk020759515outlookofclimatechangeandfishnutrition2022springerverlagsingaporvolume"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#outlookofclimatechangeandfishnutrition"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>OUTLOOK OF CLIMATE CHANGE AND FISH NUTRITION  still image text</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20312>OUTLOOK OF CLIMATE CHANGE AND FISH NUTRITION</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1014"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#uk020759515outlookofclimatechangeandfishnutrition2022springerverlagsingaporvolume">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc1334720167"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#outlookofclimatechangeandfishnutritionstillimagetext"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>OUTLOOK OF CLIMATE CHANGE AND FISH NUTRITION. 2022. SPRINGER VERLAG, SINGAPOR,volume</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>2022</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/xx"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e428"/><!--rdamo:P30004 = has identifier for manifestation-->
+      <rdamd:P30156>OUTLOOK OF CLIMATE CHANGE AND FISH NUTRITION</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30111>$a [S.l.] :$b SPRINGER VERLAG, SINGAPOR,$c 2022.</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
+      <rdamd:P30088>S.l.</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
+      <rdamd:P30176>SPRINGER VERLAG, SINGAPOR</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
+      <rdamd:P30011>2022</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <fake:marcfield>F336 ## $a text $2 rdacontent</fake:marcfield>
+      <fake:marcfield>F336 ## $a still image $2 rdacontent</fake:marcfield>
+      <fake:marcfield>F337 ## $a unmediated $2 rdamedia</fake:marcfield>
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/><!--rdamo:P30002 = has media type-->
+      <fake:marcfield>F338 ## $a volume $2 rdacarrier</fake:marcfield>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/><!--rdamo:P30001 = has carrier type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-07-13t1927321884125-0400d25e428">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>020759515</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80071>Identifier derived from a National Bibliographic agency control number for a description of this manifestation</rdan:P80071><!--rdan:P80071 = has note on nomen-->
+      <rdano:P80075>Uk</rdano:P80075><!--rdano:P80075 = is assigned by corporate body-->
+   </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    
+    <!-- 130 -->
+    <marc:record>
+        <marc:leader>05799cgm a2201129 i 4500</marc:leader>
+        <marc:controlfield tag="001">99162645165001452</marc:controlfield>
+        <marc:controlfield tag="008">140815p20112004xxu111 g      o   vleng d</marc:controlfield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(OCoLC)887286899</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(OCoLC)ocn887286899</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(EXLNZ-01ALLIANCE_NETWORK)99335403054801451</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(01ALLIANCE_UW)99162645165001452</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="130" ind1="0" ind2=" ">
+            <marc:subfield code="a">Bride &amp; prejudice (Motion picture)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Bride &amp; prejudice /</marc:subfield>
+            <marc:subfield code="c">Miramax Home Entertainment ; Pathé Pictures in association with UK Film Council, Miramax Films, Kintop Pictures &amp; Bend It Films, a Nayar Chadha production in association with Inside Track ; directed by Gurinder Chadha ; produced by Deepak Nayar, Gurinder Chadha.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">[United States] :</marc:subfield>
+            <marc:subfield code="b">Miramax,</marc:subfield>
+            <marc:subfield code="c">[2011]</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">two-dimensional moving image</marc:subfield>
+            <marc:subfield code="b">tdi</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer</marc:subfield>
+            <marc:subfield code="b">c</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">online resource</marc:subfield>
+            <marc:subfield code="b">cr</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- 100 + 240 -->
+    <!-- coder added 336 337 338 for rda terms and IRIs -->
+    <!-- aam -->
+    <marc:record>
+        <marc:leader>01875cim a2200409 a 4500</marc:leader>
+        <marc:controlfield tag="001">13304007</marc:controlfield>
+        <marc:controlfield tag="008">090504s2009    tnunnnng efz   f  n eng d</marc:controlfield>
+        <marc:datafield tag="240" ind1="1" ind2="0">
+            <marc:subfield code="a">Gattopardo.</marc:subfield>
+            <marc:subfield code="l">English</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="4">
+            <marc:subfield code="a">The leopard</marc:subfield>
+            <marc:subfield code="h">[sound recording] /</marc:subfield>
+            <marc:subfield code="c">Giuseppe Tomasi di Lampedusa.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">[Franklin, Tenn.] :</marc:subfield>
+            <marc:subfield code="b">Naxos AudioBooks ;</marc:subfield>
+            <marc:subfield code="a">Bath [England] :</marc:subfield>
+            <marc:subfield code="b">Oakhill Pub. [distributor],</marc:subfield>
+            <marc:subfield code="c">p2009.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">spoken word</marc:subfield>
+            <marc:subfield code="b">1013</marc:subfield>
+            <marc:subfield code="1">http://rdaregistry.info/termList/RDAContentType/1013</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">audio</marc:subfield>
+            <marc:subfield code="b">1001</marc:subfield>
+            <marc:subfield code="1">http://rdaregistry.info/termList/RDAMediaType/1001</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">audio disc</marc:subfield>
+            <marc:subfield code="b">1004</marc:subfield>
+            <marc:subfield code="1">http://rdaregistry.info/termList/RDACarrierType/1004</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- 110 + 240 -->
+    <!-- reproduction -->
+    <marc:record>
+        <marc:leader>04616cam a2200709 i 4500</marc:leader>
+        <marc:controlfield tag="001">99161908325401452</marc:controlfield>
+        <marc:controlfield tag="008">151103m20159999dcua    ob   f000 0 eng c</marc:controlfield>
+        <marc:datafield tag="019" ind1=" " ind2=" ">
+            <marc:subfield code="a">1414460465</marc:subfield>
+            <marc:subfield code="a">1417078639</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(OCoLC)927413075</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1414460465</marc:subfield>
+            <marc:subfield code="z">(OCoLC)1417078639</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(OCoLC)ocn927413075</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(EXLNZ-01ALLIANCE_NETWORK)99321327107301451</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="035" ind1=" " ind2=" ">
+            <marc:subfield code="a">(01ALLIANCE_UW)99161908325401452</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="110" ind1="1" ind2=" ">
+            <marc:subfield code="a">United States.</marc:subfield>
+            <marc:subfield code="b">Congress.</marc:subfield>
+            <marc:subfield code="b">House.</marc:subfield>
+            <marc:subfield code="b">Committee on Financial Services.</marc:subfield>
+            <marc:subfield code="b">Subcommittee on Housing and Insurance,</marc:subfield>
+            <marc:subfield code="e">author.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="240" ind1="1" ind2="0">
+            <marc:subfield code="a">Impact of international regulatory standards on the competitiveness of U.S. insurers (2015 April 29)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="4">
+            <marc:subfield code="a">The impact of international regulatory standards on the competitiveness of U.S. insurers :</marc:subfield>
+            <marc:subfield code="b">hearing before the Subcommittee on Housing and Insurance of the Committee on Financial Services, U.S. House of Representatives, One Hundred Fourteenth Congress.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">Washington :</marc:subfield>
+            <marc:subfield code="b">U.S. Government Publishing Office,</marc:subfield>
+            <marc:subfield code="c">2015-</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer</marc:subfield>
+            <marc:subfield code="b">c</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">online resource</marc:subfield>
+            <marc:subfield code="b">cr</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="533" ind1=" " ind2=" ">
+            <marc:subfield code="a">Electronic reproduction.</marc:subfield>
+            <marc:subfield code="b">[Place of publication not identified]:</marc:subfield>
+            <marc:subfield code="c">HathiTrust Digital Library.</marc:subfield>
+            <marc:subfield code="d">2023.</marc:subfield>
+            <marc:subfield code="5">MiAaHDL</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="538" ind1=" " ind2=" ">
+            <marc:subfield code="a">Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002.</marc:subfield>
+            <marc:subfield code="u">http://purl.oclc.org/DLF/benchrepro0212</marc:subfield>
+            <marc:subfield code="5">MiAaHDL</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- 111 + 240 -->
+    <!-- could not find example -->
+    
+    <!-- 100 + 245 -->
+    <marc:record>
+        <marc:leader>02733cam a2200505 i 4500</marc:leader>
+        <marc:controlfield tag="001">3292686</marc:controlfield>
+        <marc:controlfield tag="008">770908s1977    dcu      b   f000 0 eng  </marc:controlfield>
+        <marc:datafield tag="010" ind1=" " ind2=" ">
+            <marc:subfield code="a">   77602748 </marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Glude, John B.,</marc:subfield>
+            <marc:subfield code="e">editor.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">NOAA aquaculture plan /</marc:subfield>
+            <marc:subfield code="c">prepared by John B. Glude, editor.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">Washington, DC :</marc:subfield>
+            <marc:subfield code="b">United States Government Printing Office,</marc:subfield>
+            <marc:subfield code="c">1977.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">unmediated</marc:subfield>
+            <marc:subfield code="b">n</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">volume</marc:subfield>
+            <marc:subfield code="b">nc</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- 110 + 245 -->
+    <marc:record>
+        <marc:leader>02327cam a2200505 i 4500</marc:leader>
+        <marc:controlfield tag="001">6101111</marc:controlfield>
+        <marc:controlfield tag="005">20241212023333.7</marc:controlfield>
+        <marc:controlfield tag="008">800318s1979    dcud     b    000 0 eng  </marc:controlfield>
+        <marc:datafield tag="019" ind1=" " ind2=" ">
+            <marc:subfield code="a">8835119</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="110" ind1="2" ind2=" ">
+            <marc:subfield code="a">National Research Council (U.S.).</marc:subfield>
+            <marc:subfield code="b">Panel on Aquaculture.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="4">
+            <marc:subfield code="a">The role of the U.S. Department of Agriculture in aquaculture :</marc:subfield>
+            <marc:subfield code="b">a report /</marc:subfield>
+            <marc:subfield code="c">prepared by the Panel on Aquaculture, Board on Agriculture and Renewable Resources, National Research Council.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">Washington, D. C. :</marc:subfield>
+            <marc:subfield code="b">National Academy of Sciences,</marc:subfield>
+            <marc:subfield code="c">1979.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">unmediated</marc:subfield>
+            <marc:subfield code="b">n</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">volume</marc:subfield>
+            <marc:subfield code="b">nc</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- 111 + 245 -->
+    <marc:record>
+        <marc:leader>02042cam a2200421 i 4500</marc:leader>
+        <marc:controlfield tag="001">3315027</marc:controlfield>
+        <marc:controlfield tag="008">780802s1977    aku      b   s100 0 eng  </marc:controlfield>
+        <marc:datafield tag="010" ind1=" " ind2=" ">
+            <marc:subfield code="a">   78620504 </marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="111" ind1="2" ind2=" ">
+            <marc:subfield code="a">Alaska Aquaculture Conference</marc:subfield>
+            <marc:subfield code="n">(2nd :</marc:subfield>
+            <marc:subfield code="d">1977 :</marc:subfield>
+            <marc:subfield code="c">Wrangell, Alaska)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Proceedings of the second Alaska Aguaculture Conference, January 7, 8, and 9, 1977, Wrangell, Alaska.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">[Fairbanks] :</marc:subfield>
+            <marc:subfield code="b">Alaska Sea Grant Program,</marc:subfield>
+            <marc:subfield code="c">1977.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">unmediated</marc:subfield>
+            <marc:subfield code="b">n</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">volume</marc:subfield>
+            <marc:subfield code="b">nc</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- 245 + no 1XX + 7xx -->
+    <marc:record>
+        <marc:leader>03260cai a2200565 a 4500</marc:leader>
+        <marc:controlfield tag="001">39720541</marc:controlfield>
+        <marc:controlfield tag="008">980819c19979999wauuu w o    s0    2eng d</marc:controlfield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">University of Washington Sea Grant.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">Seattle, Wash. :</marc:subfield>
+            <marc:subfield code="b">Office of Marine Environmental and Resource Programs, Washington Sea Grant Program,</marc:subfield>
+            <marc:subfield code="c">1997-</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer</marc:subfield>
+            <marc:subfield code="b">c</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">online resource</marc:subfield>
+            <marc:subfield code="b">cr</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Cook, Susan.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Gordon, David G.</marc:subfield>
+            <marc:subfield code="q">(David George),</marc:subfield>
+            <marc:subfield code="d">1950-</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PCjymVbjHvFGg38TyFYH7gX</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="a">Washington Sea Grant Program.</marc:subfield>
+            <marc:subfield code="b">Office of Marine Environment and Resources Programs.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- 245 no agents -->
+    <!-- multiple 336 -->
+    <marc:record>
+        <marc:leader>01284cam a2200349   4500</marc:leader>
+        <marc:controlfield tag="001">1334720167</marc:controlfield>
+        <marc:controlfield tag="008">220709s2022    xx            0∎∎ 0 eng d</marc:controlfield>
+        <marc:datafield tag="016" ind1="7" ind2=" ">
+            <marc:subfield code="a">020759515</marc:subfield>
+            <marc:subfield code="2">Uk</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">OUTLOOK OF CLIMATE CHANGE AND FISH NUTRITION.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">[S.l.] :</marc:subfield>
+            <marc:subfield code="b">SPRINGER VERLAG, SINGAPOR,</marc:subfield>
+            <marc:subfield code="c">2022.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">still image</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">unmediated</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">volume</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>
