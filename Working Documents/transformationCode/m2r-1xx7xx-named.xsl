@@ -34,6 +34,82 @@
     <xsl:import href="m2r-iris.xsl"/>
     <xsl:import href="getmarc.xsl"/>
     
+    <!-- 754 --> 
+    <xsl:template name="F754-xx-acdxz" expand-text="yes">
+        <xsl:param name="baseID"/>
+        <xsl:param name="manIRI"/>
+        <xsl:param name="context"/>
+        
+        <xsl:variable name="itemIRI" select="uwf:itemIRI($baseID, $context)"/>
+        <xsl:variable name="genID" select="generate-id($context)"/>
+        <xsl:variable name="itemID" select="concat('ite#', $baseID, $genID)"/>
+        
+        <!-- Base item description and $z public note -->
+        <rdf:Description rdf:about="{$itemIRI}">
+            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+            <rdaid:P40001>{$itemID}</rdaid:P40001>
+            <rdaio:P40049 rdf:resource="{$manIRI}"/>
+            
+            <xsl:for-each select="$context/marc:subfield[@code='z']">
+                <rdaid:P40028>Taxonomic identification note: <xsl:value-of select="."/></rdaid:P40028>
+            </xsl:for-each>
+        </rdf:Description>
+        
+        <!-- Create nomen from each $a preceded by a $c -->
+        <xsl:for-each select="$context/marc:subfield[@code='a']">
+            <xsl:variable name="name" select="."/>
+            <xsl:variable name="cat" select="preceding-sibling::marc:subfield[@code='c'][1]"/>
+            <xsl:if test="$cat">
+                <xsl:variable name="nomenID" select="concat($itemID, '-nomen-', position())"/>
+                
+                <rdf:Description rdf:about="http://example.org/nomen/{$nomenID}">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/n/Nomen"/>
+                    <rdan:P80068><xsl:value-of select="$name"/></rdan:P80068>
+                    <rdan:P80078><xsl:value-of select="$cat"/></rdan:P80078>
+                    <rdan:P80067>Taxonomic Identification</rdan:P80067>
+                </rdf:Description>
+                
+                <rdf:Description rdf:about="{$itemIRI}">
+                    <rdai:P40079 rdf:resource="http://example.org/nomen/{$nomenID}"/>
+                </rdf:Description>
+            </xsl:if>
+        </xsl:for-each>
+        
+        <!-- Create nomen from each $d -->
+        <xsl:for-each select="$context/marc:subfield[@code='d']">
+            <xsl:variable name="nomenID" select="concat($itemID, '-d-', position())"/>
+            
+            <rdf:Description rdf:about="http://example.org/nomen/{$nomenID}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/n/Nomen"/>
+                <rdan:P80068><xsl:value-of select="."/></rdan:P80068>
+                <rdan:P80078>Common or alternative name</rdan:P80078>
+                <rdan:P80067>Taxonomic Identification</rdan:P80067>
+            </rdf:Description>
+            
+            <rdf:Description rdf:about="{$itemIRI}">
+                <rdai:P40079 rdf:resource="http://example.org/nomen/{$nomenID}"/>
+            </rdf:Description>
+        </xsl:for-each>
+        
+        <!-- Handle $x as private note with reified RDF Statement -->
+        <xsl:for-each select="$context/marc:subfield[@code='x']">
+            <xsl:variable name="stmtID" select="concat('stmt-', generate-id())"/>
+            
+            <rdf:Statement rdf:about="http://example.org/statement/{$stmtID}">
+                <rdf:type rdf:resource="rdf:Statement"/>
+                <rdf:subject rdf:resource="{$itemIRI}"/>
+                <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/P40028"/>
+                <rdf:object>Taxonomic identification note: <xsl:value-of select="."/></rdf:object>
+                <rdaid:P40164>private</rdaid:P40164>
+            </rdf:Statement>
+            
+            <rdf:Description rdf:about="{$itemIRI}">
+                <rdai:P40164 rdf:resource="http://example.org/statement/{$stmtID}"/>
+            </rdf:Description>
+        </xsl:for-each>
+    </xsl:template>
+    
+
     <!-- 760 --> 
     <xsl:template name="F760-xx-abcdefghjklmnopqrstuvwxyz" expand-text="yes">
         <xsl:variable name="subfields" select="marc:subfield[@code = 'a' or @code = 'b' or @code = 'c' or
@@ -90,8 +166,6 @@
         </xsl:if>
     </xsl:template>
     
-    
-    
     <!-- 765 --> 
     <xsl:template name="F765-xx-abcdefghjklmnopqrstuvwxyz" expand-text="yes">
         <xsl:variable name="subfields" select="marc:subfield[@code = 'a' or @code = 'b' or @code = 'c' or
@@ -147,8 +221,6 @@
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
-    
-    
     <!-- 770 -->
     
     <xsl:template name="F770-xx-abcdefghjklmnopqrstuvwxyz" expand-text="yes">
@@ -206,7 +278,6 @@
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
-    
     
     <!-- 773 --> 
     <xsl:template name="F773-xx-abcdefghijklmnpqrstuvwxyz34" expand-text="yes">
@@ -279,9 +350,7 @@
         </xsl:if>
     </xsl:template>
     
-    
     <!-- 775 -->
-
     <xsl:template name="F775-xx-abcdefghjklmnopqrstuvwxyz" expand-text="yes">
         <xsl:variable name="subfields" select="marc:subfield[@code = 'a' or @code = 'b' or @code = 'c' or
             @code = 'd' or @code = 'e' or @code = 'f' or
@@ -427,8 +496,6 @@
         </xsl:if>
     </xsl:template>
     
-    
-    
     <!-- 786 -->
     <xsl:template name="F786-xx-abcdefghjklmnopqrstuvwxyz" expand-text="yes">
         <xsl:variable name="subfields" select="marc:subfield[@code = 'a' or @code = 'b' or @code = 'c' or
@@ -456,8 +523,6 @@
             </xsl:for-each>
         </xsl:if>
     </xsl:template>    
-    
-    
     
     <!-- 787 -->
     <xsl:template name="F787-xx-abcdefghjklmnopqrstuvwxyz" expand-text="yes">

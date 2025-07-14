@@ -1038,7 +1038,19 @@
         </xsl:if>
     </xsl:template>
 
-<!-- 760 Main Series Entry -->
+    <!-- 754 Added Entry-Taxonomic Identification -->  
+    <xsl:template match="marc:datafield[@tag = '754'] | marc:datafield[@tag = '880'][starts-with(marc:subfield[@code = '6'], '754')]" 
+        mode="ite">
+        <xsl:param name="baseID"/>
+        <xsl:param name="manIRI"/>
+        <xsl:call-template name="F754-xx-acdxz">
+            <xsl:with-param name="baseID" select="$baseID"/>
+            <xsl:with-param name="manIRI" select="$manIRI"/>
+            <xsl:with-param name="context" select="."/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <!-- 760 Main Series Entry -->
     <xsl:template
         match="marc:datafield[@tag = '760'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '760-00']"
         mode="man">

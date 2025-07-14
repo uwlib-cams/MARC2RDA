@@ -1,0 +1,26 @@
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+  <marc:record>
+    <marc:leader>11111nam a2200000 a 4500</marc:leader>
+    <marc:controlfield tag="001">754-test</marc:controlfield>
+
+    <!-- 754 field with all subfields -->
+    <marc:datafield tag="754" ind1=" " ind2=" ">
+      <marc:subfield code="6">880-01</marc:subfield>
+      <marc:subfield code="c">Species</marc:subfield>
+      <marc:subfield code="a">Erithacus rubecula</marc:subfield>
+      <marc:subfield code="d">European Robin</marc:subfield>
+      <marc:subfield code="z">Recorded in Yorkshire, UK</marc:subfield>
+      <marc:subfield code="x">Verified by British Trust for Ornithology</marc:subfield>
+    </marc:datafield>
+
+    <!-- 880 field -->
+    <marc:datafield tag="880" ind1=" " ind2=" ">
+      <marc:subfield code="6">754-01</marc:subfield>
+      <marc:subfield code="c">Species</marc:subfield>
+      <marc:subfield code="a">Robin redbreast</marc:subfield>
+      <marc:subfield code="d">European Robin</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+</marc:collection>
