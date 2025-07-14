@@ -105,22 +105,41 @@
         and uwf:rdaGetTerm338() from m2r-functions -->
     <xsl:function name="uwf:carrierType">
         <xsl:param name="record"/>
-        <xsl:choose>
-            <xsl:when test="$record/marc:datafield[@tag = '338']">
-                <xsl:for-each select="$record/marc:datafield[@tag = '338']">
-                    <xsl:choose>
-                        <xsl:when test="marc:subfield[@code = 'a']">
-                            <xsl:value-of select="marc:subfield[@code = 'a']"/>
-                        </xsl:when>
-                        <xsl:when test="marc:subfield[@code = 'b'] and (marc:subfield[@code = '2'] = 'rdact' or marc:subfield[@code = '2'] = 'rdacarrier')">
-                            <xsl:for-each select="marc:subfield[@code = 'b']">
-                                <xsl:value-of select="uwf:rdaGetTerm338(../marc:subfield[@code = '2'], .)"/>
+        <xsl:variable name="termNodes">
+            <terms>
+                <xsl:choose>
+                    <xsl:when test="$record/marc:datafield[@tag = '336'] | $record/marc:datafield[@tag = '337'] | $record/marc:datafield[@tag = '338']">
+                        <xsl:for-each select="$record/marc:datafield[@tag = '336'] | $record/marc:datafield[@tag = '337'] | $record/marc:datafield[@tag = '338']">
+                            <xsl:for-each select="marc:subfield[@code = '0'] | marc:subfield[@code = '1']">
+                                <xsl:choose>
+                                    <xsl:when test="contains(., 'rdaregistry.info/termList/')">
+                                        <xsl:copy-of select="uwf:rdaIRILookupForAP(., 'manifestation')"/>
+                                    </xsl:when>
+                                    <xsl:when test="contains(., 'id.loc.gov/vocabulary/')">
+                                        <xsl:copy-of select="uwf:lcIRILookupForAP(., 'manifestation')"/>
+                                    </xsl:when>
+                                </xsl:choose>
                             </xsl:for-each>
-                        </xsl:when>
-                    </xsl:choose>
-                </xsl:for-each>
-            </xsl:when>
-        </xsl:choose>
+                            <xsl:if test="marc:subfield[@code = '2'][starts-with(normalize-space(lower-case(.)), 'rda')]">
+                                <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']">
+                                    <xsl:copy-of select="uwf:rdalcTermCodeLookupForAP(., 'manifestation')"/>
+                                </xsl:for-each>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:when>
+                </xsl:choose>
+            </terms>
+        </xsl:variable>
+        <xsl:variable name="sortedTerms">
+            <xsl:for-each-group select="$termNodes/terms/term" group-by="text()">
+                <xsl:sort select="text()"/>
+                <xsl:value-of select="current-grouping-key()"/>
+                <xsl:if test="position() != last()">
+                    <xsl:text> </xsl:text>
+                </xsl:if>
+            </xsl:for-each-group>
+        </xsl:variable>
+        <xsl:value-of select="$sortedTerms"/>
     </xsl:function>
     
     <xsl:function name="uwf:workAPFields">
@@ -400,26 +419,7 @@
         <!-- name subfields of the first 7XX ind2 != 2 in the field  -->
         <xsl:variable name="name7XX">
             <xsl:variable name="first7XX" select="$record/marc:datafield[@tag = '700' or @tag = '710' or @tag = '711'][@ind2 != '2'][not(marc:subfield[@code = 't'])][not(marc:subfield[@code = '5'])][1]"/>
-            <xsl:choose>
-                <xsl:when test="$first7XX/@tag = '700'">
-                    <xsl:value-of select="$first7XX/marc:subfield[@code = 'a'] | $first7XX/marc:subfield[@code = 'b'] | $first7XX/marc:subfield[@code = 'c']
-                        | $first7XX/marc:subfield[@code = 'd'] | $first7XX/marc:subfield[@code = 'j'] | $first7XX/marc:subfield[@code = 'q']
-                        | $first7XX/marc:subfield[@code = 'u'] | $first7XX/marc:subfield[@code = 'g'][not(preceding-sibling::marc:subfield[@code='t'])]"
-                        separator=" "/>
-                </xsl:when>
-                <xsl:when test="$first7XX/@tag = '710'">
-                    <xsl:value-of select="$first7XX/marc:subfield[@code = 'a'] | $first7XX/marc:subfield[@code = 'b'] | $first7XX/marc:subfield[@code = 'c']
-                        | $first7XX/marc:subfield[@code = 'u'] | $first7XX/marc:subfield[@code = 'd'][not(preceding-sibling::marc:subfield[@code='t'])]
-                        | $first7XX/marc:subfield[@code = 'g'][not(preceding-sibling::marc:subfield[@code='t'])] | $first7XX/marc:subfield[@code = 'n'][not(preceding-sibling::marc:subfield[@code='t'])]"
-                        separator=" "/>
-                </xsl:when>
-                <xsl:when test="$first7XX/@tag = '711'">
-                    <xsl:value-of select="$first7XX/marc:subfield[@code = 'a']  | $first7XX/marc:subfield[@code = 'c'] | $first7XX/marc:subfield[@code = 'e'] | $first7XX/marc:subfield[@code = 'q']
-                        | $first7XX/marc:subfield[@code = 'u'] | $first7XX/marc:subfield[@code = 'd'][not(preceding-sibling::marc:subfield[@code='t'])]
-                        | $first7XX/marc:subfield[@code = 'g'][not(preceding-sibling::marc:subfield[@code='t'])] | $first7XX/marc:subfield[@code = 'n'][not(preceding-sibling::marc:subfield[@code='t'])]"
-                        separator=" "/>
-                </xsl:when>
-            </xsl:choose>
+            <xsl:value-of select="uwf:agentAccessPoint($first7XX)"/>
         </xsl:variable>
         
         <xsl:choose>
@@ -429,25 +429,19 @@
                 <xsl:variable name="expSubfields">
                     <xsl:value-of select="uwf:expressionAPFields($record/marc:datafield[@tag = '130'][1])"/>
                 </xsl:variable>
-                <!-- language from 130 or 008 -->
-                <xsl:variable name="language">
-                    <xsl:choose>
-                        <xsl:when test="$record/marc:datafield[@tag = '130']/marc:subfield[@code = 'l']">
-                            <xsl:value-of select="$record/marc:datafield[@tag = '130']/marc:subfield[@code = 'l']"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:text> {$lang}</xsl:text>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:variable>
                 <!-- + content type (if found) and aggregating work -->
                 <xsl:variable name="fullAP">
-                    <xsl:value-of select="$expSubfields||' '||$name7XX"/>
+                    <xsl:value-of select="$expSubfields"/>
+                    <xsl:if test="$name7XX != ''">
+                        <xsl:value-of select="' '||$name7XX"/>
+                    </xsl:if>
+                    <xsl:if test="$record/marc:datafield[@tag = '130'][1][not(marc:subfield[@code = 'l'])]">
+                        <xsl:value-of select="' '||$lang"/>
+                    </xsl:if>
                     <xsl:if test="$contentType != ''">
                         <xsl:value-of select="' '||$contentType"/>
                     </xsl:if>
-                    <xsl:value-of select="' '||$language"/>
-                    <xsl:text> Aggregating work</xsl:text>
+                    <xsl:text> (Aggregating)</xsl:text>
                 </xsl:variable>
                 <xsl:value-of select="$fullAP"/>
             </xsl:when>
@@ -471,57 +465,39 @@
                 <!-- name subfields from 1XX field -->
                 <xsl:variable name="name1XX">
                     <xsl:variable name="first1XX" select="$record/marc:datafield[@tag = '100' or @tag = '110' or @tag = '111'][1]"/>
-                    <xsl:choose>
-                        <xsl:when test="$first1XX/@tag = '100'">
-                            <xsl:value-of select="$first1XX/marc:subfield[@code = 'a'] | $first1XX/marc:subfield[@code = 'b'] | $first1XX/marc:subfield[@code = 'c']
-                                | $first1XX/marc:subfield[@code = 'd'] | $first1XX/marc:subfield[@code = 'j'] | $first1XX/marc:subfield[@code = 'q']
-                                | $first1XX/marc:subfield[@code = 'u'] | $first1XX/marc:subfield[@code = 'g'][not(preceding-sibling::marc:subfield[@code='t'])]"
-                                separator=" "/>
-                        </xsl:when>
-                        <xsl:when test="$first1XX/@tag = '110'">
-                            <xsl:value-of select="$first1XX/marc:subfield[@code = 'a'] | $first1XX/marc:subfield[@code = 'b'] | $first1XX/marc:subfield[@code = 'c']
-                                | $first1XX/marc:subfield[@code = 'u'] | $first1XX/marc:subfield[@code = 'd'][not(preceding-sibling::marc:subfield[@code='t'])]
-                                | $first1XX/marc:subfield[@code = 'g'][not(preceding-sibling::marc:subfield[@code='t'])] | $first1XX/marc:subfield[@code = 'n'][not(preceding-sibling::marc:subfield[@code='t'])]"
-                                separator=" "/>
-                        </xsl:when>
-                        <xsl:when test="$first1XX/@tag = '111'">
-                            <xsl:value-of select="$first1XX/marc:subfield[@code = 'a']  | $first1XX/marc:subfield[@code = 'c'] | $first1XX/marc:subfield[@code = 'e'] | $first1XX/marc:subfield[@code = 'q']
-                                | $first1XX/marc:subfield[@code = 'u'] | $first1XX/marc:subfield[@code = 'd'][not(preceding-sibling::marc:subfield[@code='t'])]
-                                | $first1XX/marc:subfield[@code = 'g'][not(preceding-sibling::marc:subfield[@code='t'])] | $first1XX/marc:subfield[@code = 'n'][not(preceding-sibling::marc:subfield[@code='t'])]"
-                                separator=" "/>
-                        </xsl:when>
-                    </xsl:choose>
+                    <xsl:value-of select="uwf:agentAccessPoint($first1XX)"/>
                 </xsl:variable>
                 
                 <xsl:choose>
                     <!-- 240 -->
-                    <xsl:when test="$agg1XX = true() and $record/marc:datafield[@tag = '240']">
+                    <xsl:when test="$record/marc:datafield[@tag = '240']">
                         <!-- work/expression fields -->
                         <xsl:variable name="expresssionSubfields">
                             <xsl:value-of select="uwf:expressionAPFields($record/marc:datafield[@tag = '240'][1])"/>
                         </xsl:variable>
-                        <!-- language from 240 or 008 -->
-                        <xsl:variable name="language">
-                            <xsl:choose>
-                                <xsl:when test="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']">
-                                    <xsl:value-of select="$record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l']"/>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <xsl:text>. {$lang}</xsl:text>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                        </xsl:variable>
+                        
                         <!-- put together ap. If 1XX is aggregator, it goes first, otherwise it goes after work subfields -->
                         <xsl:variable name="fullAP">
-                            <xsl:value-of select="$name1XX"/>
-                            <xsl:text> </xsl:text>
-                            <xsl:value-of select="$expresssionSubfields"/>
-                            <xsl:value-of select="' '||$name7XX||' '||$language"/>
-                            <xsl:if test="$contentType != ''">
+                            <xsl:if test="$agg1XX = true()">
+                                <xsl:value-of select="$name1XX"/>
                                 <xsl:text> </xsl:text>
-                                <xsl:value-of select="$contentType"/>
                             </xsl:if>
-                            <xsl:text> Aggregating work</xsl:text>
+                            <xsl:value-of select="' '||$expresssionSubfields"/>
+                            <xsl:if test="$record/marc:datafield[@tag = '240'][1][not(marc:subfield[@code = 'l'])]">
+                                <xsl:value-of select="' '||$lang"/>
+                            </xsl:if>
+                            <xsl:if test="$agg1XX = false()">
+                                <xsl:if test="$name1XX != ''">
+                                    <xsl:value-of select="' '||$name1XX"/>
+                                </xsl:if>
+                            </xsl:if>
+                            <xsl:if test="$name7XX != ''">
+                                <xsl:value-of select="' '||$name7XX"/>
+                            </xsl:if>
+                            <xsl:if test="$contentType != ''">
+                                <xsl:value-of select="' '||$contentType"/>
+                            </xsl:if>
+                            <xsl:text> (Aggregating)</xsl:text>
                         </xsl:variable>
                         <xsl:value-of select="$fullAP"/>
                     </xsl:when>
@@ -543,12 +519,14 @@
                                 <xsl:text> </xsl:text>
                                 <xsl:value-of select="$name1XX"/>
                             </xsl:if>
-                            <xsl:value-of select="' '||$name7XX||' '||$lang"/>
-                            <xsl:if test="$contentType != ''">
-                                <xsl:text> </xsl:text>
-                                <xsl:value-of select="$contentType"/>
+                            <xsl:if test="$name7XX">
+                                <xsl:value-of select="' '||$name7XX"/>
                             </xsl:if>
-                            <xsl:text> Aggregating work</xsl:text>
+                            <xsl:value-of select="' '||$lang"/>
+                            <xsl:if test="$contentType != ''">
+                                <xsl:value-of select="' '||$contentType"/>
+                            </xsl:if>
+                            <xsl:text> (Aggregating)</xsl:text>
                         </xsl:variable>
                         <xsl:value-of select="$fullAP"/>
                     </xsl:when>
