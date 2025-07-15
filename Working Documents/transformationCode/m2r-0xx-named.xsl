@@ -183,5 +183,40 @@
  
     </xsl:template>
 
+    <!--046-->
+    <xsl:template name="F0046-timespan">
+         <xsl:param name="baseID"/>
+         <xsl:param name="suffix"/>
+         <xsl:param name="note"/>
+         
+         <rdf:Description rdf:about="{uwf:timespanIRI($baseID, ., $suffix)}">
+             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
+             <rdatd:P70016>
+                 <xsl:value-of select="marc:subfield[@code = 'b' or @code = 'c']"/>
+                 <xsl:if test="marc:subfield[@code = 'b']"> B.C.E.</xsl:if>
+                 <xsl:if test="marc:subfield[@code = 'b'] or marc:subfield[@code = 'c']">
+                     <xsl:text> - </xsl:text>
+                 </xsl:if>
+                 <xsl:value-of select="marc:subfield[@code = 'd' or @code = 'e']"/>
+                 <xsl:if test="marc:subfield[@code = 'd']"> B.C.E.</xsl:if>
+             </rdatd:P70016>
+             <rdatd:P70045>
+                 <xsl:value-of select="$note"/>
+             </rdatd:P70045>
+             <xsl:if test="marc:subfield[@code = 'b' or @code = 'c']">
+                 <rdatd:P70039>
+                     <xsl:value-of select="marc:subfield[@code = 'b' or @code = 'c']"/>
+                     <xsl:if test="marc:subfield[@code = 'b']"> B.C.E.</xsl:if>
+                 </rdatd:P70039>
+             </xsl:if>
+             <xsl:if test="marc:subfield[@code = 'd' or @code = 'e']">
+                 <rdatd:P70040>
+                     <xsl:value-of select="marc:subfield[@code = 'd' or @code = 'e']"/>
+                     <xsl:if test="marc:subfield[@code = 'd']"> B.C.E.</xsl:if>
+                 </rdatd:P70040>
+             </xsl:if>
+         </rdf:Description>
+     </xsl:template>
+
 </xsl:stylesheet>
 
