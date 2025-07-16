@@ -2024,6 +2024,45 @@
             </rdf:Description>
         </xsl:for-each>
     </xsl:template>
+
+    <!-- 070 - National Agricultural Library Call Number -->
+    <xsl:template match="marc:datafield[@tag = '070']" mode="wor" expand-text="yes">
+        <!--<xsl:call-template name="getmarc"/>-->
+        <xsl:param name="baseID"/>
+        <xsl:variable name="scheme">
+                    <xsl:text>lcc</xsl:text>
+        </xsl:variable>
+        <xsl:variable name="ap">
+            <xsl:value-of select="marc:subfield[@code = 'a']"/>
+        </xsl:variable>
+        <xsl:if test="marc:subfield[@code = 'a']">
+            <rdawo:P10256 rdf:resource="{uwf:conceptIRI($scheme, $ap)}"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '070']" mode="con" expand-text="yes">
+        <!--<call-template name="getmarc"/>-->
+      <xsl:param name="baseID"/>
+        <xsl:variable name="scheme">
+                    <xsl:text>lcc</xsl:text>
+        </xsl:variable>
+      <xsl:variable name="ap">
+          <xsl:value-of select="marc:subfield[@code = 'a']"/>
+      </xsl:variable>
+        <xsl:if test="marc:subfield[@code = 'a']">
+            <rdf:Description rdf:about="{uwf:conceptIRI($scheme, $ap)}">
+                <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983"> 
+                    <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                </skos:notation>
+                <skos:altLabel>
+                    <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                </skos:altLabel>
+                <skos:note> 
+                    <xsl:text>National Agricultural Library Call Number</xsl:text>
+                </skos:note>
+            </rdf:Description>
+        </xsl:if>
+    </xsl:template>
     
     <!-- 074 - GPO Item Number -->
     <xsl:template match="marc:datafield[@tag = '074']" mode="man" expand-text="yes">
