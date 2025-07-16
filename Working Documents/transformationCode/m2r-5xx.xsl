@@ -972,10 +972,25 @@
                 <xsl:choose>
                     <!-- 1) if subfield $p is present, use its contents directly AND process other subfields -->
                     <xsl:when test="marc:subfield[@code='p']">
-                        <xsl:value-of select="normalize-space(replace(marc:subfield[@code='p'], '[.;,]\s*$', ''))"/>
+                        <xsl:variable name="pContent" select="normalize-space(replace(marc:subfield[@code='p'], '[.;,]\s*$', ''))"/>
+                        <xsl:value-of select="$pContent"/>
+                        <xsl:choose>
+                            <xsl:when test="ends-with($pContent, ':') or ends-with($pContent, ': ')">
+                                <!-- $p already ends with colon, just add a space if needed -->
+                                <xsl:if test="not(ends-with($pContent, ': '))">
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <!-- $p doesn't end with colon, add ": " -->
+                                <xsl:text>: </xsl:text>
+                            </xsl:otherwise>
+                        </xsl:choose>
                         <xsl:for-each select="marc:subfield[@code=('a','b','c','e','f','k','l','m','n','o','t','x','z')]">
-                            <xsl:text> </xsl:text>
                             <xsl:value-of select="normalize-space(replace(., '[.;:,]\s*$', ''))"/>
+                            <xsl:if test="position() != last()">
+                                <xsl:text> </xsl:text>
+                            </xsl:if>
                         </xsl:for-each>
                     </xsl:when>
                     <!-- 2) otherwise add 'Original Version Note:' as first property, then individual subfields -->
@@ -992,6 +1007,9 @@
             </xsl:variable>
             <rdamd:P30137>
                 <xsl:value-of select="normalize-space(replace($noteContent, ';\s*$', ''))"/>
+                <xsl:if test="not(ends-with(normalize-space(replace($noteContent, ';\s*$', '')), '.'))">
+                    <xsl:text>.</xsl:text>
+                </xsl:if>
             </rdamd:P30137>
         </xsl:if>
     </xsl:template>
