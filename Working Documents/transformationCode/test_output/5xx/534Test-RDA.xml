@@ -36,7 +36,7 @@ F534 ## $p Reproduction of: $a Frederick, John. $t Femme nue en plein air, $b 1s
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc534-test01"/><!--rdamo:P30462 = is manifestation described with metadata by-->
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30137>Reproduction of: Frederick, John Femme nue en plein air 1st ed 1876 1 art original : oil, col. ; 79 x 64 cm In Louvre Museum, Paris (International series of monographs on electromagnetic waves ; v. 4) American journal of theology and philosophy at scale 1:50,000 F. Lamb Sculp Finlandia Records FACD357 0228-913X 0385061781 (v. 1).</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Reproduction of: Frederick, John. Femme nue en plein air, 1st ed. 1876. 1 art original : oil, col. ; 79 x 64 cm. In Louvre Museum, Paris. (International series of monographs on electromagnetic waves ; v. 4). American journal of theology and philosophy, at scale 1:50,000. F. Lamb Sculp. Finlandia Records FACD357. 0228-913X. 0385061781 (v. 1).</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc534-test01">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -75,6 +75,6 @@ F534 ## $a Frederick, John. $t Femme nue en plein air, $b 1st ed. $c 1876. $e 1 
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc534-test01"/><!--rdamo:P30462 = is manifestation described with metadata by-->
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30137>Original Version Note: Frederick, John Femme nue en plein air 1st ed 1876 1 art original : oil, col. ; 79 x 64 cm In Louvre Museum, Paris (International series of monographs on electromagnetic waves ; v. 4) American journal of theology and philosophy at scale 1:50,000 F. Lamb Sculp Finlandia Records FACD357 0228-913X 0385061781 (v. 1).</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Original Version Note: Frederick, John. Femme nue en plein air, 1st ed. 1876. 1 art original : oil, col. ; 79 x 64 cm. In Louvre Museum, Paris. (International series of monographs on electromagnetic waves ; v. 4). American journal of theology and philosophy, at scale 1:50,000. F. Lamb Sculp. Finlandia Records FACD357. 0228-913X. 0385061781 (v. 1).</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
 </rdf:RDF>
