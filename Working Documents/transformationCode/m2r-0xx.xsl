@@ -1102,7 +1102,7 @@
         <!-- Row 56: Beginning date -->
         <xsl:if test="marc:subfield[@code = 'k']">
             <rdawd:P10219>
-                <xsl:text>Beginning or single date create: </xsl:text>
+                <xsl:text>Beginning or single date created: </xsl:text>
                 <xsl:value-of select="marc:subfield[@code = 'k']"/>
             </rdawd:P10219>
         </xsl:if>
