@@ -1078,17 +1078,17 @@
                     <xsl:variable name="subfieldLabel">
                         <xsl:choose>
                             <xsl:when test="$subfieldCode = 'a'">Language of text/sound track or separate title</xsl:when>
-                            <xsl:when test="$subfieldCode = 'd'">Language of sung or spoken text</xsl:when>
+                            <xsl:when test="$subfieldCode = 'd'">Language of text/sound track or separate title</xsl:when>
                             <xsl:when test="$subfieldCode = 'b'">Language of summary or abstract</xsl:when>
                             <xsl:when test="$subfieldCode = 'e'">Language of librettos</xsl:when>
                             <xsl:when test="$subfieldCode = 'f'">Language of table of contents</xsl:when>
                             <xsl:when test="$subfieldCode = 'g'">Language of accompanying material other than librettos and transcripts</xsl:when>
-                            <xsl:when test="$subfieldCode = 'i'">Language of intertitles</xsl:when>
+                            <xsl:when test="$subfieldCode = 'i'">Language of intertitle</xsl:when>
                             <xsl:when test="$subfieldCode = 'j'">Language of subtitles</xsl:when>
                             <xsl:when test="$subfieldCode = 'p'">Language of captions</xsl:when>
                             <xsl:when test="$subfieldCode = 'q'">Language of accessible audio</xsl:when>
                             <xsl:when test="$subfieldCode = 'r'">Language of accessible visual content</xsl:when>
-                            <xsl:when test="$subfieldCode = 't'">Language of original</xsl:when>
+                            <xsl:when test="$subfieldCode = 't'">Language of accompanying transcripts for audiovisual materials</xsl:when>
                         </xsl:choose>
                     </xsl:variable>
                     
@@ -1366,7 +1366,7 @@
             </xsl:if>
         </xsl:if>
 
-        <!-- Row 57: Note for subfield $t - Language of accompanying transcripts for audiovisual materials -->
+        <!-- Row 58: Note for subfield $t - Language of accompanying transcripts for audiovisual materials -->
         <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
             <xsl:if test="marc:subfield[@code = 't']">
                 <rdawd:P10330>
