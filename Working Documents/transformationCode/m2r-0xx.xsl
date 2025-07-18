@@ -945,6 +945,701 @@
             </rdf:Description>
         </xsl:for-each>
     </xsl:template>
+
+    <!-- 041 - Language Code -->
+    <!-- WORK -->
+    <xsl:template match="marc:datafield[@tag = '041'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '041']" 
+        mode="wor" expand-text="yes">
+        <xsl:param name="baseID"/>
+        
+        <!-- Row 34: Map each language code in $a as separate element value (aggWor) -->
+        <xsl:if test="(@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])">
+            <xsl:for-each select="marc:subfield[@code = 'a']">
+                <!-- Process multiple 3-letter codes in single subfield -->
+                <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                    <xsl:if test="matches(., '^[a-z]{3}$')">
+                        <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/{.}"/>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:for-each>
+        </xsl:if>
+
+        <!-- Row 35: Map each language code in $a as separate element value when $2=iso (aggWor) -->
+        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso')">
+            <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2']"/>
+            <xsl:for-each select="marc:subfield[@code = 'a']">
+                <!-- Process multiple 3-letter codes in single subfield -->
+                <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                    <xsl:if test="matches(., '^[a-z]{3}$')">
+                        <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/{$subfield2Value}/{.}"/>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:for-each>
+        </xsl:if>
+
+        <!-- Row 36: Map each language code in $a as separate element value when $2 is present but NOT iso -->
+        <!-- Change to IRI? Need some clarification on this row-->
+        <xsl:if test="marc:subfield[@code = '2'] and not(starts-with(marc:subfield[@code = '2'], 'iso'))">
+            <xsl:for-each select="marc:subfield[@code = 'a']">
+                <!-- Process multiple 3-letter codes in single subfield -->
+                <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                    <xsl:if test="matches(., '^[a-z]{3}$')">
+                        <rdawo:P10353 rdf:resource="skos:Concept"/>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:for-each>
+        </xsl:if>
+
+        <!-- Row 37: Map each language code in $a as separate element value when Ind2 is not blank and no $2 -->
+        <!-- Is it valid to say ind2 != '#'?-->
+        <xsl:if test="(@ind2 != '#' and @ind2 != ' ') and not(marc:subfield[@code = '2'])">
+            <xsl:for-each select="marc:subfield[@code = 'a']">
+                <!-- Process multiple 3-letter codes in single subfield -->
+                <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                    <xsl:if test="matches(., '^[a-z]{3}$')">
+                        <rdawd:P10353><xsl:value-of select="."/></rdawd:P10353>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:for-each>
+        </xsl:if>
+
+        <!-- Row 39: Map each language code in $d as separate element value -->
+        <xsl:if test="(@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])">
+            <xsl:for-each select="marc:subfield[@code = 'd']">
+                <!-- Process multiple 3-letter codes in single subfield -->
+                <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                    <xsl:if test="matches(., '^[a-z]{3}$')">
+                        <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/{.}"/>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:for-each>
+        </xsl:if>
+
+        <!-- Row 40: Map each language code in $d as separate element value when $2=iso -->
+        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso')">
+            <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2']"/>
+            <xsl:for-each select="marc:subfield[@code = 'd']">
+                <!-- Process multiple 3-letter codes in single subfield -->
+                <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                    <xsl:if test="matches(., '^[a-z]{3}$')">
+                        <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/{$subfield2Value}/{.}"/>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:for-each>
+        </xsl:if>        
+
+        <!-- Row 41: Map each language code in $d as separate element value when $2 is present but NOT iso -->
+        <xsl:if test="marc:subfield[@code = '2'] and not(starts-with(marc:subfield[@code = '2'], 'iso'))">
+            <xsl:for-each select="marc:subfield[@code = 'd']">
+                <!-- Process multiple 3-letter codes in single subfield -->
+                <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                    <xsl:if test="matches(., '^[a-z]{3}$')">
+                        <rdawo:P10353 rdf:resource="skos:Concept"/>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:for-each>
+        </xsl:if>
+
+        <!-- Row 42: Map each language code in $d as separate element value when Ind2 is not blank and no $2 -->
+        <xsl:if test="(@ind2 != '#' and @ind2 != ' ') and not(marc:subfield[@code = '2'])">
+            <xsl:for-each select="marc:subfield[@code = 'd']">
+                <!-- Process multiple 3-letter codes in single subfield -->
+                <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                    <xsl:if test="matches(., '^[a-z]{3}$')">
+                        <rdawd:P10353><xsl:value-of select="."/></rdawd:P10353>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:for-each>
+        </xsl:if>
+
+        <!-- Row 44: $3 note for aggWor mode - Process each $3 subfield separately -->
+        <xsl:for-each select="marc:subfield[@code = '3']">
+            <xsl:variable name="materialType" select="."/>
+            <xsl:variable name="formattedMaterialType" select="concat(upper-case(substring(., 1, 1)), substring(., 2))"/>
+            <xsl:variable name="cleanMaterialType" select="replace($formattedMaterialType, '^code\s+', '')"/>
+            <xsl:variable name="parentContext" select=".."/>
+            
+            <!-- Process each subfield type separately (excluding translation codes $h, $k, $n) -->
+            <xsl:for-each select="('a', 'd', 'b', 'e', 'f', 'g', 'i', 'j', 'p', 'q', 'r', 't')">
+                <xsl:variable name="subfieldCode" select="."/>
+                <xsl:variable name="subfieldValues" select="$parentContext/marc:subfield[@code = $subfieldCode]"/>
+                
+                <xsl:if test="$subfieldValues">
+                    
+                    <!-- Get subfield label -->
+                    <xsl:variable name="subfieldLabel">
+                        <xsl:choose>
+                            <xsl:when test="$subfieldCode = 'a'">Language of text/sound track or separate title</xsl:when>
+                            <xsl:when test="$subfieldCode = 'd'">Language of sung or spoken text</xsl:when>
+                            <xsl:when test="$subfieldCode = 'b'">Language of summary or abstract</xsl:when>
+                            <xsl:when test="$subfieldCode = 'e'">Language of librettos</xsl:when>
+                            <xsl:when test="$subfieldCode = 'f'">Language of table of contents</xsl:when>
+                            <xsl:when test="$subfieldCode = 'g'">Language of accompanying material other than librettos and transcripts</xsl:when>
+                            <xsl:when test="$subfieldCode = 'i'">Language of intertitles</xsl:when>
+                            <xsl:when test="$subfieldCode = 'j'">Language of subtitles</xsl:when>
+                            <xsl:when test="$subfieldCode = 'p'">Language of captions</xsl:when>
+                            <xsl:when test="$subfieldCode = 'q'">Language of accessible audio</xsl:when>
+                            <xsl:when test="$subfieldCode = 'r'">Language of accessible visual content</xsl:when>
+                            <xsl:when test="$subfieldCode = 't'">Language of original</xsl:when>
+                        </xsl:choose>
+                    </xsl:variable>
+                    
+                    <!-- Collect all IRIs for this subfield type -->
+                    <xsl:variable name="iris">
+                        <xsl:variable name="subfield2Value" select="$parentContext/marc:subfield[@code = '2']"/>
+                        <xsl:variable name="allIris">
+                            <xsl:for-each select="$subfieldValues">
+                                <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                                <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                                    <xsl:if test="matches(., '^[a-z]{3}$')">
+                                        <xsl:choose>
+                                            <xsl:when test="$subfield2Value and starts-with($subfield2Value, 'iso')">
+                                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/', $subfield2Value, '/', .)"/>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', .)"/>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                        <xsl:text> </xsl:text>
+                                    </xsl:if>
+                                </xsl:for-each>
+                            </xsl:for-each>
+                        </xsl:variable>
+                        <xsl:value-of select="string-join(tokenize(normalize-space($allIris), '\s+'), ' + ')"/>
+                    </xsl:variable>
+                    
+                    <!-- Create the note -->
+                    <xsl:if test="string-length($iris) > 0">
+                        <rdawd:P10330><xsl:value-of select="concat($cleanMaterialType, ' has ', $subfieldLabel, ': ', $iris)"/></rdawd:P10330>
+                    </xsl:if>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:for-each>
+        
+        <!-- Row 46: Note for subfield $a - Language of text/sound track or separate title -->
+        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+            <xsl:if test="marc:subfield[@code = 'a']">
+                <rdawd:P10330>
+                    <xsl:text>Language of text/sound track or separate title: </xsl:text>
+                    <xsl:variable name="allIris">
+                        <xsl:for-each select="marc:subfield[@code = 'a']">
+                            <!-- Process multiple 3-letter codes in single subfield -->
+                            <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                            <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                                <xsl:if test="matches(., '^[a-z]{3}$')">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', .)"/>
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:for-each>
+                    </xsl:variable>
+                    <xsl:value-of select="string-join(tokenize(normalize-space($allIris), '\s+'), ' + ')"/>
+                </rdawd:P10330>
+            </xsl:if>
+        </xsl:if>
+
+        <!-- Row 47: Note for subfield $d - Language of text/sound track or separate title -->
+        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+            <xsl:if test="marc:subfield[@code = 'd']">
+                <rdawd:P10330>
+                    <xsl:text>Language of text/sound track or separate title: </xsl:text>
+                    <xsl:variable name="allIris">
+                        <xsl:for-each select="marc:subfield[@code = 'd']">
+                            <!-- Process multiple 3-letter codes in single subfield -->
+                            <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                            <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                                <xsl:if test="matches(., '^[a-z]{3}$')">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', .)"/>
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:for-each>
+                    </xsl:variable>
+                    <xsl:value-of select="string-join(tokenize(normalize-space($allIris), '\s+'), ' + ')"/>
+                </rdawd:P10330>
+            </xsl:if>
+        </xsl:if>
+
+        <!-- Row 49: Note for subfield $b - Language of summary or abstract -->
+        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+            <xsl:if test="marc:subfield[@code = 'b']">
+                <rdawd:P10330>
+                    <xsl:text>Language of summary or abstract: </xsl:text>
+                    <xsl:variable name="allIris">
+                        <xsl:for-each select="marc:subfield[@code = 'b']">
+                            <!-- Process multiple 3-letter codes in single subfield -->
+                            <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                            <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                                <xsl:if test="matches(., '^[a-z]{3}$')">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', .)"/>
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:for-each>
+                    </xsl:variable>
+                    <xsl:value-of select="string-join(tokenize(normalize-space($allIris), '\s+'), ' + ')"/>
+                </rdawd:P10330>
+            </xsl:if>
+        </xsl:if>
+
+        <!-- Row 50: Note for subfield $e - Language of librettos -->
+        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+            <xsl:if test="marc:subfield[@code = 'e']">
+                <rdawd:P10330>
+                    <xsl:text>Language of librettos: </xsl:text>
+                    <xsl:variable name="allIris">
+                        <xsl:for-each select="marc:subfield[@code = 'e']">
+                            <!-- Process multiple 3-letter codes in single subfield -->
+                            <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                            <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                                <xsl:if test="matches(., '^[a-z]{3}$')">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', .)"/>
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:for-each>
+                    </xsl:variable>
+                    <xsl:value-of select="string-join(tokenize(normalize-space($allIris), '\s+'), ' + ')"/>
+                </rdawd:P10330>
+            </xsl:if>
+        </xsl:if>
+
+        <!-- Row 51: Note for subfield $f - Language of table of contents -->
+        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+            <xsl:if test="marc:subfield[@code = 'f']">
+                <rdawd:P10330>
+                    <xsl:text>Language of table of contents: </xsl:text>
+                    <xsl:variable name="allIris">
+                        <xsl:for-each select="marc:subfield[@code = 'f']">
+                            <!-- Process multiple 3-letter codes in single subfield -->
+                            <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                            <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                                <xsl:if test="matches(., '^[a-z]{3}$')">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', .)"/>
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:for-each>
+                    </xsl:variable>
+                    <xsl:value-of select="string-join(tokenize(normalize-space($allIris), '\s+'), ' + ')"/>
+                </rdawd:P10330>
+            </xsl:if>
+        </xsl:if>
+
+        <!-- Row 52: Note for subfield $g - Language of accompanying material other than librettos and transcripts -->
+        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+            <xsl:if test="marc:subfield[@code = 'g']">
+                <rdawd:P10330>
+                    <xsl:text>Language of accompanying material other than librettos and transcripts: </xsl:text>
+                    <xsl:variable name="allIris">
+                        <xsl:for-each select="marc:subfield[@code = 'g']">
+                            <!-- Process multiple 3-letter codes in single subfield -->
+                            <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                            <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                                <xsl:if test="matches(., '^[a-z]{3}$')">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', .)"/>
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:for-each>
+                    </xsl:variable>
+                    <xsl:value-of select="string-join(tokenize(normalize-space($allIris), '\s+'), ' + ')"/>
+                </rdawd:P10330>
+            </xsl:if>
+        </xsl:if>
+
+        <!-- Row 53: Note for subfield $i - Language of intertitle -->
+        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+            <xsl:if test="marc:subfield[@code = 'i']">
+                <rdawd:P10330>
+                    <xsl:text>Language of intertitle: </xsl:text>
+                    <xsl:variable name="allIris">
+                        <xsl:for-each select="marc:subfield[@code = 'i']">
+                            <!-- Process multiple 3-letter codes in single subfield -->
+                            <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                            <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                                <xsl:if test="matches(., '^[a-z]{3}$')">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', .)"/>
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:for-each>
+                    </xsl:variable>
+                    <xsl:value-of select="string-join(tokenize(normalize-space($allIris), '\s+'), ' + ')"/>
+                </rdawd:P10330>
+            </xsl:if>
+        </xsl:if>
+
+        <!-- Row 54: Note for subfield $j - Language of subtitles -->
+        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+            <xsl:if test="marc:subfield[@code = 'j']">
+                <rdawd:P10330>
+                    <xsl:text>Language of subtitles: </xsl:text>
+                    <xsl:variable name="allIris">
+                        <xsl:for-each select="marc:subfield[@code = 'j']">
+                            <!-- Process multiple 3-letter codes in single subfield -->
+                            <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                            <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                                <xsl:if test="matches(., '^[a-z]{3}$')">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', .)"/>
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:for-each>
+                    </xsl:variable>
+                    <xsl:value-of select="string-join(tokenize(normalize-space($allIris), '\s+'), ' + ')"/>
+                </rdawd:P10330>
+            </xsl:if>
+        </xsl:if>
+
+        <!-- Row 55: Note for subfield $p - Language of captions -->
+        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+            <xsl:if test="marc:subfield[@code = 'p']">
+                <rdawd:P10330>
+                    <xsl:text>Language of captions: </xsl:text>
+                    <xsl:variable name="allIris">
+                        <xsl:for-each select="marc:subfield[@code = 'p']">
+                            <!-- Process multiple 3-letter codes in single subfield -->
+                            <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                            <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                                <xsl:if test="matches(., '^[a-z]{3}$')">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', .)"/>
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:for-each>
+                    </xsl:variable>
+                    <xsl:value-of select="string-join(tokenize(normalize-space($allIris), '\s+'), ' + ')"/>
+                </rdawd:P10330>
+            </xsl:if>
+        </xsl:if>
+
+        <!-- Row 56: Note for subfield $q - Language of accessible audio -->
+        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+            <xsl:if test="marc:subfield[@code = 'q']">
+                <rdawd:P10330>
+                    <xsl:text>Language of accessible audio: </xsl:text>
+                    <xsl:variable name="allIris">
+                        <xsl:for-each select="marc:subfield[@code = 'q']">
+                            <!-- Process multiple 3-letter codes in single subfield -->
+                            <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                            <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                                <xsl:if test="matches(., '^[a-z]{3}$')">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', .)"/>
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:for-each>
+                    </xsl:variable>
+                    <xsl:value-of select="string-join(tokenize(normalize-space($allIris), '\s+'), ' + ')"/>
+                </rdawd:P10330>
+            </xsl:if>
+        </xsl:if>
+
+        <!-- Row 57: Note for subfield $r - Language of accessible visual language (non-textual) -->
+        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+            <xsl:if test="marc:subfield[@code = 'r']">
+                <rdawd:P10330>
+                    <xsl:text>Language of accessible visual language (non-textual): </xsl:text>
+                    <xsl:variable name="allIris">
+                        <xsl:for-each select="marc:subfield[@code = 'r']">
+                            <!-- Process multiple 3-letter codes in single subfield -->
+                            <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                            <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                                <xsl:if test="matches(., '^[a-z]{3}$')">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', .)"/>
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:for-each>
+                    </xsl:variable>
+                    <xsl:value-of select="string-join(tokenize(normalize-space($allIris), '\s+'), ' + ')"/>
+                </rdawd:P10330>
+            </xsl:if>
+        </xsl:if>
+
+        <!-- Row 57: Note for subfield $t - Language of accompanying transcripts for audiovisual materials -->
+        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+            <xsl:if test="marc:subfield[@code = 't']">
+                <rdawd:P10330>
+                    <xsl:text>Language of accompanying transcripts for audiovisual materials: </xsl:text>
+                    <xsl:variable name="allIris">
+                        <xsl:for-each select="marc:subfield[@code = 't']">
+                            <!-- Process multiple 3-letter codes in single subfield -->
+                            <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                            <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                                <xsl:if test="matches(., '^[a-z]{3}$')">
+                                    <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', .)"/>
+                                    <xsl:text> </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:for-each>
+                    </xsl:variable>
+                    <xsl:value-of select="string-join(tokenize(normalize-space($allIris), '\s+'), ' + ')"/>
+                </rdawd:P10330>
+            </xsl:if>
+        </xsl:if>
+        
+    </xsl:template>
+
+    <!-- EXPRESSION -->
+    <xsl:template match="marc:datafield[@tag = '041'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '041']" 
+        mode="exp" expand-text="yes">
+        <xsl:param name="baseID"/>
+        <!-- TODO: Implement 041 transformations for exp mode according to mapping table -->
+
+        <!-- Row 4: Ind1=1 for seWor/augWor - Category of expression -->
+        <xsl:if test="@ind1 = '1'">
+            <rdaed:P20331>Translation</rdaed:P20331>
+        </xsl:if>
+        
+        <!-- Row 5: $h for seWor/augWor - Category of expression -->
+        <xsl:if test="marc:subfield[@code = 'h']">
+            <rdaed:P20331>Translation</rdaed:P20331>
+        </xsl:if>
+        
+        <!-- Row 6: $k for seWor/augWor - Category of expression -->
+        <xsl:if test="marc:subfield[@code = 'k']">
+            <rdaed:P20331>Translation</rdaed:P20331>
+        </xsl:if>
+        
+        <!-- Row 8: Map each language code in $a as separate element value (seWor/augWor) -->
+        <xsl:if test="(@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])">
+            <xsl:for-each select="marc:subfield[@code = 'a']">
+                <!-- Process multiple 3-letter codes in single subfield -->
+                <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                    <xsl:if test="matches(., '^[a-z]{3}$')">
+                        <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/{.}"/>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:for-each>
+        </xsl:if>
+        
+        <!-- Row 9: Map each language code in $a as separate element value when $2=iso (seWor/augWor) -->
+        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso')">
+            <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2']"/>
+            <xsl:for-each select="marc:subfield[@code = 'a']">
+                <!-- Process multiple 3-letter codes in single subfield -->
+                <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                    <xsl:if test="matches(., '^[a-z]{3}$')">
+                        <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/{$subfield2Value}/{.}"/>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:for-each>
+        </xsl:if>
+
+        <!-- Row 10: Map each language code in $a as separate element value when $2 is present but NOT iso -->
+        <!-- Change to IRI? Need some clarification on this row-->
+        <xsl:if test="marc:subfield[@code = '2'] and not(starts-with(marc:subfield[@code = '2'], 'iso'))">
+            <xsl:for-each select="marc:subfield[@code = 'a']">
+                <!-- Process multiple 3-letter codes in single subfield -->
+                <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                    <xsl:if test="matches(., '^[a-z]{3}$')">
+                        <rdaeo:P20006 rdf:resource="skos:Concept"/>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:for-each>
+        </xsl:if>
+
+        <!-- Row 11: Map each language code in $a as separate element value when Ind2 is not blank and no $2 -->
+        <!-- Is it valid to say ind2 != '#'?-->
+        <xsl:if test="(@ind2 != '#' and @ind2 != ' ') and not(marc:subfield[@code = '2'])">
+            <xsl:for-each select="marc:subfield[@code = 'a']">
+                <!-- Process multiple 3-letter codes in single subfield -->
+                <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                    <xsl:if test="matches(., '^[a-z]{3}$')">
+                        <rdaed:P20006><xsl:value-of select="."/></rdaed:P20006>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:for-each>
+        </xsl:if>
+
+        <!-- Row 13: Map each language code in $d as separate element value (seWor/augWor) -->
+        <xsl:if test="(@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])">
+            <xsl:for-each select="marc:subfield[@code = 'd']">
+                <!-- Process multiple 3-letter codes in single subfield -->
+                <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                    <xsl:if test="matches(., '^[a-z]{3}$')">
+                        <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/{.}"/>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:for-each>
+        </xsl:if>
+
+        <!-- Row 14: Map each language code in $d as separate element value when $2=iso (seWor/augWor) -->
+        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso')">
+            <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2']"/>
+            <xsl:for-each select="marc:subfield[@code = 'd']">
+                <!-- Process multiple 3-letter codes in single subfield -->
+                <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                    <xsl:if test="matches(., '^[a-z]{3}$')">
+                        <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/{$subfield2Value}/{.}"/>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:for-each>
+        </xsl:if>        
+
+        <!-- Row 15: Map each language code in $d as separate element value when $2 is present but NOT iso -->
+        <xsl:if test="marc:subfield[@code = '2'] and not(starts-with(marc:subfield[@code = '2'], 'iso'))">
+            <xsl:for-each select="marc:subfield[@code = 'd']">
+                <!-- Process multiple 3-letter codes in single subfield -->
+                <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                    <xsl:if test="matches(., '^[a-z]{3}$')">
+                        <rdaeo:P20006 rdf:resource="skos:Concept"/>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:for-each>
+        </xsl:if>
+
+        <!-- Row 16: Map each language code in $d as separate element value when Ind2 is not blank and no $2 -->
+        <xsl:if test="(@ind2 != '#' and @ind2 != ' ') and not(marc:subfield[@code = '2'])">
+            <xsl:for-each select="marc:subfield[@code = 'd']">
+                <!-- Process multiple 3-letter codes in single subfield -->
+                <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                    <xsl:if test="matches(., '^[a-z]{3}$')">
+                        <rdaed:P20006><xsl:value-of select="."/></rdaed:P20006>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:for-each>
+        </xsl:if>
+
+        <!-- Row 19: Note for subfield $a - Language of text/sound track or separate title -->
+        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+            <xsl:if test="marc:subfield[@code = 'a']">
+                <rdaed:P20071>
+                    <xsl:text>Language of text/sound track or separate title: </xsl:text>
+                    <xsl:for-each select="marc:subfield[@code = 'a']">
+                        <!-- Process multiple 3-letter codes in single subfield -->
+                        <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                        <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                            <xsl:if test="matches(., '^[a-z]{3}$')">
+                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', .)"/>
+                                <xsl:if test="position() != last()">
+                                    <xsl:text> and </xsl:text>
+                                </xsl:if>
+                            </xsl:if>
+                        </xsl:for-each>
+                        <xsl:if test="position() != last()">
+                            <xsl:text> and </xsl:text>
+                        </xsl:if>
+                    </xsl:for-each>
+                </rdaed:P20071>
+            </xsl:if>
+        </xsl:if>
+
+        <!-- Row 20: Note for subfield $d - Language of text/sound track or separate title -->
+        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+            <xsl:if test="marc:subfield[@code = 'd']">
+                <rdaed:P20071>
+                    <xsl:text>Language of text/sound track or separate title: </xsl:text>
+                    <xsl:for-each select="marc:subfield[@code = 'd']">
+                        <!-- Process multiple 3-letter codes in single subfield -->
+                        <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                        <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                            <xsl:if test="matches(., '^[a-z]{3}$')">
+                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', .)"/>
+                                <xsl:if test="position() != last()">
+                                    <xsl:text> and </xsl:text>
+                                </xsl:if>
+                            </xsl:if>
+                        </xsl:for-each>
+                        <xsl:if test="position() != last()">
+                            <xsl:text> and </xsl:text>
+                        </xsl:if>
+                    </xsl:for-each>
+                </rdaed:P20071>
+            </xsl:if>
+        </xsl:if>
+
+        <!-- Row 22: Note for subfield $h - Language of original -->
+        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+            <xsl:if test="marc:subfield[@code = 'h']">
+                <rdaed:P20071>
+                    <xsl:text>Language of original: </xsl:text>
+                    <xsl:for-each select="marc:subfield[@code = 'h']">
+                        <!-- Process multiple 3-letter codes in single subfield -->
+                        <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                        <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                            <xsl:if test="matches(., '^[a-z]{3}$')">
+                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', .)"/>
+                                <xsl:if test="position() != last()">
+                                    <xsl:text> and </xsl:text>
+                                </xsl:if>
+                            </xsl:if>
+                        </xsl:for-each>
+                        <xsl:if test="position() != last()">
+                            <xsl:text> and </xsl:text>
+                        </xsl:if>
+                    </xsl:for-each>
+                </rdaed:P20071>
+            </xsl:if>
+        </xsl:if>
+
+        <!-- Row 23: Note for subfield $h - Language of original libretto -->
+        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+            <xsl:if test="marc:subfield[@code = 'n']">
+                <rdaed:P20071>
+                    <xsl:text>Language of original libretto: </xsl:text>
+                    <xsl:for-each select="marc:subfield[@code = 'n']">
+                        <!-- Process multiple 3-letter codes in single subfield -->
+                        <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                        <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                            <xsl:if test="matches(., '^[a-z]{3}$')">
+                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', .)"/>
+                                <xsl:if test="position() != last()">
+                                    <xsl:text> and </xsl:text>
+                                </xsl:if>
+                            </xsl:if>
+                        </xsl:for-each>
+                        <xsl:if test="position() != last()">
+                            <xsl:text> and </xsl:text>
+                        </xsl:if>
+                    </xsl:for-each>
+                </rdaed:P20071>
+            </xsl:if>
+        </xsl:if>
+
+        <!-- Row 24: Note for subfield $k - Language of intermediate translations -->
+        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+            <xsl:if test="marc:subfield[@code = 'k']">
+                <rdaed:P20071>
+                    <xsl:text>Language of intermediate translations: </xsl:text>
+                    <xsl:for-each select="marc:subfield[@code = 'k']">
+                        <!-- Process multiple 3-letter codes in single subfield -->
+                        <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
+                        <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
+                            <xsl:if test="matches(., '^[a-z]{3}$')">
+                                <xsl:value-of select="concat('http://id.loc.gov/vocabulary/languages/', .)"/>
+                                <xsl:if test="position() != last()">
+                                    <xsl:text> and </xsl:text>
+                                </xsl:if>
+                            </xsl:if>
+                        </xsl:for-each>
+                        <xsl:if test="position() != last()">
+                            <xsl:text> and </xsl:text>
+                        </xsl:if>
+                    </xsl:for-each>
+                </rdaed:P20071>
+            </xsl:if>
+        </xsl:if>
+        
+    </xsl:template>
    
     <!-- 043 - Geographic Area Code -->
     <xsl:template match="marc:datafield[@tag = '043']"  
@@ -1683,7 +2378,7 @@
         </xsl:if>
 
     </xsl:template>
-    
+
     <!-- 047 - Form of Muscial Composition -->
     <xsl:template match="marc:datafield[@tag = '047'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '047']" 
         mode="wor" expand-text="yes">
