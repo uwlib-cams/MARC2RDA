@@ -953,7 +953,7 @@
         <xsl:param name="baseID"/>
         
         <!-- Row 34: Map each language code in $a as separate element value (aggWor) -->
-        <xsl:if test="(@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])">
+        <xsl:if test="@ind2 = ' ' and not(marc:subfield[@code = '2'])">
             <xsl:for-each select="marc:subfield[@code = 'a']">
                 <!-- Process multiple 3-letter codes in single subfield -->
                 <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
@@ -994,8 +994,7 @@
         </xsl:if>
 
         <!-- Row 37: Map each language code in $a as separate element value when Ind2 is not blank and no $2 -->
-        <!-- Is it valid to say ind2 != '#'?-->
-        <xsl:if test="(@ind2 != '#' and @ind2 != ' ') and not(marc:subfield[@code = '2'])">
+        <xsl:if test="(@ind2 != ' ') and not(marc:subfield[@code = '2'])">
             <xsl:for-each select="marc:subfield[@code = 'a']">
                 <!-- Process multiple 3-letter codes in single subfield -->
                 <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
@@ -1008,7 +1007,7 @@
         </xsl:if>
 
         <!-- Row 39: Map each language code in $d as separate element value -->
-        <xsl:if test="(@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])">
+        <xsl:if test="@ind2 = ' ' and not(marc:subfield[@code = '2'])">
             <xsl:for-each select="marc:subfield[@code = 'd']">
                 <!-- Process multiple 3-letter codes in single subfield -->
                 <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
@@ -1048,7 +1047,7 @@
         </xsl:if>
 
         <!-- Row 42: Map each language code in $d as separate element value when Ind2 is not blank and no $2 -->
-        <xsl:if test="(@ind2 != '#' and @ind2 != ' ') and not(marc:subfield[@code = '2'])">
+        <xsl:if test="(@ind2 != ' ') and not(marc:subfield[@code = '2'])">
             <xsl:for-each select="marc:subfield[@code = 'd']">
                 <!-- Process multiple 3-letter codes in single subfield -->
                 <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
@@ -1125,7 +1124,7 @@
         </xsl:for-each>
         
         <!-- Row 46: Note for subfield $a - Language of text/sound track or separate title -->
-        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+        <xsl:if test="(@ind2 = ' ' and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
             <xsl:if test="marc:subfield[@code = 'a']">
                 <rdawd:P10330>
                     <xsl:text>Language of text/sound track or separate title: </xsl:text>
@@ -1147,7 +1146,7 @@
         </xsl:if>
 
         <!-- Row 47: Note for subfield $d - Language of text/sound track or separate title -->
-        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+        <xsl:if test="(@ind2 = ' ' and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
             <xsl:if test="marc:subfield[@code = 'd']">
                 <rdawd:P10330>
                     <xsl:text>Language of text/sound track or separate title: </xsl:text>
@@ -1169,7 +1168,7 @@
         </xsl:if>
 
         <!-- Row 49: Note for subfield $b - Language of summary or abstract -->
-        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+        <xsl:if test="(@ind2 = ' ' and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
             <xsl:if test="marc:subfield[@code = 'b']">
                 <rdawd:P10330>
                     <xsl:text>Language of summary or abstract: </xsl:text>
@@ -1191,7 +1190,7 @@
         </xsl:if>
 
         <!-- Row 50: Note for subfield $e - Language of librettos -->
-        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+        <xsl:if test="(@ind2 = ' ' and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
             <xsl:if test="marc:subfield[@code = 'e']">
                 <rdawd:P10330>
                     <xsl:text>Language of librettos: </xsl:text>
@@ -1213,7 +1212,7 @@
         </xsl:if>
 
         <!-- Row 51: Note for subfield $f - Language of table of contents -->
-        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+        <xsl:if test="(@ind2 = ' ' and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
             <xsl:if test="marc:subfield[@code = 'f']">
                 <rdawd:P10330>
                     <xsl:text>Language of table of contents: </xsl:text>
@@ -1235,7 +1234,7 @@
         </xsl:if>
 
         <!-- Row 52: Note for subfield $g - Language of accompanying material other than librettos and transcripts -->
-        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+        <xsl:if test="(@ind2 = ' ' and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
             <xsl:if test="marc:subfield[@code = 'g']">
                 <rdawd:P10330>
                     <xsl:text>Language of accompanying material other than librettos and transcripts: </xsl:text>
@@ -1257,7 +1256,7 @@
         </xsl:if>
 
         <!-- Row 53: Note for subfield $i - Language of intertitle -->
-        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+        <xsl:if test="(@ind2 = ' ' and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
             <xsl:if test="marc:subfield[@code = 'i']">
                 <rdawd:P10330>
                     <xsl:text>Language of intertitle: </xsl:text>
@@ -1279,7 +1278,7 @@
         </xsl:if>
 
         <!-- Row 54: Note for subfield $j - Language of subtitles -->
-        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+        <xsl:if test="(@ind2 = ' ' and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
             <xsl:if test="marc:subfield[@code = 'j']">
                 <rdawd:P10330>
                     <xsl:text>Language of subtitles: </xsl:text>
@@ -1301,7 +1300,7 @@
         </xsl:if>
 
         <!-- Row 55: Note for subfield $p - Language of captions -->
-        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+        <xsl:if test="(@ind2 = ' ' and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
             <xsl:if test="marc:subfield[@code = 'p']">
                 <rdawd:P10330>
                     <xsl:text>Language of captions: </xsl:text>
@@ -1323,7 +1322,7 @@
         </xsl:if>
 
         <!-- Row 56: Note for subfield $q - Language of accessible audio -->
-        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+        <xsl:if test="(@ind2 = ' ' and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
             <xsl:if test="marc:subfield[@code = 'q']">
                 <rdawd:P10330>
                     <xsl:text>Language of accessible audio: </xsl:text>
@@ -1345,7 +1344,7 @@
         </xsl:if>
 
         <!-- Row 57: Note for subfield $r - Language of accessible visual language (non-textual) -->
-        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+        <xsl:if test="(@ind2 = ' ' and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
             <xsl:if test="marc:subfield[@code = 'r']">
                 <rdawd:P10330>
                     <xsl:text>Language of accessible visual language (non-textual): </xsl:text>
@@ -1367,7 +1366,7 @@
         </xsl:if>
 
         <!-- Row 58: Note for subfield $t - Language of accompanying transcripts for audiovisual materials -->
-        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+        <xsl:if test="(@ind2 = ' ' and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
             <xsl:if test="marc:subfield[@code = 't']">
                 <rdawd:P10330>
                     <xsl:text>Language of accompanying transcripts for audiovisual materials: </xsl:text>
@@ -1387,14 +1386,12 @@
                 </rdawd:P10330>
             </xsl:if>
         </xsl:if>
-        
     </xsl:template>
 
     <!-- EXPRESSION -->
     <xsl:template match="marc:datafield[@tag = '041'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '041']" 
         mode="exp" expand-text="yes">
         <xsl:param name="baseID"/>
-        <!-- TODO: Implement 041 transformations for exp mode according to mapping table -->
 
         <!-- Row 4: Ind1=1 for seWor/augWor - Category of expression -->
         <xsl:if test="@ind1 = '1'">
@@ -1412,7 +1409,7 @@
         </xsl:if>
         
         <!-- Row 8: Map each language code in $a as separate element value (seWor/augWor) -->
-        <xsl:if test="(@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])">
+        <xsl:if test="@ind2 = ' ' and not(marc:subfield[@code = '2'])">
             <xsl:for-each select="marc:subfield[@code = 'a']">
                 <!-- Process multiple 3-letter codes in single subfield -->
                 <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
@@ -1453,8 +1450,7 @@
         </xsl:if>
 
         <!-- Row 11: Map each language code in $a as separate element value when Ind2 is not blank and no $2 -->
-        <!-- Is it valid to say ind2 != '#'?-->
-        <xsl:if test="(@ind2 != '#' and @ind2 != ' ') and not(marc:subfield[@code = '2'])">
+        <xsl:if test="(@ind2 != ' ') and not(marc:subfield[@code = '2'])">
             <xsl:for-each select="marc:subfield[@code = 'a']">
                 <!-- Process multiple 3-letter codes in single subfield -->
                 <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
@@ -1467,7 +1463,7 @@
         </xsl:if>
 
         <!-- Row 13: Map each language code in $d as separate element value (seWor/augWor) -->
-        <xsl:if test="(@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])">
+        <xsl:if test="@ind2 = ' ' and not(marc:subfield[@code = '2'])">
             <xsl:for-each select="marc:subfield[@code = 'd']">
                 <!-- Process multiple 3-letter codes in single subfield -->
                 <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
@@ -1507,7 +1503,7 @@
         </xsl:if>
 
         <!-- Row 16: Map each language code in $d as separate element value when Ind2 is not blank and no $2 -->
-        <xsl:if test="(@ind2 != '#' and @ind2 != ' ') and not(marc:subfield[@code = '2'])">
+        <xsl:if test="(@ind2 != ' ') and not(marc:subfield[@code = '2'])">
             <xsl:for-each select="marc:subfield[@code = 'd']">
                 <!-- Process multiple 3-letter codes in single subfield -->
                 <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
@@ -1520,7 +1516,7 @@
         </xsl:if>
 
         <!-- Row 19: Note for subfield $a - Language of text/sound track or separate title -->
-        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+        <xsl:if test="(@ind2 = ' ' and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
             <xsl:if test="marc:subfield[@code = 'a']">
                 <rdaed:P20071>
                     <xsl:text>Language of text/sound track or separate title: </xsl:text>
@@ -1544,7 +1540,7 @@
         </xsl:if>
 
         <!-- Row 20: Note for subfield $d - Language of text/sound track or separate title -->
-        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+        <xsl:if test="(@ind2 = ' ' and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
             <xsl:if test="marc:subfield[@code = 'd']">
                 <rdaed:P20071>
                     <xsl:text>Language of text/sound track or separate title: </xsl:text>
@@ -1568,7 +1564,7 @@
         </xsl:if>
 
         <!-- Row 22: Note for subfield $h - Language of original -->
-        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+        <xsl:if test="(@ind2 = ' ' and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
             <xsl:if test="marc:subfield[@code = 'h']">
                 <rdaed:P20071>
                     <xsl:text>Language of original: </xsl:text>
@@ -1592,7 +1588,7 @@
         </xsl:if>
 
         <!-- Row 23: Note for subfield $h - Language of original libretto -->
-        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+        <xsl:if test="(@ind2 = ' ' and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
             <xsl:if test="marc:subfield[@code = 'n']">
                 <rdaed:P20071>
                     <xsl:text>Language of original libretto: </xsl:text>
@@ -1616,7 +1612,7 @@
         </xsl:if>
 
         <!-- Row 24: Note for subfield $k - Language of intermediate translations -->
-        <xsl:if test="((@ind2 = '#' or @ind2 = ' ') and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
+        <xsl:if test="(@ind2 = ' ' and not(marc:subfield[@code = '2'])) or (marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso'))">
             <xsl:if test="marc:subfield[@code = 'k']">
                 <rdaed:P20071>
                     <xsl:text>Language of intermediate translations: </xsl:text>
@@ -1917,8 +1913,8 @@
             <rdamo:P30273 rdf:resource="{uwf:timespanIRI($baseID, ., 'multipart')}"/>
         </xsl:if>
         
-        <!-- Row 31: When indicator 1 = # (No information) and subfields $j and $2 are present (date of last update) -->
-        <xsl:if test="not(@ind1 = '1' or @ind1 = '2' or @ind1 = '3') and marc:subfield[@code = 'j'] and marc:subfield[@code = '2']">
+        <!-- Row 31: When indicator 1 = # (blank) and subfields $j and $2 are present (date of last update) -->
+        <xsl:if test="@ind1 = ' ' and marc:subfield[@code = 'j'] and marc:subfield[@code = '2']">
             <rdamo:P30278 rdf:resource="{uwf:timespanIRI($baseID, ., 'lastupdate')}"/>
         </xsl:if>
         
@@ -1927,8 +1923,8 @@
             <rdamo:P30278 rdf:resource="{uwf:timespanIRI($baseID, ., 'manifestation-lastupdate')}"/>
         </xsl:if>
         
-        <!-- Row 36: When indicator 1 = # (No information) and subfields $m and $n are present (date span for validity) -->
-        <xsl:if test="not(@ind1 = '1' or @ind1 = '2' or @ind1 = '3') and marc:subfield[@code = 'm'] and marc:subfield[@code = 'n']">
+        <!-- Row 36: When indicator 1 = # (blank) and subfields $m and $n are present (date span for validity) -->
+        <xsl:if test="@ind1 = ' ' and marc:subfield[@code = 'm'] and marc:subfield[@code = 'n']">
             <rdamo:P30273 rdf:resource="{uwf:timespanIRI($baseID, ., 'validity-span')}"/>
         </xsl:if>
         
