@@ -305,6 +305,11 @@
                                     <xsl:value-of select="$expressionAP"/>
                                 </rdaed:P20310>
                             </xsl:if>
+                            
+                            <xsl:apply-templates select="*" mode="exp">
+                                <xsl:with-param name="baseID" select="$baseID"/>
+                            </xsl:apply-templates>
+                            
                         </rdf:Description>
                     </xsl:when>
                 </xsl:choose>
