@@ -3036,5 +3036,16 @@
             </rdf:Description>
         </xsl:for-each>
     </xsl:template>
+    <xsl:template match="marc:datafield[@tag = '082'] 
+        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '082']"
+        mode="man">
+        <xsl:param name="baseID"/>
+        <xsl:call-template name="F0082-deweyClassification">
+            <xsl:with-param name="baseID" select="$baseID"/>
+            <xsl:with-param name="suffix" select="'dewey'"/>
+            <xsl:with-param name="note" select="'Dewey Decimal Classification Number'"/>
+        </xsl:call-template>
+    </xsl:template>
+    
 
 </xsl:stylesheet>
