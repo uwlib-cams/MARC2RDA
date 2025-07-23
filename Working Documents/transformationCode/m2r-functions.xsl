@@ -271,6 +271,23 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:function>
+
+    <!-- lookup for field 041 concepts -->
+    <xsl:function name="uwf:s2Concept041" expand-text="true">
+        <xsl:param name="sub2"/>
+        <xsl:variable name="code2" select="replace($sub2, '\.$', '')"/>
+        <xsl:choose>
+            <xsl:when test="$locAccessRestrictionTermDoc/rdf:RDF/madsrdf:MADSScheme/key('schemeKey', concat('http://id.loc.gov/vocabulary/languageschemes/', lower-case($code2)))">
+                <skos:inScheme rdf:resource="{concat('http://id.loc.gov/vocabulary/languageschemes/', lower-case($code2))}"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:comment>IRI could not be found for {$code2}</xsl:comment>
+                <skos:inScheme>
+                    <xsl:value-of select="$code2"/>
+                </skos:inScheme>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
     
     
     <!-- lookup for field 048 -->   
@@ -373,6 +390,9 @@
                 </xsl:when>
                 <xsl:when test="$fieldNum = '382'">
                     <xsl:copy-of select="uwf:s2Concept382($scheme)"/>
+                </xsl:when>
+                <xsl:when test="$fieldNum = '041'">
+                    <xsl:copy-of select="uwf:s2Concept041($scheme)"/>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:copy-of select="uwf:s2Concept($scheme)"/>

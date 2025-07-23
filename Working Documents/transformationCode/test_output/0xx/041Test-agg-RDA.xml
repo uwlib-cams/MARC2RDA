@@ -275,6 +275,12 @@ F041 #7 $a N230 $2 austlang
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
    </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/austlang/con#n230">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>N230</skos:prefLabel>
+      <!--IRI could not be found for austlang-->
+      <skos:inScheme>austlang</skos:inScheme>
+   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test08">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10400>041-test08</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
@@ -317,6 +323,30 @@ F546 ## $a In Tashelhit and Arabic.
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
       <rdamd:P30137>In Tashelhit and Arabic.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/glotto/con#tach1250">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>tach1250</skos:prefLabel>
+      <!--IRI could not be found for glotto-->
+      <skos:inScheme>glotto</skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/glotto/con#stan1318">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>stan1318</skos:prefLabel>
+      <!--IRI could not be found for glotto-->
+      <skos:inScheme>glotto</skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/walso/con#tas">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>tas</skos:prefLabel>
+      <!--IRI could not be found for walso-->
+      <skos:inScheme>walso</skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/walso/con#ams">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>ams</skos:prefLabel>
+      <!--IRI could not be found for walso-->
+      <skos:inScheme>walso</skos:inScheme>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc041-test09">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>

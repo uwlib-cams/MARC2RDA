@@ -2010,6 +2010,20 @@
         </xsl:if>
 
     </xsl:template>
+
+    <!-- CONCEPT -->
+    <!-- Rows 10, 15, 41, 46 -->
+    <xsl:template match="marc:datafield[@tag = '041'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '041']" 
+        mode="con" expand-text="yes">
+        <xsl:if test="marc:subfield[@code = '2'] and not(starts-with(marc:subfield[@code = '2'], 'iso'))">
+            <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
+            <xsl:for-each select="marc:subfield[@code = 'a']">
+                <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
+                    <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '041')"/>
+                </rdf:Description>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
    
     <!-- 043 - Geographic Area Code -->
     <xsl:template match="marc:datafield[@tag = '043']"  

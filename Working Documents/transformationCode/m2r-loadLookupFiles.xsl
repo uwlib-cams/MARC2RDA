@@ -11,7 +11,7 @@
     <!-- then re-run this XSLT transformation. Set this file as both XML URL and XSL URL. Do not set an output file for the transformation, xsl:result-document is in use -->
     
     <xsl:output name="xml" method="xml" indent="yes"/>
-    <xsl:param name="lc_files" select="'subjectSchemes;genreFormSchemes;fingerprintschemes;identifiers;accessrestrictionterm;classSchemes;carriers;contentTypes;mediaTypes;mplayspeed;mtapeconfig;mencformat;nameTitleSchemes;languages;musiccodeschemes;nationalbibschemes'"/>
+    <xsl:param name="lc_files" select="'subjectSchemes;genreFormSchemes;fingerprintschemes;identifiers;accessrestrictionterm;classSchemes;carriers;contentTypes;mediaTypes;mplayspeed;mtapeconfig;mencformat;nameTitleSchemes;languages;musiccodeschemes;nationalbibschemes;languageschemes'"/>
     <xsl:param name="rda_files" select="'AspectRatio;bookFormat;broadcastStand;RDAColourContent;RDAContentType;configPlayback;RDACarrierType;RDAExtensionPlan;MusNotation;noteMove;frequency;fontSize;fileType;RDAGeneration;groovePitch;grooveWidth;IllusContent;layout;RDAMaterial;ModeIssue;RDAMediaType;presFormat;RDAproductionMethod;RDAPolarity;RDARegionalEncoding;recMedium;RDAReductionRatio;soundCont;specPlayback;RDATypeOfBinding;trackConfig;typeRec;videoFormat'"/>
     <xsl:template match="/">
         <xsl:for-each select="tokenize($lc_files, ';')">
