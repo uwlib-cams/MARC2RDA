@@ -1038,6 +1038,132 @@
         </xsl:if>
     </xsl:template>
 
+        <!--740 Added Entry - Uncontrolled Related/Analytical Title-->
+    <xsl:template match="marc:datafield[@tag = '740'] | marc:datafield[@tag = '740'][substring(marc:subfield[@code = '6'], 1, 6) = '740-00']" mode="ite">
+        <xsl:param name="baseID"/>
+        <xsl:param name="manIRI"/>
+        <xsl:variable name="s5" select="marc:subfield[@code = '5']"/>
+        <xsl:variable name="genID" select="generate-id(.)"/>
+        <xsl:variable name="leader" select="ancestor::marc:record/marc:leader"/>
+        <xsl:variable name="ldr06" select="substring($leader, 7, 1)"/>
+        <xsl:variable name="ldr07" select="substring($leader, 8, 1)"/>
+        <xsl:variable name="ldr08" select="substring($leader, 9, 1)"/>
+        <!--<xsl:call-template name="getmarc"/>-->
+        <xsl:if test="@ind2 = '0' and (marc:subfield[@code = 'a'] or marc:subfield[@code = 'n'] or marc:subfield[@code = 'p'])">
+                <!--Process $5-->
+                <xsl:if test="marc:subfield[@code = '5']">
+                    <!--mint item URI-->
+                    <rdf:Description rdf:about="{uwf:itemIRI($baseID, .)}">
+                        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+                        <!--mint nomen and associate with item-->
+                        <rdaid:P40001>
+                            <xsl:value-of select="concat('ite#', $baseID, $genID)"/>
+                        </rdaid:P40001>
+                        <!--mint manifestation and associate with item-->
+                        <rdaio:P40049 rdf:resource="{$manIRI}"/>
+                        <!--mint manifestationcollectionIRI-->
+                        <xsl:copy-of select="uwf:s5Lookup(marc:subfield[@code = '5'])"/>                    
+                        <rdaid:P40086>
+                            <xsl:value-of select="string-join(marc:subfield[@code = ('a','n','p')], ' ')"/>
+                        </rdaid:P40086>
+                    </rdf:Description>
+                </xsl:if>
+            </xsl:if>
+            <xsl:if test="@ind2 = '1' and (marc:subfield[@code = 'a'] or marc:subfield[@code = 'n'] or marc:subfield[@code = 'p'])">
+                <xsl:if test="marc:subfield[@code = '5']">
+                    <rdf:Description rdf:about="{uwf:itemIRI($baseID, .)}">
+                        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+                        <rdaid:P40001><xsl:value-of select="concat('ite#', $baseID, $genID)"/></rdaid:P40001>
+                        <rdaio:P40049 rdf:resource="{$manIRI}"/>
+                        <xsl:copy-of select="uwf:s5Lookup(marc:subfield[@code = '5'])"/>   
+                        <xsl:call-template name="F740-xx-ldrtestite"/>
+                    </rdf:Description>
+                </xsl:if>
+            </xsl:if>
+            <xsl:if test="(@ind2 = '3' or @ind2 = ' ') and (marc:subfield[@code = 'a'] or marc:subfield[@code = 'n'] or marc:subfield[@code = 'p'])">
+                <xsl:if test="marc:subfield[@code = '5']">
+                    <rdf:Description rdf:about="{uwf:itemIRI($baseID, .)}">
+                        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+                        <rdaid:P40001><xsl:value-of select="concat('ite#', $baseID, $genID)"/></rdaid:P40001>
+                        <rdaio:P40049 rdf:resource="{$manIRI}"/>
+                        <xsl:copy-of select="uwf:s5Lookup(marc:subfield[@code = '5'])"/>                    
+                        <rdaid:P40069>
+                            <xsl:value-of select="string-join(marc:subfield[@code = ('a','n','p')], ' ')"/>
+                        </rdaid:P40069>
+                    </rdf:Description>
+                </xsl:if>
+            </xsl:if>
+        <!--Link to 880-->
+        <xsl:if test="marc:subfield[@code = '6'] and @tag = '740'">
+            <xsl:variable name="occNum" select="substring(marc:subfield[@code = '6'], 5, 6)"/>
+            <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 6, 2) = $occNum]">
+                <xsl:if test="@ind2 = '0' and (marc:subfield[@code = 'a'] or marc:subfield[@code = 'n'] or marc:subfield[@code = 'p'])">
+                    <rdaid:P40086>
+                        <xsl:value-of select="string-join(marc:subfield[@code = ('a','n','p')], ' ')"/>
+                    </rdaid:P40086>
+                </xsl:if>
+                <xsl:if test="@ind2 = '1' and (marc:subfield[@code = 'a'] or marc:subfield[@code = 'n'] or marc:subfield[@code = 'p'])">
+                    <xsl:call-template name="F740-xx-ldrtestite"/>
+                </xsl:if>
+                <xsl:if test="(@ind2 = '3' or @ind2 = ' ') and (marc:subfield[@code = 'a'] or marc:subfield[@code = 'n'] or marc:subfield[@code = 'p'])">
+                        <rdaid:P40069>
+                            <xsl:value-of select="string-join(marc:subfield[@code = ('a','n','p')], ' ')"/>
+                        </rdaid:P40069>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '740'] | marc:datafield[@tag = '740'][substring(marc:subfield[@code = '6'], 1, 6) = '740-00']" mode="man">
+        <xsl:param name="baseID"/>
+        <xsl:param name="manIRI"/>
+        <xsl:variable name="genID" select="generate-id(.)"/>
+        <xsl:variable name="leader" select="ancestor::marc:record/marc:leader"/>
+        <xsl:variable name="ldr06" select="substring($leader, 7, 1)"/>
+        <xsl:variable name="ldr07" select="substring($leader, 8, 1)"/>
+        <xsl:variable name="ldr08" select="substring($leader, 9, 1)"/>
+        <!--<xsl:call-template name="getmarc"/>-->
+        <xsl:choose>
+            <xsl:when test="marc:subfield[@code = '5']">
+                <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseID, .)}"/>
+            </xsl:when>
+            <xsl:otherwise>
+                    <xsl:if test="@ind2 = '0' and (marc:subfield[@code = 'a'] or marc:subfield[@code = 'n'] or marc:subfield[@code = 'p'])">
+                        <rdamd:P30128>
+                            <xsl:value-of select="string-join(marc:subfield[@code = ('a','n','p')], ' ')"/>
+                        </rdamd:P30128>
+                    </xsl:if>
+                    <xsl:if test="@ind2 = '1' and (marc:subfield[@code = 'a'] or marc:subfield[@code = 'n'] or marc:subfield[@code = 'p'])">  
+                       <xsl:call-template name="F740-xx-ldrtestman"/>                      
+                    </xsl:if>
+                    <xsl:if test="(@ind2 = '3' or @ind2 = ' ') and (marc:subfield[@code = 'a'] or marc:subfield[@code = 'n'] or marc:subfield[@code = 'p'])">
+                        <rdamd:P30265>
+                            <xsl:value-of select="string-join(marc:subfield[@code = ('a','n','p')], ' ')"/>
+                        </rdamd:P30265>
+                    </xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
+        <!--Link to 880-->
+        <xsl:if test="marc:subfield[@code = '6'] and @tag = '740'">
+            <xsl:variable name="occNum" select="substring(marc:subfield[@code = '6'], 5, 6)"/>
+            <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 6, 2) = $occNum]">
+                <xsl:if test="@ind2 = '0' and (marc:subfield[@code = 'a'] or marc:subfield[@code = 'n'] or marc:subfield[@code = 'p'])">
+                    <rdamd:P30128>
+                        <xsl:value-of select="string-join(marc:subfield[@code = ('a','n','p')], ' ')"/>
+                    </rdamd:P30128>
+                </xsl:if>
+                <xsl:if test="@ind2 = '1' and (marc:subfield[@code = 'a'] or marc:subfield[@code = 'n'] or marc:subfield[@code = 'p'])">
+                    <xsl:call-template name="F740-xx-ldrtestman"/>    
+                </xsl:if>
+                <xsl:if test="(@ind2 = '3' or @ind2 = ' ') and (marc:subfield[@code = 'a'] or marc:subfield[@code = 'n'] or marc:subfield[@code = 'p'])">
+                    <rdamd:P30265>
+                        <xsl:value-of select="string-join(marc:subfield[@code = ('a','n','p')], ' ')"/>
+                    </rdamd:P30265>
+                </xsl:if>      
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+
     <!-- 754 Added Entry-Taxonomic Identification -->  
     <xsl:template match="marc:datafield[@tag = '754'] | marc:datafield[@tag = '880'][starts-with(marc:subfield[@code = '6'], '754')]" 
         mode="ite">
