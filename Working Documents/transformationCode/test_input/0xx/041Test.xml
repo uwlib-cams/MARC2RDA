@@ -65,7 +65,7 @@
             <marc:subfield code="d">cze</marc:subfield>
             <marc:subfield code="d">spa</marc:subfield>
         </marc:datafield>
-        <marc:datafield tag="041" ind1="7" ind2=" ">
+        <marc:datafield tag="041" ind1=" " ind2="7">
             <marc:subfield code="a">ces</marc:subfield>
             <marc:subfield code="a">que</marc:subfield>
             <marc:subfield code="a">spa</marc:subfield>
@@ -96,7 +96,7 @@
             <marc:subfield code="a">aus</marc:subfield>
             <marc:subfield code="a">eng</marc:subfield>
         </marc:datafield>
-        <marc:datafield tag="041" ind1="7" ind2=" ">
+        <marc:datafield tag="041" ind1=" " ind2="7">
             <marc:subfield code="a">N230</marc:subfield>
             <marc:subfield code="2">austlang</marc:subfield>
         </marc:datafield>
@@ -136,7 +136,7 @@
         <marc:leader>02522cam a2200541 a 4500</marc:leader>
         <marc:controlfield tag="001">041-test09</marc:controlfield>
         <!-- <marc:controlfield tag="008">991117s1999 un af b 000 0bukro</marc:controlfield> -->
-        <marc:datafield tag="041" ind1="0" ind2=" ">
+        <marc:datafield tag="041" ind1="0" ind2="7">
             <marc:subfield code="a">ukr</marc:subfield>
             <marc:subfield code="a">eng</marc:subfield>
         </marc:datafield>

@@ -24,8 +24,6 @@ F041 1# $a eng
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test01"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -65,8 +63,6 @@ F546 ## $a Translated from the French.
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test02"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -107,8 +103,6 @@ F546 ## $a Translated from the French.
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test03"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/fre</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -149,9 +143,6 @@ F546 ## $a In English and French.
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test04"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/fre</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -185,7 +176,7 @@ F546 ## $a In English and French.
       <rdamd:P30137>F 05097cjm a22011777i 4500
 F001 041-test05
 F041 0# $d que $d cze $d spa
-F041 7# $a ces $a que $a spa $2 iso639-3
+F041 #7 $a ces $a que $a spa $2 iso639-3
 F546 ## $a Vocal works sung variously in Quechua, Czech, and Spanish.
 </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
@@ -193,14 +184,6 @@ F546 ## $a Vocal works sung variously in Quechua, Czech, and Spanish.
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test05"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/que"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/cze"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/spa"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/que + http://id.loc.gov/vocabulary/languages/cze + http://id.loc.gov/vocabulary/languages/spa</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/ces"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/que"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/spa"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/ces + http://id.loc.gov/vocabulary/languages/que + http://id.loc.gov/vocabulary/languages/spa</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -240,8 +223,6 @@ F041 07 $a nob $2 iso639-3
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test06"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/nob"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/nob</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -274,16 +255,13 @@ F041 07 $a nob $2 iso639-3
       <rdamd:P30137>F 05117cam a2200745 i 4500
 F001 041-test07
 F041 0# $a aus $a eng
-F041 7# $a N230 $2 austlang
+F041 #7 $a N230 $2 austlang
 </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test07"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/aus"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/aus + http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -326,16 +304,6 @@ F546 ## $a In Tashelhit and Arabic.
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test08"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/ber"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/ara"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/ber + http://id.loc.gov/vocabulary/languages/ara</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/shi"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/ara"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/shi + http://id.loc.gov/vocabulary/languages/ara</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawo:P10353 rdf:resource="skos:Concept"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="skos:Concept"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="skos:Concept"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="skos:Concept"/><!--rdawo:P10353 = has language of representative expression-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -368,7 +336,7 @@ F546 ## $a In Tashelhit and Arabic.
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 02522cam a2200541 a 4500
 F001 041-test09
-F041 0# $a ukr $a eng
+F041 07 $a ukr $a eng
 F546 ## $a Text primarily in Ukrainian with one article in English.
 </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
@@ -376,9 +344,6 @@ F546 ## $a Text primarily in Ukrainian with one article in English.
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test09"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/ukr"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/ukr + http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -419,8 +384,6 @@ F546 ## $a In Uzbek, Russian and Hindi.
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test10"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/uzn"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/uzn</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -461,12 +424,6 @@ F546 ## $a Chiefly in French and English; film clips in French, English, Italian
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test11"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/mis"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/mis</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of subtitles: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -507,13 +464,6 @@ F546 ## $a Sung in Latin.
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test12"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/lat"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/lat"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/ger"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/lat</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/lat + http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/ger</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -554,9 +504,6 @@ F546 ## $a English and Spanish texts are bound back-to-back and inverted.
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test13"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/spa"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/spa</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -596,8 +543,6 @@ F041 1# $a eng $k urd $h ara
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test14"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -636,8 +581,6 @@ F041 1# $a eng $k fre $h fro
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test15"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -677,10 +620,6 @@ F546 ## $a Text in English, German, and French.
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test16"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/ger"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/ger + http://id.loc.gov/vocabulary/languages/fre</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -721,10 +660,6 @@ F500 ## $a Program notes in English, French and German, and texts with English, 
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test17"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/lat"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/lat</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of librettos: http://id.loc.gov/vocabulary/languages/lat + http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/ger</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of accompanying material other than librettos and transcripts: http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/ger</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -766,10 +701,6 @@ F546 ## $a Sung in English translation by Jerry Hadley.
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test18"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of librettos: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of accompanying material other than librettos and transcripts: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -811,10 +742,6 @@ F546 ## $a Table of contents and summary also in Polish.
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test19"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of summary or abstract: http://id.loc.gov/vocabulary/languages/pol</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of table of contents: http://id.loc.gov/vocabulary/languages/pol</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -857,9 +784,6 @@ F546 ## $b Staff notation;  $b Chord symbols.
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test20"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of table of contents: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -902,9 +826,6 @@ F041 0# $a eng $f re
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test21"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of table of contents: </rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -944,9 +865,6 @@ F500 ## $a Silent film with German intertitles and piano accompaniment.
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test22"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/zxx"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/zxx</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of intertitle: http://id.loc.gov/vocabulary/languages/ger</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -987,9 +905,6 @@ F546 ## $a Romanized Teleut and Turkish; translated from Teleut and Russian.
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test23"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/tut"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/tur"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/tut + http://id.loc.gov/vocabulary/languages/tur</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -1030,9 +945,6 @@ F546 ## $a English and Arabic.
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test24"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/ara"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/ara</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
@@ -1075,31 +987,6 @@ F546 ## $a Blu-ray: English soundtrack and dubbed soundtracks in Czech, French, 
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc041-test25"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/spa"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>DVD has Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/spa</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>DVD has Language of subtitles: http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/spa</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>DVD has Language of captions: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/spa</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of subtitles: http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/spa</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of captions: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/cze"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/hin"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/hun"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/pol"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/por"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/spa"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10330>Blu-ray has Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/cze + http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/hin + http://id.loc.gov/vocabulary/languages/hun + http://id.loc.gov/vocabulary/languages/pol + http://id.loc.gov/vocabulary/languages/por + http://id.loc.gov/vocabulary/languages/spa</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Blu-ray has Language of subtitles: http://id.loc.gov/vocabulary/languages/cze + http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/hun + http://id.loc.gov/vocabulary/languages/pol + http://id.loc.gov/vocabulary/languages/por + http://id.loc.gov/vocabulary/languages/rum + http://id.loc.gov/vocabulary/languages/rus + http://id.loc.gov/vocabulary/languages/spa</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Blu-ray has Language of captions: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Blu-ray has Language of accessible audio: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/cze + http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/hin + http://id.loc.gov/vocabulary/languages/hun + http://id.loc.gov/vocabulary/languages/pol + http://id.loc.gov/vocabulary/languages/por + http://id.loc.gov/vocabulary/languages/spa</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of subtitles: http://id.loc.gov/vocabulary/languages/cze + http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/hun + http://id.loc.gov/vocabulary/languages/pol + http://id.loc.gov/vocabulary/languages/por + http://id.loc.gov/vocabulary/languages/rum + http://id.loc.gov/vocabulary/languages/rus + http://id.loc.gov/vocabulary/languages/spa</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of captions: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <rdawd:P10330>Language of accessible audio: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
