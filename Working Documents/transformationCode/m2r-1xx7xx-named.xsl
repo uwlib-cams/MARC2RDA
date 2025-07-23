@@ -33,6 +33,45 @@
     <xsl:import href="m2r-functions.xsl"/>
     <xsl:import href="m2r-iris.xsl"/>
     <xsl:import href="getmarc.xsl"/>
+
+    <!-- 740 -->
+    <xsl:template name="F740-xx-ldrtestite" expand-text="yes">
+        <xsl:variable name="leader" select="ancestor::marc:record/marc:leader"/>
+        <xsl:variable name="ldr06" select="substring($leader, 7, 1)"/>
+        <xsl:variable name="ldr07" select="substring($leader, 8, 1)"/>
+        <xsl:variable name="ldr08" select="substring($leader, 9, 1)"/>
+        <xsl:if test="$ldr06 = ('a','c','d','e','f','i','j','m','t') or 
+            ($ldr06 = 'a' and $ldr07 = ('a','c','d','m')) or 
+            $ldr08 = 'a'">
+            <rdaid:P40069>
+                <xsl:value-of select="string-join(marc:subfield[@code = ('a','n','p')], ' ')"/>
+            </rdaid:P40069>
+        </xsl:if>
+        <xsl:if test="$ldr06 = ('g', 'k', 'o', 'r')">            
+            <rdaid:P40086>
+                <xsl:value-of select="string-join(marc:subfield[@code = ('a','n','p')], ' ')"/>
+            </rdaid:P40086>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="F740-xx-ldrtestman">
+        <xsl:variable name="leader" select="ancestor::marc:record/marc:leader"/>
+        <xsl:variable name="ldr06" select="substring($leader, 7, 1)"/>
+        <xsl:variable name="ldr07" select="substring($leader, 8, 1)"/>
+        <xsl:variable name="ldr08" select="substring($leader, 9, 1)"/>
+        <xsl:if test="$ldr06 = ('a','c','d','e','f','i','j','m','t') or 
+            ($ldr06 = 'a' and $ldr07 = ('a','c','d','m')) or 
+            $ldr08 = 'a'">
+            <rdamd:P30265>
+                <xsl:value-of select="string-join(marc:subfield[@code = ('a','n','p')], ' ')"/>
+            </rdamd:P30265>
+        </xsl:if>
+        <xsl:if test="$ldr06 = ('g', 'k', 'o', 'r')">            
+            <rdamd:P30128>
+                <xsl:value-of select="string-join(marc:subfield[@code = ('a','n','p')], ' ')"/>
+            </rdamd:P30128>
+        </xsl:if>     
+    </xsl:template>
     
     <!-- 754 --> 
     <xsl:template name="F754-xx-acdxz" expand-text="yes">
