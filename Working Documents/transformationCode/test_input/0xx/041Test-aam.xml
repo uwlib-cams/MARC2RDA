@@ -8,8 +8,14 @@
         <marc:leader>01101cam 22002411a 4500</marc:leader>
         <marc:controlfield tag="001">041-test01</marc:controlfield>
         <!-- <marc:controlfield tag="008">820820s1900 pauacf 000 0 eng</marc:controlfield> -->
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test 1</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="041" ind1="1" ind2=" ">
             <marc:subfield code="a">eng</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -18,12 +24,18 @@
         <marc:leader>00845cam 2200277 a 4500</marc:leader>
         <marc:controlfield tag="001">041-test02</marc:controlfield>
         <!-- <marc:controlfield tag="008">990621s1999 gw ab 000 0 eng d</marc:controlfield> -->
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test 2</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="041" ind1="1" ind2=" ">
             <marc:subfield code="a">eng</marc:subfield>
             <marc:subfield code="h">fre</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="546" ind1=" " ind2=" ">
             <marc:subfield code="a">Translated from the French.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -32,12 +44,18 @@
         <marc:leader>00845cam 2200277 a 4500</marc:leader>
         <marc:controlfield tag="001">041-test03</marc:controlfield>
         <!-- <marc:controlfield tag="008">990621s1999 gw ab 000 0 fre d</marc:controlfield> -->
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test 3</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="041" ind1="1" ind2=" ">
             <marc:subfield code="a">fre</marc:subfield>
             <marc:subfield code="k">spa</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="546" ind1=" " ind2=" ">
             <marc:subfield code="a">Translated from the French.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -46,12 +64,18 @@
         <marc:leader>04108cas 2200613 a 4500</marc:leader>
         <marc:controlfield tag="001">041-test04</marc:controlfield>
         <!-- <marc:controlfield tag="008">000420c199u9999oncuu q f0 0eng c</marc:controlfield> -->
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test 4</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="041" ind1="0" ind2=" ">
             <marc:subfield code="a">eng</marc:subfield>
             <marc:subfield code="a">fre</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="546" ind1=" " ind2=" ">
             <marc:subfield code="a">In English and French.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -60,6 +84,9 @@
         <marc:leader>05097cjm a22011777i 4500</marc:leader>
         <marc:controlfield tag="001">041-test05</marc:controlfield>
         <!-- <marc:controlfield tag="008">220914p20222021xr munn o n mul d</marc:controlfield> -->
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test 5</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="041" ind1="0" ind2=" ">
             <marc:subfield code="d">que</marc:subfield>
             <marc:subfield code="d">cze</marc:subfield>
@@ -74,6 +101,9 @@
         <marc:datafield tag="546" ind1=" " ind2=" ">
             <marc:subfield code="a">Vocal works sung variously in Quechua, Czech, and Spanish.</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
+        </marc:datafield>
     </marc:record>
     
     <!-- Test 6: 008Lang is equivalent of 041$a -->
@@ -81,9 +111,15 @@
         <marc:leader>02426cam a2200433 i 4500</marc:leader>
         <marc:controlfield tag="001">041-test06</marc:controlfield>
         <!-- <marc:controlfield tag="008">220402t20212021no a b 000 0 nor d</marc:controlfield> -->
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test 6</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="041" ind1="0" ind2="7">
             <marc:subfield code="a">nob</marc:subfield>
             <marc:subfield code="2">iso639-3</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -92,6 +128,9 @@
         <marc:leader>05117cam a2200745 i 4500</marc:leader>
         <marc:controlfield tag="001">041-test07</marc:controlfield>
         <!-- <marc:controlfield tag="008">220513t20222022vaua bc 000 0 eng d</marc:controlfield> -->
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test 7</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="041" ind1="0" ind2=" ">
             <marc:subfield code="a">aus</marc:subfield>
             <marc:subfield code="a">eng</marc:subfield>
@@ -100,6 +139,9 @@
             <marc:subfield code="a">N230</marc:subfield>
             <marc:subfield code="2">austlang</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
+        </marc:datafield>
     </marc:record>
     
     <!-- Test 8: $2 = iso + $2 not iso -->
@@ -107,6 +149,9 @@
         <marc:leader>02461cam a2200553 i 4500</marc:leader>
         <marc:controlfield tag="001">041-test08</marc:controlfield>
         <!-- <marc:controlfield tag="008">230302s1996 mr a 000 pdber d</marc:controlfield> -->
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test 8</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="041" ind1="0" ind2=" ">
             <marc:subfield code="a">ber</marc:subfield>
             <marc:subfield code="a">ara</marc:subfield>
@@ -129,6 +174,9 @@
         <marc:datafield tag="546" ind1=" " ind2=" ">
             <marc:subfield code="a">In Tashelhit and Arabic.</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
+        </marc:datafield>
     </marc:record>
     
     <!-- Test 9: I2=not # not $2 -->
@@ -136,12 +184,18 @@
         <marc:leader>02522cam a2200541 a 4500</marc:leader>
         <marc:controlfield tag="001">041-test09</marc:controlfield>
         <!-- <marc:controlfield tag="008">991117s1999 un af b 000 0bukro</marc:controlfield> -->
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test 9</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="041" ind1="0" ind2="7">
             <marc:subfield code="a">ukr</marc:subfield>
             <marc:subfield code="a">eng</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="546" ind1=" " ind2=" ">
             <marc:subfield code="a">Text primarily in Ukrainian with one article in English.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -150,12 +204,18 @@
         <marc:leader>03522njm a2200589 i 4500</marc:leader>
         <marc:controlfield tag="001">041-test10</marc:controlfield>
         <!-- <marc:controlfield tag="008">240215p19881988uz ppnn n uzb d</marc:controlfield> -->
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test 10</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="041" ind1="0" ind2="7">
             <marc:subfield code="d">uzn</marc:subfield>
             <marc:subfield code="2">iso639-3</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="546" ind1=" " ind2=" ">
             <marc:subfield code="a">In Uzbek, Russian and Hindi.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -164,6 +224,9 @@
         <marc:leader>06186cgm a2200985 i 4500</marc:leader>
         <marc:controlfield tag="001">041-test11</marc:controlfield>
         <!-- <marc:controlfield tag="008">221003p20002000fr 061 o vlfre d</marc:controlfield> -->
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test 11</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="041" ind1="0" ind2=" ">
             <marc:subfield code="a">fre</marc:subfield>
             <marc:subfield code="a">eng</marc:subfield>
@@ -173,6 +236,9 @@
         <marc:datafield tag="546" ind1=" " ind2=" ">
             <marc:subfield code="a">Chiefly in French and English; film clips in French, English, Italian, German, Tunisian Arabic, Wolof, Hindi; with English subtitles in non-English portions.</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
+        </marc:datafield>
     </marc:record>
     
     <!-- Test 12: $a and $d (different) -->
@@ -180,6 +246,9 @@
         <marc:leader>02838cjm a22007097i 4500</marc:leader>
         <marc:controlfield tag="001">041-test12</marc:controlfield>
         <!-- <marc:controlfield tag="008">230208s2010 gw rqnn o n lat d</marc:controlfield> -->
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test 12</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="041" ind1="0" ind2=" ">
             <marc:subfield code="a">lat</marc:subfield>
             <marc:subfield code="d">lat</marc:subfield>
@@ -190,6 +259,9 @@
         <marc:datafield tag="546" ind1=" " ind2=" ">
             <marc:subfield code="a">Sung in Latin.</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
+        </marc:datafield>
     </marc:record>
     
     <!-- Test 13: Multiple codes in a single subfield -->
@@ -197,12 +269,18 @@
         <marc:leader>03116nam 2200481 i 4500</marc:leader>
         <marc:controlfield tag="001">041-test13</marc:controlfield>
         <!-- <marc:controlfield tag="008">000223s2000 nmua s000 1 eng</marc:controlfield> -->
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test 13</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="041" ind1="1" ind2=" ">
             <marc:subfield code="a">engspa</marc:subfield>
             <marc:subfield code="h">spa</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="546" ind1=" " ind2=" ">
             <marc:subfield code="a">English and Spanish texts are bound back-to-back and inverted.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -211,10 +289,16 @@
         <marc:leader>00879cam 2200253 a 4500</marc:leader>
         <marc:controlfield tag="001">041-test14</marc:controlfield>
         <!-- <marc:controlfield tag="008">000120s1994 ku b 001 0 eng</marc:controlfield> -->
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test 14</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="041" ind1="1" ind2=" ">
             <marc:subfield code="a">eng</marc:subfield>
             <marc:subfield code="k">urd</marc:subfield>
             <marc:subfield code="h">ara</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -223,10 +307,16 @@
         <marc:leader>02070cam 2200385 a 4500</marc:leader>
         <marc:controlfield tag="001">041-test15</marc:controlfield>
         <!-- <marc:controlfield tag="008">810403s1931 nyua 000 0 eng</marc:controlfield> -->
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test 15</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="041" ind1="1" ind2=" ">
             <marc:subfield code="a">eng</marc:subfield>
             <marc:subfield code="k">fre</marc:subfield>
             <marc:subfield code="h">fro</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -235,6 +325,9 @@
         <marc:leader>000417s2000 fr a 000 0 eng</marc:leader>
         <marc:controlfield tag="001">041-test16</marc:controlfield>
         <!-- <marc:controlfield tag="008">000417s2000 fr a 000 0 eng</marc:controlfield> -->
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test 16</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="041" ind1="1" ind2=" ">
             <marc:subfield code="a">eng</marc:subfield>
             <marc:subfield code="a">ger</marc:subfield>
@@ -244,6 +337,9 @@
         <marc:datafield tag="546" ind1=" " ind2=" ">
             <marc:subfield code="a">Text in English, German, and French.</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
+        </marc:datafield>
     </marc:record>
     
     <!-- Test 17: $e (libretto); 008 Lang blank -->
@@ -251,6 +347,9 @@
         <marc:leader>01964cjm 22004691a 4500</marc:leader>
         <marc:controlfield tag="001">041-test17</marc:controlfield>
         <!-- <marc:controlfield tag="008">000412s1999 enkmon dfhi d</marc:controlfield> -->
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test 17</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="041" ind1="1" ind2=" ">
             <marc:subfield code="d">lat</marc:subfield>
             <marc:subfield code="e">latengfreger</marc:subfield>
@@ -260,6 +359,9 @@
         <marc:datafield tag="500" ind1=" " ind2=" ">
             <marc:subfield code="a">Program notes in English, French and German, and texts with English, French and German translations in container.</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
+        </marc:datafield>
     </marc:record>
     
     <!-- Test 18: $g (Language of accompanying material other than librettos and transcripts) -->
@@ -267,6 +369,9 @@
         <marc:leader>01945njm 2200493 a 4500</marc:leader>
         <marc:controlfield tag="001">041-test18</marc:controlfield>
         <!-- <marc:controlfield tag="008">961115p19961995ohuopn defi eng d</marc:controlfield> -->
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test 18</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="041" ind1="1" ind2=" ">
             <marc:subfield code="d">eng</marc:subfield>
             <marc:subfield code="e">eng</marc:subfield>
@@ -279,6 +384,9 @@
         <marc:datafield tag="546" ind1=" " ind2=" ">
             <marc:subfield code="a">Sung in English translation by Jerry Hadley.</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
+        </marc:datafield>
     </marc:record>
     
     <!-- Test 19: $f (Language of table of contents) -->
@@ -286,6 +394,9 @@
         <marc:leader>01197nam 2200349 i 4500</marc:leader>
         <marc:controlfield tag="001">041-test19</marc:controlfield>
         <!-- <marc:controlfield tag="008">190408s2018 pl a b 000 0 eng</marc:controlfield> -->
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test 19</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="041" ind1="0" ind2=" ">
             <marc:subfield code="a">eng</marc:subfield>
             <marc:subfield code="b">pol</marc:subfield>
@@ -294,6 +405,9 @@
         <marc:datafield tag="546" ind1=" " ind2=" ">
             <marc:subfield code="a">Table of contents and summary also in Polish.</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
+        </marc:datafield>
     </marc:record>
     
     <!-- Test 20: $f (Language of table of contents) different -->
@@ -301,6 +415,9 @@
         <marc:leader>01368ncm 2200349 i 4500</marc:leader>
         <marc:controlfield tag="001">041-test20</marc:controlfield>
         <!-- <marc:controlfield tag="008">191107s2017 idusgl| n | eng</marc:controlfield> -->
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test 20</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="041" ind1=" " ind2=" ">
             <marc:subfield code="a">eng</marc:subfield>
             <marc:subfield code="f">eng</marc:subfield>
@@ -315,6 +432,9 @@
             <marc:subfield code="b">Staff notation; </marc:subfield>
             <marc:subfield code="b">Chord symbols.</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
+        </marc:datafield>
     </marc:record>
     
     <!-- Test 21: $f (Language of table of contents) not 546 -->
@@ -322,9 +442,15 @@
         <marc:leader>01646cam 2200361 a 4500</marc:leader>
         <marc:controlfield tag="001">041-test21</marc:controlfield>
         <!-- <marc:controlfield tag="008">070917s2008 dcua b 000 0 eng</marc:controlfield> -->
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test 21</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="041" ind1="0" ind2=" ">
             <marc:subfield code="a">eng</marc:subfield>
             <marc:subfield code="f">re</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -333,6 +459,9 @@
         <marc:leader>03795cgm a2200805 i 4500</marc:leader>
         <marc:controlfield tag="001">041-test22</marc:controlfield>
         <!-- <marc:controlfield tag="008">221107p199u1916xxu051 vlzxx d</marc:controlfield> -->
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test 22</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="041" ind1="1" ind2=" ">
             <marc:subfield code="a">zxx</marc:subfield>
             <marc:subfield code="i">ger</marc:subfield>
@@ -341,6 +470,9 @@
         <marc:datafield tag="500" ind1=" " ind2=" ">
             <marc:subfield code="a">Silent film with German intertitles and piano accompaniment.</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
+        </marc:datafield>
     </marc:record>
     
     <!-- Test 23: Note examples - Romanized Teleut and Turkish -->
@@ -348,6 +480,9 @@
         <marc:leader>02677cam 2200409 i 4500</marc:leader>
         <marc:controlfield tag="001">041-test23</marc:controlfield>
         <!-- <marc:controlfield tag="008">000627s2000 tu bd 001 0 tur d</marc:controlfield> -->
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test 23</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="041" ind1="1" ind2=" ">
             <marc:subfield code="a">tut</marc:subfield>
             <marc:subfield code="a">tur</marc:subfield>
@@ -356,6 +491,9 @@
         <marc:datafield tag="546" ind1=" " ind2=" ">
             <marc:subfield code="a">Romanized Teleut and Turkish; translated from Teleut and Russian.</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
+        </marc:datafield>
     </marc:record>
     
     <!-- Test 24: Note examples - English and Arabic -->
@@ -363,12 +501,18 @@
         <marc:leader>00921cam 2200253 a 4500</marc:leader>
         <marc:controlfield tag="001">041-test24</marc:controlfield>
         <!-- <marc:controlfield tag="008">000922s2002 ctu b 001 0 eng</marc:controlfield> -->
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test 24</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="041" ind1="1" ind2=" ">
             <marc:subfield code="a">engara</marc:subfield>
             <marc:subfield code="h">gerara</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="546" ind1=" " ind2=" ">
             <marc:subfield code="a">English and Arabic.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -377,6 +521,9 @@
         <marc:leader>09942cgm a2201765 i 4500</marc:leader>
         <marc:controlfield tag="001">041-test25</marc:controlfield>
         <!-- <marc:controlfield tag="008">220104t20222022cau155 g vleng d</marc:controlfield> -->
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Test 25</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="041" ind1="1" ind2=" ">
             <marc:subfield code="3">DVD</marc:subfield>
             <marc:subfield code="a">eng</marc:subfield>
@@ -414,6 +561,9 @@
         </marc:datafield>
         <marc:datafield tag="546" ind1=" " ind2=" ">
             <marc:subfield code="a">Blu-ray: English soundtrack and dubbed soundtracks in Czech, French, Hindi, Hungarian, Polish, Portuguese and Spanish soundtracks; with optional Czech, French, Hungarian, Polish, Portuguese, Romanian, Russian or Spanish subtitles.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="979" ind1=" " ind2=" ">
+            <marc:subfield code="a">aam</marc:subfield>
         </marc:datafield>
     </marc:record>
     
