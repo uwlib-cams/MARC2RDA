@@ -1035,12 +1035,13 @@
 
         <!-- Row 46: Map each language code in $d as separate element value when $2 is present but NOT iso -->
         <xsl:if test="marc:subfield[@code = '2'] and not(starts-with(marc:subfield[@code = '2'], 'iso'))">
+            <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
             <xsl:for-each select="marc:subfield[@code = 'd']">
                 <!-- Process multiple 3-letter codes in single subfield -->
                 <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
                 <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
                     <xsl:if test="matches(., '^[a-z]{3}$')">
-                        <rdawo:P10353 rdf:resource="uwf:conceptIRI(marc:subfield[@code = '2'][1], .)"/>
+                        <rdawo:P10353 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                     </xsl:if>
                 </xsl:for-each>
             </xsl:for-each>
@@ -1437,12 +1438,13 @@
 
         <!-- Row 10: Map each language code in $a as separate element value when $2 is present but NOT iso -->
         <xsl:if test="marc:subfield[@code = '2'] and not(starts-with(marc:subfield[@code = '2'], 'iso'))">
+            <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
             <xsl:for-each select="marc:subfield[@code = 'a']">
                 <!-- Process multiple 3-letter codes in single subfield -->
                 <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
                 <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
                     <xsl:if test="matches(., '^[a-z]{3}$')">
-                        <rdaeo:P20006 rdf:resource="uwf:conceptIRI(marc:subfield[@code = '2'][1], .)"/>
+                        <rdaeo:P20006 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                     </xsl:if>
                 </xsl:for-each>
             </xsl:for-each>
@@ -1490,12 +1492,13 @@
 
         <!-- Row 15: Map each language code in $d as separate element value when $2 is present but NOT iso -->
         <xsl:if test="marc:subfield[@code = '2'] and not(starts-with(marc:subfield[@code = '2'], 'iso'))">
+            <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
             <xsl:for-each select="marc:subfield[@code = 'd']">
                 <!-- Process multiple 3-letter codes in single subfield -->
                 <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
                 <xsl:for-each select="tokenize(normalize-space($codes), '\s+')">
                     <xsl:if test="matches(., '^[a-z]{3}$')">
-                        <rdaeo:P20006 rdf:resource="uwf:conceptIRI(marc:subfield[@code = '2'][1], .)"/>
+                        <rdaeo:P20006 rdf:resource="{uwf:conceptIRI($sub2, .)}"/>
                     </xsl:if>
                 </xsl:for-each>
             </xsl:for-each>
