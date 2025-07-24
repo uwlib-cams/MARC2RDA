@@ -712,7 +712,7 @@
                             <!-- RDA Carrier Type Term -->
                             <xsl:when test="document('lookup/rda/RDACarrierType.xml')/rdf:RDF/skos:Concept/key('rdaTerm', $givenTermOrCode)">
                                 <term>
-                                    <xsl:value-of select="document('lookup/rda/RDACarrierType.xml')/rdf:RDF/skos:Concept/key('rdaTerm', $givenTermOrCode)/skos:prefLabel[@xml:lang = 'en']"/>/>
+                                    <xsl:value-of select="document('lookup/rda/RDACarrierType.xml')/rdf:RDF/skos:Concept/key('rdaTerm', $givenTermOrCode)/skos:prefLabel[@xml:lang = 'en']"/>
                                 </term>
                             </xsl:when>
                             <!-- LC Carrier Type Term or Code -->
