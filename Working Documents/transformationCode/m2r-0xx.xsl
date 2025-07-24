@@ -988,7 +988,7 @@
         </xsl:if>
 
         <!-- Row 42: Map each language code in $a as separate element value when Ind2 is not blank and no $2 -->
-        <xsl:if test="not(@ind2 = '7') and not(marc:subfield[@code = '2'])">
+        <xsl:if test="@ind2 = '7' and not(marc:subfield[@code = '2'])">
             <xsl:for-each select="marc:subfield[@code = 'a']">
                 <!-- Process multiple 3-letter codes in single subfield -->
                 <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
@@ -1036,7 +1036,7 @@
         </xsl:if>
 
         <!-- Row 47: Map each language code in $d as separate element value when Ind2 is not blank and no $2 -->
-        <xsl:if test="not(@ind2 = '7') and not(marc:subfield[@code = '2'])">
+        <xsl:if test="@ind2 = '7' and not(marc:subfield[@code = '2'])">
             <xsl:for-each select="marc:subfield[@code = 'd']">
                 <!-- Process multiple 3-letter codes in single subfield -->
                 <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
@@ -1734,7 +1734,7 @@
         </xsl:if>
 
         <!-- Row 11: Map each language code in $a as separate element value when Ind2 is not blank and no $2 -->
-        <xsl:if test="not(@ind2 = '7') and not(marc:subfield[@code = '2'])">
+        <xsl:if test="@ind2 = '7' and not(marc:subfield[@code = '2'])">
             <xsl:for-each select="marc:subfield[@code = 'a']">
                 <!-- Process multiple 3-letter codes in single subfield -->
                 <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
@@ -1782,7 +1782,7 @@
         </xsl:if>
 
         <!-- Row 16: Map each language code in $d as separate element value when Ind2 is not blank and no $2 -->
-        <xsl:if test="not(@ind2 = '7') and not(marc:subfield[@code = '2'])">
+        <xsl:if test="@ind2 = '7' and not(marc:subfield[@code = '2'])">
             <xsl:for-each select="marc:subfield[@code = 'd']">
                 <!-- Process multiple 3-letter codes in single subfield -->
                 <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>

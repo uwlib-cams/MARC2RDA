@@ -31,7 +31,6 @@ F979 ## $a aam
       <rdawd:P10328>Test 1    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawd:P10088>Test 1</rdawd:P10088><!--rdawd:P10088 = has title of work-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10353>eng</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
       <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test1">
@@ -50,7 +49,6 @@ F979 ## $a aam
       <rdaed:P20312>Test 1</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20006>eng</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test1">
@@ -94,7 +92,6 @@ F979 ## $a aam
       <rdawd:P10328>Test 2    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawd:P10088>Test 2</rdawd:P10088><!--rdawd:P10088 = has title of work-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10353>eng</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
       <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test2">
@@ -114,7 +111,6 @@ F979 ## $a aam
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20006>eng</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/fre</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
    </rdf:Description>
@@ -160,7 +156,6 @@ F979 ## $a aam
       <rdawd:P10328>Test 3    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawd:P10088>Test 3</rdawd:P10088><!--rdawd:P10088 = has title of work-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10353>fre</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
       <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/fre</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test3">
@@ -180,7 +175,6 @@ F979 ## $a aam
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20006>fre</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/fre</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20071>Language of intermediate translations: http://id.loc.gov/vocabulary/languages/spa</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
    </rdf:Description>
@@ -227,8 +221,6 @@ F979 ## $a aam
       <rdawd:P10088>Test 4</rdawd:P10088><!--rdawd:P10088 = has title of work-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10353>eng</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
-      <rdawd:P10353>fre</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
       <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/fre</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test4">
@@ -247,8 +239,6 @@ F979 ## $a aam
       <rdaed:P20312>Test 4</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20006>eng</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
-      <rdaed:P20006>fre</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng and http://id.loc.gov/vocabulary/languages/fre</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test4">
@@ -296,9 +286,6 @@ F979 ## $a aam
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/que"/><!--rdawo:P10353 = has language of representative expression-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/cze"/><!--rdawo:P10353 = has language of representative expression-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/spa"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10353>que</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
-      <rdawd:P10353>cze</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
-      <rdawd:P10353>spa</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
       <rdawd:P10330>Language code of sung or spoken text: http://id.loc.gov/vocabulary/languages/que + http://id.loc.gov/vocabulary/languages/cze + http://id.loc.gov/vocabulary/languages/spa</rdawd:P10330><!--rdawd:P10330 = has note on work-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/ces"/><!--rdawo:P10353 = has language of representative expression-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/que"/><!--rdawo:P10353 = has language of representative expression-->
@@ -322,9 +309,6 @@ F979 ## $a aam
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/que"/><!--rdaeo:P20006 = has language of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/cze"/><!--rdaeo:P20006 = has language of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/spa"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20006>que</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
-      <rdaed:P20006>cze</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
-      <rdaed:P20006>spa</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaed:P20071>Language code of sung or spoken text: http://id.loc.gov/vocabulary/languages/que and http://id.loc.gov/vocabulary/languages/cze and http://id.loc.gov/vocabulary/languages/spa</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/ces"/><!--rdaeo:P20006 = has language of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/que"/><!--rdaeo:P20006 = has language of expression-->
@@ -433,8 +417,6 @@ F979 ## $a aam
       <rdawd:P10088>Test 7</rdawd:P10088><!--rdawd:P10088 = has title of work-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/aus"/><!--rdawo:P10353 = has language of representative expression-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10353>aus</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
-      <rdawd:P10353>eng</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
       <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/aus + http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
       <rdawo:P10353 rdf:resource="http://marc2rda.edu/fake/austlang/con#n230"/><!--rdawo:P10353 = has language of representative expression-->
    </rdf:Description>
@@ -454,8 +436,6 @@ F979 ## $a aam
       <rdaed:P20312>Test 7</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/aus"/><!--rdaeo:P20006 = has language of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20006>aus</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
-      <rdaed:P20006>eng</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/aus and http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaeo:P20006 rdf:resource="http://marc2rda.edu/fake/austlang/con#n230"/><!--rdaeo:P20006 = has language of expression-->
    </rdf:Description>
@@ -510,8 +490,6 @@ F979 ## $a aam
       <rdawd:P10088>Test 8</rdawd:P10088><!--rdawd:P10088 = has title of work-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/ber"/><!--rdawo:P10353 = has language of representative expression-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/ara"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10353>ber</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
-      <rdawd:P10353>ara</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
       <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/ber + http://id.loc.gov/vocabulary/languages/ara</rdawd:P10330><!--rdawd:P10330 = has note on work-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/shi"/><!--rdawo:P10353 = has language of representative expression-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/ara"/><!--rdawo:P10353 = has language of representative expression-->
@@ -537,8 +515,6 @@ F979 ## $a aam
       <rdaed:P20312>Test 8</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/ber"/><!--rdaeo:P20006 = has language of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/ara"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20006>ber</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
-      <rdaed:P20006>ara</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/ber and http://id.loc.gov/vocabulary/languages/ara</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/shi"/><!--rdaeo:P20006 = has language of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/iso639-3/ara"/><!--rdaeo:P20006 = has language of expression-->
@@ -613,6 +589,8 @@ F979 ## $a aam
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#test9"/><!--rdawo:P10072 = has manifestation of work-->
       <rdawd:P10328>Test 9    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawd:P10088>Test 9</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawd:P10353>ukr</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
+      <rdawd:P10353>eng</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test9">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -628,6 +606,8 @@ F979 ## $a aam
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#test9"/><!--rdaeo:P20231 = has work expressed-->
       <rdaed:P20310>Test 9 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
       <rdaed:P20312>Test 9</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaed:P20006>ukr</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
+      <rdaed:P20006>eng</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test9">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
@@ -733,10 +713,7 @@ F979 ## $a aam
       <rdawd:P10088>Test 11</rdawd:P10088><!--rdawd:P10088 = has title of work-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdawo:P10353 = has language of representative expression-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10353>fre</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
-      <rdawd:P10353>eng</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/mis"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10353>mis</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
       <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
       <rdawd:P10330>Language code of sung or spoken text: http://id.loc.gov/vocabulary/languages/mis</rdawd:P10330><!--rdawd:P10330 = has note on work-->
       <rdawd:P10330>Language of subtitles: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
@@ -757,10 +734,7 @@ F979 ## $a aam
       <rdaed:P20312>Test 11</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdaeo:P20006 = has language of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20006>fre</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
-      <rdaed:P20006>eng</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/mis"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20006>mis</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/fre and http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20071>Language code of sung or spoken text: http://id.loc.gov/vocabulary/languages/mis</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
    </rdf:Description>
@@ -806,15 +780,10 @@ F979 ## $a aam
       <rdawd:P10328>Test 12    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawd:P10088>Test 12</rdawd:P10088><!--rdawd:P10088 = has title of work-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/lat"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10353>lat</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/lat"/><!--rdawo:P10353 = has language of representative expression-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdawo:P10353 = has language of representative expression-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/ger"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10353>lat</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
-      <rdawd:P10353>eng</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
-      <rdawd:P10353>fre</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
-      <rdawd:P10353>ger</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
       <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/lat</rdawd:P10330><!--rdawd:P10330 = has note on work-->
       <rdawd:P10330>Language code of sung or spoken text: http://id.loc.gov/vocabulary/languages/lat + http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/ger</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
@@ -833,15 +802,10 @@ F979 ## $a aam
       <rdaed:P20310>Test 12 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
       <rdaed:P20312>Test 12</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/lat"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20006>lat</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/lat"/><!--rdaeo:P20006 = has language of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdaeo:P20006 = has language of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/ger"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20006>lat</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
-      <rdaed:P20006>eng</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
-      <rdaed:P20006>fre</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
-      <rdaed:P20006>ger</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/lat</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20071>Language code of sung or spoken text: http://id.loc.gov/vocabulary/languages/lat and http://id.loc.gov/vocabulary/languages/eng and http://id.loc.gov/vocabulary/languages/fre and http://id.loc.gov/vocabulary/languages/ger</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
    </rdf:Description>
@@ -888,8 +852,6 @@ F979 ## $a aam
       <rdawd:P10088>Test 13</rdawd:P10088><!--rdawd:P10088 = has title of work-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/spa"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10353>eng</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
-      <rdawd:P10353>spa</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
       <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/spa</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test13">
@@ -910,8 +872,6 @@ F979 ## $a aam
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/spa"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20006>eng</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
-      <rdaed:P20006>spa</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng and http://id.loc.gov/vocabulary/languages/spa</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/spa</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
    </rdf:Description>
@@ -956,7 +916,6 @@ F979 ## $a aam
       <rdawd:P10328>Test 14    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawd:P10088>Test 14</rdawd:P10088><!--rdawd:P10088 = has title of work-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10353>eng</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
       <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test14">
@@ -977,7 +936,6 @@ F979 ## $a aam
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20006>eng</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/ara</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20071>Language of intermediate translations: http://id.loc.gov/vocabulary/languages/urd</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
@@ -1022,7 +980,6 @@ F979 ## $a aam
       <rdawd:P10328>Test 15    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawd:P10088>Test 15</rdawd:P10088><!--rdawd:P10088 = has title of work-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10353>eng</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
       <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test15">
@@ -1043,7 +1000,6 @@ F979 ## $a aam
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20006>eng</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/fro</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20071>Language of intermediate translations: http://id.loc.gov/vocabulary/languages/fre</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
@@ -1091,9 +1047,6 @@ F979 ## $a aam
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/ger"/><!--rdawo:P10353 = has language of representative expression-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10353>eng</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
-      <rdawd:P10353>ger</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
-      <rdawd:P10353>fre</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
       <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/ger + http://id.loc.gov/vocabulary/languages/fre</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test16">
@@ -1115,9 +1068,6 @@ F979 ## $a aam
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/ger"/><!--rdaeo:P20006 = has language of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20006>eng</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
-      <rdaed:P20006>ger</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
-      <rdaed:P20006>fre</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng and http://id.loc.gov/vocabulary/languages/ger and http://id.loc.gov/vocabulary/languages/fre</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/fre</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
    </rdf:Description>
@@ -1163,7 +1113,6 @@ F979 ## $a aam
       <rdawd:P10328>Test 17    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawd:P10088>Test 17</rdawd:P10088><!--rdawd:P10088 = has title of work-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/lat"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10353>lat</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
       <rdawd:P10330>Language code of sung or spoken text: http://id.loc.gov/vocabulary/languages/lat</rdawd:P10330><!--rdawd:P10330 = has note on work-->
       <rdawd:P10330>Language of librettos: http://id.loc.gov/vocabulary/languages/lat + http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/ger</rdawd:P10330><!--rdawd:P10330 = has note on work-->
       <rdawd:P10330>Language of accompanying material other than librettos and transcripts: http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/ger</rdawd:P10330><!--rdawd:P10330 = has note on work-->
@@ -1185,7 +1134,6 @@ F979 ## $a aam
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/lat"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20006>lat</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaed:P20071>Language code of sung or spoken text: http://id.loc.gov/vocabulary/languages/lat</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/lat</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
    </rdf:Description>
@@ -1232,7 +1180,6 @@ F979 ## $a aam
       <rdawd:P10328>Test 18    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawd:P10088>Test 18</rdawd:P10088><!--rdawd:P10088 = has title of work-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10353>eng</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
       <rdawd:P10330>Language code of sung or spoken text: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
       <rdawd:P10330>Language of librettos: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
       <rdawd:P10330>Language of accompanying material other than librettos and transcripts: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
@@ -1254,7 +1201,6 @@ F979 ## $a aam
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20006>eng</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaed:P20071>Language code of sung or spoken text: http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/ger</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
    </rdf:Description>
@@ -1301,7 +1247,6 @@ F979 ## $a aam
       <rdawd:P10328>Test 19    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawd:P10088>Test 19</rdawd:P10088><!--rdawd:P10088 = has title of work-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10353>eng</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
       <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
       <rdawd:P10330>Language of summary or abstract: http://id.loc.gov/vocabulary/languages/pol</rdawd:P10330><!--rdawd:P10330 = has note on work-->
       <rdawd:P10330>Language of table of contents: http://id.loc.gov/vocabulary/languages/pol</rdawd:P10330><!--rdawd:P10330 = has note on work-->
@@ -1321,7 +1266,6 @@ F979 ## $a aam
       <rdaed:P20310>Test 19 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
       <rdaed:P20312>Test 19</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20006>eng</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test19">
@@ -1368,7 +1312,6 @@ F979 ## $a aam
       <rdawd:P10328>Test 20    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawd:P10088>Test 20</rdawd:P10088><!--rdawd:P10088 = has title of work-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10353>eng</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
       <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
       <rdawd:P10330>Language of table of contents: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
       <rdawd:P10330>Form of notation: Staff notation; </rdawd:P10330><!--rdawd:P10330 = has note on work-->
@@ -1389,7 +1332,6 @@ F979 ## $a aam
       <rdaed:P20310>Test 20 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
       <rdaed:P20312>Test 20</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20006>eng</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20062>Staff notation; </rdaed:P20062><!--rdaed:P20062 = has form of notation-->
       <rdaed:P20062>Chord symbols.</rdaed:P20062><!--rdaed:P20062 = has form of notation-->
@@ -1436,7 +1378,6 @@ F979 ## $a aam
       <rdawd:P10328>Test 21    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawd:P10088>Test 21</rdawd:P10088><!--rdawd:P10088 = has title of work-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10353>eng</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
       <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
       <rdawd:P10330>Language of table of contents: </rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
@@ -1455,7 +1396,6 @@ F979 ## $a aam
       <rdaed:P20310>Test 21 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
       <rdaed:P20312>Test 21</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20006>eng</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#test21">
@@ -1499,7 +1439,6 @@ F979 ## $a aam
       <rdawd:P10328>Test 22    (Aggregating)</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
       <rdawd:P10088>Test 22</rdawd:P10088><!--rdawd:P10088 = has title of work-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/zxx"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10353>zxx</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
       <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/zxx</rdawd:P10330><!--rdawd:P10330 = has note on work-->
       <rdawd:P10330>Language of intertitle: http://id.loc.gov/vocabulary/languages/ger</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
@@ -1520,7 +1459,6 @@ F979 ## $a aam
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/zxx"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20006>zxx</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/zxx</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/rus</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
    </rdf:Description>
@@ -1567,8 +1505,6 @@ F979 ## $a aam
       <rdawd:P10088>Test 23</rdawd:P10088><!--rdawd:P10088 = has title of work-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/tut"/><!--rdawo:P10353 = has language of representative expression-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/tur"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10353>tut</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
-      <rdawd:P10353>tur</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
       <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/tut + http://id.loc.gov/vocabulary/languages/tur</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test23">
@@ -1589,8 +1525,6 @@ F979 ## $a aam
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/tut"/><!--rdaeo:P20006 = has language of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/tur"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20006>tut</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
-      <rdaed:P20006>tur</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/tut and http://id.loc.gov/vocabulary/languages/tur</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/tut and http://id.loc.gov/vocabulary/languages/rus</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
    </rdf:Description>
@@ -1637,8 +1571,6 @@ F979 ## $a aam
       <rdawd:P10088>Test 24</rdawd:P10088><!--rdawd:P10088 = has title of work-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/ara"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10353>eng</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
-      <rdawd:P10353>ara</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
       <rdawd:P10330>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/ara</rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#test24">
@@ -1659,8 +1591,6 @@ F979 ## $a aam
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/ara"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20006>eng</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
-      <rdaed:P20006>ara</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng and http://id.loc.gov/vocabulary/languages/ara</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/ger and http://id.loc.gov/vocabulary/languages/ara</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
    </rdf:Description>
@@ -1710,9 +1640,6 @@ F979 ## $a aam
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdawo:P10353 = has language of representative expression-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdawo:P10353 = has language of representative expression-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/spa"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10353>eng</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
-      <rdawd:P10353>fre</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
-      <rdawd:P10353>spa</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
       <rdawd:P10330>DVD has Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/spa</rdawd:P10330><!--rdawd:P10330 = has note on work-->
       <rdawd:P10330>DVD has Language of subtitles: http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/spa</rdawd:P10330><!--rdawd:P10330 = has note on work-->
       <rdawd:P10330>DVD has Language of captions: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
@@ -1727,14 +1654,6 @@ F979 ## $a aam
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/pol"/><!--rdawo:P10353 = has language of representative expression-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/por"/><!--rdawo:P10353 = has language of representative expression-->
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/spa"/><!--rdawo:P10353 = has language of representative expression-->
-      <rdawd:P10353>eng</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
-      <rdawd:P10353>cze</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
-      <rdawd:P10353>fre</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
-      <rdawd:P10353>hin</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
-      <rdawd:P10353>hun</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
-      <rdawd:P10353>pol</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
-      <rdawd:P10353>por</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
-      <rdawd:P10353>spa</rdawd:P10353><!--rdawd:P10353 = has language of representative expression-->
       <rdawd:P10330>Blu-ray has Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng + http://id.loc.gov/vocabulary/languages/cze + http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/hin + http://id.loc.gov/vocabulary/languages/hun + http://id.loc.gov/vocabulary/languages/pol + http://id.loc.gov/vocabulary/languages/por + http://id.loc.gov/vocabulary/languages/spa</rdawd:P10330><!--rdawd:P10330 = has note on work-->
       <rdawd:P10330>Blu-ray has Language of subtitles: http://id.loc.gov/vocabulary/languages/cze + http://id.loc.gov/vocabulary/languages/fre + http://id.loc.gov/vocabulary/languages/hun + http://id.loc.gov/vocabulary/languages/pol + http://id.loc.gov/vocabulary/languages/por + http://id.loc.gov/vocabulary/languages/rum + http://id.loc.gov/vocabulary/languages/rus + http://id.loc.gov/vocabulary/languages/spa</rdawd:P10330><!--rdawd:P10330 = has note on work-->
       <rdawd:P10330>Blu-ray has Language of captions: http://id.loc.gov/vocabulary/languages/eng</rdawd:P10330><!--rdawd:P10330 = has note on work-->
@@ -1763,9 +1682,6 @@ F979 ## $a aam
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdaeo:P20006 = has language of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/><!--rdaeo:P20006 = has language of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/spa"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20006>eng</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
-      <rdaed:P20006>fre</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
-      <rdaed:P20006>spa</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng and http://id.loc.gov/vocabulary/languages/fre and http://id.loc.gov/vocabulary/languages/spa</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20331>Translation</rdaed:P20331><!--rdaed:P20331 = has category of expression-->
@@ -1778,14 +1694,6 @@ F979 ## $a aam
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/pol"/><!--rdaeo:P20006 = has language of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/por"/><!--rdaeo:P20006 = has language of expression-->
       <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/spa"/><!--rdaeo:P20006 = has language of expression-->
-      <rdaed:P20006>eng</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
-      <rdaed:P20006>cze</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
-      <rdaed:P20006>fre</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
-      <rdaed:P20006>hin</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
-      <rdaed:P20006>hun</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
-      <rdaed:P20006>pol</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
-      <rdaed:P20006>por</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
-      <rdaed:P20006>spa</rdaed:P20006><!--rdaed:P20006 = has language of expression-->
       <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng and http://id.loc.gov/vocabulary/languages/cze and http://id.loc.gov/vocabulary/languages/fre and http://id.loc.gov/vocabulary/languages/hin and http://id.loc.gov/vocabulary/languages/hun and http://id.loc.gov/vocabulary/languages/pol and http://id.loc.gov/vocabulary/languages/por and http://id.loc.gov/vocabulary/languages/spa</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
       <rdaed:P20071>Language of original: http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
    </rdf:Description>
