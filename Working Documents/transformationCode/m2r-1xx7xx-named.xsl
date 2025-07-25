@@ -430,17 +430,12 @@
             @code = 'y' or @code = 'z']" />
         
         <xsl:if test="$subfields">
-            <xsl:text>[Has equivalent]: </xsl:text>
+            <xsl:text>Has equivalent: </xsl:text>
             <xsl:for-each select="$subfields">
                 <xsl:value-of select="."/>
-                <xsl:choose>
-                    <xsl:when test="position() != last()">
-                        <xsl:text>; </xsl:text>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:text>: </xsl:text>
-                    </xsl:otherwise>
-                </xsl:choose>
+                <xsl:if test="position() != last()">
+                    <xsl:text> </xsl:text>
+                </xsl:if>
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
@@ -461,14 +456,9 @@
             <xsl:text>On carrier unit with: </xsl:text>
             <xsl:for-each select="$subfields">
                 <xsl:value-of select="."/>
-                <xsl:choose>
-                    <xsl:when test="position() != last()">
-                        <xsl:text>; </xsl:text>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:text>: </xsl:text>
-                    </xsl:otherwise>
-                </xsl:choose>
+                <xsl:if test="position() != last()">
+                    <xsl:text> </xsl:text>
+                </xsl:if>
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
@@ -487,17 +477,12 @@
                 @code = 'y' or @code = 'z']" />
             
             <xsl:if test="$subfields">
-                <xsl:text>[Is continuation of]: </xsl:text>
+                <xsl:text>Is continuation of: </xsl:text>
                 <xsl:for-each select="$subfields">
                     <xsl:value-of select="."/>
-                    <xsl:choose>
-                        <xsl:when test="position() != last()">
-                            <xsl:text>; </xsl:text>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:text>: </xsl:text>
-                        </xsl:otherwise>
-                    </xsl:choose>
+                    <xsl:if test="position() != last()">
+                        <xsl:text> </xsl:text>
+                    </xsl:if>
                 </xsl:for-each>
             </xsl:if>
         </xsl:if>
@@ -519,17 +504,12 @@
                 @code = 'y' or @code = 'z']" />
             
             <xsl:if test="$subfields">
-                <xsl:text>[Is continued by]: </xsl:text>
+                <xsl:text>Is continued by: </xsl:text>
                 <xsl:for-each select="$subfields">
                     <xsl:value-of select="."/>
-                    <xsl:choose>
-                        <xsl:when test="position() != last()">
-                            <xsl:text>; </xsl:text>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:text>: </xsl:text>
-                        </xsl:otherwise>
-                    </xsl:choose>
+                    <xsl:if test="position() != last()">
+                        <xsl:text> </xsl:text>
+                    </xsl:if>
                 </xsl:for-each>
             </xsl:if>
         </xsl:if>
@@ -551,14 +531,9 @@
             <xsl:text>Has source consulted: </xsl:text>
             <xsl:for-each select="$subfields">
                 <xsl:value-of select="."/>
-                <xsl:choose>
-                    <xsl:when test="position() != last()">
-                        <xsl:text>; </xsl:text>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:text>: </xsl:text>
-                    </xsl:otherwise>
-                </xsl:choose>
+                <xsl:if test="position() != last()">
+                    <xsl:text> </xsl:text>
+                </xsl:if>
             </xsl:for-each>
         </xsl:if>
     </xsl:template>    
@@ -576,17 +551,12 @@
             @code = 'y' or @code = 'z']" />
         
         <xsl:if test="$subfields">
-            <xsl:text>[Related resource]: </xsl:text>
+            <xsl:text>Related resource: </xsl:text>
             <xsl:for-each select="$subfields">
                 <xsl:value-of select="."/>
-                <xsl:choose>
-                    <xsl:when test="position() != last()">
-                        <xsl:text>; </xsl:text>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:text>: </xsl:text>
-                    </xsl:otherwise>
-                </xsl:choose>
+                <xsl:if test="position() != last()">
+                    <xsl:text> </xsl:text>
+                </xsl:if>
             </xsl:for-each>
         </xsl:if>
     </xsl:template>    
