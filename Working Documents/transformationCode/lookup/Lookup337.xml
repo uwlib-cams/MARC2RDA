@@ -17,7 +17,7 @@
     <rdaCurie>rdamt:1003</rdaCurie>
   </entry>
   <entry>
-    <locCode></locCode>
+    <locCode>h</locCode>
     <locTerm>microform</locTerm>
     <locURI>http://id.loc.gov/vocabulary/mediaTypes/h</locURI>
     <rdaTerm>microform</rdaTerm>
