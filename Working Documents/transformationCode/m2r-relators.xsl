@@ -1329,7 +1329,7 @@
     <xsl:template name="FX1X-xx-n">
         <xsl:for-each select="marc:subfield[@code = 'n'][not(preceding-sibling::marc:subfield[@code = 't'])]">
             <rdaad:P50019>
-                <xsl:value-of select="."/>
+                <xsl:value-of select="translate(., '():', '') => normalize-space()"/>
             </rdaad:P50019>
         </xsl:for-each>
     </xsl:template>
@@ -1341,7 +1341,7 @@
             <xsl:value-of select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'n'] | marc:subfield[@code = 'p']"/>
         </xsl:variable>
         <rdawd:P10088>
-            <xsl:value-of select="uwf:stripEndPunctuation($title)"/>
+            <xsl:value-of select="uwf:stripEndPunctuation($title) => replace(' ;\s*$', '') => normalize-space()"/>
         </rdawd:P10088>
     </xsl:template>
     

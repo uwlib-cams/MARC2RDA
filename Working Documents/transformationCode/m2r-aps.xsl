@@ -1025,7 +1025,7 @@
                         | $field/marc:subfield[@code = 't']"
                         separator=" "/>
                 </xsl:variable>
-                <xsl:value-of select="uwf:stripEndPunctuation($ap)"/>
+                <xsl:value-of select="uwf:stripEndPunctuation($ap) => replace(' ;\s*$', '') => normalize-space()"/>
             </xsl:when>
             <xsl:when test="$field/@tag = '440'
                 or ($field/@tag = '880' and starts-with($field/marc:subfield[@code = '6'], '440'))">
