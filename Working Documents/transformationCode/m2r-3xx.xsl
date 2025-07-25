@@ -200,7 +200,7 @@
         | marc:datafield[@tag = '337'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '337']
         | marc:datafield[@tag = '338'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '338']" 
         mode="man">
-        <xsl:call-template name="getmarc"/>
+        <!--<xsl:call-template name="getmarc"/>-->
         
         <xsl:variable name="sub3" select="marc:subfield[@code = '3']"/>
         
