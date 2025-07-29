@@ -14,11 +14,11 @@ import pandas as pd
 #6. Go to git repo and manually add, commit, push
 
 # downloadPath e.g. /mnt/c/Users/cpayn/Downloads/drive-download-20240522T012037Z-001.zip or c:\Users\cpayn\Downloads\drive-download-20240522T012037Z-001.zip
-downloadPath = input('''Enter full path to downloaded .xslx folder (this should end in .zip) 
+downloadPath = input(r'''Enter full path to downloaded .xslx folder (this should end in .zip) 
                      e.g. c:\Users\cpayn\Downloads\drive-download-20240522T012037Z-001.zip :
                      ''')
 # gitRepo e.g. /mnt/c/move/linked_data/MARC2RDA or c:\Move\linked_data\MARC2RDA
-gitRepoInput = input('''Enter full path to your local copy of the MARC2RDA GitHub Repo (this should end in /MARC2RDA)
+gitRepoInput = input(r'''Enter full path to your local copy of the MARC2RDA GitHub Repo (this should end in /MARC2RDA)
                      e.g. c:\Move\linked_data\MARC2RDA :
                ''')
 
@@ -29,7 +29,7 @@ gitRepo = gitRepoInput + "/Working Documents/Draft Field By Field Spreadsheets/c
 
 # check that input paths for downloadPath and gitRepo exist
 if not(os.path.exists(downloadPath)):
-    print("Please doublecheck path to .xlsx folder and rerun.")
+    print("Please doublecheck path to .xlsx folder and rerun. Remember not to include quotes in the filepaths.")
     exit()
 
 if not(os.path.exists(gitRepo)):
