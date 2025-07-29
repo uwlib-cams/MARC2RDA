@@ -1,78 +1,87 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,0,Document,Undefined,#,Undefined,,,a,Security classification (NR),,,,,,,,,,,,,
-1,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,1,Title,Undefined,#,Undefined,,,a,Security classification (NR),,,,,,,,,,,,,
-2,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,2,Abstract,Undefined,#,Undefined,,,a,Security classification (NR),,,,,,,,,,,,,
-3,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,3,Contents note,Undefined,#,Undefined,,,a,Security classification (NR),,,,,,,,,,,,,
-4,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,4,Author,Undefined,#,Undefined,,,a,Security classification (NR),,,,,,,,,,,,,
-5,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,5,Record,Undefined,#,Undefined,,,a,Security classification (NR),,,,,,,,,,,,,
-6,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,8,Other element,Undefined,#,Undefined,,,a,Security classification (NR),,,,,,,,,,,,,
-7,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,0,Document,Undefined,#,Undefined,,,b,Handling instructions (R),,,,,,,,,,,,,
-8,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,1,Title,Undefined,#,Undefined,,,b,Handling instructions (R),,,,,,,,,,,,,
-9,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,2,Abstract,Undefined,#,Undefined,,,b,Handling instructions (R),,,,,,,,,,,,,
-10,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,3,Contents note,Undefined,#,Undefined,,,b,Handling instructions (R),,,,,,,,,,,,,
-11,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,4,Author,Undefined,#,Undefined,,,b,Handling instructions (R),,,,,,,,,,,,,
-12,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,5,Record,Undefined,#,Undefined,,,b,Handling instructions (R),,,,,,,,,,,,,
-13,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,8,Other element,Undefined,#,Undefined,,,b,Handling instructions (R),,,,,,,,,,,,,
-14,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,0,Document,Undefined,#,Undefined,,,c,External dissemination information (R),,,,,,,,,,,,,
-15,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,1,Title,Undefined,#,Undefined,,,c,External dissemination information (R),,,,,,,,,,,,,
-16,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,2,Abstract,Undefined,#,Undefined,,,c,External dissemination information (R),,,,,,,,,,,,,
-17,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,3,Contents note,Undefined,#,Undefined,,,c,External dissemination information (R),,,,,,,,,,,,,
-18,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,4,Author,Undefined,#,Undefined,,,c,External dissemination information (R),,,,,,,,,,,,,
-19,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,5,Record,Undefined,#,Undefined,,,c,External dissemination information (R),,,,,,,,,,,,,
-20,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,8,Other element,Undefined,#,Undefined,,,c,External dissemination information (R),,,,,,,,,,,,,
-21,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,0,Document,Undefined,#,Undefined,,,d,Downgrading or declassification event (NR),,,,,,,,,,,,,
-22,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,1,Title,Undefined,#,Undefined,,,d,Downgrading or declassification event (NR),,,,,,,,,,,,,
-23,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,2,Abstract,Undefined,#,Undefined,,,d,Downgrading or declassification event (NR),,,,,,,,,,,,,
-24,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,3,Contents note,Undefined,#,Undefined,,,d,Downgrading or declassification event (NR),,,,,,,,,,,,,
-25,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,4,Author,Undefined,#,Undefined,,,d,Downgrading or declassification event (NR),,,,,,,,,,,,,
-26,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,5,Record,Undefined,#,Undefined,,,d,Downgrading or declassification event (NR),,,,,,,,,,,,,
-27,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,8,Other element,Undefined,#,Undefined,,,d,Downgrading or declassification event (NR),,,,,,,,,,,,,
-28,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,0,Document,Undefined,#,Undefined,,,e,Classification system (NR),,,,,,,,,,,,,
-29,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,1,Title,Undefined,#,Undefined,,,e,Classification system (NR),,,,,,,,,,,,,
-30,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,2,Abstract,Undefined,#,Undefined,,,e,Classification system (NR),,,,,,,,,,,,,
-31,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,3,Contents note,Undefined,#,Undefined,,,e,Classification system (NR),,,,,,,,,,,,,
-32,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,4,Author,Undefined,#,Undefined,,,e,Classification system (NR),,,,,,,,,,,,,
-33,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,5,Record,Undefined,#,Undefined,,,e,Classification system (NR),,,,,,,,,,,,,
-34,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,8,Other element,Undefined,#,Undefined,,,e,Classification system (NR),,,,,,,,,,,,,
-35,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,0,Document,Undefined,#,Undefined,,,f,Country of origin code (NR),,,,,,,,,,,,,
-36,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,1,Title,Undefined,#,Undefined,,,f,Country of origin code (NR),,,,,,,,,,,,,
-37,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,2,Abstract,Undefined,#,Undefined,,,f,Country of origin code (NR),,,,,,,,,,,,,
-38,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,3,Contents note,Undefined,#,Undefined,,,f,Country of origin code (NR),,,,,,,,,,,,,
-39,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,4,Author,Undefined,#,Undefined,,,f,Country of origin code (NR),,,,,,,,,,,,,
-40,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,5,Record,Undefined,#,Undefined,,,f,Country of origin code (NR),,,,,,,,,,,,,
-41,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,8,Other element,Undefined,#,Undefined,,,f,Country of origin code (NR),,,,,,,,,,,,,
-42,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,0,Document,Undefined,#,Undefined,,,g,Downgrading date (NR),,,,,,,,,,,,,
-43,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,1,Title,Undefined,#,Undefined,,,g,Downgrading date (NR),,,,,,,,,,,,,
-44,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,2,Abstract,Undefined,#,Undefined,,,g,Downgrading date (NR),,,,,,,,,,,,,
-45,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,3,Contents note,Undefined,#,Undefined,,,g,Downgrading date (NR),,,,,,,,,,,,,
-46,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,4,Author,Undefined,#,Undefined,,,g,Downgrading date (NR),,,,,,,,,,,,,
-47,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,5,Record,Undefined,#,Undefined,,,g,Downgrading date (NR),,,,,,,,,,,,,
-48,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,8,Other element,Undefined,#,Undefined,,,g,Downgrading date (NR),,,,,,,,,,,,,
-49,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,0,Document,Undefined,#,Undefined,,,h,Declassification date (NR),,,,,,,,,,,,,
-50,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,1,Title,Undefined,#,Undefined,,,h,Declassification date (NR),,,,,,,,,,,,,
-51,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,2,Abstract,Undefined,#,Undefined,,,h,Declassification date (NR),,,,,,,,,,,,,
-52,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,3,Contents note,Undefined,#,Undefined,,,h,Declassification date (NR),,,,,,,,,,,,,
-53,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,4,Author,Undefined,#,Undefined,,,h,Declassification date (NR),,,,,,,,,,,,,
-54,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,5,Record,Undefined,#,Undefined,,,h,Declassification date (NR),,,,,,,,,,,,,
-55,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,8,Other element,Undefined,#,Undefined,,,h,Declassification date (NR),,,,,,,,,,,,,
-56,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,0,Document,Undefined,#,Undefined,,,j,Authorization (R),,,,,,,,,,,,,
-57,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,1,Title,Undefined,#,Undefined,,,j,Authorization (R),,,,,,,,,,,,,
-58,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,2,Abstract,Undefined,#,Undefined,,,j,Authorization (R),,,,,,,,,,,,,
-59,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,3,Contents note,Undefined,#,Undefined,,,j,Authorization (R),,,,,,,,,,,,,
-60,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,4,Author,Undefined,#,Undefined,,,j,Authorization (R),,,,,,,,,,,,,
-61,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,5,Record,Undefined,#,Undefined,,,j,Authorization (R),,,,,,,,,,,,,
-62,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,8,Other element,Undefined,#,Undefined,,,j,Authorization (R),,,,,,,,,,,,,
-63,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,0,Document,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-64,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,0,Document,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-65,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,1,Title,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-66,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,1,Title,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-67,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,2,Abstract,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-68,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,2,Abstract,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-69,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,3,Contents note,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-70,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,3,Contents note,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-71,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,4,Author,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-72,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,4,Author,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-73,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,5,Record,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-74,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,5,Record,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-75,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,8,Other element,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-76,,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,8,Other element,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+0,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,0,Document,Undefined,#,Undefined,,,"a, b, c, d, e,f",,,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,structured,,,,
+1,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,0,Document,Undefined,#,Undefined,,,"a, b, c, d, e,f",,,,,,,,http://rdaregistry.info/Elements/i/P40047,has restriction on access to item,structured,,,,
+2,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,0,Document,Undefined,#,Undefined,,,a,Security classification (NR),,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,structured,,,,
+3,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,1,Title,Undefined,#,Undefined,,,"a, b, c, d, e,f",,,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,structured,,,,
+4,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,1,Title,Undefined,#,Undefined,,,a,Security classification (NR),,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,structured,,,,
+5,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,2,Abstract,Undefined,#,Undefined,,,"a, b, c, d, e,f",,,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,structured,,,,
+6,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,2,Abstract,Undefined,#,Undefined,,,"a, b, c, d, e,f",,,,,,,,http://rdaregistry.info/Elements/e/P20071,has note on expression,unstructured,,,,
+7,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,3,Contents note,Undefined,#,Undefined,,,"a, b, c, d, e,f",,,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,structured,,,,
+8,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,3,Contents note,Undefined,#,Undefined,,,"a, b, c, d, e,f",,,,,,,,http://rdaregistry.info/Elements/w/P10330,has note on work,unstructured,,,,
+9,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,3,Contents note,Undefined,#,Undefined,,,a,Security classification (NR),,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,structured,,,,
+10,not mapped,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,4,Author,Undefined,#,Undefined,,,a,Security classification (NR),,,,,,,,,,,,,There is no element in RDA for restrictions related to an agent
+11,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,5,Record,Undefined,#,Undefined,,,"a, b, c, d, e,f",,,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,structured,,,,There is no element in RDA for restrictions to a work just a manifestation or item and a record is a work
+12,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,5,Record,Undefined,#,Undefined,,,a,Security classification (NR),,,,,,,,,,,,,There is no element in RDA for restrictions to a work just a manifestation or item and a record is a work
+13,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,8,Other element,Undefined,#,Undefined,,,"a, b, c, d, e,f",,,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,structured,,,,
+14,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,8,Other element,Undefined,#,Undefined,,,a,Security classification (NR),,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,structured,,,,
+15,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,0,Document,Undefined,#,Undefined,,,b,Handling instructions (R),,,,,,,http://rdaregistry.info/Elements/i/P40047,has restriction on access to item,unstructured,,,,
+16,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,1,Title,Undefined,#,Undefined,,,b,Handling instructions (R),,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,unstructured,,,,
+17,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,2,Abstract,Undefined,#,Undefined,,,a,Security classification (NR),,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,structured,,,,
+18,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,2,Abstract,Undefined,#,Undefined,,,b,Handling instructions (R),,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,unstructured,,,,
+19,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,3,Contents note,Undefined,#,Undefined,,,b,Handling instructions (R),,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,unstructured,,,,
+20,not mapped,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,4,Author,Undefined,#,Undefined,,,b,Handling instructions (R),,,,,,,,,,,,,There is no element in RDA for restrictions related to handling of an agent
+21,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,5,Record,Undefined,#,Undefined,,,b,Handling instructions (R),,,,,,,,,,,,,There is no element in RDA for restrictions to a work just a manifestation or item and a record is a work
+22,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,8,Other element,Undefined,#,Undefined,,,b,Handling instructions (R),,,,,,,http://rdaregistry.info/Elements/i/P40047,has restriction on access to item,unstructured,,,,
+23,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,0,Document,Undefined,#,Undefined,,,c,External dissemination information (R),,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,structured | unstructured,,,,if taken from a VES then structured; if free text then unstructured
+24,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,1,Title,Undefined,#,Undefined,,,c,External dissemination information (R),,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,structured | unstructured,,,,if taken from a VES then structured; if free text then unstructured
+25,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,2,Abstract,Undefined,#,Undefined,,,c,External dissemination information (R),,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,structured | unstructured,,,,if taken from a VES then structured; if free text then unstructured
+26,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,3,Contents note,Undefined,#,Undefined,,,c,External dissemination information (R),,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,structured | unstructured,,,,if taken from a VES then structured; if free text then unstructured
+27,not mapped,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,4,Author,Undefined,#,Undefined,,,c,External dissemination information (R),,,,,,,,,,,,,There is no element in RDA for restrictions related to access to an agent
+28,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,5,Record,Undefined,#,Undefined,,,c,External dissemination information (R),,,,,,,,,,,,,There is no element in RDA for restrictions to a work just a manifestation or item and a record is a work
+29,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,8,Other element,Undefined,#,Undefined,,,c,External dissemination information (R),,,,,,,,,,,,,As this is so vague it is hard to determine what external inftation is restricted
+30,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,0,Document,Undefined,#,Undefined,,,d,Downgrading or declassification event (NR),,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,unstructured,,,,It is always possible these could be structured but there isn't enough information in MARC to know
+31,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,1,Title,Undefined,#,Undefined,,,d,Downgrading or declassification event (NR),,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,unstructured,,,,
+32,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,2,Abstract,Undefined,#,Undefined,,,d,Downgrading or declassification event (NR),,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,unstructured,,,,
+33,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,3,Contents note,Undefined,#,Undefined,,,d,Downgrading or declassification event (NR),,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,unstructured,,,,
+34,not mapped,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,4,Author,Undefined,#,Undefined,,,d,Downgrading or declassification event (NR),,,,,,,,,,,,,There is no element in RDA for restrictions related to an agent
+35,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,5,Record,Undefined,#,Undefined,,,d,Downgrading or declassification event (NR),,,,,,,,,,,,,There is no element in RDA for restrictions to a work just a manifestation or item and a record is a work
+36,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,8,Other element,Undefined,#,Undefined,,,d,Downgrading or declassification event (NR),,,,,,,,,,,,,Just too vague to know what other elements may be involved
+37,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,0,Document,Undefined,#,Undefined,,,e,Classification system (NR),,,,,,,http://rdaregistry.info/Elements/w/P10406,has source consulted,structured | unstructured,,,,if taken from a VES then structured; if free text then unstructured
+38,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,1,Title,Undefined,#,Undefined,,,e,Classification system (NR),,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,structured | unstructured,,,,if taken from a VES then structured; if free text then unstructured
+39,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,2,Abstract,Undefined,#,Undefined,,,e,Classification system (NR),,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,structured | unstructured,,,,if taken from a VES then structured; if free text then unstructured
+40,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,3,Contents note,Undefined,#,Undefined,,,e,Classification system (NR),,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,structured | unstructured,,,,if taken from a VES then structured; if free text then unstructured
+41,not mapped,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,4,Author,Undefined,#,Undefined,,,e,Classification system (NR),,,,,,,,,,,,,There is no element in RDA for restrictions related to an agent
+42,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,5,Record,Undefined,#,Undefined,,,e,Classification system (NR),,,,,,,,,,,,,There is no element in RDA for restrictions to a work just a manifestation or item and a record is a work
+43,delete,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,8,Other element,Undefined,#,Undefined,,,e,Classification system (NR),,,,,,,http://rdaregistry.info/Elements/m/P30145,has restriction on access to manifestation,structured | unstructured,,,,if taken from a VES then structured; if free text then unstructured
+44,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,0,Document,Undefined,#,Undefined,,,f,Country of origin code (NR),,,,,,,http://rdaregistry.info/Elements/i/P40077,has related place of item,identifier,,,,
+45,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,1,Title,Undefined,#,Undefined,,,f,Country of origin code (NR),,,,,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,identifier,,,,
+46,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,2,Abstract,Undefined,#,Undefined,,,f,Country of origin code (NR),,,,,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,identifier,,,,
+47,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,3,Contents note,Undefined,#,Undefined,,,f,Country of origin code (NR),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,identifier,,,,
+48,not mapped,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,4,Author,Undefined,#,Undefined,,,f,Country of origin code (NR),,,,,,,,,,,,,There is no element in RDA for restrictions related to an agent any other information would be in an authority record
+49,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,5,Record,Undefined,#,Undefined,,,f,Country of origin code (NR),,,,,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,identifier,,,,
+50,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,8,Other element,Undefined,#,Undefined,,,f,Country of origin code (NR),,,,,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,identifier,,,,
+51,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,0,Document,Undefined,#,Undefined,,,g,Downgrading date (NR),,,,,,,http://rdaregistry.info/Elements/m/P30273,has related timespan of manifestation,structured | unstructured,,,,Depends on how date is recorded and no guidance in the MARC field
+52,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,1,Title,Undefined,#,Undefined,,,g,Downgrading date (NR),,,,,,,http://rdaregistry.info/Elements/m/P30273,has related timespan of manifestation,structured | unstructured,,,,Depends on how date is recorded and no guidance in the MARC field
+53,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,2,Abstract,Undefined,#,Undefined,,,g,Downgrading date (NR),,,,,,,http://rdaregistry.info/Elements/e/P20307,has related timespan of expression,structured | unstructured,,,,Depends on how date is recorded and no guidance in the MARC field
+54,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,3,Contents note,Undefined,#,Undefined,,,g,Downgrading date (NR),,,,,,,http://rdaregistry.info/Elements/w/P10317,has related timespan of work,structured | unstructured,,,,Depends on how date is recorded and no guidance in the MARC field
+55,not mapped,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,4,Author,Undefined,#,Undefined,,,g,Downgrading date (NR),,,,,,,,,,,,,There is no element in RDA for restrictions related to an agent
+56,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,5,Record,Undefined,#,Undefined,,,g,Downgrading date (NR),,,,,,,http://rdaregistry.info/Elements/m/P30273,has related timespan of manifestation,structured | unstructured,,,,Depends on how date is recorded and no guidance in the MARC field
+57,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,8,Other element,Undefined,#,Undefined,,,g,Downgrading date (NR),,,,,,,http://rdaregistry.info/Elements/m/P30273,has related timespan of manifestation,structured | unstructured,,,,Depends on how date is recorded and no guidance in the MARC field
+58,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,0,Document,Undefined,#,Undefined,,,h,Declassification date (NR),,,,,,,http://rdaregistry.info/Elements/m/P30273,has related timespan of manifestation,structured | unstructured,,,,Depends on how date is recorded and no guidance in the MARC field
+59,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,1,Title,Undefined,#,Undefined,,,h,Declassification date (NR),,,,,,,http://rdaregistry.info/Elements/m/P30273,has related timespan of manifestation,structured | unstructured,,,,Depends on how date is recorded and no guidance in the MARC field
+60,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,2,Abstract,Undefined,#,Undefined,,,h,Declassification date (NR),,,,,,,http://rdaregistry.info/Elements/e/P20307,has related timespan of expression,structured | unstructured,,,,Depends on how date is recorded and no guidance in the MARC field
+61,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,3,Contents note,Undefined,#,Undefined,,,h,Declassification date (NR),,,,,,,http://rdaregistry.info/Elements/w/P10317,has related timespan of work,structured | unstructured,,,,Depends on how date is recorded and no guidance in the MARC field
+62,not mapped,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,4,Author,Undefined,#,Undefined,,,h,Declassification date (NR),,,,,,,,,,,,,There is no element in RDA for restrictions related to an agent
+63,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,5,Record,Undefined,#,Undefined,,,h,Declassification date (NR),,,,,,,has related timespan of manifestation,has related timespan of manifestation,structured | unstructured,,,,Depends on how date is recorded and no guidance in the MARC field
+64,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,8,Other element,Undefined,#,Undefined,,,h,Declassification date (NR),,,,,,,http://rdaregistry.info/Elements/m/P30273,has related timespan of manifestation,structured | unstructured,,,,Depends on how date is recorded and no guidance in the MARC field
+65,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,0,Document,Undefined,#,Undefined,,,j,Authorization (R),,,,,,,http://rdaregistry.info/Elements/i/P40075,has related corporate body of item,IRI,,,,
+66,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,1,Title,Undefined,#,Undefined,,,j,Authorization (R),,,,,,,http://rdaregistry.info/Elements/m/P30270,has related corporate body of manifestation,IRI,,,,
+67,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,2,Abstract,Undefined,#,Undefined,,,j,Authorization (R),,,,,,,http://rdaregistry.info/Elements/e/P20304,has related corporate body of expression,IRI,,,,
+68,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,3,Contents note,Undefined,#,Undefined,,,j,Authorization (R),,,,,,,http://rdaregistry.info/Elements/w/P10314,has related corporate body of work,IRI,,,,
+69,not mapped,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,4,Author,Undefined,#,Undefined,,,j,Authorization (R),,,,,,,,,,,,,There is no element in RDA for restrictions related to an agent
+70,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,5,Record,Undefined,#,Undefined,,,j,Authorization (R),,,,,,,http://rdaregistry.info/Elements/m/P30270,has related corporate body of manifestation,IRI,,,,
+71,reviewed,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,8,Other element,Undefined,#,Undefined,,,j,Authorization (R),,,,,,,http://rdaregistry.info/Elements/m/P30270,has related corporate body of manifestation,IRI,,,,
+72,not mapped,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,0,Document,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,http://rdaregistry.info/Elements/e/P20065,has script,Identifier,,,,
+73,not mapped,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,0,Document,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+74,not mapped,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,1,Title,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,http://rdaregistry.info/Elements/e/P20065,has script,Identifier,,,,
+75,not mapped,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,1,Title,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+76,not mapped,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,2,Abstract,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,http://rdaregistry.info/Elements/e/P20065,has script,Identifier,,,,
+77,not mapped,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,2,Abstract,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+78,not mapped,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,3,Contents note,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,http://rdaregistry.info/Elements/e/P20065,has script,Identifier,,,,
+79,not mapped,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,3,Contents note,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+80,not mapped,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,4,Author,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,http://rdaregistry.info/Elements/e/P20065,has script,Identifier,,,,
+81,not mapped,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,4,Author,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+82,not mapped,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,5,Record,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,http://rdaregistry.info/Elements/e/P20065,has script,Identifier,,,,
+83,not mapped,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,5,Record,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+84,not mapped,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,8,Other element,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,http://rdaregistry.info/Elements/e/P20065,has script,Identifier,,,,
+85,not mapped,355,SECURITY CLASSIFICATION CONTROL (R),Controlled element,8,Other element,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,

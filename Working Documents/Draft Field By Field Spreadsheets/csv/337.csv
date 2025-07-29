@@ -2,7 +2,7 @@
 0,done,337,MEDIA TYPE (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/m/P30002,has media type,IRI,,[Manifestation] rdam:P30002 [value of $1],,
 1,done,337,MEDIA TYPE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,0,starts with 'http',not($1),,http://rdaregistry.info/Elements/m/P30002,has media type,IRI,,"If $0 starts with http, and there is no $1, map as [manifestation] rdam:P30002 [$0 value]",,
 2,not mapped (reviewed),337,MEDIA TYPE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,0,does not start with 'http',not($1),,,,,,do not map a $0 that does not begin with 'http',,
-3,reviewed,337,MEDIA TYPE (R),Undefined,*,,Undefined,*,,,,"a, b",Media type term (R),,,2,not(rdamt or rdamedia),"not($1, or $0 begnning with http)",,http://rdaregistry.info/Elements/m/P30002,has media type,IRI,,"[Manifestation] rdam:P30002 skos:Concept(mintedIRI)
+3,done,337,MEDIA TYPE (R),Undefined,*,,Undefined,*,,,,"a, b",Media type term (R),,,2,not(rdamt or rdamedia),"not($1, or $0 begnning with http)",,http://rdaregistry.info/Elements/m/P30002,has media type,IRI,,"[Manifestation] rdam:P30002 skos:Concept(mintedIRI)
 skos:Concept skos:prefLabel <$a or $b if no $a>
 skos:Concept skos:notation 
 <$b>^^datatypeIRI

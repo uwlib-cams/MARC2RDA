@@ -1,28 +1,28 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,MARCTagCondition3,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,reviewed,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,*,,Undefined,*,,,,$1, ,,,approved $1,,$2,,,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI,"We know that a series heading in a 440 or 800-830 field must be for a Work to Work relationship, but we (again) cannot tell whether is for an aggregating work or a multi-part work.","<WorkIRI> is issue of <$1>
+0,done,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,*,,Undefined,*,,,,$1, ,,,approved $1,,$2,,,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI,"We know that a series heading in a 440 or 800-830 field must be for a Work to Work relationship, but we (again) cannot tell whether is for an aggregating work or a multi-part work.","<WorkIRI> is issue of <$1>
 <$1> nomen property <nomenIRI>
 <nomenIRI> rdand:P80068 ""value of a, b, c, d, f, g, j, k, l, m, n, o, p, q, r, s, t, u"" .// has nomen string
 <nomenIRI> rdand:P80069 <source from $2> .// has scheme of nomen
 
 If $2 is approved source, use rdawo:P10331 .// has authorized access point for work. If unapproved use rdawo:P10328 .// has access point for work
 - CP 2024-12-05",even if we think the heading is actually for a multi-part work and so should be transformed as a <WorkIRI> has part work <WorkIRI> instead,
-1,reviewed,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,*,,Undefined,*,,,,$1, ,,,approved $1,,no $2,,,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI,"We know that a series heading in a 440 or 800-830 field must be for a Work to Work relationship, but we (again) cannot tell whether is for an aggregating work or a multi-part work.","<WorkIRI> is issue of <$1>
+1,done,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,*,,Undefined,*,,,,$1, ,,,approved $1,,no $2,,,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI,"We know that a series heading in a 440 or 800-830 field must be for a Work to Work relationship, but we (again) cannot tell whether is for an aggregating work or a multi-part work.","<WorkIRI> is issue of <$1>
 <$1> rdawd:P10328 ""value of a, b, c, d, f, g, j, k, l, m, n, o, p, q, r, s, t, u"" .// has access point for work",even if we think the heading is actually for a multi-part work and so should be transformed as a <WorkIRI> has part work <WorkIRI> instead,
-2,reviewed,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,*,,Undefined,*,,,,$0, ,,,$0 type is right and no $1,,$2,,,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI,"We know that a series heading in a 440 or 800-830 field must be for a Work to Work relationship, but we (again) cannot tell whether is for an aggregating work or a multi-part work.","<WorkIRI> is issue of <converted $0>
+2,done,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,*,,Undefined,*,,,,$0, ,,,$0 type is right and no $1,,$2,,,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI,"We know that a series heading in a 440 or 800-830 field must be for a Work to Work relationship, but we (again) cannot tell whether is for an aggregating work or a multi-part work.","<WorkIRI> is issue of <converted $0>
 <converted $0> nomen property <nomenIRI>
 <nomenIRI> rdand:P80068 ""value of a, b, c, d, f, g, j, k, l, m, n, o, p, q, r, s, t, u"" .// has nomen string
 <nomenIRI> rdand:P80069 <source from $2> .// has scheme of nomen
 
 If $2 is approved source, use rdawo:P10331 .// has authorized access point for work. If unapproved use rdawo:P10328 .// has access point for work
 - CP 2024-12-05",even if we think the heading is actually for a multi-part work and so should be transformed as a <WorkIRI> has part work <WorkIRI> instead,
-3,reviewed,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,*,,Undefined,*,,,,$0, ,,,$0 type is right and no $1,,no $2,,,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI,"We know that a series heading in a 440 or 800-830 field must be for a Work to Work relationship, but we (again) cannot tell whether is for an aggregating work or a multi-part work.","<WorkIRI> is issue of <converted $0>
+3,done,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,*,,Undefined,*,,,,$0, ,,,$0 type is right and no $1,,no $2,,,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI,"We know that a series heading in a 440 or 800-830 field must be for a Work to Work relationship, but we (again) cannot tell whether is for an aggregating work or a multi-part work.","<WorkIRI> is issue of <converted $0>
 <converted $0> rdawd:P10328 ""value of a, b, c, d, f, g, j, k, l, m, n, o, p, q, r, s, t, u"" .// has access point for work",even if we think the heading is actually for a multi-part work and so should be transformed as a <WorkIRI> has part work <WorkIRI> instead,
-4,reviewed,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,*,,Undefined,*,,,,$1|$0, ,,,$0 or $1 type is unapproved,,,,,http://rdaregistry.info/Elements/w/P10002,has identifier for work,IRI,,"<relatedSeriesWorkIRI> has identifier for work ""stringified $0 or $1""",,
+4,done,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,*,,Undefined,*,,,,$1|$0, ,,,$0 or $1 type is unapproved,,,,,http://rdaregistry.info/Elements/w/P10002,has identifier for work,IRI,,"<relatedSeriesWorkIRI> has identifier for work ""stringified $0 or $1""",,
 5,delete,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,*,,Undefined,*,,,,$1|$0, ,,,no $2,$1|$0 from id.loc.gov,,,,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI, ,"<WorkIRI> is issue of <$1|$0>
 <$1|$0> has AAP for SeriesWorkIRI ""value of a, b, c, d, f, g, j, k, l, m, n, o, p, q, r, s, t, u""", ,
 6,delete,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,*,,Undefined,*,,,,$1|$0, ,,,no $2,$1|$0 not from id.loc.gov,,,,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI,"We know that a series heading in a 440 or 800-830 field must be for a Work to Work relationship, but we (again) cannot tell whether is for an aggregating work or a multi-part work.","<WorkIRI> is issue of <$1|$0>
 <$1|$0> has AP for SeriesWorkIRI ""value of a, b, c, d, f, g, j, k, l, m, n, o, p, q, r, s, t, u""",even if we think the heading is actually for a multi-part work and so should be transformed as a <WorkIRI> has part work <WorkIRI> instead,
-7,reviewed,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,*,,Undefined,*,,,,"a, b, c, d, f, g, j, k, l, m, n, o, p, q, r, s, t, u", ,,,no $1 or $0 that can be converted into a rwo uri,,$2,,,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI,,"<WorkIRI> is issue of <SeriesWorkIRI>
+7,done,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,*,,Undefined,*,,,,"a, b, c, d, f, g, j, k, l, m, n, o, p, q, r, s, t, u", ,,,no $1 or $0 that can be converted into a rwo uri,,$2,,,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI,,"<WorkIRI> is issue of <SeriesWorkIRI>
 <SeriesWorkIRI> nomen property <nomenIRI>
 <nomenIRI> rdand:P80068 ""value of a, b, c, d, f, g, j, k, l, m, n, o, p, q, r, s, t, u"" .// has nomen string
 <nomenIRI> rdand:P80069 <source from $2> .// has scheme of nomen
@@ -33,9 +33,9 @@ If $2 is approved source, use rdawo:P10331 .// has authorized access point for w
 <SeriesWorkIRI> has AAP for SeriesWorkIRI <NomenIRI>
 <NomenIRI> has nomen string ""value of a, b, c, d, f, g, j, k, l, m, n, o, p, q, r, s, t, u"" in order of appearance
 <NomenIRI> has scheme of nomen <http://id.loc.gov/authorities/names >",,
-9,reviewed,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,*,,Undefined,*,,,,"a, b, c, d, f, g, j, k, l, m, n, o, p, q, r, s, t, u", ,,,no $1 or $0 that can be converted into a rwo uri,no $2,,, ,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI,,"<WorkIRI> is issue of <SeriesWorkIRI>
+9,done,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,*,,Undefined,*,,,,"a, b, c, d, f, g, j, k, l, m, n, o, p, q, r, s, t, u", ,,,no $1 or $0 that can be converted into a rwo uri,no $2,,, ,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI,,"<WorkIRI> is issue of <SeriesWorkIRI>
 <SeriesWorkIRI> rdawd:P10328 ""value of a, b, c, d, f, g, j, k, l, m, n, o, p, q, r, s, t, u"" .// has access point for work",,
-10,reviewed,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,0|1,,,,,,,"a, b, c, d, g, j, q, u",,,,,$2,,,,https://www.rdaregistry.info/Elements/w/object/#P10312,has related person of work,IRI,,"<SeriesWorkIRI> has related person of work <PersonIRI>
+10,done,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,0|1,,,,,,,"a, b, c, d, g, j, q, u",,,,,$2,,,,https://www.rdaregistry.info/Elements/w/object/#P10312,has related person of work,IRI,,"<SeriesWorkIRI> has related person of work <PersonIRI>
 <PersonIRI> nomen property <NomenIRI>
 <NomenIRI> has nomen string ""value of a, b, c, d, g, j, q, u"" in order of appearance
 <NomenIRI> has scheme of nomen <IRI for $2>
@@ -43,9 +43,9 @@ If $2 is approved source, use rdawo:P10331 .// has authorized access point for w
 
 If $2 is approved source, use rdaao:P50411 .// has authorized access point for person. If unapproved use rdaao:P50377 .// has access point for person
 - CP 2024-12-05",,
-11,reviewed,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,0|1,,,,,,,"a, b, c, d, g, j, q, u",,,,,no $2,,,,https://www.rdaregistry.info/Elements/w/object/#P10312,has related person of work,IRI,,"<SeriesWorkIRI> has related person of work <PersonIRI>
+11,done,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,0|1,,,,,,,"a, b, c, d, g, j, q, u",,,,,no $2,,,,https://www.rdaregistry.info/Elements/w/object/#P10312,has related person of work,IRI,,"<SeriesWorkIRI> has related person of work <PersonIRI>
 <PersonIRI> has AP for PersonIRI ""value of a, b, c, d, g, j, q, u""",,
-12,reviewed,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,3,,,,,,,"a, b, c, d, g, j, q, u",,,,,$2,,,,https://www.rdaregistry.info/Elements/w/#P10313,has related family of work,IRI,,"<SeriesWorkIRI> has related family of work <FamilyIRI>
+12,done,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,3,,,,,,,"a, b, c, d, g, j, q, u",,,,,$2,,,,https://www.rdaregistry.info/Elements/w/#P10313,has related family of work,IRI,,"<SeriesWorkIRI> has related family of work <FamilyIRI>
 <FamilyIRI> nomen property <NomenIRI>
 <NomenIRI> has nomen string """"value of a, b, c, d, g, j, q, u"""" in order of appearance
 <NomenIRI> has scheme of nomen <IRI for $2>""
@@ -53,7 +53,7 @@ If $2 is approved source, use rdaao:P50411 .// has authorized access point for p
 
 If $2 is approved source, use rdaao:P50409 .// has authorized access point for family. If unapproved use rdaao:P50376 .// has access point for family
 - CP 2024-12-05",,
-13,reviewed,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,3,,,,,,,"a, b, c, d, g, j, q, u",,,,,no $2,,,,https://www.rdaregistry.info/Elements/w/#P10313,has related family of work,IRI,,"<SeriesWorkIRI> has related family of work <FamilyIRI>
+13,done,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,3,,,,,,,"a, b, c, d, g, j, q, u",,,,,no $2,,,,https://www.rdaregistry.info/Elements/w/#P10313,has related family of work,IRI,,"<SeriesWorkIRI> has related family of work <FamilyIRI>
 <FamilyIRI> has AP for FamilyIRI ""value of a, b, c, d, g, j, q, u""",,
 14,delete,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,*,,Undefined,*,,,,a,Personal name (NR),,,,,,no $2,,http://rdaregistry.info/Elements/w/P10019,is part of work,,,,,
 15,delete,800,SERIES ADDED ENTRY--PERSONAL NAME (R),Type of personal name entry element,*,,Undefined,*,,,,a,Personal name (NR),,,,,,,,http://rdaregistry.info/Elements/w/P10101,is subseries of,,,,,

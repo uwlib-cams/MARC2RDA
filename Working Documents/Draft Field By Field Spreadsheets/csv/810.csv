@@ -1,40 +1,40 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,reviewed,810.0,SERIES ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Undefined,*,,,,$1, ,,,approved $1,,$2,,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI,"We know that a series heading in a 440 or 800-830 field must be for a Work to Work relationship, but we (again) cannot tell whether is for an aggregating work or a multi-part work.","<WorkIRI> is issue of <$1|>
+0,done,810.0,SERIES ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Undefined,*,,,,$1, ,,,approved $1,,$2,,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI,"We know that a series heading in a 440 or 800-830 field must be for a Work to Work relationship, but we (again) cannot tell whether is for an aggregating work or a multi-part work.","<WorkIRI> is issue of <$1|>
 <$1> nomen property <nomenIRI>
 <nomenIRI> rdand:P80068 "" ""value of a, b, c, d, f, g, k, l, m, n, o, p, r, s, t, u"" .// has nomen string
 <nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
 
 If $2 is approved source, use rdawo:P10331 .// has authorized access point for work. If unapproved use rdawo:P10328 .// has access point for work
 - CP 2024-12-06",even if we think the heading is actually for a multi-part work and so should be transformed as a <WorkIRI> has part work <WorkIRI> instead,
-1,reviewed,810.0,SERIES ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Undefined,*,,,,$1, ,,,approved $1,,no $2,,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI,"We know that a series heading in a 440 or 800-830 field must be for a Work to Work relationship, but we (again) cannot tell whether is for an aggregating work or a multi-part work.","<WorkIRI> is issue of <$1|>
+1,done,810.0,SERIES ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Undefined,*,,,,$1, ,,,approved $1,,no $2,,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI,"We know that a series heading in a 440 or 800-830 field must be for a Work to Work relationship, but we (again) cannot tell whether is for an aggregating work or a multi-part work.","<WorkIRI> is issue of <$1|>
 <$1> has AP for Series WorkIRI ""value of a, b, c, d, f, g, k, l, m, n, o, p, r, s, t, u""",even if we think the heading is actually for a multi-part work and so should be transformed as a <WorkIRI> has part work <WorkIRI> instead,
-2,reviewed,810.0,SERIES ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Undefined,*,,,,$0, ,,,$0 type is right and no $1,,$2,,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI,"We know that a series heading in a 440 or 800-830 field must be for a Work to Work relationship, but we (again) cannot tell whether is for an aggregating work or a multi-part work.","<WorkIRI> is issue of <converted $0|>
+2,done,810.0,SERIES ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Undefined,*,,,,$0, ,,,$0 type is right and no $1,,$2,,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI,"We know that a series heading in a 440 or 800-830 field must be for a Work to Work relationship, but we (again) cannot tell whether is for an aggregating work or a multi-part work.","<WorkIRI> is issue of <converted $0|>
 <converted $0> nomen property <nomenIRI>
 <nomenIRI> rdand:P80068 "" ""value of a, b, c, d, f, g, k, l, m, n, o, p, r, s, t, u"" .// has nomen string
 <nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
 
 If $2 is approved source, use rdawo:P10331 .// has authorized access point for work. If unapproved use rdawo:P10328 .// has access point for work
 - CP 2024-12-06",even if we think the heading is actually for a multi-part work and so should be transformed as a <WorkIRI> has part work <WorkIRI> instead,
-3,reviewed,810.0,SERIES ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Undefined,*,,,,$0, ,,,$0 type is right and no $1,,no $2,,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI,"We know that a series heading in a 440 or 800-830 field must be for a Work to Work relationship, but we (again) cannot tell whether is for an aggregating work or a multi-part work.","<WorkIRI> is issue of <converted $0>
+3,done,810.0,SERIES ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Undefined,*,,,,$0, ,,,$0 type is right and no $1,,no $2,,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI,"We know that a series heading in a 440 or 800-830 field must be for a Work to Work relationship, but we (again) cannot tell whether is for an aggregating work or a multi-part work.","<WorkIRI> is issue of <converted $0>
 <converted $0> has AAP for Series WorkIRI ""value of a, b, c, d, f, g, k, l, m, n, o, p, r, s, t, u""",even if we think the heading is actually for a multi-part work and so should be transformed as a <WorkIRI> has part work <WorkIRI> instead,
-4,reviewed,810.0,SERIES ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Undefined,*,,,,$1|$0, ,,,$0 or $1 type is unapproved,,,,http://rdaregistry.info/Elements/w/P10002,has identifier for work,IRI,,"<relatedSeriesWorkIRI> rdawd:P10002 ""stringified $0 or $1"" .// has identifier for work",,
-5,reviewed,810.0,SERIES ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Undefined,*,,,,"a, b, c, d, f, g, h, k, l, m, n, o, p, r, s, t, u, v, w, x", ,,,no $1 or $0 that can be converted into a rwo uri,,$2,,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI,,"<WorkIRI> is issue of <SeriesWorkIRI|>
+4,done,810.0,SERIES ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Undefined,*,,,,$1|$0, ,,,$0 or $1 type is unapproved,,,,http://rdaregistry.info/Elements/w/P10002,has identifier for work,IRI,,"<relatedSeriesWorkIRI> rdawd:P10002 ""stringified $0 or $1"" .// has identifier for work",,
+5,done,810.0,SERIES ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Undefined,*,,,,"a, b, c, d, f, g, h, k, l, m, n, o, p, r, s, t, u, v, w, x", ,,,no $1 or $0 that can be converted into a rwo uri,,$2,,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI,,"<WorkIRI> is issue of <SeriesWorkIRI|>
 <SeriesWorkIRI> nomen property <nomenIRI>
 <nomenIRI> rdand:P80068 "" ""value of a, b, c, d, f, g, k, l, m, n, o, p, r, s, t, u"" .// has nomen string
 <nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
 
 If $2 is approved source, use rdawo:P10331 .// has authorized access point for work. If unapproved use rdawo:P10328 .// has access point for work
 - CP 2024-12-06",,
-6,reviewed,810.0,SERIES ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Undefined,*,,,,"a, b, c, d, f, g, h, k, l, m, n, o, p, r, s, t, u, v, w, x", ,,,no $1 or $0 that can be converted into a rwo uri,,no $2,,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI,,"<WorkIRI> is issue of <Series WorkIRI>
+6,done,810.0,SERIES ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Undefined,*,,,,"a, b, c, d, f, g, h, k, l, m, n, o, p, r, s, t, u, v, w, x", ,,,no $1 or $0 that can be converted into a rwo uri,,no $2,,https://www.rdaregistry.info/Elements/w/object/#P10102,is issue of,IRI,,"<WorkIRI> is issue of <Series WorkIRI>
 <Series WorkIRI> has AP for Series WorkIRI  ""value of a, b, c, d, f, g, k, l, m, n, o, p, r, s, t, u"" ",,
-7,reviewed,810.0,SERIES ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Undefined,*,,,,"a, b, c, u, d, g, n", ,,,$2,,,,https://www.rdaregistry.info/Elements/w/object/#P10314,has related corporate body of work,IRI, ,"<Series Work IRI> has related corporate body of work <CorporateBodyIRI>
+7,done,810.0,SERIES ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Undefined,*,,,,"a, b, c, u, d, g, n", ,,,$2,,,,https://www.rdaregistry.info/Elements/w/object/#P10314,has related corporate body of work,IRI, ,"<Series Work IRI> has related corporate body of work <CorporateBodyIRI>
 <CorporateBodyIRI> nomen property <NomenIRI>
 <NomenIRI> has nomen string ""value of $a$b$c$u + $d$g$n""
 <NomenIRI> has scheme of nomen <$2>
 
 If $2 is approved source, use rdaao:P50407 .// has authorized access point for corporate body. If unapproved use rdawo:P50375 .// has access point for corporate body
 - CP 2024-12-06",,
-8,reviewed,810.0,SERIES ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Undefined,*,,,,"a, b, c, u, d, g, n", ,,,no $2,,,,https://www.rdaregistry.info/Elements/w/object/#P10314,has related corporate body of work,IRI, ,"<Series Work IRI> has related corporate body of work <CorporateBodyIRI>
+8,done,810.0,SERIES ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Undefined,*,,,,"a, b, c, u, d, g, n", ,,,no $2,,,,https://www.rdaregistry.info/Elements/w/object/#P10314,has related corporate body of work,IRI, ,"<Series Work IRI> has related corporate body of work <CorporateBodyIRI>
 <CorporateBodyIRI> has AP for Corporate Body ""value of $a$b$c$u + $d$g$n""",,
 9,delete,810.0,SERIES ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Undefined,*,,,,b,Subordinate unit (R),,,,,,,http://rdaregistry.info/Elements/w/P10019,is part of work,,,,,
 10,delete,810.0,SERIES ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Undefined,*,,,,b,Subordinate unit (R),,,,,,,http://rdaregistry.info/Elements/w/P10101,is subseries of,,,,,

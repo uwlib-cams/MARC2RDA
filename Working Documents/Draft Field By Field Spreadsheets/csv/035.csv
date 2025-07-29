@@ -1,5 +1,9 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,,35,SYSTEM CONTROL NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,a,System control number (NR),,,,,,,,,,,,,
-1,,35,SYSTEM CONTROL NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,z,Canceled/invalid control number (R),,,,,,,,,,,,,
-2,,35,SYSTEM CONTROL NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-3,,35,SYSTEM CONTROL NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+0,done,35,SYSTEM CONTROL NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,a,System control number (NR),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,Identifier,"IRI (minted nomen) - 
+Has nomen string http://rdaregistry.info/Elements/n/P80068 
+Note on nomen  http://rdaregistry.info/Elements/n/P80071",,,"Also see discussion at issue 54.
+This should only be limited to the OCLC number I suggest leaving the OCoLC in parenthesis as it is a string to be explicit. Also include the ocm, ocn, on, etc. before the number"
+1,done,35,SYSTEM CONTROL NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,z,Canceled/invalid control number (R),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,Identifier,"IRI (minted nomen) - 
+Has nomen string http://rdaregistry.info/Elements/n/P80068 
+Note on nomen  http://rdaregistry.info/Elements/n/P80071
+Nomen status of identification http://rdaregistry.info/Elements/n/P80168",,,

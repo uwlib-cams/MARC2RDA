@@ -1,7 +1,6 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
 0,delete,340.0,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,a,Material base and configuration (R),,,,,,,http://rdaregistry.info/Elements/e/P20573,has colour,,,,,Error in RDA Registry? Colour content is in $g. Plus can 340$a really contain the value of an expression property? --TG
-1,done,340.0,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,a,Material base and configuration (R),,,,,,,http://rdaregistry.info/Elements/m/P30304,has material,Unstructured|Structured|IRI,"Base material has been soft deprecated. --PS
-340$a maps precisely to rdam:P30208. --TG","[Manifestation] rdam:P30304 [value of $1 or $0 containing ""http""]
+1,done,340.0,PHYSICAL MEDIUM (R),Undefined,*,,Undefined,*,,,,a,Material base and configuration (R),,,,,,,http://rdaregistry.info/Elements/m/P30304,has material,Unstructured|Structured|IRI,,"[Manifestation] rdam:P30304 [value of $1 or $0 containing ""http""]
 If there is both $1 and $0, select the $1 value. **0s and 1s can only be mapped if the only other subfields in the field are the following: b, f, h, i, 2, 3, 6, 8. Other subfields make it impossible to know which subfield the 0 or 1 is related to and thus which property to use, so the 0 or 1 should be ignored - CP 7/23/2024
 
 If no $0 with 'http' or $1, and $2 does not contain ""rdamat""

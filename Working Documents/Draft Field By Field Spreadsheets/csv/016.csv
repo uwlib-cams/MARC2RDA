@@ -1,7 +1,21 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,,16,NATIONAL BIBLIOGRAPHIC AGENCY CONTROL NUMBER (R),National bibliographic agency,*,,Undefined,*,,,,a,Record control number (NR),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,,,,,
-1,,16,NATIONAL BIBLIOGRAPHIC AGENCY CONTROL NUMBER (R),National bibliographic agency,*,,Undefined,*,,,,z,Canceled or invalid record control number (R),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,,,,,
-2,,16,NATIONAL BIBLIOGRAPHIC AGENCY CONTROL NUMBER (R),National bibliographic agency,7,Agency identified in subfield $2,Undefined,#,Undefined,,,2,Source (NR),,,,,,,,,,,,,
-3,,16,NATIONAL BIBLIOGRAPHIC AGENCY CONTROL NUMBER (R),National bibliographic agency,7,Agency identified in subfield $2,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-4,,16,NATIONAL BIBLIOGRAPHIC AGENCY CONTROL NUMBER (R),National bibliographic agency,#,Library and Archives Canada,Undefined,#,Undefined,,,2,Source (NR),,,,,,,,,,,,,
-5,,16,NATIONAL BIBLIOGRAPHIC AGENCY CONTROL NUMBER (R),National bibliographic agency,#,Library and Archives Canada,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+0,done,16,NATIONAL BIBLIOGRAPHIC AGENCY CONTROL NUMBER (R),National bibliographic agency,*,,Undefined,*,,,,a,Record control number (NR),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,"IRI (minted nomen) - 
+Has nomen string http://rdaregistry.info/Elements/n/P80068 
+Note on nomen  http://rdaregistry.info/Elements/n/P80071
+",See discussion at issue.  We are interpreting the ID for a description of a manifestation as also identifying the manifestation.,"[manifestation]-->rdamo:P30004-->[minted nomen]-->rdan:P80068-->$a
+[nomen]-->rdan:P80071-->""Identifier derived from a National Bibliographic agency control number for a description of this manifestation""
+LNA 2025-02-17",,
+1,done,16,NATIONAL BIBLIOGRAPHIC AGENCY CONTROL NUMBER (R),National bibliographic agency,*,,Undefined,*,,,,z,Canceled or invalid record control number (R),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,"IRI (minted nomen) - 
+Has nomen string http://rdaregistry.info/Elements/n/P80068 
+Note on nomen  http://rdaregistry.info/Elements/n/P80071
+Nomen status  of identification http://rdaregistry.info/Elements/n/P80168
+",See discussion at issue.  We are interpreting the identifier for a description of a manifestation as also identifying the manifestation.  This is a cancelled/invalid number.,"[manifestation]-->rdamo:P30004-->[minted nomen]-->rdan:P80068-->$z
+[nomen]-->rdano:P80168--><http://id.loc.gov/vocabulary/mstatus/cancinv> 
+[nomen]-->rdan:P80071-->""Identifier derived from a National Bibliographic agency control number for a description of this manifestation""
+LNA 2025-02-17",,
+2,done,16,NATIONAL BIBLIOGRAPHIC AGENCY CONTROL NUMBER (R),National bibliographic agency,*,Agency identified in subfield $2 or Library and Archives Canada,Undefined,7,Undefined,,,2,Source (NR),,,,,,,http://rdaregistry.info/Elements/n/P80075,is assigned by corporate body,IRI ,"$2 is not defined as a scheme, but rather the identifier for a source agency assinging the record control number","[nomen minted for $a or $z)-->rdano:P80075-->[lookup symbol in $2 in http://id.loc.gov/vocabulary/organizations , plug in IRI for organization here]
+LNA 2025-02-17","We don't anticipate a $2 appearing in first indicator # (blank) records.  If one does, this may result in failure to map the ""is assigned by corporate body"" property for that field.  If a symbol assigned by LAC is in the $2, we may not be able to look it up at id.loc.gov.  We can still create an assigned by property for LAC based on indicator 1 = # (blank)
+LNA 2025-02-17","Lookup for LC Cultural Heritage Organizations not currently implemented  -SH 2025-04-15
+LC Cultural Heritage Organizations doesn't follow the same pattern as other LC lookups implemented. Incorporating this lookup will need to be taken up in a later phase. -SH 2025-04-22"
+3,done,16,NATIONAL BIBLIOGRAPHIC AGENCY CONTROL NUMBER (R),National bibliographic agency,#,Library and Archives Canada,Undefined,#,Undefined,,,*,*,,,,,,,http://rdaregistry.info/Elements/n/P80075,is assigned by corporate body,IRI ,"If indicator 1 is # (blank), Library and Archives Canada is the assigning agency.  ","[nomen minted for $a or $z)-->rdano:P80075--><http://id.loc.gov/rwo/agents/no2004037399>
+LNA 2025-02-17",,

@@ -1,13 +1,13 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,first pass,86,GOVERNMENT DOCUMENT CLASSIFICATION NUMBER (R),Number source,*, ,Undefined,*,,,,a,Classification number (NR),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,IRI,,"[Manifestation]-->rdamo:P30004-->[Nomen]
-[Nomen]-->rdand:P80068-->{$a}, {$b} 
+0,done,86,GOVERNMENT DOCUMENT CLASSIFICATION NUMBER (R),Number source,*, ,Undefined,*,,,,a,Classification number (NR),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,IRI,,"[Manifestation]-->rdamo:P30004-->[Nomen]
+[Nomen]-->rdand:P80068-->{$a}
 [Nomen]-->rdand:P80069-->[URI for code source specified in 1st indicator or $2 if 1st indicator is #]",,
-1,first pass,86,GOVERNMENT DOCUMENT CLASSIFICATION NUMBER (R),Number source,*, ,Undefined,*,,,,z,Canceled/invalid classification number (R),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,IRI,,"[Manifestation]-->rdamo:P30004-->[Nomen]
-[Nomen]-->rdand:P80068-->{$a}, {$b} 
+1,done,86,GOVERNMENT DOCUMENT CLASSIFICATION NUMBER (R),Number source,*, ,Undefined,*,,,,z,Canceled/invalid classification number (R),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,IRI,,"[Manifestation]-->rdamo:P30004-->[Nomen]
+[Nomen]-->rdand:P80068-->{$z}
 [Nomen]-->rdand:P80069-->[URI for code source specified in 1st indicator or $2 if 1st indicator is #]
 [Nomen]-->rdan:P80168--><http://id.loc.gov/vocabulary/mstatus/cancinv>",,
-2,first pass,86,GOVERNMENT DOCUMENT CLASSIFICATION NUMBER (R),Number source,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,Identifier,, ,,
-3,first pass,86,GOVERNMENT DOCUMENT CLASSIFICATION NUMBER (R),Number source,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,IRI,,,,
+2,done,86,GOVERNMENT DOCUMENT CLASSIFICATION NUMBER (R),Number source,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,Identifier,, ,,
+3,done,86,GOVERNMENT DOCUMENT CLASSIFICATION NUMBER (R),Number source,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,IRI,,,,
 4,delete,86,GOVERNMENT DOCUMENT CLASSIFICATION NUMBER (R),Number source,0,Superintendent of Documents Classification System,Undefined,#,Undefined,,,2,Number source (NR),,,,,,,,,,,,,
 5,delete,86,GOVERNMENT DOCUMENT CLASSIFICATION NUMBER (R),Number source,0,Superintendent of Documents Classification System,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
 6,delete,86,GOVERNMENT DOCUMENT CLASSIFICATION NUMBER (R),Number source,0,Superintendent of Documents Classification System,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,

@@ -1,92 +1,102 @@
-,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,$1|$0,,,,Identified and approved source in $2,,,,http://www.rdaregistry.info/Elements/w/object/#P10331,has authorized access point for work,IRI,,"<ManifestationIRI> has expression manifested <ExpressionIRI>
+,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
+0,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,$1|$0,,,,Identified and approved source in $2,,,,http://www.rdaregistry.info/Elements/w/object/#P10331,has authorized access point for work,IRI,"<ManifestationIRI> has expression manifested <ExpressionIRI>
 <ExpressionIRI> has work expressed <$1>
 <$1> rdawd:P10002 ""stringified $0"" .// has identifier for work
-<$1> has AAP for Associated Work ""value of adknp""",,Do not include $h; do not include Expression subfield for an AP for a single part work
-1,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,$1|$0,,,,Identified and unapproved source in $2,,,,http://www.rdaregistry.info/Elements/w/object/#P10331,has authorized access point for work,IRI,,"<ManifestationIRI> has expression manifested <ExpressionIRI>
+<$1> has AAP for Associated Work ""value of adknp"" --LA
+Follow Headings Mapping Table for AAP. -CEY, 2025-06-10",,Do not include $h; do not include Expression subfield for an AP for a single part work
+1,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,$1|$0,,,,Identified and unapproved source in $2,,,,http://www.rdaregistry.info/Elements/w/object/#P10331,has authorized access point for work,IRI,"<ManifestationIRI> has expression manifested <ExpressionIRI>
 <ExpressionIRI> has work expressed <WorkIRI>
 <WorkIRI> rdawd:P10002 ""stringified $0"" .// has identifier for work
 <WorkIRI> rdawd:P10002 ""stringified $1"" .// has identifier for work
 <WorkIRI> has AP for Associated Work <NomenIRI>
 <NomenIRI> has nomen string ""value of adknp""
-<NomenIRI> has scheme of nomen <transform>",,Do not include $h; do not include Expression subfield for an AP for a single part work
-2,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,$1|$0,,,,No source in $2 with approved $1,,,,http://www.rdaregistry.info/Elements/w/object/#P10331,has authorized access point for work,IRI,,"<ManifestationIRI> has expression manifested <ExpressionIRI>
+<NomenIRI> has scheme of nomen <transform>
+
+Follow Headings Mapping Table for AP. -CEY, 2025-06-10",,Do not include $h; do not include Expression subfield for an AP for a single part work
+2,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,$1|$0,,,,No source in $2 with approved $1,,,,http://www.rdaregistry.info/Elements/w/object/#P10331,has authorized access point for work,IRI,"<ManifestationIRI> has expression manifested <ExpressionIRI>
 <ExpressionIRI> has work expressed <$1>
 <$1> rdawd:P10002 ""stringified $0"" .// has identifier for work
-<$1> has AAP for Work ""value of adknp""",,Do not include $h; do not include Expression subfield for an AP for a single part work
-3,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,$1|$0,,,,No source in $2 with unapproved $1,,,,http://www.rdaregistry.info/Elements/w/object/#P10331,has authorized access point for work,IRI,,"<ManifestationIRI> has expression manifested <ExpressionIRI>
+<$1> has AAP for Work ""value of adknp""
+
+Follow Headings Mapping Table for AAP. -CEY, 2025-06-10 ",,Do not include $h; do not include Expression subfield for an AP for a single part work
+3,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,$1|$0,,,,No source in $2 with unapproved $1,,,,http://www.rdaregistry.info/Elements/w/object/#P10331,has authorized access point for work,IRI,"<ManifestationIRI> has expression manifested <ExpressionIRI>
 <ExpressionIRI> has work expressed <WorkIRI>
 <WorkIRI> rdawd:P10002 ""stringified $0"" .// has identifier for work
 <WorkIRI> rdawd:P10002 ""stringified $1"" .// has identifier for work
-<WorkIRI> has AP for Associated Work  ""value of adknp""",,Do not include $h; do not include Expression subfield for an AP for a single part work
-4,delete,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,$1|$0,,,,no $2,$1|$0 from id.loc.gov,,,http://www.rdaregistry.info/Elements/w/object/#P10331,has authorized access point for work,IRI,,"<ManifestationIRI> has expression manifested <ExpressionIRI>
+<WorkIRI> has AP for Associated Work  ""value of adknp""
+
+Follow Headings Mapping Table for AP.--CEY, 2025-06-10",,Do not include $h; do not include Expression subfield for an AP for a single part work
+4,delete,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,$1|$0,,,,$1|$0,contains(http://id.loc.gov),not($2),,http://www.rdaregistry.info/Elements/w/object/#P10331,has authorized access point for work,IRI,"<ManifestationIRI> has expression manifested <ExpressionIRI>
 <ExpressionIRI> has work expressed <$1|$0> 
-<$1|$0> has AAP for Work ""value of adknp""",, 
-5,delete,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,$1|$0,,,,no $2,$1|$0 not from id.loc.gov,,,https://www.rdaregistry.info/Elements/w/datatype/#P10328,has  access point for work,IRI,,"<ManifestationIRI> has expression manifested <ExpressionIRI>
+<$1|$0> has AAP for Work ""value of adknp""
+
+Follow Headings Mapping Table for AAP. --CEY, 2025-06-10",, 
+5,delete,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,$1|$0,,,,$1|$0,not contains(http://id.loc.gov),not($2),,https://www.rdaregistry.info/Elements/w/datatype/#P10328,has access point for work,IRI,"<ManifestationIRI> has expression manifested <ExpressionIRI>
 <ExpressionIRI> has work expressed <$1|$0> 
-<$1|$0> has AP for Work ""value of adknp""",,Do not include $h; do not include Expression subfield for an AP for a single part work
-6,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,adknp,,,,No source in $2 with approved $1,,no $1 or $0 that can be converted into a rwo uri,,http://www.rdaregistry.info/Elements/w/object/#P10331,has authorized access point for work,IRI,,"<ManifestationIRI> has expression manifested <ExpressionIRI>
+<$1|$0> has AP for Work ""value of adknp""
+
+Follow Headings Mapping Table for AP. --CEY, 2025-06-10",,Do not include $h; do not include Expression subfield for an AP for a single part work
+6,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,adknp,,,,No source in $2 with approved $1,,no $1 or $0 that can be converted into a rwo uri,,http://www.rdaregistry.info/Elements/w/object/#P10331,has authorized access point for work,IRI,"<ManifestationIRI> has expression manifested <ExpressionIRI>
 <ExpressionIRI> has work expressed <WorkIRI> 
 <WorkIRI> has AAP for Work <NomenIRI>
 <NomenIRI> has nomen string ""value of adknp"" in order of appearance
-<NomenIRI> has scheme of nomen <IRI for $2>
-",, 
-7,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,adknp,,,,No source in $2 with unapproved $1,,no $1 or $0 that can be converted into a rwo uri,,http://www.rdaregistry.info/Elements/w/object/#P10331,has authorized access point for work,IRI,,"<ManifestationIRI> has expression manifested <ExpressionIRI>
+<NomenIRI> has scheme of nomen <IRI for $2>",, 
+7,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,adknp,,,,No source in $2 with unapproved $1,,no $1 or $0 that can be converted into a rwo uri,,http://www.rdaregistry.info/Elements/w/object/#P10331,has authorized access point for work,IRI,"<ManifestationIRI> has expression manifested <ExpressionIRI>
 <ExpressionIRI> has work expressed <WorkIRI> 
 <WorkIRI> has AP for Work ""value of adknp""
 ",, 
-8,delete,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,adknp,,,,no $2 and  040 $b = eng, ,no $1 or $0 that can be converted into a rwo uri,,http://www.rdaregistry.info/Elements/w/object/#P10331,has authorized access point for work,IRI,,"<ManifestationIRI> has expression manifested <ExpressionIRI>
+8,delete,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,adknp,,,,no $2 and  040 $b = eng, ,no $1 or $0 that can be converted into a rwo uri,,http://www.rdaregistry.info/Elements/w/object/#P10331,has authorized access point for work,IRI,"<ManifestationIRI> has expression manifested <ExpressionIRI>
 <ExpressionIRI> has work expressed <WorkIRI> 
 <WorkIRI> has AAP for Work <NomenIRI>
 <NomenIRI> has nomen string ""value of adknp"" in order of appearance
 <NomenIRI> has scheme of nomen <http://id.loc.gov/authorities/names >
 ",, 
-9,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,adknp,,,,no $2, ,no $1 or $0 that can be converted into a rwo uri,,https://www.rdaregistry.info/Elements/w/datatype/#P10328,has  access point for work,IRI,,"<ManifestationIRI> has expression manifested <ExpressionIRI>
+9,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,adknp,,,,no $2, ,no $1 or $0 that can be converted into a rwo uri,,https://www.rdaregistry.info/Elements/w/datatype/#P10328,has  access point for work,IRI,"<ManifestationIRI> has expression manifested <ExpressionIRI>
 <ExpressionIRI> has work expressed <WorkIRI> 
 <WorkIRI> has AP for Work  ""value of adknp""
 ",, 
-10,Below is mapped by Sita,,,,,,,,,,,,,,,,,,,,,,,,,
-11,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,a,Uniform title (NR),,,,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,unstructured,,"combine with $g,$k",,
-12,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,a,Uniform title (NR),,,,,,,http://rdaregistry.info/Elements/w/P10223,has preferred title of work,unstructured,,"combine with $g,$k",,
-13,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,a,Uniform title (NR),,,,,,,http://rdaregistry.info/Elements/e/P20312,has title of expression,unstructured,,"combine with $g, $m,$o,$r, $s",,
-14,not mapped,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,#,Nonfiling characters not specified [OBSOLETE],Undefined,#,Undefined,,,d,Date of treaty signing (R),,,,,,,,,,,,,
-15,?,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,0-9,Number of nonfiling characters present,Undefined,#,Undefined,,,d,Date of treaty signing (R),,,,,,,http://rdaregistry.info/Elements/w/P10219,has date of work,structured,,,,
-16,not mapped,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,#,Nonfiling characters not specified [OBSOLETE],Undefined,#,Undefined,,,g,Miscellaneous information (R),,,,,,,,,,,,,
-17,?,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,0-9,Number of nonfiling characters present,Undefined,#,Undefined,,,g,Miscellaneous information (R),,,,,,,http://rdaregistry.info/Elements/w/P10330,has note on work,unstructured,,,,
-18,not mapped,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,#,Nonfiling characters not specified [OBSOLETE],Undefined,#,Undefined,,,h,Medium (NR),,,,,,,,,,,,,
-19,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,0-9,Number of nonfiling characters present,Undefined,#,Undefined,,,h,Medium (NR),,,,,,,http://rdaregistry.info/Elements/m/P30002,has media type,structured/iri,,,,
-20,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,f,Date of a work (NR),,,,,,,http://rdaregistry.info/Elements/w/P10219,has date of work,structured,,,,
-21,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,f,Date of a work (NR),,,,,,,http://rdaregistry.info/Elements/w/P10317,has related timespan of work,structured,,,,
-22,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,f,Date of a work (NR),,,,,,,http://rdaregistry.info/Elements/e/P20214,has date of expression,structured,,,,
-23,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,f,Date of a work (NR),,,,,,,http://rdaregistry.info/Elements/e/P20307,has related timespan of expression,structured,,,,
-24,not mapped,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,#,Nonfiling characters not specified [OBSOLETE],Undefined,#,Undefined,,,k,Form subheading (R),,,,,,,,,,,,,
-25,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,0-9,Number of nonfiling characters present,Undefined,#,Undefined,,,k,Form subheading (R),,,,,,,http://rdaregistry.info/Elements/w/P10222,has nature of content,structured,,,,
-26,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,l,Language of a work (NR),,,,,,,http://rdaregistry.info/Elements/e/P20006,has language of expression,structured/iri,,,,
-27,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,m,Medium of performance for music (R),,,,,,,http://rdaregistry.info/Elements/e/P20215,has medium of performance of musical content,identifier,,,,
-28,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,n,Number of part/section of a work (R),,,,,,,http://rdaregistry.info/Elements/w/P10012,has numbering of part,unstructured,,,,
-29,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,n,Number of part/section of a work (R),,,,,,,http://rdaregistry.info/Elements/w/P10079,has numeric designation of musical work,identifier,,,,
-30,not mapped,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,#,Nonfiling characters not specified [OBSOLETE],Undefined,#,Undefined,,,o,Arranged statement for music (NR),,,,,,,,,,,,,
-31,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,0-9,Number of nonfiling characters present,Undefined,#,Undefined,,,o,Arranged statement for music (NR),,,,,,,http://rdaregistry.info/Elements/e/P20572,has designation of version,unstructured,,,,
-32,not mapped,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,#,Nonfiling characters not specified [OBSOLETE],Undefined,#,Undefined,,,p,Name of part/section of a work (R),,,,,,,,,,,,,
-33,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,0-9,Number of nonfiling characters present,Undefined,#,Undefined,,,p,Name of part/section of a work (R),,,,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,unstructured,,,,
-34,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,r,Key for music (NR),,,,,,,http://rdaregistry.info/Elements/e/P20326,has key of expression,structured,,,,
-35,not mapped,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,#,Nonfiling characters not specified [OBSOLETE],Undefined,#,Undefined,,,s,Version (R),,,,,,,,,,,,,
-36,?,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,0-9,Number of nonfiling characters present,Undefined,#,Undefined,,,s,Version (R),,,,,,,http://rdaregistry.info/Elements/e/P20572,has designation of version,unstructured,,,,
-37,not mapped,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,#,Nonfiling characters not specified [OBSOLETE],Undefined,#,Undefined,,,t,Title of a work (NR),,,,,,,,,,,,,
-38,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,0-9,Number of nonfiling characters present,Undefined,#,Undefined,,,t,Title of a work (NR),,,,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,unstructured,,,,
-39,not mapped,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,#,Nonfiling characters not specified [OBSOLETE],Undefined,#,Undefined,,,2,Source of heading or term (NR),,,,,,,,,,,,,
-40,?,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,#,Nonfiling characters not specified [OBSOLETE],Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,http://rdaregistry.info/Elements/e/P20065,has script,identifier,,,,
-41,not mapped,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,#,Nonfiling characters not specified [OBSOLETE],Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-42,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10002,has identifier for work,identifier,,,,
-43,delete?,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,,,,,
-44,delete?,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10223,has preferred title of work,,,,,
-45,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/e/P20002,has identifier for expression,identifier,,,,
-46,delete?,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/e/P20312,has title of expression,,,,,
-47,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10002,has identifier for work,IRI,,,,
-48,delete?,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,,,,,
-49,delete?,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10223,has preferred title of work,,,,,
-50,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/e/P20002,has identifier for expression,IRI,,,,
-51,delete?,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/e/P20312,has title of expression,,,,,
-52,loss,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,0-9,Number of nonfiling characters present,Undefined,#,Undefined,,,2,Source of heading or term (NR),,,,,,,,,,,,,Which VES?
-53,?,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,0-9,Number of nonfiling characters present,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,http://rdaregistry.info/Elements/e/P20065,has script,identifier,,,,
-54,not mapped,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,0-9,Number of nonfiling characters present,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+10,Below is mapped by Sita,,,,,,,,,,,,,,,,,,,,,,,,
+11,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,a,Uniform title (NR),,,,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,unstructured,"combine with $g,$k",,
+12,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,a,Uniform title (NR),,,,,,,http://rdaregistry.info/Elements/w/P10223,has preferred title of work,unstructured,"combine with $g,$k",,
+13,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,a,Uniform title (NR),,,,,,,http://rdaregistry.info/Elements/e/P20312,has title of expression,unstructured,"combine with $g, $m,$o,$r, $s",,
+14,not mapped,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,#,Nonfiling characters not specified [OBSOLETE],Undefined,#,Undefined,,,d,Date of treaty signing (R),,,,,,,,,,,,
+15,?,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,0-9,Number of nonfiling characters present,Undefined,#,Undefined,,,d,Date of treaty signing (R),,,,,,,http://rdaregistry.info/Elements/w/P10219,has date of work,structured,,,
+16,not mapped,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,#,Nonfiling characters not specified [OBSOLETE],Undefined,#,Undefined,,,g,Miscellaneous information (R),,,,,,,,,,,,
+17,?,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,0-9,Number of nonfiling characters present,Undefined,#,Undefined,,,g,Miscellaneous information (R),,,,,,,http://rdaregistry.info/Elements/w/P10330,has note on work,unstructured,,,
+18,not mapped,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,#,Nonfiling characters not specified [OBSOLETE],Undefined,#,Undefined,,,h,Medium (NR),,,,,,,,,,,,
+19,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,0-9,Number of nonfiling characters present,Undefined,#,Undefined,,,h,Medium (NR),,,,,,,http://rdaregistry.info/Elements/m/P30002,has media type,structured/iri,,,
+20,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,f,Date of a work (NR),,,,,,,http://rdaregistry.info/Elements/w/P10219,has date of work,structured,,,
+21,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,f,Date of a work (NR),,,,,,,http://rdaregistry.info/Elements/w/P10317,has related timespan of work,structured,,,
+22,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,f,Date of a work (NR),,,,,,,http://rdaregistry.info/Elements/e/P20214,has date of expression,structured,,,
+23,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,f,Date of a work (NR),,,,,,,http://rdaregistry.info/Elements/e/P20307,has related timespan of expression,structured,,,
+24,not mapped,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,#,Nonfiling characters not specified [OBSOLETE],Undefined,#,Undefined,,,k,Form subheading (R),,,,,,,,,,,,
+25,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,0-9,Number of nonfiling characters present,Undefined,#,Undefined,,,k,Form subheading (R),,,,,,,http://rdaregistry.info/Elements/w/P10222,has nature of content,structured,,,
+26,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,l,Language of a work (NR),,,,,,,http://rdaregistry.info/Elements/e/P20006,has language of expression,structured/iri,,,
+27,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,m,Medium of performance for music (R),,,,,,,http://rdaregistry.info/Elements/e/P20215,has medium of performance of musical content,identifier,,,
+28,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,n,Number of part/section of a work (R),,,,,,,http://rdaregistry.info/Elements/w/P10012,has numbering of part,unstructured,,,
+29,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,n,Number of part/section of a work (R),,,,,,,http://rdaregistry.info/Elements/w/P10079,has numeric designation of musical work,identifier,,,
+30,not mapped,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,#,Nonfiling characters not specified [OBSOLETE],Undefined,#,Undefined,,,o,Arranged statement for music (NR),,,,,,,,,,,,
+31,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,0-9,Number of nonfiling characters present,Undefined,#,Undefined,,,o,Arranged statement for music (NR),,,,,,,http://rdaregistry.info/Elements/e/P20572,has designation of version,unstructured,,,
+32,not mapped,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,#,Nonfiling characters not specified [OBSOLETE],Undefined,#,Undefined,,,p,Name of part/section of a work (R),,,,,,,,,,,,
+33,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,0-9,Number of nonfiling characters present,Undefined,#,Undefined,,,p,Name of part/section of a work (R),,,,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,unstructured,,,
+34,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,r,Key for music (NR),,,,,,,http://rdaregistry.info/Elements/e/P20326,has key of expression,structured,,,
+35,not mapped,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,#,Nonfiling characters not specified [OBSOLETE],Undefined,#,Undefined,,,s,Version (R),,,,,,,,,,,,
+36,?,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,0-9,Number of nonfiling characters present,Undefined,#,Undefined,,,s,Version (R),,,,,,,http://rdaregistry.info/Elements/e/P20572,has designation of version,unstructured,,,
+37,not mapped,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,#,Nonfiling characters not specified [OBSOLETE],Undefined,#,Undefined,,,t,Title of a work (NR),,,,,,,,,,,,
+38,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,0-9,Number of nonfiling characters present,Undefined,#,Undefined,,,t,Title of a work (NR),,,,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,unstructured,,,
+39,not mapped,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,#,Nonfiling characters not specified [OBSOLETE],Undefined,#,Undefined,,,2,Source of heading or term (NR),,,,,,,,,,,,
+40,?,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,#,Nonfiling characters not specified [OBSOLETE],Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,http://rdaregistry.info/Elements/e/P20065,has script,identifier,,,
+41,not mapped,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,#,Nonfiling characters not specified [OBSOLETE],Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,
+42,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10002,has identifier for work,identifier,,,
+43,delete?,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,,,,
+44,delete?,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10223,has preferred title of work,,,,
+45,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/e/P20002,has identifier for expression,identifier,,,
+46,delete?,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/e/P20312,has title of expression,,,,
+47,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10002,has identifier for work,IRI,,,
+48,delete?,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,,,,
+49,delete?,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10223,has preferred title of work,,,,
+50,first pass,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/e/P20002,has identifier for expression,IRI,,,
+51,delete?,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/e/P20312,has title of expression,,,,
+52,loss,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,0-9,Number of nonfiling characters present,Undefined,#,Undefined,,,2,Source of heading or term (NR),,,,,,,,,,,,Which VES?
+53,?,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,0-9,Number of nonfiling characters present,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,http://rdaregistry.info/Elements/e/P20065,has script,identifier,,,
+54,not mapped,130.0,MAIN ENTRY--UNIFORM TITLE (NR),Nonfiling characters,0-9,Number of nonfiling characters present,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,

@@ -1,8 +1,9 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
 0,delete,26,FINGERPRINT IDENTIFIER (R),Undefined,*,,Undefined,*,,,,a,First and second groups of characters (NR),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,identifier,,,,
-1,done,26,FINGERPRINT IDENTIFIER (R),Undefined,*,,Undefined,*,,,,"a,b,c,d,e, 2",,,,,,,,http://rdaregistry.info/Elements/m/P30296,has fingerprint,IRI,,"[manifestation] P30296 has fingerprint [nomen]
-[nomen] P80068 has nomen string ""First and second groups of characters: "" + [value of $a], ""Third and fourth groups of characters: "" + [value of $b], ""Date: "" + [value of $c], ""Number of volume or part: "" + [value of $d], "" Unparsed fingerprint: "" + [value of $e]
-[nomen] P80069 has scheme of nomen [value of $2]",,
+1,done,26,FINGERPRINT IDENTIFIER (R),Undefined,*,,Undefined,*,,,,"a,b,c,d,2",,,,,,,,http://rdaregistry.info/Elements/m/P30296,has fingerprint,IRI (nomen),,"[manifestation] P30296 has fingerprint [nomen]
+[nomen] P80068 has nomen string ""[value of $a] +[value of $b] +[value of $c] + [value of d]""
+[nomen] P80071 has note on nomen ""First and second groups of characters: + [value of $a]; Third and fourth groups of characters + [value of $b]; Date: + [value of $c]; Number of volume or part: + [value of $d] .
+[nomen] P80069 has scheme of nomen [value of $2] ",,
 2,delete,26,FINGERPRINT IDENTIFIER (R),Undefined,*,,Undefined,*,,,,a,First and second groups of characters (NR),,,,,,,http://rdaregistry.info/Elements/m/P30296,has fingerprint,,,,,
 3,delete,26,FINGERPRINT IDENTIFIER (R),Undefined,*,,Undefined,*,,,,b,Third and fourth groups of characters (NR),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,,,,,
 4,delete,26,FINGERPRINT IDENTIFIER (R),Undefined,*,,Undefined,*,,,,b,Third and fourth groups of characters (NR),,,,,,,http://rdaregistry.info/Elements/m/P30296,has fingerprint,,,,,
@@ -10,8 +11,10 @@
 6,delete,26,FINGERPRINT IDENTIFIER (R),Undefined,*,,Undefined,*,,,,c,Date (NR),,,,,,,http://rdaregistry.info/Elements/m/P30296,has fingerprint,,,,,
 7,delete,26,FINGERPRINT IDENTIFIER (R),Undefined,*,,Undefined,*,,,,d,Number of volume or part (R),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,,,,,
 8,delete,26,FINGERPRINT IDENTIFIER (R),Undefined,*,,Undefined,*,,,,d,Number of volume or part (R),,,,,,,http://rdaregistry.info/Elements/m/P30296,has fingerprint,,,,,
-9,delete,26,FINGERPRINT IDENTIFIER (R),Undefined,*,,Undefined,*,,,,e,Unparsed fingerprint (NR),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,,,,,
-10,delete,26,FINGERPRINT IDENTIFIER (R),Undefined,*,,Undefined,*,,,,e,Unparsed fingerprint (NR),,,,,,,http://rdaregistry.info/Elements/m/P30296,has fingerprint,,,,,
+9,delete,26,FINGERPRINT IDENTIFIER (R),Undefined,*,,Undefined,*,,,,e,Unparsed fingerprint (NR),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,unstructured,,[value of $e],,
+10,done,26,FINGERPRINT IDENTIFIER (R),Undefined,*,,Undefined,*,,,,e,Unparsed fingerprint (NR),,,,,,,http://rdaregistry.info/Elements/m/P30296,has fingerprint,IRI (nomen),,"[manifestation] P30296 has fingerprint [nomen]
+[nomen] P80068 has nomen string [value of $e]
+[nomen] P80069 has scheme of nomen [value of $2]",,
 11,delete,26,FINGERPRINT IDENTIFIER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,2,Source (NR),,,,,,,,,,,,,
 12,done,26,FINGERPRINT IDENTIFIER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,5,Institution to which field applies (R),,,,,,,http://rdaregistry.info/Elements/m/P30296,has fingerprint,mint itemIRI,,"Manifestation rdamo:P30103 [has exemplar of manifestation] ex:Item[MintIRI]
 ex:Item",,"See decision on $5 

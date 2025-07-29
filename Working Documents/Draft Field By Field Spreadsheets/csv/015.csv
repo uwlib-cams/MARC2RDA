@@ -1,7 +1,27 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,,15,NATIONAL BIBLIOGRAPHY NUMBER (R),Undefined,*,,Undefined,*,,,,a,National bibliography number (R),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,,,,,
-1,,15,NATIONAL BIBLIOGRAPHY NUMBER (R),Undefined,*,,Undefined,*,,,,q,Qualifying information (R),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,,,,,
-2,,15,NATIONAL BIBLIOGRAPHY NUMBER (R),Undefined,*,,Undefined,*,,,,z,Canceled/Invalid national bibliography number (R),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,,,,,
-3,,15,NATIONAL BIBLIOGRAPHY NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,2,Source (NR),,,,,,,,,,,,,
-4,,15,NATIONAL BIBLIOGRAPHY NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-5,,15,NATIONAL BIBLIOGRAPHY NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+0,done,15,NATIONAL BIBLIOGRAPHY NUMBER (R),Undefined,*,,Undefined,*,,,,a,National bibliography number (R),,,,,,,https://www.rdaregistry.info/Elements/m/object/#P30004,has identifier for manifestation,"IRI (minted Nomen) with Nomen properties
+- has nomen string https://www.rdaregistry.info/Elements/n/#P80068   
+","Use Nomen properties to capture number as an identifier and associated data.  
+LA 12/30/2024","[Manifestation]-->rdamo:P30004-->[Nomen]-->rdan:P80068-->($a) . .
+LA 12/30/2024",,"This mapping does not attempt to capture the relationship from the National Bibliography description associated with the number, as a source, to data in the MARC record.  LA 12/30/2024"
+1,done,15,NATIONAL BIBLIOGRAPHY NUMBER (R),Undefined,*,,Undefined,*,,,,q,Qualifying information (R),,,,,,,https://www.rdaregistry.info/Elements/n/#P80071,has note on nomen,unstructured,Apply to minted Nomen from $a,"[Nomen]-->rdan:P80071-->($q)
+LA 12/30/2024",,
+2,done,15,NATIONAL BIBLIOGRAPHY NUMBER (R),Undefined,*,,Undefined,*,,,,z,Canceled/Invalid national bibliography number (R),,,,,,,http://rdaregistry.info/Elements/m/P30004,has identifier for manifestation,"IRI (minted Nomen) with Nomen properties
+- has nomen string https://www.rdaregistry.info/Elements/n/#P80068  
+- has scheme of nomen (from $2) https://www.rdaregistry.info/Elements/n/#P80069 
+- has note on nomen (if $q) is present and follows $z in sequence)  https://www.rdaregistry.info/Elements/n/#P80071
+- has status of nomen  http://rdaregistry.info/Elements/n/#P80168
+
+LA 12/30/2024","Mapped to current Manifestation, but with status of nomen cancelled/invalid","Manifestation]-->rdamo:P30004-->[Nomen]-->rdan:P80068-->($z) .  [Nomen]--rdan:P80069-->($2) . 
+
+[Nomen]-->rdan:P80071-->($q).
+NOTE:  both $a and $z may appear in same tag.  If this is the case, only map a $q to the canceled/invalid/ nomen if it follows $z in sequence.  
+
+[Nomen]--rdan:P80168--><http://id.loc.gov/vocabulary/mstatus/cancinv> 
+LA 10/11/2024",,
+3,done,15,NATIONAL BIBLIOGRAPHY NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,2,Source (NR),,,,,,,https://www.rdaregistry.info/Elements/n/#P80069,has scheme of nomen ,structured,Appliy to minted nomen from $a or $z using data from LC Source Codes table,"Lookup code in LC table https://www.loc.gov/standards/sourcelist/national-bibliography.html; and create two properties, one with the code and one with the citation.
+[Nomen]--rdan:P80069-->($2)
+[Nomen]--rdan:p80069-->""[textual citation of bibliography]""
+LA 12/30/2024",,
+4,not mapped,15,NATIONAL BIBLIOGRAPHY NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,"subfield contains linkage code which is not mappable, but mapping of linked 880 tag may occur and may utilize contents of the $6.  LA 12/30/24"
+5,not mapped,15,NATIONAL BIBLIOGRAPHY NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,Decision:  https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#id3-8-field-link-and-sequence-number 

@@ -1,6 +1,3 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
 0,done,306,PLAYING TIME (NR),Undefined,*,,Undefined,*,,,,a,Playing time (R),,,,,,,http://rdaregistry.info/Elements/e/P20219,has duration,structured description,,"[Expression]-->rdae:P20219-->[value of $a] -- ZP 3/26/2022
 Use datatype xsd:time, convert hhmmss to hh:mm:ss -- ZP 4/20/2023",,
-1,delete,306,PLAYING TIME (NR),Undefined,*,,Undefined,*,,,,a,Playing time (R),,,,,,,http://rdaregistry.info/Elements/e/P20307,has related timespan of expression,,,,,Not specific enough -- ZP 3/26/2022
-2,not mapped,306,PLAYING TIME (NR),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-3,not mapped,306,PLAYING TIME (NR),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,

@@ -1,10 +1,10 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,reviewed,338,CARRIER TYPE (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/m/P30001,has carrier type,IRI,,"[Manifestation] rdamo:P30001 [value of $1]
+0,done,338,CARRIER TYPE (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/m/P30001,has carrier type,IRI,,"[Manifestation] rdamo:P30001 [value of $1]
 PS 2024-7-11", ,
-1,reviewed,338,CARRIER TYPE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,0,starts with 'http',not($1),,http://rdaregistry.info/Elements/m/P30001,has carrier type,IRI, ,"If $0 starts with http, and there is no $1, map as [Manifestation] rdamo:P30001 [value of $0]
+1,done,338,CARRIER TYPE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,0,starts with 'http',not($1),,http://rdaregistry.info/Elements/m/P30001,has carrier type,IRI, ,"If $0 starts with http, and there is no $1, map as [Manifestation] rdamo:P30001 [value of $0]
 PS 2024-7-11", ,
-2,reviewed,338,CARRIER TYPE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,0,does not start with 'http',not($1),, , , , ,do not map a $0 that does not begin with 'http', ,
-3,reviewed,338,CARRIER TYPE (R),Undefined,*,,Undefined,*,,,,"a, b",Carrier type term (R),,,2,not(rdacarrier or rdact),"not($1, or $0 begnning with http)",,http://rdaregistry.info/Elements/m/P30001,has carrier type,IRI, ,"[Manifestation] rdam:P30001 skos:Concept(mintedIRI)
+2,done,338,CARRIER TYPE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,0,does not start with 'http',not($1),, , , , ,do not map a $0 that does not begin with 'http', ,
+3,done,338,CARRIER TYPE (R),Undefined,*,,Undefined,*,,,,"a, b",Carrier type term (R),,,2,not(rdacarrier or rdact),"not($1, or $0 begnning with http)",,http://rdaregistry.info/Elements/m/P30001,has carrier type,IRI, ,"[Manifestation] rdam:P30001 skos:Concept(mintedIRI)
 skos:Concept skos:prefLabel <$a or $b if no $a>
 skos:Concept skos:notation <$b>^^datatypeIRI
 skos:Concept skos:inScheme <$2>
@@ -12,17 +12,17 @@ skos:Concept skos:inScheme <$2>
 only include $b as skos:notation when pattern is $a$b$a$b
 mint a concept for each $a value present in the field, or in the case that it is all $b, for each $b value
 PS 2024-7-11",,
-4,reviewed,338,CARRIER TYPE (R),Undefined,*,,Undefined,*,,,,a,Carrier type term (R),,,2,rdact,"not($1, or $0 begnning with http)",,http://rdaregistry.info/Elements/m/P30001,has carrier type,IRI, ,"[Manifestation] rdam:P30001 [look up iri at https://www.rdaregistry.info/termList/RDACarrierType/ ] 
+4,done,338,CARRIER TYPE (R),Undefined,*,,Undefined,*,,,,a,Carrier type term (R),,,2,rdact,"not($1, or $0 begnning with http)",,http://rdaregistry.info/Elements/m/P30001,has carrier type,IRI, ,"[Manifestation] rdam:P30001 [look up iri at https://www.rdaregistry.info/termList/RDACarrierType/ ] 
 PS 2024-7-11",,
-5,reviewed,338,CARRIER TYPE (R),Undefined,*,,Undefined,*,,,,"a, b",Carrier type term (R),,,2,rdardacarrier,"not($1, or $0 begnning with http)",,http://rdaregistry.info/Elements/m/P30001,has carrier type,IRI, ,"[Manifestation] rdam:P30001 [IRI]
+5,done,338,CARRIER TYPE (R),Undefined,*,,Undefined,*,,,,"a, b",Carrier type term (R),,,2,rdardacarrier,"not($1, or $0 begnning with http)",,http://rdaregistry.info/Elements/m/P30001,has carrier type,IRI, ,"[Manifestation] rdam:P30001 [IRI]
 If pattern is $a$b$a$b... or all $b, IRIs can be derived from $b as https://id.loc.gov/vocabulary/carriers/[$b value]
 If pattern is all $a or not $a$b$a$b... lookup $a or $b value at https://id.loc.gov/vocabulary/carriers/
 PS 2024-7-11",,
-6,reviewed,338,CARRIER TYPE (R),Undefined,*,,Undefined,*,,,,a,Carrier type term (R),,,not($2), ,"not($1, or $0 begnning with http)",,http://rdaregistry.info/Elements/m/P30001,has carrier type,unstructed description, ,"[Manifestation] rdamd:P30001 [value of $a]
+6,done,338,CARRIER TYPE (R),Undefined,*,,Undefined,*,,,,a,Carrier type term (R),,,not($2), ,"not($1, or $0 begnning with http)",,http://rdaregistry.info/Elements/m/P30001,has carrier type,unstructed description, ,"[Manifestation] rdamd:P30001 [value of $a]
 PS 2024-7-11",,
-7,reviewed,338,CARRIER TYPE (R),Undefined,*,,Undefined,*,,,,b,Carrier type code (R),,,not($2),,"not($1, or $0 begnning with http)",,http://rdaregistry.info/Elements/m/P30001,has carrier type,unstructed  description, ,"[Manifestation] rdamd:P30001 [value of $b]
+7,done,338,CARRIER TYPE (R),Undefined,*,,Undefined,*,,,,b,Carrier type code (R),,,not($2),,"not($1, or $0 begnning with http)",,http://rdaregistry.info/Elements/m/P30001,has carrier type,unstructed  description, ,"[Manifestation] rdamd:P30001 [value of $b]
 PS 2024-7-11",,
-8,delete,338,CARRIER TYPE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,,,,,,,
+8,done,338,CARRIER TYPE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,structured description,,"[Manifestation] rdamd:P30137 ""Carrier type"" + value of $1|$0|concept|$b|$a + “applies to the manifestation''s” + [value of $3]",,
 9,not mapped,338,CARRIER TYPE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
 10,not mapped,338,CARRIER TYPE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
 11,delete,338,CARRIER TYPE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/m/P30001,has carrier type,identifier/IRI,value is an IRI if $2 contains 'rda',,Identifier or IRI that represents the carrier type for a manifestation,

@@ -11,9 +11,9 @@
 9,reviewed,33,DATE/TIME AND PLACE OF AN EVENT (R),Type of date in subfield $a,*,,Type of event,0,Capture,,,a,Formatted date/time (R),,,,,,,http://rdaregistry.info/Elements/e/P20004,has date of capture,structured description,,,,"Record a date of capture by giving the year, month, day, and time, as applicable."
 10,reviewed,33,DATE/TIME AND PLACE OF AN EVENT (R),Type of date in subfield $a,*,,Type of event,1,Broadcast,,,a,Formatted date/time (R),,,,,,,http://rdaregistry.info/Elements/e/P20214,has date of expression,structured description,,,,
 11,reviewed,33,DATE/TIME AND PLACE OF AN EVENT (R),Type of date in subfield $a,*,,Type of event,0,Capture,,,"b,c","Geographic classification area code (R),Geographic classification subarea code (R)",,,,,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,IRI,,"[Expression] → has place of capture → [Place] 
-[Place] → has identifier of place → [Nomen]
-[Nomen] → has nomen string → [""$b value"" + ""$c value""]
-[Nomen] → has scheme of nomen → [Library of Congress Classification--Class G]",,
+[Place] → has identifier of place/rdap:P70020 → [Nomen] 
+[Nomen] → has nomen string/rdand:P80068 → [""$b value"" + ""$c value""]
+[Nomen] → has scheme of nomen/rdano:P80069 → [Library of Congress Classification--Class G]",,
 12,delete,33,DATE/TIME AND PLACE OF AN EVENT (R),Type of date in subfield $a,*,,Type of event,2,Finding,,,"b,c","Geographic classification area code (R),Geographic classification subarea code (R)",,,,,,,http://rdaregistry.info/Elements/w/P10321,has subject place,IRI, ,,,
 13,reviewed,33,DATE/TIME AND PLACE OF AN EVENT (R),Type of date in subfield $a,*,,Type of event,1,Broadcast,,,"b,c","Geographic classification area code (R),Geographic classification subarea code (R)",,,,,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,IRI, ,"[Expression] → has related place of expression → [Place] 
 [Place] → has identifier of place → [Nomen]
@@ -34,18 +34,18 @@
 [Nomen] → has nomen string → [""$b value"" + ""$c value""]
 [Nomen] → has scheme of nomen → [Library of Congress Classification--Class G]
 ",,
-24,reviewed,33,DATE/TIME AND PLACE OF AN EVENT (R),Type of date in subfield $a,*,,Type of event,0,Capture,,,p,Place of event (R),,,no ($2|$0),,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,unstructured description,,"[Expression] → has place of capture → ""$p value""",,
+24,done,33,DATE/TIME AND PLACE OF AN EVENT (R),Type of date in subfield $a,*,,Type of event,0,Capture,,,p,Place of event (R),,,no ($2|$0),,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,unstructured description,,"[Expression] → has place of capture → ""$p value""",,
 25,reviewed,33,DATE/TIME AND PLACE OF AN EVENT (R),Type of date in subfield $a,*,,Type of event,0,Capture,,,"p, 2",Place of event (R),,,no $0,,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,IRI,,"[Expression] → has place of capture → [Place] 
 [Place] → has identifier of place → [Nomen]
 [Nomen] → has nomen string → [$p]
 [Nomen] → has scheme of nomen → [$2]",,
-26,reviewed,33,DATE/TIME AND PLACE OF AN EVENT (R),Type of date in subfield $a,*,,Type of event,1,Broadcast,,,p,Place of event (R),,,no ($2|$0),,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,unstructured description, ,"[Expression] → has related place of expression → ""$p value""",,
+26,done,33,DATE/TIME AND PLACE OF AN EVENT (R),Type of date in subfield $a,*,,Type of event,1,Broadcast,,,p,Place of event (R),,,no ($2|$0),,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,unstructured description, ,"[Expression] → has related place of expression → ""$p value""",,
 27,reviewed,33,DATE/TIME AND PLACE OF AN EVENT (R),Type of date in subfield $a,*,,Type of event,1,Broadcast,,,"p, 2",Place of event (R),,,no $0,,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,IRI, ,"[Expression] → has related place of expression → [Place] 
 [Place] → has access point of place → [Nomen]
 [Nomen] → has nomen string → [$p]
 [Nomen] → has scheme of nomen → [$2]
 ",,
-28,reviewed,33,DATE/TIME AND PLACE OF AN EVENT (R),Type of date in subfield $a,*,,Type of event,2,Finding,,,p,Place of event (R),,,no ($2|$0),,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,unstructured description, ,"[Work] → has related place of work → ""$p value""",,
+28,done,33,DATE/TIME AND PLACE OF AN EVENT (R),Type of date in subfield $a,*,,Type of event,2,Finding,,,p,Place of event (R),,,no ($2|$0),,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,unstructured description, ,"[Work] → has related place of work → ""$p value""",,
 29,reviewed,33,DATE/TIME AND PLACE OF AN EVENT (R),Type of date in subfield $a,*,,Type of event,2,Finding,,,"p, 2",Place of event (R),,,no $0,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,IRI, ,"[Work] → has related place of work → [Place] 
 [Place] → has  access point of place → [Nomen]
 [Nomen] → has nomen string → [$p]

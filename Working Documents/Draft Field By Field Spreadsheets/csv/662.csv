@@ -8,24 +8,24 @@ If $2 is approved source, use rdapo:P70045 .// has authorized access point for p
 - CP 2024-12-12",,
 1,reviewed,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,$1,,,,$1 is approved,,no $2,,https://www.rdaregistry.info/Elements/w/object/#P10321,has subject place,IRI,,"<work> rdawo:P10322 <$1> . // has subject place
 <$1> rdapd:P70018 ""stripEndStop(concatenateOA($a, $b, $c, $d, $f, $g,) or ($h))” . // has access point for place",,
-2,reviewed,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,$0,,,,$0 type is right and no $1,,$2,,https://www.rdaregistry.info/Elements/w/object/#P10321,has subject place,IRI,,"<work> rdawo:P10322 <$0> . // has subject place
+2,done,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,$0,,,,$0 type is right and no $1,,$2,,https://www.rdaregistry.info/Elements/w/object/#P10321,has subject place,IRI,,"<work> rdawo:P10322 <$0> . // has subject place
 <$0> nomen property <nomenIRI>
 <nomenIRI> has nomen string ""stripEndStop(concatenateOA($a, $b, $c, $d, $f, $g,) or ($h))”
 <nomenIRI> rdano:P80069 <tScheme(2nd indicator or $2)> . // has scheme of nomen
 
 If $2 is approved source, use rdapo:P70045 .// has authorized access point for place. If unapproved use rdapo:P70018 .// has access point for place
 - CP 2024-12-12",,
-3,reviewed,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,$0,,,,$0 type is right and no $1,,no $2,,https://www.rdaregistry.info/Elements/w/object/#P10321,has subject place,IRI,,"<work> rdawo:P10322 <$0> . // has subject place
+3,done,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,$0,,,,$0 type is right and no $1,,no $2,,https://www.rdaregistry.info/Elements/w/object/#P10321,has subject place,IRI,,"<work> rdawo:P10322 <$0> . // has subject place
 <$0> rdapd:P70018 ""stripEndStop(concatenateOA($a, $b, $c, $d, $f, $g,) or ($h))” . // has access point for place",,
-4,reviewed,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),,,,,,,,,$0 | $1,,,,$0 or $1 is unapproved,,,,http://rdaregistry.info/Elements/p/P70020,has identifier for place,structured description,,<placeIRI> rdapd:P70020 <$0 or $1 value>,,
-5,reviewed,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,"$a, $b, $c, $d, $f, $g, $h",,,,$2,,no $1|$0,,https://www.rdaregistry.info/Elements/w/object/#P10321,has subject place,structured description,,"<work> rdawo:P10321 <placeS> . // has subject place
+4,done,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),,,,,,,,,$0 | $1,,,,$0 or $1 is unapproved,,,,http://rdaregistry.info/Elements/p/P70020,has identifier for place,structured description,,<placeIRI> rdapd:P70020 <$0 or $1 value>,,
+5,done,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,"$a, $b, $c, $d, $f, $g, $h",,,,$2,,no $1|$0,,https://www.rdaregistry.info/Elements/w/object/#P10321,has subject place,structured description,,"<work> rdawo:P10321 <placeS> . // has subject place
 <placeS> property <nomenP> . // has authorized access point for place; 
 <nomenP>  rdand:P80068 “stripEndStop(concatenateOA($a, $b, $c, $d, $f, $g,) or ($h))”. // has nomen string; OA = in order of appearance
 <nomenP>> rdano:P80069 <tScheme($2)> . // has scheme of nomen
 
 If $2 is approved source, use rdapo:P70045 .// has authorized access point for place. If unapproved use rdapo:P70018 .// has access point for place
 - CP 2024-12-12",,
-6,reviewed,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,"$a, $b, $c, $d, $f, $g, $h",,,,no $2,,no $1|$0,,https://www.rdaregistry.info/Elements/w/object/#P10321,has subject place,unstructured description,,"<work> rdawo:P10321 <placeS> . // has subject place
+6,done,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,"$a, $b, $c, $d, $f, $g, $h",,,,no $2,,no $1|$0,,https://www.rdaregistry.info/Elements/w/object/#P10321,has subject place,unstructured description,,"<work> rdawo:P10321 <placeS> . // has subject place
 <placeS> rdapd:P70018 “stripEndStop(concatenateOA($a, $b, $c, $d, $f, $g,) or ($h))”  . // has access point for place",,
 7,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,h,Extraterrestrial area (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
 8,delete,662,SUBJECT ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,h,Extraterrestrial area (R),,,,,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,

@@ -664,7 +664,7 @@
 662,delete,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,7,Method specified in subfield $2,Relationship,1,Version of resource,,,t,Terminal emulation (R) [OBSOLETE],,,,,,,,,,,,,
 663,delete,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,7,Method specified in subfield $2,Relationship,2,Related resource,,,t,Terminal emulation (R) [OBSOLETE],,,,,,,,,,,,,
 664,delete,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,7,Method specified in subfield $2,Relationship,8,No display constant generated,,,t,Terminal emulation (R) [OBSOLETE],,,,,,,,,,,,,
-665,first pass,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,*,,Relationship,0,Resource,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/m/P30154,has uniform resource locator,IRI,,,,
+665,delete,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,*,,Relationship,0,Resource,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/m/P30154,has uniform resource locator,IRI,,,,
 666,delete,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,*,,Relationship,2,Related resource,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/m/P30016,has electronic reproduction of manifestation,,,,,
 667,delete,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,*,,Relationship,2,Related resource,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/m/P30026,is also issued as,,,,,
 668,delete,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,*,,Relationship,2,Related resource,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/m/P30028,has mirror site,,,,,
@@ -674,11 +674,11 @@
 672,delete,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,*,,Relationship,2,Related resource,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/m/P30299,is electronic reproduction of item of,,,,,
 673,delete,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,*,,Relationship,2,Related resource,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/i/P40087,has digital transfer of item,,,,,
 674,delete,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,*,,Relationship,2,Related resource,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/i/P40088,has electronic reproduction of item,,,,,
-675,first pass,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,*,,Relationship,2|#|8,Related resource,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/m/P30048,has related manifestation of manifestation,IRI,,"[manifestation] rdam:P30048 [manifestation2]
+675,reviewed,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,*,,Relationship,2|#|8,Related resource,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/m/P30048,has related manifestation of manifestation,IRI,,"[manifestation] rdam:P30048 [manifestation2]
 [manifestation2] rdam:P30004 ""$u value""
 [manifestation2] rdam:P30154 <$u value>
 
-[manifestation] is the manifestation being described by the MARC record. [manifestation2] needs to be minted.",,
+[manifestation] is the manifestation being described by the MARC record. [manifestation2] needs to be minted.",,DF: map all indicator values as per these Transformation Notes
 676,delete,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,#,No information provided,Relationship,#,No information provided,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/m/P30016,has electronic reproduction of manifestation,,,,,
 677,delete,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,#,No information provided,Relationship,#,No information provided,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/m/P30026,is also issued as,,,,,
 678,delete,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,#,No information provided,Relationship,#,No information provided,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/m/P30028,has mirror site,,,,,
@@ -689,9 +689,9 @@
 683,delete,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,#,No information provided,Relationship,#,No information provided,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/m/P30299,is electronic reproduction of item of,,,,,
 684,delete,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,#,No information provided,Relationship,#,No information provided,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/i/P40087,has digital transfer of item,,,,,
 685,delete,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,#,No information provided,Relationship,#,No information provided,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/i/P40088,has electronic reproduction of item,,,,,
-686,first pass,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,*,,Relationship,1,Version of resource,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/m/P30024,has equivalent manifestation ,IRI,cannot determine whether the electronic resource is a reproduction - CP 2024-02-12,,,
-687,first pass,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,*,,Relationship,3,Component part(s) of resource,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/m/P30033,has part manifestation,IRI,,,,
-688,first pass,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,*,,Relationship,4,Version of component part(s) of resource,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/m/P30048,has related manifestation of manifestation,IRI,,,,
+686,done,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,*,,Relationship,1,Version of resource,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/m/P30024,has equivalent manifestation ,IRI,cannot determine whether the electronic resource is a reproduction - CP 2024-02-12,,,
+687,done,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,*,,Relationship,3,Component part(s) of resource,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/m/P30033,has part manifestation,IRI,,,,
+688,reviewed,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,*,,Relationship,4,Version of component part(s) of resource,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/m/P30048,has related manifestation of manifestation,IRI,,,,
 689,delete,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,#,No information provided,Relationship,1,Version of resource,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/m/P30016,has electronic reproduction of manifestation,,,,,
 690,delete,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,#,No information provided,Relationship,1,Version of resource,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/m/P30026,is also issued as,,,,,
 691,delete,856,ELECTRONIC LOCATION AND ACCESS (R),Access method,#,No information provided,Relationship,1,Version of resource,,,u,Uniform Resource Identifier (R),,,,,,,http://rdaregistry.info/Elements/m/P30028,has mirror site,,,,,

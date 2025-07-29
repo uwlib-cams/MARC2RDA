@@ -1,9 +1,9 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,,13,PATENT CONTROL INFORMATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,a,Number (NR),,,,,,,,,,,,,
-1,,13,PATENT CONTROL INFORMATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,b,Country (NR),,,,,,,,,,,,,
-2,,13,PATENT CONTROL INFORMATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,c,Type of number (NR),,,,,,,,,,,,,
-3,,13,PATENT CONTROL INFORMATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,d,Date (R),,,,,,,,,,,,,
-4,,13,PATENT CONTROL INFORMATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,e,Status (R),,,,,,,,,,,,,
-5,,13,PATENT CONTROL INFORMATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,f,Party to document (R),,,,,,,,,,,,,
-6,,13,PATENT CONTROL INFORMATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-7,,13,PATENT CONTROL INFORMATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+0,done,13,PATENT CONTROL INFORMATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,"a, b, c, d, e, f",Number (NR),,,,,,,http://rdaregistry.info/Elements/w/P10330,note on work,unstructured,,"""Patent control information: "" + subfield values in the order they appear. Retain punctuation. Precede each value with the MARC label for the subfield followed by "": "" for clarity. --CEY, 2025-03-04",,
+1,delete,13,PATENT CONTROL INFORMATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,b,Country (NR),,,,,,,,,,,,,
+2,delete,13,PATENT CONTROL INFORMATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,c,Type of number (NR),,,,,,,,,,,,,
+3,delete,13,PATENT CONTROL INFORMATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,d,Date (R),,,,,,,,,,,,,
+4,delete,13,PATENT CONTROL INFORMATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,e,Status (R),,,,,,,,,,,,,
+5,delete,13,PATENT CONTROL INFORMATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,f,Party to document (R),,,,,,,,,,,,,
+6,not mapped,13,PATENT CONTROL INFORMATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iig-6,,
+7,not mapped,13,PATENT CONTROL INFORMATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#id3-8-field-link-and-sequence-number

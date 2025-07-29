@@ -1,29 +1,49 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,a,Time period of creation term (R),,,,,,,http://rdaregistry.info/Elements/w/P10219,has date of work,,,,,
-1,,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,a,Time period of creation term (R),,,,,,,http://rdaregistry.info/Elements/w/P10317,has related timespan of work,,,,,
-2,,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,a,Time period of creation term (R),,,,,,,http://rdaregistry.info/Elements/e/P20004,has date of capture,,,,,
-3,,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,a,Time period of creation term (R),,,,,,,http://rdaregistry.info/Elements/e/P20214,has date of expression,,,,,
-4,,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,a,Time period of creation term (R),,,,,,,http://rdaregistry.info/Elements/e/P20217,has capture information,,,,,
-5,,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,a,Time period of creation term (R),,,,,,,http://rdaregistry.info/Elements/e/P20307,has related timespan of expression,,,,,
-6,,388,TIME PERIOD OF CREATION (R),Type of time period,1,Creation of work,Undefined,#,Undefined,,,2,Source of term (NR),,,,,,,,,,,,,
-7,,388,TIME PERIOD OF CREATION (R),Type of time period,1,Creation of work,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,,,,,,,
-8,,388,TIME PERIOD OF CREATION (R),Type of time period,1,Creation of work,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-9,,388,TIME PERIOD OF CREATION (R),Type of time period,1,Creation of work,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-10,,388,TIME PERIOD OF CREATION (R),Type of time period,2,Creation of aggregate work,Undefined,#,Undefined,,,2,Source of term (NR),,,,,,,,,,,,,
-11,,388,TIME PERIOD OF CREATION (R),Type of time period,2,Creation of aggregate work,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,,,,,,,
-12,,388,TIME PERIOD OF CREATION (R),Type of time period,2,Creation of aggregate work,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-13,,388,TIME PERIOD OF CREATION (R),Type of time period,2,Creation of aggregate work,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-14,,388,TIME PERIOD OF CREATION (R),Type of time period,#,No information provided,Undefined,#,Undefined,,,2,Source of term (NR),,,,,,,,,,,,,
-15,,388,TIME PERIOD OF CREATION (R),Type of time period,#,No information provided,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,,,,,,,
-16,,388,TIME PERIOD OF CREATION (R),Type of time period,#,No information provided,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-17,,388,TIME PERIOD OF CREATION (R),Type of time period,#,No information provided,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-18,,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10219,has date of work,,,,,
-19,,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10317,has related timespan of work,,,,,
-20,,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/e/P20004,has date of capture,,,,,
-21,,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/e/P20214,has date of expression,,,,,
-22,,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/e/P20307,has related timespan of expression,,,,,
-23,,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10219,has date of work,,,,,
-24,,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10317,has related timespan of work,,,,,
-25,,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/e/P20004,has date of capture,,,,,
-26,,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/e/P20214,has date of expression,,,,,
-27,,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/e/P20307,has related timespan of expression,,,,,
+0,delete,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,a,Time period of creation term (R),,,,,,,http://rdaregistry.info/Elements/w/P10219,has date of work,,,,,
+1,reviewed,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,a,Time period of creation term (R),,,,,,,"http://rdaregistry.info/Elements/w/P10317 
+http://rdaregistry.info/Elements/t/P70009 
+http://rdaregistry.info/Elements/n/P80068  
+","has related timespan of work
+has related nomen of timespan
+has nomen string",unstructured*,"Field gives no data for other properties.
+Subfield may be structured if associated with a source, but this would need to be analyzed.  For this mapping, treat all $a the same.
+Create nomen for timespan so that it can be associated with source and identifiers if needed.  LNA 12/31/2024","[work]--P10317--> mint IRI for timespannomen for timespan[
+[timespan} -- P70009 --> mint IRI for related nomen
+TimespNomen]  -- P80068==> ($a) 
+*This could be a text string, a range of dates, or a single date.  Date format is not specified, but might be controlled by a source vocabulary (e.g. fast, Period0), or not. If there is time/capacity to detect dates in this field, could/should they be handled as dates rather than text strings?  LNA 12/31/2024",,
+2,delete,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,a,Time period of creation term (R),,,,,,,http://rdaregistry.info/Elements/e/P20004,has date of capture,,,,,
+3,delete,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,a,Time period of creation term (R),,,,,,,http://rdaregistry.info/Elements/e/P20214,has date of expression,,,,,
+4,delete,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,a,Time period of creation term (R),,,,,,,http://rdaregistry.info/Elements/e/P20217,has capture information,,,,,
+5,delete,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,a,Time period of creation term (R),,,,,,,http://rdaregistry.info/Elements/e/P20307,has related timespan of expression,,,,,
+6,done,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*, ,,,2,Source of term (NR),,,,,,,http://rdaregistry.info/Elements/n/P80069,has scheme of nomen,structured,"The codes used here should be represented in a list, https://www.loc.gov/standards/sourcelist/temporal.html This is on the LC website, but appears not to have been maintained (only one source, periodO, https://perio.do/en/ ,  is defined).  A review of records retrieved by MARC Field Search (WSU VE Sandbox) shows subfield 2 populated  by either lcsh, fast, or no subfield 2 but a $0 with a wikidata URI.  We assume the intent is to use schemes from an approved list and that  list will eventually catch up with practice.  Where we can use a URI for the scheme, we should do so.   LNA 12/31/2024","[nomen} (see $a) -- P20307--> URI based on code in $2 if available
+lookup in http://id.loc.gov/vocabulary/subjectSchemes 
+use datatype property and quote string if it is not foumd at this list.",,
+7,done,388,TIME PERIOD OF CREATION (R),Type of time period,*, ,Undefined,*, ,,,3,Materials specified (NR),,,,,,,http://rdaregistry.info/Elements/w/P10330,note on work,unstructured,"When a property applies to only a portion of a work (or expression), our general aprroach is to create a note showing what part the property applies to..  LNA 12/31/2024","""Timespan related to work"" + $a + ""applies to "" + $3",,"See decision on $3 in 3xx fields:  https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iir-3xx-with-3-present .
+
+We are mapping to a Work property but follow the pattern "
+8,not mapped,388,TIME PERIOD OF CREATION (R),Type of time period,*, ,Undefined,*, ,,,6,Linkage (NR),,,,,,,,,,,,,$6 is used to link alternative graphic representations to rromanized content tags and is not mapped
+9,not mapped,388,TIME PERIOD OF CREATION (R),Type of time period,*, ,Undefined,*, ,,,8,Field link and sequence number (R),,,,,,,,,,,,,Decision:   https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#id3-8-field-link-and-sequence-number 
+10,delete,388,TIME PERIOD OF CREATION (R),Type of time period,1,Creation of work,Undefined,#,Undefined,,,2,Source of term (NR),,,,,,,,,,,,,
+11,delete,388,TIME PERIOD OF CREATION (R),Type of time period,1,Creation of work,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,,,,,,,
+12,delete,388,TIME PERIOD OF CREATION (R),Type of time period,1,Creation of work,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+13,delete,388,TIME PERIOD OF CREATION (R),Type of time period,1,Creation of work,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+14,phase II,388,TIME PERIOD OF CREATION (R),Type of time period,2,Creation of aggregate work,Undefined,#,Undefined,,,2,Source of term (NR),,,,,,,,,,,,,
+15,phase II,388,TIME PERIOD OF CREATION (R),Type of time period,2,Creation of aggregate work,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,,,,,,,
+16,phase II,388,TIME PERIOD OF CREATION (R),Type of time period,2,Creation of aggregate work,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+17,phase II,388,TIME PERIOD OF CREATION (R),Type of time period,2,Creation of aggregate work,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+18,delete,388,TIME PERIOD OF CREATION (R),Type of time period,#,No information provided,Undefined,#,Undefined,,,2,Source of term (NR),,,,,,,,,,,,,
+19,delete,388,TIME PERIOD OF CREATION (R),Type of time period,#,No information provided,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,,,,,,,
+20,delete,388,TIME PERIOD OF CREATION (R),Type of time period,#,No information provided,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+21,delete,388,TIME PERIOD OF CREATION (R),Type of time period,#,No information provided,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+22,delete,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10219,has date of work,,,,,
+23,done,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10317,has related timespan of work,varies,,"If $0 contains an IRI (begins with http://), add  mapping (separately from $a mapping).  
+If $0 does not contain a IRI, associate with timespan created for $a:
+[timespan] -- http://rdaregistry.info/Elements/t/P70018 (identifier for timespan) --> contents of $0",,
+24,delete,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/e/P20004,has date of capture,,,,,
+25,delete,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/e/P20214,has date of expression,,,,,
+26,delete,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/e/P20307,has related timespan of expression,,,,,
+27,delete,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10219,has date of work,,,,,
+28,done,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10317,has related timespan of work,IRI,,,,
+29,delete,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/e/P20004,has date of capture,,,,,
+30,delete,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/e/P20214,has date of expression,,,,,
+31,delete,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/e/P20307,has related timespan of expression,,,,,

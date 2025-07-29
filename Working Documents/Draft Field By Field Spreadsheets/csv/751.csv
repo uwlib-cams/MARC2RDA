@@ -1,26 +1,120 @@
-,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Undefined,#,Undefined,Undefined,#,Undefined,,,4,Relationship (R),,,,,,,,,,,,,
-1,,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Undefined,*,,Undefined,*,,,,a,Geographic name (NR),,,,related place of work|has related place of work,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-2,,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Undefined,*,,Undefined,*,,,,a,Geographic name (NR),,,,place of capture|has place of capture,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,,,,
-3,,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Undefined,*,,Undefined,*,,,,a,Geographic name (NR),,,,related place of expression|has related place of expression,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
-4,,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Undefined,*,,Undefined,*,,,,a,Geographic name (NR),,,,related place of manifestation|has related place of manifestation,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,
-5,,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Undefined,*,,Undefined,*,,,,e,Relator term (R),,,,related place of work|has related place of work,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-6,,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Undefined,*,,Undefined,*,,,,e,Relator term (R),,,,place of capture|has place of capture,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,,,,
-7,,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Undefined,*,,Undefined,*,,,,e,Relator term (R),,,,related place of expression|has related place of expression,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
-8,,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Undefined,*,,Undefined,*,,,,e,Relator term (R),,,,related place of manifestation|has related place of manifestation,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,
-9,,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Undefined,*,,Undefined,*,,,,g,Miscellaneous information (R),,,,related place of work|has related place of work,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-10,,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Undefined,*,,Undefined,*,,,,g,Miscellaneous information (R),,,,place of capture|has place of capture,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,,,,
-11,,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Undefined,*,,Undefined,*,,,,g,Miscellaneous information (R),,,,related place of expression|has related place of expression,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
-12,,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Undefined,*,,Undefined,*,,,,g,Miscellaneous information (R),,,,related place of manifestation|has related place of manifestation,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,
-13,,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Undefined,#,Undefined,Undefined,#,Undefined,,,2,Source of heading or term (NR),,,,,,,,,,,,,
-14,,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,,,,,,,
-15,,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-16,,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-17,,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,related place of work|has related place of work,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-18,,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,place of capture|has place of capture,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,,,,
-19,,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,related place of expression|has related place of expression,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
-20,,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,related place of manifestation|has related place of manifestation,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,
-21,,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,related place of work|has related place of work,,,http://rdaregistry.info/Elements/w/P10316,has related place of work,,,,,
-22,,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,place of capture|has place of capture,,,http://rdaregistry.info/Elements/e/P20218,has place of capture,,,,,
-23,,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,related place of expression|has related place of expression,,,http://rdaregistry.info/Elements/e/P20306,has related place of expression,,,,,
-24,,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,related place of manifestation|has related place of manifestation,,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,,,,,
+,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized),Unnamed: 26,Unnamed: 27,Unnamed: 28
+0,reviewed,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Type of personal name entry element,0|1,,Undefined,*,,,,$1,Real World Object URI (R),,,approved $1|$2,,4|e,not contains(dbp|distribution|mfp|manufacture|prp|production|pup|publication) AND not starts with (http://rdaregistry.info/Elements/w|http://rdaregistry.info/Elements/e|http://rdaregistry.info/Elements/m|http://rdaregistry.info/Elements/i),http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,IRI,,[manifestationIRI] rdam:P30272 [value of $1],,,"<entity> property from spreadsheet <$1>
+<$1> nomen property <nomenIRI>
+<nomenIRI> rdan:P80068 stripEndStop($a)” . // has nomen string
+<nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
+
+If $2 is approved source, use rdapo:P70045 .// has authorized access point for place. If unapproved use rdapo:P70018 .// has access point for place
+- CEY 2025-04-03", ,"We will record an external IRI in a subfield $1 from a headings field as the object of a triple with a relationship property. 
+
+Range is associated with the RDA relationship properties; the range essentially types the object of the triple, so in this case it types the IRI (what class of entity the IRI represents).
+
+We will not make statements about the IRI in subfield $1 except for adding an authorized access point triple with the heading as the object. 
+
+If the source of the heading is given, the heading object will be a minted nomen; 
+
+if not, the object will be a literal string. If a nomen is minted, we will make statements about the nomen that include the nomen string and the scheme/source of the nomen.
+
+We will develop a preference list of subfield $1 sources if the field contains multiple $1 values.--Gordon (https://github.com/uwlib-cams/MARC2RDA/discussions/450)"
+1,reviewed,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Type of personal name entry element,0|1,,Undefined,*,,,,$1,Real World Object URI (R),,,approved $1|$2,,4,starts with (http://rdaregistry.info/Elements/w|http://rdaregistry.info/Elements/e|http://rdaregistry.info/Elements/m|http://rdaregistry.info/Elements/i),value of $4,,IRI,,[manifestationIRI] [value of $4] [value of $1],,,"<entity> property from spreadsheet <$1>
+<$1> nomen property <nomenIRI>
+<nomenIRI> rdan:P80068 stripEndStop($a)” . // has nomen string
+<nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
+
+If $2 is approved source, use rdapo:P70045 .// has authorized access point for place. If unapproved use rdapo:P70018 .// has access point for place
+- CEY 2025-04-03", ,"We will record an external IRI in a subfield $1 from a headings field as the object of a triple with a relationship property. 
+
+Range is associated with the RDA relationship properties; the range essentially types the object of the triple, so in this case it types the IRI (what class of entity the IRI represents).
+
+We will not make statements about the IRI in subfield $1 except for adding an authorized access point triple with the heading as the object. 
+
+If the source of the heading is given, the heading object will be a minted nomen; 
+
+if not, the object will be a literal string. If a nomen is minted, we will make statements about the nomen that include the nomen string and the scheme/source of the nomen.
+
+We will develop a preference list of subfield $1 sources if the field contains multiple $1 values.--Gordon (https://github.com/uwlib-cams/MARC2RDA/discussions/450)"
+2,reviewed,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Type of personal name entry element,0|1,,Undefined,*,,,,$1,,,,approved $1|$2,,4|e,"""dbp""|distribution",http://rdaregistry.info/Elements/m/P30085,has place of distribution,IRI,,[manifestationIRI] rdam:P30085 has place of distribution [value of $1],,,,,
+3,reviewed,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Type of personal name entry element,0|1,,Undefined,*,,,,$1,,,,approved $1|$2,,4|e,"""mfp""|manufacture",http://rdaregistry.info/Elements/m/P30087,has place of manufacture,IRI,,[manifestationIRI] rdam:P30087 has place of manufacture [value of $1],,,,,
+4,reviewed,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Type of personal name entry element,0|1,,Undefined,*,,,,$1,,,,approved $1|$2,,4|e,"""prp""|production",http://rdaregistry.info/Elements/m/P30086,has place of production,IRI,,[manifestationIRI] rdam:P30086 has place of production [value of $1],,,,,
+5,reviewed,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Type of personal name entry element,0|1,,Undefined,*,,,,$1,,,,approved $1|$2,,4|e,contains(pup|publication),http://rdaregistry.info/Elements/m/P30088,has place of publication,IRI,,[manifestationIRI] rdam:P30088 has place of publication [value of $1],,,,,
+6,reviewed,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Type of personal name entry element,0|1,,Undefined,*,,,,"$1, $2, $a, $g",Real World Object URI (R),,,non-approved $1|$2 OR no $1,,4|e,not contains(dbp|distribution|mfp|manufacture|prp|production|pup|publication) AND not starts with (http://rdaregistry.info/Elements/w|http://rdaregistry.info/Elements/e|http://rdaregistry.info/Elements/m|http://rdaregistry.info/Elements/i),http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,IRI,,"[manifestationIRI] rdam:P30272 [placeIRI]
+[placeIRI] rdap:P70001 has name of place [placeNomen]
+
+[placeNomen] rdan:P80068 has nomen string [value of a]
+
+if $2: [placeNomen] rdan:P80069 has scheme of nomen [value of $2]
+if no $2: P70001 ""value of a""
+
+[placeIRI] rdap:P7022 has note on place ""value of $g""",,,"<entity> property from spreadsheet <$1>
+<$1> nomen property <nomenIRI>
+<nomenIRI> rdan:P80068 stripEndStop($a)” . // has nomen string
+<nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
+
+If $2 is approved source, use rdapo:P70045 .// has authorized access point for place. If unapproved use rdapo:P70018 .// has access point for place
+- CEY 2025-04-03", ,"We will record an external IRI in a subfield $1 from a headings field as the object of a triple with a relationship property. 
+
+Range is associated with the RDA relationship properties; the range essentially types the object of the triple, so in this case it types the IRI (what class of entity the IRI represents).
+
+We will not make statements about the IRI in subfield $1 except for adding an authorized access point triple with the heading as the object. 
+
+If the source of the heading is given, the heading object will be a minted nomen; 
+
+if not, the object will be a literal string. If a nomen is minted, we will make statements about the nomen that include the nomen string and the scheme/source of the nomen.
+
+We will develop a preference list of subfield $1 sources if the field contains multiple $1 values.--Gordon (https://github.com/uwlib-cams/MARC2RDA/discussions/450)"
+7,reviewed,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Type of personal name entry element,0|1,,Undefined,*,,,,"$1, $2, $a, $g",,,,non-approved $1|$2 OR no $1,,4,starts with (http://rdaregistry.info/Elements/w|http://rdaregistry.info/Elements/e|http://rdaregistry.info/Elements/m|http://rdaregistry.info/Elements/i),value of $4,,IRI,,"[manifestationIRI] [value of $4] [placeIRI]
+[placeIRI] rdap:P70019 has appellation of place [placeNomen]
+
+[placeNomen] rdan:P80068 has nomen string [value of a]
+
+if $2: [placeNomen] rdan:P80069 has scheme of nomen [value of $2]
+
+[placeIRI] rdap:P7022 has note on place ""value of $g""",,,"<entity> property from spreadsheet <$1>
+<$1> nomen property <nomenIRI>
+<nomenIRI> rdan:P80068 stripEndStop($a)” . // has nomen string
+<nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
+
+If $2 is approved source, use rdapo:P70045 .// has authorized access point for place. If unapproved use rdapo:P70018 .// has access point for place
+- CEY 2025-04-03", ,"We will record an external IRI in a subfield $1 from a headings field as the object of a triple with a relationship property. 
+
+Range is associated with the RDA relationship properties; the range essentially types the object of the triple, so in this case it types the IRI (what class of entity the IRI represents).
+
+We will not make statements about the IRI in subfield $1 except for adding an authorized access point triple with the heading as the object. 
+
+If the source of the heading is given, the heading object will be a minted nomen; 
+
+if not, the object will be a literal string. If a nomen is minted, we will make statements about the nomen that include the nomen string and the scheme/source of the nomen.
+
+We will develop a preference list of subfield $1 sources if the field contains multiple $1 values.--Gordon (https://github.com/uwlib-cams/MARC2RDA/discussions/450)"
+8,reviewed,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Type of personal name entry element,0|1,,Undefined,*,,,,"$1, $2, $a, $g",,,,non-approved $1|$2 OR no $1,,4|e,"""dbp""|distribution",http://rdaregistry.info/Elements/m/P30085,has place of distribution,IRI,,"[manifestationIRI] rdam:P30085 has place of distribution [placeIRI]
+[placeIRI] rdap:P70019 has appellation of place [placeNomen]
+
+[placeNomen] rdan:P80068 has nomen string [value of a]
+
+if $2: [placeNomen] rdan:P80069 has scheme of nomen [value of $2]
+
+[placeIRI] rdap:P7022 has note on place ""value of $g""",,,,,
+9,reviewed,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Type of personal name entry element,0|1,,Undefined,*,,,,"$1, $2, $a, $g",,,,non-approved $1|$2 OR no $1,,4|e,"""mfp""|manufacture",http://rdaregistry.info/Elements/m/P30087,has place of manufacture,IRI,,"[manifestationIRI] rdam:P30087 has place of manufacture [placeIRI]
+[placeIRI] rdap:P70019 has appellation of place [placeNomen]
+
+[placeNomen] rdan:P80068 has nomen string [value of a]
+
+if $2: [placeNomen] rdan:P80069 has scheme of nomen [value of $2]
+
+[placeIRI] rdap:P7022 has note on place ""value of $g""",,,,,
+10,reviewed,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Type of personal name entry element,0|1,,Undefined,*,,,,"$1, $2, $a, $g",,,,non-approved $1|$2 OR no $1,,4|e,"""prp""|production",http://rdaregistry.info/Elements/m/P30086,has place of production,IRI,,"[manifestationIRI] rdam:P30086 has place of production [placeIRI]
+[placeIRI] rdap:P70019 has appellation of place [placeNomen]
+
+[placeNomen] rdan:P80068 has nomen string [value of a]
+
+if $2: [placeNomen] rdan:P80069 has scheme of nomen [value of $2]
+
+[placeIRI] rdap:P7022 has note on place ""value of $g""",,,,,
+11,reviewed,751,ADDED ENTRY--GEOGRAPHIC NAME (R),Type of personal name entry element,0|1,,Undefined,*,,,,"$1, $2, $a, $g",,,,non-approved $1|$2 OR no $1,,4|e,"""pup""|publication",http://rdaregistry.info/Elements/m/P30088,has place of publication,IRI,,"[manifestationIRI] rdam:P30088 has place of publication [placeIRI]
+[placeIRI] rdap:P70019 has appellation of place [placeNomen]
+
+[placeNomen] rdan:P80068 has nomen string [value of a]
+
+if $2: [placeNomen] rdan:P80069 has scheme of nomen [value of $2]
+
+[placeIRI] rdap:P7022 has note on place ""value of $g""",,,,,

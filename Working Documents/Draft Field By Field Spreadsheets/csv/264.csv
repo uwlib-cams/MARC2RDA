@@ -191,3 +191,4 @@ If a reproduction condition is present, apply mapping and transformation to Orig
 70,done,264,"PRODUCTION, PUBLICATION, DISTRIBUTION, MANUFACTURE, AND COPYRIGHT NOTICE (R)",Sequence of statements,*,,Function of entity,4,Copyright notice date,,,c,"Date of production, publication, distribution, manufacture, or copyright notice (R)",,,,,Check for Reproduction Conditions 1 and 2,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"""copyright date: "" + [$c value]
 
 If a reproduction condition is present, apply mapping and transformation to OriginalM, not ReproM. - LA, DC 2024-09-05",,
+71,?,264,"PRODUCTION, PUBLICATION, DISTRIBUTION, MANUFACTURE, AND COPYRIGHT NOTICE (R)",,,,,,,,,7,,,,,,,,,,,,,,"$7 is a new addition in 2022, needs further discussion --SH 2025-02-11"

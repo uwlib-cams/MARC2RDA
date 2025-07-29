@@ -1,16 +1,83 @@
-,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,1,Personal,Undefined,#,Undefined,,,4,Relationship (R),,,,,,,,,,,,,
-1,,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,1,Personal,Undefined,#,Undefined,,,a,Name (NR),,,,,,,,,,,,,
-2,,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,1,Personal,Undefined,#,Undefined,,,e,Relator term (R),,,,,,,,,,,,,
-3,,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,2,Other,Undefined,#,Undefined,,,4,Relationship (R),,,,,,,,,,,,,
-4,,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,2,Other,Undefined,#,Undefined,,,a,Name (NR),,,,,,,,,,,,,
-5,,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,2,Other,Undefined,#,Undefined,,,e,Relator term (R),,,,,,,,,,,,,
-6,,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,#,Not specified,Undefined,#,Undefined,,,4,Relationship (R),,,,,,,,,,,,,
-7,,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,#,Not specified,Undefined,#,Undefined,,,a,Name (NR),,,,,,,,,,,,,
-8,,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,#,Not specified,Undefined,#,Undefined,,,e,Relator term (R),,,,,,,,,,,,,
-9,,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,1,Personal,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-10,,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,1,Personal,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-11,,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,2,Other,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-12,,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,2,Other,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-13,,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,#,Not specified,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-14,,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,#,Not specified,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,MARCTagCondition3,Condition3Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
+0,reviewed,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,*,Personal|Other|Not Specified,Undefined,#,Undefined,,,a,Name (NR),,,$e|$4,Use Agent Relators Table 20240409,,,,,RDA URI in table,RDA element in table,IRI,,,,
+1,reviewed,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,1,Personal,Undefined,#,Undefined,,,a,Name (NR),,,not($e|$4),$e or $4 is not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,no($5),,0,$0 type is right and no $1,http://rdaregistry.info/Elements/w/P10312,has related person of work,IRI,"Without a relator code or term, use least specific property.  Without indication of which entity to relate the person to, relate them to work.",,,"$0, $1 are new additions in 2023 --SH 2025-01-15; map as with 700/710-711/730 --CY 2025-01-15
+
+
+https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iic1-0s-and-1s-for-rda-entities"
+2,reviewed,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,1,Personal,Undefined,#,Undefined,,,a,Name (NR),,,not($e|$4),$e or $4 is not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,no($5),,1,approved $1,http://rdaregistry.info/Elements/w/P10312,has related person of work,IRI,"Without a relator code or term, use least specific property.  Without indication of which entity to relate the person to, relate them to work.",,,"$0, $1 are new additions in 2023 --SH 2025-01-15; map as with 700/710-711/730 --CY 2025-01-15
+
+
+https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iic1-0s-and-1s-for-rda-entities"
+3,reviewed,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,1,Personal,Undefined,#,Undefined,,,a,Name (NR),,,not($e|$4),$e or $4 is not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,no($5),,not($0|$1),no $1 or $0 can be converted into a RWO URI,http://rdaregistry.info/Elements/w/P10312,has related person of work,structured,"Without a relator code or term, use least specific property.  Without indication of which entity to relate the person to, relate them to work.",,,"$0, $1 are new additions in 2023 --SH 2025-01-15; map as with 700/710-711/730 --CY 2025-01-15
+
+
+https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iic1-0s-and-1s-for-rda-entities"
+4,reviewed,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,not(1),Other|Not Specified,Undefined,#,Undefined,,,a,Name (NR),,,not($e|$4),$e or $4 is not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,no($5),,0,$0 type is right and no $1,http://rdaregistry.info/Elements/w/P10311,has related agent of work,IRI,"Without a relator code or indication of a type of entity, no more specific property can be used",,,"$0, $1 are new additions in 2023 --SH 2025-01-15; map as with 700/710-711/730 --CY 2025-01-15
+
+
+https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iic1-0s-and-1s-for-rda-entities"
+5,reviewed,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,not(1),Other|Not Specified,Undefined,#,Undefined,,,a,Name (NR),,,not($e|$4),$e or $4 is not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,no($5),,1,approved $1,http://rdaregistry.info/Elements/w/P10311,has related agent of work,IRI,"Without a relator code or indication of a type of entity, no more specific property can be used",,,"$0, $1 are new additions in 2023 --SH 2025-01-15; map as with 700/710-711/730 --CY 2025-01-15
+
+
+https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iic1-0s-and-1s-for-rda-entities"
+6,reviewed,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,not(1),Other|Not Specified,Undefined,#,Undefined,,,a,Name (NR),,,not($e|$4),$e or $4 is not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,no($5),,not($0|$1),no $1 or $0 can be converted into a RWO URI,http://rdaregistry.info/Elements/w/P10311,has related agent of work,unstructured,"Without a relator code or indication of a type of entity, no more specific property can be used",,,"$0, $1 are new additions in 2023 --SH 2025-01-15; map as with 700/710-711/730 --CY 2025-01-15
+
+
+https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iic1-0s-and-1s-for-rda-entities"
+7,reviewed,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,*,,Undefined,#,Undefined,,,4,Relationship (R),,,,,,,,,See $a and use value to determine entity / relationship.,,,,,,
+8,delete,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,1,Personal,Undefined,#,Undefined,,,a,Name (NR),,,$4 OR $e,,,,,,Use Agent Relators Table 20240409,,,,,,
+9,reviewed,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,1,Personal,Undefined,#,Undefined,,,a,Name (NR),,,not($4 OR $e),,,,,,http://rdaregistry.info/Elements/w/P10312,has related person of work,unstructured,"Without a relator code or term, use least specific property.  Without indication of which entity to relate the person to, relate them to work.",,,
+10,delete,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,1,Personal,Undefined,#,Undefined,,,e,Relator term (R),,,,,,,,,See $a and use value to determine entity / relationship.,,,,,,
+11,delete,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,2,Other,Undefined,#,Undefined,,,4,Relationship (R),,,,,,,,,See $a and use value to determine entity / relationship.,,,,,,
+12,delete,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,2,Other,Undefined,#,Undefined,,,a,Name (NR),,,$a OR $e,,,,,,Use Agent Relators Table 20240409,,,,,,
+13,reviewed,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,2|#,Other|Not specified,Undefined,#,Undefined,,,a,Name (NR),,,not($4 OR $e,,,,,,http://rdaregistry.info/Elements/w/P10311,has related agent of work,unstructured,"Without a relator code or indication of a type of entity, no more specific property can be used",,,
+14,delete,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,2,Other,Undefined,#,Undefined,,,e,Relator term (R),,,,,,,,,See $a and use value to determine entity / relationship.,,,,,,
+15,delete,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,#,Not specified,Undefined,#,Undefined,,,4,Relationship (R),,,,,,,,,See $a and use value to determine entity / relationship.,,,,,,
+16,delete,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,#,Not specified,Undefined,#,Undefined,,,a,Name (NR),,,$a OR $e,,,,,,Use Agent Relators Table 20240409,,,,,,
+17,delete,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,#,Not specified,Undefined,#,Undefined,,,a,Name (NR),,,not($a OR $e,,,,,,http://rdaregistry.info/Elements/w/P10311,has related agent of work,unstructured,"Without a relator code or indication of a type of entity, no more specific property can be used",,,
+18,delete,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,#,Not specified,Undefined,#,Undefined,,,e,Relator term (R),,,,,,,,,See $a and use value to determine entity / relationship., , ,,,,
+19,delete,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,*, ,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,,,$6 is used to link alternative graphic representations to rromanized content tags and is not mapped
+20,delete,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,*,,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,,,Decision:   https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#id3-8-field-link-and-sequence-number   
+21,delete,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,2,Other,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,,,
+22,delete,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,2,Other,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,,,
+23,delete,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,#,Not specified,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,,,
+24,delete,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,#,Not specified,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,,,
+25,delete,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,,,Undefined,,,,,0,Authority record control number or standard number,,,,,,,,,,,,,,,"$0, $1, $5 are new additions in 2023 --SH 2025-01-15; map as with 700/710-711/730 --CY 2025-01-15
+
+
+https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iij2-when-5-indicates-that-a-statement-applies-to-an-item-entity"
+26,delete,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,,,Undefined,,,,,1,Real World Object URI,,,,,,,,,,,,,,,"$0, $1, $5 are new additions in 2023 --SH 2025-01-15; map as with 700/710-711/730 --CY 2025-01-15
+
+
+https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iij2-when-5-indicates-that-a-statement-applies-to-an-item-entity"
+27,reviewed,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,1,Personal,Undefined,,,,,0,Authority record control number or standard number,,,$0 type is right and no $1,,5,,,,https://www.rdaregistry.info/Elements/i/#P40073,has related person of item,IRI,,,,"$0, $1, $5 are new additions in 2023 --SH 2025-01-15; map as with 700/710-711/730 --CY 2025-01-15
+
+
+https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iij2-when-5-indicates-that-a-statement-applies-to-an-item-entity"
+28,reviewed,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,1,Personal,Undefined,,,,,1,Real World Object URI,,,approved $1,,5,,,,https://www.rdaregistry.info/Elements/i/#P40073,has related person of item,IRI,,,,"$0, $1, $5 are new additions in 2023 --SH 2025-01-15; map as with 700/710-711/730 --CY 2025-01-15
+
+
+https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iij2-when-5-indicates-that-a-statement-applies-to-an-item-entity"
+29,reviewed,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,1,Personal,Undefined,,,,,not(0|1),Authority record control number or standard number|Real World Object URI,,,no $1 or $0 can be converted into a RWO URI,,5,,,,https://www.rdaregistry.info/Elements/i/#P40072,has related person of item,structured,,,,"$0, $1, $5 are new additions in 2023 --SH 2025-01-15; map as with 700/710-711/730 --CY 2025-01-15
+
+
+https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iij2-when-5-indicates-that-a-statement-applies-to-an-item-entity"
+30,reviewed,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,not(1),Other|Not Specified,Undefined,,,,,0,Authority record control number or standard number,,,$0 type is right and no $1,,5,,,,https://www.rdaregistry.info/Elements/i/#P40073,has related agent of item,IRI,,,,"$0, $1, $5 are new additions in 2023 --SH 2025-01-15; map as with 700/710-711/730 --CY 2025-01-15
+
+
+https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iij2-when-5-indicates-that-a-statement-applies-to-an-item-entity"
+31,reviewed,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,not(1),Other|Not Specified,Undefined,,,,,1,Real World Object URI,,,approved $1,,5,,,,https://www.rdaregistry.info/Elements/i/#P40073,has related agent of item,IRI,,,,"$0, $1, $5 are new additions in 2023 --SH 2025-01-15; map as with 700/710-711/730 --CY 2025-01-15
+
+
+https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iij2-when-5-indicates-that-a-statement-applies-to-an-item-entity"
+32,reviewed,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,not(1),Other|Not Specified,Undefined,,,,,not(0|1),Authority record control number or standard number|Real World Object URI,,,no $1 or $0 can be converted into a RWO URI,,5,,,,https://www.rdaregistry.info/Elements/i/#P40072,has related agent of item,structured,,,,"$0, $1, $5 are new additions in 2023 --SH 2025-01-15; map as with 700/710-711/730 --CY 2025-01-15
+
+
+https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iij2-when-5-indicates-that-a-statement-applies-to-an-item-entity"
+33,delete,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,,,Undefined,,,,,5,Institution to which field applies,,,,,,,,,https://www.rdaregistry.info/Elements/i/#P40073,has related person of item,IRI,,,,"$5 is a new addition in 2023 --SH 2025-01-15; map as with 700/710-711/730 --CY 2025-01-15
+
+https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iij2-when-5-indicates-that-a-statement-applies-to-an-item-entity"
+34,delete,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,,,Undefined,,,,,5,Institution to which field applies,,,,,,,,,https://www.rdaregistry.info/Elements/i/#P40072,has related agent of item,IRI,,,,"$5 is a new addition in 2023 --SH 2025-01-15; map as with 700/710-711/730 --CY 2025-01-15
+
+https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iij2-when-5-indicates-that-a-statement-applies-to-an-item-entity"
+35,?,720,ADDED ENTRY--UNCONTROLLED NAME (R),Type of name,,,Undefined,,,,,7,Data provenance,,,,,,,,,,,,,,,$7 is a new addition in 2023 --SH 2025-01-15; map as with 700/710-711/730 --CY 2025-01-15

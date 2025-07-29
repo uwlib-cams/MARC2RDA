@@ -1,12 +1,4 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,delete,513,TYPE OF REPORT AND PERIOD COVERED NOTE (R),Undefined,*,,Undefined,*,,,,a,Type of report (NR),,,,,,,http://rdaregistry.info/Elements/w/P10222,has nature of content,,,,,
-1,done,513,TYPE OF REPORT AND PERIOD COVERED NOTE (R),Undefined,*,,Undefined,*,,,,a,Type of report (NR),,,,,,,"
+0,done,513,TYPE OF REPORT AND PERIOD COVERED NOTE (R),Undefined,*,,Undefined,*,,,,a,Type of report (NR),,,,,,,"
 http://rdaregistry.info/Elements/w/P10330",has note on work,unstructured description,,"""Type of report: "" + [$a value]",,
-2,done,513,TYPE OF REPORT AND PERIOD COVERED NOTE (R),Undefined,*,,Undefined,*,,,,b,Period covered (NR),,,,,,,http://rdaregistry.info/Elements/w/P10216,has coverage of content,unstructured description,,"""Period covered: "" + [$b value]",,
-3,delete,513,TYPE OF REPORT AND PERIOD COVERED NOTE (R),Undefined,*,,Undefined,*,,,,b,Period covered (NR),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
-4,delete,513,TYPE OF REPORT AND PERIOD COVERED NOTE (R),Undefined,*,,Undefined,*,,,,b,Period covered (NR),,,,,,,http://rdaregistry.info/Elements/w/P10322,has subject timespan,,,,,
-5,delete,513,TYPE OF REPORT AND PERIOD COVERED NOTE (R),Undefined,*,,Undefined,*,,,,b,Period covered (NR),,,,,,,http://rdaregistry.info/Elements/w/P10602,is description of timespan,,,,,
-6,not mapped,513,TYPE OF REPORT AND PERIOD COVERED NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-7,not mapped,513,TYPE OF REPORT AND PERIOD COVERED NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-8,not mapped,513,TYPE OF REPORT AND PERIOD COVERED NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-9,not mapped,513,TYPE OF REPORT AND PERIOD COVERED NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+1,done,513,TYPE OF REPORT AND PERIOD COVERED NOTE (R),Undefined,*,,Undefined,*,,,,b,Period covered (NR),,,,,,,http://rdaregistry.info/Elements/w/P10216,has coverage of content,unstructured description,,"""Period covered: "" + [$b value]",,

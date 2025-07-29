@@ -1,17 +1,3 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,first pass,525,SUPPLEMENT NOTE (R),Undefined,*,,Undefined,*,,,,a,Supplement note (NR),,,,,,,http://rdaregistry.info/Elements/w/P10330,has note on work,structured,,"""Supplement note: "" + [$a value]
+0,done,525,SUPPLEMENT NOTE (R),Undefined,*,,Undefined,*,,,,a,Supplement note (NR),,,,,,,http://rdaregistry.info/Elements/w/P10330,has note on work,structured,,"""Supplement note: "" + [$a value]
 - CP 2024-11-14",,
-1,delete,525,SUPPLEMENT NOTE (R),Undefined,*,,Undefined,*,,,,a,Supplement note (NR),,,,,,,http://rdaregistry.info/Elements/w/P10112,has addenda work,,,,,
-2,delete,525,SUPPLEMENT NOTE (R),Undefined,*,,Undefined,*,,,,a,Supplement note (NR),,,,,,,http://rdaregistry.info/Elements/w/P10123,has appendix work,,,,,
-3,delete,525,SUPPLEMENT NOTE (R),Undefined,*,,Undefined,*,,,,a,Supplement note (NR),,,,,,,http://rdaregistry.info/Elements/w/P10141,has issue,,,,,
-4,delete,525,SUPPLEMENT NOTE (R),Undefined,*,,Undefined,*,,,,a,Supplement note (NR),,,,,,,http://rdaregistry.info/Elements/w/P10172,has supplement work,,,,,
-5,delete,525,SUPPLEMENT NOTE (R),Undefined,*,,Undefined,*,,,,a,Supplement note (NR),,,,,,,http://rdaregistry.info/Elements/w/P10410,has special issue,,,,,
-6,delete,525,SUPPLEMENT NOTE (R),Undefined,*,,Undefined,*,,,,a,Supplement note (NR),,,,,,,http://rdaregistry.info/Elements/e/P20093,has errata expression,,,,,
-7,delete,525,SUPPLEMENT NOTE (R),Undefined,*,,Undefined,*,,,,a,Supplement note (NR),,,,,,,http://rdaregistry.info/Elements/e/P20105,is augmented by expression,,,,,
-8,delete,525,SUPPLEMENT NOTE (R),Undefined,*,,Undefined,*,,,,a,Supplement note (NR),,,,,,,http://rdaregistry.info/Elements/e/P20109,has addenda expression,,,,,
-9,delete,525,SUPPLEMENT NOTE (R),Undefined,*,,Undefined,*,,,,a,Supplement note (NR),,,,,,,http://rdaregistry.info/Elements/e/P20118,has appendix expression,,,,,
-10,delete,525,SUPPLEMENT NOTE (R),Undefined,*,,Undefined,*,,,,a,Supplement note (NR),,,,,,,http://rdaregistry.info/Elements/e/P20172,has supplement expression,,,,,
-11,not mapped,525,SUPPLEMENT NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,See decision for transform,,
-12,not mapped,525,SUPPLEMENT NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,See decision
-13,not mapped,525,SUPPLEMENT NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,z,Source of note information (NR) (SE) [OBSOLETE],,,,,,,,,,,,,"obsolete
-CP 2023-12-15"

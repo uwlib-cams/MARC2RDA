@@ -1,165 +1,168 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CategoryOfMaterial,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,00,Form of material,,,a,Language material,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,https://doi.org/10.6069/uwlswd.25z4-e963#a - CP 2024-09-26,,see also 008/18-34
-1,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,00,Form of material,,,t,Manuscript language material,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,https://doi.org/10.6069/uwlswd.25z4-e963#t - CP  2024-09-26,,see also 008/18-34
-2,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,01-04,Illustrations,,,*,,006 00,a,,,http://rdaregistry.info/Elements/m/P30453,has illustrative content,structured/IRI,,follow mapping for BOOKS 008/18-21 - CP 2024-09-26 ,,see also 008/18-21
-3,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,01-04,Illustrations,,,*,,006 00,t,,,http://rdaregistry.info/Elements/m/P30453,has illustrative content,structured/IRI,,follow mapping for BOOKS 008/18-21 - CP 2024-09-26 ,,see also 008/18-21
-4,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,05,Target audience,,,*,,006 00,a,,,http://rdaregistry.info/Elements/e/P20322,has intended audience of expression,IRI,,follow mapping for BOOKS 008/22 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20322 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05 [identifier] (books, music, computer files, visual materials)"" ."
-5,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,05,Target audience,,,,,006 00,a,,,http://rdaregistry.info/Elements/m/P30305,has intended audience of manifestation,structured/identifier,,,,compare with 008/22
-6,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,05,Target audience,,,*,,006 00,t,,,http://rdaregistry.info/Elements/e/P20322,has intended audience of expression,IRI,,follow mapping for BOOKS 008/22 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20322 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05 [identifier] (books, music, computer files, visual materials)"" ."
-7,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,05,Target audience,,,,,006 00,t,,,http://rdaregistry.info/Elements/m/P30305,has intended audience of manifestation,structured/identifier,,,,compare with 008/22
-8,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,06,Form of item,,,*,,006 00,a,,,"http://rdaregistry.info/Elements/m/P30001
+0,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,05,Target audience,,,,,006 00,a,,,http://rdaregistry.info/Elements/m/P30305,has intended audience of manifestation,structured/identifier,,,,compare with 008/22
+1,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,05,Target audience,,,,,006 00,t,,,http://rdaregistry.info/Elements/m/P30305,has intended audience of manifestation,structured/identifier,,,,compare with 008/22
+2,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,00,Form of material,,,a,Language material,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,https://doi.org/10.6069/uwlswd.25z4-e963#a - CP 2024-09-26,,see also 008/18-34
+3,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,00,Form of material,,,t,Manuscript language material,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,https://doi.org/10.6069/uwlswd.25z4-e963#t - CP  2024-09-26,,see also 008/18-34
+4,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,01-04,Illustrations,,,*,,006 00,a,,,http://rdaregistry.info/Elements/m/P30453,has illustrative content,structured/IRI,,follow mapping for BOOKS 008/18-21 - CP 2024-09-26 ,,see also 008/18-21
+5,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,01-04,Illustrations,,,*,,006 00,t,,,http://rdaregistry.info/Elements/m/P30453,has illustrative content,structured/IRI,,follow mapping for BOOKS 008/18-21 - CP 2024-09-26 ,,see also 008/18-21
+6,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,06,Form of item,,,*,,006 00,a,,,"http://rdaregistry.info/Elements/m/P30001
 http://rdaregistry.info/Elements/m/P30199
-http://rdaregistry.info/Elements/e/P20061
 http://rdaregistry.info/Elements/m/P30335
 http://rdaregistry.info/Elements/m/P30002","has carrier type
 font size
-form of tactile notation
 has category of manifestation
 has media type",IRI,,follow mapping for BOOKS 008/23 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /06 [identifier] (books, computer files, music, continuing resources, mixed materials)"" ."
-9,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,06,Form of item,,,*,,006 00,t,,,"http://rdaregistry.info/Elements/m/P30001
+7,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,06,Form of item,,,*,,006 00,t,,,"http://rdaregistry.info/Elements/m/P30001
 http://rdaregistry.info/Elements/m/P30199
-http://rdaregistry.info/Elements/e/P20061
 http://rdaregistry.info/Elements/m/P30335
 http://rdaregistry.info/Elements/m/P30002","has carrier type
 font size
-form of tactile notation
 has category of manifestation
 has media type",IRI,,follow mapping for BOOKS 008/23 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /06 [identifier] (books, computer files, music, continuing resources, mixed materials)"" ."
-10,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,07-10,Nature of contents,,,*,,006 00,a,,,"http://rdaregistry.info/Elements/w/P10004
-http://rdaregistry.info/Elements/m/P30137","has category of work
-note on manifestation",STRUCTURED/IRI,,follow mapping for BOOKS 008/24-27 - CP 2024-09-26,,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07-10 [identifier] (books, continuing resources)"" ."
-11,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,07-10,Nature of contents,,,*,,006 00,t,,,"http://rdaregistry.info/Elements/w/P10004
-http://rdaregistry.info/Elements/m/P30137","has category of work
-note on manifestation",STRUCTURED/IRI,,follow mapping for BOOKS 008/24-27 - CP 2024-09-26,,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07-10 [identifier] (books, continuing resources)"" ."
-12,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,11,Government publication,,,*,,006 00,a,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,"https://doi.org/10.6069/uwlswd.2eg3-1x53# + code value
+8,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,11,Government publication,,,*,,006 00,a,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,"https://doi.org/10.6069/uwlswd.2eg3-1x53# + code value
 follow mapping for BOOKS 008/28 - CP 2024-09-26",,compare with 008/28
-13,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,11,Government publication,,,*,,006 00,t,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,"https://doi.org/10.6069/uwlswd.2eg3-1x53# + code value
+9,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,11,Government publication,,,*,,006 00,t,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,"https://doi.org/10.6069/uwlswd.2eg3-1x53# + code value
 follow mapping for BOOKS 008/28 - CP 2024-09-26",,compare with 008/28
-14,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,12,Conference publication,,,1,,006 00,a,,,http://rdaregistry.info/Elements/w/P10004,has category of work,IRI,,"https://doi.org/10.6069/uwlswd.t1gh-8294#1
-follow mapping for BOOKS 008/29 - CP 2024-09-26",,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12-13 [identifier] (books)"" ."
-15,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,12,Conference publication,,,1,,006 00,t,,,http://rdaregistry.info/Elements/w/P10004,has category of work,IRI,,"https://doi.org/10.6069/uwlswd.t1gh-8294#1
-follow mapping for BOOKS 008/29 - CP 2024-09-26",,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12-13 [identifier] (books)"" ."
-16,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,13,Festschrift,,,1,,006 00,a,,,http://rdaregistry.info/Elements/w/P10004,has category of work,IRI,,"https://doi.org/10.6069/uwlswd.tq9s-1157#1
-follow mapping for BOOKS 008/30 - CP 2024-09-26",,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12-13 [identifier] (books)"" ."
-17,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,13,Festschrift,,,1,,006 00,t,,,http://rdaregistry.info/Elements/w/P10004,has category of work,IRI,,"https://doi.org/10.6069/uwlswd.tq9s-1157#1
-follow mapping for BOOKS 008/30 - CP 2024-09-26",,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12-13 [identifier] (books)"" ."
-18,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,14,Index,,,1,,006 00,a,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,IRI,,"https://doi.org/10.6069/uwlswd.m0xp-h565#1
+10,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,14,Index,,,1,,006 00,a,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,IRI,,"https://doi.org/10.6069/uwlswd.m0xp-h565#1
 follow mapping for BOOKS 008/31 - CP 2024-09-26",,compare with 008/31
-19,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,14,Index,,,1,,006 00,t,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,IRI,,"https://doi.org/10.6069/uwlswd.m0xp-h565#1
+11,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,14,Index,,,1,,006 00,t,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,IRI,,"https://doi.org/10.6069/uwlswd.m0xp-h565#1
 follow mapping for BOOKS 008/31 - CP 2024-09-26",,compare with 008/31
-20,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,15,Undefined,,,,,006 00,a,,,,,,,,,
-21,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,15,Undefined,,,,,006 00,t,,,,,,,,,
-22,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,16,Literary form,,,*,,006 00,a,,,http://rdaregistry.info/Elements/w/P10004,has category of work,IRI,,"https://doi.org/10.6069/uwlswd.f447-ax91# + code value
+12,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,15,Undefined,,,,,006 00,a,,,,,,,,,
+13,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,15,Undefined,,,,,006 00,t,,,,,,,,,
+14,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,05,Target audience,,,*,,006 00,a,,,http://rdaregistry.info/Elements/e/P20322,has intended audience of expression,IRI,,follow mapping for BOOKS 008/22 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20322 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05 [identifier] (books, music, computer files, visual materials)"" ."
+15,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,05,Target audience,,,*,,006 00,t,,,http://rdaregistry.info/Elements/e/P20322,has intended audience of expression,IRI,,follow mapping for BOOKS 008/22 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20322 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05 [identifier] (books, music, computer files, visual materials)"" ."
+16,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,06,Form of item,,,*,,006 00,a,,,"
+http://rdaregistry.info/Elements/e/P20061",form of tactile notation,IRI,,follow mapping for BOOKS 008/23 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /06 [identifier] (books, computer files, music, continuing resources, mixed materials)"" ."
+17,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,06,Form of item,,,*,,006 00,t,,,"
+http://rdaregistry.info/Elements/e/P20061",form of tactile notation,IRI,,follow mapping for BOOKS 008/23 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /06 [identifier] (books, computer files, music, continuing resources, mixed materials)"" ."
+18,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,07-10,Nature of contents,,,*,,006 00,a,,,"http://rdaregistry.info/Elements/w/P10004
+","has category of work
+",STRUCTURED/IRI,,follow mapping for BOOKS 008/24-27 - CP 2024-09-26,,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07-10 [identifier] (books, continuing resources)"" ."
+19,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,07-10,Nature of contents,,,*,,006 00,a,,,"
+http://rdaregistry.info/Elements/m/P30137","
+note on manifestation",UNSTRUCTURED,,follow mapping for BOOKS 008/24-27 - CP 2024-09-26,,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07-10 [identifier] (books, continuing resources)"" ."
+20,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,07-10,Nature of contents,,,*,,006 00,t,,,"http://rdaregistry.info/Elements/w/P10004
+","has category of work
+",STRUCTURED/IRI,,follow mapping for BOOKS 008/24-27 - CP 2024-09-26,,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07-10 [identifier] (books, continuing resources)"" ."
+21,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,07-10,Nature of contents,,,*,,006 00,t,,,"
+http://rdaregistry.info/Elements/m/P30137","
+note on manifestation",UNSTRUCTURED,,follow mapping for BOOKS 008/24-27 - CP 2024-09-26,,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07-10 [identifier] (books, continuing resources)"" ."
+22,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,12,Conference publication,,,1,,006 00,a,,,http://rdaregistry.info/Elements/w/P10004,has category of work,IRI,,"https://doi.org/10.6069/uwlswd.t1gh-8294#1
+follow mapping for BOOKS 008/29 - CP 2024-09-26",,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12-13 [identifier] (books)"" ."
+23,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,12,Conference publication,,,1,,006 00,t,,,http://rdaregistry.info/Elements/w/P10004,has category of work,IRI,,"https://doi.org/10.6069/uwlswd.t1gh-8294#1
+follow mapping for BOOKS 008/29 - CP 2024-09-26",,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12-13 [identifier] (books)"" ."
+24,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,13,Festschrift,,,1,,006 00,a,,,http://rdaregistry.info/Elements/w/P10004,has category of work,IRI,,"https://doi.org/10.6069/uwlswd.tq9s-1157#1
+follow mapping for BOOKS 008/30 - CP 2024-09-26",,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12-13 [identifier] (books)"" ."
+25,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,13,Festschrift,,,1,,006 00,t,,,http://rdaregistry.info/Elements/w/P10004,has category of work,IRI,,"https://doi.org/10.6069/uwlswd.tq9s-1157#1
+follow mapping for BOOKS 008/30 - CP 2024-09-26",,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12-13 [identifier] (books)"" ."
+26,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,16,Literary form,,,*,,006 00,a,,,http://rdaregistry.info/Elements/w/P10004,has category of work,IRI,,"https://doi.org/10.6069/uwlswd.f447-ax91# + code value
 follow mapping for BOOKS 008/33 - CP 2024-09-26",,compare with 008/33
-23,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,16,Literary form,,,*,,006 00,t,,,http://rdaregistry.info/Elements/w/P10004,has category of work,IRI,,"https://doi.org/10.6069/uwlswd.f447-ax91# + code value
+27,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,16,Literary form,,,*,,006 00,t,,,http://rdaregistry.info/Elements/w/P10004,has category of work,IRI,,"https://doi.org/10.6069/uwlswd.f447-ax91# + code value
 follow mapping for BOOKS 008/33 - CP 2024-09-26",,compare with 008/33
-24,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,17,Biography,,,,,006 00,a,,,"http://rdaregistry.info/Elements/w/P10004
+28,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,17,Biography,,,,,006 00,a,,,"http://rdaregistry.info/Elements/w/P10004
 http://rdaregistry.info/Elements/m/P30137","has category of work
 has note on manifestation",STRUCTURED/IRI,,follow mapping for BOOKS 008/34 - CP 2024-09-26,,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /17 [identifier] (books)"" ."
-25,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,17,Biography,,,,,006 00,t,,,"http://rdaregistry.info/Elements/w/P10004
+29,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,BOOKS,17,Biography,,,,,006 00,t,,,"http://rdaregistry.info/Elements/w/P10004
 http://rdaregistry.info/Elements/m/P30137","has category of work
 has note on manifestation",STRUCTURED/IRI,,follow mapping for BOOKS 008/34 - CP 2024-09-26,,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /17 [identifier] (books)"" ."
-26,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,COMPUTER FILES/ELECTRONIC RESOURCES,00,Form of material,,,m,Computer file/Electronic resource,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,https://doi.org/10.6069/uwlswd.25z4-e963#m  - CP 2024-09-26,,see also 008/18-34
-27,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,COMPUTER FILES/ELECTRONIC RESOURCES,01-04,Undefined,,,,,006 00,m,,,,,,,,,
-28,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,COMPUTER FILES/ELECTRONIC RESOURCES,05,Target audience,,,,,006 00,m,,,http://rdaregistry.info/Elements/e/P20322,has intended audience of expression,structured/identifier,,"https://doi.org/10.6069/uwlswd.aec4-nv40# + code value
-follow mapping for COMPUTER FILES 008/22 - CP 2024-09-26",,"From RDA to MARC mapping: rdae:P20322 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05 [identifier] (books, music, computer files, visual materials)"" ."
-29,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,COMPUTER FILES/ELECTRONIC RESOURCES,05,Target audience,,,,,006 00,m,,,http://rdaregistry.info/Elements/m/P30305,has intended audience of manifestation,structured/identifier,,,,compare with 008/22
-30,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,COMPUTER FILES/ELECTRONIC RESOURCES,06,Form of item,,,,,006 00,m,,,http://rdaregistry.info/Elements/m/P30001,has carrier type,STRUCTURED/IRI,," https://doi.org/10.6069/uwlswd.3d5s-zx23# + code value
+30,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,COMPUTER FILES/ELECTRONIC RESOURCES,05,Target audience,,,,,006 00,m,,,http://rdaregistry.info/Elements/m/P30305,has intended audience of manifestation,structured/identifier,,,,compare with 008/22
+31,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,COMPUTER FILES/ELECTRONIC RESOURCES,00,Form of material,,,m,Computer file/Electronic resource,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,https://doi.org/10.6069/uwlswd.25z4-e963#m  - CP 2024-09-26,,see also 008/18-34
+32,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,COMPUTER FILES/ELECTRONIC RESOURCES,06,Form of item,,,,,006 00,m,,,http://rdaregistry.info/Elements/m/P30001,has carrier type,STRUCTURED/IRI,," https://doi.org/10.6069/uwlswd.3d5s-zx23# + code value
 follow mapping for COMPUTER FILES 008/23 - CP 2024-09-26",,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /06 [identifier] (books, computer files, music, continuing resources, mixed materials)"" ."
-31,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,COMPUTER FILES/ELECTRONIC RESOURCES,07-08,Undefined,,,,,006 00,m,,,,,,,,,
-32,done,6,COMPUTER FILES/ELECTRONIC RESOURCES,,,,,,,COMPUTER FILES/ELECTRONIC RESOURCES,09,Type of computer file,,,,,006 00,m,,,http://rdaregistry.info/Elements/m/P30018,has file type,STRUCTURED/IRI,,"https://doi.org/10.6069/uwlswd.mkjn-bp10# + code value
+33,done,6,COMPUTER FILES/ELECTRONIC RESOURCES,,,,,,,COMPUTER FILES/ELECTRONIC RESOURCES,09,Type of computer file,,,,,006 00,m,,,http://rdaregistry.info/Elements/m/P30018,has file type,STRUCTURED/IRI,,"https://doi.org/10.6069/uwlswd.mkjn-bp10# + code value
 follow mapping for COMPUTER FILES 008/26 - CP 2024-09-26",,"From RDA to MARC mapping: rdam:P30018 rdakit:hasM21 ""MARC 21 Bibliographic 006 /09 [identifier] (computer files)"" ."
-33,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,COMPUTER FILES/ELECTRONIC RESOURCES,10,Undefined,,,,,006 00,m,,,,,,,,,
 34,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,COMPUTER FILES/ELECTRONIC RESOURCES,11,Government publication,,,,,006 00,m,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,"https://doi.org/10.6069/uwlswd.2eg3-1x53# + code value
 follow mapping for COMPUTER FILES 008/28 - CP 2024-09-26",,compare with 008/28
-35,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,COMPUTER FILES/ELECTRONIC RESOURCES,12-17,Undefined,,,,,006 00,m,,,,,,,,,
-36,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,00,Form of material,,,s,Serial/Integrating resource,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,https://doi.org/10.6069/uwlswd.25z4-e963#s - CP 2024-09-26,,see also 008/18-34
-37,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,01,Frequency,,,,,006 00,s,,,http://rdaregistry.info/Elements/w/P10368,has frequency,IRI,,follow mapping for CONTINUING RESOURCES 008/18 - CP 2024-09-26,,compare with 008/18
-38,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,02,Regularity,,,,,006 00,s,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,,follow mapping for CONTINUING RESOURCES 008/19 - CP 2024-09-26,,compare with 008/19
-39,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,03,ISSN Center [OBSOLETE],,,,,006 00,s,,,,,,,,,
-40,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,04,Type of continuing resource,,,,,006 00,s,,,http://rdaregistry.info/Elements/w/P10004,has category of work,IRI,,"https://doi.org/10.6069/uwlswd.62zz-1534# + code value
-follow mapping for CONTINUING RESOURCES 008/21 - CP 2024-09-26",,Compare with 008/21
-41,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,05,Form of original item,,,,,006 00,s,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,,follow mapping for CONTINUING RESOURCES 008/22 - CP 2024-09-26,,Compare with 008/22
-42,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,06,Form of item,,,,,006 00,s,,,"http://rdaregistry.info/Elements/m/P30001
+35,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,COMPUTER FILES/ELECTRONIC RESOURCES,01-04,Undefined,,,,,006 00,m,,,,,,,,,
+36,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,COMPUTER FILES/ELECTRONIC RESOURCES,07-08,Undefined,,,,,006 00,m,,,,,,,,,
+37,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,COMPUTER FILES/ELECTRONIC RESOURCES,10,Undefined,,,,,006 00,m,,,,,,,,,
+38,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,COMPUTER FILES/ELECTRONIC RESOURCES,12-17,Undefined,,,,,006 00,m,,,,,,,,,
+39,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,COMPUTER FILES/ELECTRONIC RESOURCES,05,Target audience,,,,,006 00,m,,,http://rdaregistry.info/Elements/e/P20322,has intended audience of expression,structured/identifier,,"https://doi.org/10.6069/uwlswd.aec4-nv40# + code value
+follow mapping for COMPUTER FILES 008/22 - CP 2024-09-26",,"From RDA to MARC mapping: rdae:P20322 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05 [identifier] (books, music, computer files, visual materials)"" ."
+40,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,00,Form of material,,,s,Serial/Integrating resource,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,https://doi.org/10.6069/uwlswd.25z4-e963#s - CP 2024-09-26,,see also 008/18-34
+41,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,02,Regularity,,,,,006 00,s,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,,follow mapping for CONTINUING RESOURCES 008/19 - CP 2024-09-26,,compare with 008/19
+42,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,05,Form of original item,,,,,006 00,s,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,,follow mapping for CONTINUING RESOURCES 008/22 - CP 2024-09-26,,Compare with 008/22
+43,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,06,Form of item,,,,,006 00,s,,,"http://rdaregistry.info/Elements/m/P30001
 http://rdaregistry.info/Elements/m/P30199
-http://rdaregistry.info/Elements/e/P20061
 http://rdaregistry.info/Elements/m/P30335
 http://rdaregistry.info/Elements/m/P30002","has carrier type
 font size
-form of tactile notation
 has category of manifestation
 has media type",STRUCTURED/IRI,,follow mapping for CONTINUING RESOURCES 008/23 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /06 [identifier] (books, computer files, music, continuing resources, mixed materials)"" ."
-43,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,07,Nature of entire work,,,,,006 00,s,,,http://rdaregistry.info/Elements/w/P10004,has category of work,structured,,"https://doi.org/10.6069/uwlswd.jfr5-z647# + code value
+44,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,11,Government publication,,,,,006 00,s,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,follow mapping for CONTINUING RESOURCES 008/28 - CP 2024-09-26,,compare with 008/28
+45,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,16,Original alphabet or script of title,,,,,006 00,s,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,structured,,"""Original alphabet or script of title: [value]""
+follow mapping for CONTINUING RESOURCES 008/33 - CP 2024-09-26",,"From RDA to MARC mapping: rdae:P20065 rdakit:hasM21 ""MARC 21 Bibliographic 006 /16 [identifier] (continuing resources)"" ."
+46,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,03,ISSN Center [OBSOLETE],,,,,006 00,s,,,,,,,,,
+47,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,13-15,Undefined,,,,,006 00,s,,,,,,,,,
+48,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,17,Entry convention,,,,,006 00,s,,,http://rdaregistry.info/Elements/w/P10365,has extension plan,structured/IRI,,,,Compare with 008/34
+49,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,01,Frequency,,,,,006 00,s,,,http://rdaregistry.info/Elements/w/P10368,has frequency,IRI,,follow mapping for CONTINUING RESOURCES 008/18 - CP 2024-09-26,,compare with 008/18
+50,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,04,Type of continuing resource,,,,,006 00,s,,,http://rdaregistry.info/Elements/w/P10004,has category of work,IRI,,"https://doi.org/10.6069/uwlswd.62zz-1534# + code value
+follow mapping for CONTINUING RESOURCES 008/21 - CP 2024-09-26",,Compare with 008/21
+51,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,06,Form of item,,,,,006 00,s,,,http://rdaregistry.info/Elements/e/P20061,form of tactile notation,STRUCTURED/IRI,,follow mapping for CONTINUING RESOURCES 008/23 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /06 [identifier] (books, computer files, music, continuing resources, mixed materials)"" ."
+52,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,07,Nature of entire work,,,,,006 00,s,,,http://rdaregistry.info/Elements/w/P10004,has category of work,structured,,"https://doi.org/10.6069/uwlswd.jfr5-z647# + code value
 follow mapping for CONTINUING RESOURCES 008/24 - CP 2024-09-26",,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07-10 [identifier] (books, continuing resources)"" ."
-44,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,08-10,Nature of contents,,,,,006 00,s,,,"http://rdaregistry.info/Elements/w/P10004
+53,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,08-10,Nature of contents,,,,,006 00,s,,,"http://rdaregistry.info/Elements/w/P10004
 http://rdaregistry.info/Elements/m/P30137","has category of work
 has note on manifestation",structured,,follow mapping for CONTINUING RESOURCES 008/25-27 - CP 2024-09-26,,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07-10 [identifier] (books, continuing resources)"" ."
-45,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,11,Government publication,,,,,006 00,s,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,follow mapping for CONTINUING RESOURCES 008/28 - CP 2024-09-26,,compare with 008/28
-46,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,12,Conference publication,,,1,,006 00,s,,,http://rdaregistry.info/Elements/w/P10004,has category of work,structured,,"https://doi.org/10.6069/uwlswd.6mz0-ta86#1
+54,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,12,Conference publication,,,1,,006 00,s,,,http://rdaregistry.info/Elements/w/P10004,has category of work,structured,,"https://doi.org/10.6069/uwlswd.6mz0-ta86#1
 follow mapping for CONTINUING RESOURCES 008/29 - CP 2024-09-25",,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12 [identifier] (continuing resources)"" ."
-47,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,13-15,Undefined,,,,,006 00,s,,,,,,,,,
-48,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,16,Original alphabet or script of title,,,,,006 00,s,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,structured,,"""Original alphabet or script of title: [value]""
-follow mapping for CONTINUING RESOURCES 008/33 - CP 2024-09-26",,"From RDA to MARC mapping: rdae:P20065 rdakit:hasM21 ""MARC 21 Bibliographic 006 /16 [identifier] (continuing resources)"" ."
-49,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,CONTINUING RESOURCES,17,Entry convention,,,,,006 00,s,,,http://rdaregistry.info/Elements/w/P10365,has extension plan,structured/IRI,,,,Compare with 008/34
-50,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,00,Form of material,,,e,Cartographic material,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,structured,,https://doi.org/10.6069/uwlswd.25z4-e963#e - CP 2024-09-26,,see also 008/18-34
-51,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,00,Form of material,,,f,Manuscript cartographic material,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,structured,,https://doi.org/10.6069/uwlswd.25z4-e963#f - CP 2024-09-26,,see also 008/18-34
-52,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,01-04,Relief,,,,,006 00,e,,,http://rdaregistry.info/Elements/e/P20318,has relief representation,structured,,follow mapping for MAPS 008/18-21 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20318 rdakit:hasM21 ""MARC 21 Bibliographic 006 /01-04 [identifier] (maps)"" ."
-53,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,01-04,Relief,,,,,006 00,f,,,http://rdaregistry.info/Elements/e/P20318,has relief representation,structured,,follow mapping for MAPS 008/18-21 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20318 rdakit:hasM21 ""MARC 21 Bibliographic 006 /01-04 [identifier] (maps)"" ."
-54,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,05-06,Projection,,,,,006 00,e,,,http://rdaregistry.info/Elements/e/P20216,has projection of cartographic content,structured,,follow mapping for MAPS 008/22-23 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20216 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05-06 [identifier] (maps)"" ."
-55,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,05-06,Projection,,,,,006 00,f,,,http://rdaregistry.info/Elements/e/P20216,has projection of cartographic content,structured,,follow mapping for MAPS 008/22-23 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20216 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05-06 [identifier] (maps)"" ."
-56,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,07,Prime meridian [OBSOLETE],,,,,006 00,e,,,http://rdaregistry.info/Elements/e/P20317,prime meridian,structured/IRI,,follow mapping for MAPS 008/24 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07 [identifier] (maps)"" ."
-57,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,07,Prime meridian [OBSOLETE],,,,,006 00,f,,,http://rdaregistry.info/Elements/e/P20317,prime meridian,structured/IRI,,follow mapping for MAPS 008/24 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07 [identifier] (maps)"" ."
-58,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,07,Prime meridian [OBSOLETE],,,,,006 00,e,,,http://rdaregistry.info/Elements/e/P20001,has content type,structured/IRI,,,,"From RDA to MARC mapping: rdae:P20001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07 [identifier] (maps)"" ."
-59,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,07,Prime meridian [OBSOLETE],,,,,006 00,e,,,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,structured/IRI,,,,"From RDA to MARC mapping: rdam:P30003 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07 [identifier] (maps)"" ."
-60,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,07,Prime meridian [OBSOLETE],,,,,006 00,f,,,http://rdaregistry.info/Elements/e/P20001,has content type,structured/IRI,,,,"From RDA to MARC mapping: rdae:P20001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07 [identifier] (maps)"" ."
-61,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,07,Prime meridian [OBSOLETE],,,,,006 00,f,,,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,structured/IRI,,,,"From RDA to MARC mapping: rdam:P30003 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07 [identifier] (maps)"" ."
-62,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,07,Undefined,,,,,006 00,e,,,http://rdaregistry.info/Elements/e/P20001,has content type,,,,,"From RDA to MARC mapping: rdae:P20001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07 [identifier] (maps)"" ."
-63,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,07,Undefined,,,,,006 00,e,,,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,,,,,"From RDA to MARC mapping: rdam:P30003 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07 [identifier] (maps)"" ."
-64,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,07,Undefined,,,,,006 00,f,,,http://rdaregistry.info/Elements/e/P20001,has content type,,,,,"From RDA to MARC mapping: rdae:P20001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07 [identifier] (maps)"" ."
-65,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,07,Undefined,,,,,006 00,f,,,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,,,,,"From RDA to MARC mapping: rdam:P30003 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07 [identifier] (maps)"" ."
-66,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,08,Type of cartographic material,,,,,006 00,e,,,"http://rdaregistry.info/Elements/w/P10004
+55,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,00,Form of material,,,e,Cartographic material,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,structured,,https://doi.org/10.6069/uwlswd.25z4-e963#e - CP 2024-09-26,,see also 008/18-34
+56,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,00,Form of material,,,f,Manuscript cartographic material,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,structured,,https://doi.org/10.6069/uwlswd.25z4-e963#f - CP 2024-09-26,,see also 008/18-34
+57,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,11,Government publication,,,,,006 00,e,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,follow mapping for MAPS 008/28 - CP 2024-09-26,,compare with 008/28
+58,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,11,Government publication,,,,,006 00,f,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,follow mapping for MAPS 008/28 - CP 2024-09-26,,compare with 008/28
+59,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,12,Form of item,,,,,006 00,e,,,"http://rdaregistry.info/Elements/m/P30001
+http://rdaregistry.info/Elements/m/P30199
+http://rdaregistry.info/Elements/m/P30335
+http://rdaregistry.info/Elements/m/P30002","has carrier type
+font size
+has category of manifestation
+has media type",STRUCTURED/IRI,,follow mapping for MAPS 008/29 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12 [identifier] (maps, visual materials)"" ."
+60,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,12,Form of item,,,,,006 00,f,,,"http://rdaregistry.info/Elements/m/P30001
+http://rdaregistry.info/Elements/m/P30199
+http://rdaregistry.info/Elements/m/P30335
+http://rdaregistry.info/Elements/m/P30002","has carrier type
+font size
+has category of manifestation
+has media type",STRUCTURED/IRI,,follow mapping for MAPS 008/29 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12 [identifier] (maps, visual materials)"" ."
+61,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,14,Index,,,1,,006 00,e,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,unstructured,,"https://doi.org/10.6069/uwlswd.2h4d-g549#1 
+follow mapping for MAPS 008/31 - CP 2024-09-26",,compare with 008/31
+62,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,14,Index,,,1,,006 00,f,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,unstructured,,"https://doi.org/10.6069/uwlswd.2h4d-g549#1 
+follow mapping for MAPS 008/31 - CP 2024-09-26",,compare with 008/31
+63,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,07,Prime meridian [OBSOLETE],,,,,006 00,e,,,http://rdaregistry.info/Elements/e/P20001,has content type,structured/IRI,,,,"From RDA to MARC mapping: rdae:P20001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07 [identifier] (maps)"" ."
+64,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,07,Prime meridian [OBSOLETE],,,,,006 00,e,,,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,structured/IRI,,,,"From RDA to MARC mapping: rdam:P30003 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07 [identifier] (maps)"" ."
+65,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,07,Prime meridian [OBSOLETE],,,,,006 00,f,,,http://rdaregistry.info/Elements/e/P20001,has content type,structured/IRI,,,,"From RDA to MARC mapping: rdae:P20001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07 [identifier] (maps)"" ."
+66,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,07,Prime meridian [OBSOLETE],,,,,006 00,f,,,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,structured/IRI,,,,"From RDA to MARC mapping: rdam:P30003 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07 [identifier] (maps)"" ."
+67,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,07,Undefined,,,,,006 00,e,,,http://rdaregistry.info/Elements/e/P20001,has content type,,,,,"From RDA to MARC mapping: rdae:P20001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07 [identifier] (maps)"" ."
+68,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,07,Undefined,,,,,006 00,e,,,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,,,,,"From RDA to MARC mapping: rdam:P30003 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07 [identifier] (maps)"" ."
+69,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,07,Undefined,,,,,006 00,f,,,http://rdaregistry.info/Elements/e/P20001,has content type,,,,,"From RDA to MARC mapping: rdae:P20001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07 [identifier] (maps)"" ."
+70,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,07,Undefined,,,,,006 00,f,,,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,,,,,"From RDA to MARC mapping: rdam:P30003 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07 [identifier] (maps)"" ."
+71,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,09-10,Undefined,,,,,006 00,e,,,,,,,,,
+72,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,09-10,Undefined,,,,,006 00,f,,,,,,,,,
+73,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,12,Undefined [OBSOLETE],,,,,006 00,e,,,,,,,,,
+74,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,12,Undefined [OBSOLETE],,,,,006 00,f,,,,,,,,,
+75,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,13,Undefined,,,,,006 00,e,,,,,,,,,
+76,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,13,Undefined,,,,,006 00,f,,,,,,,,,
+77,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,15,Undefined,,,,,006 00,e,,,,,,,,,
+78,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,15,Undefined,,,,,006 00,f,,,,,,,,,
+79,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,01-04,Relief,,,,,006 00,e,,,http://rdaregistry.info/Elements/e/P20318,has relief representation,structured,,follow mapping for MAPS 008/18-21 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20318 rdakit:hasM21 ""MARC 21 Bibliographic 006 /01-04 [identifier] (maps)"" ."
+80,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,01-04,Relief,,,,,006 00,f,,,http://rdaregistry.info/Elements/e/P20318,has relief representation,structured,,follow mapping for MAPS 008/18-21 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20318 rdakit:hasM21 ""MARC 21 Bibliographic 006 /01-04 [identifier] (maps)"" ."
+81,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,05-06,Projection,,,,,006 00,e,,,http://rdaregistry.info/Elements/e/P20216,has projection of cartographic content,structured,,follow mapping for MAPS 008/22-23 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20216 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05-06 [identifier] (maps)"" ."
+82,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,05-06,Projection,,,,,006 00,f,,,http://rdaregistry.info/Elements/e/P20216,has projection of cartographic content,structured,,follow mapping for MAPS 008/22-23 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20216 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05-06 [identifier] (maps)"" ."
+83,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,07,Prime meridian [OBSOLETE],,,,,006 00,e,,,http://rdaregistry.info/Elements/e/P20317,prime meridian,structured/IRI,,follow mapping for MAPS 008/24 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07 [identifier] (maps)"" ."
+84,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,07,Prime meridian [OBSOLETE],,,,,006 00,f,,,http://rdaregistry.info/Elements/e/P20317,prime meridian,structured/IRI,,follow mapping for MAPS 008/24 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /07 [identifier] (maps)"" ."
+85,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,08,Type of cartographic material,,,,,006 00,e,,,"http://rdaregistry.info/Elements/w/P10004
 http://rdaregistry.info/Elements/m/P30003
 http://rdaregistry.info/Elements/m/P30001","has category of work
 has mode of issuance
 has carrier type",IRI,,follow mapping for MAPS 008/25 - CP 2024-09-26,,Compare with 008/25
-67,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,08,Type of cartographic material,,,,,006 00,f,,,"http://rdaregistry.info/Elements/w/P10004
+86,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,08,Type of cartographic material,,,,,006 00,f,,,"http://rdaregistry.info/Elements/w/P10004
 http://rdaregistry.info/Elements/m/P30003
 http://rdaregistry.info/Elements/m/P30001","has category of work
 has mode of issuance
 has carrier type",IRI,,follow mapping for MAPS 008/25 - CP 2024-09-26,,Compare with 008/25
-68,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,09-10,Undefined,,,,,006 00,e,,,,,,,,,
-69,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,09-10,Undefined,,,,,006 00,f,,,,,,,,,
-70,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,11,Government publication,,,,,006 00,e,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,follow mapping for MAPS 008/28 - CP 2024-09-26,,compare with 008/28
-71,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,11,Government publication,,,,,006 00,f,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,follow mapping for MAPS 008/28 - CP 2024-09-26,,compare with 008/28
-72,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,12,Form of item,,,,,006 00,e,,,"http://rdaregistry.info/Elements/m/P30001
-http://rdaregistry.info/Elements/m/P30199
-http://rdaregistry.info/Elements/e/P20061
-http://rdaregistry.info/Elements/m/P30335
-http://rdaregistry.info/Elements/m/P30002","has carrier type
-font size
-form of tactile notation
-has category of manifestation
-has media type",STRUCTURED/IRI,,follow mapping for MAPS 008/29 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12 [identifier] (maps, visual materials)"" ."
-73,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,12,Form of item,,,,,006 00,f,,,"http://rdaregistry.info/Elements/m/P30001
-http://rdaregistry.info/Elements/m/P30199
-http://rdaregistry.info/Elements/e/P20061
-http://rdaregistry.info/Elements/m/P30335
-http://rdaregistry.info/Elements/m/P30002","has carrier type
-font size
-form of tactile notation
-has category of manifestation
-has media type",STRUCTURED/IRI,,follow mapping for MAPS 008/29 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12 [identifier] (maps, visual materials)"" ."
-74,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,12,Undefined [OBSOLETE],,,,,006 00,e,,,,,,,,,
-75,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,12,Undefined [OBSOLETE],,,,,006 00,f,,,,,,,,,
-76,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,13,Undefined,,,,,006 00,e,,,,,,,,,
-77,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,13,Undefined,,,,,006 00,f,,,,,,,,,
-78,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,14,Index,,,1,,006 00,e,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,unstructured,,"https://doi.org/10.6069/uwlswd.2h4d-g549#1 
-follow mapping for MAPS 008/31 - CP 2024-09-26",,compare with 008/31
-79,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,14,Index,,,1,,006 00,f,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,unstructured,,"https://doi.org/10.6069/uwlswd.2h4d-g549#1 
-follow mapping for MAPS 008/31 - CP 2024-09-26",,compare with 008/31
-80,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,15,Undefined,,,,,006 00,e,,,,,,,,,
-81,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,15,Undefined,,,,,006 00,f,,,,,,,,,
-82,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,16-17,Special format characteristics,,,,,006 00,e,,,"http://rdaregistry.info/Elements/m/P30001
+87,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,12,Form of item,,,,,006 00,e,,,http://rdaregistry.info/Elements/e/P20061,form of tactile notation,STRUCTURED/IRI,,follow mapping for MAPS 008/29 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12 [identifier] (maps, visual materials)"" ."
+88,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,12,Form of item,,,,,006 00,f,,,http://rdaregistry.info/Elements/e/P20061,form of tactile notation,STRUCTURED/IRI,,follow mapping for MAPS 008/29 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12 [identifier] (maps, visual materials)"" ."
+89,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,16-17,Special format characteristics,,,,,006 00,e,,,"http://rdaregistry.info/Elements/m/P30001
 http://rdaregistry.info/Elements/m/P30187
 http://rdaregistry.info/Elements/m/P30335
 http://rdaregistry.info/Elements/w/P10004
@@ -168,7 +171,7 @@ has production method
 has category of manifestation
 has category of work
 has font size",structured/IRI,,follow mapping for MAPS 008/33-34 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /16-17 [identifier] (maps)"" ."
-83,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,16-17,Special format characteristics,,,,,006 00,f,,,"http://rdaregistry.info/Elements/m/P30001
+90,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,16-17,Special format characteristics,,,,,006 00,f,,,"http://rdaregistry.info/Elements/m/P30001
 http://rdaregistry.info/Elements/m/P30187
 http://rdaregistry.info/Elements/m/P30335
 http://rdaregistry.info/Elements/w/P10004
@@ -177,234 +180,244 @@ has production method
 has category of manifestation
 has category of work
 has font size",structured/IRI,,follow mapping for MAPS 008/33-34 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /16-17 [identifier] (maps)"" ."
-84,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MIXED MATERIALS,00,Form of material,,,p,Mixed material,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,https://doi.org/10.6069/uwlswd.25z4-e963#p - CP 2024-09-26,,see also 008/18-34
-85,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MIXED MATERIALS,01-05,Undefined,,,,,006 00,p,,,,,,,,,
-86,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MIXED MATERIALS,06,Form of item,,,,,006 00,p,,,"http://rdaregistry.info/Elements/m/P30001
+91,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,12,Form of item,,,,,006 00,f,,,http://rdaregistry.info/Elements/e/P20061,form of tactile notation,IRI,,http://rdaregistry.info/termList/TacNotation/1001,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12 [identifier] (maps, visual materials)"" ."
+92,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MIXED MATERIALS,00,Form of material,,,p,Mixed material,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,https://doi.org/10.6069/uwlswd.25z4-e963#p - CP 2024-09-26,,see also 008/18-34
+93,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MIXED MATERIALS,06,Form of item,,,,,006 00,p,,,"http://rdaregistry.info/Elements/m/P30001
 http://rdaregistry.info/Elements/m/P30199
-http://rdaregistry.info/Elements/e/P20061
 http://rdaregistry.info/Elements/m/P30335
 http://rdaregistry.info/Elements/m/P30002","has carrier type
 font size
-form of tactile notation
 has category of manifestation
 has media type",STRUCTURED/IRI,,follow mapping for MIXED MATERIALS 008/23 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /06 [identifier] (books, computer files, music, continuing resources, mixed materials)"" ."
-87,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MIXED MATERIALS,07-17,Undefined,,,,,006 00,p,,,,,,,,,
-88,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,00,Form of material,,,c,Notated music,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,structured,,https://doi.org/10.6069/uwlswd.25z4-e963#c - CP 2024-09-26,,see also 008/18-34
-89,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,00,Form of material,,,d,Manuscript notated music,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,structured,,https://doi.org/10.6069/uwlswd.25z4-e963#d  - CP 2024-09-26,,see also 008/18-34
-90,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,00,Form of material,,,i,Nonmusical sound recording,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,structured,,https://doi.org/10.6069/uwlswd.25z4-e963#i  - CP 2024-09-26,,see also 008/18-34
-91,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,00,Form of material,,,j,Musical sound recording,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,structured,,https://doi.org/10.6069/uwlswd.25z4-e963#j  - CP 2024-09-26,,see also 008/18-34
-92,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,01-02,Form of composition,,,,,006 00,c,,,http://rdaregistry.info/Elements/w/P10004,has category of work,structured,,follow mapping for MUSIC 008/18-19 - CP 2024-09-26,,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /01-02 [identifier] (music)"" ."
-93,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,01-02,Form of composition,,,,,006 00,d,,,http://rdaregistry.info/Elements/w/P10004,has category of work,structured,,follow mapping for MUSIC 008/18-19 - CP 2024-09-26,,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /01-02 [identifier] (music)"" ."
-94,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,01-02,Form of composition,,,,,006 00,i,,,http://rdaregistry.info/Elements/w/P10004,has category of work,structured,,follow mapping for MUSIC 008/18-19 - CP 2024-09-26,,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /01-02 [identifier] (music)"" ."
-95,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,01-02,Form of composition,,,,,006 00,j,,,http://rdaregistry.info/Elements/w/P10004,has category of work,structured,,follow mapping for MUSIC 008/18-19 - CP 2024-09-26,,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /01-02 [identifier] (music)"" ."
-96,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,03,Format of music,,,,,006 00,c,,,http://rdaregistry.info/Elements/e/P20209,has format of notated music,structured/IRI,,follow mapping for MUSIC 008/20 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20209 rdakit:hasM21 ""MARC 21 Bibliographic 006 /03-04 [identifier] (music)"" ."
-97,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,03,Format of music,,,,,006 00,d,,,http://rdaregistry.info/Elements/e/P20209,has format of notated music,structured/IRI,,follow mapping for MUSIC 008/20 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20209 rdakit:hasM21 ""MARC 21 Bibliographic 006 /03-04 [identifier] (music)"" ."
-98,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,03,Format of music,,,,,006 00,i,,,http://rdaregistry.info/Elements/e/P20209,has format of notated music,structured/IRI,,follow mapping for MUSIC 008/20 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20209 rdakit:hasM21 ""MARC 21 Bibliographic 006 /03-04 [identifier] (music)"" ."
-99,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,03,Format of music,,,,,006 00,j,,,http://rdaregistry.info/Elements/e/P20209,has format of notated music,structured/IRI,,follow mapping for MUSIC 008/20 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20209 rdakit:hasM21 ""MARC 21 Bibliographic 006 /03-04 [identifier] (music)"" ."
-100,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,04,Music parts,,,,,006 00,c,,,http://rdaregistry.info/Elements/e/P20209,has format of notated music,structured/IRI,,follow mapping for MUSIC 008/21 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20209 rdakit:hasM21 ""MARC 21 Bibliographic 006 /03-04 [identifier] (music)"" ."
-101,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,04,Music parts,,,,,006 00,d,,,http://rdaregistry.info/Elements/e/P20209,has format of notated music,structured/IRI,,follow mapping for MUSIC 008/21 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20209 rdakit:hasM21 ""MARC 21 Bibliographic 006 /03-04 [identifier] (music)"" ."
-102,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,04,Music parts,,,,,006 00,i,,,http://rdaregistry.info/Elements/e/P20209,has format of notated music,structured/IRI,,follow mapping for MUSIC 008/21 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20209 rdakit:hasM21 ""MARC 21 Bibliographic 006 /03-04 [identifier] (music)"" ."
-103,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,04,Music parts,,,,,006 00,j,,,http://rdaregistry.info/Elements/e/P20209,has format of notated music,structured/IRI,,follow mapping for MUSIC 008/21 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20209 rdakit:hasM21 ""MARC 21 Bibliographic 006 /03-04 [identifier] (music)"" ."
-104,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,05,Target audience,,,,,006 00,c,,,http://rdaregistry.info/Elements/e/P20322,has intended audience of expression,structured/identifier,,follow mapping for MUSIC 008/22 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20322 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05 [identifier] (books, music, computer files, visual materials)"" ."
-105,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,05,Target audience,,,,,006 00,c,,,http://rdaregistry.info/Elements/m/P30305,has intended audience of manifestation,structured/identifier,,,,compare with 008/22
-106,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,05,Target audience,,,,,006 00,d,,,http://rdaregistry.info/Elements/e/P20322,has intended audience of expression,structured/identifier,,follow mapping for MUSIC 008/22 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20322 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05 [identifier] (books, music, computer files, visual materials)"" ."
-107,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,05,Target audience,,,,,006 00,d,,,http://rdaregistry.info/Elements/m/P30305,has intended audience of manifestation,structured/identifier,,,,compare with 008/22
-108,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,05,Target audience,,,,,006 00,i,,,http://rdaregistry.info/Elements/e/P20322,has intended audience of expression,structured/identifier,,follow mapping for MUSIC 008/22 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20322 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05 [identifier] (books, music, computer files, visual materials)"" ."
-109,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,05,Target audience,,,,,006 00,i,,,http://rdaregistry.info/Elements/m/P30305,has intended audience of manifestation,structured/identifier,,,,compare with 008/22
-110,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,05,Target audience,,,,,006 00,j,,,http://rdaregistry.info/Elements/e/P20322,has intended audience of expression,structured/identifier,,follow mapping for MUSIC 008/22 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20322 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05 [identifier] (books, music, computer files, visual materials)"" ."
-111,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,05,Target audience,,,,,006 00,j,,,http://rdaregistry.info/Elements/m/P30305,has intended audience of manifestation,structured/identifier,,,,compare with 008/22
-112,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,06,Form of item,,,,,006 00,c,,,"http://rdaregistry.info/Elements/m/P30001
+94,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MIXED MATERIALS,01-05,Undefined,,,,,006 00,p,,,,,,,,,
+95,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MIXED MATERIALS,07-17,Undefined,,,,,006 00,p,,,,,,,,,
+96,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MIXED MATERIALS,06,Form of item,,,,,006 00,p,,,http://rdaregistry.info/Elements/e/P20061,form of tactile notation,STRUCTURED/IRI,,follow mapping for MIXED MATERIALS 008/23 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /06 [identifier] (books, computer files, music, continuing resources, mixed materials)"" ."
+97,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,05,Target audience,,,,,006 00,c,,,http://rdaregistry.info/Elements/m/P30305,has intended audience of manifestation,structured/identifier,,,,compare with 008/22
+98,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,05,Target audience,,,,,006 00,d,,,http://rdaregistry.info/Elements/m/P30305,has intended audience of manifestation,structured/identifier,,,,compare with 008/22
+99,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,05,Target audience,,,,,006 00,i,,,http://rdaregistry.info/Elements/m/P30305,has intended audience of manifestation,structured/identifier,,,,compare with 008/22
+100,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,05,Target audience,,,,,006 00,j,,,http://rdaregistry.info/Elements/m/P30305,has intended audience of manifestation,structured/identifier,,,,compare with 008/22
+101,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,06,Form of item,,,,,006 00,d,,,http://rdaregistry.info/Elements/m/P30199,font size,IRI,,http://rdaregistry.info/termList/fontSize/1002,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /06 [identifier] (books, computer files, music, continuing resources, mixed materials)"" ."
+102,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,00,Form of material,,,c,Notated music,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,structured,,https://doi.org/10.6069/uwlswd.25z4-e963#c - CP 2024-09-26,,see also 008/18-34
+103,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,00,Form of material,,,d,Manuscript notated music,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,structured,,https://doi.org/10.6069/uwlswd.25z4-e963#d  - CP 2024-09-26,,see also 008/18-34
+104,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,00,Form of material,,,i,Nonmusical sound recording,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,structured,,https://doi.org/10.6069/uwlswd.25z4-e963#i  - CP 2024-09-26,,see also 008/18-34
+105,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,00,Form of material,,,j,Musical sound recording,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,structured,,https://doi.org/10.6069/uwlswd.25z4-e963#j  - CP 2024-09-26,,see also 008/18-34
+106,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,06,Form of item,,,,,006 00,c,,,"http://rdaregistry.info/Elements/m/P30001
 http://rdaregistry.info/Elements/m/P30199
-http://rdaregistry.info/Elements/e/P20061
 http://rdaregistry.info/Elements/m/P30335
 http://rdaregistry.info/Elements/m/P30002","has carrier type
 font size
-form of tactile notation
 has category of manifestation
 has media type",STRUCTURED/IRI,,follow mapping for MUSIC 008/23 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /06 [identifier] (books, computer files, music, continuing resources, mixed materials)"" ."
-113,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MAPS,12,Form of item,,,,,006 00,f,,,http://rdaregistry.info/Elements/e/P20061,form of tactile notation,IRI,,http://rdaregistry.info/termList/TacNotation/1001,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12 [identifier] (maps, visual materials)"" ."
-114,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,06,Form of item,,,,,006 00,d,,,"http://rdaregistry.info/Elements/m/P30001
+107,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,06,Form of item,,,,,006 00,d,,,"http://rdaregistry.info/Elements/m/P30001
 http://rdaregistry.info/Elements/m/P30199
-http://rdaregistry.info/Elements/e/P20061
 http://rdaregistry.info/Elements/m/P30335
 http://rdaregistry.info/Elements/m/P30002","has carrier type
 font size
-form of tactile notation
 has category of manifestation
 has media type",STRUCTURED/IRI,,follow mapping for MUSIC 008/23 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /06 [identifier] (books, computer files, music, continuing resources, mixed materials)"" ."
-115,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,06,Form of item,,,,,006 00,i,,,"http://rdaregistry.info/Elements/m/P30001
+108,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,06,Form of item,,,,,006 00,i,,,"http://rdaregistry.info/Elements/m/P30001
 http://rdaregistry.info/Elements/m/P30199
-http://rdaregistry.info/Elements/e/P20061
 http://rdaregistry.info/Elements/m/P30335
 http://rdaregistry.info/Elements/m/P30002","has carrier type
 font size
-form of tactile notation
 has category of manifestation
 has media type",STRUCTURED/IRI,,follow mapping for MUSIC 008/23 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /06 [identifier] (books, computer files, music, continuing resources, mixed materials)"" ."
-116,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,06,Form of item,,,,,006 00,j,,,"http://rdaregistry.info/Elements/m/P30001
+109,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,06,Form of item,,,,,006 00,j,,,"http://rdaregistry.info/Elements/m/P30001
 http://rdaregistry.info/Elements/m/P30199
-http://rdaregistry.info/Elements/e/P20061
 http://rdaregistry.info/Elements/m/P30335
 http://rdaregistry.info/Elements/m/P30002","has carrier type
 font size
-form of tactile notation
 has category of manifestation
 has media type",STRUCTURED/IRI,,follow mapping for MUSIC 008/23 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /06 [identifier] (books, computer files, music, continuing resources, mixed materials)"" ."
-117,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,07-12,Accompanying matter,,,,,006 00,c,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,structured,,"https://doi.org/10.6069/uwlswd.nt0v-d633# + code value
+110,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,07-12,Accompanying matter,,,,,006 00,c,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,structured,,"https://doi.org/10.6069/uwlswd.nt0v-d633# + code value
 follow mapping for MUSIC 008/24-29 - CP 2024-09-26",,compare with 008/24-29
-118,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,07-12,Accompanying matter,,,,,006 00,d,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,structured,,"https://doi.org/10.6069/uwlswd.nt0v-d633# + code value
+111,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,07-12,Accompanying matter,,,,,006 00,d,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,structured,,"https://doi.org/10.6069/uwlswd.nt0v-d633# + code value
 follow mapping for MUSIC 008/24-29 - CP 2024-09-26",,compare with 008/24-29
-119,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,07-12,Accompanying matter,,,,,006 00,i,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,structured,,"https://doi.org/10.6069/uwlswd.nt0v-d633# + code value
+112,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,07-12,Accompanying matter,,,,,006 00,i,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,structured,,"https://doi.org/10.6069/uwlswd.nt0v-d633# + code value
 follow mapping for MUSIC 008/24-29 - CP 2024-09-26",,compare with 008/24-29
-120,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,07-12,Accompanying matter,,,,,006 00,j,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,structured,,"https://doi.org/10.6069/uwlswd.nt0v-d633# + code value
+113,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,07-12,Accompanying matter,,,,,006 00,j,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,structured,,"https://doi.org/10.6069/uwlswd.nt0v-d633# + code value
 follow mapping for MUSIC 008/24-29 - CP 2024-09-26",,compare with 008/24-29
-121,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,13-14,Literary text for sound recordings,,,,,006 00,c,,,"http://rdaregistry.info/Elements/e/P20331
-http://rdaregistry.info/Elements/w/P10004","has category of expression
+114,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,15,Undefined,,,,,006 00,c,,,,,,,,,
+115,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,15,Undefined,,,,,006 00,d,,,,,,,,,
+116,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,15,Undefined,,,,,006 00,i,,,,,,,,,
+117,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,15,Undefined,,,,,006 00,j,,,,,,,,,
+118,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,17,Undefined,,,,,006 00,c,,,,,,,,,
+119,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,17,Undefined,,,,,006 00,d,,,,,,,,,
+120,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,17,Undefined,,,,,006 00,i,,,,,,,,,
+121,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,17,Undefined,,,,,006 00,j,,,,,,,,,
+122,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,01-02,Form of composition,,,,,006 00,c,,,http://rdaregistry.info/Elements/w/P10004,has category of work,structured,,follow mapping for MUSIC 008/18-19 - CP 2024-09-26,,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /01-02 [identifier] (music)"" ."
+123,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,01-02,Form of composition,,,,,006 00,d,,,http://rdaregistry.info/Elements/w/P10004,has category of work,structured,,follow mapping for MUSIC 008/18-19 - CP 2024-09-26,,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /01-02 [identifier] (music)"" ."
+124,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,01-02,Form of composition,,,,,006 00,i,,,http://rdaregistry.info/Elements/w/P10004,has category of work,structured,,follow mapping for MUSIC 008/18-19 - CP 2024-09-26,,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /01-02 [identifier] (music)"" ."
+125,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,01-02,Form of composition,,,,,006 00,j,,,http://rdaregistry.info/Elements/w/P10004,has category of work,structured,,follow mapping for MUSIC 008/18-19 - CP 2024-09-26,,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /01-02 [identifier] (music)"" ."
+126,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,03,Format of music,,,,,006 00,c,,,http://rdaregistry.info/Elements/e/P20209,has format of notated music,structured/IRI,,follow mapping for MUSIC 008/20 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20209 rdakit:hasM21 ""MARC 21 Bibliographic 006 /03-04 [identifier] (music)"" ."
+127,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,03,Format of music,,,,,006 00,d,,,http://rdaregistry.info/Elements/e/P20209,has format of notated music,structured/IRI,,follow mapping for MUSIC 008/20 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20209 rdakit:hasM21 ""MARC 21 Bibliographic 006 /03-04 [identifier] (music)"" ."
+128,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,03,Format of music,,,,,006 00,i,,,http://rdaregistry.info/Elements/e/P20209,has format of notated music,structured/IRI,,follow mapping for MUSIC 008/20 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20209 rdakit:hasM21 ""MARC 21 Bibliographic 006 /03-04 [identifier] (music)"" ."
+129,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,03,Format of music,,,,,006 00,j,,,http://rdaregistry.info/Elements/e/P20209,has format of notated music,structured/IRI,,follow mapping for MUSIC 008/20 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20209 rdakit:hasM21 ""MARC 21 Bibliographic 006 /03-04 [identifier] (music)"" ."
+130,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,04,Music parts,,,,,006 00,c,,,http://rdaregistry.info/Elements/e/P20209,has format of notated music,structured/IRI,,follow mapping for MUSIC 008/21 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20209 rdakit:hasM21 ""MARC 21 Bibliographic 006 /03-04 [identifier] (music)"" ."
+131,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,04,Music parts,,,,,006 00,d,,,http://rdaregistry.info/Elements/e/P20209,has format of notated music,structured/IRI,,follow mapping for MUSIC 008/21 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20209 rdakit:hasM21 ""MARC 21 Bibliographic 006 /03-04 [identifier] (music)"" ."
+132,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,04,Music parts,,,,,006 00,i,,,http://rdaregistry.info/Elements/e/P20209,has format of notated music,structured/IRI,,follow mapping for MUSIC 008/21 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20209 rdakit:hasM21 ""MARC 21 Bibliographic 006 /03-04 [identifier] (music)"" ."
+133,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,04,Music parts,,,,,006 00,j,,,http://rdaregistry.info/Elements/e/P20209,has format of notated music,structured/IRI,,follow mapping for MUSIC 008/21 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20209 rdakit:hasM21 ""MARC 21 Bibliographic 006 /03-04 [identifier] (music)"" ."
+134,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,05,Target audience,,,,,006 00,c,,,http://rdaregistry.info/Elements/e/P20322,has intended audience of expression,structured/identifier,,follow mapping for MUSIC 008/22 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20322 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05 [identifier] (books, music, computer files, visual materials)"" ."
+135,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,05,Target audience,,,,,006 00,d,,,http://rdaregistry.info/Elements/e/P20322,has intended audience of expression,structured/identifier,,follow mapping for MUSIC 008/22 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20322 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05 [identifier] (books, music, computer files, visual materials)"" ."
+136,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,05,Target audience,,,,,006 00,i,,,http://rdaregistry.info/Elements/e/P20322,has intended audience of expression,structured/identifier,,follow mapping for MUSIC 008/22 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20322 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05 [identifier] (books, music, computer files, visual materials)"" ."
+137,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,05,Target audience,,,,,006 00,j,,,http://rdaregistry.info/Elements/e/P20322,has intended audience of expression,structured/identifier,,follow mapping for MUSIC 008/22 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20322 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05 [identifier] (books, music, computer files, visual materials)"" ."
+138,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,06,Form of item,,,,,006 00,c,,,http://rdaregistry.info/Elements/e/P20061,form of tactile notation,STRUCTURED/IRI,,follow mapping for MUSIC 008/23 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /06 [identifier] (books, computer files, music, continuing resources, mixed materials)"" ."
+139,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,06,Form of item,,,,,006 00,d,,,"
+http://rdaregistry.info/Elements/e/P20061",form of tactile notation,STRUCTURED/IRI,,follow mapping for MUSIC 008/23 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /06 [identifier] (books, computer files, music, continuing resources, mixed materials)"" ."
+140,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,06,Form of item,,,,,006 00,i,,,"
+http://rdaregistry.info/Elements/e/P20061",form of tactile notation,STRUCTURED/IRI,,follow mapping for MUSIC 008/23 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /06 [identifier] (books, computer files, music, continuing resources, mixed materials)"" ."
+141,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,06,Form of item,,,,,006 00,j,,,"
+http://rdaregistry.info/Elements/e/P20061",form of tactile notation,STRUCTURED/IRI,,follow mapping for MUSIC 008/23 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /06 [identifier] (books, computer files, music, continuing resources, mixed materials)"" ."
+142,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,13-14,Literary text for sound recordings,,,,,006 00,c,,,"http://rdaregistry.info/Elements/e/P20331
+","has category of expression
+",structured,,follow mapping for MUSIC 008/30-31 - CP 2024-09-26,,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /13-14 [identifier] (music)"" ."
+143,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,13-14,Literary text for sound recordings,,,,,006 00,c,,,"
+http://rdaregistry.info/Elements/w/P10004","
 has category of work",structured,,follow mapping for MUSIC 008/30-31 - CP 2024-09-26,,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /13-14 [identifier] (music)"" ."
-122,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,13-14,Literary text for sound recordings,,,,,006 00,d,,,"http://rdaregistry.info/Elements/e/P20331
-http://rdaregistry.info/Elements/w/P10004","has category of expression
+144,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,13-14,Literary text for sound recordings,,,,,006 00,d,,,"http://rdaregistry.info/Elements/e/P20331
+","has category of expression
+",structured,,follow mapping for MUSIC 008/30-31 - CP 2024-09-26,,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /13-14 [identifier] (music)"" ."
+145,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,13-14,Literary text for sound recordings,,,,,006 00,d,,,"
+http://rdaregistry.info/Elements/w/P10004","
 has category of work",structured,,follow mapping for MUSIC 008/30-31 - CP 2024-09-26,,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /13-14 [identifier] (music)"" ."
-123,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,13-14,Literary text for sound recordings,,,,,006 00,i,,,"http://rdaregistry.info/Elements/e/P20331
-http://rdaregistry.info/Elements/w/P10004","has category of expression
+146,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,13-14,Literary text for sound recordings,,,,,006 00,i,,,"http://rdaregistry.info/Elements/e/P20331
+","has category of expression
+",structured,,follow mapping for MUSIC 008/30-31 - CP 2024-09-26,,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /13-14 [identifier] (music)"" ."
+147,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,13-14,Literary text for sound recordings,,,,,006 00,i,,,"
+http://rdaregistry.info/Elements/w/P10004","
 has category of work",structured,,follow mapping for MUSIC 008/30-31 - CP 2024-09-26,,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /13-14 [identifier] (music)"" ."
-124,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,13-14,Literary text for sound recordings,,,,,006 00,j,,,"http://rdaregistry.info/Elements/e/P20331
-http://rdaregistry.info/Elements/w/P10004","has category of expression
+148,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,13-14,Literary text for sound recordings,,,,,006 00,j,,,"http://rdaregistry.info/Elements/e/P20331
+","has category of expression
+",structured,,follow mapping for MUSIC 008/30-31 - CP 2024-09-26,,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /13-14 [identifier] (music)"" ."
+149,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,13-14,Literary text for sound recordings,,,,,006 00,j,,,"
+http://rdaregistry.info/Elements/w/P10004","
 has category of work",structured,,follow mapping for MUSIC 008/30-31 - CP 2024-09-26,,"From RDA to MARC mapping: rdaw:P10004 rdakit:hasM21 ""MARC 21 Bibliographic 006 /13-14 [identifier] (music)"" ."
-125,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,15,Undefined,,,,,006 00,c,,,,,,,,,
-126,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,15,Undefined,,,,,006 00,d,,,,,,,,,
-127,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,15,Undefined,,,,,006 00,i,,,,,,,,,
-128,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,15,Undefined,,,,,006 00,j,,,,,,,,,
-129,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,16,Transposition and arrangement,,,,,006 00,c,,,http://rdaregistry.info/Elements/e/P20331,has category of expression,IRI,,"https://doi.org/10.6069/uwlswd.axz0-z371# + code value
+150,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,16,Transposition and arrangement,,,,,006 00,c,,,http://rdaregistry.info/Elements/e/P20331,has category of expression,IRI,,"https://doi.org/10.6069/uwlswd.axz0-z371# + code value
 Follow mapping for MUSIC 008/33 - CP 2024/09/26",,"From RDA to MARC mapping: rdae:P20572 rdakit:hasM21 ""MARC 21 Bibliographic 006 /16 [identifier] (music)"" ."
-130,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,16,Transposition and arrangement,,,,,006 00,d,,,http://rdaregistry.info/Elements/e/P20331,has category of expression,IRI,,"https://doi.org/10.6069/uwlswd.axz0-z371# + code value
+151,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,16,Transposition and arrangement,,,,,006 00,d,,,http://rdaregistry.info/Elements/e/P20331,has category of expression,IRI,,"https://doi.org/10.6069/uwlswd.axz0-z371# + code value
 Follow mapping for MUSIC 008/33 - CP 2024/09/26",,"From RDA to MARC mapping: rdae:P20572 rdakit:hasM21 ""MARC 21 Bibliographic 006 /16 [identifier] (music)"" ."
-131,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,16,Transposition and arrangement,,,,,006 00,i,,,http://rdaregistry.info/Elements/e/P20331,has category of expression,IRI,,"https://doi.org/10.6069/uwlswd.axz0-z371# + code value
+152,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,16,Transposition and arrangement,,,,,006 00,i,,,http://rdaregistry.info/Elements/e/P20331,has category of expression,IRI,,"https://doi.org/10.6069/uwlswd.axz0-z371# + code value
 Follow mapping for MUSIC 008/33 - CP 2024/09/26",,"From RDA to MARC mapping: rdae:P20572 rdakit:hasM21 ""MARC 21 Bibliographic 006 /16 [identifier] (music)"" ."
-132,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,16,Transposition and arrangement,,,,,006 00,j,,,http://rdaregistry.info/Elements/e/P20331,has category of expression,IRI,,"https://doi.org/10.6069/uwlswd.axz0-z371# + code value
+153,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,16,Transposition and arrangement,,,,,006 00,j,,,http://rdaregistry.info/Elements/e/P20331,has category of expression,IRI,,"https://doi.org/10.6069/uwlswd.axz0-z371# + code value
 Follow mapping for MUSIC 008/33 - CP 2024/09/26",,"From RDA to MARC mapping: rdae:P20572 rdakit:hasM21 ""MARC 21 Bibliographic 006 /16 [identifier] (music)"" ."
-133,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,17,Undefined,,,,,006 00,c,,,,,,,,,
-134,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,17,Undefined,,,,,006 00,d,,,,,,,,,
-135,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,17,Undefined,,,,,006 00,i,,,,,,,,,
-136,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,17,Undefined,,,,,006 00,j,,,,,,,,,
-137,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,00,Form of material,,,g,Projected medium,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,structured,,https://doi.org/10.6069/uwlswd.25z4-e963#g - CP 2024-09-26,,see also 008/18-34
-138,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,00,Form of material,,,k,Two-dimensional nonprojectable graphic,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,structured,,https://doi.org/10.6069/uwlswd.25z4-e963#k - CP 2024-09-26,,see also 008/18-34
-139,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,00,Form of material,,,o,Kit,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,structured,,https://doi.org/10.6069/uwlswd.25z4-e963#o - CP 2024-09-26,,see also 008/18-34
-140,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,00,Form of material,,,r,Three-dimensional artifact or naturally occurring object,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,structured,,https://doi.org/10.6069/uwlswd.25z4-e963#r - CP 2024-09-26,,see also 008/18-34
-141,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,01-03,Running time,,,,,006 00,g,,,http://rdaregistry.info/Elements/e/P20219,has duration,identifier,,"
-
-""Duration: [number] minutes.""
-follow mapping for VISUAL MATERIALS 008/18-20 - CP 2024-09-26",,"From RDA to MARC mapping: rdae:P20219 rdakit:hasM21 ""MARC 21 Bibliographic 006 /01-03 [structured description] (visual materials)"" ."
-142,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,01-03,Running time,,,,,006 00,k,,,http://rdaregistry.info/Elements/e/P20219,has duration,identifier,,"
-
-""Duration: [number] minutes.""
-follow mapping for VISUAL MATERIALS 008/18-20 - CP 2024-09-26",,"From RDA to MARC mapping: rdae:P20219 rdakit:hasM21 ""MARC 21 Bibliographic 006 /01-03 [structured description] (visual materials)"" ."
-143,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,01-03,Running time,,,,,006 00,o,,,http://rdaregistry.info/Elements/e/P20219,has duration,identifier,,"
-
-""Duration: [number] minutes.""
-follow mapping for VISUAL MATERIALS 008/18-20 - CP 2024-09-26",,"From RDA to MARC mapping: rdae:P20219 rdakit:hasM21 ""MARC 21 Bibliographic 006 /01-03 [structured description] (visual materials)"" ."
-144,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,01-03,Running time,,,,,006 00,r,,,http://rdaregistry.info/Elements/e/P20219,has duration,identifier,,"
-
-""Duration: [number] minutes.""
-follow mapping for VISUAL MATERIALS 008/18-20 - CP 2024-09-26",,"From RDA to MARC mapping: rdae:P20219 rdakit:hasM21 ""MARC 21 Bibliographic 006 /01-03 [structured description] (visual materials)"" ."
-145,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,04,Undefined,,,,,006 00,g,,,,,,,,,
-146,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,04,Undefined,,,,,006 00,k,,,,,,,,,
-147,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,04,Undefined,,,,,006 00,o,,,,,,,,,
-148,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,04,Undefined,,,,,006 00,r,,,,,,,,,
-149,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,05,Target audience,,,,,006 00,g,,,http://rdaregistry.info/Elements/e/P20322,has intended audience of expression,structured/identifier,,follow mapping for VISUAL MATERIALS 008/22 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20322 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05 [identifier] (books, music, computer files, visual materials)"" ."
-150,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,05,Target audience,,,,,006 00,g,,,http://rdaregistry.info/Elements/m/P30305,has intended audience of manifestation,structured/identifier,,,,compare with 008/22
-151,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,05,Target audience,,,,,006 00,k,,,http://rdaregistry.info/Elements/e/P20322,has intended audience of expression,structured/identifier,,follow mapping for VISUAL MATERIALS 008/22 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20322 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05 [identifier] (books, music, computer files, visual materials)"" ."
-152,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,05,Target audience,,,,,006 00,k,,,http://rdaregistry.info/Elements/m/P30305,has intended audience of manifestation,structured/identifier,,,,compare with 008/22
-153,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,05,Target audience,,,,,006 00,o,,,http://rdaregistry.info/Elements/e/P20322,has intended audience of expression,structured/identifier,,follow mapping for VISUAL MATERIALS 008/22 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20322 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05 [identifier] (books, music, computer files, visual materials)"" ."
-154,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,05,Target audience,,,,,006 00,o,,,http://rdaregistry.info/Elements/m/P30305,has intended audience of manifestation,structured/identifier,,,,compare with 008/22
-155,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,05,Target audience,,,,,006 00,r,,,http://rdaregistry.info/Elements/e/P20322,has intended audience of expression,structured/identifier,,follow mapping for VISUAL MATERIALS 008/22 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20322 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05 [identifier] (books, music, computer files, visual materials)"" ."
-156,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,05,Target audience,,,,,006 00,r,,,http://rdaregistry.info/Elements/m/P30305,has intended audience of manifestation,structured/identifier,,,,compare with 008/22
-157,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,06-10,Accompanying matter [OBSOLETE],,,,,006 00,g,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,IRI,,,,
-158,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,06-10,Accompanying matter [OBSOLETE],,,,,006 00,k,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,IRI,,,,
-159,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,06-10,Accompanying matter [OBSOLETE],,,,,006 00,o,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,IRI,,,,
-160,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,06-10,Accompanying matter [OBSOLETE],,,,,006 00,r,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,IRI,,,,
-161,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,06-10,Undefined,,,,,006 00,g,,,,,,,,,
-162,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,06-10,Undefined,,,,,006 00,k,,,,,,,,,
-163,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,06-10,Undefined,,,,,006 00,o,,,,,,,,,
-164,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,06-10,Undefined,,,,,006 00,r,,,,,,,,,
-165,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,11,Government publication,,,,,006 00,g,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,follow mapping for VISUAL MATERIALS 008/28 - CP 2024-09-26,,compare with 008/28
-166,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,11,Government publication,,,,,006 00,k,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,follow mapping for VISUAL MATERIALS 008/28 - CP 2024-09-26,,compare with 008/28
-167,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,11,Government publication,,,,,006 00,o,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,follow mapping for VISUAL MATERIALS 008/28 - CP 2024-09-26,,compare with 008/28
-168,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,11,Government publication,,,,,006 00,r,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,follow mapping for VISUAL MATERIALS 008/28 - CP 2024-09-26,,compare with 008/28
-169,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,12,Form of item,,,,,006 00,g,,,"http://rdaregistry.info/Elements/m/P30001
+154,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,05,Target audience,,,,,006 00,g,,,http://rdaregistry.info/Elements/m/P30305,has intended audience of manifestation,structured/identifier,,,,compare with 008/22
+155,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,05,Target audience,,,,,006 00,k,,,http://rdaregistry.info/Elements/m/P30305,has intended audience of manifestation,structured/identifier,,,,compare with 008/22
+156,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,05,Target audience,,,,,006 00,o,,,http://rdaregistry.info/Elements/m/P30305,has intended audience of manifestation,structured/identifier,,,,compare with 008/22
+157,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,05,Target audience,,,,,006 00,r,,,http://rdaregistry.info/Elements/m/P30305,has intended audience of manifestation,structured/identifier,,,,compare with 008/22
+158,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,12,Form of item,,,,,006 00,r,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,,"value = ""Regular print reproduction.""",,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12 [identifier] (maps, visual materials)"" ."
+159,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,00,Form of material,,,g,Projected medium,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,structured,,https://doi.org/10.6069/uwlswd.25z4-e963#g - CP 2024-09-26,,see also 008/18-34
+160,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,00,Form of material,,,k,Two-dimensional nonprojectable graphic,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,structured,,https://doi.org/10.6069/uwlswd.25z4-e963#k - CP 2024-09-26,,see also 008/18-34
+161,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,00,Form of material,,,o,Kit,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,structured,,https://doi.org/10.6069/uwlswd.25z4-e963#o - CP 2024-09-26,,see also 008/18-34
+162,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,00,Form of material,,,r,Three-dimensional artifact or naturally occurring object,,,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,structured,,https://doi.org/10.6069/uwlswd.25z4-e963#r - CP 2024-09-26,,see also 008/18-34
+163,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,11,Government publication,,,,,006 00,g,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,follow mapping for VISUAL MATERIALS 008/28 - CP 2024-09-26,,compare with 008/28
+164,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,11,Government publication,,,,,006 00,k,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,follow mapping for VISUAL MATERIALS 008/28 - CP 2024-09-26,,compare with 008/28
+165,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,11,Government publication,,,,,006 00,o,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,follow mapping for VISUAL MATERIALS 008/28 - CP 2024-09-26,,compare with 008/28
+166,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,11,Government publication,,,,,006 00,r,,,http://rdaregistry.info/Elements/m/P30335,has category of manifestation,IRI,,follow mapping for VISUAL MATERIALS 008/28 - CP 2024-09-26,,compare with 008/28
+167,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,12,Form of item,,,,,006 00,g,,,"http://rdaregistry.info/Elements/m/P30001
 http://rdaregistry.info/Elements/m/P30199
-http://rdaregistry.info/Elements/e/P20061
 http://rdaregistry.info/Elements/m/P30335
 http://rdaregistry.info/Elements/m/P30002","has carrier type
 font size
-form of tactile notation
 has category of manifestation
 has media type",STRUCTURED/IRI,,follow mapping for VISUAL MATERIALS 008/29 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12 [identifier] (maps, visual materials)"" ."
-170,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,12,Form of item,,,,,006 00,k,,,"http://rdaregistry.info/Elements/m/P30001
+168,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,12,Form of item,,,,,006 00,k,,,"http://rdaregistry.info/Elements/m/P30001
 http://rdaregistry.info/Elements/m/P30199
-http://rdaregistry.info/Elements/e/P20061
 http://rdaregistry.info/Elements/m/P30335
 http://rdaregistry.info/Elements/m/P30002","has carrier type
 font size
-form of tactile notation
 has category of manifestation
 has media type",STRUCTURED/IRI,,follow mapping for VISUAL MATERIALS 008/29 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12 [identifier] (maps, visual materials)"" ."
-171,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,12,Form of item,,,,,006 00,o,,,"http://rdaregistry.info/Elements/m/P30001
+169,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,12,Form of item,,,,,006 00,o,,,"http://rdaregistry.info/Elements/m/P30001
 http://rdaregistry.info/Elements/m/P30199
-http://rdaregistry.info/Elements/e/P20061
 http://rdaregistry.info/Elements/m/P30335
 http://rdaregistry.info/Elements/m/P30002","has carrier type
 font size
-form of tactile notation
 has category of manifestation
 has media type",STRUCTURED/IRI,,follow mapping for VISUAL MATERIALS 008/29 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12 [identifier] (maps, visual materials)"" ."
-172,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,MUSIC,06,Form of item,,,,,006 00,d,,,http://rdaregistry.info/Elements/m/P30199,font size,IRI,,http://rdaregistry.info/termList/fontSize/1002,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /06 [identifier] (books, computer files, music, continuing resources, mixed materials)"" ."
-173,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,12,Form of item,,,,,006 00,r,,,"http://rdaregistry.info/Elements/m/P30001
+170,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,12,Form of item,,,,,006 00,r,,,"http://rdaregistry.info/Elements/m/P30001
 http://rdaregistry.info/Elements/m/P30199
-http://rdaregistry.info/Elements/e/P20061
 http://rdaregistry.info/Elements/m/P30335
 http://rdaregistry.info/Elements/m/P30002","has carrier type
 font size
-form of tactile notation
 has category of manifestation
 has media type",STRUCTURED/IRI,,follow mapping for VISUAL MATERIALS 008/29 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12 [identifier] (maps, visual materials)"" ."
-174,delete,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,12,Form of item,,,,,006 00,r,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured,,"value = ""Regular print reproduction.""",,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12 [identifier] (maps, visual materials)"" ."
-175,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,12,Undefined [OBSOLETE],,,,,006 00,g,,,,,,,,,
-176,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,12,Undefined [OBSOLETE],,,,,006 00,k,,,,,,,,,
-177,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,12,Undefined [OBSOLETE],,,,,006 00,o,,,,,,,,,
-178,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,12,Undefined [OBSOLETE],,,,,006 00,r,,,,,,,,,
-179,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,16,Type of visual material,,,,,006 00,g,,,"http://rdaregistry.info/Elements/m/P30335
-http://rdaregistry.info/Elements/m/P30001
-http://rdaregistry.info/Elements/w/P10004
-http://rdaregistry.info/Elements/m/P30002","has category of manifestation
-has carrier type
-has category of work
-has media type",structured/IRI,,follow mapping for VISUAL MATERIALS 008/33 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /16 [identifier] (visual materials)"" ."
-180,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,16,Type of visual material,,,,,006 00,k,,,"http://rdaregistry.info/Elements/m/P30335
-http://rdaregistry.info/Elements/m/P30001
-http://rdaregistry.info/Elements/w/P10004
-http://rdaregistry.info/Elements/m/P30002","has category of manifestation
-has carrier type
-has category of work
-has media type",structured/IRI,,follow mapping for VISUAL MATERIALS 008/33 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /16 [identifier] (visual materials)"" ."
-181,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,16,Type of visual material,,,,,006 00,o,,,"http://rdaregistry.info/Elements/m/P30335
-http://rdaregistry.info/Elements/m/P30001
-http://rdaregistry.info/Elements/w/P10004
-http://rdaregistry.info/Elements/m/P30002","has category of manifestation
-has carrier type
-has category of work
-has media type",structured/IRI,,follow mapping for VISUAL MATERIALS 008/33 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /16 [identifier] (visual materials)"" ."
-182,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,16,Type of visual material,,,,,006 00,r,,,"http://rdaregistry.info/Elements/m/P30335
-http://rdaregistry.info/Elements/m/P30001
-http://rdaregistry.info/Elements/w/P10004
-http://rdaregistry.info/Elements/m/P30002","has category of manifestation
-has carrier type
-has category of work
-has media type",structured/IRI,,follow mapping for VISUAL MATERIALS 008/33 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /16 [identifier] (visual materials)"" ."
-183,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,17,Technique,,,,,006 00,g,,,http://rdaregistry.info/Elements/w/P10222,has nature of content,structured/IRI,,follow mapping for VISUAL MATERIALS 008/34 - CP 2024-09-26,,compare with 008/34
-184,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,17,Technique,,,,,006 00,k,,,http://rdaregistry.info/Elements/w/P10222,has nature of content,structured/IRI,,follow mapping for VISUAL MATERIALS 008/34 - CP 2024-09-26,,
-185,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,17,Technique,,,,,006 00,o,,,http://rdaregistry.info/Elements/w/P10222,has nature of content,structured/IRI,,follow mapping for VISUAL MATERIALS 008/34 - CP 2024-09-26,,
-186,done,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,17,Technique,,,,,006 00,r,,,http://rdaregistry.info/Elements/w/P10222,has nature of content,structured/IRI,,follow mapping for VISUAL MATERIALS 008/34 - CP 2024-09-26,,
+171,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,04,Undefined,,,,,006 00,g,,,,,,,,,
+172,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,04,Undefined,,,,,006 00,k,,,,,,,,,
+173,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,04,Undefined,,,,,006 00,o,,,,,,,,,
+174,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,04,Undefined,,,,,006 00,r,,,,,,,,,
+175,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,06-10,Accompanying matter [OBSOLETE],,,,,006 00,g,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,IRI,,,,
+176,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,06-10,Accompanying matter [OBSOLETE],,,,,006 00,k,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,IRI,,,,
+177,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,06-10,Accompanying matter [OBSOLETE],,,,,006 00,o,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,IRI,,,,
+178,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,06-10,Accompanying matter [OBSOLETE],,,,,006 00,r,,,http://rdaregistry.info/Elements/m/P30455,has supplementary content,IRI,,,,
+179,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,06-10,Undefined,,,,,006 00,g,,,,,,,,,
+180,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,06-10,Undefined,,,,,006 00,k,,,,,,,,,
+181,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,06-10,Undefined,,,,,006 00,o,,,,,,,,,
+182,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,06-10,Undefined,,,,,006 00,r,,,,,,,,,
+183,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,12,Undefined [OBSOLETE],,,,,006 00,g,,,,,,,,,
+184,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,12,Undefined [OBSOLETE],,,,,006 00,k,,,,,,,,,
+185,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,12,Undefined [OBSOLETE],,,,,006 00,o,,,,,,,,,
+186,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,12,Undefined [OBSOLETE],,,,,006 00,r,,,,,,,,,
 187,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,13-15,Undefined,,,,,006 00,g,,,,,,,,,
 188,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,13-15,Undefined,,,,,006 00,k,,,,,,,,,
 189,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,13-15,Undefined,,,,,006 00,o,,,,,,,,,
 190,not mapped,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,13-15,Undefined,,,,,006 00,r,,,,,,,,,
+191,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,01-03,Running time,,,,,006 00,g,,,http://rdaregistry.info/Elements/e/P20219,has duration,identifier,,"
+
+""Duration: [number] minutes.""
+follow mapping for VISUAL MATERIALS 008/18-20 - CP 2024-09-26",,"From RDA to MARC mapping: rdae:P20219 rdakit:hasM21 ""MARC 21 Bibliographic 006 /01-03 [structured description] (visual materials)"" ."
+192,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,01-03,Running time,,,,,006 00,k,,,http://rdaregistry.info/Elements/e/P20219,has duration,identifier,,"
+
+""Duration: [number] minutes.""
+follow mapping for VISUAL MATERIALS 008/18-20 - CP 2024-09-26",,"From RDA to MARC mapping: rdae:P20219 rdakit:hasM21 ""MARC 21 Bibliographic 006 /01-03 [structured description] (visual materials)"" ."
+193,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,01-03,Running time,,,,,006 00,o,,,http://rdaregistry.info/Elements/e/P20219,has duration,identifier,,"
+
+""Duration: [number] minutes.""
+follow mapping for VISUAL MATERIALS 008/18-20 - CP 2024-09-26",,"From RDA to MARC mapping: rdae:P20219 rdakit:hasM21 ""MARC 21 Bibliographic 006 /01-03 [structured description] (visual materials)"" ."
+194,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,01-03,Running time,,,,,006 00,r,,,http://rdaregistry.info/Elements/e/P20219,has duration,identifier,,"
+
+""Duration: [number] minutes.""
+follow mapping for VISUAL MATERIALS 008/18-20 - CP 2024-09-26",,"From RDA to MARC mapping: rdae:P20219 rdakit:hasM21 ""MARC 21 Bibliographic 006 /01-03 [structured description] (visual materials)"" ."
+195,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,05,Target audience,,,,,006 00,g,,,http://rdaregistry.info/Elements/e/P20322,has intended audience of expression,structured/identifier,,follow mapping for VISUAL MATERIALS 008/22 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20322 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05 [identifier] (books, music, computer files, visual materials)"" ."
+196,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,05,Target audience,,,,,006 00,k,,,http://rdaregistry.info/Elements/e/P20322,has intended audience of expression,structured/identifier,,follow mapping for VISUAL MATERIALS 008/22 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20322 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05 [identifier] (books, music, computer files, visual materials)"" ."
+197,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,05,Target audience,,,,,006 00,o,,,http://rdaregistry.info/Elements/e/P20322,has intended audience of expression,structured/identifier,,follow mapping for VISUAL MATERIALS 008/22 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20322 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05 [identifier] (books, music, computer files, visual materials)"" ."
+198,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,05,Target audience,,,,,006 00,r,,,http://rdaregistry.info/Elements/e/P20322,has intended audience of expression,structured/identifier,,follow mapping for VISUAL MATERIALS 008/22 - CP 2024-09-26,,"From RDA to MARC mapping: rdae:P20322 rdakit:hasM21 ""MARC 21 Bibliographic 006 /05 [identifier] (books, music, computer files, visual materials)"" ."
+199,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,12,Form of item,,,,,006 00,g,,,http://rdaregistry.info/Elements/e/P20061,"form of tactile notation
+",STRUCTURED/IRI,,follow mapping for VISUAL MATERIALS 008/29 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12 [identifier] (maps, visual materials)"" ."
+200,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,12,Form of item,,,,,006 00,k,,,http://rdaregistry.info/Elements/e/P20061,"form of tactile notation
+",STRUCTURED/IRI,,follow mapping for VISUAL MATERIALS 008/29 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12 [identifier] (maps, visual materials)"" ."
+201,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,12,Form of item,,,,,006 00,o,,,http://rdaregistry.info/Elements/e/P20061,"form of tactile notation
+",STRUCTURED/IRI,,follow mapping for VISUAL MATERIALS 008/29 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12 [identifier] (maps, visual materials)"" ."
+202,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,12,Form of item,,,,,006 00,r,,,http://rdaregistry.info/Elements/e/P20061,"form of tactile notation
+",STRUCTURED/IRI,,follow mapping for VISUAL MATERIALS 008/29 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /12 [identifier] (maps, visual materials)"" ."
+203,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,16,Type of visual material,,,,,006 00,g,,,"http://rdaregistry.info/Elements/m/P30335
+http://rdaregistry.info/Elements/m/P30001
+http://rdaregistry.info/Elements/w/P10004
+http://rdaregistry.info/Elements/m/P30002","has category of manifestation
+has carrier type
+has category of work
+has media type",structured/IRI,,follow mapping for VISUAL MATERIALS 008/33 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /16 [identifier] (visual materials)"" ."
+204,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,16,Type of visual material,,,,,006 00,k,,,"http://rdaregistry.info/Elements/m/P30335
+http://rdaregistry.info/Elements/m/P30001
+http://rdaregistry.info/Elements/w/P10004
+http://rdaregistry.info/Elements/m/P30002","has category of manifestation
+has carrier type
+has category of work
+has media type",structured/IRI,,follow mapping for VISUAL MATERIALS 008/33 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /16 [identifier] (visual materials)"" ."
+205,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,16,Type of visual material,,,,,006 00,o,,,"http://rdaregistry.info/Elements/m/P30335
+http://rdaregistry.info/Elements/m/P30001
+http://rdaregistry.info/Elements/w/P10004
+http://rdaregistry.info/Elements/m/P30002","has category of manifestation
+has carrier type
+has category of work
+has media type",structured/IRI,,follow mapping for VISUAL MATERIALS 008/33 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /16 [identifier] (visual materials)"" ."
+206,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,16,Type of visual material,,,,,006 00,r,,,"http://rdaregistry.info/Elements/m/P30335
+http://rdaregistry.info/Elements/m/P30001
+http://rdaregistry.info/Elements/w/P10004
+http://rdaregistry.info/Elements/m/P30002","has category of manifestation
+has carrier type
+has category of work
+has media type",structured/IRI,,follow mapping for VISUAL MATERIALS 008/33 - CP 2024-09-26,,"From RDA to MARC mapping: rdam:P30001 rdakit:hasM21 ""MARC 21 Bibliographic 006 /16 [identifier] (visual materials)"" ."
+207,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,17,Technique,,,,,006 00,g,,,http://rdaregistry.info/Elements/w/P10222,has nature of content,structured/IRI,,follow mapping for VISUAL MATERIALS 008/34 - CP 2024-09-26,,compare with 008/34
+208,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,17,Technique,,,,,006 00,k,,,http://rdaregistry.info/Elements/w/P10222,has nature of content,structured/IRI,,follow mapping for VISUAL MATERIALS 008/34 - CP 2024-09-26,,
+209,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,17,Technique,,,,,006 00,o,,,http://rdaregistry.info/Elements/w/P10222,has nature of content,structured/IRI,,follow mapping for VISUAL MATERIALS 008/34 - CP 2024-09-26,,
+210,reviewed,6,FIXED-LENGTH DATA ELEMENTS--ADDITIONAL MATERIAL CHARACTERISTICS--GENERAL INFORMATION (R),,,,,,,VISUAL MATERIALS,17,Technique,,,,,006 00,r,,,http://rdaregistry.info/Elements/w/P10222,has nature of content,structured/IRI,,follow mapping for VISUAL MATERIALS 008/34 - CP 2024-09-26,,
