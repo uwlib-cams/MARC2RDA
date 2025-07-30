@@ -522,6 +522,85 @@
             <xsl:text>(Applies to: {marc:subfield[@code = '3']})</xsl:text>
         </xsl:if>
     </xsl:template>
+
+    <!--540-->
+    <xsl:template name="F540-xx-abcdgqu31" expand-text="yes">                          
+        <xsl:variable name="abcdgqu" select="marc:subfield[@code = ('a', 'b', 'c', 'd', 'g', 'q', 'u')]"/>
+        <xsl:variable name="has31" select="marc:subfield[@code = '3'] or marc:subfield[@code = '1']"/>
+        <xsl:variable name="s1" select="marc:subfield[@code = '1']"/>
+        <xsl:for-each select="$abcdgqu">
+            <xsl:choose>                    
+                <xsl:when test="@code = 'a'">
+                    <xsl:text>Terms governing use and reproduction: </xsl:text>
+                </xsl:when>
+                <xsl:when test ="@code = 'b'">
+                    <xsl:text>Jurisdiction: </xsl:text>
+                </xsl:when>
+                <xsl:when test="@code = 'c'">
+                    <xsl:text>Authorization: </xsl:text>
+                </xsl:when>
+                <xsl:when test="@code = 'd'">
+                    <xsl:text>Authorized users: </xsl:text>
+                </xsl:when>
+                <xsl:when test="@code = 'g'">
+                    <xsl:text>Availability: </xsl:text>
+                </xsl:when>
+                <xsl:when test="@code = 'q'">
+                    <xsl:text>Supplying agency: </xsl:text>
+                </xsl:when>
+                <xsl:when test="@code = 'u'">
+                    <xsl:text>additional information at: [</xsl:text>
+                </xsl:when>
+            </xsl:choose>
+            
+            <xsl:value-of select="."/>
+            <xsl:if test="@code = 'u'">
+                <xsl:text>]</xsl:text>
+            </xsl:if>
+            <xsl:if test="position() != last()">
+                <xsl:text> </xsl:text>
+            </xsl:if>
+            <xsl:if test="position() = last() and $has31">
+                <xsl:text>; </xsl:text>
+            </xsl:if>
+        </xsl:for-each>
+
+            <xsl:for-each select="marc:subfield[@code = '3']">
+                <xsl:text>(applies to: [{.}])</xsl:text>
+                <xsl:if test="position() = last() and $s1">
+                    <xsl:text>; </xsl:text>
+                </xsl:if> 
+            </xsl:for-each>
+            <xsl:for-each select="marc:subfield[@code = '1']">
+                <xsl:text>Real World Object URI: {.}</xsl:text>
+            </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template name="F540-xx-f2">
+        <xsl:if test="marc:subfield[@code = '2']">
+            <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
+            
+            <xsl:variable name="linked880">
+                <xsl:if test="@tag = '540' and marc:subfield[@code = '6']">
+                    <xsl:variable name="occNum"
+                        select="concat('540-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                    <xsl:copy-of
+                        select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]"/>
+                </xsl:if>
+            </xsl:variable>
+            
+            <xsl:for-each select="marc:subfield[@code = 'f']">
+                <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
+                    <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '540')"/>
+                    <xsl:if test="$linked880">
+                        <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'f']">
+                            <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '540')"/>
+                        </xsl:for-each>
+                    </xsl:if>
+                </rdf:Description>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
     
     <!-- 541 -->
     <xsl:template name="F541-xx-abcdefhno" expand-text="yes">
