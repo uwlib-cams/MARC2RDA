@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">540-test</marc:controlfield>
+<marc:datafield tag="540" ind1=" " ind2=" ">
+    <marc:subfield code="a">Licensed under a Creative Commons Attribution-NonCommercial 4.0 International License, except where otherwise noted.</marc:subfield>
+    <marc:subfield code="u">https://creativecommons.org/licenses/by-nc-sa/4.0</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="540" ind1=" " ind2=" ">
+    <marc:subfield code="a">Duplication of the collection materials may be governed by copyright and other restrictions.</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="540" ind1=" " ind2=" ">
+    <marc:subfield code="a">For private home use only.</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="540" ind1=" " ind2=" ">
+    <marc:subfield code="3">Recorded radio programs</marc:subfield>
+    <marc:subfield code="a">There are copyright and contractual restrictions applying to the reproduction of most of these recordings;</marc:subfield>
+    <marc:subfield code="b">Department of Treasury</marc:subfield>
+    <marc:subfield code="c">Treasury contracts 7-A130 through 39-A179.</marc:subfield>
+    <marc:subfield code="1">TEST</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="540" ind1=" " ind2=" ">
+     <marc:subfield code="3">Diaries</marc:subfield>
+     <marc:subfield code="a">Photocopying prohibited;</marc:subfield>
+     <marc:subfield code="d">Executor of estate.</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="540" ind1=" " ind2=" ">
+    <marc:subfield code="a">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</marc:subfield>
+    <marc:subfield code="f">CC BY-NC-ND 4.0</marc:subfield>
+    <marc:subfield code="2">cc</marc:subfield>
+    <marc:subfield code="0">https://creativecommons.org/licenses/by-nc-nd/4.0/</marc:subfield>
+</marc:datafield>
+        <marc:datafield tag="540" ind1=" " ind2=" ">
+            <marc:subfield code="a">Confidential, copying limited;</marc:subfield>
+            <marc:subfield code="5">wau</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>
