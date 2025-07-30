@@ -1131,21 +1131,21 @@
         <xsl:variable name="schemeElement" select="$testScheme[self::rdan:P80069 or self::rdand:P80069]"/>
         <!--<xsl:call-template name="getmarc"/>--> 
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <xsl:choose>            
-                <!--only mint nomenIRI when $2 has a scheme-->
-                <xsl:when test="$schemeElement/@rdf:resource">
-                    <rdf:Description rdf:about="{uwf:timespanIRI($baseID, .., .)}">
-                        <rdato:P70009 rdf:resource="{uwf:nomenIRI($baseID, .., ., marc:subfield[@code = '2'], 'timespan')}"/>
-                        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
-                    </rdf:Description>
-                </xsl:when>
-                <!--otherwise use string value of $a-->
-                <xsl:otherwise>
-                    <rdatd:P70015>
-                        <xsl:value-of select="."/>
-                    </rdatd:P70015>
-                </xsl:otherwise>
-            </xsl:choose>
+            <rdf:Description rdf:about="{uwf:timespanIRI($baseID, .., .)}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+                    <xsl:choose>
+                    <!--only mint nomenIRI when $2 has a scheme-->
+                        <xsl:when test="$schemeElement/@rdf:resource">
+                            <rdato:P70009 rdf:resource="{uwf:nomenIRI($baseID, .., ., marc:subfield[@code = '2'], 'timespan')}"/>
+                        </xsl:when>
+                            <!--otherwise use string value of $a-->
+                        <xsl:otherwise>
+                            <rdatd:P70015>
+                                    <xsl:value-of select="."/>
+                            </rdatd:P70015>
+                        </xsl:otherwise>
+                    </xsl:choose>
+            </rdf:Description>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = '0']">
             <xsl:if test="not(starts-with(., 'http://'))">
