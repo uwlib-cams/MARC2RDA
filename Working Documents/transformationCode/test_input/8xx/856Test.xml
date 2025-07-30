@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+<!--FAKE RECORD-->
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">856-test1</marc:controlfield>
+        
+        <marc:datafield tag="856" ind1="4" ind2="1">
+            <marc:subfield code="u">http://muse.jhu.edu/journals/american%5Fquarterly/</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="856" ind1="4" ind2="3">
+            <marc:subfield code="3">Volume 1</marc:subfield>
+            <marc:subfield code="u">http://www.csb.gov/assets/1/7/Vol_1_Final.pdf</marc:subfield>
+            <marc:subfield code="7">0</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="856" ind1="4" ind2="4">
+            <marc:subfield code="3">Table of contents</marc:subfield>
+            <marc:subfield code="u">https://catdir.loc.gov/catdir/toc/93-3471.html</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="856" ind1="4" ind2="2">
+            <marc:subfield code="3">Finding aid</marc:subfield>
+            <marc:subfield code="u">https://www.loc.gov/ammem/ead/jackson.sgm</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="856" ind1=" " ind2="0">
+            <marc:subfield code="u">https://www.loc.gov/ammem/ead/jackson.sgm</marc:subfield>
+            <marc:subfield code="3">Reference photos</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="u">//www.loc.gov/catdir/semdigdocs/seminar.html</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="856" ind1=" " ind2=" ">
+            <marc:subfield code="u">http://purl.access.gpo.gov/GPO/LPS98141</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>
