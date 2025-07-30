@@ -445,6 +445,54 @@
         </xsl:if>
     </xsl:template>
 
+    <!--856 Electronic Location and Access-->
+    <xsl:template match="marc:datafield[@tag = '856'] | marc:datafield[@tag = '856'][substring(marc:subfield[@code = '6'], 1, 6) = '856']" mode="man" expand-text="yes">
+        <xsl:if test="@ind2 = '0'">
+            <xsl:choose>
+                <xsl:when test="marc:subfield[@code = '3']">
+                    <xsl:for-each select="marc:subfield[@code = 'u']">
+                        <rdamd:P30137>
+                            <xsl:text>[{../marc:subfield[@code = '3']}] at: [{.}]</xsl:text>
+                        </rdamd:P30137>
+                    </xsl:for-each>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:for-each select="marc:subfield[@code = 'u']">
+                        <rdamo:P30154 rdf:resource="{.}"/>
+                    </xsl:for-each>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:if>
+        <xsl:if test="@ind2 = '2' or ' ' or '8'">
+            <xsl:for-each select="marc:subfield[@code = 'u']">
+                <rdamd:P30137>
+                    <xsl:text>Related resource at: [{.}]</xsl:text>
+                </rdamd:P30137>
+            </xsl:for-each>
+        </xsl:if>
+        <xsl:if test="@ind2 = '1'">
+            <xsl:for-each select="marc:subfield[@code = 'u']">
+                <rdamd:P30137>
+                    <xsl:text>Version of resource at: [{.}]</xsl:text>
+                </rdamd:P30137>
+            </xsl:for-each>
+        </xsl:if>
+        <xsl:if test="@ind2 = '3'">
+            <xsl:for-each select="marc:subfield[@code = 'u']">
+                <rdamd:P30137>
+                    <xsl:text>Component part(s) of resource at: [{.}]</xsl:text>
+                </rdamd:P30137>
+            </xsl:for-each>
+        </xsl:if>
+        <xsl:if test="@ind2 = '4'">
+            <xsl:for-each select="marc:subfield[@code = 'u']">
+                <rdamd:P30137>
+                    <xsl:text>Version of component part(s) of resource at: [{.}]</xsl:text>
+                </rdamd:P30137>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+
     <!--881 Manifestation Statements-->
     <xsl:template match="marc:datafield[@tag = '881'] | marc:datafield[@tag = '881'][substring(marc:subfield[@code = '6'], 1, 6) = '881']" mode="man" expand-text="yes">
         <xsl:if test="marc:subfield[@code = 'a']">
