@@ -382,7 +382,7 @@
         </xsl:if>
         <xsl:if test="$scheme">
             <xsl:choose>
-                <xsl:when test="$fieldNum = '506'">
+                <xsl:when test="$fieldNum = ('506', '540')">
                     <xsl:copy-of select="uwf:s2Concept506($scheme)"/>
                 </xsl:when> 
                 <xsl:when test="$fieldNum = ('050', '084')">
