@@ -1165,6 +1165,122 @@
             </rdf:Description>
         </xsl:for-each>
     </xsl:template>
+
+    <!--540 - Terms Governing Use and Reproduction Note-->
+    <xsl:template match="marc:datafield[@tag = '540'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '540-00']" mode="ite">
+        <xsl:param name="baseID"/>
+        <xsl:param name="manIRI"/>
+        <xsl:variable name="genID" select="generate-id()"/>
+        <xsl:variable name="s2">
+            <xsl:value-of select="marc:subfield[@code = '2']"/>
+        </xsl:variable>
+        <!--<xsl:call-template name="getmarc"/>-->
+        <xsl:if test="marc:subfield[@code = 'a'] or marc:subfield[@code = 'b'] or marc:subfield[@code = 'c'] or marc:subfield[@code = 'd'] or marc:subfield[@code = 'g'] or marc:subfield[@code = 'q'] or marc:subfield[@code = 'u'] or marc:subfield[@code = '1'] or marc:subfield[@code = '3'] or marc:subfield[@code = 'f'] or marc:subfield[@code = '2'] or marc:subfield[@code = '0']">
+            <xsl:if test="marc:subfield[@code = '5']">
+                <rdf:Description rdf:about="{uwf:itemIRI($baseID, .)}">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+                    <rdaid:P40001>
+                        <xsl:value-of select="concat('ite#',$baseID, $genID)"/>
+                    </rdaid:P40001>
+                    <rdaio:P40049 rdf:resource="{$manIRI}"/>
+                    <xsl:copy-of select="uwf:s5Lookup(marc:subfield[@code = '5'])"/>
+                <rdaid:P40048>
+                    <xsl:call-template name="F540-xx-abcdgqu31"/>
+                    <xsl:text> (at institution </xsl:text>
+                    <xsl:value-of select="marc:subfield[@code = '5']"/>
+                    <xsl:text>)</xsl:text>
+                </rdaid:P40048>
+                    <xsl:if test="marc:subfield[@code = '2']">
+                        <xsl:for-each select="marc:subfield[@code = 'f']">
+                            <rdaid:P40048 rdf:resource="{uwf:conceptIRI(../marc:subfield[@code = '2'], .)}"/>
+                            <xsl:if test="marc:subfield[@code = '3']">
+                                <rdaid:P40028>
+                                    <xsl:text>Restriction on access </xsl:text>
+                                    <xsl:value-of select="uwf:conceptIRI(../marc:subfield[@code = '2'], .)"/>
+                                    <xsl:text>applies to {.}</xsl:text>
+                                </rdaid:P40028>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:if>
+                </rdf:Description>
+            </xsl:if>
+        </xsl:if>
+        <!--Linked 880-->
+        <xsl:if test="@tag = '540' and marc:subfield[@code = '6']">
+            <xsl:variable name="occNum"
+                select="concat('540-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+            <xsl:for-each
+                select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                <xsl:if test="marc:subfield[@code = 'a'] or marc:subfield[@code = 'b'] or marc:subfield[@code = 'c'] or marc:subfield[@code = 'd'] or marc:subfield[@code = 'g'] or marc:subfield[@code = 'q'] or marc:subfield[@code = 'u'] or marc:subfield[@code = '1'] or marc:subfield[@code = '3'] or marc:subfield[@code = 'f'] or marc:subfield[@code = '2'] or marc:subfield[@code = '0']">
+                    <xsl:if test="marc:subfield[@code = '5']">
+                        <rdf:Description rdf:about="{uwf:itemIRI($baseID, .)}">
+                            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+                            <rdaid:P40001>
+                                <xsl:value-of select="concat('ite#',$baseID, $genID)"/>
+                            </rdaid:P40001>
+                            <rdaio:P40049 rdf:resource="{$manIRI}"/>
+                            <xsl:copy-of select="uwf:s5Lookup(marc:subfield[@code = '5'])"/>
+                            <rdaid:P40048>
+                                <xsl:call-template name="F540-xx-abcdgqu31"/>
+                                <xsl:text> (at institution </xsl:text>
+                                <xsl:value-of select="marc:subfield[@code = '5']"/>
+                                 <xsl:text>)</xsl:text>
+                            </rdaid:P40048>
+                        </rdf:Description>
+                    </xsl:if>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '540'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '540-00']" mode="man"> 
+        <xsl:param name="baseID"/>
+        <xsl:variable name="s2">
+            <xsl:value-of select="marc:subfield[@code = '2']"/>
+        </xsl:variable>
+        <!--<xsl:call-template name="getmarc"/>-->
+        <xsl:choose>
+            <xsl:when test="marc:subfield[@code = '5']">
+                <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseID, .)}"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:if test="marc:subfield[@code = 'a'] or marc:subfield[@code = 'b'] or marc:subfield[@code = 'c'] or marc:subfield[@code = 'd'] or marc:subfield[@code = 'g'] or marc:subfield[@code = 'q'] or marc:subfield[@code = 'u'] or marc:subfield[@code = '1'] or marc:subfield[@code = '3'] or marc:subfield[@code = 'f'] or marc:subfield[@code = '2'] or marc:subfield[@code = '0']">
+                    <rdamd:P30146>
+                        <xsl:call-template name="F540-xx-abcdgqu31"></xsl:call-template>
+                    </rdamd:P30146>
+                    <xsl:if test="marc:subfield[@code = '2']">
+                        <xsl:for-each select="marc:subfield[@code = 'f']">
+                            <rdamd:P30146 rdf:resource="{uwf:conceptIRI(../marc:subfield[@code = '2'], .)}"/>
+                            <xsl:if test="marc:subfield[@code = '3']">
+                                <rdaid:P40028>
+                                    <xsl:text>Restriction on access </xsl:text>
+                                    <xsl:value-of select="uwf:conceptIRI(../marc:subfield[@code = '2'], .)"/>
+                                    <xsl:text>applies to {.}</xsl:text>
+                                </rdaid:P40028>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:if>
+                </xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
+        <xsl:if test="@tag = '540' and marc:subfield[@code = '6']">
+            <xsl:variable name="occNum"
+                select="concat('540-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+            <xsl:for-each
+                select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                <xsl:if test="marc:subfield[@code = 'a' or @code = 'b' or @code = 'c' or @code = 'd'
+                    or @code = 'e' or @code = 'g' or @code = 'q' or @code = 'u']">
+                    <rdamd:P30146>
+                        <xsl:call-template name="F540-xx-abcdgqu31"/>
+                    </rdamd:P30146>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '540'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '540-00']" mode="con"> 
+        <xsl:call-template name="F540-xx-f2"/>
+    </xsl:template>
     
     <!-- 541 - Immediate Source of Acquisition Note -->
     <xsl:template
