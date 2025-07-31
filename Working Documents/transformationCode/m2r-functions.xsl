@@ -927,5 +927,23 @@
             satisfies (ends-with(lower-case($string), $row))) then true() else false()"/>
     </xsl:function>
     
+    <xsl:function name="uwf:stripOuterBracketsAndParentheses">
+        <xsl:param name="string"/>
+        <xsl:variable name="stripped" select="normalize-space($string)"/>
+        <xsl:choose>
+            <!-- Check for outer brackets first -->
+            <xsl:when test="matches($stripped, '^\[.*\]$')">
+                <xsl:value-of select="uwf:stripOuterBracketsAndParentheses(substring($stripped, 2, string-length($stripped) - 2))"/>
+            </xsl:when>
+            <!-- Check for outer parentheses -->
+            <xsl:when test="matches($stripped, '^\(.*\)$')">
+                <xsl:value-of select="uwf:stripOuterBracketsAndParentheses(substring($stripped, 2, string-length($stripped) - 2))"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$stripped"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
 </xsl:stylesheet>
 

@@ -185,38 +185,100 @@
 
     <!--046-->
     <xsl:template name="F0046-timespan">
-         <xsl:param name="baseID"/>
-         <xsl:param name="suffix"/>
-         <xsl:param name="note"/>
+        <xsl:param name="baseID"/>
+        <xsl:param name="suffix"/>
+        <xsl:param name="note"/>
          
-         <rdf:Description rdf:about="{uwf:timespanIRI($baseID, ., $suffix)}">
-             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
-             <rdatd:P70016>
-                 <xsl:value-of select="marc:subfield[@code = 'b' or @code = 'c']"/>
-                 <xsl:if test="marc:subfield[@code = 'b']"> B.C.E.</xsl:if>
-                 <xsl:if test="marc:subfield[@code = 'b'] or marc:subfield[@code = 'c']">
-                     <xsl:text> - </xsl:text>
-                 </xsl:if>
-                 <xsl:value-of select="marc:subfield[@code = 'd' or @code = 'e']"/>
-                 <xsl:if test="marc:subfield[@code = 'd']"> B.C.E.</xsl:if>
-             </rdatd:P70016>
-             <rdatd:P70045>
-                 <xsl:value-of select="$note"/>
-             </rdatd:P70045>
-             <xsl:if test="marc:subfield[@code = 'b' or @code = 'c']">
-                 <rdatd:P70039>
-                     <xsl:value-of select="marc:subfield[@code = 'b' or @code = 'c']"/>
-                     <xsl:if test="marc:subfield[@code = 'b']"> B.C.E.</xsl:if>
-                 </rdatd:P70039>
-             </xsl:if>
-             <xsl:if test="marc:subfield[@code = 'd' or @code = 'e']">
-                 <rdatd:P70040>
-                     <xsl:value-of select="marc:subfield[@code = 'd' or @code = 'e']"/>
-                     <xsl:if test="marc:subfield[@code = 'd']"> B.C.E.</xsl:if>
-                 </rdatd:P70040>
-             </xsl:if>
+        <rdf:Description rdf:about="{uwf:timespanIRI($baseID, ., $suffix)}">
+            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
+             
+                           <!-- Combined date range with B.C.E. suffix -->
+              <rdatd:P70016><xsl:value-of select="concat(
+                  if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'], ' B.C.E.') 
+                  else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c'] 
+                  else '',
+                  if (marc:subfield[@code = 'b' or @code = 'c'] and marc:subfield[@code = 'd' or @code = 'e']) then ' - ' 
+                  else '',
+                  if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'], ' B.C.E.') 
+                  else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e'] 
+                  else ''
+              )"/></rdatd:P70016>
+              
+              <!-- Note about the timespan -->
+              <rdatd:P70045><xsl:value-of select="$note"/></rdatd:P70045>
+              
+              <!-- Beginning date -->
+              <xsl:if test="marc:subfield[@code = 'b' or @code = 'c']">
+                  <rdatd:P70039><xsl:value-of select="
+                      if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'], ' B.C.E.') 
+                      else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c'] 
+                      else ''
+                  "/></rdatd:P70039>
+              </xsl:if>
+              
+              <!-- Ending date -->
+              <xsl:if test="marc:subfield[@code = 'd' or @code = 'e']">
+                  <rdatd:P70040><xsl:value-of select="
+                      if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'], ' B.C.E.') 
+                      else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e'] 
+                      else ''
+                  "/></rdatd:P70040>
+              </xsl:if>
          </rdf:Description>
      </xsl:template>
+     
+    <!-- F0082-deweyClassification: Named template for MARC 082 -->
+    <xsl:template name="F0082-deweyClassification">
+        <xsl:param name="baseID"/>
+        <xsl:param name="suffix"/>
+        <xsl:param name="note"/>
+        
+        <!-- Normalize $a by removing slashes -->
+        <xsl:variable name="normalizedA" select="replace(marc:subfield[@code = 'a'], '/', '')"/>
+        
+        <!-- Get edition code from $2 -->
+        <xsl:variable name="editionCode" select="marc:subfield[@code = '2']"/>
+        
+        <!-- Construct the scheme IRI based on ind1 and editionCode -->
+        <xsl:variable name="schemeIRI">
+            <xsl:choose>
+                <xsl:when test="@ind1 = '0'">
+                    <xsl:text>http://id.loc.gov/vocabulary/classSchemes/ddc</xsl:text>
+                    <xsl:value-of select="substring-before($editionCode, '/')"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:text>http://id.loc.gov/vocabulary/classSchemes/ddc</xsl:text>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        
+        <!-- Create concept IRI: schemeIRI#normalizedA -->
+        <xsl:variable name="conceptIRI" select="concat($schemeIRI, '#', $normalizedA)"/>
+        
+        <!-- 1. Link the Work to the classification concept -->
+        <rdf:Description rdf:about="{$baseID}">
+            <rdawo:P10256 rdf:resource="{$conceptIRI}"/>
+        </rdf:Description>
+        
+        <!-- 2. Define the classification concept itself -->
+        <rdf:Description rdf:about="{$conceptIRI}" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+            <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            
+            <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+                <xsl:value-of select="$normalizedA"/>
+            </skos:notation>
+            
+            <skos:altLabel>
+                <xsl:value-of select="$normalizedA"/>
+            </skos:altLabel>
+            
+            <skos:inScheme rdf:resource="{$schemeIRI}"/>
+            
+            <rdatd:P70045>
+                <xsl:value-of select="$note"/>
+            </rdatd:P70045>
+        </rdf:Description>
+    </xsl:template>
     
 </xsl:stylesheet>
 
