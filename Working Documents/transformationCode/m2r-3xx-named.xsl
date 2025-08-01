@@ -27,6 +27,7 @@
     xmlns:rdat="http://rdaregistry.info/Elements/t/"
     xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
     xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:fake="http://fakePropertiesForDemo" xmlns:uwf="http://universityOfWashington/functions"
     exclude-result-prefixes="marc ex uwf" version="3.0">
     <xsl:import href="m2r-functions.xsl"/>
@@ -3636,4 +3637,114 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+    <!-- 385 - Intended Audience (Expression-level) -->
+    <xsl:template name="F385-xx-a_b_m_n-expression">
+        <xsl:param name="baseID"/>
+        <xsl:param name="fieldNum" select="'385'"/>
+        <xsl:param name="note" select="marc:subfield[@code='3']"/>
+        <xsl:variable name="code2" select="marc:subfield[@code='2']"/>
+        
+        <!-- Case 1: $1 present (RWO IRI) -->
+        <xsl:for-each select="marc:subfield[@code='1']">
+            <rdaeo:P20322 rdf:resource="{.}"/>
+        </xsl:for-each>
+        
+        <!-- Case 2: $0 contains http IRI and $1 absent -->
+        <xsl:if test="not(marc:subfield[@code='1'])">
+            <xsl:for-each select="marc:subfield[@code='0'][contains(., 'http')]">
+                <rdaeo:P20322 rdf:resource="{.}"/>
+            </xsl:for-each>
+        </xsl:if>
+        
+        <!-- Case 3: Mint skos:Concept from $a (or $b if no $a), when $2 is present and $0/$1 are absent -->
+        <xsl:if test="not(marc:subfield[@code='0'] or marc:subfield[@code='1']) and $code2">
+            <xsl:for-each select="marc:subfield[@code='a'] | (marc:subfield[@code='b'][not(../marc:subfield[@code='a'])])">
+                <xsl:variable name="label" select="uwf:stripEndPunctuation(.)"/>
+                <xsl:variable name="notation" select="if (@code = 'b') then . else ../marc:subfield[@code='b'][position() = current()/position()]"/>
+                <xsl:variable name="conceptID" select="uwf:mintConceptIRI($baseID, position(), $fieldNum)"/>
+                <xsl:variable name="schemeIRI" select="uwf:getConceptSchemeIRI($code2)"/>
+                
+                <!-- 1. Link expression to concept -->
+                <rdf:Description rdf:about="{$baseID}">
+                    <rdae:P20322 rdf:resource="{$conceptID}"/>
+                </rdf:Description>
+                
+                <!-- 2. Mint concept -->
+                <rdf:Description rdf:about="{$conceptID}">
+                    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <skos:prefLabel><xsl:value-of select="$label"/></skos:prefLabel>
+                    <xsl:if test="$notation">
+                        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+                            <xsl:value-of select="$notation"/>
+                        </skos:notation>
+                    </xsl:if>
+                    <skos:inScheme rdf:resource="{$schemeIRI}"/>
+                    <xsl:if test="$note">
+                        <rdatd:P70045><xsl:value-of select="$note"/></rdatd:P70045>
+                    </xsl:if>
+                </rdf:Description>
+            </xsl:for-each>
+        </xsl:if>
+        
+        <!-- Case 4: $a only (no $0/$1/$2) -->
+        <xsl:if test="marc:subfield[@code='a'] and not(marc:subfield[@code='0'] or marc:subfield[@code='1'] or marc:subfield[@code='2'])">
+            <rdaed:P20322>
+                <xsl:value-of select="marc:subfield[@code='a']"/>
+            </rdaed:P20322>
+        </xsl:if>
+    </xsl:template>
+    
+    
+    <!-- Named Template: 385 Manifestation -->
+    <xsl:template name="F385-xx-a_b_m_n-manifestation-string">
+        
+        <!-- Manifestation Case 1: $1 present (IRI) -->
+        <xsl:for-each select="marc:subfield[@code='1']">
+            <rdamo:P30305 rdf:resource="{.}"/>
+        </xsl:for-each>
+        
+        <!-- Manifestation Case 2: $0 contains 'http' and $1 not present (IRI fallback) -->
+        <xsl:if test="not(marc:subfield[@code='1'])">
+            <xsl:for-each select="marc:subfield[@code='0'][contains(., 'http')]">
+                <rdamo:P30305 rdf:resource="{.}"/>
+            </xsl:for-each>
+        </xsl:if>
+        
+        
+        <!-- Manifestation Case 3: $a only, and not $0/$1/$2 (unstructured literal) -->
+        <xsl:if test="marc:subfield[@code='a'] 
+            and not(marc:subfield[@code='0'] or marc:subfield[@code='1'] or marc:subfield[@code='2'])">
+            <rdamd:P30305>
+                <xsl:value-of select="marc:subfield[@code='a']"/>
+            </rdamd:P30305>
+        </xsl:if>
+        
+        <!-- Manifestation Case 4: $3 present — note with fallback from $a, $b, $1, $0 -->
+        <xsl:if test="marc:subfield[@code='3']">
+            <xsl:variable name="audience">
+                <xsl:choose>
+                    <xsl:when test="marc:subfield[@code='a']">
+                        <xsl:value-of select="marc:subfield[@code='a']"/>
+                    </xsl:when>
+                    <xsl:when test="marc:subfield[@code='b']">
+                        <xsl:value-of select="marc:subfield[@code='b']"/>
+                    </xsl:when>
+                    <xsl:when test="marc:subfield[@code='1']">
+                        <xsl:value-of select="marc:subfield[@code='1']"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="marc:subfield[@code='0']"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:variable>
+            <rdamd:P30137>
+                <xsl:text>Intended audience </xsl:text>
+                <xsl:value-of select="$audience"/>
+                <xsl:text> applies to: </xsl:text>
+                <xsl:value-of select="marc:subfield[@code='3']"/>
+            </rdamd:P30137>
+        </xsl:if>
+        
+    </xsl:template>
+    
 </xsl:stylesheet>
