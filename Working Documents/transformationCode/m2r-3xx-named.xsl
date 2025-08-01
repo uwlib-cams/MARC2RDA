@@ -3656,21 +3656,22 @@
             </xsl:for-each>
         </xsl:if>
         
-        <!-- Case 3: Mint skos:Concept from $a (or $b if no $a), when $2 is present and $0/$1 are absent -->
+        <!-- Case 3: Mint skos:Concepts from $a or $b, with $2, and no $0/$1 -->
+        <xsl:variable name="code2" select="marc:subfield[@code='2']"/>
         <xsl:if test="not(marc:subfield[@code='0'] or marc:subfield[@code='1']) and $code2">
             <xsl:for-each select="marc:subfield[@code='a'] | (marc:subfield[@code='b'][not(../marc:subfield[@code='a'])])">
                 <xsl:variable name="label" select="uwf:stripEndPunctuation(.)"/>
                 <xsl:variable name="notation" select="if (@code = 'b') then . else ../marc:subfield[@code='b'][position() = current()/position()]"/>
-                <xsl:variable name="conceptID" select="uwf:mintConceptIRI($baseID, position(), $fieldNum)"/>
-                <xsl:variable name="schemeIRI" select="uwf:getConceptSchemeIRI($code2)"/>
+                <xsl:variable name="schemeIRI" select="concat('https://id.loc.gov/vocabulary/subjectSchemes/', normalize-space($code2))"/>
+                <xsl:variable name="conceptIRI" select="concat($baseID, '-385-', position())"/>
                 
                 <!-- 1. Link expression to concept -->
                 <rdf:Description rdf:about="{$baseID}">
-                    <rdae:P20322 rdf:resource="{$conceptID}"/>
+                    <rdae:P20322 rdf:resource="#{$conceptIRI}"/>
                 </rdf:Description>
                 
-                <!-- 2. Mint concept -->
-                <rdf:Description rdf:about="{$conceptID}">
+                <!-- 2. Define concept -->
+                <rdf:Description rdf:about="#{$conceptIRI}">
                     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <skos:prefLabel><xsl:value-of select="$label"/></skos:prefLabel>
                     <xsl:if test="$notation">

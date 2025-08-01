@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
+         xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwf="http://universityOfWashington/functions"
+         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc384-test1">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>384-test1</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc384-test1</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc384-test1"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc384-test1">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc384-test1"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc384-test1</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 384-test1
+F384 0# $a 1 key $0 (DLC)example001 $1 http://www.wikidata.org/wiki/Q12345
+F384 1# $a Original key $1 http://vocab.example.org/key/C-major $2 vocabExample
+F384 2# $a 2 representative $1 http://vocab.example.org/key/G-major $2 vocabExample $3 Prokofiev sonata no. 8
+F384 0# $a C major $a D major $0 http://example.org/key/multiple
+F385 ## $a Children $2 lcsh
+F385 ## $a Artists $0 (DLC)sh85007461
+F385 ## $1 http://id.loc.gov/authorities/subjects/sh85096653
+F385 ## $a General public
+F385 ## $a Children $a Young adults $b age $b educational level $0 http://id.loc.gov/authorities/subjects/sh85023309 $0 http://id.loc.gov/authorities/subjects/sh85089924 $1 https://id.worldcat.org/fast/872198 $1 https://id.worldcat.org/fast/1003450 $m dlc $n naf $3 Volume 1: Intended for middle school readers $2 lcsh
+F385 ## $a General public $b intended audience $0 http://id.loc.gov/authorities/subjects/sh85056386 $1 https://id.worldcat.org/fast/1175515 $m local $n custom $3 Appendix: includes resources for all ages $2 fast
+F385 2# $a Adults $b reading level $m publisher $n custom
+F385 2# $0 (DLC)sh85007461
+F385 2# $1 https://id.worldcat.org/fast/1175515
+F385 2# $a General public $b intended audience $0 http://id.loc.gov/authorities/subjects/sh85056386 $1 https://id.worldcat.org/fast/1175515
+F385 2# $0 http://example.org/vocab/children
+</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc384-test1"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdawd:P10221>2 representative</rdawd:P10221>
+      <rdawd:P10330>applies to: Prokofiev sonata no. 8</rdawd:P10330>
+      <rdawo:P10221 rdf:resource="http://vocab.example.org/key/G-major"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc384-test1"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
+      <rdaed:P20326>1 key</rdaed:P20326>
+      <rdaed:P20326>(DLC)example001</rdaed:P20326>
+      <rdaeo:P20326 rdf:resource="http://www.wikidata.org/wiki/Q12345"/>
+      <rdaed:P20326>Original key</rdaed:P20326>
+      <rdaeo:P20326 rdf:resource="http://vocab.example.org/key/C-major"/>
+      <rdaed:P20326>C major</rdaed:P20326>
+      <rdaed:P20326>D major</rdaed:P20326>
+      <rdaed:P20326>http://example.org/key/multiple</rdaed:P20326>
+      <rdf:Description rdf:about="2025-08-01t163243735853-0400">
+         <rdae:P20322 rdf:resource="#2025-08-01t163243735853-0400-385-1"/>
+      </rdf:Description>
+      <rdf:Description rdf:about="#2025-08-01t163243735853-0400-385-1">
+         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+         <skos:prefLabel>Children</skos:prefLabel>
+         <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+      </rdf:Description>
+      <rdaeo:P20322 rdf:resource="http://id.loc.gov/authorities/subjects/sh85096653"/>
+      <rdaed:P20322>General public</rdaed:P20322>
+      <rdaeo:P20322 rdf:resource="https://id.worldcat.org/fast/872198"/>
+      <rdaeo:P20322 rdf:resource="https://id.worldcat.org/fast/1003450"/>
+      <rdaeo:P20322 rdf:resource="https://id.worldcat.org/fast/1175515"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc384-test1"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdamd:P30276/>
+      <rdamo:P30305 rdf:resource="http://id.loc.gov/authorities/subjects/sh85096653"/>
+      <rdamd:P30305>General public</rdamd:P30305>
+      <rdamo:P30305 rdf:resource="https://id.worldcat.org/fast/872198"/>
+      <rdamo:P30305 rdf:resource="https://id.worldcat.org/fast/1003450"/>
+      <rdamd:P30137>Intended audience Children Young adults applies to: Volume 1: Intended for middle school readers</rdamd:P30137>
+      <rdamo:P30305 rdf:resource="https://id.worldcat.org/fast/1175515"/>
+      <rdamd:P30137>Intended audience General public applies to: Appendix: includes resources for all ages</rdamd:P30137>
+   </rdf:Description>
+</rdf:RDF>
