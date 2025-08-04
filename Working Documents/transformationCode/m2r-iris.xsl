@@ -556,10 +556,6 @@
             </xsl:choose>
         </xsl:variable>
         <xsl:choose>
-            <!-- Specific clause for timespan nomen -->
-            <xsl:when test="$type = 'timespan' and $ap != ''">
-                <xsl:value-of select="$BASE||$nomType||'#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
-            </xsl:when>
             <!-- if it's a nomen related to the main WEM, if there's a source, mint with a source -->
             <xsl:when test="$type = 'nomen' and $source != ''">
                 <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($source), ' ', ''))||'/'||$nomType||'#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
@@ -582,10 +578,6 @@
         <xsl:param name="ap"/>
         
         <xsl:choose>
-            <!-- Specific clause for MARC 046 field -->
-            <xsl:when test="$field/@tag = '046'">
-                <xsl:value-of select="$BASE||'tim#'||encode-for-uri(uwf:stripAllPunctuation($ap))"/>
-            </xsl:when>
             <xsl:when test="$field/marc:subfield[@code = '1'] and ((starts-with($field/@tag, '6')
                 or ($field/@tag = '880' and starts-with($field/marc:subfield[@code = '6'], '6')))
                 and not($field/marc:subfield[@code = 'v' or @code = 'x' or @code = 'y' or @code = 'z']))">
