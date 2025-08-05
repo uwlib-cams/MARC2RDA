@@ -70,61 +70,34 @@ F880 ## $6 754-01 $c Species $a Robin redbreast $d European Robin
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
       <rdamd:P30276/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-07-14t11553316811910100d25e7">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ite#2025-07-14t11553316811910100d25e7</rdaid:P40001>
-      <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-08-05t16062116181490100d25e7">
       <rdaid:P40028>Taxonomic identification note: Recorded in Yorkshire, UK</rdaid:P40028>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://example.org/nomen/ite#2025-07-14t11553316811910100d25e7-nomen-1">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/n/Nomen"/>
-      <rdan:P80068>Erithacus rubecula</rdan:P80068>
-      <rdan:P80078>Species</rdan:P80078>
-      <rdan:P80067>Taxonomic Identification</rdan:P80067>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-07-14t11553316811910100d25e7">
-      <rdai:P40079 rdf:resource="http://example.org/nomen/ite#2025-07-14t11553316811910100d25e7-nomen-1"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://example.org/nomen/ite#2025-07-14t11553316811910100d25e7-d-1">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/n/Nomen"/>
-      <rdan:P80068>European Robin</rdan:P80068>
-      <rdan:P80078>Common or alternative name</rdan:P80078>
-      <rdan:P80067>Taxonomic Identification</rdan:P80067>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-07-14t11553316811910100d25e7">
-      <rdai:P40079 rdf:resource="http://example.org/nomen/ite#2025-07-14t11553316811910100d25e7-d-1"/>
    </rdf:Description>
    <rdf:Statement rdf:about="http://example.org/statement/stmt-d25e18">
       <rdf:type rdf:resource="rdf:Statement"/>
-      <rdf:subject rdf:resource="http://marc2rda.edu/fake/transform/ite#2025-07-14t11553316811910100d25e7"/>
+      <rdf:subject rdf:resource="http://marc2rda.edu/fake/transform/ite#2025-08-05t16062116181490100d25e7"/>
       <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/P40028"/>
       <rdf:object>Taxonomic identification note: Verified by British Trust for Ornithology</rdf:object>
-      <rdaid:P40164>private</rdaid:P40164>
+      <rdan:P80078>private</rdan:P80078>
    </rdf:Statement>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-07-14t11553316811910100d25e7">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-08-05t16062116181490100d25e7">
       <rdai:P40164 rdf:resource="http://example.org/statement/stmt-d25e18"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-07-14t11553316811910100d25e21">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ite#2025-07-14t11553316811910100d25e21</rdaid:P40001>
-      <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://example.org/nomen/ite#2025-07-14t11553316811910100d25e21-nomen-1">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/n/Nomen"/>
-      <rdan:P80068>Robin redbreast</rdan:P80068>
-      <rdan:P80078>Species</rdan:P80078>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake//con#erithacusrubecula">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Erithacus rubecula</skos:prefLabel>
+      <skos:notation>Species</skos:notation>
       <rdan:P80067>Taxonomic Identification</rdan:P80067>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-07-14t11553316811910100d25e21">
-      <rdai:P40079 rdf:resource="http://example.org/nomen/ite#2025-07-14t11553316811910100d25e21-nomen-1"/>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-08-05t16062116181490100d25e7">
+      <rdai:P40079 rdf:resource="http://marc2rda.edu/fake//con#erithacusrubecula"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://example.org/nomen/ite#2025-07-14t11553316811910100d25e21-d-1">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/n/Nomen"/>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/common/con#europeanrobin">
       <rdan:P80068>European Robin</rdan:P80068>
       <rdan:P80078>Common or alternative name</rdan:P80078>
       <rdan:P80067>Taxonomic Identification</rdan:P80067>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-07-14t11553316811910100d25e21">
-      <rdai:P40079 rdf:resource="http://example.org/nomen/ite#2025-07-14t11553316811910100d25e21-d-1"/>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-08-05t16062116181490100d25e7">
+      <rdai:P40079 rdf:resource="http://marc2rda.edu/fake/common/con#europeanrobin"/>
    </rdf:Description>
 </rdf:RDF>

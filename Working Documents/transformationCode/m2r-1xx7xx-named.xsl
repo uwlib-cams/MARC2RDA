@@ -82,73 +82,60 @@
         <xsl:variable name="itemIRI" select="uwf:itemIRI($baseID, $context)"/>
         <xsl:variable name="genID" select="generate-id($context)"/>
         <xsl:variable name="itemID" select="concat('ite#', $baseID, $genID)"/>
+        <xsl:variable name="scheme" select="$context/marc:subfield[@code='2'][1]"/>
         
-        <!-- Base item description and $z public note -->
-        <rdf:Description rdf:about="{$itemIRI}">
-            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-            <rdaid:P40001>{$itemID}</rdaid:P40001>
-            <rdaio:P40049 rdf:resource="{$manIRI}"/>
-            
-            <xsl:for-each select="$context/marc:subfield[@code='z']">
-                <rdaid:P40028>Taxonomic identification note: <xsl:value-of select="."/></rdaid:P40028>
-            </xsl:for-each>
-        </rdf:Description>
-        
-        <!-- Create nomen from each $a preceded by a $c -->
-        <xsl:for-each select="$context/marc:subfield[@code='a']">
-            <xsl:variable name="name" select="."/>
-            <xsl:variable name="cat" select="preceding-sibling::marc:subfield[@code='c'][1]"/>
-            <xsl:if test="$cat">
-                <xsl:variable name="nomenID" select="concat($itemID, '-nomen-', position())"/>
-                
-                <rdf:Description rdf:about="http://example.org/nomen/{$nomenID}">
-                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/n/Nomen"/>
-                    <rdan:P80068><xsl:value-of select="$name"/></rdan:P80068>
-                    <rdan:P80078><xsl:value-of select="$cat"/></rdan:P80078>
-                    <rdan:P80067>Taxonomic Identification</rdan:P80067>
-                </rdf:Description>
-                
-                <rdf:Description rdf:about="{$itemIRI}">
-                    <rdai:P40079 rdf:resource="http://example.org/nomen/{$nomenID}"/>
-                </rdf:Description>
-            </xsl:if>
-        </xsl:for-each>
-        
-        <!-- Create nomen from each $d -->
-        <xsl:for-each select="$context/marc:subfield[@code='d']">
-            <xsl:variable name="nomenID" select="concat($itemID, '-d-', position())"/>
-            
-            <rdf:Description rdf:about="http://example.org/nomen/{$nomenID}">
-                <rdf:type rdf:resource="http://rdaregistry.info/Elements/n/Nomen"/>
-                <rdan:P80068><xsl:value-of select="."/></rdan:P80068>
-                <rdan:P80078>Common or alternative name</rdan:P80078>
-                <rdan:P80067>Taxonomic Identification</rdan:P80067>
-            </rdf:Description>
-            
+        <!--($z) Public note -->
+        <xsl:for-each select="$context/marc:subfield[@code='z']">
             <rdf:Description rdf:about="{$itemIRI}">
-                <rdai:P40079 rdf:resource="http://example.org/nomen/{$nomenID}"/>
+                <rdaid:P40028>Taxonomic identification note: <xsl:value-of select="."/></rdaid:P40028>
             </rdf:Description>
         </xsl:for-each>
         
-        <!-- Handle $x as private note with reified RDF Statement -->
+        <!--($x) Non-public note -->
         <xsl:for-each select="$context/marc:subfield[@code='x']">
             <xsl:variable name="stmtID" select="concat('stmt-', generate-id())"/>
-            
-            <rdf:Statement rdf:about="http://example.org/statement/{$stmtID}">
+            <xsl:variable name="stmtIRI" select="concat('http://example.org/statement/', $stmtID)"/>
+            <rdf:Statement rdf:about="{$stmtIRI}">
                 <rdf:type rdf:resource="rdf:Statement"/>
                 <rdf:subject rdf:resource="{$itemIRI}"/>
                 <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/P40028"/>
                 <rdf:object>Taxonomic identification note: <xsl:value-of select="."/></rdf:object>
-                <rdaid:P40164>private</rdaid:P40164>
+                <rdan:P80078>private</rdan:P80078>
             </rdf:Statement>
-            
             <rdf:Description rdf:about="{$itemIRI}">
-                <rdai:P40164 rdf:resource="http://example.org/statement/{$stmtID}"/>
+                <rdai:P40164 rdf:resource="{$stmtIRI}"/>
+            </rdf:Description>
+        </xsl:for-each>
+        
+        <xsl:for-each select="$context/marc:subfield[@code='c']">
+            <xsl:variable name="cat" select="."/>
+            <xsl:variable name="aField" select="following-sibling::marc:subfield[@code='a'][1]"/>
+            <xsl:if test="$aField">
+                <xsl:variable name="nomenIRI" select="uwf:conceptIRI($scheme, $aField)"/>
+                <rdf:Description rdf:about="{$nomenIRI}">
+                    <xsl:copy-of select="uwf:fillConcept($aField, $scheme, $cat, '754')"/>
+                    <rdan:P80067>Taxonomic Identification</rdan:P80067>
+                </rdf:Description>
+                <rdf:Description rdf:about="{$itemIRI}">
+                    <rdai:P40079 rdf:resource="{$nomenIRI}"/>
+                </rdf:Description>
+            </xsl:if>
+        </xsl:for-each>
+        
+        <!-- $d: Common or alternative names -->
+        <xsl:for-each select="$context/marc:subfield[@code='d']">
+            <xsl:variable name="nomenIRI" select="uwf:conceptIRI('common', .)"/>
+            <rdf:Description rdf:about="{$nomenIRI}">
+                <rdan:P80068><xsl:value-of select="."/></rdan:P80068>
+                <rdan:P80078>Common or alternative name</rdan:P80078>
+                <rdan:P80067>Taxonomic Identification</rdan:P80067>
+            </rdf:Description>
+            <rdf:Description rdf:about="{$itemIRI}">
+                <rdai:P40079 rdf:resource="{$nomenIRI}"/>
             </rdf:Description>
         </xsl:for-each>
     </xsl:template>
     
-
     <!-- 760 --> 
     <xsl:template name="F760-xx-abcdefghjklmnopqrstuvwxyz" expand-text="yes">
         <xsl:variable name="subfields" select="marc:subfield[@code = 'a' or @code = 'b' or @code = 'c' or

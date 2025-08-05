@@ -1165,7 +1165,7 @@
     </xsl:template>
 
     <!-- 754 Added Entry-Taxonomic Identification -->  
-    <xsl:template match="marc:datafield[@tag = '754'] | marc:datafield[@tag = '880'][starts-with(marc:subfield[@code = '6'], '754')]" 
+    <xsl:template match="marc:datafield[@tag = '754'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '754-00']" 
         mode="ite">
         <xsl:param name="baseID"/>
         <xsl:param name="manIRI"/>
