@@ -939,6 +939,10 @@
             <xsl:when test="matches($stripped, '^\(.*\)$')">
                 <xsl:value-of select="uwf:stripOuterBracketsAndParentheses(substring($stripped, 2, string-length($stripped) - 2))"/>
             </xsl:when>
+            <!-- Check for outer angle brackets -->
+            <xsl:when test="matches($stripped, '^&lt;.*&gt;$')">
+                <xsl:value-of select="uwf:stripOuterBracketsAndParentheses(substring($stripped, 2, string-length($stripped) - 2))"/>
+            </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="$stripped"/>
             </xsl:otherwise>

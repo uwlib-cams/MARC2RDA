@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">355-test-2-3-46-53-60-67</marc:controlfield>
+        <marc:datafield tag="355" ind1="0" ind2=" ">
+            <marc:subfield code="a">Restricted</marc:subfield>
+            <marc:subfield code="b">NOFORN</marc:subfield>
+            <marc:subfield code="c">AS</marc:subfield>
+            <marc:subfield code="d">OADR</marc:subfield>
+            <marc:subfield code="e">NATO</marc:subfield>
+            <marc:subfield code="f">xxk</marc:subfield>
+            <marc:subfield code="g">20281001</marc:subfield>
+            <marc:subfield code="h">20230301</marc:subfield>
+            <marc:subfield code="j">agency identifier</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">355-test-5-47-54-61-68</marc:controlfield>
+        <marc:datafield tag="355" ind1="1" ind2=" ">
+            <marc:subfield code="a">Restricted</marc:subfield>
+            <marc:subfield code="b">NOFORN</marc:subfield>
+            <marc:subfield code="c">AS</marc:subfield>
+            <marc:subfield code="d">OADR</marc:subfield>
+            <marc:subfield code="e">NATO</marc:subfield>
+            <marc:subfield code="f">xxk</marc:subfield>
+            <marc:subfield code="g">20281001</marc:subfield>
+            <marc:subfield code="h">20230301</marc:subfield>
+            <marc:subfield code="j">agency identifier</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">355-test-7-8-48-55-62-69</marc:controlfield>
+        <marc:datafield tag="355" ind1="2" ind2=" ">
+            <marc:subfield code="a">Restricted</marc:subfield>
+            <marc:subfield code="b">NOFORN</marc:subfield>
+            <marc:subfield code="c">AS</marc:subfield>
+            <marc:subfield code="d">OADR</marc:subfield>
+            <marc:subfield code="e">NATO</marc:subfield>
+            <marc:subfield code="f">xxk</marc:subfield>
+            <marc:subfield code="g">20281001</marc:subfield>
+            <marc:subfield code="h">20230301</marc:subfield>
+            <marc:subfield code="j">agency identifier</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">355-test-9-10-49-56-63-70</marc:controlfield>
+        <marc:datafield tag="355" ind1="3" ind2=" ">
+            <marc:subfield code="a">Restricted</marc:subfield>
+            <marc:subfield code="b">NOFORN</marc:subfield>
+            <marc:subfield code="c">AS</marc:subfield>
+            <marc:subfield code="d">OADR</marc:subfield>
+            <marc:subfield code="e">NATO</marc:subfield>
+            <marc:subfield code="f">xxk</marc:subfield>
+            <marc:subfield code="g">20281001</marc:subfield>
+            <marc:subfield code="h">20230301</marc:subfield>
+            <marc:subfield code="j">agency identifier</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">355-test-13-51-58-65-72</marc:controlfield>
+        <marc:datafield tag="355" ind1="5" ind2=" ">
+            <marc:subfield code="a">Restricted</marc:subfield>
+            <marc:subfield code="b">NOFORN</marc:subfield>
+            <marc:subfield code="c">AS</marc:subfield>
+            <marc:subfield code="d">OADR</marc:subfield>
+            <marc:subfield code="e">NATO</marc:subfield>
+            <marc:subfield code="f">xxk</marc:subfield>
+            <marc:subfield code="g">20281001</marc:subfield>
+            <marc:subfield code="h">20230301</marc:subfield>
+            <marc:subfield code="j">agency identifier</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">355-test-15-52-59-66-73</marc:controlfield>
+        <marc:datafield tag="355" ind1="8" ind2=" ">
+            <marc:subfield code="a">Restricted</marc:subfield>
+            <marc:subfield code="b">NOFORN</marc:subfield>
+            <marc:subfield code="c">AS</marc:subfield>
+            <marc:subfield code="d">OADR</marc:subfield>
+            <marc:subfield code="e">NATO</marc:subfield>
+            <marc:subfield code="f">xxk</marc:subfield>
+            <marc:subfield code="g">20281001</marc:subfield>
+            <marc:subfield code="h">20230301</marc:subfield>
+            <marc:subfield code="j">agency identifier</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+
+</marc:collection>
