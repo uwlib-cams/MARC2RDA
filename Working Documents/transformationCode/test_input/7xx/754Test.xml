@@ -17,10 +17,10 @@
 
     <!-- 880 field -->
     <marc:datafield tag="880" ind1=" " ind2=" ">
-      <marc:subfield code="6">754-01</marc:subfield>
-      <marc:subfield code="c">Species</marc:subfield>
-      <marc:subfield code="a">Robin redbreast</marc:subfield>
-      <marc:subfield code="d">European Robin</marc:subfield>
+      <marc:subfield code="6">754-00</marc:subfield>
+      <marc:subfield code="c">880-testsubfield c</marc:subfield>
+      <marc:subfield code="a">880-testsubfield a</marc:subfield>
+      <marc:subfield code="d">880-testsubfield d</marc:subfield>
     </marc:datafield>
   </marc:record>
 </marc:collection>

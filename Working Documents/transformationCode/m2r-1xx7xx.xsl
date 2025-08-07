@@ -1038,7 +1038,7 @@
         </xsl:if>
     </xsl:template>
 
-        <!--740 Added Entry - Uncontrolled Related/Analytical Title-->
+    <!--740 Added Entry - Uncontrolled Related/Analytical Title-->
     <xsl:template match="marc:datafield[@tag = '740'] | marc:datafield[@tag = '740'][substring(marc:subfield[@code = '6'], 1, 6) = '740-00']" mode="ite">
         <xsl:param name="baseID"/>
         <xsl:param name="manIRI"/>
@@ -1176,6 +1176,17 @@
         </xsl:call-template>
     </xsl:template>
     
+    <xsl:template match="marc:datafield[@tag = '754'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '754-00']" 
+        mode="nom">
+        <xsl:param name="baseID"/>
+        <xsl:param name="manIRI"/>
+        <xsl:call-template name="F754-xx-acdxz">
+            <xsl:with-param name="baseID" select="$baseID"/>
+            <xsl:with-param name="manIRI" select="$manIRI"/>
+            <xsl:with-param name="context" select="."/>
+        </xsl:call-template>
+    </xsl:template>
+    
     <!-- 760 Main Series Entry -->
     <xsl:template
         match="marc:datafield[@tag = '760'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '760-00']"
@@ -1194,8 +1205,7 @@
         </rdam:P30137>
     </xsl:template>
 
-
-<!-- 765 Original Language Entry -->
+    <!-- 765 Original Language Entry -->
     <xsl:template
         match="marc:datafield[@tag = '765'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '765-00']"
         mode="man">
@@ -1204,7 +1214,7 @@
         </rdam:P30137>
     </xsl:template>
     
-<!-- 767 Translation Entry -->
+    <!-- 767 Translation Entry -->
     <xsl:template
         match="marc:datafield[@tag = '767'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '767-00']"
         mode="man">
@@ -1231,8 +1241,7 @@
         </rdam:P30137>
     </xsl:template>
     
-<!-- 773 Host Item Entry: item-level -->
-    
+    <!-- 773 Host Item Entry: item-level -->    
     <!-- manifestation template -->
     <!-- matches 773 field and an 880 code where $6 is 773-00 (unlinked 880) -->
     <xsl:template 
@@ -1303,17 +1312,16 @@
         </rdf:Description>
     </xsl:template>
     
-<!-- 774 Constituent Unit Entry -->
+    <!-- 774 Constituent Unit Entry -->
     <xsl:template
         match="marc:datafield[@tag = '774'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '774-00']"
         mode="man">
         <rdam:P30137>
             <xsl:call-template name="F774-xx-abcdefghjklmnopqrstuvwxyz"/>
         </rdam:P30137>
-    </xsl:template>
-    
+    </xsl:template>   
 
- <!-- 775 Other Edition Entry -->
+    <!-- 775 Other Edition Entry -->
     <xsl:template
         match="marc:datafield[@tag = '775'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '775-00']"
         mode="man">
@@ -1322,8 +1330,7 @@
         </rdam:P30137>
     </xsl:template>
 
-
-<!-- 776 Additional Physical Form Entry -->
+    <!-- 776 Additional Physical Form Entry -->
     <xsl:template
         match="marc:datafield[@tag = '776'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '776-00']"
         mode="man">
@@ -1332,7 +1339,7 @@
         </rdam:P30137>
     </xsl:template>
     
- <!-- 777 Issued with Entry -->
+    <!-- 777 Issued with Entry -->
     <xsl:template
         match="marc:datafield[@tag = '777'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '777-00']"
         mode="man">
@@ -1341,17 +1348,16 @@
         </rdam:P30137>
     </xsl:template>
     
-<!-- 780 Preceding Entry -->
+    <!-- 780 Preceding Entry -->
     <xsl:template
         match="marc:datafield[@tag = '780'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '780-00']"
         mode="man">
         <rdam:P30137>
             <xsl:call-template name="F780-x0-abcdefghjklmnopqrstuvwxyz"/>
         </rdam:P30137>
-    </xsl:template>
+    </xsl:template>   
     
-    
- <!-- 785 Succeeding Entry -->
+    <!-- 785 Succeeding Entry -->
     <xsl:template
         match="marc:datafield[@tag = '785'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '785-00']"
         mode="man">
@@ -1360,18 +1366,16 @@
         </rdam:P30137>
     </xsl:template>
     
-<!-- 786 Data Source Entry -->
+   <!-- 786 Data Source Entry -->
     <xsl:template
         match="marc:datafield[@tag = '786'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '786-00']"
         mode="man">
         <rdam:P30137>
             <xsl:call-template name="F786-xx-abcdefghjklmnopqrstuvwxyz"/>
         </rdam:P30137>
-    </xsl:template>
+    </xsl:template>   
     
-    
-    
-<!-- 787 Other Relationship Entry -->
+   <!-- 787 Other Relationship Entry -->
     <xsl:template
         match="marc:datafield[@tag = '787'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '787-00']"
         mode="man">
