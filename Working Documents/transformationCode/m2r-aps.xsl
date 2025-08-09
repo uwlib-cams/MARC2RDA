@@ -376,7 +376,7 @@
             </xsl:choose>
         </xsl:variable>
         <!-- remove brackets -->
-        <xsl:value-of select="uwf:stripOuterBracketsAndParentheses($manifName)"/>
+        <xsl:value-of select="uwf:stripOuterBracketsAndParentheses($manifName) => uwf:stripEndPunctuation()"/>
     </xsl:function>
     
 <!-- MAIN APS -->
@@ -809,46 +809,46 @@
         </xsl:variable>
         
         <xsl:variable name="manifDate">
-            <xsl:variable name="testManifDate">
-                <xsl:value-of select="uwf:manifDate($record)"/>
-            </xsl:variable>
-            <xsl:if test="$testManifDate != ''">
-                <xsl:value-of select="$testManifDate"/>
-            </xsl:if>
+            <xsl:value-of select="uwf:manifDate($record)"/>
         </xsl:variable>
         
         <xsl:variable name="manifName">
-            <xsl:variable name="testManifName">
-                <xsl:value-of select="uwf:manifName($record)"/>
-            </xsl:variable>
-            <xsl:if test="$testManifName != ''">
-                <xsl:value-of select="uwf:stripEndPunctuation($testManifName)"/>
-            </xsl:if>
+            <xsl:value-of select="uwf:manifName($record)"/>
         </xsl:variable>
         
         <xsl:variable name="manifVersion">
-            <xsl:variable name="testManifVersion">
-                <xsl:value-of select="uwf:manifVersion($record)"/>
-            </xsl:variable>
-            <xsl:if test="$testManifVersion != ''">
-                <xsl:value-of select="$testManifVersion"/>
-            </xsl:if>
+            <xsl:value-of select="uwf:manifVersion($record)"/>
         </xsl:variable>
         
         <xsl:variable name="carrierType">
-            <xsl:variable name="testCarrierType">
-                <xsl:value-of select="uwf:carrierType($record)"/>
-            </xsl:variable>
-            <xsl:if test="$testCarrierType != ''">
-                <xsl:value-of select="$testCarrierType"/>
-            </xsl:if>
+            <xsl:value-of select="uwf:carrierType($record)"/>
         </xsl:variable>
         
         <xsl:variable name="fullAP">
             <xsl:value-of select="$titleProper"/>
-            <xsl:if test="$manifDate or $manifName or $manifVersion or $carrierType">
+            <xsl:if test="$manifDate != '' or $manifName != '' or $manifVersion != '' or $carrierType != ''">
                 <xsl:text> (</xsl:text>
-                    <xsl:value-of select="$manifDate|$manifName|$manifVersion|$carrierType" separator=" : " />
+                <xsl:if test="$manifDate != ''">
+                    <xsl:value-of select="$manifDate"/>
+                    <xsl:if test="$manifName != '' or $manifVersion != '' or $carrierType != ''">
+                        <xsl:value-of select="' : '"/>
+                    </xsl:if>
+                </xsl:if>
+                <xsl:if test="$manifName != ''">
+                    <xsl:value-of select="$manifName"/>
+                    <xsl:if test="$manifVersion != '' or $carrierType != ''">
+                        <xsl:value-of select="' : '"/>
+                    </xsl:if>
+                </xsl:if>
+                <xsl:if test="$manifVersion != ''">
+                    <xsl:value-of select="$manifVersion"/>
+                    <xsl:if test="$carrierType != ''">
+                        <xsl:value-of select="' : '"/>
+                    </xsl:if>
+                </xsl:if>
+                <xsl:if test="$carrierType != ''">
+                    <xsl:value-of select="$carrierType"/>
+                </xsl:if>
                 <xsl:text>)</xsl:text>
             </xsl:if>
         </xsl:variable>
