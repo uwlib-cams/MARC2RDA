@@ -1,170 +1,269 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
-         xmlns:fake="http://fakePropertiesForDemo"
-         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
-         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
-         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
-         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
-         xmlns:rdae="http://rdaregistry.info/Elements/e/"
-         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
-         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
-         xmlns:rdai="http://rdaregistry.info/Elements/i/"
-         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
-         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
-         xmlns:rdam="http://rdaregistry.info/Elements/m/"
-         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
-         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
-         xmlns:rdan="http://rdaregistry.info/Elements/n/"
-         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
-         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
-         xmlns:rdap="http://rdaregistry.info/Elements/p/"
-         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
-         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
-         xmlns:rdat="http://rdaregistry.info/Elements/t/"
-         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
-         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
-         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
-         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
-         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
-         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:uwf="http://universityOfWashington/functions"
-         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test00wor">
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test001">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>245-test00wor</rdawd:P10002>
-      <fake:marcfield>F245 00 $a Collection series. $n 50, $p Shakespeare music : $b love songs on the lute.</fake:marcfield>
-      <rdawd:P10088>Collection series. 50, Shakespeare music</rdawd:P10088>
+      <rdawd:P10400>245-test001</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc245-test001</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test001"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#collectionseries50shakespearemusic"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#collectionseries50shakespearemusic"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#collectionseries50shakespearemusic"/><!--rdawo:P10617 = is metadata description of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test00exp">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/245-test00wor"/>
-      <rdaed:P20002>245-test00exp</rdaed:P20002>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test00man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test001">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test00exp"/>
-      <fake:marcfield>F245 00 $a Collection series. $n 50, $p Shakespeare music : $b love songs on the lute.</fake:marcfield>
-      <rdamd:P30156>Collection series. 50, Shakespeare music</rdamd:P30156>
-      <rdamd:P30142>love songs on the lute.</rdamd:P30142>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test001"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc245-test001</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 245-test001
+F245 00 $a Collection series. $n 50, $p Shakespeare music : $b love songs on the lute.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test01wor">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#collectionseries50shakespearemusic">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>245-test01wor</rdawd:P10002>
-      <fake:marcfield>F245 00 $a English historical linguistics : $b an international handbook. $n Volume 1 / $c Alexander Bergs, Laurel J. Brinton.</fake:marcfield>
-      <rdawd:P10088>English historical linguistics</rdawd:P10088>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test001"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#collectionseries50shakespearemusic"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>Collection series. 50, Shakespeare music</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10088>Collection series. 50, Shakespeare music</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test01exp">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#collectionseries50shakespearemusic">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/245-test01wor"/>
-      <rdaed:P20002>245-test01exp</rdaed:P20002>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test001"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#collectionseries50shakespearemusic"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#collectionseries50shakespearemusic"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Collection series. 50, Shakespeare music </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdaed:P20312>Collection series. 50, Shakespeare music</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test01man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#collectionseries50shakespearemusic">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test01exp"/>
-      <fake:marcfield>F245 00 $a English historical linguistics : $b an international handbook. $n Volume 1 / $c Alexander Bergs, Laurel J. Brinton.</fake:marcfield>
-      <rdamd:P30156>English historical linguistics</rdamd:P30156>
-      <rdamd:P30142>an international handbook. Volume 1</rdamd:P30142>
-      <rdamd:P30105>Alexander Bergs, Laurel J. Brinton.</rdamd:P30105>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test001"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#collectionseries50shakespearemusic"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>Collection series. 50, Shakespeare music</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30156>Collection series. 50, Shakespeare music</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30142>love songs on the lute</rdamd:P30142><!--rdamd:P30142 = has other title information-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test02wor">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test002">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>245-test02wor</rdawd:P10002>
-      <fake:marcfield>F245 14 $a The Letters of William Cullen Bryant $b Volume VI, 1872-1878 / $n Volume VI, $p 1872-1878 / $h [electronic resource] : $c edited by William Cullen Bryant II and Thomas G. Voss.</fake:marcfield>
-      <rdawd:P10088>The Letters of William Cullen Bryant</rdawd:P10088>
+      <rdawd:P10400>245-test002</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc245-test002</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test002"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#englishhistoricallinguisticsvolume1"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#englishhistoricallinguisticsvolume1"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#englishhistoricallinguisticsvolume1"/><!--rdawo:P10617 = is metadata description of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test02exp">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/245-test02wor"/>
-      <rdaed:P20002>245-test02exp</rdaed:P20002>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test02man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test002">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test02exp"/>
-      <fake:marcfield>F245 14 $a The Letters of William Cullen Bryant $b Volume VI, 1872-1878 / $n Volume VI, $p 1872-1878 / $h [electronic resource] : $c edited by William Cullen Bryant II and Thomas G. Voss.</fake:marcfield>
-      <rdamd:P30156>The Letters of William Cullen Bryant</rdamd:P30156>
-      <rdamd:P30142>Volume VI, 1872-1878</rdamd:P30142>
-      <rdamd:P30105>Volume VI, 1872-1878</rdamd:P30105>
-      <rdamd:P30142>edited by William Cullen Bryant II and Thomas G. Voss.</rdamd:P30142>
-      <rdamd:P30335>electronic resource] :</rdamd:P30335>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test002"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc245-test002</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 245-test002
+F245 00 $a English historical linguistics : $b an international handbook. $n Volume 1 / $c Alexander Bergs, Laurel J. Brinton.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test03wor">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#englishhistoricallinguisticsvolume1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>245-test03wor</rdawd:P10002>
-      <fake:marcfield>F245 10 $a Modern British playwriting. $p The 1960s : $b voices, documents, new interpretations / $c Steve Nicholson.</fake:marcfield>
-      <rdawd:P10088>Modern British playwriting. The 1960s</rdawd:P10088>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test002"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#englishhistoricallinguisticsvolume1"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>English historical linguistics Volume 1</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10088>English historical linguistics Volume 1</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test03exp">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#englishhistoricallinguisticsvolume1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/245-test03wor"/>
-      <rdaed:P20002>245-test03exp</rdaed:P20002>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test002"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#englishhistoricallinguisticsvolume1"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#englishhistoricallinguisticsvolume1"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>English historical linguistics Volume 1 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdaed:P20312>English historical linguistics Volume 1</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test03man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#englishhistoricallinguisticsvolume1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test03exp"/>
-      <fake:marcfield>F245 10 $a Modern British playwriting. $p The 1960s : $b voices, documents, new interpretations / $c Steve Nicholson.</fake:marcfield>
-      <rdamd:P30156>Modern British playwriting. The 1960s</rdamd:P30156>
-      <rdamd:P30142>voices, documents, new interpretations</rdamd:P30142>
-      <rdamd:P30105>Steve Nicholson.</rdamd:P30105>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test002"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#englishhistoricallinguisticsvolume1"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>English historical linguistics Volume 1</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30156>English historical linguistics Volume 1</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30142>an international handbook.</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30105>Alexander Bergs, Laurel J. Brinton</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test00wor">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test003">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>245-test00wor</rdawd:P10002>
-      <fake:marcfield>F245 14 $a The Letters of William Cullen Bryant $b Volume VI, 1872–1878 / $n Volume VI, $p 1872-1878 / $c edited by William Cullen Bryant II and Thomas G. Voss. $p 1872-1878 / $n Volume VI,</fake:marcfield>
-      <rdawd:P10088>The Letters of William Cullen Bryant</rdawd:P10088>
+      <rdawd:P10400>245-test003</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc245-test003</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test003"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#modernbritishplaywritingthe1960s"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#modernbritishplaywritingthe1960s"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#modernbritishplaywritingthe1960s"/><!--rdawo:P10617 = is metadata description of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test00exp">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/245-test00wor"/>
-      <rdaed:P20002>245-test00exp</rdaed:P20002>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test00man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test003">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test00exp"/>
-      <fake:marcfield>F245 14 $a The Letters of William Cullen Bryant $b Volume VI, 1872–1878 / $n Volume VI, $p 1872-1878 / $c edited by William Cullen Bryant II and Thomas G. Voss. $p 1872-1878 / $n Volume VI,</fake:marcfield>
-      <rdamd:P30156>The Letters of William Cullen Bryant</rdamd:P30156>
-      <rdamd:P30142>Volume VI, 1872–1878</rdamd:P30142>
-      <rdamd:P30105>Volume VI, 1872-1878</rdamd:P30105>
-      <rdamd:P30105>1872-1878</rdamd:P30105>
-      <rdamd:P30105>Volume VI,</rdamd:P30105>
-      <rdamd:P30105>edited by William Cullen Bryant II and Thomas G. Voss.</rdamd:P30105>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test003"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc245-test003</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 245-test003
+F245 10 $a Modern British playwriting. $p The 1960s : $b voices, documents, new interpretations / $c Steve Nicholson.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test00wor">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#modernbritishplaywritingthe1960s">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>245-test00wor</rdawd:P10002>
-      <fake:marcfield>F245 10 $a Advances in visual computing : $b 7th International Symposium, ISVC 2011, Las Vegas, NV, USA, September 26-28, 2011, proceedings. $n Part I / $c George Bebis [and others] (eds.).</fake:marcfield>
-      <rdawd:P10088>Advances in visual computing</rdawd:P10088>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test003"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#modernbritishplaywritingthe1960s"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>Modern British playwriting. The 1960s</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10088>Modern British playwriting. The 1960s</rdawd:P10088><!--rdawd:P10088 = has title of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test00exp">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#modernbritishplaywritingthe1960s">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/245-test00wor"/>
-      <rdaed:P20002>245-test00exp</rdaed:P20002>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test003"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#modernbritishplaywritingthe1960s"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#modernbritishplaywritingthe1960s"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Modern British playwriting. The 1960s </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdaed:P20312>Modern British playwriting. The 1960s</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test00man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#modernbritishplaywritingthe1960s">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test00exp"/>
-      <fake:marcfield>F245 10 $a Advances in visual computing : $b 7th International Symposium, ISVC 2011, Las Vegas, NV, USA, September 26-28, 2011, proceedings. $n Part I / $c George Bebis [and others] (eds.).</fake:marcfield>
-      <rdamd:P30156>Advances in visual computing</rdamd:P30156>
-      <rdamd:P30142>7th International Symposium, ISVC 2011, Las Vegas, NV, USA, September 26-28, 2011, proceedings. Part I</rdamd:P30142>
-      <rdamd:P30105>George Bebis [and others] (eds.).</rdamd:P30105>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test003"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#modernbritishplaywritingthe1960s"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>Modern British playwriting. The 1960s</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30156>Modern British playwriting. The 1960s</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30142>voices, documents, new interpretations</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30105>Steve Nicholson</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test31wor">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test004">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>245-test31wor</rdawd:P10002>
-      <fake:marcfield>F245 00 $a Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. $n Part II, $p Labour unions = $b Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers. $n Partie II, $p Syndicats ouvriers.</fake:marcfield>
-      <rdawd:P10088>Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. Part II, Labour unions</rdawd:P10088>
+      <rdawd:P10400>245-test004</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc245-test004</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test004"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#thelettersofwilliamcullenbryantvolumevi1872%E2%80%931878"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#thelettersofwilliamcullenbryantvolumevi1872%E2%80%931878"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#thelettersofwilliamcullenbryantvolumevi1872%E2%80%931878"/><!--rdawo:P10617 = is metadata description of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test31exp">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/245-test31wor"/>
-      <rdaed:P20002>245-test31exp</rdaed:P20002>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/245-test31man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test004">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/245-test31exp"/>
-      <fake:marcfield>F245 00 $a Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. $n Part II, $p Labour unions = $b Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers. $n Partie II, $p Syndicats ouvriers.</fake:marcfield>
-      <rdamd:P30156>Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. Part II, Labour unions</rdamd:P30156>
-      <rdamd:P30156>Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers. Partie II, Syndicats ouvriers.</rdamd:P30156>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test004"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc245-test004</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 245-test004
+F245 14 $a The Letters of William Cullen Bryant $n Volume VI,  $p 1872–1878 / $c edited by William Cullen Bryant II and Thomas G. Voss.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#thelettersofwilliamcullenbryantvolumevi1872%E2%80%931878">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test004"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#thelettersofwilliamcullenbryantvolumevi1872%E2%80%931878"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>The Letters of William Cullen Bryant Volume VI, 1872–1878</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10088>The Letters of William Cullen Bryant Volume VI, 1872–1878</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#thelettersofwilliamcullenbryantvolumevi1872%E2%80%931878">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test004"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#thelettersofwilliamcullenbryantvolumevi1872%E2%80%931878"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#thelettersofwilliamcullenbryantvolumevi1872%E2%80%931878"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>The Letters of William Cullen Bryant Volume VI, 1872–1878 </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdaed:P20312>The Letters of William Cullen Bryant Volume VI, 1872–1878</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#thelettersofwilliamcullenbryantvolumevi1872%E2%80%931878">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test004"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#thelettersofwilliamcullenbryantvolumevi1872%E2%80%931878"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>The Letters of William Cullen Bryant Volume VI, 1872–1878</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30156>The Letters of William Cullen Bryant Volume VI, 1872–1878</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30105>edited by William Cullen Bryant II and Thomas G. Voss</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test005">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>245-test005</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc245-test005</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test005"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#advancesinvisualcomputingparti"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#advancesinvisualcomputingparti"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#advancesinvisualcomputingparti"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test005">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test005"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc245-test005</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 245-test005
+F245 10 $a Advances in visual computing : $b 7th International Symposium, ISVC 2011, Las Vegas, NV, USA, September 26-28, 2011, proceedings. $n Part I / $c George Bebis [and others] (eds.).
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#advancesinvisualcomputingparti">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test005"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#advancesinvisualcomputingparti"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>Advances in visual computing Part I</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10088>Advances in visual computing Part I</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#advancesinvisualcomputingparti">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test005"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#advancesinvisualcomputingparti"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#advancesinvisualcomputingparti"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Advances in visual computing Part I </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdaed:P20312>Advances in visual computing Part I</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#advancesinvisualcomputingparti">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test005"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#advancesinvisualcomputingparti"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>Advances in visual computing Part I</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30156>Advances in visual computing Part I</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30142>7th International Symposium, ISVC 2011, Las Vegas, NV, USA, September 26-28, 2011, proceedings.</rdamd:P30142><!--rdamd:P30142 = has other title information-->
+      <rdamd:P30105>George Bebis [and others] (eds.)</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test006">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>245-test006</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc245-test006</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test006"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#annualreportoftheministerofsupplyandservicecanadaunderthecorporationsandlabourunionsreturnsactpartiilabourunions"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#annualreportoftheministerofsupplyandservicecanadaunderthecorporationsandlabourunionsreturnsactpartiilabourunions"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#annualreportoftheministerofsupplyandservicecanadaunderthecorporationsandlabourunionsreturnsactpartiilabourunions"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test006">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test006"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc245-test006</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 245-test006
+F245 00 $a Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. $n Part II, $p Labour unions = $b Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers. $n Partie II, $p Syndicats ouvriers.
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#annualreportoftheministerofsupplyandservicecanadaunderthecorporationsandlabourunionsreturnsactpartiilabourunions">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test006"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#annualreportoftheministerofsupplyandservicecanadaunderthecorporationsandlabourunionsreturnsactpartiilabourunions"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. Part II, Labour unions</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10088>Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. Part II, Labour unions</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#annualreportoftheministerofsupplyandservicecanadaunderthecorporationsandlabourunionsreturnsactpartiilabourunions">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test006"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#annualreportoftheministerofsupplyandservicecanadaunderthecorporationsandlabourunionsreturnsactpartiilabourunions"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#annualreportoftheministerofsupplyandservicecanadaunderthecorporationsandlabourunionsreturnsactpartiilabourunions"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. Part II, Labour unions </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdaed:P20312>Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. Part II, Labour unions</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#annualreportoftheministerofsupplyandservicecanadaunderthecorporationsandlabourunionsreturnsactpartiilabourunions">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test006"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#annualreportoftheministerofsupplyandservicecanadaunderthecorporationsandlabourunionsreturnsactpartiilabourunions"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. Part II, Labour unions</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30156>Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. Part II, Labour unions</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30156>Rapport annuel du ministre des Approvisionnements et services Canada présenté sous l'empire et des syndicates ouvriers. Partie II, Syndicats ouvriers</rdamd:P30156><!--rdamd:P30156 = has title proper-->
    </rdf:Description>
 </rdf:RDF>

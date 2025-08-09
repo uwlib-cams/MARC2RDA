@@ -63,7 +63,8 @@
         <xsl:call-template name="F130F240-xx-s-exp"/>
     </xsl:template> 
     
-    <xsl:template match="marc:datafield[@tag = '245'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '245']" mode="wor augWor" >
+    <xsl:template match="marc:datafield[@tag = '245'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '245']" 
+        mode="wor augWor" >
         <!--<xsl:call-template name="getmarc"/>-->
         <!-- copy of 245 where last subfield's ending punctuation (, or .) is removed -->
         <xsl:variable name="copy245">
@@ -84,6 +85,7 @@
                 </xsl:for-each>
             </xsl:copy>
         </xsl:variable>
+        <!-- variable to check whether record contains isbd punctuation -->
         <xsl:variable name="isISBD">
             <xsl:choose>
                 <xsl:when test="(substring(preceding-sibling::marc:leader, 19, 1) = 'i' or substring(preceding-sibling::marc:leader, 19, 1) = 'a')">
@@ -94,28 +96,32 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
+        <!-- go through 245 subfields -->
         <xsl:for-each select="$copy245/marc:datafield">
         <xsl:choose>
+            <!-- if there is a subfield $a -->
             <xsl:when test="marc:subfield[@code = 'a']">
                 <xsl:choose>
+                    <!-- check if it does not have n or p following -->
                     <xsl:when test="marc:subfield[@code = 'a'][not(following-sibling::*)] or
-                        marc:subfield[@code = 'a']/not(following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's']) or 
-                        (marc:subfield[@code = 'a']/following-sibling::marc:subfield[1][not(@code = 'n' or @code = 'p' or @code = 's')]
-                        and marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][preceding-sibling::marc:subfield[@code = 'b'][contains(text(), ' = ')]])">
+                        marc:subfield[@code = 'a']/not(following-sibling::marc:subfield[@code = 'n' or @code = 'p']) or 
+                        (marc:subfield[@code = 'a']/following-sibling::marc:subfield[1][not(@code = 'n' or @code = 'p')]
+                        and marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p'][preceding-sibling::marc:subfield[@code = 'b'][contains(text(), ' = ')]])">
                         <xsl:for-each select="marc:subfield[@code='a']">
                             <rdawd:P10088>
                                 <xsl:choose>
                                     <xsl:when test="$isISBD = true()">
-                                        <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                        <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                     </xsl:when>
                                     <xsl:otherwise>
-                                        <xsl:value-of select="uwf:removeBrackets(.)"/>
+                                        <xsl:value-of select="normalize-space(.) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                     </xsl:otherwise>
                                 </xsl:choose>
                             </rdawd:P10088>
                         </xsl:for-each>
                     </xsl:when>
                     <xsl:otherwise>
+                        <!-- otherwise there are additional subfields that make up the title proper -->
                         <xsl:variable name="title">
                             <xsl:choose>
                                 <!-- remove ISBD punctuation if ISBD -->
@@ -142,12 +148,13 @@
                             </xsl:choose>
                         </xsl:variable>
                         <rdawd:P10088>
-                            <xsl:value-of select="uwf:removeBrackets($title)"/>
+                            <xsl:value-of select="normalize-space($title) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                         </rdawd:P10088>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
             <xsl:otherwise>
+                <!-- no $a - use all subfields before $c -->
                 <xsl:variable name="title">
                     <xsl:choose>
                         <xsl:when test="marc:subfield[@code = 'c']">
@@ -162,10 +169,10 @@
                     <xsl:choose>
                         <!-- remove ISBD punctuation if ISBD -->
                         <xsl:when test="$isISBD = true()">
-                            <xsl:value-of select="normalize-space($title) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                            <xsl:value-of select="normalize-space($title) => replace('\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                         </xsl:when>
                         <xsl:otherwise>
-                            <xsl:value-of select="uwf:removeBrackets($title)"/>
+                            <xsl:value-of select="normalize-space($title) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                         </xsl:otherwise>
                     </xsl:choose>
                 </rdawd:P10088>
@@ -173,7 +180,9 @@
         </xsl:choose>
         </xsl:for-each>
     </xsl:template>    
-    <xsl:template match="marc:datafield[@tag = '245'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '245']" mode="exp" >
+    
+    <xsl:template match="marc:datafield[@tag = '245'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '245']" 
+        mode="exp" >
         <!--<xsl:call-template name="getmarc"/>-->
         <!-- copy of 245 where last subfield's ending punctuation (, or .) is removed -->
         <xsl:variable name="copy245">
@@ -194,6 +203,7 @@
                 </xsl:for-each>
             </xsl:copy>
         </xsl:variable>
+        <!-- variable to check whether record contains isbd punctuation -->
         <xsl:variable name="isISBD">
             <xsl:choose>
                 <xsl:when test="(substring(preceding-sibling::marc:leader, 19, 1) = 'i' or substring(preceding-sibling::marc:leader, 19, 1) = 'a')">
@@ -204,28 +214,32 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
+        <!-- go through 245 subfields -->
         <xsl:for-each select="$copy245/marc:datafield">
             <xsl:choose>
+                <!-- if there is a subfield $a -->
                 <xsl:when test="marc:subfield[@code = 'a']">
                     <xsl:choose>
+                        <!-- check if it does not have n or p following -->
                         <xsl:when test="marc:subfield[@code = 'a'][not(following-sibling::*)] or
-                            marc:subfield[@code = 'a']/not(following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's']) or 
-                            (marc:subfield[@code = 'a']/following-sibling::marc:subfield[1][not(@code = 'n' or @code = 'p' or @code = 's')]
-                            and marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][preceding-sibling::marc:subfield[@code = 'b'][contains(text(), ' = ')]])">
+                            marc:subfield[@code = 'a']/not(following-sibling::marc:subfield[@code = 'n' or @code = 'p']) or 
+                            (marc:subfield[@code = 'a']/following-sibling::marc:subfield[1][not(@code = 'n' or @code = 'p')]
+                            and marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p'][preceding-sibling::marc:subfield[@code = 'b'][contains(text(), ' = ')]])">
                             <xsl:for-each select="marc:subfield[@code='a']">
                                 <rdaed:P20312>
                                     <xsl:choose>
                                         <xsl:when test="$isISBD = true()">
-                                            <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                            <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                         </xsl:when>
                                         <xsl:otherwise>
-                                            <xsl:value-of select="uwf:removeBrackets(.)"/>
+                                            <xsl:value-of select="normalize-space(.) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                                         </xsl:otherwise>
                                     </xsl:choose>
                                 </rdaed:P20312>
                             </xsl:for-each>
                         </xsl:when>
                         <xsl:otherwise>
+                            <!-- otherwise there are additional subfields that make up the title proper -->
                             <xsl:variable name="title">
                                 <xsl:choose>
                                     <!-- remove ISBD punctuation if ISBD -->
@@ -236,7 +250,8 @@
                                             <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
                                             <xsl:if test="position() != last()">
                                                 <xsl:text> </xsl:text>
-                                            </xsl:if>                                    </xsl:for-each>
+                                            </xsl:if>                                    
+                                        </xsl:for-each>
                                     </xsl:when>
                                     <xsl:otherwise>
                                         <xsl:value-of select="uwf:removeBrackets(marc:subfield[@code = 'a'])"/>
@@ -251,12 +266,13 @@
                                 </xsl:choose>
                             </xsl:variable>
                             <rdaed:P20312>
-                                <xsl:value-of select="uwf:removeBrackets($title)"/>
+                                <xsl:value-of select="normalize-space($title) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                             </rdaed:P20312>
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:when>
                 <xsl:otherwise>
+                    <!-- no $a - use all subfields before $c -->
                     <xsl:variable name="title">
                         <xsl:choose>
                             <xsl:when test="marc:subfield[@code = 'c']">
@@ -271,17 +287,18 @@
                         <xsl:choose>
                             <!-- remove ISBD punctuation if ISBD -->
                             <xsl:when test="$isISBD = true()">
-                                <xsl:value-of select="normalize-space($title) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                <xsl:value-of select="normalize-space($title) => replace('\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                             </xsl:when>
                             <xsl:otherwise>
-                                <xsl:value-of select="uwf:removeBrackets($title)"/>
+                                <xsl:value-of select="normalize-space($title) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
                             </xsl:otherwise>
                         </xsl:choose>
                     </rdaed:P20312>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:for-each>
-    </xsl:template>    
+    </xsl:template>
+    
     <xsl:template match="marc:datafield[@tag = '245'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '245']" 
         mode="man origMan">
         <xsl:param name="type"/>
