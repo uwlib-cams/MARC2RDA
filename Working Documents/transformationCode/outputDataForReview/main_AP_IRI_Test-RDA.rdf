@@ -38,7 +38,7 @@
       <rdawd:P10002>transform/wor#marc99162645165001452</rdawd:P10002>
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc99162645165001452"/>
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#bride%26prejudicemotionpicture"/>
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#bride%26prejudicemotionpicturetwo-dimensionalmovingimage"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#bride%26prejudicemotionpicturetwo-dimensionalmovingimageenglish"/>
       <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolc887286899bride%26prejudice2004miramaxonlineresource"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc99162645165001452">
@@ -65,18 +65,18 @@ F338 ## $a online resource $b cr $2 rdacarrier
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#bride%26prejudicemotionpicture">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99162645165001452"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#bride%26prejudicemotionpicturetwo-dimensionalmovingimage"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#bride%26prejudicemotionpicturetwo-dimensionalmovingimageenglish"/>
       <rdawd:P10328>Bride &amp; prejudice (Motion picture)</rdawd:P10328>
       <rdaw:P10222 rdf:resource="https://doi.org/10.6069/uwlswd.eje7-jq11#l"/>
       <rdawd:P10088>Bride &amp; prejudice</rdawd:P10088>
       <rdawd:P10088>Bride &amp; prejudice (Motion picture)</rdawd:P10088>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#bride%26prejudicemotionpicturetwo-dimensionalmovingimage">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#bride%26prejudicemotionpicturetwo-dimensionalmovingimageenglish">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99162645165001452"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolc887286899bride%26prejudice2004miramaxonlineresource"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#bride%26prejudicemotionpicture"/>
-      <rdaed:P20310>Bride &amp; prejudice (Motion picture)  two-dimensional moving image</rdaed:P20310>
+      <rdaed:P20310>Bride &amp; prejudice (Motion picture) (Two-dimensional moving image : English)</rdaed:P20310>
       <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
       <rdaed:P20219>Duration: 111 minutes.</rdaed:P20219>
       <rdae:P20322 rdf:resource="https://doi.org/10.6069/uwlswd.aec4-nv40#g"/>
@@ -87,17 +87,17 @@ F338 ## $a online resource $b cr $2 rdacarrier
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#ocolc887286899bride%26prejudice2004miramaxonlineresource">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99162645165001452"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#bride%26prejudicemotionpicturetwo-dimensionalmovingimage"/>
-      <rdamd:P30276>Bride &amp; prejudice (2004 : Miramax : online resource)</rdamd:P30276>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#bride%26prejudicemotionpicturetwo-dimensionalmovingimageenglish"/>
+      <rdamd:P30276>Bride &amp; prejudice (2004 : Miramax : Online resource)</rdamd:P30276>
       <rdamd:P30278>2011/..</rdamd:P30278>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/xxu"/>
       <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/>
       <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e10"/>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e13"/>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e16"/>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e19"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e10"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e13"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e16"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e19"/>
       <rdamd:P30156>Bride &amp; prejudice</rdamd:P30156>
       <rdamd:P30105>Miramax Home Entertainment</rdamd:P30105>
       <rdamd:P30105>Pathé Pictures in association with UK Film Council, Miramax Films, Kintop Pictures &amp; Bend It Films, a Nayar Chadha production in association with Inside Track</rdamd:P30105>
@@ -112,22 +112,22 @@ F338 ## $a online resource $b cr $2 rdacarrier
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e10">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e10">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>(OCoLC)887286899</rdand:P80068>
       <rdan:P80071>System control number</rdan:P80071>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e13">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e13">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>(OCoLC)ocn887286899</rdand:P80068>
       <rdan:P80071>System control number</rdan:P80071>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e16">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e16">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>(EXLNZ-01ALLIANCE_NETWORK)99335403054801451</rdand:P80068>
       <rdan:P80071>System control number</rdan:P80071>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e19">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e19">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>(01ALLIANCE_UW)99162645165001452</rdand:P80068>
       <rdan:P80071>System control number</rdan:P80071>
@@ -139,7 +139,7 @@ F338 ## $a online resource $b cr $2 rdacarrier
       <rdawd:P10002>transform/wor#marc13304007</rdawd:P10002>
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc13304007"/>
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#leopard"/>
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#leopardspokenword"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#leopardspokenwordenglishnaxosaudiobooksoakhillpubdistributor"/>
       <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#leopard2009naxosaudiobooksoakhillpubdistributoraudiodisc"/>
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#gattopardoenglishspokenwordaggregating"/>
    </rdf:Description>
@@ -166,7 +166,7 @@ F979 ## $a aam
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc13304007"/>
       <rdawd:P10004>Aggregating work</rdawd:P10004>
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#leopard2009naxosaudiobooksoakhillpubdistributoraudiodisc"/>
-      <rdawd:P10328> Gattopardo. English spoken word (Aggregating)</rdawd:P10328>
+      <rdawd:P10328> Gattopardo. English Spoken word (Aggregating)</rdawd:P10328>
       <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.23tq-5e25#f"/>
       <rdawd:P10088>The leopard</rdawd:P10088>
       <rdawo:P10353 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
@@ -179,17 +179,17 @@ F979 ## $a aam
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#leopard">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc13304007"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#leopardspokenword"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#leopardspokenwordenglishnaxosaudiobooksoakhillpubdistributor"/>
       <rdawd:P10328>Leopard</rdawd:P10328>
       <rdawd:P10088>Gattopardo</rdawd:P10088>
       <rdawd:P10088>The leopard</rdawd:P10088>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#leopardspokenword">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#leopardspokenwordenglishnaxosaudiobooksoakhillpubdistributor">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc13304007"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#leopard2009naxosaudiobooksoakhillpubdistributoraudiodisc"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#leopard"/>
-      <rdaed:P20310>Leopard  spoken word</rdaed:P20310>
+      <rdaed:P20310>Leopard (Spoken word : English : Naxos AudioBooks ; Oakhill Pub. [distributor])</rdaed:P20310>
       <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
       <rdae:P20322 rdf:resource="https://doi.org/10.6069/uwlswd.aec4-nv40#g"/>
       <rdaed:P20006>English</rdaed:P20006>
@@ -202,9 +202,9 @@ F979 ## $a aam
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#leopard2009naxosaudiobooksoakhillpubdistributoraudiodisc">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc13304007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#leopardspokenword"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#leopardspokenwordenglishnaxosaudiobooksoakhillpubdistributor"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/aggWor#gattopardoenglishspokenwordaggregating"/>
-      <rdamd:P30276>Leopard (2009 : Naxos AudioBooks ; Oakhill Pub. [distributor] : audio disc)</rdamd:P30276>
+      <rdamd:P30276>Leopard (2009 : Naxos AudioBooks ; Oakhill Pub. [distributor] : Audio disc)</rdamd:P30276>
       <rdamd:P30011>2009</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/tnu"/>
       <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.nt0v-d633#e"/>
@@ -232,7 +232,7 @@ F979 ## $a aam
       <rdawd:P10002>transform/wor#marc99161908325401452</rdawd:P10002>
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc99161908325401452"/>
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#unitedstatescongresshousecommitteeonfinancialservicessubcommitteeonhousingandinsuranceimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015april29"/>
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#unitedstatescongresshousecommitteeonfinancialservicessubcommitteeonhousingandinsuranceimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015april29text"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#unitedstatescongresshousecommitteeonfinancialservicessubcommitteeonhousingandinsuranceimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015april29textenglish"/>
       <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolc927413075impactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015usgovernmentpublishingofficeonlineresource"/>
       <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/origMan#ocolc927413075impactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015usgovernmentpublishingofficeonlineresource"/>
    </rdf:Description>
@@ -264,20 +264,20 @@ F538 ## $a Master and use copy. Digital master created according to Benchmark fo
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#unitedstatescongresshousecommitteeonfinancialservicessubcommitteeonhousingandinsuranceimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015april29">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99161908325401452"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#unitedstatescongresshousecommitteeonfinancialservicessubcommitteeonhousingandinsuranceimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015april29text"/>
-      <rdawd:P10328>United States. Congress. House. Committee on Financial Services. Subcommittee on Housing and Insurance, Impact of international regulatory standards on the competitiveness of U.S. insurers (2015 April 29)</rdawd:P10328>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#unitedstatescongresshousecommitteeonfinancialservicessubcommitteeonhousingandinsuranceimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015april29textenglish"/>
+      <rdawd:P10328>United States. Congress. House. Committee on Financial Services. Subcommittee on Housing and Insurance Impact of international regulatory standards on the competitiveness of U.S. insurers (2015 April 29)</rdawd:P10328>
       <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/>
       <rdawo:P10530 rdf:resource="http://marc2rda.edu/fake/age#unitedstatescongresshousecommitteeonfinancialservicessubcommitteeonhousingandinsurance"/>
       <rdawd:P10088>The impact of international regulatory standards on the competitiveness of U.S. insurers</rdawd:P10088>
       <rdawd:P10088>Impact of international regulatory standards on the competitiveness of U.S. insurers (2015 April 29)</rdawd:P10088>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#unitedstatescongresshousecommitteeonfinancialservicessubcommitteeonhousingandinsuranceimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015april29text">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#unitedstatescongresshousecommitteeonfinancialservicessubcommitteeonhousingandinsuranceimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015april29textenglish">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99161908325401452"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolc927413075impactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015usgovernmentpublishingofficeonlineresource"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/origMan#ocolc927413075impactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015usgovernmentpublishingofficeonlineresource"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#unitedstatescongresshousecommitteeonfinancialservicessubcommitteeonhousingandinsuranceimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015april29"/>
-      <rdaed:P20310>United States. Congress. House. Committee on Financial Services. Subcommittee on Housing and Insurance. Impact of international regulatory standards on the competitiveness of U.S. insurers (2015 April 29)  text</rdaed:P20310>
+      <rdaed:P20310>United States. Congress. House. Committee on Financial Services. Subcommittee on Housing and Insurance. Impact of international regulatory standards on the competitiveness of U.S. insurers (2015 April 29) (Text : English)</rdaed:P20310>
       <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
       <rdaed:P20312>The impact of international regulatory standards on the competitiveness of U.S. insurers</rdaed:P20312>
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
@@ -286,19 +286,19 @@ F538 ## $a Master and use copy. Digital master created according to Benchmark fo
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#ocolc927413075impactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015usgovernmentpublishingofficeonlineresource">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99161908325401452"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#unitedstatescongresshousecommitteeonfinancialservicessubcommitteeonhousingandinsuranceimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015april29text"/>
-      <rdamd:P30276>Impact of international regulatory standards on the competitiveness of U.S. insurers (2015 : U.S. Government Publishing Office : online resource)</rdamd:P30276>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#unitedstatescongresshousecommitteeonfinancialservicessubcommitteeonhousingandinsuranceimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015april29textenglish"/>
+      <rdamd:P30276>Impact of international regulatory standards on the competitiveness of U.S. insurers (2015 : U.S. Government Publishing Office : Online resource)</rdamd:P30276>
       <rdamo:P30136 rdf:resource="http://marc2rda.edu/fake/transform/origMan#ocolc927413075impactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015usgovernmentpublishingofficeonlineresource"/>
       <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
       <rdamd:P30137>Includes bibliographies.</rdamd:P30137>
       <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.2eg3-1x53#f"/>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e128"/>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e130"/>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e132"/>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e135"/>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e138"/>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e141"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e128"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e130"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e132"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e135"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e138"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e141"/>
       <rdamd:P30156>The impact of international regulatory standards on the competitiveness of U.S. insurers</rdamd:P30156>
       <rdamd:P30142>hearing before the Subcommittee on Housing and Insurance of the Committee on Financial Services, U.S. House of Representatives, One Hundred Fourteenth Congress</rdamd:P30142>
       <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/>
@@ -309,13 +309,13 @@ F538 ## $a Master and use copy. Digital master created according to Benchmark fo
       <rdamd:P30279>Place of publication not identified</rdamd:P30279>
       <rdamd:P30297>HathiTrust Digital Library.</rdamd:P30297>
       <rdamd:P30278>2023</rdamd:P30278>
-      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/transform/ite#2025-08-09t1836156932056-0400d25e209"/>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/transform/ite#2025-08-10t1519090436744-0400d25e209"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/origMan#ocolc927413075impactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015usgovernmentpublishingofficeonlineresource">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99161908325401452"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#unitedstatescongresshousecommitteeonfinancialservicessubcommitteeonhousingandinsuranceimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015april29text"/>
-      <rdamd:P30276>Impact of international regulatory standards on the competitiveness of U.S. insurers (2015 : U.S. Government Publishing Office : online resource)</rdamd:P30276>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#unitedstatescongresshousecommitteeonfinancialservicessubcommitteeonhousingandinsuranceimpactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015april29textenglish"/>
+      <rdamd:P30276>Impact of international regulatory standards on the competitiveness of U.S. insurers (2015 : U.S. Government Publishing Office : Online resource)</rdamd:P30276>
       <rdamd:P30278>2015/9999</rdamd:P30278>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/dcu"/>
       <rdamd:P30156>The impact of international regulatory standards on the competitiveness of U.S. insurers</rdamd:P30156>
@@ -325,41 +325,41 @@ F538 ## $a Master and use copy. Digital master created according to Benchmark fo
       <rdamd:P30176>U.S. Government Publishing Office</rdamd:P30176>
       <rdamd:P30011>2015</rdamd:P30011>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-08-09t1836156932056-0400d25e209">
-      <rdaid:P40001>ite#2025-08-09t1836156932056-0400d25e209</rdaid:P40001>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-08-10t1519090436744-0400d25e209">
+      <rdaid:P40001>ite#2025-08-10t1519090436744-0400d25e209</rdaid:P40001>
       <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/transform/man#ocolc927413075impactofinternationalregulatorystandardsonthecompetitivenessofusinsurers2015usgovernmentpublishingofficeonlineresource"/>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
       <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/miaahdl"/>
       <rdaid:P40028>Master and use copy. Digital master created according to Benchmark for Faithful Digital Reproductions of Monographs and Serials, Version 1. Digital Library Federation, December 2002.; http://purl.oclc.org/DLF/benchrepro0212</rdaid:P40028>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e128">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e128">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>(OCoLC)927413075</rdand:P80068>
       <rdan:P80071>System control number</rdan:P80071>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e130">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e130">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>(OCoLC)1414460465</rdand:P80068>
       <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
       <rdan:P80071>System control number</rdan:P80071>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e132">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e132">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>(OCoLC)1417078639</rdand:P80068>
       <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
       <rdan:P80071>System control number</rdan:P80071>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e135">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e135">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>(OCoLC)ocn927413075</rdand:P80068>
       <rdan:P80071>System control number</rdan:P80071>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e138">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e138">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>(EXLNZ-01ALLIANCE_NETWORK)99321327107301451</rdand:P80068>
       <rdan:P80071>System control number</rdan:P80071>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e141">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e141">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>(01ALLIANCE_UW)99161908325401452</rdand:P80068>
       <rdan:P80071>System control number</rdan:P80071>
@@ -376,7 +376,7 @@ F538 ## $a Master and use copy. Digital master created according to Benchmark fo
       <rdawd:P10002>transform/wor#marc3292686</rdawd:P10002>
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc3292686"/>
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#gludejohnbnoaaaquacultureplan"/>
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#gludejohnbnoaaaquacultureplantext"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#gludejohnbnoaaaquacultureplantextenglish"/>
       <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn77602748noaaaquacultureplan1977unitedstatesgovernmentprintingofficevolume"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc3292686">
@@ -400,19 +400,19 @@ F338 ## $a volume $b nc $2 rdacarrier
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#gludejohnbnoaaaquacultureplan">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc3292686"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#gludejohnbnoaaaquacultureplantext"/>
-      <rdawd:P10328>Glude, John B., NOAA aquaculture plan</rdawd:P10328>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#gludejohnbnoaaaquacultureplantextenglish"/>
+      <rdawd:P10328>Glude, John B. NOAA aquaculture plan</rdawd:P10328>
       <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/>
       <!--Default relationship property used for http://marc2rda.edu/fake/age#gludejohnb-->
       <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#gludejohnb"/>
       <rdawd:P10088>NOAA aquaculture plan</rdawd:P10088>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#gludejohnbnoaaaquacultureplantext">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#gludejohnbnoaaaquacultureplantextenglish">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc3292686"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn77602748noaaaquacultureplan1977unitedstatesgovernmentprintingofficevolume"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#gludejohnbnoaaaquacultureplan"/>
-      <rdaed:P20310>Glude, John B.. NOAA aquaculture plan  text</rdaed:P20310>
+      <rdaed:P20310>Glude, John B.. NOAA aquaculture plan (Text : English)</rdaed:P20310>
       <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
       <rdaed:P20312>NOAA aquaculture plan</rdaed:P20312>
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
@@ -421,13 +421,13 @@ F338 ## $a volume $b nc $2 rdacarrier
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#lccn77602748noaaaquacultureplan1977unitedstatesgovernmentprintingofficevolume">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc3292686"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#gludejohnbnoaaaquacultureplantext"/>
-      <rdamd:P30276>NOAA aquaculture plan (1977 : United States Government Printing Office : volume)</rdamd:P30276>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#gludejohnbnoaaaquacultureplantextenglish"/>
+      <rdamd:P30276>NOAA aquaculture plan (1977 : United States Government Printing Office : Volume)</rdamd:P30276>
       <rdamd:P30011>1977</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/dcu"/>
       <rdamd:P30137>Includes bibliographies.</rdamd:P30137>
       <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.2eg3-1x53#f"/>
-      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e222"/>
+      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e222"/>
       <rdamd:P30156>NOAA aquaculture plan</rdamd:P30156>
       <rdamd:P30105>prepared by John B. Glude, editor</rdamd:P30105>
       <rdamd:P30111>Washington, DC : United States Government Printing Office, 1977.</rdamd:P30111>
@@ -439,7 +439,7 @@ F338 ## $a volume $b nc $2 rdacarrier
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e222">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e222">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>   77602748 </rdand:P80068>
       <rdand:P80071>Library of Congress control number:   77602748 </rdand:P80071>
@@ -456,7 +456,7 @@ F338 ## $a volume $b nc $2 rdacarrier
       <rdawd:P10002>transform/wor#marc6101111</rdawd:P10002>
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc6101111"/>
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#nationalresearchcounciluspanelonaquacultureroleoftheusdepartmentofagricultureinaquaculture"/>
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#nationalresearchcounciluspanelonaquacultureroleoftheusdepartmentofagricultureinaquaculturetext"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#nationalresearchcounciluspanelonaquacultureroleoftheusdepartmentofagricultureinaquaculturetextenglish"/>
       <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#roleoftheusdepartmentofagricultureinaquaculture1979nationalacademyofsciencesvolume"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc6101111">
@@ -481,19 +481,19 @@ F338 ## $a volume $b nc $2 rdacarrier
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#nationalresearchcounciluspanelonaquacultureroleoftheusdepartmentofagricultureinaquaculture">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc6101111"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#nationalresearchcounciluspanelonaquacultureroleoftheusdepartmentofagricultureinaquaculturetext"/>
-      <rdawd:P10328>National Research Council (U.S.). Panel on Aquaculture. Role of the U.S. Department of Agriculture in aquaculture</rdawd:P10328>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#nationalresearchcounciluspanelonaquacultureroleoftheusdepartmentofagricultureinaquaculturetextenglish"/>
+      <rdawd:P10328>National Research Council (U.S.). Panel on Aquaculture Role of the U.S. Department of Agriculture in aquaculture</rdawd:P10328>
       <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/>
       <!--Default relationship property used for http://marc2rda.edu/fake/age#nationalresearchcounciluspanelonaquaculture-->
       <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#nationalresearchcounciluspanelonaquaculture"/>
       <rdawd:P10088>The role of the U.S. Department of Agriculture in aquaculture</rdawd:P10088>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#nationalresearchcounciluspanelonaquacultureroleoftheusdepartmentofagricultureinaquaculturetext">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#nationalresearchcounciluspanelonaquacultureroleoftheusdepartmentofagricultureinaquaculturetextenglish">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc6101111"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#roleoftheusdepartmentofagricultureinaquaculture1979nationalacademyofsciencesvolume"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#nationalresearchcounciluspanelonaquacultureroleoftheusdepartmentofagricultureinaquaculture"/>
-      <rdaed:P20310>National Research Council (U.S.). Panel on Aquaculture. Role of the U.S. Department of Agriculture in aquaculture  text</rdaed:P20310>
+      <rdaed:P20310>National Research Council (U.S.). Panel on Aquaculture. Role of the U.S. Department of Agriculture in aquaculture (Text : English)</rdaed:P20310>
       <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
       <rdaed:P20312>The role of the U.S. Department of Agriculture in aquaculture</rdaed:P20312>
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
@@ -502,8 +502,8 @@ F338 ## $a volume $b nc $2 rdacarrier
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#roleoftheusdepartmentofagricultureinaquaculture1979nationalacademyofsciencesvolume">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc6101111"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#nationalresearchcounciluspanelonaquacultureroleoftheusdepartmentofagricultureinaquaculturetext"/>
-      <rdamd:P30276>Role of the U.S. Department of Agriculture in aquaculture (1979 : National Academy of Sciences : volume)</rdamd:P30276>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#nationalresearchcounciluspanelonaquacultureroleoftheusdepartmentofagricultureinaquaculturetextenglish"/>
+      <rdamd:P30276>Role of the U.S. Department of Agriculture in aquaculture (1979 : National Academy of Sciences : Volume)</rdamd:P30276>
       <rdamd:P30011>1979</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/dcu"/>
       <rdam:P30453 rdf:resource="https://doi.org/10.6069/uwlswd.gq3z-mv97#d"/>
@@ -532,7 +532,7 @@ F338 ## $a volume $b nc $2 rdacarrier
       <rdawd:P10002>transform/wor#marc3315027</rdawd:P10002>
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc3315027"/>
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#alaskaaquacultureconference2nd1977wrangellalaskaproceedingsofthesecondalaskaaguacultureconferencejanuary78and91977wrangellalaska"/>
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#alaskaaquacultureconference2nd1977wrangellalaskaproceedingsofthesecondalaskaaguacultureconferencejanuary78and91977wrangellalaskatext"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#alaskaaquacultureconference2nd1977wrangellalaskaproceedingsofthesecondalaskaaguacultureconferencejanuary78and91977wrangellalaskatextenglish"/>
       <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn78620504proceedingsofthesecondalaskaaguacultureconferencejanuary78and91977wrangellalaska1977alaskaseagrantprogramvolume"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc3315027">
@@ -556,7 +556,7 @@ F338 ## $a volume $b nc $2 rdacarrier
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#alaskaaquacultureconference2nd1977wrangellalaskaproceedingsofthesecondalaskaaguacultureconferencejanuary78and91977wrangellalaska">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc3315027"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#alaskaaquacultureconference2nd1977wrangellalaskaproceedingsofthesecondalaskaaguacultureconferencejanuary78and91977wrangellalaskatext"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#alaskaaquacultureconference2nd1977wrangellalaskaproceedingsofthesecondalaskaaguacultureconferencejanuary78and91977wrangellalaskatextenglish"/>
       <rdawd:P10328>Alaska Aquaculture Conference (2nd : 1977 : Wrangell, Alaska) Proceedings of the second Alaska Aguaculture Conference, January 7, 8, and 9, 1977, Wrangell, Alaska</rdawd:P10328>
       <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.t1gh-8294#1"/>
       <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/>
@@ -564,12 +564,12 @@ F338 ## $a volume $b nc $2 rdacarrier
       <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#alaskaaquacultureconference2nd1977wrangellalaska"/>
       <rdawd:P10088>Proceedings of the second Alaska Aguaculture Conference, January 7, 8, and 9, 1977, Wrangell, Alaska</rdawd:P10088>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#alaskaaquacultureconference2nd1977wrangellalaskaproceedingsofthesecondalaskaaguacultureconferencejanuary78and91977wrangellalaskatext">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#alaskaaquacultureconference2nd1977wrangellalaskaproceedingsofthesecondalaskaaguacultureconferencejanuary78and91977wrangellalaskatextenglish">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc3315027"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#lccn78620504proceedingsofthesecondalaskaaguacultureconferencejanuary78and91977wrangellalaska1977alaskaseagrantprogramvolume"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#alaskaaquacultureconference2nd1977wrangellalaskaproceedingsofthesecondalaskaaguacultureconferencejanuary78and91977wrangellalaska"/>
-      <rdaed:P20310>Alaska Aquaculture Conference (2nd : 1977 : Wrangell, Alaska). Proceedings of the second Alaska Aguaculture Conference, January 7, 8, and 9, 1977, Wrangell, Alaska  text</rdaed:P20310>
+      <rdaed:P20310>Alaska Aquaculture Conference (2nd : 1977 : Wrangell, Alaska). Proceedings of the second Alaska Aguaculture Conference, January 7, 8, and 9, 1977, Wrangell, Alaska (Text : English)</rdaed:P20310>
       <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
       <rdaed:P20312>Proceedings of the second Alaska Aguaculture Conference, January 7, 8, and 9, 1977, Wrangell, Alaska</rdaed:P20312>
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
@@ -578,13 +578,13 @@ F338 ## $a volume $b nc $2 rdacarrier
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#lccn78620504proceedingsofthesecondalaskaaguacultureconferencejanuary78and91977wrangellalaska1977alaskaseagrantprogramvolume">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc3315027"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#alaskaaquacultureconference2nd1977wrangellalaskaproceedingsofthesecondalaskaaguacultureconferencejanuary78and91977wrangellalaskatext"/>
-      <rdamd:P30276>Proceedings of the second Alaska Aguaculture Conference, January 7, 8, and 9, 1977, Wrangell, Alaska (1977 : Alaska Sea Grant Program : volume)</rdamd:P30276>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#alaskaaquacultureconference2nd1977wrangellalaskaproceedingsofthesecondalaskaaguacultureconferencejanuary78and91977wrangellalaskatextenglish"/>
+      <rdamd:P30276>Proceedings of the second Alaska Aguaculture Conference, January 7, 8, and 9, 1977, Wrangell, Alaska (1977 : Alaska Sea Grant Program : Volume)</rdamd:P30276>
       <rdamd:P30011>1977</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/aku"/>
       <rdamd:P30137>Includes bibliographies.</rdamd:P30137>
       <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.2eg3-1x53#s"/>
-      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e322"/>
+      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e322"/>
       <rdamd:P30156>Proceedings of the second Alaska Aguaculture Conference, January 7, 8, and 9, 1977, Wrangell, Alaska</rdamd:P30156>
       <rdamd:P30111>[Fairbanks] : Alaska Sea Grant Program, 1977.</rdamd:P30111>
       <rdamd:P30088>Fairbanks</rdamd:P30088>
@@ -595,7 +595,7 @@ F338 ## $a volume $b nc $2 rdacarrier
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e322">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e322">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>   78620504 </rdand:P80068>
       <rdand:P80071>Library of Congress control number:   78620504 </rdand:P80071>
@@ -616,7 +616,7 @@ F338 ## $a volume $b nc $2 rdacarrier
       <rdawd:P10002>transform/wor#marc39720541</rdawd:P10002>
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc39720541"/>
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#universityofwashingtonseagrantcooksusangordondavidgdavidgeorge1950-washingtonseagrantprogramofficeofmarineenvironmentandresourcesprograms"/>
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#universityofwashingtonseagrantcooksusantext"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#universityofwashingtonseagrantcooksusantextenglish"/>
       <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#universityofwashingtonseagrant1997officeofmarineenvironmentalandresourceprogramswashingtonseagrantprogramonlineresource"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc39720541">
@@ -641,17 +641,17 @@ F710 2# $a Washington Sea Grant Program. $b Office of Marine Environment and Res
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#universityofwashingtonseagrantcooksusangordondavidgdavidgeorge1950-washingtonseagrantprogramofficeofmarineenvironmentandresourcesprograms">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc39720541"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#universityofwashingtonseagrantcooksusantext"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#universityofwashingtonseagrantcooksusantextenglish"/>
       <rdawd:P10328>University of Washington Sea GrantCook, Susan. Gordon, David G. (David George), 1950- Washington Sea Grant Program. Office of Marine Environment and Resources Programs</rdawd:P10328>
       <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.62zz-1534#w"/>
       <rdawd:P10088>University of Washington Sea Grant</rdawd:P10088>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#universityofwashingtonseagrantcooksusantext">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#universityofwashingtonseagrantcooksusantextenglish">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc39720541"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#universityofwashingtonseagrant1997officeofmarineenvironmentalandresourceprogramswashingtonseagrantprogramonlineresource"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#universityofwashingtonseagrantcooksusangordondavidgdavidgeorge1950-washingtonseagrantprogramofficeofmarineenvironmentandresourcesprograms"/>
-      <rdaed:P20310>University of Washington Sea Grant Cook, Susan  text</rdaed:P20310>
+      <rdaed:P20310>University of Washington Sea Grant Cook, Susan (Text : English)</rdaed:P20310>
       <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
       <rdaed:P20312>University of Washington Sea Grant</rdaed:P20312>
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
@@ -660,8 +660,8 @@ F710 2# $a Washington Sea Grant Program. $b Office of Marine Environment and Res
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#universityofwashingtonseagrant1997officeofmarineenvironmentalandresourceprogramswashingtonseagrantprogramonlineresource">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc39720541"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#universityofwashingtonseagrantcooksusantext"/>
-      <rdamd:P30276>University of Washington Sea Grant (1997 : Office of Marine Environmental and Resource Programs, Washington Sea Grant Program : online resource)</rdamd:P30276>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#universityofwashingtonseagrantcooksusantextenglish"/>
+      <rdamd:P30276>University of Washington Sea Grant (1997 : Office of Marine Environmental and Resource Programs, Washington Sea Grant Program : Online resource)</rdamd:P30276>
       <rdamd:P30137>Continuing resource currently published.</rdamd:P30137>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/wau"/>
       <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
@@ -707,7 +707,7 @@ F710 2# $a Washington Sea Grant Program. $b Office of Marine Environment and Res
       <rdawd:P10002>transform/wor#marc1334720167</rdawd:P10002>
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc1334720167"/>
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#outlookofclimatechangeandfishnutrition"/>
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#outlookofclimatechangeandfishnutritionstillimagetext"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#outlookofclimatechangeandfishnutritionstillimagetextenglish"/>
       <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#uk020759515outlookofclimatechangeandfishnutrition2022springerverlagsingaporvolume"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc1334720167">
@@ -731,17 +731,17 @@ F338 ## $a volume $2 rdacarrier
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#outlookofclimatechangeandfishnutrition">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc1334720167"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#outlookofclimatechangeandfishnutritionstillimagetext"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#outlookofclimatechangeandfishnutritionstillimagetextenglish"/>
       <rdawd:P10328>OUTLOOK OF CLIMATE CHANGE AND FISH NUTRITION</rdawd:P10328>
       <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/>
       <rdawd:P10088>OUTLOOK OF CLIMATE CHANGE AND FISH NUTRITION</rdawd:P10088>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#outlookofclimatechangeandfishnutritionstillimagetext">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#outlookofclimatechangeandfishnutritionstillimagetextenglish">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc1334720167"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#uk020759515outlookofclimatechangeandfishnutrition2022springerverlagsingaporvolume"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#outlookofclimatechangeandfishnutrition"/>
-      <rdaed:P20310>OUTLOOK OF CLIMATE CHANGE AND FISH NUTRITION  still image text</rdaed:P20310>
+      <rdaed:P20310>OUTLOOK OF CLIMATE CHANGE AND FISH NUTRITION (Still image : Text : English)</rdaed:P20310>
       <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
       <rdaed:P20312>OUTLOOK OF CLIMATE CHANGE AND FISH NUTRITION</rdaed:P20312>
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
@@ -750,11 +750,11 @@ F338 ## $a volume $2 rdacarrier
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#uk020759515outlookofclimatechangeandfishnutrition2022springerverlagsingaporvolume">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc1334720167"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#outlookofclimatechangeandfishnutritionstillimagetext"/>
-      <rdamd:P30276>OUTLOOK OF CLIMATE CHANGE AND FISH NUTRITION (2022 : SPRINGER VERLAG, SINGAPOR : volume)</rdamd:P30276>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#outlookofclimatechangeandfishnutritionstillimagetextenglish"/>
+      <rdamd:P30276>OUTLOOK OF CLIMATE CHANGE AND FISH NUTRITION (2022 : SPRINGER VERLAG, SINGAPOR : Volume)</rdamd:P30276>
       <rdamd:P30011>2022</rdamd:P30011>
       <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/xx"/>
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e428"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e428"/>
       <rdamd:P30156>OUTLOOK OF CLIMATE CHANGE AND FISH NUTRITION</rdamd:P30156>
       <rdamd:P30111>$a [S.l.] :$b SPRINGER VERLAG, SINGAPOR,$c 2022.</rdamd:P30111>
       <rdamd:P30088>S.l.</rdamd:P30088>
@@ -763,7 +763,7 @@ F338 ## $a volume $2 rdacarrier
       <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-09t1836156932056-0400d25e428">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-08-10t1519090436744-0400d25e428">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>020759515</rdand:P80068>
       <rdan:P80071>Identifier derived from a National Bibliographic agency control number for a description of this manifestation</rdan:P80071>

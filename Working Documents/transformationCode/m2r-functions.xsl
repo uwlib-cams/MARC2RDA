@@ -804,7 +804,7 @@
         <xsl:param name="code"/>
         <xsl:variable name="langIRI" select="'http://id.loc.gov/vocabulary/languages/'||$code"/>
         <xsl:variable name="nameFile" select="document('lookup/lc/languages.rdf')"/>
-        <xsl:value-of select="$nameFile//madsrdf:authoritativeLabel[@xml:lang='en'][parent::madsrdf:Authority/@rdf:about=$langIRI]"/>
+        <xsl:value-of select="$nameFile//madsrdf:authoritativeLabel[@xml:lang='en'][parent::madsrdf:Language/@rdf:about=$langIRI]"/>
     </xsl:function>
     
     <!-- POSSIBLE BREAK POINT !!!!  If we query LC too much we may get denied -->
