@@ -638,7 +638,7 @@
         <xsl:param name="record"/>
         <xsl:variable name="langCode" select="$record/marc:controlfield[@tag = '008'][1]/substring(text(), 36, 3)"/>
         <xsl:variable name="lang">
-            <xsl:if test="not($record/marc:datafield[@tag = '130'][./marc:subfield[@code = 'l']]) and not($record/marc:datafield[@code = '240'][./marc:subfield[@code = 'l']])">
+            <xsl:if test="not($record/marc:datafield[@tag = '130']/marc:subfield[@code = 'l']) and not($record/marc:datafield[@tag = '240']/marc:subfield[@code = 'l'])">
                 <xsl:if test="not(matches($langCode, ' |\|'))">
                     <xsl:value-of select="uwf:lcLangCodeToLabel($langCode)"/>
                 </xsl:if>
