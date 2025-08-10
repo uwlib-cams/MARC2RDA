@@ -593,7 +593,7 @@
                         <rdaeo:P20001 rdf:resource="{concat('http://rdaregistry.info/termList/RDAContentType/', $givenTermOrCode)}"/>
                         <rdawo:P10349 rdf:resource="{concat('http://rdaregistry.info/termList/RDAContentType/', $givenTermOrCode)}"/>
                     </xsl:when>
-                    <xsl:when test="$tag33X = '337' and document('lookup/rda/RDACMediaType.xml')/rdf:RDF/skos:Concept/key('rdaCode', concat('http://rdaregistry.info/termList/RDAMediaType/', $givenTermOrCode))">
+                    <xsl:when test="$tag33X = '337' and document('lookup/rda/RDAMediaType.xml')/rdf:RDF/skos:Concept/key('rdaCode', concat('http://rdaregistry.info/termList/RDAMediaType/', $givenTermOrCode))">
                         <rdamo:P30002 rdf:resource="{concat('http://rdaregistry.info/termList/RDAMediaType/', $givenTermOrCode)}"/>
                     </xsl:when>
                     <xsl:when test="$tag33X = '338' and document('lookup/rda/RDACarrierType.xml')/rdf:RDF/skos:Concept/key('rdaCode', concat('http://rdaregistry.info/termList/RDACarrierType/', $givenTermOrCode))">

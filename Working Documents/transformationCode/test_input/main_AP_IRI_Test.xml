@@ -49,13 +49,18 @@
         </marc:datafield>
     </marc:record>
     
-    <!-- 100 + 240 -->
+    <!-- 100 + 240 with $l-->
     <!-- coder added 336 337 338 for rda terms and IRIs -->
+    <!-- coder added 250 1st ed.-->
     <!-- aam -->
     <marc:record>
         <marc:leader>01875cim a2200409 a 4500</marc:leader>
         <marc:controlfield tag="001">13304007</marc:controlfield>
         <marc:controlfield tag="008">090504s2009    tnunnnng efz   f  n eng d</marc:controlfield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Tomasi di Lampedusa, Giuseppe,</marc:subfield>
+            <marc:subfield code="d">1896-1957.</marc:subfield>
+        </marc:datafield>
         <marc:datafield tag="240" ind1="1" ind2="0">
             <marc:subfield code="a">Gattopardo.</marc:subfield>
             <marc:subfield code="l">English</marc:subfield>
@@ -64,6 +69,9 @@
             <marc:subfield code="a">The leopard</marc:subfield>
             <marc:subfield code="h">[sound recording] /</marc:subfield>
             <marc:subfield code="c">Giuseppe Tomasi di Lampedusa.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="250" ind1=" " ind2=" ">
+            <marc:subfield code="a">1st ed.</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="260" ind1=" " ind2=" ">
             <marc:subfield code="a">[Franklin, Tenn.] :</marc:subfield>
@@ -76,16 +84,19 @@
             <marc:subfield code="a">spoken word</marc:subfield>
             <marc:subfield code="b">1013</marc:subfield>
             <marc:subfield code="1">http://rdaregistry.info/termList/RDAContentType/1013</marc:subfield>
+            <marc:subfield code="2">rdaco</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="337" ind1=" " ind2=" ">
             <marc:subfield code="a">audio</marc:subfield>
             <marc:subfield code="b">1001</marc:subfield>
             <marc:subfield code="1">http://rdaregistry.info/termList/RDAMediaType/1001</marc:subfield>
+            <marc:subfield code="2">rdamt</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="338" ind1=" " ind2=" ">
             <marc:subfield code="a">audio disc</marc:subfield>
             <marc:subfield code="b">1004</marc:subfield>
             <marc:subfield code="1">http://rdaregistry.info/termList/RDACarrierType/1004</marc:subfield>
+            <marc:subfield code="2">rdact</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="979" ind1=" " ind2=" ">
             <marc:subfield code="a">aam</marc:subfield>
@@ -93,6 +104,7 @@
     </marc:record>
     
     <!-- 110 + 240 -->
+    <!-- coder added 250 1st ed.-->
     <!-- reproduction -->
     <marc:record>
         <marc:leader>04616cam a2200709 i 4500</marc:leader>
@@ -130,6 +142,9 @@
         <marc:datafield tag="245" ind1="1" ind2="4">
             <marc:subfield code="a">The impact of international regulatory standards on the competitiveness of U.S. insurers :</marc:subfield>
             <marc:subfield code="b">hearing before the Subcommittee on Housing and Insurance of the Committee on Financial Services, U.S. House of Representatives, One Hundred Fourteenth Congress.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="250" ind1=" " ind2=" ">
+            <marc:subfield code="a">Second edition.</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="264" ind1=" " ind2="1">
             <marc:subfield code="a">Washington :</marc:subfield>
@@ -207,11 +222,12 @@
     </marc:record>
     
     <!-- 110 + 245 -->
+    <!-- coder remove 008 date -->
     <marc:record>
         <marc:leader>02327cam a2200505 i 4500</marc:leader>
         <marc:controlfield tag="001">6101111</marc:controlfield>
         <marc:controlfield tag="005">20241212023333.7</marc:controlfield>
-        <marc:controlfield tag="008">800318s1979    dcud     b    000 0 eng  </marc:controlfield>
+        <marc:controlfield tag="008">800318s||||    dcud     b    000 0 eng  </marc:controlfield>
         <marc:datafield tag="019" ind1=" " ind2=" ">
             <marc:subfield code="a">8835119</marc:subfield>
         </marc:datafield>

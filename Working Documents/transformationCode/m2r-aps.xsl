@@ -395,7 +395,11 @@
             <xsl:when test="$record/marc:datafield[@tag = '100'] and $record/marc:datafield[@tag = '240']">
                 <xsl:variable name="ap">
                     <!-- 100 name subfields -->
-                    <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '100'][1])"/>
+                    <xsl:variable name="agentAP" select="uwf:stripEndPunctuation(uwf:agentAccessPoint($record/marc:datafield[@tag = '100'][1]))"/>
+                    <xsl:value-of select="$agentAP"/>
+                    <xsl:if test="not(ends-with($agentAP, '.'))">
+                        <xsl:text>.</xsl:text>
+                    </xsl:if>
                     <xsl:text> </xsl:text>
                     <!-- 240 -->
                     <xsl:value-of select="uwf:workAPFields($record/marc:datafield[@tag = '240'][1])"/>
@@ -406,7 +410,11 @@
             <xsl:when test="$record/marc:datafield[@tag = '110'] and $record/marc:datafield[@tag = '240']">
                 <xsl:variable name="ap">
                     <!-- 110 name subfields -->
-                    <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '110'][1])"/>
+                    <xsl:variable name="agentAP" select="uwf:stripEndPunctuation(uwf:agentAccessPoint($record/marc:datafield[@tag = '110'][1]))"/>
+                    <xsl:value-of select="$agentAP"/>
+                    <xsl:if test="not(ends-with($agentAP, '.'))">
+                        <xsl:text>.</xsl:text>
+                    </xsl:if>
                     <xsl:text> </xsl:text>
                     <!-- 240 -->
                     <xsl:value-of select="uwf:workAPFields($record/marc:datafield[@tag = '240'][1])"/>
@@ -417,7 +425,11 @@
             <xsl:when test="$record/marc:datafield[@tag = '111'] and $record/marc:datafield[@tag = '240']">
                 <xsl:variable name="ap">
                     <!-- 111 name subfields -->
-                    <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '111'][1])"/>
+                    <xsl:variable name="agentAP" select="uwf:stripEndPunctuation(uwf:agentAccessPoint($record/marc:datafield[@tag = '111'][1]))"/>
+                    <xsl:value-of select="$agentAP"/>
+                    <xsl:if test="not(ends-with($agentAP, '.'))">
+                        <xsl:text>.</xsl:text>
+                    </xsl:if>
                     <xsl:text> </xsl:text>
                     <!-- 240 -->
                     <xsl:value-of select="uwf:workAPFields($record/marc:datafield[@tag = '240'][1])"/>
@@ -428,7 +440,11 @@
             <xsl:when test="$record/marc:datafield[@tag = '100'] and $record/marc:datafield[@tag = '245']">
                 <xsl:variable name="ap">
                     <!-- 100 name subfields -->
-                    <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '100'][1])"/>
+                    <xsl:variable name="agentAP" select="uwf:stripEndPunctuation(uwf:agentAccessPoint($record/marc:datafield[@tag = '100'][1]))"/>
+                    <xsl:value-of select="$agentAP"/>
+                    <xsl:if test="not(ends-with($agentAP, '.'))">
+                        <xsl:text>.</xsl:text>
+                    </xsl:if>
                     <xsl:text> </xsl:text>
                     <!-- 245 anp -->
                     <xsl:value-of select="uwf:process245($record)"/>
@@ -439,7 +455,11 @@
             <xsl:when test="$record/marc:datafield[@tag = '110'] and $record/marc:datafield[@tag = '245']">
                 <xsl:variable name="ap">
                     <!-- 110 name subfields -->
-                    <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '110'][1])"/>
+                    <xsl:variable name="agentAP" select="uwf:stripEndPunctuation(uwf:agentAccessPoint($record/marc:datafield[@tag = '110'][1]))"/>
+                    <xsl:value-of select="$agentAP"/>
+                    <xsl:if test="not(ends-with($agentAP, '.'))">
+                        <xsl:text>.</xsl:text>
+                    </xsl:if>
                     <xsl:text> </xsl:text>
                     <!-- 245 anps -->
                     <xsl:value-of select="uwf:process245($record)"/>
@@ -450,7 +470,11 @@
             <xsl:when test="$record/marc:datafield[@tag = '111'] and$record/marc:datafield[@tag = '245']">
                 <xsl:variable name="ap">
                     <!-- 111 name subfields -->
-                    <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '111'][1])"/>
+                    <xsl:variable name="agentAP" select="uwf:stripEndPunctuation(uwf:agentAccessPoint($record/marc:datafield[@tag = '111'][1]))"/>
+                    <xsl:value-of select="$agentAP"/>
+                    <xsl:if test="not(ends-with($agentAP, '.'))">
+                        <xsl:text>.</xsl:text>
+                    </xsl:if>
                     <xsl:text> </xsl:text>
                     <!-- 245 anps -->
                     <xsl:value-of select="uwf:process245($record)"/>
@@ -614,7 +638,7 @@
         <xsl:param name="record"/>
         <xsl:variable name="langCode" select="$record/marc:controlfield[@tag = '008'][1]/substring(text(), 36, 3)"/>
         <xsl:variable name="lang">
-            <xsl:if test="not($record/marc:datafield[@tag = '130'][marc:subfield[@code = 'l']]) and not($record/marc:datafield[@code = '240'][marc:subfield[@code = 'l']])">
+            <xsl:if test="not($record/marc:datafield[@tag = '130'][./marc:subfield[@code = 'l']]) and not($record/marc:datafield[@code = '240'][./marc:subfield[@code = 'l']])">
                 <xsl:if test="not(matches($langCode, ' |\|'))">
                     <xsl:value-of select="uwf:lcLangCodeToLabel($langCode)"/>
                 </xsl:if>
@@ -677,14 +701,19 @@
             </xsl:when>
             <!-- 100 + 240 -->
             <xsl:when test="$record/marc:datafield[@tag = '100'] and $record/marc:datafield[@tag = '240']">
-                <xsl:variable name="agentSubfields">
+                <xsl:variable name="agentAP">
                     <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '100'][1])"/>
                 </xsl:variable>
                 <xsl:variable name="expressionSubfields">
                     <xsl:value-of select="uwf:expressionAPFields($record/marc:datafield[@tag = '240'][1])"/>
                 </xsl:variable>
                 <xsl:variable name="fullAP">
-                    <xsl:value-of select="$agentSubfields||'. '||$expressionSubfields"/>
+                    <xsl:value-of select="$agentAP"/>
+                    <xsl:if test="not(ends-with($agentAP, '.'))">
+                        <xsl:text>.</xsl:text>
+                    </xsl:if>
+                    <xsl:text> </xsl:text>
+                    <xsl:value-of select="$expressionSubfields"/>
                     <xsl:if test="$qualifiers != ''">
                         <xsl:value-of select="$qualifiers"/>
                     </xsl:if>
@@ -693,14 +722,19 @@
             </xsl:when>
             <!-- 110 + 240 -->
             <xsl:when test="$record/marc:datafield[@tag = '110'] and $record/marc:datafield[@tag = '240']">
-                <xsl:variable name="agentSubfields">
+                <xsl:variable name="agentAP">
                     <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '110'][1])"/>
                 </xsl:variable>
                 <xsl:variable name="expressionSubfields">
                     <xsl:value-of select="uwf:expressionAPFields($record/marc:datafield[@tag = '240'][1])"/>
                 </xsl:variable>
                 <xsl:variable name="fullAP">
-                    <xsl:value-of select="$agentSubfields||'. '||$expressionSubfields"/>
+                    <xsl:value-of select="$agentAP"/>
+                    <xsl:if test="not(ends-with($agentAP, '.'))">
+                        <xsl:text>.</xsl:text>
+                    </xsl:if>
+                    <xsl:text> </xsl:text>
+                    <xsl:value-of select="$expressionSubfields"/>
                     <xsl:if test="$qualifiers != ''">
                         <xsl:value-of select="$qualifiers"/>
                     </xsl:if>
@@ -709,14 +743,19 @@
             </xsl:when>
             <!-- 111 + 240 -->
             <xsl:when test="$record/marc:datafield[@tag = '111'] and $record/marc:datafield[@tag = '240']">
-                <xsl:variable name="agentSubfields">
+                <xsl:variable name="agentAP">
                     <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '111'][1])"/>
                 </xsl:variable>
                 <xsl:variable name="expressionSubfields">
                     <xsl:value-of select="uwf:expressionAPFields($record/marc:datafield[@tag = '240'][1])"/>
                 </xsl:variable>
                 <xsl:variable name="fullAP">
-                    <xsl:value-of select="$agentSubfields||'. '||$expressionSubfields"/>
+                    <xsl:value-of select="$agentAP"/>
+                    <xsl:if test="not(ends-with($agentAP, '.'))">
+                        <xsl:text>.</xsl:text>
+                    </xsl:if>
+                    <xsl:text> </xsl:text>
+                    <xsl:value-of select="$expressionSubfields"/>
                     <xsl:if test="$qualifiers != ''">
                         <xsl:value-of select="$qualifiers"/>
                     </xsl:if>
@@ -725,14 +764,19 @@
             </xsl:when>
             <!-- 100 + 245 -->
             <xsl:when test="$record/marc:datafield[@tag = '100'] and $record/marc:datafield[@tag = '245']">
-                <xsl:variable name="agentSubfields">
+                <xsl:variable name="agentAP">
                     <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '100'][1])"/>
                 </xsl:variable>
                 <xsl:variable name="expressionSubfields">
                     <xsl:value-of select="uwf:process245($record)"/>
                 </xsl:variable>
                 <xsl:variable name="fullAP">
-                    <xsl:value-of select="$agentSubfields||'. '||$expressionSubfields"/>
+                    <xsl:value-of select="$agentAP"/>
+                    <xsl:if test="not(ends-with($agentAP, '.'))">
+                        <xsl:text>.</xsl:text>
+                    </xsl:if>
+                    <xsl:text> </xsl:text>
+                    <xsl:value-of select="$expressionSubfields"/>
                     <xsl:if test="$qualifiers != ''">
                         <xsl:value-of select="$qualifiers"/>
                     </xsl:if>
@@ -741,14 +785,19 @@
             </xsl:when>
             <!-- 110 + 245 -->
             <xsl:when test="$record/marc:datafield[@tag = '110'] and $record/marc:datafield[@tag = '245']">
-                <xsl:variable name="agentSubfields">
+                <xsl:variable name="agentAP">
                     <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '110'][1])"/>
                 </xsl:variable>
                 <xsl:variable name="expressionSubfields">
                     <xsl:value-of select="uwf:process245($record)"/>
                 </xsl:variable>
                 <xsl:variable name="fullAP">
-                    <xsl:value-of select="$agentSubfields||'. '||$expressionSubfields"/>
+                    <xsl:value-of select="$agentAP"/>
+                    <xsl:if test="not(ends-with($agentAP, '.'))">
+                        <xsl:text>.</xsl:text>
+                    </xsl:if>
+                    <xsl:text> </xsl:text>
+                    <xsl:value-of select="$expressionSubfields"/>
                     <xsl:if test="$qualifiers != ''">
                         <xsl:value-of select="$qualifiers"/>
                     </xsl:if>
@@ -757,14 +806,19 @@
             </xsl:when>
             <!-- 111 + 245 -->
             <xsl:when test="$record/marc:datafield[@tag = '111'] and$record/marc:datafield[@tag = '245']">
-                <xsl:variable name="agentSubfields">
+                <xsl:variable name="agentAP">
                     <xsl:value-of select="uwf:agentAccessPoint($record/marc:datafield[@tag = '111'][1])"/>
                 </xsl:variable>
                 <xsl:variable name="expressionSubfields">
                     <xsl:value-of select="uwf:process245($record)"/>
                 </xsl:variable>
                 <xsl:variable name="fullAP">
-                    <xsl:value-of select="$agentSubfields||'. '||$expressionSubfields"/>
+                    <xsl:value-of select="$agentAP"/>
+                    <xsl:if test="not(ends-with($agentAP, '.'))">
+                        <xsl:text>.</xsl:text>
+                    </xsl:if>
+                    <xsl:text> </xsl:text>
+                    <xsl:value-of select="$expressionSubfields"/>
                     <xsl:if test="$qualifiers != ''">
                         <xsl:value-of select="$qualifiers"/>
                     </xsl:if>
@@ -777,16 +831,8 @@
                 <xsl:variable name="workSubfields">
                     <xsl:value-of select="uwf:process245($record)"/>
                 </xsl:variable>
-                <!-- name subfields of the first 7XX ind2 != 2 with not $t or $5 in the field  -->
-                <xsl:variable name="name7XX">
-                    <xsl:variable name="first7XX" select="$record/marc:datafield[@tag = '700' or @tag = '710' or @tag = '711'][@ind2 != '2'][1]"/>
-                        <xsl:value-of select="uwf:agentAccessPoint($first7XX)"/>
-                </xsl:variable>
                 <xsl:variable name="fullAP">
                     <xsl:value-of select="$workSubfields"/>
-                    <xsl:if test="$name7XX != ''">
-                        <xsl:value-of select="' '||$name7XX"/>
-                    </xsl:if>
                     <xsl:if test="$qualifiers != ''">
                         <xsl:value-of select="$qualifiers"/>
                     </xsl:if>
