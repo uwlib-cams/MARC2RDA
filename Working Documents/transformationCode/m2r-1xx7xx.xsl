@@ -1163,6 +1163,22 @@
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
+    
+    <!-- 752  Added Entry-Hierarchical Place Name -->      
+    <xsl:template match="marc:datafield[@tag='752'] | marc:datafield[@tag='880'][substring(marc:subfield[@code='6'],1,6)='752-00']" mode="man">
+        <xsl:param name="baseID"/>
+        <xsl:param name="manIRI"/>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag='752'] | marc:datafield[@tag='880'][substring(marc:subfield[@code='6'],1,6)='752-00']" mode="ite">
+        <xsl:param name="baseID"/>
+        <xsl:param name="manIRI"/>
+        <xsl:call-template name="F752-xx-abcdfgh1234">
+            <xsl:with-param name="baseID"  select="$baseID"/>
+            <xsl:with-param name="manIRI"  select="$manIRI"/>
+            <xsl:with-param name="context" select="."/>
+        </xsl:call-template>
+    </xsl:template>
 
     <!-- 754 Added Entry-Taxonomic Identification -->  
     <xsl:template match="marc:datafield[@tag = '754'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '754-00']" 

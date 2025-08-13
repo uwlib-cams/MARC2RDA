@@ -73,6 +73,78 @@
         </xsl:if>     
     </xsl:template>
     
+    <xsl:template name="F752-xx-abcdfgh1234">
+        <xsl:param name="baseID"/>
+        <xsl:param name="manIRI"/>
+        <xsl:param name="context"/>
+        <xsl:variable name="placeString" select="string-join($context/marc:subfield[@code=('a','b','c','d','f','g','h','1','2','4')][normalize-space(.) != ''], ', ')"/>
+        <xsl:variable name="placeIRI" select="uwf:placeIRI($baseID,$context,$placeString,'')"/>
+        <xsl:variable name="subfield4" select="lower-case($context/marc:subfield[@code='4'])"/>
+        <xsl:variable name="subfieldE" select="lower-case($context/marc:subfield[@code='e'])"/>
+        
+        <rdf:Description rdf:about="{$manIRI}">
+            <xsl:choose>
+                
+                <!-- full RDA registry URI in $4 -->
+                <xsl:when test="starts-with($subfield4, 'http://rdaregistry.info/Elements/')">
+                    <xsl:element name="{concat(
+                        substring-before(substring-after($subfield4, 'http://rdaregistry.info/Elements/'), '/'),
+                        ':P',
+                        substring-after($subfield4, '/P')
+                        )}">
+                        <xsl:attribute name="rdf:resource">
+                            <xsl:value-of select="$placeIRI"/>
+                        </xsl:attribute>
+                    </xsl:element>
+                </xsl:when>
+                
+                <!-- MARC relator code or term from $e -->
+                <xsl:when test="$subfield4 = 'dbp' or $subfieldE = 'distribution'">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+                    <rdam:P30085 rdf:resource="{$placeIRI}"/>
+                </xsl:when>
+                <xsl:when test="$subfield4 = 'mfp' or $subfieldE = 'manufacture'">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+                    <rdam:P30087 rdf:resource="{$placeIRI}"/>
+                </xsl:when>
+                <xsl:when test="$subfield4 = 'prp' or $subfieldE = 'production'">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+                    <rdam:P30086 rdf:resource="{$placeIRI}"/>
+                </xsl:when>
+                <xsl:when test="$subfield4 = 'pup' or $subfieldE = 'publication'">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+                    <rdam:P30088 rdf:resource="{$placeIRI}"/>
+                </xsl:when>
+                
+                <!-- Default fallback -->
+                <xsl:otherwise>
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+                    <rdam:P30272 rdf:resource="{$placeIRI}"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </rdf:Description>
+        
+        <!-- Place string (codes: a–d, f–h, 1, 2, 4) -->
+        <xsl:if test="$context/marc:subfield[@code=('a','b','c','d','f','g','h','1','2','4')][normalize-space(.) != '']">
+            <rdf:Description rdf:about="{$placeIRI}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+                <rdaid:P80175>
+                    <xsl:value-of select="$placeString"/>
+                </rdaid:P80175>
+            </rdf:Description>
+        </xsl:if>
+        
+        <!-- Role/type (e) -->
+        <xsl:for-each select="$context/marc:subfield[@code='e'][normalize-space(.) != '']">
+            <rdf:Description rdf:about="{$placeIRI}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+                <rdai:P80176>
+                    <xsl:value-of select="."/>
+                </rdai:P80176>
+            </rdf:Description>
+        </xsl:for-each>
+    </xsl:template>
+    
     <!-- 754 --> 
     <xsl:template name="F754-xx-acdxz" expand-text="yes">
         <xsl:param name="baseID"/>
