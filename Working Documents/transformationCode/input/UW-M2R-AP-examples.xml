@@ -1,0 +1,1410 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+  <marc:record>
+    <marc:leader>00744cam  2200193   4500</marc:leader>
+    <marc:controlfield tag="001">4377709</marc:controlfield>
+    <marc:controlfield tag="008">910305s1992    txua     b    001 0 eng  </marc:controlfield>
+    <marc:datafield tag="100" ind1=" " ind2=" ">
+      <marc:subfield code="a">Landsburg, Steven E.,</marc:subfield>
+      <marc:subfield code="d">1954-</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="245" ind1=" " ind2=" ">
+      <marc:subfield code="a">Price theory and applications /</marc:subfield>
+      <marc:subfield code="c">Steven E. Landsburg.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="250" ind1=" " ind2=" ">
+      <marc:subfield code="a">2nd ed.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="a">Fort Worth :</marc:subfield>
+      <marc:subfield code="b">Dryden Press,</marc:subfield>
+      <marc:subfield code="c">c1992.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">xxxv, 761 p. :</marc:subfield>
+      <marc:subfield code="b">ill. ;</marc:subfield>
+      <marc:subfield code="c">25 cm.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336" ind1=" " ind2=" ">
+      <marc:subfield code="a">text</marc:subfield>
+      <marc:subfield code="b">txt</marc:subfield>
+      <marc:subfield code="2">rdacontent</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="337" ind1=" " ind2=" ">
+      <marc:subfield code="a">unmediated</marc:subfield>
+      <marc:subfield code="b">n</marc:subfield>
+      <marc:subfield code="2">rdamedia</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="338" ind1=" " ind2=" ">
+      <marc:subfield code="a">volume</marc:subfield>
+      <marc:subfield code="b">nc</marc:subfield>
+      <marc:subfield code="2">rdacarrier</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="597" ind1=" " ind2=" ">
+      <marc:subfield code="a">M: 245anp (008Lang|26Xc : 250</marc:subfield>
+      <marc:subfield code="a"> : 338|other : ...)</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="598" ind1=" " ind2=" ">
+      <marc:subfield code="a">W (SEW): [100, 110, 111, 700, 710, 711--not </marc:subfield>
+      <marc:subfield code="t">|</marc:subfield>
+      <marc:subfield code="5">]. 245</marc:subfield>
+      <marc:subfield code="a">np</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="599" ind1=" " ind2=" ">
+      <marc:subfield code="a">E (SEW): [100, 110, 111, 700, 710, 711--not </marc:subfield>
+      <marc:subfield code="t">|</marc:subfield>
+      <marc:subfield code="5">]. 245</marc:subfield>
+      <marc:subfield code="a">np (336|other : 008Lang+046</marc:subfield>
+      <marc:subfield code="a"/>
+      <marc:subfield code="d"> : 245</marc:subfield>
+      <marc:subfield code="s">+250</marc:subfield>
+      <marc:subfield code="a"> : ...) </marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="949" ind1=" " ind2=" ">
+      <marc:subfield code="a">aam</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>00629cam  2200157   4500</marc:leader>
+    <marc:controlfield tag="001">4377709-2</marc:controlfield>
+    <marc:controlfield tag="008">910305s1992    txua     b    001 0 eng  </marc:controlfield>
+    <marc:datafield tag="100" ind1=" " ind2=" ">
+      <marc:subfield code="a">Landsburg, Steven E.,</marc:subfield>
+      <marc:subfield code="d">1954-</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="245" ind1=" " ind2=" ">
+      <marc:subfield code="a">Price theory and applications /</marc:subfield>
+      <marc:subfield code="c">Steven E. Landsburg.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="250" ind1=" " ind2=" ">
+      <marc:subfield code="a">2nd ed.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="a">Fort Worth :</marc:subfield>
+      <marc:subfield code="b">Dryden Press,</marc:subfield>
+      <marc:subfield code="c">c1992.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">xxxv, 761 p. :</marc:subfield>
+      <marc:subfield code="b">ill. ;</marc:subfield>
+      <marc:subfield code="c">25 cm.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="597" ind1=" " ind2=" ">
+      <marc:subfield code="a">M: 245anp (008Lang|26Xc : 250</marc:subfield>
+      <marc:subfield code="a"> : 338|other : ...)</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="598" ind1=" " ind2=" ">
+      <marc:subfield code="a">W (SEW): [100, 110, 111, 700, 710, 711--not </marc:subfield>
+      <marc:subfield code="t">|</marc:subfield>
+      <marc:subfield code="5">]. 245</marc:subfield>
+      <marc:subfield code="a">np</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="599" ind1=" " ind2=" ">
+      <marc:subfield code="a">E (SEW): [100, 110, 111, 700, 710, 711--not </marc:subfield>
+      <marc:subfield code="t">|</marc:subfield>
+      <marc:subfield code="5">]. 245</marc:subfield>
+      <marc:subfield code="a">np (336|other : 008Lang+046</marc:subfield>
+      <marc:subfield code="a"/>
+      <marc:subfield code="d"> : 245</marc:subfield>
+      <marc:subfield code="s">+250</marc:subfield>
+      <marc:subfield code="a"> : ...) </marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="949" ind1=" " ind2=" ">
+      <marc:subfield code="a">aam</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>00783cam  2200205   4500</marc:leader>
+    <marc:controlfield tag="001">14816232</marc:controlfield>
+    <marc:controlfield tag="005">20250607020447.4</marc:controlfield>
+    <marc:controlfield tag="008">070420s2008    ohua     b    001 0 eng  </marc:controlfield>
+    <marc:datafield tag="100" ind1=" " ind2=" ">
+      <marc:subfield code="a">Landsburg, Steven E.,</marc:subfield>
+      <marc:subfield code="d">1954-</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="245" ind1=" " ind2=" ">
+      <marc:subfield code="a">Price theory and applications /</marc:subfield>
+      <marc:subfield code="c">Steven E. Landsburg.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="250" ind1=" " ind2=" ">
+      <marc:subfield code="a">7th ed.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="a">Mason, OH :</marc:subfield>
+      <marc:subfield code="b">Thomson South-Western,</marc:subfield>
+      <marc:subfield code="c">c2008.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">xxiii, 683 p. :</marc:subfield>
+      <marc:subfield code="b">ill. ;</marc:subfield>
+      <marc:subfield code="c">26 cm.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336" ind1=" " ind2=" ">
+      <marc:subfield code="a">text</marc:subfield>
+      <marc:subfield code="b">txt</marc:subfield>
+      <marc:subfield code="2">rdacontent</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="337" ind1=" " ind2=" ">
+      <marc:subfield code="a">unmediated</marc:subfield>
+      <marc:subfield code="b">n</marc:subfield>
+      <marc:subfield code="2">rdamedia</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="338" ind1=" " ind2=" ">
+      <marc:subfield code="a">volume</marc:subfield>
+      <marc:subfield code="b">nc</marc:subfield>
+      <marc:subfield code="2">rdacarrier</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="597" ind1=" " ind2=" ">
+      <marc:subfield code="a">M: 245anp (008Lang|26Xc : 250</marc:subfield>
+      <marc:subfield code="a"> : 338|other : ...)</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="598" ind1=" " ind2=" ">
+      <marc:subfield code="a">W (SEW): [100, 110, 111, 700, 710, 711--not </marc:subfield>
+      <marc:subfield code="t">|</marc:subfield>
+      <marc:subfield code="5">]. 245</marc:subfield>
+      <marc:subfield code="a">np</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="599" ind1=" " ind2=" ">
+      <marc:subfield code="a">E (SEW): [100, 110, 111, 700, 710, 711--not </marc:subfield>
+      <marc:subfield code="t">|</marc:subfield>
+      <marc:subfield code="5">]. 245</marc:subfield>
+      <marc:subfield code="a">np (336|other : 008Lang+046</marc:subfield>
+      <marc:subfield code="a"/>
+      <marc:subfield code="d"> : 245</marc:subfield>
+      <marc:subfield code="s">+250</marc:subfield>
+      <marc:subfield code="a"> : ...) </marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="949" ind1=" " ind2=" ">
+      <marc:subfield code="a">aam</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>01089cam  2200133 a 4500</marc:leader>
+    <marc:controlfield tag="008">820922s1738    enkbf         000 0 eng  </marc:controlfield>
+    <marc:datafield tag="100" ind1="1" ind2=" ">
+      <marc:subfield code="a">Keith, William,</marc:subfield>
+      <marc:subfield code="c">Sir,</marc:subfield>
+      <marc:subfield code="d">1680-1749.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="245" ind1="1" ind2="4">
+      <marc:subfield code="a">The history of the British plantations in America :</marc:subfield>
+      <marc:subfield code="b"
+        >with a chronological account of the most remarkable things, which happen'd to the first adventurers in their several discoveries of the New World.</marc:subfield>
+      <marc:subfield code="n">Part I.</marc:subfield>
+      <marc:subfield code="p"
+        >Containing the history of Virginia, with remarks on the trade and commerce of that colony /</marc:subfield>
+      <marc:subfield code="c">by Sir William Keith, Bart.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="a">London :</marc:subfield>
+      <marc:subfield code="b"
+        >Printed at the expense of the Society for the Encouragement of Learning, by S. Richardson, and sold by A. Millar ..., J. Nourse ..., and J. Gray ..., booksellers to the Society,</marc:subfield>
+      <marc:subfield code="c">MDCCXXXVIII [1738]</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">[8], 187, [1] p., [2] folded leaves of plates :</marc:subfield>
+      <marc:subfield code="b">maps (engravings) ;</marc:subfield>
+      <marc:subfield code="c">25 cm. (4to)</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="597" ind1=" " ind2=" ">
+      <marc:subfield code="a">M: 245anp (008Lang|26Xc : 250</marc:subfield>
+      <marc:subfield code="a"> : 338|other : ...)</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="598" ind1=" " ind2=" ">
+      <marc:subfield code="a">W (SEW): [100, 110, 111, 700, 710, 711--not </marc:subfield>
+      <marc:subfield code="t">|</marc:subfield>
+      <marc:subfield code="5">]. 245</marc:subfield>
+      <marc:subfield code="a">np</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="599" ind1=" " ind2=" ">
+      <marc:subfield code="a">E (SEW): [100, 110, 111, 700, 710, 711--not </marc:subfield>
+      <marc:subfield code="t">|</marc:subfield>
+      <marc:subfield code="5">]. 245</marc:subfield>
+      <marc:subfield code="a">np (336|other : 008Lang+046</marc:subfield>
+      <marc:subfield code="a"/>
+      <marc:subfield code="d"> : 245</marc:subfield>
+      <marc:subfield code="s">+250</marc:subfield>
+      <marc:subfield code="a"> : ...) </marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="949" ind1=" " ind2=" ">
+      <marc:subfield code="a">aam</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>01013cim a22002537i 4500</marc:leader>
+    <marc:controlfield tag="006">m     o  h        </marc:controlfield>
+    <marc:controlfield tag="007">sz zunnnnnuneu</marc:controlfield>
+    <marc:controlfield tag="007">cr nnannnuuuuu</marc:controlfield>
+    <marc:controlfield tag="008">220502s2022    xx nnnn o      z  n eng d</marc:controlfield>
+    <marc:datafield tag="100" ind1="1" ind2=" ">
+      <marc:subfield code="a">Benton, D. A.</marc:subfield>
+      <marc:subfield code="q">(Debra A.),</marc:subfield>
+      <marc:subfield code="e">author.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="245" ind1="1" ind2="0">
+      <marc:subfield code="a">Executive charisma :</marc:subfield>
+      <marc:subfield code="b">six steps to mastering the art of leadership /</marc:subfield>
+      <marc:subfield code="c">D.A. Benton.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="250" ind1=" " ind2=" ">
+      <marc:subfield code="a">[First edition].</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="264" ind1=" " ind2="1">
+      <marc:subfield code="a">[Place of publication not identified] :</marc:subfield>
+      <marc:subfield code="b">McGraw Hill-Ascent Audio,</marc:subfield>
+      <marc:subfield code="c">2022.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">1 online resource (1 sound file (6 hr., 22 min.))</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="306" ind1=" " ind2=" ">
+      <marc:subfield code="a">062200</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336" ind1=" " ind2=" ">
+      <marc:subfield code="a">spoken word</marc:subfield>
+      <marc:subfield code="b">spw</marc:subfield>
+      <marc:subfield code="2">rdacontent</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="337" ind1=" " ind2=" ">
+      <marc:subfield code="a">computer</marc:subfield>
+      <marc:subfield code="b">c</marc:subfield>
+      <marc:subfield code="2">rdamedia</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="338" ind1=" " ind2=" ">
+      <marc:subfield code="a">online resource</marc:subfield>
+      <marc:subfield code="b">cr</marc:subfield>
+      <marc:subfield code="2">rdacarrier</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="344" ind1=" " ind2=" ">
+      <marc:subfield code="a">digital</marc:subfield>
+      <marc:subfield code="2">rdatr</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="347" ind1=" " ind2=" ">
+      <marc:subfield code="a">audio file</marc:subfield>
+      <marc:subfield code="2">rdaft</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="597" ind1=" " ind2=" ">
+      <marc:subfield code="a">M: 245anp (008Lang|26Xc : 250</marc:subfield>
+      <marc:subfield code="a"> : 338|other : ...)</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="598" ind1=" " ind2=" ">
+      <marc:subfield code="a">W (SEW): [100, 110, 111, 700, 710, 711--not </marc:subfield>
+      <marc:subfield code="t">|</marc:subfield>
+      <marc:subfield code="5">]. 245</marc:subfield>
+      <marc:subfield code="a">np</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="599" ind1=" " ind2=" ">
+      <marc:subfield code="a">E (SEW): [100, 110, 111, 700, 710, 711--not </marc:subfield>
+      <marc:subfield code="t">|</marc:subfield>
+      <marc:subfield code="5">]. 245</marc:subfield>
+      <marc:subfield code="a">np (336|other : 008Lang+046</marc:subfield>
+      <marc:subfield code="a"/>
+      <marc:subfield code="d"> : 245</marc:subfield>
+      <marc:subfield code="s">+250</marc:subfield>
+      <marc:subfield code="a"> : ...) </marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>00716cam a2200169 a 4500</marc:leader>
+    <marc:controlfield tag="006">m     o  d f      </marc:controlfield>
+    <marc:controlfield tag="007">cr mn|||||||||</marc:controlfield>
+    <marc:controlfield tag="008">041220s2001    ncuab   obs  f000 0 eng c</marc:controlfield>
+    <marc:datafield tag="245" ind1="0" ind2="0">
+      <marc:subfield code="a">United States timber industry</marc:subfield>
+      <marc:subfield code="h">[electronic resource] :</marc:subfield>
+      <marc:subfield code="b">an assessment of timber product output and use, 1996 /</marc:subfield>
+      <marc:subfield code="c">Tony G. Johnson, editor.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="246" ind1=" " ind2=" ">
+      <marc:subfield code="a">United States timber industry</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="264" ind1=" " ind2="1">
+      <marc:subfield code="a">Asheville, NC :</marc:subfield>
+      <marc:subfield code="b">Southern Research Station,</marc:subfield>
+      <marc:subfield code="c">[2001]</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">1 online resource (v, 145 pages) :</marc:subfield>
+      <marc:subfield code="b">illustrations, color maps.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336" ind1=" " ind2=" ">
+      <marc:subfield code="a">text</marc:subfield>
+      <marc:subfield code="b">txt</marc:subfield>
+      <marc:subfield code="2">rdacontent</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="337" ind1=" " ind2=" ">
+      <marc:subfield code="a">computer</marc:subfield>
+      <marc:subfield code="b">c</marc:subfield>
+      <marc:subfield code="2">rdamedia</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="338" ind1=" " ind2=" ">
+      <marc:subfield code="a">online resource</marc:subfield>
+      <marc:subfield code="b">cr</marc:subfield>
+      <marc:subfield code="2">rdacarrier</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Johnson, Tony G.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="710" ind1="1" ind2=" ">
+      <marc:subfield code="a">United States.</marc:subfield>
+      <marc:subfield code="b">Forest Service.</marc:subfield>
+      <marc:subfield code="b">Southern Research Station.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="949" ind1=" " ind2=" ">
+      <marc:subfield code="a">aam</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>00409cam  2200073   4500</marc:leader>
+    <marc:controlfield tag="008">220104uuuuuuuuuuuuuu-|-o----u|----|eng-d</marc:controlfield>
+    <marc:datafield tag="245" ind1="0" ind2="0">
+      <marc:subfield code="a"
+        >Written comments on technical corrections to recent trade legislation /</marc:subfield>
+      <marc:subfield code="c"
+        >Subcommittee on Trade of the Committee on Ways and Means, U.S. House of Representatives.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="b">U.S. Government Printing Office</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="710" ind1="1" ind2=" ">
+      <marc:subfield code="a">United States.</marc:subfield>
+      <marc:subfield code="b">Congress.</marc:subfield>
+      <marc:subfield code="b">House.</marc:subfield>
+      <marc:subfield code="b">Committee on Ways and Means.</marc:subfield>
+      <marc:subfield code="b">Subcommittee on Trade.</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>00271nam  22000731  4500</marc:leader>
+    <marc:controlfield tag="008">810213n        stk           000 0beng  </marc:controlfield>
+    <marc:datafield tag="245" ind1="0" ind2="0">
+      <marc:subfield code="a"
+        >Affecting narrative and surprising adventures of Mary Stuart, queen of Scotland.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="a">Edinburgh :</marc:subfield>
+      <marc:subfield code="b">Oliver &amp; Boyd,</marc:subfield>
+      <marc:subfield code="c">[n. d.]</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">36 p. :</marc:subfield>
+      <marc:subfield code="b">front  ;</marc:subfield>
+      <marc:subfield code="c">18 cm.</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>00212nam  22000733u 4500</marc:leader>
+    <marc:controlfield tag="008">811119q        pau           000 0 eng  </marc:controlfield>
+    <marc:datafield tag="245" ind1="0" ind2="0">
+      <marc:subfield code="a">Child's first book.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="a">[Philadelphia,</marc:subfield>
+      <marc:subfield code="b">Anderson &amp; Meehan, printers,</marc:subfield>
+      <marc:subfield code="c">18-].</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">8 p.</marc:subfield>
+      <marc:subfield code="c">20 cm.</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>00342cam  2200097u  4500</marc:leader>
+    <marc:controlfield tag="008">821210d    1963dcu          f000 0 eng  </marc:controlfield>
+    <marc:datafield tag="245" ind1="0" ind2="0">
+      <marc:subfield code="a">List of lights and other marine aids.</marc:subfield>
+      <marc:subfield code="n">Vol. V,</marc:subfield>
+      <marc:subfield code="p">Mississippi River system of the United States.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="a">Washington :</marc:subfield>
+      <marc:subfield code="b">U. S. G.P.O.,</marc:subfield>
+      <marc:subfield code="c">-1963.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">v. ;</marc:subfield>
+      <marc:subfield code="c">17-26 cm.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="362" ind1="0" ind2=" ">
+      <marc:subfield code="a">-1963.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="710" ind1="1" ind2=" ">
+      <marc:subfield code="a">United States.</marc:subfield>
+      <marc:subfield code="b">Coast Guard.</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>00373nam  22000973u 4500</marc:leader>
+    <marc:controlfield tag="008">821204q        pau           000 0 eng  </marc:controlfield>
+    <marc:datafield tag="245" ind1="0" ind2="0">
+      <marc:subfield code="a">Mounseer Nongtongpaw:</marc:subfield>
+      <marc:subfield code="b">a new version ...</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="250" ind1=" " ind2=" ">
+      <marc:subfield code="a">Second American ed.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="a">Philadelphia,</marc:subfield>
+      <marc:subfield code="b">Morgan &amp; Yeager</marc:subfield>
+      <marc:subfield code="c">[18--].</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">16 p.</marc:subfield>
+      <marc:subfield code="b">12 col. pl.</marc:subfield>
+      <marc:subfield code="c">13 cm.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a"
+        >Cover-title: Mounseer Nongtonpaw; or The discoveries of John Bull in a trip to Paris.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="949" ind1=" " ind2=" ">
+      <marc:subfield code="a">aam</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>00381cam  22000853u 4500</marc:leader>
+    <marc:controlfield tag="008">191003m    1941enka          000 0 eng  </marc:controlfield>
+    <marc:datafield tag="245" ind1="0" ind2="2">
+      <marc:subfield code="a">A battledore, to instruct and amuse.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="a">York [Eng.]</marc:subfield>
+      <marc:subfield code="b">Printed and sold by C. Croshaw</marc:subfield>
+      <marc:subfield code="c">[n. d.]</marc:subfield>
+      <marc:subfield code="a">[Boston,</marc:subfield>
+      <marc:subfield code="b">The Horn book, inc.,</marc:subfield>
+      <marc:subfield code="c">1941].</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">folder ([4] p.)</marc:subfield>
+      <marc:subfield code="b">illus.</marc:subfield>
+      <marc:subfield code="c">13 cm.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a"
+        >"A facsimile of an original battledore owned by the Boston public library,"</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="949" ind1=" " ind2=" ">
+      <marc:subfield code="a">aam</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>00366cam  22000853u 4500</marc:leader>
+    <marc:controlfield tag="008">191003m    1941enka          000 0 eng  </marc:controlfield>
+    <marc:datafield tag="245" ind1="0" ind2="4">
+      <marc:subfield code="a"
+        >The royal battledore, or, First lessons for children ...</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="a">[York? Eng.,</marc:subfield>
+      <marc:subfield code="c">n. d.]</marc:subfield>
+      <marc:subfield code="a">Boston,</marc:subfield>
+      <marc:subfield code="b">The Horn book, inc.</marc:subfield>
+      <marc:subfield code="c">1941.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">folder ([4] p.)</marc:subfield>
+      <marc:subfield code="b">illus.</marc:subfield>
+      <marc:subfield code="c">13 cm.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a"
+        >"A facsimile of an original battledore owned by the Boston public library."</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="949" ind1=" " ind2=" ">
+      <marc:subfield code="a">aam</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>00405nam  22000857a 4500</marc:leader>
+    <marc:controlfield tag="008">011003b        nr a         f000 0 eng  </marc:controlfield>
+    <marc:datafield tag="245" ind1="0" ind2="0">
+      <marc:subfield code="a"
+        >Government white paper on the report of the presidential panel on the review, harmonization, and rationalization of federal paprastatals institutions and agenies /</marc:subfield>
+      <marc:subfield code="c">Federal Republic of Nigeria.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="a">Lagos :</marc:subfield>
+      <marc:subfield code="b">The Republic,</marc:subfield>
+      <marc:subfield code="c">[2000]</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">ix, 68 p. ;</marc:subfield>
+      <marc:subfield code="c">26 cm.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a">"November 2000."</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>00398cam  2200109 a 4500</marc:leader>
+    <marc:controlfield tag="008">000107r2000    mnua   b      000 0 eng  </marc:controlfield>
+    <marc:datafield tag="100" ind1="1" ind2=" ">
+      <marc:subfield code="a">McCaughrean, Geraldine.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="245" ind1="1" ind2="0">
+      <marc:subfield code="a">Beauty and the beast /</marc:subfield>
+      <marc:subfield code="c">Geraldine McCaughrean ;  illustrated by Gary Blythe.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="250" ind1=" " ind2=" ">
+      <marc:subfield code="a">1st American ed.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="a">Minneapolis :</marc:subfield>
+      <marc:subfield code="b">Carolrhoda Books,</marc:subfield>
+      <marc:subfield code="c">2000.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">1 v. (unpaged) :</marc:subfield>
+      <marc:subfield code="b">ill. (some col.) p</marc:subfield>
+      <marc:subfield code="c">29 cm.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Blythe, Gary,</marc:subfield>
+      <marc:subfield code="e">ill.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="949" ind1=" " ind2=" ">
+      <marc:subfield code="a">aam</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>00616cam  2200145 a 4500</marc:leader>
+    <marc:controlfield tag="008">000228n1996    it a     b    100 0 eng  </marc:controlfield>
+    <marc:datafield tag="111" ind1="2" ind2=" ">
+      <marc:subfield code="a">European Meeting on Chemical Industry and Environment</marc:subfield>
+      <marc:subfield code="d">(1996 :</marc:subfield>
+      <marc:subfield code="c">Alghero, Italy)</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="245" ind1="1" ind2="0">
+      <marc:subfield code="a">Chemical industry and environment II /</marc:subfield>
+      <marc:subfield code="c">edited by N. Piccinini, R. Delorenzo.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="246" ind1="3" ind2=" ">
+      <marc:subfield code="a">Chemical industry and environment two</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="246" ind1="3" ind2=" ">
+      <marc:subfield code="a">Chemical industry and environment 2</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="a">Torino :</marc:subfield>
+      <marc:subfield code="b">Politecnico di Torino,</marc:subfield>
+      <marc:subfield code="c">[c1996]</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">3 v. (1204 p.) :</marc:subfield>
+      <marc:subfield code="b">ill. ;</marc:subfield>
+      <marc:subfield code="c">25 cm.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="504" ind1=" " ind2=" ">
+      <marc:subfield code="a">Includes bibliographical references.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Delorenzo, R.</marc:subfield>
+      <marc:subfield code="q">(Rocco)</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Piccinini, N.</marc:subfield>
+      <marc:subfield code="q">(Norberto)</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="949" ind1=" " ind2=" ">
+      <marc:subfield code="a">aam</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>00441cam  2200109 a 4500</marc:leader>
+    <marc:controlfield tag="008">000317n        sz a     b    001 0 eng  </marc:controlfield>
+    <marc:datafield tag="041" ind1="1" ind2=" ">
+      <marc:subfield code="a">eng</marc:subfield>
+      <marc:subfield code="h">ger</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="100" ind1="1" ind2=" ">
+      <marc:subfield code="a">Allenspach, Christoph.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="240" ind1="1" ind2="0">
+      <marc:subfield code="a">Architektur in der Schweiz.</marc:subfield>
+      <marc:subfield code="l">English</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="245" ind1="1" ind2="0">
+      <marc:subfield code="a">Architecture in Switzerland :</marc:subfield>
+      <marc:subfield code="b">building in the 19th and 20th centuries /</marc:subfield>
+      <marc:subfield code="c"
+        >Christoph Allenspach ; [English translation, Zofia Rozankowska].</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="a">Zürich :</marc:subfield>
+      <marc:subfield code="b">Pro Helvetia,</marc:subfield>
+      <marc:subfield code="c">c1999.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">171 p. :</marc:subfield>
+      <marc:subfield code="b">ill. ;</marc:subfield>
+      <marc:subfield code="c">21 cm.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="949" ind1=" " ind2=" ">
+      <marc:subfield code="a">aam</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>00872cam  22001571  4500</marc:leader>
+    <marc:controlfield tag="008">811106n        enk           000 0 eng  </marc:controlfield>
+    <marc:datafield tag="100" ind1="1" ind2=" ">
+      <marc:subfield code="a">Kelly, Michael,</marc:subfield>
+      <marc:subfield code="d">1762-1826.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="240" ind1="1" ind2="0">
+      <marc:subfield code="a">Youth, love, and folly.</marc:subfield>
+      <marc:subfield code="s">Libretto.</marc:subfield>
+      <marc:subfield code="l">English</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="245" ind1="1" ind2="0">
+      <marc:subfield code="a">Youth, love, and folly,</marc:subfield>
+      <marc:subfield code="b">or, The little jockey : a comic opera, in two acts,</marc:subfield>
+      <marc:subfield code="c"
+        >by William Dimond ... The music by Michael Kelly. Printed form the acting copy, with remarks, biographical and critical, by D.--G. ... As performed at the Theatres Royal ...</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="a">London,</marc:subfield>
+      <marc:subfield code="b">G.H. Davidson</marc:subfield>
+      <marc:subfield code="c">[n.d.]</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">41 p. incl. front.</marc:subfield>
+      <marc:subfield code="c">15 cm.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="490" ind1="0" ind2=" ">
+      <marc:subfield code="a">Cumberland's British theatre. London, ca. 1825-55.</marc:subfield>
+      <marc:subfield code="v">v. 39 [no. 3]</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a">Remarks by George Daniel, editor of the series.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a">Music by Kelly. Cf. Grove, 5th ed.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a">Reissue of Cumberland's earlier edition.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Dimond, William,</marc:subfield>
+      <marc:subfield code="d">active 1800-1830.</marc:subfield>
+      <marc:subfield code="t">Youth, love, and folly.</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>00815cam  22001571  4500</marc:leader>
+    <marc:controlfield tag="008">811207n        enk           000 0 eng  </marc:controlfield>
+    <marc:datafield tag="100" ind1="1" ind2=" ">
+      <marc:subfield code="a">[Kelly, Michael]</marc:subfield>
+      <marc:subfield code="d">1762-1826.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="240" ind1="1" ind2="0">
+      <marc:subfield code="a">Lady and the devil.</marc:subfield>
+      <marc:subfield code="s">Libretto.</marc:subfield>
+      <marc:subfield code="l">English</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="245" ind1="1" ind2="4">
+      <marc:subfield code="a">The lady and the devil:</marc:subfield>
+      <marc:subfield code="b">a musical drama, in two acts,</marc:subfield>
+      <marc:subfield code="c"
+        >by William Dimond ... Printed from the acting copy, with remarks, biographical and critical, by D.--G. ... As performed at the Theatres Royal ...</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="a">London,</marc:subfield>
+      <marc:subfield code="b">G.H. Davidson</marc:subfield>
+      <marc:subfield code="c">[n.d.]</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">36 p. incl. front.</marc:subfield>
+      <marc:subfield code="c">15 cm.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="490" ind1="0" ind2=" ">
+      <marc:subfield code="a">Cumberland's British theatre. London, ca. 1825-55.</marc:subfield>
+      <marc:subfield code="v">v. 46 [no. 2]</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a">Remarks by George Daniel, editor of the series.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a">Reissue of Cumberland's earlier edition.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a">Music by Kelly. Cf. Grove, 5th ed.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Dimond, William,</marc:subfield>
+      <marc:subfield code="d">active 1800-1830.</marc:subfield>
+      <marc:subfield code="t">Lady and the devil.</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>00322nam  22000851  4500</marc:leader>
+    <marc:controlfield tag="008">851114q18501859paua          000 0 eng  </marc:controlfield>
+    <marc:datafield tag="100" ind1="1" ind2=" ">
+      <marc:subfield code="a">Murray, Charles Augustus,</marc:subfield>
+      <marc:subfield code="c">Sir,</marc:subfield>
+      <marc:subfield code="d">1806-1895.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="245" ind1="0" ind2="4">
+      <marc:subfield code="a">The red Indians of Newfoundland.</marc:subfield>
+      <marc:subfield code="c">By Charles Augustus Murray ...</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="a">Philadelphia,</marc:subfield>
+      <marc:subfield code="b">T.B. Peterson</marc:subfield>
+      <marc:subfield code="c">[185-?]</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">1 p. l., 176 p.</marc:subfield>
+      <marc:subfield code="b">illus.</marc:subfield>
+      <marc:subfield code="c">24 cm.</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:datafield tag="949" ind1=" " ind2=" ">
+    <marc:subfield code="a">aam</marc:subfield>
+  </marc:datafield>
+  <marc:record>
+    <marc:leader>00415nam  2200121 i 4500</marc:leader>
+    <marc:controlfield tag="008">820513e186111uunyu      b    000 0 eng  </marc:controlfield>
+    <marc:datafield tag="100" ind1="1" ind2=" ">
+      <marc:subfield code="a">Lenox, James,</marc:subfield>
+      <marc:subfield code="d">1800-1880,</marc:subfield>
+      <marc:subfield code="e">author.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="245" ind1="1" ind2="4">
+      <marc:subfield code="a">The early editions of King James' Bible in folio.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="264" ind1=" " ind2="1">
+      <marc:subfield code="a">New York :</marc:subfield>
+      <marc:subfield code="b">[Publisher not identified],</marc:subfield>
+      <marc:subfield code="c">Nov. 1861.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">12 pages ;</marc:subfield>
+      <marc:subfield code="c">24 cm</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336" ind1=" " ind2=" ">
+      <marc:subfield code="a">text</marc:subfield>
+      <marc:subfield code="b">txt</marc:subfield>
+      <marc:subfield code="2">rdacontent</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="337" ind1=" " ind2=" ">
+      <marc:subfield code="a">unmediated</marc:subfield>
+      <marc:subfield code="b">n</marc:subfield>
+      <marc:subfield code="2">rdamedia</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="338" ind1=" " ind2=" ">
+      <marc:subfield code="a">volume</marc:subfield>
+      <marc:subfield code="b">nc</marc:subfield>
+      <marc:subfield code="2">rdacarrier</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>00373cam  22001217a 4500</marc:leader>
+    <marc:controlfield tag="008">060710p20052003nyua          001 0 eng d</marc:controlfield>
+    <marc:datafield tag="100" ind1="1" ind2=" ">
+      <marc:subfield code="a">Smith, Delia.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="245" ind1="1" ind2="0">
+      <marc:subfield code="a">Chicken /</marc:subfield>
+      <marc:subfield code="c">Delia Smith.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="246" ind1="1" ind2="3">
+      <marc:subfield code="a">SmartCook collection :</marc:subfield>
+      <marc:subfield code="b">chicken</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="a">New York :</marc:subfield>
+      <marc:subfield code="b">Dorling Kindersley,</marc:subfield>
+      <marc:subfield code="c">2003, 2005.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">135 p. :</marc:subfield>
+      <marc:subfield code="b">col. ill. ;</marc:subfield>
+      <marc:subfield code="c">28 cm.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="440" ind1=" " ind2="0">
+      <marc:subfield code="a">SmartCook collection</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a">Includes index.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="949" ind1=" " ind2=" ">
+      <marc:subfield code="a">aam</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>00824cam  22001457a 4500</marc:leader>
+    <marc:controlfield tag="007">hduafb---bacp</marc:controlfield>
+    <marc:controlfield tag="007">hdubfb---baap</marc:controlfield>
+    <marc:controlfield tag="008">970904p19511948enkb    a     001 0 eng  </marc:controlfield>
+    <marc:datafield tag="100" ind1="1" ind2=" ">
+      <marc:subfield code="a">Furber, Holden,</marc:subfield>
+      <marc:subfield code="d">1903-1993.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="245" ind1="1" ind2="0">
+      <marc:subfield code="a">John Company at work</marc:subfield>
+      <marc:subfield code="h">[microform] :</marc:subfield>
+      <marc:subfield code="b"
+        >a study of European expansion in India in the late eighteenth century /</marc:subfield>
+      <marc:subfield code="c">by Holden Furber.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="a">Cambridge :</marc:subfield>
+      <marc:subfield code="b">Harvard University Press,</marc:subfield>
+      <marc:subfield code="c">1951, c1948.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">xiv, 407 p. :</marc:subfield>
+      <marc:subfield code="b">folded map ;</marc:subfield>
+      <marc:subfield code="c">22 cm.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a">Includes index.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="533" ind1=" " ind2=" ">
+      <marc:subfield code="a">Microfilm.</marc:subfield>
+      <marc:subfield code="b">New Delhi :</marc:subfield>
+      <marc:subfield code="c">Library of Congress Office ;</marc:subfield>
+      <marc:subfield code="b">Chicago :</marc:subfield>
+      <marc:subfield code="c">Available from Center for Research Libraries,</marc:subfield>
+      <marc:subfield code="d">1996.</marc:subfield>
+      <marc:subfield code="e">On 1 microfilm reel with other items ; 35 mm.</marc:subfield>
+      <marc:subfield code="f"
+        >(SAMP early 20th-century Indian books project ; item 10229)</marc:subfield>
+      <marc:subfield code="n">Master microform held by: ICRL.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="830" ind1=" " ind2="0">
+      <marc:subfield code="a">SAMP early 20th-century Indian books project ;</marc:subfield>
+      <marc:subfield code="v">item 10229.</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>01464cjm  22003251a 4500</marc:leader>
+    <marc:controlfield tag="007">sd|fsngnnmmned</marc:controlfield>
+    <marc:controlfield tag="008">000329p19981961it opn   di             d</marc:controlfield>
+    <marc:datafield tag="041" ind1="0" ind2=" ">
+      <marc:subfield code="d">ita</marc:subfield>
+      <marc:subfield code="e">ita</marc:subfield>
+      <marc:subfield code="g">eng</marc:subfield>
+      <marc:subfield code="g">fre</marc:subfield>
+      <marc:subfield code="g">ita</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="100" ind1="1" ind2=" ">
+      <marc:subfield code="a">Donizetti, Gaetano,</marc:subfield>
+      <marc:subfield code="d">1797-1848.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="245" ind1="1" ind2="3">
+      <marc:subfield code="a">Il gioved i grasso</marc:subfield>
+      <marc:subfield code="h">[sound recording] /</marc:subfield>
+      <marc:subfield code="c">Gaetano Donizetti.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="a">Torino :</marc:subfield>
+      <marc:subfield code="b">Nuova Era,</marc:subfield>
+      <marc:subfield code="c">p1998.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">1 sound disc (61 min.) :</marc:subfield>
+      <marc:subfield code="b">digital ;</marc:subfield>
+      <marc:subfield code="c">4 3/4 in.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="306" ind1=" " ind2=" ">
+      <marc:subfield code="a">006002</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="440" ind1=" " ind2="0">
+      <marc:subfield code="a">Arte vocale italiana</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a">Opera in one act.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="546" ind1=" " ind2=" ">
+      <marc:subfield code="a">Sung in Italian.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a">Libretto by Domenico Gilardoni(?).</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="511" ind1="0" ind2=" ">
+      <marc:subfield code="a"
+        >Bruna Rizzoli, soprano ; Maria Minetto, mezzo-soprano ; Rodolfo Malacarne, Juan Oncina, tenors ; Nestore Catalani, baritone ; James Loomis, bass ; supporting soloists ; Orchestra della Radiotelevisione della Svizzera italiana ; Edwin Loehrer, conductor.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="518" ind1=" " ind2=" ">
+      <marc:subfield code="a"
+        >Recorded Feb. 1961, Audiotorio RSI, Lugano, Switzerland.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a">Compact disc.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a"
+        >Program notes by Davide Annachini in English, French, and Italian, and libretto in Italian (32 p. : ill.) in container.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Gilardoni, Domenico.</marc:subfield>
+      <marc:subfield code="4">lbt</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Rizzoli, Bruna.</marc:subfield>
+      <marc:subfield code="4">voc</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Minetto, Maria.</marc:subfield>
+      <marc:subfield code="4">voc</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Malacarne, Rodolfo.</marc:subfield>
+      <marc:subfield code="4">voc</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Oncina, Juan,</marc:subfield>
+      <marc:subfield code="d">1925-2009.</marc:subfield>
+      <marc:subfield code="4">voc</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Catalani, Nestore.</marc:subfield>
+      <marc:subfield code="4">voc</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Loomis, James,</marc:subfield>
+      <marc:subfield code="d">1925-</marc:subfield>
+      <marc:subfield code="4">voc</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Loehrer, Edwin.</marc:subfield>
+      <marc:subfield code="4">cnd</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="710" ind1="2" ind2=" ">
+      <marc:subfield code="a">Radiotelevisione della Svizzera italiana.</marc:subfield>
+      <marc:subfield code="b">Orchestra.</marc:subfield>
+      <marc:subfield code="4">prf</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>01089cam a2200217Ma 4500</marc:leader>
+    <marc:controlfield tag="006">m     o  d i      </marc:controlfield>
+    <marc:controlfield tag="007">cr cn|nnn|||||</marc:controlfield>
+    <marc:controlfield tag="008">830812s1980    dcu     ob   i000 0 eng d</marc:controlfield>
+    <marc:datafield tag="100" ind1="1" ind2=" ">
+      <marc:subfield code="a">Wheeler, David,</marc:subfield>
+      <marc:subfield code="d">1946-</marc:subfield>
+      <marc:subfield code="1"
+        >https://id.oclc.org/worldcat/entity/E39PCjDgx8JgWHhwXty9QYgcWC</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="245" ind1="1" ind2="0">
+      <marc:subfield code="a"
+        >Human resource development and economic growth in developing countries :</marc:subfield>
+      <marc:subfield code="b">a simultaneous model /</marc:subfield>
+      <marc:subfield code="c">prepared by David Wheeler.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="a">Washington, D.C.,</marc:subfield>
+      <marc:subfield code="c">1980.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="260" ind1=" " ind2=" ">
+      <marc:subfield code="a"
+        >Washington, D.C. (1818 H St., N.W., Washington 20433) :</marc:subfield>
+      <marc:subfield code="b">World Bank,</marc:subfield>
+      <marc:subfield code="c">©1980.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">1 online resource.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336" ind1=" " ind2=" ">
+      <marc:subfield code="a">text</marc:subfield>
+      <marc:subfield code="b">txt</marc:subfield>
+      <marc:subfield code="2">rdacontent</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="337" ind1=" " ind2=" ">
+      <marc:subfield code="a">computer</marc:subfield>
+      <marc:subfield code="b">c</marc:subfield>
+      <marc:subfield code="2">rdamedia</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="338" ind1=" " ind2=" ">
+      <marc:subfield code="a">online resource</marc:subfield>
+      <marc:subfield code="b">cr</marc:subfield>
+      <marc:subfield code="2">rdacarrier</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="490" ind1="1" ind2=" ">
+      <marc:subfield code="a">World Bank staff working paper ;</marc:subfield>
+      <marc:subfield code="v">no. 407</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a"
+        >Title screen viewed on July 11, 2014; available on the Internet in PDF and TXT formats.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a">"July 1980."</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="504" ind1=" " ind2=" ">
+      <marc:subfield code="a">Includes bibliographical references.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="856" ind1="4" ind2="0">
+      <marc:subfield code="u"
+        >http://documents.worldbank.org/curated/en/1980/07/1555032/human-resource-development-economic-growth-developing-countries-simultaneous-model</marc:subfield>
+      <marc:subfield code="z">Online text</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>01207cgm a2200373 i 4500</marc:leader>
+    <marc:controlfield tag="007">vd cvaizu</marc:controlfield>
+    <marc:controlfield tag="008">220504s1968    wau011            vleng d</marc:controlfield>
+    <marc:datafield tag="041" ind1="0" ind2=" ">
+      <marc:subfield code="h">eng</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="046" ind1=" " ind2=" ">
+      <marc:subfield code="k">1968-03-18</marc:subfield>
+      <marc:subfield code="2">edtf</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="245" ind1="0" ind2="0">
+      <marc:subfield code="a">Robert Garfias recordings: Son House/guitar.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="264" ind1=" " ind2="0">
+      <marc:subfield code="c">1968-03-18</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="264" ind1=" " ind2="0">
+      <marc:subfield code="a">[Seattle, Wash.] :</marc:subfield>
+      <marc:subfield code="b">University of Washington,</marc:subfield>
+      <marc:subfield code="c">[1968]</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">1 videodisc (approximately 11 min.) :</marc:subfield>
+      <marc:subfield code="b">sound, color ;</marc:subfield>
+      <marc:subfield code="c">4 3/4 in.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336" ind1=" " ind2=" ">
+      <marc:subfield code="a">two-dimensional moving image</marc:subfield>
+      <marc:subfield code="b">tdi</marc:subfield>
+      <marc:subfield code="2">rdacontent</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="337" ind1=" " ind2=" ">
+      <marc:subfield code="a">video</marc:subfield>
+      <marc:subfield code="b">v</marc:subfield>
+      <marc:subfield code="2">rdamedia</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="338" ind1=" " ind2=" ">
+      <marc:subfield code="a">videodisc</marc:subfield>
+      <marc:subfield code="b">vd</marc:subfield>
+      <marc:subfield code="2">rdacarrier</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="340" ind1=" " ind2=" ">
+      <marc:subfield code="b">4 3/4 in.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="340" ind1=" " ind2=" ">
+      <marc:subfield code="d">burning</marc:subfield>
+      <marc:subfield code="2">rdapm</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="340" ind1=" " ind2=" ">
+      <marc:subfield code="g">polychrome</marc:subfield>
+      <marc:subfield code="2">rdacc</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="340" ind1=" " ind2=" ">
+      <marc:subfield code="g">color</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="341" ind1=" " ind2=" ">
+      <marc:subfield code="a">auditory</marc:subfield>
+      <marc:subfield code="b">captions</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="344" ind1=" " ind2=" ">
+      <marc:subfield code="a">digital</marc:subfield>
+      <marc:subfield code="2">rdatr</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="344" ind1=" " ind2=" ">
+      <marc:subfield code="b">optical</marc:subfield>
+      <marc:subfield code="2">rdarm</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="344" ind1=" " ind2=" ">
+      <marc:subfield code="i">sound</marc:subfield>
+      <marc:subfield code="2">rdasco</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="344" ind1=" " ind2=" ">
+      <marc:subfield code="g">stereo</marc:subfield>
+      <marc:subfield code="2">rdacpc</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="345" ind1=" " ind2=" ">
+      <marc:subfield code="d">wide screen</marc:subfield>
+      <marc:subfield code="2">rdaar</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="346" ind1=" " ind2=" ">
+      <marc:subfield code="b">NTSC</marc:subfield>
+      <marc:subfield code="2">rdabs</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="347" ind1=" " ind2=" ">
+      <marc:subfield code="b">DVD video</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="511" ind1="0" ind2=" ">
+      <marc:subfield code="a">Son House, guitar.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="538" ind1=" " ind2=" ">
+      <marc:subfield code="a">DVD-R, NTSC.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="500" ind1=" " ind2=" ">
+      <marc:subfield code="a">DVD-R viewing copy of 16mm film.</marc:subfield>
+      <marc:subfield code="5">WaU</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="546" ind1=" " ind2=" ">
+      <marc:subfield code="a">In English.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">House, Son,</marc:subfield>
+      <marc:subfield code="e">perfromer.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="856" ind1="4" ind2="2">
+      <marc:subfield code="u"
+        >https://archiveswest.orbiscascade.org/ark:/80444/xv43395</marc:subfield>
+      <marc:subfield code="z">Connect to the finding aid for the archival collection</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>00900cam a2200169 i 4500</marc:leader>
+    <marc:controlfield tag="008">210811s2022    nyuab    b    001 0 eng d</marc:controlfield>
+    <marc:datafield tag="100" ind1="1" ind2=" ">
+      <marc:subfield code="a">Hiss, Tony,</marc:subfield>
+      <marc:subfield code="e">author.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="245" ind1="1" ind2="0">
+      <marc:subfield code="a">Rescuing the planet :</marc:subfield>
+      <marc:subfield code="b">protecting half the land to heal the earth /</marc:subfield>
+      <marc:subfield code="c">Tony Hiss ; introduction by E.O. Wilson.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="250" ind1=" " ind2=" ">
+      <marc:subfield code="a">First Vintage Books edition.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="264" ind1=" " ind2="1">
+      <marc:subfield code="a">New York :</marc:subfield>
+      <marc:subfield code="b">Vintage Books,</marc:subfield>
+      <marc:subfield code="c">2022.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">xii, 315 pages :</marc:subfield>
+      <marc:subfield code="b">illustrations, maps ;</marc:subfield>
+      <marc:subfield code="c">21 cm</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336" ind1=" " ind2=" ">
+      <marc:subfield code="a">text</marc:subfield>
+      <marc:subfield code="b">txt</marc:subfield>
+      <marc:subfield code="2">rdacontent</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="337" ind1=" " ind2=" ">
+      <marc:subfield code="a">unmediated</marc:subfield>
+      <marc:subfield code="b">n</marc:subfield>
+      <marc:subfield code="2">rdamedia</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="338" ind1=" " ind2=" ">
+      <marc:subfield code="a">volume</marc:subfield>
+      <marc:subfield code="b">nc</marc:subfield>
+      <marc:subfield code="2">rdacarrier</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="504" ind1=" " ind2=" ">
+      <marc:subfield code="a">Includes bibliographical references.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="505" ind1="0" ind2=" ">
+      <marc:subfield code="a"
+        >Getting to half -- Solitudes -- All of life inside and nowhere else -- The science of 50 percent -- The animal as storyteller -- A planetary feeling -- A planetary perspective -- Next steps -- Spark bird -- Afterword to the Vintage Books edition (2022).</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Wilson, Edward O.,</marc:subfield>
+      <marc:subfield code="e">writer of introduction.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="949" ind1=" " ind2=" ">
+      <marc:subfield code="a">aam</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>01124cim a22002897i 4500</marc:leader>
+    <marc:controlfield tag="006">m     o  h        </marc:controlfield>
+    <marc:controlfield tag="007">sz zunnnnnuneu</marc:controlfield>
+    <marc:controlfield tag="007">cr nnannnuuuuu</marc:controlfield>
+    <marc:controlfield tag="008">230228s2021    xx nnnn o      j  n eng d</marc:controlfield>
+    <marc:datafield tag="041" ind1="0" ind2=" ">
+      <marc:subfield code="d">eng</marc:subfield>
+      <marc:subfield code="a">spa</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="100" ind1="1" ind2=" ">
+      <marc:subfield code="a">Bregstein, Barbara,</marc:subfield>
+      <marc:subfield code="e">author.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="245" ind1="1" ind2="0">
+      <marc:subfield code="a">Complete Spanish step-by-step :</marc:subfield>
+      <marc:subfield code="b">the fastest way to achieve Spanish mastery /</marc:subfield>
+      <marc:subfield code="c">Barbara Bregstein.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="250" ind1=" " ind2=" ">
+      <marc:subfield code="a">[First edition].</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="264" ind1=" " ind2="1">
+      <marc:subfield code="a">[Place of publication not identified] :</marc:subfield>
+      <marc:subfield code="b">McGraw Hill-Ascent Audio,</marc:subfield>
+      <marc:subfield code="c">2021.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">1 online resource (1 sound file (59 hr.))</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="306" ind1=" " ind2=" ">
+      <marc:subfield code="a">590000</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336" ind1=" " ind2=" ">
+      <marc:subfield code="a">spoken word</marc:subfield>
+      <marc:subfield code="b">spw</marc:subfield>
+      <marc:subfield code="2">rdacontent</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="337" ind1=" " ind2=" ">
+      <marc:subfield code="a">computer</marc:subfield>
+      <marc:subfield code="b">c</marc:subfield>
+      <marc:subfield code="2">rdamedia</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="338" ind1=" " ind2=" ">
+      <marc:subfield code="a">online resource</marc:subfield>
+      <marc:subfield code="b">cr</marc:subfield>
+      <marc:subfield code="2">rdacarrier</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="344" ind1=" " ind2=" ">
+      <marc:subfield code="a">digital</marc:subfield>
+      <marc:subfield code="2">rdatr</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="347" ind1=" " ind2=" ">
+      <marc:subfield code="a">audio file</marc:subfield>
+      <marc:subfield code="2">rdaft</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="385" ind1=" " ind2=" ">
+      <marc:subfield code="a">Spanish, Students of</marc:subfield>
+      <marc:subfield code="a">English speakers</marc:subfield>
+      <marc:subfield code="2">lcdgt</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="511" ind1="0" ind2=" ">
+      <marc:subfield code="a">Read by Rachel Story.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="588" ind1="0" ind2=" ">
+      <marc:subfield code="a"
+        >Online resource; title from title details screen (O'Reilly, viewed February 28, 2023).</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="546" ind1=" " ind2=" ">
+      <marc:subfield code="a">Text in English and Spanish.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="700" ind1="1" ind2=" ">
+      <marc:subfield code="a">Story, Rachel,</marc:subfield>
+      <marc:subfield code="e">narrator.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="856" ind1="4" ind2="0">
+      <marc:subfield code="3">O'Reilly Media</marc:subfield>
+      <marc:subfield code="u">https://www.oreilly.com/library/view/-/9781638413547/</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>00891cgm a2200217 i 4500</marc:leader>
+    <marc:controlfield tag="006">m     o  c f      </marc:controlfield>
+    <marc:controlfield tag="007">vz cuauu|</marc:controlfield>
+    <marc:controlfield tag="007">cr |||||||||||</marc:controlfield>
+    <marc:controlfield tag="008">200331s2019    mdu003       fo   vceng c</marc:controlfield>
+    <marc:datafield tag="245" ind1="0" ind2="0">
+      <marc:subfield code="a">Why I participate in Alzheimer's research.</marc:subfield>
+      <marc:subfield code="p">Will's Story.</marc:subfield>
+      <marc:subfield code="s">Full version.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="250" ind1=" " ind2=" ">
+      <marc:subfield code="a">[Full version]</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="264" ind1=" " ind2="1">
+      <marc:subfield code="a">[Bethesda, Md.] :</marc:subfield>
+      <marc:subfield code="b">National Institute on Aging,</marc:subfield>
+      <marc:subfield code="c">2019.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a"
+        >1 online resource (1 streaming video file (2 min., 57 sec.)) :</marc:subfield>
+      <marc:subfield code="b">sound, color</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336" ind1=" " ind2=" ">
+      <marc:subfield code="a">two-dimensional moving image</marc:subfield>
+      <marc:subfield code="b">tdi</marc:subfield>
+      <marc:subfield code="2">rdacontent</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="337" ind1=" " ind2=" ">
+      <marc:subfield code="a">video</marc:subfield>
+      <marc:subfield code="b">v</marc:subfield>
+      <marc:subfield code="2">rdamedia</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="337" ind1=" " ind2=" ">
+      <marc:subfield code="a">computer</marc:subfield>
+      <marc:subfield code="b">c</marc:subfield>
+      <marc:subfield code="2">rdamedia</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="338" ind1=" " ind2=" ">
+      <marc:subfield code="a">online resource</marc:subfield>
+      <marc:subfield code="b">cr</marc:subfield>
+      <marc:subfield code="2">rdacarrier</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="588" ind1=" " ind2=" ">
+      <marc:subfield code="a"
+        >Description based on contents last updated May 14, 2019 (viewed on March 31, 2020); title from NIA's YouTube page.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Streaming video.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="7">
+      <marc:subfield code="a">Video recordings.</marc:subfield>
+      <marc:subfield code="2">lcgft</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="710" ind1="2" ind2=" ">
+      <marc:subfield code="a">National Institute on Aging,</marc:subfield>
+      <marc:subfield code="e">issuing body.</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+  <marc:record>
+    <marc:leader>00885ngm a2200217 i 4500</marc:leader>
+    <marc:controlfield tag="006">m     o  c f      </marc:controlfield>
+    <marc:controlfield tag="007">vz cuauu|</marc:controlfield>
+    <marc:controlfield tag="007">cr |||||||||||</marc:controlfield>
+    <marc:controlfield tag="008">200331s2019    mdu001 e     fo   vceng c</marc:controlfield>
+    <marc:datafield tag="245" ind1="0" ind2="0">
+      <marc:subfield code="a">Why I participate in Alzheimer's research.</marc:subfield>
+      <marc:subfield code="p">Will's story.</marc:subfield>
+      <marc:subfield code="s">Short version.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="250" ind1=" " ind2=" ">
+      <marc:subfield code="a">[Short version]</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="264" ind1=" " ind2="1">
+      <marc:subfield code="a">[Bethesda, Md.] :</marc:subfield>
+      <marc:subfield code="b">National Institute on Aging,</marc:subfield>
+      <marc:subfield code="c">2019.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="300" ind1=" " ind2=" ">
+      <marc:subfield code="a">1 online resource (1 streaming video file (53 sec.)) :</marc:subfield>
+      <marc:subfield code="b">sound, color</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="336" ind1=" " ind2=" ">
+      <marc:subfield code="a">two-dimensional moving image</marc:subfield>
+      <marc:subfield code="b">tdi</marc:subfield>
+      <marc:subfield code="2">rdacontent</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="337" ind1=" " ind2=" ">
+      <marc:subfield code="a">video</marc:subfield>
+      <marc:subfield code="b">v</marc:subfield>
+      <marc:subfield code="2">rdamedia</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="337" ind1=" " ind2=" ">
+      <marc:subfield code="a">computer</marc:subfield>
+      <marc:subfield code="b">c</marc:subfield>
+      <marc:subfield code="2">rdamedia</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="338" ind1=" " ind2=" ">
+      <marc:subfield code="a">online resource</marc:subfield>
+      <marc:subfield code="b">cr</marc:subfield>
+      <marc:subfield code="2">rdacarrier</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="588" ind1=" " ind2=" ">
+      <marc:subfield code="a"
+        >Description based on contents last updated May 14, 2019 (viewed on March 31, 2020); title from NIA's YouTube page.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="650" ind1=" " ind2="0">
+      <marc:subfield code="a">Streaming video.</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="655" ind1=" " ind2="7">
+      <marc:subfield code="a">Video recordings.</marc:subfield>
+      <marc:subfield code="2">lcgft</marc:subfield>
+    </marc:datafield>
+    <marc:datafield tag="710" ind1="2" ind2=" ">
+      <marc:subfield code="a">National Institute on Aging,</marc:subfield>
+      <marc:subfield code="e">issuing body.</marc:subfield>
+    </marc:datafield>
+  </marc:record>
+</marc:collection>
