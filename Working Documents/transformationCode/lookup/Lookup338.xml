@@ -1,6 +1,7 @@
 <?xml version="1.0" ?>
 <lookupTable xmlns="http://uw.edu/all-purpose-namespace/">
   <entry>
+    <marc007c0c1>ha</marc007c0c1>
     <locCode>ha</locCode>
     <locTerm>aperture card</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/ha</locURI>
@@ -9,6 +10,7 @@
     <rdaCurie>rdact:1021</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>sb</marc007c0c1>
     <locCode>sb</locCode>
     <locTerm>audio belt</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/sb</locURI>
@@ -17,6 +19,8 @@
     <rdaCurie>rdact:1070</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>sg</marc007c0c1>
+    <marc007c0c5c6>gbc</marc007c0c5c6>
     <locCode>sg</locCode>
     <locTerm>audio cartridge</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/sg</locURI>
@@ -25,6 +29,7 @@
     <rdaCurie>rdact:1002</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>se</marc007c0c1>
     <locCode>se</locCode>
     <locTerm>audio cylinder</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/se</locURI>
@@ -33,6 +38,8 @@
     <rdaCurie>rdact:1003</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c5c6>gbd</marc007c0c5c6>
+    <marc007c0c1>sd</marc007c0c1>
     <locCode>sd</locCode>
     <locTerm>audio disc</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/sd</locURI>
@@ -49,6 +56,7 @@
     <rdaCurie>rdact:1006</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>sw</marc007c0c1>
     <locCode>sw</locCode>
     <locTerm>audio wire reel</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/sw</locURI>
@@ -57,6 +65,8 @@
     <rdaCurie>rdact:1071</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c5c6>gbf</marc007c0c5c6>
+    <marc007c0c1>ss</marc007c0c1>
     <locCode>ss</locCode>
     <locTerm>audiocassette</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/ss</locURI>
@@ -65,6 +75,7 @@
     <rdaCurie>rdact:1007</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>st</marc007c0c1>
     <locCode>st</locCode>
     <locTerm>audiotape reel</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/st</locURI>
@@ -73,6 +84,9 @@
     <rdaCurie>rdact:1008</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>ka</marc007c0c1>
+    <marc007c0c1>ko</marc007c0c1>
+    <marc007c0c1>kp</marc007c0c1>
     <locCode>no</locCode>
     <locTerm>card</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/no</locURI>
@@ -81,6 +95,7 @@
     <rdaCurie>rdact:1045</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>ck</marc007c0c1>
     <locCode>ck</locCode>
     <locTerm>computer card</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/ck</locURI>
@@ -89,6 +104,7 @@
     <rdaCurie>rdact:1011</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>cb</marc007c0c1>
     <locCode>cb</locCode>
     <locTerm>computer chip cartridge</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/cb</locURI>
@@ -97,6 +113,10 @@
     <rdaCurie>rdact:1012</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>cd</marc007c0c1>
+    <marc007c0c1>cj</marc007c0c1>
+    <marc007c0c1>cm</marc007c0c1>
+    <marc007c0c1>co</marc007c0c1>
     <locCode>cd</locCode>
     <locTerm>computer disc</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/cd</locURI>
@@ -105,6 +125,8 @@
     <rdaCurie>rdact:1013</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>cc</marc007c0c1>
+    <marc007c0c1>ce</marc007c0c1>
     <locCode>ce</locCode>
     <locTerm>computer disc cartridge</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/ce</locURI>
@@ -113,6 +135,7 @@
     <rdaCurie>rdact:1014</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>ca</marc007c0c1>
     <locCode>ca</locCode>
     <locTerm>computer tape cartridge</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/ca</locURI>
@@ -121,6 +144,7 @@
     <rdaCurie>rdact:1015</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>cf</marc007c0c1>
     <locCode>cf</locCode>
     <locTerm>computer tape cassette</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/cf</locURI>
@@ -129,6 +153,8 @@
     <rdaCurie>rdact:1016</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>ch</marc007c0c1>
+    <marc007c0c1>ch</marc007c0c1>
     <locCode>ch</locCode>
     <locTerm>computer tape reel</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/ch</locURI>
@@ -137,6 +163,7 @@
     <rdaCurie>rdact:1017</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>mc</marc007c0c1>
     <locCode>mc</locCode>
     <locTerm>film cartridge</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/mc</locURI>
@@ -145,6 +172,7 @@
     <rdaCurie>rdact:1032</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>mf</marc007c0c1>
     <locCode>mf</locCode>
     <locTerm>film cassette</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/mf</locURI>
@@ -153,6 +181,9 @@
     <rdaCurie>rdact:1033</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c5c6>gaa</marc007c0c5c6>
+    <marc007c0c5c6>gab</marc007c0c5c6>
+    <marc007c0c5c6>gag</marc007c0c5c6>
     <locCode>mr</locCode>
     <locTerm>film reel</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/mr</locURI>
@@ -161,6 +192,7 @@
     <rdaCurie>rdact:1034</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>go</marc007c0c1>
     <locCode>mo</locCode>
     <locTerm>film roll</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/mo</locURI>
@@ -169,6 +201,7 @@
     <rdaCurie>rdact:1069</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>gd</marc007c0c1>
     <locCode>gd</locCode>
     <locTerm>filmslip</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/gd</locURI>
@@ -177,6 +210,7 @@
     <rdaCurie>rdact:1035</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>gf</marc007c0c1>
     <locCode>gf</locCode>
     <locTerm>filmstrip</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/gf</locURI>
@@ -185,6 +219,7 @@
     <rdaCurie>rdact:1036</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>gc</marc007c0c1>
     <locCode>gc</locCode>
     <locTerm>filmstrip cartridge</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/gc</locURI>
@@ -201,6 +236,7 @@
     <rdaCurie>rdact:1046</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>he</marc007c0c1>
     <locCode>he</locCode>
     <locTerm>microfiche</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/he</locURI>
@@ -209,6 +245,7 @@
     <rdaCurie>rdact:1022</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>hf</marc007c0c1>
     <locCode>hf</locCode>
     <locTerm>microfiche cassette</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/hf</locURI>
@@ -217,6 +254,7 @@
     <rdaCurie>rdact:1023</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>hb</marc007c0c1>
     <locCode>hb</locCode>
     <locTerm>microfilm cartridge</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/hb</locURI>
@@ -225,6 +263,7 @@
     <rdaCurie>rdact:1024</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>hc</marc007c0c1>
     <locCode>hc</locCode>
     <locTerm>microfilm cassette</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/hc</locURI>
@@ -233,6 +272,7 @@
     <rdaCurie>rdact:1025</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>hd</marc007c0c1>
     <locCode>hd</locCode>
     <locTerm>microfilm reel</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/hd</locURI>
@@ -241,6 +281,7 @@
     <rdaCurie>rdact:1026</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>hj</marc007c0c1>
     <locCode>hj</locCode>
     <locTerm>microfilm roll</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/hj</locURI>
@@ -249,6 +290,7 @@
     <rdaCurie>rdact:1056</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>hh</marc007c0c1>
     <locCode>hh</locCode>
     <locTerm>microfilm slip</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/hh</locURI>
@@ -257,6 +299,7 @@
     <rdaCurie>rdact:1027</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>hg</marc007c0c1>
     <locCode>hg</locCode>
     <locTerm>microopaque</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/hg</locURI>
@@ -273,6 +316,9 @@
     <rdaCurie>rdact:1030</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>aq</marc007c0c1>
+    <marc007c0c1>dd</marc007c0c1>
+    <marc007c0c1>ff</marc007c0c1>
     <locCode>nr</locCode>
     <locTerm>object</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/nr</locURI>
@@ -281,6 +327,8 @@
     <rdaCurie>rdact:1059</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>cr</marc007c0c1>
+    <marc007c0c1>sr</marc007c0c1>
     <locCode>cr</locCode>
     <locTerm>online resource</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/cr</locURI>
@@ -289,6 +337,7 @@
     <rdaCurie>rdact:1018</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>gt</marc007c0c1>
     <locCode>gt</locCode>
     <locTerm>overhead transparency</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/gt</locURI>
@@ -305,6 +354,21 @@
     <rdaCurie>rdact:1047</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>kc</marc007c0c1>
+    <marc007c0c1>kd</marc007c0c1>
+    <marc007c0c1>ke</marc007c0c1>
+    <marc007c0c1>kf</marc007c0c1>
+    <marc007c0c1>kg</marc007c0c1>
+    <marc007c0c1>kh</marc007c0c1>
+    <marc007c0c1>ki</marc007c0c1>
+    <marc007c0c1>kj</marc007c0c1>
+    <marc007c0c1>kk</marc007c0c1>
+    <marc007c0c1>kl</marc007c0c1>
+    <marc007c0c1>kn</marc007c0c1>
+    <marc007c0c1>kq</marc007c0c1>
+    <marc007c0c1>kr</marc007c0c1>
+    <marc007c0c1>ks</marc007c0c1>
+    <marc007c0c1>kv</marc007c0c1>
     <locCode>nb</locCode>
     <locTerm>sheet</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/nb</locURI>
@@ -313,6 +377,7 @@
     <rdaCurie>rdact:1048</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>gs</marc007c0c1>
     <locCode>gs</locCode>
     <locTerm>slide</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/gs</locURI>
@@ -321,6 +386,8 @@
     <rdaCurie>rdact:1040</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>si</marc007c0c1>
+    <marc007c0c5c6>gbe</marc007c0c5c6>
     <locCode>si</locCode>
     <locTerm>sound track reel</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/si</locURI>
@@ -329,6 +396,7 @@
     <rdaCurie>rdact:1005</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>kh</marc007c0c1>
     <locCode>eh</locCode>
     <locTerm>stereograph card</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/eh</locURI>
@@ -337,6 +405,7 @@
     <rdaCurie>rdact:1042</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>gs</marc007c0c1>
     <locCode>es</locCode>
     <locTerm>stereograph disc</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/es</locURI>
@@ -345,6 +414,7 @@
     <rdaCurie>rdact:1043</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>vc</marc007c0c1>
     <locCode>vc</locCode>
     <locTerm>video cartridge</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/vc</locURI>
@@ -353,6 +423,7 @@
     <rdaCurie>rdact:1051</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>vf</marc007c0c1>
     <locCode>vf</locCode>
     <locTerm>videocassette</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/vf</locURI>
@@ -361,6 +432,8 @@
     <rdaCurie>rdact:1052</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>vd</marc007c0c1>
+    <marc007c0c5c6>gbi</marc007c0c5c6>
     <locCode>vd</locCode>
     <locTerm>videodisc</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/vd</locURI>
@@ -369,6 +442,8 @@
     <rdaCurie>rdact:1060</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>vr</marc007c0c1>
+    <marc007c0c5c6>gbh</marc007c0c5c6>
     <locCode>vr</locCode>
     <locTerm>videotape reel</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/vr</locURI>
@@ -377,6 +452,8 @@
     <rdaCurie>rdact:1053</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>ad</marc007c0c1>
+    <marc007c0c1>td</marc007c0c1>
     <locCode>nc</locCode>
     <locTerm>volume</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/nc</locURI>
