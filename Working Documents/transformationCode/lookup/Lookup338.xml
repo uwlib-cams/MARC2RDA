@@ -87,6 +87,12 @@
     <marc007c0c1>ka</marc007c0c1>
     <marc007c0c1>ko</marc007c0c1>
     <marc007c0c1>kp</marc007c0c1>
+    <marcMP008c33orc34>j</marcMP008c33orc34>
+    <marcMP008c33orc34>p</marcMP008c33orc34>
+    <marcMP006c16orc17>j</marcMP006c16orc17>
+    <marcMP006c16orc17>p</marcMP006c16orc17>
+    <marcVM008c33>o</marcVM008c33>
+    <marcVM006c16>o</marcVM006c16>
     <locCode>no</locCode>
     <locTerm>card</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/no</locURI>
@@ -181,6 +187,7 @@
     <rdaCurie>rdact:1033</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>mr</marc007c0c1>
     <marc007c0c5c6>gaa</marc007c0c5c6>
     <marc007c0c5c6>gab</marc007c0c5c6>
     <marc007c0c5c6>gag</marc007c0c5c6>
@@ -193,6 +200,7 @@
   </entry>
   <entry>
     <marc007c0c1>go</marc007c0c1>
+    <marc007c0c1>mo</marc007c0c1>
     <locCode>mo</locCode>
     <locTerm>film roll</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/mo</locURI>
@@ -212,6 +220,8 @@
   <entry>
     <marc007c0c1>gf</marc007c0c1>
     <locCode>gf</locCode>
+    <marcVM008c33>f</marcVM008c33>
+    <marcVM006c16>f</marcVM006c16>
     <locTerm>filmstrip</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/gf</locURI>
     <rdaTerm>filmstrip</rdaTerm>
@@ -308,6 +318,8 @@
     <rdaCurie>rdact:1028</rdaCurie>
   </entry>
   <entry>
+    <marcVM008c33>p</marcVM008c33>
+    <marcVM006c16>p</marcVM006c16>
     <locCode>pp</locCode>
     <locTerm>microscope slide</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/pp</locURI>
@@ -319,6 +331,23 @@
     <marc007c0c1>aq</marc007c0c1>
     <marc007c0c1>dd</marc007c0c1>
     <marc007c0c1>ff</marc007c0c1>
+    <marcMP008c25>d</marcMP008c25>
+    <marcMP006c8>d</marcMP006c8>
+    <marcMP008c33orc34>l</marcMP008c33orc34>
+    <marcMP006c16orc17>l</marcMP006c16orc17>
+    <marcMP008c33orc34>n</marcMP008c33orc34>
+    <marcMP006c16orc17>n</marcMP006c16orc17>
+    <marcVM008c33>b</marcVM008c33>
+    <marcVM006c16>b</marcVM006c16>
+    <marcVM008c33>d</marcVM008c33>
+    <marcVM006c16>d</marcVM006c16>
+    <marcVM008c33>q</marcVM008c33>
+    <marcVM006c16>q</marcVM006c16>
+    <marcVM008c33>r</marcVM008c33>
+    <marcVM006c16>r</marcVM006c16>
+    <marcVM008c33>w</marcVM008c33>
+    <marcVM006c16>w</marcVM006c16>
+    <marcLDRc6>r</marcLDRc6>
     <locCode>nr</locCode>
     <locTerm>object</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/nr</locURI>
@@ -329,6 +358,18 @@
   <entry>
     <marc007c0c1>cr</marc007c0c1>
     <marc007c0c1>sr</marc007c0c1>
+    <marcCF008c23>o</marcCF008c23>
+    <marcCF006c6>o</marcCF006c6>
+    <marcCR008c23>o</marcCR008c23>
+    <marcCR006c6>o</marcCR006c6>
+    <marcMX008c23>o</marcMX008c23>
+    <marcMX006c6>o</marcMX006c6>
+    <marcMU008c23>o</marcMU008c23>
+    <marcMU006c6>o</marcMU006c6>
+    <marcMP008c29>o</marcMP008c29>
+    <marcMP006c12>o</marcMP006c12>
+    <marcVM008c29>o</marcVM008c29>
+    <marcVM006c12>o</marcVM006c12>
     <locCode>cr</locCode>
     <locTerm>online resource</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/cr</locURI>
@@ -369,6 +410,20 @@
     <marc007c0c1>kr</marc007c0c1>
     <marc007c0c1>ks</marc007c0c1>
     <marc007c0c1>kv</marc007c0c1>
+    <marcMP008c33orc34>e</marcMP008c33orc34>
+    <marcMP006c16orc17>e</marcMP006c16orc17>
+    <marcMP008c33orc34>o</marcMP008c33orc34>
+    <marcMP006c16orc17>o</marcMP006c16orc17>
+    <marcVM008c33>i</marcVM008c33>
+    <marcVM006c16>i</marcVM006c16>
+    <marcVM008c33>l</marcVM008c33>
+    <marcVM006c16>l</marcVM006c16>
+    <marcVM008c33>n</marcVM008c33>
+    <marcVM006c16>n</marcVM006c16>
+    <marcVM008c33>t</marcVM008c33>
+    <marcVM006c16>t</marcVM006c16>
+    <marcVM008c33>s</marcVM008c33>
+    <marcVM006c16>s</marcVM006c16>
     <locCode>nb</locCode>
     <locTerm>sheet</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/nb</locURI>
@@ -454,6 +509,12 @@
   <entry>
     <marc007c0c1>ad</marc007c0c1>
     <marc007c0c1>td</marc007c0c1>
+    <marcMP008c25>e</marcMP008c25>
+    <marcMP006c8>e</marcMP006c8>
+    <marcMP008c25>g</marcMP008c25>
+    <marcMP006c8>g</marcMP006c8>
+    <marcMP008c33orc34>r</marcMP008c33orc34>
+    <marcMP006c16orc17>r</marcMP006c16orc17>
     <locCode>nc</locCode>
     <locTerm>volume</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/nc</locURI>
