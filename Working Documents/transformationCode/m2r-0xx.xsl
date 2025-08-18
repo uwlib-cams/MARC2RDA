@@ -2625,56 +2625,61 @@
         </xsl:if>
 
         <!-- Row 44: When indicator 1 = 1 (Work) and date subfields are present -->
-        <xsl:if test="@ind1 = '1' and marc:subfield[@code = ('b','c','d','e','k','l','m','n','o','p')]">
-            <rdawd:P10317>
-                <xsl:for-each select="marc:subfield[@code = ('b','c','d','e','k','l','m','n','o','p')]">
-                    <xsl:choose>
-                        <xsl:when test="@code = 'b'">
-                            <xsl:value-of select="concat(., ' B.C.E.')"/>
-                        </xsl:when>
-                        <xsl:when test="@code = 'd'">
-                            <xsl:value-of select="concat(., ' B.C.E.')"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:value-of select="."/>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                    <xsl:if test="position() != last()">
-                        <xsl:choose>
-                            <!-- Use " - " for paired subfields -->
-                            <xsl:when test="(@code = 'b' and following-sibling::marc:subfield[@code = 'd']) or 
-                                          (@code = 'b' and following-sibling::marc:subfield[@code = 'e']) or
-                                          (@code = 'c' and following-sibling::marc:subfield[@code = 'e']) or
-                                          (@code = 'c' and following-sibling::marc:subfield[@code = 'd']) or
-                                          (@code = 'k' and following-sibling::marc:subfield[@code = 'l']) or
-                                          (@code = 'm' and following-sibling::marc:subfield[@code = 'n']) or
-                                          (@code = 'o' and following-sibling::marc:subfield[@code = 'p'])">
-                                <xsl:text> - </xsl:text>
-                            </xsl:when>
-                            <!-- Use " " for non-paired subfields -->
-                            <xsl:otherwise>
-                                <xsl:text> </xsl:text>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:if>
-                </xsl:for-each>
-            </rdawd:P10317>
+        <xsl:if test="@ind1 = '1' and marc:subfield[@code = ('b','c','d','e')]">
+            <!-- Create dynamic suffix based on which date combinations are present -->
+            <xsl:variable name="dateSuffix">
+                <xsl:choose>
+                    <!-- b|c and d|e combination -->
+                    <xsl:when test="(marc:subfield[@code = 'b'] or marc:subfield[@code = 'c']) and (marc:subfield[@code = 'd'] or marc:subfield[@code = 'e'])">
+                        <xsl:value-of select="concat(
+                            if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'], 'B.C.E.')
+                            else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c']
+                            else '',
+                            '-',
+                            if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'], 'B.C.E.')
+                            else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e']
+                            else ''
+                        )"/>
+                    </xsl:when>
+                    <!-- j alone -->
+                    <xsl:when test="marc:subfield[@code = 'j']">
+                        <xsl:value-of select="marc:subfield[@code = 'j']"/>
+                    </xsl:when>
+                    <!-- k and l combination -->
+                    <xsl:when test="marc:subfield[@code = 'k'] and marc:subfield[@code = 'l']">
+                        <xsl:value-of select="concat(marc:subfield[@code = 'k'], ' - ', marc:subfield[@code = 'l'])"/>
+                    </xsl:when>
+                    <!-- m and n combination -->
+                    <xsl:when test="marc:subfield[@code = 'm'] and marc:subfield[@code = 'n']">
+                        <xsl:value-of select="concat(marc:subfield[@code = 'm'], ' - ', marc:subfield[@code = 'n'])"/>
+                    </xsl:when>
+                    <!-- o and p combination -->
+                    <xsl:when test="marc:subfield[@code = 'o'] and marc:subfield[@code = 'p']">
+                        <xsl:value-of select="concat(marc:subfield[@code = 'o'], ' - ', marc:subfield[@code = 'p'])"/>
+                    </xsl:when>
+                    <!-- fallback for any other combination -->
+                    <xsl:otherwise>
+                        <xsl:value-of select="string-join(marc:subfield[@code = ('b','c','d','e','j','k','l','m','n','o','p')], ' - ')"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:variable>
+            <rdawo:P10317 rdf:resource="{uwf:timespanIRI($baseID, ., $dateSuffix)}"/>
         </xsl:if>
 
         <!-- Row 56: Beginning date -->
         <xsl:if test="marc:subfield[@code = 'k']">
-            <rdawd:P10219>
+            <rdawd:P10330>
                 <xsl:text>Beginning or single date created: </xsl:text>
                 <xsl:value-of select="marc:subfield[@code = 'k']"/>
-            </rdawd:P10219>
+            </rdawd:P10330>
         </xsl:if>
 
         <!-- Row 57: Ending date -->
         <xsl:if test="marc:subfield[@code = 'l']">
-            <rdawd:P10219>
+            <rdawd:P10330>
                 <xsl:text>Ending date created: </xsl:text>
                 <xsl:value-of select="marc:subfield[@code = 'l']"/>
-            </rdawd:P10219>
+            </rdawd:P10330>
         </xsl:if>
 
         <!-- Row 59 -->
@@ -2695,18 +2700,18 @@
 
         <!-- Row 66 -->
         <xsl:if test="marc:subfield[@code = 'o']">
-            <rdawd:P10219>
+            <rdawd:P10330>
                 <xsl:text>Single or starting date for aggregated content: </xsl:text>
                 <xsl:value-of select="marc:subfield[@code = 'o']"/>
-            </rdawd:P10219>
+            </rdawd:P10330>
         </xsl:if>
 
         <!-- Row 67 -->
         <xsl:if test="marc:subfield[@code = 'p']">
-            <rdawd:P10219>
+            <rdawd:P10330>
                 <xsl:text>Ending date for aggregated content: </xsl:text>
                 <xsl:value-of select="marc:subfield[@code = 'p']"/>
-            </rdawd:P10219>
+            </rdawd:P10330>
         </xsl:if>
 
         <!-- Row 78 -->
@@ -2736,40 +2741,45 @@
         </xsl:if>
 
         <!-- Row 41: When indicator 1 = 2 (Expression) and date subfields are present -->
-        <xsl:if test="@ind1 = '2' and marc:subfield[@code = ('b','c','d','e','k','l','m','n','o','p')]">
-            <rdaed:P20307>
-                <xsl:for-each select="marc:subfield[@code = ('b','c','d','e','k','l','m','n','o','p')]">
-                    <xsl:choose>
-                        <xsl:when test="@code = 'b'">
-                            <xsl:value-of select="concat(., ' B.C.E.')"/>
-                        </xsl:when>
-                        <xsl:when test="@code = 'd'">
-                            <xsl:value-of select="concat(., ' B.C.E.')"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:value-of select="."/>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                    <xsl:if test="position() != last()">
-                        <xsl:choose>
-                            <!-- Use " - " for paired subfields -->
-                            <xsl:when test="(@code = 'b' and following-sibling::marc:subfield[@code = 'd']) or 
-                                          (@code = 'b' and following-sibling::marc:subfield[@code = 'e']) or
-                                          (@code = 'c' and following-sibling::marc:subfield[@code = 'e']) or
-                                          (@code = 'c' and following-sibling::marc:subfield[@code = 'd']) or
-                                          (@code = 'k' and following-sibling::marc:subfield[@code = 'l']) or
-                                          (@code = 'm' and following-sibling::marc:subfield[@code = 'n']) or
-                                          (@code = 'o' and following-sibling::marc:subfield[@code = 'p'])">
-                                <xsl:text> - </xsl:text>
-                            </xsl:when>
-                            <!-- Use " " for non-paired subfields -->
-                            <xsl:otherwise>
-                                <xsl:text> </xsl:text>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:if>
-                </xsl:for-each>
-            </rdaed:P20307>
+        <xsl:if test="@ind1 = '2' and marc:subfield[@code = ('b','c','d','e','k','l', 'o','p')]">
+            <!-- Create dynamic suffix based on which date combinations are present -->
+            <xsl:variable name="dateSuffix">
+                <xsl:choose>
+                    <!-- b|c and d|e combination -->
+                    <xsl:when test="(marc:subfield[@code = 'b'] or marc:subfield[@code = 'c']) and (marc:subfield[@code = 'd'] or marc:subfield[@code = 'e'])">
+                        <xsl:value-of select="concat(
+                            if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'], 'B.C.E.')
+                            else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c']
+                            else '',
+                            '-',
+                            if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'], 'B.C.E.')
+                            else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e']
+                            else ''
+                        )"/>
+                    </xsl:when>
+                    <!-- j alone -->
+                    <xsl:when test="marc:subfield[@code = 'j']">
+                        <xsl:value-of select="marc:subfield[@code = 'j']"/>
+                    </xsl:when>
+                    <!-- k and l combination -->
+                    <xsl:when test="marc:subfield[@code = 'k'] and marc:subfield[@code = 'l']">
+                        <xsl:value-of select="concat(marc:subfield[@code = 'k'], ' - ', marc:subfield[@code = 'l'])"/>
+                    </xsl:when>
+                    <!-- m and n combination -->
+                    <xsl:when test="marc:subfield[@code = 'm'] and marc:subfield[@code = 'n']">
+                        <xsl:value-of select="concat(marc:subfield[@code = 'm'], ' - ', marc:subfield[@code = 'n'])"/>
+                    </xsl:when>
+                    <!-- o and p combination -->
+                    <xsl:when test="marc:subfield[@code = 'o'] and marc:subfield[@code = 'p']">
+                        <xsl:value-of select="concat(marc:subfield[@code = 'o'], ' - ', marc:subfield[@code = 'p'])"/>
+                    </xsl:when>
+                    <!-- fallback for any other combination -->
+                    <xsl:otherwise>
+                        <xsl:value-of select="string-join(marc:subfield[@code = ('b','c','d','e','j','k','l','m','n','o','p')], ' - ')"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:variable>
+            <rdaeo:P20307 rdf:resource="{uwf:timespanIRI($baseID, ., $dateSuffix)}"/>
         </xsl:if>
 
         <!-- Row 60 -->
@@ -2878,63 +2888,92 @@
         </xsl:if>
 
         <!-- Row 42: When indicator 1 = 3 (Manifestation) and date subfields are present -->
-        <xsl:if test="@ind1 = '3' and marc:subfield[@code = ('b','c','d','e','j','k','l','m','n','o','p')]">
-            <rdamd:P30273>
-                <xsl:for-each select="marc:subfield[@code = ('b','c','d','e','j','k','l','m','n','o','p')]">
-                    <xsl:choose>
-                        <xsl:when test="@code = 'b'">
-                            <xsl:value-of select="concat(., ' B.C.E.')"/>
-                        </xsl:when>
-                        <xsl:when test="@code = 'd'">
-                            <xsl:value-of select="concat(., ' B.C.E.')"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:value-of select="."/>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                    <xsl:if test="position() != last()">
-                        <xsl:choose>
-                            <!-- Use " - " for paired subfields -->
-                            <xsl:when test="(@code = 'b' and following-sibling::marc:subfield[@code = 'd']) or 
-                                          (@code = 'b' and following-sibling::marc:subfield[@code = 'e']) or
-                                          (@code = 'c' and following-sibling::marc:subfield[@code = 'e']) or
-                                          (@code = 'c' and following-sibling::marc:subfield[@code = 'd']) or
-                                          (@code = 'k' and following-sibling::marc:subfield[@code = 'l']) or
-                                          (@code = 'm' and following-sibling::marc:subfield[@code = 'n']) or
-                                          (@code = 'o' and following-sibling::marc:subfield[@code = 'p'])">
-                                <xsl:text> - </xsl:text>
-                            </xsl:when>
-                            <!-- Use " " for non-paired subfields -->
-                            <xsl:otherwise>
-                                <xsl:text> </xsl:text>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:if>
-                </xsl:for-each>
-            </rdamd:P30273>
+        <xsl:if test="@ind1 = '3' and marc:subfield[@code = ('k','l','o','p')]">
+            <!-- Create dynamic suffix based on which date combinations are present -->
+            <xsl:variable name="dateSuffix">
+                <xsl:choose>
+                    <!-- b|c and d|e combination -->
+                    <xsl:when test="(marc:subfield[@code = 'b'] or marc:subfield[@code = 'c']) and (marc:subfield[@code = 'd'] or marc:subfield[@code = 'e'])">
+                        <xsl:value-of select="concat(
+                            if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'], 'B.C.E.')
+                            else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c']
+                            else '',
+                            '-',
+                            if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'], 'B.C.E.')
+                            else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e']
+                            else ''
+                        )"/>
+                    </xsl:when>
+                    <!-- j alone -->
+                    <xsl:when test="marc:subfield[@code = 'j']">
+                        <xsl:value-of select="marc:subfield[@code = 'j']"/>
+                    </xsl:when>
+                    <!-- k and l combination -->
+                    <xsl:when test="marc:subfield[@code = 'k'] and marc:subfield[@code = 'l']">
+                        <xsl:value-of select="concat(marc:subfield[@code = 'k'], ' - ', marc:subfield[@code = 'l'])"/>
+                    </xsl:when>
+                    <!-- m and n combination -->
+                    <xsl:when test="marc:subfield[@code = 'm'] and marc:subfield[@code = 'n']">
+                        <xsl:value-of select="concat(marc:subfield[@code = 'm'], ' - ', marc:subfield[@code = 'n'])"/>
+                    </xsl:when>
+                    <!-- o and p combination -->
+                    <xsl:when test="marc:subfield[@code = 'o'] and marc:subfield[@code = 'p']">
+                        <xsl:value-of select="concat(marc:subfield[@code = 'o'], ' - ', marc:subfield[@code = 'p'])"/>
+                    </xsl:when>
+                    <!-- fallback for any other combination -->
+                    <xsl:otherwise>
+                        <xsl:value-of select="string-join(marc:subfield[@code = ('b','c','d','e','j','k','l','m','n','o','p')], ' - ')"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:variable>
+            <rdamo:P30273 rdf:resource="{uwf:timespanIRI($baseID, ., $dateSuffix)}"/>
         </xsl:if>
 
         <!-- Row 43: When $a = 't' and subfields $d and $e are present (copyright date) -->
         <xsl:if test="marc:subfield[@code = 'a'] = 't' and marc:subfield[@code = ('d','e')]">
-            <rdamd:P30007>
-                <xsl:text>Date of publication/release/production/execution: </xsl:text>
-                <xsl:value-of select="marc:subfield[@code = 'd']"/>
-                <xsl:text>; Copyright date: </xsl:text>
-                <xsl:value-of select="marc:subfield[@code = 'e']"/>
-            </rdamd:P30007>
+            <xsl:if test="marc:subfield[@code = 'd']">
+                <rdamd:P30007>
+                    <xsl:text>Date of publication/release/production/execution: </xsl:text>
+                    <xsl:value-of select="marc:subfield[@code = 'd']"/>
+                </rdamd:P30007>
+            </xsl:if>
+            <xsl:if test="marc:subfield[@code = 'e']">
+                <rdamd:P30007>
+                    <xsl:text>Copyright date: </xsl:text>
+                    <xsl:value-of select="marc:subfield[@code = 'e']"/>
+                </rdamd:P30007>
+            </xsl:if>
         </xsl:if>
 
-        <!-- Row 46: type of date code -->
-        <xsl:if test="marc:subfield[@code = 'a']">
-            <rdamd:P30137>
-                <xsl:value-of select="concat('Type of date code: ', marc:subfield[@code = 'a'])"/>
-            </rdamd:P30137>
+        <!-- Row 45, 68-71, 72-75 -->
+        <xsl:if test="not(marc:subfield[@code = ('b','c','d','e','j','k','l','m','n','o','p')]) and marc:subfield[@code = ('x','z')]">
+            <xsl:if test="marc:subfield[@code = 'x'] and marc:subfield[@code = 'z']">
+                <xsl:variable name="xValue" select="number(marc:subfield[@code = 'x'])"/>
+                <xsl:variable name="zValue" select="number(marc:subfield[@code = 'z'])"/>
+                <xsl:if test="string($xValue) != 'NaN' and string($zValue) != 'NaN'">
+                    <rdatd:P70045>
+                        <xsl:value-of select="$xValue + $zValue"/>
+                    </rdatd:P70045>
+                </xsl:if>
+            </xsl:if>
+            <!-- Rows 68-71: emit $x as note when present -->
+            <xsl:if test="marc:subfield[@code = 'x']">
+                <rdatd:P70045>
+                    <xsl:value-of select="marc:subfield[@code = 'x']"/>
+                </rdatd:P70045>
+            </xsl:if>
+            <!-- Rows 72-75: emit $z as note when present -->
+            <xsl:if test="marc:subfield[@code = 'z']">
+                <rdatd:P70045>
+                    <xsl:value-of select="marc:subfield[@code = 'z']"/>
+                </rdatd:P70045>
+            </xsl:if>
         </xsl:if>
 
         <!-- Row 47 -->
         <xsl:if test="marc:subfield[@code = 'a'] = 'r' and marc:subfield[@code = ('b', 'c')]">
-            <rdamd:P30278>
-                <xsl:text>Original date: </xsl:text>
+            <rdamd:P30137>
+                <xsl:text>Reprint/reissue date: </xsl:text>
                 <xsl:choose>
                     <xsl:when test="marc:subfield[@code = 'b']">
                         <xsl:value-of select="marc:subfield[@code = 'b']"/>
@@ -2944,13 +2983,13 @@
                         <xsl:value-of select="marc:subfield[@code = 'c']"/>
                     </xsl:when>
                 </xsl:choose>
-            </rdamd:P30278>
+            </rdamd:P30137>
         </xsl:if>
 
         <!-- Row 48 -->
         <xsl:if test="marc:subfield[@code = 'a'] = 'r' and marc:subfield[@code = ('d', 'e')]">
-            <rdamd:P30278>
-                <xsl:text>Reprint/reissue date: </xsl:text>
+            <rdamd:P30137>
+                <xsl:text>Original date: </xsl:text>
                 <xsl:choose>
                     <xsl:when test="marc:subfield[@code = 'd']">
                         <xsl:value-of select="marc:subfield[@code = 'd']"/>
@@ -2960,12 +2999,12 @@
                         <xsl:value-of select="marc:subfield[@code = 'e']"/>
                     </xsl:when>
                 </xsl:choose>
-            </rdamd:P30278>
+            </rdamd:P30137>
         </xsl:if>
 
         <!-- Row 49 -->
-        <xsl:if test="marc:subfield[@code = 'a'] = 's' and marc:subfield[@code = ('b', 'c')] and not(marc:subfield[@code = ('d', 'e')])">
-            <rdamd:P30278>
+        <xsl:if test="marc:subfield[@code = 'a'] = 's' and marc:subfield[@code = ('b', 'c')]">
+            <rdamd:P30137>
                 <xsl:text>Single date of distribution, publication, release, production, execution, writing, or a probable date: </xsl:text>
                 <xsl:choose>
                     <xsl:when test="marc:subfield[@code = 'b']">
@@ -2976,12 +3015,12 @@
                         <xsl:value-of select="marc:subfield[@code = 'c']"/>
                     </xsl:when>
                 </xsl:choose>
-            </rdamd:P30278>
+            </rdamd:P30137>
         </xsl:if>
 
         <!-- Row 50 -->
         <xsl:if test="marc:subfield[@code = 'a'] = 'p' and marc:subfield[@code = ('b', 'c')]">
-            <rdamd:P30278>
+            <rdamd:P30137>
                 <xsl:text>Date of distribution/release/issue: </xsl:text>
                 <xsl:choose>
                     <xsl:when test="marc:subfield[@code = 'b']">
@@ -2992,7 +3031,7 @@
                         <xsl:value-of select="marc:subfield[@code = 'c']"/>
                     </xsl:when>
                 </xsl:choose>
-            </rdamd:P30278>
+            </rdamd:P30137>
         </xsl:if>
 
         <!-- Row 51 -->
@@ -3012,7 +3051,7 @@
 
         <!-- Row 52 -->
         <xsl:if test="marc:subfield[@code = 'a'] = 't' and marc:subfield[@code = ('b', 'c')]">
-            <rdamd:P30278>
+            <rdamd:P30137>
                 <xsl:text>Date of publication/release/production/execution: </xsl:text>
                 <xsl:choose>
                     <xsl:when test="marc:subfield[@code = 'b']">
@@ -3023,30 +3062,30 @@
                         <xsl:value-of select="marc:subfield[@code = 'c']"/>
                     </xsl:when>
                 </xsl:choose>
-            </rdamd:P30278>
+            </rdamd:P30137>
         </xsl:if>
 
         <!-- Row 53: incorrect first date -->
         <xsl:if test="marc:subfield[@code = 'a'] = 'x' and marc:subfield[@code = 'c']">
-            <rdamd:P30278>
+            <rdamd:P30137>
                 <xsl:text>Incorrect date 1: </xsl:text>
                 <xsl:value-of select="marc:subfield[@code = 'c']"/>
-            </rdamd:P30278>
+            </rdamd:P30137>
         </xsl:if>
 
         <!-- Row 54: incorrect second date -->
         <xsl:if test="marc:subfield[@code = 'a'] = 'x' and marc:subfield[@code = 'e']">
-            <rdamd:P30278>
+            <rdamd:P30137>
                 <xsl:text>Incorrect date 2: </xsl:text>
                 <xsl:value-of select="marc:subfield[@code = 'e']"/>
-            </rdamd:P30278>
+            </rdamd:P30137>
         </xsl:if>
 
         <!-- Row 55: dates unknown -->
         <xsl:if test="marc:subfield[@code = 'a'] = 'n' and (marc:subfield[@code = 'b' or @code = 'c'] or marc:subfield[@code = 'd' or @code = 'e'])">
-            <rdamd:P30278>
+            <rdamd:P30137>
                 <xsl:text>Dates unknown</xsl:text>
-            </rdamd:P30278>
+            </rdamd:P30137>
         </xsl:if>
 
         <!-- Row 58 -->
@@ -3104,8 +3143,8 @@
         mode="tim" expand-text="yes">
         <xsl:param name="baseID"/>
 
-        <!-- Row 12: When $a = 'q' and date subfields are present (questionable date) -->
-        <xsl:if test="marc:subfield[@code = 'a'] = 'q' and (marc:subfield[@code = 'b' or @code = 'c'] or marc:subfield[@code = 'd' or @code = 'e'])">
+        <!-- Consolidated timespan creation for specific $a values with date subfields (Rows 12, 14, 29, 30) -->
+        <xsl:if test="marc:subfield[@code = 'a'] = ('q', 'i', 'k', 'm') and (marc:subfield[@code = 'b' or @code = 'c'] or marc:subfield[@code = 'd' or @code = 'e'])">
             <!-- Create dynamic suffix based on date values -->
             <xsl:variable name="dateSuffix" select="concat(
                 if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'], 'B.C.E.')
@@ -3116,261 +3155,61 @@
                 else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e']
                 else ''
             )"/>
-            <xsl:call-template name="F0046-timespan">
+            
+            <!-- Determine note based on value of $a -->
+            <xsl:variable name="note">
+                <xsl:choose>
+                    <xsl:when test="marc:subfield[@code = 'a'] = 'q'">Questionable date</xsl:when>
+                    <xsl:when test="marc:subfield[@code = 'a'] = 'i'">Collection inclusive dates</xsl:when>
+                    <xsl:when test="marc:subfield[@code = 'a'] = 'k'">Range of years of bulk of collection</xsl:when>
+                    <xsl:when test="marc:subfield[@code = 'a'] = 'm'">Range of years of publication</xsl:when>
+                </xsl:choose>
+            </xsl:variable>
+            
+            <xsl:call-template name="F046-timespan">
                 <xsl:with-param name="baseID" select="$baseID"/>
                 <xsl:with-param name="suffix" select="$dateSuffix"/>
-                <xsl:with-param name="note" select="'Questionable date'"/>
-            </xsl:call-template>
-        </xsl:if>
-        
-        <!-- Row 14: When $a = 'i' and date subfields are present (inclusive dates) -->
-        <xsl:if test="marc:subfield[@code = 'a'] = 'i' and (marc:subfield[@code = 'b' or @code = 'c'] or marc:subfield[@code = 'd' or @code = 'e'])">
-            <!-- Create dynamic suffix based on date values -->
-            <xsl:variable name="dateSuffix" select="concat(
-                if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'], 'B.C.E.')
-                else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c']
-                else '',
-                '-',
-                if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'], 'B.C.E.')
-                else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e']
-                else ''
-            )"/>
-            <xsl:call-template name="F0046-timespan">
-                <xsl:with-param name="baseID" select="$baseID"/>
-                <xsl:with-param name="suffix" select="$dateSuffix"/>
-                <xsl:with-param name="note" select="'Collection inclusive dates'"/>
-            </xsl:call-template>
-        </xsl:if>
-        
-        <!-- Row 29: When $a = 'k' and date subfields are present (range of years of bulk of collection) -->
-        <xsl:if test="marc:subfield[@code = 'a'] = 'k' and (marc:subfield[@code = 'b' or @code = 'c'] or marc:subfield[@code = 'd' or @code = 'e'])">
-            <!-- Create dynamic suffix based on date values -->
-            <xsl:variable name="dateSuffix" select="concat(
-                if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'], 'B.C.E.')
-                else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c']
-                else '',
-                '-',
-                if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'], 'B.C.E.')
-                else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e']
-                else ''
-            )"/>
-            <xsl:call-template name="F0046-timespan">
-                <xsl:with-param name="baseID" select="$baseID"/>
-                <xsl:with-param name="suffix" select="$dateSuffix"/>
-                <xsl:with-param name="note" select="'Range of years of bulk of collection'"/>
-            </xsl:call-template>
-        </xsl:if>
-        
-        <!-- Row 30: When $a = 'm' and date subfields are present (range of years of publication of multipart item) -->
-        <xsl:if test="marc:subfield[@code = 'a'] = 'm' and (marc:subfield[@code = 'b' or @code = 'c'] or marc:subfield[@code = 'd' or @code = 'e'])">
-            <!-- Create dynamic suffix based on date values -->
-            <xsl:variable name="dateSuffix" select="concat(
-                if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'], 'B.C.E.')
-                else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c']
-                else '',
-                '-',
-                if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'], 'B.C.E.')
-                else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e']
-                else ''
-            )"/>
-            <xsl:call-template name="F0046-timespan">
-                <xsl:with-param name="baseID" select="$baseID"/>
-                <xsl:with-param name="suffix" select="$dateSuffix"/>
-                <xsl:with-param name="note" select="'Range of years of publication'"/>
+                <xsl:with-param name="note" select="$note"/>
             </xsl:call-template>
         </xsl:if>
         
         <!-- Consolidated timespan creation for $j and $2 subfields (Rows 31, 32, 33, 34) -->
         <xsl:if test="marc:subfield[@code = 'j']">
-
-            <!-- Row 31: Manifestation timespan (when no specific indicator) -->
-            <xsl:if test="not(@ind1 = '1' or @ind1 = '2' or @ind1 = '3')">
-                <rdf:Description rdf:about="{uwf:timespanIRI($baseID, ., marc:subfield[@code = 'j'])}">
-                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
-                    <rdato:P70016 rdf:resource="{uwf:nomenIRI($baseID, ., marc:subfield[@code = 'j'], marc:subfield[@code = '2'], 'timespan')}"/>
-                </rdf:Description>
-            </xsl:if>
-            
-            <!-- Row 32: Work timespan (indicator 1 = 1) -->
-            <xsl:if test="@ind1 = '1'">
-                <rdf:Description rdf:about="{uwf:timespanIRI($baseID, ., marc:subfield[@code = 'j'])}">
-                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
-                    <rdato:P70016 rdf:resource="{uwf:nomenIRI($baseID, ., marc:subfield[@code = 'j'], marc:subfield[@code = '2'], 'timespan')}"/>
-                </rdf:Description>
-            </xsl:if>
-            
-            <!-- Row 33: Expression timespan (indicator 1 = 2) -->
-            <xsl:if test="@ind1 = '2'">
-                <rdf:Description rdf:about="{uwf:timespanIRI($baseID, ., marc:subfield[@code = 'j'])}">
-                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
-                    <rdato:P70016 rdf:resource="{uwf:nomenIRI($baseID, ., marc:subfield[@code = 'j'], marc:subfield[@code = '2'], 'timespan')}"/>
-                </rdf:Description>
-            </xsl:if>
-            
-            <!-- Row 34: Manifestation timespan (indicator 1 = 3) -->
-            <xsl:if test="@ind1 = '3'">
-                <rdf:Description rdf:about="{uwf:timespanIRI($baseID, ., marc:subfield[@code = 'j'])}">
-                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
-                    <rdato:P70016 rdf:resource="{uwf:nomenIRI($baseID, ., marc:subfield[@code = 'j'], marc:subfield[@code = '2'], 'timespan')}"/>
-                </rdf:Description>
-            </xsl:if>
+            <xsl:call-template name="F046-timespan">
+                <xsl:with-param name="baseID" select="$baseID"/>
+                <xsl:with-param name="suffix" select="marc:subfield[@code = 'j']"/>
+                <xsl:with-param name="note" select="''"/>
+            </xsl:call-template>
         </xsl:if>
         
         <!-- Row 35: Work creation range timespan (subfields $k and $l) -->
         <xsl:if test="marc:subfield[@code = 'k'] and marc:subfield[@code = 'l']">
             <xsl:variable name="dateSuffix" select="concat(marc:subfield[@code = 'k'], ' - ', marc:subfield[@code = 'l'])"/>
-            <rdf:Description rdf:about="{uwf:timespanIRI($baseID, ., $dateSuffix)}">
-                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
-                <rdatd:P70016>
-                    <xsl:value-of select="marc:subfield[@code = 'k']"/>
-                    <xsl:text> - </xsl:text>
-                    <xsl:value-of select="marc:subfield[@code = 'l']"/>
-                </rdatd:P70016>
-                <rdatd:P70045>Range on which a resource has been created</rdatd:P70045>
-                <rdatd:P70039>
-                    <xsl:value-of select="marc:subfield[@code = 'k']"/>
-                </rdatd:P70039>
-                <rdatd:P70040>
-                    <xsl:value-of select="marc:subfield[@code = 'l']"/>
-                </rdatd:P70040>
-            </rdf:Description>
+            <xsl:call-template name="F046-timespan">
+                <xsl:with-param name="baseID" select="$baseID"/>
+                <xsl:with-param name="suffix" select="$dateSuffix"/>
+                <xsl:with-param name="note" select="'Range on which a resource has been created'"/>
+            </xsl:call-template>
         </xsl:if>
         
         <!-- Consolidated timespan creation for $m and $n subfields (Rows 36, 37, 38, 39) -->
-        
         <xsl:if test="marc:subfield[@code = 'm'] and marc:subfield[@code = 'n']">
-            <!-- Row 36: Manifestation timespan (when no specific indicator) -->
-            <xsl:if test="not(@ind1 = '1' or @ind1 = '2')">
-                <xsl:variable name="dateSuffix" select="concat(marc:subfield[@code = 'm'], ' - ', marc:subfield[@code = 'n'])"/>
-                <rdf:Description rdf:about="{uwf:timespanIRI($baseID, ., $dateSuffix)}">
-                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
-                    <rdatd:P70016>
-                        <xsl:value-of select="marc:subfield[@code = 'm']"/>
-                        <xsl:text> - </xsl:text>
-                        <xsl:value-of select="marc:subfield[@code = 'n']"/>
-                    </rdatd:P70016>
-                    <rdatd:P70045>Date span for the validity of a resource</rdatd:P70045>
-                    <rdatd:P70039>
-                        <xsl:value-of select="marc:subfield[@code = 'm']"/>
-                    </rdatd:P70039>
-                    <rdatd:P70040>
-                        <xsl:value-of select="marc:subfield[@code = 'n']"/>
-                    </rdatd:P70040>
-                </rdf:Description>
-            </xsl:if>
-            
-            <!-- Row 37: Work timespan (indicator 1 = 1) -->
-            <xsl:if test="@ind1 = '1'">
-                <xsl:variable name="dateSuffix" select="concat(marc:subfield[@code = 'm'], ' - ', marc:subfield[@code = 'n'])"/>
-                <rdf:Description rdf:about="{uwf:timespanIRI($baseID, ., $dateSuffix)}">
-                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
-                    <rdatd:P70016>
-                        <xsl:value-of select="marc:subfield[@code = 'm']"/>
-                        <xsl:text> - </xsl:text>
-                        <xsl:value-of select="marc:subfield[@code = 'n']"/>
-                    </rdatd:P70016>
-                    <rdatd:P70045>Date span for the validity of a resource</rdatd:P70045>
-                    <rdatd:P70039>
-                        <xsl:value-of select="marc:subfield[@code = 'm']"/>
-                    </rdatd:P70039>
-                    <rdatd:P70040>
-                        <xsl:value-of select="marc:subfield[@code = 'n']"/>
-                    </rdatd:P70040>
-                </rdf:Description>
-            </xsl:if>
-            
-            <!-- Row 38: Expression timespan (indicator 1 = 2) -->
-            <xsl:if test="@ind1 = '2'">
-                <xsl:variable name="dateSuffix" select="concat(marc:subfield[@code = 'm'], ' - ', marc:subfield[@code = 'n'])"/>
-                <rdf:Description rdf:about="{uwf:timespanIRI($baseID, ., $dateSuffix)}">
-                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
-                    <rdatd:P70016>
-                        <xsl:value-of select="marc:subfield[@code = 'm']"/>
-                        <xsl:text> - </xsl:text>
-                        <xsl:value-of select="marc:subfield[@code = 'n']"/>
-                    </rdatd:P70016>
-                    <rdatd:P70045>Date span for the validity of a resource</rdatd:P70045>
-                    <rdatd:P70039>
-                        <xsl:value-of select="marc:subfield[@code = 'm']"/>
-                    </rdatd:P70039>
-                    <rdatd:P70040>
-                        <xsl:value-of select="marc:subfield[@code = 'n']"/>
-                    </rdatd:P70040>
-                </rdf:Description>
-            </xsl:if>
-            
-            <!-- Row 39: Manifestation timespan (indicator 1 = 3) -->
-            <xsl:if test="@ind1 = '3'">
-                <xsl:variable name="dateSuffix" select="concat(marc:subfield[@code = 'm'], ' - ', marc:subfield[@code = 'n'])"/>
-                <rdf:Description rdf:about="{uwf:timespanIRI($baseID, ., $dateSuffix)}">
-                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
-                    <rdatd:P70016>
-                        <xsl:value-of select="marc:subfield[@code = 'm']"/>
-                        <xsl:text> - </xsl:text>
-                        <xsl:value-of select="marc:subfield[@code = 'n']"/>
-                    </rdatd:P70016>
-                    <rdatd:P70045>Date span for the validity of a resource</rdatd:P70045>
-                    <rdatd:P70039>
-                        <xsl:value-of select="marc:subfield[@code = 'm']"/>
-                    </rdatd:P70039>
-                    <rdatd:P70040>
-                        <xsl:value-of select="marc:subfield[@code = 'n']"/>
-                    </rdatd:P70040>
-                </rdf:Description>
-            </xsl:if>
+            <xsl:variable name="dateSuffix" select="concat(marc:subfield[@code = 'm'], ' - ', marc:subfield[@code = 'n'])"/>
+            <xsl:call-template name="F046-timespan">
+                <xsl:with-param name="baseID" select="$baseID"/>
+                <xsl:with-param name="suffix" select="$dateSuffix"/>
+                <xsl:with-param name="note" select="'Date span for the validity of a resource'"/>
+            </xsl:call-template>
         </xsl:if>
 
-        <!-- Row 40: Work original release timespan -->
+        <!-- Row 40: Work creation range timespan (subfields $o and $p) -->
         <xsl:if test="marc:subfield[@code = 'o'] and marc:subfield[@code = 'p']">
             <xsl:variable name="dateSuffix" select="concat(marc:subfield[@code = 'o'], ' - ', marc:subfield[@code = 'p'])"/>
-            <rdf:Description rdf:about="{uwf:timespanIRI($baseID, ., $dateSuffix)}">
-                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
-                <rdatd:P70016>
-                    <xsl:value-of select="marc:subfield[@code = 'o']"/>
-                    <xsl:text> - </xsl:text>
-                    <xsl:value-of select="marc:subfield[@code = 'p']"/>
-                </rdatd:P70016>
-                <rdatd:P70045>Date span of original release of the contents of a collection/aggregation</rdatd:P70045>
-                <rdatd:P70039>
-                    <xsl:value-of select="marc:subfield[@code = 'o']"/>
-                </rdatd:P70039>
-                <rdatd:P70040>
-                    <xsl:value-of select="marc:subfield[@code = 'p']"/>
-                </rdatd:P70040>
-            </rdf:Description>
-         </xsl:if>
-
-        <!-- Row 45: has note on timespan -->
-        <xsl:if test="marc:subfield[@code = 'x'] and marc:subfield[@code = 'z']">
-            <xsl:variable name="xValue" select="number(marc:subfield[@code = 'x'])"/>
-            <xsl:variable name="zValue" select="number(marc:subfield[@code = 'z'])"/>
-            <xsl:if test="string($xValue) != 'NaN' and string($zValue) != 'NaN'">
-                <rdatd:P70045>
-                    <xsl:value-of select="$xValue + $zValue"/>
-                </rdatd:P70045>
-            </xsl:if>
-         </xsl:if>
-
-        <!-- Rows 68-71 -->
-        <xsl:if test="(@ind1 = '1' or @ind1 = '2' or @ind1 = '3' or @ind1 = ' ') and marc:subfield[@code = 'x']">
-            <rdatd:P70045>
-                <xsl:value-of select="marc:subfield[@code = 'x']"/>
-            </rdatd:P70045>
-        </xsl:if>
-
-        <!-- Rows 72-75 -->
-        <xsl:if test="(@ind1 = '1' or @ind1 = '2' or @ind1 = '3' or @ind1 = ' ') and marc:subfield[@code = 'z']">
-            <rdatd:P70045>
-                <xsl:value-of select="marc:subfield[@code = 'z']"/>
-            </rdatd:P70045>
-        </xsl:if>
-
-        <!-- Row 79 -->
-        <xsl:if test="@ind1 = '2' and marc:subfield[@code = '3']">
-            <rdatd:P70045>
-                <xsl:text>applies to: </xsl:text>
-                <xsl:value-of select="marc:subfield[@code = '3']"/>
-            </rdatd:P70045>
+            <xsl:call-template name="F046-timespan">
+                <xsl:with-param name="baseID" select="$baseID"/>
+                <xsl:with-param name="suffix" select="$dateSuffix"/>
+                <xsl:with-param name="note" select="'Date span of original release of the contents of a collection/aggregation'"/>
+            </xsl:call-template>
         </xsl:if>
 
     </xsl:template>
@@ -3388,7 +3227,7 @@
                 <rdand:P80069>
                     <xsl:choose>
                         <xsl:when test="marc:subfield[@code = '2']">
-                            <xsl:value-of select="uwf:stripOuterBracketsAndParentheses(marc:subfield[@code = '2'])"/>
+                            <xsl:value-of select="marc:subfield[@code = '2']"/>
                         </xsl:when>
                         <xsl:otherwise>Representations of Dates and Times (ISO 8601)</xsl:otherwise>
                     </xsl:choose>

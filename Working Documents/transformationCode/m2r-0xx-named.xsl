@@ -184,48 +184,155 @@
     </xsl:template>
 
     <!--046-->
-    <xsl:template name="F0046-timespan">
+    <xsl:template name="F046-timespan">
         <xsl:param name="baseID"/>
         <xsl:param name="suffix"/>
         <xsl:param name="note"/>
          
         <rdf:Description rdf:about="{uwf:timespanIRI($baseID, ., $suffix)}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
-             
-                           <!-- Combined date range with B.C.E. suffix -->
-              <rdatd:P70016><xsl:value-of select="concat(
-                  if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'], ' B.C.E.') 
-                  else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c'] 
-                  else '',
-                  if (marc:subfield[@code = 'b' or @code = 'c'] and marc:subfield[@code = 'd' or @code = 'e']) then ' - ' 
-                  else '',
-                  if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'], ' B.C.E.') 
-                  else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e'] 
-                  else ''
-              )"/></rdatd:P70016>
-              
-              <!-- Note about the timespan -->
-              <rdatd:P70045><xsl:value-of select="$note"/></rdatd:P70045>
-              
-              <!-- Beginning date -->
-              <xsl:if test="marc:subfield[@code = 'b' or @code = 'c']">
-                  <rdatd:P70039><xsl:value-of select="
-                      if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'], ' B.C.E.') 
-                      else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c'] 
-                      else ''
-                  "/></rdatd:P70039>
-              </xsl:if>
-              
-              <!-- Ending date -->
-              <xsl:if test="marc:subfield[@code = 'd' or @code = 'e']">
-                  <rdatd:P70040><xsl:value-of select="
-                      if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'], ' B.C.E.') 
-                      else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e'] 
-                      else ''
-                  "/></rdatd:P70040>
-              </xsl:if>
-         </rdf:Description>
-     </xsl:template>
+
+            <!-- Consolidated date handling for all cases (rows 12, 14, 29, 30) -->
+            <xsl:if test="marc:subfield[@code = 'b'] or marc:subfield[@code = 'c'] or marc:subfield[@code = 'd'] or marc:subfield[@code = 'e']">
+                <!-- rdatd:P70016: value of $b|$c - $d|$e, add "B.C.E." after $b and $d -->
+                <xsl:variable name="startDate">
+                    <xsl:choose>
+                        <xsl:when test="marc:subfield[@code = 'b']">
+                            <xsl:value-of select="concat(marc:subfield[@code = 'b'], ' B.C.E.')"/>
+                        </xsl:when>
+                        <xsl:when test="marc:subfield[@code = 'c']">
+                            <xsl:value-of select="marc:subfield[@code = 'c']"/>
+                        </xsl:when>
+                    </xsl:choose>
+                </xsl:variable>
+                <xsl:variable name="endDate">
+                    <xsl:choose>
+                        <xsl:when test="marc:subfield[@code = 'd']">
+                            <xsl:value-of select="concat(marc:subfield[@code = 'd'], ' B.C.E.')"/>
+                        </xsl:when>
+                        <xsl:when test="marc:subfield[@code = 'e']">
+                            <xsl:value-of select="marc:subfield[@code = 'e']"/>
+                        </xsl:when>
+                    </xsl:choose>
+                </xsl:variable>
+                <xsl:if test="string($startDate) != '' and string($endDate) != ''">
+                    <rdatd:P70016>
+                        <xsl:value-of select="concat($startDate, ' - ', $endDate)"/>
+                    </rdatd:P70016>
+                </xsl:if>
+                
+                <!-- rdatd:P70039: value of $b|$c which is present. Add "B.C.E." after $b -->
+                <xsl:if test="marc:subfield[@code = 'b'] or marc:subfield[@code = 'c']">
+                    <rdatd:P70039>
+                        <xsl:choose>
+                            <xsl:when test="marc:subfield[@code = 'b']">
+                                <xsl:value-of select="concat(marc:subfield[@code = 'b'], ' B.C.E.')"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="marc:subfield[@code = 'c']"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </rdatd:P70039>
+                </xsl:if>
+                
+                <!-- rdatd:P70040: value of $d|$e which is present. Add "B.C.E." after $d -->
+                <xsl:if test="marc:subfield[@code = 'd'] or marc:subfield[@code = 'e']">
+                    <rdatd:P70040>
+                        <xsl:choose>
+                            <xsl:when test="marc:subfield[@code = 'd']">
+                                <xsl:value-of select="concat(marc:subfield[@code = 'd'], ' B.C.E.')"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="marc:subfield[@code = 'e']"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </rdatd:P70040>
+                </xsl:if>
+            </xsl:if>
+
+            <!-- Row 31-34: $j is present -->
+            <xsl:if test="marc:subfield[@code = 'j']">
+                <rdato:P70016 rdf:resource="{uwf:nomenIRI($baseID, ., marc:subfield[@code = 'j'], 
+                    if (marc:subfield[@code = '2']) then marc:subfield[@code = '2'] else 'Representations of Dates and Times (ISO 8601)', 
+                    'timespan')}"/>
+            </xsl:if>
+
+            <!-- Row 35: $k,l are present -->
+            <xsl:if test="marc:subfield[@code = 'k'] and marc:subfield[@code = 'l']">
+                <rdatd:P70016>
+                    <xsl:value-of select="concat(marc:subfield[@code = 'k'], ' - ', marc:subfield[@code = 'l'])"/>
+                </rdatd:P70016>
+                <rdatd:P70039>
+                    <xsl:value-of select="marc:subfield[@code = 'k']"/>
+                </rdatd:P70039>
+                <rdatd:P70040>
+                    <xsl:value-of select="marc:subfield[@code = 'l']"/>
+                </rdatd:P70040>
+            </xsl:if>
+
+            <!-- Row 36-39: $m,n are present -->
+            <xsl:if test="marc:subfield[@code = 'm'] and marc:subfield[@code = 'n']">
+                <rdatd:P70016>
+                    <xsl:value-of select="concat(marc:subfield[@code = 'm'], ' - ', marc:subfield[@code = 'n'])"/>
+                </rdatd:P70016>
+                <rdatd:P70039>
+                    <xsl:value-of select="marc:subfield[@code = 'm']"/>
+                </rdatd:P70039>
+                <rdatd:P70040>
+                    <xsl:value-of select="marc:subfield[@code = 'n']"/>
+                </rdatd:P70040>
+            </xsl:if>
+
+            <!-- Row 40: $o,p are present -->
+            <xsl:if test="marc:subfield[@code = 'o'] and marc:subfield[@code = 'p']">
+                <rdatd:P70016>
+                    <xsl:value-of select="concat(marc:subfield[@code = 'o'], ' - ', marc:subfield[@code = 'p'])"/>
+                </rdatd:P70016>
+                <rdatd:P70039>
+                    <xsl:value-of select="marc:subfield[@code = 'o']"/>
+                </rdatd:P70039>
+                <rdatd:P70040>
+                    <xsl:value-of select="marc:subfield[@code = 'p']"/>
+                </rdatd:P70040>
+            </xsl:if>
+            
+            <!-- Note about the timespan -->
+            <xsl:if test="string($note) != ''">
+                <rdatd:P70045><xsl:value-of select="$note"/></rdatd:P70045>
+            </xsl:if>
+            
+            <!-- Row 45: sum of numeric $x and $z if both numeric -->
+            <xsl:if test="marc:subfield[@code = 'x'] and marc:subfield[@code = 'z']">
+                <xsl:variable name="xValue" select="number(marc:subfield[@code = 'x'])"/>
+                <xsl:variable name="zValue" select="number(marc:subfield[@code = 'z'])"/>
+                <xsl:if test="string($xValue) != 'NaN' and string($zValue) != 'NaN'">
+                    <rdatd:P70045>
+                        <xsl:value-of select="$xValue + $zValue"/>
+                    </rdatd:P70045>
+                </xsl:if>
+            </xsl:if>
+            <!-- Rows 68-71: emit $x as note when present -->
+            <xsl:if test="marc:subfield[@code = 'x']">
+                <rdatd:P70045>
+                    <xsl:value-of select="marc:subfield[@code = 'x']"/>
+                </rdatd:P70045>
+            </xsl:if>
+            <!-- Rows 72-75: emit $z as note when present -->
+            <xsl:if test="marc:subfield[@code = 'z']">
+                <rdatd:P70045>
+                    <xsl:value-of select="marc:subfield[@code = 'z']"/>
+                </rdatd:P70045>
+            </xsl:if>
+
+            <!-- Rows 78-80: if $3 present, include applies-to note -->
+            <xsl:if test="marc:subfield[@code = '3'] and @ind1 = '2'">
+                <rdatd:P70045>
+                    <xsl:text>applies to: </xsl:text>
+                    <xsl:value-of select="marc:subfield[@code = '3']"/>
+                </rdatd:P70045>
+            </xsl:if>
+        </rdf:Description>
+    </xsl:template>
      
     <!-- F0082-deweyClassification: Named template for MARC 082 -->
     <xsl:template name="F0082-deweyClassification">
