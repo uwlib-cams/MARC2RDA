@@ -78,8 +78,13 @@
         <xsl:param name="baseID"/>
         <xsl:param name="manIRI"/>
         <xsl:param name="context"/>
-        <xsl:variable name="placeString" select="string-join($context/marc:subfield[@code=('a','b','c','d','f','g','h','1','2','4')][normalize-space(.) != ''], ', ')"/>
-        <xsl:variable name="placeIRI" select="uwf:placeIRI($baseID,$context,$placeString,'')"/>
+        <xsl:variable name="placeSubfields" select="marc:subfield[@code = 'a' or @code = 'b' or @code = 'c' or
+            @code = 'd' or @code = 'f' or @code = 'g' or
+            @code = 'h' or @code = '1' or @code = '2' or
+            @code = '4']" /> 
+        <xsl:variable name="placeString" select="string-join($placeSubfields, ', ')"/>
+        <xsl:variable name="placeIRI" select="uwf:placeIRI($baseID, $context, $placeString, '')"/>        
+        
         <xsl:variable name="subfield4" select="lower-case($context/marc:subfield[@code='4'])"/>
         <xsl:variable name="subfieldE" select="lower-case($context/marc:subfield[@code='e'])"/>
         
@@ -126,7 +131,7 @@
         </rdf:Description>
         
         <!-- Place string (codes: a–d, f–h, 1, 2, 4) -->
-        <xsl:if test="$context/marc:subfield[@code=('a','b','c','d','f','g','h','1','2','4')][normalize-space(.) != '']">
+        <xsl:if test="$placeSubfields">
             <rdf:Description rdf:about="{$placeIRI}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
                 <rdaid:P80175>
