@@ -2933,13 +2933,11 @@
         <xsl:if test="marc:subfield[@code = 'a'] = 't' and marc:subfield[@code = ('d','e')]">
             <xsl:if test="marc:subfield[@code = 'd']">
                 <rdamd:P30007>
-                    <xsl:text>Date of publication/release/production/execution: </xsl:text>
                     <xsl:value-of select="marc:subfield[@code = 'd']"/>
                 </rdamd:P30007>
             </xsl:if>
             <xsl:if test="marc:subfield[@code = 'e']">
                 <rdamd:P30007>
-                    <xsl:text>Copyright date: </xsl:text>
                     <xsl:value-of select="marc:subfield[@code = 'e']"/>
                 </rdamd:P30007>
             </xsl:if>
