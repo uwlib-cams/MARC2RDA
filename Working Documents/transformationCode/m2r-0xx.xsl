@@ -3715,52 +3715,56 @@
         | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '082']"
         mode="wor">
         <xsl:param name="baseID"/>
-        <!-- Normalize $a by removing slashes -->
-        <xsl:variable name="normalizedA" select="replace(marc:subfield[@code = 'a'], '/', '')"/>
-        
-        <!-- Get edition code from $2 -->
-        <xsl:variable name="editionCode" select="substring(marc:subfield[@code = '2'], 1, 2)"/>
-        
-        <xsl:variable name="fullCode">
-            <xsl:choose>
-                <xsl:when test="@ind1 = '0' and marc:subfield[@code = '2']">
-                    <xsl:value-of select="'ddc'||$editionCode"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:value-of select="'ddc'"/>
-                </xsl:otherwise>
-            </xsl:choose>
-        </xsl:variable>
-        <!-- Construct the scheme IRI based on ind1 and editionCode -->
-        
-        <rdawo:P10256 rdf:resource="{uwf:conceptIRI($fullCode, $normalizedA)}"/>
-        
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <!-- Normalize $a by removing slashes -->
+            <xsl:variable name="normalizedA" select="replace(., '/', '')"/>
+            
+            <!-- Get edition code from $2 -->
+            <xsl:variable name="editionCode" select="substring(../marc:subfield[@code = '2'][1], 1, 2)"/>
+            
+            <xsl:variable name="fullCode">
+                <xsl:choose>
+                    <xsl:when test="../@ind1 = '0' and ../marc:subfield[@code = '2'][1]">
+                        <xsl:value-of select="'ddc'||$editionCode"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="'ddc'"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:variable>
+            <!-- Construct the scheme IRI based on ind1 and editionCode -->
+            
+            <rdawo:P10256 rdf:resource="{uwf:conceptIRI($fullCode, $normalizedA)}"/>
+            
+        </xsl:for-each>
     </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '082'] 
         | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '082']"
         mode="con">
-        <!-- Normalize $a by removing slashes -->
-        <xsl:variable name="normalizedA" select="replace(marc:subfield[@code = 'a'], '/', '')"/>
-        
-        <!-- Get edition code from $2 -->
-        <xsl:variable name="editionCode" select="substring(marc:subfield[@code = '2'], 1, 2)"/>
-        
-        <xsl:variable name="fullCode">
-            <xsl:choose>
-                <xsl:when test="@ind1 = '0' and marc:subfield[@code = '2']">
-                    <xsl:value-of select="'ddc'||$editionCode"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:value-of select="'ddc'"/>
-                </xsl:otherwise>
-            </xsl:choose>
-        </xsl:variable>
-        
-        <rdf:Description rdf:about="{uwf:conceptIRI($fullCode, $normalizedA)}">
-            <xsl:copy-of select="uwf:fillClassConcept($fullCode, $normalizedA, $normalizedA, '082')"/>
-        </rdf:Description>
-        
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <!-- Normalize $a by removing slashes -->
+            <xsl:variable name="normalizedA" select="replace(., '/', '')"/>
+            
+            <!-- Get edition code from $2 -->
+            <xsl:variable name="editionCode" select="substring(../marc:subfield[@code = '2'], 1, 2)"/>
+            
+            <xsl:variable name="fullCode">
+                <xsl:choose>
+                    <xsl:when test="../@ind1 = '0' and ../marc:subfield[@code = '2']">
+                        <xsl:value-of select="'ddc'||$editionCode"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="'ddc'"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:variable>
+            
+            <rdf:Description rdf:about="{uwf:conceptIRI($fullCode, $normalizedA)}">
+                <xsl:copy-of select="uwf:fillClassConcept($fullCode, $normalizedA, $normalizedA, '082')"/>
+            </rdf:Description>
+            
+        </xsl:for-each>
     </xsl:template>
 
     <!-- 083 - Additional Dewey Decimal Classification Number -->
@@ -3950,18 +3954,6 @@
                 <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
             </rdf:Description>
         </xsl:for-each>
-    </xsl:template>
-
-    <!--082-->
-    <xsl:template match="marc:datafield[@tag = '082'] 
-        | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '082']"
-        mode="man">
-        <xsl:param name="baseID"/>
-        <xsl:call-template name="F0082-deweyClassification">
-            <xsl:with-param name="baseID" select="$baseID"/>
-            <xsl:with-param name="suffix" select="'dewey'"/>
-            <xsl:with-param name="note" select="'Dewey Decimal Classification Number'"/>
-        </xsl:call-template>
     </xsl:template>
 
 </xsl:stylesheet>

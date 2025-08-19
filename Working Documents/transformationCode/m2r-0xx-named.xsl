@@ -333,59 +333,6 @@
             </xsl:if>
         </rdf:Description>
     </xsl:template>
-     
-    <!-- F0082-deweyClassification: Named template for MARC 082 -->
-    <xsl:template name="F0082-deweyClassification">
-        <xsl:param name="baseID"/>
-        <xsl:param name="suffix"/>
-        <xsl:param name="note"/>
-        
-        <!-- Normalize $a by removing slashes -->
-        <xsl:variable name="normalizedA" select="replace(marc:subfield[@code = 'a'], '/', '')"/>
-        
-        <!-- Get edition code from $2 -->
-        <xsl:variable name="editionCode" select="marc:subfield[@code = '2']"/>
-        
-        <!-- Construct the scheme IRI based on ind1 and editionCode -->
-        <xsl:variable name="schemeIRI">
-            <xsl:choose>
-                <xsl:when test="@ind1 = '0'">
-                    <xsl:text>http://id.loc.gov/vocabulary/classSchemes/ddc</xsl:text>
-                    <xsl:value-of select="substring-before($editionCode, '/')"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:text>http://id.loc.gov/vocabulary/classSchemes/ddc</xsl:text>
-                </xsl:otherwise>
-            </xsl:choose>
-        </xsl:variable>
-        
-        <!-- Create concept IRI: schemeIRI#normalizedA -->
-        <xsl:variable name="conceptIRI" select="concat($schemeIRI, '#', $normalizedA)"/>
-        
-        <!-- 1. Link the Work to the classification concept -->
-        <rdf:Description rdf:about="{$baseID}">
-            <rdawo:P10256 rdf:resource="{$conceptIRI}"/>
-        </rdf:Description>
-        
-        <!-- 2. Define the classification concept itself -->
-        <rdf:Description rdf:about="{$conceptIRI}" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
-            <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            
-            <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-                <xsl:value-of select="$normalizedA"/>
-            </skos:notation>
-            
-            <skos:altLabel>
-                <xsl:value-of select="$normalizedA"/>
-            </skos:altLabel>
-            
-            <skos:inScheme rdf:resource="{$schemeIRI}"/>
-            
-            <rdatd:P70045>
-                <xsl:value-of select="$note"/>
-            </rdatd:P70045>
-        </rdf:Description>
-    </xsl:template>
     
 </xsl:stylesheet>
 
