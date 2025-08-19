@@ -151,6 +151,36 @@
         </xsl:for-each>
     </xsl:template>
     
+    <!-- 753 -->   
+        <xsl:variable name="subfields" select="marc:subfield[@code = 'a' or @code = 'b' or 
+            @code = 'c' or @code = '1' or @code = '2']"/>
+        <xsl:if test="$subfields">
+            <xsl:for-each select="$subfields">
+                <xsl:choose>
+                    <xsl:when test="@code = 'a'">
+                        <xsl:text>Make and model of machine: </xsl:text>
+                    </xsl:when>
+                    <xsl:when test="@code = 'b'">
+                        <xsl:text>Programming language: </xsl:text>
+                    </xsl:when>
+                    <xsl:when test="@code = 'c'">
+                        <xsl:text>Operating system: </xsl:text>
+                    </xsl:when>
+                    <xsl:when test="@code = '1'">
+                        <xsl:text>URI: </xsl:text>
+                    </xsl:when>
+                    <xsl:when test="@code = '2'">
+                        <xsl:text>Source: </xsl:text>
+                    </xsl:when>
+                </xsl:choose>
+                <xsl:value-of select="normalize-space(.)"/>
+                <xsl:if test="position() != last()">
+                    <xsl:text>; </xsl:text>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+
     <!-- 754 --> 
     <xsl:template name="F754-xx-acdxz" expand-text="yes">
         <xsl:param name="baseID"/>

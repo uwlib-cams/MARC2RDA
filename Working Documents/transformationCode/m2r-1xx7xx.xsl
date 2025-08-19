@@ -1180,6 +1180,14 @@
         </xsl:call-template>
     </xsl:template>
 
+    <!-- 753 System Details Access to Computer Files -->  
+    <xsl:template match="marc:datafield[@tag = '753'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '753-00']"
+        mode="man">
+        <rdam:P30384>
+            <xsl:call-template name="F753-xx-abc12"/>
+        </rdam:P30384>
+    </xsl:template>
+     
     <!-- 754 Added Entry-Taxonomic Identification -->  
     <xsl:template match="marc:datafield[@tag = '754'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '754-00']" 
         mode="ite">
