@@ -1,109 +1,109 @@
 <items>
-  <item>^&amp;</item>
-  <item>^and,</item>
-  <item>^photographs</item>
-  <item>^plus,</item>
-  <item>^stories</item>
-  <item>^with,</item>
-  <item>; &amp;,</item>
-  <item>; and,</item>
-  <item>; plus,</item>
-  <item>; with,</item>
-  <item>articles</item>
-  <item>papers</item>
-  <item>a bibliography</item>
-  <item>a book of</item>
-  <item>a catalog</item>
-  <item>a catalogue</item>
-  <item>a collection of</item>
-  <item>a compendium</item>
-  <item>a compilation</item>
-  <item>a concordance</item>
-  <item>a dictionary</item>
-  <item>a directory</item>
-  <item>a discography</item>
-  <item>a filmography</item>
-  <item>a genealogy</item>
-  <item>a language dictionary</item>
-  <item>a miscellany</item>
-  <item>a selection</item>
-  <item>a symposium</item>
-  <item>a treasury of</item>
-  <item>a tribute to</item>
-  <item>an anthology</item>
-  <item>an index of</item>
-  <item>and other</item>
-  <item>anecdotes</item>
-  <item>bedtime stories</item>
-  <item>biographical sketches</item>
-  <item>case studies</item>
-  <item>collected</item>
-  <item>complete novels</item>
-  <item>containing</item>
-  <item>conversations of</item>
-  <item>cookbook</item>
-  <item>correspondence</item>
-  <item>daily devotions of</item>
-  <item>dialogues</item>
-  <item>directory</item>
-  <item>dispatches of</item>
-  <item>documents</item>
-  <item>essays</item>
-  <item>fables</item>
-  <item>folktales</item>
-  <item>ghost stories</item>
-  <item>hearings</item>
-  <item>hymnal</item>
-  <item>in verse</item>
-  <item>lectures</item>
-  <item>letters</item>
-  <item>manifestos</item>
-  <item>maxims</item>
-  <item>monologues</item>
-  <item>narratives</item>
-  <item>novels of</item>
-  <item>omnibus</item>
-  <item>other stories</item>
-  <item>performances</item>
-  <item>perspectives</item>
-  <item>poems</item>
-  <item>poetry</item>
-  <item>prayer book</item>
-  <item>prayers of</item>
-  <item>proceedings</item>
-  <item>proclamations</item>
-  <item>quotations of</item>
-  <item>quotes</item>
-  <item>readings</item>
-  <item>recipes</item>
-  <item>reflections</item>
-  <item>reminiscences</item>
-  <item>reports</item>
-  <item>resolutions</item>
-  <item>reviews</item>
-  <item>rhymes</item>
-  <item>sayings of</item>
-  <item>selected</item>
-  <item>selections</item>
-  <item>sermons</item>
-  <item>short stories of</item>
-  <item>songbook</item>
-  <item>speeches</item>
-  <item>summary</item>
-  <item>tales</item>
-  <item>teachings of</item>
-  <item>the catalog of</item>
-  <item>the catalogue of</item>
-  <item>the photographs</item>
-  <item>the poetry of</item>
-  <item>thoughts of</item>
-  <item>unpublished photographs</item>
-  <item>verses</item>
-  <item>vignettes</item>
-  <item>with a</item>
-  <item>with remarks</item>
-  <item>words of</item>
-  <item>works</item>
-  <item>writings of</item>
+	<item>^&amp;,</item>
+	<item>^and,</item>
+	<item>^photographs</item>
+	<item>^plus,</item>
+	<item>^stories</item>
+	<item>^with,</item>
+	<item> ; &amp;,</item>
+	<item> ; and,</item>
+	<item> ; plus,</item>
+	<item> ; with,</item>
+	<item> articles</item>
+	<item> papers</item>
+	<item>a bibliography</item>
+	<item>a book of</item>
+	<item>a catalog</item>
+	<item>a catalogue</item>
+	<item>a collection of</item>
+	<item>a compendium</item>
+	<item>a compilation</item>
+	<item>a concordance</item>
+	<item>a dictionary</item>
+	<item>a directory</item>
+	<item>a discography</item>
+	<item>a filmography</item>
+	<item>a genealogy</item>
+	<item>a language dictionary</item>
+	<item>a miscellany</item>
+	<item>a selection</item>
+	<item>a symposium</item>
+	<item>a treasury of</item>
+	<item>a tribute to</item>
+	<item>an anthology</item>
+	<item>an index of</item>
+	<item>and other</item>
+	<item>anecdotes</item>
+	<item>bedtime stories</item>
+	<item>biographical sketches</item>
+	<item>case studies</item>
+	<item>collected</item>
+	<item>complete novels</item>
+	<item>containing</item>
+	<item>conversations of</item>
+	<item>cookbook</item>
+	<item>correspondence</item>
+	<item>daily devotions of</item>
+	<item>dialogues</item>
+	<item>directory</item>
+	<item>dispatches of</item>
+	<item>documents</item>
+	<item>essays</item>
+	<item>fables</item>
+	<item>folktales</item>
+	<item>ghost stories</item>
+	<item>hearings</item>
+	<item>hymnal</item>
+	<item>in verse</item>
+	<item>lectures</item>
+	<item>letters</item>
+	<item>manifestos</item>
+	<item>maxims</item>
+	<item>monologues</item>
+	<item>narratives</item>
+	<item>novels of</item>
+	<item>omnibus</item>
+	<item>other stories</item>
+	<item>performances</item>
+	<item>perspectives</item>
+	<item>poems</item>
+	<item>poetry</item>
+	<item>prayer book</item>
+	<item>prayers of</item>
+	<item>proceedings</item>
+	<item>proclamations</item>
+	<item>quotations of</item>
+	<item>quotes</item>
+	<item>readings</item>
+	<item>recipes</item>
+	<item>reflections</item>
+	<item>reminiscences</item>
+	<item>reports</item>
+	<item>resolutions</item>
+	<item>reviews</item>
+	<item>rhymes</item>
+	<item>sayings of</item>
+	<item>selected</item>
+	<item>selections</item>
+	<item>sermons</item>
+	<item>short stories of</item>
+	<item>songbook</item>
+	<item>speeches</item>
+	<item>summary</item>
+	<item>tales</item>
+	<item>teachings of</item>
+	<item>the catalog of</item>
+	<item>the catalogue of</item>
+	<item>the photographs</item>
+	<item>the poetry of</item>
+	<item>thoughts of</item>
+	<item>unpublished photographs</item>
+	<item>verses</item>
+	<item>vignettes</item>
+	<item>with a </item>
+	<item>with an </item>
+	<item>with remarks</item>
+	<item>words of</item>
+	<item>works</item>
+	<item>writings of</item>
 </items>
-

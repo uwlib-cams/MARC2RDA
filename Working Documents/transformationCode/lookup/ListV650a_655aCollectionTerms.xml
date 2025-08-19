@@ -1,92 +1,92 @@
 <items>
-  <item>Albums (Books)</item>
-  <item>Almanacs</item>
-  <item>Anatomical atlases</item>
-  <item>Anthology films</item>
-  <item>Anthology television programs</item>
-  <item>Artist files</item>
-  <item>Atlases</item>
-  <item>Bibliographies</item>
-  <item>Calendars</item>
-  <item>Catalogs</item>
-  <item>Catalogues raisonne´s</item>
-  <item>Children's atlases</item>
-  <item>Collages</item>
-  <item>Collections</item>
-  <item>Compilation films</item>
-  <item>Compilation radio programs</item>
-  <item>Compilation television programs</item>
-  <item>Composite atlases</item>
-  <item>Concordances</item>
-  <item>Conference materials</item>
-  <item>Conference papers and proceedings</item>
-  <item>Controlled vocabularies</item>
-  <item>Cookbooks</item>
-  <item>Cruise books</item>
-  <item>Databases</item>
-  <item>Death registers</item>
-  <item>Dictionaries</item>
-  <item>Digests</item>
-  <item>Directories</item>
-  <item>Discographies</item>
-  <item>Encyclopedias</item>
-  <item>Etymological dictionaries</item>
-  <item>Exhibition catalogs</item>
-  <item>FAQs</item>
-  <item>Festschriften</item>
-  <item>Filmographies</item>
-  <item>Finding aids</item>
-  <item>Gazetteers</item>
-  <item>Gazettes</item>
-  <item>Genealogy</item>
-  <item>Glossaries, vocabularies, etc.</item>
-  <item>Guidebooks</item>
-  <item>Hymnals</item>
-  <item>Indexes</item>
-  <item>Kits</item>
-  <item>Law commentaries</item>
-  <item>Law digests</item>
-  <item>Legal maxims</item>
-  <item>Legislative histories</item>
-  <item>Literary collections</item>
-  <item>Magazine format radio programs</item>
-  <item>Magazine format television programs</item>
-  <item>Martyrologies</item>
-  <item>Mashups (Music)</item>
-  <item>Medleys (Music)</item>
-  <item>Motion picture music</item>
-  <item>Multilingual dictionaries</item>
-  <item>Musicals</item>
-  <item>Nomenclatures</item>
-  <item>Pantomimes with music</item>
-  <item>Pharmacopoeias</item>
-  <item>Photobooks</item>
-  <item>Picture dictionaries</item>
-  <item>Proceedings</item>
-  <item>Radio anthologies</item>
-  <item>Religious inventories</item>
-  <item>Reverse dictionaries</item>
-  <item>Sampler albums (Sound recordings)</item>
-  <item>School yearbooks</item>
-  <item>Songbooks</item>
-  <item>Telephone directories</item>
-  <item>Terminology</item>
-  <item>Terms and phrases</item>
-  <item>Thematic catalogs (Music)</item>
-  <item>Thesauri (Dictionaries)</item>
-  <item>Trade catalogs</item>
-  <item>Trademark lists</item>
-  <item>Underground newspapers</item>
-  <item>Underground periodicals</item>
-  <item>Union catalogs</item>
-  <item>Union lists</item>
-  <item>Variety show</item>
-  <item>Video catalogs</item>
-  <item>Vox pop radio programs</item>
-  <item>Wine lists</item>
-  <item>World atlases</item>
-  <item>Yearbooks</item>
-  <item>Yellow pages</item>
-  <item>Zeitschrift</item>
-  <item>Zines</item>
+  <item>^Albums (Books)</item>
+  <item>^Almanacs</item>
+  <item>^Anatomical atlases</item>
+  <item>^Anthology films</item>
+  <item>^Anthology television programs</item>
+  <item>^Artist files</item>
+  <item>^Atlases</item>
+  <item>^Bibliographies</item>
+  <item>^Calendars</item>
+  <item>^Catalogs</item>
+  <item>^Catalogues raisonne´s</item>
+  <item>^Children's atlases</item>
+  <item>^Collages</item>
+  <item>^Collections</item>
+  <item>^Compilation films</item>
+  <item>^Compilation radio programs</item>
+  <item>^Compilation television programs</item>
+  <item>^Composite atlases</item>
+  <item>^Concordances</item>
+  <item>^Conference materials</item>
+  <item>^Conference papers and proceedings</item>
+  <item>^Controlled vocabularies</item>
+  <item>^Cookbooks</item>
+  <item>^Cruise books</item>
+  <item>^Databases</item>
+  <item>^Death registers</item>
+  <item>^Dictionaries</item>
+  <item>^Digests</item>
+  <item>^Directories</item>
+  <item>^Discographies</item>
+  <item>^Encyclopedias</item>
+  <item>^Etymological dictionaries</item>
+  <item>^Exhibition catalogs</item>
+  <item>^FAQs</item>
+  <item>^Festschriften</item>
+  <item>^Filmographies</item>
+  <item>^Finding aids</item>
+  <item>^Gazetteers</item>
+  <item>^Gazettes</item>
+  <item>^Genealogy</item>
+  <item>^Glossaries, vocabularies, etc.</item>
+  <item>^Guidebooks</item>
+  <item>^Hymnals</item>
+  <item>^Indexes</item>
+  <item>^Kits</item>
+  <item>^Law commentaries</item>
+  <item>^Law digests</item>
+  <item>^Legal maxims</item>
+  <item>^Legislative histories</item>
+  <item>^Literary collections</item>
+  <item>^Magazine format radio programs</item>
+  <item>^Magazine format television programs</item>
+  <item>^Martyrologies</item>
+  <item>^Mashups (Music)</item>
+  <item>^Medleys (Music)</item>
+  <item>^Motion picture music</item>
+  <item>^Multilingual dictionaries</item>
+  <item>^Musicals</item>
+  <item>^Nomenclatures</item>
+  <item>^Pantomimes with music</item>
+  <item>^Pharmacopoeias</item>
+  <item>^Photobooks</item>
+  <item>^Picture dictionaries</item>
+  <item>^Proceedings</item>
+  <item>^Radio anthologies</item>
+  <item>^Religious inventories</item>
+  <item>^Reverse dictionaries</item>
+  <item>^Sampler albums (Sound recordings)</item>
+  <item>^School yearbooks</item>
+  <item>^Songbooks</item>
+  <item>^Telephone directories</item>
+  <item>^Terminology</item>
+  <item>^Terms and phrases</item>
+  <item>^Thematic catalogs (Music)</item>
+  <item>^Thesauri (Dictionaries)</item>
+  <item>^Trade catalogs</item>
+  <item>^Trademark lists</item>
+  <item>^Underground newspapers</item>
+  <item>^Underground periodicals</item>
+  <item>^Union catalogs</item>
+  <item>^Union lists</item>
+  <item>^Variety show</item>
+  <item>^Video catalogs</item>
+  <item>^Vox pop radio programs</item>
+  <item>^Wine lists</item>
+  <item>^World atlases</item>
+  <item>^Yearbooks</item>
+  <item>^Yellow pages</item>
+  <item>^Zeitschrift</item>
+  <item>^Zines</item>
 </items>

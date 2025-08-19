@@ -7,6 +7,7 @@
     xmlns:uwf="http://universityOfWashington/functions"
     exclude-result-prefixes="marc ex" version="3.0">
     <xsl:output encoding="UTF-8" method="xml" indent="yes"/>
+    <!--<xsl:output encoding="UTF-8" method="text" indent="yes"/>-->
     <xsl:strip-space elements="*"/>
 
     <!-- This template will append corresponding aggregate manifestations based on a sequential pattern matches -->

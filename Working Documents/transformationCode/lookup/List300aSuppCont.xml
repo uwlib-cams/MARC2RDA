@@ -1,57 +1,26 @@
 <items>
-    <item>graph</item>
-    <item>graphs</item>
+    <item> chart</item>
+    <item> graph</item>
+    <item> graphs</item>
     <item>adv.</item>
     <item>advertisements</item>
-    <item>chart</item>
-    <item>charts</item>
     <item>coat of arms</item>
     <item>coat-of-arms</item>
     <item>coats of arms</item>
     <item>coats-of-arms</item>
-    <item>diagr.</item>
-    <item>diagram</item>
-    <item>diagrams</item>
+    <item>diagr</item>
     <item>diagrs</item>
-    <item>diagrs.</item>
-    <item>facsim</item>
-    <item>facsimile</item>
-    <item>facsimiles</item>
-    <item>facsims.</item>
+    <item>facsim </item>
     <item>floor plans</item>
-    <item>form</item>
-    <item>forms</item>
+    <item>form </item>
     <item>front</item>
-    <item>front.</item>
-    <item>frontispiece</item>
-    <item>fronts.</item>
-    <item>genal. tab.</item>
-    <item>genal. tables</item>
-    <item>geneal. table</item>
-    <item>genealogical tables</item>
+    <item>geneal</item>
     <item>ill</item>
-    <item>ill,</item>
-    <item>ill.</item>
-    <item>ills</item>
-    <item>illus</item>
-    <item>illus.</item>
-    <item>illustrated</item>
-    <item>illustration</item>
-    <item>illustrations</item>
     <item>pl.</item>
     <item>plan</item>
-    <item>plans</item>
     <item>plate</item>
-    <item>plates</item>
-    <item>port</item>
     <item>port.</item>
     <item>portrait</item>
-    <item>portraits</item>
     <item>ports</item>
-    <item>ports.</item>
     <item>sample</item>
-    <item>samples</item>
-    <item>tab.</item>
-    <item>table</item>
-    <item>tables</item>
 </items>

@@ -30,6 +30,7 @@
     <xsl:variable name="List500_520_546aParallelPlusTerms_CaseNo" select="document('lookup/List500_520_546aParallelPlusTerms_CaseNo.xml')/items/item"/>
     <xsl:variable name="List110b245aConferenceTerms" select="document('lookup/List110b245aConferenceTerms.xml')/items/item"/>
     <xsl:variable name="ListVMusicCCT_MLA_Type_Plural" select="document('lookup/ListVMusicCCT_MLA_Type_Plural.xml')/items/item"/>
+    <xsl:variable name="ListVMusicCCT_MLA_Medium" select="document('lookup/ListVMusicCCT_MLA_Medium.xml')/items/item"/>
 
     <xsl:template name="append-aggregates" expand-text="yes">
         <xsl:param name="wemi"/>
@@ -69,18 +70,31 @@
                     <xsl:with-param name="List500_520_546aParallelPlusTerms_CaseNo" select="$List500_520_546aParallelPlusTerms_CaseNo"/>
                     <xsl:with-param name="List110b245aConferenceTerms" select="$List110b245aConferenceTerms"/>
                     <xsl:with-param name="ListVMusicCCT_MLA_Type_Plural" select="$ListVMusicCCT_MLA_Type_Plural"/>
+                    <xsl:with-param name="ListVMusicCCT_MLA_Medium" select="$ListVMusicCCT_MLA_Medium"/>
                 </xsl:evaluate>
             </xsl:variable>
             <xsl:if test="$isMatched">
-                <matched-record>
-                    <!-- Review Name -->
-                    <xsl:value-of select="./name"/>
-                    <!-- LCCN -->
+
+                <!-- Can edit this to output more information -->
+                <matched-record> 
+                    <review-name>
+                        <xsl:value-of select="./name"/>
+                    </review-name>
+                    
                     <control-number>
                         <xsl:value-of select="$record/marc:datafield[@tag='010']/marc:subfield[@code='a']"/>
                     </control-number>
-                </matched-record>
-                <xsl:break/>
+
+                    <!--
+                    <subfield>
+                        <xsl:value-of select="$record/marc:datafield[@tag='700']"/>
+                    </subfield>
+                    <subfield>
+                        <xsl:value-of select="$record/marc:datafield[@tag='710']"/>
+                    </subfield>
+                    -->
+                </matched-record> 
+
             </xsl:if>
         </xsl:iterate>
 
@@ -114,6 +128,7 @@
                         <xsl:with-param name="List500_520_546aParallelPlusTerms_CaseNo" select="$List500_520_546aParallelPlusTerms_CaseNo"/>
                         <xsl:with-param name="List110b245aConferenceTerms" select="$List110b245aConferenceTerms"/>
                         <xsl:with-param name="ListVMusicCCT_MLA_Type_Plural" select="$ListVMusicCCT_MLA_Type_Plural"/>
+                        <xsl:with-param name="ListVMusicCCT_MLA_Medium" select="$ListVMusicCCT_MLA_Medium"/>
                     </xsl:evaluate>
                 </xsl:variable>
                 <xsl:if test="$isMatched">
@@ -173,6 +188,7 @@
                     <xsl:with-param name="List500_520_546aParallelPlusTerms_CaseNo" select="$List500_520_546aParallelPlusTerms_CaseNo"/>
                     <xsl:with-param name="List110b245aConferenceTerms" select="$List110b245aConferenceTerms"/>
                     <xsl:with-param name="ListVMusicCCT_MLA_Type_Plural" select="$ListVMusicCCT_MLA_Type_Plural"/>
+                    <xsl:with-param name="ListVMusicCCT_MLA_Medium" select="$ListVMusicCCT_MLA_Medium"/>
                 </xsl:evaluate>
             </xsl:variable>
             <xsl:if test="$isMatched">
