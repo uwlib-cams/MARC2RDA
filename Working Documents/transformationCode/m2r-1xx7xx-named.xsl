@@ -152,6 +152,7 @@
     </xsl:template>
     
     <!-- 753 -->   
+    <xsl:template name="F753-xx-abc12" expand-text="yes">  
         <xsl:variable name="subfields" select="marc:subfield[@code = 'a' or @code = 'b' or 
             @code = 'c' or @code = '1' or @code = '2']"/>
         <xsl:if test="$subfields">
