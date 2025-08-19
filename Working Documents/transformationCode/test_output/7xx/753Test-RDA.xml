@@ -69,7 +69,7 @@ F880 ## $6 753-00 $a IBMパソコン $b パスカル $c DOS 1.1
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc753-test"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
       <rdamd:P30276/>
-      <rdam:P30384>Make and model of machine: IBM PC; Programming language: Pascal; Operating system: DOS 1.1</rdam:P30384>
-      <rdam:P30384>Make and model of machine: IBMパソコン; Programming language: パスカル; Operating system: DOS 1.1</rdam:P30384>
+      <rdam:P30384>Make and model of machine: IBM PC; Programming language: Pascal; Operating system: DOS 1.1.</rdam:P30384>
+      <rdam:P30384>Make and model of machine: IBMパソコン; Programming language: パスカル; Operating system: DOS 1.1.</rdam:P30384>
    </rdf:Description>
 </rdf:RDF>

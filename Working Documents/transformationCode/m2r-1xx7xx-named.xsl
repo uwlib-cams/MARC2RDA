@@ -153,8 +153,8 @@
     
     <!-- 753 -->   
     <xsl:template name="F753-xx-abc12" expand-text="yes">  
-        <xsl:variable name="subfields" select="marc:subfield[@code = 'a' or @code = 'b' or 
-            @code = 'c' or @code = '1' or @code = '2']"/>
+        <xsl:variable name="subfields" select="marc:subfield[@code = 'a' or @code = 'b' or @code = 'c' or @code = '1' or @code = '2']"/>
+        
         <xsl:if test="$subfields">
             <xsl:for-each select="$subfields">
                 <xsl:choose>
@@ -175,9 +175,14 @@
                     </xsl:when>
                 </xsl:choose>
                 <xsl:value-of select="normalize-space(.)"/>
-                <xsl:if test="position() != last()">
-                    <xsl:text>; </xsl:text>
-                </xsl:if>
+                <xsl:choose>
+                    <xsl:when test="position() != last()">
+                        <xsl:text>; </xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:text>.</xsl:text>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
