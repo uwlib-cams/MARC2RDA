@@ -3007,7 +3007,7 @@
                 <xsl:choose>
                     <xsl:when test="marc:subfield[@code = 'b']">
                         <xsl:value-of select="marc:subfield[@code = 'b']"/>
-                        <xsl:text>B.C.E.</xsl:text>
+                        <xsl:text> B.C.E.</xsl:text>
                     </xsl:when>
                     <xsl:when test="marc:subfield[@code = 'c']">
                         <xsl:value-of select="marc:subfield[@code = 'c']"/>
