@@ -18,14 +18,20 @@
     </xsl:template>
     
     <xsl:template match="marc:collection">
-        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-            xmlns:uwmisc="http://uw.edu/all-purpose-namespace/"
-            xmlns:ex="http://fakeIRI2.edu/">
+        <marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
             <xsl:apply-templates select="marc:record"/>
-        </rdf:RDF>
+        </marc:collection>
     </xsl:template>
  
     <xsl:template match="marc:record" expand-text="yes">
-             <xsl:call-template name="append-aggregates"/>
+        <xsl:variable name="aggType" select="uwf:checkAggregates(.)"/>
+             <xsl:copy select=".">
+                 <xsl:copy-of select="./*"/>
+                 <marc:datafield tag="979" ind1=" " ind2=" ">
+                     <marc:subfield code="a">{$aggType}</marc:subfield>
+                 </marc:datafield>
+             </xsl:copy>
     </xsl:template>
 </xsl:stylesheet>

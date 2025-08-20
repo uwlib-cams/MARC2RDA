@@ -133,7 +133,7 @@
                          <xsl:value-of select="lower-case(marc:datafield[@tag = '979']/marc:subfield[@code = 'a'])"/>
                      </xsl:when>
                      <xsl:otherwise>
-                         <xsl:value-of select="'swe'"/>
+                         <xsl:value-of select="'sem'"/>
                      </xsl:otherwise>
                  </xsl:choose>-->
              </xsl:variable>
@@ -145,7 +145,7 @@
              
              <xsl:choose>
                  <!-- if single work expression or augmentation aggregate, proceed with transform -->
-                 <xsl:when test="$isAggregate = 'swe' or $isAggregate = 'aam'">
+                 <xsl:when test="$isAggregate = 'sem' or $isAggregate = 'aam'">
                                  
                      <!-- variable for generating unique IRIs - currently date  -->
                      <xsl:variable name="baseID" select="current-dateTime() => string() => uwf:stripAllPunctuation() => encode-for-uri()"/>
@@ -193,7 +193,7 @@
                      <xsl:choose>
                          
                          <!-- SINGLE WE -->
-                         <xsl:when test="$isAggregate = 'swe'">
+                         <xsl:when test="$isAggregate = 'sem'">
                              <!-- *****WORKS***** -->
                              <rdf:Description rdf:about="{$mainWorkIRI}">
                                  <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
