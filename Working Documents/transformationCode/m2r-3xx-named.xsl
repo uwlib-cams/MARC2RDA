@@ -3707,7 +3707,7 @@
                 <xsl:variable name="label" select="uwf:stripEndPunctuation(.)"/>
                 <xsl:variable name="notation" select="if (@code = 'b') then . else ../marc:subfield[@code='b'][position() = current()/position()]"/>
                 <xsl:variable name="schemeIRI" select="concat('https://id.loc.gov/vocabulary/subjectSchemes/', normalize-space($code2))"/>
-                <xsl:variable name="conceptIRI" select="uwf:conceptIRI()"/>
+<!--                <xsl:variable name="conceptIRI" select="uwf:conceptIRI()"/>-->
                 
                 <!-- 2. Define concept -->
                 <rdf:Description rdf:about="#{$conceptIRI}">
