@@ -3695,6 +3695,38 @@
         </xsl:if>
     </xsl:template>
     
+    <xsl:template name="F385-xx-a_b-concept">
+        <xsl:param name="baseID"/>
+        <xsl:param name="fieldNum" select="'385'"/>
+        <xsl:param name="note" select="marc:subfield[@code='3']"/>
+        <xsl:variable name="code2" select="marc:subfield[@code='2']"/>
+        <!-- Case 3: Mint skos:Concepts from $a or $b, with $2, and no $0/$1 -->
+        <xsl:variable name="code2" select="marc:subfield[@code='2']"/>
+        <xsl:if test="not(marc:subfield[@code='0'] or marc:subfield[@code='1']) and $code2">
+            <xsl:for-each select="marc:subfield[@code='a'] | (marc:subfield[@code='b'][not(../marc:subfield[@code='a'])])">
+                <xsl:variable name="label" select="uwf:stripEndPunctuation(.)"/>
+                <xsl:variable name="notation" select="if (@code = 'b') then . else ../marc:subfield[@code='b'][position() = current()/position()]"/>
+                <xsl:variable name="schemeIRI" select="concat('https://id.loc.gov/vocabulary/subjectSchemes/', normalize-space($code2))"/>
+                <xsl:variable name="conceptIRI" select="uwf:conceptIRI()"/>
+                
+                <!-- 2. Define concept -->
+                <rdf:Description rdf:about="#{$conceptIRI}">
+                    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <skos:prefLabel><xsl:value-of select="$label"/></skos:prefLabel>
+                    <xsl:if test="$notation">
+                        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+                            <xsl:value-of select="$notation"/>
+                        </skos:notation>
+                    </xsl:if>
+                    <skos:inScheme rdf:resource="{$schemeIRI}"/>
+                    <xsl:if test="$note">
+                        <rdatd:P70045><xsl:value-of select="$note"/></rdatd:P70045>
+                    </xsl:if>
+                </rdf:Description>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>
+    
     
     <!-- Named Template: 385 Manifestation -->
     <xsl:template name="F385-xx-a_b_m_n-manifestation-string">
