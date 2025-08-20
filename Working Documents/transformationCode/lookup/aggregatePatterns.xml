@@ -2,6 +2,7 @@
 <patterns>
     <!--
     <pattern>
+        <sort>1</sort>
         <id>122</id>
         <name>000 Collection work, Archival,  NOT 533</name>
         <type>CW</type>
@@ -9,6 +10,7 @@
     </pattern> 
     
     <pattern>
+        <sort>2</sort>
         <id>123</id>
         <name>000 Collection work, NOT Archival,  NOT 533</name>
         <type>CW</type>
@@ -16,6 +18,7 @@
     </pattern> 
     
     <pattern>
+        <sort>3</sort>
         <id>124</id>
         <name>000 SubUnit Collection work, NOT 533</name>
         <type>CW</type>
@@ -23,6 +26,7 @@
     </pattern> 
     
     <pattern>
+        <sort>4</sort>
         <id>144</id>
         <name>000 SubUnit Collection work, 300$a not 1, NOT 533</name>
         <type>CW</type>
@@ -31,6 +35,7 @@
     </pattern> 
     
     <pattern>
+        <sort>5</sort>
         <id>125</id>
         <name>000 Serial OR integrating resource</name>
         <type>DW</type>
@@ -38,6 +43,7 @@
     </pattern> 
      
     <pattern>
+        <sort>6</sort>
         <id>126</id>
         <name>26X Open or closed dates of publ., etc.</name>
         <type>DW</type>
@@ -82,6 +88,7 @@
     </pattern>
     
     <pattern>
+        <sort>8</sort>
         <id>128</id>
         <name>26X Current/Intervening publishers</name>
         <type>DW</type>
@@ -90,6 +97,7 @@
     </pattern> 
     
     <pattern>
+        <sort>9</sort>
         <id>129</id>
         <name>300$a loose-leaf</name>
         <type>DW</type>
@@ -99,6 +107,7 @@
     </pattern>
    
     <pattern> 
+        <sort>10</sort>
         <id>130</id>
         <name>Frequency</name>
         <type>DW</type>
@@ -106,6 +115,7 @@
     </pattern>
     
     <pattern>
+        <sort>11</sort>
         <id>131</id>
         <name>362 Dates/Sequential designation</name>
         <type>DW</type>
@@ -113,6 +123,7 @@
     </pattern>
     
     <pattern>
+        <sort>12</sort>
         <id>132</id>
         <name>500 $a Kept up to date by</name>
         <type>DW</type>
@@ -124,6 +135,8 @@
         </xpath>
     </pattern> 
     
+    <pattern>
+        <sort>13</sort>
         <id>133</id>
         <type>CAM</type>
         <name>000 Collection aggregate (not Collection  work)</name>
@@ -131,6 +144,7 @@
     </pattern> 
     
     <pattern>
+        <sort>14</sort>
         <id>2</id>
         <name>008/006 BK OR 245 Festschrift</name>
         <type>CAM</type>
@@ -179,6 +193,7 @@
     </pattern>
     
     <pattern>
+        <sort>15</sort>
         <id>54</id>
         <name>008-BK LitForm Conference</name>
         <type>CAM</type>
@@ -218,6 +233,7 @@
     </pattern> 
     
     <pattern>
+        <sort>16</sort>
         <id>3</id>
         <type>CAM</type>
         <name>111 Proceedings, NOT report</name>
@@ -237,6 +253,7 @@
     </pattern>
     
     <pattern>
+        <sort>17</sort>
         <id>4</id>
         <type>CAM</type>
         <name>110 Proceedings</name>
@@ -274,6 +291,7 @@
     </pattern> 
     
     <pattern>
+        <sort>18</sort>
         <id>5</id>
         <name>300 Atlas</name>
         <type>CAM</type>
@@ -281,6 +299,7 @@
     </pattern>
     
     <pattern> 
+        <sort>19</sort>
         <id>6</id>
         <name>6XX$a Atlases</name>
         <type>CAM</type>
@@ -288,6 +307,7 @@
     </pattern> 
     
     <pattern>
+        <sort>20</sort>
         <id>7</id>
         <name>6XX$v$x Atlases</name>
         <type>CAM</type>
@@ -296,6 +316,7 @@
     </pattern> 
     
     <pattern>
+        <sort>21</sort>
         <id>11</id>
         <name>000/06 Scores AND Analytical</name>
         <type>CAM</type>
@@ -304,6 +325,7 @@
     </pattern> 
     
     <pattern>
+        <sort>22</sort>
         <id>33</id>
         <name>505 sor NOWHERE 7XX I2=2</name>
         <type>CAM</type>
@@ -326,6 +348,7 @@
     </pattern> 
     
     <pattern>
+        <sort>23</sort>
         <id>10</id>
         <name>000/06 Scores AND 505</name>
         <type>CAM</type>
@@ -334,6 +357,7 @@
     </pattern> 
     
     <pattern>
+        <sort>24</sort>
         <id>15</id>
         <name>000/06 Music AND 505</name>
         <type>CAM</type>
@@ -342,6 +366,7 @@
     </pattern>
     
     <pattern>
+        <sort>25</sort>
         <id>30</id>
         <name>7XX I2=2 Not Music AND 505 SOR</name>
         <type>CAM</type>
@@ -364,6 +389,7 @@
     </pattern>
     
     <pattern>
+        <sort>26</sort>
         <id>31</id>
         <name>7XX I2=2 NOWHERE 505 SOR</name>
         <type>CAM</type>
@@ -390,6 +416,7 @@
     </pattern> 
     
     <pattern>
+        <sort>27</sort>
         <id>16</id>
         <name>000/06 Music AND Analytical</name>
         <type>CAM</type>
@@ -398,6 +425,7 @@
     </pattern> 
     
     <pattern>
+        <sort>28</sort>
         <id>12</id>
         <name>000/06 Music AND mult. SOR</name>
         <type>CAM</type>
@@ -422,6 +450,7 @@
     </pattern> 
     
     <pattern>
+        <sort>29</sort>
         <id>23</id>
         <name>000/06 Music AND 245$b subsequent titles</name>
         <type>CAM</type>
@@ -440,6 +469,7 @@
     </pattern> 
     
     <pattern>
+        <sort>30</sort>
         <id>14</id>
         <name>000/06 Music AND 245$a subsequent titles</name>
         <type>CAM</type>
@@ -466,6 +496,7 @@
     </pattern> 
     
     <pattern>
+        <sort>31</sort>
         <id>17</id>
         <name>000/06 Not Music AND mult. SOR</name>
         <type>CAM</type>
@@ -491,6 +522,7 @@
     </pattern> 
     
     <pattern>
+        <sort>32</sort>
         <id>18</id>
         <name>000/06 Not Music AND 245$b subsequent titles</name>
         <type>CAM</type>
@@ -510,6 +542,7 @@
     </pattern> 
     
     <pattern>
+        <sort>33</sort>
         <id>19</id>
         <name>000/06 Not Music AND 245$a subsequent titles</name>
         <type>CAM</type>
@@ -535,6 +568,7 @@
     </pattern> 
     
     <pattern>
+        <sort>34</sort>
         <id>35</id>
         <name>245$a Collection terms</name>
         <type>CAM</type>
@@ -544,6 +578,7 @@
     </pattern> 
     
     <pattern> 
+        <sort>35</sort>
         <id>36</id>
         <name>245$b Collection terms</name>
         <type>CAM</type>
@@ -555,6 +590,7 @@
     </pattern> 
     
     <pattern> 
+        <sort>36</sort>
         <id>37</id>
         <name>245$c Collection terms</name>
         <type>CAM</type>
@@ -564,6 +600,7 @@
     </pattern> 
     
     <pattern> 
+        <sort>37</sort>
         <id>38</id>
         <name>520$a Collection terms</name>
         <type>CAM</type>
@@ -573,6 +610,7 @@
     </pattern> 
     
     <pattern> 
+        <sort>38</sort>
         <id>20</id>
         <name>1XX$e Aggregator terms</name>
         <type>CAM</type>
@@ -584,6 +622,7 @@
     </pattern> 
      
     <pattern> 
+        <sort>39</sort>
         <id>21</id>
         <name>1XX$4 Aggregator terms</name>
         <type>CAM</type>
@@ -593,6 +632,7 @@
     </pattern> 
     
     <pattern> 
+        <sort>40</sort>
         <id>22</id>
         <name>7XX$e Aggregator terms</name>
         <type>CAM</type>
@@ -602,6 +642,7 @@
     </pattern> 
     
     <pattern> 
+        <sort>41</sort>
         <id>23</id>
         <name>7XX$4 Aggregator terms</name>
         <type>CAM</type>
@@ -611,6 +652,7 @@
     </pattern>
     
     <pattern> 
+        <sort>42</sort>
         <id>24</id>
         <name>240 CCT Texts, etc.</name>
         <type>CAM</type>
@@ -622,6 +664,7 @@
     </pattern>
     
     <pattern> 
+        <sort>43</sort>
         <id>25</id>
         <name>240 NOT CCT Texts, etc. AND Selections</name>
         <type>CAM</type>
@@ -652,6 +695,7 @@
     </pattern> 
 
     <pattern> 
+        <sort>44</sort>
         <id>26</id>
         <name>240 CCT MLA Type AND Selections AND 505 OR Analytical</name>
         <type>CAM</type>
@@ -678,6 +722,7 @@
     </pattern> 
     
     <pattern> 
+        <sort>45</sort>
         <id>28</id>
         <name>240 CCT MLA Medium AND Selections AND 505 OR Analytical</name>
         <type>CAM</type>
@@ -704,6 +749,7 @@
     </pattern> 
 
     <pattern> 
+        <sort>46</sort>
         <id>39</id>
         <name>245$c arranged NOT Music</name>
         <type>CAM</type>
@@ -727,6 +773,7 @@
     </pattern> 
     
     <pattern> 
+        <sort>47</sort>
         <id>41</id>
         <name>245$c Aggregator terms</name>
         <type>CAM</type>
@@ -740,6 +787,7 @@
     </pattern> 
     
     <pattern> 
+        <sort>48</sort>
         <id>43</id>
         <name>245$a Readers, edited</name>
         <type>CAM</type>
@@ -759,6 +807,7 @@
     </pattern> 
     
     <pattern> 
+        <sort>49</sort>
         <id>49</id>
         <name>245$c edit OR general editor AND 130</name>
         <type>CAM</type>
@@ -774,6 +823,7 @@
     </pattern> 
     
     <pattern> 
+        <sort>50</sort>
         <id>50</id>
         <name>245$c edited OR editor NOT 100,110,111</name>
         <type>CAM</type>
@@ -793,6 +843,7 @@
     </pattern> 
     
     <pattern> 
+        <sort>51</sort>
         <id>40</id>
         <name>245$c edited||editors NOT 100</name>
         <type>CAM</type>
@@ -808,6 +859,7 @@
     </pattern> 
     
     <pattern> 
+        <sort>52</sort>
         <id>42</id>
         <name>7XX$i aggregates</name>
         <type>CAM</type>
@@ -817,6 +869,7 @@
     </pattern> 
     
     <pattern> 
+        <sort>53</sort>
         <id>45</id>
         <name>655$a Collection terms</name>
         <type>CAM</type>
@@ -832,6 +885,7 @@
     </pattern> 
     
     <pattern> 
+        <sort>54</sort>
         <id>142</id>
         <name>655$a Collection terms (Usually)</name>
         <type>CAM</type>
@@ -847,6 +901,7 @@
     </pattern>
     
     <pattern> 
+        <sort>55</sort>
         <id>48</id>
         <name>650$a Collection terms</name>
         <type>CAM</type>
@@ -869,6 +924,7 @@
     </pattern> 
      
     <pattern> 
+        <sort>56</sort>
         <id>143</id>
         <name>650$a Collection terms (Usually)</name>
         <type>CAM</type>
@@ -891,6 +947,7 @@
     </pattern>
     
     <pattern> 
+        <sort>57</sort>
         <id>144</id>
         <name>650$v Collection terms (Usually)</name>
         <type>CAM</type>
@@ -902,6 +959,7 @@
     </pattern> 
     
     <pattern> 
+        <sort>58</sort>
         <id>145</id>
         <name>650$v Collection terms</name>
         <type>CAM</type>
@@ -913,6 +971,7 @@
     </pattern> 
     
     <pattern> 
+        <sort>59</sort>
         <id>53</id>
         <name>008-BK Content Collection</name>
         <type>CAM</type>
@@ -942,6 +1001,7 @@
     </pattern> 
     
     <pattern> 
+        <sort>60</sort>
         <id>55</id>
         <name>008-BK LitForm Collection</name>
         <type>CAM</type>
@@ -973,6 +1033,7 @@
     </pattern> 
     
     <pattern>
+        <sort>61</sort>
         <id>60</id>
         <name>008-CF Type-Collection</name>
         <type>CAM</type>
@@ -994,6 +1055,7 @@
     </pattern> 
     
     <pattern>
+        <sort>62</sort>
         <id>92</id>
         <name>500$a Collection terms</name>
         <type>CAM</type>
@@ -1029,6 +1091,7 @@
     </pattern>
     
     <pattern>
+        <sort>63</sort>
         <id>93</id>
         <name>245$c Contributions AND ed</name>
         <type>CAM</type>
@@ -1046,6 +1109,7 @@
     </pattern> 
      
     <pattern>
+        <sort>64</sort>
         <id>140</id>
         <name>655$a Cookbook</name>
         <type>CAM</type>
@@ -1055,6 +1119,7 @@
     </pattern> 
     
     <pattern>
+        <sort>65</sort>
         <id>99</id>
         <name>650$a Cooking ...</name>
         <type>CAM</type>
@@ -1076,6 +1141,7 @@
     </pattern> 
     
     <pattern>
+        <sort>66</sort>
         <id>97</id>
         <name>245$a$b Cookbook</name>
         <type>CAM</type>
@@ -1103,6 +1169,7 @@
     </pattern> 
     
     <pattern>
+        <sort>67</sort>
         <id>98</id>
         <name>000 MP 300 mult. maps</name>
         <type>CAM</type>
@@ -1135,6 +1202,7 @@
     </pattern> 
     
     <pattern>
+        <sort>68</sort>
         <id>101</id>
         <name>000 VM 300 mult. graphics</name>
         <type>CAM</type>
@@ -1164,6 +1232,7 @@
     </pattern> 
      
     <pattern>
+        <sort>69</sort>
         <id>108</id>
         <name>501 With</name>
         <type>CAM</type>
@@ -1183,6 +1252,7 @@
     </pattern> 
    
     <pattern>
+        <sort>70</sort>
         <id>63</id>
         <name>008-VM Type, 300$a not 1</name>
         <type>CAM</type>
@@ -1220,6 +1290,7 @@
     </pattern> 
       
     <pattern>
+        <sort>71</sort>
         <id>66</id>
         <name>300$a Music parts</name>
         <type>PAM</type>
@@ -1235,6 +1306,7 @@
     </pattern> 
     
     <pattern>
+        <sort>72</sort>
         <id>67</id>
         <name>300$e Music parts</name>
         <type>PAM</type>
@@ -1250,6 +1322,7 @@
     </pattern> 
     
     <pattern>
+        <sort>73</sort>
         <id>68</id>
         <name>6XX$x$v Music parts</name>
         <type>PAM</type>
@@ -1277,6 +1350,7 @@
     </pattern> 
 
     <pattern>
+        <sort>74</sort>
         <id>69</id>
         <name>6XX$a Parts music</name>
         <type>PAM</type>
@@ -1292,6 +1366,7 @@
     </pattern> 
     
     <pattern>
+        <sort>75</sort>
         <id>70</id>
         <name>6XX$a Parts music</name>
         <type>PAM</type>
@@ -1323,6 +1398,7 @@
     </pattern> 
 
     <pattern>
+        <sort>76</sort>
         <id>71</id>
         <name>250$a Mult. language terms</name>
         <type>PAM</type>
@@ -1341,6 +1417,7 @@
     </pattern> 
     
     <pattern>
+        <sort>77</sort>
         <id>135</id>
         <name>546$a'In' Mult. Lang. AND 041$a$d Mult. Lang</name>
         <type>PAM</type>
@@ -1371,6 +1448,7 @@
     </pattern>
    
     <pattern>
+        <sort>78</sort>
         <id>136</id>
         <name>546$aMult. Lang. 'and/or/list' AND 041$a$d Mult. lang</name>
         <type>PAM</type>
@@ -1402,6 +1480,7 @@
     </pattern> 
     
     <pattern>
+        <sort>79</sort>
         <id>137</id>
         <name>546$aLang with transl. and 041$a$d Mult. lang</name>
         <type>PAM</type>
@@ -1436,6 +1515,7 @@
     </pattern> 
     
     <pattern>
+        <sort>80</sort>
         <id>138</id>
         <name>546$a'Text in' etc. NOT 'only' etc. AND 041$a$d Mult. lang</name>
         <type>PAM</type>
@@ -1480,6 +1560,7 @@
     </pattern> 
     
     <pattern>
+        <sort>81</sort>
         <id>180</id>
         <name>546List-PPT 041$a$d Mult. lang.</name>
         <type>PAM</type>
@@ -1503,6 +1584,7 @@
     </pattern> 
     
     <pattern>
+        <sort>82</sort>
         <id>84</id>
         <name>500List-POT 041$a$d Mult. lang.</name>
         <type>PAM</type>
@@ -1529,6 +1611,7 @@
     </pattern> 
     
     <pattern>
+        <sort>83</sort>
         <id>86</id>
         <name>520List-POT 041$a$d Mult. lang.</name>
         <type>PAM</type>
@@ -1555,6 +1638,7 @@
     </pattern> 
     
     <pattern>
+        <sort>84</sort>
         <id>77</id>
         <name>245$a' = ' 041$a$d Mult. lang.</name>
         <type>PAM</type>
@@ -1585,6 +1669,7 @@
     </pattern> 
     
     <pattern>
+        <sort>85</sort>
         <id>79</id>
         <name>245 ' =$b' 041$a$d Mult. lang.</name>
         <type>PAM</type>
@@ -1624,6 +1709,7 @@
     </pattern> 
     
     <pattern>
+        <sort>86</sort>
         <id>81</id>
         <name>245$c'/ ' 041$a$d Mult. lang.</name>
         <type>PAM</type>
@@ -1655,6 +1741,7 @@
     </pattern> 
     
     <pattern>
+        <sort>87</sort>
         <id>72</id>
         <name>65X$x$v Mult. language terms</name>
         <type>PAM</type>
@@ -1692,6 +1779,7 @@
     </pattern> 
     
     <pattern>
+        <sort>88</sort>
         <id>52</id>
         <name>5XX$a inverted, etc. NOT parallel</name>
         <type>CAM</type>
@@ -1715,6 +1803,7 @@
     </pattern> 
      
     <pattern>
+        <sort>89</sort>
         <id>102</id>
         <name>504 present</name>
         <type>AAM</type>
@@ -1724,6 +1813,7 @@
     </pattern> 
     
     <pattern>
+        <sort>90</sort>
         <id>105</id>
         <name>008 BK Index</name>
         <type>AAM</type>
@@ -1748,6 +1838,7 @@
     </pattern>
     
     <pattern>
+        <sort>91</sort>
         <id>103</id>
         <name>500 Index, bibliog, etc.</name>
         <type>AAM</type>
@@ -1775,6 +1866,7 @@
     </pattern> 
    
     <pattern>
+        <sort>92</sort>
         <id>110</id>
         <name>500$a Includes</name>
         <type>AAM</type>
@@ -1809,6 +1901,7 @@
     </pattern> 
     
     <pattern>
+        <sort>93</sort>
         <id>111</id>
         <name>500$a Accompanied by</name>
         <type>AAM</type>
@@ -1843,6 +1936,7 @@
     </pattern> 
     
     <pattern>
+        <sort>94</sort>
         <id>106</id>
         <name>300$b Supplementary content</name>
         <type>AAM</type>
@@ -1852,6 +1946,7 @@
     </pattern> 
     
     <pattern>
+        <sort>95</sort>
         <id>107</id>
         <name>300$a Supplementary content</name>
         <type>AAM</type>
@@ -1861,6 +1956,7 @@
     </pattern> 
     
     <pattern>
+        <sort>96</sort>
         <id>109</id>
         <name>300$e Accompanying</name>
         <type>AAM</type>
@@ -1870,6 +1966,7 @@
     </pattern> 
     
     <pattern>
+        <sort>97</sort>
         <id>112</id>
         <name>245$c Introduction, etc.</name>
         <type>AAM</type>
@@ -1879,6 +1976,7 @@
     </pattern> 
     
     <pattern>
+        <sort>98</sort>
         <id>99</id>
         <name>7XX$e Contributor of, etc.</name>
         <type>AAM</type>
@@ -1894,6 +1992,7 @@
     </pattern> 
     
     <pattern>
+        <sort>99</sort>
         <id>114</id>
         <name>65X$a Sound books, etc.</name>
         <type>AAM</type>
@@ -1917,6 +2016,7 @@
     </pattern> 
      
     <pattern>
+        <sort>100</sort>
         <id>115</id>
         <name>65X$a Monologues with music, etc.</name>
         <type>AAM</type>
@@ -1932,6 +2032,7 @@
     </pattern> 
     
     <pattern>
+        <sort>101</sort>
         <id>117</id>
         <name>041 Accompanying, etc.</name>
         <type>AAM</type>
@@ -1950,6 +2051,7 @@
     </pattern> 
     
     <pattern>
+        <sort>102</sort>
         <id>119</id>
         <name>008 MU Accompanying material</name>
         <type>AAM</type>
@@ -1968,6 +2070,7 @@
     </pattern> 
     
     <pattern>
+        <sort>103</sort>
         <id>121</id>
         <name>336 Music and text</name>
         <type>AAM</type>
@@ -1991,10 +2094,11 @@
     </pattern>
     
     <pattern>
+        <sort>104</sort>
         <id>1</id>
         <name>245 Single graphic</name>
         <type>SEM</type>
         <xpath>marc:datafield[@tag='245']/marc:subfield[@code='h'][contains(lower-case(.), 'graphic')] and marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(., '^1 ')]</xpath>
     </pattern>
-    --> 
+    -->
 </patterns>
