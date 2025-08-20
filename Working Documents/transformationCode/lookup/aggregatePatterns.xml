@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <patterns>
-    <!--
+    
     <pattern>
         <sort>1</sort>
         <id>122</id>
@@ -2100,5 +2100,5 @@
         <type>SEM</type>
         <xpath>marc:datafield[@tag='245']/marc:subfield[@code='h'][contains(lower-case(.), 'graphic')] and marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(., '^1 ')]</xpath>
     </pattern>
-    -->
+    
 </patterns>
