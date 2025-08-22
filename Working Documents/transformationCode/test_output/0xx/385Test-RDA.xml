@@ -87,19 +87,16 @@ F385 2# $0 http://example.org/vocab/children
       <rdaed:P20326>C major</rdaed:P20326>
       <rdaed:P20326>D major</rdaed:P20326>
       <rdaed:P20326>http://example.org/key/multiple</rdaed:P20326>
-      <rdf:Description rdf:about="2025-08-01t163243735853-0400">
-         <rdae:P20322 rdf:resource="#2025-08-01t163243735853-0400-385-1"/>
-      </rdf:Description>
-      <rdf:Description rdf:about="#2025-08-01t163243735853-0400-385-1">
-         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-         <skos:prefLabel>Children</skos:prefLabel>
-         <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-      </rdf:Description>
+      <rdae:P20322 rdf:resource="http://marc2rda.edu/fake/lcsh/con#children"/>
       <rdaeo:P20322 rdf:resource="http://id.loc.gov/authorities/subjects/sh85096653"/>
       <rdaed:P20322>General public</rdaed:P20322>
       <rdaeo:P20322 rdf:resource="https://id.worldcat.org/fast/872198"/>
       <rdaeo:P20322 rdf:resource="https://id.worldcat.org/fast/1003450"/>
       <rdaeo:P20322 rdf:resource="https://id.worldcat.org/fast/1175515"/>
+      <rdaed:P20322>Adults</rdaed:P20322>
+      <rdaeo:P20322 rdf:resource="https://id.worldcat.org/fast/1175515"/>
+      <rdaeo:P20322 rdf:resource="https://id.worldcat.org/fast/1175515"/>
+      <rdaeo:P20322 rdf:resource="http://example.org/vocab/children"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
@@ -110,8 +107,17 @@ F385 2# $0 http://example.org/vocab/children
       <rdamd:P30305>General public</rdamd:P30305>
       <rdamo:P30305 rdf:resource="https://id.worldcat.org/fast/872198"/>
       <rdamo:P30305 rdf:resource="https://id.worldcat.org/fast/1003450"/>
-      <rdamd:P30137>Intended audience Children Young adults applies to: Volume 1: Intended for middle school readers</rdamd:P30137>
+      <rdamd:P30276>Intended audience Children Young adults applies to: Volume 1: Intended for middle school readers</rdamd:P30276>
       <rdamo:P30305 rdf:resource="https://id.worldcat.org/fast/1175515"/>
-      <rdamd:P30137>Intended audience General public applies to: Appendix: includes resources for all ages</rdamd:P30137>
+      <rdamd:P30276>Intended audience General public applies to: Appendix: includes resources for all ages</rdamd:P30276>
+      <rdamd:P30305>Adults</rdamd:P30305>
+      <rdamo:P30305 rdf:resource="https://id.worldcat.org/fast/1175515"/>
+      <rdamo:P30305 rdf:resource="https://id.worldcat.org/fast/1175515"/>
+      <rdamo:P30305 rdf:resource="http://example.org/vocab/children"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#children">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Children</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
    </rdf:Description>
 </rdf:RDF>

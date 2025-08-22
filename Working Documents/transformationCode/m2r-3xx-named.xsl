@@ -3640,13 +3640,13 @@
     
     <!-- 385 - Intended Audience (Expression-level) -->
     <!-- CP: I would rename this F385-xx-a_b-expression, since we are not mapping m or n anymore-->
-    <xsl:template name="F385-xx-a_b_m_n-expression">
+    <xsl:template name="F385-xx-a_b-expression">
         <xsl:param name="baseID"/>
         <!-- CP: these should be variables not param (param get passed in) -->
-        <xsl:param name="fieldNum" select="'385'"/>
-        <xsl:param name="note" select="marc:subfield[@code='3']"/>
+        <xsl:variable name="fieldNum" select="'385'"/>
+        <xsl:variable name="note" select="marc:subfield[@code='3']"/>
         <!-- CP: select marc:subfield[@code='2'][1] in case there are multiple $2 -->
-        <xsl:variable name="code2" select="marc:subfield[@code='2']"/>
+        <xsl:variable name="code2" select="marc:subfield[@code='2'][1]"/>
         
         <!-- Case 1: $1 present (RWO IRI) -->
         <xsl:for-each select="marc:subfield[@code='1']">
@@ -3661,40 +3661,13 @@
         </xsl:if>
         
         <!-- Case 3: Mint skos:Concepts from $a or $b, with $2, and no $0/$1 -->
-        
-        <!-- CP: delete this variable, you already created it above -->
-        <xsl:variable name="code2" select="marc:subfield[@code='2']"/>
         <xsl:if test="not(marc:subfield[@code='0'] or marc:subfield[@code='1']) and $code2">
             <xsl:for-each select="marc:subfield[@code='a'] | (marc:subfield[@code='b'][not(../marc:subfield[@code='a'])])">
-                <!-- CP: delete variables label, notation, and schemeIRI here, not needed in expression -->
-                <!--<xsl:variable name="label" select="uwf:stripEndPunctuation(.)"/>
-                <xsl:variable name="notation" select="if (@code = 'b') then . else ../marc:subfield[@code='b'][position() = current()/position()]"/>
-                <xsl:variable name="schemeIRI" select="concat('https://id.loc.gov/vocabulary/subjectSchemes/', normalize-space($code2))"/>
-                -->
                 <!-- CP: use uwf:conceptIRI() to get the IRI -->
-                <xsl:variable name="conceptIRI" select="concat($baseID, '-385-', position())"/>
-                
+                <xsl:variable name="conceptIRI" select="uwf:conceptIRI($code2, .)"/>
                 <!-- 1. Link expression to concept -->
                 <!-- CP: remove rdf:Description surrounding expression element -->
-<!--                <rdf:Description rdf:about="{$baseID}">-->
-                    <rdae:P20322 rdf:resource="#{$conceptIRI}"/>
-                <!--</rdf:Description>-->
-                
-                <!-- below (and variables above, go in separate template for concept -->
-                <!-- 2. Define concept -->
-                <!--<rdf:Description rdf:about="#{$conceptIRI}">
-                    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <skos:prefLabel><xsl:value-of select="$label"/></skos:prefLabel>
-                    <xsl:if test="$notation">
-                        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-                            <xsl:value-of select="$notation"/>
-                        </skos:notation>
-                    </xsl:if>
-                    <skos:inScheme rdf:resource="{$schemeIRI}"/>
-                    <xsl:if test="$note">
-                        <rdatd:P70045><xsl:value-of select="$note"/></rdatd:P70045>
-                    </xsl:if>
-                </rdf:Description>-->
+                <rdae:P20322 rdf:resource="{$conceptIRI}"/>
             </xsl:for-each>
         </xsl:if>
         
@@ -3709,70 +3682,56 @@
     <xsl:template name="F385-xx-a_b-concept">
         <xsl:param name="baseID"/>
         <!-- CP: these should be variables, not param (param get passed in) -->
-        <xsl:param name="fieldNum" select="'385'"/>
-        <xsl:param name="note" select="marc:subfield[@code='3']"/>
+        <xsl:variable name="fieldNum" select="'385'"/>
+        <xsl:variable name="note" select="marc:subfield[@code='3']"/>
         <!-- CP: select marc:subfield[@code = '2'][1] in case of multiple $2 -->
-        <xsl:variable name="code2" select="marc:subfield[@code='2']"/>
+        <xsl:variable name="code2" select="marc:subfield[@code='2'][1]"/>
         
         <!-- Case 3: Mint skos:Concepts from $a or $b, with $2, and no $0/$1 -->
-        <xsl:variable name="code2" select="marc:subfield[@code='2']"/>
         <xsl:if test="not(marc:subfield[@code='0'] or marc:subfield[@code='1']) and $code2">
             <xsl:for-each select="marc:subfield[@code='a'] | (marc:subfield[@code='b'][not(../marc:subfield[@code='a'])])">
                 <xsl:variable name="label" select="uwf:stripEndPunctuation(.)"/>
                 <xsl:variable name="notation" select="if (@code = 'b') then . else ../marc:subfield[@code='b'][position() = current()/position()]"/>
                 <!-- CP: scheme IRI not needed, will use uwf:fillConcept() to add this (see below) -->
-                <xsl:variable name="schemeIRI" select="concat('https://id.loc.gov/vocabulary/subjectSchemes/', normalize-space($code2))"/>
                 <!-- CP: use uwf:conceptIRI() -->
                 <xsl:variable name="conceptIRI" select="uwf:conceptIRI($code2, .)"/>
-                
                 <!-- 2. Define concept -->
                 <rdf:Description rdf:about="{$conceptIRI}">
-                    <!-- CP: below (aside from the note, can all be replaced with uwf:fillConcept() 
-                    -->
-                    <xsl:copy-of select="uwf:fillConcept(., $code2, $notation, '385')"></xsl:copy-of>
-                    <!--<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <skos:prefLabel><xsl:value-of select="$label"/></skos:prefLabel>
-                    <xsl:if test="$notation">
-                        <skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-                            <xsl:value-of select="$notation"/>
-                        </skos:notation>
-                    </xsl:if>
-                    <skos:inScheme rdf:resource="{$schemeIRI}"/>-->
+                    <!-- CP: below (aside from the note, can all be replaced with uwf:fillConcept() -->
+                    <xsl:copy-of select="uwf:fillConcept(., $code2, $notation, '385')"/>
                     <xsl:if test="$note">
-                        <rdatd:P70045><xsl:value-of select="$note"/></rdatd:P70045>
+                        <rdatd:P70045>
+                            <xsl:value-of select="$note"/>
+                        </rdatd:P70045>
                     </xsl:if>
                 </rdf:Description>
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
     
-    
-    <!-- Named Template: 385 Manifestation -->
+    <!-- Manifestation-level Template -->
     <!-- CP: this should mirror the expression template, except the elements are rdamd:P30305 or rdamo:P30305 -->
-    <xsl:template name="F385-xx-a_b_m_n-manifestation-string">
-        
-        <!-- Manifestation Case 1: $1 present (IRI) -->
+    <xsl:template name="F385-xx-a_b-manifestation">
+        <!-- Case 1: $1 present -->
         <xsl:for-each select="marc:subfield[@code='1']">
             <rdamo:P30305 rdf:resource="{.}"/>
         </xsl:for-each>
         
-        <!-- Manifestation Case 2: $0 contains 'http' and $1 not present (IRI fallback) -->
+        <!-- Case 2: $0 with http and $1 not present -->
         <xsl:if test="not(marc:subfield[@code='1'])">
             <xsl:for-each select="marc:subfield[@code='0'][contains(., 'http')]">
                 <rdamo:P30305 rdf:resource="{.}"/>
             </xsl:for-each>
         </xsl:if>
         
-        
-        <!-- Manifestation Case 3: $a only, and not $0/$1/$2 (unstructured literal) -->
-        <xsl:if test="marc:subfield[@code='a'] 
-            and not(marc:subfield[@code='0'] or marc:subfield[@code='1'] or marc:subfield[@code='2'])">
+        <!-- Case 3: Unstructured literal from $a only -->
+        <xsl:if test="marc:subfield[@code='a'] and not(marc:subfield[@code='0'] or marc:subfield[@code='1'] or marc:subfield[@code='2'])">
             <rdamd:P30305>
                 <xsl:value-of select="marc:subfield[@code='a']"/>
             </rdamd:P30305>
         </xsl:if>
         
-        <!-- Manifestation Case 4: $3 present — note with fallback from $a, $b, $1, $0 -->
+        <!-- Case 4: $3 note with fallback value -->
         <xsl:if test="marc:subfield[@code='3']">
             <xsl:variable name="audience">
                 <xsl:choose>
@@ -3790,14 +3749,14 @@
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:variable>
-            <rdamd:P30137>
+            <rdamd:P30276>
                 <xsl:text>Intended audience </xsl:text>
                 <xsl:value-of select="$audience"/>
                 <xsl:text> applies to: </xsl:text>
                 <xsl:value-of select="marc:subfield[@code='3']"/>
-            </rdamd:P30137>
+            </rdamd:P30276>
         </xsl:if>
-        
     </xsl:template>
+    
     
 </xsl:stylesheet>
