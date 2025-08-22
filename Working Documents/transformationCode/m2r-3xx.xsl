@@ -1101,20 +1101,17 @@
 </xsl:template>
     <!-- 385 - Intended Audience -->
     
-    <!-- CP: this template is good! -->
     <xsl:template
         match="marc:datafield[@tag = '385'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '385']"
         mode="exp">
         
         <xsl:param name="baseID"/> 
         
-        <!-- CP: no need to test for @ind1 - it should always be blank -->
         <xsl:call-template name="F385-xx-a_b-expression">
             <xsl:with-param name="baseID" select="$baseID"/>
         </xsl:call-template>
     </xsl:template>
     
-    <!-- CP: also good template, again no need to test for @ind1 before calling the template -->
     <!-- Manifestation-level template call -->
     <xsl:template
         match="marc:datafield[@tag = '385'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '385']"
@@ -1123,9 +1120,8 @@
         <xsl:call-template name="F385-xx-a_b-manifestation"/>
     </xsl:template>
     
-    <!-- CP: add concept level template -->
     <xsl:template
-        match="marc:datafield[@tag = '385'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '385']"
+        match="marc:datafield[@tag = '385'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '385-00']"
         mode="con">
         
         <xsl:call-template name="F385-xx-a_b-concept"/>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+	<marc:record>
+		<marc:leader>11111nam a2200553ui 4500</marc:leader>
+		<marc:controlfield tag="001">384-test1</marc:controlfield>
+		<!-- $0 without http and $1 -->
+		<marc:datafield tag="385" ind1=" " ind2=" ">
+			<marc:subfield code="0">(DLC)sh 85000744 </marc:subfield>
+			<marc:subfield code="1">http://id.loc.gov/authorities/subjects/sh85000744</marc:subfield>
+		</marc:datafield>
+		<!-- $0 with http -->
+		<marc:datafield tag="385" ind1=" " ind2=" ">
+			<marc:subfield code="0">http://id.loc.gov/authorities/subjects/sh85000744</marc:subfield>
+		</marc:datafield>
+		<!-- $a, $2, and $1 - should only output $1 -->
+		<marc:datafield tag="385" ind1=" " ind2=" ">
+			<marc:subfield code="1">http://id.loc.gov/authorities/subjects/sh85023418</marc:subfield>
+			<marc:subfield code="a">Children</marc:subfield>
+			<marc:subfield code="2">lcsh</marc:subfield>
+			<marc:subfield code="3">Materials specified</marc:subfield>
+		</marc:datafield>
+		<!-- $a, $2 - should mint concept -->
+		<marc:datafield tag="385" ind1=" " ind2=" ">
+			<marc:subfield code="a">Children</marc:subfield>
+			<marc:subfield code="2">lcsh</marc:subfield>
+			<marc:subfield code="3">Materials specified</marc:subfield>
+		</marc:datafield>
+		<!-- multiple $a and $b - should mint concept for each $a -->
+		<marc:datafield tag="385" ind1=" " ind2=" ">
+			<marc:subfield code="6">880-02</marc:subfield>
+			<marc:subfield code="a">HIV Long-Term Survivors</marc:subfield>
+			<marc:subfield code="b">code b1</marc:subfield>
+			<marc:subfield code="a">Caregivers</marc:subfield>
+			<marc:subfield code="b">code b2</marc:subfield>
+			<marc:subfield code="2">mesh</marc:subfield>
+			<marc:subfield code="3">Materials specified</marc:subfield>
+		</marc:datafield>
+		<!-- linked 880 - should be added to original concept, not mint new one -->
+		<marc:datafield tag="880" ind1=" " ind2=" ">
+			<marc:subfield code="6">385-02</marc:subfield>
+			<marc:subfield code="a">linked 880 code a</marc:subfield>
+			<marc:subfield code="b">linked 880 code b</marc:subfield>
+			<marc:subfield code="a">linked 880 code a2</marc:subfield>
+			<marc:subfield code="b">linked 880 code b2</marc:subfield>
+			<marc:subfield code="2">mesh</marc:subfield>
+			<marc:subfield code="3">Materials specified</marc:subfield>
+		</marc:datafield>
+		<!-- just $b and $2, should mint concept -->
+		<marc:datafield tag="385" ind1=" " ind2=" ">
+			<marc:subfield code="b">code b</marc:subfield>
+			<marc:subfield code="2">source</marc:subfield>
+			<marc:subfield code="3">Materials specified</marc:subfield>
+		</marc:datafield>
+		<!-- $a, $b, $m, $n - should only map $a -->
+		<marc:datafield tag="385" ind1=" " ind2=" ">
+			<marc:subfield code="6">880-01</marc:subfield>
+			<marc:subfield code="a">Actors</marc:subfield>
+			<marc:subfield code="b">code b</marc:subfield>
+			<marc:subfield code="m">test m</marc:subfield>
+			<marc:subfield code="n">test n</marc:subfield>
+			<marc:subfield code="3">Materials specified</marc:subfield>
+		</marc:datafield>
+		<!-- this 880 should be treated like a single 385 -->
+		<marc:datafield tag="880" ind1=" " ind2=" ">
+			<marc:subfield code="6">385-01</marc:subfield>
+			<marc:subfield code="a">880 Actors</marc:subfield>
+			<marc:subfield code="b">880 code b</marc:subfield>
+			<marc:subfield code="3">Materials specified</marc:subfield>
+		</marc:datafield>
+		<!-- unlinked 880, should be treated as 385 -->
+		<marc:datafield tag="880" ind1=" " ind2=" ">
+			<marc:subfield code="6">385-00</marc:subfield>
+			<marc:subfield code="a">unlinked 880</marc:subfield>
+			<marc:subfield code="2">source</marc:subfield>
+			<marc:subfield code="3">Materials specified</marc:subfield>
+		</marc:datafield>
+	</marc:record>
+</marc:collection>
