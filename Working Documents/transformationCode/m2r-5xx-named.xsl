@@ -549,14 +549,11 @@
                     <xsl:text>Supplying agency: </xsl:text>
                 </xsl:when>
                 <xsl:when test="@code = 'u'">
-                    <xsl:text>additional information at: [</xsl:text>
+                    <xsl:text>additional information at: </xsl:text>
                 </xsl:when>
             </xsl:choose>
             
             <xsl:value-of select="."/>
-            <xsl:if test="@code = 'u'">
-                <xsl:text>]</xsl:text>
-            </xsl:if>
             <xsl:if test="position() != last()">
                 <xsl:text> </xsl:text>
             </xsl:if>
@@ -566,7 +563,7 @@
         </xsl:for-each>
 
             <xsl:for-each select="marc:subfield[@code = '3']">
-                <xsl:text>(applies to: [{.}])</xsl:text>
+                <xsl:text>(applies to: {.})</xsl:text>
                 <xsl:if test="position() = last() and $s1">
                     <xsl:text>; </xsl:text>
                 </xsl:if> 
