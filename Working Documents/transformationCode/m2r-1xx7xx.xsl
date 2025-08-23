@@ -1164,19 +1164,53 @@
         </xsl:if>
     </xsl:template>
     
-    <!-- 752  Added Entry-Hierarchical Place Name -->      
-    <xsl:template match="marc:datafield[@tag='752'] | marc:datafield[@tag='880'][substring(marc:subfield[@code='6'],1,6)='752-00']" mode="man">
+    <!-- 752  Added Entry-Hierarchical Place Name -->  
+    <xsl:template match="marc:datafield[@tag='752'] | marc:datafield[@tag='880'][substring(marc:subfield[@code='6'],1,6)='752-00']" 
+        mode="wor">
         <xsl:param name="baseID"/>
-        <xsl:param name="manIRI"/>
+        <xsl:call-template name="F752-xx-abcdfgh1234-work">
+            <xsl:with-param name="baseID" select="$baseID"/>
+        </xsl:call-template>
     </xsl:template>
     
-    <xsl:template match="marc:datafield[@tag='752'] | marc:datafield[@tag='880'][substring(marc:subfield[@code='6'],1,6)='752-00']" mode="ite">
+    <xsl:template match="marc:datafield[@tag='752'] | marc:datafield[@tag='880'][substring(marc:subfield[@code='6'],1,6)='752-00']" 
+        mode="exp">
+        <xsl:param name="baseID"/>
+        <xsl:call-template name="F752-xx-abcdfgh1234-expression">
+            <xsl:with-param name="baseID" select="$baseID"/>
+        </xsl:call-template>
+    </xsl:template>    
+    
+    <xsl:template match="marc:datafield[@tag='752'] | marc:datafield[@tag='880'][substring(marc:subfield[@code='6'],1,6)='752-00']" 
+        mode="man">
+        <xsl:param name="baseID"/>
+        <xsl:call-template name="F752-xx-abcdfgh1234-manifestation">
+            <xsl:with-param name="baseID" select="$baseID"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag='752'] | marc:datafield[@tag='880'][substring(marc:subfield[@code='6'],1,6)='752-00']" 
+        mode="ite">
         <xsl:param name="baseID"/>
         <xsl:param name="manIRI"/>
-        <xsl:call-template name="F752-xx-abcdfgh1234">
-            <xsl:with-param name="baseID"  select="$baseID"/>
-            <xsl:with-param name="manIRI"  select="$manIRI"/>
-            <xsl:with-param name="context" select="."/>
+        <xsl:call-template name="F752-xx-abcdfgh1234-item">
+            <xsl:with-param name="baseID" select="$baseID"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag='752'] | marc:datafield[@tag='880'][substring(marc:subfield[@code='6'],1,6)='752-00']" 
+        mode="pla">
+        <xsl:param name="baseID"/>
+        <xsl:call-template name="F752-xx-abcdfgh1234-place">
+            <xsl:with-param name="baseID" select="$baseID"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag='752'] | marc:datafield[@tag='880'][substring(marc:subfield[@code='6'],1,6)='752-00']" 
+        mode="nom">
+        <xsl:param name="baseID"/>
+        <xsl:call-template name="F752-xx-abcdfgh1234-nomen">
+            <xsl:with-param name="baseID" select="$baseID"/>
         </xsl:call-template>
     </xsl:template>
 
