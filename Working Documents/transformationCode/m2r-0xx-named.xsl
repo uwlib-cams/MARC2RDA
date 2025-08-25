@@ -324,10 +324,10 @@
                 </rdatd:P70045>
             </xsl:if>
 
-            <!-- Rows 78-80: if $3 present, include applies-to note -->
+            <!-- Rows 79: if $3 present, include applies-to note -->
             <xsl:if test="marc:subfield[@code = '3'] and @ind1 = '2'">
                 <rdatd:P70045>
-                    <xsl:text>applies to: </xsl:text>
+                    <xsl:text>Applies to: </xsl:text>
                     <xsl:value-of select="marc:subfield[@code = '3']"/>
                 </rdatd:P70045>
             </xsl:if>
