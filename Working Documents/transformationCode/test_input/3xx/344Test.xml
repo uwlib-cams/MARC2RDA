@@ -58,6 +58,16 @@
         </marc:datafield>
         
         <marc:datafield tag="344" ind1=" " ind2=" ">
+            <marc:subfield code="g">mono</marc:subfield>
+            <marc:subfield code="2">rdacpc</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="344" ind1=" " ind2=" ">
+            <marc:subfield code="g">περιφερικός</marc:subfield>
+            <marc:subfield code="2">rdacpc</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="344" ind1=" " ind2=" ">
             <marc:subfield code="h">Dolby-B encoded</marc:subfield>
             <marc:subfield code="2">rdaspc</marc:subfield>
         </marc:datafield>

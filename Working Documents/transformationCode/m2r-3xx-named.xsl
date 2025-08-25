@@ -2601,9 +2601,9 @@
             <xsl:if test="marc:subfield[@code = '2']">
                 <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
                 <xsl:variable name="linked880">
-                    <xsl:if test="@tag = '340' and marc:subfield[@code = '6']">
+                    <xsl:if test="@tag = '344' and marc:subfield[@code = '6']">
                         <xsl:variable name="occNum"
-                            select="concat('340-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                            select="concat('344-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                         <xsl:copy-of
                             select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]"
                         />
@@ -2682,8 +2682,21 @@
                                 <xsl:variable name="sub2" select="../marc:subfield[@code = '2'][1]"/>
                                 <xsl:choose>
                                     <xsl:when test="starts-with($sub2, 'rda') and $sub2 != 'rda'">
-                                        <xsl:variable name="rdaIRI"
-                                            select="uwf:rdaTermLookup($sub2, $subfield)"/>
+                                        <xsl:variable name="rdaIRI">
+                                            <!-- TEMPORARY SOLUTION TO RDA VOCAB ISSUE -->
+                                            <xsl:choose>
+                                                <xsl:when test="@code = 'g' and . = 'stereo'">
+                                                    <xsl:value-of select="'http://rdaregistry.info/termList/configPlayback/1002'"/>
+                                                </xsl:when>
+                                                <xsl:when test="@code = 'g' and . = 'mono'">
+                                                    <xsl:value-of select="'http://rdaregistry.info/termList/configPlayback/1001'"/>
+                                                </xsl:when>
+                                                <xsl:otherwise>
+                                                    <xsl:value-of select="uwf:rdaTermLookup($sub2, $subfield)"/>
+                                                </xsl:otherwise>
+                                            </xsl:choose>
+                                            <!--<xsl:value-of select="uwf:rdaTermLookup($sub2, $subfield)"/>-->
+                                        </xsl:variable>
                                         <xsl:if test="$rdaIRI">
                                             <xsl:element name="rda{$entity}o:{$propertyNum}">
                                                 <xsl:attribute name="rdf:resource" select="$rdaIRI"
