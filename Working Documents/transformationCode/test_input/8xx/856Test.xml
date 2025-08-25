@@ -33,11 +33,12 @@
         </marc:datafield>
         
         <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="u">//www.loc.gov/catdir/semdigdocs/seminar.html </marc:subfield>
             <marc:subfield code="u">//www.loc.gov/catdir/semdigdocs/seminar.html</marc:subfield>
         </marc:datafield>
         
         <marc:datafield tag="856" ind1=" " ind2=" ">
-            <marc:subfield code="u">http://purl.access.gpo.gov/GPO/LPS98141</marc:subfield>
+            <marc:subfield code="u">http://purl.access.gpo.gov/GPO/LPS98141 </marc:subfield>
         </marc:datafield>
     </marc:record>
 </marc:collection>

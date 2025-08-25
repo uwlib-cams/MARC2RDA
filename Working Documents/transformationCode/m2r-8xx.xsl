@@ -453,13 +453,13 @@
                 <xsl:when test="marc:subfield[@code = '3']">
                     <xsl:for-each select="marc:subfield[@code = 'u']">
                         <rdamd:P30137>
-                            <xsl:text>[{../marc:subfield[@code = '3']}] at: {.}</xsl:text>
+                            <xsl:text>[{../marc:subfield[@code = '3']}] at: {normalize-space(.)}</xsl:text>
                         </rdamd:P30137>
                     </xsl:for-each>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:for-each select="marc:subfield[@code = 'u']">
-                        <rdam:P30154 rdf:resource="{.}"/>
+                        <rdam:P30154 rdf:resource="{normalize-space(.)}"/>
                     </xsl:for-each>
                 </xsl:otherwise>
             </xsl:choose>
@@ -467,28 +467,28 @@
         <xsl:if test="@ind2 = '2' or ' ' or '8'">
             <xsl:for-each select="marc:subfield[@code = 'u']">
                 <rdamd:P30137>
-                    <xsl:text>Related resource at: {.}</xsl:text>
+                    <xsl:text>Related resource at: {normalize-space(.)}</xsl:text>
                 </rdamd:P30137>
             </xsl:for-each>
         </xsl:if>
         <xsl:if test="@ind2 = '1'">
             <xsl:for-each select="marc:subfield[@code = 'u']">
                 <rdamd:P30137>
-                    <xsl:text>Version of resource at: {.}</xsl:text>
+                    <xsl:text>Version of resource at: {normalize-space(.)}</xsl:text>
                 </rdamd:P30137>
             </xsl:for-each>
         </xsl:if>
         <xsl:if test="@ind2 = '3'">
             <xsl:for-each select="marc:subfield[@code = 'u']">
                 <rdamd:P30137>
-                    <xsl:text>Component part(s) of resource at: {.}</xsl:text>
+                    <xsl:text>Component part(s) of resource at: {normalize-space(.)}</xsl:text>
                 </rdamd:P30137>
             </xsl:for-each>
         </xsl:if>
         <xsl:if test="@ind2 = '4'">
             <xsl:for-each select="marc:subfield[@code = 'u']">
                 <rdamd:P30137>
-                    <xsl:text>Version of component part(s) of resource at: {.}</xsl:text>
+                    <xsl:text>Version of component part(s) of resource at: {normalize-space(.)}</xsl:text>
                 </rdamd:P30137>
             </xsl:for-each>
         </xsl:if>
