@@ -1223,11 +1223,22 @@
     </xsl:template>
      
     <!-- 754 Added Entry-Taxonomic Identification -->  
+    
+    <xsl:template match="marc:datafield[@tag = '754'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '754-00']" 
+        mode="man">
+        <xsl:param name="baseID"/>
+        <!-- relationship between manifestation and item -->
+        <!-- one item is minted for the 754 field -->
+        <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseID, .)}"/>
+    </xsl:template>
+    
+    <!-- item template -->
     <xsl:template match="marc:datafield[@tag = '754'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '754-00']" 
         mode="ite">
         <xsl:param name="baseID"/>
         <xsl:param name="manIRI"/>
-        <xsl:call-template name="F754-xx-acdxz">
+        <!-- mint item and create relationships to manifestation and to nomens -->
+        <xsl:call-template name="F754-xx-acdxz-item">
             <xsl:with-param name="baseID" select="$baseID"/>
             <xsl:with-param name="manIRI" select="$manIRI"/>
             <xsl:with-param name="context" select="."/>
@@ -1238,7 +1249,19 @@
         mode="nom">
         <xsl:param name="baseID"/>
         <xsl:param name="manIRI"/>
-        <xsl:call-template name="F754-xx-acdxz">
+        <xsl:call-template name="F754-xx-acdxz-nomen">
+            <xsl:with-param name="baseID" select="$baseID"/>
+            <xsl:with-param name="manIRI" select="$manIRI"/>
+            <xsl:with-param name="context" select="."/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <!-- metadata work template - matches on 754 and linked and unlinked 880s -->
+    <xsl:template match="marc:datafield[@tag = '754'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '754']" 
+        mode="metaWor">
+        <xsl:param name="baseID"/>
+        <xsl:param name="manIRI"/>
+        <xsl:call-template name="F754-xx-acdxz-metaWor">
             <xsl:with-param name="baseID" select="$baseID"/>
             <xsl:with-param name="manIRI" select="$manIRI"/>
             <xsl:with-param name="context" select="."/>

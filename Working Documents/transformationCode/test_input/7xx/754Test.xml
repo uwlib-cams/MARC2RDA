@@ -13,14 +13,17 @@
       <marc:subfield code="d">European Robin</marc:subfield>
       <marc:subfield code="z">Recorded in Yorkshire, UK</marc:subfield>
       <marc:subfield code="x">Verified by British Trust for Ornithology</marc:subfield>
+      <marc:subfield code="2"></marc:subfield>
     </marc:datafield>
 
     <!-- 880 field -->
     <marc:datafield tag="880" ind1=" " ind2=" ">
-      <marc:subfield code="6">754-00</marc:subfield>
-      <marc:subfield code="c">880-testsubfield c</marc:subfield>
+      <marc:subfield code="6">754-01</marc:subfield>
+      <marc:subfield code="c">Species 880</marc:subfield>
       <marc:subfield code="a">880-testsubfield a</marc:subfield>
       <marc:subfield code="d">880-testsubfield d</marc:subfield>
+      <marc:subfield code="z">880-testsubfield z</marc:subfield>
+      <marc:subfield code="x">880-testsubfield x</marc:subfield>
     </marc:datafield>
   </marc:record>
 </marc:collection>

@@ -333,7 +333,7 @@
     </xsl:template>
 
     <!-- 754 --> 
-    <xsl:template name="F754-xx-acdxz" expand-text="yes">
+    <xsl:template name="F754-xx-acdxz-item" expand-text="yes">
         <xsl:param name="baseID"/>
         <xsl:param name="manIRI"/>
         <xsl:param name="context"/>
@@ -341,15 +341,156 @@
         <xsl:variable name="itemIRI" select="uwf:itemIRI($baseID, $context)"/>
         <xsl:variable name="scheme" select="$context/marc:subfield[@code='2'][1]"/>
         
-        <!--($z) Public note -->
-        <xsl:for-each select="$context/marc:subfield[@code='z']">
-            <rdf:Description rdf:about="{$itemIRI}">
-                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-                <rdai:P40028>Taxonomic identification note: <xsl:value-of select="."/></rdai:P40028>
-            </rdf:Description>
+        <!-- rdf:Description for item -->
+        <rdf:Description rdf:about="{$itemIRI}">
+            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+            <!-- item id -->
+            <rdaid:P40001>{concat('ite#',$baseID, generate-id())}</rdaid:P40001>
+            <!-- relationship to manifestation -->
+            <rdaio:P40049 rdf:resource="{$manIRI}"/>
+            
+            <!--($z) Public note -->
+            <xsl:for-each select="$context/marc:subfield[@code='z']">
+                <rdaid:P40028>Taxonomic identification note: <xsl:value-of select="."/></rdaid:P40028>
+            </xsl:for-each>
+            
+            <!--($x) Non-public note -->
+            <xsl:for-each select="$context/marc:subfield[@code='x']">
+                <xsl:variable name="metaIRI" select="uwf:metaWorIRI($baseID, .)"/>
+                <rdaio:P40164 rdf:resource="{$metaIRI}"/>
+            </xsl:for-each>
+            
+            <!-- public and non-public notes for linked 880s -->
+            <xsl:if test="@tag = '754' and marc:subfield[@code = '6']">
+                <xsl:variable name="occNum"
+                    select="concat('754-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                    <xsl:for-each select="marc:subfield[@code='z']">
+                        <rdaid:P40028>
+                            <xsl:text>Taxonomic identification note: {.}</xsl:text>
+                        </rdaid:P40028>
+                    </xsl:for-each>
+                    <xsl:for-each select="marc:subfield[@code = 'x']">
+                        <xsl:variable name="metaIRI880" select="uwf:metaWorIRI($baseID, .)"/>
+                        <rdaio:P40164 rdf:resource="{$metaIRI880}"/>
+                    </xsl:for-each>
+                </xsl:for-each>
+            </xsl:if>
+            
+            <!-- relationships to nomens -->
+            
+            <!-- $c + $a pairs -->
+            <xsl:for-each select="$context/marc:subfield[@code='c']">
+                <xsl:variable name="cat" select="."/>
+                <xsl:variable name="aField" select="following-sibling::marc:subfield[@code='a'][1]"/>
+                <xsl:if test="$aField">
+                    <!-- IRI uses uwf:nomenIRI with type 'nomen' -->
+                    <xsl:variable name="nomenIRI" select="uwf:nomenIRI($baseID, ., $aField, $scheme, 'nomen')"/>
+                    <rdaio:P40079 rdf:resource="{$nomenIRI}"/>
+                </xsl:if>
+            </xsl:for-each>
+            
+            <!-- $d: Common or alternative name -->
+            <xsl:for-each select="$context/marc:subfield[@code='d']">
+                <!-- IRI uses uwf:nomenIRI with type 'nomen' -->
+                <xsl:variable name="nomenIRI" select="uwf:nomenIRI($baseID, ., ., $scheme, 'nomen')"/>
+                <rdai:P40079 rdf:resource="{$nomenIRI}"/>
+            </xsl:for-each>
+        </rdf:Description>
+    </xsl:template>
+    
+    <!-- nomen named template -->
+    <xsl:template name="F754-xx-acdxz-nomen" expand-text="yes">
+        <xsl:param name="baseID"/>
+        <xsl:param name="manIRI"/>
+        <xsl:param name="context"/>
+        
+        <xsl:variable name="itemIRI" select="uwf:itemIRI($baseID, $context)"/>
+        <xsl:variable name="scheme" select="$context/marc:subfield[@code='2'][1]"/>
+        
+        <!-- $c + $a pairs -->
+        <!-- mint a nomen for each pair -->
+        <xsl:for-each select="$context/marc:subfield[@code='c']">
+            <xsl:variable name="position" select="position()"/>
+            <xsl:variable name="cat" select="."/>
+            <xsl:variable name="aField" select="following-sibling::marc:subfield[@code='a'][1]"/>
+            <xsl:if test="$aField">
+                <xsl:variable name="nomenIRI" select="uwf:nomenIRI($baseID, ., $aField, $scheme, 'nomen')"/>
+                <rdf:Description rdf:about="{$nomenIRI}">
+                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                    <rdand:P80068>
+                        <xsl:value-of select="$aField"/>
+                    </rdand:P80068>
+                    <rdand:P80078>
+                        <xsl:value-of select="$cat"/>
+                    </rdand:P80078>
+                    <xsl:if test="$scheme != ''">
+                        <rdand:P80069>
+                            <xsl:value-of select="$scheme"/>
+                        </rdand:P80069>
+                    </xsl:if>
+                    <rdand:P80067>
+                        <xsl:text>Taxonomic Identification</xsl:text>
+                    </rdand:P80067>
+                    <!-- if linked 880 AND the $a is found in the same position, add as 'equivalent to' -->
+                    <xsl:if test="../@tag = '754' and ../marc:subfield[@code = '6']">
+                        <xsl:variable name="occNum"
+                            select="concat('754-', substring(../marc:subfield[@code = '6'], 5, 6))"/>
+                        <xsl:for-each
+                            select="../../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                            <xsl:for-each select="marc:subfield[@code = 'c']">
+                                <xsl:if test="position() = $position">
+                                    <xsl:variable name="aField880" select="following-sibling::marc:subfield[@code='a'][1]"/>
+                                    <rdand:P80113>
+                                        <xsl:value-of select="$aField880"/>
+                                    </rdand:P80113>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:for-each>
+                    </xsl:if>
+                </rdf:Description>
+            </xsl:if>
         </xsl:for-each>
         
+        <!-- $d: Common or alternative name -->
+        <!-- mint a nomen for each $d -->
+        <xsl:for-each select="$context/marc:subfield[@code='d']">
+            <xsl:variable name="position" select="position()"/>
+            <xsl:variable name="nomenIRI" select="uwf:nomenIRI($baseID, ., ., $scheme, 'nomen')"/>
+            <rdf:Description rdf:about="{$nomenIRI}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+                <rdand:P80068><xsl:value-of select="."/></rdand:P80068>
+                <rdand:P80078>Common or alternative name</rdand:P80078>
+                <rdand:P80067>Taxonomic Identification</rdand:P80067>
+                <!-- if linked 880 AND the $d is found in the same position, add as 'equivalent to' -->
+                <xsl:if test="../@tag = '754' and ../marc:subfield[@code = '6']">
+                    <xsl:variable name="occNum"
+                        select="concat('754-', substring(../marc:subfield[@code = '6'], 5, 6))"/>
+                    <xsl:for-each
+                        select="../../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                        <xsl:for-each select="marc:subfield[@code = 'd']">
+                            <xsl:if test="position() = $position">
+                                <rdand:P80113>
+                                    <xsl:value-of select="."/>
+                                </rdand:P80113>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:for-each>
+                </xsl:if>
+            </rdf:Description>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <!-- metadata work named template -->
+    <xsl:template name="F754-xx-acdxz-metaWor" expand-text="yes">
+        <xsl:param name="baseID"/>
+        <xsl:param name="manIRI"/>
+        <xsl:param name="context"/>
+        
+        <xsl:variable name="itemIRI" select="uwf:itemIRI($baseID, $context)"/>
+        
         <!--($x) Non-public note -->
+        <!-- rdf:Description for metadata work containing non-public note -->
         <xsl:for-each select="$context/marc:subfield[@code='x']">
             <xsl:variable name="metaIRI" select="uwf:metaWorIRI($baseID, .)"/>
             <rdf:Description rdf:about="{$metaIRI}">
@@ -358,41 +499,10 @@
                 <rdawd:P10002>{concat('metaWor#', $baseID, generate-id())}</rdawd:P10002>
                 <rdf:subject rdf:resource="{$itemIRI}"/>
                 <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/P40028"/>
-                <rdf:object>Taxonomic identification note: <xsl:value-of select="."/></rdf:object>
+                <rdf:object>
+                    <xsl:text>Taxonomic identification note: {.}</xsl:text>
+                </rdf:object>
                 <rdawd:P10004>Private</rdawd:P10004>
-            </rdf:Description>
-        </xsl:for-each>
-        
-        <!-- $c + $a pairs -->
-        <xsl:for-each select="$context/marc:subfield[@code='c']">
-            <xsl:variable name="cat" select="."/>
-            <xsl:variable name="aField" select="following-sibling::marc:subfield[@code='a'][1]"/>
-            <xsl:if test="$aField">
-                <xsl:variable name="nomenIRI" select="uwf:conceptIRI($scheme, $aField)"/>
-                <rdf:Description rdf:about="{$nomenIRI}">
-                    <xsl:copy-of select="uwf:fillConcept($aField, $scheme, $cat, '754')"/>
-                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-                    <rdan:P80067>Taxonomic Identification</rdan:P80067>
-                </rdf:Description>
-                <rdf:Description rdf:about="{$itemIRI}">
-                    <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-                    <rdai:P40079 rdf:resource="{$nomenIRI}"/>
-                </rdf:Description>
-            </xsl:if>
-        </xsl:for-each>
-        
-        <!-- $d: Common or alternative name -->
-        <xsl:for-each select="$context/marc:subfield[@code='d']">
-            <xsl:variable name="nomenIRI" select="uwf:conceptIRI('common', .)"/>
-            <rdf:Description rdf:about="{$nomenIRI}">
-                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-                <rdan:P80068><xsl:value-of select="."/></rdan:P80068>
-                <rdan:P80078>Common or alternative name</rdan:P80078>
-                <rdan:P80067>Taxonomic Identification</rdan:P80067>
-            </rdf:Description>
-            <rdf:Description rdf:about="{$itemIRI}">
-                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-                <rdai:P40079 rdf:resource="{$nomenIRI}"/>
             </rdf:Description>
         </xsl:for-each>
     </xsl:template>
