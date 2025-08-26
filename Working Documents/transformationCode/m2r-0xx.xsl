@@ -259,8 +259,7 @@
         <!--<xsl:call-template name="getmarc"/>-->
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdamo:P30004 rdf:resource="{uwf:nomenIRI($baseID, ., ., 'isbn', 'nomen')}"/>
-        </xsl:for-each>
-        
+        </xsl:for-each>      
     </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '018'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '018']" 
@@ -2594,8 +2593,48 @@
         </xsl:for-each>
     </xsl:template>
 
-    <!-- 046 Special Coded Dates -->
+    <!-- 045: Time Period of Content -->
+    <xsl:template match="marc:datafield[@tag = '045'] 
+        | marc:datafield[@tag = '880'][starts-with(marc:subfield[@code = '6'], '045-00')]"
+        mode="man">
+        <xsl:param name="baseID"/>
+        <xsl:call-template name="F045-xx-abc">
+            <xsl:with-param name="baseID" select="$baseID"/>
+            <xsl:with-param name="context" select="."/>
+        </xsl:call-template>
+    </xsl:template>
     
+    <!-- TIMESPANS -->
+    <xsl:template match="marc:datafield[@tag = '045'] 
+        | marc:datafield[@tag = '880'][starts-with(marc:subfield[@code = '6'], '045-00')]"
+        mode="tim">
+        <xsl:param name="baseID"/>
+        <xsl:call-template name="F045-timespan-node">
+            <xsl:with-param name="baseID" select="$baseID"/>
+            <xsl:with-param name="context" select="."/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <!-- NOMEN -->
+    <xsl:template match="marc:datafield[@tag = '045']
+        | marc:datafield[@tag = '880'][starts-with(marc:subfield[@code = '6'], '045-00')]"
+        mode="nom">
+        <xsl:param name="baseID"/>
+        <xsl:variable name="context" select="."/>
+        <xsl:variable name="iri" select="uwf:timespanIRI($baseID, $context, '')"/>
+        
+        <!-- One Nomen per $a (Time period code) -->
+        <xsl:for-each select="$context/marc:subfield[@code = 'a']">
+            <rdf:Description>
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10014"/> <!-- Nomen -->
+                <rdan:P80068><xsl:value-of select="normalize-space(.)"/></rdan:P80068> <!-- String value -->
+                <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/timeperiods"/>
+                <rdan:P80067 rdf:resource="{$iri}"/> <!-- Identifies timespan -->
+            </rdf:Description>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <!-- 046 Special Coded Dates -->
     <!--WORK-->
     <xsl:template match="marc:datafield[@tag = '046'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '046']" 
         mode="wor" expand-text="yes">

@@ -29,6 +29,7 @@
     xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
     xmlns:fake="http://fakePropertiesForDemo" xmlns:uwf="http://universityOfWashington/functions"
     exclude-result-prefixes="marc ex uwf" version="3.0">
+    
     <!-- 013 -->
     <xsl:template name="F013-xx-abcdef" expand-text="yes">
         <xsl:text>Patent control information: </xsl:text>
@@ -57,6 +58,7 @@
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
+    
     <!-- 026 -->
     <xsl:template name="F026-xx-abcd" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c']
@@ -78,6 +80,7 @@
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
+    
     <!-- 034 -->
     <xsl:template name="F034-xx-abchrxy" expand-text="yes">
             <!--<xsl:call-template name="getmarc"/>-->
@@ -180,9 +183,125 @@
                     </xsl:for-each>
                 </rdaed:P20071>
             </xsl:if>
- 
     </xsl:template>
 
+    <!-- 045 -->
+    <xsl:template name="F045-xx-abc">
+        <xsl:param name="baseID"/>
+        <xsl:param name="context"/>
+        
+        <!-- IRI for this timespan -->
+        <xsl:variable name="iri" select="uwf:timespanIRI($baseID, $context, '')"/>
+        
+        <!-- Link manifestation → TimeSpan (do not emit the TimeSpan node here) -->
+        <rdamo:P30162 rdf:resource="{$iri}"/>
+        
+        <!-- For subfield $a (time period code) -->
+        <xsl:if test="$context/marc:subfield[@code='a']">
+            <rdawo:P10216 rdf:resource="{$iri}"/>
+            <xsl:for-each select="$context/marc:subfield[@code='a']">
+                <rdawo:P10218><xsl:value-of select="normalize-space(.)"/></rdawo:P10218>
+            </xsl:for-each>
+        </xsl:if>
+        
+        <!-- For subfields $b or $c (dates or BCE) -->
+        <xsl:if test="$context/marc:subfield[@code='b'] or $context/marc:subfield[@code='c']">
+            <rdawo:P10219 rdf:resource="{$iri}"/>
+            <xsl:for-each select="$context/marc:subfield[@code='b' or @code='c']">
+                <rdawo:P10218><xsl:value-of select="normalize-space(.)"/></rdawo:P10218>
+            </xsl:for-each>
+        </xsl:if>
+    </xsl:template>    
+    
+    <!-- 045 TIMESPAN) -->
+    <xsl:template name="F045-timespan-node">
+        <xsl:param name="baseID"/>
+        <xsl:param name="context"/>
+        <xsl:variable name="iri" select="uwf:timespanIRI($baseID, $context, '')"/>
+        
+        <rdf:Description rdf:about="{$iri}">
+            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
+            
+            <!-- Label from $b/$c or fallback to $a codes -->
+            <xsl:variable name="bVals" select="$context/marc:subfield[@code='b']"/>
+            <xsl:variable name="cVals" select="$context/marc:subfield[@code='c']"/>
+            <xsl:variable name="aVals" select="$context/marc:subfield[@code='a']"/>
+            
+            <xsl:variable name="label">
+                <xsl:choose>
+                    <xsl:when test="$bVals">
+                        <xsl:for-each select="$bVals">
+                            <xsl:variable name="raw" select="normalize-space(.)"/>
+                            <xsl:variable name="trim"
+                                select="if (starts-with($raw,'d')) 
+                                then substring($raw,2) else $raw"/>
+                            <xsl:choose>
+                                <xsl:when test="string-length($trim)=8">
+                                    <xsl:value-of 
+                                        select="concat(substring($trim,1,4), '-', substring($trim,5,2), '-', substring($trim,7,2))"/>
+                                </xsl:when>
+                                <xsl:when test="string-length($trim)=6">
+                                    <xsl:value-of 
+                                        select="concat(substring($trim,1,4), '-', substring($trim,5,2))"/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="$trim"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                            <xsl:if test="position() != last()">
+                                <xsl:text> - </xsl:text>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:when>
+                    <xsl:when test="$cVals">
+                        <xsl:for-each select="$cVals">
+                            <xsl:value-of select="concat(normalize-space(.), ' B.C.E.')"/>
+                            <xsl:if test="position() != last()">
+                                <xsl:text> - </xsl:text>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:when>
+                    <xsl:when test="$aVals">
+                        <xsl:for-each select="$aVals">
+                            <xsl:value-of select="normalize-space(.)"/>
+                            <xsl:if test="position() != last()">
+                                <xsl:text>; </xsl:text>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:variable>
+            
+            <xsl:if test="normalize-space($label) != ''">
+                <rdatd:P70016><xsl:value-of select="$label"/></rdatd:P70016>
+            </xsl:if>
+            
+            <!-- If two or more $b values, treat as start/end year -->
+            <xsl:if test="count($bVals) &gt;= 2">
+                <rdatd:P70039>
+                    <xsl:variable name="raw" select="normalize-space($bVals[1])"/>
+                    <xsl:variable name="trim"
+                        select="if (starts-with($raw,'d')) then substring($raw,2) else $raw"/>
+                    <xsl:value-of select="substring($trim,1,4)"/>
+                </rdatd:P70039>
+                <rdatd:P70040>
+                    <xsl:variable name="raw" select="normalize-space($bVals[last()])"/>
+                    <xsl:variable name="trim"
+                        select="if (starts-with($raw,'d')) then substring($raw,2) else $raw"/>
+                    <xsl:value-of select="substring($trim,1,4)"/>
+                </rdatd:P70040>
+            </xsl:if>
+            
+            <!-- Carry codes as provenance notes -->
+            <xsl:for-each select="$aVals">
+                <rdatd:P70045>
+                    <xsl:text>Time period code: </xsl:text>
+                    <xsl:value-of select="normalize-space(.)"/>
+                </rdatd:P70045>
+            </xsl:for-each>
+        </rdf:Description>
+    </xsl:template>
+    
     <!--046-->
     <xsl:template name="F046-timespan">
         <xsl:param name="baseID"/>
