@@ -661,7 +661,7 @@
     </xsl:template>
     
     <!-- 033 - Date/Time and Place of an Event -->
-    <xsl:template match="marc:datafield[@tag='033'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 6) = '033']" 
+    <xsl:template match="marc:datafield[@tag='033'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '033-00']" 
         mode="wor" expand-text="yes">
         <xsl:param name="baseID"/>
         
@@ -698,7 +698,7 @@
         
     </xsl:template>
     
-    <xsl:template match="marc:datafield[@tag='033'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '033']" 
+    <xsl:template match="marc:datafield[@tag='033'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 6) = '033-00']" 
         mode="exp" expand-text="yes">
         
         <xsl:param name="baseID"/>
@@ -708,9 +708,22 @@
                 <!-- date of Capture -->
                 <xsl:for-each select="marc:subfield[@code = 'a']">
                 <rdaed:P20004>
-                    <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                    <xsl:value-of select="."/>
                 </rdaed:P20004>
                 </xsl:for-each>
+                
+                <!-- date of Capture 880 -->
+                <xsl:if test="(@tag = '033') and (marc:subfield[@code = '6'])">
+                    <xsl:variable name="occNum" select="concat('033-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                    <xsl:for-each
+                        select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                        <xsl:for-each select="marc:subfield[@code = 'a']">
+                            <rdaed:P20004>
+                                <xsl:value-of select="."/>
+                            </rdaed:P20004>
+                        </xsl:for-each>
+                    </xsl:for-each>
+                </xsl:if>
                 
                 <!-- place of Capture -->
                 <xsl:for-each select="marc:subfield[@code = 'b']">
@@ -733,6 +746,18 @@
                             <rdaed:P20218>
                                 <xsl:value-of select="."/>
                             </rdaed:P20218>
+                            <!-- 880 -->
+                            <xsl:if test="../@tag = '033' and ../marc:subfield[@code = '6']">
+                                <xsl:variable name="occNum" select="concat('033-', substring(../marc:subfield[@code = '6'], 5, 6))"/>
+                                <xsl:for-each
+                                    select="../../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                                    <xsl:for-each select="marc:subfield[@code = 'p']">
+                                        <rdaed:P20218>
+                                            <xsl:value-of select="."/>
+                                        </rdaed:P20218>
+                                    </xsl:for-each>
+                                </xsl:for-each>
+                            </xsl:if>
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:for-each>
@@ -749,9 +774,22 @@
                 <!-- date of Broadcast -->
                 <xsl:for-each select="marc:subfield[@code = 'a']">
                     <rdaed:P20214>
-                        <xsl:value-of select="marc:subfield[@code = 'a']"/>
+                        <xsl:value-of select="."/>
                     </rdaed:P20214>
                 </xsl:for-each>
+                
+                <!-- date of Broadcast 880 -->
+                <xsl:if test="(@tag = '033') and (marc:subfield[@code = '6'])">
+                    <xsl:variable name="occNum" select="concat('033-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                    <xsl:for-each
+                        select="../../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                        <xsl:for-each select="marc:subfield[@code = 'a']">
+                            <rdaed:P20004>
+                                <xsl:value-of select="."/>
+                            </rdaed:P20004>
+                        </xsl:for-each>
+                    </xsl:for-each>
+                </xsl:if>
                 
                 <!-- place of Broadcast - related place of expression -->
                 <xsl:for-each select="marc:subfield[@code = 'b']">
@@ -773,6 +811,18 @@
                             <rdaed:P20306>
                                 <xsl:value-of select="."/>
                             </rdaed:P20306>
+                            <!-- 880 -->
+                            <xsl:if test="../@tag = '033' and ../marc:subfield[@code = '6']">
+                                <xsl:variable name="occNum" select="concat('033-', substring(../marc:subfield[@code = '6'], 5, 6))"/>
+                                <xsl:for-each
+                                    select="../../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                                    <xsl:for-each select="marc:subfield[@code = 'p']">
+                                        <rdaed:P20306>
+                                            <xsl:value-of select="."/>
+                                        </rdaed:P20306>
+                                    </xsl:for-each>
+                                </xsl:for-each>
+                            </xsl:if>
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:for-each>
@@ -786,7 +836,7 @@
         
     </xsl:template>
     
-    <xsl:template match="marc:datafield[@tag='033'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '033']" 
+    <xsl:template match="marc:datafield[@tag='033'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 6) = '033-00']" 
         mode="pla" expand-text="yes">
         
         <xsl:param name="baseID"/>
@@ -823,12 +873,13 @@
     
     </xsl:template>
     
-    <xsl:template match="marc:datafield[@tag='033'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '033']" 
+    <xsl:template match="marc:datafield[@tag='033'] | marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 6) = '033-00']" 
         mode="nom" expand-text="yes">
         <xsl:param name="baseID"/>
         
         <!-- nomen for related place from b, c -->
         <xsl:for-each select="marc:subfield[@code = 'b']">
+            <xsl:variable name="position" select="position()"/>
             <xsl:variable name="placeCode">
                 <xsl:value-of select="."/>
                 <xsl:if test="following-sibling::*[1]/@code = 'c'">
@@ -841,6 +892,25 @@
                     <xsl:value-of select="$placeCode"/>
                 </rdand:P80068>
                 <rdand:P80069 rdf:resource="http://id.loc.gov/authorities/classification/G"/>
+                <xsl:if test="../@tag = '033' and ../marc:subfield[@code = '6']">
+                    <xsl:variable name="occNum" select="concat('033-', substring(../marc:subfield[@code = '6'], 5, 6))"/>
+                    <xsl:for-each
+                        select="../../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                        <xsl:for-each select="marc:subfield[@code = 'b']">
+                            <xsl:if test="position() = $position">
+                                <xsl:variable name="placeCode880">
+                                    <xsl:value-of select="."/>
+                                    <xsl:if test="following-sibling::*[1]/@code = 'c'">
+                                        <xsl:value-of select="' '||following-sibling::*[1]"/>
+                                    </xsl:if>
+                                </xsl:variable>
+                                <rdand:P80113>
+                                    <xsl:value-of select="$placeCode880"/>
+                                </rdand:P80113>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:for-each>
+                </xsl:if>
             </rdf:Description>
         </xsl:for-each>
         
@@ -848,12 +918,26 @@
         <xsl:if test="marc:subfield[@code = '2']">
             <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
             <xsl:for-each select="marc:subfield[@code = 'p']">
+                <xsl:variable name="position" select="position()"/>
                 <rdf:Description rdf:about="{uwf:nomenIRI($baseID, .., ., $sub2, 'place')}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                     <rdand:P80068>
                         <xsl:value-of select="."/>
                     </rdand:P80068>
                     <xsl:copy-of select="uwf:s2Nomen($sub2)"/>
+                    <xsl:if test="../@tag = '033' and ../marc:subfield[@code = '6']">
+                        <xsl:variable name="occNum" select="concat('033-', substring(../marc:subfield[@code = '6'], 5, 6))"/>
+                        <xsl:for-each
+                            select="../../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
+                            <xsl:for-each select="marc:subfield[@code = 'p']">
+                                <xsl:if test="position() = $position">
+                                    <rdand:P80113>
+                                        <xsl:value-of select="."/>
+                                    </rdand:P80113>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:for-each>
+                    </xsl:if>
                 </rdf:Description>
             </xsl:for-each>
         </xsl:if>

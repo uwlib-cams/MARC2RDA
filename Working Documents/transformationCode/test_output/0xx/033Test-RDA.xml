@@ -20,16 +20,19 @@ F001 033-test1
 F033 00 $a 1858----
 F033 02 $a 19750305 $b 4034 $c R4
 F033 11 $a 198709071900-0400 $a 198710012030-0400
-F033 20 $a 197601-- $a 197606-- $b 6714 $c R7 $b 6714 $c V4
-F033 00 $a 200008-- $b 5754 $c L7 $p Abbey Road Studio 1, London
-F033 02 $p Northgate (Seattle, Wash.) $2 naf $0 http://id.loc.gov/rwo/agents/no2002014866
+F033 20 $6 880-01 $a 197601-- $a 197606-- $b 6714 $c R7 $b 6714 $c V4
+F880 20 $6 033-01 $a 880 a1 $a 880 a2 $b 880 b1 $c 880 c1 $b 880 b2 $c 880 c2
+F033 00 $6 880-02 $a 200008-- $b 5754 $c L7 $p Abbey Road Studio 1, London
+F880 00 $6 033-02 $a 880 a $b 880 b $c 880 c $p 880 p no 2
+F033 02 $6 880-03 $p Northgate (Seattle, Wash.) $2 naf $0 http://id.loc.gov/rwo/agents/no2002014866
+F880 02 $6 033-03 $p 880 subfield p $2 naf $0 http://id.loc.gov/rwo/agents/no2002014866
 </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc033-test1"/><!--rdawo:P10623 = is work described with metadata by-->
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
-      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/pla#2025-08-27t0936478199006-0400d27e8"/><!--rdawo:P10316 = has related place of work-->
+      <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/pla#2025-08-27t1940071807022-0400d27e8"/><!--rdawo:P10316 = has related place of work-->
       <rdawo:P10316 rdf:resource="http://marc2rda.edu/fake/naf/pla#northgateseattlewash"/><!--rdawo:P10316 = has related place of work-->
       <rdawo:P10316 rdf:resource="http://id.loc.gov/rwo/agents/no2002014866"/><!--rdawo:P10316 = has related place of work-->
    </rdf:Description>
@@ -38,16 +41,20 @@ F033 02 $p Northgate (Seattle, Wash.) $2 naf $0 http://id.loc.gov/rwo/agents/no2
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc033-test1"/><!--rdaeo:P20576 = is expression described with metadata by-->
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20004/><!--rdaed:P20004 = has date of capture-->
-      <rdaed:P20214/><!--rdaed:P20214 = has date of expression-->
-      <rdaed:P20214/><!--rdaed:P20214 = has date of expression-->
-      <rdaed:P20004/><!--rdaed:P20004 = has date of capture-->
-      <rdaed:P20004/><!--rdaed:P20004 = has date of capture-->
-      <rdaeo:P20218 rdf:resource="http://marc2rda.edu/fake/pla#2025-08-27t0936478199006-0400d27e20"/><!--rdaeo:P20218 = has place of capture-->
-      <rdaeo:P20218 rdf:resource="http://marc2rda.edu/fake/pla#2025-08-27t0936478199006-0400d27e20"/><!--rdaeo:P20218 = has place of capture-->
-      <rdaed:P20004/><!--rdaed:P20004 = has date of capture-->
-      <rdaeo:P20218 rdf:resource="http://marc2rda.edu/fake/pla#2025-08-27t0936478199006-0400d27e33"/><!--rdaeo:P20218 = has place of capture-->
+      <rdaed:P20004>1858----</rdaed:P20004><!--rdaed:P20004 = has date of capture-->
+      <rdaed:P20214>198709071900-0400</rdaed:P20214><!--rdaed:P20214 = has date of expression-->
+      <rdaed:P20214>198710012030-0400</rdaed:P20214><!--rdaed:P20214 = has date of expression-->
+      <rdaed:P20004>197601--</rdaed:P20004><!--rdaed:P20004 = has date of capture-->
+      <rdaed:P20004>197606--</rdaed:P20004><!--rdaed:P20004 = has date of capture-->
+      <rdaed:P20004>880 a1</rdaed:P20004><!--rdaed:P20004 = has date of capture-->
+      <rdaed:P20004>880 a2</rdaed:P20004><!--rdaed:P20004 = has date of capture-->
+      <rdaeo:P20218 rdf:resource="http://marc2rda.edu/fake/pla#2025-08-27t1940071807022-0400d27e20"/><!--rdaeo:P20218 = has place of capture-->
+      <rdaeo:P20218 rdf:resource="http://marc2rda.edu/fake/pla#2025-08-27t1940071807022-0400d27e20"/><!--rdaeo:P20218 = has place of capture-->
+      <rdaed:P20004>200008--</rdaed:P20004><!--rdaed:P20004 = has date of capture-->
+      <rdaed:P20004>880 a</rdaed:P20004><!--rdaed:P20004 = has date of capture-->
+      <rdaeo:P20218 rdf:resource="http://marc2rda.edu/fake/pla#2025-08-27t1940071807022-0400d27e50"/><!--rdaeo:P20218 = has place of capture-->
       <rdaed:P20218>Abbey Road Studio 1, London</rdaed:P20218><!--rdaed:P20218 = has place of capture-->
+      <rdaed:P20218>880 p no 2</rdaed:P20218><!--rdaed:P20218 = has place of capture-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
@@ -55,46 +62,50 @@ F033 02 $p Northgate (Seattle, Wash.) $2 naf $0 http://id.loc.gov/rwo/agents/no2
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/plaNom#2025-08-27t0936478199006-0400d27e11">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/plaNom#2025-08-27t1940071807022-0400d27e11">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>4034 R4</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdand:P80069 rdf:resource="http://id.loc.gov/authorities/classification/G"/><!--rdand:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/plaNom#2025-08-27t0936478199006-0400d27e25">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/plaNom#2025-08-27t1940071807022-0400d27e27">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>6714 R7</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdand:P80069 rdf:resource="http://id.loc.gov/authorities/classification/G"/><!--rdand:P80069 = has scheme of nomen-->
+      <rdand:P80113>880 b1 880 c1</rdand:P80113><!--rdand:P80113 = is equivalent to-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/plaNom#2025-08-27t0936478199006-0400d27e29">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/plaNom#2025-08-27t1940071807022-0400d27e31">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>6714 V4</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdand:P80069 rdf:resource="http://id.loc.gov/authorities/classification/G"/><!--rdand:P80069 = has scheme of nomen-->
+      <rdand:P80113>880 b2 880 c2</rdand:P80113><!--rdand:P80113 = is equivalent to-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/plaNom#2025-08-27t0936478199006-0400d27e36">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/plaNom#2025-08-27t1940071807022-0400d27e55">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>5754 L7</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdand:P80069 rdf:resource="http://id.loc.gov/authorities/classification/G"/><!--rdand:P80069 = has scheme of nomen-->
+      <rdand:P80113>880 b 880 c</rdand:P80113><!--rdand:P80113 = is equivalent to-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/plaNom#northgateseattlewash">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
       <rdand:P80068>Northgate (Seattle, Wash.)</rdand:P80068><!--rdand:P80068 = has nomen string-->
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/naf"/><!--rdan:P80069 = has scheme of nomen-->
+      <rdand:P80113>880 subfield p</rdand:P80113><!--rdand:P80113 = is equivalent to-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla#2025-08-27t0936478199006-0400d27e8">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla#2025-08-27t1940071807022-0400d27e8">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70020 rdf:resource="http://marc2rda.edu/fake/plaNom#2025-08-27t0936478199006-0400d27e11"/><!--rdapo:P70020 = has identifier for place-->
+      <rdapo:P70020 rdf:resource="http://marc2rda.edu/fake/plaNom#2025-08-27t1940071807022-0400d27e11"/><!--rdapo:P70020 = has identifier for place-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla#2025-08-27t0936478199006-0400d27e20">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla#2025-08-27t1940071807022-0400d27e20">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70020 rdf:resource="http://marc2rda.edu/fake/plaNom#2025-08-27t0936478199006-0400d27e25"/><!--rdapo:P70020 = has identifier for place-->
+      <rdapo:P70020 rdf:resource="http://marc2rda.edu/fake/plaNom#2025-08-27t1940071807022-0400d27e27"/><!--rdapo:P70020 = has identifier for place-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla#2025-08-27t0936478199006-0400d27e20">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla#2025-08-27t1940071807022-0400d27e20">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70020 rdf:resource="http://marc2rda.edu/fake/plaNom#2025-08-27t0936478199006-0400d27e29"/><!--rdapo:P70020 = has identifier for place-->
+      <rdapo:P70020 rdf:resource="http://marc2rda.edu/fake/plaNom#2025-08-27t1940071807022-0400d27e31"/><!--rdapo:P70020 = has identifier for place-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla#2025-08-27t0936478199006-0400d27e33">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/pla#2025-08-27t1940071807022-0400d27e50">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-      <rdapo:P70020 rdf:resource="http://marc2rda.edu/fake/plaNom#2025-08-27t0936478199006-0400d27e36"/><!--rdapo:P70020 = has identifier for place-->
+      <rdapo:P70020 rdf:resource="http://marc2rda.edu/fake/plaNom#2025-08-27t1940071807022-0400d27e55"/><!--rdapo:P70020 = has identifier for place-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/naf/pla#northgateseattlewash">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
