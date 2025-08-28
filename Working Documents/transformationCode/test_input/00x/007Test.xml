@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>04179nam a2200853 i 4500</marc:leader>
+        <marc:controlfield tag="007">cr_|||||||||||</marc:controlfield>
+        <marc:controlfield tag="007">sd fsngnnmmnee</marc:controlfield>
+        <marc:controlfield tag="007">sd fsngnnmmned</marc:controlfield>
+        <marc:controlfield tag="007">cr mn||||a||||</marc:controlfield>
+        <marc:controlfield tag="007">vd cvaizk</marc:controlfield>
+        <marc:controlfield tag="007">sz zunnnnnuneu</marc:controlfield>
+        <marc:controlfield tag="007">sd fu|gnn|||||</marc:controlfield>
+    </marc:record>
+</marc:collection>
+
