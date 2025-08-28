@@ -8,23 +8,44 @@
     version="2.0">
     
     <xsl:key name="lookupLDRc6" match="uwmisc:entry" use="uwmisc:marcLDRc6"/>
+    
     <xsl:key name="lookup007c0" match="uwmisc:entry" use="uwmisc:marc007c0"/>
     <xsl:key name="lookup007c0c1" match="uwmisc:entry" use="uwmisc:marc007c0c1"/>
     <xsl:key name="lookup007c0c5c6" match="uwmisc:entry" use="uwmisc:marc007c0c5c6"/>
+    
     <xsl:key name="lookupBK008c23" match="uwmisc:entry" use="uwmisc:marcBK008c23"/>
+    <xsl:key name="lookupBK006c6" match="uwmisc:entry" use="uwmisc:marcBK006c6"/>
+    
     <xsl:key name="lookupMP008c25" match="uwmisc:entry" use="uwmisc:marcMP008c25"/>
+    <xsl:key name="lookupMP006c8" match="uwmisc:entry" use="uwmisc:marcMP006c8"/>
     <xsl:key name="lookupMP008c29" match="uwmisc:entry" use="uwmisc:marcMP008c29"/>
+    <xsl:key name="lookupMP006c12" match="uwmisc:entry" use="uwmisc:marcMP006c12"/>
     <xsl:key name="lookupMP008c33orc34" match="uwmisc:entry" use="uwmisc:marcMP008c33orc34"/>
+    <xsl:key name="lookupMP006c16orc17" match="uwmisc:entry" use="uwmisc:marcMP006c16orc17"/>
+    
     <xsl:key name="lookupVM008c29" match="uwmisc:entry" use="uwmisc:marcVM008c29"/>
+    <xsl:key name="lookupVM006c12" match="uwmisc:entry" use="uwmisc:marcVM006c12"/>
     <xsl:key name="lookupVM008c33" match="uwmisc:entry" use="uwmisc:marcVM008c33"/>
+    <xsl:key name="lookupVM006c16" match="uwmisc:entry" use="uwmisc:marcVM006c16"/>
+    
     <xsl:key name="lookupCF008c23" match="uwmisc:entry" use="uwmisc:marcCF008c23"/>
+    <xsl:key name="lookupCF006c6" match="uwmisc:entry" use="uwmisc:marcCF006c6"/>
     <xsl:key name="lookupCF008c26" match="uwmisc:entry" use="uwmisc:marcCF008c26"/>
+    <xsl:key name="lookupCF006c9" match="uwmisc:entry" use="uwmisc:marcCF006c9"/>
+    
     <xsl:key name="lookupCR008c23" match="uwmisc:entry" use="uwmisc:marcCR008c23"/>
+    <xsl:key name="lookupCR006c6" match="uwmisc:entry" use="uwmisc:marcCR006c6"/>
     <xsl:key name="lookupCR008c24" match="uwmisc:entry" use="uwmisc:marcCR008c24"/>
+    <xsl:key name="lookupCR006c7" match="uwmisc:entry" use="uwmisc:marcCR006c7"/>
+    
     <xsl:key name="lookupMX008c23" match="uwmisc:entry" use="uwmisc:marcMX008c23"/>
+    <xsl:key name="lookupMX006c6" match="uwmisc:entry" use="uwmisc:marcMX006c6"/>
+    
     <xsl:key name="lookupMU008c23" match="uwmisc:entry" use="uwmisc:marcMU008c23"/>
+    <xsl:key name="lookupMU006c6" match="uwmisc:entry" use="uwmisc:marcMU006c6"/>
     <xsl:key name="lookupMU008c30orc31" match="uwmisc:entry" use="uwmisc:marcMU008c30orc31"/>
-    <xsl:key name="lookupMU008c30c31" match="uwmisc:entry" use="uwmisc:marcMU008c30c31"/>
+    <xsl:key name="lookupMU006c13orc14" match="uwmisc:entry" use="uwmisc:marcMU006c13orc14"/>
+    <xsl:key name="lookupMU006c13c14" match="uwmisc:entry" use="uwmisc:marcMU006c13c14"/>
     
     <xsl:template name="otherFieldsTo33x">
         
@@ -36,6 +57,7 @@
                 <xsl:apply-templates select="marc:leader"/>
                 <xsl:apply-templates select="marc:controlfield[@tag = '007']"/>
                 <xsl:apply-templates select="marc:controlfield[@tag = '008']"/>
+                <xsl:apply-templates select="marc:controlfield[@tag = '006']"/>
             </xsl:copy>
         </xsl:for-each>
         
@@ -246,7 +268,6 @@
                 <xsl:variable name="c29" select="substring(., 30, 1)"/>
                 <xsl:variable name="c33" select="substring(., 34, 1)"/>
                 
-                
                 <xsl:variable name="lookupVM008c29-content">
                     <xsl:copy-of select="document('lookup/Lookup336.xml')/key('lookupVM008c29', $c29)/uwmisc:rdaIRI"/>
                 </xsl:variable>
@@ -443,6 +464,334 @@
                     <xsl:copy-of select="document('lookup/Lookup336.xml')/key('lookupMU008c30c31', concat($c30, $c31))/uwmisc:rdaIRI"/>
                 </xsl:variable>
                 <xsl:for-each select="$lookupMU008c30c31-content/uwmisc:rdaIRI">
+                    <marc:datafield tag="336" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:for-each>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="marc:controlfield[@tag = '006']" expand-text="yes">
+        <xsl:variable name="char0" select="substring(., 1, 1)"/>
+        
+        <xsl:choose>
+            <!-- books -->
+            <xsl:when test="$char0 = 'a' or $char0 = 't'">
+                <xsl:variable name="c6" select="substring(., 7, 1)"/>
+                
+                <xsl:variable name="lookupBK006c6-content">
+                    <xsl:copy-of select="document('lookup/Lookup336.xml')/key('lookupBK006c6', $c6)/uwmisc:rdaIRI"/>
+                </xsl:variable>
+                
+                <xsl:for-each select="$lookupBK006c6-content/uwmisc:rdaIRI">
+                    <marc:datafield tag="336" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:for-each>
+                
+            </xsl:when>
+            
+            <!-- 008 maps -->
+            <xsl:when test="$char0 = 'e' or $char0 = 'f'">
+                <xsl:variable name="c8" select="substring(., 9, 1)"/>
+                <xsl:variable name="c12" select="substring(., 13, 1)"/>
+                <xsl:variable name="c16" select="substring(., 17, 1)"/>
+                <xsl:variable name="c17" select="substring(., 18, 1)"/>
+                
+                <xsl:variable name="lookupMP006c8-content">
+                    <xsl:copy-of select="document('lookup/Lookup336.xml')/key('lookupMP006c8', $c8)/uwmisc:rdaIRI"/>
+                </xsl:variable>
+                <xsl:for-each select="$lookupMP006c8-content/uwmisc:rdaIRI">
+                    <marc:datafield tag="336" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:for-each>
+                
+                <xsl:variable name="lookupMP006c8-carrier">
+                    <xsl:copy-of select="document('lookup/Lookup338.xml')/key('lookupMP006c8', $c8)/uwmisc:rdaIRI"/>
+                </xsl:variable>
+                <xsl:for-each select="$lookupMP006c8-carrier/uwmisc:rdaIRI">
+                    <marc:datafield tag="338" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:for-each>
+                
+                <xsl:variable name="lookupMP006c12-content">
+                    <xsl:copy-of select="document('lookup/Lookup336.xml')/key('lookupMP006c12', $c12)/uwmisc:rdaIRI"/>
+                </xsl:variable>
+                <xsl:for-each select="$lookupMP006c12-content/uwmisc:rdaIRI">
+                    <marc:datafield tag="336" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:for-each>
+                
+                <xsl:variable name="lookupMP006c12-carrier">
+                    <xsl:copy-of select="document('lookup/Lookup338.xml')/key('lookupMP006c12', $c12)/uwmisc:rdaIRI"/>
+                </xsl:variable>
+                <xsl:for-each select="$lookupMP006c12-carrier/uwmisc:rdaIRI">
+                    <marc:datafield tag="338" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:for-each>
+                
+                <xsl:variable name="lookupMP006c16-content">
+                    <xsl:copy-of select="document('lookup/Lookup336.xml')/key('lookupMP006c16orc17', $c16)/uwmisc:rdaIRI"/>
+                </xsl:variable>
+                <xsl:for-each select="$lookupMP006c16-content/uwmisc:rdaIRI">
+                    <marc:datafield tag="336" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:for-each>
+                
+                <xsl:variable name="lookupMP006c16-carrier">
+                    <xsl:copy-of select="document('lookup/Lookup338.xml')/key('lookupMP008c16orc17', $c16)/uwmisc:rdaIRI"/>
+                </xsl:variable>
+                <xsl:for-each select="$lookupMP006c16-carrier/uwmisc:rdaIRI">
+                    <marc:datafield tag="338" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:for-each>
+                
+                <xsl:variable name="lookupMP006c17-content">
+                    <xsl:copy-of select="document('lookup/Lookup336.xml')/key('lookupMP006c16orc17', $c17)/uwmisc:rdaIRI"/>
+                </xsl:variable>
+                <xsl:for-each select="$lookupMP006c17-content/uwmisc:rdaIRI">
+                    <marc:datafield tag="336" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:for-each>
+                
+                <xsl:variable name="lookupMP006c17-carrier">
+                    <xsl:copy-of select="document('lookup/Lookup338.xml')/key('lookupMP006c16orc17', $c17)/uwmisc:rdaIRI"/>
+                </xsl:variable>
+                <xsl:for-each select="$lookupMP006c17-carrier/uwmisc:rdaIRI">
+                    <marc:datafield tag="338" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:for-each>
+            </xsl:when>
+            
+            <!-- visual materials -->
+            <xsl:when test="$char0 = 'g' or $char0 = 'k' or $char0 = 'o' or $char0 = 'r'">
+                <xsl:variable name="c12" select="substring(., 13, 1)"/>
+                <xsl:variable name="c16" select="substring(., 17, 1)"/>
+                
+                <xsl:variable name="lookupVM006c12-content">
+                    <xsl:copy-of select="document('lookup/Lookup336.xml')/key('lookupVM006c12', $c12)/uwmisc:rdaIRI"/>
+                </xsl:variable>
+                <xsl:for-each select="$lookupVM006c12-content/uwmisc:rdaIRI">
+                    <marc:datafield tag="336" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:for-each>
+                
+                <xsl:variable name="lookupVM006c12-carrier">
+                    <xsl:copy-of select="document('lookup/Lookup338.xml')/key('lookupVM006c12', $c12)/uwmisc:rdaIRI"/>
+                </xsl:variable>
+                <xsl:for-each select="$lookupVM006c12-carrier/uwmisc:rdaIRI">
+                    <marc:datafield tag="338" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:for-each>
+                
+                <xsl:variable name="lookupVM006c16-content">
+                    <xsl:copy-of select="document('lookup/Lookup336.xml')/key('lookupVM006c16', $c16)/uwmisc:rdaIRI"/>
+                </xsl:variable>
+                <xsl:for-each select="$lookupVM006c16-content/uwmisc:rdaIRI">
+                    <marc:datafield tag="336" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:for-each>
+                
+                <xsl:variable name="lookupVM006c16-carrier">
+                    <xsl:copy-of select="document('lookup/Lookup338.xml')/key('lookupVM006c16', $c16)/uwmisc:rdaIRI"/>
+                </xsl:variable>
+                <xsl:for-each select="$lookupVM006c16-carrier/uwmisc:rdaIRI">
+                    <marc:datafield tag="338" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:for-each>
+            </xsl:when>
+            
+            <!-- computer files -->
+            <xsl:when test="$char0 = 'm'">
+                <xsl:variable name="c6" select="substring(., 7, 1)"/>
+                <xsl:variable name="c9" select="substring(., 10, 1)"/>
+                
+                <xsl:variable name="lookupCF006c9-content">
+                    <xsl:copy-of select="document('lookup/Lookup336.xml')/key('lookupCF006c9', $c9)/uwmisc:rdaIRI"/>
+                </xsl:variable>
+                <xsl:for-each select="$lookupCF006c9-content/uwmisc:rdaIRI">
+                    <marc:datafield tag="336" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:for-each>
+                
+                <xsl:variable name="lookupCF006c6-carrier">
+                    <xsl:copy-of select="document('lookup/Lookup338.xml')/key('lookupCF006c6', $c6)/uwmisc:rdaIRI"/>
+                </xsl:variable>
+                <xsl:for-each select="$lookupCF006c6-carrier/uwmisc:rdaIRI">
+                    <marc:datafield tag="338" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:for-each>
+                
+            </xsl:when>
+            
+            <!-- continuing resources -->
+            <xsl:when test="$char0 = 's'">
+                <xsl:variable name="c6" select="substring(., 7, 1)"/>
+                <xsl:variable name="c7" select="substring(., 8, 1)"/>
+                
+                <xsl:variable name="lookupCR006c6-carrier">
+                    <xsl:copy-of select="document('lookup/Lookup338.xml')/key('lookupCR006c6', $c6)/uwmisc:rdaIRI"/>
+                </xsl:variable>
+                <xsl:for-each select="$lookupCR006c6-carrier/uwmisc:rdaIRI">
+                    <marc:datafield tag="338" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:for-each>
+                
+                <xsl:variable name="lookupCR006c6-content">
+                    <xsl:copy-of select="document('lookup/Lookup336.xml')/key('lookupCR006c6', $c6)/uwmisc:rdaIRI"/>
+                </xsl:variable>
+                <xsl:for-each select="$lookupCR006c6-content/uwmisc:rdaIRI">
+                    <marc:datafield tag="336" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:for-each>
+                
+                <xsl:variable name="lookupCR006c7-content">
+                    <xsl:copy-of select="document('lookup/Lookup336.xml')/key('lookupCR006c7', $c7)/uwmisc:rdaIRI"/>
+                </xsl:variable>
+                <xsl:for-each select="$lookupCR006c7-content/uwmisc:rdaIRI">
+                    <marc:datafield tag="336" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:for-each>
+            </xsl:when>
+            
+            <!-- mixed materials -->
+            <xsl:when test="$char0 = 'p'">
+                <xsl:variable name="c6" select="substring(., 7, 1)"/>
+                
+                <xsl:variable name="lookupMX006c6-content">
+                    <xsl:copy-of select="document('lookup/Lookup336.xml')/key('lookupMX006c6', $c6)/uwmisc:rdaIRI"/>
+                </xsl:variable>
+                <xsl:for-each select="$lookupMX006c6-content/uwmisc:rdaIRI">
+                    <marc:datafield tag="336" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:for-each>
+                
+                <xsl:variable name="lookupMX006c6-carrier">
+                    <xsl:copy-of select="document('lookup/Lookup338.xml')/key('lookupMX006c6', $c6)/uwmisc:rdaIRI"/>
+                </xsl:variable>
+                <xsl:for-each select="$lookupMX006c6-carrier/uwmisc:rdaIRI">
+                    <marc:datafield tag="338" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:for-each>
+                
+            </xsl:when>
+            
+            <!-- music -->
+            <xsl:when test="$char0 = 'c' or $char0 = 'd' or $char0 = 'i' or $char0 = 'j'">
+                <xsl:variable name="c6" select="substring(., 7, 1)"/>
+                <xsl:variable name="c13" select="substring(., 14, 1)"/>
+                <xsl:variable name="c14" select="substring(., 15, 1)"/>
+                
+                <xsl:variable name="lookupMU006c6-content">
+                    <xsl:copy-of select="document('lookup/Lookup336.xml')/key('lookupMU006c6', $c6)/uwmisc:rdaIRI"/>
+                </xsl:variable>
+                <xsl:for-each select="$lookupMU006c6-content/uwmisc:rdaIRI">
+                    <marc:datafield tag="336" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:for-each>
+                
+                <xsl:variable name="lookupMU006c6-carrier">
+                    <xsl:copy-of select="document('lookup/Lookup338.xml')/key('lookupMU006c6', $c6)/uwmisc:rdaIRI"/>
+                </xsl:variable>
+                <xsl:for-each select="$lookupMU006c6-carrier/uwmisc:rdaIRI">
+                    <marc:datafield tag="338" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:for-each>
+                
+                <xsl:variable name="lookupMU006c13-content">
+                    <xsl:copy-of select="document('lookup/Lookup336.xml')/key('lookupMU006c13orc14', $c13)/uwmisc:rdaIRI"/>
+                </xsl:variable>
+                <xsl:for-each select="$lookupMU006c13-content/uwmisc:rdaIRI">
+                    <marc:datafield tag="336" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:for-each>
+                
+                <xsl:variable name="lookupMU006c14-content">
+                    <xsl:copy-of select="document('lookup/Lookup336.xml')/key('lookupMU006c13orc14', $c14)/uwmisc:rdaIRI"/>
+                </xsl:variable>
+                <xsl:for-each select="$lookupMU006c14-content/uwmisc:rdaIRI">
+                    <marc:datafield tag="336" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:for-each>
+                
+                <xsl:variable name="lookupMU006c13c14-content">
+                    <xsl:copy-of select="document('lookup/Lookup336.xml')/key('lookupMU006c13c14', concat($c13, $c14))/uwmisc:rdaIRI"/>
+                </xsl:variable>
+                <xsl:for-each select="$lookupMU006c13c14-content/uwmisc:rdaIRI">
                     <marc:datafield tag="336" ind1=" " ind2=" ">
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
