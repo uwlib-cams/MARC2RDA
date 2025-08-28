@@ -297,6 +297,122 @@
             </xsl:when>
         </xsl:choose>
     </xsl:template>
+
+        <!--007-->
+    <xsl:template match="marc:controlfield[@tag = '007']" mode="man" expand-text="yes">
+        <xsl:param name="agg"/>
+        <xsl:variable name="char00" select="substring(., 1, 1)"/>
+        <xsl:variable name="char01" select="substring(., 2, 1)"/>
+        <xsl:variable name="char03" select="substring(., 4, 1)"/>
+        <xsl:variable name="char03-04" select="substring(., 4, 2)"/>
+        <xsl:variable name="char04" select="substring(., 5, 1)"/>
+        <xsl:variable name="char05" select="substring(., 6, 1)"/>
+        <xsl:variable name="char06" select="substring(., 7, 1)"/>
+        <xsl:variable name="char06-08" select="substring(., 7, 3)"/>
+        <xsl:variable name="char07" select="substring(., 8, 1)"/>
+        <xsl:variable name="char08" select="substring(., 9, 1)"/>
+        <xsl:variable name="char09" select="substring(., 10, 1)"/>
+        <xsl:variable name="char10" select="substring(., 11, 1)"/>
+        <xsl:variable name="char11" select="substring(., 12, 1)"/>
+        <xsl:variable name="char12" select="substring(., 13, 1)"/>
+        <xsl:variable name="char13" select="substring(., 14, 1)"/>
+        <xsl:variable name="char14" select="substring(., 15, 1)"/>
+        <xsl:variable name="Test338" select="boolean(ancestor::marc:record/marc:datafield[@tag='338'])"/>
+        <xsl:variable name="Test337" select="boolean(ancestor::marc:record/marc:datafield[@tag='337'])"/>
+        <xsl:variable name="F337" select="ancestor::marc:record/marc:datafield[@tag='337']/marc:subfield[@code='b']"/>
+        <!--<xsl:call-template name="getmarc"/>-->
+        <!--character position 00-->
+        <xsl:call-template name="F007-c00"/>
+        <!--character position 01-->
+        <xsl:call-template name="F007-c01"/>
+        <!--character position 03-->
+        <xsl:call-template name="F007-c03"/>
+        <!--character position 04-->
+        <xsl:call-template name="F007-c04"/>
+        <!--character position 05-->
+       <xsl:call-template name="F007-c05"/>
+        <!--character position 06-->
+        <xsl:call-template name="F007-c06"/>
+        <!--character position 07-->
+        <xsl:call-template name="F007-c07"/>
+        <!--character position 08-->
+        <xsl:call-template name="F007-c08"/>
+        <!--character position 06-08-->
+        <xsl:if test="$char00 = 'c' and $char06-08 = 'mmm'">
+            <rdamd:P30159>
+                Multiple image bit depths.
+            </rdamd:P30159>
+        </xsl:if>
+        <xsl:if test="$char00 = 'c' and translate($char06-08, '0123456789', '') = ''">
+            <rdamo:P30159>
+                <xsl:text>Image bit depth: </xsl:text>
+                <xsl:value-of select="$char06-08"/>
+            </rdamo:P30159>
+        </xsl:if>
+        <xsl:if test="$char00 = 'f' and $char06-08 = ('aaa', 'bbb', 'ccc', 'ddd', 'eee', 'fff', 'ggg', 'hhh', 'iii', 'jjj', 'kkk', 'lll')">
+            <rdamo:P30155 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.9t5f-qz73#', $char06)}"/>
+        </xsl:if>
+        <xsl:if test="$char00 = 'h' and $char06-08 != ('|||')">
+            <rdamo:P30198>
+                <xsl:value-of select="$char06-08"/>
+            </rdamo:P30198>
+        </xsl:if>
+        <!--character position 09-->
+        <xsl:call-template name="F007-c09"/>
+        <!--character position 10-->
+        <xsl:call-template name="F007-c10"/>
+        <!--character position 11-->
+        <xsl:call-template name="F007-c11"/>
+        <!--character position 12-->
+        <xsl:call-template name="F007-c12"/>
+        <!--character position 13-->
+        <xsl:call-template name="F007-c13"/>
+        <!--character position 14-->
+        <xsl:if test="$char00 = 'm' and ($char14= 'a' or $char14 = 'b' or $char14= 'c' or $char14 = 'd')">
+            <rdamo:P30187 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.6h5g-mr73#', $char14)}"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="marc:controlfield[@tag = '007']" mode="exp" expand-text="yes">
+        <xsl:variable name="char00" select="substring(., 1, 1)"/>
+        <xsl:variable name="char01" select="substring(., 2, 1)"/>
+        <xsl:variable name="char03" select="substring(., 4, 1)"/>
+        <xsl:variable name="char03-04" select="substring(., 4, 2)"/>
+        <xsl:variable name="char05" select="substring(., 6, 1)"/>
+        <!--<xsl:call-template name="getmarc"/>-->
+        <xsl:if test="$char01 = 'a' and $char00 = 'f'">
+            <rdaeo:P20061 rdf:resource="{'http://rdaregistry.info/termList/TacNotation/1004'}"/>
+        </xsl:if>
+        <xsl:if test="$char00 = 'f' and ($char01 = 'b' or $char01 = 'c' or $char01 = 'd')">
+            <rdaeo:P20061 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.kb0p-ta35', $char01)}"/>
+        </xsl:if>
+        <!--character position 05-->
+        <xsl:if test="$char00 = 'f' and ($char05 = 'a' or $char05 = 'b' or $char05 = 'm')">
+            <rdaeo:P20061 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.3jgj-j280#', $char05)}"/>
+        </xsl:if>
+        <!--character position 03-04-->
+        <xsl:if test="$char00 = 'f' and ($char03-04 = 'aa' or $char03-04 = 'bb' or $char03-04 = 'cc' or $char03-04 = 'dd' or $char03-04 = 'ee' or $char03-04 = 'mm')">
+            <rdaeo:P20061 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.0xj7-fz15#', $char03)}"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="marc:controlfield[@tag = '007']" mode="aggwor" expand-text="yes">
+        <xsl:variable name="char00" select="substring(., 1, 1)"/>
+        <xsl:variable name="char03" select="substring(., 4, 1)"/>
+        <!--<xsl:call-template name="getmarc"/>-->
+        <xsl:if test="$char00 = 'c' and ($char03 = 'a' or $char03 = 'b')">
+            <rdawo:P10348 rdf:resource="{'http://rdaregistry.info/termList/RDAColourContent/1002'}"/>
+        </xsl:if>
+        <xsl:if test="$char03 = 'a' and ($char00 = 'a' or $char00 = 'd')">
+            <rdawo:P10348 rdf:resource="{'http://rdaregistry.info/termList/RDAColourContent/1002'}"/>
+        </xsl:if>
+        <xsl:if test="$char03 = 'c' and ($char00 = 'c' or $char00 = 'd' or $char00 = 'a')">
+            <rdawo:P10348 rdf:resource="{'http://rdaregistry.info/termList/RDAColourContent/1003'}"/>
+        </xsl:if>
+        <xsl:if test="$char00 = 'c' and ($char03 = 'g' or $char03 = 'm')">
+            <rdawo:P10348 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.4ee2-4t34#', $char03)}"/>
+        </xsl:if>
+    </xsl:template>
     
     <xsl:template match="marc:controlfield[@tag = '008']" 
         mode="wor" expand-text="yes">
