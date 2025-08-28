@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
+         xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:uwf="http://universityOfWashington/functions"
+         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400/>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamd:P30137>F 04179nam a2200853 i 4500
+F007 cr_|||||||||||
+F007 sd fsngnnmmnee
+F007 sd fsngnnmmned
+F007 cr mn||||a||||
+F007 vd cvaizk
+F007 sz zunnnnnuneu
+F007 sd fu|gnn|||||
+</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdamd:P30276/>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.h5tb-zk94#c"/>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.q8qv-nz89#r"/>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.gs2r-s451#r"/>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.h5tb-zk94#s"/>
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1001"/>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.exa1-z360#d"/>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.gs2r-s451#d"/>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.enb6-8r41#d"/>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
+      <rdamo:P30201 rdf:resource="https://doi.org/10.6069/uwlswd.m935-w309#f"/>
+      <rdamo:P30184 rdf:resource="https://doi.org/10.6069/uwlswd.0av9-3018#s"/>
+      <rdamd:P30169>
+                4 3/4 in. or 12 cm.
+            </rdamd:P30169>
+      <rdamo:P30191 rdf:resource="https://doi.org/10.6069/uwlswd.4sxq-pn90#m"/>
+      <rdamo:P30304 rdf:resource="https://doi.org/10.6069/uwlswd.hteb-5554#m"/>
+      <rdamo:P30304 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1022"/>
+      <rdamo:P30304 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1029"/>
+      <rdamo:P30138 rdf:resource="https://doi.org/10.6069/uwlswd.a3v4-v844#e"/>
+      <rdamo:P30125 rdf:resource="https://doi.org/10.6069/uwlswd.v4qn-rb56#e"/>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.h5tb-zk94#s"/>
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1001"/>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.exa1-z360#d"/>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.gs2r-s451#d"/>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.enb6-8r41#d"/>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
+      <rdamo:P30201 rdf:resource="https://doi.org/10.6069/uwlswd.m935-w309#f"/>
+      <rdamo:P30184 rdf:resource="https://doi.org/10.6069/uwlswd.0av9-3018#s"/>
+      <rdamd:P30169>
+                4 3/4 in. or 12 cm.
+            </rdamd:P30169>
+      <rdamo:P30191 rdf:resource="https://doi.org/10.6069/uwlswd.4sxq-pn90#m"/>
+      <rdamo:P30304 rdf:resource="https://doi.org/10.6069/uwlswd.hteb-5554#m"/>
+      <rdamo:P30304 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1022"/>
+      <rdamo:P30304 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1029"/>
+      <rdamo:P30138 rdf:resource="https://doi.org/10.6069/uwlswd.a3v4-v844#e"/>
+      <rdamo:P30125 rdf:resource="https://doi.org/10.6069/uwlswd.v4qn-rb56#d"/>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.h5tb-zk94#c"/>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.q8qv-nz89#r"/>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.gs2r-s451#r"/>
+      <rdamo:P30456 rdf:resource="https://doi.org/10.6069/uwlswd.4ee2-4t34#m"/>
+      <rdamd:P30137>
+                        One file format
+                    </rdamd:P30137>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.h5tb-zk94#v"/>
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1008"/>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.exa1-z360#d"/>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.gs2r-s451#d"/>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.n7sa-ny50#d"/>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1060"/>
+      <rdamo:P30456 rdf:resource="http://rdaregistry.info/termList/RDAColourContent/1003"/>
+      <rdamo:P30104 rdf:resource="https://doi.org/10.6069/uwlswd.b441-n943#v"/>
+      <rdamo:P30454 rdf:resource="https://doi.org/10.6069/uwlswd.vjb7-fc54#a"/>
+      <rdamo:P30206 rdf:resource="https://doi.org/10.6069/uwlswd.9r2z-x073#i"/>
+      <rdamo:P30184 rdf:resource="https://doi.org/10.6069/uwlswd.r74w-5w82#k"/>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.h5tb-zk94#s"/>
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1001"/>
+      <rdamo:P30138 rdf:resource="https://doi.org/10.6069/uwlswd.a3v4-v844#e"/>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.h5tb-zk94#s"/>
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1001"/>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.exa1-z360#d"/>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.gs2r-s451#d"/>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.enb6-8r41#d"/>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
+      <rdamo:P30201 rdf:resource="https://doi.org/10.6069/uwlswd.m935-w309#f"/>
+      <rdamd:P30169>
+                4 3/4 in. or 12 cm.
+            </rdamd:P30169>
+   </rdf:Description>
+</rdf:RDF>
