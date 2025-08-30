@@ -131,7 +131,35 @@
     <marcMU008c30orc31>n</marcMU008c30orc31>
     <marcMU006c13orc14>n</marcMU006c13orc14>
     <marcMU008c30orc31>|</marcMU008c30orc31>
-    <marcMU006c13orc14>n</marcMU006c13orc14>
+    <marcMU006c13orc14>|</marcMU006c13orc14>
+    <marcMU008c20>a</marcMU008c20>
+    <marcMU006c3>a</marcMU006c3>
+    <marcMU008c20>b</marcMU008c20>
+    <marcMU006c3>b</marcMU006c3>
+    <marcMU008c20>c</marcMU008c20>
+    <marcMU006c3>c</marcMU006c3>
+    <marcMU008c20>d</marcMU008c20>
+    <marcMU006c3>d</marcMU006c3>
+    <marcMU008c20>e</marcMU008c20>
+    <marcMU006c3>e</marcMU006c3>
+    <marcMU008c20>g</marcMU008c20>
+    <marcMU006c3>g</marcMU006c3>
+    <marcMU008c20>h</marcMU008c20>
+    <marcMU006c3>h</marcMU006c3>
+    <marcMU008c20>i</marcMU008c20>
+    <marcMU006c3>i</marcMU006c3>
+    <marcMU008c20>j</marcMU008c20>
+    <marcMU006c3>j</marcMU006c3>
+    <marcMU008c20>k</marcMU008c20>
+    <marcMU006c3>k</marcMU006c3>
+    <marcMU008c20>l</marcMU008c20>
+    <marcMU006c3>l</marcMU006c3>
+    <marcMU008c20>m</marcMU008c20>
+    <marcMU006c3>m</marcMU006c3>
+    <marcMU008c20>p</marcMU008c20>
+    <marcMU006c3>p</marcMU006c3>
+    <marcMU008c20>z</marcMU008c20>
+    <marcMU006c3>z</marcMU006c3>
     <locCode>ntm</locCode>
     <locTerm>notated music</locTerm>
     <locURI>http://id.loc.gov/vocabulary/contentTypes/ntm</locURI>
@@ -143,7 +171,7 @@
     <marcLDRc6>j</marcLDRc6>
     <marcMU008c30c31>  </marcMU008c30c31>
     <marcMU006c13c14>  </marcMU006c13c14>
-    <marc245h>musical recording|motion picture soundtrack</marc245h>
+    <marc245h>musical recording</marc245h>
     <locCode>prm</locCode>
     <locTerm>performed music</locTerm>
     <locURI>http://id.loc.gov/vocabulary/contentTypes/prm</locURI>
@@ -247,7 +275,7 @@
     <marcCR006c7>e</marcCR006c7>
     <marcCR008c24>y</marcCR008c24>
     <marcCR006c7>y</marcCR006c7>
-    <marc245h>nonprojectable graphic|activity card|drawing|painting|print|picture|icon|diagram|graphic|jigsaw puzzle|flash card|board book</marc245h>
+    <marc245h>activity card|drawing|painting|picture|icon|diagram|graphic|photograph|photomechanical|photonegative|photoprint|jigsaw puzzle|flash card|board book</marc245h>
     <locCode>sti</locCode>
     <locTerm>still image</locTerm>
     <locURI>http://id.loc.gov/vocabulary/contentTypes/sti</locURI>
@@ -422,7 +450,7 @@
     <marcVM006c16>d</marcVM006c16>
     <marcVM008c33>q</marcVM008c33>
     <marcVM006c16>q</marcVM006c16>
-    <marc245h>realia</marc245h>
+    <marc245h>realia|diorama</marc245h>
     <locCode>tdf</locCode>
     <locTerm>three-dimensional form</locTerm>
     <locURI>http://id.loc.gov/vocabulary/contentTypes/tdf</locURI>

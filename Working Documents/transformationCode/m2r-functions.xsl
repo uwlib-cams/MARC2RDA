@@ -572,15 +572,15 @@
     <xsl:function name="m2r:lcIRILookup-33X" expand-text="yes">
         <xsl:param name="givenIRI"/>
         <xsl:choose>
-            <xsl:when test="document('lookup/Lookup336.xml')/lookupTable/entry/key('lcIRI', $givenIRI)">
-                <rdaeo:P20001 rdf:resource="{document('lookup/Lookup336.xml')/lookupTable/entry/key('lcIRI', $givenIRI)/rdaIRI}"/>
-                <rdaeo:P10349 rdf:resource="{document('lookup/Lookup336.xml')/lookupTable/entry/key('lcIRI', $givenIRI)/rdaIRI}"/>
+            <xsl:when test="document('lookup/LookupContentType.xml')/lookupTable/entry/key('lcIRI', $givenIRI)">
+                <rdaeo:P20001 rdf:resource="{document('lookup/LookupContentType.xml')/lookupTable/entry/key('lcIRI', $givenIRI)/rdaIRI}"/>
+                <rdaeo:P10349 rdf:resource="{document('lookup/LookupContentType.xml')/lookupTable/entry/key('lcIRI', $givenIRI)/rdaIRI}"/>
             </xsl:when>
-            <xsl:when test="document('lookup/Lookup337.xml')/lookupTable/entry/key('lcIRI', $givenIRI)">
-                <rdamo:P30002 rdf:resource="{document('lookup/Lookup337.xml')/lookupTable/entry/key('lcIRI', $givenIRI)/rdaIRI}"/>
+            <xsl:when test="document('lookup/LookupMediaType.xml')/lookupTable/entry/key('lcIRI', $givenIRI)">
+                <rdamo:P30002 rdf:resource="{document('lookup/LookupMediaType.xml')/lookupTable/entry/key('lcIRI', $givenIRI)/rdaIRI}"/>
             </xsl:when>
-            <xsl:when test="document('lookup/Lookup338.xml')/lookupTable/entry/key('lcIRI', $givenIRI)">
-                <rdamo:P30001 rdf:resource="{document('lookup/Lookup338.xml')/lookupTable/entry/key('lcIRI', $givenIRI)/rdaIRI}"/>
+            <xsl:when test="document('lookup/LookupCarrierType.xml')/lookupTable/entry/key('lcIRI', $givenIRI)">
+                <rdamo:P30001 rdf:resource="{document('lookup/LookupCarrierType.xml')/lookupTable/entry/key('lcIRI', $givenIRI)/rdaIRI}"/>
             </xsl:when>
         </xsl:choose>
     </xsl:function>
@@ -621,17 +621,17 @@
                         <rdamo:P30001 rdf:resource="{document('lookup/rda/RDACarrierType.xml')/rdf:RDF/skos:Concept/key('rdaTerm', $givenTermOrCode)/@rdf:about}"/>
                     </xsl:when>
                     <!-- LC Content Type Term or Code -->
-                    <xsl:when test="document('lookup/Lookup336.xml')/lookupTable/entry/key('lcTermOrCode', $givenTermOrCode)">
-                        <rdaeo:P20001 rdf:resource="{document('lookup/Lookup336.xml')/lookupTable/entry/key('lcTermOrCode', $givenTermOrCode)/rdaIRI}"/>
-                        <rdawo:P10349 rdf:resource="{document('lookup/Lookup336.xml')/lookupTable/entry/key('lcTermOrCode', $givenTermOrCode)/rdaIRI}"/>
+                    <xsl:when test="document('lookup/LookupContentType.xml')/lookupTable/entry/key('lcTermOrCode', $givenTermOrCode)">
+                        <rdaeo:P20001 rdf:resource="{document('lookup/LookupContentType.xml')/lookupTable/entry/key('lcTermOrCode', $givenTermOrCode)/rdaIRI}"/>
+                        <rdawo:P10349 rdf:resource="{document('lookup/LookupContentType.xml')/lookupTable/entry/key('lcTermOrCode', $givenTermOrCode)/rdaIRI}"/>
                     </xsl:when>
                     <!-- LC Media Type Term or Code -->
-                    <xsl:when test="document('lookup/Lookup337.xml')/lookupTable/entry/key('lcTermOrCode', $givenTermOrCode)">
-                        <rdamo:P30002 rdf:resource="{document('lookup/Lookup337.xml')/lookupTable/entry/key('lcTermOrCode', $givenTermOrCode)/rdaIRI}"/>
+                    <xsl:when test="document('lookup/LookupMediaType.xml')/lookupTable/entry/key('lcTermOrCode', $givenTermOrCode)">
+                        <rdamo:P30002 rdf:resource="{document('lookup/LookupMediaType.xml')/lookupTable/entry/key('lcTermOrCode', $givenTermOrCode)/rdaIRI}"/>
                     </xsl:when>
                     <!-- LC Carrier Type Term or Code -->
-                    <xsl:when test="document('lookup/Lookup338.xml')/lookupTable/entry/key('lcTermOrCode', $givenTermOrCode)">
-                        <rdamo:P30001 rdf:resource="{document('lookup/Lookup338.xml')/lookupTable/entry/key('lcTermOrCode', $givenTermOrCode)/rdaIRI}"/>
+                    <xsl:when test="document('lookup/LookupCarrierType.xml')/lookupTable/entry/key('lcTermOrCode', $givenTermOrCode)">
+                        <rdamo:P30001 rdf:resource="{document('lookup/LookupCarrierType.xml')/lookupTable/entry/key('lcTermOrCode', $givenTermOrCode)/rdaIRI}"/>
                     </xsl:when>
                 </xsl:choose>
             </xsl:otherwise>
@@ -659,14 +659,14 @@
         <xsl:param name="givenIRI"/>
         <xsl:param name="entityType"/>
         <xsl:choose>
-            <xsl:when test="$entityType = 'expression'and document('lookup/Lookup336.xml')/lookupTable/entry/key('lcIRI', $givenIRI)">
+            <xsl:when test="$entityType = 'expression'and document('lookup/LookupContentType.xml')/lookupTable/entry/key('lcIRI', $givenIRI)">
                 <term>
-                    <xsl:value-of select="document('lookup/Lookup336.xml')/lookupTable/entry/key('lcIRI', $givenIRI)/rdaTerm"/>
+                    <xsl:value-of select="document('lookup/LookupContentType.xml')/lookupTable/entry/key('lcIRI', $givenIRI)/rdaTerm"/>
                 </term>
             </xsl:when>
-            <xsl:when test="$entityType = 'manifestation' and document('lookup/Lookup338.xml')/lookupTable/entry/key('lcIRI', $givenIRI)">
+            <xsl:when test="$entityType = 'manifestation' and document('lookup/LookupCarrierType.xml')/lookupTable/entry/key('lcIRI', $givenIRI)">
                 <term>
-                    <xsl:value-of select="document('lookup/Lookup338.xml')/lookupTable/entry/key('lcIRI', $givenIRI)/rdaTerm"/>
+                    <xsl:value-of select="document('lookup/LookupCarrierType.xml')/lookupTable/entry/key('lcIRI', $givenIRI)/rdaTerm"/>
                 </term>
             </xsl:when>
         </xsl:choose>
@@ -703,9 +703,9 @@
                                 </term>
                             </xsl:when>
                             <!-- LC Content Type Term or Code -->
-                            <xsl:when test="document('lookup/Lookup336.xml')/lookupTable/entry/key('lcTermOrCode', $givenTermOrCode)">
+                            <xsl:when test="document('lookup/LookupContentType.xml')/lookupTable/entry/key('lcTermOrCode', $givenTermOrCode)">
                                 <term>
-                                    <xsl:value-of select="document('lookup/Lookup336.xml')/lookupTable/entry/key('lcTermOrCode', $givenTermOrCode)/rdaTerm"/>
+                                    <xsl:value-of select="document('lookup/LookupContentType.xml')/lookupTable/entry/key('lcTermOrCode', $givenTermOrCode)/rdaTerm"/>
                                 </term>
                             </xsl:when>
                         </xsl:choose>
@@ -719,9 +719,9 @@
                                 </term>
                             </xsl:when>
                             <!-- LC Carrier Type Term or Code -->
-                            <xsl:when test="document('lookup/Lookup338.xml')/lookupTable/entry/key('lcTermOrCode', $givenTermOrCode)">
+                            <xsl:when test="document('lookup/LookupCarrierType.xml')/lookupTable/entry/key('lcTermOrCode', $givenTermOrCode)">
                                 <term>
-                                    <xsl:value-of select="document('lookup/Lookup338.xml')/lookupTable/entry/key('lcTermOrCode', $givenTermOrCode)/rdaTerm"/>
+                                    <xsl:value-of select="document('lookup/LookupCarrierType.xml')/lookupTable/entry/key('lcTermOrCode', $givenTermOrCode)/rdaTerm"/>
                                 </term>
                             </xsl:when>
                         </xsl:choose>

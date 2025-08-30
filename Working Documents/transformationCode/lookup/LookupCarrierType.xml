@@ -21,6 +21,7 @@
   <entry>
     <marc007c0c1>sg</marc007c0c1>
     <marc007c0c5c6>gbc</marc007c0c5c6>
+    <marc245h>sound cartridge</marc245h>
     <locCode>sg</locCode>
     <locTerm>audio cartridge</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/sg</locURI>
@@ -40,6 +41,7 @@
   <entry>
     <marc007c0c5c6>gbd</marc007c0c5c6>
     <marc007c0c1>sd</marc007c0c1>
+    <marc245h>audio disc|sound disc|phonodisc</marc245h>
     <locCode>sd</locCode>
     <locTerm>audio disc</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/sd</locURI>
@@ -67,6 +69,7 @@
   <entry>
     <marc007c0c5c6>gbf</marc007c0c5c6>
     <marc007c0c1>ss</marc007c0c1>
+    <marc245h>audio cassette|sound casette|phonotape</marc245h>
     <locCode>ss</locCode>
     <locTerm>audiocassette</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/ss</locURI>
@@ -76,6 +79,7 @@
   </entry>
   <entry>
     <marc007c0c1>st</marc007c0c1>
+    <marc245h>audiotape reel|audio-tape reel|sound reel</marc245h>
     <locCode>st</locCode>
     <locTerm>audiotape reel</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/st</locURI>
@@ -93,6 +97,7 @@
     <marcMP006c16orc17>p</marcMP006c16orc17>
     <marcVM008c33>o</marcVM008c33>
     <marcVM006c16>o</marcVM006c16>
+    <marc245h>activity card|flash card</marc245h>
     <locCode>no</locCode>
     <locTerm>card</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/no</locURI>
@@ -210,6 +215,7 @@
   </entry>
   <entry>
     <marc007c0c1>gd</marc007c0c1>
+    <marc245h>filmslip</marc245h>
     <locCode>gd</locCode>
     <locTerm>filmslip</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/gd</locURI>
@@ -219,6 +225,7 @@
   </entry>
   <entry>
     <marc007c0c1>gf</marc007c0c1>
+    <marc245h>filmstrip</marc245h>
     <locCode>gf</locCode>
     <marcVM008c33>f</marcVM008c33>
     <marcVM006c16>f</marcVM006c16>
@@ -247,6 +254,7 @@
   </entry>
   <entry>
     <marc007c0c1>he</marc007c0c1>
+    <marc245h>microfiche</marc245h>
     <locCode>he</locCode>
     <locTerm>microfiche</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/he</locURI>
@@ -310,6 +318,7 @@
   </entry>
   <entry>
     <marc007c0c1>hg</marc007c0c1>
+    <marc245h>microopaque</marc245h>
     <locCode>hg</locCode>
     <locTerm>microopaque</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/hg</locURI>
@@ -348,6 +357,7 @@
     <marcVM008c33>w</marcVM008c33>
     <marcVM006c16>w</marcVM006c16>
     <marcLDRc6>r</marcLDRc6>
+    <marc245h>realia|kit|globe|diorama|model|toy|exhibit|exhibition catalog|game|jigsaw puzzle|relief model</marc245h>
     <locCode>nr</locCode>
     <locTerm>object</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/nr</locURI>
@@ -424,6 +434,7 @@
     <marcVM006c16>t</marcVM006c16>
     <marcVM008c33>s</marcVM008c33>
     <marcVM006c16>s</marcVM006c16>
+    <marc245h>drawing|icon|painting|picture</marc245h>
     <locCode>nb</locCode>
     <locTerm>sheet</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/nb</locURI>
@@ -433,6 +444,7 @@
   </entry>
   <entry>
     <marc007c0c1>gs</marc007c0c1>
+    <marc245h>slide</marc245h>
     <locCode>gs</locCode>
     <locTerm>slide</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/gs</locURI>
@@ -515,6 +527,7 @@
     <marcMP006c8>g</marcMP006c8>
     <marcMP008c33orc34>r</marcMP008c33orc34>
     <marcMP006c16orc17>r</marcMP006c16orc17>
+    <marc245h>atlas|loose-leaf|losseleaf|board book|paperback</marc245h>
     <locCode>nc</locCode>
     <locTerm>volume</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/nc</locURI>
