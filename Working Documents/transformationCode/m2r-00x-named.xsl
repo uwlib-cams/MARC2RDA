@@ -1448,6 +1448,348 @@
             </rdamd:P30169>
         </xsl:if>
     </xsl:template>
+
+    <!--char08-->
+    <xsl:template name="F007-c08">
+        <xsl:variable name="char00" select="substring(., 1, 1)"/>
+        <xsl:variable name="char08" select="substring(., 9, 1)"/>
+        <xsl:if test="$char00 = 'm' and ($char08 = 'k' or $char08 = 'm' or $char08 = 'q')">
+            <rdamo:P30184 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.er3s-pg07#', $char08)}"/>
+        </xsl:if>
+        <xsl:if test="$char00 = 'g' and ($char08 = 'j' or $char08 = 'k' or $char08 = 'm')">
+            <rdamo:P30304 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.n3ew-mc60#', $char08)}"/>
+        </xsl:if>
+        <xsl:if test="$char00 = 'v' and ($char08 = 'k' or $char08 = 'm' or $char08 = 'q')">
+            <rdamo:P30184 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.r74w-5w82#', $char08)}"/>
+        </xsl:if>
+        <xsl:if test="$char00 = 's' and ($char08 = 'a' or $char08 = 'b' or $char08 = 'c' or $char08 = 'd' or $char08 = 'e' or $char08 = 'f')">
+            <rdamo:P30185 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.fh0k-hk62#', $char08)}"/>
+        </xsl:if>
+        <xsl:if test="$char08 = 'c'">
+            <xsl:choose>
+                <xsl:when test="$char00 = 'g'">
+                    <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1006'}"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:if>
+        <xsl:if test="$char08 = 'd' and $char00 = 'g'">
+            <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1012'}"/>
+        </xsl:if>
+        <xsl:if test="$char08 = 'e' and $char00 = 'g'">
+            <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1037'}"/>
+        </xsl:if>
+        <xsl:if test="$char08 = 'k' and $char00 = 'g'">
+            <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1037'}"/>
+            <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1012'}"/>
+        </xsl:if>
+        <xsl:if test="$char08 = 'h' and $char00 = 'g'">
+            <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1022'}"/>
+        </xsl:if>
+        <xsl:if test="$char08 = 'j' and $char00 = 'g'">
+            <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1022'}"/>
+            <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1012'}"/>
+        </xsl:if>
+        <xsl:if test="$char08 = 's' and ($char00 = 'm' or $char00 = 'v')">
+            <rdamo:P30184 rdf:resource="{'http://rdaregistry.info/termList/configPlayback/1002'}"/>
+        </xsl:if> 
+    </xsl:template>
+    
+    <!--char09-->
+    <xsl:template name="F007-c09">
+        <xsl:variable name="char00" select="substring(., 1, 1)"/>
+        <xsl:variable name="char09" select="substring(., 10, 1)"/>
+        <xsl:if test="$char00 = 'f' and ($char09 = 'a' or $char09 = 'b')">
+            <rdamo:P30199 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.ry8c-5814#', $char09)}"/>
+        </xsl:if>
+        <xsl:if test="$char00 = 's' and ($char09 = 'i' or $char09 = 'm')">
+            <rdamo:P30191 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.4sxq-pn90#', $char09)}"/>
+        </xsl:if>
+        <xsl:if test="$char09 = 'a'">
+            <xsl:choose>
+                <xsl:when test="$char00 = 'c'">
+                    <rdamd:P30137>
+                        One file format
+                    </rdamd:P30137>
+                </xsl:when>
+                <xsl:when test="$char00 = 's'">
+                    <rdamo:P30191 rdf:resource="{'http://rdaregistry.info/termList/RDAGeneration/1006'}"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:if>
+        <xsl:if test="$char09 = 'b'">
+            <xsl:choose>
+                <xsl:when test="$char00 = 'h'">
+                    <rdamo:P30456 rdf:resource="{'http://rdaregistry.info/termList/RDAColourContent/1002'}"/>
+                </xsl:when>
+                <xsl:when test="$char00 = 's'">
+                    <rdamo:P30191 rdf:resource="{'http://rdaregistry.info/termList/RDAGeneration/1016'}"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:if>
+        <xsl:if test="$char09 = 'c' and $char00 = 'h'">
+            <rdamo:P30456 rdf:resource="{'http://rdaregistry.info/termList/RDAColourContent/1003'}"/>
+        </xsl:if>
+        <xsl:if test="$char09 = 'd' and $char00 = 's'">
+            <rdamo:P30191 rdf:resource="{'http://rdaregistry.info/termList/RDAGeneration/1002'}"/>
+        </xsl:if>
+        <xsl:if test="$char09 = 'r' and $char00 = 's'">
+            <rdamo:P30191 rdf:resource="{'http://rdaregistry.info/termList/RDAGeneration/1008'}"/>
+        </xsl:if>
+        <xsl:if test="$char09 = 's' and $char00 = 's'">
+            <rdamo:P30191 rdf:resource="{'http://rdaregistry.info/termList/RDAGeneration/1015'}"/>
+        </xsl:if>
+        <xsl:if test="$char09 = 't' and $char00 = 's'">
+            <rdamo:P30191 rdf:resource="{'http://rdaregistry.info/termList/RDAGeneration/1017'}"/>
+        </xsl:if>
+        <xsl:if test="$char09 = 'm'">
+            <xsl:choose>
+                <xsl:when test="$char00 = 'c'">
+                    <rdamd:P30137>
+                        Multiple file formats
+                    </rdamd:P30137>
+                </xsl:when>
+                <xsl:when test="$char00 = 'h'">
+                    <rdamo:P30456 rdf:resource="{'https://doi.org/10.6069/uwlswd.x654-gd54#m'}"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:if>
+    </xsl:template>
+    
+    <!--char10-->
+    <xsl:template name="F007-c10">
+        <xsl:variable name="char10" select="substring(., 11, 1)"/>
+        <xsl:variable name="char00" select="substring(., 1, 1)"/>
+        <xsl:if test="$char00 = 's' and ($char10 = 'a' or $char10 = 'b' or $char10 = 'c' or $char10 = 'g' or $char10 = 'i' or $char10 = 'm' or $char10 = 'r')">
+            <rdamo:P30304 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.hteb-5554#', $char10)}"/>
+        </xsl:if>
+        <xsl:if test="$char10 = 'l' and $char00 = 's'">
+            <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1022'}"/>
+        </xsl:if>
+        <xsl:if test="$char10 = 's' and $char00 = 's'">
+            <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1034'}"/>
+        </xsl:if>
+        <xsl:if test="$char10 = 'w' and $char00 = 's'">
+            <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1044'}"/>
+        </xsl:if>
+        <xsl:if test="$char10 = 'a'">
+            <xsl:choose>
+                <xsl:when test="$char00 = 'c'">
+                    <rdamo:P30137>
+                        Quality assurance target(s): Absent.
+                    </rdamo:P30137>
+                </xsl:when>
+                <xsl:when test="$char00 = 'h'">
+                    <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1047'}"/>
+                </xsl:when>
+                <xsl:when test="$char00 = 'm'">
+                    <rdamo:P30196 rdf:resource="{'http://rdaregistry.info/termList/RDAPolarity/1001'}"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:if>
+        <xsl:if test="$char10 = 'b'">
+            <xsl:choose>
+                <xsl:when test="$char00 = 'h'">
+                    <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1046'}"/>
+                </xsl:when>
+                <xsl:when test="$char00 = 'm'">
+                    <rdamo:P30196 rdf:resource="{'http://rdaregistry.info/termList/RDAPolarity/1002'}"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:if>
+        <xsl:if test="$char10 = 'c' and $char00 = 'h'">
+            <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1048'}"/>
+        </xsl:if>
+        <xsl:if test="$char10 = 'p'">
+            <xsl:choose>
+                <xsl:when test="$char00 = 'c'">
+                    <rdamd:P30137>
+                        Quality assurance target(s): Present.
+                    </rdamd:P30137>
+                </xsl:when>
+                <xsl:when test="$char00 = 's'">
+                    <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1029'}"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:if>
+        <xsl:if test="$char10 = 'm'">
+            <xsl:choose>
+                <xsl:when test="$char00 = 'h'">
+                    <rdamo:P30304 rdf:resource="{'https://doi.org/10.6069/uwlswd.m9z2-3g03#m'}"/>
+                </xsl:when>
+                <xsl:when test="$char00 = 's'">
+                    <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1022'}"/>
+                    <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1029'}"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:if>
+    </xsl:template>
+    
+    <!--char11-->
+    <xsl:template name="F007-c11">
+        <xsl:variable name="char00" select="substring(., 1, 1)"/>
+        <xsl:variable name="char11" select="substring(., 12, 1)"/>
+        <xsl:if test="$char11 = 'a'">
+            <xsl:choose>
+                <xsl:when test="$char00 = 'c'">
+                    <rdamd:P30137>
+                        Antecedent/source: File reproduced from original.
+                    </rdamd:P30137>
+                </xsl:when>
+                <xsl:when test="$char00 = 'h'">
+                    <rdamo:P30191 rdf:resource="{'http://rdaregistry.info/termList/RDAGeneration/1005'}"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:if>
+        <xsl:if test="$char11 = 'b'">
+            <xsl:choose>
+                <xsl:when test="$char00 = 'c'">
+                    <rdamd:P30137>
+                        Antedecent/source: File reproduced from microform.
+                    </rdamd:P30137> 
+                </xsl:when>
+                <xsl:when test="$char00 = 'h'">
+                    <rdamo:P30191 rdf:resource="{'http://rdaregistry.info/termList/RDAGeneration/1010'}"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:if>
+        <xsl:if test="$char11 = 'c'">
+            <xsl:choose>
+                <xsl:when test="$char00 = 'c'">
+                    <rdamd:P30137>
+                        Antedecent/source: File reproduced from an electronic resource.
+                    </rdamd:P30137> 
+                </xsl:when>
+                <xsl:when test="$char00 = 'h'">
+                    <rdamo:P30191 rdf:resource="{'http://rdaregistry.info/termList/RDAGeneration/1014'}"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:if>
+        <xsl:if test="$char11 = 'c'">
+            <xsl:choose>
+                <xsl:when test="$char00 = 'd'">
+                    <rdamd:P30137>
+                        Antedecent/source: File reproduced from an intermediate (not microform).
+                    </rdamd:P30137> 
+                </xsl:when>
+                <xsl:when test="$char00 = 'm'">
+                    <rdamo:P30191 rdf:resource="{'http://rdaregistry.info/termList/RDAGeneration/1019'}"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:if>
+        <xsl:if test="$char11 = 'm'">
+            <xsl:choose>
+                <xsl:when test="$char00 = 'c'">
+                    <rdamd:P30137>
+                        Antedecent/source: Mixed.
+                    </rdamd:P30137> 
+                </xsl:when>
+                <xsl:when test="$char00 = 'h'">
+                    <rdamo:P30191 rdf:resource="{'http://rdaregistry.info/termList/RDAGeneration/1007'}"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:if>
+        <xsl:if test="$char11 = 'e' and $char00 = 'm'">
+            <rdamo:P30191 rdf:resource="{'http://rdaregistry.info/termList/RDAGeneration/1005'}"/>
+        </xsl:if>
+        <xsl:if test="$char11 = 'o' and $char00 = 'm'">
+            <rdamo:P30191 rdf:resource="{'http://rdaregistry.info/termList/RDAGeneration/1009'}"/>
+        </xsl:if>
+        <xsl:if test="$char11 = 'r' and $char00 = 'm'">
+            <rdamo:P30191 rdf:resource="{'http://rdaregistry.info/termList/RDAGeneration/1011'}"/>
+        </xsl:if>
+        <xsl:if test="$char00 = 's' and ($char11 = 'h' or $char11 = 'l')">
+            <rdamo:P30164 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.pm5s-5m12#', $char11)}"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <!--char12-->
+    <xsl:template name="F007-c12">
+        <xsl:variable name="char00" select="substring(., 1, 1)"/>
+        <xsl:variable name="char12" select="substring(., 13, 1)"/>
+        <xsl:if test="$char00 = 'c' and ($char12 = 'a' or $char12 = 'b' or $char12 = 'd' or $char12 = 'm')">
+            <rdamo:P30124 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.hwb2-j275#', $char12)}"/>
+        </xsl:if>
+        <xsl:if test="$char00 = 'h' and ($char12 = 'c' or $char12 = 'd' or $char12 = 'm' or $char12 = 'p' or $char12 = 'r' or $char12 = 't')">
+            <rdamo:P30304 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.404b-ss58#', $char12)}"/>
+        </xsl:if>
+        <xsl:if test="$char00 = 'm' and ($char12 = 'c' or $char12 = 'd' or $char12 = 'm' or $char12 = 'p' or $char12 = 'r' or $char12 = 't')">
+            <rdamo:P30304 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.fqx4-1d72#', $char12)}"/>
+        </xsl:if>
+        <xsl:if test="$char12 = 'a'">
+            <xsl:choose>
+                <xsl:when test="$char00 = 'm' or $char00 = 'h'">
+                    <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1033'}"/>
+                </xsl:when>
+                <xsl:when test="$char00 = 's'">
+                    <rdamo:P30138 rdf:resource="{'http://rdaregistry.info/termList/specPlayback/1009'}"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:if>
+        <xsl:if test="$char12 = 'b' and $char00 = 's'">
+            <rdamo:P30138 rdf:resource="{'http://rdaregistry.info/termList/specPlayback/1001'}"/>
+        </xsl:if>
+        <xsl:if test="$char12 = 'c' and $char00 = 's'">
+            <rdamo:P30138 rdf:resource="{'http://rdaregistry.info/termList/specPlayback/1006'}"/>
+        </xsl:if>
+        <xsl:if test="$char12 = 'e' and $char00 = 's'">
+            <rdamo:P30138 rdf:resource="{'https://doi.org/10.6069/uwlswd.a3v4-v844#e'}"/>
+        </xsl:if>
+        <xsl:if test="$char12 = 'f' and $char00 = 's'">
+            <rdamo:P30138 rdf:resource="{'http://rdaregistry.info/termList/specPlayback/1005'}"/>
+        </xsl:if>
+        <xsl:if test="$char12 = 'g' and $char00 = 's'">
+            <rdamo:P30138 rdf:resource="{'http://rdaregistry.info/termList/specPlayback/1007'}"/>
+        </xsl:if>
+        <xsl:if test="$char12 = 'h' and $char00 = 's'">
+            <rdamo:P30138 rdf:resource="{'http://rdaregistry.info/termList/specPlayback/1002'}"/>
+        </xsl:if>
+        <xsl:if test="$char12 = 'd'">
+            <xsl:choose>
+                <xsl:when test="$char00 = 'h'">
+                    <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1033'}"/>
+                </xsl:when>
+                <xsl:when test="$char00 = 's'">
+                    <rdamo:P30138 rdf:resource="{'http://rdaregistry.info/termList/specPlayback/1003'}"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:if>
+        <xsl:if test="$char12 = 'i' and ($char00 = 'h' or $char00 = 'm')">
+            <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1023'}"/>
+        </xsl:if>
+        <xsl:if test="$char12 = 'p' and $char00 = 'h'">
+            <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1030'}"/>
+        </xsl:if>
+        <xsl:if test="$char12 = 't' and $char00 = 'h'">
+            <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1040'}"/>
+        </xsl:if>
+    </xsl:template>
+    
+    <!--char13-->
+    <xsl:template name="F007-c13">
+        <xsl:variable name="char00" select="substring(., 1, 1)"/>
+        <xsl:variable name="char13" select="substring(., 14, 1)"/>
+        <xsl:if test="$char00 = 'm' and ($char13 = 'a' or $char13 = 'b' or $char13 = 'c' or $char13 = 'd' or $char13 = 'e' or $char13 = 'f' or $char13 = 'g' or $char13 = 'h' or $char13 = 'i' or $char13 = 'j' or $char13 = 'k' or $char13 = 'l' or $char13 = 'm' or $char13 = 'p' or $char13 = 'q' or $char13 = 'r' or $char13 = 's' or $char13 = 't' or $char13 = 'v' or $char13 = 'z')">
+            <rdamo:P30456 rdf:reosurce="{concat('https://doi.org/10.6069/uwlswd.gdvf-z086#', $char13)}"/>
+        </xsl:if>
+        <xsl:if test="$char00 = 's' and ($char13 = 'a' or $char13 = 'b' or $char13 = 'd' or $char13 = 'e')">
+            <rdamo:P30125 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.v4qn-rb56#', $char13)}"/>
+        </xsl:if>
+        <xsl:if test="$char13 = 'a' and $char00 = 'c'">
+            <rdamd:P30137>
+                Reformatting quality: Access.
+            </rdamd:P30137>
+        </xsl:if>
+        <xsl:if test="$char13 = 'p' and $char00 = 'c'">
+            <rdamd:P30137>
+                Reformatting quality: Preservation.
+            </rdamd:P30137>
+        </xsl:if>
+        <xsl:if test="$char13 = 'r' and $char00 = 'c'">
+            <rdamd:P30137>
+                Reformatting quality: Replacement.
+            </rdamd:P30137>
+        </xsl:if>
+    </xsl:template>
     
     <!-- 008 -->
     <xsl:template name="F008-c6">
