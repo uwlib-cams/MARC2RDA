@@ -2,7 +2,8 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:marc="http://www.loc.gov/MARC21/slim"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ex="http://fakeIRI.edu/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:rdaw="http://rdaregistry.info/Elements/w/"
     xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
     xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
@@ -21,9 +22,16 @@
     xmlns:rdan="http://rdaregistry.info/Elements/n/"
     xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
     xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
-    xmlns:fake="http://fakePropertiesForDemo"
-    xmlns:uwf="http://universityOfWashington/functions"
-    exclude-result-prefixes="marc ex" version="3.0">
+    xmlns:rdap="http://rdaregistry.info/Elements/p/"
+    xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+    xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+    xmlns:rdat="http://rdaregistry.info/Elements/t/"
+    xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+    xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+    xmlns:fake="http://fakePropertiesForDemo" 
+    xmlns:m2r="http://universityOfWashington/functions"
+    exclude-result-prefixes="marc m2r" version="3.0">
+    
     <xsl:output encoding="UTF-8" method="xml" indent="yes"/>
     <xsl:strip-space elements="*"/>
     
@@ -47,7 +55,10 @@
     
     <xsl:import href="m2r-functions.xsl"/>
     <xsl:import href="m2r-aps.xsl"/>
+    <xsl:import href="m2r-iris.xsl"/>
+    <xsl:import href="m2r-relators.xsl"/>
     <xsl:import href="m2r-processCMC.xsl"/>
+    <xsl:import href="getmarc.xsl"/>
     
     <!-- base IRI for now - all minted entities begin with this -->
     <xsl:param name="BASE" select="'http://marc2rda.edu/fake/'"/>
@@ -56,6 +67,7 @@
          each main field template will include its own -named file if it exists-->
     <xsl:include href="m2r-00x.xsl"/>
     <xsl:include href="m2r-0xx.xsl"/>
+    <xsl:include href="m2r-00x-named.xsl"/> 
     <xsl:include href="m2r-1xx7xx.xsl"/>
     <xsl:include href="m2r-2xx.xsl"/>
     <xsl:include href="m2r-3xx.xsl"/>
@@ -101,16 +113,14 @@
             xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
             xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
             xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
-            xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-            xmlns:uwmisc="http://uw.edu/all-purpose-namespace/"
-            xmlns:ex="http://fakeIRI2.edu/">
+            xmlns:skos="http://www.w3.org/2004/02/skos/core#">
             <!-- apply templates to marc:record -->
             <xsl:apply-templates select="marc:record"/>
         </rdf:RDF>
     </xsl:template>
  
     <xsl:template match="marc:record" expand-text="yes">
-        <xsl:variable name="isTactile" select="uwf:isTactile(.)"/>
+        <xsl:variable name="isTactile" select="m2r:isTactile(.)"/>
         <xsl:choose>
         <xsl:when test="$isTactile = 'False'">
         <xsl:variable name="processedRecord">
@@ -130,7 +140,7 @@
              <!-- check whether record being processed is an aggregate-->
              <xsl:variable name="isAggregate">
      <!-- WHEN READY TO IMPLEMENT AGGREGATE MARKERS, uncomment next line and comment the xsl:choose below -->
-                 <xsl:value-of select="lower-case(uwf:checkAggregates(.))"/>
+                 <xsl:value-of select="lower-case(m2r:checkAggregates(.))"/>
                  <!--<xsl:choose>
                      <xsl:when test="marc:datafield[@tag = '979']/marc:subfield[@code = 'a']">
                          <xsl:value-of select="lower-case(marc:datafield[@tag = '979']/marc:subfield[@code = 'a'])"/>
@@ -151,27 +161,27 @@
                  <xsl:when test="$isAggregate = 'sem' or $isAggregate = 'aam'">
                                  
                      <!-- variable for generating unique IRIs - currently date  -->
-                     <xsl:variable name="baseID" select="current-dateTime() => string() => uwf:stripAllPunctuation() => encode-for-uri()"/>
+                     <xsl:variable name="baseID" select="current-dateTime() => string() => m2r:stripAllPunctuation() => encode-for-uri()"/>
                      
                      <!-- main WEM IRIs stored in variables -->
-                     <xsl:variable name="mainWorkIRI" select="uwf:mainWorkIRI(.)"/>
-                     <xsl:variable name="mainExpressionIRI" select="uwf:mainExpressionIRI(.)"/>
-                     <xsl:variable name="mainManifestationIRI" select="uwf:mainManifestationIRI(.)"/>
+                     <xsl:variable name="mainWorkIRI" select="m2r:mainWorkIRI(.)"/>
+                     <xsl:variable name="mainExpressionIRI" select="m2r:mainExpressionIRI(.)"/>
+                     <xsl:variable name="mainManifestationIRI" select="m2r:mainManifestationIRI(.)"/>
                      
                      <!-- if reproduction -->
-                     <xsl:variable name="isReproduction" select="uwf:checkReproductions(.)"/>
+                     <xsl:variable name="isReproduction" select="m2r:checkReproductions(.)"/>
                      
                      <!-- orig manifestation IRI - blank if not reproduction -->
                      <xsl:variable name="origManifestationIRI">
                          <xsl:if test="$isReproduction">
-                             <xsl:value-of select="uwf:origManifestationIRI(.)"/>
+                             <xsl:value-of select="m2r:origManifestationIRI(.)"/>
                          </xsl:if>
                      </xsl:variable>
                      
                      <!-- aggregating work IRI - blank if not augmentation aggregate -->
                      <xsl:variable name="aggWorkIRI">
                          <xsl:if test="$isAggregate = 'aam'">
-                             <xsl:value-of select="uwf:aggWorkIRI(.)"/>
+                             <xsl:value-of select="m2r:aggWorkIRI(.)"/>
                          </xsl:if>
                      </xsl:variable>
                      
@@ -204,8 +214,8 @@
                                  <rdawo:P10078 rdf:resource="{$mainExpressionIRI}"/>
                                  
                                  <!-- This code can be uncommented to add a work access point to the work description.
-                         uwf:mainWorkAccessPoint() is located in m2r-aps.xsl -->
-                                 <xsl:variable name="workAP" select="uwf:mainWorkAccessPoint(.)"/>
+                         m2r:mainWorkAccessPoint() is located in m2r-aps.xsl -->
+                                 <xsl:variable name="workAP" select="m2r:mainWorkAccessPoint(.)"/>
                                  <xsl:if test="$workAP">
                                      <rdawd:P10328>
                                          <xsl:value-of select="$workAP"/>
@@ -226,13 +236,13 @@
                                  <rdaeo:P20576 rdf:resource="{$marcMetadataWorkIRI}"/>
                                  <rdaeo:P20059 rdf:resource="{$mainManifestationIRI}"/>
                                  <xsl:if test="$isReproduction != ''">
-                                     <rdaeo:P20059 rdf:resource="{uwf:origManifestationIRI(.)}"/>
+                                     <rdaeo:P20059 rdf:resource="{m2r:origManifestationIRI(.)}"/>
                                  </xsl:if>
                                  <rdaeo:P20231 rdf:resource="{$mainWorkIRI}"/>
                                  
                                  <!-- This code can be uncommented to add an expression access point to the expression description.
-                         uwf:mainExpressionAccessPoint() is located in m2r-aps.xsl -->
-                                 <xsl:variable name="expressionAP" select="uwf:mainExpressionAccessPoint(.)"/>
+                         m2r:mainExpressionAccessPoint() is located in m2r-aps.xsl -->
+                                 <xsl:variable name="expressionAP" select="m2r:mainExpressionAccessPoint(.)"/>
                                  <xsl:if test="$expressionAP">
                                      <rdaed:P20310>
                                          <xsl:value-of select="$expressionAP"/>
@@ -263,8 +273,8 @@
                                  </xsl:if>
                                  
                                  <!-- This code can be uncommented to add a work access point to the work description.
-                         uwf:mainWorkAccessPoint() is located in m2r-aps.xsl -->
-                                 <xsl:variable name="aggWorkAP" select="uwf:aggWorkAccessPoint(.)"/>
+                         m2r:mainWorkAccessPoint() is located in m2r-aps.xsl -->
+                                 <xsl:variable name="aggWorkAP" select="m2r:aggWorkAccessPoint(.)"/>
                                  <xsl:if test="$aggWorkAP">
                                      <rdawd:P10328>
                                          <xsl:value-of select="$aggWorkAP"/>
@@ -286,8 +296,8 @@
                                  <rdawo:P10078 rdf:resource="{$mainExpressionIRI}"/>
                                  
                                  <!-- This code can be uncommented to add a work access point to the work description.
-                         uwf:mainWorkAccessPoint() is located in m2r-aps.xsl -->
-                                 <xsl:variable name="workAP" select="uwf:mainWorkAccessPoint(.)"/>
+                         m2r:mainWorkAccessPoint() is located in m2r-aps.xsl -->
+                                 <xsl:variable name="workAP" select="m2r:mainWorkAccessPoint(.)"/>
                                  <xsl:if test="$workAP">
                                      <rdawd:P10328>
                                          <xsl:value-of select="$workAP"/>
@@ -310,8 +320,8 @@
                                  <rdaeo:P20231 rdf:resource="{$mainWorkIRI}"/>
                                  
                                  <!-- This code can be uncommented to add an expression access point to the expression description.
-                         uwf:mainExpressionAccessPoint() is located in m2r-aps.xsl -->
-                                 <xsl:variable name="expressionAP" select="uwf:mainExpressionAccessPoint(.)"/>
+                         m2r:mainExpressionAccessPoint() is located in m2r-aps.xsl -->
+                                 <xsl:variable name="expressionAP" select="m2r:mainExpressionAccessPoint(.)"/>
                                  <xsl:if test="$expressionAP">
                                      <rdaed:P20310>
                                          <xsl:value-of select="$expressionAP"/>
@@ -338,8 +348,8 @@
                          </xsl:if>
                          
                          <!-- This code can be uncommented to add a manifestation access point to the manifestation description.
-                         uwf:mainManifestationAccessPoint() is located in m2r-aps.xsl -->
-                         <xsl:variable name="manifestationAP" select="uwf:mainManifestationAccessPoint(.)"/>
+                         m2r:mainManifestationAccessPoint() is located in m2r-aps.xsl -->
+                         <xsl:variable name="manifestationAP" select="m2r:mainManifestationAccessPoint(.)"/>
                          <xsl:if test="$manifestationAP">
                              <rdamd:P30276>
                                  <xsl:value-of select="$manifestationAP"/>
@@ -413,8 +423,8 @@
                              </xsl:if>
                              
                              <!-- This code can be uncommented to add a manifestation access point to the manifestation description.
-                         uwf:mainManifestationAccessPoint() is located in m2r-aps.xsl -->
-                             <xsl:variable name="manifestationAP" select="uwf:mainManifestationAccessPoint(.)"/>
+                         m2r:mainManifestationAccessPoint() is located in m2r-aps.xsl -->
+                             <xsl:variable name="manifestationAP" select="m2r:mainManifestationAccessPoint(.)"/>
                          <xsl:if test="$manifestationAP">
                              <rdamd:P30276>
                                  <xsl:value-of select="$manifestationAP"/>

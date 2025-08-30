@@ -2,7 +2,8 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:marc="http://www.loc.gov/MARC21/slim"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ex="http://fakeIRI.edu/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:rdaw="http://rdaregistry.info/Elements/w/"
     xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
     xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
@@ -27,8 +28,9 @@
     xmlns:rdat="http://rdaregistry.info/Elements/t/"
     xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
     xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
-    xmlns:fake="http://fakePropertiesForDemo" xmlns:uwf="http://universityOfWashington/functions"
-    exclude-result-prefixes="marc ex uwf" version="3.0">
+    xmlns:fake="http://fakePropertiesForDemo" 
+    xmlns:m2r="http://universityOfWashington/functions"
+    exclude-result-prefixes="marc m2r" version="3.0">
     
     <!-- 013 -->
     <xsl:template name="F013-xx-abcdef" expand-text="yes">
@@ -191,7 +193,7 @@
         <xsl:param name="context"/>
         
         <!-- IRI for this timespan -->
-        <xsl:variable name="iri" select="uwf:timespanIRI($baseID, $context, '')"/>
+        <xsl:variable name="iri" select="m2r:timespanIRI($baseID, $context, '')"/>
         
         <!-- Link manifestation → TimeSpan -->
         <rdamo:P30162 rdf:resource="{$iri}"/>
@@ -217,7 +219,7 @@
     <xsl:template name="F045-timespan-node">
         <xsl:param name="baseID"/>
         <xsl:param name="context"/>
-        <xsl:variable name="iri" select="uwf:timespanIRI($baseID, $context, '')"/>
+        <xsl:variable name="iri" select="m2r:timespanIRI($baseID, $context, '')"/>
         
         <rdf:Description rdf:about="{$iri}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
@@ -308,7 +310,7 @@
         <xsl:param name="suffix"/>
         <xsl:param name="note"/>
          
-        <rdf:Description rdf:about="{uwf:timespanIRI($baseID, ., $suffix)}">
+        <rdf:Description rdf:about="{m2r:timespanIRI($baseID, ., $suffix)}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
 
             <!-- Consolidated date handling for all cases (rows 12, 14, 29, 30) -->
@@ -371,7 +373,7 @@
 
             <!-- Row 31-34: $j is present -->
             <xsl:if test="marc:subfield[@code = 'j']">
-                <rdato:P70016 rdf:resource="{uwf:nomenIRI($baseID, ., marc:subfield[@code = 'j'], 
+                <rdato:P70016 rdf:resource="{m2r:nomenIRI($baseID, ., marc:subfield[@code = 'j'], 
                     if (marc:subfield[@code = '2']) then marc:subfield[@code = '2'] else 'Representations of Dates and Times (ISO 8601)', 
                     'timespan')}"/>
             </xsl:if>

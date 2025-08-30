@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<lookupTable xmlns="http://uw.edu/all-purpose-namespace/">
+<lookupTable>
   <entry>
     <locCode>crd</locCode>
     <locTerm>cartographic dataset</locTerm>
@@ -23,6 +23,7 @@
     <marcMP006c16orc17>k</marcMP006c16orc17>
     <marcMP008c33orc34>o</marcMP008c33orc34>
     <marcMP006c16orc17>o</marcMP006c16orc17>
+    <marc245h>map|atlas</marc245h>
     <locCode>cri</locCode>
     <locTerm>cartographic image</locTerm>
     <locURI>http://id.loc.gov/vocabulary/contentTypes/cri</locURI>
@@ -63,6 +64,7 @@
     <marcMP006c16orc17>n</marcMP006c16orc17>
     <marcMP008c33orc34>l</marcMP008c33orc34>
     <marcMP006c16orc17>l</marcMP006c16orc17>
+    <marc245h>globe|relief model</marc245h>
     <locCode>crf</locCode>
     <locTerm>cartographic three-dimensional form</locTerm>
     <locURI>http://id.loc.gov/vocabulary/contentTypes/crf</locURI>
@@ -141,6 +143,7 @@
     <marcLDRc6>j</marcLDRc6>
     <marcMU008c30c31>  </marcMU008c30c31>
     <marcMU006c13c14>  </marcMU006c13c14>
+    <marc245h>musical recording|motion picture soundtrack</marc245h>
     <locCode>prm</locCode>
     <locTerm>performed music</locTerm>
     <locURI>http://id.loc.gov/vocabulary/contentTypes/prm</locURI>
@@ -197,6 +200,7 @@
     <marcMU006c13orc14>t</marcMU006c13orc14>
     <marcMU008c30orc31>z</marcMU008c30orc31>
     <marcMU006c13orc14>z</marcMU006c13orc14>
+    <marc245h>spoken recording|eaudio|e-audio book</marc245h>
     <locCode>spw</locCode>
     <locTerm>spoken word</locTerm>
     <locURI>http://id.loc.gov/vocabulary/contentTypes/spw</locURI>
@@ -243,6 +247,7 @@
     <marcCR006c7>e</marcCR006c7>
     <marcCR008c24>y</marcCR008c24>
     <marcCR006c7>y</marcCR006c7>
+    <marc245h>nonprojectable graphic|activity card|drawing|painting|print|picture|icon|diagram|graphic|jigsaw puzzle|flash card|board book</marc245h>
     <locCode>sti</locCode>
     <locTerm>still image</locTerm>
     <locURI>http://id.loc.gov/vocabulary/contentTypes/sti</locURI>
@@ -404,6 +409,7 @@
     <marcCR006c7>e</marcCR006c7>
     <marcCR008c24>y</marcCR008c24>
     <marcCR006c7>y</marcCR006c7>
+    <marc245h>atlas|flash card|board book|microfilm|handbook|large print|newsletter|pamphlet|text|ebook|e-book|serial|typescript|exhibition catalog|paperback</marc245h>
     <locCode>txt</locCode>
     <locTerm>text</locTerm>
     <locURI>http://id.loc.gov/vocabulary/contentTypes/txt</locURI>
@@ -416,6 +422,7 @@
     <marcVM006c16>d</marcVM006c16>
     <marcVM008c33>q</marcVM008c33>
     <marcVM006c16>q</marcVM006c16>
+    <marc245h>realia</marc245h>
     <locCode>tdf</locCode>
     <locTerm>three-dimensional form</locTerm>
     <locURI>http://id.loc.gov/vocabulary/contentTypes/tdf</locURI>

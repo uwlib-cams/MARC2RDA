@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
-         xmlns:fake="http://fakePropertiesForDemo"
+<rdf:RDF xmlns:fake="http://fakePropertiesForDemo"
          xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
          xmlns:rdaa="http://rdaregistry.info/Elements/a/"
          xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
@@ -28,32 +27,60 @@
          xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:uwf="http://universityOfWashington/functions"
-         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/approvedURI-test1wor">
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marcapprovedURI-test1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/approvedURI-test1exp"/>
-      <rdawd:P10002>approvedURI-test1wor</rdawd:P10002>
+      <rdawd:P10400>approvedURI-test1</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marcapprovedURI-test1</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marcapprovedURI-test1"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marcapprovedURI-test1">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcapprovedURI-test1"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marcapprovedURI-test1</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 approvedURI-test1
+F700 1# $a Deka, Bhabesh. $e editor $0 (orcid)0000-0002-9679-6159 $1 https://orcid.org/0000-0002-9679-6159
+F700 1# $a Nussbaum, Martha C. $q (Martha Craven), $d 1947- $1 https://id.oclc.org/worldcat/entity/E39PBJvxvGDXgCBVM3wfQ6mrv3 $1 https://test.unapproved.org/1234
+F710 2# $a Universitas Sebelas Maret, $e issuing body $1 http://isni.org/isni/0000000417635731
+F710 2# $a Derz͡havne upravlinni͡a spravamy (Kyïv, Ukraine). $b Naukovo-praktychnyĭ t͡sentr profilaktychnoï ta klinichnoï medyt͡syny, $e issuing body $1 http://www.wikidata.org/entity/Q16708730
+F600 07 $a Stevie Wonder. $t All in love is fair. $1 https://musicbrainz.org/work/3f9ae128-bbec-3804-a477-83348f91dbc8 $2 musicb
+</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcapprovedURI-test1"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
       <rdawo:P10550 rdf:resource="http://isni.org/isni/0000000417635731"/>
-      <rdawo:P10550 rdf:resource="http://marc2rda.edu/fake/approvedURI-test1age#d22e37"/>
-      <fake:marcfield>F600 07 $a Stevie Wonder. $t All in love is fair. $1 https://musicbrainz.org/work/3f9ae128-bbec-3804-a477-83348f91dbc8 $2 musicb</fake:marcfield>
-      <rdawo:P10261 rdf:resource="http://marc2rda.edu/fake/approvedURI-test1age#d22e48"/>
+      <rdawo:P10550 rdf:resource="http://marc2rda.edu/fake/age#derz%CD%A1havneupravlinni%CD%A1aspravamykyi%CC%88vukrainenaukovo-praktychnyi%CC%86t%CD%A1sentrprofilaktychnoi%CC%88taklinichnoi%CC%88medyt%CD%A1syny"/>
       <rdawo:P10257 rdf:resource="https://musicbrainz.org/work/3f9ae128-bbec-3804-a477-83348f91dbc8"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/approvedURI-test1exp">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/approvedURI-test1man"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/approvedURI-test1wor"/>
-      <rdaed:P20002>approvedURI-test1exp</rdaed:P20002>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcapprovedURI-test1"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/approvedURI-test1man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/approvedURI-test1exp"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marcapprovedURI-test1"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdamd:P30276/>
       <!--Default relationship property used for https://orcid.org/0000-0002-9679-6159-->
       <rdamo:P30268 rdf:resource="https://orcid.org/0000-0002-9679-6159"/>
-      <!--Default relationship property used for http://marc2rda.edu/fake/approvedURI-test1age#d22e17-->
-      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/approvedURI-test1age#d22e17"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#nussbaummarthacmarthacraven1947- -->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age#nussbaummarthacmarthacraven1947-"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ageNom#2025-08-30t1330195764153-0400d27e41">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Stevie Wonder</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/musicb"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/musicb/worNom#steviewonderallinloveisfair">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
@@ -61,41 +88,37 @@
       <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/musicb"/>
    </rdf:Description>
    <rdf:Description rdf:about="https://orcid.org/0000-0002-9679-6159">
-      <fake:marcfield>F700 1# $a Deka, Bhabesh. $e editor $0 (orcid)0000-0002-9679-6159 $1 https://orcid.org/0000-0002-9679-6159</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Deka, Bhabesh</rdaad:P50377>
       <rdaad:P50094>(orcid)0000-0002-9679-6159</rdaad:P50094>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/approvedURI-test1age#d22e17">
-      <fake:marcfield>F700 1# $a Nussbaum, Martha C. $q (Martha Craven), $d 1947- $1 https://id.oclc.org/worldcat/entity/E39PBJvxvGDXgCBVM3wfQ6mrv3 $1 https://test.unapproved.org/1234</fake:marcfield>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#nussbaummarthacmarthacraven1947-">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
       <rdaad:P50377>Nussbaum, Martha C. (Martha Craven), 1947-</rdaad:P50377>
-      <rdaad:P50347>1947-</rdaad:P50347>
+      <rdaad:P50111>Nussbaum, Martha C.</rdaad:P50111>
       <rdaad:P50121>1947</rdaad:P50121>
       <rdaad:P50115>Martha Craven</rdaad:P50115>
       <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJvxvGDXgCBVM3wfQ6mrv3</rdaad:P50094>
       <rdaad:P50094>https://test.unapproved.org/1234</rdaad:P50094>
    </rdf:Description>
    <rdf:Description rdf:about="http://isni.org/isni/0000000417635731">
-      <fake:marcfield>F710 2# $a Universitas Sebelas Maret, $e issuing body $1 http://isni.org/isni/0000000417635731</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
       <rdaad:P50375>Universitas Sebelas Maret</rdaad:P50375>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/approvedURI-test1age#d22e37">
-      <fake:marcfield>F710 2# $a Derz͡havne upravlinni͡a spravamy (Kyïv, Ukraine). $b Naukovo-praktychnyĭ t͡sentr profilaktychnoï ta klinichnoï medyt͡syny, $e issuing body $1 http://www.wikidata.org/entity/Q16708730</fake:marcfield>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#derz%CD%A1havneupravlinni%CD%A1aspravamykyi%CC%88vukrainenaukovo-praktychnyi%CC%86t%CD%A1sentrprofilaktychnoi%CC%88taklinichnoi%CC%88medyt%CD%A1syny">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
       <rdaad:P50375>Derz͡havne upravlinni͡a spravamy (Kyïv, Ukraine). Naukovo-praktychnyĭ t͡sentr profilaktychnoï ta klinichnoï medyt͡syny</rdaad:P50375>
+      <rdaad:P50032>Derz͡havne upravlinni͡a spravamy (Kyïv, Ukraine). Naukovo-praktychnyĭ t͡sentr profilaktychnoï ta klinichnoï medyt͡syny</rdaad:P50032>
       <rdaad:P50006>http://www.wikidata.org/entity/Q16708730</rdaad:P50006>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/approvedURI-test1age#d22e48">
-      <fake:marcfield>F600 07 $a Stevie Wonder. $t All in love is fair. $1 https://musicbrainz.org/work/3f9ae128-bbec-3804-a477-83348f91dbc8 $2 musicb</fake:marcfield>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/musicb/age#steviewonder">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Stevie Wonder</rdaad:P50377>
+      <rdaao:P50377 rdf:resource="http://marc2rda.edu/fake/ageNom#2025-08-30t1330195764153-0400d27e41"/>
+      <rdaad:P50111>Stevie Wonder</rdaad:P50111>
    </rdf:Description>
    <rdf:Description rdf:about="https://musicbrainz.org/work/3f9ae128-bbec-3804-a477-83348f91dbc8">
-      <fake:marcfield>F600 07 $a Stevie Wonder. $t All in love is fair. $1 https://musicbrainz.org/work/3f9ae128-bbec-3804-a477-83348f91dbc8 $2 musicb</fake:marcfield>
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10331 rdf:resource="http://marc2rda.edu/fake/musicb/worNom#steviewonderallinloveisfair"/>
-      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/approvedURI-test1age#d22e48"/>
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/musicb/age#steviewonder"/>
    </rdf:Description>
 </rdf:RDF>

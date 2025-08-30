@@ -2,7 +2,8 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:marc="http://www.loc.gov/MARC21/slim"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ex="http://fakeIRI.edu/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:rdaw="http://rdaregistry.info/Elements/w/"
     xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
     xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
@@ -27,12 +28,11 @@
     xmlns:rdat="http://rdaregistry.info/Elements/t/"
     xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
     xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
-    xmlns:fake="http://fakePropertiesForDemo" xmlns:uwf="http://universityOfWashington/functions"
-    exclude-result-prefixes="marc ex uwf" version="3.0">
+    xmlns:fake="http://fakePropertiesForDemo" 
+    xmlns:m2r="http://universityOfWashington/functions"
+    exclude-result-prefixes="marc m2r" version="3.0">
+    
     <xsl:include href="m2r-2xx-named.xsl"/>
-    <xsl:import href="getmarc.xsl"/>
-    <xsl:import href="m2r-functions.xsl"/>
-    <xsl:import href="m2r-iris.xsl"/>
     
     <xsl:template match="marc:datafield[@tag = '240'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '240']"
         mode="aggWor">
@@ -75,7 +75,7 @@
                         <xsl:when test="position() = last()">
                             <marc:subfield>
                                 <xsl:attribute name="code" select="./@code"/>
-                                <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
+                                <xsl:value-of select="m2r:stripEndPunctuation(.)"/>
                             </marc:subfield>
                         </xsl:when>
                         <xsl:otherwise>
@@ -111,10 +111,10 @@
                             <rdawd:P10088>
                                 <xsl:choose>
                                     <xsl:when test="$isISBD = true()">
-                                        <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
+                                        <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => replace('\[sic\]', '') => m2r:removeBrackets()"/>
                                     </xsl:when>
                                     <xsl:otherwise>
-                                        <xsl:value-of select="normalize-space(.) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
+                                        <xsl:value-of select="normalize-space(.) => replace('\[sic\]', '') => m2r:removeBrackets()"/>
                                     </xsl:otherwise>
                                 </xsl:choose>
                             </rdawd:P10088>
@@ -126,20 +126,20 @@
                             <xsl:choose>
                                 <!-- remove ISBD punctuation if ISBD -->
                                 <xsl:when test="$isISBD = true()">
-                                    <xsl:value-of select="normalize-space(marc:subfield[@code = 'a']) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                    <xsl:value-of select="normalize-space(marc:subfield[@code = 'a']) => replace('\s*[=:;/]$', '') => m2r:removeBrackets()"/>
                                     <xsl:text> </xsl:text>
                                     <xsl:for-each select="marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::marc:subfield[contains(text(), ' = ') or ends-with(text(), ' =')])]">
-                                        <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                        <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => m2r:removeBrackets()"/>
                                         <xsl:if test="position() != last()">
                                             <xsl:text> </xsl:text>
                                         </xsl:if>                                    
                                     </xsl:for-each>
                                 </xsl:when>
                                 <xsl:otherwise>
-                                    <xsl:value-of select="uwf:removeBrackets(marc:subfield[@code = 'a'])"/>
+                                    <xsl:value-of select="m2r:removeBrackets(marc:subfield[@code = 'a'])"/>
                                     <xsl:text> </xsl:text>
                                     <xsl:for-each select="marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::marc:subfield[contains(text(), ' = ') or ends-with(text(), ' =')])]">
-                                        <xsl:value-of select="uwf:removeBrackets(.)"/>
+                                        <xsl:value-of select="m2r:removeBrackets(.)"/>
                                         <xsl:if test="position() != last()">
                                             <xsl:text> </xsl:text>
                                         </xsl:if>
@@ -148,7 +148,7 @@
                             </xsl:choose>
                         </xsl:variable>
                         <rdawd:P10088>
-                            <xsl:value-of select="normalize-space($title) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
+                            <xsl:value-of select="normalize-space($title) => replace('\[sic\]', '') => m2r:removeBrackets()"/>
                         </rdawd:P10088>
                     </xsl:otherwise>
                 </xsl:choose>
@@ -169,10 +169,10 @@
                     <xsl:choose>
                         <!-- remove ISBD punctuation if ISBD -->
                         <xsl:when test="$isISBD = true()">
-                            <xsl:value-of select="normalize-space($title) => replace('\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
+                            <xsl:value-of select="normalize-space($title) => replace('\s*[=:;/]$', '') => replace('\[sic\]', '') => m2r:removeBrackets()"/>
                         </xsl:when>
                         <xsl:otherwise>
-                            <xsl:value-of select="normalize-space($title) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
+                            <xsl:value-of select="normalize-space($title) => replace('\[sic\]', '') => m2r:removeBrackets()"/>
                         </xsl:otherwise>
                     </xsl:choose>
                 </rdawd:P10088>
@@ -193,7 +193,7 @@
                         <xsl:when test="position() = last()">
                             <marc:subfield>
                                 <xsl:attribute name="code" select="./@code"/>
-                                <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
+                                <xsl:value-of select="m2r:stripEndPunctuation(.)"/>
                             </marc:subfield>
                         </xsl:when>
                         <xsl:otherwise>
@@ -229,10 +229,10 @@
                                 <rdaed:P20312>
                                     <xsl:choose>
                                         <xsl:when test="$isISBD = true()">
-                                            <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
+                                            <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => replace('\[sic\]', '') => m2r:removeBrackets()"/>
                                         </xsl:when>
                                         <xsl:otherwise>
-                                            <xsl:value-of select="normalize-space(.) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
+                                            <xsl:value-of select="normalize-space(.) => replace('\[sic\]', '') => m2r:removeBrackets()"/>
                                         </xsl:otherwise>
                                     </xsl:choose>
                                 </rdaed:P20312>
@@ -244,20 +244,20 @@
                                 <xsl:choose>
                                     <!-- remove ISBD punctuation if ISBD -->
                                     <xsl:when test="$isISBD = true()">
-                                        <xsl:value-of select="normalize-space(marc:subfield[@code = 'a']) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                        <xsl:value-of select="normalize-space(marc:subfield[@code = 'a']) => replace('\s*[=:;/]$', '') => m2r:removeBrackets()"/>
                                         <xsl:text> </xsl:text>
                                         <xsl:for-each select="marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::marc:subfield[contains(text(), ' = ') or ends-with(text(), ' =')])]">
-                                            <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => uwf:removeBrackets()"/>
+                                            <xsl:value-of select="normalize-space(.) => replace('\s*[=:;/]$', '') => m2r:removeBrackets()"/>
                                             <xsl:if test="position() != last()">
                                                 <xsl:text> </xsl:text>
                                             </xsl:if>                                    
                                         </xsl:for-each>
                                     </xsl:when>
                                     <xsl:otherwise>
-                                        <xsl:value-of select="uwf:removeBrackets(marc:subfield[@code = 'a'])"/>
+                                        <xsl:value-of select="m2r:removeBrackets(marc:subfield[@code = 'a'])"/>
                                         <xsl:text> </xsl:text>
                                         <xsl:for-each select="marc:subfield[@code = 'a']/following-sibling::marc:subfield[@code = 'n' or @code = 'p' or @code = 's'][not(preceding-sibling::marc:subfield[contains(text(), ' = ') or ends-with(text(), ' =')])]">
-                                            <xsl:value-of select="uwf:removeBrackets(.)"/>
+                                            <xsl:value-of select="m2r:removeBrackets(.)"/>
                                             <xsl:if test="position() != last()">
                                                 <xsl:text> </xsl:text>
                                             </xsl:if>
@@ -266,7 +266,7 @@
                                 </xsl:choose>
                             </xsl:variable>
                             <rdaed:P20312>
-                                <xsl:value-of select="normalize-space($title) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
+                                <xsl:value-of select="normalize-space($title) => replace('\[sic\]', '') => m2r:removeBrackets()"/>
                             </rdaed:P20312>
                         </xsl:otherwise>
                     </xsl:choose>
@@ -287,10 +287,10 @@
                         <xsl:choose>
                             <!-- remove ISBD punctuation if ISBD -->
                             <xsl:when test="$isISBD = true()">
-                                <xsl:value-of select="normalize-space($title) => replace('\s*[=:;/]$', '') => replace('\[sic\]', '') => uwf:removeBrackets()"/>
+                                <xsl:value-of select="normalize-space($title) => replace('\s*[=:;/]$', '') => replace('\[sic\]', '') => m2r:removeBrackets()"/>
                             </xsl:when>
                             <xsl:otherwise>
-                                <xsl:value-of select="normalize-space($title) => replace('\[sic\]', '') => uwf:removeBrackets()"/>
+                                <xsl:value-of select="normalize-space($title) => replace('\[sic\]', '') => m2r:removeBrackets()"/>
                             </xsl:otherwise>
                         </xsl:choose>
                     </rdaed:P20312>
@@ -322,7 +322,7 @@
                         <xsl:when test="position() = last()">
                             <marc:subfield>
                                 <xsl:attribute name="code" select="./@code"/>
-                                <xsl:value-of select="uwf:stripEndPunctuation(.)"/>
+                                <xsl:value-of select="m2r:stripEndPunctuation(.)"/>
                             </marc:subfield>
                         </xsl:when>
                         <xsl:otherwise>
@@ -376,7 +376,7 @@
         <xsl:choose>
             <xsl:when test="marc:subfield[@code = '5']">
                 <xsl:if test=".[@tag = '246'] or .[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '246-00']">
-                    <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseID, .)}"/>
+                    <rdamo:P30103 rdf:resource="{m2r:itemIRI($baseID, .)}"/>
                 </xsl:if>
             </xsl:when>
             <xsl:otherwise>
@@ -424,7 +424,7 @@
         <xsl:choose>
             <xsl:when test="marc:subfield[@code = '5']">
                 <xsl:if test="@tag = '246' or (@tag = '880' and substring(marc:subfield[@code = '6'], 1, 6) = '246-00')">
-                    <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseID, .)}"/>
+                    <rdamo:P30103 rdf:resource="{m2r:itemIRI($baseID, .)}"/>
                 </xsl:if>
             </xsl:when>
             <xsl:otherwise>
@@ -472,7 +472,7 @@
         <xsl:choose>
             <xsl:when test="marc:subfield[@code = '5']">
                 <xsl:if test="@tag = '246' or (@tag = '880' and substring(marc:subfield[@code = '6'], 1, 6) = '246-00')">
-                    <rdamo:P30103 rdf:resource="{uwf:itemIRI($baseID, .)}"/>
+                    <rdamo:P30103 rdf:resource="{m2r:itemIRI($baseID, .)}"/>
                 </xsl:if>
             </xsl:when>
             <xsl:otherwise>
@@ -518,14 +518,14 @@
         <xsl:param name="manIRI"/>
         <xsl:variable name="genID" select="generate-id()"/>
         <xsl:if test="marc:subfield[@code = '5']">
-            <rdf:Description rdf:about="{uwf:itemIRI($baseID, .)}">
+            <rdf:Description rdf:about="{m2r:itemIRI($baseID, .)}">
                 <!--<xsl:call-template name="getmarc"/>-->
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                 <rdaid:P40001>
                       <xsl:value-of select="concat('ite#', $baseID, $genID)"/>
                 </rdaid:P40001>
                 <rdaio:P40049 rdf:resource="{$manIRI}"/>
-                <xsl:copy-of select="uwf:s5Lookup(marc:subfield[@code = '5'])"/>
+                <xsl:copy-of select="m2r:s5Lookup(marc:subfield[@code = '5'])"/>
                 <xsl:choose>
                     <!--has variant title of item-->
                     <xsl:when test="@ind2 = '0' or @ind2 = '1' or @ind2 = '2' or @ind2 = '4' or @ind2 = '5' or @ind2 = '6' or @ind2 = '7' or @ind2 = '8' or marc:subfield[@code = 'i'] or marc:subfield[@code = 'g'] or marc:subfield[@code = 'h']">
@@ -744,7 +744,7 @@
                         <xsl:choose>
                             <xsl:when test="$sub2">
                                 <!-- this is okay because it is only minted when there is a source, else there would be a problem with multiple IRIs coming from the same node -->
-                                <rdawo:P10316 rdf:resource="{uwf:placeIRI($baseID, $suba, ., $sub2)}"/>
+                                <rdawo:P10316 rdf:resource="{m2r:placeIRI($baseID, $suba, ., $sub2)}"/>
                             </xsl:when>
                             <xsl:otherwise>
                                 <rdawd:P10316>
@@ -757,7 +757,7 @@
                 <xsl:otherwise>
                     <xsl:choose>
                         <xsl:when test="$sub2">
-                            <rdawo:P10316 rdf:resource="{uwf:placeIRI($baseID, ., ., $sub2)}"/>
+                            <rdawo:P10316 rdf:resource="{m2r:placeIRI($baseID, ., ., $sub2)}"/>
                         </xsl:when>
                         <xsl:otherwise>
                             <rdawd:P10316>
@@ -774,7 +774,7 @@
                     <rdawo:P10316 rdf:resource="{.}"/>
                 </xsl:when>
                 <xsl:when test="contains(., 'id.loc.gov/authorities/names/')">
-                    <xsl:variable name="gac" select="uwf:lcNamesToGeographicAreas(.)"/>
+                    <xsl:variable name="gac" select="m2r:lcNamesToGeographicAreas(.)"/>
                     <xsl:choose>
                         <xsl:when test="$gac != ''">
                             <rdawo:P10316 rdf:resource="{concat('http://id.loc.gov/vocabulary/geographicAreas/', replace($gac,'-+$',''))}"/>
@@ -795,7 +795,7 @@
                     <rdawo:P10316 rdf:resource="{.}"/>
                 </xsl:when>
                 <xsl:when test="contains(., 'id.loc.gov/authorities/names/')">
-                    <xsl:variable name="gac" select="uwf:lcNamesToGeographicAreas(.)"/>
+                    <xsl:variable name="gac" select="m2r:lcNamesToGeographicAreas(.)"/>
                     <xsl:choose>
                         <xsl:when test="$gac != ''">
                             <rdawo:P10316 rdf:resource="{concat('http://id.loc.gov/vocabulary/geographicAreas/', replace($gac,'-+$',''))}"/>
@@ -811,7 +811,7 @@
                         <xsl:value-of select="$tokenizedIRI[last()]"/>
                     </xsl:variable>
                     <xsl:variable name="authorityFile" select="concat('http://id.loc.gov/authorities/names/', $id)"/>
-                    <xsl:variable name="gac" select="uwf:lcNamesToGeographicAreas($authorityFile)"/>
+                    <xsl:variable name="gac" select="m2r:lcNamesToGeographicAreas($authorityFile)"/>
                     <xsl:choose>
                         <xsl:when test="$gac != ''">
                             <rdawo:P10316 rdf:resource="{concat('http://id.loc.gov/vocabulary/geographicAreas/', replace($gac,'-+$',''))}"/>
@@ -838,16 +838,16 @@
                 <xsl:choose>
                     <xsl:when test="matches(., '\S+.*;.*\S+')">
                         <xsl:for-each select="tokenize(., ';')">
-                            <rdf:Description rdf:about="{uwf:placeIRI($baseID, $suba, ., $sub2)}">
+                            <rdf:Description rdf:about="{m2r:placeIRI($baseID, $suba, ., $sub2)}">
                                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-                                <rdapo:P70019 rdf:resource="{uwf:nomenIRI($baseID, $suba, ., $sub2, 'place')}"/>
+                                <rdapo:P70019 rdf:resource="{m2r:nomenIRI($baseID, $suba, ., $sub2, 'place')}"/>
                             </rdf:Description>
                         </xsl:for-each>
                     </xsl:when>
                     <xsl:otherwise>
-                        <rdf:Description rdf:about="{uwf:placeIRI($baseID, ., ., $sub2)}">
+                        <rdf:Description rdf:about="{m2r:placeIRI($baseID, ., ., $sub2)}">
                             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-                            <rdapo:P70019 rdf:resource="{uwf:nomenIRI($baseID, ., ., $sub2, 'place')}"/>
+                            <rdapo:P70019 rdf:resource="{m2r:nomenIRI($baseID, ., ., $sub2, 'place')}"/>
                         </rdf:Description>
                     </xsl:otherwise>
                 </xsl:choose>
@@ -865,22 +865,22 @@
                 <xsl:choose>
                     <xsl:when test="matches(., '\S+.*;.*\S+')">
                         <xsl:for-each select="tokenize(., ';')">
-                            <rdf:Description rdf:about="{uwf:nomenIRI($baseID, $suba, ., $sub2, 'place')}">
+                            <rdf:Description rdf:about="{m2r:nomenIRI($baseID, $suba, ., $sub2, 'place')}">
                                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                                 <rdand:P80068>
                                     <xsl:value-of select="replace(., '\.$|;$', '') => normalize-space()"/>
                                 </rdand:P80068>
-                                <xsl:copy-of select="uwf:s2Nomen($sub2)"/>
+                                <xsl:copy-of select="m2r:s2Nomen($sub2)"/>
                             </rdf:Description>
                         </xsl:for-each>
                     </xsl:when>
                     <xsl:otherwise>
-                        <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., ., $sub2, 'place')}">
+                        <rdf:Description rdf:about="{m2r:nomenIRI($baseID, ., ., $sub2, 'place')}">
                             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                             <rdand:P80068>
                                 <xsl:value-of select="replace(., '\.$|;$', '') => normalize-space()"/>
                             </rdand:P80068>
-                            <xsl:copy-of select="uwf:s2Nomen($sub2)"/>
+                            <xsl:copy-of select="m2r:s2Nomen($sub2)"/>
                         </rdf:Description>
                     </xsl:otherwise>
                 </xsl:choose>
@@ -1066,9 +1066,7 @@
                         <xsl:when test="@ind2 = '4'">
                             <xsl:call-template name="F264-x4-c"/>
                         </xsl:when>
-                        <xsl:otherwise>
-                            <ex:ERROR>F264 IND2 ERROR</ex:ERROR>
-                        </xsl:otherwise>
+                        <xsl:otherwise/>
                     </xsl:choose>
                 </xsl:when>
                 <!-- no ISBD punctuation -->
@@ -1101,9 +1099,7 @@
                         <xsl:when test="@ind2 = '4'">
                             <xsl:call-template name="F264-x4-c"/>
                         </xsl:when>
-                        <xsl:otherwise>
-                            <ex:ERROR>F264 IND2 ERROR</ex:ERROR>
-                        </xsl:otherwise>
+                        <xsl:otherwise/>
                     </xsl:choose>
                 </xsl:otherwise>
             </xsl:choose>

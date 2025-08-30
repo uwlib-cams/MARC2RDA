@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root xmlns="http://uw.edu/all-purpose-namespace/">
+<root>
     <row>
         <source>BBC Things</source>
         <marc024Code>bbcth</marc024Code>

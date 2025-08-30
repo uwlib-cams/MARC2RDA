@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<lookupTable xmlns="http://uw.edu/all-purpose-namespace/">
+<lookupTable>
   <entry>
     <marc007c0c1>ha</marc007c0c1>
     <locCode>ha</locCode>

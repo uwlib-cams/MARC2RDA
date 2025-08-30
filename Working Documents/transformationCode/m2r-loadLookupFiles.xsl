@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     exclude-result-prefixes="xs"
-    version="2.0">
+    version="3.0">
     
     <!-- run to load and save local files from LC and RDA vocabularies -->
     <!-- to add new vocabularies, add the name of the vocabulary as seen in the URL provided by the source to the semi-colon separated list -->

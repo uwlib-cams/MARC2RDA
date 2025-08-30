@@ -2,7 +2,10 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:marc="http://www.loc.gov/MARC21/slim" 
-    xmlns:uwf="http://universityOfWashington/functions" exclude-result-prefixes="marc xs" version="3.0">
+    xmlns:m2r="http://universityOfWashington/functions" 
+    exclude-result-prefixes="marc xs" 
+    version="3.0">
+    
     <xsl:variable name="listTextsCCT" select="document('lookup/ListTextsCCT.xml')/items/item"/>
     <xsl:variable name="listAgentE" select="document('lookup/ListAgent$eAggregators.xml')/items/item"/>
     <xsl:variable name="listAgent4" select="document('lookup/ListAgent$4Aggregators.xml')/items/item"/>
@@ -154,7 +157,7 @@
     <!-- function used in m2r.xsl -->
     <!-- returns true() if there is a match and false() if not -->
     <!-- if the xsl:iterate is updated (such as the params), this will need updating too -->
-    <xsl:function name="uwf:checkAggregates" expand-text="yes">
+    <xsl:function name="m2r:checkAggregates" expand-text="yes">
         <xsl:param name="record"/>
         <xsl:iterate select="$patterns">
             <xsl:on-completion>

@@ -2,7 +2,8 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:marc="http://www.loc.gov/MARC21/slim"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ex="http://fakeIRI.edu/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:rdaw="http://rdaregistry.info/Elements/w/"
     xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
     xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
@@ -27,12 +28,9 @@
     xmlns:rdat="http://rdaregistry.info/Elements/t/"
     xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
     xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
-    xmlns:fake="http://fakePropertiesForDemo" xmlns:uwf="http://universityOfWashington/functions"
-    exclude-result-prefixes="marc ex uwf" version="3.0">
-    <xsl:import href="m2r-relators.xsl"/>
-    <xsl:import href="m2r-functions.xsl"/>
-    <xsl:import href="m2r-iris.xsl"/>
-    <xsl:import href="getmarc.xsl"/>
+    xmlns:fake="http://fakePropertiesForDemo" 
+    xmlns:m2r="http://universityOfWashington/functions"
+    exclude-result-prefixes="marc m2r" version="3.0">
 
     <!-- 740 -->
     <xsl:template name="F740-xx-ldrtestite" expand-text="yes">
@@ -82,7 +80,7 @@
             @code = 'd' or @code = 'f' or @code = 'g' or
             @code = 'h']" /> 
         <xsl:variable name="placeString" select="string-join($placeSubfields, '--')"/>
-        <xsl:variable name="placeIRI" select="uwf:placeIRI($baseID, ., $placeString, '')"/>  
+        <xsl:variable name="placeIRI" select="m2r:placeIRI($baseID, ., $placeString, '')"/>  
         <xsl:choose>
             <xsl:when test="marc:subfield[@code = '4']">
                 <xsl:for-each select="marc:subfield[@code = '4'][starts-with(., 'http://rdaregistry.info/Elements/w/')]">
@@ -103,7 +101,7 @@
             @code = 'd' or @code = 'f' or @code = 'g' or
             @code = 'h']" /> 
         <xsl:variable name="placeString" select="string-join($placeSubfields, '--')"/>
-        <xsl:variable name="placeIRI" select="uwf:placeIRI($baseID, ., $placeString, '')"/>  
+        <xsl:variable name="placeIRI" select="m2r:placeIRI($baseID, ., $placeString, '')"/>  
         <xsl:choose>
             <xsl:when test="marc:subfield[@code = '4']">
                 <xsl:for-each select="marc:subfield[@code = '4'][starts-with(., 'http://rdaregistry.info/Elements/e/')]">
@@ -124,7 +122,7 @@
             @code = 'd' or @code = 'f' or @code = 'g' or
             @code = 'h']" /> 
         <xsl:variable name="placeString" select="string-join($placeSubfields, '--')"/>
-        <xsl:variable name="placeIRI" select="uwf:placeIRI($baseID, ., $placeString, '')"/>  
+        <xsl:variable name="placeIRI" select="m2r:placeIRI($baseID, ., $placeString, '')"/>  
         <xsl:choose>
             <!-- check for $e or $4 that matches all mapping cases -->
             <!-- $e and $4 are repeatable -->
@@ -191,13 +189,13 @@
             @code = 'd' or @code = 'f' or @code = 'g' or
             @code = 'h']" /> 
         <xsl:variable name="placeString" select="string-join($placeSubfields, '--')"/>
-        <xsl:variable name="placeIRI" select="uwf:placeIRI($baseID, ., $placeString, '')"/> 
+        <xsl:variable name="placeIRI" select="m2r:placeIRI($baseID, ., $placeString, '')"/> 
         <xsl:variable name="genID" select="generate-id(.)"/>
         <xsl:choose>
             <!-- check for $e or $4 that matches all mapping cases -->
             <!-- $e and $4 are repeatable -->
             <xsl:when test="marc:subfield[@code = '4'][starts-with(., 'http://rdaregistry.info/Elements/i/')]">
-                <rdf:Description rdf:about="{uwf:itemIRI($baseID, .)}">
+                <rdf:Description rdf:about="{m2r:itemIRI($baseID, .)}">
                     <!--<xsl:call-template name="getmarc"/>-->
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                     <rdaid:P40001>{concat('ite#',$baseID, $genID)}</rdaid:P40001>
@@ -221,7 +219,7 @@
             @code = 'd' or @code = 'f' or @code = 'g' or
             @code = 'h']" />
         <xsl:variable name="placeString" select="string-join($placeSubfields, '--')"/>
-        <xsl:variable name="placeIRI" select="uwf:placeIRI($baseID, ., $placeString, '')"/>  
+        <xsl:variable name="placeIRI" select="m2r:placeIRI($baseID, ., $placeString, '')"/>  
         <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
         
         <!-- Place string (codes: a–d, f–h) -->
@@ -230,7 +228,7 @@
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
                 <xsl:choose>
                     <xsl:when test="$sub2 != ''">
-                        <rdapo:P70019 rdf:resource="{uwf:nomenIRI($baseID, ., $placeString, $sub2, 'place')}"/>
+                        <rdapo:P70019 rdf:resource="{m2r:nomenIRI($baseID, ., $placeString, $sub2, 'place')}"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <rdapd:P70019>
@@ -264,13 +262,13 @@
             @code = 'd' or @code = 'f' or @code = 'g' or
             @code = 'h']" /> 
         <xsl:variable name="placeString" select="string-join($placeSubfields, '--')"/>
-        <xsl:variable name="placeIRI" select="uwf:placeIRI($baseID, ., $placeString, '')"/>  
+        <xsl:variable name="placeIRI" select="m2r:placeIRI($baseID, ., $placeString, '')"/>  
         <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
         
         
         <!-- Place string (codes: a–d, f–h) -->
         <xsl:if test="$sub2 != ''">
-            <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., $placeString, $sub2, 'place')}">
+            <rdf:Description rdf:about="{m2r:nomenIRI($baseID, ., $placeString, $sub2, 'place')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
                     <xsl:value-of select="$placeString"/>
@@ -291,7 +289,7 @@
                     </xsl:for-each>
                 </xsl:if>
                 <!-- look up source in $2 -->
-                <xsl:copy-of select="uwf:s2NomenNameTitleSchemes($sub2)"/>
+                <xsl:copy-of select="m2r:s2NomenNameTitleSchemes($sub2)"/>
             </rdf:Description>
         </xsl:if>
     </xsl:template>
@@ -338,7 +336,7 @@
         <xsl:param name="manIRI"/>
         <xsl:param name="context"/>
         
-        <xsl:variable name="itemIRI" select="uwf:itemIRI($baseID, $context)"/>
+        <xsl:variable name="itemIRI" select="m2r:itemIRI($baseID, $context)"/>
         <xsl:variable name="scheme" select="$context/marc:subfield[@code='2'][1]"/>
         
         <!-- rdf:Description for item -->
@@ -356,7 +354,7 @@
             
             <!--($x) Non-public note -->
             <xsl:for-each select="$context/marc:subfield[@code='x']">
-                <xsl:variable name="metaIRI" select="uwf:metaWorIRI($baseID, .)"/>
+                <xsl:variable name="metaIRI" select="m2r:metaWorIRI($baseID, .)"/>
                 <rdaio:P40164 rdf:resource="{$metaIRI}"/>
             </xsl:for-each>
             
@@ -371,7 +369,7 @@
                         </rdaid:P40028>
                     </xsl:for-each>
                     <xsl:for-each select="marc:subfield[@code = 'x']">
-                        <xsl:variable name="metaIRI880" select="uwf:metaWorIRI($baseID, .)"/>
+                        <xsl:variable name="metaIRI880" select="m2r:metaWorIRI($baseID, .)"/>
                         <rdaio:P40164 rdf:resource="{$metaIRI880}"/>
                     </xsl:for-each>
                 </xsl:for-each>
@@ -384,16 +382,16 @@
                 <xsl:variable name="cat" select="."/>
                 <xsl:variable name="aField" select="following-sibling::marc:subfield[@code='a'][1]"/>
                 <xsl:if test="$aField">
-                    <!-- IRI uses uwf:nomenIRI with type 'nomen' -->
-                    <xsl:variable name="nomenIRI" select="uwf:nomenIRI($baseID, ., $aField, $scheme, 'nomen')"/>
+                    <!-- IRI uses m2r:nomenIRI with type 'nomen' -->
+                    <xsl:variable name="nomenIRI" select="m2r:nomenIRI($baseID, ., $aField, $scheme, 'nomen')"/>
                     <rdaio:P40079 rdf:resource="{$nomenIRI}"/>
                 </xsl:if>
             </xsl:for-each>
             
             <!-- $d: Common or alternative name -->
             <xsl:for-each select="$context/marc:subfield[@code='d']">
-                <!-- IRI uses uwf:nomenIRI with type 'nomen' -->
-                <xsl:variable name="nomenIRI" select="uwf:nomenIRI($baseID, ., ., $scheme, 'nomen')"/>
+                <!-- IRI uses m2r:nomenIRI with type 'nomen' -->
+                <xsl:variable name="nomenIRI" select="m2r:nomenIRI($baseID, ., ., $scheme, 'nomen')"/>
                 <rdai:P40079 rdf:resource="{$nomenIRI}"/>
             </xsl:for-each>
         </rdf:Description>
@@ -405,7 +403,7 @@
         <xsl:param name="manIRI"/>
         <xsl:param name="context"/>
         
-        <xsl:variable name="itemIRI" select="uwf:itemIRI($baseID, $context)"/>
+        <xsl:variable name="itemIRI" select="m2r:itemIRI($baseID, $context)"/>
         <xsl:variable name="scheme" select="$context/marc:subfield[@code='2'][1]"/>
         
         <!-- $c + $a pairs -->
@@ -415,7 +413,7 @@
             <xsl:variable name="cat" select="."/>
             <xsl:variable name="aField" select="following-sibling::marc:subfield[@code='a'][1]"/>
             <xsl:if test="$aField">
-                <xsl:variable name="nomenIRI" select="uwf:nomenIRI($baseID, ., $aField, $scheme, 'nomen')"/>
+                <xsl:variable name="nomenIRI" select="m2r:nomenIRI($baseID, ., $aField, $scheme, 'nomen')"/>
                 <rdf:Description rdf:about="{$nomenIRI}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                     <rdand:P80068>
@@ -456,7 +454,7 @@
         <!-- mint a nomen for each $d -->
         <xsl:for-each select="$context/marc:subfield[@code='d']">
             <xsl:variable name="position" select="position()"/>
-            <xsl:variable name="nomenIRI" select="uwf:nomenIRI($baseID, ., ., $scheme, 'nomen')"/>
+            <xsl:variable name="nomenIRI" select="m2r:nomenIRI($baseID, ., ., $scheme, 'nomen')"/>
             <rdf:Description rdf:about="{$nomenIRI}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068><xsl:value-of select="."/></rdand:P80068>
@@ -487,12 +485,12 @@
         <xsl:param name="manIRI"/>
         <xsl:param name="context"/>
         
-        <xsl:variable name="itemIRI" select="uwf:itemIRI($baseID, $context)"/>
+        <xsl:variable name="itemIRI" select="m2r:itemIRI($baseID, $context)"/>
         
         <!--($x) Non-public note -->
         <!-- rdf:Description for metadata work containing non-public note -->
         <xsl:for-each select="$context/marc:subfield[@code='x']">
-            <xsl:variable name="metaIRI" select="uwf:metaWorIRI($baseID, .)"/>
+            <xsl:variable name="metaIRI" select="m2r:metaWorIRI($baseID, .)"/>
             <rdf:Description rdf:about="{$metaIRI}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
                 <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>

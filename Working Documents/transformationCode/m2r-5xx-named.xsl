@@ -2,7 +2,8 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:marc="http://www.loc.gov/MARC21/slim"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ex="http://fakeIRI.edu/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:rdaw="http://rdaregistry.info/Elements/w/"
     xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
     xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
@@ -27,11 +28,9 @@
     xmlns:rdat="http://rdaregistry.info/Elements/t/"
     xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
     xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
-    xmlns:fake="http://fakePropertiesForDemo" xmlns:uwf="http://universityOfWashington/functions"
-    exclude-result-prefixes="marc ex uwf" version="3.0">
-    <xsl:import href="m2r-functions.xsl"/>
-    <xsl:import href="m2r-iris.xsl"/>
-    <xsl:import href="m2r-00x-named.xsl"/>
+    xmlns:fake="http://fakePropertiesForDemo" 
+    xmlns:m2r="http://universityOfWashington/functions"
+    exclude-result-prefixes="marc m2r" version="3.0">
     
     <!-- 505 -->
     <xsl:template name="F505-xx-agrtu" expand-text="yes">
@@ -125,11 +124,11 @@
             </xsl:variable>
             
             <xsl:for-each select="marc:subfield[@code = 'f']">
-                <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
-                    <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '506')"/>
+                <rdf:Description rdf:about="{m2r:conceptIRI($sub2, .)}">
+                    <xsl:copy-of select="m2r:fillConcept(., $sub2, '', '506')"/>
                     <xsl:if test="$linked880">
                         <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'f']">
-                            <xsl:copy-of select="uwf:fillConcept(., '', '', '506')"/>
+                            <xsl:copy-of select="m2r:fillConcept(., '', '', '506')"/>
                         </xsl:for-each>
                     </xsl:if>
                 </rdf:Description>
@@ -321,7 +320,7 @@
                 </xsl:if>
             </xsl:for-each>
             <xsl:if test="marc:subfield[@code = '5']">
-                <xsl:text> (Applies to: {uwf:s5NameLookup(marc:subfield[@code = '5'])})</xsl:text>
+                <xsl:text> (Applies to: {m2r:s5NameLookup(marc:subfield[@code = '5'])})</xsl:text>
             </xsl:if>
         </rdamd:P30137>
     </xsl:template>
@@ -329,7 +328,7 @@
     <xsl:template name="F526-xx-x" expand-text="yes">
         <xsl:param name="baseID"/>
         <xsl:param name="manIRI"/>
-        <rdf:Description rdf:about="{uwf:metaWorIRI($baseID, .)}">
+        <rdf:Description rdf:about="{m2r:metaWorIRI($baseID, .)}">
             <!--Does not meet min description of a work; needs to be linked to a metadata exp/man-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
             <rdawd:P10002>{concat('metaWor#', $baseID, generate-id())}</rdawd:P10002>
@@ -339,7 +338,7 @@
             <rdf:object>
                 <xsl:value-of select="."/>
                 <xsl:if test="../marc:subfield[@code = '5']">
-                    <xsl:text> (Applies to: {uwf:s5NameLookup(../marc:subfield[@code = '5'])})</xsl:text>
+                    <xsl:text> (Applies to: {m2r:s5NameLookup(../marc:subfield[@code = '5'])})</xsl:text>
                 </xsl:if>
             </rdf:object>
             <rdawd:P10004>Private</rdawd:P10004>
@@ -587,11 +586,11 @@
             </xsl:variable>
             
             <xsl:for-each select="marc:subfield[@code = 'f']">
-                <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
-                    <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '540')"/>
+                <rdf:Description rdf:about="{m2r:conceptIRI($sub2, .)}">
+                    <xsl:copy-of select="m2r:fillConcept(., $sub2, '', '540')"/>
                     <xsl:if test="$linked880">
                         <xsl:for-each select="$linked880/marc:datafield/marc:subfield[position()][@code = 'f']">
-                            <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '540')"/>
+                            <xsl:copy-of select="m2r:fillConcept(., $sub2, '', '540')"/>
                         </xsl:for-each>
                     </xsl:if>
                 </rdf:Description>
@@ -640,12 +639,12 @@
     <xsl:template name="F541-0x" expand-text="yes">
         <xsl:param name="baseID"/>
         <xsl:param name="genID"/>
-        <rdf:Description rdf:about="{uwf:metaWorIRI($baseID, .)}">
+        <rdf:Description rdf:about="{m2r:metaWorIRI($baseID, .)}">
             <!--Does not meet min description of a work; needs to be linked to a metadata exp/man-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
             <rdawd:P10002>{concat('metaWor#', $baseID, generate-id())}</rdawd:P10002>
             <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
-            <rdf:subject rdf:resource="{uwf:itemIRI($baseID, .)}"/>
+            <rdf:subject rdf:resource="{m2r:itemIRI($baseID, .)}"/>
             <rdf:predicate rdf:resource="http://rdaregistry.info/Elements/i/datatype/P40050"/>
             <rdf:object>
                 <xsl:call-template name="F541-xx-abcdefhno"/>
@@ -771,7 +770,7 @@
     <xsl:template name="F542-0x" expand-text="yes">
         <xsl:param name="baseID"/>
         <xsl:param name="manIRI"/>
-        <rdf:Description rdf:about="{uwf:metaWorIRI($baseID, .)}">
+        <rdf:Description rdf:about="{m2r:metaWorIRI($baseID, .)}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
             <rdawd:P10002>{concat('metaWor#', $baseID, generate-id())}</rdawd:P10002>
             <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
@@ -968,7 +967,7 @@
     <xsl:template name="F561-0x" expand-text="yes">
         <xsl:param name="baseID"/>
         <xsl:param name="itemIRI"/>
-        <rdf:Description rdf:about="{uwf:metaWorIRI($baseID, .)}">
+        <rdf:Description rdf:about="{m2r:metaWorIRI($baseID, .)}">
             <!--Does not meet min description of a work; needs to be linked to a metadata exp/man-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
             <rdawd:P10002>{concat('metaWor#', $baseID, generate-id())}</rdawd:P10002>
@@ -1125,7 +1124,7 @@
     <xsl:template name="F583-1x-x" expand-text="yes">
         <xsl:param name="baseID"/>
         <xsl:param name="itemIRI"/>
-        <rdf:Description rdf:about="{uwf:metaWorIRI($baseID, .)}">
+        <rdf:Description rdf:about="{m2r:metaWorIRI($baseID, .)}">
             <!--Does not meet min description of a work; needs to be linked to a metadata exp/man-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
             <rdawd:P10002>{concat('metaWor#', $baseID, generate-id())}</rdawd:P10002>
@@ -1141,7 +1140,7 @@
     <xsl:template name="F583-0x" expand-text="yes">
         <xsl:param name="baseID"/>
         <xsl:param name="itemIRI"/>
-        <rdf:Description rdf:about="{uwf:metaWorIRI($baseID, .)}">
+        <rdf:Description rdf:about="{m2r:metaWorIRI($baseID, .)}">
             <!--Does not meet min description of a work; needs to be linked to a metadata exp/man-->
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
             <rdawd:P10002>{concat('metaWor#', $baseID, generate-id())}</rdawd:P10002>
@@ -1172,7 +1171,7 @@
             <xsl:text> (Applies to: {marc:subfield[@code = '3']})</xsl:text>
         </xsl:if>
         <xsl:if test="marc:subfield[@code = '5']">
-            <xsl:text> (At institution: {uwf:s5NameLookup(marc:subfield[@code = '5'])})</xsl:text>
+            <xsl:text> (At institution: {m2r:s5NameLookup(marc:subfield[@code = '5'])})</xsl:text>
         </xsl:if>
     </xsl:template>
 

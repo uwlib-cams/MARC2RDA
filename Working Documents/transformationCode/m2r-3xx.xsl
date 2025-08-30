@@ -2,7 +2,8 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:marc="http://www.loc.gov/MARC21/slim"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ex="http://fakeIRI.edu/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:rdaw="http://rdaregistry.info/Elements/w/"
     xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
     xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
@@ -27,12 +28,11 @@
     xmlns:rdat="http://rdaregistry.info/Elements/t/"
     xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
     xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
-    xmlns:fake="http://fakePropertiesForDemo" xmlns:uwf="http://universityOfWashington/functions"
-    exclude-result-prefixes="marc ex uwf" version="3.0">
+    xmlns:fake="http://fakePropertiesForDemo" 
+    xmlns:m2r="http://universityOfWashington/functions"
+    exclude-result-prefixes="marc m2r" version="3.0">
+    
     <xsl:include href="m2r-3xx-named.xsl"/>
-    <xsl:import href="getmarc.xsl"/>
-    <xsl:import href="m2r-functions.xsl"/>
-    <xsl:import href="m2r-iris.xsl"/>
 
     <xsl:template
         match="marc:datafield[@tag = '300'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '300']"
@@ -41,7 +41,7 @@
         <!--<xsl:call-template name="getmarc"/>-->
         <xsl:choose>
             <xsl:when test="$type = 'reproduction' or $type = 'origMan'">
-                <xsl:variable name="conditionMet" select="uwf:checkReproductions(..)"/>
+                <xsl:variable name="conditionMet" select="m2r:checkReproductions(..)"/>
                 <xsl:choose>
                     <xsl:when test="$conditionMet = '588'">
                         <xsl:if test="$type = 'reproduction'">
@@ -225,7 +225,7 @@
         
         <xsl:for-each select="$mappedTriple/child::*">
             <xsl:if test="$sub3 != ''">
-                <rdawd:P10330>
+                <rdamd:P30137>
                     <xsl:value-of select="concat(
                         upper-case(substring(normalize-space($sub3), 1, 1)),
                         substring(normalize-space($sub3), 2)
@@ -249,7 +249,7 @@
                             <xsl:value-of select="text()"/>
                         </xsl:otherwise>
                     </xsl:choose>
-                </rdawd:P10330>
+                </rdamd:P30137>
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
@@ -544,7 +544,7 @@
                 <xsl:when test="@code = 'd'">
                     <xsl:choose>
                         <xsl:when test="(text() = 'fine') or (text() = 'standard')">
-                            <xsl:variable name="rdaIRI" select="uwf:rdaTermLookup('rdagrp', .)"/>
+                            <xsl:variable name="rdaIRI" select="m2r:rdaTermLookup('rdagrp', .)"/>
                             <xsl:if test="$rdaIRI">
                                 <rdamo:P30307>
                                     <xsl:attribute name="rdf:resource" select="$rdaIRI"/>
@@ -560,7 +560,7 @@
                             </xsl:if>
                         </xsl:when>
                         <xsl:when test="(text() = 'coarse groove') or (text() = 'microgroove')">
-                            <xsl:variable name="rdaIRI" select="uwf:rdaTermLookup('rdagw', .)"/>
+                            <xsl:variable name="rdaIRI" select="m2r:rdaTermLookup('rdagw', .)"/>
                             <xsl:if test="$rdaIRI">
                                 <rdamo:P30308>
                                     <xsl:attribute name="rdf:resource" select="$rdaIRI"/>
@@ -739,17 +739,17 @@
                 <xsl:choose>
                     <xsl:when test="@code = 'a'">
                         <xsl:text>Direct reference method: </xsl:text>
-                        <xsl:value-of select="uwf:stripAllPunctuation(string(.))"/>
+                        <xsl:value-of select="m2r:stripAllPunctuation(string(.))"/>
                         <xsl:text>.</xsl:text>
                     </xsl:when>
                     <xsl:when test="@code = 'b'">
                         <xsl:text>Object type: </xsl:text>
-                        <xsl:value-of select="uwf:stripEndPunctuation(string(.))"/>
+                        <xsl:value-of select="m2r:stripEndPunctuation(string(.))"/>
                         <xsl:text>.</xsl:text>
                     </xsl:when>
                     <xsl:when test="@code = 'c'">
                         <xsl:text>Object count: </xsl:text>
-                        <xsl:value-of select="uwf:stripAllPunctuation(string(.))"/>
+                        <xsl:value-of select="m2r:stripAllPunctuation(string(.))"/>
                         <xsl:text>.</xsl:text>
                     </xsl:when>
                 </xsl:choose>
@@ -771,18 +771,18 @@
                             <xsl:text>Row count: </xsl:text>
                             <!-- Apply stripAllPunctuation first, then remove 'x' and 'X' -->
                             <xsl:variable name="d_stripped"
-                                select="uwf:stripAllPunctuation(string(.))"/>
+                                select="m2r:stripAllPunctuation(string(.))"/>
                             <xsl:value-of select="translate($d_stripped, 'xX', '')"/>
                             <xsl:text>.</xsl:text>
                         </xsl:when>
                         <xsl:when test="@code = 'e'">
                             <xsl:text>Column count: </xsl:text>
-                            <xsl:value-of select="uwf:stripAllPunctuation(string(.))"/>
+                            <xsl:value-of select="m2r:stripAllPunctuation(string(.))"/>
                             <xsl:text>.</xsl:text>
                         </xsl:when>
                         <xsl:when test="@code = 'f'">
                             <xsl:text>Vertical count: </xsl:text>
-                            <xsl:value-of select="uwf:stripAllPunctuation(string(.))"/>
+                            <xsl:value-of select="m2r:stripAllPunctuation(string(.))"/>
                             <xsl:text>.</xsl:text>
                         </xsl:when>
                     </xsl:choose>
@@ -925,12 +925,12 @@
             <xsl:for-each
                 select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b'] | marc:subfield[@code = 'd'] | marc:subfield[@code = 'p']">
                 <xsl:variable name="code" select="@code"/>
-                <rdf:Description rdf:about="{uwf:conceptIRI($sub2, .)}">
-                    <xsl:copy-of select="uwf:fillConcept(., $sub2, '', '382')"/>
+                <rdf:Description rdf:about="{m2r:conceptIRI($sub2, .)}">
+                    <xsl:copy-of select="m2r:fillConcept(., $sub2, '', '382')"/>
                     <xsl:if test="$linked880">
                         <xsl:for-each
                             select="$linked880/marc:datafield/marc:subfield[position()][@code = $code]">
-                            <xsl:copy-of select="uwf:fillConcept(., '', '', '880')"/>
+                            <xsl:copy-of select="m2r:fillConcept(., '', '', '880')"/>
                         </xsl:for-each>
                     </xsl:if>
                 </rdf:Description>
@@ -962,7 +962,7 @@
                 <xsl:choose>
                     <xsl:when test="following-sibling::marc:subfield[@code = '2']">
                         <xsl:variable name="source" select="following-sibling::marc:subfield[@code = '2'][1]"/>
-                        <rdawo:P10335 rdf:resource="{uwf:nomenIRI($baseID, ., ., $source, 'work')}"/>
+                        <rdawo:P10335 rdf:resource="{m2r:nomenIRI($baseID, ., ., $source, 'work')}"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <rdawd:P10335>
@@ -1008,7 +1008,7 @@
                 <xsl:choose>
                     <xsl:when test="following-sibling::marc:subfield[@code = '2']">
                         <xsl:variable name="source" select="following-sibling::marc:subfield[@code = '2'][1]"/>
-                        <rdaeo:P20002 rdf:resource="{uwf:nomenIRI($baseID, ., ., $source, 'expression')}"/>
+                        <rdaeo:P20002 rdf:resource="{m2r:nomenIRI($baseID, ., ., $source, 'expression')}"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <rdaed:P10335>
@@ -1039,7 +1039,7 @@
             <xsl:for-each select="marc:subfield[@code = 'd']">
                 <xsl:if test="following-sibling::marc:subfield[@code = '2']">
                     <xsl:variable name="source" select="following-sibling::marc:subfield[@code = '2'][1]"/>
-                    <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., ., $source, 'work')}">
+                    <rdf:Description rdf:about="{m2r:nomenIRI($baseID, ., ., $source, 'work')}">
                         <xsl:call-template name="F383-nom"/>
                     </rdf:Description>
                 </xsl:if>
@@ -1049,7 +1049,7 @@
             <xsl:for-each select="marc:subfield[@code = 'd']">
                 <xsl:if test="following-sibling::marc:subfield[@code = '2']">
                     <xsl:variable name="source" select="following-sibling::marc:subfield[@code = '2'][1]"/>
-                    <rdf:Description rdf:about="{uwf:nomenIRI($baseID, ., ., $source, 'expression')}">
+                    <rdf:Description rdf:about="{m2r:nomenIRI($baseID, ., ., $source, 'expression')}">
                         <xsl:call-template name="F383-nom"/>
                     </rdf:Description>
                 </xsl:if>
@@ -1133,7 +1133,7 @@
         <xsl:param name="baseID"/>
         <!--<xsl:call-template name="getmarc"/>-->  
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdawo:P10317 rdf:resource="{uwf:timespanIRI($baseID, .., .)}"/>         
+            <rdawo:P10317 rdf:resource="{m2r:timespanIRI($baseID, .., .)}"/>         
         </xsl:for-each> 
         <xsl:for-each select="marc:subfield[@code = '0']">
             <xsl:if test="starts-with(., 'http://')">
@@ -1156,16 +1156,16 @@
     <xsl:template match="marc:datafield[@tag = '388'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '388']" mode="tim">
         <xsl:param name="baseID"/>
         <!--create variables to test whether s2Nomen output includes IRI and has scheme-->
-        <xsl:variable name="testScheme" select="uwf:s2Nomen(marc:subfield[@code = '2'])"/>
+        <xsl:variable name="testScheme" select="m2r:s2Nomen(marc:subfield[@code = '2'])"/>
         <xsl:variable name="schemeElement" select="$testScheme[self::rdan:P80069 or self::rdand:P80069]"/>
         <!--<xsl:call-template name="getmarc"/>--> 
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdf:Description rdf:about="{uwf:timespanIRI($baseID, .., .)}">
+            <rdf:Description rdf:about="{m2r:timespanIRI($baseID, .., .)}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
                     <xsl:choose>
                     <!--only mint nomenIRI when $2 has a scheme-->
                         <xsl:when test="$schemeElement/@rdf:resource">
-                            <rdato:P70009 rdf:resource="{uwf:nomenIRI($baseID, .., ., marc:subfield[@code = '2'], 'timespan')}"/>
+                            <rdato:P70009 rdf:resource="{m2r:nomenIRI($baseID, .., ., marc:subfield[@code = '2'], 'timespan')}"/>
                         </xsl:when>
                             <!--otherwise use string value of $a-->
                         <xsl:otherwise>
@@ -1187,11 +1187,11 @@
     
     <xsl:template match="marc:datafield[@tag = '388'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '388']" mode="nom">
         <xsl:param name="baseID"/>
-        <xsl:variable name="testScheme" select="uwf:s2Nomen(marc:subfield[@code = '2'])"/>
+        <xsl:variable name="testScheme" select="m2r:s2Nomen(marc:subfield[@code = '2'])"/>
         <xsl:variable name="schemeElement" select="$testScheme[self::rdan:P80069 or self::rdand:P80069]"/>
         <!--<xsl:call-template name="getmarc"/>-->   
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdf:Description rdf:about="{uwf:nomenIRI($baseID, .., ., marc:subfield[@code = '2'], 'timespan')}">       
+            <rdf:Description rdf:about="{m2r:nomenIRI($baseID, .., ., marc:subfield[@code = '2'], 'timespan')}">       
                 <rdano:P80068>
                     <xsl:value-of select="."/>
                 </rdano:P80068>

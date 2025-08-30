@@ -2,7 +2,8 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:marc="http://www.loc.gov/MARC21/slim"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ex="http://fakeIRI.edu/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:rdaw="http://rdaregistry.info/Elements/w/"
     xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
     xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
@@ -27,16 +28,15 @@
     xmlns:rdat="http://rdaregistry.info/Elements/t/"
     xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
     xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
-    xmlns:fake="http://fakePropertiesForDemo" xmlns:uwf="http://universityOfWashington/functions"
-    exclude-result-prefixes="marc ex uwf" version="3.0">
+    xmlns:fake="http://fakePropertiesForDemo" 
+    xmlns:m2r="http://universityOfWashington/functions"
+    exclude-result-prefixes="marc m2r" version="3.0">
+    
     <xsl:include href="m2r-4xx-named.xsl"/>
-    <xsl:import href="getmarc.xsl"/>
-    <xsl:import href="m2r-iris.xsl"/>
-    <xsl:import href="m2r-aps.xsl"/>
     
     <xsl:template match="marc:datafield[@tag = '440'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '440-00']"
         mode="wor">
-        <rdawo:P10102 rdf:resource="{uwf:relWorkIRI($BASE, .)}"/>
+        <rdawo:P10102 rdf:resource="{m2r:relWorkIRI($BASE, .)}"/>
     </xsl:template>
     
     <xsl:template match="marc:datafield[@tag = '440'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '440']"
@@ -49,18 +49,18 @@
     
     <xsl:template match="marc:datafield[@tag = '440'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '440-00']"
         mode="relWor">
-       <rdf:Description rdf:about="{uwf:relWorkIRI($BASE, .)}">
+       <rdf:Description rdf:about="{m2r:relWorkIRI($BASE, .)}">
            <!--<xsl:call-template name="getmarc"/>-->
            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
            <rdawd:P10328>
-               <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
+               <xsl:value-of select="m2r:relWorkAccessPoint(.)"/>
            </rdawd:P10328>
            <xsl:if test="@tag = '440' and marc:subfield[@code = '6']">
                <xsl:variable name="occNum" select="concat('440-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                <xsl:for-each
                    select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
                    <rdawd:P10328>
-                       <xsl:value-of select="uwf:relWorkAccessPoint(.)"/>
+                       <xsl:value-of select="m2r:relWorkAccessPoint(.)"/>
                    </rdawd:P10328>
                    <!-- title -->
                    <xsl:call-template name="FX30-xx-anp"/>
