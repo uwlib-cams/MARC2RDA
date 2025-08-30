@@ -49,8 +49,6 @@
     <xsl:key name="lookupMU006c13orc14" match="entry" use="marcMU006c13orc14"/>
     <xsl:key name="lookupMU006c13c14" match="entry" use="marcMU006c13c14"/>
     
-    <xsl:key name="lookupTactile" match="entry" use="rdaIRI"/>
-    
     <xsl:template name="otherFieldsTo33x">
         
         <xsl:param name="record"/>
@@ -1005,13 +1003,38 @@
         </xsl:choose>
     </xsl:template>
     
-    <!--<xsl:template match="marc:datafield[@tag = '245']">
+    <xsl:template match="marc:datafield[@tag = '245']">
         <xsl:for-each select="marc:subfield[@code = 'h']">
-            <xsl:variable name="lookup245h">
-                <xsl:copy-of select="document('lookup/LookupContentType.xml')/entry["></xsl:copy-of>
+            <xsl:variable name="h" select="."/>
+            <xsl:variable name="lookup245h-content">
+                <xsl:copy-of select="document('lookup/LookupContentType.xml')//entry[marc245h][matches($h, marc245h)]/rdaIRI"/>  
             </xsl:variable>
+            <xsl:for-each select="$lookup245h-content/rdaIRI">
+                <marc:datafield tag="336" ind1=" " ind2=" ">
+                    <marc:subfield code="1">
+                        <xsl:value-of select="."/>
+                    </marc:subfield>
+                    <marc:subfield code="7">
+                        <xsl:text>(dpesc/dpsf1)245h</xsl:text>
+                    </marc:subfield>
+                </marc:datafield>
+            </xsl:for-each>
+            
+            <xsl:variable name="lookup245h-carrier">
+                <xsl:copy-of select="document('lookup/LookupCarrierType.xml')//entry[marc245h][matches($h, marc245h)]/rdaIRI"/>  
+            </xsl:variable>
+            <xsl:for-each select="$lookup245h-carrier/rdaIRI">
+                <marc:datafield tag="338" ind1=" " ind2=" ">
+                    <marc:subfield code="1">
+                        <xsl:value-of select="."/>
+                    </marc:subfield>
+                    <marc:subfield code="7">
+                        <xsl:text>(dpesc/dpsf1)245h</xsl:text>
+                    </marc:subfield>
+                </marc:datafield>
+            </xsl:for-each>
         </xsl:for-each>
-    </xsl:template>-->
+    </xsl:template>
     
     <xsl:function name="m2r:isTactile">
         <xsl:param name="record"/>
