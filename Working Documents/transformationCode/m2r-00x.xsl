@@ -333,7 +333,7 @@
         <!--character position 07-->
         <xsl:call-template name="F007-c07"/>
         <!--character position 08-->
-        <!--<xsl:call-template name="F007-c08"/>-->
+        <xsl:call-template name="F007-c08"/>
         <!--character position 06-08-->
         <xsl:if test="$char00 = 'c' and $char06-08 = 'mmm'">
             <rdamd:P30159>
@@ -354,16 +354,16 @@
                 <xsl:value-of select="$char06-08"/>
             </rdamo:P30198>
         </xsl:if>
-       <!-- <!-\-character position 09-\->
+       <!--character position 09-->
         <xsl:call-template name="F007-c09"/>
-        <!-\-character position 10-\->
+        <!--character position 10-->
         <xsl:call-template name="F007-c10"/>
-        <!-\-character position 11-\->
+        <!--character position 11-->
         <xsl:call-template name="F007-c11"/>
-        <!-\-character position 12-\->
+        <!--character position 12-->
         <xsl:call-template name="F007-c12"/>
-        <!-\-character position 13-\->
-        <xsl:call-template name="F007-c13"/>-->
+        <!--character position 13-->
+        <xsl:call-template name="F007-c13"/>
         <!--character position 14-->
         <xsl:if test="$char00 = 'm' and ($char14= 'a' or $char14 = 'b' or $char14= 'c' or $char14 = 'd')">
             <rdamo:P30187 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.6h5g-mr73#', $char14)}"/>
