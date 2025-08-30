@@ -47,7 +47,7 @@
     
     <xsl:import href="m2r-functions.xsl"/>
     <xsl:import href="m2r-aps.xsl"/>
-    <xsl:import href="m2r-otherFieldsTo33x-transform.xsl"/>
+    <xsl:import href="m2r-processCMC.xsl"/>
     
     <!-- base IRI for now - all minted entities begin with this -->
     <xsl:param name="BASE" select="'http://marc2rda.edu/fake/'"/>
@@ -110,6 +110,9 @@
     </xsl:template>
  
     <xsl:template match="marc:record" expand-text="yes">
+        <xsl:variable name="isTactile" select="uwf:isTactile(.)"/>
+        <xsl:choose>
+        <xsl:when test="$isTactile = 'False'">
         <xsl:variable name="processedRecord">
             <xsl:call-template name="otherFieldsTo33x">
                 <xsl:with-param name="record">
@@ -483,6 +486,13 @@
                  </xsl:otherwise>
              </xsl:choose>
         </xsl:for-each>
+        </xsl:when>
+            <xsl:otherwise>
+                <xsl:message>
+                    <xsl:text>Record {translate(marc:controlfield[@tag='001'], ' ', '')} ({position()}/{last()}) identified as Tactile and was not processed.</xsl:text>
+                </xsl:message>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
 <!-- METADATA WORK TEMPLATE -->

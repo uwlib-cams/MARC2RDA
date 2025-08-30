@@ -47,6 +47,8 @@
     <xsl:key name="lookupMU006c13orc14" match="uwmisc:entry" use="uwmisc:marcMU006c13orc14"/>
     <xsl:key name="lookupMU006c13c14" match="uwmisc:entry" use="uwmisc:marcMU006c13c14"/>
     
+    <xsl:key name="lookupTactile" match="entry" use="rdaIRI"/>
+    
     <xsl:template name="otherFieldsTo33x">
         
         <xsl:param name="record"/>
@@ -58,6 +60,7 @@
                 <xsl:apply-templates select="marc:controlfield[@tag = '007']"/>
                 <xsl:apply-templates select="marc:controlfield[@tag = '008']"/>
                 <xsl:apply-templates select="marc:controlfield[@tag = '006']"/>
+                <xsl:apply-templates select="marc:datafield[@tag = '245']"/>
             </xsl:copy>
         </xsl:for-each>
         
@@ -77,6 +80,9 @@
                 <marc:subfield code="1">
                     <xsl:value-of select="."/>
                 </marc:subfield>
+                <marc:subfield code="7">
+                    <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                </marc:subfield>
             </marc:datafield>
         </xsl:for-each>
         
@@ -84,6 +90,9 @@
             <marc:datafield tag="338" ind1=" " ind2=" ">
                 <marc:subfield code="1">
                     <xsl:value-of select="."/>
+                </marc:subfield>
+                <marc:subfield code="7">
+                    <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
                 </marc:subfield>
             </marc:datafield>
         </xsl:for-each>
@@ -114,6 +123,9 @@
                 <marc:subfield code="1">
                     <xsl:value-of select="."/>
                 </marc:subfield>
+                <marc:subfield code="7">
+                    <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                </marc:subfield>
             </marc:datafield>
         </xsl:for-each>
         
@@ -121,6 +133,9 @@
             <marc:datafield tag="336" ind1=" " ind2=" ">
                 <marc:subfield code="1">
                     <xsl:value-of select="."/>
+                </marc:subfield>
+                <marc:subfield code="7">
+                    <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
                 </marc:subfield>
             </marc:datafield>
         </xsl:for-each>
@@ -130,6 +145,9 @@
                 <marc:subfield code="1">
                     <xsl:value-of select="."/>
                 </marc:subfield>
+                <marc:subfield code="7">
+                    <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                </marc:subfield>
             </marc:datafield>
         </xsl:for-each>
         
@@ -137,6 +155,9 @@
             <marc:datafield tag="338" ind1=" " ind2=" ">
                 <marc:subfield code="1">
                     <xsl:value-of select="."/>
+                </marc:subfield>
+                <marc:subfield code="7">
+                    <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
                 </marc:subfield>
             </marc:datafield>
         </xsl:for-each>
@@ -161,6 +182,9 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
                 
@@ -181,6 +205,9 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
                 
@@ -191,6 +218,9 @@
                     <marc:datafield tag="338" ind1=" " ind2=" ">
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
+                        </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
                         </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
@@ -203,6 +233,9 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
                 
@@ -213,6 +246,9 @@
                     <marc:datafield tag="338" ind1=" " ind2=" ">
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
+                        </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
                         </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
@@ -225,6 +261,9 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
                 
@@ -235,6 +274,9 @@
                     <marc:datafield tag="338" ind1=" " ind2=" ">
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
+                        </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
                         </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
@@ -247,6 +289,9 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
                 
@@ -257,6 +302,9 @@
                     <marc:datafield tag="338" ind1=" " ind2=" ">
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
+                        </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
                         </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
@@ -276,6 +324,9 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
                 
@@ -286,6 +337,9 @@
                     <marc:datafield tag="338" ind1=" " ind2=" ">
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
+                        </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
                         </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
@@ -298,6 +352,9 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
                 
@@ -308,6 +365,9 @@
                     <marc:datafield tag="338" ind1=" " ind2=" ">
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
+                        </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
                         </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
@@ -326,6 +386,9 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
                 
@@ -336,6 +399,9 @@
                     <marc:datafield tag="338" ind1=" " ind2=" ">
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
+                        </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
                         </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
@@ -366,6 +432,9 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
                 
@@ -376,6 +445,9 @@
                     <marc:datafield tag="336" ind1=" " ind2=" ">
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
+                        </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
                         </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
@@ -393,6 +465,9 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
                 
@@ -403,6 +478,9 @@
                     <marc:datafield tag="338" ind1=" " ind2=" ">
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
+                        </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
                         </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
@@ -424,6 +502,9 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
                 
@@ -434,6 +515,9 @@
                     <marc:datafield tag="338" ind1=" " ind2=" ">
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
+                        </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
                         </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
@@ -446,6 +530,9 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
                 
@@ -457,6 +544,9 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
                 
@@ -467,6 +557,9 @@
                     <marc:datafield tag="336" ind1=" " ind2=" ">
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
+                        </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
                         </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
@@ -491,6 +584,9 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
                 
@@ -510,6 +606,9 @@
                     <marc:datafield tag="336" ind1=" " ind2=" ">
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
+                        </marc:subfield>]
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
                         </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
@@ -522,6 +621,9 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
                 
@@ -532,6 +634,9 @@
                     <marc:datafield tag="336" ind1=" " ind2=" ">
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
+                        </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
                         </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
@@ -544,6 +649,9 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
                 
@@ -554,6 +662,9 @@
                     <marc:datafield tag="336" ind1=" " ind2=" ">
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
+                        </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
                         </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
@@ -577,6 +688,9 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
                 
@@ -587,6 +701,9 @@
                     <marc:datafield tag="338" ind1=" " ind2=" ">
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
+                        </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
                         </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
@@ -605,6 +722,9 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
                 
@@ -615,6 +735,9 @@
                     <marc:datafield tag="338" ind1=" " ind2=" ">
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
+                        </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
                         </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
@@ -627,6 +750,9 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
                 
@@ -637,6 +763,9 @@
                     <marc:datafield tag="338" ind1=" " ind2=" ">
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
+                        </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
                         </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
@@ -655,6 +784,9 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
                 
@@ -665,6 +797,9 @@
                     <marc:datafield tag="338" ind1=" " ind2=" ">
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
+                        </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
                         </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
@@ -684,6 +819,9 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
                 
@@ -695,6 +833,9 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
                 
@@ -705,6 +846,9 @@
                     <marc:datafield tag="336" ind1=" " ind2=" ">
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
+                        </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
                         </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
@@ -722,6 +866,9 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
                 
@@ -732,6 +879,9 @@
                     <marc:datafield tag="338" ind1=" " ind2=" ">
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
+                        </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
                         </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
@@ -752,6 +902,9 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
                 
@@ -762,6 +915,9 @@
                     <marc:datafield tag="338" ind1=" " ind2=" ">
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
+                        </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
                         </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
@@ -785,6 +941,9 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
                 
@@ -796,15 +955,104 @@
                         <marc:subfield code="1">
                             <xsl:value-of select="."/>
                         </marc:subfield>
+                        <marc:subfield code="7">
+                            <xsl:text>(dpesc/dpsf1)MARC</xsl:text>
+                        </marc:subfield>
                     </marc:datafield>
                 </xsl:for-each>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
     
-<!--    <xsl:function name="uwf:getRecordType">
+    <!--<xsl:template match="marc:datafield[@tag = '245']">
+        <xsl:for-each select="marc:subfield[@code = 'h']">
+            <xsl:variable name="lookup245h">
+                <xsl:copy-of select="document('lookup/Lookup336.xml')/uwmisc:entry["></xsl:copy-of>
+            </xsl:variable>
+        </xsl:for-each>
+    </xsl:template>-->
+    
+    <xsl:function name="uwf:isTactile">
         <xsl:param name="record"/>
-        <xsl:if test=""></xsl:if>
-    </xsl:function>-->
+        <xsl:variable name="ldr6-7" select="substring($record/marc:leader, 7, 2)"/>
+        <xsl:choose>
+            <xsl:when test="substring($record/marc:controlfield[@tag='007'], 1, 1) = 'f'">
+                <xsl:value-of select="'True'"/>
+            </xsl:when>
+            <!-- book -->
+            <xsl:when test="($ldr6-7 = 'aa' or $ldr6-7 = 'ac' or $ldr6-7 = 'ad' or $ldr6-7 = 'am'
+                or $ldr6-7 = 'ca' or $ldr6-7 = 'cc' or $ldr6-7 = 'cd' or $ldr6-7 = 'cm')
+                and substring($record/marc:controlfield[@tag='008'], 24, 1) = 'f'">
+                <xsl:value-of select="'True'"/>
+            </xsl:when>
+            <!-- maps -->
+            <xsl:when test="(substring($ldr6-7, 1, 1) = 'e' or substring($ldr6-7, 1, 1) = 'f')
+                and substring($record/marc:controlfield[@tag='008'], 30, 1) = 'f'">
+                <xsl:value-of select="'True'"/>
+            </xsl:when>
+            <!-- mixed materials -->
+            <xsl:when test="substring($ldr6-7, 1, 1) = 'p'
+                and substring($record/marc:controlfield[@tag='008'], 24, 1) = 'f'">
+                <xsl:value-of select="'True'"/>
+            </xsl:when>
+            <!-- music-->
+            <xsl:when test="(substring($ldr6-7, 1, 1) = 'i' or substring($ldr6-7, 1, 1) = 'j'
+                or substring($ldr6-7, 1, 1) = 'c' or substring($ldr6-7, 1, 1) = 'd')
+                and substring($record/marc:controlfield[@tag='008'], 24, 1) = 'f'">
+                <xsl:value-of select="'True'"/>
+            </xsl:when>
+            
+            <!-- continuing resources -->
+            <xsl:when test="$ldr6-7 = 'ab' or $ldr6-7 = 'ai' or $ldr6-7 = 'as'
+                and substring($record/marc:controlfield[@tag='008'], 24, 1) = 'f'">
+                <xsl:value-of select="'True'"/>
+            </xsl:when>
+            
+            <!-- visual materials -->
+            <xsl:when test="(substring($ldr6-7, 1, 1) = 'g' or substring($ldr6-7, 1, 1) = 'k'
+                or substring($ldr6-7, 1, 1) = 'o' or substring($ldr6-7, 1, 1) = 'r')
+                and substring($record/marc:controlfield[@tag='008'], 30, 1) = 'f'">
+                <xsl:value-of select="'True'"/>
+            </xsl:when>
+            <!-- 245 $h -->
+            <xsl:when test="some $h in ($record/marc:datafield[@tag='245']/marc:subfield[@code = 'h'])
+                satisfies matches(lower-case($h), 'tactile|braille')">
+                <xsl:value-of select="'True'"/>
+            </xsl:when>
+            <!-- 250 -->
+            <xsl:when test="some $subfield in ($record/marc:datafield[@tag='250']/marc:subfield)
+                satisfies matches(lower-case($subfield), 'tactile|braille')">
+                <xsl:value-of select="'True'"/>
+            </xsl:when>
+            <!-- 300 -->
+            <xsl:when test="some $subfield in ($record/marc:datafield[@tag='300']/marc:subfield[@code = 'a' or @code = 'e'])
+                satisfies matches(lower-case($subfield), 'tactile|braille')">
+                <xsl:value-of select="'True'"/>
+            </xsl:when>
+            <!-- 546 $b -->
+            <xsl:when test="some $b in ($record/marc:datafield[@tag='546']/marc:subfield[@code = 'b'])
+                satisfies matches(lower-case($b), 'tactile|braille')">
+                <xsl:value-of select="'True'"/>
+            </xsl:when>
+            <!-- 655 $a -->
+            <xsl:when test="some $a in ($record/marc:datafield[@tag='655']/marc:subfield[@code = 'a'])
+                satisfies matches(lower-case($a), 'braille')">
+                <xsl:value-of select="'True'"/>
+            </xsl:when>
+            <!-- 65X $v -->
+            <xsl:when test="some $v in ($record/marc:datafield[starts-with(@tag, '65')]/marc:subfield[@code = 'v'])
+                satisfies matches(lower-case($v), 'maps for the blind')">
+                <xsl:value-of select="'True'"/>
+            </xsl:when>
+            <!-- 775 $i -->
+            <xsl:when test="some $i in ($record/marc:datafield[@tag = '775']/marc:subfield[@code = 'i'])
+                satisfies matches(lower-case($i), 'braille edition of')">
+                <xsl:value-of select="'True'"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="'False'"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
     
 </xsl:stylesheet>
