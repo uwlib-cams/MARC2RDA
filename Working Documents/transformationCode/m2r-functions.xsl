@@ -558,7 +558,7 @@
         <xsl:choose>
             <xsl:when test="document('lookup/rda/RDAContentType.xml')/rdf:RDF/skos:Concept/key('rdaIRI', $givenIRI)">
                 <rdaeo:P20001 rdf:resource="{$givenIRI}"/>
-                <rdaeo:P10349 rdf:resource="{$givenIRI}"/>
+                <rdawo:P10349 rdf:resource="{$givenIRI}"/>
             </xsl:when>
             <xsl:when test="document('lookup/rda/RDAMediaType.xml')/rdf:RDF/skos:Concept/key('rdaIRI', $givenIRI)">
                 <rdamo:P30002 rdf:resource="{$givenIRI}"/>
@@ -574,7 +574,7 @@
         <xsl:choose>
             <xsl:when test="document('lookup/LookupContentType.xml')/lookupTable/entry/key('lcIRI', $givenIRI)">
                 <rdaeo:P20001 rdf:resource="{document('lookup/LookupContentType.xml')/lookupTable/entry/key('lcIRI', $givenIRI)/rdaIRI}"/>
-                <rdaeo:P10349 rdf:resource="{document('lookup/LookupContentType.xml')/lookupTable/entry/key('lcIRI', $givenIRI)/rdaIRI}"/>
+                <rdawo:P10349 rdf:resource="{document('lookup/LookupContentType.xml')/lookupTable/entry/key('lcIRI', $givenIRI)/rdaIRI}"/>
             </xsl:when>
             <xsl:when test="document('lookup/LookupMediaType.xml')/lookupTable/entry/key('lcIRI', $givenIRI)">
                 <rdamo:P30002 rdf:resource="{document('lookup/LookupMediaType.xml')/lookupTable/entry/key('lcIRI', $givenIRI)/rdaIRI}"/>
