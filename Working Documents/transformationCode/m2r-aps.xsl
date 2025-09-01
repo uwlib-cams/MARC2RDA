@@ -105,6 +105,7 @@
         and m2r:rdaGetTerm338() from m2r-functions -->
     <xsl:function name="m2r:carrierType">
         <xsl:param name="record"/>
+        <xsl:variable name="isMicroform" select="m2r:isMicroform($record)"/>
         <xsl:variable name="termNodes">
             <terms>
                 <xsl:choose>
@@ -131,13 +132,34 @@
             </terms>
         </xsl:variable>
         <xsl:variable name="sortedTerms">
-            <xsl:for-each-group select="$termNodes/terms/term" group-by="text()">
-                <xsl:sort select="text()"/>
-                <xsl:value-of select="upper-case(substring(current-grouping-key(), 1, 1))||substring(current-grouping-key(), 2)"/>
-                <xsl:if test="position() != last()">
-                    <xsl:text> : </xsl:text>
-                </xsl:if>
-            </xsl:for-each-group>
+            <xsl:choose>
+                <xsl:when test="$isMicroform = 'True'">
+                    <xsl:choose>
+                        <xsl:when test="$termNodes/terms/term[matches(., 'micro') and not(matches(., 'microscope'))]">
+                            <xsl:for-each-group select="$termNodes/terms/term[matches(., 'micro') and not(matches(., 'microscope'))]" 
+                                group-by="text()">
+                                <xsl:sort select="text()"/>
+                                <xsl:value-of select="upper-case(substring(current-grouping-key(), 1, 1))||substring(current-grouping-key(), 2)"/>
+                                <xsl:if test="position() != last()">
+                                    <xsl:text> : </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each-group>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="'Microform'"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:for-each-group select="$termNodes/terms/term" group-by="text()">
+                        <xsl:sort select="text()"/>
+                        <xsl:value-of select="upper-case(substring(current-grouping-key(), 1, 1))||substring(current-grouping-key(), 2)"/>
+                        <xsl:if test="position() != last()">
+                            <xsl:text> : </xsl:text>
+                        </xsl:if>
+                    </xsl:for-each-group>
+                </xsl:otherwise>
+            </xsl:choose>
         </xsl:variable>
         <xsl:value-of select="$sortedTerms"/>
     </xsl:function>

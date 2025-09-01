@@ -1095,7 +1095,8 @@
             
             <!-- 008 -->
             <xsl:when test="substring($ldr6-7, 1, 1) = 'p'
-                and substring($record/marc:controlfield[@tag='008'], 24, 1) = 'f'">
+                and (some $f008 in $record/marc:controlfield[@tag='008']
+                satisfies substring($f008, 24, 1) = 'f')">
                 <xsl:value-of select="'True'"/>
             </xsl:when>
             <!-- 006 -->
@@ -1181,6 +1182,97 @@
                 satisfies matches(lower-case($i), 'braille edition of')">
                 <xsl:value-of select="'True'"/>
             </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="'False'"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
+    
+    <xsl:function name="m2r:isMicroform">
+        <xsl:param name="record"/>
+        <xsl:variable name="ldr6-7" select="substring($record/marc:leader, 7, 2)"/>
+        <xsl:choose>
+            <!-- book -->
+            <!-- 008 -->
+            <xsl:when test="($ldr6-7 = 'aa' or $ldr6-7 = 'ac' or $ldr6-7 = 'ad' or $ldr6-7 = 'am'
+                or $ldr6-7 = 'ca' or $ldr6-7 = 'cc' or $ldr6-7 = 'cd' or $ldr6-7 = 'cm')
+                and (some $f008 in $record/marc:controlfield[@tag='008']
+                satisfies matches(substring($f008, 24, 1), 'a|b|c'))">
+                <xsl:value-of select="'True'"/>
+            </xsl:when>
+            
+            <!-- continuing resources -->
+            <!-- 008 -->
+            <xsl:when test="$ldr6-7 = 'ab' or $ldr6-7 = 'ai' or $ldr6-7 = 'as'
+                and (some $f008 in $record/marc:controlfield[@tag='008']
+                satisfies matches(substring($f008, 24, 1), 'a|b|c|'))">
+                <xsl:value-of select="'True'"/>
+            </xsl:when>
+            
+            <!-- maps -->
+            <!-- 008 -->
+            <xsl:when test="(substring($ldr6-7, 1, 1) = 'e' or substring($ldr6-7, 1, 1) = 'f')
+                and (some $f008 in $record/marc:controlfield[@tag='008']
+                satisfies matches(substring($f008, 30, 1), 'a|b|c'))">
+                <xsl:value-of select="'True'"/>
+            </xsl:when>
+            
+            <!-- mixed materials -->
+            <!-- 008 -->
+            <xsl:when test="substring($ldr6-7, 1, 1) = 'p'
+                and (some $f008 in $record/marc:controlfield[@tag='008']
+                satisfies matches(substring($f008, 24, 1), 'a|b|c'))">
+                <xsl:value-of select="'True'"/>
+            </xsl:when>
+            
+            <!-- music-->
+            <!-- 008 -->
+            <xsl:when test="(substring($ldr6-7, 1, 1) = 'i' or substring($ldr6-7, 1, 1) = 'j'
+                or substring($ldr6-7, 1, 1) = 'c' or substring($ldr6-7, 1, 1) = 'd')
+                and (some $f008 in $record/marc:controlfield[@tag='008']
+                satisfies matches(substring($f008, 24, 1), 'a|b|c'))">
+                <xsl:value-of select="'True'"/>
+            </xsl:when>
+            
+            <!-- visual materials -->
+            <!-- 008 -->
+            <xsl:when test="(substring($ldr6-7, 1, 1) = 'g' or substring($ldr6-7, 1, 1) = 'k'
+                or substring($ldr6-7, 1, 1) = 'o' or substring($ldr6-7, 1, 1) = 'r')
+                and (some $f008 in $record/marc:controlfield[@tag='008']
+                satisfies matches(substring($f008, 30, 1), 'a|b|c'))">
+                <xsl:value-of select="'True'"/>
+            </xsl:when>
+         
+            <!-- 007 -->
+            <xsl:when test="some $f007 in $record/marc:controlfield[@tag='007']
+                satisfies substring($f007, 1, 1) = 'h'">
+                <xsl:value-of select="'True'"/>
+            </xsl:when>
+            
+            <!-- 245 $h -->
+            <xsl:when test="some $h in ($record/marc:datafield[@tag='245']/marc:subfield[@code = 'h'])
+                satisfies (matches(lower-case($h), 'micro') and not(matches(lower-case($h), 'microscope')))">
+                <xsl:value-of select="'True'"/>
+            </xsl:when>
+            
+            <!-- 300 $a -->
+            <xsl:when test="some $a in ($record/marc:datafield[@tag='300']/marc:subfield[@code = 'a'])
+                satisfies (matches(lower-case($a), 'micro') and not(matches(lower-case($a), 'microscope')))">
+                <xsl:value-of select="'True'"/>
+            </xsl:when>
+            
+            <!-- 533 -->
+            <xsl:when test="some $subfield in ($record/marc:datafield[@tag='533']/marc:subfield[@code = 'a' or @code = 'i'])
+                satisfies (matches(lower-case($subfield), 'microfiche|microfilm|microopaque'))">
+                <xsl:value-of select="'True'"/>
+            </xsl:when>
+            
+            <!-- 583 -->
+            <xsl:when test="some $subfield in ($record/marc:datafield[@tag='583']/marc:subfield[@code = 'a' or @code = 'i'])
+                satisfies (matches(lower-case($subfield), 'microfiche|microfilm|microopaque'))">
+                <xsl:value-of select="'True'"/>
+            </xsl:when>
+            
             <xsl:otherwise>
                 <xsl:value-of select="'False'"/>
             </xsl:otherwise>
