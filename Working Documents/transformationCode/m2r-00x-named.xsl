@@ -790,11 +790,6 @@
         <xsl:variable name="char01" select="substring(., 2, 1)"/>
         <xsl:variable name="char03" select="substring(., 4, 1)"/>
         <xsl:variable name="char04" select="substring(., 5, 1)"/>
-        <!--<xsl:if test="$char00 = 'h' and ($char04 = 'a' or $char04 = 'd' or $char04 = 'f' or $char04 = 'g' or $char04 = 'h' or $char04 = 'l' or $char04 = 'm' or $char04 = 'o' or $char04 = 'p')">
-            <rdamd:P30169>
-                Code value label
-            </rdamd:P30169>
-        </xsl:if>-->
         <xsl:if test="$char00 = 'm' and ($char04 = 'a' or $char04 = 'b' or $char04 = 'd' or $char04 = 'e')">
             <rdamo:P30163 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.c9kk-6x09#', $char04)}"/>
         </xsl:if>
@@ -822,6 +817,11 @@
                 </xsl:when>
                 <xsl:when test="$char00 = 'k'">
                     <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1005'}"/>
+                </xsl:when>
+                <xsl:when test="$char00 = 'h'">
+                    <rdamd:P30169>
+                        8 mm.
+                    </rdamd:P30169>
                 </xsl:when>
             </xsl:choose>
         </xsl:if>
@@ -853,6 +853,11 @@
                 <xsl:when test="$char00 = 'v'">
                     <rdamo:P30104 rdf:resource="{'http://rdaregistry.info/termList/videoFormat/1009'}"/>
                 </xsl:when>
+                <xsl:when test="$char00 = 'h'">
+                    <rdamd:P30169>
+                        70 mm.
+                    </rdamd:P30169>
+                </xsl:when>
             </xsl:choose>
         </xsl:if>
         <xsl:if test="$char04 = 'h'">
@@ -862,6 +867,11 @@
                 </xsl:when>
                 <xsl:when test="$char00 = 'v'">
                     <rdamo:P30104 rdf:resource="{'http://rdaregistry.info/termList/videoFormat/1004'}"/>
+                </xsl:when>
+                <xsl:when test="$char00 = 'h'">
+                    <rdamd:P30169>
+                        105 mm.
+                    </rdamd:P30169>
                 </xsl:when>
             </xsl:choose>
         </xsl:if>
@@ -898,11 +908,30 @@
         <xsl:if test="$char04 = 'k' and $char00 = 'v'">
             <rdamo:P30104 rdf:resource="{'http://rdaregistry.info/termList/videoFormat/1012'}"/>
         </xsl:if>
-        <xsl:if test="$char04 = 'm' and $char00 = 'v'">
+        <xsl:if test="$char04 = 'm'">
+            <xsl:choose>
+                <xsl:when test="$char00 = 'v'">
             <rdamo:P30104 rdf:resource="{'http://rdaregistry.info/termList/videoFormat/1010'}"/>
+                </xsl:when>
+            <xsl:when test="$char00 = 'h'">
+                <rdamd:P30169>
+                    4x6 in. or 11x15 cm.
+                </rdamd:P30169>
+            </xsl:when>
+                <xsl:when test="$char00 = 'k'">
+                    <rdamo:P30304 rdf:resource="{'https://doi.org/10.6069/uwlswd.84qn-zz83#m'}"/>
+                </xsl:when>
+            </xsl:choose>
         </xsl:if>
-        <xsl:if test="$char04 = 'q' and $char00 = 'v'">
+        <xsl:if test="$char04 = 'q'">
+            <xsl:choose>
+            <xsl:when test = "$char00 = 'v'">
             <rdamo:P30104 rdf:resource="{'http://rdaregistry.info/termList/videoFormat/1008'}"/>
+            </xsl:when>
+            <xsl:when test="$char00 = 'k'">
+                <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1015'}"/>
+            </xsl:when>
+            </xsl:choose>
         </xsl:if>
         <xsl:if test="$char04 = 'o'">
             <xsl:choose>
@@ -916,6 +945,11 @@
                 </xsl:when>
                 <xsl:when test="$char00 = 'v'">
                     <rdamo:P30104 rdf:resource="{'http://rdaregistry.info/termList/videoFormat/1005'}"/>
+                </xsl:when>
+                <xsl:when test="$char00 = 'h'">
+                    <rdamd:P30169>
+                        6x9 in. or 16x23 cm.
+                    </rdamd:P30169>
                 </xsl:when>
             </xsl:choose>
         </xsl:if>
@@ -971,6 +1005,11 @@
                 <xsl:when test="$char00 = 'v'">
                     <rdamo:P30104 rdf:resource="{'http://rdaregistry.info/termList/videoFormat/1006'}"/>
                 </xsl:when>
+                <xsl:when test="$char00 = 'h'">
+                    <rdamd:P30169>
+                        16 mm.
+                    </rdamd:P30169>
+                </xsl:when>
             </xsl:choose>
         </xsl:if>
         <xsl:if test="$char04 = 'f'">
@@ -984,19 +1023,27 @@
                 <xsl:when test="$char00 = 'v'">
                     <rdamo:P30104 rdf:resource="{'http://rdaregistry.info/termList/videoFormat/1011'}"/>
                 </xsl:when>
+                <xsl:when test="$char00 = 'h'">
+                    <rdamd:P30169>
+                        35 mm.
+                    </rdamd:P30169>
+                </xsl:when>
             </xsl:choose>
         </xsl:if>
-        <xsl:if test="$char04 = 'l' and ($char00 = 'd' or $char00 = 'a' or $char00 = 'k')">
+        <xsl:if test="$char04 = 'l'">
+            <xsl:choose>
+                <xsl:when test="$char00 = 'd' or $char00 = 'a' or $char00 = 'k'">
             <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1042 '}"/>
-        </xsl:if>
-        <xsl:if test="$char04 = 'm' and $char00 = 'k'">
-            <rdamo:P30304 rdf:resource="{'https://doi.org/10.6069/uwlswd.84qn-zz83#m'}"/>
+                </xsl:when>
+            <xsl:when test = "$char00 = 'h'">
+                <rdamd:P30169>
+                    3x5 in. or 8x13 cm.
+                </rdamd:P30169>
+            </xsl:when>
+            </xsl:choose>
         </xsl:if>
         <xsl:if test="$char04 = 'n' and ($char00 = 'd' or $char00 = 'a' or $char00 = 'k')">
             <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1041'}"/>
-        </xsl:if>
-        <xsl:if test="$char04 = 'q' and $char00 = 'k'">
-            <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1015'}"/>
         </xsl:if>
         <xsl:if test="$char04 = 'p'">
             <xsl:choose>
@@ -1005,6 +1052,11 @@
                 </xsl:when>
                 <xsl:when test="$char00 = 'v'">
                     <rdamo:P30104 rdf:resource="{'http://rdaregistry.info/termList/videoFormat/1007'}"/>
+                </xsl:when>
+                <xsl:when test="$char00 = 'h'">
+                    <rdamd:P30169>
+                        3 1/4 x 7 3/8 in. or 9x19 cm.
+                    </rdamd:P30169>
                 </xsl:when>
             </xsl:choose>
         </xsl:if>
