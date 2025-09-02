@@ -926,8 +926,8 @@
     <xsl:function name="m2r:checkAbbreviations">
         <xsl:param name="string"/>
         <xsl:variable name="lookupAbbreviationsDoc" select="document('lookup/abbreviations.xml')"/>
-        <xsl:value-of select="if (some $row in $lookupAbbreviationsDoc/root/row
-            satisfies (ends-with(lower-case($string), $row))) then true() else false()"/>
+        <xsl:value-of select="if (some $abbreviation in $lookupAbbreviationsDoc/abbreviations/row/abbreviation
+            satisfies (ends-with(lower-case($string), lower-case($abbreviation)))) then true() else false()"/>
     </xsl:function>
     
     <xsl:function name="m2r:stripOuterBracketsAndParentheses">

@@ -500,7 +500,7 @@
                     <rdamo:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1032'}"/>
                 </xsl:when>
                 <xsl:when test="$char00 = 'c' and not($Test338)">
-                    <rdamo:P30001 rdf:resource="{'https://www.rdaregistry.info/termList/RDACarrierType/#1014'}"/>
+                    <rdamo:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1014'}"/>
                 </xsl:when>
                 <xsl:when test="$char00 = 'g'">
                     <rdamo:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1037'}"/>
@@ -516,7 +516,7 @@
         <xsl:if test="$char01 = 'a'">
             <xsl:choose>
                 <xsl:when test="$char00 = 'c' and not($Test338)">
-                    <rdamo:P30001 rdf:resource="{'https://www.rdaregistry.info/termList/RDACarrierType/#1015'}"/>
+                    <rdamo:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1015'}"/>
                 </xsl:when>
                 <xsl:when test="$char00 = 'h'">
                     <rdamo:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1021'}"/>
@@ -532,7 +532,7 @@
         <xsl:if test="$char01 = 'b'">
             <xsl:choose>
                 <xsl:when test="$char00 = 'c' and not($Test338)">
-                    <rdamo:P30001 rdf:resource="{'https://www.rdaregistry.info/termList/RDACarrierType/#1012'}"/>
+                    <rdamo:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1012'}"/>
                 </xsl:when>
                 <xsl:when test="$char00 = 'h'">
                     <rdamo:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1024'}"/>
@@ -548,7 +548,7 @@
         <xsl:if test="$char01 = 'd'">
             <xsl:choose>
                 <xsl:when test="$char00 = 'c' and not($Test338)">
-                    <rdamo:P30001 rdf:resource="{'https://www.rdaregistry.info/termList/RDACarrierType/#1013'}"/>
+                    <rdamo:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1013'}"/>
                 </xsl:when>
                 <xsl:when test="$char00 = 'h'">
                     <rdamo:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1026'}"/>
@@ -570,7 +570,7 @@
         <xsl:if test="$char01 = 'e'">
             <xsl:choose>
                 <xsl:when test="$char00 = 'c'">
-                    <rdamo:P30001 rdf:resource="{'https://www.rdaregistry.info/termList/RDACarrierType/#1014'}"/>
+                    <rdamo:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1014'}"/>
                 </xsl:when>
                 <xsl:when test="$char00 = 'h'">
                     <rdamo:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1022'}"/>
@@ -583,7 +583,7 @@
         <xsl:if test="$char01 = 'f'">
             <xsl:choose>
                 <xsl:when test="$char00 = 'c' and not($Test338)">
-                    <rdamo:P30001 rdf:resource="{'https://www.rdaregistry.info/termList/RDACarrierType/#1012'}"/>
+                    <rdamo:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1012'}"/>
                 </xsl:when>
                 <xsl:when test="$char00 = 'h'">
                     <rdamo:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1023'}"/>
@@ -602,7 +602,7 @@
         <xsl:if test="$char01 = 'h'">
             <xsl:choose>
                 <xsl:when test="$char00 = 'c' and not($Test338)">
-                    <rdamo:P30001 rdf:resource="{'https://www.rdaregistry.info/termList/RDACarrierType/#1017'}"/>
+                    <rdamo:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1017'}"/>
                 </xsl:when>
                 <xsl:when test="$char00 = 'h'">
                     <rdamo:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1027'}"/>
@@ -612,7 +612,7 @@
         <xsl:if test="$char01 = 'j'">
             <xsl:choose>
                 <xsl:when test="$char00 = 'c' and not($Test338)">
-                    <rdamo:P30001 rdf:resource="{'https://www.rdaregistry.info/termList/RDACarrierType/#1013'}"/>
+                    <rdamo:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1013'}"/>
                 </xsl:when>
                 <xsl:when test="$char00 = 'h'">
                     <rdamo:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1056'}"/>
@@ -622,14 +622,14 @@
         <xsl:if test="$char01 = 'k'">
             <xsl:choose>
                 <xsl:when test="$char00 = 'c' and not($Test338)">
-                    <rdamo:P30001 rdf:resource="{'https://www.rdaregistry.info/termList/RDACarrierType/#1011'}"/>
+                    <rdamo:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1011'}"/>
                 </xsl:when>
             </xsl:choose>
         </xsl:if>
         <xsl:if test="$char01 = 'm'">
             <xsl:choose>
                 <xsl:when test="$char00 = 'c' and not($Test338)">
-                    <rdamo:P30001 rdf:resource="{'https://www.rdaregistry.info/termList/RDACarrierType/#1013'}"/>
+                    <rdamo:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1013'}"/>
                 </xsl:when>
                 <xsl:when test="$char00 = 'z'">
                     <rdamo:P30335 rdf:resource="{'https://doi.org/10.6069/uwlswd.h5tb-zk94#z'}"/>
@@ -639,7 +639,7 @@
         <xsl:if test="$char01 = 'o'">
             <xsl:choose>
                 <xsl:when test="$char00 = 'c' and not($Test338)">
-                    <rdamo:P30001 rdf:resource="{'https://www.rdaregistry.info/termList/RDACarrierType/#1013'}"/>
+                    <rdamo:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1013'}"/>
                 </xsl:when>
                 <xsl:when test="$char00 = 'm'">
                     <rdamo:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1069'}"/>
@@ -790,11 +790,11 @@
         <xsl:variable name="char01" select="substring(., 2, 1)"/>
         <xsl:variable name="char03" select="substring(., 4, 1)"/>
         <xsl:variable name="char04" select="substring(., 5, 1)"/>
-        <xsl:if test="$char00 = 'h' and ($char04 = 'a' or $char04 = 'd' or $char04 = 'f' or $char04 = 'g' or $char04 = 'h' or $char04 = 'l' or $char04 = 'm' or $char04 = 'o' or $char04 = 'p')">
+        <!--<xsl:if test="$char00 = 'h' and ($char04 = 'a' or $char04 = 'd' or $char04 = 'f' or $char04 = 'g' or $char04 = 'h' or $char04 = 'l' or $char04 = 'm' or $char04 = 'o' or $char04 = 'p')">
             <rdamd:P30169>
                 Code value label
             </rdamd:P30169>
-        </xsl:if>
+        </xsl:if>-->
         <xsl:if test="$char00 = 'm' and ($char04 = 'a' or $char04 = 'b' or $char04 = 'd' or $char04 = 'e')">
             <rdamo:P30163 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.c9kk-6x09#', $char04)}"/>
         </xsl:if>
