@@ -866,7 +866,7 @@
         <xpath>
             exists(marc:datafield[starts-with(@tag, '7')]/marc:subfield[@code='i'][contains(., 'aggregates')])
         </xpath>
-    </pattern> 
+    </pattern>
     
     <pattern> 
         <sort>53</sort>
@@ -898,14 +898,14 @@
                 ]
             )
         </xpath>
-    </pattern>
+    </pattern> 
     
-    <pattern> 
-        <sort>55</sort>
-        <id>48</id>
-        <name>650$a Collection terms</name>
-        <type>CAM</type>
-        <xpath>
+    <pattern>
+      <sort>55</sort>
+      <id>48</id>
+      <name>650$a Collection terms</name>
+      <type>CAM</type>
+      <xpath>
             exists(
                 marc:datafield[@tag='650'][
                     not(
@@ -915,8 +915,9 @@
                     and
                     (
                         some $item in $ListV650a_655aCollectionTerms
-                        satisfies (matches(marc:subfield[@code='a'], $item))
-                        
+                        satisfies (
+                            exists(marc:subfield[@code='a'][matches(., $item)])
+                        )
                     )
                 ]
             )
@@ -938,8 +939,9 @@
                     and
                     (
                         some $item in $ListV650a_655aCollectionTermsUsually 
-                        satisfies (matches(marc:subfield[@code='a'], $item))
-                        
+                        satisfies (
+                            exists(marc:subfield[@code='a'][matches(., $item)])
+                        )
                     )
                 ]
             )
