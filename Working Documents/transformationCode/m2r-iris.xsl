@@ -564,7 +564,7 @@
             </xsl:when>
             <!-- if it's a different entity type, check if the source is approved
                 if it is, then use it-->
-            <xsl:when test="m2r:s2EntityTest($source, $type) = 'True'">
+            <xsl:when test="$source != ''">
                 <xsl:value-of select="$BASE||encode-for-uri(translate(lower-case($source), ' ', ''))||'/'||$nomType||'#'||encode-for-uri(m2r:stripAllPunctuation($ap))"/>
             </xsl:when>
             <!-- otherwise, opaque IRI -->
