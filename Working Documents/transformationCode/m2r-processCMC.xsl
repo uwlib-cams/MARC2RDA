@@ -771,7 +771,7 @@
                 </xsl:for-each>
                 
                 <xsl:variable name="lookupMP006c16-carrier">
-                    <xsl:copy-of select="document('lookup/LookupCarrierType.xml')/key('lookupMP008c16orc17', $c16)/rdaIRI"/>
+                    <xsl:copy-of select="document('lookup/LookupCarrierType.xml')/key('lookupMP006c16orc17', $c16)/rdaIRI"/>
                 </xsl:variable>
                 <xsl:for-each select="$lookupMP006c16-carrier/rdaIRI">
                     <marc:datafield tag="338" ind1=" " ind2=" ">
