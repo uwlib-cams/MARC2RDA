@@ -173,7 +173,7 @@
         </xsl:variable>
         <xsl:choose>
             <!-- If there are more than just name part subfields (v, x, y, z) 
-            then "has subject" is used alongside "has related [agent]" -->
+            then "has subject" is used alongside "has related [work]" -->
             <xsl:when test="marc:subfield[@code = 'v'] or marc:subfield[@code = 'x'] 
                 or marc:subfield[@code = 'y'] or marc:subfield[@code = 'z']">
                 <xsl:call-template name="F6XX-subject">
