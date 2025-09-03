@@ -1,6 +1,6 @@
 # Extensions for MARC2RDA
 
-MARC2RDA Extensions is a Java-based project designed to extend the capabilities of the [MARC2RDA](https://github.com/uwlib-cams/MARC2RDA). It enables the Oxygen XML Editor to execute Java through Saxon, facilitating the extraction of RDF types from various URIs.
+MARC2RDA Extensions is a Java-based project designed to extend the capabilities of the [MARC2RDA](https://github.com/uwlib-cams/MARC2RDA). It enables the Oxygen XML Editor to execute Java through Saxon, facilitating the extraction of RDF types from various URIs. This extension is not in use for Phase I of the project.
 
 ## Extensions List
 
@@ -30,3 +30,4 @@ We recommend executing XSLT extensions with Oxygen XML Editor (with Saxon HE). A
 ```sh
 mvn exec:java -Prun
 ```
+
