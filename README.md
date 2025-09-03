@@ -41,7 +41,7 @@ _Jian Lee (she/her/hers) is a Chinese Cataloging and Metadata Librarian at the U
 **-Junghae Lee [junghaelee](https://github.com/junghaelee), Mapping Contributor**<br>
 _Junghae Lee is an Electronic Resources Metadata Librarian and Co-Interim Head of the Metadata and Cataloging Initiatives Unit at the University of Washington Libraries. She completed a C.A.S. in Library and Information Science from the University of Illinois, Urbana-Champaign and holds an M.L.S. in Library and Information Science from Indiana University, Bloomington. Her current research interests include metadata quality, cataloging and discovery, and linked data implementation._ 
 <br><br>
-**-Cypress Payne [cspayne](https://github.com/cspayne), Conversion Project Manager**<br>
+**-Cypress Payne [cspayne](https://github.com/cspayne), Transformation Project Manager**<br>
 _Cypress Payne (she/her/hers) is the Metadata and Cataloging Librarian at West Virginia University. She earned her Master of Library and Information Science at the University of Washington-Seattle and holds a bachelor's degree in computer science. She leads the transformation in the MARC21 to RDA project._
 <br><br>
 **-Abhignya Rajapu [arajapu](https://github.com/arajapu), Transformation Contributor**<br>
@@ -55,10 +55,10 @@ _Crystal Yragui (she/her/hers) is a Metadata Librarian and Interim Co-Head of th
 **-Sofia Zapounidou [szapoun](https://github.com/szapoun), Mapping Contributor**<br>
 _Dr. Sofia Zapounidou is a Team Leader for Metadata and Identifiers at the Publications Office of the European Union. She holds a bachelor from the Department of Archives, Library Science and Museology of the Ionian University, and a master’s degree in Information Systems from the University of Macedonia. Her PhD, awarded in 2020 from the Ionian University, focuses on the semantic interoperability between bibliographic conceptual models. She is an elected member of the IFLA Cataloguing Section (2021-2025), and of the Bibliographic Conceptual Models Review Group (2023-2027). She collaborates with different research groups in Greece and abroad with main focus on the preparation, representation and conversion of bibliographic data into linked data._
 ## Past contributors
-**-Theo Gerontakos [gerontakos](https://github.com/gerontakos), Mapping Contributor, Conversion Contributor, Project Supervisor**<br>
+**-Theo Gerontakos [gerontakos](https://github.com/gerontakos), Mapping Contributor, Transformation Contributor, Project Supervisor**<br>
 _Theo Gerontakos has been a Metadata Librarian since 2001 and was the Head of the Metadata and Cataloging Initiatives Unit at the University of Washington (UW) Libraries in Seattle, Washington, USA until March 2024. He led the UW cohort contribution to the LD4P2 project from 2018-2020. He was the Chair of the UW Metadata Implementation Group from 2004-2021 and led the UW Linked Data Team from 2013 to 2024. He led several UW study groups from 2010-2019 on XSLT, XQuery, and SPARQL. He is a former Chair of the ALCTS/LITA Linked Library Data Interest group (2012-2014). He is currently a Metadata Librarian at the Library of Congress._
 <br><br>
-**-Zhuo Pan [pan-zhuo](https://github.com/pan-zhuo), Mapping Contributor, Conversion Contributor**<br>
+**-Zhuo Pan [pan-zhuo](https://github.com/pan-zhuo), Mapping Contributor, Transformation Contributor**<br>
 _Zhuo Pan is currently a Resource Description Resident Librarian at Duke University Libraries. He holds a Master of Library and Information Science from the University of Washington and a Bachelor's degree in Library Science from Wuhan University. As a Library Data Specialist at the University of Washington Libraries from February 2022 until his graduation, Zhuo contributed to mapping MARC21 to RDA and converting MARC metadata to linked open data formats. For his MLIS capstone project, he designed RDA application profiles for print monographs that enable native RDA cataloging in the Sinopia Linked Data Editor._ 
 <br><br>
 **-Pengyan Sun [pennylenger](https://github.com/pennylenger), Mapping Contributor**<br>
