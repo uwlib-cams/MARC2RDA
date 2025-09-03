@@ -61,7 +61,8 @@
     </xsl:template>
     
     <xsl:template name="getmarcRecord">
-        <xsl:for-each select="child::*">
+        <xsl:param name="record"/>
+        <xsl:for-each select="$record/child::*">
             <xsl:value-of select="'F'||@tag"/>
             <xsl:text> </xsl:text>
             <xsl:if test="@ind1 != ' '">

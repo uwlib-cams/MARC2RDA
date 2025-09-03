@@ -123,13 +123,14 @@
         <xsl:variable name="isTactile" select="m2r:isTactile(.)"/>
         <xsl:choose>
         <xsl:when test="$isTactile = 'False'">
-        <xsl:variable name="processedRecord">
-            <xsl:call-template name="otherFieldsTo33x">
-                <xsl:with-param name="record">
-                    <xsl:copy-of select="."/>
-                </xsl:with-param>
-            </xsl:call-template>
-        </xsl:variable>
+            <xsl:variable name="inputRecord" select="."/>
+            <xsl:variable name="processedRecord">
+                <xsl:call-template name="otherFieldsTo33x">
+                    <xsl:with-param name="record">
+                        <xsl:copy-of select="."/>
+                    </xsl:with-param>
+                </xsl:call-template>
+            </xsl:variable>
         <xsl:for-each select="$processedRecord/marc:record">
              <!-- message can be output to show processing -->
              <!--<xsl:message>
@@ -190,6 +191,7 @@
                      
                      <!-- call metadata work template (template at bottom of this file) -->
                      <xsl:call-template name="marcMetadataWork">
+                         <xsl:with-param name="inputRecord" select="$inputRecord"/>
                          <xsl:with-param name="marcWorkIRI" select="$marcMetadataWorkIRI"/>
                          <xsl:with-param name="mainWorkIRI" select="$mainWorkIRI"/>
                          <xsl:with-param name="aggWorkIRI" select="$aggWorkIRI"/>
@@ -507,6 +509,7 @@
     
 <!-- METADATA WORK TEMPLATE -->
     <xsl:template name="marcMetadataWork" expand-text="yes">
+        <xsl:param name="inputRecord"/>
         <xsl:param name="marcWorkIRI"/>
         <xsl:param name="mainWorkIRI"/>
         <xsl:param name="aggWorkIRI"/>
@@ -557,7 +560,9 @@
             </rdamd:P30004>
             <rdamo:P30001 rdf:resource="{'http://rdaregistry.info/termList/RDACarrierType/1018'}"/>
             <rdamd:P30137>
-                <xsl:call-template name="getmarcRecord"/>
+                <xsl:call-template name="getmarcRecord">
+                    <xsl:with-param name="record" select="$inputRecord"/>
+                </xsl:call-template>
             </rdamd:P30137>
         </rdf:Description>
         
