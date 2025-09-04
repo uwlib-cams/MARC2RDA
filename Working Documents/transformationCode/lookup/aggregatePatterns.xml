@@ -226,7 +226,7 @@
                 )
                 and
                 (
-                    substring(marc:controlfield[@tag='006'], 13, 1) = '1'
+                    exists(marc:controlfield[@tag='006'][substring(., 13, 1) = '1'])
                 )
             )
         </xpath>
