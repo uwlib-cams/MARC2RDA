@@ -141,7 +141,7 @@
         <type>CAM</type>
         <name>000 Collection aggregate (not Collection  work)</name>
         <xpath>substring(marc:leader, 8, 1) = 'c' and exists(marc:datafield[@tag='533'])</xpath>
-    </pattern> 
+    </pattern>
     
     <pattern>
         <sort>14</sort>
@@ -186,7 +186,7 @@
                 )
                 and
                 (
-                    substring(marc:controlfield[@tag='0076'], 14, 1) = '1'
+                    substring(marc:controlfield[@tag='006'], 14, 1) = '1'
                 )
             )
         </xpath>
