@@ -24,6 +24,9 @@
     <marcMP008c33orc34>o</marcMP008c33orc34>
     <marcMP006c16orc17>o</marcMP006c16orc17>
     <marc245h>map|atlas</marc245h>
+    <xpath>matches(substring(marc:leader, 7, 1), 'e|f')
+      and (some $a in marc:datafield[@tag = '300']/marc:subfield[@code = 'a']
+      satisfies matches(lower-case($a), 'view|diagram|chart|jigsaw puzzle|remote sensing image|section|wall chart'))</xpath>
     <locCode>cri</locCode>
     <locTerm>cartographic image</locTerm>
     <locURI>http://id.loc.gov/vocabulary/contentTypes/cri</locURI>
@@ -95,12 +98,18 @@
     <marcCF006c9>g</marcCF006c9>
     <marcCF008c26>h</marcCF008c26>
     <marcCF006c9>h</marcCF006c9>
-    <marcCF008c26>i</marcCF008c26>
-    <marcCF006c9>i</marcCF006c9>
     <marcCF008c26>j</marcCF008c26>
     <marcCF006c9>j</marcCF006c9>
     <marcCF008c26>m</marcCF008c26>
     <marcCF006c9>m</marcCF006c9>
+    <xpath>matches(substring(marc:leader, 7, 1), 'm')
+      and exists(marc:leaderfield[@tag='008'][matches(substring(., 27, 1), 'i')])
+      and (some $a in marc:datafield[@tag = '516']/marc:subfield[@code = 'a']
+      satisfies matches(lower-case($a), 'interactive multimedia'))</xpath>
+    <xpath>matches(substring(marc:leader, 7, 1), 'm')
+      and exists(marc:leaderfield[@tag='006'][matches(substring(., 1, 1), 'm')][matches(substring(., 10, 1), 'i')])
+      and (some $a in marc:datafield[@tag = '516']/marc:subfield[@code = 'a']
+      satisfies matches(lower-case($a), 'interactive multimedia'))</xpath>
     <locCode>cop</locCode>
     <locTerm>computer program</locTerm>
     <locURI>http://id.loc.gov/vocabulary/contentTypes/cop</locURI>
@@ -324,6 +333,7 @@
     <rdaCurie>rdaco:1019</rdaCurie>
   </entry>
   <entry>
+    <marcLDRc6>t</marcLDRc6>
     <marc007c0c1>ad</marc007c0c1>
     <marcMP008c25>e</marcMP008c25>
     <marcMP006c8>e</marcMP006c8>

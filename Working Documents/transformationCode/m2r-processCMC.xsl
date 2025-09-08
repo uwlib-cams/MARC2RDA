@@ -4,7 +4,7 @@
     xmlns:marc="http://www.loc.gov/MARC21/slim"
     xmlns:m2r="http://universityOfWashington/functions"
     exclude-result-prefixes="xs"
-    version="2.0">
+    version="3.0">
     
     <xsl:key name="lookupLDRc6" match="entry" use="marcLDRc6"/>
     
@@ -56,6 +56,7 @@
         <xsl:for-each select="$record/*">
             <xsl:copy select=".">
                 <xsl:copy-of select="./*"/>
+                <xsl:copy-of select="m2r:CMCPatterns(.)"/>
                 <xsl:apply-templates select="marc:leader"/>
                 <xsl:apply-templates select="marc:controlfield[@tag = '007']"/>
                 <xsl:apply-templates select="marc:controlfield[@tag = '008']"/>
@@ -76,14 +77,32 @@
         </xsl:variable>
         
         <xsl:for-each select="$lookupLDRc6-content/rdaIRI">
-            <marc:datafield tag="336" ind1=" " ind2=" ">
-                <marc:subfield code="1">
-                    <xsl:value-of select="."/>
-                </marc:subfield>
-                <marc:subfield code="9">
-                    <xsl:text>LDRc6</xsl:text>
-                </marc:subfield>
-            </marc:datafield>
+            <xsl:choose>
+                <!-- condition for LDR6 = a is that 655 $a and 650 $v not matches below -->
+                <xsl:when test="$LDRc6 = 'a'">
+                    <xsl:if test="every $subfield in (../marc:datafield[@tag = '655']/marc:subfield[@code = 'a']|../marc:datafield[@tag = '650']/marc:subfield[@code = 'v'])
+                        satisfies not(matches($subfield, 'stories without words|coloring book|colouring book'))">
+                        <marc:datafield tag="336" ind1=" " ind2=" ">
+                            <marc:subfield code="1">
+                                <xsl:value-of select="."/>
+                            </marc:subfield>
+                            <marc:subfield code="9">
+                                <xsl:text>LDRc6</xsl:text>
+                            </marc:subfield>
+                        </marc:datafield>
+                    </xsl:if>
+                </xsl:when>
+                <xsl:otherwise>
+                    <marc:datafield tag="336" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="."/>
+                        </marc:subfield>
+                        <marc:subfield code="9">
+                            <xsl:text>LDRc6</xsl:text>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:otherwise>
+            </xsl:choose>
         </xsl:for-each>
         
         <xsl:for-each select="$lookupLDRc6-carrier/rdaIRI">
@@ -1035,6 +1054,51 @@
             </xsl:for-each>
         </xsl:for-each>
     </xsl:template>
+    
+    <xsl:function name="m2r:CMCPatterns">
+        <xsl:param name="record"/>
+        <xsl:variable name="contentPatterns" select="document('lookup/LookupContentType.xml')/lookupTable/entry"/>
+        <xsl:variable name="carrierPatterns" select="document('lookup/LookupCarrierType.xml')/lookupTable/entry"/>
+        <xsl:for-each select="$contentPatterns">
+            <xsl:for-each select="./xpath">
+                <xsl:variable name="isMatched" as="xs:boolean">
+                    <xsl:evaluate xpath="." context-item="$record"/>
+                </xsl:variable>
+                <xsl:if test="$isMatched">
+                    <xsl:message>CONTENT MATCH</xsl:message>
+                    <xsl:variable name="rdaIRI" select="following-sibling::rdaIRI"/>
+                    <marc:datafield tag="336" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="$rdaIRI"/>
+                        </marc:subfield>
+                        <marc:subfield code="9">
+                            <xsl:text>pattern</xsl:text>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:for-each>
+        
+        <xsl:for-each select="$carrierPatterns">
+            <xsl:for-each select="./xpath">
+                <xsl:variable name="isMatched" as="xs:boolean">
+                    <xsl:evaluate xpath="." context-item="$record"/>
+                </xsl:variable>
+                <xsl:if test="$isMatched">
+                    <xsl:message>CARRIER MATCH</xsl:message>
+                    <xsl:variable name="rdaIRI" select="following-sibling::rdaIRI"/>
+                    <marc:datafield tag="338" ind1=" " ind2=" ">
+                        <marc:subfield code="1">
+                            <xsl:value-of select="$rdaIRI"/>
+                        </marc:subfield>
+                        <marc:subfield code="9">
+                            <xsl:text>pattern</xsl:text>
+                        </marc:subfield>
+                    </marc:datafield>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:for-each>
+    </xsl:function>
     
     <xsl:function name="m2r:isTactile">
         <xsl:param name="record"/>
