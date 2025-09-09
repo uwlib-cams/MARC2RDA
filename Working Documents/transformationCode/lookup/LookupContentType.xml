@@ -103,11 +103,10 @@
     <marcCF008c26>m</marcCF008c26>
     <marcCF006c9>m</marcCF006c9>
     <xpath>matches(substring(marc:leader, 7, 1), 'm')
-      and exists(marc:leaderfield[@tag='008'][matches(substring(., 27, 1), 'i')])
+      and exists(marc:controlfield[@tag='008'][matches(substring(., 27, 1), 'i')])
       and (some $a in marc:datafield[@tag = '516']/marc:subfield[@code = 'a']
       satisfies matches(lower-case($a), 'interactive multimedia'))</xpath>
-    <xpath>matches(substring(marc:leader, 7, 1), 'm')
-      and exists(marc:leaderfield[@tag='006'][matches(substring(., 1, 1), 'm')][matches(substring(., 10, 1), 'i')])
+    <xpath>exists(marc:controlfield[@tag='006'][matches(substring(., 1, 1), 'm')][matches(substring(., 10, 1), 'i')])
       and (some $a in marc:datafield[@tag = '516']/marc:subfield[@code = 'a']
       satisfies matches(lower-case($a), 'interactive multimedia'))</xpath>
     <locCode>cop</locCode>
@@ -448,6 +447,9 @@
     <marcCR008c24>y</marcCR008c24>
     <marcCR006c7>y</marcCR006c7>
     <marc245h>atlas|flash card|board book|microfilm|handbook|large print|newsletter|pamphlet|text|ebook|e-book|serial|typescript|exhibition catalog|paperback</marc245h>
+    <xpath>matches(substring(marc:leader, 7, 1), 'a')
+      and (some $subfield in marc:datafield[@tag = '650']/marc:subfield[@code = 'v']|marc:datafield[@tag='655']/marc:subfield[@code='a']
+      satisfies matches(lower-case($subfield), 'stories without words|coloring book|colouring book'))</xpath>
     <locCode>txt</locCode>
     <locTerm>text</locTerm>
     <locURI>http://id.loc.gov/vocabulary/contentTypes/txt</locURI>

@@ -41,19 +41,21 @@
   <entry>
     <marc007c0c5c6>gbd</marc007c0c5c6>
     <marc007c0c1>sd</marc007c0c1>
-    <!--<xpath>not(marc:controlfield[@tag='007'][(substring(.,1,1)='g') and (substring(.,6,2)='bd'))</xpath>
+    <xpath>not(marc:controlfield[@tag='007'][(substring(.,1,1)='g') and (substring(.,6,2)='bd')])
+    and (some $subfield in marc:datafield[@tag='245']/marc:subfield[@code='h']|marc:datafield[@tag='300']/marc:subfield[@code = 'a']
+    satisfies matches(lower-case($subfield), 'audio disc|sound disc|phonodisc|audiocd'))</xpath>
     <xpath>matches(substring(marc:leader, 7, 1), 'i|j')
       and (some $a in marc:datafield[@tag = '300']/marc:subfield[@code = 'a']
-      satisfies matches($a, 'CD|CD-ROM|CD ROM'))</xpath>-->
-    <xpath>matches(substring(marc:leader, 7, 1), 'i|j|c|d')</xpath>
-    <!-- and not(exists(marc:controlfieid[@tag='008'][matches(substring(., 31, 2), 'n')]))
+      satisfies matches($a, 'CD|CD-ROM|CD ROM'))</xpath>
+    <xpath>matches(substring(marc:leader, 7, 1), 'i|j|c|d')
+     and not(exists(marc:controlfieid[@tag='008'][matches(substring(., 31, 2), 'n')]))
       and (some $a in marc:datafield[@tag = '300']/marc:subfield[@code = 'a']
-      satisfies matches($a, 'CD|CD-ROM|CD ROM')) -->
-    <!--<xpath>matches(substring(marc:leader, 7, 1), 'i|j')
+      satisfies matches($a, 'CD|CD-ROM|CD ROM'))</xpath>
+    <xpath>matches(substring(marc:leader, 7, 1), 'i|j')
       and (some $a in marc:datafield[@tag = '300']/marc:subfield[@code = 'a']
       satisfies matches(lower-case($a), 'compact disc|on side'))</xpath>
     <xpath>some $a in marc:datafield[@tag = '300']/marc:subfield[@code = 'a']
-      satisfies (matches(lower-case($a), 'sound disc') and not(matches($a, 'sound disc cartridge')))</xpath>-->
+      satisfies (matches(lower-case($a), 'sound disc') and not(matches($a, 'sound disc cartridge')))</xpath>
     <locCode>sd</locCode>
     <locTerm>audio disc</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/sd</locURI>
@@ -514,8 +516,6 @@
   </entry>
   <entry>
     <marc007c0c1>gs</marc007c0c1>
-    <marcVM008c33 condition="matches(../marc:datafield[@tag='300']/marc:subfield[@code='a'], 'viewmaster|stereoscopic')">s</marcVM008c33>
-    <marcVM006c16 condition="matches(../marc:datafield[@tag='300']/marc:subfield[@code='a'], 'viewmaster|stereoscopic')">s</marcVM006c16>
     <locCode>es</locCode>
     <locTerm>stereograph disc</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/es</locURI>
