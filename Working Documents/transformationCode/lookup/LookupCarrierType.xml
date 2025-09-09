@@ -479,7 +479,8 @@
     <rdaCurie>rdact:1048</rdaCurie>
   </entry>
   <entry>
-    <marc007c0c1>gs</marc007c0c1>
+    <xpath>exists(marc:controlfield[@tag='007'][substring(., 1, 2)='gs'])
+      and not(exists(marc:datafield[@tag='300'][matches(marc:subfield[@code='a'], 'viewmaster|stereoscopic')]))</xpath>
     <xpath>matches(substring(marc:leader, 7, 1), 'g|k|o|r')
       and exists(marc:controlfield[@tag='008'][matches(substring(., 34, 1), 's')])
       and not(exists(marc:datafield[@tag='300'][matches(marc:subfield[@code='a'], 'viewmaster|stereoscopic')]))
@@ -515,7 +516,13 @@
     <rdaCurie>rdact:1042</rdaCurie>
   </entry>
   <entry>
-    <marc007c0c1>gs</marc007c0c1>
+    <xpath>matches(substring(marc:leader, 7, 1), 'g|k|o|r')
+      and exists(marc:controlfield[@tag='008'][matches(substring(., 34, 1), 's')])
+      and exists(marc:datafield[@tag='300'][matches(marc:subfield[@code='a'], 'viewmaster|stereoscopic')])
+    </xpath>
+    <xpath>exists(marc:controlfield[@tag='006'][matches(substring(., 1, 1), 'g|k|o|r|')][matches(substring(., 17, 1), 's')])
+      and exists(marc:datafield[@tag='300'][matches(marc:subfield[@code='a'], 'viewmaster|stereoscopic')])
+    </xpath>
     <locCode>es</locCode>
     <locTerm>stereograph disc</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/es</locURI>
