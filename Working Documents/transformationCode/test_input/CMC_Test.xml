@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    
+    <marc:record>
+        <marc:leader>03407cam a2200661 i 4500</marc:leader>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Subject</marc:subfield>
+            <marc:subfield code="v">Stories without words</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cam a2200661 i 4500</marc:leader>
+        <marc:datafield tag="655" ind1=" " ind2=" ">
+            <marc:subfield code="a">Coloring book.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cim a2200661 i 4500</marc:leader>
+        <marc:controlfield tag="007">                </marc:controlfield>
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="h">audio disc</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cjm a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">2 cassettes</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cim a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">CD</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cim a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">compact disc</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cim a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">sound disc</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cim a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">sound disc cartridge</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cmm a2200661 i 4500</marc:leader>
+        <marc:controlfield tag="008">                          i</marc:controlfield>
+        <marc:datafield tag="516" ind1=" " ind2=" ">
+            <marc:subfield code="a">Interactive multimedia</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cmm a2200661 i 4500</marc:leader>
+        <marc:controlfield tag="006">m        i</marc:controlfield>
+        <marc:datafield tag="516" ind1=" " ind2=" ">
+            <marc:subfield code="a">Interactive multimedia</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cmm a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer disc</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cmm a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer disc cartridge</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cmm a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer optical disc</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cmm a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer optical disc cartridge</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cem a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">view</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cem a2200661 i 4500</marc:leader>
+        <marc:controlfield tag="007">gs</marc:controlfield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">stereoscopic</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cgm a2200661 i 4500</marc:leader>
+        <marc:controlfield tag="008">                                 s</marc:controlfield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">viewmaster</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cgm a2200661 i 4500</marc:leader>
+        <marc:controlfield tag="008">                                 s</marc:controlfield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cgm a2200661 i 4500</marc:leader>
+        <marc:controlfield tag="006">k               s</marc:controlfield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">viewmaster</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cgm a2200661 i 4500</marc:leader>
+        <marc:controlfield tag="006">k               s</marc:controlfield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cgm a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">reel</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cgm a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">roll</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407ckm a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">transparencies</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407ckm a2200661 i 4500</marc:leader>
+    </marc:record>
+    
+</marc:collection>
