@@ -1105,7 +1105,7 @@
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <xsl:variable name="a" select="."/>
             <xsl:variable name="lookup300a-content">
-                <xsl:copy-of select="document('lookup/LookupContentType.xml')//entry[marc245h][matches($a, marc300a)]/rdaIRI"/>  
+                <xsl:copy-of select="document('lookup/LookupContentType.xml')//entry[marc300a][matches($a, marc300a)]/rdaIRI"/>  
             </xsl:variable>
             <xsl:for-each select="$lookup300a-content/rdaIRI">
                 <marc:datafield tag="336" ind1=" " ind2=" ">
@@ -1119,7 +1119,7 @@
             </xsl:for-each>
             
             <xsl:variable name="lookup300a-carrier">
-                <xsl:copy-of select="document('lookup/LookupCarrierType.xml')//entry[marc245h][matches($a, marc300a)]/rdaIRI"/>  
+                <xsl:copy-of select="document('lookup/LookupCarrierType.xml')//entry[marc300a][matches($a, marc300a)]/rdaIRI"/>  
             </xsl:variable>
             <xsl:for-each select="$lookup300a-carrier/rdaIRI">
                 <marc:datafield tag="338" ind1=" " ind2=" ">
