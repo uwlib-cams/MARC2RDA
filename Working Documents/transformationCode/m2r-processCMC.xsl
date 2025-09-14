@@ -2,6 +2,9 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:m2r="http://universityOfWashington/functions"
     exclude-result-prefixes="xs"
     version="3.0">
@@ -49,19 +52,61 @@
     <xsl:key name="lookupMU006c13orc14" match="entry" use="marcMU006c13orc14"/>
     <xsl:key name="lookupMU006c13c14" match="entry" use="marcMU006c13c14"/>
     
+    <xsl:key name="rdaIRI" match="skos:Concept" use="@rdf:about"/>
+    <xsl:key name="lcIRI" match="entry" use="locURI"/>
+    
     <xsl:template name="otherFieldsTo33x">
         
         <xsl:param name="record"/>
-        
-        <xsl:for-each select="$record/*">
-            <xsl:copy select=".">
-                <xsl:copy-of select="./*"/>
+        <xsl:variable name="marc33XIRIs">
+            <xsl:copy-of select="m2r:get33XIRIs($record/*)"/>
+        </xsl:variable>
+        <xsl:variable name="allCMC">
+            <allCMC>
                 <xsl:copy-of select="m2r:CMCPatterns(.)"/>
                 <xsl:apply-templates select="marc:leader"/>
                 <xsl:apply-templates select="marc:controlfield[@tag = '007']"/>
                 <xsl:apply-templates select="marc:controlfield[@tag = '008']"/>
                 <xsl:apply-templates select="marc:controlfield[@tag = '006']"/>
                 <xsl:apply-templates select="marc:datafield[@tag = '245']"/>
+            </allCMC>
+        </xsl:variable>
+        <xsl:variable name="dedupedCMC">
+            <IRIs>
+                <xsl:for-each-group select="$allCMC//marc:datafield/marc:subfield[@code='1']" group-by="text()">
+                    <xsl:choose>
+                        <xsl:when test="contains(current-grouping-key(), 'RDAContentType')">
+                            <marc:datafield tag="336" ind1=" " ind2=" ">
+                                <marc:subfield code="1">
+                                    <xsl:value-of select="current-grouping-key()"/>
+                                </marc:subfield>
+                            </marc:datafield>
+                        </xsl:when>
+                        <xsl:when test="contains(current-grouping-key(), 'RDACarrierType')">
+                            <marc:datafield tag="338" ind1=" " ind2=" ">
+                                <marc:subfield code="1">
+                                    <xsl:value-of select="current-grouping-key()"/>
+                                </marc:subfield>
+                            </marc:datafield>
+                        </xsl:when>
+                    </xsl:choose>
+                </xsl:for-each-group>
+            </IRIs>
+        </xsl:variable>
+        
+        <xsl:message>
+            <xsl:copy-of select="$dedupedCMC"/>
+        </xsl:message>
+        
+        <xsl:for-each select="$record/*">
+            <xsl:copy select=".">
+                <xsl:copy-of select="./*"/>
+                <xsl:for-each select="$dedupedCMC//marc:datafield">
+                    <xsl:if test="not(some $iri in $marc33XIRIs//IRI
+                        satisfies matches($iri, marc:subfield[@code='1']))">
+                        <xsl:copy-of select="."/>
+                    </xsl:if>
+                </xsl:for-each>
             </xsl:copy>
         </xsl:for-each>
         
@@ -1341,6 +1386,72 @@
                 <xsl:value-of select="'False'"/>
             </xsl:otherwise>
         </xsl:choose>
+    </xsl:function>
+    
+    <xsl:function name="m2r:isElectronic">
+        <xsl:param name="record"/>
+        <xsl:variable name="ldr6-7" select="substring($record/marc:leader, 7, 2)"/>
+        
+    </xsl:function>
+    
+    <xsl:function name="m2r:get33XIRIs">
+        <xsl:param name="record"/>
+        <xsl:variable name="IRIs">
+            <IRIs>
+                <xsl:for-each select="$record/marc:datafield[@tag='336' or @tag='337' or @tag='338']">
+                    <!-- check for existing IRIs from $0 and $1 -->
+                    <xsl:for-each select="marc:subfield[@code = '0'] | marc:subfield[@code = '1']">
+                        <xsl:choose>
+                            <xsl:when test="contains(., 'rdaregistry.info/termList/')">
+                                <IRI>
+                                    <xsl:value-of select="."/>
+                                </IRI>
+                            </xsl:when>
+                            <xsl:when test="contains(., 'id.loc.gov/vocabulary/')">
+                                <xsl:for-each select="document('lookup/LookupContentType.xml')/lookupTable/entry/key('lcIRI', .)/rdaIRI">
+                                    <IRI>
+                                        <xsl:value-of select="."/>
+                                    </IRI>
+                                </xsl:for-each>
+                                <xsl:for-each select="document('lookup/LookupCarrierType.xml')/lookupTable/entry/key('lcIRI', .)/rdaIRI">
+                                    <IRI>
+                                        <xsl:value-of select="."/>
+                                    </IRI>
+                                </xsl:for-each>
+                            </xsl:when>
+                        </xsl:choose>
+                    </xsl:for-each>
+                    
+                    <!-- $a and $b -->
+                    <xsl:if test="marc:subfield[@code='2'] and starts-with(normalize-space(lower-case(marc:subfield[@code='2'][1])), 'rda')">
+                        <xsl:variable name="sub2" select="marc:subfield[@code='2'][1]"/>
+                        <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']">
+                            <xsl:variable name="rdaIRI">
+                                <xsl:copy-of select="m2r:rdalcTermCodeLookup-33X(., ../@tag)"/>
+                            </xsl:variable>
+                            <xsl:if test="$rdaIRI//@rdf:resource">
+                                <xsl:for-each select="$rdaIRI//@rdf:resource">
+                                    <IRI>
+                                        <xsl:value-of select="."/>
+                                    </IRI>
+                                </xsl:for-each>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:if>
+                </xsl:for-each>
+            </IRIs>
+        </xsl:variable>
+        
+        <xsl:variable name="dedupedIRIs">
+            <IRIs>
+                <xsl:for-each-group select="$IRIs/IRIs/IRI" group-by="text()">
+                    <IRI>
+                        <xsl:value-of select="current-grouping-key()"/>
+                    </IRI>
+                </xsl:for-each-group>
+            </IRIs>
+        </xsl:variable>
+        <xsl:copy-of select="$dedupedIRIs"/>
     </xsl:function>
     
 </xsl:stylesheet>

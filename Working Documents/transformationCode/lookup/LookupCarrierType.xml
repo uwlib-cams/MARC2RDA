@@ -390,6 +390,13 @@
     <xpath>matches(substring(marc:leader, 7, 1), 'e|f')
       and (some $a in marc:datafield[@tag = '300']/marc:subfield[@code = 'a']
       satisfies matches(lower-case($a), 'jigsaw puzzle'))</xpath>
+    <xpath>(not(matches(substring(marc:leader, 7, 1), 'e|f')))
+      and (marc:datafield[@tag='245']/marc:subfield[@code='h'][matches(., 'jigsaw puzzle')]
+      or marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(., 'jigsaw puzzle')])</xpath>
+    <xpath>(substring(marc:leader, 7, 1) = 'k')
+      and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(., 'printing plate')])</xpath>
+    <xpath>(matches(substring(marc:leader, 7, 1), 'a|t'))
+      and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(., 'box|case|folder')])</xpath>
     <locCode>nr</locCode>
     <locTerm>object</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/nr</locURI>
@@ -471,6 +478,15 @@
     <xpath>matches(substring(marc:leader, 7, 1), 'e|f')
       and (some $a in marc:datafield[@tag = '300']/marc:subfield[@code = 'a']
       satisfies matches(lower-case($a), 'remote sensing image|section|wall chart'))</xpath>
+    <!--<xpath>(substring(marc:leader, 7, 1) = 'c')
+      and exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(., 'part|score')]
+      [matches(., '\(1 p.\)|\(1 page\)|\(1 l.\)|\(1 leaf\))])</xpath>-->
+    <xpath>(substring(marc:leader, 7, 1) = 'k')
+      and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(., 'contact sheet|gelatin silver|photoprint|prints')])</xpath>
+    <xpath>(substring(marc:leader, 7, 1) = 'k')
+      and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(., 'silver gelatin')][matches(., 'print')])</xpath>
+    <xpath>(matches(substring(marc:leader, 7, 1), 'a|t'))
+      and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(., 'leaf|page |^1 p.|scroll')])</xpath>
     <locCode>nb</locCode>
     <locTerm>sheet</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/nb</locURI>
@@ -581,7 +597,15 @@
     <marcMP008c33orc34>r</marcMP008c33orc34>
     <marcMP006c16orc17>r</marcMP006c16orc17>
     <marc245h>atlas|loose-leaf|losseleaf|board book|paperback</marc245h>
-    <locCode>nc</locCode>
+<!--    <xpath>(substring(marc:leader, 7, 1) = 'c')
+      and exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(., 'part|score')]
+      [not(matches(., '\(1 p.\)|\(1 page\)|\(1 l.\)|\(1 leaf\)))])</xpath>-->
+    <xpath>(substring(marc:leader, 7, 1) = 'k')
+      and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(., 'album|binder')])</xpath>
+    <!--<xpath>(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(., 'pages|p.')][not(matches(., '^1 p.'))]</xpath>
+    --><!--<xpath>(matches(substring(marc:leader, 7, 1), 'a|t'))
+      and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(., 'portfolio|scrapbook')]</xpath>
+    --><locCode>nc</locCode>
     <locTerm>volume</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/nc</locURI>
     <rdaTerm>volume</rdaTerm>
