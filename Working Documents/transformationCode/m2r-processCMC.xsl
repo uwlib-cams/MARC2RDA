@@ -69,6 +69,7 @@
                 <xsl:apply-templates select="marc:controlfield[@tag = '008']"/>
                 <xsl:apply-templates select="marc:controlfield[@tag = '006']"/>
                 <xsl:apply-templates select="marc:datafield[@tag = '245']"/>
+                <xsl:apply-templates select="marc:datafield[@tag = '300']"/>
             </allCMC>
         </xsl:variable>
         <xsl:variable name="dedupedCMC">
@@ -1094,6 +1095,39 @@
                     </marc:subfield>
                     <marc:subfield code="9">
                         <xsl:text>245h</xsl:text>
+                    </marc:subfield>
+                </marc:datafield>
+            </xsl:for-each>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template match="marc:datafield[@tag = '300']">
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <xsl:variable name="a" select="."/>
+            <xsl:variable name="lookup300a-content">
+                <xsl:copy-of select="document('lookup/LookupContentType.xml')//entry[marc245h][matches($a, marc300a)]/rdaIRI"/>  
+            </xsl:variable>
+            <xsl:for-each select="$lookup300a-content/rdaIRI">
+                <marc:datafield tag="336" ind1=" " ind2=" ">
+                    <marc:subfield code="1">
+                        <xsl:value-of select="."/>
+                    </marc:subfield>
+                    <marc:subfield code="9">
+                        <xsl:text>300a</xsl:text>
+                    </marc:subfield>
+                </marc:datafield>
+            </xsl:for-each>
+            
+            <xsl:variable name="lookup300a-carrier">
+                <xsl:copy-of select="document('lookup/LookupCarrierType.xml')//entry[marc245h][matches($a, marc300a)]/rdaIRI"/>  
+            </xsl:variable>
+            <xsl:for-each select="$lookup300a-carrier/rdaIRI">
+                <marc:datafield tag="338" ind1=" " ind2=" ">
+                    <marc:subfield code="1">
+                        <xsl:value-of select="."/>
+                    </marc:subfield>
+                    <marc:subfield code="9">
+                        <xsl:text>300a</xsl:text>
                     </marc:subfield>
                 </marc:datafield>
             </xsl:for-each>

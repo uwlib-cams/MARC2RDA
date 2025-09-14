@@ -3,6 +3,27 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
     
+    <!-- test deduplication -->
+    <marc:record>
+        <marc:leader>02042cam a2200421 i 4500</marc:leader>
+        <marc:controlfield tag="007">ad</marc:controlfield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">unmediated</marc:subfield>
+            <marc:subfield code="b">n</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">volume</marc:subfield>
+            <marc:subfield code="b">nc</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
     <marc:record>
         <marc:leader>03407cam a2200661 i 4500</marc:leader>
         <marc:datafield tag="650" ind1=" " ind2=" ">
@@ -171,4 +192,111 @@
         <marc:leader>03407ckm a2200661 i 4500</marc:leader>
     </marc:record>
     
+    <marc:record>
+        <marc:leader>03407cem a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">chart</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cfm a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">jigsaw puzzle</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cem a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">remote sensing image</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407ccm a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">part (1 p.)</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cdm a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">part (20 p.)</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407ckm a2200661 i 4500</marc:leader>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="h">[diagram]</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">diagram</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407ccm a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">jigsaw puzzle</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407ckm a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">album</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407ckm a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">contact sheet</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407ckm a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">silver gelatin print</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cam a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">box</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407ctm a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 page</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407ctm a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">500 p.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407ctm a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">papers</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cam a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">scrapbook</marc:subfield>
+        </marc:datafield>
+    </marc:record>
 </marc:collection>
