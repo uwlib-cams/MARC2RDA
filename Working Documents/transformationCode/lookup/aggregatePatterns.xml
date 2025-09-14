@@ -178,36 +178,6 @@
         </xpath>
    </pattern>
    <pattern>
-      <sort>14</sort>
-      <id>135</id>
-      <name>546$a'In' Mult. Lang. AND 041$a$d Mult. Lang</name>
-      <type>PAM</type>
-      <xpath>
-            (
-                (
-                    marc:datafield[@tag = '041'][count(marc:subfield[@code = 'a']) gt 1]
-                    or
-                    marc:datafield[@tag = '041'][count(marc:subfield[@code = 'd']) gt 1]
-                )
-                or
-                (
-                    marc:datafield[@tag = '041'][matches(marc:subfield[@code = 'a'], '[a-z]{4}')]
-                    or
-                    marc:datafield[@tag = '041'][matches(marc:subfield[@code = 'd'], '[a-z]{4}')]
-                )   
-            )
-            and
-            (
-                exists(
-                    marc:datafield[@tag='546']/marc:subfield[@code='a'][
-                        matches(., '^In [A-Z][a-z]+ and [A-Z][a-z]+')
-                        or matches(., '^In [A-Z][a-z]+, [A-Z][a-z]+')
-                    ]
-                )
-            )
-        </xpath>
-   </pattern>
-   <pattern>
       <sort>15</sort>
       <id>54</id>
       <name>008-BK LitForm Conference</name>
@@ -247,37 +217,6 @@
         </xpath>
    </pattern>
    <pattern>
-      <sort>15</sort>
-      <id>136</id>
-      <name>546$aMult. Lang. 'and/or/list' AND 041$a$d Mult. lang</name>
-      <type>PAM</type>
-      <xpath>
-            (
-                (
-                    marc:datafield[@tag = '041'][count(marc:subfield[@code = 'a']) gt 1]
-                    or
-                    marc:datafield[@tag = '041'][count(marc:subfield[@code = 'd']) gt 1]
-                )
-                or
-                (
-                    marc:datafield[@tag = '041'][matches(marc:subfield[@code = 'a'], '[a-z]{4}')]
-                    or
-                    marc:datafield[@tag = '041'][matches(marc:subfield[@code = 'd'], '[a-z]{4}')]
-                )   
-            )
-            and
-            (
-                exists(
-                    marc:datafield[@tag='546']/marc:subfield[@code='a'][
-                        matches(., '^[A-Z][a-z]+ and [A-Z][a-z]+')
-                        or matches(., '^[A-Z][a-z]+ or [A-Z][a-z]+')
-                        or matches(., '^[A-Z][a-z]+, [A-Z][a-z]+')
-                    ]
-                )
-            )
-        </xpath>
-   </pattern>
-   <pattern>
       <sort>16</sort>
       <id>3</id>
       <type>CAM</type>
@@ -293,40 +232,6 @@
                 not(
                     marc:datafield[@tag='245'][contains(., 'report')]
                 )
-            )
-        </xpath>
-   </pattern>
-   <pattern>
-      <sort>16</sort>
-      <id>137</id>
-      <name>546$aLang with transl. and 041$a$d Mult. lang</name>
-      <type>PAM</type>
-      <xpath>
-            exists(
-                marc:datafield[@tag='546'][
-                    not(some $item in $List546aNotParallelTerms satisfies contains(marc:subfield[@code='a'], $item))
-                    and 
-                    (
-                        matches(marc:subfield[@code='a'], '[A-Z][a-z]+ and translation in [A-Z][a-z]+')
-                        or matches(marc:subfield[@code='a'], '[A-Z][a-z]+ and [A-Z][a-z]+ translation')
-                        or matches(marc:subfield[@code='a'], '[A-Z][a-z]+ text with [A-Z][a-z]+ translation')
-                        or matches(marc:subfield[@code='a'], '[A-Z][a-z]+ texts with [A-Z][a-z]+ translation')
-                    )
-                ]
-            )
-            and
-            (
-                (
-                    marc:datafield[@tag = '041'][count(marc:subfield[@code = 'a']) gt 1]
-                    or
-                    marc:datafield[@tag = '041'][count(marc:subfield[@code = 'd']) gt 1]
-                )
-                or
-                (
-                    marc:datafield[@tag = '041'][matches(marc:subfield[@code = 'a'], '[a-z]{4}')]
-                    or
-                    marc:datafield[@tag = '041'][matches(marc:subfield[@code = 'd'], '[a-z]{4}')]
-                )   
             )
         </xpath>
    </pattern>
@@ -364,50 +269,6 @@
                     or contains(lower-case(.), 'a bill')
                     or contains(lower-case(.), 'paper ')
                 ]
-            )
-        </xpath>
-   </pattern>
-   <pattern>
-      <sort>17</sort>
-      <id>138</id>
-      <name>546$a'Text in' etc. NOT 'only' etc. AND 041$a$d Mult. lang</name>
-      <type>PAM</type>
-      <xpath>
-            exists(
-                marc:datafield[@tag='546'][
-                    not(
-                        matches(marc:subfield[@code='a'], '^The [a-z][a-z]+ work')
-                        or matches(marc:subfield[@code='a'], '^In [A-Z][a-z]+ only')
-                        or matches(marc:subfield[@code='a'], '^In [A-Z][a-z]+ with')
-                        or matches(marc:subfield[@code='a'], '^In [A-Z][a-z]+, with')
-                        or matches(marc:subfield[@code='a'], '^In [A-Z][a-z]+;')
-                        or matches(marc:subfield[@code='a'], 'in [A-Z][a-z]+ only')
-                        or matches(marc:subfield[@code='a'], 'in [A-Z][a-z]+, with')
-                        or matches(marc:subfield[@code='a'], 'in [A-Z][a-z]+;')
-                        or matches(marc:subfield[@code='a'], 'in [A-Z][a-z]+ with')
-                    )
-                    and 
-                    (
-                        matches(marc:subfield[@code='a'], '^Text in')
-                        or matches(marc:subfield[@code='a'], '^Texts in')
-                        or matches(marc:subfield[@code='a'], '^Songs in')
-                        or matches(marc:subfield[@code='a'], '^Sung in')
-                    )
-                ]
-            )
-            and
-            (
-                (
-                    marc:datafield[@tag = '041'][count(marc:subfield[@code = 'a']) gt 1]
-                    or
-                    marc:datafield[@tag = '041'][count(marc:subfield[@code = 'd']) gt 1]
-                )
-                or
-                (
-                    marc:datafield[@tag = '041'][matches(marc:subfield[@code = 'a'], '[a-z]{4}')]
-                    or
-                    marc:datafield[@tag = '041'][matches(marc:subfield[@code = 'd'], '[a-z]{4}')]
-                )   
             )
         </xpath>
    </pattern>
@@ -1305,15 +1166,6 @@
    </pattern>
    <pattern>
       <sort>69</sort>
-      <id>102</id>
-      <name>504 present</name>
-      <type>AAMnotAW</type>
-      <xpath>
-            exists(marc:datafield[@tag='504'])
-        </xpath>
-   </pattern>
-   <pattern>
-      <sort>69</sort>
       <id>108</id>
       <name>501 With</name>
       <type>CAM</type>
@@ -1369,34 +1221,15 @@
         </xpath>
    </pattern>
    <pattern>
-      <sort>70</sort>
-      <id>103</id>
-      <name>500 Index, bibliog, etc.</name>
-      <type>AAMnotAW</type>
-      <xpath>
-            exists(
-                marc:datafield[@tag='500'][
-                    not(marc:subfield[@code='5'])
-                    and
-                    not(marc:subfield[@code='a'][contains(lower-case(.), 'cataloged from')])
-                    and
-                    marc:subfield[@code='a'][
-                        contains(lower-case(.), 'index')
-                        or contains(lower-case(.), 'bibliog')
-                        or contains(lower-case(.), 'filmog')
-                        or contains(lower-case(.), 'discographies')
-                        or contains(lower-case(.), 'discography')
-                        or contains(lower-case(.), 'notes')
-                        or contains(lower-case(.), 'annotations')
-                        or contains(lower-case(.), 'commentar')
-                        or contains(lower-case(.), 'bonus')
-                    ]
-                ]
-            )
-        </xpath>
+      <sort>71</sort>
+      <id>188</id>
+      <name>000/06 Kit</name>
+      <type>CAM</type>
+      <xpath>(substring(marc:leader, 7, 1) = 'o' or (
+            marc:datafield[@tag='245']/marc:subfield[@code='h'][matches(., '\[kit\]')]))</xpath>
    </pattern>
    <pattern>
-      <sort>71</sort>
+      <sort>72</sort>
       <id>66</id>
       <name>300$a Music parts</name>
       <type>PAM</type>
@@ -1411,39 +1244,7 @@
         </xpath>
    </pattern>
    <pattern>
-      <sort>71</sort>
-      <id>105</id>
-      <name>008 BK Index</name>
-      <type>AAMnotAW</type>
-      <xpath>
-            (
-                substring(marc:leader, 7, 1) = 'a'
-                or substring(marc:leader, 7, 1) = 't'
-            )
-            and
-            (
-                not(
-                    substring(marc:leader, 8, 1) = 'b'
-                    or substring(marc:leader, 8, 1) = 'i'
-                    or substring(marc:leader, 8, 1) = 's'
-                )
-            )
-            and
-            (
-                substring(marc:controlfield[@tag='008'], 32, 1) = '1'
-            )
-        </xpath>
-   </pattern>
-   <pattern>
-      <sort>71</sort>
-      <id>188</id>
-      <name>000/06 Kit</name>
-      <type>CAM</type>
-      <xpath>(substring(marc:leader, 7, 1) = 'o' or (
-            marc:datafield[@tag='245']/marc:subfield[@code='h'][matches(., '\[kit\]')]))</xpath>
-   </pattern>
-   <pattern>
-      <sort>72</sort>
+      <sort>73</sort>
       <id>67</id>
       <name>300$e Music parts</name>
       <type>PAM</type>
@@ -1458,31 +1259,7 @@
         </xpath>
    </pattern>
    <pattern>
-      <sort>72</sort>
-      <id>106</id>
-      <name>300$b Supplementary content</name>
-      <type>AAMnotAW</type>
-      <xpath>
-            some $item in $List300bSuppCont satisfies marc:datafield[@tag='300']/marc:subfield[@code='b'][contains(lower-case(.), $item)] 
-        </xpath>
-   </pattern>
-   <pattern>
-      <sort>72</sort>
-      <id>190</id>
-      <name>8XX or 440 present</name>
-      <type>AAM</type>
-      <xpath>
-            (exists(marc:datafield[@tag='800'])
-            or
-            exists(marc:datafield[@tag='810'])
-            or
-            exists(marc:datafield[@tag='811'])
-            or
-            exists(marc:datafield[@tag='830'])
-            )</xpath>
-   </pattern>
-   <pattern>
-      <sort>73</sort>
+      <sort>74</sort>
       <id>68</id>
       <name>6XX$x$v Music parts</name>
       <type>PAM</type>
@@ -1509,16 +1286,7 @@
         </xpath>
    </pattern>
    <pattern>
-      <sort>73</sort>
-      <id>107</id>
-      <name>300$a Supplementary content</name>
-      <type>AAMnotAW</type>
-      <xpath>
-            some $item in $List300aSuppCont satisfies marc:datafield[@tag='300']/marc:subfield[@code='a'][contains(lower-case(.), $item)] 
-        </xpath>
-   </pattern>
-   <pattern>
-      <sort>74</sort>
+      <sort>75</sort>
       <id>69</id>
       <name>6XX$a Parts music</name>
       <type>PAM</type>
@@ -1533,7 +1301,7 @@
         </xpath>
    </pattern>
    <pattern>
-      <sort>75</sort>
+      <sort>76</sort>
       <id>70</id>
       <name>6XX$a Parts music</name>
       <type>PAM</type>
@@ -1564,7 +1332,7 @@
         </xpath>
    </pattern>
    <pattern>
-      <sort>76</sort>
+      <sort>77</sort>
       <id>71</id>
       <name>250$a Mult. language terms</name>
       <type>PAM</type>
@@ -1578,6 +1346,145 @@
                     or contains(lower-case(.), 'multi-lingual')
                     or contains(lower-case(.), 'polyglot')
                 ]
+            )
+        </xpath>
+   </pattern>
+   <pattern>
+      <sort>78</sort>
+      <id>135</id>
+      <name>546$a'In' Mult. Lang. AND 041$a$d Mult. Lang</name>
+      <type>PAM</type>
+      <xpath>
+            (
+            (
+            marc:datafield[@tag = '041'][count(marc:subfield[@code = 'a']) gt 1]
+            or
+            marc:datafield[@tag = '041'][count(marc:subfield[@code = 'd']) gt 1]
+            )
+            or
+            (
+            marc:datafield[@tag = '041'][matches(marc:subfield[@code = 'a'], '[a-z]{4}')]
+            or
+            marc:datafield[@tag = '041'][matches(marc:subfield[@code = 'd'], '[a-z]{4}')]
+            )   
+            )
+            and
+            (
+            exists(
+            marc:datafield[@tag='546']/marc:subfield[@code='a'][
+            matches(., '^In [A-Z][a-z]+ and [A-Z][a-z]+')
+            or matches(., '^In [A-Z][a-z]+, [A-Z][a-z]+')
+            ]
+            )
+            )
+        </xpath>
+   </pattern>
+   <pattern>
+      <sort>79</sort>
+      <id>136</id>
+      <name>546$aMult. Lang. 'and/or/list' AND 041$a$d Mult. lang</name>
+      <type>PAM</type>
+      <xpath>
+            (
+                (
+                    marc:datafield[@tag = '041'][count(marc:subfield[@code = 'a']) gt 1]
+                    or
+                    marc:datafield[@tag = '041'][count(marc:subfield[@code = 'd']) gt 1]
+                )
+                or
+                (
+                    marc:datafield[@tag = '041'][matches(marc:subfield[@code = 'a'], '[a-z]{4}')]
+                    or
+                    marc:datafield[@tag = '041'][matches(marc:subfield[@code = 'd'], '[a-z]{4}')]
+                )   
+            )
+            and
+            (
+                exists(
+                    marc:datafield[@tag='546']/marc:subfield[@code='a'][
+                        matches(., '^[A-Z][a-z]+ and [A-Z][a-z]+')
+                        or matches(., '^[A-Z][a-z]+ or [A-Z][a-z]+')
+                        or matches(., '^[A-Z][a-z]+, [A-Z][a-z]+')
+                    ]
+                )
+            )
+        </xpath>
+   </pattern>
+   <pattern>
+      <sort>80</sort>
+      <id>137</id>
+      <name>546$aLang with transl. and 041$a$d Mult. lang</name>
+      <type>PAM</type>
+      <xpath>
+            exists(
+                marc:datafield[@tag='546'][
+                    not(some $item in $List546aNotParallelTerms satisfies contains(marc:subfield[@code='a'], $item))
+                    and 
+                    (
+                        matches(marc:subfield[@code='a'], '[A-Z][a-z]+ and translation in [A-Z][a-z]+')
+                        or matches(marc:subfield[@code='a'], '[A-Z][a-z]+ and [A-Z][a-z]+ translation')
+                        or matches(marc:subfield[@code='a'], '[A-Z][a-z]+ text with [A-Z][a-z]+ translation')
+                        or matches(marc:subfield[@code='a'], '[A-Z][a-z]+ texts with [A-Z][a-z]+ translation')
+                    )
+                ]
+            )
+            and
+            (
+                (
+                    marc:datafield[@tag = '041'][count(marc:subfield[@code = 'a']) gt 1]
+                    or
+                    marc:datafield[@tag = '041'][count(marc:subfield[@code = 'd']) gt 1]
+                )
+                or
+                (
+                    marc:datafield[@tag = '041'][matches(marc:subfield[@code = 'a'], '[a-z]{4}')]
+                    or
+                    marc:datafield[@tag = '041'][matches(marc:subfield[@code = 'd'], '[a-z]{4}')]
+                )   
+            )
+        </xpath>
+   </pattern>
+   <pattern>
+      <sort>81</sort>
+      <id>138</id>
+      <name>546$a'Text in' etc. NOT 'only' etc. AND 041$a$d Mult. lang</name>
+      <type>PAM</type>
+      <xpath>
+            exists(
+                marc:datafield[@tag='546'][
+                    not(
+                        matches(marc:subfield[@code='a'], '^The [a-z][a-z]+ work')
+                        or matches(marc:subfield[@code='a'], '^In [A-Z][a-z]+ only')
+                        or matches(marc:subfield[@code='a'], '^In [A-Z][a-z]+ with')
+                        or matches(marc:subfield[@code='a'], '^In [A-Z][a-z]+, with')
+                        or matches(marc:subfield[@code='a'], '^In [A-Z][a-z]+;')
+                        or matches(marc:subfield[@code='a'], 'in [A-Z][a-z]+ only')
+                        or matches(marc:subfield[@code='a'], 'in [A-Z][a-z]+, with')
+                        or matches(marc:subfield[@code='a'], 'in [A-Z][a-z]+;')
+                        or matches(marc:subfield[@code='a'], 'in [A-Z][a-z]+ with')
+                    )
+                    and 
+                    (
+                        matches(marc:subfield[@code='a'], '^Text in')
+                        or matches(marc:subfield[@code='a'], '^Texts in')
+                        or matches(marc:subfield[@code='a'], '^Songs in')
+                        or matches(marc:subfield[@code='a'], '^Sung in')
+                    )
+                ]
+            )
+            and
+            (
+                (
+                    marc:datafield[@tag = '041'][count(marc:subfield[@code = 'a']) gt 1]
+                    or
+                    marc:datafield[@tag = '041'][count(marc:subfield[@code = 'd']) gt 1]
+                )
+                or
+                (
+                    marc:datafield[@tag = '041'][matches(marc:subfield[@code = 'a'], '[a-z]{4}')]
+                    or
+                    marc:datafield[@tag = '041'][matches(marc:subfield[@code = 'd'], '[a-z]{4}')]
+                )   
             )
         </xpath>
    </pattern>
@@ -1817,7 +1724,116 @@
         </xpath>
    </pattern>
    <pattern>
+      <sort>90</sort>
+      <id>109</id>
+      <name>300$e Accompanying</name>
+      <type>AAM</type>
+      <xpath>
+            exists(marc:datafield[@tag='300']/marc:subfield[@code='e'])
+        </xpath>
+   </pattern>
+   <pattern>
       <sort>91</sort>
+      <id>192</id>
+      <name>33X More than one</name>
+      <type>AAM</type>
+      <xpath>(count(marc:datafield[@tag = '336']) gt 1)
+            or (count(marc:datafield[@tag = '337']) gt 1)
+            or (count(marc:datafield[@tag = '338']) gt 1)
+        </xpath>
+   </pattern>
+   <pattern>
+      <sort>92</sort>
+      <id>191</id>
+      <name>700-730 Relationships or Title</name>
+      <type>AAM</type>
+      <xpath>
+            exists(marc:datafield[@tag='700']/
+            marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
+            or exists(marc:datafield[@tag='710']/
+            marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
+            exists(marc:datafield[@tag='711']/
+            marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
+            or exists(marc:datafield[@tag='730'])
+        </xpath>
+   </pattern>
+   <pattern>
+      <sort>93</sort>
+      <id>190</id>
+      <name>8XX or 440 present</name>
+      <type>AAM</type>
+      <xpath>
+            (exists(marc:datafield[@tag='800'])
+            or
+            exists(marc:datafield[@tag='810'])
+            or
+            exists(marc:datafield[@tag='811'])
+            or
+            exists(marc:datafield[@tag='830'])
+            )</xpath>
+   </pattern>
+   <pattern>
+      <sort>94</sort>
+      <id>102</id>
+      <name>504 present</name>
+      <type>AAMnotAW</type>
+      <xpath>
+            exists(marc:datafield[@tag='504'])
+        </xpath>
+   </pattern>
+   <pattern>
+      <sort>95</sort>
+      <id>105</id>
+      <name>008 BK Index</name>
+      <type>AAMnotAW</type>
+      <xpath>
+            (
+                substring(marc:leader, 7, 1) = 'a'
+                or substring(marc:leader, 7, 1) = 't'
+            )
+            and
+            (
+                not(
+                    substring(marc:leader, 8, 1) = 'b'
+                    or substring(marc:leader, 8, 1) = 'i'
+                    or substring(marc:leader, 8, 1) = 's'
+                )
+            )
+            and
+            (
+                substring(marc:controlfield[@tag='008'], 32, 1) = '1'
+            )
+        </xpath>
+   </pattern>
+   <pattern>
+      <sort>96</sort>
+      <id>103</id>
+      <name>500 Index, bibliog, etc.</name>
+      <type>AAMnotAW</type>
+      <xpath>
+            exists(
+                marc:datafield[@tag='500'][
+                    not(marc:subfield[@code='5'])
+                    and
+                    not(marc:subfield[@code='a'][contains(lower-case(.), 'cataloged from')])
+                    and
+                    marc:subfield[@code='a'][
+                        contains(lower-case(.), 'index')
+                        or contains(lower-case(.), 'bibliog')
+                        or contains(lower-case(.), 'filmog')
+                        or contains(lower-case(.), 'discographies')
+                        or contains(lower-case(.), 'discography')
+                        or contains(lower-case(.), 'notes')
+                        or contains(lower-case(.), 'annotations')
+                        or contains(lower-case(.), 'commentar')
+                        or contains(lower-case(.), 'bonus')
+                    ]
+                ]
+            )
+        </xpath>
+   </pattern>
+   <pattern>
+      <sort>97</sort>
       <id>110</id>
       <name>500$a Includes</name>
       <type>AAMnotAW</type>
@@ -1851,17 +1867,7 @@
         </xpath>
    </pattern>
    <pattern>
-      <sort>91</sort>
-      <id>192</id>
-      <name>33X More than one</name>
-      <type>AAM</type>
-      <xpath>(count(marc:datafield[@tag = '336']) gt 1)
-            or (count(marc:datafield[@tag = '337']) gt 1)
-            or (count(marc:datafield[@tag = '338']) gt 1)
-        </xpath>
-   </pattern>
-   <pattern>
-      <sort>92</sort>
+      <sort>98</sort>
       <id>111</id>
       <name>500$a Accompanied by</name>
       <type>AAMnotAW</type>
@@ -1894,128 +1900,6 @@
             )
         </xpath>
    </pattern>
-   <pattern>
-      <sort>92</sort>
-      <id>191</id>
-      <name>700-730 Relationships or Title</name>
-      <type>AAM</type>
-      <xpath>
-            exists(marc:datafield[@tag='700']/
-            marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
-            or exists(marc:datafield[@tag='710']/
-            marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
-            exists(marc:datafield[@tag='711']/
-            marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
-            or exists(marc:datafield[@tag='730'])
-        </xpath>
-   </pattern>
-   <pattern>
-      <sort>93</sort>
-      <id>112</id>
-      <name>245$c Introduction, etc.</name>
-      <type>AAMnotAW</type>
-      <xpath>
-            some $item in $List245cIntroductionTerms satisfies marc:datafield[@tag='245']/marc:subfield[@code='c'][contains(lower-case(.), $item)] 
-        </xpath>
-   </pattern>
-   <pattern>
-      <sort>94</sort>
-      <id>114</id>
-      <name>65X$a Sound books, etc.</name>
-      <type>AAMnotAW</type>
-      <xpath>
-            exists(
-                marc:datafield[(@tag, '655')]/marc:subfield[@code='a'][
-                    contains(., 'Sound effects books')
-                    or contains(., 'Sound books')
-                    or contains(., 'Musical books')
-                ]
-            )
-            or
-            exists(
-                marc:datafield[(@tag, '650')]/marc:subfield[@code='a'][
-                    contains(., 'Sound effects books')
-                    or contains(., 'Sound books')
-                    or contains(., 'Musical books')
-                ]
-            )
-        </xpath>
-   </pattern>
-   <pattern>
-      <sort>95</sort>
-      <id>115</id>
-      <name>65X$a Monologues with music, etc.</name>
-      <type>AAMnotAW</type>
-      <xpath>
-            exists(
-                marc:datafield[starts-with(@tag, '65')]/marc:subfield[@code='a'][
-                    contains(., 'Monologues with music')
-                    or contains(., 'Monologues (Music)')
-                    or contains(., 'Video recordings for the hearing impaired')
-                ]
-            )
-        </xpath>
-   </pattern>
-   <pattern>
-      <sort>96</sort>
-      <id>109</id>
-      <name>300$e Accompanying</name>
-      <type>AAM</type>
-      <xpath>
-            exists(marc:datafield[@tag='300']/marc:subfield[@code='e'])
-        </xpath>
-   </pattern>
-   <pattern>
-      <sort>96</sort>
-      <id>117</id>
-      <name>041 Accompanying, etc.</name>
-      <type>AAMnotAW</type>
-      <xpath>
-            exists(
-                marc:datafield[@tag='041'][
-                    marc:subfield[
-                        @code='b'
-                        or @code='e'
-                        or @code='g'
-                        or @code='t'
-                    ]
-                ]
-            )
-        </xpath>
-   </pattern>
-   <pattern>
-      <sort>97</sort>
-      <id>119</id>
-      <name>008 MU Accompanying material</name>
-      <type>AAMnotAW</type>
-      <xpath>
-            (
-                substring(marc:leader, 7, 1) = 'c'
-                or substring(marc:leader, 7, 1) = 'd'
-                or substring(marc:leader, 7, 1) = 'i'
-                or substring(marc:leader, 7, 1) = 'j'
-            )
-            and
-            (
-                matches(substring(marc:controlfield[@tag='008'], 25, 1), '^[a-z]$')
-            )
-        </xpath>
-   </pattern>
-   <!--<pattern>
-      <sort>98</sort>
-      <id>99</id>
-      <name>7XX$e Contributor of, etc.</name>
-      <type>AAM</type>
-      <xpath>
-            exists(
-                marc:datafield[starts-with(@tag, '7')]/marc:subfield[@code='e'][
-                    contains(lower-case(.), 'writer of')
-                    or contains(lower-case(.), 'contributor of')
-                    or contains(lower-case(.), 'contributor to')
-                ]
-            )
-        </xpath>
-   </pattern>-->
    <pattern>
       <sort>99</sort>
       <id>194</id>
@@ -2050,34 +1934,105 @@
             )
         </xpath>
    </pattern>
-   <!--<pattern>
+   <pattern>
+      <sort>100</sort>
+      <id>106</id>
+      <name>300$b Supplementary content</name>
+      <type>AAMnotAW</type>
+      <xpath>
+            some $item in $List300bSuppCont satisfies marc:datafield[@tag='300']/marc:subfield[@code='b'][contains(lower-case(.), $item)] 
+        </xpath>
+   </pattern>
+   <pattern>
+      <sort>101</sort>
+      <id>107</id>
+      <name>300$a Supplementary content</name>
+      <type>AAMnotAW</type>
+      <xpath>
+            some $item in $List300aSuppCont satisfies marc:datafield[@tag='300']/marc:subfield[@code='a'][contains(lower-case(.), $item)] 
+        </xpath>
+   </pattern>
+   <pattern>
+      <sort>102</sort>
+      <id>112</id>
+      <name>245$c Introduction, etc.</name>
+      <type>AAMnotAW</type>
+      <xpath>
+            some $item in $List245cIntroductionTerms satisfies marc:datafield[@tag='245']/marc:subfield[@code='c'][contains(lower-case(.), $item)] 
+        </xpath>
+   </pattern>
+   <pattern>
       <sort>103</sort>
-      <id>121</id>
-      <name>336 Music and text</name>
-      <type>AAM</type>
+      <id>114</id>
+      <name>65X$a Sound books, etc.</name>
+      <type>AAMnotAW</type>
+      <xpath>
+            exists(
+                marc:datafield[(@tag, '655')]/marc:subfield[@code='a'][
+                    contains(., 'Sound effects books')
+                    or contains(., 'Sound books')
+                    or contains(., 'Musical books')
+                ]
+            )
+            or
+            exists(
+                marc:datafield[(@tag, '650')]/marc:subfield[@code='a'][
+                    contains(., 'Sound effects books')
+                    or contains(., 'Sound books')
+                    or contains(., 'Musical books')
+                ]
+            )
+        </xpath>
+   </pattern>
+   <pattern>
+      <sort>104</sort>
+      <id>115</id>
+      <name>65X$a Monologues with music, etc.</name>
+      <type>AAMnotAW</type>
+      <xpath>
+            exists(
+                marc:datafield[starts-with(@tag, '65')]/marc:subfield[@code='a'][
+                    contains(., 'Monologues with music')
+                    or contains(., 'Monologues (Music)')
+                    or contains(., 'Video recordings for the hearing impaired')
+                ]
+            )
+        </xpath>
+   </pattern>
+   <pattern>
+      <sort>105</sort>
+      <id>117</id>
+      <name>041 Accompanying, etc.</name>
+      <type>AAMnotAW</type>
+      <xpath>
+            exists(
+                marc:datafield[@tag='041'][
+                    marc:subfield[
+                        @code='b'
+                        or @code='e'
+                        or @code='g'
+                        or @code='t'
+                    ]
+                ]
+            )
+        </xpath>
+   </pattern>
+   <pattern>
+      <sort>106</sort>
+      <id>119</id>
+      <name>008 MU Accompanying material</name>
+      <type>AAMnotAW</type>
       <xpath>
             (
-                exists(
-                    marc:datafield[@tag='336']/marc:subfield[@code='a'][
-                        contains(lower-case(.), 'performed music')
-                    ]
-                )
+                substring(marc:leader, 7, 1) = 'c'
+                or substring(marc:leader, 7, 1) = 'd'
+                or substring(marc:leader, 7, 1) = 'i'
+                or substring(marc:leader, 7, 1) = 'j'
             )
             and
             (
-                exists(
-                    marc:datafield[@tag='336']/marc:subfield[@code='a'][
-                        contains(lower-case(.), 'text')
-                    ]
-                )
+                matches(substring(marc:controlfield[@tag='008'], 25, 1), '^[a-z]$')
             )
         </xpath>
-   </pattern>-->
-   <!--<pattern>
-      <sort>104</sort>
-      <id>1</id>
-      <name>245 Single graphic</name>
-      <type>SEM</type>
-      <xpath>marc:datafield[@tag='245']/marc:subfield[@code='h'][contains(lower-case(.), 'graphic')] and marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(., '^1 ')]</xpath>
-   </pattern>-->
+   </pattern>
 </patterns>
