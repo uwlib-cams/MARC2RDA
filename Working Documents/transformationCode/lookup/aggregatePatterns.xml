@@ -1755,7 +1755,8 @@
             exists(marc:datafield[@tag='811'])
             or
             exists(marc:datafield[@tag='830'])
-            )</xpath>
+            )
+      </xpath>
    </pattern>
     <pattern>
         <sort>93</sort>
@@ -1769,7 +1770,7 @@
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='710']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
-            exists(marc:datafield[@tag='711']/
+            or exists(marc:datafield[@tag='711']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='730']))
         </xpath>
@@ -1810,7 +1811,7 @@
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='710']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
-            exists(marc:datafield[@tag='711']/
+            or exists(marc:datafield[@tag='711']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='730']))
         </xpath>
@@ -1869,7 +1870,7 @@
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='710']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
-            exists(marc:datafield[@tag='711']/
+            or exists(marc:datafield[@tag='711']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='730']))
         </xpath>
@@ -1938,7 +1939,7 @@
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='710']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
-            exists(marc:datafield[@tag='711']/
+            or exists(marc:datafield[@tag='711']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='730']))
         </xpath>
@@ -2014,7 +2015,7 @@
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='710']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
-            exists(marc:datafield[@tag='711']/
+            or exists(marc:datafield[@tag='711']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='730']))
         </xpath>
@@ -2090,7 +2091,7 @@
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='710']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
-            exists(marc:datafield[@tag='711']/
+            or exists(marc:datafield[@tag='711']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='730']))
         </xpath>
@@ -2141,7 +2142,7 @@
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='710']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
-            exists(marc:datafield[@tag='711']/
+            or exists(marc:datafield[@tag='711']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='730']))
         </xpath>
@@ -2167,7 +2168,7 @@
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='710']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
-            exists(marc:datafield[@tag='711']/
+            or exists(marc:datafield[@tag='711']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='730']))
         </xpath>
@@ -2193,7 +2194,7 @@
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='710']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
-            exists(marc:datafield[@tag='711']/
+            or exists(marc:datafield[@tag='711']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='730']))
         </xpath>
@@ -2233,7 +2234,7 @@
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='710']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
-            exists(marc:datafield[@tag='711']/
+            or exists(marc:datafield[@tag='711']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='730']))
         </xpath>
@@ -2279,7 +2280,7 @@
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='710']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
-            exists(marc:datafield[@tag='711']/
+            or exists(marc:datafield[@tag='711']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='730']))
         </xpath>
@@ -2315,11 +2316,12 @@
             ]
             ]
             )
+            and
             (exists(marc:datafield[@tag='700']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='710']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
-            exists(marc:datafield[@tag='711']/
+            or exists(marc:datafield[@tag='711']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='730']))
         </xpath>
@@ -2363,7 +2365,7 @@
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='710']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
-            exists(marc:datafield[@tag='711']/
+            or exists(marc:datafield[@tag='711']/
             marc:subfield[@code='e' or @code='4' or @code='0' or @code='1' or @code='t'])
             or exists(marc:datafield[@tag='730']))
         </xpath>
