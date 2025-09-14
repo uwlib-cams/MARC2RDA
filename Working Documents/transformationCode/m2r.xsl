@@ -159,7 +159,7 @@
              
              <xsl:choose>
                  <!-- if single work expression or augmentation aggregate, proceed with transform -->
-                 <xsl:when test="$isAggregate = 'sem' or $isAggregate = 'aam'">
+                 <xsl:when test="$isAggregate = 'sem' or $isAggregate = 'aamnotaw'">
                                  
                      <!-- variable for generating unique IRIs - currently date  -->
                      <xsl:variable name="baseID" select="current-dateTime() => string() => m2r:stripAllPunctuation() => encode-for-uri()"/>
@@ -208,7 +208,7 @@
                      <xsl:choose>
                          
                          <!-- SINGLE WE -->
-                         <xsl:when test="$isAggregate = 'sem'">
+                         <xsl:when test="$isAggregate = 'sem' or $isAggregate = 'aamnotaw'">
                              <!-- *****WORKS***** -->
                              <rdf:Description rdf:about="{$mainWorkIRI}">
                                  <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -349,6 +349,14 @@
                              <rdamo:P30135 rdf:resource="{$aggWorkIRI}"/>
                          </xsl:if>
                          
+                         <!-- category for aggregates -->
+                         <xsl:if test="$isAggregate = 'cam' or $isAggregate = 'pam'
+                             or $isAggregate = 'aam' or $isAggregate = 'aamnotaw'">
+                             <rdamd:P30335>
+                                 <xsl:text>Aggregate manifestation</xsl:text>
+                             </rdamd:P30335>
+                         </xsl:if>
+                         
                          <!-- This code can be uncommented to add a manifestation access point to the manifestation description.
                          m2r:mainManifestationAccessPoint() is located in m2r-aps.xsl -->
                          <xsl:variable name="manifestationAP" select="m2r:mainManifestationAccessPoint(.)"/>
@@ -424,6 +432,14 @@
                                  <rdamo:P30135 rdf:resource="{$aggWorkIRI}"/>
                              </xsl:if>
                              
+                             <!-- category for aggregates -->
+                             <xsl:if test="$isAggregate = 'cam' or $isAggregate = 'pam'
+                                 or $isAggregate = 'aam' or $isAggregate = 'aamnotaw'">
+                                 <rdamd:P30335>
+                                     <xsl:text>Aggregate manifestation</xsl:text>
+                                 </rdamd:P30335>
+                             </xsl:if>
+                             
                              <!-- This code can be uncommented to add a manifestation access point to the manifestation description.
                          m2r:mainManifestationAccessPoint() is located in m2r-aps.xsl -->
                              <xsl:variable name="manifestationAP" select="m2r:mainManifestationAccessPoint(.)"/>
@@ -493,7 +509,7 @@
                  <!-- output records that were identified as aggregates in message -->
                  <xsl:otherwise>
                      <xsl:message>
-                         <xsl:text>Record {translate(marc:controlfield[@tag='001'], ' ', '')} ({position()}/{last()}) identified as {$isAggregate} aggregate and was not processed.</xsl:text>
+                         <xsl:text>Record {translate(marc:controlfield[@tag='001'], ' ', '')} identified as {$isAggregate} aggregate and was not processed.</xsl:text>
                      </xsl:message>
                  </xsl:otherwise>
              </xsl:choose>
@@ -501,7 +517,7 @@
         </xsl:when>
             <xsl:otherwise>
                 <xsl:message>
-                    <xsl:text>Record {translate(marc:controlfield[@tag='001'], ' ', '')} ({position()}/{last()}) identified as Tactile and was not processed.</xsl:text>
+                    <xsl:text>Record {translate(marc:controlfield[@tag='001'], ' ', '')} ({position()}/{last()}) identified as Tactile ({$isTactile}) and was not processed.</xsl:text>
                 </xsl:message>
             </xsl:otherwise>
         </xsl:choose>
