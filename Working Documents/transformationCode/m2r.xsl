@@ -79,16 +79,10 @@
     <!-- This template will append corresponding aggregate manifestations based on a sequential pattern matches -->
     <xsl:include href="aggregate.xsl"/>
     
-    <!-- This template matches at the root
-        It's only purpose is to apply-templates to the marc:collection -->
-    <xsl:template match="/">
-        <xsl:apply-templates select="marc:collection"/>
-    </xsl:template>
-    
-    <!-- This template matches the marc:collection 
+    <!-- This template matches the root
         and creates the <rdf:RDF> elements with the necessary namespaces for the resulting document
         if additional namespaces are used they should be added here as well. -->
-    <xsl:template match="marc:collection">
+    <xsl:template match="/">
         <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
             xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
             xmlns:rdaw="http://rdaregistry.info/Elements/w/"
@@ -115,7 +109,7 @@
             xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
             xmlns:skos="http://www.w3.org/2004/02/skos/core#">
             <!-- apply templates to marc:record -->
-            <xsl:apply-templates select="marc:record"/>
+            <xsl:apply-templates select="//marc:record"/>
         </rdf:RDF>
     </xsl:template>
  
