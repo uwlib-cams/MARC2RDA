@@ -825,7 +825,9 @@
             <xsl:when test="ends-with(normalize-space($string), ',')">
                 <xsl:value-of select="normalize-space(substring($string, 1, string-length($string) - 1))"/>
             </xsl:when>
+            <xsl:when test="matches(normalize-space($string), '\.\.\.$')">
                 <xsl:value-of select="normalize-space($string)"/>
+            </xsl:when>
             <xsl:when test="ends-with(normalize-space($string), '.')">
                 <xsl:choose>
                     <xsl:when test="matches($string, ' [\w]\.$')">
