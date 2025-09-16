@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
-         xmlns:fake="http://fakePropertiesForDemo"
+<rdf:RDF xmlns:fake="http://fakePropertiesForDemo"
          xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
          xmlns:rdaa="http://rdaregistry.info/Elements/a/"
          xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
@@ -28,9 +27,7 @@
          xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:uwf="http://universityOfWashington/functions"
-         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test00">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10400>245-test00</rdawd:P10400>
@@ -64,7 +61,7 @@ F245 10 $a Countries of the world. $p Brazil = $b Countries of the world. $p Bra
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test00"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#countriesoftheworldbrazil"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#countriesoftheworldbrazil"/>
-      <rdaed:P20310>Countries of the world. Brazil </rdaed:P20310>
+      <rdaed:P20310>Countries of the world. Brazil</rdaed:P20310>
       <rdaed:P20312>Countries of the world. Brazil</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#countriesoftheworldbrazil">
@@ -109,7 +106,7 @@ F245 10 $a --as others see us
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test0"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#--asothersseeus"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#--asothersseeus"/>
-      <rdaed:P20310>--as others see us </rdaed:P20310>
+      <rdaed:P20310>--as others see us</rdaed:P20310>
       <rdaed:P20312>--as others see us</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#--asothersseeus">
@@ -152,7 +149,7 @@ F245 10 $a Uyghur qătaiami : $b piskhologiyălik năzăr / $c Mămtimin A�
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test1"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#uyghurqa%CC%86taiami"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#uyghurqa%CC%86taiami"/>
-      <rdaed:P20310>Uyghur qătaiami </rdaed:P20310>
+      <rdaed:P20310>Uyghur qătaiami</rdaed:P20310>
       <rdaed:P20312>Uyghur qătaiami</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#uyghurqa%CC%86taiami">
@@ -165,7 +162,7 @@ F245 10 $a Uyghur qătaiami : $b piskhologiyălik năzăr / $c Mămtimin A�
       <rdamd:P30105>Mămtimin Ăla</rdamd:P30105>
       <rdamd:P30156>The Uyghur genocide</rdamd:P30156>
       <rdamd:P30142>a psychological perspective</rdamd:P30142>
-      <rdamd:P30105>Mamtimin Ala</rdamd:P30105>
+      <rdamd:P30105>Mamtimin Ala.</rdamd:P30105>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test01">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -200,7 +197,7 @@ F245 10 $a Uluru / Ayers Rock / $c by John Smith.
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test01"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#uluruayersrock"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#uluruayersrock"/>
-      <rdaed:P20310>Uluru / Ayers Rock </rdaed:P20310>
+      <rdaed:P20310>Uluru / Ayers Rock</rdaed:P20310>
       <rdaed:P20312>Uluru / Ayers Rock</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#uluruayersrock">
@@ -236,23 +233,23 @@ F245 12 $a A report to the legislature for the year ...
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test2"/>
       <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#reporttothelegislaturefortheyear"/>
-      <rdawd:P10328>Report to the legislature for the year .</rdawd:P10328>
-      <rdawd:P10088>A report to the legislature for the year ..</rdawd:P10088>
+      <rdawd:P10328>Report to the legislature for the year ...</rdawd:P10328>
+      <rdawd:P10088>A report to the legislature for the year ...</rdawd:P10088>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#reporttothelegislaturefortheyear">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test2"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#reporttothelegislaturefortheyear"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#reporttothelegislaturefortheyear"/>
-      <rdaed:P20310>Report to the legislature for the year .. </rdaed:P20310>
-      <rdaed:P20312>A report to the legislature for the year ..</rdaed:P20312>
+      <rdaed:P20310>Report to the legislature for the year ...</rdaed:P20310>
+      <rdaed:P20312>A report to the legislature for the year ...</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#reporttothelegislaturefortheyear">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test2"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#reporttothelegislaturefortheyear"/>
-      <rdamd:P30276>Report to the legislature for the year ..</rdamd:P30276>
-      <rdamd:P30156>A report to the legislature for the year ..</rdamd:P30156>
+      <rdamd:P30276>Report to the legislature for the year ...</rdamd:P30276>
+      <rdamd:P30156>A report to the legislature for the year ...</rdamd:P30156>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test3">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -287,7 +284,7 @@ F245 00 $a Concerto for piano, with chamber music ensemble, op. 26 (1961).
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test3"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#concertoforpianowithchambermusicensembleop261961"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#concertoforpianowithchambermusicensembleop261961"/>
-      <rdaed:P20310>Concerto for piano, with chamber music ensemble, op. 26 (1961) </rdaed:P20310>
+      <rdaed:P20310>Concerto for piano, with chamber music ensemble, op. 26 (1961)</rdaed:P20310>
       <rdaed:P20312>Concerto for piano, with chamber music ensemble, op. 26 (1961)</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#concertoforpianowithchambermusicensembleop261961">
@@ -296,50 +293,6 @@ F245 00 $a Concerto for piano, with chamber music ensemble, op. 26 (1961).
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#concertoforpianowithchambermusicensembleop261961"/>
       <rdamd:P30276>Concerto for piano, with chamber music ensemble, op. 26 (1961)</rdamd:P30276>
       <rdamd:P30156>Concerto for piano, with chamber music ensemble, op. 26 (1961)</rdamd:P30156>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test4">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test4</rdawd:P10400>
-      <rdawd:P10004>Metadata work</rdawd:P10004>
-      <rdawd:P10002>transform/wor#marc245-test4</rdawd:P10002>
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test4"/>
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#seventeenpoems"/>
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#seventeenpoems"/>
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#seventeenpoems"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test4">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test4"/>
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
-      <rdamd:P30004>transform/man#marc245-test4</rdamd:P30004>
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
-      <rdamd:P30137>F 11111nam a2200553ui 4500
-F001 245-test4
-F245 10 $a [Seventeen poems].
-</rdamd:P30137>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#seventeenpoems">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test4"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#seventeenpoems"/>
-      <rdawd:P10328>Seventeen poems</rdawd:P10328>
-      <rdawd:P10088>Seventeen poems</rdawd:P10088>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#seventeenpoems">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test4"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#seventeenpoems"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#seventeenpoems"/>
-      <rdaed:P20310>Seventeen poems </rdaed:P20310>
-      <rdaed:P20312>Seventeen poems</rdaed:P20312>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#seventeenpoems">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test4"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#seventeenpoems"/>
-      <rdamd:P30276>Seventeen poems</rdamd:P30276>
-      <rdamd:P30156>Seventeen poems</rdamd:P30156>
-      <rdamd:P30137>Title proper "Seventeen poems" is assigned by the cataloguing agency.</rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test5">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -374,7 +327,7 @@ F245 00 $a [Diary].
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test5"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#diary"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#diary"/>
-      <rdaed:P20310>Diary </rdaed:P20310>
+      <rdaed:P20310>Diary</rdaed:P20310>
       <rdaed:P20312>Diary</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#diary">
@@ -418,7 +371,7 @@ F245 00 $a [Diary]
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test6"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#diary"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#diary"/>
-      <rdaed:P20310>Diary </rdaed:P20310>
+      <rdaed:P20310>Diary</rdaed:P20310>
       <rdaed:P20312>Diary</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#diary">
@@ -462,7 +415,7 @@ F245 10 $a Cancer research : $b official organ of the American Association for C
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test7"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#cancerresearch"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#cancerresearch"/>
-      <rdaed:P20310>Cancer research </rdaed:P20310>
+      <rdaed:P20310>Cancer research</rdaed:P20310>
       <rdaed:P20312>Cancer research</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#cancerresearch">
@@ -471,7 +424,7 @@ F245 10 $a Cancer research : $b official organ of the American Association for C
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#cancerresearch"/>
       <rdamd:P30276>Cancer research</rdamd:P30276>
       <rdamd:P30156>Cancer research</rdamd:P30156>
-      <rdamd:P30142>official organ of the American Association for Cancer Research, Inc</rdamd:P30142>
+      <rdamd:P30142>official organ of the American Association for Cancer Research, Inc.</rdamd:P30142>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test8">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -506,7 +459,7 @@ F245 10 $a ETZ : $b ...
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test8"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#etz"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#etz"/>
-      <rdaed:P20310>ETZ </rdaed:P20310>
+      <rdaed:P20310>ETZ</rdaed:P20310>
       <rdaed:P20312>ETZ</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#etz">
@@ -515,7 +468,7 @@ F245 10 $a ETZ : $b ...
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#etz"/>
       <rdamd:P30276>ETZ</rdamd:P30276>
       <rdamd:P30156>ETZ</rdamd:P30156>
-      <rdamd:P30142>..</rdamd:P30142>
+      <rdamd:P30142>...</rdamd:P30142>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test9">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -550,7 +503,7 @@ F245 10 $a Trade Union Fellowship Program : $b [announcement].
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test9"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#tradeunionfellowshipprogram"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#tradeunionfellowshipprogram"/>
-      <rdaed:P20310>Trade Union Fellowship Program </rdaed:P20310>
+      <rdaed:P20310>Trade Union Fellowship Program</rdaed:P20310>
       <rdaed:P20312>Trade Union Fellowship Program</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#tradeunionfellowshipprogram">
@@ -595,7 +548,7 @@ F245 10 $a Rock mechanics : $b journal of the International Society for Rock Mec
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test10"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#rockmechanics"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#rockmechanics"/>
-      <rdaed:P20310>Rock mechanics </rdaed:P20310>
+      <rdaed:P20310>Rock mechanics</rdaed:P20310>
       <rdaed:P20312>Rock mechanics</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#rockmechanics">
@@ -640,7 +593,7 @@ F245 15 $a Tōn Diōnos Rōmaikōn historiōn eikositria biblia = $b Dionis Roma
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test11"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#i%C5%8Dnosr%C5%8Dmaik%C5%8Dnhistori%C5%8Dneikositriabiblia"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#i%C5%8Dnosr%C5%8Dmaik%C5%8Dnhistori%C5%8Dneikositriabiblia"/>
-      <rdaed:P20310>Iōnos Rōmaikōn historiōn eikositria biblia </rdaed:P20310>
+      <rdaed:P20310>Iōnos Rōmaikōn historiōn eikositria biblia</rdaed:P20310>
       <rdaed:P20312>Tōn Diōnos Rōmaikōn historiōn eikositria biblia</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#i%C5%8Dnosr%C5%8Dmaik%C5%8Dnhistori%C5%8Dneikositriabiblia">
@@ -684,7 +637,7 @@ F245 15 $a Tōn meionotētōn eunoia : $b mythistorēma / $c Spyrou Gkrintzou.
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test12"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#eionot%C4%93t%C5%8Dneunoia"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#eionot%C4%93t%C5%8Dneunoia"/>
-      <rdaed:P20310>Eionotētōn eunoia </rdaed:P20310>
+      <rdaed:P20310>Eionotētōn eunoia</rdaed:P20310>
       <rdaed:P20312>Tōn meionotētōn eunoia</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#eionot%C4%93t%C5%8Dneunoia">
@@ -729,7 +682,7 @@ F245 14 $a The charity ball : $b a comedy in four acts : $k typescript, $f 1889 
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test13"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#charityball"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#charityball"/>
-      <rdaed:P20310>Charity ball </rdaed:P20310>
+      <rdaed:P20310>Charity ball</rdaed:P20310>
       <rdaed:P20312>The charity ball</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#charityball">
@@ -742,184 +695,6 @@ F245 14 $a The charity ball : $b a comedy in four acts : $k typescript, $f 1889 
       <rdamd:P30105>by David Belasco and Henry C. DeMille</rdamd:P30105>
       <rdamd:P30278>1889</rdamd:P30278>
       <rdamd:P30137>Typescript.</rdamd:P30137>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test14">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test14</rdawd:P10400>
-      <rdawd:P10004>Metadata work</rdawd:P10004>
-      <rdawd:P10002>transform/wor#marc245-test14</rdawd:P10002>
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test14"/>
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#lovefromjoypartiii1987-1995atthebungalow"/>
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#lovefromjoypartiii1987-1995atthebungalow"/>
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#lovefromjoypartiii1987-1995atthebungalow"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test14">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test14"/>
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
-      <rdamd:P30004>transform/man#marc245-test14</rdamd:P30004>
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
-      <rdamd:P30137>F 11111nam a2200553ui 4500
-F001 245-test14
-F245 00 $a Love from Joy : $b letters from a farmer’s wife. $n Part III, $p 1987-1995, At the bungalow.
-</rdamd:P30137>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#lovefromjoypartiii1987-1995atthebungalow">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test14"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#lovefromjoypartiii1987-1995atthebungalow"/>
-      <rdawd:P10328>Love from Joy Part III, 1987-1995, At the bungalow</rdawd:P10328>
-      <rdawd:P10088>Love from Joy Part III, 1987-1995, At the bungalow</rdawd:P10088>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#lovefromjoypartiii1987-1995atthebungalow">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test14"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#lovefromjoypartiii1987-1995atthebungalow"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#lovefromjoypartiii1987-1995atthebungalow"/>
-      <rdaed:P20310>Love from Joy Part III, 1987-1995, At the bungalow </rdaed:P20310>
-      <rdaed:P20312>Love from Joy Part III, 1987-1995, At the bungalow</rdaed:P20312>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#lovefromjoypartiii1987-1995atthebungalow">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test14"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#lovefromjoypartiii1987-1995atthebungalow"/>
-      <rdamd:P30276>Love from Joy Part III, 1987-1995, At the bungalow</rdamd:P30276>
-      <rdamd:P30156>Love from Joy Part III, 1987-1995, At the bungalow</rdamd:P30156>
-      <rdamd:P30142>letters from a farmer’s wife.</rdamd:P30142>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test15">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test15</rdawd:P10400>
-      <rdawd:P10004>Metadata work</rdawd:P10004>
-      <rdawd:P10002>transform/wor#marc245-test15</rdawd:P10002>
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test15"/>
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#proceedings"/>
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#proceedings"/>
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#proceedings"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test15">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test15"/>
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
-      <rdamd:P30004>transform/man#marc245-test15</rdamd:P30004>
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
-      <rdamd:P30137>F 11111nam a2200553ui 4500
-F001 245-test15
-F245 00 $a Proceedings / $c Fake Society
-</rdamd:P30137>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#proceedings">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test15"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#proceedings"/>
-      <rdawd:P10328>Proceedings</rdawd:P10328>
-      <rdawd:P10088>Proceedings</rdawd:P10088>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#proceedings">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test15"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#proceedings"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#proceedings"/>
-      <rdaed:P20310>Proceedings </rdaed:P20310>
-      <rdaed:P20312>Proceedings</rdaed:P20312>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#proceedings">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test15"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#proceedings"/>
-      <rdamd:P30276>Proceedings</rdamd:P30276>
-      <rdamd:P30156>Proceedings</rdamd:P30156>
-      <rdamd:P30105>Fake Society</rdamd:P30105>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test16">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test16</rdawd:P10400>
-      <rdawd:P10004>Metadata work</rdawd:P10004>
-      <rdawd:P10002>transform/wor#marc245-test16</rdawd:P10002>
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test16"/>
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#projectdirectory"/>
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#projectdirectory"/>
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#projectdirectory"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test16">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test16"/>
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
-      <rdamd:P30004>transform/man#marc245-test16</rdamd:P30004>
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
-      <rdamd:P30137>F 11111nam a2200553ui 4500
-F001 245-test16
-F245 00 $a Project directory / $c TDC = Répertoire des projets / CDT.
-</rdamd:P30137>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#projectdirectory">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test16"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#projectdirectory"/>
-      <rdawd:P10328>Project directory</rdawd:P10328>
-      <rdawd:P10088>Project directory</rdawd:P10088>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#projectdirectory">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test16"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#projectdirectory"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#projectdirectory"/>
-      <rdaed:P20310>Project directory </rdaed:P20310>
-      <rdaed:P20312>Project directory</rdaed:P20312>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#projectdirectory">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test16"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#projectdirectory"/>
-      <rdamd:P30276>Project directory</rdamd:P30276>
-      <rdamd:P30156>Project directory</rdamd:P30156>
-      <rdamd:P30105>TDC</rdamd:P30105>
-      <rdamd:P30156>Répertoire des projets</rdamd:P30156>
-      <rdamd:P30105>CDT</rdamd:P30105>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test17">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test17</rdawd:P10400>
-      <rdawd:P10004>Metadata work</rdawd:P10004>
-      <rdawd:P10002>transform/wor#marc245-test17</rdawd:P10002>
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test17"/>
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#short-harrison-symmesfamilypapers"/>
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#short-harrison-symmesfamilypapers"/>
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#short-harrison-symmesfamilypapers"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test17">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test17"/>
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
-      <rdamd:P30004>transform/man#marc245-test17</rdamd:P30004>
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
-      <rdamd:P30137>F 11111nam a2200553ui 4500
-F001 245-test17
-F245 00 $a Short-Harrison-Symmes family papers, $f 1760-1878.
-</rdamd:P30137>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#short-harrison-symmesfamilypapers">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test17"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#short-harrison-symmesfamilypapers"/>
-      <rdawd:P10328>Short-Harrison-Symmes family papers</rdawd:P10328>
-      <rdawd:P10088>Short-Harrison-Symmes family papers,</rdawd:P10088>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#short-harrison-symmesfamilypapers">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test17"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#short-harrison-symmesfamilypapers"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#short-harrison-symmesfamilypapers"/>
-      <rdaed:P20310>Short-Harrison-Symmes family papers, </rdaed:P20310>
-      <rdaed:P20312>Short-Harrison-Symmes family papers,</rdaed:P20312>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#short-harrison-symmesfamilypapers">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test17"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#short-harrison-symmesfamilypapers"/>
-      <rdamd:P30276>Short-Harrison-Symmes family papers,</rdamd:P30276>
-      <rdamd:P30156>Short-Harrison-Symmes family papers,</rdamd:P30156>
-      <rdamd:P30278>1760-1878</rdamd:P30278>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test18">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -954,7 +729,7 @@ F245 14 $a The New Lost City Ramblers with Cousin Emmy $h [sound recording].
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test18"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#newlostcityramblerswithcousinemmy"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#newlostcityramblerswithcousinemmy"/>
-      <rdaed:P20310>New Lost City Ramblers with Cousin Emmy </rdaed:P20310>
+      <rdaed:P20310>New Lost City Ramblers with Cousin Emmy</rdaed:P20310>
       <rdaed:P20312>The New Lost City Ramblers with Cousin Emmy</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#newlostcityramblerswithcousinemmy">
@@ -973,7 +748,7 @@ F245 14 $a The New Lost City Ramblers with Cousin Emmy $h [sound recording].
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test19"/>
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#bureau"/>
       <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#bureau"/>
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#bureau"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#bureaufilmstrip"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test19">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
@@ -996,111 +771,21 @@ F245 03 $a Le Bureau $h [filmstrip] = $b La Oficina = Das Büro.
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#bureau">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test19"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#bureau"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#bureaufilmstrip"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#bureau"/>
-      <rdaed:P20310>Bureau </rdaed:P20310>
+      <rdaed:P20310>Bureau</rdaed:P20310>
       <rdaed:P20312>Le Bureau</rdaed:P20312>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#bureau">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#bureaufilmstrip">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test19"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#bureau"/>
-      <rdamd:P30276>Bureau</rdamd:P30276>
+      <rdamd:P30276>Bureau (Filmstrip)</rdamd:P30276>
       <rdamd:P30156>Le Bureau</rdamd:P30156>
       <rdamd:P30156>La Oficina</rdamd:P30156>
       <rdamd:P30156>Das Büro</rdamd:P30156>
       <rdamd:P30335>filmstrip</rdamd:P30335>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test20">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test20</rdawd:P10400>
-      <rdawd:P10004>Metadata work</rdawd:P10004>
-      <rdawd:P10002>transform/wor#marc245-test20</rdawd:P10002>
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test20"/>
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#oklahoma"/>
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#oklahoma"/>
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#oklahoma"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test20">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test20"/>
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
-      <rdamd:P30004>transform/man#marc245-test20</rdamd:P30004>
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
-      <rdamd:P30137>F 11111nam a2200553ui 4500
-F001 245-test20
-F245 00 $a Oklahoma $h [sound recording] ; $b Carousel ; South Pacific ; Yokels in Paradise
-</rdamd:P30137>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#oklahoma">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test20"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#oklahoma"/>
-      <rdawd:P10328>Oklahoma</rdawd:P10328>
-      <rdawd:P10088>Oklahoma</rdawd:P10088>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#oklahoma">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test20"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#oklahoma"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#oklahoma"/>
-      <rdaed:P20310>Oklahoma </rdaed:P20310>
-      <rdaed:P20312>Oklahoma</rdaed:P20312>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#oklahoma">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test20"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#oklahoma"/>
-      <rdamd:P30276>Oklahoma</rdamd:P30276>
-      <rdamd:P30156>Oklahoma</rdamd:P30156>
-      <rdamd:P30142>Carousel ; South Pacific ; Yokels in Paradise</rdamd:P30142>
-      <rdamd:P30335>sound recording</rdamd:P30335>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test21">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test21</rdawd:P10400>
-      <rdawd:P10004>Metadata work</rdawd:P10004>
-      <rdawd:P10002>transform/wor#marc245-test21</rdawd:P10002>
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test21"/>
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#mer"/>
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#mer"/>
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#mer"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test21">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test21"/>
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
-      <rdamd:P30004>transform/man#marc245-test21</rdamd:P30004>
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
-      <rdamd:P30137>F 11111nam a2200553ui 4500
-F001 245-test21
-F245 03 $a La mer $h [sound recording] ; $b Khamma ; Rhapsody for clarinet and orchestra / $c Claude Debussy.
-</rdamd:P30137>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#mer">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test21"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#mer"/>
-      <rdawd:P10328>Mer</rdawd:P10328>
-      <rdawd:P10088>La mer</rdawd:P10088>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#mer">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test21"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#mer"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#mer"/>
-      <rdaed:P20310>Mer </rdaed:P20310>
-      <rdaed:P20312>La mer</rdaed:P20312>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#mer">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test21"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#mer"/>
-      <rdamd:P30276>Mer</rdamd:P30276>
-      <rdamd:P30156>La mer</rdamd:P30156>
-      <rdamd:P30142>Khamma ; Rhapsody for clarinet and orchestra</rdamd:P30142>
-      <rdamd:P30105>Claude Debussy</rdamd:P30105>
-      <rdamd:P30335>sound recording</rdamd:P30335>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1036"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test22">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -1135,7 +820,7 @@ F245 00 $a $h [sound recording] ; $b inet and orchestra / $c Claude Debussy.
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test22"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
-      <rdaed:P20310> </rdaed:P20310>
+      <rdaed:P20310/>
       <rdaed:P20312/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
@@ -1146,52 +831,6 @@ F245 00 $a $h [sound recording] ; $b inet and orchestra / $c Claude Debussy.
       <rdamd:P30156/>
       <rdamd:P30142>inet and orchestra</rdamd:P30142>
       <rdamd:P30105>Claude Debussy</rdamd:P30105>
-      <rdamd:P30335>sound recording</rdamd:P30335>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test23">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test23</rdawd:P10400>
-      <rdawd:P10004>Metadata work</rdawd:P10004>
-      <rdawd:P10002>transform/wor#marc245-test23</rdawd:P10002>
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test23"/>
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#concertoperpianon21k467"/>
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#concertoperpianon21k467"/>
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#concertoperpianon21k467"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test23">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test23"/>
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
-      <rdamd:P30004>transform/man#marc245-test23</rdamd:P30004>
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
-      <rdamd:P30137>F 11111nam a2200553ui 4500
-F001 245-test23
-F245 00 $a Concerto per piano n. 21, K 467 $h [sound recording] ; $c W.A. Mozart. L’assedio di Corinto. Ouverture / G. Rossini.
-</rdamd:P30137>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#concertoperpianon21k467">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test23"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#concertoperpianon21k467"/>
-      <rdawd:P10328>Concerto per piano n. 21, K 467</rdawd:P10328>
-      <rdawd:P10088>Concerto per piano n. 21, K 467</rdawd:P10088>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#concertoperpianon21k467">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test23"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#concertoperpianon21k467"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#concertoperpianon21k467"/>
-      <rdaed:P20310>Concerto per piano n. 21, K 467 </rdaed:P20310>
-      <rdaed:P20312>Concerto per piano n. 21, K 467</rdaed:P20312>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#concertoperpianon21k467">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test23"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#concertoperpianon21k467"/>
-      <rdamd:P30276>Concerto per piano n. 21, K 467</rdamd:P30276>
-      <rdamd:P30156>Concerto per piano n. 21, K 467</rdamd:P30156>
-      <rdamd:P30105>W.A. Mozart. L’assedio di Corinto. Ouverture</rdamd:P30105>
-      <rdamd:P30105>G. Rossini</rdamd:P30105>
       <rdamd:P30335>sound recording</rdamd:P30335>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test24">
@@ -1227,7 +866,7 @@ F245 10 $a Four years at Yale : $k diaries, $f 1903 Sept. 16-1907 Oct. 5.
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test24"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#fouryearsatyale"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#fouryearsatyale"/>
-      <rdaed:P20310>Four years at Yale </rdaed:P20310>
+      <rdaed:P20310>Four years at Yale</rdaed:P20310>
       <rdaed:P20312>Four years at Yale</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#fouryearsatyale">
@@ -1246,8 +885,8 @@ F245 10 $a Four years at Yale : $k diaries, $f 1903 Sept. 16-1907 Oct. 5.
       <rdawd:P10002>transform/wor#marc245-test25</rdawd:P10002>
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test25"/>
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#pl17hearingfilesdistrict6"/>
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#pl17hearingfilesdistrict6"/>
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#pl17hearingfilesdistrict6"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#pl17hearingfilesdistrict6text"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#pl17hearingfilesdistrict6microform"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test25">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
@@ -1263,23 +902,24 @@ F245 00 $a PL 17 Hearing Files $k Case Files $f 1974 $p District 6 $h microfilm 
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#pl17hearingfilesdistrict6">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test25"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#pl17hearingfilesdistrict6"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#pl17hearingfilesdistrict6text"/>
       <rdawd:P10328>PL 17 Hearing Files District 6</rdawd:P10328>
       <rdawd:P10088>PL 17 Hearing Files District 6</rdawd:P10088>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#pl17hearingfilesdistrict6">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#pl17hearingfilesdistrict6text">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test25"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#pl17hearingfilesdistrict6"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#pl17hearingfilesdistrict6microform"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#pl17hearingfilesdistrict6"/>
-      <rdaed:P20310>PL 17 Hearing Files District 6 </rdaed:P20310>
+      <rdaed:P20310>PL 17 Hearing Files District 6 (Text)</rdaed:P20310>
       <rdaed:P20312>PL 17 Hearing Files District 6</rdaed:P20312>
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#pl17hearingfilesdistrict6">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#pl17hearingfilesdistrict6microform">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test25"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#pl17hearingfilesdistrict6"/>
-      <rdamd:P30276>PL 17 Hearing Files District 6</rdamd:P30276>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#pl17hearingfilesdistrict6text"/>
+      <rdamd:P30276>PL 17 Hearing Files District 6 (Microform)</rdamd:P30276>
       <rdamd:P30156>PL 17 Hearing Files District 6</rdamd:P30156>
       <rdamd:P30278>1974</rdamd:P30278>
       <rdamd:P30335>microfilm (jacketted in fiche)</rdamd:P30335>
@@ -1318,7 +958,7 @@ F245 10 $a Faust. $n Part one.
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test26"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#faustpartone"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#faustpartone"/>
-      <rdaed:P20310>Faust. Part one </rdaed:P20310>
+      <rdaed:P20310>Faust. Part one</rdaed:P20310>
       <rdaed:P20312>Faust. Part one</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#faustpartone">
@@ -1361,7 +1001,7 @@ F245 00 $a Management report. $n Part I / $c U.S. Navy's Military Sealift Comman
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test27"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#managementreportparti"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#managementreportparti"/>
-      <rdaed:P20310>Management report. Part I </rdaed:P20310>
+      <rdaed:P20310>Management report. Part I</rdaed:P20310>
       <rdaed:P20312>Management report. Part I</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#managementreportparti">
@@ -1405,7 +1045,7 @@ F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheite
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test28"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#zentralblattf%C3%BCrbakteriologieparasitenkundeinfektionskrankheitenundhygiene1abtoriginalereihebhygienekrankenhaushygienebetriebshygienepr%C3%A4ventivemedizin"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#zentralblattf%C3%BCrbakteriologieparasitenkundeinfektionskrankheitenundhygiene1abtoriginalereihebhygienekrankenhaushygienebetriebshygienepr%C3%A4ventivemedizin"/>
-      <rdaed:P20310>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. 1. Abt. Originale. Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin </rdaed:P20310>
+      <rdaed:P20310>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. 1. Abt. Originale. Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</rdaed:P20310>
       <rdaed:P20312>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. 1. Abt. Originale. Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#zentralblattf%C3%BCrbakteriologieparasitenkundeinfektionskrankheitenundhygiene1abtoriginalereihebhygienekrankenhaushygienebetriebshygienepr%C3%A4ventivemedizin">
@@ -1448,7 +1088,7 @@ F245 00 $a Dissertation abstracts. $n A, $p The humanities and social sciences.
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test29"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#dissertationabstractsathehumanitiesandsocialsciences"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#dissertationabstractsathehumanitiesandsocialsciences"/>
-      <rdaed:P20310>Dissertation abstracts. A, The humanities and social sciences </rdaed:P20310>
+      <rdaed:P20310>Dissertation abstracts. A, The humanities and social sciences</rdaed:P20310>
       <rdaed:P20312>Dissertation abstracts. A, The humanities and social sciences</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#dissertationabstractsathehumanitiesandsocialsciences">
@@ -1491,7 +1131,7 @@ F245 00 $a Heritage Books archives. $p Underwood biographical dictionary. $n Vol
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test30"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#heritagebooksarchivesunderwoodbiographicaldictionaryvolumes1%262revised"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#heritagebooksarchivesunderwoodbiographicaldictionaryvolumes1%262revised"/>
-      <rdaed:P20310>Heritage Books archives. Underwood biographical dictionary. Volumes 1 &amp; 2 revised </rdaed:P20310>
+      <rdaed:P20310>Heritage Books archives. Underwood biographical dictionary. Volumes 1 &amp; 2 revised</rdaed:P20310>
       <rdaed:P20312>Heritage Books archives. Underwood biographical dictionary. Volumes 1 &amp; 2 revised</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#heritagebooksarchivesunderwoodbiographicaldictionaryvolumes1%262revised">
@@ -1536,7 +1176,7 @@ F245 00 $a Annual report of the Minister of Supply and Service Canada under the 
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test31"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#annualreportoftheministerofsupplyandservicecanadaunderthecorporationsandlabourunionsreturnsactpartiilabourunions"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#annualreportoftheministerofsupplyandservicecanadaunderthecorporationsandlabourunionsreturnsactpartiilabourunions"/>
-      <rdaed:P20310>Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. Part II, Labour unions </rdaed:P20310>
+      <rdaed:P20310>Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. Part II, Labour unions</rdaed:P20310>
       <rdaed:P20312>Annual report of the Minister of Supply and Service Canada under the Corporations and Labour Unions Returns Act. Part II, Labour unions</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#annualreportoftheministerofsupplyandservicecanadaunderthecorporationsandlabourunionsreturnsactpartiilabourunions">
@@ -1580,7 +1220,7 @@ F245 10 $a Advanced calculus. $p Student handbook.
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test32"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#advancedcalculusstudenthandbook"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#advancedcalculusstudenthandbook"/>
-      <rdaed:P20310>Advanced calculus. Student handbook </rdaed:P20310>
+      <rdaed:P20310>Advanced calculus. Student handbook</rdaed:P20310>
       <rdaed:P20312>Advanced calculus. Student handbook</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#advancedcalculusstudenthandbook">
@@ -1623,7 +1263,7 @@ F245 10 $a Internationale Strassenkarte. $p Europe 1:2.5 Mio. : $b mit Register 
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test33"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#internationalestrassenkarteeurope125mio"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#internationalestrassenkarteeurope125mio"/>
-      <rdaed:P20310>Internationale Strassenkarte. Europe 1:2.5 Mio. </rdaed:P20310>
+      <rdaed:P20310>Internationale Strassenkarte. Europe 1:2.5 Mio.</rdaed:P20310>
       <rdaed:P20312>Internationale Strassenkarte. Europe 1:2.5 Mio.</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#internationalestrassenkarteeurope125mio">
@@ -1636,52 +1276,6 @@ F245 10 $a Internationale Strassenkarte. $p Europe 1:2.5 Mio. : $b mit Register 
       <rdamd:P30156>International road map. Europe, 1:2.5 mio</rdamd:P30156>
       <rdamd:P30142>with index</rdamd:P30142>
       <rdamd:P30105>RV Reise- und Verkehrsverlag</rdamd:P30105>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test34">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test34</rdawd:P10400>
-      <rdawd:P10004>Metadata work</rdawd:P10004>
-      <rdawd:P10002>transform/wor#marc245-test34</rdawd:P10002>
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test34"/>
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#islandseriespenrhynbethymetry"/>
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#islandseriespenrhynbethymetry"/>
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#islandseriespenrhynbethymetry"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test34">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test34"/>
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
-      <rdamd:P30004>transform/man#marc245-test34</rdamd:P30004>
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
-      <rdamd:P30137>F 11111nam a2200553ui 4500
-F001 245-test34
-F245 10 $a Island series. $p Penrhyn, bethymetry / $c compilation by K.B. Lewis, P. Larkin, and T.T. Rongo ; bathymetric compilation and contouring by K.B. Lewis, T.T. Rongo and A.T. Utanga ; drawn by S.C. Glover.
-</rdamd:P30137>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#islandseriespenrhynbethymetry">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test34"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#islandseriespenrhynbethymetry"/>
-      <rdawd:P10328>Island series. Penrhyn, bethymetry</rdawd:P10328>
-      <rdawd:P10088>Island series. Penrhyn, bethymetry</rdawd:P10088>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#islandseriespenrhynbethymetry">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test34"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#islandseriespenrhynbethymetry"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#islandseriespenrhynbethymetry"/>
-      <rdaed:P20310>Island series. Penrhyn, bethymetry </rdaed:P20310>
-      <rdaed:P20312>Island series. Penrhyn, bethymetry</rdaed:P20312>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#islandseriespenrhynbethymetry">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test34"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#islandseriespenrhynbethymetry"/>
-      <rdamd:P30276>Island series. Penrhyn, bethymetry</rdamd:P30276>
-      <rdamd:P30156>Island series. Penrhyn, bethymetry</rdamd:P30156>
-      <rdamd:P30105>compilation by K.B. Lewis, P. Larkin, and T.T. Rongo</rdamd:P30105>
-      <rdamd:P30105>bathymetric compilation and contouring by K.B. Lewis, T.T. Rongo and A.T. Utanga</rdamd:P30105>
-      <rdamd:P30105>drawn by S.C. Glover</rdamd:P30105>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test35">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -1716,7 +1310,7 @@ F245 00 $a Deutsche Bibliographie. $p Wöchentliches Verzeichnis. $n Reihe B, $p
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test35"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#deutschebibliographiew%C3%B6chentlichesverzeichnisreihebbeilageerscheinungenausserhalbdesverlagsbuchhandels"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#deutschebibliographiew%C3%B6chentlichesverzeichnisreihebbeilageerscheinungenausserhalbdesverlagsbuchhandels"/>
-      <rdaed:P20310>Deutsche Bibliographie. Wöchentliches Verzeichnis. Reihe B, Beilage, Erscheinungen ausserhalb des Verlagsbuchhandels </rdaed:P20310>
+      <rdaed:P20310>Deutsche Bibliographie. Wöchentliches Verzeichnis. Reihe B, Beilage, Erscheinungen ausserhalb des Verlagsbuchhandels</rdaed:P20310>
       <rdaed:P20312>Deutsche Bibliographie. Wöchentliches Verzeichnis. Reihe B, Beilage, Erscheinungen ausserhalb des Verlagsbuchhandels</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#deutschebibliographiew%C3%B6chentlichesverzeichnisreihebbeilageerscheinungenausserhalbdesverlagsbuchhandels">
@@ -1760,7 +1354,7 @@ F245 00 $a Portals to the world. $p Selected Internet resources. $p Maldives $h 
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test36"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#portalstotheworldselectedinternetresourcesmaldives"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#portalstotheworldselectedinternetresourcesmaldives"/>
-      <rdaed:P20310>Portals to the world. Selected Internet resources. Maldives </rdaed:P20310>
+      <rdaed:P20310>Portals to the world. Selected Internet resources. Maldives</rdaed:P20310>
       <rdaed:P20312>Portals to the world. Selected Internet resources. Maldives</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#portalstotheworldselectedinternetresourcesmaldives">
@@ -1779,7 +1373,7 @@ F245 00 $a Portals to the world. $p Selected Internet resources. $p Maldives $h 
       <rdawd:P10002>transform/wor#marc245-test37</rdawd:P10002>
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test37"/>
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#director%27sreportoftheassociationofinsuranceadjusters"/>
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#director%27sreportoftheassociationofinsuranceadjusters"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#director%27sreportoftheassociationofinsuranceadjustersmemberrelease"/>
       <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#director%27sreportoftheassociationofinsuranceadjusters"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test37">
@@ -1796,22 +1390,22 @@ F245 10 $a Director's report of the Association of Insurance Adjusters. $s Membe
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#director%27sreportoftheassociationofinsuranceadjusters">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test37"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#director%27sreportoftheassociationofinsuranceadjusters"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#director%27sreportoftheassociationofinsuranceadjustersmemberrelease"/>
       <rdawd:P10328>Director's report of the Association of Insurance Adjusters</rdawd:P10328>
       <rdawd:P10088>Director's report of the Association of Insurance Adjusters.</rdawd:P10088>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#director%27sreportoftheassociationofinsuranceadjusters">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#director%27sreportoftheassociationofinsuranceadjustersmemberrelease">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test37"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#director%27sreportoftheassociationofinsuranceadjusters"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#director%27sreportoftheassociationofinsuranceadjusters"/>
-      <rdaed:P20310>Director's report of the Association of Insurance Adjusters. </rdaed:P20310>
+      <rdaed:P20310>Director's report of the Association of Insurance Adjusters. (Member release.)</rdaed:P20310>
       <rdaed:P20312>Director's report of the Association of Insurance Adjusters.</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#director%27sreportoftheassociationofinsuranceadjusters">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test37"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#director%27sreportoftheassociationofinsuranceadjusters"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#director%27sreportoftheassociationofinsuranceadjustersmemberrelease"/>
       <rdamd:P30276>Director's report of the Association of Insurance Adjusters.</rdamd:P30276>
       <rdamd:P30156>Director's report of the Association of Insurance Adjusters. Member release</rdamd:P30156>
    </rdf:Description>
@@ -1822,7 +1416,7 @@ F245 10 $a Director's report of the Association of Insurance Adjusters. $s Membe
       <rdawd:P10002>transform/wor#marc245-test38</rdawd:P10002>
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test38"/>
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#seconddirector%27sreportoftheassociation"/>
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#seconddirector%27sreportoftheassociation"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#seconddirector%27sreportoftheassociationmemberreleasegeneralrelease"/>
       <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#seconddirector%27sreportoftheassociation"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test38">
@@ -1839,22 +1433,22 @@ F245 10 $a Second director's report of the Association. $s Member release,  $s G
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#seconddirector%27sreportoftheassociation">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test38"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#seconddirector%27sreportoftheassociation"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#seconddirector%27sreportoftheassociationmemberreleasegeneralrelease"/>
       <rdawd:P10328>Second director's report of the Association</rdawd:P10328>
       <rdawd:P10088>Second director's report of the Association.</rdawd:P10088>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#seconddirector%27sreportoftheassociation">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#seconddirector%27sreportoftheassociationmemberreleasegeneralrelease">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test38"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#seconddirector%27sreportoftheassociation"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#seconddirector%27sreportoftheassociation"/>
-      <rdaed:P20310>Second director's report of the Association. </rdaed:P20310>
+      <rdaed:P20310>Second director's report of the Association. (Member release,  : General release.)</rdaed:P20310>
       <rdaed:P20312>Second director's report of the Association.</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#seconddirector%27sreportoftheassociation">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test38"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#seconddirector%27sreportoftheassociation"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#seconddirector%27sreportoftheassociationmemberreleasegeneralrelease"/>
       <rdamd:P30276>Second director's report of the Association.</rdamd:P30276>
       <rdamd:P30156>Second director's report of the Association. Member release, General release</rdamd:P30156>
    </rdf:Description>
@@ -1891,7 +1485,7 @@ F245 00 $k Letter, $f 1901 March 6, $b Dublin, to Henrik Ibsen, Kristiana [Oslo]
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test39"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#letter1901march6dublintohenrikibsenkristianaoslo"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#letter1901march6dublintohenrikibsenkristianaoslo"/>
-      <rdaed:P20310>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo] </rdaed:P20310>
+      <rdaed:P20310>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo]</rdaed:P20310>
       <rdaed:P20312>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo]</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#letter1901march6dublintohenrikibsenkristianaoslo">
@@ -1937,7 +1531,7 @@ F245 00 $k Records, $f 1939-1973 $g 1965-1972.
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test40"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#records1939-19731965-1972"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#records1939-19731965-1972"/>
-      <rdaed:P20310>Records, 1939-1973 1965-1972 </rdaed:P20310>
+      <rdaed:P20310>Records, 1939-1973 1965-1972</rdaed:P20310>
       <rdaed:P20312>Records, 1939-1973 1965-1972</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#records1939-19731965-1972">
@@ -1984,7 +1578,7 @@ F245 10 $k Employment applications $g Jan.-Dec. 1985.
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test41"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#employmentapplicationsjan-dec1985"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#employmentapplicationsjan-dec1985"/>
-      <rdaed:P20310>Employment applications Jan.-Dec. 1985 </rdaed:P20310>
+      <rdaed:P20310>Employment applications Jan.-Dec. 1985</rdaed:P20310>
       <rdaed:P20312>Employment applications Jan.-Dec. 1985</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#employmentapplicationsjan-dec1985">
@@ -2030,7 +1624,7 @@ F245 15 $a Tōn meionotētōn eunoia : $b mythistorēma / $c Spyrou Gkrintzou.
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test42"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#eionot%C4%93t%C5%8Dneunoia"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#eionot%C4%93t%C5%8Dneunoia"/>
-      <rdaed:P20310>Eionotētōn eunoia </rdaed:P20310>
+      <rdaed:P20310>Eionotētōn eunoia</rdaed:P20310>
       <rdaed:P20312>Tōn meionotētōn eunoia</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#eionot%C4%93t%C5%8Dneunoia">
@@ -2075,7 +1669,7 @@ F245 15 $a Tōn meionotētōn eunoia : $b mythistorēma / $c Spyrou Gkrintzou.
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test43"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#eionot%C4%93t%C5%8Dneunoia"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#eionot%C4%93t%C5%8Dneunoia"/>
-      <rdaed:P20310>Eionotētōn eunoia </rdaed:P20310>
+      <rdaed:P20310>Eionotētōn eunoia</rdaed:P20310>
       <rdaed:P20312>Tōn meionotētōn eunoia</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#eionot%C4%93t%C5%8Dneunoia">
@@ -2120,7 +1714,7 @@ F245 15 $a Tōn meionotētōn eunoia $b mythistorēma $c Spyrou Gkrintzou
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test46"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#eionot%C4%93t%C5%8Dneunoia"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#eionot%C4%93t%C5%8Dneunoia"/>
-      <rdaed:P20310>Eionotētōn eunoia </rdaed:P20310>
+      <rdaed:P20310>Eionotētōn eunoia</rdaed:P20310>
       <rdaed:P20312>Tōn meionotētōn eunoia</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#eionot%C4%93t%C5%8Dneunoia">
@@ -2165,7 +1759,7 @@ F245 15 $a Tōn meionotētōn eunoia $b mythistorēma / $c Spyrou Gkrintzou.
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test47"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#eionot%C4%93t%C5%8Dneunoia"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#eionot%C4%93t%C5%8Dneunoia"/>
-      <rdaed:P20310>Eionotētōn eunoia </rdaed:P20310>
+      <rdaed:P20310>Eionotētōn eunoia</rdaed:P20310>
       <rdaed:P20312>Tōn meionotētōn eunoia</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#eionot%C4%93t%C5%8Dneunoia">
@@ -2210,7 +1804,7 @@ F245 14 $a The charity ball : $b a comedy in four acts : $k typescript, $f 1889 
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test48"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#charityball"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#charityball"/>
-      <rdaed:P20310>Charity ball </rdaed:P20310>
+      <rdaed:P20310>Charity ball</rdaed:P20310>
       <rdaed:P20312>The charity ball</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#charityball">
@@ -2257,7 +1851,7 @@ F245 14 $a The charity ball : $b a comedy in four acts : $k typescript, $f 1889 
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test49"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#charityball"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#charityball"/>
-      <rdaed:P20310>Charity ball </rdaed:P20310>
+      <rdaed:P20310>Charity ball</rdaed:P20310>
       <rdaed:P20312>The charity ball</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#charityball">
@@ -2304,7 +1898,7 @@ F245 14 $a The charity ball : $b a comedy in four acts $k typescript $f 1889  $c
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test50"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#charityball"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#charityball"/>
-      <rdaed:P20310>Charity ball : </rdaed:P20310>
+      <rdaed:P20310>Charity ball :</rdaed:P20310>
       <rdaed:P20312>The charity ball :</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#charityball">
@@ -2351,7 +1945,7 @@ F245 14 $a The charity ball : $b a comedy in four acts : $k typescript $f 1889 /
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test51"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#charityball"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#charityball"/>
-      <rdaed:P20310>Charity ball : </rdaed:P20310>
+      <rdaed:P20310>Charity ball :</rdaed:P20310>
       <rdaed:P20312>The charity ball :</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#charityball">
@@ -2398,7 +1992,7 @@ F245 14 $a The charity ball $b a comedy in four acts $k typescript $f 1889 $c by
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test52"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#charityball"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#charityball"/>
-      <rdaed:P20310>Charity ball </rdaed:P20310>
+      <rdaed:P20310>Charity ball</rdaed:P20310>
       <rdaed:P20312>The charity ball</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#charityball">
@@ -2445,7 +2039,7 @@ F245 14 $a The charity ball $b a comedy in four acts $k typescript, $f 1889 $c b
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test53"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#charityball"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#charityball"/>
-      <rdaed:P20310>Charity ball </rdaed:P20310>
+      <rdaed:P20310>Charity ball</rdaed:P20310>
       <rdaed:P20312>The charity ball</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#charityball">
@@ -2467,7 +2061,7 @@ F245 14 $a The charity ball $b a comedy in four acts $k typescript, $f 1889 $c b
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test54"/>
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#bureau"/>
       <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#bureau"/>
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#bureau"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#bureaufilmstrip"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test54">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
@@ -2490,20 +2084,21 @@ F245 03 $a Le Bureau $h [filmstrip] = $b La Oficina = Das Büro.
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#bureau">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test54"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#bureau"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#bureaufilmstrip"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#bureau"/>
-      <rdaed:P20310>Bureau </rdaed:P20310>
+      <rdaed:P20310>Bureau</rdaed:P20310>
       <rdaed:P20312>Le Bureau</rdaed:P20312>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#bureau">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#bureaufilmstrip">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test54"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#bureau"/>
-      <rdamd:P30276>Bureau</rdamd:P30276>
+      <rdamd:P30276>Bureau (Filmstrip)</rdamd:P30276>
       <rdamd:P30156>Le Bureau</rdamd:P30156>
       <rdamd:P30156>La Oficina</rdamd:P30156>
       <rdamd:P30156>Das Büro</rdamd:P30156>
       <rdamd:P30335>filmstrip</rdamd:P30335>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1036"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test55">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -2513,7 +2108,7 @@ F245 03 $a Le Bureau $h [filmstrip] = $b La Oficina = Das Büro.
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test55"/>
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#bureau"/>
       <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#bureau"/>
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#bureau"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#bureaufilmstrip"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test55">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
@@ -2536,20 +2131,21 @@ F245 03 $a Le Bureau $h [filmstrip] = $b La Oficina = Das Büro.
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#bureau">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test55"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#bureau"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#bureaufilmstrip"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#bureau"/>
-      <rdaed:P20310>Bureau </rdaed:P20310>
+      <rdaed:P20310>Bureau</rdaed:P20310>
       <rdaed:P20312>Le Bureau</rdaed:P20312>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#bureau">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#bureaufilmstrip">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test55"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#bureau"/>
-      <rdamd:P30276>Bureau</rdamd:P30276>
+      <rdamd:P30276>Bureau (Filmstrip)</rdamd:P30276>
       <rdamd:P30156>Le Bureau</rdamd:P30156>
       <rdamd:P30156>La Oficina</rdamd:P30156>
       <rdamd:P30156>Das Büro</rdamd:P30156>
       <rdamd:P30335>filmstrip</rdamd:P30335>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1036"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test56">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -2559,7 +2155,7 @@ F245 03 $a Le Bureau $h [filmstrip] = $b La Oficina = Das Büro.
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test56"/>
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#bureau"/>
       <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#bureau"/>
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#bureau"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#bureaufilmstrip"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test56">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
@@ -2582,19 +2178,20 @@ F245 03 $a Le Bureau $h [filmstrip] = $b La Oficina ALSO KNOWN AS Das Büro.
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#bureau">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test56"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#bureau"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#bureaufilmstrip"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#bureau"/>
-      <rdaed:P20310>Bureau </rdaed:P20310>
+      <rdaed:P20310>Bureau</rdaed:P20310>
       <rdaed:P20312>Le Bureau</rdaed:P20312>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#bureau">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#bureaufilmstrip">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test56"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#bureau"/>
-      <rdamd:P30276>Bureau</rdamd:P30276>
+      <rdamd:P30276>Bureau (Filmstrip)</rdamd:P30276>
       <rdamd:P30156>Le Bureau</rdamd:P30156>
       <rdamd:P30142>La Oficina ALSO KNOWN AS Das Büro</rdamd:P30142>
       <rdamd:P30335>filmstrip</rdamd:P30335>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1036"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test57">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -2604,7 +2201,7 @@ F245 03 $a Le Bureau $h [filmstrip] = $b La Oficina ALSO KNOWN AS Das Büro.
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test57"/>
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#bureau"/>
       <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#bureau"/>
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#bureau"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#bureaufilmstrip"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test57">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
@@ -2627,19 +2224,20 @@ F245 03 $a Le Bureau $h [filmstrip] $b La Oficina : Das Büro.
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#bureau">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test57"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#bureau"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#bureaufilmstrip"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#bureau"/>
-      <rdaed:P20310>Bureau </rdaed:P20310>
+      <rdaed:P20310>Bureau</rdaed:P20310>
       <rdaed:P20312>Le Bureau</rdaed:P20312>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#bureau">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#bureaufilmstrip">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test57"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#bureau"/>
-      <rdamd:P30276>Bureau</rdamd:P30276>
+      <rdamd:P30276>Bureau (Filmstrip)</rdamd:P30276>
       <rdamd:P30156>Le Bureau</rdamd:P30156>
       <rdamd:P30142>La Oficina : Das Büro</rdamd:P30142>
       <rdamd:P30335>filmstrip</rdamd:P30335>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1036"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test58">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -2649,7 +2247,7 @@ F245 03 $a Le Bureau $h [filmstrip] $b La Oficina : Das Büro.
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test58"/>
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#bureau"/>
       <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#bureau"/>
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#bureau"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#bureaufilmstrip"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test58">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
@@ -2672,19 +2270,20 @@ F245 03 $a Le Bureau $h filmstrip $b La Oficina. Das Büro.
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#bureau">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test58"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#bureau"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#bureaufilmstrip"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#bureau"/>
-      <rdaed:P20310>Bureau </rdaed:P20310>
+      <rdaed:P20310>Bureau</rdaed:P20310>
       <rdaed:P20312>Le Bureau</rdaed:P20312>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#bureau">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#bureaufilmstrip">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test58"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#bureau"/>
-      <rdamd:P30276>Bureau</rdamd:P30276>
+      <rdamd:P30276>Bureau (Filmstrip)</rdamd:P30276>
       <rdamd:P30156>Le Bureau</rdamd:P30156>
       <rdamd:P30142>La Oficina. Das Büro</rdamd:P30142>
       <rdamd:P30335>filmstrip</rdamd:P30335>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1036"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test59">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -2694,7 +2293,7 @@ F245 03 $a Le Bureau $h filmstrip $b La Oficina. Das Büro.
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test59"/>
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#bureau"/>
       <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#bureau"/>
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#bureau"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#bureaufilmstrip"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test59">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
@@ -2717,19 +2316,20 @@ F245 03 $a Le Bureau $h filmstrip $b La Oficina = Das Büro.
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#bureau">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test59"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#bureau"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#bureaufilmstrip"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#bureau"/>
-      <rdaed:P20310>Bureau </rdaed:P20310>
+      <rdaed:P20310>Bureau</rdaed:P20310>
       <rdaed:P20312>Le Bureau</rdaed:P20312>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#bureau">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#bureaufilmstrip">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test59"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#bureau"/>
-      <rdamd:P30276>Bureau</rdamd:P30276>
+      <rdamd:P30276>Bureau (Filmstrip)</rdamd:P30276>
       <rdamd:P30156>Le Bureau</rdamd:P30156>
       <rdamd:P30142>La Oficina = Das Büro</rdamd:P30142>
       <rdamd:P30335>filmstrip</rdamd:P30335>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1036"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test60">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -2764,7 +2364,7 @@ F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheite
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test60"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#zentralblattf%C3%BCrbakteriologieparasitenkundeinfektionskrankheitenundhygiene1abtoriginalereihebhygienekrankenhaushygienebetriebshygienepr%C3%A4ventivemedizin"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#zentralblattf%C3%BCrbakteriologieparasitenkundeinfektionskrankheitenundhygiene1abtoriginalereihebhygienekrankenhaushygienebetriebshygienepr%C3%A4ventivemedizin"/>
-      <rdaed:P20310>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. 1. Abt. Originale. Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin </rdaed:P20310>
+      <rdaed:P20310>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. 1. Abt. Originale. Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</rdaed:P20310>
       <rdaed:P20312>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. 1. Abt. Originale. Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#zentralblattf%C3%BCrbakteriologieparasitenkundeinfektionskrankheitenundhygiene1abtoriginalereihebhygienekrankenhaushygienebetriebshygienepr%C3%A4ventivemedizin">
@@ -2807,7 +2407,7 @@ F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheite
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test61"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#zentralblattf%C3%BCrbakteriologieparasitenkundeinfektionskrankheitenundhygiene1abtoriginalereihebhygienekrankenhaushygienebetriebshygienepr%C3%A4ventivemedizin"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#zentralblattf%C3%BCrbakteriologieparasitenkundeinfektionskrankheitenundhygiene1abtoriginalereihebhygienekrankenhaushygienebetriebshygienepr%C3%A4ventivemedizin"/>
-      <rdaed:P20310>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. 1. Abt. Originale. Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin </rdaed:P20310>
+      <rdaed:P20310>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. 1. Abt. Originale. Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</rdaed:P20310>
       <rdaed:P20312>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. 1. Abt. Originale. Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#zentralblattf%C3%BCrbakteriologieparasitenkundeinfektionskrankheitenundhygiene1abtoriginalereihebhygienekrankenhaushygienebetriebshygienepr%C3%A4ventivemedizin">
@@ -2850,7 +2450,7 @@ F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheite
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test62"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#zentralblattf%C3%BCrbakteriologieparasitenkundeinfektionskrankheitenundhygiene1abtoriginalereihebhygienekrankenhaushygienebetriebshygienepr%C3%A4ventivemedizin"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#zentralblattf%C3%BCrbakteriologieparasitenkundeinfektionskrankheitenundhygiene1abtoriginalereihebhygienekrankenhaushygienebetriebshygienepr%C3%A4ventivemedizin"/>
-      <rdaed:P20310>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene 1. Abt. Originale Reihe B Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin </rdaed:P20310>
+      <rdaed:P20310>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene 1. Abt. Originale Reihe B Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</rdaed:P20310>
       <rdaed:P20312>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene 1. Abt. Originale Reihe B Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#zentralblattf%C3%BCrbakteriologieparasitenkundeinfektionskrankheitenundhygiene1abtoriginalereihebhygienekrankenhaushygienebetriebshygienepr%C3%A4ventivemedizin">
@@ -2893,7 +2493,7 @@ F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheite
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test63"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#zentralblattf%C3%BCrbakteriologieparasitenkundeinfektionskrankheitenundhygiene1abtoriginalereihebhygienekrankenhaushygienebetriebshygienepr%C3%A4ventivemedizin"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#zentralblattf%C3%BCrbakteriologieparasitenkundeinfektionskrankheitenundhygiene1abtoriginalereihebhygienekrankenhaushygienebetriebshygienepr%C3%A4ventivemedizin"/>
-      <rdaed:P20310>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. 1. Abt. Originale Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin </rdaed:P20310>
+      <rdaed:P20310>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. 1. Abt. Originale Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</rdaed:P20310>
       <rdaed:P20312>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene. 1. Abt. Originale Reihe B, Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#zentralblattf%C3%BCrbakteriologieparasitenkundeinfektionskrankheitenundhygiene1abtoriginalereihebhygienekrankenhaushygienebetriebshygienepr%C3%A4ventivemedizin">
@@ -2936,7 +2536,7 @@ F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheite
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test64"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#zentralblattf%C3%BCrbakteriologieparasitenkundeinfektionskrankheitenundhygiene1abtoriginalereihebhygienekrankenhaushygienebetriebshygienepr%C3%A4ventivemedizin"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#zentralblattf%C3%BCrbakteriologieparasitenkundeinfektionskrankheitenundhygiene1abtoriginalereihebhygienekrankenhaushygienebetriebshygienepr%C3%A4ventivemedizin"/>
-      <rdaed:P20310>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene 1. Abt. Originale Reihe B Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin </rdaed:P20310>
+      <rdaed:P20310>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene 1. Abt. Originale Reihe B Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</rdaed:P20310>
       <rdaed:P20312>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene 1. Abt. Originale Reihe B Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#zentralblattf%C3%BCrbakteriologieparasitenkundeinfektionskrankheitenundhygiene1abtoriginalereihebhygienekrankenhaushygienebetriebshygienepr%C3%A4ventivemedizin">
@@ -2979,7 +2579,7 @@ F245 10 $a Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheite
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test65"/>
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#zentralblattf%C3%BCrbakteriologieparasitenkundeinfektionskrankheitenundhygiene1abtoriginalereihebhygienekrankenhaushygienebetriebshygienepr%C3%A4ventivemedizin"/>
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#zentralblattf%C3%BCrbakteriologieparasitenkundeinfektionskrankheitenundhygiene1abtoriginalereihebhygienekrankenhaushygienebetriebshygienepr%C3%A4ventivemedizin"/>
-      <rdaed:P20310>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene: 1. Abt. Originale: Reihe B: Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin </rdaed:P20310>
+      <rdaed:P20310>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene: 1. Abt. Originale: Reihe B: Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</rdaed:P20310>
       <rdaed:P20312>Zentralblatt für Bakteriologie, Parasitenkunde, Infektionskrankheiten und Hygiene: 1. Abt. Originale: Reihe B: Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#zentralblattf%C3%BCrbakteriologieparasitenkundeinfektionskrankheitenundhygiene1abtoriginalereihebhygienekrankenhaushygienebetriebshygienepr%C3%A4ventivemedizin">

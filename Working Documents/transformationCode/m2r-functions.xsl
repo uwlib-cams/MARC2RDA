@@ -825,6 +825,7 @@
             <xsl:when test="ends-with(normalize-space($string), ',')">
                 <xsl:value-of select="normalize-space(substring($string, 1, string-length($string) - 1))"/>
             </xsl:when>
+                <xsl:value-of select="normalize-space($string)"/>
             <xsl:when test="ends-with(normalize-space($string), '.')">
                 <xsl:choose>
                     <xsl:when test="matches($string, ' [\w]\.$')">
@@ -926,8 +927,9 @@
     <xsl:function name="m2r:checkAbbreviations">
         <xsl:param name="string"/>
         <xsl:variable name="lookupAbbreviationsDoc" select="document('lookup/abbreviations.xml')"/>
-        <xsl:value-of select="if (some $abbreviation in $lookupAbbreviationsDoc/abbreviations/row/abbreviation
-            satisfies (ends-with(lower-case($string), lower-case($abbreviation)))) then true() else false()"/>
+            <xsl:variable name="lastToken" select="lower-case(tokenize(normalize-space($string), '\s+')[last()])"/>
+            
+            <xsl:value-of select="if (some $abbreviation in $lookupAbbreviationsDoc/abbreviations/row/abbreviation satisfies ($lastToken = lower-case(normalize-space($abbreviation)))) then true() else false() "/>   
     </xsl:function>
     
     <xsl:function name="m2r:stripOuterBracketsAndParentheses">
