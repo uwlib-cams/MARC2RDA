@@ -304,13 +304,13 @@
       and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'album|binder|contact sheet|gelatin silver|photoprint|printing plate|prints')])</xpath>
     <xpath>(substring(marc:leader, 7, 1) = 'k')
       and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'silver gelatin')][matches(lower-case(.), 'print')])</xpath>
-    <!-- test xpath -->
+    <!--<!-\- test xpath -\->
     <xpath>matches(substring(marc:leader, 7, 1), 'k')
       and exists(marc:controlfield[@tag='007'][matches(subfield(.,1,2), 'gt')])</xpath>
-    <!-- test xpath -->
+    <!-\- test xpath -\->
     <xpath>matches(substring(marc:leader, 7, 1), 'k')
       and exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'transparencies|transparency')])</xpath>
-    <locCode>sti</locCode>
+    --><locCode>sti</locCode>
     <locTerm>still image</locTerm>
     <locURI>http://id.loc.gov/vocabulary/contentTypes/sti</locURI>
     <rdaTerm>still image</rdaTerm>
