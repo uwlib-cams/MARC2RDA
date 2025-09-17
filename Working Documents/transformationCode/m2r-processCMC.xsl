@@ -176,6 +176,9 @@
             <xsl:copy-of select="document('lookup/LookupContentType.xml')/key('lookup007c0c1', $f007c0c1)/rdaIRI"/>
         </xsl:variable>
         
+        <xsl:variable name="lookup007c0-carrier">
+            <xsl:copy-of select="document('lookup/LookupCarrierType.xml')/key('lookup007c0', $f007c0)/rdaIRI"/>
+        </xsl:variable>
         <xsl:variable name="lookup007c0c1-carrier">
             <xsl:copy-of select="document('lookup/LookupCarrierType.xml')/key('lookup007c0c1', $f007c0c1)/rdaIRI"/>
         </xsl:variable>
@@ -201,6 +204,17 @@
                 </marc:subfield>
                 <marc:subfield code="9">
                     <xsl:text>007c0c1</xsl:text>
+                </marc:subfield>
+            </marc:datafield>
+        </xsl:for-each>
+        
+        <xsl:for-each select="$lookup007c0-carrier/rdaIRI">
+            <marc:datafield tag="338" ind1=" " ind2=" ">
+                <marc:subfield code="1">
+                    <xsl:value-of select="."/>
+                </marc:subfield>
+                <marc:subfield code="9">
+                    <xsl:text>007c0</xsl:text>
                 </marc:subfield>
             </marc:datafield>
         </xsl:for-each>
@@ -1425,7 +1439,142 @@
     <xsl:function name="m2r:isElectronic">
         <xsl:param name="record"/>
         <xsl:variable name="ldr6-7" select="substring($record/marc:leader, 7, 2)"/>
+        <xsl:variable name="electronicIndicators">
+            <xsl:choose>
+                <!-- 583 $a -->
+                <xsl:when test="exists($record/marc:datafield[@tag='583']/marc:subfield[@code='a'][matches(lower-case(.), 'digitized')])">
+                    <xsl:value-of select="true()"/>
+                </xsl:when>
+                
+                <!-- 588 $a -->
+                <xsl:when test="exists($record/marc:datafield[@tag='588']/marc:subfield[@code='a'][matches(lower-case(.), 'version record')])">
+                    <xsl:value-of select="true()"/>
+                </xsl:when>
+                
+                <!-- 007/00 -->
+                <xsl:when test="exists($record/marc:controlfield[@tag='007'][substring(., 1, 1) = 'c'])">
+                    <xsl:value-of select="true()"/>
+                </xsl:when>
+                
+                <!-- book -->
+                <!-- 008 -->
+                <xsl:when test="($ldr6-7 = 'aa' or $ldr6-7 = 'ac' or $ldr6-7 = 'ad' or $ldr6-7 = 'am'
+                    or $ldr6-7 = 'ca' or $ldr6-7 = 'cc' or $ldr6-7 = 'cd' or $ldr6-7 = 'cm')
+                    and (some $f008 in $record/marc:controlfield[@tag='008']
+                    satisfies matches(substring($f008, 24, 1), 'o|q|s'))">
+                    <xsl:value-of select="true()"/>
+                </xsl:when>
+                
+                <!-- continuing resources -->
+                <!-- 008 -->
+                <xsl:when test="($ldr6-7 = 'ab' or $ldr6-7 = 'ai' or $ldr6-7 = 'as')
+                    and (some $f008 in $record/marc:controlfield[@tag='008']
+                    satisfies matches(substring($f008, 24, 1), 'o|q|s'))">
+                    <xsl:value-of select="true()"/>
+                </xsl:when>
+                
+                <!-- maps -->
+                <!-- 008 -->
+                <xsl:when test="(substring($ldr6-7, 1, 1) = 'e' or substring($ldr6-7, 1, 1) = 'f')
+                    and (some $f008 in $record/marc:controlfield[@tag='008']
+                    satisfies matches(substring($f008, 30, 1), 'o|q|s'))">
+                    <xsl:value-of select="true()"/>
+                </xsl:when>
+                
+                <!-- mixed materials -->
+                <!-- 008 -->
+                <xsl:when test="substring($ldr6-7, 1, 1) = 'p'
+                    and (some $f008 in $record/marc:controlfield[@tag='008']
+                    satisfies matches(substring($f008, 24, 1), 'o|q|s'))">
+                    <xsl:value-of select="true()"/>
+                </xsl:when>
+                
+                <!-- music-->
+                <!-- 008 -->
+                <xsl:when test="(substring($ldr6-7, 1, 1) = 'i' or substring($ldr6-7, 1, 1) = 'j'
+                    or substring($ldr6-7, 1, 1) = 'c' or substring($ldr6-7, 1, 1) = 'd')
+                    and (some $f008 in $record/marc:controlfield[@tag='008']
+                    satisfies matches(substring($f008, 24, 1), 'o|q|s'))">
+                    <xsl:value-of select="true()"/>
+                </xsl:when>
+                
+                <!-- visual materials -->
+                <!-- 008 -->
+                <xsl:when test="(substring($ldr6-7, 1, 1) = 'g' or substring($ldr6-7, 1, 1) = 'k'
+                    or substring($ldr6-7, 1, 1) = 'o' or substring($ldr6-7, 1, 1) = 'r')
+                    and (some $f008 in $record/marc:controlfield[@tag='008']
+                    satisfies matches(substring($f008, 30, 1), 'o|q|s'))">
+                    <xsl:value-of select="true()"/>
+                </xsl:when>
+                
+                <!-- 856 ind2 -->
+                <xsl:when test="exists($record/marc:datafield[@tag='856'][@ind2='0'])">
+                    <xsl:value-of select="true()"/>
+                </xsl:when>
+                
+                <!-- 300 $a online resource -->
+                <xsl:when test="exists($record/marc:datafield[@tag='300']/marc:subfield[@code='a']
+                    [matches(lower-case(.), 'online resource')])">
+                    <xsl:value-of select="true()"/>
+                </xsl:when>
+                
+                <!-- 533 $a -->
+                <xsl:when test="exists($record/marc:datafield[@tag='533']/marc:subfield[@code='a']
+                    [matches(lower-case(.), 'electronic|online|computer|streaming')])">
+                    <xsl:value-of select="true()"/>
+                </xsl:when>
+                
+                <!-- 588 $a -->
+                <xsl:when test="exists($record/marc:datafield[@tag='588']/marc:subfield[@code='a']
+                    [matches(lower-case(.), 'electronic|online|computer|streaming')])">
+                    <xsl:value-of select="true()"/>
+                </xsl:when>
+                
+                <!-- 245 $h -->
+                <xsl:when test="exists($record/marc:datafield[@tag='245']/marc:subfield[@code='h']
+                    [matches(lower-case(.), 'electronic|online|computer|streaming')])">
+                    <xsl:value-of select="true()"/>
+                </xsl:when>
+                
+                <!-- 300 $a -->
+                <xsl:when test="exists($record/marc:datafield[@tag='300']/marc:subfield[@code='a']
+                    [matches(lower-case(.), 'electronic|online|computer|streaming')])">
+                    <xsl:value-of select="true()"/>
+                </xsl:when>
+                
+                <!-- 040 $e -->
+                <xsl:when test="exists($record/marc:datafield[@tag='040']/marc:subfield[@code='e'][matches(lower-case(.), 'pn')])">
+                    <xsl:value-of select="true()"/>
+                </xsl:when>
+                
+                <!-- LDR 6 -->
+                <xsl:when test="matches(substring($ldr6-7, 1, 1), 'm')">
+                    <xsl:value-of select="true()"/>
+                </xsl:when>
+                
+                <xsl:otherwise>
+                    <xsl:value-of select="false()"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
         
+        <xsl:choose>
+            <xsl:when test="$electronicIndicators = true()">
+                <xsl:choose>
+                    <xsl:when test="exists($record/marc:datafield[@tag='530']/marc:subfield[@code='a']
+                        [matches(lower-case(.), 'also available|also issued|available also|issued also')])
+                        and not(exists($record/marc:datafield[@tag='856'][@ind2='0']))">
+                        <xsl:value-of select="true()"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="false()"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="true()"/>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:function>
     
     <xsl:function name="m2r:get33XIRIs">

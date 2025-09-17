@@ -142,7 +142,7 @@
   </entry>
   <entry>
     <marc007c0c1>cb</marc007c0c1>
-    <marc300a>chip cartridge|USB|zip|flash</marc300a>
+    <marc300a>chip cartridge|usb|zip|flash</marc300a>
     <locCode>cb</locCode>
     <locTerm>computer chip cartridge</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/cb</locURI>
@@ -152,7 +152,6 @@
   </entry>
   <entry>
     <marc007c0c1>cd</marc007c0c1>
-    <marc007c0c1>cj</marc007c0c1>
     <marc007c0c1>cm</marc007c0c1>
     <marc007c0c1>co</marc007c0c1>
     <marc300a>dualdisc|cd-a|cd-i|cd-r|cd-rom|cd rom|dvd-rom|photo cd</marc300a>
@@ -171,6 +170,7 @@
   <entry>
     <marc007c0c1>cc</marc007c0c1>
     <marc007c0c1>ce</marc007c0c1>
+    <marc007c0c1>cj</marc007c0c1>
     <marc300a>computer optical disc cartridge|computer disc cartridge|computer disk|diskette|floppy disk</marc300a>
     <locCode>ce</locCode>
     <locTerm>computer disc cartridge</locTerm>
@@ -249,7 +249,7 @@
   <entry>
     <marc007c0c1>go</marc007c0c1>
     <marc007c0c1>mo</marc007c0c1>
-    <marc300a>film roll</marc300a>
+    <marc300a>film roll|filmstrip roll</marc300a>
     <xpath>substring(marc:leader, 7, 1) = 'g'
       and exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'roll')])
     </xpath>
@@ -387,6 +387,10 @@
     <rdaCurie>rdact:1030</rdaCurie>
   </entry>
   <entry>
+    <marcLDRc6>o</marcLDRc6>
+    <marcLDRc6>p</marcLDRc6>
+    <marcLDRc6>r</marcLDRc6>
+    <marc007c0>d</marc007c0>
     <marc007c0c1>aq</marc007c0c1>
     <marc007c0c1>cs</marc007c0c1>
     <marc007c0c1>dd</marc007c0c1>
@@ -407,7 +411,6 @@
     <marcVM006c16>r</marcVM006c16>
     <marcVM008c33>w</marcVM008c33>
     <marcVM006c16>w</marcVM006c16>
-    <marcLDRc6>r</marcLDRc6>
     <marc245h>realia|kit|globe|diorama|model|toy|exhibit|exhibition catalog|game|jigsaw puzzle|relief model</marc245h>
     <marc300a>game |game$|player piano roll|kit|toy|exhibit|globe|relief model|exhibition catalog|script|diorama|model|mask|medal|sculpture</marc300a>
     <xpath>matches(substring(marc:leader, 7, 1), 'e|f')
@@ -428,6 +431,7 @@
     <rdaCurie>rdact:1059</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>ay</marc007c0c1>
     <marc007c0c1>cr</marc007c0c1>
     <marc007c0c1>sr</marc007c0c1>
     <marcCF008c23>o</marcCF008c23>
@@ -455,7 +459,12 @@
     <rdaCurie>rdact:1018</rdaCurie>
   </entry>
   <entry>
-    <marc007c0c1>gt</marc007c0c1>
+    <!-- test xpath -->
+    <xpath>matches(substring(marc:leader, 7, 1), 'k')
+      and exists(marc:controlfield[@tag='007'][matches(subfield(.,1,2), 'gt')])</xpath>
+    <!-- test xpath -->
+    <xpath>matches(substring(marc:leader, 7, 1), 'k')
+      and exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'transparencies|transparency')])</xpath>
     <locCode>gt</locCode>
     <locTerm>overhead transparency</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/gt</locURI>
@@ -472,6 +481,8 @@
     <rdaCurie>rdact:1047</rdaCurie>
   </entry>
   <entry>
+    <marc007c0c1>ar</marc007c0c1>
+    <marc007c0c1>as</marc007c0c1>
     <marc007c0c1>kc</marc007c0c1>
     <marc007c0c1>kd</marc007c0c1>
     <marc007c0c1>ke</marc007c0c1>

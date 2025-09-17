@@ -26,6 +26,10 @@
     
     <marc:record>
         <marc:leader>03407cam a2200661 i 4500</marc:leader>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cam a2200661 i 4500</marc:leader>
         <marc:datafield tag="650" ind1=" " ind2=" ">
             <marc:subfield code="a">Subject</marc:subfield>
             <marc:subfield code="v">Stories without words</marc:subfield>
@@ -131,6 +135,11 @@
         <marc:datafield tag="300" ind1=" " ind2=" ">
             <marc:subfield code="a">view</marc:subfield>
         </marc:datafield>
+    </marc:record>
+    
+    <marc:record>
+        <marc:leader>03407cem a2200661 i 4500</marc:leader>
+        <marc:controlfield tag="007">ag</marc:controlfield>
     </marc:record>
     
     <marc:record>

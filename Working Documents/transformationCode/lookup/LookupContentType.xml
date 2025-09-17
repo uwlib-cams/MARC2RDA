@@ -10,9 +10,9 @@
   </entry>
   <entry>
     <marc007c0c1>ad</marc007c0c1>
-    <marc007c0c1>ag</marc007c0c1>
     <marc007c0c1>aj</marc007c0c1>
     <marc007c0c1>ak</marc007c0c1>
+    <marc007c0c1>ar</marc007c0c1>
     <marc007c0c1>as</marc007c0c1>
     <marc007c0c1>ay</marc007c0c1>
     <marcMP008c25>e</marcMP008c25>
@@ -25,6 +25,8 @@
     <marcMP006c16orc17>o</marcMP006c16orc17>
     <marc245h>map|atlas</marc245h>
     <marc300a>map|profile|atlas</marc300a>
+    <xpath>matches(substring(marc:leader, 7, 1), 'e|f')
+      and (exists(marc:controlfield[@tag='007'][matches(substring(., 1, 2), 'ag')]))</xpath>
     <xpath>matches(substring(marc:leader, 7, 1), 'e|f')
       and (some $a in marc:datafield[@tag = '300']/marc:subfield[@code = 'a']
       satisfies matches(lower-case($a), 'view|diagram|chart|jigsaw puzzle|remote sensing image|section|wall chart'))</xpath>
@@ -291,7 +293,7 @@
     <marcCR008c24>y</marcCR008c24>
     <marcCR006c7>y</marcCR006c7>
     <marc245h>activity card|drawing|painting|picture|icon|diagram|graphic|photograph|photomechanical|photonegative|photoprint|jigsaw puzzle|flash card|board book</marc245h>
-    <marc300a>graphic|transparency|transparencies|activity card|collage|drawing|painting|poster|postcard|icon|radiograph|study print|photograph|photomechanical|photonegative|photoprint|lithograph|negative|paper fragments|flash card|board book</marc300a>
+    <marc300a>graphic|activity card|collage|drawing|painting|poster|postcard|icon|radiograph|study print|photograph|photomechanical|photonegative|photoprint|lithograph|negative|paper fragments|flash card|board book</marc300a>
     <xpath>(substring(marc:leader, 7, 1) = 'k')
       and (marc:datafield[@tag='245']/marc:subfield[@code='h'][matches(lower-case(.), 'diagram')]
       or marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'diagram')])</xpath>
@@ -302,6 +304,12 @@
       and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'album|binder|contact sheet|gelatin silver|photoprint|printing plate|prints')])</xpath>
     <xpath>(substring(marc:leader, 7, 1) = 'k')
       and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'silver gelatin')][matches(lower-case(.), 'print')])</xpath>
+    <!-- test xpath -->
+    <xpath>matches(substring(marc:leader, 7, 1), 'k')
+      and exists(marc:controlfield[@tag='007'][matches(subfield(.,1,2), 'gt')])</xpath>
+    <!-- test xpath -->
+    <xpath>matches(substring(marc:leader, 7, 1), 'k')
+      and exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'transparencies|transparency')])</xpath>
     <locCode>sti</locCode>
     <locTerm>still image</locTerm>
     <locURI>http://id.loc.gov/vocabulary/contentTypes/sti</locURI>
@@ -467,8 +475,8 @@
     <marc245h>atlas|flash card|board book|microfilm|handbook|large print|newsletter|pamphlet|text|ebook|e-book|serial|typescript|exhibition catalog|paperback</marc245h>
     <marc300a>atlas|handbook|flash card|board book|handbook|large print|ebook|e-book|large print|exhibition catalog|pamphlet|leaflet|program|script|</marc300a>
     <xpath>matches(substring(marc:leader, 7, 1), 'a')
-      and (some $subfield in marc:datafield[@tag = '650']/marc:subfield[@code = 'v']|marc:datafield[@tag='655']/marc:subfield[@code='a']
-      satisfies matches(lower-case($subfield), 'stories without words|coloring book|colouring book'))</xpath>
+      and not((some $subfield in marc:datafield[@tag = '650']/marc:subfield[@code = 'v']|marc:datafield[@tag='655']/marc:subfield[@code='a']
+      satisfies matches(lower-case($subfield), 'stories without words|coloring book|colouring book')))</xpath>
     <xpath>(matches(substring(marc:leader, 7, 1), 'a|t'))
       and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'box|case|folder|leaf|page |page$|p\.|papers|portfolio|scrapbook|scroll')])</xpath>
     <locCode>txt</locCode>
@@ -479,6 +487,9 @@
     <rdaCurie>rdaco:1020</rdaCurie>
   </entry>
   <entry>
+    <marcLDRc6>o</marcLDRc6>
+    <marcLDRc6>p</marcLDRc6>
+    <marcLDRc6>r</marcLDRc6>
     <marcVM008c33>d</marcVM008c33>
     <marcVM006c16>d</marcVM006c16>
     <marcVM008c33>q</marcVM008c33>
