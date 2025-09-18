@@ -114,9 +114,12 @@
     </xsl:template>
  
     <xsl:template match="marc:record" expand-text="yes">
-        <xsl:variable name="isTactile" select="m2r:isTactile(.)"/>
+        <xsl:variable name="record33XIRIs">
+            <xsl:copy-of select="m2r:get33XIRIs(.)"/>
+        </xsl:variable>
+        <xsl:variable name="isTactile" select="m2r:isTactile(., $record33XIRIs)"/>
         <xsl:choose>
-        <xsl:when test="$isTactile = 'False'">
+        <xsl:when test="$isTactile = false()">
             <xsl:variable name="inputRecord" select="."/>
             <xsl:variable name="processedRecord">
                 <xsl:call-template name="otherFieldsTo33x">
@@ -126,6 +129,8 @@
                 </xsl:call-template>
             </xsl:variable>
         <xsl:for-each select="$processedRecord/marc:record">
+            <xsl:variable name="isElectronic" select="m2r:isElectronic(., $record33XIRIs)"/>
+            <xsl:variable name="isMicroform" select="m2r:isMicroform(., $record33XIRIs)"/>
              <!-- message can be output to show processing -->
              <!--<xsl:message>
                  <xsl:text>Processing record {marc:controlfield[@tag = '001']} ({position()}/{last()}).</xsl:text>
@@ -161,7 +166,7 @@
                      <!-- main WEM IRIs stored in variables -->
                      <xsl:variable name="mainWorkIRI" select="m2r:mainWorkIRI(.)"/>
                      <xsl:variable name="mainExpressionIRI" select="m2r:mainExpressionIRI(.)"/>
-                     <xsl:variable name="mainManifestationIRI" select="m2r:mainManifestationIRI(.)"/>
+                     <xsl:variable name="mainManifestationIRI" select="m2r:mainManifestationIRI(., $isElectronic, $isMicroform)"/>
                      
                      <!-- if reproduction -->
                      <xsl:variable name="isReproduction" select="m2r:checkReproductions(.)"/>
@@ -169,7 +174,7 @@
                      <!-- orig manifestation IRI - blank if not reproduction -->
                      <xsl:variable name="origManifestationIRI">
                          <xsl:if test="$isReproduction">
-                             <xsl:value-of select="m2r:origManifestationIRI(.)"/>
+                             <xsl:value-of select="m2r:origManifestationIRI(., $isElectronic, $isMicroform)"/>
                          </xsl:if>
                      </xsl:variable>
                      
@@ -185,7 +190,7 @@
                      
                      <!-- call metadata work template (template at bottom of this file) -->
                      <xsl:call-template name="marcMetadataWork">
-                         <xsl:with-param name="inputRecord" select="$inputRecord"/>
+                         <xsl:with-param name="inputRecord" select="."/>
                          <xsl:with-param name="marcWorkIRI" select="$marcMetadataWorkIRI"/>
                          <xsl:with-param name="mainWorkIRI" select="$mainWorkIRI"/>
                          <xsl:with-param name="aggWorkIRI" select="$aggWorkIRI"/>
@@ -232,7 +237,7 @@
                                  <rdaeo:P20576 rdf:resource="{$marcMetadataWorkIRI}"/>
                                  <rdaeo:P20059 rdf:resource="{$mainManifestationIRI}"/>
                                  <xsl:if test="$isReproduction != ''">
-                                     <rdaeo:P20059 rdf:resource="{m2r:origManifestationIRI(.)}"/>
+                                     <rdaeo:P20059 rdf:resource="{m2r:origManifestationIRI(., $isElectronic, $isMicroform)}"/>
                                  </xsl:if>
                                  <rdaeo:P20231 rdf:resource="{$mainWorkIRI}"/>
                                  
@@ -353,7 +358,8 @@
                          
                          <!-- This code can be uncommented to add a manifestation access point to the manifestation description.
                          m2r:mainManifestationAccessPoint() is located in m2r-aps.xsl -->
-                         <xsl:variable name="manifestationAP" select="m2r:mainManifestationAccessPoint(.)"/>
+                         
+                         <xsl:variable name="manifestationAP" select="m2r:mainManifestationAccessPoint(., $isElectronic, $isMicroform)"/>
                          <xsl:if test="$manifestationAP">
                              <rdamd:P30276>
                                  <xsl:value-of select="$manifestationAP"/>
@@ -386,12 +392,16 @@
                                              <xsl:with-param name="baseID" select="$baseID"/>
                                              <xsl:with-param name="type" select="'reproduction'"/>
                                              <xsl:with-param name="agg" select="'agg'"/>
+                                             <xsl:with-param name="isElectronic" select="$isElectronic"/>
+                                             <xsl:with-param name="isMicroform" select="$isMicroform"/>
                                          </xsl:apply-templates>
                                      </xsl:when>
                                      <xsl:otherwise>
                                          <xsl:apply-templates select="*" mode="man">
                                              <xsl:with-param name="baseID" select="$baseID"/>
                                              <xsl:with-param name="type" select="'reproduction'"/>
+                                             <xsl:with-param name="isElectronic" select="$isElectronic"/>
+                                             <xsl:with-param name="isMicroform" select="$isMicroform"/>
                                          </xsl:apply-templates>
                                      </xsl:otherwise>
                                  </xsl:choose>
@@ -402,11 +412,15 @@
                                          <xsl:apply-templates select="*" mode="man">
                                              <xsl:with-param name="baseID" select="$baseID"/>
                                              <xsl:with-param name="agg" select="'agg'"/>
+                                             <xsl:with-param name="isElectronic" select="$isElectronic"/>
+                                             <xsl:with-param name="isMicroform" select="$isMicroform"/>
                                          </xsl:apply-templates>
                                      </xsl:when>
                                      <xsl:otherwise>
                                          <xsl:apply-templates select="*" mode="man">
                                              <xsl:with-param name="baseID" select="$baseID"/>
+                                             <xsl:with-param name="isElectronic" select="$isElectronic"/>
+                                             <xsl:with-param name="isMicroform" select="$isMicroform"/>
                                          </xsl:apply-templates>
                                      </xsl:otherwise>
                                  </xsl:choose>
@@ -436,12 +450,12 @@
                              
                              <!-- This code can be uncommented to add a manifestation access point to the manifestation description.
                          m2r:mainManifestationAccessPoint() is located in m2r-aps.xsl -->
-                             <xsl:variable name="manifestationAP" select="m2r:mainManifestationAccessPoint(.)"/>
-                         <xsl:if test="$manifestationAP">
-                             <rdamd:P30276>
-                                 <xsl:value-of select="$manifestationAP"/>
-                             </rdamd:P30276>
-                         </xsl:if>
+                             <xsl:variable name="manifestationAP" select="m2r:mainManifestationAccessPoint(., $isElectronic, $isMicroform)"/>
+                             <xsl:if test="$manifestationAP">
+                                 <rdamd:P30276>
+                                     <xsl:value-of select="$manifestationAP"/>
+                                 </rdamd:P30276>
+                             </xsl:if>
                              
                              <xsl:apply-templates select="*" mode="origMan">
                                  <xsl:with-param name="baseID" select="$baseID"/>
@@ -511,7 +525,7 @@
         </xsl:when>
             <xsl:otherwise>
                 <xsl:message>
-                    <xsl:text>Record {translate(marc:controlfield[@tag='001'], ' ', '')} ({position()}/{last()}) identified as Tactile ({$isTactile}) and was not processed.</xsl:text>
+                    <xsl:text>Record {translate(marc:controlfield[@tag='001'], ' ', '')} ({position()}/{last()}) identified as Tactile and was not processed.</xsl:text>
                 </xsl:message>
             </xsl:otherwise>
         </xsl:choose>

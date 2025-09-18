@@ -1360,6 +1360,9 @@
             <xsl:when test="exists($record33XIRIs//IRI[matches(., 'RDACarrierType')][matches(., '1020|1021|1022|1023|1024|1025|1026|1027|1028|1056')])">
                 <xsl:value-of select="true()"/>
             </xsl:when>
+            <xsl:when test="exists($record33XIRIs//IRI[matches(., 'RDAMediaType')][matches(., '1002')])">
+                <xsl:value-of select="true()"/>
+            </xsl:when>
             <!-- book -->
             <!-- 008 -->
             <xsl:when test="($ldr6-7 = 'aa' or $ldr6-7 = 'ac' or $ldr6-7 = 'ad' or $ldr6-7 = 'am'
@@ -1455,6 +1458,10 @@
             <xsl:choose>
                 <!-- 33x computer -->
                 <xsl:when test="exists($record33XIRIs//IRI[matches(., 'http://rdaregistry.info/termList/RDAMediaType/1003')])">
+                    <xsl:value-of select="true()"/>
+                </xsl:when>
+                <xsl:when test="exists($record33XIRIs//IRI[matches(., 'RDACarrierType')]
+                    [matches(., '1010|1011|1012|1013|1014|1015|1016|1017|1018')])">
                     <xsl:value-of select="true()"/>
                 </xsl:when>
                 <!-- 583 $a -->
@@ -1574,23 +1581,7 @@
             </xsl:choose>
         </xsl:variable>
         
-        <xsl:choose>
-            <xsl:when test="$electronicIndicators = true()">
-                <xsl:choose>
-                    <xsl:when test="exists($record/marc:datafield[@tag='530']/marc:subfield[@code='a']
-                        [matches(lower-case(.), 'also available|also issued|available also|issued also')])
-                        and not(exists($record/marc:datafield[@tag='856'][@ind2='0']))">
-                        <xsl:value-of select="true()"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="false()"/>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:value-of select="true()"/>
-            </xsl:otherwise>
-        </xsl:choose>
+        <xsl:value-of select="$electronicIndicators"/>
     </xsl:function>
     
     <xsl:function name="m2r:get33XIRIs">

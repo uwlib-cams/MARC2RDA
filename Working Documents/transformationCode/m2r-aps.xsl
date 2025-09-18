@@ -105,6 +105,7 @@
         and m2r:rdaGetTerm338() from m2r-functions -->
     <xsl:function name="m2r:carrierType">
         <xsl:param name="record"/>
+        <xsl:param name="isElectronic"/>
         <xsl:param name="isMicroform"/>
         <xsl:variable name="termNodes">
             <terms>
@@ -133,10 +134,27 @@
         </xsl:variable>
         <xsl:variable name="sortedTerms">
             <xsl:choose>
+                <xsl:when test="$isElectronic = true()">
+                    <xsl:choose>
+                        <xsl:when test="$termNodes/terms/term[matches(lower-case(.), 'computer|online')]">
+                            <xsl:for-each-group select="$termNodes/terms/term[matches(lower-case(.), 'computer|online')]" 
+                                group-by="text()">
+                                <xsl:sort select="text()"/>
+                                <xsl:value-of select="upper-case(substring(current-grouping-key(), 1, 1))||substring(current-grouping-key(), 2)"/>
+                                <xsl:if test="position() != last()">
+                                    <xsl:text> : </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each-group>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="'Electronic'"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:when>
                 <xsl:when test="$isMicroform = true()">
                     <xsl:choose>
-                        <xsl:when test="$termNodes/terms/term[matches(., 'micro') and not(matches(., 'microscope'))]">
-                            <xsl:for-each-group select="$termNodes/terms/term[matches(., 'micro') and not(matches(., 'microscope'))]" 
+                        <xsl:when test="$termNodes/terms/term[matches(lower-case(.), 'micro') and not(matches(lower-case(.), 'microscope'))]">
+                            <xsl:for-each-group select="$termNodes/terms/term[matches(lower-case(.), 'micro') and not(matches(lower-case(.), 'microscope'))]" 
                                 group-by="text()">
                                 <xsl:sort select="text()"/>
                                 <xsl:value-of select="upper-case(substring(current-grouping-key(), 1, 1))||substring(current-grouping-key(), 2)"/>
@@ -933,6 +951,7 @@
     
     <xsl:function name="m2r:mainManifestationAccessPoint"  expand-text="yes">
         <xsl:param name="record"/>
+        <xsl:param name="isElectronic"/>
         <xsl:param name="isMicroform"/>
         
         <!-- same logic as F245 mapping to title proper -->
@@ -953,7 +972,7 @@
         </xsl:variable>
         
         <xsl:variable name="carrierType">
-            <xsl:value-of select="m2r:carrierType($record, $isMicroform)"/>
+            <xsl:value-of select="m2r:carrierType($record, $isElectronic, $isMicroform)"/>
         </xsl:variable>
         
         <xsl:variable name="fullAP">
