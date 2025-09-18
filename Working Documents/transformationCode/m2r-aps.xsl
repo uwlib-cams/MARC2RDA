@@ -105,7 +105,7 @@
         and m2r:rdaGetTerm338() from m2r-functions -->
     <xsl:function name="m2r:carrierType">
         <xsl:param name="record"/>
-        <xsl:variable name="isMicroform" select="m2r:isMicroform($record)"/>
+        <xsl:param name="isMicroform"/>
         <xsl:variable name="termNodes">
             <terms>
                 <xsl:choose>
@@ -133,7 +133,7 @@
         </xsl:variable>
         <xsl:variable name="sortedTerms">
             <xsl:choose>
-                <xsl:when test="$isMicroform = 'True'">
+                <xsl:when test="$isMicroform = true()">
                     <xsl:choose>
                         <xsl:when test="$termNodes/terms/term[matches(., 'micro') and not(matches(., 'microscope'))]">
                             <xsl:for-each-group select="$termNodes/terms/term[matches(., 'micro') and not(matches(., 'microscope'))]" 
@@ -933,6 +933,7 @@
     
     <xsl:function name="m2r:mainManifestationAccessPoint"  expand-text="yes">
         <xsl:param name="record"/>
+        <xsl:param name="isMicroform"/>
         
         <!-- same logic as F245 mapping to title proper -->
         <xsl:variable name="titleProper">
@@ -952,7 +953,7 @@
         </xsl:variable>
         
         <xsl:variable name="carrierType">
-            <xsl:value-of select="m2r:carrierType($record)"/>
+            <xsl:value-of select="m2r:carrierType($record, $isMicroform)"/>
         </xsl:variable>
         
         <xsl:variable name="fullAP">

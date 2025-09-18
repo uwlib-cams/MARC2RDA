@@ -312,12 +312,14 @@
     
     <xsl:function name="m2r:mainManifestationIRI">
         <xsl:param name="record"/>
-        <xsl:value-of select="$BASE||'transform/man#'||encode-for-uri(m2r:stripAllPunctuation(m2r:recordIdentifier($record)))||encode-for-uri(m2r:stripAllPunctuation(m2r:mainManifestationAccessPoint($record)))"/>
+        <xsl:param name="isMicroform"/>
+        <xsl:value-of select="$BASE||'transform/man#'||encode-for-uri(m2r:stripAllPunctuation(m2r:recordIdentifier($record)))||encode-for-uri(m2r:stripAllPunctuation(m2r:mainManifestationAccessPoint($record, $isMicroform)))"/>
     </xsl:function>
     
     <xsl:function name="m2r:origManifestationIRI">
         <xsl:param name="record"/>
-        <xsl:value-of select="$BASE||'transform/origMan#'||encode-for-uri(m2r:stripAllPunctuation(m2r:recordIdentifier($record)))||encode-for-uri(m2r:stripAllPunctuation(m2r:mainManifestationAccessPoint($record)))"/>
+        <xsl:param name="isMicroform"/>
+        <xsl:value-of select="$BASE||'transform/origMan#'||encode-for-uri(m2r:stripAllPunctuation(m2r:recordIdentifier($record)))||encode-for-uri(m2r:stripAllPunctuation(m2r:mainManifestationAccessPoint($record, $isMicroform)))"/>
     </xsl:function>
     
     <!-- returns an IRI for an item -->

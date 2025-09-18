@@ -200,10 +200,11 @@
         | marc:datafield[@tag = '337'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '337']
         | marc:datafield[@tag = '338'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '338']" 
         mode="man">
+        <xsl:param name="isMicroform"/>
         <!--<xsl:call-template name="getmarc"/>-->
         
         <xsl:variable name="sub3" select="marc:subfield[@code = '3']"/>
-        <xsl:variable name="isMicroform" select="m2r:isMicroform(..)"/>
+        <xsl:variable name="isMicroform" select="$isMicroform"/>
         
         <xsl:variable name="mappedTriple">
             <xsl:call-template name="F336-337-338">
@@ -222,7 +223,7 @@
         
         <xsl:for-each select="$mappedTriple/child::*[starts-with(name(), 'rdam')]">
             <xsl:choose>
-                <xsl:when test="$isMicroform = 'True'">
+                <xsl:when test="$isMicroform != false()">
                     <xsl:choose>
                         <xsl:when test="contains(name(), 'P30001')">
                             <xsl:choose>

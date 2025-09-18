@@ -292,7 +292,7 @@
     <marcCR006c7>e</marcCR006c7>
     <marcCR008c24>y</marcCR008c24>
     <marcCR006c7>y</marcCR006c7>
-    <marc245h>activity card|drawing|painting|picture|icon|diagram|graphic|photograph|photomechanical|photonegative|photoprint|jigsaw puzzle|flash card|board book</marc245h>
+    <marc245h>activity card|collage|drawing|painting|picture|icon|diagram|graphic|photograph|photomechanical|photonegative|photoprint|jigsaw puzzle|flash card|board book</marc245h>
     <marc300a>graphic|activity card|collage|drawing|painting|poster|postcard|icon|radiograph|study print|photograph|photomechanical|photonegative|photoprint|lithograph|negative|paper fragments|flash card|board book</marc300a>
     <xpath>(substring(marc:leader, 7, 1) = 'k')
       and (marc:datafield[@tag='245']/marc:subfield[@code='h'][matches(lower-case(.), 'diagram')]
