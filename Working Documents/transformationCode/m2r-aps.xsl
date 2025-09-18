@@ -168,10 +168,10 @@
         <xsl:param name="record"/>
         <xsl:for-each select="$record/marc:datafield[@tag = '250']/marc:subfield[@code = 's'] | $record/marc:datafield[@tag = '250']/marc:subfield[@code = 'a'][not(matches(lower-case(.), 'first edition|first ed.|1st edition|1st ed.'))]">
             <xsl:if test="./@code = 's'">
-                <xsl:value-of select="upper-case(substring(., 1, 1))||substring(., 2)"/>
+                <xsl:value-of select="m2r:stripEndPunctuation(upper-case(substring(., 1, 1))||substring(., 2))"/>
             </xsl:if>
             <xsl:if test="./@code = 'a'">
-                <xsl:value-of select="upper-case(substring(., 1, 1))||substring(., 2)"/>
+                <xsl:value-of select="m2r:stripEndPunctuation(upper-case(substring(., 1, 1))||substring(., 2))"/>
             </xsl:if>
             <xsl:if test="position() != last()">
                 <xsl:text> : </xsl:text>
@@ -183,7 +183,7 @@
         <xsl:param name="record"/>
         <xsl:variable name="expVersion">
             <xsl:for-each select="$record/marc:datafield[@tag = '245']/marc:subfield[@code = 's']">
-                <xsl:value-of select="upper-case(substring(., 1, 1))||substring(., 2)"/>
+                <xsl:value-of select="m2r:stripEndPunctuation(upper-case(substring(., 1, 1))||substring(., 2))"/>
                 <xsl:text> : </xsl:text>
             </xsl:for-each>
             <xsl:for-each select="$record/marc:datafield[@tag = '250']/marc:subfield[@code = 'a']">
@@ -193,7 +193,7 @@
                         satisfies starts-with(lower-case($f250a), substring-before(lower-case($b), ' '))) then 'True' else 'False'"/>
                 </xsl:variable>
                 <xsl:if test="$match26Xb = 'False'">
-                    <xsl:value-of select="upper-case(substring(., 1, 1))||substring(., 2)"/>
+                    <xsl:value-of select="m2r:stripEndPunctuation(upper-case(substring(., 1, 1))||substring(., 2))"/>
                     <xsl:text> : </xsl:text>
                 </xsl:if>
             </xsl:for-each>
