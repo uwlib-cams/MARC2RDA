@@ -200,11 +200,11 @@
         | marc:datafield[@tag = '337'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '337']
         | marc:datafield[@tag = '338'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '338']" 
         mode="man">
+        <xsl:param name="isElectronic"/>
         <xsl:param name="isMicroform"/>
         <!--<xsl:call-template name="getmarc"/>-->
         
         <xsl:variable name="sub3" select="marc:subfield[@code = '3']"/>
-        <xsl:variable name="isMicroform" select="$isMicroform"/>
         
         <xsl:variable name="mappedTriple">
             <xsl:call-template name="F336-337-338">
@@ -223,6 +223,25 @@
         
         <xsl:for-each select="$mappedTriple/child::*[starts-with(name(), 'rdam')]">
             <xsl:choose>
+                <xsl:when test="$isElectronic != false()">
+                    <xsl:choose>
+                        <xsl:when test="contains(name(), 'P30001')">
+                            <xsl:choose>
+                                <xsl:when test="not(contains(@rdf:resource, 'RDACarrierType'))">
+                                    <xsl:copy-of select="."/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:if test="matches(@rdf:resource, '1010|1011|1012|1013|1014|1015|1016|1017|1018')">
+                                        <xsl:copy-of select="."/>
+                                    </xsl:if>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:copy-of select="."/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:when>
                 <xsl:when test="$isMicroform != false()">
                     <xsl:choose>
                         <xsl:when test="contains(name(), 'P30001')">

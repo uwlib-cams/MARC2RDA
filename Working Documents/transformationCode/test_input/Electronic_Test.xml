@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    
+    <marc:record>
+        <marc:leader>03260cai a2200565 a 4500</marc:leader>
+        <marc:controlfield tag="001">39720541</marc:controlfield>
+        <marc:controlfield tag="005">20241019171403.3</marc:controlfield>
+        <marc:controlfield tag="008">980819c19979999wauuu w o    s0    2eng d</marc:controlfield>
+        <marc:controlfield tag="006">m     o  d s      </marc:controlfield>
+        <marc:controlfield tag="007">cr mn|||||||||</marc:controlfield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAU</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="c">WAU</marc:subfield>
+            <marc:subfield code="d">OCL</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCG</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCA</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCF</marc:subfield>
+            <marc:subfield code="d">OCLCA</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">ORE</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCL</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="043" ind1=" " ind2=" ">
+            <marc:subfield code="a">n-us-wa</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="050" ind1=" " ind2="4">
+            <marc:subfield code="a">GC58.12.W2</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="049" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAUW</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="a">University of Washington Sea Grant.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="246" ind1="1" ind2=" ">
+            <marc:subfield code="i">HTML source title:</marc:subfield>
+            <marc:subfield code="a">Washington Sea Grant Program</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">Seattle, Wash. :</marc:subfield>
+            <marc:subfield code="b">Office of Marine Environmental and Resource Programs, Washington Sea Grant Program,</marc:subfield>
+            <marc:subfield code="c">1997-</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 online resource</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer</marc:subfield>
+            <marc:subfield code="b">c</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">online resource</marc:subfield>
+            <marc:subfield code="b">cr</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">&quot;Webmaster, Susan Cook; Writer, David G. Gordon&quot;--Credits page</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">Includes a link to the online version of the Washington Sea Grant Program Publications Database.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="588" ind1="0" ind2=" ">
+            <marc:subfield code="a">Online resource; title from web page (viewed August 14, 1998).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="610" ind1="2" ind2="0">
+            <marc:subfield code="a">Washington Sea Grant Program.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Marine resources</marc:subfield>
+            <marc:subfield code="x">Research</marc:subfield>
+            <marc:subfield code="z">Washington (State)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Marine resources</marc:subfield>
+            <marc:subfield code="x">Computer network resources.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Fisheries</marc:subfield>
+            <marc:subfield code="x">Research</marc:subfield>
+            <marc:subfield code="z">Washington (State)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Fisheries</marc:subfield>
+            <marc:subfield code="x">Computer network resources.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Aquaculture</marc:subfield>
+            <marc:subfield code="x">Research</marc:subfield>
+            <marc:subfield code="z">Washington (State)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Aquaculture</marc:subfield>
+            <marc:subfield code="x">Computer network resources.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Estuaries</marc:subfield>
+            <marc:subfield code="x">Research</marc:subfield>
+            <marc:subfield code="z">Washington (State)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Estuaries</marc:subfield>
+            <marc:subfield code="x">Computer network resources.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Ressources marines</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0009124</marc:subfield>
+            <marc:subfield code="x">Recherche</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0379425</marc:subfield>
+            <marc:subfield code="z">Washington (État)</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0395184</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Pêches</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0027216</marc:subfield>
+            <marc:subfield code="x">Recherche</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0027216</marc:subfield>
+            <marc:subfield code="z">Washington (État)</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0395184</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Aquaculture</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0001992</marc:subfield>
+            <marc:subfield code="x">Recherche</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0379425</marc:subfield>
+            <marc:subfield code="z">Washington (État)</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0395184</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Estuaires</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0136661</marc:subfield>
+            <marc:subfield code="x">Recherche</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0136661</marc:subfield>
+            <marc:subfield code="z">Washington (État)</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0395184</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="610" ind1="2" ind2="7">
+            <marc:subfield code="a">Washington Sea Grant Program</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39QQPVp7WMgyD6mqvcyJdfhTR</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00515832</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Aquaculture</marc:subfield>
+            <marc:subfield code="x">Research</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00811890</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Estuaries</marc:subfield>
+            <marc:subfield code="x">Research</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00915667</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Fisheries</marc:subfield>
+            <marc:subfield code="x">Computer network resources</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00926062</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Fisheries</marc:subfield>
+            <marc:subfield code="x">Research</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00926125</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Marine resources</marc:subfield>
+            <marc:subfield code="x">Research</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01009900</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="7">
+            <marc:subfield code="a">Washington (State)</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PBJpymmTY6j9pxXGMd79FKd</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01204703</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Cook, Susan.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2=" ">
+            <marc:subfield code="a">Gordon, David G.</marc:subfield>
+            <marc:subfield code="q">(David George),</marc:subfield>
+            <marc:subfield code="d">1950-</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PCjymVbjHvFGg38TyFYH7gX</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="710" ind1="2" ind2=" ">
+            <marc:subfield code="a">Washington Sea Grant Program.</marc:subfield>
+            <marc:subfield code="b">Office of Marine Environment and Resources Programs.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="758" ind1=" " ind2=" ">
+            <marc:subfield code="i">has work:</marc:subfield>
+            <marc:subfield code="a">University of Washington Sea Grant (Text)</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PCFRBVPD6xTTg6wbKJYtYRq</marc:subfield>
+            <marc:subfield code="4">https://id.oclc.org/worldcat/ontology/hasWork</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="u">https://wsg.washington.edu/</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2=" ">
+            <marc:subfield code="z">Electronic address (http://www.wsg.washington.edu/index.html) not available when searched on 3/25/2022</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- edited to have incorrect carrier type -->
+    <marc:record>
+        <marc:leader>01901cam a2200433 i 4500</marc:leader>
+        <marc:controlfield tag="001">1130125167</marc:controlfield>
+        <marc:controlfield tag="005">20240202180208.2</marc:controlfield>
+        <marc:controlfield tag="008">191212s2020    onc     ob    001 0 eng d</marc:controlfield>
+        <marc:controlfield tag="006">m     o  d        </marc:controlfield>
+        <marc:controlfield tag="007">cr ||||||||||</marc:controlfield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">YDX</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="e">pn</marc:subfield>
+            <marc:subfield code="c">YDX</marc:subfield>
+            <marc:subfield code="d">N$T</marc:subfield>
+            <marc:subfield code="d">SNM</marc:subfield>
+            <marc:subfield code="d">OCLCF</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">WAU</marc:subfield>
+            <marc:subfield code="d">K6U</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCQ</marc:subfield>
+            <marc:subfield code="d">OCLCO</marc:subfield>
+            <marc:subfield code="d">OCLCL</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">1774074753</marc:subfield>
+            <marc:subfield code="q">(electronic bk.)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9781774074756</marc:subfield>
+            <marc:subfield code="q">(electronic bk.)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="050" ind1=" " ind2="4">
+            <marc:subfield code="a">SH136.S88</marc:subfield>
+            <marc:subfield code="b">B67 2020</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="082" ind1="0" ind2="4">
+            <marc:subfield code="a">338.3/718</marc:subfield>
+            <marc:subfield code="2">23</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="049" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAUW</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Borges, Bruno Augusto Amato.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">RURAL AQUACULTURE /</marc:subfield>
+            <marc:subfield code="c">Bruno Augusto Amato Borges.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="a">Oakville, ON :</marc:subfield>
+            <marc:subfield code="b">DELVE Publishing,</marc:subfield>
+            <marc:subfield code="c">2020.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 online resource (xvi, 184 pages) :</marc:subfield>
+            <marc:subfield code="b">illustrations</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="336" ind1=" " ind2=" ">
+            <marc:subfield code="a">text</marc:subfield>
+            <marc:subfield code="b">txt</marc:subfield>
+            <marc:subfield code="2">rdacontent</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer</marc:subfield>
+            <marc:subfield code="b">c</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">volume</marc:subfield>
+            <marc:subfield code="b">nc</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="504" ind1=" " ind2=" ">
+            <marc:subfield code="a">Includes bibliographical references and index.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="588" ind1="0" ind2=" ">
+            <marc:subfield code="a">Online resource; title from PDF file page (EBSCO, viewed February 4, 2020).</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Sustainable aquaculture.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Aquaculture industry.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Rural development.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Aquaculture durable.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0424259</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Aquaculture</marc:subfield>
+            <marc:subfield code="x">Industrie.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0115912</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="6">
+            <marc:subfield code="a">Développement rural.</marc:subfield>
+            <marc:subfield code="0">(CaQQLa)201-0006283</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">rural development.</marc:subfield>
+            <marc:subfield code="2">aat</marc:subfield>
+            <marc:subfield code="0">(CStmoGRI)aat300055435</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Aquaculture industry</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst00811902</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Rural development</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01101498</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="7">
+            <marc:subfield code="a">Sustainable aquaculture</marc:subfield>
+            <marc:subfield code="2">fast</marc:subfield>
+            <marc:subfield code="0">(OCoLC)fst01736619</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="758" ind1=" " ind2=" ">
+            <marc:subfield code="i">has work:</marc:subfield>
+            <marc:subfield code="a">Rural Aquaculture (Work)</marc:subfield>
+            <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PCYRPtDJKTGmdq3VtDxW6jC</marc:subfield>
+            <marc:subfield code="4">https://id.oclc.org/worldcat/ontology/hasWork</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="3">EBSCOhost</marc:subfield>
+            <marc:subfield code="u">https://search.ebscohost.com/login.aspx?direct=true&amp;scope=site&amp;db=nlebk&amp;db=nlabk&amp;AN=2324402</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">EBSCOhost</marc:subfield>
+            <marc:subfield code="b">EBSC</marc:subfield>
+            <marc:subfield code="n">2324402</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="938" ind1=" " ind2=" ">
+            <marc:subfield code="a">YBP Library Services</marc:subfield>
+            <marc:subfield code="b">YANK</marc:subfield>
+            <marc:subfield code="n">300992767</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+</marc:collection>
