@@ -635,16 +635,17 @@
     </xsl:template>
  
     <!-- 257 - Country of Producing Entity -->
-    <xsl:template match="marc:datafield[@tag = '257'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '257']" 
+    <xsl:template match="marc:datafield[@tag='257'] | marc:datafield[@tag='880'][substring(marc:subfield[@code='6'], 1, 3) = '257']"
         mode="wor" expand-text="yes">
         <xsl:param name="baseID"/>
-        <!--<xsl:call-template name="getmarc"/>-->
         <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
         <xsl:for-each select="marc:subfield[@code = 'a']">
+        <!-- $2 source -->        
             <xsl:variable name="suba" select="."/>
             <xsl:choose>
-                <xsl:when test="matches(., '\S+.*;.*\S+')">
-                    <xsl:for-each select="tokenize(., ';')">
+                <!-- split on ; or , with optional whitespace -->
+                <xsl:when test="matches(., '\S+.*[;,].*\S+')">
+                    <xsl:for-each select="tokenize(., '\s*[;,]\s*')">
                         <xsl:choose>
                             <xsl:when test="$sub2">
                                 <!-- this is okay because it is only minted when there is a source, else there would be a problem with multiple IRIs coming from the same node -->
@@ -672,16 +673,22 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:for-each>
-        <xsl:for-each select="marc:subfield[@code = '0']">
+        <xsl:for-each select="marc:subfield[@code='0']">
             <xsl:choose>
                 <xsl:when test="contains(., 'id.loc.gov/vocabulary/geographicAreas')">
-                    <rdawo:P10316 rdf:resource="{.}"/>
+                    <rdawo:P10316 rdf:resource="{normalize-space(.)}"/>
                 </xsl:when>
                 <xsl:when test="contains(., 'id.loc.gov/authorities/names/')">
-                    <xsl:variable name="gac" select="m2r:lcNamesToGeographicAreas(.)"/>
+                    <xsl:variable name="gacSeq"
+                        select="tokenize(normalize-space(m2r:lcNamesToGeographicAreas(.)), '[\s,;]+')"/>
                     <xsl:choose>
-                        <xsl:when test="$gac != ''">
-                            <rdawo:P10316 rdf:resource="{concat('http://id.loc.gov/vocabulary/geographicAreas/', replace($gac,'-+$',''))}"/>
+                        <xsl:when test="exists($gacSeq[normalize-space()])">
+                            <xsl:for-each select="distinct-values($gacSeq[normalize-space()])">
+                                <xsl:variable name="code" select="replace(., '-+$', '')"/>
+                                <xsl:if test="matches($code, '^[a-z]-[a-z0-9-]+$')">
+                                    <rdawo:P10316 rdf:resource="{concat('http://id.loc.gov/vocabulary/geographicAreas/', $code)}"/>
+                                </xsl:if>
+                            </xsl:for-each>
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:comment>Geographic Area Code could not be retrieved from {.}</xsl:comment>
@@ -693,16 +700,22 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:for-each>
-        <xsl:for-each select="marc:subfield[@code = '1']">
+        <xsl:for-each select="marc:subfield[@code='1']">
             <xsl:choose>
                 <xsl:when test="contains(., 'id.loc.gov/vocabulary/geographicAreas')">
-                    <rdawo:P10316 rdf:resource="{.}"/>
+                    <rdawo:P10316 rdf:resource="{normalize-space(.)}"/>
                 </xsl:when>
                 <xsl:when test="contains(., 'id.loc.gov/authorities/names/')">
-                    <xsl:variable name="gac" select="m2r:lcNamesToGeographicAreas(.)"/>
+                    <xsl:variable name="gacSeq"
+                        select="tokenize(normalize-space(m2r:lcNamesToGeographicAreas(.)), '[\s,;]+')"/>
                     <xsl:choose>
-                        <xsl:when test="$gac != ''">
-                            <rdawo:P10316 rdf:resource="{concat('http://id.loc.gov/vocabulary/geographicAreas/', replace($gac,'-+$',''))}"/>
+                        <xsl:when test="exists($gacSeq[normalize-space()])">
+                            <xsl:for-each select="distinct-values($gacSeq[normalize-space()])">
+                                <xsl:variable name="code" select="replace(., '-+$', '')"/>
+                                <xsl:if test="matches($code, '^[a-z]-[a-z0-9-]+$')">
+                                    <rdawo:P10316 rdf:resource="{concat('http://id.loc.gov/vocabulary/geographicAreas/', $code)}"/>
+                                </xsl:if>
+                            </xsl:for-each>
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:comment>Geographic Area Code could not be retrieved from {.}</xsl:comment>
@@ -715,10 +728,16 @@
                         <xsl:value-of select="$tokenizedIRI[last()]"/>
                     </xsl:variable>
                     <xsl:variable name="authorityFile" select="concat('http://id.loc.gov/authorities/names/', $id)"/>
-                    <xsl:variable name="gac" select="m2r:lcNamesToGeographicAreas($authorityFile)"/>
+                    <xsl:variable name="gacSeq"
+                        select="tokenize(normalize-space(m2r:lcNamesToGeographicAreas($authorityFile)), '[\s,;]+')"/>
                     <xsl:choose>
-                        <xsl:when test="$gac != ''">
-                            <rdawo:P10316 rdf:resource="{concat('http://id.loc.gov/vocabulary/geographicAreas/', replace($gac,'-+$',''))}"/>
+                        <xsl:when test="exists($gacSeq[normalize-space()])">
+                            <xsl:for-each select="distinct-values($gacSeq[normalize-space()])">
+                                <xsl:variable name="code" select="replace(., '-+$', '')"/>
+                                <xsl:if test="matches($code, '^[a-z]-[a-z0-9-]+$')">
+                                    <rdawo:P10316 rdf:resource="{concat('http://id.loc.gov/vocabulary/geographicAreas/', $code)}"/>
+                                </xsl:if>
+                            </xsl:for-each>
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:comment>Geographic Area Code could not be retrieved from {$authorityFile}</xsl:comment>
@@ -726,22 +745,22 @@
                     </xsl:choose>
                 </xsl:when>
                 <xsl:otherwise>
-                    <rdawo:P10316 rdf:resource="{.}"/>
+                    <rdawo:P10316 rdf:resource="{normalize-space(.)}"/>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:for-each>
     </xsl:template>
     
-    <xsl:template match="marc:datafield[@tag = '257'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '257']" 
+    <xsl:template match="marc:datafield[@tag='257'] | marc:datafield[@tag='880'][substring(marc:subfield[@code='6'], 1, 3) = '257']"
         mode="pla" expand-text="yes">
         <xsl:param name="baseID"/>
-        <xsl:if test="marc:subfield[@code = '2']">
-            <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
-            <xsl:for-each select="marc:subfield[@code = 'a']">
+        <xsl:if test="marc:subfield[@code='2']">
+            <xsl:variable name="sub2" select="marc:subfield[@code='2'][1]"/>
+            <xsl:for-each select="marc:subfield[@code='a']">
                 <xsl:variable name="suba" select="."/>
                 <xsl:choose>
-                    <xsl:when test="matches(., '\S+.*;.*\S+')">
-                        <xsl:for-each select="tokenize(., ';')">
+                    <xsl:when test="matches(., '\S+.*[;,].*\S+')">
+                        <xsl:for-each select="tokenize(., '\s*[;,]\s*')">
                             <rdf:Description rdf:about="{m2r:placeIRI($baseID, $suba, ., $sub2)}">
                                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
                                 <rdapo:P70019 rdf:resource="{m2r:nomenIRI($baseID, $suba, ., $sub2, 'place')}"/>
@@ -759,16 +778,16 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template match="marc:datafield[@tag = '257'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '257']" 
+    <xsl:template match="marc:datafield[@tag='257'] | marc:datafield[@tag='880'][substring(marc:subfield[@code='6'], 1, 3) = '257']"
         mode="nom" expand-text="yes">
         <xsl:param name="baseID"/>
-        <xsl:if test="marc:subfield[@code = '2']">
-            <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
-            <xsl:for-each select="marc:subfield[@code = 'a']">
+        <xsl:if test="marc:subfield[@code='2']">
+            <xsl:variable name="sub2" select="marc:subfield[@code='2'][1]"/>
+            <xsl:for-each select="marc:subfield[@code='a']">
                 <xsl:variable name="suba" select="."/>
                 <xsl:choose>
-                    <xsl:when test="matches(., '\S+.*;.*\S+')">
-                        <xsl:for-each select="tokenize(., ';')">
+                    <xsl:when test="matches(., '\S+.*[;,].*\S+')">
+                        <xsl:for-each select="tokenize(., '\s*[;,]\s*')">
                             <rdf:Description rdf:about="{m2r:nomenIRI($baseID, $suba, ., $sub2, 'place')}">
                                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                                 <rdand:P80068>
@@ -791,7 +810,8 @@
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
-
+    <!-- $2 source (e.g., naf) -->
+    
     <!-- 260 - Publication, Distribution, etc. (Imprint) -->
     <xsl:template match="marc:datafield[@tag = '260'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '260']"
         mode="man" expand-text="yes">

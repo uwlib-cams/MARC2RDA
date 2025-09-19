@@ -1,927 +1,586 @@
-<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test001">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test001</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc245-test001</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test001"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#jamesandersonjuniorcorrespondence"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#jamesandersonjuniorcorrespondence"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#jamesandersonjuniorcorrespondence"/><!--rdawo:P10617 = is metadata description of manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test001">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test001"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc245-test001</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30137>F 11111nam a2200553ui 4500
-F001 245-test001
-F245 10 $a [James Anderson [junior] correspondence].
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#jamesandersonjuniorcorrespondence">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test001"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#jamesandersonjuniorcorrespondence"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>James Anderson [junior] correspondence</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>James Anderson [junior] correspondence</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#jamesandersonjuniorcorrespondence">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test001"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#jamesandersonjuniorcorrespondence"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#jamesandersonjuniorcorrespondence"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>James Anderson [junior] correspondence </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>James Anderson [junior] correspondence</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#jamesandersonjuniorcorrespondence">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test001"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#jamesandersonjuniorcorrespondence"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamd:P30276>James Anderson [junior] correspondence</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>James Anderson [junior] correspondence</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Title proper "James Anderson [junior] correspondence" is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test002">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test002</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc245-test002</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test002"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#letter1901march6dublintohenrikibsenkristianaoslo"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#letter1901march6dublintohenrikibsenkristianaoslo"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#letter1901march6dublintohenrikibsenkristianaoslo"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawd:P10400>245-test002</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc245-test002</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test002"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#letter1901march6dublintohenrikibsenkristianaoslo"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#letter1901march6dublintohenrikibsenkristianaoslo"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#letter1901march6dublintohenrikibsenkristianaoslo"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test002">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test002"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc245-test002</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test002"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc245-test002</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
       <rdamd:P30137>F 11111nam a2200553ui 4500
 F001 245-test002
 F245 00 $k Letter, $f 1901 March 6, $b Dublin, to Henrik Ibsen, Kristiana [Oslo].
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+</rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#letter1901march6dublintohenrikibsenkristianaoslo">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test002"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#letter1901march6dublintohenrikibsenkristianaoslo"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo]</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo]</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test002"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#letter1901march6dublintohenrikibsenkristianaoslo"/>
+      <rdawd:P10328>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo]</rdawd:P10328>
+      <rdawd:P10088>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo]</rdawd:P10088>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#letter1901march6dublintohenrikibsenkristianaoslo">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test002"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#letter1901march6dublintohenrikibsenkristianaoslo"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#letter1901march6dublintohenrikibsenkristianaoslo"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo] </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo]</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test002"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#letter1901march6dublintohenrikibsenkristianaoslo"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#letter1901march6dublintohenrikibsenkristianaoslo"/>
+      <rdaed:P20310>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo]</rdaed:P20310>
+      <rdaed:P20312>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo]</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#letter1901march6dublintohenrikibsenkristianaoslo">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test002"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#letter1901march6dublintohenrikibsenkristianaoslo"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamd:P30276>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo]</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo]</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30278>1901 March 6</rdamd:P30278><!--rdamd:P30278 = has date of manifestation-->
-      <rdamd:P30137>Letter.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test002"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#letter1901march6dublintohenrikibsenkristianaoslo"/>
+      <rdamd:P30276>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo]</rdamd:P30276>
+      <rdamd:P30156>Letter, 1901 March 6, Dublin, to Henrik Ibsen, Kristiana [Oslo]</rdamd:P30156>
+      <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137>
+      <rdamd:P30278>1901 March 6</rdamd:P30278>
+      <rdamd:P30137>Letter.</rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test003">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test003</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc245-test003</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test003"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#theshakespeareenigma"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#theshakespeareenigma"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#theshakespeareenigma"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawd:P10400>245-test003</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc245-test003</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test003"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#shakespeareenigma"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#shakespeareenigma"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#shakespeareenigma"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test003">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test003"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc245-test003</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test003"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc245-test003</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
       <rdamd:P30137>F 11111nam a2200553ui 4500
 F001 245-test003
 F245 14 $a The Shakespeare enigma : $b [unravelling the story of the two poets] / $c Peter Dawkins ; [foreword by Mark Rylance].
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+</rdamd:P30137>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#theshakespeareenigma">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#shakespeareenigma">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test003"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#theshakespeareenigma"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>The Shakespeare enigma</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>The Shakespeare enigma</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test003"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#shakespeareenigma"/>
+      <rdawd:P10328>Shakespeare enigma</rdawd:P10328>
+      <rdawd:P10088>The Shakespeare enigma</rdawd:P10088>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#theshakespeareenigma">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#shakespeareenigma">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test003"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#theshakespeareenigma"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#theshakespeareenigma"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>The Shakespeare enigma </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>The Shakespeare enigma</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test003"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#shakespeareenigma"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#shakespeareenigma"/>
+      <rdaed:P20310>Shakespeare enigma</rdaed:P20310>
+      <rdaed:P20312>The Shakespeare enigma</rdaed:P20312>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#theshakespeareenigma">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#shakespeareenigma">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test003"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#theshakespeareenigma"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamd:P30276>The Shakespeare enigma</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>The Shakespeare enigma</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30142>unravelling the story of the two poets</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30137>Other title information "unravelling the story of the two poets" is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30105>Peter Dawkins</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30105>foreword by Mark Rylance</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30137>Statement of responsibility "foreword by Mark Rylance" is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test004">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test004</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc245-test004</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test004"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#cavendishandshakespeare"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#cavendishandshakespeare"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#cavendishandshakespeare"/><!--rdawo:P10617 = is metadata description of manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test004">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test004"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc245-test004</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30137>F 11111nam a2200553ui 4500
-F001 245-test004
-F245 00 $a Cavendish and Shakespeare : $b interconnections / $c edited by Katherine Romack [and] James Fitzmaurice.
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#cavendishandshakespeare">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test004"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#cavendishandshakespeare"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Cavendish and Shakespeare</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Cavendish and Shakespeare</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#cavendishandshakespeare">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test004"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#cavendishandshakespeare"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#cavendishandshakespeare"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Cavendish and Shakespeare </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Cavendish and Shakespeare</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#cavendishandshakespeare">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test004"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#cavendishandshakespeare"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamd:P30276>Cavendish and Shakespeare</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Cavendish and Shakespeare</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30142>interconnections</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30105>edited by Katherine Romack [and] James Fitzmaurice</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test003"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#shakespeareenigma"/>
+      <rdamd:P30335>Aggregate manifestation</rdamd:P30335>
+      <rdamd:P30276>Shakespeare enigma</rdamd:P30276>
+      <rdamd:P30156>The Shakespeare enigma</rdamd:P30156>
+      <rdamd:P30142>unravelling the story of the two poets</rdamd:P30142>
+      <rdamd:P30137>Other title information "unravelling the story of the two poets" is assigned by the cataloguing agency.</rdamd:P30137>
+      <rdamd:P30105>Peter Dawkins</rdamd:P30105>
+      <rdamd:P30105>foreword by Mark Rylance</rdamd:P30105>
+      <rdamd:P30137>Statement of responsibility "foreword by Mark Rylance" is assigned by the cataloguing agency.</rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test005">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test005</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc245-test005</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test005"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#derdeyvonelbainparis"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#derdeyvonelbainparis"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#derdeyvonelbainparis"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawd:P10400>245-test005</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc245-test005</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test005"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#deyvonelbainparis"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#deyvonelbainparis"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#deyvonelbainparis"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test005">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test005"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc245-test005</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test005"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc245-test005</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
       <rdamd:P30137>F 11111nam a2200553ui 4500
 F001 245-test005
 F245 14 $a Der Dey von Elba in Paris : $b Sendschreiben des Thürmers in der Hauptstadt an seinen Vetter Andres : Faksmilie [that is Faksimile] des Erstdrucks / $c herausgegeben und kommentiert von Wulf Segebrecht.
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+</rdamd:P30137>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#derdeyvonelbainparis">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#deyvonelbainparis">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test005"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#derdeyvonelbainparis"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Der Dey von Elba in Paris</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Der Dey von Elba in Paris</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test005"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#deyvonelbainparis"/>
+      <rdawd:P10328>Dey von Elba in Paris</rdawd:P10328>
+      <rdawd:P10088>Der Dey von Elba in Paris</rdawd:P10088>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#derdeyvonelbainparis">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#deyvonelbainparis">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test005"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#derdeyvonelbainparis"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#derdeyvonelbainparis"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Der Dey von Elba in Paris </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Der Dey von Elba in Paris</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test005"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#deyvonelbainparis"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#deyvonelbainparis"/>
+      <rdaed:P20310>Dey von Elba in Paris</rdaed:P20310>
+      <rdaed:P20312>Der Dey von Elba in Paris</rdaed:P20312>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#derdeyvonelbainparis">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#deyvonelbainparis">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test005"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#derdeyvonelbainparis"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamd:P30276>Der Dey von Elba in Paris</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Der Dey von Elba in Paris</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30142>Sendschreiben des Thürmers in der Hauptstadt an seinen Vetter Andres</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30142>Faksmilie [that is Faksimile] des Erstdrucks</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30105>herausgegeben und kommentiert von Wulf Segebrecht</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test005"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#deyvonelbainparis"/>
+      <rdamd:P30276>Dey von Elba in Paris</rdamd:P30276>
+      <rdamd:P30156>Der Dey von Elba in Paris</rdamd:P30156>
+      <rdamd:P30142>Sendschreiben des Thürmers in der Hauptstadt an seinen Vetter Andres</rdamd:P30142>
+      <rdamd:P30142>Faksmilie [that is Faksimile] des Erstdrucks</rdamd:P30142>
+      <rdamd:P30105>herausgegeben und kommentiert von Wulf Segebrecht</rdamd:P30105>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test006">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test006</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc245-test006</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test006"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#sonnettfu%CC%88rwien"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#sonnettfu%CC%88rwien"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#sonnettfu%CC%88rwien"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawd:P10400>245-test006</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc245-test006</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test006"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#sonnettfu%CC%88rwien"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#sonnettfu%CC%88rwien"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#sonnettfu%CC%88rwien"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test006">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test006"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc245-test006</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test006"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc245-test006</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
       <rdamd:P30137>F 11111nam a2200553ui 4500
 F001 245-test006
 F245 10 $a Sonnett für Wien : $b [songs of Erich Korngold].
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+</rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#sonnettfu%CC%88rwien">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test006"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#sonnettfu%CC%88rwien"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Sonnett für Wien</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Sonnett für Wien</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test006"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#sonnettfu%CC%88rwien"/>
+      <rdawd:P10328>Sonnett für Wien</rdawd:P10328>
+      <rdawd:P10088>Sonnett für Wien</rdawd:P10088>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#sonnettfu%CC%88rwien">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test006"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#sonnettfu%CC%88rwien"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#sonnettfu%CC%88rwien"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Sonnett für Wien </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Sonnett für Wien</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test006"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#sonnettfu%CC%88rwien"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#sonnettfu%CC%88rwien"/>
+      <rdaed:P20310>Sonnett für Wien</rdaed:P20310>
+      <rdaed:P20312>Sonnett für Wien</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#sonnettfu%CC%88rwien">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test006"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#sonnettfu%CC%88rwien"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamd:P30276>Sonnett für Wien</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Sonnett für Wien</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30142>songs of Erich Korngold</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30137>Other title information "songs of Erich Korngold" is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test006"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#sonnettfu%CC%88rwien"/>
+      <rdamd:P30276>Sonnett für Wien</rdamd:P30276>
+      <rdamd:P30156>Sonnett für Wien</rdamd:P30156>
+      <rdamd:P30142>songs of Erich Korngold</rdamd:P30142>
+      <rdamd:P30137>Other title information "songs of Erich Korngold" is assigned by the cataloguing agency.</rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test007">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test007</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc245-test007</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test007"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#hamlet2009"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#hamlet2009"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#hamlet2009"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawd:P10400>245-test007</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc245-test007</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test007"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#hamlet2009"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#hamlet2009"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#hamlet2009"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test007">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test007"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc245-test007</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test007"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc245-test007</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
       <rdamd:P30137>F 11111nam a2200553ui 4500
 F001 245-test007
 F245 00 $a Hamlet [2009] / $c the Royal Shakespeare Company ; producers, John Wyver, Sebastian Grant ; director, Gregory Doran ; Illuminations, RSC for BBC.
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+</rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#hamlet2009">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test007"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#hamlet2009"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Hamlet [2009]</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Hamlet [2009]</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test007"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#hamlet2009"/>
+      <rdawd:P10328>Hamlet [2009]</rdawd:P10328>
+      <rdawd:P10088>Hamlet [2009]</rdawd:P10088>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#hamlet2009">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test007"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#hamlet2009"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#hamlet2009"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Hamlet [2009] </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Hamlet [2009]</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test007"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#hamlet2009"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#hamlet2009"/>
+      <rdaed:P20310>Hamlet [2009]</rdaed:P20310>
+      <rdaed:P20312>Hamlet [2009]</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#hamlet2009">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test007"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#hamlet2009"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamd:P30276>Hamlet [2009]</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Hamlet [2009]</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30105>the Royal Shakespeare Company</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30105>producers, John Wyver, Sebastian Grant</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30105>director, Gregory Doran</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30105>Illuminations, RSC for BBC</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test008">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test008</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc245-test008</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test008"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#theothersraisdinme"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#theothersraisdinme"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#theothersraisdinme"/><!--rdawo:P10617 = is metadata description of manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test008">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test008"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc245-test008</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30137>F 11111nam a2200553ui 4500
-F001 245-test008
-F245 14 $a The others raisd [sic] in me : $b 150 readings of Sonnet 150 : a plunderverse project / $c by Gregory Betts.
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#theothersraisdinme">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test008"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#theothersraisdinme"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>The others raisd in me</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>The others raisd in me</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#theothersraisdinme">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test008"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#theothersraisdinme"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#theothersraisdinme"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>The others raisd in me </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>The others raisd in me</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#theothersraisdinme">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test008"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#theothersraisdinme"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamd:P30276>The others raisd in me</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>The others raisd in me</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30142>150 readings of Sonnet 150</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30142>a plunderverse project</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30105>by Gregory Betts</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test007"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#hamlet2009"/>
+      <rdamd:P30276>Hamlet [2009]</rdamd:P30276>
+      <rdamd:P30156>Hamlet [2009]</rdamd:P30156>
+      <rdamd:P30105>the Royal Shakespeare Company</rdamd:P30105>
+      <rdamd:P30105>producers, John Wyver, Sebastian Grant</rdamd:P30105>
+      <rdamd:P30105>director, Gregory Doran</rdamd:P30105>
+      <rdamd:P30105>Illuminations, RSC for BBC</rdamd:P30105>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test009">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test009</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc245-test009</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test009"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#ferdinand%27scomfort"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#ferdinand%27scomfort"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#ferdinand%27scomfort"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawd:P10400>245-test009</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc245-test009</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test009"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#ferdinand%27scomfort"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#ferdinand%27scomfort"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#ferdinand%27scomfort"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test009">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test009"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc245-test009</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test009"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc245-test009</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
       <rdamd:P30137>F 11111nam a2200553ui 4500
 F001 245-test009
 F245 10 $a Ferdinand's Comfort : $b for soprano, baritone and five instruments : [set of parts] / $c [music by] Kaijia Saariaho ; [lyrics from The Tempest by William Shakespeare].
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+</rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#ferdinand%27scomfort">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test009"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#ferdinand%27scomfort"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Ferdinand's Comfort</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Ferdinand's Comfort</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test009"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#ferdinand%27scomfort"/>
+      <rdawd:P10328>Ferdinand's Comfort</rdawd:P10328>
+      <rdawd:P10088>Ferdinand's Comfort</rdawd:P10088>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#ferdinand%27scomfort">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test009"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#ferdinand%27scomfort"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#ferdinand%27scomfort"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Ferdinand's Comfort </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Ferdinand's Comfort</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test009"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#ferdinand%27scomfort"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#ferdinand%27scomfort"/>
+      <rdaed:P20310>Ferdinand's Comfort</rdaed:P20310>
+      <rdaed:P20312>Ferdinand's Comfort</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#ferdinand%27scomfort">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test009"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#ferdinand%27scomfort"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamd:P30276>Ferdinand's Comfort</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Ferdinand's Comfort</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30142>for soprano, baritone and five instruments</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30142>set of parts</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30137>Other title information "set of parts" is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30105>[music by] Kaijia Saariaho</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30105>lyrics from The Tempest by William Shakespeare</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30137>Statement of responsibility "lyrics from The Tempest by William Shakespeare" is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test010">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test010</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc245-test010</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test010"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#%27messageinamobile%27"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#%27messageinamobile%27"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#%27messageinamobile%27"/><!--rdawo:P10617 = is metadata description of manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test010">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test010"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc245-test010</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30137>F 11111nam a2200553ui 4500
-F001 245-test010
-F245 10 $a 'Message in a mobile' $h [electronic resource] = $b [Risālah fī jawāl] = Risaala fi jawaal : mixed-messages, tales of missing and mobile communities at the University of Khatroum / $c Siri Lamoureaux.
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#%27messageinamobile%27">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test010"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#%27messageinamobile%27"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>'Message in a mobile'</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>'Message in a mobile'</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#%27messageinamobile%27">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test010"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#%27messageinamobile%27"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#%27messageinamobile%27"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>'Message in a mobile' </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>'Message in a mobile'</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#%27messageinamobile%27">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test010"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#%27messageinamobile%27"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamd:P30276>'Message in a mobile'</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>'Message in a mobile'</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30156>Risālah fī jawāl</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Title proper "Risālah fī jawāl" is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30156>Risaala fi jawaal</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30142>mixed-messages, tales of missing and mobile communities at the University of Khatroum</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30105>Siri Lamoureaux</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30335>electronic resource</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test011">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test011</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc245-test011</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test011"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#lambelatin"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#lambelatin"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#lambelatin"/><!--rdawo:P10617 = is metadata description of manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test011">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test011"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc245-test011</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30137>F 11111nam a2200553ui 4500
-F001 245-test011
-F245 10 $a Lambe Latin : $b tales of a mantua maker and her brother, from the South Sea Co. to the Merchant of Venice / [by Angela Lorenz].
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#lambelatin">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test011"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#lambelatin"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Lambe Latin</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Lambe Latin</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#lambelatin">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test011"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#lambelatin"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#lambelatin"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Lambe Latin </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Lambe Latin</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#lambelatin">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test011"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#lambelatin"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamd:P30276>Lambe Latin</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Lambe Latin</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30142>tales of a mantua maker and her brother, from the South Sea Co. to the Merchant of Venice</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30105>by Angela Lorenz</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30137>Statement of responsibility "by Angela Lorenz" is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test009"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#ferdinand%27scomfort"/>
+      <rdamd:P30276>Ferdinand's Comfort</rdamd:P30276>
+      <rdamd:P30156>Ferdinand's Comfort</rdamd:P30156>
+      <rdamd:P30142>for soprano, baritone and five instruments</rdamd:P30142>
+      <rdamd:P30142>set of parts</rdamd:P30142>
+      <rdamd:P30137>Other title information "set of parts" is assigned by the cataloguing agency.</rdamd:P30137>
+      <rdamd:P30105>[music by] Kaijia Saariaho</rdamd:P30105>
+      <rdamd:P30105>lyrics from The Tempest by William Shakespeare</rdamd:P30105>
+      <rdamd:P30137>Statement of responsibility "lyrics from The Tempest by William Shakespeare" is assigned by the cataloguing agency.</rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test012">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test012</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc245-test012</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test012"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#shinkansenstarrsmetalmacbeth"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#shinkansenstarrsmetalmacbeth"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#shinkansenstarrsmetalmacbeth"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawd:P10400>245-test012</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc245-test012</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test012"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#shinkansenstarrsmetalmacbeth"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#shinkansenstarrsmetalmacbeth"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#shinkansenstarrsmetalmacbeth"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test012">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test012"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc245-test012</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test012"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc245-test012</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
       <rdamd:P30137>F 11111nam a2200553ui 4500
 F001 245-test012
 F245 00 $a Shinkansen[star]rs Metal Macbeth / $c the original by William Shakespeare ; arrangement by Kankuro Kudo ; directed by Hidenori Inoue.
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+</rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#shinkansenstarrsmetalmacbeth">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test012"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#shinkansenstarrsmetalmacbeth"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Shinkansen[star]rs Metal Macbeth</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Shinkansen[star]rs Metal Macbeth</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test012"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#shinkansenstarrsmetalmacbeth"/>
+      <rdawd:P10328>Shinkansen[star]rs Metal Macbeth</rdawd:P10328>
+      <rdawd:P10088>Shinkansen[star]rs Metal Macbeth</rdawd:P10088>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#shinkansenstarrsmetalmacbeth">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test012"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#shinkansenstarrsmetalmacbeth"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#shinkansenstarrsmetalmacbeth"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Shinkansen[star]rs Metal Macbeth </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Shinkansen[star]rs Metal Macbeth</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test012"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#shinkansenstarrsmetalmacbeth"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#shinkansenstarrsmetalmacbeth"/>
+      <rdaed:P20310>Shinkansen[star]rs Metal Macbeth</rdaed:P20310>
+      <rdaed:P20312>Shinkansen[star]rs Metal Macbeth</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#shinkansenstarrsmetalmacbeth">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test012"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#shinkansenstarrsmetalmacbeth"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamd:P30276>Shinkansen[star]rs Metal Macbeth</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Shinkansen[star]rs Metal Macbeth</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30105>the original by William Shakespeare</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30105>arrangement by Kankuro Kudo</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30105>directed by Hidenori Inoue</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test012"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#shinkansenstarrsmetalmacbeth"/>
+      <rdamd:P30276>Shinkansen[star]rs Metal Macbeth</rdamd:P30276>
+      <rdamd:P30156>Shinkansen[star]rs Metal Macbeth</rdamd:P30156>
+      <rdamd:P30105>the original by William Shakespeare</rdamd:P30105>
+      <rdamd:P30105>arrangement by Kankuro Kudo</rdamd:P30105>
+      <rdamd:P30105>directed by Hidenori Inoue</rdamd:P30105>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test013">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test013</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc245-test013</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test013"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#killshakespearevolume1aseaoftroubles"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#killshakespearevolume1aseaoftroubles"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#killshakespearevolume1aseaoftroubles"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawd:P10400>245-test013</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc245-test013</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test013"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#killshakespearevolume1aseaoftroubles"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#killshakespearevolume1aseaoftroubles"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#killshakespearevolume1aseaoftroubles"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test013">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test013"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc245-test013</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test013"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc245-test013</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
       <rdamd:P30137>F 11111nam a2200553ui 4500
 F001 245-test013
 F245 10 $a Kill Shakespeare. $n [Volume 1], $p A sea of troubles / $c created and written by Conor McCreery and Anthony Del Col ; art by Andy Belanger ; colors by Ian Herring ; lettering by Chris Mowry, Robbie Robbins, and Neil Uyetake.
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+</rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#killshakespearevolume1aseaoftroubles">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test013"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#killshakespearevolume1aseaoftroubles"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Kill Shakespeare. Volume 1, A sea of troubles</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Kill Shakespeare. Volume 1, A sea of troubles</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test013"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#killshakespearevolume1aseaoftroubles"/>
+      <rdawd:P10328>Kill Shakespeare. Volume 1, A sea of troubles</rdawd:P10328>
+      <rdawd:P10088>Kill Shakespeare. Volume 1, A sea of troubles</rdawd:P10088>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#killshakespearevolume1aseaoftroubles">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test013"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#killshakespearevolume1aseaoftroubles"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#killshakespearevolume1aseaoftroubles"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Kill Shakespeare. Volume 1, A sea of troubles </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Kill Shakespeare. Volume 1, A sea of troubles</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test013"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#killshakespearevolume1aseaoftroubles"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#killshakespearevolume1aseaoftroubles"/>
+      <rdaed:P20310>Kill Shakespeare. Volume 1, A sea of troubles</rdaed:P20310>
+      <rdaed:P20312>Kill Shakespeare. Volume 1, A sea of troubles</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#killshakespearevolume1aseaoftroubles">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test013"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#killshakespearevolume1aseaoftroubles"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamd:P30276>Kill Shakespeare. Volume 1, A sea of troubles</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Kill Shakespeare. Volume 1, A sea of troubles</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Title proper "Volume 1" is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30105>created and written by Conor McCreery and Anthony Del Col</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30105>art by Andy Belanger</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30105>colors by Ian Herring</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30105>lettering by Chris Mowry, Robbie Robbins, and Neil Uyetake</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test013"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#killshakespearevolume1aseaoftroubles"/>
+      <rdamd:P30276>Kill Shakespeare. Volume 1, A sea of troubles</rdamd:P30276>
+      <rdamd:P30156>Kill Shakespeare. Volume 1, A sea of troubles</rdamd:P30156>
+      <rdamd:P30137>Title proper "Volume 1" is assigned by the cataloguing agency.</rdamd:P30137>
+      <rdamd:P30105>created and written by Conor McCreery and Anthony Del Col</rdamd:P30105>
+      <rdamd:P30105>art by Andy Belanger</rdamd:P30105>
+      <rdamd:P30105>colors by Ian Herring</rdamd:P30105>
+      <rdamd:P30105>lettering by Chris Mowry, Robbie Robbins, and Neil Uyetake</rdamd:P30105>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test014">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test014</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc245-test014</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test014"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#narrenlieder"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#narrenlieder"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#narrenlieder"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawd:P10400>245-test014</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc245-test014</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test014"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#narrenlieder"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#narrenlieder"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#narrenlieder"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test014">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test014"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc245-test014</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test014"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc245-test014</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
       <rdamd:P30137>F 11111nam a2200553ui 4500
 F001 245-test014
 F245 10 $a Narrenlieder : $b nach Shakespeare "Was ihr wollt" : für Violincello [sic] solo, [1996/1997] / $c Tilo Medek.
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+</rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#narrenlieder">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test014"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#narrenlieder"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Narrenlieder</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Narrenlieder</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test014"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#narrenlieder"/>
+      <rdawd:P10328>Narrenlieder</rdawd:P10328>
+      <rdawd:P10088>Narrenlieder</rdawd:P10088>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#narrenlieder">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test014"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#narrenlieder"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#narrenlieder"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Narrenlieder </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Narrenlieder</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test014"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#narrenlieder"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#narrenlieder"/>
+      <rdaed:P20310>Narrenlieder</rdaed:P20310>
+      <rdaed:P20312>Narrenlieder</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#narrenlieder">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test014"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#narrenlieder"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamd:P30276>Narrenlieder</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Narrenlieder</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30142>nach Shakespeare "Was ihr wollt"</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30142>für Violincello solo, [1996/1997]</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30105>Tilo Medek</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test014"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#narrenlieder"/>
+      <rdamd:P30276>Narrenlieder</rdamd:P30276>
+      <rdamd:P30156>Narrenlieder</rdamd:P30156>
+      <rdamd:P30142>nach Shakespeare "Was ihr wollt"</rdamd:P30142>
+      <rdamd:P30142>für Violincello solo, [1996/1997]</rdamd:P30142>
+      <rdamd:P30105>Tilo Medek</rdamd:P30105>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test015">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test015</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc245-test015</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test015"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#stonybrooksoundingsvol1"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#stonybrooksoundingsvol1"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#stonybrooksoundingsvol1"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawd:P10400>245-test015</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc245-test015</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test015"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#stonybrooksoundingsvol1"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#stonybrooksoundingsvol1"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#stonybrooksoundingsvol1"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test015">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test015"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc245-test015</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test015"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc245-test015</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
       <rdamd:P30137>F 11111nam a2200553ui 4500
 F001 245-test015
 F245 10 $a Stony brook sounding[s]. $n Vol. 1.
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+</rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#stonybrooksoundingsvol1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test015"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#stonybrooksoundingsvol1"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Stony brook sounding[s]. Vol. 1.</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Stony brook sounding[s]. Vol. 1.</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test015"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#stonybrooksoundingsvol1"/>
+      <rdawd:P10328>Stony brook sounding[s]. Vol. 1.</rdawd:P10328>
+      <rdawd:P10088>Stony brook sounding[s]. Vol. 1.</rdawd:P10088>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#stonybrooksoundingsvol1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test015"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#stonybrooksoundingsvol1"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#stonybrooksoundingsvol1"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Stony brook sounding[s]. Vol. 1. </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Stony brook sounding[s]. Vol. 1.</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test015"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#stonybrooksoundingsvol1"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#stonybrooksoundingsvol1"/>
+      <rdaed:P20310>Stony brook sounding[s]. Vol. 1.</rdaed:P20310>
+      <rdaed:P20312>Stony brook sounding[s]. Vol. 1.</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#stonybrooksoundingsvol1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test015"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#stonybrooksoundingsvol1"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamd:P30276>Stony brook sounding[s]. Vol. 1.</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Stony brook sounding[s]. Vol. 1.</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test016">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test016</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc245-test016</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test016"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#rhanowaithmrreesprichard"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#rhanowaithmrreesprichard"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#rhanowaithmrreesprichard"/><!--rdawo:P10617 = is metadata description of manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test016">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test016"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc245-test016</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30137>F 01299nam a2200349Ia 4500
-F001 245-test016
-F245 10 $a [Rhan o waith Mr. Rees Prichard ... $h [electronic resource] $b Some part of the works of Mr. Rees Prichard.]
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#rhanowaithmrreesprichard">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test016"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#rhanowaithmrreesprichard"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Rhan o waith Mr. Rees Prichard ..</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Rhan o waith Mr. Rees Prichard ...</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#rhanowaithmrreesprichard">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test016"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#rhanowaithmrreesprichard"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#rhanowaithmrreesprichard"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Rhan o waith Mr. Rees Prichard ... </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Rhan o waith Mr. Rees Prichard ...</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#rhanowaithmrreesprichard">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test016"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#rhanowaithmrreesprichard"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamd:P30276>Rhan o waith Mr. Rees Prichard ...</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Rhan o waith Mr. Rees Prichard ...</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Title proper [Rhan o waith Mr. Rees Prichard ..." is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30142>Some part of the works of Mr. Rees Prichard.</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30137>Other title information "Some part of the works of Mr. Rees Prichard." is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30335>electronic resource</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test017">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test017</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc245-test017</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test017"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#rhanowaithmrreesprichard"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#rhanowaithmrreesprichard"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#rhanowaithmrreesprichard"/><!--rdawo:P10617 = is metadata description of manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test017">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test017"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc245-test017</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30137>F 01299nam a2200349Ia 4500
-F001 245-test017
-F245 10 $a [Rhan o waith Mr. Rees Prichard ...] =  $b [Some part of the works of Mr. Rees Prichard.]
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#rhanowaithmrreesprichard">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test017"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#rhanowaithmrreesprichard"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Rhan o waith Mr. Rees Prichard ..</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Rhan o waith Mr. Rees Prichard ...</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#rhanowaithmrreesprichard">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test017"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#rhanowaithmrreesprichard"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#rhanowaithmrreesprichard"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Rhan o waith Mr. Rees Prichard ... </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Rhan o waith Mr. Rees Prichard ...</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#rhanowaithmrreesprichard">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test017"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#rhanowaithmrreesprichard"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamd:P30276>Rhan o waith Mr. Rees Prichard ...</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Rhan o waith Mr. Rees Prichard ...</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Title proper "Rhan o waith Mr. Rees Prichard ..." is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30142>Some part of the works of Mr. Rees Prichard.</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30137>Other title information "Some part of the works of Mr. Rees Prichard." is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test015"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#stonybrooksoundingsvol1"/>
+      <rdamd:P30276>Stony brook sounding[s]. Vol. 1.</rdamd:P30276>
+      <rdamd:P30156>Stony brook sounding[s]. Vol. 1.</rdamd:P30156>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test018">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test018</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc245-test018</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test018"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#newpaintingsbyfranzkline"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#newpaintingsbyfranzkline"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#newpaintingsbyfranzkline"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawd:P10400>245-test018</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc245-test018</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test018"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#newpaintingsbyfranzkline"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#newpaintingsbyfranzkline"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#newpaintingsbyfranzkline"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test018">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test018"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc245-test018</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test018"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc245-test018</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
       <rdamd:P30137>F 01436cam a2200361 a 4500
 F001 245-test018
 F245 10 $a [New paintings by Franz Kline :  $b opening ... December 4 to December 30, 1961 : at Sidney Janis 15 East 57 N Y].
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+</rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#newpaintingsbyfranzkline">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test018"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#newpaintingsbyfranzkline"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>New paintings by Franz Kline</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>New paintings by Franz Kline</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test018"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#newpaintingsbyfranzkline"/>
+      <rdawd:P10328>New paintings by Franz Kline</rdawd:P10328>
+      <rdawd:P10088>New paintings by Franz Kline</rdawd:P10088>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#newpaintingsbyfranzkline">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test018"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#newpaintingsbyfranzkline"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#newpaintingsbyfranzkline"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>New paintings by Franz Kline </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>New paintings by Franz Kline</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test018"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#newpaintingsbyfranzkline"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#newpaintingsbyfranzkline"/>
+      <rdaed:P20310>New paintings by Franz Kline</rdaed:P20310>
+      <rdaed:P20312>New paintings by Franz Kline</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#newpaintingsbyfranzkline">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test018"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#newpaintingsbyfranzkline"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamd:P30276>New paintings by Franz Kline</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>New paintings by Franz Kline</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30137>Title proper [New paintings by Franz Kline" is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30142>opening ... December 4 to December 30, 1961</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30142>at Sidney Janis 15 East 57 N Y</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30137>Other title information "at Sidney Janis 15 East 57 N Y" is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test019">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test019</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc245-test019</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test019"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#shakespearelectureserieshamlet"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#shakespearelectureserieshamlet"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#shakespearelectureserieshamlet"/><!--rdawo:P10617 = is metadata description of manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test019">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test019"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc245-test019</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30137>F 11111nam a2200553ui 4500
-F001 245-test019
-F245 00 $a Shakespeare lecture series. $p Hamlet : $b structure, speeches, and staging : [acts III-IV] / $c produced by Bill Wisneski ; directed by Bill Wisneski and Chia Longtree.
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#shakespearelectureserieshamlet">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test019"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#shakespearelectureserieshamlet"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Shakespeare lecture series. Hamlet</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Shakespeare lecture series. Hamlet</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#shakespearelectureserieshamlet">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test019"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#shakespearelectureserieshamlet"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#shakespearelectureserieshamlet"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Shakespeare lecture series. Hamlet </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Shakespeare lecture series. Hamlet</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#shakespearelectureserieshamlet">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test019"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#shakespearelectureserieshamlet"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamd:P30276>Shakespeare lecture series. Hamlet</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Shakespeare lecture series. Hamlet</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30142>structure, speeches, and staging</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30142>acts III-IV</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30137>Other title information "acts III-IV" is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30105>produced by Bill Wisneski</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30105>directed by Bill Wisneski and Chia Longtree</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test018"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#newpaintingsbyfranzkline"/>
+      <rdamd:P30276>New paintings by Franz Kline</rdamd:P30276>
+      <rdamd:P30156>New paintings by Franz Kline</rdamd:P30156>
+      <rdamd:P30137>Title proper [New paintings by Franz Kline" is assigned by the cataloguing agency.</rdamd:P30137>
+      <rdamd:P30142>opening ... December 4 to December 30, 1961</rdamd:P30142>
+      <rdamd:P30142>at Sidney Janis 15 East 57 N Y</rdamd:P30142>
+      <rdamd:P30137>Other title information "at Sidney Janis 15 East 57 N Y" is assigned by the cataloguing agency.</rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc245-test020">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>245-test020</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc245-test020</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test020"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#visionaryshakespeare%23visionaryshakespearethevisionaryshakespeare"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#visionaryshakespeare%23visionaryshakespearethevisionaryshakespeare"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#visionaryshakespeare%23visionaryshakespearethevisionaryshakespeare"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawd:P10400>245-test020</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc245-test020</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc245-test020"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#visionaryshakespeare%23visionaryshakespearethevisionaryshakespeare"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#visionaryshakespeare%23visionaryshakespearethevisionaryshakespeare"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#visionaryshakespeare%23visionaryshakespearethevisionaryshakespeare"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc245-test020">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test020"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc245-test020</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test020"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc245-test020</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
       <rdamd:P30137>F 11111nam a2200553ui 4500
 F001 245-test020
 F245 10 $a Visionary Shakespeare/#/Visionary Shakespeare [[The Visionary Shakespeare]]
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+</rdamd:P30137>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#visionaryshakespeare%23visionaryshakespearethevisionaryshakespeare">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test020"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#visionaryshakespeare%23visionaryshakespearethevisionaryshakespeare"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Visionary Shakespeare/#/Visionary Shakespeare [[The Visionary Shakespeare]]</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdawd:P10088>Visionary Shakespeare/#/Visionary Shakespeare [[The Visionary Shakespeare]]</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test020"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#visionaryshakespeare%23visionaryshakespearethevisionaryshakespeare"/>
+      <rdawd:P10328>Visionary Shakespeare/#/Visionary Shakespeare [[The Visionary Shakespeare]]</rdawd:P10328>
+      <rdawd:P10088>Visionary Shakespeare/#/Visionary Shakespeare [[The Visionary Shakespeare]]</rdawd:P10088>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#visionaryshakespeare%23visionaryshakespearethevisionaryshakespeare">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test020"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#visionaryshakespeare%23visionaryshakespearethevisionaryshakespeare"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#visionaryshakespeare%23visionaryshakespearethevisionaryshakespeare"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Visionary Shakespeare/#/Visionary Shakespeare [[The Visionary Shakespeare]] </rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdaed:P20312>Visionary Shakespeare/#/Visionary Shakespeare [[The Visionary Shakespeare]]</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test020"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#visionaryshakespeare%23visionaryshakespearethevisionaryshakespeare"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#visionaryshakespeare%23visionaryshakespearethevisionaryshakespeare"/>
+      <rdaed:P20310>Visionary Shakespeare/#/Visionary Shakespeare [[The Visionary Shakespeare]]</rdaed:P20310>
+      <rdaed:P20312>Visionary Shakespeare/#/Visionary Shakespeare [[The Visionary Shakespeare]]</rdaed:P20312>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#visionaryshakespeare%23visionaryshakespearethevisionaryshakespeare">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test020"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#visionaryshakespeare%23visionaryshakespearethevisionaryshakespeare"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamd:P30276>Visionary Shakespeare/#/Visionary Shakespeare [[The Visionary Shakespeare]]</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30156>Visionary Shakespeare/#/Visionary Shakespeare [[The Visionary Shakespeare]]</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc245-test020"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#visionaryshakespeare%23visionaryshakespearethevisionaryshakespeare"/>
+      <rdamd:P30276>Visionary Shakespeare/#/Visionary Shakespeare [[The Visionary Shakespeare]]</rdamd:P30276>
+      <rdamd:P30156>Visionary Shakespeare/#/Visionary Shakespeare [[The Visionary Shakespeare]]</rdamd:P30156>
    </rdf:Description>
 </rdf:RDF>

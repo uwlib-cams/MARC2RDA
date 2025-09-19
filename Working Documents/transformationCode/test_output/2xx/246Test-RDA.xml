@@ -221,11 +221,11 @@ F246 12 $6 880-03 $i Subtitle on cover: $a Rumān $5 OCLC
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc1342126635"/>
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
       <rdamd:P30276/>
-      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/transform/ite#2025-09-12t16081719966040100d114e5"/>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/transform/ite#2025-09-17t08250882306830100d138e5"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-09-12t16081719966040100d114e5">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-09-17t08250882306830100d138e5">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ite#2025-09-12t16081719966040100d114e5</rdaid:P40001>
+      <rdaid:P40001>ite#2025-09-17t08250882306830100d138e5</rdaid:P40001>
       <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
       <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/oclc"/>
       <rdaid:P40028>Note on variant title: Subtitle on cover:Rumān</rdaid:P40028>
