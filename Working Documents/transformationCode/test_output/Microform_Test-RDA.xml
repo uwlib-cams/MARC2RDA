@@ -1,4 +1,746 @@
 <?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400/><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#microfilmreel"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 04179nam a2200853 i 4500
+F338 ## $a microfilm reel $b hd $2 rdacarrier
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#microfilmreel"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#microfilmreel">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276> (Microfilm reel)</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1026"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1026"/><!--rdamo:P30001 = has carrier type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400/><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#microform"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 04179nam a2200853 i 4500
+F337 ## $a microform $b h $2 rdamedia
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#microform"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#microform">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276> (Microform)</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1002"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1002"/><!--rdamo:P30002 = has media type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400/><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#2015microform"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 03407cam a2200661 i 4500
+F008 150629s2015    dcu     bb    000 0 eng c
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#2015microform"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#2015microform">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276> (2015 : Microform)</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>2015</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/dcu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1022"/><!--rdam:P30001 = has carrier type-->
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400/><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#2015microform"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 03847cas a2200745 i 4500
+F008 150629s2015    dcu     ab    000 0 eng c
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.jfr5-z647#b"/><!--rdaw:P10004 = has category of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#2015microform"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#2015microform">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276> (2015 : Microform)</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>2015</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/dcu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.dh5m-5y16#a"/><!--rdam:P30001 = has carrier type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400/><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#1925microform"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 01702cem a2200421 a 4500
+F008 890504s1925    dcudgj cp a  fa 0   eng d
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.vw5v-gh79#a"/><!--rdaw:P10004 = has category of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#1925microform"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdae:P20318 rdf:resource="https://doi.org/10.6069/uwlswd.1c2x-cj09#d"/><!--rdae:P20318 = has relief representation-->
+      <rdae:P20318 rdf:resource="https://doi.org/10.6069/uwlswd.1c2x-cj09#g"/><!--rdae:P20318 = has relief representation-->
+      <rdae:P20318 rdf:resource="https://doi.org/10.6069/uwlswd.1c2x-cj09#j"/><!--rdae:P20318 = has relief representation-->
+      <rdae:P20216 rdf:resource="https://doi.org/10.6069/uwlswd.4jrs-m847#cp"/><!--rdae:P20216 = has projection of cartographic content-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#1925microform">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276> (1925 : Microform)</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>1925</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/dcu"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30003 rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/><!--rdam:P30003 = has mode of issuance-->
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.2eg3-1x53#f"/><!--rdam:P30335 = has category of manifestation-->
+      <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.dh5m-5y16#a"/><!--rdam:P30001 = has carrier type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400/><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#2006microform"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 04439cjm a2200949 a 4500
+F008 060526s2006    enkppnn cfik      a und d
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1011
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1010
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.8rpj-ek77#pp"/><!--rdaw:P10004 = has category of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#2006microform"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/und"/><!--rdae:P20006 = has language of expression-->
+      <rdae:P20331 rdf:resource="https://doi.org/10.6069/uwlswd.23tq-5e25#pound"/><!--rdae:P20331 = has category of expression-->
+      <rdae:P20331 rdf:resource="https://doi.org/10.6069/uwlswd.axz0-z371#a"/><!--rdae:P20331 = has category of expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1011"/><!--rdaeo:P20001 = has content type-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1010"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#2006microform">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276> (2006 : Microform)</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>2006</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/enk"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.nt0v-d633#f"/><!--rdam:P30455 = has supplementary content-->
+      <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.nt0v-d633#i"/><!--rdam:P30455 = has supplementary content-->
+      <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.nt0v-d633#k"/><!--rdam:P30455 = has supplementary content-->
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1028"/><!--rdam:P30001 = has carrier type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400/><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#2004microform"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 02782cpc a2200697 i 4500
+F008 040428s2004    enk     a           eng  
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1021
+F338 ## $1 http://rdaregistry.info/termList/RDACarrierType/1059
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#2004microform"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1021"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#2004microform">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276> (2004 : Microform)</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>2004</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/enk"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.dh5m-5y16#a"/><!--rdam:P30001 = has carrier type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400/><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#2015microform"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 04977cgm a2200937 i 4500
+F008 170327t20152014cau083        b   vleng d
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <rdaw:P10222 rdf:resource="https://doi.org/10.6069/uwlswd.eje7-jq11#l"/><!--rdaw:P10222 = has nature of content-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#2015microform"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
+      <rdaed:P20219>Duration: 083 minutes.</rdaed:P20219><!--rdaed:P20219 = has duration-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#2015microform">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276> (2015 : Microform)</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30011>2015</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/cau"/><!--rdamo:P30279 = has place of manifestation-->
+      <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/><!--rdam:P30001 = has carrier type-->
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/><!--rdam:P30335 = has category of manifestation-->
+      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1022"/><!--rdam:P30001 = has carrier type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400/><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#microfiche"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 01702cem a2200421 a 4500
+F007 he bmb024bbca
+F007 he bmb024bbca
+F338 ## $1 http://rdaregistry.info/termList/RDACarrierType/1022
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#microfiche"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#microfiche">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276> (Microfiche)</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.h5tb-zk94#h"/><!--rdamo:P30335 = has category of manifestation-->
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1002"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.exa1-z360#e"/><!--rdamo:P30335 = has category of manifestation-->
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.gs2r-s451#e"/><!--rdamo:P30335 = has category of manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1022"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30196 rdf:resource="http://rdaregistry.info/termList/RDAPolarity/1002"/><!--rdamo:P30196 = has polarity-->
+      <rdamd:P30169>
+                    4x6 in. or 11x15 cm.
+                </rdamd:P30169><!--rdamd:P30169 = has dimensions-->
+      <rdamo:P30263 rdf:resource="http://rdaregistry.info/termList/RDAReductionRatio/1002"/><!--rdamo:P30263 = has reduction ratio designation-->
+      <rdamo:P30198>024</rdamo:P30198><!--rdamo:P30198 = has reduction ratio-->
+      <rdamo:P30456 rdf:resource="http://rdaregistry.info/termList/RDAColourContent/1002"/><!--rdamo:P30456 = has colour content-->
+      <rdamo:P30304 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1046"/><!--rdamo:P30304 = has material-->
+      <rdamo:P30191 rdf:resource="http://rdaregistry.info/termList/RDAGeneration/1014"/><!--rdamo:P30191 = has generation-->
+      <rdamo:P30304 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1033"/><!--rdamo:P30304 = has material-->
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.h5tb-zk94#h"/><!--rdamo:P30335 = has category of manifestation-->
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1002"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.exa1-z360#e"/><!--rdamo:P30335 = has category of manifestation-->
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.gs2r-s451#e"/><!--rdamo:P30335 = has category of manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1022"/><!--rdamo:P30001 = has carrier type-->
+      <rdamo:P30196 rdf:resource="http://rdaregistry.info/termList/RDAPolarity/1002"/><!--rdamo:P30196 = has polarity-->
+      <rdamd:P30169>
+                    4x6 in. or 11x15 cm.
+                </rdamd:P30169><!--rdamd:P30169 = has dimensions-->
+      <rdamo:P30263 rdf:resource="http://rdaregistry.info/termList/RDAReductionRatio/1002"/><!--rdamo:P30263 = has reduction ratio designation-->
+      <rdamo:P30198>024</rdamo:P30198><!--rdamo:P30198 = has reduction ratio-->
+      <rdamo:P30456 rdf:resource="http://rdaregistry.info/termList/RDAColourContent/1002"/><!--rdamo:P30456 = has colour content-->
+      <rdamo:P30304 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1046"/><!--rdamo:P30304 = has material-->
+      <rdamo:P30191 rdf:resource="http://rdaregistry.info/termList/RDAGeneration/1014"/><!--rdamo:P30191 = has generation-->
+      <rdamo:P30304 rdf:resource="http://rdaregistry.info/termList/RDAMaterial/1033"/><!--rdamo:P30304 = has material-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1022"/><!--rdamo:P30001 = has carrier type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400/><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#micro"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#microtext"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#micromicroform"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 03407cam a2200661 i 4500
+F245 00 $h micro
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#micro">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#microtext"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>micro</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10088>micro</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#microtext">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#micromicroform"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#micro"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>micro (Text)</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdaed:P20312>micro</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#micromicroform">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#microtext"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>micro (Microform)</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30156>micro</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30335>micro</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400/><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#microscope"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#microscopetext"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#microscope"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 03407cam a2200661 i 4500
+F245 00 $h microscope
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#microscope">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#microscopetext"/><!--rdawo:P10078 = has expression of work-->
+      <rdawd:P10328>microscope</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
+      <rdawd:P10088>microscope</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#microscopetext">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#microscope"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#microscope"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20310>microscope (Text)</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
+      <rdaed:P20312>microscope</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#microscope">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#microscopetext"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276>microscope</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30156>microscope</rdamd:P30156><!--rdamd:P30156 = has title proper-->
+      <rdamd:P30137>Title proper is assigned by the cataloguing agency.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30335>microscope</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400/><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#microform"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 03407cam a2200661 i 4500
+F300 ## $a aperture card
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#microform"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#microform">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276> (Microform)</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30182>aperture card</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400/><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#microform"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/origMan#microform"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 03407cam a2200661 i 4500
+F533 ## $a Microfiche.
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#microform"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/origMan#microform"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#microform">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276> (Microform)</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamo:P30043 rdf:resource="http://marc2rda.edu/fake/transform/origMan#microform"/><!--rdamo:P30043 = is reproduction of manifestation of-->
+      <rdamd:P30335>Microfiche</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/origMan#microform">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276> (Microform)</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400/><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#microform"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/origMan#microform"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 03407cam a2200661 i 4500
+F533 ## $i microopaque
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#microform"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#microform">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276> (Microform)</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400/><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#microform"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 03407cam a2200661 i 4500
+F583 ## $a aperture card
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#microform"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#microform">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276> (Microform)</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/transform/ite#2025-09-19t1435395358186-0400d607e3"/><!--rdamo:P30103 = has exemplar of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-09-19t1435395358186-0400d607e3">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdaid:P40001>ite#2025-09-19t1435395358186-0400d607e3</rdaid:P40001><!--rdaid:P40001 = has identifier for item-->
+      <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/transform/man#microform"/><!--rdaio:P40049 = has manifestation exemplified-->
+      <rdaid:P40028>Action: aperture card</rdaid:P40028><!--rdaid:P40028 = has note on item-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400/><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#microform"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 03407cam a2200661 i 4500
+F583 ## $i microfilm
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#microform"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#microform">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276> (Microform)</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/transform/ite#2025-09-19t1435395358186-0400d641e3"/><!--rdamo:P30103 = has exemplar of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-09-19t1435395358186-0400d641e3">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdaid:P40001>ite#2025-09-19t1435395358186-0400d641e3</rdaid:P40001><!--rdaid:P40001 = has identifier for item-->
+      <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/transform/man#microform"/><!--rdaio:P40049 = has manifestation exemplified-->
+      <rdaid:P40028>Method of action: microfilm</rdaid:P40028><!--rdaid:P40028 = has note on item-->
+   </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc99161866301901452">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
       <rdawd:P10400>99161866301901452</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
@@ -29,8 +771,7 @@ F336 ## $a text $b txt $2 rdacontent
 F337 ## $a microform $b h $2 rdamedia
 F338 ## $a volume $b nc $2 rdacarrier
 F533 ## $a Microfiche. $b [Washington, D.C.] : $c U.S. Government Printing Office, $d [2015]. $e 1 microfiche : negative.
-F338 ## $1 http://rdaregistry.info/termList/RDACarrierType/1022 $7 (dpesc/dpsf1)007c0c1
-F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020 $7 (dpesc/dpsf1)008c23
+F338 ## $1 http://rdaregistry.info/termList/RDACarrierType/1022
 </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#workingconditionsandfactoryauditinginthechinesetoyindustry">
@@ -52,7 +793,6 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020 $7 (dpesc/dpsf1)
       <rdaed:P20312>Working conditions and factory auditing in the Chinese toy industry</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
-      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#workingconditionsandfactoryauditinginthechinesetoyindustry2015usgovernmentpublishingofficemicrofiche">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
@@ -66,6 +806,9 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020 $7 (dpesc/dpsf1)
       <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.gs2r-s451#e"/><!--rdamo:P30335 = has category of manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1022"/><!--rdamo:P30001 = has carrier type-->
       <rdamo:P30196 rdf:resource="http://rdaregistry.info/termList/RDAPolarity/1002"/><!--rdamo:P30196 = has polarity-->
+      <rdamd:P30169>
+                    4x6 in. or 11x15 cm.
+                </rdamd:P30169><!--rdamd:P30169 = has dimensions-->
       <rdamo:P30263 rdf:resource="http://rdaregistry.info/termList/RDAReductionRatio/1002"/><!--rdamo:P30263 = has reduction ratio designation-->
       <rdamo:P30198>024</rdamo:P30198><!--rdamo:P30198 = has reduction ratio-->
       <rdamo:P30456 rdf:resource="http://rdaregistry.info/termList/RDAColourContent/1002"/><!--rdamo:P30456 = has colour content-->
@@ -102,249 +845,5 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020 $7 (dpesc/dpsf1)
       <rdamd:P30085>Washington, DC</rdamd:P30085><!--rdamd:P30085 = has place of distribution-->
       <rdamd:P30173>For sale by the Superintendent of Documents, U.S. Government Publishing Office</rdamd:P30173><!--rdamd:P30173 = has name of distributor-->
       <rdamd:P30182>iii, 38 pages ; 24 cm</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc1400208651">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>1400208651</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
-      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdawd:P10002>transform/wor#marc1400208651</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc1400208651"/><!--rdawo:P10072 = has manifestation of work-->
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#ramirezarreolamariaelizabethquierenmilaborma%CC%81snomiintelecto"/><!--rdawo:P10621 = is metadata description of work-->
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#ramirezarreolamariaelizabethquierenmilaborma%CC%81snomiintelectostillimagetextenglish"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#quierenmilaborma%CC%81snomiintelecto2022universityofwashingtonlibrariesmicroform"/><!--rdawo:P10617 = is metadata description of manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc1400208651">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc1400208651"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30004>transform/man#marc1400208651</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
-      <rdamd:P30137>F 07298cam a2200613 i 4500
-F001 1400208651
-F005 20240717000000.0
-F008 230928t20222022waua    obm   000 0 eng c
-F006 m     o  d s      
-F007 hr ||||||||||
-F040 ## $a WAU $b eng $e rda $e pn $c WAU $d WAU $d OCLCO $d OCLCF $d OCLCO $d OCLCQ $d WAU
-F024 7# $a 1773/49194 $2 hdl
-F042 ## $a pcc
-F049 ## $a WAUW
-F100 1# $a Ramirez Arreola, Maria Elizabeth, $e author. $1 https://orcid.org/0009-0002-6426-7532 $1 http://www.wikidata.org/entity/Q127550946
-F245 10 $a Quieren mi labor más no mi intelecto : $b they want my hands not my brains : mapping the gendered and racialized journeys of adult English learner immigrant Latin American women in the US higher education system / $c Maria Elizabeth Ramirez Arreola. $h [painting]
-F264 #1 $a [Seattle] : $b [University of Washington Libraries], $c [2022]
-F264 #4 $c ©2022
-F300 ## $a 1 online resource (124 pages) : $b color illustrations
-F336 ## $a text $b txt $2 rdacontent
-F337 ## $a computer $b c $2 rdamedia
-F338 ## $a online resource $b cr $2 rdacarrier
-F347 ## $a text file $2 rdaft
-F347 ## $b PDF
-F502 ## $b Ph. D. $c University of Washington $d 2022
-F504 ## $a Includes bibliographical references (pages 107-116).
-F506 1# $a Restrict to UW for 2 years -- then make Open Access $g 20240912
-F520 3# $a This qualitative study examines the gendered and racialized educational experiences of eight nontraditional, adult English learners (EL), Latin American, and immigrant women. The study focuses on those that after migrating as in adults age to the United States, have eventually continued their higher educational attainment, disrupting the conventional narratives about adult immigrants and their lack of aspirations in higher education attainment. Such experiences have been largely excluded from U.S academic literature, as they are a minority within a minority. Nontraditional, adult EL, Latin American, immigrant students entering the United States higher education system are navigating college access in a system new to them as their access path is very different from international students or Latinx peers who attended the K-12 education system. Factors such as age, the digital divide, and typically being monolingual for the first 20-30 years of their lives increase exponentially, often becoming the first barriers on their path to higher education. They are navigating a new education system while facing immigration challenges such as family and financial responsibilities in their country of origin and receptor country. The data collected from eight qualitative testimonio interviews sought to capture information about their access path to higher education and the path access that they followed, the gendered and racialized experiences and their impact on the participants' education, and lastly, to identify how the participants successfully navigated the United States higher education system at the undergraduate and graduate level as they were either recently graduated or currently enrolled in universities and community colleges. The study was intentional in utilizing testimonio as a method of research, a qualitative approach that gave participants a space to share their individual experiences and to collectively reclaim their invisibilized academic journeys as they resonated with one another. Conceptualized through a Latino Critical Race Theory and intersectionality lens framework provided an interdisciplinary perspective to examine how identity markers such as race, class, gender, national origin, phenotype, etc., and complex structures of oppression such as institutionalized racism and white privilege impacted the educational experiences of nontraditional, adult EL, Latin American immigrant, women. Migration studies theory illuminated allowed me to better understand the different contexts for migration from countries in Latin America, and finally, grounded in Chicana feminism allowed me to center the women's experiences and draw from their experiences as a source of knowledge (Delgado Bernal, 1998). The study provides recommendations for universities administrative &amp; faculty personal in practice &amp; policy, advocating for different ways to positively create educational access for nontraditional, adult English learner students. To perform a thorough analysis of their journeys, the following questions guided the study: a) What were the educational paths that adult Latin American immigrant women followed to access and succeed in the U.S higher education system? b) How do their testimonios reveal the gendered and racialized journey to college attainment? And c) How can an intersectional discussion of their academic journey depict the privileges and barriers that came into place for immigrant Latin American women to defy spaces where they have only been seen as laborers? These questions were informed by my own journey as an adult immigrant woman from Mexico who grew up monolingual and acquired English as a second language to enroll and obtain a college education in the U.S. I am also informed by the minimal literature on the subject and the historical context of the practices of exclusion from higher education institutions and how those continue to affect the experiences of underrepresented students in the United States (Long 2016). My testimonio, joined by eight others of nontraditional adult English learners, Latin American immigrant women, are critically analyzed to shine a light on the intersectional journeys of accessing and surviving in the U.S. higher education system, a system. that, according to the data produced in this study, severely ignores this small but growing population of adult English learners seeking access to postsecondary education (National Center for Education Statistics, 2017).
-F588 0# $a Online resource; title from PDF title page (ResearchWorks Archive, viewed September 28, 2023).
-F650 #0 $a Hispanic American women college students $z United States $x Social conditions.
-F650 #0 $a Hispanic American women $x Education (Higher) $z United States.
-F650 #0 $a Immigrant students $z United States $x Social conditions.
-F650 #0 $a Women immigrants $x Education (Higher) $z United States.
-F650 #0 $a English language $x Study and teaching (Continuing education) $x Spanish speakers.
-F650 #0 $a Feminism and higher education $z United States.
-F650 #0 $a Sexism in higher education $z United States.
-F650 #0 $a Racism in higher education $z United States.
-F650 #0 $a Critical race theory.
-F653 0# $a Adult English learner (EL)
-F653 0# $a Gender Studies
-F653 0# $a Intersectionality
-F653 0# $a Latino Studies
-F653 0# $a Nontraditional Student
-F653 0# $a Testimonio
-F653 0# $a Education
-F653 0# $a Ethnic studies
-F653 0# $a Gender, women, and sexuality
-F655 #4 $a Theses $x Gender, women, and sexuality.
-F655 #7 $a dissertations. $2 aat $0 (CStmoGRI)aatgf300028029
-F655 #7 $a Academic theses $2 fast $0 (OCoLC)fst01726453
-F655 #7 $a Academic theses. $2 lcgft
-F655 #7 $a Thèses et écrits académiques. $2 rvmgf $0 (CaQQLa)RVMGF-000001173
-F700 1# $a Ginorio, Angela B., $e degree supervisor. $1 http://www.wikidata.org/entity/Q107956183 $1 http://viaf.org/viaf/70643896
-F856 40 $u http://hdl.handle.net/1773/49194 $7 1
-F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020 $7 (dpesc/dpsf1)008c23
-F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020 $7 (dpesc/dpsf1)006c9
-F338 ## $1 http://rdaregistry.info/termList/RDACarrierType/1018 $7 (dpesc/dpsf1)006c6
-F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1014 $7 (dpesc/dpsf1)245h
-F338 ## $1 http://rdaregistry.info/termList/RDACarrierType/1048 $7 (dpesc/dpsf1)245h
-</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#ramirezarreolamariaelizabethquierenmilaborma%CC%81snomiintelecto">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc1400208651"/><!--rdawo:P10623 = is work described with metadata by-->
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#ramirezarreolamariaelizabethquierenmilaborma%CC%81snomiintelectostillimagetextenglish"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10328>Ramirez Arreola, Maria Elizabeth. Quieren mi labor más no mi intelecto</rdawd:P10328><!--rdawd:P10328 = has access point for work-->
-      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.633m-h220#m"/><!--rdaw:P10004 = has category of work-->
-      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/><!--rdaw:P10004 = has category of work-->
-      <rdawo:P10436 rdf:resource="https://orcid.org/0009-0002-6426-7532"/><!--rdawo:P10436 = has author person-->
-      <rdawd:P10088>Quieren mi labor más no mi intelecto</rdawd:P10088><!--rdawd:P10088 = has title of work-->
-      <rdawd:P10077>Ph. D.</rdawd:P10077><!--rdawd:P10077 = has academic degree-->
-      <rdawd:P10006>University of Washington</rdawd:P10006><!--rdawd:P10006 = has degree granting institution-->
-      <rdawd:P10215>2022</rdawd:P10215><!--rdawd:P10215 = has year degree granted-->
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#hispanicamericanwomencollegestudentsunitedstatessocialconditions"/><!--rdaw:P10256 = has subject-->
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#hispanicamericanwomeneducationhigherunitedstates"/><!--rdaw:P10256 = has subject-->
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#immigrantstudentsunitedstatessocialconditions"/><!--rdaw:P10256 = has subject-->
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#womenimmigrantseducationhigherunitedstates"/><!--rdaw:P10256 = has subject-->
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#englishlanguagestudyandteachingcontinuingeducationspanishspeakers"/><!--rdaw:P10256 = has subject-->
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#feminismandhighereducationunitedstates"/><!--rdaw:P10256 = has subject-->
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#sexisminhighereducationunitedstates"/><!--rdaw:P10256 = has subject-->
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#racisminhighereducationunitedstates"/><!--rdaw:P10256 = has subject-->
-      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#criticalracetheory"/><!--rdaw:P10256 = has subject-->
-      <rdawd:P10256>Adult English learner (EL)</rdawd:P10256><!--rdawd:P10256 = has subject-->
-      <rdawd:P10256>Gender Studies</rdawd:P10256><!--rdawd:P10256 = has subject-->
-      <rdawd:P10256>Intersectionality</rdawd:P10256><!--rdawd:P10256 = has subject-->
-      <rdawd:P10256>Latino Studies</rdawd:P10256><!--rdawd:P10256 = has subject-->
-      <rdawd:P10256>Nontraditional Student</rdawd:P10256><!--rdawd:P10256 = has subject-->
-      <rdawd:P10256>Testimonio</rdawd:P10256><!--rdawd:P10256 = has subject-->
-      <rdawd:P10256>Education</rdawd:P10256><!--rdawd:P10256 = has subject-->
-      <rdawd:P10256>Ethnic studies</rdawd:P10256><!--rdawd:P10256 = has subject-->
-      <rdawd:P10256>Gender, women, and sexuality</rdawd:P10256><!--rdawd:P10256 = has subject-->
-      <rdawd:P10004>Theses--Gender, women, and sexuality</rdawd:P10004><!--rdawd:P10004 = has category of work-->
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/aat/con#dissertations"/><!--rdaw:P10004 = has category of work-->
-      <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01726453"/><!--rdaw:P10004 = has category of work-->
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#academictheses"/><!--rdaw:P10004 = has category of work-->
-      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/rvmgf/con#the%CC%80sesete%CC%81critsacade%CC%81miques"/><!--rdaw:P10004 = has category of work-->
-      <rdawo:P10041 rdf:resource="http://marc2rda.edu/fake/age#ginorioangelab"/><!--rdawo:P10041 = has degree supervisor-->
-      <rdawo:P10041 rdf:resource="http://marc2rda.edu/fake/age#ginorioangelab"/><!--rdawo:P10041 = has degree supervisor-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#ramirezarreolamariaelizabethquierenmilaborma%CC%81snomiintelectostillimagetextenglish">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc1400208651"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#quierenmilaborma%CC%81snomiintelecto2022universityofwashingtonlibrariesmicroform"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#ramirezarreolamariaelizabethquierenmilaborma%CC%81snomiintelecto"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20310>Ramirez Arreola, Maria Elizabeth. Quieren mi labor más no mi intelecto (Still image : Text : English)</rdaed:P20310><!--rdaed:P20310 = has access point for expression-->
-      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/><!--rdae:P20006 = has language of expression-->
-      <rdaed:P20312>Quieren mi labor más no mi intelecto</rdaed:P20312><!--rdaed:P20312 = has title of expression-->
-      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
-      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
-      <rdaed:P20069>Abstract: This qualitative study examines the gendered and racialized educational experiences of eight nontraditional, adult English learners (EL), Latin American, and immigrant women. The study focuses on those that after migrating as in adults age to the United States, have eventually continued their higher educational attainment, disrupting the conventional narratives about adult immigrants and their lack of aspirations in higher education attainment. Such experiences have been largely excluded from U.S academic literature, as they are a minority within a minority. Nontraditional, adult EL, Latin American, immigrant students entering the United States higher education system are navigating college access in a system new to them as their access path is very different from international students or Latinx peers who attended the K-12 education system. Factors such as age, the digital divide, and typically being monolingual for the first 20-30 years of their lives increase exponentially, often becoming the first barriers on their path to higher education. They are navigating a new education system while facing immigration challenges such as family and financial responsibilities in their country of origin and receptor country. The data collected from eight qualitative testimonio interviews sought to capture information about their access path to higher education and the path access that they followed, the gendered and racialized experiences and their impact on the participants' education, and lastly, to identify how the participants successfully navigated the United States higher education system at the undergraduate and graduate level as they were either recently graduated or currently enrolled in universities and community colleges. The study was intentional in utilizing testimonio as a method of research, a qualitative approach that gave participants a space to share their individual experiences and to collectively reclaim their invisibilized academic journeys as they resonated with one another. Conceptualized through a Latino Critical Race Theory and intersectionality lens framework provided an interdisciplinary perspective to examine how identity markers such as race, class, gender, national origin, phenotype, etc., and complex structures of oppression such as institutionalized racism and white privilege impacted the educational experiences of nontraditional, adult EL, Latin American immigrant, women. Migration studies theory illuminated allowed me to better understand the different contexts for migration from countries in Latin America, and finally, grounded in Chicana feminism allowed me to center the women's experiences and draw from their experiences as a source of knowledge (Delgado Bernal, 1998). The study provides recommendations for universities administrative &amp; faculty personal in practice &amp; policy, advocating for different ways to positively create educational access for nontraditional, adult English learner students. To perform a thorough analysis of their journeys, the following questions guided the study: a) What were the educational paths that adult Latin American immigrant women followed to access and succeed in the U.S higher education system? b) How do their testimonios reveal the gendered and racialized journey to college attainment? And c) How can an intersectional discussion of their academic journey depict the privileges and barriers that came into place for immigrant Latin American women to defy spaces where they have only been seen as laborers? These questions were informed by my own journey as an adult immigrant woman from Mexico who grew up monolingual and acquired English as a second language to enroll and obtain a college education in the U.S. I am also informed by the minimal literature on the subject and the historical context of the practices of exclusion from higher education institutions and how those continue to affect the experiences of underrepresented students in the United States (Long 2016). My testimonio, joined by eight others of nontraditional adult English learners, Latin American immigrant women, are critically analyzed to shine a light on the intersectional journeys of accessing and surviving in the U.S. higher education system, a system. that, according to the data produced in this study, severely ignores this small but growing population of adult English learners seeking access to postsecondary education (National Center for Education Statistics, 2017).</rdaed:P20069><!--rdaed:P20069 = has summarization of content-->
-      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
-      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
-      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1014"/><!--rdaeo:P20001 = has content type-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#quierenmilaborma%CC%81snomiintelecto2022universityofwashingtonlibrariesmicroform">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc1400208651"/><!--rdamo:P30462 = is manifestation described with metadata by-->
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#ramirezarreolamariaelizabethquierenmilaborma%CC%81snomiintelectostillimagetextenglish"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamd:P30276>Quieren mi labor más no mi intelecto (2022 : [University of Washington Libraries] : Microform)</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamd:P30011>2022</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
-      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/wau"/><!--rdamo:P30279 = has place of manifestation-->
-      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/><!--rdam:P30453 = has illustrative content-->
-      <rdam:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdam:P30001 = has carrier type-->
-      <rdamd:P30137>Includes bibliographies.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.25z4-e963#m"/><!--rdam:P30335 = has category of manifestation-->
-      <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.3d5s-zx23#o"/><!--rdam:P30001 = has carrier type-->
-      <rdam:P30018 rdf:resource="https://doi.org/10.6069/uwlswd.mkjn-bp10#d"/><!--rdam:P30018 = has file type-->
-      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.2eg3-1x53#s"/><!--rdam:P30335 = has category of manifestation-->
-      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.h5tb-zk94#h"/><!--rdamo:P30335 = has category of manifestation-->
-      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1002"/><!--rdamo:P30002 = has media type-->
-      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.exa1-z360#r"/><!--rdamo:P30335 = has category of manifestation-->
-      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.gs2r-s451#r"/><!--rdamo:P30335 = has category of manifestation-->
-      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-01t1657384070715-0400d134e37"/><!--rdamo:P30004 = has identifier for manifestation-->
-      <rdamd:P30156>Quieren mi labor más no mi intelecto</rdamd:P30156><!--rdamd:P30156 = has title proper-->
-      <rdamd:P30142>they want my hands not my brains</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30142>mapping the gendered and racialized journeys of adult English learner immigrant Latin American women in the US higher education system</rdamd:P30142><!--rdamd:P30142 = has other title information-->
-      <rdamd:P30105>Maria Elizabeth Ramirez Arreola.</rdamd:P30105><!--rdamd:P30105 = has statement of responsibility relating to title proper-->
-      <rdamd:P30335>painting</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
-      <rdamd:P30111>[Seattle] : [University of Washington Libraries], [2022]</rdamd:P30111><!--rdamd:P30111 = has publication statement-->
-      <rdamd:P30088>Seattle</rdamd:P30088><!--rdamd:P30088 = has place of publication-->
-      <rdamd:P30176>University of Washington Libraries</rdamd:P30176><!--rdamd:P30176 = has name of publisher-->
-      <rdamd:P30011>2022</rdamd:P30011><!--rdamd:P30011 = has date of publication-->
-      <rdamd:P30137>Copyright notice date: ©2022.</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30007>2022</rdamd:P30007><!--rdamd:P30007 = has copyright date-->
-      <rdamd:P30182>1 online resource (124 pages) : color illustrations</rdamd:P30182><!--rdamd:P30182 = has extent of manifestation-->
-      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/><!--rdamo:P30002 = has media type-->
-      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/><!--rdamo:P30002 = has media type-->
-      <rdam:P30018 rdf:resource="http://rdaregistry.info/termList/fileType/1002"/><!--rdam:P30018 = has file type-->
-      <rdamd:P30096>PDF</rdamd:P30096><!--rdamd:P30096 = has encoding format-->
-      <rdamd:P30455>Includes bibliographical references (pages 107-116).</rdamd:P30455><!--rdamd:P30455 = has supplementary content-->
-      <rdamd:P30145>Restrictions apply: Terms governing access: Restrict to UW for 2 years -- then make Open Access; Availability date: 20240912</rdamd:P30145><!--rdamd:P30145 = has restriction on access to manifestation-->
-      <rdamd:P30137>Source of description: Online resource; title from PDF title page (ResearchWorks Archive, viewed September 28, 2023).</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdam:P30154 rdf:resource="http://hdl.handle.net/1773/49194"/><!--rdam:P30154 = has uniform resource locator-->
-      <rdamd:P30137>Related resource at: http://hdl.handle.net/1773/49194</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-01t1657384070715-0400d134e37">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>1773/49194</rdand:P80068><!--rdand:P80068 = has nomen string-->
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/hdl"/><!--rdan:P80069 = has scheme of nomen-->
-   </rdf:Description>
-   <rdf:Description rdf:about="https://orcid.org/0009-0002-6426-7532">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Ramirez Arreola, Maria Elizabeth</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
-      <rdaad:P50094>http://www.wikidata.org/entity/Q127550946</rdaad:P50094><!--rdaad:P50094 = has identifier for person-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#ginorioangelab">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
-      <rdaad:P50377>Ginorio, Angela B.</rdaad:P50377><!--rdaad:P50377 = has access point for person-->
-      <rdaad:P50111>Ginorio, Angela B.</rdaad:P50111><!--rdaad:P50111 = has name of person-->
-      <rdaad:P50094>http://www.wikidata.org/entity/Q107956183</rdaad:P50094><!--rdaad:P50094 = has identifier for person-->
-      <rdaad:P50094>http://viaf.org/viaf/70643896</rdaad:P50094><!--rdaad:P50094 = has identifier for person-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#hispanicamericanwomencollegestudentsunitedstatessocialconditions">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Hispanic American women college students--United States--Social conditions</skos:prefLabel>
-      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#hispanicamericanwomeneducationhigherunitedstates">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Hispanic American women--Education (Higher)--United States</skos:prefLabel>
-      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#immigrantstudentsunitedstatessocialconditions">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Immigrant students--United States--Social conditions</skos:prefLabel>
-      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#womenimmigrantseducationhigherunitedstates">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Women immigrants--Education (Higher)--United States</skos:prefLabel>
-      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#englishlanguagestudyandteachingcontinuingeducationspanishspeakers">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>English language--Study and teaching (Continuing education)--Spanish speakers</skos:prefLabel>
-      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#feminismandhighereducationunitedstates">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Feminism and higher education--United States</skos:prefLabel>
-      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#sexisminhighereducationunitedstates">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Sexism in higher education--United States</skos:prefLabel>
-      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#racisminhighereducationunitedstates">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Racism in higher education--United States</skos:prefLabel>
-      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#criticalracetheory">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Critical race theory</skos:prefLabel>
-      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/aat/con#dissertations">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>dissertations</skos:prefLabel>
-      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/aat"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#academictheses">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Academic theses</skos:prefLabel>
-      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvmgf/con#the%CC%80sesete%CC%81critsacade%CC%81miques">
-      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-      <skos:prefLabel>Thèses et écrits académiques</skos:prefLabel>
-      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rvmgf"/>
    </rdf:Description>
 </rdf:RDF>

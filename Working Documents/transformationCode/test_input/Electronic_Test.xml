@@ -3,6 +3,149 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
     
+    <!-- 33X computer carrier type -->
+    <marc:record>
+        <marc:leader>04179nam a2200853 i 4500</marc:leader>
+        <marc:datafield tag="338" ind1=" " ind2=" ">
+            <marc:subfield code="a">online resource</marc:subfield>
+            <marc:subfield code="b">cr</marc:subfield>
+            <marc:subfield code="2">rdacarrier</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- 33X computer media type -->
+    <marc:record>
+        <marc:leader>04179nam a2200853 i 4500</marc:leader>
+        <marc:datafield tag="337" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer</marc:subfield>
+            <marc:subfield code="b">c</marc:subfield>
+            <marc:subfield code="2">rdamedia</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- 583 $a  -->
+    <marc:record>
+        <marc:leader>01729cmm  2200349 a 4500</marc:leader>
+        <marc:datafield tag="583" ind1=" " ind2=" ">
+            <marc:subfield code="a">digitized</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- 588 $a -->
+    <marc:record>
+        <marc:leader>01729cmm  2200349 a 4500</marc:leader>
+        <marc:datafield tag="583" ind1=" " ind2=" ">
+            <marc:subfield code="a">Print version record.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- 007 -->
+    <marc:record>
+        <marc:leader>01729cmm  2200349 a 4500</marc:leader>
+        <marc:controlfield tag="007">cr mn|||||||||</marc:controlfield>
+    </marc:record>
+    
+    <!-- 008/23 BK -->
+    <marc:record>
+        <marc:leader>01729cmm  2200349 a 4500</marc:leader>
+        <marc:controlfield tag="008">150629s2015    dcu     ob    000 0 eng c</marc:controlfield>
+    </marc:record>
+
+    <!-- 008/23 CR-->
+    <marc:record>
+        <marc:leader>03847cas a2200745 i 4500</marc:leader>
+        <marc:controlfield tag="008">150629s2015    dcu     qb    000 0 eng c</marc:controlfield>
+    </marc:record>
+    
+    <!-- 008/29 MP -->
+    <marc:record>
+        <marc:leader>01702cem a2200421 a 4500</marc:leader>
+        <marc:controlfield tag="008">890504s1925    dcudgj cp a  fs 0   eng d</marc:controlfield>
+    </marc:record>
+    
+    <!-- 008/23 MU -->
+    <marc:record>
+        <marc:leader>04439cjm a2200949 a 4500</marc:leader>
+        <marc:controlfield tag="008">060526s2006    enkppnn ofik      a und d</marc:controlfield>
+    </marc:record>
+    
+    <!-- 008/23 MX -->
+    <marc:record>
+        <marc:leader>02782cpc a2200697 i 4500</marc:leader>
+        <marc:controlfield tag="008">040428s2004    enk     q           eng  </marc:controlfield>
+    </marc:record>
+    
+    <!-- 008/29 VM -->
+    <marc:record>
+        <marc:leader>04977cgm a2200937 i 4500</marc:leader>
+        <marc:controlfield tag="008">170327t20152014cau083        s   vleng d</marc:controlfield>
+    </marc:record>
+    
+    <!-- 856 Ind2=0 -->
+    <marc:record>
+        <marc:leader>01729cmm  2200349 a 4500</marc:leader>
+        <marc:datafield tag="856" ind1="4" ind2="0">
+            <marc:subfield code="u">https://wsg.washington.edu/</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- 300 a -->
+    <marc:record>
+        <marc:leader>03407cam a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 online resource</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- 533 a -->
+    <marc:record>
+        <marc:leader>03407cam a2200661 i 4500</marc:leader>
+        <marc:datafield tag="533" ind1=" " ind2=" ">
+            <marc:subfield code="a">Electronic.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- 588 $a -->
+    <marc:record>
+        <marc:leader>03407cam a2200661 i 4500</marc:leader>
+        <marc:datafield tag="588" ind1=" " ind2=" ">
+            <marc:subfield code="a">computer</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- 245 h -->
+    <marc:record>
+        <marc:leader>03407cam a2200661 i 4500</marc:leader>
+        <marc:datafield tag="245" ind1="0" ind2="0">
+            <marc:subfield code="h">[Streaming]</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- 300 $a -->
+    <marc:record>
+        <marc:leader>03407cam a2200661 i 4500</marc:leader>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 computer disc</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- 040 e -->
+    <marc:record>
+        <marc:leader>03407cam a2200661 i 4500</marc:leader>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">WAU</marc:subfield>
+            <marc:subfield code="b">eng</marc:subfield>
+            <marc:subfield code="e">pn</marc:subfield>
+            <marc:subfield code="c">WAU</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    
+    <!-- LDR 6 -->
+    <marc:record>
+        <marc:leader>03407cmm a2200661 i 4500</marc:leader>
+    </marc:record>
+    
+    <!-- test records -->
     <marc:record>
         <marc:leader>03260cai a2200565 a 4500</marc:leader>
         <marc:controlfield tag="001">39720541</marc:controlfield>
