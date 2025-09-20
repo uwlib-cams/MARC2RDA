@@ -337,7 +337,7 @@
         <!--character position 06-08-->
         <xsl:if test="$char00 = 'c' and $char06-08 = 'mmm'">
             <rdamd:P30159>
-                Multiple image bit depths.
+                <xsl:text>Multiple image bit depths.</xsl:text>
             </rdamd:P30159>
         </xsl:if>
         <xsl:if test="$char00 = 'c' and translate($char06-08, '0123456789', '') = ''">
@@ -411,6 +411,7 @@
         </xsl:if>
     </xsl:template>
     
+    <!--008-->
     <xsl:template match="marc:controlfield[@tag = '008']" 
         mode="wor" expand-text="yes">
         <!--<xsl:call-template name="getmarc"/>-->
