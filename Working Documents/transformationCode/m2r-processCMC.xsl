@@ -1433,7 +1433,7 @@
             </xsl:when>
             
             <!-- 533 -->
-            <xsl:when test="some $subfield in ($record/marc:datafield[@tag='533']/marc:subfield[@code = 'a' or @code = 'i'])
+            <xsl:when test="some $subfield in ($record/marc:datafield[@tag='533']/marc:subfield[@code = 'a' or @code = 'e'])
                 satisfies (matches(lower-case($subfield), '^microfiche|^microfilm|^microopaque|^aperture card'))">
                 <xsl:value-of select="true()"/>
             </xsl:when>

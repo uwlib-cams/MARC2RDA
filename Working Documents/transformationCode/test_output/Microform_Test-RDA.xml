@@ -402,9 +402,7 @@ F338 ## $1 http://rdaregistry.info/termList/RDACarrierType/1022
       <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.gs2r-s451#e"/><!--rdamo:P30335 = has category of manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1022"/><!--rdamo:P30001 = has carrier type-->
       <rdamo:P30196 rdf:resource="http://rdaregistry.info/termList/RDAPolarity/1002"/><!--rdamo:P30196 = has polarity-->
-      <rdamd:P30169>
-                    4x6 in. or 11x15 cm.
-                </rdamd:P30169><!--rdamd:P30169 = has dimensions-->
+      <rdamd:P30169>4x6 in. or 11x15 cm.</rdamd:P30169><!--rdamd:P30169 = has dimensions-->
       <rdamo:P30263 rdf:resource="http://rdaregistry.info/termList/RDAReductionRatio/1002"/><!--rdamo:P30263 = has reduction ratio designation-->
       <rdamo:P30198>024</rdamo:P30198><!--rdamo:P30198 = has reduction ratio-->
       <rdamo:P30456 rdf:resource="http://rdaregistry.info/termList/RDAColourContent/1002"/><!--rdamo:P30456 = has colour content-->
@@ -417,9 +415,7 @@ F338 ## $1 http://rdaregistry.info/termList/RDACarrierType/1022
       <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.gs2r-s451#e"/><!--rdamo:P30335 = has category of manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1022"/><!--rdamo:P30001 = has carrier type-->
       <rdamo:P30196 rdf:resource="http://rdaregistry.info/termList/RDAPolarity/1002"/><!--rdamo:P30196 = has polarity-->
-      <rdamd:P30169>
-                    4x6 in. or 11x15 cm.
-                </rdamd:P30169><!--rdamd:P30169 = has dimensions-->
+      <rdamd:P30169>4x6 in. or 11x15 cm.</rdamd:P30169><!--rdamd:P30169 = has dimensions-->
       <rdamo:P30263 rdf:resource="http://rdaregistry.info/termList/RDAReductionRatio/1002"/><!--rdamo:P30263 = has reduction ratio designation-->
       <rdamo:P30198>024</rdamo:P30198><!--rdamo:P30198 = has reduction ratio-->
       <rdamo:P30456 rdf:resource="http://rdaregistry.info/termList/RDAColourContent/1002"/><!--rdamo:P30456 = has colour content-->
@@ -627,7 +623,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
       <rdamd:P30004>transform/man#marc</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 03407cam a2200661 i 4500
-F533 ## $i microopaque
+F533 ## $e microopaque
 F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
 </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
@@ -648,6 +644,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30462 = is manifestation described with metadata by-->
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276> (Microform)</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30137>microopaque</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -687,11 +684,11 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30462 = is manifestation described with metadata by-->
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276> (Microform)</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/transform/ite#2025-09-19t1435395358186-0400d607e3"/><!--rdamo:P30103 = has exemplar of manifestation-->
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/transform/ite#2025-09-20t124037958886-0400d607e3"/><!--rdamo:P30103 = has exemplar of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-09-19t1435395358186-0400d607e3">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-09-20t124037958886-0400d607e3">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ite#2025-09-19t1435395358186-0400d607e3</rdaid:P40001><!--rdaid:P40001 = has identifier for item-->
+      <rdaid:P40001>ite#2025-09-20t124037958886-0400d607e3</rdaid:P40001><!--rdaid:P40001 = has identifier for item-->
       <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/transform/man#microform"/><!--rdaio:P40049 = has manifestation exemplified-->
       <rdaid:P40028>Action: aperture card</rdaid:P40028><!--rdaid:P40028 = has note on item-->
    </rdf:Description>
@@ -733,11 +730,11 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30462 = is manifestation described with metadata by-->
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276> (Microform)</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/transform/ite#2025-09-19t1435395358186-0400d641e3"/><!--rdamo:P30103 = has exemplar of manifestation-->
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/transform/ite#2025-09-20t124037958886-0400d641e3"/><!--rdamo:P30103 = has exemplar of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-09-19t1435395358186-0400d641e3">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-09-20t124037958886-0400d641e3">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>ite#2025-09-19t1435395358186-0400d641e3</rdaid:P40001><!--rdaid:P40001 = has identifier for item-->
+      <rdaid:P40001>ite#2025-09-20t124037958886-0400d641e3</rdaid:P40001><!--rdaid:P40001 = has identifier for item-->
       <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/transform/man#microform"/><!--rdaio:P40049 = has manifestation exemplified-->
       <rdaid:P40028>Method of action: microfilm</rdaid:P40028><!--rdaid:P40028 = has note on item-->
    </rdf:Description>
@@ -806,9 +803,7 @@ F338 ## $1 http://rdaregistry.info/termList/RDACarrierType/1022
       <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.gs2r-s451#e"/><!--rdamo:P30335 = has category of manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1022"/><!--rdamo:P30001 = has carrier type-->
       <rdamo:P30196 rdf:resource="http://rdaregistry.info/termList/RDAPolarity/1002"/><!--rdamo:P30196 = has polarity-->
-      <rdamd:P30169>
-                    4x6 in. or 11x15 cm.
-                </rdamd:P30169><!--rdamd:P30169 = has dimensions-->
+      <rdamd:P30169>4x6 in. or 11x15 cm.</rdamd:P30169><!--rdamd:P30169 = has dimensions-->
       <rdamo:P30263 rdf:resource="http://rdaregistry.info/termList/RDAReductionRatio/1002"/><!--rdamo:P30263 = has reduction ratio designation-->
       <rdamo:P30198>024</rdamo:P30198><!--rdamo:P30198 = has reduction ratio-->
       <rdamo:P30456 rdf:resource="http://rdaregistry.info/termList/RDAColourContent/1002"/><!--rdamo:P30456 = has colour content-->

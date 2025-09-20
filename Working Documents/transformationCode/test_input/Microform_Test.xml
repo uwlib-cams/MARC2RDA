@@ -98,11 +98,11 @@
         </marc:datafield>
     </marc:record>
     
-    <!-- 533 i -->
+    <!-- 533 e -->
     <marc:record>
         <marc:leader>03407cam a2200661 i 4500</marc:leader>
         <marc:datafield tag="533" ind1=" " ind2=" ">
-            <marc:subfield code="i">microopaque</marc:subfield>
+            <marc:subfield code="e">microopaque</marc:subfield>
         </marc:datafield>
     </marc:record>
     
