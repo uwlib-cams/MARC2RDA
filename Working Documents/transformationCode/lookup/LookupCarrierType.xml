@@ -22,7 +22,7 @@
   <entry>
     <marc007c0c1>sg</marc007c0c1>
     <marc007c0c5c6>gbc</marc007c0c5c6>
-    <marc245h>sound cartridge</marc245h>
+    <marc245h>sound cartridge|sound disc cartridge</marc245h>
     <marc300a>sound disc cartridge</marc300a>
     <locCode>sg</locCode>
     <locTerm>audio cartridge</locTerm>
@@ -102,8 +102,8 @@
   </entry>
   <entry>
     <marc007c0c1>st</marc007c0c1>
-    <marc245h>audiotape reel|audio-tape reel|sound reel|sound-tape reel</marc245h>
-    <marc300a>audiotape reel|audio-tape reel|sound reel|sound-tape reel</marc300a>
+    <marc245h>audiotape reel|audio-tape reel|sound reel|sound-tape reel|sound tape reel</marc245h>
+    <marc300a>audiotape reel|audio-tape reel|sound reel|sound-tape reel|sound tape reel</marc300a>
     <locCode>st</locCode>
     <locTerm>audiotape reel</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/st</locURI>
@@ -154,7 +154,7 @@
     <marc007c0c1>cd</marc007c0c1>
     <marc007c0c1>cm</marc007c0c1>
     <marc007c0c1>co</marc007c0c1>
-    <marc300a>dualdisc|cd-a|cd-i|cd-r|cd-rom|cd rom|dvd-rom|photo cd</marc300a>
+    <marc300a>dualdisc|cd-a|cd-i|cd-r|cd-rom|cd rom|dvd-rom|photo cd|dvd</marc300a>
     <xpath>some $a in marc:datafield[@tag = '300']/marc:subfield[@code = 'a']
       satisfies (matches(lower-case($a), 'computer disc') and not(matches(lower-case($a), 'computer disc cartridge')))</xpath>
     <xpath>some $a in marc:datafield[@tag = '300']/marc:subfield[@code = 'a']
@@ -212,7 +212,7 @@
   </entry>
   <entry>
     <marc007c0c1>mc</marc007c0c1>
-    <marc300a>filme cartridge</marc300a>
+    <marc300a>film cartridge</marc300a>
     <locCode>mc</locCode>
     <locTerm>film cartridge</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/mc</locURI>
@@ -249,6 +249,8 @@
   <entry>
     <marc007c0c1>go</marc007c0c1>
     <marc007c0c1>mo</marc007c0c1>
+    <marcVM008c33>f</marcVM008c33>
+    <marcVM006c16>f</marcVM006c16>
     <marc300a>film roll|filmstrip roll</marc300a>
     <xpath>substring(marc:leader, 7, 1) = 'g'
       and exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'roll')])
@@ -405,14 +407,12 @@
     <marcVM006c16>b</marcVM006c16>
     <marcVM008c33>d</marcVM008c33>
     <marcVM006c16>d</marcVM006c16>
-    <marcVM008c33>q</marcVM008c33>
-    <marcVM006c16>q</marcVM006c16>
     <marcVM008c33>r</marcVM008c33>
     <marcVM006c16>r</marcVM006c16>
     <marcVM008c33>w</marcVM008c33>
     <marcVM006c16>w</marcVM006c16>
-    <marc245h>realia|kit|globe|diorama|model|toy|exhibit|exhibition catalog|game|jigsaw puzzle|relief model</marc245h>
-    <marc300a>game |game$|player piano roll|kit|toy|exhibit|globe|relief model|exhibition catalog|script|diorama|model|mask|medal|sculpture</marc300a>
+    <marc245h>realia|kit|globe|diorama|toy|exhibit|exhibition catalog|game|jigsaw puzzle|relief model|game |game$</marc245h>
+    <marc300a>game |game$|player piano roll|kit|toy|exhibit|globe|relief model|exhibition catalog|script|diorama|mask|medal|sculpture</marc300a>
     <xpath>matches(substring(marc:leader, 7, 1), 'e|f')
       and (some $a in marc:datafield[@tag = '300']/marc:subfield[@code = 'a']
       satisfies matches(lower-case($a), 'jigsaw puzzle'))</xpath>
@@ -423,6 +423,21 @@
       and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'printing plate')])</xpath>
     <xpath>(matches(substring(marc:leader, 7, 1), 'a|t'))
       and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'box|case|folder')])</xpath>
+    <!-- test -->
+    <!--<xpath>(substring(marc:leader, 7, 1) = 'g' or substring(marc:leader, 7, 1) = 'k'
+      or substring(marc:leader, 7, 1) = 'o' or substring(marc:leaer, 7, 1) = 'r')
+      and not(exists(marc:controlfield[@tag='007'][matches(substring(., 1, 2), 'aq')))
+      and (some $f008 in $record/marc:controlfield[@tag='008']
+      satisfies substring($f008, 34, 1) = 'q')</xpath>-->
+    <!--<xpath>not(exists(marc:controlfield[@tag='007'][matches(substring(., 1, 2), 'aq')))
+      and some $f006 in $record/marc:controlfield[@tag='006']
+      satisfies ((substring($f006, 1, 1) = 'g' or substring($f006, 1, 1) = 'k'
+      or substring($f006, 1, 1) = 'o'  or substring($f006, 1, 1) = 'r')
+      and substring($f006, 17, 1) = 'q')</xpath>-->
+    <!--<xpath>not(exists(marc:controlfield[@tag='007'][matches(substring(., 1, 2), 'aq')))
+      and exists(marc:datafield[@tag='245']/marc:subfield[@code='h'][matches(lower-case(.), 'model')])</xpath>-->
+    <!--<xpath>not(exists(marc:controlfield[@tag='007'][matches(substring(., 1, 2), 'aq')))
+      and exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'model')])</xpath>-->
     <locCode>nr</locCode>
     <locTerm>object</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/nr</locURI>
@@ -459,6 +474,8 @@
     <rdaCurie>rdact:1018</rdaCurie>
   </entry>
   <entry>
+    <marcVM008c33>t</marcVM008c33>
+    <marcVM006c16>t</marcVM006c16>
     <!--<!-\- test xpath -\->
     <xpath>matches(substring(marc:leader, 7, 1), 'k')
       and exists(marc:controlfield[@tag='007'][matches(subfield(.,1,2), 'gt')])</xpath>
@@ -488,7 +505,6 @@
     <marc007c0c1>ke</marc007c0c1>
     <marc007c0c1>kf</marc007c0c1>
     <marc007c0c1>kg</marc007c0c1>
-    <marc007c0c1>kh</marc007c0c1>
     <marc007c0c1>ki</marc007c0c1>
     <marc007c0c1>kj</marc007c0c1>
     <marc007c0c1>kk</marc007c0c1>
@@ -508,8 +524,6 @@
     <marcVM006c16>l</marcVM006c16>
     <marcVM008c33>n</marcVM008c33>
     <marcVM006c16>n</marcVM006c16>
-    <marcVM008c33>t</marcVM008c33>
-    <marcVM006c16>t</marcVM006c16>
     <marc245h>drawing|icon|painting|picture|photograph|photomechanical|photonegative|photoprint|collage</marc245h>
     <marc300a>lead sheet|leaf of music|sheet of music|transparencies|transparency|collage|drawing|painting|poster|icon|radiograph|study print|photograph|photomechanical|photonegative|photoprint|lithograph|negative|paper fragments|leaflet</marc300a>
     <xpath>matches(substring(marc:leader, 7, 1), 'e|f')
@@ -523,8 +537,13 @@
     <xpath>(substring(marc:leader, 7, 1) = 'k')
       and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'silver gelatin')][matches(lower-case(.), 'print')])</xpath>
     <xpath>(matches(substring(marc:leader, 7, 1), 'a|t'))
-      and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'leaf|page |page$|^1 p\.|scroll')])</xpath>
-    <locCode>nb</locCode>
+      and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'leaf|page |page$|^1 p\.|scroll|papers')])</xpath>
+    <!-- test -->
+    <!--<xpath>not(matches(substring(marc:leader, 7, 1), 'a|t'))
+      and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'papers')])</xpath>-->
+    <!--<xpath>exists(marc:controlfield[@tag='007'][matches(substring(., 1, 2), 'kh')])
+      and not(exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'stereo')]))</xpath>
+    --><locCode>nb</locCode>
     <locTerm>sheet</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/nb</locURI>
     <rdaTerm>sheet</rdaTerm>
@@ -533,16 +552,21 @@
   </entry>
   <entry>
     <xpath>exists(marc:controlfield[@tag='007'][substring(., 1, 2)='gs'])
-      and not(exists(marc:datafield[@tag='300'][matches(marc:subfield[@code='a'], 'viewmaster|stereoscopic')]))</xpath>
+      and not(exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'viewmaster|stereoscopic')]))
+    </xpath>
     <xpath>matches(substring(marc:leader, 7, 1), 'g|k|o|r')
       and exists(marc:controlfield[@tag='008'][matches(substring(., 34, 1), 's')])
-      and not(exists(marc:datafield[@tag='300'][matches(marc:subfield[@code='a'], 'viewmaster|stereoscopic')]))
+      and not(exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'viewmaster|stereoscopic')]))
     </xpath>
     <xpath>exists(marc:controlfield[@tag='006'][matches(substring(., 1, 1), 'g|k|o|r|')][matches(substring(., 17, 1), 's')])
-      and not(exists(marc:datafield[@tag='300'][matches(marc:subfield[@code='a'], 'viewmaster|stereoscopic')]))
+      and not(exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'viewmaster|stereoscopic')]))
     </xpath>
-    <marc245h>slide</marc245h>
-    <locCode>gs</locCode>
+    <!-- test -->
+    <!--<xpath>exists(marc:datafield[@tag='245']/marc:subfield[@code='h'][matches(lower-case(.), 'slide')])
+      and not(exists(marc:datafield[@tag='300'][matches(marc:subfield[@code='a'], 'viewmaster|stereoscopic')]))</xpath>
+    <xpath>exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'slide')])
+      and not(exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'viewmaster|stereoscopic')]))</xpath>
+    --><locCode>gs</locCode>
     <locTerm>slide</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/gs</locURI>
     <rdaTerm>slide</rdaTerm>
@@ -560,8 +584,10 @@
     <rdaCurie>rdact:1005</rdaCurie>
   </entry>
   <entry>
-    <marc007c0c1>kh</marc007c0c1>
-    <locCode>eh</locCode>
+    <!-- needs test -->
+    <!--<xpath>exists(marc:controlfield[@tag='007'][matches(substring(., 1, 2), 'kh')])
+      and exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'stereo')])</xpath>
+    --><locCode>eh</locCode>
     <locTerm>stereograph card</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/eh</locURI>
     <rdaTerm>stereograph card</rdaTerm>
@@ -571,11 +597,17 @@
   <entry>
     <xpath>matches(substring(marc:leader, 7, 1), 'g|k|o|r')
       and exists(marc:controlfield[@tag='008'][matches(substring(., 34, 1), 's')])
-      and exists(marc:datafield[@tag='300'][matches(marc:subfield[@code='a'], 'viewmaster|stereoscopic')])
+      and exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'viewmaster|stereoscopic')])
     </xpath>
     <xpath>exists(marc:controlfield[@tag='006'][matches(substring(., 1, 1), 'g|k|o|r|')][matches(substring(., 17, 1), 's')])
-      and exists(marc:datafield[@tag='300'][matches(marc:subfield[@code='a'], 'viewmaster|stereoscopic')])
+      and exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'viewmaster|stereoscopic')])
     </xpath>
+    <!-- test -->
+    <!--<xpath>exists(marc:datafield[@tag='245']/marc:subfield[@code='h'][matches(lower-case(.), 'slide')])
+      and exists(marc:datafield[@tag='300'][matches(marc:subfield[@code='a'], 'viewmaster|stereoscopic')])</xpath>
+    <xpath>exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'slide')])
+      and exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'viewmaster|stereoscopic')])</xpath>
+    -->
     <locCode>es</locCode>
     <locTerm>stereograph disc</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/es</locURI>
@@ -636,8 +668,8 @@
     <marcMP006c8>g</marcMP006c8>
     <marcMP008c33orc34>r</marcMP008c33orc34>
     <marcMP006c16orc17>r</marcMP006c16orc17>
-    <marc245h>atlas|loose-leaf|losseleaf|board book|paperback</marc245h>
-    <marc300a>atlas|loose-leaf|looseleaf|choir book|choral octavo|conductor part|p. of music|pages of music|leaves of music|board book|pamphlet|program</marc300a>
+    <marc245h>atlas|loose-leaf|looseleaf|board book|paperback|pamphlet</marc245h>
+    <marc300a>atlas|loose-leaf|looseleaf|choir book|choral octavo|conductor part|p\. of music|pages of music|leaves of music|board book|pamphlet|program</marc300a>
     <xpath>(matches(substring(marc:leader, 7, 1), 'c|d'))
       and exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'part|score')]
       [not(matches(lower-case(.), '\(1 p\.\)|\(1 page\)|\(1 l\.\)|\(1 leaf\)'))])</xpath>
@@ -645,7 +677,16 @@
       and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'album|binder')])</xpath>
     <xpath>(matches(substring(marc:leader, 7, 1), 'a|t'))
       and exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'pages|p\.')][ not(matches(lower-case(.), '^1 p\.'))])</xpath>
-    <xpath>exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'portfolio|scrapbook')])</xpath>
+    <!-- test -->
+    <!--<xpath>(matches(substring(marc:leader, 7, 1), 'a|t'))
+      and exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'portfolio|scrapbook')])</xpath>
+    <xpath>not(matches(substring(marc:leader, 7, 1), 'a|t'))
+      and exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'portfolio|scrapbook')])</xpath>
+    -->
+    <!--<xpath>(matches(substring(marc:leader, 7, 1), 'a|t'))
+      and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'v\.|vol')])</xpath>
+    <xpath>not(matches(substring(marc:leader, 7, 1), 'a|t'))
+      and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'v\.|vol')])</xpath>-->
     <locCode>nc</locCode>
     <locTerm>volume</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/nc</locURI>
