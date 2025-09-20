@@ -421,7 +421,7 @@
         </xsl:call-template>
     </xsl:template>
 
-    <!--007-->
+       <!--007-->
     <!--char00-->
     <xsl:template name="F007-c00">
         <xsl:variable name="char00" select="substring(., 1, 1)"/>
@@ -809,7 +809,7 @@
             <xsl:choose>
                 <xsl:when test="$char00 = 'c'">
                     <rdamd:P30169>
-                        3 1/2 in.
+                        <xsl:text>3 1/2 in.</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
                 <xsl:when test="$char00 = 'd' or $char00 = 'a'">
@@ -820,7 +820,7 @@
                 </xsl:when>
                 <xsl:when test="$char00 = 'h'">
                     <rdamd:P30169>
-                        8 mm.
+                        <xsl:text>8 mm.</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
             </xsl:choose>
@@ -829,7 +829,7 @@
             <xsl:choose>
                 <xsl:when test="$char00 = 'c'">
                     <rdamd:P30169>
-                        12 in.
+                        <xsl:text>12 in.</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
                 <xsl:when test="$char00 = 'd' or $char00 = 'k' or $char00 = 'a' or $char00 = 'g'">
@@ -844,7 +844,7 @@
             <xsl:choose>
                 <xsl:when test="$char00 = 'c'">
                     <rdamd:P30169>
-                        4 3/4 in. or 12 cm.
+                        <xsl:text>4 3/4 in. or 12 cm.</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
                 <xsl:when test="$char00 = 'd' or $char00 = 'a' or $char00 = 'k'">
@@ -855,7 +855,7 @@
                 </xsl:when>
                 <xsl:when test="$char00 = 'h'">
                     <rdamd:P30169>
-                        70 mm.
+                        <xsl:text>70 mm.</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
             </xsl:choose>
@@ -870,7 +870,7 @@
                 </xsl:when>
                 <xsl:when test="$char00 = 'h'">
                     <rdamd:P30169>
-                        105 mm.
+                        <xsl:text>105 mm.</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
             </xsl:choose>
@@ -879,7 +879,7 @@
             <xsl:choose>
                 <xsl:when test="$char00 = 'c'">
                     <rdamd:P30169>
-                        1 1/8 x 2 3/8 in.
+                        <xsl:text>1 1/8 x 2 3/8 in.</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
                 <xsl:when test="$char00 = 'd' or $char00 = 'a' or $char00 = 'k'">
@@ -894,7 +894,7 @@
             <xsl:choose>
                 <xsl:when test="$char00 = 'c'">
                     <rdamd:P30169>
-                        3 7/8 x 2 1/2 in.
+                        <xsl:text>3 7/8 x 2 1/2 in.</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
                 <xsl:when test="$char00 = 'a'">
@@ -915,7 +915,7 @@
                 </xsl:when>
             <xsl:when test="$char00 = 'h'">
                 <rdamd:P30169>
-                    4x6 in. or 11x15 cm.
+                    <xsl:text>4x6 in. or 11x15 cm.</xsl:text>
                 </rdamd:P30169>
             </xsl:when>
                 <xsl:when test="$char00 = 'k'">
@@ -937,7 +937,7 @@
             <xsl:choose>
                 <xsl:when test="$char00 = 'c'">
                     <rdamd:P30169>
-                        5 1/4 in.
+                        <xsl:text>5 1/4 in.</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
                 <xsl:when test="$char00 = 'k' or $char00 = 'g'">
@@ -948,7 +948,7 @@
                 </xsl:when>
                 <xsl:when test="$char00 = 'h'">
                     <rdamd:P30169>
-                        6x9 in. or 16x23 cm.
+                        <xsl:text>6x9 in. or 16x23 cm.</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
             </xsl:choose>
@@ -957,7 +957,7 @@
             <xsl:choose>
                 <xsl:when test="$char00 = 'c'">
                     <rdamd:P30169>
-                        8 in.
+                        <xsl:text>8 in.</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
                 <xsl:when test="$char00 = 'd' or $char00 = 'a' or $char00 = 'k'">
@@ -1007,7 +1007,7 @@
                 </xsl:when>
                 <xsl:when test="$char00 = 'h'">
                     <rdamd:P30169>
-                        16 mm.
+                        <xsl:text>16 mm.</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
             </xsl:choose>
@@ -1025,7 +1025,7 @@
                 </xsl:when>
                 <xsl:when test="$char00 = 'h'">
                     <rdamd:P30169>
-                        35 mm.
+                        <xsl:text>35 mm.</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
             </xsl:choose>
@@ -1037,7 +1037,7 @@
                 </xsl:when>
             <xsl:when test = "$char00 = 'h'">
                 <rdamd:P30169>
-                    3x5 in. or 8x13 cm.
+                    <xsl:text>3x5 in. or 8x13 cm.</xsl:text>
                 </rdamd:P30169>
             </xsl:when>
             </xsl:choose>
@@ -1055,7 +1055,7 @@
                 </xsl:when>
                 <xsl:when test="$char00 = 'h'">
                     <rdamd:P30169>
-                        3 1/4 x 7 3/8 in. or 9x19 cm.
+                        <xsl:text>3 1/4 x 7 3/8 in. or 9x19 cm.</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
             </xsl:choose>
@@ -1268,7 +1268,7 @@
                 </xsl:when>
                 <xsl:when test="$char00 = 's'">
                     <rdamd:P30169>
-                        3 in.
+                        <xsl:text>3 in.</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
             </xsl:choose>
@@ -1280,7 +1280,7 @@
                 </xsl:when>
                 <xsl:when test="$char00 = 's'">
                     <rdamd:P30169>
-                        5 in.
+                        <xsl:text>5 in.</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
             </xsl:choose>
@@ -1292,7 +1292,7 @@
                 </xsl:when>
                 <xsl:when test="$char00 = 's'">
                     <rdamd:P30169>
-                        7 in.
+                        <xsl:text>7 in.</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
             </xsl:choose>
@@ -1304,39 +1304,39 @@
                 </xsl:when>
                 <xsl:when test="$char00 = 's'">
                     <rdamd:P30169>
-                        10 in.
+                        <xsl:text>10 in.</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
             </xsl:choose>
         </xsl:if>
         <xsl:if test="$char06 = 'e' and $char00 = 's'">
             <rdamd:P30169>
-                12 in.
+                <xsl:text>12 in.</xsl:text>
             </rdamd:P30169>
         </xsl:if>
         <xsl:if test="$char06 = 'f' and $char00 = 's'">
             <rdamd:P30169>
-                16 in.
+                <xsl:text>16 in.</xsl:text>
             </rdamd:P30169>
         </xsl:if>
         <xsl:if test="$char06 = 'g' and $char00 = 's'">
             <rdamd:P30169>
-                4 3/4 in. or 12 cm.
+                <xsl:text>4 3/4 in. or 12 cm.</xsl:text>
             </rdamd:P30169>
         </xsl:if>
         <xsl:if test="$char06 = 'j' and $char00 = 's'">
             <rdamd:P30169>
-                3 7/8 x 2 1/2 in.
+                <xsl:text>3 7/8 x 2 1/2 in.</xsl:text>
             </rdamd:P30169>
         </xsl:if>
         <xsl:if test="$char06 = 'o' and $char00 = 's'">
             <rdamd:P30169>
-                5 1/4 x 3 7/8 in.
+                <xsl:text>5 1/4 x 3 7/8 in.</xsl:text>
             </rdamd:P30169>
         </xsl:if>
         <xsl:if test="$char06 = 's' and $char00 = 's'">
             <rdamd:P30169>
-                2 3/4 x 4 in.
+                <xsl:text>2 3/4 x 4 in.</xsl:text>
             </rdamd:P30169>
         </xsl:if>
     </xsl:template>
@@ -1352,12 +1352,12 @@
                 </xsl:when>
                 <xsl:when test="$char00 = 'm' or $char00 = 'g'">
                     <rdamd:P30169>
-                        Standard 8 mm.
+                        <xsl:text>Standard 8 mm.</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
                 <xsl:when test="$char00 = 'v'">
                     <rdamd:P30169>
-                        8 mm.
+                        <xsl:text>8 mm.</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
             </xsl:choose>
@@ -1369,7 +1369,7 @@
                 </xsl:when>
                 <xsl:when test="$char00 = 'm' or $char00 = 'g'">
                     <rdamd:P30169>
-                        Super 8 mm./single 8 mm.
+                        <xsl:text>Super 8 mm./single 8 mm.</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
             </xsl:choose>
@@ -1378,7 +1378,7 @@
             <xsl:choose>
                 <xsl:when test="$char00 = 's'">
                     <rdamd:P30169>
-                        1/4 in. tape width
+                        <xsl:text>1/4 in. tape width</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
                 <xsl:when test="$char00 = 'a'">
@@ -1386,91 +1386,91 @@
                 </xsl:when>
                 <xsl:when test="$char00 = 'v'">
                     <rdamd:P30169>
-                        1/4 in.
+                        <xsl:text>1/4 in.</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
             </xsl:choose>
         </xsl:if>
         <xsl:if test="$char07 = 'c' and ($char00 = 'm' or $char00 = 'g')">
             <rdamd:P30169>
-                9.5 mm.
+                <xsl:text>9.5 mm.</xsl:text>
             </rdamd:P30169>
         </xsl:if>
         <xsl:if test="$char07 = 'd' and($char00 = 'm' or $char00 = 'g')">
             <rdamd:P30169>
-                16 mm.
+                <xsl:text>16 mm.</xsl:text>
             </rdamd:P30169>
         </xsl:if>
         <xsl:if test="$char07 = 'e' and ($char00 = 'm' or $char00 = 'g')">
             <rdamd:P30169>
-                28 mm.
+                <xsl:text>28 mm.</xsl:text>
             </rdamd:P30169>
         </xsl:if>
         <xsl:if test="$char07 = 'f' and ($char00 = 'm' or $char00 = 'g')">
             <rdamd:P30169>
-                35 mm.
+                <xsl:text>35 mm.</xsl:text>
             </rdamd:P30169>
         </xsl:if>
         <xsl:if test="$char07 = 'g' and ($char00 = 'm' or $char00 = 'g')">
             <rdamd:P30169>
-                70 mm.
+                <xsl:text>70 mm.</xsl:text>
             </rdamd:P30169>
         </xsl:if>
         <xsl:if test="$char07 = 'j' and $char00 = 'g'">
             <rdamd:P30169>
-                2x2 in. or 5x5 cm.
+                <xsl:text>2x2 in. or 5x5 cm.</xsl:text>
             </rdamd:P30169>
         </xsl:if>
         <xsl:if test="$char07 = 'k' and $char00 = 'g'">
             <rdamd:P30169>
-                2 1/4 x 2 1/4 in. or 6x6 cm.
+                <xsl:text>2 1/4 x 2 1/4 in. or 6x6 cm.</xsl:text>
             </rdamd:P30169>
         </xsl:if>
         <xsl:if test="$char07 = 's' and $char00 = 'g'">
             <rdamd:P30169>
-                4x5 in. or 10x13 cm.
+                <xsl:text>4x5 in. or 10x13 cm.</xsl:text>
             </rdamd:P30169>
         </xsl:if>
         <xsl:if test="$char07 = 't' and $char00 = 'g'">
             <rdamd:P30169>
-                5x7 in. or 13x18 cm.
+                <xsl:text>5x7 in. or 13x18 cm.</xsl:text>
             </rdamd:P30169>
         </xsl:if>
         <xsl:if test="$char07 = 'v' and $char00 = 'g'">
             <rdamd:P30169>
-                8x10 in. or 21x26 cm.
+                <xsl:text>8x10 in. or 21x26 cm.</xsl:text>
             </rdamd:P30169>
         </xsl:if>
         <xsl:if test="$char07 = 'w' and $char00 = 'g'">
             <rdamd:P30169>
-                9x9 in. or 23x23 cm.
+               <xsl:text>9x9 in. or 23x23 cm.</xsl:text>
             </rdamd:P30169>
         </xsl:if>
         <xsl:if test="$char07 = 'x' and $char00 = 'g'">
             <rdamd:P30169>
-                10x10 in. or 26x26 cm.
+                <xsl:text>10x10 in. or 26x26 cm.</xsl:text>
             </rdamd:P30169>
         </xsl:if>
         <xsl:if test="$char07 = 'y' and $char00 = 'g'">
             <rdamd:P30169>
-                7x7 in. or 18x18 cm.
+                <xsl:text>7x7 in. or 18x18 cm.</xsl:text>
             </rdamd:P30169>
         </xsl:if>
         <xsl:if test="$char07 = 'l' and $char00 = 's'">
             <rdamd:P30169>
-                1/8 in. tape width
+                <xsl:text>1/8 in. tape width</xsl:text>
             </rdamd:P30169>
         </xsl:if>
         <xsl:if test="$char07 = 'o'">
             <xsl:choose>
                 <xsl:when test="$char00 = 's'">
                     <rdamd:P30169>
-                        1/2 in. tape width
+                        <xsl:text>1/2 in. tape width</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
                 <xsl:when test="$char00 = 'v'">
                     <rdamd:P30169>
-                        1/2 in.
+                        <xsl:text>1/2 in.</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
             </xsl:choose>
@@ -1479,24 +1479,24 @@
             <xsl:choose>
                 <xsl:when test="$char00 = 's'">
                     <rdamd:P30169>
-                        1 in. tape width
+                        <xsl:text>1 in. tape width</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
                 <xsl:when test="$char00 = 'v'">
                     <rdamd:P30169>
-                        1 in.
+                        <xsl:text>1 in.</xsl:text>
                     </rdamd:P30169>
                 </xsl:when>
             </xsl:choose>
             </xsl:if>
         <xsl:if test="$char07 = 'q' and $char00 = 'v'">
             <rdamd:P30169>
-                2 in.
+                <xsl:text>2 in.</xsl:text>
             </rdamd:P30169>
         </xsl:if>
         <xsl:if test="$char07 = 'r' and $char00 = 'v'">
             <rdamd:P30169>
-                3/4 in.
+                <xsl:text>3/4 in.</xsl:text>
             </rdamd:P30169>
         </xsl:if>
     </xsl:template>
@@ -1560,7 +1560,7 @@
             <xsl:choose>
                 <xsl:when test="$char00 = 'c'">
                     <rdamd:P30137>
-                        One file format
+                        <xsl:text>One file format</xsl:text>
                     </rdamd:P30137>
                 </xsl:when>
                 <xsl:when test="$char00 = 's'">
@@ -1597,7 +1597,7 @@
             <xsl:choose>
                 <xsl:when test="$char00 = 'c'">
                     <rdamd:P30137>
-                        Multiple file formats
+                        <xsl:text>Multiple file formats</xsl:text>
                     </rdamd:P30137>
                 </xsl:when>
                 <xsl:when test="$char00 = 'h'">
@@ -1627,7 +1627,7 @@
             <xsl:choose>
                 <xsl:when test="$char00 = 'c'">
                     <rdamo:P30137>
-                        Quality assurance target(s): Absent.
+                        <xsl:text>Quality assurance target(s): Absent.</xsl:text>
                     </rdamo:P30137>
                 </xsl:when>
                 <xsl:when test="$char00 = 'h'">
@@ -1655,7 +1655,7 @@
             <xsl:choose>
                 <xsl:when test="$char00 = 'c'">
                     <rdamd:P30137>
-                        Quality assurance target(s): Present.
+                        <xsl:text>Quality assurance target(s): Present.</xsl:text>
                     </rdamd:P30137>
                 </xsl:when>
                 <xsl:when test="$char00 = 's'">
@@ -1684,7 +1684,7 @@
             <xsl:choose>
                 <xsl:when test="$char00 = 'c'">
                     <rdamd:P30137>
-                        Antecedent/source: File reproduced from original.
+                        <xsl:text>Antecedent/source: File reproduced from original.</xsl:text>
                     </rdamd:P30137>
                 </xsl:when>
                 <xsl:when test="$char00 = 'h'">
@@ -1696,7 +1696,7 @@
             <xsl:choose>
                 <xsl:when test="$char00 = 'c'">
                     <rdamd:P30137>
-                        Antedecent/source: File reproduced from microform.
+                        <xsl:text>Antedecent/source: File reproduced from microform.</xsl:text>
                     </rdamd:P30137> 
                 </xsl:when>
                 <xsl:when test="$char00 = 'h'">
@@ -1708,7 +1708,7 @@
             <xsl:choose>
                 <xsl:when test="$char00 = 'c'">
                     <rdamd:P30137>
-                        Antedecent/source: File reproduced from an electronic resource.
+                        <xsl:text>Antedecent/source: File reproduced from an electronic resource.</xsl:text>
                     </rdamd:P30137> 
                 </xsl:when>
                 <xsl:when test="$char00 = 'h'">
@@ -1720,7 +1720,7 @@
             <xsl:choose>
                 <xsl:when test="$char00 = 'd'">
                     <rdamd:P30137>
-                        Antedecent/source: File reproduced from an intermediate (not microform).
+                        <xsl:text>Antedecent/source: File reproduced from an intermediate (not microform).</xsl:text>
                     </rdamd:P30137> 
                 </xsl:when>
                 <xsl:when test="$char00 = 'm'">
@@ -1732,7 +1732,7 @@
             <xsl:choose>
                 <xsl:when test="$char00 = 'c'">
                     <rdamd:P30137>
-                        Antedecent/source: Mixed.
+                        <xsl:text>Antedecent/source: Mixed.</xsl:text>
                     </rdamd:P30137> 
                 </xsl:when>
                 <xsl:when test="$char00 = 'h'">
@@ -1828,17 +1828,17 @@
         </xsl:if>
         <xsl:if test="$char13 = 'a' and $char00 = 'c'">
             <rdamd:P30137>
-                Reformatting quality: Access.
+                <xsl:text>Reformatting quality: Access.</xsl:text>
             </rdamd:P30137>
         </xsl:if>
         <xsl:if test="$char13 = 'p' and $char00 = 'c'">
             <rdamd:P30137>
-                Reformatting quality: Preservation.
+                <xsl:text>Reformatting quality: Preservation.</xsl:text>
             </rdamd:P30137>
         </xsl:if>
         <xsl:if test="$char13 = 'r' and $char00 = 'c'">
             <rdamd:P30137>
-                Reformatting quality: Replacement.
+                <xsl:text>Reformatting quality: Replacement.</xsl:text>
             </rdamd:P30137>
         </xsl:if>
     </xsl:template>
