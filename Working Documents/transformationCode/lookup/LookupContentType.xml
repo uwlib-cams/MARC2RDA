@@ -476,7 +476,7 @@
     <marcVM008c23>d</marcVM008c23>
     <marcVM006c6>d</marcVM006c6>
     <marc245h>atlas|flash card|board book|microfilm|handbook|large print|newsletter|pamphlet|text|ebook|e-book|serial|typescript|exhibition catalog|paperback</marc245h>
-    <marc300a>atlas|handbook|flash card|board book|handbook|large print|ebook|e-book|large print|exhibition catalog|pamphlet|leaflet|program|script|transcript|</marc300a>
+    <marc300a>atlas|handbook|flash card|board book|handbook|large print|ebook|e-book|large print|exhibition catalog|pamphlet|leaflet|program|script|transcript</marc300a>
     <xpath>matches(substring(marc:leader, 7, 1), 'a')
       and not((some $subfield in marc:datafield[@tag = '650']/marc:subfield[@code = 'v']|marc:datafield[@tag='655']/marc:subfield[@code='a']
       satisfies matches(lower-case($subfield), 'stories without words|coloring book|colouring book')))</xpath>
