@@ -47,12 +47,12 @@
     <marc300a>cd-a|audio cd</marc300a>
     <xpath>not(exists(marc:controlfield[@tag='007'][(substring(.,1,1)='g')][(substring(.,6,2)='bd')]))
     and (some $subfield in marc:datafield[@tag='245']/marc:subfield[@code='h']|marc:datafield[@tag='300']/marc:subfield[@code = 'a']
-    satisfies matches(lower-case($subfield), 'audio disc|phonodisc|audiocd'))</xpath>
+    satisfies (matches(lower-case($subfield), 'audio disc|sound disc|phonodisc|audiocd')))</xpath>
     <xpath>matches(substring(marc:leader, 7, 1), 'i|j')
       and (some $a in marc:datafield[@tag = '300']/marc:subfield[@code = 'a']
       satisfies matches($a, 'CD|CD-ROM|CD ROM'))</xpath>
     <xpath>matches(substring(marc:leader, 7, 1), 'i|j|c|d')
-     and not(exists(marc:controlfieid[@tag='008'][matches(substring(., 31, 2), 'n')]))
+     and not(exists(marc:controlfield[@tag='008'][matches(substring(., 31, 2), 'n')]))
       and (some $a in marc:datafield[@tag = '300']/marc:subfield[@code = 'a']
       satisfies matches($a, 'CD|CD-ROM|CD ROM'))</xpath>
     <xpath>matches(substring(marc:leader, 7, 1), 'i|j')
@@ -423,21 +423,20 @@
       and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'printing plate')])</xpath>
     <xpath>(matches(substring(marc:leader, 7, 1), 'a|t'))
       and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'box|case|folder')])</xpath>
-    <!-- test -->
-    <!--<xpath>(substring(marc:leader, 7, 1) = 'g' or substring(marc:leader, 7, 1) = 'k'
+    <xpath>(substring(marc:leader, 7, 1) = 'g' or substring(marc:leader, 7, 1) = 'k'
       or substring(marc:leader, 7, 1) = 'o' or substring(marc:leaer, 7, 1) = 'r')
-      and not(exists(marc:controlfield[@tag='007'][matches(substring(., 1, 2), 'aq')))
-      and (some $f008 in $record/marc:controlfield[@tag='008']
-      satisfies substring($f008, 34, 1) = 'q')</xpath>-->
-    <!--<xpath>not(exists(marc:controlfield[@tag='007'][matches(substring(., 1, 2), 'aq')))
-      and some $f006 in $record/marc:controlfield[@tag='006']
+      and not(exists(marc:controlfield[@tag='007'][matches(substring(., 1, 2), 'aq')]))
+      and (some $f008 in marc:controlfield[@tag='008']
+      satisfies substring($f008, 34, 1) = 'q')</xpath>
+    <xpath>not(exists(marc:controlfield[@tag='007'][matches(substring(., 1, 2), 'aq')]))
+      and (some $f006 in marc:controlfield[@tag='006']
       satisfies ((substring($f006, 1, 1) = 'g' or substring($f006, 1, 1) = 'k'
       or substring($f006, 1, 1) = 'o'  or substring($f006, 1, 1) = 'r')
-      and substring($f006, 17, 1) = 'q')</xpath>-->
-    <!--<xpath>not(exists(marc:controlfield[@tag='007'][matches(substring(., 1, 2), 'aq')))
-      and exists(marc:datafield[@tag='245']/marc:subfield[@code='h'][matches(lower-case(.), 'model')])</xpath>-->
-    <!--<xpath>not(exists(marc:controlfield[@tag='007'][matches(substring(., 1, 2), 'aq')))
-      and exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'model')])</xpath>-->
+      and substring($f006, 17, 1) = 'q'))</xpath>
+    <xpath>not(exists(marc:controlfield[@tag='007'][matches(substring(., 1, 2), 'aq')]))
+      and exists(marc:datafield[@tag='245']/marc:subfield[@code='h'][matches(lower-case(.), 'model')])</xpath>
+    <xpath>not(exists(marc:controlfield[@tag='007'][matches(substring(., 1, 2), 'aq')]))
+      and exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'model')])</xpath>
     <locCode>nr</locCode>
     <locTerm>object</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/nr</locURI>
@@ -536,9 +535,8 @@
       and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'silver gelatin')][matches(lower-case(.), 'print')])</xpath>
     <xpath>(matches(substring(marc:leader, 7, 1), 'a|t'))
       and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'leaf|page |page$|^1 p\.|scroll|papers')])</xpath>
-    <!-- test -->
-    <!--<xpath>not(matches(substring(marc:leader, 7, 1), 'a|t'))
-      and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'papers')])</xpath>-->
+    <xpath>not(matches(substring(marc:leader, 7, 1), 'a|t'))
+      and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'papers')])</xpath>
     <xpath>exists(marc:controlfield[@tag='007'][matches(substring(., 1, 2), 'kh')])
       and not(exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'stereo')]))</xpath>
     <locCode>nb</locCode>
@@ -671,16 +669,16 @@
       and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'album|binder')])</xpath>
     <xpath>(matches(substring(marc:leader, 7, 1), 'a|t'))
       and exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'pages|p\.')][ not(matches(lower-case(.), '^1 p\.'))])</xpath>
-    <!-- test -->
-    <!--<xpath>(matches(substring(marc:leader, 7, 1), 'a|t'))
+    <xpath>not(matches(substring(marc:leader, 7, 1), 'a|t'))
+      and exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'pages|p\.')][ not(matches(lower-case(.), '^1 p\.'))])</xpath>
+    <xpath>(matches(substring(marc:leader, 7, 1), 'a|t'))
       and exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'portfolio|scrapbook')])</xpath>
     <xpath>not(matches(substring(marc:leader, 7, 1), 'a|t'))
       and exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'portfolio|scrapbook')])</xpath>
-    -->
-    <!--<xpath>(matches(substring(marc:leader, 7, 1), 'a|t'))
+    <xpath>(matches(substring(marc:leader, 7, 1), 'a|t'))
       and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'v\.|vol')])</xpath>
     <xpath>not(matches(substring(marc:leader, 7, 1), 'a|t'))
-      and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'v\.|vol')])</xpath>-->
+      and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'v\.|vol')])</xpath>
     <locCode>nc</locCode>
     <locTerm>volume</locTerm>
     <locURI>http://id.loc.gov/vocabulary/carriers/nc</locURI>

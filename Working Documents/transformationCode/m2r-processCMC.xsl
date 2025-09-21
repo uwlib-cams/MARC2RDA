@@ -123,32 +123,14 @@
         </xsl:variable>
         
         <xsl:for-each select="$lookupLDRc6-content/rdaIRI">
-            <xsl:choose>
-                <!-- condition for LDR6 = a is that 655 $a and 650 $v not matches below -->
-                <xsl:when test="$LDRc6 = 'a'">
-                    <xsl:if test="every $subfield in (../marc:datafield[@tag = '655']/marc:subfield[@code = 'a']|../marc:datafield[@tag = '650']/marc:subfield[@code = 'v'])
-                        satisfies not(matches($subfield, 'stories without words|coloring book|colouring book'))">
-                        <marc:datafield tag="336" ind1=" " ind2=" ">
-                            <marc:subfield code="1">
-                                <xsl:value-of select="."/>
-                            </marc:subfield>
-                            <marc:subfield code="9">
-                                <xsl:text>LDRc6</xsl:text>
-                            </marc:subfield>
-                        </marc:datafield>
-                    </xsl:if>
-                </xsl:when>
-                <xsl:otherwise>
-                    <marc:datafield tag="336" ind1=" " ind2=" ">
-                        <marc:subfield code="1">
-                            <xsl:value-of select="."/>
-                        </marc:subfield>
-                        <marc:subfield code="9">
-                            <xsl:text>LDRc6</xsl:text>
-                        </marc:subfield>
-                    </marc:datafield>
-                </xsl:otherwise>
-            </xsl:choose>
+            <marc:datafield tag="336" ind1=" " ind2=" ">
+                <marc:subfield code="1">
+                    <xsl:value-of select="."/>
+                </marc:subfield>
+                <marc:subfield code="9">
+                    <xsl:text>LDRc6</xsl:text>
+                </marc:subfield>
+            </marc:datafield>
         </xsl:for-each>
         
         <xsl:for-each select="$lookupLDRc6-carrier/rdaIRI">

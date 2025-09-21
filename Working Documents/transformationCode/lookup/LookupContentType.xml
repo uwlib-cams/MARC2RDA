@@ -305,13 +305,11 @@
       and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'album|binder|contact sheet|gelatin silver|photoprint|printing plate|prints')])</xpath>
     <xpath>(substring(marc:leader, 7, 1) = 'k')
       and (marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'silver gelatin')][matches(lower-case(.), 'print')])</xpath>
-    <!--<!-\- test xpath -\->
     <xpath>matches(substring(marc:leader, 7, 1), 'k')
-      and exists(marc:controlfield[@tag='007'][matches(subfield(.,1,2), 'gt')])</xpath>
-    <!-\- test xpath -\->
+      and exists(marc:controlfield[@tag='007'][matches(substring(.,1,2), 'gt')])</xpath>
     <xpath>matches(substring(marc:leader, 7, 1), 'k')
       and exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'transparencies|transparency')])</xpath>
-    --><locCode>sti</locCode>
+    <locCode>sti</locCode>
     <locTerm>still image</locTerm>
     <locURI>http://id.loc.gov/vocabulary/contentTypes/sti</locURI>
     <rdaTerm>still image</rdaTerm>
@@ -507,21 +505,21 @@
     <marc245h>realia|diorama</marc245h>
     <marc300a>diorama|mask|medal|sculpture</marc300a>
     <!-- test all-->
-    <!--<xpath>(substring($ldr6-7, 1, 1) = 'g' or substring($ldr6-7, 1, 1) = 'k'
-      or substring($ldr6-7, 1, 1) = 'o' or substring($ldr6-7, 1, 1) = 'r')
-      and not(exists(marc:controlfield[@tag='007'][matches(substring(., 1, 2), 'aq')))
-      and (some $f008 in $record/marc:controlfield[@tag='008']
+    <xpath>(substring(marc:leader, 7, 1) = 'g' or substring(marc:leader, 7, 1) = 'k'
+      or substring(marc:leader, 7, 1) = 'o' or substring(marc:leaer, 7, 1) = 'r')
+      and not(exists(marc:controlfield[@tag='007'][matches(substring(., 1, 2), 'aq')]))
+      and (some $f008 in marc:controlfield[@tag='008']
       satisfies substring($f008, 34, 1) = 'q')</xpath>
-    <xpath>not(exists(marc:controlfield[@tag='007'][matches(substring(., 1, 2), 'aq')))
-      and some $f006 in $record/marc:controlfield[@tag='006']
+    <xpath>not(exists(marc:controlfield[@tag='007'][matches(substring(., 1, 2), 'aq')]))
+      and (some $f006 in marc:controlfield[@tag='006']
       satisfies ((substring($f006, 1, 1) = 'g' or substring($f006, 1, 1) = 'k'
       or substring($f006, 1, 1) = 'o'  or substring($f006, 1, 1) = 'r')
-      and substring($f006, 17, 1) = 'q')</xpath>
-    <xpath>not(exists(marc:controlfield[@tag='007'][matches(substring(., 1, 2), 'aq')))
+      and substring($f006, 17, 1) = 'q'))</xpath>
+    <xpath>not(exists(marc:controlfield[@tag='007'][matches(substring(., 1, 2), 'aq')]))
       and exists(marc:datafield[@tag='245']/marc:subfield[@code='h'][matches(lower-case(.), 'model')])</xpath>
-    <xpath>not(exists(marc:controlfield[@tag='007'][matches(substring(., 1, 2), 'aq')))
+    <xpath>not(exists(marc:controlfield[@tag='007'][matches(substring(., 1, 2), 'aq')]))
       and exists(marc:datafield[@tag='300']/marc:subfield[@code='a'][matches(lower-case(.), 'model')])</xpath>
-    --><locCode>tdf</locCode>
+    <locCode>tdf</locCode>
     <locTerm>three-dimensional form</locTerm>
     <locURI>http://id.loc.gov/vocabulary/contentTypes/tdf</locURI>
     <rdaTerm>three-dimensional form</rdaTerm>
