@@ -376,13 +376,13 @@
     <xsl:function name="m2r:manifDate" expand-text="yes">
         <xsl:param name="record"/>
         <xsl:variable name="dateType">
-            <xsl:value-of select="substring($record/marc:controlfield[@tag = '008'], 7, 1)"/>
+            <xsl:value-of select="substring($record/marc:controlfield[@tag = '008'][1], 7, 1)"/>
         </xsl:variable>
         <xsl:variable name="date1">
-            <xsl:value-of select="substring($record/marc:controlfield[@tag = '008'], 8, 4)"/>
+            <xsl:value-of select="substring($record/marc:controlfield[@tag = '008'][1], 8, 4)"/>
         </xsl:variable>
         <xsl:variable name="date2">
-            <xsl:value-of select="substring($record/marc:controlfield[@tag = '008'], 12, 4)"/>
+            <xsl:value-of select="substring($record/marc:controlfield[@tag = '008'][1], 12, 4)"/>
         </xsl:variable>
         <xsl:variable name="manifDate">
             <xsl:choose>
