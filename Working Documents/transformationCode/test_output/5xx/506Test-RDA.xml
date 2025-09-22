@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
-         xmlns:fake="http://fakePropertiesForDemo"
+<rdf:RDF xmlns:fake="http://fakePropertiesForDemo"
          xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
          xmlns:rdaa="http://rdaregistry.info/Elements/a/"
          xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
@@ -28,32 +27,55 @@
          xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:uwf="http://universityOfWashington/functions"
-         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/506-testwor">
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc506-test">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/506-testexp"/>
-      <rdawd:P10002>506-testwor</rdawd:P10002>
+      <rdawd:P10400>506-test</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc506-test</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc506-test"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#onlineresource"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/506-testexp">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/506-testman"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/506-testwor"/>
-      <rdaed:P20002>506-testexp</rdaed:P20002>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/506-testman">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc506-test">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/506-testexp"/>
-      <fake:marcfield>F338 ## $b cr $2 rdacarrier</fake:marcfield>
-      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/>
-      <fake:marcfield>F338 ## $b cr $2 rdacarrier</fake:marcfield>
-      <rdam:P30001 rdf:resource="http://id.loc.gov/vocabulary/carriers/cr"/>
-      <fake:marcfield>F506 1# $a Access restricted to users with a valid Harvard ID. $5 MH</fake:marcfield>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc506-test"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc506-test</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 506-test
+F338 ## $b cr $2 rdacarrier
+F338 ## $b cr $2 rdacarrier
+F506 1# $a Access restricted to users with a valid Harvard ID. $5 MH
+F880 1# $6 506-00 $a 880 text $5 WaU $5 second5
+F506 1# $6 880-01 $a linked 506 $f License $2 star
+F880 1# $6 506-01 $a linked 880 $f License $2 star
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
+</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc506-test"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc506-test"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#onlineresource"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#onlineresource">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc506-test"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdamd:P30276> (Online resource)</rdamd:P30276>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
       <rdamd:P30145>Restrictions apply: Terms governing access: Access restricted to users with a valid Harvard ID. (at institution: Harvard University)</rdamd:P30145>
-      <fake:marcfield>F880 1# $6 506-00 $a 880 text $5 WaU</fake:marcfield>
-      <rdamd:P30145>Restrictions apply: Terms governing access: 880 text (at institution: University of Washington)</rdamd:P30145>
-      <fake:marcfield>F506 1# $6 880-01 $a linked 506 $f License $2 star</fake:marcfield>
+      <rdamd:P30145>Restrictions apply: Terms governing access: 880 text (at institution: University of Washington; second5)</rdamd:P30145>
       <rdamd:P30145>Restrictions apply: Terms governing access: linked 506</rdamd:P30145>
       <rdam:P30145 rdf:resource="http://marc2rda.edu/fake/star/con#license"/>
       <rdamd:P30145>Restrictions apply: Terms governing access: linked 880</rdamd:P30145>
@@ -65,38 +87,62 @@
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>License</skos:prefLabel>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/506-test2wor">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc506-test2">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/506-test2exp"/>
-      <rdawd:P10002>506-test2wor</rdawd:P10002>
+      <rdawd:P10400>506-test2</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc506-test2</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc506-test2"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/506-test2exp">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/506-test2man"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/506-test2wor"/>
-      <rdaed:P20002>506-test2exp</rdaed:P20002>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/506-test2man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc506-test2">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/506-test2exp"/>
-      <fake:marcfield>F506 1# $3 Office files of Under Secretary $a No one may examine these records or obtain information from them or copies of them except by written permission; $b Secretary of the Treasury or his duly authorized representative;$cKept in remote storage; access requires 24 hours advance notice.</fake:marcfield>
-      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/506-test2ite#d22e50"/>
-      <fake:marcfield>F506 0# $6 880-01 $a Access copy available to the general public. $f Unrestricted $2 star $5 MH</fake:marcfield>
-      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/506-test2ite#d22e57"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc506-test2"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc506-test2</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 506-test2
+F506 1# $3 Office files of Under Secretary $a No one may examine these records or obtain information from them or copies of them except by written permission; $b Secretary of the Treasury or his duly authorized representative;$cKept in remote storage; access requires 24 hours advance notice.
+F506 0# $6 880-01 $a Access copy available to the general public. $f Unrestricted $2 star $5 MH $5 WaU
+F880 0# $6 506-01 $a Other thing $f term $2 star $5 MH $5 WaU
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
+</rdamd:P30137>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/506-test2ite#d22e50">
-      <fake:marcfield>F506 1# $3 Office files of Under Secretary $a No one may examine these records or obtain information from them or copies of them except by written permission; $b Secretary of the Treasury or his duly authorized representative;$cKept in remote storage; access requires 24 hours advance notice.</fake:marcfield>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc506-test2"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc506-test2"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc506-test2"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdamd:P30276/>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/transform/ite#2025-09-22t1151182908258-0400d105e5"/>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/transform/ite#2025-09-22t1151182908258-0400d105e12"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-09-22t1151182908258-0400d105e5">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>506-test2ite#d22e50</rdaid:P40001>
-      <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/506-test2man"/>
+      <rdaid:P40001>ite#2025-09-22t1151182908258-0400d105e5</rdaid:P40001>
+      <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
       <rdaid:P40047>Restrictions apply: Terms governing access: No one may examine these records or obtain information from them or copies of them except by written permission;; Jurisdiction: Secretary of the Treasury or his duly authorized representative;$cKept in remote storage; access requires 24 hours advance notice. (Applies to: Office files of Under Secretary)</rdaid:P40047>
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/506-test2ite#d22e57">
-      <fake:marcfield>F506 0# $6 880-01 $a Access copy available to the general public. $f Unrestricted $2 star $5 MH</fake:marcfield>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-09-22t1151182908258-0400d105e12">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
-      <rdaid:P40001>506-test2ite#d22e57</rdaid:P40001>
-      <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/506-test2man"/>
+      <rdaid:P40001>ite#2025-09-22t1151182908258-0400d105e12</rdaid:P40001>
+      <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
       <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/mh"/>
+      <rdaio:P40161 rdf:resource="http://marc2rda.edu/fake/colMan/wau"/>
       <rdaid:P40047>Terms governing access: Access copy available to the general public.</rdaid:P40047>
       <rdai:P40047 rdf:resource="http://marc2rda.edu/fake/star/con#unrestricted"/>
       <rdaid:P40047>Terms governing access: Other thing</rdaid:P40047>

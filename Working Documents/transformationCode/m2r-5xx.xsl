@@ -263,7 +263,14 @@
                     <rdamd:P30145>
                         <xsl:call-template name="F506-xx-abcdegqu3"/>
                         <xsl:if test="marc:subfield[@code = '5']">
-                            <xsl:text> (at institution: {m2r:s5NameLookup(marc:subfield[@code = '5'])})</xsl:text>
+                            <xsl:text> (at institution: </xsl:text>
+                            <xsl:for-each select="marc:subfield[@code='5']">
+                                <xsl:value-of select="m2r:s5NameLookup(.)"/>
+                                <xsl:if test="position() != last()">
+                                    <xsl:text>; </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                            <xsl:text>)</xsl:text>
                         </xsl:if>
                     </rdamd:P30145>
                 </xsl:if>
@@ -317,9 +324,9 @@
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                 <rdaid:P40001>{concat('ite#',$baseID, $genID)}</rdaid:P40001>
                 <rdaio:P40049 rdf:resource="{$manIRI}"/>
-                <xsl:if test="marc:subfield[@code = '5']">
-                    <xsl:copy-of select="m2r:s5Lookup(marc:subfield[@code = '5'])"/>    
-                </xsl:if>
+                <xsl:for-each select="marc:subfield[@code = '5']">
+                    <xsl:copy-of select="m2r:s5Lookup(.)"/>    
+                </xsl:for-each>
                 <xsl:if test="marc:subfield[@code = 'a' or @code = 'b' or @code = 'c' or @code = 'd'
                     or @code = 'e' or @code = 'g' or @code = 'q' or @code = 'u']">
                     <rdaid:P40047>

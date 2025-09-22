@@ -21,6 +21,7 @@
             <marc:subfield code="6">506-00</marc:subfield>
             <marc:subfield code="a">880 text</marc:subfield>
             <marc:subfield code="5">WaU</marc:subfield>
+            <marc:subfield code="5">second5</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="506" ind1="1" ind2=" ">
             <marc:subfield code="6">880-01</marc:subfield>
@@ -49,6 +50,7 @@
             <marc:subfield code="f">Unrestricted</marc:subfield>
             <marc:subfield code="2">star</marc:subfield>
             <marc:subfield code="5">MH</marc:subfield>
+            <marc:subfield code="5">WaU</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="880" ind1="0" ind2=" ">
             <marc:subfield code="6">506-01</marc:subfield>
@@ -56,6 +58,7 @@
             <marc:subfield code="f">term</marc:subfield>
             <marc:subfield code="2">star</marc:subfield>
             <marc:subfield code="5">MH</marc:subfield>
+            <marc:subfield code="5">WaU</marc:subfield>
         </marc:datafield>
     </marc:record>
 </marc:collection>
