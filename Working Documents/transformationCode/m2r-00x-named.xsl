@@ -470,10 +470,10 @@
         <xsl:if test="$char00 = 'd' and ($char01 = 'a' or $char01 = 'b' or $char01 = 'c' or $char01 = 'e')">
             <rdamo:P30335 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.xrxa-qa70#', $char01)}"/>
         </xsl:if>
-        <xsl:if test="$char00 = 'h' or ($char01 = 'a' or $char01 = 'b' or $char01 = 'c' or $char01 = 'd' or $char01 = 'e' or $char01 = 'f' or $char01 =  'g' or $char01 = 'h' or $char01 = 'j')">
+        <xsl:if test="$char00 = 'h' and ($char01 = 'a' or $char01 = 'b' or $char01 = 'c' or $char01 = 'd' or $char01 = 'e' or $char01 = 'f' or $char01 =  'g' or $char01 = 'h' or $char01 = 'j')">
             <rdamo:P30335 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.exa1-z360#', $char01)}"/>
         </xsl:if>
-        <xsl:if test="$char00 = 'k' or ($char01 = 'a' or $char01 = 'c' or $char01 = 'd' or $char01 = 'e' or $char01 = 'f' or $char01 = 'g' or $char01 = 'h' or $char01 = 'i' or $char01 = 'j' or $char01 = 'k' or $char01 = 'l' or $char01 = 'n' or $char01 = 'o' or $char01 = 'p' or $char01 = 'q' or $char01 = 'r' or $char01 = 's' or $char01 = 'v')">
+        <xsl:if test="$char00 = 'k' and ($char01 = 'a' or $char01 = 'c' or $char01 = 'd' or $char01 = 'e' or $char01 = 'f' or $char01 = 'g' or $char01 = 'h' or $char01 = 'i' or $char01 = 'j' or $char01 = 'k' or $char01 = 'l' or $char01 = 'n' or $char01 = 'o' or $char01 = 'p' or $char01 = 'q' or $char01 = 'r' or $char01 = 's' or $char01 = 'v')">
             <rdamo:P30335 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.gs2r-s451#', $char01)}"/>
         </xsl:if>
         <xsl:if test="$char00 = 'f' and ($char01 = 'a' or $char01 = 'b' or $char01 = 'c' or $char01= 'd')">
