@@ -24,5 +24,28 @@
             <marc:subfield code="c">31 cm +</marc:subfield>
             <marc:subfield code="e">2 CD-ROMs (4 3/4 in.)</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="9">PHYSICAL DESCRIPTION (R) </marc:subfield>
+            <marc:subfield code="a">Extent (R) </marc:subfield>
+            <marc:subfield code="a">Extent (R) </marc:subfield>
+            <marc:subfield code="b">Other physical details (NR) </marc:subfield>
+            <marc:subfield code="b">Other physical details (NR) </marc:subfield>
+            <marc:subfield code="c">Dimensions (R) </marc:subfield>
+            <marc:subfield code="c">Dimensions (R) </marc:subfield>
+            <marc:subfield code="e">Accompanying material (NR) </marc:subfield>
+            <marc:subfield code="e">Accompanying material (NR) </marc:subfield>
+            <marc:subfield code="f">Type of unit (R) </marc:subfield>
+            <marc:subfield code="f">Type of unit (R) </marc:subfield>
+            <marc:subfield code="g">Size of unit (R) </marc:subfield>
+            <marc:subfield code="g">Size of unit (R) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
+            <marc:subfield code="6">Linkage (NR) </marc:subfield>
+            <marc:subfield code="6">Linkage (NR) </marc:subfield>
+            <marc:subfield code="7">Data provenance (R) </marc:subfield>
+            <marc:subfield code="7">Data provenance (R) </marc:subfield>
+            <marc:subfield code="8">Field link and sequence number (R)</marc:subfield>
+            <marc:subfield code="8">Field link and sequence number (R)</marc:subfield>
+        </marc:datafield>
     </marc:record>
 </marc:collection>

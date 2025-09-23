@@ -237,6 +237,18 @@
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:when>
+                        <xsl:when test="contains(name(), 'P30002')">
+                            <xsl:choose>
+                                <xsl:when test="not(contains(@rdf:resource, 'RDAMediaType'))">
+                                    <xsl:copy-of select="."/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:if test="matches(@rdf:resource, '1003')">
+                                        <xsl:copy-of select="."/>
+                                    </xsl:if>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:when>
                         <xsl:otherwise>
                             <xsl:copy-of select="."/>
                         </xsl:otherwise>
@@ -251,6 +263,18 @@
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <xsl:if test="matches(@rdf:resource, '1022|1023|1024|1025|1026|1027|1028')">
+                                        <xsl:copy-of select="."/>
+                                    </xsl:if>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:when>
+                        <xsl:when test="contains(name(), 'P30002')">
+                            <xsl:choose>
+                                <xsl:when test="not(contains(@rdf:resource, 'RDAMediaType'))">
+                                    <xsl:copy-of select="."/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:if test="matches(@rdf:resource, '1002')">
                                         <xsl:copy-of select="."/>
                                     </xsl:if>
                                 </xsl:otherwise>
@@ -1209,11 +1233,11 @@
                 <rdano:P80068>
                     <xsl:value-of select="."/>
                 </rdano:P80068>
+                <xsl:if test="../marc:subfield[@code = '2']">
+                    <xsl:copy-of select="$schemeElement"/>
+                </xsl:if>
             </rdf:Description>
         </xsl:for-each>
-        <xsl:if test="marc:subfield[@code = '2']">
-            <xsl:copy-of select="$schemeElement"/>
-        </xsl:if>
     </xsl:template>
     
 </xsl:stylesheet>
