@@ -2064,7 +2064,7 @@
             <xsl:otherwise>
                 <xsl:analyze-string select="$char18-21" regex=".{{1}}">
                     <xsl:matching-substring>
-                        <xsl:if test=". != ' ' and . != '|' and . != 'z'">
+                        <xsl:if test=". != ' ' and . != '|' and . != 'z' and .!= '#'">
                             <xsl:choose>
                                 <xsl:when test=". = 'h'">
                                     <rdae:P20318 rdf:resource="{'https://doi.org/10.6069/uwlswd.1c2x-cj09#hx'}"/>
@@ -2091,7 +2091,7 @@
             <xsl:otherwise>
                 <xsl:analyze-string select="$char18-21" regex=".{{1}}">
                     <xsl:matching-substring>
-                        <xsl:if test=". != ' ' and . != '|' and . != 'z'">
+                        <xsl:if test=". != ' ' and . != '|' and . != 'z' and .!='#'">
                             <xsl:choose>
                                 <xsl:when test=". = 'h'">
                                     <rdawd:P10330>
@@ -2113,7 +2113,7 @@
     
     <xsl:template name="F008-c18-19-MU">
         <xsl:param name="char18-19"/>
-        <xsl:if test="not(contains($char18-19, ' ')) and not(contains($char18-19, '|')) 
+        <xsl:if test="not(contains($char18-19, ' ')) and not(contains($char18-19, '|')) and not(contains($char18-19, '#'))
             and $char18-19 != 'nn' and $char18-19 != 'uu' and $char18-19 != 'zz'">
             <rdaw:P10004 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.8rpj-ek77#', $char18-19)}"/>
         </xsl:if>
@@ -2169,7 +2169,7 @@
     
     <xsl:template name="F008-c20-MU">
         <xsl:param name="char20"/>
-        <xsl:if test="$char20 != ' ' and $char20 != '|' and $char20 != 'u' and $char20 != 'z' and $char20 != 'n'">
+        <xsl:if test="$char20 != ' ' and $char20 != '|' and $char20 != '#' and $char20 != 'u' and $char20 != 'z' and $char20 != 'n'">
             <xsl:choose>
                 <xsl:when test="$char20 = 'h'">
                     <rdae:P20209 rdf:resource="{'http://rdaregistry.info/termList/formatNoteMus/1002'}"/>
@@ -2195,7 +2195,7 @@
     
     <xsl:template name="F008-c20-MU-aggWor" expand-text="yes">
         <xsl:param name="char20"/>
-        <xsl:if test="$char20 != ' ' and $char20 != '|' and $char20 != 'u' and $char20 != 'z' and $char20 != 'n'">
+        <xsl:if test="$char20 != ' ' and $char20 != '|' and $char20 != '#' and $char20 != 'u' and $char20 != 'z' and $char20 != 'n'">
             <xsl:choose>
                 <xsl:when test="$char20 = 'h'">
                     <rdawd:P10330>
@@ -2233,7 +2233,7 @@
     
     <xsl:template name="F008-c21-CR">
         <xsl:param name="char21"/>
-        <xsl:if test="$char21 != ' ' and $char21 != '|'">
+        <xsl:if test="$char21 != ' ' and $char21 != '|' and $char21 !='#'">
             <rdaw:P10004 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.62zz-1534#', $char21)}"/>
         </xsl:if>
     </xsl:template>
@@ -2257,7 +2257,7 @@
     <xsl:template name="F008-c22-SOME">
         <xsl:param name="char22"/>
         <xsl:choose>
-            <xsl:when test="$char22 != ' ' and $char22 != '|'">
+            <xsl:when test="$char22 != ' ' and $char22 != '|' and $char22 != '#'">
                 <rdae:P20322 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.aec4-nv40#', $char22)}"/>
             </xsl:when>
         </xsl:choose>
@@ -2266,7 +2266,7 @@
     <xsl:template name="F008-c22-SOME-aggWor">
         <xsl:param name="char22"/>
         <xsl:choose>
-            <xsl:when test="$char22 != ' ' and $char22 != '|'">
+            <xsl:when test="$char22 != ' ' and $char22 != '|' and $char22 != '#'">
                 <rdawo:P10217 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.aec4-nv40#', $char22)}"/>
             </xsl:when>
         </xsl:choose>
@@ -2323,14 +2323,14 @@
     
     <xsl:template name="F008-c22-23-MP">
         <xsl:param name="char22-23"/>
-        <xsl:if test="not(contains($char22-23, ' ')) and not(contains($char22-23, '|')) and $char22-23 != 'zz'">
+        <xsl:if test="not(contains($char22-23, ' ')) and not(contains($char22-23, '|')) and not(contains($char22-23, '#')) and $char22-23 != 'zz'">
             <rdae:P20216 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.4jrs-m847#', $char22-23)}"/>
         </xsl:if>
     </xsl:template>
     
     <xsl:template name="F008-c22-23-MP-aggWor">
         <xsl:param name="char22-23"/>
-        <xsl:if test="not(contains($char22-23, ' ')) and not(contains($char22-23, '|')) and $char22-23 != 'zz'">
+        <xsl:if test="not(contains($char22-23, ' ')) and not(contains($char22-23, '|')) and not(contains($char22-23, '#')) and $char22-23 != 'zz'">
             <rdawo:P10355 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.4jrs-m847#', $char22-23)}"/>
         </xsl:if>
     </xsl:template>
@@ -2450,7 +2450,7 @@
         <xsl:analyze-string select="$char24-27" regex=".{{1}}">
             <xsl:matching-substring>
                 <xsl:choose>
-                    <xsl:when test=". = ' ' or . = '|' or . = '2' or . = 'b' or . = 'k' or . = 'q'"/>
+                    <xsl:when test=". = ' ' or . = '#' or . = '|' or . = '2' or . = 'b' or . = 'k' or . = 'q'"/>
                     <xsl:when test=". = 'h'">
                         <rdaw:P10004 rdf:resource="{'https://doi.org/10.6069/uwlswd.633m-h220#hx'}"/>
                     </xsl:when>
@@ -2495,7 +2495,7 @@
     
     <xsl:template name="F008-c24-CR">
         <xsl:param name="char24"/>
-        <xsl:if test="$char24 != ' ' and $char24 != '|'">
+        <xsl:if test="$char24 != ' ' and $char24 != '|' and $char24 != '#'">
             <rdaw:P10004 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.jfr5-z647#', $char24)}"/>
         </xsl:if>
     </xsl:template>
@@ -2566,7 +2566,7 @@
         <xsl:param name="char24-29"/>
         <xsl:analyze-string select="$char24-29" regex=".{{1}}">
             <xsl:matching-substring>
-                <xsl:if test=". != ' ' and . != '|' and . != 'n' and . != 'z'">
+                <xsl:if test=". != ' ' and . != '|' and . != 'n' and . != 'z' and . !='#'">
                     <xsl:choose>
                         <xsl:when test=". = 'j'">
                             <rdam:P30455 rdf:resource="{'https://doi.org/10.6069/uwlswd.nt0v-d633#jx'}"/>
@@ -2585,7 +2585,7 @@
         <xsl:analyze-string select="$char25-27" regex=".{{1}}">
             <xsl:matching-substring>
                 <xsl:choose>
-                    <xsl:when test=". = ' ' or . = '|' or . = 'b' or . = 'k' or . = 'q'"/>
+                    <xsl:when test=". = ' ' or . = '|' or . = 'b' or . = 'k' or . = 'q' or .= '#'"/>
                     <xsl:otherwise>
                         <rdaw:P10004 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.cr35-yd51#', .)}"/>
                     </xsl:otherwise>
@@ -2644,14 +2644,14 @@
     
     <xsl:template name="F008-c26-CF">
         <xsl:param name="char26"/>
-        <xsl:if test="$char26 != 'u' and $char26 != 'z' and $char26 != ' ' and $char26 != '|'">
+        <xsl:if test="$char26 != 'u' and $char26 != 'z' and $char26 != ' ' and $char26 != '|' and $char26 != '#'">
             <rdam:P30018 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.mkjn-bp10#', $char26)}"/>
         </xsl:if>
     </xsl:template>
     
     <xsl:template name="F008-c28-SOME">
         <xsl:param name="char28"/>
-        <xsl:if test="$char28 != ' ' and $char28 != '|' and $char28 != 'u'">
+        <xsl:if test="$char28 != ' ' and $char28 != '|' and $char28 != 'u' and $char28 != '#'">
             <xsl:choose>
                 <xsl:when test="$char28 = 'n'">
                     <rdam:P30335 rdf:resource="{'https://doi.org/10.6069/uwlswd.2eg3-1x53#nx'}"/>
@@ -2688,7 +2688,7 @@
         <xsl:param name="char30-31"></xsl:param>
         <xsl:analyze-string select="$char30-31" regex=".{{1}}">
             <xsl:matching-substring>
-                <xsl:if test=". != ' ' and . != '|' and . != 'n' and . != 'z'">
+                <xsl:if test=". != ' ' and . != '|' and . != 'n' and . != 'z' and .!= '#'">
                     <rdaw:P10004 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.23tq-5e25#', .)}"/>
                 </xsl:if>
             </xsl:matching-substring>
@@ -2727,7 +2727,7 @@
     
     <xsl:template name="F008-c33-BK">
         <xsl:param name="char33"/>
-        <xsl:if test="$char33 != 'u' and $char33 != '|' and $char33 != ' '">
+        <xsl:if test="$char33 != 'u' and $char33 != '|' and $char33 != ' ' and $char33 != '#'">
             <rdaw:P10004 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.f447-ax91#', $char33)}"/>
         </xsl:if>
     </xsl:template>
@@ -2899,14 +2899,14 @@
     
     <xsl:template name="F008-c33-MU">
         <xsl:param name="char33"/>
-        <xsl:if test="$char33 != ' ' and $char33 != '|' and $char33 != 'n' and $char33 != 'u' and $char33 != 'z'">
+        <xsl:if test="$char33 != ' ' and $char33 != '|' and $char33 != '#' and $char33 != 'n' and $char33 != 'u' and $char33 != 'z'">
             <rdae:P20331 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.axz0-z371#', $char33)}"/>
         </xsl:if>
     </xsl:template>
     
     <xsl:template name="F008-c33-MU-aggWor" expand-text="yes">
         <xsl:param name="char33"/>
-        <xsl:if test="$char33 != ' ' and $char33 != '|' and $char33 != 'n' and $char33 != 'u' and $char33 != 'z'">
+        <xsl:if test="$char33 != ' ' and $char33 != '|' and $char33 != '#' and $char33 != 'n' and $char33 != 'u' and $char33 != 'z'">
             <rdawd:P10330>
                 <xsl:text>Category of expression: {concat('https://doi.org/10.6069/uwlswd.axz0-z371#', $char33)}</xsl:text>
             </rdawd:P10330>
@@ -3026,5 +3026,5 @@
             </xsl:when>
         </xsl:choose>
     </xsl:template>
-
+    
 </xsl:stylesheet>
