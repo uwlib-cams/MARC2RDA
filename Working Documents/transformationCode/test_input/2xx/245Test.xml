@@ -8,6 +8,7 @@
         <marc:controlfield tag="001">245-test00</marc:controlfield>
         <marc:datafield tag="245" ind1="1" ind2="0">
             <marc:subfield code="a">Countries of the world.</marc:subfield>
+            <marc:subfield code="a">Test</marc:subfield>
             <marc:subfield code="p">Brazil =</marc:subfield>
             <marc:subfield code="b">Countries of the world.</marc:subfield>
             <marc:subfield code="p">Brasil /</marc:subfield>

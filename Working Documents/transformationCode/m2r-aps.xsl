@@ -259,17 +259,19 @@
                 <xsl:copy select="./@ind1"/>
                 <xsl:copy select="./@ind2"/>
                 <xsl:for-each select="child::*">
-                    <xsl:choose>
-                        <xsl:when test="position() = last()">
-                            <marc:subfield>
-                                <xsl:attribute name="code" select="./@code"/>
-                                <xsl:value-of select="m2r:stripEndPunctuation(.)"/>
-                            </marc:subfield>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:copy-of select="."/>
-                        </xsl:otherwise>
-                    </xsl:choose>
+                    <xsl:if test="not(preceding-sibling::marc:subfield[@code='a'] and @code='a')">
+                        <xsl:choose>
+                            <xsl:when test="position() = last()">
+                                <marc:subfield>
+                                    <xsl:attribute name="code" select="./@code"/>
+                                    <xsl:value-of select="m2r:stripEndPunctuation(.)"/>
+                                </marc:subfield>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:copy-of select="."/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:if>
                 </xsl:for-each>
             </xsl:copy>
         </xsl:variable>
