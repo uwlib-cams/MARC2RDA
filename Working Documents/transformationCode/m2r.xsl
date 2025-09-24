@@ -144,8 +144,8 @@
                             <!-- check whether record being processed is an aggregate-->
                             <xsl:variable name="isAggregate">
                                 <!-- WHEN READY TO IMPLEMENT AGGREGATE MARKERS, uncomment next line and comment the xsl:choose below -->
-                                <!--                 <xsl:value-of select="lower-case(m2r:checkAggregates(.))"/>-->
-                                <xsl:choose>
+                                <xsl:value-of select="lower-case(m2r:checkAggregates(.))"/>
+                                <!--<xsl:choose>
                                     <xsl:when
                                         test="marc:datafield[@tag = '979']/marc:subfield[@code = 'a']">
                                         <xsl:value-of
@@ -155,7 +155,7 @@
                                     <xsl:otherwise>
                                         <xsl:value-of select="'sem'"/>
                                     </xsl:otherwise>
-                                </xsl:choose>
+                                </xsl:choose>-->
                             </xsl:variable>
                             <!-- message can be output to show aggregate type -->
                             <!--<xsl:message>
