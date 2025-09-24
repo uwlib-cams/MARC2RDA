@@ -619,8 +619,8 @@
                 replace(., '[\p{P}]+$', '') = replace($item, '[\p{P}]+$', '')
             ]
         </xpath>
-   </pattern>
-   <pattern>
+    </pattern>
+    <pattern>
       <sort>43</sort>
       <id>25</id>
       <name>240 NOT CCT Texts, etc. AND Selections</name>
@@ -649,8 +649,8 @@
             )
             
         </xpath>
-   </pattern>
-   <pattern>
+    </pattern>
+    <pattern>
       <sort>44</sort>
       <id>26</id>
       <name>240 CCT MLA Type AND Selections AND 505 OR Analytical</name>
@@ -675,8 +675,8 @@
             )
             
         </xpath>
-   </pattern>
-   <pattern>
+    </pattern>
+    <pattern>
       <sort>45</sort>
       <id>28</id>
       <name>240 CCT MLA Medium AND Selections AND 505 OR Analytical</name>
@@ -701,8 +701,8 @@
             )
             
         </xpath>
-   </pattern>
-   <pattern>
+    </pattern>
+    <pattern>
       <sort>46</sort>
       <id>39</id>
       <name>245$c arranged NOT Music</name>
@@ -829,8 +829,8 @@
                 ]
             )
         </xpath>
-   </pattern>
-   <pattern>
+    </pattern>
+    <pattern>
       <sort>54</sort>
       <id>142</id>
       <name>655$a Collection terms (Usually)</name>
@@ -840,12 +840,12 @@
                 marc:datafield[@tag='655'][
                     not(marc:subfield[@code='x' or @code='v'])
                     and
-                    (some $item in $ListV650a_655aCollectionTermsUsually satisfies contains(marc:subfield[@code='a'], $item))
+                    (some $item in $ListV650a_655aCollectionTermsUsually satisfies matches(marc:subfield[@code='a'], $item))
                 ]
             )
         </xpath>
-   </pattern>
-   <pattern>
+    </pattern>
+    <pattern>
       <sort>55</sort>
       <id>48</id>
       <name>650$a Collection terms</name>
@@ -890,30 +890,30 @@
                 ]
             )
         </xpath>
-   </pattern>
-   <pattern>
+    </pattern>
+    <pattern>
       <sort>57</sort>
       <id>144</id>
       <name>650$v Collection terms (Usually)</name>
       <type>CAM</type>
       <xpath>
             some $item in $ListV650v655vCollectionTermsUsually satisfies marc:datafield[@tag='650']/marc:subfield[@code='v'][
-                replace(., '[\p{P}]+$', '') = replace($item, '[\p{P}]+$', '')
+                matches(., $item, 'i')
             ] 
         </xpath>
-   </pattern>
-   <pattern>
+    </pattern>
+    <pattern>
       <sort>58</sort>
       <id>145</id>
       <name>650$v Collection terms</name>
       <type>CAM</type>
       <xpath>
             some $item in $ListV650v655vCollectionTerms satisfies marc:datafield[@tag='650']/marc:subfield[@code='v'][
-                replace(., '[\p{P}]+$', '') = replace($item, '[\p{P}]+$', '')
+                matches(., $item, 'i')
             ] 
         </xpath>
-   </pattern>
-   <pattern>
+    </pattern>
+    <pattern>
       <sort>59</sort>
       <id>53</id>
       <name>008-BK Content Collection</name>
@@ -1755,10 +1755,12 @@
             exists(marc:datafield[@tag='811'])
             or
             exists(marc:datafield[@tag='830'])
+            or
+            exists(marc:datafield[@tag='440'])
             )
       </xpath>
-   </pattern>
-    <pattern>
+    </pattern>
+   <pattern>
         <sort>93</sort>
         <id>195</id>
         <name>504 present AAM</name>
@@ -1784,7 +1786,7 @@
             exists(marc:datafield[@tag='504'])
         </xpath>
    </pattern>
-    <pattern>
+   <pattern>
         <sort>95</sort>
         <id>196</id>
         <name>008 BK Index AAM</name>
@@ -1839,7 +1841,7 @@
                 substring(marc:controlfield[@tag='008'], 32, 1) = '1'
             )
         </xpath>
-   </pattern>
+    </pattern>
     <pattern>
         <sort>97</sort>
         <id>197</id>
@@ -1875,7 +1877,7 @@
             or exists(marc:datafield[@tag='730']))
         </xpath>
     </pattern>
-   <pattern>
+    <pattern>
       <sort>98</sort>
       <id>103</id>
       <name>500 Index, bibliog, etc.</name>
@@ -1901,7 +1903,7 @@
                 ]
             )
         </xpath>
-   </pattern>
+    </pattern>
     <pattern>
         <sort>99</sort>
         <id>198</id>
@@ -1944,7 +1946,7 @@
             or exists(marc:datafield[@tag='730']))
         </xpath>
     </pattern>
-   <pattern>
+    <pattern>
       <sort>100</sort>
       <id>110</id>
       <name>500$a Includes</name>
@@ -1977,7 +1979,7 @@
                 ]
             )
         </xpath>
-   </pattern>
+    </pattern>
     <pattern>
         <sort>101</sort>
         <id>199</id>
@@ -2020,7 +2022,7 @@
             or exists(marc:datafield[@tag='730']))
         </xpath>
     </pattern>
-   <pattern>
+    <pattern>
       <sort>102</sort>
       <id>111</id>
       <name>500$a Accompanied by</name>
@@ -2053,7 +2055,7 @@
                 ]
             )
         </xpath>
-   </pattern>
+    </pattern>
     <pattern>
         <sort>103</sort>
         <id>200</id>
@@ -2096,7 +2098,7 @@
             or exists(marc:datafield[@tag='730']))
         </xpath>
     </pattern>
-   <pattern>
+    <pattern>
       <sort>104</sort>
       <id>194</id>
       <name>500$a With</name>
@@ -2129,7 +2131,7 @@
                 ]
             )
         </xpath>
-   </pattern>
+    </pattern>
     <pattern>
         <sort>105</sort>
         <id>201</id>
@@ -2147,7 +2149,7 @@
             or exists(marc:datafield[@tag='730']))
         </xpath>
     </pattern>
-   <pattern>
+    <pattern>
       <sort>106</sort>
       <id>106</id>
       <name>300$b Supplementary content</name>
@@ -2155,7 +2157,7 @@
       <xpath>
             some $item in $List300bSuppCont satisfies marc:datafield[@tag='300']/marc:subfield[@code='b'][contains(lower-case(.), $item)] 
         </xpath>
-   </pattern>
+    </pattern>
     <pattern>
         <sort>107</sort>
         <id>202</id>
@@ -2173,7 +2175,7 @@
             or exists(marc:datafield[@tag='730']))
         </xpath>
     </pattern>
-   <pattern>
+    <pattern>
       <sort>108</sort>
       <id>107</id>
       <name>300$a Supplementary content</name>
@@ -2181,7 +2183,7 @@
       <xpath>
             some $item in $List300aSuppCont satisfies marc:datafield[@tag='300']/marc:subfield[@code='a'][contains(lower-case(.), $item)] 
         </xpath>
-   </pattern>
+    </pattern>
     <pattern>
         <sort>109</sort>
         <id>203</id>
@@ -2199,7 +2201,7 @@
             or exists(marc:datafield[@tag='730']))
         </xpath>
     </pattern>
-   <pattern>
+    <pattern>
       <sort>110</sort>
       <id>112</id>
       <name>245$c Introduction, etc.</name>
@@ -2207,7 +2209,7 @@
       <xpath>
             some $item in $List245cIntroductionTerms satisfies marc:datafield[@tag='245']/marc:subfield[@code='c'][contains(lower-case(.), $item)] 
         </xpath>
-   </pattern>
+    </pattern>
     <pattern>
         <sort>111</sort>
         <id>204</id>
@@ -2239,7 +2241,7 @@
             or exists(marc:datafield[@tag='730']))
         </xpath>
     </pattern>
-   <pattern>
+    <pattern>
       <sort>112</sort>
       <id>114</id>
       <name>65X$a Sound books, etc.</name>
@@ -2261,7 +2263,7 @@
                 ]
             )
         </xpath>
-   </pattern>
+    </pattern>
     <pattern>
         <sort>113</sort>
         <id>205</id>
@@ -2285,7 +2287,7 @@
             or exists(marc:datafield[@tag='730']))
         </xpath>
     </pattern>
-   <pattern>
+    <pattern>
       <sort>114</sort>
       <id>115</id>
       <name>65X$a Monologues with music, etc.</name>
@@ -2299,7 +2301,7 @@
                 ]
             )
         </xpath>
-   </pattern>
+    </pattern>
     <pattern>
         <sort>115</sort>
         <id>206</id>
@@ -2326,7 +2328,7 @@
             or exists(marc:datafield[@tag='730']))
         </xpath>
     </pattern>
-   <pattern>
+    <pattern>
       <sort>116</sort>
       <id>117</id>
       <name>041 Accompanying, etc.</name>
@@ -2343,7 +2345,7 @@
                 ]
             )
         </xpath>
-   </pattern>
+    </pattern>
     <pattern>
         <sort>117</sort>
         <id>207</id>
@@ -2370,7 +2372,7 @@
             or exists(marc:datafield[@tag='730']))
         </xpath>
     </pattern>
-   <pattern>
+    <pattern>
       <sort>118</sort>
       <id>119</id>
       <name>008 MU Accompanying material</name>
