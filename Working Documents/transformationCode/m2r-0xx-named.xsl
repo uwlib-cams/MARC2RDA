@@ -188,25 +188,39 @@
     </xsl:template>
 
     <!-- 045 -->
-    <xsl:template name="F045-xx-abc">
+    <!--<xsl:template name="F045-xx-abc">
         <xsl:param name="baseID"/>
-        <xsl:param name="context"/>
+        <xsl:variable name="ldr6" select="substring(preceding-sibling::marc:leader, 7, 1)"/>
         
-        <!-- IRI for this timespan -->
-        <xsl:variable name="iri" select="m2r:timespanIRI($baseID, $context, '')"/>
+        <!-\- IRI for this timespan -\->
+        <xsl:variable name="iri" select="m2r:timespanIRI($baseID, ., '')"/>
         
-        <!-- Link manifestation → TimeSpan -->
-        <rdamo:P30162 rdf:resource="{$iri}"/>
-        
-        <!-- For subfield $a (time period code) -->
-        <xsl:if test="$context/marc:subfield[@code='a']">
-            <rdawo:P10216 rdf:resource="{$iri}"/>
+        <!-\- For subfield $a (time period code) -\->
+        <xsl:choose>
+            <xsl:when test="matches($ldr6, 'c|j|i')">
+                <xsl:for-each select="marc:subfield[@code = 'a']">
+                    <rdawo:P10219 rdf:resource="{m2r:timespanIRI($baseID, .., .)}"/>
+                </xsl:for-each>
+                <xsl:choose>
+                    <xsl:when test="@ind2 = '0' or @ind2='1'">
+                        <xsl:for-each select="marc:subfield[@code='b']|marc:subfield[@code='c']">
+                            <rdawo:P10219 rdf:resource="{m2r:timespanIRI($baseID, .., .)}"/>
+                        </xsl:for-each>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise>
+                
+            </xsl:otherwise>
+        </xsl:choose>
+        <xsl:if test="marc:subfield[@code='a']">
+            
             <xsl:for-each select="$context/marc:subfield[@code='a']">
                 <rdawo:P10218><xsl:value-of select="normalize-space(.)"/></rdawo:P10218>
             </xsl:for-each>
         </xsl:if>
         
-        <!-- For subfields $b or $c (dates or BCE) -->
+        <!-\- For subfields $b or $c (dates or BCE) -\->
         <xsl:if test="$context/marc:subfield[@code='b'] or $context/marc:subfield[@code='c']">
             <rdawo:P10219 rdf:resource="{$iri}"/>
             <xsl:for-each select="$context/marc:subfield[@code='b' or @code='c']">
@@ -215,7 +229,7 @@
         </xsl:if>
     </xsl:template>    
     
-    <!-- 045 TIMESPAN) -->
+    <!-\- 045 TIMESPAN) -\->
     <xsl:template name="F045-timespan-node">
         <xsl:param name="baseID"/>
         <xsl:param name="context"/>
@@ -224,7 +238,7 @@
         <rdf:Description rdf:about="{$iri}">
             <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
             
-            <!-- Label from $b/$c or fallback to $a codes -->
+            <!-\- Label from $b/$c or fallback to $a codes -\->
             <xsl:variable name="bVals" select="$context/marc:subfield[@code='b']"/>
             <xsl:variable name="cVals" select="$context/marc:subfield[@code='c']"/>
             <xsl:variable name="aVals" select="$context/marc:subfield[@code='a']"/>
@@ -278,7 +292,7 @@
                 <rdatd:P70016><xsl:value-of select="$label"/></rdatd:P70016>
             </xsl:if>
             
-            <!-- If two or more $b values, treat as start/end year -->
+            <!-\- If two or more $b values, treat as start/end year -\->
             <xsl:if test="count($bVals) &gt;= 2">
                 <rdatd:P70039>
                     <xsl:variable name="raw" select="normalize-space($bVals[1])"/>
@@ -294,7 +308,7 @@
                 </rdatd:P70040>
             </xsl:if>
             
-            <!-- Carry codes as provenance notes -->
+            <!-\- Carry codes as provenance notes -\->
             <xsl:for-each select="$aVals">
                 <rdatd:P70045>
                     <xsl:text>Time period code: </xsl:text>
@@ -302,7 +316,7 @@
                 </rdatd:P70045>
             </xsl:for-each>
         </rdf:Description>
-    </xsl:template>
+    </xsl:template>-->
     
     <!--046-->
     <xsl:template name="F046-timespan">

@@ -2745,17 +2745,17 @@
     </xsl:template>
 
     <!-- 045: Time Period of Content -->
-    <xsl:template match="marc:datafield[@tag = '045'] 
+    <!--<xsl:template match="marc:datafield[@tag = '045'] 
         | marc:datafield[@tag = '880'][starts-with(marc:subfield[@code = '6'], '045-00')]"
-        mode="man">
+        mode="wor">
         <xsl:param name="baseID"/>
+        
         <xsl:call-template name="F045-xx-abc">
             <xsl:with-param name="baseID" select="$baseID"/>
-            <xsl:with-param name="context" select="."/>
         </xsl:call-template>
     </xsl:template>
     
-    <!-- TIMESPANS -->
+    <!-\- TIMESPANS -\->
     <xsl:template match="marc:datafield[@tag = '045'] 
         | marc:datafield[@tag = '880'][starts-with(marc:subfield[@code = '6'], '045-00')]"
         mode="tim">
@@ -2766,7 +2766,7 @@
         </xsl:call-template>
     </xsl:template>
     
-    <!-- NOMEN -->
+    <!-\- NOMEN -\->
     <xsl:template match="marc:datafield[@tag = '045']
         | marc:datafield[@tag = '880'][starts-with(marc:subfield[@code = '6'], '045-00')]"
         mode="nom">
@@ -2774,16 +2774,16 @@
         <xsl:variable name="context" select="."/>
         <xsl:variable name="iri" select="m2r:timespanIRI($baseID, $context, '')"/>
         
-        <!-- One Nomen per $a (Time period code) -->
+        <!-\- One Nomen per $a (Time period code) -\->
         <xsl:for-each select="$context/marc:subfield[@code = 'a']">
             <rdf:Description>
-                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10014"/> <!-- Nomen -->
-                <rdan:P80068><xsl:value-of select="normalize-space(.)"/></rdan:P80068> <!-- String value -->
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10014"/> <!-\- Nomen -\->
+                <rdan:P80068><xsl:value-of select="normalize-space(.)"/></rdan:P80068> <!-\- String value -\->
                 <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/timeperiods"/>
-                <rdan:P80067 rdf:resource="{$iri}"/> <!-- Identifies timespan -->
+                <rdan:P80067 rdf:resource="{$iri}"/> <!-\- Identifies timespan -\->
             </rdf:Description>
         </xsl:for-each>
-    </xsl:template>
+    </xsl:template>-->
     
     <!-- 046 Special Coded Dates -->
     <!--WORK-->
