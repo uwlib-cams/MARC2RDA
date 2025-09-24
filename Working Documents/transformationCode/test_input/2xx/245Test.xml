@@ -14,7 +14,8 @@
             <marc:subfield code="p">Brasil /</marc:subfield>
             <marc:subfield code="c">by Adam.</marc:subfield>
         </marc:datafield>
-    </marc:record><marc:record>
+    </marc:record>
+    <marc:record>
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">245-test0</marc:controlfield>
         <marc:datafield tag="245" ind1="1" ind2="0">
@@ -629,6 +630,14 @@
             <marc:subfield code="n">1. Abt. Originale:</marc:subfield>
             <marc:subfield code="n">Reihe B:</marc:subfield>
             <marc:subfield code="p">Hygiene, Krankenhaushygiene, Betriebshygiene, präventive Medizin.</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">245-test66</marc:controlfield>
+        <marc:datafield tag="245" ind1="1" ind2="0">
+            <marc:subfield code="a">Matt's reasearch on double dollar A</marc:subfield>
+            <marc:subfield code="a">Double dollar A</marc:subfield>
         </marc:datafield>
     </marc:record>
 </marc:collection>
