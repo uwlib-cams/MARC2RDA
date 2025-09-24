@@ -204,7 +204,9 @@
         <xsl:param name="isMicroform"/>
         <!--<xsl:call-template name="getmarc"/>-->
         
-        <xsl:variable name="sub3" select="marc:subfield[@code = '3']"/>
+        <xsl:variable name="sub3">
+            <xsl:copy-of select="marc:subfield[@code='3']"/>
+        </xsl:variable>
         
         <xsl:variable name="mappedTriple">
             <xsl:call-template name="F336-337-338">
@@ -292,32 +294,35 @@
         </xsl:for-each>
         
         <xsl:for-each select="$mappedTriple/child::*">
+            <xsl:variable name="triple" select="."/>
             <xsl:if test="$sub3 != ''">
-                <rdamd:P30137>
-                    <xsl:value-of select="concat(
-                        upper-case(substring(normalize-space($sub3), 1, 1)),
-                        substring(normalize-space($sub3), 2)
-                        )"/>
-                    <xsl:choose>
-                        <xsl:when test="contains(name(), '10349') or contains(name(), '20001')">
-                            <xsl:text> has Content type: </xsl:text>
-                        </xsl:when>
-                        <xsl:when test="contains(name(), '30002')">
-                            <xsl:text> has Media type: </xsl:text>
-                        </xsl:when>
-                        <xsl:when test="contains(name(), '30001')">
-                            <xsl:text> has Carrier type: </xsl:text>
-                        </xsl:when>
-                    </xsl:choose>
-                    <xsl:choose>
-                        <xsl:when test="./@rdf:resource">
-                            <xsl:value-of select="@rdf:resource"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:value-of select="text()"/>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </rdamd:P30137>
+                <xsl:for-each select="$sub3/marc:subfield[@code='3']">
+                    <rdamd:P30137>
+                        <xsl:value-of select="concat(
+                            upper-case(substring(normalize-space(.), 1, 1)),
+                            substring(normalize-space(.), 2)
+                            )"/>
+                        <xsl:choose>
+                            <xsl:when test="contains($triple/name(), '10349') or contains($triple/name(), '20001')">
+                                <xsl:text> has Content type: </xsl:text>
+                            </xsl:when>
+                            <xsl:when test="contains($triple/name(), '30002')">
+                                <xsl:text> has Media type: </xsl:text>
+                            </xsl:when>
+                            <xsl:when test="contains($triple/name(), '30001')">
+                                <xsl:text> has Carrier type: </xsl:text>
+                            </xsl:when>
+                        </xsl:choose>
+                        <xsl:choose>
+                            <xsl:when test="$triple/@rdf:resource">
+                                <xsl:value-of select="$triple/@rdf:resource"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="$triple/text()"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </rdamd:P30137>
+                </xsl:for-each>
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
@@ -953,9 +958,9 @@
             <xsl:variable name="linked880">
                 <xsl:if test="@tag = '382' and marc:subfield[@code = '6']">
                     <xsl:variable name="occNum"
-                        select="concat('382-', substring(marc:subfield[@code = '6'], 5, 6))"/>
+                        select="concat('382-', substring(marc:subfield[@code = '6'][1], 5, 6))"/>
                     <xsl:copy-of
-                        select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]"
+                        select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'][1], 1, 6) = $occNum]"
                     />
                 </xsl:if>
             </xsl:variable>
@@ -1194,7 +1199,7 @@
     <xsl:template match="marc:datafield[@tag = '388'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '388']" mode="tim">
         <xsl:param name="baseID"/>
         <!--create variables to test whether s2Nomen output includes IRI and has scheme-->
-        <xsl:variable name="testScheme" select="m2r:s2Nomen(marc:subfield[@code = '2'])"/>
+        <xsl:variable name="testScheme" select="m2r:s2Nomen(marc:subfield[@code = '2'][1])"/>
         <xsl:variable name="schemeElement" select="$testScheme[self::rdan:P80069 or self::rdand:P80069]"/>
         <!--<xsl:call-template name="getmarc"/>--> 
         <xsl:for-each select="marc:subfield[@code = 'a']">
@@ -1203,7 +1208,7 @@
                     <xsl:choose>
                     <!--only mint nomenIRI when $2 has a scheme-->
                         <xsl:when test="$schemeElement/@rdf:resource">
-                            <rdato:P70009 rdf:resource="{m2r:nomenIRI($baseID, .., ., marc:subfield[@code = '2'], 'timespan')}"/>
+                            <rdato:P70009 rdf:resource="{m2r:nomenIRI($baseID, .., ., marc:subfield[@code = '2'][1], 'timespan')}"/>
                         </xsl:when>
                             <!--otherwise use string value of $a-->
                         <xsl:otherwise>
@@ -1214,22 +1219,15 @@
                     </xsl:choose>
             </rdf:Description>
         </xsl:for-each>
-        <xsl:for-each select="marc:subfield[@code = '0']">
-            <xsl:if test="not(starts-with(., 'http://'))">
-                <rdatd:P70018>
-                    <xsl:value-of select="."/>
-                </rdatd:P70018>
-            </xsl:if>
-        </xsl:for-each>
     </xsl:template> 
     
     <xsl:template match="marc:datafield[@tag = '388'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '388']" mode="nom">
         <xsl:param name="baseID"/>
-        <xsl:variable name="testScheme" select="m2r:s2Nomen(marc:subfield[@code = '2'])"/>
+        <xsl:variable name="testScheme" select="m2r:s2Nomen(marc:subfield[@code = '2'][1])"/>
         <xsl:variable name="schemeElement" select="$testScheme[self::rdan:P80069 or self::rdand:P80069]"/>
         <!--<xsl:call-template name="getmarc"/>-->   
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdf:Description rdf:about="{m2r:nomenIRI($baseID, .., ., marc:subfield[@code = '2'], 'timespan')}">       
+            <rdf:Description rdf:about="{m2r:nomenIRI($baseID, .., ., marc:subfield[@code = '2'][1], 'timespan')}">       
                 <rdano:P80068>
                     <xsl:value-of select="."/>
                 </rdano:P80068>

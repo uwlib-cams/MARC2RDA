@@ -43,5 +43,16 @@
             <marc:subfield code="c">Distribution List B-32-91</marc:subfield>
             <marc:subfield code="g">Must be returned to originator after 30 days</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="357" ind1=" " ind2=" ">
+            <marc:subfield code="9">ORIGINATOR DISSEMINATION CONTROL (NR) </marc:subfield>
+            <marc:subfield code="a">Originator control term (NR) </marc:subfield>
+            <marc:subfield code="a">Originator control term (NR) </marc:subfield>
+            <marc:subfield code="b">Originating agency (R) </marc:subfield>
+            <marc:subfield code="b">Originating agency (R) </marc:subfield>
+            <marc:subfield code="c">Authorized recipients of material (R) </marc:subfield>
+            <marc:subfield code="c">Authorized recipients of material (R) </marc:subfield>
+            <marc:subfield code="g">Other restrictions (R) </marc:subfield>
+            <marc:subfield code="g">Other restrictions (R) </marc:subfield>
+        </marc:datafield>
     </marc:record>
 </marc:collection>

@@ -52,5 +52,26 @@
             <marc:subfield code="c">(3,252) ;</marc:subfield>
             <marc:subfield code="g">2.</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="352" ind1=" " ind2=" ">
+            <marc:subfield code="9">DIGITAL GRAPHIC REPRESENTATION (R) </marc:subfield>
+            <marc:subfield code="a">Direct reference method (NR) </marc:subfield>
+            <marc:subfield code="a">Direct reference method (NR) </marc:subfield>
+            <marc:subfield code="b">Object type (R) </marc:subfield>
+            <marc:subfield code="b">Object type (R) </marc:subfield>
+            <marc:subfield code="c">Object count (R) </marc:subfield>
+            <marc:subfield code="c">Object count (R) </marc:subfield>
+            <marc:subfield code="d">Row count (NR) </marc:subfield>
+            <marc:subfield code="d">Row count (NR) </marc:subfield>
+            <marc:subfield code="e">Column count (NR) </marc:subfield>
+            <marc:subfield code="e">Column count (NR) </marc:subfield>
+            <marc:subfield code="f">Vertical count (NR) </marc:subfield>
+            <marc:subfield code="f">Vertical count (NR) </marc:subfield>
+            <marc:subfield code="g">VPF topology level (NR) </marc:subfield>
+            <marc:subfield code="g">VPF topology level (NR) </marc:subfield>
+            <marc:subfield code="i">Indirect reference description (NR) </marc:subfield>
+            <marc:subfield code="i">Indirect reference description (NR) </marc:subfield>
+            <marc:subfield code="q">Format of the digital image (R) </marc:subfield>
+            <marc:subfield code="q">Format of the digital image (R) </marc:subfield>   
+        </marc:datafield>
     </marc:record>
 </marc:collection>

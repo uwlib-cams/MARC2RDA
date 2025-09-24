@@ -49,5 +49,19 @@
             <marc:subfield code="a">Some form of work</marc:subfield>
             <marc:subfield code="2">abcde</marc:subfield>
         </marc:datafield>
+        
+        <marc:datafield tag="380" ind1=" " ind2=" ">
+            <marc:subfield code="9">FORM OF WORK (R) </marc:subfield>
+            <marc:subfield code="a">Form of work (R) </marc:subfield>
+            <marc:subfield code="a">Form of work (R) </marc:subfield>
+            <marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+            <marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+            <marc:subfield code="2">Source of term (NR) </marc:subfield>
+            <marc:subfield code="2">Source of term (NR) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
+        </marc:datafield>
     </marc:record>
 </marc:collection>

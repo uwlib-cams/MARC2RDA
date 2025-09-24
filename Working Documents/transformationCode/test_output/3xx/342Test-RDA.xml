@@ -1,81 +1,114 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
-         xmlns:fake="http://fakePropertiesForDemo"
-         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
-         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
-         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
-         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
-         xmlns:rdae="http://rdaregistry.info/Elements/e/"
-         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
-         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
-         xmlns:rdai="http://rdaregistry.info/Elements/i/"
-         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
-         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
-         xmlns:rdam="http://rdaregistry.info/Elements/m/"
-         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
-         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
-         xmlns:rdan="http://rdaregistry.info/Elements/n/"
-         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
-         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
-         xmlns:rdap="http://rdaregistry.info/Elements/p/"
-         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
-         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
-         xmlns:rdat="http://rdaregistry.info/Elements/t/"
-         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
-         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
-         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
-         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
-         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
-         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:uwf="http://universityOfWashington/functions"
-         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/342-test1wor">
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc342-test1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10002>342-test1wor</rdawd:P10002>
-      <rdaw:P10330>Ellipsoid name: Clarke 1866. Semi-major axis: 6378206.4 M</rdaw:P10330>
+      <rdawd:P10400>342-test1</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc342-test1</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc342-test1"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/342-test1exp">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/342-test1wor"/>
-      <rdaed:P20002>342-test1exp</rdaed:P20002>
-      <fake:marcfield>F342 #1 $a World Geodetic System 1984 (WGS-84) $v Missouri East State Plane NAD27 $q Clarke 1866 $r 6378206.4 M $s 294.97869821</fake:marcfield>
-      <rdae:P20216>World Geodetic System 1984 (WGS-84)</rdae:P20216>
-      <rdae:P20071>Local planar, local, or other projection or grid description: Missouri East State Plane NAD27</rdae:P20071>
-      <rdae:P20071>Denominator of flattening ratio: 294.97869821</rdae:P20071>
-      <fake:marcfield>F342 #2 $a State Plane Coordinate System 27, Lambert Conformal</fake:marcfield>
-      <rdae:P20071>Grid coordinate system: State Plane Coordinate System 27, Lambert Conformal. </rdae:P20071>
-      <fake:marcfield>F342 12 $a Universal Transverse Mercator $p 13 $k 0.9996</fake:marcfield>
-      <rdae:P20071>Grid coordinate system: Universal Transverse Mercator. Zone identifier: 13.</rdae:P20071>
-      <rdae:P20213>Scale factor at central meridian: 0.9996</rdae:P20213>
-      <fake:marcfield>F342 16 $a National geodetic vertical datum of 1929 $v 1 $b meters $w Implicit coordinates.</fake:marcfield>
-      <rdae:P20071>Altitude datum name: National geodetic vertical datum of 1929.</rdae:P20071>
-      <rdae:P20071>Local planar, local, or other projection or grid description: 1</rdae:P20071>
-      <rdae:P20071>Coordinate units or distance units: meters.</rdae:P20071>
-      <rdae:P20071>Local planar or local georeference information: Implicit coordinates.</rdae:P20071>
-      <fake:marcfield>F342 #3 $a NGVD 1929 $f value f $f value f2 $k value k</fake:marcfield>
-      <rdae:P20071>Local planar coordinate system: NGVD 1929.</rdae:P20071>
-      <rdae:P20071>Oblique line longitude: value f; Oblique line longitude: value f2</rdae:P20071>
-      <rdae:P20213>Scale factor: value k</rdae:P20213>
-      <fake:marcfield>F342 01 $a Lambert conformal conic $e 38.3 $e 39.45 $g -77 $h 37.8333 $i 800,000 $j 0</fake:marcfield>
-      <rdae:P20216>Lambert conformal conic</rdae:P20216>
-      <rdae:P20071>False easting: 800,000</rdae:P20071>
-      <rdae:P20071>False northing: 0</rdae:P20071>
-      <rdae:P20071>Standard parallel(s): 38.3; Standard parallel(s): 39.45</rdae:P20071>
-      <rdae:P20071>Longitude of the central meridian: -77</rdae:P20071>
-      <rdae:P20071>Latitude of projection origin: 37.8333</rdae:P20071>
-      <fake:marcfield>F342 18 $a Lowest astronomical tide $b Degrees, Minutes, and Decimal seconds $c 0.0000001 $d 0.0000001 $u Explicit depth coordinate included with horizontal coordinates</fake:marcfield>
-      <rdae:P20071>Depth datum name: Lowest astronomical tide.</rdae:P20071>
-      <rdae:P20071>Coordinate units or distance units: Degrees, Minutes, and Decimal seconds.</rdae:P20071>
-      <rdae:P20071>Latitude resolution: 0.0000001</rdae:P20071>
-      <rdae:P20071>Longitude resolution: 0.0000001</rdae:P20071>
-      <rdae:P20071>Depth encoding method: Explicit depth coordinate included with horizontal coordinates</rdae:P20071>
-      <fake:marcfield>F880 ## $6 342-00 $c value</fake:marcfield>
-      <rdae:P20071>Latitude resolution: value</rdae:P20071>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/342-test1man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc342-test1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/342-test1exp"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc342-test1"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc342-test1</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 342-test1
+F342 #1 $a World Geodetic System 1984 (WGS-84) $v Missouri East State Plane NAD27 $q Clarke 1866 $r 6378206.4 M $s 294.97869821
+F342 #2 $a State Plane Coordinate System 27, Lambert Conformal
+F342 12 $a Universal Transverse Mercator $p 13 $k 0.9996
+F342 16 $a National geodetic vertical datum of 1929 $v 1 $b meters $w Implicit coordinates.
+F342 #3 $a NGVD 1929 $f value f $f value f2 $k value k
+F342 01 $a Lambert conformal conic $e 38.3 $e 39.45 $g -77 $h 37.8333 $i 800,000 $j 0
+F342 18 $a Lowest astronomical tide $b Degrees, Minutes, and Decimal seconds $c 0.0000001 $d 0.0000001 $u Explicit depth coordinate included with horizontal coordinates
+F880 ## $6 342-00 $c value
+F342 ## $9 GEOSPATIAL REFERENCE DATA (R)  $a Name (NR)  $a Name (NR)  $b Coordinate or distance units (NR)  $b Coordinate or distance units (NR)  $c Latitude resolution (NR)  $c Latitude resolution (NR)  $d Longitude resolution (NR)  $d Longitude resolution (NR)  $e Standard parallel or oblique line latitude (R)  $e Standard parallel or oblique line latitude (R)  $f Oblique line longitude (R)  $f Oblique line longitude (R)  $g Longitude of central meridian or projection center (NR)  $g Longitude of central meridian or projection center (NR)  $h Latitude of projection origin or projection center (NR)  $h Latitude of projection origin or projection center (NR)  $i False easting (NR)  $i False easting (NR)  $j False northing (NR)  $j False northing (NR)  $k Scale factor (NR)  $k Scale factor (NR)  $l Height of perspective point above surface (NR)  $l Height of perspective point above surface (NR)  $m Azimuthal angle (NR)  $m Azimuthal angle (NR)  $n Azimuth measure point longitude or straight vertical longitude from pole (NR)  $n Azimuth measure point longitude or straight vertical longitude from pole (NR)  $o Landsat number and path number (NR)  $o Landsat number and path number (NR)  $p Zone identifier (NR)  $p Zone identifier (NR)  $q Ellipsoid name (NR)  $q Ellipsoid name (NR)  $r Semi-major axis (NR)  $r Semi-major axis (NR)  $s Denominator of flattening ratio (NR)  $s Denominator of flattening ratio (NR)  $t Vertical resolution (NR)  $t Vertical resolution (NR)  $u Vertical encoding method (NR)  $u Vertical encoding method (NR)  $v Local planar, local, or other projection or grid description (NR)  $v Local planar, local, or other projection or grid description (NR)  $w Local planar or local georeference information (NR)  $w Local planar or local georeference information (NR)  $2 Reference method used (NR)  $2 Reference method used (NR) 
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc342-test1"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <rdaw:P10330>Ellipsoid name: Clarke 1866. Semi-major axis: 6378206.4 M</rdaw:P10330><!--rdaw:P10330 = has note on work-->
+      <rdaw:P10330>Ellipsoid name: Ellipsoid name (NR)  Ellipsoid name (NR) . Semi-major axis: Semi-major axis (NR)  Semi-major axis (NR) </rdaw:P10330><!--rdaw:P10330 = has note on work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc342-test1"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaed:P20216>World Geodetic System 1984 (WGS-84)</rdaed:P20216><!--rdaed:P20216 = has projection of cartographic content-->
+      <rdaed:P20071>Local planar, local, or other projection or grid description: Missouri East State Plane NAD27</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Denominator of flattening ratio: 294.97869821</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Grid coordinate system: State Plane Coordinate System 27, Lambert Conformal. </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Grid coordinate system: Universal Transverse Mercator. Zone identifier: 13.</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20213>Scale factor at central meridian: 0.9996</rdaed:P20213><!--rdaed:P20213 = has additional scale information-->
+      <rdaed:P20071>Altitude datum name: National geodetic vertical datum of 1929.</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Local planar, local, or other projection or grid description: 1</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Coordinate units or distance units: meters.</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Local planar or local georeference information: Implicit coordinates.</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Local planar coordinate system: NGVD 1929.</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Oblique line longitude: value f; Oblique line longitude: value f2</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20213>Scale factor: value k</rdaed:P20213><!--rdaed:P20213 = has additional scale information-->
+      <rdaed:P20216>Lambert conformal conic</rdaed:P20216><!--rdaed:P20216 = has projection of cartographic content-->
+      <rdaed:P20071>False easting: 800,000</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>False northing: 0</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Standard parallel(s): 38.3; Standard parallel(s): 39.45</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Longitude of the central meridian: -77</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Latitude of projection origin: 37.8333</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Depth datum name: Lowest astronomical tide.</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Coordinate units or distance units: Degrees, Minutes, and Decimal seconds.</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Latitude resolution: 0.0000001</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Longitude resolution: 0.0000001</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Depth encoding method: Explicit depth coordinate included with horizontal coordinates</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Latitude resolution: value</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Coordinate units or distance units: Coordinate or distance units (NR) .</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Coordinate units or distance units: Coordinate or distance units (NR) .</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Latitude resolution: Latitude resolution (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Latitude resolution: Latitude resolution (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Longitude resolution: Longitude resolution (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Longitude resolution: Longitude resolution (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Height of perspective point above surface: Height of perspective point above surface (NR)  meters</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Height of perspective point above surface: Height of perspective point above surface (NR)  meters</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Azimuthal angle: Azimuthal angle (NR)  degrees</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Azimuthal angle: Azimuthal angle (NR)  degrees</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Landsat number and path number: Landsat number and path number (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Landsat number and path number: Landsat number and path number (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Denominator of flattening ratio: Denominator of flattening ratio (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Denominator of flattening ratio: Denominator of flattening ratio (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Local planar, local, or other projection or grid description: Local planar, local, or other projection or grid description (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Local planar, local, or other projection or grid description: Local planar, local, or other projection or grid description (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Azimuth measure point longitude or straight vertical longitude from pole: Azimuth measure point longitude or straight vertical longitude from pole (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Azimuth measure point longitude or straight vertical longitude from pole: Azimuth measure point longitude or straight vertical longitude from pole (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Oblique line longitude: Oblique line longitude (R) ; Oblique line longitude: Oblique line longitude (R) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>False easting: False easting (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>False easting: False easting (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>False northing: False northing (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>False northing: False northing (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Vertical resolution: Vertical resolution (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Vertical resolution: Vertical resolution (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Vertical encoding method: Vertical encoding method (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Vertical encoding method: Vertical encoding method (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Local planar or local georeference information: Local planar or local georeference information (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Local planar or local georeference information: Local planar or local georeference information (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Standard parallel(s) or oblique line latitude(s): Standard parallel or oblique line latitude (R) ;</rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Standard parallel(s) or oblique line latitude(s): Standard parallel or oblique line latitude (R) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Longitude of the central meridian or projection center: Longitude of central meridian or projection center (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Longitude of the central meridian or projection center: Longitude of central meridian or projection center (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Latitude of projection center or projection origin: Latitude of projection origin or projection center (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20071>Latitude of projection center or projection origin: Latitude of projection origin or projection center (NR) </rdaed:P20071><!--rdaed:P20071 = has note on expression-->
+      <rdaed:P20213>Scale factor: Scale factor (NR) </rdaed:P20213><!--rdaed:P20213 = has additional scale information-->
+      <rdaed:P20213>Scale factor: Scale factor (NR) </rdaed:P20213><!--rdaed:P20213 = has additional scale information-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc342-test1"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
    </rdf:Description>
 </rdf:RDF>

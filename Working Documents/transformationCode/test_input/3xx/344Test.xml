@@ -102,5 +102,45 @@
         <marc:datafield tag="344" ind1=" " ind2=" ">
             <marc:subfield code="1">http://rdaregistry.info/termList/soundCont/1002</marc:subfield>
         </marc:datafield>
+        
+        <marc:datafield tag="344" ind1=" " ind2=" ">
+            <marc:subfield code="9">SOUND CHARACTERISTICS (R) </marc:subfield>
+            <marc:subfield code="a">Type of recording (R) </marc:subfield>
+            <marc:subfield code="a">Type of recording (R) </marc:subfield>
+            <marc:subfield code="b">Recording medium (R) </marc:subfield>
+            <marc:subfield code="b">Recording medium (R) </marc:subfield>
+            <marc:subfield code="c">Playing speed (R) </marc:subfield>
+            <marc:subfield code="c">Playing speed (R) </marc:subfield>
+            <marc:subfield code="d">Groove characteristic (R) </marc:subfield>
+            <marc:subfield code="d">Groove characteristic (R) </marc:subfield>
+            <marc:subfield code="e">Track configuration (R) </marc:subfield>
+            <marc:subfield code="e">Track configuration (R) </marc:subfield>
+            <marc:subfield code="f">Tape configuration (R) </marc:subfield>
+            <marc:subfield code="f">Tape configuration (R) </marc:subfield>
+            <marc:subfield code="g">Configuration of playback channels (R) </marc:subfield>
+            <marc:subfield code="g">Configuration of playback channels (R) </marc:subfield>
+            <marc:subfield code="h">Special playback characteristics (R) </marc:subfield>
+            <marc:subfield code="h">Special playback characteristics (R) </marc:subfield>
+            <marc:subfield code="i">Sound content (R) </marc:subfield>
+            <marc:subfield code="i">Sound content (R) </marc:subfield>
+            <marc:subfield code="j">Original capture and storage technique (R) </marc:subfield>
+            <marc:subfield code="j">Original capture and storage technique (R) </marc:subfield>
+            <marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+            <marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+            <marc:subfield code="2">Source (NR) </marc:subfield>
+            <marc:subfield code="2">Source (NR) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="344" ind1=" " ind2=" ">
+            <marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+            <marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="344" ind1=" " ind2=" ">
+            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+        </marc:datafield>
     </marc:record>
 </marc:collection>

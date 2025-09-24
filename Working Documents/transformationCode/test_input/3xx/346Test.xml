@@ -6,7 +6,7 @@
         <marc:leader>11111nam a2200553ui 4500</marc:leader>
         <marc:controlfield tag="001">346-test1</marc:controlfield>
         
-<!--        <marc:datafield tag="346" ind1=" " ind2=" ">
+        <marc:datafield tag="346" ind1=" " ind2=" ">
             <marc:subfield code="a">Beta</marc:subfield>
             <marc:subfield code="3">test 3</marc:subfield>
         </marc:datafield>
@@ -14,37 +14,37 @@
         <marc:datafield tag="346" ind1=" " ind2=" ">
             <marc:subfield code="b">NTSC</marc:subfield>
             <marc:subfield code="3">test 3</marc:subfield>
-        </marc:datafield>-->
+        </marc:datafield>
         
-<!--        <marc:datafield tag="346" ind1=" " ind2=" ">
+        <marc:datafield tag="346" ind1=" " ind2=" ">
             <marc:subfield code="a">VHS</marc:subfield>
             <marc:subfield code="2">rdavf</marc:subfield>
             <marc:subfield code="3">test 3</marc:subfield>
-        </marc:datafield>-->
+        </marc:datafield>
         
-<!--        <marc:datafield tag="346" ind1=" " ind2=" ">
+        <marc:datafield tag="346" ind1=" " ind2=" ">
             <marc:subfield code="b">NTSC</marc:subfield>
             <marc:subfield code="2">rdabs</marc:subfield>
             <marc:subfield code="0">(uri)http://rdaregistry.info/termList/broadcastStand/1002</marc:subfield>
             <marc:subfield code="3">fake 3</marc:subfield>
-        </marc:datafield>-->
+        </marc:datafield>
         
-<!--        <marc:datafield tag="346" ind1=" " ind2=" ">
+        <marc:datafield tag="346" ind1=" " ind2=" ">
             <marc:subfield code="3">videodisc</marc:subfield>
             <marc:subfield code="b">NTSC</marc:subfield>
             <marc:subfield code="2">rdabs</marc:subfield>
-        </marc:datafield>-->
+        </marc:datafield>
         
-<!--        <marc:datafield tag="346" ind1=" " ind2=" ">
+        <marc:datafield tag="346" ind1=" " ind2=" ">
             <marc:subfield code="a">laser optical</marc:subfield>
             <marc:subfield code="0">testzero</marc:subfield>
-        </marc:datafield>-->
+        </marc:datafield>
         
-<!--        <marc:datafield tag="880" ind1=" " ind2=" ">
+        <marc:datafield tag="880" ind1=" " ind2=" ">
             <marc:subfield code="6">346-00</marc:subfield>
             <marc:subfield code="b">NTSC</marc:subfield>
             <marc:subfield code="1">http://rdaregistry.info/termList/broadcastStand/1002</marc:subfield>
-        </marc:datafield>-->
+        </marc:datafield>
         
         <marc:datafield tag="346" ind1=" " ind2=" ">
             <marc:subfield code="6">880-01</marc:subfield>
@@ -56,6 +56,32 @@
             <marc:subfield code="6">346-01</marc:subfield>
             <marc:subfield code="b">test 880</marc:subfield>
             <marc:subfield code="2">source</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="346" ind1=" " ind2=" ">
+            <marc:subfield code="9">VIDEO CHARACTERISTICS (R) </marc:subfield>
+            <marc:subfield code="a">Video format (R) </marc:subfield>
+            <marc:subfield code="a">Video format (R) </marc:subfield>
+            <marc:subfield code="b">Broadcast standard (R) </marc:subfield>
+            <marc:subfield code="b">Broadcast standard (R) </marc:subfield>
+            <marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+            <marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+            <marc:subfield code="2">Source (NR) </marc:subfield>
+            <marc:subfield code="2">Source (NR) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="346" ind1=" " ind2=" ">
+            <marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+            <marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="346" ind1=" " ind2=" ">
+            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
         </marc:datafield>
         
     </marc:record>

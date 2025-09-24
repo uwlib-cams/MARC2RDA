@@ -7,7 +7,7 @@
         <marc:controlfield tag="001">347-test1</marc:controlfield>
         
         
-<!--        <marc:datafield tag="347" ind1=" " ind2=" ">
+        <marc:datafield tag="347" ind1=" " ind2=" ">
             <marc:subfield code="a">audio file</marc:subfield>
             <marc:subfield code="2">rdaft</marc:subfield>
             <marc:subfield code="3">test 3</marc:subfield>
@@ -30,7 +30,7 @@
         <marc:datafield tag="880" ind1=" " ind2=" ">
             <marc:subfield code="6">347-00</marc:subfield>
             <marc:subfield code="f">32 kbps</marc:subfield>
-        </marc:datafield>-->
+        </marc:datafield>
         
         <marc:datafield tag="347" ind1=" " ind2=" ">
             <marc:subfield code="a">audio file</marc:subfield>
@@ -53,6 +53,41 @@
         <marc:datafield tag="347" ind1=" " ind2=" ">
             <marc:subfield code="e">all regions</marc:subfield>
             <marc:subfield code="0">(uri)http://rdaregistry.info/termList/RDARegionalEncoding/1001</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="347" ind1=" " ind2=" ">
+            <marc:subfield code="9">DIGITAL FILE CHARACTERISTICS (R) </marc:subfield>
+            <marc:subfield code="a">File type (R) </marc:subfield>
+            <marc:subfield code="a">File type (R) </marc:subfield>
+            <marc:subfield code="b">Encoding format (R) </marc:subfield>
+            <marc:subfield code="b">Encoding format (R) </marc:subfield>
+            <marc:subfield code="c">File size (R) </marc:subfield>
+            <marc:subfield code="c">File size (R) </marc:subfield>
+            <marc:subfield code="d">Resolution (R) </marc:subfield>
+            <marc:subfield code="d">Resolution (R) </marc:subfield>
+            <marc:subfield code="e">Regional encoding (R) </marc:subfield>
+            <marc:subfield code="e">Regional encoding (R) </marc:subfield>
+            <marc:subfield code="f">Encoded bitrate (R) </marc:subfield>
+            <marc:subfield code="f">Encoded bitrate (R) </marc:subfield>
+            <marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+            <marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+            <marc:subfield code="2">Source (NR) </marc:subfield>
+            <marc:subfield code="2">Source (NR) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="347" ind1=" " ind2=" ">
+            <marc:subfield code="0">http://Authority record control number or standard number (R) </marc:subfield>
+            <marc:subfield code="0">http://Authority record control number or standard number (R) </marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="347" ind1=" " ind2=" ">
+            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
         </marc:datafield>
     </marc:record>
 </marc:collection>

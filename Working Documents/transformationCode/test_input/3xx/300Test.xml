@@ -40,12 +40,6 @@
             <marc:subfield code="g">Size of unit (R) </marc:subfield>
             <marc:subfield code="3">Materials specified (NR) </marc:subfield>
             <marc:subfield code="3">Materials specified (NR) </marc:subfield>
-            <marc:subfield code="6">Linkage (NR) </marc:subfield>
-            <marc:subfield code="6">Linkage (NR) </marc:subfield>
-            <marc:subfield code="7">Data provenance (R) </marc:subfield>
-            <marc:subfield code="7">Data provenance (R) </marc:subfield>
-            <marc:subfield code="8">Field link and sequence number (R)</marc:subfield>
-            <marc:subfield code="8">Field link and sequence number (R)</marc:subfield>
         </marc:datafield>
     </marc:record>
 </marc:collection>

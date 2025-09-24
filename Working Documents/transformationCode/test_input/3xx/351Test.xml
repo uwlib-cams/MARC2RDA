@@ -26,5 +26,16 @@
             <marc:subfield code="b">test 880</marc:subfield>
         </marc:datafield>
         
+        <marc:datafield tag="351" ind1=" " ind2=" ">
+            <marc:subfield code="9">ORGANIZATION AND ARRANGEMENT OF MATERIALS (R) </marc:subfield>
+            <marc:subfield code="a">Organization (R) </marc:subfield>
+            <marc:subfield code="a">Organization (R) </marc:subfield>
+            <marc:subfield code="b">Arrangement (R) </marc:subfield>
+            <marc:subfield code="b">Arrangement (R) </marc:subfield>
+            <marc:subfield code="c">Hierarchical level (NR) </marc:subfield>
+            <marc:subfield code="c">Hierarchical level (NR) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
+        </marc:datafield>
     </marc:record>
 </marc:collection>

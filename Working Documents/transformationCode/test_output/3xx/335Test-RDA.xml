@@ -1,64 +1,116 @@
-<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/335-test1wor">
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc335-test1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/335-test1exp"/><!--rdawo:P10078 = has expression of work-->
-      <rdawd:P10002>335-test1wor</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
-      <fake:marcfield>F335 ## $a static plan $2 rdaep $3 test3</fake:marcfield>
+      <rdawd:P10400>335-test1</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc335-test1</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc335-test1"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc335-test1">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc335-test1"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc335-test1</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 335-test1
+F335 ## $a static plan $2 rdaep $3 test3
+F335 ## $a integrating determinate plan $b 1002 $2 rdaep $3 test3
+F335 ## $1 http://rdaregistry.info/termList/RDAExtensionPlan/1003 $3 test3
+F335 ## $a successive determinate plan $2 rdaep $0 http://rdaregistry.info/termList/RDAExtensionPlan/1004 $3 test3
+F335 ## $a static plan $2 rdaep $0 test $3 test3
+F335 ## $a static plan $3 test3
+F335 ## $b 1001 $3 test3
+F335 ## $6 880-01 $a successive indeterminate plan $2 rdaep $3 test3
+F880 ## $6 335-01 $a successive indeterminate plan $2 rdaep $3 test3
+F880 ## $6 335-00 $a static plan $2 rdaep $3 test3
+F335 ## $a made up test $b 1 $2 lcgft $3 test3
+F335 ## $a made up test 2 $2 lcgft $3 test3
+F335 ## $9 EXTENSION PLAN (R)  $a Extension plan term (NR)  $a Extension plan term (NR)  $b Extension plan code (NR)  $b Extension plan code (NR)  $2 Source (NR)  $2 Source (NR)  $3 Materials specified (NR)  $3 Materials specified (NR) 
+F335 ## $0 Authority record control number or standard number (R)  $0 Authority record control number or standard number (R)  $3 Materials specified (NR)  $3 Materials specified (NR) 
+F335 ## $0 http://Authority record control number or standard number (R)  $0 http://Authority record control number or standard number (R)  $3 Materials specified (NR)  $3 Materials specified (NR) 
+F335 ## $1 Real World Object URI (R)  $1 Real World Object URI (R)  $3 Materials specified (NR)  $3 Materials specified (NR) 
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc335-test1"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
       <rdaw:P10365 rdf:resource="http://rdaregistry.info/termList/RDAExtensionPlan/1001"/><!--rdaw:P10365 = has extension plan-->
       <rdawd:P10330>Extension plan http://rdaregistry.info/termList/RDAExtensionPlan/1001 applies to the work's test3</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <fake:marcfield>F335 ## $a integrating determinate plan $b 1002 $2 rdaep $3 test3</fake:marcfield>
       <rdaw:P10365 rdf:resource="http://rdaregistry.info/termList/RDAExtensionPlan/1002"/><!--rdaw:P10365 = has extension plan-->
       <rdawd:P10330>Extension plan http://rdaregistry.info/termList/RDAExtensionPlan/1002 applies to the work's test3</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <fake:marcfield>F335 ## $1 http://rdaregistry.info/termList/RDAExtensionPlan/1003 $3 test3</fake:marcfield>
       <rdaw:P10365 rdf:resource="http://rdaregistry.info/termList/RDAExtensionPlan/1003"/><!--rdaw:P10365 = has extension plan-->
       <rdawd:P10330>Extension plan http://rdaregistry.info/termList/RDAExtensionPlan/1003 applies to the work's test3</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <fake:marcfield>F335 ## $a successive determinate plan $2 rdaep $0 http://rdaregistry.info/termList/RDAExtensionPlan/1004 $3 test3</fake:marcfield>
       <rdaw:P10365 rdf:resource="http://rdaregistry.info/termList/RDAExtensionPlan/1004"/><!--rdaw:P10365 = has extension plan-->
       <rdawd:P10330>Extension plan http://rdaregistry.info/termList/RDAExtensionPlan/1004 applies to the work's test3</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <fake:marcfield>F335 ## $a static plan $2 rdaep $0 test $3 test3</fake:marcfield>
       <rdaw:P10365 rdf:resource="http://rdaregistry.info/termList/RDAExtensionPlan/1001"/><!--rdaw:P10365 = has extension plan-->
       <rdawd:P10330>Extension plan http://rdaregistry.info/termList/RDAExtensionPlan/1001 applies to the work's test3</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <fake:marcfield>F335 ## $a static plan $3 test3</fake:marcfield>
       <rdawd:P10365>static plan</rdawd:P10365><!--rdawd:P10365 = has extension plan-->
       <rdawd:P10330>Extension plan static plan applies to the work's test3</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <fake:marcfield>F335 ## $b 1001 $3 test3</fake:marcfield>
       <rdawd:P10365>1001</rdawd:P10365><!--rdawd:P10365 = has extension plan-->
       <rdawd:P10330>Extension plan 1001 applies to the work's test3</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <fake:marcfield>F335 ## $6 880-01 $a successive indeterminate plan $2 rdaep $3 test3</fake:marcfield>
       <rdaw:P10365 rdf:resource="http://rdaregistry.info/termList/RDAExtensionPlan/1005"/><!--rdaw:P10365 = has extension plan-->
       <rdawd:P10330>Extension plan http://rdaregistry.info/termList/RDAExtensionPlan/1005 applies to the work's test3</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <fake:marcfield>F880 ## $6 335-01 $a successive indeterminate plan $2 rdaep $3 test3</fake:marcfield>
       <rdaw:P10365 rdf:resource="http://rdaregistry.info/termList/RDAExtensionPlan/1005"/><!--rdaw:P10365 = has extension plan-->
       <rdawd:P10330>Extension plan http://rdaregistry.info/termList/RDAExtensionPlan/1005 applies to the work's test3</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <fake:marcfield>F880 ## $6 335-00 $a static plan $2 rdaep $3 test3</fake:marcfield>
       <rdaw:P10365 rdf:resource="http://rdaregistry.info/termList/RDAExtensionPlan/1001"/><!--rdaw:P10365 = has extension plan-->
       <rdawd:P10330>Extension plan http://rdaregistry.info/termList/RDAExtensionPlan/1001 applies to the work's test3</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <fake:marcfield>F335 ## $a made up test $b 1 $2 lcgft $3 test3</fake:marcfield>
       <rdaw:P10365 rdf:resource="http://marc2rda.edu/fake/lcgft/con#madeuptest"/><!--rdaw:P10365 = has extension plan-->
       <rdawd:P10330>Extension plan http://marc2rda.edu/fake/lcgft/con#madeuptest applies to the work's test3</rdawd:P10330><!--rdawd:P10330 = has note on work-->
-      <fake:marcfield>F335 ## $a made up test 2 $2 lcgft $3 test3</fake:marcfield>
       <rdaw:P10365 rdf:resource="http://marc2rda.edu/fake/lcgft/con#madeuptest2"/><!--rdaw:P10365 = has extension plan-->
       <rdawd:P10330>Extension plan http://marc2rda.edu/fake/lcgft/con#madeuptest2 applies to the work's test3</rdawd:P10330><!--rdawd:P10330 = has note on work-->
+      <rdaw:P10365 rdf:resource="http://marc2rda.edu/fake/sourcenr/con#extensionplantermnr"/><!--rdaw:P10365 = has extension plan-->
+      <rdawd:P10330>Extension plan http://marc2rda.edu/fake/sourcenr/con#extensionplantermnr applies to the work's Materials specified (NR)  Materials specified (NR) </rdawd:P10330><!--rdawd:P10330 = has note on work-->
+      <rdaw:P10365 rdf:resource="http://marc2rda.edu/fake/sourcenr/con#extensionplantermnr"/><!--rdaw:P10365 = has extension plan-->
+      <rdawd:P10330>Extension plan http://marc2rda.edu/fake/sourcenr/con#extensionplantermnr applies to the work's Materials specified (NR)  Materials specified (NR) </rdawd:P10330><!--rdawd:P10330 = has note on work-->
+      <rdaw:P10365 rdf:resource="http://Authority record control number or standard number (R) "/><!--rdaw:P10365 = has extension plan-->
+      <rdawd:P10330>Extension plan http://Authority record control number or standard number (R)  applies to the work's Materials specified (NR)  Materials specified (NR) </rdawd:P10330><!--rdawd:P10330 = has note on work-->
+      <rdaw:P10365 rdf:resource="http://Authority record control number or standard number (R) "/><!--rdaw:P10365 = has extension plan-->
+      <rdawd:P10330>Extension plan http://Authority record control number or standard number (R)  applies to the work's Materials specified (NR)  Materials specified (NR) </rdawd:P10330><!--rdawd:P10330 = has note on work-->
+      <rdaw:P10365 rdf:resource="Real World Object URI (R) "/><!--rdaw:P10365 = has extension plan-->
+      <rdawd:P10330>Extension plan Real World Object URI (R)  applies to the work's Materials specified (NR)  Materials specified (NR) </rdawd:P10330><!--rdawd:P10330 = has note on work-->
+      <rdaw:P10365 rdf:resource="Real World Object URI (R) "/><!--rdaw:P10365 = has extension plan-->
+      <rdawd:P10330>Extension plan Real World Object URI (R)  applies to the work's Materials specified (NR)  Materials specified (NR) </rdawd:P10330><!--rdawd:P10330 = has note on work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/335-test1exp">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/335-test1man"/><!--rdaeo:P20059 = has manifestation of expression-->
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/335-test1wor"/><!--rdaeo:P20231 = has work expressed-->
-      <rdaed:P20002>335-test1exp</rdaed:P20002><!--rdaed:P20002 = has identifier for expression-->
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc335-test1"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/335-test1man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/335-test1exp"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc335-test1"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#madeuptest">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>made up test</skos:prefLabel>
-      <skos:notation>1</skos:notation>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q132159297">1</skos:notation>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#madeuptest2">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>made up test 2</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sourcenr/con#extensionplantermnr">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Extension plan term (NR)</skos:prefLabel>
+      <!--IRI could not be found for Source (NR) -->
+      <skos:inScheme>Source (NR) </skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sourcenr/con#extensionplantermnr">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Extension plan term (NR)</skos:prefLabel>
+      <!--IRI could not be found for Source (NR) -->
+      <skos:inScheme>Source (NR) </skos:inScheme>
    </rdf:Description>
 </rdf:RDF>

@@ -97,5 +97,30 @@
             <marc:subfield code="j">agency identifier</marc:subfield>
         </marc:datafield>
     </marc:record>
+    
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:datafield tag="355" ind1=" " ind2=" ">
+            <marc:subfield code="9">SECURITY CLASSIFICATION CONTROL (R) </marc:subfield>
+            <marc:subfield code="a">Security classification (NR) </marc:subfield>
+            <marc:subfield code="a">Security classification (NR) </marc:subfield>
+            <marc:subfield code="b">Handling instructions (R) </marc:subfield>
+            <marc:subfield code="b">Handling instructions (R) </marc:subfield>
+            <marc:subfield code="c">External dissemination information (R) </marc:subfield>
+            <marc:subfield code="c">External dissemination information (R) </marc:subfield>
+            <marc:subfield code="d">Downgrading or declassification event (NR) </marc:subfield>
+            <marc:subfield code="d">Downgrading or declassification event (NR) </marc:subfield>
+            <marc:subfield code="e">Classification system (NR) </marc:subfield>
+            <marc:subfield code="e">Classification system (NR) </marc:subfield>
+            <marc:subfield code="f">Country of origin code (NR) </marc:subfield>
+            <marc:subfield code="f">Country of origin code (NR) </marc:subfield>
+            <marc:subfield code="g">Downgrading date (NR) </marc:subfield>
+            <marc:subfield code="g">Downgrading date (NR) </marc:subfield>
+            <marc:subfield code="h">Declassification date (NR) </marc:subfield>
+            <marc:subfield code="h">Declassification date (NR) </marc:subfield>
+            <marc:subfield code="j">Authorization (R) </marc:subfield>
+            <marc:subfield code="j">Authorization (R) </marc:subfield>
+        </marc:datafield>
+    </marc:record>
 
 </marc:collection>

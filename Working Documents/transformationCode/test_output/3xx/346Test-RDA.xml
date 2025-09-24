@@ -1,54 +1,106 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
-         xmlns:fake="http://fakePropertiesForDemo"
-         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
-         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
-         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
-         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
-         xmlns:rdae="http://rdaregistry.info/Elements/e/"
-         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
-         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
-         xmlns:rdai="http://rdaregistry.info/Elements/i/"
-         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
-         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
-         xmlns:rdam="http://rdaregistry.info/Elements/m/"
-         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
-         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
-         xmlns:rdan="http://rdaregistry.info/Elements/n/"
-         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
-         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
-         xmlns:rdap="http://rdaregistry.info/Elements/p/"
-         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
-         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
-         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
-         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
-         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
-         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
-   <rdf:Description rdf:about="http://fakeIRI2.edu/346-test1wor">
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc346-test1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10078 rdf:resource="http://fakeIRI2.edu/346-test1exp"/>
-      <rdawd:P10002>346-test1wor</rdawd:P10002>
+      <rdawd:P10400>346-test1</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc346-test1</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc346-test1"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/346-test1exp">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20059 rdf:resource="http://fakeIRI2.edu/346-test1man"/>
-      <rdaeo:P20231 rdf:resource="http://fakeIRI2.edu/346-test1wor"/>
-      <rdaed:P20002>346-test1exp</rdaed:P20002>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://fakeIRI2.edu/346-test1man">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc346-test1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30139 rdf:resource="http://fakeIRI2.edu/346-test1exp"/>
-      <fake:marcfield>F346 ## $6 880-01 $b NTSC $2 source</fake:marcfield>
-      <rdam:P30123 rdf:resource="http://marc2rda.edu/fake/concept/source/ntsc"/>
-      <fake:marcfield>F880 ## $6 346-01 $b test 880 $2 source</fake:marcfield>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc346-test1"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc346-test1</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 346-test1
+F346 ## $a Beta $3 test 3
+F346 ## $b NTSC $3 test 3
+F346 ## $a VHS $2 rdavf $3 test 3
+F346 ## $b NTSC $2 rdabs $0 (uri)http://rdaregistry.info/termList/broadcastStand/1002 $3 fake 3
+F346 ## $3 videodisc $b NTSC $2 rdabs
+F346 ## $a laser optical $0 testzero
+F880 ## $6 346-00 $b NTSC $1 http://rdaregistry.info/termList/broadcastStand/1002
+F346 ## $6 880-01 $b NTSC $2 source
+F880 ## $6 346-01 $b test 880 $2 source
+F346 ## $9 VIDEO CHARACTERISTICS (R)  $a Video format (R)  $a Video format (R)  $b Broadcast standard (R)  $b Broadcast standard (R)  $0 Authority record control number or standard number (R)  $0 Authority record control number or standard number (R)  $1 Real World Object URI (R)  $1 Real World Object URI (R)  $2 Source (NR)  $2 Source (NR)  $3 Materials specified (NR)  $3 Materials specified (NR) 
+F346 ## $0 Authority record control number or standard number (R)  $0 Authority record control number or standard number (R) 
+F346 ## $1 Real World Object URI (R)  $1 Real World Object URI (R) 
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/concept/source/ntsc">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc346-test1"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc346-test1"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc346-test1"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30104>Beta</rdamd:P30104><!--rdamd:P30104 = has video format-->
+      <rdamd:P30137>Video format Beta applies to the manifestation's test 3</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30123>NTSC</rdamd:P30123><!--rdamd:P30123 = has broadcast standard-->
+      <rdamd:P30137>Broadcast standard NTSC applies to the manifestation's test 3</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30104 rdf:resource="http://rdaregistry.info/termList/videoFormat/1015"/><!--rdam:P30104 = has video format-->
+      <rdamd:P30137>Video format http://rdaregistry.info/termList/videoFormat/1015 applies to the manifestation's test 3</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30123 rdf:resource="http://rdaregistry.info/termList/broadcastStand/1002"/><!--rdam:P30123 = has broadcast standard-->
+      <rdamd:P30137>Broadcast standard http://rdaregistry.info/termList/broadcastStand/1002 applies to the manifestation's fake 3</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30123 rdf:resource="http://rdaregistry.info/termList/broadcastStand/1002"/><!--rdam:P30123 = has broadcast standard-->
+      <rdamd:P30137>Broadcast standard http://rdaregistry.info/termList/broadcastStand/1002 applies to the manifestation's videodisc</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30104>laser optical</rdamd:P30104><!--rdamd:P30104 = has video format-->
+      <rdam:P30123 rdf:resource="http://rdaregistry.info/termList/broadcastStand/1002"/><!--rdam:P30123 = has broadcast standard-->
+      <rdam:P30123 rdf:resource="http://marc2rda.edu/fake/source/con#ntsc"/><!--rdam:P30123 = has broadcast standard-->
+      <rdam:P30104 rdf:resource="http://marc2rda.edu/fake/sourcenr/con#videoformatr"/><!--rdam:P30104 = has video format-->
+      <rdamd:P30137>Video format http://marc2rda.edu/fake/sourcenr/con#videoformatr applies to the manifestation's Materials specified (NR)  Materials specified (NR) </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30104 rdf:resource="http://marc2rda.edu/fake/sourcenr/con#videoformatr"/><!--rdam:P30104 = has video format-->
+      <rdamd:P30137>Video format http://marc2rda.edu/fake/sourcenr/con#videoformatr applies to the manifestation's Materials specified (NR)  Materials specified (NR) </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30123 rdf:resource="http://marc2rda.edu/fake/sourcenr/con#broadcaststandardr"/><!--rdam:P30123 = has broadcast standard-->
+      <rdamd:P30137>Broadcast standard http://marc2rda.edu/fake/sourcenr/con#broadcaststandardr applies to the manifestation's Materials specified (NR)  Materials specified (NR) </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdam:P30123 rdf:resource="http://marc2rda.edu/fake/sourcenr/con#broadcaststandardr"/><!--rdam:P30123 = has broadcast standard-->
+      <rdamd:P30137>Broadcast standard http://marc2rda.edu/fake/sourcenr/con#broadcaststandardr applies to the manifestation's Materials specified (NR)  Materials specified (NR) </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/source/con#ntsc">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>NTSC</skos:prefLabel>
-      <!--$2 value of source has been lost-->
+      <!--IRI could not be found for source-->
+      <skos:inScheme>source</skos:inScheme>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>test 880</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sourcenr/con#videoformatr">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Video format (R)</skos:prefLabel>
+      <!--IRI could not be found for Source (NR) -->
+      <skos:inScheme>Source (NR) </skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sourcenr/con#videoformatr">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Video format (R)</skos:prefLabel>
+      <!--IRI could not be found for Source (NR) -->
+      <skos:inScheme>Source (NR) </skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sourcenr/con#broadcaststandardr">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Broadcast standard (R)</skos:prefLabel>
+      <!--IRI could not be found for Source (NR) -->
+      <skos:inScheme>Source (NR) </skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sourcenr/con#broadcaststandardr">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Broadcast standard (R)</skos:prefLabel>
+      <!--IRI could not be found for Source (NR) -->
+      <skos:inScheme>Source (NR) </skos:inScheme>
    </rdf:Description>
 </rdf:RDF>

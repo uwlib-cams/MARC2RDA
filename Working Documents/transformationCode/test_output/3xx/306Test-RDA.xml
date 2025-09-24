@@ -22,7 +22,7 @@ F306 ## $a 003100 $a 001839
 F880 ## $6 306 $a 020400
 F306 ## $a abcdef
 F306 ## $a 000000 
-F306 ## $9 PLAYING TIME (NR)  $a Playing time (R)  $a Playing time (R)  $6 Linkage (NR)  $6 Linkage (NR)  $8 Field link and sequence number (R) $8 Field link and sequence number (R)
+F306 ## $9 PLAYING TIME (NR)  $a Playing time (R)  $a Playing time (R) 
 F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
 </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>

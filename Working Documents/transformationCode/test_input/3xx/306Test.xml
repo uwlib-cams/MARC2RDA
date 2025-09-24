@@ -26,10 +26,6 @@
             <marc:subfield code="9">PLAYING TIME (NR) </marc:subfield>
             <marc:subfield code="a">Playing time (R) </marc:subfield>
             <marc:subfield code="a">Playing time (R) </marc:subfield>
-            <marc:subfield code="6">Linkage (NR) </marc:subfield>
-            <marc:subfield code="6">Linkage (NR) </marc:subfield>
-            <marc:subfield code="8">Field link and sequence number (R)</marc:subfield>
-            <marc:subfield code="8">Field link and sequence number (R)</marc:subfield>
         </marc:datafield>
     </marc:record>
 </marc:collection>

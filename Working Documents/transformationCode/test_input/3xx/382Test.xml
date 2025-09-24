@@ -188,5 +188,47 @@
 			<marc:subfield code="s">5</marc:subfield>
 			<marc:subfield code="2">lcmpt</marc:subfield>
 		</marc:datafield>
+		
+		<marc:datafield tag="382" ind1=" " ind2=" ">
+			<marc:subfield code="9">MEDIUM OF PERFORMANCE (R) </marc:subfield>
+			<marc:subfield code="a">Medium of performance (R) </marc:subfield>
+			<marc:subfield code="a">Medium of performance (R) </marc:subfield>
+			<marc:subfield code="b">Soloist (R) </marc:subfield>
+			<marc:subfield code="b">Soloist (R) </marc:subfield>
+			<marc:subfield code="d">Doubling instrument (R) </marc:subfield>
+			<marc:subfield code="d">Doubling instrument (R) </marc:subfield>
+			<marc:subfield code="e">Number of ensembles of the same type (R) </marc:subfield>
+			<marc:subfield code="e">Number of ensembles of the same type (R) </marc:subfield>
+			<marc:subfield code="n">Number of performers of the same medium (R) </marc:subfield>
+			<marc:subfield code="n">Number of performers of the same medium (R) </marc:subfield>
+			<marc:subfield code="p">Alternative medium of performance (R) </marc:subfield>
+			<marc:subfield code="p">Alternative medium of performance (R) </marc:subfield>
+			<marc:subfield code="r">Total number of individuals performing alongside ensembles (NR) </marc:subfield>
+			<marc:subfield code="r">Total number of individuals performing alongside ensembles (NR) </marc:subfield>
+			<marc:subfield code="s">Total number of performers (NR) </marc:subfield>
+			<marc:subfield code="s">Total number of performers (NR) </marc:subfield>
+			<marc:subfield code="t">Total number of ensembles (NR) </marc:subfield>
+			<marc:subfield code="t">Total number of ensembles (NR) </marc:subfield>
+			<marc:subfield code="v">Note (R) </marc:subfield>
+			<marc:subfield code="v">Note (R) </marc:subfield>
+			<marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+			<marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+			<marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+			<marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+			<marc:subfield code="2">Source of term (NR) </marc:subfield>
+			<marc:subfield code="2">Source of term (NR) </marc:subfield>
+			<marc:subfield code="3">Materials specified (NR) </marc:subfield>
+			<marc:subfield code="3">Materials specified (NR) </marc:subfield>
+		</marc:datafield>
+		
+		<marc:datafield tag="382" ind1=" " ind2=" ">
+			<marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+			<marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+		</marc:datafield>
+		
+		<marc:datafield tag="382" ind1=" " ind2=" ">
+			<marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+			<marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+		</marc:datafield>
 	</marc:record>
 </marc:collection>

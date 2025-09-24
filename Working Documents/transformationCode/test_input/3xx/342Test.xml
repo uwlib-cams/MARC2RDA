@@ -61,5 +61,56 @@
             <marc:subfield code="c">value</marc:subfield>
         </marc:datafield>
         
+        <marc:datafield tag="342" ind1=" " ind2=" ">
+            <marc:subfield code="9">GEOSPATIAL REFERENCE DATA (R) </marc:subfield>
+            <marc:subfield code="a">Name (NR) </marc:subfield>
+            <marc:subfield code="a">Name (NR) </marc:subfield>
+            <marc:subfield code="b">Coordinate or distance units (NR) </marc:subfield>
+            <marc:subfield code="b">Coordinate or distance units (NR) </marc:subfield>
+            <marc:subfield code="c">Latitude resolution (NR) </marc:subfield>
+            <marc:subfield code="c">Latitude resolution (NR) </marc:subfield>
+            <marc:subfield code="d">Longitude resolution (NR) </marc:subfield>
+            <marc:subfield code="d">Longitude resolution (NR) </marc:subfield>
+            <marc:subfield code="e">Standard parallel or oblique line latitude (R) </marc:subfield>
+            <marc:subfield code="e">Standard parallel or oblique line latitude (R) </marc:subfield>
+            <marc:subfield code="f">Oblique line longitude (R) </marc:subfield>
+            <marc:subfield code="f">Oblique line longitude (R) </marc:subfield>
+            <marc:subfield code="g">Longitude of central meridian or projection center (NR) </marc:subfield>
+            <marc:subfield code="g">Longitude of central meridian or projection center (NR) </marc:subfield>
+            <marc:subfield code="h">Latitude of projection origin or projection center (NR) </marc:subfield>
+            <marc:subfield code="h">Latitude of projection origin or projection center (NR) </marc:subfield>
+            <marc:subfield code="i">False easting (NR) </marc:subfield>
+            <marc:subfield code="i">False easting (NR) </marc:subfield>
+            <marc:subfield code="j">False northing (NR) </marc:subfield>
+            <marc:subfield code="j">False northing (NR) </marc:subfield>
+            <marc:subfield code="k">Scale factor (NR) </marc:subfield>
+            <marc:subfield code="k">Scale factor (NR) </marc:subfield>
+            <marc:subfield code="l">Height of perspective point above surface (NR) </marc:subfield>
+            <marc:subfield code="l">Height of perspective point above surface (NR) </marc:subfield>
+            <marc:subfield code="m">Azimuthal angle (NR) </marc:subfield>
+            <marc:subfield code="m">Azimuthal angle (NR) </marc:subfield>
+            <marc:subfield code="n">Azimuth measure point longitude or straight vertical longitude from pole (NR) </marc:subfield>
+            <marc:subfield code="n">Azimuth measure point longitude or straight vertical longitude from pole (NR) </marc:subfield>
+            <marc:subfield code="o">Landsat number and path number (NR) </marc:subfield>
+            <marc:subfield code="o">Landsat number and path number (NR) </marc:subfield>
+            <marc:subfield code="p">Zone identifier (NR) </marc:subfield>
+            <marc:subfield code="p">Zone identifier (NR) </marc:subfield>
+            <marc:subfield code="q">Ellipsoid name (NR) </marc:subfield>
+            <marc:subfield code="q">Ellipsoid name (NR) </marc:subfield>
+            <marc:subfield code="r">Semi-major axis (NR) </marc:subfield>
+            <marc:subfield code="r">Semi-major axis (NR) </marc:subfield>
+            <marc:subfield code="s">Denominator of flattening ratio (NR) </marc:subfield>
+            <marc:subfield code="s">Denominator of flattening ratio (NR) </marc:subfield>
+            <marc:subfield code="t">Vertical resolution (NR) </marc:subfield>
+            <marc:subfield code="t">Vertical resolution (NR) </marc:subfield>
+            <marc:subfield code="u">Vertical encoding method (NR) </marc:subfield>
+            <marc:subfield code="u">Vertical encoding method (NR) </marc:subfield>
+            <marc:subfield code="v">Local planar, local, or other projection or grid description (NR) </marc:subfield>
+            <marc:subfield code="v">Local planar, local, or other projection or grid description (NR) </marc:subfield>
+            <marc:subfield code="w">Local planar or local georeference information (NR) </marc:subfield>
+            <marc:subfield code="w">Local planar or local georeference information (NR) </marc:subfield>
+            <marc:subfield code="2">Reference method used (NR) </marc:subfield>
+            <marc:subfield code="2">Reference method used (NR) </marc:subfield>
+        </marc:datafield>
     </marc:record>
 </marc:collection>

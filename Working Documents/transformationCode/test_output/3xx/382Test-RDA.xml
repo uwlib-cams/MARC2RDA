@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc382-test1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10400 rdf:resource="http://marc2rda.edu/fake/transform/nom#382-test1"/><!--rdawo:P10400 = has identifier for work group-->
+      <rdawd:P10400>382-test1</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
       <rdawd:P10002>transform/wor#marc382-test1</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc382-test1"/><!--rdawo:P10072 = has manifestation of work-->
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
@@ -11,6 +12,7 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc382-test1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc382-test1"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>transform/man#marc382-test1</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -23,12 +25,11 @@ F382 01 $a speaker $n 1 $a trombone $n 1 $p bassoon $n 1 $a violin $n 1 $s 3 $2 
 F382 01 $a piano $n 3 $v 2 pianos, 6 hands $s 3 $2 lcmpt
 F382 01 $3 String quartet $a violin $n 2 $a viola $n 1 $a cello $n 1 $s 4 $2 lcmpt
 F382 01 $a percussion instrument $n 1 $v high hat $d bongos $n 1 $d snare drum $n 1 $d guiro $n 1 $d cymbal $n 1 $d gong $n 1 $d timpani $n 1 $d cowbell $n 1 $d marimba $n 1 $a triangle $n 1 $d percussion idiophone $n 1 $v car coil $d maraca $n 1 $d snare dum $n 1 $d percussion idiophone $n 1 $v brake drums $d bongos $n 1 $d tom-tom $n 1 $d chimes $n 1 $a piano $n 1 $d celesta $n 1 $d radio receiver $n 1 $d percussion idiophone $n 1 $v anvil $d bass drum $n 1 $d chimes $n 1 $d toy instrument $n 1 $v small metal cricket $a triangle $n 1 $d percussion idiophone $n 1 $v carl coil $d bongos $n 1 $d tabla $n 1 $d timpani $n 1 $d chimes $n 1 $d percussion idiophone $n 1 $v brake drums $d xylophone $n 1 $a finger cymbals $n 1 $d claves $n 1 $d drum $n 1 $d cymbal $n 1 $d gong $n 1 $d bongos $n 1 $d tom-tom $n 1 $d percussion idiophone $n 1 $v temple blocks $d vibraphone $n 1 $s 5 $2 lcmpt
+F382 ## $9 MEDIUM OF PERFORMANCE (R)  $a Medium of performance (R)  $a Medium of performance (R)  $b Soloist (R)  $b Soloist (R)  $d Doubling instrument (R)  $d Doubling instrument (R)  $e Number of ensembles of the same type (R)  $e Number of ensembles of the same type (R)  $n Number of performers of the same medium (R)  $n Number of performers of the same medium (R)  $p Alternative medium of performance (R)  $p Alternative medium of performance (R)  $r Total number of individuals performing alongside ensembles (NR)  $r Total number of individuals performing alongside ensembles (NR)  $s Total number of performers (NR)  $s Total number of performers (NR)  $t Total number of ensembles (NR)  $t Total number of ensembles (NR)  $v Note (R)  $v Note (R)  $0 Authority record control number or standard number (R)  $0 Authority record control number or standard number (R)  $1 Real World Object URI (R)  $1 Real World Object URI (R)  $2 Source of term (NR)  $2 Source of term (NR)  $3 Materials specified (NR)  $3 Materials specified (NR) 
+F382 ## $0 Authority record control number or standard number (R)  $0 Authority record control number or standard number (R) 
+F382 ## $1 Real World Object URI (R)  $1 Real World Object URI (R) 
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
 </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/nom#382-test1">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdano:P80172 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc382-test1"/><!--rdano:P80172 = is identifier for work group of-->
-      <rdand:P80068>382-test1</rdand:P80068><!--rdand:P80068 = has nomen string-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -116,6 +117,22 @@ F382 01 $a percussion instrument $n 1 $v high hat $d bongos $n 1 $d snare drum $
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#percussionidiophone"/><!--rdae:P20215 = has medium of performance of musical content-->
       <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/lcmpt/con#vibraphone"/><!--rdae:P20215 = has medium of performance of musical content-->
       <rdaed:P20215>For percussion instrument (high hat) /bongos/snare drum/guiro/cymbal/gong/timpani/cowbell/marimba; triangle/percussion idiophone (car coil) /maraca/snare dum/percussion idiophone (brake drums) /bongos/tom-tom/chimes; piano/celesta/radio receiver/percussion idiophone (anvil) /bass drum/chimes/toy instrument (small metal cricket) triangle/percussion idiophone (carl coil) /bongos/tabla/timpani/chimes/percussion idiophone (brake drums) /xylophone; finger cymbals/claves/drum/cymbal/gong/bongos/tom-tom/percussion idiophone (temple blocks) /vibraphone. Total performers: 5.</rdaed:P20215><!--rdaed:P20215 = has medium of performance of musical content-->
+      <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/sourceoftermnr/con#mediumofperformancer"/><!--rdae:P20215 = has medium of performance of musical content-->
+      <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/sourceoftermnr/con#mediumofperformancer"/><!--rdae:P20215 = has medium of performance of musical content-->
+      <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/sourceoftermnr/con#soloistr"/><!--rdae:P20215 = has medium of performance of musical content-->
+      <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/sourceoftermnr/con#soloistr"/><!--rdae:P20215 = has medium of performance of musical content-->
+      <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/sourceoftermnr/con#doublinginstrumentr"/><!--rdae:P20215 = has medium of performance of musical content-->
+      <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/sourceoftermnr/con#doublinginstrumentr"/><!--rdae:P20215 = has medium of performance of musical content-->
+      <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/sourceoftermnr/con#alternativemediumofperformancer"/><!--rdae:P20215 = has medium of performance of musical content-->
+      <rdae:P20215 rdf:resource="http://marc2rda.edu/fake/sourceoftermnr/con#alternativemediumofperformancer"/><!--rdae:P20215 = has medium of performance of musical content-->
+      <rdaeo:P20215 rdf:resource="Real World Object URI (R) "/><!--rdaeo:P20215 = has medium of performance of musical content-->
+      <rdaeo:P20215 rdf:resource="Real World Object URI (R) "/><!--rdaeo:P20215 = has medium of performance of musical content-->
+      <rdaed:P20215>Materials specified (NR) Materials specified (NR) : For Medium of performance (R) ; Medium of performance (R) ; solo Soloist (R) ; solo Soloist (R) ; /Doubling instrument (R)  /Doubling instrument (R)  (Number of ensembles of the same type (R) ) (Number of ensembles of the same type (R) ) (Number of performers of the same medium (R) ) (Number of performers of the same medium (R) ) or Alternative medium of performance (R)  or Alternative medium of performance (R)  Total soloists: Total number of individuals performing alongside ensembles (NR) . Total soloists: Total number of individuals performing alongside ensembles (NR) . Total performers: Total number of performers (NR) . Total performers: Total number of performers (NR) . Total ensembles: Total number of ensembles (NR) . Total ensembles: Total number of ensembles (NR) . (Note (R) ) (Note (R) )</rdaed:P20215><!--rdaed:P20215 = has medium of performance of musical content-->
+      <rdaed:P20215>For </rdaed:P20215><!--rdaed:P20215 = has medium of performance of musical content-->
+      <rdaeo:P20215 rdf:resource="Real World Object URI (R) "/><!--rdaeo:P20215 = has medium of performance of musical content-->
+      <rdaeo:P20215 rdf:resource="Real World Object URI (R) "/><!--rdaeo:P20215 = has medium of performance of musical content-->
+      <rdaed:P20215>For </rdaed:P20215><!--rdaed:P20215 = has medium of performance of musical content-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
@@ -452,5 +469,53 @@ F382 01 $a percussion instrument $n 1 $v high hat $d bongos $n 1 $d snare drum $
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>vibraphone</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/musiccodeschemes/lcmpt"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sourceoftermnr/con#mediumofperformancer">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Medium of performance (R)</skos:prefLabel>
+      <!--IRI could not be found for Source of term (NR) -->
+      <skos:inScheme>Source of term (NR) </skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sourceoftermnr/con#mediumofperformancer">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Medium of performance (R)</skos:prefLabel>
+      <!--IRI could not be found for Source of term (NR) -->
+      <skos:inScheme>Source of term (NR) </skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sourceoftermnr/con#soloistr">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Soloist (R)</skos:prefLabel>
+      <!--IRI could not be found for Source of term (NR) -->
+      <skos:inScheme>Source of term (NR) </skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sourceoftermnr/con#soloistr">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Soloist (R)</skos:prefLabel>
+      <!--IRI could not be found for Source of term (NR) -->
+      <skos:inScheme>Source of term (NR) </skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sourceoftermnr/con#doublinginstrumentr">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Doubling instrument (R)</skos:prefLabel>
+      <!--IRI could not be found for Source of term (NR) -->
+      <skos:inScheme>Source of term (NR) </skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sourceoftermnr/con#doublinginstrumentr">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Doubling instrument (R)</skos:prefLabel>
+      <!--IRI could not be found for Source of term (NR) -->
+      <skos:inScheme>Source of term (NR) </skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sourceoftermnr/con#alternativemediumofperformancer">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Alternative medium of performance (R)</skos:prefLabel>
+      <!--IRI could not be found for Source of term (NR) -->
+      <skos:inScheme>Source of term (NR) </skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sourceoftermnr/con#alternativemediumofperformancer">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Alternative medium of performance (R)</skos:prefLabel>
+      <!--IRI could not be found for Source of term (NR) -->
+      <skos:inScheme>Source of term (NR) </skos:inScheme>
    </rdf:Description>
 </rdf:RDF>

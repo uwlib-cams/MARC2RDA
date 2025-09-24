@@ -7,7 +7,7 @@
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc336-test"/><!--rdawo:P10072 = has manifestation of work-->
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
       <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#computertapereel"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc336-test">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
@@ -20,16 +20,14 @@ F001 336-test
 F336 ## $1 htp
 F336 ## $0 hptt
 F336 ## $0 http://id.loc.gov/vocabulary/contentTypes/xxx
-F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1001 $1 http://rdaregistry.info/termList/RDAContentType/1005
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1001
 F336 ## $0 http://rdaregistry.info/termList/RDAContentType/1002
-F336 ## $0 http://id.loc.gov/vocabulary/contentTypes/crt $1 http://rdaregistry.info/termList/RDAContentType/1011
-F336 ## $0 http://id.loc.gov/vocabulary/contentTypes/tci $0 http://id.loc.gov/vocabulary/contentTypes/sti
-F336 ## $1 http://rdaregistry.info/termList/RDACarrierType/1017
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1011
 F336 ## $a other $2 rdacontent
 F336 ## $a unspecified $2 rdacontent
 F336 ## $a spoken word
 F336 ## $a map $2 rdact
-F336 ## $a cartographic tactile three-dimensional form $2 rdacon
+F336 ## $a cartographic three-dimensional form $2 rdacon
 F336 ## $a notated music $2 rdacontent
 F336 ## $a computer program $2 rdaco
 F336 ## $a cartographic three-dimensional form $2 rdacontent
@@ -38,21 +36,20 @@ F336 ## $a unspecified $2 rdaco
 F336 ## $b zzz $2 rdacontent
 F336 ## $b xxx $2 rdacontent
 F336 ## $b prm
-F336 ## $a tactile image $b tcn
 F336 ## $a sounds $b snd $2 rdact
 F336 ## $b spw $b sti $2 rdact
 F336 ## $b tmc $2 rdact
 F336 ## $b ntv $2 rdaco
 F336 ## $a cartographic moving image $b crm $a still image $b sti $2 rdacontent
-F336 ## $a tcf $2 rdacontent
 F336 ## $b three-dimensional form $2 rdaco
 F336 ## $a three-dimensional moving image $2 rdacontent $3 guide
 F336 ## $3 volume $a tdi $2 rdacontent
-F336 ## $3 braille pages: $a tactile text $b tct $2 rdacontent
 F336 ## $6 880-09 $a Wen zi $b txt $2 rdacontent/chi
 F880 ## $6 336-09 $a 文字 $b txt $2 rdacontent/chi
 F336 ## $a projected $2 rdacontent
-F979 ## $a aam
+F336 ## $9 CONTENT TYPE (R)  $a Content type term (R)  $a Content type term (R)  $b Content type code (R)  $b Content type code (R)  $0 Authority record control number or standard number (R)  $0 Authority record control number or standard number (R)  $1 Real World Object URI (R)  $1 Real World Object URI (R)  $2 Source (NR)  $2 Source (NR)  $3 Materials specified (NR)  $3 Materials specified (NR) 
+F336 ## $0 Authority record control number or standard number (R)  $0 Authority record control number or standard number (R)  $3 Materials specified (NR)  $3 Materials specified (NR) 
+F336 ## $1 Real World Object URI (R)  $1 Real World Object URI (R)  $3 Materials specified (NR)  $3 Materials specified (NR) 
 </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
@@ -63,32 +60,19 @@ F979 ## $a aam
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc336-test"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#computertapereel"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1001"/><!--rdaeo:P20001 = has content type-->
-      <rdaeo:P10349 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1001"/><!--rdaeo:P10349 = -->
-      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1005"/><!--rdaeo:P20001 = has content type-->
-      <rdaeo:P10349 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1005"/><!--rdaeo:P10349 = -->
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1002"/><!--rdaeo:P20001 = has content type-->
-      <rdaeo:P10349 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1002"/><!--rdaeo:P10349 = -->
-      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1004"/><!--rdaeo:P20001 = has content type-->
-      <rdaeo:P10349 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1004"/><!--rdaeo:P10349 = -->
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1011"/><!--rdaeo:P20001 = has content type-->
-      <rdaeo:P10349 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1011"/><!--rdaeo:P10349 = -->
-      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1015"/><!--rdaeo:P20001 = has content type-->
-      <rdaeo:P10349 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1015"/><!--rdaeo:P10349 = -->
-      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1014"/><!--rdaeo:P20001 = has content type-->
-      <rdaeo:P10349 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1014"/><!--rdaeo:P10349 = -->
       <rdaed:P20001>spoken word</rdaed:P20001><!--rdaed:P20001 = has content type-->
       <rdaed:P20001>map</rdaed:P20001><!--rdaed:P20001 = has content type-->
-      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1005"/><!--rdaeo:P20001 = has content type-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1006"/><!--rdaeo:P20001 = has content type-->
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1010"/><!--rdaeo:P20001 = has content type-->
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1008"/><!--rdaeo:P20001 = has content type-->
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1006"/><!--rdaeo:P20001 = has content type-->
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1007"/><!--rdaeo:P20001 = has content type-->
       <rdaed:P20001>prm</rdaed:P20001><!--rdaed:P20001 = has content type-->
-      <rdaed:P20001>tactile image</rdaed:P20001><!--rdaed:P20001 = has content type-->
-      <rdaed:P20001>tcn</rdaed:P20001><!--rdaed:P20001 = has content type-->
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1012"/><!--rdaeo:P20001 = has content type-->
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1012"/><!--rdaeo:P20001 = has content type-->
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1013"/><!--rdaeo:P20001 = has content type-->
@@ -99,31 +83,45 @@ F979 ## $a aam
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1003"/><!--rdaeo:P20001 = has content type-->
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1014"/><!--rdaeo:P20001 = has content type-->
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1014"/><!--rdaeo:P20001 = has content type-->
-      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1019"/><!--rdaeo:P20001 = has content type-->
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1021"/><!--rdaeo:P20001 = has content type-->
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1022"/><!--rdaeo:P20001 = has content type-->
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1023"/><!--rdaeo:P20001 = has content type-->
-      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1018"/><!--rdaeo:P20001 = has content type-->
-      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1018"/><!--rdaeo:P20001 = has content type-->
       <rdaed:P20001>Wen zi</rdaed:P20001><!--rdaed:P20001 = has content type-->
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
       <rdaed:P20001>文字</rdaed:P20001><!--rdaed:P20001 = has content type-->
       <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+      <rdaeo:P20001 rdf:resource="http://marc2rda.edu/fake/sourcenr/con#contenttypetermr"/><!--rdaeo:P20001 = has content type-->
+      <rdaeo:P20001 rdf:resource="http://marc2rda.edu/fake/sourcenr/con#contenttypetermr"/><!--rdaeo:P20001 = has content type-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#computertapereel">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc336-test"/><!--rdamo:P30462 = is manifestation described with metadata by-->
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamd:P30276> (Computer tape reel)</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1017"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
       <rdamd:P30137>Guide has Content type: http://rdaregistry.info/termList/RDAContentType/1022</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30137>Guide has Content type: http://rdaregistry.info/termList/RDAContentType/1022</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30137>Volume has Content type: http://rdaregistry.info/termList/RDAContentType/1023</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30137>Volume has Content type: http://rdaregistry.info/termList/RDAContentType/1023</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30137>Braille pages: has Content type: http://rdaregistry.info/termList/RDAContentType/1018</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30137>Braille pages: has Content type: http://rdaregistry.info/termList/RDAContentType/1018</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30137>Braille pages: has Content type: http://rdaregistry.info/termList/RDAContentType/1018</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamd:P30137>Braille pages: has Content type: http://rdaregistry.info/termList/RDAContentType/1018</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1005"/><!--rdamo:P30002 = has media type-->
+      <rdamd:P30137>Materials specified (NR) has Content type: http://marc2rda.edu/fake/sourcenr/con#contenttypetermr</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Materials specified (NR) has Content type: http://marc2rda.edu/fake/sourcenr/con#contenttypetermr</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Materials specified (NR) has Content type: http://marc2rda.edu/fake/sourcenr/con#contenttypetermr</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Materials specified (NR) has Content type: http://marc2rda.edu/fake/sourcenr/con#contenttypetermr</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Materials specified (NR) has Content type: http://marc2rda.edu/fake/sourcenr/con#contenttypetermr</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Materials specified (NR) has Content type: http://marc2rda.edu/fake/sourcenr/con#contenttypetermr</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Materials specified (NR) has Content type: http://marc2rda.edu/fake/sourcenr/con#contenttypetermr</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Materials specified (NR) has Content type: http://marc2rda.edu/fake/sourcenr/con#contenttypetermr</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sourcenr/con#contenttypetermr">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Content type term (R)</skos:prefLabel>
+      <!--IRI could not be found for Source (NR) -->
+      <skos:inScheme>Source (NR) </skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sourcenr/con#contenttypetermr">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Content type term (R)</skos:prefLabel>
+      <!--IRI could not be found for Source (NR) -->
+      <skos:inScheme>Source (NR) </skos:inScheme>
    </rdf:Description>
 </rdf:RDF>

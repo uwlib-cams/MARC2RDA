@@ -25,5 +25,27 @@
             <marc:subfield code="6">343-00/</marc:subfield>
             <marc:subfield code="i">Magnetic.</marc:subfield>
         </marc:datafield>
+        
+        <marc:datafield tag="343" ind1=" " ind2=" ">
+            <marc:subfield code="9">PLANAR COORDINATE DATA (R) </marc:subfield>
+            <marc:subfield code="a">Planar coordinate encoding method (NR) </marc:subfield>
+            <marc:subfield code="a">Planar coordinate encoding method (NR) </marc:subfield>
+            <marc:subfield code="b">Planar distance units (NR) </marc:subfield>
+            <marc:subfield code="b">Planar distance units (NR) </marc:subfield>
+            <marc:subfield code="c">Abscissa resolution (NR) </marc:subfield>
+            <marc:subfield code="c">Abscissa resolution (NR) </marc:subfield>
+            <marc:subfield code="d">Ordinate resolution (NR) </marc:subfield>
+            <marc:subfield code="d">Ordinate resolution (NR) </marc:subfield>
+            <marc:subfield code="e">Distance resolution (NR) </marc:subfield>
+            <marc:subfield code="e">Distance resolution (NR) </marc:subfield>
+            <marc:subfield code="f">Bearing resolution (NR) </marc:subfield>
+            <marc:subfield code="f">Bearing resolution (NR) </marc:subfield>
+            <marc:subfield code="g">Bearing units (NR) </marc:subfield>
+            <marc:subfield code="g">Bearing units (NR) </marc:subfield>
+            <marc:subfield code="h">Bearing reference direction (NR) </marc:subfield>
+            <marc:subfield code="h">Bearing reference direction (NR) </marc:subfield>
+            <marc:subfield code="i">Bearing reference meridian (NR) </marc:subfield>
+            <marc:subfield code="i">Bearing reference meridian (NR) </marc:subfield>
+        </marc:datafield>
     </marc:record>
 </marc:collection>

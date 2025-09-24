@@ -29,7 +29,10 @@ F880 ## $6 334-01 $a single unit $2 rdami
 F880 ## $6 334-00 $a single unit $2 rdami
 F334 ## $a audio $b a $2 isbdmedia
 F334 ## $a audio $2 isbdmedia
-F334 ## $9 MODE OF ISSUANCE (R)  $a Mode of issuance term (NR)  $a Mode of issuance term (NR)  $b Mode of issuance code (NR)  $b Mode of issuance code (NR)  $0 Authority record control number or standard number (R)  $0 Authority record control number or standard number (R)  $1 Real World Object URI (R)  $1 Real World Object URI (R)  $2 Source (NR)  $2 Source (NR)  $6 Linkage (NR)  $6 Linkage (NR)  $8 Field link and sequence number (R) $8 Field link and sequence number (R)
+F334 ## $9 MODE OF ISSUANCE (R)  $a Mode of issuance term (NR)  $a Mode of issuance term (NR)  $2 Source (NR)  $2 Source (NR) 
+F334 ## $9 MODE OF ISSUANCE (R)  $b Mode of issuance code (NR)  $b Mode of issuance code (NR)  $2 Source (NR)  $2 Source (NR) 
+F334 ## $0 http://Authority record control number or standard number (R)  $0 http://Authority record control number or standard number (R) 
+F334 ## $1 Real World Object URI (R)  $1 Real World Object URI (R) 
 F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
 </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
@@ -63,6 +66,12 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
       <rdam:P30003 rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/><!--rdam:P30003 = has mode of issuance-->
       <rdam:P30003 rdf:resource="http://marc2rda.edu/fake/isbdmedia/con#audio"/><!--rdam:P30003 = has mode of issuance-->
       <rdam:P30003 rdf:resource="http://marc2rda.edu/fake/isbdmedia/con#audio"/><!--rdam:P30003 = has mode of issuance-->
+      <rdam:P30003 rdf:resource="http://marc2rda.edu/fake/sourcenr/con#modeofissuancetermnr"/><!--rdam:P30003 = has mode of issuance-->
+      <rdam:P30003 rdf:resource="http://marc2rda.edu/fake/sourcenr/con#modeofissuancetermnr"/><!--rdam:P30003 = has mode of issuance-->
+      <rdam:P30003 rdf:resource="http://marc2rda.edu/fake/sourcenr/con#modeofissuancecodenr"/><!--rdam:P30003 = has mode of issuance-->
+      <rdam:P30003 rdf:resource="http://marc2rda.edu/fake/sourcenr/con#modeofissuancecodenr"/><!--rdam:P30003 = has mode of issuance-->
+      <rdam:P30003 rdf:resource="http://Authority record control number or standard number (R) "/><!--rdam:P30003 = has mode of issuance-->
+      <rdam:P30003 rdf:resource="http://Authority record control number or standard number (R) "/><!--rdam:P30003 = has mode of issuance-->
       <rdam:P30003 rdf:resource="Real World Object URI (R) "/><!--rdam:P30003 = has mode of issuance-->
       <rdam:P30003 rdf:resource="Real World Object URI (R) "/><!--rdam:P30003 = has mode of issuance-->
    </rdf:Description>
@@ -76,5 +85,29 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>audio</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/isbdmedia"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sourcenr/con#modeofissuancetermnr">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Mode of issuance term (NR)</skos:prefLabel>
+      <!--IRI could not be found for Source (NR) -->
+      <skos:inScheme>Source (NR) </skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sourcenr/con#modeofissuancetermnr">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Mode of issuance term (NR)</skos:prefLabel>
+      <!--IRI could not be found for Source (NR) -->
+      <skos:inScheme>Source (NR) </skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sourcenr/con#modeofissuancecodenr">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Mode of issuance code (NR)</skos:prefLabel>
+      <!--IRI could not be found for Source (NR) -->
+      <skos:inScheme>Source (NR) </skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sourcenr/con#modeofissuancecodenr">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Mode of issuance code (NR)</skos:prefLabel>
+      <!--IRI could not be found for Source (NR) -->
+      <skos:inScheme>Source (NR) </skos:inScheme>
    </rdf:Description>
 </rdf:RDF>

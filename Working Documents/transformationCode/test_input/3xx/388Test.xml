@@ -43,5 +43,28 @@
             <marc:subfield code="a">Twentieth century</marc:subfield>
             <marc:subfield code="2">rand</marc:subfield>
         </marc:datafield>
+        <marc:datafield tag="388" ind1=" " ind2=" ">
+            <marc:subfield code="9">TIME PERIOD OF CREATION (R) </marc:subfield>
+            <marc:subfield code="a">Time period of creation term (R) </marc:subfield>
+            <marc:subfield code="a">Time period of creation term (R) </marc:subfield>
+            <marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+            <marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+            <marc:subfield code="2">Source of term (NR) </marc:subfield>
+            <marc:subfield code="2">Source of term (NR) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
+            <marc:subfield code="3">Materials specified (NR) </marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="388" ind1=" " ind2=" ">
+            <marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+            <marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="388" ind1=" " ind2=" ">
+            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+        </marc:datafield>
     </marc:record>
 </marc:collection>

@@ -55,5 +55,23 @@
             <marc:subfield code="c">RV 297</marc:subfield>
             <marc:subfield code="d">Ryom</marc:subfield>
         </marc:datafield>
+        
+        <marc:datafield tag="383" ind1=" " ind2=" ">
+            <marc:subfield code="9">NUMERIC DESIGNATION OF MUSICAL WORK OR EXPRESSION (R) </marc:subfield>
+            <marc:subfield code="a">Serial number (R) </marc:subfield>
+            <marc:subfield code="a">Serial number (R) </marc:subfield>
+            <marc:subfield code="b">Opus number (R) </marc:subfield>
+            <marc:subfield code="b">Opus number (R) </marc:subfield>
+            <marc:subfield code="c">Thematic index number (R) </marc:subfield>
+            <marc:subfield code="c">Thematic index number (R) </marc:subfield>
+            <marc:subfield code="d">Thematic index code (NR) </marc:subfield>
+            <marc:subfield code="d">Thematic index code (NR) </marc:subfield>
+            <marc:subfield code="e">Publisher associated with opus number (NR) </marc:subfield>
+            <marc:subfield code="e">Publisher associated with opus number (NR) </marc:subfield>
+            <marc:subfield code="2">Source (NR) </marc:subfield>
+            <marc:subfield code="2">Source (NR) </marc:subfield>
+            <marc:subfield code="3">Materials secified (NR) </marc:subfield>
+            <marc:subfield code="3">Materials secified (NR) </marc:subfield>
+        </marc:datafield>
     </marc:record>
 </marc:collection>

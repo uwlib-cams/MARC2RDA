@@ -84,18 +84,27 @@
             <marc:subfield code="9">MODE OF ISSUANCE (R) </marc:subfield>
             <marc:subfield code="a">Mode of issuance term (NR) </marc:subfield>
             <marc:subfield code="a">Mode of issuance term (NR) </marc:subfield>
-            <marc:subfield code="b">Mode of issuance code (NR) </marc:subfield>
-            <marc:subfield code="b">Mode of issuance code (NR) </marc:subfield>
-            <marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
-            <marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
-            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
-            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
             <marc:subfield code="2">Source (NR) </marc:subfield>
             <marc:subfield code="2">Source (NR) </marc:subfield>
-            <marc:subfield code="6">Linkage (NR) </marc:subfield>
-            <marc:subfield code="6">Linkage (NR) </marc:subfield>
-            <marc:subfield code="8">Field link and sequence number (R)</marc:subfield>
-            <marc:subfield code="8">Field link and sequence number (R)</marc:subfield>
         </marc:datafield>
+        
+        <marc:datafield tag="334" ind1=" " ind2=" ">
+            <marc:subfield code="9">MODE OF ISSUANCE (R) </marc:subfield>
+            <marc:subfield code="b">Mode of issuance code (NR) </marc:subfield>
+            <marc:subfield code="b">Mode of issuance code (NR) </marc:subfield>
+            <marc:subfield code="2">Source (NR) </marc:subfield>
+            <marc:subfield code="2">Source (NR) </marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="334" ind1=" " ind2=" ">
+            <marc:subfield code="0">http://Authority record control number or standard number (R) </marc:subfield>
+            <marc:subfield code="0">http://Authority record control number or standard number (R) </marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="334" ind1=" " ind2=" ">
+            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+        </marc:datafield>
+        
     </marc:record>
 </marc:collection>

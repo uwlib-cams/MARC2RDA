@@ -7,7 +7,7 @@
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc337-test1"/><!--rdawo:P10072 = has manifestation of work-->
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
       <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#audiocassette"/><!--rdawo:P10617 = is metadata description of manifestation-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#electronic"/><!--rdawo:P10617 = is metadata description of manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc337-test1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
@@ -29,6 +29,10 @@ F337 ## $b made up b $2 isbdmedia $3 test3
 F337 ## $6 880-01 $a audio $b a $2 rdamedia
 F880 ## $6 337-01 $a audio $b a $2 rdamedia
 F880 ## $6 337-00 $a audio $2 isbdmedia
+F337 ## $9 MEDIA TYPE (R)  $a Media type term (R)  $a Media type term (R)  $b Media type code (R)  $b Media type code (R)  $0 Authority record control number or standard number (R)  $0 Authority record control number or standard number (R)  $1 Real World Object URI (R)  $1 Real World Object URI (R)  $2 Source (NR)  $2 Source (NR)  $3 Materials specified (NR)  $3 Materials specified (NR) 
+F337 ## $0 Authority record control number or standard number (R)  $0 Authority record control number or standard number (R)  $3 Materials specified (NR)  $3 Materials specified (NR) 
+F337 ## $1 Real World Object URI (R)  $1 Real World Object URI (R)  $8 Field link and sequence number (R) $8 Field link and sequence number (R)
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
 </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
@@ -39,14 +43,15 @@ F880 ## $6 337-00 $a audio $2 isbdmedia
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc337-test1"/><!--rdaeo:P20576 = is expression described with metadata by-->
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#audiocassette"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#electronic"/><!--rdaeo:P20059 = has manifestation of expression-->
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#audiocassette">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#electronic">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc337-test1"/><!--rdamo:P30462 = is manifestation described with metadata by-->
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
-      <rdamd:P30276> (Audiocassette)</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
+      <rdamd:P30276> (Electronic)</rdamd:P30276><!--rdamd:P30276 = has access point for manifestation-->
       <rdamd:P30002>computer</rdamd:P30002><!--rdamd:P30002 = has media type-->
       <rdamd:P30002>unmediated</rdamd:P30002><!--rdamd:P30002 = has media type-->
       <rdamd:P30137>Test3 has Media type: computer</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
@@ -55,11 +60,8 @@ F880 ## $6 337-00 $a audio $2 isbdmedia
       <rdamd:P30137>Test3 has Media type: c</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/><!--rdamo:P30002 = has media type-->
       <rdamd:P30137>Test3 has Media type: http://rdaregistry.info/termList/RDAMediaType/1003</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/><!--rdamo:P30002 = has media type-->
-      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/><!--rdamo:P30002 = has media type-->
       <rdamd:P30137>Test3 has Media type: http://rdaregistry.info/termList/RDAMediaType/1007</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamd:P30137>Test3 has Media type: http://rdaregistry.info/termList/RDAMediaType/1007</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1001"/><!--rdamo:P30002 = has media type-->
       <rdamd:P30137>Test3 has Media type: http://rdaregistry.info/termList/RDAMediaType/1001</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamo:P30002 rdf:resource="http://marc2rda.edu/fake/isbdmedia/con#audio"/><!--rdamo:P30002 = has media type-->
       <rdamo:P30002 rdf:resource="http://marc2rda.edu/fake/isbdmedia/con#video"/><!--rdamo:P30002 = has media type-->
@@ -69,11 +71,15 @@ F880 ## $6 337-00 $a audio $2 isbdmedia
       <rdamd:P30137>Test3 has Media type: http://marc2rda.edu/fake/isbdmedia/con#audio</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
       <rdamo:P30002 rdf:resource="http://marc2rda.edu/fake/isbdmedia/con#madeupb"/><!--rdamo:P30002 = has media type-->
       <rdamd:P30137>Test3 has Media type: http://marc2rda.edu/fake/isbdmedia/con#madeupb</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1001"/><!--rdamo:P30002 = has media type-->
       <rdamd:P30002>a</rdamd:P30002><!--rdamd:P30002 = has media type-->
-      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1001"/><!--rdamo:P30002 = has media type-->
       <rdamd:P30002>a</rdamd:P30002><!--rdamd:P30002 = has media type-->
       <rdamo:P30002 rdf:resource="http://marc2rda.edu/fake/isbdmedia/con#audio"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30002 rdf:resource="http://marc2rda.edu/fake/sourcenr/con#mediatypetermr"/><!--rdamo:P30002 = has media type-->
+      <rdamo:P30002 rdf:resource="http://marc2rda.edu/fake/sourcenr/con#mediatypetermr"/><!--rdamo:P30002 = has media type-->
+      <rdamd:P30137>Materials specified (NR) has Media type: http://marc2rda.edu/fake/sourcenr/con#mediatypetermr</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Materials specified (NR) has Media type: http://marc2rda.edu/fake/sourcenr/con#mediatypetermr</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Materials specified (NR) has Media type: http://marc2rda.edu/fake/sourcenr/con#mediatypetermr</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+      <rdamd:P30137>Materials specified (NR) has Media type: http://marc2rda.edu/fake/sourcenr/con#mediatypetermr</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/isbdmedia/con#audio">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -101,5 +107,17 @@ F880 ## $6 337-00 $a audio $2 isbdmedia
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <skos:prefLabel>audio</skos:prefLabel>
       <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/isbdmedia"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sourcenr/con#mediatypetermr">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Media type term (R)</skos:prefLabel>
+      <!--IRI could not be found for Source (NR) -->
+      <skos:inScheme>Source (NR) </skos:inScheme>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sourcenr/con#mediatypetermr">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Media type term (R)</skos:prefLabel>
+      <!--IRI could not be found for Source (NR) -->
+      <skos:inScheme>Source (NR) </skos:inScheme>
    </rdf:Description>
 </rdf:RDF>

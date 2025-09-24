@@ -36,7 +36,7 @@
     <xsl:template name="F334-string" expand-text="yes">
         <!-- if there are no IRIs to use, continue to $a's and $b's -->
         <xsl:if
-            test="not(marc:subfield[@code = '1']) and not(contains(marc:subfield[@code = '0'], 'http'))">
+            test="not(marc:subfield[@code = '1']) and not(exists(marc:subfield[@code='0'][contains(., 'http')]))">
 
             <!-- pattern testing variables -->
             <!-- aTest determines whether all $a's are followed by $b's -->
@@ -147,7 +147,7 @@
     <xsl:template name="F334-concept">
         <!-- mint concepts when $2 is not rdamedia or rdamt -->
         <xsl:if
-            test="not(marc:subfield[@code = '1']) and not(contains(marc:subfield[@code = '0'], 'http'))">
+            test="not(marc:subfield[@code = '1']) and not(exists(marc:subfield[@code='0'][contains(., 'http')]))">
             <xsl:if test="marc:subfield[@code = '2']">
                 <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
                 <xsl:variable name="linked880">
@@ -277,7 +277,7 @@
     <xsl:template name="F335-string" expand-text="yes">
         <!-- if there are no IRIs to use, continue to $a's and $b's -->
         <xsl:if
-            test="not(marc:subfield[@code = '1']) and not(contains(marc:subfield[@code = '0'], 'http'))">
+            test="not(marc:subfield[@code = '1']) and not(exists(marc:subfield[@code='0'][contains(., 'http')]))">
 
             <!-- pattern testing variables -->
             <!-- aTest determines whether all $a's are followed by $b's -->
@@ -387,9 +387,7 @@
                                             <rdaw:P10365 rdf:resource="{m2r:conceptIRI($sub2, .)}"/>
                                             <xsl:if test="../marc:subfield[@code = '3']">
                                                 <rdawd:P10330>
-                                                  <xsl:text>
-                                                        Extension plan {m2r:conceptIRI($sub2, .)} applies to the work's {../marc:subfield[@code = '3']}
-                                                    </xsl:text>
+                                                  <xsl:text>Extension plan {m2r:conceptIRI($sub2, .)} applies to the work's {../marc:subfield[@code = '3']}</xsl:text>
                                                 </rdawd:P10330>
                                             </xsl:if>
                                         </xsl:for-each>
@@ -430,7 +428,7 @@
     <xsl:template name="F335-concept">
         <!-- mint concepts when $2 is not rdaep -->
         <xsl:if
-            test="not(marc:subfield[@code = '1']) and not(contains(marc:subfield[@code = '0'], 'http'))">
+            test="not(marc:subfield[@code = '1']) and not(exists(marc:subfield[@code='0'][contains(., 'http')]))">
             <xsl:if test="marc:subfield[@code = '2']">
                 <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
                 <xsl:variable name="linked880">
@@ -875,7 +873,7 @@
         <xsl:if test="
                 not(marc:subfield[@code = '1'] and count(*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3'
                 or @code = '6' or @code = '8' or @code = 'b' or @code = 'f' or @code = 'h' or @code = 'i')]) = 1)
-                and not(contains(marc:subfield[@code = '0'], 'http') and count(*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3'
+                and not(exists(marc:subfield[@code='0'][contains(., 'http')]) and count(*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3'
                 or @code = '6' or @code = '8' or @code = 'b' or @code = 'f' or @code = 'h' or @code = 'i')]) = 1)">
             <!-- otherwise, there is no $0 that begins with 'http', no $1, OR there are these values but we can't know
               what property to use with them - then we check the $2 -->
@@ -960,7 +958,7 @@
                     <!-- we check if there is a $0 with 'http' and only one subfield that could be referred to.
                         if there is, we can use this $0 value as an object of the appropriate property -->
                     <xsl:when test="
-                            contains(../marc:subfield[@code = '0'], 'http') and count(../*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3'
+                            exists(../marc:subfield[@code='0'][contains(., 'http')]) and count(../*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3'
                             or @code = '6' or @code = '8' or @code = 'b' or @code = 'f' or @code = 'h' or @code = 'i')]) = 1">
                         <xsl:for-each select="../marc:subfield[@code = '0']">
                             <!-- m2r:process0 takes a $0 and strips anything not part of the IRI -->
@@ -1888,7 +1886,7 @@
         <xsl:if test="
                 not(marc:subfield[@code = '1'] and count(*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3'
                 or @code = '6' or @code = '8')]) = 1)
-                and not(contains(marc:subfield[@code = '0'], 'http') and count(*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3'
+                and not(exists(marc:subfield[@code='0'][contains(., 'http')]) and count(*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3'
                 or @code = '6' or @code = '8')]) = 1)">
             <xsl:if test="marc:subfield[@code = '2']">
                 <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
@@ -1948,7 +1946,7 @@
                 <!-- $0 -->
                 <xsl:choose>
                     <xsl:when test="
-                            contains(../marc:subfield[@code = '0'], 'http') and count(../*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3'
+                            exists(../marc:subfield[@code='0'][contains(., 'http')]) and count(../*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3'
                             or @code = '6' or @code = '8')]) = 1">
                         <xsl:for-each select="../marc:subfield[@code = '0']">
                             <xsl:variable name="iri0" select="m2r:process0(.)"/>
@@ -2169,7 +2167,7 @@
         <!-- need to test this logic -->
         <xsl:if test="
                 ((not(marc:subfield[@code = 'b']) or not(marc:subfield[@code = 'a']))
-                and (not(marc:subfield[@code = '1']) and not(contains(marc:subfield[@code = '0'], 'http'))))
+                and (not(marc:subfield[@code = '1']) and not(exists(marc:subfield[@code='0'][contains(., 'http')]))))
                 or (marc:subfield[@code = 'a'] and marc:subfield[@code = 'b'])">
             <xsl:choose>
                 <xsl:when test="marc:subfield[@code = '2']">
@@ -2254,7 +2252,7 @@
         <!-- if it's only $a or only $b but no $0 or $1, or it's $a and $b -->
         <xsl:if test="
                 ((not(marc:subfield[@code = 'b']) or not(marc:subfield[@code = 'a']))
-                and (not(marc:subfield[@code = '1']) and not(contains(marc:subfield[@code = '0'], 'http'))))
+                and (not(marc:subfield[@code = '1']) and not(exists(marc:subfield[@code='0'][contains(., 'http')]))))
                 or (marc:subfield[@code = 'a'] and marc:subfield[@code = 'b'])">
             <xsl:if test="marc:subfield[@code = '2']">
                 <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
@@ -2353,7 +2351,7 @@
         <xsl:if test="
                 not(marc:subfield[@code = '1'] and count(*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3'
                 or @code = '6' or @code = '8')]) = 1)
-                and not(contains(marc:subfield[@code = '0'], 'http') and count(*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3'
+                and not(exists(marc:subfield[@code='0'][contains(., 'http')]) and count(*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3'
                 or @code = '6' or @code = '8')]) = 1)">
             <xsl:if test="marc:subfield[@code = '2']">
                 <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
@@ -2409,7 +2407,7 @@
             <xsl:otherwise>
                 <xsl:choose>
                     <xsl:when test="
-                            contains(../marc:subfield[@code = '0'], 'http') and count(../*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3'
+                            exists(../marc:subfield[@code='0'][contains(., 'http')]) and count(../*[not(@code = '0' or @code = '1' or @code = '2' or @code = '3'
                             or @code = '6' or @code = '8')]) = 1">
                         <xsl:for-each select="../marc:subfield[@code = '0']">
                             <xsl:variable name="iri0" select="m2r:process0(.)"/>
@@ -2723,7 +2721,7 @@
 
     <xsl:template name="F380-string" expand-text="yes">
         <xsl:if
-            test="not(marc:subfield[@code = '1']) and not(contains(marc:subfield[@code = '0'], 'http'))">
+            test="not(marc:subfield[@code = '1']) and not(exists(marc:subfield[@code='0'][contains(., 'http')]))">
             <xsl:choose>
                 <!-- if there's a $2 -->
                 <xsl:when test="marc:subfield[@code = '2']">
@@ -2759,7 +2757,7 @@
 
     <xsl:template name="F380-concept" expand-text="yes">
         <xsl:if
-            test="not(marc:subfield[@code = '1']) and not(contains(marc:subfield[@code = '0'], 'http'))">
+            test="not(marc:subfield[@code = '1']) and not(exists(marc:subfield[@code='0'][contains(., 'http')]))">
             <xsl:if test="marc:subfield[@code = '2']">
                 <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
                 <xsl:variable name="linked880">

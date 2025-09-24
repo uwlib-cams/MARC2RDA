@@ -29,6 +29,16 @@
 			<marc:subfield code="0">http://example.org/key/multiple</marc:subfield>
 		</marc:datafield>
 
-		
+		<marc:datafield tag="384" ind1=" " ind2=" ">
+			<marc:subfield code="9">KEY (R) </marc:subfield>
+			<marc:subfield code="a">Key (NR) </marc:subfield>
+			<marc:subfield code="a">Key (NR) </marc:subfield>
+			<marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+			<marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
+			<marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+			<marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+			<marc:subfield code="3">Materials specified (NR) </marc:subfield>
+			<marc:subfield code="3">Materials specified (NR) </marc:subfield>
+		</marc:datafield>
 	</marc:record>
 </marc:collection>
