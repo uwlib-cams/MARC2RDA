@@ -400,56 +400,84 @@
     <xsl:template match="marc:datafield[@tag='510']| marc:datafield[@tag='880'][substring(marc:subfield[@code = '6'], 1, 3) = '510']" 
         mode="man">
         <!--<xsl:call-template name="getmarc"/>-->
-        <rdam:P30254>
-                <xsl:if test="@ind1 = '0'">
-                    <xsl:choose>
-                        <xsl:when test="marc:subfield[@code = '3']">
-                            <xsl:value-of select="
-                                concat(marc:subfield[@code = '3'],' indexed by: ',marc:subfield[@code = 'a'],' ', marc:subfield[@code = 'u'],' ', marc:subfield[@code = 'b'],' ', marc:subfield[@code = 'x'])"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:value-of select="
-                                concat('Indexed by: ',marc:subfield[@code = 'a'],' ', marc:subfield[@code = 'u'],' ', marc:subfield[@code = 'b'],' ', marc:subfield[@code = 'x'])"/>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:if>
-            <xsl:if test="@ind1 = '1'">
+        <xsl:choose>
+            <xsl:when test="@ind1='0'">
                 <xsl:choose>
                     <xsl:when test="marc:subfield[@code = '3']">
-                        <xsl:value-of select="
-                            concat(marc:subfield[@code = '3'],' indexed in its entirety by: ',marc:subfield[@code = 'a'],' ', marc:subfield[@code = 'u'],' ', marc:subfield[@code = 'b'],' ', marc:subfield[@code = 'x'])"/>
-                    </xsl:when>
+                        <xsl:for-each select="marc:subfield[@code='3']">
+                            <rdamd:P30254>
+                                <xsl:value-of select="."/>
+                                <xsl:text> indexed by: </xsl:text>
+                                <xsl:value-of select="../marc:subfield[@code = 'a']|../marc:subfield[@code = 'u']|../marc:subfield[@code = 'b']|../marc:subfield[@code = 'x']" separator=" "/>
+                            </rdamd:P30254>
+                        </xsl:for-each>
+                      </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="
-                            concat('Indexed in its entirety by: ',marc:subfield[@code = 'a'],' ', marc:subfield[@code = 'u'],' ', marc:subfield[@code = 'b'],' ', marc:subfield[@code = 'x'])"/>
+                        <rdamd:P30254>
+                            <xsl:text>Indexed by: </xsl:text>
+                            <xsl:value-of select="marc:subfield[@code = 'a']|marc:subfield[@code = 'u']|marc:subfield[@code = 'b']|marc:subfield[@code = 'x']" separator=" "/>
+                        </rdamd:P30254>
                     </xsl:otherwise>
                 </xsl:choose>
-            </xsl:if>
-            <xsl:if test="@ind1 = '2'">
+            </xsl:when>
+            <xsl:when test="@ind1='1'">
                 <xsl:choose>
                     <xsl:when test="marc:subfield[@code = '3']">
-                        <xsl:value-of select="
-                            concat(marc:subfield[@code = '3'],' indexed selectively by: ',marc:subfield[@code = 'a'],' ', marc:subfield[@code = 'u'],' ', marc:subfield[@code = 'b'],' ', marc:subfield[@code = 'x'])"/>
+                        <xsl:for-each select="marc:subfield[@code='3']">
+                            <rdamd:P30254>
+                                <xsl:value-of select="."/>
+                                <xsl:text> indexed in its entirety by: </xsl:text>
+                                <xsl:value-of select="../marc:subfield[@code = 'a']|../marc:subfield[@code = 'u']|../marc:subfield[@code = 'b']|../marc:subfield[@code = 'x']" separator=" "/>
+                            </rdamd:P30254>
+                        </xsl:for-each>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="
-                            concat('Indexed selectively by: ',marc:subfield[@code = 'a'],' ', marc:subfield[@code = 'u'],' ', marc:subfield[@code = 'b'],' ', marc:subfield[@code = 'x'])"/>
+                        <rdamd:P30254>
+                            <xsl:text>Indexed in its entirety by: </xsl:text>
+                            <xsl:value-of select="marc:subfield[@code = 'a']|marc:subfield[@code = 'u']|marc:subfield[@code = 'b']|marc:subfield[@code = 'x']" separator=" "/>
+                        </rdamd:P30254>
                     </xsl:otherwise>
                 </xsl:choose>
-            </xsl:if>
-            <xsl:if test="@ind1 = '3' or @ind1 = '4'">
+            </xsl:when>
+            <xsl:when test="@ind1 = '2'">
                 <xsl:choose>
                     <xsl:when test="marc:subfield[@code = '3']">
-                        <xsl:value-of select="
-                            concat(marc:subfield[@code = '3'],' references: ',marc:subfield[@code = 'a'],' ', marc:subfield[@code = 'u'],' ', marc:subfield[@code = 'b'],' ', marc:subfield[@code = 'x'],' ',marc:subfield[@code = 'c'])"/>
+                        <xsl:for-each select="marc:subfield[@code='3']">
+                            <rdamd:P30254>
+                                <xsl:value-of select="."/>
+                                <xsl:text> indexed selectively by: </xsl:text>
+                                <xsl:value-of select="../marc:subfield[@code = 'a']|../marc:subfield[@code = 'u']|../marc:subfield[@code = 'b']|../marc:subfield[@code = 'x']" separator=" "/>
+                            </rdamd:P30254>
+                        </xsl:for-each>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="
-                            concat('References: ',marc:subfield[@code = 'a'],' ', marc:subfield[@code = 'u'],' ', marc:subfield[@code = 'b'],' ', marc:subfield[@code = 'x'],' ',marc:subfield[@code = 'c'])"/>
+                        <rdamd:P30254>
+                            <xsl:text>Indexed selectively by: </xsl:text>
+                            <xsl:value-of select="marc:subfield[@code = 'a']|marc:subfield[@code = 'u']|marc:subfield[@code = 'b']|marc:subfield[@code = 'x']" separator=" "/>
+                        </rdamd:P30254>
                     </xsl:otherwise>
                 </xsl:choose>
-            </xsl:if>
-        </rdam:P30254>
+            </xsl:when>
+            <xsl:when test="@ind1 = '3' or @ind1 = '4'">
+                <xsl:choose>
+                    <xsl:when test="marc:subfield[@code = '3']">
+                        <xsl:for-each select="marc:subfield[@code='3']">
+                            <rdamd:P30254>
+                                <xsl:value-of select="."/>
+                                <xsl:text> references: </xsl:text>
+                                <xsl:value-of select="../marc:subfield[@code = 'a']|../marc:subfield[@code = 'u']|../marc:subfield[@code = 'b']|../marc:subfield[@code = 'x']|../marc:subfield[@code='c']" separator=" "/>
+                            </rdamd:P30254>
+                        </xsl:for-each>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <rdamd:P30254>
+                            <xsl:text>References: </xsl:text>
+                            <xsl:value-of select="marc:subfield[@code = 'a']|marc:subfield[@code = 'u']|marc:subfield[@code = 'b']|marc:subfield[@code = 'x']|marc:subfield[@code='c']" separator=" "/>
+                        </rdamd:P30254>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+        </xsl:choose>
     </xsl:template>
         
     <!-- 511 - Participant or Performer Note -->

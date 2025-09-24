@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:ex="http://fakeIRI2.edu/" xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:uwf="http://universityOfWashington/functions" xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc510-test">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10400 rdf:resource="http://marc2rda.edu/fake/transform/nom#510-test"/><!--rdawo:P10400 = has identifier for work group-->
+      <rdawd:P10400>510-test</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
       <rdawd:P10002>transform/wor#marc510-test</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
       <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc510-test"/><!--rdawo:P10072 = has manifestation of work-->
       <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
@@ -11,6 +12,7 @@
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc510-test">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc510-test"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>transform/man#marc510-test</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -20,12 +22,10 @@ F510 0# $a E &amp; GL Index $x 0019-3879 $b v1n1, 1984- $3 Material
 F510 1# $a E &amp; GL Index $x 0019-3879 $3 Material
 F510 4# $a Limited Editions Club. Bibliography of the fine books published by the Limited Editions Club, 1929-1985, $c no. 503
 F880 1# $6 510-00 $a E &amp; GL Index $x 0019-3879
+F510 4# $a NUC pre-1956, $c 409:241; $a BM, $c 213:621; $a cf. Tourneux, $c IV, 25403.
+F510 4# $a Martin &amp; Walter, $c I, 8112; $a Monglond, $c I, 82.
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
 </rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/nom#510-test">
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdano:P80172 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc510-test"/><!--rdano:P80172 = is identifier for work group of-->
-      <rdand:P80068>510-test</rdand:P80068><!--rdand:P80068 = has nomen string-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
@@ -37,16 +37,19 @@ F880 1# $6 510-00 $a E &amp; GL Index $x 0019-3879
       <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc510-test"/><!--rdaeo:P20576 = is expression described with metadata by-->
       <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
       <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc510-test"/><!--rdamo:P30462 = is manifestation described with metadata by-->
       <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
       <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
-      <rdam:P30254>Indexed by: E &amp; GL Index v1n1, 1984- $x0019-3879</rdam:P30254><!--rdam:P30254 = is manifestation described by-->
-      <rdam:P30254>Material indexed by: E &amp; GL Index v1n1, 1984- 0019-3879</rdam:P30254><!--rdam:P30254 = is manifestation described by-->
-      <rdam:P30254>Material indexed in its entirety by: E &amp; GL Index 0019-3879</rdam:P30254><!--rdam:P30254 = is manifestation described by-->
-      <rdam:P30254>References: Limited Editions Club. Bibliography of the fine books published by the Limited Editions Club, 1929-1985, no. 503</rdam:P30254><!--rdam:P30254 = is manifestation described by-->
-      <rdam:P30254>Indexed in its entirety by: E &amp; GL Index 0019-3879</rdam:P30254><!--rdam:P30254 = is manifestation described by-->
+      <rdamd:P30254>Indexed by: E &amp; GL Index $x0019-3879 v1n1, 1984-</rdamd:P30254><!--rdamd:P30254 = is manifestation described by-->
+      <rdamd:P30254>Material indexed by: E &amp; GL Index 0019-3879 v1n1, 1984-</rdamd:P30254><!--rdamd:P30254 = is manifestation described by-->
+      <rdamd:P30254>Material indexed in its entirety by: E &amp; GL Index 0019-3879</rdamd:P30254><!--rdamd:P30254 = is manifestation described by-->
+      <rdamd:P30254>References: Limited Editions Club. Bibliography of the fine books published by the Limited Editions Club, 1929-1985, no. 503</rdamd:P30254><!--rdamd:P30254 = is manifestation described by-->
+      <rdamd:P30254>Indexed in its entirety by: E &amp; GL Index 0019-3879</rdamd:P30254><!--rdamd:P30254 = is manifestation described by-->
+      <rdamd:P30254>References: NUC pre-1956, 409:241; BM, 213:621; cf. Tourneux, IV, 25403.</rdamd:P30254><!--rdamd:P30254 = is manifestation described by-->
+      <rdamd:P30254>References: Martin &amp; Walter, I, 8112; Monglond, I, 82.</rdamd:P30254><!--rdamd:P30254 = is manifestation described by-->
    </rdf:Description>
 </rdf:RDF>

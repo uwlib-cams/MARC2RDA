@@ -36,6 +36,24 @@
             <marc:subfield code="x">0019-3879</marc:subfield>
         </marc:datafield>
         
+        <marc:datafield tag="510" ind1="4" ind2=" ">
+            <marc:subfield code="a">NUC pre-1956,</marc:subfield>
+            <marc:subfield code="c">409:241;</marc:subfield>
+            <marc:subfield code="a">BM,</marc:subfield>
+            <marc:subfield code="c">213:621;</marc:subfield>
+            <marc:subfield code="a">cf. Tourneux,</marc:subfield>
+            <marc:subfield code="c">IV, 25403.</marc:subfield>
+        </marc:datafield>
+        
+        <marc:datafield tag="510" ind1="4" ind2=" ">
+            <marc:subfield code="a">Martin &amp; Walter,</marc:subfield>
+            <marc:subfield code="c">I, 8112;</marc:subfield>
+            <marc:subfield code="a">Monglond,</marc:subfield>
+            <marc:subfield code="c">I, 82.</marc:subfield>
+        </marc:datafield>
+        
+        
+        
 
     </marc:record>
 </marc:collection>
