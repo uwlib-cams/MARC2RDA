@@ -98,8 +98,7 @@ from the transformationCode folder within the MARC2RDA repository, run the pytho
 When you are ready with the above information then you can run
 - From the command line: python process.py
 - Or use an IDE, such as Spyder to run the process
-- Note: as of now, the output is saved in the same folder as the input; I will try to change this to allow the user to specify an output folder (TC 04.02.25)
-
+- Note: as of now, the output is saved in the same folder as the input
 
 ### Option 2b: command line
 *For transforming 1 MARC/XML file at a time*
