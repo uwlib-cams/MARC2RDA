@@ -1,131 +1,75 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:ex="http://fakeIRI2.edu/"
-         xmlns:fake="http://fakePropertiesForDemo"
-         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
-         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
-         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
-         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
-         xmlns:rdae="http://rdaregistry.info/Elements/e/"
-         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
-         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
-         xmlns:rdai="http://rdaregistry.info/Elements/i/"
-         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
-         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
-         xmlns:rdam="http://rdaregistry.info/Elements/m/"
-         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
-         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
-         xmlns:rdan="http://rdaregistry.info/Elements/n/"
-         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
-         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
-         xmlns:rdap="http://rdaregistry.info/Elements/p/"
-         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
-         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
-         xmlns:rdat="http://rdaregistry.info/Elements/t/"
-         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
-         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
-         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
-         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
-         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
-         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:uwf="http://universityOfWashington/functions"
-         xmlns:uwmisc="http://uw.edu/all-purpose-namespace/">
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400/>
-      <rdawd:P10004>Metadata work</rdawd:P10004>
-      <rdawd:P10002>transform/wor#marc</rdawd:P10002>
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc"/>
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
+      <rdawd:P10400/><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>transform/wor#marc</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/>
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
-      <rdamd:P30004>transform/man#marc</rdamd:P30004>
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>transform/man#marc</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 01234cam a2200301 i 4500
 F045 ## $a t-t-
 F045 0# $b d17910304
 F045 2# $c 225000000 $c 70000000
-F045 1# $b d1972 $b d1975
-F045 2# $a x8x8 $b d1984 $c 100000000
-</rdamd:P30137>
+F045 1# $b d1972
+F045 2# $b d1984 $c 100000000
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10216 rdf:resource="http://marc2rda.edu/fake/tim#2025-09-26t184640267008-0400d31e3"/><!--rdawo:P10216 = has coverage of content-->
+      <rdawo:P10216 rdf:resource="http://marc2rda.edu/fake/tim#2025-09-26t184640267008-0400d31e6"/><!--rdawo:P10216 = has coverage of content-->
+      <rdawo:P10216 rdf:resource="http://marc2rda.edu/fake/tim#2025-09-26t184640267008-0400d31e1"/><!--rdawo:P10216 = has coverage of content-->
+      <rdawo:P10216 rdf:resource="http://marc2rda.edu/fake/tim#2025-09-26t184640267008-0400d31e14"/><!--rdawo:P10216 = has coverage of content-->
+      <rdawo:P10216 rdf:resource="http://marc2rda.edu/fake/tim#2025-09-26t184640267008-0400d31e1"/><!--rdawo:P10216 = has coverage of content-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
    </rdf:Description>
    <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
-      <rdamd:P30276/>
-      <rdamo:P30162 rdf:resource="http://marc2rda.edu/fake/tim#2025-08-26t11341586617960100d27e3"/>
-      <rdawo:P10216 rdf:resource="http://marc2rda.edu/fake/tim#2025-08-26t11341586617960100d27e3"/>
-      <rdawo:P10218>t-t-</rdawo:P10218>
-      <rdamo:P30162 rdf:resource="http://marc2rda.edu/fake/tim#2025-08-26t11341586617960100d27e6"/>
-      <rdawo:P10219 rdf:resource="http://marc2rda.edu/fake/tim#2025-08-26t11341586617960100d27e6"/>
-      <rdawo:P10218>d17910304</rdawo:P10218>
-      <rdamo:P30162 rdf:resource="http://marc2rda.edu/fake/tim#2025-08-26t11341586617960100d27e9"/>
-      <rdawo:P10219 rdf:resource="http://marc2rda.edu/fake/tim#2025-08-26t11341586617960100d27e9"/>
-      <rdawo:P10218>225000000</rdawo:P10218>
-      <rdawo:P10218>70000000</rdawo:P10218>
-      <rdamo:P30162 rdf:resource="http://marc2rda.edu/fake/tim#2025-08-26t11341586617960100d27e14"/>
-      <rdawo:P10219 rdf:resource="http://marc2rda.edu/fake/tim#2025-08-26t11341586617960100d27e14"/>
-      <rdawo:P10218>d1972</rdawo:P10218>
-      <rdawo:P10218>d1975</rdawo:P10218>
-      <rdamo:P30162 rdf:resource="http://marc2rda.edu/fake/tim#2025-08-26t11341586617960100d27e19"/>
-      <rdawo:P10216 rdf:resource="http://marc2rda.edu/fake/tim#2025-08-26t11341586617960100d27e19"/>
-      <rdawo:P10218>x8x8</rdawo:P10218>
-      <rdawo:P10219 rdf:resource="http://marc2rda.edu/fake/tim#2025-08-26t11341586617960100d27e19"/>
-      <rdawo:P10218>d1984</rdawo:P10218>
-      <rdawo:P10218>100000000</rdawo:P10218>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
    </rdf:Description>
-   <rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/marc045timeperiodcode/#t-t-">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10014"/>
-      <rdan:P80068>t-t-</rdan:P80068>
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/timeperiods"/>
-      <rdan:P80067 rdf:resource="http://marc2rda.edu/fake/tim#2025-08-26t11341586617960100d27e3"/>
+      <rdand:P80068>t-t-</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdand:P80069>MARC 045 Time Period Code</rdand:P80069><!--rdand:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description>
-      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10014"/>
-      <rdan:P80068>x8x8</rdan:P80068>
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/timeperiods"/>
-      <rdan:P80067 rdf:resource="http://marc2rda.edu/fake/tim#2025-08-26t11341586617960100d27e19"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim#2025-08-26t11341586617960100d27e3">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim#2025-09-26t184640267008-0400d31e3">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
-      <rdatd:P70016>t-t-</rdatd:P70016>
-      <rdatd:P70045>Time period code: t-t-</rdatd:P70045>
+      <rdato:P70015 rdf:resource="http://marc2rda.edu/fake/marc045timeperiodcode/#t-t-"/><!--rdato:P70015 = has access point for timespan-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim#2025-08-26t11341586617960100d27e6">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim#2025-09-26t184640267008-0400d31e6">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
-      <rdatd:P70016>1791-03-04</rdatd:P70016>
+      <rdatd:P70015>d17910304</rdatd:P70015><!--rdatd:P70015 = has access point for timespan-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim#2025-08-26t11341586617960100d27e9">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim#2025-09-26t184640267008-0400d31e1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
-      <rdatd:P70016>225000000 B.C.E. - 70000000 B.C.E.</rdatd:P70016>
+      <rdatd:P70015>225000000/70000000</rdatd:P70015><!--rdatd:P70015 = has access point for timespan-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim#2025-08-26t11341586617960100d27e14">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim#2025-09-26t184640267008-0400d31e14">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
-      <rdatd:P70016>1972 - 1975</rdatd:P70016>
-      <rdatd:P70039>1972</rdatd:P70039>
-      <rdatd:P70040>1975</rdatd:P70040>
+      <rdatd:P70015>d1972</rdatd:P70015><!--rdatd:P70015 = has access point for timespan-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim#2025-08-26t11341586617960100d27e19">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/tim#2025-09-26t184640267008-0400d31e1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
-      <rdatd:P70016>1984</rdatd:P70016>
-      <rdatd:P70045>Time period code: x8x8</rdatd:P70045>
+      <rdatd:P70015>d1984/100000000</rdatd:P70015><!--rdatd:P70015 = has access point for timespan-->
    </rdf:Description>
 </rdf:RDF>

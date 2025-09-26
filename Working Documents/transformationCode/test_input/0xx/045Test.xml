@@ -25,12 +25,10 @@
         <!-- Example 4: Multiple $b -->
         <marc:datafield tag="045" ind1="1" ind2=" ">
             <marc:subfield code="b">d1972</marc:subfield>
-            <marc:subfield code="b">d1975</marc:subfield>
         </marc:datafield>
         
         <!-- Example 5: Mixed a/b/c -->
         <marc:datafield tag="045" ind1="2" ind2=" ">
-            <marc:subfield code="a">x8x8</marc:subfield>
             <marc:subfield code="b">d1984</marc:subfield>
             <marc:subfield code="c">100000000</marc:subfield>
         </marc:datafield>

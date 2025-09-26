@@ -188,135 +188,83 @@
     </xsl:template>
 
     <!-- 045 -->
-    <!--<xsl:template name="F045-xx-abc">
+    <xsl:template name="F045-xx-abc">
         <xsl:param name="baseID"/>
         <xsl:variable name="ldr6" select="substring(preceding-sibling::marc:leader, 7, 1)"/>
         
-        <!-\- IRI for this timespan -\->
-        <xsl:variable name="iri" select="m2r:timespanIRI($baseID, ., '')"/>
-        
-        <!-\- For subfield $a (time period code) -\->
         <xsl:choose>
             <xsl:when test="matches($ldr6, 'c|j|i')">
                 <xsl:for-each select="marc:subfield[@code = 'a']">
                     <rdawo:P10219 rdf:resource="{m2r:timespanIRI($baseID, .., .)}"/>
                 </xsl:for-each>
                 <xsl:choose>
-                    <xsl:when test="@ind2 = '0' or @ind2='1'">
+                    <xsl:when test="@ind1='0' or @ind1='1'">
                         <xsl:for-each select="marc:subfield[@code='b']|marc:subfield[@code='c']">
                             <rdawo:P10219 rdf:resource="{m2r:timespanIRI($baseID, .., .)}"/>
                         </xsl:for-each>
                     </xsl:when>
+                    <xsl:when test="@ind1='2'">
+                        <xsl:if test="count(marc:subfield[@code='b' or @code='c']) = 2 and not(marc:subfield[@code='a'])">
+                            <xsl:variable name="timespan" select="marc:subfield[@code='b']||'/'||marc:subfield[@code='c']"/>
+                            <rdawo:P10219 rdf:resource="{m2r:timespanIRI($baseID, .., $timespan)}"/> 
+                        </xsl:if>
+                    </xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:otherwise>
-                
-            </xsl:otherwise>
-        </xsl:choose>
-        <xsl:if test="marc:subfield[@code='a']">
-            
-            <xsl:for-each select="$context/marc:subfield[@code='a']">
-                <rdawo:P10218><xsl:value-of select="normalize-space(.)"/></rdawo:P10218>
-            </xsl:for-each>
-        </xsl:if>
-        
-        <!-\- For subfields $b or $c (dates or BCE) -\->
-        <xsl:if test="$context/marc:subfield[@code='b'] or $context/marc:subfield[@code='c']">
-            <rdawo:P10219 rdf:resource="{$iri}"/>
-            <xsl:for-each select="$context/marc:subfield[@code='b' or @code='c']">
-                <rdawo:P10218><xsl:value-of select="normalize-space(.)"/></rdawo:P10218>
-            </xsl:for-each>
-        </xsl:if>
-    </xsl:template>    
-    
-    <!-\- 045 TIMESPAN) -\->
-    <xsl:template name="F045-timespan-node">
-        <xsl:param name="baseID"/>
-        <xsl:param name="context"/>
-        <xsl:variable name="iri" select="m2r:timespanIRI($baseID, $context, '')"/>
-        
-        <rdf:Description rdf:about="{$iri}">
-            <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
-            
-            <!-\- Label from $b/$c or fallback to $a codes -\->
-            <xsl:variable name="bVals" select="$context/marc:subfield[@code='b']"/>
-            <xsl:variable name="cVals" select="$context/marc:subfield[@code='c']"/>
-            <xsl:variable name="aVals" select="$context/marc:subfield[@code='a']"/>
-            
-            <xsl:variable name="label">
+                <xsl:for-each select="marc:subfield[@code = 'a']">
+                    <rdawo:P10216 rdf:resource="{m2r:timespanIRI($baseID, .., .)}"/>
+                </xsl:for-each>
                 <xsl:choose>
-                    <xsl:when test="$bVals">
-                        <xsl:for-each select="$bVals">
-                            <xsl:variable name="raw" select="normalize-space(.)"/>
-                            <xsl:variable name="trim"
-                                select="if (starts-with($raw,'d')) 
-                                then substring($raw,2) else $raw"/>
-                            <xsl:choose>
-                                <xsl:when test="string-length($trim)=8">
-                                    <xsl:value-of 
-                                        select="concat(substring($trim,1,4), '-', substring($trim,5,2), '-', substring($trim,7,2))"/>
-                                </xsl:when>
-                                <xsl:when test="string-length($trim)=6">
-                                    <xsl:value-of 
-                                        select="concat(substring($trim,1,4), '-', substring($trim,5,2))"/>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <xsl:value-of select="$trim"/>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                            <xsl:if test="position() != last()">
-                                <xsl:text> - </xsl:text>
-                            </xsl:if>
+                    <xsl:when test="@ind1='0' or @ind1='1'">
+                        <xsl:for-each select="marc:subfield[@code='b']|marc:subfield[@code='c']">
+                            <rdawo:P10216 rdf:resource="{m2r:timespanIRI($baseID, .., .)}"/>
                         </xsl:for-each>
                     </xsl:when>
-                    <xsl:when test="$cVals">
-                        <xsl:for-each select="$cVals">
-                            <xsl:value-of select="concat(normalize-space(.), ' B.C.E.')"/>
-                            <xsl:if test="position() != last()">
-                                <xsl:text> - </xsl:text>
-                            </xsl:if>
-                        </xsl:for-each>
-                    </xsl:when>
-                    <xsl:when test="$aVals">
-                        <xsl:for-each select="$aVals">
-                            <xsl:value-of select="normalize-space(.)"/>
-                            <xsl:if test="position() != last()">
-                                <xsl:text>; </xsl:text>
-                            </xsl:if>
-                        </xsl:for-each>
+                    <xsl:when test="@ind1='2'">
+                        <xsl:if test="count(marc:subfield[@code='b' or @code='c']) = 2 and not(marc:subfield[@code='a'])">
+                            <xsl:variable name="timespan" select="marc:subfield[@code='b' or @code='c'][1]||'/'||marc:subfield[@code='b' or @code='c'][2]"/>
+                            <rdawo:P10216 rdf:resource="{m2r:timespanIRI($baseID, .., $timespan)}"/> 
+                        </xsl:if>
                     </xsl:when>
                 </xsl:choose>
-            </xsl:variable>
-            
-            <xsl:if test="normalize-space($label) != ''">
-                <rdatd:P70016><xsl:value-of select="$label"/></rdatd:P70016>
-            </xsl:if>
-            
-            <!-\- If two or more $b values, treat as start/end year -\->
-            <xsl:if test="count($bVals) &gt;= 2">
-                <rdatd:P70039>
-                    <xsl:variable name="raw" select="normalize-space($bVals[1])"/>
-                    <xsl:variable name="trim"
-                        select="if (starts-with($raw,'d')) then substring($raw,2) else $raw"/>
-                    <xsl:value-of select="substring($trim,1,4)"/>
-                </rdatd:P70039>
-                <rdatd:P70040>
-                    <xsl:variable name="raw" select="normalize-space($bVals[last()])"/>
-                    <xsl:variable name="trim"
-                        select="if (starts-with($raw,'d')) then substring($raw,2) else $raw"/>
-                    <xsl:value-of select="substring($trim,1,4)"/>
-                </rdatd:P70040>
-            </xsl:if>
-            
-            <!-\- Carry codes as provenance notes -\->
-            <xsl:for-each select="$aVals">
-                <rdatd:P70045>
-                    <xsl:text>Time period code: </xsl:text>
-                    <xsl:value-of select="normalize-space(.)"/>
-                </rdatd:P70045>
-            </xsl:for-each>
-        </rdf:Description>
-    </xsl:template>-->
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>    
+    
+    <!-- 045 TIMESPAN) -->
+    <xsl:template name="F045-timespan-node">
+        <xsl:param name="baseID"/>
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <rdf:Description rdf:about="{m2r:timespanIRI($baseID, .., .)}">
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
+                <rdato:P70015 rdf:resource="{m2r:nomenIRI($baseID, ., ., 'MARC 045 Time Period Code', 'timNom')}"/>
+            </rdf:Description>
+        </xsl:for-each>
+        <xsl:choose>
+            <xsl:when test="@ind1 = '0' or @ind1='1'">
+                <xsl:for-each select="marc:subfield[@code='b']|marc:subfield[@code='c']">
+                    <rdf:Description rdf:about="{m2r:timespanIRI($baseID, .., .)}">
+                        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
+                        <rdatd:P70015>
+                            <xsl:value-of select="."/>
+                        </rdatd:P70015>
+                    </rdf:Description>
+                </xsl:for-each>
+            </xsl:when>
+            <xsl:when test="@ind1='2'">
+                <xsl:if test="count(marc:subfield[@code='b' or @code='c']) = 2 and not(marc:subfield[@code='a'])">
+                    <xsl:variable name="timespan" select="marc:subfield[@code='b' or @code='c'][1]||'/'||marc:subfield[@code='b' or @code='c'][2]"/>
+                    <rdf:Description rdf:about="{m2r:timespanIRI($baseID, .., $timespan)}">
+                        <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10011"/>
+                        <rdatd:P70015>
+                            <xsl:value-of select="$timespan"/>
+                        </rdatd:P70015>
+                    </rdf:Description>
+                </xsl:if>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
     
     <!--046-->
     <xsl:template name="F046-timespan">
