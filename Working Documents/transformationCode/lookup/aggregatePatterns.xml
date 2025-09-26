@@ -898,7 +898,7 @@
       <type>CAM</type>
       <xpath>
             some $item in $ListV650v655vCollectionTermsUsually satisfies marc:datafield[@tag='650']/marc:subfield[@code='v'][
-                matches(., $item, 'i')
+                matches(., $item)
             ] 
         </xpath>
     </pattern>
@@ -909,7 +909,7 @@
       <type>CAM</type>
       <xpath>
             some $item in $ListV650v655vCollectionTerms satisfies marc:datafield[@tag='650']/marc:subfield[@code='v'][
-                matches(., $item, 'i')
+                matches(., $item)
             ] 
         </xpath>
     </pattern>
@@ -1220,15 +1220,20 @@
             )
         </xpath>
    </pattern>
-   <pattern>
-      <sort>71</sort>
-      <id>188</id>
-      <name>000/06 Kit</name>
-      <type>CAM</type>
-      <xpath>(substring(marc:leader, 7, 1) = 'o' or (
-            marc:datafield[@tag='245']/marc:subfield[@code='h'][matches(., '\[kit\]')]))</xpath>
-   </pattern>
-   <pattern>
+    <pattern>
+        <sort>71</sort>
+        <id>188</id>
+        <name>000/06 Kit</name>
+        <type>CAM</type>
+        <xpath>
+            (substring(marc:leader, 7, 1) = 'o' 
+            or 
+            (
+            marc:datafield[@tag='245']/marc:subfield[@code='h'][matches(., '\[kit\]')])
+            )
+        </xpath>
+    </pattern>
+    <pattern>
       <sort>72</sort>
       <id>66</id>
       <name>300$a Music parts</name>
@@ -1741,8 +1746,8 @@
             or (count(marc:datafield[@tag = '337']) gt 1)
             or (count(marc:datafield[@tag = '338']) gt 1)
         </xpath>
-   </pattern>
-   <pattern>
+    </pattern>
+    <pattern>
       <sort>92</sort>
       <id>190</id>
       <name>8XX or 440 present</name>
@@ -1750,9 +1755,7 @@
       <xpath>
             (exists(marc:datafield[@tag='800'])
             or
-            exists(marc:datafield[@tag='810'])
-            or
-            exists(marc:datafield[@tag='811'])
+            exists(marc:datafield[starts-with(@tag, '81')])
             or
             exists(marc:datafield[@tag='830'])
             or
@@ -1760,7 +1763,7 @@
             )
       </xpath>
     </pattern>
-   <pattern>
+    <pattern>
         <sort>93</sort>
         <id>195</id>
         <name>504 present AAM</name>
