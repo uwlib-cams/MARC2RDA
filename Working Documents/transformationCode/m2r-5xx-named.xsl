@@ -320,7 +320,9 @@
                 </xsl:if>
             </xsl:for-each>
             <xsl:if test="marc:subfield[@code = '5']">
-                <xsl:text> (Applies to: {m2r:s5NameLookup(marc:subfield[@code = '5'])})</xsl:text>
+                <xsl:for-each select="marc:subfield[@code='5']">
+                    <xsl:text> (Applies to: {m2r:s5NameLookup(.)})</xsl:text>
+                </xsl:for-each>
             </xsl:if>
         </rdamd:P30137>
     </xsl:template>
@@ -338,7 +340,9 @@
             <rdf:object>
                 <xsl:value-of select="."/>
                 <xsl:if test="../marc:subfield[@code = '5']">
-                    <xsl:text> (Applies to: {m2r:s5NameLookup(../marc:subfield[@code = '5'])})</xsl:text>
+                    <xsl:for-each select="../marc:subfield[@code='5']">
+                        <xsl:text> (Applies to: {m2r:s5NameLookup(.)})</xsl:text>
+                    </xsl:for-each>
                 </xsl:if>
             </rdf:object>
             <rdawd:P10004>Private</rdawd:P10004>
@@ -782,33 +786,6 @@
             <rdawd:P10004>Private</rdawd:P10004>
         </rdf:Description>
     </xsl:template>
-  
-    <!-- 544 -->
-    <xsl:template name="F544-xx-dabcen" expand-text="yes">
-        <xsl:if test="marc:subfield[@code = '3']">
-            <xsl:choose>
-                <xsl:when test="not(ends-with(marc:subfield[@code = '3'], ':'))">
-                    <xsl:text>{.}: </xsl:text>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:text>{.} </xsl:text>
-                </xsl:otherwise>
-            </xsl:choose>
-        </xsl:if>
-        <xsl:choose>
-            <xsl:when test="@ind1 = '0'">
-                <xsl:text>Associated materials: </xsl:text>
-            </xsl:when>
-            <xsl:when test="@ind1 = '1'">
-                <xsl:text>Related materials: </xsl:text>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:text>Location of other archival materials note: </xsl:text>
-            </xsl:otherwise>
-        </xsl:choose>
-        <xsl:value-of select="marc:subfield[@code = 'd'] | marc:subfield[@code = 'a'] | marc:subfield[@code = 'b']
-            | marc:subfield[@code = 'c'] | marc:subfield[@code = 'e'] | marc:subfield[@code = 'n']" separator=" "/>
-    </xsl:template>
     
     <!-- 545 -->
     <xsl:template name="F545-xx-abu6">
@@ -822,17 +799,17 @@
             </xsl:variable>
             
             <xsl:value-of select="$prefixnote"/>
-            <xsl:if test="marc:subfield[@code = 'a']">
-                <xsl:value-of select="normalize-space(marc:subfield[@code = 'a'])"/>
-            </xsl:if>
-            <xsl:if test="marc:subfield[@code = 'b']">
+            <xsl:for-each select="marc:subfield[@code = 'a']">
+                <xsl:value-of select="normalize-space(.)"/>
+            </xsl:for-each>
+            <xsl:for-each select="marc:subfield[@code = 'b']">
                 <xsl:text> </xsl:text>
-                <xsl:value-of select="normalize-space(marc:subfield[@code = 'b'])"/>
-            </xsl:if>
-            <xsl:if test="marc:subfield[@code = 'u']">
+                <xsl:value-of select="normalize-space(.)"/>
+            </xsl:for-each>
+            <xsl:for-each select="marc:subfield[@code = 'u']">
                 <xsl:text>Uniform Resource Identifier: </xsl:text>
-                <xsl:value-of select="normalize-space(marc:subfield[@code = 'u'])"/>
-            </xsl:if>
+                <xsl:value-of select="normalize-space(.)"/>
+            </xsl:for-each>
         </xsl:if>
     </xsl:template>
      
@@ -1171,7 +1148,9 @@
             <xsl:text> (Applies to: {marc:subfield[@code = '3']})</xsl:text>
         </xsl:if>
         <xsl:if test="marc:subfield[@code = '5']">
-            <xsl:text> (At institution: {m2r:s5NameLookup(marc:subfield[@code = '5'])})</xsl:text>
+            <xsl:for-each select="marc:subfield[@code='5']">
+                <xsl:copy-of select="m2r:s5Lookup(.)"/>
+            </xsl:for-each>
         </xsl:if>
     </xsl:template>
 

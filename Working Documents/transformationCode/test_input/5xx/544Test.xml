@@ -12,6 +12,7 @@
             <marc:subfield code="c">USA.</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="544" ind1="0" ind2=" ">
+            <marc:subfield code="3">Materials specified:</marc:subfield>
             <marc:subfield code="d">Burt Barnes papers;</marc:subfield>
             <marc:subfield code="e">Also located at;</marc:subfield>
             <marc:subfield code="a">Archives of American Art, Smithsonian Institution.</marc:subfield>
