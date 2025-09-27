@@ -28,7 +28,7 @@
     xmlns:rdat="http://rdaregistry.info/Elements/t/"
     xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
     xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
-    xmlns:fake="http://fakePropertiesForDemo" xmlns:m2r="http://marc2rda.info/functions"
+    xmlns:fake="http://fakePropertiesForDemo" xmlns:m2r="http://marc2rda.info/functions#"
     exclude-result-prefixes="marc m2r" version="3.0">
     <xsl:output encoding="UTF-8" method="xml" indent="yes"/>
     <xsl:strip-space elements="*"/>

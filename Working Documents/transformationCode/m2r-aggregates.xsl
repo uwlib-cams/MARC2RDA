@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:marc="http://www.loc.gov/MARC21/slim" 
-    xmlns:m2r="http://marc2rda.info/functions" 
+    xmlns:m2r="http://marc2rda.info/functions#" 
     exclude-result-prefixes="marc xs" 
     version="3.0">
     
